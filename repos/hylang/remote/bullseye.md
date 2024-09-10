@@ -1,7 +1,7 @@
 ## `hylang:bullseye`
 
 ```console
-$ docker pull hylang@sha256:18c09af9a079529c22f44e384fb6cc1b931210517b471a9d44c3ea35cb6d213a
+$ docker pull hylang@sha256:cd0b7c5d6620b8a299001a84e0d07390065b8f70f47433658d09a49996c6362f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -125,13 +125,13 @@ $ docker pull hylang@sha256:17fdf9d19501f361043c82701cbb7ab4e1494bb733b6922d0687
 ### `hylang:bullseye` - linux; arm variant v5
 
 ```console
-$ docker pull hylang@sha256:bfc986e10e9254914b27c1a09d0029875614dfe97801ce328143dc37e9a86206
+$ docker pull hylang@sha256:2407819b23cfc7da970e9c56a6b9ac06afe86be92f92cc4a48538c618f7bce08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.0 MB (47961438 bytes)**  
+-	Total Size: **48.0 MB (47972353 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3875b8cb8912b357d76702431b89703cd88e36048193a57f84b0854d6b5a488e`
+-	Image ID: `sha256:8fe8c626e6954f05acac390e02a3902dcd956a60ad79fece9c0f82fa6c8ad7a3`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -148,7 +148,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 # Thu, 29 Aug 2024 19:15:55 GMT
 ENV GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305
 # Thu, 29 Aug 2024 19:15:55 GMT
-ENV PYTHON_VERSION=3.12.5
+ENV PYTHON_VERSION=3.12.6
 # Thu, 29 Aug 2024 19:15:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libdb-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-lto 		--with-system-expat 		--without-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="$(dpkg-buildflags --get CFLAGS)"; 	LDFLAGS="$(dpkg-buildflags --get LDFLAGS)"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 		"PROFILE_TASK=${PROFILE_TASK:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		"PROFILE_TASK=${PROFILE_TASK:-}" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version # buildkit
 # Thu, 29 Aug 2024 19:15:55 GMT
@@ -182,45 +182,45 @@ CMD ["hy"]
 		Last Modified: Thu, 05 Sep 2024 09:39:41 GMT  
 		Size: 1.1 MB (1059669 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2dcb105cd5989c3607a60ccddb67967acc906e69549e6c1aff9b1dc3a30b286`  
-		Last Modified: Thu, 05 Sep 2024 09:39:41 GMT  
-		Size: 10.6 MB (10634362 bytes)  
+	-	`sha256:6c4cf00a1ad6696066ae21085a92fd6146397c30a43e2091df5c0184b6f27025`  
+		Last Modified: Mon, 09 Sep 2024 20:10:29 GMT  
+		Size: 10.6 MB (10643126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12f3f507fa9f6e5f8be0127e912a0a3375012e7ad9b32f0be2409c454d8564f1`  
-		Last Modified: Thu, 05 Sep 2024 09:39:41 GMT  
-		Size: 232.0 B  
+	-	`sha256:21f20449a030f8a539a5076628b9de45f3dac8acb6f903ababb5c4feab722389`  
+		Last Modified: Mon, 09 Sep 2024 20:10:28 GMT  
+		Size: 233.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a991a12e89eca98648bd5a757a57e85079671dc2d3e5a234ec52ca985d2156d1`  
-		Last Modified: Thu, 05 Sep 2024 09:39:41 GMT  
-		Size: 1.7 MB (1749468 bytes)  
+	-	`sha256:117b37495e2c51b772aacf8e33ea8b89cbd500436224a5124fceb64c1423cc90`  
+		Last Modified: Mon, 09 Sep 2024 20:10:29 GMT  
+		Size: 1.7 MB (1749631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1e2d6d962ca2c216922b4d5bcacbe8ea3419696274b14a7606f997a2eeae6d1`  
-		Last Modified: Fri, 06 Sep 2024 03:44:19 GMT  
-		Size: 5.6 MB (5592796 bytes)  
+	-	`sha256:58e5026826cc8d90776d1e4bae57e59d0ed1a73abe7150e7065f6b2f79d1a299`  
+		Last Modified: Tue, 10 Sep 2024 02:22:35 GMT  
+		Size: 5.6 MB (5594783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:bullseye` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:638131dbc52c7406ee55b29cd6305d561ccfd0854488d948767bdded07fb4e21
+$ docker pull hylang@sha256:5a8679fa393c530c6e03bc810221196ff4f30e2fc601960c2afc075253614dfd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2716752 bytes)**  
+-	Total Size: **2.7 MB (2716751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0bf08eec616ed83e1088be4c03a56118717ec2e256df2df4fdd412c3d1852ce6`
+-	Image ID: `sha256:afde4f495a878f6999504509ba6f40c617e10c19f5dc2e8c55ee1412609a0308`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:efafdd559f435e2ddbecc05a06fb8dfea539b7e2961f3ea4edf5829bb2a94bc0`  
-		Last Modified: Fri, 06 Sep 2024 03:44:19 GMT  
+	-	`sha256:9b5f70647b57e22c58814d5686d20c53109194802509a2f4db679eddf99920b6`  
+		Last Modified: Tue, 10 Sep 2024 02:22:35 GMT  
 		Size: 2.7 MB (2706931 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1b354c3a0d6ef4bd372d8380e09ec7f8a4590d021618731df784216cdf574bee`  
-		Last Modified: Fri, 06 Sep 2024 03:44:18 GMT  
-		Size: 9.8 KB (9821 bytes)  
+	-	`sha256:91a96382148d4955ed8f44cbc716278f09dd721985df41a475ba4243a7e4f482`  
+		Last Modified: Tue, 10 Sep 2024 02:22:35 GMT  
+		Size: 9.8 KB (9820 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hylang:bullseye` - linux; arm variant v7
@@ -327,13 +327,13 @@ $ docker pull hylang@sha256:07072ea083fe0c527c641e1c6cc563293c1c05448ca7c24495ec
 ### `hylang:bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull hylang@sha256:d7f2d9a4e0e448d0d8749ecedf8abfdde1f5e503ade3ecbc15ba1b95c34f389d
+$ docker pull hylang@sha256:8754a3e73888a6abdbf8f2673245a40f1ce0d27c13fe9aff9eb121d3fe631bbd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.5 MB (49492953 bytes)**  
+-	Total Size: **49.5 MB (49501545 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8310ccdb834775c9c9250c0db348c072fa88c5bb3e4c4907917e88ed3b8de020`
+-	Image ID: `sha256:748dbf5045bbfcce630a510e347fd424e6259735b69ba426434598f84872f41d`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -350,7 +350,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 # Thu, 29 Aug 2024 19:15:55 GMT
 ENV GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305
 # Thu, 29 Aug 2024 19:15:55 GMT
-ENV PYTHON_VERSION=3.12.5
+ENV PYTHON_VERSION=3.12.6
 # Thu, 29 Aug 2024 19:15:55 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		dpkg-dev 		gcc 		gnupg 		libbluetooth-dev 		libbz2-dev 		libc6-dev 		libdb-dev 		libexpat1-dev 		libffi-dev 		libgdbm-dev 		liblzma-dev 		libncursesw5-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		make 		tk-dev 		uuid-dev 		wget 		xz-utils 		zlib1g-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-optimizations 		--enable-option-checking=fatal 		--enable-shared 		--with-lto 		--with-system-expat 		--without-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="$(dpkg-buildflags --get CFLAGS)"; 	LDFLAGS="$(dpkg-buildflags --get LDFLAGS)"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 		"PROFILE_TASK=${PROFILE_TASK:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		"PROFILE_TASK=${PROFILE_TASK:-}" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		ldconfig; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		python3 --version # buildkit
 # Thu, 29 Aug 2024 19:15:55 GMT
@@ -380,48 +380,48 @@ CMD ["hy"]
 		Last Modified: Wed, 04 Sep 2024 21:43:10 GMT  
 		Size: 30.1 MB (30074365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f705a6b43696a75477f7fa9494ee5f5392e07b5e12a8c22f1c07c344990eb1a7`  
-		Last Modified: Thu, 05 Sep 2024 17:48:42 GMT  
-		Size: 1.1 MB (1064124 bytes)  
+	-	`sha256:8ff275ee82ea95959886edab86ca2e172e2a861493eeb036e1ff15fff94cd962`  
+		Last Modified: Mon, 09 Sep 2024 19:59:18 GMT  
+		Size: 1.1 MB (1064111 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed3c523636b8e5eca08b844cbd03db2ea84165e2c3328755ad3beb5176baf1c5`  
-		Last Modified: Thu, 05 Sep 2024 17:48:43 GMT  
-		Size: 11.0 MB (11011598 bytes)  
+	-	`sha256:1fb081aac7f8bf31823d61c2060c562ea61eaa2d333a9fd4edd033193a226f7d`  
+		Last Modified: Mon, 09 Sep 2024 19:59:18 GMT  
+		Size: 11.0 MB (11018366 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f14be5167a2250aed1e4c7432e9d9bbfa9cdaf87f590ec0f5c5f411e00956f1`  
-		Last Modified: Thu, 05 Sep 2024 17:48:42 GMT  
-		Size: 231.0 B  
+	-	`sha256:d9de5b7689b9857e09f4ee22a080a2143df6353eeb65fa28ef635d2830b573e6`  
+		Last Modified: Mon, 09 Sep 2024 19:59:17 GMT  
+		Size: 233.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7925ff2ee364a2748ad4f2f7cdbf5544501a7592f9b13f17058541b58e88d37a`  
-		Last Modified: Thu, 05 Sep 2024 17:48:42 GMT  
-		Size: 1.7 MB (1749796 bytes)  
+	-	`sha256:7bcfcd61dafbb79547bfaf145521a8efa1f45df20e2dfd2dfe98de4d582873c0`  
+		Last Modified: Mon, 09 Sep 2024 19:59:18 GMT  
+		Size: 1.7 MB (1749837 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59310b5e885faab183182197b83cf0f531a3c72554d8ae62fae55eabc3241438`  
-		Last Modified: Thu, 05 Sep 2024 21:56:02 GMT  
-		Size: 5.6 MB (5592839 bytes)  
+	-	`sha256:1e1b29826d3495ade6a3b417a3e7860831ad940ea528646cb22bd7215d6d8da2`  
+		Last Modified: Tue, 10 Sep 2024 02:56:42 GMT  
+		Size: 5.6 MB (5594633 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:bullseye` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:4ddb8f8358c07ddeee4076ee32709b9aba70ff05e4b4b10715d7feea9de65ddc
+$ docker pull hylang@sha256:8dd3a908f8fb33132373617323ea87696bef3ec5b545586c0e389f24bcafaf6a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.7 MB (2717111 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:415ed3fe782cac89c4197b0b1c526cd2364a9ce692e8f7c521209d9d4b82c446`
+-	Image ID: `sha256:a0e34ca5cd75b415bb8eeb3a162334b23b3c5e4a77321c57b629871b1638d3b3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7138835cb77bf4709ef81dd5554700a21ae5655f520dad3623ac425dd7e89201`  
-		Last Modified: Thu, 05 Sep 2024 21:56:01 GMT  
+	-	`sha256:62459666e658dce201d210f5b0a8e3bf3769bc1e5e181d11293e1b8ef38fa5c4`  
+		Last Modified: Tue, 10 Sep 2024 02:56:42 GMT  
 		Size: 2.7 MB (2706965 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a859eb92531d17f9d1915aa35bb8fbe6f4850187c482c985e223f9b06a112a29`  
-		Last Modified: Thu, 05 Sep 2024 21:56:01 GMT  
+	-	`sha256:e9b8afd8e4991f0757c4dc4c38f2188afb8020d0a9572c50d2ae2dbc7880b3b6`  
+		Last Modified: Tue, 10 Sep 2024 02:56:42 GMT  
 		Size: 10.1 KB (10146 bytes)  
 		MIME: application/vnd.in-toto+json
 
