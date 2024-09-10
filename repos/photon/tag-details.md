@@ -587,7 +587,12 @@ $ docker pull photon@sha256:0c84d3312ca70b45b5228007ce4674633440e433bf8e3a29c4c0
 
 ## `photon:5.0-20240910`
 
-**does not exist** (yet?)
+```console
+$ docker pull photon@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `photon:latest`
 
