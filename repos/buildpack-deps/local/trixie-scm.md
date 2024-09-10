@@ -489,20 +489,13 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `OpenLDAP`
 - `RSA-MD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg1-7
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-7.dsc' cyrus-sasl2_2.1.28+dfsg1-7.dsc 3223 SHA256:892d527c81c9332b8392e86e35feee992ba1f7f1148ea21ecc7abfa1b2e5f84f
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg1.orig.tar.xz 794540 SHA256:e796a5d85d1a85e1b433d43504e467f9075c7ebc0b45730a3996cf11b1deada4
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-7.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg1-7.debian.tar.xz 98928 SHA256:f0f78918499794014036065f015f6d5f7d314c13015e4116a86182fa4993fad5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg1-7/
 
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg1-7/ (for browsing the source)
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg1-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg1-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.12-9`
 
@@ -765,20 +758,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.6.2-2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.6.2-2.dsc' expat_2.6.2-2.dsc 1964 SHA256:f41b25b086460dc7e448b8f833f442b29e32ba4117f4e8a534cbdbc65f14b409
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.6.2.orig.tar.gz' expat_2.6.2.orig.tar.gz 8416128 SHA256:fbd032683370d761ba68dba2566d3280a154f5290634172d60a79b24d366d9dc
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.6.2-2.debian.tar.xz' expat_2.6.2-2.debian.tar.xz 15176 SHA256:48606436acd2c46dad97cab7bc8174899dbed6125fc3868c736b8422f8133c87
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.6.2-2/
 
-- https://sources.debian.net/src/expat/2.6.2-2/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.6.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.6.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.10.0-3`
 
@@ -1405,20 +1391,13 @@ Licenses: (parsed from: `/usr/share/doc/libedit2/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libedit=3.1-20240517-1
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20240517-1.dsc' libedit_3.1-20240517-1.dsc 2264 SHA256:2943a877f4bf3ef8389edeae0d69f13f0b6fe31aedccdcf9e852108438334e79
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20240517.orig.tar.gz' libedit_3.1-20240517.orig.tar.gz 534690 SHA256:3a489097bb4115495f3bd85ae782852b7097c556d9500088d74b6fa38dbd12ff
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20240517-1.debian.tar.xz' libedit_3.1-20240517-1.debian.tar.xz 16700 SHA256:cae1b7d78da2b15c59122bd7651060bf01c6de0e8a42af5de95ec5a916e8b92b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libedit/3.1-20240517-1/
 
-- https://sources.debian.net/src/libedit/3.1-20240517-1/ (for browsing the source)
-- https://sources.debian.net/src/libedit/3.1-20240517-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libedit/3.1-20240517-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `liberror-perl=0.17029-2`
 
@@ -2437,21 +2416,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/o
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.3.1-7
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.3.1-7.dsc' openssl_3.3.1-7.dsc 2808 SHA256:ef7b60a175612c99c066b4bf4cf280382eb18963b0a82b0c3911563d1ac80a25
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.3.1.orig.tar.gz' openssl_3.3.1.orig.tar.gz 18055752 SHA256:777cd596284c883375a2a7a11bf5d2786fc5413255efab20c50d6ffe6d020b7e
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.3.1.orig.tar.gz.asc' openssl_3.3.1.orig.tar.gz.asc 833 SHA256:a1ca1547057b75e1750717d69a35a5373544cb42f671a1a7f672c4237aab1248
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.3.1-7.debian.tar.xz' openssl_3.3.1-7.debian.tar.xz 70184 SHA256:5915575351750ebba95024df03363cf4cfc11da8aa2ed1322f8e51c3771459b6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.3.1-7/
 
-- https://sources.debian.net/src/openssl/3.3.1-7/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.3.1-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.3.1-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.25.5-2`
 
@@ -2727,20 +2698,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.12=3.12.5-4
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.5-4.dsc' python3.12_3.12.5-4.dsc 3868 SHA256:867fa47969d3c86cc989647b3a565df3f18a74a339fe82bd0cfe7871b3d1762b
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.5.orig.tar.xz' python3.12_3.12.5.orig.tar.xz 20422396 SHA256:fa8a2e12c5e620b09f53e65bcd87550d2e5a1e2e04bf8ba991dcc55113876397
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.5-4.debian.tar.xz' python3.12_3.12.5-4.debian.tar.xz 213132 SHA256:67152d53d1ff537e0d5822fa3211eff3b6dfd868d3a3399e797f8da265edb6a5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.12/3.12.5-4/
 
-- https://sources.debian.net/src/python3.12/3.12.5-4/ (for browsing the source)
-- https://sources.debian.net/src/python3.12/3.12.5-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.12/3.12.5-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-5`
 

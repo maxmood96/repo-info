@@ -103,21 +103,13 @@ Licenses: (parsed from: `/usr/share/doc/libapr1t64/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apr=1.7.2-3.2
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2-3.2.dsc' apr_1.7.2-3.2.dsc 2323 SHA256:e6beb42d176608fce031f271017b650658c633f5e31080047541b9549ee2715a
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2.orig.tar.bz2' apr_1.7.2.orig.tar.bz2 890218 SHA256:75e77cc86776c030c0a5c408dfbd0bf2a0b75eed5351e52d5439fa1e5509a43e
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2.orig.tar.bz2.asc' apr_1.7.2.orig.tar.bz2.asc 833 SHA256:3e45e804041cfd112d3710db11424e861a6f96e5b8908fcb73bc558f7d480f37
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2-3.2.debian.tar.xz' apr_1.7.2-3.2.debian.tar.xz 54572 SHA256:0758509e6cda3f6f3f367e84e8ef1c05d58450936f78f4163f22b0df8a663a6c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apr/1.7.2-3.2/
 
-- https://sources.debian.net/src/apr/1.7.2-3.2/ (for browsing the source)
-- https://sources.debian.net/src/apr/1.7.2-3.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apr/1.7.2-3.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=2.9.8`
 
@@ -2064,20 +2056,13 @@ Licenses: (parsed from: `/usr/share/doc/libisl23/copyright`)
 - `LGPL-2.1+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris isl=0.26-3
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.26-3.dsc' isl_0.26-3.dsc 1832 SHA256:b943ed41e0d04bd86ea1a9a10e49a0ac1996ac534b67b968df4320880ec6e6e7
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.26.orig.tar.xz' isl_0.26.orig.tar.xz 2035560 SHA256:a0b5cb06d24f9fa9e77b55fabbe9a3c94a336190345c2555f9915bb38e976504
-'http://deb.debian.org/debian/pool/main/i/isl/isl_0.26-3.debian.tar.xz' isl_0.26-3.debian.tar.xz 24700 SHA256:c4a9367d892a12da46c54cbf6475f447e137ac3eff857baa91af94c99daed0a5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/isl/0.26-3/
 
-- https://sources.debian.net/src/isl/0.26-3/ (for browsing the source)
-- https://sources.debian.net/src/isl/0.26-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/isl/0.26-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `jansson=2.14-2`
 
@@ -5074,20 +5059,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.12=3.12.5-4
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.5-4.dsc' python3.12_3.12.5-4.dsc 3868 SHA256:867fa47969d3c86cc989647b3a565df3f18a74a339fe82bd0cfe7871b3d1762b
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.5.orig.tar.xz' python3.12_3.12.5.orig.tar.xz 20422396 SHA256:fa8a2e12c5e620b09f53e65bcd87550d2e5a1e2e04bf8ba991dcc55113876397
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.5-4.debian.tar.xz' python3.12_3.12.5-4.debian.tar.xz 213132 SHA256:67152d53d1ff537e0d5822fa3211eff3b6dfd868d3a3399e797f8da265edb6a5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.12/3.12.5-4/
 
-- https://sources.debian.net/src/python3.12/3.12.5-4/ (for browsing the source)
-- https://sources.debian.net/src/python3.12/3.12.5-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.12/3.12.5-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-5`
 
@@ -5399,21 +5377,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `Unicode`
 - `Utfwidth`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.14.3-2
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.3-2.dsc' subversion_1.14.3-2.dsc 4046 SHA256:c603f04a22bf8b3df99d697afa579540c3b7a4e7274cb925db0805d6c3bdf570
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.3.orig.tar.gz' subversion_1.14.3.orig.tar.gz 11621442 SHA256:cf70775e5ed075ebc6a63fe8619dc6b530da254a3f61ba53a502dd83c8f14afc
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.3.orig.tar.gz.asc' subversion_1.14.3.orig.tar.gz.asc 1724 SHA256:e0d93fb48ba707a201f32f350774797333013c7a53cd6c785665717f0e9cfbc5
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.3-2.debian.tar.xz' subversion_1.14.3-2.debian.tar.xz 338424 SHA256:820de690b8c487b033a4e4742981a8f94d82b32e2181111e426730bc6bfa4777
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.14.3-2/
 
-- https://sources.debian.net/src/subversion/1.14.3-2/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.14.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.14.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysprof=46.0-2`
 
@@ -5777,20 +5747,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.40.2-7
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2-7.dsc' util-linux_2.40.2-7.dsc 4999 SHA256:0624bf5f4c411059ae55419cb6a65981f785b532f34966fe5c2acd476d9be770
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2.orig.tar.xz' util-linux_2.40.2.orig.tar.xz 8854820 SHA256:d78b37a66f5922d70edf3bdfb01a6b33d34ed3c3cafd6628203b2a2b67c8e8b3
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2-7.debian.tar.xz' util-linux_2.40.2-7.debian.tar.xz 109600 SHA256:b8488703f1ee65b730755767c30c6f81e76d6180533b91d20e0a4444d96a3741
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.40.2-7/
 
-- https://sources.debian.net/src/util-linux/2.40.2-7/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.40.2-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.40.2-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.24.5-2`
 

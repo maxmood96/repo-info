@@ -4107,14 +4107,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff-dev/copyright`, `/usr/share/doc/
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.1.0+git191117-2ubuntu0.20.04.13
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0%2bgit191117-2ubuntu0.20.04.13.dsc' tiff_4.1.0+git191117-2ubuntu0.20.04.13.dsc 2211 SHA512:08eba052301db7fc703cf2874271c86ac9860750add301fa64a2a5d0cb8af86e592a3ca0826020c605261763447bca92140216744c2918de7f1427ac45d9cbfb
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0%2bgit191117.orig.tar.xz' tiff_4.1.0+git191117.orig.tar.xz 1533524 SHA512:25b4bc4522fc2e7f3ca6857b87acd4481d8643566b1120c755020afc8b48949238ee2078bc43dd3ba7407eaa4e36b1b712d7056f101ddaf60f94dab8607870b8
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.1.0%2bgit191117-2ubuntu0.20.04.13.debian.tar.xz' tiff_4.1.0+git191117-2ubuntu0.20.04.13.debian.tar.xz 52964 SHA512:e025856f29e023705e78b35b461ce266f745e2e54b582f5f61b14c01aca4e9771375e57a40495d7749c4a5d61de17dc56715919dfe44ee1490be6e9c9e952ee0
-```
 
 ### `dpkg` source package: `tzdata=2024a-0ubuntu0.20.04.1`
 
