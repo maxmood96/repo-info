@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a1802d2cf0bf19bb7b500cad2c65a27d092326c1517e484680604c25c6a4773c`
+- Image ID: `sha256:5ebb7bb4b098e5f15acd7223e13379a195f6c9c37579fef98096c5599ffc4eca`
 - Created: `2024-02-05T22:05:50Z`
-- Virtual Size: ~ 516.55 Mb  
+- Virtual Size: ~ 516.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -92,16 +92,16 @@ GPL-2.0-only
 ### `apk` package: `apr`
 
 ```console
-apr-1.7.4-r0 description:
+apr-1.7.5-r0 description:
 The Apache Portable Runtime
 
-apr-1.7.4-r0 webpage:
+apr-1.7.5-r0 webpage:
 https://apr.apache.org/
 
-apr-1.7.4-r0 installed size:
+apr-1.7.5-r0 installed size:
 216 KiB
 
-apr-1.7.4-r0 license:
+apr-1.7.5-r0 license:
 Apache-2.0
 
 ```
@@ -483,16 +483,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.1-r3 description:
+libcrypto3-3.3.2-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.1-r3 webpage:
+libcrypto3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.1-r3 installed size:
+libcrypto3-3.3.2-r0 installed size:
 4660 KiB
 
-libcrypto3-3.3.1-r3 license:
+libcrypto3-3.3.2-r0 license:
 Apache-2.0
 
 ```
@@ -500,16 +500,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.9.0-r0 description:
+libcurl-8.9.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.9.0-r0 webpage:
+libcurl-8.9.1-r1 webpage:
 https://curl.se/
 
-libcurl-8.9.0-r0 installed size:
+libcurl-8.9.1-r1 installed size:
 628 KiB
 
-libcurl-8.9.0-r0 license:
+libcurl-8.9.1-r1 license:
 curl
 
 ```
@@ -517,16 +517,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.2-r0 description:
+libexpat-2.6.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.2-r0 webpage:
+libexpat-2.6.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.2-r0 installed size:
+libexpat-2.6.3-r0 installed size:
 144 KiB
 
-libexpat-2.6.2-r0 license:
+libexpat-2.6.3-r0 license:
 MIT
 
 ```
@@ -704,16 +704,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.1-r3 description:
+libssl3-3.3.2-r0 description:
 SSL shared libraries
 
-libssl3-3.3.1-r3 webpage:
+libssl3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.1-r3 installed size:
+libssl3-3.3.2-r0 installed size:
 796 KiB
 
-libssl3-3.3.1-r3 license:
+libssl3-3.3.2-r0 license:
 Apache-2.0
 
 ```
@@ -976,16 +976,16 @@ MIT
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.1-r3 description:
+openssl-3.3.2-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.1-r3 webpage:
+openssl-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.3.1-r3 installed size:
+openssl-3.3.2-r0 installed size:
 784 KiB
 
-openssl-3.3.1-r3 license:
+openssl-3.3.2-r0 license:
 Apache-2.0
 
 ```
@@ -1248,16 +1248,16 @@ Apache-2.0 AND BSD-2-Clause
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2024a-r1 description:
+tzdata-2024b-r0 description:
 Timezone data
 
-tzdata-2024a-r1 webpage:
+tzdata-2024b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2024a-r1 installed size:
-1560 KiB
+tzdata-2024b-r0 installed size:
+1512 KiB
 
-tzdata-2024a-r1 license:
+tzdata-2024b-r0 license:
 Public-Domain
 
 ```

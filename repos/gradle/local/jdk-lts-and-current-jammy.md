@@ -1,9 +1,9 @@
-# `gradle:8.10.0-jdk-lts-and-current`
+# `gradle:8.10.1-jdk-lts-and-current`
 
 ## Docker Metadata
 
-- Image ID: `sha256:67e0f0575be86b24b738afc70566957b11a3f8cf7a74046f971b1eb76785ae94`
-- Created: `2024-08-15T06:00:50Z`
+- Image ID: `sha256:091b233345db8041d72f40e2a5bdf25d696edd78f1bda1d811837a1cfb366baa`
+- Created: `2024-09-09T18:59:34Z`
 - Virtual Size: ~ 1.05 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,7 +19,7 @@
   - `JAVA_LTS_HOME=/opt/java/openjdk21`
   - `JAVA_CURRENT_HOME=/opt/java/openjdk22`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.10`
+  - `GRADLE_VERSION=8.10.1`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -118,13 +118,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.4.12
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.12.dsc' apt_2.4.12.dsc 2809 SHA512:4add8071bdfa2e2058af86fd281dd2194b2d6b93f189aa364a3fc15e30418c6e339e2cf3e5a83056ca61948f22bc4d3b54fa286e8703bc9a825a547597ede109
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.12.tar.xz' apt_2.4.12.tar.xz 2323236 SHA512:54007be98f0679471de95c3ac7d16eb2cb8d2d75039f85d5c6994f083f8744c3550c40dce75ae0c8e25f0c1e42d91993c9531dd78a49e4f34b190e5c600b7bb2
-```
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
 
