@@ -174,13 +174,9 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/apt-util
 - `GPL-2`
 - `GPLv2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.4.12
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.12.dsc' apt_2.4.12.dsc 2809 SHA512:4add8071bdfa2e2058af86fd281dd2194b2d6b93f189aa364a3fc15e30418c6e339e2cf3e5a83056ca61948f22bc4d3b54fa286e8703bc9a825a547597ede109
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.12.tar.xz' apt_2.4.12.tar.xz 2323236 SHA512:54007be98f0679471de95c3ac7d16eb2cb8d2d75039f85d5c6994f083f8744c3550c40dce75ae0c8e25f0c1e42d91993c9531dd78a49e4f34b190e5c600b7bb2
-```
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
 
@@ -260,13 +256,9 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12ubuntu4.6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.6.dsc' base-files_12ubuntu4.6.dsc 1598 SHA512:3029ee4489c85a99f7b82387905260cfada128a79b4f811e4565bb5b5059fe052eac6a2eaf49262318c64b89b63b437dc0bf062bb80601b12c107b236990280d
-'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.6.tar.xz' base-files_12ubuntu4.6.tar.xz 81940 SHA512:a267b25b26473c3b538c4b492077f82fc0a73eafc816c73845efe5a54675fcfaeee0b2fbd2971b19cd5a19fb4564c9e6bc72d5209d200be40bc8085305e5ba6d
-```
 
 ### `dpkg` source package: `base-passwd=3.5.52build1`
 
@@ -6272,15 +6264,9 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tiff=4.3.0-6ubuntu0.9
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.9.dsc' tiff_4.3.0-6ubuntu0.9.dsc 2358 SHA512:8cca6d5dae6d178fe5e3c1667ff3630d3667bd5407c75786b88d3b5bf900b2810c47072c0750a54f1c675fa07814dd080d6a95b9afbb7305a8d985214621cdeb
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz' tiff_4.3.0.orig.tar.gz 2808254 SHA512:e04a4a6c542e58a174c1e9516af3908acf1d3d3e1096648c5514f4963f73e7af27387a76b0fbabe43cf867a18874088f963796a7cd6e45deb998692e3e235493
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz.asc' tiff_4.3.0.orig.tar.gz.asc 488 SHA512:115a4c5714b52d0fbea800c494d83c8a96b70b2c9ce84a8df03205d9afc517faa17963f5f9508c013d7d3e2be6675b84b594a771a829406473234c4bd85e469e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.9.debian.tar.xz' tiff_4.3.0-6ubuntu0.9.debian.tar.xz 50428 SHA512:73af6c8521ae13d6f75227971fb633ce4383eac09ffe153ce4bcc4bf30edd14489ff5b1c7970cd74e0143e61028a300c50d14a021a7dfd7d93b6b496a7b6396a
-```
 
 ### `dpkg` source package: `twolame=0.4.0-2build2`
 
