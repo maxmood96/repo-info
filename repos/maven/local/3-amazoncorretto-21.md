@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2ad2d489abd9a4922dcf0e012951a635ad1042b9ec9f90b2fc3573d1111962f3`
+- Image ID: `sha256:6711f4bf903c13c4a6a4d4e88c80eebaf5758331c2fca251cc3714edb5419432`
 - Created: `2024-08-19T08:57:28Z`
-- Virtual Size: ~ 961.85 Mb  
+- Virtual Size: ~ 967.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
