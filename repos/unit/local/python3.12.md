@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ea3af5f1881505e3bfd07dbc2aa650646f8fabc950705480306e5594185a5cad`
+- Image ID: `sha256:36b329fca2d076e2289705bfec581a4e074e426dd6803302da40714ef1e0206c`
 - Created: `2024-03-26T13:57:15Z`
-- Virtual Size: ~ 947.07 Mb  
+- Virtual Size: ~ 947.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
-  - `PYTHON_VERSION=3.12.5`
+  - `PYTHON_VERSION=3.12.6`
   - `PYTHON_PIP_VERSION=24.2`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/def4aec84b261b939137dd1c69eff0aabb4a7bf4/public/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=bc37786ec99618416cc0a0ca32833da447f4d91ab51d2c138dd15b7af21e8e9a`
@@ -447,12 +447,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/binutils/2.35.2-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/binutils/2.35.2-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `bluez=5.55-3.1+deb11u1`
+### `dpkg` source package: `bluez=5.55-3.1+deb11u2`
 
 Binary Packages:
 
-- `libbluetooth-dev:amd64=5.55-3.1+deb11u1`
-- `libbluetooth3:amd64=5.55-3.1+deb11u1`
+- `libbluetooth-dev:amd64=5.55-3.1+deb11u2`
+- `libbluetooth3:amd64=5.55-3.1+deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/libbluetooth-dev/copyright`, `/usr/share/doc/libbluetooth3/copyright`)
 
@@ -467,17 +467,17 @@ Licenses: (parsed from: `/usr/share/doc/libbluetooth-dev/copyright`, `/usr/share
 Source:
 
 ```console
-$ apt-get source -qq --print-uris bluez=5.55-3.1+deb11u1
-'http://deb.debian.org/debian/pool/main/b/bluez/bluez_5.55-3.1%2bdeb11u1.dsc' bluez_5.55-3.1+deb11u1.dsc 2916 SHA256:2841cf129f23755027a70b68bea7553531405f8bf84a35261c8088fb34190258
-'http://deb.debian.org/debian/pool/main/b/bluez/bluez_5.55.orig.tar.xz' bluez_5.55.orig.tar.xz 1700208 SHA256:f06520e1e48bddc88db1a5c5a60ee97b36b47409c352352374bf07a594400ac4
-'http://deb.debian.org/debian/pool/main/b/bluez/bluez_5.55-3.1%2bdeb11u1.debian.tar.xz' bluez_5.55-3.1+deb11u1.debian.tar.xz 35848 SHA256:cb75ba629cf0480fbd59bf18b8379f4d8bb2883edd1ce3be8a6d6e5d8294f4ed
+$ apt-get source -qq --print-uris bluez=5.55-3.1+deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/b/bluez/bluez_5.55-3.1%2bdeb11u2.dsc' bluez_5.55-3.1+deb11u2.dsc 2761 SHA256:34d809c769955f83773f536e43399a53b18031bc6396b43db12f012ce16a5292
+'http://deb.debian.org/debian-security/pool/updates/main/b/bluez/bluez_5.55.orig.tar.xz' bluez_5.55.orig.tar.xz 1700208 SHA256:f06520e1e48bddc88db1a5c5a60ee97b36b47409c352352374bf07a594400ac4
+'http://deb.debian.org/debian-security/pool/updates/main/b/bluez/bluez_5.55-3.1%2bdeb11u2.debian.tar.xz' bluez_5.55-3.1+deb11u2.debian.tar.xz 46296 SHA256:649ac0d777afbb5ef56f5955a9e075527ade6d265709ec948ef570c87f0ecf2b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/bluez/5.55-3.1+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/bluez/5.55-3.1+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bluez/5.55-3.1+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/bluez/5.55-3.1+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/bluez/5.55-3.1+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/bluez/5.55-3.1+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `brotli=1.0.9-2`
 
