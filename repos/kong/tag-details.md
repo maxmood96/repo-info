@@ -26,6 +26,10 @@
 -	[`kong:3.7-ubuntu`](#kong37-ubuntu)
 -	[`kong:3.7.1`](#kong371)
 -	[`kong:3.7.1-ubuntu`](#kong371-ubuntu)
+-	[`kong:3.8`](#kong38)
+-	[`kong:3.8-ubuntu`](#kong38-ubuntu)
+-	[`kong:3.8.0`](#kong380)
+-	[`kong:3.8.0-ubuntu`](#kong380-ubuntu)
 -	[`kong:latest`](#konglatest)
 -	[`kong:ubuntu`](#kongubuntu)
 
@@ -4577,6 +4581,22 @@ $ docker pull kong@sha256:c8abe86d5aad6640b3823be1bc7efb9fb8cf77bd6176a6cd3d093f
 		Last Modified: Sat, 17 Aug 2024 03:03:14 GMT  
 		Size: 16.3 KB (16344 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `kong:3.8`
+
+**does not exist** (yet?)
+
+## `kong:3.8-ubuntu`
+
+**does not exist** (yet?)
+
+## `kong:3.8.0`
+
+**does not exist** (yet?)
+
+## `kong:3.8.0-ubuntu`
+
+**does not exist** (yet?)
 
 ## `kong:latest`
 
