@@ -4584,19 +4584,39 @@ $ docker pull kong@sha256:c8abe86d5aad6640b3823be1bc7efb9fb8cf77bd6176a6cd3d093f
 
 ## `kong:3.8`
 
-**does not exist** (yet?)
+```console
+$ docker pull kong@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `kong:3.8-ubuntu`
 
-**does not exist** (yet?)
+```console
+$ docker pull kong@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `kong:3.8.0`
 
-**does not exist** (yet?)
+```console
+$ docker pull kong@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `kong:3.8.0-ubuntu`
 
-**does not exist** (yet?)
+```console
+$ docker pull kong@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `kong:latest`
 
