@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:40d2aa42b8c7ae6ae351180cf8639c2180d8b683201b8278b9f01ae9dde9912c`
+- Image ID: `sha256:b094c1594cf579ea8a54226d8d6490f4a6e3646a8d9b2fcc59c9b74bea3b1460`
 - Created: `2024-08-22T07:58:33Z`
-- Virtual Size: ~ 453.70 Mb  
+- Virtual Size: ~ 453.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `JAVA_VERSION=jdk-17.0.12+7`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-08-27T13:56:46`
+  - `build-date=2024-09-09T02:35:25`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -31,9 +31,9 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
-  - `release=1227`
+  - `release=1227.1725849298`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1227`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1227.1725849298`
   - `vcs-ref=94baa7760359088a42ad33dc22d329a5ee2c7209`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -239,7 +239,7 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glib2-2.68.4-14.el9.x86_64`
+### `rpm` package: `glib2-2.68.4-14.el9_4.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -815,7 +815,7 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `redhat-release-9.4-0.4.el9.x86_64`
+### `rpm` package: `redhat-release-9.4-0.5.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
@@ -887,7 +887,7 @@ Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `tar-1.34-6.el9_1.x86_64`
+### `rpm` package: `tar-1.34-6.el9_4.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
