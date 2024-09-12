@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fddd2c89253cdc31b6e4accacc9332119aa6315dde44a9bc64e9ccec115d28ed`
+- Image ID: `sha256:1fe06fc90cde0640f2687b52fad763ea44f4e7dce88d2023ed9a20ce28f47136`
 - Created: `2024-06-06T15:11:32Z`
 - Virtual Size: ~ 2.54 Gb  
   (total size of all layers on-disk)
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-08-27T13:58:18`
+  - `build-date=2024-09-09T02:35:25`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
@@ -30,9 +30,9 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=1214`
+  - `release=1214.1725849297`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.4-1214`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.4-1214.1725849297`
   - `vcs-ref=e309397d02fc53f7fa99db1371b8700eb49f268f`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -220,7 +220,7 @@ Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `emacs-filesystem-27.2-9.el9.noarch`
+### `rpm` package: `emacs-filesystem-27.2-10.el9_4.noarch`
 
 Licenses (from `rpm --query`): GPLv3+ and CC0-1.0
 
@@ -304,7 +304,7 @@ Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glib2-2.68.4-14.el9.x86_64`
+### `rpm` package: `glib2-2.68.4-14.el9_4.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -1588,7 +1588,7 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `redhat-release-9.4-0.4.el9.x86_64`
+### `rpm` package: `redhat-release-9.4-0.5.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 

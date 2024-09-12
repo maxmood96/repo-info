@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f09185d19f15a188aff9a1a657e1cb97c541db5a51e992e636b550c2ead4aa9b`
+- Image ID: `sha256:09e61234c5fb2ff1ae2e1175ed7fa66b0cc1c81db21e1aea404272d5a93eabe0`
 - Created: `2024-06-06T15:11:32Z`
-- Virtual Size: ~ 342.49 Mb  
+- Virtual Size: ~ 358.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-08-27T13:58:18`
+  - `build-date=2024-09-09T02:35:25`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
@@ -30,9 +30,9 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=1214`
+  - `release=1214.1725849297`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.4-1214`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.4-1214.1725849297`
   - `vcs-ref=e309397d02fc53f7fa99db1371b8700eb49f268f`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -238,7 +238,7 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glib2-2.68.4-14.el9.x86_64`
+### `rpm` package: `glib2-2.68.4-14.el9_4.1.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
@@ -976,7 +976,7 @@ Licenses (from `rpm --query`): GPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `redhat-release-9.4-0.4.el9.x86_64`
+### `rpm` package: `redhat-release-9.4-0.5.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
@@ -1072,7 +1072,7 @@ Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `tar-1.34-6.el9_1.x86_64`
+### `rpm` package: `tar-1.34-6.el9_4.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
