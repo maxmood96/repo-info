@@ -1389,21 +1389,13 @@ Licenses: (parsed from: `/usr/share/doc/mawk/copyright`)
 - `GPL-2.0-only`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mawk=1.3.4.20240819-3
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20240819-3.dsc' mawk_1.3.4.20240819-3.dsc 2969 SHA256:09c504be1be16ce4b2bd7478e27a5c141018cc81dd08eb1fdd4cf94faab2906a
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20240819.orig.tar.gz' mawk_1.3.4.20240819.orig.tar.gz 421586 SHA256:6e1fde8ee7ad8a5c15382316863fd6b4c6d23fab781dd5ab0177ffa3ee9aae5c
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20240819.orig.tar.gz.asc' mawk_1.3.4.20240819.orig.tar.gz.asc 729 SHA256:01cae5d5bda8ad9b9bfed1d916058d548633d7a5e0286276849fb2bb50e88444
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20240819-3.debian.tar.xz' mawk_1.3.4.20240819-3.debian.tar.xz 16700 SHA256:0fb24c74e66b624e01e1e57f878ec4ed1695bfa57e463231bd8507442a423015
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mawk/1.3.4.20240819-3/
 
-- https://sources.debian.net/src/mawk/1.3.4.20240819-3/ (for browsing the source)
-- https://sources.debian.net/src/mawk/1.3.4.20240819-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mawk/1.3.4.20240819-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.5-2`
 
@@ -1737,20 +1729,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=256.5-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.5-2.dsc' systemd_256.5-2.dsc 8234 SHA256:66ddf5d3506bb48e055a75cc312531309ca49e01ef34d4608291fca880284769
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.5.orig.tar.gz' systemd_256.5.orig.tar.gz 15664466 SHA256:41bb91861ab9f2f2b6cadad558ea1f8764d701452b018852146d642a850c8a8b
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.5-2.debian.tar.xz' systemd_256.5-2.debian.tar.xz 171260 SHA256:8c8e753d8ae69dbf1e7049080e7ebac26bb346ecf52683c33c60059d4d9dd07b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/256.5-2/
 
-- https://sources.debian.net/src/systemd/256.5-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/256.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/256.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.10-1`
 
@@ -1768,20 +1753,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.10-1
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.10-1.dsc' sysvinit_3.10-1.dsc 2347 SHA256:d8e1cd5ea470a0e059425772a9f4ca0d37d2db5db9ce1e6d1bf77d67604fef21
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.10.orig.tar.gz' sysvinit_3.10.orig.tar.gz 514655 SHA256:9fbee91fbe496e207db7ab4cdfbe4f97f8795925343a76b4f3392e741b0e103b
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.10-1.debian.tar.xz' sysvinit_3.10-1.debian.tar.xz 121244 SHA256:b2b13c317bb07b80a3621213f820465d93b23140643fb64415656c01f4d41ba7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.10-1/
 
-- https://sources.debian.net/src/sysvinit/3.10-1/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.10-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.10-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-3`
 
