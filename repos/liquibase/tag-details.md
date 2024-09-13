@@ -12,7 +12,7 @@
 ## `liquibase:4.29`
 
 ```console
-$ docker pull liquibase@sha256:48f2597ba57e224eba4972f458f8a1b961124f37310d6d70f1d7482a52309be2
+$ docker pull liquibase@sha256:29560d65691f165858e9e7ac78eb48680e5c8934d757b9a07988e33eb77885d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -23,14 +23,14 @@ $ docker pull liquibase@sha256:48f2597ba57e224eba4972f458f8a1b961124f37310d6d70f
 ### `liquibase:4.29` - linux; amd64
 
 ```console
-$ docker pull liquibase@sha256:2e481736443c9645eab3d9e1009c46757bdb090e6aa89922bea2821c8ba559d0
+$ docker pull liquibase@sha256:8680f90b598abff5a8fada2f6b4ab572fed21fec1955c02d818b034ca3ab2eeb
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.5 MB (256490201 bytes)**  
+-	Total Size: **253.6 MB (253579786 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0937299dbbf0b9f6334778d1453270bbbc54f1640b15f113104e4531155a1fd9`
+-	Image ID: `sha256:77631a8b9ff0a61c4fda0dadc8ef2873cd219744d7c003c26c252258d65e81a4`
 -	Entrypoint: `["\/liquibase\/docker-entrypoint.sh"]`
 -	Default Command: `["--help"]`
 
@@ -76,26 +76,26 @@ ARG LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9
 # Wed, 04 Sep 2024 21:20:05 GMT
 # ARGS: LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9 LIQUIBASE_VERSION=4.29.2
 RUN wget -q -O liquibase-${LIQUIBASE_VERSION}.tar.gz "https://github.com/liquibase/liquibase/releases/download/v${LIQUIBASE_VERSION}/liquibase-${LIQUIBASE_VERSION}.tar.gz" &&     echo "$LB_SHA256 *liquibase-${LIQUIBASE_VERSION}.tar.gz" | sha256sum -c - &&     tar -xzf liquibase-${LIQUIBASE_VERSION}.tar.gz &&     rm liquibase-${LIQUIBASE_VERSION}.tar.gz &&     ln -s /liquibase/liquibase /usr/local/bin/liquibase &&     ln -s /liquibase/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh &&     liquibase --version
-# Wed, 04 Sep 2024 21:20:06 GMT
-ARG LPM_VERSION=0.2.7
-# Wed, 04 Sep 2024 21:20:06 GMT
-ARG LPM_SHA256=e831120c566c76a427c6d3489cd62d5447322444399393e3ef304db0c036c4a1
-# Wed, 04 Sep 2024 21:20:06 GMT
-ARG LPM_SHA256_ARM=720afb6bafb987ab502b86682f410d0e19da45fdf0119d947ed7bfa4e6a02665
-# Wed, 04 Sep 2024 21:20:17 GMT
-# ARGS: LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9 LIQUIBASE_VERSION=4.29.2 LPM_SHA256=e831120c566c76a427c6d3489cd62d5447322444399393e3ef304db0c036c4a1 LPM_SHA256_ARM=720afb6bafb987ab502b86682f410d0e19da45fdf0119d947ed7bfa4e6a02665 LPM_VERSION=0.2.7
+# Fri, 13 Sep 2024 21:20:00 GMT
+ARG LPM_VERSION=0.2.8
+# Fri, 13 Sep 2024 21:20:00 GMT
+ARG LPM_SHA256=ad46e7f0ca67e39ddbf1435c0bd2879be8a43340c7b627a2da45c07787574200
+# Fri, 13 Sep 2024 21:20:00 GMT
+ARG LPM_SHA256_ARM=2a2e46f2260f46ccd39f487dca161b4e04d97664160925c5e415bd9b54a23e1a
+# Fri, 13 Sep 2024 21:20:14 GMT
+# ARGS: LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9 LIQUIBASE_VERSION=4.29.2 LPM_SHA256=ad46e7f0ca67e39ddbf1435c0bd2879be8a43340c7b627a2da45c07787574200 LPM_SHA256_ARM=2a2e46f2260f46ccd39f487dca161b4e04d97664160925c5e415bd9b54a23e1a LPM_VERSION=0.2.8
 RUN apt-get update &&     apt-get -yqq install unzip --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     mkdir /liquibase/bin &&     arch="$(dpkg --print-architecture)" &&     case "$arch" in       amd64)  DOWNLOAD_ARCH=""  ;;       arm64)  DOWNLOAD_ARCH="-arm64" && LPM_SHA256=$LPM_SHA256_ARM ;;       *) echo >&2 "error: unsupported architecture '$arch'" && exit 1 ;;     esac && wget -q -O lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip "https://github.com/liquibase/liquibase-package-manager/releases/download/v${LPM_VERSION}/lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" &&     echo "$LPM_SHA256 *lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" | sha256sum -c - &&     unzip lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip -d bin/ &&     rm lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip &&     apt-get purge -y --auto-remove unzip &&     ln -s /liquibase/bin/lpm /usr/local/bin/lpm &&     lpm --version
-# Wed, 04 Sep 2024 21:20:17 GMT
+# Fri, 13 Sep 2024 21:20:14 GMT
 ENV LIQUIBASE_HOME=/liquibase
-# Wed, 04 Sep 2024 21:20:17 GMT
+# Fri, 13 Sep 2024 21:20:14 GMT
 COPY file:de48911eb8db3870b1900fa0141e8a528d47fc7c60d29997ed293586bfaf6d64 in ./ 
-# Wed, 04 Sep 2024 21:20:17 GMT
+# Fri, 13 Sep 2024 21:20:14 GMT
 COPY file:e457fe6fb13404d03e09152692b0afddbaae5ccbc4b35ccc08fe2667e50bbe6a in ./ 
-# Wed, 04 Sep 2024 21:20:17 GMT
+# Fri, 13 Sep 2024 21:20:14 GMT
 USER liquibase:liquibase
-# Wed, 04 Sep 2024 21:20:17 GMT
+# Fri, 13 Sep 2024 21:20:14 GMT
 ENTRYPOINT ["/liquibase/docker-entrypoint.sh"]
-# Wed, 04 Sep 2024 21:20:17 GMT
+# Fri, 13 Sep 2024 21:20:15 GMT
 CMD ["--help"]
 ```
 
@@ -128,17 +128,17 @@ CMD ["--help"]
 		Last Modified: Wed, 04 Sep 2024 21:20:53 GMT  
 		Size: 159.4 MB (159437097 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6db5063fe6493a6d6c59def6f97effa8d447d54b2eaf13197c8d3b225fcd102c`  
-		Last Modified: Wed, 04 Sep 2024 21:20:47 GMT  
-		Size: 6.5 MB (6456527 bytes)  
+	-	`sha256:4664c02b2785e4475747642d44bb2985788e8958571a6bef5ad7bce66d454bc3`  
+		Last Modified: Fri, 13 Sep 2024 21:20:32 GMT  
+		Size: 3.5 MB (3546114 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e31f59b613f0e504a513a36760f02c64bb54edd30b6b92b5fbe0b3a3155b371b`  
-		Last Modified: Wed, 04 Sep 2024 21:20:46 GMT  
-		Size: 478.0 B  
+	-	`sha256:f8ac6ad0c587e4ac5d47224634da86b3c3d1bcda2b15803b4ab30e7c9c5b03ad`  
+		Last Modified: Fri, 13 Sep 2024 21:20:32 GMT  
+		Size: 477.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3177443cc2a627d9a8f1310a21ec980c3417bd01320a9c56e50e9bd22aba0e`  
-		Last Modified: Wed, 04 Sep 2024 21:20:46 GMT  
-		Size: 176.0 B  
+	-	`sha256:a0ddc3010bdc486e95b20c3aa1e2926e1483afc90338dd31006462a8976309b0`  
+		Last Modified: Fri, 13 Sep 2024 21:20:32 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `liquibase:4.29` - linux; arm64 variant v8
@@ -265,7 +265,7 @@ CMD ["--help"]
 ## `liquibase:4.29-alpine`
 
 ```console
-$ docker pull liquibase@sha256:b2f7f7600aa1459a584619095b488ed1a10338df75f6107d2f79a6dcd529702c
+$ docker pull liquibase@sha256:0d07b32ae81af1903223e44a162bc6c3f22ea9b4ff5cf2229c921d868d271c8b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -276,14 +276,14 @@ $ docker pull liquibase@sha256:b2f7f7600aa1459a584619095b488ed1a10338df75f6107d2
 ### `liquibase:4.29-alpine` - linux; amd64
 
 ```console
-$ docker pull liquibase@sha256:9f2bbe9597845f33fc042b85cd4c9f67fa9b56eecc399b3e8ebc95e3f15df87d
+$ docker pull liquibase@sha256:082d26c7ee48206ef99ff4a5c9df035c7bd652b9bf37884c1b2e47370c0dff66
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **231.8 MB (231804454 bytes)**  
+-	Total Size: **228.9 MB (228895084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf477edd50f9fd514a3131800212b0e1aa7508e003b1c327ea7a9a7d5a49080c`
+-	Image ID: `sha256:61571bb129a45f89930971c9b1a81a66bf8865514c6e711a10194730b6f4e607`
 -	Entrypoint: `["\/liquibase\/docker-entrypoint.sh"]`
 -	Default Command: `["--help"]`
 
@@ -305,26 +305,26 @@ ARG LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9
 # Fri, 06 Sep 2024 22:36:57 GMT
 # ARGS: LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9 LIQUIBASE_VERSION=4.29.2
 RUN set -x &&     apk add --no-cache --virtual .fetch-deps wget &&     wget -q -O liquibase-${LIQUIBASE_VERSION}.tar.gz "https://github.com/liquibase/liquibase/releases/download/v${LIQUIBASE_VERSION}/liquibase-${LIQUIBASE_VERSION}.tar.gz" &&     echo "$LB_SHA256 *liquibase-${LIQUIBASE_VERSION}.tar.gz" | sha256sum -c - &&     tar -xzf liquibase-${LIQUIBASE_VERSION}.tar.gz &&     rm liquibase-${LIQUIBASE_VERSION}.tar.gz &&     apk del --no-network .fetch-deps &&     ln -s /liquibase/liquibase /usr/local/bin/liquibase &&     ln -s /liquibase/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh &&     liquibase --version
-# Fri, 06 Sep 2024 22:36:57 GMT
-ARG LPM_VERSION=0.2.7
-# Fri, 06 Sep 2024 22:36:57 GMT
-ARG LPM_SHA256=e831120c566c76a427c6d3489cd62d5447322444399393e3ef304db0c036c4a1
-# Fri, 06 Sep 2024 22:36:57 GMT
-ARG LPM_SHA256_ARM=720afb6bafb987ab502b86682f410d0e19da45fdf0119d947ed7bfa4e6a02665
-# Fri, 06 Sep 2024 22:36:59 GMT
-# ARGS: LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9 LIQUIBASE_VERSION=4.29.2 LPM_SHA256=e831120c566c76a427c6d3489cd62d5447322444399393e3ef304db0c036c4a1 LPM_SHA256_ARM=720afb6bafb987ab502b86682f410d0e19da45fdf0119d947ed7bfa4e6a02665 LPM_VERSION=0.2.7
+# Fri, 13 Sep 2024 21:20:20 GMT
+ARG LPM_VERSION=0.2.8
+# Fri, 13 Sep 2024 21:20:21 GMT
+ARG LPM_SHA256=ad46e7f0ca67e39ddbf1435c0bd2879be8a43340c7b627a2da45c07787574200
+# Fri, 13 Sep 2024 21:20:21 GMT
+ARG LPM_SHA256_ARM=2a2e46f2260f46ccd39f487dca161b4e04d97664160925c5e415bd9b54a23e1a
+# Fri, 13 Sep 2024 21:20:22 GMT
+# ARGS: LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9 LIQUIBASE_VERSION=4.29.2 LPM_SHA256=ad46e7f0ca67e39ddbf1435c0bd2879be8a43340c7b627a2da45c07787574200 LPM_SHA256_ARM=2a2e46f2260f46ccd39f487dca161b4e04d97664160925c5e415bd9b54a23e1a LPM_VERSION=0.2.8
 RUN mkdir /liquibase/bin &&     apk add --no-cache --virtual .fetch-deps wget unzip &&     arch="$(apk --print-arch)" &&     case "$arch" in       x86_64)   DOWNLOAD_ARCH=""  ;;       aarch64)  DOWNLOAD_ARCH="-arm64" && LPM_SHA256=$LPM_SHA256_ARM  ;;       *) echo >&2 "error: unsupported architecture '$arch'" && exit 1 ;;     esac && wget -q -O lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip "https://github.com/liquibase/liquibase-package-manager/releases/download/v${LPM_VERSION}/lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" &&     echo "$LPM_SHA256 *lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" | sha256sum -c - &&     unzip lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip -d bin/ &&     rm lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip &&     apk del --no-network .fetch-deps &&     ln -s /liquibase/bin/lpm /usr/local/bin/lpm &&     lpm --version
-# Fri, 06 Sep 2024 22:37:00 GMT
+# Fri, 13 Sep 2024 21:20:23 GMT
 ENV LIQUIBASE_HOME=/liquibase
-# Fri, 06 Sep 2024 22:37:00 GMT
+# Fri, 13 Sep 2024 21:20:23 GMT
 COPY file:de48911eb8db3870b1900fa0141e8a528d47fc7c60d29997ed293586bfaf6d64 in ./ 
-# Fri, 06 Sep 2024 22:37:00 GMT
+# Fri, 13 Sep 2024 21:20:23 GMT
 COPY file:e457fe6fb13404d03e09152692b0afddbaae5ccbc4b35ccc08fe2667e50bbe6a in ./ 
-# Fri, 06 Sep 2024 22:37:00 GMT
+# Fri, 13 Sep 2024 21:20:23 GMT
 USER liquibase:liquibase
-# Fri, 06 Sep 2024 22:37:00 GMT
+# Fri, 13 Sep 2024 21:20:23 GMT
 ENTRYPOINT ["/liquibase/docker-entrypoint.sh"]
-# Fri, 06 Sep 2024 22:37:00 GMT
+# Fri, 13 Sep 2024 21:20:23 GMT
 CMD ["--help"]
 ```
 
@@ -345,16 +345,16 @@ CMD ["--help"]
 		Last Modified: Fri, 06 Sep 2024 22:37:19 GMT  
 		Size: 159.5 MB (159459638 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ebc4ff87744711888af00894fa32f95b659443d7cc92b623f2c9b8dfb083887c`  
-		Last Modified: Fri, 06 Sep 2024 22:37:12 GMT  
-		Size: 6.2 MB (6150138 bytes)  
+	-	`sha256:81dd03e364c464b30a074e6933b927df331bc9f9bed19330e5ae97680d03d9a4`  
+		Last Modified: Fri, 13 Sep 2024 21:20:43 GMT  
+		Size: 3.2 MB (3240770 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be59cbb64222381c3a335a9ad5adb1f0cd5c6907b158e39a860d66abe0202bad`  
-		Last Modified: Fri, 06 Sep 2024 22:37:11 GMT  
-		Size: 479.0 B  
+	-	`sha256:dde3cc2bcea6436e718b9cd4e64df90f90439b905557d0a6f89223724e86e895`  
+		Last Modified: Fri, 13 Sep 2024 21:20:42 GMT  
+		Size: 477.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85b1456e3c97b16e11e73e4b0acf49540ee231f1a85ce2a10c8e8b3c80626c91`  
-		Last Modified: Fri, 06 Sep 2024 22:37:11 GMT  
+	-	`sha256:daad3f52ca898b8ad6c2ec5cf6a0f487e94a182549e2089768671de1fa8622b8`  
+		Last Modified: Fri, 13 Sep 2024 21:20:42 GMT  
 		Size: 176.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -446,7 +446,7 @@ CMD ["--help"]
 ## `liquibase:4.29.2`
 
 ```console
-$ docker pull liquibase@sha256:48f2597ba57e224eba4972f458f8a1b961124f37310d6d70f1d7482a52309be2
+$ docker pull liquibase@sha256:29560d65691f165858e9e7ac78eb48680e5c8934d757b9a07988e33eb77885d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -457,14 +457,14 @@ $ docker pull liquibase@sha256:48f2597ba57e224eba4972f458f8a1b961124f37310d6d70f
 ### `liquibase:4.29.2` - linux; amd64
 
 ```console
-$ docker pull liquibase@sha256:2e481736443c9645eab3d9e1009c46757bdb090e6aa89922bea2821c8ba559d0
+$ docker pull liquibase@sha256:8680f90b598abff5a8fada2f6b4ab572fed21fec1955c02d818b034ca3ab2eeb
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.5 MB (256490201 bytes)**  
+-	Total Size: **253.6 MB (253579786 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0937299dbbf0b9f6334778d1453270bbbc54f1640b15f113104e4531155a1fd9`
+-	Image ID: `sha256:77631a8b9ff0a61c4fda0dadc8ef2873cd219744d7c003c26c252258d65e81a4`
 -	Entrypoint: `["\/liquibase\/docker-entrypoint.sh"]`
 -	Default Command: `["--help"]`
 
@@ -510,26 +510,26 @@ ARG LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9
 # Wed, 04 Sep 2024 21:20:05 GMT
 # ARGS: LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9 LIQUIBASE_VERSION=4.29.2
 RUN wget -q -O liquibase-${LIQUIBASE_VERSION}.tar.gz "https://github.com/liquibase/liquibase/releases/download/v${LIQUIBASE_VERSION}/liquibase-${LIQUIBASE_VERSION}.tar.gz" &&     echo "$LB_SHA256 *liquibase-${LIQUIBASE_VERSION}.tar.gz" | sha256sum -c - &&     tar -xzf liquibase-${LIQUIBASE_VERSION}.tar.gz &&     rm liquibase-${LIQUIBASE_VERSION}.tar.gz &&     ln -s /liquibase/liquibase /usr/local/bin/liquibase &&     ln -s /liquibase/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh &&     liquibase --version
-# Wed, 04 Sep 2024 21:20:06 GMT
-ARG LPM_VERSION=0.2.7
-# Wed, 04 Sep 2024 21:20:06 GMT
-ARG LPM_SHA256=e831120c566c76a427c6d3489cd62d5447322444399393e3ef304db0c036c4a1
-# Wed, 04 Sep 2024 21:20:06 GMT
-ARG LPM_SHA256_ARM=720afb6bafb987ab502b86682f410d0e19da45fdf0119d947ed7bfa4e6a02665
-# Wed, 04 Sep 2024 21:20:17 GMT
-# ARGS: LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9 LIQUIBASE_VERSION=4.29.2 LPM_SHA256=e831120c566c76a427c6d3489cd62d5447322444399393e3ef304db0c036c4a1 LPM_SHA256_ARM=720afb6bafb987ab502b86682f410d0e19da45fdf0119d947ed7bfa4e6a02665 LPM_VERSION=0.2.7
+# Fri, 13 Sep 2024 21:20:00 GMT
+ARG LPM_VERSION=0.2.8
+# Fri, 13 Sep 2024 21:20:00 GMT
+ARG LPM_SHA256=ad46e7f0ca67e39ddbf1435c0bd2879be8a43340c7b627a2da45c07787574200
+# Fri, 13 Sep 2024 21:20:00 GMT
+ARG LPM_SHA256_ARM=2a2e46f2260f46ccd39f487dca161b4e04d97664160925c5e415bd9b54a23e1a
+# Fri, 13 Sep 2024 21:20:14 GMT
+# ARGS: LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9 LIQUIBASE_VERSION=4.29.2 LPM_SHA256=ad46e7f0ca67e39ddbf1435c0bd2879be8a43340c7b627a2da45c07787574200 LPM_SHA256_ARM=2a2e46f2260f46ccd39f487dca161b4e04d97664160925c5e415bd9b54a23e1a LPM_VERSION=0.2.8
 RUN apt-get update &&     apt-get -yqq install unzip --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     mkdir /liquibase/bin &&     arch="$(dpkg --print-architecture)" &&     case "$arch" in       amd64)  DOWNLOAD_ARCH=""  ;;       arm64)  DOWNLOAD_ARCH="-arm64" && LPM_SHA256=$LPM_SHA256_ARM ;;       *) echo >&2 "error: unsupported architecture '$arch'" && exit 1 ;;     esac && wget -q -O lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip "https://github.com/liquibase/liquibase-package-manager/releases/download/v${LPM_VERSION}/lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" &&     echo "$LPM_SHA256 *lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" | sha256sum -c - &&     unzip lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip -d bin/ &&     rm lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip &&     apt-get purge -y --auto-remove unzip &&     ln -s /liquibase/bin/lpm /usr/local/bin/lpm &&     lpm --version
-# Wed, 04 Sep 2024 21:20:17 GMT
+# Fri, 13 Sep 2024 21:20:14 GMT
 ENV LIQUIBASE_HOME=/liquibase
-# Wed, 04 Sep 2024 21:20:17 GMT
+# Fri, 13 Sep 2024 21:20:14 GMT
 COPY file:de48911eb8db3870b1900fa0141e8a528d47fc7c60d29997ed293586bfaf6d64 in ./ 
-# Wed, 04 Sep 2024 21:20:17 GMT
+# Fri, 13 Sep 2024 21:20:14 GMT
 COPY file:e457fe6fb13404d03e09152692b0afddbaae5ccbc4b35ccc08fe2667e50bbe6a in ./ 
-# Wed, 04 Sep 2024 21:20:17 GMT
+# Fri, 13 Sep 2024 21:20:14 GMT
 USER liquibase:liquibase
-# Wed, 04 Sep 2024 21:20:17 GMT
+# Fri, 13 Sep 2024 21:20:14 GMT
 ENTRYPOINT ["/liquibase/docker-entrypoint.sh"]
-# Wed, 04 Sep 2024 21:20:17 GMT
+# Fri, 13 Sep 2024 21:20:15 GMT
 CMD ["--help"]
 ```
 
@@ -562,17 +562,17 @@ CMD ["--help"]
 		Last Modified: Wed, 04 Sep 2024 21:20:53 GMT  
 		Size: 159.4 MB (159437097 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6db5063fe6493a6d6c59def6f97effa8d447d54b2eaf13197c8d3b225fcd102c`  
-		Last Modified: Wed, 04 Sep 2024 21:20:47 GMT  
-		Size: 6.5 MB (6456527 bytes)  
+	-	`sha256:4664c02b2785e4475747642d44bb2985788e8958571a6bef5ad7bce66d454bc3`  
+		Last Modified: Fri, 13 Sep 2024 21:20:32 GMT  
+		Size: 3.5 MB (3546114 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e31f59b613f0e504a513a36760f02c64bb54edd30b6b92b5fbe0b3a3155b371b`  
-		Last Modified: Wed, 04 Sep 2024 21:20:46 GMT  
-		Size: 478.0 B  
+	-	`sha256:f8ac6ad0c587e4ac5d47224634da86b3c3d1bcda2b15803b4ab30e7c9c5b03ad`  
+		Last Modified: Fri, 13 Sep 2024 21:20:32 GMT  
+		Size: 477.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3177443cc2a627d9a8f1310a21ec980c3417bd01320a9c56e50e9bd22aba0e`  
-		Last Modified: Wed, 04 Sep 2024 21:20:46 GMT  
-		Size: 176.0 B  
+	-	`sha256:a0ddc3010bdc486e95b20c3aa1e2926e1483afc90338dd31006462a8976309b0`  
+		Last Modified: Fri, 13 Sep 2024 21:20:32 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `liquibase:4.29.2` - linux; arm64 variant v8
@@ -699,7 +699,7 @@ CMD ["--help"]
 ## `liquibase:4.29.2-alpine`
 
 ```console
-$ docker pull liquibase@sha256:b2f7f7600aa1459a584619095b488ed1a10338df75f6107d2f79a6dcd529702c
+$ docker pull liquibase@sha256:0d07b32ae81af1903223e44a162bc6c3f22ea9b4ff5cf2229c921d868d271c8b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -710,14 +710,14 @@ $ docker pull liquibase@sha256:b2f7f7600aa1459a584619095b488ed1a10338df75f6107d2
 ### `liquibase:4.29.2-alpine` - linux; amd64
 
 ```console
-$ docker pull liquibase@sha256:9f2bbe9597845f33fc042b85cd4c9f67fa9b56eecc399b3e8ebc95e3f15df87d
+$ docker pull liquibase@sha256:082d26c7ee48206ef99ff4a5c9df035c7bd652b9bf37884c1b2e47370c0dff66
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **231.8 MB (231804454 bytes)**  
+-	Total Size: **228.9 MB (228895084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf477edd50f9fd514a3131800212b0e1aa7508e003b1c327ea7a9a7d5a49080c`
+-	Image ID: `sha256:61571bb129a45f89930971c9b1a81a66bf8865514c6e711a10194730b6f4e607`
 -	Entrypoint: `["\/liquibase\/docker-entrypoint.sh"]`
 -	Default Command: `["--help"]`
 
@@ -739,26 +739,26 @@ ARG LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9
 # Fri, 06 Sep 2024 22:36:57 GMT
 # ARGS: LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9 LIQUIBASE_VERSION=4.29.2
 RUN set -x &&     apk add --no-cache --virtual .fetch-deps wget &&     wget -q -O liquibase-${LIQUIBASE_VERSION}.tar.gz "https://github.com/liquibase/liquibase/releases/download/v${LIQUIBASE_VERSION}/liquibase-${LIQUIBASE_VERSION}.tar.gz" &&     echo "$LB_SHA256 *liquibase-${LIQUIBASE_VERSION}.tar.gz" | sha256sum -c - &&     tar -xzf liquibase-${LIQUIBASE_VERSION}.tar.gz &&     rm liquibase-${LIQUIBASE_VERSION}.tar.gz &&     apk del --no-network .fetch-deps &&     ln -s /liquibase/liquibase /usr/local/bin/liquibase &&     ln -s /liquibase/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh &&     liquibase --version
-# Fri, 06 Sep 2024 22:36:57 GMT
-ARG LPM_VERSION=0.2.7
-# Fri, 06 Sep 2024 22:36:57 GMT
-ARG LPM_SHA256=e831120c566c76a427c6d3489cd62d5447322444399393e3ef304db0c036c4a1
-# Fri, 06 Sep 2024 22:36:57 GMT
-ARG LPM_SHA256_ARM=720afb6bafb987ab502b86682f410d0e19da45fdf0119d947ed7bfa4e6a02665
-# Fri, 06 Sep 2024 22:36:59 GMT
-# ARGS: LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9 LIQUIBASE_VERSION=4.29.2 LPM_SHA256=e831120c566c76a427c6d3489cd62d5447322444399393e3ef304db0c036c4a1 LPM_SHA256_ARM=720afb6bafb987ab502b86682f410d0e19da45fdf0119d947ed7bfa4e6a02665 LPM_VERSION=0.2.7
+# Fri, 13 Sep 2024 21:20:20 GMT
+ARG LPM_VERSION=0.2.8
+# Fri, 13 Sep 2024 21:20:21 GMT
+ARG LPM_SHA256=ad46e7f0ca67e39ddbf1435c0bd2879be8a43340c7b627a2da45c07787574200
+# Fri, 13 Sep 2024 21:20:21 GMT
+ARG LPM_SHA256_ARM=2a2e46f2260f46ccd39f487dca161b4e04d97664160925c5e415bd9b54a23e1a
+# Fri, 13 Sep 2024 21:20:22 GMT
+# ARGS: LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9 LIQUIBASE_VERSION=4.29.2 LPM_SHA256=ad46e7f0ca67e39ddbf1435c0bd2879be8a43340c7b627a2da45c07787574200 LPM_SHA256_ARM=2a2e46f2260f46ccd39f487dca161b4e04d97664160925c5e415bd9b54a23e1a LPM_VERSION=0.2.8
 RUN mkdir /liquibase/bin &&     apk add --no-cache --virtual .fetch-deps wget unzip &&     arch="$(apk --print-arch)" &&     case "$arch" in       x86_64)   DOWNLOAD_ARCH=""  ;;       aarch64)  DOWNLOAD_ARCH="-arm64" && LPM_SHA256=$LPM_SHA256_ARM  ;;       *) echo >&2 "error: unsupported architecture '$arch'" && exit 1 ;;     esac && wget -q -O lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip "https://github.com/liquibase/liquibase-package-manager/releases/download/v${LPM_VERSION}/lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" &&     echo "$LPM_SHA256 *lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" | sha256sum -c - &&     unzip lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip -d bin/ &&     rm lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip &&     apk del --no-network .fetch-deps &&     ln -s /liquibase/bin/lpm /usr/local/bin/lpm &&     lpm --version
-# Fri, 06 Sep 2024 22:37:00 GMT
+# Fri, 13 Sep 2024 21:20:23 GMT
 ENV LIQUIBASE_HOME=/liquibase
-# Fri, 06 Sep 2024 22:37:00 GMT
+# Fri, 13 Sep 2024 21:20:23 GMT
 COPY file:de48911eb8db3870b1900fa0141e8a528d47fc7c60d29997ed293586bfaf6d64 in ./ 
-# Fri, 06 Sep 2024 22:37:00 GMT
+# Fri, 13 Sep 2024 21:20:23 GMT
 COPY file:e457fe6fb13404d03e09152692b0afddbaae5ccbc4b35ccc08fe2667e50bbe6a in ./ 
-# Fri, 06 Sep 2024 22:37:00 GMT
+# Fri, 13 Sep 2024 21:20:23 GMT
 USER liquibase:liquibase
-# Fri, 06 Sep 2024 22:37:00 GMT
+# Fri, 13 Sep 2024 21:20:23 GMT
 ENTRYPOINT ["/liquibase/docker-entrypoint.sh"]
-# Fri, 06 Sep 2024 22:37:00 GMT
+# Fri, 13 Sep 2024 21:20:23 GMT
 CMD ["--help"]
 ```
 
@@ -779,16 +779,16 @@ CMD ["--help"]
 		Last Modified: Fri, 06 Sep 2024 22:37:19 GMT  
 		Size: 159.5 MB (159459638 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ebc4ff87744711888af00894fa32f95b659443d7cc92b623f2c9b8dfb083887c`  
-		Last Modified: Fri, 06 Sep 2024 22:37:12 GMT  
-		Size: 6.2 MB (6150138 bytes)  
+	-	`sha256:81dd03e364c464b30a074e6933b927df331bc9f9bed19330e5ae97680d03d9a4`  
+		Last Modified: Fri, 13 Sep 2024 21:20:43 GMT  
+		Size: 3.2 MB (3240770 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be59cbb64222381c3a335a9ad5adb1f0cd5c6907b158e39a860d66abe0202bad`  
-		Last Modified: Fri, 06 Sep 2024 22:37:11 GMT  
-		Size: 479.0 B  
+	-	`sha256:dde3cc2bcea6436e718b9cd4e64df90f90439b905557d0a6f89223724e86e895`  
+		Last Modified: Fri, 13 Sep 2024 21:20:42 GMT  
+		Size: 477.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85b1456e3c97b16e11e73e4b0acf49540ee231f1a85ce2a10c8e8b3c80626c91`  
-		Last Modified: Fri, 06 Sep 2024 22:37:11 GMT  
+	-	`sha256:daad3f52ca898b8ad6c2ec5cf6a0f487e94a182549e2089768671de1fa8622b8`  
+		Last Modified: Fri, 13 Sep 2024 21:20:42 GMT  
 		Size: 176.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -880,7 +880,7 @@ CMD ["--help"]
 ## `liquibase:alpine`
 
 ```console
-$ docker pull liquibase@sha256:b2f7f7600aa1459a584619095b488ed1a10338df75f6107d2f79a6dcd529702c
+$ docker pull liquibase@sha256:0d07b32ae81af1903223e44a162bc6c3f22ea9b4ff5cf2229c921d868d271c8b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -891,14 +891,14 @@ $ docker pull liquibase@sha256:b2f7f7600aa1459a584619095b488ed1a10338df75f6107d2
 ### `liquibase:alpine` - linux; amd64
 
 ```console
-$ docker pull liquibase@sha256:9f2bbe9597845f33fc042b85cd4c9f67fa9b56eecc399b3e8ebc95e3f15df87d
+$ docker pull liquibase@sha256:082d26c7ee48206ef99ff4a5c9df035c7bd652b9bf37884c1b2e47370c0dff66
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **231.8 MB (231804454 bytes)**  
+-	Total Size: **228.9 MB (228895084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf477edd50f9fd514a3131800212b0e1aa7508e003b1c327ea7a9a7d5a49080c`
+-	Image ID: `sha256:61571bb129a45f89930971c9b1a81a66bf8865514c6e711a10194730b6f4e607`
 -	Entrypoint: `["\/liquibase\/docker-entrypoint.sh"]`
 -	Default Command: `["--help"]`
 
@@ -920,26 +920,26 @@ ARG LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9
 # Fri, 06 Sep 2024 22:36:57 GMT
 # ARGS: LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9 LIQUIBASE_VERSION=4.29.2
 RUN set -x &&     apk add --no-cache --virtual .fetch-deps wget &&     wget -q -O liquibase-${LIQUIBASE_VERSION}.tar.gz "https://github.com/liquibase/liquibase/releases/download/v${LIQUIBASE_VERSION}/liquibase-${LIQUIBASE_VERSION}.tar.gz" &&     echo "$LB_SHA256 *liquibase-${LIQUIBASE_VERSION}.tar.gz" | sha256sum -c - &&     tar -xzf liquibase-${LIQUIBASE_VERSION}.tar.gz &&     rm liquibase-${LIQUIBASE_VERSION}.tar.gz &&     apk del --no-network .fetch-deps &&     ln -s /liquibase/liquibase /usr/local/bin/liquibase &&     ln -s /liquibase/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh &&     liquibase --version
-# Fri, 06 Sep 2024 22:36:57 GMT
-ARG LPM_VERSION=0.2.7
-# Fri, 06 Sep 2024 22:36:57 GMT
-ARG LPM_SHA256=e831120c566c76a427c6d3489cd62d5447322444399393e3ef304db0c036c4a1
-# Fri, 06 Sep 2024 22:36:57 GMT
-ARG LPM_SHA256_ARM=720afb6bafb987ab502b86682f410d0e19da45fdf0119d947ed7bfa4e6a02665
-# Fri, 06 Sep 2024 22:36:59 GMT
-# ARGS: LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9 LIQUIBASE_VERSION=4.29.2 LPM_SHA256=e831120c566c76a427c6d3489cd62d5447322444399393e3ef304db0c036c4a1 LPM_SHA256_ARM=720afb6bafb987ab502b86682f410d0e19da45fdf0119d947ed7bfa4e6a02665 LPM_VERSION=0.2.7
+# Fri, 13 Sep 2024 21:20:20 GMT
+ARG LPM_VERSION=0.2.8
+# Fri, 13 Sep 2024 21:20:21 GMT
+ARG LPM_SHA256=ad46e7f0ca67e39ddbf1435c0bd2879be8a43340c7b627a2da45c07787574200
+# Fri, 13 Sep 2024 21:20:21 GMT
+ARG LPM_SHA256_ARM=2a2e46f2260f46ccd39f487dca161b4e04d97664160925c5e415bd9b54a23e1a
+# Fri, 13 Sep 2024 21:20:22 GMT
+# ARGS: LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9 LIQUIBASE_VERSION=4.29.2 LPM_SHA256=ad46e7f0ca67e39ddbf1435c0bd2879be8a43340c7b627a2da45c07787574200 LPM_SHA256_ARM=2a2e46f2260f46ccd39f487dca161b4e04d97664160925c5e415bd9b54a23e1a LPM_VERSION=0.2.8
 RUN mkdir /liquibase/bin &&     apk add --no-cache --virtual .fetch-deps wget unzip &&     arch="$(apk --print-arch)" &&     case "$arch" in       x86_64)   DOWNLOAD_ARCH=""  ;;       aarch64)  DOWNLOAD_ARCH="-arm64" && LPM_SHA256=$LPM_SHA256_ARM  ;;       *) echo >&2 "error: unsupported architecture '$arch'" && exit 1 ;;     esac && wget -q -O lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip "https://github.com/liquibase/liquibase-package-manager/releases/download/v${LPM_VERSION}/lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" &&     echo "$LPM_SHA256 *lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" | sha256sum -c - &&     unzip lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip -d bin/ &&     rm lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip &&     apk del --no-network .fetch-deps &&     ln -s /liquibase/bin/lpm /usr/local/bin/lpm &&     lpm --version
-# Fri, 06 Sep 2024 22:37:00 GMT
+# Fri, 13 Sep 2024 21:20:23 GMT
 ENV LIQUIBASE_HOME=/liquibase
-# Fri, 06 Sep 2024 22:37:00 GMT
+# Fri, 13 Sep 2024 21:20:23 GMT
 COPY file:de48911eb8db3870b1900fa0141e8a528d47fc7c60d29997ed293586bfaf6d64 in ./ 
-# Fri, 06 Sep 2024 22:37:00 GMT
+# Fri, 13 Sep 2024 21:20:23 GMT
 COPY file:e457fe6fb13404d03e09152692b0afddbaae5ccbc4b35ccc08fe2667e50bbe6a in ./ 
-# Fri, 06 Sep 2024 22:37:00 GMT
+# Fri, 13 Sep 2024 21:20:23 GMT
 USER liquibase:liquibase
-# Fri, 06 Sep 2024 22:37:00 GMT
+# Fri, 13 Sep 2024 21:20:23 GMT
 ENTRYPOINT ["/liquibase/docker-entrypoint.sh"]
-# Fri, 06 Sep 2024 22:37:00 GMT
+# Fri, 13 Sep 2024 21:20:23 GMT
 CMD ["--help"]
 ```
 
@@ -960,16 +960,16 @@ CMD ["--help"]
 		Last Modified: Fri, 06 Sep 2024 22:37:19 GMT  
 		Size: 159.5 MB (159459638 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ebc4ff87744711888af00894fa32f95b659443d7cc92b623f2c9b8dfb083887c`  
-		Last Modified: Fri, 06 Sep 2024 22:37:12 GMT  
-		Size: 6.2 MB (6150138 bytes)  
+	-	`sha256:81dd03e364c464b30a074e6933b927df331bc9f9bed19330e5ae97680d03d9a4`  
+		Last Modified: Fri, 13 Sep 2024 21:20:43 GMT  
+		Size: 3.2 MB (3240770 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:be59cbb64222381c3a335a9ad5adb1f0cd5c6907b158e39a860d66abe0202bad`  
-		Last Modified: Fri, 06 Sep 2024 22:37:11 GMT  
-		Size: 479.0 B  
+	-	`sha256:dde3cc2bcea6436e718b9cd4e64df90f90439b905557d0a6f89223724e86e895`  
+		Last Modified: Fri, 13 Sep 2024 21:20:42 GMT  
+		Size: 477.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85b1456e3c97b16e11e73e4b0acf49540ee231f1a85ce2a10c8e8b3c80626c91`  
-		Last Modified: Fri, 06 Sep 2024 22:37:11 GMT  
+	-	`sha256:daad3f52ca898b8ad6c2ec5cf6a0f487e94a182549e2089768671de1fa8622b8`  
+		Last Modified: Fri, 13 Sep 2024 21:20:42 GMT  
 		Size: 176.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1061,7 +1061,7 @@ CMD ["--help"]
 ## `liquibase:latest`
 
 ```console
-$ docker pull liquibase@sha256:48f2597ba57e224eba4972f458f8a1b961124f37310d6d70f1d7482a52309be2
+$ docker pull liquibase@sha256:29560d65691f165858e9e7ac78eb48680e5c8934d757b9a07988e33eb77885d7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1072,14 +1072,14 @@ $ docker pull liquibase@sha256:48f2597ba57e224eba4972f458f8a1b961124f37310d6d70f
 ### `liquibase:latest` - linux; amd64
 
 ```console
-$ docker pull liquibase@sha256:2e481736443c9645eab3d9e1009c46757bdb090e6aa89922bea2821c8ba559d0
+$ docker pull liquibase@sha256:8680f90b598abff5a8fada2f6b4ab572fed21fec1955c02d818b034ca3ab2eeb
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.5 MB (256490201 bytes)**  
+-	Total Size: **253.6 MB (253579786 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0937299dbbf0b9f6334778d1453270bbbc54f1640b15f113104e4531155a1fd9`
+-	Image ID: `sha256:77631a8b9ff0a61c4fda0dadc8ef2873cd219744d7c003c26c252258d65e81a4`
 -	Entrypoint: `["\/liquibase\/docker-entrypoint.sh"]`
 -	Default Command: `["--help"]`
 
@@ -1125,26 +1125,26 @@ ARG LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9
 # Wed, 04 Sep 2024 21:20:05 GMT
 # ARGS: LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9 LIQUIBASE_VERSION=4.29.2
 RUN wget -q -O liquibase-${LIQUIBASE_VERSION}.tar.gz "https://github.com/liquibase/liquibase/releases/download/v${LIQUIBASE_VERSION}/liquibase-${LIQUIBASE_VERSION}.tar.gz" &&     echo "$LB_SHA256 *liquibase-${LIQUIBASE_VERSION}.tar.gz" | sha256sum -c - &&     tar -xzf liquibase-${LIQUIBASE_VERSION}.tar.gz &&     rm liquibase-${LIQUIBASE_VERSION}.tar.gz &&     ln -s /liquibase/liquibase /usr/local/bin/liquibase &&     ln -s /liquibase/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh &&     liquibase --version
-# Wed, 04 Sep 2024 21:20:06 GMT
-ARG LPM_VERSION=0.2.7
-# Wed, 04 Sep 2024 21:20:06 GMT
-ARG LPM_SHA256=e831120c566c76a427c6d3489cd62d5447322444399393e3ef304db0c036c4a1
-# Wed, 04 Sep 2024 21:20:06 GMT
-ARG LPM_SHA256_ARM=720afb6bafb987ab502b86682f410d0e19da45fdf0119d947ed7bfa4e6a02665
-# Wed, 04 Sep 2024 21:20:17 GMT
-# ARGS: LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9 LIQUIBASE_VERSION=4.29.2 LPM_SHA256=e831120c566c76a427c6d3489cd62d5447322444399393e3ef304db0c036c4a1 LPM_SHA256_ARM=720afb6bafb987ab502b86682f410d0e19da45fdf0119d947ed7bfa4e6a02665 LPM_VERSION=0.2.7
+# Fri, 13 Sep 2024 21:20:00 GMT
+ARG LPM_VERSION=0.2.8
+# Fri, 13 Sep 2024 21:20:00 GMT
+ARG LPM_SHA256=ad46e7f0ca67e39ddbf1435c0bd2879be8a43340c7b627a2da45c07787574200
+# Fri, 13 Sep 2024 21:20:00 GMT
+ARG LPM_SHA256_ARM=2a2e46f2260f46ccd39f487dca161b4e04d97664160925c5e415bd9b54a23e1a
+# Fri, 13 Sep 2024 21:20:14 GMT
+# ARGS: LB_SHA256=1d017a206a95ab3076a52f660679c2d80b9f2174942cb0715e35d53931e20ee9 LIQUIBASE_VERSION=4.29.2 LPM_SHA256=ad46e7f0ca67e39ddbf1435c0bd2879be8a43340c7b627a2da45c07787574200 LPM_SHA256_ARM=2a2e46f2260f46ccd39f487dca161b4e04d97664160925c5e415bd9b54a23e1a LPM_VERSION=0.2.8
 RUN apt-get update &&     apt-get -yqq install unzip --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     mkdir /liquibase/bin &&     arch="$(dpkg --print-architecture)" &&     case "$arch" in       amd64)  DOWNLOAD_ARCH=""  ;;       arm64)  DOWNLOAD_ARCH="-arm64" && LPM_SHA256=$LPM_SHA256_ARM ;;       *) echo >&2 "error: unsupported architecture '$arch'" && exit 1 ;;     esac && wget -q -O lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip "https://github.com/liquibase/liquibase-package-manager/releases/download/v${LPM_VERSION}/lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" &&     echo "$LPM_SHA256 *lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip" | sha256sum -c - &&     unzip lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip -d bin/ &&     rm lpm-${LPM_VERSION}-linux${DOWNLOAD_ARCH}.zip &&     apt-get purge -y --auto-remove unzip &&     ln -s /liquibase/bin/lpm /usr/local/bin/lpm &&     lpm --version
-# Wed, 04 Sep 2024 21:20:17 GMT
+# Fri, 13 Sep 2024 21:20:14 GMT
 ENV LIQUIBASE_HOME=/liquibase
-# Wed, 04 Sep 2024 21:20:17 GMT
+# Fri, 13 Sep 2024 21:20:14 GMT
 COPY file:de48911eb8db3870b1900fa0141e8a528d47fc7c60d29997ed293586bfaf6d64 in ./ 
-# Wed, 04 Sep 2024 21:20:17 GMT
+# Fri, 13 Sep 2024 21:20:14 GMT
 COPY file:e457fe6fb13404d03e09152692b0afddbaae5ccbc4b35ccc08fe2667e50bbe6a in ./ 
-# Wed, 04 Sep 2024 21:20:17 GMT
+# Fri, 13 Sep 2024 21:20:14 GMT
 USER liquibase:liquibase
-# Wed, 04 Sep 2024 21:20:17 GMT
+# Fri, 13 Sep 2024 21:20:14 GMT
 ENTRYPOINT ["/liquibase/docker-entrypoint.sh"]
-# Wed, 04 Sep 2024 21:20:17 GMT
+# Fri, 13 Sep 2024 21:20:15 GMT
 CMD ["--help"]
 ```
 
@@ -1177,17 +1177,17 @@ CMD ["--help"]
 		Last Modified: Wed, 04 Sep 2024 21:20:53 GMT  
 		Size: 159.4 MB (159437097 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6db5063fe6493a6d6c59def6f97effa8d447d54b2eaf13197c8d3b225fcd102c`  
-		Last Modified: Wed, 04 Sep 2024 21:20:47 GMT  
-		Size: 6.5 MB (6456527 bytes)  
+	-	`sha256:4664c02b2785e4475747642d44bb2985788e8958571a6bef5ad7bce66d454bc3`  
+		Last Modified: Fri, 13 Sep 2024 21:20:32 GMT  
+		Size: 3.5 MB (3546114 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e31f59b613f0e504a513a36760f02c64bb54edd30b6b92b5fbe0b3a3155b371b`  
-		Last Modified: Wed, 04 Sep 2024 21:20:46 GMT  
-		Size: 478.0 B  
+	-	`sha256:f8ac6ad0c587e4ac5d47224634da86b3c3d1bcda2b15803b4ab30e7c9c5b03ad`  
+		Last Modified: Fri, 13 Sep 2024 21:20:32 GMT  
+		Size: 477.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3177443cc2a627d9a8f1310a21ec980c3417bd01320a9c56e50e9bd22aba0e`  
-		Last Modified: Wed, 04 Sep 2024 21:20:46 GMT  
-		Size: 176.0 B  
+	-	`sha256:a0ddc3010bdc486e95b20c3aa1e2926e1483afc90338dd31006462a8976309b0`  
+		Last Modified: Fri, 13 Sep 2024 21:20:32 GMT  
+		Size: 175.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `liquibase:latest` - linux; arm64 variant v8
