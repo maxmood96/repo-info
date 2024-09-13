@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:235cbce290aaab385988e5a7ecbce0905b67c6c2be66c132a622cb000eedef4b`
-- Created: `2024-08-08T07:03:14Z`
-- Virtual Size: ~ 217.55 Mb  
+- Image ID: `sha256:a4899a4a78baa489dd283e3408a22acd13ee31be86db787124febf86edbf102f`
+- Created: `2024-09-12T19:33:49Z`
+- Virtual Size: ~ 227.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -75,6 +75,23 @@ alpine-keys-2.4-r1 installed size:
 
 alpine-keys-2.4-r1 license:
 MIT
+
+```
+
+### `apk` package: `aom-libs`
+
+```console
+aom-libs-3.9.1-r0 description:
+Alliance for Open Media (AOM) AV1 codec SDK (libraries)
+
+aom-libs-3.9.1-r0 webpage:
+https://aomedia.org/
+
+aom-libs-3.9.1-r0 installed size:
+7404 KiB
+
+aom-libs-3.9.1-r0 license:
+BSD-2-Clause AND custom
 
 ```
 
@@ -418,6 +435,23 @@ LGPL-2.1-or-later AND GPL-2.0-or-later
 
 ```
 
+### `apk` package: `libavif`
+
+```console
+libavif-1.0.4-r0 description:
+Library for encoding and decoding .avif files
+
+libavif-1.0.4-r0 webpage:
+https://aomediacodec.github.io/av1-avif/
+
+libavif-1.0.4-r0 installed size:
+164 KiB
+
+libavif-1.0.4-r0 license:
+BSD-2-Clause
+
+```
+
 ### `apk` package: `libbsd`
 
 ```console
@@ -483,6 +517,23 @@ libcurl-8.9.1-r1 installed size:
 
 libcurl-8.9.1-r1 license:
 curl
+
+```
+
+### `apk` package: `libdav1d`
+
+```console
+libdav1d-1.4.2-r0 description:
+small and fast AV1 Decoder (libraries)
+
+libdav1d-1.4.2-r0 webpage:
+https://code.videolan.org/videolan/dav1d
+
+libdav1d-1.4.2-r0 installed size:
+1692 KiB
+
+libdav1d-1.4.2-r0 license:
+BSD-2-Clause
 
 ```
 

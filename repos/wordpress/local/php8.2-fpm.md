@@ -1,10 +1,10 @@
-# `wordpress:6.6.1-fpm`
+# `wordpress:6.6.2-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c4c25f6135d9c5e07b786b2469298b0b6b619156a7d05196705aeb057c3fd7e9`
-- Created: `2024-07-23T19:30:08Z`
-- Virtual Size: ~ 676.68 Mb  
+- Image ID: `sha256:aaef4658690acf3b790c9e18b881112fcd98801c165085607ff1df44f3b82abe`
+- Created: `2024-09-12T19:33:49Z`
+- Virtual Size: ~ 689.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -23,6 +23,31 @@
   - `PHP_SHA256=81c5ae6ba44e262a076349ee54a2e468638a4571085d80bff37f6fd308e1d8d5`
 
 ## `dpkg` (`.deb`-based packages)
+
+### `dpkg` source package: `abseil=20220623.1-1`
+
+Binary Packages:
+
+- `libabsl20220623:amd64=20220623.1-1`
+
+Licenses: (parsed from: `/usr/share/doc/libabsl20220623/copyright`)
+
+- `Apache-2.0`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris abseil=20220623.1-1
+'http://deb.debian.org/debian/pool/main/a/abseil/abseil_20220623.1-1.dsc' abseil_20220623.1-1.dsc 2476 SHA256:26900afdb17b1a9c3001bf96d760b73f38cb1e634ee78abd06b3744ab5013224
+'http://deb.debian.org/debian/pool/main/a/abseil/abseil_20220623.1.orig.tar.gz' abseil_20220623.1.orig.tar.gz 1957272 SHA256:abfe2897f3a30edaa74bc34365afe3c2a3cd012091a97dc7e008f7016adcd5fe
+'http://deb.debian.org/debian/pool/main/a/abseil/abseil_20220623.1-1.debian.tar.xz' abseil_20220623.1-1.debian.tar.xz 7624 SHA256:8a2fe50673c5ed26b9eccbf7f9e426880a5c5399957431e872399bad0f03aebf
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/abseil/20220623.1-1/ (for browsing the source)
+- https://sources.debian.net/src/abseil/20220623.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/abseil/20220623.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `acl=2.3.1-3`
 
@@ -1986,6 +2011,35 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/lerc/4.0.0+ds-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/lerc/4.0.0+ds-2/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `libavif=0.11.1-1`
+
+Binary Packages:
+
+- `libavif15:amd64=0.11.1-1`
+
+Licenses: (parsed from: `/usr/share/doc/libavif15/copyright`)
+
+- `Apache-2.0`
+- `BSD-2-Clause`
+- `BSD-3-Clause`
+- `CC0-1.0`
+- `custom-1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libavif=0.11.1-1
+'http://deb.debian.org/debian/pool/main/liba/libavif/libavif_0.11.1-1.dsc' libavif_0.11.1-1.dsc 2576 SHA256:504c853817b4e6ccc4c20db14dc12a1dd70e7dc6b355396e241411382886b1e4
+'http://deb.debian.org/debian/pool/main/liba/libavif/libavif_0.11.1.orig.tar.gz' libavif_0.11.1.orig.tar.gz 5826813 SHA256:0eb49965562a0e5e5de58389650d434cff32af84c34185b6c9b7b2fccae06d4e
+'http://deb.debian.org/debian/pool/main/liba/libavif/libavif_0.11.1-1.debian.tar.xz' libavif_0.11.1-1.debian.tar.xz 6112 SHA256:5e0676782a386293f41673141d19e3083cd20efa4ad85dfd9190d0f56860678a
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libavif/0.11.1-1/ (for browsing the source)
+- https://sources.debian.net/src/libavif/0.11.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libavif/0.11.1-1/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `libbsd=0.11.7-2`
 
 Binary Packages:
@@ -2195,6 +2249,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libfontenc/1:1.1.4-1/ (for browsing the source)
 - https://sources.debian.net/src/libfontenc/1:1.1.4-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libfontenc/1:1.1.4-1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `libgav1=0.18.0-1`
+
+Binary Packages:
+
+- `libgav1-1:amd64=0.18.0-1+b1`
+
+Licenses: (parsed from: `/usr/share/doc/libgav1-1/copyright`)
+
+- `Apache-2.0`
+- `BSD-3-clause`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libgav1=0.18.0-1
+'http://deb.debian.org/debian/pool/main/libg/libgav1/libgav1_0.18.0-1.dsc' libgav1_0.18.0-1.dsc 2087 SHA256:41ac68b014bc1b1f0c796d560c94897f3432a86dee0e75efb0e4b265d18d7236
+'http://deb.debian.org/debian/pool/main/libg/libgav1/libgav1_0.18.0.orig.tar.xz' libgav1_0.18.0.orig.tar.xz 754868 SHA256:88fc14696b0f96d768c370961f4cdbf08c4dfd9d825e5522653609f5de077ade
+'http://deb.debian.org/debian/pool/main/libg/libgav1/libgav1_0.18.0-1.debian.tar.xz' libgav1_0.18.0-1.debian.tar.xz 5700 SHA256:f9d299162ed54975d70436f9fc7c9f799a74bfb18f4d953b9b8d1fc36090ec53
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libgav1/0.18.0-1/ (for browsing the source)
+- https://sources.debian.net/src/libgav1/0.18.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libgav1/0.18.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libgcrypt20=1.10.1-3`
 
@@ -3173,6 +3253,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxt/1:1.2.1-1.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxt/1:1.2.1-1.1/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `libyuv=0.0~git20230123.b2528b0-1`
+
+Binary Packages:
+
+- `libyuv0:amd64=0.0~git20230123.b2528b0-1`
+
+Licenses: (parsed from: `/usr/share/doc/libyuv0/copyright`)
+
+- `BSD-3-Clause`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libyuv=0.0~git20230123.b2528b0-1
+'http://deb.debian.org/debian/pool/main/liby/libyuv/libyuv_0.0%7egit20230123.b2528b0-1.dsc' libyuv_0.0~git20230123.b2528b0-1.dsc 2171 SHA256:ddeb08761b38e68568bef2e2ac401e77e14242d2556cdbd8aeae3d17dde7bfbb
+'http://deb.debian.org/debian/pool/main/liby/libyuv/libyuv_0.0%7egit20230123.b2528b0.orig.tar.gz' libyuv_0.0~git20230123.b2528b0.orig.tar.gz 570454 SHA256:cc22ebe94004ac2e5718acdc45980c6f3b83599f19f5bd768c5ca034de659eef
+'http://deb.debian.org/debian/pool/main/liby/libyuv/libyuv_0.0%7egit20230123.b2528b0-1.debian.tar.xz' libyuv_0.0~git20230123.b2528b0-1.debian.tar.xz 5292 SHA256:76e01b2226288d3d4533f5c5dbdc2efd385ce2f19e52c40293492603fe7fdf16
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libyuv/0.0~git20230123.b2528b0-1/ (for browsing the source)
+- https://sources.debian.net/src/libyuv/0.0~git20230123.b2528b0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libyuv/0.0~git20230123.b2528b0-1/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `libzip=1.7.3-1`
 
 Binary Packages:
@@ -4016,6 +4122,33 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/rtmpdump/2.4+20151223.gitfa8646d.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/rtmpdump/2.4+20151223.gitfa8646d.1-2/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `rust-rav1e=0.5.1-6`
+
+Binary Packages:
+
+- `librav1e0:amd64=0.5.1-6`
+
+Licenses: (parsed from: `/usr/share/doc/librav1e0/copyright`)
+
+- `BSD-2-Clause`
+- `BSD-2-clause`
+- `ISC`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris rust-rav1e=0.5.1-6
+'http://deb.debian.org/debian/pool/main/r/rust-rav1e/rust-rav1e_0.5.1-6.dsc' rust-rav1e_0.5.1-6.dsc 3641 SHA256:c9e8d1899a0392a4b97cb074b8856f18b8cd0aa8ea6ebb91a96d87a9a128f189
+'http://deb.debian.org/debian/pool/main/r/rust-rav1e/rust-rav1e_0.5.1.orig.tar.gz' rust-rav1e_0.5.1.orig.tar.gz 1125938 SHA256:56639427b5c9ad5734686eac009758593e2ba80eab08f6d083173c2e2b73cb00
+'http://deb.debian.org/debian/pool/main/r/rust-rav1e/rust-rav1e_0.5.1-6.debian.tar.xz' rust-rav1e_0.5.1-6.debian.tar.xz 18016 SHA256:4454f8ed8b74c6426b5193324cec7bbf41f6c49d8a09fd900a8361c319fd2192
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/rust-rav1e/0.5.1-6/ (for browsing the source)
+- https://sources.debian.net/src/rust-rav1e/0.5.1-6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/rust-rav1e/0.5.1-6/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `sed=4.9-1`
 
 Binary Packages:
@@ -4135,6 +4268,37 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/sqlite3/3.40.1-2/ (for browsing the source)
 - https://sources.debian.net/src/sqlite3/3.40.1-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/sqlite3/3.40.1-2/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `svt-av1=1.4.1+dfsg-1`
+
+Binary Packages:
+
+- `libsvtav1enc1:amd64=1.4.1+dfsg-1`
+
+Licenses: (parsed from: `/usr/share/doc/libsvtav1enc1/copyright`)
+
+- `BSD-2-clause`
+- `BSD-3-Clause-Clear`
+- `BSD-3-clause`
+- `Expat`
+- `ISC`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris svt-av1=1.4.1+dfsg-1
+'http://deb.debian.org/debian/pool/main/s/svt-av1/svt-av1_1.4.1%2bdfsg-1.dsc' svt-av1_1.4.1+dfsg-1.dsc 2275 SHA256:afe9e9630222938fc1eca4f065be9e2630a759ab3bc49b480f80b53a8f2af787
+'http://deb.debian.org/debian/pool/main/s/svt-av1/svt-av1_1.4.1%2bdfsg.orig.tar.xz' svt-av1_1.4.1+dfsg.orig.tar.xz 8231844 SHA256:4ce800449365b6a4ead77b8ce4965ef20b4e54c2950fda52273ed1914ebfae78
+'http://deb.debian.org/debian/pool/main/s/svt-av1/svt-av1_1.4.1%2bdfsg-1.debian.tar.xz' svt-av1_1.4.1+dfsg-1.debian.tar.xz 6376 SHA256:dd46e5614f04f793b01b90869cfa8e8561a4c71ac7af50deee2e5586e7028c82
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/svt-av1/1.4.1+dfsg-1/ (for browsing the source)
+- https://sources.debian.net/src/svt-av1/1.4.1+dfsg-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/svt-av1/1.4.1+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=252.30-1~deb12u2`
 
