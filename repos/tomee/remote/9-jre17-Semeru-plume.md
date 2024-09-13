@@ -1,7 +1,7 @@
 ## `tomee:9-jre17-Semeru-plume`
 
 ```console
-$ docker pull tomee@sha256:747f0aa74d807f0f6ccaf5dbd6be8602139bb46df36fe13e44c2b15210e07aff
+$ docker pull tomee@sha256:9cddb7fa7f8e70849d11dcab2c0e2e5f8e1ad61056c97032db63e477383ac51f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull tomee@sha256:747f0aa74d807f0f6ccaf5dbd6be8602139bb46df36fe13e44c2b
 ### `tomee:9-jre17-Semeru-plume` - linux; amd64
 
 ```console
-$ docker pull tomee@sha256:97d00ec901e58c08db21412571840f2da7c87c2d543394c6eade781bb180a781
+$ docker pull tomee@sha256:b0533e8d55115288ece606df595122da9d905542f2ce237037c88ffcb0d96d95
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **181.6 MB (181580171 bytes)**  
+-	Total Size: **181.5 MB (181546753 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28b0164ed1d228dec947e58e0b9dbfe8937320c5d7b623d54447144712d26f83`
+-	Image ID: `sha256:e068c5cbc7a80d8822eead13a45c7658298f1583eb6bd1b1a2db7741e3b8b5d3`
 -	Default Command: `["catalina.sh","run"]`
 
 ```dockerfile
@@ -41,9 +41,9 @@ ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Tue, 23 Jul 2024 18:18:20 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 23 Jul 2024 18:18:20 GMT
-ENV JAVA_VERSION=jdk-17.0.12+7_openj9-0.46.0
+ENV JAVA_VERSION=jdk-17.0.12+7_openj9-0.46.1
 # Tue, 23 Jul 2024 18:18:20 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='c0e0ccad2ceb4e35321fcf7871571c1bc3ccaf98a41b7e15c530ea510fe646e3';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.12%2B7_openj9-0.46.0/ibm-semeru-open-jre_aarch64_linux_17.0.12_7_openj9-0.46.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='ff35f2abcd84ac92f59aa501cd546399d1be97eca3404d263c13fa6c2272c34d';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.12%2B7_openj9-0.46.0/ibm-semeru-open-jre_ppc64le_linux_17.0.12_7_openj9-0.46.0.tar.gz';          ;;        amd64|x86_64)          ESUM='8227ff054505167ca7f379ad0ec618614ba72ab90fb4bf8f90b7db87d2f122f7';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.12%2B7_openj9-0.46.0/ibm-semeru-open-jre_x64_linux_17.0.12_7_openj9-0.46.0.tar.gz';          ;;        s390x)          ESUM='8327736054aa9f1f1ccad4ef2aee4a4fa3362cc93930fe0d34ab79b2a2741d1a';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.12%2B7_openj9-0.46.0/ibm-semeru-open-jre_s390x_linux_17.0.12_7_openj9-0.46.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='cb2bfe44358158dcaa903e1f9aeb3e895adc1d5ace1f764e0dc1b1aeb4ffb77e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.12%2B7_openj9-0.46.1/ibm-semeru-open-jre_aarch64_linux_17.0.12_7_openj9-0.46.1.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='29f969c56c1e82587e0fcb1c0253dec413538c9599eaec9fcdb3983d181aad96';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.12%2B7_openj9-0.46.1/ibm-semeru-open-jre_ppc64le_linux_17.0.12_7_openj9-0.46.1.tar.gz';          ;;        amd64|x86_64)          ESUM='f218a8e1596197a3e89e9eff3ef4dc3e56ff41d7e293261e02cbc589a418998e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.12%2B7_openj9-0.46.1/ibm-semeru-open-jre_x64_linux_17.0.12_7_openj9-0.46.1.tar.gz';          ;;        s390x)          ESUM='1490c54b365dc1c4bfea47412433df79ebfd2c3f85c9f7b1c88ce2d7ae7dee75';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.12%2B7_openj9-0.46.1/ibm-semeru-open-jre_s390x_linux_17.0.12_7_openj9-0.46.1.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz; # buildkit
 # Tue, 23 Jul 2024 18:18:20 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 23 Jul 2024 18:18:20 GMT
@@ -77,61 +77,61 @@ CMD ["catalina.sh" "run"]
 		Last Modified: Tue, 13 Aug 2024 10:44:49 GMT  
 		Size: 29.5 MB (29536025 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d8a2d129b6a89623eb804bae453f21b367fc76fb326a2e2470300ba2d6701e3`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
-		Size: 12.2 MB (12156496 bytes)  
+	-	`sha256:1b79f62255aa5fbffda090c0e6f4ba6c17614c926918a095d09d959405da7271`  
+		Last Modified: Thu, 12 Sep 2024 22:02:19 GMT  
+		Size: 12.2 MB (12156633 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66930cda201b18f7e448ad233b277c6e17b6fbab1ccd63f0af9b63fa804fe1f4`  
-		Last Modified: Sat, 17 Aug 2024 02:04:53 GMT  
-		Size: 51.5 MB (51534672 bytes)  
+	-	`sha256:a8c702ebabfebea4dffde892c706082d8e2e1bbf236c8366533ac8f896a17dc1`  
+		Last Modified: Thu, 12 Sep 2024 22:02:18 GMT  
+		Size: 51.5 MB (51534120 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03c34242b3fcb8fe85b0c58899bfd25d5b6bf0655c85a275d4d9646764e954f4`  
-		Last Modified: Sat, 17 Aug 2024 02:04:52 GMT  
-		Size: 5.0 MB (4968115 bytes)  
+	-	`sha256:6c0fd7635861efb60ffc7c9f55c700b79fb42d505ec8e28d1aa50ab7f017f290`  
+		Last Modified: Thu, 12 Sep 2024 22:02:18 GMT  
+		Size: 4.9 MB (4935035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2560e6370a5a4521b25d0437fed42053e5c61e8eaed6870d27abca16f27780a3`  
-		Last Modified: Sat, 17 Aug 2024 04:08:22 GMT  
-		Size: 170.0 B  
+	-	`sha256:0435ff8eec1fdd2e45c6c1f931dfd3521784b327c309655025a2488d34834d9d`  
+		Last Modified: Thu, 12 Sep 2024 23:03:20 GMT  
+		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80d383960da059bda299c35c724e8b219ecac719f21eb4631f71caec89d71816`  
-		Last Modified: Sat, 17 Aug 2024 04:08:22 GMT  
-		Size: 2.4 MB (2356457 bytes)  
+	-	`sha256:1cfd2813e3418a92ed40365363ec0fa5c3485e8a564880ce762981da52845a97`  
+		Last Modified: Thu, 12 Sep 2024 23:03:23 GMT  
+		Size: 2.4 MB (2356488 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:432dd80c04654f9989aa0a24031c19d616a7e2719667e4f2823d81b103e85fad`  
-		Last Modified: Sat, 17 Aug 2024 04:08:22 GMT  
-		Size: 69.2 KB (69193 bytes)  
+	-	`sha256:5e6690536557105bdcefd4116430aff59520d94926a809d538738efbad9300e9`  
+		Last Modified: Thu, 12 Sep 2024 23:03:23 GMT  
+		Size: 69.2 KB (69217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44558272f365e47dc7a7f57263d99b87bdeb415d5245299169d55fd775ac5418`  
-		Last Modified: Sat, 17 Aug 2024 04:08:23 GMT  
-		Size: 81.0 MB (80959011 bytes)  
+	-	`sha256:31ab38ac9e3738c38668f9685b95ad58b538c95a71f1f1fc180106dd86eb1655`  
+		Last Modified: Thu, 12 Sep 2024 23:03:25 GMT  
+		Size: 81.0 MB (80959030 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `tomee:9-jre17-Semeru-plume` - unknown; unknown
 
 ```console
-$ docker pull tomee@sha256:403dedae2eba306df775ef740da0cf92e7bc21da3f3260e019afddec0645c59b
+$ docker pull tomee@sha256:ca542668530a32a1670666df57ed2f328c2f4a834bb7d031aec16f5000f2f3c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.9 MB (3928000 bytes)**  
+-	Total Size: **3.9 MB (3929866 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5413e3165155704214f33a8763c2b30e8d12558f0314c3862badb593c1f781c0`
+-	Image ID: `sha256:54045e079a39a4f56489392198887734372e167c6a366825336411dcd6316402`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:30333def7b6e48f711e0f33a1546c1a3bb6e81a8973e2f8b553d5f9157c62c3a`  
-		Last Modified: Sat, 17 Aug 2024 04:08:22 GMT  
-		Size: 3.9 MB (3901621 bytes)  
+	-	`sha256:934f6b737694e075834d7bcc506047d8e5874ec48b111d7b8ffbcacf8a7bf1ea`  
+		Last Modified: Thu, 12 Sep 2024 23:03:23 GMT  
+		Size: 3.9 MB (3903488 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3b7922237ab098cd5c0c6e8a1cc029af5c3b0a8edf13a8a9160ddf746fde4996`  
-		Last Modified: Sat, 17 Aug 2024 04:08:21 GMT  
-		Size: 26.4 KB (26379 bytes)  
+	-	`sha256:d090f34e93d90a8afa5b0f5611ce8794a9a74baccd28d5d3743d14c1c3c13987`  
+		Last Modified: Thu, 12 Sep 2024 23:03:23 GMT  
+		Size: 26.4 KB (26378 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `tomee:9-jre17-Semeru-plume` - linux; arm64 variant v8
