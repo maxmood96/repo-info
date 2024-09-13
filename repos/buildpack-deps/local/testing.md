@@ -103,21 +103,13 @@ Licenses: (parsed from: `/usr/share/doc/libapr1t64/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apr=1.7.2-3.2
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2-3.2.dsc' apr_1.7.2-3.2.dsc 2323 SHA256:e6beb42d176608fce031f271017b650658c633f5e31080047541b9549ee2715a
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2.orig.tar.bz2' apr_1.7.2.orig.tar.bz2 890218 SHA256:75e77cc86776c030c0a5c408dfbd0bf2a0b75eed5351e52d5439fa1e5509a43e
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2.orig.tar.bz2.asc' apr_1.7.2.orig.tar.bz2.asc 833 SHA256:3e45e804041cfd112d3710db11424e861a6f96e5b8908fcb73bc558f7d480f37
-'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2-3.2.debian.tar.xz' apr_1.7.2-3.2.debian.tar.xz 54572 SHA256:0758509e6cda3f6f3f367e84e8ef1c05d58450936f78f4163f22b0df8a663a6c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apr/1.7.2-3.2/
 
-- https://sources.debian.net/src/apr/1.7.2-3.2/ (for browsing the source)
-- https://sources.debian.net/src/apr/1.7.2-3.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apr/1.7.2-3.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=2.9.8`
 
@@ -1691,21 +1683,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.80.1-3
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.80.1-3.dsc' gobject-introspection_1.80.1-3.dsc 4172 SHA256:298257a1a06f5a8757ee72ee774e7bf1e23a547eec7357c7ef1d0ac753629ed1
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.80.1.orig-glib.tar.xz' gobject-introspection_1.80.1.orig-glib.tar.xz 5475296 SHA256:b3764dd6e29b664085921dd4dd6ba2430fc19760ab6857ecfa3ebd4e8c1d114c
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.80.1.orig.tar.xz' gobject-introspection_1.80.1.orig.tar.xz 1040228 SHA256:a1df7c424e15bda1ab639c00e9051b9adf5cea1a9e512f8a603b53cd199bc6d8
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.80.1-3.debian.tar.xz' gobject-introspection_1.80.1-3.debian.tar.xz 58368 SHA256:31437422e697152b858eff480feb8fd713a72df38ba6cc648ed5570de2ea9883
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gobject-introspection/1.80.1-3/
 
-- https://sources.debian.net/src/gobject-introspection/1.80.1-3/ (for browsing the source)
-- https://sources.debian.net/src/gobject-introspection/1.80.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gobject-introspection/1.80.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-2`
 
@@ -5370,21 +5354,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `Unicode`
 - `Utfwidth`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.14.3-2
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.3-2.dsc' subversion_1.14.3-2.dsc 4046 SHA256:c603f04a22bf8b3df99d697afa579540c3b7a4e7274cb925db0805d6c3bdf570
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.3.orig.tar.gz' subversion_1.14.3.orig.tar.gz 11621442 SHA256:cf70775e5ed075ebc6a63fe8619dc6b530da254a3f61ba53a502dd83c8f14afc
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.3.orig.tar.gz.asc' subversion_1.14.3.orig.tar.gz.asc 1724 SHA256:e0d93fb48ba707a201f32f350774797333013c7a53cd6c785665717f0e9cfbc5
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.3-2.debian.tar.xz' subversion_1.14.3-2.debian.tar.xz 338424 SHA256:820de690b8c487b033a4e4742981a8f94d82b32e2181111e426730bc6bfa4777
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.14.3-2/
 
-- https://sources.debian.net/src/subversion/1.14.3-2/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.14.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.14.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysprof=46.0-2`
 
