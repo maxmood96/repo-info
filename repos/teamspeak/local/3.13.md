@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cf9364825f846b3ca093a4de39dd471b9b2edb286e696a3decae7405c15ea55c`
-- Created: `2024-07-23T01:13:09.992466409Z`
+- Image ID: `sha256:2783a8fe2fe6811900f312b037f7b1226e907ba1d4de6862f896bb47605a353b`
+- Created: `2024-09-07T02:54:55.786167693Z`
 - Virtual Size: ~ 28.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -170,16 +170,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.6-r0 description:
+libcrypto3-3.1.7-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.6-r0 webpage:
+libcrypto3-3.1.7-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.6-r0 installed size:
+libcrypto3-3.1.7-r0 installed size:
 4480 KiB
 
-libcrypto3-3.1.6-r0 license:
+libcrypto3-3.1.7-r0 license:
 Apache-2.0
 
 ```
@@ -221,16 +221,16 @@ PostgreSQL
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.6-r0 description:
+libssl3-3.1.7-r0 description:
 SSL shared libraries
 
-libssl3-3.1.6-r0 webpage:
+libssl3-3.1.7-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.6-r0 installed size:
+libssl3-3.1.7-r0 installed size:
 552 KiB
 
-libssl3-3.1.6-r0 license:
+libssl3-3.1.7-r0 license:
 Apache-2.0
 
 ```
