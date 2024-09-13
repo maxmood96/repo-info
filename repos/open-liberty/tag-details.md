@@ -4091,27 +4091,57 @@ $ docker pull open-liberty@sha256:72a51edc0e6953fbf128496b703c693bdb6d25430b994f
 
 ## `open-liberty:24.0.0.9-full-java11-openj9`
 
-**does not exist** (yet?)
+```console
+$ docker pull open-liberty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `open-liberty:24.0.0.9-full-java17-openj9`
 
-**does not exist** (yet?)
+```console
+$ docker pull open-liberty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `open-liberty:24.0.0.9-full-java8-openj9`
 
-**does not exist** (yet?)
+```console
+$ docker pull open-liberty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `open-liberty:24.0.0.9-kernel-slim-java11-openj9`
 
-**does not exist** (yet?)
+```console
+$ docker pull open-liberty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `open-liberty:24.0.0.9-kernel-slim-java17-openj9`
 
-**does not exist** (yet?)
+```console
+$ docker pull open-liberty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `open-liberty:24.0.0.9-kernel-slim-java8-openj9`
 
-**does not exist** (yet?)
+```console
+$ docker pull open-liberty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `open-liberty:beta`
 
