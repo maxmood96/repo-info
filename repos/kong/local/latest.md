@@ -1,10 +1,10 @@
-# `kong:3.7.1-ubuntu`
+# `kong:3.8.0-ubuntu`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cb2ba1c7e243d5dc0837b7b1238d275f4458a91df861c9c071fb50a7d5002620`
-- Created: `2024-06-21T16:03:55Z`
-- Virtual Size: ~ 299.36 Mb  
+- Image ID: `sha256:d691bb904a74a07e54ae9804c2c916a2f96726d2633a1652bb0e87c1b9fa9e0a`
+- Created: `2024-09-12T15:56:21Z`
+- Virtual Size: ~ 375.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `ASSET=ce`
-  - `KONG_VERSION=3.7.1`
+  - `KONG_VERSION=3.8.0`
 - Labels:
   - `maintainer=Kong Docker Maintainers <docker@konghq.com> (@team-gateway-bot)`
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -823,11 +823,11 @@ $ apt-get source -qq --print-uris keyutils=1.6.1-2ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.1-2ubuntu3.debian.tar.xz' keyutils_1.6.1-2ubuntu3.debian.tar.xz 18936 SHA512:16f390f0fc3154a77c8ca3666d44881a6ca2f0d11cfe0398cd82b57b6f552af85c156de358d0b87e39f301331897d72de058050e3cb53720a76b5b5ebf07aa3d
 ```
 
-### `dpkg` source package: `kong=3.7.1`
+### `dpkg` source package: `kong=3.8.0`
 
 Binary Packages:
 
-- `kong=3.7.1`
+- `kong=3.8.0`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1476,9 +1476,8 @@ $ apt-get source -qq --print-uris openldap=2.5.18+dfsg-0ubuntu0.22.04.2
 Binary Packages:
 
 - `libssl3:amd64=3.0.2-0ubuntu1.17`
-- `openssl=3.0.2-0ubuntu1.17`
 
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
@@ -1488,6 +1487,29 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.18`
+
+Binary Packages:
+
+- `openssl=3.0.2-0ubuntu1.18`
+
+Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
+
+- `Apache-2.0`
+- `Artistic`
+- `GPL-1`
+- `GPL-1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.18
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.18.dsc' openssl_3.0.2-0ubuntu1.18.dsc 2730 SHA512:063002f9a86d0ab1c1932ded24a4e3624294a560a937a3234d3f0523d19acb8f56be2fe4c452a10aa659250d6026a06ecc4988101e27b79a733833170ba2f651
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.18.debian.tar.xz' openssl_3.0.2-0ubuntu1.18.debian.tar.xz 263268 SHA512:67e7d3d71428c12fccfeb354ffdbedacb867df025bd222cd4d3796ff37a630ba3adb541f03180aa57511c8c9e4330260f89141bced621dcafc89736c3d33f0b5
+```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
