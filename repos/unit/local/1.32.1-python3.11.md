@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5d5cb57d1f3b479fe7405de9333f488fde9ebc6fafa2a103165e0e52cfb4c5bb`
+- Image ID: `sha256:b7be2b0cd490c98a428ac4d1775e912ca63419cf535b8bca2436e2eb6f46da76`
 - Created: `2024-03-26T13:57:15Z`
-- Virtual Size: ~ 940.48 Mb  
+- Virtual Size: ~ 940.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -14,10 +14,6 @@
   - `LANG=C.UTF-8`
   - `GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D`
   - `PYTHON_VERSION=3.11.10`
-  - `PYTHON_PIP_VERSION=24.0`
-  - `PYTHON_SETUPTOOLS_VERSION=65.5.1`
-  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/def4aec84b261b939137dd1c69eff0aabb4a7bf4/public/get-pip.py`
-  - `PYTHON_GET_PIP_SHA256=bc37786ec99618416cc0a0ca32833da447f4d91ab51d2c138dd15b7af21e8e9a`
 - Labels:
   - `org.opencontainers.image.description=Official build of Unit for Docker.`
   - `org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images`
