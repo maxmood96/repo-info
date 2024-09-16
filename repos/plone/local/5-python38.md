@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2cefba1112f03de423b9e5969275de9f055b3f621efeb869d044950ffda4c0df`
+- Image ID: `sha256:a7f05d3a5607d9b4625b1c54a38558a41b6d8ad7e868348b860b2745b07c64b3`
 - Created: `2024-07-31T10:13:39Z`
-- Virtual Size: ~ 795.60 Mb  
+- Virtual Size: ~ 795.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -14,10 +14,6 @@
   - `LANG=C.UTF-8`
   - `GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568`
   - `PYTHON_VERSION=3.8.20`
-  - `PYTHON_PIP_VERSION=23.0.1`
-  - `PYTHON_SETUPTOOLS_VERSION=57.5.0`
-  - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/def4aec84b261b939137dd1c69eff0aabb4a7bf4/public/get-pip.py`
-  - `PYTHON_GET_PIP_SHA256=bc37786ec99618416cc0a0ca32833da447f4d91ab51d2c138dd15b7af21e8e9a`
   - `PIP=22.2.2`
   - `ZC_BUILDOUT=3.0.1`
   - `SETUPTOOLS=65.7.0`
