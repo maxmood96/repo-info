@@ -1,10 +1,10 @@
-# `odoo:17.0-20240904`
+# `odoo:17.0-20240912`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7c1fdd45a39697cd62cc6b23a33675db209577f35e71f0e94b1c3dc62cb3b15b`
-- Created: `2024-09-04T09:14:36Z`
-- Virtual Size: ~ 1.79 Gb  
+- Image ID: `sha256:c9c2851a558b18a90bb3467e4592c3b4a04a11dd33cc1cb3a0a7fa869560801a`
+- Created: `2024-09-12T09:27:03Z`
+- Virtual Size: ~ 1.80 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -5698,11 +5698,11 @@ $ apt-get source -qq --print-uris npth=1.6-3build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3build2.debian.tar.xz' npth_1.6-3build2.debian.tar.xz 10904 SHA512:426ab3ab9e27b3701d67cde0a4c4040aa9ccac22a0266321824487fe80a118ccd6860b6fa0fb5ca3c46dfa3c20053889fbb51a2e74618065b3aff059a0216c4c
 ```
 
-### `dpkg` source package: `odoo=17.0.20240904`
+### `dpkg` source package: `odoo=17.0.20240912`
 
 Binary Packages:
 
-- `odoo=17.0.20240904`
+- `odoo=17.0.20240912`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -7316,21 +7316,26 @@ $ apt-get source -qq --print-uris sensible-utils=0.0.17
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sensible-utils/sensible-utils_0.0.17.tar.xz' sensible-utils_0.0.17.tar.xz 66648 SHA512:fb7803cacc4222f232f64850e5559aca0b56ad98b6fd31f36c89740d72f7a235e7f2934ebce1d788882bff7196d59a2ed6cc3584f31e1c1c9e3593cedca2382b
 ```
 
-### `dpkg` source package: `setuptools=59.6.0-1.2ubuntu0.22.04.1`
+### `dpkg` source package: `setuptools=59.6.0-1.2ubuntu0.22.04.2`
 
 Binary Packages:
 
-- `python3-pkg-resources=59.6.0-1.2ubuntu0.22.04.1`
-- `python3-setuptools=59.6.0-1.2ubuntu0.22.04.1`
+- `python3-pkg-resources=59.6.0-1.2ubuntu0.22.04.2`
+- `python3-setuptools=59.6.0-1.2ubuntu0.22.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/python3-pkg-resources/copyright`, `/usr/share/doc/python3-setuptools/copyright`)
 
 - `Apache-2.0`
 - `BSD-3-clause`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris setuptools=59.6.0-1.2ubuntu0.22.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/s/setuptools/setuptools_59.6.0-1.2ubuntu0.22.04.2.dsc' setuptools_59.6.0-1.2ubuntu0.22.04.2.dsc 1672 SHA512:597929bb7376ecdb2e50a0fa1245864a199065ab69c1c68294259a9f96833a62f272beee809401d9c8adbcd10dd4023e90a7e65ac10c1fc4053a741afc8ff03a
+'http://archive.ubuntu.com/ubuntu/pool/main/s/setuptools/setuptools_59.6.0.orig.tar.gz' setuptools_59.6.0.orig.tar.gz 2281973 SHA512:25472ec7c167e07113c6645880952458969b146766b64224ec8f40dfc2a29b23e47104b63e806292ec81ee4e9dbbdc4663228f39b4412b586cba644f69b52309
+'http://archive.ubuntu.com/ubuntu/pool/main/s/setuptools/setuptools_59.6.0-1.2ubuntu0.22.04.2.debian.tar.xz' setuptools_59.6.0-1.2ubuntu0.22.04.2.debian.tar.xz 16896 SHA512:2655514b92ce474f85a60c3a593d2bd89febd94a02d09297d0007f3b9fe421fbcd6b63a0145226135db85720d3e020eb1c6ef4501e8cdf0e77d4c2b8aeb513b8
+```
 
 ### `dpkg` source package: `sgml-base=1.30`
 
@@ -7522,19 +7527,25 @@ $ apt-get source -qq --print-uris tar=1.34+dfsg-1ubuntu0.1.22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1ubuntu0.1.22.04.2.debian.tar.xz' tar_1.34+dfsg-1ubuntu0.1.22.04.2.debian.tar.xz 20544 SHA512:9840407a1364154c831665c3f1739c80a84806567fe5ad27ee3ac70f4c18e27d7f2f9e0557b6e2a634ab39449a8fc95b96f1813f5c203df8ece5226a6afe8c7c
 ```
 
-### `dpkg` source package: `tiff=4.3.0-6ubuntu0.9`
+### `dpkg` source package: `tiff=4.3.0-6ubuntu0.10`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.3.0-6ubuntu0.9`
+- `libtiff5:amd64=4.3.0-6ubuntu0.10`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
 - `Hylafax`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tiff=4.3.0-6ubuntu0.10
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.10.dsc' tiff_4.3.0-6ubuntu0.10.dsc 2402 SHA512:57c9cd8b73231e2f8d6f4377242e5bfb5d2401275db8216623a4dab98078d753525bb50131b34179ce30b0e29ad81a1ed21d17dc536f9926d005aa04a2fdcf77
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz' tiff_4.3.0.orig.tar.gz 2808254 SHA512:e04a4a6c542e58a174c1e9516af3908acf1d3d3e1096648c5514f4963f73e7af27387a76b0fbabe43cf867a18874088f963796a7cd6e45deb998692e3e235493
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0.orig.tar.gz.asc' tiff_4.3.0.orig.tar.gz.asc 488 SHA512:115a4c5714b52d0fbea800c494d83c8a96b70b2c9ce84a8df03205d9afc517faa17963f5f9508c013d7d3e2be6675b84b594a771a829406473234c4bd85e469e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.3.0-6ubuntu0.10.debian.tar.xz' tiff_4.3.0-6ubuntu0.10.debian.tar.xz 50900 SHA512:77306a746064a74f326c232bbb7017cae9374b7596effae40234d1fef52fd6383a705b8ef0e76ca9c09795e54fc8a4a85ac1171324b535c3c4e28fee30153264
+```
 
 ### `dpkg` source package: `tzdata=2024a-0ubuntu0.22.04.1`
 
