@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cca5b924b7886b8979440b610599c101d3e2c8d673a4c99bd897758e9f92a605`
-- Created: `2024-07-23T05:00:04.600045012Z`
-- Virtual Size: ~ 501.92 Mb  
+- Image ID: `sha256:14d4d34344ce3a4699339a2c982fa8f1b80e8ae375f1872892768b517cadc375`
+- Created: `2024-09-14T00:48:49.0005275Z`
+- Virtual Size: ~ 501.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -216,16 +216,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.8.0-r0 description:
+curl-8.9.1-r1 description:
 URL retrival utility and library
 
-curl-8.8.0-r0 webpage:
+curl-8.9.1-r1 webpage:
 https://curl.se/
 
-curl-8.8.0-r0 installed size:
-244 KiB
+curl-8.9.1-r1 installed size:
+248 KiB
 
-curl-8.8.0-r0 license:
+curl-8.9.1-r1 license:
 curl
 
 ```
@@ -488,16 +488,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.1-r3 description:
+libcrypto3-3.3.2-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.1-r3 webpage:
+libcrypto3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.1-r3 installed size:
+libcrypto3-3.3.2-r0 installed size:
 4660 KiB
 
-libcrypto3-3.3.1-r3 license:
+libcrypto3-3.3.2-r0 license:
 Apache-2.0
 
 ```
@@ -505,16 +505,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.8.0-r0 description:
+libcurl-8.9.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.8.0-r0 webpage:
+libcurl-8.9.1-r1 webpage:
 https://curl.se/
 
-libcurl-8.8.0-r0 installed size:
-620 KiB
+libcurl-8.9.1-r1 installed size:
+628 KiB
 
-libcurl-8.8.0-r0 license:
+libcurl-8.9.1-r1 license:
 curl
 
 ```
@@ -522,16 +522,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.2-r0 description:
+libexpat-2.6.3-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.2-r0 webpage:
+libexpat-2.6.3-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.2-r0 installed size:
+libexpat-2.6.3-r0 installed size:
 144 KiB
 
-libexpat-2.6.2-r0 license:
+libexpat-2.6.3-r0 license:
 MIT
 
 ```
@@ -726,16 +726,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.1-r3 description:
+libssl3-3.3.2-r0 description:
 SSL shared libraries
 
-libssl3-3.3.1-r3 webpage:
+libssl3-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.1-r3 installed size:
+libssl3-3.3.2-r0 installed size:
 796 KiB
 
-libssl3-3.3.1-r3 license:
+libssl3-3.3.2-r0 license:
 Apache-2.0
 
 ```
@@ -981,16 +981,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.1-r3 description:
+openssl-3.3.2-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.1-r3 webpage:
+openssl-3.3.2-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.3.1-r3 installed size:
+openssl-3.3.2-r0 installed size:
 784 KiB
 
-openssl-3.3.1-r3 license:
+openssl-3.3.2-r0 license:
 Apache-2.0
 
 ```
@@ -1015,16 +1015,16 @@ BSD-3-Clause
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.3-r1 description:
+pyc-3.12.3-r2 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.3-r1 webpage:
+pyc-3.12.3-r2 webpage:
 https://www.python.org/
 
-pyc-3.12.3-r1 installed size:
+pyc-3.12.3-r2 installed size:
 4096 B
 
-pyc-3.12.3-r1 license:
+pyc-3.12.3-r2 license:
 PSF-2.0
 
 ```
@@ -1032,16 +1032,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.3-r1 description:
+python3-3.12.3-r2 description:
 High-level scripting language
 
-python3-3.12.3-r1 webpage:
+python3-3.12.3-r2 webpage:
 https://www.python.org/
 
-python3-3.12.3-r1 installed size:
+python3-3.12.3-r2 installed size:
 24 MiB
 
-python3-3.12.3-r1 license:
+python3-3.12.3-r2 license:
 PSF-2.0
 
 ```
@@ -1049,16 +1049,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.3-r1 description:
+python3-pyc-3.12.3-r2 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.3-r1 webpage:
+python3-pyc-3.12.3-r2 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.3-r1 installed size:
+python3-pyc-3.12.3-r2 installed size:
 4096 B
 
-python3-pyc-3.12.3-r1 license:
+python3-pyc-3.12.3-r2 license:
 PSF-2.0
 
 ```
@@ -1066,16 +1066,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.3-r1 description:
+python3-pycache-pyc0-3.12.3-r2 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.3-r1 webpage:
+python3-pycache-pyc0-3.12.3-r2 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.3-r1 installed size:
+python3-pycache-pyc0-3.12.3-r2 installed size:
 11 MiB
 
-python3-pycache-pyc0-3.12.3-r1 license:
+python3-pycache-pyc0-3.12.3-r2 license:
 PSF-2.0
 
 ```
@@ -1168,16 +1168,16 @@ GPL-3.0-or-later
 ### `apk` package: `xz`
 
 ```console
-xz-5.6.1-r3 description:
+xz-5.6.2-r0 description:
 Library and CLI tools for XZ and LZMA compressed files
 
-xz-5.6.1-r3 webpage:
-https://xz.tukaani.org/xz-utils/
+xz-5.6.2-r0 webpage:
+https://tukaani.org/xz/
 
-xz-5.6.1-r3 installed size:
-180 KiB
+xz-5.6.2-r0 installed size:
+184 KiB
 
-xz-5.6.1-r3 license:
+xz-5.6.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
@@ -1185,16 +1185,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `xz-libs`
 
 ```console
-xz-libs-5.6.1-r3 description:
+xz-libs-5.6.2-r0 description:
 Library and CLI tools for XZ and LZMA compressed files (libraries)
 
-xz-libs-5.6.1-r3 webpage:
-https://xz.tukaani.org/xz-utils/
+xz-libs-5.6.2-r0 webpage:
+https://tukaani.org/xz/
 
-xz-libs-5.6.1-r3 installed size:
+xz-libs-5.6.2-r0 installed size:
 236 KiB
 
-xz-libs-5.6.1-r3 license:
+xz-libs-5.6.2-r0 license:
 GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 
 ```
