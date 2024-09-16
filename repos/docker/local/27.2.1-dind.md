@@ -2,17 +2,17 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:371f9f35b2da407e86e3d81ea7a4efc0594697c3abb6b47bac15bbfa0533f293`
+- Image ID: `sha256:4bc4944ccb3ac6c18f3c4b05298bec518fb6407d02aa1191109e108286e7ee81`
 - Created: `2024-09-09T11:04:22Z`
-- Virtual Size: ~ 365.40 Mb  
+- Virtual Size: ~ 366.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=27.2.1`
-  - `DOCKER_BUILDX_VERSION=0.17.0`
-  - `DOCKER_COMPOSE_VERSION=2.29.2`
+  - `DOCKER_BUILDX_VERSION=0.17.1`
+  - `DOCKER_COMPOSE_VERSION=2.29.3`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e`
 
@@ -480,16 +480,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.9.1-r1 description:
+libcurl-8.10.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.9.1-r1 webpage:
+libcurl-8.10.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.9.1-r1 installed size:
-628 KiB
+libcurl-8.10.0-r0 installed size:
+644 KiB
 
-libcurl-8.9.1-r1 license:
+libcurl-8.10.0-r0 license:
 curl
 
 ```
@@ -650,16 +650,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r0 description:
+libncursesw-6.4_p20240420-r1 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r0 webpage:
+libncursesw-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r0 installed size:
+libncursesw-6.4_p20240420-r1 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r0 license:
+libncursesw-6.4_p20240420-r1 license:
 X11
 
 ```
@@ -888,16 +888,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r0 description:
+ncurses-terminfo-base-6.4_p20240420-r1 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r0 webpage:
+ncurses-terminfo-base-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r0 installed size:
+ncurses-terminfo-base-6.4_p20240420-r1 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r0 license:
+ncurses-terminfo-base-6.4_p20240420-r1 license:
 X11
 
 ```
