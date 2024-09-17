@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:992a8debfe0bed9089eb69a260383021bce2ef2bc09ad4b816b99cf6b5c26572`
-- Created: `2024-08-17T01:26:52.436719883Z`
-- Virtual Size: ~ 111.73 Mb  
+- Image ID: `sha256:0999cd855bf065bf57ef39f3fc4175a91e117a598a2cd9acfb4622289c560f77`
+- Created: `2024-09-17T00:44:41.656132909Z`
+- Virtual Size: ~ 118.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -100,11 +100,11 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `base-files=13ubuntu10`
+### `dpkg` source package: `base-files=13ubuntu10.1`
 
 Binary Packages:
 
-- `base-files=13ubuntu10`
+- `base-files=13ubuntu10.1`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
@@ -167,11 +167,11 @@ Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `bzip2=1.0.8-5.1`
+### `dpkg` source package: `bzip2=1.0.8-5.1build0.1`
 
 Binary Packages:
 
-- `libbz2-1.0:amd64=1.0.8-5.1`
+- `libbz2-1.0:amd64=1.0.8-5.1build0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libbz2-1.0/copyright`)
 
@@ -180,10 +180,6 @@ Licenses: (parsed from: `/usr/share/doc/libbz2-1.0/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/bzip2/1.0.8-5.1/
 
 
 ### `dpkg` source package: `ca-certificates=20240203`
@@ -243,12 +239,12 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.2`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.4`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.2`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.2`
+- `curl=8.5.0-2ubuntu10.4`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.4`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -269,12 +265,12 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3`
+### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-5ubuntu3.1`
 
 Binary Packages:
 
-- `libsasl2-2:amd64=2.1.28+dfsg1-5ubuntu3`
-- `libsasl2-modules-db:amd64=2.1.28+dfsg1-5ubuntu3`
+- `libsasl2-2:amd64=2.1.28+dfsg1-5ubuntu3.1`
+- `libsasl2-modules-db:amd64=2.1.28+dfsg1-5ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/libsasl2-modules-db/copyright`)
 
@@ -407,11 +403,11 @@ Licenses: (parsed from: `/usr/share/doc/diffutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `dpkg=1.22.6ubuntu6`
+### `dpkg` source package: `dpkg=1.22.6ubuntu6.1`
 
 Binary Packages:
 
-- `dpkg=1.22.6ubuntu6`
+- `dpkg=1.22.6ubuntu6.1`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -423,15 +419,15 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `e2fsprogs=1.47.0-2.4~exp1ubuntu4`
+### `dpkg` source package: `e2fsprogs=1.47.0-2.4~exp1ubuntu4.1`
 
 Binary Packages:
 
-- `e2fsprogs=1.47.0-2.4~exp1ubuntu4`
-- `libcom-err2:amd64=1.47.0-2.4~exp1ubuntu4`
-- `libext2fs2t64:amd64=1.47.0-2.4~exp1ubuntu4`
-- `libss2:amd64=1.47.0-2.4~exp1ubuntu4`
-- `logsave=1.47.0-2.4~exp1ubuntu4`
+- `e2fsprogs=1.47.0-2.4~exp1ubuntu4.1`
+- `libcom-err2:amd64=1.47.0-2.4~exp1ubuntu4.1`
+- `libext2fs2t64:amd64=1.47.0-2.4~exp1ubuntu4.1`
+- `libss2:amd64=1.47.0-2.4~exp1ubuntu4.1`
+- `logsave=1.47.0-2.4~exp1ubuntu4.1`
 
 Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/libcom-err2/copyright`, `/usr/share/doc/libext2fs2t64/copyright`, `/usr/share/doc/libss2/copyright`, `/usr/share/doc/logsave/copyright`)
 
@@ -508,12 +504,12 @@ Licenses: (parsed from: `/usr/share/doc/gcc-14-base/copyright`, `/usr/share/doc/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `glibc=2.39-0ubuntu8.2`
+### `dpkg` source package: `glibc=2.39-0ubuntu8.3`
 
 Binary Packages:
 
-- `libc-bin=2.39-0ubuntu8.2`
-- `libc6:amd64=2.39-0ubuntu8.2`
+- `libc-bin=2.39-0ubuntu8.3`
+- `libc6:amd64=2.39-0ubuntu8.3`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -580,11 +576,11 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `gnutls28=3.8.3-1.1ubuntu3.1`
+### `dpkg` source package: `gnutls28=3.8.3-1.1ubuntu3.2`
 
 Binary Packages:
 
-- `libgnutls30t64:amd64=3.8.3-1.1ubuntu3.1`
+- `libgnutls30t64:amd64=3.8.3-1.1ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 
@@ -890,11 +886,11 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5t64/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libseccomp=2.5.5-1ubuntu3`
+### `dpkg` source package: `libseccomp=2.5.5-1ubuntu3.1`
 
 Binary Packages:
 
-- `libseccomp2:amd64=2.5.5-1ubuntu3`
+- `libseccomp2:amd64=2.5.5-1ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
@@ -1028,11 +1024,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libzstd=1.5.5+dfsg2-2build1`
+### `dpkg` source package: `libzstd=1.5.5+dfsg2-2build1.1`
 
 Binary Packages:
 
-- `libzstd1:amd64=1.5.5+dfsg2-2build1`
+- `libzstd1:amd64=1.5.5+dfsg2-2build1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 
@@ -1045,11 +1041,11 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `lz4=1.9.4-1build1`
+### `dpkg` source package: `lz4=1.9.4-1build1.1`
 
 Binary Packages:
 
-- `liblz4-1:amd64=1.9.4-1build1`
+- `liblz4-1:amd64=1.9.4-1build1.1`
 
 Licenses: (parsed from: `/usr/share/doc/liblz4-1/copyright`)
 
@@ -1115,12 +1111,12 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/netbase/6.4/
 
 
-### `dpkg` source package: `nettle=3.9.1-2.2build1`
+### `dpkg` source package: `nettle=3.9.1-2.2build1.1`
 
 Binary Packages:
 
-- `libhogweed6t64:amd64=3.9.1-2.2build1`
-- `libnettle8t64:amd64=3.9.1-2.2build1`
+- `libhogweed6t64:amd64=3.9.1-2.2build1.1`
+- `libnettle8t64:amd64=3.9.1-2.2build1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libhogweed6t64/copyright`, `/usr/share/doc/libnettle8t64/copyright`)
 
@@ -1211,12 +1207,12 @@ Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3.2`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.4`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.0.13-0ubuntu3.2`
-- `openssl=3.0.13-0ubuntu3.2`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.4`
+- `openssl=3.0.13-0ubuntu3.4`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
@@ -1229,11 +1225,11 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2`
+### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 
 Binary Packages:
 
-- `libp11-kit0:amd64=0.25.3-4ubuntu2`
+- `libp11-kit0:amd64=0.25.3-4ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 
@@ -1512,12 +1508,12 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `systemd=255.4-1ubuntu8.2`
+### `dpkg` source package: `systemd=255.4-1ubuntu8.4`
 
 Binary Packages:
 
-- `libsystemd0:amd64=255.4-1ubuntu8.2`
-- `libudev1:amd64=255.4-1ubuntu8.2`
+- `libsystemd0:amd64=255.4-1ubuntu8.4`
+- `libudev1:amd64=255.4-1ubuntu8.4`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1605,17 +1601,17 @@ Licenses: (parsed from: `/usr/share/doc/ubuntu-keyring/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `util-linux=2.39.3-9ubuntu6`
+### `dpkg` source package: `util-linux=2.39.3-9ubuntu6.1`
 
 Binary Packages:
 
-- `bsdutils=1:2.39.3-9ubuntu6`
-- `libblkid1:amd64=2.39.3-9ubuntu6`
-- `libmount1:amd64=2.39.3-9ubuntu6`
-- `libsmartcols1:amd64=2.39.3-9ubuntu6`
-- `libuuid1:amd64=2.39.3-9ubuntu6`
-- `mount=2.39.3-9ubuntu6`
-- `util-linux=2.39.3-9ubuntu6`
+- `bsdutils=1:2.39.3-9ubuntu6.1`
+- `libblkid1:amd64=2.39.3-9ubuntu6.1`
+- `libmount1:amd64=2.39.3-9ubuntu6.1`
+- `libsmartcols1:amd64=2.39.3-9ubuntu6.1`
+- `libuuid1:amd64=2.39.3-9ubuntu6.1`
+- `mount=2.39.3-9ubuntu6.1`
+- `util-linux=2.39.3-9ubuntu6.1`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -1671,11 +1667,11 @@ Licenses: (parsed from: `/usr/share/doc/libxxhash0/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `xz-utils=5.6.1+really5.4.5-1`
+### `dpkg` source package: `xz-utils=5.6.1+really5.4.5-1build0.1`
 
 Binary Packages:
 
-- `liblzma5:amd64=5.6.1+really5.4.5-1`
+- `liblzma5:amd64=5.6.1+really5.4.5-1build0.1`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 
@@ -1698,16 +1694,12 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/xz-utils/5.6.1+really5.4.5-1/
-
-
-### `dpkg` source package: `zlib=1:1.3.dfsg-3.1ubuntu2`
+### `dpkg` source package: `zlib=1:1.3.dfsg-3.1ubuntu2.1`
 
 Binary Packages:
 
-- `zlib1g:amd64=1:1.3.dfsg-3.1ubuntu2`
+- `zlib1g:amd64=1:1.3.dfsg-3.1ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 

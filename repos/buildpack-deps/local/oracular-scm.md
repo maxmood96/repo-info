@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2084689826f3194265f0ecfd05f9d226214ded5e01b985238a0bfb341692b67b`
-- Created: `2024-09-07T04:23:01.671646591Z`
-- Virtual Size: ~ 267.74 Mb  
+- Image ID: `sha256:c11d235b4586dfae5f82c5113a4bcc2c2f300aec0770c713922eb195365e78a0`
+- Created: `2024-09-17T00:48:47.775495677Z`
+- Virtual Size: ~ 265.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -84,12 +84,12 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/apr/1.7.2-3.2/
 
 
-### `dpkg` source package: `apt=2.9.7`
+### `dpkg` source package: `apt=2.9.8`
 
 Binary Packages:
 
-- `apt=2.9.7`
-- `libapt-pkg6.0t64:amd64=2.9.7`
+- `apt=2.9.8`
+- `libapt-pkg6.0t64:amd64=2.9.8`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0t64/copyright`)
 
@@ -103,7 +103,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/apt/2.9.7/
+- http://snapshot.debian.org/package/apt/2.9.8/
 
 
 ### `dpkg` source package: `attr=1:2.5.2-1build1`
@@ -123,12 +123,12 @@ Licenses: (parsed from: `/usr/share/doc/libattr1/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `audit=1:3.1.2-4`
+### `dpkg` source package: `audit=1:4.0.1-1ubuntu1`
 
 Binary Packages:
 
-- `libaudit-common=1:3.1.2-4`
-- `libaudit1:amd64=1:3.1.2-4`
+- `libaudit-common=1:4.0.1-1ubuntu1`
+- `libaudit1:amd64=1:4.0.1-1ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/doc/libaudit1/copyright`)
 
@@ -139,16 +139,12 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/audit/1:3.1.2-4/
-
-
-### `dpkg` source package: `base-files=13.3ubuntu3`
+### `dpkg` source package: `base-files=13.3ubuntu5`
 
 Binary Packages:
 
-- `base-files=13.3ubuntu3`
+- `base-files=13.3ubuntu5`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
@@ -179,11 +175,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/base-passwd/3.6.4/
 
 
-### `dpkg` source package: `bash=5.2.21-2.1ubuntu1`
+### `dpkg` source package: `bash=5.2.32-1ubuntu1`
 
 Binary Packages:
 
-- `bash=5.2.21-2.1ubuntu1`
+- `bash=5.2.32-1ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
@@ -217,11 +213,11 @@ Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `bzip2=1.0.8-5.1`
+### `dpkg` source package: `bzip2=1.0.8-6`
 
 Binary Packages:
 
-- `libbz2-1.0:amd64=1.0.8-5.1`
+- `libbz2-1.0:amd64=1.0.8-6`
 
 Licenses: (parsed from: `/usr/share/doc/libbz2-1.0/copyright`)
 
@@ -233,7 +229,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/bzip2/1.0.8-5.1/
+- http://snapshot.debian.org/package/bzip2/1.0.8-6/
 
 
 ### `dpkg` source package: `ca-certificates=20240203`
@@ -273,11 +269,11 @@ Licenses: (parsed from: `/usr/share/doc/libdebconfclient0/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `coreutils=9.4-3ubuntu6`
+### `dpkg` source package: `coreutils=9.4-3.1ubuntu1`
 
 Binary Packages:
 
-- `coreutils=9.4-3ubuntu6`
+- `coreutils=9.4-3.1ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
@@ -572,13 +568,13 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/findutils/4.10.0-3/
 
 
-### `dpkg` source package: `gcc-14=14.2.0-1ubuntu1`
+### `dpkg` source package: `gcc-14=14.2.0-4ubuntu2`
 
 Binary Packages:
 
-- `gcc-14-base:amd64=14.2.0-1ubuntu1`
-- `libgcc-s1:amd64=14.2.0-1ubuntu1`
-- `libstdc++6:amd64=14.2.0-1ubuntu1`
+- `gcc-14-base:amd64=14.2.0-4ubuntu2`
+- `libgcc-s1:amd64=14.2.0-4ubuntu2`
+- `libstdc++6:amd64=14.2.0-4ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-14-base/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -648,12 +644,12 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `glibc=2.39-0ubuntu9`
+### `dpkg` source package: `glibc=2.40-1ubuntu1`
 
 Binary Packages:
 
-- `libc-bin=2.39-0ubuntu9`
-- `libc6:amd64=2.39-0ubuntu9`
+- `libc-bin=2.40-1ubuntu1`
+- `libc6:amd64=2.40-1ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -761,11 +757,11 @@ Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `gzip=1.12-1ubuntu3`
+### `dpkg` source package: `gzip=1.12-1.1ubuntu1`
 
 Binary Packages:
 
-- `gzip=1.12-1ubuntu3`
+- `gzip=1.12-1.1ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 
@@ -1034,11 +1030,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/libfido2/1.15.0-1/
 
 
-### `dpkg` source package: `libgcrypt20=1.11.0-2`
+### `dpkg` source package: `libgcrypt20=1.11.0-6`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.11.0-2`
+- `libgcrypt20:amd64=1.11.0-6`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
@@ -1050,7 +1046,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/libgcrypt20/1.11.0-2/
+- http://snapshot.debian.org/package/libgcrypt20/1.11.0-6/
 
 
 ### `dpkg` source package: `libgpg-error=1.50-3`
@@ -1181,11 +1177,11 @@ Licenses: (parsed from: `/usr/share/doc/libpsl5t64/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libseccomp=2.5.5-1ubuntu3`
+### `dpkg` source package: `libseccomp=2.5.5-1ubuntu4`
 
 Binary Packages:
 
-- `libseccomp2:amd64=2.5.5-1ubuntu3`
+- `libseccomp2:amd64=2.5.5-1ubuntu4`
 
 Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
@@ -1195,11 +1191,11 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libselinux=3.5-2ubuntu2`
+### `dpkg` source package: `libselinux=3.5-2ubuntu5`
 
 Binary Packages:
 
-- `libselinux1:amd64=3.5-2ubuntu2`
+- `libselinux1:amd64=3.5-2ubuntu5`
 
 Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 
@@ -1210,12 +1206,12 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libsemanage=3.5-1build5`
+### `dpkg` source package: `libsemanage=3.5-1build6`
 
 Binary Packages:
 
-- `libsemanage-common=3.5-1build5`
-- `libsemanage2:amd64=3.5-1build5`
+- `libsemanage-common=3.5-1build6`
+- `libsemanage2:amd64=3.5-1build6`
 
 Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/share/doc/libsemanage2/copyright`)
 
@@ -1665,14 +1661,14 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `pam=1.5.3-7ubuntu1`
+### `dpkg` source package: `pam=1.5.3-7ubuntu2`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.5.3-7ubuntu1`
-- `libpam-modules-bin=1.5.3-7ubuntu1`
-- `libpam-runtime=1.5.3-7ubuntu1`
-- `libpam0g:amd64=1.5.3-7ubuntu1`
+- `libpam-modules:amd64=1.5.3-7ubuntu2`
+- `libpam-modules-bin=1.5.3-7ubuntu2`
+- `libpam-runtime=1.5.3-7ubuntu2`
+- `libpam0g:amd64=1.5.3-7ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
@@ -1773,12 +1769,12 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `procps=2:4.0.4-4ubuntu4`
+### `dpkg` source package: `procps=2:4.0.4-4ubuntu5`
 
 Binary Packages:
 
-- `libproc2-0:amd64=2:4.0.4-4ubuntu4`
-- `procps=2:4.0.4-4ubuntu4`
+- `libproc2-0:amd64=2:4.0.4-4ubuntu5`
+- `procps=2:4.0.4-4ubuntu5`
 
 Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -1793,13 +1789,13 @@ Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/p
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3-defaults=3.12.5-1`
+### `dpkg` source package: `python3-defaults=3.12.6-0ubuntu1`
 
 Binary Packages:
 
-- `libpython3-stdlib:amd64=3.12.5-1`
-- `python3=3.12.5-1`
-- `python3-minimal=3.12.5-1`
+- `libpython3-stdlib:amd64=3.12.6-0ubuntu1`
+- `python3=3.12.6-0ubuntu1`
+- `python3-minimal=3.12.6-0ubuntu1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1808,19 +1804,15 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/python3-defaults/3.12.5-1/
-
-
-### `dpkg` source package: `python3.12=3.12.5-4`
+### `dpkg` source package: `python3.12=3.12.6-1`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.5-4`
-- `libpython3.12-stdlib:amd64=3.12.5-4`
-- `python3.12=3.12.5-4`
-- `python3.12-minimal=3.12.5-4`
+- `libpython3.12-minimal:amd64=3.12.6-1`
+- `libpython3.12-stdlib:amd64=3.12.6-1`
+- `python3.12=3.12.6-1`
+- `python3.12-minimal=3.12.6-1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -1847,7 +1839,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/python3.12/3.12.5-4/
+- http://snapshot.debian.org/package/python3.12/3.12.6-1/
 
 
 ### `dpkg` source package: `readline=8.2-5`
@@ -1971,12 +1963,12 @@ Licenses: (parsed from: `/usr/share/doc/libserf-1-1/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `shadow=1:4.13+dfsg1-4ubuntu5`
+### `dpkg` source package: `shadow=1:4.15.3-3ubuntu2`
 
 Binary Packages:
 
-- `login=1:4.13+dfsg1-4ubuntu5`
-- `passwd=1:4.13+dfsg1-4ubuntu5`
+- `login=1:4.15.3-3ubuntu2`
+- `passwd=1:4.15.3-3ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
@@ -1984,7 +1976,6 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 - `GPL-1`
 - `GPL-2`
 - `GPL-2+`
-- `public-domain`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
@@ -2037,12 +2028,12 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `systemd=256.4-2ubuntu1`
+### `dpkg` source package: `systemd=256.5-2ubuntu2`
 
 Binary Packages:
 
-- `libsystemd0:amd64=256.4-2ubuntu1`
-- `libudev1:amd64=256.4-2ubuntu1`
+- `libsystemd0:amd64=256.5-2ubuntu2`
+- `libudev1:amd64=256.5-2ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2163,27 +2154,37 @@ Licenses: (parsed from: `/usr/share/doc/libutf8proc3/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `util-linux=2.39.3-9ubuntu6`
+### `dpkg` source package: `util-linux=2.40.2-1ubuntu1`
 
 Binary Packages:
 
-- `bsdutils=1:2.39.3-9ubuntu6`
-- `libblkid1:amd64=2.39.3-9ubuntu6`
-- `libmount1:amd64=2.39.3-9ubuntu6`
-- `libsmartcols1:amd64=2.39.3-9ubuntu6`
-- `libuuid1:amd64=2.39.3-9ubuntu6`
-- `mount=2.39.3-9ubuntu6`
-- `util-linux=2.39.3-9ubuntu6`
+- `bsdutils=1:2.40.2-1ubuntu1`
+- `bsdutils-dbgsym=1:2.40.2-1ubuntu1`
+- `libblkid1:amd64=2.40.2-1ubuntu1`
+- `libblkid1-dbgsym:amd64=2.40.2-1ubuntu1`
+- `libmount1:amd64=2.40.2-1ubuntu1`
+- `libmount1-dbgsym:amd64=2.40.2-1ubuntu1`
+- `libsmartcols1:amd64=2.40.2-1ubuntu1`
+- `libsmartcols1-dbgsym:amd64=2.40.2-1ubuntu1`
+- `libuuid1:amd64=2.40.2-1ubuntu1`
+- `libuuid1-dbgsym:amd64=2.40.2-1ubuntu1`
+- `mount=2.40.2-1ubuntu1`
+- `mount-dbgsym=2.40.2-1ubuntu1`
+- `util-linux=2.40.2-1ubuntu1`
+- `util-linux-dbgsym=2.40.2-1ubuntu1`
 
-Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
+Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/bsdutils-dbgsym/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libblkid1-dbgsym/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libmount1-dbgsym/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libsmartcols1-dbgsym/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/libuuid1-dbgsym/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/mount-dbgsym/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/util-linux-dbgsym/copyright`)
 
+- `BSD-2-clause`
 - `BSD-3-clause`
 - `BSD-4-clause`
 - `BSLA`
+- `Expat`
 - `GPL-2`
 - `GPL-2+`
 - `GPL-3`
 - `GPL-3+`
+- `ISC`
 - `LGPL`
 - `LGPL-2`
 - `LGPL-2+`
@@ -2191,7 +2192,6 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-2.1+`
 - `LGPL-3`
 - `LGPL-3+`
-- `MIT`
 - `public-domain`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
@@ -2260,11 +2260,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/xz-utils/5.6.2-2/
 
 
-### `dpkg` source package: `zlib=1:1.3.dfsg-3.1ubuntu2`
+### `dpkg` source package: `zlib=1:1.3.dfsg+really1.3.1-1ubuntu1`
 
 Binary Packages:
 
-- `zlib1g:amd64=1:1.3.dfsg-3.1ubuntu2`
+- `zlib1g:amd64=1:1.3.dfsg+really1.3.1-1ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 
