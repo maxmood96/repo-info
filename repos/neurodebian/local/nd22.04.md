@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:07bf875c9a9f9ccf9291fd353336bc8786a19878fac26ac669a87ba3f3dfb484`
+- Image ID: `sha256:f03035b5fafec30a11ccaf9e676191d30bf2a93a2c961ae50bcdeae21ecee68c`
 - Created: `2024-06-21T21:57:43Z`
 - Virtual Size: ~ 86.31 Mb  
   (total size of all layers on-disk)
@@ -57,21 +57,25 @@ $ apt-get source -qq --print-uris adduser=3.118ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/a/adduser/adduser_3.118ubuntu5.tar.xz' adduser_3.118ubuntu5.tar.xz 222904 SHA512:ded568a5a3f5a5ac1acc2098e37160194f8c4622e90c7044d599286a321fe8fd701c8554a4517e4d72a6089b8e3b5592b92d46668032bda81de64cc736bf0a75
 ```
 
-### `dpkg` source package: `apt=2.4.12`
+### `dpkg` source package: `apt=2.4.13`
 
 Binary Packages:
 
-- `apt=2.4.12`
-- `libapt-pkg6.0:amd64=2.4.12`
+- `apt=2.4.13`
+- `libapt-pkg6.0:amd64=2.4.13`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0/copyright`)
 
 - `GPL-2`
 - `GPLv2+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apt=2.4.13
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.13.dsc' apt_2.4.13.dsc 2801 SHA512:a3b478fc618f6d5cb69e7489543ce3ef89b9f604162adb9540a45f45845c31081647ba6c08fea7d1d125c30daa09d718f88493d850546aa0edb409e1840a79d1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apt/apt_2.4.13.tar.xz' apt_2.4.13.tar.xz 2323800 SHA512:8b085133f1d4416698182374a6b5df2f5d1509500d6c6ebfd7b47c2288f176f0c332703af1a8de0b79ea5fceb2bbd2a0470bd86d584ea36927bc87f406c2d570
+```
 
 ### `dpkg` source package: `attr=1:2.5.1-1build1`
 
@@ -118,19 +122,23 @@ $ apt-get source -qq --print-uris audit=1:3.0.7-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_3.0.7-1build1.debian.tar.xz' audit_3.0.7-1build1.debian.tar.xz 17772 SHA512:cdf346fc7dc04e42b44a9089fb7c01e68ea54ccd20d3eef8100d0cd8eed8ebd0764d8fd6ceab133faa0bfeee18e3cfe7625d230600b0e34ed0c19a7b739ec783
 ```
 
-### `dpkg` source package: `base-files=12ubuntu4.6`
+### `dpkg` source package: `base-files=12ubuntu4.7`
 
 Binary Packages:
 
-- `base-files=12ubuntu4.6`
+- `base-files=12ubuntu4.7`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris base-files=12ubuntu4.7
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.7.dsc' base-files_12ubuntu4.7.dsc 1277 SHA512:9421fa1b62eb1c09d8aa93bb7c96ceaa077aaa4841ed5e516a682cfcc7cefdb7a7fd87976ba9e2718791fda2583141710968c4ce7357e089f5e5c3f7a0683ccf
+'http://archive.ubuntu.com/ubuntu/pool/main/b/base-files/base-files_12ubuntu4.7.tar.xz' base-files_12ubuntu4.7.tar.xz 81888 SHA512:e3a9f3188f6f43a53818200ac110f504f81b2819e301d69931a18fb34673541c11b2fc43af256e0c52f4a6daa6bd4b408b99ba432fa1b2b6624658bf312b0db5
+```
 
 ### `dpkg` source package: `base-passwd=3.5.52build1`
 
@@ -390,15 +398,15 @@ $ apt-get source -qq --print-uris dpkg=1.21.1ubuntu2.3
 'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.21.1ubuntu2.3.tar.xz' dpkg_1.21.1ubuntu2.3.tar.xz 5017216 SHA512:c81a729a5bc7f73440eeb8c427f42691384dff7d0bd11edeaecead95b3931dd82d4ed70cac3f90befecc6ba6d3116c7a1782e455eee91fa4fe485fa625c04be7
 ```
 
-### `dpkg` source package: `e2fsprogs=1.46.5-2ubuntu1.1`
+### `dpkg` source package: `e2fsprogs=1.46.5-2ubuntu1.2`
 
 Binary Packages:
 
-- `e2fsprogs=1.46.5-2ubuntu1.1`
-- `libcom-err2:amd64=1.46.5-2ubuntu1.1`
-- `libext2fs2:amd64=1.46.5-2ubuntu1.1`
-- `libss2:amd64=1.46.5-2ubuntu1.1`
-- `logsave=1.46.5-2ubuntu1.1`
+- `e2fsprogs=1.46.5-2ubuntu1.2`
+- `libcom-err2:amd64=1.46.5-2ubuntu1.2`
+- `libext2fs2:amd64=1.46.5-2ubuntu1.2`
+- `libss2:amd64=1.46.5-2ubuntu1.2`
+- `logsave=1.46.5-2ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/libcom-err2/copyright`, `/usr/share/doc/libext2fs2/copyright`, `/usr/share/doc/libss2/copyright`, `/usr/share/doc/logsave/copyright`)
 
@@ -408,11 +416,11 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris e2fsprogs=1.46.5-2ubuntu1.1
-'http://security.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5-2ubuntu1.1.dsc' e2fsprogs_1.46.5-2ubuntu1.1.dsc 3227 SHA512:938120c907dc1c40e3b1c65ca7840c309d8d9a9beef91aff5a5a1694643e411e41b9c352ccb35c5cb83b6a1ef68f7222e32c268ae48ea94bfd5cdfc9bdbd8f72
-'http://security.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5.orig.tar.gz' e2fsprogs_1.46.5.orig.tar.gz 9530158 SHA512:1a3496cb6ac575c7a5c523cc4eede39bc77c313a6d1fea2d303fc967792d75d94e42d7821e1a61b7513509320aae4a7170506decf5753ddbd1dda9d304cc392e
-'http://security.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5.orig.tar.gz.asc' e2fsprogs_1.46.5.orig.tar.gz.asc 488 SHA512:b288fa2418a85750673743cb58faf10537e2c79a5c2ec8b0d59435316f00006424195556ccf78fa023b67b05a29cd85bf9d96c14c166847d71a1d79b189c1d05
-'http://security.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5-2ubuntu1.1.debian.tar.xz' e2fsprogs_1.46.5-2ubuntu1.1.debian.tar.xz 85972 SHA512:76a3ff1b2bfd26e464ccf7cd70a96eeb6a703a6d647fcaebc71d54e6cd9070339a5f0ac02322e181c45e4c7bd7ad4daf66079f193b1191eb9ff2a5f6275fa31f
+$ apt-get source -qq --print-uris e2fsprogs=1.46.5-2ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5-2ubuntu1.2.dsc' e2fsprogs_1.46.5-2ubuntu1.2.dsc 3190 SHA512:8bf3cf7816ff7a774b03e846fcd90083083c1cd9072635d1eb45ba76c87ea8a1d9f7c5bf99f9a80ad1fed2c294425835ff801ada260b3417258d94cee3dc3758
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5.orig.tar.gz' e2fsprogs_1.46.5.orig.tar.gz 9530158 SHA512:1a3496cb6ac575c7a5c523cc4eede39bc77c313a6d1fea2d303fc967792d75d94e42d7821e1a61b7513509320aae4a7170506decf5753ddbd1dda9d304cc392e
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5.orig.tar.gz.asc' e2fsprogs_1.46.5.orig.tar.gz.asc 488 SHA512:b288fa2418a85750673743cb58faf10537e2c79a5c2ec8b0d59435316f00006424195556ccf78fa023b67b05a29cd85bf9d96c14c166847d71a1d79b189c1d05
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5-2ubuntu1.2.debian.tar.xz' e2fsprogs_1.46.5-2ubuntu1.2.debian.tar.xz 86604 SHA512:acb7f22a63d9c0e58d626af655cdcb6e6cfcedafdd7edbc6b7b757d1b388ee04c416db98c577a8cdf2259c46ea16a679f9be770374515b21d93bd0af66bd2a1d
 ```
 
 ### `dpkg` source package: `findutils=4.8.0-1ubuntu3`
@@ -1322,11 +1330,11 @@ $ apt-get source -qq --print-uris openldap=2.5.18+dfsg-0ubuntu0.22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg-0ubuntu0.22.04.2.debian.tar.xz' openldap_2.5.18+dfsg-0ubuntu0.22.04.2.debian.tar.xz 172632 SHA512:f40e948a37ad373187b6007c033e6cbbd63775b1b424f62f9446a9f35b9b354d0c8a8ae3efe470d63e444af984bb2f28947ebc0521923cb50adc4ea2eba21843
 ```
 
-### `dpkg` source package: `openssl=3.0.2-0ubuntu1.17`
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.18`
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.2-0ubuntu1.17`
+- `libssl3:amd64=3.0.2-0ubuntu1.18`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
 
@@ -1335,9 +1343,15 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.18
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.18.dsc' openssl_3.0.2-0ubuntu1.18.dsc 2730 SHA512:063002f9a86d0ab1c1932ded24a4e3624294a560a937a3234d3f0523d19acb8f56be2fe4c452a10aa659250d6026a06ecc4988101e27b79a733833170ba2f651
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.18.debian.tar.xz' openssl_3.0.2-0ubuntu1.18.debian.tar.xz 263268 SHA512:67e7d3d71428c12fccfeb354ffdbedacb867df025bd222cd4d3796ff37a630ba3adb541f03180aa57511c8c9e4330260f89141bced621dcafc89736c3d33f0b5
+```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
