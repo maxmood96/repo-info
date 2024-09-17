@@ -1,7 +1,7 @@
 ## `clojure:temurin-22-tools-deps-1.12.0.1479-bookworm`
 
 ```console
-$ docker pull clojure@sha256:f4b74942930c99c38ca6398897691d9216f2acf910720fb9fe99093d054b09b6
+$ docker pull clojure@sha256:9a4611bfa692caae4d3f84eda75b5aed27c646712a3f46080d85e8a3bbe16ed7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull clojure@sha256:f4b74942930c99c38ca6398897691d9216f2acf910720fb9fe9
 ### `clojure:temurin-22-tools-deps-1.12.0.1479-bookworm` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:4b9dba78642b82e4a756fcc94da061626a5cf1f7fa3008d4342fe9799a41ea30
+$ docker pull clojure@sha256:c336f9535338874b5ab229cfa3986295fa5fcaa0667db9cfbfcbee24f6cd5869
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **286.7 MB (286738145 bytes)**  
+-	Total Size: **287.0 MB (286967788 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0143e4bc49707a28bb855bc640905cd1eb8fec93e8b987fed82ef5eb6ade8bd2`
+-	Image ID: `sha256:55095dc262fd80fde7156380de91f81f7ff9bae21163e9720e7b4120ce1729b0`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -56,48 +56,48 @@ CMD ["-M" "--repl"]
 		Last Modified: Wed, 04 Sep 2024 22:33:56 GMT  
 		Size: 49.6 MB (49556702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac6f3d200912b3cf82d5f6da9220f86b82a57c4e5469a85630f36c12eb3d16f4`  
-		Last Modified: Fri, 06 Sep 2024 20:59:42 GMT  
-		Size: 156.5 MB (156481671 bytes)  
+	-	`sha256:a5ef0ce3155d8f66cea5b8de382d101314072ffd7fadbf64a17e62b9bf53a07f`  
+		Last Modified: Tue, 17 Sep 2024 01:59:20 GMT  
+		Size: 156.5 MB (156481619 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05f0dc8d622d4b420e561e2d291f36de2c0b4e4b62b85c661b4ec2575d054754`  
-		Last Modified: Fri, 06 Sep 2024 20:59:46 GMT  
-		Size: 80.7 MB (80698729 bytes)  
+	-	`sha256:1ecc48659d1444f3cd13a22a99bf6771154333ed736455a71f3f31c5f50367ee`  
+		Last Modified: Tue, 17 Sep 2024 01:59:19 GMT  
+		Size: 80.9 MB (80928426 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4886863837f28f51ab75ba7dd2a7daaec3abfe7bcd045eabbdf6389e4a9d6c63`  
-		Last Modified: Fri, 06 Sep 2024 20:59:42 GMT  
-		Size: 614.0 B  
+	-	`sha256:745c65159196c134fffb2d408b12cc1377841a94a210b58136173d213415a217`  
+		Last Modified: Tue, 17 Sep 2024 01:59:18 GMT  
+		Size: 613.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c380b8e570bbe0fc3216089c856b5408381a4b71c3b4bf7bb0e1606af22b7752`  
-		Last Modified: Fri, 06 Sep 2024 20:59:42 GMT  
-		Size: 397.0 B  
+	-	`sha256:5386efb98b6cc4d122739d99a3d45271f193b617b8e816911432cc39026a03c7`  
+		Last Modified: Tue, 17 Sep 2024 01:59:18 GMT  
+		Size: 396.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-22-tools-deps-1.12.0.1479-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:797492cfbbae1eca8bfda50ae9ead2291d5bdf436d3d8f8f95236d84d8db7e32
+$ docker pull clojure@sha256:68a5e1eeb62b42e5b4607557de206f60d90f80fff05b53dbe30ad49cbb9847a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.0 MB (7016273 bytes)**  
+-	Total Size: **7.0 MB (7023789 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:37e0e028c75b166a6abd5a9dd781513eb8328a2d658f1f294b7d63b4bf8e9540`
+-	Image ID: `sha256:45cb7c9cfdf7b908955ea00c2af8d697806033c192d83ae1e099f37654aafa10`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:24f4c34bfe17243d9008a595d3eb908b4740ee11c2441dad11ce791257b06045`  
-		Last Modified: Fri, 06 Sep 2024 20:59:43 GMT  
-		Size: 7.0 MB (7000149 bytes)  
+	-	`sha256:e147a7a84045e8df8961754832d0a8b5dccc68ecbde70968eabbe081b8068556`  
+		Last Modified: Tue, 17 Sep 2024 01:59:18 GMT  
+		Size: 7.0 MB (7007665 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:477edc1227563aa10f7f7d82339c9373c312a9e7e1fc75e67ec2cbf856a4ef34`  
-		Last Modified: Fri, 06 Sep 2024 20:59:42 GMT  
+	-	`sha256:815cb6a8454bec12dfcf76bf6fd3e04c3df0257f50e7fdefc9c548997c3f86d6`  
+		Last Modified: Tue, 17 Sep 2024 01:59:18 GMT  
 		Size: 16.1 KB (16124 bytes)  
 		MIME: application/vnd.in-toto+json
 
