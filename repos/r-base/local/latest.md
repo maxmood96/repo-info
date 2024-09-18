@@ -434,11 +434,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=8.9.1-2
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.9.1-2.dsc' curl_8.9.1-2.dsc 3279 SHA256:955e5786e00c488eff1df859a22bd451ae8cf3cd7b0b457985aed0e4db4ed157
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.9.1.orig.tar.gz' curl_8.9.1.orig.tar.gz 4200000 SHA256:291124a007ee5111997825940b3876b3048f7d31e73e9caa681b80fe48b2dcd5
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.9.1.orig.tar.gz.asc' curl_8.9.1.orig.tar.gz.asc 488 SHA256:0bff807d70e37880e89c539439d86e1004a7f8a011b06c713de9bd64afb550e5
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.9.1-2.debian.tar.xz' curl_8.9.1-2.debian.tar.xz 51912 SHA256:5271b8306f3cdca09d3f57f2aac9b6e06db818dde977a97b51a5f5619fa1a064
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.9.1-2.dsc' curl_8.9.1-2.dsc 3279 SHA256:955e5786e00c488eff1df859a22bd451ae8cf3cd7b0b457985aed0e4db4ed157
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.9.1.orig.tar.gz' curl_8.9.1.orig.tar.gz 4200000 SHA256:291124a007ee5111997825940b3876b3048f7d31e73e9caa681b80fe48b2dcd5
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.9.1.orig.tar.gz.asc' curl_8.9.1.orig.tar.gz.asc 488 SHA256:0bff807d70e37880e89c539439d86e1004a7f8a011b06c713de9bd64afb550e5
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.9.1-2.debian.tar.xz' curl_8.9.1-2.debian.tar.xz 51912 SHA256:5271b8306f3cdca09d3f57f2aac9b6e06db818dde977a97b51a5f5619fa1a064
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/curl/8.9.1-2/ (for browsing the source)
+- https://sources.debian.net/src/curl/8.9.1-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/8.9.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-7`
 
@@ -1284,9 +1290,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris init-system-helpers=1.66
-'http://http.debian.net/debian/pool/main/i/init-system-helpers/init-system-helpers_1.66.dsc' init-system-helpers_1.66.dsc 2234 SHA256:a1e2276879abfe63174797c94969bc8591b8a05f2bad6ae3f27379b472877d6d
-'http://http.debian.net/debian/pool/main/i/init-system-helpers/init-system-helpers_1.66.tar.xz' init-system-helpers_1.66.tar.xz 44976 SHA256:da058b5623a7d3f39aee1761b173478fdbbdfdf743fd66e876e56039c708ce53
+'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.66.dsc' init-system-helpers_1.66.dsc 2234 SHA256:a1e2276879abfe63174797c94969bc8591b8a05f2bad6ae3f27379b472877d6d
+'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.66.tar.xz' init-system-helpers_1.66.tar.xz 44976 SHA256:da058b5623a7d3f39aee1761b173478fdbbdfdf743fd66e876e56039c708ce53
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/init-system-helpers/1.66/ (for browsing the source)
+- https://sources.debian.net/src/init-system-helpers/1.66/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/init-system-helpers/1.66/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `isl=0.26-3`
 
@@ -2428,21 +2440,13 @@ Licenses: (parsed from: `/usr/share/doc/mawk/copyright`)
 - `GPL-2.0-only`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mawk=1.3.4.20240819-3
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20240819-3.dsc' mawk_1.3.4.20240819-3.dsc 2969 SHA256:09c504be1be16ce4b2bd7478e27a5c141018cc81dd08eb1fdd4cf94faab2906a
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20240819.orig.tar.gz' mawk_1.3.4.20240819.orig.tar.gz 421586 SHA256:6e1fde8ee7ad8a5c15382316863fd6b4c6d23fab781dd5ab0177ffa3ee9aae5c
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20240819.orig.tar.gz.asc' mawk_1.3.4.20240819.orig.tar.gz.asc 729 SHA256:01cae5d5bda8ad9b9bfed1d916058d548633d7a5e0286276849fb2bb50e88444
-'http://deb.debian.org/debian/pool/main/m/mawk/mawk_1.3.4.20240819-3.debian.tar.xz' mawk_1.3.4.20240819-3.debian.tar.xz 16700 SHA256:0fb24c74e66b624e01e1e57f878ec4ed1695bfa57e463231bd8507442a423015
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mawk/1.3.4.20240819-3/
 
-- https://sources.debian.net/src/mawk/1.3.4.20240819-3/ (for browsing the source)
-- https://sources.debian.net/src/mawk/1.3.4.20240819-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mawk/1.3.4.20240819-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mgcv=1.9-1-1`
 
@@ -2949,10 +2953,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris r-base=4.4.1-2
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.4.1-2.dsc' r-base_4.4.1-2.dsc 2906 SHA256:69ab725332158250c605d117db7696b1054709950c8488d3bd0bb5d30ca691e5
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.4.1.orig.tar.gz' r-base_4.4.1.orig.tar.gz 37353459 SHA256:b4cb675deaaeb7299d3b265d218cde43f192951ce5b89b7bb1a5148a36b2d94d
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.4.1-2.debian.tar.xz' r-base_4.4.1-2.debian.tar.xz 100068 SHA256:1e3f3f91f443aaabd5ebd81bc58e7815b16490ef3b0b46824636a115cca17faa
+'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.4.1-2.dsc' r-base_4.4.1-2.dsc 2906 SHA256:69ab725332158250c605d117db7696b1054709950c8488d3bd0bb5d30ca691e5
+'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.4.1.orig.tar.gz' r-base_4.4.1.orig.tar.gz 37353459 SHA256:b4cb675deaaeb7299d3b265d218cde43f192951ce5b89b7bb1a5148a36b2d94d
+'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.4.1-2.debian.tar.xz' r-base_4.4.1-2.debian.tar.xz 100068 SHA256:1e3f3f91f443aaabd5ebd81bc58e7815b16490ef3b0b46824636a115cca17faa
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/r-base/4.4.1-2/ (for browsing the source)
+- https://sources.debian.net/src/r-base/4.4.1-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/r-base/4.4.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-class=7.3-22-2`
 
@@ -3283,16 +3293,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=256.5-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.5-1.dsc' systemd_256.5-1.dsc 8234 SHA256:3259119ac619a304ddb2f531f16e7b0fcb10e556b611a7e808c8c4a2a07b7f01
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.5.orig.tar.gz' systemd_256.5.orig.tar.gz 15664466 SHA256:41bb91861ab9f2f2b6cadad558ea1f8764d701452b018852146d642a850c8a8b
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.5-1.debian.tar.xz' systemd_256.5-1.debian.tar.xz 171256 SHA256:f22882ab61b2d1ebdf76a2f0474aa01be743871d0b340a9893155c65d25f7bbc
+'http://http.debian.net/debian/pool/main/s/systemd/systemd_256.5-1.dsc' systemd_256.5-1.dsc 8234 SHA256:3259119ac619a304ddb2f531f16e7b0fcb10e556b611a7e808c8c4a2a07b7f01
+'http://http.debian.net/debian/pool/main/s/systemd/systemd_256.5.orig.tar.gz' systemd_256.5.orig.tar.gz 15664466 SHA256:41bb91861ab9f2f2b6cadad558ea1f8764d701452b018852146d642a850c8a8b
+'http://http.debian.net/debian/pool/main/s/systemd/systemd_256.5-1.debian.tar.xz' systemd_256.5-1.debian.tar.xz 171256 SHA256:f22882ab61b2d1ebdf76a2f0474aa01be743871d0b340a9893155c65d25f7bbc
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/systemd/256.5-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/256.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/256.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.10-1`
 
@@ -3310,20 +3314,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.10-1
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.10-1.dsc' sysvinit_3.10-1.dsc 2347 SHA256:d8e1cd5ea470a0e059425772a9f4ca0d37d2db5db9ce1e6d1bf77d67604fef21
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.10.orig.tar.gz' sysvinit_3.10.orig.tar.gz 514655 SHA256:9fbee91fbe496e207db7ab4cdfbe4f97f8795925343a76b4f3392e741b0e103b
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.10-1.debian.tar.xz' sysvinit_3.10-1.debian.tar.xz 121244 SHA256:b2b13c317bb07b80a3621213f820465d93b23140643fb64415656c01f4d41ba7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.10-1/
 
-- https://sources.debian.net/src/sysvinit/3.10-1/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.10-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.10-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-3`
 
@@ -3545,16 +3542,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris util-linux=2.40.2-7
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2-7.dsc' util-linux_2.40.2-7.dsc 4999 SHA256:0624bf5f4c411059ae55419cb6a65981f785b532f34966fe5c2acd476d9be770
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2.orig.tar.xz' util-linux_2.40.2.orig.tar.xz 8854820 SHA256:d78b37a66f5922d70edf3bdfb01a6b33d34ed3c3cafd6628203b2a2b67c8e8b3
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2-7.debian.tar.xz' util-linux_2.40.2-7.debian.tar.xz 109600 SHA256:b8488703f1ee65b730755767c30c6f81e76d6180533b91d20e0a4444d96a3741
+'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.40.2-7.dsc' util-linux_2.40.2-7.dsc 4999 SHA256:0624bf5f4c411059ae55419cb6a65981f785b532f34966fe5c2acd476d9be770
+'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.40.2.orig.tar.xz' util-linux_2.40.2.orig.tar.xz 8854820 SHA256:d78b37a66f5922d70edf3bdfb01a6b33d34ed3c3cafd6628203b2a2b67c8e8b3
+'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.40.2-7.debian.tar.xz' util-linux_2.40.2-7.debian.tar.xz 109600 SHA256:b8488703f1ee65b730755767c30c6f81e76d6180533b91d20e0a4444d96a3741
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/util-linux/2.40.2-7/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.40.2-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.40.2-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `vim=2:9.1.0496-1`
 
