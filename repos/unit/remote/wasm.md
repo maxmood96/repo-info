@@ -1,7 +1,7 @@
 ## `unit:wasm`
 
 ```console
-$ docker pull unit@sha256:d4f0363945948d7282fccd6da76637f1a17cbccf768b0865eae5b664cbb787fe
+$ docker pull unit@sha256:42785ea33ff752317c40695ded598dc4acfcd369e009ec5a71ce7a072177147c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,87 +14,87 @@ $ docker pull unit@sha256:d4f0363945948d7282fccd6da76637f1a17cbccf768b0865eae5b6
 ### `unit:wasm` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:66cee173be50c419cae661d03b18d3c9d0486f05084184873c9245343e0e58f2
+$ docker pull unit@sha256:f432e472e045828a912245cd400abfb6e6f27bf52dbafc740a691fad129d3a1e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **58.3 MB (58338887 bytes)**  
+-	Total Size: **56.8 MB (56767982 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:450e0c9eded1cd6dd07bb5e489d4c6eeaf2787485d5c79ecc310b9a14342b510`
+-	Image ID: `sha256:d03433acb57b7a27f3c7be804048d5f30ada280dd2ad4508e6f0df0d3a091e1a`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Tue, 26 Mar 2024 13:57:15 GMT
-ADD file:1b8ac8ec2b2cbdfc9682f076e7e579579d6df6235ed23b2e63f8eec671c52e92 in / 
-# Tue, 26 Mar 2024 13:57:15 GMT
+# Wed, 04 Sep 2024 22:30:47 GMT
+ADD file:d13afefcc2b0b02b598a3ac2598fe2187db41de1e17820e5b600a955b1429d59 in / 
+# Wed, 04 Sep 2024 22:30:47 GMT
 CMD ["bash"]
-# Tue, 26 Mar 2024 13:57:15 GMT
+# Tue, 17 Sep 2024 21:10:58 GMT
 LABEL org.opencontainers.image.title=Unit (wasm)
-# Tue, 26 Mar 2024 13:57:15 GMT
+# Tue, 17 Sep 2024 21:10:58 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 26 Mar 2024 13:57:15 GMT
+# Tue, 17 Sep 2024 21:10:58 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 26 Mar 2024 13:57:15 GMT
+# Tue, 17 Sep 2024 21:10:58 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 26 Mar 2024 13:57:15 GMT
+# Tue, 17 Sep 2024 21:10:58 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 26 Mar 2024 13:57:15 GMT
+# Tue, 17 Sep 2024 21:10:58 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 26 Mar 2024 13:57:15 GMT
-LABEL org.opencontainers.image.version=1.32.1
-# Tue, 26 Mar 2024 13:57:15 GMT
-RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.32.1-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && apt-get install --no-install-recommends --no-install-suggests -y libclang-dev     && export RUST_VERSION=1.76.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in        amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="0b2f6c8f85a3d02fde2efc0ced4657869d73fccfce59defb4e8d29233116e6db" ;;        arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="673e336c81c65e6b16dcdede33f4cc9ed0f08bde1dbe7a935f113605292dc800" ;;        *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;     esac     && url="https://static.rust-lang.org/rustup/archive/1.26.0/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && make -C pkg/contrib .wasmtime     && install -pm 755 pkg/contrib/wasmtime/target/release/libwasmtime.so /usr/lib/$(dpkg-architecture -q DEB_HOST_MULTIARCH)/     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure wasm --include-path=`pwd`/pkg/contrib/wasmtime/crates/c-api/include --lib-path=/usr/lib/$(dpkg-architecture -q DEB_HOST_MULTIARCH)/ && ./configure wasm-wasi-component     && make -j $NCPU wasm-install wasm-wasi-component-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure wasm --include-path=`pwd`/pkg/contrib/wasmtime/crates/c-api/include --lib-path=/usr/lib/$(dpkg-architecture -q DEB_HOST_MULTIARCH)/ && ./configure wasm-wasi-component     && make -j $NCPU wasm-install wasm-wasi-component-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
-# Tue, 26 Mar 2024 13:57:15 GMT
+# Tue, 17 Sep 2024 21:10:58 GMT
+LABEL org.opencontainers.image.version=1.33.0
+# Tue, 17 Sep 2024 21:10:58 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.33.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && apt-get install --no-install-recommends --no-install-suggests -y libclang-dev cmake     && export RUST_VERSION=1.80.1     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in        amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;        arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;        *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;     esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && make -C pkg/contrib .wasmtime     && install -pm 755 pkg/contrib/wasmtime/artifacts/lib/libwasmtime.so /usr/lib/$(dpkg-architecture -q DEB_HOST_MULTIARCH)/     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure wasm --include-path=`pwd`/pkg/contrib/wasmtime/artifacts/include --lib-path=/usr/lib/$(dpkg-architecture -q DEB_HOST_MULTIARCH)/ && ./configure wasm-wasi-component     && make -j $NCPU wasm-install wasm-wasi-component-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure wasm --include-path=`pwd`/pkg/contrib/wasmtime/artifacts/include --lib-path=/usr/lib/$(dpkg-architecture -q DEB_HOST_MULTIARCH)/ && ./configure wasm-wasi-component     && make -j $NCPU wasm-install wasm-wasi-component-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Tue, 17 Sep 2024 21:10:58 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 26 Mar 2024 13:57:15 GMT
+# Tue, 17 Sep 2024 21:10:58 GMT
 COPY welcome.* /usr/share/unit/welcome/ # buildkit
-# Tue, 26 Mar 2024 13:57:15 GMT
+# Tue, 17 Sep 2024 21:10:58 GMT
 STOPSIGNAL SIGTERM
-# Tue, 26 Mar 2024 13:57:15 GMT
+# Tue, 17 Sep 2024 21:10:58 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 26 Mar 2024 13:57:15 GMT
+# Tue, 17 Sep 2024 21:10:58 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 26 Mar 2024 13:57:15 GMT
+# Tue, 17 Sep 2024 21:10:58 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:6533c3eba3f3cd4c840877f9245b26929fc8c22a39f42c872aa314c32c6d654b`  
-		Last Modified: Wed, 04 Sep 2024 22:34:54 GMT  
-		Size: 31.4 MB (31428677 bytes)  
+	-	`sha256:a2318d6c47ec9cac5acc500c47c79602bcf953cec711a18bc898911a0984365b`  
+		Last Modified: Wed, 04 Sep 2024 22:34:17 GMT  
+		Size: 29.1 MB (29126484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8857165ccba1142249abe2e714e781e3c2cd1b27e500c0a1d777db6ecd34845`  
-		Last Modified: Wed, 04 Sep 2024 23:18:57 GMT  
-		Size: 26.9 MB (26907497 bytes)  
+	-	`sha256:df87e74321debbf79382d16d1b6e7bc26ffe772b12b1313e47687b4132c7c478`  
+		Last Modified: Wed, 18 Sep 2024 00:06:57 GMT  
+		Size: 27.6 MB (27638781 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37c3b26e63992d779872c4fbe44ee4b9efe7fc422ba5540502e389a1c95072a7`  
-		Last Modified: Wed, 04 Sep 2024 23:18:56 GMT  
+	-	`sha256:ab923c6ef1bd9d739b4293ead8ace7a7f922626c7af51223d319ad967887377f`  
+		Last Modified: Wed, 18 Sep 2024 00:06:56 GMT  
 		Size: 1.3 KB (1262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be993788546c5b971bdb079bd9ed18074d4a0ccdfce3f1cf8fcff0fef190d250`  
-		Last Modified: Wed, 04 Sep 2024 23:18:56 GMT  
-		Size: 1.5 KB (1451 bytes)  
+	-	`sha256:194c141f39148b17190689659f0a710a2970c46862f59cdfadd692576f244195`  
+		Last Modified: Wed, 18 Sep 2024 00:06:56 GMT  
+		Size: 1.5 KB (1455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:wasm` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:7abd4818e79840c537c57dc6e3b30dd0a5082db4c4322350a34ddf16b002ad32
+$ docker pull unit@sha256:a3e50c2ee5c8dbf8c8254a73f52ce986f459d48d3da7484c4dca68d970aeeb43
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.9 KB (24872 bytes)**  
+-	Total Size: **24.9 KB (24870 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:449d8a681fc7ee592d680d4d17b2e4855f8557e290a69fdb1f347e84f4914c69`
+-	Image ID: `sha256:93e4536be2782de4ad2fb6395e0605e9bd9649016397c14f219e2bad9bfda8c7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7f33f89da2ba1139e5a0f8cbf2f439977ea16e5855d5c725e5a568cac70f0645`  
-		Last Modified: Wed, 04 Sep 2024 23:18:56 GMT  
-		Size: 24.9 KB (24872 bytes)  
+	-	`sha256:012cacb31db5c04cba9c040f50800c0325b3fa01bbdfad9acbd7f8898833f529`  
+		Last Modified: Wed, 18 Sep 2024 00:06:56 GMT  
+		Size: 24.9 KB (24870 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `unit:wasm` - linux; arm64 variant v8
