@@ -155,10 +155,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apparmor=3.0.4-2ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.3build2.dsc' apparmor_3.0.4-2ubuntu2.3build2.dsc 3591 SHA512:d7898be06ec7ddff5d8abcaca42f28fc4f00ad37f5809a20ff8f29643ea9619097ed78ceda0255ce7191eafd231c6488b1af35d8dec405b00c5ada9ae4bad6d1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4.orig.tar.gz' apparmor_3.0.4.orig.tar.gz 7796852 SHA512:1edd800771f46fab9bc5274842e64482b7fd4a5ba4de9855d621baf1d08c8236bfa7752dd9ab3dee095f8e0798129241a9aebf68ed1c994ae5597086a4a1a8ca
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4.orig.tar.gz.asc' apparmor_3.0.4.orig.tar.gz.asc 870 SHA512:870d3037562ae003e642adcd244b74191e9108cebd18e6a925959e595b5a375e2dbfda686349e4cc980981cdd38239a099d3e32f1e824b4a9b477584c8d311a9
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.3build2.debian.tar.xz' apparmor_3.0.4-2ubuntu2.3build2.debian.tar.xz 120580 SHA512:fcc9fdcbb82edab1d398bf70b08ed19638ba390708e4ea9f0fed58c7b28e30a932227e3df6ec82656a268326ccd760b536b2eaa3bb681bddeea7b40ef4c1d756
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.3build2.dsc' apparmor_3.0.4-2ubuntu2.3build2.dsc 3591 SHA512:d7898be06ec7ddff5d8abcaca42f28fc4f00ad37f5809a20ff8f29643ea9619097ed78ceda0255ce7191eafd231c6488b1af35d8dec405b00c5ada9ae4bad6d1
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4.orig.tar.gz' apparmor_3.0.4.orig.tar.gz 7796852 SHA512:1edd800771f46fab9bc5274842e64482b7fd4a5ba4de9855d621baf1d08c8236bfa7752dd9ab3dee095f8e0798129241a9aebf68ed1c994ae5597086a4a1a8ca
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4.orig.tar.gz.asc' apparmor_3.0.4.orig.tar.gz.asc 870 SHA512:870d3037562ae003e642adcd244b74191e9108cebd18e6a925959e595b5a375e2dbfda686349e4cc980981cdd38239a099d3e32f1e824b4a9b477584c8d311a9
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_3.0.4-2ubuntu2.3build2.debian.tar.xz' apparmor_3.0.4-2ubuntu2.3build2.debian.tar.xz 120580 SHA512:fcc9fdcbb82edab1d398bf70b08ed19638ba390708e4ea9f0fed58c7b28e30a932227e3df6ec82656a268326ccd760b536b2eaa3bb681bddeea7b40ef4c1d756
 ```
 
 ### `dpkg` source package: `apt=2.4.12`
@@ -869,14 +869,9 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.4.7-1ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.3.dsc' expat_2.4.7-1ubuntu0.3.dsc 2137 SHA512:6d8ea5baa2a7fc6b586a320ef58b22739ced74006d23b335cd42ac63c4c845261f831446893633db1cc9ca966fea6bbf005d331370e7266b46b4ad377345ee80
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7.orig.tar.gz' expat_2.4.7.orig.tar.gz 8316374 SHA512:91bc9792c4ba1d0ad835f633d8cfa62130692f48308eea8932ec5e13a01542120561b0f255b4adc58b1adae6f83632cbabf428b5b5c0d2ac6de542478a951232
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.3.debian.tar.xz' expat_2.4.7-1ubuntu0.3.debian.tar.xz 21688 SHA512:8b511ecf7af0c6b3dba6b76cdb243ba0bc513716a597b8493ed979b71e11a8e155d74de460a1b983b23902eace82b1193a54fe8e69ac57d79663ddb72a48223f
-```
 
 ### `dpkg` source package: `ffmpeg=7:4.4.2-0ubuntu0.22.04.1`
 
