@@ -85,9 +85,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apparmor=2.13.3-7ubuntu5.3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.13.3-7ubuntu5.3build2.dsc' apparmor_2.13.3-7ubuntu5.3build2.dsc 3346 SHA512:8808fe23c874962ef5e08da63f7db8d3bbb389cc6dc72c2824d1d29fda6546b837b22c251f9dc6f8d3f3bcbfc2b32a2ceeb05a5d0002cf69a6c9c9ec027ff65f
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.13.3.orig.tar.gz' apparmor_2.13.3.orig.tar.gz 7384974 SHA512:137b2bf026ec655b662e9c264d7d48d878db474a3f1cc5a38bfd7df2f85b682bddb77b091ab5595178231a0a262c9ae9cdd61409461cd889bdee156906ef1141
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.13.3-7ubuntu5.3build2.debian.tar.xz' apparmor_2.13.3-7ubuntu5.3build2.debian.tar.xz 148476 SHA512:41417c789f1f77233aa8f493279f8e9d6487b75425e7aa6ca43a08b26fd678df7ab72cad66af3f631efc1d9df51cb9ad4a81ca2431e370d780eb4818933b3542
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.13.3-7ubuntu5.3build2.dsc' apparmor_2.13.3-7ubuntu5.3build2.dsc 3346 SHA512:8808fe23c874962ef5e08da63f7db8d3bbb389cc6dc72c2824d1d29fda6546b837b22c251f9dc6f8d3f3bcbfc2b32a2ceeb05a5d0002cf69a6c9c9ec027ff65f
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.13.3.orig.tar.gz' apparmor_2.13.3.orig.tar.gz 7384974 SHA512:137b2bf026ec655b662e9c264d7d48d878db474a3f1cc5a38bfd7df2f85b682bddb77b091ab5595178231a0a262c9ae9cdd61409461cd889bdee156906ef1141
+'http://security.ubuntu.com/ubuntu/pool/main/a/apparmor/apparmor_2.13.3-7ubuntu5.3build2.debian.tar.xz' apparmor_2.13.3-7ubuntu5.3build2.debian.tar.xz 148476 SHA512:41417c789f1f77233aa8f493279f8e9d6487b75425e7aa6ca43a08b26fd678df7ab72cad66af3f631efc1d9df51cb9ad4a81ca2431e370d780eb4818933b3542
 ```
 
 ### `dpkg` source package: `apt=2.0.10`
@@ -4869,14 +4869,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.23
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.23.dsc' systemd_245.4-4ubuntu3.23.dsc 5262 SHA512:8eeba23456b6b0dd983addabe6ecced9a6852df3c1f9512b9b16e0eb81099bc19cf3971bdb7602ed44418eac5bd5749fe33f1b1f780d6f34279bf266c120b80a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.23.debian.tar.xz' systemd_245.4-4ubuntu3.23.debian.tar.xz 292708 SHA512:ea75832b5e944ec86318dfd63de985e1c37e4bd62be0882f61257859c7eba9ee00d2ca81a0eaf03a09689c11f515989ae729cedd02cdc62d8b20284f82731d94
-```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
 

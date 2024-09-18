@@ -2535,14 +2535,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.8/copyright`, `/usr/share/doc
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.8=3.8.10-0ubuntu1~20.04.11
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.11.dsc' python3.8_3.8.10-0ubuntu1~20.04.11.dsc 3508 SHA512:6d0e9f7bffbf25b5758e32222224811b5b28d0aaac3b7cb334699aae0e541ee428938957f0b8fc5dc85d10de0405f3c703e359e59cf4d3f802ef1c5dd41512d6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10.orig.tar.xz' python3.8_3.8.10.orig.tar.xz 18433456 SHA512:0be69705483ff9692e12048a96180e586f9d84c8d53066629f7fb2389585eb75c0f3506bb8182936e322508f58b71f4d8c6dfebbab9049b31b49da11d3b98e80
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.11.debian.tar.xz' python3.8_3.8.10-0ubuntu1~20.04.11.debian.tar.xz 233680 SHA512:62ae40d67d38ed9d65d29fec5ef4c57c58e30d5506550189ea2cd9082232f733d19aaea3101507dc7bef68e4c11a35542dd7cdb2a4dfa2cdbac04cbe421b59a1
-```
 
 ### `dpkg` source package: `readline=8.0-4`
 
@@ -2701,14 +2696,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.23
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.23.dsc' systemd_245.4-4ubuntu3.23.dsc 5262 SHA512:8eeba23456b6b0dd983addabe6ecced9a6852df3c1f9512b9b16e0eb81099bc19cf3971bdb7602ed44418eac5bd5749fe33f1b1f780d6f34279bf266c120b80a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.23.debian.tar.xz' systemd_245.4-4ubuntu3.23.debian.tar.xz 292708 SHA512:ea75832b5e944ec86318dfd63de985e1c37e4bd62be0882f61257859c7eba9ee00d2ca81a0eaf03a09689c11f515989ae729cedd02cdc62d8b20284f82731d94
-```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
 
