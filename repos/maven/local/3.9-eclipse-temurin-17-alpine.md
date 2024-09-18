@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bd18ac1db06935bee6bd69ef5e537356974e95916a8007e943d0cafa4f225402`
+- Image ID: `sha256:3f29c3532b720b9a2bff20b6a4dabe40815fcd2c9f2bc8ce392439b989d27146`
 - Created: `2024-08-19T08:57:28Z`
 - Virtual Size: ~ 338.89 Mb  
   (total size of all layers on-disk)
@@ -301,16 +301,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.9.1-r1 description:
+curl-8.9.1-r2 description:
 URL retrival utility and library
 
-curl-8.9.1-r1 webpage:
+curl-8.9.1-r2 webpage:
 https://curl.se/
 
-curl-8.9.1-r1 installed size:
+curl-8.9.1-r2 installed size:
 248 KiB
 
-curl-8.9.1-r1 license:
+curl-8.9.1-r2 license:
 curl
 
 ```
@@ -471,16 +471,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.9.1-r1 description:
+libcurl-8.9.1-r2 description:
 The multiprotocol file transfer library
 
-libcurl-8.9.1-r1 webpage:
+libcurl-8.9.1-r2 webpage:
 https://curl.se/
 
-libcurl-8.9.1-r1 installed size:
+libcurl-8.9.1-r2 installed size:
 628 KiB
 
-libcurl-8.9.1-r1 license:
+libcurl-8.9.1-r2 license:
 curl
 
 ```
@@ -607,16 +607,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r0 description:
+libncursesw-6.4_p20240420-r1 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r0 webpage:
+libncursesw-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r0 installed size:
+libncursesw-6.4_p20240420-r1 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r0 license:
+libncursesw-6.4_p20240420-r1 license:
 X11
 
 ```
@@ -828,16 +828,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r0 description:
+ncurses-terminfo-base-6.4_p20240420-r1 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r0 webpage:
+ncurses-terminfo-base-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r0 installed size:
+ncurses-terminfo-base-6.4_p20240420-r1 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r0 license:
+ncurses-terminfo-base-6.4_p20240420-r1 license:
 X11
 
 ```

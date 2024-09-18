@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3a7e3c535e210edd629352e000ba9935e1df3e2e4a8da88e34b574142c92f2bc`
+- Image ID: `sha256:45abaf656034e3705f5d020c4ffd2bffdc54e6981320fd18f1d31481d76a03d1`
 - Created: `2024-08-19T08:57:28Z`
 - Virtual Size: ~ 591.00 Mb  
   (total size of all layers on-disk)
@@ -293,10 +293,28 @@ $ apt-get source -qq --print-uris coreutils=8.30-3ubuntu2
 Binary Packages:
 
 - `curl=7.68.0-1ubuntu2.23`
-- `libcurl3-gnutls:amd64=7.68.0-1ubuntu2.23`
 - `libcurl4:amd64=7.68.0-1ubuntu2.23`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-4-Clause`
+- `ISC`
+- `curl`
+- `other`
+- `public-domain`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `curl=7.68.0-1ubuntu2.24`
+
+Binary Packages:
+
+- `libcurl3-gnutls:amd64=7.68.0-1ubuntu2.24`
+
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -308,10 +326,10 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.23
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.23.dsc' curl_7.68.0-1ubuntu2.23.dsc 2737 SHA512:e7cf7346e61013e645f2f7fb1b43147481f34826a12bfb1cdc1492c949731defb12b28e71445cbe288a19e4105b226554d4adf8f41afc31067f694bb65c9d1c6
+$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.24
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.24.dsc' curl_7.68.0-1ubuntu2.24.dsc 2737 SHA512:ab420767f8de267830f3cb12008ac4182d080487ec4a291ae9918f3b836e97ff2df12e5d00d77e1039bb080496d05871fe9462414a6bc95864217a0da7cb9d84
 'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.23.debian.tar.xz' curl_7.68.0-1ubuntu2.23.debian.tar.xz 73088 SHA512:06a3da6eeffe263748bc739485245e97d3cb42fed85d807e08427b70e5235bf4dfd6a1ce66b37e784678237c45bedfcbfc68ad2217fa8df64dea3da33ee17f04
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.24.debian.tar.xz' curl_7.68.0-1ubuntu2.24.debian.tar.xz 74136 SHA512:aa10f5fd69b94ad79f47d6c7deb7b1290b561e57cd88b65cdd035868b56c1d71408fddf486bf52a132c00f4d12bc44ce4e9c4d97937f9263b57375b6060e825c
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
@@ -1902,14 +1920,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.23
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.23.dsc' systemd_245.4-4ubuntu3.23.dsc 5262 SHA512:8eeba23456b6b0dd983addabe6ecced9a6852df3c1f9512b9b16e0eb81099bc19cf3971bdb7602ed44418eac5bd5749fe33f1b1f780d6f34279bf266c120b80a
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.23.debian.tar.xz' systemd_245.4-4ubuntu3.23.debian.tar.xz 292708 SHA512:ea75832b5e944ec86318dfd63de985e1c37e4bd62be0882f61257859c7eba9ee00d2ca81a0eaf03a09689c11f515989ae729cedd02cdc62d8b20284f82731d94
-```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
 
