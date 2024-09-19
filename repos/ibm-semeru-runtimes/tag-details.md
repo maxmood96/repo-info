@@ -50,6 +50,18 @@
 -	[`ibm-semeru-runtimes:open-22.0.2.1_9-jre`](#ibm-semeru-runtimesopen-22021_9-jre)
 -	[`ibm-semeru-runtimes:open-22.0.2.1_9-jre-focal`](#ibm-semeru-runtimesopen-22021_9-jre-focal)
 -	[`ibm-semeru-runtimes:open-22.0.2.1_9-jre-jammy`](#ibm-semeru-runtimesopen-22021_9-jre-jammy)
+-	[`ibm-semeru-runtimes:open-23-jdk`](#ibm-semeru-runtimesopen-23-jdk)
+-	[`ibm-semeru-runtimes:open-23-jdk-focal`](#ibm-semeru-runtimesopen-23-jdk-focal)
+-	[`ibm-semeru-runtimes:open-23-jdk-jammy`](#ibm-semeru-runtimesopen-23-jdk-jammy)
+-	[`ibm-semeru-runtimes:open-23-jre`](#ibm-semeru-runtimesopen-23-jre)
+-	[`ibm-semeru-runtimes:open-23-jre-focal`](#ibm-semeru-runtimesopen-23-jre-focal)
+-	[`ibm-semeru-runtimes:open-23-jre-jammy`](#ibm-semeru-runtimesopen-23-jre-jammy)
+-	[`ibm-semeru-runtimes:open-23_37-jdk`](#ibm-semeru-runtimesopen-23_37-jdk)
+-	[`ibm-semeru-runtimes:open-23_37-jdk-focal`](#ibm-semeru-runtimesopen-23_37-jdk-focal)
+-	[`ibm-semeru-runtimes:open-23_37-jdk-jammy`](#ibm-semeru-runtimesopen-23_37-jdk-jammy)
+-	[`ibm-semeru-runtimes:open-23_37-jre`](#ibm-semeru-runtimesopen-23_37-jre)
+-	[`ibm-semeru-runtimes:open-23_37-jre-focal`](#ibm-semeru-runtimesopen-23_37-jre-focal)
+-	[`ibm-semeru-runtimes:open-23_37-jre-jammy`](#ibm-semeru-runtimesopen-23_37-jre-jammy)
 -	[`ibm-semeru-runtimes:open-8-jdk`](#ibm-semeru-runtimesopen-8-jdk)
 -	[`ibm-semeru-runtimes:open-8-jdk-focal`](#ibm-semeru-runtimesopen-8-jdk-focal)
 -	[`ibm-semeru-runtimes:open-8-jdk-jammy`](#ibm-semeru-runtimesopen-8-jdk-jammy)
@@ -16862,6 +16874,54 @@ $ docker pull ibm-semeru-runtimes@sha256:a2adef7b4b2db008100b6d203250adc4cf53373
 		Last Modified: Tue, 17 Sep 2024 02:10:41 GMT  
 		Size: 24.4 KB (24406 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `ibm-semeru-runtimes:open-23-jdk`
+
+**does not exist** (yet?)
+
+## `ibm-semeru-runtimes:open-23-jdk-focal`
+
+**does not exist** (yet?)
+
+## `ibm-semeru-runtimes:open-23-jdk-jammy`
+
+**does not exist** (yet?)
+
+## `ibm-semeru-runtimes:open-23-jre`
+
+**does not exist** (yet?)
+
+## `ibm-semeru-runtimes:open-23-jre-focal`
+
+**does not exist** (yet?)
+
+## `ibm-semeru-runtimes:open-23-jre-jammy`
+
+**does not exist** (yet?)
+
+## `ibm-semeru-runtimes:open-23_37-jdk`
+
+**does not exist** (yet?)
+
+## `ibm-semeru-runtimes:open-23_37-jdk-focal`
+
+**does not exist** (yet?)
+
+## `ibm-semeru-runtimes:open-23_37-jdk-jammy`
+
+**does not exist** (yet?)
+
+## `ibm-semeru-runtimes:open-23_37-jre`
+
+**does not exist** (yet?)
+
+## `ibm-semeru-runtimes:open-23_37-jre-focal`
+
+**does not exist** (yet?)
+
+## `ibm-semeru-runtimes:open-23_37-jre-jammy`
+
+**does not exist** (yet?)
 
 ## `ibm-semeru-runtimes:open-8-jdk`
 
