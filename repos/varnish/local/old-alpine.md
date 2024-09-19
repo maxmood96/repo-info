@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9a47650bbc5884b54c5ec9b392fadc1e8c5401c97543db54c7cb1428e1356771`
-- Created: `2024-09-07T02:49:38.617517516Z`
-- Virtual Size: ~ 179.48 Mb  
+- Image ID: `sha256:d9f0db10e5790bfe29bd8386463af42eb77b410cb236646e6cd7360a0a9cd1d1`
+- Created: `2024-09-07T02:48:02.167819432Z`
+- Virtual Size: ~ 179.63 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-varnish-entrypoint"]`
@@ -579,16 +579,16 @@ GPL-2.0-only
 ### `apk` package: `varnish`
 
 ```console
-varnish-7.4.3-r1 description:
+varnish-7.5.0-r1 description:
 High-performance HTTP accelerator
 
-varnish-7.4.3-r1 webpage:
+varnish-7.5.0-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-7.4.3-r1 installed size:
-2424 KiB
+varnish-7.5.0-r1 installed size:
+2444 KiB
 
-varnish-7.4.3-r1 license:
+varnish-7.5.0-r1 license:
 BSD
 
 ```
@@ -596,16 +596,16 @@ BSD
 ### `apk` package: `varnish-dbg`
 
 ```console
-varnish-dbg-7.4.3-r1 description:
+varnish-dbg-7.5.0-r1 description:
 High-performance HTTP accelerator (debug symbols)
 
-varnish-dbg-7.4.3-r1 webpage:
+varnish-dbg-7.5.0-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-dbg-7.4.3-r1 installed size:
-5424 KiB
+varnish-dbg-7.5.0-r1 installed size:
+5480 KiB
 
-varnish-dbg-7.4.3-r1 license:
+varnish-dbg-7.5.0-r1 license:
 BSD
 
 ```
@@ -613,16 +613,16 @@ BSD
 ### `apk` package: `varnish-dev`
 
 ```console
-varnish-dev-7.4.3-r1 description:
+varnish-dev-7.5.0-r1 description:
 High-performance HTTP accelerator (development files)
 
-varnish-dev-7.4.3-r1 webpage:
+varnish-dev-7.5.0-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-dev-7.4.3-r1 installed size:
-696 KiB
+varnish-dev-7.5.0-r1 installed size:
+700 KiB
 
-varnish-dev-7.4.3-r1 license:
+varnish-dev-7.5.0-r1 license:
 BSD
 
 ```
@@ -630,16 +630,16 @@ BSD
 ### `apk` package: `varnish-doc`
 
 ```console
-varnish-doc-7.4.3-r1 description:
+varnish-doc-7.5.0-r1 description:
 High-performance HTTP accelerator (documentation)
 
-varnish-doc-7.4.3-r1 webpage:
+varnish-doc-7.5.0-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-doc-7.4.3-r1 installed size:
+varnish-doc-7.5.0-r1 installed size:
 240 KiB
 
-varnish-doc-7.4.3-r1 license:
+varnish-doc-7.5.0-r1 license:
 BSD
 
 ```
@@ -647,16 +647,16 @@ BSD
 ### `apk` package: `varnish-libs`
 
 ```console
-varnish-libs-7.4.3-r1 description:
+varnish-libs-7.5.0-r1 description:
 High-performance HTTP accelerator (libraries)
 
-varnish-libs-7.4.3-r1 webpage:
+varnish-libs-7.5.0-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-libs-7.4.3-r1 installed size:
-200 KiB
+varnish-libs-7.5.0-r1 installed size:
+204 KiB
 
-varnish-libs-7.4.3-r1 license:
+varnish-libs-7.5.0-r1 license:
 BSD
 
 ```
