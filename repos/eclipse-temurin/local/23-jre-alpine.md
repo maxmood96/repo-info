@@ -1,21 +1,20 @@
-# `eclipse-temurin:22.0.2_9-jdk-alpine`
+# `eclipse-temurin:23_37-jre-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e96b1ba8e304166b3c4560394217fa6c5de73d7f28da596b5c4b2e6a17d3212d`
-- Created: `2024-08-22T07:58:33Z`
-- Virtual Size: ~ 342.48 Mb  
+- Image ID: `sha256:e3166b202445b723d784f8f63cf6e70ee75085eb7f9812dd9a8e9d44e4698971`
+- Created: `2024-09-18T19:12:13Z`
+- Virtual Size: ~ 190.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
-- Command: `["jshell"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-22.0.2+9`
+  - `JAVA_VERSION=jdk-23+37`
 
 ## `apk` (`.apk`-based packages)
 
@@ -84,23 +83,6 @@ apk-tools-2.14.4-r0 installed size:
 
 apk-tools-2.14.4-r0 license:
 GPL-2.0-only
-
-```
-
-### `apk` package: `binutils`
-
-```console
-binutils-2.42-r0 description:
-Tools necessary to build programs
-
-binutils-2.42-r0 webpage:
-https://www.gnu.org/software/binutils/
-
-binutils-2.42-r0 installed size:
-9612 KiB
-
-binutils-2.42-r0 license:
-GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
 
 ```
 
@@ -325,23 +307,6 @@ FTL OR GPL-2.0-or-later
 
 ```
 
-### `apk` package: `jansson`
-
-```console
-jansson-2.14-r4 description:
-lightweight JSON library
-
-jansson-2.14-r4 webpage:
-http://www.digip.org/jansson/
-
-jansson-2.14-r4 installed size:
-64 KiB
-
-jansson-2.14-r4 license:
-MIT
-
-```
-
 ### `apk` package: `libacl`
 
 ```console
@@ -461,23 +426,6 @@ MIT
 
 ```
 
-### `apk` package: `libgcc`
-
-```console
-libgcc-13.2.1_git20240309-r0 description:
-GNU C compiler runtime libraries
-
-libgcc-13.2.1_git20240309-r0 webpage:
-https://gcc.gnu.org
-
-libgcc-13.2.1_git20240309-r0 installed size:
-152 KiB
-
-libgcc-13.2.1_git20240309-r0 license:
-GPL-2.0-or-later AND LGPL-2.1-or-later
-
-```
-
 ### `apk` package: `libintl`
 
 ```console
@@ -526,23 +474,6 @@ libssl3-3.3.2-r0 installed size:
 
 libssl3-3.3.2-r0 license:
 Apache-2.0
-
-```
-
-### `apk` package: `libstdc++`
-
-```console
-libstdc++-13.2.1_git20240309-r0 description:
-GNU C++ standard runtime library
-
-libstdc++-13.2.1_git20240309-r0 webpage:
-https://gcc.gnu.org
-
-libstdc++-13.2.1_git20240309-r0 installed size:
-2652 KiB
-
-libstdc++-13.2.1_git20240309-r0 license:
-GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
@@ -798,22 +729,5 @@ zlib-1.3.1-r1 installed size:
 
 zlib-1.3.1-r1 license:
 Zlib
-
-```
-
-### `apk` package: `zstd-libs`
-
-```console
-zstd-libs-1.5.6-r0 description:
-Zstandard - Fast real-time compression algorithm (libraries)
-
-zstd-libs-1.5.6-r0 webpage:
-https://www.zstd.net/
-
-zstd-libs-1.5.6-r0 installed size:
-716 KiB
-
-zstd-libs-1.5.6-r0 license:
-BSD-3-Clause OR GPL-2.0-or-later
 
 ```
