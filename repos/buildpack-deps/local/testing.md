@@ -2354,20 +2354,13 @@ Licenses: (parsed from: `/usr/share/doc/libcbor0.10/copyright`)
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcbor=0.10.2-1.1
-'http://deb.debian.org/debian/pool/main/libc/libcbor/libcbor_0.10.2-1.1.dsc' libcbor_0.10.2-1.1.dsc 1761 SHA256:02961a5d969749a46e3d241478801b762b6e5472c7968ee848dd29dbfd87a126
-'http://deb.debian.org/debian/pool/main/libc/libcbor/libcbor_0.10.2.orig.tar.gz' libcbor_0.10.2.orig.tar.gz 289450 SHA256:e75f712215d7b7e5c89ef322a09b701f7159f028b8b48978865725f00f79875b
-'http://deb.debian.org/debian/pool/main/libc/libcbor/libcbor_0.10.2-1.1.debian.tar.xz' libcbor_0.10.2-1.1.debian.tar.xz 4304 SHA256:a666c4c1ef4e948c45d0b910c40ae898b29c259569ee6579f85295172b533374
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libcbor/0.10.2-1.1/
 
-- https://sources.debian.net/src/libcbor/0.10.2-1.1/ (for browsing the source)
-- https://sources.debian.net/src/libcbor/0.10.2-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcbor/0.10.2-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libdatrie=0.2.13-3`
 
@@ -3105,20 +3098,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `Unlicense,`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.58.0+dfsg-1
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.58.0%2bdfsg-1.dsc' librsvg_2.58.0+dfsg-1.dsc 3068 SHA256:42072c44c91dcea364dc18fa0c51d8b95caa05802e308816b5a68cf2729918b9
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.58.0%2bdfsg.orig.tar.xz' librsvg_2.58.0+dfsg.orig.tar.xz 5736316 SHA256:5e59425031069e9310207664e8fd75004d1dc7ce09f1750f7978aa8e87ab7e49
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.58.0%2bdfsg-1.debian.tar.xz' librsvg_2.58.0+dfsg-1.debian.tar.xz 29507800 SHA256:a472c7c840ac61dabd27a1aff5ac17fb874f0b855032bc0b1c6ec0c1d58834b6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/librsvg/2.58.0+dfsg-1/
 
-- https://sources.debian.net/src/librsvg/2.58.0+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/librsvg/2.58.0+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/librsvg/2.58.0+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.5.5-1`
 
