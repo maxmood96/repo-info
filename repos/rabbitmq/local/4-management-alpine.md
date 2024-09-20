@@ -1,9 +1,9 @@
-# `rabbitmq:4.0.0-rc.1-management-alpine`
+# `rabbitmq:4.0.1-management-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9a812ccb1ed5626911ad448cbd82253b038171d6d3dc4570175eb1c658e2ff48`
-- Created: `2024-07-16T21:59:56Z`
+- Image ID: `sha256:1353c3accdc961304a28d0f809189eee3d3b070b9092ae52434390dd610652d5`
+- Created: `2024-09-18T16:57:52Z`
 - Virtual Size: ~ 179.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,7 +14,7 @@
   - `ERLANG_INSTALL_PATH_PREFIX=/opt/erlang`
   - `OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
-  - `RABBITMQ_VERSION=4.0.0-rc.1`
+  - `RABBITMQ_VERSION=4.0.1`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `HOME=/var/lib/rabbitmq`
@@ -282,16 +282,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r0 description:
+libncursesw-6.4_p20240420-r1 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r0 webpage:
+libncursesw-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r0 installed size:
+libncursesw-6.4_p20240420-r1 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r0 license:
+libncursesw-6.4_p20240420-r1 license:
 X11
 
 ```
@@ -299,16 +299,16 @@ X11
 ### `apk` package: `libpanelw`
 
 ```console
-libpanelw-6.4_p20240420-r0 description:
+libpanelw-6.4_p20240420-r1 description:
 Console display library (libpanelw)
 
-libpanelw-6.4_p20240420-r0 webpage:
+libpanelw-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-libpanelw-6.4_p20240420-r0 installed size:
+libpanelw-6.4_p20240420-r1 installed size:
 32 KiB
 
-libpanelw-6.4_p20240420-r0 license:
+libpanelw-6.4_p20240420-r1 license:
 X11
 
 ```
@@ -418,16 +418,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r0 description:
+ncurses-terminfo-base-6.4_p20240420-r1 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r0 webpage:
+ncurses-terminfo-base-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r0 installed size:
+ncurses-terminfo-base-6.4_p20240420-r1 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r0 license:
+ncurses-terminfo-base-6.4_p20240420-r1 license:
 X11
 
 ```
