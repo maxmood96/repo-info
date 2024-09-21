@@ -1,18 +1,20 @@
-# `nextcloud:28.0.9-fpm`
+# `nextcloud:30.0.0-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7657683d9445ab08e8e70421a83ded145ae81792ae0aaadeda706f9b658380b7`
-- Created: `2024-09-05T04:58:59.994271838Z`
-- Virtual Size: ~ 1.23 Gb  
+- Image ID: `sha256:2706aa40a539016d1303a36874a4194f30d740ccb781b22ce76fea64d076f2ec`
+- Created: `2024-09-18T22:28:08.784004785Z`
+- Virtual Size: ~ 1.24 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
-- Command: `["php-fpm"]`
+- Command: `["apache2-foreground"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c`
   - `PHP_INI_DIR=/usr/local/etc/php`
+  - `APACHE_CONFDIR=/etc/apache2`
+  - `APACHE_ENVVARS=/etc/apache2/envvars`
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
@@ -23,7 +25,8 @@
   - `PHP_SHA256=81c5ae6ba44e262a076349ee54a2e468638a4571085d80bff37f6fd308e1d8d5`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
-  - `NEXTCLOUD_VERSION=28.0.9`
+  - `APACHE_BODY_LIMIT=1073741824`
+  - `NEXTCLOUD_VERSION=30.0.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -110,6 +113,103 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/aom/3.6.0-1+deb12u1/ (for browsing the source)
 - https://sources.debian.net/src/aom/3.6.0-1+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/aom/3.6.0-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `apache2=2.4.62-1~deb12u1`
+
+Binary Packages:
+
+- `apache2=2.4.62-1~deb12u1`
+- `apache2-bin=2.4.62-1~deb12u1`
+- `apache2-data=2.4.62-1~deb12u1`
+- `apache2-utils=2.4.62-1~deb12u1`
+
+Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apache2-bin/copyright`, `/usr/share/doc/apache2-data/copyright`, `/usr/share/doc/apache2-utils/copyright`)
+
+- `Apache-2.0`
+- `BSD-2-clause-Darwin`
+- `BSD-3-clause-Cambridge`
+- `BSD-3-clause-Smrgrav`
+- `Cisco`
+- `Custom`
+- `Expat`
+- `GPL-2`
+- `GPL-2+`
+- `GPL-3`
+- `GPL-3+`
+- `Haines`
+- `MD5`
+- `PCRE`
+- `Zeus`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris apache2=2.4.62-1~deb12u1
+'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.62-1%7edeb12u1.dsc' apache2_2.4.62-1~deb12u1.dsc 3520 SHA256:332fe845bc551e78823db5a79d2e0666f3c291dfdc873f8fef2b6277493ddcc0
+'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.62.orig.tar.gz' apache2_2.4.62.orig.tar.gz 9872432 SHA256:3e2404d762a2da03560d7ada379ba1599d32f04a0d70ad6ff86f44325f2f062d
+'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.62.orig.tar.gz.asc' apache2_2.4.62.orig.tar.gz.asc 833 SHA256:7765403a937dacb562a0eb15ed11ba85f703d10c6bb8b5630591d18876975963
+'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.62-1%7edeb12u1.debian.tar.xz' apache2_2.4.62-1~deb12u1.debian.tar.xz 820048 SHA256:551533d162a8c9230e06a5dc509c2aa6723cb5ee41a79bf45bf5a4cf77c3e241
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/apache2/2.4.62-1~deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/apache2/2.4.62-1~deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apache2/2.4.62-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `apr-util=1.6.3-1`
+
+Binary Packages:
+
+- `libaprutil1:amd64=1.6.3-1`
+- `libaprutil1-dbd-sqlite3:amd64=1.6.3-1`
+- `libaprutil1-ldap:amd64=1.6.3-1`
+
+Licenses: (parsed from: `/usr/share/doc/libaprutil1/copyright`, `/usr/share/doc/libaprutil1-dbd-sqlite3/copyright`, `/usr/share/doc/libaprutil1-ldap/copyright`)
+
+- `Apache-2.0`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris apr-util=1.6.3-1
+'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.3-1.dsc' apr-util_1.6.3-1.dsc 2760 SHA256:e43ecafbe39a8d47fbe5faee705295435ac753e6b40c9b4c8d483a769ad8253e
+'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.3.orig.tar.bz2' apr-util_1.6.3.orig.tar.bz2 432692 SHA256:a41076e3710746326c3945042994ad9a4fcac0ce0277dd8fea076fec3c9772b5
+'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.3.orig.tar.bz2.asc' apr-util_1.6.3.orig.tar.bz2.asc 833 SHA256:5fd08491a2cb35fdbf9fa93d753cfd25e59fe58a75a3f3ed62582ebf2a5b3a51
+'http://deb.debian.org/debian/pool/main/a/apr-util/apr-util_1.6.3-1.debian.tar.xz' apr-util_1.6.3-1.debian.tar.xz 340808 SHA256:51400024f722f3427a720f485bd20874d846f38320e7fe52a290b8c9c7b201f5
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/apr-util/1.6.3-1/ (for browsing the source)
+- https://sources.debian.net/src/apr-util/1.6.3-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apr-util/1.6.3-1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `apr=1.7.2-3`
+
+Binary Packages:
+
+- `libapr1:amd64=1.7.2-3`
+
+Licenses: (parsed from: `/usr/share/doc/libapr1/copyright`)
+
+- `Apache-2.0`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris apr=1.7.2-3
+'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2-3.dsc' apr_1.7.2-3.dsc 2262 SHA256:8602db2a98e9e1bf7c8d1d0113f06a36ceb206ffd98580e38169a4c32ae05791
+'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2.orig.tar.bz2' apr_1.7.2.orig.tar.bz2 890218 SHA256:75e77cc86776c030c0a5c408dfbd0bf2a0b75eed5351e52d5439fa1e5509a43e
+'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2.orig.tar.bz2.asc' apr_1.7.2.orig.tar.bz2.asc 833 SHA256:3e45e804041cfd112d3710db11424e861a6f96e5b8908fcb73bc558f7d480f37
+'http://deb.debian.org/debian/pool/main/a/apr/apr_1.7.2-3.debian.tar.xz' apr_1.7.2-3.debian.tar.xz 54404 SHA256:5d7671b61847982c96666fcc271820ed88fe31e9092e0d01f3bfb19e20905ec9
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/apr/1.7.2-3/ (for browsing the source)
+- https://sources.debian.net/src/apr/1.7.2-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apr/1.7.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apt=2.6.1`
 
@@ -3276,6 +3376,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/linux/6.1.106-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/linux/6.1.106-3/ (for access to the source package after it no longer exists in the archive)
 
+### `dpkg` source package: `lua5.3=5.3.6-2`
+
+Binary Packages:
+
+- `liblua5.3-0:amd64=5.3.6-2`
+
+Licenses: (parsed from: `/usr/share/doc/liblua5.3-0/copyright`)
+
+- `Expat`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris lua5.3=5.3.6-2
+'http://deb.debian.org/debian/pool/main/l/lua5.3/lua5.3_5.3.6-2.dsc' lua5.3_5.3.6-2.dsc 2080 SHA256:2241dc732aa15a4d09c3c87aaf154eb14d873b8f6eb824faf8313a492a4e14b6
+'http://deb.debian.org/debian/pool/main/l/lua5.3/lua5.3_5.3.6.orig.tar.gz' lua5.3_5.3.6.orig.tar.gz 303770 SHA256:fc5fd69bb8736323f026672b1b7235da613d7177e72558893a0bdcd320466d60
+'http://deb.debian.org/debian/pool/main/l/lua5.3/lua5.3_5.3.6-2.debian.tar.xz' lua5.3_5.3.6-2.debian.tar.xz 7628 SHA256:0808119db67b1c81d0cf71f43df92623e09891439d9f454cb7183db89f63b721
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/lua5.3/5.3.6-2/ (for browsing the source)
+- https://sources.debian.net/src/lua5.3/5.3.6-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/lua5.3/5.3.6-2/ (for access to the source package after it no longer exists in the archive)
+
 ### `dpkg` source package: `lz4=1.9.4-1`
 
 Binary Packages:
@@ -4068,6 +4193,37 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/postgresql-15/15.8-0+deb12u1/ (for browsing the source)
 - https://sources.debian.net/src/postgresql-15/15.8-0+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/postgresql-15/15.8-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `procps=2:4.0.2-3`
+
+Binary Packages:
+
+- `libproc2-0:amd64=2:4.0.2-3`
+- `procps=2:4.0.2-3`
+
+Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/procps/copyright`)
+
+- `GPL-2`
+- `GPL-2.0+`
+- `LGPL-2`
+- `LGPL-2.0+`
+- `LGPL-2.1`
+- `LGPL-2.1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris procps=2:4.0.2-3
+'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.2-3.dsc' procps_4.0.2-3.dsc 2127 SHA256:927de59c0fb3b3f1ccfd685ebd578fdd9ca524135f15810f766be2f6be5a7e83
+'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.2.orig.tar.xz' procps_4.0.2.orig.tar.xz 1279196 SHA256:ee3fcd2ea6ff94aa43a81ba5cc7912b7c9615acd2911c7a3d3ea081287fdf47a
+'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.2-3.debian.tar.xz' procps_4.0.2-3.debian.tar.xz 28540 SHA256:64d3bd71b6a65f8888c5aa0da0e39b48498787c34eb95babd6ef46c5c5a3a910
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/procps/2:4.0.2-3/ (for browsing the source)
+- https://sources.debian.net/src/procps/2:4.0.2-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/procps/2:4.0.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.11.2-1`
 
