@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:90254b936d8cd69823624bf6b0811aa0b7e89a00cf9669e03b8d861a30aec54b`
-- Created: `2024-09-12T07:55:18Z`
+- Image ID: `sha256:8491e69c93a2378e403cf2197f887205ccdbc22218f6714afa49f88700b2b45a`
+- Created: `2024-09-19T17:39:31Z`
 - Virtual Size: ~ 286.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -281,12 +281,12 @@ $ apt-get source -qq --print-uris coreutils=8.30-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.30-3ubuntu2.debian.tar.xz' coreutils_8.30-3ubuntu2.debian.tar.xz 39636 SHA256:98204ef9d94e5c567880cd0245fdb7940eaf7592d6c6830c300ad117628b351f
 ```
 
-### `dpkg` source package: `curl=7.68.0-1ubuntu2.23`
+### `dpkg` source package: `curl=7.68.0-1ubuntu2.24`
 
 Binary Packages:
 
-- `curl=7.68.0-1ubuntu2.23`
-- `libcurl4:amd64=7.68.0-1ubuntu2.23`
+- `curl=7.68.0-1ubuntu2.24`
+- `libcurl4:amd64=7.68.0-1ubuntu2.24`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -297,9 +297,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.24
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.24.dsc' curl_7.68.0-1ubuntu2.24.dsc 2737 SHA512:ab420767f8de267830f3cb12008ac4182d080487ec4a291ae9918f3b836e97ff2df12e5d00d77e1039bb080496d05871fe9462414a6bc95864217a0da7cb9d84
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.24.debian.tar.xz' curl_7.68.0-1ubuntu2.24.debian.tar.xz 74136 SHA512:aa10f5fd69b94ad79f47d6c7deb7b1290b561e57cd88b65cdd035868b56c1d71408fddf486bf52a132c00f4d12bc44ce4e9c4d97937f9263b57375b6060e825c
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
 
