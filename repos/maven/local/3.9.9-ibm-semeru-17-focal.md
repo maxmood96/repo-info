@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:45abaf656034e3705f5d020c4ffd2bffdc54e6981320fd18f1d31481d76a03d1`
+- Image ID: `sha256:e7bec904fd1f38432635f86218f5ac4cf23f972af406eea3a0f9d4338258d7fa`
 - Created: `2024-08-19T08:57:28Z`
 - Virtual Size: ~ 591.00 Mb  
   (total size of all layers on-disk)
@@ -288,33 +288,15 @@ $ apt-get source -qq --print-uris coreutils=8.30-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.30-3ubuntu2.debian.tar.xz' coreutils_8.30-3ubuntu2.debian.tar.xz 39636 SHA256:98204ef9d94e5c567880cd0245fdb7940eaf7592d6c6830c300ad117628b351f
 ```
 
-### `dpkg` source package: `curl=7.68.0-1ubuntu2.23`
-
-Binary Packages:
-
-- `curl=7.68.0-1ubuntu2.23`
-- `libcurl4:amd64=7.68.0-1ubuntu2.23`
-
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
-
-- `BSD-3-Clause`
-- `BSD-4-Clause`
-- `ISC`
-- `curl`
-- `other`
-- `public-domain`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
-
 ### `dpkg` source package: `curl=7.68.0-1ubuntu2.24`
 
 Binary Packages:
 
+- `curl=7.68.0-1ubuntu2.24`
 - `libcurl3-gnutls:amd64=7.68.0-1ubuntu2.24`
+- `libcurl4:amd64=7.68.0-1ubuntu2.24`
 
-Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
