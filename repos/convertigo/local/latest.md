@@ -1,10 +1,10 @@
-# `convertigo:8.3.0`
+# `convertigo:8.3.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c8a7a0a827e33e77329eb85cae7120c97cfc50f1adb28fc97000a171421b9efc`
-- Created: `2024-06-06T08:12:00Z`
-- Virtual Size: ~ 617.65 Mb  
+- Image ID: `sha256:c3c0975685bd474fff13c91563265ad19ebee349b1f9f6d57d8c10a6b3dc02b2`
+- Created: `2024-09-19T16:49:48Z`
+- Virtual Size: ~ 620.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -21,11 +21,11 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.94`
-  - `TOMCAT_SHA512=14d941808565bac5913b94d3ad24e1d783ab1dfb29b7aee32b9ce1b5c7629a3a836b944b8ee7990d1719e75cf8cc928efdf682cdd4b908eaa77c69cd37e9f436`
+  - `TOMCAT_VERSION=9.0.95`
+  - `TOMCAT_SHA512=b18103153169c7bf98da055f8ba0ac3e141d121c78869881d3be480e90fcbc3a178a8e71fa70a11aee7f2584727df72be15d30331faec65f4e57c7e67c85c1cf`
   - `SWT_GTK3=0`
-  - `CONVERTIGO_VERSION=8.3.0`
-  - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.3.0/convertigo-8.3.0.war`
+  - `CONVERTIGO_VERSION=8.3.1`
+  - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.3.1/convertigo-8.3.1.war`
   - `CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
