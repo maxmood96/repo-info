@@ -1,16 +1,16 @@
-# `sapmachine:22-jre-headless-ubuntu-focal`
+# `sapmachine:23-jre-headless-ubuntu-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5ee284f87e9e5a92e8e4875c2a60be81e88b15b330d67cb24ab0956e909b33ba`
-- Created: `2024-07-18T15:16:23Z`
-- Virtual Size: ~ 244.25 Mb  
+- Image ID: `sha256:3cd092f68e9ec561b2a6e8a0039e2cb05783d9f255159de055cec58fd431a601`
+- Created: `2024-09-19T13:42:45Z`
+- Virtual Size: ~ 245.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/lib/jvm/sapmachine-22`
+  - `JAVA_HOME=/usr/lib/jvm/sapmachine-23`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=20.04`
@@ -399,19 +399,24 @@ $ apt-get source -qq --print-uris e2fsprogs=1.45.5-2ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5-2ubuntu1.1.debian.tar.xz' e2fsprogs_1.45.5-2ubuntu1.1.debian.tar.xz 82324 SHA512:239e485a95be88f9021d02504ef61972df631febf3e66d4ec2f8b759fe14592fc0c661d815b8b7dc3f0c69f5f15823e97aecbb928459683139063ee9d10ea61d
 ```
 
-### `dpkg` source package: `expat=2.2.9-1ubuntu0.6`
+### `dpkg` source package: `expat=2.2.9-1ubuntu0.7`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.2.9-1ubuntu0.6`
+- `libexpat1:amd64=2.2.9-1ubuntu0.7`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris expat=2.2.9-1ubuntu0.7
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1ubuntu0.7.dsc' expat_2.2.9-1ubuntu0.7.dsc 1930 SHA512:ec51e762e3414d30e4b069b44e80297ef9fc5b1873356be296658ae3afe18cecf35105af5a44be2fe7cb878882c25a0b3cb6fe7dd1feee7ffe397c6c010fb69c
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9.orig.tar.gz' expat_2.2.9.orig.tar.gz 8273174 SHA512:e274fa7f30630450cb3ca681b266d765dbb7f5d00d1275ff9d9b2e2f6e1095893b8af4e3f4172ae6297c7a8a831a0a6becd484fe4bcdca09c37922f630780ef0
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1ubuntu0.7.debian.tar.xz' expat_2.2.9-1ubuntu0.7.debian.tar.xz 28840 SHA512:889eaabbb8fcfceaa3b1ee66c49d49388216bf10a4dc6be51bc2384bcdf1bd1c1bba7fb5b3d0a48192097fdb4275b8e3a01ec981d834398205fc3d5778c285c9
+```
 
 ### `dpkg` source package: `findutils=4.7.0-1ubuntu1`
 
@@ -1346,11 +1351,11 @@ $ apt-get source -qq --print-uris procps=2:3.3.16-1ubuntu2.4
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16-1ubuntu2.4.debian.tar.xz' procps_3.3.16-1ubuntu2.4.debian.tar.xz 35232 SHA512:cb4310496951e74a13ec439dbff8c655d0fdcd82bb96d58c0954002d24ed474bf028f4ff6606274ab301de2184b441517809019776b497415487020ebaa05d0f
 ```
 
-### `dpkg` source package: `sapmachine-22-jre-headless=22.0.2`
+### `dpkg` source package: `sapmachine-23-jre-headless=23`
 
 Binary Packages:
 
-- `sapmachine-22-jre-headless=22.0.2`
+- `sapmachine-23-jre-headless=23`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
