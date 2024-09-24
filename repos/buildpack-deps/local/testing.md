@@ -5346,20 +5346,13 @@ Licenses: (parsed from: `/usr/share/doc/libsysprof-capture-4-dev/copyright`)
 - `LGPL-3.0+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysprof=46.0-2
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_46.0-2.dsc' sysprof_46.0-2.dsc 2811 SHA256:0ec16be42b10d3449062cc237fe627374b0eba92e944f7a3188720e951705436
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_46.0.orig.tar.xz' sysprof_46.0.orig.tar.xz 1170396 SHA256:73aa7e75ebab3e4e0946a05a723df7e6ee4249e3b9e884dba35500aba2a1d176
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_46.0-2.debian.tar.xz' sysprof_46.0-2.debian.tar.xz 16528 SHA256:f865661611882c9eb5b9c99f84eec004798ec9c7df5497e7f498af9a158e02ba
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysprof/46.0-2/
 
-- https://sources.debian.net/src/sysprof/46.0-2/ (for browsing the source)
-- https://sources.debian.net/src/sysprof/46.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysprof/46.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=256.5-1`
 
