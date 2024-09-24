@@ -1,7 +1,7 @@
 ## `eclipse-temurin:23_37-jre-ubi9-minimal`
 
 ```console
-$ docker pull eclipse-temurin@sha256:af7e5e8c9e238caefc7f1cf4c86b19a1b1b39df5175bd74decf5a9ba781a23c6
+$ docker pull eclipse-temurin@sha256:7a4626781d0e1a1ea4633e4ae9b657e0bc6e54da50d61b09472aa01f07925f76
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -14,59 +14,59 @@ $ docker pull eclipse-temurin@sha256:af7e5e8c9e238caefc7f1cf4c86b19a1b1b39df5175
 ### `eclipse-temurin:23_37-jre-ubi9-minimal` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:a99aaf792fd58659f044b992cb8d69d702d66cb52f171f0e5804ddb56f773014
+$ docker pull eclipse-temurin@sha256:86964844befab01f6d6792656bfcdc47a881466a80e6a3c8d9abe04fd1122a4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **119.8 MB (119794831 bytes)**  
+-	Total Size: **119.8 MB (119813307 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2141bd6f6bac8f7bc7458994c2233cf96ab15f83465dbcd2ac3e07e083ba7c91`
+-	Image ID: `sha256:a2115a662e21d5856d97b7a2e3359b8368c704b242b8ac07c68f534692d3f658`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
-# Mon, 09 Sep 2024 02:59:59 GMT
-ADD file:b37317a01d7c138350a7dd1214596c9e331f2443e4202fb62e450e297a8884ec in / 
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:41 GMT
+ADD file:f7962bcea8426558f5511299e708fc6b7f7c85bd2c87cf668f4ad792bf3679df in / 
+# Wed, 18 Sep 2024 21:29:42 GMT
 RUN mv -f /etc/yum.repos.d/ubi.repo /tmp || :
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:42 GMT
 ADD file:5b1f650e1376d79fa3a65df4a154ea5166def95154b52c1c1097dfd8fc7d58eb in /tmp/tls-ca-bundle.pem 
-# Mon, 09 Sep 2024 03:00:00 GMT
-ADD multi:91888bb231f36a25c84f05db4d13197ea848b09abe661f7b153d55f6f6af43de in /etc/yum.repos.d/ 
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:42 GMT
+ADD multi:d851b7f6b461892ebd008971ee8858113becab621ea011cd6ca3834693892de0 in /etc/yum.repos.d/ 
+# Wed, 18 Sep 2024 21:29:42 GMT
 LABEL maintainer="Red Hat, Inc."
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:42 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.4"
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:42 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:42 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:42 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:42 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:42 GMT
 LABEL io.openshift.expose-services=""
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:42 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:42 GMT
 ENV container oci
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:42 GMT
 ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:42 GMT
 CMD ["/bin/bash"]
-# Mon, 09 Sep 2024 03:00:01 GMT
+# Wed, 18 Sep 2024 21:29:43 GMT
 RUN rm -rf /var/log/*
-# Mon, 09 Sep 2024 03:00:01 GMT
-ADD file:b7994b75b70a7a3dfcf6b1fce6d3be08fac202f008a87a5e9c4a46e3ba552516 in /root/buildinfo/content_manifests/ubi9-minimal-container-9.4-1227.1725849298.json 
-# Mon, 09 Sep 2024 03:00:01 GMT
-ADD file:42184a4eb8e0b654da33b3c8593adbf1bd40e95928a3bb35c340d1f9eb9affbd in /root/buildinfo/Dockerfile-ubi9-minimal-9.4-1227.1725849298 
-# Mon, 09 Sep 2024 03:00:01 GMT
-LABEL "release"="1227.1725849298" "distribution-scope"="public" "vendor"="Red Hat, Inc." "build-date"="2024-09-09T02:35:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="94baa7760359088a42ad33dc22d329a5ee2c7209" "io.k8s.description"="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1227.1725849298"
-# Mon, 09 Sep 2024 03:00:06 GMT
-RUN rm -f '/etc/yum.repos.d/odcs-3464206-199c4.repo' '/etc/yum.repos.d/rhel-9.4-compose-34ae9.repo'
-# Mon, 09 Sep 2024 03:00:12 GMT
+# Wed, 18 Sep 2024 21:29:43 GMT
+ADD file:b61dc232d84be84b398c4a9d319ce263c1e698a1f3e41122b4989b26ae411742 in /root/buildinfo/content_manifests/ubi9-minimal-container-9.4-1227.1726694542.json 
+# Wed, 18 Sep 2024 21:29:43 GMT
+ADD file:3763314761ee75f4c50d08cca38184a1368ca6d78d98ed9b3df4d4a28ce9a60f in /root/buildinfo/Dockerfile-ubi9-minimal-9.4-1227.1726694542 
+# Wed, 18 Sep 2024 21:29:43 GMT
+LABEL "release"="1227.1726694542" "distribution-scope"="public" "vendor"="Red Hat, Inc." "build-date"="2024-09-18T21:23:26" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="94baa7760359088a42ad33dc22d329a5ee2c7209" "io.k8s.description"="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1227.1726694542"
+# Wed, 18 Sep 2024 21:29:44 GMT
+RUN rm -f '/etc/yum.repos.d/odcs-3496922-3d51b.repo' '/etc/yum.repos.d/rhel-9.4-compose-34ae9.repo'
+# Wed, 18 Sep 2024 21:29:45 GMT
 RUN rm -f /tmp/tls-ca-bundle.pem
-# Mon, 09 Sep 2024 03:00:14 GMT
+# Wed, 18 Sep 2024 21:29:46 GMT
 RUN mv -fZ /tmp/ubi.repo /etc/yum.repos.d/ubi.repo || :
 # Wed, 18 Sep 2024 19:12:13 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -89,83 +89,83 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:0d4f239055d063750dddeb4ae84b23d0a708ce76be3167f93d2ba2ba70b50547`  
-		Last Modified: Mon, 09 Sep 2024 20:38:20 GMT  
-		Size: 39.1 MB (39082464 bytes)  
+	-	`sha256:4d5d1cbd7ece41ce278c26338e01e2b82e1861b820ca052da9f3e0b16815358f`  
+		Last Modified: Fri, 20 Sep 2024 03:47:53 GMT  
+		Size: 39.1 MB (39101700 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:49b328994d9bd23b172075615472354832cdadb44241996fca017f328b8c3823`  
-		Last Modified: Wed, 11 Sep 2024 00:54:03 GMT  
-		Size: 27.8 MB (27764026 bytes)  
+	-	`sha256:5ef8015ddfe32306c786e78bf730fde020a46a5b16115dbe696cdf7bded59d7d`  
+		Last Modified: Tue, 24 Sep 2024 00:56:02 GMT  
+		Size: 27.8 MB (27763280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:08f7d5c2dc295636f5f3535bc4db6ea736123fa0366bfea0509a972feb617f7a`  
-		Last Modified: Wed, 18 Sep 2024 21:26:01 GMT  
-		Size: 52.9 MB (52946098 bytes)  
+	-	`sha256:cb7cb02629d10ccb6639e13f40a84d9dbd24d06779aaeb881897c3f87f979364`  
+		Last Modified: Tue, 24 Sep 2024 00:58:53 GMT  
+		Size: 52.9 MB (52946086 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4c339c17ca3d9c57689ba57c1952b55c01f9dc2d611f4ba7583a9886c5542975`  
-		Last Modified: Wed, 18 Sep 2024 21:25:54 GMT  
-		Size: 129.0 B  
+	-	`sha256:f085840ed1fdae027238f33fafc69a4c7b85537edb385c83efc1e5384749684d`  
+		Last Modified: Tue, 24 Sep 2024 00:58:46 GMT  
+		Size: 127.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7101b0c3f183623c2cf9dc85a2e78ea3893fe0c1de1babc571c1b80c2213a246`  
-		Last Modified: Wed, 18 Sep 2024 21:25:54 GMT  
+	-	`sha256:b813b3eb3516e0009e57f048254e39ebd128cef488614bda18ea7da506975b16`  
+		Last Modified: Tue, 24 Sep 2024 00:58:46 GMT  
 		Size: 2.1 KB (2114 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `eclipse-temurin:23_37-jre-ubi9-minimal` - linux; arm64 variant v8
 
 ```console
-$ docker pull eclipse-temurin@sha256:97cf28aa5c1a3d11b1d5f7ab8b0fb5b12b399156c376e699f5099ee67047ff21
+$ docker pull eclipse-temurin@sha256:7d7001d910110ab6307b1f6f6398b376798b4bb17b61eb32ee30ebd8ddf2d6c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.5 MB (117547715 bytes)**  
+-	Total Size: **117.5 MB (117545447 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:acc5ec6dc4751dbbfc173db5bce41138bd546a0f4ce7569d2fbfd83f6126071a`
+-	Image ID: `sha256:1055abed4fd0b9c749a9e3046b5da19eea3d1542b9a20026ec5810a0689a2e65`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
-# Mon, 09 Sep 2024 02:59:59 GMT
-ADD file:56f22ae3154053f9bb870d963b65d5bc807ceb1db4d62ee1e134d6b82240d225 in / 
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:42 GMT
+ADD file:b8ad50f3d6859f84ef1f5a65e6525025d882089a4bfbfe1c1a6dcec413b08335 in / 
+# Wed, 18 Sep 2024 21:29:43 GMT
 RUN mv -f /etc/yum.repos.d/ubi.repo /tmp || :
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:43 GMT
 ADD file:5b1f650e1376d79fa3a65df4a154ea5166def95154b52c1c1097dfd8fc7d58eb in /tmp/tls-ca-bundle.pem 
-# Mon, 09 Sep 2024 03:00:00 GMT
-ADD multi:91888bb231f36a25c84f05db4d13197ea848b09abe661f7b153d55f6f6af43de in /etc/yum.repos.d/ 
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:44 GMT
+ADD multi:d851b7f6b461892ebd008971ee8858113becab621ea011cd6ca3834693892de0 in /etc/yum.repos.d/ 
+# Wed, 18 Sep 2024 21:29:44 GMT
 LABEL maintainer="Red Hat, Inc."
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:44 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.4"
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:44 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:44 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:44 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:44 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:44 GMT
 LABEL io.openshift.expose-services=""
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:44 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:44 GMT
 ENV container oci
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:44 GMT
 ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 09 Sep 2024 03:00:00 GMT
+# Wed, 18 Sep 2024 21:29:44 GMT
 CMD ["/bin/bash"]
-# Mon, 09 Sep 2024 03:00:02 GMT
+# Wed, 18 Sep 2024 21:29:45 GMT
 RUN rm -rf /var/log/*
-# Mon, 09 Sep 2024 03:00:02 GMT
-ADD file:a072fef81c54a753e1604edc416ac2544eecc9191cf9e4acaf7cbf28183d7ce7 in /root/buildinfo/content_manifests/ubi9-minimal-container-9.4-1227.1725849298.json 
-# Mon, 09 Sep 2024 03:00:02 GMT
-ADD file:b7e28c2e39378854f86cb05f59f944d37a1f7191a4c55a40adcd823d87e2c90b in /root/buildinfo/Dockerfile-ubi9-minimal-9.4-1227.1725849298 
-# Mon, 09 Sep 2024 03:00:02 GMT
-LABEL "release"="1227.1725849298" "distribution-scope"="public" "vendor"="Red Hat, Inc." "build-date"="2024-09-09T02:35:25" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="94baa7760359088a42ad33dc22d329a5ee2c7209" "io.k8s.description"="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1227.1725849298"
-# Mon, 09 Sep 2024 03:00:04 GMT
-RUN rm -f '/etc/yum.repos.d/odcs-3464206-199c4.repo' '/etc/yum.repos.d/rhel-9.4-compose-34ae9.repo'
-# Mon, 09 Sep 2024 03:00:05 GMT
+# Wed, 18 Sep 2024 21:29:45 GMT
+ADD file:1b5dd590117e3105bf4bc7bf3d14e32e15284033314e5016a8b6a569d1309f13 in /root/buildinfo/content_manifests/ubi9-minimal-container-9.4-1227.1726694542.json 
+# Wed, 18 Sep 2024 21:29:45 GMT
+ADD file:7d839fd792e21cdd37858c3a5300c195beb3df94eded547fbd1508ef81f3a0ce in /root/buildinfo/Dockerfile-ubi9-minimal-9.4-1227.1726694542 
+# Wed, 18 Sep 2024 21:29:45 GMT
+LABEL "release"="1227.1726694542" "distribution-scope"="public" "vendor"="Red Hat, Inc." "build-date"="2024-09-18T21:23:26" "architecture"="aarch64" "vcs-type"="git" "vcs-ref"="94baa7760359088a42ad33dc22d329a5ee2c7209" "io.k8s.description"="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1227.1726694542"
+# Wed, 18 Sep 2024 21:29:46 GMT
+RUN rm -f '/etc/yum.repos.d/odcs-3496922-3d51b.repo' '/etc/yum.repos.d/rhel-9.4-compose-34ae9.repo'
+# Wed, 18 Sep 2024 21:29:47 GMT
 RUN rm -f /tmp/tls-ca-bundle.pem
-# Mon, 09 Sep 2024 03:00:07 GMT
+# Wed, 18 Sep 2024 21:29:48 GMT
 RUN mv -fZ /tmp/ubi.repo /etc/yum.repos.d/ubi.repo || :
 # Wed, 18 Sep 2024 19:12:13 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -188,24 +188,24 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:abd9eccbef61279a9e1f196b399e5d6336f30519eb5063b2b0fa30be9e4e845d`  
-		Last Modified: Tue, 10 Sep 2024 14:48:49 GMT  
-		Size: 37.3 MB (37337162 bytes)  
+	-	`sha256:b7ea02e7115a7f896de4b38813636b60adf943ded0dc88824bbe396f76e618a0`  
+		Last Modified: Fri, 20 Sep 2024 03:47:54 GMT  
+		Size: 37.3 MB (37335414 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4383f3f4ab0221848aacb530c0ed4524f6705b84fcb60132c748d9bf10764d55`  
-		Last Modified: Wed, 11 Sep 2024 00:50:26 GMT  
-		Size: 28.2 MB (28239269 bytes)  
+	-	`sha256:17a6143e6987e8489e846c0b8e00f9da83ba669eac39979645b22be3f7faa4f1`  
+		Last Modified: Tue, 24 Sep 2024 00:51:05 GMT  
+		Size: 28.2 MB (28238743 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bbe746a9643768ca35d44ce92f51f12ebea13bd14f26d01e8620bc7328cf4256`  
-		Last Modified: Wed, 18 Sep 2024 21:44:27 GMT  
-		Size: 52.0 MB (51969043 bytes)  
+	-	`sha256:4ea05a9d8cc62fa838561d66112f5260b5111c9840cdbb6dfd4a68f7e3867dd3`  
+		Last Modified: Tue, 24 Sep 2024 00:53:40 GMT  
+		Size: 52.0 MB (51969049 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:636d5eb5c2dd5e62f7bba52de3eea1169562c270a8346d7bf635dfaa02444c33`  
-		Last Modified: Wed, 18 Sep 2024 21:44:21 GMT  
+	-	`sha256:ee1f9922c3f98110e95919d1072c8c3cc6978dce6f26bca853bce93373bc8e0b`  
+		Last Modified: Tue, 24 Sep 2024 00:53:33 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a26ffb63875d6abb53838f34971881af624baf9d54bef2547bec8f40ea7ade7b`  
-		Last Modified: Wed, 18 Sep 2024 21:44:21 GMT  
+	-	`sha256:13da1a64cb22db9d178ea87c5e7f8b7cf29f35cc1530506dba65250e538db3d5`  
+		Last Modified: Tue, 24 Sep 2024 00:53:33 GMT  
 		Size: 2.1 KB (2114 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -311,59 +311,59 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ### `eclipse-temurin:23_37-jre-ubi9-minimal` - linux; s390x
 
 ```console
-$ docker pull eclipse-temurin@sha256:39031e3b3bd4646834f3e0a1f482a2f8dd673fb15cbba5d90da0c704315bb2f8
+$ docker pull eclipse-temurin@sha256:b71e429b552b700d76af6a581ad53186c5321fd9e65fb93e0f82598313395aee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **114.6 MB (114607000 bytes)**  
+-	Total Size: **114.6 MB (114601777 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6696e9e3e33059745d5951d63d4985d2ba6fadb4a3bd224069af9c914ad40b41`
+-	Image ID: `sha256:8b0b205a14f65ae5c23b4b555845edbd0e3b78522ccc9d079ca67ccc4970fd58`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
-# Mon, 09 Sep 2024 03:00:03 GMT
-ADD file:8d40c10f9f027f5f474f167499faeef6e3d6559f6ddc2ca95a8987fa9c0aaed9 in / 
-# Mon, 09 Sep 2024 03:00:06 GMT
+# Wed, 18 Sep 2024 21:29:44 GMT
+ADD file:21b7ed3b2258da5b5d030b86d62b0787dcd37b89f90dcc66430117025bb05f28 in / 
+# Wed, 18 Sep 2024 21:29:45 GMT
 RUN mv -f /etc/yum.repos.d/ubi.repo /tmp || :
-# Mon, 09 Sep 2024 03:00:06 GMT
+# Wed, 18 Sep 2024 21:29:45 GMT
 ADD file:5b1f650e1376d79fa3a65df4a154ea5166def95154b52c1c1097dfd8fc7d58eb in /tmp/tls-ca-bundle.pem 
-# Mon, 09 Sep 2024 03:00:07 GMT
-ADD multi:91888bb231f36a25c84f05db4d13197ea848b09abe661f7b153d55f6f6af43de in /etc/yum.repos.d/ 
-# Mon, 09 Sep 2024 03:00:07 GMT
+# Wed, 18 Sep 2024 21:29:45 GMT
+ADD multi:d851b7f6b461892ebd008971ee8858113becab621ea011cd6ca3834693892de0 in /etc/yum.repos.d/ 
+# Wed, 18 Sep 2024 21:29:45 GMT
 LABEL maintainer="Red Hat, Inc."
-# Mon, 09 Sep 2024 03:00:07 GMT
+# Wed, 18 Sep 2024 21:29:45 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.4"
-# Mon, 09 Sep 2024 03:00:07 GMT
+# Wed, 18 Sep 2024 21:29:45 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Mon, 09 Sep 2024 03:00:07 GMT
+# Wed, 18 Sep 2024 21:29:45 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Mon, 09 Sep 2024 03:00:07 GMT
+# Wed, 18 Sep 2024 21:29:45 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Mon, 09 Sep 2024 03:00:07 GMT
+# Wed, 18 Sep 2024 21:29:45 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Mon, 09 Sep 2024 03:00:07 GMT
+# Wed, 18 Sep 2024 21:29:45 GMT
 LABEL io.openshift.expose-services=""
-# Mon, 09 Sep 2024 03:00:07 GMT
+# Wed, 18 Sep 2024 21:29:45 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Mon, 09 Sep 2024 03:00:07 GMT
+# Wed, 18 Sep 2024 21:29:45 GMT
 ENV container oci
-# Mon, 09 Sep 2024 03:00:07 GMT
+# Wed, 18 Sep 2024 21:29:45 GMT
 ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 09 Sep 2024 03:00:07 GMT
+# Wed, 18 Sep 2024 21:29:45 GMT
 CMD ["/bin/bash"]
-# Mon, 09 Sep 2024 03:00:08 GMT
+# Wed, 18 Sep 2024 21:29:47 GMT
 RUN rm -rf /var/log/*
-# Mon, 09 Sep 2024 03:00:08 GMT
-ADD file:538df4a720878d2d8af3716831813f400c0017437b26768453d9943abfd1cc3e in /root/buildinfo/content_manifests/ubi9-minimal-container-9.4-1227.1725849298.json 
-# Mon, 09 Sep 2024 03:00:08 GMT
-ADD file:8aa8329cf2c2ef5c7579d955360b975dcec438ae1b3291b1267d91dafc715966 in /root/buildinfo/Dockerfile-ubi9-minimal-9.4-1227.1725849298 
-# Mon, 09 Sep 2024 03:00:08 GMT
-LABEL "release"="1227.1725849298" "distribution-scope"="public" "vendor"="Red Hat, Inc." "build-date"="2024-09-09T02:35:25" "architecture"="s390x" "vcs-type"="git" "vcs-ref"="94baa7760359088a42ad33dc22d329a5ee2c7209" "io.k8s.description"="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1227.1725849298"
-# Mon, 09 Sep 2024 03:00:09 GMT
-RUN rm -f '/etc/yum.repos.d/odcs-3464206-199c4.repo' '/etc/yum.repos.d/rhel-9.4-compose-34ae9.repo'
-# Mon, 09 Sep 2024 03:00:11 GMT
+# Wed, 18 Sep 2024 21:29:47 GMT
+ADD file:ce3abbd79cb8c99cd1c0e2f5562e76837cd37c2684866f11810f889122c06843 in /root/buildinfo/content_manifests/ubi9-minimal-container-9.4-1227.1726694542.json 
+# Wed, 18 Sep 2024 21:29:47 GMT
+ADD file:ac24882cff4e990075d0c05821308e37e323ed349a4be0a2192cde67bcc09b3f in /root/buildinfo/Dockerfile-ubi9-minimal-9.4-1227.1726694542 
+# Wed, 18 Sep 2024 21:29:47 GMT
+LABEL "release"="1227.1726694542" "distribution-scope"="public" "vendor"="Red Hat, Inc." "build-date"="2024-09-18T21:23:26" "architecture"="s390x" "vcs-type"="git" "vcs-ref"="94baa7760359088a42ad33dc22d329a5ee2c7209" "io.k8s.description"="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly." "url"="https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1227.1726694542"
+# Wed, 18 Sep 2024 21:29:48 GMT
+RUN rm -f '/etc/yum.repos.d/odcs-3496922-3d51b.repo' '/etc/yum.repos.d/rhel-9.4-compose-34ae9.repo'
+# Wed, 18 Sep 2024 21:29:49 GMT
 RUN rm -f /tmp/tls-ca-bundle.pem
-# Mon, 09 Sep 2024 03:00:12 GMT
+# Wed, 18 Sep 2024 21:29:50 GMT
 RUN mv -fZ /tmp/ubi.repo /etc/yum.repos.d/ubi.repo || :
 # Wed, 18 Sep 2024 19:12:13 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -386,23 +386,23 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:d5267c99eb044e958a4c01af00d35530b55934f8976717b26fca5beda78facfa`  
-		Last Modified: Tue, 10 Sep 2024 18:12:04 GMT  
-		Size: 37.4 MB (37365527 bytes)  
+	-	`sha256:9d38740decc88f04976b3123db64216586005286cafbf52d64706fa02375bde9`  
+		Last Modified: Mon, 23 Sep 2024 18:10:42 GMT  
+		Size: 37.4 MB (37364487 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57c74c5ce69a21b534518d260e68380bb5dcae359b4bada2aa9d4cc602fcaaef`  
-		Last Modified: Wed, 11 Sep 2024 01:03:12 GMT  
-		Size: 27.8 MB (27798222 bytes)  
+	-	`sha256:5fa6c2a320ee41494d25376d7da78a260379f7fc8a35f23cf4958c0888cf29d7`  
+		Last Modified: Tue, 24 Sep 2024 01:04:59 GMT  
+		Size: 27.8 MB (27794034 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9223948a6cd7e2c90cdd96b904b6ad66f328ad72747748913eb8dcf9eaa64ed7`  
-		Last Modified: Wed, 18 Sep 2024 21:48:33 GMT  
-		Size: 49.4 MB (49441011 bytes)  
+	-	`sha256:2a2169d064770f3b5eb1ff471efd25d773e2d3d2c8e8aa7c08a2ee89b35ec697`  
+		Last Modified: Tue, 24 Sep 2024 01:07:02 GMT  
+		Size: 49.4 MB (49441014 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43e0d02c5b04a976aaffc812598b8ee6a54721f7b3738370a8f11d3d3038cca5`  
-		Last Modified: Wed, 18 Sep 2024 21:48:26 GMT  
-		Size: 126.0 B  
+	-	`sha256:eab299808331c2c68fca0bf4bbd58e7765049f009b447df89bf08c212cc3342c`  
+		Last Modified: Tue, 24 Sep 2024 01:06:55 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b30560f808af3d7db5507d31ec8d2b8239cd8c353874613ed75ecb3bb79c5754`  
-		Last Modified: Wed, 18 Sep 2024 21:48:26 GMT  
+	-	`sha256:1ba4ef05a6dc332090159c872ce255f911c755976c29ae5237d0df263a108813`  
+		Last Modified: Tue, 24 Sep 2024 01:06:55 GMT  
 		Size: 2.1 KB (2114 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
