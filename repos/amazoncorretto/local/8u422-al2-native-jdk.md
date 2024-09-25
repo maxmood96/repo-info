@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8fcbb7d780cf936dc9646e71fe744c111ba1177ea83df9d842c716d307c8618e`
-- Created: `2024-07-16T22:56:42Z`
-- Virtual Size: ~ 493.08 Mb  
+- Image ID: `sha256:81d972c8285c007ce5dcf8f2f6e88b0f0b4bb4e53e6ec3bf0965cf9d703586f4`
+- Created: `2024-09-19T23:46:25Z`
+- Virtual Size: ~ 491.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -2145,26 +2145,26 @@ $ dnf --quiet download --source --url system-release-2-16.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e075f98fb34f82e579bd41926bab9f1aa6a1060ac23407bcb142bc53b161f337/../../../../../blobstore/1d86dd37090418630254dc852c55859e9033e342f87091b94c9448bcacdb7b2a/system-release-2-16.amzn2.src.rpm
 ```
 
-### `rpm` package: `systemd-219-78.amzn2.0.23.x86_64`
+### `rpm` package: `systemd-219-78.amzn2.0.24.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-219-78.amzn2.0.23
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e075f98fb34f82e579bd41926bab9f1aa6a1060ac23407bcb142bc53b161f337/../../../../../blobstore/b2804ac7a55c12de2ec2b2d2edebf6c8a572a89c1e28a4e3a4e91617b2d69b0b/systemd-219-78.amzn2.0.23.src.rpm
+$ dnf --quiet download --source --url systemd-219-78.amzn2.0.24
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e075f98fb34f82e579bd41926bab9f1aa6a1060ac23407bcb142bc53b161f337/../../../../../blobstore/1ab99585ddae4996705d3779918ad45f13b2a43cd594628a1a2cc2cd0f665861/systemd-219-78.amzn2.0.24.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-219-78.amzn2.0.23.x86_64`
+### `rpm` package: `systemd-libs-219-78.amzn2.0.24.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-libs-219-78.amzn2.0.23
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e075f98fb34f82e579bd41926bab9f1aa6a1060ac23407bcb142bc53b161f337/../../../../../blobstore/b2804ac7a55c12de2ec2b2d2edebf6c8a572a89c1e28a4e3a4e91617b2d69b0b/systemd-219-78.amzn2.0.23.src.rpm
+$ dnf --quiet download --source --url systemd-libs-219-78.amzn2.0.24
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e075f98fb34f82e579bd41926bab9f1aa6a1060ac23407bcb142bc53b161f337/../../../../../blobstore/1ab99585ddae4996705d3779918ad45f13b2a43cd594628a1a2cc2cd0f665861/systemd-219-78.amzn2.0.24.src.rpm
 ```
 
 ### `rpm` package: `tzdata-2024a-1.amzn2.0.1.noarch`
