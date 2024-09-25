@@ -2949,20 +2949,13 @@ Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-bas
 - `LGPL-2.1`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-base=4.4.1-2
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.4.1-2.dsc' r-base_4.4.1-2.dsc 2906 SHA256:69ab725332158250c605d117db7696b1054709950c8488d3bd0bb5d30ca691e5
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.4.1.orig.tar.gz' r-base_4.4.1.orig.tar.gz 37353459 SHA256:b4cb675deaaeb7299d3b265d218cde43f192951ce5b89b7bb1a5148a36b2d94d
-'http://deb.debian.org/debian/pool/main/r/r-base/r-base_4.4.1-2.debian.tar.xz' r-base_4.4.1-2.debian.tar.xz 100068 SHA256:1e3f3f91f443aaabd5ebd81bc58e7815b16490ef3b0b46824636a115cca17faa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/r-base/4.4.1-2/
 
-- https://sources.debian.net/src/r-base/4.4.1-2/ (for browsing the source)
-- https://sources.debian.net/src/r-base/4.4.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-base/4.4.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-class=7.3-22-2`
 
@@ -3363,10 +3356,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tcl8.6=8.6.14+dfsg-1
-'http://http.debian.net/debian/pool/main/t/tcl8.6/tcl8.6_8.6.14%2bdfsg-1.dsc' tcl8.6_8.6.14+dfsg-1.dsc 2120 SHA256:7a1177cbc18123f6205599e48a819daca9e249c4feef3f7a523325a15c7e95de
-'http://http.debian.net/debian/pool/main/t/tcl8.6/tcl8.6_8.6.14%2bdfsg.orig.tar.gz' tcl8.6_8.6.14+dfsg.orig.tar.gz 7091313 SHA256:dc6b06142abfc46692c2f614064f930aa0d3ea2d59ee185dc27399b5d0503ee1
-'http://http.debian.net/debian/pool/main/t/tcl8.6/tcl8.6_8.6.14%2bdfsg-1.debian.tar.xz' tcl8.6_8.6.14+dfsg-1.debian.tar.xz 14392 SHA256:dc8d6589b1394ad85995316cbd61468fcd320dafb54b6fb80af571fea3ee0c9a
+'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.14%2bdfsg-1.dsc' tcl8.6_8.6.14+dfsg-1.dsc 2120 SHA256:7a1177cbc18123f6205599e48a819daca9e249c4feef3f7a523325a15c7e95de
+'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.14%2bdfsg.orig.tar.gz' tcl8.6_8.6.14+dfsg.orig.tar.gz 7091313 SHA256:dc6b06142abfc46692c2f614064f930aa0d3ea2d59ee185dc27399b5d0503ee1
+'http://deb.debian.org/debian/pool/main/t/tcl8.6/tcl8.6_8.6.14%2bdfsg-1.debian.tar.xz' tcl8.6_8.6.14+dfsg-1.debian.tar.xz 14392 SHA256:dc8d6589b1394ad85995316cbd61468fcd320dafb54b6fb80af571fea3ee0c9a
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/tcl8.6/8.6.14+dfsg-1/ (for browsing the source)
+- https://sources.debian.net/src/tcl8.6/8.6.14+dfsg-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tcl8.6/8.6.14+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tex-gyre=20180621-6`
 
@@ -3423,10 +3422,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tk8.6=8.6.14-1
-'http://http.debian.net/debian/pool/main/t/tk8.6/tk8.6_8.6.14-1.dsc' tk8.6_8.6.14-1.dsc 2155 SHA256:8bd5f18ca453634ca47774f84759e49fc14c63a4ee42420bd993b552fa12ef8d
-'http://http.debian.net/debian/pool/main/t/tk8.6/tk8.6_8.6.14.orig.tar.gz' tk8.6_8.6.14.orig.tar.gz 4510695 SHA256:8ffdb720f47a6ca6107eac2dd877e30b0ef7fac14f3a84ebbd0b3612cee41a94
-'http://http.debian.net/debian/pool/main/t/tk8.6/tk8.6_8.6.14-1.debian.tar.xz' tk8.6_8.6.14-1.debian.tar.xz 10784 SHA256:338adc7b48ca96204b66332260349e77aba89731942c6ff597219cc08acfb336
+'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.14-1.dsc' tk8.6_8.6.14-1.dsc 2155 SHA256:8bd5f18ca453634ca47774f84759e49fc14c63a4ee42420bd993b552fa12ef8d
+'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.14.orig.tar.gz' tk8.6_8.6.14.orig.tar.gz 4510695 SHA256:8ffdb720f47a6ca6107eac2dd877e30b0ef7fac14f3a84ebbd0b3612cee41a94
+'http://deb.debian.org/debian/pool/main/t/tk8.6/tk8.6_8.6.14-1.debian.tar.xz' tk8.6_8.6.14-1.debian.tar.xz 10784 SHA256:338adc7b48ca96204b66332260349e77aba89731942c6ff597219cc08acfb336
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/tk8.6/8.6.14-1/ (for browsing the source)
+- https://sources.debian.net/src/tk8.6/8.6.14-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tk8.6/8.6.14-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tzdata=2024a-4`
 
@@ -3585,10 +3590,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris vim=2:9.1.0496-1
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.0496-1.dsc' vim_9.1.0496-1.dsc 3202 SHA256:71a7875f5124187f5f68e4d692f40737313dce6a5fa0c7d93f5b1a4508ac9f50
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.0496.orig.tar.xz' vim_9.1.0496.orig.tar.xz 11866004 SHA256:27c3c1e931164873d5ac1fac250a204a4cc63454f2298c07717179985eefe43d
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.0496-1.debian.tar.xz' vim_9.1.0496-1.debian.tar.xz 187972 SHA256:5317a138b711411885479ceab0e6a574f6205ea95eb7f30fd78b571e2def8a12
+'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.0496-1.dsc' vim_9.1.0496-1.dsc 3202 SHA256:71a7875f5124187f5f68e4d692f40737313dce6a5fa0c7d93f5b1a4508ac9f50
+'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.0496.orig.tar.xz' vim_9.1.0496.orig.tar.xz 11866004 SHA256:27c3c1e931164873d5ac1fac250a204a4cc63454f2298c07717179985eefe43d
+'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.0496-1.debian.tar.xz' vim_9.1.0496-1.debian.tar.xz 187972 SHA256:5317a138b711411885479ceab0e6a574f6205ea95eb7f30fd78b571e2def8a12
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/vim/2:9.1.0496-1/ (for browsing the source)
+- https://sources.debian.net/src/vim/2:9.1.0496-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/vim/2:9.1.0496-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.24.5-2`
 
