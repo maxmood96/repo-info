@@ -1,17 +1,71 @@
 ## `alpine:edge`
 
 ```console
-$ docker pull alpine@sha256:0780fa182012795201551035f53f165156b3a42d8ca9dca33f704cdbcba8f8ed
+$ docker pull alpine@sha256:b93f4f6834d5c6849d859a4c07cc88f5a7d8ce5fb8d2e72940d8edd8be343c04
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 6
+-	Platforms: 8
+	-	linux; amd64
+	-	linux; arm variant v6
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; 386
 	-	linux; ppc64le
 	-	linux; riscv64
 	-	linux; s390x
+
+### `alpine:edge` - linux; amd64
+
+```console
+$ docker pull alpine@sha256:732b8b93aa61b5a5307f3bb85396ec7396c7d2379edf5bff2f2d104ea5d06902
+```
+
+-	Docker Version: 23.0.11
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.6 MB (3626347 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9885b58a3a7b1ff4fab35044f8aed314c3b76d9bed1dee8b2d6b28cede8f1299`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Wed, 07 Aug 2024 19:22:46 GMT
+ADD file:fd7eb8b8156b429f834a8f541c228b1f11e53562b2d604850a825c53a070982c in / 
+# Wed, 07 Aug 2024 19:22:46 GMT
+CMD ["/bin/sh"]
+```
+
+-	Layers:
+	-	`sha256:32b772fa507186eddade1aa8a0f01f5ceacba1fa94a5bb968eb355ac417baca3`  
+		Last Modified: Wed, 07 Aug 2024 19:23:07 GMT  
+		Size: 3.6 MB (3626347 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `alpine:edge` - linux; arm variant v6
+
+```console
+$ docker pull alpine@sha256:baf7ab3de83eb0304033384e57dcc1186d0fef3ee45af13c24639ed73af23cff
+```
+
+-	Docker Version: 23.0.11
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.4 MB (3368891 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:13f8b7cb61c69532b8a15984c327921ce0066f1aec3de8294aac2380103d9386`
+-	Default Command: `["\/bin\/sh"]`
+
+```dockerfile
+# Wed, 07 Aug 2024 18:49:15 GMT
+ADD file:c6b03bf54b3cb222facd336a77295ae074ea7c8cbf44f49984f06d224d576d00 in / 
+# Wed, 07 Aug 2024 18:49:17 GMT
+CMD ["/bin/sh"]
+```
+
+-	Layers:
+	-	`sha256:6ade9c7a31700c2565077fd46ed731138abc593a9d8f2a290c0fa4710abf828a`  
+		Last Modified: Wed, 07 Aug 2024 18:49:39 GMT  
+		Size: 3.4 MB (3368891 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `alpine:edge` - linux; arm variant v7
 
