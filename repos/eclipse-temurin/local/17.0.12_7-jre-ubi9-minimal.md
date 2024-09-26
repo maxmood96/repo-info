@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:19736d7b3df209ff63dfe884593dcddae4bbfd746fef7abaf1482a148d0ed554`
+- Image ID: `sha256:6cf34009b717470a988075f2cb39571bfaca5c65d14a5c8b8b0a03b54238b58b`
 - Created: `2024-08-22T07:58:33Z`
-- Virtual Size: ~ 315.15 Mb  
+- Virtual Size: ~ 315.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `JAVA_VERSION=jdk-17.0.12+7`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-09-09T02:35:25`
+  - `build-date=2024-09-18T21:23:26`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -30,9 +30,9 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
-  - `release=1227.1725849298`
+  - `release=1227.1726694542`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1227.1725849298`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1227.1726694542`
   - `vcs-ref=94baa7760359088a42ad33dc22d329a5ee2c7209`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -190,7 +190,7 @@ Licenses (from `rpm --query`): GPLv2+ or LGPLv3+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `expat-2.5.0-2.el9_4.x86_64`
+### `rpm` package: `expat-2.5.0-2.el9_4.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -736,7 +736,7 @@ Licenses (from `rpm --query`): OLDAP-2.8
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-3.0.7-27.el9.x86_64`
+### `rpm` package: `openssl-3.0.7-28.el9_4.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
@@ -748,7 +748,7 @@ Licenses (from `rpm --query`): ASL 2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-libs-3.0.7-27.el9.x86_64`
+### `rpm` package: `openssl-libs-3.0.7-28.el9_4.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
