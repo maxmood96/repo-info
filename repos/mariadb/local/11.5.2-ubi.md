@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5c6dd886add34145bdc42a59a82d6cb6e6e5caadeb2a57deb542118bea80354f`
+- Image ID: `sha256:e594bca1cddc2618c6050ba8c1ea27339d8ec6ab5328e13e8310d82188135dc0`
 - Created: `2024-09-03T02:32:52Z`
 - Virtual Size: ~ 464.47 Mb  
   (total size of all layers on-disk)
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=11.5.2`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-09-09T02:35:25`
+  - `build-date=2024-09-18T21:23:26`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=MariaDB Database for relational SQL`
@@ -40,7 +40,7 @@
   - `org.opencontainers.image.version=11.5.2`
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1227.1725849298`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9-minimal/images/9.4-1227.1726694542`
   - `vcs-ref=94baa7760359088a42ad33dc22d329a5ee2c7209`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
@@ -194,7 +194,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-8.el9.noarch
-http://epel.mirror.constant.com/9/Everything/source/tree/Packages/e/epel-release-9-8.el9.src.rpm
+http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/e/epel-release-9-8.el9.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
@@ -349,7 +349,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-http://epel.mirror.constant.com/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -748,7 +748,7 @@ Licenses (from `rpm --query`): OLDAP-2.8
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-3.0.7-27.el9.x86_64`
+### `rpm` package: `openssl-3.0.7-28.el9_4.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
@@ -760,7 +760,7 @@ Licenses (from `rpm --query`): ASL 2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-libs-3.0.7-27.el9.x86_64`
+### `rpm` package: `openssl-libs-3.0.7-28.el9_4.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
@@ -1206,7 +1206,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-http://epel.mirror.constant.com/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -1217,7 +1217,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-http://epel.mirror.constant.com/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+http://mirrors.wcupa.edu/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
