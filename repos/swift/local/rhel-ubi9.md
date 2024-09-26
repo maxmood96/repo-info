@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:78ce16b9a7d5962e16fd7cc346a4bc3ce19ccda398049e32d339309d276c22da`
+- Image ID: `sha256:14c725fa59d69ff8373f2bceac6b4a51fa10070fed22df6f66631bb1747c7773`
 - Created: `2024-09-17T00:51:42Z`
 - Virtual Size: ~ 3.22 Gb  
   (total size of all layers on-disk)
@@ -18,7 +18,7 @@
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-09-09T02:35:25`
+  - `build-date=2024-09-18T21:23:30`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
@@ -30,9 +30,9 @@
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=1214.1725849297`
+  - `release=1214.1726694543`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.4-1214.1725849297`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.4-1214.1726694543`
   - `vcs-ref=e309397d02fc53f7fa99db1371b8700eb49f268f`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -226,7 +226,7 @@ Licenses (from `rpm --query`): GPLv3+ and CC0-1.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `expat-2.5.0-2.el9_4.x86_64`
+### `rpm` package: `expat-2.5.0-2.el9_4.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
@@ -928,7 +928,7 @@ Licenses (from `rpm --query`): BSD
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-3.0.7-27.el9.x86_64`
+### `rpm` package: `openssl-3.0.7-28.el9_4.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
@@ -940,7 +940,7 @@ Licenses (from `rpm --query`): ASL 2.0
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `openssl-libs-3.0.7-27.el9.x86_64`
+### `rpm` package: `openssl-libs-3.0.7-28.el9_4.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
@@ -1702,7 +1702,7 @@ Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `tar-1.34-6.el9_1.x86_64`
+### `rpm` package: `tar-1.34-6.el9_4.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
