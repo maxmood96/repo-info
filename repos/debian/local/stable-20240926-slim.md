@@ -1,10 +1,10 @@
-# `debian:stable`
+# `debian:stable-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d949355c50ffe4ac5b4ea527185410a8e847596b169d10daf9518ed759ca74bf`
-- Created: `2024-09-04T22:31:58.163504528Z`
-- Virtual Size: ~ 116.51 Mb  
+- Image ID: `sha256:bda49521d5b5644903542aa330a2a92a0bbb852be9eb4c7b09ba12374653b66f`
+- Created: `2024-09-27T04:31:01.029325194Z`
+- Virtual Size: ~ 74.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
