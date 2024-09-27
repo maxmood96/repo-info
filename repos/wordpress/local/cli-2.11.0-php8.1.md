@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:287715cdbddad7fd3a070a30b510ad00b2d7475965293a576046f32bf97c2a60`
+- Image ID: `sha256:cd02a8c4100ab1cd84bca2ca858c5e41e2aa14c208a37c62f70608c47dc66efc`
 - Created: `2024-09-12T19:33:49Z`
-- Virtual Size: ~ 219.64 Mb  
+- Virtual Size: ~ 220.53 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.29`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.29.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.29.tar.xz.asc`
-  - `PHP_SHA256=288884af60581d4284baba2ace9ca6d646f72facbd3e3c2dd2acc7fe6f903536`
+  - `PHP_VERSION=8.1.30`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.30.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.30.tar.xz.asc`
+  - `PHP_SHA256=f24a6007f0b25a53cb7fbaee69c85017e0345b62089c2425a0afb7e177192ed1`
   - `WORDPRESS_CLI_GPG_KEY=63AF7AA15067C05616FDDD88A3A2E8F226F0BC06`
   - `WORDPRESS_CLI_VERSION=2.11.0`
   - `WORDPRESS_CLI_SHA512=adb12146bab8d829621efed41124dcd0012f9027f47e0228be7080296167566070e4a026a09c3989907840b21de94b7a35f3bfbd5f827c12f27c5803546d1bba`
@@ -251,16 +251,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.9.1-r1 description:
+curl-8.9.1-r2 description:
 URL retrival utility and library
 
-curl-8.9.1-r1 webpage:
+curl-8.9.1-r2 webpage:
 https://curl.se/
 
-curl-8.9.1-r1 installed size:
+curl-8.9.1-r2 installed size:
 248 KiB
 
-curl-8.9.1-r1 license:
+curl-8.9.1-r2 license:
 curl
 
 ```
@@ -506,16 +506,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.9.1-r1 description:
+libcurl-8.9.1-r2 description:
 The multiprotocol file transfer library
 
-libcurl-8.9.1-r1 webpage:
+libcurl-8.9.1-r2 webpage:
 https://curl.se/
 
-libcurl-8.9.1-r1 installed size:
+libcurl-8.9.1-r2 installed size:
 628 KiB
 
-libcurl-8.9.1-r1 license:
+libcurl-8.9.1-r2 license:
 curl
 
 ```
@@ -659,16 +659,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r0 description:
+libncursesw-6.4_p20240420-r1 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r0 webpage:
+libncursesw-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r0 installed size:
+libncursesw-6.4_p20240420-r1 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r0 license:
+libncursesw-6.4_p20240420-r1 license:
 X11
 
 ```
@@ -676,16 +676,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.43-r0 description:
+libpng-1.6.44-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.43-r0 webpage:
+libpng-1.6.44-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.43-r0 installed size:
+libpng-1.6.44-r0 installed size:
 200 KiB
 
-libpng-1.6.43-r0 license:
+libpng-1.6.44-r0 license:
 Libpng
 
 ```
@@ -1016,16 +1016,16 @@ GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r0 description:
+ncurses-terminfo-base-6.4_p20240420-r1 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r0 webpage:
+ncurses-terminfo-base-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r0 installed size:
+ncurses-terminfo-base-6.4_p20240420-r1 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r0 license:
+ncurses-terminfo-base-6.4_p20240420-r1 license:
 X11
 
 ```
