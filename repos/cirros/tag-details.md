@@ -531,7 +531,12 @@ $ docker pull cirros@sha256:35c56a44903ef5d51db97a9b826e9858331f08b62b69496948c2
 
 ## `cirros:0.6.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull cirros@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `cirros:latest`
 
