@@ -1,10 +1,10 @@
-# `php:8.3.11-fpm-alpine3.19`
+# `php:8.3.12-fpm-alpine3.19`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e38d7835d2cdef1449f02e7db867b16c9f02836cc7cded9bf34d0ed1e60aa666`
-- Created: `2024-09-07T01:18:52.346168392Z`
-- Virtual Size: ~ 83.18 Mb  
+- Image ID: `sha256:a7fc091d381a648dbb6e21001b1387e13edaafbc17a322943bafa967c1d911ce`
+- Created: `2024-09-26T23:01:36.601463731Z`
+- Virtual Size: ~ 84.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.11`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.11.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.11.tar.xz.asc`
-  - `PHP_SHA256=b862b098a08ab9bf4b36ed12c7d0d9f65353656b36fb0e3c5344093aceb35802`
+  - `PHP_VERSION=8.3.12`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.12.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.12.tar.xz.asc`
+  - `PHP_SHA256=f774e28633e26fc8c5197f4dae58ec9e3ff87d1b4311cbc61ab05a7ad24bd131`
 
 ## `apk` (`.apk`-based packages)
 
@@ -214,16 +214,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.9.0-r0 description:
+curl-8.9.1-r0 description:
 URL retrival utility and library
 
-curl-8.9.0-r0 webpage:
+curl-8.9.1-r0 webpage:
 https://curl.se/
 
-curl-8.9.0-r0 installed size:
+curl-8.9.1-r0 installed size:
 248 KiB
 
-curl-8.9.0-r0 license:
+curl-8.9.1-r0 license:
 curl
 
 ```
@@ -299,16 +299,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.9.0-r0 description:
+libcurl-8.9.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.9.0-r0 webpage:
+libcurl-8.9.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.9.0-r0 installed size:
+libcurl-8.9.1-r0 installed size:
 628 KiB
 
-libcurl-8.9.0-r0 license:
+libcurl-8.9.1-r0 license:
 curl
 
 ```

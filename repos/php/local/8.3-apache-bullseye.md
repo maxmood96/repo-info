@@ -1,10 +1,10 @@
-# `php:8.3.11-apache-bullseye`
+# `php:8.3.12-apache-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7788dc5bf7b2744abe60602977425ba050b19e78683de819a6bd9c59bcbc34a9`
-- Created: `2024-09-05T00:16:16.330929445Z`
-- Virtual Size: ~ 463.54 Mb  
+- Image ID: `sha256:bfb8e4daedbf1941cba5c92d8ab95200575b61208300395f5f275d73573f21a4`
+- Created: `2024-09-26T22:34:07.966412987Z`
+- Virtual Size: ~ 463.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.11`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.11.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.11.tar.xz.asc`
-  - `PHP_SHA256=b862b098a08ab9bf4b36ed12c7d0d9f65353656b36fb0e3c5344093aceb35802`
+  - `PHP_VERSION=8.3.12`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.12.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.12.tar.xz.asc`
+  - `PHP_SHA256=f774e28633e26fc8c5197f4dae58ec9e3ff87d1b4311cbc61ab05a7ad24bd131`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -834,11 +834,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.46.2-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.46.2-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.2.10-2+deb11u5`
+### `dpkg` source package: `expat=2.2.10-2+deb11u6`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.2.10-2+deb11u5`
+- `libexpat1:amd64=2.2.10-2+deb11u6`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
@@ -847,17 +847,17 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.2.10-2+deb11u5
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.10-2%2bdeb11u5.dsc' expat_2.2.10-2+deb11u5.dsc 2175 SHA256:5bbf7d1df4aa4fb5d31141b58dc08a687918c1685c48300bc3f67a8f56fe3071
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.10.orig.tar.gz' expat_2.2.10.orig.tar.gz 8276395 SHA256:62e280f5fd29a5b70973f623e20a7412c3e3912c2684cb0e462e2c881be129e1
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.10-2%2bdeb11u5.debian.tar.xz' expat_2.2.10-2+deb11u5.debian.tar.xz 29468 SHA256:b24f586a155c207b2dbf6db1b6e4106427150acdd3a654c00c52d400da70d23d
+$ apt-get source -qq --print-uris expat=2.2.10-2+deb11u6
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10-2%2bdeb11u6.dsc' expat_2.2.10-2+deb11u6.dsc 2020 SHA256:7227fe4cce0d7b0d43bab1d5662cf060fbd8fabe9e82a36827a9265a29ee2a5a
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10.orig.tar.gz' expat_2.2.10.orig.tar.gz 8276395 SHA256:62e280f5fd29a5b70973f623e20a7412c3e3912c2684cb0e462e2c881be129e1
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10-2%2bdeb11u6.debian.tar.xz' expat_2.2.10-2+deb11u6.debian.tar.xz 67904 SHA256:74ea952e8094b333125dde907c29618724946cef660828d1f48d1bfc3bef574d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/expat/2.2.10-2+deb11u5/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.2.10-2+deb11u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.2.10-2+deb11u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/expat/2.2.10-2+deb11u6/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.2.10-2+deb11u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.2.10-2+deb11u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `file=1:5.39-3+deb11u1`
 
