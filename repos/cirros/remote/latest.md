@@ -1,7 +1,7 @@
 ## `cirros:latest`
 
 ```console
-$ docker pull cirros@sha256:d690531353a818858bbbf12280c2b307371dbb88f435db85711c82d67b5e509d
+$ docker pull cirros@sha256:9aef66b2a694f8cd31bd5c334419a0c75dc7f4c869931087c04ea9b2cfbdebaf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -75,123 +75,115 @@ $ docker pull cirros@sha256:d0884c82a60f26d02b36413ec5b80643383196156b08f31d42db
 ### `cirros:latest` - linux; arm variant v7
 
 ```console
-$ docker pull cirros@sha256:d9ca2c1bd55418b56f5c1d1e2bd20b8e860b2c707391ee5ce2998a66fe200b48
+$ docker pull cirros@sha256:a8ab401ed65f66eb9ba3bc41c0b1ccdd23c06bf4673ea90694ba492f5fa9a4be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.9 MB (6917650 bytes)**  
+-	Total Size: **6.9 MB (6917508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e8e02388dad20c35c439942ba32d0c56ac56a115dbe1ee1843bafef3f4bb8d0b`
+-	Image ID: `sha256:e10064890c068d7af673f69b30ef9d35ea9f3d888811ddac5f5eec6d35bd0959`
 -	Default Command: `["\/sbin\/init"]`
 
 ```dockerfile
-# Fri, 12 May 2023 18:13:28 GMT
+# Wed, 25 Sep 2024 10:32:49 GMT
 ADD rootfs-arm.tar.xz / # buildkit
-# Fri, 12 May 2023 18:13:28 GMT
+# Wed, 25 Sep 2024 10:32:49 GMT
 RUN rm /etc/rc3.d/S40-network # buildkit
-# Fri, 12 May 2023 18:13:28 GMT
+# Wed, 25 Sep 2024 10:32:49 GMT
 RUN sed -i '/is_lxc && lxc_netdown/d' /etc/init.d/rc.sysinit # buildkit
-# Fri, 12 May 2023 18:13:28 GMT
+# Wed, 25 Sep 2024 10:32:49 GMT
 CMD ["/sbin/init"]
 ```
 
 -	Layers:
-	-	`sha256:c05246bdd6bef6c6f0c7c1f8b7b01a8332760d8d92c5521537eb8b0705e15290`  
-		Last Modified: Wed, 20 Dec 2023 22:32:22 GMT  
-		Size: 6.9 MB (6916209 bytes)  
+	-	`sha256:859a63370c800364a8b46597556a1def8f86dd1c9a3234235cb9ab2796cf8797`  
+		Last Modified: Fri, 27 Sep 2024 10:21:33 GMT  
+		Size: 6.9 MB (6916072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f58f2afd4330543a41e2d725509da7877813287379fd14aa358743b9115ddd7c`  
-		Last Modified: Wed, 20 Dec 2023 22:32:21 GMT  
-		Size: 161.0 B  
+	-	`sha256:dbc8558494c81739dbd5516e1c317c4cd9ebd08fa8a23a06dd7ae846a9598505`  
+		Last Modified: Fri, 27 Sep 2024 10:21:32 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:728ae00eda2db4040079911574cae2643f3567f4e39cd8bcea1b5aeabfd13f36`  
-		Last Modified: Wed, 20 Dec 2023 22:32:21 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:8d39b9020a5a1701d7002d70869f306d79a54f817f21150ea75a8884afddfa0a`  
+		Last Modified: Fri, 27 Sep 2024 10:21:32 GMT  
+		Size: 1.3 KB (1277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cirros:latest` - unknown; unknown
 
 ```console
-$ docker pull cirros@sha256:35bbd0c84bb4d9f53469326de268589edec53d6612cfc56f6e0453e94bf8def5
+$ docker pull cirros@sha256:2d5d76a715653151f91cbbff3abcd2b3fe4e6c4b04bb5e38252670305f79aa06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.7 KB (9744 bytes)**  
+-	Total Size: **7.6 KB (7564 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24c849086f6df94ac6e8ab1a3ca59301551a9cc85062165f87a2642a769b6967`
+-	Image ID: `sha256:1f2a4bf4614a9c2e721ac038b3c506ec469467033f7ad60e72a68aa4692851d8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e96e09746c5283e98769ceed4f5b73d7c5470ffa72cc2d8ae88454f4109306d8`  
-		Last Modified: Wed, 20 Dec 2023 22:32:21 GMT  
-		Size: 2.0 KB (2013 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:3b7fede7cf96337073963548908dd352e48b9242472cd9afeb3595ab8076e25b`  
-		Last Modified: Wed, 20 Dec 2023 22:32:21 GMT  
-		Size: 7.7 KB (7731 bytes)  
+	-	`sha256:558bdd82c3a5506301b5b68875cf22cb9a373650dc2614056366c6ad939b6a7d`  
+		Last Modified: Fri, 27 Sep 2024 10:21:32 GMT  
+		Size: 7.6 KB (7564 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cirros:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull cirros@sha256:6c1cba417c77c66da369c88d803d04e305eabceddd7fa889f9c9f25f447887c3
+$ docker pull cirros@sha256:df6600fb2518df7b0bd6da32063671b1a5322a6dbb0134390dd1e3f7b7c704b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.5 MB (7512991 bytes)**  
+-	Total Size: **7.5 MB (7513081 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21b1ba25434b3327f4d95f609d478a033ccb3a5f26e21d73f8417a5b949bd458`
+-	Image ID: `sha256:16dab2758ee2687902d4c8b4602445a3a2affbafc45e2a96e5780c550caec048`
 -	Default Command: `["\/sbin\/init"]`
 
 ```dockerfile
-# Fri, 12 May 2023 18:13:28 GMT
+# Wed, 25 Sep 2024 10:32:49 GMT
 ADD rootfs-aarch64.tar.xz / # buildkit
-# Fri, 12 May 2023 18:13:28 GMT
+# Wed, 25 Sep 2024 10:32:49 GMT
 RUN rm /etc/rc3.d/S40-network # buildkit
-# Fri, 12 May 2023 18:13:28 GMT
+# Wed, 25 Sep 2024 10:32:49 GMT
 RUN sed -i '/is_lxc && lxc_netdown/d' /etc/init.d/rc.sysinit # buildkit
-# Fri, 12 May 2023 18:13:28 GMT
+# Wed, 25 Sep 2024 10:32:49 GMT
 CMD ["/sbin/init"]
 ```
 
 -	Layers:
-	-	`sha256:419d54672de03314d2862f812ab96394bd01bf170afc35f7f213d6fc88fd7613`  
-		Last Modified: Wed, 20 Dec 2023 21:36:04 GMT  
-		Size: 7.5 MB (7511550 bytes)  
+	-	`sha256:6820a8cb9922e3940bb262942d79d60e49d9b1c1db965f1ac6cad44cf34325f5`  
+		Last Modified: Fri, 27 Sep 2024 10:13:23 GMT  
+		Size: 7.5 MB (7511647 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b80d6be89de1f0b8a42c9fe6874a10a523277bd76970c6088d554c4e5c94ae89`  
-		Last Modified: Wed, 20 Dec 2023 21:36:03 GMT  
-		Size: 161.0 B  
+	-	`sha256:8566350e002db7e1b401774232d9d3abd66e19b43f32dcefd8189d170b2ca961`  
+		Last Modified: Fri, 27 Sep 2024 10:13:23 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a9e6960d3ab5c1bcf6ec61903155a3656e3c008525927e587ede1c8192bb709`  
-		Last Modified: Wed, 20 Dec 2023 21:36:03 GMT  
-		Size: 1.3 KB (1280 bytes)  
+	-	`sha256:63b13aa03454ef35a27f068e54f558f77fbe141c63a3fa3b3ca6380e5f8bcfe7`  
+		Last Modified: Fri, 27 Sep 2024 10:13:23 GMT  
+		Size: 1.3 KB (1276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cirros:latest` - unknown; unknown
 
 ```console
-$ docker pull cirros@sha256:a6168269934f936a36c70319a2e9bc46852b6fa6821fbebfe8446070f0aa8a33
+$ docker pull cirros@sha256:745351deff6c03aa6cf482971a3cb74112f7ec1c585229c0b68ce5f60a5219c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.7 KB (9676 bytes)**  
+-	Total Size: **7.6 KB (7577 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c95ee19ba431d227e15ec82ecc431cc21af49a5c54eb80595f2dc73bf46c9b37`
+-	Image ID: `sha256:e7c3045fab38aae671bccc38848ad9d64c28ca274306b6bab32e9a8dcc0dc6f0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1db143fd714b306b9dc44ac1573aebea91a8e76b2bfa124825292f3a5d294a80`  
-		Last Modified: Wed, 20 Dec 2023 21:36:03 GMT  
-		Size: 2.0 KB (1986 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:dc00154b80280307da0f5b0e247065769263db91df18746268a89f7487b7af5b`  
-		Last Modified: Wed, 20 Dec 2023 21:36:03 GMT  
-		Size: 7.7 KB (7690 bytes)  
+	-	`sha256:202e6337da159219bf6038f0160e186ba44b129a39984dcc256c177d1135878b`  
+		Last Modified: Fri, 27 Sep 2024 10:13:23 GMT  
+		Size: 7.6 KB (7577 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `cirros:latest` - linux; ppc64le
