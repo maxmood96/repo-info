@@ -1,7 +1,7 @@
 ## `perl:devel-slim-bookworm`
 
 ```console
-$ docker pull perl@sha256:4e9de0f977cada4562c427aafe696ee03cf3036609cfaae8fd9e3b6fc7f4dcd0
+$ docker pull perl@sha256:10430a6cb877fb06b5222f4e080c44339fa5ddea02775a0a5e2ca04e8b597b1f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -436,19 +436,19 @@ $ docker pull perl@sha256:f72ba04e6c967a870a85e833f07e79288d211a625956da190ef920
 ### `perl:devel-slim-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull perl@sha256:0ad9c576314300e56cab24b3522f543ec993a3319cf5cc8fd79a0be651d5f913
+$ docker pull perl@sha256:bb895cf3dc23f24a1c114b7846339056639a8c3a1b909cbc9dabf8bee4aecdfd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.1 MB (64071633 bytes)**  
+-	Total Size: **64.1 MB (64071398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:317acc4ac52aa5cac8a386d28dac6f16dd860c35f27119169c6509a3f165f6de`
+-	Image ID: `sha256:e878c1c2cb3159951f4fb5dd9771ae63aac9f3edccb6060fd6d1dee706f3c285`
 -	Default Command: `["perl5.41.4","-de0"]`
 
 ```dockerfile
-# Wed, 04 Sep 2024 22:25:52 GMT
-ADD file:d83b2f8d4d3fd22a390140e3bebefb48e5f086d072ad6062f6446b4fc42ec7a8 in / 
-# Wed, 04 Sep 2024 22:25:54 GMT
+# Fri, 20 Sep 2024 18:57:44 GMT
+ADD file:13ecda46acf717bc6e96c8ad429d6c14016514befca636a168655d0e5c9c4fbd in / 
+# Fri, 20 Sep 2024 18:57:44 GMT
 CMD ["bash"]
 # Fri, 20 Sep 2024 18:57:44 GMT
 WORKDIR /usr/src/perl
@@ -461,45 +461,45 @@ CMD ["perl5.41.4" "-de0"]
 ```
 
 -	Layers:
-	-	`sha256:f19b11698292330b7d980ed50b0141417eec298d865e0c1b305ce7a8b80b572d`  
-		Last Modified: Wed, 04 Sep 2024 22:30:11 GMT  
-		Size: 33.1 MB (33122358 bytes)  
+	-	`sha256:c0db683897d16fe6e2869a351dbd5deac2268d5820d4b3c1cf93ec3bd69cafb5`  
+		Last Modified: Fri, 27 Sep 2024 05:36:18 GMT  
+		Size: 33.1 MB (33122163 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c2e73172c814aada47c845716a55666816a317bf53de4e5bb9e08a9667c4143`  
-		Last Modified: Fri, 20 Sep 2024 20:12:41 GMT  
+	-	`sha256:602340e91d0e617994ac0f1e0bb0a4bcbdd728a17801182745647afb9c6d2f77`  
+		Last Modified: Fri, 27 Sep 2024 20:45:29 GMT  
 		Size: 135.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4000bffe6ddba3d0af2eca6b326de1dc43d928d3655725216ae04428201bf15c`  
-		Last Modified: Fri, 20 Sep 2024 20:12:43 GMT  
-		Size: 30.9 MB (30949007 bytes)  
+	-	`sha256:b2ddcb3c229d32cee4a1bac3f94bd00888516675966b094e2ab9f8147834cdca`  
+		Last Modified: Fri, 27 Sep 2024 22:11:35 GMT  
+		Size: 30.9 MB (30948968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05e28e3e27fc5fb8dde1805ca87bfafa522dab300e7560189d2f4a44e0228fd6`  
-		Last Modified: Fri, 20 Sep 2024 20:12:41 GMT  
-		Size: 133.0 B  
+	-	`sha256:2eda277010069cad3b88640cf72366605b1fde143765e493f2246457a0162b3e`  
+		Last Modified: Fri, 27 Sep 2024 22:11:33 GMT  
+		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `perl:devel-slim-bookworm` - unknown; unknown
 
 ```console
-$ docker pull perl@sha256:7df6521c827b0d197595274eb175b866db741dc4830433ed49be7606b783ef43
+$ docker pull perl@sha256:04985fb85a3346d7e648f90932ce27c01f6c9f093eb06b192d39c54a20271b85
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.8 MB (3803400 bytes)**  
+-	Total Size: **3.8 MB (3803412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3669361240032a51592659d9c236ed45e8f73402e9086d60c02179f62ff7edc5`
+-	Image ID: `sha256:61eed79c0c58185adf2c9c1cdab016fc3b2fedf2f01b169e8b88c4e95109c7e6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f506c211ba7958bd18ca15e20073496a0db47fc4400f094c5a518eb9461d750f`  
-		Last Modified: Fri, 20 Sep 2024 20:12:42 GMT  
-		Size: 3.8 MB (3784384 bytes)  
+	-	`sha256:b3339c44f8a2d8838b0b12fc7bc7da036d0d4809e3adf63b5c72dd7daccad996`  
+		Last Modified: Fri, 27 Sep 2024 22:11:34 GMT  
+		Size: 3.8 MB (3784397 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6141c25269358ae5698e6799f73a61129cb39d179f613bd6d669739062393a68`  
-		Last Modified: Fri, 20 Sep 2024 20:12:41 GMT  
-		Size: 19.0 KB (19016 bytes)  
+	-	`sha256:d5a4f7628053e3b01a42ec615206cf099cd9847105172e06ab96aae71b3d4ca6`  
+		Last Modified: Fri, 27 Sep 2024 22:11:33 GMT  
+		Size: 19.0 KB (19015 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `perl:devel-slim-bookworm` - linux; s390x
