@@ -1,7 +1,7 @@
 ## `elixir:otp-25-slim`
 
 ```console
-$ docker pull elixir@sha256:6364bde300a1f06eae7b2d27bdc9bff4184883707cbbec456a8749c7628f06c0
+$ docker pull elixir@sha256:5e0686534016027b9225eed2533f27a9ba8a65ad5c35f86ec12715828e6baa79
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -93,18 +93,18 @@ $ docker pull elixir@sha256:181f6fc6d06d6068ec5564135c3e9e1e77ce80deb33ca67b08e2
 ### `elixir:otp-25-slim` - linux; arm variant v7
 
 ```console
-$ docker pull elixir@sha256:720130aa9d4c306e49b91b4cf676e3a3b6696a9a020065bb502fd60bb89303fc
+$ docker pull elixir@sha256:c8e7af19470bce1f495fb249b9c4ce0a8f21efee058732f8872e300c86c4a177
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **114.9 MB (114908574 bytes)**  
+-	Total Size: **114.9 MB (114908798 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90dad864363a1b5ed3362456957686fe536344ec54e1cc18df0fdb548435817c`
+-	Image ID: `sha256:abc5cae5d48eae75367bb983910eab6bba93d2b9e10c222f1fa57a395a63423e`
 -	Default Command: `["iex"]`
 
 ```dockerfile
 # Tue, 16 Jul 2024 11:38:06 GMT
-ADD file:e3043c245364d9fe593e24bbcac51334dca659e8ec7cd42b6368ba7ea83ea087 in / 
+ADD file:9ce266c398209e90f7206a05ac5b3ad0e1b36639b555d8c794491312b40e94cc in / 
 # Tue, 16 Jul 2024 11:38:06 GMT
 CMD ["bash"]
 # Tue, 16 Jul 2024 11:38:06 GMT
@@ -124,40 +124,40 @@ CMD ["iex"]
 ```
 
 -	Layers:
-	-	`sha256:3e424c6173543918aac0bf0552ca8359d23f7b7baa2d77fc8e2c9deb6756f39d`  
-		Last Modified: Wed, 04 Sep 2024 22:02:04 GMT  
-		Size: 50.2 MB (50240273 bytes)  
+	-	`sha256:5b73fe599d8a11adf217817ed59555cdbc95d93efb1d72ea85683e0e5ea179d6`  
+		Last Modified: Fri, 27 Sep 2024 05:17:30 GMT  
+		Size: 50.2 MB (50240380 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2c05f059dd88dd3375a45ca41c1f49cbdb4c8b44e527d7283a84bd12360dd14`  
-		Last Modified: Thu, 05 Sep 2024 04:08:14 GMT  
-		Size: 57.2 MB (57208089 bytes)  
+	-	`sha256:be5cd40f1db6e2c88ea6f0fcb22b19cc2f9e48cf487b8a54b469fc3e7780a480`  
+		Last Modified: Fri, 27 Sep 2024 10:46:23 GMT  
+		Size: 57.2 MB (57208195 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10e3ea38d7d42e1980ba80c41f63e4476dd4bf0dfdae484284f3c9feb3393ae2`  
-		Last Modified: Fri, 06 Sep 2024 04:32:08 GMT  
-		Size: 7.5 MB (7460212 bytes)  
+	-	`sha256:43dd6d9702c4f597f199cf561c4772941ae6cd086a40e4c663446a48a5239520`  
+		Last Modified: Sat, 28 Sep 2024 04:29:44 GMT  
+		Size: 7.5 MB (7460223 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elixir:otp-25-slim` - unknown; unknown
 
 ```console
-$ docker pull elixir@sha256:b713a661ceb307edd893fa31669e5916d4a5dfdd92169e407c8c5dfe251b88d8
+$ docker pull elixir@sha256:a63854af59f485a0940ca169eef7abc8579aa4046e83d5a82090b618b4117a73
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.0 MB (3998159 bytes)**  
+-	Total Size: **4.0 MB (3998172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c80d4b9a65e618e5434ec355fefca1db686d83aca4dffe55a0eb44eef1c1f12f`
+-	Image ID: `sha256:100c6e3ca1cd4c14ffd885146a57d31b16be68989f07e24f8e7d9965e2c627b2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a4d58c7452804861f41f8266112a3eb622a59d9050b6446fc0fabd1e6951ac95`  
-		Last Modified: Fri, 06 Sep 2024 04:32:08 GMT  
-		Size: 4.0 MB (3988323 bytes)  
+	-	`sha256:71e3f60552b87b3acbe83ac8d167c9061bf42ef62d65e5f14713452259eda1e9`  
+		Last Modified: Sat, 28 Sep 2024 04:29:44 GMT  
+		Size: 4.0 MB (3988336 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:76863dc88eecd679fdb22f0310b6a26fd78e73422dd7c1ea2b46a4244a420f23`  
-		Last Modified: Fri, 06 Sep 2024 04:32:08 GMT  
+	-	`sha256:33b4b8b62ac9499f291d3635a579bc9a03470730bbd314be9bd18a7fa39067e5`  
+		Last Modified: Sat, 28 Sep 2024 04:29:43 GMT  
 		Size: 9.8 KB (9836 bytes)  
 		MIME: application/vnd.in-toto+json
 
