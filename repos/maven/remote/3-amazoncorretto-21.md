@@ -1,7 +1,7 @@
 ## `maven:3-amazoncorretto-21`
 
 ```console
-$ docker pull maven@sha256:fc83bc7c57e8ae9ea5ea6f0f7a4e732101d620f912fbc7f722e8148efad2a5de
+$ docker pull maven@sha256:ac5d277ec776ccdb572c20fb80071ffd9349cab763fbbf8acfb4c8eb87170e21
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -133,61 +133,61 @@ $ docker pull maven@sha256:e899529a37ece1f173afce283effc95ae52556a072325410825c3
 ### `maven:3-amazoncorretto-21` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:f0d378e287ef280c524963e81f1097c5ab1d2c3f5621552a0af889cf7a412a0a
+$ docker pull maven@sha256:5148ff5ce11a6d624b8e83a95caf7aeb52517ff102f984e1139ea44a035dd2a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **393.1 MB (393079970 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d7f1755985d1ab71a815ac581e022c7e13cfbc3cda0715b52fbda4a45b146ec`
+-	Image ID: `sha256:618ccf1e5599ebb253e8411de590d00eb01243686d9db3657d7a9d3c55f9c496`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 COPY /rootfs/ / # buildkit
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 CMD ["/bin/bash"]
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 ARG version=21.0.4.7-1
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 # ARGS: version=21.0.4.7-1
 RUN set -eux     && export GNUPGHOME="$(mktemp -d)"     && curl -fL -o corretto.key https://yum.corretto.aws/corretto.key     && gpg --batch --import corretto.key     && gpg --batch --export --armor '6DC3636DAE534049C8B94623A122542AB04F24E3' > corretto.key     && rpm --import corretto.key     && rm -r "$GNUPGHOME" corretto.key     && curl -fL -o /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo     && grep -q '^gpgcheck=1' /etc/yum.repos.d/corretto.repo     && echo "priority=9" >> /etc/yum.repos.d/corretto.repo     && yum install -y java-21-amazon-corretto-devel-$version     && (find /usr/lib/jvm/java-21-amazon-corretto -name src.zip -delete || true)     && yum install -y fontconfig     && yum clean all # buildkit
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 ENV LANG=C.UTF-8
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-21-amazon-corretto
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 RUN yum install -y tar which gzip # TODO remove # buildkit
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 RUN yum install -y openssh-clients # buildkit
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 LABEL org.opencontainers.image.title=Apache Maven
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 ENV MAVEN_HOME=/usr/share/maven
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 COPY /usr/share/maven /usr/share/maven # buildkit
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 ARG MAVEN_VERSION=3.9.9
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 ARG USER_HOME_DIR=/root
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 ENV MAVEN_CONFIG=/root/.m2
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Mon, 19 Aug 2024 08:57:28 GMT
+# Tue, 20 Aug 2024 18:12:59 GMT
 CMD ["mvn"]
 ```
 
@@ -228,23 +228,23 @@ CMD ["mvn"]
 ### `maven:3-amazoncorretto-21` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:d2c8cc555ef3d8072ebfa5434aaf8c884c779e760f37f4585b90f0d0086d8f36
+$ docker pull maven@sha256:ab3000741c126241fc126dfef018d72a274090ad3d1590655f5b5f8cbd80aff5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.9 MB (6933008 bytes)**  
+-	Total Size: **6.9 MB (6933021 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7aaf9f462c3269ec60e62e0eda28bf8f16a8eb14e24699897673f196bf863b04`
+-	Image ID: `sha256:c0099e3b072837ddbcb56c8b9cf7836238b148201b69953ae57b308361fb528c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d4988a2423455ff9bd08ebf190119db5e9f109305b54b3a29afee13de07d99ce`  
-		Last Modified: Tue, 24 Sep 2024 03:10:41 GMT  
-		Size: 6.9 MB (6914087 bytes)  
+	-	`sha256:7fd91b486c8e82a7dbc7b8eed3d3073196e8acc40c132dd27e27fc78d4adcee0`  
+		Last Modified: Sat, 28 Sep 2024 03:41:46 GMT  
+		Size: 6.9 MB (6914100 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:65f22a24e3a9aae5b5daf3f7cc9597edc1e42b7c86c49cea8fe4d9152f5899a5`  
-		Last Modified: Tue, 24 Sep 2024 03:10:41 GMT  
+	-	`sha256:77b6e999378f47a9d97df5e1a63b7efc2b7aa03e528842be7c357d3b7cd8cee9`  
+		Last Modified: Sat, 28 Sep 2024 03:41:45 GMT  
 		Size: 18.9 KB (18921 bytes)  
 		MIME: application/vnd.in-toto+json
