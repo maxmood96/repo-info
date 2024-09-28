@@ -9159,11 +9159,21 @@ $ docker pull cassandra@sha256:bc93f860f3fd4494e091a48a0e0113c104a287de19a755963
 
 ## `cassandra:4.0.14`
 
-**does not exist** (yet?)
+```console
+$ docker pull cassandra@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `cassandra:4.0.14-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull cassandra@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `cassandra:4.1`
 
@@ -10645,11 +10655,21 @@ $ docker pull cassandra@sha256:a64720631ebd89ad9acebd5c11ec77c99bac5683df2127fc4
 
 ## `cassandra:4.1.7`
 
-**does not exist** (yet?)
+```console
+$ docker pull cassandra@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `cassandra:4.1.7-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull cassandra@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `cassandra:5`
 
