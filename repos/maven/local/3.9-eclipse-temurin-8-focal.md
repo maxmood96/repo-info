@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:01ae86d2278af98a2e62e33abbe60eba5ee244034aabe0a033440581be747115`
-- Created: `2024-08-19T08:57:28Z`
-- Virtual Size: ~ 417.89 Mb  
+- Image ID: `sha256:f91ab682ad50fcc4c7415ba1941014b5b6a5d7f415df6b2859119a36bcd69104`
+- Created: `2024-08-20T18:12:59Z`
+- Virtual Size: ~ 420.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -230,11 +230,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-2
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-2.debian.tar.bz2' bzip2_1.0.8-2.debian.tar.bz2 26032 SHA256:237c8619bc9bc16f357b1077064a3e58aa1a230dadb4b9bb3bd8dc8f454afc0b
 ```
 
-### `dpkg` source package: `ca-certificates=20230311ubuntu0.20.04.1`
+### `dpkg` source package: `ca-certificates=20240203~20.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20230311ubuntu0.20.04.1`
+- `ca-certificates=20240203~20.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -245,9 +245,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ca-certificates=20230311ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20230311ubuntu0.20.04.1.dsc' ca-certificates_20230311ubuntu0.20.04.1.dsc 1878 SHA512:c7467aa631350d55392202ac5bdb5e563aac876f9227cef4f27f67b3141ff3cb1dd57622fb289c93615f7128afa83c69cde021e666da3d1a0983b40547726abc
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20230311ubuntu0.20.04.1.tar.xz' ca-certificates_20230311ubuntu0.20.04.1.tar.xz 258156 SHA512:20019eab231507f708befea65d68cd0a1ad2143dd2cb2328be53f341d5c82c1c6b717188c83b147a6193be2c82ffc8003d627c655dcd756d5f5c76b9772a714e
+$ apt-get source -qq --print-uris ca-certificates=20240203~20.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20240203%7e20.04.1.dsc' ca-certificates_20240203~20.04.1.dsc 1850 SHA512:a5824851813f0c9994a26fa02c88f7c027e4ba6d2391274b11b5b12951460564d422595b386baa59ed0d81c4028089cd5ebfc6a1ab19874c0dbcc87e3aea26a2
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20240203%7e20.04.1.tar.xz' ca-certificates_20240203~20.04.1.tar.xz 263352 SHA512:a0d2af75999aa73500f34f7f36e3dbdc0a5dedf56713727531afd67f9c680ff28510fc2427056c9f7291afd9f17cccbb1ee906512e2955824a97b4c65b7889b9
 ```
 
 ### `dpkg` source package: `cdebconf=0.251ubuntu1`

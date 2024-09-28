@@ -1,10 +1,10 @@
-# `maven:3.9.9-eclipse-temurin-22-alpine`
+# `maven:3.9.9-eclipse-temurin-23-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2e942fab4fa3dfb48b347b64b85cf119ec2dfe5c760ff5b65092fffa7496eea4`
-- Created: `2024-08-19T08:57:28Z`
-- Virtual Size: ~ 363.48 Mb  
+- Image ID: `sha256:871096e2d306617a59e6af58dd61e404f7a24380d0727cef798dacb0a7251ac5`
+- Created: `2024-09-23T17:02:08Z`
+- Virtual Size: ~ 374.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-22.0.2+9`
+  - `JAVA_VERSION=jdk-23+37`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 - Labels:
@@ -182,16 +182,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.28.1-r0 description:
+c-ares-1.33.1-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.28.1-r0 webpage:
+c-ares-1.33.1-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.28.1-r0 installed size:
-156 KiB
+c-ares-1.33.1-r0 installed size:
+168 KiB
 
-c-ares-1.28.1-r0 license:
+c-ares-1.33.1-r0 license:
 MIT
 
 ```

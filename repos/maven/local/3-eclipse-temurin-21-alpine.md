@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:088b32ea5935c7b9cb5f63c5ac7ee60db4794b919223cf6d47f1819d9ef5df78`
-- Created: `2024-08-19T08:57:28Z`
-- Virtual Size: ~ 367.71 Mb  
+- Image ID: `sha256:c71fb5710cb657065498f0e63637e8857ab7fc364adbdbff7c38ef3d16082354`
+- Created: `2024-08-20T18:12:59Z`
+- Virtual Size: ~ 367.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -182,16 +182,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.28.1-r0 description:
+c-ares-1.33.1-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.28.1-r0 webpage:
+c-ares-1.33.1-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.28.1-r0 installed size:
-156 KiB
+c-ares-1.33.1-r0 installed size:
+168 KiB
 
-c-ares-1.28.1-r0 license:
+c-ares-1.33.1-r0 license:
 MIT
 
 ```

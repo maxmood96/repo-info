@@ -1,10 +1,10 @@
-# `maven:3.9.9-amazoncorretto-11`
+# `maven:3.9.9-amazoncorretto-17`
 
 ## Docker Metadata
 
-- Image ID: `sha256:31d2a602101814efd5d853a9a2e255c0406401cfd6c3953ac45acc15feb91bfa`
-- Created: `2024-08-19T08:57:28Z`
-- Virtual Size: ~ 922.43 Mb  
+- Image ID: `sha256:66ee6634e66f839544211edf27b6f8d5cf499aa969f07dc4be5db65cb9cad832`
+- Created: `2024-08-20T18:12:59Z`
+- Virtual Size: ~ 936.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto`
+  - `JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 - Labels:
@@ -552,7 +552,7 @@ $ dnf --quiet download --source --url info-5.1-5.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/e075f98fb34f82e579bd41926bab9f1aa6a1060ac23407bcb142bc53b161f337/../../../../../blobstore/968c079ef8a8a2efee76ff59cd99e06dd242b8813960171d0f5c23f4a6eb0bb2/texinfo-5.1-5.amzn2.src.rpm
 ```
 
-### `rpm` package: `java-11-amazon-corretto-devel-11.0.24.8-1.x86_64`
+### `rpm` package: `java-17-amazon-corretto-devel-17.0.12.7-1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 

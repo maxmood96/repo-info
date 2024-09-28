@@ -1,17 +1,17 @@
-# `maven:3.9.9-sapmachine-22`
+# `maven:3.9.9-sapmachine-23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b489991ed7754a38b225beccf50e6e9467c12ba04d1a90ebee16378c0a482789`
-- Created: `2024-08-19T08:57:28Z`
-- Virtual Size: ~ 544.25 Mb  
+- Image ID: `sha256:e6c8532505248250d8bc55ccff91d631efb95094069c312ffc70bea820388548`
+- Created: `2024-09-23T17:02:08Z`
+- Virtual Size: ~ 554.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
 - Command: `["mvn"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/lib/jvm/sapmachine-22`
+  - `JAVA_HOME=/usr/lib/jvm/sapmachine-23`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 - Labels:
