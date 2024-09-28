@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:40effc2614774f68842d37e327cd96de964751fb6030928e943ced0c0e606faa`
-- Created: `2024-09-05T03:16:10.740148192Z`
-- Virtual Size: ~ 572.10 Mb  
+- Image ID: `sha256:7e07774eb74b9507f9ce13803ffc7eca3b18dcff196686a84a0c09d62daaf66d`
+- Created: `2024-09-27T09:49:23.622091675Z`
+- Virtual Size: ~ 572.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.23`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.23.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.23.tar.xz.asc`
-  - `PHP_SHA256=81c5ae6ba44e262a076349ee54a2e468638a4571085d80bff37f6fd308e1d8d5`
+  - `PHP_VERSION=8.2.24`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.24.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.24.tar.xz.asc`
+  - `PHP_SHA256=80a5225746a9eb484475b312d4c626c63a88a037d8e56d214f30205e1ba1411a`
   - `GOSU_VERSION=1.14`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
@@ -85,11 +85,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.118+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.118+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `aom=1.0.0.errata1-3+deb11u1`
+### `dpkg` source package: `aom=1.0.0.errata1-3+deb11u2`
 
 Binary Packages:
 
-- `libaom0:amd64=1.0.0.errata1-3+deb11u1`
+- `libaom0:amd64=1.0.0.errata1-3+deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/libaom0/copyright`)
 
@@ -103,17 +103,17 @@ Licenses: (parsed from: `/usr/share/doc/libaom0/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris aom=1.0.0.errata1-3+deb11u1
-'http://deb.debian.org/debian/pool/main/a/aom/aom_1.0.0.errata1-3%2bdeb11u1.dsc' aom_1.0.0.errata1-3+deb11u1.dsc 2407 SHA256:38ff7982c5d0e0a436f260e783c4c9324f89dc54f830436d8f0e79440e00b7de
-'http://deb.debian.org/debian/pool/main/a/aom/aom_1.0.0.errata1.orig.tar.xz' aom_1.0.0.errata1.orig.tar.xz 1898808 SHA256:1dd501c622d871acf31fb942bd3b73a00883fc10f7c498fec97b22c858ca415f
-'http://deb.debian.org/debian/pool/main/a/aom/aom_1.0.0.errata1-3%2bdeb11u1.debian.tar.xz' aom_1.0.0.errata1-3+deb11u1.debian.tar.xz 24748 SHA256:5f95bc34e84be5bd0610ac96ac72f1a2a42944e8b4d990b8c50edc22b4defcac
+$ apt-get source -qq --print-uris aom=1.0.0.errata1-3+deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/a/aom/aom_1.0.0.errata1-3%2bdeb11u2.dsc' aom_1.0.0.errata1-3+deb11u2.dsc 2256 SHA256:d3a9daaace3b4990fdbf81dc13ebe056b21a052338fd2f1e723fdb404784a6a8
+'http://deb.debian.org/debian-security/pool/updates/main/a/aom/aom_1.0.0.errata1.orig.tar.xz' aom_1.0.0.errata1.orig.tar.xz 1898808 SHA256:1dd501c622d871acf31fb942bd3b73a00883fc10f7c498fec97b22c858ca415f
+'http://deb.debian.org/debian-security/pool/updates/main/a/aom/aom_1.0.0.errata1-3%2bdeb11u2.debian.tar.xz' aom_1.0.0.errata1-3+deb11u2.debian.tar.xz 27692 SHA256:2e58c34c4617544c5c84ec3bdf658c463d03ea4c2a67d0ceadf1772dc3d672dd
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/aom/1.0.0.errata1-3+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/aom/1.0.0.errata1-3+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/aom/1.0.0.errata1-3+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/aom/1.0.0.errata1-3+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/aom/1.0.0.errata1-3+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/aom/1.0.0.errata1-3+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apache2=2.4.62-1~deb11u1`
 
@@ -898,11 +898,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.46.2-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.46.2-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.2.10-2+deb11u5`
+### `dpkg` source package: `expat=2.2.10-2+deb11u6`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.2.10-2+deb11u5`
+- `libexpat1:amd64=2.2.10-2+deb11u6`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
@@ -911,17 +911,17 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.2.10-2+deb11u5
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.10-2%2bdeb11u5.dsc' expat_2.2.10-2+deb11u5.dsc 2175 SHA256:5bbf7d1df4aa4fb5d31141b58dc08a687918c1685c48300bc3f67a8f56fe3071
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.10.orig.tar.gz' expat_2.2.10.orig.tar.gz 8276395 SHA256:62e280f5fd29a5b70973f623e20a7412c3e3912c2684cb0e462e2c881be129e1
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.10-2%2bdeb11u5.debian.tar.xz' expat_2.2.10-2+deb11u5.debian.tar.xz 29468 SHA256:b24f586a155c207b2dbf6db1b6e4106427150acdd3a654c00c52d400da70d23d
+$ apt-get source -qq --print-uris expat=2.2.10-2+deb11u6
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10-2%2bdeb11u6.dsc' expat_2.2.10-2+deb11u6.dsc 2020 SHA256:7227fe4cce0d7b0d43bab1d5662cf060fbd8fabe9e82a36827a9265a29ee2a5a
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10.orig.tar.gz' expat_2.2.10.orig.tar.gz 8276395 SHA256:62e280f5fd29a5b70973f623e20a7412c3e3912c2684cb0e462e2c881be129e1
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10-2%2bdeb11u6.debian.tar.xz' expat_2.2.10-2+deb11u6.debian.tar.xz 67904 SHA256:74ea952e8094b333125dde907c29618724946cef660828d1f48d1bfc3bef574d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/expat/2.2.10-2+deb11u5/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.2.10-2+deb11u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.2.10-2+deb11u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/expat/2.2.10-2+deb11u6/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.2.10-2+deb11u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.2.10-2+deb11u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fftw3=3.3.8-2`
 
@@ -1369,11 +1369,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg2/2.2.27-2+deb11u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg2/2.2.27-2+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnutls28=3.7.1-5+deb11u5`
+### `dpkg` source package: `gnutls28=3.7.1-5+deb11u6`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.7.1-5+deb11u5`
+- `libgnutls30:amd64=3.7.1-5+deb11u6`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -1394,18 +1394,18 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.7.1-5+deb11u5
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u5.dsc' gnutls28_3.7.1-5+deb11u5.dsc 3522 SHA256:2d36c3fefd269c3f92d6a1f6bbb752e6e9585410dc8bb834a723eaf693cb0082
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz' gnutls28_3.7.1.orig.tar.xz 6038388 SHA256:3777d7963eca5e06eb315686163b7b3f5045e2baac5e54e038ace9835e5cac6f
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz.asc' gnutls28_3.7.1.orig.tar.xz.asc 854 SHA256:13a683b12602c169a7ad7827ab0e3f35c8fa1f98675d0073cf7d54a8cd635582
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u5.debian.tar.xz' gnutls28_3.7.1-5+deb11u5.debian.tar.xz 100560 SHA256:b50f57600d68d03fe88f116db6a103647d4f361c7f1909c23ce75cf4454567ec
+$ apt-get source -qq --print-uris gnutls28=3.7.1-5+deb11u6
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u6.dsc' gnutls28_3.7.1-5+deb11u6.dsc 3522 SHA256:39849c7a4973f6b4daf89bdcce49956613b8321140934d288dfdb129bcc2be6a
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz' gnutls28_3.7.1.orig.tar.xz 6038388 SHA256:3777d7963eca5e06eb315686163b7b3f5045e2baac5e54e038ace9835e5cac6f
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz.asc' gnutls28_3.7.1.orig.tar.xz.asc 854 SHA256:13a683b12602c169a7ad7827ab0e3f35c8fa1f98675d0073cf7d54a8cd635582
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u6.debian.tar.xz' gnutls28_3.7.1-5+deb11u6.debian.tar.xz 109212 SHA256:90bba2ee9e3d6ce7c711bef1a7dded19a3037279df43b1e53633e02845252d73
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u5/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u6/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.6-1+deb11u1`
 
