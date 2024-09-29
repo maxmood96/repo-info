@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b13be4a51a8181506ef2b04f1337a314fc78b74dd6869deda6ed97ba6de14b75`
+- Image ID: `sha256:b96c43093f4705adaa86c079a5ffd7ef253d5a3cde50a652e9c22d801cdde4e9`
 - Created: `2024-09-06T16:59:26Z`
 - Virtual Size: ~ 556.45 Mb  
   (total size of all layers on-disk)
@@ -629,11 +629,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.46.2-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.46.2-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.2.10-2+deb11u5`
+### `dpkg` source package: `expat=2.2.10-2+deb11u6`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.2.10-2+deb11u5`
+- `libexpat1:amd64=2.2.10-2+deb11u6`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
@@ -642,17 +642,17 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.2.10-2+deb11u5
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.10-2%2bdeb11u5.dsc' expat_2.2.10-2+deb11u5.dsc 2175 SHA256:5bbf7d1df4aa4fb5d31141b58dc08a687918c1685c48300bc3f67a8f56fe3071
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.10.orig.tar.gz' expat_2.2.10.orig.tar.gz 8276395 SHA256:62e280f5fd29a5b70973f623e20a7412c3e3912c2684cb0e462e2c881be129e1
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.2.10-2%2bdeb11u5.debian.tar.xz' expat_2.2.10-2+deb11u5.debian.tar.xz 29468 SHA256:b24f586a155c207b2dbf6db1b6e4106427150acdd3a654c00c52d400da70d23d
+$ apt-get source -qq --print-uris expat=2.2.10-2+deb11u6
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10-2%2bdeb11u6.dsc' expat_2.2.10-2+deb11u6.dsc 2020 SHA256:7227fe4cce0d7b0d43bab1d5662cf060fbd8fabe9e82a36827a9265a29ee2a5a
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10.orig.tar.gz' expat_2.2.10.orig.tar.gz 8276395 SHA256:62e280f5fd29a5b70973f623e20a7412c3e3912c2684cb0e462e2c881be129e1
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.2.10-2%2bdeb11u6.debian.tar.xz' expat_2.2.10-2+deb11u6.debian.tar.xz 67904 SHA256:74ea952e8094b333125dde907c29618724946cef660828d1f48d1bfc3bef574d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/expat/2.2.10-2+deb11u5/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.2.10-2+deb11u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.2.10-2+deb11u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/expat/2.2.10-2+deb11u6/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.2.10-2+deb11u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.2.10-2+deb11u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.8.0-1`
 
@@ -909,11 +909,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg2/2.2.27-2+deb11u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg2/2.2.27-2+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnutls28=3.7.1-5+deb11u5`
+### `dpkg` source package: `gnutls28=3.7.1-5+deb11u6`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.7.1-5+deb11u5`
+- `libgnutls30:amd64=3.7.1-5+deb11u6`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -934,18 +934,18 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.7.1-5+deb11u5
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u5.dsc' gnutls28_3.7.1-5+deb11u5.dsc 3522 SHA256:2d36c3fefd269c3f92d6a1f6bbb752e6e9585410dc8bb834a723eaf693cb0082
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz' gnutls28_3.7.1.orig.tar.xz 6038388 SHA256:3777d7963eca5e06eb315686163b7b3f5045e2baac5e54e038ace9835e5cac6f
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz.asc' gnutls28_3.7.1.orig.tar.xz.asc 854 SHA256:13a683b12602c169a7ad7827ab0e3f35c8fa1f98675d0073cf7d54a8cd635582
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u5.debian.tar.xz' gnutls28_3.7.1-5+deb11u5.debian.tar.xz 100560 SHA256:b50f57600d68d03fe88f116db6a103647d4f361c7f1909c23ce75cf4454567ec
+$ apt-get source -qq --print-uris gnutls28=3.7.1-5+deb11u6
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u6.dsc' gnutls28_3.7.1-5+deb11u6.dsc 3522 SHA256:39849c7a4973f6b4daf89bdcce49956613b8321140934d288dfdb129bcc2be6a
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz' gnutls28_3.7.1.orig.tar.xz 6038388 SHA256:3777d7963eca5e06eb315686163b7b3f5045e2baac5e54e038ace9835e5cac6f
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz.asc' gnutls28_3.7.1.orig.tar.xz.asc 854 SHA256:13a683b12602c169a7ad7827ab0e3f35c8fa1f98675d0073cf7d54a8cd635582
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u6.debian.tar.xz' gnutls28_3.7.1-5+deb11u6.debian.tar.xz 109212 SHA256:90bba2ee9e3d6ce7c711bef1a7dded19a3037279df43b1e53633e02845252d73
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u5/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u6/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.6-1+deb11u1`
 
