@@ -1,9 +1,9 @@
-# `odoo:17.0-20240912`
+# `odoo:17.0-20240924`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1b9785ec55b41b38fec60054d5fbd60868ca62b382a1e440744f4e92b3f0dd89`
-- Created: `2024-09-12T09:27:03Z`
+- Image ID: `sha256:bc8e70aff2d8f640351cf4382eb68c37d89602eaaf8eac70918e3082dd3caef7`
+- Created: `2024-09-24T07:24:50Z`
 - Virtual Size: ~ 1.79 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -314,13 +314,9 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ca-certificates=20230311ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20230311ubuntu0.22.04.1.dsc' ca-certificates_20230311ubuntu0.22.04.1.dsc 1878 SHA512:374985f61650e5428d3c37421085a2b04b9340737071a6f04d9b28c7d5f448d5f33ff780fe37da6c98690248bc3845f2ec6201967bb2e4e0ad32afd491e37ba3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20230311ubuntu0.22.04.1.tar.xz' ca-certificates_20230311ubuntu0.22.04.1.tar.xz 257832 SHA512:fc8e573ef51f61eec3b7ffedd7e91f65fda6fd13093c94aff2b375a0a64653d03a1241ed04517d4c7a6c6bb16f866cea4bed87ea576aad5dd9992098805ff6d2
-```
 
 ### `dpkg` source package: `cached-property=1.5.2-1`
 
@@ -689,19 +685,24 @@ $ apt-get source -qq --print-uris e2fsprogs=1.46.5-2ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5-2ubuntu1.2.debian.tar.xz' e2fsprogs_1.46.5-2ubuntu1.2.debian.tar.xz 86604 SHA512:acb7f22a63d9c0e58d626af655cdcb6e6cfcedafdd7edbc6b7b757d1b388ee04c416db98c577a8cdf2259c46ea16a679f9be770374515b21d93bd0af66bd2a1d
 ```
 
-### `dpkg` source package: `expat=2.4.7-1ubuntu0.3`
+### `dpkg` source package: `expat=2.4.7-1ubuntu0.4`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.4.7-1ubuntu0.3`
+- `libexpat1:amd64=2.4.7-1ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris expat=2.4.7-1ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.4.dsc' expat_2.4.7-1ubuntu0.4.dsc 1962 SHA512:e6cdab825e628b38ecb908535f1cec5ac2289c53255e645b57b3269cf5deec21e3d64a802e288b0dda75dad0408c1fa8e64c921e611dcef5553e55f5fe2ddf44
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7.orig.tar.gz' expat_2.4.7.orig.tar.gz 8316374 SHA512:91bc9792c4ba1d0ad835f633d8cfa62130692f48308eea8932ec5e13a01542120561b0f255b4adc58b1adae6f83632cbabf428b5b5c0d2ac6de542478a951232
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.4.debian.tar.xz' expat_2.4.7-1ubuntu0.4.debian.tar.xz 23076 SHA512:64348f4a3a8306c765c0cd3d1de57d484780d081d747889ff590309c8e0c30c229557d504528e29d3b48ad81bf534b7605c38e11da469c69ce48526af9b55078
+```
 
 ### `dpkg` source package: `file=1:5.41-3ubuntu0.1`
 
@@ -5701,11 +5702,11 @@ $ apt-get source -qq --print-uris npth=1.6-3build2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3build2.debian.tar.xz' npth_1.6-3build2.debian.tar.xz 10904 SHA512:426ab3ab9e27b3701d67cde0a4c4040aa9ccac22a0266321824487fe80a118ccd6860b6fa0fb5ca3c46dfa3c20053889fbb51a2e74618065b3aff059a0216c4c
 ```
 
-### `dpkg` source package: `odoo=17.0.20240912`
+### `dpkg` source package: `odoo=17.0.20240924`
 
 Binary Packages:
 
-- `odoo=17.0.20240912`
+- `odoo=17.0.20240924`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
