@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:034f35baf29c731e2b1b29ff3f5b333bc20430d6dadc4a57697a5b0a0fd49464`
+- Image ID: `sha256:9dfc7c79a124db2c0a6f6fa94c695b9fee5c6a995bc17a2cb4fca67b27ca3bed`
 - Created: `2024-06-05T22:17:43Z`
-- Virtual Size: ~ 467.87 Mb  
+- Virtual Size: ~ 467.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.29`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.29.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.29.tar.xz.asc`
-  - `PHP_SHA256=288884af60581d4284baba2ace9ca6d646f72facbd3e3c2dd2acc7fe6f903536`
+  - `PHP_VERSION=8.1.30`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.30.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.30.tar.xz.asc`
+  - `PHP_SHA256=f24a6007f0b25a53cb7fbaee69c85017e0345b62089c2425a0afb7e177192ed1`
   - `DRUPAL_VERSION=7.101`
   - `DRUPAL_URL=https://ftp.drupal.org/files/projects/drupal-7.101.tar.gz`
   - `DRUPAL_MD5=ddcd8cb4e885ae865a3d1a8b06707a67`
@@ -1098,11 +1098,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gnupg2/2.2.27-2+deb11u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gnupg2/2.2.27-2+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `gnutls28=3.7.1-5+deb11u5`
+### `dpkg` source package: `gnutls28=3.7.1-5+deb11u6`
 
 Binary Packages:
 
-- `libgnutls30:amd64=3.7.1-5+deb11u5`
+- `libgnutls30:amd64=3.7.1-5+deb11u6`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -1123,18 +1123,18 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnutls28=3.7.1-5+deb11u5
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u5.dsc' gnutls28_3.7.1-5+deb11u5.dsc 3522 SHA256:2d36c3fefd269c3f92d6a1f6bbb752e6e9585410dc8bb834a723eaf693cb0082
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz' gnutls28_3.7.1.orig.tar.xz 6038388 SHA256:3777d7963eca5e06eb315686163b7b3f5045e2baac5e54e038ace9835e5cac6f
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz.asc' gnutls28_3.7.1.orig.tar.xz.asc 854 SHA256:13a683b12602c169a7ad7827ab0e3f35c8fa1f98675d0073cf7d54a8cd635582
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u5.debian.tar.xz' gnutls28_3.7.1-5+deb11u5.debian.tar.xz 100560 SHA256:b50f57600d68d03fe88f116db6a103647d4f361c7f1909c23ce75cf4454567ec
+$ apt-get source -qq --print-uris gnutls28=3.7.1-5+deb11u6
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u6.dsc' gnutls28_3.7.1-5+deb11u6.dsc 3522 SHA256:39849c7a4973f6b4daf89bdcce49956613b8321140934d288dfdb129bcc2be6a
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz' gnutls28_3.7.1.orig.tar.xz 6038388 SHA256:3777d7963eca5e06eb315686163b7b3f5045e2baac5e54e038ace9835e5cac6f
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz.asc' gnutls28_3.7.1.orig.tar.xz.asc 854 SHA256:13a683b12602c169a7ad7827ab0e3f35c8fa1f98675d0073cf7d54a8cd635582
+'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u6.debian.tar.xz' gnutls28_3.7.1-5+deb11u6.debian.tar.xz 109212 SHA256:90bba2ee9e3d6ce7c711bef1a7dded19a3037279df43b1e53633e02845252d73
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u5/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u6/ (for browsing the source)
+- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.6-1+deb11u1`
 

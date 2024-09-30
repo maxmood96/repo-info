@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b95288af794175345f3bd0fe66cce6a24bfe0fe7f0f17a3a15a8bf104ef89436`
+- Image ID: `sha256:80b0cd257fa2f95b4bf4dee5703a71d085d32f50ab88ef6e7da314755727bc50`
 - Created: `2024-06-05T22:17:43Z`
-- Virtual Size: ~ 96.35 Mb  
+- Virtual Size: ~ 97.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.29`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.29.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.29.tar.xz.asc`
-  - `PHP_SHA256=288884af60581d4284baba2ace9ca6d646f72facbd3e3c2dd2acc7fe6f903536`
+  - `PHP_VERSION=8.1.30`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.30.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.30.tar.xz.asc`
+  - `PHP_SHA256=f24a6007f0b25a53cb7fbaee69c85017e0345b62089c2425a0afb7e177192ed1`
   - `DRUPAL_VERSION=7.101`
   - `DRUPAL_URL=https://ftp.drupal.org/files/projects/drupal-7.101.tar.gz`
   - `DRUPAL_MD5=ddcd8cb4e885ae865a3d1a8b06707a67`
@@ -217,16 +217,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.9.0-r0 description:
+curl-8.9.1-r0 description:
 URL retrival utility and library
 
-curl-8.9.0-r0 webpage:
+curl-8.9.1-r0 webpage:
 https://curl.se/
 
-curl-8.9.0-r0 installed size:
+curl-8.9.1-r0 installed size:
 248 KiB
 
-curl-8.9.0-r0 license:
+curl-8.9.1-r0 license:
 curl
 
 ```
@@ -336,16 +336,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.9.0-r0 description:
+libcurl-8.9.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.9.0-r0 webpage:
+libcurl-8.9.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.9.0-r0 installed size:
+libcurl-8.9.1-r0 installed size:
 628 KiB
 
-libcurl-8.9.0-r0 license:
+libcurl-8.9.1-r0 license:
 curl
 
 ```
@@ -421,16 +421,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.40-r0 description:
+libpng-1.6.44-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.40-r0 webpage:
+libpng-1.6.44-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.40-r0 installed size:
+libpng-1.6.44-r0 installed size:
 200 KiB
 
-libpng-1.6.40-r0 license:
+libpng-1.6.44-r0 license:
 Libpng
 
 ```
@@ -438,16 +438,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-16.3-r0 description:
+libpq-16.4-r0 description:
 PostgreSQL client library
 
-libpq-16.3-r0 webpage:
+libpq-16.4-r0 webpage:
 https://www.postgresql.org/
 
-libpq-16.3-r0 installed size:
+libpq-16.4-r0 installed size:
 328 KiB
 
-libpq-16.3-r0 license:
+libpq-16.4-r0 license:
 PostgreSQL
 
 ```

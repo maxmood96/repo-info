@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ba555f3859e3c3833b1472c45eb39466b12fe29871d6cd82a5d61262271fc9db`
+- Image ID: `sha256:d49a415855db0fc387127c1e384ff702c4323dcb32f56580357c0ae14998c311`
 - Created: `2024-09-12T15:27:17Z`
-- Virtual Size: ~ 176.27 Mb  
+- Virtual Size: ~ 177.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.23`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.23.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.23.tar.xz.asc`
-  - `PHP_SHA256=81c5ae6ba44e262a076349ee54a2e468638a4571085d80bff37f6fd308e1d8d5`
+  - `PHP_VERSION=8.2.24`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.24.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.24.tar.xz.asc`
+  - `PHP_SHA256=80a5225746a9eb484475b312d4c626c63a88a037d8e56d214f30205e1ba1411a`
   - `DRUPAL_VERSION=10.3.5`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
@@ -216,16 +216,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.9.0-r0 description:
+curl-8.9.1-r0 description:
 URL retrival utility and library
 
-curl-8.9.0-r0 webpage:
+curl-8.9.1-r0 webpage:
 https://curl.se/
 
-curl-8.9.0-r0 installed size:
+curl-8.9.1-r0 installed size:
 248 KiB
 
-curl-8.9.0-r0 license:
+curl-8.9.1-r0 license:
 curl
 
 ```
@@ -335,16 +335,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.9.0-r0 description:
+libcurl-8.9.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.9.0-r0 webpage:
+libcurl-8.9.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.9.0-r0 installed size:
+libcurl-8.9.1-r0 installed size:
 628 KiB
 
-libcurl-8.9.0-r0 license:
+libcurl-8.9.1-r0 license:
 curl
 
 ```
@@ -420,16 +420,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.40-r0 description:
+libpng-1.6.44-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.40-r0 webpage:
+libpng-1.6.44-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.40-r0 installed size:
+libpng-1.6.44-r0 installed size:
 200 KiB
 
-libpng-1.6.40-r0 license:
+libpng-1.6.44-r0 license:
 Libpng
 
 ```
@@ -437,16 +437,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-16.3-r0 description:
+libpq-16.4-r0 description:
 PostgreSQL client library
 
-libpq-16.3-r0 webpage:
+libpq-16.4-r0 webpage:
 https://www.postgresql.org/
 
-libpq-16.3-r0 installed size:
+libpq-16.4-r0 installed size:
 328 KiB
 
-libpq-16.3-r0 license:
+libpq-16.4-r0 license:
 PostgreSQL
 
 ```
