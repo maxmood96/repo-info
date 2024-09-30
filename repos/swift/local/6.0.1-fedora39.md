@@ -1,10 +1,10 @@
-# `swift:6.0.0-fedora39`
+# `swift:6.0.1-fedora39`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f9b27427f0d03ea0475fd37e4b85aa900cd0e514608d9b5067f4b6ac5b5f3c24`
-- Created: `2024-09-17T00:51:42Z`
-- Virtual Size: ~ 3.51 Gb  
+- Image ID: `sha256:500ac71fca1f3f08d3f7a563d3e2c965f5aacb79ad3b645c82e13db246a33482`
+- Created: `2024-09-25T05:07:02Z`
+- Virtual Size: ~ 3.56 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -15,8 +15,8 @@
   - `FBR=f39`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=fedora39`
-  - `SWIFT_BRANCH=swift-6.0-release`
-  - `SWIFT_VERSION=swift-6.0-RELEASE`
+  - `SWIFT_BRANCH=swift-6.0.1-release`
+  - `SWIFT_VERSION=swift-6.0.1-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
