@@ -1,10 +1,10 @@
-# `postgres:16.4-alpine3.20`
+# `postgres:17.0-alpine3.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8c93ef98899116c5894541768dfab8a4f8ac03ae6c4bd0ccb2593439598a99e9`
-- Created: `2024-08-08T17:20:28Z`
-- Virtual Size: ~ 244.93 Mb  
+- Image ID: `sha256:bb46dc8bfad7db529491f36c04715a9b63f57af0721563435ab17cdb90f6017f`
+- Created: `2024-09-26T18:19:57Z`
+- Virtual Size: ~ 248.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,9 +13,9 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.17`
   - `LANG=en_US.utf8`
-  - `PG_MAJOR=16`
-  - `PG_VERSION=16.4`
-  - `PG_SHA256=971766d645aa73e93b9ef4e3be44201b4f45b5477095b049125403f9f3386d6f`
+  - `PG_MAJOR=17`
+  - `PG_VERSION=17.0`
+  - `PG_SHA256=7e276131c0fdd6b62588dbad9b3bb24b8c3498d5009328dba59af16e819109de`
   - `DOCKER_PG_LLVM_DEPS=llvm15-dev 		clang15`
   - `PGDATA=/var/lib/postgresql/data`
 
@@ -381,16 +381,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.7-r0 description:
+libldap-2.6.8-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.7-r0 webpage:
+libldap-2.6.8-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.7-r0 installed size:
+libldap-2.6.8-r0 installed size:
 392 KiB
 
-libldap-2.6.7-r0 license:
+libldap-2.6.8-r0 license:
 OLDAP-2.8
 
 ```
@@ -398,16 +398,16 @@ OLDAP-2.8
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r0 description:
+libncursesw-6.4_p20240420-r1 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r0 webpage:
+libncursesw-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r0 installed size:
+libncursesw-6.4_p20240420-r1 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r0 license:
+libncursesw-6.4_p20240420-r1 license:
 X11
 
 ```
@@ -602,16 +602,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r0 description:
+ncurses-terminfo-base-6.4_p20240420-r1 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r0 webpage:
+ncurses-terminfo-base-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r0 installed size:
+ncurses-terminfo-base-6.4_p20240420-r1 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r0 license:
+ncurses-terminfo-base-6.4_p20240420-r1 license:
 X11
 
 ```
