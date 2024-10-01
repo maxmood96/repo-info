@@ -1168,19 +1168,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.66
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.66.dsc' init-system-helpers_1.66.dsc 2234 SHA256:a1e2276879abfe63174797c94969bc8591b8a05f2bad6ae3f27379b472877d6d
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.66.tar.xz' init-system-helpers_1.66.tar.xz 44976 SHA256:da058b5623a7d3f39aee1761b173478fdbbdfdf743fd66e876e56039c708ce53
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/init-system-helpers/1.66/
 
-- https://sources.debian.net/src/init-system-helpers/1.66/ (for browsing the source)
-- https://sources.debian.net/src/init-system-helpers/1.66/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/init-system-helpers/1.66/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.6.3-3`
 
@@ -2688,19 +2682,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.12.5-1
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.12.5-1.dsc' python3-defaults_3.12.5-1.dsc 2988 SHA256:86efd3dc9c1c40b9644f6f9897aaf9daadd0ce09cfe8132d1c362ba8e0d142c6
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.12.5-1.tar.gz' python3-defaults_3.12.5-1.tar.gz 146980 SHA256:8ff81bda69d4c459fd747ef8b4f5d816fd54910114c18bc18ca9584ecb7d4fc0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-defaults/3.12.5-1/
 
-- https://sources.debian.net/src/python3-defaults/3.12.5-1/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.12.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.12.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.12=3.12.6-1`
 

@@ -2092,19 +2092,13 @@ Licenses: (parsed from: `/usr/share/doc/init-system-helpers/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris init-system-helpers=1.66
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.66.dsc' init-system-helpers_1.66.dsc 2234 SHA256:a1e2276879abfe63174797c94969bc8591b8a05f2bad6ae3f27379b472877d6d
-'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.66.tar.xz' init-system-helpers_1.66.tar.xz 44976 SHA256:da058b5623a7d3f39aee1761b173478fdbbdfdf743fd66e876e56039c708ce53
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/init-system-helpers/1.66/
 
-- https://sources.debian.net/src/init-system-helpers/1.66/ (for browsing the source)
-- https://sources.debian.net/src/init-system-helpers/1.66/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/init-system-helpers/1.66/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `isl=0.27-1`
 
@@ -2819,20 +2813,13 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.18.1-2
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.18.1-2.dsc' libheif_1.18.1-2.dsc 3520 SHA256:d6f8bb3c5f979ff2d3ca15f1c4549bc1c6b6ccfbe07bf90aa9ab5971b8beca94
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.18.1.orig.tar.gz' libheif_1.18.1.orig.tar.gz 1524386 SHA256:8702564b0f288707ea72b260b3bf4ba9bf7abfa7dac01353def3a86acd6bbb76
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.18.1-2.debian.tar.xz' libheif_1.18.1-2.debian.tar.xz 11852 SHA256:455d7e0506420709620f9c59199f28afdf9010bb9efaa2ce76a33a9700c7de20
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libheif/1.18.1-2/
 
-- https://sources.debian.net/src/libheif/1.18.1-2/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.18.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.18.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.0.10-1`
 
@@ -3791,20 +3778,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3.dsc' libxml2_2.9.14+dfsg-1.3.dsc 3078 SHA256:e0e234b80e36389ec771edb6df0adde03f56ba5ad9b41f2d739de56a70850b68
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA256:4fe913dec8b1ab89d13b489b419a8203176ea39e931eaa0d25b17eafb9c279e9
-'http://deb.debian.org/debian/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3.debian.tar.xz' libxml2_2.9.14+dfsg-1.3.debian.tar.xz 35076 SHA256:138dbd0f7c116058ae3306ee0ad3a2fed9754645a129784aff0a69fcf63e53e6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.9.14+dfsg-1.3/
 
-- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.3/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.14+dfsg-1.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.14+dfsg-1.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1.1`
 
@@ -5019,20 +4999,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-17=17~rc1-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17%7erc1-1.dsc' postgresql-17_17~rc1-1.dsc 4284 SHA256:09f8d9dcba3746963858d490bd8c6ea075edac554d143ef17d972c4100ee33d6
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17%7erc1.orig.tar.bz2' postgresql-17_17~rc1.orig.tar.bz2 21451314 SHA256:cef689e2de8c3d605d8406c065573b8d70859fc6f2a8d720b0d98a6d62ef16e8
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17%7erc1-1.debian.tar.xz' postgresql-17_17~rc1-1.debian.tar.xz 24444 SHA256:7e29bb6613121ba9006511c2b884d6715fe00cc11ddab8a404e690d76a0879fe
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-17/17~rc1-1/
 
-- https://sources.debian.net/src/postgresql-17/17~rc1-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-17/17~rc1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-17/17~rc1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.4-5`
 
@@ -5103,19 +5076,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.12.5-1
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.12.5-1.dsc' python3-defaults_3.12.5-1.dsc 2988 SHA256:86efd3dc9c1c40b9644f6f9897aaf9daadd0ce09cfe8132d1c362ba8e0d142c6
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.12.5-1.tar.gz' python3-defaults_3.12.5-1.tar.gz 146980 SHA256:8ff81bda69d4c459fd747ef8b4f5d816fd54910114c18bc18ca9584ecb7d4fc0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-defaults/3.12.5-1/
 
-- https://sources.debian.net/src/python3-defaults/3.12.5-1/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.12.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.12.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.12=3.12.6-1`
 

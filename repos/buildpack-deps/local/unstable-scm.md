@@ -2661,20 +2661,13 @@ Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:4.0.4-5
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4-5.dsc' procps_4.0.4-5.dsc 2124 SHA256:aae3a3e796c488d1ba06f0cb5d2d0f36d1fd5c741fb293618197e95c1bf04f03
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4.orig.tar.xz' procps_4.0.4.orig.tar.xz 1401540 SHA256:22870d6feb2478adb617ce4f09a787addaf2d260c5a8aa7b17d889a962c5e42e
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4-5.debian.tar.xz' procps_4.0.4-5.debian.tar.xz 29300 SHA256:4e489d908bcda90e9f74434cdae7d8beb2bfd289e624321e4d8d8be45c68879e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/procps/2:4.0.4-5/
 
-- https://sources.debian.net/src/procps/2:4.0.4-5/ (for browsing the source)
-- https://sources.debian.net/src/procps/2:4.0.4-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/2:4.0.4-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.12.6-1`
 
