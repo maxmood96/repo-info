@@ -1,10 +1,10 @@
-# `sonarqube:10.6.0-community`
+# `sonarqube:10.7.0-community`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2433ac783140f6153874adca40e138aee5292aff56e776ac26197bbe0e7c8cff`
-- Created: `2024-07-24T09:49:45Z`
-- Virtual Size: ~ 1.07 Gb  
+- Image ID: `sha256:862025bf322cccb4aa2ccebec7c8c8e3f7f7bae05390a0bb96d4bbfeac3ef498`
+- Created: `2024-09-30T13:17:42Z`
+- Virtual Size: ~ 1.10 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/sonarqube/docker/entrypoint.sh"]`
@@ -17,12 +17,18 @@
   - `JAVA_VERSION=jdk-17.0.12+7`
   - `DOCKER_RUNNING=true`
   - `SONARQUBE_HOME=/opt/sonarqube`
-  - `SONAR_VERSION=10.6.0.92116`
+  - `SONAR_VERSION=10.7.0.96327`
   - `SQ_DATA_DIR=/opt/sonarqube/data`
   - `SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions`
   - `SQ_LOGS_DIR=/opt/sonarqube/logs`
   - `SQ_TEMP_DIR=/opt/sonarqube/temp`
+  - `ES_TMPDIR=/opt/sonarqube/temp`
 - Labels:
+  - `io.k8s.description=SonarQube is a self-managed, automatic code review tool that systematically helps you deliver Clean Code.`
+  - `io.openshift.min-cpu=400m`
+  - `io.openshift.min-memory=2048M`
+  - `io.openshift.non-scalable=true`
+  - `io.openshift.tags=sonarqube,static-code-analysis,code-quality,clean-code`
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.url=https://github.com/SonarSource/docker-sonarqube`
   - `org.opencontainers.image.version=22.04`
