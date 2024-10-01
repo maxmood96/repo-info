@@ -1,9 +1,9 @@
-# `gradle:8.10.1-jdk17-focal`
+# `gradle:8.10.2-jdk17-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0972a1e8453ff98887203e12ba3f96110b85ef66f66459f00b54e1e798356e52`
-- Created: `2024-09-09T18:59:34Z`
+- Image ID: `sha256:cbea746428da32b898a5fab24438a2e32ae2f10e05d8ca2538bc360c67699789`
+- Created: `2024-09-28T00:46:05Z`
 - Virtual Size: ~ 755.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.12+7`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.10.1`
+  - `GRADLE_VERSION=8.10.2`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=20.04`
@@ -84,11 +84,11 @@ $ apt-get source -qq --print-uris apr-util=1.6.1-4ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr-util/apr-util_1.6.1-4ubuntu2.2.debian.tar.xz' apr-util_1.6.1-4ubuntu2.2.debian.tar.xz 215044 SHA512:1957703ab59072905848cfc6bf14211512ee02264b9fb5fb1a32b164d95890f83d4c3dc0e0b50a17a361d4b70e83a26e6601091750f169730b0272bf36dfd80c
 ```
 
-### `dpkg` source package: `apr=1.6.5-1ubuntu1`
+### `dpkg` source package: `apr=1.6.5-1ubuntu1.1`
 
 Binary Packages:
 
-- `libapr1:amd64=1.6.5-1ubuntu1`
+- `libapr1:amd64=1.6.5-1ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libapr1/copyright`)
 
@@ -97,11 +97,11 @@ Licenses: (parsed from: `/usr/share/doc/libapr1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apr=1.6.5-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.5-1ubuntu1.dsc' apr_1.6.5-1ubuntu1.dsc 2390 SHA256:9e9d5b1be5c9d17c4720d43096064da70a4cba1593f10c272328e16f8ed4c656
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.5.orig.tar.bz2' apr_1.6.5.orig.tar.bz2 855393 SHA256:a67ca9fcf9c4ff59bce7f428a323c8b5e18667fdea7b0ebad47d194371b0a105
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.5.orig.tar.bz2.asc' apr_1.6.5.orig.tar.bz2.asc 801 SHA256:9beff0bb06f4cbbb006176af93258d946d33b7fb54aac13a4c90cfba1cfd0c88
-'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.5-1ubuntu1.debian.tar.xz' apr_1.6.5-1ubuntu1.debian.tar.xz 213596 SHA256:faca1bccb281c7d91bf0846ee908dd0be53b4482c0a1850e03397307682717d1
+$ apt-get source -qq --print-uris apr=1.6.5-1ubuntu1.1
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.5-1ubuntu1.1.dsc' apr_1.6.5-1ubuntu1.1.dsc 1807 SHA512:8e36061ac1b8517802c421720431a896ba3f9449edeb87d8292b8143c9faac52a85a5c58cd158007c72efb8515fc59edf6126be55dc3b6f6106209b45548acde
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.5.orig.tar.bz2' apr_1.6.5.orig.tar.bz2 855393 SHA512:d3511e320457b5531f565813e626e7941f6b82864852db6aa03dd298a65dbccdcdc4bd580f5314f8be45d268388edab25efe88cf8340b7d2897a4dbe9d0a41fc
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.5.orig.tar.bz2.asc' apr_1.6.5.orig.tar.bz2.asc 801 SHA512:9a168a31d38f0703aaf796ab1d55a0439e779e9cd0017dfcafd4217081a150db28799da546b861f7967eb839d4afa563c37906d8c4be48f19b66bc699bc036a7
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.6.5-1ubuntu1.1.debian.tar.xz' apr_1.6.5-1ubuntu1.1.debian.tar.xz 214260 SHA512:9d443a8704dc9d519ca6c353bff9211d32bade186896b746bc6cf2e678029c8bcfcbcc077b75e48b7b4ef5effaac12963b48a4c18be6e6e2881790457e598f01
 ```
 
 ### `dpkg` source package: `apt=2.0.10`
@@ -366,11 +366,11 @@ $ apt-get source -qq --print-uris cdebconf=0.251ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.251ubuntu1.tar.xz' cdebconf_0.251ubuntu1.tar.xz 276744 SHA256:d07848e52aecb70e82d8bafd082ecee3cccd7a8229b59527e07cc49023aa22d0
 ```
 
-### `dpkg` source package: `configobj=5.0.6-4`
+### `dpkg` source package: `configobj=5.0.6-4ubuntu0.1`
 
 Binary Packages:
 
-- `python3-configobj=5.0.6-4`
+- `python3-configobj=5.0.6-4ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/python3-configobj/copyright`)
 
@@ -379,10 +379,10 @@ Licenses: (parsed from: `/usr/share/doc/python3-configobj/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris configobj=5.0.6-4
-'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6-4.dsc' configobj_5.0.6-4.dsc 2246 SHA256:74df72d8fdb3c20e4bc5ab996bf1f8c6297811643989110cc27a019e7beb0429
-'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6.orig.tar.gz' configobj_5.0.6.orig.tar.gz 143664 SHA256:2e140354efcca6f558ff9ee941b435ae09a617bc071797bef62c8d6ed2033d5e
-'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6-4.debian.tar.xz' configobj_5.0.6-4.debian.tar.xz 6916 SHA256:dd20992aeef0eb1fb8ab6f0007e265ece33cfc20a6ca18b380eb255674195f01
+$ apt-get source -qq --print-uris configobj=5.0.6-4ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6-4ubuntu0.1.dsc' configobj_5.0.6-4ubuntu0.1.dsc 2227 SHA512:f55a391b79f4f96fa648cdb353f8232b430d2e4c5c81685d94b7ed2b486ed4a6bfa646355ce8b457ee30e52a9f1da1f57a4a9459e28fcd4864673607516a387c
+'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6.orig.tar.gz' configobj_5.0.6.orig.tar.gz 143664 SHA512:326eb86e362f281ebf07abcb1cf7616abb270c482eafe842371cda8708245ca5e8262f1644b7164664ecc10e9004ed061c9de18cd233a657d4697dbc3ba3c59d
+'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6-4ubuntu0.1.debian.tar.xz' configobj_5.0.6-4ubuntu0.1.debian.tar.xz 7792 SHA512:1dd0b5736c3283954d19d2d2efb189c7f247ddc2f01b699df5aa9cc1774b69de1ffe001f7a5c7cc06834ae1f1d83f2060c41cc49b3719573d65488909e3c82d0
 ```
 
 ### `dpkg` source package: `coreutils=8.30-3ubuntu2`
@@ -424,11 +424,11 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=7.68.0-1ubuntu2.23`
+### `dpkg` source package: `curl=7.68.0-1ubuntu2.24`
 
 Binary Packages:
 
-- `libcurl3-gnutls:amd64=7.68.0-1ubuntu2.23`
+- `libcurl3-gnutls:amd64=7.68.0-1ubuntu2.24`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 
@@ -439,9 +439,14 @@ Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.24
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.24.dsc' curl_7.68.0-1ubuntu2.24.dsc 2737 SHA512:ab420767f8de267830f3cb12008ac4182d080487ec4a291ae9918f3b836e97ff2df12e5d00d77e1039bb080496d05871fe9462414a6bc95864217a0da7cb9d84
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.24.debian.tar.xz' curl_7.68.0-1ubuntu2.24.debian.tar.xz 74136 SHA512:aa10f5fd69b94ad79f47d6c7deb7b1290b561e57cd88b65cdd035868b56c1d71408fddf486bf52a132c00f4d12bc44ce4e9c4d97937f9263b57375b6060e825c
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
 
@@ -2139,14 +2144,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.8.2-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.8.2-0ubuntu2.tar.gz' python3-defaults_3.8.2-0ubuntu2.tar.gz 138226 SHA256:e4969a54306421ebfd195d0c064935db7c53f9f152d8abaae63da33819235e9a
 ```
 
-### `dpkg` source package: `python3.8=3.8.10-0ubuntu1~20.04.11`
+### `dpkg` source package: `python3.8=3.8.10-0ubuntu1~20.04.12`
 
 Binary Packages:
 
-- `libpython3.8-minimal:amd64=3.8.10-0ubuntu1~20.04.11`
-- `libpython3.8-stdlib:amd64=3.8.10-0ubuntu1~20.04.11`
-- `python3.8=3.8.10-0ubuntu1~20.04.11`
-- `python3.8-minimal=3.8.10-0ubuntu1~20.04.11`
+- `libpython3.8-minimal:amd64=3.8.10-0ubuntu1~20.04.12`
+- `libpython3.8-stdlib:amd64=3.8.10-0ubuntu1~20.04.12`
+- `python3.8=3.8.10-0ubuntu1~20.04.12`
+- `python3.8-minimal=3.8.10-0ubuntu1~20.04.12`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/share/doc/libpython3.8-stdlib/copyright`, `/usr/share/doc/python3.8/copyright`, `/usr/share/doc/python3.8-minimal/copyright`)
 
@@ -2168,9 +2173,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.8=3.8.10-0ubuntu1~20.04.12
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.12.dsc' python3.8_3.8.10-0ubuntu1~20.04.12.dsc 3508 SHA512:ee99133c5be3e582eb27e6f5c85c815aa7464b56fb5d6028b605ee543b542ea88d54af19e474c08b0b848557c8474f9a8ff4667d53f9419b22ba7e373fbe8d70
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10.orig.tar.xz' python3.8_3.8.10.orig.tar.xz 18433456 SHA512:0be69705483ff9692e12048a96180e586f9d84c8d53066629f7fb2389585eb75c0f3506bb8182936e322508f58b71f4d8c6dfebbab9049b31b49da11d3b98e80
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.12.debian.tar.xz' python3.8_3.8.10-0ubuntu1~20.04.12.debian.tar.xz 246352 SHA512:94895fe559180cd3f2f8018b96d69f06d85f3e19a48e762e4523ec529e2dbbfcda015c2bd374517e63ca9e2725ca240838b9bafdccbf3e8fadbe70bf61a1d223
+```
 
 ### `dpkg` source package: `readline=8.0-4`
 

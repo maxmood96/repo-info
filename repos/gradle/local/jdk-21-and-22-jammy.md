@@ -1,10 +1,10 @@
-# `gradle:8.10.1-jdk-lts-and-current`
+# `gradle:8.10.2-jdk-lts-and-current`
 
 ## Docker Metadata
 
-- Image ID: `sha256:394bdab53952a103b6b3872bf02d28afddd51667a9e33aaaa32a653732ff9402`
-- Created: `2024-09-09T18:59:34Z`
-- Virtual Size: ~ 1.05 Gb  
+- Image ID: `sha256:2aa4a6b38403ca76542de0081506eb9be1296ac2dd8d8079e577126d0a85e2b9`
+- Created: `2024-09-28T00:46:05Z`
+- Virtual Size: ~ 1.06 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,9 +17,9 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-21.0.4+7`
   - `JAVA_LTS_HOME=/opt/java/openjdk21`
-  - `JAVA_CURRENT_HOME=/opt/java/openjdk22`
+  - `JAVA_CURRENT_HOME=/opt/java/openjdk23`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.10.1`
+  - `GRADLE_VERSION=8.10.2`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -86,19 +86,25 @@ $ apt-get source -qq --print-uris apr-util=1.6.1-5ubuntu4.22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/a/apr-util/apr-util_1.6.1-5ubuntu4.22.04.2.debian.tar.xz' apr-util_1.6.1-5ubuntu4.22.04.2.debian.tar.xz 344940 SHA512:b9a9c5aff57f47e50955a4c3a808c5cb450faeed572c1f60654edfcceb3d22e6f165dade59a5a9d713ae934ac1d4de0a38328fa70a53930f7235ce45eca466c6
 ```
 
-### `dpkg` source package: `apr=1.7.0-8ubuntu0.22.04.1`
+### `dpkg` source package: `apr=1.7.0-8ubuntu0.22.04.2`
 
 Binary Packages:
 
-- `libapr1:amd64=1.7.0-8ubuntu0.22.04.1`
+- `libapr1:amd64=1.7.0-8ubuntu0.22.04.2`
 
 Licenses: (parsed from: `/usr/share/doc/libapr1/copyright`)
 
 - `Apache-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris apr=1.7.0-8ubuntu0.22.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.7.0-8ubuntu0.22.04.2.dsc' apr_1.7.0-8ubuntu0.22.04.2.dsc 1806 SHA512:3135eb205397415f93de6388813c286c7e10af78c505ad8759fda2175863ee036995e0738e547706b17f9efdaba9b909747aca8d3432b22f2110c048d7de5551
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.7.0.orig.tar.bz2' apr_1.7.0.orig.tar.bz2 872238 SHA512:3dc42d5caf17aab16f5c154080f020d5aed761e22db4c5f6506917f6bfd2bf8becfb40af919042bd4ce1077d5de74aa666f5edfba7f275efba78e8893c115148
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.7.0.orig.tar.bz2.asc' apr_1.7.0.orig.tar.bz2.asc 801 SHA512:19b2b128c7c4cb40db06149c75325013a716c783e28e366c1bacf289fdb5d305e5779d8dc55a63729250ad3338cd4c726e133c788fe53ab3519f1bc8d4da6f90
+'http://archive.ubuntu.com/ubuntu/pool/main/a/apr/apr_1.7.0-8ubuntu0.22.04.2.debian.tar.xz' apr_1.7.0-8ubuntu0.22.04.2.debian.tar.xz 224584 SHA512:b8c2f54c6034249574e0b56f80cffbac04b614caca2c05e6ddf840660e4b47025792b382a05d2c177b31030d9032875124f7b970f1149c1b792cf3472e43d9ea
+```
 
 ### `dpkg` source package: `apt=2.4.13`
 
@@ -361,11 +367,11 @@ $ apt-get source -qq --print-uris cdebconf=0.261ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.261ubuntu1.tar.xz' cdebconf_0.261ubuntu1.tar.xz 297016 SHA512:6c2c8e2dccdb923ae6dc6a6b3873e6a56f6bdc4a6298c0576f60cb8d5c63bd06c4b9dac4ada4abd0d672a4e54509ad558fc9d1424a8029568d8d86cb54926390
 ```
 
-### `dpkg` source package: `configobj=5.0.6-5`
+### `dpkg` source package: `configobj=5.0.6-5ubuntu0.1`
 
 Binary Packages:
 
-- `python3-configobj=5.0.6-5`
+- `python3-configobj=5.0.6-5ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/python3-configobj/copyright`)
 
@@ -374,10 +380,10 @@ Licenses: (parsed from: `/usr/share/doc/python3-configobj/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris configobj=5.0.6-5
-'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6-5.dsc' configobj_5.0.6-5.dsc 1650 SHA512:5b8194d99c270aef82f173f8dc38a191d6c07d23c1014536ea9820c846b973dfef26715bef68ddb3f85efa9df95affd4393fd6feb4ac926a61307fefd68f3104
+$ apt-get source -qq --print-uris configobj=5.0.6-5ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6-5ubuntu0.1.dsc' configobj_5.0.6-5ubuntu0.1.dsc 2208 SHA512:49c716ab2a1b1d3ff901e6ab311967ea96364ed83f7cecb99dbae436b8d51ab416e6892c9c558367cf0c6c9d8b02d291de55230242a79d16df29bffb6d1ef89b
 'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6.orig.tar.gz' configobj_5.0.6.orig.tar.gz 143664 SHA512:326eb86e362f281ebf07abcb1cf7616abb270c482eafe842371cda8708245ca5e8262f1644b7164664ecc10e9004ed061c9de18cd233a657d4697dbc3ba3c59d
-'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6-5.debian.tar.xz' configobj_5.0.6-5.debian.tar.xz 7252 SHA512:e245aaff2878bc0ff8a4a55a7fc2f026b01e054276aabdf69cef15344534822ee9366b1dbc4d37e86ee56ae71ecb562fe1533fe6137b554e43021bce1d22ce2a
+'http://archive.ubuntu.com/ubuntu/pool/main/c/configobj/configobj_5.0.6-5ubuntu0.1.debian.tar.xz' configobj_5.0.6-5ubuntu0.1.debian.tar.xz 8132 SHA512:969f90e9ff7110d678f838106f0feaaf324d538951f88974f76973cd54ca1a9312ae14e74aea0157213f467bd4a85322ab5b39b3284ab14fe6d95d00546cea3a
 ```
 
 ### `dpkg` source package: `coreutils=8.32-4.1ubuntu1.2`

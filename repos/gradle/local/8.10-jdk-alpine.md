@@ -1,10 +1,10 @@
-# `gradle:8.10.1-jdk17-alpine`
+# `gradle:8.10.2-jdk17-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b3c54050e08c4f6e5559c89fb64b1369dd1453786a808a416a0a5eb0c2f8f009`
-- Created: `2024-09-09T18:59:34Z`
-- Virtual Size: ~ 555.20 Mb  
+- Image ID: `sha256:b5032399de86f1c95175114955d4a5e201d258381c981affe50b3a0a41147b80`
+- Created: `2024-09-28T00:46:05Z`
+- Virtual Size: ~ 554.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.12+7`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.10.1`
+  - `GRADLE_VERSION=8.10.2`
 
 ## `apk` (`.apk`-based packages)
 
@@ -194,16 +194,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.28.1-r0 description:
+c-ares-1.33.1-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.28.1-r0 webpage:
+c-ares-1.33.1-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.28.1-r0 installed size:
-156 KiB
+c-ares-1.33.1-r0 installed size:
+168 KiB
 
-c-ares-1.28.1-r0 license:
+c-ares-1.33.1-r0 license:
 MIT
 
 ```
@@ -534,16 +534,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.9.1-r1 description:
+libcurl-8.10.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.9.1-r1 webpage:
+libcurl-8.10.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.9.1-r1 installed size:
-628 KiB
+libcurl-8.10.1-r0 installed size:
+644 KiB
 
-libcurl-8.9.1-r1 license:
+libcurl-8.10.1-r0 license:
 curl
 
 ```
@@ -653,16 +653,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r0 description:
+libncursesw-6.4_p20240420-r1 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r0 webpage:
+libncursesw-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r0 installed size:
+libncursesw-6.4_p20240420-r1 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r0 license:
+libncursesw-6.4_p20240420-r1 license:
 X11
 
 ```
@@ -670,16 +670,16 @@ X11
 ### `apk` package: `libpanelw`
 
 ```console
-libpanelw-6.4_p20240420-r0 description:
+libpanelw-6.4_p20240420-r1 description:
 Console display library (libpanelw)
 
-libpanelw-6.4_p20240420-r0 webpage:
+libpanelw-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-libpanelw-6.4_p20240420-r0 installed size:
+libpanelw-6.4_p20240420-r1 installed size:
 32 KiB
 
-libpanelw-6.4_p20240420-r0 license:
+libpanelw-6.4_p20240420-r1 license:
 X11
 
 ```
@@ -840,16 +840,16 @@ BSD-2-Clause AND GPL-2.0-only
 ### `apk` package: `mercurial`
 
 ```console
-mercurial-6.7.4-r0 description:
+mercurial-6.7.4-r1 description:
 Scalable distributed SCM tool
 
-mercurial-6.7.4-r0 webpage:
+mercurial-6.7.4-r1 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-6.7.4-r0 installed size:
+mercurial-6.7.4-r1 installed size:
 10 MiB
 
-mercurial-6.7.4-r0 license:
+mercurial-6.7.4-r1 license:
 GPL-2.0-or-later
 
 ```
@@ -857,16 +857,16 @@ GPL-2.0-or-later
 ### `apk` package: `mercurial-pyc`
 
 ```console
-mercurial-pyc-6.7.4-r0 description:
+mercurial-pyc-6.7.4-r1 description:
 Precompiled Python bytecode for mercurial
 
-mercurial-pyc-6.7.4-r0 webpage:
+mercurial-pyc-6.7.4-r1 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-pyc-6.7.4-r0 installed size:
+mercurial-pyc-6.7.4-r1 installed size:
 10 MiB
 
-mercurial-pyc-6.7.4-r0 license:
+mercurial-pyc-6.7.4-r1 license:
 GPL-2.0-or-later
 
 ```
@@ -976,16 +976,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r0 description:
+ncurses-terminfo-base-6.4_p20240420-r1 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r0 webpage:
+ncurses-terminfo-base-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r0 installed size:
+ncurses-terminfo-base-6.4_p20240420-r1 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r0 license:
+ncurses-terminfo-base-6.4_p20240420-r1 license:
 X11
 
 ```
@@ -1078,16 +1078,16 @@ BSD-3-Clause
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.3-r2 description:
+pyc-3.12.6-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.3-r2 webpage:
+pyc-3.12.6-r0 webpage:
 https://www.python.org/
 
-pyc-3.12.3-r2 installed size:
+pyc-3.12.6-r0 installed size:
 4096 B
 
-pyc-3.12.3-r2 license:
+pyc-3.12.6-r0 license:
 PSF-2.0
 
 ```
@@ -1095,16 +1095,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.3-r2 description:
+python3-3.12.6-r0 description:
 High-level scripting language
 
-python3-3.12.3-r2 webpage:
+python3-3.12.6-r0 webpage:
 https://www.python.org/
 
-python3-3.12.3-r2 installed size:
+python3-3.12.6-r0 installed size:
 24 MiB
 
-python3-3.12.3-r2 license:
+python3-3.12.6-r0 license:
 PSF-2.0
 
 ```
@@ -1112,16 +1112,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.3-r2 description:
+python3-pyc-3.12.6-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.3-r2 webpage:
+python3-pyc-3.12.6-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.3-r2 installed size:
+python3-pyc-3.12.6-r0 installed size:
 4096 B
 
-python3-pyc-3.12.3-r2 license:
+python3-pyc-3.12.6-r0 license:
 PSF-2.0
 
 ```
@@ -1129,16 +1129,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.3-r2 description:
+python3-pycache-pyc0-3.12.6-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.3-r2 webpage:
+python3-pycache-pyc0-3.12.6-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.3-r2 installed size:
+python3-pycache-pyc0-3.12.6-r0 installed size:
 11 MiB
 
-python3-pycache-pyc0-3.12.3-r2 license:
+python3-pycache-pyc0-3.12.6-r0 license:
 PSF-2.0
 
 ```
