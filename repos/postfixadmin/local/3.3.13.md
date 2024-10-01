@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1eaa33a6aed680b5a478823e0b764dd5fd94fd92f6e2d02af8d1595acce3571d`
-- Created: `2024-09-05T05:05:51.369104025Z`
-- Virtual Size: ~ 515.89 Mb  
+- Image ID: `sha256:588ca9329841205d1356c5d315d1762f459d6ec39584691ca6ad9b10f597729c`
+- Created: `2024-09-27T09:36:16.434314933Z`
+- Virtual Size: ~ 515.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.29`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.29.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.29.tar.xz.asc`
-  - `PHP_SHA256=288884af60581d4284baba2ace9ca6d646f72facbd3e3c2dd2acc7fe6f903536`
+  - `PHP_VERSION=8.1.30`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.30.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.30.tar.xz.asc`
+  - `PHP_SHA256=f24a6007f0b25a53cb7fbaee69c85017e0345b62089c2425a0afb7e177192ed1`
   - `POSTFIXADMIN_VERSION=3.3.13`
   - `POSTFIXADMIN_SHA512=bf7daaa089ee3adc4b557f1a7d0509d78979ef688fb725bab795f5c9d81e8774296245fde0cb184db51e9185cad381682c3ecc0bfadf852388b499a0a95cca64`
   - `APACHE_DOCUMENT_ROOT=/var/www/html/public`
@@ -921,11 +921,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/e2fsprogs/1.47.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/e2fsprogs/1.47.0-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `expat=2.5.0-1`
+### `dpkg` source package: `expat=2.5.0-1+deb12u1`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.5.0-1`
+- `libexpat1:amd64=2.5.0-1+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
@@ -934,17 +934,17 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.5.0-1
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.5.0-1.dsc' expat_2.5.0-1.dsc 1981 SHA256:e7c69b69d720ae1e2971f5edc7fffe274f0047cc61e541cd2013afcc1ba80b81
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.5.0.orig.tar.gz' expat_2.5.0.orig.tar.gz 8320988 SHA256:ab00ee05c7067fd10a35c5d2a4922ebba746ddd50ff83b79c828da17bbdf1757
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.5.0-1.debian.tar.xz' expat_2.5.0-1.debian.tar.xz 12680 SHA256:232c69ecdf58850b28b5e22374eae4db024d6558f2fbbd57b9af48ab31ce97ed
+$ apt-get source -qq --print-uris expat=2.5.0-1+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0-1%2bdeb12u1.dsc' expat_2.5.0-1+deb12u1.dsc 2013 SHA256:6507e647ff25e88be44b413089b357b4a837a461f11353dd38d7686e3e5733a4
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0.orig.tar.gz' expat_2.5.0.orig.tar.gz 8320988 SHA256:ab00ee05c7067fd10a35c5d2a4922ebba746ddd50ff83b79c828da17bbdf1757
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0-1%2bdeb12u1.debian.tar.xz' expat_2.5.0-1+deb12u1.debian.tar.xz 13724 SHA256:32e9a953f5a240fca186e077ca957fe9352777707b650a58ff989650b9fa0a80
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/expat/2.5.0-1/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.5.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.5.0-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/expat/2.5.0-1+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.5.0-1+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.5.0-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `file=1:5.44-3`
 
