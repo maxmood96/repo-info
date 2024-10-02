@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:84834976fbbc86f85948ea80529e677f3d3fd638964de53b4447144286b84b0d`
+- Image ID: `sha256:ecb617f0af1cbc178612481a8aa9ac3be3fd73b64aaddbe62888e53408f73160`
 - Created: `2024-09-17T14:16:43Z`
-- Virtual Size: ~ 252.08 Mb  
+- Virtual Size: ~ 245.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
