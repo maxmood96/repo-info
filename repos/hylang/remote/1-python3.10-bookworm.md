@@ -1,7 +1,7 @@
 ## `hylang:1-python3.10-bookworm`
 
 ```console
-$ docker pull hylang@sha256:31bcf63bfab2f3ab339600eb9de1ddb34ad8992a6ced46aeb922fc3f6ebd41e2
+$ docker pull hylang@sha256:73e8fec1f131af657cdce90aaf9ffe423a9fd1c659ce4a73676b45665762c899
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24,13 +24,13 @@ $ docker pull hylang@sha256:31bcf63bfab2f3ab339600eb9de1ddb34ad8992a6ced46aeb922
 ### `hylang:1-python3.10-bookworm` - linux; amd64
 
 ```console
-$ docker pull hylang@sha256:8104a08ce7445e8478f3907673f42a4b1963330fc5e2ff782fc32181c45ce2e6
+$ docker pull hylang@sha256:807a5bd1d0e803345a4f1737ac7668ff856a7d3311db7a9a80c6a3c9f5b2f519
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **52.3 MB (52286621 bytes)**  
+-	Total Size: **52.3 MB (52286750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b56bacd96825bb847555829e24cfdf7443c3130d5f6656a8f410bf3fd28290b`
+-	Image ID: `sha256:ec985bca92896b4d340ea61aa45fafe98f3ccaa3b453641c0368082fed78aaf8`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -54,13 +54,13 @@ RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get
 RUN set -eux; 	for src in idle3 pip3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
 # Mon, 09 Sep 2024 17:16:05 GMT
 CMD ["python3"]
-# Mon, 23 Sep 2024 18:27:06 GMT
+# Tue, 01 Oct 2024 18:00:35 GMT
 ENV HY_VERSION=1.0.0
-# Mon, 23 Sep 2024 18:27:06 GMT
+# Tue, 01 Oct 2024 18:00:35 GMT
 ENV HYRULE_VERSION=0.7.0
-# Mon, 23 Sep 2024 18:27:06 GMT
+# Tue, 01 Oct 2024 18:00:35 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION" # buildkit
-# Mon, 23 Sep 2024 18:27:06 GMT
+# Tue, 01 Oct 2024 18:00:35 GMT
 CMD ["hy"]
 ```
 
@@ -81,45 +81,45 @@ CMD ["hy"]
 		Last Modified: Fri, 27 Sep 2024 06:09:34 GMT  
 		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c970ba3a7ff4001689b2b0ffb8c4727c06e9e62ad84f85a36f107a26eaf921ac`  
-		Last Modified: Fri, 27 Sep 2024 07:04:50 GMT  
-		Size: 4.2 MB (4183572 bytes)  
+	-	`sha256:bddc9f5b9310e9740e7c7157e45ca654606f068c44caaed9148c76ec7e3359d0`  
+		Last Modified: Tue, 01 Oct 2024 22:19:47 GMT  
+		Size: 4.2 MB (4183701 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:1-python3.10-bookworm` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:32ce76a5a97d6d9de015db3d1a13305c8b9f8d59289efe2f7be1d906acd12d7d
+$ docker pull hylang@sha256:1443dd6c5e32151904f371cd3b7b94161244cd78a63e5f3d91150f63fe83949e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2467053 bytes)**  
+-	Total Size: **2.5 MB (2467058 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7017db2cf4667d51123e74a858f170a7fe156c6f0035da11f87bf0a61f9e566e`
+-	Image ID: `sha256:f4971a7ccc443519757d3f5555424043fe4cc577287f91578fe98105d56f31ea`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0aff498c4b477a24a56d94d43c8296b9bc95903157a3c95e4130c6a913578c1d`  
-		Last Modified: Fri, 27 Sep 2024 07:04:50 GMT  
+	-	`sha256:1db5a29951677756fb55db16a42ab948c9a59d76c076e0af8188c51b5e8f1b80`  
+		Last Modified: Tue, 01 Oct 2024 22:19:47 GMT  
 		Size: 2.5 MB (2457891 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:18dc47304cf023f607154fb400281a5b9c501a4e3ef0498be658f0e5fa9a63ae`  
-		Last Modified: Fri, 27 Sep 2024 07:04:50 GMT  
-		Size: 9.2 KB (9162 bytes)  
+	-	`sha256:1ba5dcb326ba4e789e59a41ffc9aa2149e52f300886ce3f90d424097cc003b4d`  
+		Last Modified: Tue, 01 Oct 2024 22:19:47 GMT  
+		Size: 9.2 KB (9167 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hylang:1-python3.10-bookworm` - linux; arm variant v5
 
 ```console
-$ docker pull hylang@sha256:b27a86a848218ca2e57f0308f5ce6e2957d5a1f8f24544dbf20f9f31cfa7d773
+$ docker pull hylang@sha256:d085896adb026a82b80adb8ea5af209d7fe30a00bc9800c62da466be9e06ba0a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **49.2 MB (49166018 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a32ccf0eff4c039dab295aaa25b4d82e376cea6681ed69bebbad565d51316f8d`
+-	Image ID: `sha256:56fe6d99a79983097e936e837a878ccbc0435af10989b67e28ef1bd977603044`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -143,13 +143,13 @@ RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get
 RUN set -eux; 	for src in idle3 pip3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
 # Mon, 09 Sep 2024 17:16:05 GMT
 CMD ["python3"]
-# Mon, 23 Sep 2024 18:27:06 GMT
+# Tue, 01 Oct 2024 18:00:35 GMT
 ENV HY_VERSION=1.0.0
-# Mon, 23 Sep 2024 18:27:06 GMT
+# Tue, 01 Oct 2024 18:00:35 GMT
 ENV HYRULE_VERSION=0.7.0
-# Mon, 23 Sep 2024 18:27:06 GMT
+# Tue, 01 Oct 2024 18:00:35 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION" # buildkit
-# Mon, 23 Sep 2024 18:27:06 GMT
+# Tue, 01 Oct 2024 18:00:35 GMT
 CMD ["hy"]
 ```
 
@@ -178,25 +178,25 @@ CMD ["hy"]
 ### `hylang:1-python3.10-bookworm` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:1b65140197f882ad943004f605738775c96db3dee1558c47587aba8247c22706
+$ docker pull hylang@sha256:73f54ffacafecd09e323647b7ae8e5fdc391e488b71cdf82341fce1f230cecda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2470612 bytes)**  
+-	Total Size: **2.5 MB (2470617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b7e7441fdbc1bf850f21ed5e26ce1e8b0bd475f88ea64fb2c7f5509aec9aaf2b`
+-	Image ID: `sha256:006c762138c4bc6002826e11bf7e7f1398e5e05b95b4f67f08f007b553dab406`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:68011d74995a251efb99ec9726c5da2f50ba0ca5bfcf34f359a578cca026aae4`  
-		Last Modified: Fri, 27 Sep 2024 16:57:38 GMT  
+	-	`sha256:a9cc744d93585641d8be35f594e67f570b51720e772091f25ec731f587be6253`  
+		Last Modified: Tue, 01 Oct 2024 23:33:09 GMT  
 		Size: 2.5 MB (2461330 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0a463b8f59b29e7973527bd59d51bece43366037063dbdee0c8d1f3045cdcb86`  
-		Last Modified: Fri, 27 Sep 2024 16:57:38 GMT  
-		Size: 9.3 KB (9282 bytes)  
+	-	`sha256:5b6b5f453343f96c09cab45fb47e18ae1c1f31e7741307216581e44115329c51`  
+		Last Modified: Tue, 01 Oct 2024 23:33:09 GMT  
+		Size: 9.3 KB (9287 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hylang:1-python3.10-bookworm` - linux; arm variant v7
@@ -380,13 +380,13 @@ $ docker pull hylang@sha256:ce67dd5a402d143c7e893459e8f7016641675b377b3b037977ea
 ### `hylang:1-python3.10-bookworm` - linux; 386
 
 ```console
-$ docker pull hylang@sha256:f8f8c61f8fc1938ab7a015cfe4d2b25de69c29c311032618e186855af5642653
+$ docker pull hylang@sha256:51bc8e6801f9f66a5dadde82fda66e46feb4f500592ba4f8eebfd5da83ab9ae8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.6 MB (53555220 bytes)**  
+-	Total Size: **53.6 MB (53555197 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f86355e30904548d68fb0ef1acfcda1356a4ffd7da942a2f5981a5d904f01451`
+-	Image ID: `sha256:77c445e59d3e94f61a23b8022a0d7a5870f4a6c5d58089451b503464504c1c77`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -410,13 +410,13 @@ RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get
 RUN set -eux; 	for src in idle3 pip3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
 # Mon, 09 Sep 2024 17:16:05 GMT
 CMD ["python3"]
-# Mon, 23 Sep 2024 18:27:06 GMT
+# Tue, 01 Oct 2024 18:00:35 GMT
 ENV HY_VERSION=1.0.0
-# Mon, 23 Sep 2024 18:27:06 GMT
+# Tue, 01 Oct 2024 18:00:35 GMT
 ENV HYRULE_VERSION=0.7.0
-# Mon, 23 Sep 2024 18:27:06 GMT
+# Tue, 01 Oct 2024 18:00:35 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION" # buildkit
-# Mon, 23 Sep 2024 18:27:06 GMT
+# Tue, 01 Oct 2024 18:00:35 GMT
 CMD ["hy"]
 ```
 
@@ -437,33 +437,33 @@ CMD ["hy"]
 		Last Modified: Fri, 27 Sep 2024 09:15:02 GMT  
 		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7270ae4b806efa40af79ace8e714c118d8f9a7a7b7d1a175904aea7e76e3c6af`  
-		Last Modified: Fri, 27 Sep 2024 10:02:44 GMT  
-		Size: 4.2 MB (4183743 bytes)  
+	-	`sha256:c77413417388e95d34b7234c53add4e813c65e6a5b1aaab203d36450e9a0d9d6`  
+		Last Modified: Tue, 01 Oct 2024 22:19:51 GMT  
+		Size: 4.2 MB (4183720 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:1-python3.10-bookworm` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:b847b64eeb04612fb3897a1a221c472becbcb3a58a3b90ea4cbc346cd5ec2baf
+$ docker pull hylang@sha256:f1313ce56017e42c45da730f7b1d844201447db77d4718febd712b064721dfba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2464074 bytes)**  
+-	Total Size: **2.5 MB (2464080 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60c537528a497d90114234d4f8835610b74713e16626e66f7d4540401151c333`
+-	Image ID: `sha256:096769d352137d6c950614af450d0bded46123357e2b966050a17939c0289bc5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:073a92d4e32924a04916eb6a2bb840bbcc984157fb80a18909a17cb05da57d58`  
-		Last Modified: Fri, 27 Sep 2024 10:02:44 GMT  
+	-	`sha256:4b62cb81a591aad12153e57af6be96c74eb878c4cbbb0af10b30a48e3d1c3090`  
+		Last Modified: Tue, 01 Oct 2024 22:19:51 GMT  
 		Size: 2.5 MB (2454965 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a86b166cfb4c1cbd1c3676b93ac3dce205cc096b663811303c498581191de55e`  
-		Last Modified: Fri, 27 Sep 2024 10:02:43 GMT  
-		Size: 9.1 KB (9109 bytes)  
+	-	`sha256:f4c8bc7b1ae043ae5b94b68b7be84ca0256bdfc6e6cedef07e78cadacd85187e`  
+		Last Modified: Tue, 01 Oct 2024 22:19:50 GMT  
+		Size: 9.1 KB (9115 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hylang:1-python3.10-bookworm` - linux; ppc64le
