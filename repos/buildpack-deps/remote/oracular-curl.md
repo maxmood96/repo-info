@@ -1,7 +1,7 @@
 ## `buildpack-deps:oracular-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:e6fe56081e67bacaab0dec44568054854e1f37f10e17c59bf27708e1643f4fd7
+$ docker pull buildpack-deps@sha256:a64eacca632395939ef8db438c0146c9cc51b1aa31eae74e5d7fd82be10316f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -96,41 +96,41 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 ### `buildpack-deps:oracular-curl` - linux; arm64 variant v8
 
 ```console
-$ docker pull buildpack-deps@sha256:1e8422ed2ff67797ea95be593ab27072a9a86c6e691541b0a14387ef94d7bd0f
+$ docker pull buildpack-deps@sha256:14343f47d7690d366becb1a31403f2da6635e353263c0e0a268d6878b9d58eb9
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.9 MB (49928792 bytes)**  
+-	Total Size: **53.0 MB (53001398 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7850bef05e6df56be681b474d0d64f52065492124b39597ba075e45a13998b3`
+-	Image ID: `sha256:e4e9a04501ce3c5ca1857dfcdab71868740920e9a238bf309f66560966c87ae7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 13 Sep 2024 03:45:45 GMT
+# Wed, 18 Sep 2024 03:58:05 GMT
 ARG RELEASE
-# Fri, 13 Sep 2024 03:45:45 GMT
+# Wed, 18 Sep 2024 03:58:05 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 13 Sep 2024 03:45:45 GMT
+# Wed, 18 Sep 2024 03:58:05 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 13 Sep 2024 03:45:45 GMT
+# Wed, 18 Sep 2024 03:58:05 GMT
 LABEL org.opencontainers.image.version=24.10
-# Fri, 13 Sep 2024 03:45:47 GMT
-ADD file:09509f4e7d531b71ff20f83a8fdb1fd7fafd2621a6c0d5cf35bee26ddf03028a in / 
-# Fri, 13 Sep 2024 03:45:48 GMT
+# Wed, 18 Sep 2024 03:58:07 GMT
+ADD file:cd1dbd2cf0195cc6d4674a585350e1a69fa96a310f6fcb1779824f40d9dad7bc in / 
+# Wed, 18 Sep 2024 03:58:07 GMT
 CMD ["/bin/bash"]
-# Tue, 17 Sep 2024 01:24:34 GMT
+# Wed, 02 Oct 2024 01:12:56 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	apt-get dist-clean
 ```
 
 -	Layers:
-	-	`sha256:6f192fbb9b2ab30739ebcfa04665d365d4fb63abf3e4c9a796803829bfaec560`  
-		Last Modified: Tue, 17 Sep 2024 01:30:27 GMT  
-		Size: 34.8 MB (34848776 bytes)  
+	-	`sha256:72b0311f761c1205ff38132f7ac025264668a60de0df6534b9df12be50456e88`  
+		Last Modified: Wed, 02 Oct 2024 01:19:01 GMT  
+		Size: 34.9 MB (34865505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ea80fce0de88a3884c083b79a6bd7d132b5e10d46af1dd280165763a27986b3b`  
-		Last Modified: Tue, 17 Sep 2024 01:30:24 GMT  
-		Size: 15.1 MB (15080016 bytes)  
+	-	`sha256:c979bceba7fb77a741cad6add3eca7d109f0cf2e792a5c57571d7064a3f03c71`  
+		Last Modified: Wed, 02 Oct 2024 01:18:59 GMT  
+		Size: 18.1 MB (18135893 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:oracular-curl` - linux; ppc64le
