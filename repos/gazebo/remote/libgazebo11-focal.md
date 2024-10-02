@@ -1,7 +1,7 @@
 ## `gazebo:libgazebo11-focal`
 
 ```console
-$ docker pull gazebo@sha256:bb8b9f106c84e20acb66fab6aad9a93fabf635a03e5720f2a0f125f203837225
+$ docker pull gazebo@sha256:b5ba442af3ce030cbbbff2e45c1baa858cdd4625be245b69ac6d726a15ab6049
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,13 +12,13 @@ $ docker pull gazebo@sha256:bb8b9f106c84e20acb66fab6aad9a93fabf635a03e5720f2a0f1
 ### `gazebo:libgazebo11-focal` - linux; amd64
 
 ```console
-$ docker pull gazebo@sha256:90e88d48b58f48ecd21af2c91740da8538a358b0779b108b37c18cb5fc80fe22
+$ docker pull gazebo@sha256:f5d90f96b58a725ba4731082a57618a158c739333cff7f88400ad1114702cbf7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **609.3 MB (609261103 bytes)**  
+-	Total Size: **609.3 MB (609253881 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:92cc554049aa37d1df59fdefa604295daaa8668370cdadf049c603c5fc6ee101`
+-	Image ID: `sha256:c600fac0e71ae438f522b1d0535df1f3dbd26aa422c37c0c94ca50d3705bb1ff`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
@@ -32,7 +32,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Tue, 10 Oct 2023 09:44:30 GMT
 LABEL org.opencontainers.image.version=20.04
 # Tue, 10 Oct 2023 09:44:30 GMT
-ADD file:e7cff353f027ecf0a2cb1cdd51714de3b083a11a0d965f104489f9a7e6925056 in / 
+ADD file:6a209aa51ba684c0a39769619c42058ca99311b87563c7b079319a8bb91bec1f in / 
 # Tue, 10 Oct 2023 09:44:30 GMT
 CMD ["/bin/bash"]
 # Tue, 10 Oct 2023 09:44:30 GMT
@@ -58,59 +58,59 @@ RUN apt-get update && apt-get install -y --no-install-recommends     libgazebo11
 ```
 
 -	Layers:
-	-	`sha256:602d8ad51b8130f3fcd71cb936dea612ebc799666136abf2e5914585b3178a4a`  
-		Last Modified: Tue, 13 Aug 2024 10:23:50 GMT  
-		Size: 27.5 MB (27511769 bytes)  
+	-	`sha256:3823320faa42774534fd7eee0bd245af8cec6a720ad722144d40efa229291d8f`  
+		Last Modified: Wed, 18 Sep 2024 05:32:37 GMT  
+		Size: 27.5 MB (27511052 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9b4438bb56b00a7861b3f6c399ad8a0710bd1b267679a3e5c80b1d6c4ec903b`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 1.2 MB (1198592 bytes)  
+	-	`sha256:0b954990adc3bfb29720946ed44148cbf79e3a41dee2aaebe297e8af1aef1269`  
+		Last Modified: Wed, 02 Oct 2024 01:59:30 GMT  
+		Size: 1.2 MB (1198659 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddd82f4c6df1cef54bb94623483a983a58273ee9e6121170580969e9424ebf73`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
-		Size: 5.4 MB (5361680 bytes)  
+	-	`sha256:f02ac265fab4845da67d107013a6248e2725979d4113be4ed0d4117da9ead442`  
+		Last Modified: Wed, 02 Oct 2024 01:59:30 GMT  
+		Size: 5.4 MB (5361762 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:68cb438347637d05c15082eeee7bbbfe33d8511781e0f64f86f2c9e71162f6d0`  
-		Last Modified: Sat, 17 Aug 2024 02:01:08 GMT  
+	-	`sha256:294690e8c0b6861ec87662e3fff051f415c79b82495d9d95a83bdc9d91c4de44`  
+		Last Modified: Wed, 02 Oct 2024 01:59:30 GMT  
 		Size: 1.4 KB (1449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3c9cdbb3bf7cfa04dcca73fa581a947c39e4e5e290cbb9b00e0d6ca5dd5656d`  
-		Last Modified: Sat, 17 Aug 2024 02:01:09 GMT  
-		Size: 292.0 B  
+	-	`sha256:f3e780a6c1c1b79b760201f16bbe98d7573ceff616e3a40b24ca3a9eda468e68`  
+		Last Modified: Wed, 02 Oct 2024 01:59:30 GMT  
+		Size: 293.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05b1d4a40b600817b4ec0478e7245f0ddc7e147f1ef1a63f682f43514e1c384f`  
-		Last Modified: Sat, 17 Aug 2024 02:01:13 GMT  
-		Size: 278.1 MB (278050815 bytes)  
+	-	`sha256:24216c1793c49f424bf47128140dc46fb1b976850f508f4cc4065aed7b3f7eca`  
+		Last Modified: Wed, 02 Oct 2024 01:59:38 GMT  
+		Size: 278.1 MB (278053156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d55f7e67a94d64e8dd0e77292716eeed6e7246e98244e3bb6f72d758a8dc01a`  
-		Last Modified: Sat, 17 Aug 2024 02:01:09 GMT  
-		Size: 187.0 B  
+	-	`sha256:88a310d7637ff0e363097e9284c13bb9effff7cc65ffb5b1e9a621c481993acc`  
+		Last Modified: Wed, 02 Oct 2024 01:59:31 GMT  
+		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e000e2029f00214ccee82e47a3f51ec4d0fdfbcddaa5202427d649f33c1f6998`  
-		Last Modified: Sat, 17 Aug 2024 04:08:47 GMT  
-		Size: 297.1 MB (297136319 bytes)  
+	-	`sha256:ed363ecc6a7c650d86c23d78b60ff932828bc96a9290f26d95d87e35a69c2952`  
+		Last Modified: Wed, 02 Oct 2024 02:59:50 GMT  
+		Size: 297.1 MB (297127320 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gazebo:libgazebo11-focal` - unknown; unknown
 
 ```console
-$ docker pull gazebo@sha256:99168aa043550009a70005d476246ef74406436d76bad8d0246e69d376c4ce18
+$ docker pull gazebo@sha256:4cbdeabc0c76212527f4b6080ab40612227803d1859049eb7d6762bdfec7fd4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.4 MB (37449659 bytes)**  
+-	Total Size: **37.5 MB (37455568 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3d7304ea9757173effd5c338e026b32ace3f747a8ed761669a02b79bcd9de3aa`
+-	Image ID: `sha256:247805eeb75c5247ffa967e217ae66ebd8d9cc98199add9a2219f604476fb780`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d46bc6f1ea7b7bf97ea2e43fd54cfe2d42b7d8ba2be33e981642640afd04ae1d`  
-		Last Modified: Sat, 17 Aug 2024 04:08:40 GMT  
-		Size: 37.4 MB (37441030 bytes)  
+	-	`sha256:fbf8a2ea591c79beb6d99a9c6d2b19c949e64e7f0172b5c2717732c8378b3573`  
+		Last Modified: Wed, 02 Oct 2024 02:59:46 GMT  
+		Size: 37.4 MB (37446933 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:da278539a97f1a138b6374d3e48b4be7ef056e7014f01886d9bda0bdd8d25fb9`  
-		Last Modified: Sat, 17 Aug 2024 04:08:39 GMT  
-		Size: 8.6 KB (8629 bytes)  
+	-	`sha256:84e98a114cadc07606e68ba72b70ed558b2235936ca6cd0e0780372bdbbbfb6b`  
+		Last Modified: Wed, 02 Oct 2024 02:59:46 GMT  
+		Size: 8.6 KB (8635 bytes)  
 		MIME: application/vnd.in-toto+json
