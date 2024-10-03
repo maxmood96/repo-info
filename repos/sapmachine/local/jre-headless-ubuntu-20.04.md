@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3cd092f68e9ec561b2a6e8a0039e2cb05783d9f255159de055cec58fd431a601`
+- Image ID: `sha256:5e182436104f7c37ba6cf58a65eec00b407259a7d292c6868d103108e4ebfe1c`
 - Created: `2024-09-19T13:42:45Z`
 - Virtual Size: ~ 245.80 Mb  
   (total size of all layers on-disk)
@@ -1448,12 +1448,12 @@ $ apt-get source -qq --print-uris sqlite3=3.31.1-4ubuntu0.6
 'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.31.1-4ubuntu0.6.debian.tar.xz' sqlite3_3.31.1-4ubuntu0.6.debian.tar.xz 36192 SHA512:12d6a58cbff3ceacfc5c51824f264993bbd9d50116d76c11a9b8ecc7ce417403174f637d8af34bdfe46e1f2555eca19d5da3c4875fb332b1aa268ca9fb81c238
 ```
 
-### `dpkg` source package: `systemd=245.4-4ubuntu3.23`
+### `dpkg` source package: `systemd=245.4-4ubuntu3.24`
 
 Binary Packages:
 
-- `libsystemd0:amd64=245.4-4ubuntu3.23`
-- `libudev1:amd64=245.4-4ubuntu3.23`
+- `libsystemd0:amd64=245.4-4ubuntu3.24`
+- `libudev1:amd64=245.4-4ubuntu3.24`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1466,9 +1466,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.24
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.24.dsc' systemd_245.4-4ubuntu3.24.dsc 5262 SHA512:a7368dff1d7ce06bde4459dd635d2f25d9085f7c2cb0a5c3cbc30f63d24bea8145ff22c29709e67414b5ebd63fdd834b9552644b4adfbeb2b03c4db7a19e6ffe
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.24.debian.tar.xz' systemd_245.4-4ubuntu3.24.debian.tar.xz 294744 SHA512:97dd99ebc167edaa5d32157039a9af54c1747a43ef7625f67a697c971f5755e6038e496d04cce45d77055894b7d84d5bfb86c47a037e911c41a297ddb092dec8
+```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
 
