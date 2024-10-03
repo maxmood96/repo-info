@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:df7f29f58e29daa94f85522271152b7d8d33228633c242f4db430b4cc9d5cc68`
+- Image ID: `sha256:86ba3f0a11e42502489500bc16418f68e626587f53fe62ab0a08b0f21a00cf18`
 - Created: `2024-09-06T16:59:26Z`
 - Virtual Size: ~ 466.07 Mb  
   (total size of all layers on-disk)
@@ -2123,11 +2123,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/nettle/3.7.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/nettle/3.7.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `nghttp2=1.43.0-1+deb11u1`
+### `dpkg` source package: `nghttp2=1.43.0-1+deb11u2`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.43.0-1+deb11u1`
+- `libnghttp2-14:amd64=1.43.0-1+deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -2142,17 +2142,17 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris nghttp2=1.43.0-1+deb11u1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.43.0-1%2bdeb11u1.dsc' nghttp2_1.43.0-1+deb11u1.dsc 2555 SHA256:358a1e471de2d30bec289012577d91932f329b437ce5ee8d5c4b67b054b133d9
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.43.0.orig.tar.bz2' nghttp2_1.43.0.orig.tar.bz2 4521786 SHA256:556f24653397c71ebb8270b3c5e5507f0893e6eac2c6eeda6be2ecf6e1f50f62
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.43.0-1%2bdeb11u1.debian.tar.xz' nghttp2_1.43.0-1+deb11u1.debian.tar.xz 21832 SHA256:b391becc0718fdc415d2f966d577a864f996068e828ce803600d34b0bf03baf2
+$ apt-get source -qq --print-uris nghttp2=1.43.0-1+deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.43.0-1%2bdeb11u2.dsc' nghttp2_1.43.0-1+deb11u2.dsc 2555 SHA256:13ad116ef14dc9e3da1b3aa3b1f2645e2dcf44e153564a5ec26f5df5d91cd854
+'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.43.0.orig.tar.bz2' nghttp2_1.43.0.orig.tar.bz2 4521786 SHA256:556f24653397c71ebb8270b3c5e5507f0893e6eac2c6eeda6be2ecf6e1f50f62
+'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.43.0-1%2bdeb11u2.debian.tar.xz' nghttp2_1.43.0-1+deb11u2.debian.tar.xz 23484 SHA256:52cd263f1db0a02edf21322251d7a444eb2fce158bbcaf23e26bf25c6051fd83
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/nghttp2/1.43.0-1+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.43.0-1+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.43.0-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/nghttp2/1.43.0-1+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/nghttp2/1.43.0-1+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nghttp2/1.43.0-1+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.4.57+dfsg-3+deb11u1`
 
