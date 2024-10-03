@@ -1,10 +1,10 @@
-# `mediawiki:1.39.8-fpm-alpine`
+# `mediawiki:1.39.10-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a3e9529a45ad881755c6eaf6b6f5a70d3e41fa53476a93e2f4c1e5e5a30d9d3e`
-- Created: `2024-09-27T01:35:33.651126162Z`
-- Virtual Size: ~ 398.82 Mb  
+- Image ID: `sha256:d86e49e4a6b5696a30f01233317078145a23d1819e4b59fcfc44de7eedfd09be`
+- Created: `2024-10-01T19:28:23.000461028Z`
+- Virtual Size: ~ 401.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -22,7 +22,7 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.30.tar.xz.asc`
   - `PHP_SHA256=f24a6007f0b25a53cb7fbaee69c85017e0345b62089c2425a0afb7e177192ed1`
   - `MEDIAWIKI_MAJOR_VERSION=1.39`
-  - `MEDIAWIKI_VERSION=1.39.8`
+  - `MEDIAWIKI_VERSION=1.39.10`
 
 ## `apk` (`.apk`-based packages)
 
@@ -872,6 +872,23 @@ libxml2-2.12.7-r0 installed size:
 1088 KiB
 
 libxml2-2.12.7-r0 license:
+MIT
+
+```
+
+### `apk` package: `lua5.1-libs`
+
+```console
+lua5.1-libs-5.1.5-r13 description:
+Lua dynamic library runtime
+
+lua5.1-libs-5.1.5-r13 webpage:
+https://www.lua.org/
+
+lua5.1-libs-5.1.5-r13 installed size:
+168 KiB
+
+lua5.1-libs-5.1.5-r13 license:
 MIT
 
 ```
