@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c11d235b4586dfae5f82c5113a4bcc2c2f300aec0770c713922eb195365e78a0`
-- Created: `2024-09-17T00:48:47.775495677Z`
-- Virtual Size: ~ 265.56 Mb  
+- Image ID: `sha256:51a96bdc66278035d3d259d9f0a207a9bb529132142715c1cf7f189e5332c574`
+- Created: `2024-10-02T02:07:39.594073948Z`
+- Virtual Size: ~ 271.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -66,11 +66,11 @@ Licenses: (parsed from: `/usr/share/doc/libaprutil1t64/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `apr=1.7.2-3.2`
+### `dpkg` source package: `apr=1.7.2-3.2ubuntu1`
 
 Binary Packages:
 
-- `libapr1t64:amd64=1.7.2-3.2`
+- `libapr1t64:amd64=1.7.2-3.2ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libapr1t64/copyright`)
 
@@ -78,10 +78,6 @@ Licenses: (parsed from: `/usr/share/doc/libapr1t64/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/apr/1.7.2-3.2/
 
 
 ### `dpkg` source package: `apt=2.9.8`
@@ -289,13 +285,13 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=8.9.1-2ubuntu1`
+### `dpkg` source package: `curl=8.9.1-2ubuntu2`
 
 Binary Packages:
 
-- `curl=8.9.1-2ubuntu1`
-- `libcurl3t64-gnutls:amd64=8.9.1-2ubuntu1`
-- `libcurl4t64:amd64=8.9.1-2ubuntu1`
+- `curl=8.9.1-2ubuntu2`
+- `libcurl3t64-gnutls:amd64=8.9.1-2ubuntu2`
+- `libcurl4t64:amd64=8.9.1-2ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3t64-gnutls/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -644,12 +640,12 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `glibc=2.40-1ubuntu1`
+### `dpkg` source package: `glibc=2.40-1ubuntu3`
 
 Binary Packages:
 
-- `libc-bin=2.40-1ubuntu1`
-- `libc6:amd64=2.40-1ubuntu1`
+- `libc-bin=2.40-1ubuntu3`
+- `libc6:amd64=2.40-1ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -1049,11 +1045,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/libgcrypt20/1.11.0-6/
 
 
-### `dpkg` source package: `libgpg-error=1.50-3`
+### `dpkg` source package: `libgpg-error=1.50-4`
 
 Binary Packages:
 
-- `libgpg-error0:amd64=1.50-3`
+- `libgpg-error0:amd64=1.50-4`
 
 Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 
@@ -1069,7 +1065,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/libgpg-error/1.50-3/
+- http://snapshot.debian.org/package/libgpg-error/1.50-4/
 
 
 ### `dpkg` source package: `libidn2=2.3.7-2build1`
@@ -1430,12 +1426,12 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/media-types/10.1.0/
 
 
-### `dpkg` source package: `mercurial=6.8-3`
+### `dpkg` source package: `mercurial=6.8-3ubuntu1`
 
 Binary Packages:
 
-- `mercurial=6.8-3`
-- `mercurial-common=6.8-3`
+- `mercurial=6.8-3ubuntu1`
+- `mercurial-common=6.8-3ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/mercurial-common/copyright`)
 
@@ -1446,10 +1442,6 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/mercurial/6.8-3/
 
 
 ### `dpkg` source package: `ncurses=6.5-2`
@@ -1618,12 +1610,12 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openssl=3.3.1-2ubuntu1`
+### `dpkg` source package: `openssl=3.3.1-2ubuntu2`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.3.1-2ubuntu1`
-- `openssl=3.3.1-2ubuntu1`
+- `libssl3t64:amd64=3.3.1-2ubuntu2`
+- `openssl=3.3.1-2ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`)
 

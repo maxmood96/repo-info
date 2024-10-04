@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:89d4f2a21fc37da45dbb4b161dce07c77ba261fc392b03124a232a0bf44f592f`
-- Created: `2024-09-17T00:48:20.020385778Z`
-- Virtual Size: ~ 122.94 Mb  
+- Image ID: `sha256:e6cc0a3c2e25179d44f2a2b5542d854c52a61f5542608fc9a3b5f3c777ba83cf`
+- Created: `2024-10-02T02:06:58.535558817Z`
+- Virtual Size: ~ 130.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -257,12 +257,12 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=8.9.1-2ubuntu1`
+### `dpkg` source package: `curl=8.9.1-2ubuntu2`
 
 Binary Packages:
 
-- `curl=8.9.1-2ubuntu1`
-- `libcurl4t64:amd64=8.9.1-2ubuntu1`
+- `curl=8.9.1-2ubuntu2`
+- `libcurl4t64:amd64=8.9.1-2ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -537,12 +537,12 @@ Licenses: (parsed from: `/usr/share/doc/gcc-14-base/copyright`, `/usr/share/doc/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `glibc=2.40-1ubuntu1`
+### `dpkg` source package: `glibc=2.40-1ubuntu3`
 
 Binary Packages:
 
-- `libc-bin=2.40-1ubuntu1`
-- `libc6:amd64=2.40-1ubuntu1`
+- `libc-bin=2.40-1ubuntu3`
+- `libc6:amd64=2.40-1ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
@@ -869,11 +869,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/libgcrypt20/1.11.0-6/
 
 
-### `dpkg` source package: `libgpg-error=1.50-3`
+### `dpkg` source package: `libgpg-error=1.50-4`
 
 Binary Packages:
 
-- `libgpg-error0:amd64=1.50-3`
+- `libgpg-error0:amd64=1.50-4`
 
 Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 
@@ -889,7 +889,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/libgpg-error/1.50-3/
+- http://snapshot.debian.org/package/libgpg-error/1.50-4/
 
 
 ### `dpkg` source package: `libidn2=2.3.7-2build1`
@@ -1325,12 +1325,12 @@ Licenses: (parsed from: `/usr/share/doc/libldap-common/copyright`, `/usr/share/d
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openssl=3.3.1-2ubuntu1`
+### `dpkg` source package: `openssl=3.3.1-2ubuntu2`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.3.1-2ubuntu1`
-- `openssl=3.3.1-2ubuntu1`
+- `libssl3t64:amd64=3.3.1-2ubuntu2`
+- `openssl=3.3.1-2ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -1473,12 +1473,12 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `procps=2:4.0.4-4ubuntu4`
+### `dpkg` source package: `procps=2:4.0.4-4ubuntu5`
 
 Binary Packages:
 
-- `libproc2-0:amd64=2:4.0.4-4ubuntu4`
-- `procps=2:4.0.4-4ubuntu4`
+- `libproc2-0:amd64=2:4.0.4-4ubuntu5`
+- `procps=2:4.0.4-4ubuntu5`
 
 Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/procps/copyright`)
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a3612b101e2f2bd264ed2b1b752cf2ac81648cda3d9b853bcddaa730076cc996`
-- Created: `2024-09-17T00:45:16.301958607Z`
-- Virtual Size: ~ 257.91 Mb  
+- Image ID: `sha256:69cbeea6df9f212bbfbf2470c165d7e871b275988cedd5735ae00d4dc44a3cb3`
+- Created: `2024-10-02T02:03:12.470370598Z`
+- Virtual Size: ~ 252.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -62,11 +62,11 @@ Licenses: (parsed from: `/usr/share/doc/libaprutil1t64/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `apr=1.7.2-3.1build2`
+### `dpkg` source package: `apr=1.7.2-3.1ubuntu0.1`
 
 Binary Packages:
 
-- `libapr1t64:amd64=1.7.2-3.1build2`
+- `libapr1t64:amd64=1.7.2-3.1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libapr1t64/copyright`)
 
@@ -1597,12 +1597,12 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `procps=2:4.0.4-4ubuntu3`
+### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.1`
 
 Binary Packages:
 
-- `libproc2-0:amd64=2:4.0.4-4ubuntu3`
-- `procps=2:4.0.4-4ubuntu3`
+- `libproc2-0:amd64=2:4.0.4-4ubuntu3.1`
+- `procps=2:4.0.4-4ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/procps/copyright`)
 

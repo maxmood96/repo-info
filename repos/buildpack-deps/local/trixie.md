@@ -3088,20 +3088,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.44-1
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.44-1.dsc' libpng1.6_1.6.44-1.dsc 2247 SHA256:5a2b7d78749bf4af9631e148c128bae4f1257bb8def125b0c6197d1a825f2aa5
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.44.orig.tar.gz' libpng1.6_1.6.44.orig.tar.gz 1558044 SHA256:0ef5b633d0c65f780c4fced27ff832998e71478c13b45dfb6e94f23a82f64f7c
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.44-1.debian.tar.xz' libpng1.6_1.6.44-1.debian.tar.xz 31504 SHA256:935ccb68bea3189a75201321861526787c7c787c873b6923e347ae56342fb431
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpng1.6/1.6.44-1/
 
-- https://sources.debian.net/src/libpng1.6/1.6.44-1/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.44-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.44-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -5023,20 +5016,13 @@ Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:4.0.4-5
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4-5.dsc' procps_4.0.4-5.dsc 2124 SHA256:aae3a3e796c488d1ba06f0cb5d2d0f36d1fd5c741fb293618197e95c1bf04f03
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4.orig.tar.xz' procps_4.0.4.orig.tar.xz 1401540 SHA256:22870d6feb2478adb617ce4f09a787addaf2d260c5a8aa7b17d889a962c5e42e
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4-5.debian.tar.xz' procps_4.0.4-5.debian.tar.xz 29300 SHA256:4e489d908bcda90e9f74434cdae7d8beb2bfd289e624321e4d8d8be45c68879e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/procps/2:4.0.4-5/
 
-- https://sources.debian.net/src/procps/2:4.0.4-5/ (for browsing the source)
-- https://sources.debian.net/src/procps/2:4.0.4-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/2:4.0.4-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python-packaging=24.1-1`
 
@@ -5236,20 +5222,13 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=0.37.0-1
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_0.37.0-1.dsc' rust-sequoia-sq_0.37.0-1.dsc 3827 SHA256:c8ee3dc01acee4c8499ade2fe4d397d5eb307a04788bd79368db062f9a53a21f
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_0.37.0.orig.tar.gz' rust-sequoia-sq_0.37.0.orig.tar.gz 515850 SHA256:74617574f63f2f7c4e2c7f1f67f5ad354ec1ca8f373e0369689f29e4981dff24
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_0.37.0-1.debian.tar.xz' rust-sequoia-sq_0.37.0-1.debian.tar.xz 52436 SHA256:2c494ba433dda102baf324608b43e837c949e6227762fc8fdf4a9cb6e0a3aba6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sq/0.37.0-1/
 
-- https://sources.debian.net/src/rust-sequoia-sq/0.37.0-1/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sq/0.37.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sq/0.37.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.9-2`
 

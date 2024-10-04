@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4c3ddbc388031d479fd74ae1fb6b94a993aef08140fa98d7510ebd8ac0d5eeab`
-- Created: `2024-09-17T00:50:25.755580871Z`
-- Virtual Size: ~ 846.57 Mb  
+- Image ID: `sha256:5dd75f501048aea4153cf8a32016424ad5641c82b7450e1e602fabfc68f972d7`
+- Created: `2024-10-02T02:10:10.604026348Z`
+- Virtual Size: ~ 841.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -89,11 +89,11 @@ Licenses: (parsed from: `/usr/share/doc/libaprutil1t64/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `apr=1.7.2-3.2`
+### `dpkg` source package: `apr=1.7.2-3.2ubuntu1`
 
 Binary Packages:
 
-- `libapr1t64:amd64=1.7.2-3.2`
+- `libapr1t64:amd64=1.7.2-3.2ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libapr1t64/copyright`)
 
@@ -101,10 +101,6 @@ Licenses: (parsed from: `/usr/share/doc/libapr1t64/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/apr/1.7.2-3.2/
 
 
 ### `dpkg` source package: `apt=2.9.8`
@@ -373,14 +369,14 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/ca-certificates/20240203/
 
 
-### `dpkg` source package: `cairo=1.18.2-1`
+### `dpkg` source package: `cairo=1.18.2-2`
 
 Binary Packages:
 
-- `libcairo-gobject2:amd64=1.18.2-1`
-- `libcairo-script-interpreter2:amd64=1.18.2-1`
-- `libcairo2:amd64=1.18.2-1`
-- `libcairo2-dev:amd64=1.18.2-1`
+- `libcairo-gobject2:amd64=1.18.2-2`
+- `libcairo-script-interpreter2:amd64=1.18.2-2`
+- `libcairo2:amd64=1.18.2-2`
+- `libcairo2-dev:amd64=1.18.2-2`
 
 Licenses: (parsed from: `/usr/share/doc/libcairo-gobject2/copyright`, `/usr/share/doc/libcairo-script-interpreter2/copyright`, `/usr/share/doc/libcairo2/copyright`, `/usr/share/doc/libcairo2-dev/copyright`)
 
@@ -391,7 +387,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/cairo/1.18.2-1/
+- http://snapshot.debian.org/package/cairo/1.18.2-2/
 
 
 ### `dpkg` source package: `cdebconf=0.272ubuntu1`
@@ -431,14 +427,14 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=8.9.1-2ubuntu1`
+### `dpkg` source package: `curl=8.9.1-2ubuntu2`
 
 Binary Packages:
 
-- `curl=8.9.1-2ubuntu1`
-- `libcurl3t64-gnutls:amd64=8.9.1-2ubuntu1`
-- `libcurl4-openssl-dev:amd64=8.9.1-2ubuntu1`
-- `libcurl4t64:amd64=8.9.1-2ubuntu1`
+- `curl=8.9.1-2ubuntu2`
+- `libcurl3t64-gnutls:amd64=8.9.1-2ubuntu2`
+- `libcurl4-openssl-dev:amd64=8.9.1-2ubuntu2`
+- `libcurl4t64:amd64=8.9.1-2ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3t64-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -885,9 +881,10 @@ The source package *may* still be available for download from:
 
 Binary Packages:
 
+- `libfribidi-dev:amd64=1.0.15-1`
 - `libfribidi0:amd64=1.0.15-1`
 
-Licenses: (parsed from: `/usr/share/doc/libfribidi0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libfribidi-dev/copyright`, `/usr/share/doc/libfribidi0/copyright`)
 
 - `LGPL-2.1`
 - `LGPL-2.1+`
@@ -1042,18 +1039,18 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `glib2.0=2.82.0-1`
+### `dpkg` source package: `glib2.0=2.82.1-0ubuntu1`
 
 Binary Packages:
 
-- `gir1.2-glib-2.0:amd64=2.82.0-1`
-- `gir1.2-glib-2.0-dev:amd64=2.82.0-1`
-- `libgirepository-2.0-0:amd64=2.82.0-1`
-- `libglib2.0-0t64:amd64=2.82.0-1`
-- `libglib2.0-bin=2.82.0-1`
-- `libglib2.0-data=2.82.0-1`
-- `libglib2.0-dev:amd64=2.82.0-1`
-- `libglib2.0-dev-bin=2.82.0-1`
+- `gir1.2-glib-2.0:amd64=2.82.1-0ubuntu1`
+- `gir1.2-glib-2.0-dev:amd64=2.82.1-0ubuntu1`
+- `libgirepository-2.0-0:amd64=2.82.1-0ubuntu1`
+- `libglib2.0-0t64:amd64=2.82.1-0ubuntu1`
+- `libglib2.0-bin=2.82.1-0ubuntu1`
+- `libglib2.0-data=2.82.1-0ubuntu1`
+- `libglib2.0-dev:amd64=2.82.1-0ubuntu1`
+- `libglib2.0-dev-bin=2.82.1-0ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/gir1.2-glib-2.0/copyright`, `/usr/share/doc/gir1.2-glib-2.0-dev/copyright`, `/usr/share/doc/libgirepository-2.0-0/copyright`, `/usr/share/doc/libglib2.0-0t64/copyright`, `/usr/share/doc/libglib2.0-bin/copyright`, `/usr/share/doc/libglib2.0-data/copyright`, `/usr/share/doc/libglib2.0-dev/copyright`, `/usr/share/doc/libglib2.0-dev-bin/copyright`)
 
@@ -1085,10 +1082,6 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-glib-2.0/copyright`, `/usr/share/
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/glib2.0/2.82.0-1/
 
 
 ### `dpkg` source package: `glibc=2.40-1ubuntu3`
@@ -1242,8 +1235,9 @@ The source package *may* still be available for download from:
 Binary Packages:
 
 - `libgraphite2-3:amd64=1.3.14-2ubuntu1`
+- `libgraphite2-dev:amd64=1.3.14-2ubuntu1`
 
-Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgraphite2-3/copyright`, `/usr/share/doc/libgraphite2-dev/copyright`)
 
 - `Artistic`
 - `GPL-1`
@@ -1297,9 +1291,15 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
+- `gir1.2-harfbuzz-0.0:amd64=9.0.0-1`
+- `libharfbuzz-cairo0:amd64=9.0.0-1`
+- `libharfbuzz-dev:amd64=9.0.0-1`
+- `libharfbuzz-gobject0:amd64=9.0.0-1`
+- `libharfbuzz-icu0:amd64=9.0.0-1`
+- `libharfbuzz-subset0:amd64=9.0.0-1`
 - `libharfbuzz0b:amd64=9.0.0-1`
 
-Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gir1.2-harfbuzz-0.0/copyright`, `/usr/share/doc/libharfbuzz-cairo0/copyright`, `/usr/share/doc/libharfbuzz-dev/copyright`, `/usr/share/doc/libharfbuzz-gobject0/copyright`, `/usr/share/doc/libharfbuzz-icu0/copyright`, `/usr/share/doc/libharfbuzz-subset0/copyright`, `/usr/share/doc/libharfbuzz0b/copyright`)
 
 - `Apache-2.0`
 - `CC0-1.0`
@@ -1706,9 +1706,10 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
+- `libdatrie-dev:amd64=0.2.13-3build1`
 - `libdatrie1:amd64=0.2.13-3build1`
 
-Licenses: (parsed from: `/usr/share/doc/libdatrie1/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libdatrie-dev/copyright`, `/usr/share/doc/libdatrie1/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
@@ -1916,11 +1917,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/libgcrypt20/1.11.0-6/
 
 
-### `dpkg` source package: `libgpg-error=1.50-3`
+### `dpkg` source package: `libgpg-error=1.50-4`
 
 Binary Packages:
 
-- `libgpg-error0:amd64=1.50-3`
+- `libgpg-error0:amd64=1.50-4`
 
 Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 
@@ -1936,7 +1937,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/libgpg-error/1.50-3/
+- http://snapshot.debian.org/package/libgpg-error/1.50-4/
 
 
 ### `dpkg` source package: `libheif=1.18.1-2`
@@ -2149,12 +2150,12 @@ Licenses: (parsed from: `/usr/share/doc/libnsl2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libpng1.6=1.6.43-5build1`
+### `dpkg` source package: `libpng1.6=1.6.44-1`
 
 Binary Packages:
 
-- `libpng-dev:amd64=1.6.43-5build1`
-- `libpng16-16t64:amd64=1.6.43-5build1`
+- `libpng-dev:amd64=1.6.44-1`
+- `libpng16-16t64:amd64=1.6.44-1`
 
 Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/libpng16-16t64/copyright`)
 
@@ -2169,6 +2170,10 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libpng1.6/1.6.44-1/
 
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1build1`
@@ -2206,14 +2211,14 @@ Licenses: (parsed from: `/usr/share/doc/libraw23t64/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `librsvg=2.58.0+dfsg-1build2`
+### `dpkg` source package: `librsvg=2.59.1+dfsg-1`
 
 Binary Packages:
 
-- `gir1.2-rsvg-2.0:amd64=2.58.0+dfsg-1build2`
-- `librsvg2-2:amd64=2.58.0+dfsg-1build2`
-- `librsvg2-common:amd64=2.58.0+dfsg-1build2`
-- `librsvg2-dev:amd64=2.58.0+dfsg-1build2`
+- `gir1.2-rsvg-2.0:amd64=2.59.1+dfsg-1`
+- `librsvg2-2:amd64=2.59.1+dfsg-1`
+- `librsvg2-common:amd64=2.59.1+dfsg-1`
+- `librsvg2-dev:amd64=2.59.1+dfsg-1`
 
 Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/doc/librsvg2-2/copyright`, `/usr/share/doc/librsvg2-common/copyright`, `/usr/share/doc/librsvg2-dev/copyright`)
 
@@ -2244,6 +2249,10 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
+
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/librsvg/2.59.1+dfsg-1/
 
 
 ### `dpkg` source package: `libseccomp=2.5.5-1ubuntu4`
@@ -2374,9 +2383,10 @@ This is *usually* due to a new package version being released and the old versio
 Binary Packages:
 
 - `libthai-data=0.1.29-2build1`
+- `libthai-dev:amd64=0.1.29-2build1`
 - `libthai0:amd64=0.1.29-2build1`
 
-Licenses: (parsed from: `/usr/share/doc/libthai-data/copyright`, `/usr/share/doc/libthai0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libthai-data/copyright`, `/usr/share/doc/libthai-dev/copyright`, `/usr/share/doc/libthai0/copyright`)
 
 - `GPL-2`
 - `GPL-2+`
@@ -2709,11 +2719,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/libzstd/1.5.6+dfsg-1/
 
 
-### `dpkg` source package: `linux=6.11.0-7.7`
+### `dpkg` source package: `linux=6.11.0-8.8`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.11.0-7.7`
+- `linux-libc-dev:amd64=6.11.0-8.8`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2846,12 +2856,12 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/media-types/10.1.0/
 
 
-### `dpkg` source package: `mercurial=6.8-3`
+### `dpkg` source package: `mercurial=6.8-3ubuntu1`
 
 Binary Packages:
 
-- `mercurial=6.8-3`
-- `mercurial-common=6.8-3`
+- `mercurial=6.8-3ubuntu1`
+- `mercurial-common=6.8-3ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/mercurial-common/copyright`)
 
@@ -2862,10 +2872,6 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/mercurial/6.8-3/
 
 
 ### `dpkg` source package: `mpclib3=1.3.1-1build1`
@@ -3156,13 +3162,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openssl=3.3.1-2ubuntu1`
+### `dpkg` source package: `openssl=3.3.1-2ubuntu2`
 
 Binary Packages:
 
-- `libssl-dev:amd64=3.3.1-2ubuntu1`
-- `libssl3t64:amd64=3.3.1-2ubuntu1`
-- `openssl=3.3.1-2ubuntu1`
+- `libssl-dev:amd64=3.3.1-2ubuntu2`
+- `libssl3t64:amd64=3.3.1-2ubuntu2`
+- `openssl=3.3.1-2ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/libssl3t64/copyright`, `/usr/share/doc/openssl/copyright`)
 
@@ -3232,11 +3238,15 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
+- `gir1.2-pango-1.0:amd64=1.54.0+ds-2`
 - `libpango-1.0-0:amd64=1.54.0+ds-2`
+- `libpango1.0-dev:amd64=1.54.0+ds-2`
 - `libpangocairo-1.0-0:amd64=1.54.0+ds-2`
 - `libpangoft2-1.0-0:amd64=1.54.0+ds-2`
+- `libpangoxft-1.0-0:amd64=1.54.0+ds-2`
+- `pango1.0-tools=1.54.0+ds-2`
 
-Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/doc/libpangocairo-1.0-0/copyright`, `/usr/share/doc/libpangoft2-1.0-0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/gir1.2-pango-1.0/copyright`, `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/doc/libpango1.0-dev/copyright`, `/usr/share/doc/libpangocairo-1.0-0/copyright`, `/usr/share/doc/libpangoft2-1.0-0/copyright`, `/usr/share/doc/libpangoxft-1.0-0/copyright`, `/usr/share/doc/pango1.0-tools/copyright`)
 
 - `Apache-2`
 - `Apache-2.0`
@@ -3395,12 +3405,12 @@ Licenses: (parsed from: `/usr/share/doc/libpkgconf3/copyright`, `/usr/share/doc/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `postgresql-16=16.4-1`
+### `dpkg` source package: `postgresql-16=16.4-1build1`
 
 Binary Packages:
 
-- `libpq-dev=16.4-1`
-- `libpq5:amd64=16.4-1`
+- `libpq-dev=16.4-1build1`
+- `libpq5:amd64=16.4-1build1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -3419,10 +3429,6 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/postgresql-16/16.4-1/
 
 
 ### `dpkg` source package: `procps=2:4.0.4-4ubuntu5`
@@ -4017,6 +4023,21 @@ Licenses: (parsed from: `/usr/share/doc/wget/copyright`)
 
 - `GFDL-1.2`
 - `GPL-3`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `xft=2.3.6-1build1`
+
+Binary Packages:
+
+- `libxft-dev:amd64=2.3.6-1build1`
+- `libxft2:amd64=2.3.6-1build1`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.

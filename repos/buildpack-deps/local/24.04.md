@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7f5a0bf20163c749546f28feb8c6ea9c5e425f7005702c1c9895d04ae3a6ea23`
-- Created: `2024-09-17T00:47:47.261337721Z`
-- Virtual Size: ~ 822.40 Mb  
+- Image ID: `sha256:fec47e3865af2efe637625905d89dd33956fd36c929ce0e5e6d90ef8651b20af`
+- Created: `2024-10-02T02:06:12.483856952Z`
+- Virtual Size: ~ 816.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -81,11 +81,11 @@ Licenses: (parsed from: `/usr/share/doc/libaprutil1t64/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `apr=1.7.2-3.1build2`
+### `dpkg` source package: `apr=1.7.2-3.1ubuntu0.1`
 
 Binary Packages:
 
-- `libapr1t64:amd64=1.7.2-3.1build2`
+- `libapr1t64:amd64=1.7.2-3.1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libapr1t64/copyright`)
 
@@ -2906,12 +2906,12 @@ Licenses: (parsed from: `/usr/share/doc/libopenexr-3-1-30/copyright`, `/usr/shar
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openjpeg2=2.5.0-2build3`
+### `dpkg` source package: `openjpeg2=2.5.0-2ubuntu0.1`
 
 Binary Packages:
 
-- `libopenjp2-7:amd64=2.5.0-2build3`
-- `libopenjp2-7-dev:amd64=2.5.0-2build3`
+- `libopenjp2-7:amd64=2.5.0-2ubuntu0.1`
+- `libopenjp2-7-dev:amd64=2.5.0-2ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc/libopenjp2-7-dev/copyright`)
 
@@ -3242,12 +3242,12 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `procps=2:4.0.4-4ubuntu3`
+### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.1`
 
 Binary Packages:
 
-- `libproc2-0:amd64=2:4.0.4-4ubuntu3`
-- `procps=2:4.0.4-4ubuntu3`
+- `libproc2-0:amd64=2:4.0.4-4ubuntu3.1`
+- `procps=2:4.0.4-4ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/procps/copyright`)
 
