@@ -1,10 +1,10 @@
-# `composer:2.7.9`
+# `composer:2.8.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e401e0c0405c7d5c7f7534e3665c525af54dd830fe8a0c25114527af98cfb33a`
-- Created: `2024-09-05T08:44:06Z`
-- Virtual Size: ~ 189.38 Mb  
+- Image ID: `sha256:b7f78fe2b15a7a341fdf468cbbb9c01e6d2d0ccd05c5921c98674d4448cd489f`
+- Created: `2024-10-03T10:56:55Z`
+- Virtual Size: ~ 190.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=f774e28633e26fc8c5197f4dae58ec9e3ff87d1b4311cbc61ab05a7ad24bd131`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=2.7.9`
+  - `COMPOSER_VERSION=2.8.0`
 
 ## `apk` (`.apk`-based packages)
 
@@ -98,16 +98,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.4-r0 description:
+apk-tools-2.14.4-r1 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.4-r0 webpage:
+apk-tools-2.14.4-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.4-r0 installed size:
+apk-tools-2.14.4-r1 installed size:
 296 KiB
 
-apk-tools-2.14.4-r0 license:
+apk-tools-2.14.4-r1 license:
 GPL-2.0-only
 
 ```
@@ -234,16 +234,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.28.1-r0 description:
+c-ares-1.33.1-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.28.1-r0 webpage:
+c-ares-1.33.1-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.28.1-r0 installed size:
-156 KiB
+c-ares-1.33.1-r0 installed size:
+168 KiB
 
-c-ares-1.28.1-r0 license:
+c-ares-1.33.1-r0 license:
 MIT
 
 ```
@@ -353,16 +353,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.9.1-r2 description:
+curl-8.10.1-r0 description:
 URL retrival utility and library
 
-curl-8.9.1-r2 webpage:
+curl-8.10.1-r0 webpage:
 https://curl.se/
 
-curl-8.9.1-r2 installed size:
-248 KiB
+curl-8.10.1-r0 installed size:
+252 KiB
 
-curl-8.9.1-r2 license:
+curl-8.10.1-r0 license:
 curl
 
 ```
@@ -506,16 +506,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.9.1-r2 description:
+libcurl-8.10.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.9.1-r2 webpage:
+libcurl-8.10.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.9.1-r2 installed size:
-628 KiB
+libcurl-8.10.1-r0 installed size:
+644 KiB
 
-libcurl-8.9.1-r2 license:
+libcurl-8.10.1-r0 license:
 curl
 
 ```
