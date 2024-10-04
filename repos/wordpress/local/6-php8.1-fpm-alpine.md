@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f57477267c7ffabcf90a03541bc9ebbc51b534209edf50b123754f7beb8d6999`
-- Created: `2024-09-12T19:33:49Z`
-- Virtual Size: ~ 261.82 Mb  
+- Image ID: `sha256:c642a84e64ada3bce3cbd96455d71bdda1728312ce6648c767283a5e682eb095`
+- Created: `2024-09-18T16:07:52Z`
+- Virtual Size: ~ 262.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -367,16 +367,16 @@ FTL OR GPL-2.0-or-later
 ### `apk` package: `ghostscript`
 
 ```console
-ghostscript-10.03.1-r0 description:
+ghostscript-10.04.0-r0 description:
 Interpreter for the PostScript language and for PDF
 
-ghostscript-10.03.1-r0 webpage:
+ghostscript-10.04.0-r0 webpage:
 https://ghostscript.com/
 
-ghostscript-10.03.1-r0 installed size:
-61 MiB
+ghostscript-10.04.0-r0 installed size:
+62 MiB
 
-ghostscript-10.03.1-r0 license:
+ghostscript-10.04.0-r0 license:
 AGPL-3.0-or-later
 
 ```
