@@ -1,19 +1,19 @@
-# `nginx:1.27.1-alpine-slim`
+# `nginx:1.27.2-alpine-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8caa4b9a10d5c81cf7c33ce72cd2556077bbf5930f71c49af0371eaa6dde44d0`
-- Created: `2024-08-14T23:51:24Z`
-- Virtual Size: ~ 11.78 Mb  
+- Image ID: `sha256:d769f03e916de3ddf7e097f757e2615b69ecb7bcbd829c77353c6ac6164f35bd`
+- Created: `2024-10-02T17:55:35Z`
+- Virtual Size: ~ 11.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.27.1`
+  - `NGINX_VERSION=1.27.2`
   - `PKG_RELEASE=1`
-  - `DYNPKG_RELEASE=2`
+  - `DYNPKG_RELEASE=1`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
 
@@ -226,16 +226,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.27.1-r1 description:
+nginx-1.27.2-r1 description:
 High performance web server
 
-nginx-1.27.1-r1 webpage:
+nginx-1.27.2-r1 webpage:
 https://nginx.org/
 
-nginx-1.27.1-r1 installed size:
-2615 KiB
+nginx-1.27.2-r1 installed size:
+2633 KiB
 
-nginx-1.27.1-r1 license:
+nginx-1.27.2-r1 license:
 2-clause BSD-like license
 
 ```
