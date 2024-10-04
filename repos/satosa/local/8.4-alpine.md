@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f1c9f722132249c6c314ba7643241ce0f92505b95706c1225c35a190852bc1de`
+- Image ID: `sha256:7fc88fd4fe44d0a8b1a1e53a9a1dc0c50ac188b4db42f3bf019dcb3595abd4aa`
 - Created: `2023-12-19T17:24:54Z`
-- Virtual Size: ~ 126.88 Mb  
+- Virtual Size: ~ 126.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
-  - `PYTHON_VERSION=3.12.6`
+  - `PYTHON_VERSION=3.12.7`
   - `SATOSA_VERSION=8.4.0`
 
 ## `apk` (`.apk`-based packages)
