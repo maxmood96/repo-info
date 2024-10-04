@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9df6d6105df2788299e5cbbf3dfd09aa6b3b5a10b784b214c35a035f76deb4ba`
-- Created: `2024-08-13T09:26:48.578180187Z`
+- Image ID: `sha256:9522b5ff29b80fb026c27040cc14b743d714a57f3ca4cff1c76c9e59ca244163`
+- Created: `2024-09-18T04:18:34.587883298Z`
 - Virtual Size: ~ 72.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1223,12 +1223,12 @@ $ apt-get source -qq --print-uris shadow=1:4.8.1-1ubuntu5.20.04.5
 'http://archive.ubuntu.com/ubuntu/pool/main/s/shadow/shadow_4.8.1-1ubuntu5.20.04.5.debian.tar.xz' shadow_4.8.1-1ubuntu5.20.04.5.debian.tar.xz 88744 SHA512:b12978fe6b7f0de302a6070f245aba6abc97ee3cefe7ea4925c16d45547d850f4cfd7ab5e7eb7940176d7afe37d16feda3b3bd458a0151a3ffe6a330f0197db9
 ```
 
-### `dpkg` source package: `systemd=245.4-4ubuntu3.23`
+### `dpkg` source package: `systemd=245.4-4ubuntu3.24`
 
 Binary Packages:
 
-- `libsystemd0:amd64=245.4-4ubuntu3.23`
-- `libudev1:amd64=245.4-4ubuntu3.23`
+- `libsystemd0:amd64=245.4-4ubuntu3.24`
+- `libudev1:amd64=245.4-4ubuntu3.24`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1241,9 +1241,14 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris systemd=245.4-4ubuntu3.24
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.24.dsc' systemd_245.4-4ubuntu3.24.dsc 5262 SHA512:a7368dff1d7ce06bde4459dd635d2f25d9085f7c2cb0a5c3cbc30f63d24bea8145ff22c29709e67414b5ebd63fdd834b9552644b4adfbeb2b03c4db7a19e6ffe
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4.orig.tar.gz' systemd_245.4.orig.tar.gz 9000780 SHA512:02036bb1ab05301a9d0dfdd4b9c9376e90134474482531e6e292122380be2f24f99177493dd3af6f8af1a8ed2599ee0996da91a3b1b7872bbfaf26a1c3e61b4c
+'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_245.4-4ubuntu3.24.debian.tar.xz' systemd_245.4-4ubuntu3.24.debian.tar.xz 294744 SHA512:97dd99ebc167edaa5d32157039a9af54c1747a43ef7625f67a697c971f5755e6038e496d04cce45d77055894b7d84d5bfb86c47a037e911c41a297ddb092dec8
+```
 
 ### `dpkg` source package: `sysvinit=2.96-2.1ubuntu1`
 
