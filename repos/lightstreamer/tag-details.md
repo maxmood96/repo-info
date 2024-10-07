@@ -17677,39 +17677,84 @@ $ docker pull lightstreamer@sha256:ff99834c189d44e3fe8a9e2885399f5e8e438c23b4ae4
 
 ## `lightstreamer:7.4.5`
 
-**does not exist** (yet?)
+```console
+$ docker pull lightstreamer@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `lightstreamer:7.4.5-jdk11`
 
-**does not exist** (yet?)
+```console
+$ docker pull lightstreamer@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `lightstreamer:7.4.5-jdk11-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull lightstreamer@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `lightstreamer:7.4.5-jdk17`
 
-**does not exist** (yet?)
+```console
+$ docker pull lightstreamer@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `lightstreamer:7.4.5-jdk17-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull lightstreamer@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `lightstreamer:7.4.5-jdk21`
 
-**does not exist** (yet?)
+```console
+$ docker pull lightstreamer@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `lightstreamer:7.4.5-jdk21-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull lightstreamer@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `lightstreamer:7.4.5-jdk8`
 
-**does not exist** (yet?)
+```console
+$ docker pull lightstreamer@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `lightstreamer:7.4.5-jdk8-temurin`
 
-**does not exist** (yet?)
+```console
+$ docker pull lightstreamer@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `lightstreamer:latest`
 
