@@ -1,14 +1,16 @@
 ## `couchdb:3-nouveau`
 
 ```console
-$ docker pull couchdb@sha256:dd187ee0c0829bdc3819cef150fe9fcccdec6caf5a03a50ac808bbf09a30a66d
+$ docker pull couchdb@sha256:d136c2d4f61b54464eb2a82cd39ca36d11eea611d8576863662ecddd3122dcda
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 4
+-	Platforms: 6
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm64 variant v8
+	-	unknown; unknown
+	-	linux; s390x
 	-	unknown; unknown
 
 ### `couchdb:3-nouveau` - linux; amd64
@@ -223,4 +225,111 @@ $ docker pull couchdb@sha256:f017d58d202848d8c80f74a5bcab5b6764f4e0c5c5051b4ce57
 	-	`sha256:d0ab1f52acee1d1347095589a024c76cdb40a50b698e950c8dd8d1cd4a966ebb`  
 		Last Modified: Mon, 07 Oct 2024 18:00:21 GMT  
 		Size: 24.6 KB (24569 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `couchdb:3-nouveau` - linux; s390x
+
+```console
+$ docker pull couchdb@sha256:a769a37fa918495b7b9b4d6507ca0d845f438ea9fec4c8a92669465c6585666a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **149.6 MB (149595951 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:459e06e7a4838283c6ad7127f3ea08a349130672bbabb29c65ce5a81445032c9`
+-	Default Command: `["\/usr\/bin\/java","-server","-Djava.awt.headless=true","-Xmx2g","-jar","\/opt\/nouveau\/lib\/nouveau-1.0-SNAPSHOT.jar","server","\/opt\/nouveau\/etc\/nouveau.yaml"]`
+
+```dockerfile
+# Fri, 27 Sep 2024 02:43:25 GMT
+ADD file:ee3c94adee604dbcaddf5d6c372b1f325a4443f66bd717dedf1ff7d9fb1ba116 in / 
+# Fri, 27 Sep 2024 02:43:26 GMT
+CMD ["bash"]
+# Fri, 04 Oct 2024 23:09:59 GMT
+LABEL maintainer=CouchDB Developers dev@couchdb.apache.org
+# Fri, 04 Oct 2024 23:09:59 GMT
+RUN groupadd -g 5984 -r nouveau && useradd -u 5984 -d /opt/nouveau -g nouveau nouveau # buildkit
+# Fri, 04 Oct 2024 23:09:59 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         apt-transport-https         ca-certificates         dirmngr         gnupg      ;     rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 04 Oct 2024 23:09:59 GMT
+RUN set -ex;     apt-get update;     apt-get install -y --no-install-recommends         openjdk-17-jre-headless      ;     rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 04 Oct 2024 23:09:59 GMT
+RUN set -eux;     apt-get update;     apt-get install -y --no-install-recommends tini;     rm -rf /var/lib/apt/lists/*;     tini --version # buildkit
+# Fri, 04 Oct 2024 23:09:59 GMT
+ENV GPG_COUCH_KEY=390EF70BB1EA12B2773962950EE62FB37A00258D
+# Fri, 04 Oct 2024 23:09:59 GMT
+RUN set -eux;    apt-get update;    apt-get install -y curl;    export GNUPGHOME="$(mktemp -d)";    curl -fL -o keys.asc https://couchdb.apache.org/repo/keys.asc;    gpg --batch --import keys.asc;    gpg --batch --export "${GPG_COUCH_KEY}" > /usr/share/keyrings/couchdb-archive-keyring.gpg;    command -v gpgconf && gpgconf --kill all || :;    rm -rf "$GNUPGHOME";    apt-key list;    apt purge -y --autoremove curl;    rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 04 Oct 2024 23:09:59 GMT
+RUN . /etc/os-release;    echo "deb [signed-by=/usr/share/keyrings/couchdb-archive-keyring.gpg] https://apache.jfrog.io/artifactory/couchdb-deb/ bookworm main" |        tee /etc/apt/sources.list.d/couchdb.list >/dev/null # buildkit
+# Fri, 04 Oct 2024 23:09:59 GMT
+RUN set -eux;     apt-get update;         echo "couchdb-nouveau couchdb-nouveau/enable select false" | debconf-set-selections;     DEBIAN_FRONTEND=noninteractive COUCHDB_NOUVEAU_ENABLE=1 apt-get install -y --allow-downgrades --allow-remove-essential --allow-change-held-packages --no-install-recommends             couchdb-nouveau=3.4.1~bookworm;     rm -rf /var/lib/apt/lists/*;     chown -R nouveau:nouveau /opt/nouveau # buildkit
+# Fri, 04 Oct 2024 23:09:59 GMT
+COPY --chown=nouveau:nouveau nouveau.yaml /opt/nouveau/etc/nouveau.yaml # buildkit
+# Fri, 04 Oct 2024 23:09:59 GMT
+VOLUME [/opt/nouveau/data]
+# Fri, 04 Oct 2024 23:09:59 GMT
+EXPOSE map[5987/tcp:{} 5988/tcp:{}]
+# Fri, 04 Oct 2024 23:09:59 GMT
+CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/nouveau/lib/nouveau-1.0-SNAPSHOT.jar" "server" "/opt/nouveau/etc/nouveau.yaml"]
+```
+
+-	Layers:
+	-	`sha256:eca1e192de25fb56826ff7ed14b2e1532a49c27a08147a6249506eafd8ab4472`  
+		Last Modified: Fri, 27 Sep 2024 02:47:22 GMT  
+		Size: 27.5 MB (27490024 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c2cdd8ece04acd2127415e13f8bec0227eb84f82d8c1084c908d6660ea0a1fb2`  
+		Last Modified: Mon, 07 Oct 2024 18:03:55 GMT  
+		Size: 1.2 KB (1186 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7d2a6697c4dda07211a6fe83879e5371efb32a06f9108171fa7c01a9beb8930c`  
+		Last Modified: Mon, 07 Oct 2024 18:03:56 GMT  
+		Size: 7.4 MB (7387297 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9308f390eede38eeba97ddf2aae327974fe41a32a9c9adce6fc2b1dc369f062c`  
+		Last Modified: Mon, 07 Oct 2024 18:03:57 GMT  
+		Size: 73.0 MB (72988074 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:77ec8e46df547a8e2dfffb0951bad8e1ba159f114823579b772d4da45be50686`  
+		Last Modified: Mon, 07 Oct 2024 18:03:55 GMT  
+		Size: 378.2 KB (378168 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:77f6ae7c1a5fb4a8048ba668ff13896a99ee959b58956d5601dc4c0cb905c6a3`  
+		Last Modified: Mon, 07 Oct 2024 18:03:56 GMT  
+		Size: 99.6 KB (99558 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6c97dd50ac3b237728d0973ecdebc18615d542963f377f2400c5dbba8ba08b3d`  
+		Last Modified: Mon, 07 Oct 2024 18:03:56 GMT  
+		Size: 278.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5477fdaef2dcad89941d20a4fbed9eb177641739f37f7c08ccf8ca015a22e489`  
+		Last Modified: Mon, 07 Oct 2024 18:03:58 GMT  
+		Size: 41.3 MB (41250948 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:cb9097da2b45c386dcbc78bfa352e23bab39155aa34aba43b0bdfa5796857302`  
+		Last Modified: Mon, 07 Oct 2024 18:03:57 GMT  
+		Size: 418.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `couchdb:3-nouveau` - unknown; unknown
+
+```console
+$ docker pull couchdb@sha256:9f1139ae96caf97f1fc0738b5558bd23e20ce0b46f6a7b0d4369c402b91851ea
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.5 MB (3472186 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:3390060b4240d5b09ec2424441b839043844b748371bbf08b059cd10bf311311`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:298aeec794eba0490e889885e1758cfb76a700f527aaaec4a4d4f8d572b784ed`  
+		Last Modified: Mon, 07 Oct 2024 18:03:55 GMT  
+		Size: 3.4 MB (3447794 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:bc4fc686d3e2892bd2e501a3d3506ddb951ce2fd4858fcedd71fc428ab3f0984`  
+		Last Modified: Mon, 07 Oct 2024 18:03:55 GMT  
+		Size: 24.4 KB (24392 bytes)  
 		MIME: application/vnd.in-toto+json
