@@ -1,18 +1,17 @@
-# `python:3.12.7-bullseye`
+# `python:3.13.0-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c237ae571d8e391715f14842544b73000e1bd7ced76794eccc74b76e8fd62dd8`
-- Created: `2024-10-01T10:04:25Z`
-- Virtual Size: ~ 926.46 Mb  
+- Image ID: `sha256:ee27631cdc5126c2a86dfadd90ed965a3923c40c809ef86d1fbbe34eda70a40d`
+- Created: `2024-10-07T18:55:41Z`
+- Virtual Size: ~ 928.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `LANG=C.UTF-8`
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
-  - `PYTHON_VERSION=3.12.7`
+  - `PYTHON_VERSION=3.13.0`
 
 ## `dpkg` (`.deb`-based packages)
 
