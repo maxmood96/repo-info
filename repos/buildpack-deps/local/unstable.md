@@ -2536,20 +2536,13 @@ Licenses: (parsed from: `/usr/share/doc/libdeflate-dev/copyright`, `/usr/share/d
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdeflate=1.21-1
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.21-1.dsc' libdeflate_1.21-1.dsc 2214 SHA256:b102dfc1291488623794e65940c7b6d8668b842aa130fa0a4bc1058893ad7299
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.21.orig.tar.gz' libdeflate_1.21.orig.tar.gz 195361 SHA256:50827d312c0413fbd41b0628590cd54d9ad7ebf88360cba7c0e70027942dbd01
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.21-1.debian.tar.xz' libdeflate_1.21-1.debian.tar.xz 5504 SHA256:e6c7155c3cfc0fc52495cf3e7cb315648bd935872d703e873b1a518029f0308d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libdeflate/1.21-1/
 
-- https://sources.debian.net/src/libdeflate/1.21-1/ (for browsing the source)
-- https://sources.debian.net/src/libdeflate/1.21-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdeflate/1.21-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libedit=3.1-20240808-1`
 
@@ -5698,21 +5691,13 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unbound=1.20.0-1
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.20.0-1.dsc' unbound_1.20.0-1.dsc 2844 SHA256:c08b3a837c593782b6ee30fda338186dbd4b1608a4ef546a412f2dbdd8febb12
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.20.0.orig.tar.gz' unbound_1.20.0.orig.tar.gz 6550938 SHA256:56b4ceed33639522000fd96775576ddf8782bb3617610715d7f1e777c5ec1dbf
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.20.0.orig.tar.gz.asc' unbound_1.20.0.orig.tar.gz.asc 833 SHA256:87849bcd3c9ccd0df7393ac9de3f4c2d2779fed6177f68e4ccab42bbe0907ef2
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.20.0-1.debian.tar.xz' unbound_1.20.0-1.debian.tar.xz 29244 SHA256:f71b2292c6efb2fd9166dfd12f2dc27d34c4dfc40468ea63cce1be1e05dd1c1f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/unbound/1.20.0-1/
 
-- https://sources.debian.net/src/unbound/1.20.0-1/ (for browsing the source)
-- https://sources.debian.net/src/unbound/1.20.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unbound/1.20.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unzip=6.0-28`
 

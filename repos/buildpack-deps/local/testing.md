@@ -3189,20 +3189,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `Unlicense,`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.59.0+dfsg-3
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.59.0%2bdfsg-3.dsc' librsvg_2.59.0+dfsg-3.dsc 3046 SHA256:b738fd2aea50e452723d7ef470ae9ce60e3430df1dc0308d15c04d9825f7583f
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.59.0%2bdfsg.orig.tar.xz' librsvg_2.59.0+dfsg.orig.tar.xz 6111680 SHA256:ab76cd1f5a0969c6e71073f369f9470839873c39ed0e5a34ab9b19ab5281d7e9
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.59.0%2bdfsg-3.debian.tar.xz' librsvg_2.59.0+dfsg-3.debian.tar.xz 17815368 SHA256:08a0bc6fb4488cb7aa686035225aabb6e630adb991c623ca944a657a96230033
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/librsvg/2.59.0+dfsg-3/
 
-- https://sources.debian.net/src/librsvg/2.59.0+dfsg-3/ (for browsing the source)
-- https://sources.debian.net/src/librsvg/2.59.0+dfsg-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/librsvg/2.59.0+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.5.5-1`
 
@@ -5666,21 +5659,13 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris unbound=1.20.0-1
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.20.0-1.dsc' unbound_1.20.0-1.dsc 2844 SHA256:c08b3a837c593782b6ee30fda338186dbd4b1608a4ef546a412f2dbdd8febb12
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.20.0.orig.tar.gz' unbound_1.20.0.orig.tar.gz 6550938 SHA256:56b4ceed33639522000fd96775576ddf8782bb3617610715d7f1e777c5ec1dbf
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.20.0.orig.tar.gz.asc' unbound_1.20.0.orig.tar.gz.asc 833 SHA256:87849bcd3c9ccd0df7393ac9de3f4c2d2779fed6177f68e4ccab42bbe0907ef2
-'http://deb.debian.org/debian/pool/main/u/unbound/unbound_1.20.0-1.debian.tar.xz' unbound_1.20.0-1.debian.tar.xz 29244 SHA256:f71b2292c6efb2fd9166dfd12f2dc27d34c4dfc40468ea63cce1be1e05dd1c1f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/unbound/1.20.0-1/
 
-- https://sources.debian.net/src/unbound/1.20.0-1/ (for browsing the source)
-- https://sources.debian.net/src/unbound/1.20.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/unbound/1.20.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unzip=6.0-28`
 
