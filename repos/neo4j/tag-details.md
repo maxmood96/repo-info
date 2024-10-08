@@ -674,15 +674,30 @@ $ docker pull neo4j@sha256:3ddd1c51ca4265853d80dc3e6258f0788b6cbd1e17e439001a4e3
 
 ## `neo4j:4.4.38`
 
-**does not exist** (yet?)
+```console
+$ docker pull neo4j@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `neo4j:4.4.38-community`
 
-**does not exist** (yet?)
+```console
+$ docker pull neo4j@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `neo4j:4.4.38-enterprise`
 
-**does not exist** (yet?)
+```console
+$ docker pull neo4j@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `neo4j:5`
 
