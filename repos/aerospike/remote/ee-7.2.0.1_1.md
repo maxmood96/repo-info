@@ -1,3 +1,8 @@
 ## `aerospike:ee-7.2.0.1_1`
 
-**does not exist** (yet?)
+```console
+$ docker pull aerospike@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
