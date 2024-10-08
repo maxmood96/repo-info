@@ -2,6 +2,12 @@
 
 # Tags of `websphere-liberty`
 
+-	[`websphere-liberty:24.0.0.10-full-java11-openj9`](#websphere-liberty240010-full-java11-openj9)
+-	[`websphere-liberty:24.0.0.10-full-java17-openj9`](#websphere-liberty240010-full-java17-openj9)
+-	[`websphere-liberty:24.0.0.10-full-java8-ibmjava`](#websphere-liberty240010-full-java8-ibmjava)
+-	[`websphere-liberty:24.0.0.10-kernel-java11-openj9`](#websphere-liberty240010-kernel-java11-openj9)
+-	[`websphere-liberty:24.0.0.10-kernel-java17-openj9`](#websphere-liberty240010-kernel-java17-openj9)
+-	[`websphere-liberty:24.0.0.10-kernel-java8-ibmjava`](#websphere-liberty240010-kernel-java8-ibmjava)
 -	[`websphere-liberty:24.0.0.6-full-java11-openj9`](#websphere-liberty24006-full-java11-openj9)
 -	[`websphere-liberty:24.0.0.6-full-java17-openj9`](#websphere-liberty24006-full-java17-openj9)
 -	[`websphere-liberty:24.0.0.6-full-java8-ibmjava`](#websphere-liberty24006-full-java8-ibmjava)
@@ -23,6 +29,30 @@
 -	[`websphere-liberty:kernel-java17-openj9`](#websphere-libertykernel-java17-openj9)
 -	[`websphere-liberty:kernel-java8-ibmjava`](#websphere-libertykernel-java8-ibmjava)
 -	[`websphere-liberty:latest`](#websphere-libertylatest)
+
+## `websphere-liberty:24.0.0.10-full-java11-openj9`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:24.0.0.10-full-java17-openj9`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:24.0.0.10-full-java8-ibmjava`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:24.0.0.10-kernel-java11-openj9`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:24.0.0.10-kernel-java17-openj9`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:24.0.0.10-kernel-java8-ibmjava`
+
+**does not exist** (yet?)
 
 ## `websphere-liberty:24.0.0.6-full-java11-openj9`
 
