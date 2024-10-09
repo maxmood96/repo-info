@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e58c529775981d23559d0f92877d1535fe10efe6bbdf8beb105c65772610d1d2`
+- Image ID: `sha256:4d2f8d84d89bcccce8b4fb5099a82fc010f0357bbb705622d738a32fa9ce00d4`
 - Created: `2024-08-20T18:12:59Z`
-- Virtual Size: ~ 821.37 Mb  
+- Virtual Size: ~ 823.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -1152,26 +1152,26 @@ $ dnf --quiet download --source --url openldap-2.4.44-25.amzn2.0.7
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0df727c2c7d241b182445bf73964d98ceca7bb937a0639409615f23ac7aa0f83/../../../../../blobstore/db7da8ae89a175ef6835a375dec2b69b3eaecc676cb58b8dd9c1f8e769fb0fc2/openldap-2.4.44-25.amzn2.0.7.src.rpm
 ```
 
-### `rpm` package: `openssh-7.4p1-22.amzn2.0.7.x86_64`
+### `rpm` package: `openssh-7.4p1-22.amzn2.0.8.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssh-7.4p1-22.amzn2.0.7
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0df727c2c7d241b182445bf73964d98ceca7bb937a0639409615f23ac7aa0f83/../../../../../blobstore/e135e7a48d208112ec04c02bfb99cebde5a4277b8cc04acca7253aee182c4c79/openssh-7.4p1-22.amzn2.0.7.src.rpm
+$ dnf --quiet download --source --url openssh-7.4p1-22.amzn2.0.8
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0df727c2c7d241b182445bf73964d98ceca7bb937a0639409615f23ac7aa0f83/../../../../../blobstore/f472552ddf1b53fac41e9119e5da2fcb74388a6911b353a13f1639fa6c5450b5/openssh-7.4p1-22.amzn2.0.8.src.rpm
 ```
 
-### `rpm` package: `openssh-clients-7.4p1-22.amzn2.0.7.x86_64`
+### `rpm` package: `openssh-clients-7.4p1-22.amzn2.0.8.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssh-clients-7.4p1-22.amzn2.0.7
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0df727c2c7d241b182445bf73964d98ceca7bb937a0639409615f23ac7aa0f83/../../../../../blobstore/e135e7a48d208112ec04c02bfb99cebde5a4277b8cc04acca7253aee182c4c79/openssh-7.4p1-22.amzn2.0.7.src.rpm
+$ dnf --quiet download --source --url openssh-clients-7.4p1-22.amzn2.0.8
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0df727c2c7d241b182445bf73964d98ceca7bb937a0639409615f23ac7aa0f83/../../../../../blobstore/f472552ddf1b53fac41e9119e5da2fcb74388a6911b353a13f1639fa6c5450b5/openssh-7.4p1-22.amzn2.0.8.src.rpm
 ```
 
 ### `rpm` package: `openssl-libs-1.0.2k-24.amzn2.0.13.x86_64`
