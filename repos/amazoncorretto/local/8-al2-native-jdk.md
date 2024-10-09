@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:81d972c8285c007ce5dcf8f2f6e88b0f0b4bb4e53e6ec3bf0965cf9d703586f4`
+- Image ID: `sha256:d000ab49f2200c99f550325b5e3e140cf50dcde1d9e8f02ccfbec357a44f93da`
 - Created: `2024-09-19T23:46:25Z`
 - Virtual Size: ~ 491.44 Mb  
   (total size of all layers on-disk)
@@ -1441,15 +1441,15 @@ $ dnf --quiet download --source --url libthai-0.1.14-9.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0df727c2c7d241b182445bf73964d98ceca7bb937a0639409615f23ac7aa0f83/../../../../../blobstore/8aee8438aa5685bf8dac6ccff2ca30d589257d4763a8f4d4e27243fe3a24bbfa/libthai-0.1.14-9.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `libtiff-4.0.3-35.amzn2.0.20.x86_64`
+### `rpm` package: `libtiff-4.0.3-35.amzn2.0.21.x86_64`
 
 Licenses (from `rpm --query`): libtiff
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libtiff-4.0.3-35.amzn2.0.20
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0df727c2c7d241b182445bf73964d98ceca7bb937a0639409615f23ac7aa0f83/../../../../../blobstore/0982c20d63e3eb82d4d9f076b3707856bdd17e4d965001a0ee57dc7b554d207a/libtiff-4.0.3-35.amzn2.0.20.src.rpm
+$ dnf --quiet download --source --url libtiff-4.0.3-35.amzn2.0.21
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/0df727c2c7d241b182445bf73964d98ceca7bb937a0639409615f23ac7aa0f83/../../../../../blobstore/273c8ba292c7309b8273612a5f1e3c55f5401105f0721623f0bc6dbbdf9eb658/libtiff-4.0.3-35.amzn2.0.21.src.rpm
 ```
 
 ### `rpm` package: `libunistring-0.9.3-9.amzn2.0.2.x86_64`
