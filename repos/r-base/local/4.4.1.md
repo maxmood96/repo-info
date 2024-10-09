@@ -1616,14 +1616,13 @@ Licenses: (parsed from: `/usr/share/doc/libdeflate-dev/copyright`, `/usr/share/d
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdeflate=1.21-1
-'http://http.debian.net/debian/pool/main/libd/libdeflate/libdeflate_1.21-1.dsc' libdeflate_1.21-1.dsc 2214 SHA256:b102dfc1291488623794e65940c7b6d8668b842aa130fa0a4bc1058893ad7299
-'http://http.debian.net/debian/pool/main/libd/libdeflate/libdeflate_1.21.orig.tar.gz' libdeflate_1.21.orig.tar.gz 195361 SHA256:50827d312c0413fbd41b0628590cd54d9ad7ebf88360cba7c0e70027942dbd01
-'http://http.debian.net/debian/pool/main/libd/libdeflate/libdeflate_1.21-1.debian.tar.xz' libdeflate_1.21-1.debian.tar.xz 5504 SHA256:e6c7155c3cfc0fc52495cf3e7cb315648bd935872d703e873b1a518029f0308d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libdeflate/1.21-1/
+
 
 ### `dpkg` source package: `libffi=3.4.6-1`
 
