@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e94b9005845a5cfd262192bb6e4fe9f7cc43e85d900f29d57a90bc49b59b1ae8`
-- Created: `2024-09-30T22:22:27Z`
-- Virtual Size: ~ 723.83 Mb  
+- Image ID: `sha256:e095768f5539ea56cc0045b3a925da106bce626a98bddf7a4bfa7dadd450777c`
+- Created: `2024-10-03T19:50:58Z`
+- Virtual Size: ~ 724.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,6 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.17`
   - `JSYAML_VERSION=3.13.1`
+  - `JSYAML_CHECKSUM=662e32319bdd378e91f67578e56a34954b0a2e33aca11d70ab9f4826af24b941`
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=5.0`
@@ -1225,11 +1226,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-mongosh=2.3.1`
+### `dpkg` source package: `mongodb-mongosh=2.3.2`
 
 Binary Packages:
 
-- `mongodb-mongosh=2.3.1`
+- `mongodb-mongosh=2.3.2`
 
 Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 
