@@ -1,24 +1,24 @@
 ## `nats:windowsservercore`
 
 ```console
-$ docker pull nats@sha256:1dab5da7bd4e26f933d8a2fc039bd8f16a5c261cfecc264f68443efc186b796c
+$ docker pull nats@sha256:f2abbd5e55168207a402651d57986df04a21d174b4df46cf396520a463a4d626
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
 -	Platforms: 1
-	-	windows version 10.0.17763.6293; amd64
+	-	windows version 10.0.17763.6414; amd64
 
-### `nats:windowsservercore` - windows version 10.0.17763.6293; amd64
+### `nats:windowsservercore` - windows version 10.0.17763.6414; amd64
 
 ```console
-$ docker pull nats@sha256:7a5e5c4d9bdb73d40c15d581e919c9358e8da9fde946d0b3c67ec2971669334b
+$ docker pull nats@sha256:3556b6a9c76fb29ec7281c0920ca60ddef097d88c34c8e393a6a813a5d574a9e
 ```
 
 -	Docker Version: 23.0.6
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.7 GB (1726734115 bytes)**  
+-	Total Size: **1.9 GB (1908388523 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c2e45b2d353fde11877ee6b101237c34867b496599da7ec4f3fc81f4ea8c68a`
+-	Image ID: `sha256:05344572efc0611b433fca0cdac389ca643181c86b90cad2fc4bbbf15589bee9`
 -	Entrypoint: `["C:\\nats-server.exe"]`
 -	Default Command: `["--config","nats-server.conf"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop';"]`
@@ -26,27 +26,29 @@ $ docker pull nats@sha256:7a5e5c4d9bdb73d40c15d581e919c9358e8da9fde946d0b3c67ec2
 ```dockerfile
 # Fri, 06 Sep 2024 01:15:31 GMT
 RUN Apply image 10.0.17763.6293
-# Wed, 11 Sep 2024 01:39:17 GMT
+# Fri, 04 Oct 2024 21:48:44 GMT
+RUN Install update 10.0.17763.6414
+# Thu, 10 Oct 2024 00:38:08 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop';]
-# Wed, 11 Sep 2024 01:39:18 GMT
+# Thu, 10 Oct 2024 00:38:10 GMT
 ENV NATS_DOCKERIZED=1
-# Thu, 26 Sep 2024 23:15:21 GMT
+# Thu, 10 Oct 2024 00:38:11 GMT
 ENV NATS_SERVER=2.10.21
-# Thu, 26 Sep 2024 23:15:22 GMT
+# Thu, 10 Oct 2024 00:38:11 GMT
 ENV NATS_SERVER_DOWNLOAD=https://github.com/nats-io/nats-server/releases/download/v2.10.21/nats-server-v2.10.21-windows-amd64.zip
-# Thu, 26 Sep 2024 23:15:23 GMT
+# Thu, 10 Oct 2024 00:38:12 GMT
 ENV NATS_SERVER_SHASUM=2cbb325b34df6c98895d5ef4f2511df8ed0b3f7d2c6b267f9fe7e06938952699
-# Thu, 26 Sep 2024 23:15:43 GMT
+# Thu, 10 Oct 2024 00:38:51 GMT
 RUN Set-PSDebug -Trace 2
-# Thu, 26 Sep 2024 23:16:39 GMT
+# Thu, 10 Oct 2024 00:40:00 GMT
 RUN Write-Host ('downloading from {0} ...' -f $env:NATS_SERVER_DOWNLOAD); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:NATS_SERVER_DOWNLOAD -OutFile nats.zip; 		Write-Host ('verifying sha256 ({0}) ...' -f $env:NATS_SERVER_SHASUM); 	if ((Get-FileHash nats.zip -Algorithm sha256).Hash -ne $env:NATS_SERVER_SHASUM) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 	Write-Host 'extracting nats.zip'; 	Expand-Archive -Path 'nats.zip' -DestinationPath .; 		Write-Host 'copying binary'; 	Copy-Item nats-server-v*/nats-server.exe -Destination C:\\nats-server.exe; 		Write-Host 'cleaning up'; 	Remove-Item -Force nats.zip; 	Remove-Item -Recurse -Force nats-server-v*; 		Write-Host 'complete.';
-# Thu, 26 Sep 2024 23:16:40 GMT
+# Thu, 10 Oct 2024 00:40:01 GMT
 COPY file:2c51166f33066351f3cfe3734f884c41f36fb66575bdde453c5c93e819cfae35 in C:\nats-server.conf 
-# Thu, 26 Sep 2024 23:16:41 GMT
+# Thu, 10 Oct 2024 00:40:02 GMT
 EXPOSE 4222 6222 8222
-# Thu, 26 Sep 2024 23:16:42 GMT
+# Thu, 10 Oct 2024 00:40:03 GMT
 ENTRYPOINT ["C:\\nats-server.exe"]
-# Thu, 26 Sep 2024 23:16:43 GMT
+# Thu, 10 Oct 2024 00:40:04 GMT
 CMD ["--config" "nats-server.conf"]
 ```
 
@@ -55,47 +57,51 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Tue, 10 Sep 2024 17:55:31 GMT  
 		Size: 1.7 GB (1720268357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5a5162739754b5642e9d9ce80db93d3e8a06d96d4b7af006e2af2edfd913d17`  
-		Last Modified: Wed, 11 Sep 2024 01:43:15 GMT  
-		Size: 1.4 KB (1414 bytes)  
+	-	`sha256:eec1ab8e4a3936959c2381d3aaa9aaf9caf01f82fb701f2b4c3cc3dbf6d035dd`  
+		Last Modified: Tue, 08 Oct 2024 17:36:07 GMT  
+		Size: 181.6 MB (181556913 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5a4c2846a970a55183799315672cef44169207a712160d08dfb8942b0f04cd0`  
-		Last Modified: Wed, 11 Sep 2024 01:43:15 GMT  
-		Size: 1.3 KB (1318 bytes)  
+	-	`sha256:1196a5b13ab4e3918e43ddd7bbb877dbf52e832257c9ec3eb8019cd414af2e3a`  
+		Last Modified: Thu, 10 Oct 2024 00:40:53 GMT  
+		Size: 1.4 KB (1419 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:379ba93cb9edf50e74b831bfbb464cb960e8d681bcf99954b6f04272dd3b7b88`  
-		Last Modified: Thu, 26 Sep 2024 23:17:37 GMT  
-		Size: 1.4 KB (1422 bytes)  
+	-	`sha256:484871eca2e8c738eb04d659975dd4a80e9dae8daf6e59d2297e6c3e81f03bd6`  
+		Last Modified: Thu, 10 Oct 2024 00:40:52 GMT  
+		Size: 1.4 KB (1409 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b21dcb761b05182aeee5f3d97e80cd4e1df1335aaebfa1d302f036c36174c115`  
-		Last Modified: Thu, 26 Sep 2024 23:17:37 GMT  
-		Size: 1.4 KB (1443 bytes)  
+	-	`sha256:062597d3da773ac0eda34b8ef6655b2f41bf379a91920cecec582645bf1a9510`  
+		Last Modified: Thu, 10 Oct 2024 00:40:51 GMT  
+		Size: 1.4 KB (1423 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:92918bd7c9b1620555d59d646534feb225f00dbd34d03996c8df95975f9b144a`  
-		Last Modified: Thu, 26 Sep 2024 23:17:37 GMT  
-		Size: 1.4 KB (1418 bytes)  
+	-	`sha256:e4c9c5e0d41229e111edae3bb116444393408535594af7c8b786eb47b74cfe31`  
+		Last Modified: Thu, 10 Oct 2024 00:40:51 GMT  
+		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8f59220850aaa47ba5f338563c40053905a42fcdac08ebe9af16e9b092107468`  
-		Last Modified: Thu, 26 Sep 2024 23:17:38 GMT  
-		Size: 302.3 KB (302303 bytes)  
+	-	`sha256:c75402369637b7d5377979ad09f3db68ef661b211fae6c1ee684e08b9ebe00b7`  
+		Last Modified: Thu, 10 Oct 2024 00:40:51 GMT  
+		Size: 1.4 KB (1393 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:43908768cca6035f3d35579b6dc523f5604f272880afd69d39118e22f9e32038`  
-		Last Modified: Thu, 26 Sep 2024 23:17:37 GMT  
-		Size: 6.2 MB (6150246 bytes)  
+	-	`sha256:5a0db3961a17edb415a970ac425fa26526227549342f8d1eedc6f6122e38d3b1`  
+		Last Modified: Thu, 10 Oct 2024 00:40:51 GMT  
+		Size: 424.2 KB (424164 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3fa1c68a04c4043b5aa35f3371961797f22a154044350fe922fc428b89b2bb13`  
-		Last Modified: Thu, 26 Sep 2024 23:17:35 GMT  
-		Size: 2.0 KB (1993 bytes)  
+	-	`sha256:3b02794e762077c97fcc3977f3b6aec04f194cbc4706f768b96646378acb17b9`  
+		Last Modified: Thu, 10 Oct 2024 00:40:50 GMT  
+		Size: 6.1 MB (6126288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5e1f5a7f20bc5aaeb3e95501f8c7d131a2d5c21336e669ad1bfd107060acb8f8`  
-		Last Modified: Thu, 26 Sep 2024 23:17:35 GMT  
-		Size: 1.4 KB (1376 bytes)  
+	-	`sha256:ccac8f1718cfa17d6aabf8320723f8c6551ff31c7df539a363896c16197af8e1`  
+		Last Modified: Thu, 10 Oct 2024 00:40:49 GMT  
+		Size: 1.9 KB (1872 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9fc06f9420ab82b34701799b6a01180b09ed158a8d92575b397c4c7150737e1d`  
-		Last Modified: Thu, 26 Sep 2024 23:17:35 GMT  
-		Size: 1.4 KB (1415 bytes)  
+	-	`sha256:3aae7389a7034fd855776724c426887ff20d0809787d9765977b004851744d79`  
+		Last Modified: Thu, 10 Oct 2024 00:40:49 GMT  
+		Size: 1.3 KB (1259 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:33bfedc83b0b2cfa47f3b39ff26d3e02742d5057374ac5499ff398776da7e5da`  
-		Last Modified: Thu, 26 Sep 2024 23:17:35 GMT  
-		Size: 1.4 KB (1410 bytes)  
+	-	`sha256:f7acdc238e062b11bc596fe185a0af44657be5e9adff6db23dba25488615889e`  
+		Last Modified: Thu, 10 Oct 2024 00:40:49 GMT  
+		Size: 1.3 KB (1322 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:56509b56a8b3caa29269d3fefce2c918e0cb116e98047f9bf7d668d5d54942cb`  
+		Last Modified: Thu, 10 Oct 2024 00:40:49 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
