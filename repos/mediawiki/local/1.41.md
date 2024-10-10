@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8e41ba2b669dcaacf2e34fb3337358eaf2cf0075be9014dd3a00aaf0d5f105b9`
-- Created: `2024-10-01T19:26:21.968478294Z`
+- Image ID: `sha256:6b25794f429ed349aec3c1612ab425163718ac3d691ed60bdc947c33fb0f039b`
+- Created: `2024-10-10T19:24:12.544503129Z`
 - Virtual Size: ~ 1.05 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -3348,6 +3348,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/linux/6.1.106-3/ (for browsing the source)
 - https://sources.debian.net/src/linux/6.1.106-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/linux/6.1.106-3/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `lua5.1=5.1.5-9`
+
+Binary Packages:
+
+- `liblua5.1-0:amd64=5.1.5-9`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris lua5.1=5.1.5-9
+'http://deb.debian.org/debian/pool/main/l/lua5.1/lua5.1_5.1.5-9.dsc' lua5.1_5.1.5-9.dsc 1935 SHA256:e2b284c5e532b8f7b0b6b425702e660411ee9b540adaee37a10833fc5ac67627
+'http://deb.debian.org/debian/pool/main/l/lua5.1/lua5.1_5.1.5.orig.tar.gz' lua5.1_5.1.5.orig.tar.gz 221213 SHA256:2640fc56a795f29d28ef15e13c34a47e223960b0240e8cb0a82d9b0738695333
+'http://deb.debian.org/debian/pool/main/l/lua5.1/lua5.1_5.1.5-9.debian.tar.xz' lua5.1_5.1.5-9.debian.tar.xz 14540 SHA256:c39fc17b2ce09aa17771af49b9f40465a2458913ff2e25ff967fe32aada0737f
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/lua5.1/5.1.5-9/ (for browsing the source)
+- https://sources.debian.net/src/lua5.1/5.1.5-9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/lua5.1/5.1.5-9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lua5.3=5.3.6-2`
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cf374940f0047fdcba71b717cae5c42d1f3338b09b7c3fa88cc1d9f62ddc19c1`
-- Created: `2024-10-01T19:27:39.211593985Z`
-- Virtual Size: ~ 905.02 Mb  
+- Image ID: `sha256:a39d715ea2c21eeecd28a976df0f6e62232764ff751b368e6e340a4e0de5ce94`
+- Created: `2024-10-10T19:25:07.983381843Z`
+- Virtual Size: ~ 905.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -3348,6 +3348,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/linux/6.1.106-3/ (for browsing the source)
 - https://sources.debian.net/src/linux/6.1.106-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/linux/6.1.106-3/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `lua5.1=5.1.5-9`
+
+Binary Packages:
+
+- `liblua5.1-0:amd64=5.1.5-9`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris lua5.1=5.1.5-9
+'http://deb.debian.org/debian/pool/main/l/lua5.1/lua5.1_5.1.5-9.dsc' lua5.1_5.1.5-9.dsc 1935 SHA256:e2b284c5e532b8f7b0b6b425702e660411ee9b540adaee37a10833fc5ac67627
+'http://deb.debian.org/debian/pool/main/l/lua5.1/lua5.1_5.1.5.orig.tar.gz' lua5.1_5.1.5.orig.tar.gz 221213 SHA256:2640fc56a795f29d28ef15e13c34a47e223960b0240e8cb0a82d9b0738695333
+'http://deb.debian.org/debian/pool/main/l/lua5.1/lua5.1_5.1.5-9.debian.tar.xz' lua5.1_5.1.5-9.debian.tar.xz 14540 SHA256:c39fc17b2ce09aa17771af49b9f40465a2458913ff2e25ff967fe32aada0737f
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/lua5.1/5.1.5-9/ (for browsing the source)
+- https://sources.debian.net/src/lua5.1/5.1.5-9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/lua5.1/5.1.5-9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lua5.3=5.3.6-2`
 

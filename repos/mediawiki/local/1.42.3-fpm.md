@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fdac3f77e876aa59860d352b091f7c18dc9ca8ea008ae419c857ad49b3c23a8e`
-- Created: `2024-10-01T19:23:56.70247205Z`
+- Image ID: `sha256:15fafa20846734a67043e477bb9dce8a99c561a0ec6a55409bd6e29028edf73e`
+- Created: `2024-10-10T19:23:41.161218007Z`
 - Virtual Size: ~ 1.00 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -3249,6 +3249,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/linux/6.1.106-3/ (for browsing the source)
 - https://sources.debian.net/src/linux/6.1.106-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/linux/6.1.106-3/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `lua5.1=5.1.5-9`
+
+Binary Packages:
+
+- `liblua5.1-0:amd64=5.1.5-9`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris lua5.1=5.1.5-9
+'http://deb.debian.org/debian/pool/main/l/lua5.1/lua5.1_5.1.5-9.dsc' lua5.1_5.1.5-9.dsc 1935 SHA256:e2b284c5e532b8f7b0b6b425702e660411ee9b540adaee37a10833fc5ac67627
+'http://deb.debian.org/debian/pool/main/l/lua5.1/lua5.1_5.1.5.orig.tar.gz' lua5.1_5.1.5.orig.tar.gz 221213 SHA256:2640fc56a795f29d28ef15e13c34a47e223960b0240e8cb0a82d9b0738695333
+'http://deb.debian.org/debian/pool/main/l/lua5.1/lua5.1_5.1.5-9.debian.tar.xz' lua5.1_5.1.5-9.debian.tar.xz 14540 SHA256:c39fc17b2ce09aa17771af49b9f40465a2458913ff2e25ff967fe32aada0737f
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/lua5.1/5.1.5-9/ (for browsing the source)
+- https://sources.debian.net/src/lua5.1/5.1.5-9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/lua5.1/5.1.5-9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
