@@ -1,7 +1,7 @@
 ## `mediawiki:lts`
 
 ```console
-$ docker pull mediawiki@sha256:87bd4436f8e8f3909dbf56ec70e2db8170011b3fb6d868213b613f4cbab3b1a2
+$ docker pull mediawiki@sha256:71baebccdd97f863d7e4207631892818a1eb962f0b6e813a7b57e7dfd065f545
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16,14 +16,14 @@ $ docker pull mediawiki@sha256:87bd4436f8e8f3909dbf56ec70e2db8170011b3fb6d868213
 ### `mediawiki:lts` - linux; amd64
 
 ```console
-$ docker pull mediawiki@sha256:54aa9abadfaa59a823ad1081f5cb7b1b0c3054df1fb36c34589c7a2ef85dedb0
+$ docker pull mediawiki@sha256:a222123726a210650a85001256aa6b5dc6c37c9f15c46e42c7db43511930ea5f
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.0 MB (292957535 bytes)**  
+-	Total Size: **293.1 MB (293145286 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf374940f0047fdcba71b717cae5c42d1f3338b09b7c3fa88cc1d9f62ddc19c1`
+-	Image ID: `sha256:a39d715ea2c21eeecd28a976df0f6e62232764ff751b368e6e340a4e0de5ce94`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -90,23 +90,23 @@ EXPOSE 80
 CMD ["apache2-foreground"]
 # Fri, 27 Sep 2024 09:11:37 GMT
 RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends 		git 		librsvg2-bin 		imagemagick 		python3 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 19:21:40 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 		liblua5.1-0-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.24; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 19:21:40 GMT
+# Thu, 10 Oct 2024 19:21:22 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 		liblua5.1-0-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.24; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Thu, 10 Oct 2024 19:21:22 GMT
 RUN set -eux; 	a2enmod rewrite; 	{ 		echo "<Directory /var/www/html>"; 		echo "  RewriteEngine On"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-f"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-d"; 		echo "  RewriteRule ^ %{DOCUMENT_ROOT}/index.php [L]"; 		echo "</Directory>"; 	} > "$APACHE_CONFDIR/conf-available/short-url.conf"; 	a2enconf short-url
-# Tue, 01 Oct 2024 19:21:41 GMT
+# Thu, 10 Oct 2024 19:21:23 GMT
 RUN sed -i "s/<\/VirtualHost>/\tAllowEncodedSlashes NoDecode\n<\/VirtualHost>/" "$APACHE_CONFDIR/sites-available/000-default.conf"
-# Tue, 01 Oct 2024 19:21:41 GMT
+# Thu, 10 Oct 2024 19:21:23 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Tue, 01 Oct 2024 19:21:42 GMT
+# Thu, 10 Oct 2024 19:21:24 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data
-# Tue, 01 Oct 2024 19:27:20 GMT
+# Thu, 10 Oct 2024 19:24:48 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.39
-# Tue, 01 Oct 2024 19:27:20 GMT
+# Thu, 10 Oct 2024 19:24:49 GMT
 ENV MEDIAWIKI_VERSION=1.39.10
-# Tue, 01 Oct 2024 19:27:38 GMT
+# Thu, 10 Oct 2024 19:25:06 GMT
 RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 19:27:39 GMT
+# Thu, 10 Oct 2024 19:25:07 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -167,42 +167,42 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 27 Sep 2024 09:17:59 GMT  
 		Size: 53.9 MB (53891285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:414288eddcd8263897306fc3bb65a8b542770c5876fe75730c170373a10eab00`  
-		Last Modified: Tue, 01 Oct 2024 19:28:44 GMT  
-		Size: 2.1 MB (2114945 bytes)  
+	-	`sha256:d616fb07cdf04efb490c9d0f7e7243a11174e9271f0f3ca6ce3be9572f49db24`  
+		Last Modified: Thu, 10 Oct 2024 19:25:54 GMT  
+		Size: 2.3 MB (2302896 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ebfef0b5d063fb8a903bf2d89d5d18272d7d936dfb2b50e7ddfafd91c616febf`  
-		Last Modified: Tue, 01 Oct 2024 19:28:42 GMT  
-		Size: 574.0 B  
+	-	`sha256:f01015c8b6e88153b3845903579786c725de2c02feed762b20bb4514a4e7f02b`  
+		Last Modified: Thu, 10 Oct 2024 19:25:52 GMT  
+		Size: 580.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:16bde781829500f74fa06c12a61210a4005123eab72d099ed8369bcb481df1af`  
-		Last Modified: Tue, 01 Oct 2024 19:28:42 GMT  
-		Size: 907.0 B  
+	-	`sha256:1668f7de3b178e0ce5f5790790bce9099091dd72693c9fcb7d97c6d177476c93`  
+		Last Modified: Thu, 10 Oct 2024 19:25:52 GMT  
+		Size: 911.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:55dbe9558230726b351b59795693ecdec3d9e775fc096a405c703d1a31a606bd`  
-		Last Modified: Tue, 01 Oct 2024 19:28:42 GMT  
-		Size: 312.0 B  
+	-	`sha256:203bafde777e83281bdab8d5c6b64cdf012d68bbee60114c7f934ecd0c197d49`  
+		Last Modified: Thu, 10 Oct 2024 19:25:52 GMT  
+		Size: 316.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c4772fcfe567b98533689f01b33ebf8c9a3de174773501729225a4fe5c417702`  
-		Last Modified: Tue, 01 Oct 2024 19:28:42 GMT  
-		Size: 137.0 B  
+	-	`sha256:0398e44e406004bb8d872db5bcc953f29950ff5f11c1c389729bd5e3d6d4430b`  
+		Last Modified: Thu, 10 Oct 2024 19:25:52 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2688b2349bb74b76260dc5de55364cfbdf3f47133c08e87273fac3fb920ca575`  
-		Last Modified: Tue, 01 Oct 2024 19:31:47 GMT  
-		Size: 59.8 MB (59805468 bytes)  
+	-	`sha256:68a8f430e0884ccd985f66c1a5c056cb8fd69868e45b0c34694a9a709d69d2fa`  
+		Last Modified: Thu, 10 Oct 2024 19:28:01 GMT  
+		Size: 59.8 MB (59805251 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mediawiki:lts` - linux; arm variant v5
 
 ```console
-$ docker pull mediawiki@sha256:472fa8dbeca132e498389b5f2e0fe12a813d5bce49741666ed3c32f9b182059c
+$ docker pull mediawiki@sha256:58aee8ff189e7a9e79615bf57ad1e77b8fbad0492585ea56fb7fa14cdfc8fe18
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **261.7 MB (261728125 bytes)**  
+-	Total Size: **261.9 MB (261888784 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac02032618dc9766ea5ef45497f6a659a327167595138bbab29d90c19458996c`
+-	Image ID: `sha256:7cadbc7abf383674aed939d17187f185f0e65e199dfae082628513cc833c15ad`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -269,23 +269,23 @@ EXPOSE 80
 CMD ["apache2-foreground"]
 # Fri, 27 Sep 2024 06:02:19 GMT
 RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends 		git 		librsvg2-bin 		imagemagick 		python3 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 19:49:25 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 		liblua5.1-0-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.24; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 19:49:26 GMT
+# Thu, 10 Oct 2024 18:49:37 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 		liblua5.1-0-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.24; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Thu, 10 Oct 2024 18:49:37 GMT
 RUN set -eux; 	a2enmod rewrite; 	{ 		echo "<Directory /var/www/html>"; 		echo "  RewriteEngine On"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-f"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-d"; 		echo "  RewriteRule ^ %{DOCUMENT_ROOT}/index.php [L]"; 		echo "</Directory>"; 	} > "$APACHE_CONFDIR/conf-available/short-url.conf"; 	a2enconf short-url
-# Tue, 01 Oct 2024 19:49:26 GMT
+# Thu, 10 Oct 2024 18:49:38 GMT
 RUN sed -i "s/<\/VirtualHost>/\tAllowEncodedSlashes NoDecode\n<\/VirtualHost>/" "$APACHE_CONFDIR/sites-available/000-default.conf"
-# Tue, 01 Oct 2024 19:49:27 GMT
+# Thu, 10 Oct 2024 18:49:38 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Tue, 01 Oct 2024 19:49:27 GMT
+# Thu, 10 Oct 2024 18:49:39 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data
-# Tue, 01 Oct 2024 19:53:32 GMT
+# Thu, 10 Oct 2024 18:53:33 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.39
-# Tue, 01 Oct 2024 19:53:32 GMT
+# Thu, 10 Oct 2024 18:53:33 GMT
 ENV MEDIAWIKI_VERSION=1.39.10
-# Tue, 01 Oct 2024 19:53:55 GMT
+# Thu, 10 Oct 2024 18:53:57 GMT
 RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 19:53:57 GMT
+# Thu, 10 Oct 2024 18:53:59 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -346,42 +346,42 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 27 Sep 2024 06:08:51 GMT  
 		Size: 49.4 MB (49414974 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d97eeee3f015574219855fc00d3b69cb47653d72dfa50b1264d58dd21ea8128c`  
-		Last Modified: Tue, 01 Oct 2024 19:54:41 GMT  
-		Size: 1.7 MB (1695298 bytes)  
+	-	`sha256:b41411a90b60bfb60c4dbfaf99cdbcfcbc04ba00a99b56ef467e055096d85baf`  
+		Last Modified: Thu, 10 Oct 2024 18:54:47 GMT  
+		Size: 1.9 MB (1855989 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c46a8f7509ab5954bc5fa177e40348a473050e3179530c7f117be615a9fff3e3`  
-		Last Modified: Tue, 01 Oct 2024 19:54:38 GMT  
-		Size: 580.0 B  
+	-	`sha256:7d5abd15f67fdb0055a3d74e2de101881f55130e49d09b5220c22ddf080de31c`  
+		Last Modified: Thu, 10 Oct 2024 18:54:45 GMT  
+		Size: 581.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9924e97f88302a91de56a9d463d5596e643c30adc0edcfaba571da72bdf186b6`  
-		Last Modified: Tue, 01 Oct 2024 19:54:38 GMT  
-		Size: 905.0 B  
+	-	`sha256:8684bf93e69d757611b31c7088fff324a3e8b038683e8e45dadd6c9281321c35`  
+		Last Modified: Thu, 10 Oct 2024 18:54:45 GMT  
+		Size: 911.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2d464d2682c80e0bdd7f410755e02ae5102761d099c7316f0f347836b048ee02`  
-		Last Modified: Tue, 01 Oct 2024 19:54:39 GMT  
-		Size: 315.0 B  
+	-	`sha256:47afa75b67d03ee9e38b13296d0b3084b349bd9a432393e16d5fb8e89b4efdd5`  
+		Last Modified: Thu, 10 Oct 2024 18:54:45 GMT  
+		Size: 316.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:557c3b8fac945fb1dd247e05e8d50cc3d3cb081d0fb22caf629adb28a12c3428`  
-		Last Modified: Tue, 01 Oct 2024 19:54:39 GMT  
-		Size: 138.0 B  
+	-	`sha256:3270f743a66b1ed1a2ef4d5782f31a1089250121bd382a71b85ae22289f6d09d`  
+		Last Modified: Thu, 10 Oct 2024 18:54:45 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fc93cbf4dad7a82af41751f4cea8c1e675b0cc58c9a7e1be97a24f5875bd104f`  
-		Last Modified: Tue, 01 Oct 2024 19:57:12 GMT  
-		Size: 59.8 MB (59803175 bytes)  
+	-	`sha256:0575e5598ed3697029b7c255570c54404d3a74617e81bd97b8c3984f7a3ad0ff`  
+		Last Modified: Thu, 10 Oct 2024 18:58:06 GMT  
+		Size: 59.8 MB (59803133 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mediawiki:lts` - linux; arm variant v7
 
 ```console
-$ docker pull mediawiki@sha256:166f37a37f085286edd0922b0956f5064248964681e89fa0da426428b44b5b0a
+$ docker pull mediawiki@sha256:81e9cadd514af2d0dd2f38cde0995d4a1d06c884ee9106e480bfd6d7d9124cb8
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **249.2 MB (249155564 bytes)**  
+-	Total Size: **249.3 MB (249299163 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23f6c8ec1ccc2f7c14f8dc8880cbaa04266e5cfb577ab8ec03fb77a90c77178a`
+-	Image ID: `sha256:b0aa3701961d22011e4a74b5f44bcd16e055af020ffbd375746332abaf301bc6`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -448,23 +448,23 @@ EXPOSE 80
 CMD ["apache2-foreground"]
 # Fri, 27 Sep 2024 09:34:00 GMT
 RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends 		git 		librsvg2-bin 		imagemagick 		python3 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 19:58:33 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 		liblua5.1-0-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.24; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 19:58:34 GMT
+# Thu, 10 Oct 2024 19:04:20 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 		liblua5.1-0-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.24; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Thu, 10 Oct 2024 19:04:21 GMT
 RUN set -eux; 	a2enmod rewrite; 	{ 		echo "<Directory /var/www/html>"; 		echo "  RewriteEngine On"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-f"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-d"; 		echo "  RewriteRule ^ %{DOCUMENT_ROOT}/index.php [L]"; 		echo "</Directory>"; 	} > "$APACHE_CONFDIR/conf-available/short-url.conf"; 	a2enconf short-url
-# Tue, 01 Oct 2024 19:58:34 GMT
+# Thu, 10 Oct 2024 19:04:21 GMT
 RUN sed -i "s/<\/VirtualHost>/\tAllowEncodedSlashes NoDecode\n<\/VirtualHost>/" "$APACHE_CONFDIR/sites-available/000-default.conf"
-# Tue, 01 Oct 2024 19:58:35 GMT
+# Thu, 10 Oct 2024 19:04:22 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Tue, 01 Oct 2024 19:58:35 GMT
+# Thu, 10 Oct 2024 19:04:22 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data
-# Tue, 01 Oct 2024 20:04:05 GMT
+# Thu, 10 Oct 2024 19:08:08 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.39
-# Tue, 01 Oct 2024 20:04:05 GMT
+# Thu, 10 Oct 2024 19:08:09 GMT
 ENV MEDIAWIKI_VERSION=1.39.10
-# Tue, 01 Oct 2024 20:04:27 GMT
+# Thu, 10 Oct 2024 19:08:31 GMT
 RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 20:04:29 GMT
+# Thu, 10 Oct 2024 19:08:32 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -525,42 +525,42 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 27 Sep 2024 09:40:38 GMT  
 		Size: 46.0 MB (45983145 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a0132123306afaa41a75407c9468f7c556ac9b0385fc1bb550fceb4757b7a996`  
-		Last Modified: Tue, 01 Oct 2024 20:05:49 GMT  
-		Size: 1.7 MB (1653536 bytes)  
+	-	`sha256:07a81dd5b9cb1fb5d2cad2aac7939bdd817d84052bcdda0fbe15e2add89fd685`  
+		Last Modified: Thu, 10 Oct 2024 19:09:19 GMT  
+		Size: 1.8 MB (1797347 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:bf4dfd0962261b460fd7459acf35bd0b5babb52f9adb19cd00a3a9adda8e021d`  
-		Last Modified: Tue, 01 Oct 2024 20:05:47 GMT  
-		Size: 575.0 B  
+	-	`sha256:7e24452bc6d53fe4f432701c51396bb350c4c500eb3898f00d1c3e66418076bb`  
+		Last Modified: Thu, 10 Oct 2024 19:09:17 GMT  
+		Size: 579.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4d24bfb36dff3a3ac45b13cd04865988adc62f0e9ecf8c3d11a5a8eb480933a7`  
-		Last Modified: Tue, 01 Oct 2024 20:05:47 GMT  
-		Size: 905.0 B  
+	-	`sha256:49f025eb8d32ee2e666bfd995eb04e956672dc80f18000530c0391c2135b95dc`  
+		Last Modified: Thu, 10 Oct 2024 19:09:17 GMT  
+		Size: 906.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d548615f08c35cd6981eb9be373d0a5aefb4f23c4c2394951baf1305b2e7922a`  
-		Last Modified: Tue, 01 Oct 2024 20:05:47 GMT  
-		Size: 315.0 B  
+	-	`sha256:9d69e2e26def1cd096e893033beb3ed020321ec860700f048f6ee33dfecdb2c4`  
+		Last Modified: Thu, 10 Oct 2024 19:09:17 GMT  
+		Size: 316.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:72cef6b195bad9a2d328c4733c738a888cda0cd071c746252806113b0459640b`  
-		Last Modified: Tue, 01 Oct 2024 20:05:47 GMT  
-		Size: 139.0 B  
+	-	`sha256:b2860c32b0432a535135a309423a152b67d69bc7786996b376b746cdcf753eee`  
+		Last Modified: Thu, 10 Oct 2024 19:09:17 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d94f02a1c7dcc3cd5fbded9882f3ade92f1ef8816648e96e399886a9e65803b0`  
-		Last Modified: Tue, 01 Oct 2024 20:10:26 GMT  
-		Size: 59.8 MB (59803185 bytes)  
+	-	`sha256:824dd3be19884779c47c58b4f453b059e43b1882949a75e30b5a9a91227bd58b`  
+		Last Modified: Thu, 10 Oct 2024 19:12:37 GMT  
+		Size: 59.8 MB (59802966 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mediawiki:lts` - linux; arm64 variant v8
 
 ```console
-$ docker pull mediawiki@sha256:f770a8db67f6a3fbc72cd3b5207005cf9b3ae65a947851688846bfe6f0c76d6d
+$ docker pull mediawiki@sha256:1393f2ccb512aa807fb99e4b67653df7d487bc40bfb807e4e3d32be761a479c3
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **284.2 MB (284226509 bytes)**  
+-	Total Size: **284.4 MB (284416093 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4095c4fc7dceb1b30273c7ce542a529dff73a7d2c65dc2cc1068fc45a1ec6bbf`
+-	Image ID: `sha256:2b1d862a609e933eff815e98123808f775840654f5fb7def96bfbc162a12f09a`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -627,23 +627,23 @@ EXPOSE 80
 CMD ["apache2-foreground"]
 # Fri, 27 Sep 2024 09:34:30 GMT
 RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends 		git 		librsvg2-bin 		imagemagick 		python3 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 19:41:29 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 		liblua5.1-0-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.24; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 19:41:30 GMT
+# Thu, 10 Oct 2024 18:41:47 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 		liblua5.1-0-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.24; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Thu, 10 Oct 2024 18:41:48 GMT
 RUN set -eux; 	a2enmod rewrite; 	{ 		echo "<Directory /var/www/html>"; 		echo "  RewriteEngine On"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-f"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-d"; 		echo "  RewriteRule ^ %{DOCUMENT_ROOT}/index.php [L]"; 		echo "</Directory>"; 	} > "$APACHE_CONFDIR/conf-available/short-url.conf"; 	a2enconf short-url
-# Tue, 01 Oct 2024 19:41:30 GMT
+# Thu, 10 Oct 2024 18:41:48 GMT
 RUN sed -i "s/<\/VirtualHost>/\tAllowEncodedSlashes NoDecode\n<\/VirtualHost>/" "$APACHE_CONFDIR/sites-available/000-default.conf"
-# Tue, 01 Oct 2024 19:41:30 GMT
+# Thu, 10 Oct 2024 18:41:49 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Tue, 01 Oct 2024 19:41:31 GMT
+# Thu, 10 Oct 2024 18:41:49 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data
-# Tue, 01 Oct 2024 19:47:51 GMT
+# Thu, 10 Oct 2024 18:45:23 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.39
-# Tue, 01 Oct 2024 19:47:51 GMT
+# Thu, 10 Oct 2024 18:45:23 GMT
 ENV MEDIAWIKI_VERSION=1.39.10
-# Tue, 01 Oct 2024 19:48:06 GMT
+# Thu, 10 Oct 2024 18:45:40 GMT
 RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 19:48:09 GMT
+# Thu, 10 Oct 2024 18:45:42 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -704,42 +704,42 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 27 Sep 2024 09:41:09 GMT  
 		Size: 51.1 MB (51094932 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:df676f3278113be95e30168d828b11c45a3a900a2b31546b627cf795a8035dba`  
-		Last Modified: Tue, 01 Oct 2024 19:49:10 GMT  
-		Size: 2.4 MB (2367582 bytes)  
+	-	`sha256:e2186136fefaebf5357e5384ed58773dd50814d336c532dd3df841ca56abd75c`  
+		Last Modified: Thu, 10 Oct 2024 18:46:22 GMT  
+		Size: 2.6 MB (2557328 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c3712acfe56343a044c0e6dffe39e7a7a06def3b1c32382f9f44d165ab8c448b`  
-		Last Modified: Tue, 01 Oct 2024 19:49:08 GMT  
-		Size: 571.0 B  
+	-	`sha256:d59bd8f26f623f8d3b90f644c665958eb1f3f16f43bd76c1e05bbfdb78ca2a18`  
+		Last Modified: Thu, 10 Oct 2024 18:46:20 GMT  
+		Size: 573.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2eac50df97738187e53e68b3ab2429c4b0eeeec7aefd0927f90261830a596e00`  
-		Last Modified: Tue, 01 Oct 2024 19:49:08 GMT  
-		Size: 903.0 B  
+	-	`sha256:74d409abc2fa03d29d6ec14bb247f511f3fe9480195bc19146e5c37c5dbf58a0`  
+		Last Modified: Thu, 10 Oct 2024 18:46:20 GMT  
+		Size: 907.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d0f53e210cf17d998154c59611a7c165b3d1a629a3afb46634002d310df6c637`  
-		Last Modified: Tue, 01 Oct 2024 19:49:08 GMT  
-		Size: 312.0 B  
+	-	`sha256:7e98ea0b0a0e96c705245c7d338e25d6ef7138016b5b6e9eccdf560ada6460e6`  
+		Last Modified: Thu, 10 Oct 2024 18:46:20 GMT  
+		Size: 313.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4f226130242d4a7de2f0e2145bb699d05159cee25d85b0f4d1975986b2695013`  
-		Last Modified: Tue, 01 Oct 2024 19:49:08 GMT  
-		Size: 138.0 B  
+	-	`sha256:23cdf47fbe6395d9682777d6732083119f02e00b634e8f8ad9d06589add6a9e7`  
+		Last Modified: Thu, 10 Oct 2024 18:46:20 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2d42ed1d6a45de672972bddf8b90f52be785050b90e39b349cf32d7f6907a2f`  
-		Last Modified: Tue, 01 Oct 2024 19:51:56 GMT  
-		Size: 59.8 MB (59805556 bytes)  
+	-	`sha256:1333e1630c68353108875cd0f327b305248e7c3cc4ce8950463781235af1d57e`  
+		Last Modified: Thu, 10 Oct 2024 18:48:37 GMT  
+		Size: 59.8 MB (59805385 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mediawiki:lts` - linux; 386
 
 ```console
-$ docker pull mediawiki@sha256:9199f79df1627a4afa0e97cc1fd9cacb735d874038cbef86958ff6cc9ae70a57
+$ docker pull mediawiki@sha256:27f49c1c072f89b6c791c0be2b3811599822f8f539b8d470d96e7a7afc79ef76
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.4 MB (293391356 bytes)**  
+-	Total Size: **293.6 MB (293600574 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70548e5bbed92c69b624a8e878b7f152889e8269152a6c224c9f8e8ab3525d50`
+-	Image ID: `sha256:08738c640517cb2ed14e0f67b0aae9499f10b44ea8d37a4c225e39ece00062db`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -806,23 +806,23 @@ EXPOSE 80
 CMD ["apache2-foreground"]
 # Fri, 27 Sep 2024 12:43:42 GMT
 RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends 		git 		librsvg2-bin 		imagemagick 		python3 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 19:40:20 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 		liblua5.1-0-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.24; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 19:40:21 GMT
+# Thu, 10 Oct 2024 18:40:10 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 		liblua5.1-0-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.24; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Thu, 10 Oct 2024 18:40:11 GMT
 RUN set -eux; 	a2enmod rewrite; 	{ 		echo "<Directory /var/www/html>"; 		echo "  RewriteEngine On"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-f"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-d"; 		echo "  RewriteRule ^ %{DOCUMENT_ROOT}/index.php [L]"; 		echo "</Directory>"; 	} > "$APACHE_CONFDIR/conf-available/short-url.conf"; 	a2enconf short-url
-# Tue, 01 Oct 2024 19:40:21 GMT
+# Thu, 10 Oct 2024 18:40:11 GMT
 RUN sed -i "s/<\/VirtualHost>/\tAllowEncodedSlashes NoDecode\n<\/VirtualHost>/" "$APACHE_CONFDIR/sites-available/000-default.conf"
-# Tue, 01 Oct 2024 19:40:22 GMT
+# Thu, 10 Oct 2024 18:40:12 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Tue, 01 Oct 2024 19:40:22 GMT
+# Thu, 10 Oct 2024 18:40:12 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data
-# Tue, 01 Oct 2024 19:47:46 GMT
+# Thu, 10 Oct 2024 18:44:39 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.39
-# Tue, 01 Oct 2024 19:47:46 GMT
+# Thu, 10 Oct 2024 18:44:40 GMT
 ENV MEDIAWIKI_VERSION=1.39.10
-# Tue, 01 Oct 2024 19:48:10 GMT
+# Thu, 10 Oct 2024 18:45:03 GMT
 RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 19:48:12 GMT
+# Thu, 10 Oct 2024 18:45:05 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -883,42 +883,42 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 27 Sep 2024 12:51:25 GMT  
 		Size: 55.4 MB (55421361 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:959925e5ae1c696a39fc329e30b26365c90266eec84876af013fd9f98f83486c`  
-		Last Modified: Tue, 01 Oct 2024 19:49:23 GMT  
-		Size: 2.1 MB (2094136 bytes)  
+	-	`sha256:3832557d37d248b874862da72c6235aeab101d8107a41208e005f7853f33bfc3`  
+		Last Modified: Thu, 10 Oct 2024 18:45:52 GMT  
+		Size: 2.3 MB (2303491 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0c45aa5037dee9ea99895aab64d40d53f71af6b59721351940015a77e0b33189`  
-		Last Modified: Tue, 01 Oct 2024 19:49:21 GMT  
-		Size: 572.0 B  
+	-	`sha256:6a4928d6376c0a3876d7be03c3b8d77cd42ab75ea9157972560bb00559d441b0`  
+		Last Modified: Thu, 10 Oct 2024 18:45:49 GMT  
+		Size: 578.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d09e70547d99363f975fb4a666035ffd131f577bc55a319c16bf25c60e188612`  
-		Last Modified: Tue, 01 Oct 2024 19:49:21 GMT  
-		Size: 904.0 B  
+	-	`sha256:0ecd01c580b03a0ebe3f8f8cc7e875e42d5a8585724d4f482ec44b3bc29c6a60`  
+		Last Modified: Thu, 10 Oct 2024 18:45:49 GMT  
+		Size: 906.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ef09b9b7c89a5a0c443c71f6ce3e3d066f8ed54d2fe882336f2674414e02fe87`  
-		Last Modified: Tue, 01 Oct 2024 19:49:21 GMT  
-		Size: 315.0 B  
+	-	`sha256:7ba5a63b40fcf0a696902a65d56ed4b14b6903f4e28ae8297e341e83dd0a7650`  
+		Last Modified: Thu, 10 Oct 2024 18:45:49 GMT  
+		Size: 316.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f402cdd42a54bdfbeccfaa55b3251ae4a9967bb06f535697fc063ba023cfdcd`  
-		Last Modified: Tue, 01 Oct 2024 19:49:21 GMT  
-		Size: 138.0 B  
+	-	`sha256:4b6008cb421aee11ae876d2bdab57efb7c7974668a25d59f244f324d56cec0e4`  
+		Last Modified: Thu, 10 Oct 2024 18:45:49 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0faa350f3b18d82d1564fb818e8a132cde30c1fedc929b9e7d5921fc0397a8cd`  
-		Last Modified: Tue, 01 Oct 2024 19:53:25 GMT  
-		Size: 59.8 MB (59804522 bytes)  
+	-	`sha256:bc6cc012b5a82972820d04d7866211600d2d22bf254033a973978b1d930ebc06`  
+		Last Modified: Thu, 10 Oct 2024 18:48:39 GMT  
+		Size: 59.8 MB (59804374 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `mediawiki:lts` - linux; ppc64le
 
 ```console
-$ docker pull mediawiki@sha256:6e8496c5d39671781e4ea4b0af4d915ecd1e5645f78ea9812683c4361dfc8570
+$ docker pull mediawiki@sha256:5a174fed23e02b4ceef5bc525fb67d00332dd47fa2d8fa12741cac4b774cb6bb
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **301.4 MB (301378221 bytes)**  
+-	Total Size: **301.6 MB (301600316 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ecb874b4abfeded3f9d89aac8949f7b241cd7f9cbca56f3a273dae58a6bfcea2`
+-	Image ID: `sha256:41351230c558c7c2dfc7cb8091ce0be8de36d1d347da7c0e0776c585361fb06a`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -985,23 +985,23 @@ EXPOSE 80
 CMD ["apache2-foreground"]
 # Fri, 27 Sep 2024 08:21:14 GMT
 RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends 		git 		librsvg2-bin 		imagemagick 		python3 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 19:17:44 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 		liblua5.1-0-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.24; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { print $3 }' 		| sort -u 		| xargs -r dpkg-query -S 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 19:17:45 GMT
+# Thu, 10 Oct 2024 19:17:45 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 		liblua5.1-0-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.24; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*
+# Thu, 10 Oct 2024 19:17:46 GMT
 RUN set -eux; 	a2enmod rewrite; 	{ 		echo "<Directory /var/www/html>"; 		echo "  RewriteEngine On"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-f"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-d"; 		echo "  RewriteRule ^ %{DOCUMENT_ROOT}/index.php [L]"; 		echo "</Directory>"; 	} > "$APACHE_CONFDIR/conf-available/short-url.conf"; 	a2enconf short-url
-# Tue, 01 Oct 2024 19:17:45 GMT
+# Thu, 10 Oct 2024 19:17:46 GMT
 RUN sed -i "s/<\/VirtualHost>/\tAllowEncodedSlashes NoDecode\n<\/VirtualHost>/" "$APACHE_CONFDIR/sites-available/000-default.conf"
-# Tue, 01 Oct 2024 19:17:46 GMT
+# Thu, 10 Oct 2024 19:17:47 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
-# Tue, 01 Oct 2024 19:17:47 GMT
+# Thu, 10 Oct 2024 19:17:48 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data
-# Tue, 01 Oct 2024 19:24:22 GMT
+# Thu, 10 Oct 2024 19:22:13 GMT
 ENV MEDIAWIKI_MAJOR_VERSION=1.39
-# Tue, 01 Oct 2024 19:24:22 GMT
+# Thu, 10 Oct 2024 19:22:14 GMT
 ENV MEDIAWIKI_VERSION=1.39.10
-# Tue, 01 Oct 2024 19:24:51 GMT
+# Thu, 10 Oct 2024 19:22:42 GMT
 RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 19:24:53 GMT
+# Thu, 10 Oct 2024 19:22:46 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1062,27 +1062,27 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 27 Sep 2024 08:28:53 GMT  
 		Size: 58.1 MB (58086114 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:d648fc3182108b140a1eb87967a2c7aa6c1582052d72917baa3f0b56d67b0310`  
-		Last Modified: Tue, 01 Oct 2024 19:26:20 GMT  
-		Size: 1.8 MB (1810738 bytes)  
+	-	`sha256:bd01fd9a2c34d655085708273a9b4460ad994e3baf4e92ca196c9e21f3f02e9a`  
+		Last Modified: Thu, 10 Oct 2024 19:23:48 GMT  
+		Size: 2.0 MB (2032865 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:790838b6fde3ad2d963a3e5ce5824a8dd248af19831d24f9df928671ce3a924e`  
-		Last Modified: Tue, 01 Oct 2024 19:26:18 GMT  
+	-	`sha256:5427e3cc29d48b4fd1ee7c06da421694ba8dfe7442fa2511808fdc28852d30d0`  
+		Last Modified: Thu, 10 Oct 2024 19:23:45 GMT  
 		Size: 575.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cf7e8dee4622b3e5981ef2175e1e5a0ef7b8a8203a464bd876ba7f91d829f442`  
-		Last Modified: Tue, 01 Oct 2024 19:26:18 GMT  
-		Size: 905.0 B  
+	-	`sha256:fa7a4c4213c00d6893acecd928bd5883d6486d13feea90b45279735817a5e822`  
+		Last Modified: Thu, 10 Oct 2024 19:23:45 GMT  
+		Size: 907.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:39bfe6219fa1340051f1db5b70ed733b9c987a078b67c3580ba3180d0f567110`  
-		Last Modified: Tue, 01 Oct 2024 19:26:18 GMT  
-		Size: 314.0 B  
+	-	`sha256:6fa9916384cac7fc8050fd908531e81399d8606fd95716737fdf688c7a668654`  
+		Last Modified: Thu, 10 Oct 2024 19:23:45 GMT  
+		Size: 315.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2a9e2711e365fc3c15834690bc5c58048383127498ad8b5c9ca5d820f99d5a8`  
-		Last Modified: Tue, 01 Oct 2024 19:26:18 GMT  
-		Size: 140.0 B  
+	-	`sha256:b929e1305839e1c5211f5cedec2e1e4ddc068680bd0b35f361a96f62908ab990`  
+		Last Modified: Thu, 10 Oct 2024 19:23:45 GMT  
+		Size: 141.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:75794aab3d316b221e3159d0a8dec70c5806355784f5e5e838f6f0cd8b9510fb`  
-		Last Modified: Tue, 01 Oct 2024 19:31:41 GMT  
-		Size: 59.8 MB (59805031 bytes)  
+	-	`sha256:91b8e8f0adbc28c9a81cd2f914156d7ff68aeabfa857c0ce25fbd2e041260ef0`  
+		Last Modified: Thu, 10 Oct 2024 19:27:07 GMT  
+		Size: 59.8 MB (59804995 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
