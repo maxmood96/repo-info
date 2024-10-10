@@ -1,18 +1,17 @@
-# `hylang:1.0.0-python3.8-alpine3.19`
+# `hylang:1.0.0-python3.13-alpine3.19`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5b6cd7953a7c9c241128e9e6bf60aa08c73aa02455e1f67e041eaa49e86ce2d4`
-- Created: `2024-10-01T18:00:35Z`
-- Virtual Size: ~ 56.91 Mb  
+- Image ID: `sha256:d77fe824391582ee0b739134c42e68c73f0b7c0ca039002071a38ec663c299a6`
+- Created: `2024-10-08T19:58:40Z`
+- Virtual Size: ~ 55.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `LANG=C.UTF-8`
-  - `GPG_KEY=E3FF2839C048B25C084DEBE9B26995E310250568`
-  - `PYTHON_VERSION=3.8.20`
+  - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
+  - `PYTHON_VERSION=3.13.0`
   - `HY_VERSION=1.0.0`
   - `HYRULE_VERSION=0.7.0`
 
@@ -171,57 +170,6 @@ GPL-3.0-or-later
 
 ```
 
-### `apk` package: `keyutils-libs`
-
-```console
-keyutils-libs-1.6.3-r3 description:
-Key utilities library
-
-keyutils-libs-1.6.3-r3 webpage:
-https://people.redhat.com/~dhowells/keyutils/
-
-keyutils-libs-1.6.3-r3 installed size:
-32 KiB
-
-keyutils-libs-1.6.3-r3 license:
-GPL-2.0-or-later AND LGPL-2.0-or-later
-
-```
-
-### `apk` package: `krb5-conf`
-
-```console
-krb5-conf-1.0-r2 description:
-Shared krb5.conf for both MIT krb5 and heimdal
-
-krb5-conf-1.0-r2 webpage:
-https://web.mit.edu/kerberos/www/
-
-krb5-conf-1.0-r2 installed size:
-12 KiB
-
-krb5-conf-1.0-r2 license:
-MIT
-
-```
-
-### `apk` package: `krb5-libs`
-
-```console
-krb5-libs-1.21.3-r0 description:
-The shared libraries used by Kerberos 5
-
-krb5-libs-1.21.3-r0 webpage:
-https://web.mit.edu/kerberos/www/
-
-krb5-libs-1.21.3-r0 installed size:
-1824 KiB
-
-krb5-libs-1.21.3-r0 license:
-MIT
-
-```
-
 ### `apk` package: `libbz2`
 
 ```console
@@ -253,23 +201,6 @@ libc-utils-0.7.2-r5 installed size:
 
 libc-utils-0.7.2-r5 license:
 BSD-2-Clause AND BSD-3-Clause
-
-```
-
-### `apk` package: `libcom_err`
-
-```console
-libcom_err-1.47.0-r5 description:
-Common error description library
-
-libcom_err-1.47.0-r5 webpage:
-https://e2fsprogs.sourceforge.net/
-
-libcom_err-1.47.0-r5 installed size:
-28 KiB
-
-libcom_err-1.47.0-r5 license:
-GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 
 ```
 
@@ -324,23 +255,6 @@ MIT
 
 ```
 
-### `apk` package: `libintl`
-
-```console
-libintl-0.22.3-r0 description:
-GNU gettext runtime library
-
-libintl-0.22.3-r0 webpage:
-https://www.gnu.org/software/gettext/gettext.html
-
-libintl-0.22.3-r0 installed size:
-80 KiB
-
-libintl-0.22.3-r0 license:
-LGPL-2.1-or-later
-
-```
-
 ### `apk` package: `libncursesw`
 
 ```console
@@ -355,23 +269,6 @@ libncursesw-6.4_p20231125-r0 installed size:
 
 libncursesw-6.4_p20231125-r0 license:
 X11
-
-```
-
-### `apk` package: `libnsl`
-
-```console
-libnsl-2.0.1-r0 description:
-Public client interface for NIS(YP) and NIS+ in a IPv6 ready version
-
-libnsl-2.0.1-r0 webpage:
-https://github.com/thkukuk/libnsl
-
-libnsl-2.0.1-r0 installed size:
-44 KiB
-
-libnsl-2.0.1-r0 license:
-LGPL-2.0-or-later
 
 ```
 
@@ -409,40 +306,6 @@ Apache-2.0
 
 ```
 
-### `apk` package: `libtirpc`
-
-```console
-libtirpc-1.3.4-r0 description:
-Transport Independent RPC library (SunRPC replacement)
-
-libtirpc-1.3.4-r0 webpage:
-https://sourceforge.net/projects/libtirpc/
-
-libtirpc-1.3.4-r0 installed size:
-180 KiB
-
-libtirpc-1.3.4-r0 license:
-BSD-3-Clause
-
-```
-
-### `apk` package: `libtirpc-conf`
-
-```console
-libtirpc-conf-1.3.4-r0 description:
-Configuration files for TI-RPC
-
-libtirpc-conf-1.3.4-r0 webpage:
-https://sourceforge.net/projects/libtirpc/
-
-libtirpc-conf-1.3.4-r0 installed size:
-16 KiB
-
-libtirpc-conf-1.3.4-r0 license:
-BSD-3-Clause
-
-```
-
 ### `apk` package: `libuuid`
 
 ```console
@@ -457,23 +320,6 @@ libuuid-2.39.3-r0 installed size:
 
 libuuid-2.39.3-r0 license:
 BSD-3-Clause
-
-```
-
-### `apk` package: `libverto`
-
-```console
-libverto-0.3.2-r2 description:
-Main loop abstraction library
-
-libverto-0.3.2-r2 webpage:
-https://github.com/latchset/libverto
-
-libverto-0.3.2-r2 installed size:
-36 KiB
-
-libverto-0.3.2-r2 license:
-MIT
 
 ```
 

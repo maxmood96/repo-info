@@ -1,18 +1,17 @@
-# `hylang:1.0.0-python3.12-bullseye`
+# `hylang:1.0.0-python3.13-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0351e2c076fc3944ff5e643ce0807ba2a5890d154e02945c9f9987a3b3dfaa8c`
-- Created: `2024-10-01T18:00:35Z`
-- Virtual Size: ~ 132.80 Mb  
+- Image ID: `sha256:936c96db82f565b365d9e5203daa8bbf01aa7774ff0954077e459177c3b3e9a7`
+- Created: `2024-10-08T19:58:40Z`
+- Virtual Size: ~ 131.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `LANG=C.UTF-8`
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
-  - `PYTHON_VERSION=3.12.7`
+  - `PYTHON_VERSION=3.13.0`
   - `HY_VERSION=1.0.0`
   - `HYRULE_VERSION=0.7.0`
 
