@@ -828,19 +828,13 @@ Licenses: (parsed from: `/usr/share/doc/hostname/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris hostname=3.23+nmu2
-'http://deb.debian.org/debian/pool/main/h/hostname/hostname_3.23%2bnmu2.dsc' hostname_3.23+nmu2.dsc 1431 SHA256:03fe3dcdda4e3abc3a5d8d7ed6eb63558d9fa0dfe68412667eac73945b47e506
-'http://deb.debian.org/debian/pool/main/h/hostname/hostname_3.23%2bnmu2.tar.xz' hostname_3.23+nmu2.tar.xz 12944 SHA256:e94bc2323862e1b49635c2b638aa905f14aa91d9eb525be8e8811a773ca3a60d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/hostname/3.23+nmu2/
 
-- https://sources.debian.net/src/hostname/3.23+nmu2/ (for browsing the source)
-- https://sources.debian.net/src/hostname/3.23+nmu2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/hostname/3.23+nmu2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.67`
 
