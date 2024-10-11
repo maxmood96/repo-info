@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:192a54138f1d534ef16dc19b14e211ffb0ba54330cc1d489d6f840f90cb25673`
+- Image ID: `sha256:0672ad232bc9ac38852ad2acde898852711c4806ef3caf3b0fba24d6b31047b4`
 - Created: `2024-09-20T21:15:09Z`
 - Virtual Size: ~ 179.31 Mb  
   (total size of all layers on-disk)
@@ -452,16 +452,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.6-r0 description:
+pyc-3.12.7-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.6-r0 webpage:
+pyc-3.12.7-r0 webpage:
 https://www.python.org/
 
-pyc-3.12.6-r0 installed size:
+pyc-3.12.7-r0 installed size:
 4096 B
 
-pyc-3.12.6-r0 license:
+pyc-3.12.7-r0 license:
 PSF-2.0
 
 ```
@@ -469,16 +469,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.6-r0 description:
+python3-3.12.7-r0 description:
 High-level scripting language
 
-python3-3.12.6-r0 webpage:
+python3-3.12.7-r0 webpage:
 https://www.python.org/
 
-python3-3.12.6-r0 installed size:
+python3-3.12.7-r0 installed size:
 24 MiB
 
-python3-3.12.6-r0 license:
+python3-3.12.7-r0 license:
 PSF-2.0
 
 ```
@@ -486,16 +486,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.6-r0 description:
+python3-pyc-3.12.7-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.6-r0 webpage:
+python3-pyc-3.12.7-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.6-r0 installed size:
+python3-pyc-3.12.7-r0 installed size:
 4096 B
 
-python3-pyc-3.12.6-r0 license:
+python3-pyc-3.12.7-r0 license:
 PSF-2.0
 
 ```
@@ -503,16 +503,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.6-r0 description:
+python3-pycache-pyc0-3.12.7-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.6-r0 webpage:
+python3-pycache-pyc0-3.12.7-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.6-r0 installed size:
+python3-pycache-pyc0-3.12.7-r0 installed size:
 11 MiB
 
-python3-pycache-pyc0-3.12.6-r0 license:
+python3-pycache-pyc0-3.12.7-r0 license:
 PSF-2.0
 
 ```
