@@ -1,7 +1,7 @@
 ## `openjdk:24-oraclelinux8`
 
 ```console
-$ docker pull openjdk@sha256:d4ab8e493966aec28bd90b215d393d7af38b6145f9236ac370c31635cfea63fd
+$ docker pull openjdk@sha256:78b9eaa4a9fde333487392bd5f795dc25e06cf7e63cdca96cd8eb728cd62ad6e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -85,19 +85,19 @@ $ docker pull openjdk@sha256:e5c5a26fb1d32bd16b52a788c131750e8b13ccaa0e53dda18f8
 ### `openjdk:24-oraclelinux8` - linux; arm64 variant v8
 
 ```console
-$ docker pull openjdk@sha256:0183cb637f7cb68fc0d23a6542a4c26fcd1850451cf981a0d3896bbb611f6891
+$ docker pull openjdk@sha256:0b6d70567a69b96c18e47b97ea15abf1c8967ac342142a103f9494ef4812038c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **276.2 MB (276221138 bytes)**  
+-	Total Size: **276.2 MB (276225988 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:227c972b7a96c5385e60cc6f82b3227cff4967affd0bc27758b194c33479593f`
+-	Image ID: `sha256:c8882b8b5053ef4141b5c7e59927d02b12e81014f87ae8d37acc9d854fbeced0`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 09 Sep 2024 20:35:51 GMT
+# Fri, 04 Oct 2024 18:48:13 GMT
 ADD oraclelinux-8-slim-arm64v8-rootfs.tar.xz / # buildkit
-# Mon, 09 Sep 2024 20:35:51 GMT
+# Fri, 04 Oct 2024 18:48:13 GMT
 CMD ["/bin/bash"]
 # Fri, 04 Oct 2024 18:48:13 GMT
 RUN set -eux; 	microdnf install 		gzip 		tar 				binutils 		freetype fontconfig 	; 	microdnf clean all # buildkit
@@ -116,39 +116,39 @@ CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:26021d1fe840c0392b944d95d8144754412f70a5f838918b647f05d3328586c0`  
-		Last Modified: Tue, 10 Sep 2024 05:36:16 GMT  
-		Size: 50.0 MB (50007854 bytes)  
+	-	`sha256:5aa1f5d85d147a7c16d0057c3fc21b1ae3d482ca5ede955163a95cc540b4244e`  
+		Last Modified: Fri, 11 Oct 2024 00:11:55 GMT  
+		Size: 50.0 MB (50004038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb09382512e8e5cf2ff5a711103dc9414fc83bd78340e128351f17f67c61fe6a`  
-		Last Modified: Tue, 08 Oct 2024 02:30:45 GMT  
-		Size: 15.7 MB (15702226 bytes)  
+	-	`sha256:096a2c0e68dd1c814c85ae00b2652f096632e44095b6ac5ff4756a756a3ef3bb`  
+		Last Modified: Fri, 11 Oct 2024 00:50:19 GMT  
+		Size: 15.7 MB (15706108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4db3807f7cc5ebb1d0d78e617ba374af42a9dd63e6d9545ea7175a9f6f4a44d1`  
-		Last Modified: Tue, 08 Oct 2024 02:30:49 GMT  
-		Size: 210.5 MB (210511058 bytes)  
+	-	`sha256:0f507085e9b971a01ee255037bc5df0419e5e72102559d91c1d1f0368802e2ed`  
+		Last Modified: Fri, 11 Oct 2024 00:50:23 GMT  
+		Size: 210.5 MB (210515842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `openjdk:24-oraclelinux8` - unknown; unknown
 
 ```console
-$ docker pull openjdk@sha256:2044d4a1a6c2aa5d85c94efbe348802bd44cee4306e537563ed0df799fcbc17e
+$ docker pull openjdk@sha256:a4c66eaba1e3975cdf215673f0e8f6d007b01fc75a93bd25edc46d5c2cc93172
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 MB (2440150 bytes)**  
+-	Total Size: **2.4 MB (2440186 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e1754edbd60c62a86047a56f9589737d09f16e3c8b3fc618d19697da2e275b25`
+-	Image ID: `sha256:012ff4386d16b7c3da7f70c62fd553c38b1ccd02609b696b5f8604c7d15e0972`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5a61e165c51a26b9bc9f7a393f204245e813a84e1b74c44cae0ba2e6a4ef6e3f`  
-		Last Modified: Tue, 08 Oct 2024 02:30:44 GMT  
-		Size: 2.4 MB (2423998 bytes)  
+	-	`sha256:6aac622a226ba441a53b6c602184d209ef6a9c44082d48102db60e828c36e1f0`  
+		Last Modified: Fri, 11 Oct 2024 00:50:19 GMT  
+		Size: 2.4 MB (2424034 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:55641fabea1e1823aa3bd128e81940d961f7a2ce3c75b1ded4db8d6a48846fd9`  
-		Last Modified: Tue, 08 Oct 2024 02:30:44 GMT  
+	-	`sha256:954b45a92e1375809666203ed1802ddd283144ae49ee43b5bee6594db78f8219`  
+		Last Modified: Fri, 11 Oct 2024 00:50:18 GMT  
 		Size: 16.2 KB (16152 bytes)  
 		MIME: application/vnd.in-toto+json
