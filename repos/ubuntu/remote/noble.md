@@ -1,7 +1,7 @@
 ## `ubuntu:noble`
 
 ```console
-$ docker pull ubuntu@sha256:ee6860ab126bb8291052401af00acad20d69c16e46579a47dac1c57cd4688446
+$ docker pull ubuntu@sha256:ab64a8382e935382638764d8719362bb50ee418d944c1f3d26e0c99fae49a345
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -152,35 +152,35 @@ CMD ["/bin/bash"]
 ### `ubuntu:noble` - linux; riscv64
 
 ```console
-$ docker pull ubuntu@sha256:08d0f41b17da54c7c5bc30c9275b9cfad79e59915138325ba846f8d7b254c0e2
+$ docker pull ubuntu@sha256:99f4fbc8d5f75d77ad784a6c9d012c53e8150b1b5e6ecb1c37a2a2874eeda96c
 ```
 
 -	Docker Version: 24.0.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.9 MB (30949550 bytes)**  
+-	Total Size: **31.0 MB (30951097 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e8c91726a64f8152872b78353cc403464ee89890d2fc6483833de774c5107ac5`
+-	Image ID: `sha256:d011a0531fe4b0f770c283d09865421be1f6c7d009c382545dc5bacac444cfc8`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Mon, 16 Sep 2024 06:39:54 GMT
+# Thu, 10 Oct 2024 08:00:35 GMT
 ARG RELEASE
-# Mon, 16 Sep 2024 06:39:54 GMT
+# Thu, 10 Oct 2024 08:00:36 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Mon, 16 Sep 2024 06:39:54 GMT
+# Thu, 10 Oct 2024 08:00:36 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Mon, 16 Sep 2024 06:39:54 GMT
+# Thu, 10 Oct 2024 08:00:36 GMT
 LABEL org.opencontainers.image.version=24.04
-# Mon, 16 Sep 2024 06:40:26 GMT
-ADD file:eb024225b66c42c2c00cd16c5d9c4512c68d4b5212da677d150921eefaa6606e in / 
-# Mon, 16 Sep 2024 06:40:28 GMT
+# Thu, 10 Oct 2024 08:01:08 GMT
+ADD file:99dcd7c18deec130fc01c654fb5a1f32f7e2a45fc9fc4a34112760a14e42cd1e in / 
+# Thu, 10 Oct 2024 08:01:11 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:072c212ebb6b7710c5a2278c572459079136713a45c588184d91ca6cdbfcca3c`  
-		Last Modified: Mon, 16 Sep 2024 07:36:50 GMT  
-		Size: 30.9 MB (30949550 bytes)  
+	-	`sha256:240345f3ecc5eb712777262a3b483dd2f5f2e35105bc46892bdaa59c6de70732`  
+		Last Modified: Thu, 10 Oct 2024 09:00:10 GMT  
+		Size: 31.0 MB (30951097 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:noble` - linux; s390x

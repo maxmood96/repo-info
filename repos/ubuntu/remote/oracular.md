@@ -1,7 +1,7 @@
 ## `ubuntu:oracular`
 
 ```console
-$ docker pull ubuntu@sha256:7a0879e0c358facaa60bc621f06a20cdfe8dc4d8a2c4431dd0e555eac3693389
+$ docker pull ubuntu@sha256:3f49af910ce126ee3d7d1982fe57e34cc90265cb9ac2db3f9e7166e2c21fdb44
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -152,35 +152,35 @@ CMD ["/bin/bash"]
 ### `ubuntu:oracular` - linux; riscv64
 
 ```console
-$ docker pull ubuntu@sha256:15b1b51fd69ef84b63e5e6fa7182fa414edd4d245a0a921f383a6bb6724d7425
+$ docker pull ubuntu@sha256:527e0d03b579ef42d851d7051a49ce29c497d492bcd2c9910be6d17b0dac3e2f
 ```
 
 -	Docker Version: 24.0.7
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.5 MB (37487731 bytes)**  
+-	Total Size: **31.8 MB (31787862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5324e0cb95a436a317ad3777a5584f9c70f6e5decef80bb6181122721ec6dd2a`
+-	Image ID: `sha256:90c9cf4dc65f15465eec0b3e9efac955e1819ac941184b7c33ea94f22c51cac0`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 18 Sep 2024 04:12:38 GMT
+# Wed, 09 Oct 2024 15:57:18 GMT
 ARG RELEASE
-# Wed, 18 Sep 2024 04:12:38 GMT
+# Wed, 09 Oct 2024 15:57:18 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 18 Sep 2024 04:12:38 GMT
+# Wed, 09 Oct 2024 15:57:19 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 18 Sep 2024 04:12:39 GMT
+# Wed, 09 Oct 2024 15:57:19 GMT
 LABEL org.opencontainers.image.version=24.10
-# Wed, 18 Sep 2024 04:13:12 GMT
-ADD file:845e21eb0f8f24ff79deb49f33bb09a928b70e6af9d901303a950a5614468b9a in / 
-# Wed, 18 Sep 2024 04:13:15 GMT
+# Wed, 09 Oct 2024 15:57:49 GMT
+ADD file:9744fb771a3525b1ecc8bb8c4ca623db4381f3fa78cd865afd2dc853a7ec0106 in / 
+# Wed, 09 Oct 2024 15:57:52 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:04591114bd13d93275353d817ee6001e80c82f44ceff99120d8f777ccc92274b`  
-		Last Modified: Wed, 18 Sep 2024 05:13:20 GMT  
-		Size: 37.5 MB (37487731 bytes)  
+	-	`sha256:c4c3b7ce35ec01feb67389e9cc9ac164fd53001e09b63553078d8d1e6ad0c713`  
+		Last Modified: Wed, 09 Oct 2024 16:53:37 GMT  
+		Size: 31.8 MB (31787862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ubuntu:oracular` - linux; s390x
