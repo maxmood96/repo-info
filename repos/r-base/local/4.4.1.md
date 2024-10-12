@@ -259,9 +259,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris build-essential=12.10
-'http://http.debian.net/debian/pool/main/b/build-essential/build-essential_12.10.dsc' build-essential_12.10.dsc 2172 SHA256:b2d9c962b539f011807fdd62761f749eed12a7f061d75c3752a48bd2060030d4
-'http://http.debian.net/debian/pool/main/b/build-essential/build-essential_12.10.tar.xz' build-essential_12.10.tar.xz 51760 SHA256:a367724c8788696a7cc6f8f09b341949c49fcd06684c3f0e3a1113bbaf75194a
+'http://deb.debian.org/debian/pool/main/b/build-essential/build-essential_12.10.dsc' build-essential_12.10.dsc 2172 SHA256:b2d9c962b539f011807fdd62761f749eed12a7f061d75c3752a48bd2060030d4
+'http://deb.debian.org/debian/pool/main/b/build-essential/build-essential_12.10.tar.xz' build-essential_12.10.tar.xz 51760 SHA256:a367724c8788696a7cc6f8f09b341949c49fcd06684c3f0e3a1113bbaf75194a
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/build-essential/12.10/ (for browsing the source)
+- https://sources.debian.net/src/build-essential/12.10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/build-essential/12.10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bzip2=1.0.8-6`
 
@@ -434,11 +440,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=8.10.1-1
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.10.1-1.dsc' curl_8.10.1-1.dsc 3252 SHA256:709b940ec38914f17dace35a6b957e3a2b17ed7c3f3c760ea9b085f90442618c
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.10.1.orig.tar.gz' curl_8.10.1.orig.tar.gz 4129962 SHA256:d15ebab765d793e2e96db090f0e172d127859d78ca6f6391d7eafecfd894bbc0
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.10.1.orig.tar.gz.asc' curl_8.10.1.orig.tar.gz.asc 488 SHA256:b4047e5500be03cb3653c776f4aaedb77f68e021cc5b56c3fe325aa1ed778985
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.10.1-1.debian.tar.xz' curl_8.10.1-1.debian.tar.xz 51480 SHA256:1f36a740fa5a4421cf5e48106a392c8d71cdcd3dd559127e16277c81d604b411
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.10.1-1.dsc' curl_8.10.1-1.dsc 3252 SHA256:709b940ec38914f17dace35a6b957e3a2b17ed7c3f3c760ea9b085f90442618c
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.10.1.orig.tar.gz' curl_8.10.1.orig.tar.gz 4129962 SHA256:d15ebab765d793e2e96db090f0e172d127859d78ca6f6391d7eafecfd894bbc0
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.10.1.orig.tar.gz.asc' curl_8.10.1.orig.tar.gz.asc 488 SHA256:b4047e5500be03cb3653c776f4aaedb77f68e021cc5b56c3fe325aa1ed778985
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.10.1-1.debian.tar.xz' curl_8.10.1-1.debian.tar.xz 51480 SHA256:1f36a740fa5a4421cf5e48106a392c8d71cdcd3dd559127e16277c81d604b411
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/curl/8.10.1-1/ (for browsing the source)
+- https://sources.debian.net/src/curl/8.10.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/8.10.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-8`
 
@@ -935,9 +947,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris gcc-defaults=1.219
-'http://http.debian.net/debian/pool/main/g/gcc-defaults/gcc-defaults_1.219.dsc' gcc-defaults_1.219.dsc 36895 SHA256:4f90df7abb0a10fd943ce1bd03053ddf1c893405cb5cdc86492bca90f932436f
-'http://http.debian.net/debian/pool/main/g/gcc-defaults/gcc-defaults_1.219.tar.xz' gcc-defaults_1.219.tar.xz 64700 SHA256:f6e2eee21d8c05bc24f54855cd659b8fd9a8ac012aa23af3d8537f5ca2679cef
+'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.219.dsc' gcc-defaults_1.219.dsc 36895 SHA256:4f90df7abb0a10fd943ce1bd03053ddf1c893405cb5cdc86492bca90f932436f
+'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.219.tar.xz' gcc-defaults_1.219.tar.xz 64700 SHA256:f6e2eee21d8c05bc24f54855cd659b8fd9a8ac012aa23af3d8537f5ca2679cef
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/gcc-defaults/1.219/ (for browsing the source)
+- https://sources.debian.net/src/gcc-defaults/1.219/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/gcc-defaults/1.219/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.24-2`
 
@@ -1247,9 +1265,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris hostname=3.23+nmu2
-'http://http.debian.net/debian/pool/main/h/hostname/hostname_3.23%2bnmu2.dsc' hostname_3.23+nmu2.dsc 1431 SHA256:03fe3dcdda4e3abc3a5d8d7ed6eb63558d9fa0dfe68412667eac73945b47e506
-'http://http.debian.net/debian/pool/main/h/hostname/hostname_3.23%2bnmu2.tar.xz' hostname_3.23+nmu2.tar.xz 12944 SHA256:e94bc2323862e1b49635c2b638aa905f14aa91d9eb525be8e8811a773ca3a60d
+'http://deb.debian.org/debian/pool/main/h/hostname/hostname_3.23%2bnmu2.dsc' hostname_3.23+nmu2.dsc 1431 SHA256:03fe3dcdda4e3abc3a5d8d7ed6eb63558d9fa0dfe68412667eac73945b47e506
+'http://deb.debian.org/debian/pool/main/h/hostname/hostname_3.23%2bnmu2.tar.xz' hostname_3.23+nmu2.tar.xz 12944 SHA256:e94bc2323862e1b49635c2b638aa905f14aa91d9eb525be8e8811a773ca3a60d
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/hostname/3.23+nmu2/ (for browsing the source)
+- https://sources.debian.net/src/hostname/3.23+nmu2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/hostname/3.23+nmu2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `icu=72.1-5`
 
