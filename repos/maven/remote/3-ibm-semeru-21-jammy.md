@@ -1,7 +1,7 @@
 ## `maven:3-ibm-semeru-21-jammy`
 
 ```console
-$ docker pull maven@sha256:d81ba3e927955349bcc115af66c3758b8a1ce956a7b134aad6f1ade88df54f71
+$ docker pull maven@sha256:adbc60a72d4783d578c64e3f89af07346e8d40652d62ead650c06017f36342c4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -152,13 +152,13 @@ $ docker pull maven@sha256:b6d52501d06fabad11e5cd3ec87b61ff8a8526834318c9358e845
 ### `maven:3-ibm-semeru-21-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:03253eb707b322c93ff32035e5cb1eb614839b9e08ddde43b4269b6736485e99
+$ docker pull maven@sha256:c0f77cfa40419686baf0f6e80e898a26d74af64e103e8fd17334aa2b2ff82f08
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **297.1 MB (297131696 bytes)**  
+-	Total Size: **297.1 MB (297131664 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d2d518f1721b64dfe1d9a946f16dab47129b529aa97da632aa381e98c0477de`
+-	Image ID: `sha256:b41f885ad16edb276791ae8e772f8539f82e9916151f4d5d4fb7545c05fe84ee`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -238,49 +238,49 @@ CMD ["mvn"]
 		Last Modified: Thu, 19 Sep 2024 20:13:27 GMT  
 		Size: 6.1 MB (6056531 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f61cbdbbc1951c99928fac7edcaede9f1fbb96ddcf8614b449b8e4622fd10a9f`  
-		Last Modified: Wed, 02 Oct 2024 06:53:33 GMT  
-		Size: 20.3 MB (20300552 bytes)  
+	-	`sha256:061c935f3d4c174e743fbcf3d26ff4080e8f7285b4579464ab32376032a039bb`  
+		Last Modified: Sat, 12 Oct 2024 07:06:49 GMT  
+		Size: 20.3 MB (20300517 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50b1cab43e20201fb03a1a364ed360b1340eb0253888eb7e8aef3c93ad7c6f13`  
-		Last Modified: Wed, 02 Oct 2024 06:53:32 GMT  
-		Size: 9.2 MB (9170431 bytes)  
+	-	`sha256:5f6f94f0612db50cbf5e37104a5477b1ac1aa6a914da5269e894f7f2d43131f7`  
+		Last Modified: Sat, 12 Oct 2024 07:06:49 GMT  
+		Size: 9.2 MB (9170433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2b072df5e62bdcd9f1a45df81d4b76d11b306b5f2ef84ce887525c6e1a0ecc4`  
-		Last Modified: Wed, 02 Oct 2024 06:53:32 GMT  
+	-	`sha256:bbe9ec5f7bfee5f18e6f483c12cc9caeeeef7add23c585ef198131c4d3311927`  
+		Last Modified: Sat, 12 Oct 2024 07:06:48 GMT  
 		Size: 851.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:777a1e801e23cfa91540a130e8b33a21e94c5b8ba7282e514afbcd4f3696a1da`  
-		Last Modified: Wed, 02 Oct 2024 06:53:32 GMT  
-		Size: 155.0 B  
+	-	`sha256:0db2b1f95b5fa410dcee304c212392dd67309cb3618a036abe180343c3e48cad`  
+		Last Modified: Sat, 12 Oct 2024 07:06:48 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-ibm-semeru-21-jammy` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:29c2d88a48761e18c01f639e01a86f69e2e6ded9aa196f2be531b489d554c00e
+$ docker pull maven@sha256:78f1fb85ebee52db0bac966927d659a379772f30d316ac4ca93239ec56b844b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5150166 bytes)**  
+-	Total Size: **5.2 MB (5150199 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ca6da0910da94d2e74fc4483f3cf74736e8b071a4bbd948769310ea3d36c1020`
+-	Image ID: `sha256:2db9073afd333d84ff5f6e0eb4a382651d40cee1cac36b0a660fbcbcd92d60ae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0ed48a8b51a6a55563fdc4cf3d0c8f620bb91092c55c202533c048c5c5faaf1e`  
-		Last Modified: Wed, 02 Oct 2024 06:53:32 GMT  
+	-	`sha256:37528450054e08b3b6bcfce51b08e384575735b684885dd4e9854a04a0386f1b`  
+		Last Modified: Sat, 12 Oct 2024 07:06:48 GMT  
 		Size: 5.1 MB (5130942 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f63c9b713ab3270a056f79feadf83dba2ef57958f215d0d675bafd35eb640f23`  
-		Last Modified: Wed, 02 Oct 2024 06:53:31 GMT  
-		Size: 19.2 KB (19224 bytes)  
+	-	`sha256:7562185241166944e2420142b18169c3b5de5aa05a0ed4ba433a4530a21a031f`  
+		Last Modified: Sat, 12 Oct 2024 07:06:48 GMT  
+		Size: 19.3 KB (19257 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-ibm-semeru-21-jammy` - linux; ppc64le
