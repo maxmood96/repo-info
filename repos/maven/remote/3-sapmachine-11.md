@@ -1,7 +1,7 @@
 ## `maven:3-sapmachine-11`
 
 ```console
-$ docker pull maven@sha256:e50826e7a89730ed019d13230c9af890f50f362aa9a7c3fdb168654b3cba6271
+$ docker pull maven@sha256:565cbf28ae12955f1a85417ec40b1c4d871cc85403d9b025a5bfbbc75031929a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,13 +16,13 @@ $ docker pull maven@sha256:e50826e7a89730ed019d13230c9af890f50f362aa9a7c3fdb1686
 ### `maven:3-sapmachine-11` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:bfb65ecc08c6a639043179319a07e69c70a402642059770f6bccb4f03b825426
+$ docker pull maven@sha256:4cff36d249e5e9971c5eaa44473be7889fbdf5ffedd907ece44029dbc70908fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.5 MB (265486418 bytes)**  
+-	Total Size: **265.5 MB (265488360 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:990fa0b7fb3d3d9d7d4fca5835679f984c2118c45586b8f4261f6ede7ded11f6`
+-	Image ID: `sha256:5f470e46fb9229a71f84773405ba68eb0df7bf3f799acd1b7b5c3e4e16f679c0`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -36,7 +36,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Thu, 18 Jul 2024 15:16:19 GMT
 LABEL org.opencontainers.image.version=24.04
 # Thu, 18 Jul 2024 15:16:19 GMT
-ADD file:6f881131af38dde06e3705e8376701ae22ce479e4824821a9580d4e0e0bcf0ac in / 
+ADD file:f77876c7db6df55380fb32e200969af6e12f1e932f742c4a63bd9da235d83413 in / 
 # Thu, 18 Jul 2024 15:16:19 GMT
 CMD ["/bin/bash"]
 # Thu, 18 Jul 2024 15:16:19 GMT
@@ -78,57 +78,57 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:eda6120e237e0bdd328bc3e0f610854590400d4f96d9678dfcf781edb2f541d0`  
-		Last Modified: Mon, 16 Sep 2024 07:36:26 GMT  
-		Size: 29.7 MB (29749860 bytes)  
+	-	`sha256:d1fbec07a2e50e73803e0c9ea0fc8f9fb48ad1215583bb1bbb8852660f52abeb`  
+		Last Modified: Thu, 10 Oct 2024 08:59:45 GMT  
+		Size: 29.8 MB (29750457 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf791c23a670489eb8b3c8b779e62a2e47c08cdfa19c913f67f11d97655984ab`  
-		Last Modified: Wed, 02 Oct 2024 02:00:19 GMT  
-		Size: 201.1 MB (201120092 bytes)  
+	-	`sha256:75847505a3d01c7bb95f32dc71edc02a45590422a16c4874252a60cf650c73b1`  
+		Last Modified: Sat, 12 Oct 2024 00:01:37 GMT  
+		Size: 201.1 MB (201120801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:acf3a53abf09868dcdf2d1459cbc8b377c099f800180553747e31262f2c68ad5`  
-		Last Modified: Wed, 02 Oct 2024 03:57:17 GMT  
-		Size: 25.4 MB (25445010 bytes)  
+	-	`sha256:e75ed9e5f7800e33bd1b459cd79e9e916c3af62a4ad2bddb87e7737dc9cd85a6`  
+		Last Modified: Sat, 12 Oct 2024 01:56:56 GMT  
+		Size: 25.4 MB (25445635 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:897b3e69eb50da125339573c83ba92ba8a6a0af3a77e4e6a893ab05c9963042d`  
-		Last Modified: Wed, 02 Oct 2024 03:57:17 GMT  
-		Size: 9.2 MB (9170416 bytes)  
+	-	`sha256:f04c27ca7417f52df773738798cdbb191e7793cf7454d50a3128e6e23fc00d2e`  
+		Last Modified: Sat, 12 Oct 2024 01:56:55 GMT  
+		Size: 9.2 MB (9170429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a22d726a348d7d40c3dc7e20976750b747801ead5413522802147f0f1059a88`  
-		Last Modified: Wed, 02 Oct 2024 03:57:16 GMT  
-		Size: 852.0 B  
+	-	`sha256:e1bef0e52673896f32c6b7874b164bc148ff06d7a0bed557aeecd0303d3451b3`  
+		Last Modified: Sat, 12 Oct 2024 01:56:55 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4a3955f29fe06b39591baab31a68bffa895037248996e104123794b014f241c9`  
-		Last Modified: Wed, 02 Oct 2024 03:57:16 GMT  
-		Size: 156.0 B  
+	-	`sha256:1538ba2c74115714c6ccb94cf07fc5669a6b981e15116569c4e31179059c21d7`  
+		Last Modified: Sat, 12 Oct 2024 01:56:55 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-sapmachine-11` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:274de410f4a1efeffcebbbb97c92d91e06c83653c327aef162f20d4d022108e0
+$ docker pull maven@sha256:6a5279e4fd5cdb7d9c91a0ea063ed4ea12a88450b806bbe1816a8c8c98e8a8b5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4163363 bytes)**  
+-	Total Size: **4.2 MB (4164035 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:26234aaf7549fd3b5532e4bbceef4ade194e09a58b5135ecf70fb793041b6ce3`
+-	Image ID: `sha256:e18c6d884744d16094eb2da075b5c11843c2437a1a885955ac4f527c32ea4b2b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:98ca2054b9a210b2fb45911a20d0b3eca9a6f36e3b06ff6185fa3de4619bb133`  
-		Last Modified: Wed, 02 Oct 2024 03:57:17 GMT  
-		Size: 4.1 MB (4146853 bytes)  
+	-	`sha256:8924b6a774039509dd6277a6528b4be404a6f8b9bee9830e5da8ef7405301468`  
+		Last Modified: Sat, 12 Oct 2024 01:56:55 GMT  
+		Size: 4.1 MB (4147492 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bbca4bb8d6e3a4b769f8fad56cca68afbc25eef64a9206551834b8d46b68e3b2`  
-		Last Modified: Wed, 02 Oct 2024 03:57:16 GMT  
-		Size: 16.5 KB (16510 bytes)  
+	-	`sha256:24919261f000cf98d483d72e21cbde0c7983caa14c5645150ae6a13d6828158e`  
+		Last Modified: Sat, 12 Oct 2024 01:56:55 GMT  
+		Size: 16.5 KB (16543 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-sapmachine-11` - linux; arm64 variant v8
