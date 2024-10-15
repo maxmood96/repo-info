@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e6cc0a3c2e25179d44f2a2b5542d854c52a61f5542608fc9a3b5f3c777ba83cf`
-- Created: `2024-10-02T02:06:58.535558817Z`
-- Virtual Size: ~ 130.14 Mb  
+- Image ID: `sha256:36c0c646cd4699048aafee145819910df21234b33880b64ab49def2b9837f40b`
+- Created: `2024-10-11T23:44:52.984053084Z`
+- Virtual Size: ~ 118.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -74,11 +74,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/apt/2.9.8/
 
 
-### `dpkg` source package: `attr=1:2.5.2-1build1`
+### `dpkg` source package: `attr=1:2.5.2-1build2`
 
 Binary Packages:
 
-- `libattr1:amd64=1:2.5.2-1build1`
+- `libattr1:amd64=1:2.5.2-1build2`
 
 Licenses: (parsed from: `/usr/share/doc/libattr1/copyright`)
 
@@ -91,12 +91,12 @@ Licenses: (parsed from: `/usr/share/doc/libattr1/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `audit=1:4.0.1-1ubuntu1`
+### `dpkg` source package: `audit=1:4.0.1-1ubuntu2`
 
 Binary Packages:
 
-- `libaudit-common=1:4.0.1-1ubuntu1`
-- `libaudit1:amd64=1:4.0.1-1ubuntu1`
+- `libaudit-common=1:4.0.1-1ubuntu2`
+- `libaudit1:amd64=1:4.0.1-1ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/doc/libaudit1/copyright`)
 
@@ -108,11 +108,11 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `base-files=13.3ubuntu5`
+### `dpkg` source package: `base-files=13.3ubuntu6`
 
 Binary Packages:
 
-- `base-files=13.3ubuntu5`
+- `base-files=13.3ubuntu6`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
@@ -554,11 +554,11 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu6`
+### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu7`
 
 Binary Packages:
 
-- `libgmp10:amd64=2:6.3.0+dfsg-2ubuntu6`
+- `libgmp10:amd64=2:6.3.0+dfsg-2ubuntu7`
 
 Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 
@@ -813,11 +813,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/libcap-ng/0.8.5-1/
 
 
-### `dpkg` source package: `libcap2=1:2.66-5ubuntu2`
+### `dpkg` source package: `libcap2=1:2.66-5ubuntu3`
 
 Binary Packages:
 
-- `libcap2:amd64=1:2.66-5ubuntu2`
+- `libcap2:amd64=1:2.66-5ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 
@@ -850,11 +850,11 @@ Licenses: (parsed from: `/usr/share/doc/libffi8/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libgcrypt20=1.11.0-6`
+### `dpkg` source package: `libgcrypt20=1.11.0-6ubuntu1`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.11.0-6`
+- `libgcrypt20:amd64=1.11.0-6ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
@@ -863,10 +863,6 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libgcrypt20/1.11.0-6/
 
 
 ### `dpkg` source package: `libgpg-error=1.50-4`
@@ -892,11 +888,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/libgpg-error/1.50-4/
 
 
-### `dpkg` source package: `libidn2=2.3.7-2build1`
+### `dpkg` source package: `libidn2=2.3.7-2build2`
 
 Binary Packages:
 
-- `libidn2-0:amd64=2.3.7-2build1`
+- `libidn2-0:amd64=2.3.7-2build2`
 
 Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 
@@ -932,11 +928,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/libksba/1.6.7-2/
 
 
-### `dpkg` source package: `libmd=1.1.0-2build1`
+### `dpkg` source package: `libmd=1.1.0-2build2`
 
 Binary Packages:
 
-- `libmd0:amd64=1.1.0-2build1`
+- `libmd0:amd64=1.1.0-2build2`
 
 Licenses: (parsed from: `/usr/share/doc/libmd0/copyright`)
 
@@ -1395,11 +1391,11 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `pcre2=10.42-4ubuntu2`
+### `dpkg` source package: `pcre2=10.42-4ubuntu3`
 
 Binary Packages:
 
-- `libpcre2-8-0:amd64=10.42-4ubuntu2`
+- `libpcre2-8-0:amd64=10.42-4ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 
@@ -1636,12 +1632,12 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/sqlite3/3.46.1-1/
 
 
-### `dpkg` source package: `systemd=256.5-2ubuntu2`
+### `dpkg` source package: `systemd=256.5-2ubuntu3`
 
 Binary Packages:
 
-- `libsystemd0:amd64=256.5-2ubuntu2`
-- `libudev1:amd64=256.5-2ubuntu2`
+- `libsystemd0:amd64=256.5-2ubuntu3`
+- `libudev1:amd64=256.5-2ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1734,21 +1730,14 @@ This is *usually* due to a new package version being released and the old versio
 Binary Packages:
 
 - `bsdutils=1:2.40.2-1ubuntu1`
-- `bsdutils-dbgsym=1:2.40.2-1ubuntu1`
 - `libblkid1:amd64=2.40.2-1ubuntu1`
-- `libblkid1-dbgsym:amd64=2.40.2-1ubuntu1`
 - `libmount1:amd64=2.40.2-1ubuntu1`
-- `libmount1-dbgsym:amd64=2.40.2-1ubuntu1`
 - `libsmartcols1:amd64=2.40.2-1ubuntu1`
-- `libsmartcols1-dbgsym:amd64=2.40.2-1ubuntu1`
 - `libuuid1:amd64=2.40.2-1ubuntu1`
-- `libuuid1-dbgsym:amd64=2.40.2-1ubuntu1`
 - `mount=2.40.2-1ubuntu1`
-- `mount-dbgsym=2.40.2-1ubuntu1`
 - `util-linux=2.40.2-1ubuntu1`
-- `util-linux-dbgsym=2.40.2-1ubuntu1`
 
-Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/bsdutils-dbgsym/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libblkid1-dbgsym/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libmount1-dbgsym/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libsmartcols1-dbgsym/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/libuuid1-dbgsym/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/mount-dbgsym/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/util-linux-dbgsym/copyright`)
+Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
 - `BSD-2-clause`
 - `BSD-3-clause`

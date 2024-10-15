@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:be742ffca4dd43a363aac7275ebf6e97ac5547ed6bda6766fc42e2070e2b249b`
-- Created: `2024-10-02T02:02:31.491970691Z`
-- Virtual Size: ~ 111.80 Mb  
+- Image ID: `sha256:0ef7ece361498a0ce6cfd9b12575bf174dcaa898c46fff446d49595d994b03da`
+- Created: `2024-10-11T23:40:26.588616635Z`
+- Virtual Size: ~ 111.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1351,12 +1351,12 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `procps=2:4.0.4-4ubuntu3`
+### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.1`
 
 Binary Packages:
 
-- `libproc2-0:amd64=2:4.0.4-4ubuntu3`
-- `procps=2:4.0.4-4ubuntu3`
+- `libproc2-0:amd64=2:4.0.4-4ubuntu3.1`
+- `procps=2:4.0.4-4ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -1473,12 +1473,12 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/sensible-utils/0.0.22/
 
 
-### `dpkg` source package: `shadow=1:4.13+dfsg1-4ubuntu3`
+### `dpkg` source package: `shadow=1:4.13+dfsg1-4ubuntu3.2`
 
 Binary Packages:
 
-- `login=1:4.13+dfsg1-4ubuntu3`
-- `passwd=1:4.13+dfsg1-4ubuntu3`
+- `login=1:4.13+dfsg1-4ubuntu3.2`
+- `passwd=1:4.13+dfsg1-4ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 

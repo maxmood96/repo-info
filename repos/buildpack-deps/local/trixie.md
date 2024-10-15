@@ -636,21 +636,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.10.1-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.10.1-1.dsc' curl_8.10.1-1.dsc 3252 SHA256:709b940ec38914f17dace35a6b957e3a2b17ed7c3f3c760ea9b085f90442618c
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.10.1.orig.tar.gz' curl_8.10.1.orig.tar.gz 4129962 SHA256:d15ebab765d793e2e96db090f0e172d127859d78ca6f6391d7eafecfd894bbc0
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.10.1.orig.tar.gz.asc' curl_8.10.1.orig.tar.gz.asc 488 SHA256:b4047e5500be03cb3653c776f4aaedb77f68e021cc5b56c3fe325aa1ed778985
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.10.1-1.debian.tar.xz' curl_8.10.1-1.debian.tar.xz 51480 SHA256:1f36a740fa5a4421cf5e48106a392c8d71cdcd3dd559127e16277c81d604b411
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.10.1-1/
 
-- https://sources.debian.net/src/curl/8.10.1-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.10.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.10.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-8`
 
@@ -1388,19 +1380,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/cpp-x86-
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.219
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.219.dsc' gcc-defaults_1.219.dsc 36895 SHA256:4f90df7abb0a10fd943ce1bd03053ddf1c893405cb5cdc86492bca90f932436f
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.219.tar.xz' gcc-defaults_1.219.tar.xz 64700 SHA256:f6e2eee21d8c05bc24f54855cd659b8fd9a8ac012aa23af3d8537f5ca2679cef
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-defaults/1.219/
 
-- https://sources.debian.net/src/gcc-defaults/1.219/ (for browsing the source)
-- https://sources.debian.net/src/gcc-defaults/1.219/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-defaults/1.219/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.24-2`
 
@@ -5403,21 +5389,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `Unicode`
 - `Utfwidth`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.14.3-3
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.3-3.dsc' subversion_1.14.3-3.dsc 3991 SHA256:59b5c045b08e3934546a9242a1b625625b3b348d75a4ba33ea39d06cce222fd9
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.3.orig.tar.gz' subversion_1.14.3.orig.tar.gz 11621442 SHA256:cf70775e5ed075ebc6a63fe8619dc6b530da254a3f61ba53a502dd83c8f14afc
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.3.orig.tar.gz.asc' subversion_1.14.3.orig.tar.gz.asc 1724 SHA256:e0d93fb48ba707a201f32f350774797333013c7a53cd6c785665717f0e9cfbc5
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.3-3.debian.tar.xz' subversion_1.14.3-3.debian.tar.xz 338408 SHA256:841fdb2b88f81ea0c7a74e909db41a0cb188a8bd85678e21127d0202a29af379
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.14.3-3/
 
-- https://sources.debian.net/src/subversion/1.14.3-3/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.14.3-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.14.3-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysprof=47.0-2`
 

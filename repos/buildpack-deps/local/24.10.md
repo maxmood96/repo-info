@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5dd75f501048aea4153cf8a32016424ad5641c82b7450e1e602fabfc68f972d7`
-- Created: `2024-10-02T02:10:10.604026348Z`
-- Virtual Size: ~ 841.78 Mb  
+- Image ID: `sha256:f6447aa6b1e22be7b61d8470d3398317b8705fc464924d411b8156ecd6057f40`
+- Created: `2024-10-11T23:48:00.804901854Z`
+- Virtual Size: ~ 830.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -125,11 +125,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/apt/2.9.8/
 
 
-### `dpkg` source package: `attr=1:2.5.2-1build1`
+### `dpkg` source package: `attr=1:2.5.2-1build2`
 
 Binary Packages:
 
-- `libattr1:amd64=1:2.5.2-1build1`
+- `libattr1:amd64=1:2.5.2-1build2`
 
 Licenses: (parsed from: `/usr/share/doc/libattr1/copyright`)
 
@@ -142,12 +142,12 @@ Licenses: (parsed from: `/usr/share/doc/libattr1/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `audit=1:4.0.1-1ubuntu1`
+### `dpkg` source package: `audit=1:4.0.1-1ubuntu2`
 
 Binary Packages:
 
-- `libaudit-common=1:4.0.1-1ubuntu1`
-- `libaudit1:amd64=1:4.0.1-1ubuntu1`
+- `libaudit-common=1:4.0.1-1ubuntu2`
+- `libaudit1:amd64=1:4.0.1-1ubuntu2`
 
 Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/doc/libaudit1/copyright`)
 
@@ -231,11 +231,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/autotools-dev/20220109.1/
 
 
-### `dpkg` source package: `base-files=13.3ubuntu5`
+### `dpkg` source package: `base-files=13.3ubuntu6`
 
 Binary Packages:
 
-- `base-files=13.3ubuntu5`
+- `base-files=13.3ubuntu6`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
@@ -1103,13 +1103,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu6`
+### `dpkg` source package: `gmp=2:6.3.0+dfsg-2ubuntu7`
 
 Binary Packages:
 
-- `libgmp-dev:amd64=2:6.3.0+dfsg-2ubuntu6`
-- `libgmp10:amd64=2:6.3.0+dfsg-2ubuntu6`
-- `libgmpxx4ldbl:amd64=2:6.3.0+dfsg-2ubuntu6`
+- `libgmp-dev:amd64=2:6.3.0+dfsg-2ubuntu7`
+- `libgmp10:amd64=2:6.3.0+dfsg-2ubuntu7`
+- `libgmpxx4ldbl:amd64=2:6.3.0+dfsg-2ubuntu7`
 
 Licenses: (parsed from: `/usr/share/doc/libgmp-dev/copyright`, `/usr/share/doc/libgmp10/copyright`, `/usr/share/doc/libgmpxx4ldbl/copyright`)
 
@@ -1672,11 +1672,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/libcap-ng/0.8.5-1/
 
 
-### `dpkg` source package: `libcap2=1:2.66-5ubuntu2`
+### `dpkg` source package: `libcap2=1:2.66-5ubuntu3`
 
 Binary Packages:
 
-- `libcap2:amd64=1:2.66-5ubuntu2`
+- `libcap2:amd64=1:2.66-5ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 
@@ -1898,11 +1898,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/libfido2/1.15.0-1/
 
 
-### `dpkg` source package: `libgcrypt20=1.11.0-6`
+### `dpkg` source package: `libgcrypt20=1.11.0-6ubuntu1`
 
 Binary Packages:
 
-- `libgcrypt20:amd64=1.11.0-6`
+- `libgcrypt20:amd64=1.11.0-6ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
@@ -1911,10 +1911,6 @@ Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/libgcrypt20/1.11.0-6/
 
 
 ### `dpkg` source package: `libgpg-error=1.50-4`
@@ -1983,12 +1979,12 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libidn2=2.3.7-2build1`
+### `dpkg` source package: `libidn2=2.3.7-2build2`
 
 Binary Packages:
 
-- `libidn2-0:amd64=2.3.7-2build1`
-- `libidn2-dev:amd64=2.3.7-2build1`
+- `libidn2-0:amd64=2.3.7-2build2`
+- `libidn2-dev:amd64=2.3.7-2build2`
 
 Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`, `/usr/share/doc/libidn2-dev/copyright`)
 
@@ -2101,11 +2097,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/libmaxminddb/1.10.0-1/
 
 
-### `dpkg` source package: `libmd=1.1.0-2build1`
+### `dpkg` source package: `libmd=1.1.0-2build2`
 
 Binary Packages:
 
-- `libmd0:amd64=1.1.0-2build1`
+- `libmd0:amd64=1.1.0-2build2`
 
 Licenses: (parsed from: `/usr/share/doc/libmd0/copyright`)
 
@@ -2874,11 +2870,11 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mpclib3=1.3.1-1build1`
+### `dpkg` source package: `mpclib3=1.3.1-1build2`
 
 Binary Packages:
 
-- `libmpc3:amd64=1.3.1-1build1`
+- `libmpc3:amd64=1.3.1-1build2`
 
 Licenses: (parsed from: `/usr/share/doc/libmpc3/copyright`)
 
@@ -2888,11 +2884,11 @@ Licenses: (parsed from: `/usr/share/doc/libmpc3/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mpfr4=4.2.1-1build1`
+### `dpkg` source package: `mpfr4=4.2.1-1build2`
 
 Binary Packages:
 
-- `libmpfr6:amd64=4.2.1-1build1`
+- `libmpfr6:amd64=4.2.1-1build2`
 
 Licenses: (parsed from: `/usr/share/doc/libmpfr6/copyright`)
 
@@ -3081,12 +3077,12 @@ Licenses: (parsed from: `/usr/share/doc/libopenexr-3-1-30/copyright`, `/usr/shar
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openjpeg2=2.5.0-2build3`
+### `dpkg` source package: `openjpeg2=2.5.0-2ubuntu1`
 
 Binary Packages:
 
-- `libopenjp2-7:amd64=2.5.0-2build3`
-- `libopenjp2-7-dev:amd64=2.5.0-2build3`
+- `libopenjp2-7:amd64=2.5.0-2ubuntu1`
+- `libopenjp2-7-dev:amd64=2.5.0-2ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc/libopenjp2-7-dev/copyright`)
 
@@ -3142,11 +3138,11 @@ Licenses: (parsed from: `/usr/share/doc/libldap-common/copyright`, `/usr/share/d
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openssh=1:9.7p1-7ubuntu3`
+### `dpkg` source package: `openssh=1:9.7p1-7ubuntu4`
 
 Binary Packages:
 
-- `openssh-client=1:9.7p1-7ubuntu3`
+- `openssh-client=1:9.7p1-7ubuntu4`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -3284,15 +3280,15 @@ Licenses: (parsed from: `/usr/share/doc/patch/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `pcre2=10.42-4ubuntu2`
+### `dpkg` source package: `pcre2=10.42-4ubuntu3`
 
 Binary Packages:
 
-- `libpcre2-16-0:amd64=10.42-4ubuntu2`
-- `libpcre2-32-0:amd64=10.42-4ubuntu2`
-- `libpcre2-8-0:amd64=10.42-4ubuntu2`
-- `libpcre2-dev:amd64=10.42-4ubuntu2`
-- `libpcre2-posix3:amd64=10.42-4ubuntu2`
+- `libpcre2-16-0:amd64=10.42-4ubuntu3`
+- `libpcre2-32-0:amd64=10.42-4ubuntu3`
+- `libpcre2-8-0:amd64=10.42-4ubuntu3`
+- `libpcre2-dev:amd64=10.42-4ubuntu3`
+- `libpcre2-posix3:amd64=10.42-4ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/libpcre2-16-0/copyright`, `/usr/share/doc/libpcre2-32-0/copyright`, `/usr/share/doc/libpcre2-8-0/copyright`, `/usr/share/doc/libpcre2-dev/copyright`, `/usr/share/doc/libpcre2-posix3/copyright`)
 
@@ -3486,14 +3482,14 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3.12=3.12.6-1`
+### `dpkg` source package: `python3.12=3.12.7-1`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.6-1`
-- `libpython3.12-stdlib:amd64=3.12.6-1`
-- `python3.12=3.12.6-1`
-- `python3.12-minimal=3.12.6-1`
+- `libpython3.12-minimal:amd64=3.12.7-1`
+- `libpython3.12-stdlib:amd64=3.12.7-1`
+- `python3.12=3.12.7-1`
+- `python3.12-minimal=3.12.7-1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -3520,7 +3516,7 @@ This is *usually* due to a new package version being released and the old versio
 
 The source package *may* still be available for download from:
 
-- http://snapshot.debian.org/package/python3.12/3.12.6-1/
+- http://snapshot.debian.org/package/python3.12/3.12.7-1/
 
 
 ### `dpkg` source package: `readline=8.2-5`
@@ -3782,12 +3778,12 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/sysprof/47.0-1/
 
 
-### `dpkg` source package: `systemd=256.5-2ubuntu2`
+### `dpkg` source package: `systemd=256.5-2ubuntu3`
 
 Binary Packages:
 
-- `libsystemd0:amd64=256.5-2ubuntu2`
-- `libudev1:amd64=256.5-2ubuntu2`
+- `libsystemd0:amd64=256.5-2ubuntu3`
+- `libudev1:amd64=256.5-2ubuntu3`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -3937,11 +3933,11 @@ Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `unzip=6.0-28ubuntu5`
+### `dpkg` source package: `unzip=6.0-28ubuntu6`
 
 Binary Packages:
 
-- `unzip=6.0-28ubuntu5`
+- `unzip=6.0-28ubuntu6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -3971,24 +3967,17 @@ This is *usually* due to a new package version being released and the old versio
 Binary Packages:
 
 - `bsdutils=1:2.40.2-1ubuntu1`
-- `bsdutils-dbgsym=1:2.40.2-1ubuntu1`
 - `libblkid-dev:amd64=2.40.2-1ubuntu1`
 - `libblkid1:amd64=2.40.2-1ubuntu1`
-- `libblkid1-dbgsym:amd64=2.40.2-1ubuntu1`
 - `libmount-dev:amd64=2.40.2-1ubuntu1`
 - `libmount1:amd64=2.40.2-1ubuntu1`
-- `libmount1-dbgsym:amd64=2.40.2-1ubuntu1`
 - `libsmartcols1:amd64=2.40.2-1ubuntu1`
-- `libsmartcols1-dbgsym:amd64=2.40.2-1ubuntu1`
 - `libuuid1:amd64=2.40.2-1ubuntu1`
-- `libuuid1-dbgsym:amd64=2.40.2-1ubuntu1`
 - `mount=2.40.2-1ubuntu1`
-- `mount-dbgsym=2.40.2-1ubuntu1`
 - `util-linux=2.40.2-1ubuntu1`
-- `util-linux-dbgsym=2.40.2-1ubuntu1`
 - `uuid-dev:amd64=2.40.2-1ubuntu1`
 
-Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/bsdutils-dbgsym/copyright`, `/usr/share/doc/libblkid-dev/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libblkid1-dbgsym/copyright`, `/usr/share/doc/libmount-dev/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libmount1-dbgsym/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libsmartcols1-dbgsym/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/libuuid1-dbgsym/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/mount-dbgsym/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/util-linux-dbgsym/copyright`, `/usr/share/doc/uuid-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid-dev/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount-dev/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/uuid-dev/copyright`)
 
 - `BSD-2-clause`
 - `BSD-3-clause`

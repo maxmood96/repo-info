@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fec47e3865af2efe637625905d89dd33956fd36c929ce0e5e6d90ef8651b20af`
-- Created: `2024-10-02T02:06:12.483856952Z`
-- Virtual Size: ~ 816.81 Mb  
+- Image ID: `sha256:304783ba203337e5337d940dc7b8f879bc44896e721fcd966f587c12a7de3f36`
+- Created: `2024-10-11T23:44:17.184272423Z`
+- Virtual Size: ~ 816.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -3242,12 +3242,12 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.1`
+### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.2`
 
 Binary Packages:
 
-- `libproc2-0:amd64=2:4.0.4-4ubuntu3.1`
-- `procps=2:4.0.4-4ubuntu3.1`
+- `libproc2-0:amd64=2:4.0.4-4ubuntu3.2`
+- `procps=2:4.0.4-4ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -3508,12 +3508,12 @@ Licenses: (parsed from: `/usr/share/doc/python3-pkg-resources/copyright`, `/usr/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `shadow=1:4.13+dfsg1-4ubuntu3`
+### `dpkg` source package: `shadow=1:4.13+dfsg1-4ubuntu3.2`
 
 Binary Packages:
 
-- `login=1:4.13+dfsg1-4ubuntu3`
-- `passwd=1:4.13+dfsg1-4ubuntu3`
+- `login=1:4.13+dfsg1-4ubuntu3.2`
+- `passwd=1:4.13+dfsg1-4ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
@@ -3716,11 +3716,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/ucf/3.0043+nmu1/
 
 
-### `dpkg` source package: `unzip=6.0-28ubuntu4`
+### `dpkg` source package: `unzip=6.0-28ubuntu4.1`
 
 Binary Packages:
 
-- `unzip=6.0-28ubuntu4`
+- `unzip=6.0-28ubuntu4.1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.

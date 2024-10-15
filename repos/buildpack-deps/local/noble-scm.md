@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:69cbeea6df9f212bbfbf2470c165d7e871b275988cedd5735ae00d4dc44a3cb3`
-- Created: `2024-10-02T02:03:12.470370598Z`
-- Virtual Size: ~ 252.32 Mb  
+- Image ID: `sha256:fa383e20236dd961851f819da3c9a87c5502cd1b608efd12261092ca851b2e35`
+- Created: `2024-10-11T23:41:06.410457041Z`
+- Virtual Size: ~ 252.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1597,12 +1597,12 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.1`
+### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.2`
 
 Binary Packages:
 
-- `libproc2-0:amd64=2:4.0.4-4ubuntu3.1`
-- `procps=2:4.0.4-4ubuntu3.1`
+- `libproc2-0:amd64=2:4.0.4-4ubuntu3.2`
+- `procps=2:4.0.4-4ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -1784,12 +1784,12 @@ Licenses: (parsed from: `/usr/share/doc/libserf-1-1/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `shadow=1:4.13+dfsg1-4ubuntu3`
+### `dpkg` source package: `shadow=1:4.13+dfsg1-4ubuntu3.2`
 
 Binary Packages:
 
-- `login=1:4.13+dfsg1-4ubuntu3`
-- `passwd=1:4.13+dfsg1-4ubuntu3`
+- `login=1:4.13+dfsg1-4ubuntu3.2`
+- `passwd=1:4.13+dfsg1-4ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
