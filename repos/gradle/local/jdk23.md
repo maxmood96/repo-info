@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5078bcbb8abc6437fc874511e08a39ac6277d83ef266996fd266fe75b67df4df`
+- Image ID: `sha256:a22c1152aa6d4e6117e6b5220c0dba18de57e154ada049c18caa27a3f3518f68`
 - Created: `2024-09-28T00:46:05Z`
-- Virtual Size: ~ 794.63 Mb  
+- Virtual Size: ~ 794.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
