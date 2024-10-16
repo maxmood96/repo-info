@@ -1,7 +1,7 @@
 ## `buildpack-deps:noble-curl`
 
 ```console
-$ docker pull buildpack-deps@sha256:7a96e3d4d74ed1951ce45182b753d37465476230f9d08f1908db6ba20f90ff99
+$ docker pull buildpack-deps@sha256:3c2d7b6c04fbef0d20d6f6eac724537e63e73cf568316c304fc6d98bc7946edf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -216,39 +216,39 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 ### `buildpack-deps:noble-curl` - linux; s390x
 
 ```console
-$ docker pull buildpack-deps@sha256:bb9f186e70065e2e164f3d9c9aebc40ad9c99d789e90f09dc0a562dd7b5d10ec
+$ docker pull buildpack-deps@sha256:60af0affbaabfa59a92d426e00c53b7736298ab01f0c19661d1f95ad89db8a83
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.6 MB (45639069 bytes)**  
+-	Total Size: **45.6 MB (45637545 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a19052af1bb81b79a6e5e5ea04c75934059c4efbe70036a3f755eb0f0d48c86`
+-	Image ID: `sha256:79e84832735dbbb9016a6bcd6bfb982637edc98cfd427f79d3fbfc94d5f71607`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 10 Oct 2024 07:43:54 GMT
+# Fri, 11 Oct 2024 03:48:28 GMT
 ARG RELEASE
-# Thu, 10 Oct 2024 07:43:54 GMT
+# Fri, 11 Oct 2024 03:48:28 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 10 Oct 2024 07:43:54 GMT
+# Fri, 11 Oct 2024 03:48:28 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 10 Oct 2024 07:43:54 GMT
+# Fri, 11 Oct 2024 03:48:28 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 10 Oct 2024 07:43:56 GMT
-ADD file:ed84c120e781b2f48856752e1e38d21db0bed5e09a2a64f961f004a4906abcb6 in / 
-# Thu, 10 Oct 2024 07:43:56 GMT
+# Fri, 11 Oct 2024 03:48:29 GMT
+ADD file:77ba16e2cf3c210906ec7587ab14314afc15cb73af4337fde69ac35187fdb263 in / 
+# Fri, 11 Oct 2024 03:48:29 GMT
 CMD ["/bin/bash"]
-# Sat, 12 Oct 2024 00:11:30 GMT
+# Wed, 16 Oct 2024 01:13:18 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 		tzdata 	; 	apt-get dist-clean
 ```
 
 -	Layers:
-	-	`sha256:220da50193dc0598aa4f0418f3c1f89ed396983e85b2032ceeac1e4e044e443a`  
-		Last Modified: Sat, 12 Oct 2024 00:18:34 GMT  
-		Size: 30.7 MB (30663130 bytes)  
+	-	`sha256:fbce550314e6331afd2ad455e770bf99838b047eaec77c6d995b82c2ba1a18ae`  
+		Last Modified: Wed, 16 Oct 2024 01:17:45 GMT  
+		Size: 30.7 MB (30661606 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7a910e51df11a454262534d20be5086f0295f8d4d50f522217313bc46283e5bd`  
-		Last Modified: Sat, 12 Oct 2024 00:18:33 GMT  
+	-	`sha256:97babcf495d74dff8479c7173a459ffe71f3e6016a2917626a2902468e3d22ce`  
+		Last Modified: Wed, 16 Oct 2024 01:17:42 GMT  
 		Size: 15.0 MB (14975939 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
