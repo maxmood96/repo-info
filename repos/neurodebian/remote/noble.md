@@ -1,7 +1,7 @@
 ## `neurodebian:noble`
 
 ```console
-$ docker pull neurodebian@sha256:4867617d7c4a621227aa6915cf5703a0d75df7b888f203f50dfdd9d8822e162c
+$ docker pull neurodebian@sha256:b10148221bce2c9570e277d931e6ba76630f90a7d2dc84f92d7c27dcbbf8388e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull neurodebian@sha256:4867617d7c4a621227aa6915cf5703a0d75df7b888f203f
 ### `neurodebian:noble` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:4147b590f0c98c72ae50c752bf3382e387cae05b642f93ffb6b644046e3e0fef
+$ docker pull neurodebian@sha256:4f4e75ab9e8bf01e3fd097872b816b6dad96363df63039d70ed65b6824957e49
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.4 MB (33412067 bytes)**  
+-	Total Size: **33.4 MB (33411920 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b22f2d7809c8879aecc8484a3540c85852ef0023b0d038e86254a5db530057b`
+-	Image ID: `sha256:1c4a4b5acfcc51c28111eb6d5cd5b2cb69fd8fef07fc4fbb33fb840072c5d5b2`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -33,7 +33,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Fri, 21 Jun 2024 21:57:43 GMT
 LABEL org.opencontainers.image.version=24.04
 # Fri, 21 Jun 2024 21:57:43 GMT
-ADD file:f77876c7db6df55380fb32e200969af6e12f1e932f742c4a63bd9da235d83413 in / 
+ADD file:34dc4f3ab7a694ecde47ff7a610be18591834c45f1d7251813267798412604e5 in / 
 # Fri, 21 Jun 2024 21:57:43 GMT
 CMD ["/bin/bash"]
 # Fri, 21 Jun 2024 21:57:43 GMT
@@ -47,49 +47,49 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 ```
 
 -	Layers:
-	-	`sha256:d1fbec07a2e50e73803e0c9ea0fc8f9fb48ad1215583bb1bbb8852660f52abeb`  
-		Last Modified: Thu, 10 Oct 2024 08:59:45 GMT  
-		Size: 29.8 MB (29750457 bytes)  
+	-	`sha256:ff65ddf9395be21bfe1f320b7705e539ee44c1053034f801b1a3cbbf2d0f4056`  
+		Last Modified: Fri, 11 Oct 2024 05:07:18 GMT  
+		Size: 29.8 MB (29750363 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a526c1c4c467bfa8fd4dbac14089df74cffeb60f091268f46e8d6e56c3975a6b`  
-		Last Modified: Sat, 12 Oct 2024 00:00:31 GMT  
-		Size: 3.6 MB (3558356 bytes)  
+	-	`sha256:e70ee3f6612bc98b5f6a9dbd0e145996185b900394df37a5b4438f9c178ea1ff`  
+		Last Modified: Wed, 16 Oct 2024 16:13:49 GMT  
+		Size: 3.6 MB (3558359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93739b962388adcbd0dd68b1879e82c02ca36ac4d3c1e05330e62b5d9639f5da`  
-		Last Modified: Sat, 12 Oct 2024 00:00:31 GMT  
+	-	`sha256:a9927d073cd3764bebee1b3a7274024f08ebae10170edf4d8a4a7983ba994d39`  
+		Last Modified: Wed, 16 Oct 2024 16:13:49 GMT  
 		Size: 1.7 KB (1747 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3f8bcf22fb48c57ec3cc91300e107c6fce790c42da57f4a2af2905d3b292af0`  
-		Last Modified: Sat, 12 Oct 2024 00:00:31 GMT  
+	-	`sha256:0909d09c16e9d271e238d74681bd26e108ad03268835a21bf8beb37069fdecaf`  
+		Last Modified: Wed, 16 Oct 2024 16:13:49 GMT  
 		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f2d58d9afb2818a7011ddc547e13767c1b9183ff77b815cb476a6b543797ece`  
-		Last Modified: Sat, 12 Oct 2024 00:00:31 GMT  
-		Size: 101.3 KB (101261 bytes)  
+	-	`sha256:b7c326b02b52c5b14fd45f178e34514f0ed8be6b9b32f7c2d625ca0fd8a475af`  
+		Last Modified: Wed, 16 Oct 2024 16:13:49 GMT  
+		Size: 101.2 KB (101205 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `neurodebian:noble` - unknown; unknown
 
 ```console
-$ docker pull neurodebian@sha256:e56f4043f26ae3475c25818bbaf4043b956464244dcde7545794d07e3210f037
+$ docker pull neurodebian@sha256:dda31745ad017dd5a3b9eb6b5d08a128bece425839d9897f2a958478d0f669b1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.0 MB (1986519 bytes)**  
+-	Total Size: **2.0 MB (1986520 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b730ac11fa743e0f6bb19b4db64dbfca9bb9c293fc0316976e6ad2d307aed39`
+-	Image ID: `sha256:d70226f52b6f3ca4b26ff396fb8f7c8f5e36ec46c3ef55c65751f8c0f217e011`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5ea1495eb32c9b038ddbd301a3fa1ab443bffc2dbf4b1cec7942d79a03f6da58`  
-		Last Modified: Sat, 12 Oct 2024 00:00:31 GMT  
+	-	`sha256:3c18a76ea0401aeea14be6510a274a27c53fb8873744a023d353ba702cb86f9a`  
+		Last Modified: Wed, 16 Oct 2024 16:13:49 GMT  
 		Size: 2.0 MB (1973076 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:783a012f6a6ad08b185879c1eefc5c402f6b1fbccb9849e941997bae473b76ed`  
-		Last Modified: Sat, 12 Oct 2024 00:00:31 GMT  
-		Size: 13.4 KB (13443 bytes)  
+	-	`sha256:77402c34a514ba908efc5f69db6985a559b01f5d4989d9c0179e5504393f355c`  
+		Last Modified: Wed, 16 Oct 2024 16:13:49 GMT  
+		Size: 13.4 KB (13444 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `neurodebian:noble` - linux; arm64 variant v8
