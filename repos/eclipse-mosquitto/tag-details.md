@@ -2781,11 +2781,21 @@ $ docker pull eclipse-mosquitto@sha256:9508dda579e12b2bf1459f105e88280ba91637042
 
 ## `eclipse-mosquitto:2.0.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-mosquitto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-mosquitto:2.0.20-openssl`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-mosquitto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-mosquitto:latest`
 
