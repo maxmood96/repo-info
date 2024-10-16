@@ -1,7 +1,7 @@
 ## `maven:3-eclipse-temurin-21-alpine`
 
 ```console
-$ docker pull maven@sha256:a5190f3bfb558b35ede6ab19330e63e164b2e7c0982b2dbbfa582d190f726695
+$ docker pull maven@sha256:79c50d771785a51a76ef101bf8bf6add7b525423d756ce96655450446deb76e6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -262,23 +262,23 @@ CMD ["mvn"]
 ### `maven:3-eclipse-temurin-21-alpine` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:27291244d5e7addffc572606749249ac94511afed03c1a4719ec0098aba5c9ad
+$ docker pull maven@sha256:f2584f5f0f7b3024e0b273e62d477f55a0e2e9bcf3f1d49492842f7687d2f1aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **1.3 MB (1251182 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d1bf9d16c68b8e6648c069606a5939c1ab907aea7a3aa4e09b51fda424384087`
+-	Image ID: `sha256:658487477685c943aeced40990aa2f31570ac946c21f85e60357c86ec7f8773e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b32e4229a3a57611569cc682d10dc9cc62c819695e73388a221295f8c30eda5a`  
-		Last Modified: Sat, 12 Oct 2024 07:00:50 GMT  
+	-	`sha256:2f3793f533f6eb841cf760b9f35fbd57a0d21b69e611d1fa0c13088190dc040d`  
+		Last Modified: Wed, 16 Oct 2024 07:15:43 GMT  
 		Size: 1.2 MB (1231629 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:90cda82122b0a00087683c7a3835697b717662c3ce4d30fca91c198aa0b90225`  
-		Last Modified: Sat, 12 Oct 2024 07:00:49 GMT  
+	-	`sha256:616b6e9f1231be06239345ccc5ea716688bf9b7cb81fc2dd12fcb441772ea62f`  
+		Last Modified: Wed, 16 Oct 2024 07:15:42 GMT  
 		Size: 19.6 KB (19553 bytes)  
 		MIME: application/vnd.in-toto+json
