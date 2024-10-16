@@ -83,11 +83,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris attr=1:2.5.2-1
-'http://http.debian.net/debian/pool/main/a/attr/attr_2.5.2-1.dsc' attr_2.5.2-1.dsc 2477 SHA256:5c14953fc436d6c4ba6dd4a00b2f82a923d5745cc2c993a630e50d9cabaeca0b
-'http://http.debian.net/debian/pool/main/a/attr/attr_2.5.2.orig.tar.xz' attr_2.5.2.orig.tar.xz 334180 SHA256:f2e97b0ab7ce293681ab701915766190d607a1dba7fae8a718138150b700a70b
-'http://http.debian.net/debian/pool/main/a/attr/attr_2.5.2.orig.tar.xz.asc' attr_2.5.2.orig.tar.xz.asc 833 SHA256:eeac729088d3c6379e91b7596cb3582e46b047c47f0fa3c5c77f9c9e84dc3a4c
-'http://http.debian.net/debian/pool/main/a/attr/attr_2.5.2-1.debian.tar.xz' attr_2.5.2-1.debian.tar.xz 25848 SHA256:b4d0670ea47811670bb619252973c7fb186e54b28bd5f2ac3c1a34d6fd089741
+'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.2-1.dsc' attr_2.5.2-1.dsc 2477 SHA256:5c14953fc436d6c4ba6dd4a00b2f82a923d5745cc2c993a630e50d9cabaeca0b
+'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.2.orig.tar.xz' attr_2.5.2.orig.tar.xz 334180 SHA256:f2e97b0ab7ce293681ab701915766190d607a1dba7fae8a718138150b700a70b
+'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.2.orig.tar.xz.asc' attr_2.5.2.orig.tar.xz.asc 833 SHA256:eeac729088d3c6379e91b7596cb3582e46b047c47f0fa3c5c77f9c9e84dc3a4c
+'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.2-1.debian.tar.xz' attr_2.5.2-1.debian.tar.xz 25848 SHA256:b4d0670ea47811670bb619252973c7fb186e54b28bd5f2ac3c1a34d6fd089741
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/attr/1:2.5.2-1/ (for browsing the source)
+- https://sources.debian.net/src/attr/1:2.5.2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/attr/1:2.5.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `audit=1:3.1.2-4`
 
@@ -436,21 +442,13 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.10.1-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.10.1-1.dsc' curl_8.10.1-1.dsc 3252 SHA256:709b940ec38914f17dace35a6b957e3a2b17ed7c3f3c760ea9b085f90442618c
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.10.1.orig.tar.gz' curl_8.10.1.orig.tar.gz 4129962 SHA256:d15ebab765d793e2e96db090f0e172d127859d78ca6f6391d7eafecfd894bbc0
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.10.1.orig.tar.gz.asc' curl_8.10.1.orig.tar.gz.asc 488 SHA256:b4047e5500be03cb3653c776f4aaedb77f68e021cc5b56c3fe325aa1ed778985
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.10.1-1.debian.tar.xz' curl_8.10.1-1.debian.tar.xz 51480 SHA256:1f36a740fa5a4421cf5e48106a392c8d71cdcd3dd559127e16277c81d604b411
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.10.1-1/
 
-- https://sources.debian.net/src/curl/8.10.1-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.10.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.10.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-8`
 
@@ -534,10 +532,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris db5.3=5.3.28+dfsg2-7
-'http://http.debian.net/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-7.dsc' db5.3_5.3.28+dfsg2-7.dsc 2374 SHA256:f7313fb306b5bf7ad6a428bffb581e649318859df139e35dd47c3d1f733803b2
-'http://http.debian.net/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2.orig.tar.xz' db5.3_5.3.28+dfsg2.orig.tar.xz 21287688 SHA256:ad41b507415dec8316e828b2230242af2251d2c86eefa3c7aa9ef47c5239ef33
-'http://http.debian.net/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-7.debian.tar.xz' db5.3_5.3.28+dfsg2-7.debian.tar.xz 35232 SHA256:9cee8969e1f440ec8aa2fbacd3a5819907829e0e7e7f1f746dccaa2c93fbf3f2
+'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-7.dsc' db5.3_5.3.28+dfsg2-7.dsc 2374 SHA256:f7313fb306b5bf7ad6a428bffb581e649318859df139e35dd47c3d1f733803b2
+'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2.orig.tar.xz' db5.3_5.3.28+dfsg2.orig.tar.xz 21287688 SHA256:ad41b507415dec8316e828b2230242af2251d2c86eefa3c7aa9ef47c5239ef33
+'http://deb.debian.org/debian/pool/main/d/db5.3/db5.3_5.3.28%2bdfsg2-7.debian.tar.xz' db5.3_5.3.28+dfsg2-7.debian.tar.xz 35232 SHA256:9cee8969e1f440ec8aa2fbacd3a5819907829e0e7e7f1f746dccaa2c93fbf3f2
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/db5.3/5.3.28+dfsg2-7/ (for browsing the source)
+- https://sources.debian.net/src/db5.3/5.3.28+dfsg2-7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/db5.3/5.3.28+dfsg2-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debconf=1.5.87`
 
@@ -943,19 +947,13 @@ Licenses: (parsed from: `/usr/share/doc/cpp/copyright`, `/usr/share/doc/cpp-x86-
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-defaults=1.219
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.219.dsc' gcc-defaults_1.219.dsc 36895 SHA256:4f90df7abb0a10fd943ce1bd03053ddf1c893405cb5cdc86492bca90f932436f
-'http://deb.debian.org/debian/pool/main/g/gcc-defaults/gcc-defaults_1.219.tar.xz' gcc-defaults_1.219.tar.xz 64700 SHA256:f6e2eee21d8c05bc24f54855cd659b8fd9a8ac012aa23af3d8537f5ca2679cef
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-defaults/1.219/
 
-- https://sources.debian.net/src/gcc-defaults/1.219/ (for browsing the source)
-- https://sources.debian.net/src/gcc-defaults/1.219/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-defaults/1.219/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.24-2`
 
@@ -1261,19 +1259,13 @@ Licenses: (parsed from: `/usr/share/doc/hostname/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris hostname=3.23+nmu2
-'http://deb.debian.org/debian/pool/main/h/hostname/hostname_3.23%2bnmu2.dsc' hostname_3.23+nmu2.dsc 1431 SHA256:03fe3dcdda4e3abc3a5d8d7ed6eb63558d9fa0dfe68412667eac73945b47e506
-'http://deb.debian.org/debian/pool/main/h/hostname/hostname_3.23%2bnmu2.tar.xz' hostname_3.23+nmu2.tar.xz 12944 SHA256:e94bc2323862e1b49635c2b638aa905f14aa91d9eb525be8e8811a773ca3a60d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/hostname/3.23+nmu2/
 
-- https://sources.debian.net/src/hostname/3.23+nmu2/ (for browsing the source)
-- https://sources.debian.net/src/hostname/3.23+nmu2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/hostname/3.23+nmu2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `icu=72.1-5`
 
@@ -3334,10 +3326,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sysvinit=3.10-2
-'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_3.10-2.dsc' sysvinit_3.10-2.dsc 2347 SHA256:edffe723a2f380d5068b99aebf5a05b266cf64b142a2b36e83c80ef06043839a
-'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_3.10.orig.tar.gz' sysvinit_3.10.orig.tar.gz 514655 SHA256:9fbee91fbe496e207db7ab4cdfbe4f97f8795925343a76b4f3392e741b0e103b
-'http://http.debian.net/debian/pool/main/s/sysvinit/sysvinit_3.10-2.debian.tar.xz' sysvinit_3.10-2.debian.tar.xz 121260 SHA256:0f6c775b76566a7b5e6ca9c95ce8ae4ad524b9f920720de1415d8cf9ba272aac
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.10-2.dsc' sysvinit_3.10-2.dsc 2347 SHA256:edffe723a2f380d5068b99aebf5a05b266cf64b142a2b36e83c80ef06043839a
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.10.orig.tar.gz' sysvinit_3.10.orig.tar.gz 514655 SHA256:9fbee91fbe496e207db7ab4cdfbe4f97f8795925343a76b4f3392e741b0e103b
+'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.10-2.debian.tar.xz' sysvinit_3.10-2.debian.tar.xz 121260 SHA256:0f6c775b76566a7b5e6ca9c95ce8ae4ad524b9f920720de1415d8cf9ba272aac
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/sysvinit/3.10-2/ (for browsing the source)
+- https://sources.debian.net/src/sysvinit/3.10-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/sysvinit/3.10-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-3`
 
