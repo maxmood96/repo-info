@@ -3821,55 +3821,120 @@ $ docker pull amazoncorretto@sha256:76160183278ad9e392e92e8e954c41bea5c1fac1907e
 
 ## `amazoncorretto:11.0.25`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:11.0.25-al2`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:11.0.25-al2-generic`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:11.0.25-al2-native-headless`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:11.0.25-al2-native-jdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:11.0.25-al2023`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:11.0.25-al2023-headful`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:11.0.25-al2023-headless`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:11.0.25-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:11.0.25-alpine3.17`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:11.0.25-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:11.0.25-alpine3.19`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:11.0.25-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:17`
 
@@ -7648,59 +7713,129 @@ $ docker pull amazoncorretto@sha256:ed917ee3d20f0b85f655fa731d1c0620a9b797976f89
 
 ## `amazoncorretto:17.0.13`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:17.0.13-al2`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:17.0.13-al2-generic`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:17.0.13-al2-native-headful`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:17.0.13-al2-native-headless`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:17.0.13-al2-native-jdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:17.0.13-al2023`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:17.0.13-al2023-headful`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:17.0.13-al2023-headless`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:17.0.13-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:17.0.13-alpine3.17`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:17.0.13-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:17.0.13-alpine3.19`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:17.0.13-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:21`
 
@@ -11068,47 +11203,102 @@ $ docker pull amazoncorretto@sha256:885e48406439d8ac91ea5365ec70a80c5cf6c8f898ac
 
 ## `amazoncorretto:21.0.5`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:21.0.5-al2`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:21.0.5-al2-generic`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:21.0.5-al2023`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:21.0.5-al2023-headful`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:21.0.5-al2023-headless`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:21.0.5-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:21.0.5-alpine3.17`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:21.0.5-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:21.0.5-alpine3.19`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:21.0.5-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:23`
 
@@ -14355,35 +14545,75 @@ $ docker pull amazoncorretto@sha256:bcbe18980f1b5d8e5772a16914ec5c608dbefb76bd0c
 
 ## `amazoncorretto:23.0.1-al2023`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:23.0.1-al2023-headful`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:23.0.1-al2023-headless`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:23.0.1-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:23.0.1-alpine3.17`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:23.0.1-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:23.0.1-alpine3.19`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:23.0.1-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:8`
 
@@ -18557,71 +18787,156 @@ $ docker pull amazoncorretto@sha256:da9cf218752e142c1b04a3be162626dfc6f1815fd1b9
 
 ## `amazoncorretto:8u432`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:8u432-al2`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:8u432-al2-generic`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:8u432-al2-native-jdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:8u432-al2-native-jre`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:8u432-al2023`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:8u432-al2023-jre`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:8u432-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:8u432-alpine-jre`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:8u432-alpine3.17`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:8u432-alpine3.17-jre`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:8u432-alpine3.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:8u432-alpine3.18-jre`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:8u432-alpine3.19`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:8u432-alpine3.19-jre`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:8u432-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:8u432-alpine3.20-jre`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazoncorretto@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazoncorretto:latest`
 
