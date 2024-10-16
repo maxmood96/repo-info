@@ -1,7 +1,7 @@
 ## `joomla:5-php8.3-fpm-alpine`
 
 ```console
-$ docker pull joomla@sha256:cd429d5fa1623b1565bf0c81c37cdc29ba45bf02b1b0933c9de64215d43d07df
+$ docker pull joomla@sha256:759b2f96acc1d7806568a62254f69981ed9f66cf0e2ddcc2879250bd706dd30d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -1008,14 +1008,14 @@ CMD ["php-fpm"]
 ### `joomla:5-php8.3-fpm-alpine` - linux; riscv64
 
 ```console
-$ docker pull joomla@sha256:b67a1b2fc6cfb053a633090a3fe69c9b5f39de67603cbb36cbea4f05dbf4a7db
+$ docker pull joomla@sha256:f8f89bee939ad083945585a4c2e7752c6f88d48d4ad9e4acd9691f31111933f4
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **90.6 MB (90641467 bytes)**  
+-	Total Size: **90.5 MB (90465196 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:826db557a85ff241995ede9f5424a13daf00a396cac862a818483763062772cc`
+-	Image ID: `sha256:2a20d4b7523929893a907ce84458be9245eedf0d52fe03e9834048c0d130f81e`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -1084,19 +1084,19 @@ RUN set -eux; 	docker-php-ext-enable opcache; 	{ 		echo 'opcache.memory_consumpt
 RUN { 		echo 'error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR'; 		echo 'display_errors = Off'; 		echo 'display_startup_errors = Off'; 		echo 'log_errors = On'; 		echo 'error_log = /dev/stderr'; 		echo 'log_errors_max_len = 1024'; 		echo 'ignore_repeated_errors = On'; 		echo 'ignore_repeated_source = Off'; 		echo 'html_errors = Off'; 	} > /usr/local/etc/php/conf.d/error-logging.ini
 # Fri, 27 Sep 2024 11:11:42 GMT
 VOLUME [/var/www/html]
-# Fri, 27 Sep 2024 11:14:15 GMT
-ENV JOOMLA_VERSION=5.1.4
-# Fri, 27 Sep 2024 11:14:15 GMT
-ENV JOOMLA_SHA512=84111f652a4e52029b2d12ab4621203f28dd68cffe67febaa73a562778af559e3b954c7aedc6a0e1579177321a95eee77e0596c395f2e54e8c226690960bd260
-# Fri, 27 Sep 2024 11:14:47 GMT
-RUN set -ex; 	curl -o joomla.tar.zst -SL https://github.com/joomla/joomla-cms/releases/download/5.1.4/Joomla_5.1.4-Stable-Full_Package.tar.zst; 	echo "$JOOMLA_SHA512 *joomla.tar.zst" | sha512sum -c -; 	mkdir /usr/src/joomla; 	tar --zstd -xf joomla.tar.zst -C /usr/src/joomla; 	rm joomla.tar.zst; 	chown -R www-data:www-data /usr/src/joomla
-# Fri, 27 Sep 2024 11:14:52 GMT
+# Wed, 16 Oct 2024 18:21:48 GMT
+ENV JOOMLA_VERSION=5.2.0
+# Wed, 16 Oct 2024 18:21:48 GMT
+ENV JOOMLA_SHA512=5f6a19978c72205e04b8d9a7fde137b5933fab8940d3e0f48321a3ed2d861284cdcb59dbe78cc33b524bb31547405c5a7571076d77bd2925bf2b97664ba33501
+# Wed, 16 Oct 2024 18:22:19 GMT
+RUN set -ex; 	curl -o joomla.tar.zst -SL https://github.com/joomla/joomla-cms/releases/download/5.2.0/Joomla_5.2.0-Stable-Full_Package.tar.zst; 	echo "$JOOMLA_SHA512 *joomla.tar.zst" | sha512sum -c -; 	mkdir /usr/src/joomla; 	tar --zstd -xf joomla.tar.zst -C /usr/src/joomla; 	rm joomla.tar.zst; 	chown -R www-data:www-data /usr/src/joomla
+# Wed, 16 Oct 2024 18:22:24 GMT
 COPY file:09d039f2ed0d8991a914126098661c6156e603362c75d72887a3d64c1ce9f866 in /entrypoint.sh 
-# Fri, 27 Sep 2024 11:14:53 GMT
+# Wed, 16 Oct 2024 18:22:25 GMT
 COPY file:a53a9770ec4ea12b0947f498a820c4cf00b42fbd01a84c1561849a4497baa065 in /makedb.php 
-# Fri, 27 Sep 2024 11:14:54 GMT
+# Wed, 16 Oct 2024 18:22:26 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 27 Sep 2024 11:14:54 GMT
+# Wed, 16 Oct 2024 18:22:26 GMT
 CMD ["php-fpm"]
 ```
 
@@ -1157,17 +1157,17 @@ CMD ["php-fpm"]
 		Last Modified: Fri, 27 Sep 2024 12:10:06 GMT  
 		Size: 393.0 B  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ed49cf885fc85f6e4af37d568299addc26bd9e038e1fe364303b5da83dc3bbc0`  
-		Last Modified: Fri, 27 Sep 2024 12:12:43 GMT  
-		Size: 23.9 MB (23919859 bytes)  
+	-	`sha256:c7d70a2318524d5126c5c3f28c5fa568c4fcf54cea995f105bccc7a37c46ee5e`  
+		Last Modified: Wed, 16 Oct 2024 18:26:58 GMT  
+		Size: 23.7 MB (23743590 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f4f4c6c98263f21a38f778e3f9638b77e1bc1d8bd7edd1871851e3e306190595`  
-		Last Modified: Fri, 27 Sep 2024 12:12:17 GMT  
+	-	`sha256:be726e9e9d1d8d598b6e243bd29b91204e1ac6d47ce492317b573ecd7e5ae3ba`  
+		Last Modified: Wed, 16 Oct 2024 18:26:32 GMT  
 		Size: 3.7 KB (3656 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2a19e3b1d08ff1eb680b679af3b8e4b5e0aafb4ab73f79167e6cf0e77b19ddc0`  
-		Last Modified: Fri, 27 Sep 2024 12:12:17 GMT  
-		Size: 1.1 KB (1070 bytes)  
+	-	`sha256:25883ddddd1c364971f3757c021273120f819d7edf21a1067afd9206a204a321`  
+		Last Modified: Wed, 16 Oct 2024 18:26:32 GMT  
+		Size: 1.1 KB (1068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `joomla:5-php8.3-fpm-alpine` - linux; s390x
