@@ -2,12 +2,16 @@
 
 # Tags of `bonita`
 
+-	[`bonita:10.2`](#bonita102)
+-	[`bonita:10.2.0`](#bonita1020)
 -	[`bonita:2022.2`](#bonita20222)
 -	[`bonita:2022.2-u0`](#bonita20222-u0)
 -	[`bonita:2023.1`](#bonita20231)
 -	[`bonita:2023.1-u0`](#bonita20231-u0)
 -	[`bonita:2023.2`](#bonita20232)
 -	[`bonita:2023.2-u0`](#bonita20232-u0)
+-	[`bonita:2024.3`](#bonita20243)
+-	[`bonita:2024.3-u0`](#bonita20243-u0)
 -	[`bonita:7.15`](#bonita715)
 -	[`bonita:7.15.0`](#bonita7150)
 -	[`bonita:8.0`](#bonita80)
@@ -15,6 +19,14 @@
 -	[`bonita:9.0`](#bonita90)
 -	[`bonita:9.0.0`](#bonita900)
 -	[`bonita:latest`](#bonitalatest)
+
+## `bonita:10.2`
+
+**does not exist** (yet?)
+
+## `bonita:10.2.0`
+
+**does not exist** (yet?)
 
 ## `bonita:2022.2`
 
@@ -2841,6 +2853,14 @@ $ docker pull bonita@sha256:b3b52de39c11fbb0b8b29086bde32211f9ff11b35e3cfa927025
 		Last Modified: Sat, 07 Sep 2024 06:26:00 GMT  
 		Size: 23.1 KB (23063 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `bonita:2024.3`
+
+**does not exist** (yet?)
+
+## `bonita:2024.3-u0`
+
+**does not exist** (yet?)
 
 ## `bonita:7.15`
 
