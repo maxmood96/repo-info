@@ -1,7 +1,7 @@
 ## `emqx:latest`
 
 ```console
-$ docker pull emqx@sha256:a516f4bb55587f0e39afef03a084ef46e28754f122f4671b501a66b7697b0a2c
+$ docker pull emqx@sha256:15b958ec911ebd9726bd4a602906fd7f4219b30ceee20c7360af36a26a4c9dc2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -100,19 +100,19 @@ $ docker pull emqx@sha256:e22f02fdac42973c24bc9b381584c274a778d9193d63fbd9b9acb7
 ### `emqx:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull emqx@sha256:b165e5d88fcdebb8742a5aadc83816811968f56832da748d655ac9d886196906
+$ docker pull emqx@sha256:5e1ec5a999330356846f8eb4feb1ddd92fbbbfb60ca9c655a3084ba6b8559d06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **122.1 MB (122067423 bytes)**  
+-	Total Size: **122.1 MB (122067378 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c2f63e43d4b2e7f08e754b1c8783f23c5faf8dd288b5a1d6d96e1f9dd6cc133`
+-	Image ID: `sha256:b0e9022bbe87e96fd8874c6ebbdc80f1b71056edb89fff8ed45dd3144de9f160`
 -	Entrypoint: `["\/usr\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["\/opt\/emqx\/bin\/emqx","foreground"]`
 
 ```dockerfile
 # Sun, 01 Sep 2024 07:35:29 GMT
-ADD file:28df1cb6a6576d40b5226851d0a6a76ffd5d1c94644ee441490b74a90f29f425 in / 
+ADD file:702193928cded0bcec5edbf4a5660961e7caef8c9d9cafea3337b7f6720c4464 in / 
 # Sun, 01 Sep 2024 07:35:29 GMT
 CMD ["bash"]
 # Sun, 01 Sep 2024 07:35:29 GMT
@@ -142,43 +142,43 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 ```
 
 -	Layers:
-	-	`sha256:14c9d9d199323cbf0a4c2347a8af85f2875c1f2c26a1558fd34dfca7a26cff22`  
-		Last Modified: Fri, 27 Sep 2024 04:40:53 GMT  
-		Size: 29.2 MB (29156369 bytes)  
+	-	`sha256:83d624c4be2db5b81ae220b6b10cbc9a559d5800fd32556f4020727098f71ed0`  
+		Last Modified: Thu, 17 Oct 2024 01:14:39 GMT  
+		Size: 29.2 MB (29156341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2dfb3cc8fefc738acb0c1f351d64e56c1eef605e9284498213db726856aeb33`  
-		Last Modified: Fri, 27 Sep 2024 11:22:39 GMT  
-		Size: 92.9 MB (92909992 bytes)  
+	-	`sha256:4866813c6de1b0621390eb00806380dc28b7523060afa28f982f465f63503827`  
+		Last Modified: Thu, 17 Oct 2024 09:18:16 GMT  
+		Size: 92.9 MB (92909975 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a7a532b0135aee635943dd14f80428243e14b700f43e50569b065a136875f96`  
-		Last Modified: Fri, 27 Sep 2024 11:22:36 GMT  
+	-	`sha256:4119e0abb1f33e893a35459726a45c6d77df0dee8e66130cea5ced82acade881`  
+		Last Modified: Thu, 17 Oct 2024 09:18:13 GMT  
 		Size: 1.0 KB (1030 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `emqx:latest` - unknown; unknown
 
 ```console
-$ docker pull emqx@sha256:081fd6b1f10127ae20a8528c6041709e01afce0f715c20e63fedbf38b976fad3
+$ docker pull emqx@sha256:569b1282d475a6568762a42ae448806105f47825e765aa0f2c6110786142dfe4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2611735 bytes)**  
+-	Total Size: **2.6 MB (2611568 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:60c752042b5cda683ceddeac2d2fdd4b5dc87de4bf417c19fbd8fc65183b998a`
+-	Image ID: `sha256:0599a699f6b11b0ec641fcddbbfe91a2213d506e1eb4839633c4072c4f5ba117`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cae49897e6fc74e139f4f5341d625ee04dcada3f4cbc3aa2d56a1f04f392046c`  
-		Last Modified: Fri, 27 Sep 2024 11:22:36 GMT  
+	-	`sha256:f41d4ee5edad6a1010597bb152ad87702d51e0bc0478aeae9fc9e0b9a3b9420f`  
+		Last Modified: Thu, 17 Oct 2024 09:18:13 GMT  
 		Size: 2.6 MB (2599127 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:20cf5a72a7e4ffc9bc0645b95fd304f16941fac8b9771282e2f2117d2555ef2f`  
-		Last Modified: Fri, 27 Sep 2024 11:22:36 GMT  
-		Size: 12.6 KB (12608 bytes)  
+	-	`sha256:83c7f1d54d0698ba60bbb0858e04e664d607ae19a14c5a39e50ae84079ab0c41`  
+		Last Modified: Thu, 17 Oct 2024 09:18:13 GMT  
+		Size: 12.4 KB (12441 bytes)  
 		MIME: application/vnd.in-toto+json
