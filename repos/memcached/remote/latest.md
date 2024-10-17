@@ -1,7 +1,7 @@
 ## `memcached:latest`
 
 ```console
-$ docker pull memcached@sha256:e5a7e1056d48531758a567533ac60552b25131adbfc8bedb427fe81fd2e76f32
+$ docker pull memcached@sha256:9df0ee6dcb9dd42fe366335425791cbe42e722f6dd57b24706d058b1d38837d7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -400,19 +400,19 @@ $ docker pull memcached@sha256:bffd367aa8e2f16fb0b8bb6b6669a754c0a7ca6fff73f41a4
 ### `memcached:latest` - linux; mips64le
 
 ```console
-$ docker pull memcached@sha256:38ffd69a8b2e761950198cef2e72952e5deb725b349939a4370742a58416c8dd
+$ docker pull memcached@sha256:cd18b0e7ef6a9d092a53aae5a2dfe9db4847e1d865dad8a1c0f2474aa551d58b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **32.3 MB (32323545 bytes)**  
+-	Total Size: **32.3 MB (32323462 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df3fa98ab838ac1abfe5faa149b0d96324e209d9eef0f0553baf75661b5e37a2`
+-	Image ID: `sha256:46016681cdf97f6c4f58c8ffc720acf8b48fdc363065ae254b28a74f975a3000`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["memcached"]`
 
 ```dockerfile
 # Sat, 07 Sep 2024 18:54:11 GMT
-ADD file:673970f358f62b6b095139e9647b41b9af839d4e01f7698755b040f471ff80b2 in / 
+ADD file:6c11edc513b28b5a4034ee9c0d4cdcf019a82635ebb8a9e02732800fa457f683 in / 
 # Sat, 07 Sep 2024 18:54:11 GMT
 CMD ["bash"]
 # Sat, 07 Sep 2024 18:54:11 GMT
@@ -442,49 +442,49 @@ CMD ["memcached"]
 ```
 
 -	Layers:
-	-	`sha256:75358c79454e0fed44aa25dd323536443b4a1230fc432aa226620e470d72cf5f`  
-		Last Modified: Fri, 27 Sep 2024 09:11:36 GMT  
-		Size: 29.1 MB (29124858 bytes)  
+	-	`sha256:8f9d02f0305fc460f51690aebcb328c22e13a197228c0910e24b813db943a15b`  
+		Last Modified: Thu, 17 Oct 2024 01:18:03 GMT  
+		Size: 29.1 MB (29124779 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3976ae2e9e8235e3acac8a5d4abe3458aefd8b4cb8e225e1395cce2c5a9a4cb1`  
-		Last Modified: Fri, 27 Sep 2024 23:33:25 GMT  
-		Size: 1.1 KB (1109 bytes)  
+	-	`sha256:89af18ed6dad2d50595a887bd4e557d7dbeec54c9d7292891f173fb8248dd738`  
+		Last Modified: Thu, 17 Oct 2024 17:48:25 GMT  
+		Size: 1.1 KB (1111 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5deb547ba3350dbf5d4529bf1449195abfc84bc1c1540a8b2110bc974e9a04a9`  
-		Last Modified: Fri, 27 Sep 2024 23:33:25 GMT  
-		Size: 1.9 MB (1942718 bytes)  
+	-	`sha256:0bf4af78636d4d70d8872577c825a64d60618a042f7aa993255669ac916fee20`  
+		Last Modified: Thu, 17 Oct 2024 17:48:26 GMT  
+		Size: 1.9 MB (1942693 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d050ca56a116764837ae7094d068b849db471d91d2475e5fdf2e06a2fe1f6b2`  
-		Last Modified: Fri, 27 Sep 2024 23:33:25 GMT  
-		Size: 1.3 MB (1254453 bytes)  
+	-	`sha256:822a61fc0387e16cbaf4ad7d58581295c77126c045f4da729103ee15b35cd6fb`  
+		Last Modified: Thu, 17 Oct 2024 17:48:26 GMT  
+		Size: 1.3 MB (1254474 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:601568e716a724c8076c95901188c98cf582ea5eacdf48dd301ba319675e454d`  
-		Last Modified: Fri, 27 Sep 2024 23:33:25 GMT  
-		Size: 285.0 B  
+	-	`sha256:84a7cbb1ecc9ad48777dc5527e4ac2a91c31738c0e4ea5508f2a6fbd842c3a72`  
+		Last Modified: Thu, 17 Oct 2024 17:48:26 GMT  
+		Size: 283.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b69bf0390ed875f2dc1d90751fb1dd4222105955de6235a0da2522869c790507`  
-		Last Modified: Fri, 27 Sep 2024 23:33:26 GMT  
+	-	`sha256:5fffea151bda2665d2a326b7536585a8e9ce0c5db9f8a10774a9d9bca5cb27d8`  
+		Last Modified: Thu, 17 Oct 2024 17:48:26 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `memcached:latest` - unknown; unknown
 
 ```console
-$ docker pull memcached@sha256:5eaf103e2d804241767f37a719cdde16566b2f0404f550e97d3cef8668ee3ec7
+$ docker pull memcached@sha256:60b6c7c64bcefcd243ed197ed122371a268ef6034c07722c9c5fdb7a189d03f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **20.9 KB (20910 bytes)**  
+-	Total Size: **20.9 KB (20948 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93ce8a3d070bd168166c7ceaa3e3525fb29da68f85e14be3f3e96e0e29c5a2a5`
+-	Image ID: `sha256:70f3ec6dd2a45239a2c3a6bbcf6a9bc7b4b8a19459c11aed35056770330c51ac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9603acc3a0020bc5fe4e67048342b830703ee85edf05357b12367ef892806668`  
-		Last Modified: Fri, 27 Sep 2024 23:33:25 GMT  
-		Size: 20.9 KB (20910 bytes)  
+	-	`sha256:460a602c08926f1a69e6b40e07cf190b6e96b24bb8f0b6409031dcdf5d385690`  
+		Last Modified: Thu, 17 Oct 2024 17:48:25 GMT  
+		Size: 20.9 KB (20948 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `memcached:latest` - linux; ppc64le
