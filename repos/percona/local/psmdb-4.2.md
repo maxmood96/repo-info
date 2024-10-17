@@ -209,8 +209,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url cyrus-sasl-gssapi-2.1.27-6.el8_5
-https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/cyrus-sasl-2.1.27-6.el8_5.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/cyrus-sasl-2.1.27-6.el8_5.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/cyrus-sasl-2.1.27-6.el8_5.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-lib-2.1.27-6.el8_5.x86_64`
@@ -221,8 +221,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url cyrus-sasl-lib-2.1.27-6.el8_5
-https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/cyrus-sasl-2.1.27-6.el8_5.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/cyrus-sasl-2.1.27-6.el8_5.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/cyrus-sasl-2.1.27-6.el8_5.src.rpm
 ```
 
 ### `rpm` package: `cyrus-sasl-plain-2.1.27-6.el8_5.x86_64`
@@ -233,8 +233,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url cyrus-sasl-plain-2.1.27-6.el8_5
-https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/cyrus-sasl-2.1.27-6.el8_5.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/cyrus-sasl-2.1.27-6.el8_5.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/cyrus-sasl-2.1.27-6.el8_5.src.rpm
 ```
 
 ### `rpm` package: `dbus-1.12.8-26.0.1.el8.x86_64`
@@ -245,8 +245,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url dbus-1.12.8-26.0.1.el8
-https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/dbus-1.12.8-26.0.1.el8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/dbus-1.12.8-26.0.1.el8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/dbus-1.12.8-26.0.1.el8.src.rpm
 ```
 
 ### `rpm` package: `dbus-common-1.12.8-26.0.1.el8.noarch`
@@ -257,8 +257,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url dbus-common-1.12.8-26.0.1.el8.noarch
-https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/dbus-1.12.8-26.0.1.el8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/dbus-1.12.8-26.0.1.el8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/dbus-1.12.8-26.0.1.el8.src.rpm
 ```
 
 ### `rpm` package: `dbus-daemon-1.12.8-26.0.1.el8.x86_64`
@@ -269,8 +269,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url dbus-daemon-1.12.8-26.0.1.el8
-https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/dbus-1.12.8-26.0.1.el8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/dbus-1.12.8-26.0.1.el8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/dbus-1.12.8-26.0.1.el8.src.rpm
 ```
 
 ### `rpm` package: `dbus-glib-0.110-2.el8.x86_64`
@@ -293,8 +293,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url dbus-libs-1.12.8-26.0.1.el8
-https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/dbus-1.12.8-26.0.1.el8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/dbus-1.12.8-26.0.1.el8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/dbus-1.12.8-26.0.1.el8.src.rpm
 ```
 
 ### `rpm` package: `dbus-tools-1.12.8-26.0.1.el8.x86_64`
@@ -305,8 +305,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url dbus-tools-1.12.8-26.0.1.el8
-https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/dbus-1.12.8-26.0.1.el8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/dbus-1.12.8-26.0.1.el8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/dbus-1.12.8-26.0.1.el8.src.rpm
 ```
 
 ### `rpm` package: `device-mapper-1.02.181-14.0.1.el8.x86_64`
@@ -1495,8 +1495,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libverto-0.3.2-2.el8
-https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/libverto-0.3.2-2.el8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/libverto-0.3.2-2.el8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/libverto-0.3.2-2.el8.src.rpm
 ```
 
 ### `rpm` package: `libxcrypt-4.1.1-6.el8.x86_64`
@@ -1518,8 +1518,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libxml2-2.9.7-18.el8_10.1
-https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/libxml2-2.9.7-18.el8_10.1.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/libxml2-2.9.7-18.el8_10.1.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/libxml2-2.9.7-18.el8_10.1.src.rpm
 ```
 
 ### `rpm` package: `libyaml-0.1.7-5.el8.x86_64`
@@ -1564,8 +1564,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url lua-libs-5.3.4-12.el8
-https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/lua-5.3.4-12.el8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/lua-5.3.4-12.el8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/lua-5.3.4-12.el8.src.rpm
 ```
 
 ### `rpm` package: `lvm2-2.03.14-14.0.1.el8.x86_64`
@@ -1699,8 +1699,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url openssh-8.0p1-24.0.1.el8
-https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/openssh-8.0p1-24.0.1.el8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/openssh-8.0p1-24.0.1.el8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/openssh-8.0p1-24.0.1.el8.src.rpm
 ```
 
 ### `rpm` package: `openssh-clients-8.0p1-24.0.1.el8.x86_64`
@@ -1711,8 +1711,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url openssh-clients-8.0p1-24.0.1.el8
-https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/openssh-8.0p1-24.0.1.el8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/openssh-8.0p1-24.0.1.el8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/openssh-8.0p1-24.0.1.el8.src.rpm
 ```
 
 ### `rpm` package: `openssh-server-8.0p1-24.0.1.el8.x86_64`
@@ -1723,8 +1723,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url openssh-server-8.0p1-24.0.1.el8
-https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/openssh-8.0p1-24.0.1.el8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/openssh-8.0p1-24.0.1.el8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/openssh-8.0p1-24.0.1.el8.src.rpm
 ```
 
 ### `rpm` package: `openssl-libs-1.1.1k-12.el8_9.x86_64`
@@ -2057,8 +2057,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url python3-rpm-4.14.3-31.0.1.el8
-https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/rpm-4.14.3-31.0.1.el8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/rpm-4.14.3-31.0.1.el8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/rpm-4.14.3-31.0.1.el8.src.rpm
 ```
 
 ### `rpm` package: `python3-setuptools-wheel-39.2.0-7.el8.noarch`
@@ -2136,8 +2136,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url rpm-4.14.3-31.0.1.el8
-https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/rpm-4.14.3-31.0.1.el8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/rpm-4.14.3-31.0.1.el8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/rpm-4.14.3-31.0.1.el8.src.rpm
 ```
 
 ### `rpm` package: `rpm-build-libs-4.14.3-31.0.1.el8.x86_64`
@@ -2148,8 +2148,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url rpm-build-libs-4.14.3-31.0.1.el8
-https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/rpm-4.14.3-31.0.1.el8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/rpm-4.14.3-31.0.1.el8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/rpm-4.14.3-31.0.1.el8.src.rpm
 ```
 
 ### `rpm` package: `rpm-libs-4.14.3-31.0.1.el8.x86_64`
@@ -2160,8 +2160,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url rpm-libs-4.14.3-31.0.1.el8
-https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/rpm-4.14.3-31.0.1.el8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/rpm-4.14.3-31.0.1.el8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/rpm-4.14.3-31.0.1.el8.src.rpm
 ```
 
 ### `rpm` package: `rsyslog-8.2102.0-15.el8.x86_64`
@@ -2283,8 +2283,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url tzdata-2024a-1.0.1.el8.noarch
-https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/tzdata-2024a-1.0.1.el8.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL8/baseos/latest/x86_64/getPackageSource/tzdata-2024a-1.0.1.el8.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL8/appstream/x86_64/getPackageSource/tzdata-2024a-1.0.1.el8.src.rpm
 ```
 
 ### `rpm` package: `userspace-rcu-0.10.1-4.el8.x86_64`
