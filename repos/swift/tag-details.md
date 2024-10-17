@@ -12,6 +12,7 @@
 -	[`swift:5.10-jammy`](#swift510-jammy)
 -	[`swift:5.10-jammy-slim`](#swift510-jammy-slim)
 -	[`swift:5.10-noble`](#swift510-noble)
+-	[`swift:5.10-noble-slim`](#swift510-noble-slim)
 -	[`swift:5.10-rhel-ubi9`](#swift510-rhel-ubi9)
 -	[`swift:5.10-rhel-ubi9-slim`](#swift510-rhel-ubi9-slim)
 -	[`swift:5.10-slim`](#swift510-slim)
@@ -26,6 +27,7 @@
 -	[`swift:5.10.1-jammy`](#swift5101-jammy)
 -	[`swift:5.10.1-jammy-slim`](#swift5101-jammy-slim)
 -	[`swift:5.10.1-noble`](#swift5101-noble)
+-	[`swift:5.10.1-noble-slim`](#swift5101-noble-slim)
 -	[`swift:5.10.1-rhel-ubi9`](#swift5101-rhel-ubi9)
 -	[`swift:5.10.1-rhel-ubi9-slim`](#swift5101-rhel-ubi9-slim)
 -	[`swift:5.10.1-slim`](#swift5101-slim)
@@ -1997,6 +1999,10 @@ $ docker pull swift@sha256:76a55c183427c8f8a6bc9945187450c6ec1344462e98082763ce7
 		Last Modified: Wed, 16 Oct 2024 05:23:13 GMT  
 		Size: 15.6 KB (15600 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `swift:5.10-noble-slim`
+
+**does not exist** (yet?)
 
 ## `swift:5.10-rhel-ubi9`
 
@@ -4709,6 +4715,10 @@ $ docker pull swift@sha256:76a55c183427c8f8a6bc9945187450c6ec1344462e98082763ce7
 		Last Modified: Wed, 16 Oct 2024 05:23:13 GMT  
 		Size: 15.6 KB (15600 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `swift:5.10.1-noble-slim`
+
+**does not exist** (yet?)
 
 ## `swift:5.10.1-rhel-ubi9`
 
