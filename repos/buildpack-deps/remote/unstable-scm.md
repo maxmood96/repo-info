@@ -1,7 +1,7 @@
 ## `buildpack-deps:unstable-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:9e5ec34158e5f7e23ab0680e348f6bee25c74dac0b2e624540fefb033396dd5e
+$ docker pull buildpack-deps@sha256:2b4645f6bc737221da47874dc1324525eb33848e1abb815d78e3ffdbb91e79b2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -133,39 +133,39 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 ### `buildpack-deps:unstable-scm` - linux; arm64 variant v8
 
 ```console
-$ docker pull buildpack-deps@sha256:5f513a1c5f215d83b71b8cbd64ca21887cb12f01b07695a7ffdf01a67e2b0fd2
+$ docker pull buildpack-deps@sha256:86fb5cafcfd67c91f88f662be09d8efd8f81f8a44fd56b5eec7bb1cfeeadc222
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **140.0 MB (140036229 bytes)**  
+-	Total Size: **140.4 MB (140385741 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36031ec48fc57c491b354b9d8b65ff95c5876b9efaab45a0c871a1ece21d7b30`
+-	Image ID: `sha256:599d6e0616d8c9af6627283576f1f866128aa3124b23b7eb286cf69ba6ed97a0`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 27 Sep 2024 04:38:54 GMT
-ADD file:0530740e6d33fef9d1d8ba1df1cda3d2bbd45ee34654975f96a8cd318b315f82 in / 
-# Fri, 27 Sep 2024 04:38:55 GMT
+# Thu, 17 Oct 2024 01:12:35 GMT
+ADD file:58acae53f12429504dea737cd60eba46c5f2eea862974a8d8fe218c17d285565 in / 
+# Thu, 17 Oct 2024 01:12:36 GMT
 CMD ["bash"]
-# Fri, 27 Sep 2024 05:21:09 GMT
+# Thu, 17 Oct 2024 04:32:52 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	apt-get dist-clean
-# Fri, 27 Sep 2024 05:21:28 GMT
+# Thu, 17 Oct 2024 04:33:09 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	apt-get dist-clean
 ```
 
 -	Layers:
-	-	`sha256:99a192f51b57a678feb659bcbaa8cde28d31be7455d5517ca87c1d8fba2866f1`  
-		Last Modified: Fri, 27 Sep 2024 04:42:11 GMT  
-		Size: 53.6 MB (53594265 bytes)  
+	-	`sha256:d246237d395a465ccb5ede6b1a321d43a78766a62bc93015a0368a88624aedff`  
+		Last Modified: Thu, 17 Oct 2024 01:15:57 GMT  
+		Size: 53.6 MB (53629485 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:88fc848450eda758c5f4c056230d289d3bacb82835760763661a9b5aebb3758a`  
-		Last Modified: Fri, 27 Sep 2024 05:26:37 GMT  
-		Size: 20.1 MB (20139073 bytes)  
+	-	`sha256:3bd949d90425f27d9499ed62d5edc09c30effb2a25cacc5cdbcec475f72c714b`  
+		Last Modified: Thu, 17 Oct 2024 04:37:48 GMT  
+		Size: 20.2 MB (20199608 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fd393ac9d5f3e6f4ef01c240e4ee33361f9163326dc4fe0c98ca544756cddc12`  
-		Last Modified: Fri, 27 Sep 2024 05:26:51 GMT  
-		Size: 66.3 MB (66302891 bytes)  
+	-	`sha256:d318bda2b7787f1d062cd74c8c3d67fb18e99d812d82717501702fb68c487f68`  
+		Last Modified: Thu, 17 Oct 2024 04:38:02 GMT  
+		Size: 66.6 MB (66556648 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `buildpack-deps:unstable-scm` - linux; 386
