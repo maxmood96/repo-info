@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:bb2f17bb356ff305aeedb9a33a7cd6d70ff665951f92a830d6dda9cbce7aa004`
-- Created: `2024-10-02T01:49:10.968890101Z`
+- Image ID: `sha256:7318306fbedf14079a1c43cd179898d097f42bdaf99df31b4d8315551826391e`
+- Created: `2024-10-16T02:30:52.503140481Z`
 - Virtual Size: ~ 1.33 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -411,15 +411,15 @@ $ apt-get source -qq --print-uris dpkg=1.19.7ubuntu3.2
 'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.7ubuntu3.2.tar.xz' dpkg_1.19.7ubuntu3.2.tar.xz 4732068 SHA512:a69c51b04fe52ca5ca44111baf83eeaff4cf5167f5322a4c1a7671dc4a6ce5e25095bad73ff4d9c197427d21f3bf1a246f99007dde8890f33c79bb572f7f95fc
 ```
 
-### `dpkg` source package: `e2fsprogs=1.45.5-2ubuntu1.1`
+### `dpkg` source package: `e2fsprogs=1.45.5-2ubuntu1.2`
 
 Binary Packages:
 
-- `e2fsprogs=1.45.5-2ubuntu1.1`
-- `libcom-err2:amd64=1.45.5-2ubuntu1.1`
-- `libext2fs2:amd64=1.45.5-2ubuntu1.1`
-- `libss2:amd64=1.45.5-2ubuntu1.1`
-- `logsave=1.45.5-2ubuntu1.1`
+- `e2fsprogs=1.45.5-2ubuntu1.2`
+- `libcom-err2:amd64=1.45.5-2ubuntu1.2`
+- `libext2fs2:amd64=1.45.5-2ubuntu1.2`
+- `libss2:amd64=1.45.5-2ubuntu1.2`
+- `logsave=1.45.5-2ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/libcom-err2/copyright`, `/usr/share/doc/libext2fs2/copyright`, `/usr/share/doc/libss2/copyright`, `/usr/share/doc/logsave/copyright`)
 
@@ -429,11 +429,11 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris e2fsprogs=1.45.5-2ubuntu1.1
-'http://security.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5-2ubuntu1.1.dsc' e2fsprogs_1.45.5-2ubuntu1.1.dsc 3350 SHA512:98228bb8bfaa70888326dcab49e6de70de4b154df91f2c69a0dbae751f408b15f31b1ba09d85588a9ef67add85b3bd6e91230e35281980465793d95030f16b90
-'http://security.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5.orig.tar.gz' e2fsprogs_1.45.5.orig.tar.gz 7938826 SHA512:3ddb8d8aedfa68e1684d77e2bdd3cbbc16b2fbc633945a72ba617bea76c13253f3afa50655216a4071d787382272381b992cd6e7e3747780a5c3a64343158c98
-'http://security.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5.orig.tar.gz.asc' e2fsprogs_1.45.5.orig.tar.gz.asc 488 SHA512:1e3a19cf7943927c5e12ef3963a50af177e5627d9aa1c3eb081adb8e4671e46df3b6d512f6fcac002204d59b68716d94b04286d2cd85142a336c06bf28eaf3e1
-'http://security.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5-2ubuntu1.1.debian.tar.xz' e2fsprogs_1.45.5-2ubuntu1.1.debian.tar.xz 82324 SHA512:239e485a95be88f9021d02504ef61972df631febf3e66d4ec2f8b759fe14592fc0c661d815b8b7dc3f0c69f5f15823e97aecbb928459683139063ee9d10ea61d
+$ apt-get source -qq --print-uris e2fsprogs=1.45.5-2ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5-2ubuntu1.2.dsc' e2fsprogs_1.45.5-2ubuntu1.2.dsc 3313 SHA512:b2637335d3247a54443d0967e994929adb52954277b1029a15292bc6fdc8db1ea00d5e2a6089c0b7a8419bfcff58cb60a6a7281d286265b4868d921d8daa0858
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5.orig.tar.gz' e2fsprogs_1.45.5.orig.tar.gz 7938826 SHA512:3ddb8d8aedfa68e1684d77e2bdd3cbbc16b2fbc633945a72ba617bea76c13253f3afa50655216a4071d787382272381b992cd6e7e3747780a5c3a64343158c98
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5.orig.tar.gz.asc' e2fsprogs_1.45.5.orig.tar.gz.asc 488 SHA512:1e3a19cf7943927c5e12ef3963a50af177e5627d9aa1c3eb081adb8e4671e46df3b6d512f6fcac002204d59b68716d94b04286d2cd85142a336c06bf28eaf3e1
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5-2ubuntu1.2.debian.tar.xz' e2fsprogs_1.45.5-2ubuntu1.2.debian.tar.xz 82932 SHA512:e038c9aa3af0593a6240840145b53742dbb2718dd58975e507b625eef3e341e5989ae0c7f02805a30ad213066af1cbfe8138f6baf500eedf66301dcb0966cb29
 ```
 
 ### `dpkg` source package: `findutils=4.7.0-1ubuntu1`
