@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:db1bda6066263471673b2398235c5dad98fee3f335d77ee3cbb04f8a9a9eb0a3`
+- Image ID: `sha256:8358cc001f597cbbe0546c0a0c7584b08dc9f51ae07affe4ea7e53f3767ffe4c`
 - Created: `2024-09-25T05:07:02Z`
 - Virtual Size: ~ 3.13 Gb  
   (total size of all layers on-disk)
@@ -474,15 +474,15 @@ $ apt-get source -qq --print-uris dpkg=1.19.7ubuntu3.2
 'http://archive.ubuntu.com/ubuntu/pool/main/d/dpkg/dpkg_1.19.7ubuntu3.2.tar.xz' dpkg_1.19.7ubuntu3.2.tar.xz 4732068 SHA512:a69c51b04fe52ca5ca44111baf83eeaff4cf5167f5322a4c1a7671dc4a6ce5e25095bad73ff4d9c197427d21f3bf1a246f99007dde8890f33c79bb572f7f95fc
 ```
 
-### `dpkg` source package: `e2fsprogs=1.45.5-2ubuntu1.1`
+### `dpkg` source package: `e2fsprogs=1.45.5-2ubuntu1.2`
 
 Binary Packages:
 
-- `e2fsprogs=1.45.5-2ubuntu1.1`
-- `libcom-err2:amd64=1.45.5-2ubuntu1.1`
-- `libext2fs2:amd64=1.45.5-2ubuntu1.1`
-- `libss2:amd64=1.45.5-2ubuntu1.1`
-- `logsave=1.45.5-2ubuntu1.1`
+- `e2fsprogs=1.45.5-2ubuntu1.2`
+- `libcom-err2:amd64=1.45.5-2ubuntu1.2`
+- `libext2fs2:amd64=1.45.5-2ubuntu1.2`
+- `libss2:amd64=1.45.5-2ubuntu1.2`
+- `logsave=1.45.5-2ubuntu1.2`
 
 Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/libcom-err2/copyright`, `/usr/share/doc/libext2fs2/copyright`, `/usr/share/doc/libss2/copyright`, `/usr/share/doc/logsave/copyright`)
 
@@ -492,11 +492,11 @@ Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris e2fsprogs=1.45.5-2ubuntu1.1
-'http://security.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5-2ubuntu1.1.dsc' e2fsprogs_1.45.5-2ubuntu1.1.dsc 3350 SHA512:98228bb8bfaa70888326dcab49e6de70de4b154df91f2c69a0dbae751f408b15f31b1ba09d85588a9ef67add85b3bd6e91230e35281980465793d95030f16b90
-'http://security.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5.orig.tar.gz' e2fsprogs_1.45.5.orig.tar.gz 7938826 SHA512:3ddb8d8aedfa68e1684d77e2bdd3cbbc16b2fbc633945a72ba617bea76c13253f3afa50655216a4071d787382272381b992cd6e7e3747780a5c3a64343158c98
-'http://security.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5.orig.tar.gz.asc' e2fsprogs_1.45.5.orig.tar.gz.asc 488 SHA512:1e3a19cf7943927c5e12ef3963a50af177e5627d9aa1c3eb081adb8e4671e46df3b6d512f6fcac002204d59b68716d94b04286d2cd85142a336c06bf28eaf3e1
-'http://security.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5-2ubuntu1.1.debian.tar.xz' e2fsprogs_1.45.5-2ubuntu1.1.debian.tar.xz 82324 SHA512:239e485a95be88f9021d02504ef61972df631febf3e66d4ec2f8b759fe14592fc0c661d815b8b7dc3f0c69f5f15823e97aecbb928459683139063ee9d10ea61d
+$ apt-get source -qq --print-uris e2fsprogs=1.45.5-2ubuntu1.2
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5-2ubuntu1.2.dsc' e2fsprogs_1.45.5-2ubuntu1.2.dsc 3313 SHA512:b2637335d3247a54443d0967e994929adb52954277b1029a15292bc6fdc8db1ea00d5e2a6089c0b7a8419bfcff58cb60a6a7281d286265b4868d921d8daa0858
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5.orig.tar.gz' e2fsprogs_1.45.5.orig.tar.gz 7938826 SHA512:3ddb8d8aedfa68e1684d77e2bdd3cbbc16b2fbc633945a72ba617bea76c13253f3afa50655216a4071d787382272381b992cd6e7e3747780a5c3a64343158c98
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5.orig.tar.gz.asc' e2fsprogs_1.45.5.orig.tar.gz.asc 488 SHA512:1e3a19cf7943927c5e12ef3963a50af177e5627d9aa1c3eb081adb8e4671e46df3b6d512f6fcac002204d59b68716d94b04286d2cd85142a336c06bf28eaf3e1
+'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5-2ubuntu1.2.debian.tar.xz' e2fsprogs_1.45.5-2ubuntu1.2.debian.tar.xz 82932 SHA512:e038c9aa3af0593a6240840145b53742dbb2718dd58975e507b625eef3e341e5989ae0c7f02805a30ad213066af1cbfe8138f6baf500eedf66301dcb0966cb29
 ```
 
 ### `dpkg` source package: `expat=2.2.9-1ubuntu0.7`
@@ -1701,11 +1701,11 @@ $ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4%2bdfsg-3ubuntu0.1.debian.tar.xz' libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz 17300 SHA512:0484891be5603d00bd57b799c708b9395fccbaa8c6c44f535377f6fa2c7ac22c01c8a3c1b45e1c1f3c30f19dc74d510626bf82067fcbfb53c39f1bcc2249affe
 ```
 
-### `dpkg` source package: `linux=5.4.0-196.216`
+### `dpkg` source package: `linux=5.4.0-198.218`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.4.0-196.216`
+- `linux-libc-dev:amd64=5.4.0-198.218`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1714,10 +1714,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.4.0-196.216
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-196.216.dsc' linux_5.4.0-196.216.dsc 7418 SHA512:027c64eb6aa98238fa3139006caadf64178a7e27e4b14bcf061354ffdaebdba3d3f861bc67d7edfe288de6dca7e81fb014ae3e009f1a6dea9b607ee33773c0af
+$ apt-get source -qq --print-uris linux=5.4.0-198.218
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-198.218.dsc' linux_5.4.0-198.218.dsc 7418 SHA512:903508be2fdb3804691b55ad99aa8bee18f34180458c3d1fbc3ffeac43f7b7a8ce447a1451fe801c91e70a2c123fd6292e6c5c20bfb502466157087305976f84
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-196.216.diff.gz' linux_5.4.0-196.216.diff.gz 9666487 SHA512:f5377ef495b021851f2fdfaf399ae9a96c4f9c4baed5aa2e0d304622a7b68a67992d9e31fe5bba5865a40d3c41d82ea977f79192668281ea3e30cc6f496a3126
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-198.218.diff.gz' linux_5.4.0-198.218.diff.gz 9668192 SHA512:ae00083b0cb279148adf89e6396a2f6ee6c72e71d37e56ffbd16bc088c78dfeed79f42cc03cc186961b5789f8022eaebda7d1f99dd9fb9f1a5c9b55509f16c22
 ```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
