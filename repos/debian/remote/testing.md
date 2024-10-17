@@ -1,7 +1,7 @@
 ## `debian:testing`
 
 ```console
-$ docker pull debian@sha256:7e3d63c6eeb6bb7310b92039745bacf705a13c42ef9cc6a8dc0aa9b01f7d0a92
+$ docker pull debian@sha256:9e0fe246f9b448b7b39c4f910d8bc76ef50a170e311e7f199eebde5339bcc94f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -71,53 +71,53 @@ CMD ["bash"]
 ### `debian:testing` - linux; arm variant v7
 
 ```console
-$ docker pull debian@sha256:98a4215ae7d0fdc83498fcd53e7b35846ec89ba9f9e77d5d1d8581626ac6d40a
+$ docker pull debian@sha256:0fdb54b54f82e3ee5a33c4cfe608e4245fccf45795e840094522d0182edf077a
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.6 MB (47633937 bytes)**  
+-	Total Size: **47.7 MB (47659653 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b909fbc8dc126f26ecd4a1afd75a1e713738b9bba335922334aeffb03950b82`
+-	Image ID: `sha256:b7ae5eea1396be4247265d5ab53bc30d68462a369be91111bba89b274c331cfc`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 27 Sep 2024 05:15:21 GMT
-ADD file:fb5e39f7f5bcfbaa21f64fd97ca1564921b5d0673fe330a8834c706152a09859 in / 
-# Fri, 27 Sep 2024 05:15:22 GMT
+# Thu, 17 Oct 2024 03:05:01 GMT
+ADD file:445312fa78b709be6c28d6d5508c2657f3834595879ee37cd682577916fd2e22 in / 
+# Thu, 17 Oct 2024 03:05:01 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:e46465b055aa50600d1bdffbdb586bb40e82873206be9d67794a93d24d546e91`  
-		Last Modified: Fri, 27 Sep 2024 05:19:34 GMT  
-		Size: 47.6 MB (47633937 bytes)  
+	-	`sha256:8a32718205f28682a37c9402dea50cd26fa77ce85fae02e2da7f571e3fd30faf`  
+		Last Modified: Thu, 17 Oct 2024 03:09:55 GMT  
+		Size: 47.7 MB (47659653 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:testing` - linux; arm64 variant v8
 
 ```console
-$ docker pull debian@sha256:168c9d0fda599a1076ff375064113569df8a6bcc7b2c455b1260386b95e01e52
+$ docker pull debian@sha256:d513936c14d80c512cb76f23e362d7ea82029ba114a9a529fc3ddb3dcdf844db
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.6 MB (53616589 bytes)**  
+-	Total Size: **53.6 MB (53599758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2297a131da790881f9cb6f29176a0338f0757bf4a43c46f85de77c7bd7fdb6e8`
+-	Image ID: `sha256:c80499045b9fc2e72296f180a3740678202d327cd50786407b38bcd5a3caf7ee`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 27 Sep 2024 04:39:21 GMT
-ADD file:dfa41c5a8e1c4511359423b532cb30507d2ec0cb9ef2412143a4d4a2752d2d0a in / 
-# Fri, 27 Sep 2024 04:39:22 GMT
+# Thu, 17 Oct 2024 01:13:03 GMT
+ADD file:e3e9f477c791fc688010cc87eaedfcd80ede2cdd070c953518b515ed1b668a55 in / 
+# Thu, 17 Oct 2024 01:13:04 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:be8a7f4a2cec45419ae4d29243820f77c134b84630752f45d42a7725f62db14f`  
-		Last Modified: Fri, 27 Sep 2024 04:43:03 GMT  
-		Size: 53.6 MB (53616589 bytes)  
+	-	`sha256:a6d8e57ff3309f685dd823e43fca05a8da4dba501d2eae9451a046edaeaca8d2`  
+		Last Modified: Thu, 17 Oct 2024 01:16:49 GMT  
+		Size: 53.6 MB (53599758 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:testing` - linux; 386
@@ -149,103 +149,103 @@ CMD ["bash"]
 ### `debian:testing` - linux; mips64le
 
 ```console
-$ docker pull debian@sha256:77e1f6ff3b6ce1bec4f36e58a0004c528b7362bf8b2b0c0d5f03e3b0d6f949e5
+$ docker pull debian@sha256:04400c78d51e477fb437d6ef0e7f08507a2afc081b8cc9215a018f2d126c5fb3
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **52.1 MB (52096392 bytes)**  
+-	Total Size: **52.1 MB (52128467 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38927fbb5099366b854b0e207f12071a9d8189333fab4a897fd902d26d3c3417`
+-	Image ID: `sha256:cf167706533a1dcfd609598e07af851a9402bcefa88518883d722d71efd44366`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 27 Sep 2024 09:06:11 GMT
-ADD file:7a78a5938833234acfd335f8c9f0fee0472ad7618492e6ebf2b52e0031f2de4e in / 
-# Fri, 27 Sep 2024 09:06:17 GMT
+# Thu, 17 Oct 2024 01:12:39 GMT
+ADD file:0b3096a7990b518ac87fbbde3a9fdb21311fd2379ff418127666988a0cef4ce9 in / 
+# Thu, 17 Oct 2024 01:12:45 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:a03865fda81585be80749d484803fe2bec42c5d5eb183671791eccec1893d3ba`  
-		Last Modified: Fri, 27 Sep 2024 09:14:40 GMT  
-		Size: 52.1 MB (52096392 bytes)  
+	-	`sha256:a975ead2645831f25c1c869d441f073d183882a28ac8f4deb27c446f0f189418`  
+		Last Modified: Thu, 17 Oct 2024 01:21:06 GMT  
+		Size: 52.1 MB (52128467 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:testing` - linux; ppc64le
 
 ```console
-$ docker pull debian@sha256:bb1a7f3d8a6f0582d86850f2a43c6e8d2bb1a17efe93efb8c9122991af156e6f
+$ docker pull debian@sha256:2a3e1595993c6191717a877d74c7fa6abf0a3ab4b5edd2e8295f05d2379d243d
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **57.1 MB (57100382 bytes)**  
+-	Total Size: **57.1 MB (57126660 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:41ae276a17ce65f93aec9635996b647e47f8eb3c0111c9a97920c8b7ec259699`
+-	Image ID: `sha256:96993d84619434e264a7aad12172ffe3d1b631affefde98135ccf8b158a11ea6`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 27 Sep 2024 05:34:08 GMT
-ADD file:1cabb289a72ffeb44fe38a5ebdb31c8f6a7bb3e5fd5c46b1b4132b34443c5811 in / 
-# Fri, 27 Sep 2024 05:34:11 GMT
+# Thu, 17 Oct 2024 01:19:50 GMT
+ADD file:5c4544ac0d27b357afba9feb379224b111f7149e7b3f21fe35317eef03b8bcea in / 
+# Thu, 17 Oct 2024 01:19:53 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:4fe1b2916866944b77c438d068d2b8fa4c195832fc93b9c0068bfa8310f21499`  
-		Last Modified: Fri, 27 Sep 2024 05:37:42 GMT  
-		Size: 57.1 MB (57100382 bytes)  
+	-	`sha256:311042d460227ad120f24056ab56c7fe2202f03f09ec22ed4f93b2ffc0adb201`  
+		Last Modified: Thu, 17 Oct 2024 01:23:20 GMT  
+		Size: 57.1 MB (57126660 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:testing` - linux; riscv64
 
 ```console
-$ docker pull debian@sha256:9093ce262871252e1c4d3f8da1118ccebfa4ec6a6dadb34169e07d3f702ee395
+$ docker pull debian@sha256:5c863cc1dcf644f722d489fe1f37ae8f7f5832a7485b86335681fcf5a6a7013f
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.5 MB (51492747 bytes)**  
+-	Total Size: **51.5 MB (51529165 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:99f7c3d67d1c5a815b5ccfcbafac1636ceb75f7de57b98b26c86492c3d13d6e8`
+-	Image ID: `sha256:70312c5bc6ec80798c096c4ec97b5cfde736ab64a67df3c4557f2ee69aa9aaf1`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 27 Sep 2024 12:26:02 GMT
-ADD file:ba946654bb1b3cc05385513ea44d575e3d17bf03278c865ad9076b1885d17ac3 in / 
-# Fri, 27 Sep 2024 12:26:04 GMT
+# Thu, 17 Oct 2024 01:10:18 GMT
+ADD file:b0ab5ac595ad741930a2f60e224b42189315492e0837eac491f53a9eb60e7d7b in / 
+# Thu, 17 Oct 2024 01:10:21 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:b982516df848bcd6f1ebe3e5d6de5f3d847a1d88bf1de3c2aa932efda9534c2f`  
-		Last Modified: Fri, 27 Sep 2024 12:31:51 GMT  
-		Size: 51.5 MB (51492747 bytes)  
+	-	`sha256:569b3ccb4a7ed8765dde5567b672e7b833f45410878496943c01617ebc4331c5`  
+		Last Modified: Thu, 17 Oct 2024 01:16:02 GMT  
+		Size: 51.5 MB (51529165 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `debian:testing` - linux; s390x
 
 ```console
-$ docker pull debian@sha256:961f6cc0a66ea8d2304c5bfeaeabfd62d8d8847d39a4d6dc4885ee202703763a
+$ docker pull debian@sha256:2ba69cc787a8d17d0148ce325030fc8778d26ee288263d97d6dd5b8511cc49ac
 ```
 
 -	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **52.8 MB (52771071 bytes)**  
+-	Total Size: **52.8 MB (52808853 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e1cfdd25c27404ba6422d1345751004424da96a1ae10f077aac3740958e466f`
+-	Image ID: `sha256:73b7a0dc59e0946e4ccdad54e2c95654a4ccc0dec216e18f9827fee8b807a450`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Fri, 27 Sep 2024 02:44:52 GMT
-ADD file:3e39c625eaf60953d8cee79d51e2111b241d054227598d815a080b9fe676b690 in / 
-# Fri, 27 Sep 2024 02:44:54 GMT
+# Thu, 17 Oct 2024 01:47:36 GMT
+ADD file:61f096f81ed7cfc876be4edad4438e9e9e439382507d192f09f51c428e99a482 in / 
+# Thu, 17 Oct 2024 01:47:38 GMT
 CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:6254903b6edc85d1dc106a3e9025a77bf951ee477df6401427b61d5e2f6ccc3a`  
-		Last Modified: Fri, 27 Sep 2024 02:48:24 GMT  
-		Size: 52.8 MB (52771071 bytes)  
+	-	`sha256:f66a11769d6242f4b78b255eed3607d4c3b4b3fa3e8fb47724dd3586e9a6da4f`  
+		Last Modified: Thu, 17 Oct 2024 01:51:31 GMT  
+		Size: 52.8 MB (52808853 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
