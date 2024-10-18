@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0ef7ece361498a0ce6cfd9b12575bf174dcaa898c46fff446d49595d994b03da`
-- Created: `2024-10-11T23:40:26.588616635Z`
+- Image ID: `sha256:359577f59d2a8d3e3488b687f7452ea51d7f2a2cbc4c6cff8dc5e85b4b406e22`
+- Created: `2024-10-16T02:03:34.370764119Z`
 - Virtual Size: ~ 111.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1351,12 +1351,12 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.1`
+### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.2`
 
 Binary Packages:
 
-- `libproc2-0:amd64=2:4.0.4-4ubuntu3.1`
-- `procps=2:4.0.4-4ubuntu3.1`
+- `libproc2-0:amd64=2:4.0.4-4ubuntu3.2`
+- `procps=2:4.0.4-4ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/procps/copyright`)
 

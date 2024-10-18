@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:304783ba203337e5337d940dc7b8f879bc44896e721fcd966f587c12a7de3f36`
-- Created: `2024-10-11T23:44:17.184272423Z`
-- Virtual Size: ~ 816.82 Mb  
+- Image ID: `sha256:c95e358ddbec82a0acfa688fa0dab9ba24e70fd73892cdc8d3f17de957f69018`
+- Created: `2024-10-16T02:07:17.554710526Z`
+- Virtual Size: ~ 819.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -272,18 +272,18 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `binutils=2.42-4ubuntu2`
+### `dpkg` source package: `binutils=2.42-4ubuntu2.3`
 
 Binary Packages:
 
-- `binutils=2.42-4ubuntu2`
-- `binutils-common:amd64=2.42-4ubuntu2`
-- `binutils-x86-64-linux-gnu=2.42-4ubuntu2`
-- `libbinutils:amd64=2.42-4ubuntu2`
-- `libctf-nobfd0:amd64=2.42-4ubuntu2`
-- `libctf0:amd64=2.42-4ubuntu2`
-- `libgprofng0:amd64=2.42-4ubuntu2`
-- `libsframe1:amd64=2.42-4ubuntu2`
+- `binutils=2.42-4ubuntu2.3`
+- `binutils-common:amd64=2.42-4ubuntu2.3`
+- `binutils-x86-64-linux-gnu=2.42-4ubuntu2.3`
+- `libbinutils:amd64=2.42-4ubuntu2.3`
+- `libctf-nobfd0:amd64=2.42-4ubuntu2.3`
+- `libctf0:amd64=2.42-4ubuntu2.3`
+- `libgprofng0:amd64=2.42-4ubuntu2.3`
+- `libsframe1:amd64=2.42-4ubuntu2.3`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`, `/usr/share/doc/libgprofng0/copyright`, `/usr/share/doc/libsframe1/copyright`)
 
@@ -880,23 +880,23 @@ Licenses: (parsed from: `/usr/share/doc/cpp-13/copyright`, `/usr/share/doc/cpp-1
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `gcc-14=14-20240412-0ubuntu1`
+### `dpkg` source package: `gcc-14=14.2.0-4ubuntu2~24.04`
 
 Binary Packages:
 
-- `gcc-14-base:amd64=14-20240412-0ubuntu1`
-- `libasan8:amd64=14-20240412-0ubuntu1`
-- `libatomic1:amd64=14-20240412-0ubuntu1`
-- `libcc1-0:amd64=14-20240412-0ubuntu1`
-- `libgcc-s1:amd64=14-20240412-0ubuntu1`
-- `libgomp1:amd64=14-20240412-0ubuntu1`
-- `libhwasan0:amd64=14-20240412-0ubuntu1`
-- `libitm1:amd64=14-20240412-0ubuntu1`
-- `liblsan0:amd64=14-20240412-0ubuntu1`
-- `libquadmath0:amd64=14-20240412-0ubuntu1`
-- `libstdc++6:amd64=14-20240412-0ubuntu1`
-- `libtsan2:amd64=14-20240412-0ubuntu1`
-- `libubsan1:amd64=14-20240412-0ubuntu1`
+- `gcc-14-base:amd64=14.2.0-4ubuntu2~24.04`
+- `libasan8:amd64=14.2.0-4ubuntu2~24.04`
+- `libatomic1:amd64=14.2.0-4ubuntu2~24.04`
+- `libcc1-0:amd64=14.2.0-4ubuntu2~24.04`
+- `libgcc-s1:amd64=14.2.0-4ubuntu2~24.04`
+- `libgomp1:amd64=14.2.0-4ubuntu2~24.04`
+- `libhwasan0:amd64=14.2.0-4ubuntu2~24.04`
+- `libitm1:amd64=14.2.0-4ubuntu2~24.04`
+- `liblsan0:amd64=14.2.0-4ubuntu2~24.04`
+- `libquadmath0:amd64=14.2.0-4ubuntu2~24.04`
+- `libstdc++6:amd64=14.2.0-4ubuntu2~24.04`
+- `libtsan2:amd64=14.2.0-4ubuntu2~24.04`
+- `libubsan1:amd64=14.2.0-4ubuntu2~24.04`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-14-base/copyright`, `/usr/share/doc/libasan8/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libcc1-0/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libhwasan0/copyright`, `/usr/share/doc/libitm1/copyright`, `/usr/share/doc/liblsan0/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++6/copyright`, `/usr/share/doc/libtsan2/copyright`, `/usr/share/doc/libubsan1/copyright`)
 
@@ -2544,11 +2544,11 @@ Licenses: (parsed from: `/usr/share/doc/libzstd-dev/copyright`, `/usr/share/doc/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `linux=6.8.0-45.45`
+### `dpkg` source package: `linux=6.8.0-47.47`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-45.45`
+- `linux-libc-dev:amd64=6.8.0-47.47`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
