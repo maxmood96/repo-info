@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:595f0708062825c94839dd91435ce10a8858f481555252982a0e6367e56198e4`
-- Created: `2024-09-09T20:34:59Z`
-- Virtual Size: ~ 207.77 Mb  
+- Image ID: `sha256:a42be9644aab75e85059f55cb79122b829ea5601acaa08b829eb7628682db7bb`
+- Created: `2024-10-15T23:44:17Z`
+- Virtual Size: ~ 208.04 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -79,26 +79,26 @@ $ dnf --quiet download --source --url bzip2-libs-1.0.6-13.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/bzip2-1.0.6-13.el7.src.rpm
 ```
 
-### `rpm` package: `ca-certificates-2023.2.60_v7.0.306-72.el7_9.noarch`
+### `rpm` package: `ca-certificates-2024.2.69_v8.0.303-71.0.1.el7_9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url ca-certificates-2023.2.60_v7.0.306-72.el7_9.noarch
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/ca-certificates-2023.2.60_v7.0.306-72.el7_9.src.rpm
+$ dnf --quiet download --source --url ca-certificates-2024.2.69_v8.0.303-71.0.1.el7_9.noarch
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/ca-certificates-2024.2.69_v8.0.303-71.0.1.el7_9.src.rpm
 ```
 
-### `rpm` package: `chkconfig-1.7.6-1.0.1.el7.x86_64`
+### `rpm` package: `chkconfig-1.7.6-1.0.3.el7.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url chkconfig-1.7.6-1.0.1.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/chkconfig-1.7.6-1.0.1.el7.src.rpm
+$ dnf --quiet download --source --url chkconfig-1.7.6-1.0.3.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/chkconfig-1.7.6-1.0.3.el7.src.rpm
 ```
 
 ### `rpm` package: `coreutils-8.22-24.0.1.el7_9.2.x86_64`
@@ -521,26 +521,26 @@ $ dnf --quiet download --source --url kmod-libs-20-28.0.3.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/kmod-20-28.0.3.el7.src.rpm
 ```
 
-### `rpm` package: `kpartx-0.4.9-136.0.3.el7_9.x86_64`
+### `rpm` package: `kpartx-0.4.9-136.0.5.el7_9.x86_64`
 
 Licenses (from `rpm --query`): GPL+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url kpartx-0.4.9-136.0.3.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/device-mapper-multipath-0.4.9-136.0.3.el7_9.src.rpm
+$ dnf --quiet download --source --url kpartx-0.4.9-136.0.5.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/device-mapper-multipath-0.4.9-136.0.5.el7_9.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.15.1-55.0.1.el7_9.x86_64`
+### `rpm` package: `krb5-libs-1.15.1-55.0.3.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.15.1-55.0.1.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/krb5-1.15.1-55.0.1.el7_9.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.15.1-55.0.3.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/krb5-1.15.1-55.0.3.el7_9.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.2.51-15.el7.x86_64`
@@ -609,15 +609,15 @@ $ dnf --quiet download --source --url libcap-ng-0.7.5-4.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/libcap-ng-0.7.5-4.el7.src.rpm
 ```
 
-### `rpm` package: `libcom_err-1.42.9-19.0.1.el7.x86_64`
+### `rpm` package: `libcom_err-1.45.4-3.0.7.el7.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcom_err-1.42.9-19.0.1.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/e2fsprogs-1.42.9-19.0.1.el7.src.rpm
+$ dnf --quiet download --source --url libcom_err-1.45.4-3.0.7.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/e2fsprogs-1.45.4-3.0.7.el7.src.rpm
 ```
 
 ### `rpm` package: `libcurl-7.29.0-59.0.3.el7_9.2.x86_64`
@@ -1061,15 +1061,15 @@ $ dnf --quiet download --source --url openssl-libs-1.0.2k-26.el7_9_fips
 https://yum.oracle.com/repo/OracleLinux/OL7/8/security/validation/x86_64/getPackageSource/openssl-1.0.2k-26.el7_9_fips.src.rpm
 ```
 
-### `rpm` package: `oraclelinux-release-7.9-1.0.11.el7.x86_64`
+### `rpm` package: `oraclelinux-release-7.9-1.0.13.el7.x86_64`
 
 Licenses (from `rpm --query`): GPL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url oraclelinux-release-7.9-1.0.11.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/oraclelinux-release-7.9-1.0.11.el7.src.rpm
+$ dnf --quiet download --source --url oraclelinux-release-7.9-1.0.13.el7
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/oraclelinux-release-7.9-1.0.13.el7.src.rpm
 ```
 
 ### `rpm` package: `oraclelinux-release-el7-1.0-17.el7.x86_64`
@@ -1424,26 +1424,26 @@ $ dnf --quiet download --source --url sqlite-3.7.17-8.el7_7.1
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/sqlite-3.7.17-8.el7_7.1.src.rpm
 ```
 
-### `rpm` package: `systemd-219-78.0.13.el7_9.9.x86_64`
+### `rpm` package: `systemd-219-78.0.17.el7_9.9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-219-78.0.13.el7_9.9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/systemd-219-78.0.13.el7_9.9.src.rpm
+$ dnf --quiet download --source --url systemd-219-78.0.17.el7_9.9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/systemd-219-78.0.17.el7_9.9.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-219-78.0.13.el7_9.9.x86_64`
+### `rpm` package: `systemd-libs-219-78.0.17.el7_9.9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url systemd-libs-219-78.0.13.el7_9.9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/systemd-219-78.0.13.el7_9.9.src.rpm
+$ dnf --quiet download --source --url systemd-libs-219-78.0.17.el7_9.9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/systemd-219-78.0.17.el7_9.9.src.rpm
 ```
 
 ### `rpm` package: `tar-1.26-35.el7.x86_64`
