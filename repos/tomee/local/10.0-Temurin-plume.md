@@ -1,10 +1,10 @@
-# `tomee:10.0.0-M2-jre17-Temurin-ubuntu-plume`
+# `tomee:10.0.0-M3-jre17-Temurin-ubuntu-plume`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e7012bdf1665a551c9e84720196eb3a21b43f336435f9d6b7f975c2fb6ec65fb`
-- Created: `2024-07-23T18:18:20Z`
-- Virtual Size: ~ 355.37 Mb  
+- Image ID: `sha256:f0e0ef760b5f114f62ac4d7cec1a5ac63e31970451d4c4bced78d255a86a7a94`
+- Created: `2024-10-16T23:15:53Z`
+- Virtual Size: ~ 352.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.12+7`
-  - `TOMEE_VER=10.0.0-M2`
+  - `TOMEE_VER=10.0.0-M3`
   - `TOMEE_BUILD=plume`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
