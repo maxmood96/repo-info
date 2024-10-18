@@ -1,7 +1,7 @@
 ## `unit:latest`
 
 ```console
-$ docker pull unit@sha256:d30313ff6ab3f6a2678b5a2b5c356972f0c4b0988099a806bb99df9359b230bb
+$ docker pull unit@sha256:1e35293a768dd8c51a600812b750248d0033f0816f050680e474198c2fbd5309
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -100,19 +100,19 @@ $ docker pull unit@sha256:409893132ccc5a2c697de8dc63d558d8297ba68b0d5de5915c63d8
 ### `unit:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:9eb584f7aa4392480e9ddd49525955b7b502a4366cbc21966712b2fe0dae15e1
+$ docker pull unit@sha256:5a65eef9bb70809e87cabb33a3895f9e664229722ff80fef6179dd3825976df3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.0 MB (41020772 bytes)**  
+-	Total Size: **41.0 MB (41020751 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1401a214f777facb758c0156bbfffeaab28956d4a031ad8084cf4ac50177447e`
+-	Image ID: `sha256:1de05d8844a740f1e9fa79c45a8a0b646a271521c51a5ff1fc2b37d546d994e8`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
 # Tue, 17 Sep 2024 21:10:58 GMT
-ADD file:28df1cb6a6576d40b5226851d0a6a76ffd5d1c94644ee441490b74a90f29f425 in / 
+ADD file:702193928cded0bcec5edbf4a5660961e7caef8c9d9cafea3337b7f6720c4464 in / 
 # Tue, 17 Sep 2024 21:10:58 GMT
 CMD ["bash"]
 # Tue, 17 Sep 2024 21:10:58 GMT
@@ -146,39 +146,39 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:14c9d9d199323cbf0a4c2347a8af85f2875c1f2c26a1558fd34dfca7a26cff22`  
-		Last Modified: Fri, 27 Sep 2024 04:40:53 GMT  
-		Size: 29.2 MB (29156369 bytes)  
+	-	`sha256:83d624c4be2db5b81ae220b6b10cbc9a559d5800fd32556f4020727098f71ed0`  
+		Last Modified: Thu, 17 Oct 2024 01:14:39 GMT  
+		Size: 29.2 MB (29156341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97b05573d2d5b54ed00a7692b1c0619a61f7d7cb157e469ce7b066f6a85cde33`  
-		Last Modified: Sat, 28 Sep 2024 00:04:33 GMT  
-		Size: 11.9 MB (11861691 bytes)  
+	-	`sha256:d183e6940ddc13f0469163b728b28231bdd1d04ab026ed6c4b12c1ad6c8895aa`  
+		Last Modified: Thu, 17 Oct 2024 21:39:05 GMT  
+		Size: 11.9 MB (11861697 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5596a6f76879a48ada5c96e894c9018908d1e19de9bc277202806471da1136a0`  
-		Last Modified: Sat, 28 Sep 2024 00:04:32 GMT  
+	-	`sha256:9322871b2ab6ee90223907989dae55c5dee9bf708f479431f5a1faafa9e96a95`  
+		Last Modified: Thu, 17 Oct 2024 21:39:04 GMT  
 		Size: 1.3 KB (1261 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18e9aaddb827b61347123b85a7651c7fc263e366e4b667e62ed884ffa72da543`  
-		Last Modified: Sat, 28 Sep 2024 00:04:32 GMT  
-		Size: 1.5 KB (1451 bytes)  
+	-	`sha256:59c3198295b3326417a1927bb8d091ed1899d962562a7b49782c7a7b6341f856`  
+		Last Modified: Thu, 17 Oct 2024 21:39:04 GMT  
+		Size: 1.5 KB (1452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:latest` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:49681b065423ec8bc91cc8ad67c4f4766f777e9554074532266c68a57f221656
+$ docker pull unit@sha256:e09ce6b7b671f4db73519c70321fe7c49f09eaacd6621ffff546078f58c4a1e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **20.5 KB (20524 bytes)**  
+-	Total Size: **20.4 KB (20351 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3063a5e7cf96862ef85a3555ef047cd7bd92fcafc813cdae250936944554867c`
+-	Image ID: `sha256:0d2d7e8037be7f217977e3f63b121811ffa26eb57ec52626e6e2e19e7cb036c1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0595a0a6ec97df31fe28cdf3f81a953d6aa4fcde3a94a5ec92074d03f8d08b6a`  
-		Last Modified: Sat, 28 Sep 2024 00:04:32 GMT  
-		Size: 20.5 KB (20524 bytes)  
+	-	`sha256:47e3c5464e0b0adbb731e330f80b82721fcc8ea650445ff4c6f07b72b0ae30dd`  
+		Last Modified: Thu, 17 Oct 2024 21:39:04 GMT  
+		Size: 20.4 KB (20351 bytes)  
 		MIME: application/vnd.in-toto+json
