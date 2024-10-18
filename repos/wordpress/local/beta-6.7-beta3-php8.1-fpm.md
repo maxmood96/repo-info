@@ -1,10 +1,10 @@
-# `wordpress:beta-6.7-beta2-php8.3-fpm`
+# `wordpress:beta-6.7-beta3-php8.1-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d22a5575f795afb7531b82e83e416901301b801a51a65a47c78644d0a438de1f`
-- Created: `2024-10-08T01:03:12Z`
-- Virtual Size: ~ 708.62 Mb  
+- Image ID: `sha256:93fcc29e469c4bfb811aaf811aca6854595dd085c823cd464f7592f8de008dff`
+- Created: `2024-10-15T21:37:05Z`
+- Virtual Size: ~ 702.66 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,11 +16,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.12`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.12.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.12.tar.xz.asc`
-  - `PHP_SHA256=f774e28633e26fc8c5197f4dae58ec9e3ff87d1b4311cbc61ab05a7ad24bd131`
+  - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
+  - `PHP_VERSION=8.1.30`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.30.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.30.tar.xz.asc`
+  - `PHP_SHA256=f24a6007f0b25a53cb7fbaee69c85017e0345b62089c2425a0afb7e177192ed1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -3333,11 +3333,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.106-3`
+### `dpkg` source package: `linux=6.1.112-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.106-3`
+- `linux-libc-dev:amd64=6.1.112-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3352,17 +3352,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.106-3
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.106-3.dsc' linux_6.1.106-3.dsc 290930 SHA256:991a5496320541a090dda8c6d97a34bd9f6f4bccfd6c42d4e0e7e6ba781f9641
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.106.orig.tar.xz' linux_6.1.106.orig.tar.xz 137654360 SHA256:e1e3b721db72464aba403b218ff20a256d06ba5686b03bf0d6282ad372dfb330
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.106-3.debian.tar.xz' linux_6.1.106-3.debian.tar.xz 1669432 SHA256:edd237e3c03d49b3c8e815c4fbeb8ac6ff32dc03cd13be4c8d9c1df7e6f1b141
+$ apt-get source -qq --print-uris linux=6.1.112-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.112-1.dsc' linux_6.1.112-1.dsc 290930 SHA256:4bab7bd8fea3289860637e7578dba4bd15aedb6d5350d0ebf782726104eb773f
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.112.orig.tar.xz' linux_6.1.112.orig.tar.xz 137683288 SHA256:542ffe44eb5d79f6495cc5aae97b651bfa6d8bb65ed1b69810363a83fc95f211
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.112-1.debian.tar.xz' linux_6.1.112-1.debian.tar.xz 1676332 SHA256:b18bf125ef7b769943ddbd2a5812c89346e5addbe424c6159911d528908059ae
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.106-3/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.106-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.106-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.112-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.112-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.112-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
