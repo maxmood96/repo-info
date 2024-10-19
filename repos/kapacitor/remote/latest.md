@@ -1,7 +1,7 @@
 ## `kapacitor:latest`
 
 ```console
-$ docker pull kapacitor@sha256:7b72b22e2ae64153d4b973640b7d337bd52e2924b903407df1ab4d07983e1bae
+$ docker pull kapacitor@sha256:5c85dc4887476cbfeeb893e053d3aeec2323d50cba1f100a5633a31c470c2999
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,31 +14,31 @@ $ docker pull kapacitor@sha256:7b72b22e2ae64153d4b973640b7d337bd52e2924b903407df
 ### `kapacitor:latest` - linux; amd64
 
 ```console
-$ docker pull kapacitor@sha256:8ad275b0489168ea6f3fdadc1cf6ea8d1d4ecc79d074dfb5cfd6e599c4d5bc94
+$ docker pull kapacitor@sha256:4f425108ab59080a16468e86daa1b577fdcd97277e24a510788e59439a380018
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **147.8 MB (147777854 bytes)**  
+-	Total Size: **147.4 MB (147369771 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:477ca58110956eed5d3c6c10aef10929658c8e0e4bcd535a5bec7b844b64bb91`
+-	Image ID: `sha256:02494a19ec2a00724831e1c571bcb8327f3c09911a0bc779f50b09e5aff329ad`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["kapacitord"]`
 
 ```dockerfile
-# Tue, 18 Jun 2024 15:52:41 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 ARG RELEASE
-# Tue, 18 Jun 2024 15:52:41 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 18 Jun 2024 15:52:41 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 18 Jun 2024 15:52:41 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 LABEL org.opencontainers.image.version=22.04
-# Tue, 18 Jun 2024 15:52:41 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 ADD file:ebe009f86035c175ba244badd298a2582914415cf62783d510eab3a311a5d4e1 in / 
-# Tue, 18 Jun 2024 15:52:41 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["/bin/bash"]
-# Tue, 18 Jun 2024 15:52:41 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 28 Apr 2023 21:58:08 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 18 Jun 2024 15:52:41 GMT
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y bash-completion &&     awk 'f{if(sub(/^#/,"",$0)==0){f=0}};/^# enable bash completion/{f=1};{print;}' /etc/bash.bashrc > /etc/bash.bashrc.new &&     mv /etc/bash.bashrc.new /etc/bash.bashrc # buildkit
 # Tue, 18 Jun 2024 15:52:41 GMT
@@ -60,53 +60,53 @@ CMD ["kapacitord"]
 ```
 
 -	Layers:
-	-	`sha256:7478e0ac0f23f94b2f27848fbcdf804a670fbf8d4bab26df842d40a10cd33059`  
-		Last Modified: Wed, 11 Sep 2024 21:27:10 GMT  
-		Size: 30.4 MB (30439933 bytes)  
+	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
+		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
+		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9321cd5ae2a05dc61774ea917ff22fb166f1b67cd06921fed6f4270e0caf4c28`  
-		Last Modified: Tue, 17 Sep 2024 00:51:03 GMT  
-		Size: 7.1 MB (7091507 bytes)  
+	-	`sha256:8284ddf57c03d97884a998219f0fbd84edab303351cdba3ac1526a116e907210`  
+		Last Modified: Sat, 19 Oct 2024 02:06:18 GMT  
+		Size: 7.1 MB (7102850 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db10baa63a0fa86b67ba3738a2aff09cf297a9ad506530f83119cc6894b3e919`  
-		Last Modified: Tue, 17 Sep 2024 01:59:57 GMT  
-		Size: 38.9 MB (38856556 bytes)  
+	-	`sha256:4f251e17dca5f10cbea526a8e0b763ec5968e38f323b69ef4c64ebb49a1e96ae`  
+		Last Modified: Sat, 19 Oct 2024 02:54:09 GMT  
+		Size: 39.3 MB (39341346 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c152bad8af6e322412638f7d6552b3a1c4c5732ec7d07b04d9f092816634153`  
-		Last Modified: Tue, 17 Sep 2024 01:59:57 GMT  
-		Size: 71.4 MB (71389337 bytes)  
+	-	`sha256:7c30c9009a395568837469b0f46cdac41ba056442eb61d9846dd78c936dcc4cc`  
+		Last Modified: Sat, 19 Oct 2024 02:54:10 GMT  
+		Size: 71.4 MB (71389364 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e75967757e5e9e66a6f96a8bb64f8e91cac7bf947175b64c91ea8be75f26ba08`  
-		Last Modified: Tue, 17 Sep 2024 01:59:56 GMT  
-		Size: 223.0 B  
+	-	`sha256:788028ae066ebb118c4f03ebeabbcab1f9cccb83681b5e5a86ec0038b7fdda16`  
+		Last Modified: Sat, 19 Oct 2024 02:54:08 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:973da1c5b40c0cebeae902125db781e43c424e87c8fc0f6a66de80ccb87d286a`  
-		Last Modified: Tue, 17 Sep 2024 01:59:56 GMT  
-		Size: 298.0 B  
+	-	`sha256:54fa12f222631b1824afc7dd28bf4bfc5709e8c523f82a0b96b0fb0e1ae9a3b3`  
+		Last Modified: Sat, 19 Oct 2024 02:54:08 GMT  
+		Size: 297.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `kapacitor:latest` - unknown; unknown
 
 ```console
-$ docker pull kapacitor@sha256:9d39be4a8dd9ed48c2ba93d96e2744714d690c9908b535fbef70deea6851ac9e
+$ docker pull kapacitor@sha256:377eb5fae3107d54641ab69dccd953cad9f498f62f2c219bc46f6d1df8b2e801
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 MB (3550064 bytes)**  
+-	Total Size: **3.6 MB (3573281 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1763d6e31f69fa1332b0f715c7d1c1f3d25b64eac1575a72396c55fe28b94d44`
+-	Image ID: `sha256:4974f5c58206d730c0803834995ffc1d857f32693490fbfa03f1b85af25364d3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1e53206d38a3f335dacea4625a069178ad3e4c81bbe936f994a7095eca221cf9`  
-		Last Modified: Tue, 17 Sep 2024 01:59:56 GMT  
-		Size: 3.5 MB (3535156 bytes)  
+	-	`sha256:19d92c297a175f2c09abbccbb3199571a80288f6b83ceded0f1aa18945ba3d2a`  
+		Last Modified: Sat, 19 Oct 2024 02:54:08 GMT  
+		Size: 3.6 MB (3558218 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:afa687a96a086a3cdb07038a60eee589c13c3c5b78a2cffd9af0d375835948bb`  
-		Last Modified: Tue, 17 Sep 2024 01:59:56 GMT  
-		Size: 14.9 KB (14908 bytes)  
+	-	`sha256:78b8f0c5773a9ed7dbcf1dcad479895c25c71eb6a7c51b28d146e358b66353e0`  
+		Last Modified: Sat, 19 Oct 2024 02:54:08 GMT  
+		Size: 15.1 KB (15063 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `kapacitor:latest` - linux; arm64 variant v8
