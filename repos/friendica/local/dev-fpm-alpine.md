@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:22f1a99d4210d49646831770e0469cc8451ebcc085c3e90a820e84d768fa726a`
-- Created: `2024-10-07T20:28:46.01714454Z`
-- Virtual Size: ~ 139.45 Mb  
+- Image ID: `sha256:2da45018c91c2c9de3fcba110159c8c43f847b30c015d5a529e41dc7f30e1470`
+- Created: `2024-10-18T19:31:14.909475837Z`
+- Virtual Size: ~ 139.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.2.24.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.24.tar.xz.asc`
   - `PHP_SHA256=80a5225746a9eb484475b312d4c626c63a88a037d8e56d214f30205e1ba1411a`
-  - `GOSU_VERSION=1.14`
+  - `GOSU_VERSION=1.17`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `FRIENDICA_SYSLOG_FLAGS=39`
