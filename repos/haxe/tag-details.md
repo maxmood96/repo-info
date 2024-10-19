@@ -91,7 +91,7 @@
 ## `haxe:4.0`
 
 ```console
-$ docker pull haxe@sha256:ba9c49170274dd97684f0688650493fa6801704b0489f7df23490df69840f0ca
+$ docker pull haxe@sha256:e301f87b4cbe38c79839fd5741faf9f702d265a4a27e3067554af6c9ccbb713b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -278,24 +278,24 @@ $ docker pull haxe@sha256:cb24d3e5517525be21bc5be1398ba7d4effa2a1b72ec5a5a3040d6
 ### `haxe:4.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:be999f64185d418a9bf4217f8e1605135131921b0b33d3d626ff588b4cc4615e
+$ docker pull haxe@sha256:82892b46724c8a3bdd9ba7fc7f5682d0dbb11dd7b199f249cbbdd0e780b12757
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.2 MB (138192705 bytes)**  
+-	Total Size: **138.2 MB (138188354 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8dfc5220caf40b18df74982fe9338af462183fe491cdee79d9af9bd50d282b20`
+-	Image ID: `sha256:697f52647a84f63a28b9543a259a0a86a609cad51cdd5094eac90aad8ae23b28`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 ADD file:bfb52ce9788d517977c9e84dad795a6adb46efc0e8eff88853137b783826c104 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 28 Apr 2023 21:58:08 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -319,45 +319,45 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:181aac8447b7f0be083cdefe7039dafbc9a5e8c0a2c94de7b46d053e538a50d8`  
-		Last Modified: Thu, 17 Oct 2024 04:37:01 GMT  
-		Size: 15.8 MB (15750225 bytes)  
+	-	`sha256:1deb2c2ef23607994f7238c8d97d113f5ebd868b8eb64a0c10d2e0983f036a39`  
+		Last Modified: Sat, 19 Oct 2024 01:11:09 GMT  
+		Size: 15.7 MB (15747789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0134077e35514883cdc89f46185c7eae106a74a0895bfbc1494fdde44310f977`  
-		Last Modified: Thu, 17 Oct 2024 04:37:14 GMT  
-		Size: 54.8 MB (54834752 bytes)  
+	-	`sha256:3fbc6072bf5318ca0f9f250b4fcc6254d92483650689f0b0d77274be187abd96`  
+		Last Modified: Sat, 19 Oct 2024 05:18:19 GMT  
+		Size: 54.8 MB (54832658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f4a185a83060073d1301da6c7e95c60025d7b5b844586c3c657a6c97b9f9d60`  
-		Last Modified: Thu, 17 Oct 2024 13:07:06 GMT  
-		Size: 1.1 MB (1138079 bytes)  
+	-	`sha256:5955ef971102681df0f4349060228f659ebd2cc23337abdae99bc1e7423ca7b8`  
+		Last Modified: Sat, 19 Oct 2024 08:03:49 GMT  
+		Size: 1.1 MB (1138172 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17a0e41780e8a55ef601b0e1448454545c8601f3c8b4017341be31ecc1339534`  
-		Last Modified: Thu, 17 Oct 2024 13:07:07 GMT  
-		Size: 1.5 MB (1453018 bytes)  
+	-	`sha256:d2d8024b2cbc9f7cec11d2d15ac6d29ae73c833447beb1f4d76fdd4d99adc3f9`  
+		Last Modified: Sat, 19 Oct 2024 08:03:49 GMT  
+		Size: 1.5 MB (1453079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f79f6d49726532635d2e955b3458198311558c34ba4cf8a0c20708974a0d8325`  
-		Last Modified: Thu, 17 Oct 2024 13:07:07 GMT  
-		Size: 11.3 MB (11281736 bytes)  
+	-	`sha256:ba249f39ef95eed6af7625528ed73c553d9cfd7e752bed66f537b11dc4ac586b`  
+		Last Modified: Sat, 19 Oct 2024 08:03:50 GMT  
+		Size: 11.3 MB (11281761 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:5b510b4276fe2cb90ac17ff269b6a6f9aff3dda24928c469b1500a15de8836d7
+$ docker pull haxe@sha256:0acfed64ed5b467cad64c7cbf857ec68a3d1440e8a82c5e890aedfca904639e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.0 KB (19031 bytes)**  
+-	Total Size: **19.2 KB (19164 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63c7d2082bc9920ce25a4bdf73d0e2191aab54348730738098273ef5beac68c6`
+-	Image ID: `sha256:ce69b0f5873244fa6569377702a073adcc63e87a149b41b2842c58cba19ef60e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b8b46ff10c0260665b9f5d746c4a3e4d3e6eb53b31d61c2afc58aaf9846d32ed`  
-		Last Modified: Thu, 17 Oct 2024 13:07:06 GMT  
-		Size: 19.0 KB (19031 bytes)  
+	-	`sha256:62e3c37b70d4b6445878481b0b8489bdd9c9708a62b26daae7aaa2ea217d0249`  
+		Last Modified: Sat, 19 Oct 2024 08:03:49 GMT  
+		Size: 19.2 KB (19164 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.0` - windows version 10.0.20348.2762; amd64
@@ -1376,7 +1376,7 @@ $ docker pull haxe@sha256:ba3392af5f8cb56a17a2cc906cdf1404cc28bcfb4dc76fe07eea38
 ## `haxe:4.0-bullseye`
 
 ```console
-$ docker pull haxe@sha256:f806e18d0029649baac7d230c83a1cf1a2865aa34fff918ef13c2872f6ac9598
+$ docker pull haxe@sha256:bfe8af4af1aa13324f50adbdc0bf7dfb7e01c31bead0aeda2b2d1bf5b577b61f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1561,24 +1561,24 @@ $ docker pull haxe@sha256:cb24d3e5517525be21bc5be1398ba7d4effa2a1b72ec5a5a3040d6
 ### `haxe:4.0-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:be999f64185d418a9bf4217f8e1605135131921b0b33d3d626ff588b4cc4615e
+$ docker pull haxe@sha256:82892b46724c8a3bdd9ba7fc7f5682d0dbb11dd7b199f249cbbdd0e780b12757
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.2 MB (138192705 bytes)**  
+-	Total Size: **138.2 MB (138188354 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8dfc5220caf40b18df74982fe9338af462183fe491cdee79d9af9bd50d282b20`
+-	Image ID: `sha256:697f52647a84f63a28b9543a259a0a86a609cad51cdd5094eac90aad8ae23b28`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 ADD file:bfb52ce9788d517977c9e84dad795a6adb46efc0e8eff88853137b783826c104 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 28 Apr 2023 21:58:08 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -1602,45 +1602,45 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:181aac8447b7f0be083cdefe7039dafbc9a5e8c0a2c94de7b46d053e538a50d8`  
-		Last Modified: Thu, 17 Oct 2024 04:37:01 GMT  
-		Size: 15.8 MB (15750225 bytes)  
+	-	`sha256:1deb2c2ef23607994f7238c8d97d113f5ebd868b8eb64a0c10d2e0983f036a39`  
+		Last Modified: Sat, 19 Oct 2024 01:11:09 GMT  
+		Size: 15.7 MB (15747789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0134077e35514883cdc89f46185c7eae106a74a0895bfbc1494fdde44310f977`  
-		Last Modified: Thu, 17 Oct 2024 04:37:14 GMT  
-		Size: 54.8 MB (54834752 bytes)  
+	-	`sha256:3fbc6072bf5318ca0f9f250b4fcc6254d92483650689f0b0d77274be187abd96`  
+		Last Modified: Sat, 19 Oct 2024 05:18:19 GMT  
+		Size: 54.8 MB (54832658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f4a185a83060073d1301da6c7e95c60025d7b5b844586c3c657a6c97b9f9d60`  
-		Last Modified: Thu, 17 Oct 2024 13:07:06 GMT  
-		Size: 1.1 MB (1138079 bytes)  
+	-	`sha256:5955ef971102681df0f4349060228f659ebd2cc23337abdae99bc1e7423ca7b8`  
+		Last Modified: Sat, 19 Oct 2024 08:03:49 GMT  
+		Size: 1.1 MB (1138172 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17a0e41780e8a55ef601b0e1448454545c8601f3c8b4017341be31ecc1339534`  
-		Last Modified: Thu, 17 Oct 2024 13:07:07 GMT  
-		Size: 1.5 MB (1453018 bytes)  
+	-	`sha256:d2d8024b2cbc9f7cec11d2d15ac6d29ae73c833447beb1f4d76fdd4d99adc3f9`  
+		Last Modified: Sat, 19 Oct 2024 08:03:49 GMT  
+		Size: 1.5 MB (1453079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f79f6d49726532635d2e955b3458198311558c34ba4cf8a0c20708974a0d8325`  
-		Last Modified: Thu, 17 Oct 2024 13:07:07 GMT  
-		Size: 11.3 MB (11281736 bytes)  
+	-	`sha256:ba249f39ef95eed6af7625528ed73c553d9cfd7e752bed66f537b11dc4ac586b`  
+		Last Modified: Sat, 19 Oct 2024 08:03:50 GMT  
+		Size: 11.3 MB (11281761 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:5b510b4276fe2cb90ac17ff269b6a6f9aff3dda24928c469b1500a15de8836d7
+$ docker pull haxe@sha256:0acfed64ed5b467cad64c7cbf857ec68a3d1440e8a82c5e890aedfca904639e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.0 KB (19031 bytes)**  
+-	Total Size: **19.2 KB (19164 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63c7d2082bc9920ce25a4bdf73d0e2191aab54348730738098273ef5beac68c6`
+-	Image ID: `sha256:ce69b0f5873244fa6569377702a073adcc63e87a149b41b2842c58cba19ef60e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b8b46ff10c0260665b9f5d746c4a3e4d3e6eb53b31d61c2afc58aaf9846d32ed`  
-		Last Modified: Thu, 17 Oct 2024 13:07:06 GMT  
-		Size: 19.0 KB (19031 bytes)  
+	-	`sha256:62e3c37b70d4b6445878481b0b8489bdd9c9708a62b26daae7aaa2ea217d0249`  
+		Last Modified: Sat, 19 Oct 2024 08:03:49 GMT  
+		Size: 19.2 KB (19164 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.0-windowsservercore`
@@ -2233,7 +2233,7 @@ CMD ["haxe"]
 ## `haxe:4.0.5`
 
 ```console
-$ docker pull haxe@sha256:ba9c49170274dd97684f0688650493fa6801704b0489f7df23490df69840f0ca
+$ docker pull haxe@sha256:e301f87b4cbe38c79839fd5741faf9f702d265a4a27e3067554af6c9ccbb713b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2420,24 +2420,24 @@ $ docker pull haxe@sha256:cb24d3e5517525be21bc5be1398ba7d4effa2a1b72ec5a5a3040d6
 ### `haxe:4.0.5` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:be999f64185d418a9bf4217f8e1605135131921b0b33d3d626ff588b4cc4615e
+$ docker pull haxe@sha256:82892b46724c8a3bdd9ba7fc7f5682d0dbb11dd7b199f249cbbdd0e780b12757
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.2 MB (138192705 bytes)**  
+-	Total Size: **138.2 MB (138188354 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8dfc5220caf40b18df74982fe9338af462183fe491cdee79d9af9bd50d282b20`
+-	Image ID: `sha256:697f52647a84f63a28b9543a259a0a86a609cad51cdd5094eac90aad8ae23b28`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 ADD file:bfb52ce9788d517977c9e84dad795a6adb46efc0e8eff88853137b783826c104 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 28 Apr 2023 21:58:08 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -2461,45 +2461,45 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:181aac8447b7f0be083cdefe7039dafbc9a5e8c0a2c94de7b46d053e538a50d8`  
-		Last Modified: Thu, 17 Oct 2024 04:37:01 GMT  
-		Size: 15.8 MB (15750225 bytes)  
+	-	`sha256:1deb2c2ef23607994f7238c8d97d113f5ebd868b8eb64a0c10d2e0983f036a39`  
+		Last Modified: Sat, 19 Oct 2024 01:11:09 GMT  
+		Size: 15.7 MB (15747789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0134077e35514883cdc89f46185c7eae106a74a0895bfbc1494fdde44310f977`  
-		Last Modified: Thu, 17 Oct 2024 04:37:14 GMT  
-		Size: 54.8 MB (54834752 bytes)  
+	-	`sha256:3fbc6072bf5318ca0f9f250b4fcc6254d92483650689f0b0d77274be187abd96`  
+		Last Modified: Sat, 19 Oct 2024 05:18:19 GMT  
+		Size: 54.8 MB (54832658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f4a185a83060073d1301da6c7e95c60025d7b5b844586c3c657a6c97b9f9d60`  
-		Last Modified: Thu, 17 Oct 2024 13:07:06 GMT  
-		Size: 1.1 MB (1138079 bytes)  
+	-	`sha256:5955ef971102681df0f4349060228f659ebd2cc23337abdae99bc1e7423ca7b8`  
+		Last Modified: Sat, 19 Oct 2024 08:03:49 GMT  
+		Size: 1.1 MB (1138172 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17a0e41780e8a55ef601b0e1448454545c8601f3c8b4017341be31ecc1339534`  
-		Last Modified: Thu, 17 Oct 2024 13:07:07 GMT  
-		Size: 1.5 MB (1453018 bytes)  
+	-	`sha256:d2d8024b2cbc9f7cec11d2d15ac6d29ae73c833447beb1f4d76fdd4d99adc3f9`  
+		Last Modified: Sat, 19 Oct 2024 08:03:49 GMT  
+		Size: 1.5 MB (1453079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f79f6d49726532635d2e955b3458198311558c34ba4cf8a0c20708974a0d8325`  
-		Last Modified: Thu, 17 Oct 2024 13:07:07 GMT  
-		Size: 11.3 MB (11281736 bytes)  
+	-	`sha256:ba249f39ef95eed6af7625528ed73c553d9cfd7e752bed66f537b11dc4ac586b`  
+		Last Modified: Sat, 19 Oct 2024 08:03:50 GMT  
+		Size: 11.3 MB (11281761 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0.5` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:5b510b4276fe2cb90ac17ff269b6a6f9aff3dda24928c469b1500a15de8836d7
+$ docker pull haxe@sha256:0acfed64ed5b467cad64c7cbf857ec68a3d1440e8a82c5e890aedfca904639e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.0 KB (19031 bytes)**  
+-	Total Size: **19.2 KB (19164 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63c7d2082bc9920ce25a4bdf73d0e2191aab54348730738098273ef5beac68c6`
+-	Image ID: `sha256:ce69b0f5873244fa6569377702a073adcc63e87a149b41b2842c58cba19ef60e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b8b46ff10c0260665b9f5d746c4a3e4d3e6eb53b31d61c2afc58aaf9846d32ed`  
-		Last Modified: Thu, 17 Oct 2024 13:07:06 GMT  
-		Size: 19.0 KB (19031 bytes)  
+	-	`sha256:62e3c37b70d4b6445878481b0b8489bdd9c9708a62b26daae7aaa2ea217d0249`  
+		Last Modified: Sat, 19 Oct 2024 08:03:49 GMT  
+		Size: 19.2 KB (19164 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.0.5` - windows version 10.0.20348.2762; amd64
@@ -3518,7 +3518,7 @@ $ docker pull haxe@sha256:ba3392af5f8cb56a17a2cc906cdf1404cc28bcfb4dc76fe07eea38
 ## `haxe:4.0.5-bullseye`
 
 ```console
-$ docker pull haxe@sha256:f806e18d0029649baac7d230c83a1cf1a2865aa34fff918ef13c2872f6ac9598
+$ docker pull haxe@sha256:bfe8af4af1aa13324f50adbdc0bf7dfb7e01c31bead0aeda2b2d1bf5b577b61f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3703,24 +3703,24 @@ $ docker pull haxe@sha256:cb24d3e5517525be21bc5be1398ba7d4effa2a1b72ec5a5a3040d6
 ### `haxe:4.0.5-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:be999f64185d418a9bf4217f8e1605135131921b0b33d3d626ff588b4cc4615e
+$ docker pull haxe@sha256:82892b46724c8a3bdd9ba7fc7f5682d0dbb11dd7b199f249cbbdd0e780b12757
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.2 MB (138192705 bytes)**  
+-	Total Size: **138.2 MB (138188354 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8dfc5220caf40b18df74982fe9338af462183fe491cdee79d9af9bd50d282b20`
+-	Image ID: `sha256:697f52647a84f63a28b9543a259a0a86a609cad51cdd5094eac90aad8ae23b28`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 ADD file:bfb52ce9788d517977c9e84dad795a6adb46efc0e8eff88853137b783826c104 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 28 Apr 2023 21:58:08 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -3744,45 +3744,45 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:181aac8447b7f0be083cdefe7039dafbc9a5e8c0a2c94de7b46d053e538a50d8`  
-		Last Modified: Thu, 17 Oct 2024 04:37:01 GMT  
-		Size: 15.8 MB (15750225 bytes)  
+	-	`sha256:1deb2c2ef23607994f7238c8d97d113f5ebd868b8eb64a0c10d2e0983f036a39`  
+		Last Modified: Sat, 19 Oct 2024 01:11:09 GMT  
+		Size: 15.7 MB (15747789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0134077e35514883cdc89f46185c7eae106a74a0895bfbc1494fdde44310f977`  
-		Last Modified: Thu, 17 Oct 2024 04:37:14 GMT  
-		Size: 54.8 MB (54834752 bytes)  
+	-	`sha256:3fbc6072bf5318ca0f9f250b4fcc6254d92483650689f0b0d77274be187abd96`  
+		Last Modified: Sat, 19 Oct 2024 05:18:19 GMT  
+		Size: 54.8 MB (54832658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f4a185a83060073d1301da6c7e95c60025d7b5b844586c3c657a6c97b9f9d60`  
-		Last Modified: Thu, 17 Oct 2024 13:07:06 GMT  
-		Size: 1.1 MB (1138079 bytes)  
+	-	`sha256:5955ef971102681df0f4349060228f659ebd2cc23337abdae99bc1e7423ca7b8`  
+		Last Modified: Sat, 19 Oct 2024 08:03:49 GMT  
+		Size: 1.1 MB (1138172 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17a0e41780e8a55ef601b0e1448454545c8601f3c8b4017341be31ecc1339534`  
-		Last Modified: Thu, 17 Oct 2024 13:07:07 GMT  
-		Size: 1.5 MB (1453018 bytes)  
+	-	`sha256:d2d8024b2cbc9f7cec11d2d15ac6d29ae73c833447beb1f4d76fdd4d99adc3f9`  
+		Last Modified: Sat, 19 Oct 2024 08:03:49 GMT  
+		Size: 1.5 MB (1453079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f79f6d49726532635d2e955b3458198311558c34ba4cf8a0c20708974a0d8325`  
-		Last Modified: Thu, 17 Oct 2024 13:07:07 GMT  
-		Size: 11.3 MB (11281736 bytes)  
+	-	`sha256:ba249f39ef95eed6af7625528ed73c553d9cfd7e752bed66f537b11dc4ac586b`  
+		Last Modified: Sat, 19 Oct 2024 08:03:50 GMT  
+		Size: 11.3 MB (11281761 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.0.5-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:5b510b4276fe2cb90ac17ff269b6a6f9aff3dda24928c469b1500a15de8836d7
+$ docker pull haxe@sha256:0acfed64ed5b467cad64c7cbf857ec68a3d1440e8a82c5e890aedfca904639e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.0 KB (19031 bytes)**  
+-	Total Size: **19.2 KB (19164 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:63c7d2082bc9920ce25a4bdf73d0e2191aab54348730738098273ef5beac68c6`
+-	Image ID: `sha256:ce69b0f5873244fa6569377702a073adcc63e87a149b41b2842c58cba19ef60e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b8b46ff10c0260665b9f5d746c4a3e4d3e6eb53b31d61c2afc58aaf9846d32ed`  
-		Last Modified: Thu, 17 Oct 2024 13:07:06 GMT  
-		Size: 19.0 KB (19031 bytes)  
+	-	`sha256:62e3c37b70d4b6445878481b0b8489bdd9c9708a62b26daae7aaa2ea217d0249`  
+		Last Modified: Sat, 19 Oct 2024 08:03:49 GMT  
+		Size: 19.2 KB (19164 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.0.5-windowsservercore`
@@ -4375,7 +4375,7 @@ CMD ["haxe"]
 ## `haxe:4.1`
 
 ```console
-$ docker pull haxe@sha256:9f00530a243fe73ba81ac41dd7a1eb1ba742b48e7da0dd68e6af9bce1fd75403
+$ docker pull haxe@sha256:02d1a66d2436fa26e9ae10ae8cb0f5436b23c240d124b5b89cbbb5ad47cc3618
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4562,24 +4562,24 @@ $ docker pull haxe@sha256:c0e0d44fed8c4cef5cee5c68d8552658ad904d8e056243ff618c73
 ### `haxe:4.1` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f392b58c5f5b33d9f75ef8e345a545a55da3cb7980559b2be04b67784307ce54
+$ docker pull haxe@sha256:4c758fdd5ca93a762b0fe7f88d0629c3ae5ccae7a50dba91acfb2bbf76dc5f83
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.4 MB (138392375 bytes)**  
+-	Total Size: **138.4 MB (138387989 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:26331b87a613076a23583b8629d9c850a3cc60568325d10d3666ccfd09628934`
+-	Image ID: `sha256:386d01a8e8394c5b60c177bfcbf370379f269032383ba325b0a4c5b45be6308c`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 ADD file:bfb52ce9788d517977c9e84dad795a6adb46efc0e8eff88853137b783826c104 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 28 Apr 2023 21:58:08 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -4603,45 +4603,45 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:181aac8447b7f0be083cdefe7039dafbc9a5e8c0a2c94de7b46d053e538a50d8`  
-		Last Modified: Thu, 17 Oct 2024 04:37:01 GMT  
-		Size: 15.8 MB (15750225 bytes)  
+	-	`sha256:1deb2c2ef23607994f7238c8d97d113f5ebd868b8eb64a0c10d2e0983f036a39`  
+		Last Modified: Sat, 19 Oct 2024 01:11:09 GMT  
+		Size: 15.7 MB (15747789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0134077e35514883cdc89f46185c7eae106a74a0895bfbc1494fdde44310f977`  
-		Last Modified: Thu, 17 Oct 2024 04:37:14 GMT  
-		Size: 54.8 MB (54834752 bytes)  
+	-	`sha256:3fbc6072bf5318ca0f9f250b4fcc6254d92483650689f0b0d77274be187abd96`  
+		Last Modified: Sat, 19 Oct 2024 05:18:19 GMT  
+		Size: 54.8 MB (54832658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4938cb4e586d3233aadc43fb21dce78bcaffdc85846a85035610fb5c6ac0c15`  
-		Last Modified: Thu, 17 Oct 2024 13:02:25 GMT  
-		Size: 1.1 MB (1138067 bytes)  
+	-	`sha256:a053229ab65ae5ea349dd4c35fec35910ce7cb0c9d958f69e72cf046474e3bc8`  
+		Last Modified: Sat, 19 Oct 2024 07:58:48 GMT  
+		Size: 1.1 MB (1138149 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3dc5f3c13caf52ba8a3e73deeff733445b05ec003231412c52c2f89dede06e6d`  
-		Last Modified: Thu, 17 Oct 2024 13:02:25 GMT  
-		Size: 1.5 MB (1452986 bytes)  
+	-	`sha256:8a436322767a956b6b6fa2222e33ffe73b5c354e3be6cdce6629c209b020630d`  
+		Last Modified: Sat, 19 Oct 2024 07:58:49 GMT  
+		Size: 1.5 MB (1453024 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:399d112ed624bd53c209318bfdbf10ea03b09d80651b0a01e505da8ee21a928e`  
-		Last Modified: Thu, 17 Oct 2024 13:02:26 GMT  
-		Size: 11.5 MB (11481450 bytes)  
+	-	`sha256:5603fb97f1641e414f6a0e0f32e13ffd5f9bb16db6e77ed9eeb23f393a0b4552`  
+		Last Modified: Sat, 19 Oct 2024 07:58:49 GMT  
+		Size: 11.5 MB (11481474 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:c33bf97815eaf8fb1ef8c26d5adaea8461be28c3c6971b1e0aa75f86d44d9cf4
+$ docker pull haxe@sha256:7fb35d827142762e640225f75ae57d595e971a3ed3e56ce11c6c6c1167510420
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.0 KB (19031 bytes)**  
+-	Total Size: **19.2 KB (19164 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:81874fbce13ea6a155a7716a52e6e99e47dac48d585db7d362c84f8bbaf3b488`
+-	Image ID: `sha256:7a4bde030a2d824a6fb29903016ac455c3e288809333b4cf382a41730ee6bc1c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:aea956cc089b27bdd2f347531cf38640b9214e9036fb0ead232e2ccceec55d53`  
-		Last Modified: Thu, 17 Oct 2024 13:02:25 GMT  
-		Size: 19.0 KB (19031 bytes)  
+	-	`sha256:a1a3fc16358a3b50c3a398c9999eb88841df8b7a357614ce21c928f3ceba2d91`  
+		Last Modified: Sat, 19 Oct 2024 07:58:48 GMT  
+		Size: 19.2 KB (19164 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.1` - windows version 10.0.20348.2762; amd64
@@ -5660,7 +5660,7 @@ $ docker pull haxe@sha256:2b1f5236e69786a86f7d3c5e929ef2f598e8bd787aff0d21841bd1
 ## `haxe:4.1-bullseye`
 
 ```console
-$ docker pull haxe@sha256:12eb801c2c6735d6255bf6b677ea3036f3f5daa117d3b4bc5c732ef6920e262c
+$ docker pull haxe@sha256:c310e8a7d36e22187dd09592190d2e3fe26722c865d495975ebb526d6c29de9d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5845,24 +5845,24 @@ $ docker pull haxe@sha256:c0e0d44fed8c4cef5cee5c68d8552658ad904d8e056243ff618c73
 ### `haxe:4.1-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f392b58c5f5b33d9f75ef8e345a545a55da3cb7980559b2be04b67784307ce54
+$ docker pull haxe@sha256:4c758fdd5ca93a762b0fe7f88d0629c3ae5ccae7a50dba91acfb2bbf76dc5f83
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.4 MB (138392375 bytes)**  
+-	Total Size: **138.4 MB (138387989 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:26331b87a613076a23583b8629d9c850a3cc60568325d10d3666ccfd09628934`
+-	Image ID: `sha256:386d01a8e8394c5b60c177bfcbf370379f269032383ba325b0a4c5b45be6308c`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 ADD file:bfb52ce9788d517977c9e84dad795a6adb46efc0e8eff88853137b783826c104 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 28 Apr 2023 21:58:08 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -5886,45 +5886,45 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:181aac8447b7f0be083cdefe7039dafbc9a5e8c0a2c94de7b46d053e538a50d8`  
-		Last Modified: Thu, 17 Oct 2024 04:37:01 GMT  
-		Size: 15.8 MB (15750225 bytes)  
+	-	`sha256:1deb2c2ef23607994f7238c8d97d113f5ebd868b8eb64a0c10d2e0983f036a39`  
+		Last Modified: Sat, 19 Oct 2024 01:11:09 GMT  
+		Size: 15.7 MB (15747789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0134077e35514883cdc89f46185c7eae106a74a0895bfbc1494fdde44310f977`  
-		Last Modified: Thu, 17 Oct 2024 04:37:14 GMT  
-		Size: 54.8 MB (54834752 bytes)  
+	-	`sha256:3fbc6072bf5318ca0f9f250b4fcc6254d92483650689f0b0d77274be187abd96`  
+		Last Modified: Sat, 19 Oct 2024 05:18:19 GMT  
+		Size: 54.8 MB (54832658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4938cb4e586d3233aadc43fb21dce78bcaffdc85846a85035610fb5c6ac0c15`  
-		Last Modified: Thu, 17 Oct 2024 13:02:25 GMT  
-		Size: 1.1 MB (1138067 bytes)  
+	-	`sha256:a053229ab65ae5ea349dd4c35fec35910ce7cb0c9d958f69e72cf046474e3bc8`  
+		Last Modified: Sat, 19 Oct 2024 07:58:48 GMT  
+		Size: 1.1 MB (1138149 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3dc5f3c13caf52ba8a3e73deeff733445b05ec003231412c52c2f89dede06e6d`  
-		Last Modified: Thu, 17 Oct 2024 13:02:25 GMT  
-		Size: 1.5 MB (1452986 bytes)  
+	-	`sha256:8a436322767a956b6b6fa2222e33ffe73b5c354e3be6cdce6629c209b020630d`  
+		Last Modified: Sat, 19 Oct 2024 07:58:49 GMT  
+		Size: 1.5 MB (1453024 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:399d112ed624bd53c209318bfdbf10ea03b09d80651b0a01e505da8ee21a928e`  
-		Last Modified: Thu, 17 Oct 2024 13:02:26 GMT  
-		Size: 11.5 MB (11481450 bytes)  
+	-	`sha256:5603fb97f1641e414f6a0e0f32e13ffd5f9bb16db6e77ed9eeb23f393a0b4552`  
+		Last Modified: Sat, 19 Oct 2024 07:58:49 GMT  
+		Size: 11.5 MB (11481474 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:c33bf97815eaf8fb1ef8c26d5adaea8461be28c3c6971b1e0aa75f86d44d9cf4
+$ docker pull haxe@sha256:7fb35d827142762e640225f75ae57d595e971a3ed3e56ce11c6c6c1167510420
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.0 KB (19031 bytes)**  
+-	Total Size: **19.2 KB (19164 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:81874fbce13ea6a155a7716a52e6e99e47dac48d585db7d362c84f8bbaf3b488`
+-	Image ID: `sha256:7a4bde030a2d824a6fb29903016ac455c3e288809333b4cf382a41730ee6bc1c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:aea956cc089b27bdd2f347531cf38640b9214e9036fb0ead232e2ccceec55d53`  
-		Last Modified: Thu, 17 Oct 2024 13:02:25 GMT  
-		Size: 19.0 KB (19031 bytes)  
+	-	`sha256:a1a3fc16358a3b50c3a398c9999eb88841df8b7a357614ce21c928f3ceba2d91`  
+		Last Modified: Sat, 19 Oct 2024 07:58:48 GMT  
+		Size: 19.2 KB (19164 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.1-windowsservercore`
@@ -6517,7 +6517,7 @@ CMD ["haxe"]
 ## `haxe:4.1.5`
 
 ```console
-$ docker pull haxe@sha256:9f00530a243fe73ba81ac41dd7a1eb1ba742b48e7da0dd68e6af9bce1fd75403
+$ docker pull haxe@sha256:02d1a66d2436fa26e9ae10ae8cb0f5436b23c240d124b5b89cbbb5ad47cc3618
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6704,24 +6704,24 @@ $ docker pull haxe@sha256:c0e0d44fed8c4cef5cee5c68d8552658ad904d8e056243ff618c73
 ### `haxe:4.1.5` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f392b58c5f5b33d9f75ef8e345a545a55da3cb7980559b2be04b67784307ce54
+$ docker pull haxe@sha256:4c758fdd5ca93a762b0fe7f88d0629c3ae5ccae7a50dba91acfb2bbf76dc5f83
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.4 MB (138392375 bytes)**  
+-	Total Size: **138.4 MB (138387989 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:26331b87a613076a23583b8629d9c850a3cc60568325d10d3666ccfd09628934`
+-	Image ID: `sha256:386d01a8e8394c5b60c177bfcbf370379f269032383ba325b0a4c5b45be6308c`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 ADD file:bfb52ce9788d517977c9e84dad795a6adb46efc0e8eff88853137b783826c104 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 28 Apr 2023 21:58:08 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -6745,45 +6745,45 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:181aac8447b7f0be083cdefe7039dafbc9a5e8c0a2c94de7b46d053e538a50d8`  
-		Last Modified: Thu, 17 Oct 2024 04:37:01 GMT  
-		Size: 15.8 MB (15750225 bytes)  
+	-	`sha256:1deb2c2ef23607994f7238c8d97d113f5ebd868b8eb64a0c10d2e0983f036a39`  
+		Last Modified: Sat, 19 Oct 2024 01:11:09 GMT  
+		Size: 15.7 MB (15747789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0134077e35514883cdc89f46185c7eae106a74a0895bfbc1494fdde44310f977`  
-		Last Modified: Thu, 17 Oct 2024 04:37:14 GMT  
-		Size: 54.8 MB (54834752 bytes)  
+	-	`sha256:3fbc6072bf5318ca0f9f250b4fcc6254d92483650689f0b0d77274be187abd96`  
+		Last Modified: Sat, 19 Oct 2024 05:18:19 GMT  
+		Size: 54.8 MB (54832658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4938cb4e586d3233aadc43fb21dce78bcaffdc85846a85035610fb5c6ac0c15`  
-		Last Modified: Thu, 17 Oct 2024 13:02:25 GMT  
-		Size: 1.1 MB (1138067 bytes)  
+	-	`sha256:a053229ab65ae5ea349dd4c35fec35910ce7cb0c9d958f69e72cf046474e3bc8`  
+		Last Modified: Sat, 19 Oct 2024 07:58:48 GMT  
+		Size: 1.1 MB (1138149 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3dc5f3c13caf52ba8a3e73deeff733445b05ec003231412c52c2f89dede06e6d`  
-		Last Modified: Thu, 17 Oct 2024 13:02:25 GMT  
-		Size: 1.5 MB (1452986 bytes)  
+	-	`sha256:8a436322767a956b6b6fa2222e33ffe73b5c354e3be6cdce6629c209b020630d`  
+		Last Modified: Sat, 19 Oct 2024 07:58:49 GMT  
+		Size: 1.5 MB (1453024 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:399d112ed624bd53c209318bfdbf10ea03b09d80651b0a01e505da8ee21a928e`  
-		Last Modified: Thu, 17 Oct 2024 13:02:26 GMT  
-		Size: 11.5 MB (11481450 bytes)  
+	-	`sha256:5603fb97f1641e414f6a0e0f32e13ffd5f9bb16db6e77ed9eeb23f393a0b4552`  
+		Last Modified: Sat, 19 Oct 2024 07:58:49 GMT  
+		Size: 11.5 MB (11481474 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1.5` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:c33bf97815eaf8fb1ef8c26d5adaea8461be28c3c6971b1e0aa75f86d44d9cf4
+$ docker pull haxe@sha256:7fb35d827142762e640225f75ae57d595e971a3ed3e56ce11c6c6c1167510420
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.0 KB (19031 bytes)**  
+-	Total Size: **19.2 KB (19164 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:81874fbce13ea6a155a7716a52e6e99e47dac48d585db7d362c84f8bbaf3b488`
+-	Image ID: `sha256:7a4bde030a2d824a6fb29903016ac455c3e288809333b4cf382a41730ee6bc1c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:aea956cc089b27bdd2f347531cf38640b9214e9036fb0ead232e2ccceec55d53`  
-		Last Modified: Thu, 17 Oct 2024 13:02:25 GMT  
-		Size: 19.0 KB (19031 bytes)  
+	-	`sha256:a1a3fc16358a3b50c3a398c9999eb88841df8b7a357614ce21c928f3ceba2d91`  
+		Last Modified: Sat, 19 Oct 2024 07:58:48 GMT  
+		Size: 19.2 KB (19164 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.1.5` - windows version 10.0.20348.2762; amd64
@@ -7802,7 +7802,7 @@ $ docker pull haxe@sha256:2b1f5236e69786a86f7d3c5e929ef2f598e8bd787aff0d21841bd1
 ## `haxe:4.1.5-bullseye`
 
 ```console
-$ docker pull haxe@sha256:12eb801c2c6735d6255bf6b677ea3036f3f5daa117d3b4bc5c732ef6920e262c
+$ docker pull haxe@sha256:c310e8a7d36e22187dd09592190d2e3fe26722c865d495975ebb526d6c29de9d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7987,24 +7987,24 @@ $ docker pull haxe@sha256:c0e0d44fed8c4cef5cee5c68d8552658ad904d8e056243ff618c73
 ### `haxe:4.1.5-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f392b58c5f5b33d9f75ef8e345a545a55da3cb7980559b2be04b67784307ce54
+$ docker pull haxe@sha256:4c758fdd5ca93a762b0fe7f88d0629c3ae5ccae7a50dba91acfb2bbf76dc5f83
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **138.4 MB (138392375 bytes)**  
+-	Total Size: **138.4 MB (138387989 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:26331b87a613076a23583b8629d9c850a3cc60568325d10d3666ccfd09628934`
+-	Image ID: `sha256:386d01a8e8394c5b60c177bfcbf370379f269032383ba325b0a4c5b45be6308c`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 ADD file:bfb52ce9788d517977c9e84dad795a6adb46efc0e8eff88853137b783826c104 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 28 Apr 2023 21:58:08 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -8028,45 +8028,45 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:181aac8447b7f0be083cdefe7039dafbc9a5e8c0a2c94de7b46d053e538a50d8`  
-		Last Modified: Thu, 17 Oct 2024 04:37:01 GMT  
-		Size: 15.8 MB (15750225 bytes)  
+	-	`sha256:1deb2c2ef23607994f7238c8d97d113f5ebd868b8eb64a0c10d2e0983f036a39`  
+		Last Modified: Sat, 19 Oct 2024 01:11:09 GMT  
+		Size: 15.7 MB (15747789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0134077e35514883cdc89f46185c7eae106a74a0895bfbc1494fdde44310f977`  
-		Last Modified: Thu, 17 Oct 2024 04:37:14 GMT  
-		Size: 54.8 MB (54834752 bytes)  
+	-	`sha256:3fbc6072bf5318ca0f9f250b4fcc6254d92483650689f0b0d77274be187abd96`  
+		Last Modified: Sat, 19 Oct 2024 05:18:19 GMT  
+		Size: 54.8 MB (54832658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4938cb4e586d3233aadc43fb21dce78bcaffdc85846a85035610fb5c6ac0c15`  
-		Last Modified: Thu, 17 Oct 2024 13:02:25 GMT  
-		Size: 1.1 MB (1138067 bytes)  
+	-	`sha256:a053229ab65ae5ea349dd4c35fec35910ce7cb0c9d958f69e72cf046474e3bc8`  
+		Last Modified: Sat, 19 Oct 2024 07:58:48 GMT  
+		Size: 1.1 MB (1138149 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3dc5f3c13caf52ba8a3e73deeff733445b05ec003231412c52c2f89dede06e6d`  
-		Last Modified: Thu, 17 Oct 2024 13:02:25 GMT  
-		Size: 1.5 MB (1452986 bytes)  
+	-	`sha256:8a436322767a956b6b6fa2222e33ffe73b5c354e3be6cdce6629c209b020630d`  
+		Last Modified: Sat, 19 Oct 2024 07:58:49 GMT  
+		Size: 1.5 MB (1453024 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:399d112ed624bd53c209318bfdbf10ea03b09d80651b0a01e505da8ee21a928e`  
-		Last Modified: Thu, 17 Oct 2024 13:02:26 GMT  
-		Size: 11.5 MB (11481450 bytes)  
+	-	`sha256:5603fb97f1641e414f6a0e0f32e13ffd5f9bb16db6e77ed9eeb23f393a0b4552`  
+		Last Modified: Sat, 19 Oct 2024 07:58:49 GMT  
+		Size: 11.5 MB (11481474 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.1.5-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:c33bf97815eaf8fb1ef8c26d5adaea8461be28c3c6971b1e0aa75f86d44d9cf4
+$ docker pull haxe@sha256:7fb35d827142762e640225f75ae57d595e971a3ed3e56ce11c6c6c1167510420
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.0 KB (19031 bytes)**  
+-	Total Size: **19.2 KB (19164 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:81874fbce13ea6a155a7716a52e6e99e47dac48d585db7d362c84f8bbaf3b488`
+-	Image ID: `sha256:7a4bde030a2d824a6fb29903016ac455c3e288809333b4cf382a41730ee6bc1c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:aea956cc089b27bdd2f347531cf38640b9214e9036fb0ead232e2ccceec55d53`  
-		Last Modified: Thu, 17 Oct 2024 13:02:25 GMT  
-		Size: 19.0 KB (19031 bytes)  
+	-	`sha256:a1a3fc16358a3b50c3a398c9999eb88841df8b7a357614ce21c928f3ceba2d91`  
+		Last Modified: Sat, 19 Oct 2024 07:58:48 GMT  
+		Size: 19.2 KB (19164 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.1.5-windowsservercore`
@@ -8659,7 +8659,7 @@ CMD ["haxe"]
 ## `haxe:4.2`
 
 ```console
-$ docker pull haxe@sha256:4979c27d6930c72d2a04502540404eb2fe575a1ea50b281a6cdf23e323506aad
+$ docker pull haxe@sha256:e0bba117d82d85c2179da7951e6fd930d45b3f185f238408ed4dae60757db95a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8846,24 +8846,24 @@ $ docker pull haxe@sha256:31670ebed88b12cbfc4d873aa6e9d9fbd9ca294b6d8276c419f89c
 ### `haxe:4.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:851634579869e71b5bb1a86b39f34f7aacc2580e9a6465001302a659e9322bd9
+$ docker pull haxe@sha256:3272ecbaf5b2e724bbaf80f59d1b05358fb85e2adcad5afd6544c034249e6253
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **403.0 MB (402973352 bytes)**  
+-	Total Size: **403.0 MB (402973671 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e3804dfdf1b5b1efe1d91414e22d7a078306bfcacf33afed4d2b34e30339398`
+-	Image ID: `sha256:798b520f00970eca98a0a89f0b66afcde2b993f8ebb5863b4ab1996d64ea3e8b`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Wed, 10 May 2023 23:29:59 GMT
 ADD file:1df819221542e236e104deb2624ffe4efd79382aed25b3ab20088becaeadad31 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Wed, 10 May 2023 23:29:59 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 10 May 2023 23:29:59 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -8887,45 +8887,45 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:19 GMT  
 		Size: 49.6 MB (49584978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:437f71cf1903685ed3f6314161e121602758f809a760d2bd2293f7cd8ce1abe1`  
-		Last Modified: Thu, 17 Oct 2024 04:36:08 GMT  
-		Size: 23.6 MB (23594190 bytes)  
+	-	`sha256:95b894d63c771a6056bc65ff25192b251413259ba7d160b0076f0f5d7975dc39`  
+		Last Modified: Sat, 19 Oct 2024 01:10:43 GMT  
+		Size: 23.6 MB (23593834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:143d0f027108dead9d56047ebcddbf6b5ce9a7d51ab49ac1eeef8590e7bd9764`  
-		Last Modified: Thu, 17 Oct 2024 04:36:24 GMT  
-		Size: 64.3 MB (64349510 bytes)  
+	-	`sha256:cb5594266b1bacf9ad6855b00d9c5c98e721001eb115218eda673e548e04fdbf`  
+		Last Modified: Sat, 19 Oct 2024 05:17:15 GMT  
+		Size: 64.4 MB (64350044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0bea5a1502164ff50a02faf2c4b01a800b3763d3c1f576a864a6aa3b9ba8344`  
-		Last Modified: Thu, 17 Oct 2024 12:54:08 GMT  
-		Size: 1.6 MB (1606873 bytes)  
+	-	`sha256:b40129be444c1fc1f541a8d4df8edf805d69bc14328a41c1c979902f0016de9d`  
+		Last Modified: Sat, 19 Oct 2024 07:49:59 GMT  
+		Size: 1.6 MB (1606668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edc4de83d971709a87876c00f0ab26c06df6be7a0c8944a8336d49be3028e62b`  
-		Last Modified: Thu, 17 Oct 2024 12:54:08 GMT  
-		Size: 1.4 MB (1419676 bytes)  
+	-	`sha256:aaf34071a33622e04b27e7b301b8c3846d9bbfce33cec5eac84460f52aa452c5`  
+		Last Modified: Sat, 19 Oct 2024 07:49:59 GMT  
+		Size: 1.4 MB (1419737 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51cf6dbb2ac69dd2c0bb5d7750811099e18d0e0716642295044c6093f057cbfa`  
-		Last Modified: Thu, 17 Oct 2024 12:54:14 GMT  
-		Size: 262.4 MB (262418125 bytes)  
+	-	`sha256:5f1178f0435cbb6d0251c6c5774007749d61b179fc7787bfb4225836c1e46d47`  
+		Last Modified: Sat, 19 Oct 2024 07:50:05 GMT  
+		Size: 262.4 MB (262418410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:6eed4aceb7dec91573eb6738bbb99b5eb1867b8cda3da11f1ca41a9ef67901c7
+$ docker pull haxe@sha256:67d43dbcbf4841906d18d1d8e6afae861a9650004db6da99fee78747f96a3a72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.0 KB (19044 bytes)**  
+-	Total Size: **19.2 KB (19178 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3848cc677053e42c06f0408cb86e9ae9f544c937fff13fec5066013707589f2f`
+-	Image ID: `sha256:7393138aa18751116de757a07c3ee925aad676330ba1d7f1ccded244ec3a3d62`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c098fcef556a1912873ce0c2cc62f0e355cf2e9ee8c0735fa26031fd6cf404bc`  
-		Last Modified: Thu, 17 Oct 2024 12:54:07 GMT  
-		Size: 19.0 KB (19044 bytes)  
+	-	`sha256:a59385f2c8609f9d979d55799a31140f1fbed0594c2d232769d85cbe37a85bc0`  
+		Last Modified: Sat, 19 Oct 2024 07:49:59 GMT  
+		Size: 19.2 KB (19178 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.2` - windows version 10.0.20348.2762; amd64
@@ -9944,7 +9944,7 @@ $ docker pull haxe@sha256:71beb89bcf18ab72995be03e7bf0a0bf2a83d6e9fd22e2a38d91ee
 ## `haxe:4.2-bookworm`
 
 ```console
-$ docker pull haxe@sha256:2aba7b10fbe44d5186bb065f6dd7a1fcddb425e88d283e848ebc6095b8b7f007
+$ docker pull haxe@sha256:846106b2c0a74840f1d10d41db6e8156d8a7eebb739dce356d4a7c43ff0a267f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10129,24 +10129,24 @@ $ docker pull haxe@sha256:31670ebed88b12cbfc4d873aa6e9d9fbd9ca294b6d8276c419f89c
 ### `haxe:4.2-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:851634579869e71b5bb1a86b39f34f7aacc2580e9a6465001302a659e9322bd9
+$ docker pull haxe@sha256:3272ecbaf5b2e724bbaf80f59d1b05358fb85e2adcad5afd6544c034249e6253
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **403.0 MB (402973352 bytes)**  
+-	Total Size: **403.0 MB (402973671 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e3804dfdf1b5b1efe1d91414e22d7a078306bfcacf33afed4d2b34e30339398`
+-	Image ID: `sha256:798b520f00970eca98a0a89f0b66afcde2b993f8ebb5863b4ab1996d64ea3e8b`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Wed, 10 May 2023 23:29:59 GMT
 ADD file:1df819221542e236e104deb2624ffe4efd79382aed25b3ab20088becaeadad31 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Wed, 10 May 2023 23:29:59 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 10 May 2023 23:29:59 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -10170,51 +10170,51 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:19 GMT  
 		Size: 49.6 MB (49584978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:437f71cf1903685ed3f6314161e121602758f809a760d2bd2293f7cd8ce1abe1`  
-		Last Modified: Thu, 17 Oct 2024 04:36:08 GMT  
-		Size: 23.6 MB (23594190 bytes)  
+	-	`sha256:95b894d63c771a6056bc65ff25192b251413259ba7d160b0076f0f5d7975dc39`  
+		Last Modified: Sat, 19 Oct 2024 01:10:43 GMT  
+		Size: 23.6 MB (23593834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:143d0f027108dead9d56047ebcddbf6b5ce9a7d51ab49ac1eeef8590e7bd9764`  
-		Last Modified: Thu, 17 Oct 2024 04:36:24 GMT  
-		Size: 64.3 MB (64349510 bytes)  
+	-	`sha256:cb5594266b1bacf9ad6855b00d9c5c98e721001eb115218eda673e548e04fdbf`  
+		Last Modified: Sat, 19 Oct 2024 05:17:15 GMT  
+		Size: 64.4 MB (64350044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0bea5a1502164ff50a02faf2c4b01a800b3763d3c1f576a864a6aa3b9ba8344`  
-		Last Modified: Thu, 17 Oct 2024 12:54:08 GMT  
-		Size: 1.6 MB (1606873 bytes)  
+	-	`sha256:b40129be444c1fc1f541a8d4df8edf805d69bc14328a41c1c979902f0016de9d`  
+		Last Modified: Sat, 19 Oct 2024 07:49:59 GMT  
+		Size: 1.6 MB (1606668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edc4de83d971709a87876c00f0ab26c06df6be7a0c8944a8336d49be3028e62b`  
-		Last Modified: Thu, 17 Oct 2024 12:54:08 GMT  
-		Size: 1.4 MB (1419676 bytes)  
+	-	`sha256:aaf34071a33622e04b27e7b301b8c3846d9bbfce33cec5eac84460f52aa452c5`  
+		Last Modified: Sat, 19 Oct 2024 07:49:59 GMT  
+		Size: 1.4 MB (1419737 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51cf6dbb2ac69dd2c0bb5d7750811099e18d0e0716642295044c6093f057cbfa`  
-		Last Modified: Thu, 17 Oct 2024 12:54:14 GMT  
-		Size: 262.4 MB (262418125 bytes)  
+	-	`sha256:5f1178f0435cbb6d0251c6c5774007749d61b179fc7787bfb4225836c1e46d47`  
+		Last Modified: Sat, 19 Oct 2024 07:50:05 GMT  
+		Size: 262.4 MB (262418410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:6eed4aceb7dec91573eb6738bbb99b5eb1867b8cda3da11f1ca41a9ef67901c7
+$ docker pull haxe@sha256:67d43dbcbf4841906d18d1d8e6afae861a9650004db6da99fee78747f96a3a72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.0 KB (19044 bytes)**  
+-	Total Size: **19.2 KB (19178 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3848cc677053e42c06f0408cb86e9ae9f544c937fff13fec5066013707589f2f`
+-	Image ID: `sha256:7393138aa18751116de757a07c3ee925aad676330ba1d7f1ccded244ec3a3d62`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c098fcef556a1912873ce0c2cc62f0e355cf2e9ee8c0735fa26031fd6cf404bc`  
-		Last Modified: Thu, 17 Oct 2024 12:54:07 GMT  
-		Size: 19.0 KB (19044 bytes)  
+	-	`sha256:a59385f2c8609f9d979d55799a31140f1fbed0594c2d232769d85cbe37a85bc0`  
+		Last Modified: Sat, 19 Oct 2024 07:49:59 GMT  
+		Size: 19.2 KB (19178 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.2-bullseye`
 
 ```console
-$ docker pull haxe@sha256:74e5b2b7edfe2b93481dd7e3aa0b605454506f74ec7f0b099fd51df2c023d869
+$ docker pull haxe@sha256:2f3d55ea33f1565791298e6c8a6a6888a262b31fcec5158414ee9a86c5dcc91f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10399,24 +10399,24 @@ $ docker pull haxe@sha256:91701a723495a6f8049168d1028cc4d1ca454918e5f016c5f9d8ce
 ### `haxe:4.2-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:490917ffd840823504d71e2f9961e28d076ee1c3307185003e5e513ef18417ac
+$ docker pull haxe@sha256:04e2558c922f987ef6d49d006092ed853ff281bf35134bde27f746ac4b739197
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **139.9 MB (139891676 bytes)**  
+-	Total Size: **139.9 MB (139887231 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:917be331acb865d3bc1719fee3a65d20eb5bd7b9fef0062f118e3620dca38b94`
+-	Image ID: `sha256:9af5967a3f5d6b986bd05a4d26969a040979e002fb92526eeb0902f3de1ac51a`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 ADD file:bfb52ce9788d517977c9e84dad795a6adb46efc0e8eff88853137b783826c104 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 28 Apr 2023 21:58:08 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -10440,45 +10440,45 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:181aac8447b7f0be083cdefe7039dafbc9a5e8c0a2c94de7b46d053e538a50d8`  
-		Last Modified: Thu, 17 Oct 2024 04:37:01 GMT  
-		Size: 15.8 MB (15750225 bytes)  
+	-	`sha256:1deb2c2ef23607994f7238c8d97d113f5ebd868b8eb64a0c10d2e0983f036a39`  
+		Last Modified: Sat, 19 Oct 2024 01:11:09 GMT  
+		Size: 15.7 MB (15747789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0134077e35514883cdc89f46185c7eae106a74a0895bfbc1494fdde44310f977`  
-		Last Modified: Thu, 17 Oct 2024 04:37:14 GMT  
-		Size: 54.8 MB (54834752 bytes)  
+	-	`sha256:3fbc6072bf5318ca0f9f250b4fcc6254d92483650689f0b0d77274be187abd96`  
+		Last Modified: Sat, 19 Oct 2024 05:18:19 GMT  
+		Size: 54.8 MB (54832658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b3ff73cff5f6087c0f2e5146bfc105cc50806c4d9bb4c11bc875445da9ec1ff`  
-		Last Modified: Thu, 17 Oct 2024 12:58:11 GMT  
-		Size: 1.1 MB (1138075 bytes)  
+	-	`sha256:c9132b0b462f3b9eddd948c69f8bb1fb03139adc6993cf791c9fd895f860d745`  
+		Last Modified: Sat, 19 Oct 2024 07:54:20 GMT  
+		Size: 1.1 MB (1138140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:769f524b48326e095a0cdab2c87d40eefd75188b8fc873da13aefacc60931146`  
-		Last Modified: Thu, 17 Oct 2024 12:58:11 GMT  
-		Size: 1.5 MB (1453040 bytes)  
+	-	`sha256:1335d9e2b5f6f2c6819efce8d8efe2adbb8192250731f10d6534a41ef4227835`  
+		Last Modified: Sat, 19 Oct 2024 07:54:20 GMT  
+		Size: 1.5 MB (1453038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de039afe153e312a1ebb39ce6f062061b3225de8998c844b6a089e7cf5315d48`  
-		Last Modified: Thu, 17 Oct 2024 12:58:12 GMT  
-		Size: 13.0 MB (12980689 bytes)  
+	-	`sha256:7c3cc7e4a04ec5577fec9bee437c6a2004bae81676a6b4cc3175d202fc32fd2d`  
+		Last Modified: Sat, 19 Oct 2024 07:54:21 GMT  
+		Size: 13.0 MB (12980711 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:5779ea732a8c45696ada6b85aebcc1fa0d99616e3c7338335de39f8c38a1d494
+$ docker pull haxe@sha256:f7a48c4ceb60fd18389a49039902b5221e10f4e247d827beba823838e45d637f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.4 KB (18427 bytes)**  
+-	Total Size: **18.6 KB (18560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b5faa080d76cb17b6268fb5bbd2c97989f88ae99562aac4165569837ec34720`
+-	Image ID: `sha256:f60fe7312362cd0d4f7122d58336443b6690285dadf2720bbe4ebe6407a10119`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4dbf281e79ccecec52df6054369f1c4a9e414bc5dbe37a9ee9ada27945ad4284`  
-		Last Modified: Thu, 17 Oct 2024 12:58:11 GMT  
-		Size: 18.4 KB (18427 bytes)  
+	-	`sha256:b03dd42cf93ab921a2f70af7129eeaa1939a9224764261b722a3cfd527e9f662`  
+		Last Modified: Sat, 19 Oct 2024 07:54:20 GMT  
+		Size: 18.6 KB (18560 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.2-windowsservercore`
@@ -11071,7 +11071,7 @@ CMD ["haxe"]
 ## `haxe:4.2.5`
 
 ```console
-$ docker pull haxe@sha256:4979c27d6930c72d2a04502540404eb2fe575a1ea50b281a6cdf23e323506aad
+$ docker pull haxe@sha256:e0bba117d82d85c2179da7951e6fd930d45b3f185f238408ed4dae60757db95a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11258,24 +11258,24 @@ $ docker pull haxe@sha256:31670ebed88b12cbfc4d873aa6e9d9fbd9ca294b6d8276c419f89c
 ### `haxe:4.2.5` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:851634579869e71b5bb1a86b39f34f7aacc2580e9a6465001302a659e9322bd9
+$ docker pull haxe@sha256:3272ecbaf5b2e724bbaf80f59d1b05358fb85e2adcad5afd6544c034249e6253
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **403.0 MB (402973352 bytes)**  
+-	Total Size: **403.0 MB (402973671 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e3804dfdf1b5b1efe1d91414e22d7a078306bfcacf33afed4d2b34e30339398`
+-	Image ID: `sha256:798b520f00970eca98a0a89f0b66afcde2b993f8ebb5863b4ab1996d64ea3e8b`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Wed, 10 May 2023 23:29:59 GMT
 ADD file:1df819221542e236e104deb2624ffe4efd79382aed25b3ab20088becaeadad31 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Wed, 10 May 2023 23:29:59 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 10 May 2023 23:29:59 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -11299,45 +11299,45 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:19 GMT  
 		Size: 49.6 MB (49584978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:437f71cf1903685ed3f6314161e121602758f809a760d2bd2293f7cd8ce1abe1`  
-		Last Modified: Thu, 17 Oct 2024 04:36:08 GMT  
-		Size: 23.6 MB (23594190 bytes)  
+	-	`sha256:95b894d63c771a6056bc65ff25192b251413259ba7d160b0076f0f5d7975dc39`  
+		Last Modified: Sat, 19 Oct 2024 01:10:43 GMT  
+		Size: 23.6 MB (23593834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:143d0f027108dead9d56047ebcddbf6b5ce9a7d51ab49ac1eeef8590e7bd9764`  
-		Last Modified: Thu, 17 Oct 2024 04:36:24 GMT  
-		Size: 64.3 MB (64349510 bytes)  
+	-	`sha256:cb5594266b1bacf9ad6855b00d9c5c98e721001eb115218eda673e548e04fdbf`  
+		Last Modified: Sat, 19 Oct 2024 05:17:15 GMT  
+		Size: 64.4 MB (64350044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0bea5a1502164ff50a02faf2c4b01a800b3763d3c1f576a864a6aa3b9ba8344`  
-		Last Modified: Thu, 17 Oct 2024 12:54:08 GMT  
-		Size: 1.6 MB (1606873 bytes)  
+	-	`sha256:b40129be444c1fc1f541a8d4df8edf805d69bc14328a41c1c979902f0016de9d`  
+		Last Modified: Sat, 19 Oct 2024 07:49:59 GMT  
+		Size: 1.6 MB (1606668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edc4de83d971709a87876c00f0ab26c06df6be7a0c8944a8336d49be3028e62b`  
-		Last Modified: Thu, 17 Oct 2024 12:54:08 GMT  
-		Size: 1.4 MB (1419676 bytes)  
+	-	`sha256:aaf34071a33622e04b27e7b301b8c3846d9bbfce33cec5eac84460f52aa452c5`  
+		Last Modified: Sat, 19 Oct 2024 07:49:59 GMT  
+		Size: 1.4 MB (1419737 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51cf6dbb2ac69dd2c0bb5d7750811099e18d0e0716642295044c6093f057cbfa`  
-		Last Modified: Thu, 17 Oct 2024 12:54:14 GMT  
-		Size: 262.4 MB (262418125 bytes)  
+	-	`sha256:5f1178f0435cbb6d0251c6c5774007749d61b179fc7787bfb4225836c1e46d47`  
+		Last Modified: Sat, 19 Oct 2024 07:50:05 GMT  
+		Size: 262.4 MB (262418410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2.5` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:6eed4aceb7dec91573eb6738bbb99b5eb1867b8cda3da11f1ca41a9ef67901c7
+$ docker pull haxe@sha256:67d43dbcbf4841906d18d1d8e6afae861a9650004db6da99fee78747f96a3a72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.0 KB (19044 bytes)**  
+-	Total Size: **19.2 KB (19178 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3848cc677053e42c06f0408cb86e9ae9f544c937fff13fec5066013707589f2f`
+-	Image ID: `sha256:7393138aa18751116de757a07c3ee925aad676330ba1d7f1ccded244ec3a3d62`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c098fcef556a1912873ce0c2cc62f0e355cf2e9ee8c0735fa26031fd6cf404bc`  
-		Last Modified: Thu, 17 Oct 2024 12:54:07 GMT  
-		Size: 19.0 KB (19044 bytes)  
+	-	`sha256:a59385f2c8609f9d979d55799a31140f1fbed0594c2d232769d85cbe37a85bc0`  
+		Last Modified: Sat, 19 Oct 2024 07:49:59 GMT  
+		Size: 19.2 KB (19178 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.2.5` - windows version 10.0.20348.2762; amd64
@@ -12356,7 +12356,7 @@ $ docker pull haxe@sha256:71beb89bcf18ab72995be03e7bf0a0bf2a83d6e9fd22e2a38d91ee
 ## `haxe:4.2.5-bookworm`
 
 ```console
-$ docker pull haxe@sha256:2aba7b10fbe44d5186bb065f6dd7a1fcddb425e88d283e848ebc6095b8b7f007
+$ docker pull haxe@sha256:846106b2c0a74840f1d10d41db6e8156d8a7eebb739dce356d4a7c43ff0a267f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12541,24 +12541,24 @@ $ docker pull haxe@sha256:31670ebed88b12cbfc4d873aa6e9d9fbd9ca294b6d8276c419f89c
 ### `haxe:4.2.5-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:851634579869e71b5bb1a86b39f34f7aacc2580e9a6465001302a659e9322bd9
+$ docker pull haxe@sha256:3272ecbaf5b2e724bbaf80f59d1b05358fb85e2adcad5afd6544c034249e6253
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **403.0 MB (402973352 bytes)**  
+-	Total Size: **403.0 MB (402973671 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6e3804dfdf1b5b1efe1d91414e22d7a078306bfcacf33afed4d2b34e30339398`
+-	Image ID: `sha256:798b520f00970eca98a0a89f0b66afcde2b993f8ebb5863b4ab1996d64ea3e8b`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Wed, 10 May 2023 23:29:59 GMT
 ADD file:1df819221542e236e104deb2624ffe4efd79382aed25b3ab20088becaeadad31 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Wed, 10 May 2023 23:29:59 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 10 May 2023 23:29:59 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -12582,51 +12582,51 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:19 GMT  
 		Size: 49.6 MB (49584978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:437f71cf1903685ed3f6314161e121602758f809a760d2bd2293f7cd8ce1abe1`  
-		Last Modified: Thu, 17 Oct 2024 04:36:08 GMT  
-		Size: 23.6 MB (23594190 bytes)  
+	-	`sha256:95b894d63c771a6056bc65ff25192b251413259ba7d160b0076f0f5d7975dc39`  
+		Last Modified: Sat, 19 Oct 2024 01:10:43 GMT  
+		Size: 23.6 MB (23593834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:143d0f027108dead9d56047ebcddbf6b5ce9a7d51ab49ac1eeef8590e7bd9764`  
-		Last Modified: Thu, 17 Oct 2024 04:36:24 GMT  
-		Size: 64.3 MB (64349510 bytes)  
+	-	`sha256:cb5594266b1bacf9ad6855b00d9c5c98e721001eb115218eda673e548e04fdbf`  
+		Last Modified: Sat, 19 Oct 2024 05:17:15 GMT  
+		Size: 64.4 MB (64350044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0bea5a1502164ff50a02faf2c4b01a800b3763d3c1f576a864a6aa3b9ba8344`  
-		Last Modified: Thu, 17 Oct 2024 12:54:08 GMT  
-		Size: 1.6 MB (1606873 bytes)  
+	-	`sha256:b40129be444c1fc1f541a8d4df8edf805d69bc14328a41c1c979902f0016de9d`  
+		Last Modified: Sat, 19 Oct 2024 07:49:59 GMT  
+		Size: 1.6 MB (1606668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:edc4de83d971709a87876c00f0ab26c06df6be7a0c8944a8336d49be3028e62b`  
-		Last Modified: Thu, 17 Oct 2024 12:54:08 GMT  
-		Size: 1.4 MB (1419676 bytes)  
+	-	`sha256:aaf34071a33622e04b27e7b301b8c3846d9bbfce33cec5eac84460f52aa452c5`  
+		Last Modified: Sat, 19 Oct 2024 07:49:59 GMT  
+		Size: 1.4 MB (1419737 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51cf6dbb2ac69dd2c0bb5d7750811099e18d0e0716642295044c6093f057cbfa`  
-		Last Modified: Thu, 17 Oct 2024 12:54:14 GMT  
-		Size: 262.4 MB (262418125 bytes)  
+	-	`sha256:5f1178f0435cbb6d0251c6c5774007749d61b179fc7787bfb4225836c1e46d47`  
+		Last Modified: Sat, 19 Oct 2024 07:50:05 GMT  
+		Size: 262.4 MB (262418410 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2.5-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:6eed4aceb7dec91573eb6738bbb99b5eb1867b8cda3da11f1ca41a9ef67901c7
+$ docker pull haxe@sha256:67d43dbcbf4841906d18d1d8e6afae861a9650004db6da99fee78747f96a3a72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.0 KB (19044 bytes)**  
+-	Total Size: **19.2 KB (19178 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3848cc677053e42c06f0408cb86e9ae9f544c937fff13fec5066013707589f2f`
+-	Image ID: `sha256:7393138aa18751116de757a07c3ee925aad676330ba1d7f1ccded244ec3a3d62`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c098fcef556a1912873ce0c2cc62f0e355cf2e9ee8c0735fa26031fd6cf404bc`  
-		Last Modified: Thu, 17 Oct 2024 12:54:07 GMT  
-		Size: 19.0 KB (19044 bytes)  
+	-	`sha256:a59385f2c8609f9d979d55799a31140f1fbed0594c2d232769d85cbe37a85bc0`  
+		Last Modified: Sat, 19 Oct 2024 07:49:59 GMT  
+		Size: 19.2 KB (19178 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.2.5-bullseye`
 
 ```console
-$ docker pull haxe@sha256:74e5b2b7edfe2b93481dd7e3aa0b605454506f74ec7f0b099fd51df2c023d869
+$ docker pull haxe@sha256:2f3d55ea33f1565791298e6c8a6a6888a262b31fcec5158414ee9a86c5dcc91f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12811,24 +12811,24 @@ $ docker pull haxe@sha256:91701a723495a6f8049168d1028cc4d1ca454918e5f016c5f9d8ce
 ### `haxe:4.2.5-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:490917ffd840823504d71e2f9961e28d076ee1c3307185003e5e513ef18417ac
+$ docker pull haxe@sha256:04e2558c922f987ef6d49d006092ed853ff281bf35134bde27f746ac4b739197
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **139.9 MB (139891676 bytes)**  
+-	Total Size: **139.9 MB (139887231 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:917be331acb865d3bc1719fee3a65d20eb5bd7b9fef0062f118e3620dca38b94`
+-	Image ID: `sha256:9af5967a3f5d6b986bd05a4d26969a040979e002fb92526eeb0902f3de1ac51a`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 ADD file:bfb52ce9788d517977c9e84dad795a6adb46efc0e8eff88853137b783826c104 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 28 Apr 2023 21:58:08 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -12852,45 +12852,45 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:181aac8447b7f0be083cdefe7039dafbc9a5e8c0a2c94de7b46d053e538a50d8`  
-		Last Modified: Thu, 17 Oct 2024 04:37:01 GMT  
-		Size: 15.8 MB (15750225 bytes)  
+	-	`sha256:1deb2c2ef23607994f7238c8d97d113f5ebd868b8eb64a0c10d2e0983f036a39`  
+		Last Modified: Sat, 19 Oct 2024 01:11:09 GMT  
+		Size: 15.7 MB (15747789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0134077e35514883cdc89f46185c7eae106a74a0895bfbc1494fdde44310f977`  
-		Last Modified: Thu, 17 Oct 2024 04:37:14 GMT  
-		Size: 54.8 MB (54834752 bytes)  
+	-	`sha256:3fbc6072bf5318ca0f9f250b4fcc6254d92483650689f0b0d77274be187abd96`  
+		Last Modified: Sat, 19 Oct 2024 05:18:19 GMT  
+		Size: 54.8 MB (54832658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b3ff73cff5f6087c0f2e5146bfc105cc50806c4d9bb4c11bc875445da9ec1ff`  
-		Last Modified: Thu, 17 Oct 2024 12:58:11 GMT  
-		Size: 1.1 MB (1138075 bytes)  
+	-	`sha256:c9132b0b462f3b9eddd948c69f8bb1fb03139adc6993cf791c9fd895f860d745`  
+		Last Modified: Sat, 19 Oct 2024 07:54:20 GMT  
+		Size: 1.1 MB (1138140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:769f524b48326e095a0cdab2c87d40eefd75188b8fc873da13aefacc60931146`  
-		Last Modified: Thu, 17 Oct 2024 12:58:11 GMT  
-		Size: 1.5 MB (1453040 bytes)  
+	-	`sha256:1335d9e2b5f6f2c6819efce8d8efe2adbb8192250731f10d6534a41ef4227835`  
+		Last Modified: Sat, 19 Oct 2024 07:54:20 GMT  
+		Size: 1.5 MB (1453038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de039afe153e312a1ebb39ce6f062061b3225de8998c844b6a089e7cf5315d48`  
-		Last Modified: Thu, 17 Oct 2024 12:58:12 GMT  
-		Size: 13.0 MB (12980689 bytes)  
+	-	`sha256:7c3cc7e4a04ec5577fec9bee437c6a2004bae81676a6b4cc3175d202fc32fd2d`  
+		Last Modified: Sat, 19 Oct 2024 07:54:21 GMT  
+		Size: 13.0 MB (12980711 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.2.5-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:5779ea732a8c45696ada6b85aebcc1fa0d99616e3c7338335de39f8c38a1d494
+$ docker pull haxe@sha256:f7a48c4ceb60fd18389a49039902b5221e10f4e247d827beba823838e45d637f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.4 KB (18427 bytes)**  
+-	Total Size: **18.6 KB (18560 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b5faa080d76cb17b6268fb5bbd2c97989f88ae99562aac4165569837ec34720`
+-	Image ID: `sha256:f60fe7312362cd0d4f7122d58336443b6690285dadf2720bbe4ebe6407a10119`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4dbf281e79ccecec52df6054369f1c4a9e414bc5dbe37a9ee9ada27945ad4284`  
-		Last Modified: Thu, 17 Oct 2024 12:58:11 GMT  
-		Size: 18.4 KB (18427 bytes)  
+	-	`sha256:b03dd42cf93ab921a2f70af7129eeaa1939a9224764261b722a3cfd527e9f662`  
+		Last Modified: Sat, 19 Oct 2024 07:54:20 GMT  
+		Size: 18.6 KB (18560 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.2.5-windowsservercore`
@@ -13483,7 +13483,7 @@ CMD ["haxe"]
 ## `haxe:4.3`
 
 ```console
-$ docker pull haxe@sha256:db2b3824aac2393bac45e139bd803751d8d776735d8bc2517a7cf9d64f6ffdf1
+$ docker pull haxe@sha256:b8a8d966ed65af91523c6f10e434b9b7ded2dda2dfacd852e1d30546c2655a37
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13670,24 +13670,24 @@ $ docker pull haxe@sha256:f161be9878228569585e5e763eb81bbd3f526d9c1b59e1702de1eb
 ### `haxe:4.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:2c0c6d9394bf0c2ae60a4b76e621bfea539ecab4b7ee8f11194aa7d65f2a2ae1
+$ docker pull haxe@sha256:1ca843d9293429fd1d5c60b0e9f5a5ceb35028a4a85fda5497668f1053962526
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **401.8 MB (401809412 bytes)**  
+-	Total Size: **401.8 MB (401809726 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:99e49f361fa5ad37b73d7d851cb693d52a69a56c8f737686d0d92720afabd699`
+-	Image ID: `sha256:a5ea92929444ab0cc6a91f9a57c27160cd2084b6c2c18aa9fbbb1d9e7a64187c`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Wed, 10 May 2023 23:29:59 GMT
 ADD file:1df819221542e236e104deb2624ffe4efd79382aed25b3ab20088becaeadad31 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Wed, 10 May 2023 23:29:59 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 10 May 2023 23:29:59 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -13711,45 +13711,45 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:19 GMT  
 		Size: 49.6 MB (49584978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:437f71cf1903685ed3f6314161e121602758f809a760d2bd2293f7cd8ce1abe1`  
-		Last Modified: Thu, 17 Oct 2024 04:36:08 GMT  
-		Size: 23.6 MB (23594190 bytes)  
+	-	`sha256:95b894d63c771a6056bc65ff25192b251413259ba7d160b0076f0f5d7975dc39`  
+		Last Modified: Sat, 19 Oct 2024 01:10:43 GMT  
+		Size: 23.6 MB (23593834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:143d0f027108dead9d56047ebcddbf6b5ce9a7d51ab49ac1eeef8590e7bd9764`  
-		Last Modified: Thu, 17 Oct 2024 04:36:24 GMT  
-		Size: 64.3 MB (64349510 bytes)  
+	-	`sha256:cb5594266b1bacf9ad6855b00d9c5c98e721001eb115218eda673e548e04fdbf`  
+		Last Modified: Sat, 19 Oct 2024 05:17:15 GMT  
+		Size: 64.4 MB (64350044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:423a1c1c3ec7d2070a58925c4ce21d699b8e1974c6369c5caa7013e0ec7497cf`  
-		Last Modified: Thu, 17 Oct 2024 12:43:54 GMT  
-		Size: 1.2 MB (1247486 bytes)  
+	-	`sha256:835141eec8d94859ac138e67537135c78d0db2425523487919e22ae8a77f9fc6`  
+		Last Modified: Sat, 19 Oct 2024 07:39:07 GMT  
+		Size: 1.2 MB (1247373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80227ba5e006d07cff6035f795610618b81052ac9dd40c5978da67544272d496`  
-		Last Modified: Thu, 17 Oct 2024 12:43:54 GMT  
-		Size: 1.4 MB (1419026 bytes)  
+	-	`sha256:8776dedd78be18e3f470d23c9ee54b34ed6d9da2ff34caf1c0674858e9996ef7`  
+		Last Modified: Sat, 19 Oct 2024 07:39:07 GMT  
+		Size: 1.4 MB (1419177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91d4ce20b5504bed735e504c48db91c7999134e81a58fcd3ad4a2351461daa4c`  
-		Last Modified: Thu, 17 Oct 2024 12:44:00 GMT  
-		Size: 261.6 MB (261614222 bytes)  
+	-	`sha256:f41561da66f3d9872c1328000fc418ea41423dd1744b28b3ec5dcfacbef83cbf`  
+		Last Modified: Sat, 19 Oct 2024 07:39:13 GMT  
+		Size: 261.6 MB (261614320 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:690d769304534dcbeb4a0d7ee0e2d87ed85274f088b4e6199e5c98d5609351fc
+$ docker pull haxe@sha256:bef98ef61276378fc7f5e5a475454130b9dd0cddfe3050dd6ba113c5be4a6f5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.3 KB (19330 bytes)**  
+-	Total Size: **19.5 KB (19463 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7deb0f4d6c80b00a5cf345cd88da6aa3cd7544d6f28d53e39db1d0ef0202c756`
+-	Image ID: `sha256:c5903f1def67602fedee6660b79a20245d351618b78b921de179aef97c6c242a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:42423a45595a7f494387303cb895c3984a57523eca2611ee9c8246679dfd2587`  
-		Last Modified: Thu, 17 Oct 2024 12:43:54 GMT  
-		Size: 19.3 KB (19330 bytes)  
+	-	`sha256:3c6a26ec1bee9bcc7d2e235f54cc4f4452c381e67c6b1cc69eba7e8c393889a9`  
+		Last Modified: Sat, 19 Oct 2024 07:39:06 GMT  
+		Size: 19.5 KB (19463 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.3` - windows version 10.0.20348.2762; amd64
@@ -14768,7 +14768,7 @@ $ docker pull haxe@sha256:5f2fb670fc9c3829d17d4b4440ec1b5ce0fecd6b5a5f35ddbdd7f3
 ## `haxe:4.3-bookworm`
 
 ```console
-$ docker pull haxe@sha256:8514ae862feeadc1df3c1ffb98bfc1b34638f2adede7a29088e6b1da1958856d
+$ docker pull haxe@sha256:e38e812af8febb0c3c23b47c9ee02a767c6f5303f5f7e5c82fac1494fc411708
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14953,24 +14953,24 @@ $ docker pull haxe@sha256:f161be9878228569585e5e763eb81bbd3f526d9c1b59e1702de1eb
 ### `haxe:4.3-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:2c0c6d9394bf0c2ae60a4b76e621bfea539ecab4b7ee8f11194aa7d65f2a2ae1
+$ docker pull haxe@sha256:1ca843d9293429fd1d5c60b0e9f5a5ceb35028a4a85fda5497668f1053962526
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **401.8 MB (401809412 bytes)**  
+-	Total Size: **401.8 MB (401809726 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:99e49f361fa5ad37b73d7d851cb693d52a69a56c8f737686d0d92720afabd699`
+-	Image ID: `sha256:a5ea92929444ab0cc6a91f9a57c27160cd2084b6c2c18aa9fbbb1d9e7a64187c`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Wed, 10 May 2023 23:29:59 GMT
 ADD file:1df819221542e236e104deb2624ffe4efd79382aed25b3ab20088becaeadad31 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Wed, 10 May 2023 23:29:59 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 10 May 2023 23:29:59 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -14994,51 +14994,51 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:19 GMT  
 		Size: 49.6 MB (49584978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:437f71cf1903685ed3f6314161e121602758f809a760d2bd2293f7cd8ce1abe1`  
-		Last Modified: Thu, 17 Oct 2024 04:36:08 GMT  
-		Size: 23.6 MB (23594190 bytes)  
+	-	`sha256:95b894d63c771a6056bc65ff25192b251413259ba7d160b0076f0f5d7975dc39`  
+		Last Modified: Sat, 19 Oct 2024 01:10:43 GMT  
+		Size: 23.6 MB (23593834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:143d0f027108dead9d56047ebcddbf6b5ce9a7d51ab49ac1eeef8590e7bd9764`  
-		Last Modified: Thu, 17 Oct 2024 04:36:24 GMT  
-		Size: 64.3 MB (64349510 bytes)  
+	-	`sha256:cb5594266b1bacf9ad6855b00d9c5c98e721001eb115218eda673e548e04fdbf`  
+		Last Modified: Sat, 19 Oct 2024 05:17:15 GMT  
+		Size: 64.4 MB (64350044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:423a1c1c3ec7d2070a58925c4ce21d699b8e1974c6369c5caa7013e0ec7497cf`  
-		Last Modified: Thu, 17 Oct 2024 12:43:54 GMT  
-		Size: 1.2 MB (1247486 bytes)  
+	-	`sha256:835141eec8d94859ac138e67537135c78d0db2425523487919e22ae8a77f9fc6`  
+		Last Modified: Sat, 19 Oct 2024 07:39:07 GMT  
+		Size: 1.2 MB (1247373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80227ba5e006d07cff6035f795610618b81052ac9dd40c5978da67544272d496`  
-		Last Modified: Thu, 17 Oct 2024 12:43:54 GMT  
-		Size: 1.4 MB (1419026 bytes)  
+	-	`sha256:8776dedd78be18e3f470d23c9ee54b34ed6d9da2ff34caf1c0674858e9996ef7`  
+		Last Modified: Sat, 19 Oct 2024 07:39:07 GMT  
+		Size: 1.4 MB (1419177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91d4ce20b5504bed735e504c48db91c7999134e81a58fcd3ad4a2351461daa4c`  
-		Last Modified: Thu, 17 Oct 2024 12:44:00 GMT  
-		Size: 261.6 MB (261614222 bytes)  
+	-	`sha256:f41561da66f3d9872c1328000fc418ea41423dd1744b28b3ec5dcfacbef83cbf`  
+		Last Modified: Sat, 19 Oct 2024 07:39:13 GMT  
+		Size: 261.6 MB (261614320 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:690d769304534dcbeb4a0d7ee0e2d87ed85274f088b4e6199e5c98d5609351fc
+$ docker pull haxe@sha256:bef98ef61276378fc7f5e5a475454130b9dd0cddfe3050dd6ba113c5be4a6f5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.3 KB (19330 bytes)**  
+-	Total Size: **19.5 KB (19463 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7deb0f4d6c80b00a5cf345cd88da6aa3cd7544d6f28d53e39db1d0ef0202c756`
+-	Image ID: `sha256:c5903f1def67602fedee6660b79a20245d351618b78b921de179aef97c6c242a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:42423a45595a7f494387303cb895c3984a57523eca2611ee9c8246679dfd2587`  
-		Last Modified: Thu, 17 Oct 2024 12:43:54 GMT  
-		Size: 19.3 KB (19330 bytes)  
+	-	`sha256:3c6a26ec1bee9bcc7d2e235f54cc4f4452c381e67c6b1cc69eba7e8c393889a9`  
+		Last Modified: Sat, 19 Oct 2024 07:39:06 GMT  
+		Size: 19.5 KB (19463 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.3-bullseye`
 
 ```console
-$ docker pull haxe@sha256:b5e89fe9d509502b29f338473e00892ccc9e8a6f03e4bd0887dbf8dde4976d06
+$ docker pull haxe@sha256:6b5609525afa7a12c384c840f5ced884afd5e58d48553e622431b50a1c1983c2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15223,24 +15223,24 @@ $ docker pull haxe@sha256:a86f783e2e18319d319e4d024e4698bb7ce1f546b069dfdaf40e15
 ### `haxe:4.3-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f49e2027039afe94817c52f7fb03a6bf07423f72bf2369e93b04e3e15046ba0d
+$ docker pull haxe@sha256:1b112e0ee86b86a6ab1983916ae01a912c71e4fb555f03a9366805cb59063070
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **140.2 MB (140190175 bytes)**  
+-	Total Size: **140.2 MB (140185862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4a85d76603980a8c1aacf5d930c71c5284c571a08d778750ab2e7f64c670816`
+-	Image ID: `sha256:2d7bfc0a03c777c0a70a016d01599d2a52bd2e6dd035de736e07068f6e87a637`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 ADD file:bfb52ce9788d517977c9e84dad795a6adb46efc0e8eff88853137b783826c104 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 28 Apr 2023 21:58:08 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -15264,45 +15264,45 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:181aac8447b7f0be083cdefe7039dafbc9a5e8c0a2c94de7b46d053e538a50d8`  
-		Last Modified: Thu, 17 Oct 2024 04:37:01 GMT  
-		Size: 15.8 MB (15750225 bytes)  
+	-	`sha256:1deb2c2ef23607994f7238c8d97d113f5ebd868b8eb64a0c10d2e0983f036a39`  
+		Last Modified: Sat, 19 Oct 2024 01:11:09 GMT  
+		Size: 15.7 MB (15747789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0134077e35514883cdc89f46185c7eae106a74a0895bfbc1494fdde44310f977`  
-		Last Modified: Thu, 17 Oct 2024 04:37:14 GMT  
-		Size: 54.8 MB (54834752 bytes)  
+	-	`sha256:3fbc6072bf5318ca0f9f250b4fcc6254d92483650689f0b0d77274be187abd96`  
+		Last Modified: Sat, 19 Oct 2024 05:18:19 GMT  
+		Size: 54.8 MB (54832658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7282a7affeecad9322aeeedc338067ec4eb59ad36b51a4b68e01707c27f1c092`  
-		Last Modified: Thu, 17 Oct 2024 12:48:24 GMT  
-		Size: 1.1 MB (1138085 bytes)  
+	-	`sha256:4cb1994fd4c77028da1e9f47a549c9e55b77902762dad6803bccc89fdcee143d`  
+		Last Modified: Sat, 19 Oct 2024 07:44:05 GMT  
+		Size: 1.1 MB (1138170 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89be1033d2b44fcc581ca0443a7282ff3321d170ab48fff71a33f8aba4e5c211`  
-		Last Modified: Thu, 17 Oct 2024 12:48:24 GMT  
-		Size: 1.5 MB (1453031 bytes)  
+	-	`sha256:4140797850c77b941687ab1e25a58b87e2ef9346a4cfc8bd6b2a8ff222f6440d`  
+		Last Modified: Sat, 19 Oct 2024 07:44:05 GMT  
+		Size: 1.5 MB (1453141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e18f1c6bdfe5c2a2f2e96cf64113efd63e2788080e63680b876e09e624b551e9`  
-		Last Modified: Thu, 17 Oct 2024 12:48:25 GMT  
-		Size: 13.3 MB (13279187 bytes)  
+	-	`sha256:c7407c39db2cbc6aa613587dcf1434fe69989a1c0bbf8e662e780eb12efc43a4`  
+		Last Modified: Sat, 19 Oct 2024 07:44:06 GMT  
+		Size: 13.3 MB (13279209 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:be0f40092c600cc4230efa786cf4e86f27ab4aba9a53307cb1ed751723a5bd9f
+$ docker pull haxe@sha256:38fe49c938c2b932d82be0b8b7fb7d2d5a9c73fa61d1eba64a18bfb45e1d1cbe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.4 KB (18407 bytes)**  
+-	Total Size: **18.5 KB (18540 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4f1c501ab1ae6382d5033bbc603c72326e47c35fa39016d3772c8a6a1135062`
+-	Image ID: `sha256:eea698b1a2e3cee64622afe89d11a54ef5c5652f7b6b80a0982361236d0527a1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fc52f3c71fdab7b12743fde7f1fd8385011aaa485fd0d9437c8685400f485f80`  
-		Last Modified: Thu, 17 Oct 2024 12:48:23 GMT  
-		Size: 18.4 KB (18407 bytes)  
+	-	`sha256:6c633f9f9a7482c7226d8f39503ce9143be8a18f1d8370f600fd4ec55a90b369`  
+		Last Modified: Sat, 19 Oct 2024 07:44:05 GMT  
+		Size: 18.5 KB (18540 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.3-windowsservercore`
@@ -15895,7 +15895,7 @@ CMD ["haxe"]
 ## `haxe:4.3.6`
 
 ```console
-$ docker pull haxe@sha256:db2b3824aac2393bac45e139bd803751d8d776735d8bc2517a7cf9d64f6ffdf1
+$ docker pull haxe@sha256:b8a8d966ed65af91523c6f10e434b9b7ded2dda2dfacd852e1d30546c2655a37
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16082,24 +16082,24 @@ $ docker pull haxe@sha256:f161be9878228569585e5e763eb81bbd3f526d9c1b59e1702de1eb
 ### `haxe:4.3.6` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:2c0c6d9394bf0c2ae60a4b76e621bfea539ecab4b7ee8f11194aa7d65f2a2ae1
+$ docker pull haxe@sha256:1ca843d9293429fd1d5c60b0e9f5a5ceb35028a4a85fda5497668f1053962526
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **401.8 MB (401809412 bytes)**  
+-	Total Size: **401.8 MB (401809726 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:99e49f361fa5ad37b73d7d851cb693d52a69a56c8f737686d0d92720afabd699`
+-	Image ID: `sha256:a5ea92929444ab0cc6a91f9a57c27160cd2084b6c2c18aa9fbbb1d9e7a64187c`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Wed, 10 May 2023 23:29:59 GMT
 ADD file:1df819221542e236e104deb2624ffe4efd79382aed25b3ab20088becaeadad31 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Wed, 10 May 2023 23:29:59 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 10 May 2023 23:29:59 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -16123,45 +16123,45 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:19 GMT  
 		Size: 49.6 MB (49584978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:437f71cf1903685ed3f6314161e121602758f809a760d2bd2293f7cd8ce1abe1`  
-		Last Modified: Thu, 17 Oct 2024 04:36:08 GMT  
-		Size: 23.6 MB (23594190 bytes)  
+	-	`sha256:95b894d63c771a6056bc65ff25192b251413259ba7d160b0076f0f5d7975dc39`  
+		Last Modified: Sat, 19 Oct 2024 01:10:43 GMT  
+		Size: 23.6 MB (23593834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:143d0f027108dead9d56047ebcddbf6b5ce9a7d51ab49ac1eeef8590e7bd9764`  
-		Last Modified: Thu, 17 Oct 2024 04:36:24 GMT  
-		Size: 64.3 MB (64349510 bytes)  
+	-	`sha256:cb5594266b1bacf9ad6855b00d9c5c98e721001eb115218eda673e548e04fdbf`  
+		Last Modified: Sat, 19 Oct 2024 05:17:15 GMT  
+		Size: 64.4 MB (64350044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:423a1c1c3ec7d2070a58925c4ce21d699b8e1974c6369c5caa7013e0ec7497cf`  
-		Last Modified: Thu, 17 Oct 2024 12:43:54 GMT  
-		Size: 1.2 MB (1247486 bytes)  
+	-	`sha256:835141eec8d94859ac138e67537135c78d0db2425523487919e22ae8a77f9fc6`  
+		Last Modified: Sat, 19 Oct 2024 07:39:07 GMT  
+		Size: 1.2 MB (1247373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80227ba5e006d07cff6035f795610618b81052ac9dd40c5978da67544272d496`  
-		Last Modified: Thu, 17 Oct 2024 12:43:54 GMT  
-		Size: 1.4 MB (1419026 bytes)  
+	-	`sha256:8776dedd78be18e3f470d23c9ee54b34ed6d9da2ff34caf1c0674858e9996ef7`  
+		Last Modified: Sat, 19 Oct 2024 07:39:07 GMT  
+		Size: 1.4 MB (1419177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91d4ce20b5504bed735e504c48db91c7999134e81a58fcd3ad4a2351461daa4c`  
-		Last Modified: Thu, 17 Oct 2024 12:44:00 GMT  
-		Size: 261.6 MB (261614222 bytes)  
+	-	`sha256:f41561da66f3d9872c1328000fc418ea41423dd1744b28b3ec5dcfacbef83cbf`  
+		Last Modified: Sat, 19 Oct 2024 07:39:13 GMT  
+		Size: 261.6 MB (261614320 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.6` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:690d769304534dcbeb4a0d7ee0e2d87ed85274f088b4e6199e5c98d5609351fc
+$ docker pull haxe@sha256:bef98ef61276378fc7f5e5a475454130b9dd0cddfe3050dd6ba113c5be4a6f5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.3 KB (19330 bytes)**  
+-	Total Size: **19.5 KB (19463 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7deb0f4d6c80b00a5cf345cd88da6aa3cd7544d6f28d53e39db1d0ef0202c756`
+-	Image ID: `sha256:c5903f1def67602fedee6660b79a20245d351618b78b921de179aef97c6c242a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:42423a45595a7f494387303cb895c3984a57523eca2611ee9c8246679dfd2587`  
-		Last Modified: Thu, 17 Oct 2024 12:43:54 GMT  
-		Size: 19.3 KB (19330 bytes)  
+	-	`sha256:3c6a26ec1bee9bcc7d2e235f54cc4f4452c381e67c6b1cc69eba7e8c393889a9`  
+		Last Modified: Sat, 19 Oct 2024 07:39:06 GMT  
+		Size: 19.5 KB (19463 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:4.3.6` - windows version 10.0.20348.2762; amd64
@@ -17180,7 +17180,7 @@ $ docker pull haxe@sha256:5f2fb670fc9c3829d17d4b4440ec1b5ce0fecd6b5a5f35ddbdd7f3
 ## `haxe:4.3.6-bookworm`
 
 ```console
-$ docker pull haxe@sha256:8514ae862feeadc1df3c1ffb98bfc1b34638f2adede7a29088e6b1da1958856d
+$ docker pull haxe@sha256:e38e812af8febb0c3c23b47c9ee02a767c6f5303f5f7e5c82fac1494fc411708
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17365,24 +17365,24 @@ $ docker pull haxe@sha256:f161be9878228569585e5e763eb81bbd3f526d9c1b59e1702de1eb
 ### `haxe:4.3.6-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:2c0c6d9394bf0c2ae60a4b76e621bfea539ecab4b7ee8f11194aa7d65f2a2ae1
+$ docker pull haxe@sha256:1ca843d9293429fd1d5c60b0e9f5a5ceb35028a4a85fda5497668f1053962526
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **401.8 MB (401809412 bytes)**  
+-	Total Size: **401.8 MB (401809726 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:99e49f361fa5ad37b73d7d851cb693d52a69a56c8f737686d0d92720afabd699`
+-	Image ID: `sha256:a5ea92929444ab0cc6a91f9a57c27160cd2084b6c2c18aa9fbbb1d9e7a64187c`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Wed, 10 May 2023 23:29:59 GMT
 ADD file:1df819221542e236e104deb2624ffe4efd79382aed25b3ab20088becaeadad31 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Wed, 10 May 2023 23:29:59 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 10 May 2023 23:29:59 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -17406,51 +17406,51 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:19 GMT  
 		Size: 49.6 MB (49584978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:437f71cf1903685ed3f6314161e121602758f809a760d2bd2293f7cd8ce1abe1`  
-		Last Modified: Thu, 17 Oct 2024 04:36:08 GMT  
-		Size: 23.6 MB (23594190 bytes)  
+	-	`sha256:95b894d63c771a6056bc65ff25192b251413259ba7d160b0076f0f5d7975dc39`  
+		Last Modified: Sat, 19 Oct 2024 01:10:43 GMT  
+		Size: 23.6 MB (23593834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:143d0f027108dead9d56047ebcddbf6b5ce9a7d51ab49ac1eeef8590e7bd9764`  
-		Last Modified: Thu, 17 Oct 2024 04:36:24 GMT  
-		Size: 64.3 MB (64349510 bytes)  
+	-	`sha256:cb5594266b1bacf9ad6855b00d9c5c98e721001eb115218eda673e548e04fdbf`  
+		Last Modified: Sat, 19 Oct 2024 05:17:15 GMT  
+		Size: 64.4 MB (64350044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:423a1c1c3ec7d2070a58925c4ce21d699b8e1974c6369c5caa7013e0ec7497cf`  
-		Last Modified: Thu, 17 Oct 2024 12:43:54 GMT  
-		Size: 1.2 MB (1247486 bytes)  
+	-	`sha256:835141eec8d94859ac138e67537135c78d0db2425523487919e22ae8a77f9fc6`  
+		Last Modified: Sat, 19 Oct 2024 07:39:07 GMT  
+		Size: 1.2 MB (1247373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80227ba5e006d07cff6035f795610618b81052ac9dd40c5978da67544272d496`  
-		Last Modified: Thu, 17 Oct 2024 12:43:54 GMT  
-		Size: 1.4 MB (1419026 bytes)  
+	-	`sha256:8776dedd78be18e3f470d23c9ee54b34ed6d9da2ff34caf1c0674858e9996ef7`  
+		Last Modified: Sat, 19 Oct 2024 07:39:07 GMT  
+		Size: 1.4 MB (1419177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91d4ce20b5504bed735e504c48db91c7999134e81a58fcd3ad4a2351461daa4c`  
-		Last Modified: Thu, 17 Oct 2024 12:44:00 GMT  
-		Size: 261.6 MB (261614222 bytes)  
+	-	`sha256:f41561da66f3d9872c1328000fc418ea41423dd1744b28b3ec5dcfacbef83cbf`  
+		Last Modified: Sat, 19 Oct 2024 07:39:13 GMT  
+		Size: 261.6 MB (261614320 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.6-bookworm` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:690d769304534dcbeb4a0d7ee0e2d87ed85274f088b4e6199e5c98d5609351fc
+$ docker pull haxe@sha256:bef98ef61276378fc7f5e5a475454130b9dd0cddfe3050dd6ba113c5be4a6f5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.3 KB (19330 bytes)**  
+-	Total Size: **19.5 KB (19463 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7deb0f4d6c80b00a5cf345cd88da6aa3cd7544d6f28d53e39db1d0ef0202c756`
+-	Image ID: `sha256:c5903f1def67602fedee6660b79a20245d351618b78b921de179aef97c6c242a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:42423a45595a7f494387303cb895c3984a57523eca2611ee9c8246679dfd2587`  
-		Last Modified: Thu, 17 Oct 2024 12:43:54 GMT  
-		Size: 19.3 KB (19330 bytes)  
+	-	`sha256:3c6a26ec1bee9bcc7d2e235f54cc4f4452c381e67c6b1cc69eba7e8c393889a9`  
+		Last Modified: Sat, 19 Oct 2024 07:39:06 GMT  
+		Size: 19.5 KB (19463 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.3.6-bullseye`
 
 ```console
-$ docker pull haxe@sha256:b5e89fe9d509502b29f338473e00892ccc9e8a6f03e4bd0887dbf8dde4976d06
+$ docker pull haxe@sha256:6b5609525afa7a12c384c840f5ced884afd5e58d48553e622431b50a1c1983c2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17635,24 +17635,24 @@ $ docker pull haxe@sha256:a86f783e2e18319d319e4d024e4698bb7ce1f546b069dfdaf40e15
 ### `haxe:4.3.6-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:f49e2027039afe94817c52f7fb03a6bf07423f72bf2369e93b04e3e15046ba0d
+$ docker pull haxe@sha256:1b112e0ee86b86a6ab1983916ae01a912c71e4fb555f03a9366805cb59063070
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **140.2 MB (140190175 bytes)**  
+-	Total Size: **140.2 MB (140185862 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a4a85d76603980a8c1aacf5d930c71c5284c571a08d778750ab2e7f64c670816`
+-	Image ID: `sha256:2d7bfc0a03c777c0a70a016d01599d2a52bd2e6dd035de736e07068f6e87a637`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 ADD file:bfb52ce9788d517977c9e84dad795a6adb46efc0e8eff88853137b783826c104 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Fri, 28 Apr 2023 21:58:08 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -17676,45 +17676,45 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:181aac8447b7f0be083cdefe7039dafbc9a5e8c0a2c94de7b46d053e538a50d8`  
-		Last Modified: Thu, 17 Oct 2024 04:37:01 GMT  
-		Size: 15.8 MB (15750225 bytes)  
+	-	`sha256:1deb2c2ef23607994f7238c8d97d113f5ebd868b8eb64a0c10d2e0983f036a39`  
+		Last Modified: Sat, 19 Oct 2024 01:11:09 GMT  
+		Size: 15.7 MB (15747789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0134077e35514883cdc89f46185c7eae106a74a0895bfbc1494fdde44310f977`  
-		Last Modified: Thu, 17 Oct 2024 04:37:14 GMT  
-		Size: 54.8 MB (54834752 bytes)  
+	-	`sha256:3fbc6072bf5318ca0f9f250b4fcc6254d92483650689f0b0d77274be187abd96`  
+		Last Modified: Sat, 19 Oct 2024 05:18:19 GMT  
+		Size: 54.8 MB (54832658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7282a7affeecad9322aeeedc338067ec4eb59ad36b51a4b68e01707c27f1c092`  
-		Last Modified: Thu, 17 Oct 2024 12:48:24 GMT  
-		Size: 1.1 MB (1138085 bytes)  
+	-	`sha256:4cb1994fd4c77028da1e9f47a549c9e55b77902762dad6803bccc89fdcee143d`  
+		Last Modified: Sat, 19 Oct 2024 07:44:05 GMT  
+		Size: 1.1 MB (1138170 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89be1033d2b44fcc581ca0443a7282ff3321d170ab48fff71a33f8aba4e5c211`  
-		Last Modified: Thu, 17 Oct 2024 12:48:24 GMT  
-		Size: 1.5 MB (1453031 bytes)  
+	-	`sha256:4140797850c77b941687ab1e25a58b87e2ef9346a4cfc8bd6b2a8ff222f6440d`  
+		Last Modified: Sat, 19 Oct 2024 07:44:05 GMT  
+		Size: 1.5 MB (1453141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e18f1c6bdfe5c2a2f2e96cf64113efd63e2788080e63680b876e09e624b551e9`  
-		Last Modified: Thu, 17 Oct 2024 12:48:25 GMT  
-		Size: 13.3 MB (13279187 bytes)  
+	-	`sha256:c7407c39db2cbc6aa613587dcf1434fe69989a1c0bbf8e662e780eb12efc43a4`  
+		Last Modified: Sat, 19 Oct 2024 07:44:06 GMT  
+		Size: 13.3 MB (13279209 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:4.3.6-bullseye` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:be0f40092c600cc4230efa786cf4e86f27ab4aba9a53307cb1ed751723a5bd9f
+$ docker pull haxe@sha256:38fe49c938c2b932d82be0b8b7fb7d2d5a9c73fa61d1eba64a18bfb45e1d1cbe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.4 KB (18407 bytes)**  
+-	Total Size: **18.5 KB (18540 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4f1c501ab1ae6382d5033bbc603c72326e47c35fa39016d3772c8a6a1135062`
+-	Image ID: `sha256:eea698b1a2e3cee64622afe89d11a54ef5c5652f7b6b80a0982361236d0527a1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fc52f3c71fdab7b12743fde7f1fd8385011aaa485fd0d9437c8685400f485f80`  
-		Last Modified: Thu, 17 Oct 2024 12:48:23 GMT  
-		Size: 18.4 KB (18407 bytes)  
+	-	`sha256:6c633f9f9a7482c7226d8f39503ce9143be8a18f1d8370f600fd4ec55a90b369`  
+		Last Modified: Sat, 19 Oct 2024 07:44:05 GMT  
+		Size: 18.5 KB (18540 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `haxe:4.3.6-windowsservercore`
@@ -18307,7 +18307,7 @@ CMD ["haxe"]
 ## `haxe:latest`
 
 ```console
-$ docker pull haxe@sha256:db2b3824aac2393bac45e139bd803751d8d776735d8bc2517a7cf9d64f6ffdf1
+$ docker pull haxe@sha256:b8a8d966ed65af91523c6f10e434b9b7ded2dda2dfacd852e1d30546c2655a37
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18494,24 +18494,24 @@ $ docker pull haxe@sha256:f161be9878228569585e5e763eb81bbd3f526d9c1b59e1702de1eb
 ### `haxe:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull haxe@sha256:2c0c6d9394bf0c2ae60a4b76e621bfea539ecab4b7ee8f11194aa7d65f2a2ae1
+$ docker pull haxe@sha256:1ca843d9293429fd1d5c60b0e9f5a5ceb35028a4a85fda5497668f1053962526
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **401.8 MB (401809412 bytes)**  
+-	Total Size: **401.8 MB (401809726 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:99e49f361fa5ad37b73d7d851cb693d52a69a56c8f737686d0d92720afabd699`
+-	Image ID: `sha256:a5ea92929444ab0cc6a91f9a57c27160cd2084b6c2c18aa9fbbb1d9e7a64187c`
 -	Default Command: `["haxe"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Wed, 10 May 2023 23:29:59 GMT
 ADD file:1df819221542e236e104deb2624ffe4efd79382aed25b3ab20088becaeadad31 in / 
-# Tue, 01 Oct 2024 06:21:31 GMT
+# Wed, 10 May 2023 23:29:59 GMT
 CMD ["bash"]
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/*
-# Tue, 01 Oct 2024 06:21:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/*
+# Wed, 10 May 2023 23:29:59 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 01 Oct 2024 06:21:31 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Tue, 01 Oct 2024 06:21:31 GMT
@@ -18535,45 +18535,45 @@ CMD ["haxe"]
 		Last Modified: Thu, 17 Oct 2024 01:14:19 GMT  
 		Size: 49.6 MB (49584978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:437f71cf1903685ed3f6314161e121602758f809a760d2bd2293f7cd8ce1abe1`  
-		Last Modified: Thu, 17 Oct 2024 04:36:08 GMT  
-		Size: 23.6 MB (23594190 bytes)  
+	-	`sha256:95b894d63c771a6056bc65ff25192b251413259ba7d160b0076f0f5d7975dc39`  
+		Last Modified: Sat, 19 Oct 2024 01:10:43 GMT  
+		Size: 23.6 MB (23593834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:143d0f027108dead9d56047ebcddbf6b5ce9a7d51ab49ac1eeef8590e7bd9764`  
-		Last Modified: Thu, 17 Oct 2024 04:36:24 GMT  
-		Size: 64.3 MB (64349510 bytes)  
+	-	`sha256:cb5594266b1bacf9ad6855b00d9c5c98e721001eb115218eda673e548e04fdbf`  
+		Last Modified: Sat, 19 Oct 2024 05:17:15 GMT  
+		Size: 64.4 MB (64350044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:423a1c1c3ec7d2070a58925c4ce21d699b8e1974c6369c5caa7013e0ec7497cf`  
-		Last Modified: Thu, 17 Oct 2024 12:43:54 GMT  
-		Size: 1.2 MB (1247486 bytes)  
+	-	`sha256:835141eec8d94859ac138e67537135c78d0db2425523487919e22ae8a77f9fc6`  
+		Last Modified: Sat, 19 Oct 2024 07:39:07 GMT  
+		Size: 1.2 MB (1247373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80227ba5e006d07cff6035f795610618b81052ac9dd40c5978da67544272d496`  
-		Last Modified: Thu, 17 Oct 2024 12:43:54 GMT  
-		Size: 1.4 MB (1419026 bytes)  
+	-	`sha256:8776dedd78be18e3f470d23c9ee54b34ed6d9da2ff34caf1c0674858e9996ef7`  
+		Last Modified: Sat, 19 Oct 2024 07:39:07 GMT  
+		Size: 1.4 MB (1419177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91d4ce20b5504bed735e504c48db91c7999134e81a58fcd3ad4a2351461daa4c`  
-		Last Modified: Thu, 17 Oct 2024 12:44:00 GMT  
-		Size: 261.6 MB (261614222 bytes)  
+	-	`sha256:f41561da66f3d9872c1328000fc418ea41423dd1744b28b3ec5dcfacbef83cbf`  
+		Last Modified: Sat, 19 Oct 2024 07:39:13 GMT  
+		Size: 261.6 MB (261614320 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `haxe:latest` - unknown; unknown
 
 ```console
-$ docker pull haxe@sha256:690d769304534dcbeb4a0d7ee0e2d87ed85274f088b4e6199e5c98d5609351fc
+$ docker pull haxe@sha256:bef98ef61276378fc7f5e5a475454130b9dd0cddfe3050dd6ba113c5be4a6f5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.3 KB (19330 bytes)**  
+-	Total Size: **19.5 KB (19463 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7deb0f4d6c80b00a5cf345cd88da6aa3cd7544d6f28d53e39db1d0ef0202c756`
+-	Image ID: `sha256:c5903f1def67602fedee6660b79a20245d351618b78b921de179aef97c6c242a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:42423a45595a7f494387303cb895c3984a57523eca2611ee9c8246679dfd2587`  
-		Last Modified: Thu, 17 Oct 2024 12:43:54 GMT  
-		Size: 19.3 KB (19330 bytes)  
+	-	`sha256:3c6a26ec1bee9bcc7d2e235f54cc4f4452c381e67c6b1cc69eba7e8c393889a9`  
+		Last Modified: Sat, 19 Oct 2024 07:39:06 GMT  
+		Size: 19.5 KB (19463 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `haxe:latest` - windows version 10.0.20348.2762; amd64
