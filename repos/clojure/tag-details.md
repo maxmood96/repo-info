@@ -217,7 +217,7 @@
 ## `clojure:latest`
 
 ```console
-$ docker pull clojure@sha256:73fbb1e88d1c331e3814024bbb7b8d68dc6fb89d0b63a6be227d568145e79c67
+$ docker pull clojure@sha256:a0afc3f274c18279a2384dc5c4699664cf18f9251a495b2f7ca2b025dde67e87
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -438,31 +438,31 @@ CMD ["-M" "--repl"]
 ### `clojure:latest` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:e2b931722c6a441523da8ea9bc3e4e1fe99324b4491f6953c15bbd4434e0f0bc
+$ docker pull clojure@sha256:467ea083ade5b1b6263bac4d918c5f995ef397cb05fc95d1508d004a2cbc19de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.3 MB (7258081 bytes)**  
+-	Total Size: **7.3 MB (7290678 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b84d9a25136664545b15aeff9341c9987c471ca6879ac4bf90e7f73fb19229b`
+-	Image ID: `sha256:4ce8c2ec1e2516ee2e7e9771af341efd3a9ea3640c9c1fecbad432a0d84c2060`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:854b91d2c62ede0eb1c068ccdd7cb429c1062a74b42efddcbb13955e2811e87d`  
-		Last Modified: Thu, 17 Oct 2024 07:54:27 GMT  
-		Size: 7.2 MB (7232620 bytes)  
+	-	`sha256:3b9cadff8ad8578a755d83acd3b73c7bc04ef33c1b502c0e10bb06935ccc494f`  
+		Last Modified: Sat, 19 Oct 2024 11:38:42 GMT  
+		Size: 7.3 MB (7265043 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ba6f2c193419841c6cae51605cb9a4347ef7e73a6724e05561bcaae3c983c9f1`  
-		Last Modified: Thu, 17 Oct 2024 07:54:26 GMT  
-		Size: 25.5 KB (25461 bytes)  
+	-	`sha256:cedd17c0a72413abd5bf2532b33b5e4eae76993ecc1538d57180f951e2e721b2`  
+		Last Modified: Sat, 19 Oct 2024 11:38:41 GMT  
+		Size: 25.6 KB (25635 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:lein`
 
 ```console
-$ docker pull clojure@sha256:11b17f4e2136d727c377fca208f19e86c3a6286ce0b3b1d7fda6bede20c30099
+$ docker pull clojure@sha256:259a194a69f04b84502fd9e0b0de4104f50b4277d0c03a4c2f2aa0791c5833c9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -643,31 +643,31 @@ CMD ["repl"]
 ### `clojure:lein` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:4424a1d2feda923dbf818dafbb9a1ee6f32d946c1dccbfa50c5a461e89eddf94
+$ docker pull clojure@sha256:6ed1b02437e00066cc67634c5d1dd05d8f7aa6a7c89d0e8326c8b66d26e2c0b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6551664 bytes)**  
+-	Total Size: **6.6 MB (6575993 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76052ef48af5872b3af782233cd8d56172002d2fb63af871439442c1a78e120d`
+-	Image ID: `sha256:81669d864b54b58c39d329af6e8745c5d7ee8fddf59e8835c381e1b09c560d76`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:98ba3b4105988de2c47ec47703443a4bbb03b560adc13e586f45afcabd234283`  
-		Last Modified: Thu, 17 Oct 2024 08:19:05 GMT  
-		Size: 6.5 MB (6531505 bytes)  
+	-	`sha256:9b28b426664a0a633da87e9c9068ee84e131128e1399aec5cedf80175e568d5e`  
+		Last Modified: Sat, 19 Oct 2024 12:11:07 GMT  
+		Size: 6.6 MB (6555660 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7ba3a6fbd5b5d0d5f95f2a5ca4988b5d8b18615d9f030f94903ae84e73619090`  
-		Last Modified: Thu, 17 Oct 2024 08:19:04 GMT  
-		Size: 20.2 KB (20159 bytes)  
+	-	`sha256:0d45cc2dcc7e100bc857a2429de613ad93d3422a5e2814baac16ac4b9031876d`  
+		Last Modified: Sat, 19 Oct 2024 12:11:06 GMT  
+		Size: 20.3 KB (20333 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:lein-2.11.2`
 
 ```console
-$ docker pull clojure@sha256:11b17f4e2136d727c377fca208f19e86c3a6286ce0b3b1d7fda6bede20c30099
+$ docker pull clojure@sha256:259a194a69f04b84502fd9e0b0de4104f50b4277d0c03a4c2f2aa0791c5833c9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -848,31 +848,31 @@ CMD ["repl"]
 ### `clojure:lein-2.11.2` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:4424a1d2feda923dbf818dafbb9a1ee6f32d946c1dccbfa50c5a461e89eddf94
+$ docker pull clojure@sha256:6ed1b02437e00066cc67634c5d1dd05d8f7aa6a7c89d0e8326c8b66d26e2c0b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6551664 bytes)**  
+-	Total Size: **6.6 MB (6575993 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76052ef48af5872b3af782233cd8d56172002d2fb63af871439442c1a78e120d`
+-	Image ID: `sha256:81669d864b54b58c39d329af6e8745c5d7ee8fddf59e8835c381e1b09c560d76`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:98ba3b4105988de2c47ec47703443a4bbb03b560adc13e586f45afcabd234283`  
-		Last Modified: Thu, 17 Oct 2024 08:19:05 GMT  
-		Size: 6.5 MB (6531505 bytes)  
+	-	`sha256:9b28b426664a0a633da87e9c9068ee84e131128e1399aec5cedf80175e568d5e`  
+		Last Modified: Sat, 19 Oct 2024 12:11:07 GMT  
+		Size: 6.6 MB (6555660 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7ba3a6fbd5b5d0d5f95f2a5ca4988b5d8b18615d9f030f94903ae84e73619090`  
-		Last Modified: Thu, 17 Oct 2024 08:19:04 GMT  
-		Size: 20.2 KB (20159 bytes)  
+	-	`sha256:0d45cc2dcc7e100bc857a2429de613ad93d3422a5e2814baac16ac4b9031876d`  
+		Last Modified: Sat, 19 Oct 2024 12:11:06 GMT  
+		Size: 20.3 KB (20333 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:lein-2.11.2-bookworm`
 
 ```console
-$ docker pull clojure@sha256:11b17f4e2136d727c377fca208f19e86c3a6286ce0b3b1d7fda6bede20c30099
+$ docker pull clojure@sha256:259a194a69f04b84502fd9e0b0de4104f50b4277d0c03a4c2f2aa0791c5833c9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1053,31 +1053,31 @@ CMD ["repl"]
 ### `clojure:lein-2.11.2-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:4424a1d2feda923dbf818dafbb9a1ee6f32d946c1dccbfa50c5a461e89eddf94
+$ docker pull clojure@sha256:6ed1b02437e00066cc67634c5d1dd05d8f7aa6a7c89d0e8326c8b66d26e2c0b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6551664 bytes)**  
+-	Total Size: **6.6 MB (6575993 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76052ef48af5872b3af782233cd8d56172002d2fb63af871439442c1a78e120d`
+-	Image ID: `sha256:81669d864b54b58c39d329af6e8745c5d7ee8fddf59e8835c381e1b09c560d76`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:98ba3b4105988de2c47ec47703443a4bbb03b560adc13e586f45afcabd234283`  
-		Last Modified: Thu, 17 Oct 2024 08:19:05 GMT  
-		Size: 6.5 MB (6531505 bytes)  
+	-	`sha256:9b28b426664a0a633da87e9c9068ee84e131128e1399aec5cedf80175e568d5e`  
+		Last Modified: Sat, 19 Oct 2024 12:11:07 GMT  
+		Size: 6.6 MB (6555660 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7ba3a6fbd5b5d0d5f95f2a5ca4988b5d8b18615d9f030f94903ae84e73619090`  
-		Last Modified: Thu, 17 Oct 2024 08:19:04 GMT  
-		Size: 20.2 KB (20159 bytes)  
+	-	`sha256:0d45cc2dcc7e100bc857a2429de613ad93d3422a5e2814baac16ac4b9031876d`  
+		Last Modified: Sat, 19 Oct 2024 12:11:06 GMT  
+		Size: 20.3 KB (20333 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:lein-2.11.2-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:eaa6ffa0b9b4631cc252e8720ee1aa1f662f96b13c9c8c8ebf9b6244ffde9485
+$ docker pull clojure@sha256:23b2925c6e22c5954b82e7ddff36f3d30d5280c0df1d5c2400a871595621e96f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1258,31 +1258,31 @@ CMD ["repl"]
 ### `clojure:lein-2.11.2-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c968198dd799f4bf18ff85c97fb5596bf1691c84718fb3bccc667b564c37bb86
+$ docker pull clojure@sha256:74970d65b69bc9d4ec8d9663043b78fb3d5a12bdd42aa3ef9160522945df7c4b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4332267 bytes)**  
+-	Total Size: **4.4 MB (4356489 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19e9c2f16b4d0608fd32ba46cdb3dc55358d405a57be807c66b5200e3971731b`
+-	Image ID: `sha256:7a70d201219034b3bbea8f53571a56fde56bf20f0c35457b8f4c28d15248adf8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f06e80787f3504fabb4f59445487cb47ab9bc1ef026d60afb82e043b2bff0514`  
-		Last Modified: Thu, 17 Oct 2024 08:20:02 GMT  
-		Size: 4.3 MB (4313342 bytes)  
+	-	`sha256:246c3b28288ab289e102a0478f8877dd93e737db403f489d2de30f68bebec403`  
+		Last Modified: Sat, 19 Oct 2024 12:11:36 GMT  
+		Size: 4.3 MB (4337391 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c91229a8a91b590ffc3dbbfdb58fd9aa09e09c1257507164fb75df6a050186ab`  
-		Last Modified: Thu, 17 Oct 2024 08:20:02 GMT  
-		Size: 18.9 KB (18925 bytes)  
+	-	`sha256:816744dab55279d0451006d3171b01a0ce1f66b852c5cd4e2c7bd850172cbd8d`  
+		Last Modified: Sat, 19 Oct 2024 12:11:35 GMT  
+		Size: 19.1 KB (19098 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:lein-2.11.2-bullseye`
 
 ```console
-$ docker pull clojure@sha256:602eb6e0e5d983884930374ec68a08a3069c77470065d432c4b420e13bcf1164
+$ docker pull clojure@sha256:b3a4921a2237bab66305e071b6b2d2b72c4fd30a79cd4b59e8cc2a7e6604d538
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1463,31 +1463,31 @@ CMD ["repl"]
 ### `clojure:lein-2.11.2-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:8c689dc6b199e458bfb9ab3621af467e79a2a8fe4f4e83bb70c5bb41be47890a
+$ docker pull clojure@sha256:cc7c168792427ed7b3e5b0c76434381b70d8ac8f99d6aef2a9e89ea5aa4c0ebc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6634020 bytes)**  
+-	Total Size: **6.7 MB (6658668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da509c18eeac13653a433d58287acd4ed630977c86835fe7c8769e7910e12786`
+-	Image ID: `sha256:97edb2a7438b12bc4070e57b72b297fa9b19b82855c711d150d4abd484687f04`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9f299370c3617a9717dcfac1dd19b27c64552574c664a8efb96966184366dc66`  
-		Last Modified: Thu, 17 Oct 2024 08:21:02 GMT  
-		Size: 6.6 MB (6615166 bytes)  
+	-	`sha256:8f04b52137492c1b3b4712bf1937f6f11deb388ca658b10d547a4e58faf6a78c`  
+		Last Modified: Sat, 19 Oct 2024 12:12:09 GMT  
+		Size: 6.6 MB (6639639 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7f68eccb69bdae39f1305bdd9abaff4b95cc7c48f2e7398c09bb01ad6b77c3a2`  
-		Last Modified: Thu, 17 Oct 2024 08:21:02 GMT  
-		Size: 18.9 KB (18854 bytes)  
+	-	`sha256:cb3adeee9e23e40f13e3511da15b6dac6878fdb820c55e642d86ccdce9ef3e82`  
+		Last Modified: Sat, 19 Oct 2024 12:12:09 GMT  
+		Size: 19.0 KB (19029 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:lein-2.11.2-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:d32eaebe87e50f8f2e8b10b61debdff821802e25cf0718f6b6d781886067e1b1
+$ docker pull clojure@sha256:214638d83dbd3bba2494b9a5ac95566899266425721c57200f23b4b19093df7f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1668,31 +1668,31 @@ CMD ["repl"]
 ### `clojure:lein-2.11.2-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c0bdcfc42c4681e10a9fe7215048bf74c07685de7a7fcffe58118c0023ad4651
+$ docker pull clojure@sha256:d0c3ebe1934824a84d5f328b997b6f8f805877e1fa24a403bdb9041ef1b8ec53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.6 MB (4580342 bytes)**  
+-	Total Size: **4.6 MB (4604883 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e58aac33893b0306d0dc2b96a5eaaf672dbede156ac359a70a0852b7e5a6c2e4`
+-	Image ID: `sha256:26b8a0bbc7cc545a17256f21cee2c54f11bd471c9458d866e27418a2b5c41656`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ec98f153ace5af09582a975206c2180822dd2c3aff2650c13cd564d586acf683`  
-		Last Modified: Thu, 17 Oct 2024 08:22:04 GMT  
-		Size: 4.6 MB (4561417 bytes)  
+	-	`sha256:f62ade858a99c00376a919c191ac32855895a1fe50425b17b5cd259e09c607c7`  
+		Last Modified: Sat, 19 Oct 2024 12:12:48 GMT  
+		Size: 4.6 MB (4585784 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a790776e80e1ea420df6d86734289dca6d368908434c54e00d6743813574bb27`  
-		Last Modified: Thu, 17 Oct 2024 08:22:03 GMT  
-		Size: 18.9 KB (18925 bytes)  
+	-	`sha256:6fc509949cca2eb5f94af15cafe896a580bded6e01e41d301707de424dc3f011`  
+		Last Modified: Sat, 19 Oct 2024 12:12:47 GMT  
+		Size: 19.1 KB (19099 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:lein-bookworm`
 
 ```console
-$ docker pull clojure@sha256:11b17f4e2136d727c377fca208f19e86c3a6286ce0b3b1d7fda6bede20c30099
+$ docker pull clojure@sha256:259a194a69f04b84502fd9e0b0de4104f50b4277d0c03a4c2f2aa0791c5833c9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1873,31 +1873,31 @@ CMD ["repl"]
 ### `clojure:lein-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:4424a1d2feda923dbf818dafbb9a1ee6f32d946c1dccbfa50c5a461e89eddf94
+$ docker pull clojure@sha256:6ed1b02437e00066cc67634c5d1dd05d8f7aa6a7c89d0e8326c8b66d26e2c0b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6551664 bytes)**  
+-	Total Size: **6.6 MB (6575993 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76052ef48af5872b3af782233cd8d56172002d2fb63af871439442c1a78e120d`
+-	Image ID: `sha256:81669d864b54b58c39d329af6e8745c5d7ee8fddf59e8835c381e1b09c560d76`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:98ba3b4105988de2c47ec47703443a4bbb03b560adc13e586f45afcabd234283`  
-		Last Modified: Thu, 17 Oct 2024 08:19:05 GMT  
-		Size: 6.5 MB (6531505 bytes)  
+	-	`sha256:9b28b426664a0a633da87e9c9068ee84e131128e1399aec5cedf80175e568d5e`  
+		Last Modified: Sat, 19 Oct 2024 12:11:07 GMT  
+		Size: 6.6 MB (6555660 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7ba3a6fbd5b5d0d5f95f2a5ca4988b5d8b18615d9f030f94903ae84e73619090`  
-		Last Modified: Thu, 17 Oct 2024 08:19:04 GMT  
-		Size: 20.2 KB (20159 bytes)  
+	-	`sha256:0d45cc2dcc7e100bc857a2429de613ad93d3422a5e2814baac16ac4b9031876d`  
+		Last Modified: Sat, 19 Oct 2024 12:11:06 GMT  
+		Size: 20.3 KB (20333 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:lein-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:eaa6ffa0b9b4631cc252e8720ee1aa1f662f96b13c9c8c8ebf9b6244ffde9485
+$ docker pull clojure@sha256:23b2925c6e22c5954b82e7ddff36f3d30d5280c0df1d5c2400a871595621e96f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2078,31 +2078,31 @@ CMD ["repl"]
 ### `clojure:lein-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c968198dd799f4bf18ff85c97fb5596bf1691c84718fb3bccc667b564c37bb86
+$ docker pull clojure@sha256:74970d65b69bc9d4ec8d9663043b78fb3d5a12bdd42aa3ef9160522945df7c4b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4332267 bytes)**  
+-	Total Size: **4.4 MB (4356489 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19e9c2f16b4d0608fd32ba46cdb3dc55358d405a57be807c66b5200e3971731b`
+-	Image ID: `sha256:7a70d201219034b3bbea8f53571a56fde56bf20f0c35457b8f4c28d15248adf8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f06e80787f3504fabb4f59445487cb47ab9bc1ef026d60afb82e043b2bff0514`  
-		Last Modified: Thu, 17 Oct 2024 08:20:02 GMT  
-		Size: 4.3 MB (4313342 bytes)  
+	-	`sha256:246c3b28288ab289e102a0478f8877dd93e737db403f489d2de30f68bebec403`  
+		Last Modified: Sat, 19 Oct 2024 12:11:36 GMT  
+		Size: 4.3 MB (4337391 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c91229a8a91b590ffc3dbbfdb58fd9aa09e09c1257507164fb75df6a050186ab`  
-		Last Modified: Thu, 17 Oct 2024 08:20:02 GMT  
-		Size: 18.9 KB (18925 bytes)  
+	-	`sha256:816744dab55279d0451006d3171b01a0ce1f66b852c5cd4e2c7bd850172cbd8d`  
+		Last Modified: Sat, 19 Oct 2024 12:11:35 GMT  
+		Size: 19.1 KB (19098 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:lein-bullseye`
 
 ```console
-$ docker pull clojure@sha256:602eb6e0e5d983884930374ec68a08a3069c77470065d432c4b420e13bcf1164
+$ docker pull clojure@sha256:b3a4921a2237bab66305e071b6b2d2b72c4fd30a79cd4b59e8cc2a7e6604d538
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2283,31 +2283,31 @@ CMD ["repl"]
 ### `clojure:lein-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:8c689dc6b199e458bfb9ab3621af467e79a2a8fe4f4e83bb70c5bb41be47890a
+$ docker pull clojure@sha256:cc7c168792427ed7b3e5b0c76434381b70d8ac8f99d6aef2a9e89ea5aa4c0ebc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6634020 bytes)**  
+-	Total Size: **6.7 MB (6658668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da509c18eeac13653a433d58287acd4ed630977c86835fe7c8769e7910e12786`
+-	Image ID: `sha256:97edb2a7438b12bc4070e57b72b297fa9b19b82855c711d150d4abd484687f04`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9f299370c3617a9717dcfac1dd19b27c64552574c664a8efb96966184366dc66`  
-		Last Modified: Thu, 17 Oct 2024 08:21:02 GMT  
-		Size: 6.6 MB (6615166 bytes)  
+	-	`sha256:8f04b52137492c1b3b4712bf1937f6f11deb388ca658b10d547a4e58faf6a78c`  
+		Last Modified: Sat, 19 Oct 2024 12:12:09 GMT  
+		Size: 6.6 MB (6639639 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7f68eccb69bdae39f1305bdd9abaff4b95cc7c48f2e7398c09bb01ad6b77c3a2`  
-		Last Modified: Thu, 17 Oct 2024 08:21:02 GMT  
-		Size: 18.9 KB (18854 bytes)  
+	-	`sha256:cb3adeee9e23e40f13e3511da15b6dac6878fdb820c55e642d86ccdce9ef3e82`  
+		Last Modified: Sat, 19 Oct 2024 12:12:09 GMT  
+		Size: 19.0 KB (19029 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:lein-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:d32eaebe87e50f8f2e8b10b61debdff821802e25cf0718f6b6d781886067e1b1
+$ docker pull clojure@sha256:214638d83dbd3bba2494b9a5ac95566899266425721c57200f23b4b19093df7f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2488,25 +2488,25 @@ CMD ["repl"]
 ### `clojure:lein-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c0bdcfc42c4681e10a9fe7215048bf74c07685de7a7fcffe58118c0023ad4651
+$ docker pull clojure@sha256:d0c3ebe1934824a84d5f328b997b6f8f805877e1fa24a403bdb9041ef1b8ec53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.6 MB (4580342 bytes)**  
+-	Total Size: **4.6 MB (4604883 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e58aac33893b0306d0dc2b96a5eaaf672dbede156ac359a70a0852b7e5a6c2e4`
+-	Image ID: `sha256:26b8a0bbc7cc545a17256f21cee2c54f11bd471c9458d866e27418a2b5c41656`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ec98f153ace5af09582a975206c2180822dd2c3aff2650c13cd564d586acf683`  
-		Last Modified: Thu, 17 Oct 2024 08:22:04 GMT  
-		Size: 4.6 MB (4561417 bytes)  
+	-	`sha256:f62ade858a99c00376a919c191ac32855895a1fe50425b17b5cd259e09c607c7`  
+		Last Modified: Sat, 19 Oct 2024 12:12:48 GMT  
+		Size: 4.6 MB (4585784 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a790776e80e1ea420df6d86734289dca6d368908434c54e00d6743813574bb27`  
-		Last Modified: Thu, 17 Oct 2024 08:22:03 GMT  
-		Size: 18.9 KB (18925 bytes)  
+	-	`sha256:6fc509949cca2eb5f94af15cafe896a580bded6e01e41d301707de424dc3f011`  
+		Last Modified: Sat, 19 Oct 2024 12:12:47 GMT  
+		Size: 19.1 KB (19099 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-alpine`
@@ -2631,7 +2631,7 @@ $ docker pull clojure@sha256:8559f8635bc04e53a6743a0aee77cbc197837ed6edc2070fce1
 ## `clojure:temurin-11-bookworm`
 
 ```console
-$ docker pull clojure@sha256:0e260e5f25594e6eab02b81696f09b6de2494aec11092bf95d7324ff31ea3132
+$ docker pull clojure@sha256:9073277762d8c6e915b1a323636dda036901b20f695f13adbda7248c4ab4898b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2725,13 +2725,13 @@ $ docker pull clojure@sha256:5b0163f6836644bd9eddb81ef8ba2d7dd1c9a08daadd3bef3af
 ### `clojure:temurin-11-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:22794abf9850dc42cf087e7a4caa7132523e63afbfc4a5caed6425500c26e046
+$ docker pull clojure@sha256:349f8e4b1453628c92ae5ffb98f3c9f2b83e5b940fc94996b860d2df048b80bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.7 MB (272732445 bytes)**  
+-	Total Size: **272.7 MB (272730629 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25c7815208d8c1accd8d1528c55ec5c45fd6d70486bc053cb061bf037d3a2abc`
+-	Image ID: `sha256:e4249129316f1e9596045ebf2cfd067e15e344e5182e437cdec406b54d668148`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -2762,51 +2762,51 @@ CMD ["clj"]
 		Last Modified: Thu, 17 Oct 2024 01:14:19 GMT  
 		Size: 49.6 MB (49584978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a37fe4b3f26ea0b745d94ce1fca7f6c7322f18dbef079c4b027c82bbfb40ef1e`  
-		Last Modified: Thu, 17 Oct 2024 08:03:37 GMT  
-		Size: 142.4 MB (142356628 bytes)  
+	-	`sha256:e112fccb06501d78425de14a7cad0e916a7b2ff8acf9a5f1680aa28c73367de2`  
+		Last Modified: Sat, 19 Oct 2024 11:48:35 GMT  
+		Size: 142.4 MB (142354833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c8601882a8e10f052cc2d2dbfcea8fb0ce24e7411f6150418037c9ca0ce9f49`  
-		Last Modified: Thu, 17 Oct 2024 08:07:48 GMT  
-		Size: 80.8 MB (80790196 bytes)  
+	-	`sha256:22898f5957d72150694e2750061367f2053a21c956c1b3dbabc59f01bfd823f4`  
+		Last Modified: Sat, 19 Oct 2024 11:54:07 GMT  
+		Size: 80.8 MB (80790172 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7296890fe087c49c3313d089e89bb58fdb911a598c0c5c44d999810a5e8e5705`  
-		Last Modified: Thu, 17 Oct 2024 08:07:46 GMT  
-		Size: 611.0 B  
+	-	`sha256:d5b03c532468338e4c1202949aaf5bc8e4cf12291196a73861159b02216cb395`  
+		Last Modified: Sat, 19 Oct 2024 11:54:05 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:6d7b7e4502d190c9ba90596b714d1ecbf9a0380972b3283b43ff96d8a8400948
+$ docker pull clojure@sha256:89f132f9c81b05f48b2e9ebe7bba617d55db6d82810951e1da6ade98587ac651
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7197209 bytes)**  
+-	Total Size: **7.2 MB (7223127 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a2a4dfbb8815e8687678070a179cc8245af9db1294a2ee9e011c8a30c4ad60e`
+-	Image ID: `sha256:edfe9fecc75dd15d15045893ef42d0e8c0ef97b5939d1e5927236855534ff96f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1103d1d01d58f9f32ea235b06937ae0bd7a2a6580d77858ed485e85b5a4f0618`  
-		Last Modified: Thu, 17 Oct 2024 08:07:47 GMT  
-		Size: 7.2 MB (7183200 bytes)  
+	-	`sha256:fb9a0cb83574ddb1ea351cc05675c5c33fadd131a7daec1c7d7e15e57fe4c8de`  
+		Last Modified: Sat, 19 Oct 2024 11:54:06 GMT  
+		Size: 7.2 MB (7208945 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:06584a670674ebd3b133fad108f25fae9979fe85590de0978397b71c5cad7ab5`  
-		Last Modified: Thu, 17 Oct 2024 08:07:46 GMT  
-		Size: 14.0 KB (14009 bytes)  
+	-	`sha256:e53c9fcc1eae89abbda273c2d0df1ce877927e21e32b86394cebe3641834b049`  
+		Last Modified: Sat, 19 Oct 2024 11:54:05 GMT  
+		Size: 14.2 KB (14182 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:a42e2152212e85662654fc9e780f9de81ee3f0e93676975200ec1d26ca8f16c4
+$ docker pull clojure@sha256:646e932eaf88121ca6a252859a998c8e5c6e6fcaf8d02c55181bf9f085a8e13b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2900,13 +2900,13 @@ $ docker pull clojure@sha256:53462a9462a305f648ec76eae62ba5e591d888ad9a568212c10
 ### `clojure:temurin-11-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:2f582ac58f5b1e13af86eec3b5ffb2ae2b905d530caad94cc6c5efcfdb35c937
+$ docker pull clojure@sha256:e89bdf05b9d294fc850ef3e8d3b90bf2cb74f5799bcdce84c442db2e9ff57efe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **240.9 MB (240858753 bytes)**  
+-	Total Size: **240.9 MB (240857178 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ddc538a9cca111768e890ddabc14eda9d3a75093af18f5c1df78d5b53e069aa`
+-	Image ID: `sha256:279a3b2f701ffe630f13bd40d40d07fad1efba9a36436eed9fc964ff011f1161`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -2937,51 +2937,51 @@ CMD ["clj"]
 		Last Modified: Thu, 17 Oct 2024 01:14:39 GMT  
 		Size: 29.2 MB (29156341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7662b0994744e7d6c9bde45715804f3f36db580397e646e1a9829c0c74993c63`  
-		Last Modified: Thu, 17 Oct 2024 08:04:46 GMT  
-		Size: 142.4 MB (142356523 bytes)  
+	-	`sha256:7c6662f3a2b9a8c3547dd556f11c29ad4d8bafa4a8d2beccf7787b25b07805c8`  
+		Last Modified: Sat, 19 Oct 2024 11:49:35 GMT  
+		Size: 142.4 MB (142354834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637de206af550fd71e790b531751f6564c3b4422a4765d588ab435d6b71d393a`  
-		Last Modified: Thu, 17 Oct 2024 08:08:37 GMT  
-		Size: 69.3 MB (69345246 bytes)  
+	-	`sha256:fc594d2addec718ac08a4a23d03a69e7d0ba5a8e85f5b0ce902bf4e727925c43`  
+		Last Modified: Sat, 19 Oct 2024 11:55:06 GMT  
+		Size: 69.3 MB (69345356 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2c44eae8e292ec3a59005ebfb65966f2123594a41002e8523b3e3bac9e893b6`  
-		Last Modified: Thu, 17 Oct 2024 08:08:34 GMT  
-		Size: 611.0 B  
+	-	`sha256:29e2bbdabcd329212e95986fb7ae5bf53da3789ad943ac40c12802f395e4a4c7`  
+		Last Modified: Sat, 19 Oct 2024 11:55:04 GMT  
+		Size: 615.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:03d7b84dee5a5653ece0c78ea6e8063271984f808222fde3e4ee42745558cfba
+$ docker pull clojure@sha256:837d6176cddfcef20b0dbed063e1ffade9b07609155b4b264bb33b733e2b6a6c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4935484 bytes)**  
+-	Total Size: **5.0 MB (4961404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1e3c18ced38c299913a1c51af32e72c9459de522fdfb2f93589d7236c7cf675`
+-	Image ID: `sha256:ea4b6c1d44047d5b8693804661264e8e7eeb4084b16ad6cff0b44fe3bf50c689`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1a999d849503dd0f4e11772f75de463155b7ff855861bd4911f8e2bf11ce4057`  
-		Last Modified: Thu, 17 Oct 2024 08:08:35 GMT  
-		Size: 4.9 MB (4921403 bytes)  
+	-	`sha256:bb582ee530ff089f172a152eb3033e02ed0784ee72be2d6cfceeb038bd52e721`  
+		Last Modified: Sat, 19 Oct 2024 11:55:04 GMT  
+		Size: 4.9 MB (4947148 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:92fdd1d343842aed43806a79d362c35c8f85e94f91c03c9cea3e6dab7f1428ce`  
-		Last Modified: Thu, 17 Oct 2024 08:08:35 GMT  
-		Size: 14.1 KB (14081 bytes)  
+	-	`sha256:c502270dc776a477d3152a3e7a5a7dfecf6b0a8d83bacd2c095bc09219050817`  
+		Last Modified: Sat, 19 Oct 2024 11:55:03 GMT  
+		Size: 14.3 KB (14256 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-bullseye`
 
 ```console
-$ docker pull clojure@sha256:f75423c1664079c958fc87267b0e58903a1b6cf2493f64b7e0347e9ac3b923e7
+$ docker pull clojure@sha256:ebfed3fbd62f6b3473cd08c9d0b9d2ea25f6aa28af5492367e782b0750e0618f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3075,13 +3075,13 @@ $ docker pull clojure@sha256:b26b2e0df63ff73085c83f4a7bd6f5a0456b76cfcdd3d945d10
 ### `clojure:temurin-11-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:f26aa53d764d2aa57dfa85c5410dd158ad5155b257c5ad397ada570cc94ca628
+$ docker pull clojure@sha256:8a9e819f7ed1e2baae6b910aa79a09208e20a61c9dde35f7520f1a6bf780cf2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.6 MB (265558958 bytes)**  
+-	Total Size: **265.6 MB (265557335 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb6c6e1cff43e0652992b4b19f980e4e8107fd1f80c4d6a3e60f2d4a218d4d0f`
+-	Image ID: `sha256:b5bac7aef78a8cf147a8748ac70559d8a64de8bfe7e1f3c2cb91bf54f722bb4c`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -3112,51 +3112,51 @@ CMD ["clj"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1bda293784e347b2519c90ccae374d1fef0769a110f0539ea381e5d0173cef5f`  
-		Last Modified: Thu, 17 Oct 2024 08:05:45 GMT  
-		Size: 142.4 MB (142356620 bytes)  
+	-	`sha256:8c401c7f531d55485bd64ed4729ea50678e25946f3eaf1ab19487c5497b75ce3`  
+		Last Modified: Sat, 19 Oct 2024 11:50:38 GMT  
+		Size: 142.4 MB (142354834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32c05e41003ac86805de7b845a5875e74c40c76671bd8a5c23512babc22e02d5`  
-		Last Modified: Thu, 17 Oct 2024 08:09:35 GMT  
-		Size: 69.5 MB (69466801 bytes)  
+	-	`sha256:dc04cd4f9e3f29a7880732bc278005624116c146cae8a1ea0ddaf361a31f609a`  
+		Last Modified: Sat, 19 Oct 2024 11:56:03 GMT  
+		Size: 69.5 MB (69466962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4846c262d2b2b6d62709604ec56bc778b2aceb4a43e1d283e664537b3b30fadc`  
-		Last Modified: Thu, 17 Oct 2024 08:09:33 GMT  
-		Size: 610.0 B  
+	-	`sha256:1d56a326baf54b20e3fb6727688d0dd6525bc4e039dcb947c96a9dcbbe20e520`  
+		Last Modified: Sat, 19 Oct 2024 11:56:01 GMT  
+		Size: 612.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:2874ce29bd18fcc414421f9cc02d5360b934d62cbef9b10655d033694e2c23ec
+$ docker pull clojure@sha256:a8f1d4845611aac0a84ef5c405980a3fec4a7121f6beded7eeac5495b25686bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7229991 bytes)**  
+-	Total Size: **7.3 MB (7255910 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1366e5b9bcf46c796d5a68459a00f82d831abe1e32b346903ccc275b6bbcc357`
+-	Image ID: `sha256:6f07d096f83e0e83a0dbb00a47009936461269036d45da4facc8f423bb16a438`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a182b0efb885c7e9a9e7a990388086598e2a29d300cefdf521a2cf9af04d068b`  
-		Last Modified: Thu, 17 Oct 2024 08:09:34 GMT  
-		Size: 7.2 MB (7215982 bytes)  
+	-	`sha256:1c9b5089fb74699b105bde1101cc4676f38aa7311535bd99a7a2f1d5a06e4672`  
+		Last Modified: Sat, 19 Oct 2024 11:56:01 GMT  
+		Size: 7.2 MB (7241727 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bfb3a8772bfc585c9d03e29cdd36f1268bfdb00d6eebda0d404b1d70b8940374`  
-		Last Modified: Thu, 17 Oct 2024 08:09:33 GMT  
-		Size: 14.0 KB (14009 bytes)  
+	-	`sha256:d8aaf271ecc75e0dcd6d4dafe2b04d569d70f64c4c749205b3694a8e239b7327`  
+		Last Modified: Sat, 19 Oct 2024 11:56:01 GMT  
+		Size: 14.2 KB (14183 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:45ed4b55953071189c49bebc30196c38d00acca1ad0ca012b648f859f52f9757
+$ docker pull clojure@sha256:4f9b39b9fed7dfcc68b22b69d5a62779cd31b18529db37970eb2a86ae4b24236
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3250,13 +3250,13 @@ $ docker pull clojure@sha256:4211d5392794659d8f13e1640dee2fc50a6c61e7c73fbe01887
 ### `clojure:temurin-11-bullseye-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:aff7eedc5c3334ce2c138de03ecd7df44c43f5f5391917111f30ea747f981577
+$ docker pull clojure@sha256:8beca9a28775cb5f528cc7ca1c38d20473e483d95d80c2624eb5a2d081311296
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **231.5 MB (231506433 bytes)**  
+-	Total Size: **231.5 MB (231504457 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:474de96895e434aace31ed241cf4de962604a1ff7143f0546dd7994c923c0d8d`
+-	Image ID: `sha256:483d03c1d0e5f07601e22b4d1f0f0088fff0a05a40950ec094d355eab10f8338`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -3287,51 +3287,51 @@ CMD ["clj"]
 		Last Modified: Thu, 17 Oct 2024 01:15:14 GMT  
 		Size: 30.1 MB (30075757 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:552c07f22f7a24a94dcd10f61aa1a932f70c4b4c6f411f7d5e6fc0e25d319dc2`  
-		Last Modified: Thu, 17 Oct 2024 08:06:47 GMT  
-		Size: 142.4 MB (142356620 bytes)  
+	-	`sha256:aa6dc61836822badfada79fd5a7ebcd7d72c9f6ee4135bb13a6fa04e4f5fbbf5`  
+		Last Modified: Sat, 19 Oct 2024 08:55:56 GMT  
+		Size: 142.4 MB (142354770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a5020e75e5570d264494fe7246632178b14b22e6f41c813db09a3bac95aea47`  
-		Last Modified: Thu, 17 Oct 2024 08:10:30 GMT  
-		Size: 59.1 MB (59073413 bytes)  
+	-	`sha256:27d37cdea463a495d829a5a818ea7047133865a09436e67cd3bf59bb7fc17c8d`  
+		Last Modified: Sat, 19 Oct 2024 11:56:59 GMT  
+		Size: 59.1 MB (59073287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bdc57f6ce793dbf09e888d013b80c5358da6f92fbe1d0a487d8ee9efc9f28ef`  
-		Last Modified: Thu, 17 Oct 2024 08:10:28 GMT  
+	-	`sha256:dec96c5c1b88783d0a5114e0262b80db9d499ca7a5fbdb2244bc863922644da4`  
+		Last Modified: Sat, 19 Oct 2024 11:56:57 GMT  
 		Size: 611.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:ee78a726c352fce334f3533a25fe72480fb9904ceb8f1363df64226e57aecc85
+$ docker pull clojure@sha256:b7e2b63c129a78f3987dfd1acec8faa73ba515413473bc40d96eae249883361a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5140180 bytes)**  
+-	Total Size: **5.2 MB (5166099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4819b3198e87d1e2261081a50c8d207a91b88e984e3e60ccfce4c3a99e85a3db`
+-	Image ID: `sha256:3e926cd6b7d3b8fdc6d8370f036af349b1565c6901b71153f8b85de1bbef66ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44860e6581be918a985311c6f78a4465990fe58d9b664bc1c6449192243ad13d`  
-		Last Modified: Thu, 17 Oct 2024 08:10:29 GMT  
-		Size: 5.1 MB (5126098 bytes)  
+	-	`sha256:db9416ad9883a2baab5d6c76174255d7691eec76c5ba7542b0700b4814819a78`  
+		Last Modified: Sat, 19 Oct 2024 11:56:57 GMT  
+		Size: 5.2 MB (5151843 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:110b447c19a125edb3fe00d0902c48fda48123e29643102d1e4e383375ac02bf`  
-		Last Modified: Thu, 17 Oct 2024 08:10:28 GMT  
-		Size: 14.1 KB (14082 bytes)  
+	-	`sha256:5fa2ef7ab97a8528ea0fc982887da028068b66a6ae171ed5b3bb8206314264c0`  
+		Last Modified: Sat, 19 Oct 2024 11:56:57 GMT  
+		Size: 14.3 KB (14256 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-jammy`
 
 ```console
-$ docker pull clojure@sha256:627170abd06b6e141565772f2a8a54ca739e12d424fe3e6805e7f1a6e2eeefa8
+$ docker pull clojure@sha256:849792246fcd7915564fc79b776870eb872be33464f738446cad423a492f51b4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3460,28 +3460,28 @@ $ docker pull clojure@sha256:09c633eac789018552418d5b8ac4fe7ecbb496bbec26d1a8783
 ### `clojure:temurin-11-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:a3a329ae00571b2dd218eb9932a275344b729c0f705a95557fb217cdbde3bcbc
+$ docker pull clojure@sha256:7edda2a510745b7ad8bc3b9718fc2c126b5c48d1b5c8884e5e333c861fde9efe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.2 MB (235186157 bytes)**  
+-	Total Size: **234.2 MB (234163596 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e3bba0cd8712b0d70006cff1606683e6407698bcbd63a8f8d243bbc5970962`
+-	Image ID: `sha256:bf455c86a0295d180054bc2ab60472a3e759156dc6c090b466c74fcf46cd3232`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -3503,80 +3503,80 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV CLOJURE_VERSION=1.12.0.1479
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "94f29b9b66183bd58307c46fb561fd9e9148666bac13a4518a9931b6f989d830 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["clj"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8cc429601029ecb71c941cbfdd32b85983522d0f4ef294d6f2de0ba93bb2f778`  
-		Last Modified: Tue, 17 Sep 2024 01:37:28 GMT  
-		Size: 12.8 MB (12813215 bytes)  
+	-	`sha256:e2dece6d062dc0723f97a73605fb14fdb50c21ad91f9182d5756336b6456a39f`  
+		Last Modified: Sat, 19 Oct 2024 05:27:13 GMT  
+		Size: 12.8 MB (12828465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71de66288b0ec7e9aae2b4bf7e6ef063c8257132fae484daccc4426ba2ef757e`  
-		Last Modified: Tue, 17 Sep 2024 01:38:30 GMT  
-		Size: 142.4 MB (142360707 bytes)  
+	-	`sha256:2090d0aaf551ef5f17bb7d3e2acb1a1a78fe12319ddb90bbb350471476720988`  
+		Last Modified: Sat, 19 Oct 2024 05:31:20 GMT  
+		Size: 142.4 MB (142361342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92d116babd00a334d348e273dc4b1190d5f7af0cc521966e8453c5f765294905`  
-		Last Modified: Tue, 17 Sep 2024 01:38:20 GMT  
-		Size: 174.0 B  
+	-	`sha256:e6df1bfc79401022542ca45906e79ce4bc3a627d4d702b076f8b0cdb7f49b7a5`  
+		Last Modified: Sat, 19 Oct 2024 05:31:13 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b977d3c0b471428500a255bf597bf03cb55d47b047dc10e929b6cc0991dd25ea`  
-		Last Modified: Tue, 17 Sep 2024 01:38:20 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:deb49e148e6b4d5ef663ef5a51fd7a754899e160e77c39f5940478a043cb8775`  
+		Last Modified: Sat, 19 Oct 2024 05:31:14 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:403eaf9ed1e71366e127742d31528fa0beaab16f260061690dfb93958423edff`  
-		Last Modified: Tue, 17 Sep 2024 04:28:18 GMT  
-		Size: 51.6 MB (51612200 bytes)  
+	-	`sha256:b18658c23ad4e06b41ae67250a3e71a5b88034d8f9f6a6431bd92f4c4e245e54`  
+		Last Modified: Sat, 19 Oct 2024 11:58:03 GMT  
+		Size: 51.6 MB (51612546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:38c3c8602a618badcb4c648e333896eb21ff1952e9b6588a5525e8cb84b35b42`  
-		Last Modified: Tue, 17 Sep 2024 04:28:16 GMT  
-		Size: 614.0 B  
+	-	`sha256:4605710f37e8d095b75c23ee50cd2dbfe5c61ed61aaa1b7142057395dd1e2130`  
+		Last Modified: Sat, 19 Oct 2024 11:58:01 GMT  
+		Size: 615.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:dd79514dbc2e7edcca075fbba1798d6aac5c8267cd664c4ae53e89c9aec7b47d
+$ docker pull clojure@sha256:c013cd9bd6c9d949e24a80e58c9cde31fdf4e4a71f5e1af85e6e3ccdc8252205
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 MB (5777536 bytes)**  
+-	Total Size: **6.0 MB (5980635 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a219278a05145f5693089f59f188da382fd9e56b1760080153a33a74efbe9393`
+-	Image ID: `sha256:4765c406510622ea19517d53e010ce2b00675156021da090550cc29b63509269`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3579e8cb8f12c3750abd31a95aa3c05a3f6c841e708029697a190eeeb7516361`  
-		Last Modified: Tue, 17 Sep 2024 04:28:17 GMT  
-		Size: 5.8 MB (5763059 bytes)  
+	-	`sha256:76531d5452f0c3bbf145f26e8d1704555ef2a54513c67503e54a21f8ce890776`  
+		Last Modified: Sat, 19 Oct 2024 11:58:01 GMT  
+		Size: 6.0 MB (5966286 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7787eaf56e21d53bbf055c8611dbc0ecee9b2609003dad743ff23291cfb524ab`  
-		Last Modified: Tue, 17 Sep 2024 04:28:16 GMT  
-		Size: 14.5 KB (14477 bytes)  
+	-	`sha256:ae1f5d99e632a0aa122d5e7d4d518e7de87cc1c08f06b4e87e63193be876ca66`  
+		Last Modified: Sat, 19 Oct 2024 11:58:01 GMT  
+		Size: 14.3 KB (14349 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-lein`
 
 ```console
-$ docker pull clojure@sha256:f7a759f89a82c91022d52b2be44e80261853f07e407cb26cae361c831fc0ef83
+$ docker pull clojure@sha256:29758033a9529ad6e6bb8ec18baa2c9c2d2fe5129bba0ae8ca659ff7c7b297df
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3711,28 +3711,28 @@ $ docker pull clojure@sha256:86d12f4d0831c3dbdf5a069654301a792c0f2e8bcf125c90f61
 ### `clojure:temurin-11-lein` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:a07cea6f8ff4295e070c20dff58a641ba7a3158ba804cb477b4af142f19ad6a5
+$ docker pull clojure@sha256:f707d88255820360afaef7214f9e42f64b6125a32e7fafed14fabce02b3d7d47
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.8 MB (223812165 bytes)**  
+-	Total Size: **222.8 MB (222789731 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412ff4cf91cfc9c73b05e05d6542d37ccb55c008ce1e13d5c5af0d1aa537f38c`
+-	Image ID: `sha256:f3a870582edd04d9ab81f72d28305eaebf3f1484b8964c276999f36094bf143c`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -3754,86 +3754,86 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_VERSION=2.11.2
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN set -eux; apt-get update && apt-get install -y make git gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mkdir -p /root/.lein && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get purge -y --auto-remove gnupg wget # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_ROOT=1
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.12.0"]])' > project.clj   && lein deps && rm project.clj # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["lein" "repl"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8cc429601029ecb71c941cbfdd32b85983522d0f4ef294d6f2de0ba93bb2f778`  
-		Last Modified: Tue, 17 Sep 2024 01:37:28 GMT  
-		Size: 12.8 MB (12813215 bytes)  
+	-	`sha256:e2dece6d062dc0723f97a73605fb14fdb50c21ad91f9182d5756336b6456a39f`  
+		Last Modified: Sat, 19 Oct 2024 05:27:13 GMT  
+		Size: 12.8 MB (12828465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71de66288b0ec7e9aae2b4bf7e6ef063c8257132fae484daccc4426ba2ef757e`  
-		Last Modified: Tue, 17 Sep 2024 01:38:30 GMT  
-		Size: 142.4 MB (142360707 bytes)  
+	-	`sha256:2090d0aaf551ef5f17bb7d3e2acb1a1a78fe12319ddb90bbb350471476720988`  
+		Last Modified: Sat, 19 Oct 2024 05:31:20 GMT  
+		Size: 142.4 MB (142361342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92d116babd00a334d348e273dc4b1190d5f7af0cc521966e8453c5f765294905`  
-		Last Modified: Tue, 17 Sep 2024 01:38:20 GMT  
-		Size: 174.0 B  
+	-	`sha256:e6df1bfc79401022542ca45906e79ce4bc3a627d4d702b076f8b0cdb7f49b7a5`  
+		Last Modified: Sat, 19 Oct 2024 05:31:13 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b977d3c0b471428500a255bf597bf03cb55d47b047dc10e929b6cc0991dd25ea`  
-		Last Modified: Tue, 17 Sep 2024 01:38:20 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:deb49e148e6b4d5ef663ef5a51fd7a754899e160e77c39f5940478a043cb8775`  
+		Last Modified: Sat, 19 Oct 2024 05:31:14 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fa7a3441fa0754c449cdc00b247b1450e68c38d28f10b35c15343524983dd6c`  
-		Last Modified: Tue, 17 Sep 2024 04:22:32 GMT  
-		Size: 35.7 MB (35724706 bytes)  
+	-	`sha256:b9a1dfc0d09482fb233255a3f0cbdf9dd0de5d1384809b32f6b9db38768beeda`  
+		Last Modified: Sat, 19 Oct 2024 11:52:25 GMT  
+		Size: 35.7 MB (35725108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8182b0acbd175412395c1ebbe636357b7f13025284f38643d0d04625033c1ff`  
-		Last Modified: Tue, 17 Sep 2024 04:22:32 GMT  
-		Size: 4.5 MB (4514116 bytes)  
+	-	`sha256:b732011de54a90d28d2fcddb18a2e236c3ee6c8b65e5a3d07cc0410cda0ec46c`  
+		Last Modified: Sat, 19 Oct 2024 11:52:24 GMT  
+		Size: 4.5 MB (4514188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9dc8f0dfb436f64df4574a4ad7e4c34d413618db13cd65f86024cd7ff9044fdc
+$ docker pull clojure@sha256:54c855fa45680a4e2fe0e7b362afc6f45ff339ae8b83cdf24c74cbc889ac164e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5218313 bytes)**  
+-	Total Size: **5.4 MB (5420152 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc6a5352f659959e51811795a4534ae6a0db40c4cdb0260e7415260796f160ed`
+-	Image ID: `sha256:2f6b4e9e327f7c5b5ea0492020b52d14e8c5a89f2c9547483613e7d27f717df4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3560ed924fc01bccc1361cfc615536c9c859d59f5f2b7a451481ecbaf2b4a54b`  
-		Last Modified: Tue, 17 Sep 2024 04:22:31 GMT  
-		Size: 5.2 MB (5201469 bytes)  
+	-	`sha256:153e4253d47a9462463e36024568c6cf4e627a61d1cd55ac0b81fe3de79b3f6f`  
+		Last Modified: Sat, 19 Oct 2024 11:52:24 GMT  
+		Size: 5.4 MB (5403420 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:55b539ea75e544bf12c7fcdac38ca93a77179f220c7803646996e32d0f504b4a`  
-		Last Modified: Tue, 17 Sep 2024 04:22:30 GMT  
-		Size: 16.8 KB (16844 bytes)  
+	-	`sha256:e800afc37df146f551a774520634c226fdb23b4c88ad5c016c0c4a828cff67a4`  
+		Last Modified: Sat, 19 Oct 2024 11:52:24 GMT  
+		Size: 16.7 KB (16732 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-lein-2.11.2`
 
 ```console
-$ docker pull clojure@sha256:f7a759f89a82c91022d52b2be44e80261853f07e407cb26cae361c831fc0ef83
+$ docker pull clojure@sha256:29758033a9529ad6e6bb8ec18baa2c9c2d2fe5129bba0ae8ca659ff7c7b297df
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3968,28 +3968,28 @@ $ docker pull clojure@sha256:86d12f4d0831c3dbdf5a069654301a792c0f2e8bcf125c90f61
 ### `clojure:temurin-11-lein-2.11.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:a07cea6f8ff4295e070c20dff58a641ba7a3158ba804cb477b4af142f19ad6a5
+$ docker pull clojure@sha256:f707d88255820360afaef7214f9e42f64b6125a32e7fafed14fabce02b3d7d47
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.8 MB (223812165 bytes)**  
+-	Total Size: **222.8 MB (222789731 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412ff4cf91cfc9c73b05e05d6542d37ccb55c008ce1e13d5c5af0d1aa537f38c`
+-	Image ID: `sha256:f3a870582edd04d9ab81f72d28305eaebf3f1484b8964c276999f36094bf143c`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -4011,80 +4011,80 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_VERSION=2.11.2
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN set -eux; apt-get update && apt-get install -y make git gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mkdir -p /root/.lein && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get purge -y --auto-remove gnupg wget # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_ROOT=1
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.12.0"]])' > project.clj   && lein deps && rm project.clj # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["lein" "repl"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8cc429601029ecb71c941cbfdd32b85983522d0f4ef294d6f2de0ba93bb2f778`  
-		Last Modified: Tue, 17 Sep 2024 01:37:28 GMT  
-		Size: 12.8 MB (12813215 bytes)  
+	-	`sha256:e2dece6d062dc0723f97a73605fb14fdb50c21ad91f9182d5756336b6456a39f`  
+		Last Modified: Sat, 19 Oct 2024 05:27:13 GMT  
+		Size: 12.8 MB (12828465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71de66288b0ec7e9aae2b4bf7e6ef063c8257132fae484daccc4426ba2ef757e`  
-		Last Modified: Tue, 17 Sep 2024 01:38:30 GMT  
-		Size: 142.4 MB (142360707 bytes)  
+	-	`sha256:2090d0aaf551ef5f17bb7d3e2acb1a1a78fe12319ddb90bbb350471476720988`  
+		Last Modified: Sat, 19 Oct 2024 05:31:20 GMT  
+		Size: 142.4 MB (142361342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92d116babd00a334d348e273dc4b1190d5f7af0cc521966e8453c5f765294905`  
-		Last Modified: Tue, 17 Sep 2024 01:38:20 GMT  
-		Size: 174.0 B  
+	-	`sha256:e6df1bfc79401022542ca45906e79ce4bc3a627d4d702b076f8b0cdb7f49b7a5`  
+		Last Modified: Sat, 19 Oct 2024 05:31:13 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b977d3c0b471428500a255bf597bf03cb55d47b047dc10e929b6cc0991dd25ea`  
-		Last Modified: Tue, 17 Sep 2024 01:38:20 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:deb49e148e6b4d5ef663ef5a51fd7a754899e160e77c39f5940478a043cb8775`  
+		Last Modified: Sat, 19 Oct 2024 05:31:14 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fa7a3441fa0754c449cdc00b247b1450e68c38d28f10b35c15343524983dd6c`  
-		Last Modified: Tue, 17 Sep 2024 04:22:32 GMT  
-		Size: 35.7 MB (35724706 bytes)  
+	-	`sha256:b9a1dfc0d09482fb233255a3f0cbdf9dd0de5d1384809b32f6b9db38768beeda`  
+		Last Modified: Sat, 19 Oct 2024 11:52:25 GMT  
+		Size: 35.7 MB (35725108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8182b0acbd175412395c1ebbe636357b7f13025284f38643d0d04625033c1ff`  
-		Last Modified: Tue, 17 Sep 2024 04:22:32 GMT  
-		Size: 4.5 MB (4514116 bytes)  
+	-	`sha256:b732011de54a90d28d2fcddb18a2e236c3ee6c8b65e5a3d07cc0410cda0ec46c`  
+		Last Modified: Sat, 19 Oct 2024 11:52:24 GMT  
+		Size: 4.5 MB (4514188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-2.11.2` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9dc8f0dfb436f64df4574a4ad7e4c34d413618db13cd65f86024cd7ff9044fdc
+$ docker pull clojure@sha256:54c855fa45680a4e2fe0e7b362afc6f45ff339ae8b83cdf24c74cbc889ac164e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5218313 bytes)**  
+-	Total Size: **5.4 MB (5420152 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc6a5352f659959e51811795a4534ae6a0db40c4cdb0260e7415260796f160ed`
+-	Image ID: `sha256:2f6b4e9e327f7c5b5ea0492020b52d14e8c5a89f2c9547483613e7d27f717df4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3560ed924fc01bccc1361cfc615536c9c859d59f5f2b7a451481ecbaf2b4a54b`  
-		Last Modified: Tue, 17 Sep 2024 04:22:31 GMT  
-		Size: 5.2 MB (5201469 bytes)  
+	-	`sha256:153e4253d47a9462463e36024568c6cf4e627a61d1cd55ac0b81fe3de79b3f6f`  
+		Last Modified: Sat, 19 Oct 2024 11:52:24 GMT  
+		Size: 5.4 MB (5403420 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:55b539ea75e544bf12c7fcdac38ca93a77179f220c7803646996e32d0f504b4a`  
-		Last Modified: Tue, 17 Sep 2024 04:22:30 GMT  
-		Size: 16.8 KB (16844 bytes)  
+	-	`sha256:e800afc37df146f551a774520634c226fdb23b4c88ad5c016c0c4a828cff67a4`  
+		Last Modified: Sat, 19 Oct 2024 11:52:24 GMT  
+		Size: 16.7 KB (16732 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-lein-2.11.2-alpine`
@@ -4215,7 +4215,7 @@ $ docker pull clojure@sha256:504cc80926adb1d6d9a2c5605d5e3f0f60434939a99d33c2009
 ## `clojure:temurin-11-lein-2.11.2-bookworm`
 
 ```console
-$ docker pull clojure@sha256:29e9cf07af6561945470270206bd455d3ab5d6608975695ddb062c0079a786e9
+$ docker pull clojure@sha256:3e4bc737e641a18bd1a91c37c2319b190c16db76685ca25101f0816f567eb888
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4315,13 +4315,13 @@ $ docker pull clojure@sha256:47da0fbed88de772db503f93f762a8a176172a5ec0b801dfe2e
 ### `clojure:temurin-11-lein-2.11.2-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:bcde3fb1f49a1671822a49a1538472b30bbcfefcf96cefcdf30c7a78337d4eb4
+$ docker pull clojure@sha256:ac3671890e2940333cef740426c91dfcf776dcc5742f2d9cf1b01373667c3ada
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **258.5 MB (258486079 bytes)**  
+-	Total Size: **258.5 MB (258484236 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:961caf6ce5967cafb34aeaac76d958ed6b38ede20934a89c1cac8305b0d7f60b`
+-	Image ID: `sha256:458c53fe44d8df80618028102a4afd4f447ff924793b1ce9d68ac533024df6b1`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -4358,51 +4358,51 @@ CMD ["lein" "repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:19 GMT  
 		Size: 49.6 MB (49584978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a37fe4b3f26ea0b745d94ce1fca7f6c7322f18dbef079c4b027c82bbfb40ef1e`  
-		Last Modified: Thu, 17 Oct 2024 08:03:37 GMT  
-		Size: 142.4 MB (142356628 bytes)  
+	-	`sha256:e112fccb06501d78425de14a7cad0e916a7b2ff8acf9a5f1680aa28c73367de2`  
+		Last Modified: Sat, 19 Oct 2024 11:48:35 GMT  
+		Size: 142.4 MB (142354833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23b89449416c5f5a4d94aef6f05d404f7f16fcac27359f0cf87bcd17d15cccdf`  
-		Last Modified: Thu, 17 Oct 2024 08:03:36 GMT  
-		Size: 62.0 MB (62030244 bytes)  
+	-	`sha256:f8903d8cbc6a8c3d74e98e58b46052378fef8feb08f1ec0e9ce55c182d3cb327`  
+		Last Modified: Sat, 19 Oct 2024 11:48:34 GMT  
+		Size: 62.0 MB (62030201 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19b15bfcfeab6c6756e3573322e83efa38480654b5acfed325fe0e9c6f1c3779`  
-		Last Modified: Thu, 17 Oct 2024 08:03:34 GMT  
-		Size: 4.5 MB (4514197 bytes)  
+	-	`sha256:8415c4e2a2696272759722cd688c499eaa1a474b7ec6aa89e49a15bd62c0d1db`  
+		Last Modified: Sat, 19 Oct 2024 11:48:32 GMT  
+		Size: 4.5 MB (4514192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-2.11.2-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:de1e6bcf558e209b72f22e10902b5b6ebd359d364bcdce2a5f75a82bfa5ce065
+$ docker pull clojure@sha256:806fbb5cc11721ac653d4f5211dab3fc67f24928ae6269749c061e5bfbf3219c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6563413 bytes)**  
+-	Total Size: **6.6 MB (6587742 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cdb4f0edc7191e2cf88383b30fa49f293ecb784509c11f359ed183dbf6e0d67`
+-	Image ID: `sha256:524d388c14275eb3a5d5075572204c29a5d400039aff6f3da6880f6f9149c00c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d9d6f9b17411bd87b896fb51b62a716f795bb8974fbf21e74c95bb3bb2957e76`  
-		Last Modified: Thu, 17 Oct 2024 08:03:34 GMT  
-		Size: 6.5 MB (6547220 bytes)  
+	-	`sha256:7c427cf07bc7c12ce17553e423b2a0f8b5fc5c0c538acbd7ed3b0a164599ed04`  
+		Last Modified: Sat, 19 Oct 2024 11:48:32 GMT  
+		Size: 6.6 MB (6571375 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8687ff5b3d53a20160eb77c446a04b5d15a69e8fc3ba1bff3ae04bd202ac65c3`  
-		Last Modified: Thu, 17 Oct 2024 08:03:33 GMT  
-		Size: 16.2 KB (16193 bytes)  
+	-	`sha256:a6815e87fdca3ba060723f58e3f69642786d1e11ab7b79871554645704377a15`  
+		Last Modified: Sat, 19 Oct 2024 11:48:32 GMT  
+		Size: 16.4 KB (16367 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-lein-2.11.2-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:9a87bb355c348e77000e8b8921101e43bf4f9868ea7e83dc080a5e9475590b8f
+$ docker pull clojure@sha256:13db5acc022a9308dfdabdd7c1a853329878bdac538b2d6210ea5f458a459f91
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4502,13 +4502,13 @@ $ docker pull clojure@sha256:d1dda0cba624583d5947472c2cc7eb0bfadc7ade5c0dfde94ba
 ### `clojure:temurin-11-lein-2.11.2-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:ac1fda5a6147376e40c81eb6c05beb767084561ee190b9765b97e85dd4c81eeb
+$ docker pull clojure@sha256:c0a18dfbf6632af775af7eebc077dd446edd635d8c300e135c43cb537a46c0ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **227.5 MB (227453893 bytes)**  
+-	Total Size: **227.5 MB (227452178 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5a5d14d8238ef85a67c01537bc22a8f07dcc8c22d2105f484b804ceee7935f4b`
+-	Image ID: `sha256:ea4fdcf9521fa43f3a7ebc74578afa841a06a274f7d7b4ff19b70c12fca15366`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -4545,51 +4545,51 @@ CMD ["lein" "repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:39 GMT  
 		Size: 29.2 MB (29156341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7662b0994744e7d6c9bde45715804f3f36db580397e646e1a9829c0c74993c63`  
-		Last Modified: Thu, 17 Oct 2024 08:04:46 GMT  
-		Size: 142.4 MB (142356523 bytes)  
+	-	`sha256:7c6662f3a2b9a8c3547dd556f11c29ad4d8bafa4a8d2beccf7787b25b07805c8`  
+		Last Modified: Sat, 19 Oct 2024 11:49:35 GMT  
+		Size: 142.4 MB (142354834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcdceb44efe6f8a5188df72b31a626be1e7911a7d7f61e191bac88e997f1c415`  
-		Last Modified: Thu, 17 Oct 2024 08:04:44 GMT  
-		Size: 51.4 MB (51426786 bytes)  
+	-	`sha256:18d75ca80aede42872f834174b70988e4a81374bc94507b62c0b9f08f534562f`  
+		Last Modified: Sat, 19 Oct 2024 11:49:33 GMT  
+		Size: 51.4 MB (51426812 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:668bf77ddc4332f42cbf9de110146a1a88736213da2167281fef6d4243d28003`  
-		Last Modified: Thu, 17 Oct 2024 08:04:44 GMT  
-		Size: 4.5 MB (4514211 bytes)  
+	-	`sha256:e8a46d85e3ba2be1949b7c85a5d27bd605e0e550cdd13f79a1702df13c1ab501`  
+		Last Modified: Sat, 19 Oct 2024 11:49:32 GMT  
+		Size: 4.5 MB (4514159 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-2.11.2-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:f659a7ed5b57d6b847338229a0d9bfa5c91277113209213d8f817b1d892f9394
+$ docker pull clojure@sha256:3646b9ba58ac9bddc0be0dc602f6800742198a5f302908843717d82b4e588ea3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4346578 bytes)**  
+-	Total Size: **4.4 MB (4370801 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43a7d2eb3f1507259ea7c4b20eafe132dc62d72aa896f257ec41ba5318d04ee0`
+-	Image ID: `sha256:4b600847cfb37a7410457aecd75753cd7ff258e268b60d1b54822b630d3297e3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:47b56bee6b4a07eccf00162ff5edd8abc8b5298145b1e819b615e8df058e66dd`  
-		Last Modified: Thu, 17 Oct 2024 08:04:43 GMT  
-		Size: 4.3 MB (4330341 bytes)  
+	-	`sha256:919051f66c3b8b0bad52c6da460855d236adafa44407a36f4d0ea5cbea2f8910`  
+		Last Modified: Sat, 19 Oct 2024 11:49:32 GMT  
+		Size: 4.4 MB (4354390 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:90c6deaf50ebf316248654ab1a687dbe1e771629e198dbff7ac139cc5b53658e`  
-		Last Modified: Thu, 17 Oct 2024 08:04:43 GMT  
-		Size: 16.2 KB (16237 bytes)  
+	-	`sha256:bb541f34de6ea0cfdbfbc9cdd61ff0d4bac746d938ccf3a7ae06878dfa7668eb`  
+		Last Modified: Sat, 19 Oct 2024 11:49:31 GMT  
+		Size: 16.4 KB (16411 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-lein-2.11.2-bullseye`
 
 ```console
-$ docker pull clojure@sha256:58f56a258ffdd35304116213d40b1662b14ddb1b964691d8d08f309f4dc05f85
+$ docker pull clojure@sha256:062a5b23e45451d7daae10321f578fae92eef1c7f39757c260e3555bedb79f67
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4689,13 +4689,13 @@ $ docker pull clojure@sha256:801275f8e1201522cee30874f6cdc61916391bc4a11c81d5e1a
 ### `clojure:temurin-11-lein-2.11.2-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:d6b2edf6e2b77c99f430ce6cd41272d4a6e7555f6d119a8b13c8939dcf2412be
+$ docker pull clojure@sha256:a45fe3eeec1858a4337d523837d5694e52cca054c5683bf3f887629145099011
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **253.4 MB (253426763 bytes)**  
+-	Total Size: **253.4 MB (253424896 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:07c14565faccbe5c034f8af5b0c2a427acecfe248e4d7c1e16c699033536fcb5`
+-	Image ID: `sha256:bdd36876485bda527d81ba334a6e0276eb9616c0ad4dfe41d2f7f918a7791b1e`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -4732,51 +4732,51 @@ CMD ["lein" "repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1bda293784e347b2519c90ccae374d1fef0769a110f0539ea381e5d0173cef5f`  
-		Last Modified: Thu, 17 Oct 2024 08:05:45 GMT  
-		Size: 142.4 MB (142356620 bytes)  
+	-	`sha256:8c401c7f531d55485bd64ed4729ea50678e25946f3eaf1ab19487c5497b75ce3`  
+		Last Modified: Sat, 19 Oct 2024 11:50:38 GMT  
+		Size: 142.4 MB (142354834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:099c2976700d180fad35a3cf2615ee6131277116d9f84f2a638784a29bba9e62`  
-		Last Modified: Thu, 17 Oct 2024 08:05:43 GMT  
-		Size: 52.8 MB (52821025 bytes)  
+	-	`sha256:8cbe15e94c2f8a78866f43eab612386a7f11d5d346adadc18c2f3f58ff8a48ec`  
+		Last Modified: Sat, 19 Oct 2024 11:50:35 GMT  
+		Size: 52.8 MB (52820961 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df1f91ebf1ee94cc971489eb4dbc4c5467e5b4347dce5cca2128fb962c986731`  
-		Last Modified: Thu, 17 Oct 2024 08:05:41 GMT  
-		Size: 4.5 MB (4514191 bytes)  
+	-	`sha256:589a50c52c36410ce5e8f1d0df7af8b10da0b5ac5a78d92a4283563abd2bd884`  
+		Last Modified: Sat, 19 Oct 2024 11:50:34 GMT  
+		Size: 4.5 MB (4514174 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-2.11.2-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:3c1735ad0313a80efc11363b4e9a52cf0693d1f35185c1dccf20f02edea98f55
+$ docker pull clojure@sha256:7f3fd02a447148e32601cd3d023a19fd681f2a1b32676269cecfd70e44490c65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6648378 bytes)**  
+-	Total Size: **6.7 MB (6673023 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08eab9d53363a01e44c30a8b6b5ba22a7f753ef0d7d48a7e8f28f3fb8d6acc5d`
+-	Image ID: `sha256:5eadac20bdf0bcb0555f4dce22b4b4c92cf7336ddb7089ab8f5654e6d1521bf0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:aba369f69cc442f9160b2618ae418d06b8e6f93797263207c7920c5d99c0b142`  
-		Last Modified: Thu, 17 Oct 2024 08:05:41 GMT  
-		Size: 6.6 MB (6632185 bytes)  
+	-	`sha256:2de97677c2f9bd378734b81d9d6f0f8cbe3f748a7880b89b83d731582f227e04`  
+		Last Modified: Sat, 19 Oct 2024 11:50:34 GMT  
+		Size: 6.7 MB (6656658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0489bd944f5e6d87ecc3e4e61a950615f6d527b4bf78add457e51a1f29d6103e`  
-		Last Modified: Thu, 17 Oct 2024 08:05:41 GMT  
-		Size: 16.2 KB (16193 bytes)  
+	-	`sha256:4d8b409cafe87ddb05ac8ef514d3d71eeb63091d61b99529a91edd2a19977c9d`  
+		Last Modified: Sat, 19 Oct 2024 11:50:33 GMT  
+		Size: 16.4 KB (16365 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-lein-2.11.2-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:a1adec6c7b1c8fdccbc0f34fccb345213cdd9e4ddae5f2b0ededb22b5a55667a
+$ docker pull clojure@sha256:7aca839d7f3609adf431a495eb12244a0926fe9f6490cced9b279d4f90daa35e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4876,13 +4876,13 @@ $ docker pull clojure@sha256:710607603bef5e0357c13e209f908f78ad2ed5adb46281b791f
 ### `clojure:temurin-11-lein-2.11.2-bullseye-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:c13cef164b80f497bc1d09a67c878ecf832d60cec6e84aaf93e950393b816e6a
+$ docker pull clojure@sha256:c7e15a3e1db0d0bfb9a778fe7a29e2f671d44046986e37badf498c14e72f034e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **220.3 MB (220259494 bytes)**  
+-	Total Size: **220.3 MB (220257728 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3321de484f8b178fc4229ab976e84d3cef66ec3031874095629ab6e01d1cbb26`
+-	Image ID: `sha256:1316a2a8fd218db76b8aa91753d2124246fb563291133978979b2ac4f0fe9fc8`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -4919,51 +4919,51 @@ CMD ["lein" "repl"]
 		Last Modified: Thu, 17 Oct 2024 01:15:14 GMT  
 		Size: 30.1 MB (30075757 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:552c07f22f7a24a94dcd10f61aa1a932f70c4b4c6f411f7d5e6fc0e25d319dc2`  
-		Last Modified: Thu, 17 Oct 2024 08:06:47 GMT  
-		Size: 142.4 MB (142356620 bytes)  
+	-	`sha256:aa6dc61836822badfada79fd5a7ebcd7d72c9f6ee4135bb13a6fa04e4f5fbbf5`  
+		Last Modified: Sat, 19 Oct 2024 08:55:56 GMT  
+		Size: 142.4 MB (142354770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5765bd7987dbf124ab1d1f68b89b890e2a51885ab2dc1ce0d0226de8fceb39e`  
-		Last Modified: Thu, 17 Oct 2024 08:06:45 GMT  
-		Size: 43.3 MB (43312890 bytes)  
+	-	`sha256:0a470ea18ca0c2ab3a88f9753be41ebbf3aa7ba1ccb54cfe1e2ce1b4bb16aeaa`  
+		Last Modified: Sat, 19 Oct 2024 11:51:32 GMT  
+		Size: 43.3 MB (43312970 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2a75ded0268569aada76c92a177b3e03ca15ae0b6d5054800e47a60e0d77c44`  
-		Last Modified: Thu, 17 Oct 2024 08:06:44 GMT  
-		Size: 4.5 MB (4514195 bytes)  
+	-	`sha256:cbb7d33ab2ca72efc6ffbc47ca7c79261b12bc7fadc5ac40936727c784431e83`  
+		Last Modified: Sat, 19 Oct 2024 11:51:31 GMT  
+		Size: 4.5 MB (4514199 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-2.11.2-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c5d5e650c67461f3c93a1768326488ad31bcb596448995d80116af3921273f9a
+$ docker pull clojure@sha256:2a796d74af9e4566ec5bca1368c3ee7ea2a9c667c469b033c9fc343d026a336b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.6 MB (4594654 bytes)**  
+-	Total Size: **4.6 MB (4619195 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2ee808947b825fc90315e453b406691b23a8cb58ffb364b94a1f4cd310eb3c9`
+-	Image ID: `sha256:f7ef1b8aafc2109b36b00affe163d91f903b27adbbec0280c5bd8502c18b05a7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eaea6ea8d9aeea5301b23b582c04b70a10f14ff6d1cbe48e1765e162da6a5efb`  
-		Last Modified: Thu, 17 Oct 2024 08:06:44 GMT  
-		Size: 4.6 MB (4578416 bytes)  
+	-	`sha256:f544c348e28d42c47b2f6c0c7ad9d066c9fedc3608d355d85745143fbec93c4b`  
+		Last Modified: Sat, 19 Oct 2024 11:51:31 GMT  
+		Size: 4.6 MB (4602783 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4d282d59f9e01fbab62906971bf7380e6b2d94d79e90461af50da9d1b200ccad`  
-		Last Modified: Thu, 17 Oct 2024 08:06:44 GMT  
-		Size: 16.2 KB (16238 bytes)  
+	-	`sha256:fe0ac9cf32679f32dc981066bc58b1b1736e45e01a4361e6820bdf27f19a1169`  
+		Last Modified: Sat, 19 Oct 2024 11:51:30 GMT  
+		Size: 16.4 KB (16412 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-lein-2.11.2-jammy`
 
 ```console
-$ docker pull clojure@sha256:f7a759f89a82c91022d52b2be44e80261853f07e407cb26cae361c831fc0ef83
+$ docker pull clojure@sha256:29758033a9529ad6e6bb8ec18baa2c9c2d2fe5129bba0ae8ca659ff7c7b297df
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5098,28 +5098,28 @@ $ docker pull clojure@sha256:86d12f4d0831c3dbdf5a069654301a792c0f2e8bcf125c90f61
 ### `clojure:temurin-11-lein-2.11.2-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:a07cea6f8ff4295e070c20dff58a641ba7a3158ba804cb477b4af142f19ad6a5
+$ docker pull clojure@sha256:f707d88255820360afaef7214f9e42f64b6125a32e7fafed14fabce02b3d7d47
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.8 MB (223812165 bytes)**  
+-	Total Size: **222.8 MB (222789731 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412ff4cf91cfc9c73b05e05d6542d37ccb55c008ce1e13d5c5af0d1aa537f38c`
+-	Image ID: `sha256:f3a870582edd04d9ab81f72d28305eaebf3f1484b8964c276999f36094bf143c`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -5141,86 +5141,86 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_VERSION=2.11.2
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN set -eux; apt-get update && apt-get install -y make git gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mkdir -p /root/.lein && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get purge -y --auto-remove gnupg wget # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_ROOT=1
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.12.0"]])' > project.clj   && lein deps && rm project.clj # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["lein" "repl"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8cc429601029ecb71c941cbfdd32b85983522d0f4ef294d6f2de0ba93bb2f778`  
-		Last Modified: Tue, 17 Sep 2024 01:37:28 GMT  
-		Size: 12.8 MB (12813215 bytes)  
+	-	`sha256:e2dece6d062dc0723f97a73605fb14fdb50c21ad91f9182d5756336b6456a39f`  
+		Last Modified: Sat, 19 Oct 2024 05:27:13 GMT  
+		Size: 12.8 MB (12828465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71de66288b0ec7e9aae2b4bf7e6ef063c8257132fae484daccc4426ba2ef757e`  
-		Last Modified: Tue, 17 Sep 2024 01:38:30 GMT  
-		Size: 142.4 MB (142360707 bytes)  
+	-	`sha256:2090d0aaf551ef5f17bb7d3e2acb1a1a78fe12319ddb90bbb350471476720988`  
+		Last Modified: Sat, 19 Oct 2024 05:31:20 GMT  
+		Size: 142.4 MB (142361342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92d116babd00a334d348e273dc4b1190d5f7af0cc521966e8453c5f765294905`  
-		Last Modified: Tue, 17 Sep 2024 01:38:20 GMT  
-		Size: 174.0 B  
+	-	`sha256:e6df1bfc79401022542ca45906e79ce4bc3a627d4d702b076f8b0cdb7f49b7a5`  
+		Last Modified: Sat, 19 Oct 2024 05:31:13 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b977d3c0b471428500a255bf597bf03cb55d47b047dc10e929b6cc0991dd25ea`  
-		Last Modified: Tue, 17 Sep 2024 01:38:20 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:deb49e148e6b4d5ef663ef5a51fd7a754899e160e77c39f5940478a043cb8775`  
+		Last Modified: Sat, 19 Oct 2024 05:31:14 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fa7a3441fa0754c449cdc00b247b1450e68c38d28f10b35c15343524983dd6c`  
-		Last Modified: Tue, 17 Sep 2024 04:22:32 GMT  
-		Size: 35.7 MB (35724706 bytes)  
+	-	`sha256:b9a1dfc0d09482fb233255a3f0cbdf9dd0de5d1384809b32f6b9db38768beeda`  
+		Last Modified: Sat, 19 Oct 2024 11:52:25 GMT  
+		Size: 35.7 MB (35725108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8182b0acbd175412395c1ebbe636357b7f13025284f38643d0d04625033c1ff`  
-		Last Modified: Tue, 17 Sep 2024 04:22:32 GMT  
-		Size: 4.5 MB (4514116 bytes)  
+	-	`sha256:b732011de54a90d28d2fcddb18a2e236c3ee6c8b65e5a3d07cc0410cda0ec46c`  
+		Last Modified: Sat, 19 Oct 2024 11:52:24 GMT  
+		Size: 4.5 MB (4514188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-2.11.2-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9dc8f0dfb436f64df4574a4ad7e4c34d413618db13cd65f86024cd7ff9044fdc
+$ docker pull clojure@sha256:54c855fa45680a4e2fe0e7b362afc6f45ff339ae8b83cdf24c74cbc889ac164e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5218313 bytes)**  
+-	Total Size: **5.4 MB (5420152 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc6a5352f659959e51811795a4534ae6a0db40c4cdb0260e7415260796f160ed`
+-	Image ID: `sha256:2f6b4e9e327f7c5b5ea0492020b52d14e8c5a89f2c9547483613e7d27f717df4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3560ed924fc01bccc1361cfc615536c9c859d59f5f2b7a451481ecbaf2b4a54b`  
-		Last Modified: Tue, 17 Sep 2024 04:22:31 GMT  
-		Size: 5.2 MB (5201469 bytes)  
+	-	`sha256:153e4253d47a9462463e36024568c6cf4e627a61d1cd55ac0b81fe3de79b3f6f`  
+		Last Modified: Sat, 19 Oct 2024 11:52:24 GMT  
+		Size: 5.4 MB (5403420 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:55b539ea75e544bf12c7fcdac38ca93a77179f220c7803646996e32d0f504b4a`  
-		Last Modified: Tue, 17 Sep 2024 04:22:30 GMT  
-		Size: 16.8 KB (16844 bytes)  
+	-	`sha256:e800afc37df146f551a774520634c226fdb23b4c88ad5c016c0c4a828cff67a4`  
+		Last Modified: Sat, 19 Oct 2024 11:52:24 GMT  
+		Size: 16.7 KB (16732 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-lein-2.11.2-noble`
 
 ```console
-$ docker pull clojure@sha256:cdc0e805f0eebb7dd88ccc5baed6d5598a2b98d0ce6094ce4bc94f46a642d93e
+$ docker pull clojure@sha256:f2935a9893b4d8e8baeeabd35f7a448ecdf963cee490e15cd9becae8b12cb5df
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5355,28 +5355,28 @@ $ docker pull clojure@sha256:8872cb8d85d1bbe5ca7bc1308eb9b7dc6f81dc57e6e73ae8337
 ### `clojure:temurin-11-lein-2.11.2-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:3d2b81adff10f19f4222591a0d4c961d9d22c05eb758f1a2e80f5a32bfd8d2df
+$ docker pull clojure@sha256:45f6c94a04e064f72d61b9964f405c8a39435e29b8d649cc420cfec1fab6d5bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **228.7 MB (228710016 bytes)**  
+-	Total Size: **227.6 MB (227638459 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:35f86abf8121648e9592277394785c7dd4451f4a4dbc2d5fbe1b574883f6fd88`
+-	Image ID: `sha256:f095acdd0b10259c733f2320f4294905a17886c09688a0b3e52b8cc568794dc6`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -5417,61 +5417,61 @@ CMD ["lein" "repl"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:185af607866372c42b75ce6a89acba6d7e5d2cb54d2fb846f7d86da63371897e`  
-		Last Modified: Wed, 16 Oct 2024 01:15:52 GMT  
-		Size: 13.8 MB (13798568 bytes)  
+	-	`sha256:53f4eec6f561250a0d70c55e6bd99d1331023a580a505800e59b70664894053d`  
+		Last Modified: Sat, 19 Oct 2024 05:28:16 GMT  
+		Size: 13.8 MB (13796069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f223b26986d5ef596a3bc2e5b9fa8ed2a7d4eee787dfc1be4c5580430d434670`  
-		Last Modified: Wed, 16 Oct 2024 01:16:57 GMT  
-		Size: 142.4 MB (142362351 bytes)  
+	-	`sha256:c6823e6b50ca3c68636f1e8736daaad4cf87e816d2fc06e5c59e8c56517630d6`  
+		Last Modified: Sat, 19 Oct 2024 05:32:43 GMT  
+		Size: 142.4 MB (142360273 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:707e03b04fd118f54ff43a10a97ae63ba84814cdd5c3efaafe1a2552b724de1e`  
-		Last Modified: Wed, 16 Oct 2024 01:16:48 GMT  
-		Size: 175.0 B  
+	-	`sha256:e81a958a8065d543f5c21cb040292fcb94219d94a0bc35d63e21bf42a8f8d1e0`  
+		Last Modified: Sat, 19 Oct 2024 05:32:39 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3946524c733421f02a866a95c00356aa20a295a769c12850454ab658d217f4e3`  
-		Last Modified: Wed, 16 Oct 2024 01:16:48 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:210d02a261d2900a956e2b1800dce8ac95740893c658be7f61eb981e7da23598`  
+		Last Modified: Sat, 19 Oct 2024 05:32:39 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a481f9808c3b9d16f8314e7de7349c599071df5482fc462edb445b0737f11481`  
-		Last Modified: Wed, 16 Oct 2024 02:15:25 GMT  
-		Size: 38.1 MB (38079789 bytes)  
+	-	`sha256:725c5277b7a036b817e52a4a9d48eebf43bbb2eacefb304487203d2af28ff94b`  
+		Last Modified: Sat, 19 Oct 2024 11:53:13 GMT  
+		Size: 38.1 MB (38079840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99cb0c913c03f664727f3d67e7217856fc1f11c4b04a3ee000e58cfbf7003726`  
-		Last Modified: Wed, 16 Oct 2024 02:15:25 GMT  
-		Size: 4.5 MB (4514190 bytes)  
+	-	`sha256:2b7ff75965a70407747cd13f353710b3965c13e92bb1fcd22096452d41834e54`  
+		Last Modified: Sat, 19 Oct 2024 11:53:12 GMT  
+		Size: 4.5 MB (4514133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-2.11.2-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:8f3ba75731e6a6497da0a4be38c4de4be820ae33108aa915ba6a3efe99f599ec
+$ docker pull clojure@sha256:2ccb08d43440ea18f35e021aaa187012a3934655d5e7e4d31e1a1de965d6a5c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4859643 bytes)**  
+-	Total Size: **4.9 MB (4885442 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1b81ba4ce4f15166605f0e01038c689e393d8f2c6bbf20b9a71ac0b093cf44c`
+-	Image ID: `sha256:b85575a06be342414e719a2e49c42ba99683e3e5679a5c7b61d43e66ecaa705f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:af5bab19c52cf2c4bceefa351cef0bdd5dd8e886023ad446a8e475c2464b434c`  
-		Last Modified: Wed, 16 Oct 2024 02:15:24 GMT  
-		Size: 4.8 MB (4843639 bytes)  
+	-	`sha256:d4dc6e49eb045de52b27f96bb3ed49b9a760fe403af576ffed1ebe58e418120d`  
+		Last Modified: Sat, 19 Oct 2024 11:53:12 GMT  
+		Size: 4.9 MB (4869384 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9560eb43d718c46517883189542d5368249ef75d4eac6a8ef3aa30b52d8156ef`  
-		Last Modified: Wed, 16 Oct 2024 02:15:24 GMT  
-		Size: 16.0 KB (16004 bytes)  
+	-	`sha256:3858fc2c4686f58e424aad7a532c06509b63db07a1654098dd7350cdb51e9451`  
+		Last Modified: Sat, 19 Oct 2024 11:53:11 GMT  
+		Size: 16.1 KB (16058 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-lein-alpine`
@@ -5602,7 +5602,7 @@ $ docker pull clojure@sha256:504cc80926adb1d6d9a2c5605d5e3f0f60434939a99d33c2009
 ## `clojure:temurin-11-lein-bookworm`
 
 ```console
-$ docker pull clojure@sha256:29e9cf07af6561945470270206bd455d3ab5d6608975695ddb062c0079a786e9
+$ docker pull clojure@sha256:3e4bc737e641a18bd1a91c37c2319b190c16db76685ca25101f0816f567eb888
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5702,13 +5702,13 @@ $ docker pull clojure@sha256:47da0fbed88de772db503f93f762a8a176172a5ec0b801dfe2e
 ### `clojure:temurin-11-lein-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:bcde3fb1f49a1671822a49a1538472b30bbcfefcf96cefcdf30c7a78337d4eb4
+$ docker pull clojure@sha256:ac3671890e2940333cef740426c91dfcf776dcc5742f2d9cf1b01373667c3ada
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **258.5 MB (258486079 bytes)**  
+-	Total Size: **258.5 MB (258484236 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:961caf6ce5967cafb34aeaac76d958ed6b38ede20934a89c1cac8305b0d7f60b`
+-	Image ID: `sha256:458c53fe44d8df80618028102a4afd4f447ff924793b1ce9d68ac533024df6b1`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -5745,51 +5745,51 @@ CMD ["lein" "repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:19 GMT  
 		Size: 49.6 MB (49584978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a37fe4b3f26ea0b745d94ce1fca7f6c7322f18dbef079c4b027c82bbfb40ef1e`  
-		Last Modified: Thu, 17 Oct 2024 08:03:37 GMT  
-		Size: 142.4 MB (142356628 bytes)  
+	-	`sha256:e112fccb06501d78425de14a7cad0e916a7b2ff8acf9a5f1680aa28c73367de2`  
+		Last Modified: Sat, 19 Oct 2024 11:48:35 GMT  
+		Size: 142.4 MB (142354833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23b89449416c5f5a4d94aef6f05d404f7f16fcac27359f0cf87bcd17d15cccdf`  
-		Last Modified: Thu, 17 Oct 2024 08:03:36 GMT  
-		Size: 62.0 MB (62030244 bytes)  
+	-	`sha256:f8903d8cbc6a8c3d74e98e58b46052378fef8feb08f1ec0e9ce55c182d3cb327`  
+		Last Modified: Sat, 19 Oct 2024 11:48:34 GMT  
+		Size: 62.0 MB (62030201 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19b15bfcfeab6c6756e3573322e83efa38480654b5acfed325fe0e9c6f1c3779`  
-		Last Modified: Thu, 17 Oct 2024 08:03:34 GMT  
-		Size: 4.5 MB (4514197 bytes)  
+	-	`sha256:8415c4e2a2696272759722cd688c499eaa1a474b7ec6aa89e49a15bd62c0d1db`  
+		Last Modified: Sat, 19 Oct 2024 11:48:32 GMT  
+		Size: 4.5 MB (4514192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:de1e6bcf558e209b72f22e10902b5b6ebd359d364bcdce2a5f75a82bfa5ce065
+$ docker pull clojure@sha256:806fbb5cc11721ac653d4f5211dab3fc67f24928ae6269749c061e5bfbf3219c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6563413 bytes)**  
+-	Total Size: **6.6 MB (6587742 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cdb4f0edc7191e2cf88383b30fa49f293ecb784509c11f359ed183dbf6e0d67`
+-	Image ID: `sha256:524d388c14275eb3a5d5075572204c29a5d400039aff6f3da6880f6f9149c00c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d9d6f9b17411bd87b896fb51b62a716f795bb8974fbf21e74c95bb3bb2957e76`  
-		Last Modified: Thu, 17 Oct 2024 08:03:34 GMT  
-		Size: 6.5 MB (6547220 bytes)  
+	-	`sha256:7c427cf07bc7c12ce17553e423b2a0f8b5fc5c0c538acbd7ed3b0a164599ed04`  
+		Last Modified: Sat, 19 Oct 2024 11:48:32 GMT  
+		Size: 6.6 MB (6571375 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8687ff5b3d53a20160eb77c446a04b5d15a69e8fc3ba1bff3ae04bd202ac65c3`  
-		Last Modified: Thu, 17 Oct 2024 08:03:33 GMT  
-		Size: 16.2 KB (16193 bytes)  
+	-	`sha256:a6815e87fdca3ba060723f58e3f69642786d1e11ab7b79871554645704377a15`  
+		Last Modified: Sat, 19 Oct 2024 11:48:32 GMT  
+		Size: 16.4 KB (16367 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-lein-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:9a87bb355c348e77000e8b8921101e43bf4f9868ea7e83dc080a5e9475590b8f
+$ docker pull clojure@sha256:13db5acc022a9308dfdabdd7c1a853329878bdac538b2d6210ea5f458a459f91
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5889,13 +5889,13 @@ $ docker pull clojure@sha256:d1dda0cba624583d5947472c2cc7eb0bfadc7ade5c0dfde94ba
 ### `clojure:temurin-11-lein-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:ac1fda5a6147376e40c81eb6c05beb767084561ee190b9765b97e85dd4c81eeb
+$ docker pull clojure@sha256:c0a18dfbf6632af775af7eebc077dd446edd635d8c300e135c43cb537a46c0ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **227.5 MB (227453893 bytes)**  
+-	Total Size: **227.5 MB (227452178 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5a5d14d8238ef85a67c01537bc22a8f07dcc8c22d2105f484b804ceee7935f4b`
+-	Image ID: `sha256:ea4fdcf9521fa43f3a7ebc74578afa841a06a274f7d7b4ff19b70c12fca15366`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -5932,51 +5932,51 @@ CMD ["lein" "repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:39 GMT  
 		Size: 29.2 MB (29156341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7662b0994744e7d6c9bde45715804f3f36db580397e646e1a9829c0c74993c63`  
-		Last Modified: Thu, 17 Oct 2024 08:04:46 GMT  
-		Size: 142.4 MB (142356523 bytes)  
+	-	`sha256:7c6662f3a2b9a8c3547dd556f11c29ad4d8bafa4a8d2beccf7787b25b07805c8`  
+		Last Modified: Sat, 19 Oct 2024 11:49:35 GMT  
+		Size: 142.4 MB (142354834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcdceb44efe6f8a5188df72b31a626be1e7911a7d7f61e191bac88e997f1c415`  
-		Last Modified: Thu, 17 Oct 2024 08:04:44 GMT  
-		Size: 51.4 MB (51426786 bytes)  
+	-	`sha256:18d75ca80aede42872f834174b70988e4a81374bc94507b62c0b9f08f534562f`  
+		Last Modified: Sat, 19 Oct 2024 11:49:33 GMT  
+		Size: 51.4 MB (51426812 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:668bf77ddc4332f42cbf9de110146a1a88736213da2167281fef6d4243d28003`  
-		Last Modified: Thu, 17 Oct 2024 08:04:44 GMT  
-		Size: 4.5 MB (4514211 bytes)  
+	-	`sha256:e8a46d85e3ba2be1949b7c85a5d27bd605e0e550cdd13f79a1702df13c1ab501`  
+		Last Modified: Sat, 19 Oct 2024 11:49:32 GMT  
+		Size: 4.5 MB (4514159 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:f659a7ed5b57d6b847338229a0d9bfa5c91277113209213d8f817b1d892f9394
+$ docker pull clojure@sha256:3646b9ba58ac9bddc0be0dc602f6800742198a5f302908843717d82b4e588ea3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4346578 bytes)**  
+-	Total Size: **4.4 MB (4370801 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43a7d2eb3f1507259ea7c4b20eafe132dc62d72aa896f257ec41ba5318d04ee0`
+-	Image ID: `sha256:4b600847cfb37a7410457aecd75753cd7ff258e268b60d1b54822b630d3297e3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:47b56bee6b4a07eccf00162ff5edd8abc8b5298145b1e819b615e8df058e66dd`  
-		Last Modified: Thu, 17 Oct 2024 08:04:43 GMT  
-		Size: 4.3 MB (4330341 bytes)  
+	-	`sha256:919051f66c3b8b0bad52c6da460855d236adafa44407a36f4d0ea5cbea2f8910`  
+		Last Modified: Sat, 19 Oct 2024 11:49:32 GMT  
+		Size: 4.4 MB (4354390 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:90c6deaf50ebf316248654ab1a687dbe1e771629e198dbff7ac139cc5b53658e`  
-		Last Modified: Thu, 17 Oct 2024 08:04:43 GMT  
-		Size: 16.2 KB (16237 bytes)  
+	-	`sha256:bb541f34de6ea0cfdbfbc9cdd61ff0d4bac746d938ccf3a7ae06878dfa7668eb`  
+		Last Modified: Sat, 19 Oct 2024 11:49:31 GMT  
+		Size: 16.4 KB (16411 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-lein-bullseye`
 
 ```console
-$ docker pull clojure@sha256:58f56a258ffdd35304116213d40b1662b14ddb1b964691d8d08f309f4dc05f85
+$ docker pull clojure@sha256:062a5b23e45451d7daae10321f578fae92eef1c7f39757c260e3555bedb79f67
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6076,13 +6076,13 @@ $ docker pull clojure@sha256:801275f8e1201522cee30874f6cdc61916391bc4a11c81d5e1a
 ### `clojure:temurin-11-lein-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:d6b2edf6e2b77c99f430ce6cd41272d4a6e7555f6d119a8b13c8939dcf2412be
+$ docker pull clojure@sha256:a45fe3eeec1858a4337d523837d5694e52cca054c5683bf3f887629145099011
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **253.4 MB (253426763 bytes)**  
+-	Total Size: **253.4 MB (253424896 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:07c14565faccbe5c034f8af5b0c2a427acecfe248e4d7c1e16c699033536fcb5`
+-	Image ID: `sha256:bdd36876485bda527d81ba334a6e0276eb9616c0ad4dfe41d2f7f918a7791b1e`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -6119,51 +6119,51 @@ CMD ["lein" "repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1bda293784e347b2519c90ccae374d1fef0769a110f0539ea381e5d0173cef5f`  
-		Last Modified: Thu, 17 Oct 2024 08:05:45 GMT  
-		Size: 142.4 MB (142356620 bytes)  
+	-	`sha256:8c401c7f531d55485bd64ed4729ea50678e25946f3eaf1ab19487c5497b75ce3`  
+		Last Modified: Sat, 19 Oct 2024 11:50:38 GMT  
+		Size: 142.4 MB (142354834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:099c2976700d180fad35a3cf2615ee6131277116d9f84f2a638784a29bba9e62`  
-		Last Modified: Thu, 17 Oct 2024 08:05:43 GMT  
-		Size: 52.8 MB (52821025 bytes)  
+	-	`sha256:8cbe15e94c2f8a78866f43eab612386a7f11d5d346adadc18c2f3f58ff8a48ec`  
+		Last Modified: Sat, 19 Oct 2024 11:50:35 GMT  
+		Size: 52.8 MB (52820961 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df1f91ebf1ee94cc971489eb4dbc4c5467e5b4347dce5cca2128fb962c986731`  
-		Last Modified: Thu, 17 Oct 2024 08:05:41 GMT  
-		Size: 4.5 MB (4514191 bytes)  
+	-	`sha256:589a50c52c36410ce5e8f1d0df7af8b10da0b5ac5a78d92a4283563abd2bd884`  
+		Last Modified: Sat, 19 Oct 2024 11:50:34 GMT  
+		Size: 4.5 MB (4514174 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:3c1735ad0313a80efc11363b4e9a52cf0693d1f35185c1dccf20f02edea98f55
+$ docker pull clojure@sha256:7f3fd02a447148e32601cd3d023a19fd681f2a1b32676269cecfd70e44490c65
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6648378 bytes)**  
+-	Total Size: **6.7 MB (6673023 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08eab9d53363a01e44c30a8b6b5ba22a7f753ef0d7d48a7e8f28f3fb8d6acc5d`
+-	Image ID: `sha256:5eadac20bdf0bcb0555f4dce22b4b4c92cf7336ddb7089ab8f5654e6d1521bf0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:aba369f69cc442f9160b2618ae418d06b8e6f93797263207c7920c5d99c0b142`  
-		Last Modified: Thu, 17 Oct 2024 08:05:41 GMT  
-		Size: 6.6 MB (6632185 bytes)  
+	-	`sha256:2de97677c2f9bd378734b81d9d6f0f8cbe3f748a7880b89b83d731582f227e04`  
+		Last Modified: Sat, 19 Oct 2024 11:50:34 GMT  
+		Size: 6.7 MB (6656658 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0489bd944f5e6d87ecc3e4e61a950615f6d527b4bf78add457e51a1f29d6103e`  
-		Last Modified: Thu, 17 Oct 2024 08:05:41 GMT  
-		Size: 16.2 KB (16193 bytes)  
+	-	`sha256:4d8b409cafe87ddb05ac8ef514d3d71eeb63091d61b99529a91edd2a19977c9d`  
+		Last Modified: Sat, 19 Oct 2024 11:50:33 GMT  
+		Size: 16.4 KB (16365 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-lein-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:a1adec6c7b1c8fdccbc0f34fccb345213cdd9e4ddae5f2b0ededb22b5a55667a
+$ docker pull clojure@sha256:7aca839d7f3609adf431a495eb12244a0926fe9f6490cced9b279d4f90daa35e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6263,13 +6263,13 @@ $ docker pull clojure@sha256:710607603bef5e0357c13e209f908f78ad2ed5adb46281b791f
 ### `clojure:temurin-11-lein-bullseye-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:c13cef164b80f497bc1d09a67c878ecf832d60cec6e84aaf93e950393b816e6a
+$ docker pull clojure@sha256:c7e15a3e1db0d0bfb9a778fe7a29e2f671d44046986e37badf498c14e72f034e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **220.3 MB (220259494 bytes)**  
+-	Total Size: **220.3 MB (220257728 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3321de484f8b178fc4229ab976e84d3cef66ec3031874095629ab6e01d1cbb26`
+-	Image ID: `sha256:1316a2a8fd218db76b8aa91753d2124246fb563291133978979b2ac4f0fe9fc8`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -6306,51 +6306,51 @@ CMD ["lein" "repl"]
 		Last Modified: Thu, 17 Oct 2024 01:15:14 GMT  
 		Size: 30.1 MB (30075757 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:552c07f22f7a24a94dcd10f61aa1a932f70c4b4c6f411f7d5e6fc0e25d319dc2`  
-		Last Modified: Thu, 17 Oct 2024 08:06:47 GMT  
-		Size: 142.4 MB (142356620 bytes)  
+	-	`sha256:aa6dc61836822badfada79fd5a7ebcd7d72c9f6ee4135bb13a6fa04e4f5fbbf5`  
+		Last Modified: Sat, 19 Oct 2024 08:55:56 GMT  
+		Size: 142.4 MB (142354770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5765bd7987dbf124ab1d1f68b89b890e2a51885ab2dc1ce0d0226de8fceb39e`  
-		Last Modified: Thu, 17 Oct 2024 08:06:45 GMT  
-		Size: 43.3 MB (43312890 bytes)  
+	-	`sha256:0a470ea18ca0c2ab3a88f9753be41ebbf3aa7ba1ccb54cfe1e2ce1b4bb16aeaa`  
+		Last Modified: Sat, 19 Oct 2024 11:51:32 GMT  
+		Size: 43.3 MB (43312970 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2a75ded0268569aada76c92a177b3e03ca15ae0b6d5054800e47a60e0d77c44`  
-		Last Modified: Thu, 17 Oct 2024 08:06:44 GMT  
-		Size: 4.5 MB (4514195 bytes)  
+	-	`sha256:cbb7d33ab2ca72efc6ffbc47ca7c79261b12bc7fadc5ac40936727c784431e83`  
+		Last Modified: Sat, 19 Oct 2024 11:51:31 GMT  
+		Size: 4.5 MB (4514199 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c5d5e650c67461f3c93a1768326488ad31bcb596448995d80116af3921273f9a
+$ docker pull clojure@sha256:2a796d74af9e4566ec5bca1368c3ee7ea2a9c667c469b033c9fc343d026a336b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.6 MB (4594654 bytes)**  
+-	Total Size: **4.6 MB (4619195 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2ee808947b825fc90315e453b406691b23a8cb58ffb364b94a1f4cd310eb3c9`
+-	Image ID: `sha256:f7ef1b8aafc2109b36b00affe163d91f903b27adbbec0280c5bd8502c18b05a7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eaea6ea8d9aeea5301b23b582c04b70a10f14ff6d1cbe48e1765e162da6a5efb`  
-		Last Modified: Thu, 17 Oct 2024 08:06:44 GMT  
-		Size: 4.6 MB (4578416 bytes)  
+	-	`sha256:f544c348e28d42c47b2f6c0c7ad9d066c9fedc3608d355d85745143fbec93c4b`  
+		Last Modified: Sat, 19 Oct 2024 11:51:31 GMT  
+		Size: 4.6 MB (4602783 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4d282d59f9e01fbab62906971bf7380e6b2d94d79e90461af50da9d1b200ccad`  
-		Last Modified: Thu, 17 Oct 2024 08:06:44 GMT  
-		Size: 16.2 KB (16238 bytes)  
+	-	`sha256:fe0ac9cf32679f32dc981066bc58b1b1736e45e01a4361e6820bdf27f19a1169`  
+		Last Modified: Sat, 19 Oct 2024 11:51:30 GMT  
+		Size: 16.4 KB (16412 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-lein-jammy`
 
 ```console
-$ docker pull clojure@sha256:f7a759f89a82c91022d52b2be44e80261853f07e407cb26cae361c831fc0ef83
+$ docker pull clojure@sha256:29758033a9529ad6e6bb8ec18baa2c9c2d2fe5129bba0ae8ca659ff7c7b297df
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6485,28 +6485,28 @@ $ docker pull clojure@sha256:86d12f4d0831c3dbdf5a069654301a792c0f2e8bcf125c90f61
 ### `clojure:temurin-11-lein-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:a07cea6f8ff4295e070c20dff58a641ba7a3158ba804cb477b4af142f19ad6a5
+$ docker pull clojure@sha256:f707d88255820360afaef7214f9e42f64b6125a32e7fafed14fabce02b3d7d47
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.8 MB (223812165 bytes)**  
+-	Total Size: **222.8 MB (222789731 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:412ff4cf91cfc9c73b05e05d6542d37ccb55c008ce1e13d5c5af0d1aa537f38c`
+-	Image ID: `sha256:f3a870582edd04d9ab81f72d28305eaebf3f1484b8964c276999f36094bf143c`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -6528,86 +6528,86 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_VERSION=2.11.2
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN set -eux; apt-get update && apt-get install -y make git gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mkdir -p /root/.lein && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get purge -y --auto-remove gnupg wget # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_ROOT=1
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.12.0"]])' > project.clj   && lein deps && rm project.clj # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["lein" "repl"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8cc429601029ecb71c941cbfdd32b85983522d0f4ef294d6f2de0ba93bb2f778`  
-		Last Modified: Tue, 17 Sep 2024 01:37:28 GMT  
-		Size: 12.8 MB (12813215 bytes)  
+	-	`sha256:e2dece6d062dc0723f97a73605fb14fdb50c21ad91f9182d5756336b6456a39f`  
+		Last Modified: Sat, 19 Oct 2024 05:27:13 GMT  
+		Size: 12.8 MB (12828465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71de66288b0ec7e9aae2b4bf7e6ef063c8257132fae484daccc4426ba2ef757e`  
-		Last Modified: Tue, 17 Sep 2024 01:38:30 GMT  
-		Size: 142.4 MB (142360707 bytes)  
+	-	`sha256:2090d0aaf551ef5f17bb7d3e2acb1a1a78fe12319ddb90bbb350471476720988`  
+		Last Modified: Sat, 19 Oct 2024 05:31:20 GMT  
+		Size: 142.4 MB (142361342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92d116babd00a334d348e273dc4b1190d5f7af0cc521966e8453c5f765294905`  
-		Last Modified: Tue, 17 Sep 2024 01:38:20 GMT  
-		Size: 174.0 B  
+	-	`sha256:e6df1bfc79401022542ca45906e79ce4bc3a627d4d702b076f8b0cdb7f49b7a5`  
+		Last Modified: Sat, 19 Oct 2024 05:31:13 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b977d3c0b471428500a255bf597bf03cb55d47b047dc10e929b6cc0991dd25ea`  
-		Last Modified: Tue, 17 Sep 2024 01:38:20 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:deb49e148e6b4d5ef663ef5a51fd7a754899e160e77c39f5940478a043cb8775`  
+		Last Modified: Sat, 19 Oct 2024 05:31:14 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1fa7a3441fa0754c449cdc00b247b1450e68c38d28f10b35c15343524983dd6c`  
-		Last Modified: Tue, 17 Sep 2024 04:22:32 GMT  
-		Size: 35.7 MB (35724706 bytes)  
+	-	`sha256:b9a1dfc0d09482fb233255a3f0cbdf9dd0de5d1384809b32f6b9db38768beeda`  
+		Last Modified: Sat, 19 Oct 2024 11:52:25 GMT  
+		Size: 35.7 MB (35725108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8182b0acbd175412395c1ebbe636357b7f13025284f38643d0d04625033c1ff`  
-		Last Modified: Tue, 17 Sep 2024 04:22:32 GMT  
-		Size: 4.5 MB (4514116 bytes)  
+	-	`sha256:b732011de54a90d28d2fcddb18a2e236c3ee6c8b65e5a3d07cc0410cda0ec46c`  
+		Last Modified: Sat, 19 Oct 2024 11:52:24 GMT  
+		Size: 4.5 MB (4514188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9dc8f0dfb436f64df4574a4ad7e4c34d413618db13cd65f86024cd7ff9044fdc
+$ docker pull clojure@sha256:54c855fa45680a4e2fe0e7b362afc6f45ff339ae8b83cdf24c74cbc889ac164e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5218313 bytes)**  
+-	Total Size: **5.4 MB (5420152 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc6a5352f659959e51811795a4534ae6a0db40c4cdb0260e7415260796f160ed`
+-	Image ID: `sha256:2f6b4e9e327f7c5b5ea0492020b52d14e8c5a89f2c9547483613e7d27f717df4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3560ed924fc01bccc1361cfc615536c9c859d59f5f2b7a451481ecbaf2b4a54b`  
-		Last Modified: Tue, 17 Sep 2024 04:22:31 GMT  
-		Size: 5.2 MB (5201469 bytes)  
+	-	`sha256:153e4253d47a9462463e36024568c6cf4e627a61d1cd55ac0b81fe3de79b3f6f`  
+		Last Modified: Sat, 19 Oct 2024 11:52:24 GMT  
+		Size: 5.4 MB (5403420 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:55b539ea75e544bf12c7fcdac38ca93a77179f220c7803646996e32d0f504b4a`  
-		Last Modified: Tue, 17 Sep 2024 04:22:30 GMT  
-		Size: 16.8 KB (16844 bytes)  
+	-	`sha256:e800afc37df146f551a774520634c226fdb23b4c88ad5c016c0c4a828cff67a4`  
+		Last Modified: Sat, 19 Oct 2024 11:52:24 GMT  
+		Size: 16.7 KB (16732 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-lein-noble`
 
 ```console
-$ docker pull clojure@sha256:cdc0e805f0eebb7dd88ccc5baed6d5598a2b98d0ce6094ce4bc94f46a642d93e
+$ docker pull clojure@sha256:f2935a9893b4d8e8baeeabd35f7a448ecdf963cee490e15cd9becae8b12cb5df
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6742,28 +6742,28 @@ $ docker pull clojure@sha256:8872cb8d85d1bbe5ca7bc1308eb9b7dc6f81dc57e6e73ae8337
 ### `clojure:temurin-11-lein-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:3d2b81adff10f19f4222591a0d4c961d9d22c05eb758f1a2e80f5a32bfd8d2df
+$ docker pull clojure@sha256:45f6c94a04e064f72d61b9964f405c8a39435e29b8d649cc420cfec1fab6d5bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **228.7 MB (228710016 bytes)**  
+-	Total Size: **227.6 MB (227638459 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:35f86abf8121648e9592277394785c7dd4451f4a4dbc2d5fbe1b574883f6fd88`
+-	Image ID: `sha256:f095acdd0b10259c733f2320f4294905a17886c09688a0b3e52b8cc568794dc6`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -6804,67 +6804,67 @@ CMD ["lein" "repl"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:185af607866372c42b75ce6a89acba6d7e5d2cb54d2fb846f7d86da63371897e`  
-		Last Modified: Wed, 16 Oct 2024 01:15:52 GMT  
-		Size: 13.8 MB (13798568 bytes)  
+	-	`sha256:53f4eec6f561250a0d70c55e6bd99d1331023a580a505800e59b70664894053d`  
+		Last Modified: Sat, 19 Oct 2024 05:28:16 GMT  
+		Size: 13.8 MB (13796069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f223b26986d5ef596a3bc2e5b9fa8ed2a7d4eee787dfc1be4c5580430d434670`  
-		Last Modified: Wed, 16 Oct 2024 01:16:57 GMT  
-		Size: 142.4 MB (142362351 bytes)  
+	-	`sha256:c6823e6b50ca3c68636f1e8736daaad4cf87e816d2fc06e5c59e8c56517630d6`  
+		Last Modified: Sat, 19 Oct 2024 05:32:43 GMT  
+		Size: 142.4 MB (142360273 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:707e03b04fd118f54ff43a10a97ae63ba84814cdd5c3efaafe1a2552b724de1e`  
-		Last Modified: Wed, 16 Oct 2024 01:16:48 GMT  
-		Size: 175.0 B  
+	-	`sha256:e81a958a8065d543f5c21cb040292fcb94219d94a0bc35d63e21bf42a8f8d1e0`  
+		Last Modified: Sat, 19 Oct 2024 05:32:39 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3946524c733421f02a866a95c00356aa20a295a769c12850454ab658d217f4e3`  
-		Last Modified: Wed, 16 Oct 2024 01:16:48 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:210d02a261d2900a956e2b1800dce8ac95740893c658be7f61eb981e7da23598`  
+		Last Modified: Sat, 19 Oct 2024 05:32:39 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a481f9808c3b9d16f8314e7de7349c599071df5482fc462edb445b0737f11481`  
-		Last Modified: Wed, 16 Oct 2024 02:15:25 GMT  
-		Size: 38.1 MB (38079789 bytes)  
+	-	`sha256:725c5277b7a036b817e52a4a9d48eebf43bbb2eacefb304487203d2af28ff94b`  
+		Last Modified: Sat, 19 Oct 2024 11:53:13 GMT  
+		Size: 38.1 MB (38079840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99cb0c913c03f664727f3d67e7217856fc1f11c4b04a3ee000e58cfbf7003726`  
-		Last Modified: Wed, 16 Oct 2024 02:15:25 GMT  
-		Size: 4.5 MB (4514190 bytes)  
+	-	`sha256:2b7ff75965a70407747cd13f353710b3965c13e92bb1fcd22096452d41834e54`  
+		Last Modified: Sat, 19 Oct 2024 11:53:12 GMT  
+		Size: 4.5 MB (4514133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:8f3ba75731e6a6497da0a4be38c4de4be820ae33108aa915ba6a3efe99f599ec
+$ docker pull clojure@sha256:2ccb08d43440ea18f35e021aaa187012a3934655d5e7e4d31e1a1de965d6a5c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4859643 bytes)**  
+-	Total Size: **4.9 MB (4885442 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1b81ba4ce4f15166605f0e01038c689e393d8f2c6bbf20b9a71ac0b093cf44c`
+-	Image ID: `sha256:b85575a06be342414e719a2e49c42ba99683e3e5679a5c7b61d43e66ecaa705f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:af5bab19c52cf2c4bceefa351cef0bdd5dd8e886023ad446a8e475c2464b434c`  
-		Last Modified: Wed, 16 Oct 2024 02:15:24 GMT  
-		Size: 4.8 MB (4843639 bytes)  
+	-	`sha256:d4dc6e49eb045de52b27f96bb3ed49b9a760fe403af576ffed1ebe58e418120d`  
+		Last Modified: Sat, 19 Oct 2024 11:53:12 GMT  
+		Size: 4.9 MB (4869384 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9560eb43d718c46517883189542d5368249ef75d4eac6a8ef3aa30b52d8156ef`  
-		Last Modified: Wed, 16 Oct 2024 02:15:24 GMT  
-		Size: 16.0 KB (16004 bytes)  
+	-	`sha256:3858fc2c4686f58e424aad7a532c06509b63db07a1654098dd7350cdb51e9451`  
+		Last Modified: Sat, 19 Oct 2024 11:53:11 GMT  
+		Size: 16.1 KB (16058 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-noble`
 
 ```console
-$ docker pull clojure@sha256:744b9bfb85cbfd2d8ad56bace5ed157ba89d51fc3b6ac79460478665a0d35e8f
+$ docker pull clojure@sha256:f5623fd05fac51718d79630ff72d74d8d955f557a7d0175d17523c2e3308d1d5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6993,28 +6993,28 @@ $ docker pull clojure@sha256:154a462409b4673c78c2200de82fda48fdef1b987aa8e40706e
 ### `clojure:temurin-11-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:ad89468ab917c9ae08108e5a5a861fb9a875f072f331ecfc9a67997bea4858f9
+$ docker pull clojure@sha256:f749f62ef32ee64b28a354b23ac3b52d3477533be0c1241fd955f7934a05d368
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.1 MB (242050403 bytes)**  
+-	Total Size: **241.0 MB (240979775 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:411d29441ee247720d64826a2683419a8087e74577ef9f1e19e2878795105591`
+-	Image ID: `sha256:e0bea6e5819d4e6e858a1857c57fcc2378e16564acf2a17b2899083cf343d4bd`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -7049,67 +7049,67 @@ CMD ["clj"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:185af607866372c42b75ce6a89acba6d7e5d2cb54d2fb846f7d86da63371897e`  
-		Last Modified: Wed, 16 Oct 2024 01:15:52 GMT  
-		Size: 13.8 MB (13798568 bytes)  
+	-	`sha256:53f4eec6f561250a0d70c55e6bd99d1331023a580a505800e59b70664894053d`  
+		Last Modified: Sat, 19 Oct 2024 05:28:16 GMT  
+		Size: 13.8 MB (13796069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f223b26986d5ef596a3bc2e5b9fa8ed2a7d4eee787dfc1be4c5580430d434670`  
-		Last Modified: Wed, 16 Oct 2024 01:16:57 GMT  
-		Size: 142.4 MB (142362351 bytes)  
+	-	`sha256:c6823e6b50ca3c68636f1e8736daaad4cf87e816d2fc06e5c59e8c56517630d6`  
+		Last Modified: Sat, 19 Oct 2024 05:32:43 GMT  
+		Size: 142.4 MB (142360273 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:707e03b04fd118f54ff43a10a97ae63ba84814cdd5c3efaafe1a2552b724de1e`  
-		Last Modified: Wed, 16 Oct 2024 01:16:48 GMT  
-		Size: 175.0 B  
+	-	`sha256:e81a958a8065d543f5c21cb040292fcb94219d94a0bc35d63e21bf42a8f8d1e0`  
+		Last Modified: Sat, 19 Oct 2024 05:32:39 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3946524c733421f02a866a95c00356aa20a295a769c12850454ab658d217f4e3`  
-		Last Modified: Wed, 16 Oct 2024 01:16:48 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:210d02a261d2900a956e2b1800dce8ac95740893c658be7f61eb981e7da23598`  
+		Last Modified: Sat, 19 Oct 2024 05:32:39 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bef2f8b9a871a04926a4112df81d9b192a626a95adc0cf2ae7507ee4bb6e8e1c`  
-		Last Modified: Wed, 16 Oct 2024 02:19:51 GMT  
-		Size: 55.9 MB (55933751 bytes)  
+	-	`sha256:29d62c2cca4c61fa142c91a70c9fd581d56b12bfe068517d68ab7c2ff3005ac7`  
+		Last Modified: Sat, 19 Oct 2024 11:59:03 GMT  
+		Size: 55.9 MB (55934674 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1cab26d4da66b12facdf0449f04754729d0db95cb02407c3377546d0e39ee97a`  
-		Last Modified: Wed, 16 Oct 2024 02:19:49 GMT  
+	-	`sha256:067fce1853e082b297b4075aca9bf048dc27ebf60451c9ca208c2cacf6006a47`  
+		Last Modified: Sat, 19 Oct 2024 11:59:01 GMT  
 		Size: 615.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:4cb44ac5b505b6d6ef1c0dc2d6f4b152367b773717136dfc39b92ca43326603b
+$ docker pull clojure@sha256:22c7ccbc641bd25efe4ba532486f678fa72a8ec8f08f5ec2c5dee5ec2d4e586d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5453384 bytes)**  
+-	Total Size: **5.5 MB (5480348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3bba0d2cce9d667579915fbf39e0a98cdfec5f5ec6eba369e57b53ec58f59158`
+-	Image ID: `sha256:afc637ed4e98a9b94c761c77fd0a771c87f32115b063f238d0f3eab68d031aa8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f54bd07c23c937e59f8e9851729f6846f04b5163a74b34303cd00348cb294546`  
-		Last Modified: Wed, 16 Oct 2024 02:19:50 GMT  
-		Size: 5.4 MB (5439796 bytes)  
+	-	`sha256:4e371e51eb0c08dc3f7658a533230651465d8f6cb2193657014384b4ac986038`  
+		Last Modified: Sat, 19 Oct 2024 11:59:02 GMT  
+		Size: 5.5 MB (5466707 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e9de83543bd665d59b893b80b97e7c78bd58b05309eb3568a4fc59312d3d71a1`  
-		Last Modified: Wed, 16 Oct 2024 02:19:49 GMT  
-		Size: 13.6 KB (13588 bytes)  
+	-	`sha256:0dcebc107146ba891a892a7fdaf7b5074d02f4abd08998cdce081a5d00e17976`  
+		Last Modified: Sat, 19 Oct 2024 11:59:01 GMT  
+		Size: 13.6 KB (13641 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-tools-deps`
 
 ```console
-$ docker pull clojure@sha256:627170abd06b6e141565772f2a8a54ca739e12d424fe3e6805e7f1a6e2eeefa8
+$ docker pull clojure@sha256:849792246fcd7915564fc79b776870eb872be33464f738446cad423a492f51b4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7238,28 +7238,28 @@ $ docker pull clojure@sha256:09c633eac789018552418d5b8ac4fe7ecbb496bbec26d1a8783
 ### `clojure:temurin-11-tools-deps` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:a3a329ae00571b2dd218eb9932a275344b729c0f705a95557fb217cdbde3bcbc
+$ docker pull clojure@sha256:7edda2a510745b7ad8bc3b9718fc2c126b5c48d1b5c8884e5e333c861fde9efe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.2 MB (235186157 bytes)**  
+-	Total Size: **234.2 MB (234163596 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e3bba0cd8712b0d70006cff1606683e6407698bcbd63a8f8d243bbc5970962`
+-	Image ID: `sha256:bf455c86a0295d180054bc2ab60472a3e759156dc6c090b466c74fcf46cd3232`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -7281,80 +7281,80 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV CLOJURE_VERSION=1.12.0.1479
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "94f29b9b66183bd58307c46fb561fd9e9148666bac13a4518a9931b6f989d830 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["clj"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8cc429601029ecb71c941cbfdd32b85983522d0f4ef294d6f2de0ba93bb2f778`  
-		Last Modified: Tue, 17 Sep 2024 01:37:28 GMT  
-		Size: 12.8 MB (12813215 bytes)  
+	-	`sha256:e2dece6d062dc0723f97a73605fb14fdb50c21ad91f9182d5756336b6456a39f`  
+		Last Modified: Sat, 19 Oct 2024 05:27:13 GMT  
+		Size: 12.8 MB (12828465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71de66288b0ec7e9aae2b4bf7e6ef063c8257132fae484daccc4426ba2ef757e`  
-		Last Modified: Tue, 17 Sep 2024 01:38:30 GMT  
-		Size: 142.4 MB (142360707 bytes)  
+	-	`sha256:2090d0aaf551ef5f17bb7d3e2acb1a1a78fe12319ddb90bbb350471476720988`  
+		Last Modified: Sat, 19 Oct 2024 05:31:20 GMT  
+		Size: 142.4 MB (142361342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92d116babd00a334d348e273dc4b1190d5f7af0cc521966e8453c5f765294905`  
-		Last Modified: Tue, 17 Sep 2024 01:38:20 GMT  
-		Size: 174.0 B  
+	-	`sha256:e6df1bfc79401022542ca45906e79ce4bc3a627d4d702b076f8b0cdb7f49b7a5`  
+		Last Modified: Sat, 19 Oct 2024 05:31:13 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b977d3c0b471428500a255bf597bf03cb55d47b047dc10e929b6cc0991dd25ea`  
-		Last Modified: Tue, 17 Sep 2024 01:38:20 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:deb49e148e6b4d5ef663ef5a51fd7a754899e160e77c39f5940478a043cb8775`  
+		Last Modified: Sat, 19 Oct 2024 05:31:14 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:403eaf9ed1e71366e127742d31528fa0beaab16f260061690dfb93958423edff`  
-		Last Modified: Tue, 17 Sep 2024 04:28:18 GMT  
-		Size: 51.6 MB (51612200 bytes)  
+	-	`sha256:b18658c23ad4e06b41ae67250a3e71a5b88034d8f9f6a6431bd92f4c4e245e54`  
+		Last Modified: Sat, 19 Oct 2024 11:58:03 GMT  
+		Size: 51.6 MB (51612546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:38c3c8602a618badcb4c648e333896eb21ff1952e9b6588a5525e8cb84b35b42`  
-		Last Modified: Tue, 17 Sep 2024 04:28:16 GMT  
-		Size: 614.0 B  
+	-	`sha256:4605710f37e8d095b75c23ee50cd2dbfe5c61ed61aaa1b7142057395dd1e2130`  
+		Last Modified: Sat, 19 Oct 2024 11:58:01 GMT  
+		Size: 615.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:dd79514dbc2e7edcca075fbba1798d6aac5c8267cd664c4ae53e89c9aec7b47d
+$ docker pull clojure@sha256:c013cd9bd6c9d949e24a80e58c9cde31fdf4e4a71f5e1af85e6e3ccdc8252205
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 MB (5777536 bytes)**  
+-	Total Size: **6.0 MB (5980635 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a219278a05145f5693089f59f188da382fd9e56b1760080153a33a74efbe9393`
+-	Image ID: `sha256:4765c406510622ea19517d53e010ce2b00675156021da090550cc29b63509269`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3579e8cb8f12c3750abd31a95aa3c05a3f6c841e708029697a190eeeb7516361`  
-		Last Modified: Tue, 17 Sep 2024 04:28:17 GMT  
-		Size: 5.8 MB (5763059 bytes)  
+	-	`sha256:76531d5452f0c3bbf145f26e8d1704555ef2a54513c67503e54a21f8ce890776`  
+		Last Modified: Sat, 19 Oct 2024 11:58:01 GMT  
+		Size: 6.0 MB (5966286 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7787eaf56e21d53bbf055c8611dbc0ecee9b2609003dad743ff23291cfb524ab`  
-		Last Modified: Tue, 17 Sep 2024 04:28:16 GMT  
-		Size: 14.5 KB (14477 bytes)  
+	-	`sha256:ae1f5d99e632a0aa122d5e7d4d518e7de87cc1c08f06b4e87e63193be876ca66`  
+		Last Modified: Sat, 19 Oct 2024 11:58:01 GMT  
+		Size: 14.3 KB (14349 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-tools-deps-1.12.0.1479`
 
 ```console
-$ docker pull clojure@sha256:627170abd06b6e141565772f2a8a54ca739e12d424fe3e6805e7f1a6e2eeefa8
+$ docker pull clojure@sha256:849792246fcd7915564fc79b776870eb872be33464f738446cad423a492f51b4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7483,28 +7483,28 @@ $ docker pull clojure@sha256:09c633eac789018552418d5b8ac4fe7ecbb496bbec26d1a8783
 ### `clojure:temurin-11-tools-deps-1.12.0.1479` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:a3a329ae00571b2dd218eb9932a275344b729c0f705a95557fb217cdbde3bcbc
+$ docker pull clojure@sha256:7edda2a510745b7ad8bc3b9718fc2c126b5c48d1b5c8884e5e333c861fde9efe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.2 MB (235186157 bytes)**  
+-	Total Size: **234.2 MB (234163596 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e3bba0cd8712b0d70006cff1606683e6407698bcbd63a8f8d243bbc5970962`
+-	Image ID: `sha256:bf455c86a0295d180054bc2ab60472a3e759156dc6c090b466c74fcf46cd3232`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -7526,74 +7526,74 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV CLOJURE_VERSION=1.12.0.1479
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "94f29b9b66183bd58307c46fb561fd9e9148666bac13a4518a9931b6f989d830 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["clj"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8cc429601029ecb71c941cbfdd32b85983522d0f4ef294d6f2de0ba93bb2f778`  
-		Last Modified: Tue, 17 Sep 2024 01:37:28 GMT  
-		Size: 12.8 MB (12813215 bytes)  
+	-	`sha256:e2dece6d062dc0723f97a73605fb14fdb50c21ad91f9182d5756336b6456a39f`  
+		Last Modified: Sat, 19 Oct 2024 05:27:13 GMT  
+		Size: 12.8 MB (12828465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71de66288b0ec7e9aae2b4bf7e6ef063c8257132fae484daccc4426ba2ef757e`  
-		Last Modified: Tue, 17 Sep 2024 01:38:30 GMT  
-		Size: 142.4 MB (142360707 bytes)  
+	-	`sha256:2090d0aaf551ef5f17bb7d3e2acb1a1a78fe12319ddb90bbb350471476720988`  
+		Last Modified: Sat, 19 Oct 2024 05:31:20 GMT  
+		Size: 142.4 MB (142361342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92d116babd00a334d348e273dc4b1190d5f7af0cc521966e8453c5f765294905`  
-		Last Modified: Tue, 17 Sep 2024 01:38:20 GMT  
-		Size: 174.0 B  
+	-	`sha256:e6df1bfc79401022542ca45906e79ce4bc3a627d4d702b076f8b0cdb7f49b7a5`  
+		Last Modified: Sat, 19 Oct 2024 05:31:13 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b977d3c0b471428500a255bf597bf03cb55d47b047dc10e929b6cc0991dd25ea`  
-		Last Modified: Tue, 17 Sep 2024 01:38:20 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:deb49e148e6b4d5ef663ef5a51fd7a754899e160e77c39f5940478a043cb8775`  
+		Last Modified: Sat, 19 Oct 2024 05:31:14 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:403eaf9ed1e71366e127742d31528fa0beaab16f260061690dfb93958423edff`  
-		Last Modified: Tue, 17 Sep 2024 04:28:18 GMT  
-		Size: 51.6 MB (51612200 bytes)  
+	-	`sha256:b18658c23ad4e06b41ae67250a3e71a5b88034d8f9f6a6431bd92f4c4e245e54`  
+		Last Modified: Sat, 19 Oct 2024 11:58:03 GMT  
+		Size: 51.6 MB (51612546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:38c3c8602a618badcb4c648e333896eb21ff1952e9b6588a5525e8cb84b35b42`  
-		Last Modified: Tue, 17 Sep 2024 04:28:16 GMT  
-		Size: 614.0 B  
+	-	`sha256:4605710f37e8d095b75c23ee50cd2dbfe5c61ed61aaa1b7142057395dd1e2130`  
+		Last Modified: Sat, 19 Oct 2024 11:58:01 GMT  
+		Size: 615.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-1.12.0.1479` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:dd79514dbc2e7edcca075fbba1798d6aac5c8267cd664c4ae53e89c9aec7b47d
+$ docker pull clojure@sha256:c013cd9bd6c9d949e24a80e58c9cde31fdf4e4a71f5e1af85e6e3ccdc8252205
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 MB (5777536 bytes)**  
+-	Total Size: **6.0 MB (5980635 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a219278a05145f5693089f59f188da382fd9e56b1760080153a33a74efbe9393`
+-	Image ID: `sha256:4765c406510622ea19517d53e010ce2b00675156021da090550cc29b63509269`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3579e8cb8f12c3750abd31a95aa3c05a3f6c841e708029697a190eeeb7516361`  
-		Last Modified: Tue, 17 Sep 2024 04:28:17 GMT  
-		Size: 5.8 MB (5763059 bytes)  
+	-	`sha256:76531d5452f0c3bbf145f26e8d1704555ef2a54513c67503e54a21f8ce890776`  
+		Last Modified: Sat, 19 Oct 2024 11:58:01 GMT  
+		Size: 6.0 MB (5966286 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7787eaf56e21d53bbf055c8611dbc0ecee9b2609003dad743ff23291cfb524ab`  
-		Last Modified: Tue, 17 Sep 2024 04:28:16 GMT  
-		Size: 14.5 KB (14477 bytes)  
+	-	`sha256:ae1f5d99e632a0aa122d5e7d4d518e7de87cc1c08f06b4e87e63193be876ca66`  
+		Last Modified: Sat, 19 Oct 2024 11:58:01 GMT  
+		Size: 14.3 KB (14349 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-tools-deps-1.12.0.1479-alpine`
@@ -7718,7 +7718,7 @@ $ docker pull clojure@sha256:8559f8635bc04e53a6743a0aee77cbc197837ed6edc2070fce1
 ## `clojure:temurin-11-tools-deps-1.12.0.1479-bookworm`
 
 ```console
-$ docker pull clojure@sha256:0e260e5f25594e6eab02b81696f09b6de2494aec11092bf95d7324ff31ea3132
+$ docker pull clojure@sha256:9073277762d8c6e915b1a323636dda036901b20f695f13adbda7248c4ab4898b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7812,13 +7812,13 @@ $ docker pull clojure@sha256:5b0163f6836644bd9eddb81ef8ba2d7dd1c9a08daadd3bef3af
 ### `clojure:temurin-11-tools-deps-1.12.0.1479-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:22794abf9850dc42cf087e7a4caa7132523e63afbfc4a5caed6425500c26e046
+$ docker pull clojure@sha256:349f8e4b1453628c92ae5ffb98f3c9f2b83e5b940fc94996b860d2df048b80bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.7 MB (272732445 bytes)**  
+-	Total Size: **272.7 MB (272730629 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25c7815208d8c1accd8d1528c55ec5c45fd6d70486bc053cb061bf037d3a2abc`
+-	Image ID: `sha256:e4249129316f1e9596045ebf2cfd067e15e344e5182e437cdec406b54d668148`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -7849,51 +7849,51 @@ CMD ["clj"]
 		Last Modified: Thu, 17 Oct 2024 01:14:19 GMT  
 		Size: 49.6 MB (49584978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a37fe4b3f26ea0b745d94ce1fca7f6c7322f18dbef079c4b027c82bbfb40ef1e`  
-		Last Modified: Thu, 17 Oct 2024 08:03:37 GMT  
-		Size: 142.4 MB (142356628 bytes)  
+	-	`sha256:e112fccb06501d78425de14a7cad0e916a7b2ff8acf9a5f1680aa28c73367de2`  
+		Last Modified: Sat, 19 Oct 2024 11:48:35 GMT  
+		Size: 142.4 MB (142354833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c8601882a8e10f052cc2d2dbfcea8fb0ce24e7411f6150418037c9ca0ce9f49`  
-		Last Modified: Thu, 17 Oct 2024 08:07:48 GMT  
-		Size: 80.8 MB (80790196 bytes)  
+	-	`sha256:22898f5957d72150694e2750061367f2053a21c956c1b3dbabc59f01bfd823f4`  
+		Last Modified: Sat, 19 Oct 2024 11:54:07 GMT  
+		Size: 80.8 MB (80790172 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7296890fe087c49c3313d089e89bb58fdb911a598c0c5c44d999810a5e8e5705`  
-		Last Modified: Thu, 17 Oct 2024 08:07:46 GMT  
-		Size: 611.0 B  
+	-	`sha256:d5b03c532468338e4c1202949aaf5bc8e4cf12291196a73861159b02216cb395`  
+		Last Modified: Sat, 19 Oct 2024 11:54:05 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-1.12.0.1479-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:6d7b7e4502d190c9ba90596b714d1ecbf9a0380972b3283b43ff96d8a8400948
+$ docker pull clojure@sha256:89f132f9c81b05f48b2e9ebe7bba617d55db6d82810951e1da6ade98587ac651
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7197209 bytes)**  
+-	Total Size: **7.2 MB (7223127 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a2a4dfbb8815e8687678070a179cc8245af9db1294a2ee9e011c8a30c4ad60e`
+-	Image ID: `sha256:edfe9fecc75dd15d15045893ef42d0e8c0ef97b5939d1e5927236855534ff96f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1103d1d01d58f9f32ea235b06937ae0bd7a2a6580d77858ed485e85b5a4f0618`  
-		Last Modified: Thu, 17 Oct 2024 08:07:47 GMT  
-		Size: 7.2 MB (7183200 bytes)  
+	-	`sha256:fb9a0cb83574ddb1ea351cc05675c5c33fadd131a7daec1c7d7e15e57fe4c8de`  
+		Last Modified: Sat, 19 Oct 2024 11:54:06 GMT  
+		Size: 7.2 MB (7208945 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:06584a670674ebd3b133fad108f25fae9979fe85590de0978397b71c5cad7ab5`  
-		Last Modified: Thu, 17 Oct 2024 08:07:46 GMT  
-		Size: 14.0 KB (14009 bytes)  
+	-	`sha256:e53c9fcc1eae89abbda273c2d0df1ce877927e21e32b86394cebe3641834b049`  
+		Last Modified: Sat, 19 Oct 2024 11:54:05 GMT  
+		Size: 14.2 KB (14182 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-tools-deps-1.12.0.1479-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:a42e2152212e85662654fc9e780f9de81ee3f0e93676975200ec1d26ca8f16c4
+$ docker pull clojure@sha256:646e932eaf88121ca6a252859a998c8e5c6e6fcaf8d02c55181bf9f085a8e13b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7987,13 +7987,13 @@ $ docker pull clojure@sha256:53462a9462a305f648ec76eae62ba5e591d888ad9a568212c10
 ### `clojure:temurin-11-tools-deps-1.12.0.1479-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:2f582ac58f5b1e13af86eec3b5ffb2ae2b905d530caad94cc6c5efcfdb35c937
+$ docker pull clojure@sha256:e89bdf05b9d294fc850ef3e8d3b90bf2cb74f5799bcdce84c442db2e9ff57efe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **240.9 MB (240858753 bytes)**  
+-	Total Size: **240.9 MB (240857178 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ddc538a9cca111768e890ddabc14eda9d3a75093af18f5c1df78d5b53e069aa`
+-	Image ID: `sha256:279a3b2f701ffe630f13bd40d40d07fad1efba9a36436eed9fc964ff011f1161`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -8024,51 +8024,51 @@ CMD ["clj"]
 		Last Modified: Thu, 17 Oct 2024 01:14:39 GMT  
 		Size: 29.2 MB (29156341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7662b0994744e7d6c9bde45715804f3f36db580397e646e1a9829c0c74993c63`  
-		Last Modified: Thu, 17 Oct 2024 08:04:46 GMT  
-		Size: 142.4 MB (142356523 bytes)  
+	-	`sha256:7c6662f3a2b9a8c3547dd556f11c29ad4d8bafa4a8d2beccf7787b25b07805c8`  
+		Last Modified: Sat, 19 Oct 2024 11:49:35 GMT  
+		Size: 142.4 MB (142354834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637de206af550fd71e790b531751f6564c3b4422a4765d588ab435d6b71d393a`  
-		Last Modified: Thu, 17 Oct 2024 08:08:37 GMT  
-		Size: 69.3 MB (69345246 bytes)  
+	-	`sha256:fc594d2addec718ac08a4a23d03a69e7d0ba5a8e85f5b0ce902bf4e727925c43`  
+		Last Modified: Sat, 19 Oct 2024 11:55:06 GMT  
+		Size: 69.3 MB (69345356 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2c44eae8e292ec3a59005ebfb65966f2123594a41002e8523b3e3bac9e893b6`  
-		Last Modified: Thu, 17 Oct 2024 08:08:34 GMT  
-		Size: 611.0 B  
+	-	`sha256:29e2bbdabcd329212e95986fb7ae5bf53da3789ad943ac40c12802f395e4a4c7`  
+		Last Modified: Sat, 19 Oct 2024 11:55:04 GMT  
+		Size: 615.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-1.12.0.1479-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:03d7b84dee5a5653ece0c78ea6e8063271984f808222fde3e4ee42745558cfba
+$ docker pull clojure@sha256:837d6176cddfcef20b0dbed063e1ffade9b07609155b4b264bb33b733e2b6a6c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4935484 bytes)**  
+-	Total Size: **5.0 MB (4961404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1e3c18ced38c299913a1c51af32e72c9459de522fdfb2f93589d7236c7cf675`
+-	Image ID: `sha256:ea4b6c1d44047d5b8693804661264e8e7eeb4084b16ad6cff0b44fe3bf50c689`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1a999d849503dd0f4e11772f75de463155b7ff855861bd4911f8e2bf11ce4057`  
-		Last Modified: Thu, 17 Oct 2024 08:08:35 GMT  
-		Size: 4.9 MB (4921403 bytes)  
+	-	`sha256:bb582ee530ff089f172a152eb3033e02ed0784ee72be2d6cfceeb038bd52e721`  
+		Last Modified: Sat, 19 Oct 2024 11:55:04 GMT  
+		Size: 4.9 MB (4947148 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:92fdd1d343842aed43806a79d362c35c8f85e94f91c03c9cea3e6dab7f1428ce`  
-		Last Modified: Thu, 17 Oct 2024 08:08:35 GMT  
-		Size: 14.1 KB (14081 bytes)  
+	-	`sha256:c502270dc776a477d3152a3e7a5a7dfecf6b0a8d83bacd2c095bc09219050817`  
+		Last Modified: Sat, 19 Oct 2024 11:55:03 GMT  
+		Size: 14.3 KB (14256 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-tools-deps-1.12.0.1479-bullseye`
 
 ```console
-$ docker pull clojure@sha256:f75423c1664079c958fc87267b0e58903a1b6cf2493f64b7e0347e9ac3b923e7
+$ docker pull clojure@sha256:ebfed3fbd62f6b3473cd08c9d0b9d2ea25f6aa28af5492367e782b0750e0618f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8162,13 +8162,13 @@ $ docker pull clojure@sha256:b26b2e0df63ff73085c83f4a7bd6f5a0456b76cfcdd3d945d10
 ### `clojure:temurin-11-tools-deps-1.12.0.1479-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:f26aa53d764d2aa57dfa85c5410dd158ad5155b257c5ad397ada570cc94ca628
+$ docker pull clojure@sha256:8a9e819f7ed1e2baae6b910aa79a09208e20a61c9dde35f7520f1a6bf780cf2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.6 MB (265558958 bytes)**  
+-	Total Size: **265.6 MB (265557335 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb6c6e1cff43e0652992b4b19f980e4e8107fd1f80c4d6a3e60f2d4a218d4d0f`
+-	Image ID: `sha256:b5bac7aef78a8cf147a8748ac70559d8a64de8bfe7e1f3c2cb91bf54f722bb4c`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -8199,51 +8199,51 @@ CMD ["clj"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1bda293784e347b2519c90ccae374d1fef0769a110f0539ea381e5d0173cef5f`  
-		Last Modified: Thu, 17 Oct 2024 08:05:45 GMT  
-		Size: 142.4 MB (142356620 bytes)  
+	-	`sha256:8c401c7f531d55485bd64ed4729ea50678e25946f3eaf1ab19487c5497b75ce3`  
+		Last Modified: Sat, 19 Oct 2024 11:50:38 GMT  
+		Size: 142.4 MB (142354834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32c05e41003ac86805de7b845a5875e74c40c76671bd8a5c23512babc22e02d5`  
-		Last Modified: Thu, 17 Oct 2024 08:09:35 GMT  
-		Size: 69.5 MB (69466801 bytes)  
+	-	`sha256:dc04cd4f9e3f29a7880732bc278005624116c146cae8a1ea0ddaf361a31f609a`  
+		Last Modified: Sat, 19 Oct 2024 11:56:03 GMT  
+		Size: 69.5 MB (69466962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4846c262d2b2b6d62709604ec56bc778b2aceb4a43e1d283e664537b3b30fadc`  
-		Last Modified: Thu, 17 Oct 2024 08:09:33 GMT  
-		Size: 610.0 B  
+	-	`sha256:1d56a326baf54b20e3fb6727688d0dd6525bc4e039dcb947c96a9dcbbe20e520`  
+		Last Modified: Sat, 19 Oct 2024 11:56:01 GMT  
+		Size: 612.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-1.12.0.1479-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:2874ce29bd18fcc414421f9cc02d5360b934d62cbef9b10655d033694e2c23ec
+$ docker pull clojure@sha256:a8f1d4845611aac0a84ef5c405980a3fec4a7121f6beded7eeac5495b25686bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7229991 bytes)**  
+-	Total Size: **7.3 MB (7255910 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1366e5b9bcf46c796d5a68459a00f82d831abe1e32b346903ccc275b6bbcc357`
+-	Image ID: `sha256:6f07d096f83e0e83a0dbb00a47009936461269036d45da4facc8f423bb16a438`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a182b0efb885c7e9a9e7a990388086598e2a29d300cefdf521a2cf9af04d068b`  
-		Last Modified: Thu, 17 Oct 2024 08:09:34 GMT  
-		Size: 7.2 MB (7215982 bytes)  
+	-	`sha256:1c9b5089fb74699b105bde1101cc4676f38aa7311535bd99a7a2f1d5a06e4672`  
+		Last Modified: Sat, 19 Oct 2024 11:56:01 GMT  
+		Size: 7.2 MB (7241727 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bfb3a8772bfc585c9d03e29cdd36f1268bfdb00d6eebda0d404b1d70b8940374`  
-		Last Modified: Thu, 17 Oct 2024 08:09:33 GMT  
-		Size: 14.0 KB (14009 bytes)  
+	-	`sha256:d8aaf271ecc75e0dcd6d4dafe2b04d569d70f64c4c749205b3694a8e239b7327`  
+		Last Modified: Sat, 19 Oct 2024 11:56:01 GMT  
+		Size: 14.2 KB (14183 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-tools-deps-1.12.0.1479-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:45ed4b55953071189c49bebc30196c38d00acca1ad0ca012b648f859f52f9757
+$ docker pull clojure@sha256:4f9b39b9fed7dfcc68b22b69d5a62779cd31b18529db37970eb2a86ae4b24236
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8337,13 +8337,13 @@ $ docker pull clojure@sha256:4211d5392794659d8f13e1640dee2fc50a6c61e7c73fbe01887
 ### `clojure:temurin-11-tools-deps-1.12.0.1479-bullseye-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:aff7eedc5c3334ce2c138de03ecd7df44c43f5f5391917111f30ea747f981577
+$ docker pull clojure@sha256:8beca9a28775cb5f528cc7ca1c38d20473e483d95d80c2624eb5a2d081311296
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **231.5 MB (231506433 bytes)**  
+-	Total Size: **231.5 MB (231504457 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:474de96895e434aace31ed241cf4de962604a1ff7143f0546dd7994c923c0d8d`
+-	Image ID: `sha256:483d03c1d0e5f07601e22b4d1f0f0088fff0a05a40950ec094d355eab10f8338`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -8374,51 +8374,51 @@ CMD ["clj"]
 		Last Modified: Thu, 17 Oct 2024 01:15:14 GMT  
 		Size: 30.1 MB (30075757 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:552c07f22f7a24a94dcd10f61aa1a932f70c4b4c6f411f7d5e6fc0e25d319dc2`  
-		Last Modified: Thu, 17 Oct 2024 08:06:47 GMT  
-		Size: 142.4 MB (142356620 bytes)  
+	-	`sha256:aa6dc61836822badfada79fd5a7ebcd7d72c9f6ee4135bb13a6fa04e4f5fbbf5`  
+		Last Modified: Sat, 19 Oct 2024 08:55:56 GMT  
+		Size: 142.4 MB (142354770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a5020e75e5570d264494fe7246632178b14b22e6f41c813db09a3bac95aea47`  
-		Last Modified: Thu, 17 Oct 2024 08:10:30 GMT  
-		Size: 59.1 MB (59073413 bytes)  
+	-	`sha256:27d37cdea463a495d829a5a818ea7047133865a09436e67cd3bf59bb7fc17c8d`  
+		Last Modified: Sat, 19 Oct 2024 11:56:59 GMT  
+		Size: 59.1 MB (59073287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bdc57f6ce793dbf09e888d013b80c5358da6f92fbe1d0a487d8ee9efc9f28ef`  
-		Last Modified: Thu, 17 Oct 2024 08:10:28 GMT  
+	-	`sha256:dec96c5c1b88783d0a5114e0262b80db9d499ca7a5fbdb2244bc863922644da4`  
+		Last Modified: Sat, 19 Oct 2024 11:56:57 GMT  
 		Size: 611.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-1.12.0.1479-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:ee78a726c352fce334f3533a25fe72480fb9904ceb8f1363df64226e57aecc85
+$ docker pull clojure@sha256:b7e2b63c129a78f3987dfd1acec8faa73ba515413473bc40d96eae249883361a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5140180 bytes)**  
+-	Total Size: **5.2 MB (5166099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4819b3198e87d1e2261081a50c8d207a91b88e984e3e60ccfce4c3a99e85a3db`
+-	Image ID: `sha256:3e926cd6b7d3b8fdc6d8370f036af349b1565c6901b71153f8b85de1bbef66ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44860e6581be918a985311c6f78a4465990fe58d9b664bc1c6449192243ad13d`  
-		Last Modified: Thu, 17 Oct 2024 08:10:29 GMT  
-		Size: 5.1 MB (5126098 bytes)  
+	-	`sha256:db9416ad9883a2baab5d6c76174255d7691eec76c5ba7542b0700b4814819a78`  
+		Last Modified: Sat, 19 Oct 2024 11:56:57 GMT  
+		Size: 5.2 MB (5151843 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:110b447c19a125edb3fe00d0902c48fda48123e29643102d1e4e383375ac02bf`  
-		Last Modified: Thu, 17 Oct 2024 08:10:28 GMT  
-		Size: 14.1 KB (14082 bytes)  
+	-	`sha256:5fa2ef7ab97a8528ea0fc982887da028068b66a6ae171ed5b3bb8206314264c0`  
+		Last Modified: Sat, 19 Oct 2024 11:56:57 GMT  
+		Size: 14.3 KB (14256 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-tools-deps-1.12.0.1479-jammy`
 
 ```console
-$ docker pull clojure@sha256:627170abd06b6e141565772f2a8a54ca739e12d424fe3e6805e7f1a6e2eeefa8
+$ docker pull clojure@sha256:849792246fcd7915564fc79b776870eb872be33464f738446cad423a492f51b4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8547,28 +8547,28 @@ $ docker pull clojure@sha256:09c633eac789018552418d5b8ac4fe7ecbb496bbec26d1a8783
 ### `clojure:temurin-11-tools-deps-1.12.0.1479-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:a3a329ae00571b2dd218eb9932a275344b729c0f705a95557fb217cdbde3bcbc
+$ docker pull clojure@sha256:7edda2a510745b7ad8bc3b9718fc2c126b5c48d1b5c8884e5e333c861fde9efe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.2 MB (235186157 bytes)**  
+-	Total Size: **234.2 MB (234163596 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e3bba0cd8712b0d70006cff1606683e6407698bcbd63a8f8d243bbc5970962`
+-	Image ID: `sha256:bf455c86a0295d180054bc2ab60472a3e759156dc6c090b466c74fcf46cd3232`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -8590,80 +8590,80 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV CLOJURE_VERSION=1.12.0.1479
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "94f29b9b66183bd58307c46fb561fd9e9148666bac13a4518a9931b6f989d830 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["clj"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8cc429601029ecb71c941cbfdd32b85983522d0f4ef294d6f2de0ba93bb2f778`  
-		Last Modified: Tue, 17 Sep 2024 01:37:28 GMT  
-		Size: 12.8 MB (12813215 bytes)  
+	-	`sha256:e2dece6d062dc0723f97a73605fb14fdb50c21ad91f9182d5756336b6456a39f`  
+		Last Modified: Sat, 19 Oct 2024 05:27:13 GMT  
+		Size: 12.8 MB (12828465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71de66288b0ec7e9aae2b4bf7e6ef063c8257132fae484daccc4426ba2ef757e`  
-		Last Modified: Tue, 17 Sep 2024 01:38:30 GMT  
-		Size: 142.4 MB (142360707 bytes)  
+	-	`sha256:2090d0aaf551ef5f17bb7d3e2acb1a1a78fe12319ddb90bbb350471476720988`  
+		Last Modified: Sat, 19 Oct 2024 05:31:20 GMT  
+		Size: 142.4 MB (142361342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92d116babd00a334d348e273dc4b1190d5f7af0cc521966e8453c5f765294905`  
-		Last Modified: Tue, 17 Sep 2024 01:38:20 GMT  
-		Size: 174.0 B  
+	-	`sha256:e6df1bfc79401022542ca45906e79ce4bc3a627d4d702b076f8b0cdb7f49b7a5`  
+		Last Modified: Sat, 19 Oct 2024 05:31:13 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b977d3c0b471428500a255bf597bf03cb55d47b047dc10e929b6cc0991dd25ea`  
-		Last Modified: Tue, 17 Sep 2024 01:38:20 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:deb49e148e6b4d5ef663ef5a51fd7a754899e160e77c39f5940478a043cb8775`  
+		Last Modified: Sat, 19 Oct 2024 05:31:14 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:403eaf9ed1e71366e127742d31528fa0beaab16f260061690dfb93958423edff`  
-		Last Modified: Tue, 17 Sep 2024 04:28:18 GMT  
-		Size: 51.6 MB (51612200 bytes)  
+	-	`sha256:b18658c23ad4e06b41ae67250a3e71a5b88034d8f9f6a6431bd92f4c4e245e54`  
+		Last Modified: Sat, 19 Oct 2024 11:58:03 GMT  
+		Size: 51.6 MB (51612546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:38c3c8602a618badcb4c648e333896eb21ff1952e9b6588a5525e8cb84b35b42`  
-		Last Modified: Tue, 17 Sep 2024 04:28:16 GMT  
-		Size: 614.0 B  
+	-	`sha256:4605710f37e8d095b75c23ee50cd2dbfe5c61ed61aaa1b7142057395dd1e2130`  
+		Last Modified: Sat, 19 Oct 2024 11:58:01 GMT  
+		Size: 615.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-1.12.0.1479-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:dd79514dbc2e7edcca075fbba1798d6aac5c8267cd664c4ae53e89c9aec7b47d
+$ docker pull clojure@sha256:c013cd9bd6c9d949e24a80e58c9cde31fdf4e4a71f5e1af85e6e3ccdc8252205
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 MB (5777536 bytes)**  
+-	Total Size: **6.0 MB (5980635 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a219278a05145f5693089f59f188da382fd9e56b1760080153a33a74efbe9393`
+-	Image ID: `sha256:4765c406510622ea19517d53e010ce2b00675156021da090550cc29b63509269`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3579e8cb8f12c3750abd31a95aa3c05a3f6c841e708029697a190eeeb7516361`  
-		Last Modified: Tue, 17 Sep 2024 04:28:17 GMT  
-		Size: 5.8 MB (5763059 bytes)  
+	-	`sha256:76531d5452f0c3bbf145f26e8d1704555ef2a54513c67503e54a21f8ce890776`  
+		Last Modified: Sat, 19 Oct 2024 11:58:01 GMT  
+		Size: 6.0 MB (5966286 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7787eaf56e21d53bbf055c8611dbc0ecee9b2609003dad743ff23291cfb524ab`  
-		Last Modified: Tue, 17 Sep 2024 04:28:16 GMT  
-		Size: 14.5 KB (14477 bytes)  
+	-	`sha256:ae1f5d99e632a0aa122d5e7d4d518e7de87cc1c08f06b4e87e63193be876ca66`  
+		Last Modified: Sat, 19 Oct 2024 11:58:01 GMT  
+		Size: 14.3 KB (14349 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-tools-deps-1.12.0.1479-noble`
 
 ```console
-$ docker pull clojure@sha256:744b9bfb85cbfd2d8ad56bace5ed157ba89d51fc3b6ac79460478665a0d35e8f
+$ docker pull clojure@sha256:f5623fd05fac51718d79630ff72d74d8d955f557a7d0175d17523c2e3308d1d5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8792,28 +8792,28 @@ $ docker pull clojure@sha256:154a462409b4673c78c2200de82fda48fdef1b987aa8e40706e
 ### `clojure:temurin-11-tools-deps-1.12.0.1479-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:ad89468ab917c9ae08108e5a5a861fb9a875f072f331ecfc9a67997bea4858f9
+$ docker pull clojure@sha256:f749f62ef32ee64b28a354b23ac3b52d3477533be0c1241fd955f7934a05d368
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.1 MB (242050403 bytes)**  
+-	Total Size: **241.0 MB (240979775 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:411d29441ee247720d64826a2683419a8087e74577ef9f1e19e2878795105591`
+-	Image ID: `sha256:e0bea6e5819d4e6e858a1857c57fcc2378e16564acf2a17b2899083cf343d4bd`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -8848,61 +8848,61 @@ CMD ["clj"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:185af607866372c42b75ce6a89acba6d7e5d2cb54d2fb846f7d86da63371897e`  
-		Last Modified: Wed, 16 Oct 2024 01:15:52 GMT  
-		Size: 13.8 MB (13798568 bytes)  
+	-	`sha256:53f4eec6f561250a0d70c55e6bd99d1331023a580a505800e59b70664894053d`  
+		Last Modified: Sat, 19 Oct 2024 05:28:16 GMT  
+		Size: 13.8 MB (13796069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f223b26986d5ef596a3bc2e5b9fa8ed2a7d4eee787dfc1be4c5580430d434670`  
-		Last Modified: Wed, 16 Oct 2024 01:16:57 GMT  
-		Size: 142.4 MB (142362351 bytes)  
+	-	`sha256:c6823e6b50ca3c68636f1e8736daaad4cf87e816d2fc06e5c59e8c56517630d6`  
+		Last Modified: Sat, 19 Oct 2024 05:32:43 GMT  
+		Size: 142.4 MB (142360273 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:707e03b04fd118f54ff43a10a97ae63ba84814cdd5c3efaafe1a2552b724de1e`  
-		Last Modified: Wed, 16 Oct 2024 01:16:48 GMT  
-		Size: 175.0 B  
+	-	`sha256:e81a958a8065d543f5c21cb040292fcb94219d94a0bc35d63e21bf42a8f8d1e0`  
+		Last Modified: Sat, 19 Oct 2024 05:32:39 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3946524c733421f02a866a95c00356aa20a295a769c12850454ab658d217f4e3`  
-		Last Modified: Wed, 16 Oct 2024 01:16:48 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:210d02a261d2900a956e2b1800dce8ac95740893c658be7f61eb981e7da23598`  
+		Last Modified: Sat, 19 Oct 2024 05:32:39 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bef2f8b9a871a04926a4112df81d9b192a626a95adc0cf2ae7507ee4bb6e8e1c`  
-		Last Modified: Wed, 16 Oct 2024 02:19:51 GMT  
-		Size: 55.9 MB (55933751 bytes)  
+	-	`sha256:29d62c2cca4c61fa142c91a70c9fd581d56b12bfe068517d68ab7c2ff3005ac7`  
+		Last Modified: Sat, 19 Oct 2024 11:59:03 GMT  
+		Size: 55.9 MB (55934674 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1cab26d4da66b12facdf0449f04754729d0db95cb02407c3377546d0e39ee97a`  
-		Last Modified: Wed, 16 Oct 2024 02:19:49 GMT  
+	-	`sha256:067fce1853e082b297b4075aca9bf048dc27ebf60451c9ca208c2cacf6006a47`  
+		Last Modified: Sat, 19 Oct 2024 11:59:01 GMT  
 		Size: 615.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-1.12.0.1479-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:4cb44ac5b505b6d6ef1c0dc2d6f4b152367b773717136dfc39b92ca43326603b
+$ docker pull clojure@sha256:22c7ccbc641bd25efe4ba532486f678fa72a8ec8f08f5ec2c5dee5ec2d4e586d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5453384 bytes)**  
+-	Total Size: **5.5 MB (5480348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3bba0d2cce9d667579915fbf39e0a98cdfec5f5ec6eba369e57b53ec58f59158`
+-	Image ID: `sha256:afc637ed4e98a9b94c761c77fd0a771c87f32115b063f238d0f3eab68d031aa8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f54bd07c23c937e59f8e9851729f6846f04b5163a74b34303cd00348cb294546`  
-		Last Modified: Wed, 16 Oct 2024 02:19:50 GMT  
-		Size: 5.4 MB (5439796 bytes)  
+	-	`sha256:4e371e51eb0c08dc3f7658a533230651465d8f6cb2193657014384b4ac986038`  
+		Last Modified: Sat, 19 Oct 2024 11:59:02 GMT  
+		Size: 5.5 MB (5466707 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e9de83543bd665d59b893b80b97e7c78bd58b05309eb3568a4fc59312d3d71a1`  
-		Last Modified: Wed, 16 Oct 2024 02:19:49 GMT  
-		Size: 13.6 KB (13588 bytes)  
+	-	`sha256:0dcebc107146ba891a892a7fdaf7b5074d02f4abd08998cdce081a5d00e17976`  
+		Last Modified: Sat, 19 Oct 2024 11:59:01 GMT  
+		Size: 13.6 KB (13641 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-tools-deps-alpine`
@@ -9027,7 +9027,7 @@ $ docker pull clojure@sha256:8559f8635bc04e53a6743a0aee77cbc197837ed6edc2070fce1
 ## `clojure:temurin-11-tools-deps-bookworm`
 
 ```console
-$ docker pull clojure@sha256:0e260e5f25594e6eab02b81696f09b6de2494aec11092bf95d7324ff31ea3132
+$ docker pull clojure@sha256:9073277762d8c6e915b1a323636dda036901b20f695f13adbda7248c4ab4898b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9121,13 +9121,13 @@ $ docker pull clojure@sha256:5b0163f6836644bd9eddb81ef8ba2d7dd1c9a08daadd3bef3af
 ### `clojure:temurin-11-tools-deps-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:22794abf9850dc42cf087e7a4caa7132523e63afbfc4a5caed6425500c26e046
+$ docker pull clojure@sha256:349f8e4b1453628c92ae5ffb98f3c9f2b83e5b940fc94996b860d2df048b80bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **272.7 MB (272732445 bytes)**  
+-	Total Size: **272.7 MB (272730629 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25c7815208d8c1accd8d1528c55ec5c45fd6d70486bc053cb061bf037d3a2abc`
+-	Image ID: `sha256:e4249129316f1e9596045ebf2cfd067e15e344e5182e437cdec406b54d668148`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -9158,51 +9158,51 @@ CMD ["clj"]
 		Last Modified: Thu, 17 Oct 2024 01:14:19 GMT  
 		Size: 49.6 MB (49584978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a37fe4b3f26ea0b745d94ce1fca7f6c7322f18dbef079c4b027c82bbfb40ef1e`  
-		Last Modified: Thu, 17 Oct 2024 08:03:37 GMT  
-		Size: 142.4 MB (142356628 bytes)  
+	-	`sha256:e112fccb06501d78425de14a7cad0e916a7b2ff8acf9a5f1680aa28c73367de2`  
+		Last Modified: Sat, 19 Oct 2024 11:48:35 GMT  
+		Size: 142.4 MB (142354833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c8601882a8e10f052cc2d2dbfcea8fb0ce24e7411f6150418037c9ca0ce9f49`  
-		Last Modified: Thu, 17 Oct 2024 08:07:48 GMT  
-		Size: 80.8 MB (80790196 bytes)  
+	-	`sha256:22898f5957d72150694e2750061367f2053a21c956c1b3dbabc59f01bfd823f4`  
+		Last Modified: Sat, 19 Oct 2024 11:54:07 GMT  
+		Size: 80.8 MB (80790172 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7296890fe087c49c3313d089e89bb58fdb911a598c0c5c44d999810a5e8e5705`  
-		Last Modified: Thu, 17 Oct 2024 08:07:46 GMT  
-		Size: 611.0 B  
+	-	`sha256:d5b03c532468338e4c1202949aaf5bc8e4cf12291196a73861159b02216cb395`  
+		Last Modified: Sat, 19 Oct 2024 11:54:05 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:6d7b7e4502d190c9ba90596b714d1ecbf9a0380972b3283b43ff96d8a8400948
+$ docker pull clojure@sha256:89f132f9c81b05f48b2e9ebe7bba617d55db6d82810951e1da6ade98587ac651
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7197209 bytes)**  
+-	Total Size: **7.2 MB (7223127 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a2a4dfbb8815e8687678070a179cc8245af9db1294a2ee9e011c8a30c4ad60e`
+-	Image ID: `sha256:edfe9fecc75dd15d15045893ef42d0e8c0ef97b5939d1e5927236855534ff96f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1103d1d01d58f9f32ea235b06937ae0bd7a2a6580d77858ed485e85b5a4f0618`  
-		Last Modified: Thu, 17 Oct 2024 08:07:47 GMT  
-		Size: 7.2 MB (7183200 bytes)  
+	-	`sha256:fb9a0cb83574ddb1ea351cc05675c5c33fadd131a7daec1c7d7e15e57fe4c8de`  
+		Last Modified: Sat, 19 Oct 2024 11:54:06 GMT  
+		Size: 7.2 MB (7208945 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:06584a670674ebd3b133fad108f25fae9979fe85590de0978397b71c5cad7ab5`  
-		Last Modified: Thu, 17 Oct 2024 08:07:46 GMT  
-		Size: 14.0 KB (14009 bytes)  
+	-	`sha256:e53c9fcc1eae89abbda273c2d0df1ce877927e21e32b86394cebe3641834b049`  
+		Last Modified: Sat, 19 Oct 2024 11:54:05 GMT  
+		Size: 14.2 KB (14182 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-tools-deps-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:a42e2152212e85662654fc9e780f9de81ee3f0e93676975200ec1d26ca8f16c4
+$ docker pull clojure@sha256:646e932eaf88121ca6a252859a998c8e5c6e6fcaf8d02c55181bf9f085a8e13b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9296,13 +9296,13 @@ $ docker pull clojure@sha256:53462a9462a305f648ec76eae62ba5e591d888ad9a568212c10
 ### `clojure:temurin-11-tools-deps-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:2f582ac58f5b1e13af86eec3b5ffb2ae2b905d530caad94cc6c5efcfdb35c937
+$ docker pull clojure@sha256:e89bdf05b9d294fc850ef3e8d3b90bf2cb74f5799bcdce84c442db2e9ff57efe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **240.9 MB (240858753 bytes)**  
+-	Total Size: **240.9 MB (240857178 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ddc538a9cca111768e890ddabc14eda9d3a75093af18f5c1df78d5b53e069aa`
+-	Image ID: `sha256:279a3b2f701ffe630f13bd40d40d07fad1efba9a36436eed9fc964ff011f1161`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -9333,51 +9333,51 @@ CMD ["clj"]
 		Last Modified: Thu, 17 Oct 2024 01:14:39 GMT  
 		Size: 29.2 MB (29156341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7662b0994744e7d6c9bde45715804f3f36db580397e646e1a9829c0c74993c63`  
-		Last Modified: Thu, 17 Oct 2024 08:04:46 GMT  
-		Size: 142.4 MB (142356523 bytes)  
+	-	`sha256:7c6662f3a2b9a8c3547dd556f11c29ad4d8bafa4a8d2beccf7787b25b07805c8`  
+		Last Modified: Sat, 19 Oct 2024 11:49:35 GMT  
+		Size: 142.4 MB (142354834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:637de206af550fd71e790b531751f6564c3b4422a4765d588ab435d6b71d393a`  
-		Last Modified: Thu, 17 Oct 2024 08:08:37 GMT  
-		Size: 69.3 MB (69345246 bytes)  
+	-	`sha256:fc594d2addec718ac08a4a23d03a69e7d0ba5a8e85f5b0ce902bf4e727925c43`  
+		Last Modified: Sat, 19 Oct 2024 11:55:06 GMT  
+		Size: 69.3 MB (69345356 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c2c44eae8e292ec3a59005ebfb65966f2123594a41002e8523b3e3bac9e893b6`  
-		Last Modified: Thu, 17 Oct 2024 08:08:34 GMT  
-		Size: 611.0 B  
+	-	`sha256:29e2bbdabcd329212e95986fb7ae5bf53da3789ad943ac40c12802f395e4a4c7`  
+		Last Modified: Sat, 19 Oct 2024 11:55:04 GMT  
+		Size: 615.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:03d7b84dee5a5653ece0c78ea6e8063271984f808222fde3e4ee42745558cfba
+$ docker pull clojure@sha256:837d6176cddfcef20b0dbed063e1ffade9b07609155b4b264bb33b733e2b6a6c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4935484 bytes)**  
+-	Total Size: **5.0 MB (4961404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1e3c18ced38c299913a1c51af32e72c9459de522fdfb2f93589d7236c7cf675`
+-	Image ID: `sha256:ea4b6c1d44047d5b8693804661264e8e7eeb4084b16ad6cff0b44fe3bf50c689`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1a999d849503dd0f4e11772f75de463155b7ff855861bd4911f8e2bf11ce4057`  
-		Last Modified: Thu, 17 Oct 2024 08:08:35 GMT  
-		Size: 4.9 MB (4921403 bytes)  
+	-	`sha256:bb582ee530ff089f172a152eb3033e02ed0784ee72be2d6cfceeb038bd52e721`  
+		Last Modified: Sat, 19 Oct 2024 11:55:04 GMT  
+		Size: 4.9 MB (4947148 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:92fdd1d343842aed43806a79d362c35c8f85e94f91c03c9cea3e6dab7f1428ce`  
-		Last Modified: Thu, 17 Oct 2024 08:08:35 GMT  
-		Size: 14.1 KB (14081 bytes)  
+	-	`sha256:c502270dc776a477d3152a3e7a5a7dfecf6b0a8d83bacd2c095bc09219050817`  
+		Last Modified: Sat, 19 Oct 2024 11:55:03 GMT  
+		Size: 14.3 KB (14256 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-tools-deps-bullseye`
 
 ```console
-$ docker pull clojure@sha256:f75423c1664079c958fc87267b0e58903a1b6cf2493f64b7e0347e9ac3b923e7
+$ docker pull clojure@sha256:ebfed3fbd62f6b3473cd08c9d0b9d2ea25f6aa28af5492367e782b0750e0618f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9471,13 +9471,13 @@ $ docker pull clojure@sha256:b26b2e0df63ff73085c83f4a7bd6f5a0456b76cfcdd3d945d10
 ### `clojure:temurin-11-tools-deps-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:f26aa53d764d2aa57dfa85c5410dd158ad5155b257c5ad397ada570cc94ca628
+$ docker pull clojure@sha256:8a9e819f7ed1e2baae6b910aa79a09208e20a61c9dde35f7520f1a6bf780cf2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.6 MB (265558958 bytes)**  
+-	Total Size: **265.6 MB (265557335 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb6c6e1cff43e0652992b4b19f980e4e8107fd1f80c4d6a3e60f2d4a218d4d0f`
+-	Image ID: `sha256:b5bac7aef78a8cf147a8748ac70559d8a64de8bfe7e1f3c2cb91bf54f722bb4c`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -9508,51 +9508,51 @@ CMD ["clj"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1bda293784e347b2519c90ccae374d1fef0769a110f0539ea381e5d0173cef5f`  
-		Last Modified: Thu, 17 Oct 2024 08:05:45 GMT  
-		Size: 142.4 MB (142356620 bytes)  
+	-	`sha256:8c401c7f531d55485bd64ed4729ea50678e25946f3eaf1ab19487c5497b75ce3`  
+		Last Modified: Sat, 19 Oct 2024 11:50:38 GMT  
+		Size: 142.4 MB (142354834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:32c05e41003ac86805de7b845a5875e74c40c76671bd8a5c23512babc22e02d5`  
-		Last Modified: Thu, 17 Oct 2024 08:09:35 GMT  
-		Size: 69.5 MB (69466801 bytes)  
+	-	`sha256:dc04cd4f9e3f29a7880732bc278005624116c146cae8a1ea0ddaf361a31f609a`  
+		Last Modified: Sat, 19 Oct 2024 11:56:03 GMT  
+		Size: 69.5 MB (69466962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4846c262d2b2b6d62709604ec56bc778b2aceb4a43e1d283e664537b3b30fadc`  
-		Last Modified: Thu, 17 Oct 2024 08:09:33 GMT  
-		Size: 610.0 B  
+	-	`sha256:1d56a326baf54b20e3fb6727688d0dd6525bc4e039dcb947c96a9dcbbe20e520`  
+		Last Modified: Sat, 19 Oct 2024 11:56:01 GMT  
+		Size: 612.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:2874ce29bd18fcc414421f9cc02d5360b934d62cbef9b10655d033694e2c23ec
+$ docker pull clojure@sha256:a8f1d4845611aac0a84ef5c405980a3fec4a7121f6beded7eeac5495b25686bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7229991 bytes)**  
+-	Total Size: **7.3 MB (7255910 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1366e5b9bcf46c796d5a68459a00f82d831abe1e32b346903ccc275b6bbcc357`
+-	Image ID: `sha256:6f07d096f83e0e83a0dbb00a47009936461269036d45da4facc8f423bb16a438`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a182b0efb885c7e9a9e7a990388086598e2a29d300cefdf521a2cf9af04d068b`  
-		Last Modified: Thu, 17 Oct 2024 08:09:34 GMT  
-		Size: 7.2 MB (7215982 bytes)  
+	-	`sha256:1c9b5089fb74699b105bde1101cc4676f38aa7311535bd99a7a2f1d5a06e4672`  
+		Last Modified: Sat, 19 Oct 2024 11:56:01 GMT  
+		Size: 7.2 MB (7241727 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bfb3a8772bfc585c9d03e29cdd36f1268bfdb00d6eebda0d404b1d70b8940374`  
-		Last Modified: Thu, 17 Oct 2024 08:09:33 GMT  
-		Size: 14.0 KB (14009 bytes)  
+	-	`sha256:d8aaf271ecc75e0dcd6d4dafe2b04d569d70f64c4c749205b3694a8e239b7327`  
+		Last Modified: Sat, 19 Oct 2024 11:56:01 GMT  
+		Size: 14.2 KB (14183 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-tools-deps-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:45ed4b55953071189c49bebc30196c38d00acca1ad0ca012b648f859f52f9757
+$ docker pull clojure@sha256:4f9b39b9fed7dfcc68b22b69d5a62779cd31b18529db37970eb2a86ae4b24236
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9646,13 +9646,13 @@ $ docker pull clojure@sha256:4211d5392794659d8f13e1640dee2fc50a6c61e7c73fbe01887
 ### `clojure:temurin-11-tools-deps-bullseye-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:aff7eedc5c3334ce2c138de03ecd7df44c43f5f5391917111f30ea747f981577
+$ docker pull clojure@sha256:8beca9a28775cb5f528cc7ca1c38d20473e483d95d80c2624eb5a2d081311296
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **231.5 MB (231506433 bytes)**  
+-	Total Size: **231.5 MB (231504457 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:474de96895e434aace31ed241cf4de962604a1ff7143f0546dd7994c923c0d8d`
+-	Image ID: `sha256:483d03c1d0e5f07601e22b4d1f0f0088fff0a05a40950ec094d355eab10f8338`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -9683,51 +9683,51 @@ CMD ["clj"]
 		Last Modified: Thu, 17 Oct 2024 01:15:14 GMT  
 		Size: 30.1 MB (30075757 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:552c07f22f7a24a94dcd10f61aa1a932f70c4b4c6f411f7d5e6fc0e25d319dc2`  
-		Last Modified: Thu, 17 Oct 2024 08:06:47 GMT  
-		Size: 142.4 MB (142356620 bytes)  
+	-	`sha256:aa6dc61836822badfada79fd5a7ebcd7d72c9f6ee4135bb13a6fa04e4f5fbbf5`  
+		Last Modified: Sat, 19 Oct 2024 08:55:56 GMT  
+		Size: 142.4 MB (142354770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a5020e75e5570d264494fe7246632178b14b22e6f41c813db09a3bac95aea47`  
-		Last Modified: Thu, 17 Oct 2024 08:10:30 GMT  
-		Size: 59.1 MB (59073413 bytes)  
+	-	`sha256:27d37cdea463a495d829a5a818ea7047133865a09436e67cd3bf59bb7fc17c8d`  
+		Last Modified: Sat, 19 Oct 2024 11:56:59 GMT  
+		Size: 59.1 MB (59073287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4bdc57f6ce793dbf09e888d013b80c5358da6f92fbe1d0a487d8ee9efc9f28ef`  
-		Last Modified: Thu, 17 Oct 2024 08:10:28 GMT  
+	-	`sha256:dec96c5c1b88783d0a5114e0262b80db9d499ca7a5fbdb2244bc863922644da4`  
+		Last Modified: Sat, 19 Oct 2024 11:56:57 GMT  
 		Size: 611.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:ee78a726c352fce334f3533a25fe72480fb9904ceb8f1363df64226e57aecc85
+$ docker pull clojure@sha256:b7e2b63c129a78f3987dfd1acec8faa73ba515413473bc40d96eae249883361a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5140180 bytes)**  
+-	Total Size: **5.2 MB (5166099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4819b3198e87d1e2261081a50c8d207a91b88e984e3e60ccfce4c3a99e85a3db`
+-	Image ID: `sha256:3e926cd6b7d3b8fdc6d8370f036af349b1565c6901b71153f8b85de1bbef66ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:44860e6581be918a985311c6f78a4465990fe58d9b664bc1c6449192243ad13d`  
-		Last Modified: Thu, 17 Oct 2024 08:10:29 GMT  
-		Size: 5.1 MB (5126098 bytes)  
+	-	`sha256:db9416ad9883a2baab5d6c76174255d7691eec76c5ba7542b0700b4814819a78`  
+		Last Modified: Sat, 19 Oct 2024 11:56:57 GMT  
+		Size: 5.2 MB (5151843 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:110b447c19a125edb3fe00d0902c48fda48123e29643102d1e4e383375ac02bf`  
-		Last Modified: Thu, 17 Oct 2024 08:10:28 GMT  
-		Size: 14.1 KB (14082 bytes)  
+	-	`sha256:5fa2ef7ab97a8528ea0fc982887da028068b66a6ae171ed5b3bb8206314264c0`  
+		Last Modified: Sat, 19 Oct 2024 11:56:57 GMT  
+		Size: 14.3 KB (14256 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-tools-deps-jammy`
 
 ```console
-$ docker pull clojure@sha256:627170abd06b6e141565772f2a8a54ca739e12d424fe3e6805e7f1a6e2eeefa8
+$ docker pull clojure@sha256:849792246fcd7915564fc79b776870eb872be33464f738446cad423a492f51b4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9856,28 +9856,28 @@ $ docker pull clojure@sha256:09c633eac789018552418d5b8ac4fe7ecbb496bbec26d1a8783
 ### `clojure:temurin-11-tools-deps-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:a3a329ae00571b2dd218eb9932a275344b729c0f705a95557fb217cdbde3bcbc
+$ docker pull clojure@sha256:7edda2a510745b7ad8bc3b9718fc2c126b5c48d1b5c8884e5e333c861fde9efe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **235.2 MB (235186157 bytes)**  
+-	Total Size: **234.2 MB (234163596 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44e3bba0cd8712b0d70006cff1606683e6407698bcbd63a8f8d243bbc5970962`
+-	Image ID: `sha256:bf455c86a0295d180054bc2ab60472a3e759156dc6c090b466c74fcf46cd3232`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -9899,80 +9899,80 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV CLOJURE_VERSION=1.12.0.1479
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "94f29b9b66183bd58307c46fb561fd9e9148666bac13a4518a9931b6f989d830 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["clj"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8cc429601029ecb71c941cbfdd32b85983522d0f4ef294d6f2de0ba93bb2f778`  
-		Last Modified: Tue, 17 Sep 2024 01:37:28 GMT  
-		Size: 12.8 MB (12813215 bytes)  
+	-	`sha256:e2dece6d062dc0723f97a73605fb14fdb50c21ad91f9182d5756336b6456a39f`  
+		Last Modified: Sat, 19 Oct 2024 05:27:13 GMT  
+		Size: 12.8 MB (12828465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71de66288b0ec7e9aae2b4bf7e6ef063c8257132fae484daccc4426ba2ef757e`  
-		Last Modified: Tue, 17 Sep 2024 01:38:30 GMT  
-		Size: 142.4 MB (142360707 bytes)  
+	-	`sha256:2090d0aaf551ef5f17bb7d3e2acb1a1a78fe12319ddb90bbb350471476720988`  
+		Last Modified: Sat, 19 Oct 2024 05:31:20 GMT  
+		Size: 142.4 MB (142361342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92d116babd00a334d348e273dc4b1190d5f7af0cc521966e8453c5f765294905`  
-		Last Modified: Tue, 17 Sep 2024 01:38:20 GMT  
-		Size: 174.0 B  
+	-	`sha256:e6df1bfc79401022542ca45906e79ce4bc3a627d4d702b076f8b0cdb7f49b7a5`  
+		Last Modified: Sat, 19 Oct 2024 05:31:13 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b977d3c0b471428500a255bf597bf03cb55d47b047dc10e929b6cc0991dd25ea`  
-		Last Modified: Tue, 17 Sep 2024 01:38:20 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:deb49e148e6b4d5ef663ef5a51fd7a754899e160e77c39f5940478a043cb8775`  
+		Last Modified: Sat, 19 Oct 2024 05:31:14 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:403eaf9ed1e71366e127742d31528fa0beaab16f260061690dfb93958423edff`  
-		Last Modified: Tue, 17 Sep 2024 04:28:18 GMT  
-		Size: 51.6 MB (51612200 bytes)  
+	-	`sha256:b18658c23ad4e06b41ae67250a3e71a5b88034d8f9f6a6431bd92f4c4e245e54`  
+		Last Modified: Sat, 19 Oct 2024 11:58:03 GMT  
+		Size: 51.6 MB (51612546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:38c3c8602a618badcb4c648e333896eb21ff1952e9b6588a5525e8cb84b35b42`  
-		Last Modified: Tue, 17 Sep 2024 04:28:16 GMT  
-		Size: 614.0 B  
+	-	`sha256:4605710f37e8d095b75c23ee50cd2dbfe5c61ed61aaa1b7142057395dd1e2130`  
+		Last Modified: Sat, 19 Oct 2024 11:58:01 GMT  
+		Size: 615.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:dd79514dbc2e7edcca075fbba1798d6aac5c8267cd664c4ae53e89c9aec7b47d
+$ docker pull clojure@sha256:c013cd9bd6c9d949e24a80e58c9cde31fdf4e4a71f5e1af85e6e3ccdc8252205
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 MB (5777536 bytes)**  
+-	Total Size: **6.0 MB (5980635 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a219278a05145f5693089f59f188da382fd9e56b1760080153a33a74efbe9393`
+-	Image ID: `sha256:4765c406510622ea19517d53e010ce2b00675156021da090550cc29b63509269`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3579e8cb8f12c3750abd31a95aa3c05a3f6c841e708029697a190eeeb7516361`  
-		Last Modified: Tue, 17 Sep 2024 04:28:17 GMT  
-		Size: 5.8 MB (5763059 bytes)  
+	-	`sha256:76531d5452f0c3bbf145f26e8d1704555ef2a54513c67503e54a21f8ce890776`  
+		Last Modified: Sat, 19 Oct 2024 11:58:01 GMT  
+		Size: 6.0 MB (5966286 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7787eaf56e21d53bbf055c8611dbc0ecee9b2609003dad743ff23291cfb524ab`  
-		Last Modified: Tue, 17 Sep 2024 04:28:16 GMT  
-		Size: 14.5 KB (14477 bytes)  
+	-	`sha256:ae1f5d99e632a0aa122d5e7d4d518e7de87cc1c08f06b4e87e63193be876ca66`  
+		Last Modified: Sat, 19 Oct 2024 11:58:01 GMT  
+		Size: 14.3 KB (14349 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-11-tools-deps-noble`
 
 ```console
-$ docker pull clojure@sha256:744b9bfb85cbfd2d8ad56bace5ed157ba89d51fc3b6ac79460478665a0d35e8f
+$ docker pull clojure@sha256:f5623fd05fac51718d79630ff72d74d8d955f557a7d0175d17523c2e3308d1d5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10101,28 +10101,28 @@ $ docker pull clojure@sha256:154a462409b4673c78c2200de82fda48fdef1b987aa8e40706e
 ### `clojure:temurin-11-tools-deps-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:ad89468ab917c9ae08108e5a5a861fb9a875f072f331ecfc9a67997bea4858f9
+$ docker pull clojure@sha256:f749f62ef32ee64b28a354b23ac3b52d3477533be0c1241fd955f7934a05d368
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.1 MB (242050403 bytes)**  
+-	Total Size: **241.0 MB (240979775 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:411d29441ee247720d64826a2683419a8087e74577ef9f1e19e2878795105591`
+-	Image ID: `sha256:e0bea6e5819d4e6e858a1857c57fcc2378e16564acf2a17b2899083cf343d4bd`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -10157,61 +10157,61 @@ CMD ["clj"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:185af607866372c42b75ce6a89acba6d7e5d2cb54d2fb846f7d86da63371897e`  
-		Last Modified: Wed, 16 Oct 2024 01:15:52 GMT  
-		Size: 13.8 MB (13798568 bytes)  
+	-	`sha256:53f4eec6f561250a0d70c55e6bd99d1331023a580a505800e59b70664894053d`  
+		Last Modified: Sat, 19 Oct 2024 05:28:16 GMT  
+		Size: 13.8 MB (13796069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f223b26986d5ef596a3bc2e5b9fa8ed2a7d4eee787dfc1be4c5580430d434670`  
-		Last Modified: Wed, 16 Oct 2024 01:16:57 GMT  
-		Size: 142.4 MB (142362351 bytes)  
+	-	`sha256:c6823e6b50ca3c68636f1e8736daaad4cf87e816d2fc06e5c59e8c56517630d6`  
+		Last Modified: Sat, 19 Oct 2024 05:32:43 GMT  
+		Size: 142.4 MB (142360273 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:707e03b04fd118f54ff43a10a97ae63ba84814cdd5c3efaafe1a2552b724de1e`  
-		Last Modified: Wed, 16 Oct 2024 01:16:48 GMT  
-		Size: 175.0 B  
+	-	`sha256:e81a958a8065d543f5c21cb040292fcb94219d94a0bc35d63e21bf42a8f8d1e0`  
+		Last Modified: Sat, 19 Oct 2024 05:32:39 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3946524c733421f02a866a95c00356aa20a295a769c12850454ab658d217f4e3`  
-		Last Modified: Wed, 16 Oct 2024 01:16:48 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:210d02a261d2900a956e2b1800dce8ac95740893c658be7f61eb981e7da23598`  
+		Last Modified: Sat, 19 Oct 2024 05:32:39 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bef2f8b9a871a04926a4112df81d9b192a626a95adc0cf2ae7507ee4bb6e8e1c`  
-		Last Modified: Wed, 16 Oct 2024 02:19:51 GMT  
-		Size: 55.9 MB (55933751 bytes)  
+	-	`sha256:29d62c2cca4c61fa142c91a70c9fd581d56b12bfe068517d68ab7c2ff3005ac7`  
+		Last Modified: Sat, 19 Oct 2024 11:59:03 GMT  
+		Size: 55.9 MB (55934674 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1cab26d4da66b12facdf0449f04754729d0db95cb02407c3377546d0e39ee97a`  
-		Last Modified: Wed, 16 Oct 2024 02:19:49 GMT  
+	-	`sha256:067fce1853e082b297b4075aca9bf048dc27ebf60451c9ca208c2cacf6006a47`  
+		Last Modified: Sat, 19 Oct 2024 11:59:01 GMT  
 		Size: 615.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:4cb44ac5b505b6d6ef1c0dc2d6f4b152367b773717136dfc39b92ca43326603b
+$ docker pull clojure@sha256:22c7ccbc641bd25efe4ba532486f678fa72a8ec8f08f5ec2c5dee5ec2d4e586d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5453384 bytes)**  
+-	Total Size: **5.5 MB (5480348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3bba0d2cce9d667579915fbf39e0a98cdfec5f5ec6eba369e57b53ec58f59158`
+-	Image ID: `sha256:afc637ed4e98a9b94c761c77fd0a771c87f32115b063f238d0f3eab68d031aa8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f54bd07c23c937e59f8e9851729f6846f04b5163a74b34303cd00348cb294546`  
-		Last Modified: Wed, 16 Oct 2024 02:19:50 GMT  
-		Size: 5.4 MB (5439796 bytes)  
+	-	`sha256:4e371e51eb0c08dc3f7658a533230651465d8f6cb2193657014384b4ac986038`  
+		Last Modified: Sat, 19 Oct 2024 11:59:02 GMT  
+		Size: 5.5 MB (5466707 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e9de83543bd665d59b893b80b97e7c78bd58b05309eb3568a4fc59312d3d71a1`  
-		Last Modified: Wed, 16 Oct 2024 02:19:49 GMT  
-		Size: 13.6 KB (13588 bytes)  
+	-	`sha256:0dcebc107146ba891a892a7fdaf7b5074d02f4abd08998cdce081a5d00e17976`  
+		Last Modified: Sat, 19 Oct 2024 11:59:01 GMT  
+		Size: 13.6 KB (13641 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-alpine`
@@ -10344,7 +10344,7 @@ $ docker pull clojure@sha256:91c33d8e202912975a6759f365168381ead47c234186af456c7
 ## `clojure:temurin-17-bookworm`
 
 ```console
-$ docker pull clojure@sha256:f22d9c0320f619a5914801b1b402140ba00d543048f8b0dce8de971166d649f0
+$ docker pull clojure@sha256:3040268d6b74f3816993cb58035f938d8857524dcff9aab0d111707ef418f1a0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10447,13 +10447,13 @@ $ docker pull clojure@sha256:c8aa0b4e811ceb5994e36f3ed316f396b886fe50089756f4843
 ### `clojure:temurin-17-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:320bf0f1c96f0558dad596e0cc903f93c984bb4ab16583589889045a93735d2f
+$ docker pull clojure@sha256:dfe23b482395c88b2b2eb5ca76edd11b2ddd122ef8170f946862a7f2aa3fedf9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.3 MB (274335545 bytes)**  
+-	Total Size: **274.3 MB (274335776 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3271405a1bdf6c78265d374b6e50fafdd48c4b2b271b0762db28d260df5c4587`
+-	Image ID: `sha256:d1bc7c4315bd97bfab60de7aa210fb5a6b69e2ff05a99b1d548666f6158c27d9`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -10489,55 +10489,55 @@ CMD ["-M" "--repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:19 GMT  
 		Size: 49.6 MB (49584978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af79cbd2bebb502c38437b7b81f3b9697a59e5f45be49cd74b73bdf63f10ac08`  
-		Last Modified: Thu, 17 Oct 2024 08:11:33 GMT  
-		Size: 144.0 MB (143959476 bytes)  
+	-	`sha256:237653f214e6df6277c7b47d5a245880430d05230855ce95f46023867b57c6a8`  
+		Last Modified: Sat, 19 Oct 2024 12:00:15 GMT  
+		Size: 144.0 MB (143959441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d8e70c0e27f916331f49a283267e3e257bbdf87e572c6f36ce5027dad023c85`  
-		Last Modified: Thu, 17 Oct 2024 08:15:51 GMT  
-		Size: 80.8 MB (80790050 bytes)  
+	-	`sha256:055062ba45f591db1d3e3c43ac3f6e853fa2bbcd837e7bccdf575a2c8de5edd6`  
+		Last Modified: Sat, 19 Oct 2024 12:06:07 GMT  
+		Size: 80.8 MB (80790316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f3f670afbf9852f5caceb4280e54536843c50f984fe64afd5e4f5dc1bff5ab2`  
-		Last Modified: Thu, 17 Oct 2024 08:15:49 GMT  
+	-	`sha256:20b82ae0d3a52f4f4588e6ec2cd6867dce6f8015031368a7deefc3e8bce4d450`  
+		Last Modified: Sat, 19 Oct 2024 12:06:05 GMT  
 		Size: 613.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:acc01a5b0dc85d191e594ef288946e0cde25e66fadaa921e675ebbb4c939e6dc`  
-		Last Modified: Thu, 17 Oct 2024 08:15:49 GMT  
+	-	`sha256:a76a73437d6d89e691c58d742519591415ab884ed32124247d617325a3e827d6`  
+		Last Modified: Sat, 19 Oct 2024 12:06:05 GMT  
 		Size: 396.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9bdae866eae3728f33ab5557871366e3209df9edc39486c02ba4e6f7892abceb
+$ docker pull clojure@sha256:b64633c06bad5aec7d3c86e7e80262233a39baa78dbb039e76349fa70625b917
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7177357 bytes)**  
+-	Total Size: **7.2 MB (7203277 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2fb84bda3159213a82c8a544fc3b2371dbe29dd355b1ddcf35cf8e9759214f43`
+-	Image ID: `sha256:a471219ba18623fc37ba4b007518cb0ea94e181ad46b29d091ee0b12eb169bff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c3cf51aef7296fb3b4bc39e303a252ec86f17fdfe890a065e8c2e173a9aa287f`  
-		Last Modified: Thu, 17 Oct 2024 08:15:50 GMT  
-		Size: 7.2 MB (7161774 bytes)  
+	-	`sha256:d62938ec6ef1ee16a047d51e89df78d3a49c03dd21f257559ecf7d574f73fc05`  
+		Last Modified: Sat, 19 Oct 2024 12:06:06 GMT  
+		Size: 7.2 MB (7187519 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f0003de83cdb8d2ad0e8680f26595217fdf942e8bdd548a25a805bb72f3c7d25`  
-		Last Modified: Thu, 17 Oct 2024 08:15:49 GMT  
-		Size: 15.6 KB (15583 bytes)  
+	-	`sha256:6adc214802212035ccb7662a80f8eb62661c5fa9d5c1c4373801c9f44df26b7a`  
+		Last Modified: Sat, 19 Oct 2024 12:06:05 GMT  
+		Size: 15.8 KB (15758 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:2731f09f2090bcb4d3bd93153b3020d9b5ba9b27c0ca3b9dbba21d67af936721
+$ docker pull clojure@sha256:9331bf9fe82064e23be4a312ece162b792c708e0b22d706e8479574a6fd6d8ae
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10640,13 +10640,13 @@ $ docker pull clojure@sha256:e81ce1009d2648d7090b5f7bcbd5f689ede478869999ee65857
 ### `clojure:temurin-17-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:d20d421dea8ac18cf0213a9b81cd0d68654e4a2e13450f71a9cf187298dc28af
+$ docker pull clojure@sha256:fb9d8c23e2a1ce869e88bb1b441892ca3aa35e4df253752ab6058d2dc3094985
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.5 MB (242462063 bytes)**  
+-	Total Size: **242.5 MB (242462082 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d36cd000afa7e4bf1273a102beade95f67c0e10f7e6a3b61553c161463aef3ff`
+-	Image ID: `sha256:e44fb865b2aaa315b7483bb94da81bc8619d7edb79b7f3666548ce85d28ce4f8`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -10682,55 +10682,55 @@ CMD ["-M" "--repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:39 GMT  
 		Size: 29.2 MB (29156341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:467c862b0e10aff6a74318a3baf39f91f14902d551963d4cac1c395597956120`  
-		Last Modified: Thu, 17 Oct 2024 08:12:42 GMT  
-		Size: 144.0 MB (143959463 bytes)  
+	-	`sha256:de3d0b3b90758f2da033069b4131178bf4a6c1fd6b5c07637d01ad797ebbc059`  
+		Last Modified: Sat, 19 Oct 2024 12:01:24 GMT  
+		Size: 144.0 MB (143959478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf77ef51da65e55f40f4febaf475a8c3f6ac8ca4bab6afbb717037520a6ad9b2`  
-		Last Modified: Thu, 17 Oct 2024 08:16:48 GMT  
-		Size: 69.3 MB (69345219 bytes)  
+	-	`sha256:a19a53bede711a73d711f78a5875568f585e33a1680fc0502989caa1755aabc6`  
+		Last Modified: Sat, 19 Oct 2024 12:07:06 GMT  
+		Size: 69.3 MB (69345220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe1f02fcad5fe0c361a480d0ff6aa4902ba626e83f841579243d69ead7b6dea5`  
-		Last Modified: Thu, 17 Oct 2024 08:16:46 GMT  
-		Size: 612.0 B  
+	-	`sha256:9384ae5514225f769fbaec02e8f68ab620696eda9a307d106d721964af5c7e46`  
+		Last Modified: Sat, 19 Oct 2024 12:07:04 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3182514c12b3d07ab0efdf12c5036864af593a7cf6c2f9ca0e5f39058e7b4afc`  
-		Last Modified: Thu, 17 Oct 2024 08:16:46 GMT  
-		Size: 396.0 B  
+	-	`sha256:addec6defb3687a06501984a9f0acfe51c068356ccaba0a5104cc5cdc78db699`  
+		Last Modified: Sat, 19 Oct 2024 12:07:04 GMT  
+		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:668a69cfa85b56fc0487f530f1bc0011ef5c98c5c7aa151b0a643d60ce57d61c
+$ docker pull clojure@sha256:935fae79d57879929b2e392544ce5da71b0fe9df544326a237e39fecf317ca2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4915632 bytes)**  
+-	Total Size: **4.9 MB (4941553 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:590805ca798a222ab03f2cc1ace1a9936d3dde3fe2757b3f44b0821c7db6032e`
+-	Image ID: `sha256:5c81393935f2afbee6bc7d3fb21903e174ce869eddb65fba68bb4547db4fe0ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b9c82f92d1b936d4bc57063c73926ef3bd67c9a9e68f21fd6983cd804f9e0e0a`  
-		Last Modified: Thu, 17 Oct 2024 08:16:46 GMT  
-		Size: 4.9 MB (4899977 bytes)  
+	-	`sha256:752de58dd36660cbf8e0aade1a9aae2aed8d493cc78b45f441592bba0961cd93`  
+		Last Modified: Sat, 19 Oct 2024 12:07:04 GMT  
+		Size: 4.9 MB (4925722 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:643a460614005ad11ea4ebff6c1c6c2c3d5969d04c1431e8f6551dec9325168f`  
-		Last Modified: Thu, 17 Oct 2024 08:16:46 GMT  
-		Size: 15.7 KB (15655 bytes)  
+	-	`sha256:8e217df0c8d8f5e1faf9673f095f8f9aba92f099c9acbac503d373aef98acc8b`  
+		Last Modified: Sat, 19 Oct 2024 12:07:03 GMT  
+		Size: 15.8 KB (15831 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-bullseye`
 
 ```console
-$ docker pull clojure@sha256:9a85b4eb32413622dd44f121ca238c92a7c4f981ff19f2419bfdf38552f9060b
+$ docker pull clojure@sha256:f9176d261612cc5a870f2f11fe460a0a81855d573a273afa3c516602a3ca9f82
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10833,13 +10833,13 @@ $ docker pull clojure@sha256:4392021b59e3446e110f31f7c2001b99a6669682ec6ecc7707e
 ### `clojure:temurin-17-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:55e5437faef092d702e29a932098683a7474c922f17fbebcfa098d1d63285dc8
+$ docker pull clojure@sha256:a9a7d7cbd1189a24af05724a86291bcf3c14a40401c322940460b77b42500acf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **267.2 MB (267162253 bytes)**  
+-	Total Size: **267.2 MB (267162161 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:288089bccb07b6f66fca659a29b6b60e7b3593c53ccc5c97a92815b0237786d6`
+-	Image ID: `sha256:13d0ebcbe7233dd986b3a1381893d1f165ea225b02672fd5a4b7bb02e42e957a`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -10875,55 +10875,55 @@ CMD ["-M" "--repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da76e01f3707ded82e7b945d61706b260348263f460269d96f132d4d8081f901`  
-		Last Modified: Thu, 17 Oct 2024 08:13:51 GMT  
-		Size: 144.0 MB (143959463 bytes)  
+	-	`sha256:a2cc2b2c001a978151e3adbd8857a7faf4a55640f4e035b9bea7ab040128148f`  
+		Last Modified: Sat, 19 Oct 2024 12:02:26 GMT  
+		Size: 144.0 MB (143959478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ef05f7e7e527905b09476f4a3fe29502749eecb08b3b9603ce81dfd6f417f23`  
-		Last Modified: Thu, 17 Oct 2024 08:17:44 GMT  
-		Size: 69.5 MB (69466850 bytes)  
+	-	`sha256:4c17022cedcca4f23cf816ba34ca1dacb1bb37783c0f58d092c80d1b801bb9f4`  
+		Last Modified: Sat, 19 Oct 2024 12:08:03 GMT  
+		Size: 69.5 MB (69466747 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:732f5ea9ab2f27a7a144791bca811c23387dc3fe8700e1a3c8d01e677cd91779`  
-		Last Modified: Thu, 17 Oct 2024 08:17:42 GMT  
-		Size: 615.0 B  
+	-	`sha256:08d21457a1d2172342f8283652e739f93b4b7137a42f010f62671dd3741819cf`  
+		Last Modified: Sat, 19 Oct 2024 12:08:00 GMT  
+		Size: 612.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:681d187129331cbe66dbe5f563a1317d064310cfb8ccf698d4035eb0a7088084`  
-		Last Modified: Thu, 17 Oct 2024 08:17:42 GMT  
-		Size: 398.0 B  
+	-	`sha256:972c09a2931e6d7904d43e7cb3f623b33d29952d878535375226c6bedc7e4610`  
+		Last Modified: Sat, 19 Oct 2024 12:08:00 GMT  
+		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:e498a5027d97cc4da72330190405d664b0a836e7bef3f4ec58cda429db3f3911
+$ docker pull clojure@sha256:241dbc3059ff796a27d2ed0fb2d8ea576a413f68e115b0e44d0596c4283feebd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7210140 bytes)**  
+-	Total Size: **7.2 MB (7236059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:994ba7fc780c6cf8c9747d8455de2c6e1cba2d2499c4aea8599d978489921080`
+-	Image ID: `sha256:78e65a128cd19a91d7f7df367563667fc1bce89828dc92b7938955a80064f6af`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:db8e632723edfadb1f0bf59965d542060d075c7f93cbd47b9ea7097ece989145`  
-		Last Modified: Thu, 17 Oct 2024 08:17:43 GMT  
-		Size: 7.2 MB (7194556 bytes)  
+	-	`sha256:a144d64ba4a0b825d7dc02ca4d1f090ec9e8235dc87359a0c4ac6c2f27a1edde`  
+		Last Modified: Sat, 19 Oct 2024 12:08:01 GMT  
+		Size: 7.2 MB (7220301 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7bdf4aa92c39a12743124d8407cd4d6a263c245da7f5073e51a1ec7a1af83c1a`  
-		Last Modified: Thu, 17 Oct 2024 08:17:42 GMT  
-		Size: 15.6 KB (15584 bytes)  
+	-	`sha256:a7ca6bd482d9e1345109ee23bad8c465935669d1b6b4721423571deb38df7929`  
+		Last Modified: Sat, 19 Oct 2024 12:08:00 GMT  
+		Size: 15.8 KB (15758 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:42ec58853762b166a8ecf3ac4db6a68984fa56e19eca13d7fe8f234ef4cce5f8
+$ docker pull clojure@sha256:8bdd03b1aca47465c2ea210fbecb75c8be9c296454a5b2930b4cbef2fa575868
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11026,13 +11026,13 @@ $ docker pull clojure@sha256:a70913f10c50779913945855efb61135543517220bc46cd89c8
 ### `clojure:temurin-17-bullseye-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:d8ad99c5a31c8e44be45a4ef13b00311fa843b0cb0d31c2c7730d1db70ede307
+$ docker pull clojure@sha256:3057bf59ad841303e095a7cea9a1b37f295e15d704c4c5322d5773a8ab42586f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.1 MB (233109594 bytes)**  
+-	Total Size: **233.1 MB (233109096 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:16d787a7361d3f3fd75452f50df9867b8b987544bbf788354f562ac95a1f8ab0`
+-	Image ID: `sha256:678d6a75582775df45caca752ca9587cf4d6fb16935af070c055e7797eb0a1a3`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -11068,55 +11068,55 @@ CMD ["-M" "--repl"]
 		Last Modified: Thu, 17 Oct 2024 01:15:14 GMT  
 		Size: 30.1 MB (30075757 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:414bb17c66e1a956e8e8cfbcd993934c289b1940da79f19f4baaede4b6a72b09`  
-		Last Modified: Thu, 17 Oct 2024 08:15:01 GMT  
-		Size: 144.0 MB (143959469 bytes)  
+	-	`sha256:60746b2d48dfb19e043609b9b09417ae53dbcb13af929a26fa77a66ad395af56`  
+		Last Modified: Sat, 19 Oct 2024 08:48:40 GMT  
+		Size: 144.0 MB (143959478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2e843b20dcbbcb8d26f7e23db89798c53bdfccf4af1db5665bbda7f438f530e`  
-		Last Modified: Thu, 17 Oct 2024 08:18:35 GMT  
-		Size: 59.1 MB (59073327 bytes)  
+	-	`sha256:1b6b3707f40fa3f13507c9fcf22dbc220a05a4b9ba0c11a7d3890db897f233f9`  
+		Last Modified: Sat, 19 Oct 2024 12:08:57 GMT  
+		Size: 59.1 MB (59072819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ce0c9c7f61f754523bcb3ce63bc47bac67e808339c35c6c267d49436d72904e`  
-		Last Modified: Thu, 17 Oct 2024 08:18:33 GMT  
+	-	`sha256:61eac767e0b14747926380cd33b795b2bbe5d074d5da95a8fcfe6ce83e8b7358`  
+		Last Modified: Sat, 19 Oct 2024 12:08:55 GMT  
 		Size: 613.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd3c96beb6d25f59136439d6a321a0a1a76e2c4e10bff405aa05a1d0c037eb22`  
-		Last Modified: Thu, 17 Oct 2024 08:18:33 GMT  
-		Size: 396.0 B  
+	-	`sha256:41c89a593d2586a9cbe578476aa584a54e6d14228b61cbaa340e5efc299d09ae`  
+		Last Modified: Sat, 19 Oct 2024 12:08:55 GMT  
+		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:3acd074119c7253df3d35e67ed24e41a363f6d9a34ad0a49268cafe9b64c8cce
+$ docker pull clojure@sha256:eed7ed0cfa86703ffa786b3c44f65b0f91b085b785940a91f7e9e950f4518a95
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5120328 bytes)**  
+-	Total Size: **5.1 MB (5146248 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc0e32410969b82971f71845a60303ce0f5cfda098f443d5b6d45850531f0597`
+-	Image ID: `sha256:1b09b321b4c52bb765294dc39c291af31c6b2f4241a73c79c8de1e554b97ea89`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:af02ef773caf3edc2a1f586b3dea648f53b4d84780888b6bc64b7f4392db399e`  
-		Last Modified: Thu, 17 Oct 2024 08:18:34 GMT  
-		Size: 5.1 MB (5104672 bytes)  
+	-	`sha256:5b91a37a6a14357e3f45f4b107851c18f53dfb09db862a1fa68ed355ccd53a2c`  
+		Last Modified: Sat, 19 Oct 2024 12:08:56 GMT  
+		Size: 5.1 MB (5130417 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f7372095ed70985f524d3618e65979ecc63edb16b8193aa0f2aea7c0fd28d07a`  
-		Last Modified: Thu, 17 Oct 2024 08:18:33 GMT  
-		Size: 15.7 KB (15656 bytes)  
+	-	`sha256:7b5241fae364faea996811832af07be5daa68adf71f7b7e2873f801928cc6eec`  
+		Last Modified: Sat, 19 Oct 2024 12:08:55 GMT  
+		Size: 15.8 KB (15831 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-jammy`
 
 ```console
-$ docker pull clojure@sha256:e226f59d414508a651d45a894f2837bdb1474b846afecc2832c39e8790cc1c50
+$ docker pull clojure@sha256:f9674fbdb264547aa7b939d1a845fe7c65363e9e98c019927c5a481ec87e1386
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11253,28 +11253,28 @@ $ docker pull clojure@sha256:0634379064e91530c48f4a58e62a5e6a34baade898537656f7c
 ### `clojure:temurin-17-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:8b804ee2bb7632afdce2939de92ea8b6684dcb1c8e91fedf51bcabeb370a306a
+$ docker pull clojure@sha256:4921f003e462d0bab1914c76f4e63081c6926e41838dea53440c1fba76574f37
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.8 MB (242810401 bytes)**  
+-	Total Size: **241.8 MB (241786030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcfb7d1cc13d5f3622516119aebedbc6fb94e1ba0fcf7b0faedc24c136c53807`
+-	Image ID: `sha256:c6f8d5f09a80621b7693e680ecbb7a42b201bf6ccae99a0bf929179639daa3b7`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -11296,88 +11296,88 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV CLOJURE_VERSION=1.12.0.1479
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "94f29b9b66183bd58307c46fb561fd9e9148666bac13a4518a9931b6f989d830 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENTRYPOINT ["entrypoint"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["-M" "--repl"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21a0c08aee9ece74cacae8ca7dfbcf838605c1e8bf9ae4ef62a9bf1d407ca7dd`  
-		Last Modified: Tue, 17 Sep 2024 01:39:26 GMT  
-		Size: 18.8 MB (18827958 bytes)  
+	-	`sha256:4f4328c2660e2acfd7df28e6cce03f948be8bfd9bc327b3747dcbddc8199302b`  
+		Last Modified: Sat, 19 Oct 2024 05:36:25 GMT  
+		Size: 18.8 MB (18842272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c661676adabc448000bc17c531badb810755db643cdbd3b77bd5d6af1e70cea8`  
-		Last Modified: Tue, 17 Sep 2024 01:39:32 GMT  
-		Size: 144.0 MB (143967066 bytes)  
+	-	`sha256:1a6b4f156363cc8751d4ca24fe1b36d8f3c4fc0335ce6e49a8123255d79912f0`  
+		Last Modified: Sat, 19 Oct 2024 05:36:28 GMT  
+		Size: 144.0 MB (143967033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:635213e63d52c04685322883d25f6bb5f35e17073ffdc3cb41b45cb406e5c0d0`  
-		Last Modified: Tue, 17 Sep 2024 01:39:23 GMT  
-		Size: 172.0 B  
+	-	`sha256:d35a83363ff0741a526836ef065ab1bd42f1332ee3f997f5c2030f92a9c8c6ca`  
+		Last Modified: Sat, 19 Oct 2024 05:36:24 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1eb782c3b8f552eed1b4a6d0237ac6e9664eb6f27291f628c62fa4586b409055`  
-		Last Modified: Tue, 17 Sep 2024 01:39:23 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:f07c3705559939101aebca8ea7598e75955b991ff61cfce66869f1e790abd370`  
+		Last Modified: Sat, 19 Oct 2024 05:36:24 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:558811c399c07c4e2994d58fe7b74447b5ba3269de59de5d7d0d33355753aea1`  
-		Last Modified: Tue, 17 Sep 2024 04:39:46 GMT  
-		Size: 51.6 MB (51614944 bytes)  
+	-	`sha256:78d5f464f06c1d8099c8eb41a1465e3f46385302b33b12adf12e21dc95443b06`  
+		Last Modified: Sat, 19 Oct 2024 12:09:48 GMT  
+		Size: 51.6 MB (51615084 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4401298bcb97e14925d09a0120779bf8f2ec3bb6a4bc86f6de9af53ca3014e91`  
-		Last Modified: Tue, 17 Sep 2024 04:39:44 GMT  
+	-	`sha256:3ee11607757fca0e662a86ef8bf8d0b32ac32bb72df679fd18d7784269225a89`  
+		Last Modified: Sat, 19 Oct 2024 12:09:46 GMT  
 		Size: 615.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922919db85c45334b954f10e648de04a846a24bfb72c4ea6ca11715dbe48c871`  
-		Last Modified: Tue, 17 Sep 2024 04:39:44 GMT  
+	-	`sha256:cb2561525c064792f20dfc6db20c10e04161cbeb34b0b4cf47fd9051a8fcf1b7`  
+		Last Modified: Sat, 19 Oct 2024 12:09:46 GMT  
 		Size: 399.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9e24393dc32244f9648091515b327421b310d6d4353c703ab1cc6096a1585527
+$ docker pull clojure@sha256:281e2a431e734ea20915fa0022db064b448a33f0903020077ed538b5d24e2529
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 MB (6031950 bytes)**  
+-	Total Size: **6.2 MB (6214230 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:29c9cebd9a91cd0d961aaf787ac5d2e5d55c7e142912235f8a2b55e9a86c3abc`
+-	Image ID: `sha256:0aea6414a2539555d3b1ec47b89cfbae95c495890955b8c26b22d3f500b8c2b1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d428e53b31b1fba82320bf9fc4053fc2e0318b79334c8b91e55ea83c80a7a27e`  
-		Last Modified: Tue, 17 Sep 2024 04:39:45 GMT  
-		Size: 6.0 MB (6015406 bytes)  
+	-	`sha256:281e6536c73d03467bffdbc09efd5a4cf2d1358bb084f5e95b789f0140c520aa`  
+		Last Modified: Sat, 19 Oct 2024 12:09:47 GMT  
+		Size: 6.2 MB (6197843 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:41e24a1b9e991500841c11a0943aa1b7161293e3179cea8dcf937c2e9b7c84f3`  
-		Last Modified: Tue, 17 Sep 2024 04:39:44 GMT  
-		Size: 16.5 KB (16544 bytes)  
+	-	`sha256:5bc0e61680fc60623769b9646c851a1a0e165fbb9e9814588e53e13e9c0d9aed`  
+		Last Modified: Sat, 19 Oct 2024 12:09:46 GMT  
+		Size: 16.4 KB (16387 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-lein`
 
 ```console
-$ docker pull clojure@sha256:9fae2f4220ed34ffe864e1b87ef51dd94d8a3141a847f073c70e663ebb5f01af
+$ docker pull clojure@sha256:fad2680a5545c82c661ed728a2b0e102194f9675d3ac5c9d45edd84d690e2611
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11520,28 +11520,28 @@ $ docker pull clojure@sha256:2dc62862797da2435e570bdf379bcd6cfea68356a993e192e31
 ### `clojure:temurin-17-lein` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:eaa29f876da30ffb9f7d457d956c3cde6b328260e7fb8e41a1551de50b8b2198
+$ docker pull clojure@sha256:1dda59be2692613100273fc68e15d4161b8b82e981fdab73590fc2fd0762c954
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **231.4 MB (231435874 bytes)**  
+-	Total Size: **230.4 MB (230411554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ccf4fca6f5d6cbcfa112dba0808d74ad77c4e7639ae5bc7f8969900934880020`
+-	Image ID: `sha256:654512f4b37eed67f31aa1e73dc959b9b9ec86667f714386d7f633a7d4a4bba8`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -11563,94 +11563,94 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_VERSION=2.11.2
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN set -eux; apt-get update && apt-get install -y make git gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mkdir -p /root/.lein && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get purge -y --auto-remove gnupg wget # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_ROOT=1
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.12.0"]])' > project.clj   && lein deps && rm project.clj # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENTRYPOINT ["entrypoint"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["repl"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21a0c08aee9ece74cacae8ca7dfbcf838605c1e8bf9ae4ef62a9bf1d407ca7dd`  
-		Last Modified: Tue, 17 Sep 2024 01:39:26 GMT  
-		Size: 18.8 MB (18827958 bytes)  
+	-	`sha256:4f4328c2660e2acfd7df28e6cce03f948be8bfd9bc327b3747dcbddc8199302b`  
+		Last Modified: Sat, 19 Oct 2024 05:36:25 GMT  
+		Size: 18.8 MB (18842272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c661676adabc448000bc17c531badb810755db643cdbd3b77bd5d6af1e70cea8`  
-		Last Modified: Tue, 17 Sep 2024 01:39:32 GMT  
-		Size: 144.0 MB (143967066 bytes)  
+	-	`sha256:1a6b4f156363cc8751d4ca24fe1b36d8f3c4fc0335ce6e49a8123255d79912f0`  
+		Last Modified: Sat, 19 Oct 2024 05:36:28 GMT  
+		Size: 144.0 MB (143967033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:635213e63d52c04685322883d25f6bb5f35e17073ffdc3cb41b45cb406e5c0d0`  
-		Last Modified: Tue, 17 Sep 2024 01:39:23 GMT  
-		Size: 172.0 B  
+	-	`sha256:d35a83363ff0741a526836ef065ab1bd42f1332ee3f997f5c2030f92a9c8c6ca`  
+		Last Modified: Sat, 19 Oct 2024 05:36:24 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1eb782c3b8f552eed1b4a6d0237ac6e9664eb6f27291f628c62fa4586b409055`  
-		Last Modified: Tue, 17 Sep 2024 01:39:23 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:f07c3705559939101aebca8ea7598e75955b991ff61cfce66869f1e790abd370`  
+		Last Modified: Sat, 19 Oct 2024 05:36:24 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d43cf67936e181539e8b4d4be0960b0ad768dbcce211a6be5bf0bcff182dea7`  
-		Last Modified: Tue, 17 Sep 2024 04:34:50 GMT  
-		Size: 35.7 MB (35726854 bytes)  
+	-	`sha256:2719161ae429242555786af04f02e84646e19d01aff9d726d1a8dc65e51c1ba6`  
+		Last Modified: Sat, 19 Oct 2024 12:04:18 GMT  
+		Size: 35.7 MB (35727110 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0dbd9bbc88f2612b02eea6a8c1cbbd2548fa7968178ec1c14f17e3d3b30543ca`  
-		Last Modified: Tue, 17 Sep 2024 04:34:49 GMT  
-		Size: 4.5 MB (4514178 bytes)  
+	-	`sha256:d0a4b1d3139abd1b439679cd32e1bdc612e86d8ae874f54e2e9b3708fbf9aef1`  
+		Last Modified: Sat, 19 Oct 2024 12:04:18 GMT  
+		Size: 4.5 MB (4514113 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9393f49035e2570808758b332df27e0cb9cf4712281865a3492246dbb1f4cdd6`  
-		Last Modified: Tue, 17 Sep 2024 04:34:49 GMT  
+	-	`sha256:1cb5dcc9a847b5734e208454178adb5218ba5d075c93320eb44c6da0694ae1f2`  
+		Last Modified: Sat, 19 Oct 2024 12:04:17 GMT  
 		Size: 399.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-lein` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:bce929bc5f6120a3697a6b2f7bbf79791876c8f712eb963f5e68c5aa538cfc98
+$ docker pull clojure@sha256:1a828a4709b8540963e95fc1a2930860073c751521af982eee76d06d23ec51ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5473154 bytes)**  
+-	Total Size: **5.7 MB (5654172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc23b10a46c76a64dbea62088d8b32d90156d4f01fef580ec6e31b1a1b488d5d`
+-	Image ID: `sha256:f45787f64ba96cab22e6f990376cce7dd965696f0190926560c59feb0d1f646d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:838e8b1917deb4940d80b2ac99b694579874526645399bd60e70de3ff83652d4`  
-		Last Modified: Tue, 17 Sep 2024 04:34:48 GMT  
-		Size: 5.5 MB (5453816 bytes)  
+	-	`sha256:827283fc3db98562abdbc5ecd32abe30ccf4947a1fd1cdf3374479f6de01523a`  
+		Last Modified: Sat, 19 Oct 2024 12:04:17 GMT  
+		Size: 5.6 MB (5634977 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1b80e7bf0c135206d806f51794e4a0f3adc938b0558aa573f686936dcce9932f`  
-		Last Modified: Tue, 17 Sep 2024 04:34:47 GMT  
-		Size: 19.3 KB (19338 bytes)  
+	-	`sha256:5fcb02144204740f20b5db23d35f78d9dbe69615a1edfb070c13e94a26b7cd20`  
+		Last Modified: Sat, 19 Oct 2024 12:04:17 GMT  
+		Size: 19.2 KB (19195 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-lein-2.11.2`
 
 ```console
-$ docker pull clojure@sha256:9fae2f4220ed34ffe864e1b87ef51dd94d8a3141a847f073c70e663ebb5f01af
+$ docker pull clojure@sha256:fad2680a5545c82c661ed728a2b0e102194f9675d3ac5c9d45edd84d690e2611
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -11793,28 +11793,28 @@ $ docker pull clojure@sha256:2dc62862797da2435e570bdf379bcd6cfea68356a993e192e31
 ### `clojure:temurin-17-lein-2.11.2` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:eaa29f876da30ffb9f7d457d956c3cde6b328260e7fb8e41a1551de50b8b2198
+$ docker pull clojure@sha256:1dda59be2692613100273fc68e15d4161b8b82e981fdab73590fc2fd0762c954
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **231.4 MB (231435874 bytes)**  
+-	Total Size: **230.4 MB (230411554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ccf4fca6f5d6cbcfa112dba0808d74ad77c4e7639ae5bc7f8969900934880020`
+-	Image ID: `sha256:654512f4b37eed67f31aa1e73dc959b9b9ec86667f714386d7f633a7d4a4bba8`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -11836,88 +11836,88 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_VERSION=2.11.2
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN set -eux; apt-get update && apt-get install -y make git gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mkdir -p /root/.lein && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get purge -y --auto-remove gnupg wget # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_ROOT=1
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.12.0"]])' > project.clj   && lein deps && rm project.clj # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENTRYPOINT ["entrypoint"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["repl"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21a0c08aee9ece74cacae8ca7dfbcf838605c1e8bf9ae4ef62a9bf1d407ca7dd`  
-		Last Modified: Tue, 17 Sep 2024 01:39:26 GMT  
-		Size: 18.8 MB (18827958 bytes)  
+	-	`sha256:4f4328c2660e2acfd7df28e6cce03f948be8bfd9bc327b3747dcbddc8199302b`  
+		Last Modified: Sat, 19 Oct 2024 05:36:25 GMT  
+		Size: 18.8 MB (18842272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c661676adabc448000bc17c531badb810755db643cdbd3b77bd5d6af1e70cea8`  
-		Last Modified: Tue, 17 Sep 2024 01:39:32 GMT  
-		Size: 144.0 MB (143967066 bytes)  
+	-	`sha256:1a6b4f156363cc8751d4ca24fe1b36d8f3c4fc0335ce6e49a8123255d79912f0`  
+		Last Modified: Sat, 19 Oct 2024 05:36:28 GMT  
+		Size: 144.0 MB (143967033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:635213e63d52c04685322883d25f6bb5f35e17073ffdc3cb41b45cb406e5c0d0`  
-		Last Modified: Tue, 17 Sep 2024 01:39:23 GMT  
-		Size: 172.0 B  
+	-	`sha256:d35a83363ff0741a526836ef065ab1bd42f1332ee3f997f5c2030f92a9c8c6ca`  
+		Last Modified: Sat, 19 Oct 2024 05:36:24 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1eb782c3b8f552eed1b4a6d0237ac6e9664eb6f27291f628c62fa4586b409055`  
-		Last Modified: Tue, 17 Sep 2024 01:39:23 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:f07c3705559939101aebca8ea7598e75955b991ff61cfce66869f1e790abd370`  
+		Last Modified: Sat, 19 Oct 2024 05:36:24 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d43cf67936e181539e8b4d4be0960b0ad768dbcce211a6be5bf0bcff182dea7`  
-		Last Modified: Tue, 17 Sep 2024 04:34:50 GMT  
-		Size: 35.7 MB (35726854 bytes)  
+	-	`sha256:2719161ae429242555786af04f02e84646e19d01aff9d726d1a8dc65e51c1ba6`  
+		Last Modified: Sat, 19 Oct 2024 12:04:18 GMT  
+		Size: 35.7 MB (35727110 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0dbd9bbc88f2612b02eea6a8c1cbbd2548fa7968178ec1c14f17e3d3b30543ca`  
-		Last Modified: Tue, 17 Sep 2024 04:34:49 GMT  
-		Size: 4.5 MB (4514178 bytes)  
+	-	`sha256:d0a4b1d3139abd1b439679cd32e1bdc612e86d8ae874f54e2e9b3708fbf9aef1`  
+		Last Modified: Sat, 19 Oct 2024 12:04:18 GMT  
+		Size: 4.5 MB (4514113 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9393f49035e2570808758b332df27e0cb9cf4712281865a3492246dbb1f4cdd6`  
-		Last Modified: Tue, 17 Sep 2024 04:34:49 GMT  
+	-	`sha256:1cb5dcc9a847b5734e208454178adb5218ba5d075c93320eb44c6da0694ae1f2`  
+		Last Modified: Sat, 19 Oct 2024 12:04:17 GMT  
 		Size: 399.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-lein-2.11.2` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:bce929bc5f6120a3697a6b2f7bbf79791876c8f712eb963f5e68c5aa538cfc98
+$ docker pull clojure@sha256:1a828a4709b8540963e95fc1a2930860073c751521af982eee76d06d23ec51ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5473154 bytes)**  
+-	Total Size: **5.7 MB (5654172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc23b10a46c76a64dbea62088d8b32d90156d4f01fef580ec6e31b1a1b488d5d`
+-	Image ID: `sha256:f45787f64ba96cab22e6f990376cce7dd965696f0190926560c59feb0d1f646d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:838e8b1917deb4940d80b2ac99b694579874526645399bd60e70de3ff83652d4`  
-		Last Modified: Tue, 17 Sep 2024 04:34:48 GMT  
-		Size: 5.5 MB (5453816 bytes)  
+	-	`sha256:827283fc3db98562abdbc5ecd32abe30ccf4947a1fd1cdf3374479f6de01523a`  
+		Last Modified: Sat, 19 Oct 2024 12:04:17 GMT  
+		Size: 5.6 MB (5634977 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1b80e7bf0c135206d806f51794e4a0f3adc938b0558aa573f686936dcce9932f`  
-		Last Modified: Tue, 17 Sep 2024 04:34:47 GMT  
-		Size: 19.3 KB (19338 bytes)  
+	-	`sha256:5fcb02144204740f20b5db23d35f78d9dbe69615a1edfb070c13e94a26b7cd20`  
+		Last Modified: Sat, 19 Oct 2024 12:04:17 GMT  
+		Size: 19.2 KB (19195 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-lein-2.11.2-alpine`
@@ -12056,7 +12056,7 @@ $ docker pull clojure@sha256:c8ab7c0ca4494a4f69f3de7107597ca688e70edf1f5c8155c9a
 ## `clojure:temurin-17-lein-2.11.2-bookworm`
 
 ```console
-$ docker pull clojure@sha256:401a038c938f846a115c17c6fc445c0d8573eed9bd4cf3ddbfe3fa1253472adc
+$ docker pull clojure@sha256:bab494f96beed17d3e99703857d98e09bd1ddfc9a6baba08415ff4f3df7df10d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12165,13 +12165,13 @@ $ docker pull clojure@sha256:8e7e237a3779e5a54c75fba6346e6b980e093c9d70af6242c69
 ### `clojure:temurin-17-lein-2.11.2-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:1aeef0c453d37d9fd81ebbc8ed1a6d59f503706e8c819c99ff5039d3bb865aed
+$ docker pull clojure@sha256:6105ea809c7c08918114da62678f54957b0ea5a3deccbc5e2702c03ec6e5c648
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **260.1 MB (260087988 bytes)**  
+-	Total Size: **260.1 MB (260088775 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f77b5df546d388b0133ef3273d40a68df663d5d3e9b487d6271ffc08d1138cd`
+-	Image ID: `sha256:5039344ac77910cba89b79382589745a2c086567dfd6ba5bac3226dcaf4a236f`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
@@ -12213,55 +12213,55 @@ CMD ["repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:19 GMT  
 		Size: 49.6 MB (49584978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af79cbd2bebb502c38437b7b81f3b9697a59e5f45be49cd74b73bdf63f10ac08`  
-		Last Modified: Thu, 17 Oct 2024 08:11:33 GMT  
-		Size: 144.0 MB (143959476 bytes)  
+	-	`sha256:237653f214e6df6277c7b47d5a245880430d05230855ce95f46023867b57c6a8`  
+		Last Modified: Sat, 19 Oct 2024 12:00:15 GMT  
+		Size: 144.0 MB (143959441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d223ff4309b081156f155370857858ec52bc7855c6316bc884293a6936be3f3`  
-		Last Modified: Thu, 17 Oct 2024 08:11:32 GMT  
-		Size: 62.0 MB (62028917 bytes)  
+	-	`sha256:d760cd7c14acb632d04483d024026158c0dc3e47076ff49aae2f7d456e4bb388`  
+		Last Modified: Sat, 19 Oct 2024 12:00:13 GMT  
+		Size: 62.0 MB (62029714 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4d69c4b146c64acd2c62c5d714acb952f602cc62e4596f52b8ed59759f91911`  
-		Last Modified: Thu, 17 Oct 2024 08:11:28 GMT  
-		Size: 4.5 MB (4514190 bytes)  
+	-	`sha256:ede7392b7b167ee7d65248341aa061dc65e33df07c480be74ea3562fb3d08da9`  
+		Last Modified: Sat, 19 Oct 2024 12:00:12 GMT  
+		Size: 4.5 MB (4514214 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:320bc4e7ef5b947388bb416818a4cd2666de5f5ea4d3f004fb27712f2da5c3ae`  
-		Last Modified: Thu, 17 Oct 2024 08:11:28 GMT  
-		Size: 395.0 B  
+	-	`sha256:314796945588e4d487cd6bc3824eab6c7206ac175987bf26e20fc5643d11b848`  
+		Last Modified: Sat, 19 Oct 2024 12:00:11 GMT  
+		Size: 396.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-lein-2.11.2-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:46f6bf2eb5db9e82cdcac77ed80c580b83d31ed5aa4759114cf7e77c448d2779
+$ docker pull clojure@sha256:122c372d2c9f4df8c1a90ba7b2de7fa5598483060683bb55d87b2e1632851eec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 MB (6543983 bytes)**  
+-	Total Size: **6.6 MB (6568312 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e2d0b862d3de45b4cf0932666d2735fdd5ca3caea746e2b3432bbbefac718d1`
+-	Image ID: `sha256:d79bbe6df036846ac30a43ddf28739a8f6301f5c78fdcfe0075119e47fc29e41`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:15031f596955883ae3fff15ca217bc31ba05fe4fc87a6ac8e9145effa10dd649`  
-		Last Modified: Thu, 17 Oct 2024 08:11:28 GMT  
-		Size: 6.5 MB (6525794 bytes)  
+	-	`sha256:852f4ddfeb5258167137068456572289ab6038dfe02aadf739e6bb72a4ad880a`  
+		Last Modified: Sat, 19 Oct 2024 12:00:12 GMT  
+		Size: 6.5 MB (6549949 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8b8f3ec1073ccaf8287f09bd780423f875790b2ad8f5081a577a199f3c0c2592`  
-		Last Modified: Thu, 17 Oct 2024 08:11:28 GMT  
-		Size: 18.2 KB (18189 bytes)  
+	-	`sha256:274144cadf4f21ab9f7218e2b7a61a52184904bd77dfd2fc43f55bb87298b808`  
+		Last Modified: Sat, 19 Oct 2024 12:00:11 GMT  
+		Size: 18.4 KB (18363 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-lein-2.11.2-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:7ac6dff80a2c632e1d1852d0e66803030aaea62c7ef1fef90a914b929e0fdb5e
+$ docker pull clojure@sha256:6748e6217e3b49d6002dfdcf077f7458b5822fd6d36b4ec8d5fc54b9a84c2228
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12370,13 +12370,13 @@ $ docker pull clojure@sha256:b775caabe64170c172a9f2b4589fc730838ff30ca46956c1950
 ### `clojure:temurin-17-lein-2.11.2-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:1b0e588165ff374ea85a84aaafd5caeb3dd679eb515be7c3a6704e6fcf1fc6a6
+$ docker pull clojure@sha256:8f31096ea36fbe84e7818fcac08064962e9d756fce129ff74403a9728d726e87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **229.1 MB (229057670 bytes)**  
+-	Total Size: **229.1 MB (229057311 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df9d89d8fe5bbf2aa4c94c2365dc53800ed3e53266b5335f159eefa3e0e547be`
+-	Image ID: `sha256:40634f48e8dd91cf3b11029cc04b947d5aa13212589333ec9eff127144299148`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
@@ -12418,55 +12418,55 @@ CMD ["repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:39 GMT  
 		Size: 29.2 MB (29156341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:467c862b0e10aff6a74318a3baf39f91f14902d551963d4cac1c395597956120`  
-		Last Modified: Thu, 17 Oct 2024 08:12:42 GMT  
-		Size: 144.0 MB (143959463 bytes)  
+	-	`sha256:de3d0b3b90758f2da033069b4131178bf4a6c1fd6b5c07637d01ad797ebbc059`  
+		Last Modified: Sat, 19 Oct 2024 12:01:24 GMT  
+		Size: 144.0 MB (143959478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1258d72ef8d5e05fbc08a75e44d34a66753453c028ef4706798291d4e8dff9ca`  
-		Last Modified: Thu, 17 Oct 2024 08:12:39 GMT  
-		Size: 51.4 MB (51427297 bytes)  
+	-	`sha256:0af9c65a91258f844a631b0fa9dcd76f9a92fe7504fc489daec98c82212d23d4`  
+		Last Modified: Sat, 19 Oct 2024 12:01:23 GMT  
+		Size: 51.4 MB (51426852 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b4119b1ac54d0d86026ddbade381a4ce6810280db521515ff856c1c68965afc9`  
-		Last Modified: Thu, 17 Oct 2024 08:12:38 GMT  
-		Size: 4.5 MB (4514142 bytes)  
+	-	`sha256:5e1caeefe5607833d863fce7f02a606d69c8bc2d43e53fc079f6826228d74c92`  
+		Last Modified: Sat, 19 Oct 2024 12:01:21 GMT  
+		Size: 4.5 MB (4514212 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afa808c79bda9382b391055da9b75c8f8f854ecf41688bdcfbdf7776018484bc`  
-		Last Modified: Thu, 17 Oct 2024 08:12:38 GMT  
-		Size: 395.0 B  
+	-	`sha256:22c3b8732c9913055b892349e7a2a00d781704c2c40380af33b40dbcf064dcb2`  
+		Last Modified: Sat, 19 Oct 2024 12:01:21 GMT  
+		Size: 396.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-lein-2.11.2-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:2175010a0ea27909763419920a259473b79acc02f09d5c3e1c265fe0aea9aeff
+$ docker pull clojure@sha256:74245d4889fab2d5bcb92313956c948db36f7177a9ba58750087e6fd394e3910
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4327152 bytes)**  
+-	Total Size: **4.4 MB (4351376 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5887b15e9adb01e4f2b2bed5db9a613046e3c7e64f9ca844ec8dc8eba96121ff`
+-	Image ID: `sha256:313b4d059629ab05b0d80821af37cc0bd4f96482c0c19b1c6b8dabb4ab446b91`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f4747404dcc6d5482c7646092ac2be26eaa367962e32713b67c3da2be6f3dd86`  
-		Last Modified: Thu, 17 Oct 2024 08:12:38 GMT  
-		Size: 4.3 MB (4308915 bytes)  
+	-	`sha256:2e90f96fd823d2b008375a6b611ae40dc6b8b5aebc9be5492b3e83b2acf27957`  
+		Last Modified: Sat, 19 Oct 2024 12:01:21 GMT  
+		Size: 4.3 MB (4332964 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8aa86f6be9d92da1c7f088e82b448a9f468369c898dde2d203d8930ea6042233`  
-		Last Modified: Thu, 17 Oct 2024 08:12:37 GMT  
-		Size: 18.2 KB (18237 bytes)  
+	-	`sha256:1d5a9e89ff7d598858e7005daf4846a5532a5379970b10c46506052d072caba1`  
+		Last Modified: Sat, 19 Oct 2024 12:01:21 GMT  
+		Size: 18.4 KB (18412 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-lein-2.11.2-bullseye`
 
 ```console
-$ docker pull clojure@sha256:a5fed90efd1854cbf0fafff42738d9f8c11992b79dd2f452130da67d485ac8ab
+$ docker pull clojure@sha256:139d057149efce4eb8210dfff16fc0f339dc0129fe670b9ed6764a747446018c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12575,13 +12575,13 @@ $ docker pull clojure@sha256:d155843fd2f14c7e3901a2a10f896f36e487908e1eaf543cf60
 ### `clojure:temurin-17-lein-2.11.2-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:b95fc012b87b729c5c00c73a5b208253a32c0329f4da54fe35716dddcef078dd
+$ docker pull clojure@sha256:6b4bf19ec99978935e3cf24d352605c972e1161dd5038c2565805db1f70f6184
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.0 MB (255029830 bytes)**  
+-	Total Size: **255.0 MB (255030070 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be26a162e432e56f61e9bdc343dbdf5b4513044aa9196ddf67a1bdb29ef62c4d`
+-	Image ID: `sha256:0a49dc3c7b9bdf6d0354ea4c89d406a15aee499366315d4eda8519462d24e30c`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
@@ -12623,55 +12623,55 @@ CMD ["repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da76e01f3707ded82e7b945d61706b260348263f460269d96f132d4d8081f901`  
-		Last Modified: Thu, 17 Oct 2024 08:13:51 GMT  
-		Size: 144.0 MB (143959463 bytes)  
+	-	`sha256:a2cc2b2c001a978151e3adbd8857a7faf4a55640f4e035b9bea7ab040128148f`  
+		Last Modified: Sat, 19 Oct 2024 12:02:26 GMT  
+		Size: 144.0 MB (143959478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36d7cc3b52737da2e20143df1bbc482a6125fea9181f76162ada6a2bb70ecf51`  
-		Last Modified: Thu, 17 Oct 2024 08:13:49 GMT  
-		Size: 52.8 MB (52820904 bytes)  
+	-	`sha256:c19751dc5e5f6c65582a92f72bc930672e8fd871285d83e5ea6cfb1935a6bdda`  
+		Last Modified: Sat, 19 Oct 2024 12:02:25 GMT  
+		Size: 52.8 MB (52821109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea03b67984b9387f01cd3d0e0bbc2bacb66166e735dac8578db88653b330cd10`  
-		Last Modified: Thu, 17 Oct 2024 08:13:48 GMT  
-		Size: 4.5 MB (4514140 bytes)  
+	-	`sha256:c888450c58ff655bd9bdccd4de7c07c242c53242745db666861e3643df3fcaca`  
+		Last Modified: Sat, 19 Oct 2024 12:02:23 GMT  
+		Size: 4.5 MB (4514160 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bac7e5ca089017ab6d5b235a95ee3ff6f504b30d25e0eae6ff447a493a609a61`  
-		Last Modified: Thu, 17 Oct 2024 08:13:47 GMT  
+	-	`sha256:8eecdbfc276140cbbe6304a39ee80a9555b710fa5365adb7913ef85ad4e89a53`  
+		Last Modified: Sat, 19 Oct 2024 12:02:23 GMT  
 		Size: 396.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-lein-2.11.2-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:0e7e8d4cacf1d2d7c8c5053f44689eea423a2cc0b071d30373dea64b78789a76
+$ docker pull clojure@sha256:9c5b6c0f717b7d2838a368f3553bd8e6674936f36277f0b7ca00521e57432680
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6628948 bytes)**  
+-	Total Size: **6.7 MB (6653595 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e4481d3401eccad9dafa823365fdfae35fe8a5d2aa91a6796fc89ae336ca549`
+-	Image ID: `sha256:bc111aa915722cc06bb61d4fe9bd876df3971db259c509094ce489dfcae9d1af`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:15ea0fae0707870b567ec2181e22681738fb36317017b78080f2662d65bfd1a2`  
-		Last Modified: Thu, 17 Oct 2024 08:13:48 GMT  
-		Size: 6.6 MB (6610759 bytes)  
+	-	`sha256:225b662a3f8b903b03448b0113aee5f95189a849e5fd351968e8d8a2ac1c1d61`  
+		Last Modified: Sat, 19 Oct 2024 12:02:23 GMT  
+		Size: 6.6 MB (6635232 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:301a3cd3d78e10a670394ad1db85dab41b8bd2bc357e96b2cb2dac560d5cc39e`  
-		Last Modified: Thu, 17 Oct 2024 08:13:47 GMT  
-		Size: 18.2 KB (18189 bytes)  
+	-	`sha256:a196a1ada59fa0ff3b47bdede2639fe6a950a7e20376084a132c63bc873087e3`  
+		Last Modified: Sat, 19 Oct 2024 12:02:27 GMT  
+		Size: 18.4 KB (18363 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-lein-2.11.2-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:e9cbced5b3b11722348d4d7b91ad7eee8b684edbca38a71ec09825807fabb84d
+$ docker pull clojure@sha256:43c416cb4316bcdafc11a4fc67851f40d40a26926d2e84ee05dd22b781af828b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12780,13 +12780,13 @@ $ docker pull clojure@sha256:f9a3e0e407a2db23589d01321a4bf804275d6decbce9c90f340
 ### `clojure:temurin-17-lein-2.11.2-bullseye-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:051b176dcfd56841c06278916fae31af2a4c155edb4823f2d24ce43ddd63c7e4
+$ docker pull clojure@sha256:f82d5445ec9ef9a560cc9546065acd407b7d97b787264bc0e5bad6c39332c213
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.9 MB (221862742 bytes)**  
+-	Total Size: **221.9 MB (221862569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27af165f1c4481efb6d723be993a1632a118ea598016fb897466e94655499aba`
+-	Image ID: `sha256:1a34a49fabcc12a4faa7769fe509ea1847106635e8d39c3a1a22a2dbba4bdb62`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
@@ -12828,55 +12828,55 @@ CMD ["repl"]
 		Last Modified: Thu, 17 Oct 2024 01:15:14 GMT  
 		Size: 30.1 MB (30075757 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:414bb17c66e1a956e8e8cfbcd993934c289b1940da79f19f4baaede4b6a72b09`  
-		Last Modified: Thu, 17 Oct 2024 08:15:01 GMT  
-		Size: 144.0 MB (143959469 bytes)  
+	-	`sha256:60746b2d48dfb19e043609b9b09417ae53dbcb13af929a26fa77a66ad395af56`  
+		Last Modified: Sat, 19 Oct 2024 08:48:40 GMT  
+		Size: 144.0 MB (143959478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4942272789756431e4927dc3850a7f3920ca07376b94964db63bffa0beaba041`  
-		Last Modified: Thu, 17 Oct 2024 08:14:57 GMT  
-		Size: 43.3 MB (43312948 bytes)  
+	-	`sha256:cdf07568f1e14d441839668d393537a99e48c518101ae79e48c414c1fd0b1ded`  
+		Last Modified: Sat, 19 Oct 2024 12:03:15 GMT  
+		Size: 43.3 MB (43312729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40698646425e91b4a18c8ebf3980b75b26aa3480cbc471a978ae682d989ff564`  
-		Last Modified: Thu, 17 Oct 2024 08:14:57 GMT  
-		Size: 4.5 MB (4514140 bytes)  
+	-	`sha256:d4c784dece627a72e53db9b08a90719e3b92dff6307168804a3efe942abc5bab`  
+		Last Modified: Sat, 19 Oct 2024 12:03:14 GMT  
+		Size: 4.5 MB (4514178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dbd2e10930cab862b270952967c006a0eb2998a07307d3d6c17dd989aca13d3e`  
-		Last Modified: Thu, 17 Oct 2024 08:14:56 GMT  
-		Size: 396.0 B  
+	-	`sha256:54ecbe6b993466caa4abd2dcd1f1b61b7daff2a6958c1ae673e7dce04edeaa01`  
+		Last Modified: Sat, 19 Oct 2024 12:03:13 GMT  
+		Size: 395.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-lein-2.11.2-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:77894657fc0a58ff40961569f2c12bc3f636e60c1869b7557f65e3827feca7f8
+$ docker pull clojure@sha256:5aea44c3f1cf6a32bd90e1919b8ba874f3904b3bd1c8b36fd9aa688ff3ba99a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.6 MB (4575229 bytes)**  
+-	Total Size: **4.6 MB (4599768 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb7c682a8f2981321ec7d34ad5cd3dfe9e80177e753dc407dacd3195f1c4c05f`
+-	Image ID: `sha256:dc4b3be67849deac60668faeb47e2a43996736fd6cb70cd1bb92768ad9ff50cf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:22b782994aaaddb9f5f952b941575fbf45eb43a2887a3cfd323f155c7b99bb0f`  
-		Last Modified: Thu, 17 Oct 2024 08:14:56 GMT  
-		Size: 4.6 MB (4556990 bytes)  
+	-	`sha256:9bfd4d860d41c3314f84c753592df0b5a023c9435666bb46135d87d61e19db0a`  
+		Last Modified: Sat, 19 Oct 2024 12:03:14 GMT  
+		Size: 4.6 MB (4581357 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:46ce369d9adc4f37eb909d0cc8d06d7baac5c7dfa88a96cac66fce82cf2fd9de`  
-		Last Modified: Thu, 17 Oct 2024 08:14:56 GMT  
-		Size: 18.2 KB (18239 bytes)  
+	-	`sha256:39b40caccc4dc8be5e6817a51ee5a0d9ba852f47cbfdbc1ab678de3f8a244e2b`  
+		Last Modified: Sat, 19 Oct 2024 12:03:13 GMT  
+		Size: 18.4 KB (18411 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-lein-2.11.2-jammy`
 
 ```console
-$ docker pull clojure@sha256:9fae2f4220ed34ffe864e1b87ef51dd94d8a3141a847f073c70e663ebb5f01af
+$ docker pull clojure@sha256:fad2680a5545c82c661ed728a2b0e102194f9675d3ac5c9d45edd84d690e2611
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13019,28 +13019,28 @@ $ docker pull clojure@sha256:2dc62862797da2435e570bdf379bcd6cfea68356a993e192e31
 ### `clojure:temurin-17-lein-2.11.2-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:eaa29f876da30ffb9f7d457d956c3cde6b328260e7fb8e41a1551de50b8b2198
+$ docker pull clojure@sha256:1dda59be2692613100273fc68e15d4161b8b82e981fdab73590fc2fd0762c954
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **231.4 MB (231435874 bytes)**  
+-	Total Size: **230.4 MB (230411554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ccf4fca6f5d6cbcfa112dba0808d74ad77c4e7639ae5bc7f8969900934880020`
+-	Image ID: `sha256:654512f4b37eed67f31aa1e73dc959b9b9ec86667f714386d7f633a7d4a4bba8`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -13062,94 +13062,94 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_VERSION=2.11.2
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN set -eux; apt-get update && apt-get install -y make git gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mkdir -p /root/.lein && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get purge -y --auto-remove gnupg wget # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_ROOT=1
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.12.0"]])' > project.clj   && lein deps && rm project.clj # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENTRYPOINT ["entrypoint"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["repl"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21a0c08aee9ece74cacae8ca7dfbcf838605c1e8bf9ae4ef62a9bf1d407ca7dd`  
-		Last Modified: Tue, 17 Sep 2024 01:39:26 GMT  
-		Size: 18.8 MB (18827958 bytes)  
+	-	`sha256:4f4328c2660e2acfd7df28e6cce03f948be8bfd9bc327b3747dcbddc8199302b`  
+		Last Modified: Sat, 19 Oct 2024 05:36:25 GMT  
+		Size: 18.8 MB (18842272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c661676adabc448000bc17c531badb810755db643cdbd3b77bd5d6af1e70cea8`  
-		Last Modified: Tue, 17 Sep 2024 01:39:32 GMT  
-		Size: 144.0 MB (143967066 bytes)  
+	-	`sha256:1a6b4f156363cc8751d4ca24fe1b36d8f3c4fc0335ce6e49a8123255d79912f0`  
+		Last Modified: Sat, 19 Oct 2024 05:36:28 GMT  
+		Size: 144.0 MB (143967033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:635213e63d52c04685322883d25f6bb5f35e17073ffdc3cb41b45cb406e5c0d0`  
-		Last Modified: Tue, 17 Sep 2024 01:39:23 GMT  
-		Size: 172.0 B  
+	-	`sha256:d35a83363ff0741a526836ef065ab1bd42f1332ee3f997f5c2030f92a9c8c6ca`  
+		Last Modified: Sat, 19 Oct 2024 05:36:24 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1eb782c3b8f552eed1b4a6d0237ac6e9664eb6f27291f628c62fa4586b409055`  
-		Last Modified: Tue, 17 Sep 2024 01:39:23 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:f07c3705559939101aebca8ea7598e75955b991ff61cfce66869f1e790abd370`  
+		Last Modified: Sat, 19 Oct 2024 05:36:24 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d43cf67936e181539e8b4d4be0960b0ad768dbcce211a6be5bf0bcff182dea7`  
-		Last Modified: Tue, 17 Sep 2024 04:34:50 GMT  
-		Size: 35.7 MB (35726854 bytes)  
+	-	`sha256:2719161ae429242555786af04f02e84646e19d01aff9d726d1a8dc65e51c1ba6`  
+		Last Modified: Sat, 19 Oct 2024 12:04:18 GMT  
+		Size: 35.7 MB (35727110 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0dbd9bbc88f2612b02eea6a8c1cbbd2548fa7968178ec1c14f17e3d3b30543ca`  
-		Last Modified: Tue, 17 Sep 2024 04:34:49 GMT  
-		Size: 4.5 MB (4514178 bytes)  
+	-	`sha256:d0a4b1d3139abd1b439679cd32e1bdc612e86d8ae874f54e2e9b3708fbf9aef1`  
+		Last Modified: Sat, 19 Oct 2024 12:04:18 GMT  
+		Size: 4.5 MB (4514113 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9393f49035e2570808758b332df27e0cb9cf4712281865a3492246dbb1f4cdd6`  
-		Last Modified: Tue, 17 Sep 2024 04:34:49 GMT  
+	-	`sha256:1cb5dcc9a847b5734e208454178adb5218ba5d075c93320eb44c6da0694ae1f2`  
+		Last Modified: Sat, 19 Oct 2024 12:04:17 GMT  
 		Size: 399.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-lein-2.11.2-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:bce929bc5f6120a3697a6b2f7bbf79791876c8f712eb963f5e68c5aa538cfc98
+$ docker pull clojure@sha256:1a828a4709b8540963e95fc1a2930860073c751521af982eee76d06d23ec51ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5473154 bytes)**  
+-	Total Size: **5.7 MB (5654172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc23b10a46c76a64dbea62088d8b32d90156d4f01fef580ec6e31b1a1b488d5d`
+-	Image ID: `sha256:f45787f64ba96cab22e6f990376cce7dd965696f0190926560c59feb0d1f646d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:838e8b1917deb4940d80b2ac99b694579874526645399bd60e70de3ff83652d4`  
-		Last Modified: Tue, 17 Sep 2024 04:34:48 GMT  
-		Size: 5.5 MB (5453816 bytes)  
+	-	`sha256:827283fc3db98562abdbc5ecd32abe30ccf4947a1fd1cdf3374479f6de01523a`  
+		Last Modified: Sat, 19 Oct 2024 12:04:17 GMT  
+		Size: 5.6 MB (5634977 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1b80e7bf0c135206d806f51794e4a0f3adc938b0558aa573f686936dcce9932f`  
-		Last Modified: Tue, 17 Sep 2024 04:34:47 GMT  
-		Size: 19.3 KB (19338 bytes)  
+	-	`sha256:5fcb02144204740f20b5db23d35f78d9dbe69615a1edfb070c13e94a26b7cd20`  
+		Last Modified: Sat, 19 Oct 2024 12:04:17 GMT  
+		Size: 19.2 KB (19195 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-lein-2.11.2-noble`
 
 ```console
-$ docker pull clojure@sha256:0f3589754c36a61935145f902fdba8adc4831a1960c4135b22bf7d2c0923c2fe
+$ docker pull clojure@sha256:391cba1bdd363187909448341bb498af6d3bcf2e3d1afad2874e84dfd6d8da5c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13292,28 +13292,28 @@ $ docker pull clojure@sha256:8a2366d9b27bf8b280fbcf2e84c17b19b60e7dfd5815ecb584a
 ### `clojure:temurin-17-lein-2.11.2-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:b35af55aa7ad33504ef15440416b92240b58b366235dcb348d1af3f02dd0a70e
+$ docker pull clojure@sha256:fa80f5ac4417f9f9d403b9b598ec4fa2c3efa0177adf2403c9f6e5e99e9f85f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.5 MB (237485102 bytes)**  
+-	Total Size: **236.4 MB (236416291 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3e101efa90f78c753a0b530f5da78d0dcb53b49c6698eb48b1053fb44dcc2b8b`
+-	Image ID: `sha256:a5e5344eeba753763c301c27a65361030925e8a44cb002b779e403bf8dfc2a8b`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -13358,65 +13358,65 @@ CMD ["repl"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a198149501abf09f7d2065dde4b2ebc6eafd97bb9331b52d06c6b2a199992128`  
-		Last Modified: Wed, 16 Oct 2024 01:17:59 GMT  
-		Size: 21.0 MB (20963830 bytes)  
+	-	`sha256:0a84341aaf3e356e3e4f81c1bdab6100eb048d95139a0fba28fc288df8b7742d`  
+		Last Modified: Sat, 19 Oct 2024 05:37:32 GMT  
+		Size: 21.0 MB (20961983 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f7c3a3ae1b154c201f07cd31ae2fc5c9e476ef5288e7bdcd9bd655af67f021c`  
-		Last Modified: Wed, 16 Oct 2024 01:18:05 GMT  
-		Size: 144.0 MB (143967360 bytes)  
+	-	`sha256:f3d56e0f8f2a24e92989ba0e168ea5f1fd74968cfff5683fb85fcdc860623682`  
+		Last Modified: Sat, 19 Oct 2024 05:37:35 GMT  
+		Size: 144.0 MB (143967366 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aca5eeb60cbc15f8d34e31c2019f436146fc0e6775f438d80a3cded9cc71e0c8`  
-		Last Modified: Wed, 16 Oct 2024 01:17:56 GMT  
-		Size: 172.0 B  
+	-	`sha256:e45d8dbae1ab4eb805cc510c6fe8293df5a7eafaf144f0ff8868620277ed108f`  
+		Last Modified: Sat, 19 Oct 2024 05:37:31 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da83ed8a8274d91d5ca49ea90113a398dfa850263230bc9ed0e77d7eaf978170`  
-		Last Modified: Wed, 16 Oct 2024 01:17:56 GMT  
+	-	`sha256:df0ade22b6a30f22791c6e4d7f013e98995427b5b1d8698be3ba76a6532091b5`  
+		Last Modified: Sat, 19 Oct 2024 05:37:31 GMT  
 		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c7d2034f9dc8f647684a8b26c19ea3eb314d1f80454a041ab68d74e4e8bfeb57`  
-		Last Modified: Wed, 16 Oct 2024 02:26:13 GMT  
-		Size: 38.1 MB (38084230 bytes)  
+	-	`sha256:f1634eb3c0d3cffbfcf7b334820093750ac5b57bf696757e384e4bdf344db504`  
+		Last Modified: Sat, 19 Oct 2024 12:05:11 GMT  
+		Size: 38.1 MB (38084245 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8ce08be820b46f29eff8b16331a759e083423affa0e19d8ef764ed29203e55d`  
-		Last Modified: Wed, 16 Oct 2024 02:26:13 GMT  
-		Size: 4.5 MB (4514170 bytes)  
+	-	`sha256:0d159256b8ffddba3fa3c89b72801ab2b536ca42a941100d669ee822d4c50bc1`  
+		Last Modified: Sat, 19 Oct 2024 12:05:10 GMT  
+		Size: 4.5 MB (4514157 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c297123010391e68ea28b65b6308b1b7cc302b46cd93e525e4231698e37499b`  
-		Last Modified: Wed, 16 Oct 2024 02:26:13 GMT  
+	-	`sha256:da15d41bff7ca1accb47bf6c95b16ce1e10623f5d962bab01242530215bd9feb`  
+		Last Modified: Sat, 19 Oct 2024 12:05:09 GMT  
 		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-lein-2.11.2-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:cfb402fa8561e0ce7dc20bbce767b8500cfe408be14a4803e7fbc632a6045c22
+$ docker pull clojure@sha256:c5ebfbbf1a57bc2e1854d6d78bea72b2d7428e89d84e76b4ffab71ff6b773e24
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5119655 bytes)**  
+-	Total Size: **5.1 MB (5146486 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:263fd94040741da89fe88525c1d3d7f2c6c04be690f908c52758ff96eb5d6f58`
+-	Image ID: `sha256:64c2a4ee50c9693beed45e36ba01d54e043ab3205ba27be09afa38adf5d624e0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:49efd76a58055096426f062b18fbb680e17d40b1114a1311c660b0b60defc129`  
-		Last Modified: Wed, 16 Oct 2024 02:26:12 GMT  
-		Size: 5.1 MB (5101159 bytes)  
+	-	`sha256:c488d6d958fbe08152927a7812fb54f692a2d243fe52a3cc5855cfe1c0e984a0`  
+		Last Modified: Sat, 19 Oct 2024 12:05:10 GMT  
+		Size: 5.1 MB (5127964 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:232aa15d88e3e28d8dcf5eae0153a10f8e19d1bd3a77284b2ca97d7326275535`  
-		Last Modified: Wed, 16 Oct 2024 02:26:11 GMT  
-		Size: 18.5 KB (18496 bytes)  
+	-	`sha256:41cb4a08eb79a773688e0c20e62873b9969d8bffd81c6b028943fadee650dde4`  
+		Last Modified: Sat, 19 Oct 2024 12:05:09 GMT  
+		Size: 18.5 KB (18522 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-lein-alpine`
@@ -13555,7 +13555,7 @@ $ docker pull clojure@sha256:c8ab7c0ca4494a4f69f3de7107597ca688e70edf1f5c8155c9a
 ## `clojure:temurin-17-lein-bookworm`
 
 ```console
-$ docker pull clojure@sha256:401a038c938f846a115c17c6fc445c0d8573eed9bd4cf3ddbfe3fa1253472adc
+$ docker pull clojure@sha256:bab494f96beed17d3e99703857d98e09bd1ddfc9a6baba08415ff4f3df7df10d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13664,13 +13664,13 @@ $ docker pull clojure@sha256:8e7e237a3779e5a54c75fba6346e6b980e093c9d70af6242c69
 ### `clojure:temurin-17-lein-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:1aeef0c453d37d9fd81ebbc8ed1a6d59f503706e8c819c99ff5039d3bb865aed
+$ docker pull clojure@sha256:6105ea809c7c08918114da62678f54957b0ea5a3deccbc5e2702c03ec6e5c648
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **260.1 MB (260087988 bytes)**  
+-	Total Size: **260.1 MB (260088775 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f77b5df546d388b0133ef3273d40a68df663d5d3e9b487d6271ffc08d1138cd`
+-	Image ID: `sha256:5039344ac77910cba89b79382589745a2c086567dfd6ba5bac3226dcaf4a236f`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
@@ -13712,55 +13712,55 @@ CMD ["repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:19 GMT  
 		Size: 49.6 MB (49584978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af79cbd2bebb502c38437b7b81f3b9697a59e5f45be49cd74b73bdf63f10ac08`  
-		Last Modified: Thu, 17 Oct 2024 08:11:33 GMT  
-		Size: 144.0 MB (143959476 bytes)  
+	-	`sha256:237653f214e6df6277c7b47d5a245880430d05230855ce95f46023867b57c6a8`  
+		Last Modified: Sat, 19 Oct 2024 12:00:15 GMT  
+		Size: 144.0 MB (143959441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d223ff4309b081156f155370857858ec52bc7855c6316bc884293a6936be3f3`  
-		Last Modified: Thu, 17 Oct 2024 08:11:32 GMT  
-		Size: 62.0 MB (62028917 bytes)  
+	-	`sha256:d760cd7c14acb632d04483d024026158c0dc3e47076ff49aae2f7d456e4bb388`  
+		Last Modified: Sat, 19 Oct 2024 12:00:13 GMT  
+		Size: 62.0 MB (62029714 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4d69c4b146c64acd2c62c5d714acb952f602cc62e4596f52b8ed59759f91911`  
-		Last Modified: Thu, 17 Oct 2024 08:11:28 GMT  
-		Size: 4.5 MB (4514190 bytes)  
+	-	`sha256:ede7392b7b167ee7d65248341aa061dc65e33df07c480be74ea3562fb3d08da9`  
+		Last Modified: Sat, 19 Oct 2024 12:00:12 GMT  
+		Size: 4.5 MB (4514214 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:320bc4e7ef5b947388bb416818a4cd2666de5f5ea4d3f004fb27712f2da5c3ae`  
-		Last Modified: Thu, 17 Oct 2024 08:11:28 GMT  
-		Size: 395.0 B  
+	-	`sha256:314796945588e4d487cd6bc3824eab6c7206ac175987bf26e20fc5643d11b848`  
+		Last Modified: Sat, 19 Oct 2024 12:00:11 GMT  
+		Size: 396.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-lein-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:46f6bf2eb5db9e82cdcac77ed80c580b83d31ed5aa4759114cf7e77c448d2779
+$ docker pull clojure@sha256:122c372d2c9f4df8c1a90ba7b2de7fa5598483060683bb55d87b2e1632851eec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 MB (6543983 bytes)**  
+-	Total Size: **6.6 MB (6568312 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e2d0b862d3de45b4cf0932666d2735fdd5ca3caea746e2b3432bbbefac718d1`
+-	Image ID: `sha256:d79bbe6df036846ac30a43ddf28739a8f6301f5c78fdcfe0075119e47fc29e41`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:15031f596955883ae3fff15ca217bc31ba05fe4fc87a6ac8e9145effa10dd649`  
-		Last Modified: Thu, 17 Oct 2024 08:11:28 GMT  
-		Size: 6.5 MB (6525794 bytes)  
+	-	`sha256:852f4ddfeb5258167137068456572289ab6038dfe02aadf739e6bb72a4ad880a`  
+		Last Modified: Sat, 19 Oct 2024 12:00:12 GMT  
+		Size: 6.5 MB (6549949 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8b8f3ec1073ccaf8287f09bd780423f875790b2ad8f5081a577a199f3c0c2592`  
-		Last Modified: Thu, 17 Oct 2024 08:11:28 GMT  
-		Size: 18.2 KB (18189 bytes)  
+	-	`sha256:274144cadf4f21ab9f7218e2b7a61a52184904bd77dfd2fc43f55bb87298b808`  
+		Last Modified: Sat, 19 Oct 2024 12:00:11 GMT  
+		Size: 18.4 KB (18363 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-lein-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:7ac6dff80a2c632e1d1852d0e66803030aaea62c7ef1fef90a914b929e0fdb5e
+$ docker pull clojure@sha256:6748e6217e3b49d6002dfdcf077f7458b5822fd6d36b4ec8d5fc54b9a84c2228
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13869,13 +13869,13 @@ $ docker pull clojure@sha256:b775caabe64170c172a9f2b4589fc730838ff30ca46956c1950
 ### `clojure:temurin-17-lein-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:1b0e588165ff374ea85a84aaafd5caeb3dd679eb515be7c3a6704e6fcf1fc6a6
+$ docker pull clojure@sha256:8f31096ea36fbe84e7818fcac08064962e9d756fce129ff74403a9728d726e87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **229.1 MB (229057670 bytes)**  
+-	Total Size: **229.1 MB (229057311 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df9d89d8fe5bbf2aa4c94c2365dc53800ed3e53266b5335f159eefa3e0e547be`
+-	Image ID: `sha256:40634f48e8dd91cf3b11029cc04b947d5aa13212589333ec9eff127144299148`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
@@ -13917,55 +13917,55 @@ CMD ["repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:39 GMT  
 		Size: 29.2 MB (29156341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:467c862b0e10aff6a74318a3baf39f91f14902d551963d4cac1c395597956120`  
-		Last Modified: Thu, 17 Oct 2024 08:12:42 GMT  
-		Size: 144.0 MB (143959463 bytes)  
+	-	`sha256:de3d0b3b90758f2da033069b4131178bf4a6c1fd6b5c07637d01ad797ebbc059`  
+		Last Modified: Sat, 19 Oct 2024 12:01:24 GMT  
+		Size: 144.0 MB (143959478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1258d72ef8d5e05fbc08a75e44d34a66753453c028ef4706798291d4e8dff9ca`  
-		Last Modified: Thu, 17 Oct 2024 08:12:39 GMT  
-		Size: 51.4 MB (51427297 bytes)  
+	-	`sha256:0af9c65a91258f844a631b0fa9dcd76f9a92fe7504fc489daec98c82212d23d4`  
+		Last Modified: Sat, 19 Oct 2024 12:01:23 GMT  
+		Size: 51.4 MB (51426852 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b4119b1ac54d0d86026ddbade381a4ce6810280db521515ff856c1c68965afc9`  
-		Last Modified: Thu, 17 Oct 2024 08:12:38 GMT  
-		Size: 4.5 MB (4514142 bytes)  
+	-	`sha256:5e1caeefe5607833d863fce7f02a606d69c8bc2d43e53fc079f6826228d74c92`  
+		Last Modified: Sat, 19 Oct 2024 12:01:21 GMT  
+		Size: 4.5 MB (4514212 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afa808c79bda9382b391055da9b75c8f8f854ecf41688bdcfbdf7776018484bc`  
-		Last Modified: Thu, 17 Oct 2024 08:12:38 GMT  
-		Size: 395.0 B  
+	-	`sha256:22c3b8732c9913055b892349e7a2a00d781704c2c40380af33b40dbcf064dcb2`  
+		Last Modified: Sat, 19 Oct 2024 12:01:21 GMT  
+		Size: 396.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-lein-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:2175010a0ea27909763419920a259473b79acc02f09d5c3e1c265fe0aea9aeff
+$ docker pull clojure@sha256:74245d4889fab2d5bcb92313956c948db36f7177a9ba58750087e6fd394e3910
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4327152 bytes)**  
+-	Total Size: **4.4 MB (4351376 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5887b15e9adb01e4f2b2bed5db9a613046e3c7e64f9ca844ec8dc8eba96121ff`
+-	Image ID: `sha256:313b4d059629ab05b0d80821af37cc0bd4f96482c0c19b1c6b8dabb4ab446b91`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f4747404dcc6d5482c7646092ac2be26eaa367962e32713b67c3da2be6f3dd86`  
-		Last Modified: Thu, 17 Oct 2024 08:12:38 GMT  
-		Size: 4.3 MB (4308915 bytes)  
+	-	`sha256:2e90f96fd823d2b008375a6b611ae40dc6b8b5aebc9be5492b3e83b2acf27957`  
+		Last Modified: Sat, 19 Oct 2024 12:01:21 GMT  
+		Size: 4.3 MB (4332964 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8aa86f6be9d92da1c7f088e82b448a9f468369c898dde2d203d8930ea6042233`  
-		Last Modified: Thu, 17 Oct 2024 08:12:37 GMT  
-		Size: 18.2 KB (18237 bytes)  
+	-	`sha256:1d5a9e89ff7d598858e7005daf4846a5532a5379970b10c46506052d072caba1`  
+		Last Modified: Sat, 19 Oct 2024 12:01:21 GMT  
+		Size: 18.4 KB (18412 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-lein-bullseye`
 
 ```console
-$ docker pull clojure@sha256:a5fed90efd1854cbf0fafff42738d9f8c11992b79dd2f452130da67d485ac8ab
+$ docker pull clojure@sha256:139d057149efce4eb8210dfff16fc0f339dc0129fe670b9ed6764a747446018c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14074,13 +14074,13 @@ $ docker pull clojure@sha256:d155843fd2f14c7e3901a2a10f896f36e487908e1eaf543cf60
 ### `clojure:temurin-17-lein-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:b95fc012b87b729c5c00c73a5b208253a32c0329f4da54fe35716dddcef078dd
+$ docker pull clojure@sha256:6b4bf19ec99978935e3cf24d352605c972e1161dd5038c2565805db1f70f6184
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.0 MB (255029830 bytes)**  
+-	Total Size: **255.0 MB (255030070 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:be26a162e432e56f61e9bdc343dbdf5b4513044aa9196ddf67a1bdb29ef62c4d`
+-	Image ID: `sha256:0a49dc3c7b9bdf6d0354ea4c89d406a15aee499366315d4eda8519462d24e30c`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
@@ -14122,55 +14122,55 @@ CMD ["repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da76e01f3707ded82e7b945d61706b260348263f460269d96f132d4d8081f901`  
-		Last Modified: Thu, 17 Oct 2024 08:13:51 GMT  
-		Size: 144.0 MB (143959463 bytes)  
+	-	`sha256:a2cc2b2c001a978151e3adbd8857a7faf4a55640f4e035b9bea7ab040128148f`  
+		Last Modified: Sat, 19 Oct 2024 12:02:26 GMT  
+		Size: 144.0 MB (143959478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36d7cc3b52737da2e20143df1bbc482a6125fea9181f76162ada6a2bb70ecf51`  
-		Last Modified: Thu, 17 Oct 2024 08:13:49 GMT  
-		Size: 52.8 MB (52820904 bytes)  
+	-	`sha256:c19751dc5e5f6c65582a92f72bc930672e8fd871285d83e5ea6cfb1935a6bdda`  
+		Last Modified: Sat, 19 Oct 2024 12:02:25 GMT  
+		Size: 52.8 MB (52821109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea03b67984b9387f01cd3d0e0bbc2bacb66166e735dac8578db88653b330cd10`  
-		Last Modified: Thu, 17 Oct 2024 08:13:48 GMT  
-		Size: 4.5 MB (4514140 bytes)  
+	-	`sha256:c888450c58ff655bd9bdccd4de7c07c242c53242745db666861e3643df3fcaca`  
+		Last Modified: Sat, 19 Oct 2024 12:02:23 GMT  
+		Size: 4.5 MB (4514160 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bac7e5ca089017ab6d5b235a95ee3ff6f504b30d25e0eae6ff447a493a609a61`  
-		Last Modified: Thu, 17 Oct 2024 08:13:47 GMT  
+	-	`sha256:8eecdbfc276140cbbe6304a39ee80a9555b710fa5365adb7913ef85ad4e89a53`  
+		Last Modified: Sat, 19 Oct 2024 12:02:23 GMT  
 		Size: 396.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-lein-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:0e7e8d4cacf1d2d7c8c5053f44689eea423a2cc0b071d30373dea64b78789a76
+$ docker pull clojure@sha256:9c5b6c0f717b7d2838a368f3553bd8e6674936f36277f0b7ca00521e57432680
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6628948 bytes)**  
+-	Total Size: **6.7 MB (6653595 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e4481d3401eccad9dafa823365fdfae35fe8a5d2aa91a6796fc89ae336ca549`
+-	Image ID: `sha256:bc111aa915722cc06bb61d4fe9bd876df3971db259c509094ce489dfcae9d1af`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:15ea0fae0707870b567ec2181e22681738fb36317017b78080f2662d65bfd1a2`  
-		Last Modified: Thu, 17 Oct 2024 08:13:48 GMT  
-		Size: 6.6 MB (6610759 bytes)  
+	-	`sha256:225b662a3f8b903b03448b0113aee5f95189a849e5fd351968e8d8a2ac1c1d61`  
+		Last Modified: Sat, 19 Oct 2024 12:02:23 GMT  
+		Size: 6.6 MB (6635232 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:301a3cd3d78e10a670394ad1db85dab41b8bd2bc357e96b2cb2dac560d5cc39e`  
-		Last Modified: Thu, 17 Oct 2024 08:13:47 GMT  
-		Size: 18.2 KB (18189 bytes)  
+	-	`sha256:a196a1ada59fa0ff3b47bdede2639fe6a950a7e20376084a132c63bc873087e3`  
+		Last Modified: Sat, 19 Oct 2024 12:02:27 GMT  
+		Size: 18.4 KB (18363 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-lein-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:e9cbced5b3b11722348d4d7b91ad7eee8b684edbca38a71ec09825807fabb84d
+$ docker pull clojure@sha256:43c416cb4316bcdafc11a4fc67851f40d40a26926d2e84ee05dd22b781af828b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14279,13 +14279,13 @@ $ docker pull clojure@sha256:f9a3e0e407a2db23589d01321a4bf804275d6decbce9c90f340
 ### `clojure:temurin-17-lein-bullseye-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:051b176dcfd56841c06278916fae31af2a4c155edb4823f2d24ce43ddd63c7e4
+$ docker pull clojure@sha256:f82d5445ec9ef9a560cc9546065acd407b7d97b787264bc0e5bad6c39332c213
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **221.9 MB (221862742 bytes)**  
+-	Total Size: **221.9 MB (221862569 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:27af165f1c4481efb6d723be993a1632a118ea598016fb897466e94655499aba`
+-	Image ID: `sha256:1a34a49fabcc12a4faa7769fe509ea1847106635e8d39c3a1a22a2dbba4bdb62`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
@@ -14327,55 +14327,55 @@ CMD ["repl"]
 		Last Modified: Thu, 17 Oct 2024 01:15:14 GMT  
 		Size: 30.1 MB (30075757 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:414bb17c66e1a956e8e8cfbcd993934c289b1940da79f19f4baaede4b6a72b09`  
-		Last Modified: Thu, 17 Oct 2024 08:15:01 GMT  
-		Size: 144.0 MB (143959469 bytes)  
+	-	`sha256:60746b2d48dfb19e043609b9b09417ae53dbcb13af929a26fa77a66ad395af56`  
+		Last Modified: Sat, 19 Oct 2024 08:48:40 GMT  
+		Size: 144.0 MB (143959478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4942272789756431e4927dc3850a7f3920ca07376b94964db63bffa0beaba041`  
-		Last Modified: Thu, 17 Oct 2024 08:14:57 GMT  
-		Size: 43.3 MB (43312948 bytes)  
+	-	`sha256:cdf07568f1e14d441839668d393537a99e48c518101ae79e48c414c1fd0b1ded`  
+		Last Modified: Sat, 19 Oct 2024 12:03:15 GMT  
+		Size: 43.3 MB (43312729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40698646425e91b4a18c8ebf3980b75b26aa3480cbc471a978ae682d989ff564`  
-		Last Modified: Thu, 17 Oct 2024 08:14:57 GMT  
-		Size: 4.5 MB (4514140 bytes)  
+	-	`sha256:d4c784dece627a72e53db9b08a90719e3b92dff6307168804a3efe942abc5bab`  
+		Last Modified: Sat, 19 Oct 2024 12:03:14 GMT  
+		Size: 4.5 MB (4514178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dbd2e10930cab862b270952967c006a0eb2998a07307d3d6c17dd989aca13d3e`  
-		Last Modified: Thu, 17 Oct 2024 08:14:56 GMT  
-		Size: 396.0 B  
+	-	`sha256:54ecbe6b993466caa4abd2dcd1f1b61b7daff2a6958c1ae673e7dce04edeaa01`  
+		Last Modified: Sat, 19 Oct 2024 12:03:13 GMT  
+		Size: 395.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-lein-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:77894657fc0a58ff40961569f2c12bc3f636e60c1869b7557f65e3827feca7f8
+$ docker pull clojure@sha256:5aea44c3f1cf6a32bd90e1919b8ba874f3904b3bd1c8b36fd9aa688ff3ba99a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.6 MB (4575229 bytes)**  
+-	Total Size: **4.6 MB (4599768 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb7c682a8f2981321ec7d34ad5cd3dfe9e80177e753dc407dacd3195f1c4c05f`
+-	Image ID: `sha256:dc4b3be67849deac60668faeb47e2a43996736fd6cb70cd1bb92768ad9ff50cf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:22b782994aaaddb9f5f952b941575fbf45eb43a2887a3cfd323f155c7b99bb0f`  
-		Last Modified: Thu, 17 Oct 2024 08:14:56 GMT  
-		Size: 4.6 MB (4556990 bytes)  
+	-	`sha256:9bfd4d860d41c3314f84c753592df0b5a023c9435666bb46135d87d61e19db0a`  
+		Last Modified: Sat, 19 Oct 2024 12:03:14 GMT  
+		Size: 4.6 MB (4581357 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:46ce369d9adc4f37eb909d0cc8d06d7baac5c7dfa88a96cac66fce82cf2fd9de`  
-		Last Modified: Thu, 17 Oct 2024 08:14:56 GMT  
-		Size: 18.2 KB (18239 bytes)  
+	-	`sha256:39b40caccc4dc8be5e6817a51ee5a0d9ba852f47cbfdbc1ab678de3f8a244e2b`  
+		Last Modified: Sat, 19 Oct 2024 12:03:13 GMT  
+		Size: 18.4 KB (18411 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-lein-jammy`
 
 ```console
-$ docker pull clojure@sha256:9fae2f4220ed34ffe864e1b87ef51dd94d8a3141a847f073c70e663ebb5f01af
+$ docker pull clojure@sha256:fad2680a5545c82c661ed728a2b0e102194f9675d3ac5c9d45edd84d690e2611
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14518,28 +14518,28 @@ $ docker pull clojure@sha256:2dc62862797da2435e570bdf379bcd6cfea68356a993e192e31
 ### `clojure:temurin-17-lein-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:eaa29f876da30ffb9f7d457d956c3cde6b328260e7fb8e41a1551de50b8b2198
+$ docker pull clojure@sha256:1dda59be2692613100273fc68e15d4161b8b82e981fdab73590fc2fd0762c954
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **231.4 MB (231435874 bytes)**  
+-	Total Size: **230.4 MB (230411554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ccf4fca6f5d6cbcfa112dba0808d74ad77c4e7639ae5bc7f8969900934880020`
+-	Image ID: `sha256:654512f4b37eed67f31aa1e73dc959b9b9ec86667f714386d7f633a7d4a4bba8`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -14561,94 +14561,94 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_VERSION=2.11.2
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN set -eux; apt-get update && apt-get install -y make git gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mkdir -p /root/.lein && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get purge -y --auto-remove gnupg wget # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_ROOT=1
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.12.0"]])' > project.clj   && lein deps && rm project.clj # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENTRYPOINT ["entrypoint"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["repl"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21a0c08aee9ece74cacae8ca7dfbcf838605c1e8bf9ae4ef62a9bf1d407ca7dd`  
-		Last Modified: Tue, 17 Sep 2024 01:39:26 GMT  
-		Size: 18.8 MB (18827958 bytes)  
+	-	`sha256:4f4328c2660e2acfd7df28e6cce03f948be8bfd9bc327b3747dcbddc8199302b`  
+		Last Modified: Sat, 19 Oct 2024 05:36:25 GMT  
+		Size: 18.8 MB (18842272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c661676adabc448000bc17c531badb810755db643cdbd3b77bd5d6af1e70cea8`  
-		Last Modified: Tue, 17 Sep 2024 01:39:32 GMT  
-		Size: 144.0 MB (143967066 bytes)  
+	-	`sha256:1a6b4f156363cc8751d4ca24fe1b36d8f3c4fc0335ce6e49a8123255d79912f0`  
+		Last Modified: Sat, 19 Oct 2024 05:36:28 GMT  
+		Size: 144.0 MB (143967033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:635213e63d52c04685322883d25f6bb5f35e17073ffdc3cb41b45cb406e5c0d0`  
-		Last Modified: Tue, 17 Sep 2024 01:39:23 GMT  
-		Size: 172.0 B  
+	-	`sha256:d35a83363ff0741a526836ef065ab1bd42f1332ee3f997f5c2030f92a9c8c6ca`  
+		Last Modified: Sat, 19 Oct 2024 05:36:24 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1eb782c3b8f552eed1b4a6d0237ac6e9664eb6f27291f628c62fa4586b409055`  
-		Last Modified: Tue, 17 Sep 2024 01:39:23 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:f07c3705559939101aebca8ea7598e75955b991ff61cfce66869f1e790abd370`  
+		Last Modified: Sat, 19 Oct 2024 05:36:24 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9d43cf67936e181539e8b4d4be0960b0ad768dbcce211a6be5bf0bcff182dea7`  
-		Last Modified: Tue, 17 Sep 2024 04:34:50 GMT  
-		Size: 35.7 MB (35726854 bytes)  
+	-	`sha256:2719161ae429242555786af04f02e84646e19d01aff9d726d1a8dc65e51c1ba6`  
+		Last Modified: Sat, 19 Oct 2024 12:04:18 GMT  
+		Size: 35.7 MB (35727110 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0dbd9bbc88f2612b02eea6a8c1cbbd2548fa7968178ec1c14f17e3d3b30543ca`  
-		Last Modified: Tue, 17 Sep 2024 04:34:49 GMT  
-		Size: 4.5 MB (4514178 bytes)  
+	-	`sha256:d0a4b1d3139abd1b439679cd32e1bdc612e86d8ae874f54e2e9b3708fbf9aef1`  
+		Last Modified: Sat, 19 Oct 2024 12:04:18 GMT  
+		Size: 4.5 MB (4514113 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9393f49035e2570808758b332df27e0cb9cf4712281865a3492246dbb1f4cdd6`  
-		Last Modified: Tue, 17 Sep 2024 04:34:49 GMT  
+	-	`sha256:1cb5dcc9a847b5734e208454178adb5218ba5d075c93320eb44c6da0694ae1f2`  
+		Last Modified: Sat, 19 Oct 2024 12:04:17 GMT  
 		Size: 399.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-lein-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:bce929bc5f6120a3697a6b2f7bbf79791876c8f712eb963f5e68c5aa538cfc98
+$ docker pull clojure@sha256:1a828a4709b8540963e95fc1a2930860073c751521af982eee76d06d23ec51ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5473154 bytes)**  
+-	Total Size: **5.7 MB (5654172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc23b10a46c76a64dbea62088d8b32d90156d4f01fef580ec6e31b1a1b488d5d`
+-	Image ID: `sha256:f45787f64ba96cab22e6f990376cce7dd965696f0190926560c59feb0d1f646d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:838e8b1917deb4940d80b2ac99b694579874526645399bd60e70de3ff83652d4`  
-		Last Modified: Tue, 17 Sep 2024 04:34:48 GMT  
-		Size: 5.5 MB (5453816 bytes)  
+	-	`sha256:827283fc3db98562abdbc5ecd32abe30ccf4947a1fd1cdf3374479f6de01523a`  
+		Last Modified: Sat, 19 Oct 2024 12:04:17 GMT  
+		Size: 5.6 MB (5634977 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1b80e7bf0c135206d806f51794e4a0f3adc938b0558aa573f686936dcce9932f`  
-		Last Modified: Tue, 17 Sep 2024 04:34:47 GMT  
-		Size: 19.3 KB (19338 bytes)  
+	-	`sha256:5fcb02144204740f20b5db23d35f78d9dbe69615a1edfb070c13e94a26b7cd20`  
+		Last Modified: Sat, 19 Oct 2024 12:04:17 GMT  
+		Size: 19.2 KB (19195 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-lein-noble`
 
 ```console
-$ docker pull clojure@sha256:0f3589754c36a61935145f902fdba8adc4831a1960c4135b22bf7d2c0923c2fe
+$ docker pull clojure@sha256:391cba1bdd363187909448341bb498af6d3bcf2e3d1afad2874e84dfd6d8da5c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14791,28 +14791,28 @@ $ docker pull clojure@sha256:8a2366d9b27bf8b280fbcf2e84c17b19b60e7dfd5815ecb584a
 ### `clojure:temurin-17-lein-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:b35af55aa7ad33504ef15440416b92240b58b366235dcb348d1af3f02dd0a70e
+$ docker pull clojure@sha256:fa80f5ac4417f9f9d403b9b598ec4fa2c3efa0177adf2403c9f6e5e99e9f85f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.5 MB (237485102 bytes)**  
+-	Total Size: **236.4 MB (236416291 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3e101efa90f78c753a0b530f5da78d0dcb53b49c6698eb48b1053fb44dcc2b8b`
+-	Image ID: `sha256:a5e5344eeba753763c301c27a65361030925e8a44cb002b779e403bf8dfc2a8b`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -14857,71 +14857,71 @@ CMD ["repl"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a198149501abf09f7d2065dde4b2ebc6eafd97bb9331b52d06c6b2a199992128`  
-		Last Modified: Wed, 16 Oct 2024 01:17:59 GMT  
-		Size: 21.0 MB (20963830 bytes)  
+	-	`sha256:0a84341aaf3e356e3e4f81c1bdab6100eb048d95139a0fba28fc288df8b7742d`  
+		Last Modified: Sat, 19 Oct 2024 05:37:32 GMT  
+		Size: 21.0 MB (20961983 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f7c3a3ae1b154c201f07cd31ae2fc5c9e476ef5288e7bdcd9bd655af67f021c`  
-		Last Modified: Wed, 16 Oct 2024 01:18:05 GMT  
-		Size: 144.0 MB (143967360 bytes)  
+	-	`sha256:f3d56e0f8f2a24e92989ba0e168ea5f1fd74968cfff5683fb85fcdc860623682`  
+		Last Modified: Sat, 19 Oct 2024 05:37:35 GMT  
+		Size: 144.0 MB (143967366 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aca5eeb60cbc15f8d34e31c2019f436146fc0e6775f438d80a3cded9cc71e0c8`  
-		Last Modified: Wed, 16 Oct 2024 01:17:56 GMT  
-		Size: 172.0 B  
+	-	`sha256:e45d8dbae1ab4eb805cc510c6fe8293df5a7eafaf144f0ff8868620277ed108f`  
+		Last Modified: Sat, 19 Oct 2024 05:37:31 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da83ed8a8274d91d5ca49ea90113a398dfa850263230bc9ed0e77d7eaf978170`  
-		Last Modified: Wed, 16 Oct 2024 01:17:56 GMT  
+	-	`sha256:df0ade22b6a30f22791c6e4d7f013e98995427b5b1d8698be3ba76a6532091b5`  
+		Last Modified: Sat, 19 Oct 2024 05:37:31 GMT  
 		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c7d2034f9dc8f647684a8b26c19ea3eb314d1f80454a041ab68d74e4e8bfeb57`  
-		Last Modified: Wed, 16 Oct 2024 02:26:13 GMT  
-		Size: 38.1 MB (38084230 bytes)  
+	-	`sha256:f1634eb3c0d3cffbfcf7b334820093750ac5b57bf696757e384e4bdf344db504`  
+		Last Modified: Sat, 19 Oct 2024 12:05:11 GMT  
+		Size: 38.1 MB (38084245 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8ce08be820b46f29eff8b16331a759e083423affa0e19d8ef764ed29203e55d`  
-		Last Modified: Wed, 16 Oct 2024 02:26:13 GMT  
-		Size: 4.5 MB (4514170 bytes)  
+	-	`sha256:0d159256b8ffddba3fa3c89b72801ab2b536ca42a941100d669ee822d4c50bc1`  
+		Last Modified: Sat, 19 Oct 2024 12:05:10 GMT  
+		Size: 4.5 MB (4514157 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c297123010391e68ea28b65b6308b1b7cc302b46cd93e525e4231698e37499b`  
-		Last Modified: Wed, 16 Oct 2024 02:26:13 GMT  
+	-	`sha256:da15d41bff7ca1accb47bf6c95b16ce1e10623f5d962bab01242530215bd9feb`  
+		Last Modified: Sat, 19 Oct 2024 12:05:09 GMT  
 		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-lein-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:cfb402fa8561e0ce7dc20bbce767b8500cfe408be14a4803e7fbc632a6045c22
+$ docker pull clojure@sha256:c5ebfbbf1a57bc2e1854d6d78bea72b2d7428e89d84e76b4ffab71ff6b773e24
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5119655 bytes)**  
+-	Total Size: **5.1 MB (5146486 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:263fd94040741da89fe88525c1d3d7f2c6c04be690f908c52758ff96eb5d6f58`
+-	Image ID: `sha256:64c2a4ee50c9693beed45e36ba01d54e043ab3205ba27be09afa38adf5d624e0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:49efd76a58055096426f062b18fbb680e17d40b1114a1311c660b0b60defc129`  
-		Last Modified: Wed, 16 Oct 2024 02:26:12 GMT  
-		Size: 5.1 MB (5101159 bytes)  
+	-	`sha256:c488d6d958fbe08152927a7812fb54f692a2d243fe52a3cc5855cfe1c0e984a0`  
+		Last Modified: Sat, 19 Oct 2024 12:05:10 GMT  
+		Size: 5.1 MB (5127964 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:232aa15d88e3e28d8dcf5eae0153a10f8e19d1bd3a77284b2ca97d7326275535`  
-		Last Modified: Wed, 16 Oct 2024 02:26:11 GMT  
-		Size: 18.5 KB (18496 bytes)  
+	-	`sha256:41cb4a08eb79a773688e0c20e62873b9969d8bffd81c6b028943fadee650dde4`  
+		Last Modified: Sat, 19 Oct 2024 12:05:09 GMT  
+		Size: 18.5 KB (18522 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-noble`
 
 ```console
-$ docker pull clojure@sha256:97c6d55b7fb7996d68989da76cb39979645c01a9388356a0cebca1be4b399169
+$ docker pull clojure@sha256:0537d1bf48302199307236ec7dc255e3bbec52a86a60903d642958794a8dca8f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15058,28 +15058,28 @@ $ docker pull clojure@sha256:34961e429e28ed6f7087a54de133a9afbdedbb08c79458f9dde
 ### `clojure:temurin-17-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:832ae85582c8a4e4dab20d56b570f815ae8f822d50c713863fe890690a7877cc
+$ docker pull clojure@sha256:eab5d822ae6cad4abc21fd1db34837e8500a31031f0c4fa7d8b5d136677f01a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **250.8 MB (250826255 bytes)**  
+-	Total Size: **249.8 MB (249757153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:507a5a047788297b416c6eac006067675aadda1c54e126f0236a7eb748d4d3fb`
+-	Image ID: `sha256:b15f1dfd3ca7570ffc7448d6d043b1441ae1d48d2d10fc82c1effae975cd11c0`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -15118,71 +15118,71 @@ CMD ["-M" "--repl"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a198149501abf09f7d2065dde4b2ebc6eafd97bb9331b52d06c6b2a199992128`  
-		Last Modified: Wed, 16 Oct 2024 01:17:59 GMT  
-		Size: 21.0 MB (20963830 bytes)  
+	-	`sha256:0a84341aaf3e356e3e4f81c1bdab6100eb048d95139a0fba28fc288df8b7742d`  
+		Last Modified: Sat, 19 Oct 2024 05:37:32 GMT  
+		Size: 21.0 MB (20961983 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f7c3a3ae1b154c201f07cd31ae2fc5c9e476ef5288e7bdcd9bd655af67f021c`  
-		Last Modified: Wed, 16 Oct 2024 01:18:05 GMT  
-		Size: 144.0 MB (143967360 bytes)  
+	-	`sha256:f3d56e0f8f2a24e92989ba0e168ea5f1fd74968cfff5683fb85fcdc860623682`  
+		Last Modified: Sat, 19 Oct 2024 05:37:35 GMT  
+		Size: 144.0 MB (143967366 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aca5eeb60cbc15f8d34e31c2019f436146fc0e6775f438d80a3cded9cc71e0c8`  
-		Last Modified: Wed, 16 Oct 2024 01:17:56 GMT  
-		Size: 172.0 B  
+	-	`sha256:e45d8dbae1ab4eb805cc510c6fe8293df5a7eafaf144f0ff8868620277ed108f`  
+		Last Modified: Sat, 19 Oct 2024 05:37:31 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da83ed8a8274d91d5ca49ea90113a398dfa850263230bc9ed0e77d7eaf978170`  
-		Last Modified: Wed, 16 Oct 2024 01:17:56 GMT  
+	-	`sha256:df0ade22b6a30f22791c6e4d7f013e98995427b5b1d8698be3ba76a6532091b5`  
+		Last Modified: Sat, 19 Oct 2024 05:37:31 GMT  
 		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c484eaf2f2487d72c75a56ccc4dc5d99964991f7a7d041f0eebfa588a31fe73`  
-		Last Modified: Wed, 16 Oct 2024 02:31:03 GMT  
-		Size: 55.9 MB (55938937 bytes)  
+	-	`sha256:e92d2704877efed0a745661092e5a0f9133e22a74c1765bff26ce23898211d10`  
+		Last Modified: Sat, 19 Oct 2024 12:10:34 GMT  
+		Size: 55.9 MB (55938652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a53fcb28799de2edef3816c035592de9b1b5de9ff28dd3529521479567e7a510`  
-		Last Modified: Wed, 16 Oct 2024 02:31:01 GMT  
-		Size: 615.0 B  
+	-	`sha256:44ec1a384d5b3f2418ce84b23e13257a36c71f0d71da7a58764cfc428649d6c3`  
+		Last Modified: Sat, 19 Oct 2024 12:10:32 GMT  
+		Size: 613.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06c620e1e717cecbfd66d5f0fbfb6b5ab5f4e618cbda41ba0a786b109e06a938`  
-		Last Modified: Wed, 16 Oct 2024 02:31:01 GMT  
-		Size: 398.0 B  
+	-	`sha256:88de8099e66933113863a0b4acf38eeeb93c8128d5e9a07e6d7a35a74cfe2cc5`  
+		Last Modified: Sat, 19 Oct 2024 12:10:32 GMT  
+		Size: 396.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9af40ff1c5906932e584c7e2dc7cd943149db2c5abe9dff63148484e06e5a09c
+$ docker pull clojure@sha256:d326e479007f52c2a43e42eeb6f0cad1426b513ef265e44948549c4df4d831eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5712971 bytes)**  
+-	Total Size: **5.7 MB (5740966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d69e731bd4308876eb61b12df79cf19e43a4fdfc8974d25cab18423ccf94eda3`
+-	Image ID: `sha256:8f06283026072df228bf3254702cdad27d0103f1b73804a667bacb0894f5f40d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a94ecc8a021c9547bc75d6cc7535994301c96a83c23f18e25fdd6b5180fad895`  
-		Last Modified: Wed, 16 Oct 2024 02:31:01 GMT  
-		Size: 5.7 MB (5697316 bytes)  
+	-	`sha256:98f92ce170da9ca1b0c7b5be1a1435c00ae8e858f14e320b885adf30daa08c8f`  
+		Last Modified: Sat, 19 Oct 2024 12:10:33 GMT  
+		Size: 5.7 MB (5725287 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a7901ea54a2ffef69693fa47f905f60cd0e87899651d047b45a49227626ca160`  
-		Last Modified: Wed, 16 Oct 2024 02:31:00 GMT  
-		Size: 15.7 KB (15655 bytes)  
+	-	`sha256:f09eb3fff2ff142572884e8fd0fee233086e8856628831e05817c666063379d4`  
+		Last Modified: Sat, 19 Oct 2024 12:10:32 GMT  
+		Size: 15.7 KB (15679 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-tools-deps`
 
 ```console
-$ docker pull clojure@sha256:e226f59d414508a651d45a894f2837bdb1474b846afecc2832c39e8790cc1c50
+$ docker pull clojure@sha256:f9674fbdb264547aa7b939d1a845fe7c65363e9e98c019927c5a481ec87e1386
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15319,28 +15319,28 @@ $ docker pull clojure@sha256:0634379064e91530c48f4a58e62a5e6a34baade898537656f7c
 ### `clojure:temurin-17-tools-deps` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:8b804ee2bb7632afdce2939de92ea8b6684dcb1c8e91fedf51bcabeb370a306a
+$ docker pull clojure@sha256:4921f003e462d0bab1914c76f4e63081c6926e41838dea53440c1fba76574f37
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.8 MB (242810401 bytes)**  
+-	Total Size: **241.8 MB (241786030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcfb7d1cc13d5f3622516119aebedbc6fb94e1ba0fcf7b0faedc24c136c53807`
+-	Image ID: `sha256:c6f8d5f09a80621b7693e680ecbb7a42b201bf6ccae99a0bf929179639daa3b7`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -15362,88 +15362,88 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV CLOJURE_VERSION=1.12.0.1479
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "94f29b9b66183bd58307c46fb561fd9e9148666bac13a4518a9931b6f989d830 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENTRYPOINT ["entrypoint"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["-M" "--repl"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21a0c08aee9ece74cacae8ca7dfbcf838605c1e8bf9ae4ef62a9bf1d407ca7dd`  
-		Last Modified: Tue, 17 Sep 2024 01:39:26 GMT  
-		Size: 18.8 MB (18827958 bytes)  
+	-	`sha256:4f4328c2660e2acfd7df28e6cce03f948be8bfd9bc327b3747dcbddc8199302b`  
+		Last Modified: Sat, 19 Oct 2024 05:36:25 GMT  
+		Size: 18.8 MB (18842272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c661676adabc448000bc17c531badb810755db643cdbd3b77bd5d6af1e70cea8`  
-		Last Modified: Tue, 17 Sep 2024 01:39:32 GMT  
-		Size: 144.0 MB (143967066 bytes)  
+	-	`sha256:1a6b4f156363cc8751d4ca24fe1b36d8f3c4fc0335ce6e49a8123255d79912f0`  
+		Last Modified: Sat, 19 Oct 2024 05:36:28 GMT  
+		Size: 144.0 MB (143967033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:635213e63d52c04685322883d25f6bb5f35e17073ffdc3cb41b45cb406e5c0d0`  
-		Last Modified: Tue, 17 Sep 2024 01:39:23 GMT  
-		Size: 172.0 B  
+	-	`sha256:d35a83363ff0741a526836ef065ab1bd42f1332ee3f997f5c2030f92a9c8c6ca`  
+		Last Modified: Sat, 19 Oct 2024 05:36:24 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1eb782c3b8f552eed1b4a6d0237ac6e9664eb6f27291f628c62fa4586b409055`  
-		Last Modified: Tue, 17 Sep 2024 01:39:23 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:f07c3705559939101aebca8ea7598e75955b991ff61cfce66869f1e790abd370`  
+		Last Modified: Sat, 19 Oct 2024 05:36:24 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:558811c399c07c4e2994d58fe7b74447b5ba3269de59de5d7d0d33355753aea1`  
-		Last Modified: Tue, 17 Sep 2024 04:39:46 GMT  
-		Size: 51.6 MB (51614944 bytes)  
+	-	`sha256:78d5f464f06c1d8099c8eb41a1465e3f46385302b33b12adf12e21dc95443b06`  
+		Last Modified: Sat, 19 Oct 2024 12:09:48 GMT  
+		Size: 51.6 MB (51615084 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4401298bcb97e14925d09a0120779bf8f2ec3bb6a4bc86f6de9af53ca3014e91`  
-		Last Modified: Tue, 17 Sep 2024 04:39:44 GMT  
+	-	`sha256:3ee11607757fca0e662a86ef8bf8d0b32ac32bb72df679fd18d7784269225a89`  
+		Last Modified: Sat, 19 Oct 2024 12:09:46 GMT  
 		Size: 615.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922919db85c45334b954f10e648de04a846a24bfb72c4ea6ca11715dbe48c871`  
-		Last Modified: Tue, 17 Sep 2024 04:39:44 GMT  
+	-	`sha256:cb2561525c064792f20dfc6db20c10e04161cbeb34b0b4cf47fd9051a8fcf1b7`  
+		Last Modified: Sat, 19 Oct 2024 12:09:46 GMT  
 		Size: 399.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-tools-deps` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9e24393dc32244f9648091515b327421b310d6d4353c703ab1cc6096a1585527
+$ docker pull clojure@sha256:281e2a431e734ea20915fa0022db064b448a33f0903020077ed538b5d24e2529
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 MB (6031950 bytes)**  
+-	Total Size: **6.2 MB (6214230 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:29c9cebd9a91cd0d961aaf787ac5d2e5d55c7e142912235f8a2b55e9a86c3abc`
+-	Image ID: `sha256:0aea6414a2539555d3b1ec47b89cfbae95c495890955b8c26b22d3f500b8c2b1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d428e53b31b1fba82320bf9fc4053fc2e0318b79334c8b91e55ea83c80a7a27e`  
-		Last Modified: Tue, 17 Sep 2024 04:39:45 GMT  
-		Size: 6.0 MB (6015406 bytes)  
+	-	`sha256:281e6536c73d03467bffdbc09efd5a4cf2d1358bb084f5e95b789f0140c520aa`  
+		Last Modified: Sat, 19 Oct 2024 12:09:47 GMT  
+		Size: 6.2 MB (6197843 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:41e24a1b9e991500841c11a0943aa1b7161293e3179cea8dcf937c2e9b7c84f3`  
-		Last Modified: Tue, 17 Sep 2024 04:39:44 GMT  
-		Size: 16.5 KB (16544 bytes)  
+	-	`sha256:5bc0e61680fc60623769b9646c851a1a0e165fbb9e9814588e53e13e9c0d9aed`  
+		Last Modified: Sat, 19 Oct 2024 12:09:46 GMT  
+		Size: 16.4 KB (16387 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-tools-deps-1.12.0.1479`
 
 ```console
-$ docker pull clojure@sha256:e226f59d414508a651d45a894f2837bdb1474b846afecc2832c39e8790cc1c50
+$ docker pull clojure@sha256:f9674fbdb264547aa7b939d1a845fe7c65363e9e98c019927c5a481ec87e1386
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15580,28 +15580,28 @@ $ docker pull clojure@sha256:0634379064e91530c48f4a58e62a5e6a34baade898537656f7c
 ### `clojure:temurin-17-tools-deps-1.12.0.1479` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:8b804ee2bb7632afdce2939de92ea8b6684dcb1c8e91fedf51bcabeb370a306a
+$ docker pull clojure@sha256:4921f003e462d0bab1914c76f4e63081c6926e41838dea53440c1fba76574f37
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.8 MB (242810401 bytes)**  
+-	Total Size: **241.8 MB (241786030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcfb7d1cc13d5f3622516119aebedbc6fb94e1ba0fcf7b0faedc24c136c53807`
+-	Image ID: `sha256:c6f8d5f09a80621b7693e680ecbb7a42b201bf6ccae99a0bf929179639daa3b7`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -15623,82 +15623,82 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV CLOJURE_VERSION=1.12.0.1479
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "94f29b9b66183bd58307c46fb561fd9e9148666bac13a4518a9931b6f989d830 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENTRYPOINT ["entrypoint"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["-M" "--repl"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21a0c08aee9ece74cacae8ca7dfbcf838605c1e8bf9ae4ef62a9bf1d407ca7dd`  
-		Last Modified: Tue, 17 Sep 2024 01:39:26 GMT  
-		Size: 18.8 MB (18827958 bytes)  
+	-	`sha256:4f4328c2660e2acfd7df28e6cce03f948be8bfd9bc327b3747dcbddc8199302b`  
+		Last Modified: Sat, 19 Oct 2024 05:36:25 GMT  
+		Size: 18.8 MB (18842272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c661676adabc448000bc17c531badb810755db643cdbd3b77bd5d6af1e70cea8`  
-		Last Modified: Tue, 17 Sep 2024 01:39:32 GMT  
-		Size: 144.0 MB (143967066 bytes)  
+	-	`sha256:1a6b4f156363cc8751d4ca24fe1b36d8f3c4fc0335ce6e49a8123255d79912f0`  
+		Last Modified: Sat, 19 Oct 2024 05:36:28 GMT  
+		Size: 144.0 MB (143967033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:635213e63d52c04685322883d25f6bb5f35e17073ffdc3cb41b45cb406e5c0d0`  
-		Last Modified: Tue, 17 Sep 2024 01:39:23 GMT  
-		Size: 172.0 B  
+	-	`sha256:d35a83363ff0741a526836ef065ab1bd42f1332ee3f997f5c2030f92a9c8c6ca`  
+		Last Modified: Sat, 19 Oct 2024 05:36:24 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1eb782c3b8f552eed1b4a6d0237ac6e9664eb6f27291f628c62fa4586b409055`  
-		Last Modified: Tue, 17 Sep 2024 01:39:23 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:f07c3705559939101aebca8ea7598e75955b991ff61cfce66869f1e790abd370`  
+		Last Modified: Sat, 19 Oct 2024 05:36:24 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:558811c399c07c4e2994d58fe7b74447b5ba3269de59de5d7d0d33355753aea1`  
-		Last Modified: Tue, 17 Sep 2024 04:39:46 GMT  
-		Size: 51.6 MB (51614944 bytes)  
+	-	`sha256:78d5f464f06c1d8099c8eb41a1465e3f46385302b33b12adf12e21dc95443b06`  
+		Last Modified: Sat, 19 Oct 2024 12:09:48 GMT  
+		Size: 51.6 MB (51615084 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4401298bcb97e14925d09a0120779bf8f2ec3bb6a4bc86f6de9af53ca3014e91`  
-		Last Modified: Tue, 17 Sep 2024 04:39:44 GMT  
+	-	`sha256:3ee11607757fca0e662a86ef8bf8d0b32ac32bb72df679fd18d7784269225a89`  
+		Last Modified: Sat, 19 Oct 2024 12:09:46 GMT  
 		Size: 615.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922919db85c45334b954f10e648de04a846a24bfb72c4ea6ca11715dbe48c871`  
-		Last Modified: Tue, 17 Sep 2024 04:39:44 GMT  
+	-	`sha256:cb2561525c064792f20dfc6db20c10e04161cbeb34b0b4cf47fd9051a8fcf1b7`  
+		Last Modified: Sat, 19 Oct 2024 12:09:46 GMT  
 		Size: 399.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-tools-deps-1.12.0.1479` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9e24393dc32244f9648091515b327421b310d6d4353c703ab1cc6096a1585527
+$ docker pull clojure@sha256:281e2a431e734ea20915fa0022db064b448a33f0903020077ed538b5d24e2529
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 MB (6031950 bytes)**  
+-	Total Size: **6.2 MB (6214230 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:29c9cebd9a91cd0d961aaf787ac5d2e5d55c7e142912235f8a2b55e9a86c3abc`
+-	Image ID: `sha256:0aea6414a2539555d3b1ec47b89cfbae95c495890955b8c26b22d3f500b8c2b1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d428e53b31b1fba82320bf9fc4053fc2e0318b79334c8b91e55ea83c80a7a27e`  
-		Last Modified: Tue, 17 Sep 2024 04:39:45 GMT  
-		Size: 6.0 MB (6015406 bytes)  
+	-	`sha256:281e6536c73d03467bffdbc09efd5a4cf2d1358bb084f5e95b789f0140c520aa`  
+		Last Modified: Sat, 19 Oct 2024 12:09:47 GMT  
+		Size: 6.2 MB (6197843 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:41e24a1b9e991500841c11a0943aa1b7161293e3179cea8dcf937c2e9b7c84f3`  
-		Last Modified: Tue, 17 Sep 2024 04:39:44 GMT  
-		Size: 16.5 KB (16544 bytes)  
+	-	`sha256:5bc0e61680fc60623769b9646c851a1a0e165fbb9e9814588e53e13e9c0d9aed`  
+		Last Modified: Sat, 19 Oct 2024 12:09:46 GMT  
+		Size: 16.4 KB (16387 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-tools-deps-1.12.0.1479-alpine`
@@ -15831,7 +15831,7 @@ $ docker pull clojure@sha256:91c33d8e202912975a6759f365168381ead47c234186af456c7
 ## `clojure:temurin-17-tools-deps-1.12.0.1479-bookworm`
 
 ```console
-$ docker pull clojure@sha256:f22d9c0320f619a5914801b1b402140ba00d543048f8b0dce8de971166d649f0
+$ docker pull clojure@sha256:3040268d6b74f3816993cb58035f938d8857524dcff9aab0d111707ef418f1a0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15934,13 +15934,13 @@ $ docker pull clojure@sha256:c8aa0b4e811ceb5994e36f3ed316f396b886fe50089756f4843
 ### `clojure:temurin-17-tools-deps-1.12.0.1479-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:320bf0f1c96f0558dad596e0cc903f93c984bb4ab16583589889045a93735d2f
+$ docker pull clojure@sha256:dfe23b482395c88b2b2eb5ca76edd11b2ddd122ef8170f946862a7f2aa3fedf9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.3 MB (274335545 bytes)**  
+-	Total Size: **274.3 MB (274335776 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3271405a1bdf6c78265d374b6e50fafdd48c4b2b271b0762db28d260df5c4587`
+-	Image ID: `sha256:d1bc7c4315bd97bfab60de7aa210fb5a6b69e2ff05a99b1d548666f6158c27d9`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -15976,55 +15976,55 @@ CMD ["-M" "--repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:19 GMT  
 		Size: 49.6 MB (49584978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af79cbd2bebb502c38437b7b81f3b9697a59e5f45be49cd74b73bdf63f10ac08`  
-		Last Modified: Thu, 17 Oct 2024 08:11:33 GMT  
-		Size: 144.0 MB (143959476 bytes)  
+	-	`sha256:237653f214e6df6277c7b47d5a245880430d05230855ce95f46023867b57c6a8`  
+		Last Modified: Sat, 19 Oct 2024 12:00:15 GMT  
+		Size: 144.0 MB (143959441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d8e70c0e27f916331f49a283267e3e257bbdf87e572c6f36ce5027dad023c85`  
-		Last Modified: Thu, 17 Oct 2024 08:15:51 GMT  
-		Size: 80.8 MB (80790050 bytes)  
+	-	`sha256:055062ba45f591db1d3e3c43ac3f6e853fa2bbcd837e7bccdf575a2c8de5edd6`  
+		Last Modified: Sat, 19 Oct 2024 12:06:07 GMT  
+		Size: 80.8 MB (80790316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f3f670afbf9852f5caceb4280e54536843c50f984fe64afd5e4f5dc1bff5ab2`  
-		Last Modified: Thu, 17 Oct 2024 08:15:49 GMT  
+	-	`sha256:20b82ae0d3a52f4f4588e6ec2cd6867dce6f8015031368a7deefc3e8bce4d450`  
+		Last Modified: Sat, 19 Oct 2024 12:06:05 GMT  
 		Size: 613.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:acc01a5b0dc85d191e594ef288946e0cde25e66fadaa921e675ebbb4c939e6dc`  
-		Last Modified: Thu, 17 Oct 2024 08:15:49 GMT  
+	-	`sha256:a76a73437d6d89e691c58d742519591415ab884ed32124247d617325a3e827d6`  
+		Last Modified: Sat, 19 Oct 2024 12:06:05 GMT  
 		Size: 396.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-tools-deps-1.12.0.1479-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9bdae866eae3728f33ab5557871366e3209df9edc39486c02ba4e6f7892abceb
+$ docker pull clojure@sha256:b64633c06bad5aec7d3c86e7e80262233a39baa78dbb039e76349fa70625b917
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7177357 bytes)**  
+-	Total Size: **7.2 MB (7203277 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2fb84bda3159213a82c8a544fc3b2371dbe29dd355b1ddcf35cf8e9759214f43`
+-	Image ID: `sha256:a471219ba18623fc37ba4b007518cb0ea94e181ad46b29d091ee0b12eb169bff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c3cf51aef7296fb3b4bc39e303a252ec86f17fdfe890a065e8c2e173a9aa287f`  
-		Last Modified: Thu, 17 Oct 2024 08:15:50 GMT  
-		Size: 7.2 MB (7161774 bytes)  
+	-	`sha256:d62938ec6ef1ee16a047d51e89df78d3a49c03dd21f257559ecf7d574f73fc05`  
+		Last Modified: Sat, 19 Oct 2024 12:06:06 GMT  
+		Size: 7.2 MB (7187519 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f0003de83cdb8d2ad0e8680f26595217fdf942e8bdd548a25a805bb72f3c7d25`  
-		Last Modified: Thu, 17 Oct 2024 08:15:49 GMT  
-		Size: 15.6 KB (15583 bytes)  
+	-	`sha256:6adc214802212035ccb7662a80f8eb62661c5fa9d5c1c4373801c9f44df26b7a`  
+		Last Modified: Sat, 19 Oct 2024 12:06:05 GMT  
+		Size: 15.8 KB (15758 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-tools-deps-1.12.0.1479-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:2731f09f2090bcb4d3bd93153b3020d9b5ba9b27c0ca3b9dbba21d67af936721
+$ docker pull clojure@sha256:9331bf9fe82064e23be4a312ece162b792c708e0b22d706e8479574a6fd6d8ae
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16127,13 +16127,13 @@ $ docker pull clojure@sha256:e81ce1009d2648d7090b5f7bcbd5f689ede478869999ee65857
 ### `clojure:temurin-17-tools-deps-1.12.0.1479-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:d20d421dea8ac18cf0213a9b81cd0d68654e4a2e13450f71a9cf187298dc28af
+$ docker pull clojure@sha256:fb9d8c23e2a1ce869e88bb1b441892ca3aa35e4df253752ab6058d2dc3094985
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.5 MB (242462063 bytes)**  
+-	Total Size: **242.5 MB (242462082 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d36cd000afa7e4bf1273a102beade95f67c0e10f7e6a3b61553c161463aef3ff`
+-	Image ID: `sha256:e44fb865b2aaa315b7483bb94da81bc8619d7edb79b7f3666548ce85d28ce4f8`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -16169,55 +16169,55 @@ CMD ["-M" "--repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:39 GMT  
 		Size: 29.2 MB (29156341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:467c862b0e10aff6a74318a3baf39f91f14902d551963d4cac1c395597956120`  
-		Last Modified: Thu, 17 Oct 2024 08:12:42 GMT  
-		Size: 144.0 MB (143959463 bytes)  
+	-	`sha256:de3d0b3b90758f2da033069b4131178bf4a6c1fd6b5c07637d01ad797ebbc059`  
+		Last Modified: Sat, 19 Oct 2024 12:01:24 GMT  
+		Size: 144.0 MB (143959478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf77ef51da65e55f40f4febaf475a8c3f6ac8ca4bab6afbb717037520a6ad9b2`  
-		Last Modified: Thu, 17 Oct 2024 08:16:48 GMT  
-		Size: 69.3 MB (69345219 bytes)  
+	-	`sha256:a19a53bede711a73d711f78a5875568f585e33a1680fc0502989caa1755aabc6`  
+		Last Modified: Sat, 19 Oct 2024 12:07:06 GMT  
+		Size: 69.3 MB (69345220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe1f02fcad5fe0c361a480d0ff6aa4902ba626e83f841579243d69ead7b6dea5`  
-		Last Modified: Thu, 17 Oct 2024 08:16:46 GMT  
-		Size: 612.0 B  
+	-	`sha256:9384ae5514225f769fbaec02e8f68ab620696eda9a307d106d721964af5c7e46`  
+		Last Modified: Sat, 19 Oct 2024 12:07:04 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3182514c12b3d07ab0efdf12c5036864af593a7cf6c2f9ca0e5f39058e7b4afc`  
-		Last Modified: Thu, 17 Oct 2024 08:16:46 GMT  
-		Size: 396.0 B  
+	-	`sha256:addec6defb3687a06501984a9f0acfe51c068356ccaba0a5104cc5cdc78db699`  
+		Last Modified: Sat, 19 Oct 2024 12:07:04 GMT  
+		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-tools-deps-1.12.0.1479-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:668a69cfa85b56fc0487f530f1bc0011ef5c98c5c7aa151b0a643d60ce57d61c
+$ docker pull clojure@sha256:935fae79d57879929b2e392544ce5da71b0fe9df544326a237e39fecf317ca2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4915632 bytes)**  
+-	Total Size: **4.9 MB (4941553 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:590805ca798a222ab03f2cc1ace1a9936d3dde3fe2757b3f44b0821c7db6032e`
+-	Image ID: `sha256:5c81393935f2afbee6bc7d3fb21903e174ce869eddb65fba68bb4547db4fe0ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b9c82f92d1b936d4bc57063c73926ef3bd67c9a9e68f21fd6983cd804f9e0e0a`  
-		Last Modified: Thu, 17 Oct 2024 08:16:46 GMT  
-		Size: 4.9 MB (4899977 bytes)  
+	-	`sha256:752de58dd36660cbf8e0aade1a9aae2aed8d493cc78b45f441592bba0961cd93`  
+		Last Modified: Sat, 19 Oct 2024 12:07:04 GMT  
+		Size: 4.9 MB (4925722 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:643a460614005ad11ea4ebff6c1c6c2c3d5969d04c1431e8f6551dec9325168f`  
-		Last Modified: Thu, 17 Oct 2024 08:16:46 GMT  
-		Size: 15.7 KB (15655 bytes)  
+	-	`sha256:8e217df0c8d8f5e1faf9673f095f8f9aba92f099c9acbac503d373aef98acc8b`  
+		Last Modified: Sat, 19 Oct 2024 12:07:03 GMT  
+		Size: 15.8 KB (15831 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-tools-deps-1.12.0.1479-bullseye`
 
 ```console
-$ docker pull clojure@sha256:9a85b4eb32413622dd44f121ca238c92a7c4f981ff19f2419bfdf38552f9060b
+$ docker pull clojure@sha256:f9176d261612cc5a870f2f11fe460a0a81855d573a273afa3c516602a3ca9f82
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16320,13 +16320,13 @@ $ docker pull clojure@sha256:4392021b59e3446e110f31f7c2001b99a6669682ec6ecc7707e
 ### `clojure:temurin-17-tools-deps-1.12.0.1479-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:55e5437faef092d702e29a932098683a7474c922f17fbebcfa098d1d63285dc8
+$ docker pull clojure@sha256:a9a7d7cbd1189a24af05724a86291bcf3c14a40401c322940460b77b42500acf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **267.2 MB (267162253 bytes)**  
+-	Total Size: **267.2 MB (267162161 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:288089bccb07b6f66fca659a29b6b60e7b3593c53ccc5c97a92815b0237786d6`
+-	Image ID: `sha256:13d0ebcbe7233dd986b3a1381893d1f165ea225b02672fd5a4b7bb02e42e957a`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -16362,55 +16362,55 @@ CMD ["-M" "--repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da76e01f3707ded82e7b945d61706b260348263f460269d96f132d4d8081f901`  
-		Last Modified: Thu, 17 Oct 2024 08:13:51 GMT  
-		Size: 144.0 MB (143959463 bytes)  
+	-	`sha256:a2cc2b2c001a978151e3adbd8857a7faf4a55640f4e035b9bea7ab040128148f`  
+		Last Modified: Sat, 19 Oct 2024 12:02:26 GMT  
+		Size: 144.0 MB (143959478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ef05f7e7e527905b09476f4a3fe29502749eecb08b3b9603ce81dfd6f417f23`  
-		Last Modified: Thu, 17 Oct 2024 08:17:44 GMT  
-		Size: 69.5 MB (69466850 bytes)  
+	-	`sha256:4c17022cedcca4f23cf816ba34ca1dacb1bb37783c0f58d092c80d1b801bb9f4`  
+		Last Modified: Sat, 19 Oct 2024 12:08:03 GMT  
+		Size: 69.5 MB (69466747 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:732f5ea9ab2f27a7a144791bca811c23387dc3fe8700e1a3c8d01e677cd91779`  
-		Last Modified: Thu, 17 Oct 2024 08:17:42 GMT  
-		Size: 615.0 B  
+	-	`sha256:08d21457a1d2172342f8283652e739f93b4b7137a42f010f62671dd3741819cf`  
+		Last Modified: Sat, 19 Oct 2024 12:08:00 GMT  
+		Size: 612.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:681d187129331cbe66dbe5f563a1317d064310cfb8ccf698d4035eb0a7088084`  
-		Last Modified: Thu, 17 Oct 2024 08:17:42 GMT  
-		Size: 398.0 B  
+	-	`sha256:972c09a2931e6d7904d43e7cb3f623b33d29952d878535375226c6bedc7e4610`  
+		Last Modified: Sat, 19 Oct 2024 12:08:00 GMT  
+		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-tools-deps-1.12.0.1479-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:e498a5027d97cc4da72330190405d664b0a836e7bef3f4ec58cda429db3f3911
+$ docker pull clojure@sha256:241dbc3059ff796a27d2ed0fb2d8ea576a413f68e115b0e44d0596c4283feebd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7210140 bytes)**  
+-	Total Size: **7.2 MB (7236059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:994ba7fc780c6cf8c9747d8455de2c6e1cba2d2499c4aea8599d978489921080`
+-	Image ID: `sha256:78e65a128cd19a91d7f7df367563667fc1bce89828dc92b7938955a80064f6af`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:db8e632723edfadb1f0bf59965d542060d075c7f93cbd47b9ea7097ece989145`  
-		Last Modified: Thu, 17 Oct 2024 08:17:43 GMT  
-		Size: 7.2 MB (7194556 bytes)  
+	-	`sha256:a144d64ba4a0b825d7dc02ca4d1f090ec9e8235dc87359a0c4ac6c2f27a1edde`  
+		Last Modified: Sat, 19 Oct 2024 12:08:01 GMT  
+		Size: 7.2 MB (7220301 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7bdf4aa92c39a12743124d8407cd4d6a263c245da7f5073e51a1ec7a1af83c1a`  
-		Last Modified: Thu, 17 Oct 2024 08:17:42 GMT  
-		Size: 15.6 KB (15584 bytes)  
+	-	`sha256:a7ca6bd482d9e1345109ee23bad8c465935669d1b6b4721423571deb38df7929`  
+		Last Modified: Sat, 19 Oct 2024 12:08:00 GMT  
+		Size: 15.8 KB (15758 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-tools-deps-1.12.0.1479-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:42ec58853762b166a8ecf3ac4db6a68984fa56e19eca13d7fe8f234ef4cce5f8
+$ docker pull clojure@sha256:8bdd03b1aca47465c2ea210fbecb75c8be9c296454a5b2930b4cbef2fa575868
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16513,13 +16513,13 @@ $ docker pull clojure@sha256:a70913f10c50779913945855efb61135543517220bc46cd89c8
 ### `clojure:temurin-17-tools-deps-1.12.0.1479-bullseye-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:d8ad99c5a31c8e44be45a4ef13b00311fa843b0cb0d31c2c7730d1db70ede307
+$ docker pull clojure@sha256:3057bf59ad841303e095a7cea9a1b37f295e15d704c4c5322d5773a8ab42586f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.1 MB (233109594 bytes)**  
+-	Total Size: **233.1 MB (233109096 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:16d787a7361d3f3fd75452f50df9867b8b987544bbf788354f562ac95a1f8ab0`
+-	Image ID: `sha256:678d6a75582775df45caca752ca9587cf4d6fb16935af070c055e7797eb0a1a3`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -16555,55 +16555,55 @@ CMD ["-M" "--repl"]
 		Last Modified: Thu, 17 Oct 2024 01:15:14 GMT  
 		Size: 30.1 MB (30075757 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:414bb17c66e1a956e8e8cfbcd993934c289b1940da79f19f4baaede4b6a72b09`  
-		Last Modified: Thu, 17 Oct 2024 08:15:01 GMT  
-		Size: 144.0 MB (143959469 bytes)  
+	-	`sha256:60746b2d48dfb19e043609b9b09417ae53dbcb13af929a26fa77a66ad395af56`  
+		Last Modified: Sat, 19 Oct 2024 08:48:40 GMT  
+		Size: 144.0 MB (143959478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2e843b20dcbbcb8d26f7e23db89798c53bdfccf4af1db5665bbda7f438f530e`  
-		Last Modified: Thu, 17 Oct 2024 08:18:35 GMT  
-		Size: 59.1 MB (59073327 bytes)  
+	-	`sha256:1b6b3707f40fa3f13507c9fcf22dbc220a05a4b9ba0c11a7d3890db897f233f9`  
+		Last Modified: Sat, 19 Oct 2024 12:08:57 GMT  
+		Size: 59.1 MB (59072819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ce0c9c7f61f754523bcb3ce63bc47bac67e808339c35c6c267d49436d72904e`  
-		Last Modified: Thu, 17 Oct 2024 08:18:33 GMT  
+	-	`sha256:61eac767e0b14747926380cd33b795b2bbe5d074d5da95a8fcfe6ce83e8b7358`  
+		Last Modified: Sat, 19 Oct 2024 12:08:55 GMT  
 		Size: 613.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd3c96beb6d25f59136439d6a321a0a1a76e2c4e10bff405aa05a1d0c037eb22`  
-		Last Modified: Thu, 17 Oct 2024 08:18:33 GMT  
-		Size: 396.0 B  
+	-	`sha256:41c89a593d2586a9cbe578476aa584a54e6d14228b61cbaa340e5efc299d09ae`  
+		Last Modified: Sat, 19 Oct 2024 12:08:55 GMT  
+		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-tools-deps-1.12.0.1479-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:3acd074119c7253df3d35e67ed24e41a363f6d9a34ad0a49268cafe9b64c8cce
+$ docker pull clojure@sha256:eed7ed0cfa86703ffa786b3c44f65b0f91b085b785940a91f7e9e950f4518a95
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5120328 bytes)**  
+-	Total Size: **5.1 MB (5146248 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc0e32410969b82971f71845a60303ce0f5cfda098f443d5b6d45850531f0597`
+-	Image ID: `sha256:1b09b321b4c52bb765294dc39c291af31c6b2f4241a73c79c8de1e554b97ea89`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:af02ef773caf3edc2a1f586b3dea648f53b4d84780888b6bc64b7f4392db399e`  
-		Last Modified: Thu, 17 Oct 2024 08:18:34 GMT  
-		Size: 5.1 MB (5104672 bytes)  
+	-	`sha256:5b91a37a6a14357e3f45f4b107851c18f53dfb09db862a1fa68ed355ccd53a2c`  
+		Last Modified: Sat, 19 Oct 2024 12:08:56 GMT  
+		Size: 5.1 MB (5130417 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f7372095ed70985f524d3618e65979ecc63edb16b8193aa0f2aea7c0fd28d07a`  
-		Last Modified: Thu, 17 Oct 2024 08:18:33 GMT  
-		Size: 15.7 KB (15656 bytes)  
+	-	`sha256:7b5241fae364faea996811832af07be5daa68adf71f7b7e2873f801928cc6eec`  
+		Last Modified: Sat, 19 Oct 2024 12:08:55 GMT  
+		Size: 15.8 KB (15831 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-tools-deps-1.12.0.1479-jammy`
 
 ```console
-$ docker pull clojure@sha256:e226f59d414508a651d45a894f2837bdb1474b846afecc2832c39e8790cc1c50
+$ docker pull clojure@sha256:f9674fbdb264547aa7b939d1a845fe7c65363e9e98c019927c5a481ec87e1386
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16740,28 +16740,28 @@ $ docker pull clojure@sha256:0634379064e91530c48f4a58e62a5e6a34baade898537656f7c
 ### `clojure:temurin-17-tools-deps-1.12.0.1479-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:8b804ee2bb7632afdce2939de92ea8b6684dcb1c8e91fedf51bcabeb370a306a
+$ docker pull clojure@sha256:4921f003e462d0bab1914c76f4e63081c6926e41838dea53440c1fba76574f37
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.8 MB (242810401 bytes)**  
+-	Total Size: **241.8 MB (241786030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcfb7d1cc13d5f3622516119aebedbc6fb94e1ba0fcf7b0faedc24c136c53807`
+-	Image ID: `sha256:c6f8d5f09a80621b7693e680ecbb7a42b201bf6ccae99a0bf929179639daa3b7`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -16783,88 +16783,88 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV CLOJURE_VERSION=1.12.0.1479
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "94f29b9b66183bd58307c46fb561fd9e9148666bac13a4518a9931b6f989d830 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENTRYPOINT ["entrypoint"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["-M" "--repl"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21a0c08aee9ece74cacae8ca7dfbcf838605c1e8bf9ae4ef62a9bf1d407ca7dd`  
-		Last Modified: Tue, 17 Sep 2024 01:39:26 GMT  
-		Size: 18.8 MB (18827958 bytes)  
+	-	`sha256:4f4328c2660e2acfd7df28e6cce03f948be8bfd9bc327b3747dcbddc8199302b`  
+		Last Modified: Sat, 19 Oct 2024 05:36:25 GMT  
+		Size: 18.8 MB (18842272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c661676adabc448000bc17c531badb810755db643cdbd3b77bd5d6af1e70cea8`  
-		Last Modified: Tue, 17 Sep 2024 01:39:32 GMT  
-		Size: 144.0 MB (143967066 bytes)  
+	-	`sha256:1a6b4f156363cc8751d4ca24fe1b36d8f3c4fc0335ce6e49a8123255d79912f0`  
+		Last Modified: Sat, 19 Oct 2024 05:36:28 GMT  
+		Size: 144.0 MB (143967033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:635213e63d52c04685322883d25f6bb5f35e17073ffdc3cb41b45cb406e5c0d0`  
-		Last Modified: Tue, 17 Sep 2024 01:39:23 GMT  
-		Size: 172.0 B  
+	-	`sha256:d35a83363ff0741a526836ef065ab1bd42f1332ee3f997f5c2030f92a9c8c6ca`  
+		Last Modified: Sat, 19 Oct 2024 05:36:24 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1eb782c3b8f552eed1b4a6d0237ac6e9664eb6f27291f628c62fa4586b409055`  
-		Last Modified: Tue, 17 Sep 2024 01:39:23 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:f07c3705559939101aebca8ea7598e75955b991ff61cfce66869f1e790abd370`  
+		Last Modified: Sat, 19 Oct 2024 05:36:24 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:558811c399c07c4e2994d58fe7b74447b5ba3269de59de5d7d0d33355753aea1`  
-		Last Modified: Tue, 17 Sep 2024 04:39:46 GMT  
-		Size: 51.6 MB (51614944 bytes)  
+	-	`sha256:78d5f464f06c1d8099c8eb41a1465e3f46385302b33b12adf12e21dc95443b06`  
+		Last Modified: Sat, 19 Oct 2024 12:09:48 GMT  
+		Size: 51.6 MB (51615084 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4401298bcb97e14925d09a0120779bf8f2ec3bb6a4bc86f6de9af53ca3014e91`  
-		Last Modified: Tue, 17 Sep 2024 04:39:44 GMT  
+	-	`sha256:3ee11607757fca0e662a86ef8bf8d0b32ac32bb72df679fd18d7784269225a89`  
+		Last Modified: Sat, 19 Oct 2024 12:09:46 GMT  
 		Size: 615.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922919db85c45334b954f10e648de04a846a24bfb72c4ea6ca11715dbe48c871`  
-		Last Modified: Tue, 17 Sep 2024 04:39:44 GMT  
+	-	`sha256:cb2561525c064792f20dfc6db20c10e04161cbeb34b0b4cf47fd9051a8fcf1b7`  
+		Last Modified: Sat, 19 Oct 2024 12:09:46 GMT  
 		Size: 399.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-tools-deps-1.12.0.1479-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9e24393dc32244f9648091515b327421b310d6d4353c703ab1cc6096a1585527
+$ docker pull clojure@sha256:281e2a431e734ea20915fa0022db064b448a33f0903020077ed538b5d24e2529
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 MB (6031950 bytes)**  
+-	Total Size: **6.2 MB (6214230 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:29c9cebd9a91cd0d961aaf787ac5d2e5d55c7e142912235f8a2b55e9a86c3abc`
+-	Image ID: `sha256:0aea6414a2539555d3b1ec47b89cfbae95c495890955b8c26b22d3f500b8c2b1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d428e53b31b1fba82320bf9fc4053fc2e0318b79334c8b91e55ea83c80a7a27e`  
-		Last Modified: Tue, 17 Sep 2024 04:39:45 GMT  
-		Size: 6.0 MB (6015406 bytes)  
+	-	`sha256:281e6536c73d03467bffdbc09efd5a4cf2d1358bb084f5e95b789f0140c520aa`  
+		Last Modified: Sat, 19 Oct 2024 12:09:47 GMT  
+		Size: 6.2 MB (6197843 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:41e24a1b9e991500841c11a0943aa1b7161293e3179cea8dcf937c2e9b7c84f3`  
-		Last Modified: Tue, 17 Sep 2024 04:39:44 GMT  
-		Size: 16.5 KB (16544 bytes)  
+	-	`sha256:5bc0e61680fc60623769b9646c851a1a0e165fbb9e9814588e53e13e9c0d9aed`  
+		Last Modified: Sat, 19 Oct 2024 12:09:46 GMT  
+		Size: 16.4 KB (16387 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-tools-deps-1.12.0.1479-noble`
 
 ```console
-$ docker pull clojure@sha256:97c6d55b7fb7996d68989da76cb39979645c01a9388356a0cebca1be4b399169
+$ docker pull clojure@sha256:0537d1bf48302199307236ec7dc255e3bbec52a86a60903d642958794a8dca8f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17001,28 +17001,28 @@ $ docker pull clojure@sha256:34961e429e28ed6f7087a54de133a9afbdedbb08c79458f9dde
 ### `clojure:temurin-17-tools-deps-1.12.0.1479-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:832ae85582c8a4e4dab20d56b570f815ae8f822d50c713863fe890690a7877cc
+$ docker pull clojure@sha256:eab5d822ae6cad4abc21fd1db34837e8500a31031f0c4fa7d8b5d136677f01a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **250.8 MB (250826255 bytes)**  
+-	Total Size: **249.8 MB (249757153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:507a5a047788297b416c6eac006067675aadda1c54e126f0236a7eb748d4d3fb`
+-	Image ID: `sha256:b15f1dfd3ca7570ffc7448d6d043b1441ae1d48d2d10fc82c1effae975cd11c0`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -17061,65 +17061,65 @@ CMD ["-M" "--repl"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a198149501abf09f7d2065dde4b2ebc6eafd97bb9331b52d06c6b2a199992128`  
-		Last Modified: Wed, 16 Oct 2024 01:17:59 GMT  
-		Size: 21.0 MB (20963830 bytes)  
+	-	`sha256:0a84341aaf3e356e3e4f81c1bdab6100eb048d95139a0fba28fc288df8b7742d`  
+		Last Modified: Sat, 19 Oct 2024 05:37:32 GMT  
+		Size: 21.0 MB (20961983 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f7c3a3ae1b154c201f07cd31ae2fc5c9e476ef5288e7bdcd9bd655af67f021c`  
-		Last Modified: Wed, 16 Oct 2024 01:18:05 GMT  
-		Size: 144.0 MB (143967360 bytes)  
+	-	`sha256:f3d56e0f8f2a24e92989ba0e168ea5f1fd74968cfff5683fb85fcdc860623682`  
+		Last Modified: Sat, 19 Oct 2024 05:37:35 GMT  
+		Size: 144.0 MB (143967366 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aca5eeb60cbc15f8d34e31c2019f436146fc0e6775f438d80a3cded9cc71e0c8`  
-		Last Modified: Wed, 16 Oct 2024 01:17:56 GMT  
-		Size: 172.0 B  
+	-	`sha256:e45d8dbae1ab4eb805cc510c6fe8293df5a7eafaf144f0ff8868620277ed108f`  
+		Last Modified: Sat, 19 Oct 2024 05:37:31 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da83ed8a8274d91d5ca49ea90113a398dfa850263230bc9ed0e77d7eaf978170`  
-		Last Modified: Wed, 16 Oct 2024 01:17:56 GMT  
+	-	`sha256:df0ade22b6a30f22791c6e4d7f013e98995427b5b1d8698be3ba76a6532091b5`  
+		Last Modified: Sat, 19 Oct 2024 05:37:31 GMT  
 		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c484eaf2f2487d72c75a56ccc4dc5d99964991f7a7d041f0eebfa588a31fe73`  
-		Last Modified: Wed, 16 Oct 2024 02:31:03 GMT  
-		Size: 55.9 MB (55938937 bytes)  
+	-	`sha256:e92d2704877efed0a745661092e5a0f9133e22a74c1765bff26ce23898211d10`  
+		Last Modified: Sat, 19 Oct 2024 12:10:34 GMT  
+		Size: 55.9 MB (55938652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a53fcb28799de2edef3816c035592de9b1b5de9ff28dd3529521479567e7a510`  
-		Last Modified: Wed, 16 Oct 2024 02:31:01 GMT  
-		Size: 615.0 B  
+	-	`sha256:44ec1a384d5b3f2418ce84b23e13257a36c71f0d71da7a58764cfc428649d6c3`  
+		Last Modified: Sat, 19 Oct 2024 12:10:32 GMT  
+		Size: 613.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06c620e1e717cecbfd66d5f0fbfb6b5ab5f4e618cbda41ba0a786b109e06a938`  
-		Last Modified: Wed, 16 Oct 2024 02:31:01 GMT  
-		Size: 398.0 B  
+	-	`sha256:88de8099e66933113863a0b4acf38eeeb93c8128d5e9a07e6d7a35a74cfe2cc5`  
+		Last Modified: Sat, 19 Oct 2024 12:10:32 GMT  
+		Size: 396.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-tools-deps-1.12.0.1479-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9af40ff1c5906932e584c7e2dc7cd943149db2c5abe9dff63148484e06e5a09c
+$ docker pull clojure@sha256:d326e479007f52c2a43e42eeb6f0cad1426b513ef265e44948549c4df4d831eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5712971 bytes)**  
+-	Total Size: **5.7 MB (5740966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d69e731bd4308876eb61b12df79cf19e43a4fdfc8974d25cab18423ccf94eda3`
+-	Image ID: `sha256:8f06283026072df228bf3254702cdad27d0103f1b73804a667bacb0894f5f40d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a94ecc8a021c9547bc75d6cc7535994301c96a83c23f18e25fdd6b5180fad895`  
-		Last Modified: Wed, 16 Oct 2024 02:31:01 GMT  
-		Size: 5.7 MB (5697316 bytes)  
+	-	`sha256:98f92ce170da9ca1b0c7b5be1a1435c00ae8e858f14e320b885adf30daa08c8f`  
+		Last Modified: Sat, 19 Oct 2024 12:10:33 GMT  
+		Size: 5.7 MB (5725287 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a7901ea54a2ffef69693fa47f905f60cd0e87899651d047b45a49227626ca160`  
-		Last Modified: Wed, 16 Oct 2024 02:31:00 GMT  
-		Size: 15.7 KB (15655 bytes)  
+	-	`sha256:f09eb3fff2ff142572884e8fd0fee233086e8856628831e05817c666063379d4`  
+		Last Modified: Sat, 19 Oct 2024 12:10:32 GMT  
+		Size: 15.7 KB (15679 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-tools-deps-alpine`
@@ -17252,7 +17252,7 @@ $ docker pull clojure@sha256:91c33d8e202912975a6759f365168381ead47c234186af456c7
 ## `clojure:temurin-17-tools-deps-bookworm`
 
 ```console
-$ docker pull clojure@sha256:f22d9c0320f619a5914801b1b402140ba00d543048f8b0dce8de971166d649f0
+$ docker pull clojure@sha256:3040268d6b74f3816993cb58035f938d8857524dcff9aab0d111707ef418f1a0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17355,13 +17355,13 @@ $ docker pull clojure@sha256:c8aa0b4e811ceb5994e36f3ed316f396b886fe50089756f4843
 ### `clojure:temurin-17-tools-deps-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:320bf0f1c96f0558dad596e0cc903f93c984bb4ab16583589889045a93735d2f
+$ docker pull clojure@sha256:dfe23b482395c88b2b2eb5ca76edd11b2ddd122ef8170f946862a7f2aa3fedf9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **274.3 MB (274335545 bytes)**  
+-	Total Size: **274.3 MB (274335776 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3271405a1bdf6c78265d374b6e50fafdd48c4b2b271b0762db28d260df5c4587`
+-	Image ID: `sha256:d1bc7c4315bd97bfab60de7aa210fb5a6b69e2ff05a99b1d548666f6158c27d9`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -17397,55 +17397,55 @@ CMD ["-M" "--repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:19 GMT  
 		Size: 49.6 MB (49584978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af79cbd2bebb502c38437b7b81f3b9697a59e5f45be49cd74b73bdf63f10ac08`  
-		Last Modified: Thu, 17 Oct 2024 08:11:33 GMT  
-		Size: 144.0 MB (143959476 bytes)  
+	-	`sha256:237653f214e6df6277c7b47d5a245880430d05230855ce95f46023867b57c6a8`  
+		Last Modified: Sat, 19 Oct 2024 12:00:15 GMT  
+		Size: 144.0 MB (143959441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7d8e70c0e27f916331f49a283267e3e257bbdf87e572c6f36ce5027dad023c85`  
-		Last Modified: Thu, 17 Oct 2024 08:15:51 GMT  
-		Size: 80.8 MB (80790050 bytes)  
+	-	`sha256:055062ba45f591db1d3e3c43ac3f6e853fa2bbcd837e7bccdf575a2c8de5edd6`  
+		Last Modified: Sat, 19 Oct 2024 12:06:07 GMT  
+		Size: 80.8 MB (80790316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f3f670afbf9852f5caceb4280e54536843c50f984fe64afd5e4f5dc1bff5ab2`  
-		Last Modified: Thu, 17 Oct 2024 08:15:49 GMT  
+	-	`sha256:20b82ae0d3a52f4f4588e6ec2cd6867dce6f8015031368a7deefc3e8bce4d450`  
+		Last Modified: Sat, 19 Oct 2024 12:06:05 GMT  
 		Size: 613.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:acc01a5b0dc85d191e594ef288946e0cde25e66fadaa921e675ebbb4c939e6dc`  
-		Last Modified: Thu, 17 Oct 2024 08:15:49 GMT  
+	-	`sha256:a76a73437d6d89e691c58d742519591415ab884ed32124247d617325a3e827d6`  
+		Last Modified: Sat, 19 Oct 2024 12:06:05 GMT  
 		Size: 396.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-tools-deps-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9bdae866eae3728f33ab5557871366e3209df9edc39486c02ba4e6f7892abceb
+$ docker pull clojure@sha256:b64633c06bad5aec7d3c86e7e80262233a39baa78dbb039e76349fa70625b917
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7177357 bytes)**  
+-	Total Size: **7.2 MB (7203277 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2fb84bda3159213a82c8a544fc3b2371dbe29dd355b1ddcf35cf8e9759214f43`
+-	Image ID: `sha256:a471219ba18623fc37ba4b007518cb0ea94e181ad46b29d091ee0b12eb169bff`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c3cf51aef7296fb3b4bc39e303a252ec86f17fdfe890a065e8c2e173a9aa287f`  
-		Last Modified: Thu, 17 Oct 2024 08:15:50 GMT  
-		Size: 7.2 MB (7161774 bytes)  
+	-	`sha256:d62938ec6ef1ee16a047d51e89df78d3a49c03dd21f257559ecf7d574f73fc05`  
+		Last Modified: Sat, 19 Oct 2024 12:06:06 GMT  
+		Size: 7.2 MB (7187519 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f0003de83cdb8d2ad0e8680f26595217fdf942e8bdd548a25a805bb72f3c7d25`  
-		Last Modified: Thu, 17 Oct 2024 08:15:49 GMT  
-		Size: 15.6 KB (15583 bytes)  
+	-	`sha256:6adc214802212035ccb7662a80f8eb62661c5fa9d5c1c4373801c9f44df26b7a`  
+		Last Modified: Sat, 19 Oct 2024 12:06:05 GMT  
+		Size: 15.8 KB (15758 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-tools-deps-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:2731f09f2090bcb4d3bd93153b3020d9b5ba9b27c0ca3b9dbba21d67af936721
+$ docker pull clojure@sha256:9331bf9fe82064e23be4a312ece162b792c708e0b22d706e8479574a6fd6d8ae
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17548,13 +17548,13 @@ $ docker pull clojure@sha256:e81ce1009d2648d7090b5f7bcbd5f689ede478869999ee65857
 ### `clojure:temurin-17-tools-deps-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:d20d421dea8ac18cf0213a9b81cd0d68654e4a2e13450f71a9cf187298dc28af
+$ docker pull clojure@sha256:fb9d8c23e2a1ce869e88bb1b441892ca3aa35e4df253752ab6058d2dc3094985
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.5 MB (242462063 bytes)**  
+-	Total Size: **242.5 MB (242462082 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d36cd000afa7e4bf1273a102beade95f67c0e10f7e6a3b61553c161463aef3ff`
+-	Image ID: `sha256:e44fb865b2aaa315b7483bb94da81bc8619d7edb79b7f3666548ce85d28ce4f8`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -17590,55 +17590,55 @@ CMD ["-M" "--repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:39 GMT  
 		Size: 29.2 MB (29156341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:467c862b0e10aff6a74318a3baf39f91f14902d551963d4cac1c395597956120`  
-		Last Modified: Thu, 17 Oct 2024 08:12:42 GMT  
-		Size: 144.0 MB (143959463 bytes)  
+	-	`sha256:de3d0b3b90758f2da033069b4131178bf4a6c1fd6b5c07637d01ad797ebbc059`  
+		Last Modified: Sat, 19 Oct 2024 12:01:24 GMT  
+		Size: 144.0 MB (143959478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf77ef51da65e55f40f4febaf475a8c3f6ac8ca4bab6afbb717037520a6ad9b2`  
-		Last Modified: Thu, 17 Oct 2024 08:16:48 GMT  
-		Size: 69.3 MB (69345219 bytes)  
+	-	`sha256:a19a53bede711a73d711f78a5875568f585e33a1680fc0502989caa1755aabc6`  
+		Last Modified: Sat, 19 Oct 2024 12:07:06 GMT  
+		Size: 69.3 MB (69345220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe1f02fcad5fe0c361a480d0ff6aa4902ba626e83f841579243d69ead7b6dea5`  
-		Last Modified: Thu, 17 Oct 2024 08:16:46 GMT  
-		Size: 612.0 B  
+	-	`sha256:9384ae5514225f769fbaec02e8f68ab620696eda9a307d106d721964af5c7e46`  
+		Last Modified: Sat, 19 Oct 2024 12:07:04 GMT  
+		Size: 614.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3182514c12b3d07ab0efdf12c5036864af593a7cf6c2f9ca0e5f39058e7b4afc`  
-		Last Modified: Thu, 17 Oct 2024 08:16:46 GMT  
-		Size: 396.0 B  
+	-	`sha256:addec6defb3687a06501984a9f0acfe51c068356ccaba0a5104cc5cdc78db699`  
+		Last Modified: Sat, 19 Oct 2024 12:07:04 GMT  
+		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-tools-deps-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:668a69cfa85b56fc0487f530f1bc0011ef5c98c5c7aa151b0a643d60ce57d61c
+$ docker pull clojure@sha256:935fae79d57879929b2e392544ce5da71b0fe9df544326a237e39fecf317ca2f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4915632 bytes)**  
+-	Total Size: **4.9 MB (4941553 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:590805ca798a222ab03f2cc1ace1a9936d3dde3fe2757b3f44b0821c7db6032e`
+-	Image ID: `sha256:5c81393935f2afbee6bc7d3fb21903e174ce869eddb65fba68bb4547db4fe0ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b9c82f92d1b936d4bc57063c73926ef3bd67c9a9e68f21fd6983cd804f9e0e0a`  
-		Last Modified: Thu, 17 Oct 2024 08:16:46 GMT  
-		Size: 4.9 MB (4899977 bytes)  
+	-	`sha256:752de58dd36660cbf8e0aade1a9aae2aed8d493cc78b45f441592bba0961cd93`  
+		Last Modified: Sat, 19 Oct 2024 12:07:04 GMT  
+		Size: 4.9 MB (4925722 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:643a460614005ad11ea4ebff6c1c6c2c3d5969d04c1431e8f6551dec9325168f`  
-		Last Modified: Thu, 17 Oct 2024 08:16:46 GMT  
-		Size: 15.7 KB (15655 bytes)  
+	-	`sha256:8e217df0c8d8f5e1faf9673f095f8f9aba92f099c9acbac503d373aef98acc8b`  
+		Last Modified: Sat, 19 Oct 2024 12:07:03 GMT  
+		Size: 15.8 KB (15831 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-tools-deps-bullseye`
 
 ```console
-$ docker pull clojure@sha256:9a85b4eb32413622dd44f121ca238c92a7c4f981ff19f2419bfdf38552f9060b
+$ docker pull clojure@sha256:f9176d261612cc5a870f2f11fe460a0a81855d573a273afa3c516602a3ca9f82
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17741,13 +17741,13 @@ $ docker pull clojure@sha256:4392021b59e3446e110f31f7c2001b99a6669682ec6ecc7707e
 ### `clojure:temurin-17-tools-deps-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:55e5437faef092d702e29a932098683a7474c922f17fbebcfa098d1d63285dc8
+$ docker pull clojure@sha256:a9a7d7cbd1189a24af05724a86291bcf3c14a40401c322940460b77b42500acf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **267.2 MB (267162253 bytes)**  
+-	Total Size: **267.2 MB (267162161 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:288089bccb07b6f66fca659a29b6b60e7b3593c53ccc5c97a92815b0237786d6`
+-	Image ID: `sha256:13d0ebcbe7233dd986b3a1381893d1f165ea225b02672fd5a4b7bb02e42e957a`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -17783,55 +17783,55 @@ CMD ["-M" "--repl"]
 		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
 		Size: 53.7 MB (53734895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da76e01f3707ded82e7b945d61706b260348263f460269d96f132d4d8081f901`  
-		Last Modified: Thu, 17 Oct 2024 08:13:51 GMT  
-		Size: 144.0 MB (143959463 bytes)  
+	-	`sha256:a2cc2b2c001a978151e3adbd8857a7faf4a55640f4e035b9bea7ab040128148f`  
+		Last Modified: Sat, 19 Oct 2024 12:02:26 GMT  
+		Size: 144.0 MB (143959478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ef05f7e7e527905b09476f4a3fe29502749eecb08b3b9603ce81dfd6f417f23`  
-		Last Modified: Thu, 17 Oct 2024 08:17:44 GMT  
-		Size: 69.5 MB (69466850 bytes)  
+	-	`sha256:4c17022cedcca4f23cf816ba34ca1dacb1bb37783c0f58d092c80d1b801bb9f4`  
+		Last Modified: Sat, 19 Oct 2024 12:08:03 GMT  
+		Size: 69.5 MB (69466747 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:732f5ea9ab2f27a7a144791bca811c23387dc3fe8700e1a3c8d01e677cd91779`  
-		Last Modified: Thu, 17 Oct 2024 08:17:42 GMT  
-		Size: 615.0 B  
+	-	`sha256:08d21457a1d2172342f8283652e739f93b4b7137a42f010f62671dd3741819cf`  
+		Last Modified: Sat, 19 Oct 2024 12:08:00 GMT  
+		Size: 612.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:681d187129331cbe66dbe5f563a1317d064310cfb8ccf698d4035eb0a7088084`  
-		Last Modified: Thu, 17 Oct 2024 08:17:42 GMT  
-		Size: 398.0 B  
+	-	`sha256:972c09a2931e6d7904d43e7cb3f623b33d29952d878535375226c6bedc7e4610`  
+		Last Modified: Sat, 19 Oct 2024 12:08:00 GMT  
+		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-tools-deps-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:e498a5027d97cc4da72330190405d664b0a836e7bef3f4ec58cda429db3f3911
+$ docker pull clojure@sha256:241dbc3059ff796a27d2ed0fb2d8ea576a413f68e115b0e44d0596c4283feebd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7210140 bytes)**  
+-	Total Size: **7.2 MB (7236059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:994ba7fc780c6cf8c9747d8455de2c6e1cba2d2499c4aea8599d978489921080`
+-	Image ID: `sha256:78e65a128cd19a91d7f7df367563667fc1bce89828dc92b7938955a80064f6af`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:db8e632723edfadb1f0bf59965d542060d075c7f93cbd47b9ea7097ece989145`  
-		Last Modified: Thu, 17 Oct 2024 08:17:43 GMT  
-		Size: 7.2 MB (7194556 bytes)  
+	-	`sha256:a144d64ba4a0b825d7dc02ca4d1f090ec9e8235dc87359a0c4ac6c2f27a1edde`  
+		Last Modified: Sat, 19 Oct 2024 12:08:01 GMT  
+		Size: 7.2 MB (7220301 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7bdf4aa92c39a12743124d8407cd4d6a263c245da7f5073e51a1ec7a1af83c1a`  
-		Last Modified: Thu, 17 Oct 2024 08:17:42 GMT  
-		Size: 15.6 KB (15584 bytes)  
+	-	`sha256:a7ca6bd482d9e1345109ee23bad8c465935669d1b6b4721423571deb38df7929`  
+		Last Modified: Sat, 19 Oct 2024 12:08:00 GMT  
+		Size: 15.8 KB (15758 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-tools-deps-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:42ec58853762b166a8ecf3ac4db6a68984fa56e19eca13d7fe8f234ef4cce5f8
+$ docker pull clojure@sha256:8bdd03b1aca47465c2ea210fbecb75c8be9c296454a5b2930b4cbef2fa575868
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17934,13 +17934,13 @@ $ docker pull clojure@sha256:a70913f10c50779913945855efb61135543517220bc46cd89c8
 ### `clojure:temurin-17-tools-deps-bullseye-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:d8ad99c5a31c8e44be45a4ef13b00311fa843b0cb0d31c2c7730d1db70ede307
+$ docker pull clojure@sha256:3057bf59ad841303e095a7cea9a1b37f295e15d704c4c5322d5773a8ab42586f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **233.1 MB (233109594 bytes)**  
+-	Total Size: **233.1 MB (233109096 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:16d787a7361d3f3fd75452f50df9867b8b987544bbf788354f562ac95a1f8ab0`
+-	Image ID: `sha256:678d6a75582775df45caca752ca9587cf4d6fb16935af070c055e7797eb0a1a3`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
@@ -17976,55 +17976,55 @@ CMD ["-M" "--repl"]
 		Last Modified: Thu, 17 Oct 2024 01:15:14 GMT  
 		Size: 30.1 MB (30075757 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:414bb17c66e1a956e8e8cfbcd993934c289b1940da79f19f4baaede4b6a72b09`  
-		Last Modified: Thu, 17 Oct 2024 08:15:01 GMT  
-		Size: 144.0 MB (143959469 bytes)  
+	-	`sha256:60746b2d48dfb19e043609b9b09417ae53dbcb13af929a26fa77a66ad395af56`  
+		Last Modified: Sat, 19 Oct 2024 08:48:40 GMT  
+		Size: 144.0 MB (143959478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2e843b20dcbbcb8d26f7e23db89798c53bdfccf4af1db5665bbda7f438f530e`  
-		Last Modified: Thu, 17 Oct 2024 08:18:35 GMT  
-		Size: 59.1 MB (59073327 bytes)  
+	-	`sha256:1b6b3707f40fa3f13507c9fcf22dbc220a05a4b9ba0c11a7d3890db897f233f9`  
+		Last Modified: Sat, 19 Oct 2024 12:08:57 GMT  
+		Size: 59.1 MB (59072819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ce0c9c7f61f754523bcb3ce63bc47bac67e808339c35c6c267d49436d72904e`  
-		Last Modified: Thu, 17 Oct 2024 08:18:33 GMT  
+	-	`sha256:61eac767e0b14747926380cd33b795b2bbe5d074d5da95a8fcfe6ce83e8b7358`  
+		Last Modified: Sat, 19 Oct 2024 12:08:55 GMT  
 		Size: 613.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd3c96beb6d25f59136439d6a321a0a1a76e2c4e10bff405aa05a1d0c037eb22`  
-		Last Modified: Thu, 17 Oct 2024 08:18:33 GMT  
-		Size: 396.0 B  
+	-	`sha256:41c89a593d2586a9cbe578476aa584a54e6d14228b61cbaa340e5efc299d09ae`  
+		Last Modified: Sat, 19 Oct 2024 12:08:55 GMT  
+		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-tools-deps-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:3acd074119c7253df3d35e67ed24e41a363f6d9a34ad0a49268cafe9b64c8cce
+$ docker pull clojure@sha256:eed7ed0cfa86703ffa786b3c44f65b0f91b085b785940a91f7e9e950f4518a95
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5120328 bytes)**  
+-	Total Size: **5.1 MB (5146248 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc0e32410969b82971f71845a60303ce0f5cfda098f443d5b6d45850531f0597`
+-	Image ID: `sha256:1b09b321b4c52bb765294dc39c291af31c6b2f4241a73c79c8de1e554b97ea89`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:af02ef773caf3edc2a1f586b3dea648f53b4d84780888b6bc64b7f4392db399e`  
-		Last Modified: Thu, 17 Oct 2024 08:18:34 GMT  
-		Size: 5.1 MB (5104672 bytes)  
+	-	`sha256:5b91a37a6a14357e3f45f4b107851c18f53dfb09db862a1fa68ed355ccd53a2c`  
+		Last Modified: Sat, 19 Oct 2024 12:08:56 GMT  
+		Size: 5.1 MB (5130417 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f7372095ed70985f524d3618e65979ecc63edb16b8193aa0f2aea7c0fd28d07a`  
-		Last Modified: Thu, 17 Oct 2024 08:18:33 GMT  
-		Size: 15.7 KB (15656 bytes)  
+	-	`sha256:7b5241fae364faea996811832af07be5daa68adf71f7b7e2873f801928cc6eec`  
+		Last Modified: Sat, 19 Oct 2024 12:08:55 GMT  
+		Size: 15.8 KB (15831 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-tools-deps-jammy`
 
 ```console
-$ docker pull clojure@sha256:e226f59d414508a651d45a894f2837bdb1474b846afecc2832c39e8790cc1c50
+$ docker pull clojure@sha256:f9674fbdb264547aa7b939d1a845fe7c65363e9e98c019927c5a481ec87e1386
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18161,28 +18161,28 @@ $ docker pull clojure@sha256:0634379064e91530c48f4a58e62a5e6a34baade898537656f7c
 ### `clojure:temurin-17-tools-deps-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:8b804ee2bb7632afdce2939de92ea8b6684dcb1c8e91fedf51bcabeb370a306a
+$ docker pull clojure@sha256:4921f003e462d0bab1914c76f4e63081c6926e41838dea53440c1fba76574f37
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.8 MB (242810401 bytes)**  
+-	Total Size: **241.8 MB (241786030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcfb7d1cc13d5f3622516119aebedbc6fb94e1ba0fcf7b0faedc24c136c53807`
+-	Image ID: `sha256:c6f8d5f09a80621b7693e680ecbb7a42b201bf6ccae99a0bf929179639daa3b7`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -18204,88 +18204,88 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV CLOJURE_VERSION=1.12.0.1479
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "94f29b9b66183bd58307c46fb561fd9e9148666bac13a4518a9931b6f989d830 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENTRYPOINT ["entrypoint"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["-M" "--repl"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21a0c08aee9ece74cacae8ca7dfbcf838605c1e8bf9ae4ef62a9bf1d407ca7dd`  
-		Last Modified: Tue, 17 Sep 2024 01:39:26 GMT  
-		Size: 18.8 MB (18827958 bytes)  
+	-	`sha256:4f4328c2660e2acfd7df28e6cce03f948be8bfd9bc327b3747dcbddc8199302b`  
+		Last Modified: Sat, 19 Oct 2024 05:36:25 GMT  
+		Size: 18.8 MB (18842272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c661676adabc448000bc17c531badb810755db643cdbd3b77bd5d6af1e70cea8`  
-		Last Modified: Tue, 17 Sep 2024 01:39:32 GMT  
-		Size: 144.0 MB (143967066 bytes)  
+	-	`sha256:1a6b4f156363cc8751d4ca24fe1b36d8f3c4fc0335ce6e49a8123255d79912f0`  
+		Last Modified: Sat, 19 Oct 2024 05:36:28 GMT  
+		Size: 144.0 MB (143967033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:635213e63d52c04685322883d25f6bb5f35e17073ffdc3cb41b45cb406e5c0d0`  
-		Last Modified: Tue, 17 Sep 2024 01:39:23 GMT  
-		Size: 172.0 B  
+	-	`sha256:d35a83363ff0741a526836ef065ab1bd42f1332ee3f997f5c2030f92a9c8c6ca`  
+		Last Modified: Sat, 19 Oct 2024 05:36:24 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1eb782c3b8f552eed1b4a6d0237ac6e9664eb6f27291f628c62fa4586b409055`  
-		Last Modified: Tue, 17 Sep 2024 01:39:23 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:f07c3705559939101aebca8ea7598e75955b991ff61cfce66869f1e790abd370`  
+		Last Modified: Sat, 19 Oct 2024 05:36:24 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:558811c399c07c4e2994d58fe7b74447b5ba3269de59de5d7d0d33355753aea1`  
-		Last Modified: Tue, 17 Sep 2024 04:39:46 GMT  
-		Size: 51.6 MB (51614944 bytes)  
+	-	`sha256:78d5f464f06c1d8099c8eb41a1465e3f46385302b33b12adf12e21dc95443b06`  
+		Last Modified: Sat, 19 Oct 2024 12:09:48 GMT  
+		Size: 51.6 MB (51615084 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4401298bcb97e14925d09a0120779bf8f2ec3bb6a4bc86f6de9af53ca3014e91`  
-		Last Modified: Tue, 17 Sep 2024 04:39:44 GMT  
+	-	`sha256:3ee11607757fca0e662a86ef8bf8d0b32ac32bb72df679fd18d7784269225a89`  
+		Last Modified: Sat, 19 Oct 2024 12:09:46 GMT  
 		Size: 615.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922919db85c45334b954f10e648de04a846a24bfb72c4ea6ca11715dbe48c871`  
-		Last Modified: Tue, 17 Sep 2024 04:39:44 GMT  
+	-	`sha256:cb2561525c064792f20dfc6db20c10e04161cbeb34b0b4cf47fd9051a8fcf1b7`  
+		Last Modified: Sat, 19 Oct 2024 12:09:46 GMT  
 		Size: 399.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-tools-deps-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9e24393dc32244f9648091515b327421b310d6d4353c703ab1cc6096a1585527
+$ docker pull clojure@sha256:281e2a431e734ea20915fa0022db064b448a33f0903020077ed538b5d24e2529
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 MB (6031950 bytes)**  
+-	Total Size: **6.2 MB (6214230 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:29c9cebd9a91cd0d961aaf787ac5d2e5d55c7e142912235f8a2b55e9a86c3abc`
+-	Image ID: `sha256:0aea6414a2539555d3b1ec47b89cfbae95c495890955b8c26b22d3f500b8c2b1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d428e53b31b1fba82320bf9fc4053fc2e0318b79334c8b91e55ea83c80a7a27e`  
-		Last Modified: Tue, 17 Sep 2024 04:39:45 GMT  
-		Size: 6.0 MB (6015406 bytes)  
+	-	`sha256:281e6536c73d03467bffdbc09efd5a4cf2d1358bb084f5e95b789f0140c520aa`  
+		Last Modified: Sat, 19 Oct 2024 12:09:47 GMT  
+		Size: 6.2 MB (6197843 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:41e24a1b9e991500841c11a0943aa1b7161293e3179cea8dcf937c2e9b7c84f3`  
-		Last Modified: Tue, 17 Sep 2024 04:39:44 GMT  
-		Size: 16.5 KB (16544 bytes)  
+	-	`sha256:5bc0e61680fc60623769b9646c851a1a0e165fbb9e9814588e53e13e9c0d9aed`  
+		Last Modified: Sat, 19 Oct 2024 12:09:46 GMT  
+		Size: 16.4 KB (16387 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-17-tools-deps-noble`
 
 ```console
-$ docker pull clojure@sha256:97c6d55b7fb7996d68989da76cb39979645c01a9388356a0cebca1be4b399169
+$ docker pull clojure@sha256:0537d1bf48302199307236ec7dc255e3bbec52a86a60903d642958794a8dca8f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18422,28 +18422,28 @@ $ docker pull clojure@sha256:34961e429e28ed6f7087a54de133a9afbdedbb08c79458f9dde
 ### `clojure:temurin-17-tools-deps-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:832ae85582c8a4e4dab20d56b570f815ae8f822d50c713863fe890690a7877cc
+$ docker pull clojure@sha256:eab5d822ae6cad4abc21fd1db34837e8500a31031f0c4fa7d8b5d136677f01a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **250.8 MB (250826255 bytes)**  
+-	Total Size: **249.8 MB (249757153 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:507a5a047788297b416c6eac006067675aadda1c54e126f0236a7eb748d4d3fb`
+-	Image ID: `sha256:b15f1dfd3ca7570ffc7448d6d043b1441ae1d48d2d10fc82c1effae975cd11c0`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -18482,65 +18482,65 @@ CMD ["-M" "--repl"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a198149501abf09f7d2065dde4b2ebc6eafd97bb9331b52d06c6b2a199992128`  
-		Last Modified: Wed, 16 Oct 2024 01:17:59 GMT  
-		Size: 21.0 MB (20963830 bytes)  
+	-	`sha256:0a84341aaf3e356e3e4f81c1bdab6100eb048d95139a0fba28fc288df8b7742d`  
+		Last Modified: Sat, 19 Oct 2024 05:37:32 GMT  
+		Size: 21.0 MB (20961983 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f7c3a3ae1b154c201f07cd31ae2fc5c9e476ef5288e7bdcd9bd655af67f021c`  
-		Last Modified: Wed, 16 Oct 2024 01:18:05 GMT  
-		Size: 144.0 MB (143967360 bytes)  
+	-	`sha256:f3d56e0f8f2a24e92989ba0e168ea5f1fd74968cfff5683fb85fcdc860623682`  
+		Last Modified: Sat, 19 Oct 2024 05:37:35 GMT  
+		Size: 144.0 MB (143967366 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aca5eeb60cbc15f8d34e31c2019f436146fc0e6775f438d80a3cded9cc71e0c8`  
-		Last Modified: Wed, 16 Oct 2024 01:17:56 GMT  
-		Size: 172.0 B  
+	-	`sha256:e45d8dbae1ab4eb805cc510c6fe8293df5a7eafaf144f0ff8868620277ed108f`  
+		Last Modified: Sat, 19 Oct 2024 05:37:31 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da83ed8a8274d91d5ca49ea90113a398dfa850263230bc9ed0e77d7eaf978170`  
-		Last Modified: Wed, 16 Oct 2024 01:17:56 GMT  
+	-	`sha256:df0ade22b6a30f22791c6e4d7f013e98995427b5b1d8698be3ba76a6532091b5`  
+		Last Modified: Sat, 19 Oct 2024 05:37:31 GMT  
 		Size: 2.1 KB (2108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c484eaf2f2487d72c75a56ccc4dc5d99964991f7a7d041f0eebfa588a31fe73`  
-		Last Modified: Wed, 16 Oct 2024 02:31:03 GMT  
-		Size: 55.9 MB (55938937 bytes)  
+	-	`sha256:e92d2704877efed0a745661092e5a0f9133e22a74c1765bff26ce23898211d10`  
+		Last Modified: Sat, 19 Oct 2024 12:10:34 GMT  
+		Size: 55.9 MB (55938652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a53fcb28799de2edef3816c035592de9b1b5de9ff28dd3529521479567e7a510`  
-		Last Modified: Wed, 16 Oct 2024 02:31:01 GMT  
-		Size: 615.0 B  
+	-	`sha256:44ec1a384d5b3f2418ce84b23e13257a36c71f0d71da7a58764cfc428649d6c3`  
+		Last Modified: Sat, 19 Oct 2024 12:10:32 GMT  
+		Size: 613.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06c620e1e717cecbfd66d5f0fbfb6b5ab5f4e618cbda41ba0a786b109e06a938`  
-		Last Modified: Wed, 16 Oct 2024 02:31:01 GMT  
-		Size: 398.0 B  
+	-	`sha256:88de8099e66933113863a0b4acf38eeeb93c8128d5e9a07e6d7a35a74cfe2cc5`  
+		Last Modified: Sat, 19 Oct 2024 12:10:32 GMT  
+		Size: 396.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-17-tools-deps-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9af40ff1c5906932e584c7e2dc7cd943149db2c5abe9dff63148484e06e5a09c
+$ docker pull clojure@sha256:d326e479007f52c2a43e42eeb6f0cad1426b513ef265e44948549c4df4d831eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5712971 bytes)**  
+-	Total Size: **5.7 MB (5740966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d69e731bd4308876eb61b12df79cf19e43a4fdfc8974d25cab18423ccf94eda3`
+-	Image ID: `sha256:8f06283026072df228bf3254702cdad27d0103f1b73804a667bacb0894f5f40d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a94ecc8a021c9547bc75d6cc7535994301c96a83c23f18e25fdd6b5180fad895`  
-		Last Modified: Wed, 16 Oct 2024 02:31:01 GMT  
-		Size: 5.7 MB (5697316 bytes)  
+	-	`sha256:98f92ce170da9ca1b0c7b5be1a1435c00ae8e858f14e320b885adf30daa08c8f`  
+		Last Modified: Sat, 19 Oct 2024 12:10:33 GMT  
+		Size: 5.7 MB (5725287 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a7901ea54a2ffef69693fa47f905f60cd0e87899651d047b45a49227626ca160`  
-		Last Modified: Wed, 16 Oct 2024 02:31:00 GMT  
-		Size: 15.7 KB (15655 bytes)  
+	-	`sha256:f09eb3fff2ff142572884e8fd0fee233086e8856628831e05817c666063379d4`  
+		Last Modified: Sat, 19 Oct 2024 12:10:32 GMT  
+		Size: 15.7 KB (15679 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-alpine`
@@ -18673,7 +18673,7 @@ $ docker pull clojure@sha256:da2319a43e1d8304c86dd5a500284fae284a21e009f70826135
 ## `clojure:temurin-21-bookworm`
 
 ```console
-$ docker pull clojure@sha256:f037d21d374a8731aff77b88f0c41bdbfd9a71e63da2c9c4182b10e400e2394a
+$ docker pull clojure@sha256:06e4acb98d656ed0b90ffd73d258b12bb55920f96d3abe9eec67229c0f28a13a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18842,31 +18842,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-21-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c3013576dde8bb5b2dbf531e1007965628a2512cce641532cc7458b8c9dc0299
+$ docker pull clojure@sha256:0457f5aa5d0ef0c35d7aa3352ae3e9f2966eeaca40ee29ade2836daf92c3e782
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7185243 bytes)**  
+-	Total Size: **7.2 MB (7211162 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cedd10b9bd72ba2dbe804298112f5790ce90c62764084a7fefea1b39ea41e5c1`
+-	Image ID: `sha256:96610469326f010312ac2976080d4f7673b49a3c148ed96ce3db22c6eaa67621`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3dab7c8d34dbd5f1ebad5ad50e1645901ddf0246fb03423ce09ef08e8a011ba1`  
-		Last Modified: Thu, 17 Oct 2024 08:22:59 GMT  
-		Size: 7.2 MB (7167587 bytes)  
+	-	`sha256:ffd7a791ef50a8c137605ebde7b110ec6ffb10fca6c4683d8c4fac7fb3201e41`  
+		Last Modified: Sat, 19 Oct 2024 12:15:10 GMT  
+		Size: 7.2 MB (7193332 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bcfdbc6c65b750289a607a77b84e0d6602d949ef9587feda44b7f292e93b71b1`  
-		Last Modified: Thu, 17 Oct 2024 08:22:58 GMT  
-		Size: 17.7 KB (17656 bytes)  
+	-	`sha256:a2f18595b0c9fdf2426ebd015e6622ba43a7e6dda92990894116ad1d8f18378c`  
+		Last Modified: Sat, 19 Oct 2024 12:15:10 GMT  
+		Size: 17.8 KB (17830 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:bd8db161cfc0cf808b15fc24a1dfb24702418e4847abed6ed6f6498c82aab7ba
+$ docker pull clojure@sha256:e1053f41f4ece3461edf267de6daa36856ce17791ba6ea8ee8260076c8d4af42
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19035,31 +19035,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-21-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:440993ca474c6f93cf1b37b4bf5ddd2445c411422a97464e52dac4ee77322385
+$ docker pull clojure@sha256:d01be75a580cdb5d3ff501fa9684c417bb50621ed94c13dc60b3b2f75cf79f4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4920815 bytes)**  
+-	Total Size: **4.9 MB (4946734 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3db962a68690b26f2dcc63feb9c463fdd83ff5e15a8dcf862a91cad6ce4f6236`
+-	Image ID: `sha256:500a241f472807b67bea9ca6e9447fbe37ad9613ab2efcc28bc7d9a70d34b75a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8010bbc3a540232f5bf51a372cc5a2acdc3b6fd783f028d82a5d3769735547a5`  
-		Last Modified: Thu, 17 Oct 2024 08:23:53 GMT  
-		Size: 4.9 MB (4904438 bytes)  
+	-	`sha256:422cf4d49bf8072027de4f73132d4b041bfc0070c7ae95a0d600cb90ab82a3e6`  
+		Last Modified: Sat, 19 Oct 2024 12:15:49 GMT  
+		Size: 4.9 MB (4930183 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6622694192cdae9a3f32741d46de4596d159794f5dfe9a04152b4bf19581b310`  
-		Last Modified: Thu, 17 Oct 2024 08:23:53 GMT  
-		Size: 16.4 KB (16377 bytes)  
+	-	`sha256:ee54a5fec494a02c625bdec9aa576503b2d64eb7af32ab829e0287ad9d0fc54f`  
+		Last Modified: Sat, 19 Oct 2024 12:15:48 GMT  
+		Size: 16.6 KB (16551 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-bullseye`
 
 ```console
-$ docker pull clojure@sha256:cac33d4e71bba5feea5494183aa62ca0fd0db678edcc2ab128e062372ea7bfab
+$ docker pull clojure@sha256:d842a6ca4eb9807456a8a33dce3cab8eff82049bdfcff5c9be2a44a1d498521a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19228,31 +19228,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-21-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9a2432ae88fc8c33d1863fe7d6d33dff2e471821c67e1c124c2490472844e87c
+$ docker pull clojure@sha256:3e688408612a0fbeaa305c267c482b0a4c9a4ebe4f289c0ad058853facd8f0fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7215281 bytes)**  
+-	Total Size: **7.2 MB (7241199 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a6559e1e004fc1e53c36f95d0a5926859d9e46c86e7dd756ae485efe44631f97`
+-	Image ID: `sha256:abe982acc740f4901cd8c6b9375488ec8f9c8e8ec96cfbde95940e0519c4f995`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:95354d37b0d6081be253b1ff9b6018c0b030926fc9545320f8482e7937f84ca0`  
-		Last Modified: Thu, 17 Oct 2024 08:24:47 GMT  
-		Size: 7.2 MB (7198997 bytes)  
+	-	`sha256:154468ebfda0abcbd37367d568ca5f742511456392d8a8b46312f4da4bac47bf`  
+		Last Modified: Sat, 19 Oct 2024 12:16:21 GMT  
+		Size: 7.2 MB (7224742 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5b13107907f1f029d2fdbdcb3547abc06ef927666d0f63cc1089883a37b28a36`  
-		Last Modified: Thu, 17 Oct 2024 08:24:47 GMT  
-		Size: 16.3 KB (16284 bytes)  
+	-	`sha256:581b1b5e9531bf4b37416f084e971b5ffb70da6e0c769a5d317b62eb89765cd4`  
+		Last Modified: Sat, 19 Oct 2024 12:16:21 GMT  
+		Size: 16.5 KB (16457 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:19b41dabb53a387113f06c94c0bf9949158d6cded9c25edd0de8c99a7f9654a7
+$ docker pull clojure@sha256:6fcbaa7ee2019937c9910f7c55f5a7a6594f640e0d1bc00184640638b0894f16
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19421,31 +19421,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-21-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:f1a08e705c1f63e02bd45bed468302bf3d3beb27c5687e7b49e4fd2d7708ad23
+$ docker pull clojure@sha256:08ca8b9025e8957b3d99cf4d4069b309b5ae2a2850f408da66ff09d0ae3e780c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5125508 bytes)**  
+-	Total Size: **5.2 MB (5151429 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bddba01c365d58638783a4bdac5f9def041970e551f5b2bfc1b3a13bb9b92ca`
+-	Image ID: `sha256:626591e868d4ccf544f45ff91830c3e4e03216f32dcb3cb0e1d9f0f6d2d7e2ca`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d67e703b1538fc7721efca251b8add14ccb36456d6cb5b30a1fcc422b4311812`  
-		Last Modified: Thu, 17 Oct 2024 08:26:32 GMT  
-		Size: 5.1 MB (5109133 bytes)  
+	-	`sha256:a048f4b479cd90ec5fc4e540f4f6c146101071b253c8a6fd84b510b8c7118b4b`  
+		Last Modified: Sat, 19 Oct 2024 12:16:56 GMT  
+		Size: 5.1 MB (5134878 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5289685e300f4bb4af88b6da8cc0610259d242e1313c34c1a0fdc27ab4f82d1c`  
-		Last Modified: Thu, 17 Oct 2024 08:26:31 GMT  
-		Size: 16.4 KB (16375 bytes)  
+	-	`sha256:fc9c67810eafcb1c03a5922e7e4ec91dd260305efb9cd5819b51b2a53fe71ed5`  
+		Last Modified: Sat, 19 Oct 2024 12:16:55 GMT  
+		Size: 16.6 KB (16551 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-jammy`
 
 ```console
-$ docker pull clojure@sha256:341083c8d86ced9f2cb76c85e599572fe52993b9ad749095f4942f98c5790fd7
+$ docker pull clojure@sha256:882152e781e782e228266531e512c3a1d115bdade4e602a46afe5ae1350df794
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19582,28 +19582,28 @@ $ docker pull clojure@sha256:debfc0b44d8f2b3813557dca9afec051438c12b7ce95731bfb1
 ### `clojure:temurin-21-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:a61d9817bba17a70668e68cdd6f9c77d37408f30ac57f4f9dca9894464ecd495
+$ docker pull clojure@sha256:61bec6d81a5d16941fa0eef155a3b21f8170532a2eaeec31a28793e35c36ee35
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.6 MB (255599900 bytes)**  
+-	Total Size: **254.6 MB (254577318 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d058b3e2c2d409614f1c7864177cd796d868453596f6946bfc7a2a423ac76607`
+-	Image ID: `sha256:404527d47694fdee983e2039795416f200b56e72ed78d1f3ebcf4a00a927cc31`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -19625,88 +19625,88 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV CLOJURE_VERSION=1.12.0.1479
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "94f29b9b66183bd58307c46fb561fd9e9148666bac13a4518a9931b6f989d830 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENTRYPOINT ["entrypoint"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["-M" "--repl"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21a0c08aee9ece74cacae8ca7dfbcf838605c1e8bf9ae4ef62a9bf1d407ca7dd`  
-		Last Modified: Tue, 17 Sep 2024 01:39:26 GMT  
-		Size: 18.8 MB (18827958 bytes)  
+	-	`sha256:4f4328c2660e2acfd7df28e6cce03f948be8bfd9bc327b3747dcbddc8199302b`  
+		Last Modified: Sat, 19 Oct 2024 05:36:25 GMT  
+		Size: 18.8 MB (18842272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09549a3282b55b43a30b2d6c2beb9e1411a150ea79cf36555e24ceb3cae93826`  
-		Last Modified: Tue, 17 Sep 2024 01:40:38 GMT  
-		Size: 156.8 MB (156756708 bytes)  
+	-	`sha256:7daf2d659d84ebd02a1393cf32279fd8a0a21158cc4093ebd83f7d92e22cf09a`  
+		Last Modified: Sat, 19 Oct 2024 05:39:52 GMT  
+		Size: 156.8 MB (156757979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc054d5ba84160b816d15d0d2cb12d6f3ddadc08fd115816d88b7e3d349bf642`  
-		Last Modified: Tue, 17 Sep 2024 01:40:26 GMT  
-		Size: 174.0 B  
+	-	`sha256:6e8d984b96159524a5b0d21b585442e43e3c10ae61ec17b47cdbea16cb016a74`  
+		Last Modified: Sat, 19 Oct 2024 05:39:48 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9f4200e9aedb221f093343029d18baaf7a7a6524ee64058044795320f8d236c`  
-		Last Modified: Tue, 17 Sep 2024 01:40:26 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:cdee98b18a682b38297eb7b22f7d9fd9fddac9479e22bd28f7f4577dab80bc84`  
+		Last Modified: Sat, 19 Oct 2024 05:39:48 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9c5ae147a97dc462599ab881b851346d0899282b997df0366cb4a509fcd67fc`  
-		Last Modified: Tue, 17 Sep 2024 04:50:03 GMT  
-		Size: 51.6 MB (51614802 bytes)  
+	-	`sha256:fa0b970e356f97985b195f4d87b4f5fbccc5ed94a478effb2483252eda40a1d0`  
+		Last Modified: Sat, 19 Oct 2024 12:17:41 GMT  
+		Size: 51.6 MB (51615423 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1a5076ca9256fa633f0315334693f663256188f9b7f4b398020538ff0831ca70`  
-		Last Modified: Tue, 17 Sep 2024 04:50:02 GMT  
-		Size: 613.0 B  
+	-	`sha256:db3625bffda640b56a518d75aac82c3e7e53cf1f8c2ed87157e89017afbe9e1f`  
+		Last Modified: Sat, 19 Oct 2024 12:17:39 GMT  
+		Size: 616.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d35674ff1e39f24861a933df6ad6114d3e3c880206a5c3fcdf92374770efb48c`  
-		Last Modified: Tue, 17 Sep 2024 04:50:02 GMT  
-		Size: 398.0 B  
+	-	`sha256:6e02cde456e8dc62e0c334b9d2c6992a3ba54d465d3ff193297b452f566bd72d`  
+		Last Modified: Sat, 19 Oct 2024 12:17:39 GMT  
+		Size: 399.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-21-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:49724072ef1c6850cb31642a55cc6be408b2c8c3b47139e05aedb7708699c2d1
+$ docker pull clojure@sha256:a68ff3db10887a6d8a1232c681370fc8f97b19451ccb07ed7ca8a51b58bd1011
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 MB (6030543 bytes)**  
+-	Total Size: **6.2 MB (6216554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0d979d7f45dadbbfff1cb4eb55ebe80929584c3ba6aa8b60facdf2043e9e75e`
+-	Image ID: `sha256:bbeb900e350741228662318840c99544307ed38c917764c23e837e616cc195ae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c19d115035d47479070e3a1c94f6ee578b327fb50f1f0d7f80466c192790c968`  
-		Last Modified: Tue, 17 Sep 2024 04:50:02 GMT  
-		Size: 6.0 MB (6014708 bytes)  
+	-	`sha256:1a87dbfc02900a96bd96cd356fcd4ae72b89fa4ec871ff910ce6bb1d04a63de9`  
+		Last Modified: Sat, 19 Oct 2024 12:17:40 GMT  
+		Size: 6.2 MB (6200876 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:117cab4418c0f371ec41ae1447b24ad90dbacb912a5e2c1b4b43249a159ba8d9`  
-		Last Modified: Tue, 17 Sep 2024 04:50:01 GMT  
-		Size: 15.8 KB (15835 bytes)  
+	-	`sha256:16f49d7f39e730945d3f5c873621aa9eee1304afe9262a9cd9167ed7d996749c`  
+		Last Modified: Sat, 19 Oct 2024 12:17:39 GMT  
+		Size: 15.7 KB (15678 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-lein`
 
 ```console
-$ docker pull clojure@sha256:11b17f4e2136d727c377fca208f19e86c3a6286ce0b3b1d7fda6bede20c30099
+$ docker pull clojure@sha256:259a194a69f04b84502fd9e0b0de4104f50b4277d0c03a4c2f2aa0791c5833c9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -19887,31 +19887,31 @@ CMD ["repl"]
 ### `clojure:temurin-21-lein` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:4424a1d2feda923dbf818dafbb9a1ee6f32d946c1dccbfa50c5a461e89eddf94
+$ docker pull clojure@sha256:6ed1b02437e00066cc67634c5d1dd05d8f7aa6a7c89d0e8326c8b66d26e2c0b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6551664 bytes)**  
+-	Total Size: **6.6 MB (6575993 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76052ef48af5872b3af782233cd8d56172002d2fb63af871439442c1a78e120d`
+-	Image ID: `sha256:81669d864b54b58c39d329af6e8745c5d7ee8fddf59e8835c381e1b09c560d76`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:98ba3b4105988de2c47ec47703443a4bbb03b560adc13e586f45afcabd234283`  
-		Last Modified: Thu, 17 Oct 2024 08:19:05 GMT  
-		Size: 6.5 MB (6531505 bytes)  
+	-	`sha256:9b28b426664a0a633da87e9c9068ee84e131128e1399aec5cedf80175e568d5e`  
+		Last Modified: Sat, 19 Oct 2024 12:11:07 GMT  
+		Size: 6.6 MB (6555660 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7ba3a6fbd5b5d0d5f95f2a5ca4988b5d8b18615d9f030f94903ae84e73619090`  
-		Last Modified: Thu, 17 Oct 2024 08:19:04 GMT  
-		Size: 20.2 KB (20159 bytes)  
+	-	`sha256:0d45cc2dcc7e100bc857a2429de613ad93d3422a5e2814baac16ac4b9031876d`  
+		Last Modified: Sat, 19 Oct 2024 12:11:06 GMT  
+		Size: 20.3 KB (20333 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-lein-2.11.2`
 
 ```console
-$ docker pull clojure@sha256:11b17f4e2136d727c377fca208f19e86c3a6286ce0b3b1d7fda6bede20c30099
+$ docker pull clojure@sha256:259a194a69f04b84502fd9e0b0de4104f50b4277d0c03a4c2f2aa0791c5833c9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20092,25 +20092,25 @@ CMD ["repl"]
 ### `clojure:temurin-21-lein-2.11.2` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:4424a1d2feda923dbf818dafbb9a1ee6f32d946c1dccbfa50c5a461e89eddf94
+$ docker pull clojure@sha256:6ed1b02437e00066cc67634c5d1dd05d8f7aa6a7c89d0e8326c8b66d26e2c0b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6551664 bytes)**  
+-	Total Size: **6.6 MB (6575993 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76052ef48af5872b3af782233cd8d56172002d2fb63af871439442c1a78e120d`
+-	Image ID: `sha256:81669d864b54b58c39d329af6e8745c5d7ee8fddf59e8835c381e1b09c560d76`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:98ba3b4105988de2c47ec47703443a4bbb03b560adc13e586f45afcabd234283`  
-		Last Modified: Thu, 17 Oct 2024 08:19:05 GMT  
-		Size: 6.5 MB (6531505 bytes)  
+	-	`sha256:9b28b426664a0a633da87e9c9068ee84e131128e1399aec5cedf80175e568d5e`  
+		Last Modified: Sat, 19 Oct 2024 12:11:07 GMT  
+		Size: 6.6 MB (6555660 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7ba3a6fbd5b5d0d5f95f2a5ca4988b5d8b18615d9f030f94903ae84e73619090`  
-		Last Modified: Thu, 17 Oct 2024 08:19:04 GMT  
-		Size: 20.2 KB (20159 bytes)  
+	-	`sha256:0d45cc2dcc7e100bc857a2429de613ad93d3422a5e2814baac16ac4b9031876d`  
+		Last Modified: Sat, 19 Oct 2024 12:11:06 GMT  
+		Size: 20.3 KB (20333 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-lein-2.11.2-alpine`
@@ -20249,7 +20249,7 @@ $ docker pull clojure@sha256:16e16d72809d2502e5a1cee1e061af97c1184efeac028396f5e
 ## `clojure:temurin-21-lein-2.11.2-bookworm`
 
 ```console
-$ docker pull clojure@sha256:11b17f4e2136d727c377fca208f19e86c3a6286ce0b3b1d7fda6bede20c30099
+$ docker pull clojure@sha256:259a194a69f04b84502fd9e0b0de4104f50b4277d0c03a4c2f2aa0791c5833c9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20430,31 +20430,31 @@ CMD ["repl"]
 ### `clojure:temurin-21-lein-2.11.2-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:4424a1d2feda923dbf818dafbb9a1ee6f32d946c1dccbfa50c5a461e89eddf94
+$ docker pull clojure@sha256:6ed1b02437e00066cc67634c5d1dd05d8f7aa6a7c89d0e8326c8b66d26e2c0b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6551664 bytes)**  
+-	Total Size: **6.6 MB (6575993 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76052ef48af5872b3af782233cd8d56172002d2fb63af871439442c1a78e120d`
+-	Image ID: `sha256:81669d864b54b58c39d329af6e8745c5d7ee8fddf59e8835c381e1b09c560d76`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:98ba3b4105988de2c47ec47703443a4bbb03b560adc13e586f45afcabd234283`  
-		Last Modified: Thu, 17 Oct 2024 08:19:05 GMT  
-		Size: 6.5 MB (6531505 bytes)  
+	-	`sha256:9b28b426664a0a633da87e9c9068ee84e131128e1399aec5cedf80175e568d5e`  
+		Last Modified: Sat, 19 Oct 2024 12:11:07 GMT  
+		Size: 6.6 MB (6555660 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7ba3a6fbd5b5d0d5f95f2a5ca4988b5d8b18615d9f030f94903ae84e73619090`  
-		Last Modified: Thu, 17 Oct 2024 08:19:04 GMT  
-		Size: 20.2 KB (20159 bytes)  
+	-	`sha256:0d45cc2dcc7e100bc857a2429de613ad93d3422a5e2814baac16ac4b9031876d`  
+		Last Modified: Sat, 19 Oct 2024 12:11:06 GMT  
+		Size: 20.3 KB (20333 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-lein-2.11.2-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:eaa6ffa0b9b4631cc252e8720ee1aa1f662f96b13c9c8c8ebf9b6244ffde9485
+$ docker pull clojure@sha256:23b2925c6e22c5954b82e7ddff36f3d30d5280c0df1d5c2400a871595621e96f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20635,31 +20635,31 @@ CMD ["repl"]
 ### `clojure:temurin-21-lein-2.11.2-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c968198dd799f4bf18ff85c97fb5596bf1691c84718fb3bccc667b564c37bb86
+$ docker pull clojure@sha256:74970d65b69bc9d4ec8d9663043b78fb3d5a12bdd42aa3ef9160522945df7c4b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4332267 bytes)**  
+-	Total Size: **4.4 MB (4356489 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19e9c2f16b4d0608fd32ba46cdb3dc55358d405a57be807c66b5200e3971731b`
+-	Image ID: `sha256:7a70d201219034b3bbea8f53571a56fde56bf20f0c35457b8f4c28d15248adf8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f06e80787f3504fabb4f59445487cb47ab9bc1ef026d60afb82e043b2bff0514`  
-		Last Modified: Thu, 17 Oct 2024 08:20:02 GMT  
-		Size: 4.3 MB (4313342 bytes)  
+	-	`sha256:246c3b28288ab289e102a0478f8877dd93e737db403f489d2de30f68bebec403`  
+		Last Modified: Sat, 19 Oct 2024 12:11:36 GMT  
+		Size: 4.3 MB (4337391 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c91229a8a91b590ffc3dbbfdb58fd9aa09e09c1257507164fb75df6a050186ab`  
-		Last Modified: Thu, 17 Oct 2024 08:20:02 GMT  
-		Size: 18.9 KB (18925 bytes)  
+	-	`sha256:816744dab55279d0451006d3171b01a0ce1f66b852c5cd4e2c7bd850172cbd8d`  
+		Last Modified: Sat, 19 Oct 2024 12:11:35 GMT  
+		Size: 19.1 KB (19098 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-lein-2.11.2-bullseye`
 
 ```console
-$ docker pull clojure@sha256:602eb6e0e5d983884930374ec68a08a3069c77470065d432c4b420e13bcf1164
+$ docker pull clojure@sha256:b3a4921a2237bab66305e071b6b2d2b72c4fd30a79cd4b59e8cc2a7e6604d538
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20840,31 +20840,31 @@ CMD ["repl"]
 ### `clojure:temurin-21-lein-2.11.2-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:8c689dc6b199e458bfb9ab3621af467e79a2a8fe4f4e83bb70c5bb41be47890a
+$ docker pull clojure@sha256:cc7c168792427ed7b3e5b0c76434381b70d8ac8f99d6aef2a9e89ea5aa4c0ebc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6634020 bytes)**  
+-	Total Size: **6.7 MB (6658668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da509c18eeac13653a433d58287acd4ed630977c86835fe7c8769e7910e12786`
+-	Image ID: `sha256:97edb2a7438b12bc4070e57b72b297fa9b19b82855c711d150d4abd484687f04`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9f299370c3617a9717dcfac1dd19b27c64552574c664a8efb96966184366dc66`  
-		Last Modified: Thu, 17 Oct 2024 08:21:02 GMT  
-		Size: 6.6 MB (6615166 bytes)  
+	-	`sha256:8f04b52137492c1b3b4712bf1937f6f11deb388ca658b10d547a4e58faf6a78c`  
+		Last Modified: Sat, 19 Oct 2024 12:12:09 GMT  
+		Size: 6.6 MB (6639639 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7f68eccb69bdae39f1305bdd9abaff4b95cc7c48f2e7398c09bb01ad6b77c3a2`  
-		Last Modified: Thu, 17 Oct 2024 08:21:02 GMT  
-		Size: 18.9 KB (18854 bytes)  
+	-	`sha256:cb3adeee9e23e40f13e3511da15b6dac6878fdb820c55e642d86ccdce9ef3e82`  
+		Last Modified: Sat, 19 Oct 2024 12:12:09 GMT  
+		Size: 19.0 KB (19029 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-lein-2.11.2-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:d32eaebe87e50f8f2e8b10b61debdff821802e25cf0718f6b6d781886067e1b1
+$ docker pull clojure@sha256:214638d83dbd3bba2494b9a5ac95566899266425721c57200f23b4b19093df7f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -21045,31 +21045,31 @@ CMD ["repl"]
 ### `clojure:temurin-21-lein-2.11.2-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c0bdcfc42c4681e10a9fe7215048bf74c07685de7a7fcffe58118c0023ad4651
+$ docker pull clojure@sha256:d0c3ebe1934824a84d5f328b997b6f8f805877e1fa24a403bdb9041ef1b8ec53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.6 MB (4580342 bytes)**  
+-	Total Size: **4.6 MB (4604883 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e58aac33893b0306d0dc2b96a5eaaf672dbede156ac359a70a0852b7e5a6c2e4`
+-	Image ID: `sha256:26b8a0bbc7cc545a17256f21cee2c54f11bd471c9458d866e27418a2b5c41656`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ec98f153ace5af09582a975206c2180822dd2c3aff2650c13cd564d586acf683`  
-		Last Modified: Thu, 17 Oct 2024 08:22:04 GMT  
-		Size: 4.6 MB (4561417 bytes)  
+	-	`sha256:f62ade858a99c00376a919c191ac32855895a1fe50425b17b5cd259e09c607c7`  
+		Last Modified: Sat, 19 Oct 2024 12:12:48 GMT  
+		Size: 4.6 MB (4585784 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a790776e80e1ea420df6d86734289dca6d368908434c54e00d6743813574bb27`  
-		Last Modified: Thu, 17 Oct 2024 08:22:03 GMT  
-		Size: 18.9 KB (18925 bytes)  
+	-	`sha256:6fc509949cca2eb5f94af15cafe896a580bded6e01e41d301707de424dc3f011`  
+		Last Modified: Sat, 19 Oct 2024 12:12:47 GMT  
+		Size: 19.1 KB (19099 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-lein-2.11.2-jammy`
 
 ```console
-$ docker pull clojure@sha256:556e28a6d906c8f1ba9da7cb2e6e8373fd8b9e97bc161fe1ec570b15deecbd79
+$ docker pull clojure@sha256:3bd8f94dd63471cc3bdac4e91f9d6f59000aa2235f338be62ce5562821e16a41
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -21212,28 +21212,28 @@ $ docker pull clojure@sha256:4f378909596ba97dfc793b8ca5836f6aec84793590c1fbd6e71
 ### `clojure:temurin-21-lein-2.11.2-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:de0c98facd3ce17a2d2f2405429cb134efe6e4943901d24ca9f1de6b076ab1ff
+$ docker pull clojure@sha256:ae7b6f21697af9d55e45c52d6c0994fe789ec19f93976e440eacf93509004606
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **244.2 MB (244225525 bytes)**  
+-	Total Size: **243.2 MB (243202618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38b0e8f061d16f068684de6ecebd2368c9ee73b4fafa027f9f8f87f25c1dc1eb`
+-	Image ID: `sha256:51c2f1a11ce9fe97535c36174a1994c6ccef319608e9e2e4a12cfaeff1d5f055`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -21255,94 +21255,94 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_VERSION=2.11.2
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN set -eux; apt-get update && apt-get install -y make git gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mkdir -p /root/.lein && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get purge -y --auto-remove gnupg wget # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_ROOT=1
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.12.0"]])' > project.clj   && lein deps && rm project.clj # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENTRYPOINT ["entrypoint"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["repl"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21a0c08aee9ece74cacae8ca7dfbcf838605c1e8bf9ae4ef62a9bf1d407ca7dd`  
-		Last Modified: Tue, 17 Sep 2024 01:39:26 GMT  
-		Size: 18.8 MB (18827958 bytes)  
+	-	`sha256:4f4328c2660e2acfd7df28e6cce03f948be8bfd9bc327b3747dcbddc8199302b`  
+		Last Modified: Sat, 19 Oct 2024 05:36:25 GMT  
+		Size: 18.8 MB (18842272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09549a3282b55b43a30b2d6c2beb9e1411a150ea79cf36555e24ceb3cae93826`  
-		Last Modified: Tue, 17 Sep 2024 01:40:38 GMT  
-		Size: 156.8 MB (156756708 bytes)  
+	-	`sha256:7daf2d659d84ebd02a1393cf32279fd8a0a21158cc4093ebd83f7d92e22cf09a`  
+		Last Modified: Sat, 19 Oct 2024 05:39:52 GMT  
+		Size: 156.8 MB (156757979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc054d5ba84160b816d15d0d2cb12d6f3ddadc08fd115816d88b7e3d349bf642`  
-		Last Modified: Tue, 17 Sep 2024 01:40:26 GMT  
-		Size: 174.0 B  
+	-	`sha256:6e8d984b96159524a5b0d21b585442e43e3c10ae61ec17b47cdbea16cb016a74`  
+		Last Modified: Sat, 19 Oct 2024 05:39:48 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9f4200e9aedb221f093343029d18baaf7a7a6524ee64058044795320f8d236c`  
-		Last Modified: Tue, 17 Sep 2024 01:40:26 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:cdee98b18a682b38297eb7b22f7d9fd9fddac9479e22bd28f7f4577dab80bc84`  
+		Last Modified: Sat, 19 Oct 2024 05:39:48 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7ebf209d06cdd81cf9a007407ab11347bd3d735add547cbbcfd2119cf726359`  
-		Last Modified: Tue, 17 Sep 2024 04:45:07 GMT  
-		Size: 35.7 MB (35726879 bytes)  
+	-	`sha256:63d7c3399655575b91bf86aab285179b07e7ac27ef23353955322ff881dbedd1`  
+		Last Modified: Sat, 19 Oct 2024 12:13:42 GMT  
+		Size: 35.7 MB (35727224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0375c2835fc87e6b0d6d55fd73c92f3c5a119e4b705afd12bbdd3f2a5abfefdb`  
-		Last Modified: Tue, 17 Sep 2024 04:45:07 GMT  
-		Size: 4.5 MB (4514160 bytes)  
+	-	`sha256:f15b30760c37ec0947b828746c8ee543018c5f94b76ab1fcf77aa831bf87408c`  
+		Last Modified: Sat, 19 Oct 2024 12:13:41 GMT  
+		Size: 4.5 MB (4514115 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b1d6f033be74aab0a78230e71173c9fbc6cad285de7445080404c9d38945ab9`  
-		Last Modified: Tue, 17 Sep 2024 04:45:07 GMT  
+	-	`sha256:250b6939482c1d5862b73295300ecad6034eea76d3e3a9d29fd5e9f729f8ad76`  
+		Last Modified: Sat, 19 Oct 2024 12:13:41 GMT  
 		Size: 399.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-21-lein-2.11.2-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9349e7552ad2252212d1118efba89b9389fec25e8c763ed4c3a86c5eb7ecfa3c
+$ docker pull clojure@sha256:d15d482d90864377be034607b1a44953fb76a6ebaa2f6727adaa07a239ba5479
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5471813 bytes)**  
+-	Total Size: **5.7 MB (5656564 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d059d745e41b5cc6db7c13fb750bbe3369c6289e3c20f0a007604d10914caa9f`
+-	Image ID: `sha256:cc39ba897c3c003e4e788081c77275b9114c7338f67c04fc22171857fafbeee4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:822e3ed94ca5ba52a2101d9cef814c5380907bf7fa67e7a6f012650562d3d3a1`  
-		Last Modified: Tue, 17 Sep 2024 04:45:06 GMT  
-		Size: 5.5 MB (5453152 bytes)  
+	-	`sha256:0a6e5d9830f1f609aa3fe2dc78f5e5f9fa19b170071f06e9ca7fb5e3ce17a322`  
+		Last Modified: Sat, 19 Oct 2024 12:13:41 GMT  
+		Size: 5.6 MB (5638044 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3a6328a212c5704194ddcd79e1dc24b6f8287b3cc199e64fe1e3a622b770773f`  
-		Last Modified: Tue, 17 Sep 2024 04:45:06 GMT  
-		Size: 18.7 KB (18661 bytes)  
+	-	`sha256:b85742dba0e0a48ee8b5e6f80805e1660a6ca316e8067596a04f91561f675e56`  
+		Last Modified: Sat, 19 Oct 2024 12:13:41 GMT  
+		Size: 18.5 KB (18520 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-lein-2.11.2-noble`
 
 ```console
-$ docker pull clojure@sha256:87601f00d050619325e1ba9711fb2c72323184f824bd6060e6fa72d7cecfb968
+$ docker pull clojure@sha256:b3ce65492042b0c1bb6f3ed637e15b17ea2c25eeb270b56b2a56adac939fccbe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -21485,28 +21485,28 @@ $ docker pull clojure@sha256:5d7d245351898d5846e20f2c92f2891ed24cda13293223fa874
 ### `clojure:temurin-21-lein-2.11.2-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:65bb5bace28911ec651498c924482dde0aad79456a5baeb84d25399f4e61f81c
+$ docker pull clojure@sha256:35f2fe17adc378d63a2c0d0b075f0188dba8fa8ac3f84e88ab38cc345402e70a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **250.3 MB (250274937 bytes)**  
+-	Total Size: **249.2 MB (249207323 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4f45e5c2fc2f633f0f87208c1cf9d1bcd1835017fd2b50c105de51d7eac6ba0`
+-	Image ID: `sha256:7c9063c87f38de95f15053081d49fb5dbabe38b58b953fed2d13aad06d4c8ccb`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -21551,65 +21551,65 @@ CMD ["repl"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a198149501abf09f7d2065dde4b2ebc6eafd97bb9331b52d06c6b2a199992128`  
-		Last Modified: Wed, 16 Oct 2024 01:17:59 GMT  
-		Size: 21.0 MB (20963830 bytes)  
+	-	`sha256:0a84341aaf3e356e3e4f81c1bdab6100eb048d95139a0fba28fc288df8b7742d`  
+		Last Modified: Sat, 19 Oct 2024 05:37:32 GMT  
+		Size: 21.0 MB (20961983 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa0b53f40f348880ee60f853ece99a5eb70477c27197ab96a0152b17e0d25d2a`  
-		Last Modified: Wed, 16 Oct 2024 01:18:53 GMT  
-		Size: 156.8 MB (156756973 bytes)  
+	-	`sha256:610271b625329a442f44231a5cdb958c29088c4eb7f99583de2513300199c1cf`  
+		Last Modified: Sat, 19 Oct 2024 05:40:36 GMT  
+		Size: 156.8 MB (156758351 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a1f4795eecb5ff8fe029ceea349c2ac62d04f4da15c43469e0d59dc712329f4`  
-		Last Modified: Wed, 16 Oct 2024 01:18:43 GMT  
-		Size: 173.0 B  
+	-	`sha256:fc9792f55ce4120bc17d691282d186c337e44ca3dce82f0f218133108c2be850`  
+		Last Modified: Sat, 19 Oct 2024 05:40:32 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:782963c19ab13b99b9e0d170cb549ebd99c77b1f3956ef112a3a2f69f01ddff7`  
-		Last Modified: Wed, 16 Oct 2024 01:18:43 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:316b2d603d7f729a7deec3f908f45b7e8fef1d4b6c185684c3c8f4fdc9bee299`  
+		Last Modified: Sat, 19 Oct 2024 05:40:32 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5fd8405df61bfe33dd7e2310fc5752724e2c57e19eb9b335475d04c2c9e45467`  
-		Last Modified: Wed, 16 Oct 2024 02:34:39 GMT  
-		Size: 38.1 MB (38084449 bytes)  
+	-	`sha256:7219f08ff31da2fb562a2c4f2e2c422d2f6ecc1edd8617db8a285fc7f8fbe81a`  
+		Last Modified: Sat, 19 Oct 2024 12:14:36 GMT  
+		Size: 38.1 MB (38084297 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6953e801a673f9c04dc77b961c58df3121a7c5e276264d23a3fd1e174e32701d`  
-		Last Modified: Wed, 16 Oct 2024 02:34:39 GMT  
-		Size: 4.5 MB (4514172 bytes)  
+	-	`sha256:8d49b698724de9a98f53757f6fe987ae18c100a4a81e6d11fc550660a6e28b54`  
+		Last Modified: Sat, 19 Oct 2024 12:14:35 GMT  
+		Size: 4.5 MB (4514151 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a750fdaec82fc232c77e55e066b18572178d37f38b41e224fe78da272a84b88e`  
-		Last Modified: Wed, 16 Oct 2024 02:34:38 GMT  
+	-	`sha256:ef10f80789e73935fab325d4753c3358e448f0945ae2d8f6894937e127216b74`  
+		Last Modified: Sat, 19 Oct 2024 12:14:35 GMT  
 		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-21-lein-2.11.2-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:d25ae56c35b9f0bea2173507bb5414993a48beb5d7ec847c540f3c72de02c8f1
+$ docker pull clojure@sha256:fa581925de8504704d9f8c366cfff89901630e77cd5490d28c731a5a9d6b80bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5123396 bytes)**  
+-	Total Size: **5.2 MB (5150225 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0065184062b34fbeec5c423daa56cf997c15989588121c91a672b3af14b90727`
+-	Image ID: `sha256:9e326923332bcca79b25accaaafc3ddb4ae5ad93bf85fa90af1851fcedab4647`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:031eaf49ced5e1052f35fae3d095a07da8d5e09e79c10f630817e8ded6ea76a2`  
-		Last Modified: Wed, 16 Oct 2024 02:34:37 GMT  
-		Size: 5.1 MB (5104900 bytes)  
+	-	`sha256:6e5ffe2ce82613ed624a690f79fd61dbd5f8db4c8c300015e82fef923822ab90`  
+		Last Modified: Sat, 19 Oct 2024 12:14:35 GMT  
+		Size: 5.1 MB (5131705 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:453a831b580591a112abd42a29da63a8519c830d76702ca8cd0696229749db2d`  
-		Last Modified: Wed, 16 Oct 2024 02:34:37 GMT  
-		Size: 18.5 KB (18496 bytes)  
+	-	`sha256:72b6c032fb78b9a482622c706625b8dbbc9041755e009e9f06929b350af6a486`  
+		Last Modified: Sat, 19 Oct 2024 12:14:35 GMT  
+		Size: 18.5 KB (18520 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-lein-alpine`
@@ -21748,7 +21748,7 @@ $ docker pull clojure@sha256:16e16d72809d2502e5a1cee1e061af97c1184efeac028396f5e
 ## `clojure:temurin-21-lein-bookworm`
 
 ```console
-$ docker pull clojure@sha256:11b17f4e2136d727c377fca208f19e86c3a6286ce0b3b1d7fda6bede20c30099
+$ docker pull clojure@sha256:259a194a69f04b84502fd9e0b0de4104f50b4277d0c03a4c2f2aa0791c5833c9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -21929,31 +21929,31 @@ CMD ["repl"]
 ### `clojure:temurin-21-lein-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:4424a1d2feda923dbf818dafbb9a1ee6f32d946c1dccbfa50c5a461e89eddf94
+$ docker pull clojure@sha256:6ed1b02437e00066cc67634c5d1dd05d8f7aa6a7c89d0e8326c8b66d26e2c0b7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6551664 bytes)**  
+-	Total Size: **6.6 MB (6575993 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:76052ef48af5872b3af782233cd8d56172002d2fb63af871439442c1a78e120d`
+-	Image ID: `sha256:81669d864b54b58c39d329af6e8745c5d7ee8fddf59e8835c381e1b09c560d76`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:98ba3b4105988de2c47ec47703443a4bbb03b560adc13e586f45afcabd234283`  
-		Last Modified: Thu, 17 Oct 2024 08:19:05 GMT  
-		Size: 6.5 MB (6531505 bytes)  
+	-	`sha256:9b28b426664a0a633da87e9c9068ee84e131128e1399aec5cedf80175e568d5e`  
+		Last Modified: Sat, 19 Oct 2024 12:11:07 GMT  
+		Size: 6.6 MB (6555660 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7ba3a6fbd5b5d0d5f95f2a5ca4988b5d8b18615d9f030f94903ae84e73619090`  
-		Last Modified: Thu, 17 Oct 2024 08:19:04 GMT  
-		Size: 20.2 KB (20159 bytes)  
+	-	`sha256:0d45cc2dcc7e100bc857a2429de613ad93d3422a5e2814baac16ac4b9031876d`  
+		Last Modified: Sat, 19 Oct 2024 12:11:06 GMT  
+		Size: 20.3 KB (20333 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-lein-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:eaa6ffa0b9b4631cc252e8720ee1aa1f662f96b13c9c8c8ebf9b6244ffde9485
+$ docker pull clojure@sha256:23b2925c6e22c5954b82e7ddff36f3d30d5280c0df1d5c2400a871595621e96f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22134,31 +22134,31 @@ CMD ["repl"]
 ### `clojure:temurin-21-lein-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c968198dd799f4bf18ff85c97fb5596bf1691c84718fb3bccc667b564c37bb86
+$ docker pull clojure@sha256:74970d65b69bc9d4ec8d9663043b78fb3d5a12bdd42aa3ef9160522945df7c4b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4332267 bytes)**  
+-	Total Size: **4.4 MB (4356489 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19e9c2f16b4d0608fd32ba46cdb3dc55358d405a57be807c66b5200e3971731b`
+-	Image ID: `sha256:7a70d201219034b3bbea8f53571a56fde56bf20f0c35457b8f4c28d15248adf8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f06e80787f3504fabb4f59445487cb47ab9bc1ef026d60afb82e043b2bff0514`  
-		Last Modified: Thu, 17 Oct 2024 08:20:02 GMT  
-		Size: 4.3 MB (4313342 bytes)  
+	-	`sha256:246c3b28288ab289e102a0478f8877dd93e737db403f489d2de30f68bebec403`  
+		Last Modified: Sat, 19 Oct 2024 12:11:36 GMT  
+		Size: 4.3 MB (4337391 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c91229a8a91b590ffc3dbbfdb58fd9aa09e09c1257507164fb75df6a050186ab`  
-		Last Modified: Thu, 17 Oct 2024 08:20:02 GMT  
-		Size: 18.9 KB (18925 bytes)  
+	-	`sha256:816744dab55279d0451006d3171b01a0ce1f66b852c5cd4e2c7bd850172cbd8d`  
+		Last Modified: Sat, 19 Oct 2024 12:11:35 GMT  
+		Size: 19.1 KB (19098 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-lein-bullseye`
 
 ```console
-$ docker pull clojure@sha256:602eb6e0e5d983884930374ec68a08a3069c77470065d432c4b420e13bcf1164
+$ docker pull clojure@sha256:b3a4921a2237bab66305e071b6b2d2b72c4fd30a79cd4b59e8cc2a7e6604d538
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22339,31 +22339,31 @@ CMD ["repl"]
 ### `clojure:temurin-21-lein-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:8c689dc6b199e458bfb9ab3621af467e79a2a8fe4f4e83bb70c5bb41be47890a
+$ docker pull clojure@sha256:cc7c168792427ed7b3e5b0c76434381b70d8ac8f99d6aef2a9e89ea5aa4c0ebc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6634020 bytes)**  
+-	Total Size: **6.7 MB (6658668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da509c18eeac13653a433d58287acd4ed630977c86835fe7c8769e7910e12786`
+-	Image ID: `sha256:97edb2a7438b12bc4070e57b72b297fa9b19b82855c711d150d4abd484687f04`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9f299370c3617a9717dcfac1dd19b27c64552574c664a8efb96966184366dc66`  
-		Last Modified: Thu, 17 Oct 2024 08:21:02 GMT  
-		Size: 6.6 MB (6615166 bytes)  
+	-	`sha256:8f04b52137492c1b3b4712bf1937f6f11deb388ca658b10d547a4e58faf6a78c`  
+		Last Modified: Sat, 19 Oct 2024 12:12:09 GMT  
+		Size: 6.6 MB (6639639 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7f68eccb69bdae39f1305bdd9abaff4b95cc7c48f2e7398c09bb01ad6b77c3a2`  
-		Last Modified: Thu, 17 Oct 2024 08:21:02 GMT  
-		Size: 18.9 KB (18854 bytes)  
+	-	`sha256:cb3adeee9e23e40f13e3511da15b6dac6878fdb820c55e642d86ccdce9ef3e82`  
+		Last Modified: Sat, 19 Oct 2024 12:12:09 GMT  
+		Size: 19.0 KB (19029 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-lein-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:d32eaebe87e50f8f2e8b10b61debdff821802e25cf0718f6b6d781886067e1b1
+$ docker pull clojure@sha256:214638d83dbd3bba2494b9a5ac95566899266425721c57200f23b4b19093df7f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22544,31 +22544,31 @@ CMD ["repl"]
 ### `clojure:temurin-21-lein-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c0bdcfc42c4681e10a9fe7215048bf74c07685de7a7fcffe58118c0023ad4651
+$ docker pull clojure@sha256:d0c3ebe1934824a84d5f328b997b6f8f805877e1fa24a403bdb9041ef1b8ec53
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.6 MB (4580342 bytes)**  
+-	Total Size: **4.6 MB (4604883 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e58aac33893b0306d0dc2b96a5eaaf672dbede156ac359a70a0852b7e5a6c2e4`
+-	Image ID: `sha256:26b8a0bbc7cc545a17256f21cee2c54f11bd471c9458d866e27418a2b5c41656`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ec98f153ace5af09582a975206c2180822dd2c3aff2650c13cd564d586acf683`  
-		Last Modified: Thu, 17 Oct 2024 08:22:04 GMT  
-		Size: 4.6 MB (4561417 bytes)  
+	-	`sha256:f62ade858a99c00376a919c191ac32855895a1fe50425b17b5cd259e09c607c7`  
+		Last Modified: Sat, 19 Oct 2024 12:12:48 GMT  
+		Size: 4.6 MB (4585784 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a790776e80e1ea420df6d86734289dca6d368908434c54e00d6743813574bb27`  
-		Last Modified: Thu, 17 Oct 2024 08:22:03 GMT  
-		Size: 18.9 KB (18925 bytes)  
+	-	`sha256:6fc509949cca2eb5f94af15cafe896a580bded6e01e41d301707de424dc3f011`  
+		Last Modified: Sat, 19 Oct 2024 12:12:47 GMT  
+		Size: 19.1 KB (19099 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-lein-jammy`
 
 ```console
-$ docker pull clojure@sha256:556e28a6d906c8f1ba9da7cb2e6e8373fd8b9e97bc161fe1ec570b15deecbd79
+$ docker pull clojure@sha256:3bd8f94dd63471cc3bdac4e91f9d6f59000aa2235f338be62ce5562821e16a41
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22711,28 +22711,28 @@ $ docker pull clojure@sha256:4f378909596ba97dfc793b8ca5836f6aec84793590c1fbd6e71
 ### `clojure:temurin-21-lein-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:de0c98facd3ce17a2d2f2405429cb134efe6e4943901d24ca9f1de6b076ab1ff
+$ docker pull clojure@sha256:ae7b6f21697af9d55e45c52d6c0994fe789ec19f93976e440eacf93509004606
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **244.2 MB (244225525 bytes)**  
+-	Total Size: **243.2 MB (243202618 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38b0e8f061d16f068684de6ecebd2368c9ee73b4fafa027f9f8f87f25c1dc1eb`
+-	Image ID: `sha256:51c2f1a11ce9fe97535c36174a1994c6ccef319608e9e2e4a12cfaeff1d5f055`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -22754,94 +22754,94 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_VERSION=2.11.2
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN set -eux; apt-get update && apt-get install -y make git gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mkdir -p /root/.lein && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get purge -y --auto-remove gnupg wget # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV LEIN_ROOT=1
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.12.0"]])' > project.clj   && lein deps && rm project.clj # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENTRYPOINT ["entrypoint"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["repl"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21a0c08aee9ece74cacae8ca7dfbcf838605c1e8bf9ae4ef62a9bf1d407ca7dd`  
-		Last Modified: Tue, 17 Sep 2024 01:39:26 GMT  
-		Size: 18.8 MB (18827958 bytes)  
+	-	`sha256:4f4328c2660e2acfd7df28e6cce03f948be8bfd9bc327b3747dcbddc8199302b`  
+		Last Modified: Sat, 19 Oct 2024 05:36:25 GMT  
+		Size: 18.8 MB (18842272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09549a3282b55b43a30b2d6c2beb9e1411a150ea79cf36555e24ceb3cae93826`  
-		Last Modified: Tue, 17 Sep 2024 01:40:38 GMT  
-		Size: 156.8 MB (156756708 bytes)  
+	-	`sha256:7daf2d659d84ebd02a1393cf32279fd8a0a21158cc4093ebd83f7d92e22cf09a`  
+		Last Modified: Sat, 19 Oct 2024 05:39:52 GMT  
+		Size: 156.8 MB (156757979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc054d5ba84160b816d15d0d2cb12d6f3ddadc08fd115816d88b7e3d349bf642`  
-		Last Modified: Tue, 17 Sep 2024 01:40:26 GMT  
-		Size: 174.0 B  
+	-	`sha256:6e8d984b96159524a5b0d21b585442e43e3c10ae61ec17b47cdbea16cb016a74`  
+		Last Modified: Sat, 19 Oct 2024 05:39:48 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9f4200e9aedb221f093343029d18baaf7a7a6524ee64058044795320f8d236c`  
-		Last Modified: Tue, 17 Sep 2024 01:40:26 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:cdee98b18a682b38297eb7b22f7d9fd9fddac9479e22bd28f7f4577dab80bc84`  
+		Last Modified: Sat, 19 Oct 2024 05:39:48 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7ebf209d06cdd81cf9a007407ab11347bd3d735add547cbbcfd2119cf726359`  
-		Last Modified: Tue, 17 Sep 2024 04:45:07 GMT  
-		Size: 35.7 MB (35726879 bytes)  
+	-	`sha256:63d7c3399655575b91bf86aab285179b07e7ac27ef23353955322ff881dbedd1`  
+		Last Modified: Sat, 19 Oct 2024 12:13:42 GMT  
+		Size: 35.7 MB (35727224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0375c2835fc87e6b0d6d55fd73c92f3c5a119e4b705afd12bbdd3f2a5abfefdb`  
-		Last Modified: Tue, 17 Sep 2024 04:45:07 GMT  
-		Size: 4.5 MB (4514160 bytes)  
+	-	`sha256:f15b30760c37ec0947b828746c8ee543018c5f94b76ab1fcf77aa831bf87408c`  
+		Last Modified: Sat, 19 Oct 2024 12:13:41 GMT  
+		Size: 4.5 MB (4514115 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b1d6f033be74aab0a78230e71173c9fbc6cad285de7445080404c9d38945ab9`  
-		Last Modified: Tue, 17 Sep 2024 04:45:07 GMT  
+	-	`sha256:250b6939482c1d5862b73295300ecad6034eea76d3e3a9d29fd5e9f729f8ad76`  
+		Last Modified: Sat, 19 Oct 2024 12:13:41 GMT  
 		Size: 399.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-21-lein-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9349e7552ad2252212d1118efba89b9389fec25e8c763ed4c3a86c5eb7ecfa3c
+$ docker pull clojure@sha256:d15d482d90864377be034607b1a44953fb76a6ebaa2f6727adaa07a239ba5479
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.5 MB (5471813 bytes)**  
+-	Total Size: **5.7 MB (5656564 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d059d745e41b5cc6db7c13fb750bbe3369c6289e3c20f0a007604d10914caa9f`
+-	Image ID: `sha256:cc39ba897c3c003e4e788081c77275b9114c7338f67c04fc22171857fafbeee4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:822e3ed94ca5ba52a2101d9cef814c5380907bf7fa67e7a6f012650562d3d3a1`  
-		Last Modified: Tue, 17 Sep 2024 04:45:06 GMT  
-		Size: 5.5 MB (5453152 bytes)  
+	-	`sha256:0a6e5d9830f1f609aa3fe2dc78f5e5f9fa19b170071f06e9ca7fb5e3ce17a322`  
+		Last Modified: Sat, 19 Oct 2024 12:13:41 GMT  
+		Size: 5.6 MB (5638044 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3a6328a212c5704194ddcd79e1dc24b6f8287b3cc199e64fe1e3a622b770773f`  
-		Last Modified: Tue, 17 Sep 2024 04:45:06 GMT  
-		Size: 18.7 KB (18661 bytes)  
+	-	`sha256:b85742dba0e0a48ee8b5e6f80805e1660a6ca316e8067596a04f91561f675e56`  
+		Last Modified: Sat, 19 Oct 2024 12:13:41 GMT  
+		Size: 18.5 KB (18520 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-lein-noble`
 
 ```console
-$ docker pull clojure@sha256:87601f00d050619325e1ba9711fb2c72323184f824bd6060e6fa72d7cecfb968
+$ docker pull clojure@sha256:b3ce65492042b0c1bb6f3ed637e15b17ea2c25eeb270b56b2a56adac939fccbe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22984,28 +22984,28 @@ $ docker pull clojure@sha256:5d7d245351898d5846e20f2c92f2891ed24cda13293223fa874
 ### `clojure:temurin-21-lein-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:65bb5bace28911ec651498c924482dde0aad79456a5baeb84d25399f4e61f81c
+$ docker pull clojure@sha256:35f2fe17adc378d63a2c0d0b075f0188dba8fa8ac3f84e88ab38cc345402e70a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **250.3 MB (250274937 bytes)**  
+-	Total Size: **249.2 MB (249207323 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e4f45e5c2fc2f633f0f87208c1cf9d1bcd1835017fd2b50c105de51d7eac6ba0`
+-	Image ID: `sha256:7c9063c87f38de95f15053081d49fb5dbabe38b58b953fed2d13aad06d4c8ccb`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -23050,71 +23050,71 @@ CMD ["repl"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a198149501abf09f7d2065dde4b2ebc6eafd97bb9331b52d06c6b2a199992128`  
-		Last Modified: Wed, 16 Oct 2024 01:17:59 GMT  
-		Size: 21.0 MB (20963830 bytes)  
+	-	`sha256:0a84341aaf3e356e3e4f81c1bdab6100eb048d95139a0fba28fc288df8b7742d`  
+		Last Modified: Sat, 19 Oct 2024 05:37:32 GMT  
+		Size: 21.0 MB (20961983 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa0b53f40f348880ee60f853ece99a5eb70477c27197ab96a0152b17e0d25d2a`  
-		Last Modified: Wed, 16 Oct 2024 01:18:53 GMT  
-		Size: 156.8 MB (156756973 bytes)  
+	-	`sha256:610271b625329a442f44231a5cdb958c29088c4eb7f99583de2513300199c1cf`  
+		Last Modified: Sat, 19 Oct 2024 05:40:36 GMT  
+		Size: 156.8 MB (156758351 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a1f4795eecb5ff8fe029ceea349c2ac62d04f4da15c43469e0d59dc712329f4`  
-		Last Modified: Wed, 16 Oct 2024 01:18:43 GMT  
-		Size: 173.0 B  
+	-	`sha256:fc9792f55ce4120bc17d691282d186c337e44ca3dce82f0f218133108c2be850`  
+		Last Modified: Sat, 19 Oct 2024 05:40:32 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:782963c19ab13b99b9e0d170cb549ebd99c77b1f3956ef112a3a2f69f01ddff7`  
-		Last Modified: Wed, 16 Oct 2024 01:18:43 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:316b2d603d7f729a7deec3f908f45b7e8fef1d4b6c185684c3c8f4fdc9bee299`  
+		Last Modified: Sat, 19 Oct 2024 05:40:32 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5fd8405df61bfe33dd7e2310fc5752724e2c57e19eb9b335475d04c2c9e45467`  
-		Last Modified: Wed, 16 Oct 2024 02:34:39 GMT  
-		Size: 38.1 MB (38084449 bytes)  
+	-	`sha256:7219f08ff31da2fb562a2c4f2e2c422d2f6ecc1edd8617db8a285fc7f8fbe81a`  
+		Last Modified: Sat, 19 Oct 2024 12:14:36 GMT  
+		Size: 38.1 MB (38084297 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6953e801a673f9c04dc77b961c58df3121a7c5e276264d23a3fd1e174e32701d`  
-		Last Modified: Wed, 16 Oct 2024 02:34:39 GMT  
-		Size: 4.5 MB (4514172 bytes)  
+	-	`sha256:8d49b698724de9a98f53757f6fe987ae18c100a4a81e6d11fc550660a6e28b54`  
+		Last Modified: Sat, 19 Oct 2024 12:14:35 GMT  
+		Size: 4.5 MB (4514151 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a750fdaec82fc232c77e55e066b18572178d37f38b41e224fe78da272a84b88e`  
-		Last Modified: Wed, 16 Oct 2024 02:34:38 GMT  
+	-	`sha256:ef10f80789e73935fab325d4753c3358e448f0945ae2d8f6894937e127216b74`  
+		Last Modified: Sat, 19 Oct 2024 12:14:35 GMT  
 		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-21-lein-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:d25ae56c35b9f0bea2173507bb5414993a48beb5d7ec847c540f3c72de02c8f1
+$ docker pull clojure@sha256:fa581925de8504704d9f8c366cfff89901630e77cd5490d28c731a5a9d6b80bd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5123396 bytes)**  
+-	Total Size: **5.2 MB (5150225 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0065184062b34fbeec5c423daa56cf997c15989588121c91a672b3af14b90727`
+-	Image ID: `sha256:9e326923332bcca79b25accaaafc3ddb4ae5ad93bf85fa90af1851fcedab4647`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:031eaf49ced5e1052f35fae3d095a07da8d5e09e79c10f630817e8ded6ea76a2`  
-		Last Modified: Wed, 16 Oct 2024 02:34:37 GMT  
-		Size: 5.1 MB (5104900 bytes)  
+	-	`sha256:6e5ffe2ce82613ed624a690f79fd61dbd5f8db4c8c300015e82fef923822ab90`  
+		Last Modified: Sat, 19 Oct 2024 12:14:35 GMT  
+		Size: 5.1 MB (5131705 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:453a831b580591a112abd42a29da63a8519c830d76702ca8cd0696229749db2d`  
-		Last Modified: Wed, 16 Oct 2024 02:34:37 GMT  
-		Size: 18.5 KB (18496 bytes)  
+	-	`sha256:72b6c032fb78b9a482622c706625b8dbbc9041755e009e9f06929b350af6a486`  
+		Last Modified: Sat, 19 Oct 2024 12:14:35 GMT  
+		Size: 18.5 KB (18520 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-noble`
 
 ```console
-$ docker pull clojure@sha256:d02c0d5edd5d4f4ef525d6c0e7c948c5ada0d4410e6fb951e1a6fa865fbaf4fd
+$ docker pull clojure@sha256:9e56a1ff56db840f2bc59d89edc433fd0753ad48024a53ece5da6fa46eb4005b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23251,28 +23251,28 @@ $ docker pull clojure@sha256:509970e6a4a19450b29bf157443e2a3d9df9caf7ad73b2d38fb
 ### `clojure:temurin-21-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:a0c57dcd3bf8233266df9168ce723db49786702a12535cfe3814e27a23792d40
+$ docker pull clojure@sha256:41054af0df47101e8b3a727e4fe84a38603e664faaf2c287555697ba7ee13fd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **263.6 MB (263616048 bytes)**  
+-	Total Size: **262.5 MB (262548331 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48a740feb8882138dda4de96b2e3564ee47afb72dd89c9c99361e2780bf0a7c4`
+-	Image ID: `sha256:3ec3147f1339e80a4fa64c0a66cfb9dfeabe773dadd692a88f1b3d4ec9af460c`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -23311,71 +23311,71 @@ CMD ["-M" "--repl"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a198149501abf09f7d2065dde4b2ebc6eafd97bb9331b52d06c6b2a199992128`  
-		Last Modified: Wed, 16 Oct 2024 01:17:59 GMT  
-		Size: 21.0 MB (20963830 bytes)  
+	-	`sha256:0a84341aaf3e356e3e4f81c1bdab6100eb048d95139a0fba28fc288df8b7742d`  
+		Last Modified: Sat, 19 Oct 2024 05:37:32 GMT  
+		Size: 21.0 MB (20961983 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa0b53f40f348880ee60f853ece99a5eb70477c27197ab96a0152b17e0d25d2a`  
-		Last Modified: Wed, 16 Oct 2024 01:18:53 GMT  
-		Size: 156.8 MB (156756973 bytes)  
+	-	`sha256:610271b625329a442f44231a5cdb958c29088c4eb7f99583de2513300199c1cf`  
+		Last Modified: Sat, 19 Oct 2024 05:40:36 GMT  
+		Size: 156.8 MB (156758351 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a1f4795eecb5ff8fe029ceea349c2ac62d04f4da15c43469e0d59dc712329f4`  
-		Last Modified: Wed, 16 Oct 2024 01:18:43 GMT  
-		Size: 173.0 B  
+	-	`sha256:fc9792f55ce4120bc17d691282d186c337e44ca3dce82f0f218133108c2be850`  
+		Last Modified: Sat, 19 Oct 2024 05:40:32 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:782963c19ab13b99b9e0d170cb549ebd99c77b1f3956ef112a3a2f69f01ddff7`  
-		Last Modified: Wed, 16 Oct 2024 01:18:43 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:316b2d603d7f729a7deec3f908f45b7e8fef1d4b6c185684c3c8f4fdc9bee299`  
+		Last Modified: Sat, 19 Oct 2024 05:40:32 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce1e518d68067f8a06aab23838b532e9becd7ca79220641d3e68f88798570785`  
-		Last Modified: Wed, 16 Oct 2024 02:37:41 GMT  
-		Size: 55.9 MB (55939116 bytes)  
+	-	`sha256:5ac4b3c503c3b2623422cb27a027614c7c1c233645bcfde730bb52e1347643fb`  
+		Last Modified: Sat, 19 Oct 2024 12:18:27 GMT  
+		Size: 55.9 MB (55938844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0ff1340e70c5b5e771a6c4fba0e76443e7303481de3dd67198bb97e9bf5d1b4`  
-		Last Modified: Wed, 16 Oct 2024 02:37:39 GMT  
-		Size: 615.0 B  
+	-	`sha256:df3f4720271e66ed240a2c54a205e6f136ab307d56b86178fc209a6830adccf1`  
+		Last Modified: Sat, 19 Oct 2024 12:18:25 GMT  
+		Size: 612.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e3289779d65df6f64f8ec99e56c2553f1fcd755c3f707b6e8e46e7c9ed4fbc3`  
-		Last Modified: Wed, 16 Oct 2024 02:37:39 GMT  
-		Size: 398.0 B  
+	-	`sha256:07fdb0b8f94ee51e2fd80fa18caa71df3340ffc6fd287d8fb2721f255e212991`  
+		Last Modified: Sat, 19 Oct 2024 12:18:25 GMT  
+		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-21-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:5c986ba9950b31ac45d69ce964aefe9bd7b72dfb9eae7200c423940a85d7b7f0
+$ docker pull clojure@sha256:980b0b1e3a0d526fa1a374035431fb92d65d85a101d1db3a9ece9eb3ce2ff8dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5716711 bytes)**  
+-	Total Size: **5.7 MB (5744705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:17f87179523560611e40b7d5189b83a9d49938fd1fbb3fd38d8225dadc3336af`
+-	Image ID: `sha256:b929e96dbd77c3dbf847e29ce8138ee45679ecf6fe309391d02ccadcbdfea325`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:45583164c632ec8e7a72c781098770783eff66df6de8fa2c87213a6da9c75839`  
-		Last Modified: Wed, 16 Oct 2024 02:37:40 GMT  
-		Size: 5.7 MB (5701057 bytes)  
+	-	`sha256:072d11ce659b0b44885294a8dd28a20b75bfbb1e4988778c15d6d0545d0f0914`  
+		Last Modified: Sat, 19 Oct 2024 12:18:25 GMT  
+		Size: 5.7 MB (5729028 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:245a1eaeeb937e5a027bbcc6dd05b067a2983d98464471985d99ff8540fbc5fd`  
-		Last Modified: Wed, 16 Oct 2024 02:37:39 GMT  
-		Size: 15.7 KB (15654 bytes)  
+	-	`sha256:fe01282a53d042c320bc5a2f0de1d9c33718f305f6a27407ae9bb842883fa814`  
+		Last Modified: Sat, 19 Oct 2024 12:18:25 GMT  
+		Size: 15.7 KB (15677 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-tools-deps`
 
 ```console
-$ docker pull clojure@sha256:f037d21d374a8731aff77b88f0c41bdbfd9a71e63da2c9c4182b10e400e2394a
+$ docker pull clojure@sha256:06e4acb98d656ed0b90ffd73d258b12bb55920f96d3abe9eec67229c0f28a13a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23544,31 +23544,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-21-tools-deps` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c3013576dde8bb5b2dbf531e1007965628a2512cce641532cc7458b8c9dc0299
+$ docker pull clojure@sha256:0457f5aa5d0ef0c35d7aa3352ae3e9f2966eeaca40ee29ade2836daf92c3e782
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7185243 bytes)**  
+-	Total Size: **7.2 MB (7211162 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cedd10b9bd72ba2dbe804298112f5790ce90c62764084a7fefea1b39ea41e5c1`
+-	Image ID: `sha256:96610469326f010312ac2976080d4f7673b49a3c148ed96ce3db22c6eaa67621`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3dab7c8d34dbd5f1ebad5ad50e1645901ddf0246fb03423ce09ef08e8a011ba1`  
-		Last Modified: Thu, 17 Oct 2024 08:22:59 GMT  
-		Size: 7.2 MB (7167587 bytes)  
+	-	`sha256:ffd7a791ef50a8c137605ebde7b110ec6ffb10fca6c4683d8c4fac7fb3201e41`  
+		Last Modified: Sat, 19 Oct 2024 12:15:10 GMT  
+		Size: 7.2 MB (7193332 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bcfdbc6c65b750289a607a77b84e0d6602d949ef9587feda44b7f292e93b71b1`  
-		Last Modified: Thu, 17 Oct 2024 08:22:58 GMT  
-		Size: 17.7 KB (17656 bytes)  
+	-	`sha256:a2f18595b0c9fdf2426ebd015e6622ba43a7e6dda92990894116ad1d8f18378c`  
+		Last Modified: Sat, 19 Oct 2024 12:15:10 GMT  
+		Size: 17.8 KB (17830 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-tools-deps-1.12.0.1479`
 
 ```console
-$ docker pull clojure@sha256:f037d21d374a8731aff77b88f0c41bdbfd9a71e63da2c9c4182b10e400e2394a
+$ docker pull clojure@sha256:06e4acb98d656ed0b90ffd73d258b12bb55920f96d3abe9eec67229c0f28a13a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23737,25 +23737,25 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-21-tools-deps-1.12.0.1479` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c3013576dde8bb5b2dbf531e1007965628a2512cce641532cc7458b8c9dc0299
+$ docker pull clojure@sha256:0457f5aa5d0ef0c35d7aa3352ae3e9f2966eeaca40ee29ade2836daf92c3e782
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7185243 bytes)**  
+-	Total Size: **7.2 MB (7211162 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cedd10b9bd72ba2dbe804298112f5790ce90c62764084a7fefea1b39ea41e5c1`
+-	Image ID: `sha256:96610469326f010312ac2976080d4f7673b49a3c148ed96ce3db22c6eaa67621`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3dab7c8d34dbd5f1ebad5ad50e1645901ddf0246fb03423ce09ef08e8a011ba1`  
-		Last Modified: Thu, 17 Oct 2024 08:22:59 GMT  
-		Size: 7.2 MB (7167587 bytes)  
+	-	`sha256:ffd7a791ef50a8c137605ebde7b110ec6ffb10fca6c4683d8c4fac7fb3201e41`  
+		Last Modified: Sat, 19 Oct 2024 12:15:10 GMT  
+		Size: 7.2 MB (7193332 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bcfdbc6c65b750289a607a77b84e0d6602d949ef9587feda44b7f292e93b71b1`  
-		Last Modified: Thu, 17 Oct 2024 08:22:58 GMT  
-		Size: 17.7 KB (17656 bytes)  
+	-	`sha256:a2f18595b0c9fdf2426ebd015e6622ba43a7e6dda92990894116ad1d8f18378c`  
+		Last Modified: Sat, 19 Oct 2024 12:15:10 GMT  
+		Size: 17.8 KB (17830 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-tools-deps-1.12.0.1479-alpine`
@@ -23888,7 +23888,7 @@ $ docker pull clojure@sha256:da2319a43e1d8304c86dd5a500284fae284a21e009f70826135
 ## `clojure:temurin-21-tools-deps-1.12.0.1479-bookworm`
 
 ```console
-$ docker pull clojure@sha256:f037d21d374a8731aff77b88f0c41bdbfd9a71e63da2c9c4182b10e400e2394a
+$ docker pull clojure@sha256:06e4acb98d656ed0b90ffd73d258b12bb55920f96d3abe9eec67229c0f28a13a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24057,31 +24057,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-21-tools-deps-1.12.0.1479-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c3013576dde8bb5b2dbf531e1007965628a2512cce641532cc7458b8c9dc0299
+$ docker pull clojure@sha256:0457f5aa5d0ef0c35d7aa3352ae3e9f2966eeaca40ee29ade2836daf92c3e782
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7185243 bytes)**  
+-	Total Size: **7.2 MB (7211162 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cedd10b9bd72ba2dbe804298112f5790ce90c62764084a7fefea1b39ea41e5c1`
+-	Image ID: `sha256:96610469326f010312ac2976080d4f7673b49a3c148ed96ce3db22c6eaa67621`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3dab7c8d34dbd5f1ebad5ad50e1645901ddf0246fb03423ce09ef08e8a011ba1`  
-		Last Modified: Thu, 17 Oct 2024 08:22:59 GMT  
-		Size: 7.2 MB (7167587 bytes)  
+	-	`sha256:ffd7a791ef50a8c137605ebde7b110ec6ffb10fca6c4683d8c4fac7fb3201e41`  
+		Last Modified: Sat, 19 Oct 2024 12:15:10 GMT  
+		Size: 7.2 MB (7193332 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bcfdbc6c65b750289a607a77b84e0d6602d949ef9587feda44b7f292e93b71b1`  
-		Last Modified: Thu, 17 Oct 2024 08:22:58 GMT  
-		Size: 17.7 KB (17656 bytes)  
+	-	`sha256:a2f18595b0c9fdf2426ebd015e6622ba43a7e6dda92990894116ad1d8f18378c`  
+		Last Modified: Sat, 19 Oct 2024 12:15:10 GMT  
+		Size: 17.8 KB (17830 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-tools-deps-1.12.0.1479-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:bd8db161cfc0cf808b15fc24a1dfb24702418e4847abed6ed6f6498c82aab7ba
+$ docker pull clojure@sha256:e1053f41f4ece3461edf267de6daa36856ce17791ba6ea8ee8260076c8d4af42
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24250,31 +24250,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-21-tools-deps-1.12.0.1479-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:440993ca474c6f93cf1b37b4bf5ddd2445c411422a97464e52dac4ee77322385
+$ docker pull clojure@sha256:d01be75a580cdb5d3ff501fa9684c417bb50621ed94c13dc60b3b2f75cf79f4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4920815 bytes)**  
+-	Total Size: **4.9 MB (4946734 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3db962a68690b26f2dcc63feb9c463fdd83ff5e15a8dcf862a91cad6ce4f6236`
+-	Image ID: `sha256:500a241f472807b67bea9ca6e9447fbe37ad9613ab2efcc28bc7d9a70d34b75a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8010bbc3a540232f5bf51a372cc5a2acdc3b6fd783f028d82a5d3769735547a5`  
-		Last Modified: Thu, 17 Oct 2024 08:23:53 GMT  
-		Size: 4.9 MB (4904438 bytes)  
+	-	`sha256:422cf4d49bf8072027de4f73132d4b041bfc0070c7ae95a0d600cb90ab82a3e6`  
+		Last Modified: Sat, 19 Oct 2024 12:15:49 GMT  
+		Size: 4.9 MB (4930183 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6622694192cdae9a3f32741d46de4596d159794f5dfe9a04152b4bf19581b310`  
-		Last Modified: Thu, 17 Oct 2024 08:23:53 GMT  
-		Size: 16.4 KB (16377 bytes)  
+	-	`sha256:ee54a5fec494a02c625bdec9aa576503b2d64eb7af32ab829e0287ad9d0fc54f`  
+		Last Modified: Sat, 19 Oct 2024 12:15:48 GMT  
+		Size: 16.6 KB (16551 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-tools-deps-1.12.0.1479-bullseye`
 
 ```console
-$ docker pull clojure@sha256:cac33d4e71bba5feea5494183aa62ca0fd0db678edcc2ab128e062372ea7bfab
+$ docker pull clojure@sha256:d842a6ca4eb9807456a8a33dce3cab8eff82049bdfcff5c9be2a44a1d498521a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24443,31 +24443,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-21-tools-deps-1.12.0.1479-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9a2432ae88fc8c33d1863fe7d6d33dff2e471821c67e1c124c2490472844e87c
+$ docker pull clojure@sha256:3e688408612a0fbeaa305c267c482b0a4c9a4ebe4f289c0ad058853facd8f0fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7215281 bytes)**  
+-	Total Size: **7.2 MB (7241199 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a6559e1e004fc1e53c36f95d0a5926859d9e46c86e7dd756ae485efe44631f97`
+-	Image ID: `sha256:abe982acc740f4901cd8c6b9375488ec8f9c8e8ec96cfbde95940e0519c4f995`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:95354d37b0d6081be253b1ff9b6018c0b030926fc9545320f8482e7937f84ca0`  
-		Last Modified: Thu, 17 Oct 2024 08:24:47 GMT  
-		Size: 7.2 MB (7198997 bytes)  
+	-	`sha256:154468ebfda0abcbd37367d568ca5f742511456392d8a8b46312f4da4bac47bf`  
+		Last Modified: Sat, 19 Oct 2024 12:16:21 GMT  
+		Size: 7.2 MB (7224742 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5b13107907f1f029d2fdbdcb3547abc06ef927666d0f63cc1089883a37b28a36`  
-		Last Modified: Thu, 17 Oct 2024 08:24:47 GMT  
-		Size: 16.3 KB (16284 bytes)  
+	-	`sha256:581b1b5e9531bf4b37416f084e971b5ffb70da6e0c769a5d317b62eb89765cd4`  
+		Last Modified: Sat, 19 Oct 2024 12:16:21 GMT  
+		Size: 16.5 KB (16457 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-tools-deps-1.12.0.1479-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:19b41dabb53a387113f06c94c0bf9949158d6cded9c25edd0de8c99a7f9654a7
+$ docker pull clojure@sha256:6fcbaa7ee2019937c9910f7c55f5a7a6594f640e0d1bc00184640638b0894f16
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24636,31 +24636,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-21-tools-deps-1.12.0.1479-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:f1a08e705c1f63e02bd45bed468302bf3d3beb27c5687e7b49e4fd2d7708ad23
+$ docker pull clojure@sha256:08ca8b9025e8957b3d99cf4d4069b309b5ae2a2850f408da66ff09d0ae3e780c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5125508 bytes)**  
+-	Total Size: **5.2 MB (5151429 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bddba01c365d58638783a4bdac5f9def041970e551f5b2bfc1b3a13bb9b92ca`
+-	Image ID: `sha256:626591e868d4ccf544f45ff91830c3e4e03216f32dcb3cb0e1d9f0f6d2d7e2ca`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d67e703b1538fc7721efca251b8add14ccb36456d6cb5b30a1fcc422b4311812`  
-		Last Modified: Thu, 17 Oct 2024 08:26:32 GMT  
-		Size: 5.1 MB (5109133 bytes)  
+	-	`sha256:a048f4b479cd90ec5fc4e540f4f6c146101071b253c8a6fd84b510b8c7118b4b`  
+		Last Modified: Sat, 19 Oct 2024 12:16:56 GMT  
+		Size: 5.1 MB (5134878 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5289685e300f4bb4af88b6da8cc0610259d242e1313c34c1a0fdc27ab4f82d1c`  
-		Last Modified: Thu, 17 Oct 2024 08:26:31 GMT  
-		Size: 16.4 KB (16375 bytes)  
+	-	`sha256:fc9c67810eafcb1c03a5922e7e4ec91dd260305efb9cd5819b51b2a53fe71ed5`  
+		Last Modified: Sat, 19 Oct 2024 12:16:55 GMT  
+		Size: 16.6 KB (16551 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-tools-deps-1.12.0.1479-jammy`
 
 ```console
-$ docker pull clojure@sha256:341083c8d86ced9f2cb76c85e599572fe52993b9ad749095f4942f98c5790fd7
+$ docker pull clojure@sha256:882152e781e782e228266531e512c3a1d115bdade4e602a46afe5ae1350df794
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24797,28 +24797,28 @@ $ docker pull clojure@sha256:debfc0b44d8f2b3813557dca9afec051438c12b7ce95731bfb1
 ### `clojure:temurin-21-tools-deps-1.12.0.1479-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:a61d9817bba17a70668e68cdd6f9c77d37408f30ac57f4f9dca9894464ecd495
+$ docker pull clojure@sha256:61bec6d81a5d16941fa0eef155a3b21f8170532a2eaeec31a28793e35c36ee35
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.6 MB (255599900 bytes)**  
+-	Total Size: **254.6 MB (254577318 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d058b3e2c2d409614f1c7864177cd796d868453596f6946bfc7a2a423ac76607`
+-	Image ID: `sha256:404527d47694fdee983e2039795416f200b56e72ed78d1f3ebcf4a00a927cc31`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -24840,88 +24840,88 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV CLOJURE_VERSION=1.12.0.1479
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "94f29b9b66183bd58307c46fb561fd9e9148666bac13a4518a9931b6f989d830 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENTRYPOINT ["entrypoint"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["-M" "--repl"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21a0c08aee9ece74cacae8ca7dfbcf838605c1e8bf9ae4ef62a9bf1d407ca7dd`  
-		Last Modified: Tue, 17 Sep 2024 01:39:26 GMT  
-		Size: 18.8 MB (18827958 bytes)  
+	-	`sha256:4f4328c2660e2acfd7df28e6cce03f948be8bfd9bc327b3747dcbddc8199302b`  
+		Last Modified: Sat, 19 Oct 2024 05:36:25 GMT  
+		Size: 18.8 MB (18842272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09549a3282b55b43a30b2d6c2beb9e1411a150ea79cf36555e24ceb3cae93826`  
-		Last Modified: Tue, 17 Sep 2024 01:40:38 GMT  
-		Size: 156.8 MB (156756708 bytes)  
+	-	`sha256:7daf2d659d84ebd02a1393cf32279fd8a0a21158cc4093ebd83f7d92e22cf09a`  
+		Last Modified: Sat, 19 Oct 2024 05:39:52 GMT  
+		Size: 156.8 MB (156757979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc054d5ba84160b816d15d0d2cb12d6f3ddadc08fd115816d88b7e3d349bf642`  
-		Last Modified: Tue, 17 Sep 2024 01:40:26 GMT  
-		Size: 174.0 B  
+	-	`sha256:6e8d984b96159524a5b0d21b585442e43e3c10ae61ec17b47cdbea16cb016a74`  
+		Last Modified: Sat, 19 Oct 2024 05:39:48 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9f4200e9aedb221f093343029d18baaf7a7a6524ee64058044795320f8d236c`  
-		Last Modified: Tue, 17 Sep 2024 01:40:26 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:cdee98b18a682b38297eb7b22f7d9fd9fddac9479e22bd28f7f4577dab80bc84`  
+		Last Modified: Sat, 19 Oct 2024 05:39:48 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9c5ae147a97dc462599ab881b851346d0899282b997df0366cb4a509fcd67fc`  
-		Last Modified: Tue, 17 Sep 2024 04:50:03 GMT  
-		Size: 51.6 MB (51614802 bytes)  
+	-	`sha256:fa0b970e356f97985b195f4d87b4f5fbccc5ed94a478effb2483252eda40a1d0`  
+		Last Modified: Sat, 19 Oct 2024 12:17:41 GMT  
+		Size: 51.6 MB (51615423 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1a5076ca9256fa633f0315334693f663256188f9b7f4b398020538ff0831ca70`  
-		Last Modified: Tue, 17 Sep 2024 04:50:02 GMT  
-		Size: 613.0 B  
+	-	`sha256:db3625bffda640b56a518d75aac82c3e7e53cf1f8c2ed87157e89017afbe9e1f`  
+		Last Modified: Sat, 19 Oct 2024 12:17:39 GMT  
+		Size: 616.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d35674ff1e39f24861a933df6ad6114d3e3c880206a5c3fcdf92374770efb48c`  
-		Last Modified: Tue, 17 Sep 2024 04:50:02 GMT  
-		Size: 398.0 B  
+	-	`sha256:6e02cde456e8dc62e0c334b9d2c6992a3ba54d465d3ff193297b452f566bd72d`  
+		Last Modified: Sat, 19 Oct 2024 12:17:39 GMT  
+		Size: 399.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-21-tools-deps-1.12.0.1479-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:49724072ef1c6850cb31642a55cc6be408b2c8c3b47139e05aedb7708699c2d1
+$ docker pull clojure@sha256:a68ff3db10887a6d8a1232c681370fc8f97b19451ccb07ed7ca8a51b58bd1011
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 MB (6030543 bytes)**  
+-	Total Size: **6.2 MB (6216554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0d979d7f45dadbbfff1cb4eb55ebe80929584c3ba6aa8b60facdf2043e9e75e`
+-	Image ID: `sha256:bbeb900e350741228662318840c99544307ed38c917764c23e837e616cc195ae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c19d115035d47479070e3a1c94f6ee578b327fb50f1f0d7f80466c192790c968`  
-		Last Modified: Tue, 17 Sep 2024 04:50:02 GMT  
-		Size: 6.0 MB (6014708 bytes)  
+	-	`sha256:1a87dbfc02900a96bd96cd356fcd4ae72b89fa4ec871ff910ce6bb1d04a63de9`  
+		Last Modified: Sat, 19 Oct 2024 12:17:40 GMT  
+		Size: 6.2 MB (6200876 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:117cab4418c0f371ec41ae1447b24ad90dbacb912a5e2c1b4b43249a159ba8d9`  
-		Last Modified: Tue, 17 Sep 2024 04:50:01 GMT  
-		Size: 15.8 KB (15835 bytes)  
+	-	`sha256:16f49d7f39e730945d3f5c873621aa9eee1304afe9262a9cd9167ed7d996749c`  
+		Last Modified: Sat, 19 Oct 2024 12:17:39 GMT  
+		Size: 15.7 KB (15678 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-tools-deps-1.12.0.1479-noble`
 
 ```console
-$ docker pull clojure@sha256:d02c0d5edd5d4f4ef525d6c0e7c948c5ada0d4410e6fb951e1a6fa865fbaf4fd
+$ docker pull clojure@sha256:9e56a1ff56db840f2bc59d89edc433fd0753ad48024a53ece5da6fa46eb4005b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25058,28 +25058,28 @@ $ docker pull clojure@sha256:509970e6a4a19450b29bf157443e2a3d9df9caf7ad73b2d38fb
 ### `clojure:temurin-21-tools-deps-1.12.0.1479-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:a0c57dcd3bf8233266df9168ce723db49786702a12535cfe3814e27a23792d40
+$ docker pull clojure@sha256:41054af0df47101e8b3a727e4fe84a38603e664faaf2c287555697ba7ee13fd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **263.6 MB (263616048 bytes)**  
+-	Total Size: **262.5 MB (262548331 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48a740feb8882138dda4de96b2e3564ee47afb72dd89c9c99361e2780bf0a7c4`
+-	Image ID: `sha256:3ec3147f1339e80a4fa64c0a66cfb9dfeabe773dadd692a88f1b3d4ec9af460c`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -25118,65 +25118,65 @@ CMD ["-M" "--repl"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a198149501abf09f7d2065dde4b2ebc6eafd97bb9331b52d06c6b2a199992128`  
-		Last Modified: Wed, 16 Oct 2024 01:17:59 GMT  
-		Size: 21.0 MB (20963830 bytes)  
+	-	`sha256:0a84341aaf3e356e3e4f81c1bdab6100eb048d95139a0fba28fc288df8b7742d`  
+		Last Modified: Sat, 19 Oct 2024 05:37:32 GMT  
+		Size: 21.0 MB (20961983 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa0b53f40f348880ee60f853ece99a5eb70477c27197ab96a0152b17e0d25d2a`  
-		Last Modified: Wed, 16 Oct 2024 01:18:53 GMT  
-		Size: 156.8 MB (156756973 bytes)  
+	-	`sha256:610271b625329a442f44231a5cdb958c29088c4eb7f99583de2513300199c1cf`  
+		Last Modified: Sat, 19 Oct 2024 05:40:36 GMT  
+		Size: 156.8 MB (156758351 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a1f4795eecb5ff8fe029ceea349c2ac62d04f4da15c43469e0d59dc712329f4`  
-		Last Modified: Wed, 16 Oct 2024 01:18:43 GMT  
-		Size: 173.0 B  
+	-	`sha256:fc9792f55ce4120bc17d691282d186c337e44ca3dce82f0f218133108c2be850`  
+		Last Modified: Sat, 19 Oct 2024 05:40:32 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:782963c19ab13b99b9e0d170cb549ebd99c77b1f3956ef112a3a2f69f01ddff7`  
-		Last Modified: Wed, 16 Oct 2024 01:18:43 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:316b2d603d7f729a7deec3f908f45b7e8fef1d4b6c185684c3c8f4fdc9bee299`  
+		Last Modified: Sat, 19 Oct 2024 05:40:32 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce1e518d68067f8a06aab23838b532e9becd7ca79220641d3e68f88798570785`  
-		Last Modified: Wed, 16 Oct 2024 02:37:41 GMT  
-		Size: 55.9 MB (55939116 bytes)  
+	-	`sha256:5ac4b3c503c3b2623422cb27a027614c7c1c233645bcfde730bb52e1347643fb`  
+		Last Modified: Sat, 19 Oct 2024 12:18:27 GMT  
+		Size: 55.9 MB (55938844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0ff1340e70c5b5e771a6c4fba0e76443e7303481de3dd67198bb97e9bf5d1b4`  
-		Last Modified: Wed, 16 Oct 2024 02:37:39 GMT  
-		Size: 615.0 B  
+	-	`sha256:df3f4720271e66ed240a2c54a205e6f136ab307d56b86178fc209a6830adccf1`  
+		Last Modified: Sat, 19 Oct 2024 12:18:25 GMT  
+		Size: 612.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e3289779d65df6f64f8ec99e56c2553f1fcd755c3f707b6e8e46e7c9ed4fbc3`  
-		Last Modified: Wed, 16 Oct 2024 02:37:39 GMT  
-		Size: 398.0 B  
+	-	`sha256:07fdb0b8f94ee51e2fd80fa18caa71df3340ffc6fd287d8fb2721f255e212991`  
+		Last Modified: Sat, 19 Oct 2024 12:18:25 GMT  
+		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-21-tools-deps-1.12.0.1479-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:5c986ba9950b31ac45d69ce964aefe9bd7b72dfb9eae7200c423940a85d7b7f0
+$ docker pull clojure@sha256:980b0b1e3a0d526fa1a374035431fb92d65d85a101d1db3a9ece9eb3ce2ff8dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5716711 bytes)**  
+-	Total Size: **5.7 MB (5744705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:17f87179523560611e40b7d5189b83a9d49938fd1fbb3fd38d8225dadc3336af`
+-	Image ID: `sha256:b929e96dbd77c3dbf847e29ce8138ee45679ecf6fe309391d02ccadcbdfea325`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:45583164c632ec8e7a72c781098770783eff66df6de8fa2c87213a6da9c75839`  
-		Last Modified: Wed, 16 Oct 2024 02:37:40 GMT  
-		Size: 5.7 MB (5701057 bytes)  
+	-	`sha256:072d11ce659b0b44885294a8dd28a20b75bfbb1e4988778c15d6d0545d0f0914`  
+		Last Modified: Sat, 19 Oct 2024 12:18:25 GMT  
+		Size: 5.7 MB (5729028 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:245a1eaeeb937e5a027bbcc6dd05b067a2983d98464471985d99ff8540fbc5fd`  
-		Last Modified: Wed, 16 Oct 2024 02:37:39 GMT  
-		Size: 15.7 KB (15654 bytes)  
+	-	`sha256:fe01282a53d042c320bc5a2f0de1d9c33718f305f6a27407ae9bb842883fa814`  
+		Last Modified: Sat, 19 Oct 2024 12:18:25 GMT  
+		Size: 15.7 KB (15677 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-tools-deps-alpine`
@@ -25309,7 +25309,7 @@ $ docker pull clojure@sha256:da2319a43e1d8304c86dd5a500284fae284a21e009f70826135
 ## `clojure:temurin-21-tools-deps-bookworm`
 
 ```console
-$ docker pull clojure@sha256:f037d21d374a8731aff77b88f0c41bdbfd9a71e63da2c9c4182b10e400e2394a
+$ docker pull clojure@sha256:06e4acb98d656ed0b90ffd73d258b12bb55920f96d3abe9eec67229c0f28a13a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25478,31 +25478,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-21-tools-deps-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c3013576dde8bb5b2dbf531e1007965628a2512cce641532cc7458b8c9dc0299
+$ docker pull clojure@sha256:0457f5aa5d0ef0c35d7aa3352ae3e9f2966eeaca40ee29ade2836daf92c3e782
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7185243 bytes)**  
+-	Total Size: **7.2 MB (7211162 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cedd10b9bd72ba2dbe804298112f5790ce90c62764084a7fefea1b39ea41e5c1`
+-	Image ID: `sha256:96610469326f010312ac2976080d4f7673b49a3c148ed96ce3db22c6eaa67621`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3dab7c8d34dbd5f1ebad5ad50e1645901ddf0246fb03423ce09ef08e8a011ba1`  
-		Last Modified: Thu, 17 Oct 2024 08:22:59 GMT  
-		Size: 7.2 MB (7167587 bytes)  
+	-	`sha256:ffd7a791ef50a8c137605ebde7b110ec6ffb10fca6c4683d8c4fac7fb3201e41`  
+		Last Modified: Sat, 19 Oct 2024 12:15:10 GMT  
+		Size: 7.2 MB (7193332 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bcfdbc6c65b750289a607a77b84e0d6602d949ef9587feda44b7f292e93b71b1`  
-		Last Modified: Thu, 17 Oct 2024 08:22:58 GMT  
-		Size: 17.7 KB (17656 bytes)  
+	-	`sha256:a2f18595b0c9fdf2426ebd015e6622ba43a7e6dda92990894116ad1d8f18378c`  
+		Last Modified: Sat, 19 Oct 2024 12:15:10 GMT  
+		Size: 17.8 KB (17830 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-tools-deps-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:bd8db161cfc0cf808b15fc24a1dfb24702418e4847abed6ed6f6498c82aab7ba
+$ docker pull clojure@sha256:e1053f41f4ece3461edf267de6daa36856ce17791ba6ea8ee8260076c8d4af42
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25671,31 +25671,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-21-tools-deps-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:440993ca474c6f93cf1b37b4bf5ddd2445c411422a97464e52dac4ee77322385
+$ docker pull clojure@sha256:d01be75a580cdb5d3ff501fa9684c417bb50621ed94c13dc60b3b2f75cf79f4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4920815 bytes)**  
+-	Total Size: **4.9 MB (4946734 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3db962a68690b26f2dcc63feb9c463fdd83ff5e15a8dcf862a91cad6ce4f6236`
+-	Image ID: `sha256:500a241f472807b67bea9ca6e9447fbe37ad9613ab2efcc28bc7d9a70d34b75a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8010bbc3a540232f5bf51a372cc5a2acdc3b6fd783f028d82a5d3769735547a5`  
-		Last Modified: Thu, 17 Oct 2024 08:23:53 GMT  
-		Size: 4.9 MB (4904438 bytes)  
+	-	`sha256:422cf4d49bf8072027de4f73132d4b041bfc0070c7ae95a0d600cb90ab82a3e6`  
+		Last Modified: Sat, 19 Oct 2024 12:15:49 GMT  
+		Size: 4.9 MB (4930183 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6622694192cdae9a3f32741d46de4596d159794f5dfe9a04152b4bf19581b310`  
-		Last Modified: Thu, 17 Oct 2024 08:23:53 GMT  
-		Size: 16.4 KB (16377 bytes)  
+	-	`sha256:ee54a5fec494a02c625bdec9aa576503b2d64eb7af32ab829e0287ad9d0fc54f`  
+		Last Modified: Sat, 19 Oct 2024 12:15:48 GMT  
+		Size: 16.6 KB (16551 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-tools-deps-bullseye`
 
 ```console
-$ docker pull clojure@sha256:cac33d4e71bba5feea5494183aa62ca0fd0db678edcc2ab128e062372ea7bfab
+$ docker pull clojure@sha256:d842a6ca4eb9807456a8a33dce3cab8eff82049bdfcff5c9be2a44a1d498521a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25864,31 +25864,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-21-tools-deps-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9a2432ae88fc8c33d1863fe7d6d33dff2e471821c67e1c124c2490472844e87c
+$ docker pull clojure@sha256:3e688408612a0fbeaa305c267c482b0a4c9a4ebe4f289c0ad058853facd8f0fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7215281 bytes)**  
+-	Total Size: **7.2 MB (7241199 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a6559e1e004fc1e53c36f95d0a5926859d9e46c86e7dd756ae485efe44631f97`
+-	Image ID: `sha256:abe982acc740f4901cd8c6b9375488ec8f9c8e8ec96cfbde95940e0519c4f995`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:95354d37b0d6081be253b1ff9b6018c0b030926fc9545320f8482e7937f84ca0`  
-		Last Modified: Thu, 17 Oct 2024 08:24:47 GMT  
-		Size: 7.2 MB (7198997 bytes)  
+	-	`sha256:154468ebfda0abcbd37367d568ca5f742511456392d8a8b46312f4da4bac47bf`  
+		Last Modified: Sat, 19 Oct 2024 12:16:21 GMT  
+		Size: 7.2 MB (7224742 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5b13107907f1f029d2fdbdcb3547abc06ef927666d0f63cc1089883a37b28a36`  
-		Last Modified: Thu, 17 Oct 2024 08:24:47 GMT  
-		Size: 16.3 KB (16284 bytes)  
+	-	`sha256:581b1b5e9531bf4b37416f084e971b5ffb70da6e0c769a5d317b62eb89765cd4`  
+		Last Modified: Sat, 19 Oct 2024 12:16:21 GMT  
+		Size: 16.5 KB (16457 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-tools-deps-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:19b41dabb53a387113f06c94c0bf9949158d6cded9c25edd0de8c99a7f9654a7
+$ docker pull clojure@sha256:6fcbaa7ee2019937c9910f7c55f5a7a6594f640e0d1bc00184640638b0894f16
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26057,31 +26057,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-21-tools-deps-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:f1a08e705c1f63e02bd45bed468302bf3d3beb27c5687e7b49e4fd2d7708ad23
+$ docker pull clojure@sha256:08ca8b9025e8957b3d99cf4d4069b309b5ae2a2850f408da66ff09d0ae3e780c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5125508 bytes)**  
+-	Total Size: **5.2 MB (5151429 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bddba01c365d58638783a4bdac5f9def041970e551f5b2bfc1b3a13bb9b92ca`
+-	Image ID: `sha256:626591e868d4ccf544f45ff91830c3e4e03216f32dcb3cb0e1d9f0f6d2d7e2ca`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d67e703b1538fc7721efca251b8add14ccb36456d6cb5b30a1fcc422b4311812`  
-		Last Modified: Thu, 17 Oct 2024 08:26:32 GMT  
-		Size: 5.1 MB (5109133 bytes)  
+	-	`sha256:a048f4b479cd90ec5fc4e540f4f6c146101071b253c8a6fd84b510b8c7118b4b`  
+		Last Modified: Sat, 19 Oct 2024 12:16:56 GMT  
+		Size: 5.1 MB (5134878 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5289685e300f4bb4af88b6da8cc0610259d242e1313c34c1a0fdc27ab4f82d1c`  
-		Last Modified: Thu, 17 Oct 2024 08:26:31 GMT  
-		Size: 16.4 KB (16375 bytes)  
+	-	`sha256:fc9c67810eafcb1c03a5922e7e4ec91dd260305efb9cd5819b51b2a53fe71ed5`  
+		Last Modified: Sat, 19 Oct 2024 12:16:55 GMT  
+		Size: 16.6 KB (16551 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-tools-deps-jammy`
 
 ```console
-$ docker pull clojure@sha256:341083c8d86ced9f2cb76c85e599572fe52993b9ad749095f4942f98c5790fd7
+$ docker pull clojure@sha256:882152e781e782e228266531e512c3a1d115bdade4e602a46afe5ae1350df794
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26218,28 +26218,28 @@ $ docker pull clojure@sha256:debfc0b44d8f2b3813557dca9afec051438c12b7ce95731bfb1
 ### `clojure:temurin-21-tools-deps-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:a61d9817bba17a70668e68cdd6f9c77d37408f30ac57f4f9dca9894464ecd495
+$ docker pull clojure@sha256:61bec6d81a5d16941fa0eef155a3b21f8170532a2eaeec31a28793e35c36ee35
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.6 MB (255599900 bytes)**  
+-	Total Size: **254.6 MB (254577318 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d058b3e2c2d409614f1c7864177cd796d868453596f6946bfc7a2a423ac76607`
+-	Image ID: `sha256:404527d47694fdee983e2039795416f200b56e72ed78d1f3ebcf4a00a927cc31`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -26261,88 +26261,88 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["jshell"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV CLOJURE_VERSION=1.12.0.1479
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "94f29b9b66183bd58307c46fb561fd9e9148666bac13a4518a9931b6f989d830 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY entrypoint /usr/local/bin/entrypoint # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENTRYPOINT ["entrypoint"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["-M" "--repl"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21a0c08aee9ece74cacae8ca7dfbcf838605c1e8bf9ae4ef62a9bf1d407ca7dd`  
-		Last Modified: Tue, 17 Sep 2024 01:39:26 GMT  
-		Size: 18.8 MB (18827958 bytes)  
+	-	`sha256:4f4328c2660e2acfd7df28e6cce03f948be8bfd9bc327b3747dcbddc8199302b`  
+		Last Modified: Sat, 19 Oct 2024 05:36:25 GMT  
+		Size: 18.8 MB (18842272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09549a3282b55b43a30b2d6c2beb9e1411a150ea79cf36555e24ceb3cae93826`  
-		Last Modified: Tue, 17 Sep 2024 01:40:38 GMT  
-		Size: 156.8 MB (156756708 bytes)  
+	-	`sha256:7daf2d659d84ebd02a1393cf32279fd8a0a21158cc4093ebd83f7d92e22cf09a`  
+		Last Modified: Sat, 19 Oct 2024 05:39:52 GMT  
+		Size: 156.8 MB (156757979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc054d5ba84160b816d15d0d2cb12d6f3ddadc08fd115816d88b7e3d349bf642`  
-		Last Modified: Tue, 17 Sep 2024 01:40:26 GMT  
-		Size: 174.0 B  
+	-	`sha256:6e8d984b96159524a5b0d21b585442e43e3c10ae61ec17b47cdbea16cb016a74`  
+		Last Modified: Sat, 19 Oct 2024 05:39:48 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9f4200e9aedb221f093343029d18baaf7a7a6524ee64058044795320f8d236c`  
-		Last Modified: Tue, 17 Sep 2024 01:40:26 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:cdee98b18a682b38297eb7b22f7d9fd9fddac9479e22bd28f7f4577dab80bc84`  
+		Last Modified: Sat, 19 Oct 2024 05:39:48 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9c5ae147a97dc462599ab881b851346d0899282b997df0366cb4a509fcd67fc`  
-		Last Modified: Tue, 17 Sep 2024 04:50:03 GMT  
-		Size: 51.6 MB (51614802 bytes)  
+	-	`sha256:fa0b970e356f97985b195f4d87b4f5fbccc5ed94a478effb2483252eda40a1d0`  
+		Last Modified: Sat, 19 Oct 2024 12:17:41 GMT  
+		Size: 51.6 MB (51615423 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1a5076ca9256fa633f0315334693f663256188f9b7f4b398020538ff0831ca70`  
-		Last Modified: Tue, 17 Sep 2024 04:50:02 GMT  
-		Size: 613.0 B  
+	-	`sha256:db3625bffda640b56a518d75aac82c3e7e53cf1f8c2ed87157e89017afbe9e1f`  
+		Last Modified: Sat, 19 Oct 2024 12:17:39 GMT  
+		Size: 616.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d35674ff1e39f24861a933df6ad6114d3e3c880206a5c3fcdf92374770efb48c`  
-		Last Modified: Tue, 17 Sep 2024 04:50:02 GMT  
-		Size: 398.0 B  
+	-	`sha256:6e02cde456e8dc62e0c334b9d2c6992a3ba54d465d3ff193297b452f566bd72d`  
+		Last Modified: Sat, 19 Oct 2024 12:17:39 GMT  
+		Size: 399.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-21-tools-deps-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:49724072ef1c6850cb31642a55cc6be408b2c8c3b47139e05aedb7708699c2d1
+$ docker pull clojure@sha256:a68ff3db10887a6d8a1232c681370fc8f97b19451ccb07ed7ca8a51b58bd1011
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.0 MB (6030543 bytes)**  
+-	Total Size: **6.2 MB (6216554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0d979d7f45dadbbfff1cb4eb55ebe80929584c3ba6aa8b60facdf2043e9e75e`
+-	Image ID: `sha256:bbeb900e350741228662318840c99544307ed38c917764c23e837e616cc195ae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c19d115035d47479070e3a1c94f6ee578b327fb50f1f0d7f80466c192790c968`  
-		Last Modified: Tue, 17 Sep 2024 04:50:02 GMT  
-		Size: 6.0 MB (6014708 bytes)  
+	-	`sha256:1a87dbfc02900a96bd96cd356fcd4ae72b89fa4ec871ff910ce6bb1d04a63de9`  
+		Last Modified: Sat, 19 Oct 2024 12:17:40 GMT  
+		Size: 6.2 MB (6200876 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:117cab4418c0f371ec41ae1447b24ad90dbacb912a5e2c1b4b43249a159ba8d9`  
-		Last Modified: Tue, 17 Sep 2024 04:50:01 GMT  
-		Size: 15.8 KB (15835 bytes)  
+	-	`sha256:16f49d7f39e730945d3f5c873621aa9eee1304afe9262a9cd9167ed7d996749c`  
+		Last Modified: Sat, 19 Oct 2024 12:17:39 GMT  
+		Size: 15.7 KB (15678 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-21-tools-deps-noble`
 
 ```console
-$ docker pull clojure@sha256:d02c0d5edd5d4f4ef525d6c0e7c948c5ada0d4410e6fb951e1a6fa865fbaf4fd
+$ docker pull clojure@sha256:9e56a1ff56db840f2bc59d89edc433fd0753ad48024a53ece5da6fa46eb4005b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26479,28 +26479,28 @@ $ docker pull clojure@sha256:509970e6a4a19450b29bf157443e2a3d9df9caf7ad73b2d38fb
 ### `clojure:temurin-21-tools-deps-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:a0c57dcd3bf8233266df9168ce723db49786702a12535cfe3814e27a23792d40
+$ docker pull clojure@sha256:41054af0df47101e8b3a727e4fe84a38603e664faaf2c287555697ba7ee13fd3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **263.6 MB (263616048 bytes)**  
+-	Total Size: **262.5 MB (262548331 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48a740feb8882138dda4de96b2e3564ee47afb72dd89c9c99361e2780bf0a7c4`
+-	Image ID: `sha256:3ec3147f1339e80a4fa64c0a66cfb9dfeabe773dadd692a88f1b3d4ec9af460c`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -26539,65 +26539,65 @@ CMD ["-M" "--repl"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a198149501abf09f7d2065dde4b2ebc6eafd97bb9331b52d06c6b2a199992128`  
-		Last Modified: Wed, 16 Oct 2024 01:17:59 GMT  
-		Size: 21.0 MB (20963830 bytes)  
+	-	`sha256:0a84341aaf3e356e3e4f81c1bdab6100eb048d95139a0fba28fc288df8b7742d`  
+		Last Modified: Sat, 19 Oct 2024 05:37:32 GMT  
+		Size: 21.0 MB (20961983 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa0b53f40f348880ee60f853ece99a5eb70477c27197ab96a0152b17e0d25d2a`  
-		Last Modified: Wed, 16 Oct 2024 01:18:53 GMT  
-		Size: 156.8 MB (156756973 bytes)  
+	-	`sha256:610271b625329a442f44231a5cdb958c29088c4eb7f99583de2513300199c1cf`  
+		Last Modified: Sat, 19 Oct 2024 05:40:36 GMT  
+		Size: 156.8 MB (156758351 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a1f4795eecb5ff8fe029ceea349c2ac62d04f4da15c43469e0d59dc712329f4`  
-		Last Modified: Wed, 16 Oct 2024 01:18:43 GMT  
-		Size: 173.0 B  
+	-	`sha256:fc9792f55ce4120bc17d691282d186c337e44ca3dce82f0f218133108c2be850`  
+		Last Modified: Sat, 19 Oct 2024 05:40:32 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:782963c19ab13b99b9e0d170cb549ebd99c77b1f3956ef112a3a2f69f01ddff7`  
-		Last Modified: Wed, 16 Oct 2024 01:18:43 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:316b2d603d7f729a7deec3f908f45b7e8fef1d4b6c185684c3c8f4fdc9bee299`  
+		Last Modified: Sat, 19 Oct 2024 05:40:32 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce1e518d68067f8a06aab23838b532e9becd7ca79220641d3e68f88798570785`  
-		Last Modified: Wed, 16 Oct 2024 02:37:41 GMT  
-		Size: 55.9 MB (55939116 bytes)  
+	-	`sha256:5ac4b3c503c3b2623422cb27a027614c7c1c233645bcfde730bb52e1347643fb`  
+		Last Modified: Sat, 19 Oct 2024 12:18:27 GMT  
+		Size: 55.9 MB (55938844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0ff1340e70c5b5e771a6c4fba0e76443e7303481de3dd67198bb97e9bf5d1b4`  
-		Last Modified: Wed, 16 Oct 2024 02:37:39 GMT  
-		Size: 615.0 B  
+	-	`sha256:df3f4720271e66ed240a2c54a205e6f136ab307d56b86178fc209a6830adccf1`  
+		Last Modified: Sat, 19 Oct 2024 12:18:25 GMT  
+		Size: 612.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e3289779d65df6f64f8ec99e56c2553f1fcd755c3f707b6e8e46e7c9ed4fbc3`  
-		Last Modified: Wed, 16 Oct 2024 02:37:39 GMT  
-		Size: 398.0 B  
+	-	`sha256:07fdb0b8f94ee51e2fd80fa18caa71df3340ffc6fd287d8fb2721f255e212991`  
+		Last Modified: Sat, 19 Oct 2024 12:18:25 GMT  
+		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-21-tools-deps-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:5c986ba9950b31ac45d69ce964aefe9bd7b72dfb9eae7200c423940a85d7b7f0
+$ docker pull clojure@sha256:980b0b1e3a0d526fa1a374035431fb92d65d85a101d1db3a9ece9eb3ce2ff8dd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5716711 bytes)**  
+-	Total Size: **5.7 MB (5744705 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:17f87179523560611e40b7d5189b83a9d49938fd1fbb3fd38d8225dadc3336af`
+-	Image ID: `sha256:b929e96dbd77c3dbf847e29ce8138ee45679ecf6fe309391d02ccadcbdfea325`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:45583164c632ec8e7a72c781098770783eff66df6de8fa2c87213a6da9c75839`  
-		Last Modified: Wed, 16 Oct 2024 02:37:40 GMT  
-		Size: 5.7 MB (5701057 bytes)  
+	-	`sha256:072d11ce659b0b44885294a8dd28a20b75bfbb1e4988778c15d6d0545d0f0914`  
+		Last Modified: Sat, 19 Oct 2024 12:18:25 GMT  
+		Size: 5.7 MB (5729028 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:245a1eaeeb937e5a027bbcc6dd05b067a2983d98464471985d99ff8540fbc5fd`  
-		Last Modified: Wed, 16 Oct 2024 02:37:39 GMT  
-		Size: 15.7 KB (15654 bytes)  
+	-	`sha256:fe01282a53d042c320bc5a2f0de1d9c33718f305f6a27407ae9bb842883fa814`  
+		Last Modified: Sat, 19 Oct 2024 12:18:25 GMT  
+		Size: 15.7 KB (15677 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-alpine`
@@ -26730,7 +26730,7 @@ $ docker pull clojure@sha256:76ae562881d648eb5cdf19a5d1c8d008ea22d765a8e038e8453
 ## `clojure:temurin-23-bookworm`
 
 ```console
-$ docker pull clojure@sha256:e838868de262a83ccf1ceb5aed1ec8550340e695b2ffcfcf41501dbb3a4a7cef
+$ docker pull clojure@sha256:d7d69b649e3e51d0b04e7c194f8967068acc064cccd429d25c64a6d4e6fa22e3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26899,31 +26899,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-23-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:d01a1cd4d961e2e0288e95aacea50ba08452d7eb542d288005cb28ce806488aa
+$ docker pull clojure@sha256:3bc0e61afa2ee7fccd2aac0b2a03c53b1d8a3dc9fdbcd3c3ca2dbd610f303188
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7183785 bytes)**  
+-	Total Size: **7.2 MB (7209703 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:045b867359975e217e54ce0704abf992cbaef7a7fb6958d39f77835771bc383c`
+-	Image ID: `sha256:ae3cbe4fc8f4a7e3b50e850ce727fb0bf4cdd300d36c5ba3c4ca2b6e70a5a910`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e1c33ee20bf653376ceca46cf6bc21cd982cac021d923510466b24975e234232`  
-		Last Modified: Thu, 17 Oct 2024 08:32:34 GMT  
-		Size: 7.2 MB (7167493 bytes)  
+	-	`sha256:defd3a071e6bf83d1e6709315ca6ff0c442c223944e3bdc831a1f43b614b953d`  
+		Last Modified: Sat, 19 Oct 2024 12:22:08 GMT  
+		Size: 7.2 MB (7193238 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:388953cbbd6a3bff1b2e375fbb4b14563deca21455750874af28004367db3baa`  
-		Last Modified: Thu, 17 Oct 2024 08:32:34 GMT  
-		Size: 16.3 KB (16292 bytes)  
+	-	`sha256:3c4192d95ba817ff69d1d2312af27c097199963e291f4fce37e1b1cdad29775b`  
+		Last Modified: Sat, 19 Oct 2024 12:22:07 GMT  
+		Size: 16.5 KB (16465 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:e633bd538989153fb963890399d962c0766452b3d467d7608eef41516f25e241
+$ docker pull clojure@sha256:edb00116202804bbcc12b7945fd146b05141d509f4e5cde41426ead54fcbf213
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27092,31 +27092,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-23-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:610f8a4a3cadd2b39fc1ee038ee77d3930ddae2b3abefc3dc2f5f8764c947b2c
+$ docker pull clojure@sha256:9cabdbfff4f1753101997e9d1bf19d9228164b2815d6ced21459f640e2c1aa54
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4920645 bytes)**  
+-	Total Size: **4.9 MB (4946563 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2955a7a2e42230d552b3989ac416cf9302d3f8fce92b047dee1d564304a7614e`
+-	Image ID: `sha256:857e08986e5943232d08f9d783e9506e5fc3ee78a8b4bb3294b7de40a250d3d2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dfbebe01b74fed0e40962f610724842d03817d58269b2198d88140fbd6814d14`  
-		Last Modified: Thu, 17 Oct 2024 08:33:22 GMT  
-		Size: 4.9 MB (4904988 bytes)  
+	-	`sha256:1676404ccc38e51d99bcfc585f81bfc58da446253c05650961d23d793123934e`  
+		Last Modified: Sat, 19 Oct 2024 12:22:40 GMT  
+		Size: 4.9 MB (4930733 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f5451f7597af63434f1083dd5d0662b37fd6c7959207e846c5b93657d7512b50`  
-		Last Modified: Thu, 17 Oct 2024 08:33:21 GMT  
-		Size: 15.7 KB (15657 bytes)  
+	-	`sha256:91b921974ee84c6f4cc4f90cbb8ad050c654a7fe980bcae68ae8bb9611c74b38`  
+		Last Modified: Sat, 19 Oct 2024 12:22:39 GMT  
+		Size: 15.8 KB (15830 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-bullseye`
 
 ```console
-$ docker pull clojure@sha256:237de1ee8f54d05c1b0505597b65c27d0c869d46e81a0f029893adbeb1fdb183
+$ docker pull clojure@sha256:8987e2cc24790ff724a90c173ebfce886c8a47c42ff68618322f9d4329edde40
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27285,31 +27285,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-23-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:dcca7000cfd69ca7dc83cf87428e23f5f66de9ef41a3de20623dd79742566767
+$ docker pull clojure@sha256:1478a59721d182dafbeb4243dc6ca297cacfe2aa64356761ad907ef4a27b89d0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7215151 bytes)**  
+-	Total Size: **7.2 MB (7241068 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a8f10c023d673954b1e0192fbe61b412bea6444bf50b8184c54c0a1f843f45f0`
+-	Image ID: `sha256:cb7ca0d6638452a680b8057195d7b2ea37e86fb6a04c4254f377a2afd0b58a20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6d1eb154b1594a10e5436cbf9c28d3018ea7d47b7de3e51e585c9ce35d6095d6`  
-		Last Modified: Thu, 17 Oct 2024 08:34:12 GMT  
-		Size: 7.2 MB (7199567 bytes)  
+	-	`sha256:a3916478bffba3e5e3b5ab178bffe403b353f4af49ffb35653214d35927ea683`  
+		Last Modified: Sat, 19 Oct 2024 12:23:13 GMT  
+		Size: 7.2 MB (7225312 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6ceeb082f376fe692a0bdbd452d66e213ab8bce87ebc8101eeb95763d4a4066a`  
-		Last Modified: Thu, 17 Oct 2024 08:34:11 GMT  
-		Size: 15.6 KB (15584 bytes)  
+	-	`sha256:8e8fab135e139f3be9266fbcf4585d0251694332cd3ddcc979043498674ae886`  
+		Last Modified: Sat, 19 Oct 2024 12:23:13 GMT  
+		Size: 15.8 KB (15756 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:e88a007776ee04e86946b63d996023cea4887f421a905440b1bba0a1aab2e55c
+$ docker pull clojure@sha256:7fcf53a9c01aeae0db968d5c2bad41f9569fefac0f1b93a147a7ff24855183a1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27478,31 +27478,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-23-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:0a7cb054fbf0b86d6240a6203b97a7b8a004f37fbe57693e950428258924c623
+$ docker pull clojure@sha256:6c380af601aae3d454e7d09b142d352fed7e9ba499c86d039ad73eb30afcec67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5125340 bytes)**  
+-	Total Size: **5.2 MB (5151258 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21ad7990ddb993f43f2b8edda0d821d90b6b9bd8549af705ec4ce27d88dd12c3`
+-	Image ID: `sha256:19d32deeecf276ddf4f9970100f0aa0beb5a9ce57d8bafe7afa356e0acc3c6e8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e8d747fd922eee9d325745d18e1a7f386f1834d99b547bc62ca83ec16c050462`  
-		Last Modified: Thu, 17 Oct 2024 08:34:58 GMT  
-		Size: 5.1 MB (5109683 bytes)  
+	-	`sha256:c1bf14be31e6fd6b90201f2725376002918759bf0fb79fb07cbf27594bc623b7`  
+		Last Modified: Sat, 19 Oct 2024 12:23:50 GMT  
+		Size: 5.1 MB (5135428 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e22171e57466f2da006d841d48230a4dfc5b1ab93193a829e0a040cde33d1634`  
-		Last Modified: Thu, 17 Oct 2024 08:34:58 GMT  
-		Size: 15.7 KB (15657 bytes)  
+	-	`sha256:13471af6c854d07468abb86446a5c82cd41640bfd8da46b580eb86d28ebda231`  
+		Last Modified: Sat, 19 Oct 2024 12:23:49 GMT  
+		Size: 15.8 KB (15830 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-lein`
 
 ```console
-$ docker pull clojure@sha256:1ac05a24cdfe45c3aa6dd94306269f2a788517c0f2c30e4c32e67f3242f43a44
+$ docker pull clojure@sha256:5479876991b29bf926abd81623a98a1086e25a966e739ea7c590399d838f42d4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27683,31 +27683,31 @@ CMD ["repl"]
 ### `clojure:temurin-23-lein` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:2e55fd12b4c15dc4d94e0c623d29083f77487cc662944235313caebfb61129a1
+$ docker pull clojure@sha256:e308f440ddb3574204946e799c9fcc4f8f033569ac896504a7838812d14a3045
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6550342 bytes)**  
+-	Total Size: **6.6 MB (6574669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c8853d810ff8852bccd9db5d64c057a81626aa059abfbbf4035ac7075112366`
+-	Image ID: `sha256:8d7b7654166a94ef8c585f22eb4c102738b65fbadbb45fdc7f7258ecac9ddfd9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fb8298d52e6a0dd5f9844f25dd57a9a24faa016db91daee07d719aae55c28e02`  
-		Last Modified: Thu, 17 Oct 2024 08:27:38 GMT  
-		Size: 6.5 MB (6531479 bytes)  
+	-	`sha256:b55259bb9af8f925c23899534cb3f9f1b16b3504ec2d5e1ffee6d7d2e7254124`  
+		Last Modified: Sat, 19 Oct 2024 12:19:08 GMT  
+		Size: 6.6 MB (6555634 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:53ce5879c6b897e298692c3c4746792d335e811e81054667ac9bd690caf731bd`  
-		Last Modified: Thu, 17 Oct 2024 08:27:37 GMT  
-		Size: 18.9 KB (18863 bytes)  
+	-	`sha256:0fc39eae10eb525e2fd0ae1a7d5a440434ddf5d68d348ccebfabb84feb3577fe`  
+		Last Modified: Sat, 19 Oct 2024 12:19:08 GMT  
+		Size: 19.0 KB (19035 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-lein-2.11.2`
 
 ```console
-$ docker pull clojure@sha256:1ac05a24cdfe45c3aa6dd94306269f2a788517c0f2c30e4c32e67f3242f43a44
+$ docker pull clojure@sha256:5479876991b29bf926abd81623a98a1086e25a966e739ea7c590399d838f42d4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27888,25 +27888,25 @@ CMD ["repl"]
 ### `clojure:temurin-23-lein-2.11.2` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:2e55fd12b4c15dc4d94e0c623d29083f77487cc662944235313caebfb61129a1
+$ docker pull clojure@sha256:e308f440ddb3574204946e799c9fcc4f8f033569ac896504a7838812d14a3045
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6550342 bytes)**  
+-	Total Size: **6.6 MB (6574669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c8853d810ff8852bccd9db5d64c057a81626aa059abfbbf4035ac7075112366`
+-	Image ID: `sha256:8d7b7654166a94ef8c585f22eb4c102738b65fbadbb45fdc7f7258ecac9ddfd9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fb8298d52e6a0dd5f9844f25dd57a9a24faa016db91daee07d719aae55c28e02`  
-		Last Modified: Thu, 17 Oct 2024 08:27:38 GMT  
-		Size: 6.5 MB (6531479 bytes)  
+	-	`sha256:b55259bb9af8f925c23899534cb3f9f1b16b3504ec2d5e1ffee6d7d2e7254124`  
+		Last Modified: Sat, 19 Oct 2024 12:19:08 GMT  
+		Size: 6.6 MB (6555634 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:53ce5879c6b897e298692c3c4746792d335e811e81054667ac9bd690caf731bd`  
-		Last Modified: Thu, 17 Oct 2024 08:27:37 GMT  
-		Size: 18.9 KB (18863 bytes)  
+	-	`sha256:0fc39eae10eb525e2fd0ae1a7d5a440434ddf5d68d348ccebfabb84feb3577fe`  
+		Last Modified: Sat, 19 Oct 2024 12:19:08 GMT  
+		Size: 19.0 KB (19035 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-lein-2.11.2-alpine`
@@ -28045,7 +28045,7 @@ $ docker pull clojure@sha256:c99dfe106066af0b8d56a07af9fa64e75058ffc932d206aec42
 ## `clojure:temurin-23-lein-2.11.2-bookworm`
 
 ```console
-$ docker pull clojure@sha256:1ac05a24cdfe45c3aa6dd94306269f2a788517c0f2c30e4c32e67f3242f43a44
+$ docker pull clojure@sha256:5479876991b29bf926abd81623a98a1086e25a966e739ea7c590399d838f42d4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28226,31 +28226,31 @@ CMD ["repl"]
 ### `clojure:temurin-23-lein-2.11.2-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:2e55fd12b4c15dc4d94e0c623d29083f77487cc662944235313caebfb61129a1
+$ docker pull clojure@sha256:e308f440ddb3574204946e799c9fcc4f8f033569ac896504a7838812d14a3045
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6550342 bytes)**  
+-	Total Size: **6.6 MB (6574669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c8853d810ff8852bccd9db5d64c057a81626aa059abfbbf4035ac7075112366`
+-	Image ID: `sha256:8d7b7654166a94ef8c585f22eb4c102738b65fbadbb45fdc7f7258ecac9ddfd9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fb8298d52e6a0dd5f9844f25dd57a9a24faa016db91daee07d719aae55c28e02`  
-		Last Modified: Thu, 17 Oct 2024 08:27:38 GMT  
-		Size: 6.5 MB (6531479 bytes)  
+	-	`sha256:b55259bb9af8f925c23899534cb3f9f1b16b3504ec2d5e1ffee6d7d2e7254124`  
+		Last Modified: Sat, 19 Oct 2024 12:19:08 GMT  
+		Size: 6.6 MB (6555634 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:53ce5879c6b897e298692c3c4746792d335e811e81054667ac9bd690caf731bd`  
-		Last Modified: Thu, 17 Oct 2024 08:27:37 GMT  
-		Size: 18.9 KB (18863 bytes)  
+	-	`sha256:0fc39eae10eb525e2fd0ae1a7d5a440434ddf5d68d348ccebfabb84feb3577fe`  
+		Last Modified: Sat, 19 Oct 2024 12:19:08 GMT  
+		Size: 19.0 KB (19035 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-lein-2.11.2-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:02e643ea6ca669e69dfcf4a00a511c801f6a75cc1f738944953e1337288ed754
+$ docker pull clojure@sha256:74499d6ba92e5fcf0b7e374a5d69aa7e72d94061aacc791c3f6870b640b51761
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28431,31 +28431,31 @@ CMD ["repl"]
 ### `clojure:temurin-23-lein-2.11.2-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:adf4a654ad58fe5b5a706cb2623378c68303c7c70bce6bd539c07af7c9986398
+$ docker pull clojure@sha256:661d1eea692f4306abb80aa393fdc9e957fb47ba4095bf34b345a4e2097ef591
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4332165 bytes)**  
+-	Total Size: **4.4 MB (4356387 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a68f171eb6077f1ad980adb0205e3b2a99103228f66aeab3e929d758dc8dd7ae`
+-	Image ID: `sha256:f1c0fc9295355fddc42c81cdc180ba677e68675025391bebe05b82f74843871d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:46ca394b23a74284747bdfb7fc72f9fdb0b979bea996ed681ed3ecd3c8b883de`  
-		Last Modified: Thu, 17 Oct 2024 08:28:44 GMT  
-		Size: 4.3 MB (4313926 bytes)  
+	-	`sha256:8b0fe89373bff6c33eecc92b94da86da282ca726a3b9798d5f4afa5497b23e63`  
+		Last Modified: Sat, 19 Oct 2024 12:19:40 GMT  
+		Size: 4.3 MB (4337975 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a8206a69cb52e270a125b997ec88849a3c992f37b842b6d9b17941b31d264f50`  
-		Last Modified: Thu, 17 Oct 2024 08:28:43 GMT  
-		Size: 18.2 KB (18239 bytes)  
+	-	`sha256:82d7e5d923730beb09f8764d06a157b3b0eca1b37330c4f2befcc278828f7d8a`  
+		Last Modified: Sat, 19 Oct 2024 12:19:39 GMT  
+		Size: 18.4 KB (18412 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-lein-2.11.2-bullseye`
 
 ```console
-$ docker pull clojure@sha256:06e7f5a8f3689249be95843827677cbceaa9fad8c63aec6c59144443d6c8f430
+$ docker pull clojure@sha256:488c9b6a914a70f1ea93c1be2f3ae7228d41caf2966d1e265e8c42ca31d67775
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28636,31 +28636,31 @@ CMD ["repl"]
 ### `clojure:temurin-23-lein-2.11.2-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:baa4423ea6b2bc245fc69967640c775e56fa1f588f3111b0df1d613e8f4f1773
+$ docker pull clojure@sha256:7c0d37174e0fff008d9b9b0ac44831ecf1d041ac5e455c57d4dbceeaa1827307
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6633958 bytes)**  
+-	Total Size: **6.7 MB (6658605 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0eb330a4ed58b8cb672ffc83d6576d874167e859ded0efa4118cb6b93dd82e5b`
+-	Image ID: `sha256:65a3a2cfc63d90a18b0dada04a390719e2df728533c1668b943d4cd95b208d1b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b7f2128d734a6f1d771e8ba454e09e49e76e584a1d9bb9a2473fdedb9b612215`  
-		Last Modified: Thu, 17 Oct 2024 08:29:54 GMT  
-		Size: 6.6 MB (6615770 bytes)  
+	-	`sha256:e7b395b95f6e0a6faafa059da9947743df085cd4f704c0ea6aebf1a948734d7f`  
+		Last Modified: Sat, 19 Oct 2024 12:20:12 GMT  
+		Size: 6.6 MB (6640243 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:36753250ebf3e343b64adaf80ede6cfd2903527083d06d813d8ffa9098abc7fa`  
-		Last Modified: Thu, 17 Oct 2024 08:29:53 GMT  
-		Size: 18.2 KB (18188 bytes)  
+	-	`sha256:e808c3d50a1faf565190cbf9de27782bb3fa08f34fb50e740bff01dac43fa180`  
+		Last Modified: Sat, 19 Oct 2024 12:20:11 GMT  
+		Size: 18.4 KB (18362 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-lein-2.11.2-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:0ce042e0ba753e4add7e893a927602b7fb1c7d595f69140ea4314719c263f920
+$ docker pull clojure@sha256:7864ab8b61825a1a7b7a94e6d96cce941c1a3dead5c10cb4f3f950d819cabe0f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28841,31 +28841,31 @@ CMD ["repl"]
 ### `clojure:temurin-23-lein-2.11.2-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:46b4facafd9fdd56c5970cefcf09bcc0c3a49f35ea7c084c3e94b8a1245ad948
+$ docker pull clojure@sha256:188be0b165c567f695c2bd575e8f5a95f8f1eb87cc9103b55a44001b0fb13832
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.6 MB (4580240 bytes)**  
+-	Total Size: **4.6 MB (4604780 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a076d8429629114b00a22c0871ca0fbdc0c23bd5dea981d656ed91350d4a4510`
+-	Image ID: `sha256:3de65cc588f3fcf03d49d038cc56a49cf7fe8082bc277f1bf3aafdf77d0fbb2f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8f181e3030da6cc722b2f4756d85393f4ff81b47d93ea7c1ba973743d26f1e8c`  
-		Last Modified: Thu, 17 Oct 2024 08:31:02 GMT  
-		Size: 4.6 MB (4562001 bytes)  
+	-	`sha256:3cf49317e0bffd0fb0d9f7a9f69fa7ee9bcd837fcf8575eb4dc2eed487b9c1b1`  
+		Last Modified: Sat, 19 Oct 2024 12:20:39 GMT  
+		Size: 4.6 MB (4586368 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bdefd34d68bf84362e30ef35f736b6ec892c666b910d046b10669f191ee5f3bd`  
-		Last Modified: Thu, 17 Oct 2024 08:31:01 GMT  
-		Size: 18.2 KB (18239 bytes)  
+	-	`sha256:ca85e8346dae2586466de45a68e7297f7d75d5391bb233949602d427c50dd9c3`  
+		Last Modified: Sat, 19 Oct 2024 12:20:39 GMT  
+		Size: 18.4 KB (18412 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-lein-2.11.2-noble`
 
 ```console
-$ docker pull clojure@sha256:f5689e8190e8459f64757d4c68baa5346c39b6e7d26b73b1313c06cf22ed28cb
+$ docker pull clojure@sha256:6f59ecd356d5a134a1be8e3e07c8030a1f599e8bd6e49fe6a642d6c5583aa2bc
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -29008,28 +29008,28 @@ $ docker pull clojure@sha256:0dd2e85893e501cb517d36a665d324aed9a4045245302ea43f0
 ### `clojure:temurin-23-lein-2.11.2-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:e62bbb7fdd694df3e737c3fa1b132284731cb8a0dbfb33b6ee042ae36c36fb57
+$ docker pull clojure@sha256:0ec888b0ab3f82d7ff5b9b588c7eca4ffc53b6a1bea868fa589aba8b9ef5d50b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.4 MB (256357080 bytes)**  
+-	Total Size: **255.3 MB (255289613 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:563fbbea6d58a12ad58792e628fd2e74caab056d0265274704047632bb20af66`
+-	Image ID: `sha256:405d4faaf8dfc62f3fdaa44600a2b757c8fbb1cd20401946a9b16421f945820e`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 CMD ["/bin/bash"]
 # Wed, 18 Sep 2024 19:12:13 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -29074,65 +29074,65 @@ CMD ["repl"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:281f222bc79db09e568399b36dc24e86e77da3201df1247524f179e08d4ba074`  
-		Last Modified: Wed, 16 Oct 2024 01:19:20 GMT  
-		Size: 19.0 MB (19013016 bytes)  
+	-	`sha256:31ba8c8e36b0c65fe8cfde6020dd17f67769efaa08905c35dcd5093078c7055e`  
+		Last Modified: Sat, 19 Oct 2024 05:42:32 GMT  
+		Size: 19.0 MB (19012310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a71c086970ddc308820ead7432558cf95fd50099fd3dd67af6b09cfa9056458a`  
-		Last Modified: Wed, 16 Oct 2024 01:19:29 GMT  
-		Size: 163.3 MB (163256350 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bfe2517f284b51de3e57cfd1d9d7c39fd44968fde73fde95e4c7633515c432c1`  
-		Last Modified: Wed, 16 Oct 2024 01:19:18 GMT  
-		Size: 144.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8980d81d23a210669113fd708554d9e2fd628112d62110d3b2d73738d0b89d6e`  
-		Last Modified: Wed, 16 Oct 2024 01:19:18 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:98760afb9f172863e5bd9a838dcf6a06739b67a3c83ca8333fd2736743cd0e7a`  
+		Last Modified: Sat, 19 Oct 2024 05:42:35 GMT  
+		Size: 163.3 MB (163255995 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:86d772bfe2fc4c0482703dc0689a8f6858d13d2d09e631ad8f286596dc0b78eb`  
-		Last Modified: Wed, 16 Oct 2024 02:41:10 GMT  
-		Size: 39.6 MB (39618062 bytes)  
+	-	`sha256:43bc543cb647e0867e7c2cdeaadaa8ad4a3591844b5d9c2c030de9ebd273363b`  
+		Last Modified: Sat, 19 Oct 2024 05:42:31 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:54253c4b4653f9288791811e8968c1f050bdfd1996768d387875cd82e81955d7`  
-		Last Modified: Wed, 16 Oct 2024 02:41:09 GMT  
-		Size: 4.5 MB (4514168 bytes)  
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:150bb7de6fffc16d3dd5c073ebdc784bb3063e7672ece3428fee3ce15a06e47b`  
-		Last Modified: Wed, 16 Oct 2024 02:41:09 GMT  
+	-	`sha256:fffc509c764139b2210a60abdd67a7fc71c42206a46f32594e99bf187f538587`  
+		Last Modified: Sat, 19 Oct 2024 12:21:36 GMT  
+		Size: 39.6 MB (39618732 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3786c3adab382ee8d501831578097fefd5a1f0397ca81dc36229d21c4cd69df6`  
+		Last Modified: Sat, 19 Oct 2024 12:21:36 GMT  
+		Size: 4.5 MB (4514161 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d005ff361ee18d4c96a1a50de5f1de0ee835e9c22db1c4e81fb4a2cbd7a2529d`  
+		Last Modified: Sat, 19 Oct 2024 12:21:35 GMT  
 		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-23-lein-2.11.2-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:370b21ba65068aa0fd79959bc14ea398aa03033a1d507732e685c6d25250d9b7
+$ docker pull clojure@sha256:333328f9bb8ff8759393277b670066f551a192fe94be803983533772dd723453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5136426 bytes)**  
+-	Total Size: **5.2 MB (5163462 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a84a74050294f07ecffb144a088e0b947e0165b08d14eac9ee8206fbae79e9bc`
+-	Image ID: `sha256:4647c91e813f8028a598106ce5beadcdec548e196c54e3d4bd2ed982ca6c9f29`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:15c57b8b712452d790a439e789532dc11b505fa8b66dbd9dad274a77577d705d`  
-		Last Modified: Wed, 16 Oct 2024 02:41:08 GMT  
-		Size: 5.1 MB (5117936 bytes)  
+	-	`sha256:d7c7ced7d59cdf8a891eed456329a44d4fc0dccfff93745e03bc9d765ecee0e5`  
+		Last Modified: Sat, 19 Oct 2024 12:21:35 GMT  
+		Size: 5.1 MB (5144953 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6f151242b4bdd8430958de0791209ac3ab469291e25a3299f7b6ec43d57641fd`  
-		Last Modified: Wed, 16 Oct 2024 02:41:07 GMT  
-		Size: 18.5 KB (18490 bytes)  
+	-	`sha256:5f18058702719a28f6587c15806c1511d3e611818e3637fcb2b422c5742ec0b9`  
+		Last Modified: Sat, 19 Oct 2024 12:21:35 GMT  
+		Size: 18.5 KB (18509 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-lein-alpine`
@@ -29271,7 +29271,7 @@ $ docker pull clojure@sha256:c99dfe106066af0b8d56a07af9fa64e75058ffc932d206aec42
 ## `clojure:temurin-23-lein-bookworm`
 
 ```console
-$ docker pull clojure@sha256:1ac05a24cdfe45c3aa6dd94306269f2a788517c0f2c30e4c32e67f3242f43a44
+$ docker pull clojure@sha256:5479876991b29bf926abd81623a98a1086e25a966e739ea7c590399d838f42d4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -29452,31 +29452,31 @@ CMD ["repl"]
 ### `clojure:temurin-23-lein-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:2e55fd12b4c15dc4d94e0c623d29083f77487cc662944235313caebfb61129a1
+$ docker pull clojure@sha256:e308f440ddb3574204946e799c9fcc4f8f033569ac896504a7838812d14a3045
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6550342 bytes)**  
+-	Total Size: **6.6 MB (6574669 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c8853d810ff8852bccd9db5d64c057a81626aa059abfbbf4035ac7075112366`
+-	Image ID: `sha256:8d7b7654166a94ef8c585f22eb4c102738b65fbadbb45fdc7f7258ecac9ddfd9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fb8298d52e6a0dd5f9844f25dd57a9a24faa016db91daee07d719aae55c28e02`  
-		Last Modified: Thu, 17 Oct 2024 08:27:38 GMT  
-		Size: 6.5 MB (6531479 bytes)  
+	-	`sha256:b55259bb9af8f925c23899534cb3f9f1b16b3504ec2d5e1ffee6d7d2e7254124`  
+		Last Modified: Sat, 19 Oct 2024 12:19:08 GMT  
+		Size: 6.6 MB (6555634 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:53ce5879c6b897e298692c3c4746792d335e811e81054667ac9bd690caf731bd`  
-		Last Modified: Thu, 17 Oct 2024 08:27:37 GMT  
-		Size: 18.9 KB (18863 bytes)  
+	-	`sha256:0fc39eae10eb525e2fd0ae1a7d5a440434ddf5d68d348ccebfabb84feb3577fe`  
+		Last Modified: Sat, 19 Oct 2024 12:19:08 GMT  
+		Size: 19.0 KB (19035 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-lein-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:02e643ea6ca669e69dfcf4a00a511c801f6a75cc1f738944953e1337288ed754
+$ docker pull clojure@sha256:74499d6ba92e5fcf0b7e374a5d69aa7e72d94061aacc791c3f6870b640b51761
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -29657,31 +29657,31 @@ CMD ["repl"]
 ### `clojure:temurin-23-lein-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:adf4a654ad58fe5b5a706cb2623378c68303c7c70bce6bd539c07af7c9986398
+$ docker pull clojure@sha256:661d1eea692f4306abb80aa393fdc9e957fb47ba4095bf34b345a4e2097ef591
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.3 MB (4332165 bytes)**  
+-	Total Size: **4.4 MB (4356387 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a68f171eb6077f1ad980adb0205e3b2a99103228f66aeab3e929d758dc8dd7ae`
+-	Image ID: `sha256:f1c0fc9295355fddc42c81cdc180ba677e68675025391bebe05b82f74843871d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:46ca394b23a74284747bdfb7fc72f9fdb0b979bea996ed681ed3ecd3c8b883de`  
-		Last Modified: Thu, 17 Oct 2024 08:28:44 GMT  
-		Size: 4.3 MB (4313926 bytes)  
+	-	`sha256:8b0fe89373bff6c33eecc92b94da86da282ca726a3b9798d5f4afa5497b23e63`  
+		Last Modified: Sat, 19 Oct 2024 12:19:40 GMT  
+		Size: 4.3 MB (4337975 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a8206a69cb52e270a125b997ec88849a3c992f37b842b6d9b17941b31d264f50`  
-		Last Modified: Thu, 17 Oct 2024 08:28:43 GMT  
-		Size: 18.2 KB (18239 bytes)  
+	-	`sha256:82d7e5d923730beb09f8764d06a157b3b0eca1b37330c4f2befcc278828f7d8a`  
+		Last Modified: Sat, 19 Oct 2024 12:19:39 GMT  
+		Size: 18.4 KB (18412 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-lein-bullseye`
 
 ```console
-$ docker pull clojure@sha256:06e7f5a8f3689249be95843827677cbceaa9fad8c63aec6c59144443d6c8f430
+$ docker pull clojure@sha256:488c9b6a914a70f1ea93c1be2f3ae7228d41caf2966d1e265e8c42ca31d67775
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -29862,31 +29862,31 @@ CMD ["repl"]
 ### `clojure:temurin-23-lein-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:baa4423ea6b2bc245fc69967640c775e56fa1f588f3111b0df1d613e8f4f1773
+$ docker pull clojure@sha256:7c0d37174e0fff008d9b9b0ac44831ecf1d041ac5e455c57d4dbceeaa1827307
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6633958 bytes)**  
+-	Total Size: **6.7 MB (6658605 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0eb330a4ed58b8cb672ffc83d6576d874167e859ded0efa4118cb6b93dd82e5b`
+-	Image ID: `sha256:65a3a2cfc63d90a18b0dada04a390719e2df728533c1668b943d4cd95b208d1b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b7f2128d734a6f1d771e8ba454e09e49e76e584a1d9bb9a2473fdedb9b612215`  
-		Last Modified: Thu, 17 Oct 2024 08:29:54 GMT  
-		Size: 6.6 MB (6615770 bytes)  
+	-	`sha256:e7b395b95f6e0a6faafa059da9947743df085cd4f704c0ea6aebf1a948734d7f`  
+		Last Modified: Sat, 19 Oct 2024 12:20:12 GMT  
+		Size: 6.6 MB (6640243 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:36753250ebf3e343b64adaf80ede6cfd2903527083d06d813d8ffa9098abc7fa`  
-		Last Modified: Thu, 17 Oct 2024 08:29:53 GMT  
-		Size: 18.2 KB (18188 bytes)  
+	-	`sha256:e808c3d50a1faf565190cbf9de27782bb3fa08f34fb50e740bff01dac43fa180`  
+		Last Modified: Sat, 19 Oct 2024 12:20:11 GMT  
+		Size: 18.4 KB (18362 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-lein-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:0ce042e0ba753e4add7e893a927602b7fb1c7d595f69140ea4314719c263f920
+$ docker pull clojure@sha256:7864ab8b61825a1a7b7a94e6d96cce941c1a3dead5c10cb4f3f950d819cabe0f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30067,31 +30067,31 @@ CMD ["repl"]
 ### `clojure:temurin-23-lein-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:46b4facafd9fdd56c5970cefcf09bcc0c3a49f35ea7c084c3e94b8a1245ad948
+$ docker pull clojure@sha256:188be0b165c567f695c2bd575e8f5a95f8f1eb87cc9103b55a44001b0fb13832
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.6 MB (4580240 bytes)**  
+-	Total Size: **4.6 MB (4604780 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a076d8429629114b00a22c0871ca0fbdc0c23bd5dea981d656ed91350d4a4510`
+-	Image ID: `sha256:3de65cc588f3fcf03d49d038cc56a49cf7fe8082bc277f1bf3aafdf77d0fbb2f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8f181e3030da6cc722b2f4756d85393f4ff81b47d93ea7c1ba973743d26f1e8c`  
-		Last Modified: Thu, 17 Oct 2024 08:31:02 GMT  
-		Size: 4.6 MB (4562001 bytes)  
+	-	`sha256:3cf49317e0bffd0fb0d9f7a9f69fa7ee9bcd837fcf8575eb4dc2eed487b9c1b1`  
+		Last Modified: Sat, 19 Oct 2024 12:20:39 GMT  
+		Size: 4.6 MB (4586368 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bdefd34d68bf84362e30ef35f736b6ec892c666b910d046b10669f191ee5f3bd`  
-		Last Modified: Thu, 17 Oct 2024 08:31:01 GMT  
-		Size: 18.2 KB (18239 bytes)  
+	-	`sha256:ca85e8346dae2586466de45a68e7297f7d75d5391bb233949602d427c50dd9c3`  
+		Last Modified: Sat, 19 Oct 2024 12:20:39 GMT  
+		Size: 18.4 KB (18412 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-lein-noble`
 
 ```console
-$ docker pull clojure@sha256:f5689e8190e8459f64757d4c68baa5346c39b6e7d26b73b1313c06cf22ed28cb
+$ docker pull clojure@sha256:6f59ecd356d5a134a1be8e3e07c8030a1f599e8bd6e49fe6a642d6c5583aa2bc
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30234,28 +30234,28 @@ $ docker pull clojure@sha256:0dd2e85893e501cb517d36a665d324aed9a4045245302ea43f0
 ### `clojure:temurin-23-lein-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:e62bbb7fdd694df3e737c3fa1b132284731cb8a0dbfb33b6ee042ae36c36fb57
+$ docker pull clojure@sha256:0ec888b0ab3f82d7ff5b9b588c7eca4ffc53b6a1bea868fa589aba8b9ef5d50b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **256.4 MB (256357080 bytes)**  
+-	Total Size: **255.3 MB (255289613 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:563fbbea6d58a12ad58792e628fd2e74caab056d0265274704047632bb20af66`
+-	Image ID: `sha256:405d4faaf8dfc62f3fdaa44600a2b757c8fbb1cd20401946a9b16421f945820e`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 CMD ["/bin/bash"]
 # Wed, 18 Sep 2024 19:12:13 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -30300,71 +30300,71 @@ CMD ["repl"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:281f222bc79db09e568399b36dc24e86e77da3201df1247524f179e08d4ba074`  
-		Last Modified: Wed, 16 Oct 2024 01:19:20 GMT  
-		Size: 19.0 MB (19013016 bytes)  
+	-	`sha256:31ba8c8e36b0c65fe8cfde6020dd17f67769efaa08905c35dcd5093078c7055e`  
+		Last Modified: Sat, 19 Oct 2024 05:42:32 GMT  
+		Size: 19.0 MB (19012310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a71c086970ddc308820ead7432558cf95fd50099fd3dd67af6b09cfa9056458a`  
-		Last Modified: Wed, 16 Oct 2024 01:19:29 GMT  
-		Size: 163.3 MB (163256350 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bfe2517f284b51de3e57cfd1d9d7c39fd44968fde73fde95e4c7633515c432c1`  
-		Last Modified: Wed, 16 Oct 2024 01:19:18 GMT  
-		Size: 144.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8980d81d23a210669113fd708554d9e2fd628112d62110d3b2d73738d0b89d6e`  
-		Last Modified: Wed, 16 Oct 2024 01:19:18 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:98760afb9f172863e5bd9a838dcf6a06739b67a3c83ca8333fd2736743cd0e7a`  
+		Last Modified: Sat, 19 Oct 2024 05:42:35 GMT  
+		Size: 163.3 MB (163255995 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:86d772bfe2fc4c0482703dc0689a8f6858d13d2d09e631ad8f286596dc0b78eb`  
-		Last Modified: Wed, 16 Oct 2024 02:41:10 GMT  
-		Size: 39.6 MB (39618062 bytes)  
+	-	`sha256:43bc543cb647e0867e7c2cdeaadaa8ad4a3591844b5d9c2c030de9ebd273363b`  
+		Last Modified: Sat, 19 Oct 2024 05:42:31 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:54253c4b4653f9288791811e8968c1f050bdfd1996768d387875cd82e81955d7`  
-		Last Modified: Wed, 16 Oct 2024 02:41:09 GMT  
-		Size: 4.5 MB (4514168 bytes)  
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:150bb7de6fffc16d3dd5c073ebdc784bb3063e7672ece3428fee3ce15a06e47b`  
-		Last Modified: Wed, 16 Oct 2024 02:41:09 GMT  
+	-	`sha256:fffc509c764139b2210a60abdd67a7fc71c42206a46f32594e99bf187f538587`  
+		Last Modified: Sat, 19 Oct 2024 12:21:36 GMT  
+		Size: 39.6 MB (39618732 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3786c3adab382ee8d501831578097fefd5a1f0397ca81dc36229d21c4cd69df6`  
+		Last Modified: Sat, 19 Oct 2024 12:21:36 GMT  
+		Size: 4.5 MB (4514161 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d005ff361ee18d4c96a1a50de5f1de0ee835e9c22db1c4e81fb4a2cbd7a2529d`  
+		Last Modified: Sat, 19 Oct 2024 12:21:35 GMT  
 		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-23-lein-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:370b21ba65068aa0fd79959bc14ea398aa03033a1d507732e685c6d25250d9b7
+$ docker pull clojure@sha256:333328f9bb8ff8759393277b670066f551a192fe94be803983533772dd723453
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5136426 bytes)**  
+-	Total Size: **5.2 MB (5163462 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a84a74050294f07ecffb144a088e0b947e0165b08d14eac9ee8206fbae79e9bc`
+-	Image ID: `sha256:4647c91e813f8028a598106ce5beadcdec548e196c54e3d4bd2ed982ca6c9f29`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:15c57b8b712452d790a439e789532dc11b505fa8b66dbd9dad274a77577d705d`  
-		Last Modified: Wed, 16 Oct 2024 02:41:08 GMT  
-		Size: 5.1 MB (5117936 bytes)  
+	-	`sha256:d7c7ced7d59cdf8a891eed456329a44d4fc0dccfff93745e03bc9d765ecee0e5`  
+		Last Modified: Sat, 19 Oct 2024 12:21:35 GMT  
+		Size: 5.1 MB (5144953 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6f151242b4bdd8430958de0791209ac3ab469291e25a3299f7b6ec43d57641fd`  
-		Last Modified: Wed, 16 Oct 2024 02:41:07 GMT  
-		Size: 18.5 KB (18490 bytes)  
+	-	`sha256:5f18058702719a28f6587c15806c1511d3e611818e3637fcb2b422c5742ec0b9`  
+		Last Modified: Sat, 19 Oct 2024 12:21:35 GMT  
+		Size: 18.5 KB (18509 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-noble`
 
 ```console
-$ docker pull clojure@sha256:b20d464bca1aa29c6bceb6eaa55d8f23c9bf2e7783c2f0732c9a49d8e3569e44
+$ docker pull clojure@sha256:006a0946172cba5ac9eae2389cb6ba5f61461aff827f51b28e1d42bd1f6197eb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30501,28 +30501,28 @@ $ docker pull clojure@sha256:2679f23fc2b6453f80a00cffeb1d3f58d59bbef3343f9bbe36e
 ### `clojure:temurin-23-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:20cfa8c30943e5a999e3bd0eb2c378e604e789de069cf2b8d54ee3d050a9c845
+$ docker pull clojure@sha256:79fddc17cac51b6c18c2624ef64204cc5ac8806897f22b05fd0268b03064adea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.3 MB (270256976 bytes)**  
+-	Total Size: **269.2 MB (269189223 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ae88114f1ea17237756935af4e529421eb22caa7940ab8d510efdb9d86700ef`
+-	Image ID: `sha256:3a6e14ced215caf05360ec31b7b875af1795ea3f76f8398ddfeb4e881bedbdcf`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 CMD ["/bin/bash"]
 # Wed, 18 Sep 2024 19:12:13 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -30561,71 +30561,71 @@ CMD ["-M" "--repl"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:281f222bc79db09e568399b36dc24e86e77da3201df1247524f179e08d4ba074`  
-		Last Modified: Wed, 16 Oct 2024 01:19:20 GMT  
-		Size: 19.0 MB (19013016 bytes)  
+	-	`sha256:31ba8c8e36b0c65fe8cfde6020dd17f67769efaa08905c35dcd5093078c7055e`  
+		Last Modified: Sat, 19 Oct 2024 05:42:32 GMT  
+		Size: 19.0 MB (19012310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a71c086970ddc308820ead7432558cf95fd50099fd3dd67af6b09cfa9056458a`  
-		Last Modified: Wed, 16 Oct 2024 01:19:29 GMT  
-		Size: 163.3 MB (163256350 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bfe2517f284b51de3e57cfd1d9d7c39fd44968fde73fde95e4c7633515c432c1`  
-		Last Modified: Wed, 16 Oct 2024 01:19:18 GMT  
-		Size: 144.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8980d81d23a210669113fd708554d9e2fd628112d62110d3b2d73738d0b89d6e`  
-		Last Modified: Wed, 16 Oct 2024 01:19:18 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:98760afb9f172863e5bd9a838dcf6a06739b67a3c83ca8333fd2736743cd0e7a`  
+		Last Modified: Sat, 19 Oct 2024 05:42:35 GMT  
+		Size: 163.3 MB (163255995 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76fef98c1a61e4a2da7983b88df299bc6ec7847b73a64375ac7a55d438391123`  
-		Last Modified: Wed, 16 Oct 2024 02:44:06 GMT  
-		Size: 58.0 MB (58031513 bytes)  
+	-	`sha256:43bc543cb647e0867e7c2cdeaadaa8ad4a3591844b5d9c2c030de9ebd273363b`  
+		Last Modified: Sat, 19 Oct 2024 05:42:31 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13b3cecb00aa22b7399560d70e4b0908f60f8cfe8212b6253d399098fe375850`  
-		Last Modified: Wed, 16 Oct 2024 02:44:04 GMT  
-		Size: 613.0 B  
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02e1fba1750f0cbe3393242ba87dfea1e268e071949c4e88f5b3b6d35ddc5179`  
-		Last Modified: Wed, 16 Oct 2024 02:44:04 GMT  
+	-	`sha256:79cfb364738dc89d188abd56b24f4340b0fb720617665995bbfbbfb65d72b57d`  
+		Last Modified: Sat, 19 Oct 2024 12:24:38 GMT  
+		Size: 58.0 MB (58031888 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c91736819890f555d9b961bda0e7ccf83a56ecf3015cc6c7792837e6b64e8348`  
+		Last Modified: Sat, 19 Oct 2024 12:24:36 GMT  
+		Size: 615.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f8b652348e634ed39860d107c9ffc1a59703b399388496f1bfca31cd44943c79`  
+		Last Modified: Sat, 19 Oct 2024 12:24:36 GMT  
 		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-23-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:f29a7753654d0c47b2aa219ce619fed9cf404ed0a3111810ad3357fa5997b653
+$ docker pull clojure@sha256:ffa8f85e589ff54f4f472b49946972044748754c18bc65f271da82134f072b1c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5738662 bytes)**  
+-	Total Size: **5.8 MB (5767077 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae2ae0a1ab369956f8036561cdeb7d14d2ff1ee79628094535abd6871e4743be`
+-	Image ID: `sha256:00a3578332611227a9c148d0220e85d92341558db2cfe61e671cfe86fa3a91dc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7877071c286b19a29573f57d639b8cdb57d707a5c7cd3fc2bce287229b922dbf`  
-		Last Modified: Wed, 16 Oct 2024 02:44:04 GMT  
-		Size: 5.7 MB (5723012 bytes)  
+	-	`sha256:f44f01429d3d4d7cc2119bd5bf6ee324145b615b88fa7ae2e3d9908985859d86`  
+		Last Modified: Sat, 19 Oct 2024 12:24:37 GMT  
+		Size: 5.8 MB (5751407 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7ee04774bf579e1e35a21784f46987cefd2bad0bad67f24c7303bcefa5bb5d02`  
-		Last Modified: Wed, 16 Oct 2024 02:44:03 GMT  
-		Size: 15.7 KB (15650 bytes)  
+	-	`sha256:df992dca5acca5f67997351a629128c2fdcb9f95611e1e9f5eae910fe9657efa`  
+		Last Modified: Sat, 19 Oct 2024 12:24:36 GMT  
+		Size: 15.7 KB (15670 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-tools-deps`
 
 ```console
-$ docker pull clojure@sha256:e838868de262a83ccf1ceb5aed1ec8550340e695b2ffcfcf41501dbb3a4a7cef
+$ docker pull clojure@sha256:d7d69b649e3e51d0b04e7c194f8967068acc064cccd429d25c64a6d4e6fa22e3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30794,31 +30794,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-23-tools-deps` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:d01a1cd4d961e2e0288e95aacea50ba08452d7eb542d288005cb28ce806488aa
+$ docker pull clojure@sha256:3bc0e61afa2ee7fccd2aac0b2a03c53b1d8a3dc9fdbcd3c3ca2dbd610f303188
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7183785 bytes)**  
+-	Total Size: **7.2 MB (7209703 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:045b867359975e217e54ce0704abf992cbaef7a7fb6958d39f77835771bc383c`
+-	Image ID: `sha256:ae3cbe4fc8f4a7e3b50e850ce727fb0bf4cdd300d36c5ba3c4ca2b6e70a5a910`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e1c33ee20bf653376ceca46cf6bc21cd982cac021d923510466b24975e234232`  
-		Last Modified: Thu, 17 Oct 2024 08:32:34 GMT  
-		Size: 7.2 MB (7167493 bytes)  
+	-	`sha256:defd3a071e6bf83d1e6709315ca6ff0c442c223944e3bdc831a1f43b614b953d`  
+		Last Modified: Sat, 19 Oct 2024 12:22:08 GMT  
+		Size: 7.2 MB (7193238 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:388953cbbd6a3bff1b2e375fbb4b14563deca21455750874af28004367db3baa`  
-		Last Modified: Thu, 17 Oct 2024 08:32:34 GMT  
-		Size: 16.3 KB (16292 bytes)  
+	-	`sha256:3c4192d95ba817ff69d1d2312af27c097199963e291f4fce37e1b1cdad29775b`  
+		Last Modified: Sat, 19 Oct 2024 12:22:07 GMT  
+		Size: 16.5 KB (16465 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-tools-deps-1.12.0.1479`
 
 ```console
-$ docker pull clojure@sha256:e838868de262a83ccf1ceb5aed1ec8550340e695b2ffcfcf41501dbb3a4a7cef
+$ docker pull clojure@sha256:d7d69b649e3e51d0b04e7c194f8967068acc064cccd429d25c64a6d4e6fa22e3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30987,25 +30987,25 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-23-tools-deps-1.12.0.1479` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:d01a1cd4d961e2e0288e95aacea50ba08452d7eb542d288005cb28ce806488aa
+$ docker pull clojure@sha256:3bc0e61afa2ee7fccd2aac0b2a03c53b1d8a3dc9fdbcd3c3ca2dbd610f303188
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7183785 bytes)**  
+-	Total Size: **7.2 MB (7209703 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:045b867359975e217e54ce0704abf992cbaef7a7fb6958d39f77835771bc383c`
+-	Image ID: `sha256:ae3cbe4fc8f4a7e3b50e850ce727fb0bf4cdd300d36c5ba3c4ca2b6e70a5a910`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e1c33ee20bf653376ceca46cf6bc21cd982cac021d923510466b24975e234232`  
-		Last Modified: Thu, 17 Oct 2024 08:32:34 GMT  
-		Size: 7.2 MB (7167493 bytes)  
+	-	`sha256:defd3a071e6bf83d1e6709315ca6ff0c442c223944e3bdc831a1f43b614b953d`  
+		Last Modified: Sat, 19 Oct 2024 12:22:08 GMT  
+		Size: 7.2 MB (7193238 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:388953cbbd6a3bff1b2e375fbb4b14563deca21455750874af28004367db3baa`  
-		Last Modified: Thu, 17 Oct 2024 08:32:34 GMT  
-		Size: 16.3 KB (16292 bytes)  
+	-	`sha256:3c4192d95ba817ff69d1d2312af27c097199963e291f4fce37e1b1cdad29775b`  
+		Last Modified: Sat, 19 Oct 2024 12:22:07 GMT  
+		Size: 16.5 KB (16465 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-tools-deps-1.12.0.1479-alpine`
@@ -31138,7 +31138,7 @@ $ docker pull clojure@sha256:76ae562881d648eb5cdf19a5d1c8d008ea22d765a8e038e8453
 ## `clojure:temurin-23-tools-deps-1.12.0.1479-bookworm`
 
 ```console
-$ docker pull clojure@sha256:e838868de262a83ccf1ceb5aed1ec8550340e695b2ffcfcf41501dbb3a4a7cef
+$ docker pull clojure@sha256:d7d69b649e3e51d0b04e7c194f8967068acc064cccd429d25c64a6d4e6fa22e3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -31307,31 +31307,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-23-tools-deps-1.12.0.1479-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:d01a1cd4d961e2e0288e95aacea50ba08452d7eb542d288005cb28ce806488aa
+$ docker pull clojure@sha256:3bc0e61afa2ee7fccd2aac0b2a03c53b1d8a3dc9fdbcd3c3ca2dbd610f303188
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7183785 bytes)**  
+-	Total Size: **7.2 MB (7209703 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:045b867359975e217e54ce0704abf992cbaef7a7fb6958d39f77835771bc383c`
+-	Image ID: `sha256:ae3cbe4fc8f4a7e3b50e850ce727fb0bf4cdd300d36c5ba3c4ca2b6e70a5a910`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e1c33ee20bf653376ceca46cf6bc21cd982cac021d923510466b24975e234232`  
-		Last Modified: Thu, 17 Oct 2024 08:32:34 GMT  
-		Size: 7.2 MB (7167493 bytes)  
+	-	`sha256:defd3a071e6bf83d1e6709315ca6ff0c442c223944e3bdc831a1f43b614b953d`  
+		Last Modified: Sat, 19 Oct 2024 12:22:08 GMT  
+		Size: 7.2 MB (7193238 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:388953cbbd6a3bff1b2e375fbb4b14563deca21455750874af28004367db3baa`  
-		Last Modified: Thu, 17 Oct 2024 08:32:34 GMT  
-		Size: 16.3 KB (16292 bytes)  
+	-	`sha256:3c4192d95ba817ff69d1d2312af27c097199963e291f4fce37e1b1cdad29775b`  
+		Last Modified: Sat, 19 Oct 2024 12:22:07 GMT  
+		Size: 16.5 KB (16465 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-tools-deps-1.12.0.1479-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:e633bd538989153fb963890399d962c0766452b3d467d7608eef41516f25e241
+$ docker pull clojure@sha256:edb00116202804bbcc12b7945fd146b05141d509f4e5cde41426ead54fcbf213
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -31500,31 +31500,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-23-tools-deps-1.12.0.1479-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:610f8a4a3cadd2b39fc1ee038ee77d3930ddae2b3abefc3dc2f5f8764c947b2c
+$ docker pull clojure@sha256:9cabdbfff4f1753101997e9d1bf19d9228164b2815d6ced21459f640e2c1aa54
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4920645 bytes)**  
+-	Total Size: **4.9 MB (4946563 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2955a7a2e42230d552b3989ac416cf9302d3f8fce92b047dee1d564304a7614e`
+-	Image ID: `sha256:857e08986e5943232d08f9d783e9506e5fc3ee78a8b4bb3294b7de40a250d3d2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dfbebe01b74fed0e40962f610724842d03817d58269b2198d88140fbd6814d14`  
-		Last Modified: Thu, 17 Oct 2024 08:33:22 GMT  
-		Size: 4.9 MB (4904988 bytes)  
+	-	`sha256:1676404ccc38e51d99bcfc585f81bfc58da446253c05650961d23d793123934e`  
+		Last Modified: Sat, 19 Oct 2024 12:22:40 GMT  
+		Size: 4.9 MB (4930733 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f5451f7597af63434f1083dd5d0662b37fd6c7959207e846c5b93657d7512b50`  
-		Last Modified: Thu, 17 Oct 2024 08:33:21 GMT  
-		Size: 15.7 KB (15657 bytes)  
+	-	`sha256:91b921974ee84c6f4cc4f90cbb8ad050c654a7fe980bcae68ae8bb9611c74b38`  
+		Last Modified: Sat, 19 Oct 2024 12:22:39 GMT  
+		Size: 15.8 KB (15830 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-tools-deps-1.12.0.1479-bullseye`
 
 ```console
-$ docker pull clojure@sha256:237de1ee8f54d05c1b0505597b65c27d0c869d46e81a0f029893adbeb1fdb183
+$ docker pull clojure@sha256:8987e2cc24790ff724a90c173ebfce886c8a47c42ff68618322f9d4329edde40
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -31693,31 +31693,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-23-tools-deps-1.12.0.1479-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:dcca7000cfd69ca7dc83cf87428e23f5f66de9ef41a3de20623dd79742566767
+$ docker pull clojure@sha256:1478a59721d182dafbeb4243dc6ca297cacfe2aa64356761ad907ef4a27b89d0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7215151 bytes)**  
+-	Total Size: **7.2 MB (7241068 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a8f10c023d673954b1e0192fbe61b412bea6444bf50b8184c54c0a1f843f45f0`
+-	Image ID: `sha256:cb7ca0d6638452a680b8057195d7b2ea37e86fb6a04c4254f377a2afd0b58a20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6d1eb154b1594a10e5436cbf9c28d3018ea7d47b7de3e51e585c9ce35d6095d6`  
-		Last Modified: Thu, 17 Oct 2024 08:34:12 GMT  
-		Size: 7.2 MB (7199567 bytes)  
+	-	`sha256:a3916478bffba3e5e3b5ab178bffe403b353f4af49ffb35653214d35927ea683`  
+		Last Modified: Sat, 19 Oct 2024 12:23:13 GMT  
+		Size: 7.2 MB (7225312 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6ceeb082f376fe692a0bdbd452d66e213ab8bce87ebc8101eeb95763d4a4066a`  
-		Last Modified: Thu, 17 Oct 2024 08:34:11 GMT  
-		Size: 15.6 KB (15584 bytes)  
+	-	`sha256:8e8fab135e139f3be9266fbcf4585d0251694332cd3ddcc979043498674ae886`  
+		Last Modified: Sat, 19 Oct 2024 12:23:13 GMT  
+		Size: 15.8 KB (15756 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-tools-deps-1.12.0.1479-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:e88a007776ee04e86946b63d996023cea4887f421a905440b1bba0a1aab2e55c
+$ docker pull clojure@sha256:7fcf53a9c01aeae0db968d5c2bad41f9569fefac0f1b93a147a7ff24855183a1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -31886,31 +31886,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-23-tools-deps-1.12.0.1479-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:0a7cb054fbf0b86d6240a6203b97a7b8a004f37fbe57693e950428258924c623
+$ docker pull clojure@sha256:6c380af601aae3d454e7d09b142d352fed7e9ba499c86d039ad73eb30afcec67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5125340 bytes)**  
+-	Total Size: **5.2 MB (5151258 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21ad7990ddb993f43f2b8edda0d821d90b6b9bd8549af705ec4ce27d88dd12c3`
+-	Image ID: `sha256:19d32deeecf276ddf4f9970100f0aa0beb5a9ce57d8bafe7afa356e0acc3c6e8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e8d747fd922eee9d325745d18e1a7f386f1834d99b547bc62ca83ec16c050462`  
-		Last Modified: Thu, 17 Oct 2024 08:34:58 GMT  
-		Size: 5.1 MB (5109683 bytes)  
+	-	`sha256:c1bf14be31e6fd6b90201f2725376002918759bf0fb79fb07cbf27594bc623b7`  
+		Last Modified: Sat, 19 Oct 2024 12:23:50 GMT  
+		Size: 5.1 MB (5135428 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e22171e57466f2da006d841d48230a4dfc5b1ab93193a829e0a040cde33d1634`  
-		Last Modified: Thu, 17 Oct 2024 08:34:58 GMT  
-		Size: 15.7 KB (15657 bytes)  
+	-	`sha256:13471af6c854d07468abb86446a5c82cd41640bfd8da46b580eb86d28ebda231`  
+		Last Modified: Sat, 19 Oct 2024 12:23:49 GMT  
+		Size: 15.8 KB (15830 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-tools-deps-1.12.0.1479-noble`
 
 ```console
-$ docker pull clojure@sha256:b20d464bca1aa29c6bceb6eaa55d8f23c9bf2e7783c2f0732c9a49d8e3569e44
+$ docker pull clojure@sha256:006a0946172cba5ac9eae2389cb6ba5f61461aff827f51b28e1d42bd1f6197eb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -32047,28 +32047,28 @@ $ docker pull clojure@sha256:2679f23fc2b6453f80a00cffeb1d3f58d59bbef3343f9bbe36e
 ### `clojure:temurin-23-tools-deps-1.12.0.1479-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:20cfa8c30943e5a999e3bd0eb2c378e604e789de069cf2b8d54ee3d050a9c845
+$ docker pull clojure@sha256:79fddc17cac51b6c18c2624ef64204cc5ac8806897f22b05fd0268b03064adea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.3 MB (270256976 bytes)**  
+-	Total Size: **269.2 MB (269189223 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ae88114f1ea17237756935af4e529421eb22caa7940ab8d510efdb9d86700ef`
+-	Image ID: `sha256:3a6e14ced215caf05360ec31b7b875af1795ea3f76f8398ddfeb4e881bedbdcf`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 CMD ["/bin/bash"]
 # Wed, 18 Sep 2024 19:12:13 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -32107,65 +32107,65 @@ CMD ["-M" "--repl"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:281f222bc79db09e568399b36dc24e86e77da3201df1247524f179e08d4ba074`  
-		Last Modified: Wed, 16 Oct 2024 01:19:20 GMT  
-		Size: 19.0 MB (19013016 bytes)  
+	-	`sha256:31ba8c8e36b0c65fe8cfde6020dd17f67769efaa08905c35dcd5093078c7055e`  
+		Last Modified: Sat, 19 Oct 2024 05:42:32 GMT  
+		Size: 19.0 MB (19012310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a71c086970ddc308820ead7432558cf95fd50099fd3dd67af6b09cfa9056458a`  
-		Last Modified: Wed, 16 Oct 2024 01:19:29 GMT  
-		Size: 163.3 MB (163256350 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bfe2517f284b51de3e57cfd1d9d7c39fd44968fde73fde95e4c7633515c432c1`  
-		Last Modified: Wed, 16 Oct 2024 01:19:18 GMT  
-		Size: 144.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8980d81d23a210669113fd708554d9e2fd628112d62110d3b2d73738d0b89d6e`  
-		Last Modified: Wed, 16 Oct 2024 01:19:18 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:98760afb9f172863e5bd9a838dcf6a06739b67a3c83ca8333fd2736743cd0e7a`  
+		Last Modified: Sat, 19 Oct 2024 05:42:35 GMT  
+		Size: 163.3 MB (163255995 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76fef98c1a61e4a2da7983b88df299bc6ec7847b73a64375ac7a55d438391123`  
-		Last Modified: Wed, 16 Oct 2024 02:44:06 GMT  
-		Size: 58.0 MB (58031513 bytes)  
+	-	`sha256:43bc543cb647e0867e7c2cdeaadaa8ad4a3591844b5d9c2c030de9ebd273363b`  
+		Last Modified: Sat, 19 Oct 2024 05:42:31 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13b3cecb00aa22b7399560d70e4b0908f60f8cfe8212b6253d399098fe375850`  
-		Last Modified: Wed, 16 Oct 2024 02:44:04 GMT  
-		Size: 613.0 B  
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02e1fba1750f0cbe3393242ba87dfea1e268e071949c4e88f5b3b6d35ddc5179`  
-		Last Modified: Wed, 16 Oct 2024 02:44:04 GMT  
+	-	`sha256:79cfb364738dc89d188abd56b24f4340b0fb720617665995bbfbbfb65d72b57d`  
+		Last Modified: Sat, 19 Oct 2024 12:24:38 GMT  
+		Size: 58.0 MB (58031888 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c91736819890f555d9b961bda0e7ccf83a56ecf3015cc6c7792837e6b64e8348`  
+		Last Modified: Sat, 19 Oct 2024 12:24:36 GMT  
+		Size: 615.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f8b652348e634ed39860d107c9ffc1a59703b399388496f1bfca31cd44943c79`  
+		Last Modified: Sat, 19 Oct 2024 12:24:36 GMT  
 		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-23-tools-deps-1.12.0.1479-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:f29a7753654d0c47b2aa219ce619fed9cf404ed0a3111810ad3357fa5997b653
+$ docker pull clojure@sha256:ffa8f85e589ff54f4f472b49946972044748754c18bc65f271da82134f072b1c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5738662 bytes)**  
+-	Total Size: **5.8 MB (5767077 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae2ae0a1ab369956f8036561cdeb7d14d2ff1ee79628094535abd6871e4743be`
+-	Image ID: `sha256:00a3578332611227a9c148d0220e85d92341558db2cfe61e671cfe86fa3a91dc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7877071c286b19a29573f57d639b8cdb57d707a5c7cd3fc2bce287229b922dbf`  
-		Last Modified: Wed, 16 Oct 2024 02:44:04 GMT  
-		Size: 5.7 MB (5723012 bytes)  
+	-	`sha256:f44f01429d3d4d7cc2119bd5bf6ee324145b615b88fa7ae2e3d9908985859d86`  
+		Last Modified: Sat, 19 Oct 2024 12:24:37 GMT  
+		Size: 5.8 MB (5751407 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7ee04774bf579e1e35a21784f46987cefd2bad0bad67f24c7303bcefa5bb5d02`  
-		Last Modified: Wed, 16 Oct 2024 02:44:03 GMT  
-		Size: 15.7 KB (15650 bytes)  
+	-	`sha256:df992dca5acca5f67997351a629128c2fdcb9f95611e1e9f5eae910fe9657efa`  
+		Last Modified: Sat, 19 Oct 2024 12:24:36 GMT  
+		Size: 15.7 KB (15670 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-tools-deps-alpine`
@@ -32298,7 +32298,7 @@ $ docker pull clojure@sha256:76ae562881d648eb5cdf19a5d1c8d008ea22d765a8e038e8453
 ## `clojure:temurin-23-tools-deps-bookworm`
 
 ```console
-$ docker pull clojure@sha256:e838868de262a83ccf1ceb5aed1ec8550340e695b2ffcfcf41501dbb3a4a7cef
+$ docker pull clojure@sha256:d7d69b649e3e51d0b04e7c194f8967068acc064cccd429d25c64a6d4e6fa22e3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -32467,31 +32467,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-23-tools-deps-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:d01a1cd4d961e2e0288e95aacea50ba08452d7eb542d288005cb28ce806488aa
+$ docker pull clojure@sha256:3bc0e61afa2ee7fccd2aac0b2a03c53b1d8a3dc9fdbcd3c3ca2dbd610f303188
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7183785 bytes)**  
+-	Total Size: **7.2 MB (7209703 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:045b867359975e217e54ce0704abf992cbaef7a7fb6958d39f77835771bc383c`
+-	Image ID: `sha256:ae3cbe4fc8f4a7e3b50e850ce727fb0bf4cdd300d36c5ba3c4ca2b6e70a5a910`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e1c33ee20bf653376ceca46cf6bc21cd982cac021d923510466b24975e234232`  
-		Last Modified: Thu, 17 Oct 2024 08:32:34 GMT  
-		Size: 7.2 MB (7167493 bytes)  
+	-	`sha256:defd3a071e6bf83d1e6709315ca6ff0c442c223944e3bdc831a1f43b614b953d`  
+		Last Modified: Sat, 19 Oct 2024 12:22:08 GMT  
+		Size: 7.2 MB (7193238 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:388953cbbd6a3bff1b2e375fbb4b14563deca21455750874af28004367db3baa`  
-		Last Modified: Thu, 17 Oct 2024 08:32:34 GMT  
-		Size: 16.3 KB (16292 bytes)  
+	-	`sha256:3c4192d95ba817ff69d1d2312af27c097199963e291f4fce37e1b1cdad29775b`  
+		Last Modified: Sat, 19 Oct 2024 12:22:07 GMT  
+		Size: 16.5 KB (16465 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-tools-deps-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:e633bd538989153fb963890399d962c0766452b3d467d7608eef41516f25e241
+$ docker pull clojure@sha256:edb00116202804bbcc12b7945fd146b05141d509f4e5cde41426ead54fcbf213
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -32660,31 +32660,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-23-tools-deps-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:610f8a4a3cadd2b39fc1ee038ee77d3930ddae2b3abefc3dc2f5f8764c947b2c
+$ docker pull clojure@sha256:9cabdbfff4f1753101997e9d1bf19d9228164b2815d6ced21459f640e2c1aa54
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4920645 bytes)**  
+-	Total Size: **4.9 MB (4946563 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2955a7a2e42230d552b3989ac416cf9302d3f8fce92b047dee1d564304a7614e`
+-	Image ID: `sha256:857e08986e5943232d08f9d783e9506e5fc3ee78a8b4bb3294b7de40a250d3d2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dfbebe01b74fed0e40962f610724842d03817d58269b2198d88140fbd6814d14`  
-		Last Modified: Thu, 17 Oct 2024 08:33:22 GMT  
-		Size: 4.9 MB (4904988 bytes)  
+	-	`sha256:1676404ccc38e51d99bcfc585f81bfc58da446253c05650961d23d793123934e`  
+		Last Modified: Sat, 19 Oct 2024 12:22:40 GMT  
+		Size: 4.9 MB (4930733 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f5451f7597af63434f1083dd5d0662b37fd6c7959207e846c5b93657d7512b50`  
-		Last Modified: Thu, 17 Oct 2024 08:33:21 GMT  
-		Size: 15.7 KB (15657 bytes)  
+	-	`sha256:91b921974ee84c6f4cc4f90cbb8ad050c654a7fe980bcae68ae8bb9611c74b38`  
+		Last Modified: Sat, 19 Oct 2024 12:22:39 GMT  
+		Size: 15.8 KB (15830 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-tools-deps-bullseye`
 
 ```console
-$ docker pull clojure@sha256:237de1ee8f54d05c1b0505597b65c27d0c869d46e81a0f029893adbeb1fdb183
+$ docker pull clojure@sha256:8987e2cc24790ff724a90c173ebfce886c8a47c42ff68618322f9d4329edde40
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -32853,31 +32853,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-23-tools-deps-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:dcca7000cfd69ca7dc83cf87428e23f5f66de9ef41a3de20623dd79742566767
+$ docker pull clojure@sha256:1478a59721d182dafbeb4243dc6ca297cacfe2aa64356761ad907ef4a27b89d0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7215151 bytes)**  
+-	Total Size: **7.2 MB (7241068 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a8f10c023d673954b1e0192fbe61b412bea6444bf50b8184c54c0a1f843f45f0`
+-	Image ID: `sha256:cb7ca0d6638452a680b8057195d7b2ea37e86fb6a04c4254f377a2afd0b58a20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6d1eb154b1594a10e5436cbf9c28d3018ea7d47b7de3e51e585c9ce35d6095d6`  
-		Last Modified: Thu, 17 Oct 2024 08:34:12 GMT  
-		Size: 7.2 MB (7199567 bytes)  
+	-	`sha256:a3916478bffba3e5e3b5ab178bffe403b353f4af49ffb35653214d35927ea683`  
+		Last Modified: Sat, 19 Oct 2024 12:23:13 GMT  
+		Size: 7.2 MB (7225312 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6ceeb082f376fe692a0bdbd452d66e213ab8bce87ebc8101eeb95763d4a4066a`  
-		Last Modified: Thu, 17 Oct 2024 08:34:11 GMT  
-		Size: 15.6 KB (15584 bytes)  
+	-	`sha256:8e8fab135e139f3be9266fbcf4585d0251694332cd3ddcc979043498674ae886`  
+		Last Modified: Sat, 19 Oct 2024 12:23:13 GMT  
+		Size: 15.8 KB (15756 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-tools-deps-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:e88a007776ee04e86946b63d996023cea4887f421a905440b1bba0a1aab2e55c
+$ docker pull clojure@sha256:7fcf53a9c01aeae0db968d5c2bad41f9569fefac0f1b93a147a7ff24855183a1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33046,31 +33046,31 @@ CMD ["-M" "--repl"]
 ### `clojure:temurin-23-tools-deps-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:0a7cb054fbf0b86d6240a6203b97a7b8a004f37fbe57693e950428258924c623
+$ docker pull clojure@sha256:6c380af601aae3d454e7d09b142d352fed7e9ba499c86d039ad73eb30afcec67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5125340 bytes)**  
+-	Total Size: **5.2 MB (5151258 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21ad7990ddb993f43f2b8edda0d821d90b6b9bd8549af705ec4ce27d88dd12c3`
+-	Image ID: `sha256:19d32deeecf276ddf4f9970100f0aa0beb5a9ce57d8bafe7afa356e0acc3c6e8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e8d747fd922eee9d325745d18e1a7f386f1834d99b547bc62ca83ec16c050462`  
-		Last Modified: Thu, 17 Oct 2024 08:34:58 GMT  
-		Size: 5.1 MB (5109683 bytes)  
+	-	`sha256:c1bf14be31e6fd6b90201f2725376002918759bf0fb79fb07cbf27594bc623b7`  
+		Last Modified: Sat, 19 Oct 2024 12:23:50 GMT  
+		Size: 5.1 MB (5135428 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e22171e57466f2da006d841d48230a4dfc5b1ab93193a829e0a040cde33d1634`  
-		Last Modified: Thu, 17 Oct 2024 08:34:58 GMT  
-		Size: 15.7 KB (15657 bytes)  
+	-	`sha256:13471af6c854d07468abb86446a5c82cd41640bfd8da46b580eb86d28ebda231`  
+		Last Modified: Sat, 19 Oct 2024 12:23:49 GMT  
+		Size: 15.8 KB (15830 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-23-tools-deps-noble`
 
 ```console
-$ docker pull clojure@sha256:b20d464bca1aa29c6bceb6eaa55d8f23c9bf2e7783c2f0732c9a49d8e3569e44
+$ docker pull clojure@sha256:006a0946172cba5ac9eae2389cb6ba5f61461aff827f51b28e1d42bd1f6197eb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33207,28 +33207,28 @@ $ docker pull clojure@sha256:2679f23fc2b6453f80a00cffeb1d3f58d59bbef3343f9bbe36e
 ### `clojure:temurin-23-tools-deps-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:20cfa8c30943e5a999e3bd0eb2c378e604e789de069cf2b8d54ee3d050a9c845
+$ docker pull clojure@sha256:79fddc17cac51b6c18c2624ef64204cc5ac8806897f22b05fd0268b03064adea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.3 MB (270256976 bytes)**  
+-	Total Size: **269.2 MB (269189223 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ae88114f1ea17237756935af4e529421eb22caa7940ab8d510efdb9d86700ef`
+-	Image ID: `sha256:3a6e14ced215caf05360ec31b7b875af1795ea3f76f8398ddfeb4e881bedbdcf`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["-M","--repl"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Wed, 18 Sep 2024 19:12:13 GMT
 CMD ["/bin/bash"]
 # Wed, 18 Sep 2024 19:12:13 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -33267,65 +33267,65 @@ CMD ["-M" "--repl"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:281f222bc79db09e568399b36dc24e86e77da3201df1247524f179e08d4ba074`  
-		Last Modified: Wed, 16 Oct 2024 01:19:20 GMT  
-		Size: 19.0 MB (19013016 bytes)  
+	-	`sha256:31ba8c8e36b0c65fe8cfde6020dd17f67769efaa08905c35dcd5093078c7055e`  
+		Last Modified: Sat, 19 Oct 2024 05:42:32 GMT  
+		Size: 19.0 MB (19012310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a71c086970ddc308820ead7432558cf95fd50099fd3dd67af6b09cfa9056458a`  
-		Last Modified: Wed, 16 Oct 2024 01:19:29 GMT  
-		Size: 163.3 MB (163256350 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bfe2517f284b51de3e57cfd1d9d7c39fd44968fde73fde95e4c7633515c432c1`  
-		Last Modified: Wed, 16 Oct 2024 01:19:18 GMT  
-		Size: 144.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8980d81d23a210669113fd708554d9e2fd628112d62110d3b2d73738d0b89d6e`  
-		Last Modified: Wed, 16 Oct 2024 01:19:18 GMT  
-		Size: 2.1 KB (2108 bytes)  
+	-	`sha256:98760afb9f172863e5bd9a838dcf6a06739b67a3c83ca8333fd2736743cd0e7a`  
+		Last Modified: Sat, 19 Oct 2024 05:42:35 GMT  
+		Size: 163.3 MB (163255995 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76fef98c1a61e4a2da7983b88df299bc6ec7847b73a64375ac7a55d438391123`  
-		Last Modified: Wed, 16 Oct 2024 02:44:06 GMT  
-		Size: 58.0 MB (58031513 bytes)  
+	-	`sha256:43bc543cb647e0867e7c2cdeaadaa8ad4a3591844b5d9c2c030de9ebd273363b`  
+		Last Modified: Sat, 19 Oct 2024 05:42:31 GMT  
+		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13b3cecb00aa22b7399560d70e4b0908f60f8cfe8212b6253d399098fe375850`  
-		Last Modified: Wed, 16 Oct 2024 02:44:04 GMT  
-		Size: 613.0 B  
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02e1fba1750f0cbe3393242ba87dfea1e268e071949c4e88f5b3b6d35ddc5179`  
-		Last Modified: Wed, 16 Oct 2024 02:44:04 GMT  
+	-	`sha256:79cfb364738dc89d188abd56b24f4340b0fb720617665995bbfbbfb65d72b57d`  
+		Last Modified: Sat, 19 Oct 2024 12:24:38 GMT  
+		Size: 58.0 MB (58031888 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c91736819890f555d9b961bda0e7ccf83a56ecf3015cc6c7792837e6b64e8348`  
+		Last Modified: Sat, 19 Oct 2024 12:24:36 GMT  
+		Size: 615.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f8b652348e634ed39860d107c9ffc1a59703b399388496f1bfca31cd44943c79`  
+		Last Modified: Sat, 19 Oct 2024 12:24:36 GMT  
 		Size: 397.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-23-tools-deps-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:f29a7753654d0c47b2aa219ce619fed9cf404ed0a3111810ad3357fa5997b653
+$ docker pull clojure@sha256:ffa8f85e589ff54f4f472b49946972044748754c18bc65f271da82134f072b1c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.7 MB (5738662 bytes)**  
+-	Total Size: **5.8 MB (5767077 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ae2ae0a1ab369956f8036561cdeb7d14d2ff1ee79628094535abd6871e4743be`
+-	Image ID: `sha256:00a3578332611227a9c148d0220e85d92341558db2cfe61e671cfe86fa3a91dc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7877071c286b19a29573f57d639b8cdb57d707a5c7cd3fc2bce287229b922dbf`  
-		Last Modified: Wed, 16 Oct 2024 02:44:04 GMT  
-		Size: 5.7 MB (5723012 bytes)  
+	-	`sha256:f44f01429d3d4d7cc2119bd5bf6ee324145b615b88fa7ae2e3d9908985859d86`  
+		Last Modified: Sat, 19 Oct 2024 12:24:37 GMT  
+		Size: 5.8 MB (5751407 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7ee04774bf579e1e35a21784f46987cefd2bad0bad67f24c7303bcefa5bb5d02`  
-		Last Modified: Wed, 16 Oct 2024 02:44:03 GMT  
-		Size: 15.7 KB (15650 bytes)  
+	-	`sha256:df992dca5acca5f67997351a629128c2fdcb9f95611e1e9f5eae910fe9657efa`  
+		Last Modified: Sat, 19 Oct 2024 12:24:36 GMT  
+		Size: 15.7 KB (15670 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-8-alpine`
@@ -33448,7 +33448,7 @@ $ docker pull clojure@sha256:e879a0eef12d8952f201b8033fe3905f3848ab5d10076683e7d
 ## `clojure:temurin-8-bookworm`
 
 ```console
-$ docker pull clojure@sha256:5eec48ff80157a3b332e6d18cf29038c92a50dcdd7e86d149f93742b650550f2
+$ docker pull clojure@sha256:e549743a0a6a22d33dd08c6a7192f9578013d9d65a3abb74a6ae4273f52d6982
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33599,31 +33599,31 @@ CMD ["clj"]
 ### `clojure:temurin-8-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:5c42de90bcd045cfae680c64b53e06837553cc4545900b7c6d18cd8a678891de
+$ docker pull clojure@sha256:14fb1193e95ba726365db644dc3163d96d83ff074d6805a2864f9af475f4fb2a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.3 MB (7299275 bytes)**  
+-	Total Size: **7.3 MB (7325197 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cee37f5c68b3f5d7db39a5d3b21fa94f9b4b80f9e450202809e8e02748e893e3`
+-	Image ID: `sha256:2682b72b843aa20828a4e7c82a2741ee496544bbc20b189e9ef306259084368b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:10c5d09895a173cc9df4b0cd3245333317006acc4a1f935cd435e32928da76d8`  
-		Last Modified: Thu, 17 Oct 2024 07:59:37 GMT  
-		Size: 7.3 MB (7285279 bytes)  
+	-	`sha256:92a8a395a46d99c43ebbd8fb8cc3bcca8fbaee5c2d160ebf13a7c57e12784d0f`  
+		Last Modified: Sat, 19 Oct 2024 11:44:10 GMT  
+		Size: 7.3 MB (7311024 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0692990bc11619023cd322ccf3328347c7bb25f32a91e30505a7af83529e535d`  
-		Last Modified: Thu, 17 Oct 2024 07:59:36 GMT  
-		Size: 14.0 KB (13996 bytes)  
+	-	`sha256:e29e5af2ed760774cf751a5257efa55b9ad80dc2cc3abca389165975eaaf937b`  
+		Last Modified: Sat, 19 Oct 2024 11:44:09 GMT  
+		Size: 14.2 KB (14173 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-8-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:e5a034b90bc532431cc06fb6286a81c6e8eb6e68b1bd2d5ea2cba232083b8321
+$ docker pull clojure@sha256:83052626bd9dc2d65693b3cb1fe5ddbc9fad6e076770ae4a83e37ec04e864397
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33774,31 +33774,31 @@ CMD ["clj"]
 ### `clojure:temurin-8-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:20c8cd3faa635f4f3918e3b3ee3e0c1cc395522332200427155ca4a949edd0c0
+$ docker pull clojure@sha256:ed99dce5df287dd738cf74ff5d8d91e5721582648c08f9b1033476b66e66c0d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.0 MB (5037547 bytes)**  
+-	Total Size: **5.1 MB (5063469 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2bfc9b470c7adbfbfbb1746b0a95deb2f42cbf90cf65dabc92dba2bfa53f1e05`
+-	Image ID: `sha256:81bd7df662f94af2477a2abbd8f89a42c185d54a1f6e0dfb8d057473271e9c71`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e824c0772f2c0e998d216c3c34bc5ebeae8877e949491f9b6ec1e7091fb54208`  
-		Last Modified: Thu, 17 Oct 2024 08:00:33 GMT  
-		Size: 5.0 MB (5023482 bytes)  
+	-	`sha256:4cd5279f882f86080c13638401ed99c06d3506767811b08c345c3df695abb528`  
+		Last Modified: Sat, 19 Oct 2024 11:44:40 GMT  
+		Size: 5.0 MB (5049227 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:eb4c0c12f2d2c139870caa657b86560705a44af542ac7387a0eafec6d8a9533e`  
-		Last Modified: Thu, 17 Oct 2024 08:00:33 GMT  
-		Size: 14.1 KB (14065 bytes)  
+	-	`sha256:8a38ad869755940cd60f21fea5271177fead21db456e86a7a5f1c29e60b1bcb9`  
+		Last Modified: Sat, 19 Oct 2024 11:44:40 GMT  
+		Size: 14.2 KB (14242 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-8-bullseye`
 
 ```console
-$ docker pull clojure@sha256:c282e8b4203f3c52115a723b75f7294428a9b9bd4e950d37bd839918cddef907
+$ docker pull clojure@sha256:1b92f570043811420980edff60365ea0b8f4c516ece92b0e160696767a983799
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33949,31 +33949,31 @@ CMD ["clj"]
 ### `clojure:temurin-8-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:cb230de61ec4acbfb45ac01fdac33f9b11b4e35938e62f29793b6dd210fb9adc
+$ docker pull clojure@sha256:8e46e4968839892318978e34d51c2f94c103420ea7513d87b9ecf3bfa0e6cc67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.3 MB (7332057 bytes)**  
+-	Total Size: **7.4 MB (7357978 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:187f975ad9cd9744a8bc2ab1084abaea6d49e6da3bda0319441763759bd717a1`
+-	Image ID: `sha256:ce5b1ec20df23c77917e17fca6dd4527be2829844f8c4911f21723225fd5aa2d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:db5065b7d3b330a5896600c1f56f9bc3c8d88896b586ec14e6194ffebbfcfdaf`  
-		Last Modified: Thu, 17 Oct 2024 08:01:29 GMT  
-		Size: 7.3 MB (7318061 bytes)  
+	-	`sha256:42ab4e34cd4a72ba4206820611f469458edac00da1f7b81cd3de1ebc32066404`  
+		Last Modified: Sat, 19 Oct 2024 11:45:12 GMT  
+		Size: 7.3 MB (7343806 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:27c53ba07870c26f4543771aeb2ba139a7301d8d1f0b3282f4319c0eaff82247`  
-		Last Modified: Thu, 17 Oct 2024 08:01:28 GMT  
-		Size: 14.0 KB (13996 bytes)  
+	-	`sha256:8c13bc2c203fd7bedac4d316d2ca3f5eae626030f2ecc430354687832aa373c0`  
+		Last Modified: Sat, 19 Oct 2024 11:45:11 GMT  
+		Size: 14.2 KB (14172 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-8-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:b54ce53959dc329e310b3046f1aac7739eab25dbb234697906f6b800aca7b926
+$ docker pull clojure@sha256:e7f488bf85b7367fe270e0e65eb8007b9c3227e1bd4d722eaa4b9d281fdb6edd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -34124,31 +34124,31 @@ CMD ["clj"]
 ### `clojure:temurin-8-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:ac3b67db0b8eda9af955755e0f34700fe2b730aa463143a9c9fd8c840a1a58a9
+$ docker pull clojure@sha256:a835188a700591a4e3ccbff12eee87343ebbb8c9b97f30ab8a6e3bb3506a6e6b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5242242 bytes)**  
+-	Total Size: **5.3 MB (5268163 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c6fed442581f585837f06fd21f57eda8d2ff1fc2bd9c500b91f7da97a71cf707`
+-	Image ID: `sha256:5e3a65eb3e7136c8f17252987b14068c0ef7eda70c81c629e742bfac5454b4c3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4b42a6ee5d06c203f85dc4392bb5dabb17024cb95835e8adc7a61804d23f702f`  
-		Last Modified: Thu, 17 Oct 2024 08:02:27 GMT  
-		Size: 5.2 MB (5228177 bytes)  
+	-	`sha256:eb5adcfc5183ddb1844b4a2941eaa51afcf79397b091b0dcfb6f10dfe609809a`  
+		Last Modified: Sat, 19 Oct 2024 11:45:45 GMT  
+		Size: 5.3 MB (5253922 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:de28e30eec7e4291d770e95eb2857e3836aed20f2080dce875ffb591fce57743`  
-		Last Modified: Thu, 17 Oct 2024 08:02:27 GMT  
-		Size: 14.1 KB (14065 bytes)  
+	-	`sha256:91e149b3f3dd31444955c879025d99cb9be3eb557b42faadafc5d18ea44366c3`  
+		Last Modified: Sat, 19 Oct 2024 11:45:44 GMT  
+		Size: 14.2 KB (14241 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-8-jammy`
 
 ```console
-$ docker pull clojure@sha256:702cd16f9c1ffa6379f7ad2596522b8816e9a87d80876fafc4c2f22147b4c06b
+$ docker pull clojure@sha256:c80146ebd220d084215d03502cfba5f01ff6edd5f1deba73cfa22ce05d8bc9fb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -34275,28 +34275,28 @@ $ docker pull clojure@sha256:c353a55e6fbabdc05c4bd57dde89a5ea608ed31e90632742806
 ### `clojure:temurin-8-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:04f53a857e063a233cc609e67beb720e0aae8e3a66adb0107e4eebee62644a8c
+$ docker pull clojure@sha256:7db98504ee77228bb1592a275b516c9f395e53df7718afc11eb27279f7e04406
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **195.6 MB (195556892 bytes)**  
+-	Total Size: **194.5 MB (194533944 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3a8072b259625a4d93979cb571a8f79481d7b2ca109b135f0aac969ee4defed3`
+-	Image ID: `sha256:f18ebfdc2b37fdf65afbe9016812b55347640bca490225245312d34701ce824f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=22.04
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -34316,74 +34316,74 @@ RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 ENV CLOJURE_VERSION=1.12.0.1479
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 WORKDIR /tmp
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 RUN apt-get update && apt-get install -y curl make git rlwrap && rm -rf /var/lib/apt/lists/* && curl -fsSLO https://download.clojure.org/install/linux-install-$CLOJURE_VERSION.sh && sha256sum linux-install-$CLOJURE_VERSION.sh && echo "94f29b9b66183bd58307c46fb561fd9e9148666bac13a4518a9931b6f989d830 *linux-install-$CLOJURE_VERSION.sh" | sha256sum -c - && chmod +x linux-install-$CLOJURE_VERSION.sh && ./linux-install-$CLOJURE_VERSION.sh && rm linux-install-$CLOJURE_VERSION.sh && clojure -e "(clojure-version)" # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 COPY rlwrap.retry /usr/local/bin/rlwrap # buildkit
-# Fri, 06 Sep 2024 16:59:26 GMT
+# Thu, 03 Oct 2024 17:49:34 GMT
 CMD ["clj"]
 ```
 
 -	Layers:
-	-	`sha256:4be1db8bbbebdd00e047c599d9aa2ee2ac533600bee2ac25a86573e42598d326`  
-		Last Modified: Thu, 12 Sep 2024 07:29:35 GMT  
-		Size: 28.4 MB (28397107 bytes)  
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8cc429601029ecb71c941cbfdd32b85983522d0f4ef294d6f2de0ba93bb2f778`  
-		Last Modified: Tue, 17 Sep 2024 01:37:28 GMT  
-		Size: 12.8 MB (12813215 bytes)  
+	-	`sha256:e2dece6d062dc0723f97a73605fb14fdb50c21ad91f9182d5756336b6456a39f`  
+		Last Modified: Sat, 19 Oct 2024 05:27:13 GMT  
+		Size: 12.8 MB (12828465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5ee3c18d11ada1b8c61be4cdde6a7b77092f6a333a08ea4b2a44951edb9c7f76`  
-		Last Modified: Tue, 17 Sep 2024 01:37:33 GMT  
-		Size: 102.7 MB (102732866 bytes)  
+	-	`sha256:b28276c4628272fa60453cf1f2a05de4ab0b1a070777df2b86c4d55d436bbf21`  
+		Last Modified: Sat, 19 Oct 2024 05:27:15 GMT  
+		Size: 102.7 MB (102733224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcb9ee7d7cf98ca380289182bb1c6ceeea651a94d1c8d67745ff50df481881da`  
-		Last Modified: Tue, 17 Sep 2024 01:37:26 GMT  
-		Size: 128.0 B  
+	-	`sha256:8e72daf18cb8cbdbb2bbbf3491494658a885304fd81d3d2609dc918d91194b7b`  
+		Last Modified: Sat, 19 Oct 2024 05:27:12 GMT  
+		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa527af5ede58b8c5dcb94dd664e9489e2a23b1a2252a3f93c3df9a7a6de9e6c`  
-		Last Modified: Tue, 17 Sep 2024 01:37:26 GMT  
+	-	`sha256:bceedd423d59cc486bc9dad535449a46c29156d686af65ead0760ca9fc5c027c`  
+		Last Modified: Sat, 19 Oct 2024 05:27:13 GMT  
 		Size: 2.1 KB (2131 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ad0e0459296a671e806148da1afac76b801a905019b13df34e62aab83d565c7`  
-		Last Modified: Tue, 17 Sep 2024 04:16:31 GMT  
-		Size: 51.6 MB (51610801 bytes)  
+	-	`sha256:bafa53fe60bc5b706f1e4ad0c9846eb7d5fb09886ffa920adb3b99fb653c2f41`  
+		Last Modified: Sat, 19 Oct 2024 11:46:33 GMT  
+		Size: 51.6 MB (51611019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44a05aa3d96ecca03b7ddc2e73d5e2644d6023b097778f38ccfa69d62af2cb52`  
-		Last Modified: Tue, 17 Sep 2024 04:16:29 GMT  
-		Size: 612.0 B  
+	-	`sha256:37946b1ebbab003b537313a8321752df68ba00e9ee09d8e4e4ffb703ced84fd4`  
+		Last Modified: Sat, 19 Oct 2024 11:46:31 GMT  
+		Size: 617.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-8-jammy` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:f937ba9a4fdec2108925cd76a57b33ab3550b907042bfc90dd3bc8120d7a5dc2
+$ docker pull clojure@sha256:d991f811b0caca4f609fcdce7db25fddc975d4a7109ab806f1053c6c35751cda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 MB (5803004 bytes)**  
+-	Total Size: **6.1 MB (6082696 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:332457eda39fed363b61a4591e6ac59c25dcc0553c8736f49a9ba57dcd585fff`
+-	Image ID: `sha256:094eeff6adfd822c6b5844a11246082bd82e38a428186e42349975a78fc91e11`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4d6b9eacd965117422a5caf59c47d70b316a6bc7f96b04d73017c08c62fddfeb`  
-		Last Modified: Tue, 17 Sep 2024 04:16:30 GMT  
-		Size: 5.8 MB (5788546 bytes)  
+	-	`sha256:372473f4acfd56ce4d793349a5d3bfa45f56eb8c437611b17eb2ef76a690ac6a`  
+		Last Modified: Sat, 19 Oct 2024 11:46:31 GMT  
+		Size: 6.1 MB (6068361 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:12c858a2edd268a9830d03758b1958befff8a8e8832ec2b23d36f5de8b819cf7`  
-		Last Modified: Tue, 17 Sep 2024 04:16:29 GMT  
-		Size: 14.5 KB (14458 bytes)  
+	-	`sha256:f41de1e1b363a01b4526b65afb606343da58421d51ba0d78d90199d14c7575d0`  
+		Last Modified: Sat, 19 Oct 2024 11:46:31 GMT  
+		Size: 14.3 KB (14335 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-8-lein`
@@ -37649,7 +37649,7 @@ $ docker pull clojure@sha256:138b861c6e13e8226e6f517638a253b807c2a0753d7ac1305fe
 ## `clojure:temurin-8-noble`
 
 ```console
-$ docker pull clojure@sha256:2acf882ca4bf841a6cdb0e390e49a1f466cc04d0448f32d6841b53456c0d681d
+$ docker pull clojure@sha256:cd8aeafe2617c98a3b0293e288102c44dd9eb17930487c44f7881ca33d3a1f00
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -37776,28 +37776,28 @@ $ docker pull clojure@sha256:a1a080b08a45b46fb281305616813ebeb34d8bbbc003a3f84b0
 ### `clojure:temurin-8-noble` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:889ff64b722fe51a40caf494159bcde8ae498faa4cddc61313fc9392c7a14e42
+$ docker pull clojure@sha256:7e04b62a971a45d6e7665d792873628edf779de4f45f745e40c76d0f14548a34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **202.4 MB (202421646 bytes)**  
+-	Total Size: **201.4 MB (201352368 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3814e083339f44b9a5ca0841c9f977363c1ec55f92308b0e92f6a85408833917`
+-	Image ID: `sha256:b9e8fd6dbcce1a180a658c6f4a42deb89638e7fe9d2bc2506b63128f388aa615`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["clj"]`
 
 ```dockerfile
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Thu, 03 Oct 2024 17:49:34 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -37830,61 +37830,61 @@ CMD ["clj"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:185af607866372c42b75ce6a89acba6d7e5d2cb54d2fb846f7d86da63371897e`  
-		Last Modified: Wed, 16 Oct 2024 01:15:52 GMT  
-		Size: 13.8 MB (13798568 bytes)  
+	-	`sha256:53f4eec6f561250a0d70c55e6bd99d1331023a580a505800e59b70664894053d`  
+		Last Modified: Sat, 19 Oct 2024 05:28:16 GMT  
+		Size: 13.8 MB (13796069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81a41d12c80ea36c7de725d940c632c038bcc018950004c847f9988ae1278c83`  
-		Last Modified: Wed, 16 Oct 2024 01:15:57 GMT  
-		Size: 102.7 MB (102733006 bytes)  
+	-	`sha256:a0086fac5a6f132071668768424cfa681e0d46064f3b5b758bc8de7243abe745`  
+		Last Modified: Sat, 19 Oct 2024 05:28:18 GMT  
+		Size: 102.7 MB (102733182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c7f521f3ca1a81d7bf44493178e821c82d4babdba47eda5dcbec9c3ff555409`  
-		Last Modified: Wed, 16 Oct 2024 01:15:50 GMT  
-		Size: 128.0 B  
+	-	`sha256:1261ef5a479c7afc017c3c7a22550f53bc13be002fe299c8b59ff21ebc4bd86a`  
+		Last Modified: Sat, 19 Oct 2024 05:28:15 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40f539c3016b2d48ba60e2ac9998883c4915741b5b175f716aebb1a5670d8d3b`  
-		Last Modified: Wed, 16 Oct 2024 01:15:50 GMT  
+	-	`sha256:89a89397a504e8c0a20400d197991e8b9827fe8263ac037154a0c6ed55fed7f5`  
+		Last Modified: Sat, 19 Oct 2024 05:28:15 GMT  
 		Size: 2.1 KB (2130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8cae8f7d34db97e6d6f66d067ec53aa377b096c9baa493e76de06fbe9ed29f9`  
-		Last Modified: Wed, 16 Oct 2024 02:10:11 GMT  
-		Size: 55.9 MB (55934364 bytes)  
+	-	`sha256:0bd6b33182458b72b5081736ea273944f67cec379ee06064f54c7faa94c0d075`  
+		Last Modified: Sat, 19 Oct 2024 11:47:27 GMT  
+		Size: 55.9 MB (55934370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a25dfcff2aac5e5391a5fab26e4631c935d4c004aa31867a8de92253d6485d21`  
-		Last Modified: Wed, 16 Oct 2024 02:10:09 GMT  
-		Size: 615.0 B  
+	-	`sha256:f2754121812eaef324d541d79bfaec092ebd90f137374993f82ee30d23c8e4aa`  
+		Last Modified: Sat, 19 Oct 2024 11:47:25 GMT  
+		Size: 611.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-8-noble` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:22fa8c06ff83cf1cfc0fb21effcb5ba9d40f2817df9b7d02204b2b7e916f8846
+$ docker pull clojure@sha256:1e8182337ed11d6a1b4ed3209ca33b37ac3e118134bfa35189b174d895a435ff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5555449 bytes)**  
+-	Total Size: **5.6 MB (5582417 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:da52c8bbb9cbb664c9f5770734e2e5faa49b0db9a939eac82437640163145e6b`
+-	Image ID: `sha256:a3a80a06bc1b5caf14b8224a8a169d4ca48ec861e644231d6d6c783d68398bb4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ce95c02cb4d5a54d14cc1322e734f3dbb28a1951770c2a7ead6d1ffe75ef1837`  
-		Last Modified: Wed, 16 Oct 2024 02:10:10 GMT  
-		Size: 5.5 MB (5541875 bytes)  
+	-	`sha256:9715d46398064a88e29db384f0e90f9b5071a3f6e3ad456dd57c8cf1b430cb63`  
+		Last Modified: Sat, 19 Oct 2024 11:47:25 GMT  
+		Size: 5.6 MB (5568786 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:04d55b00365aa409a83ce4feaf8c898faf03bfdb33019187c429d0ec5a2f4c79`  
-		Last Modified: Wed, 16 Oct 2024 02:10:09 GMT  
-		Size: 13.6 KB (13574 bytes)  
+	-	`sha256:d6266906b79d3c59afe807c8b7edf2c2833b925d2193787f1a80c98ac715f6ad`  
+		Last Modified: Sat, 19 Oct 2024 11:47:25 GMT  
+		Size: 13.6 KB (13631 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:temurin-8-tools-deps`
@@ -40970,7 +40970,7 @@ $ docker pull clojure@sha256:1e8182337ed11d6a1b4ed3209ca33b37ac3e118134bfa35189b
 ## `clojure:tools-deps`
 
 ```console
-$ docker pull clojure@sha256:f037d21d374a8731aff77b88f0c41bdbfd9a71e63da2c9c4182b10e400e2394a
+$ docker pull clojure@sha256:06e4acb98d656ed0b90ffd73d258b12bb55920f96d3abe9eec67229c0f28a13a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -41139,31 +41139,31 @@ CMD ["-M" "--repl"]
 ### `clojure:tools-deps` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c3013576dde8bb5b2dbf531e1007965628a2512cce641532cc7458b8c9dc0299
+$ docker pull clojure@sha256:0457f5aa5d0ef0c35d7aa3352ae3e9f2966eeaca40ee29ade2836daf92c3e782
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7185243 bytes)**  
+-	Total Size: **7.2 MB (7211162 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cedd10b9bd72ba2dbe804298112f5790ce90c62764084a7fefea1b39ea41e5c1`
+-	Image ID: `sha256:96610469326f010312ac2976080d4f7673b49a3c148ed96ce3db22c6eaa67621`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3dab7c8d34dbd5f1ebad5ad50e1645901ddf0246fb03423ce09ef08e8a011ba1`  
-		Last Modified: Thu, 17 Oct 2024 08:22:59 GMT  
-		Size: 7.2 MB (7167587 bytes)  
+	-	`sha256:ffd7a791ef50a8c137605ebde7b110ec6ffb10fca6c4683d8c4fac7fb3201e41`  
+		Last Modified: Sat, 19 Oct 2024 12:15:10 GMT  
+		Size: 7.2 MB (7193332 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bcfdbc6c65b750289a607a77b84e0d6602d949ef9587feda44b7f292e93b71b1`  
-		Last Modified: Thu, 17 Oct 2024 08:22:58 GMT  
-		Size: 17.7 KB (17656 bytes)  
+	-	`sha256:a2f18595b0c9fdf2426ebd015e6622ba43a7e6dda92990894116ad1d8f18378c`  
+		Last Modified: Sat, 19 Oct 2024 12:15:10 GMT  
+		Size: 17.8 KB (17830 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:tools-deps-1.12.0.1479`
 
 ```console
-$ docker pull clojure@sha256:f037d21d374a8731aff77b88f0c41bdbfd9a71e63da2c9c4182b10e400e2394a
+$ docker pull clojure@sha256:06e4acb98d656ed0b90ffd73d258b12bb55920f96d3abe9eec67229c0f28a13a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -41332,31 +41332,31 @@ CMD ["-M" "--repl"]
 ### `clojure:tools-deps-1.12.0.1479` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c3013576dde8bb5b2dbf531e1007965628a2512cce641532cc7458b8c9dc0299
+$ docker pull clojure@sha256:0457f5aa5d0ef0c35d7aa3352ae3e9f2966eeaca40ee29ade2836daf92c3e782
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7185243 bytes)**  
+-	Total Size: **7.2 MB (7211162 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cedd10b9bd72ba2dbe804298112f5790ce90c62764084a7fefea1b39ea41e5c1`
+-	Image ID: `sha256:96610469326f010312ac2976080d4f7673b49a3c148ed96ce3db22c6eaa67621`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3dab7c8d34dbd5f1ebad5ad50e1645901ddf0246fb03423ce09ef08e8a011ba1`  
-		Last Modified: Thu, 17 Oct 2024 08:22:59 GMT  
-		Size: 7.2 MB (7167587 bytes)  
+	-	`sha256:ffd7a791ef50a8c137605ebde7b110ec6ffb10fca6c4683d8c4fac7fb3201e41`  
+		Last Modified: Sat, 19 Oct 2024 12:15:10 GMT  
+		Size: 7.2 MB (7193332 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bcfdbc6c65b750289a607a77b84e0d6602d949ef9587feda44b7f292e93b71b1`  
-		Last Modified: Thu, 17 Oct 2024 08:22:58 GMT  
-		Size: 17.7 KB (17656 bytes)  
+	-	`sha256:a2f18595b0c9fdf2426ebd015e6622ba43a7e6dda92990894116ad1d8f18378c`  
+		Last Modified: Sat, 19 Oct 2024 12:15:10 GMT  
+		Size: 17.8 KB (17830 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:tools-deps-1.12.0.1479-bookworm`
 
 ```console
-$ docker pull clojure@sha256:f037d21d374a8731aff77b88f0c41bdbfd9a71e63da2c9c4182b10e400e2394a
+$ docker pull clojure@sha256:06e4acb98d656ed0b90ffd73d258b12bb55920f96d3abe9eec67229c0f28a13a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -41525,31 +41525,31 @@ CMD ["-M" "--repl"]
 ### `clojure:tools-deps-1.12.0.1479-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c3013576dde8bb5b2dbf531e1007965628a2512cce641532cc7458b8c9dc0299
+$ docker pull clojure@sha256:0457f5aa5d0ef0c35d7aa3352ae3e9f2966eeaca40ee29ade2836daf92c3e782
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7185243 bytes)**  
+-	Total Size: **7.2 MB (7211162 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cedd10b9bd72ba2dbe804298112f5790ce90c62764084a7fefea1b39ea41e5c1`
+-	Image ID: `sha256:96610469326f010312ac2976080d4f7673b49a3c148ed96ce3db22c6eaa67621`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3dab7c8d34dbd5f1ebad5ad50e1645901ddf0246fb03423ce09ef08e8a011ba1`  
-		Last Modified: Thu, 17 Oct 2024 08:22:59 GMT  
-		Size: 7.2 MB (7167587 bytes)  
+	-	`sha256:ffd7a791ef50a8c137605ebde7b110ec6ffb10fca6c4683d8c4fac7fb3201e41`  
+		Last Modified: Sat, 19 Oct 2024 12:15:10 GMT  
+		Size: 7.2 MB (7193332 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bcfdbc6c65b750289a607a77b84e0d6602d949ef9587feda44b7f292e93b71b1`  
-		Last Modified: Thu, 17 Oct 2024 08:22:58 GMT  
-		Size: 17.7 KB (17656 bytes)  
+	-	`sha256:a2f18595b0c9fdf2426ebd015e6622ba43a7e6dda92990894116ad1d8f18378c`  
+		Last Modified: Sat, 19 Oct 2024 12:15:10 GMT  
+		Size: 17.8 KB (17830 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:tools-deps-1.12.0.1479-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:bd8db161cfc0cf808b15fc24a1dfb24702418e4847abed6ed6f6498c82aab7ba
+$ docker pull clojure@sha256:e1053f41f4ece3461edf267de6daa36856ce17791ba6ea8ee8260076c8d4af42
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -41718,31 +41718,31 @@ CMD ["-M" "--repl"]
 ### `clojure:tools-deps-1.12.0.1479-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:440993ca474c6f93cf1b37b4bf5ddd2445c411422a97464e52dac4ee77322385
+$ docker pull clojure@sha256:d01be75a580cdb5d3ff501fa9684c417bb50621ed94c13dc60b3b2f75cf79f4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4920815 bytes)**  
+-	Total Size: **4.9 MB (4946734 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3db962a68690b26f2dcc63feb9c463fdd83ff5e15a8dcf862a91cad6ce4f6236`
+-	Image ID: `sha256:500a241f472807b67bea9ca6e9447fbe37ad9613ab2efcc28bc7d9a70d34b75a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8010bbc3a540232f5bf51a372cc5a2acdc3b6fd783f028d82a5d3769735547a5`  
-		Last Modified: Thu, 17 Oct 2024 08:23:53 GMT  
-		Size: 4.9 MB (4904438 bytes)  
+	-	`sha256:422cf4d49bf8072027de4f73132d4b041bfc0070c7ae95a0d600cb90ab82a3e6`  
+		Last Modified: Sat, 19 Oct 2024 12:15:49 GMT  
+		Size: 4.9 MB (4930183 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6622694192cdae9a3f32741d46de4596d159794f5dfe9a04152b4bf19581b310`  
-		Last Modified: Thu, 17 Oct 2024 08:23:53 GMT  
-		Size: 16.4 KB (16377 bytes)  
+	-	`sha256:ee54a5fec494a02c625bdec9aa576503b2d64eb7af32ab829e0287ad9d0fc54f`  
+		Last Modified: Sat, 19 Oct 2024 12:15:48 GMT  
+		Size: 16.6 KB (16551 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:tools-deps-1.12.0.1479-bullseye`
 
 ```console
-$ docker pull clojure@sha256:cac33d4e71bba5feea5494183aa62ca0fd0db678edcc2ab128e062372ea7bfab
+$ docker pull clojure@sha256:d842a6ca4eb9807456a8a33dce3cab8eff82049bdfcff5c9be2a44a1d498521a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -41911,31 +41911,31 @@ CMD ["-M" "--repl"]
 ### `clojure:tools-deps-1.12.0.1479-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9a2432ae88fc8c33d1863fe7d6d33dff2e471821c67e1c124c2490472844e87c
+$ docker pull clojure@sha256:3e688408612a0fbeaa305c267c482b0a4c9a4ebe4f289c0ad058853facd8f0fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7215281 bytes)**  
+-	Total Size: **7.2 MB (7241199 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a6559e1e004fc1e53c36f95d0a5926859d9e46c86e7dd756ae485efe44631f97`
+-	Image ID: `sha256:abe982acc740f4901cd8c6b9375488ec8f9c8e8ec96cfbde95940e0519c4f995`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:95354d37b0d6081be253b1ff9b6018c0b030926fc9545320f8482e7937f84ca0`  
-		Last Modified: Thu, 17 Oct 2024 08:24:47 GMT  
-		Size: 7.2 MB (7198997 bytes)  
+	-	`sha256:154468ebfda0abcbd37367d568ca5f742511456392d8a8b46312f4da4bac47bf`  
+		Last Modified: Sat, 19 Oct 2024 12:16:21 GMT  
+		Size: 7.2 MB (7224742 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5b13107907f1f029d2fdbdcb3547abc06ef927666d0f63cc1089883a37b28a36`  
-		Last Modified: Thu, 17 Oct 2024 08:24:47 GMT  
-		Size: 16.3 KB (16284 bytes)  
+	-	`sha256:581b1b5e9531bf4b37416f084e971b5ffb70da6e0c769a5d317b62eb89765cd4`  
+		Last Modified: Sat, 19 Oct 2024 12:16:21 GMT  
+		Size: 16.5 KB (16457 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:tools-deps-1.12.0.1479-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:19b41dabb53a387113f06c94c0bf9949158d6cded9c25edd0de8c99a7f9654a7
+$ docker pull clojure@sha256:6fcbaa7ee2019937c9910f7c55f5a7a6594f640e0d1bc00184640638b0894f16
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -42104,31 +42104,31 @@ CMD ["-M" "--repl"]
 ### `clojure:tools-deps-1.12.0.1479-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:f1a08e705c1f63e02bd45bed468302bf3d3beb27c5687e7b49e4fd2d7708ad23
+$ docker pull clojure@sha256:08ca8b9025e8957b3d99cf4d4069b309b5ae2a2850f408da66ff09d0ae3e780c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5125508 bytes)**  
+-	Total Size: **5.2 MB (5151429 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bddba01c365d58638783a4bdac5f9def041970e551f5b2bfc1b3a13bb9b92ca`
+-	Image ID: `sha256:626591e868d4ccf544f45ff91830c3e4e03216f32dcb3cb0e1d9f0f6d2d7e2ca`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d67e703b1538fc7721efca251b8add14ccb36456d6cb5b30a1fcc422b4311812`  
-		Last Modified: Thu, 17 Oct 2024 08:26:32 GMT  
-		Size: 5.1 MB (5109133 bytes)  
+	-	`sha256:a048f4b479cd90ec5fc4e540f4f6c146101071b253c8a6fd84b510b8c7118b4b`  
+		Last Modified: Sat, 19 Oct 2024 12:16:56 GMT  
+		Size: 5.1 MB (5134878 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5289685e300f4bb4af88b6da8cc0610259d242e1313c34c1a0fdc27ab4f82d1c`  
-		Last Modified: Thu, 17 Oct 2024 08:26:31 GMT  
-		Size: 16.4 KB (16375 bytes)  
+	-	`sha256:fc9c67810eafcb1c03a5922e7e4ec91dd260305efb9cd5819b51b2a53fe71ed5`  
+		Last Modified: Sat, 19 Oct 2024 12:16:55 GMT  
+		Size: 16.6 KB (16551 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:tools-deps-bookworm`
 
 ```console
-$ docker pull clojure@sha256:f037d21d374a8731aff77b88f0c41bdbfd9a71e63da2c9c4182b10e400e2394a
+$ docker pull clojure@sha256:06e4acb98d656ed0b90ffd73d258b12bb55920f96d3abe9eec67229c0f28a13a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -42297,31 +42297,31 @@ CMD ["-M" "--repl"]
 ### `clojure:tools-deps-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:c3013576dde8bb5b2dbf531e1007965628a2512cce641532cc7458b8c9dc0299
+$ docker pull clojure@sha256:0457f5aa5d0ef0c35d7aa3352ae3e9f2966eeaca40ee29ade2836daf92c3e782
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7185243 bytes)**  
+-	Total Size: **7.2 MB (7211162 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cedd10b9bd72ba2dbe804298112f5790ce90c62764084a7fefea1b39ea41e5c1`
+-	Image ID: `sha256:96610469326f010312ac2976080d4f7673b49a3c148ed96ce3db22c6eaa67621`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3dab7c8d34dbd5f1ebad5ad50e1645901ddf0246fb03423ce09ef08e8a011ba1`  
-		Last Modified: Thu, 17 Oct 2024 08:22:59 GMT  
-		Size: 7.2 MB (7167587 bytes)  
+	-	`sha256:ffd7a791ef50a8c137605ebde7b110ec6ffb10fca6c4683d8c4fac7fb3201e41`  
+		Last Modified: Sat, 19 Oct 2024 12:15:10 GMT  
+		Size: 7.2 MB (7193332 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bcfdbc6c65b750289a607a77b84e0d6602d949ef9587feda44b7f292e93b71b1`  
-		Last Modified: Thu, 17 Oct 2024 08:22:58 GMT  
-		Size: 17.7 KB (17656 bytes)  
+	-	`sha256:a2f18595b0c9fdf2426ebd015e6622ba43a7e6dda92990894116ad1d8f18378c`  
+		Last Modified: Sat, 19 Oct 2024 12:15:10 GMT  
+		Size: 17.8 KB (17830 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:tools-deps-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:bd8db161cfc0cf808b15fc24a1dfb24702418e4847abed6ed6f6498c82aab7ba
+$ docker pull clojure@sha256:e1053f41f4ece3461edf267de6daa36856ce17791ba6ea8ee8260076c8d4af42
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -42490,31 +42490,31 @@ CMD ["-M" "--repl"]
 ### `clojure:tools-deps-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:440993ca474c6f93cf1b37b4bf5ddd2445c411422a97464e52dac4ee77322385
+$ docker pull clojure@sha256:d01be75a580cdb5d3ff501fa9684c417bb50621ed94c13dc60b3b2f75cf79f4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4920815 bytes)**  
+-	Total Size: **4.9 MB (4946734 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3db962a68690b26f2dcc63feb9c463fdd83ff5e15a8dcf862a91cad6ce4f6236`
+-	Image ID: `sha256:500a241f472807b67bea9ca6e9447fbe37ad9613ab2efcc28bc7d9a70d34b75a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8010bbc3a540232f5bf51a372cc5a2acdc3b6fd783f028d82a5d3769735547a5`  
-		Last Modified: Thu, 17 Oct 2024 08:23:53 GMT  
-		Size: 4.9 MB (4904438 bytes)  
+	-	`sha256:422cf4d49bf8072027de4f73132d4b041bfc0070c7ae95a0d600cb90ab82a3e6`  
+		Last Modified: Sat, 19 Oct 2024 12:15:49 GMT  
+		Size: 4.9 MB (4930183 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6622694192cdae9a3f32741d46de4596d159794f5dfe9a04152b4bf19581b310`  
-		Last Modified: Thu, 17 Oct 2024 08:23:53 GMT  
-		Size: 16.4 KB (16377 bytes)  
+	-	`sha256:ee54a5fec494a02c625bdec9aa576503b2d64eb7af32ab829e0287ad9d0fc54f`  
+		Last Modified: Sat, 19 Oct 2024 12:15:48 GMT  
+		Size: 16.6 KB (16551 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:tools-deps-bullseye`
 
 ```console
-$ docker pull clojure@sha256:cac33d4e71bba5feea5494183aa62ca0fd0db678edcc2ab128e062372ea7bfab
+$ docker pull clojure@sha256:d842a6ca4eb9807456a8a33dce3cab8eff82049bdfcff5c9be2a44a1d498521a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -42683,31 +42683,31 @@ CMD ["-M" "--repl"]
 ### `clojure:tools-deps-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:9a2432ae88fc8c33d1863fe7d6d33dff2e471821c67e1c124c2490472844e87c
+$ docker pull clojure@sha256:3e688408612a0fbeaa305c267c482b0a4c9a4ebe4f289c0ad058853facd8f0fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7215281 bytes)**  
+-	Total Size: **7.2 MB (7241199 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a6559e1e004fc1e53c36f95d0a5926859d9e46c86e7dd756ae485efe44631f97`
+-	Image ID: `sha256:abe982acc740f4901cd8c6b9375488ec8f9c8e8ec96cfbde95940e0519c4f995`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:95354d37b0d6081be253b1ff9b6018c0b030926fc9545320f8482e7937f84ca0`  
-		Last Modified: Thu, 17 Oct 2024 08:24:47 GMT  
-		Size: 7.2 MB (7198997 bytes)  
+	-	`sha256:154468ebfda0abcbd37367d568ca5f742511456392d8a8b46312f4da4bac47bf`  
+		Last Modified: Sat, 19 Oct 2024 12:16:21 GMT  
+		Size: 7.2 MB (7224742 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5b13107907f1f029d2fdbdcb3547abc06ef927666d0f63cc1089883a37b28a36`  
-		Last Modified: Thu, 17 Oct 2024 08:24:47 GMT  
-		Size: 16.3 KB (16284 bytes)  
+	-	`sha256:581b1b5e9531bf4b37416f084e971b5ffb70da6e0c769a5d317b62eb89765cd4`  
+		Last Modified: Sat, 19 Oct 2024 12:16:21 GMT  
+		Size: 16.5 KB (16457 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clojure:tools-deps-bullseye-slim`
 
 ```console
-$ docker pull clojure@sha256:19b41dabb53a387113f06c94c0bf9949158d6cded9c25edd0de8c99a7f9654a7
+$ docker pull clojure@sha256:6fcbaa7ee2019937c9910f7c55f5a7a6594f640e0d1bc00184640638b0894f16
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -42876,23 +42876,23 @@ CMD ["-M" "--repl"]
 ### `clojure:tools-deps-bullseye-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:f1a08e705c1f63e02bd45bed468302bf3d3beb27c5687e7b49e4fd2d7708ad23
+$ docker pull clojure@sha256:08ca8b9025e8957b3d99cf4d4069b309b5ae2a2850f408da66ff09d0ae3e780c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5125508 bytes)**  
+-	Total Size: **5.2 MB (5151429 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8bddba01c365d58638783a4bdac5f9def041970e551f5b2bfc1b3a13bb9b92ca`
+-	Image ID: `sha256:626591e868d4ccf544f45ff91830c3e4e03216f32dcb3cb0e1d9f0f6d2d7e2ca`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d67e703b1538fc7721efca251b8add14ccb36456d6cb5b30a1fcc422b4311812`  
-		Last Modified: Thu, 17 Oct 2024 08:26:32 GMT  
-		Size: 5.1 MB (5109133 bytes)  
+	-	`sha256:a048f4b479cd90ec5fc4e540f4f6c146101071b253c8a6fd84b510b8c7118b4b`  
+		Last Modified: Sat, 19 Oct 2024 12:16:56 GMT  
+		Size: 5.1 MB (5134878 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5289685e300f4bb4af88b6da8cc0610259d242e1313c34c1a0fdc27ab4f82d1c`  
-		Last Modified: Thu, 17 Oct 2024 08:26:31 GMT  
-		Size: 16.4 KB (16375 bytes)  
+	-	`sha256:fc9c67810eafcb1c03a5922e7e4ec91dd260305efb9cd5819b51b2a53fe71ed5`  
+		Last Modified: Sat, 19 Oct 2024 12:16:55 GMT  
+		Size: 16.6 KB (16551 bytes)  
 		MIME: application/vnd.in-toto+json
