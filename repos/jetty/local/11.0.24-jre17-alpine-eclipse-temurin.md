@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2e14682aa8d9ac058f971b9e93ad566aff3a3d8bf1ff25b8959ad08831f19727`
+- Image ID: `sha256:11e30cd8e96b0d8e095238968b4e30228a0ed2e561491bc64d06ce13070e8fef`
 - Created: `2024-09-10T00:22:25Z`
-- Virtual Size: ~ 199.40 Mb  
+- Virtual Size: ~ 199.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -147,16 +147,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.28.1-r0 description:
+c-ares-1.33.1-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.28.1-r0 webpage:
+c-ares-1.33.1-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.28.1-r0 installed size:
-156 KiB
+c-ares-1.33.1-r0 installed size:
+168 KiB
 
-c-ares-1.28.1-r0 license:
+c-ares-1.33.1-r0 license:
 MIT
 
 ```
@@ -266,16 +266,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.9.1-r1 description:
+curl-8.10.1-r0 description:
 URL retrival utility and library
 
-curl-8.9.1-r1 webpage:
+curl-8.10.1-r0 webpage:
 https://curl.se/
 
-curl-8.9.1-r1 installed size:
-248 KiB
+curl-8.10.1-r0 installed size:
+252 KiB
 
-curl-8.9.1-r1 license:
+curl-8.10.1-r0 license:
 curl
 
 ```
@@ -674,16 +674,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.9.1-r1 description:
+libcurl-8.10.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.9.1-r1 webpage:
+libcurl-8.10.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.9.1-r1 installed size:
-628 KiB
+libcurl-8.10.1-r0 installed size:
+644 KiB
 
-libcurl-8.9.1-r1 license:
+libcurl-8.10.1-r0 license:
 curl
 
 ```
@@ -827,16 +827,16 @@ LGPL-3.0-only AND GPL-2.0-only AND GPL-3.0-only
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.7-r0 description:
+libldap-2.6.8-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.7-r0 webpage:
+libldap-2.6.8-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.7-r0 installed size:
+libldap-2.6.8-r0 installed size:
 392 KiB
 
-libldap-2.6.7-r0 license:
+libldap-2.6.8-r0 license:
 OLDAP-2.8
 
 ```
@@ -844,16 +844,16 @@ OLDAP-2.8
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r0 description:
+libncursesw-6.4_p20240420-r1 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r0 webpage:
+libncursesw-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r0 installed size:
+libncursesw-6.4_p20240420-r1 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r0 license:
+libncursesw-6.4_p20240420-r1 license:
 X11
 
 ```
@@ -861,16 +861,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.43-r0 description:
+libpng-1.6.44-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.43-r0 webpage:
+libpng-1.6.44-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.43-r0 installed size:
+libpng-1.6.44-r0 installed size:
 200 KiB
 
-libpng-1.6.43-r0 license:
+libpng-1.6.44-r0 license:
 Libpng
 
 ```
@@ -1048,16 +1048,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r0 description:
+ncurses-terminfo-base-6.4_p20240420-r1 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r0 webpage:
+ncurses-terminfo-base-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r0 installed size:
+ncurses-terminfo-base-6.4_p20240420-r1 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r0 license:
+ncurses-terminfo-base-6.4_p20240420-r1 license:
 X11
 
 ```

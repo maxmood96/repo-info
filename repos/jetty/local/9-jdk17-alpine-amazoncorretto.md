@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:03ad999c68d6466ec3402340a265be7166c429a4130e04d1c7f182a67fdcfe16`
+- Image ID: `sha256:d6161aad1aaa978e615f5ed7bbb4db2581392722fb751ec03ac4128f70afee3f`
 - Created: `2024-09-09T08:47:04Z`
-- Virtual Size: ~ 320.61 Mb  
+- Virtual Size: ~ 319.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -76,16 +76,16 @@ MIT
 ### `apk` package: `amazon-corretto-17`
 
 ```console
-amazon-corretto-17-17.0.12.7.1-r0 description:
+amazon-corretto-17-17.0.13.11.1-r0 description:
 Corretto17
 
-amazon-corretto-17-17.0.12.7.1-r0 webpage:
+amazon-corretto-17-17.0.13.11.1-r0 webpage:
 https://github.com/corretto/corretto-jdk
 
-amazon-corretto-17-17.0.12.7.1-r0 installed size:
+amazon-corretto-17-17.0.13.11.1-r0 installed size:
 319 MiB
 
-amazon-corretto-17-17.0.12.7.1-r0 license:
+amazon-corretto-17-17.0.13.11.1-r0 license:
 https://github.com/corretto/corretto-jdk/blob/develop/LICENSE
 
 ```
@@ -161,16 +161,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.28.1-r0 description:
+c-ares-1.33.1-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.28.1-r0 webpage:
+c-ares-1.33.1-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.28.1-r0 installed size:
-156 KiB
+c-ares-1.33.1-r0 installed size:
+168 KiB
 
-c-ares-1.28.1-r0 license:
+c-ares-1.33.1-r0 license:
 MIT
 
 ```
@@ -212,16 +212,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.9.1-r1 description:
+curl-8.10.1-r0 description:
 URL retrival utility and library
 
-curl-8.9.1-r1 webpage:
+curl-8.10.1-r0 webpage:
 https://curl.se/
 
-curl-8.9.1-r1 installed size:
-248 KiB
+curl-8.10.1-r0 installed size:
+252 KiB
 
-curl-8.9.1-r1 license:
+curl-8.10.1-r0 license:
 curl
 
 ```
@@ -535,16 +535,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.9.1-r1 description:
+libcurl-8.10.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.9.1-r1 webpage:
+libcurl-8.10.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.9.1-r1 installed size:
-628 KiB
+libcurl-8.10.1-r0 installed size:
+644 KiB
 
-libcurl-8.9.1-r1 license:
+libcurl-8.10.1-r0 license:
 curl
 
 ```
@@ -637,16 +637,16 @@ LGPL-3.0-only AND GPL-2.0-only AND GPL-3.0-only
 ### `apk` package: `libldap`
 
 ```console
-libldap-2.6.7-r0 description:
+libldap-2.6.8-r0 description:
 OpenLDAP libraries
 
-libldap-2.6.7-r0 webpage:
+libldap-2.6.8-r0 webpage:
 https://www.openldap.org/
 
-libldap-2.6.7-r0 installed size:
+libldap-2.6.8-r0 installed size:
 392 KiB
 
-libldap-2.6.7-r0 license:
+libldap-2.6.8-r0 license:
 OLDAP-2.8
 
 ```
@@ -654,16 +654,16 @@ OLDAP-2.8
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r0 description:
+libncursesw-6.4_p20240420-r1 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r0 webpage:
+libncursesw-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r0 installed size:
+libncursesw-6.4_p20240420-r1 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r0 license:
+libncursesw-6.4_p20240420-r1 license:
 X11
 
 ```
@@ -790,16 +790,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r0 description:
+ncurses-terminfo-base-6.4_p20240420-r1 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r0 webpage:
+ncurses-terminfo-base-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r0 installed size:
+ncurses-terminfo-base-6.4_p20240420-r1 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r0 license:
+ncurses-terminfo-base-6.4_p20240420-r1 license:
 X11
 
 ```
