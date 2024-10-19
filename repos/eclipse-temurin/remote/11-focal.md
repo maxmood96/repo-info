@@ -1,12 +1,13 @@
 ## `eclipse-temurin:11-focal`
 
 ```console
-$ docker pull eclipse-temurin@sha256:8b79a05128a9616f4177bd5c661b59efaab755727e144ef66329e2911fa74a67
+$ docker pull eclipse-temurin@sha256:2d1076af22e25c756b2929ac753a3d07b82fe07fd9086455e22b19253238edfd
 ```
 
--	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 5
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 6
 	-	linux; amd64
+	-	unknown; unknown
 	-	linux; arm variant v7
 	-	linux; arm64 variant v8
 	-	linux; ppc64le
@@ -15,28 +16,28 @@ $ docker pull eclipse-temurin@sha256:8b79a05128a9616f4177bd5c661b59efaab755727e1
 ### `eclipse-temurin:11-focal` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:11a2c3655599b21ee1f39cf13aacfe2595e12ac0167eb9c7e1612c431d7aaf55
+$ docker pull eclipse-temurin@sha256:29dd3ea9ba99a296b68d8e6283c69c22bb0302acce85eda433450ccdb1722c7a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.1 MB (191078836 bytes)**  
+-	Total Size: **190.0 MB (190003077 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:83f0058de8dec004905d1e4bab52eb5566ddb483260ae82dda919ed50278c232`
+-	Image ID: `sha256:e508a67c946cc76ea66aa07e043b121b55a7f13d0a06d0b382d4a827d42141b0`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Fri, 11 Oct 2024 03:38:25 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=20.04
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Fri, 11 Oct 2024 03:38:27 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -61,26 +62,50 @@ CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:86e5016c269355b382c9cabab4f6646d56d75914f20d545289970436dae431b1`  
-		Last Modified: Fri, 11 Oct 2024 08:12:19 GMT  
-		Size: 28.6 MB (28583948 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0f7e085fa4865328b7a9c7c42be8b9513024d4f44bdc2920894ac00c62a9a95e`  
-		Last Modified: Wed, 16 Oct 2024 02:16:41 GMT  
-		Size: 16.9 MB (16934550 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0927c5d5ad3213cf0e276005f36585d68e127c99b983fd9000c7fa391dddc3d4`  
-		Last Modified: Wed, 16 Oct 2024 02:17:52 GMT  
-		Size: 145.6 MB (145558056 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:af98b22a4deaa23563c2e503ccedf37f4ae7f5ba7f1808e0641a00323831fe9c`  
-		Last Modified: Wed, 16 Oct 2024 02:17:41 GMT  
-		Size: 176.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c0a13e3e86f35d18d46daf77e0ff32e37aad6de880e66fddf37c0c5db6122e8`  
-		Last Modified: Wed, 16 Oct 2024 02:17:41 GMT  
-		Size: 2.1 KB (2106 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8d73e7b18f39c1ce533e99dc4bb9197d29ad9b0848e2ac07b0d6f26210e9956d`  
+		Last Modified: Sat, 19 Oct 2024 02:06:44 GMT  
+		Size: 16.9 MB (16931683 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3bacfb683a3291c3373af19d24e4a4ef71d347e5e04276609553f0f7b0713d88`  
+		Last Modified: Sat, 19 Oct 2024 02:06:46 GMT  
+		Size: 145.6 MB (145558068 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bf33e4fcca9d478292b083ea7add7e2a9f46e4a3a7bf25ac8debdfc39c0a3fed`  
+		Last Modified: Sat, 19 Oct 2024 02:06:44 GMT  
+		Size: 158.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1fe65af51e61751d7c21a8a50cd1d1e8470bbbe64a8483b21fa5ff42a94621bd`  
+		Last Modified: Sat, 19 Oct 2024 02:06:44 GMT  
+		Size: 2.1 KB (2108 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `eclipse-temurin:11-focal` - unknown; unknown
+
+```console
+$ docker pull eclipse-temurin@sha256:f23b1ca8272b040dbd30dafbe38316510d72bd214d06d3bd3a56d451d851ec1c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.7 MB (3695272 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9b08186387520286ff823b498f0c0897f9bf03c078bcb0bd37c092801c973d3e`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:cdb7ed639081995cb211f18ff71b7359f02a82c8b5207b64273030bbc9c39d3a`  
+		Last Modified: Sat, 19 Oct 2024 02:06:44 GMT  
+		Size: 3.7 MB (3673168 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:4928929c2f634d48c7c2563442a5f8f5b6a8257aa53f58bf7738f9e661a074cf`  
+		Last Modified: Sat, 19 Oct 2024 02:06:44 GMT  
+		Size: 22.1 KB (22104 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ### `eclipse-temurin:11-focal` - linux; arm variant v7
 
