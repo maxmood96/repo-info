@@ -1,7 +1,7 @@
 ## `clojure:temurin-11-tools-deps-bullseye`
 
 ```console
-$ docker pull clojure@sha256:6f2ec719625100e327a26bf7f3b21e6f87041f80779c5ca164c675b76b7bd756
+$ docker pull clojure@sha256:f75423c1664079c958fc87267b0e58903a1b6cf2493f64b7e0347e9ac3b923e7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull clojure@sha256:6f2ec719625100e327a26bf7f3b21e6f87041f80779c5ca164c
 ### `clojure:temurin-11-tools-deps-bullseye` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:ec15396f16101c4bc031550b23941877487604cc5ee92608d4b8f75f5f07617b
+$ docker pull clojure@sha256:da2489de04a95e16df9e8657bf0965fd469a9693049c92e8adc20666706bbc72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **270.0 MB (269964713 bytes)**  
+-	Total Size: **270.0 MB (269964627 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4afde700276e1fb2add978741a74dfae1f17259dc60253133c2c30e4414011c1`
+-	Image ID: `sha256:5144b1ac36cbebbcd18c1d9ae5efb781444de04f58c44ee19e194e43e6877f24`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -51,45 +51,45 @@ CMD ["clj"]
 		Last Modified: Thu, 17 Oct 2024 00:24:16 GMT  
 		Size: 55.1 MB (55080611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:20b249d71eb4253dc1b0a43d1d1effe7c614c80fa62976933a077c4ceb30394f`  
-		Last Modified: Thu, 17 Oct 2024 01:13:46 GMT  
-		Size: 145.5 MB (145549876 bytes)  
+	-	`sha256:a3ec098c0abd6ba8fe997ec07c2583b1b32befd694235ebd9975bea01056bd90`  
+		Last Modified: Sat, 19 Oct 2024 02:55:36 GMT  
+		Size: 145.5 MB (145549948 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:febcb6ba90e52cae858603e63a5f332fd16eee445db4c5154d32f350756445a7`  
-		Last Modified: Thu, 17 Oct 2024 01:13:45 GMT  
-		Size: 69.3 MB (69333583 bytes)  
+	-	`sha256:e80fbed3f626dfcc0d034871464e57566a652714f319687a3ed9a6af79e9f674`  
+		Last Modified: Sat, 19 Oct 2024 02:55:35 GMT  
+		Size: 69.3 MB (69333424 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f13c973af2c4f0fe01cf2b9705a3fe401216023e76453b017e281837370d0d4e`  
-		Last Modified: Thu, 17 Oct 2024 01:13:42 GMT  
-		Size: 611.0 B  
+	-	`sha256:cd915b496ee64d36d7358fc407a3019aad14abc5925862af877ec8479a597c78`  
+		Last Modified: Sat, 19 Oct 2024 02:55:34 GMT  
+		Size: 612.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:fd357f234fa9f40498097f0d673a40bfe11c4b05f290a2d8d45960af6f815588
+$ docker pull clojure@sha256:b26b2e0df63ff73085c83f4a7bd6f5a0456b76cfcdd3d945d10e3b83bd04cdd1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.2 MB (7224163 bytes)**  
+-	Total Size: **7.3 MB (7250076 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e495f322ed9acbfba447881d4e452676a0d52421926a3e97ca2f712cd760cbe`
+-	Image ID: `sha256:b07fa0aed9fc5a5f1bd4b8ca47491f74cad32bb514c7a47044772968eb44794b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:db5de7e43fee1a22146391a6cbebd56450302f6413f21b0d6baa01ba6c7f22e4`  
-		Last Modified: Thu, 17 Oct 2024 01:13:43 GMT  
-		Size: 7.2 MB (7210260 bytes)  
+	-	`sha256:db3861d29843e8308edd2fa8ec31c8e4eac26d6e2428d04d01bd812396ed08ca`  
+		Last Modified: Sat, 19 Oct 2024 02:55:34 GMT  
+		Size: 7.2 MB (7236005 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bad4637d460cfa1982cd2dfe3672d89f608eb804d0b342be3684f8e3e805079f`  
-		Last Modified: Thu, 17 Oct 2024 01:13:42 GMT  
-		Size: 13.9 KB (13903 bytes)  
+	-	`sha256:b6ac0b4ab8aae3307740cf758d64074ee8f3ff205e9727fbf87308ecaf45a544`  
+		Last Modified: Sat, 19 Oct 2024 02:55:34 GMT  
+		Size: 14.1 KB (14071 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-11-tools-deps-bullseye` - linux; arm64 variant v8
