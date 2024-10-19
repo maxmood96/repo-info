@@ -1,7 +1,7 @@
 ## `jetty:10-jre21-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:4a1151ec84420bc0ac24161bde58797de1f4affbedb19ef79dbfec8c746dc6e3
+$ docker pull jetty@sha256:285f5bb1ea3200332640df4aac079899dce0120635f3c09c85137a8d614b54f0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -146,28 +146,28 @@ $ docker pull jetty@sha256:01372bbefaa0bc0cbf6b20e9f424703b935cee51865600eebd780
 ### `jetty:10-jre21-eclipse-temurin` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:e5da08522fb11ab26f2e298b2ec98e396ee67d32f523bf3ed0af2b85c6c3733c
+$ docker pull jetty@sha256:6fcfed2f8a7fc982a067f52dfff3fdaadd7d6a96d25661b5265b35b611cd02a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **107.6 MB (107563048 bytes)**  
+-	Total Size: **106.5 MB (106493767 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3c5b7aac6a5f798768a15c264216840072603aabff5625d4c1333ff7ff766383`
+-	Image ID: `sha256:3cacf65947af4c86433d493072d9431d19234072fc7410c396572c30fbf88a91`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 10 Sep 2024 00:22:25 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG RELEASE
-# Tue, 10 Sep 2024 00:22:25 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 10 Sep 2024 00:22:25 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 10 Sep 2024 00:22:25 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 10 Sep 2024 00:22:25 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Tue, 10 Sep 2024 00:22:25 GMT
+# Thu, 22 Aug 2024 07:58:33 GMT
 CMD ["/bin/bash"]
 # Thu, 22 Aug 2024 07:58:33 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -218,59 +218,59 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:ea4ac7c2aed5e8bd05e7fcc8c0cd77ade510c4daf1690cfe93167a634eb81e4f`  
-		Last Modified: Fri, 11 Oct 2024 18:11:40 GMT  
-		Size: 30.0 MB (29952803 bytes)  
+	-	`sha256:1f630473117188fe348ebdcf0da5e93138275af14007f15baf79967a365e647a`  
+		Last Modified: Fri, 11 Oct 2024 05:07:24 GMT  
+		Size: 28.9 MB (28885845 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:185af607866372c42b75ce6a89acba6d7e5d2cb54d2fb846f7d86da63371897e`  
-		Last Modified: Wed, 16 Oct 2024 01:15:52 GMT  
-		Size: 13.8 MB (13798568 bytes)  
+	-	`sha256:53f4eec6f561250a0d70c55e6bd99d1331023a580a505800e59b70664894053d`  
+		Last Modified: Sat, 19 Oct 2024 05:28:16 GMT  
+		Size: 13.8 MB (13796069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d69586b06510b52d48a683ba572c57200b83ed124f6a47bda743a95ce1b7c1de`  
-		Last Modified: Wed, 16 Oct 2024 01:19:09 GMT  
-		Size: 52.6 MB (52641546 bytes)  
+	-	`sha256:58fd300069e374013d8c0518e19efb17c7b25d6eff07e640289f823905a2194b`  
+		Last Modified: Sat, 19 Oct 2024 05:41:38 GMT  
+		Size: 52.6 MB (52641724 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4083ee0ee102fcbdfad3d9bd53251f8108e08f4623d276456a3b8e84b76df6fe`  
-		Last Modified: Wed, 16 Oct 2024 01:19:03 GMT  
-		Size: 160.0 B  
+	-	`sha256:a14d0d7bab233e66f04ef5bbdaa21475242a89a4a90e7aaa510c9aa67c9103d8`  
+		Last Modified: Sat, 19 Oct 2024 05:41:36 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e75f560b5b1a6738b5dbe5a4574ed5c5a933ea3c15a87af3bb1e5becb9694854`  
-		Last Modified: Wed, 16 Oct 2024 01:19:03 GMT  
+	-	`sha256:fe8f96c53d597043fec948f95072da7cc3c4f12ba1554813e1e4a30d2c1ae59d`  
+		Last Modified: Sat, 19 Oct 2024 05:41:36 GMT  
 		Size: 2.1 KB (2109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36a9543fa1558b4c60e3f5820cbef09e6ed180387fb5d849858f551ad07e8a98`  
-		Last Modified: Wed, 16 Oct 2024 05:49:17 GMT  
+	-	`sha256:4fa796b789f675643caa30742704a6c87b5aa40524dbf86c6b93efc84fd58de0`  
+		Last Modified: Sat, 19 Oct 2024 08:19:56 GMT  
 		Size: 11.2 MB (11166196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc272268a8677f9aa73b407347a955ad1656a9f5b14732d1c595ee20735dbf8f`  
-		Last Modified: Wed, 16 Oct 2024 05:49:16 GMT  
+	-	`sha256:9123a04b840913e78ec2bebe711f64c611382d9f6f132820700936ef0de49758`  
+		Last Modified: Sat, 19 Oct 2024 08:19:55 GMT  
 		Size: 1.6 KB (1634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:10-jre21-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:40fdbd6ffa0105cf553347a28df9416682308a1c91420357620d01c8583e398a
+$ docker pull jetty@sha256:993b729e380c33af36fe1686033a7fb731e63e157e2def33af7d03aab1761665
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.1 MB (3130046 bytes)**  
+-	Total Size: **3.2 MB (3154484 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e81da253ed72279bf53408fa16ff1d9c229839b8c69e741022a4454ca13d7be`
+-	Image ID: `sha256:ab0d7a021615765474e6e46c6caa01cc1542dc2c5c1befeed96b62b78110e9ab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9c498489ff7c58c2a086995f20b3fdbf216d7826d059cd66f585afeff7d96e37`  
-		Last Modified: Wed, 16 Oct 2024 05:49:16 GMT  
-		Size: 3.1 MB (3108468 bytes)  
+	-	`sha256:b72e9afe96dc4137765519a7eee5dcc01110bbe43e69dfa5025bb4a3db4fe2e1`  
+		Last Modified: Sat, 19 Oct 2024 08:19:56 GMT  
+		Size: 3.1 MB (3132835 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:96c0b85aad8541fcbfed198b807debab87a106e5ba74b02bf2a8501f4ad350e9`  
-		Last Modified: Wed, 16 Oct 2024 05:49:16 GMT  
-		Size: 21.6 KB (21578 bytes)  
+	-	`sha256:fd116e3b07fe4830cf5d9a4a370ad0087db97e7af1e5a4f20bcc1407c95ea284`  
+		Last Modified: Sat, 19 Oct 2024 08:19:55 GMT  
+		Size: 21.6 KB (21649 bytes)  
 		MIME: application/vnd.in-toto+json
