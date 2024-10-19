@@ -1,9 +1,9 @@
-# `eclipse-mosquitto:2.0.19`
+# `eclipse-mosquitto:2.0.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e7a8ea2ac6f8f42d38e36b5adbbb2c72b03edf051cb0fc27c41d2e1654978fd8`
-- Created: `2024-10-02T10:16:48Z`
+- Image ID: `sha256:dedeef6b0c073f2e934ed0bbf1086dc831093a4ad85c5e700cdfe7beef8aa236`
+- Created: `2024-10-16T19:28:05Z`
 - Virtual Size: ~ 9.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,8 +11,8 @@
 - Command: `["/usr/sbin/mosquitto","-c","/mosquitto/config/mosquitto.conf"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `VERSION=2.0.19`
-  - `DOWNLOAD_SHA256=33af3637f119a61c509c01d2f8f6cc3d8be76f49e850132f2860af142abf82a9`
+  - `VERSION=2.0.20`
+  - `DOWNLOAD_SHA256=ebd07d89d2a446a7f74100ad51272e4a8bf300b61634a7812e19f068f2759de8`
   - `GPG_KEYS=A0D6EEA1DCAE49A635A3B2F0779B22DFB3E717B7`
   - `LWS_VERSION=4.2.1`
   - `LWS_SHA256=842da21f73ccba2be59e680de10a8cce7928313048750eb6ad73b6fa50763c51`
