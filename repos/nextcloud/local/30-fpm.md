@@ -1,10 +1,10 @@
-# `nextcloud:30.0.0-fpm`
+# `nextcloud:30.0.1-fpm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:91199f8c2fbb5ed42df50b96a37f0f600a7e6e91b3658a4c31c80e81cda3632f`
-- Created: `2024-10-11T17:38:24.553673581Z`
-- Virtual Size: ~ 1.23 Gb  
+- Image ID: `sha256:91f6f698dc96b27a0d0c134989c4c8d147b3992043304691dae09a5e47b25c41`
+- Created: `2024-10-18T19:51:20.002708054Z`
+- Virtual Size: ~ 1.27 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=80a5225746a9eb484475b312d4c626c63a88a037d8e56d214f30205e1ba1411a`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
-  - `NEXTCLOUD_VERSION=30.0.0`
+  - `NEXTCLOUD_VERSION=30.0.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -3245,11 +3245,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.106-3`
+### `dpkg` source package: `linux=6.1.112-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.106-3`
+- `linux-libc-dev:amd64=6.1.112-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3264,17 +3264,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.106-3
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.106-3.dsc' linux_6.1.106-3.dsc 290930 SHA256:991a5496320541a090dda8c6d97a34bd9f6f4bccfd6c42d4e0e7e6ba781f9641
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.106.orig.tar.xz' linux_6.1.106.orig.tar.xz 137654360 SHA256:e1e3b721db72464aba403b218ff20a256d06ba5686b03bf0d6282ad372dfb330
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.106-3.debian.tar.xz' linux_6.1.106-3.debian.tar.xz 1669432 SHA256:edd237e3c03d49b3c8e815c4fbeb8ac6ff32dc03cd13be4c8d9c1df7e6f1b141
+$ apt-get source -qq --print-uris linux=6.1.112-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.112-1.dsc' linux_6.1.112-1.dsc 290930 SHA256:4bab7bd8fea3289860637e7578dba4bd15aedb6d5350d0ebf782726104eb773f
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.112.orig.tar.xz' linux_6.1.112.orig.tar.xz 137683288 SHA256:542ffe44eb5d79f6495cc5aae97b651bfa6d8bb65ed1b69810363a83fc95f211
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.112-1.debian.tar.xz' linux_6.1.112-1.debian.tar.xz 1676332 SHA256:b18bf125ef7b769943ddbd2a5812c89346e5addbe424c6159911d528908059ae
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.106-3/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.106-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.106-3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.112-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.112-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.112-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
