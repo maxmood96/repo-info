@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f61b2121eb9b809cd3e52a23d0dff5f7bff685ff1cf3450003f8882762c8045e`
+- Image ID: `sha256:c704e0fdbeb5902994e09527e2c0d960ef2ce4c9799e63ae8c99028cfe805832`
 - Created: `2024-10-08T19:58:40Z`
-- Virtual Size: ~ 58.44 Mb  
+- Virtual Size: ~ 59.56 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -13,6 +13,7 @@
   - `LANG=C.UTF-8`
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
   - `PYTHON_VERSION=3.12.7`
+  - `PYTHON_SHA256=24887b92e2afd4a2ac602419ad4b596372f67ac9b077190f459aba390faf5550`
   - `HY_VERSION=1.0.0`
   - `HYRULE_VERSION=0.7.0`
 
@@ -287,23 +288,6 @@ libcrypto3-3.1.7-r0 installed size:
 
 libcrypto3-3.1.7-r0 license:
 Apache-2.0
-
-```
-
-### `apk` package: `libexpat`
-
-```console
-libexpat-2.6.3-r0 description:
-XML Parser library written in C (libraries)
-
-libexpat-2.6.3-r0 webpage:
-https://libexpat.github.io/
-
-libexpat-2.6.3-r0 installed size:
-144 KiB
-
-libexpat-2.6.3-r0 license:
-MIT
 
 ```
 
