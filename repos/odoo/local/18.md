@@ -1,10 +1,10 @@
-# `odoo:18.0-20241007`
+# `odoo:18.0-20241017`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f61b2a73543257c065a7972b5280a4c659bf14846ad877ef3be9b112fb43502d`
-- Created: `2024-10-07T08:31:27Z`
-- Virtual Size: ~ 1.85 Gb  
+- Image ID: `sha256:9872023cb8afd49eb858caa038e42064d529f4a166726c9f3bdcbe462a054e54`
+- Created: `2024-10-17T13:36:11Z`
+- Virtual Size: ~ 1.86 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
