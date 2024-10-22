@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1c556ef34c107274ab9b978b463c45290d7ab1c8e5dc5ca563fda44f212f5d3b`
+- Image ID: `sha256:08ff39ba02683c8d5d984cf3d26b17e5b2b6b87854acba083a31532abdcc8827`
 - Created: `2024-10-16T23:15:53Z`
 - Virtual Size: ~ 273.03 Mb  
   (total size of all layers on-disk)
@@ -755,16 +755,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.43-r0 description:
+libpng-1.6.44-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.43-r0 webpage:
+libpng-1.6.44-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.43-r0 installed size:
+libpng-1.6.44-r0 installed size:
 200 KiB
 
-libpng-1.6.43-r0 license:
+libpng-1.6.44-r0 license:
 Libpng
 
 ```
