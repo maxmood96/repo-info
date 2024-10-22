@@ -158,19 +158,13 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.6.4
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.4.dsc' base-passwd_3.6.4.dsc 1762 SHA256:83d6855b38a0ab900d28d14bc3a0c0b97c60d5461143e51ccc2b0f8f7ea92cc8
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.4.tar.xz' base-passwd_3.6.4.tar.xz 58420 SHA256:4b5232c5910932215b87bbde6f3c6c9a97021fe7902bd837b1ede8cc0be84a65
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-passwd/3.6.4/
 
-- https://sources.debian.net/src/base-passwd/3.6.4/ (for browsing the source)
-- https://sources.debian.net/src/base-passwd/3.6.4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-passwd/3.6.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bash=5.2.32-1`
 
@@ -915,20 +909,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap-ng0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap-ng=0.8.5-2
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.5-2.dsc' libcap-ng_0.8.5-2.dsc 1638 SHA256:0ae4a5110c0987516e6ac566340a3f3ce89616d6439994d0f0f40ad59c7c2e60
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.5.orig.tar.gz' libcap-ng_0.8.5.orig.tar.gz 59265 SHA256:e4be07fdd234f10b866433f224d183626003c65634ed0552b02e654a380244c2
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.5-2.debian.tar.xz' libcap-ng_0.8.5-2.debian.tar.xz 7456 SHA256:4644a13502cb51c0d4de47ea87029962498b3e4b848f98635d02d9f72611794f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libcap-ng/0.8.5-2/
 
-- https://sources.debian.net/src/libcap-ng/0.8.5-2/ (for browsing the source)
-- https://sources.debian.net/src/libcap-ng/0.8.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcap-ng/0.8.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap2=1:2.66-5`
 
@@ -1731,20 +1718,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=256.7-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.7-1.dsc' systemd_256.7-1.dsc 8247 SHA256:e84f0efa98b20c89b06db8306faf8276791aa1162e4da64827dcab659f97cacb
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.7.orig.tar.gz' systemd_256.7.orig.tar.gz 15672532 SHA256:896d76ff65c88f5fd9e42f90d152b0579049158a163431dd77cdc57748b1d7b0
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.7-1.debian.tar.xz' systemd_256.7-1.debian.tar.xz 171964 SHA256:a0bd09851de1b2341a319a5a3756999500b505953a142b3553eea982ff25fbc3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/256.7-1/
 
-- https://sources.debian.net/src/systemd/256.7-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/256.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/256.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.10-3`
 
