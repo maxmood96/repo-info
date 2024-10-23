@@ -50,6 +50,18 @@
 -	[`flink:1.20.0-scala_2.12-java11`](#flink1200-scala_212-java11)
 -	[`flink:1.20.0-scala_2.12-java17`](#flink1200-scala_212-java17)
 -	[`flink:1.20.0-scala_2.12-java8`](#flink1200-scala_212-java8)
+-	[`flink:2.0`](#flink20)
+-	[`flink:2.0-java11`](#flink20-java11)
+-	[`flink:2.0-java17`](#flink20-java17)
+-	[`flink:2.0-preview1`](#flink20-preview1)
+-	[`flink:2.0-preview1-java11`](#flink20-preview1-java11)
+-	[`flink:2.0-preview1-java17`](#flink20-preview1-java17)
+-	[`flink:2.0-preview1-scala_2.12`](#flink20-preview1-scala_212)
+-	[`flink:2.0-preview1-scala_2.12-java11`](#flink20-preview1-scala_212-java11)
+-	[`flink:2.0-preview1-scala_2.12-java17`](#flink20-preview1-scala_212-java17)
+-	[`flink:2.0-scala_2.12`](#flink20-scala_212)
+-	[`flink:2.0-scala_2.12-java11`](#flink20-scala_212-java11)
+-	[`flink:2.0-scala_2.12-java17`](#flink20-scala_212-java17)
 -	[`flink:java11`](#flinkjava11)
 -	[`flink:java17`](#flinkjava17)
 -	[`flink:java8`](#flinkjava8)
@@ -14314,6 +14326,54 @@ $ docker pull flink@sha256:53bc56e7005685c3f579e759f7a37dd40a24ff2163441fd1068f6
 		Last Modified: Sat, 19 Oct 2024 06:31:30 GMT  
 		Size: 31.1 KB (31125 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `flink:2.0`
+
+**does not exist** (yet?)
+
+## `flink:2.0-java11`
+
+**does not exist** (yet?)
+
+## `flink:2.0-java17`
+
+**does not exist** (yet?)
+
+## `flink:2.0-preview1`
+
+**does not exist** (yet?)
+
+## `flink:2.0-preview1-java11`
+
+**does not exist** (yet?)
+
+## `flink:2.0-preview1-java17`
+
+**does not exist** (yet?)
+
+## `flink:2.0-preview1-scala_2.12`
+
+**does not exist** (yet?)
+
+## `flink:2.0-preview1-scala_2.12-java11`
+
+**does not exist** (yet?)
+
+## `flink:2.0-preview1-scala_2.12-java17`
+
+**does not exist** (yet?)
+
+## `flink:2.0-scala_2.12`
+
+**does not exist** (yet?)
+
+## `flink:2.0-scala_2.12-java11`
+
+**does not exist** (yet?)
+
+## `flink:2.0-scala_2.12-java17`
+
+**does not exist** (yet?)
 
 ## `flink:java11`
 
