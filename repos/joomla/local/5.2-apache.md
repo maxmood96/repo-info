@@ -142,13 +142,21 @@ Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apac
 - `PCRE`
 - `Zeus`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris apache2=2.4.62-1~deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.62-1%7edeb12u2.dsc' apache2_2.4.62-1~deb12u2.dsc 3584 SHA256:b49ee9734fa951f3f39b9dc734ec21ef2e3e6e54d69f0feda67308f9ed2182d5
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.62.orig.tar.gz' apache2_2.4.62.orig.tar.gz 9872432 SHA256:3e2404d762a2da03560d7ada379ba1599d32f04a0d70ad6ff86f44325f2f062d
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.62.orig.tar.gz.asc' apache2_2.4.62.orig.tar.gz.asc 833 SHA256:7765403a937dacb562a0eb15ed11ba85f703d10c6bb8b5630591d18876975963
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.62-1%7edeb12u2.debian.tar.xz' apache2_2.4.62-1~deb12u2.debian.tar.xz 824080 SHA256:b8cebc0018a0c12c78d8052d872b0c9c152c8c91da0d16fee6112cfa15df33f1
+```
 
-- http://snapshot.debian.org/package/apache2/2.4.62-1~deb12u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/apache2/2.4.62-1~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/apache2/2.4.62-1~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apache2/2.4.62-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.3-1`
 
@@ -653,13 +661,21 @@ Licenses: (parsed from: `/usr/share/doc/libcups2/copyright`)
 - `FSFUL`
 - `Zlib`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris cups=2.4.2-3+deb12u8
+'http://deb.debian.org/debian-security/pool/updates/main/c/cups/cups_2.4.2-3%2bdeb12u8.dsc' cups_2.4.2-3+deb12u8.dsc 3389 SHA256:526c48402f1410ae55dccc0dd6e6ebe654d15e877829ea0e2b8aece7a20c56b7
+'http://deb.debian.org/debian-security/pool/updates/main/c/cups/cups_2.4.2.orig.tar.gz' cups_2.4.2.orig.tar.gz 8128785 SHA256:f03ccb40b087d1e30940a40e0141dcbba263f39974c20eb9f2521066c9c6c908
+'http://deb.debian.org/debian-security/pool/updates/main/c/cups/cups_2.4.2.orig.tar.gz.asc' cups_2.4.2.orig.tar.gz.asc 228 SHA256:1c116a5fb52e013f4569c3e4cb09a9934ea5e498b9e9d3b823bc2ae09066555b
+'http://deb.debian.org/debian-security/pool/updates/main/c/cups/cups_2.4.2-3%2bdeb12u8.debian.tar.xz' cups_2.4.2-3+deb12u8.debian.tar.xz 390072 SHA256:e66c4a352a0b89665a8506019f37bfe36a9d032c95c6dad41206ae908404ff9e
+```
 
-- http://snapshot.debian.org/package/cups/2.4.2-3+deb12u8/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/cups/2.4.2-3+deb12u8/ (for browsing the source)
+- https://sources.debian.net/src/cups/2.4.2-3+deb12u8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/cups/2.4.2-3+deb12u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=7.88.1-10+deb12u7`
 
@@ -1109,13 +1125,20 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris expat=2.5.0-1+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0-1%2bdeb12u1.dsc' expat_2.5.0-1+deb12u1.dsc 2013 SHA256:6507e647ff25e88be44b413089b357b4a837a461f11353dd38d7686e3e5733a4
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0.orig.tar.gz' expat_2.5.0.orig.tar.gz 8320988 SHA256:ab00ee05c7067fd10a35c5d2a4922ebba746ddd50ff83b79c828da17bbdf1757
+'http://deb.debian.org/debian-security/pool/updates/main/e/expat/expat_2.5.0-1%2bdeb12u1.debian.tar.xz' expat_2.5.0-1+deb12u1.debian.tar.xz 13724 SHA256:32e9a953f5a240fca186e077ca957fe9352777707b650a58ff989650b9fa0a80
+```
 
-- http://snapshot.debian.org/package/expat/2.5.0-1+deb12u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/expat/2.5.0-1+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.5.0-1+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.5.0-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fftw3=3.3.10-1`
 
@@ -1463,13 +1486,20 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `none`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris ghostscript=10.0.0~dfsg-11+deb12u5
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u5.dsc' ghostscript_10.0.0~dfsg-11+deb12u5.dsc 3018 SHA256:b4d40810b9a50f3ea403f0c06e60faa912eca78e48ccc7ceeb526030e5bea178
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg.orig.tar.xz' ghostscript_10.0.0~dfsg.orig.tar.xz 26688456 SHA256:67a288151fd88f0d44e165429c48cc85d69b3e4d3765c95e60839a094bfb8df3
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u5.debian.tar.xz' ghostscript_10.0.0~dfsg-11+deb12u5.debian.tar.xz 96556 SHA256:39907790b3af47a77ec745c95c0aedd7795affd4ce9a186200bbbee69c1da1d2
+```
 
-- http://snapshot.debian.org/package/ghostscript/10.0.0~dfsg-11+deb12u5/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u5/ (for browsing the source)
+- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ghostscript/10.0.0~dfsg-11+deb12u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.74.6-2+deb12u3`
 
@@ -3393,13 +3423,20 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris linux=6.1.112-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.112-1.dsc' linux_6.1.112-1.dsc 290930 SHA256:4bab7bd8fea3289860637e7578dba4bd15aedb6d5350d0ebf782726104eb773f
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.112.orig.tar.xz' linux_6.1.112.orig.tar.xz 137683288 SHA256:542ffe44eb5d79f6495cc5aae97b651bfa6d8bb65ed1b69810363a83fc95f211
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.112-1.debian.tar.xz' linux_6.1.112-1.debian.tar.xz 1676332 SHA256:b18bf125ef7b769943ddbd2a5812c89346e5addbe424c6159911d528908059ae
+```
 
-- http://snapshot.debian.org/package/linux/6.1.112-1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/linux/6.1.112-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.112-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.112-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lua5.3=5.3.6-2`
 
@@ -3828,13 +3865,21 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris openssl=3.0.14-1~deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.14-1%7edeb12u2.dsc' openssl_3.0.14-1~deb12u2.dsc 2675 SHA256:bb61db5f2d9cba110cd2d8f60d989ee22aee86cf841eb7ff0f45e921e612d07b
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.14.orig.tar.gz' openssl_3.0.14.orig.tar.gz 15305497 SHA256:eeca035d4dd4e84fc25846d952da6297484afa0650a6f84c682e39df3a4123ca
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.14.orig.tar.gz.asc' openssl_3.0.14.orig.tar.gz.asc 833 SHA256:251c0453a8ea7716cb6ce6cf67f8ca4ae48fbed97a924167ef8f271dd387033b
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_3.0.14-1%7edeb12u2.debian.tar.xz' openssl_3.0.14-1~deb12u2.debian.tar.xz 73660 SHA256:6abcbe74e4e42dae11525435527b38e91911bba8f446a0c401e19d96e006f318
+```
 
-- http://snapshot.debian.org/package/openssl/3.0.14-1~deb12u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/openssl/3.0.14-1~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/3.0.14-1~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/3.0.14-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.24.1-2`
 
@@ -4231,13 +4276,20 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.11-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris python3.11=3.11.2-6+deb12u3
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.11/python3.11_3.11.2-6%2bdeb12u3.dsc' python3.11_3.11.2-6+deb12u3.dsc 3643 SHA256:7e16a48aafc75f4554354482aa9d6e34500d44351d88d1d0d6adec240eeef8fc
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.11/python3.11_3.11.2.orig.tar.gz' python3.11_3.11.2.orig.tar.gz 26437858 SHA256:2411c74bda5bbcfcddaf4531f66d1adc73f247f529aee981b029513aefdbf849
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.11/python3.11_3.11.2-6%2bdeb12u3.debian.tar.xz' python3.11_3.11.2-6+deb12u3.debian.tar.xz 230596 SHA256:39f424bb3d6bbfc92409f299f75e1cda6934f7d93a5e4070a84e4914e9d3a184
+```
 
-- http://snapshot.debian.org/package/python3.11/3.11.2-6+deb12u3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/python3.11/3.11.2-6+deb12u3/ (for browsing the source)
+- https://sources.debian.net/src/python3.11/3.11.2-6+deb12u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python3.11/3.11.2-6+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=3.0-2`
 
