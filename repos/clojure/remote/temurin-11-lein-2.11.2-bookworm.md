@@ -1,7 +1,7 @@
 ## `clojure:temurin-11-lein-2.11.2-bookworm`
 
 ```console
-$ docker pull clojure@sha256:3e4bc737e641a18bd1a91c37c2319b190c16db76685ca25101f0816f567eb888
+$ docker pull clojure@sha256:d5295b74eed2a5a899747467401e240d0837874bb6146742d1dfe04f5f59817b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull clojure@sha256:3e4bc737e641a18bd1a91c37c2319b190c16db76685ca25101f
 ### `clojure:temurin-11-lein-2.11.2-bookworm` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:18c3aaa8df11764691c44abda6be316a0c02c6d6c7902faab3f88f99d395d215
+$ docker pull clojure@sha256:a4e4f37c9b9520cb5bea8b3018e46fa39925aac9c82718823054acb81308b26e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **261.7 MB (261669425 bytes)**  
+-	Total Size: **261.7 MB (261720824 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2d2dbbc765c335302db5b25a1ce50219c6e57df6430462cffbcfb73319cbaa7`
+-	Image ID: `sha256:a3704432b2d7adcc4c36fbd143ee186671b4c6a177250e17c6927fcf99d8d022`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -57,45 +57,45 @@ CMD ["lein" "repl"]
 		Last Modified: Thu, 17 Oct 2024 00:23:37 GMT  
 		Size: 49.6 MB (49555023 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f04bc8654796ceaedc7ed399ddae2661d4975af2951f7001b35d09def1be3c54`  
-		Last Modified: Sat, 19 Oct 2024 02:55:21 GMT  
-		Size: 145.5 MB (145549942 bytes)  
+	-	`sha256:88ee76859623a1add3582105fbb06a1bebeae42a29c1df96d5f73b522f23f926`  
+		Last Modified: Thu, 24 Oct 2024 01:59:22 GMT  
+		Size: 145.6 MB (145601315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d10c2e702474f06698f91098932a2bf9f10c1b825c1e24bb4cede3f07ac2ad88`  
-		Last Modified: Sat, 19 Oct 2024 02:55:20 GMT  
-		Size: 62.1 MB (62050273 bytes)  
+	-	`sha256:d7da4ac3f82c09d30c992d85407541c5aec0d73b984cdf1df275bc266e760faa`  
+		Last Modified: Thu, 24 Oct 2024 01:59:21 GMT  
+		Size: 62.1 MB (62050261 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2934d4cc5617383d803cecbba2f01c20848e3b9ad6bb61b24ed9e5858b39def`  
-		Last Modified: Sat, 19 Oct 2024 02:55:19 GMT  
-		Size: 4.5 MB (4514155 bytes)  
+	-	`sha256:3e45aab8163bbc6610121800983e3ba3cb341744244bb34f7f760d307e3ae5af`  
+		Last Modified: Thu, 24 Oct 2024 01:59:20 GMT  
+		Size: 4.5 MB (4514193 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-2.11.2-bookworm` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:47da0fbed88de772db503f93f762a8a176172a5ec0b801dfe2e57dc6789d7136
+$ docker pull clojure@sha256:b8d3a472a9b5d9254b8708a68fca0c9212d024f9a0e76faec32aea9eb4186249
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6581307 bytes)**  
+-	Total Size: **6.6 MB (6581309 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8334f09236fe9d606a4589e67461cbc95400aff69cfcf840f05ae049f5f45cb7`
+-	Image ID: `sha256:54a5f32de3c65469d3d444af49c2eeb621ed5420494d2a5bd5b1e6e07e8b6666`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:999645cc3db9d0c0ef211957a8f8ecc4a173de8e7cfdd288f5acaf024225a580`  
-		Last Modified: Sat, 19 Oct 2024 02:55:19 GMT  
+	-	`sha256:22ebec051523824540403de3cce5916de62386dbcc22245d30db36016800edf5`  
+		Last Modified: Thu, 24 Oct 2024 01:59:20 GMT  
 		Size: 6.6 MB (6565057 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:534b6081b872d92eef9a6072ad84289a7027575b7457593a39d1c7bcc96e5ac4`  
-		Last Modified: Sat, 19 Oct 2024 02:55:19 GMT  
-		Size: 16.2 KB (16250 bytes)  
+	-	`sha256:11c4b737805dd6c631c973a3ae1e227eea0dab96cf667dc35da590e984c73cb6`  
+		Last Modified: Thu, 24 Oct 2024 01:59:20 GMT  
+		Size: 16.3 KB (16252 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-11-lein-2.11.2-bookworm` - linux; arm64 variant v8
