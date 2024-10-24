@@ -1,10 +1,10 @@
-# `couchdb:3.4.1-nouveau`
+# `couchdb:3.4.2-nouveau`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c5c79aa53ba986a9a9f2923dcff657045fbfeba8b0df43c45b018df4c6b7a175`
-- Created: `2024-10-04T23:09:59Z`
-- Virtual Size: ~ 366.43 Mb  
+- Image ID: `sha256:cc30f6f459a8d07e38d5540e62dc1292ee767d90d8fea10a98e0b9f1ac16df1a`
+- Created: `2024-10-22T18:47:05Z`
+- Virtual Size: ~ 366.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/usr/bin/java","-server","-Djava.awt.headless=true","-Xmx2g","-jar","/opt/nouveau/lib/nouveau-1.0-SNAPSHOT.jar","server","/opt/nouveau/etc/nouveau.yaml"]`
