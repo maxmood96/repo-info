@@ -1,7 +1,7 @@
 ## `sonarqube:10-developer`
 
 ```console
-$ docker pull sonarqube@sha256:4f164b32afb1bb1122cf23f25310cbb85b9cc2703ea0edbe9ee2ca3275aecba1
+$ docker pull sonarqube@sha256:544c8a3642991f3615585e5be18191d5b25a2d478a236d4d2d296b234afce653
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,45 +14,45 @@ $ docker pull sonarqube@sha256:4f164b32afb1bb1122cf23f25310cbb85b9cc2703ea0edbe9
 ### `sonarqube:10-developer` - linux; amd64
 
 ```console
-$ docker pull sonarqube@sha256:36bb2354bc8fd871d72dc54a7bb044d8a979b59e546adf12d0852db65024b6eb
+$ docker pull sonarqube@sha256:f15e7859cf41d05f733dd9f4cc2a9c5dc97855516332fc062b31ede148e058eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1061189008 bytes)**  
+-	Total Size: **1.1 GB (1061104119 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8dcba83016762d5875c507d49b7dbbd80394d5a525303ec2735cbf9a9f658f39`
+-	Image ID: `sha256:6dc1feb369d7e690008703bd15512d6bbedb694cdd4758757e71e7faf915e884`
 -	Entrypoint: `["\/opt\/sonarqube\/docker\/entrypoint.sh"]`
 
 ```dockerfile
-# Thu, 22 Aug 2024 07:58:33 GMT
+# Wed, 11 Sep 2024 16:25:16 GMT
 ARG RELEASE
-# Thu, 22 Aug 2024 07:58:33 GMT
+# Wed, 11 Sep 2024 16:25:16 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 22 Aug 2024 07:58:33 GMT
+# Wed, 11 Sep 2024 16:25:16 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 22 Aug 2024 07:58:33 GMT
+# Wed, 11 Sep 2024 16:25:16 GMT
 LABEL org.opencontainers.image.version=22.04
-# Thu, 22 Aug 2024 07:58:33 GMT
+# Wed, 11 Sep 2024 16:25:17 GMT
 ADD file:ebe009f86035c175ba244badd298a2582914415cf62783d510eab3a311a5d4e1 in / 
-# Thu, 22 Aug 2024 07:58:33 GMT
+# Wed, 11 Sep 2024 16:25:18 GMT
 CMD ["/bin/bash"]
-# Thu, 22 Aug 2024 07:58:33 GMT
+# Mon, 30 Sep 2024 13:17:42 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Thu, 22 Aug 2024 07:58:33 GMT
+# Mon, 30 Sep 2024 13:17:42 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 22 Aug 2024 07:58:33 GMT
+# Mon, 30 Sep 2024 13:17:42 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 22 Aug 2024 07:58:33 GMT
-RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 22 Aug 2024 07:58:33 GMT
-ENV JAVA_VERSION=jdk-17.0.12+7
-# Thu, 22 Aug 2024 07:58:33 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='0e8088d7a3a7496faba7ac8787db09dc0264c2bc6f568ea8024fd775a783e13c';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.12_7.tar.gz';          ;;        arm64)          ESUM='9dfe4c56463690ae67d22268980d8861eb46b907d7914f8f2e6fc7b25778c8ec';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.12_7.tar.gz';          ;;        armhf)          ESUM='f093094abe0cb2bb5a255d8180810030321073520541f289926c4682eda76136';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.12_7.tar.gz';          ;;        ppc64el)          ESUM='2759c48e1e56117871b04c851af18b92b6992cf67590f602949b96c3cff15c73';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.12_7.tar.gz';          ;;        s390x)          ESUM='cb1a3857d10e9353862761ce3c6b45573a736ea95cea44bc02dc3a703e57255a';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.12%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.12_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Thu, 22 Aug 2024 07:58:33 GMT
+# Mon, 30 Sep 2024 13:17:42 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 30 Sep 2024 13:17:42 GMT
+ENV JAVA_VERSION=jdk-17.0.13+11
+# Mon, 30 Sep 2024 13:17:42 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='4086cc7cb2d9e7810141f255063caad10a8a018db5e6b47fa5394c506ab65bff';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-jre_x64_linux_hotspot_17.0.13_11.tar.gz';          ;;        arm64)          ESUM='97c4fb748eaa1292fb2f28fec90a3eba23e35974ef67f8b3aa304ad4db2ba162';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.13_11.tar.gz';          ;;        armhf)          ESUM='f9c4008680db016c9cab26cc2739d4553898911522f6a78a611fafa1f5270c88';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-jre_arm_linux_hotspot_17.0.13_11.tar.gz';          ;;        ppc64el)          ESUM='790f53fcc95cc76ed8f27d3146cf789fc354a2afb7148cffd197ca61a643212f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.13_11.tar.gz';          ;;        s390x)          ESUM='0f46246643b6543c097d6eda4db03dbe5c8372217e06d661ac0fb3882eab007d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-jre_s390x_linux_hotspot_17.0.13_11.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -r "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Mon, 30 Sep 2024 13:17:42 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Thu, 22 Aug 2024 07:58:33 GMT
+# Mon, 30 Sep 2024 13:17:42 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Thu, 22 Aug 2024 07:58:33 GMT
+# Mon, 30 Sep 2024 13:17:42 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Mon, 30 Sep 2024 13:17:42 GMT
 LABEL io.k8s.description=SonarQube is a self-managed, automatic code review tool that systematically helps you deliver Clean Code.
@@ -100,28 +100,28 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b92537efebb6ce973af4c4fa37e8c728fb68ba2b854bc73a1cafc5011bf92e5a`  
-		Last Modified: Sat, 19 Oct 2024 02:06:36 GMT  
-		Size: 12.9 MB (12887629 bytes)  
+	-	`sha256:17da8ec43a12ff631d1579ab778a0883e59bca58adc86136e1c447ef261a2b6e`  
+		Last Modified: Thu, 24 Oct 2024 00:57:16 GMT  
+		Size: 16.1 MB (16142555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bfede2ca545b5e996883647d283c8442350f93f0be0922e6fc74520211cfe73e`  
-		Last Modified: Sat, 19 Oct 2024 02:06:36 GMT  
-		Size: 47.3 MB (47280266 bytes)  
+	-	`sha256:d12988e90d6107a2cb56e2156831a2f5e31ac9d7d05cd4abc8fc28b53788d282`  
+		Last Modified: Thu, 24 Oct 2024 00:57:17 GMT  
+		Size: 46.9 MB (46942141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:915f257c17fa72fa031eb4b02d7e012258840eb9e7395531f3afffd80d6a6dbb`  
-		Last Modified: Sat, 19 Oct 2024 02:06:35 GMT  
-		Size: 157.0 B  
+	-	`sha256:f4d133ca2b7f0fb899d954a051126f4c33bfa55975b531ad37c45821e2a63416`  
+		Last Modified: Thu, 24 Oct 2024 00:57:15 GMT  
+		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:828f10e1689053b6f4b7c05cd04d2bc5822ad8dae5112bbd10cdb3766a27d8b6`  
-		Last Modified: Sat, 19 Oct 2024 02:06:35 GMT  
-		Size: 2.1 KB (2109 bytes)  
+	-	`sha256:143733ae87a42f42df943534de9fa97f96f238e35ca89d480a4d1acc707d99e0`  
+		Last Modified: Thu, 24 Oct 2024 00:57:16 GMT  
+		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9cb54f28a3df55961adc682421c33360516f475878057f338d6b7171d79f9cc`  
-		Last Modified: Sat, 19 Oct 2024 03:00:36 GMT  
-		Size: 971.5 MB (971482672 bytes)  
+	-	`sha256:fecdd26b0280f0316437679736231c7ead4f31d825c576ab0530cca5d113aef4`  
+		Last Modified: Thu, 24 Oct 2024 02:02:15 GMT  
+		Size: 968.5 MB (968480807 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0970da910236f730a085c7abdb4e29c77527e404896d7c9ad15384980e03502`  
-		Last Modified: Sat, 19 Oct 2024 03:00:15 GMT  
+	-	`sha256:475a1feba373d9fd1177f9e00002be1931749b13fa015c3e6be9962bc89a2a17`  
+		Last Modified: Thu, 24 Oct 2024 02:01:58 GMT  
 		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -132,24 +132,24 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 ### `sonarqube:10-developer` - unknown; unknown
 
 ```console
-$ docker pull sonarqube@sha256:034f7e43b9e7126fbf6918f0081c03d4ee0f5401dfc677758f906c445970e67e
+$ docker pull sonarqube@sha256:1478fd9270cb3ba95d76e0ee61a09937d087e6da9a766f4e3e86b053102b26a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.6 MB (4606803 bytes)**  
+-	Total Size: **4.6 MB (4607439 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa712b3de7b19c50fc66c87dfb4d1c9c6529d07dd382e1eaf88f849b22388f10`
+-	Image ID: `sha256:bcf6111f7019ad78cfb3d2b516b12ac5b14bd45d5a7022e62cfa7555a86f798a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:940a143c1b8982227d45b4a8081b2c8044be198add3e805e7abecdec0262d923`  
-		Last Modified: Sat, 19 Oct 2024 03:00:16 GMT  
-		Size: 4.6 MB (4587903 bytes)  
+	-	`sha256:fe052cbc5cdbf918094f842f37b088322874fbd22550cca68dc2cddfe4f1c7df`  
+		Last Modified: Thu, 24 Oct 2024 02:01:59 GMT  
+		Size: 4.6 MB (4588539 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2af584db322f5dca4d49d051ebf943be4c3f64c64bdd9bd09111c96d9ca1b5ff`  
-		Last Modified: Sat, 19 Oct 2024 03:00:15 GMT  
+	-	`sha256:2bc31480cd15349830b71cdc7220deb18a9a29703820cc15dfd72b639be575f6`  
+		Last Modified: Thu, 24 Oct 2024 02:01:58 GMT  
 		Size: 18.9 KB (18900 bytes)  
 		MIME: application/vnd.in-toto+json
 
