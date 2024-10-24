@@ -1,7 +1,7 @@
 ## `maven:3-amazoncorretto-8`
 
 ```console
-$ docker pull maven@sha256:df32a7e144484d99d68c84bfc1df1e9092764ab13102a5abe79e571746b58f88
+$ docker pull maven@sha256:44f717d88bc6bcb64a42b5dab67e7feec0d1edaefb339ad2de3a60d31be9400b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -133,13 +133,13 @@ $ docker pull maven@sha256:716173076b1858f24583a22e6f0f17cc68e8027846730cd20fe7a
 ### `maven:3-amazoncorretto-8` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:80bce631c333bcb3559f49317867d2b89d234d845339ce94102cae7a333906e6
+$ docker pull maven@sha256:2ffc2325e8e93ab0c00b0e41c1857a0556e6abbb91993e52a2065366e83edc96
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **290.7 MB (290720404 bytes)**  
+-	Total Size: **290.7 MB (290720372 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ae64abee3161fae8073fca632e9db5cf41bea74475ca8875ecabf2b251268bc`
+-	Image ID: `sha256:622035586b8f3d6b0f8f68ac866383253d9818f2f7deb8b77f72fcd8921e3746`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -200,51 +200,51 @@ CMD ["mvn"]
 		Last Modified: Mon, 21 Oct 2024 19:13:59 GMT  
 		Size: 59.7 MB (59668582 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6da046994b2efa3eed00bdfe5ee0f38d66897d9d5d8322799b083baa0d8fc345`  
-		Last Modified: Mon, 21 Oct 2024 20:08:36 GMT  
-		Size: 126.1 MB (126115514 bytes)  
+	-	`sha256:1d55a7eba2d6cdd53b7c7624f7ba3fbb85269156f351c1e230052b2999b3d316`  
+		Last Modified: Thu, 24 Oct 2024 13:32:23 GMT  
+		Size: 126.1 MB (126115511 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdfb8efc4e2dad201b57f2c4f55ff5f4dd644e9ca26506110ce35664909661a4`  
-		Last Modified: Mon, 21 Oct 2024 20:08:34 GMT  
-		Size: 31.2 MB (31177731 bytes)  
+	-	`sha256:cd53114b239d24c7e126c69caa2607be9a97570160959b54a874f0c6c54ced4f`  
+		Last Modified: Thu, 24 Oct 2024 13:32:22 GMT  
+		Size: 31.2 MB (31177718 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb63801330c8618fb551c45863d92be4138386fcd9a97d16666b8c8a8a622d1a`  
-		Last Modified: Mon, 21 Oct 2024 20:08:33 GMT  
-		Size: 9.2 MB (9170444 bytes)  
+	-	`sha256:85aa54345da4796e6d2f0ecaf290fe54d79bd2ad6d2a3ebd05cfa8f1e3251b07`  
+		Last Modified: Thu, 24 Oct 2024 13:32:21 GMT  
+		Size: 9.2 MB (9170430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d976e970bcf16da11fc127b384a522699ca304f375f34afad2a5e95f0f62bf23`  
-		Last Modified: Mon, 21 Oct 2024 20:08:32 GMT  
-		Size: 853.0 B  
+	-	`sha256:c5cf567d3aeb4aec0c12386f0ad9f407a53cab1a7642593ec094353b2c640d41`  
+		Last Modified: Thu, 24 Oct 2024 13:32:20 GMT  
+		Size: 851.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:542695f325236349cbf78927a76a6a5562b9aa3548fdfcab49c86dab4c58ea55`  
-		Last Modified: Mon, 21 Oct 2024 20:08:34 GMT  
+	-	`sha256:7aa4b3762faee09eeac6317dc4da78ae1395ce80518f550bb1c3e51dfb88bf91`  
+		Last Modified: Thu, 24 Oct 2024 13:32:21 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-8` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:79842f7fc54535b16d8043e183356aaf284398a19874965d551dcc47fe99c264
+$ docker pull maven@sha256:7585d3f05fbb31d3bf17e83c1c6b1a650fbffb4adca56e53a1b7a9b3e87e7190
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **6.8 MB (6759158 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2dc08de4f6821a50f9cba0770d50c6b803683717dee05ace81d649990c88db79`
+-	Image ID: `sha256:63cd089e254c15b0e644cc0e7442fb7109110500adda852565a306b02361defb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3cfd58d60781306859930c5be2d62d81ce39eab60ea36c11e593997bd7e9b9c1`  
-		Last Modified: Mon, 21 Oct 2024 20:08:33 GMT  
+	-	`sha256:7147d213616a44eac6abd771295abc4f58ef81d23e2a90514e6119964b091dd5`  
+		Last Modified: Thu, 24 Oct 2024 13:32:20 GMT  
 		Size: 6.7 MB (6740791 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6fcd7971b8efdcec2c0eb5ef20171b6752add427c2c4657c9ce533a520bf3c0f`  
-		Last Modified: Mon, 21 Oct 2024 20:08:32 GMT  
+	-	`sha256:facd3652846e97bdbf9771663d4efd3a08c2b086e6dbb444857fe1ac79a4c765`  
+		Last Modified: Thu, 24 Oct 2024 13:32:20 GMT  
 		Size: 18.4 KB (18367 bytes)  
 		MIME: application/vnd.in-toto+json
