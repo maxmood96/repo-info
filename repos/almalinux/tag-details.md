@@ -2,6 +2,10 @@
 
 # Tags of `almalinux`
 
+-	[`almalinux:10-kitten`](#almalinux10-kitten)
+-	[`almalinux:10-kitten-20241024`](#almalinux10-kitten-20241024)
+-	[`almalinux:10-kitten-minimal`](#almalinux10-kitten-minimal)
+-	[`almalinux:10-kitten-minimal-20241024`](#almalinux10-kitten-minimal-20241024)
 -	[`almalinux:8`](#almalinux8)
 -	[`almalinux:8-minimal`](#almalinux8-minimal)
 -	[`almalinux:8.10`](#almalinux810)
@@ -16,6 +20,22 @@
 -	[`almalinux:9.4-minimal-20240923`](#almalinux94-minimal-20240923)
 -	[`almalinux:latest`](#almalinuxlatest)
 -	[`almalinux:minimal`](#almalinuxminimal)
+
+## `almalinux:10-kitten`
+
+**does not exist** (yet?)
+
+## `almalinux:10-kitten-20241024`
+
+**does not exist** (yet?)
+
+## `almalinux:10-kitten-minimal`
+
+**does not exist** (yet?)
+
+## `almalinux:10-kitten-minimal-20241024`
+
+**does not exist** (yet?)
 
 ## `almalinux:8`
 
