@@ -270,20 +270,13 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=9.4-3.1
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.4-3.1.dsc' coreutils_9.4-3.1.dsc 1868 SHA256:f18173c5b03135ec14e901748317ef5d05273dfbdebd76938988e2404f185aa1
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.4.orig.tar.xz' coreutils_9.4.orig.tar.xz 5979200 SHA256:ea613a4cf44612326e917201bbbcdfbd301de21ffc3b59b6e5c07e040b275e52
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.4-3.1.debian.tar.xz' coreutils_9.4-3.1.debian.tar.xz 29604 SHA256:326454b01befcd4116543c624f5515387f57f9655284330d1abb7c593abc001f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/coreutils/9.4-3.1/
 
-- https://sources.debian.net/src/coreutils/9.4-3.1/ (for browsing the source)
-- https://sources.debian.net/src/coreutils/9.4-3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/coreutils/9.4-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.12-9`
 
@@ -1742,20 +1735,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.10-3
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.10-3.dsc' sysvinit_3.10-3.dsc 2347 SHA256:4308c52e088a76486c30822ed111f85794ee35ad9d89f84c3d85f02ee6e2273c
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.10.orig.tar.gz' sysvinit_3.10.orig.tar.gz 514655 SHA256:9fbee91fbe496e207db7ab4cdfbe4f97f8795925343a76b4f3392e741b0e103b
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.10-3.debian.tar.xz' sysvinit_3.10-3.debian.tar.xz 121492 SHA256:78008b00549e9b1e07f13db768a554410a3a34c76df227a01a09c3b95e5b358d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.10-3/
 
-- https://sources.debian.net/src/sysvinit/3.10-3/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.10-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.10-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-3`
 
