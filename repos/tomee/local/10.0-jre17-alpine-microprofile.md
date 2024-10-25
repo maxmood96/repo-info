@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dd58de977ffffebfaa67d5689b0a2e3e36e15f42e0560d36b8a57c7d1fd1ead6`
+- Image ID: `sha256:ffe69761aa97ffd11f798ab617adb69710f9994efb433fe51dac2428622671ba`
 - Created: `2024-10-16T23:15:53Z`
-- Virtual Size: ~ 259.19 Mb  
+- Virtual Size: ~ 265.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.12+7`
+  - `JAVA_VERSION=jdk-17.0.13+11`
   - `TOMEE_VER=10.0.0-M3`
   - `TOMEE_BUILD=microprofile`
 
@@ -378,6 +378,23 @@ LGPL-3.0-or-later OR GPL-2.0-or-later
 
 ```
 
+### `apk` package: `gnupg`
+
+```console
+gnupg-2.4.5-r0 description:
+GNU Privacy Guard 2 - meta package for full GnuPG suite
+
+gnupg-2.4.5-r0 webpage:
+https://www.gnupg.org/
+
+gnupg-2.4.5-r0 installed size:
+4096 B
+
+gnupg-2.4.5-r0 license:
+GPL-3.0-or-later
+
+```
+
 ### `apk` package: `gnupg-dirmngr`
 
 ```console
@@ -429,6 +446,40 @@ GPL-3.0-or-later
 
 ```
 
+### `apk` package: `gnupg-utils`
+
+```console
+gnupg-utils-2.4.5-r0 description:
+GNU Privacy Guard 2 - utility programs
+
+gnupg-utils-2.4.5-r0 webpage:
+https://www.gnupg.org/
+
+gnupg-utils-2.4.5-r0 installed size:
+764 KiB
+
+gnupg-utils-2.4.5-r0 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `gnupg-wks-client`
+
+```console
+gnupg-wks-client-2.4.5-r0 description:
+GNU Privacy Guard 2 - Web Key Service client
+
+gnupg-wks-client-2.4.5-r0 webpage:
+https://www.gnupg.org/
+
+gnupg-wks-client-2.4.5-r0 installed size:
+188 KiB
+
+gnupg-wks-client-2.4.5-r0 license:
+GPL-3.0-or-later
+
+```
+
 ### `apk` package: `gnutls`
 
 ```console
@@ -476,6 +527,57 @@ gpg-agent-2.4.5-r0 installed size:
 668 KiB
 
 gpg-agent-2.4.5-r0 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `gpg-wks-server`
+
+```console
+gpg-wks-server-2.4.5-r0 description:
+GNU Privacy Guard 2 - Web Key Service server
+
+gpg-wks-server-2.4.5-r0 webpage:
+https://www.gnupg.org/
+
+gpg-wks-server-2.4.5-r0 installed size:
+164 KiB
+
+gpg-wks-server-2.4.5-r0 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `gpgsm`
+
+```console
+gpgsm-2.4.5-r0 description:
+GNU Privacy Guard 2 - S/MIME version
+
+gpgsm-2.4.5-r0 webpage:
+https://www.gnupg.org/
+
+gpgsm-2.4.5-r0 installed size:
+492 KiB
+
+gpgsm-2.4.5-r0 license:
+GPL-3.0-or-later
+
+```
+
+### `apk` package: `gpgv`
+
+```console
+gpgv-2.4.5-r0 description:
+GNU Privacy Guard 2 - signature verification only
+
+gpgv-2.4.5-r0 webpage:
+https://www.gnupg.org/
+
+gpgv-2.4.5-r0 installed size:
+440 KiB
+
+gpgv-2.4.5-r0 license:
 GPL-3.0-or-later
 
 ```
@@ -551,16 +653,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.2-r0 description:
+libcrypto3-3.3.2-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.3.2-r0 webpage:
+libcrypto3-3.3.2-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.2-r0 installed size:
+libcrypto3-3.3.2-r1 installed size:
 4660 KiB
 
-libcrypto3-3.3.2-r0 license:
+libcrypto3-3.3.2-r1 license:
 Apache-2.0
 
 ```
@@ -806,16 +908,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.2-r0 description:
+libssl3-3.3.2-r1 description:
 SSL shared libraries
 
-libssl3-3.3.2-r0 webpage:
+libssl3-3.3.2-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.2-r0 installed size:
+libssl3-3.3.2-r1 installed size:
 796 KiB
 
-libssl3-3.3.2-r0 license:
+libssl3-3.3.2-r1 license:
 Apache-2.0
 
 ```
@@ -1010,16 +1112,16 @@ LGPL-2.0-or-later
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.2-r0 description:
+openssl-3.3.2-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.2-r0 webpage:
+openssl-3.3.2-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.3.2-r0 installed size:
+openssl-3.3.2-r1 installed size:
 784 KiB
 
-openssl-3.3.2-r0 license:
+openssl-3.3.2-r1 license:
 Apache-2.0
 
 ```

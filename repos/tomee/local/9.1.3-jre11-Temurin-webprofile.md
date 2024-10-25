@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a9b1ea8aae296d32d3af191ad0fd10cc2c0c83bdc753f9c6400827b4a24521d4`
+- Image ID: `sha256:1aab2f4d70fd720b20a6959cc6df749e46ce712717a6df224567eae12d36b447`
 - Created: `2024-10-16T23:15:53Z`
-- Virtual Size: ~ 329.19 Mb  
+- Virtual Size: ~ 330.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.24+8`
+  - `JAVA_VERSION=jdk-11.0.25+9`
   - `TOMEE_VER=9.1.3`
   - `TOMEE_BUILD=webprofile`
 - Labels:
@@ -689,12 +689,18 @@ $ apt-get source -qq --print-uris gmp=2:6.2.1+dfsg-3ubuntu1
 Binary Packages:
 
 - `dirmngr=2.2.27-3ubuntu2.1`
+- `gnupg=2.2.27-3ubuntu2.1`
+- `gnupg-l10n=2.2.27-3ubuntu2.1`
+- `gnupg-utils=2.2.27-3ubuntu2.1`
 - `gpg=2.2.27-3ubuntu2.1`
 - `gpg-agent=2.2.27-3ubuntu2.1`
+- `gpg-wks-client=2.2.27-3ubuntu2.1`
+- `gpg-wks-server=2.2.27-3ubuntu2.1`
 - `gpgconf=2.2.27-3ubuntu2.1`
+- `gpgsm=2.2.27-3ubuntu2.1`
 - `gpgv=2.2.27-3ubuntu2.1`
 
-Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgv/copyright`)
+Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnupg/copyright`, `/usr/share/doc/gnupg-l10n/copyright`, `/usr/share/doc/gnupg-utils/copyright`, `/usr/share/doc/gpg/copyright`, `/usr/share/doc/gpg-agent/copyright`, `/usr/share/doc/gpg-wks-client/copyright`, `/usr/share/doc/gpg-wks-server/copyright`, `/usr/share/doc/gpgconf/copyright`, `/usr/share/doc/gpgsm/copyright`, `/usr/share/doc/gpgv/copyright`)
 
 - `BSD-3-clause`
 - `CC0-1.0`
