@@ -398,20 +398,13 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=9.4-3.1
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.4-3.1.dsc' coreutils_9.4-3.1.dsc 1868 SHA256:f18173c5b03135ec14e901748317ef5d05273dfbdebd76938988e2404f185aa1
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.4.orig.tar.xz' coreutils_9.4.orig.tar.xz 5979200 SHA256:ea613a4cf44612326e917201bbbcdfbd301de21ffc3b59b6e5c07e040b275e52
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.4-3.1.debian.tar.xz' coreutils_9.4-3.1.debian.tar.xz 29604 SHA256:326454b01befcd4116543c624f5515387f57f9655284330d1abb7c593abc001f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/coreutils/9.4-3.1/
 
-- https://sources.debian.net/src/coreutils/9.4-3.1/ (for browsing the source)
-- https://sources.debian.net/src/coreutils/9.4-3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/coreutils/9.4-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=8.10.1-2`
 
@@ -1183,20 +1176,13 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris keyutils=1.6.3-3
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.6.3-3.1.dsc' keyutils_1.6.3-3.1.dsc 2087 SHA256:606551bb01164aa9937430a0cbf7ba76f3b0c9dedc61e4bcbfb683b72f3fa135
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.6.3.orig.tar.gz' keyutils_1.6.3.orig.tar.gz 137022 SHA256:a61d5706136ae4c05bd48f86186bcfdbd88dd8bd5107e3e195c924cfc1b39bb4
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.6.3-3.1.debian.tar.xz' keyutils_1.6.3-3.1.debian.tar.xz 13592 SHA256:a16c87678a6abc662edd0bd1910020819fbe9d3b776244131110d3c8c36a398b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/keyutils/1.6.3-3/
 
-- https://sources.debian.net/src/keyutils/1.6.3-3/ (for browsing the source)
-- https://sources.debian.net/src/keyutils/1.6.3-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/keyutils/1.6.3-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `krb5=1.21.3-3`
 
@@ -2959,21 +2945,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `Unicode`
 - `Utfwidth`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.14.4-1
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.4-1.dsc' subversion_1.14.4-1.dsc 3991 SHA256:cbc0b7ce7b59f302ce15d33448151264e3f903f738c76b51cbd26c990a2f9a18
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.4.orig.tar.gz' subversion_1.14.4.orig.tar.gz 11544431 SHA256:3a784da1ff90179a0fb93adf9309ba15ca1d01f80721c815b42c36f61c5307fc
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.4.orig.tar.gz.asc' subversion_1.14.4.orig.tar.gz.asc 2179 SHA256:ccbd84cda019bb82f69e01c4e0efa5de07fd2cce6e7e22ce823e8a320835a112
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.4-1.debian.tar.xz' subversion_1.14.4-1.debian.tar.xz 297176 SHA256:72f494c72e82ce4b59efe5db99cc3a8dc707f16287f340a276cfddcb3fb9706c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.14.4-1/
 
-- https://sources.debian.net/src/subversion/1.14.4-1/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.14.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.14.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=256.7-1`
 
@@ -3017,20 +2995,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.10-3
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.10-3.dsc' sysvinit_3.10-3.dsc 2347 SHA256:4308c52e088a76486c30822ed111f85794ee35ad9d89f84c3d85f02ee6e2273c
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.10.orig.tar.gz' sysvinit_3.10.orig.tar.gz 514655 SHA256:9fbee91fbe496e207db7ab4cdfbe4f97f8795925343a76b4f3392e741b0e103b
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.10-3.debian.tar.xz' sysvinit_3.10-3.debian.tar.xz 121492 SHA256:78008b00549e9b1e07f13db768a554410a3a34c76df227a01a09c3b95e5b358d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.10-3/
 
-- https://sources.debian.net/src/sysvinit/3.10-3/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.10-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.10-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-3`
 

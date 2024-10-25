@@ -2366,21 +2366,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.9p1-1
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.9p1-1.dsc' openssh_9.9p1-1.dsc 3465 SHA256:d23623e4679bbaaf72f78e95a25c2ce4755bbcbc029f9a6152967ca0f3df2e99
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.9p1.orig.tar.gz' openssh_9.9p1.orig.tar.gz 1964864 SHA256:b343fbcdbff87f15b1986e6e15d6d4fc9a7d36066be6b7fb507087ba8f966c02
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.9p1.orig.tar.gz.asc' openssh_9.9p1.orig.tar.gz.asc 833 SHA256:0a3c462e9cb862bf0bb3a56c7251091f1c88a47724d10cede3ea018f97cf1c94
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.9p1-1.debian.tar.xz' openssh_9.9p1-1.debian.tar.xz 195332 SHA256:763ab24503717d7820ccca624d38731cddd883c2aab5baf986f41dbde1b9c82b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:9.9p1-1/
 
-- https://sources.debian.net/src/openssh/1:9.9p1-1/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:9.9p1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:9.9p1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.3.2-1`
 
