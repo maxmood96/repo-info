@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:310811de9775148061a042ba454f41c8975983db36d4902a99438da79b06fb35`
+- Image ID: `sha256:0ad28ba8059a8ddc5e7f29cde0bdddc6feac87bd87cb2407fadfa3f2da734147`
 - Created: `2024-10-09T17:25:06Z`
-- Virtual Size: ~ 300.96 Mb  
+- Virtual Size: ~ 306.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.4+7`
+  - `JAVA_VERSION=jdk-21.0.5+11`
   - `CATALINA_HOME=/usr/local/tomcat`
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
