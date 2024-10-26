@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f9f052f552e93c2e40d35e7f7e02f7a73680359e2b01b60977d80e1ae06f8647`
-- Created: `2024-10-18T19:52:27.451221784Z`
-- Virtual Size: ~ 878.10 Mb  
+- Image ID: `sha256:1d54e0eb71336440596cddbe1ea4064b87df2d716d305e44ecc904ec5fdd1954`
+- Created: `2024-10-25T03:37:31.777017656Z`
+- Virtual Size: ~ 885.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.24`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.24.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.24.tar.xz.asc`
-  - `PHP_SHA256=80a5225746a9eb484475b312d4c626c63a88a037d8e56d214f30205e1ba1411a`
+  - `PHP_VERSION=8.2.25`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.25.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.25.tar.xz.asc`
+  - `PHP_SHA256=330b54876ea1d05ade12ee9726167332058bccd58dffa1d4e12117f6b4f616b9`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `NEXTCLOUD_VERSION=30.0.1`
@@ -200,16 +200,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.28.1-r0 description:
+c-ares-1.33.1-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.28.1-r0 webpage:
+c-ares-1.33.1-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.28.1-r0 installed size:
-156 KiB
+c-ares-1.33.1-r0 installed size:
+168 KiB
 
-c-ares-1.28.1-r0 license:
+c-ares-1.33.1-r0 license:
 MIT
 
 ```
@@ -302,16 +302,16 @@ Apache-2.0
 ### `apk` package: `curl`
 
 ```console
-curl-8.9.1-r2 description:
+curl-8.10.1-r0 description:
 URL retrival utility and library
 
-curl-8.9.1-r2 webpage:
+curl-8.10.1-r0 webpage:
 https://curl.se/
 
-curl-8.9.1-r2 installed size:
-248 KiB
+curl-8.10.1-r0 installed size:
+252 KiB
 
-curl-8.9.1-r2 license:
+curl-8.10.1-r0 license:
 curl
 
 ```
@@ -438,16 +438,16 @@ LGPL-2.1-or-later
 ### `apk` package: `ghostscript`
 
 ```console
-ghostscript-10.03.1-r0 description:
+ghostscript-10.04.0-r0 description:
 Interpreter for the PostScript language and for PDF
 
-ghostscript-10.03.1-r0 webpage:
+ghostscript-10.04.0-r0 webpage:
 https://ghostscript.com/
 
-ghostscript-10.03.1-r0 installed size:
-61 MiB
+ghostscript-10.04.0-r0 installed size:
+62 MiB
 
-ghostscript-10.03.1-r0 license:
+ghostscript-10.04.0-r0 license:
 AGPL-3.0-or-later
 
 ```
@@ -863,16 +863,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.2-r0 description:
+libcrypto3-3.3.2-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.3.2-r0 webpage:
+libcrypto3-3.3.2-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.2-r0 installed size:
+libcrypto3-3.3.2-r1 installed size:
 4660 KiB
 
-libcrypto3-3.3.2-r0 license:
+libcrypto3-3.3.2-r1 license:
 Apache-2.0
 
 ```
@@ -880,16 +880,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.9.1-r2 description:
+libcurl-8.10.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.9.1-r2 webpage:
+libcurl-8.10.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.9.1-r2 installed size:
-628 KiB
+libcurl-8.10.1-r0 installed size:
+644 KiB
 
-libcurl-8.9.1-r2 license:
+libcurl-8.10.1-r0 license:
 curl
 
 ```
@@ -1305,16 +1305,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.2-r0 description:
+libssl3-3.3.2-r1 description:
 SSL shared libraries
 
-libssl3-3.3.2-r0 webpage:
+libssl3-3.3.2-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.2-r0 installed size:
+libssl3-3.3.2-r1 installed size:
 796 KiB
 
-libssl3-3.3.2-r0 license:
+libssl3-3.3.2-r1 license:
 Apache-2.0
 
 ```
@@ -1747,16 +1747,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.2-r0 description:
+openssl-3.3.2-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.2-r0 webpage:
+openssl-3.3.2-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.3.2-r0 installed size:
+openssl-3.3.2-r1 installed size:
 784 KiB
 
-openssl-3.3.2-r0 license:
+openssl-3.3.2-r1 license:
 Apache-2.0
 
 ```
