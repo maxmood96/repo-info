@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2af624eefba95240bd45f3363a04bfc585be4b2157bbbbdb383426d24558d46e`
-- Created: `2024-10-18T19:31:28.548504048Z`
-- Virtual Size: ~ 572.34 Mb  
+- Image ID: `sha256:57c16cec926845c7d86d6b1be7ba8f12bc8f80fabc9892f5dbcb080f25c33556`
+- Created: `2024-10-25T04:19:32.955050375Z`
+- Virtual Size: ~ 573.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -19,10 +19,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.24`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.24.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.24.tar.xz.asc`
-  - `PHP_SHA256=80a5225746a9eb484475b312d4c626c63a88a037d8e56d214f30205e1ba1411a`
+  - `PHP_VERSION=8.2.25`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.25.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.25.tar.xz.asc`
+  - `PHP_SHA256=330b54876ea1d05ade12ee9726167332058bccd58dffa1d4e12117f6b4f616b9`
   - `GOSU_VERSION=1.17`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
@@ -2032,11 +2032,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libgpg-error/1.38-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libgpg-error/1.38-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libheif=1.11.0-1`
+### `dpkg` source package: `libheif=1.11.0-1+deb11u1`
 
 Binary Packages:
 
-- `libheif1:amd64=1.11.0-1`
+- `libheif1:amd64=1.11.0-1+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libheif1/copyright`)
 
@@ -2052,17 +2052,17 @@ Licenses: (parsed from: `/usr/share/doc/libheif1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libheif=1.11.0-1
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.11.0-1.dsc' libheif_1.11.0-1.dsc 2283 SHA256:231abbe32fbbbf2246da933d56ddf815894ee99f6bbd46320f460f0572f0f07a
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.11.0.orig.tar.gz' libheif_1.11.0.orig.tar.gz 1680855 SHA256:c550938f56ff6dac83702251a143f87cb3a6c71a50d8723955290832d9960913
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.11.0-1.debian.tar.xz' libheif_1.11.0-1.debian.tar.xz 6928 SHA256:ff569cd13ef0029e4404fa0204234c4c967b1d96587a7bc9d490f13d5dfbb241
+$ apt-get source -qq --print-uris libheif=1.11.0-1+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.11.0-1%2bdeb11u1.dsc' libheif_1.11.0-1+deb11u1.dsc 2315 SHA256:6964af49fd534c2f9ab58887e9e0b1ea75fc475e834b1e4fb3d119c6d73560ed
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.11.0.orig.tar.gz' libheif_1.11.0.orig.tar.gz 1680855 SHA256:c550938f56ff6dac83702251a143f87cb3a6c71a50d8723955290832d9960913
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.11.0-1%2bdeb11u1.debian.tar.xz' libheif_1.11.0-1+deb11u1.debian.tar.xz 9032 SHA256:efec96b88fe05fbc59e75dadc3709180808e96dbcb5374e7992870d819808b19
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libheif/1.11.0-1/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.11.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.11.0-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libheif/1.11.0-1+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/libheif/1.11.0-1+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libheif/1.11.0-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libidn2=2.3.0-5`
 
@@ -2541,11 +2541,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libsemanage/3.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libsemanage/3.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libsepol=3.1-1`
+### `dpkg` source package: `libsepol=3.1-1+deb11u1`
 
 Binary Packages:
 
-- `libsepol1:amd64=3.1-1`
+- `libsepol1:amd64=3.1-1+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libsepol1/copyright`)
 
@@ -2555,17 +2555,17 @@ Licenses: (parsed from: `/usr/share/doc/libsepol1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libsepol=3.1-1
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_3.1-1.dsc' libsepol_3.1-1.dsc 1776 SHA256:37bfb6797af8a96eada6c6ace374292b8a16a6bfb557b1e8ab9fd29e72d5888a
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_3.1.orig.tar.gz' libsepol_3.1.orig.tar.gz 473842 SHA256:ae6778d01443fdd38cd30eeee846494e19f4d407b09872580372f4aa4bf8a3cc
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_3.1-1.debian.tar.xz' libsepol_3.1-1.debian.tar.xz 14584 SHA256:9351a0b6207f6a5da2951292d3ec5655feb89df5aabc9010094766d811156166
+$ apt-get source -qq --print-uris libsepol=3.1-1+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libsepol/libsepol_3.1-1%2bdeb11u1.dsc' libsepol_3.1-1+deb11u1.dsc 2166 SHA256:3967dd89d6631de931059b8ea306acbe2efa61c3021190896b7947e63ad39869
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libsepol/libsepol_3.1.orig.tar.gz' libsepol_3.1.orig.tar.gz 473842 SHA256:ae6778d01443fdd38cd30eeee846494e19f4d407b09872580372f4aa4bf8a3cc
+'http://deb.debian.org/debian-security/pool/updates/main/libs/libsepol/libsepol_3.1-1%2bdeb11u1.debian.tar.xz' libsepol_3.1-1+deb11u1.debian.tar.xz 17916 SHA256:9433b62c1ae84c147f9b13b930f7d0839af33a01be183bc54fa3ccef1364d57f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libsepol/3.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libsepol/3.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsepol/3.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libsepol/3.1-1+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/libsepol/3.1-1+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libsepol/3.1-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsigsegv=2.13-1`
 
