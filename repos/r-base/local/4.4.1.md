@@ -414,10 +414,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris coreutils=9.4-3.1
-'http://http.debian.net/debian/pool/main/c/coreutils/coreutils_9.4-3.1.dsc' coreutils_9.4-3.1.dsc 1868 SHA256:f18173c5b03135ec14e901748317ef5d05273dfbdebd76938988e2404f185aa1
-'http://http.debian.net/debian/pool/main/c/coreutils/coreutils_9.4.orig.tar.xz' coreutils_9.4.orig.tar.xz 5979200 SHA256:ea613a4cf44612326e917201bbbcdfbd301de21ffc3b59b6e5c07e040b275e52
-'http://http.debian.net/debian/pool/main/c/coreutils/coreutils_9.4-3.1.debian.tar.xz' coreutils_9.4-3.1.debian.tar.xz 29604 SHA256:326454b01befcd4116543c624f5515387f57f9655284330d1abb7c593abc001f
+'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.4-3.1.dsc' coreutils_9.4-3.1.dsc 1868 SHA256:f18173c5b03135ec14e901748317ef5d05273dfbdebd76938988e2404f185aa1
+'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.4.orig.tar.xz' coreutils_9.4.orig.tar.xz 5979200 SHA256:ea613a4cf44612326e917201bbbcdfbd301de21ffc3b59b6e5c07e040b275e52
+'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.4-3.1.debian.tar.xz' coreutils_9.4-3.1.debian.tar.xz 29604 SHA256:326454b01befcd4116543c624f5515387f57f9655284330d1abb7c593abc001f
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/coreutils/9.4-3.1/ (for browsing the source)
+- https://sources.debian.net/src/coreutils/9.4-3.1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/coreutils/9.4-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=8.10.1-2`
 
@@ -1402,14 +1408,13 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris keyutils=1.6.3-3
-'http://http.debian.net/debian/pool/main/k/keyutils/keyutils_1.6.3-3.dsc' keyutils_1.6.3-3.dsc 2079 SHA256:0a4178e10982c7351da7db5b44b5c18807613ad066cb2e157d0756019764f0c1
-'http://http.debian.net/debian/pool/main/k/keyutils/keyutils_1.6.3.orig.tar.gz' keyutils_1.6.3.orig.tar.gz 137022 SHA256:a61d5706136ae4c05bd48f86186bcfdbd88dd8bd5107e3e195c924cfc1b39bb4
-'http://http.debian.net/debian/pool/main/k/keyutils/keyutils_1.6.3-3.debian.tar.xz' keyutils_1.6.3-3.debian.tar.xz 13328 SHA256:8c078d9de91f930df174eebc60e063e8fff574ac36c0f7ee18f7e21635d60af0
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/keyutils/1.6.3-3/
+
 
 ### `dpkg` source package: `krb5=1.21.3-3`
 
@@ -2933,20 +2938,13 @@ Licenses: (parsed from: `/usr/share/doc/libpkgconf3/copyright`, `/usr/share/doc/
 - `ISC`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pkgconf=1.8.1-3
-'http://deb.debian.org/debian/pool/main/p/pkgconf/pkgconf_1.8.1-3.dsc' pkgconf_1.8.1-3.dsc 1638 SHA256:8c103ef4a3e65c6e1559a2e3534e623b32e925e455d32396b06b4dc9231403f2
-'http://deb.debian.org/debian/pool/main/p/pkgconf/pkgconf_1.8.1.orig.tar.xz' pkgconf_1.8.1.orig.tar.xz 302372 SHA256:644361ada2942be05655d4452eb018791647c31bba429b287f1f68deb2dc6840
-'http://deb.debian.org/debian/pool/main/p/pkgconf/pkgconf_1.8.1-3.debian.tar.xz' pkgconf_1.8.1-3.debian.tar.xz 15852 SHA256:d1527b3fccaf4c63e50cef4057f64c13a4c30591995fb9e6a58f4f928338f095
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pkgconf/1.8.1-3/
 
-- https://sources.debian.net/src/pkgconf/1.8.1-3/ (for browsing the source)
-- https://sources.debian.net/src/pkgconf/1.8.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pkgconf/1.8.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-base=4.4.1-3`
 
@@ -3113,20 +3111,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-matrix/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rmatrix=1.7-0-3
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-0-3.dsc' rmatrix_1.7-0-3.dsc 1860 SHA256:523ea89ed973b9acf62a5f62d5f44b10565761510f00d9cd1fa16dbb021c5a02
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-0.orig.tar.gz' rmatrix_1.7-0.orig.tar.gz 2471290 SHA256:fb97bba0df370222eb4f7e2da2e94dd01053b5e054b1c51829ff9a6efc08ad37
-'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-0-3.debian.tar.xz' rmatrix_1.7-0-3.debian.tar.xz 6060 SHA256:57c145b929c54530e09fe89f88a750709d6ab13823943da26743de0ab39479c2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rmatrix/1.7-0-3/
 
-- https://sources.debian.net/src/rmatrix/1.7-0-3/ (for browsing the source)
-- https://sources.debian.net/src/rmatrix/1.7-0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rmatrix/1.7-0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpart=4.1.23-1`
 
@@ -3604,20 +3595,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:9.1.0709-2
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.0709-2.dsc' vim_9.1.0709-2.dsc 3226 SHA256:f207f835811ebdf9b270a2c0eff4d66f5939d76ad7983c85f532a2c671b5a25c
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.0709.orig.tar.xz' vim_9.1.0709.orig.tar.xz 11962096 SHA256:eaa3f57808eba290a8fe77463310004233ad98495922569a0f7049663f310de1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.0709-2.debian.tar.xz' vim_9.1.0709-2.debian.tar.xz 188852 SHA256:7208e866e72e5ec50527dc4827c96f052e8043a9594d8f733caf22135cad7bd5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/vim/2:9.1.0709-2/
 
-- https://sources.debian.net/src/vim/2:9.1.0709-2/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:9.1.0709-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:9.1.0709-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.24.5-2`
 
