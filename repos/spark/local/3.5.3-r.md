@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4eaf338e6d8f6e8c3098be0970fe3f0d067e47cca9d8b6c259a9c1679780e819`
+- Image ID: `sha256:29c6ea63977069d084c2567be35e826de674545df0b8888ce02b07575954f110`
 - Created: `2024-10-10T06:58:10Z`
 - Virtual Size: ~ 1.32 Gb  
   (total size of all layers on-disk)
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.24+8`
+  - `JAVA_VERSION=jdk-11.0.25+9`
   - `SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz`
   - `SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz.asc`
   - `GPG_KEY=0A2D660358B6F6F8071FD16F6606986CF5A8447C`
