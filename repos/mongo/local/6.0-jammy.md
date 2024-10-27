@@ -1,10 +1,10 @@
-# `mongo:6.0.18-jammy`
+# `mongo:6.0.19-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0e9d60dec70399f9c0fd3308623b87312b554d3faf5bfe03a1672f788c78cc69`
-- Created: `2024-10-03T19:50:58Z`
-- Virtual Size: ~ 716.08 Mb  
+- Image ID: `sha256:a1ed927d524dfc84f7b27c3b0fc8bc0e99312f608497df7a4c52c3157e38e02c`
+- Created: `2024-10-25T04:06:36Z`
+- Virtual Size: ~ 715.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=6.0`
-  - `MONGO_VERSION=6.0.18`
+  - `MONGO_VERSION=6.0.19`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -1321,17 +1321,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=6.0.18`
+### `dpkg` source package: `mongodb-org=6.0.19`
 
 Binary Packages:
 
-- `mongodb-org=6.0.18`
-- `mongodb-org-database=6.0.18`
-- `mongodb-org-database-tools-extra=6.0.18`
-- `mongodb-org-mongos=6.0.18`
-- `mongodb-org-server=6.0.18`
-- `mongodb-org-shell=6.0.18`
-- `mongodb-org-tools=6.0.18`
+- `mongodb-org=6.0.19`
+- `mongodb-org-database=6.0.19`
+- `mongodb-org-database-tools-extra=6.0.19`
+- `mongodb-org-mongos=6.0.19`
+- `mongodb-org-server=6.0.19`
+- `mongodb-org-shell=6.0.19`
+- `mongodb-org-tools=6.0.19`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.

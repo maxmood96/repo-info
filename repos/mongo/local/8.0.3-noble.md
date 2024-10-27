@@ -1,10 +1,10 @@
-# `mongo:8.0.1-noble`
+# `mongo:8.0.3-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d3295cd2d11faa85ffabf4cb88ad7bf4a2c1db9b3a2737800ce47121213573f4`
-- Created: `2024-10-09T22:01:30Z`
-- Virtual Size: ~ 854.21 Mb  
+- Image ID: `sha256:77c59b6384122cf12efabd7a6ba739f2f18c4eed6632a8029715dc0323c7f0f9`
+- Created: `2024-10-25T04:15:38Z`
+- Virtual Size: ~ 855.24 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=8.0`
-  - `MONGO_VERSION=8.0.1`
+  - `MONGO_VERSION=8.0.3`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
