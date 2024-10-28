@@ -1,7 +1,7 @@
 ## `xwiki:mysql-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:c3f68e7a5e47553077d6afb688ba16c80ed83a7685869ee163bab62f7bee8087
+$ docker pull xwiki@sha256:7ee4bbf5dbbc578e889757a1160f920a2456af4f533ffe2905ad7712783da158
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,126 +14,126 @@ $ docker pull xwiki@sha256:c3f68e7a5e47553077d6afb688ba16c80ed83a7685869ee163bab
 ### `xwiki:mysql-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:cbcd2f516b991658ccd512fe53c4d67ae2c97c59d63811d7a7761467ed6aec58
+$ docker pull xwiki@sha256:4cded23c2c040b1547ba176f71684efddbc1ab4509e8115cae4c9685c1af5bc8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **613.8 MB (613802343 bytes)**  
+-	Total Size: **614.0 MB (613986265 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a90b4d3586732f3c2878a2d53b52009bfbc68f6fa0a630d49b9929322354728e`
+-	Image ID: `sha256:3db44f9ac3cbe7561844f66a5b42848f95c1117873b8beb5af2263e843de6f02`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ARG RELEASE
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ADD file:34dc4f3ab7a694ecde47ff7a610be18591834c45f1d7251813267798412604e5 in / 
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 CMD ["/bin/bash"]
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV JAVA_VERSION=jdk-17.0.13+11
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='4086cc7cb2d9e7810141f255063caad10a8a018db5e6b47fa5394c506ab65bff';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-jre_x64_linux_hotspot_17.0.13_11.tar.gz';          ;;        arm64)          ESUM='97c4fb748eaa1292fb2f28fec90a3eba23e35974ef67f8b3aa304ad4db2ba162';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.13_11.tar.gz';          ;;        armhf)          ESUM='f9c4008680db016c9cab26cc2739d4553898911522f6a78a611fafa1f5270c88';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-jre_arm_linux_hotspot_17.0.13_11.tar.gz';          ;;        ppc64el)          ESUM='790f53fcc95cc76ed8f27d3146cf789fc354a2afb7148cffd197ca61a643212f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.13_11.tar.gz';          ;;        riscv64)          ESUM='f6f3e71e5452b764aad47e6ffa4f0b26fcfe69bd9eb07fbd468343f9dd5f17b5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-jre_riscv64_linux_hotspot_17.0.13_11.tar.gz';          ;;        s390x)          ESUM='0f46246643b6543c097d6eda4db03dbe5c8372217e06d661ac0fb3882eab007d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-jre_s390x_linux_hotspot_17.0.13_11.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -r "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 RUN mkdir -p "$CATALINA_HOME" # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 WORKDIR /usr/local/tomcat
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV TOMCAT_MAJOR=9
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV TOMCAT_VERSION=9.0.96
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV TOMCAT_SHA512=ef3ac81debbc3a519c43d1fdb1c88ab26a8052af424d81bceccfbd6e663050a06d7aad7960fd5d11c17849829daebbebf33d92ac1158902283d0e534514aab93
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 COPY /usr/local/tomcat /usr/local/tomcat # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENTRYPOINT []
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
-ENV XWIKI_VERSION=16.8.0
-# Tue, 01 Oct 2024 13:05:18 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.8.0
-# Tue, 01 Oct 2024 13:05:18 GMT
-ENV XWIKI_DOWNLOAD_SHA256=7eca55bbe56a45f34b81e9884bb4f190af24306db3da9032c27126d3cf11f4f1
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
+ENV XWIKI_VERSION=16.9.0
+# Mon, 28 Oct 2024 15:53:54 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.9.0
+# Mon, 28 Oct 2024 15:53:54 GMT
+ENV XWIKI_DOWNLOAD_SHA256=9a66ce45c49863c0e8cbdae0fb5e5dfab317a1c0c3a45e7c33fb61b09b39fe23
+# Mon, 28 Oct 2024 15:53:54 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
-ENV MYSQL_JDBC_VERSION=9.0.0
-# Tue, 01 Oct 2024 13:05:18 GMT
-ENV MYSQL_JDBC_SHA256=a221c4106b7fe68a45912cdbf8351f1b43ad3c53a43c3bc966181cc14f86fa30
-# Tue, 01 Oct 2024 13:05:18 GMT
-ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.0.0
-# Tue, 01 Oct 2024 13:05:18 GMT
-ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.0.0.jar
-# Tue, 01 Oct 2024 13:05:18 GMT
-ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.0.0.jar
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
+ENV MYSQL_JDBC_VERSION=9.1.0
+# Mon, 28 Oct 2024 15:53:54 GMT
+ENV MYSQL_JDBC_SHA256=8776e2ebc46072c9a47ea59d98298c4273bd9f16a7b26b5dfa4744535aa26c62
+# Mon, 28 Oct 2024 15:53:54 GMT
+ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.1.0
+# Mon, 28 Oct 2024 15:53:54 GMT
+ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.1.0.jar
+# Mon, 28 Oct 2024 15:53:54 GMT
+ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.1.0.jar
+# Mon, 28 Oct 2024 15:53:54 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 CMD ["xwiki"]
 ```
 
@@ -178,182 +178,182 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d328d94a033be697f079e95af48a35dd55c605e4e0fc80fcf28ea8331c8521f`  
-		Last Modified: Thu, 24 Oct 2024 03:53:32 GMT  
-		Size: 192.3 MB (192263475 bytes)  
+	-	`sha256:4e77b62f59674809101b020df088cc767579a86fdb5d7789f1b51dc0255c4203`  
+		Last Modified: Mon, 28 Oct 2024 18:00:28 GMT  
+		Size: 192.3 MB (192263681 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37cdcb636fb013bfd6982764e2c84a978dc1a4b009cd9d7038685e3bcad3830a`  
-		Last Modified: Thu, 24 Oct 2024 03:53:34 GMT  
-		Size: 311.8 MB (311840731 bytes)  
+	-	`sha256:4fed852845382e964804c60bfe99bb13da5ddfbee5b83e8e3698d2b55d1e4302`  
+		Last Modified: Mon, 28 Oct 2024 18:00:30 GMT  
+		Size: 312.0 MB (312017797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e48625e9b6885d8d1cfdf740c479a9749334887c018d18923f2f98a826410a76`  
-		Last Modified: Thu, 24 Oct 2024 03:53:29 GMT  
-		Size: 2.4 MB (2427539 bytes)  
+	-	`sha256:5e7321e0f6e4953829602e090fdeba92dcfcef5e4fbd70b137b14d495ab93a32`  
+		Last Modified: Mon, 28 Oct 2024 18:00:25 GMT  
+		Size: 2.4 MB (2434171 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ba00a0d3fea80685081beea9a8857ebec5a404e4198e995587ba0e8bcede973`  
-		Last Modified: Thu, 24 Oct 2024 03:53:29 GMT  
-		Size: 1.3 KB (1341 bytes)  
+	-	`sha256:5cd21b28b63799d0150ad140eced23d64da2048ad5b7f94a37ec5effd6d57033`  
+		Last Modified: Mon, 28 Oct 2024 18:00:25 GMT  
+		Size: 1.3 KB (1337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbff157385d41c66dc96f8b3f27ee4c28430329e8d5e3079ed2b1178d56c963b`  
-		Last Modified: Thu, 24 Oct 2024 03:53:30 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:4b243a44e9beb6302df1de26002f05637a1736b5aa80411b998516284d9ee26c`  
+		Last Modified: Mon, 28 Oct 2024 18:00:26 GMT  
+		Size: 2.4 KB (2369 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca07d3d3040a00be60c5527f4a74c4518ceccd6760aa85a7b9fcc096f0acc5e3`  
-		Last Modified: Thu, 24 Oct 2024 03:53:30 GMT  
-		Size: 6.6 KB (6565 bytes)  
+	-	`sha256:55700d25a43c04c7976bc05675252cec5bbcbeab8ce0291696ffd0403fbfd223`  
+		Last Modified: Mon, 28 Oct 2024 18:00:26 GMT  
+		Size: 6.6 KB (6590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6a32b4d64e39ad732ab3bfbd2303a283ace48b614c6bbb13c9124a8af668a71`  
-		Last Modified: Thu, 24 Oct 2024 03:53:31 GMT  
+	-	`sha256:9b4fac64d3fbc90f0e42242899c0f67f85d2f502f5cf07a66d0e1f7ac4e63106`  
+		Last Modified: Mon, 28 Oct 2024 18:00:26 GMT  
 		Size: 2.5 KB (2510 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:mysql-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:47b7ec2b346a71c054912c3b2da7f14bbe1d61d897bab8e0e67f542092b86513
+$ docker pull xwiki@sha256:83a5586f7267d89ef5b613eff0f6aede579cb55f8d58ba99ebb92766f56a4125
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 MB (8832406 bytes)**  
+-	Total Size: **8.8 MB (8832427 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:66b4cbde7b324039a594ab70862d1fc99a4d619dc17d33f15b05eb9b9b0e99ca`
+-	Image ID: `sha256:76e2ffa71cda2fabefcad2c246ca827bde36ec3e01112109bec059c35af7a62f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:167f66df60b010dfc2a11f6e3c24729bf5853689fa2e3f4b86dc51b5f1267023`  
-		Last Modified: Thu, 24 Oct 2024 03:53:30 GMT  
-		Size: 8.8 MB (8789735 bytes)  
+	-	`sha256:d68587b257b21c2690f6ab82a027fbe723e49128717f6f255cf0d4daf28189eb`  
+		Last Modified: Mon, 28 Oct 2024 18:00:25 GMT  
+		Size: 8.8 MB (8789756 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6246c90b9a898c27b51ee2920e65720cc286d192a2f952e9ac3f57b867316290`  
-		Last Modified: Thu, 24 Oct 2024 03:53:29 GMT  
+	-	`sha256:90270f80c05382f1af9f1edf1ad825e6a5a95889f4ce6abd7256adba104dc5f2`  
+		Last Modified: Mon, 28 Oct 2024 18:00:24 GMT  
 		Size: 42.7 KB (42671 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:mysql-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:8cd68a4574d3be69a70046597bfda41784bdfa74b83e433fbbbaa129bead4db4
+$ docker pull xwiki@sha256:7ebd65d1c5e74a77e84be1ed30d78e04652b8e75a5b4e483ef499064cbb59616
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **610.0 MB (610046015 bytes)**  
+-	Total Size: **610.2 MB (610229815 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:057b498da84f6867265cad0befc3ca033032c92793aca436b3aa68b3f403c6b9`
+-	Image ID: `sha256:0a8ca540d137cb4a9ea0467b3b913438d2800817e2a29e85ec3346f485bf45bf`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
 ```dockerfile
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ARG RELEASE
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ADD file:b14427a5ec8028ba993a0ff27f9e398456229f9113c9c39f3cc7a0f96c15943b in / 
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 CMD ["/bin/bash"]
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV JAVA_VERSION=jdk-17.0.13+11
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='4086cc7cb2d9e7810141f255063caad10a8a018db5e6b47fa5394c506ab65bff';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-jre_x64_linux_hotspot_17.0.13_11.tar.gz';          ;;        arm64)          ESUM='97c4fb748eaa1292fb2f28fec90a3eba23e35974ef67f8b3aa304ad4db2ba162';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.13_11.tar.gz';          ;;        armhf)          ESUM='f9c4008680db016c9cab26cc2739d4553898911522f6a78a611fafa1f5270c88';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-jre_arm_linux_hotspot_17.0.13_11.tar.gz';          ;;        ppc64el)          ESUM='790f53fcc95cc76ed8f27d3146cf789fc354a2afb7148cffd197ca61a643212f';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.13_11.tar.gz';          ;;        riscv64)          ESUM='f6f3e71e5452b764aad47e6ffa4f0b26fcfe69bd9eb07fbd468343f9dd5f17b5';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-jre_riscv64_linux_hotspot_17.0.13_11.tar.gz';          ;;        s390x)          ESUM='0f46246643b6543c097d6eda4db03dbe5c8372217e06d661ac0fb3882eab007d';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.13%2B11/OpenJDK17U-jre_s390x_linux_hotspot_17.0.13_11.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -r "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 RUN mkdir -p "$CATALINA_HOME" # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 WORKDIR /usr/local/tomcat
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7 DCFD35E0BF8CA7344752DE8B6FB21E8933C60243
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV TOMCAT_MAJOR=9
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV TOMCAT_VERSION=9.0.96
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENV TOMCAT_SHA512=ef3ac81debbc3a519c43d1fdb1c88ab26a8052af424d81bceccfbd6e663050a06d7aad7960fd5d11c17849829daebbebf33d92ac1158902283d0e534514aab93
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 COPY /usr/local/tomcat /usr/local/tomcat # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 ENTRYPOINT []
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Tue, 08 Oct 2024 14:03:39 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
-ENV XWIKI_VERSION=16.8.0
-# Tue, 01 Oct 2024 13:05:18 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.8.0
-# Tue, 01 Oct 2024 13:05:18 GMT
-ENV XWIKI_DOWNLOAD_SHA256=7eca55bbe56a45f34b81e9884bb4f190af24306db3da9032c27126d3cf11f4f1
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
+ENV XWIKI_VERSION=16.9.0
+# Mon, 28 Oct 2024 15:53:54 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.9.0
+# Mon, 28 Oct 2024 15:53:54 GMT
+ENV XWIKI_DOWNLOAD_SHA256=9a66ce45c49863c0e8cbdae0fb5e5dfab317a1c0c3a45e7c33fb61b09b39fe23
+# Mon, 28 Oct 2024 15:53:54 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
-ENV MYSQL_JDBC_VERSION=9.0.0
-# Tue, 01 Oct 2024 13:05:18 GMT
-ENV MYSQL_JDBC_SHA256=a221c4106b7fe68a45912cdbf8351f1b43ad3c53a43c3bc966181cc14f86fa30
-# Tue, 01 Oct 2024 13:05:18 GMT
-ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.0.0
-# Tue, 01 Oct 2024 13:05:18 GMT
-ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.0.0.jar
-# Tue, 01 Oct 2024 13:05:18 GMT
-ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.0.0.jar
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
+ENV MYSQL_JDBC_VERSION=9.1.0
+# Mon, 28 Oct 2024 15:53:54 GMT
+ENV MYSQL_JDBC_SHA256=8776e2ebc46072c9a47ea59d98298c4273bd9f16a7b26b5dfa4744535aa26c62
+# Mon, 28 Oct 2024 15:53:54 GMT
+ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.1.0
+# Mon, 28 Oct 2024 15:53:54 GMT
+ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.1.0.jar
+# Mon, 28 Oct 2024 15:53:54 GMT
+ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.1.0.jar
+# Mon, 28 Oct 2024 15:53:54 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 01 Oct 2024 13:05:18 GMT
+# Mon, 28 Oct 2024 15:53:54 GMT
 CMD ["xwiki"]
 ```
 
@@ -402,51 +402,51 @@ CMD ["xwiki"]
 		Last Modified: Thu, 24 Oct 2024 14:36:48 GMT  
 		Size: 189.9 MB (189854981 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71ba3c8e4eb98e1433300b83b352594fce4c9ec4cc6647cf317cc5072068b4e8`  
-		Last Modified: Thu, 24 Oct 2024 14:36:50 GMT  
-		Size: 311.8 MB (311840731 bytes)  
+	-	`sha256:b5403e82d0268a09ecebfd40a83d5a1df69f21fecb634a7ee375db4eac7bc5d9`  
+		Last Modified: Mon, 28 Oct 2024 18:04:06 GMT  
+		Size: 312.0 MB (312017883 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0fc317f4a5e15ecc47fa7459b052af0abcdac23de9110f1758cab4fc2cdb7bfe`  
-		Last Modified: Thu, 24 Oct 2024 14:36:44 GMT  
-		Size: 2.4 MB (2427540 bytes)  
+	-	`sha256:6d8b59add7cc2c866d6e613cbbbf22b5e412be048855bab39aba67618f67f628`  
+		Last Modified: Mon, 28 Oct 2024 18:03:57 GMT  
+		Size: 2.4 MB (2434168 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee48b1644444049b877496e896d4c6bff536a121e1a1444e5d75354518ef929e`  
-		Last Modified: Thu, 24 Oct 2024 14:36:44 GMT  
-		Size: 1.3 KB (1340 bytes)  
+	-	`sha256:1f92cf5341a5842ae1348657cfc0cc2ec2cbf8b7326f3798a7a81d762af6607e`  
+		Last Modified: Mon, 28 Oct 2024 18:03:57 GMT  
+		Size: 1.3 KB (1338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a657577d62cf06e0c163436ba0347f8d6246056ac48797fe531616b1146e61a`  
-		Last Modified: Thu, 24 Oct 2024 14:36:45 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:d170000cb8de53e94ff80d5df901d6681d107084af17eb10a5d65ff1bc63d32e`  
+		Last Modified: Mon, 28 Oct 2024 18:04:07 GMT  
+		Size: 2.4 KB (2370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a95d510eeab83823ef90091d02ea825625573760b9d0ac37dd2c1921b22f7cbb`  
-		Last Modified: Thu, 24 Oct 2024 14:36:45 GMT  
-		Size: 6.6 KB (6565 bytes)  
+	-	`sha256:3980baaed6395c075a1e28c5e238999832bff4dfe8110fd1fd286bb57c0fc01b`  
+		Last Modified: Mon, 28 Oct 2024 18:03:58 GMT  
+		Size: 6.6 KB (6591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:202ad57bf70688d7b05ed57f2605e3e6dc94aa9647f116d7f778c5dfb0c4d582`  
-		Last Modified: Thu, 24 Oct 2024 14:36:46 GMT  
-		Size: 2.5 KB (2509 bytes)  
+	-	`sha256:1f8b2f98b63e9649dbf58847aac5d221f4e5d552e0b1fa9b46e5eda5229b4d91`  
+		Last Modified: Mon, 28 Oct 2024 18:03:58 GMT  
+		Size: 2.5 KB (2507 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:mysql-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:d0a2328d5ad472bbc740f57065f50cd6e4a58a4d9403f3b617943a751a8418e9
+$ docker pull xwiki@sha256:d9e125e547772ce99a775750f682f7bfccfbf2ccc8a4fcf14ab4495afbac018a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 MB (8833451 bytes)**  
+-	Total Size: **8.8 MB (8833471 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d6835b866fad3aa4503dd1bff21821a0c5fa3a5cd5e304ec8fbc0b7515f1b0c4`
+-	Image ID: `sha256:9f17b9dc47d1ae6105193ed18f662e8998e57b42ea6929dcc9b0a1ddb68b9dcf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4caddf18db0ffcf329122ca6043de60f0b213fd590245b5109e43f8ea2630901`  
-		Last Modified: Thu, 24 Oct 2024 14:36:43 GMT  
-		Size: 8.8 MB (8790547 bytes)  
+	-	`sha256:f08a9403f11b2cdc9ad24e961d6decf7bb60c74fd16cffe1ea19396dbf4c280c`  
+		Last Modified: Mon, 28 Oct 2024 18:03:57 GMT  
+		Size: 8.8 MB (8790568 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6f2bc1cdd0b1868f5e3542ae96f67ccdea969cfe7fa0d3ab6d28213e4245617c`  
-		Last Modified: Thu, 24 Oct 2024 14:36:43 GMT  
-		Size: 42.9 KB (42904 bytes)  
+	-	`sha256:3146681023956efe63c8e610bc31a706979e03ebe42973ac2e4f7def7e2765db`  
+		Last Modified: Mon, 28 Oct 2024 18:03:56 GMT  
+		Size: 42.9 KB (42903 bytes)  
 		MIME: application/vnd.in-toto+json
