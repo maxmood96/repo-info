@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:41b29072474d0637e3570e4fd78dd92190f1e10713bdd415d81686c948f9a736`
-- Created: `2024-09-27T02:06:58.400692183Z`
-- Virtual Size: ~ 96.81 Mb  
+- Image ID: `sha256:56ced4424e3fbc13102b22582954b2d6281cda106edffcad3add34e6147c9ea4`
+- Created: `2024-04-18T21:17:33Z`
+- Virtual Size: ~ 101.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["container-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.12`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.12.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.12.tar.xz.asc`
-  - `PHP_SHA256=f774e28633e26fc8c5197f4dae58ec9e3ff87d1b4311cbc61ab05a7ad24bd131`
+  - `PHP_VERSION=8.3.13`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.13.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.13.tar.xz.asc`
+  - `PHP_SHA256=89adb978cca209124fe53fd6327bc4966ca21213a7fa2e9504f854e340873018`
   - `YOURLS_VERSION=1.9.2`
   - `YOURLS_SHA256=62a95ba766d62f3305d75944cbfe12d5a90c08c88fbf2f6e67150d36412b916f`
 
@@ -182,16 +182,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.28.1-r0 description:
+c-ares-1.33.1-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.28.1-r0 webpage:
+c-ares-1.33.1-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.28.1-r0 installed size:
-156 KiB
+c-ares-1.33.1-r0 installed size:
+168 KiB
 
-c-ares-1.28.1-r0 license:
+c-ares-1.33.1-r0 license:
 MIT
 
 ```
@@ -233,16 +233,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.9.1-r2 description:
+curl-8.10.1-r0 description:
 URL retrival utility and library
 
-curl-8.9.1-r2 webpage:
+curl-8.10.1-r0 webpage:
 https://curl.se/
 
-curl-8.9.1-r2 installed size:
-248 KiB
+curl-8.10.1-r0 installed size:
+252 KiB
 
-curl-8.9.1-r2 license:
+curl-8.10.1-r0 license:
 curl
 
 ```
@@ -284,16 +284,16 @@ LGPL-2.1-or-later AND GPL-2.0-or-later
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.2-r0 description:
+libcrypto3-3.3.2-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.3.2-r0 webpage:
+libcrypto3-3.3.2-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.2-r0 installed size:
+libcrypto3-3.3.2-r1 installed size:
 4660 KiB
 
-libcrypto3-3.3.2-r0 license:
+libcrypto3-3.3.2-r1 license:
 Apache-2.0
 
 ```
@@ -301,16 +301,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.9.1-r2 description:
+libcurl-8.10.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.9.1-r2 webpage:
+libcurl-8.10.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.9.1-r2 installed size:
-628 KiB
+libcurl-8.10.1-r0 installed size:
+644 KiB
 
-libcurl-8.9.1-r2 license:
+libcurl-8.10.1-r0 license:
 curl
 
 ```
@@ -403,16 +403,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.2-r0 description:
+libssl3-3.3.2-r1 description:
 SSL shared libraries
 
-libssl3-3.3.2-r0 webpage:
+libssl3-3.3.2-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.2-r0 installed size:
+libssl3-3.3.2-r1 installed size:
 796 KiB
 
-libssl3-3.3.2-r0 license:
+libssl3-3.3.2-r1 license:
 Apache-2.0
 
 ```
@@ -539,16 +539,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.2-r0 description:
+openssl-3.3.2-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.2-r0 webpage:
+openssl-3.3.2-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.3.2-r0 installed size:
+openssl-3.3.2-r1 installed size:
 784 KiB
 
-openssl-3.3.2-r0 license:
+openssl-3.3.2-r1 license:
 Apache-2.0
 
 ```
