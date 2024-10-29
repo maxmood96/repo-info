@@ -56,19 +56,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.9.8
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.8.dsc' apt_2.9.8.dsc 2973 SHA256:3fb040eed533a8cd95d37d7b81e1a553f59cc0e802b3689db663ab96e739f442
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.8.tar.xz' apt_2.9.8.tar.xz 2388012 SHA256:54fb7b34bdb93ea2081123ab35f893c26fe0f3e800a54e8e9eccb5f3e2ec9710
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.9.8/
 
-- https://sources.debian.net/src/apt/2.9.8/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.9.8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.9.8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-1`
 
@@ -156,19 +150,13 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.6.4
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.4.dsc' base-passwd_3.6.4.dsc 1762 SHA256:83d6855b38a0ab900d28d14bc3a0c0b97c60d5461143e51ccc2b0f8f7ea92cc8
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.4.tar.xz' base-passwd_3.6.4.tar.xz 58420 SHA256:4b5232c5910932215b87bbde6f3c6c9a97021fe7902bd837b1ede8cc0be84a65
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-passwd/3.6.4/
 
-- https://sources.debian.net/src/base-passwd/3.6.4/ (for browsing the source)
-- https://sources.debian.net/src/base-passwd/3.6.4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-passwd/3.6.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bash=5.2.32-1`
 
