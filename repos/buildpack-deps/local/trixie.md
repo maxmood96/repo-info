@@ -133,19 +133,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.9.8
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.8.dsc' apt_2.9.8.dsc 2973 SHA256:3fb040eed533a8cd95d37d7b81e1a553f59cc0e802b3689db663ab96e739f442
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.8.tar.xz' apt_2.9.8.tar.xz 2388012 SHA256:54fb7b34bdb93ea2081123ab35f893c26fe0f3e800a54e8e9eccb5f3e2ec9710
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.9.8/
 
-- https://sources.debian.net/src/apt/2.9.8/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.9.8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.9.8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `architecture-properties=0.2.3`
 
@@ -355,19 +349,13 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.6.4
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.4.dsc' base-passwd_3.6.4.dsc 1762 SHA256:83d6855b38a0ab900d28d14bc3a0c0b97c60d5461143e51ccc2b0f8f7ea92cc8
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.4.tar.xz' base-passwd_3.6.4.tar.xz 58420 SHA256:4b5232c5910932215b87bbde6f3c6c9a97021fe7902bd837b1ede8cc0be84a65
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-passwd/3.6.4/
 
-- https://sources.debian.net/src/base-passwd/3.6.4/ (for browsing the source)
-- https://sources.debian.net/src/base-passwd/3.6.4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-passwd/3.6.4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bash=5.2.32-1`
 
@@ -1035,20 +1023,13 @@ Licenses: (parsed from: `/usr/share/doc/libelf1t64/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.191-2
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.191-2.dsc' elfutils_0.191-2.dsc 3275 SHA256:3bed7fdf1fec10afe7531ff34e8def33dfa5f0df97854bbfeb5216ff9e848a39
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.191.orig.tar.bz2' elfutils_0.191.orig.tar.bz2 9310088 SHA256:df76db71366d1d708365fc7a6c60ca48398f14367eb2b8954efc8897147ad871
-'http://deb.debian.org/debian/pool/main/e/elfutils/elfutils_0.191-2.debian.tar.xz' elfutils_0.191-2.debian.tar.xz 44404 SHA256:46d49ba0c62cd64ab8eafebaffea278ff584048fd66289031203919abdf2b58a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/elfutils/0.191-2/
 
-- https://sources.debian.net/src/elfutils/0.191-2/ (for browsing the source)
-- https://sources.debian.net/src/elfutils/0.191-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/elfutils/0.191-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.6.3-1`
 
@@ -2178,20 +2159,13 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 - `LGPL-2`
 - `LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris keyutils=1.6.3-3
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.6.3-3.dsc' keyutils_1.6.3-3.dsc 2079 SHA256:0a4178e10982c7351da7db5b44b5c18807613ad066cb2e157d0756019764f0c1
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.6.3.orig.tar.gz' keyutils_1.6.3.orig.tar.gz 137022 SHA256:a61d5706136ae4c05bd48f86186bcfdbd88dd8bd5107e3e195c924cfc1b39bb4
-'http://deb.debian.org/debian/pool/main/k/keyutils/keyutils_1.6.3-3.debian.tar.xz' keyutils_1.6.3-3.debian.tar.xz 13328 SHA256:8c078d9de91f930df174eebc60e063e8fff574ac36c0f7ee18f7e21635d60af0
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/keyutils/1.6.3-3/
 
-- https://sources.debian.net/src/keyutils/1.6.3-3/ (for browsing the source)
-- https://sources.debian.net/src/keyutils/1.6.3-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/keyutils/1.6.3-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `krb5=1.21.3-3`
 
@@ -3130,20 +3104,13 @@ Licenses: (parsed from: `/usr/share/doc/libraw23t64/copyright`)
 - `GPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libraw=0.21.2-2.1
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.21.2-2.1.dsc' libraw_0.21.2-2.1.dsc 2220 SHA256:1d0510d78871d5e4dbd146919ddf3496e55f478178e36a847fa54c058a046290
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.21.2.orig.tar.gz' libraw_0.21.2.orig.tar.gz 565383 SHA256:7ac056e0d9e814d808f6973a950bbf45e71b53283eed07a7ea87117a6c0ced96
-'http://deb.debian.org/debian/pool/main/libr/libraw/libraw_0.21.2-2.1.debian.tar.xz' libraw_0.21.2-2.1.debian.tar.xz 24724 SHA256:0dd4a22e32a164304549b3ef6295face72761d649372485e041247ec2f9cc853
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libraw/0.21.2-2.1/
 
-- https://sources.debian.net/src/libraw/0.21.2-2.1/ (for browsing the source)
-- https://sources.debian.net/src/libraw/0.21.2-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libraw/0.21.2-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `librsvg=2.59.1+dfsg-1`
 
@@ -5397,21 +5364,13 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 - `Unicode`
 - `Utfwidth`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris subversion=1.14.4-1
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.4-1.dsc' subversion_1.14.4-1.dsc 3991 SHA256:cbc0b7ce7b59f302ce15d33448151264e3f903f738c76b51cbd26c990a2f9a18
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.4.orig.tar.gz' subversion_1.14.4.orig.tar.gz 11544431 SHA256:3a784da1ff90179a0fb93adf9309ba15ca1d01f80721c815b42c36f61c5307fc
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.4.orig.tar.gz.asc' subversion_1.14.4.orig.tar.gz.asc 2179 SHA256:ccbd84cda019bb82f69e01c4e0efa5de07fd2cce6e7e22ce823e8a320835a112
-'http://deb.debian.org/debian/pool/main/s/subversion/subversion_1.14.4-1.debian.tar.xz' subversion_1.14.4-1.debian.tar.xz 297176 SHA256:72f494c72e82ce4b59efe5db99cc3a8dc707f16287f340a276cfddcb3fb9706c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/subversion/1.14.4-1/
 
-- https://sources.debian.net/src/subversion/1.14.4-1/ (for browsing the source)
-- https://sources.debian.net/src/subversion/1.14.4-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/subversion/1.14.4-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysprof=47.0-2`
 

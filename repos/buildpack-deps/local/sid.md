@@ -1068,20 +1068,13 @@ Licenses: (parsed from: `/usr/share/doc/libfftw3-double3/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris fftw3=3.3.10-1
-'http://deb.debian.org/debian/pool/main/f/fftw3/fftw3_3.3.10-1.dsc' fftw3_3.3.10-1.dsc 2771 SHA256:5c6a64c8047e33f122fb1eebd4316178e3da86da16de70da0527906adcf22924
-'http://deb.debian.org/debian/pool/main/f/fftw3/fftw3_3.3.10.orig.tar.gz' fftw3_3.3.10.orig.tar.gz 4144100 SHA256:56c932549852cddcfafdab3820b0200c7742675be92179e59e6215b340e26467
-'http://deb.debian.org/debian/pool/main/f/fftw3/fftw3_3.3.10-1.debian.tar.xz' fftw3_3.3.10-1.debian.tar.xz 14520 SHA256:a19c2fa4eebb123626a8df89387e3437369d234f68799d3b2c0c9fb84b9ca875
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/fftw3/3.3.10-1/
 
-- https://sources.debian.net/src/fftw3/3.3.10-1/ (for browsing the source)
-- https://sources.debian.net/src/fftw3/3.3.10-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/fftw3/3.3.10-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `file=1:5.45-3`
 
@@ -1523,21 +1516,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-glib-2.0/copyright`, `/usr/share/
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.82.2-1
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.2-1.dsc' glib2.0_2.82.2-1.dsc 4921 SHA256:6b72ad07792a6abc9edb70a9ec67937bc7822c001403b5092c249e7b27064c10
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.2.orig-unicode-data.tar.xz' glib2.0_2.82.2.orig-unicode-data.tar.xz 262908 SHA256:9bf66a7e9f2f18cbd7a72f561dc1f997990b53243435008777109c823cd7e1ea
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.2.orig.tar.xz' glib2.0_2.82.2.orig.tar.xz 5555528 SHA256:ab45f5a323048b1659ee0fbda5cecd94b099ab3e4b9abf26ae06aeb3e781fd63
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.2-1.debian.tar.xz' glib2.0_2.82.2-1.debian.tar.xz 135556 SHA256:030fb7e8204fc6074d9f573185e1ca35a7ce9689763152256c852fd16b9cefa9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.82.2-1/
 
-- https://sources.debian.net/src/glib2.0/2.82.2-1/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.82.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.82.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.40-3`
 
@@ -1629,21 +1614,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.44-1
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.44-1.dsc' gnupg2_2.2.44-1.dsc 3834 SHA256:e1430f3abf26686a94a822f07e1277014453ae83f972ca678959bd5109cf3d96
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.44.orig.tar.bz2' gnupg2_2.2.44.orig.tar.bz2 7436756 SHA256:735b8b3e6d2330f66ab98336b060d5852a1a67cb2bc47ec7d1e5411577a8cadd
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.44.orig.tar.bz2.asc' gnupg2_2.2.44.orig.tar.bz2.asc 390 SHA256:715014555aa7273be8c6a8283c7aa49f07a83f6f630ab23a5d72532ea084719c
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.44-1.debian.tar.xz' gnupg2_2.2.44-1.debian.tar.xz 139928 SHA256:97553a3393f609fcec0dd54ecbcb534255b68e3b0d79c61f2e330fab9f1fc44b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.44-1/
 
-- https://sources.debian.net/src/gnupg2/2.2.44-1/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.44-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.44-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.8.6-2`
 
