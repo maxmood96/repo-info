@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:65d7cc552b833613a085f541de52e32e1ad4fbb4f00010d3406fe5ecef4d7383`
-- Created: `2024-10-25T03:26:28.338752757Z`
+- Image ID: `sha256:1d0fdb22bac83ff378e8dfbb823f7d39831b3136345d69c38f6b52e4f13c5d33`
+- Created: `2024-10-18T00:32:25Z`
 - Virtual Size: ~ 1.24 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2288,11 +2288,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libgpg-error/1.46-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libgpg-error/1.46-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libheif=1.15.1-1`
+### `dpkg` source package: `libheif=1.15.1-1+deb12u1`
 
 Binary Packages:
 
-- `libheif1:amd64=1.15.1-1`
+- `libheif1:amd64=1.15.1-1+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libheif1/copyright`)
 
@@ -2308,17 +2308,17 @@ Licenses: (parsed from: `/usr/share/doc/libheif1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libheif=1.15.1-1
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.15.1-1.dsc' libheif_1.15.1-1.dsc 2290 SHA256:98f754acc2d36c3dc58dd8f5d86a608995378172fb11a1e209da638456942201
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.15.1.orig.tar.gz' libheif_1.15.1.orig.tar.gz 1749018 SHA256:28d5a376fe7954d2d03453f983aaa0b7486f475c27c7806bda31df9102325556
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.15.1-1.debian.tar.xz' libheif_1.15.1-1.debian.tar.xz 7780 SHA256:e7bf281fec0bbeaaacdaddb10585de27809c3bd5e80efa1f86943869e0f16fa9
+$ apt-get source -qq --print-uris libheif=1.15.1-1+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.15.1-1%2bdeb12u1.dsc' libheif_1.15.1-1+deb12u1.dsc 2325 SHA256:e89ce8b9cefe4a72050d2076e0d63206eab20d7b2b8bb699ae576e89073143f3
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.15.1.orig.tar.gz' libheif_1.15.1.orig.tar.gz 1749018 SHA256:28d5a376fe7954d2d03453f983aaa0b7486f475c27c7806bda31df9102325556
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.15.1-1%2bdeb12u1.debian.tar.xz' libheif_1.15.1-1+deb12u1.debian.tar.xz 11400 SHA256:f3a042fce4231e8feddd032bf93b808a6db96614c20888b78d1042a15e378817
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libheif/1.15.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.15.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.15.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libheif/1.15.1-1+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/libheif/1.15.1-1+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libheif/1.15.1-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libidn2=2.3.3-1`
 
