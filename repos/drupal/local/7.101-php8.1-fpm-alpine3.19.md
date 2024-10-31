@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:80b0cd257fa2f95b4bf4dee5703a71d085d32f50ab88ef6e7da314755727bc50`
+- Image ID: `sha256:47de1d1896beda2c3dd480c700269ee2e155fa45478bd1fbb4ba8c6e815704e6`
 - Created: `2024-06-05T22:17:43Z`
-- Virtual Size: ~ 97.24 Mb  
+- Virtual Size: ~ 101.46 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -217,16 +217,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.9.1-r0 description:
+curl-8.9.1-r1 description:
 URL retrival utility and library
 
-curl-8.9.1-r0 webpage:
+curl-8.9.1-r1 webpage:
 https://curl.se/
 
-curl-8.9.1-r0 installed size:
+curl-8.9.1-r1 installed size:
 248 KiB
 
-curl-8.9.1-r0 license:
+curl-8.9.1-r1 license:
 curl
 
 ```
@@ -319,16 +319,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.7-r0 description:
+libcrypto3-3.1.7-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.1.7-r0 webpage:
+libcrypto3-3.1.7-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.7-r0 installed size:
+libcrypto3-3.1.7-r1 installed size:
 4512 KiB
 
-libcrypto3-3.1.7-r0 license:
+libcrypto3-3.1.7-r1 license:
 Apache-2.0
 
 ```
@@ -336,16 +336,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.9.1-r0 description:
+libcurl-8.9.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.9.1-r0 webpage:
+libcurl-8.9.1-r1 webpage:
 https://curl.se/
 
-libcurl-8.9.1-r0 installed size:
+libcurl-8.9.1-r1 installed size:
 628 KiB
 
-libcurl-8.9.1-r0 license:
+libcurl-8.9.1-r1 license:
 curl
 
 ```
@@ -489,16 +489,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.7-r0 description:
+libssl3-3.1.7-r1 description:
 SSL shared libraries
 
-libssl3-3.1.7-r0 webpage:
+libssl3-3.1.7-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.7-r0 installed size:
+libssl3-3.1.7-r1 installed size:
 548 KiB
 
-libssl3-3.1.7-r0 license:
+libssl3-3.1.7-r1 license:
 Apache-2.0
 
 ```
@@ -659,16 +659,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.7-r0 description:
+openssl-3.1.7-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.7-r0 webpage:
+openssl-3.1.7-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.1.7-r0 installed size:
+openssl-3.1.7-r1 installed size:
 732 KiB
 
-openssl-3.1.7-r0 license:
+openssl-3.1.7-r1 license:
 Apache-2.0
 
 ```

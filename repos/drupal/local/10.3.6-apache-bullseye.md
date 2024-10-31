@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a394fb0f0b3b8b35369f4ea0e07e8e0c206b9de2431802c5f7599ff3faec7667`
+- Image ID: `sha256:b6a4d60826f947a41badb9678ae20c3f3307e8fdd200a84bde27a444c24960c4`
 - Created: `2024-10-03T15:27:16Z`
-- Virtual Size: ~ 557.51 Mb  
+- Virtual Size: ~ 563.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -81,14 +81,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/adduser/3.118+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/adduser/3.118+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `apache2=2.4.62-1~deb11u1`
+### `dpkg` source package: `apache2=2.4.62-1~deb11u2`
 
 Binary Packages:
 
-- `apache2=2.4.62-1~deb11u1`
-- `apache2-bin=2.4.62-1~deb11u1`
-- `apache2-data=2.4.62-1~deb11u1`
-- `apache2-utils=2.4.62-1~deb11u1`
+- `apache2=2.4.62-1~deb11u2`
+- `apache2-bin=2.4.62-1~deb11u2`
+- `apache2-data=2.4.62-1~deb11u2`
+- `apache2-utils=2.4.62-1~deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apache2-bin/copyright`, `/usr/share/doc/apache2-data/copyright`, `/usr/share/doc/apache2-utils/copyright`)
 
@@ -111,18 +111,18 @@ Licenses: (parsed from: `/usr/share/doc/apache2/copyright`, `/usr/share/doc/apac
 Source:
 
 ```console
-$ apt-get source -qq --print-uris apache2=2.4.62-1~deb11u1
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.62-1%7edeb11u1.dsc' apache2_2.4.62-1~deb11u1.dsc 3539 SHA256:d602d5a6797043c6faaaba3f47522b4afda881e220786d36c7e82631328c3b43
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.62.orig.tar.gz' apache2_2.4.62.orig.tar.gz 9872432 SHA256:3e2404d762a2da03560d7ada379ba1599d32f04a0d70ad6ff86f44325f2f062d
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.62.orig.tar.gz.asc' apache2_2.4.62.orig.tar.gz.asc 833 SHA256:7765403a937dacb562a0eb15ed11ba85f703d10c6bb8b5630591d18876975963
-'http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.62-1%7edeb11u1.debian.tar.xz' apache2_2.4.62-1~deb11u1.debian.tar.xz 814288 SHA256:127fd1bb46d926ba636f0ac9e6d8cc2d14d1ef4fde74305260ba3b5bd2fcd4f7
+$ apt-get source -qq --print-uris apache2=2.4.62-1~deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.62-1%7edeb11u2.dsc' apache2_2.4.62-1~deb11u2.dsc 3603 SHA256:0e159ab59a1c41563276692d5b866897f80d8f5736b69ab1c5c5e25d1c78d9e2
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.62.orig.tar.gz' apache2_2.4.62.orig.tar.gz 9872432 SHA256:3e2404d762a2da03560d7ada379ba1599d32f04a0d70ad6ff86f44325f2f062d
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.62.orig.tar.gz.asc' apache2_2.4.62.orig.tar.gz.asc 833 SHA256:7765403a937dacb562a0eb15ed11ba85f703d10c6bb8b5630591d18876975963
+'http://deb.debian.org/debian-security/pool/updates/main/a/apache2/apache2_2.4.62-1%7edeb11u2.debian.tar.xz' apache2_2.4.62-1~deb11u2.debian.tar.xz 818588 SHA256:67415b5c61f0d17ea13fafb281a197eef595b6842d670ca57f94ce1b78dd1559
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/apache2/2.4.62-1~deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/apache2/2.4.62-1~deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apache2/2.4.62-1~deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/apache2/2.4.62-1~deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/apache2/2.4.62-1~deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apache2/2.4.62-1~deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.1-5+deb11u1`
 
@@ -2811,14 +2811,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pcre3/2:8.39-13/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pcre3/2:8.39-13/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `perl=5.32.1-4+deb11u3`
+### `dpkg` source package: `perl=5.32.1-4+deb11u4`
 
 Binary Packages:
 
-- `libperl5.32:amd64=5.32.1-4+deb11u3`
-- `perl=5.32.1-4+deb11u3`
-- `perl-base=5.32.1-4+deb11u3`
-- `perl-modules-5.32=5.32.1-4+deb11u3`
+- `libperl5.32:amd64=5.32.1-4+deb11u4`
+- `perl=5.32.1-4+deb11u4`
+- `perl-base=5.32.1-4+deb11u4`
+- `perl-modules-5.32=5.32.1-4+deb11u4`
 
 Licenses: (parsed from: `/usr/share/doc/libperl5.32/copyright`, `/usr/share/doc/perl/copyright`, `/usr/share/doc/perl-base/copyright`, `/usr/share/doc/perl-modules-5.32/copyright`)
 
@@ -2853,18 +2853,18 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.32/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris perl=5.32.1-4+deb11u3
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.32.1-4%2bdeb11u3.dsc' perl_5.32.1-4+deb11u3.dsc 2918 SHA256:75699317b7e2865de39e86fb53f630669fd6e5904c8526699e8a01af98d56e6d
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.32.1.orig-regen-configure.tar.gz' perl_5.32.1.orig-regen-configure.tar.gz 871331 SHA256:1d179b41283f12ad83f9758430f6ddc49bdf20db5c396aeae7e51ebb4e4afd29
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.32.1.orig.tar.xz' perl_5.32.1.orig.tar.xz 12610988 SHA256:57cc47c735c8300a8ce2fa0643507b44c4ae59012bfdad0121313db639e02309
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.32.1-4%2bdeb11u3.debian.tar.xz' perl_5.32.1-4+deb11u3.debian.tar.xz 167388 SHA256:a875b28e158180906d77df06dea08b8e724f91b31249fe7d205fc3f2cb520ddf
+$ apt-get source -qq --print-uris perl=5.32.1-4+deb11u4
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.32.1-4%2bdeb11u4.dsc' perl_5.32.1-4+deb11u4.dsc 2893 SHA256:57ac45e316fd4a82e476883c3326f9df7f27ed6ff07cc4541a0600b503742695
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.32.1.orig-regen-configure.tar.gz' perl_5.32.1.orig-regen-configure.tar.gz 871331 SHA256:1d179b41283f12ad83f9758430f6ddc49bdf20db5c396aeae7e51ebb4e4afd29
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.32.1.orig.tar.xz' perl_5.32.1.orig.tar.xz 12610988 SHA256:57cc47c735c8300a8ce2fa0643507b44c4ae59012bfdad0121313db639e02309
+'http://deb.debian.org/debian-security/pool/updates/main/p/perl/perl_5.32.1-4%2bdeb11u4.debian.tar.xz' perl_5.32.1-4+deb11u4.debian.tar.xz 170428 SHA256:3fd8c90c0b5a8d4efeb2f2cb03d4c83d9fff90e223d3d1d385754a44cf59f597
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/perl/5.32.1-4+deb11u3/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.32.1-4+deb11u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.32.1-4+deb11u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/perl/5.32.1-4+deb11u4/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.32.1-4+deb11u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.32.1-4+deb11u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pkg-config=0.29.2-1`
 
