@@ -1,9 +1,9 @@
-# `swift:6.0.1-focal`
+# `swift:6.0.2-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8358cc001f597cbbe0546c0a0c7584b08dc9f51ae07affe4ea7e53f3767ffe4c`
-- Created: `2024-09-25T05:07:02Z`
+- Image ID: `sha256:a38df890b1d93106e5263a165213ed7bf0b2502d678a660f3135878d711bd0f1`
+- Created: `2024-10-28T18:01:55Z`
 - Virtual Size: ~ 3.13 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubuntu20.04`
-  - `SWIFT_BRANCH=swift-6.0.1-release`
-  - `SWIFT_VERSION=swift-6.0.1-RELEASE`
+  - `SWIFT_BRANCH=swift-6.0.2-release`
+  - `SWIFT_VERSION=swift-6.0.2-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -1711,14 +1711,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-198.218
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-198.218.dsc' linux_5.4.0-198.218.dsc 7418 SHA512:903508be2fdb3804691b55ad99aa8bee18f34180458c3d1fbc3ffeac43f7b7a8ce447a1451fe801c91e70a2c123fd6292e6c5c20bfb502466157087305976f84
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-198.218.diff.gz' linux_5.4.0-198.218.diff.gz 9668192 SHA512:ae00083b0cb279148adf89e6396a2f6ee6c72e71d37e56ffbd16bc088c78dfeed79f42cc03cc186961b5789f8022eaebda7d1f99dd9fb9f1a5c9b55509f16c22
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 

@@ -1,9 +1,9 @@
-# `swift:6.0.1-jammy`
+# `swift:6.0.2-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2ef74e821976a91f4c2b9c5e01357957731c99e6b9d14ed9398876d74c3b3685`
-- Created: `2024-09-25T05:07:02Z`
+- Image ID: `sha256:cf1cde77a0f4eb96199f86967dc5bf75b36a90b3f2972acc860d5ba1eaef34b6`
+- Created: `2024-10-28T18:01:55Z`
 - Virtual Size: ~ 3.34 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubuntu22.04`
-  - `SWIFT_BRANCH=swift-6.0.1-release`
-  - `SWIFT_VERSION=swift-6.0.1-RELEASE`
+  - `SWIFT_BRANCH=swift-6.0.2-release`
+  - `SWIFT_VERSION=swift-6.0.2-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -2035,19 +2035,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-122.132`
+### `dpkg` source package: `linux=5.15.0-124.134`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-122.132`
+- `linux-libc-dev:amd64=5.15.0-124.134`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.15.0-124.134
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-124.134.dsc' linux_5.15.0-124.134.dsc 7799 SHA512:2102ac558feb5f9062f8fbe520e88e8a0a37a80077a068a36b78b5454300d13be66b1ff0789fdde92a7d244f57a4d11f811f949a1ef79e72a40db13a07da90d5
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-124.134.diff.gz' linux_5.15.0-124.134.diff.gz 10541149 SHA512:f84744b755d94df0c2bf28f0469979e4825d7c48cc9f732a21717d50d5369cc8c6a48b919c1a62cd21ed3663ffb1c8ac11560fdc72a2b30d0fafd62e15e112ef
+```
 
 ### `dpkg` source package: `llvm-toolchain-13=1:13.0.1-2ubuntu2.2`
 

@@ -1,10 +1,10 @@
-# `swift:6.0.1-rhel-ubi9-slim`
+# `swift:6.0.2-rhel-ubi9-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9ee8492e5c475a98c26ff72b4098063184dfacda82ade0a9edcc218ec5ba5e5a`
-- Created: `2024-09-25T05:07:02Z`
-- Virtual Size: ~ 404.72 Mb  
+- Image ID: `sha256:706d702674fd5d5881a54129c0b24b7b1927b860cb96c785135f37e5c49aa9bb`
+- Created: `2024-10-28T18:01:55Z`
+- Virtual Size: ~ 405.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -13,26 +13,26 @@
   - `container=oci`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubi9`
-  - `SWIFT_BRANCH=swift-6.0.1-release`
-  - `SWIFT_VERSION=swift-6.0.1-RELEASE`
+  - `SWIFT_BRANCH=swift-6.0.2-release`
+  - `SWIFT_VERSION=swift-6.0.2-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-09-18T21:23:30`
+  - `build-date=2024-10-24T12:46:07`
   - `com.redhat.component=ubi9-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=Docker Container for the Swift programming language`
   - `distribution-scope=public`
-  - `io.buildah.version=1.29.0`
+  - `io.buildah.version=1.33.8`
   - `io.k8s.description=The Universal Base Image is designed and engineered to be the base layer for all of your containerized applications, middleware and utilities. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `io.k8s.display-name=Red Hat Universal Base Image 9`
   - `io.openshift.expose-services=`
   - `io.openshift.tags=base rhel9`
   - `maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>`
   - `name=ubi9`
-  - `release=1214.1726694543`
+  - `release=1214.1729773476`
   - `summary=Provides the latest release of Red Hat Universal Base Image 9.`
-  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.4-1214.1726694543`
+  - `url=https://access.redhat.com/containers/#/registry.access.redhat.com/ubi9/images/9.4-1214.1729773476`
   - `vcs-ref=e309397d02fc53f7fa99db1371b8700eb49f268f`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
@@ -244,19 +244,19 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-2.34-100.el9_4.3.x86_64`
+### `rpm` package: `glibc-2.34-100.el9_4.4.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-common-2.34-100.el9_4.3.x86_64`
+### `rpm` package: `glibc-common-2.34-100.el9_4.4.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `glibc-minimal-langpack-2.34-100.el9_4.3.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-100.el9_4.4.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
@@ -796,7 +796,7 @@ Licenses (from `rpm --query`): GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-3.9.18-3.el9_4.5.x86_64`
+### `rpm` package: `python3-3.9.18-3.el9_4.6.x86_64`
 
 Licenses (from `rpm --query`): Python
 
@@ -904,7 +904,7 @@ Licenses (from `rpm --query`): LGPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `python3-libs-3.9.18-3.el9_4.5.x86_64`
+### `rpm` package: `python3-libs-3.9.18-3.el9_4.6.x86_64`
 
 Licenses (from `rpm --query`): Python
 
