@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c6f11346815b863fd65f48bbca2d7e1a523acc595a51008bce58fde4fd4a29e6`
+- Image ID: `sha256:308c72497fb4a4c55b3aaf32a1a246736c84feeea9e996f0da106d1167e279e2`
 - Created: `2024-06-18T22:07:17Z`
-- Virtual Size: ~ 633.40 Mb  
+- Virtual Size: ~ 637.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.2.5`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.5.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=7780d91130139406d39b29ed8fe16bba350d8fa00e510c76bef9b8ec1340903c`
+  - `RUBY_VERSION=3.2.6`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.6.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=671134022238c2c4a9d79dc7d1e58c909634197617901d25863642f735a27ecb`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -2407,11 +2407,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libgpg-error/1.46-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libgpg-error/1.46-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libheif=1.15.1-1`
+### `dpkg` source package: `libheif=1.15.1-1+deb12u1`
 
 Binary Packages:
 
-- `libheif1:amd64=1.15.1-1`
+- `libheif1:amd64=1.15.1-1+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libheif1/copyright`)
 
@@ -2427,17 +2427,17 @@ Licenses: (parsed from: `/usr/share/doc/libheif1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libheif=1.15.1-1
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.15.1-1.dsc' libheif_1.15.1-1.dsc 2290 SHA256:98f754acc2d36c3dc58dd8f5d86a608995378172fb11a1e209da638456942201
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.15.1.orig.tar.gz' libheif_1.15.1.orig.tar.gz 1749018 SHA256:28d5a376fe7954d2d03453f983aaa0b7486f475c27c7806bda31df9102325556
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.15.1-1.debian.tar.xz' libheif_1.15.1-1.debian.tar.xz 7780 SHA256:e7bf281fec0bbeaaacdaddb10585de27809c3bd5e80efa1f86943869e0f16fa9
+$ apt-get source -qq --print-uris libheif=1.15.1-1+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.15.1-1%2bdeb12u1.dsc' libheif_1.15.1-1+deb12u1.dsc 2325 SHA256:e89ce8b9cefe4a72050d2076e0d63206eab20d7b2b8bb699ae576e89073143f3
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.15.1.orig.tar.gz' libheif_1.15.1.orig.tar.gz 1749018 SHA256:28d5a376fe7954d2d03453f983aaa0b7486f475c27c7806bda31df9102325556
+'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.15.1-1%2bdeb12u1.debian.tar.xz' libheif_1.15.1-1+deb12u1.debian.tar.xz 11400 SHA256:f3a042fce4231e8feddd032bf93b808a6db96614c20888b78d1042a15e378817
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libheif/1.15.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.15.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.15.1-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libheif/1.15.1-1+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/libheif/1.15.1-1+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libheif/1.15.1-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.0.10-1`
 

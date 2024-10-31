@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:44b9fb8c8e448b4262616fa8f16d1d22c6c5c4ee8488a9294a308d700ed3e9c0`
+- Image ID: `sha256:cc9ff8d80c513a8a1244bb33b8191af7306b88dd9680ddef2f87a2a8ce7eac76`
 - Created: `2024-06-18T22:07:17Z`
-- Virtual Size: ~ 418.31 Mb  
+- Virtual Size: ~ 424.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.2.5`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.5.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=7780d91130139406d39b29ed8fe16bba350d8fa00e510c76bef9b8ec1340903c`
+  - `RUBY_VERSION=3.2.6`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.6.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=671134022238c2c4a9d79dc7d1e58c909634197617901d25863642f735a27ecb`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -320,16 +320,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `cups-libs`
 
 ```console
-cups-libs-2.4.9-r0 description:
+cups-libs-2.4.9-r1 description:
 CUPS libraries
 
-cups-libs-2.4.9-r0 webpage:
+cups-libs-2.4.9-r1 webpage:
 https://github.com/OpenPrinting/cups/
 
-cups-libs-2.4.9-r0 installed size:
+cups-libs-2.4.9-r1 installed size:
 576 KiB
 
-cups-libs-2.4.9-r0 license:
+cups-libs-2.4.9-r1 license:
 Apache-2.0
 
 ```
@@ -456,16 +456,16 @@ GPL-3.0-or-later
 ### `apk` package: `ghostscript`
 
 ```console
-ghostscript-10.03.1-r0 description:
+ghostscript-10.04.0-r0 description:
 Interpreter for the PostScript language and for PDF
 
-ghostscript-10.03.1-r0 webpage:
+ghostscript-10.04.0-r0 webpage:
 https://ghostscript.com/
 
-ghostscript-10.03.1-r0 installed size:
-61 MiB
+ghostscript-10.04.0-r0 installed size:
+62 MiB
 
-ghostscript-10.03.1-r0 license:
+ghostscript-10.04.0-r0 license:
 AGPL-3.0-or-later
 
 ```
@@ -490,16 +490,16 @@ GPL-2.0-or-later
 ### `apk` package: `git`
 
 ```console
-git-2.43.4-r0 description:
+git-2.43.5-r0 description:
 Distributed version control system
 
-git-2.43.4-r0 webpage:
+git-2.43.5-r0 webpage:
 https://www.git-scm.com/
 
-git-2.43.4-r0 installed size:
-6068 KiB
+git-2.43.5-r0 installed size:
+6064 KiB
 
-git-2.43.4-r0 license:
+git-2.43.5-r0 license:
 GPL-2.0-only
 
 ```
@@ -745,16 +745,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.7-r0 description:
+libcrypto3-3.1.7-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.1.7-r0 webpage:
+libcrypto3-3.1.7-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.7-r0 installed size:
+libcrypto3-3.1.7-r1 installed size:
 4512 KiB
 
-libcrypto3-3.1.7-r0 license:
+libcrypto3-3.1.7-r1 license:
 Apache-2.0
 
 ```
@@ -762,16 +762,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.9.0-r0 description:
+libcurl-8.9.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.9.0-r0 webpage:
+libcurl-8.9.1-r1 webpage:
 https://curl.se/
 
-libcurl-8.9.0-r0 installed size:
+libcurl-8.9.1-r1 installed size:
 628 KiB
 
-libcurl-8.9.0-r0 license:
+libcurl-8.9.1-r1 license:
 curl
 
 ```
@@ -1017,16 +1017,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.40-r0 description:
+libpng-1.6.44-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.40-r0 webpage:
+libpng-1.6.44-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.40-r0 installed size:
+libpng-1.6.44-r0 installed size:
 200 KiB
 
-libpng-1.6.40-r0 license:
+libpng-1.6.44-r0 license:
 Libpng
 
 ```
@@ -1034,16 +1034,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-16.3-r0 description:
+libpq-16.4-r0 description:
 PostgreSQL client library
 
-libpq-16.3-r0 webpage:
+libpq-16.4-r0 webpage:
 https://www.postgresql.org/
 
-libpq-16.3-r0 installed size:
+libpq-16.4-r0 installed size:
 328 KiB
 
-libpq-16.3-r0 license:
+libpq-16.4-r0 license:
 PostgreSQL
 
 ```
@@ -1102,16 +1102,16 @@ BSD-3-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.7-r0 description:
+libssl3-3.1.7-r1 description:
 SSL shared libraries
 
-libssl3-3.1.7-r0 webpage:
+libssl3-3.1.7-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.7-r0 installed size:
+libssl3-3.1.7-r1 installed size:
 548 KiB
 
-libssl3-3.1.7-r0 license:
+libssl3-3.1.7-r1 license:
 Apache-2.0
 
 ```
@@ -1867,16 +1867,16 @@ MIT
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.11.9-r1 description:
+pyc-3.11.10-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.11.9-r1 webpage:
+pyc-3.11.10-r0 webpage:
 https://www.python.org/
 
-pyc-3.11.9-r1 installed size:
+pyc-3.11.10-r0 installed size:
 4096 B
 
-pyc-3.11.9-r1 license:
+pyc-3.11.10-r0 license:
 PSF-2.0
 
 ```
@@ -1884,16 +1884,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.11.9-r1 description:
+python3-3.11.10-r0 description:
 High-level scripting language
 
-python3-3.11.9-r1 webpage:
+python3-3.11.10-r0 webpage:
 https://www.python.org/
 
-python3-3.11.9-r1 installed size:
+python3-3.11.10-r0 installed size:
 24 MiB
 
-python3-3.11.9-r1 license:
+python3-3.11.10-r0 license:
 PSF-2.0
 
 ```
@@ -1901,16 +1901,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.11.9-r1 description:
+python3-pyc-3.11.10-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.11.9-r1 webpage:
+python3-pyc-3.11.10-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.11.9-r1 installed size:
+python3-pyc-3.11.10-r0 installed size:
 4096 B
 
-python3-pyc-3.11.9-r1 license:
+python3-pyc-3.11.10-r0 license:
 PSF-2.0
 
 ```
@@ -1918,16 +1918,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.11.9-r1 description:
+python3-pycache-pyc0-3.11.10-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.11.9-r1 webpage:
+python3-pycache-pyc0-3.11.10-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.11.9-r1 installed size:
+python3-pycache-pyc0-3.11.10-r0 installed size:
 13 MiB
 
-python3-pycache-pyc0-3.11.9-r1 license:
+python3-pycache-pyc0-3.11.10-r0 license:
 PSF-2.0
 
 ```
