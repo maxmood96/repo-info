@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d86e49e4a6b5696a30f01233317078145a23d1819e4b59fcfc44de7eedfd09be`
-- Created: `2024-10-01T19:28:23.000461028Z`
-- Virtual Size: ~ 401.22 Mb  
+- Image ID: `sha256:22a553b45502f3d67b15996157188980e19614fb16fa181926ca8e43f05ab928`
+- Created: `2024-10-10T17:52:24Z`
+- Virtual Size: ~ 405.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -165,16 +165,16 @@ GPL-2.0-only
 ### `apk` package: `c-ares`
 
 ```console
-c-ares-1.28.1-r0 description:
+c-ares-1.33.1-r0 description:
 Asynchronous DNS/names resolver library
 
-c-ares-1.28.1-r0 webpage:
+c-ares-1.33.1-r0 webpage:
 https://c-ares.org/
 
-c-ares-1.28.1-r0 installed size:
-156 KiB
+c-ares-1.33.1-r0 installed size:
+168 KiB
 
-c-ares-1.28.1-r0 license:
+c-ares-1.33.1-r0 license:
 MIT
 
 ```
@@ -216,16 +216,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.9.1-r2 description:
+curl-8.10.1-r0 description:
 URL retrival utility and library
 
-curl-8.9.1-r2 webpage:
+curl-8.10.1-r0 webpage:
 https://curl.se/
 
-curl-8.9.1-r2 installed size:
-248 KiB
+curl-8.10.1-r0 installed size:
+252 KiB
 
-curl-8.9.1-r2 license:
+curl-8.10.1-r0 license:
 curl
 
 ```
@@ -488,16 +488,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.2-r0 description:
+libcrypto3-3.3.2-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.3.2-r0 webpage:
+libcrypto3-3.3.2-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.2-r0 installed size:
+libcrypto3-3.3.2-r1 installed size:
 4660 KiB
 
-libcrypto3-3.3.2-r0 license:
+libcrypto3-3.3.2-r1 license:
 Apache-2.0
 
 ```
@@ -505,16 +505,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.9.1-r2 description:
+libcurl-8.10.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.9.1-r2 webpage:
+libcurl-8.10.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.9.1-r2 installed size:
-628 KiB
+libcurl-8.10.1-r0 installed size:
+644 KiB
 
-libcurl-8.9.1-r2 license:
+libcurl-8.10.1-r0 license:
 curl
 
 ```
@@ -726,16 +726,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.2-r0 description:
+libssl3-3.3.2-r1 description:
 SSL shared libraries
 
-libssl3-3.3.2-r0 webpage:
+libssl3-3.3.2-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.2-r0 installed size:
+libssl3-3.3.2-r1 installed size:
 796 KiB
 
-libssl3-3.3.2-r0 license:
+libssl3-3.3.2-r1 license:
 Apache-2.0
 
 ```
@@ -998,16 +998,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.2-r0 description:
+openssl-3.3.2-r1 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.2-r0 webpage:
+openssl-3.3.2-r1 webpage:
 https://www.openssl.org/
 
-openssl-3.3.2-r0 installed size:
+openssl-3.3.2-r1 installed size:
 784 KiB
 
-openssl-3.3.2-r0 license:
+openssl-3.3.2-r1 license:
 Apache-2.0
 
 ```
@@ -1032,16 +1032,16 @@ BSD-3-Clause
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.6-r0 description:
+pyc-3.12.7-r0 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.6-r0 webpage:
+pyc-3.12.7-r0 webpage:
 https://www.python.org/
 
-pyc-3.12.6-r0 installed size:
+pyc-3.12.7-r0 installed size:
 4096 B
 
-pyc-3.12.6-r0 license:
+pyc-3.12.7-r0 license:
 PSF-2.0
 
 ```
@@ -1049,16 +1049,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.6-r0 description:
+python3-3.12.7-r0 description:
 High-level scripting language
 
-python3-3.12.6-r0 webpage:
+python3-3.12.7-r0 webpage:
 https://www.python.org/
 
-python3-3.12.6-r0 installed size:
+python3-3.12.7-r0 installed size:
 24 MiB
 
-python3-3.12.6-r0 license:
+python3-3.12.7-r0 license:
 PSF-2.0
 
 ```
@@ -1066,16 +1066,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.6-r0 description:
+python3-pyc-3.12.7-r0 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.6-r0 webpage:
+python3-pyc-3.12.7-r0 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.6-r0 installed size:
+python3-pyc-3.12.7-r0 installed size:
 4096 B
 
-python3-pyc-3.12.6-r0 license:
+python3-pyc-3.12.7-r0 license:
 PSF-2.0
 
 ```
@@ -1083,16 +1083,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.6-r0 description:
+python3-pycache-pyc0-3.12.7-r0 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.6-r0 webpage:
+python3-pycache-pyc0-3.12.7-r0 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.6-r0 installed size:
+python3-pycache-pyc0-3.12.7-r0 installed size:
 11 MiB
 
-python3-pycache-pyc0-3.12.6-r0 license:
+python3-pycache-pyc0-3.12.7-r0 license:
 PSF-2.0
 
 ```
