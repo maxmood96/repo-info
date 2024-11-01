@@ -2827,14 +2827,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-198.218
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-198.218.dsc' linux_5.4.0-198.218.dsc 7418 SHA512:903508be2fdb3804691b55ad99aa8bee18f34180458c3d1fbc3ffeac43f7b7a8ce447a1451fe801c91e70a2c123fd6292e6c5c20bfb502466157087305976f84
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-198.218.diff.gz' linux_5.4.0-198.218.diff.gz 9668192 SHA512:ae00083b0cb279148adf89e6396a2f6ee6c72e71d37e56ffbd16bc088c78dfeed79f42cc03cc186961b5789f8022eaebda7d1f99dd9fb9f1a5c9b55509f16c22
-```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 
@@ -3701,14 +3696,9 @@ Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 - `Expat`
 - `PSF-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-urllib3=1.25.8-2ubuntu0.3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.25.8-2ubuntu0.3.dsc' python-urllib3_1.25.8-2ubuntu0.3.dsc 2381 SHA512:93ca05489555d95244a335f75ab50cfec93b271d894ea9a64a8341ce0e10ec1e067a67e6ccc3090916caae07cd6af09b28bc909dad97b84ad4506c813b87dd61
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.25.8.orig.tar.gz' python-urllib3_1.25.8.orig.tar.gz 261077 SHA512:6e380d98d9a8b06534abfab4eb67b685a8311a091e31adcefe2b0ffc61d2b728229df067790b20358f2646e9054a546450c3351e4aa618f31d85573ea50ceaa2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.25.8-2ubuntu0.3.debian.tar.xz' python-urllib3_1.25.8-2ubuntu0.3.debian.tar.xz 15828 SHA512:4791c32e9d0dc0091cdaddf632b46e5e15b44aee03d7c58df0d9464b85459993ebccea6c50fb841da25dc9d467d9f18a1186a0aef77ed447e92c15553bbc5840
-```
 
 ### `dpkg` source package: `python2.7=2.7.18-1~20.04.4`
 

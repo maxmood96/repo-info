@@ -715,21 +715,13 @@ Licenses: (parsed from: `/usr/share/doc/libdav1d-dev/copyright`, `/usr/share/doc
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dav1d=1.4.3-1
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.4.3-1.dsc' dav1d_1.4.3-1.dsc 2287 SHA256:26e5cfb9996484bf222a04038658c8edd9c435d86ef4afc19e317333da70177d
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.4.3.orig.tar.xz' dav1d_1.4.3.orig.tar.xz 970088 SHA256:42fe524bcc82ea3a830057178faace22923a79bad3d819a4962d8cfc54c36f19
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.4.3.orig.tar.xz.asc' dav1d_1.4.3.orig.tar.xz.asc 195 SHA256:f3356e8e3d1f8bb8150fe7f2ac2c1d1e4362eaecfbde936536544717b683abc4
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.4.3-1.debian.tar.xz' dav1d_1.4.3-1.debian.tar.xz 8428 SHA256:5949571adea1e9559ab7e058abbcdf2164df2c0aa8f4e8fa608c6f0c5f892cb8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dav1d/1.4.3-1/
 
-- https://sources.debian.net/src/dav1d/1.4.3-1/ (for browsing the source)
-- https://sources.debian.net/src/dav1d/1.4.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dav1d/1.4.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db-defaults=5.3.3`
 
@@ -1523,21 +1515,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-glib-2.0/copyright`, `/usr/share/
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.82.1-1
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.1-1.dsc' glib2.0_2.82.1-1.dsc 4895 SHA256:3ec4fc5f8cf0d84298c457337ae48f959a572544d1405df56af3944ec6923cb8
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.1.orig-unicode-data.tar.xz' glib2.0_2.82.1.orig-unicode-data.tar.xz 262908 SHA256:9bf66a7e9f2f18cbd7a72f561dc1f997990b53243435008777109c823cd7e1ea
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.1.orig.tar.xz' glib2.0_2.82.1.orig.tar.xz 5554132 SHA256:478634440bf52ee4ec4428d558787398c0be6b043c521beb308334b3db4489a6
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.1-1.debian.tar.xz' glib2.0_2.82.1-1.debian.tar.xz 133856 SHA256:eec8688cd7d7f1a434cb84f3a88b5136131b1bf4bf7fcf4f3e8d767c1917f35e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.82.1-1/
 
-- https://sources.debian.net/src/glib2.0/2.82.1-1/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.82.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.82.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.40-3`
 
@@ -2024,21 +2008,13 @@ Licenses: (parsed from: `/usr/share/doc/libimath-3-1-29t64/copyright`, `/usr/sha
 
 - `imath`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris imath=3.1.11-2
-'http://deb.debian.org/debian/pool/main/i/imath/imath_3.1.11-2.dsc' imath_3.1.11-2.dsc 2721 SHA256:553646f1b219d774cef595a614befb63da83ceeb5ef69b1a952dfd97b32e0f5c
-'http://deb.debian.org/debian/pool/main/i/imath/imath_3.1.11.orig.tar.gz' imath_3.1.11.orig.tar.gz 596585 SHA256:9057849585e49b8b85abe7cc1e76e22963b01bfdc3b6d83eac90c499cd760063
-'http://deb.debian.org/debian/pool/main/i/imath/imath_3.1.11.orig.tar.gz.asc' imath_3.1.11.orig.tar.gz.asc 287 SHA256:a2c4ac5151789903ca8ab3093a2798491463ccf2abfd003a20f96453e505dd5f
-'http://deb.debian.org/debian/pool/main/i/imath/imath_3.1.11-2.debian.tar.xz' imath_3.1.11-2.debian.tar.xz 9760 SHA256:a05989958c0dc2aec5cfd21e1f9b632017443794c41528d1c89366951eafc361
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/imath/3.1.11-2/
 
-- https://sources.debian.net/src/imath/3.1.11-2/ (for browsing the source)
-- https://sources.debian.net/src/imath/3.1.11-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/imath/3.1.11-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `init-system-helpers=1.67`
 
@@ -4317,20 +4293,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`, `/usr/share/do
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.63.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.63.0-1.dsc' nghttp2_1.63.0-1.dsc 2531 SHA256:3863081087b0b6502db7156f7fff1ddd071a4e9d32ad3f2db48604ab4bfe2871
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.63.0.orig.tar.gz' nghttp2_1.63.0.orig.tar.gz 1070155 SHA256:f3da0627bee7a6a60f5a4eb6de8d17d25e99f50f87b0fc0c20676c682bf31098
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.63.0-1.debian.tar.xz' nghttp2_1.63.0-1.debian.tar.xz 38876 SHA256:1ec86e44c0e2bdf1ac3b03995e2d358777d726c94837a5c81c718b75b9505dfe
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.63.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.63.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.63.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.63.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nghttp3=1.4.0-1`
 

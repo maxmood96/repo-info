@@ -2173,20 +2173,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.63.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.63.0-1.dsc' nghttp2_1.63.0-1.dsc 2531 SHA256:3863081087b0b6502db7156f7fff1ddd071a4e9d32ad3f2db48604ab4bfe2871
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.63.0.orig.tar.gz' nghttp2_1.63.0.orig.tar.gz 1070155 SHA256:f3da0627bee7a6a60f5a4eb6de8d17d25e99f50f87b0fc0c20676c682bf31098
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.63.0-1.debian.tar.xz' nghttp2_1.63.0-1.debian.tar.xz 38876 SHA256:1ec86e44c0e2bdf1ac3b03995e2d358777d726c94837a5c81c718b75b9505dfe
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.63.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.63.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.63.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.63.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nghttp3=1.4.0-1`
 

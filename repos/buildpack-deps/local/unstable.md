@@ -208,20 +208,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:4.0.1-1
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.0.1-1.dsc' audit_4.0.1-1.dsc 2408 SHA256:a99597cde67f951b29b1559796e4f44f7692ce71235aa431ac99254ded7a0a83
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.0.1.orig.tar.gz' audit_4.0.1.orig.tar.gz 1194961 SHA256:3890319b8536446d70801e20a5790c63e879f99be83875a858460641c6c7aff4
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.0.1-1.debian.tar.xz' audit_4.0.1-1.debian.tar.xz 19796 SHA256:2e2217a8227a8021fa5b2376bb779ad0006706ae2ed9e92dbb22ae36c0345a75
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/audit/1:4.0.1-1/
 
-- https://sources.debian.net/src/audit/1:4.0.1-1/ (for browsing the source)
-- https://sources.debian.net/src/audit/1:4.0.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/audit/1:4.0.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `autoconf=2.72-3`
 
@@ -2766,20 +2759,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libice=2:1.0.10-1
-'http://deb.debian.org/debian/pool/main/libi/libice/libice_1.0.10-1.dsc' libice_1.0.10-1.dsc 2049 SHA256:adb7b4e250db838a476a44b5a941c8f935ac2b20858186f09228cd3e0696034d
-'http://deb.debian.org/debian/pool/main/libi/libice/libice_1.0.10.orig.tar.gz' libice_1.0.10.orig.tar.gz 481960 SHA256:1116bc64c772fd127a0d0c0ffa2833479905e3d3d8197740b3abd5f292f22d2d
-'http://deb.debian.org/debian/pool/main/libi/libice/libice_1.0.10-1.diff.gz' libice_1.0.10-1.diff.gz 11349 SHA256:d186b3877416a7e80f1923fe2fc736d576e585a41450bcf4cd5e74f9dd099362
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libice/2:1.0.10-1/
 
-- https://sources.debian.net/src/libice/2:1.0.10-1/ (for browsing the source)
-- https://sources.debian.net/src/libice/2:1.0.10-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libice/2:1.0.10-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libidn2=2.3.7-2`
 
@@ -3262,20 +3248,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsm=2:1.2.3-1
-'http://deb.debian.org/debian/pool/main/libs/libsm/libsm_1.2.3-1.dsc' libsm_1.2.3-1.dsc 2063 SHA256:5488f8de81d53c32cbb5f062b6a6f262cd067283b8082041392dc60f0d04002c
-'http://deb.debian.org/debian/pool/main/libs/libsm/libsm_1.2.3.orig.tar.gz' libsm_1.2.3.orig.tar.gz 445362 SHA256:1e92408417cb6c6c477a8a6104291001a40b3bb56a4a60608fdd9cd2c5a0f320
-'http://deb.debian.org/debian/pool/main/libs/libsm/libsm_1.2.3-1.diff.gz' libsm_1.2.3-1.diff.gz 8929 SHA256:7eb99ab50b19f26d1470f89e4b46891f6a697cb1794a58ed0d1376cceaf1b6a9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsm/2:1.2.3-1/
 
-- https://sources.debian.net/src/libsm/2:1.2.3-1/ (for browsing the source)
-- https://sources.debian.net/src/libsm/2:1.2.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsm/2:1.2.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libssh2=1.11.1-1`
 
@@ -4104,21 +4083,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=6.8.1-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.8.1-1.dsc' mercurial_6.8.1-1.dsc 2806 SHA256:3e77364658efbc36fa8e555582ab409553812ceb3b0002920fab369ecf0c0585
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.8.1.orig.tar.gz' mercurial_6.8.1.orig.tar.gz 8324749 SHA256:030e8a7a6d590e4eaeb403ee25675615cd80d236f3ab8a0b56dcc84181158b05
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.8.1.orig.tar.gz.asc' mercurial_6.8.1.orig.tar.gz.asc 833 SHA256:e068dab37059985a5ce82a577e6f53f89e881c8aeb7c837e67aa37b771d1a3fb
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.8.1-1.debian.tar.xz' mercurial_6.8.1-1.debian.tar.xz 56376 SHA256:1cddd2e1487a33007b257a9728b74ca823c2d252f9491c2f17209c7aaa61b928
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/6.8.1-1/
 
-- https://sources.debian.net/src/mercurial/6.8.1-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/6.8.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/6.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpclib3=1.3.1-1`
 
@@ -4308,20 +4279,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`, `/usr/share/do
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.63.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.63.0-1.dsc' nghttp2_1.63.0-1.dsc 2531 SHA256:3863081087b0b6502db7156f7fff1ddd071a4e9d32ad3f2db48604ab4bfe2871
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.63.0.orig.tar.gz' nghttp2_1.63.0.orig.tar.gz 1070155 SHA256:f3da0627bee7a6a60f5a4eb6de8d17d25e99f50f87b0fc0c20676c682bf31098
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.63.0-1.debian.tar.xz' nghttp2_1.63.0-1.debian.tar.xz 38876 SHA256:1ec86e44c0e2bdf1ac3b03995e2d358777d726c94837a5c81c718b75b9505dfe
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.63.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.63.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.63.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.63.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nghttp3=1.4.0-1`
 

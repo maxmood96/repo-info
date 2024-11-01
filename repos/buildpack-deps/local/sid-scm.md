@@ -183,20 +183,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:4.0.1-1
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.0.1-1.dsc' audit_4.0.1-1.dsc 2408 SHA256:a99597cde67f951b29b1559796e4f44f7692ce71235aa431ac99254ded7a0a83
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.0.1.orig.tar.gz' audit_4.0.1.orig.tar.gz 1194961 SHA256:3890319b8536446d70801e20a5790c63e879f99be83875a858460641c6c7aff4
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.0.1-1.debian.tar.xz' audit_4.0.1-1.debian.tar.xz 19796 SHA256:2e2217a8227a8021fa5b2376bb779ad0006706ae2ed9e92dbb22ae36c0345a75
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/audit/1:4.0.1-1/
 
-- https://sources.debian.net/src/audit/1:4.0.1-1/ (for browsing the source)
-- https://sources.debian.net/src/audit/1:4.0.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/audit/1:4.0.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-files=13.5`
 
@@ -2064,21 +2057,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=6.8.1-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.8.1-1.dsc' mercurial_6.8.1-1.dsc 2806 SHA256:3e77364658efbc36fa8e555582ab409553812ceb3b0002920fab369ecf0c0585
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.8.1.orig.tar.gz' mercurial_6.8.1.orig.tar.gz 8324749 SHA256:030e8a7a6d590e4eaeb403ee25675615cd80d236f3ab8a0b56dcc84181158b05
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.8.1.orig.tar.gz.asc' mercurial_6.8.1.orig.tar.gz.asc 833 SHA256:e068dab37059985a5ce82a577e6f53f89e881c8aeb7c837e67aa37b771d1a3fb
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.8.1-1.debian.tar.xz' mercurial_6.8.1-1.debian.tar.xz 56376 SHA256:1cddd2e1487a33007b257a9728b74ca823c2d252f9491c2f17209c7aaa61b928
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/6.8.1-1/
 
-- https://sources.debian.net/src/mercurial/6.8.1-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/6.8.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/6.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.5-2`
 
@@ -2187,20 +2172,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 - `MIT`
 - `all-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp2=1.63.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.63.0-1.dsc' nghttp2_1.63.0-1.dsc 2531 SHA256:3863081087b0b6502db7156f7fff1ddd071a4e9d32ad3f2db48604ab4bfe2871
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.63.0.orig.tar.gz' nghttp2_1.63.0.orig.tar.gz 1070155 SHA256:f3da0627bee7a6a60f5a4eb6de8d17d25e99f50f87b0fc0c20676c682bf31098
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.63.0-1.debian.tar.xz' nghttp2_1.63.0-1.debian.tar.xz 38876 SHA256:1ec86e44c0e2bdf1ac3b03995e2d358777d726c94837a5c81c718b75b9505dfe
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp2/1.63.0-1/
 
-- https://sources.debian.net/src/nghttp2/1.63.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp2/1.63.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp2/1.63.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nghttp3=1.4.0-1`
 
