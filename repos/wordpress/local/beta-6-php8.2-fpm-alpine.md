@@ -1,9 +1,9 @@
-# `wordpress:beta-6.7-RC1-fpm-alpine`
+# `wordpress:beta-6.7-RC2-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:680e72ae71f7a88f16144c9364588337ee029f4b2ed1b22d3cef7a8beba7b122`
-- Created: `2024-10-22T19:03:11Z`
+- Image ID: `sha256:51f6275b1ea8f139cdbf5e33fd51ec732c3db16defcf20a9a4f5b1d6d50e7cc0`
+- Created: `2024-10-29T19:03:11Z`
 - Virtual Size: ~ 279.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
