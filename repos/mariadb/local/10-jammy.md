@@ -1547,13 +1547,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mariadb=1:10.11.9+maria~ubu2204
-'http://archive.mariadb.org/mariadb-10.11.9/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.9%2bmaria%7eubu2204.dsc' mariadb_10.11.9+maria~ubu2204.dsc 4298 SHA256:875a88af5f00c12bfc19f2b26a7900dcdee7701632fbd61137e826cc89faa75e
-'http://archive.mariadb.org/mariadb-10.11.9/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.9%2bmaria%7eubu2204.tar.xz' mariadb_10.11.9+maria~ubu2204.tar.xz 62897164 SHA256:9506c8ba94f747a4a6fed72afaef9ad0b35ca488bf33749b1dc1dbdd0577d26c
-```
 
 ### `dpkg` source package: `mawk=1.3.4.20200120-3`
 
