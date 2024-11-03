@@ -1,17 +1,17 @@
-# `fedora:40`
+# `fedora:41`
 
 ## Docker Metadata
 
-- Image ID: `sha256:eca85b75dc196772f8946636c3d4a970a6bb94cddc2116fdfa0558d898da3688`
-- Created: `2024-09-16T08:10:54Z`
-- Virtual Size: ~ 221.93 Mb  
+- Image ID: `sha256:aa6787b90fe61e801687142277458584287469c9596c91766a43fa9f1e524c22`
+- Created: `2024-10-31T11:44:19Z`
+- Virtual Size: ~ 158.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DISTTAG=f40container`
-  - `FGC=f40`
-  - `FBR=f40`
+  - `DISTTAG=f41container`
+  - `FGC=f41`
+  - `FBR=f41`
 - Labels:
   - `maintainer=Clement Verna <cverna@fedoraproject.org>`
