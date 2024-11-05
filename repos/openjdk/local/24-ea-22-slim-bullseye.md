@@ -1,10 +1,10 @@
-# `openjdk:24-ea-21-jdk-slim-bullseye`
+# `openjdk:24-ea-22-jdk-slim-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b529a78c1a0a6c3cff29810b3b7c700717d2efd37d3b5ee8b647b8a9d0ee1c33`
-- Created: `2024-10-25T00:48:11Z`
-- Virtual Size: ~ 447.37 Mb  
+- Image ID: `sha256:2db9509506ed50f98e3b34171223f32d7db91290815db51228aeb41bc31c2ee1`
+- Created: `2024-11-01T00:48:11Z`
+- Virtual Size: ~ 446.75 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-24/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-24`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=24-ea+21`
+  - `JAVA_VERSION=24-ea+22`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1510,7 +1510,6 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libssl1.1:amd64=1.1.1w-0+deb11u1`
-- `openssl=1.1.1w-0+deb11u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1531,6 +1530,32 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openssl/1.1.1w-0+deb11u1/ (for browsing the source)
 - https://sources.debian.net/src/openssl/1.1.1w-0+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
+
+### `dpkg` source package: `openssl=1.1.1w-0+deb11u2`
+
+Binary Packages:
+
+- `openssl=1.1.1w-0+deb11u2`
+
+**WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
+If source is available (seen below), check the contents of `debian/copyright` within it.
+
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1w-0+deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u2.dsc' openssl_1.1.1w-0+deb11u2.dsc 2692 SHA256:b9cb4be37fb38d0a670cb734893e71c5df9edd03ffa8f638d4b2975cccf64033
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz' openssl_1.1.1w.orig.tar.gz 9893384 SHA256:cf3098950cb4d853ad95c0841f1f9c6d3dc102dccfcacd521d93925208b76ac8
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w.orig.tar.gz.asc' openssl_1.1.1w.orig.tar.gz.asc 833 SHA256:5e5c3694cda755231c0438ac3c96af00d7510abd7b916d79c51bb979567040db
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssl/openssl_1.1.1w-0%2bdeb11u2.debian.tar.xz' openssl_1.1.1w-0+deb11u2.debian.tar.xz 101116 SHA256:d9a98897c8b9b2cefa79c58cd01af4559a516b0f682ecfbfbb1132f450584458
+```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/openssl/1.1.1w-0+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssl/1.1.1w-0+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.23.22-1`
 
