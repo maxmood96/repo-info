@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e550012fd6d988fed859953aaa562dbcd2acecad2983588cc136e6a8c598f243`
+- Image ID: `sha256:810e19f307d60a5d3c6f2ca3cd6c08a9c80062fe38248f93ee6a840b9325f517`
 - Created: `2024-10-16T23:15:53Z`
-- Virtual Size: ~ 372.42 Mb  
+- Virtual Size: ~ 372.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -225,11 +225,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-5build1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-5build1.debian.tar.bz2' bzip2_1.0.8-5build1.debian.tar.bz2 26870 SHA512:e030c257c3458d780fd0ffc6f328efd69d0e875e81acd7441a7c6651194ebded61017c96aad7c99061f93d50dfc33056abe98c9a599abc900f49d51c4a1eed6f
 ```
 
-### `dpkg` source package: `ca-certificates=20230311ubuntu0.22.04.1`
+### `dpkg` source package: `ca-certificates=20240203~22.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20230311ubuntu0.22.04.1`
+- `ca-certificates=20240203~22.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -237,9 +237,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20240203~22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20240203%7e22.04.1.dsc' ca-certificates_20240203~22.04.1.dsc 1850 SHA512:af1c4a4a202eead02abba4808ce5e7b731f7e2db6b194e74ff9f5331b515213490ba63181f7ffc59f01f5bd13b7fe80519694c7ff21502cd7e2e095075896696
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20240203%7e22.04.1.tar.xz' ca-certificates_20240203~22.04.1.tar.xz 263132 SHA512:64e97c5b258dfede258dd9b447d2a1f5a43db0e70309bb4e0259b8ed9d103e1a751fb563bb4902460667385d38325945e806726aa6db8876920dff670034f3f1
+```
 
 ### `dpkg` source package: `cdebconf=0.261ubuntu1`
 
