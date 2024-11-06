@@ -2733,20 +2733,13 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.18.2-2
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.18.2-2.dsc' libheif_1.18.2-2.dsc 3621 SHA256:4e6f5e96da5428e746d4ba7da6ef76efb26dbe4eff51a2957e809238f8daaccb
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.18.2.orig.tar.gz' libheif_1.18.2.orig.tar.gz 1525096 SHA256:c4002a622bec9f519f29d84bfdc6024e33fd67953a5fb4dc2c2f11f67d5e45bf
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.18.2-2.debian.tar.xz' libheif_1.18.2-2.debian.tar.xz 12080 SHA256:3b4f8599ba096c9f226a54060f1d3c62ffe1fa9dbde16b7602d8fbdaf76c8b74
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libheif/1.18.2-2/
 
-- https://sources.debian.net/src/libheif/1.18.2-2/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.18.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.18.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.0.10-1`
 
@@ -3392,20 +3385,13 @@ Licenses: (parsed from: `/usr/share/doc/libltdl-dev/copyright`, `/usr/share/doc/
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtool=2.4.7-7
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.7-7.dsc' libtool_2.4.7-7.dsc 2257 SHA256:c6045c55f34fcd3b7a4194059d498085d4a6d0bc4c6a0cb3825fb3859461dc7a
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.7.orig.tar.xz' libtool_2.4.7.orig.tar.xz 1026028 SHA256:dd637e270439b208907ceead3f163470ed2ce5723ef97ffbda6463c64b57128a
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.7-7.debian.tar.xz' libtool_2.4.7-7.debian.tar.xz 40916 SHA256:217a33c2f4474f4f23c69fa0bc694f9d380885003f02785ed69248b0dfb1d449
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtool/2.4.7-7/
 
-- https://sources.debian.net/src/libtool/2.4.7-7/ (for browsing the source)
-- https://sources.debian.net/src/libtool/2.4.7-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtool/2.4.7-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libunistring=1.2-1`
 
