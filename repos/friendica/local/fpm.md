@@ -1883,20 +1883,13 @@ Licenses: (parsed from: `/usr/share/doc/libheif1/copyright`)
 - `LGPL-3+`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.11.0-1+deb11u1
-'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.11.0-1%2bdeb11u1.dsc' libheif_1.11.0-1+deb11u1.dsc 2315 SHA256:6964af49fd534c2f9ab58887e9e0b1ea75fc475e834b1e4fb3d119c6d73560ed
-'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.11.0.orig.tar.gz' libheif_1.11.0.orig.tar.gz 1680855 SHA256:c550938f56ff6dac83702251a143f87cb3a6c71a50d8723955290832d9960913
-'http://deb.debian.org/debian-security/pool/updates/main/libh/libheif/libheif_1.11.0-1%2bdeb11u1.debian.tar.xz' libheif_1.11.0-1+deb11u1.debian.tar.xz 9032 SHA256:efec96b88fe05fbc59e75dadc3709180808e96dbcb5374e7992870d819808b19
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libheif/1.11.0-1+deb11u1/
 
-- https://sources.debian.net/src/libheif/1.11.0-1+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.11.0-1+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.11.0-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libidn2=2.3.0-5`
 
