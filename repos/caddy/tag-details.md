@@ -13922,75 +13922,165 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 
 ## `caddy:2.9`
 
-**does not exist** (yet?)
+```console
+$ docker pull caddy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `caddy:2.9-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull caddy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `caddy:2.9-builder`
 
-**does not exist** (yet?)
+```console
+$ docker pull caddy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `caddy:2.9-builder-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull caddy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `caddy:2.9-builder-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull caddy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `caddy:2.9-builder-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull caddy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `caddy:2.9-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull caddy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `caddy:2.9-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull caddy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `caddy:2.9-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull caddy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `caddy:2.9.0-beta.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull caddy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `caddy:2.9.0-beta.3-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull caddy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `caddy:2.9.0-beta.3-builder`
 
-**does not exist** (yet?)
+```console
+$ docker pull caddy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `caddy:2.9.0-beta.3-builder-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull caddy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `caddy:2.9.0-beta.3-builder-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull caddy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `caddy:2.9.0-beta.3-builder-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull caddy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `caddy:2.9.0-beta.3-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull caddy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `caddy:2.9.0-beta.3-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull caddy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `caddy:2.9.0-beta.3-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull caddy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `caddy:alpine`
 
