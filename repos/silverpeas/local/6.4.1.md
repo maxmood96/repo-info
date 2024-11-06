@@ -5282,14 +5282,9 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`)
 - `ZLIB`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjpeg2=2.4.0-6ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjpeg2/openjpeg2_2.4.0-6ubuntu0.1.dsc' openjpeg2_2.4.0-6ubuntu0.1.dsc 2738 SHA512:23e7192fa6fb7db5e499d635b76ba941c6e12abdec502e38b610c35b1f04219363bb289a3bb0f4251b94933d2a1ae8fd1baaad9b7a9bc0e859253224c11d2cc1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjpeg2/openjpeg2_2.4.0.orig.tar.xz' openjpeg2_2.4.0.orig.tar.xz 1396964 SHA512:717ead13e0805d52138bedef1a77d51b676c5a2b882ca7f2206b665b3ba5ea2b435fd81c09780e6c1f14400a49c82fcd1eb2cbea1e1d207b541e98797ecd684f
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjpeg2/openjpeg2_2.4.0-6ubuntu0.1.debian.tar.xz' openjpeg2_2.4.0-6ubuntu0.1.debian.tar.xz 22060 SHA512:68fd0bb87e131036e5263f81d2d12faf3507c7776faf99f3703b270cdc7d18cc7f8b27c6ed5a06948dbbe1084457badee8b1c9d745a3c1ac2f1a04ca6a906be4
-```
 
 ### `dpkg` source package: `openldap=2.5.18+dfsg-0ubuntu0.22.04.2`
 
