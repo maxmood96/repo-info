@@ -1537,7 +1537,12 @@ $ docker pull registry@sha256:85772e4077bc98a05e7e47b5757faf18327329b216ba4be88a
 
 ## `registry:3.0.0-rc.1`
 
-**does not exist** (yet?)
+```console
+$ docker pull registry@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `registry:latest`
 
