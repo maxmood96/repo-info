@@ -2,11 +2,11 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:90a8d8b63cdcdc7dec1bf56c1ff9b7765d5032e2f50abb1a79e12a17583bfbbb`
+- Image ID: `sha256:080437cd190c71c8ee686a5b6177a8f5a2cb2a34121dc8098a95b1a8b9484bb7`
 - Created: `2024-11-05T06:03:16Z`
-- Virtual Size: ~ 193.19 Mb  
+- Virtual Size: ~ 194.10 Mb  
   (total size of all layers on-disk)
-- Arch: `linux`/`386`
+- Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
@@ -24,7 +24,7 @@
 
 Binary Packages:
 
-- `libacl1:i386=2.2.53-10`
+- `libacl1:amd64=2.2.53-10`
 
 Licenses: (parsed from: `/usr/share/doc/libacl1/copyright`)
 
@@ -77,8 +77,8 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `apt:i386=2.2.4`
-- `libapt-pkg6.0:i386=2.2.4`
+- `apt=2.2.4`
+- `libapt-pkg6.0:amd64=2.2.4`
 
 Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-pkg6.0/copyright`)
 
@@ -103,7 +103,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libattr1:i386=1:2.4.48-6`
+- `libattr1:amd64=1:2.4.48-6`
 
 Licenses: (parsed from: `/usr/share/doc/libattr1/copyright`)
 
@@ -133,7 +133,7 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libaudit-common=1:3.0-2`
-- `libaudit1:i386=1:3.0-2`
+- `libaudit1:amd64=1:3.0-2`
 
 Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/doc/libaudit1/copyright`)
 
@@ -160,7 +160,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `base-files:i386=11.1+deb11u11`
+- `base-files=11.1+deb11u11`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
@@ -184,7 +184,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `base-passwd:i386=3.5.51`
+- `base-passwd=3.5.51`
 
 Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 
@@ -209,7 +209,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `bash:i386=5.1-2+deb11u1`
+- `bash=5.1-2+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 
@@ -234,8 +234,8 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `bzip2:i386=1.0.8-4`
-- `libbz2-1.0:i386=1.0.8-4`
+- `bzip2=1.0.8-4`
+- `libbz2-1.0:amd64=1.0.8-4`
 
 Licenses: (parsed from: `/usr/share/doc/bzip2/copyright`, `/usr/share/doc/libbz2-1.0/copyright`)
 
@@ -287,7 +287,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libdebconfclient0:i386=0.260`
+- `libdebconfclient0:amd64=0.260`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -311,7 +311,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `coreutils:i386=8.32-4`
+- `coreutils=8.32-4+b1`
 
 Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 
@@ -337,7 +337,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `dash:i386=0.5.11+git20200708+dd9ef66-5`
+- `dash=0.5.11+git20200708+dd9ef66-5`
 
 Licenses: (parsed from: `/usr/share/doc/dash/copyright`)
 
@@ -369,7 +369,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libdb5.3:i386=5.3.28+dfsg1-0.8`
+- `libdb5.3:amd64=5.3.28+dfsg1-0.8`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -442,7 +442,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `debianutils:i386=4.11.2`
+- `debianutils=4.11.2`
 
 Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 
@@ -466,7 +466,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `diffutils:i386=1:3.7-5`
+- `diffutils=1:3.7-5`
 
 Licenses: (parsed from: `/usr/share/doc/diffutils/copyright`)
 
@@ -493,7 +493,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `dpkg:i386=1.20.13`
+- `dpkg=1.20.13`
 
 Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 
@@ -521,11 +521,11 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `e2fsprogs:i386=1.46.2-2+deb11u1`
-- `libcom-err2:i386=1.46.2-2+deb11u1`
-- `libext2fs2:i386=1.46.2-2+deb11u1`
-- `libss2:i386=1.46.2-2+deb11u1`
-- `logsave:i386=1.46.2-2+deb11u1`
+- `e2fsprogs=1.46.2-2+deb11u1`
+- `libcom-err2:amd64=1.46.2-2+deb11u1`
+- `libext2fs2:amd64=1.46.2-2+deb11u1`
+- `libss2:amd64=1.46.2-2+deb11u1`
+- `logsave=1.46.2-2+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/e2fsprogs/copyright`, `/usr/share/doc/libcom-err2/copyright`, `/usr/share/doc/libext2fs2/copyright`, `/usr/share/doc/libss2/copyright`, `/usr/share/doc/logsave/copyright`)
 
@@ -552,7 +552,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `findutils:i386=4.8.0-1`
+- `findutils=4.8.0-1`
 
 Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 
@@ -579,9 +579,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `gcc-10-base:i386=10.2.1-6`
-- `libgcc-s1:i386=10.2.1-6`
-- `libstdc++6:i386=10.2.1-6`
+- `gcc-10-base:amd64=10.2.1-6`
+- `libgcc-s1:amd64=10.2.1-6`
+- `libstdc++6:amd64=10.2.1-6`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-10-base/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -611,7 +611,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `gcc-9-base:i386=9.3.0-22`
+- `gcc-9-base:amd64=9.3.0-22`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-9-base/copyright`)
 
@@ -642,10 +642,10 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libc-bin:i386=2.31-13+deb11u11`
-- `libc-dev-bin:i386=2.31-13+deb11u11`
-- `libc6:i386=2.31-13+deb11u11`
-- `libc6-dev:i386=2.31-13+deb11u11`
+- `libc-bin=2.31-13+deb11u11`
+- `libc-dev-bin=2.31-13+deb11u11`
+- `libc6:amd64=2.31-13+deb11u11`
+- `libc6-dev:amd64=2.31-13+deb11u11`
 
 Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
 
@@ -671,9 +671,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libgmp-dev:i386=2:6.2.1+dfsg-1+deb11u1`
-- `libgmp10:i386=2:6.2.1+dfsg-1+deb11u1`
-- `libgmpxx4ldbl:i386=2:6.2.1+dfsg-1+deb11u1`
+- `libgmp-dev:amd64=2:6.2.1+dfsg-1+deb11u1`
+- `libgmp10:amd64=2:6.2.1+dfsg-1+deb11u1`
+- `libgmpxx4ldbl:amd64=2:6.2.1+dfsg-1+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libgmp-dev/copyright`, `/usr/share/doc/libgmp10/copyright`, `/usr/share/doc/libgmpxx4ldbl/copyright`)
 
@@ -701,7 +701,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `gpgv:i386=2.2.27-2+deb11u2`
+- `gpgv=2.2.27-2+deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
@@ -738,7 +738,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libgnutls30:i386=3.7.1-5+deb11u6`
+- `libgnutls30:amd64=3.7.1-5+deb11u6`
 
 Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 
@@ -776,7 +776,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `grep:i386=3.6-1+deb11u1`
+- `grep=3.6-1+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/grep/copyright`)
 
@@ -803,7 +803,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `gzip:i386=1.10-4+deb11u1`
+- `gzip=1.10-4+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 
@@ -832,7 +832,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `hostname:i386=3.23`
+- `hostname=3.23`
 
 Licenses: (parsed from: `/usr/share/doc/hostname/copyright`)
 
@@ -882,7 +882,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libkeyutils1:i386=1.6.1-2`
+- `libkeyutils1:amd64=1.6.1-2`
 
 Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 
@@ -910,10 +910,10 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libgssapi-krb5-2:i386=1.18.3-6+deb11u5`
-- `libk5crypto3:i386=1.18.3-6+deb11u5`
-- `libkrb5-3:i386=1.18.3-6+deb11u5`
-- `libkrb5support0:i386=1.18.3-6+deb11u5`
+- `libgssapi-krb5-2:amd64=1.18.3-6+deb11u5`
+- `libk5crypto3:amd64=1.18.3-6+deb11u5`
+- `libkrb5-3:amd64=1.18.3-6+deb11u5`
+- `libkrb5support0:amd64=1.18.3-6+deb11u5`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -939,7 +939,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libcap-ng0:i386=0.7.9-2.2+b1`
+- `libcap-ng0:amd64=0.7.9-2.2+b1`
 
 Licenses: (parsed from: `/usr/share/doc/libcap-ng0/copyright`)
 
@@ -966,8 +966,8 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libffi-dev:i386=3.3-6`
-- `libffi7:i386=3.3-6`
+- `libffi-dev:amd64=3.3-6`
+- `libffi7:amd64=3.3-6`
 
 Licenses: (parsed from: `/usr/share/doc/libffi-dev/copyright`, `/usr/share/doc/libffi7/copyright`)
 
@@ -992,7 +992,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libgcrypt20:i386=1.8.7-6`
+- `libgcrypt20:amd64=1.8.7-6`
 
 Licenses: (parsed from: `/usr/share/doc/libgcrypt20/copyright`)
 
@@ -1019,7 +1019,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libgpg-error0:i386=1.38-2`
+- `libgpg-error0:amd64=1.38-2`
 
 Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 
@@ -1050,7 +1050,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libidn2-0:i386=2.3.0-5`
+- `libidn2-0:amd64=2.3.0-5`
 
 Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 
@@ -1081,8 +1081,8 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libnsl-dev:i386=1.3.0-2`
-- `libnsl2:i386=1.3.0-2`
+- `libnsl-dev:amd64=1.3.0-2`
+- `libnsl2:amd64=1.3.0-2`
 
 Licenses: (parsed from: `/usr/share/doc/libnsl-dev/copyright`, `/usr/share/doc/libnsl2/copyright`)
 
@@ -1120,7 +1120,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libseccomp2:i386=2.5.1-1+deb11u1`
+- `libseccomp2:amd64=2.5.1-1+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
@@ -1146,7 +1146,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libselinux1:i386=3.1-3`
+- `libselinux1:amd64=3.1-3`
 
 Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 
@@ -1173,7 +1173,7 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libsemanage-common=3.1-1`
-- `libsemanage1:i386=3.1-1+b2`
+- `libsemanage1:amd64=3.1-1+b2`
 
 Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/share/doc/libsemanage1/copyright`)
 
@@ -1199,7 +1199,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libsepol1:i386=3.1-1+deb11u1`
+- `libsepol1:amd64=3.1-1+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libsepol1/copyright`)
 
@@ -1225,7 +1225,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libtasn1-6:i386=4.16.0-2+deb11u1`
+- `libtasn1-6:amd64=4.16.0-2+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 
@@ -1255,8 +1255,8 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libtirpc-common=1.3.1-1+deb11u1`
-- `libtirpc-dev:i386=1.3.1-1+deb11u1`
-- `libtirpc3:i386=1.3.1-1+deb11u1`
+- `libtirpc-dev:amd64=1.3.1-1+deb11u1`
+- `libtirpc3:amd64=1.3.1-1+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libtirpc-common/copyright`, `/usr/share/doc/libtirpc-dev/copyright`, `/usr/share/doc/libtirpc3/copyright`)
 
@@ -1288,7 +1288,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libunistring2:i386=0.9.10-4`
+- `libunistring2:amd64=0.9.10-4`
 
 Licenses: (parsed from: `/usr/share/doc/libunistring2/copyright`)
 
@@ -1324,8 +1324,8 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libcrypt-dev:i386=1:4.4.18-4`
-- `libcrypt1:i386=1:4.4.18-4`
+- `libcrypt-dev:amd64=1:4.4.18-4`
+- `libcrypt1:amd64=1:4.4.18-4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1350,8 +1350,8 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libyaml-0-2:i386=0.2.2-1`
-- `libyaml-dev:i386=0.2.2-1`
+- `libyaml-0-2:amd64=0.2.2-1`
+- `libyaml-dev:amd64=0.2.2-1`
 
 Licenses: (parsed from: `/usr/share/doc/libyaml-0-2/copyright`, `/usr/share/doc/libyaml-dev/copyright`)
 
@@ -1377,7 +1377,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libzstd1:i386=1.4.8+dfsg-2.1`
+- `libzstd1:amd64=1.4.8+dfsg-2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 
@@ -1405,7 +1405,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `linux-libc-dev:i386=5.10.226-1`
+- `linux-libc-dev:amd64=5.10.226-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1462,7 +1462,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `liblz4-1:i386=1.9.3-2`
+- `liblz4-1:amd64=1.9.3-2`
 
 Licenses: (parsed from: `/usr/share/doc/liblz4-1/copyright`)
 
@@ -1489,7 +1489,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `mawk:i386=1.3.4.20200120-2`
+- `mawk=1.3.4.20200120-2`
 
 Licenses: (parsed from: `/usr/share/doc/mawk/copyright`)
 
@@ -1514,11 +1514,11 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libncurses6:i386=6.2+20201114-2+deb11u2`
-- `libncursesw6:i386=6.2+20201114-2+deb11u2`
-- `libtinfo6:i386=6.2+20201114-2+deb11u2`
+- `libncurses6:amd64=6.2+20201114-2+deb11u2`
+- `libncursesw6:amd64=6.2+20201114-2+deb11u2`
+- `libtinfo6:amd64=6.2+20201114-2+deb11u2`
 - `ncurses-base=6.2+20201114-2+deb11u2`
-- `ncurses-bin:i386=6.2+20201114-2+deb11u2`
+- `ncurses-bin=6.2+20201114-2+deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/libncurses6/copyright`, `/usr/share/doc/libncursesw6/copyright`, `/usr/share/doc/libtinfo6/copyright`, `/usr/share/doc/ncurses-base/copyright`, `/usr/share/doc/ncurses-bin/copyright`)
 
@@ -1546,8 +1546,8 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libhogweed6:i386=3.7.3-1`
-- `libnettle8:i386=3.7.3-1`
+- `libhogweed6:amd64=3.7.3-1`
+- `libnettle8:amd64=3.7.3-1`
 
 Licenses: (parsed from: `/usr/share/doc/libhogweed6/copyright`, `/usr/share/doc/libnettle8/copyright`)
 
@@ -1583,9 +1583,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libssl-dev:i386=1.1.1w-0+deb11u2`
-- `libssl1.1:i386=1.1.1w-0+deb11u2`
-- `openssl:i386=1.1.1w-0+deb11u2`
+- `libssl-dev:amd64=1.1.1w-0+deb11u2`
+- `libssl1.1:amd64=1.1.1w-0+deb11u2`
+- `openssl=1.1.1w-0+deb11u2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1611,7 +1611,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libp11-kit0:i386=0.23.22-1`
+- `libp11-kit0:amd64=0.23.22-1`
 
 Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 
@@ -1641,10 +1641,10 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libpam-modules:i386=1.4.0-9+deb11u1`
-- `libpam-modules-bin:i386=1.4.0-9+deb11u1`
+- `libpam-modules:amd64=1.4.0-9+deb11u1`
+- `libpam-modules-bin=1.4.0-9+deb11u1`
 - `libpam-runtime=1.4.0-9+deb11u1`
-- `libpam0g:i386=1.4.0-9+deb11u1`
+- `libpam0g:amd64=1.4.0-9+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
@@ -1669,7 +1669,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libpcre2-8-0:i386=10.36-2+deb11u1`
+- `libpcre2-8-0:amd64=10.36-2+deb11u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1694,7 +1694,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libpcre3:i386=2:8.39-13`
+- `libpcre3:amd64=2:8.39-13`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1719,7 +1719,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `perl-base:i386=5.32.1-4+deb11u4`
+- `perl-base=5.32.1-4+deb11u4`
 
 Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 
@@ -1771,8 +1771,8 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libprocps8:i386=2:3.3.17-5`
-- `procps:i386=2:3.3.17-5`
+- `libprocps8:amd64=2:3.3.17-5`
+- `procps=2:3.3.17-5`
 
 Licenses: (parsed from: `/usr/share/doc/libprocps8/copyright`, `/usr/share/doc/procps/copyright`)
 
@@ -1802,7 +1802,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `sed:i386=4.7-1`
+- `sed=4.7-1`
 
 Licenses: (parsed from: `/usr/share/doc/sed/copyright`)
 
@@ -1827,8 +1827,8 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `login:i386=1:4.8.1-1`
-- `passwd:i386=1:4.8.1-1`
+- `login=1:4.8.1-1`
+- `passwd=1:4.8.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd/copyright`)
 
@@ -1853,8 +1853,8 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libsystemd0:i386=247.3-7+deb11u6`
-- `libudev1:i386=247.3-7+deb11u6`
+- `libsystemd0:amd64=247.3-7+deb11u6`
+- `libudev1:amd64=247.3-7+deb11u6`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -1886,7 +1886,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `sysvinit-utils:i386=2.96-7+deb11u1`
+- `sysvinit-utils=2.96-7+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 
@@ -1912,7 +1912,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `tar:i386=1.34+dfsg-1+deb11u1`
+- `tar=1.34+dfsg-1+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 
@@ -1964,13 +1964,13 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `bsdutils:i386=1:2.36.1-8+deb11u2`
-- `libblkid1:i386=2.36.1-8+deb11u2`
-- `libmount1:i386=2.36.1-8+deb11u2`
-- `libsmartcols1:i386=2.36.1-8+deb11u2`
-- `libuuid1:i386=2.36.1-8+deb11u2`
-- `mount:i386=2.36.1-8+deb11u2`
-- `util-linux:i386=2.36.1-8+deb11u2`
+- `bsdutils=1:2.36.1-8+deb11u2`
+- `libblkid1:amd64=2.36.1-8+deb11u2`
+- `libmount1:amd64=2.36.1-8+deb11u2`
+- `libsmartcols1:amd64=2.36.1-8+deb11u2`
+- `libuuid1:amd64=2.36.1-8+deb11u2`
+- `mount=2.36.1-8+deb11u2`
+- `util-linux=2.36.1-8+deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
@@ -2010,7 +2010,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libxxhash0:i386=0.8.0-2`
+- `libxxhash0:amd64=0.8.0-2`
 
 Licenses: (parsed from: `/usr/share/doc/libxxhash0/copyright`)
 
@@ -2036,7 +2036,7 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `liblzma5:i386=5.2.5-2.1~deb11u1`
+- `liblzma5:amd64=5.2.5-2.1~deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 
@@ -2076,8 +2076,8 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `zlib1g:i386=1:1.2.11.dfsg-2+deb11u2`
-- `zlib1g-dev:i386=1:1.2.11.dfsg-2+deb11u2`
+- `zlib1g:amd64=1:1.2.11.dfsg-2+deb11u2`
+- `zlib1g-dev:amd64=1:1.2.11.dfsg-2+deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`, `/usr/share/doc/zlib1g-dev/copyright`)
 

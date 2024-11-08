@@ -2,11 +2,11 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:63859786806d2b87c2150e81d39339b6803cb2b6339346a6e17b61d02bc381fc`
+- Image ID: `sha256:71bb50795f50a9dfe14c0f2644fe985c8ccac866ac06f900181c21f692a71dd9`
 - Created: `2024-11-05T06:03:16Z`
-- Virtual Size: ~ 80.63 Mb  
+- Virtual Size: ~ 88.82 Mb  
   (total size of all layers on-disk)
-- Arch: `linux`/`386`
+- Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
@@ -81,7 +81,7 @@ apk-tools-2.14.4-r0 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
 apk-tools-2.14.4-r0 installed size:
-288 KiB
+296 KiB
 
 apk-tools-2.14.4-r0 license:
 GPL-2.0-only
@@ -98,7 +98,7 @@ busybox-1.36.1-r19 webpage:
 https://busybox.net/
 
 busybox-1.36.1-r19 installed size:
-936 KiB
+924 KiB
 
 busybox-1.36.1-r19 license:
 GPL-2.0-only
@@ -132,7 +132,7 @@ bzip2-1.0.8-r6 webpage:
 https://sourceware.org/bzip2/
 
 bzip2-1.0.8-r6 installed size:
-344 KiB
+332 KiB
 
 bzip2-1.0.8-r6 license:
 bzip2-1.0.6
@@ -149,7 +149,7 @@ ca-certificates-20240226-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
 ca-certificates-20240226-r0 installed size:
-716 KiB
+712 KiB
 
 ca-certificates-20240226-r0 license:
 MPL-2.0 AND MIT
@@ -183,7 +183,7 @@ gmp-6.3.0-r0 webpage:
 https://gmplib.org/
 
 gmp-6.3.0-r0 installed size:
-380 KiB
+432 KiB
 
 gmp-6.3.0-r0 license:
 LGPL-3.0-or-later OR GPL-2.0-or-later
@@ -200,7 +200,7 @@ gmp-dev-6.3.0-r0 webpage:
 https://gmplib.org/
 
 gmp-dev-6.3.0-r0 installed size:
-3872 KiB
+4192 KiB
 
 gmp-dev-6.3.0-r0 license:
 LGPL-3.0-or-later OR GPL-2.0-or-later
@@ -234,7 +234,7 @@ libcrypto3-3.1.7-r1 webpage:
 https://www.openssl.org/
 
 libcrypto3-3.1.7-r1 installed size:
-3452 KiB
+4512 KiB
 
 libcrypto3-3.1.7-r1 license:
 Apache-2.0
@@ -251,7 +251,7 @@ libffi-3.4.4-r3 webpage:
 https://sourceware.org/libffi/
 
 libffi-3.4.4-r3 installed size:
-44 KiB
+52 KiB
 
 libffi-3.4.4-r3 license:
 MIT
@@ -268,7 +268,7 @@ libffi-dev-3.4.4-r3 webpage:
 https://sourceware.org/libffi/
 
 libffi-dev-3.4.4-r3 installed size:
-156 KiB
+232 KiB
 
 libffi-dev-3.4.4-r3 license:
 MIT
@@ -285,7 +285,7 @@ libgcc-13.2.1_git20231014-r0 webpage:
 https://gcc.gnu.org
 
 libgcc-13.2.1_git20231014-r0 installed size:
-172 KiB
+152 KiB
 
 libgcc-13.2.1_git20231014-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
@@ -302,7 +302,7 @@ libgmpxx-6.3.0-r0 webpage:
 https://gmplib.org/
 
 libgmpxx-6.3.0-r0 installed size:
-40 KiB
+44 KiB
 
 libgmpxx-6.3.0-r0 license:
 LGPL-3.0-or-later OR GPL-2.0-or-later
@@ -336,7 +336,7 @@ libncursesw-6.4_p20231125-r0 webpage:
 https://invisible-island.net/ncurses/
 
 libncursesw-6.4_p20231125-r0 installed size:
-340 KiB
+344 KiB
 
 libncursesw-6.4_p20231125-r0 license:
 X11
@@ -353,7 +353,7 @@ libproc2-4.0.4-r0 webpage:
 https://gitlab.com/procps-ng/procps
 
 libproc2-4.0.4-r0 installed size:
-152 KiB
+148 KiB
 
 libproc2-4.0.4-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
@@ -370,7 +370,7 @@ libssl3-3.1.7-r1 webpage:
 https://www.openssl.org/
 
 libssl3-3.1.7-r1 installed size:
-532 KiB
+548 KiB
 
 libssl3-3.1.7-r1 license:
 Apache-2.0
@@ -387,7 +387,7 @@ libstdc++-13.2.1_git20231014-r0 webpage:
 https://gcc.gnu.org
 
 libstdc++-13.2.1_git20231014-r0 installed size:
-2696 KiB
+2652 KiB
 
 libstdc++-13.2.1_git20231014-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
@@ -404,7 +404,7 @@ linux-headers-6.5-r0 webpage:
 https://kernel.org/
 
 linux-headers-6.5-r0 installed size:
-8172 KiB
+8168 KiB
 
 linux-headers-6.5-r0 license:
 GPL-2.0-only
@@ -421,7 +421,7 @@ musl-1.2.4_git20230717-r4 webpage:
 https://musl.libc.org/
 
 musl-1.2.4_git20230717-r4 installed size:
-660 KiB
+652 KiB
 
 musl-1.2.4_git20230717-r4 license:
 MIT
@@ -438,7 +438,7 @@ musl-utils-1.2.4_git20230717-r4 webpage:
 https://musl.libc.org/
 
 musl-utils-1.2.4_git20230717-r4 installed size:
-116 KiB
+128 KiB
 
 musl-utils-1.2.4_git20230717-r4 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
@@ -472,7 +472,7 @@ pkgconf-2.1.0-r0 webpage:
 https://gitea.treehouse.systems/ariadne/pkgconf
 
 pkgconf-2.1.0-r0 installed size:
-156 KiB
+160 KiB
 
 pkgconf-2.1.0-r0 license:
 ISC
@@ -489,7 +489,7 @@ procps-ng-4.0.4-r0 webpage:
 https://gitlab.com/procps-ng/procps
 
 procps-ng-4.0.4-r0 installed size:
-548 KiB
+572 KiB
 
 procps-ng-4.0.4-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
@@ -540,7 +540,7 @@ yaml-0.2.5-r2 webpage:
 https://pyyaml.org/wiki/LibYAML
 
 yaml-0.2.5-r2 installed size:
-116 KiB
+120 KiB
 
 yaml-0.2.5-r2 license:
 MIT
