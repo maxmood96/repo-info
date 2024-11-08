@@ -2,18 +2,18 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4866766977228bff1a8262b6817cd701df695b1091fb68550995c96210eb44cc`
-- Created: `2024-06-04T22:12:59Z`
-- Virtual Size: ~ 246.36 Mb  
+- Image ID: `sha256:1501d8d2b104c73d567bf846ed7ab9d00475f5b6b4ce440920e85417afddaaf8`
+- Created: `2024-11-06T00:46:53Z`
+- Virtual Size: ~ 262.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.22.8`
+  - `GOLANG_VERSION=1.23.3`
   - `GOTOOLCHAIN=local`
   - `GOPATH=/go`
-  - `XCADDY_VERSION=v0.4.2`
+  - `XCADDY_VERSION=v0.4.4`
   - `CADDY_VERSION=v2.8.4`
   - `XCADDY_SKIP_CLEANUP=1`
   - `XCADDY_SETCAP=1`
@@ -329,16 +329,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.10.1-r0 description:
+libcurl-8.11.0-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.10.1-r0 webpage:
+libcurl-8.11.0-r0 webpage:
 https://curl.se/
 
-libcurl-8.10.1-r0 installed size:
-644 KiB
+libcurl-8.11.0-r0 installed size:
+636 KiB
 
-libcurl-8.10.1-r0 license:
+libcurl-8.11.0-r0 license:
 curl
 
 ```
