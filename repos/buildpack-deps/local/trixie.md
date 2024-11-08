@@ -1606,21 +1606,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.44-1
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.44-1.dsc' gnupg2_2.2.44-1.dsc 3834 SHA256:e1430f3abf26686a94a822f07e1277014453ae83f972ca678959bd5109cf3d96
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.44.orig.tar.bz2' gnupg2_2.2.44.orig.tar.bz2 7436756 SHA256:735b8b3e6d2330f66ab98336b060d5852a1a67cb2bc47ec7d1e5411577a8cadd
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.44.orig.tar.bz2.asc' gnupg2_2.2.44.orig.tar.bz2.asc 390 SHA256:715014555aa7273be8c6a8283c7aa49f07a83f6f630ab23a5d72532ea084719c
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.44-1.debian.tar.xz' gnupg2_2.2.44-1.debian.tar.xz 139928 SHA256:97553a3393f609fcec0dd54ecbcb534255b68e3b0d79c61f2e330fab9f1fc44b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.44-1/
 
-- https://sources.debian.net/src/gnupg2/2.2.44-1/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.44-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.44-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.8.6-2`
 
@@ -2212,20 +2204,13 @@ Licenses: (parsed from: `/usr/share/doc/liblerc-dev/copyright`, `/usr/share/doc/
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lerc=4.0.0+ds-4
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.0.0%2bds-4.dsc' lerc_4.0.0+ds-4.dsc 2638 SHA256:1f5758010599f9fd8b52ecea0541addeb0ea968f37d383a747abaa2a956f717e
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.0.0%2bds.orig.tar.xz' lerc_4.0.0+ds.orig.tar.xz 348140 SHA256:acf855502fd3b950ee78f0b67bc9e9b39316b3526fbf6d8b8b1a9482fb756723
-'http://deb.debian.org/debian/pool/main/l/lerc/lerc_4.0.0%2bds-4.debian.tar.xz' lerc_4.0.0+ds-4.debian.tar.xz 8280 SHA256:513db93f198180d601bba09356bd447c57d3a6360119e289cba897bf9054e5ac
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/lerc/4.0.0+ds-4/
 
-- https://sources.debian.net/src/lerc/4.0.0+ds-4/ (for browsing the source)
-- https://sources.debian.net/src/lerc/4.0.0+ds-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/lerc/4.0.0+ds-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libassuan=3.0.1-2`
 
@@ -2734,20 +2719,13 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.18.2-2
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.18.2-2.dsc' libheif_1.18.2-2.dsc 3621 SHA256:4e6f5e96da5428e746d4ba7da6ef76efb26dbe4eff51a2957e809238f8daaccb
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.18.2.orig.tar.gz' libheif_1.18.2.orig.tar.gz 1525096 SHA256:c4002a622bec9f519f29d84bfdc6024e33fd67953a5fb4dc2c2f11f67d5e45bf
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.18.2-2.debian.tar.xz' libheif_1.18.2-2.debian.tar.xz 12080 SHA256:3b4f8599ba096c9f226a54060f1d3c62ffe1fa9dbde16b7602d8fbdaf76c8b74
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libheif/1.18.2-2/
 
-- https://sources.debian.net/src/libheif/1.18.2-2/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.18.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.18.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.0.10-1`
 
@@ -2760,20 +2738,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libice=2:1.0.10-1
-'http://deb.debian.org/debian/pool/main/libi/libice/libice_1.0.10-1.dsc' libice_1.0.10-1.dsc 2049 SHA256:adb7b4e250db838a476a44b5a941c8f935ac2b20858186f09228cd3e0696034d
-'http://deb.debian.org/debian/pool/main/libi/libice/libice_1.0.10.orig.tar.gz' libice_1.0.10.orig.tar.gz 481960 SHA256:1116bc64c772fd127a0d0c0ffa2833479905e3d3d8197740b3abd5f292f22d2d
-'http://deb.debian.org/debian/pool/main/libi/libice/libice_1.0.10-1.diff.gz' libice_1.0.10-1.diff.gz 11349 SHA256:d186b3877416a7e80f1923fe2fc736d576e585a41450bcf4cd5e74f9dd099362
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libice/2:1.0.10-1/
 
-- https://sources.debian.net/src/libice/2:1.0.10-1/ (for browsing the source)
-- https://sources.debian.net/src/libice/2:1.0.10-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libice/2:1.0.10-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libidn2=2.3.7-2`
 
@@ -3256,20 +3227,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsm=2:1.2.3-1
-'http://deb.debian.org/debian/pool/main/libs/libsm/libsm_1.2.3-1.dsc' libsm_1.2.3-1.dsc 2063 SHA256:5488f8de81d53c32cbb5f062b6a6f262cd067283b8082041392dc60f0d04002c
-'http://deb.debian.org/debian/pool/main/libs/libsm/libsm_1.2.3.orig.tar.gz' libsm_1.2.3.orig.tar.gz 445362 SHA256:1e92408417cb6c6c477a8a6104291001a40b3bb56a4a60608fdd9cd2c5a0f320
-'http://deb.debian.org/debian/pool/main/libs/libsm/libsm_1.2.3-1.diff.gz' libsm_1.2.3-1.diff.gz 8929 SHA256:7eb99ab50b19f26d1470f89e4b46891f6a697cb1794a58ed0d1376cceaf1b6a9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsm/2:1.2.3-1/
 
-- https://sources.debian.net/src/libsm/2:1.2.3-1/ (for browsing the source)
-- https://sources.debian.net/src/libsm/2:1.2.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsm/2:1.2.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libssh2=1.11.0-7`
 
@@ -3399,20 +3363,13 @@ Licenses: (parsed from: `/usr/share/doc/libltdl-dev/copyright`, `/usr/share/doc/
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtool=2.4.7-7
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.7-7.dsc' libtool_2.4.7-7.dsc 2257 SHA256:c6045c55f34fcd3b7a4194059d498085d4a6d0bc4c6a0cb3825fb3859461dc7a
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.7.orig.tar.xz' libtool_2.4.7.orig.tar.xz 1026028 SHA256:dd637e270439b208907ceead3f163470ed2ce5723ef97ffbda6463c64b57128a
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.4.7-7.debian.tar.xz' libtool_2.4.7-7.debian.tar.xz 40916 SHA256:217a33c2f4474f4f23c69fa0bc694f9d380885003f02785ed69248b0dfb1d449
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtool/2.4.7-7/
 
-- https://sources.debian.net/src/libtool/2.4.7-7/ (for browsing the source)
-- https://sources.debian.net/src/libtool/2.4.7-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtool/2.4.7-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libunistring=1.2-1`
 
@@ -5016,20 +4973,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.12=3.12.6-1
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.6-1.dsc' python3.12_3.12.6-1.dsc 3302 SHA256:491381838fa0a98ec90c7c5a2aae225d65f7bbd5288f63bb2af9ad3d9a01dc84
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.6.orig.tar.xz' python3.12_3.12.6.orig.tar.xz 20434028 SHA256:1999658298cf2fb837dffed8ff3c033ef0c98ef20cf73c5d5f66bed5ab89697c
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.6-1.debian.tar.xz' python3.12_3.12.6-1.debian.tar.xz 212772 SHA256:1a1bc0cd32610f93ff767d8d6d543b0b0dc82fecfd7b6fad73950202aca072ee
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.12/3.12.6-1/
 
-- https://sources.debian.net/src/python3.12/3.12.6-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.12/3.12.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.12/3.12.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-5`
 

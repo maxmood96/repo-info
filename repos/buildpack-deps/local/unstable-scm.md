@@ -2520,21 +2520,13 @@ Licenses: (parsed from: `/usr/share/doc/libperl5.40/copyright`, `/usr/share/doc/
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.40.0-6
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.0-6.dsc' perl_5.40.0-6.dsc 2932 SHA256:9f41f0f222aad13febe310e7c3112ae88ac4bfbaf0821e9cc8ed5f9c4d00a328
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.0.orig-regen-configure.tar.xz' perl_5.40.0.orig-regen-configure.tar.xz 421080 SHA256:9b1f7f1f680cfd0174d1e11b4f8d06cce079798a0549f083f1c9ba15156be211
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.0.orig.tar.xz' perl_5.40.0.orig.tar.xz 13804184 SHA256:d5325300ad267624cb0b7d512cfdfcd74fa7fe00c455c5b51a6bd53e5e199ef9
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.0-6.debian.tar.xz' perl_5.40.0-6.debian.tar.xz 168008 SHA256:dd468807c6119d5865f7f644366af8af07ac9b89cacbd62cbe72b9c47ba9f10f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.40.0-6/
 
-- https://sources.debian.net/src/perl/5.40.0-6/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.40.0-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.40.0-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pinentry=1.2.1-4`
 
@@ -2652,21 +2644,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.12=3.12.7-1
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.7-1.dsc' python3.12_3.12.7-1.dsc 3651 SHA256:2a04cee9b33d7911e3c7608354a692c8ccc09fb5c910184995457aa3cc38cf2e
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.7.orig.tar.xz' python3.12_3.12.7.orig.tar.xz 20444032 SHA256:24887b92e2afd4a2ac602419ad4b596372f67ac9b077190f459aba390faf5550
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.7.orig.tar.xz.asc' python3.12_3.12.7.orig.tar.xz.asc 963 SHA256:ba832793e5fb09c6f441bf607977ce185cebb8d3b7d066917b41d3f403ed2f72
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.7-1.debian.tar.xz' python3.12_3.12.7-1.debian.tar.xz 218312 SHA256:2cd3ff994331de28e34dc2beeff396baff51088f9ef50704a1dadca49dbb48c4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.12/3.12.7-1/
 
-- https://sources.debian.net/src/python3.12/3.12.7-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.12/3.12.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.12/3.12.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-5`
 
