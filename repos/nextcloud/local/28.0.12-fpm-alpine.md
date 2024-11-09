@@ -1,10 +1,10 @@
-# `nextcloud:28.0.11-fpm-alpine`
+# `nextcloud:28.0.12-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:420d4391928df5367262c672e241d56577d6f90a29a2ce32a2c0472229da94c1`
-- Created: `2024-10-18T00:32:25Z`
-- Virtual Size: ~ 856.35 Mb  
+- Image ID: `sha256:777d6eb6eb208c7d153dbd9bd1c0a55574b13f2efa8b6c59efd099afb62b3dbf`
+- Created: `2024-11-07T23:24:17Z`
+- Virtual Size: ~ 870.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=330b54876ea1d05ade12ee9726167332058bccd58dffa1d4e12117f6b4f616b9`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
-  - `NEXTCLOUD_VERSION=28.0.11`
+  - `NEXTCLOUD_VERSION=28.0.12`
 
 ## `apk` (`.apk`-based packages)
 
@@ -931,16 +931,16 @@ MIT
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.3-r0 description:
+libexpat-2.6.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.3-r0 webpage:
+libexpat-2.6.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.3-r0 installed size:
+libexpat-2.6.4-r0 installed size:
 144 KiB
 
-libexpat-2.6.3-r0 license:
+libexpat-2.6.4-r0 license:
 MIT
 
 ```
@@ -1186,16 +1186,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-16.3-r0 description:
+libpq-16.4-r0 description:
 PostgreSQL client library
 
-libpq-16.3-r0 webpage:
+libpq-16.4-r0 webpage:
 https://www.postgresql.org/
 
-libpq-16.3-r0 installed size:
+libpq-16.4-r0 installed size:
 328 KiB
 
-libpq-16.3-r0 license:
+libpq-16.4-r0 license:
 PostgreSQL
 
 ```
@@ -1237,16 +1237,16 @@ CDDL-1.0 OR LGPL-2.1-only
 ### `apk` package: `librsvg`
 
 ```console
-librsvg-2.58.0-r0 description:
+librsvg-2.58.5-r0 description:
 SAX-based renderer for SVG files into a GdkPixbuf
 
-librsvg-2.58.0-r0 webpage:
+librsvg-2.58.5-r0 webpage:
 https://wiki.gnome.org/Projects/LibRsvg
 
-librsvg-2.58.0-r0 installed size:
-4644 KiB
+librsvg-2.58.5-r0 installed size:
+4668 KiB
 
-librsvg-2.58.0-r0 license:
+librsvg-2.58.5-r0 license:
 LGPL-2.1-or-later
 
 ```
