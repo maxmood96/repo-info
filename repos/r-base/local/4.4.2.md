@@ -100,20 +100,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:3.1.2-4
-'http://deb.debian.org/debian/pool/main/a/audit/audit_3.1.2-4.dsc' audit_3.1.2-4.dsc 2408 SHA256:2c3e056802722d320d9bc37bb47e1999d2878772076c7f28621404fa8f07d871
-'http://deb.debian.org/debian/pool/main/a/audit/audit_3.1.2.orig.tar.gz' audit_3.1.2.orig.tar.gz 1219860 SHA256:c0b1792d1f0a88c6f1828710509cbb987059fc68712c97669ca90eae103d287d
-'http://deb.debian.org/debian/pool/main/a/audit/audit_3.1.2-4.debian.tar.xz' audit_3.1.2-4.debian.tar.xz 18724 SHA256:fa0f2f46093f2b76c960f08c66605a10c0de646383366dc26c32304676324ec6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/audit/1:3.1.2-4/
 
-- https://sources.debian.net/src/audit/1:3.1.2-4/ (for browsing the source)
-- https://sources.debian.net/src/audit/1:3.1.2-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/audit/1:3.1.2-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-files=13.5`
 
@@ -724,10 +717,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris expat=2.6.3-2
-'http://http.debian.net/debian/pool/main/e/expat/expat_2.6.3-2.dsc' expat_2.6.3-2.dsc 1964 SHA256:689b5e692cffd817f3308e8c5544c709de5c5107a70d37f98b82075cdca8e1d4
-'http://http.debian.net/debian/pool/main/e/expat/expat_2.6.3.orig.tar.gz' expat_2.6.3.orig.tar.gz 8417246 SHA256:2dbff05dad8ccf08a24d2858c2c16802c22a22db6526db32ecb0fa17eea2ae61
-'http://http.debian.net/debian/pool/main/e/expat/expat_2.6.3-2.debian.tar.xz' expat_2.6.3-2.debian.tar.xz 15020 SHA256:a45839a726e0625f993615592cb7d2d703305aaf601377d5610469df088edcca
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.6.3-2.dsc' expat_2.6.3-2.dsc 1964 SHA256:689b5e692cffd817f3308e8c5544c709de5c5107a70d37f98b82075cdca8e1d4
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.6.3.orig.tar.gz' expat_2.6.3.orig.tar.gz 8417246 SHA256:2dbff05dad8ccf08a24d2858c2c16802c22a22db6526db32ecb0fa17eea2ae61
+'http://deb.debian.org/debian/pool/main/e/expat/expat_2.6.3-2.debian.tar.xz' expat_2.6.3-2.debian.tar.xz 15020 SHA256:a45839a726e0625f993615592cb7d2d703305aaf601377d5610469df088edcca
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/expat/2.6.3-2/ (for browsing the source)
+- https://sources.debian.net/src/expat/2.6.3-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/expat/2.6.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `findutils=4.10.0-3`
 
@@ -1473,14 +1472,13 @@ Licenses: (parsed from: `/usr/share/doc/liblerc4/copyright`)
 
 - `Apache-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris lerc=4.0.0+ds-4
-'http://http.debian.net/debian/pool/main/l/lerc/lerc_4.0.0%2bds-4.dsc' lerc_4.0.0+ds-4.dsc 2638 SHA256:1f5758010599f9fd8b52ecea0541addeb0ea968f37d383a747abaa2a956f717e
-'http://http.debian.net/debian/pool/main/l/lerc/lerc_4.0.0%2bds.orig.tar.xz' lerc_4.0.0+ds.orig.tar.xz 348140 SHA256:acf855502fd3b950ee78f0b67bc9e9b39316b3526fbf6d8b8b1a9482fb756723
-'http://http.debian.net/debian/pool/main/l/lerc/lerc_4.0.0%2bds-4.debian.tar.xz' lerc_4.0.0+ds-4.debian.tar.xz 8280 SHA256:513db93f198180d601bba09356bd447c57d3a6360119e289cba897bf9054e5ac
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/lerc/4.0.0+ds-4/
+
 
 ### `dpkg` source package: `less=643-1`
 
@@ -2129,15 +2127,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libx11=2:1.8.10-1
-'http://http.debian.net/debian/pool/main/libx/libx11/libx11_1.8.10-1.dsc' libx11_1.8.10-1.dsc 2519 SHA256:3589854c74c0f226096ec5b79b1ca6462763c06e1baa92ec051e8b09aa7765a5
-'http://http.debian.net/debian/pool/main/libx/libx11/libx11_1.8.10.orig.tar.gz' libx11_1.8.10.orig.tar.gz 3192536 SHA256:b7a1a90d881bb7b94df5cf31509e6b03f15c0972d3ac25ab0441f5fbc789650f
-'http://http.debian.net/debian/pool/main/libx/libx11/libx11_1.8.10.orig.tar.gz.asc' libx11_1.8.10.orig.tar.gz.asc 833 SHA256:783f7cee17473f10248d2bbfbd446735ef47d8c7da24736c7b5c15caf7576dda
-'http://http.debian.net/debian/pool/main/libx/libx11/libx11_1.8.10-1.diff.gz' libx11_1.8.10-1.diff.gz 74808 SHA256:af748d3b5cd4bf0810341b128d8cf0ae4398e04cd67ce985b02a6aa9a8faef9b
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libx11/2:1.8.10-1/
+
 
 ### `dpkg` source package: `libxau=1:1.0.11-1`
 
@@ -2625,10 +2621,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openblas=0.3.28+ds-2
-'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.28%2bds-2.dsc' openblas_0.3.28+ds-2.dsc 4553 SHA256:035191917a7f5259eb8f3d096a8380584aeb78971f825b47241370b8de8a26d8
-'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.28%2bds.orig.tar.xz' openblas_0.3.28+ds.orig.tar.xz 2181324 SHA256:938211591b6ad62285830021192b2a0f98bca70cc7f9aac68edca56e1c4e380d
-'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.28%2bds-2.debian.tar.xz' openblas_0.3.28+ds-2.debian.tar.xz 25196 SHA256:3e678b943c8ab33bcebaaa5b5b95d22aa7529e019989a35646813d54a7e432df
+'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.28%2bds-2.dsc' openblas_0.3.28+ds-2.dsc 4553 SHA256:035191917a7f5259eb8f3d096a8380584aeb78971f825b47241370b8de8a26d8
+'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.28%2bds.orig.tar.xz' openblas_0.3.28+ds.orig.tar.xz 2181324 SHA256:938211591b6ad62285830021192b2a0f98bca70cc7f9aac68edca56e1c4e380d
+'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.28%2bds-2.debian.tar.xz' openblas_0.3.28+ds-2.debian.tar.xz 25196 SHA256:3e678b943c8ab33bcebaaa5b5b95d22aa7529e019989a35646813d54a7e432df
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/openblas/0.3.28+ds-2/ (for browsing the source)
+- https://sources.debian.net/src/openblas/0.3.28+ds-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openblas/0.3.28+ds-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.5.18+dfsg-3`
 
@@ -2881,11 +2883,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris perl=5.40.0-6
-'http://http.debian.net/debian/pool/main/p/perl/perl_5.40.0-6.dsc' perl_5.40.0-6.dsc 2932 SHA256:9f41f0f222aad13febe310e7c3112ae88ac4bfbaf0821e9cc8ed5f9c4d00a328
-'http://http.debian.net/debian/pool/main/p/perl/perl_5.40.0.orig-regen-configure.tar.xz' perl_5.40.0.orig-regen-configure.tar.xz 421080 SHA256:9b1f7f1f680cfd0174d1e11b4f8d06cce079798a0549f083f1c9ba15156be211
-'http://http.debian.net/debian/pool/main/p/perl/perl_5.40.0.orig.tar.xz' perl_5.40.0.orig.tar.xz 13804184 SHA256:d5325300ad267624cb0b7d512cfdfcd74fa7fe00c455c5b51a6bd53e5e199ef9
-'http://http.debian.net/debian/pool/main/p/perl/perl_5.40.0-6.debian.tar.xz' perl_5.40.0-6.debian.tar.xz 168008 SHA256:dd468807c6119d5865f7f644366af8af07ac9b89cacbd62cbe72b9c47ba9f10f
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.0-6.dsc' perl_5.40.0-6.dsc 2932 SHA256:9f41f0f222aad13febe310e7c3112ae88ac4bfbaf0821e9cc8ed5f9c4d00a328
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.0.orig-regen-configure.tar.xz' perl_5.40.0.orig-regen-configure.tar.xz 421080 SHA256:9b1f7f1f680cfd0174d1e11b4f8d06cce079798a0549f083f1c9ba15156be211
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.0.orig.tar.xz' perl_5.40.0.orig.tar.xz 13804184 SHA256:d5325300ad267624cb0b7d512cfdfcd74fa7fe00c455c5b51a6bd53e5e199ef9
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.0-6.debian.tar.xz' perl_5.40.0-6.debian.tar.xz 168008 SHA256:dd468807c6119d5865f7f644366af8af07ac9b89cacbd62cbe72b9c47ba9f10f
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/perl/5.40.0-6/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.40.0-6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.40.0-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pixman=0.42.2-1`
 
