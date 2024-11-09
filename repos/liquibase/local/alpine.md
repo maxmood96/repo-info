@@ -1,10 +1,10 @@
-# `liquibase:4.29-alpine`
+# `liquibase:4.30-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:83f0c74c1b66f84f0fc6211dce3c9400b67cc842a8fa8952f92cdeacd86a2147`
-- Created: `2024-09-13T07:37:36Z`
-- Virtual Size: ~ 374.93 Mb  
+- Image ID: `sha256:843aae4012ef03a3b318cf0a8cddbaecbcc2fbcf91f45c309c402e912b876e20`
+- Created: `2024-11-07T14:28:00Z`
+- Virtual Size: ~ 376.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/liquibase/docker-entrypoint.sh"]`
@@ -12,6 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LIQUIBASE_HOME=/liquibase`
+  - `DOCKER_LIQUIBASE=true`
 
 ## `apk` (`.apk`-based packages)
 
@@ -341,16 +342,16 @@ X11
 ### `apk` package: `openjdk17-jre-headless`
 
 ```console
-openjdk17-jre-headless-17.0.12_p7-r0 description:
+openjdk17-jre-headless-17.0.13_p11-r0 description:
 Oracle OpenJDK 17 (JRE headless)
 
-openjdk17-jre-headless-17.0.12_p7-r0 webpage:
+openjdk17-jre-headless-17.0.13_p11-r0 webpage:
 https://github.com/openjdk/jdk17u
 
-openjdk17-jre-headless-17.0.12_p7-r0 installed size:
+openjdk17-jre-headless-17.0.13_p11-r0 installed size:
 171 MiB
 
-openjdk17-jre-headless-17.0.12_p7-r0 license:
+openjdk17-jre-headless-17.0.13_p11-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
