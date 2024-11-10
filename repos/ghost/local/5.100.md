@@ -1,10 +1,10 @@
-# `ghost:5.99.0`
+# `ghost:5.100.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a28ff465e2c8a27266b0fe7183ef2c4b0143c9ef0e395cdd7c562bc7bbc62e8a`
-- Created: `2024-11-01T20:19:12Z`
-- Virtual Size: ~ 573.01 Mb  
+- Image ID: `sha256:9e411f1cb972bb17fa737a628179a32ec5a3f44c2d4ee40d52e40b191827966d`
+- Created: `2024-11-08T03:19:12Z`
+- Virtual Size: ~ 573.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `GHOST_CLI_VERSION=1.26.1`
   - `GHOST_INSTALL=/var/lib/ghost`
   - `GHOST_CONTENT=/var/lib/ghost/content`
-  - `GHOST_VERSION=5.99.0`
+  - `GHOST_VERSION=5.100.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -171,19 +171,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12.4+deb12u7
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u7.dsc' base-files_12.4+deb12u7.dsc 1133 SHA256:7be32f82fb7c8d4ad2b60ad2b537418acb17fa4e54102556378715aa93abba1f
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u7.tar.xz' base-files_12.4+deb12u7.tar.xz 66144 SHA256:29b8a066b4b9ef89b6bbafac6dde266dfecfa14507d34d372598c448678bb037
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/12.4+deb12u7/
 
-- https://sources.debian.net/src/base-files/12.4+deb12u7/ (for browsing the source)
-- https://sources.debian.net/src/base-files/12.4+deb12u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/12.4+deb12u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.1`
 
@@ -1698,20 +1692,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=252.30-1~deb12u2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.30-1%7edeb12u2.dsc' systemd_252.30-1~deb12u2.dsc 6618 SHA256:3cf201ecebcf54f8eb5b6e50ffb1856414d1517b4409b194f4a812a3ae285cac
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.30.orig.tar.gz' systemd_252.30.orig.tar.gz 12155187 SHA256:78da628671f5756d93e56917620df708ee502c45eb315055d57d1aefd1025277
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.30-1%7edeb12u2.debian.tar.xz' systemd_252.30-1~deb12u2.debian.tar.xz 171536 SHA256:000f5d7dba07d4472fc271d3d970ad4110ee2da6e9e16209be13c3a31b9b5dce
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/252.30-1~deb12u2/
 
-- https://sources.debian.net/src/systemd/252.30-1~deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/252.30-1~deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/252.30-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.06-4`
 
@@ -1860,9 +1847,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris util-linux=2.38.1-5+deb12u1
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u1.dsc' util-linux_2.38.1-5+deb12u1.dsc 4579 SHA256:980d9d9d9e56c12c067c281d8e4e6b1314537d8dac408b9f933e033da535d455
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1.orig.tar.xz' util-linux_2.38.1.orig.tar.xz 7495904 SHA256:60492a19b44e6cf9a3ddff68325b333b8b52b6c59ce3ebd6a0ecaa4c5117e84f
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u1.debian.tar.xz' util-linux_2.38.1-5+deb12u1.debian.tar.xz 118748 SHA256:751272cc0bbf1ed84a5a3378798aac17164de12f449575cc979b5b294f27d305
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u1.dsc' util-linux_2.38.1-5+deb12u1.dsc 4579 SHA256:980d9d9d9e56c12c067c281d8e4e6b1314537d8dac408b9f933e033da535d455
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.38.1.orig.tar.xz' util-linux_2.38.1.orig.tar.xz 7495904 SHA256:60492a19b44e6cf9a3ddff68325b333b8b52b6c59ce3ebd6a0ecaa4c5117e84f
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u1.debian.tar.xz' util-linux_2.38.1-5+deb12u1.debian.tar.xz 118748 SHA256:751272cc0bbf1ed84a5a3378798aac17164de12f449575cc979b5b294f27d305
 ```
 
 Other potentially useful URLs:
