@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cf83ff20bb3233a5e116cabf3da580b24d9448a15677b33873ea81f588744e5d`
+- Image ID: `sha256:d5db646bf8d87eca0973efef6b42820621ba5c95d1815ed2f8e24623b89c8f0b`
 - Created: `2024-09-20T18:21:55Z`
 - Virtual Size: ~ 372.34 Mb  
   (total size of all layers on-disk)
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=27.3.1`
   - `DOCKER_BUILDX_VERSION=0.18.0`
-  - `DOCKER_COMPOSE_VERSION=2.30.2`
+  - `DOCKER_COMPOSE_VERSION=2.30.3`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e`
 
@@ -480,16 +480,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.10.1-r0 description:
+libcurl-8.11.0-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.10.1-r0 webpage:
+libcurl-8.11.0-r1 webpage:
 https://curl.se/
 
-libcurl-8.10.1-r0 installed size:
-644 KiB
+libcurl-8.11.0-r1 installed size:
+636 KiB
 
-libcurl-8.10.1-r0 license:
+libcurl-8.11.0-r1 license:
 curl
 
 ```
@@ -531,16 +531,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.3-r0 description:
+libexpat-2.6.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.3-r0 webpage:
+libexpat-2.6.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.3-r0 installed size:
+libexpat-2.6.4-r0 installed size:
 144 KiB
 
-libexpat-2.6.3-r0 license:
+libexpat-2.6.4-r0 license:
 MIT
 
 ```
