@@ -1,10 +1,10 @@
-# `drupal:10.3.6-php8.2-fpm-bookworm`
+# `drupal:10.3.7-php8.2-fpm-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6a7d802bac5112d66e50eb30a2adc26b7f6bbf150bbb6368fb34b15d7fd61cae`
-- Created: `2024-10-03T15:27:16Z`
-- Virtual Size: ~ 590.30 Mb  
+- Image ID: `sha256:bc540be5672cfb03922e4cd1eb27ae1f2a09286ea8940c7e1de1f3149bba4598`
+- Created: `2024-11-07T10:27:22Z`
+- Virtual Size: ~ 590.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.2.25.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.25.tar.xz.asc`
   - `PHP_SHA256=330b54876ea1d05ade12ee9726167332058bccd58dffa1d4e12117f6b4f616b9`
-  - `DRUPAL_VERSION=10.3.6`
+  - `DRUPAL_VERSION=10.3.7`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -242,19 +242,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12.4+deb12u7
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u7.dsc' base-files_12.4+deb12u7.dsc 1133 SHA256:7be32f82fb7c8d4ad2b60ad2b537418acb17fa4e54102556378715aa93abba1f
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u7.tar.xz' base-files_12.4+deb12u7.tar.xz 66144 SHA256:29b8a066b4b9ef89b6bbafac6dde266dfecfa14507d34d372598c448678bb037
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/12.4+deb12u7/
 
-- https://sources.debian.net/src/base-files/12.4+deb12u7/ (for browsing the source)
-- https://sources.debian.net/src/base-files/12.4+deb12u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/12.4+deb12u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.1`
 
@@ -507,21 +501,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.88.1-10+deb12u7
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1-10%2bdeb12u7.dsc' curl_7.88.1-10+deb12u7.dsc 3289 SHA256:dcacc507401f4c887f0dc9df3feefc32954b39fed3c2d2b8fb78e046d6be5a48
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1.orig.tar.gz' curl_7.88.1.orig.tar.gz 4343562 SHA256:cdb38b72e36bc5d33d5b8810f8018ece1baa29a8f215b4495e495ded82bbf3c7
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1.orig.tar.gz.asc' curl_7.88.1.orig.tar.gz.asc 488 SHA256:7a5a55d7123149a1b357f298cf895bd0a601e3a2807005ef6c95f3752803485f
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.88.1-10%2bdeb12u7.debian.tar.xz' curl_7.88.1-10+deb12u7.debian.tar.xz 70856 SHA256:11633a404e33f9abfcb2a5f7883601df6bfc35e37b3d87dcb04f986f9cf94c8d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/7.88.1-10+deb12u7/
 
-- https://sources.debian.net/src/curl/7.88.1-10+deb12u7/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.88.1-10+deb12u7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.88.1-10+deb12u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg-10`
 
@@ -2464,9 +2450,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris nghttp2=1.52.0-1+deb12u1
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.52.0-1%2bdeb12u1.dsc' nghttp2_1.52.0-1+deb12u1.dsc 2541 SHA256:5f2e625f4df5c63e64a0b6806e085c994e38462d099bca0d214c7712f55e3133
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.52.0.orig.tar.gz' nghttp2_1.52.0.orig.tar.gz 1064232 SHA256:6b71561a9950b4a90fa36aa3160763f1437f3730d7a12434e416aa3f4ab145e0
-'http://deb.debian.org/debian/pool/main/n/nghttp2/nghttp2_1.52.0-1%2bdeb12u1.debian.tar.xz' nghttp2_1.52.0-1+deb12u1.debian.tar.xz 17412 SHA256:9c3c66fe7d570a2de3c9b746db8ef55d4d1ee2251912e7c94299976b555ca006
+'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.52.0-1%2bdeb12u1.dsc' nghttp2_1.52.0-1+deb12u1.dsc 2541 SHA256:5f2e625f4df5c63e64a0b6806e085c994e38462d099bca0d214c7712f55e3133
+'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.52.0.orig.tar.gz' nghttp2_1.52.0.orig.tar.gz 1064232 SHA256:6b71561a9950b4a90fa36aa3160763f1437f3730d7a12434e416aa3f4ab145e0
+'http://deb.debian.org/debian-security/pool/updates/main/n/nghttp2/nghttp2_1.52.0-1%2bdeb12u1.debian.tar.xz' nghttp2_1.52.0-1+deb12u1.debian.tar.xz 17412 SHA256:9c3c66fe7d570a2de3c9b746db8ef55d4d1ee2251912e7c94299976b555ca006
 ```
 
 Other potentially useful URLs:
@@ -3004,10 +2990,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris sqlite3=3.40.1-2
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.40.1-2.dsc' sqlite3_3.40.1-2.dsc 2487 SHA256:0b22fb1ddca1da2fd0db3f41841da5e17e4c36f160c2fc310737436ec638c2e2
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.40.1-2%2bdeb12u1.dsc' sqlite3_3.40.1-2+deb12u1.dsc 2519 SHA256:fdb3bd51669b2db14eda13610da0024002386d956a3f6ebcb616aab502765924
 'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.40.1.orig-www.tar.xz' sqlite3_3.40.1.orig-www.tar.xz 5865720 SHA256:a5e95a18d1b59729278860559ded78751b9163ffb5bb906c5cd24c015f71d5fd
 'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.40.1.orig.tar.xz' sqlite3_3.40.1.orig.tar.xz 8019048 SHA256:aaa776260ab4dc976db34aa7891819484c8676b5b2783123ebc6301e2ca5d655
-'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.40.1-2.debian.tar.xz' sqlite3_3.40.1-2.debian.tar.xz 29944 SHA256:98939c2e98748fe13d1d2243ebde68bfe3f071000455ae1815d802e44bc2d039
+'http://deb.debian.org/debian/pool/main/s/sqlite3/sqlite3_3.40.1-2%2bdeb12u1.debian.tar.xz' sqlite3_3.40.1-2+deb12u1.debian.tar.xz 32140 SHA256:f1244509c617b6c19170e93fc72331716231e0e4aad1112c34c07ff783370b13
 ```
 
 Other potentially useful URLs:
@@ -3034,20 +3020,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=252.30-1~deb12u2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.30-1%7edeb12u2.dsc' systemd_252.30-1~deb12u2.dsc 6618 SHA256:3cf201ecebcf54f8eb5b6e50ffb1856414d1517b4409b194f4a812a3ae285cac
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.30.orig.tar.gz' systemd_252.30.orig.tar.gz 12155187 SHA256:78da628671f5756d93e56917620df708ee502c45eb315055d57d1aefd1025277
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.30-1%7edeb12u2.debian.tar.xz' systemd_252.30-1~deb12u2.debian.tar.xz 171536 SHA256:000f5d7dba07d4472fc271d3d970ad4110ee2da6e9e16209be13c3a31b9b5dce
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/252.30-1~deb12u2/
 
-- https://sources.debian.net/src/systemd/252.30-1~deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/252.30-1~deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/252.30-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.06-4`
 
@@ -3196,9 +3175,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris util-linux=2.38.1-5+deb12u1
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u1.dsc' util-linux_2.38.1-5+deb12u1.dsc 4579 SHA256:980d9d9d9e56c12c067c281d8e4e6b1314537d8dac408b9f933e033da535d455
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1.orig.tar.xz' util-linux_2.38.1.orig.tar.xz 7495904 SHA256:60492a19b44e6cf9a3ddff68325b333b8b52b6c59ce3ebd6a0ecaa4c5117e84f
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u1.debian.tar.xz' util-linux_2.38.1-5+deb12u1.debian.tar.xz 118748 SHA256:751272cc0bbf1ed84a5a3378798aac17164de12f449575cc979b5b294f27d305
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u1.dsc' util-linux_2.38.1-5+deb12u1.dsc 4579 SHA256:980d9d9d9e56c12c067c281d8e4e6b1314537d8dac408b9f933e033da535d455
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.38.1.orig.tar.xz' util-linux_2.38.1.orig.tar.xz 7495904 SHA256:60492a19b44e6cf9a3ddff68325b333b8b52b6c59ce3ebd6a0ecaa4c5117e84f
+'http://deb.debian.org/debian-security/pool/updates/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u1.debian.tar.xz' util-linux_2.38.1-5+deb12u1.debian.tar.xz 118748 SHA256:751272cc0bbf1ed84a5a3378798aac17164de12f449575cc979b5b294f27d305
 ```
 
 Other potentially useful URLs:
