@@ -1,7 +1,7 @@
 ## `traefik:mimolette`
 
 ```console
-$ docker pull traefik@sha256:1cca0dafaf4244952a15af1bbb4fa146742fd6708b08098cfebdd522277a3ee0
+$ docker pull traefik@sha256:fe90302ff2ba93d253684da3890ffb1aacafe03669a6d9c7b0c877c53679519a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -246,20 +246,20 @@ $ docker pull traefik@sha256:26585f9207fdb8c6b6446de892c3ae84d8a076e028cb585d1ed
 ### `traefik:mimolette` - linux; ppc64le
 
 ```console
-$ docker pull traefik@sha256:93afa8d944a10db83f22677596d536000da9a601f52cb2a5e130b9dbf5223e3a
+$ docker pull traefik@sha256:712144f5adaebe67082a0a495e67a7e6af0eaaacf8a16e2e25df85b2be58e3be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.0 MB (43976476 bytes)**  
+-	Total Size: **44.0 MB (43976526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f7364e1fa61bbf928550a7da3a1c023273be4c41e1ef687b338774ccd219e7c9`
+-	Image ID: `sha256:f0e433330a1ae5bb954e4e3a2156bb7a9c8a4b80ba9f48003bc3fdb9785a2d92`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["traefik"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 22:26:06 GMT
-ADD file:c1f14e23acaff59e2dc7a11f65f8fdfbed8be1350a135493a06b692ecefb26cc in / 
-# Fri, 06 Sep 2024 22:26:07 GMT
+# Fri, 06 Sep 2024 12:05:36 GMT
+ADD alpine-minirootfs-3.20.3-ppc64le.tar.gz / # buildkit
+# Fri, 06 Sep 2024 12:05:36 GMT
 CMD ["/bin/sh"]
 # Mon, 28 Oct 2024 09:59:42 GMT
 RUN apk --no-cache add ca-certificates tzdata # buildkit
@@ -278,45 +278,45 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 ```
 
 -	Layers:
-	-	`sha256:b5caf700653f785a3409fb40484075ff91a3a7a84b79ad6a91b165589b35fbc0`  
-		Last Modified: Fri, 06 Sep 2024 22:26:38 GMT  
-		Size: 3.6 MB (3572419 bytes)  
+	-	`sha256:22892cdc5e9ff297ac012c2fbe3c12724a3cf4d0a55f5f03f95a7f3ab3e77e36`  
+		Last Modified: Tue, 12 Nov 2024 00:55:07 GMT  
+		Size: 3.6 MB (3572459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7344dfd024f1a54ee674177a4c7c77f21bca6f5d0d59c0709c1ec0da6571fe8b`  
-		Last Modified: Mon, 28 Oct 2024 17:57:13 GMT  
-		Size: 457.9 KB (457876 bytes)  
+	-	`sha256:097dba9846b541fffc23cc1517cabbf63c3a79b79a499e411deeb91442e575c1`  
+		Last Modified: Tue, 12 Nov 2024 08:09:18 GMT  
+		Size: 457.9 KB (457880 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f6eb1b56f5d79a0f658aad6cc0171b22f3d5685b624b39eb0a55e6bc29b3702`  
-		Last Modified: Mon, 28 Oct 2024 17:59:20 GMT  
-		Size: 39.9 MB (39945811 bytes)  
+	-	`sha256:9cac8a4ca0bcac29d9c086c8356ebb76c9a7a05ce1d959a05c4518f8a2a7a399`  
+		Last Modified: Tue, 12 Nov 2024 08:12:00 GMT  
+		Size: 39.9 MB (39945818 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b807fa61b37a9e32a97f34b5ec233a650a8f057ea52470b0016cc06aa1bd67b1`  
-		Last Modified: Mon, 28 Oct 2024 17:59:18 GMT  
-		Size: 370.0 B  
+	-	`sha256:1f930055b66839175b4e1e4d89473381e3416693b525a7681c409d7ca40bea24`  
+		Last Modified: Tue, 12 Nov 2024 08:11:58 GMT  
+		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `traefik:mimolette` - unknown; unknown
 
 ```console
-$ docker pull traefik@sha256:cbb9027ca71f624f5bf29d0bce1a518f1fa3cdea9e2a7e3b854fbacff8fbea37
+$ docker pull traefik@sha256:72d98a40c2cfd467cc51a33918ef7803f47ddd288ffea691e927c9c2b23759fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **817.9 KB (817923 bytes)**  
+-	Total Size: **818.1 KB (818128 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f48515f86799aa62069b9dafeb4368e85f36290aa5efa877a111d256bb01da86`
+-	Image ID: `sha256:9a01392b9059fb6e4c761f5060b6278a23188fcdb5c6f04a27c601d65f065ac6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf287c9d9bd0e7afac56fb4573b91240fc9ff4af1c7590b78346ab55cd2437ae`  
-		Last Modified: Mon, 28 Oct 2024 17:59:19 GMT  
+	-	`sha256:1a0db17b490d9668f28e94baee9515a3f8a19cdcc52cd628f100daf50417027e`  
+		Last Modified: Tue, 12 Nov 2024 08:11:58 GMT  
 		Size: 805.5 KB (805526 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:107b760905531ef4544f66d616e32878e84e10423bc80ebb3f5f302e18e975c1`  
-		Last Modified: Mon, 28 Oct 2024 17:59:18 GMT  
-		Size: 12.4 KB (12397 bytes)  
+	-	`sha256:e8a6713d8637eebce1e69df851b85e20f715c4eb33f2b1f0b5ebbabca4b3d540`  
+		Last Modified: Tue, 12 Nov 2024 08:11:58 GMT  
+		Size: 12.6 KB (12602 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `traefik:mimolette` - linux; riscv64
@@ -398,20 +398,20 @@ $ docker pull traefik@sha256:b78446232ba7f47e175d75a8c1e177009da756bdce77c7d346d
 ### `traefik:mimolette` - linux; s390x
 
 ```console
-$ docker pull traefik@sha256:9e4986c021b9355953326af1c03f14bab327083550930a6b5d32b455a7e4bf91
+$ docker pull traefik@sha256:e314c126c8a1bdb0a64a7293d10a44fed3a259cc24fe88b0b5bd8e547cf5cc97
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.2 MB (47218179 bytes)**  
+-	Total Size: **47.2 MB (47218197 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2c634e6385797b1355ba77b71825c99fbb10007f873255721d93e96bd6faf58`
+-	Image ID: `sha256:00d882ebbe974121ddb036733db64860545d815564f784e4b5d9f407f040a4ea`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["traefik"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 22:48:17 GMT
-ADD file:ba2637314e600db5a647501cf1ab287c5f51de1627c13bc1d82aa48925a3dd78 in / 
-# Fri, 06 Sep 2024 22:48:17 GMT
+# Fri, 06 Sep 2024 12:05:36 GMT
+ADD alpine-minirootfs-3.20.3-s390x.tar.gz / # buildkit
+# Fri, 06 Sep 2024 12:05:36 GMT
 CMD ["/bin/sh"]
 # Mon, 28 Oct 2024 09:59:42 GMT
 RUN apk --no-cache add ca-certificates tzdata # buildkit
@@ -430,43 +430,43 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 ```
 
 -	Layers:
-	-	`sha256:df110db6acd600b9ee5ebd7b510779652f96424d3f80321a4e0dcb8a09aa0526`  
-		Last Modified: Fri, 06 Sep 2024 22:48:57 GMT  
-		Size: 3.5 MB (3461598 bytes)  
+	-	`sha256:4261d20208fd5fe57c9f53c86783089a963169d6db6f16306e083ca43f937e0b`  
+		Last Modified: Tue, 12 Nov 2024 00:55:29 GMT  
+		Size: 3.5 MB (3461608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:559f652fd9a9f8a3a6d224500921f75ec5d4a02e5b286f03b3e0117bcd1ad7ac`  
-		Last Modified: Mon, 28 Oct 2024 17:58:27 GMT  
-		Size: 456.1 KB (456130 bytes)  
+	-	`sha256:b5cad909027556b526959742adf2017b5f01fcdce31e434af11d319a1b0f5ac7`  
+		Last Modified: Tue, 12 Nov 2024 08:44:58 GMT  
+		Size: 456.1 KB (456143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1116c8eee3bcae9b5e588598d00c53f0ef945c99069c7de15dfb2394f5b6147f`  
-		Last Modified: Mon, 28 Oct 2024 18:02:47 GMT  
-		Size: 43.3 MB (43300082 bytes)  
+	-	`sha256:49e7e8bea7835bbfb793f14ab56385b9011024b797884de6bd9fc11ea0fd64ca`  
+		Last Modified: Tue, 12 Nov 2024 08:47:24 GMT  
+		Size: 43.3 MB (43300077 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3393fc3d8b88a24735c77c9efff1de570895dddc3a9a92bf6e693619d4a4f742`  
-		Last Modified: Mon, 28 Oct 2024 18:02:46 GMT  
+	-	`sha256:75c049f115c1c8cb7c5470c52a279e2a37fa14be351479c06cace654f271a774`  
+		Last Modified: Tue, 12 Nov 2024 08:47:23 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `traefik:mimolette` - unknown; unknown
 
 ```console
-$ docker pull traefik@sha256:3e7ece045123646be0fbcec0f909a08da3c65bac8cce77aafe2c549b629ea0a8
+$ docker pull traefik@sha256:485020a2f8c56e668636936f12f41ae0466997a8b75bd5fb9faf63d28798b715
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **817.8 KB (817808 bytes)**  
+-	Total Size: **818.0 KB (818008 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0ef1f9b6bcce774129606f379d48903601bfe2c54086a75670010ab263763d3b`
+-	Image ID: `sha256:9e97c12e63fafd830228596186c675762268df9dac368179dcf2e9bac7e69f9d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a59ef85621c4fe37bfa19d865f7271e84201f87667bc58b4243ab35deea70f11`  
-		Last Modified: Mon, 28 Oct 2024 18:02:46 GMT  
+	-	`sha256:a216ad0aa3a67270dd2577c1417a222573f36861610bf9d99d6938855bb9bb12`  
+		Last Modified: Tue, 12 Nov 2024 08:47:24 GMT  
 		Size: 805.5 KB (805470 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b76080c7a4926888224e53513df66be5b7e4b464050295cb7d4db3637f15cb95`  
-		Last Modified: Mon, 28 Oct 2024 18:02:46 GMT  
-		Size: 12.3 KB (12338 bytes)  
+	-	`sha256:d9c866e1f2d39ee5b2b82091f7311a22e1439c3f440c7573949a546b5ec57386`  
+		Last Modified: Tue, 12 Nov 2024 08:47:24 GMT  
+		Size: 12.5 KB (12538 bytes)  
 		MIME: application/vnd.in-toto+json
