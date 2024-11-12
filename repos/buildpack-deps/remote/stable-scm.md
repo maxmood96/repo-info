@@ -1,7 +1,7 @@
 ## `buildpack-deps:stable-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:716c9a8881d99745df45430a2bd5eb334223d77b551619eff779bc05cd324e26
+$ docker pull buildpack-deps@sha256:d1d02d3341afdd9c1a97951899a50a9d4da1e9d63cec29bd477f2306730fae2e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -87,18 +87,18 @@ $ docker pull buildpack-deps@sha256:d933d77fc474f2f63922bf70e05b7ea0af809991a3e5
 ### `buildpack-deps:stable-scm` - linux; arm variant v5
 
 ```console
-$ docker pull buildpack-deps@sha256:065821ca01f5b46e546b666ebc542baa9cadd26c83971d920f718a4d04641532
+$ docker pull buildpack-deps@sha256:9a1f00aee35fdbfc3bbef35f7b430afe4b7d61335911b8ca883d4ee277540158
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.1 MB (132056978 bytes)**  
+-	Total Size: **132.1 MB (132068934 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c329746ec886de5abee981e2a8dad46f0a25ec5606516321a628ea9cec7098a8`
+-	Image ID: `sha256:f28e47e232c9eb35167cfd394f5c0f26dd9550bca5ee8ac3a7fb762992cd8e96`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-ADD file:f8dacf0eafc6476110951ab49fd75768d4262a1b61984cf9b4625bdd369500eb in / 
+ADD rootfs.tar.xz / # buildkit
 # Wed, 10 May 2023 23:29:59 GMT
 CMD ["bash"]
 # Wed, 10 May 2023 23:29:59 GMT
@@ -108,41 +108,41 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 ```
 
 -	Layers:
-	-	`sha256:638c60a841003707ab5971d86e3c262372536df80608e7e3641e6ad7f5dff43e`  
-		Last Modified: Thu, 17 Oct 2024 00:57:04 GMT  
-		Size: 47.3 MB (47330521 bytes)  
+	-	`sha256:895d07844c9c09054971f530ffd0794c329a785344079a01ce24e3d51727407e`  
+		Last Modified: Tue, 12 Nov 2024 00:54:43 GMT  
+		Size: 47.3 MB (47338750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74674b1e8da5cd0bdb2b88260b7dc90e413cff1e3bb65d3d272730dbf8690e00`  
-		Last Modified: Sat, 19 Oct 2024 00:54:46 GMT  
-		Size: 22.7 MB (22729575 bytes)  
+	-	`sha256:93efb128382700f7090be7bec74d12308eb11ced11717aae4403b7bccde20f24`  
+		Last Modified: Tue, 12 Nov 2024 06:28:08 GMT  
+		Size: 22.7 MB (22733304 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e2d8e5c6c3bd120c07665df831c223d98cd86db7ad072c55a7433e227d49b3d`  
-		Last Modified: Sat, 19 Oct 2024 02:55:37 GMT  
-		Size: 62.0 MB (61996882 bytes)  
+	-	`sha256:0f5d34c31582cec80127fc538f65a56104fac2a20c87dbcaafc70b88f7a0a8b7`  
+		Last Modified: Tue, 12 Nov 2024 11:29:42 GMT  
+		Size: 62.0 MB (61996880 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:stable-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:993bf84285db8ca4c11425d3a303adbe960660b326c4fe16d6692cff7d2cab22
+$ docker pull buildpack-deps@sha256:146afff14da66d2415f7e870a0b5475327d3b8c5c3012e0e73e9929ce55432aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.8 MB (7773658 bytes)**  
+-	Total Size: **7.8 MB (7773719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7175b75d18a4b7c149ef131238c169805dae0110254e68d196b78cef76713d9a`
+-	Image ID: `sha256:1139b21f47128807aca40d8f91d82ce8acf1684a9f67bba7bd10747e93444a31`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8b6c17ef335d13a13ac672b98127369486d26b77a478f85e6dda04d194d55425`  
-		Last Modified: Sat, 19 Oct 2024 02:55:36 GMT  
-		Size: 7.8 MB (7765924 bytes)  
+	-	`sha256:e5dc3d0311f5fe151c6c570f37bed7153cdc58ca55dc3f8244a7b0463ad6f4b5`  
+		Last Modified: Tue, 12 Nov 2024 11:29:41 GMT  
+		Size: 7.8 MB (7765996 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1348c0de7b4712e505c350d0c2142d3801c2c26e7c23faa55c9ce197ddd624d2`  
-		Last Modified: Sat, 19 Oct 2024 02:55:35 GMT  
-		Size: 7.7 KB (7734 bytes)  
+	-	`sha256:f3878cd87f19cd6baf6f4baacf94bb729da9783cc7ba94a83e2575efb914f143`  
+		Last Modified: Tue, 12 Nov 2024 11:29:40 GMT  
+		Size: 7.7 KB (7723 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:stable-scm` - linux; arm variant v7

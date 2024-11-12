@@ -1,7 +1,7 @@
 ## `buildpack-deps:trixie-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:5d1aec85f49adabfa72d49a5277fa9e2e1265fee75b32e533070a743f61e3196
+$ docker pull buildpack-deps@sha256:ae039e9cd6b38cfd9345885be1a90d44b88723c427b8acd95fd52b98fb785acb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -87,18 +87,18 @@ $ docker pull buildpack-deps@sha256:006c1a4f157ca8332c37cfc903f51fe99c90c9e534a7
 ### `buildpack-deps:trixie-scm` - linux; arm variant v5
 
 ```console
-$ docker pull buildpack-deps@sha256:d37244e77642358ecbd8e02f932a2b902759f4e78f883342dd90c58bbbe8d718
+$ docker pull buildpack-deps@sha256:8d8e3fdc5829aed1b63ea33f435469be1517cd603483aabe32fe43e31b9b84e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **133.5 MB (133522236 bytes)**  
+-	Total Size: **133.7 MB (133665306 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c554071c074e0f5662cb4bfd4cfcded5ab8352625767fff7ca547532bd761ee`
+-	Image ID: `sha256:16cf4cc1b27f69e3f63ac0b103f60c88fafda72f2853563fccebf54e71da792d`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-ADD file:010709d78fdc05933a72549f7cb322633ad7dbe3d97bfcbda0aa10337118fb24 in / 
+ADD rootfs.tar.xz / # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
 CMD ["bash"]
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -108,41 +108,41 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 ```
 
 -	Layers:
-	-	`sha256:f9250cc0718983393b852e9ddb20839b610fbab7fa648abee09b726c74343ff5`  
-		Last Modified: Thu, 17 Oct 2024 00:59:25 GMT  
-		Size: 50.1 MB (50146097 bytes)  
+	-	`sha256:4ff391534f557bd19067799d6e6b7e386e43cbf7d061a795a182546eb2145e99`  
+		Last Modified: Tue, 12 Nov 2024 00:58:57 GMT  
+		Size: 50.1 MB (50091523 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ec5571697784adcbe29d963579310eec564ff21e0a1805050b884b9a866946b3`  
-		Last Modified: Sat, 19 Oct 2024 00:56:34 GMT  
-		Size: 19.6 MB (19643438 bytes)  
+	-	`sha256:75d129d70e5af0f50e5354ff02342f42eba97458b43a0df2209f72566f664a4a`  
+		Last Modified: Tue, 12 Nov 2024 06:29:56 GMT  
+		Size: 19.6 MB (19607774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e345c83b2739677a81bb65e8b14bcf4b74047ea7c75729f3715016f0c7c8e4f7`  
-		Last Modified: Sat, 19 Oct 2024 02:57:55 GMT  
-		Size: 63.7 MB (63732701 bytes)  
+	-	`sha256:a342b984b6752601eb44f7fa9cc6f866d747d925571f5c63f8db143a85f2fc46`  
+		Last Modified: Tue, 12 Nov 2024 11:32:48 GMT  
+		Size: 64.0 MB (63966009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:trixie-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:00d18a1cb21b84828374be7fe1569f0476ca91ce608c97e03e32e76273476c4a
+$ docker pull buildpack-deps@sha256:55cb1fe2158d176fa5dcb4daeac857818c62b2e9366dc456933b6f31765d4469
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.5 MB (7494152 bytes)**  
+-	Total Size: **7.6 MB (7623355 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87e31d4e7fafe882a373e7a7298f5ea1647b1dbad6b13ce047d5cad2aedc3856`
+-	Image ID: `sha256:5037e5aaa8ca5213b9ca8057df32fbe8e1b104c09243d715658e4a29226b356c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:20ca6cafe1bb36aec82c18a4b5ccdd308f9b10df0fa623351c59a932487d23de`  
-		Last Modified: Sat, 19 Oct 2024 02:57:54 GMT  
-		Size: 7.5 MB (7486766 bytes)  
+	-	`sha256:cb82e81672aacf72d387cbc2f43da98514547c58c1480ebf7b5835d0e3fb28c7`  
+		Last Modified: Tue, 12 Nov 2024 11:32:47 GMT  
+		Size: 7.6 MB (7615982 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8c289e55fa61eb9c6049628f33edc91f1f20e240525f00e07e32498727c00d77`  
-		Last Modified: Sat, 19 Oct 2024 02:57:53 GMT  
-		Size: 7.4 KB (7386 bytes)  
+	-	`sha256:6d98118b2ef6e507ba56174c04789b05d0d96599c8d4772447261b2491bdffb5`  
+		Last Modified: Tue, 12 Nov 2024 11:32:46 GMT  
+		Size: 7.4 KB (7373 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:trixie-scm` - linux; arm variant v7
