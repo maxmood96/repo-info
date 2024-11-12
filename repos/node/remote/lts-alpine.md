@@ -1,7 +1,7 @@
 ## `node:lts-alpine`
 
 ```console
-$ docker pull node@sha256:25ba29777f040c42c68905650bc98f6441771c413042cda2c957b731056875b5
+$ docker pull node@sha256:b64ced2e7cd0a4816699fe308ce6e8a08ccba463c757c00c14cd372e3d2c763e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -168,20 +168,20 @@ $ docker pull node@sha256:73a444915ac7e13a3f003d43c762d42caab2db8b4f44c346da714a
 ### `node:lts-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull node@sha256:2a1ba06dd80e39969093432909ae3c8b2d9d5ba17983dabd59396f99ed1e65f3
+$ docker pull node@sha256:b66b17de82c138d47d3f7e345275b9ae192512b156f232c7be62da76bacd08de
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **51.2 MB (51201283 bytes)**  
+-	Total Size: **51.2 MB (51201360 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86de2c9007712d51d064ad8341d38ce0b95738db8512cd2402643d2052b1cc81`
+-	Image ID: `sha256:ee8adc65d8f2b2fc9f5c2e3d0d1203eee4910587576afb71ca333f8d366951e9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 22:08:00 GMT
-ADD file:8096a7e97160f837a432988b8138ffab07ff212be781f530c8baa2067265d071 in / 
-# Fri, 06 Sep 2024 22:08:01 GMT
+# Fri, 06 Sep 2024 12:05:36 GMT
+ADD alpine-minirootfs-3.20.3-armv7.tar.gz / # buildkit
+# Fri, 06 Sep 2024 12:05:36 GMT
 CMD ["/bin/sh"]
 # Tue, 29 Oct 2024 20:39:22 GMT
 ENV NODE_VERSION=22.11.0
@@ -200,45 +200,45 @@ CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:da2748c71804914f58a58693c998a4885dd24623380daf301f4a1a88185cb4c8`  
-		Last Modified: Fri, 06 Sep 2024 22:08:26 GMT  
-		Size: 3.1 MB (3095502 bytes)  
+	-	`sha256:2723bbe95689a46bd4cbe83e27fb42475660f41b02c96d21411fa76d803e8553`  
+		Last Modified: Mon, 09 Sep 2024 07:03:59 GMT  
+		Size: 3.1 MB (3095487 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39c7dab079d57c8fd6510f564337a8804de07661ef19d198f8c64506e384a09c`  
-		Last Modified: Wed, 30 Oct 2024 00:52:00 GMT  
-		Size: 46.7 MB (46719066 bytes)  
+	-	`sha256:9f991304ce7f1fb4d28c4b5b51fe43e4bee0acecaab12dcecf151cbffcf9f406`  
+		Last Modified: Tue, 12 Nov 2024 21:45:43 GMT  
+		Size: 46.7 MB (46719154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58142541c73d8cf6d57efa8885db76668ac18e5f00156ed1471001bd476b2076`  
-		Last Modified: Wed, 30 Oct 2024 00:51:54 GMT  
-		Size: 1.4 MB (1386270 bytes)  
+	-	`sha256:7a7b900e9ea192b9ff2f4a6536a9cab7aeb95ca29e4cd38e8676ef074f7d52ab`  
+		Last Modified: Tue, 12 Nov 2024 21:45:42 GMT  
+		Size: 1.4 MB (1386276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2ad24b0fca425eecaa85782827f4cd71ad53cec9315f186e50e28fd36ea2472`  
-		Last Modified: Wed, 30 Oct 2024 00:51:53 GMT  
-		Size: 445.0 B  
+	-	`sha256:03843b288fc2e25b6f1a3c38c42a465159e2cba395b257edac2734a269cdbbfe`  
+		Last Modified: Tue, 12 Nov 2024 21:45:41 GMT  
+		Size: 443.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:lts-alpine` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:f0a03e335d0c63af978ea9e00b9a1e45b9938c4a5972cfc6461530682530b2a2
+$ docker pull node@sha256:38e2e58a9977619cc1386493317566485636bdfbc2d32f76c1405378f020dfaf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **438.6 KB (438565 bytes)**  
+-	Total Size: **438.8 KB (438769 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:66ecca0028803e5dd5ba9ca326822f88f247af6a7d15c47e0329d24f3059f8cd`
+-	Image ID: `sha256:14a987be8e0fcd5a74f344c9bd81f7915c5680954ca5c0f60589ada05ef45279`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:67aabf6975c65b6dcd640e6375196dc27795f289b960bb0b200e1e94c9bc7f1c`  
-		Last Modified: Wed, 30 Oct 2024 00:51:54 GMT  
+	-	`sha256:e4768f60f9cb7236eebab3fdf7140c2674c7d060ac49d361ad4f5c24ac5280f4`  
+		Last Modified: Tue, 12 Nov 2024 21:45:41 GMT  
 		Size: 413.3 KB (413303 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:66c0ce2526a8e62f5f8f65b1eeb5315c78ee717f8271c353d8c3e0f440c7798e`  
-		Last Modified: Wed, 30 Oct 2024 00:51:53 GMT  
-		Size: 25.3 KB (25262 bytes)  
+	-	`sha256:2b66551c06ce474d4ee89fa5586ff89e9da135aae72294821806ad3a63d5e7c3`  
+		Last Modified: Tue, 12 Nov 2024 21:45:41 GMT  
+		Size: 25.5 KB (25466 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `node:lts-alpine` - linux; arm64 variant v8
