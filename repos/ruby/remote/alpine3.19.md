@@ -1,7 +1,7 @@
 ## `ruby:alpine3.19`
 
 ```console
-$ docker pull ruby@sha256:e79fddb4a38ba940b4f10e4f155621fc52ff894ac48dadd399189265d314e979
+$ docker pull ruby@sha256:ed7d4932f8ad58a1d359022d2dd3f2b9282a3c1eece1c246c781d76182dcc8a0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24,19 +24,19 @@ $ docker pull ruby@sha256:e79fddb4a38ba940b4f10e4f155621fc52ff894ac48dadd3991892
 ### `ruby:alpine3.19` - linux; amd64
 
 ```console
-$ docker pull ruby@sha256:e89ab66cc01eae365c5061bdd34b335812e21c5f59d4a694dc85514d8f62de66
+$ docker pull ruby@sha256:abd3b6047fc4ecae5edb4637233f78efeca44bbc3b930b097b8111e7f71d9550
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.3 MB (47296862 bytes)**  
+-	Total Size: **47.3 MB (47297015 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:71bb50795f50a9dfe14c0f2644fe985c8ccac866ac06f900181c21f692a71dd9`
+-	Image ID: `sha256:4e8a70c7b6df521af7da557f42bc9b5ae36b9dd2e5fb0b9c4418ecac5b5b913a`
 -	Default Command: `["irb"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 22:20:13 GMT
-ADD file:9e193d6fff4bce11c0ee715ad87def9ef40e9608d4be84cf73391edd45b2810e in / 
-# Fri, 06 Sep 2024 22:20:13 GMT
+# Fri, 06 Sep 2024 12:04:22 GMT
+ADD alpine-minirootfs-3.19.4-x86_64.tar.gz / # buildkit
+# Fri, 06 Sep 2024 12:04:22 GMT
 CMD ["/bin/sh"]
 # Tue, 05 Nov 2024 06:03:16 GMT
 RUN set -eux; 	apk add --no-cache 		bzip2 		ca-certificates 		gmp-dev 		libffi-dev 		procps 		yaml-dev 		zlib-dev 	; # buildkit
@@ -65,49 +65,49 @@ CMD ["irb"]
 ```
 
 -	Layers:
-	-	`sha256:94c7366c1c3058fbc60a5ea04b6d13199a592a67939a043c41c051c4bfcd117a`  
-		Last Modified: Fri, 06 Sep 2024 22:20:51 GMT  
-		Size: 3.4 MB (3419706 bytes)  
+	-	`sha256:a7cd7d9a21440da0d765f2989d75f069adf9b3463a765421a0590bca720920d4`  
+		Last Modified: Mon, 09 Sep 2024 07:03:22 GMT  
+		Size: 3.4 MB (3419728 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89ad7482b5dd7389b069bfaae5e892de293c1221af2ab1285cfbd4b3f985935b`  
-		Last Modified: Tue, 05 Nov 2024 20:40:25 GMT  
-		Size: 6.7 MB (6676589 bytes)  
+	-	`sha256:3f22fa0b8399fbfbe079c4814770b6842bfa2afec4816a5a924c16bf7261c075`  
+		Last Modified: Tue, 12 Nov 2024 02:51:10 GMT  
+		Size: 6.7 MB (6676606 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb8228625cd5cad1e225e3560b70167d70ead7b46a6367e1fe37eaf7ff4e2769`  
-		Last Modified: Tue, 05 Nov 2024 20:40:25 GMT  
-		Size: 196.0 B  
+	-	`sha256:5753f84b1f14f0742baeabb79a1b9a5e6ebfd8020f9a0a9475310a122260602a`  
+		Last Modified: Tue, 12 Nov 2024 02:51:09 GMT  
+		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74091535933247bf1ec5d19f934571ce331e4f6d399439aeab0ea3661fc1dab0`  
-		Last Modified: Tue, 05 Nov 2024 20:40:25 GMT  
-		Size: 37.2 MB (37200232 bytes)  
+	-	`sha256:5f76a1477a6df61de9409b75d6dd3eb02881425b9a7fe57cba635d9f36c5a5a6`  
+		Last Modified: Tue, 12 Nov 2024 02:51:10 GMT  
+		Size: 37.2 MB (37200344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:affc43e44cab436546768ec5f53747859e452151217235fddd1dc713c0a03008`  
-		Last Modified: Tue, 05 Nov 2024 20:40:25 GMT  
-		Size: 139.0 B  
+	-	`sha256:104bd0866433baf80ee026741081f6ed41b5211125c88649d40ddb5d66aad66d`  
+		Last Modified: Tue, 12 Nov 2024 02:51:09 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ruby:alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull ruby@sha256:00c90c35c583d18e751f0aea267ce9a168fa70a82a32d8c523515fc00a2a4116
+$ docker pull ruby@sha256:c3e10bde73c93269404f8257c08b51bbf34636a018f3e6741c025ee4bb1baed1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **992.4 KB (992365 bytes)**  
+-	Total Size: **992.6 KB (992558 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:99cbe22257aff5f6b7b0ad00815ce287b676a9ee7cd595e15a2eccf93b6b1eb7`
+-	Image ID: `sha256:b8657542906d13eec59b3c2abcfacf668c25f699da3d51fb20eaff6b2e84c7fe`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5d2272aee95c8d30ff89dd9ee4df0fc75605fd2e70b377248029a44c36aa4ac7`  
-		Last Modified: Tue, 05 Nov 2024 20:40:25 GMT  
+	-	`sha256:5e5f399ac85d62bc7cb990e393fda00d49b70b88cea20fb187c4eacde158e0a6`  
+		Last Modified: Tue, 12 Nov 2024 02:51:09 GMT  
 		Size: 967.0 KB (966969 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:97729c79bc3c646c6fafc30ed1080e027a01d2eef9a96f89bedb59f825e8439e`  
-		Last Modified: Tue, 05 Nov 2024 20:40:25 GMT  
-		Size: 25.4 KB (25396 bytes)  
+	-	`sha256:c42542390759f1a5ee2a939659473be426cbd882e3a51e75615349a0f7033ce7`  
+		Last Modified: Tue, 12 Nov 2024 02:51:09 GMT  
+		Size: 25.6 KB (25589 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ruby:alpine3.19` - linux; arm variant v6
