@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:95d98ebf0912d2345ad228f3bb834ca4b10540b26cdfe487af9536d32fb0a7f0`
+- Image ID: `sha256:440b682c2e0b3520b3d15efe8c10dfabf3bc2585701f09a29147bb9c7f2f498f`
 - Created: `2024-10-28T03:18:11Z`
-- Virtual Size: ~ 205.29 Mb  
+- Virtual Size: ~ 205.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["raku"]`
