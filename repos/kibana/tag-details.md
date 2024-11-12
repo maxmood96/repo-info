@@ -4,6 +4,7 @@
 
 -	[`kibana:7.17.25`](#kibana71725)
 -	[`kibana:8.15.3`](#kibana8153)
+-	[`kibana:8.16.0`](#kibana8160)
 
 ## `kibana:7.17.25`
 
@@ -630,3 +631,7 @@ $ docker pull kibana@sha256:8d82ccf652591320627593027c061950e5cbbc5d08ccf2d5aad8
 		Last Modified: Thu, 17 Oct 2024 22:20:46 GMT  
 		Size: 40.7 KB (40667 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `kibana:8.16.0`
+
+**does not exist** (yet?)
