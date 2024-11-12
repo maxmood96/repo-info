@@ -1,7 +1,7 @@
 ## `satosa:8-alpine3.19`
 
 ```console
-$ docker pull satosa@sha256:3183c85c919e25406c9e9faee3767b174a3bbbdf23fc37253a699f5b9fcd5591
+$ docker pull satosa@sha256:8bf2c4780315993658c15712418ea412abf7ca18d372cac7540ef493ec838ca3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20,19 +20,19 @@ $ docker pull satosa@sha256:3183c85c919e25406c9e9faee3767b174a3bbbdf23fc37253a69
 ### `satosa:8-alpine3.19` - linux; amd64
 
 ```console
-$ docker pull satosa@sha256:da654a9c70c56461ca5854fc98fe88371d8c3f503e89395b1a1f38b2d9a46144
+$ docker pull satosa@sha256:da91802ef433e38d393720e8b82b433e2efd4bc44f6185c8cf733415e30ac559
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **46.1 MB (46108318 bytes)**  
+-	Total Size: **48.4 MB (48376293 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed40ba881eb87111aa4f515c8bb17c49f165cad87a3f72f3a4f244fa5e5d3f6a`
+-	Image ID: `sha256:4f6d73c586860867adda7484c92e91dab1532f41373a8da552b5e4b42cf8857f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["gunicorn","-b0.0.0.0:8080","satosa.wsgi:app"]`
 
 ```dockerfile
 # Tue, 19 Dec 2023 17:24:54 GMT
-ADD file:9e193d6fff4bce11c0ee715ad87def9ef40e9608d4be84cf73391edd45b2810e in / 
+ADD alpine-minirootfs-3.19.4-x86_64.tar.gz / # buildkit
 # Tue, 19 Dec 2023 17:24:54 GMT
 CMD ["/bin/sh"]
 # Tue, 19 Dec 2023 17:24:54 GMT
@@ -76,64 +76,64 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 ```
 
 -	Layers:
-	-	`sha256:94c7366c1c3058fbc60a5ea04b6d13199a592a67939a043c41c051c4bfcd117a`  
-		Last Modified: Fri, 06 Sep 2024 22:20:51 GMT  
-		Size: 3.4 MB (3419706 bytes)  
+	-	`sha256:a7cd7d9a21440da0d765f2989d75f069adf9b3463a765421a0590bca720920d4`  
+		Last Modified: Mon, 09 Sep 2024 07:03:22 GMT  
+		Size: 3.4 MB (3419728 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5afe86d3e994b76812624a995625be391e6018ba091e6b5537f49c28d001c5d7`  
-		Last Modified: Sat, 19 Oct 2024 01:08:42 GMT  
-		Size: 627.9 KB (627918 bytes)  
+	-	`sha256:87c0521accf2c10c8374688bc69db36195a3ceb9f18930fd9c6769cb8c9f8a2a`  
+		Last Modified: Tue, 12 Nov 2024 02:23:07 GMT  
+		Size: 627.9 KB (627914 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad43838c886440c85d5e93bedc8b9d936f47f4c605295992e8f220c1b6ccfd5c`  
-		Last Modified: Sat, 19 Oct 2024 01:08:42 GMT  
-		Size: 13.5 MB (13505285 bytes)  
+	-	`sha256:e3e454dcda3615b9310203e80f88ea6ebe8d678c59b323e9d92b7989d3769a80`  
+		Last Modified: Tue, 12 Nov 2024 02:23:08 GMT  
+		Size: 15.7 MB (15711404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:02d0b1d1b314339c5125816da83607f6eeca8f435c3c72ab652de8a8e44b2b3f`  
-		Last Modified: Sat, 19 Oct 2024 01:08:41 GMT  
-		Size: 249.0 B  
+	-	`sha256:0befcb55ed9e503929202f13f0611957c2020877d287a0a786cd1073ad8c5035`  
+		Last Modified: Tue, 12 Nov 2024 02:23:07 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b41b59bef7dfa4b9daca571faa88c33d331e1a02356dee9de384e4d5cb26f2e`  
-		Last Modified: Sat, 19 Oct 2024 02:07:32 GMT  
-		Size: 7.4 MB (7411491 bytes)  
+	-	`sha256:8b6976a574c009542d1a4df9b9d534a2c55676e8085f4f78257c0395184443b0`  
+		Last Modified: Tue, 12 Nov 2024 03:16:23 GMT  
+		Size: 7.4 MB (7411427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f516c3a5778dc6b7dc65e0026440cda1a7a068945f96cc6206a600642caeb662`  
-		Last Modified: Sat, 19 Oct 2024 02:07:32 GMT  
-		Size: 21.1 MB (21131573 bytes)  
+	-	`sha256:125b266dde0eabc0bdf736423ed00dcb5e26514db335fdfaa7c070235a535884`  
+		Last Modified: Tue, 12 Nov 2024 03:16:24 GMT  
+		Size: 21.2 MB (21193483 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8073525aa3e1745e55be5f0997b3961945e38ef50c2d54164a74dbad76605e99`  
-		Last Modified: Sat, 19 Oct 2024 02:07:32 GMT  
-		Size: 9.9 KB (9922 bytes)  
+	-	`sha256:36d9c1b95e3cc445d042efb5fc470f9995bce17d4274fb16f44e4390e32a8f4b`  
+		Last Modified: Tue, 12 Nov 2024 03:16:23 GMT  
+		Size: 9.9 KB (9918 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4872803db510c491aa0f410b93a0d4680c12dfbe2173bd38c3ef8d294f0de2d7`  
-		Last Modified: Sat, 19 Oct 2024 02:07:32 GMT  
-		Size: 2.1 KB (2142 bytes)  
+	-	`sha256:c9c811d0de2650b73fea3e2d4280f7bf65069deb2aafdf6d8b7b67291d579bd3`  
+		Last Modified: Tue, 12 Nov 2024 03:16:23 GMT  
+		Size: 2.1 KB (2139 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `satosa:8-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull satosa@sha256:07b084019ad04274eddcda35d8829f9be5b7f066eeac8e4b1fb8224a42527b13
+$ docker pull satosa@sha256:cb167a19e95a9d4226de5af76efd37ff7bf280ff2174dd26cd244d5b175fcd54
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **1.2 MB (1201992 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9c3bd09ddae9cf59f569aa6e25033bdef6905eaa96b8c5dc8f1b7820ffa64e1f`
+-	Image ID: `sha256:89d3d5574b999e1ff080bc0fdfd2fceb11df8159e35626f76c473a8a057d41ce`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:89ce84edd26e470a42c98ff479e6e83752e5a99fa05bc4c4ee9e8d6460813c1f`  
-		Last Modified: Sat, 19 Oct 2024 02:07:32 GMT  
+	-	`sha256:d96c624cf94e67ae2ef074c8aa6751e0e56c10ebfcbbc573720681dbc03e5128`  
+		Last Modified: Tue, 12 Nov 2024 03:16:23 GMT  
 		Size: 1.2 MB (1179178 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2d6d9bcac819cf9ca5fbd1ad319784f4da0e04552a93f6fec7b05860a1533d6e`  
-		Last Modified: Sat, 19 Oct 2024 02:07:32 GMT  
+	-	`sha256:dac4e5d94f9d7d5e28e96ac94e3ded8cefa0288545c3338c72df575402ed3533`  
+		Last Modified: Tue, 12 Nov 2024 03:16:23 GMT  
 		Size: 22.8 KB (22814 bytes)  
 		MIME: application/vnd.in-toto+json
 
