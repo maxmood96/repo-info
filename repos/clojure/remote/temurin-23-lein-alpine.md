@@ -1,7 +1,7 @@
 ## `clojure:temurin-23-lein-alpine`
 
 ```console
-$ docker pull clojure@sha256:384b23d991a7d43d7608278454da9650020e102a847fc40332121ef42e11f221
+$ docker pull clojure@sha256:45df7d9bf5edfda4b0fc774d733b99a9614c8050e47ed364d160f07734a88bc9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,20 +12,20 @@ $ docker pull clojure@sha256:384b23d991a7d43d7608278454da9650020e102a847fc403321
 ### `clojure:temurin-23-lein-alpine` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:e91fe6460f9838db9411c039738401f516af18a892496743b3c0c50f4a9a168b
+$ docker pull clojure@sha256:58fff2b22165d277cd4e93017a692b69fc3561a9d3210a40a3fe6c00c54964fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **215.5 MB (215460023 bytes)**  
+-	Total Size: **215.5 MB (215460643 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:71febedcdad4529e40353160187dea1d42c0219cd8aa2db26f6b627341245241`
+-	Image ID: `sha256:bddf7e63d717527c8d910fc00d1fb06c21861248f2ecda7508e6dbcf0b74ed31`
 -	Entrypoint: `["entrypoint"]`
 -	Default Command: `["repl"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 22:20:07 GMT
-ADD file:5758b97d8301c84a204a6e516241275d785a7cade40b2fb99f01fe122482e283 in / 
-# Fri, 06 Sep 2024 22:20:07 GMT
+# Fri, 06 Sep 2024 12:05:36 GMT
+ADD alpine-minirootfs-3.20.3-x86_64.tar.gz / # buildkit
+# Fri, 06 Sep 2024 12:05:36 GMT
 CMD ["/bin/sh"]
 # Thu, 03 Oct 2024 17:49:34 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -70,63 +70,63 @@ CMD ["repl"]
 ```
 
 -	Layers:
-	-	`sha256:43c4264eed91be63b206e17d93e75256a6097070ce643c5e8f0379998b44f170`  
-		Last Modified: Fri, 06 Sep 2024 22:20:39 GMT  
-		Size: 3.6 MB (3623807 bytes)  
+	-	`sha256:da9db072f522755cbeb85be2b3f84059b70571b229512f1571d9217b77e1087f`  
+		Last Modified: Fri, 06 Sep 2024 14:39:08 GMT  
+		Size: 3.6 MB (3623904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0d6c61b4122c4041551807008b7fb7c5a6aed794c67e600039f12b1bfb26541`  
-		Last Modified: Thu, 24 Oct 2024 00:58:09 GMT  
-		Size: 23.0 MB (22953333 bytes)  
+	-	`sha256:80ac0afaffe8235a13dd8d90914a2d6cd114cf39e349a24c38c2bcdea79ab015`  
+		Last Modified: Tue, 12 Nov 2024 02:39:09 GMT  
+		Size: 23.0 MB (22953184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29c1f57d70da5691d45e3b453ea602f88dec1cb5124492947b1c8bf718aaefa7`  
-		Last Modified: Thu, 24 Oct 2024 00:58:11 GMT  
-		Size: 165.5 MB (165513205 bytes)  
+	-	`sha256:f0deb3338abfe175e7b298fa61a7147c870fb4aed00f53f4d30d674547e1b45f`  
+		Last Modified: Tue, 12 Nov 2024 02:39:12 GMT  
+		Size: 165.5 MB (165513301 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61f6884f085d1c712fbde3dc66a7118dea03eaa2f60358e17066d1be1e1bbab5`  
-		Last Modified: Thu, 24 Oct 2024 00:58:09 GMT  
-		Size: 128.0 B  
+	-	`sha256:3915703c046dd63269dbc212a69ec33a47d1030d48b31a874adf6bf73d47c449`  
+		Last Modified: Tue, 12 Nov 2024 02:39:07 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26e8c7349cbe3bf93d50773b69fbb2323de87e868f68e5f257129801a4ae5d57`  
-		Last Modified: Thu, 24 Oct 2024 00:57:57 GMT  
-		Size: 2.3 KB (2280 bytes)  
+	-	`sha256:c78fe47fe453af682fad0d120e9e4f2a5c05f85ebe5e3bdec8014fc7020c9c7d`  
+		Last Modified: Tue, 12 Nov 2024 02:38:50 GMT  
+		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21c9b367b95e1857c0771aa9c3d6b86d3f5efc9c318d012c61a536dd02ea0fe0`  
-		Last Modified: Thu, 24 Oct 2024 02:00:22 GMT  
-		Size: 18.9 MB (18852664 bytes)  
+	-	`sha256:27627abaab8acb268d0bb247a66961a2e514bccd1eb0a2c696f3831a1f973dcf`  
+		Last Modified: Tue, 12 Nov 2024 03:11:42 GMT  
+		Size: 18.9 MB (18853234 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6225ad63e53182a2f1eabd643d2d7cba64cd80fb5018879cab435659be0f79b8`  
-		Last Modified: Thu, 24 Oct 2024 02:00:22 GMT  
-		Size: 4.5 MB (4514169 bytes)  
+	-	`sha256:0466b2d51efc904afbb0404de372ff574b828c8836fd087feee4daff626c7cf0`  
+		Last Modified: Tue, 12 Nov 2024 03:11:42 GMT  
+		Size: 4.5 MB (4514173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:402d86a07b51dba1fe0fea903dd3d996ed2c17eff16553e384d3963cbc37aeee`  
-		Last Modified: Thu, 24 Oct 2024 02:00:22 GMT  
-		Size: 405.0 B  
+	-	`sha256:b3f7e131ff87990553796fce71d601307f843a32582588724f52cc469b654c22`  
+		Last Modified: Tue, 12 Nov 2024 03:11:41 GMT  
+		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-23-lein-alpine` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:ae087d6ab05719a0c2b01260652eb1800254aa2c3a3f91194f3fefd931d836c3
+$ docker pull clojure@sha256:32384b8952c5e10d8d78ff2c9d34ad7803daa0954939a0387f8be077f59543ce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 MB (1180222 bytes)**  
+-	Total Size: **1.2 MB (1180223 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b17c2ed8cbcfaf9c495b85a1a7dd86a8e3fb11d176263441b831826b6b40ede`
+-	Image ID: `sha256:3257a6634af0c1593b2625d2ba2c5ab13a92b757de27696ca672f0418c6df781`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0f1d502d288054a03dafbe1461d9121dc88e862a10ff5b16bd10f136be83b5a5`  
-		Last Modified: Thu, 24 Oct 2024 02:00:22 GMT  
-		Size: 1.2 MB (1161954 bytes)  
+	-	`sha256:26c9fdb1707333cdfa9e41b95303338a1a2f54b7bf01df412aa2a000f941b5b4`  
+		Last Modified: Tue, 12 Nov 2024 03:11:42 GMT  
+		Size: 1.2 MB (1161955 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8236795f7d3bf83c38e2489d6ab34a91010373398ab3f3a5f76b719fd5b76328`  
-		Last Modified: Thu, 24 Oct 2024 02:00:22 GMT  
+	-	`sha256:da49b93ab1390a6aa88d3abc05deb29185747ad1ac53506a2e99577c21343d98`  
+		Last Modified: Tue, 12 Nov 2024 03:11:41 GMT  
 		Size: 18.3 KB (18268 bytes)  
 		MIME: application/vnd.in-toto+json
