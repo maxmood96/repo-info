@@ -1,7 +1,7 @@
 ## `eggdrop:develop`
 
 ```console
-$ docker pull eggdrop@sha256:cb5e914285df36688442055cf19abb979ab0de11b14dbc41cf2cf1b21fd69b49
+$ docker pull eggdrop@sha256:8707e287bf7430406b3f2048b34658ab548a5bc2cf9ef91dfe09ce749ef7f1e0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,19 +16,19 @@ $ docker pull eggdrop@sha256:cb5e914285df36688442055cf19abb979ab0de11b14dbc41cf2
 ### `eggdrop:develop` - linux; amd64
 
 ```console
-$ docker pull eggdrop@sha256:e35a60699d0a9d8fd305a5ecc44b2f9a3673c2a3d5923116834b79437d0e0c8d
+$ docker pull eggdrop@sha256:ba872aff23094a30eaa6838554ce70381e66f2c91683eda5ab1f49c88ccf1ac7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.4 MB (16410625 bytes)**  
+-	Total Size: **18.7 MB (18687102 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2bac9601bf3a0ea9df0d8cb4c39aab7d4f819ea81ccf60895582c6e9180da064`
+-	Image ID: `sha256:d3b5c179ad9f8f493ed49092acce6fdea3424edb41cc5bdb43082dc99ceb7d6b`
 -	Entrypoint: `["\/home\/eggdrop\/eggdrop\/entrypoint.sh"]`
 -	Default Command: `["eggdrop.conf"]`
 
 ```dockerfile
 # Thu, 08 Aug 2024 15:45:15 GMT
-ADD file:5758b97d8301c84a204a6e516241275d785a7cade40b2fb99f01fe122482e283 in / 
+ADD alpine-minirootfs-3.20.3-x86_64.tar.gz / # buildkit
 # Thu, 08 Aug 2024 15:45:15 GMT
 CMD ["/bin/sh"]
 # Thu, 08 Aug 2024 15:45:15 GMT
@@ -68,57 +68,57 @@ CMD ["eggdrop.conf"]
 ```
 
 -	Layers:
-	-	`sha256:43c4264eed91be63b206e17d93e75256a6097070ce643c5e8f0379998b44f170`  
-		Last Modified: Fri, 06 Sep 2024 22:20:39 GMT  
-		Size: 3.6 MB (3623807 bytes)  
+	-	`sha256:da9db072f522755cbeb85be2b3f84059b70571b229512f1571d9217b77e1087f`  
+		Last Modified: Fri, 06 Sep 2024 14:39:08 GMT  
+		Size: 3.6 MB (3623904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb209af1764bcbfa0c48f2a65dde47657f4c675b7e5057a08e0aa5848d873a69`  
-		Last Modified: Fri, 06 Sep 2024 23:17:42 GMT  
-		Size: 964.0 B  
+	-	`sha256:6256f4e54550df2409efdfa86ba3d8fcdbcfe40a1d10756972ce4785955a906a`  
+		Last Modified: Tue, 12 Nov 2024 02:12:36 GMT  
+		Size: 967.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:630d7778d2e0f9a12663737b02fd1fb5fb0a0a7ae5e5d345a88026b9d744c2d9`  
-		Last Modified: Fri, 06 Sep 2024 23:17:42 GMT  
-		Size: 1.1 MB (1115387 bytes)  
+	-	`sha256:478d342f80b75ef32a72040d548e8c478c8ba4e23878854f6e3a01999d502126`  
+		Last Modified: Tue, 12 Nov 2024 02:12:36 GMT  
+		Size: 3.4 MB (3391840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d842f35428ec42446199c23e29c853f224985bed198b70aebc2d43d30bfea77e`  
-		Last Modified: Fri, 06 Sep 2024 23:17:43 GMT  
-		Size: 11.7 MB (11667370 bytes)  
+	-	`sha256:1769cb2904e96950eaff9506da16b7f793a76ea655bec0e47e91037d97df608c`  
+		Last Modified: Tue, 12 Nov 2024 02:12:36 GMT  
+		Size: 11.7 MB (11667279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b6fc40472f1c1aba83f44cd0cb87bfb11fcef0ebee915a583ea9ec78cbe89e44`  
-		Last Modified: Fri, 06 Sep 2024 23:17:42 GMT  
-		Size: 1.9 KB (1943 bytes)  
+	-	`sha256:686e5158e92ce1a2fd02a75d20a7e569b7aa7ca15d9b6cc98f852b74e58d1672`  
+		Last Modified: Tue, 12 Nov 2024 02:12:36 GMT  
+		Size: 2.0 KB (1953 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66a761a8fc913603544268c090bf12a12aba2e1fe908e680bd84121078493a44`  
-		Last Modified: Fri, 06 Sep 2024 23:17:43 GMT  
-		Size: 1.1 KB (1122 bytes)  
+	-	`sha256:6b3c56ae5709b9b9491adb3450185a90c252d0317ac8f2c12405df534e4340e8`  
+		Last Modified: Tue, 12 Nov 2024 02:12:37 GMT  
+		Size: 1.1 KB (1127 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eggdrop:develop` - unknown; unknown
 
 ```console
-$ docker pull eggdrop@sha256:d580133230e25693533e6667d990b3cb77d3d04b8dc757e2e80d30b0b5e6f8b8
+$ docker pull eggdrop@sha256:3ed26bbf051068437c26b68731788fd36143dd5a289ddd6b9a6234109cfdbcce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.2 KB (153176 bytes)**  
+-	Total Size: **153.5 KB (153497 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6970303d5fa6fc06468129aed534dca0d9cf4f28735757fb534a225b052622e7`
+-	Image ID: `sha256:1e072ad35bcc6c2c938ebdb9e2abf2dd61ff562ded949276b82afd816f659e3b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1f633f4305ad71fbcab58f89a16a9a558b51ebc891f7dd5dd906beecf88601a6`  
-		Last Modified: Fri, 06 Sep 2024 23:17:43 GMT  
-		Size: 136.0 KB (136039 bytes)  
+	-	`sha256:b6a41726558387ec03eb989d5799932432e545776af9c2e37517c1fa9910c72f`  
+		Last Modified: Tue, 12 Nov 2024 02:12:36 GMT  
+		Size: 136.1 KB (136145 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0e817be8d5d55f1b25595aeebae172ea3d367c5bdb3a7eb830a822dcc7c55153`  
-		Last Modified: Fri, 06 Sep 2024 23:17:43 GMT  
-		Size: 17.1 KB (17137 bytes)  
+	-	`sha256:55aa27aae26f19058cd9a17b8c43e9086d579d150da90577411bb3bf19431c98`  
+		Last Modified: Tue, 12 Nov 2024 02:12:36 GMT  
+		Size: 17.4 KB (17352 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `eggdrop:develop` - linux; arm variant v6
