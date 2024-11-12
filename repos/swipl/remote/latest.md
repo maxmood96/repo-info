@@ -1,7 +1,7 @@
 ## `swipl:latest`
 
 ```console
-$ docker pull swipl@sha256:3091a6fbc589a4f34f80922b6b30b94233d9d42641466affdbf456d61f8b1c25
+$ docker pull swipl@sha256:f3ecd2388d781865015e16f008ec20b63b5cdccd781c3635f00344365d75433a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -83,19 +83,19 @@ $ docker pull swipl@sha256:f63cee6056bbc0a87ee242064514eaf01c73bc24551b7d4d6c391
 ### `swipl:latest` - linux; arm variant v7
 
 ```console
-$ docker pull swipl@sha256:f390b062c647d2f6ce9b7c4a45beafbc9ae95d5f4d79aadb2bd600459ef2a7d1
+$ docker pull swipl@sha256:b07907c52700cff54c8548581e8f305bdbd11f9f74fd1d63aaf0d35e23aa0380
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.8 MB (82776846 bytes)**  
+-	Total Size: **82.8 MB (82771183 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:99df0c5d7302f9c54af3fa0f82c235d2ff8b866afe4c86198b90c92991af928c`
+-	Image ID: `sha256:7115c3d14fde3a5ca68b85794cd233c3de8d3dcbfc06c31c4e6579864d062145`
 -	Default Command: `["swipl"]`
 
 ```dockerfile
-# Thu, 17 Oct 2024 03:03:21 GMT
-ADD file:e76e8ba7ebca0b1dcaec16ad1e863ab59c7e155f0b95ba46f5543e418a904b35 in / 
-# Thu, 17 Oct 2024 03:03:22 GMT
+# Thu, 31 Oct 2024 13:50:48 GMT
+ADD rootfs.tar.xz / # buildkit
+# Thu, 31 Oct 2024 13:50:48 GMT
 CMD ["bash"]
 # Thu, 31 Oct 2024 13:50:48 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Michael Hendricks <michael@ndrix.org>
@@ -110,41 +110,41 @@ CMD ["swipl"]
 ```
 
 -	Layers:
-	-	`sha256:d6319e551f4eae5cadf245338228c7b7cbad94a77c481a88ccbffef7b89f0aee`  
-		Last Modified: Thu, 17 Oct 2024 03:06:55 GMT  
-		Size: 24.7 MB (24718197 bytes)  
+	-	`sha256:ddd3c6488ea8b62db6811ba136fe14cba70219532910e67a91ed3388ec9f5757`  
+		Last Modified: Tue, 12 Nov 2024 00:56:42 GMT  
+		Size: 24.7 MB (24718909 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d737c752fb77e2ad5236d232ab5a86ea38bcdb521b3ab893a6fa979c8c5966b8`  
-		Last Modified: Fri, 18 Oct 2024 02:13:19 GMT  
-		Size: 43.7 MB (43723347 bytes)  
+	-	`sha256:7e5c21fa4169213eb4e571405f837875ed102be8e3d768c9af90bff7c9ccd3e0`  
+		Last Modified: Tue, 12 Nov 2024 15:35:09 GMT  
+		Size: 43.7 MB (43717482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6ff220951c029e0a9477c0dc8b3fc5421d45c3baf70aad14ca3a2dff64ce1c3`  
-		Last Modified: Thu, 31 Oct 2024 23:00:21 GMT  
-		Size: 14.3 MB (14335302 bytes)  
+	-	`sha256:0a3945fc47aaa963e402af81fd98afbafc50620c27e0165da166d78c24fdabf1`  
+		Last Modified: Tue, 12 Nov 2024 15:35:08 GMT  
+		Size: 14.3 MB (14334792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swipl:latest` - unknown; unknown
 
 ```console
-$ docker pull swipl@sha256:36c2c0a9b3bd8250f447710e22d3f6ab4f25255ed47da7353016469e782e227c
+$ docker pull swipl@sha256:395f45dceb1c1cacc92214acd677758e327365c69dbd10024e69b0fae652ec93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3183473 bytes)**  
+-	Total Size: **3.2 MB (3183693 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a035c752cff624a591564d260d7ffbc52cd6ed0a4328066a48f6b5ca532e3150`
+-	Image ID: `sha256:1664331d8ed56045c77ee929a2e3beaa512eab7936346cb74c5f594bcf31c9ed`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eb312aad7ee24cb5eba9e513bf0739603f8b1615cd095c4aa067cba29cafdadb`  
-		Last Modified: Thu, 31 Oct 2024 23:00:20 GMT  
-		Size: 3.2 MB (3166073 bytes)  
+	-	`sha256:fc87931731cb469b8b18783ee9f216296559bb3a8a8c62535f0b1cc7b97f54c0`  
+		Last Modified: Tue, 12 Nov 2024 15:35:08 GMT  
+		Size: 3.2 MB (3166109 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:155e2cf530836bc26f1db67554392ece6dd15b775daaed0fecf541e11c889982`  
-		Last Modified: Thu, 31 Oct 2024 23:00:20 GMT  
-		Size: 17.4 KB (17400 bytes)  
+	-	`sha256:aba11c5000a276284a3aa6b64d590d2d9c49e68292b85f18c1ccccdf09d8b33c`  
+		Last Modified: Tue, 12 Nov 2024 15:35:07 GMT  
+		Size: 17.6 KB (17584 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swipl:latest` - linux; arm64 variant v8
