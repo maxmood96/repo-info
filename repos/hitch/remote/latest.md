@@ -1,7 +1,7 @@
 ## `hitch:latest`
 
 ```console
-$ docker pull hitch@sha256:bc3a6a3ad21d5305353209c7ee7b29c8574b590396e8f9862a55240c8a668365
+$ docker pull hitch@sha256:d96414510702a6ee3df5adaa7e13df785384e75f016790786221d8e5a4f32a8e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,18 +22,18 @@ $ docker pull hitch@sha256:bc3a6a3ad21d5305353209c7ee7b29c8574b590396e8f9862a552
 ### `hitch:latest` - linux; amd64
 
 ```console
-$ docker pull hitch@sha256:34731595befda02893c025290fbefbf13ff4a4a74fed7c185b293772bd352416
+$ docker pull hitch@sha256:cf01b7079e47f6eb0f3ce519f6f11d8248097dc82b12515125bb714c79d44dcc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **33.0 MB (32999024 bytes)**  
+-	Total Size: **33.0 MB (33021786 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3c80300eb40022c61adc889e35d668c6177ade51174aaa11924109ffb398438`
+-	Image ID: `sha256:88942a3cc84c76b3b2fcd3efe9c292d2f8618956c389bac07461c39ededf7b58`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Tue, 22 Aug 2023 15:19:07 GMT
-ADD file:0f6f1b93a8fddd20b36a99cc6cfbe4a03bc7be2adb427f7f8e74a2029c54c8bb in / 
+ADD rootfs.tar.xz / # buildkit
 # Tue, 22 Aug 2023 15:19:07 GMT
 CMD ["bash"]
 # Tue, 22 Aug 2023 15:19:07 GMT
@@ -62,62 +62,62 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:6dce3b49cfe6dc4b4e0198412bb0578215c86dae41303c47438639853bcba562`  
-		Last Modified: Thu, 17 Oct 2024 00:24:36 GMT  
-		Size: 31.4 MB (31428800 bytes)  
+	-	`sha256:55ab1b300d4b4b00c98fb396b36f0f7ba5dab2f7d18927e3742d364632723cbe`  
+		Last Modified: Tue, 12 Nov 2024 00:55:04 GMT  
+		Size: 31.5 MB (31451561 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05f927e817a886db4f3be1cc24015ee1f9addd93f4dcb05ca109bdef012f3bce`  
-		Last Modified: Thu, 17 Oct 2024 01:20:39 GMT  
-		Size: 1.6 MB (1569780 bytes)  
+	-	`sha256:23f2bcb9863886370914735ad32c719079795f485e88bcc09739893fab7872f9`  
+		Last Modified: Tue, 12 Nov 2024 02:03:34 GMT  
+		Size: 1.6 MB (1569782 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af483c693cb82084fb1f7c2223871a5c2b52e63de7f2a1d2e1f951a689a8bf35`  
-		Last Modified: Thu, 17 Oct 2024 01:20:39 GMT  
-		Size: 412.0 B  
+	-	`sha256:4f47f62a8079eeb7caebc19d2bcfc8f5f729532f1d12c041eaaaa0bf5baf4cb4`  
+		Last Modified: Tue, 12 Nov 2024 02:03:33 GMT  
+		Size: 411.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:latest` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:3003371aad1c90b340e86e19574e9810e4c485fbee889739e01238c21bf4333e
+$ docker pull hitch@sha256:9d02bd5b76b41a422718d8fd6f48f6c31fb4ed64c75fb22e2987b2f34a9da5e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2694523 bytes)**  
+-	Total Size: **2.7 MB (2708069 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00c2c8451d4b78986f8466fbb6202d5fdbed8a9930fa2df5c5f2c0f5dd248555`
+-	Image ID: `sha256:72d9e7e66d4147a22ec20f2dde12c124589912efbe6541a1cdf00c039eaf4ad0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:af2baddf4586d05578dc9f0b6495e814514818ca88ac8bcabb45e7a18729b50f`  
-		Last Modified: Thu, 17 Oct 2024 01:20:39 GMT  
-		Size: 2.7 MB (2681066 bytes)  
+	-	`sha256:b2e316af6fd8dbb5bbcab3ac793c787c56365edd64a6332e44e179abc7550c1d`  
+		Last Modified: Tue, 12 Nov 2024 02:03:34 GMT  
+		Size: 2.7 MB (2694445 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0bb674eebf8f878f956427e194f83ae39a2962c825ad66953d57c5b612cb993b`  
-		Last Modified: Thu, 17 Oct 2024 01:20:39 GMT  
-		Size: 13.5 KB (13457 bytes)  
+	-	`sha256:9c9fa3a57bdf6dfb2bf583d772f5dcffba5194f71df5c2b8b882cdafc5506033`  
+		Last Modified: Tue, 12 Nov 2024 02:03:33 GMT  
+		Size: 13.6 KB (13624 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:latest` - linux; arm variant v7
 
 ```console
-$ docker pull hitch@sha256:eeade1e53bf66b75ba3217b8fe080fe924787055947ceaf3c126df0fdbe1bc19
+$ docker pull hitch@sha256:d6a2608afb63a494ad359ba7c2b0b3cca66e3b561036ba4b464b0da929f42f93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **28.1 MB (28078577 bytes)**  
+-	Total Size: **28.1 MB (28098141 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5380ebada36b14c8dd068b14c3e93581cffe2962a05da555ddad7b65169947a5`
+-	Image ID: `sha256:bdcef67ff00d5ca700bdc3562ff4e369ad89e1d758f1fb1e0d6d79791a70ddcd`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Tue, 22 Aug 2023 15:19:07 GMT
-ADD file:1a0a5d58e9eaa765a367c84b6a41097f2f807ca887b02e8a1a36fa504592a5e4 in / 
+ADD rootfs.tar.xz / # buildkit
 # Tue, 22 Aug 2023 15:19:07 GMT
 CMD ["bash"]
 # Tue, 22 Aug 2023 15:19:07 GMT
@@ -146,146 +146,62 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:25eb86cb375819dcc30b18c185d2922f7f09900a247460cef95d47222230e7dc`  
-		Last Modified: Thu, 17 Oct 2024 03:08:12 GMT  
-		Size: 26.6 MB (26589555 bytes)  
+	-	`sha256:bbaa022ef9e0b119beb47d4a40af03cbd55afe3bf050a7353d06e43694cf5c25`  
+		Last Modified: Tue, 12 Nov 2024 00:57:51 GMT  
+		Size: 26.6 MB (26609257 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91edcc59fd19223c68aa11a703b7b69047167f25cd3fb1dce1534a6ac724a1df`  
-		Last Modified: Thu, 17 Oct 2024 14:10:16 GMT  
-		Size: 1.5 MB (1488578 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:682a3b8c28b83bd3bd00ed3dde47ff5dcddab1bac5d8b8ebf6e60ce7e53584c1`  
-		Last Modified: Thu, 17 Oct 2024 14:10:16 GMT  
-		Size: 412.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `hitch:latest` - unknown; unknown
-
-```console
-$ docker pull hitch@sha256:8084cb23e91ca8d4d36dee311cc83a2cec7b9638af956b5c022127842d8037be
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2696832 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5713e654ad73f8bd4bdfc38de739fbc005ded1e669176b94147154c56b4772a4`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:454f53dfd714a43a125313566aa36ffd97c08eb05707c0a02f3b12d3d2677d6d`  
-		Last Modified: Thu, 17 Oct 2024 14:10:16 GMT  
-		Size: 2.7 MB (2683297 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:32d423a687b3d8174b2681bfabfcfc581f058812294881b87fb21ef0d8a380d2`  
-		Last Modified: Thu, 17 Oct 2024 14:10:16 GMT  
-		Size: 13.5 KB (13535 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `hitch:latest` - linux; arm64 variant v8
-
-```console
-$ docker pull hitch@sha256:d270cedfbb161442421c5feff91ef91decb4679c6901b8a8711f43dc284e14a7
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **31.6 MB (31624099 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e3f7910b9460e8fa17883d40101436332d1a04974fc033d6fd1c1cb9b93991c0`
--	Entrypoint: `["docker-hitch-entrypoint"]`
-
-```dockerfile
-# Tue, 22 Aug 2023 15:19:07 GMT
-ADD file:f3f9a52e18a8da911b50ebddcc922d4b5a7aa8caa6eb15fb5c26c696b8fe9610 in / 
-# Tue, 22 Aug 2023 15:19:07 GMT
-CMD ["bash"]
-# Tue, 22 Aug 2023 15:19:07 GMT
-ARG SRCVER=1.8.0
-# Tue, 22 Aug 2023 15:19:07 GMT
-ARG PKGVER=1
-# Tue, 22 Aug 2023 15:19:07 GMT
-ARG DISTVER=bullseye
-# Tue, 22 Aug 2023 15:19:07 GMT
-ARG PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794
-# Tue, 22 Aug 2023 15:19:07 GMT
-ARG SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
-# Tue, 22 Aug 2023 15:19:07 GMT
-# ARGS: SRCVER=1.8.0 PKGVER=1 DISTVER=bullseye PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794 SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
-RUN set -ex;     BASE_PKGS="apt-utils curl dirmngr dpkg-dev debhelper devscripts equivs fakeroot git gnupg pkg-config";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnish/pkg-hitch.git;     cd pkg-hitch;     git checkout ${PKGCOMMIT};     rm -rf .git;     curl -Lf https://hitch-tls.org/source/hitch-${SRCVER}.tar.gz -o $tmpdir/orig.tgz;     echo "${SHASUM}  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i         -e "s/@SRCVER@/${SRCVER}/g"         -e "s/@PKGVER@/${PKGVER:-1}/g"         -e "s/@DISTVER@/$DISTVER/g" debian/changelog;     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/hitch*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y purge --auto-remove hitch-build-deps $BASE_PKGS;     apt-get -y --no-install-recommends install ../*.deb;     sed -i 's/daemon = on/daemon = off/' /etc/hitch/hitch.conf;     rm -rf /var/lib/apt/lists/* "$tmpdir" # buildkit
-# Tue, 22 Aug 2023 15:19:07 GMT
-WORKDIR /etc/hitch
-# Tue, 22 Aug 2023 15:19:07 GMT
-COPY docker-hitch-entrypoint /usr/local/bin/ # buildkit
-# Tue, 22 Aug 2023 15:19:07 GMT
-ENTRYPOINT ["docker-hitch-entrypoint"]
-# Tue, 22 Aug 2023 15:19:07 GMT
-EXPOSE map[443/tcp:{}]
-# Tue, 22 Aug 2023 15:19:07 GMT
-CMD []
-```
-
--	Layers:
-	-	`sha256:b3c56a24ca3234ee90349473402ac1b368a2fb3c9620242fa70a85d7396d7799`  
-		Last Modified: Thu, 17 Oct 2024 01:15:14 GMT  
-		Size: 30.1 MB (30075757 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:514912821fd216ebd984693557a8c507762feddfdb25513cd2287531431f561e`  
-		Last Modified: Thu, 17 Oct 2024 13:08:53 GMT  
-		Size: 1.5 MB (1547897 bytes)  
+	-	`sha256:05f1983d863245f1fa10337c32ad86ea4d8ba0b2536abb53c8d75c1b1085da2d`  
+		Last Modified: Tue, 12 Nov 2024 02:39:11 GMT  
+		Size: 1.5 MB (1488439 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57cc15bfea606d4354422b4451c9de63c00b1348f8f808bf16674bec6c477843`  
-		Last Modified: Thu, 17 Oct 2024 13:08:52 GMT  
+	-	`sha256:4bb59948b9b6273348d30849fe141aee26ff7a59ca21a66231478903f3317b09`  
+		Last Modified: Tue, 12 Nov 2024 02:39:11 GMT  
 		Size: 413.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:latest` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:c488072e15974edd012f9874e9a372fa257c7d0a58f82a751c8ce95b37580139
+$ docker pull hitch@sha256:48160d8664a15c47b6003194a175960dcf44f1e4b8dac47fbff0deecde422b62
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2694896 bytes)**  
+-	Total Size: **2.7 MB (2710385 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:26e53215af3a19f99448eee109a1eade4b8c766adf969a9646242f4ae231ae14`
+-	Image ID: `sha256:b9b87c344405daae2f4fa8dceab1d72630f9173aef410ea21778a1f74c5b1ce6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:399673c734b3d7229a0c7681436fedb06c2e2824215c77bdb7f18deda005f5fe`  
-		Last Modified: Thu, 17 Oct 2024 13:08:53 GMT  
-		Size: 2.7 MB (2681329 bytes)  
+	-	`sha256:d52863b04e3d7998d76e016294510d907fad07d4572c01084205b4f4716f626f`  
+		Last Modified: Tue, 12 Nov 2024 02:39:11 GMT  
+		Size: 2.7 MB (2696676 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:abd9315232a21fc50d1848b78081a27339e5d6ed8d3bb0e2d0c11e6f7abf1a88`  
-		Last Modified: Thu, 17 Oct 2024 13:08:52 GMT  
-		Size: 13.6 KB (13567 bytes)  
+	-	`sha256:de5ac4bd3c2cc852bf9f093248b44ab2c4eeb7945464108caf5fb63506e5ca03`  
+		Last Modified: Tue, 12 Nov 2024 02:39:11 GMT  
+		Size: 13.7 KB (13709 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `hitch:latest` - linux; 386
+### `hitch:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull hitch@sha256:fdb12f83bd19c2212af507bc3e014919ee29c7138993350bf32388749f056e47
+$ docker pull hitch@sha256:f651cd170141d26082ca3e982dd020c65bfdd9a983a265d2149777a5ca2dce67
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **34.0 MB (33987988 bytes)**  
+-	Total Size: **31.6 MB (31639975 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8675868391b1a791d3881fb594a24f7e8613e9f087ce48a497ec949122d21c1c`
+-	Image ID: `sha256:2a76031a8fb983b3b00f6280105b9ad64be396a0e1f57a92cd280e28feed8782`
 -	Entrypoint: `["docker-hitch-entrypoint"]`
 
 ```dockerfile
 # Tue, 22 Aug 2023 15:19:07 GMT
-ADD file:05098c6b0b4cfde8b4ffadc861fc7668bbf1779983d50b6be61989e6378fc17b in / 
+ADD rootfs.tar.xz / # buildkit
 # Tue, 22 Aug 2023 15:19:07 GMT
 CMD ["bash"]
 # Tue, 22 Aug 2023 15:19:07 GMT
@@ -314,45 +230,129 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:0aff79075c186716daeb376e46e89131aa14f0dc2bd8f794bd04d72494cb4693`  
-		Last Modified: Thu, 17 Oct 2024 00:43:15 GMT  
-		Size: 32.4 MB (32413830 bytes)  
+	-	`sha256:ac25a60fd56d38d0bc3960243a812295a0e7b11d4ff324470ca32452e930a2d1`  
+		Last Modified: Tue, 12 Nov 2024 00:58:02 GMT  
+		Size: 30.1 MB (30091600 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a840b3e2955cd197051a2398f04d40dac00ba50795c083c6866fa92a1afdf711`  
-		Last Modified: Thu, 17 Oct 2024 01:20:41 GMT  
-		Size: 1.6 MB (1573714 bytes)  
+	-	`sha256:4618fc5be7eee357e4dc2922cf96fb0219095a0976e083539364561d5b01dafb`  
+		Last Modified: Tue, 12 Nov 2024 03:08:56 GMT  
+		Size: 1.5 MB (1547933 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee6ffc2dc0fea1a33bee48041279320617e40d1e0ce5cc356cbd1ff8a763f412`  
-		Last Modified: Thu, 17 Oct 2024 01:20:41 GMT  
-		Size: 412.0 B  
+	-	`sha256:82af78531abb1b03f87479d621b6d28cdd289c9fe0bbdd0f700d78c459438127`  
+		Last Modified: Tue, 12 Nov 2024 03:08:55 GMT  
+		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hitch:latest` - unknown; unknown
 
 ```console
-$ docker pull hitch@sha256:fb98790fac9d3f7aa6e5d18ddd6f75515298b2d7358dc6c66fe0e2e6a118b223
+$ docker pull hitch@sha256:323c976b6f20635fd9029451d2f4c21549c785c8d2ca988c5fe716a047e47c7c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2691612 bytes)**  
+-	Total Size: **2.7 MB (2708449 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0868bd9a686ac1425883d23d8fdc2cf073a2c76e4431687f9044a44aaf61d9c`
+-	Image ID: `sha256:bc244f66a319905d780a209ef14fd50a6c00423e14fbafd551b8b2c059888135`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a72f4fe4ddff0a1f75b341a7a6cd1c6dad134b9f7aea6a05f83f71c55afba736`  
-		Last Modified: Thu, 17 Oct 2024 01:20:41 GMT  
-		Size: 2.7 MB (2678189 bytes)  
+	-	`sha256:2c83a15b6716bf17049eca469c215065eef04c7045e165f1335ff129e9523e12`  
+		Last Modified: Tue, 12 Nov 2024 03:08:56 GMT  
+		Size: 2.7 MB (2694708 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a8532f685d6ed58ea844a99a6c5313913dee7e125680faf90a26c9bbe43a9a68`  
-		Last Modified: Thu, 17 Oct 2024 01:20:41 GMT  
-		Size: 13.4 KB (13423 bytes)  
+	-	`sha256:cd870a75dcf96658049a5905f97f0a8517a91836c0571ab18480ba76ed0b297d`  
+		Last Modified: Tue, 12 Nov 2024 03:08:55 GMT  
+		Size: 13.7 KB (13741 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `hitch:latest` - linux; 386
+
+```console
+$ docker pull hitch@sha256:f9258da94563dff101c10ddbf5cc0a47e88b3e3670ee57d354ad4ca8cb1c0bb3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **34.0 MB (33997532 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:14209cb158eaa073c7f908bc82cc9fb09e9dd1da2b94b8b347fead6100b437ec`
+-	Entrypoint: `["docker-hitch-entrypoint"]`
+
+```dockerfile
+# Tue, 22 Aug 2023 15:19:07 GMT
+ADD rootfs.tar.xz / # buildkit
+# Tue, 22 Aug 2023 15:19:07 GMT
+CMD ["bash"]
+# Tue, 22 Aug 2023 15:19:07 GMT
+ARG SRCVER=1.8.0
+# Tue, 22 Aug 2023 15:19:07 GMT
+ARG PKGVER=1
+# Tue, 22 Aug 2023 15:19:07 GMT
+ARG DISTVER=bullseye
+# Tue, 22 Aug 2023 15:19:07 GMT
+ARG PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794
+# Tue, 22 Aug 2023 15:19:07 GMT
+ARG SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
+# Tue, 22 Aug 2023 15:19:07 GMT
+# ARGS: SRCVER=1.8.0 PKGVER=1 DISTVER=bullseye PKGCOMMIT=f12ab7958bc4885f3f00311cbca5103d9e6ba794 SHASUM=62b3554d668c9d17382415db10898bf661ee76343e4ee364f904457efda6cb1eeee7cb81d7a3897734024812b64b1c0e2dc305605706d81a0c1f6030508bf7e2
+RUN set -ex;     BASE_PKGS="apt-utils curl dirmngr dpkg-dev debhelper devscripts equivs fakeroot git gnupg pkg-config";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnish/pkg-hitch.git;     cd pkg-hitch;     git checkout ${PKGCOMMIT};     rm -rf .git;     curl -Lf https://hitch-tls.org/source/hitch-${SRCVER}.tar.gz -o $tmpdir/orig.tgz;     echo "${SHASUM}  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i         -e "s/@SRCVER@/${SRCVER}/g"         -e "s/@PKGVER@/${PKGVER:-1}/g"         -e "s/@DISTVER@/$DISTVER/g" debian/changelog;     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/hitch*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y purge --auto-remove hitch-build-deps $BASE_PKGS;     apt-get -y --no-install-recommends install ../*.deb;     sed -i 's/daemon = on/daemon = off/' /etc/hitch/hitch.conf;     rm -rf /var/lib/apt/lists/* "$tmpdir" # buildkit
+# Tue, 22 Aug 2023 15:19:07 GMT
+WORKDIR /etc/hitch
+# Tue, 22 Aug 2023 15:19:07 GMT
+COPY docker-hitch-entrypoint /usr/local/bin/ # buildkit
+# Tue, 22 Aug 2023 15:19:07 GMT
+ENTRYPOINT ["docker-hitch-entrypoint"]
+# Tue, 22 Aug 2023 15:19:07 GMT
+EXPOSE map[443/tcp:{}]
+# Tue, 22 Aug 2023 15:19:07 GMT
+CMD []
+```
+
+-	Layers:
+	-	`sha256:2aea24d0416284c8bc498d91bac1c90e2bf12b01e7867f799161bbb874a8323b`  
+		Last Modified: Tue, 12 Nov 2024 00:54:51 GMT  
+		Size: 32.4 MB (32423351 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5a1d9617ce1f885113483e86e58b3de50a9ab1944a2da07d563ce85ad1d55ea1`  
+		Last Modified: Tue, 12 Nov 2024 02:03:58 GMT  
+		Size: 1.6 MB (1573738 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1e465043d799528bf63ed919bcb0d763634c95e6185918baa6efbbe467d9fc9b`  
+		Last Modified: Tue, 12 Nov 2024 02:03:58 GMT  
+		Size: 411.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `hitch:latest` - unknown; unknown
+
+```console
+$ docker pull hitch@sha256:df99900f454504b8278ea1b3435f1b58bcf06df516573e13ed6bdcbed9e30feb
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.7 MB (2705156 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b11ea429486361fb3c453e58bf55d77f5d26674aa6a323bf7fd9741131f5fbb8`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:3475367b79f5d299d9f58685a7dc652c71d835bcbbc17670b5bbfde65034cf58`  
+		Last Modified: Tue, 12 Nov 2024 02:03:58 GMT  
+		Size: 2.7 MB (2691568 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:76da3c9e96c4ce45f4a866ac62967723d7ca4960ced0cda48ef8273beb2bf344`  
+		Last Modified: Tue, 12 Nov 2024 02:03:58 GMT  
+		Size: 13.6 KB (13588 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hitch:latest` - linux; ppc64le
