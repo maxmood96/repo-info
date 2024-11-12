@@ -4,6 +4,7 @@
 
 -	[`elasticsearch:7.17.25`](#elasticsearch71725)
 -	[`elasticsearch:8.15.3`](#elasticsearch8153)
+-	[`elasticsearch:8.16.0`](#elasticsearch8160)
 
 ## `elasticsearch:7.17.25`
 
@@ -530,3 +531,12 @@ $ docker pull elasticsearch@sha256:e86771d80a201d69738ecafcb8b6b6a4c25d5870fcd4e
 		Last Modified: Thu, 17 Oct 2024 22:14:21 GMT  
 		Size: 37.9 KB (37885 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `elasticsearch:8.16.0`
+
+```console
+$ docker pull elasticsearch@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
