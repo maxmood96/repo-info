@@ -1,7 +1,7 @@
 ## `amazoncorretto:21-alpine3.19-jdk`
 
 ```console
-$ docker pull amazoncorretto@sha256:3cc7415bf70f028c51a850c857fa555e417ca38c4cc913bcf25a586cac7a7136
+$ docker pull amazoncorretto@sha256:89c8beee3a0b14d72a73852cbcb37fc9760fa5e7919f40be10c88dad3c688025
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -78,19 +78,19 @@ $ docker pull amazoncorretto@sha256:40b09d070938d8be613696437bbb60085294365a0a1c
 ### `amazoncorretto:21-alpine3.19-jdk` - linux; arm64 variant v8
 
 ```console
-$ docker pull amazoncorretto@sha256:e21ee0201132730f20c5f26598c4ebbb841345ba27d5be5fffd08b64e0d7ed44
+$ docker pull amazoncorretto@sha256:5a28a15a5febc0a34954a4e96d908871a6d4eb0204eebbbf50c33f1c86348837
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.2 MB (160237516 bytes)**  
+-	Total Size: **160.2 MB (160237651 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dbe667e667ab2266fe89085eae82c508baa2c24f9bf37d2ca530122e6721e28c`
+-	Image ID: `sha256:5dae95b1299101108704821499c2988d4ea9dcff972efe967f67181ec265f39f`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 22:44:16 GMT
-ADD file:9865d69f45511580cc2a05d8a9573251b6eb5a84520efe2e8295532e3ccd6321 in / 
-# Fri, 06 Sep 2024 22:44:16 GMT
+# Fri, 06 Sep 2024 12:04:22 GMT
+ADD alpine-minirootfs-3.19.4-aarch64.tar.gz / # buildkit
+# Fri, 06 Sep 2024 12:04:22 GMT
 CMD ["/bin/sh"]
 # Wed, 16 Oct 2024 02:18:03 GMT
 ARG version=21.0.5.11.1
@@ -106,35 +106,35 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 ```
 
 -	Layers:
-	-	`sha256:188a7166e45935ced07634efdc8e63c13f5f7673b60b051b353475ee00e28fe0`  
-		Last Modified: Fri, 06 Sep 2024 22:44:50 GMT  
-		Size: 3.4 MB (3359103 bytes)  
+	-	`sha256:6c9d4d66fb4987fcd48c673e8b29bb504a3cfb33f10b97cbcea126aa3b8b59fd`  
+		Last Modified: Mon, 09 Sep 2024 07:03:21 GMT  
+		Size: 3.4 MB (3359246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0fa8c1f1b4b0cfe6b51ed7cc6e771b479aac5f789b270c02efcb92d72e435996`  
-		Last Modified: Wed, 16 Oct 2024 18:37:58 GMT  
-		Size: 156.9 MB (156878413 bytes)  
+	-	`sha256:e7e70d98938925701e2d23b6c7267efc15fe083e0beee80b84caf5d635b0b6f2`  
+		Last Modified: Tue, 12 Nov 2024 11:12:10 GMT  
+		Size: 156.9 MB (156878405 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `amazoncorretto:21-alpine3.19-jdk` - unknown; unknown
 
 ```console
-$ docker pull amazoncorretto@sha256:6ff376dc762d9ab5ae137020eab1e2aa138277072c2dd8a8978560f465e8bcec
+$ docker pull amazoncorretto@sha256:4120eb2ecee8e1aa0f9b4cddbb097202faf06a24d89354c55d55a4bc0f9cc3eb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **390.1 KB (390052 bytes)**  
+-	Total Size: **390.4 KB (390358 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ea28b5fee1c9ebe18ddb26298485ecc094d8bf1208ebd5d7fb9838def1f496b`
+-	Image ID: `sha256:e47d3a0abaccc69ab6687d96db609134431d104517fcac4696c169a45024fb45`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d382178d1e3a935b632a8debc7ae99c9812804893dcfdb7d87aee713bbf1038c`  
-		Last Modified: Wed, 16 Oct 2024 18:37:55 GMT  
-		Size: 380.7 KB (380746 bytes)  
+	-	`sha256:91e0369367be4d34ba472f0796b6c74b74ff2bc098d759cd026d17a5f113d1f0`  
+		Last Modified: Tue, 12 Nov 2024 11:12:06 GMT  
+		Size: 380.8 KB (380839 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8538df2386e7954dfc8c482f4e66a0230a064f8281c4ee4d4dd3123ca5b9fe54`  
-		Last Modified: Wed, 16 Oct 2024 18:37:54 GMT  
-		Size: 9.3 KB (9306 bytes)  
+	-	`sha256:28b2a251e53094e6b2c5c27d5bfa9a2c74f81e16fe6db4e4ef4f8f056366feba`  
+		Last Modified: Tue, 12 Nov 2024 11:12:06 GMT  
+		Size: 9.5 KB (9519 bytes)  
 		MIME: application/vnd.in-toto+json
