@@ -1,7 +1,7 @@
 ## `groovy:jdk21-alpine`
 
 ```console
-$ docker pull groovy@sha256:b73ec95521093ff1a8c2791d510574f1185691230a6ecc12198566b91296383e
+$ docker pull groovy@sha256:ba2957a48e919c64009676ed5dd76064a2e31db3e3e74e8fe6639ee2687d860d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,20 +14,20 @@ $ docker pull groovy@sha256:b73ec95521093ff1a8c2791d510574f1185691230a6ecc121985
 ### `groovy:jdk21-alpine` - linux; amd64
 
 ```console
-$ docker pull groovy@sha256:6a797a380d9036a04d831c8178e310932031f043ed87a5228aeea6cf4f3747e4
+$ docker pull groovy@sha256:08005e4ecbb4efa93b9a499f4f5fd75af0d0c195111a145ef40a941a2ab7079d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **214.4 MB (214381191 bytes)**  
+-	Total Size: **214.4 MB (214381461 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2770dd4cf75eae646751cbc8dab0118eac1d288954ff30fd831186242990f293`
+-	Image ID: `sha256:36dcef69afb27a84675fbcda446fb397bcdc1208086912111040c9ac5e8ca31c`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["groovysh"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 22:20:07 GMT
-ADD file:5758b97d8301c84a204a6e516241275d785a7cade40b2fb99f01fe122482e283 in / 
-# Fri, 06 Sep 2024 22:20:07 GMT
+# Fri, 06 Sep 2024 12:05:36 GMT
+ADD alpine-minirootfs-3.20.3-x86_64.tar.gz / # buildkit
+# Fri, 06 Sep 2024 12:05:36 GMT
 CMD ["/bin/sh"]
 # Wed, 23 Oct 2024 15:41:32 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -70,64 +70,64 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 ```
 
 -	Layers:
-	-	`sha256:43c4264eed91be63b206e17d93e75256a6097070ce643c5e8f0379998b44f170`  
-		Last Modified: Fri, 06 Sep 2024 22:20:39 GMT  
-		Size: 3.6 MB (3623807 bytes)  
+	-	`sha256:da9db072f522755cbeb85be2b3f84059b70571b229512f1571d9217b77e1087f`  
+		Last Modified: Fri, 06 Sep 2024 14:39:08 GMT  
+		Size: 3.6 MB (3623904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d261c61120750cb19b5bf351e17be8ac00173617f566054bdbd38eec29dffee7`  
-		Last Modified: Thu, 24 Oct 2024 00:57:08 GMT  
-		Size: 23.0 MB (22953305 bytes)  
+	-	`sha256:b3adb1b361694716f735538e25636db9c915b45c870e744223f3d3020d515c1c`  
+		Last Modified: Tue, 12 Nov 2024 02:38:49 GMT  
+		Size: 23.0 MB (22953393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7043234fe874c842910e4944da3626930f5c7cc4dbd29b50f6a4f907a7d8feaf`  
-		Last Modified: Thu, 24 Oct 2024 00:57:11 GMT  
-		Size: 157.8 MB (157779374 bytes)  
+	-	`sha256:7d061b3c52fbe2566fade57c090519f152f4d1f34b92c4b11e8483dac15082f7`  
+		Last Modified: Tue, 12 Nov 2024 02:38:52 GMT  
+		Size: 157.8 MB (157779470 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1859106f999588717f76b6609fe5d34f5d2c2fd62e7edbe86c9a8709b1954ba5`  
-		Last Modified: Thu, 24 Oct 2024 00:57:08 GMT  
-		Size: 129.0 B  
+	-	`sha256:3a2bd53639fc30cf5eddf18027f47695541b28435d6281a1a15c32da7ca9aa58`  
+		Last Modified: Tue, 12 Nov 2024 02:38:47 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ecc23d54cb8e8eb85a2d0b34c310691777d93c7b037f48f9063d4eb2bb338ee6`  
-		Last Modified: Thu, 24 Oct 2024 00:57:08 GMT  
+	-	`sha256:48a697b41d652b4fc39bbe88232ba2e043ef173cd912c76b91efc830b8a63aef`  
+		Last Modified: Tue, 12 Nov 2024 02:38:49 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ebcc47cea97af3b065719188b55558dca30ad9653111b6aa8c18eae6e4b7a945`  
-		Last Modified: Mon, 11 Nov 2024 18:58:08 GMT  
-		Size: 1.0 KB (1049 bytes)  
+	-	`sha256:56bedae4ee9b281eaddbc441fddc05c2c27c4d64dfed21f396f3f98d10256852`  
+		Last Modified: Tue, 12 Nov 2024 03:14:28 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73878367f87f1af840948f31395cb2cd4c67d4325fef6096434df7acbbcc6eb3`  
-		Last Modified: Mon, 11 Nov 2024 18:58:09 GMT  
-		Size: 30.0 MB (30021077 bytes)  
+	-	`sha256:12068735720be8a3cfb0018de5ad508e6cce3226420cd58e0a742ece3ae4e97c`  
+		Last Modified: Tue, 12 Nov 2024 03:14:29 GMT  
+		Size: 30.0 MB (30021070 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33d792739aaa146e0f39be3397e162ab4e19f8862c614cb1bc71820076caa658`  
-		Last Modified: Mon, 11 Nov 2024 18:58:08 GMT  
-		Size: 137.0 B  
+	-	`sha256:c72a3a26229d88caf92d0d518e276ab36220b5c138bdf12fae1e06414b3c5999`  
+		Last Modified: Tue, 12 Nov 2024 03:14:28 GMT  
+		Size: 138.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `groovy:jdk21-alpine` - unknown; unknown
 
 ```console
-$ docker pull groovy@sha256:4620f856bdda6c7035f6be5649b92606a5efa177fc037d8a720dbd0cbdfab56b
+$ docker pull groovy@sha256:d4ead2f703523d2e7cb600a3b7047fcd24f995702ee27d795b44be421517dd21
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 MB (1174306 bytes)**  
+-	Total Size: **1.2 MB (1174307 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:737c17a31d8d22867d83711ec0ac06d6d824d889b9638f41b51dab9204b97fdf`
+-	Image ID: `sha256:11e812be54cc43984b5b215f4406b94ab23ec6456b72eabe7d96c5f442297956`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:28ee9307d8c5621b5eda739cc2a53d5af48a23cef04e9a70bc8478d88e028a57`  
-		Last Modified: Mon, 11 Nov 2024 18:58:08 GMT  
-		Size: 1.2 MB (1152273 bytes)  
+	-	`sha256:013e8367d16ff37feea47f2186e4cb79cdf9561749040c2f50e11ab9918a67a7`  
+		Last Modified: Tue, 12 Nov 2024 03:14:28 GMT  
+		Size: 1.2 MB (1152274 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:16a00f0dc21c824f07fbedc81c605d4d92d5416975598da697193235449f0182`  
-		Last Modified: Mon, 11 Nov 2024 18:58:08 GMT  
+	-	`sha256:ca4da88ed22f0d7a5d103745f06444fc7402c45e87f95b2486313e28b1d14d76`  
+		Last Modified: Tue, 12 Nov 2024 03:14:28 GMT  
 		Size: 22.0 KB (22033 bytes)  
 		MIME: application/vnd.in-toto+json
 
