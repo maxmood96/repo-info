@@ -1,7 +1,7 @@
 ## `postgres:14-alpine3.19`
 
 ```console
-$ docker pull postgres@sha256:b507fd608a654d0504c0627a4890a459b78119d5e754e6663948c6aebc19b6df
+$ docker pull postgres@sha256:e5e27cb8ee853210958b3ec48306553c5f70265c11bc48153f164080a84c7b7e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -288,19 +288,19 @@ $ docker pull postgres@sha256:38ee1d3694a18a46b66f07b91227a67cc41fa67526a1944c1b
 ### `postgres:14-alpine3.19` - linux; arm variant v7
 
 ```console
-$ docker pull postgres@sha256:8cfa6bca89c4763d395646603a5f31178929b3c7c7e9624f98573d3db34f9a3b
+$ docker pull postgres@sha256:9f71fecdf3f1cf852d2b51a217ac7ec798cf94b725e2cbc5439b35d462a1f998
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **88.6 MB (88552387 bytes)**  
+-	Total Size: **90.2 MB (90176338 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88198c6be2a74c523a48deed03312d0a6e7760f62805fd1ef6786c11602ad625`
+-	Image ID: `sha256:40534ef423b92cb180ec4793bb78e95c618984de5cc372f176b991d6e06cf5ea`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["postgres"]`
 
 ```dockerfile
 # Thu, 08 Aug 2024 16:52:20 GMT
-ADD file:a0a04eec8c7b34f27431bfd6edc27b4c05f2174daf93e40c263717d2469dcebd in / 
+ADD alpine-minirootfs-3.19.4-armv7.tar.gz / # buildkit
 # Thu, 08 Aug 2024 16:52:20 GMT
 CMD ["/bin/sh"]
 # Thu, 08 Aug 2024 16:52:20 GMT
@@ -350,73 +350,73 @@ CMD ["postgres"]
 ```
 
 -	Layers:
-	-	`sha256:426a5537ab470cede64a1b269dbc9f485fa674bec59555cdaa5a1c96e6675b0d`  
-		Last Modified: Fri, 06 Sep 2024 22:08:37 GMT  
-		Size: 2.9 MB (2927664 bytes)  
+	-	`sha256:02dfd5e2e7e47e8d8f9020a0d7f4d8240d6646afc6a52b168c0899bc0c3d06a3`  
+		Last Modified: Mon, 09 Sep 2024 07:03:23 GMT  
+		Size: 2.9 MB (2927731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7301be67e4738b26ff038817b98ba1651b096b6f4c8282ec263badac035e791`  
-		Last Modified: Sat, 07 Sep 2024 09:11:15 GMT  
-		Size: 1.3 KB (1267 bytes)  
+	-	`sha256:c5db41ad436d5f7ebd4024d28883a253bc45e3577ec71b917f3af8f6247e0a49`  
+		Last Modified: Tue, 12 Nov 2024 11:50:40 GMT  
+		Size: 1.3 KB (1268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:89f6bf8db32a8805b9bb6360898111fe2af1e0d20467f3823409618a0fc832e6`  
-		Last Modified: Sat, 07 Sep 2024 09:11:16 GMT  
-		Size: 1.1 MB (1086692 bytes)  
+	-	`sha256:07ec4ab37e54f1eaa5a6a0648af6ccfa09df4dda8aebd4bfd4c95a09aeeaf220`  
+		Last Modified: Tue, 12 Nov 2024 11:50:41 GMT  
+		Size: 1.1 MB (1086691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:72950ff2803c09d980a0d9157258772394aaa758b7557547ca81523be397360a`  
-		Last Modified: Sat, 07 Sep 2024 09:19:01 GMT  
-		Size: 174.0 B  
+	-	`sha256:694d2ecd365071d47a25ce95fec93acb0830747395eb32752556c88eb3dc3a81`  
+		Last Modified: Tue, 12 Nov 2024 12:37:58 GMT  
+		Size: 179.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c1088c5228e0298817dc05644651492611a9414d6a2ea9a6d8904acf1fb5b03f`  
-		Last Modified: Sat, 07 Sep 2024 09:19:01 GMT  
+	-	`sha256:35a6ddb81e5151f0e21e0c3fd043dcd36f52e92d27d808d8967dacc037ccb4ca`  
+		Last Modified: Tue, 12 Nov 2024 12:37:58 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eda4c519495926cbe7ff7866cd069e5e5d0030c3c4820ecc3fe49d225ecc78b1`  
-		Last Modified: Sat, 07 Sep 2024 09:34:18 GMT  
-		Size: 84.5 MB (84521373 bytes)  
+	-	`sha256:8a7b6dac74cd211a8afdcf4cf0232d418f8493335e05c756a34ea342a3f4ba4a`  
+		Last Modified: Tue, 12 Nov 2024 14:02:33 GMT  
+		Size: 86.1 MB (86145250 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5b2d2bda103238fb41d0b872a112bfddb67d4b23b249ec1a8009e5cf1e382b3`  
-		Last Modified: Sat, 07 Sep 2024 09:34:15 GMT  
-		Size: 9.2 KB (9200 bytes)  
+	-	`sha256:2cf1c3d8c705af9e97cacba3e5849cc068e206598309e425f476efa4d5c92750`  
+		Last Modified: Tue, 12 Nov 2024 14:02:30 GMT  
+		Size: 9.2 KB (9202 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7463bb0420db286a7ca63a27aad6dc68fd777145bb64eed9090d72f5cc6fac8`  
-		Last Modified: Sat, 07 Sep 2024 09:34:15 GMT  
-		Size: 128.0 B  
+	-	`sha256:74e4b7e1c88695d63943ed18477a90da06944f56cd38a037411260a86791dabb`  
+		Last Modified: Tue, 12 Nov 2024 14:02:30 GMT  
+		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dcb24cdaa82e758269a9aa22e75857c61da4ae480d5f254aee01ad13dde4be33`  
-		Last Modified: Sat, 07 Sep 2024 09:34:15 GMT  
-		Size: 169.0 B  
+	-	`sha256:95ac7f87a79c675f10f4233a306e9283ea73f0bbbe8368a9978275f949d78631`  
+		Last Modified: Tue, 12 Nov 2024 14:02:30 GMT  
+		Size: 170.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:355eb5384222d0550d3f499816e0b1973f0e5278ab1fc8f7c4615b5dbea8a404`  
-		Last Modified: Sat, 07 Sep 2024 09:34:16 GMT  
+	-	`sha256:26a573747ea26911252a993edffea05972d9f6d3371d4fc8556b4da607d9d265`  
+		Last Modified: Tue, 12 Nov 2024 14:02:30 GMT  
 		Size: 5.4 KB (5418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2123291e45bcaa47edda4e5df8cc1ccc0651208e66e2c5687c3a65c96525020b`  
-		Last Modified: Sat, 07 Sep 2024 09:34:16 GMT  
-		Size: 186.0 B  
+	-	`sha256:ec95060982a61089f12357cae7a5526fb122ab2cc1fcaa84d7d67a3be65262c3`  
+		Last Modified: Tue, 12 Nov 2024 14:02:31 GMT  
+		Size: 184.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `postgres:14-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull postgres@sha256:727fb409b45a794faa1ebce924d7c1ba50cb4151ccbaaaf8ae1a865c13279588
+$ docker pull postgres@sha256:c0a4c8eac22c8f8d1e0070a66bb9c843cf413ea0252ccb0d867ab510ea1d5294
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.0 MB (1013651 bytes)**  
+-	Total Size: **1.0 MB (1014166 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc6ef1b16f567e7634765be09c93d24927ef5f49132f369dcae16442476021a4`
+-	Image ID: `sha256:a94a715697e25da11f5c8eba298476dcd2cd98623c7c8ceae5c89e621236f537`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:691a35066fde8be9b9c6dec8765517e01fae17ade6285a15cccb48841f4c4a87`  
-		Last Modified: Sat, 07 Sep 2024 09:34:16 GMT  
-		Size: 968.7 KB (968705 bytes)  
+	-	`sha256:caf13cb59132377c05af7a29d7fa9319048eb60e7b16a2b49cbc756452bfff2a`  
+		Last Modified: Tue, 12 Nov 2024 14:02:30 GMT  
+		Size: 969.0 KB (969023 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f47d1c0ebe3baa9de83970acfddf27fbf217df9dc1ac87b2be380c362494e583`  
-		Last Modified: Sat, 07 Sep 2024 09:34:15 GMT  
-		Size: 44.9 KB (44946 bytes)  
+	-	`sha256:cef996e4accdf9dd22ac18e186056f2e241066d7269f5a3223fba3feacf83fa7`  
+		Last Modified: Tue, 12 Nov 2024 14:02:29 GMT  
+		Size: 45.1 KB (45143 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `postgres:14-alpine3.19` - linux; arm64 variant v8
