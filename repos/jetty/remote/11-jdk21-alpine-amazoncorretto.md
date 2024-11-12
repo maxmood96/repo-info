@@ -1,7 +1,7 @@
 ## `jetty:11-jdk21-alpine-amazoncorretto`
 
 ```console
-$ docker pull jetty@sha256:97f90638191a4f11a0cc5900f5f155214d43fc85a75fe5b1bf4b0ee46c0e3996
+$ docker pull jetty@sha256:361ee735e1601aab558e70927493eae137aeea761ccf2139c794c5dea0f51855
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,20 +14,20 @@ $ docker pull jetty@sha256:97f90638191a4f11a0cc5900f5f155214d43fc85a75fe5b1bf4b0
 ### `jetty:11-jdk21-alpine-amazoncorretto` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:cd82514f3b698b23a155c572bb20daef5f4d9e572209b82cffbeb5e405ff5210
+$ docker pull jetty@sha256:1876e515c0b8c0262d63e9d868944a9c1e346c0f22fe1227d1193523aa6901d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **185.9 MB (185936862 bytes)**  
+-	Total Size: **185.9 MB (185941302 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e6c642ca16979cfae8d2360725b4810cff730c79af429de188b2761cd940f74`
+-	Image ID: `sha256:c14d819868f70cbc4b2d13bc0095edd5d79d9f0788f2a1ed6a31308b1b100f23`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 22:20:07 GMT
-ADD file:5758b97d8301c84a204a6e516241275d785a7cade40b2fb99f01fe122482e283 in / 
-# Fri, 06 Sep 2024 22:20:07 GMT
+# Fri, 06 Sep 2024 12:05:36 GMT
+ADD alpine-minirootfs-3.20.3-x86_64.tar.gz / # buildkit
+# Fri, 06 Sep 2024 12:05:36 GMT
 CMD ["/bin/sh"]
 # Tue, 10 Sep 2024 00:22:25 GMT
 ARG version=21.0.5.11.1
@@ -71,49 +71,49 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:43c4264eed91be63b206e17d93e75256a6097070ce643c5e8f0379998b44f170`  
-		Last Modified: Fri, 06 Sep 2024 22:20:39 GMT  
-		Size: 3.6 MB (3623807 bytes)  
+	-	`sha256:da9db072f522755cbeb85be2b3f84059b70571b229512f1571d9217b77e1087f`  
+		Last Modified: Fri, 06 Sep 2024 14:39:08 GMT  
+		Size: 3.6 MB (3623904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bfb2972ecae7a9dd2f51282c368df744040af6055effeff6fe1f6c73abf3a003`  
-		Last Modified: Wed, 16 Oct 2024 17:57:22 GMT  
-		Size: 158.9 MB (158930191 bytes)  
+	-	`sha256:7cf047165709bffe3a3624e99cceb7a7bf696113e52c26ecebfa07a01fc0ac18`  
+		Last Modified: Tue, 12 Nov 2024 02:12:35 GMT  
+		Size: 158.9 MB (158930137 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1281de21a683f7978b2edd0294c429d74452326820cb2890b39a17da9bcfb384`  
-		Last Modified: Wed, 16 Oct 2024 19:00:35 GMT  
-		Size: 23.4 MB (23381198 bytes)  
+	-	`sha256:ab8ddbecc3cefcd48e373a2441e2d2e0905394e84b8857cff4b573b7868250fd`  
+		Last Modified: Tue, 12 Nov 2024 03:16:29 GMT  
+		Size: 23.4 MB (23385595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00870d73970d18607d3bde5e6d8aa056173d9cad3fe323380efaedc16f9fd843`  
-		Last Modified: Wed, 16 Oct 2024 19:00:31 GMT  
+	-	`sha256:000d3a04a2c7603d810d1ef4bae98389dd341856ff47f90f176cafef08e2bb05`  
+		Last Modified: Tue, 12 Nov 2024 03:16:28 GMT  
 		Size: 1.6 KB (1634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:11-jdk21-alpine-amazoncorretto` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:ab4db0a2c5172a4c32af7f0ef3b91c0ea0cff2ea71f900f195ee4077c18f86d5
+$ docker pull jetty@sha256:b1be696559d523fac1f8c4bbd5255eeb8ebce07354b50d1e021eaf7126d8e49b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **725.7 KB (725692 bytes)**  
+-	Total Size: **734.4 KB (734368 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:81ce4b9319c20e861eff411ea62ffc46b9e1e9fdeffb7a37deec8042cfb3faa0`
+-	Image ID: `sha256:1183c8709abf1b5ceb2eaee11662ed8daf4c9f4950ba8d3cb9a2b2ffa4e5267b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b1582bd423b08f01632f18620371c27c944311b8d7968018ecaa733f9f0ed83a`  
-		Last Modified: Wed, 16 Oct 2024 19:00:34 GMT  
-		Size: 708.6 KB (708570 bytes)  
+	-	`sha256:eba6899a57ee02c4ee6be4811e5a898277c0ce2466ff4fc32047d3e50dea7c93`  
+		Last Modified: Tue, 12 Nov 2024 03:16:28 GMT  
+		Size: 717.2 KB (717249 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7c611add9c7b5a20fc44df1a8ef4aa5bd24ecf6998e4b46438535e5fded750ca`  
-		Last Modified: Wed, 16 Oct 2024 19:00:34 GMT  
-		Size: 17.1 KB (17122 bytes)  
+	-	`sha256:0da83e2e47e2852bf30f9bef752dad1e50f69d9e44c9f0d831b84a187834b485`  
+		Last Modified: Tue, 12 Nov 2024 03:16:28 GMT  
+		Size: 17.1 KB (17119 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `jetty:11-jdk21-alpine-amazoncorretto` - linux; arm64 variant v8
