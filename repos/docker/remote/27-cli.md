@@ -1,7 +1,7 @@
 ## `docker:27-cli`
 
 ```console
-$ docker pull docker@sha256:af743bf68f5f30f37573c8c34717361ea6d737c80c8f4d3af73485eca7a4549d
+$ docker pull docker@sha256:923ba1d82297f372a712d1e937834c62e49fa40d8e2c2750e46db38eaa45b3d0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -130,20 +130,20 @@ $ docker pull docker@sha256:df1284141a61cc3d45dbf3db678088d3ba54a7702a8980f5cf64
 ### `docker:27-cli` - linux; arm variant v6
 
 ```console
-$ docker pull docker@sha256:2645bfce7b117dfb854177a264751cf5d70e226c176a2f80becf294c88d3779f
+$ docker pull docker@sha256:2317a5379ccc4d78ac62d9e328fdd3c6b8200033bcc8992d79c4729232632532
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.0 MB (62985112 bytes)**  
+-	Total Size: **63.0 MB (62997984 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef37a6f67c51423eb15e8990b3044a9f90a5df86e1503c322cd9b34a9b589188`
+-	Image ID: `sha256:e2bb4a98d46ef2bdc7ad1f22a4d1ffd0c3c292fae25c461366f3d5d2908a30e6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 22:49:23 GMT
-ADD file:faa3509308d5524875c6afec4d4d1a357118aa1587e5485eca63c2907b37d968 in / 
-# Fri, 06 Sep 2024 22:49:24 GMT
+# Fri, 06 Sep 2024 12:05:36 GMT
+ADD alpine-minirootfs-3.20.3-armhf.tar.gz / # buildkit
+# Fri, 06 Sep 2024 12:05:36 GMT
 CMD ["/bin/sh"]
 # Thu, 07 Nov 2024 18:04:14 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
@@ -178,65 +178,65 @@ CMD ["sh"]
 ```
 
 -	Layers:
-	-	`sha256:97964a4b92f04f720ed681b3ec62b071ced94b08b57765c612866e77a71ec087`  
-		Last Modified: Fri, 06 Sep 2024 22:49:47 GMT  
-		Size: 3.4 MB (3366506 bytes)  
+	-	`sha256:655a2516811563036720a66963f9c64bc14eb53aac8eeceaebcda6bf661651bb`  
+		Last Modified: Mon, 09 Sep 2024 07:03:58 GMT  
+		Size: 3.4 MB (3366596 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:abb1eee09bdc12fa3ccb80788ee946d0dd519809f632c19f750cef5b4162398d`  
-		Last Modified: Sat, 07 Sep 2024 02:16:26 GMT  
-		Size: 7.8 MB (7807744 bytes)  
+	-	`sha256:28dec1f3e06da3f8757b7ab0c912b2790b19463c9e38b2e62db7016713ec835a`  
+		Last Modified: Tue, 12 Nov 2024 02:19:21 GMT  
+		Size: 7.8 MB (7820557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98caf3bd1b61416ca414dbe14aa026849a7c16b67dd0ccf0788356d5b79cd8df`  
-		Last Modified: Sat, 07 Sep 2024 02:16:26 GMT  
+	-	`sha256:42de83cdff8ecb35d376bef426a487ec59cb3c6e47646a152914957e84298f0d`  
+		Last Modified: Tue, 12 Nov 2024 02:19:20 GMT  
 		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb465bb1c99223887dda92712b33166cd4a60b1d36ed4de3d19a6fdd0643d07c`  
-		Last Modified: Fri, 20 Sep 2024 19:56:33 GMT  
-		Size: 16.6 MB (16601555 bytes)  
+	-	`sha256:3c7e03894c45574eb692f15e4d6931a5483f1332581f7edad8bd3d3aa28078a4`  
+		Last Modified: Tue, 12 Nov 2024 02:19:21 GMT  
+		Size: 16.6 MB (16601553 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:467ef678d76541a90258e619a961c4c2969d607944c5af919515f1da0256ab17`  
-		Last Modified: Mon, 04 Nov 2024 22:03:35 GMT  
-		Size: 17.2 MB (17245299 bytes)  
+	-	`sha256:3e7ef677fb7f3170f8ce5bbab99b21705dd8f74250956734f89cf9ec792e33c3`  
+		Last Modified: Tue, 12 Nov 2024 02:19:21 GMT  
+		Size: 17.2 MB (17245287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f324dbcf74fa1d94fe2a8e47fde042fed09a46196e848a7e9e5bde25dd43e52c`  
-		Last Modified: Sat, 09 Nov 2024 01:59:58 GMT  
-		Size: 18.0 MB (17961838 bytes)  
+	-	`sha256:c6c84fc94aa9899aba6944881bfd7ac3ae4b2874057c03ec055ad93d1307c3e9`  
+		Last Modified: Tue, 12 Nov 2024 02:19:22 GMT  
+		Size: 18.0 MB (17961833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f8a01c1fea32f0cef572d5588bb2174d1f73fe558ad6b03d9f82c49ae5c27e3`  
-		Last Modified: Sat, 09 Nov 2024 01:59:57 GMT  
-		Size: 545.0 B  
+	-	`sha256:a4623fb9f5b5c29a9b9f88f82cbeaef65fd241fd6983ab94a5b5d5bf8203a9d9`  
+		Last Modified: Tue, 12 Nov 2024 02:19:22 GMT  
+		Size: 541.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:019930564620592e71a4f1f4f025de6df8d2fd2ade4ed1eecb3355293e1d247c`  
-		Last Modified: Sat, 09 Nov 2024 01:59:57 GMT  
-		Size: 1.0 KB (1022 bytes)  
+	-	`sha256:c708ef18114855e56c9fc4defcf01025fba702c87679c26348dfeb260e169510`  
+		Last Modified: Tue, 12 Nov 2024 02:19:22 GMT  
+		Size: 1.0 KB (1014 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f5374b3e7271feabba5026e0f9ede24ece64973228f4efc6a432600cb79928d9`  
-		Last Modified: Sat, 09 Nov 2024 01:59:57 GMT  
+	-	`sha256:a84049e55bf02e38da5942a9645e1810afd5a90e146ffe2af97f20d91ccc0d0b`  
+		Last Modified: Tue, 12 Nov 2024 02:19:22 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:ee09420296ed1691d6b4276e50ed62e45a6aa48f480dfd9ca6a23a800655122f
+$ docker pull docker@sha256:0e143f6c37b1a5c9d00338e68eef8ef4f7f8537ee87521842a341e839610648b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.1 KB (38108 bytes)**  
+-	Total Size: **38.3 KB (38278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:401303f70c4c0e0098071e69f9311d69835f6e93dd9a002cc3862da12a8c9cb3`
+-	Image ID: `sha256:44372a295376036e37c2ab1b65179b35eff0e6e89f11094d8542bef1baf22311`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:96b30a6ce03a79937077bce7a2250f0dc84a0602922acd93fbee5f96d3057687`  
-		Last Modified: Sat, 09 Nov 2024 01:59:57 GMT  
-		Size: 38.1 KB (38108 bytes)  
+	-	`sha256:35cac161aba9ebc04fb680d3ccac5699ac236e7263051abb244682b18ebf5244`  
+		Last Modified: Tue, 12 Nov 2024 02:19:20 GMT  
+		Size: 38.3 KB (38278 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:27-cli` - linux; arm variant v7
