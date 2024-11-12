@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:40fa12e1ef0ccb12e38cbcf85fecc69b8d829b533e26aa29304a84de5b7d04d0`
+- Image ID: `sha256:debc9d9164c9afc1e55e81e68e074ad6e686c5bed45f0ad1d265a4a2f0d5473c`
 - Created: `2024-10-16T23:15:53Z`
-- Virtual Size: ~ 245.61 Mb  
+- Virtual Size: ~ 245.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -262,16 +262,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.10.1-r0 description:
+curl-8.11.0-r2 description:
 URL retrival utility and library
 
-curl-8.10.1-r0 webpage:
+curl-8.11.0-r2 webpage:
 https://curl.se/
 
-curl-8.10.1-r0 installed size:
-252 KiB
+curl-8.11.0-r2 installed size:
+256 KiB
 
-curl-8.10.1-r0 license:
+curl-8.11.0-r2 license:
 curl
 
 ```
@@ -670,16 +670,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.10.1-r0 description:
+libcurl-8.11.0-r2 description:
 The multiprotocol file transfer library
 
-libcurl-8.10.1-r0 webpage:
+libcurl-8.11.0-r2 webpage:
 https://curl.se/
 
-libcurl-8.10.1-r0 installed size:
-644 KiB
+libcurl-8.11.0-r2 installed size:
+636 KiB
 
-libcurl-8.10.1-r0 license:
+libcurl-8.11.0-r2 license:
 curl
 
 ```
@@ -687,16 +687,16 @@ curl
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.3-r0 description:
+libexpat-2.6.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.3-r0 webpage:
+libexpat-2.6.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.3-r0 installed size:
+libexpat-2.6.4-r0 installed size:
 144 KiB
 
-libexpat-2.6.3-r0 license:
+libexpat-2.6.4-r0 license:
 MIT
 
 ```
