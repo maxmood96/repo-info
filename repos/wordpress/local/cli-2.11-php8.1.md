@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a5d8c5e7f17d01c72d649aee64cc68640469667f6f8d22cc4fb2a71df1f82769`
+- Image ID: `sha256:7e55c312fc10f87479d05fbac4fe71780dea886d467e680915b4ddfb2e8d1e27`
 - Created: `2024-09-12T19:33:49Z`
-- Virtual Size: ~ 225.19 Mb  
+- Virtual Size: ~ 225.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -251,16 +251,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.10.1-r0 description:
+curl-8.11.0-r2 description:
 URL retrival utility and library
 
-curl-8.10.1-r0 webpage:
+curl-8.11.0-r2 webpage:
 https://curl.se/
 
-curl-8.10.1-r0 installed size:
-252 KiB
+curl-8.11.0-r2 installed size:
+256 KiB
 
-curl-8.10.1-r0 license:
+curl-8.11.0-r2 license:
 curl
 
 ```
@@ -506,16 +506,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.10.1-r0 description:
+libcurl-8.11.0-r2 description:
 The multiprotocol file transfer library
 
-libcurl-8.10.1-r0 webpage:
+libcurl-8.11.0-r2 webpage:
 https://curl.se/
 
-libcurl-8.10.1-r0 installed size:
-644 KiB
+libcurl-8.11.0-r2 installed size:
+636 KiB
 
-libcurl-8.10.1-r0 license:
+libcurl-8.11.0-r2 license:
 curl
 
 ```
@@ -540,16 +540,16 @@ BSD-2-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.3-r0 description:
+libexpat-2.6.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.3-r0 webpage:
+libexpat-2.6.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.3-r0 installed size:
+libexpat-2.6.4-r0 installed size:
 144 KiB
 
-libexpat-2.6.3-r0 license:
+libexpat-2.6.4-r0 license:
 MIT
 
 ```
@@ -931,16 +931,16 @@ BSD-3-Clause
 ### `apk` package: `mariadb-client`
 
 ```console
-mariadb-client-10.11.8-r0 description:
+mariadb-client-10.11.10-r0 description:
 Client for the MariaDB database
 
-mariadb-client-10.11.8-r0 webpage:
+mariadb-client-10.11.10-r0 webpage:
 https://www.mariadb.org/
 
-mariadb-client-10.11.8-r0 installed size:
+mariadb-client-10.11.10-r0 installed size:
 36 MiB
 
-mariadb-client-10.11.8-r0 license:
+mariadb-client-10.11.10-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -948,16 +948,16 @@ GPL-2.0-or-later
 ### `apk` package: `mariadb-common`
 
 ```console
-mariadb-common-10.11.8-r0 description:
+mariadb-common-10.11.10-r0 description:
 MariaDB common files for both server and client
 
-mariadb-common-10.11.8-r0 webpage:
+mariadb-common-10.11.10-r0 webpage:
 https://www.mariadb.org/
 
-mariadb-common-10.11.8-r0 installed size:
+mariadb-common-10.11.10-r0 installed size:
 2260 KiB
 
-mariadb-common-10.11.8-r0 license:
+mariadb-common-10.11.10-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -999,16 +999,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `mysql-client`
 
 ```console
-mysql-client-10.11.8-r0 description:
+mysql-client-10.11.10-r0 description:
 Dummy package for mysql-client migration
 
-mysql-client-10.11.8-r0 webpage:
+mysql-client-10.11.10-r0 webpage:
 https://www.mariadb.org/
 
-mysql-client-10.11.8-r0 installed size:
+mysql-client-10.11.10-r0 installed size:
 4096 B
 
-mysql-client-10.11.8-r0 license:
+mysql-client-10.11.10-r0 license:
 GPL-2.0-or-later
 
 ```
