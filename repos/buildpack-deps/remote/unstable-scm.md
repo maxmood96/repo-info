@@ -1,7 +1,7 @@
 ## `buildpack-deps:unstable-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:f71ad7219278d66fe5e1d558128dba9157efd527a956429e4fc25fa1ef8ffaba
+$ docker pull buildpack-deps@sha256:58a3be3fcf4cd3b661142bc19b32abf9f7589d99d456448f1278aef595d6b3c0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -272,18 +272,18 @@ $ docker pull buildpack-deps@sha256:3bdc370b125ed8b8193e8750270c2d8ec3cf86815e29
 ### `buildpack-deps:unstable-scm` - linux; 386
 
 ```console
-$ docker pull buildpack-deps@sha256:9aaa755d266f547c1623a88949b4896927a675bb6fd3bd3783dddad9c2480671
+$ docker pull buildpack-deps@sha256:c104a59a3c4fb391a52f93cbfb13639f2687fc4366f11bd4751a0070ae46295d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **144.1 MB (144071948 bytes)**  
+-	Total Size: **144.5 MB (144456027 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:61aeaac6bc6c4ee0f59e06f93e4c2d110ad682bf40ec1764237e779701249494`
+-	Image ID: `sha256:b888da81dfbdafdde34e7d00d58c2571e37c5eb4452bcb663b3985887540668b`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Fri, 12 Jan 2024 22:06:44 GMT
-ADD file:a39a4e1fa9f977ce95bba21eda9e8c494e6af74b67bf3637c4ed4dfbcb6815b6 in / 
+ADD rootfs.tar.xz / # buildkit
 # Fri, 12 Jan 2024 22:06:44 GMT
 CMD ["bash"]
 # Fri, 12 Jan 2024 22:06:44 GMT
@@ -293,41 +293,41 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 ```
 
 -	Layers:
-	-	`sha256:5e40dc1768587ca69bb610632a26014594f4d90017fbbf395667e0c4e317e3b7`  
-		Last Modified: Thu, 17 Oct 2024 00:44:11 GMT  
-		Size: 54.1 MB (54117977 bytes)  
+	-	`sha256:266f316e766c7029b1cbb65159b6d9ea1da28d00e28cf109ea069ce95b082ac4`  
+		Last Modified: Tue, 12 Nov 2024 00:55:10 GMT  
+		Size: 54.2 MB (54192046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:778d1412c3e0a18773ad9511a1dfd5c117b0ffdc0c988451759a39e13c6a3c9a`  
-		Last Modified: Sat, 19 Oct 2024 00:54:56 GMT  
-		Size: 21.7 MB (21665152 bytes)  
+	-	`sha256:24546888a84a1c2171ba5648f213b4d3b8fee560f454ad1c12f583f6ce895c81`  
+		Last Modified: Tue, 12 Nov 2024 02:37:52 GMT  
+		Size: 21.7 MB (21725392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c29126a4a4aef17404bd71b479313e117a2f9ea628fcde52f725427fcf1c14fc`  
-		Last Modified: Sat, 19 Oct 2024 02:06:42 GMT  
-		Size: 68.3 MB (68288819 bytes)  
+	-	`sha256:885dfc308254678967ab6d79ba6d40d73a4ad263c111beedb94327edea737b17`  
+		Last Modified: Tue, 12 Nov 2024 03:14:27 GMT  
+		Size: 68.5 MB (68538589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:unstable-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:3eb3ece465260e3901ff62f2585ad45a0bfd5b6b634d72a26ed94741a1ae0ece
+$ docker pull buildpack-deps@sha256:8c24aadad36af251cd9bf21f434e87afe3221731362b3949ed6041b42e0106d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.6 MB (7593234 bytes)**  
+-	Total Size: **7.6 MB (7616166 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:296a0a9bc4cbe59a31877f787277224df9ea7b136f550c13853d5ec0bfd917c8`
+-	Image ID: `sha256:048981b783cc2bc2805b479186421c83a673d18f0c7f4ff8aaddaccc1c439cdb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cc6abc65fedce21ea5c2f45dc7b45f01c13382ab72ecd3623e069de8d70500a0`  
-		Last Modified: Sat, 19 Oct 2024 02:06:40 GMT  
-		Size: 7.6 MB (7585959 bytes)  
+	-	`sha256:c118844549e4437f38e352a7c47675cf37b87544393f46164905c9d0236b7bec`  
+		Last Modified: Tue, 12 Nov 2024 03:14:26 GMT  
+		Size: 7.6 MB (7608893 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7ddc7234c652467e21b26b6012685d27a4c664f836195c5ee43a6425eb01d17e`  
-		Last Modified: Sat, 19 Oct 2024 02:06:40 GMT  
-		Size: 7.3 KB (7275 bytes)  
+	-	`sha256:f38ce5f76d34336732dd1258471ae700b6196172c7e61fece81d951971e0645c`  
+		Last Modified: Tue, 12 Nov 2024 03:14:25 GMT  
+		Size: 7.3 KB (7273 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:unstable-scm` - linux; mips64le
