@@ -1,7 +1,7 @@
 ## `buildpack-deps:stable-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:d1d02d3341afdd9c1a97951899a50a9d4da1e9d63cec29bd477f2306730fae2e
+$ docker pull buildpack-deps@sha256:234ad1de0c6bd8ae1024516f64646becce5040299546d61dce815cb7ec74454d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -388,18 +388,18 @@ $ docker pull buildpack-deps@sha256:821b714bf8d6778d6d1b920a2baace275ae17c38d2e4
 ### `buildpack-deps:stable-scm` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:373aa79676f04beb3eaa6f55bb37e5eb0c9b7bb47cb9a83198716adb97f630b2
+$ docker pull buildpack-deps@sha256:4a4289d5bc6db05198984f4e81697f55cc0d7ac6720bdcbdb13af2b5b385c231
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **149.1 MB (149087104 bytes)**  
+-	Total Size: **149.1 MB (149085096 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:09a4e59eaf6014edffabf27a8adfefc971ae48c306b6667b58bb4c392b1e3da3`
+-	Image ID: `sha256:3875cb156e725ad37ee97b98abf0f972f2ac10c4ff305204b30071a468158a4f`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-ADD file:c7ce4329d7c0cdfb8efa822e20a44ab1922fe70e4e8be36a317ec45c565a260b in / 
+ADD rootfs.tar.xz / # buildkit
 # Wed, 10 May 2023 23:29:59 GMT
 CMD ["bash"]
 # Wed, 10 May 2023 23:29:59 GMT
@@ -409,41 +409,41 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 ```
 
 -	Layers:
-	-	`sha256:bbeb3fa4a5ad17047af70a984a8c9e89b0702821c59cb2290ff6c49eec8d704f`  
-		Last Modified: Thu, 17 Oct 2024 01:21:33 GMT  
-		Size: 53.6 MB (53555597 bytes)  
+	-	`sha256:9170cd93e372271efe7b34bbee8de26bbb094efba80a15cff49f580f87e5fe40`  
+		Last Modified: Tue, 12 Nov 2024 00:57:37 GMT  
+		Size: 53.6 MB (53555270 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1823a3ab0dcc6f88db2bc0c18d80304ad0e6a3cad08984b6ce0a7abefd371d55`  
-		Last Modified: Sat, 19 Oct 2024 00:56:54 GMT  
-		Size: 25.7 MB (25705977 bytes)  
+	-	`sha256:92051d5a3f7afdf0c89db06ce83fb963b8719a7024153e1520472673570e9d51`  
+		Last Modified: Tue, 12 Nov 2024 08:29:09 GMT  
+		Size: 25.7 MB (25717543 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b3666a280304f3727f745e818ab5e252dd98676495517a360e23f821dee0fa6`  
-		Last Modified: Sat, 19 Oct 2024 04:07:03 GMT  
-		Size: 69.8 MB (69825530 bytes)  
+	-	`sha256:913acd64029d37b20e9e161bb8659516cb78a99cfd56eb921fc4ccd76ae7c0c7`  
+		Last Modified: Tue, 12 Nov 2024 16:09:31 GMT  
+		Size: 69.8 MB (69812283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:stable-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:7ff192c33c2f46a626b9aaaf7ff58d543d20027a4f615fc0b55094a8c95f41cf
+$ docker pull buildpack-deps@sha256:c21374c30e5f547aa9e66b04b1997909f699921da61d213ed3fb3d2a7de64c0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.8 MB (7779782 bytes)**  
+-	Total Size: **7.8 MB (7779842 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b519cc0133914b3da70d68b9b425355d438fef14f426b416860fbcf8985dea66`
+-	Image ID: `sha256:a315c2156e595de5e483e597dd3ea85ea0533d0e98f410011d7326f27679968f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a81332dc7c985bd9aa29941d4d947285b297f86574e99c61cedd47f2ffe465d7`  
-		Last Modified: Sat, 19 Oct 2024 04:06:58 GMT  
-		Size: 7.8 MB (7772077 bytes)  
+	-	`sha256:d9c5acd4f7b46ec0c9c2839752d6be8030b1bcc4d58b67483ad71a717d9899cb`  
+		Last Modified: Tue, 12 Nov 2024 16:09:28 GMT  
+		Size: 7.8 MB (7772149 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5df14e3a6f7eb56ce7084eb115b99a6d5bbeb4586833f969a2edeff4583700db`  
-		Last Modified: Sat, 19 Oct 2024 04:06:57 GMT  
-		Size: 7.7 KB (7705 bytes)  
+	-	`sha256:c1014f338054fa217964a7cd584f29304bb70ac47f3c759f554c010e2b966ee4`  
+		Last Modified: Tue, 12 Nov 2024 16:09:27 GMT  
+		Size: 7.7 KB (7693 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:stable-scm` - linux; s390x

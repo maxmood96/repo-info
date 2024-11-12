@@ -1,7 +1,7 @@
 ## `buildpack-deps:sid-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:c3021577d390a123720dee46a4515293cfff70dc69e8e755f9a772a32f9ce620
+$ docker pull buildpack-deps@sha256:c7516a6d3202303a24246bddec8a9bfd8031ffeb797b10dd3485479bcd6f431e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -390,18 +390,18 @@ $ docker pull buildpack-deps@sha256:0552c8f1cd92a1e8490dffddb1bdf464601603e6f79a
 ### `buildpack-deps:sid-scm` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:61c4d6cc10809fc80188a1f1df6ff950e471673160ece56deb79ca5016c570c4
+$ docker pull buildpack-deps@sha256:070c7700d7f47048e9a84488481f5eeca3f322a2db8cf0063079bf0485af6022
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.0 MB (151014445 bytes)**  
+-	Total Size: **151.2 MB (151160749 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e401aa0cf32bd8f62d6d25d11a2ea6a4da7974387a28639bb95f8a688e37437e`
+-	Image ID: `sha256:461e9769ea2dda7d988b6bf2cf460318a930a39b684be2f7a4133a884c4eb101`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Fri, 12 Jan 2024 22:06:44 GMT
-ADD file:3f30d2b91e08061eb3185f2f9c67756024dc8f3e6cda74d75d6ae54a603cdd2b in / 
+ADD rootfs.tar.xz / # buildkit
 # Fri, 12 Jan 2024 22:06:44 GMT
 CMD ["bash"]
 # Fri, 12 Jan 2024 22:06:44 GMT
@@ -411,41 +411,41 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 ```
 
 -	Layers:
-	-	`sha256:df36361b5ac72face21de9a14adcec98ba3abb2261a8339bf516725d8753f43e`  
-		Last Modified: Thu, 17 Oct 2024 01:22:16 GMT  
-		Size: 57.2 MB (57176824 bytes)  
+	-	`sha256:ac2d911f8489db0bbd6f313128660ffb4f315b3d99baed39d7128c198fea25b9`  
+		Last Modified: Tue, 12 Nov 2024 00:59:35 GMT  
+		Size: 57.3 MB (57309355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d30f3cdfb0755564cd3c4456a7fa23e621d79e4f8f43bd8107c734f66d381334`  
-		Last Modified: Sat, 19 Oct 2024 00:57:49 GMT  
-		Size: 21.9 MB (21944061 bytes)  
+	-	`sha256:3a5f3e8aa1353894772b7fd9d91dc6448cf8573234fedf1ba1c8596471c52519`  
+		Last Modified: Tue, 12 Nov 2024 08:30:11 GMT  
+		Size: 22.0 MB (21992150 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5fc954d509992bc0347fcedb989b7696ca6b5029587c5a3cacd05686fe99e03`  
-		Last Modified: Sat, 19 Oct 2024 04:08:51 GMT  
-		Size: 71.9 MB (71893560 bytes)  
+	-	`sha256:a2f36575664f661fb4663abf9a54ae38f6714b2f1a53511cc1ffe3d8ddb1acb8`  
+		Last Modified: Tue, 12 Nov 2024 16:11:05 GMT  
+		Size: 71.9 MB (71859244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:sid-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:5e62f5f0e017c8f9977aa9d27e6c50468ed4359de5f9c2b1a32dc27b5fb8054a
+$ docker pull buildpack-deps@sha256:e104f83870e9f99a4669b944a6bbcbebacf57fc258995d778499ee21445f42c5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.6 MB (7604971 bytes)**  
+-	Total Size: **7.6 MB (7627984 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:db29662bd0d5a88b98f81de3267e604cd42271eab925a6a159518cbfd266f788`
+-	Image ID: `sha256:5c47416740f5541249a4cef52d3b7e47f7681543d006c0c3ec02ff1b67bbcffd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dc8587b4a60b823bd27bf8fefb21c0194fb50c644ae53b07ece8f07435740e12`  
-		Last Modified: Sat, 19 Oct 2024 04:08:44 GMT  
-		Size: 7.6 MB (7597630 bytes)  
+	-	`sha256:92fb0bcde05bbbbbd4d0f942437bf003e06cd1076856b50441ea3830631de34a`  
+		Last Modified: Tue, 12 Nov 2024 16:11:04 GMT  
+		Size: 7.6 MB (7620655 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:388754175027e015f6a047f0977907724e96b2acb63d81d8ac85b1169cb57a09`  
-		Last Modified: Sat, 19 Oct 2024 04:08:43 GMT  
-		Size: 7.3 KB (7341 bytes)  
+	-	`sha256:b2a50d8c663179edf632a443d2292c19b83099aa6fc312e4f3fa057911bd68e2`  
+		Last Modified: Tue, 12 Nov 2024 16:11:03 GMT  
+		Size: 7.3 KB (7329 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:sid-scm` - linux; riscv64

@@ -1,7 +1,7 @@
 ## `buildpack-deps:trixie-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:ae039e9cd6b38cfd9345885be1a90d44b88723c427b8acd95fd52b98fb785acb
+$ docker pull buildpack-deps@sha256:b4b757d748fa726c2bd2cf871ddcb888abc2629d4d810d39f96d38a8459f2f64
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -388,18 +388,18 @@ $ docker pull buildpack-deps@sha256:81190818ed7d83b0f92ee66dc853e7c6f22b9535d8e5
 ### `buildpack-deps:trixie-scm` - linux; ppc64le
 
 ```console
-$ docker pull buildpack-deps@sha256:69505418e2f16418896bfbd47bf5990e615e43e539795a7343b693ab3fefcbfb
+$ docker pull buildpack-deps@sha256:fccf093e3bb36008832e5ec58a51f1ac32d0d886c98f75c4f37ebb863d6885a6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **152.1 MB (152062495 bytes)**  
+-	Total Size: **151.0 MB (151013309 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:82d9cc630724fda513523a563038d51b567be8858d61db84360b0480b76603af`
+-	Image ID: `sha256:7ebeec5bc9376d17e01d51bb7962444e7575f3df8a16e27526ab9a4ffac838a4`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-ADD file:7d34de8e15cda6686099080e64714532070b3d06a451fa9d77a5716745974490 in / 
+ADD rootfs.tar.xz / # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
 CMD ["bash"]
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -409,41 +409,41 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 ```
 
 -	Layers:
-	-	`sha256:8299bac21377f71d4bbd00f3075290f241c45c39e6a9a76012dbff5b62d14e88`  
-		Last Modified: Thu, 17 Oct 2024 01:23:55 GMT  
-		Size: 57.1 MB (57126645 bytes)  
+	-	`sha256:554b3bf5ec10b22cc962f7afc042e96c50635c0e2b0d817544a202afc2a52711`  
+		Last Modified: Tue, 12 Nov 2024 01:05:47 GMT  
+		Size: 57.2 MB (57193598 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:739c73c116650c722a140d5e98dc4d5b306e6daaa1f611e7f00699c828890445`  
-		Last Modified: Sat, 19 Oct 2024 00:58:55 GMT  
-		Size: 23.3 MB (23314858 bytes)  
+	-	`sha256:08187472bfe4fce6e3b2fc2951e231ce30c71f70be1dc829ad73735e312d479f`  
+		Last Modified: Tue, 12 Nov 2024 08:31:04 GMT  
+		Size: 22.0 MB (21983916 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:888fc73ea70716bfd3afc5289dca8e001895bc72345d7defb80ef4274358afe4`  
-		Last Modified: Sat, 19 Oct 2024 04:10:18 GMT  
-		Size: 71.6 MB (71620992 bytes)  
+	-	`sha256:5445db0db78751088bfd85b5a3ee628352f9d78288ca29fed636c550e50e6235`  
+		Last Modified: Tue, 12 Nov 2024 16:12:54 GMT  
+		Size: 71.8 MB (71835795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:trixie-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:091947bf09abd557140c76ccc13c579c0bb566a957f213ac4199ad7c0b96ec62
+$ docker pull buildpack-deps@sha256:e94f6be5b6eddf231fce0e6606fd38a9209523a97cc3e95f0c1f15a4652074c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.5 MB (7500322 bytes)**  
+-	Total Size: **7.6 MB (7629581 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:072b1bb8073ec496b02f75e62dd6bc2ca92d82db16e29cf66cfeef186b98d497`
+-	Image ID: `sha256:46fa744652a5277bf95624921ad212b186a9d9c17913d20b62f2bbb489029e5c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9a4d7b382551912c219e859278693e28ae0f33f686b14245a858b2574bd45057`  
-		Last Modified: Sat, 19 Oct 2024 04:10:16 GMT  
-		Size: 7.5 MB (7492964 bytes)  
+	-	`sha256:1dc404b8f0d7ebf05e25893e3c6825872d16ff0cae8abaaf48f9a7649d8bff42`  
+		Last Modified: Tue, 12 Nov 2024 16:12:52 GMT  
+		Size: 7.6 MB (7622236 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:65b4ed94ce213d59bddff9f794ef0437815f2d5fc19ff6ff307e2969652c6e64`  
-		Last Modified: Sat, 19 Oct 2024 04:10:15 GMT  
-		Size: 7.4 KB (7358 bytes)  
+	-	`sha256:6b0339d7f4b34fc047dba3dca04265fd1aa21572185158b43c3d4d366e80585d`  
+		Last Modified: Tue, 12 Nov 2024 16:12:51 GMT  
+		Size: 7.3 KB (7345 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:trixie-scm` - linux; s390x
