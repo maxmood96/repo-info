@@ -1,7 +1,7 @@
 ## `unit:latest`
 
 ```console
-$ docker pull unit@sha256:1e35293a768dd8c51a600812b750248d0033f0816f050680e474198c2fbd5309
+$ docker pull unit@sha256:50746e60caf903de87c5fc065179d5fae1ef7f8343a92e6db18b03ce80cd836b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,19 +14,19 @@ $ docker pull unit@sha256:1e35293a768dd8c51a600812b750248d0033f0816f050680e47419
 ### `unit:latest` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:f0f23a02fb1e343bdfecde0ec0836668c1ef714d30efca5c38594cf19095fbe5
+$ docker pull unit@sha256:6353488e195e283a6e6798a3379dce5fefcbdda666929cf863ade4d52f3ac08f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.2 MB (41244986 bytes)**  
+-	Total Size: **41.2 MB (41247018 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5811c6ff0d35890400435ef62dec451b793157dbb92e8ecc9c3d6e70a44ee78f`
+-	Image ID: `sha256:8cef847c5c2029baabde5369837b092227b9d872fbbab2eb419aa3f8604356fe`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
 # Tue, 17 Sep 2024 21:10:58 GMT
-ADD file:90b9dd8f12120e8b2cd3ece45fcbe8af67e40565e2032a40f64bd921c43e2ce7 in / 
+ADD rootfs.tar.xz / # buildkit
 # Tue, 17 Sep 2024 21:10:58 GMT
 CMD ["bash"]
 # Tue, 17 Sep 2024 21:10:58 GMT
@@ -60,41 +60,41 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:a480a496ba95a197d587aa1d9e0f545ca7dbd40495a4715342228db62b67c4ba`  
-		Last Modified: Thu, 17 Oct 2024 00:23:58 GMT  
-		Size: 29.1 MB (29126289 bytes)  
+	-	`sha256:2d429b9e73a6cf90a5bb85105c8118b30a1b2deedeae3ea9587055ffcb80eb45`  
+		Last Modified: Tue, 12 Nov 2024 00:55:04 GMT  
+		Size: 29.1 MB (29127995 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66b21fc33a23a0f08a264e20154f60d99b7a61c0ad4d50a68fbe594c7b5943f7`  
-		Last Modified: Thu, 17 Oct 2024 01:31:09 GMT  
-		Size: 12.1 MB (12115984 bytes)  
+	-	`sha256:5d84eaf3f7461f838275b312dc8f86531eac4776ce16a1a129f734d1e581a7a6`  
+		Last Modified: Tue, 12 Nov 2024 02:22:33 GMT  
+		Size: 12.1 MB (12116311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65e0396baf23b290ec53471f4155653fc083838003af9c9b71e0d78b5dd477ff`  
-		Last Modified: Thu, 17 Oct 2024 01:31:09 GMT  
-		Size: 1.3 KB (1259 bytes)  
+	-	`sha256:9c189e4edc0861914227df61f1a0c22f39af87560ae526194c429dea05f0ebe2`  
+		Last Modified: Tue, 12 Nov 2024 02:22:33 GMT  
+		Size: 1.3 KB (1260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c1cb51f6a8f56e1cb5fb78917507f412401ee999b834c34f4f63b30c0d5f381`  
-		Last Modified: Thu, 17 Oct 2024 01:31:09 GMT  
-		Size: 1.5 KB (1454 bytes)  
+	-	`sha256:4e2dec50bfd31d50a5de0f2bea7d02d561911ebf6eaeff55db289648c80ea1f4`  
+		Last Modified: Tue, 12 Nov 2024 02:22:33 GMT  
+		Size: 1.5 KB (1452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:latest` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:409893132ccc5a2c697de8dc63d558d8297ba68b0d5de5915c63d8d1df9b5d2c
+$ docker pull unit@sha256:85e2afef9549486c254d92eb7e73998a998c43e42a518de241b8242364755353
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **20.3 KB (20265 bytes)**  
+-	Total Size: **20.4 KB (20436 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:85cbb5b02a3100bbfed2f598c3840823e84f928c8ff3216adf0715274ffa4b87`
+-	Image ID: `sha256:a4467d4946efdd765c91d77d8ad416d6ceff3a8ac3874164909ce187dd93d3c1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:79ad4f7d63d0c4455a9c60ca5362d147ee6be54edcde0c059fd2b8747632dd4e`  
-		Last Modified: Thu, 17 Oct 2024 01:31:09 GMT  
-		Size: 20.3 KB (20265 bytes)  
+	-	`sha256:237ffc561e8bd8c3b7abfef7ead6ed65f2e5539b8124b86d3a5fe32b2e3724de`  
+		Last Modified: Tue, 12 Nov 2024 02:22:33 GMT  
+		Size: 20.4 KB (20436 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `unit:latest` - linux; arm64 variant v8
