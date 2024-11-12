@@ -1,7 +1,7 @@
 ## `openjdk:24-ea-slim-bullseye`
 
 ```console
-$ docker pull openjdk@sha256:753c1f8752cae7f63c23a0d4f0c8699214cecefe19cedb004996166444b2753e
+$ docker pull openjdk@sha256:4fd055a7a1d4bee151a8c8327273cc1f1821ee02845bb596e141c75dc1297763
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,19 +14,19 @@ $ docker pull openjdk@sha256:753c1f8752cae7f63c23a0d4f0c8699214cecefe19cedb00499
 ### `openjdk:24-ea-slim-bullseye` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:febd95ec65f34d1f745f6b9da55017011becc0a3c51f89774ef2709b0be5550e
+$ docker pull openjdk@sha256:7c135cbced4f7f0a4c5f10747ea395b6fc2a369ee6e56f44b4d5ad4246b1d053
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **246.5 MB (246541920 bytes)**  
+-	Total Size: **246.4 MB (246360223 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f6b0cb963e96d2deb4c28615dcd501381848580915bc98410030a88f0b40342f`
+-	Image ID: `sha256:8a80f81fb9d86b4eddd9ef3dd30e3a2fd9f096d01168dfaf7ea5a1b7d69c1849`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Thu, 17 Oct 2024 00:20:51 GMT
-ADD file:0f6f1b93a8fddd20b36a99cc6cfbe4a03bc7be2adb427f7f8e74a2029c54c8bb in / 
-# Thu, 17 Oct 2024 00:20:52 GMT
+# Thu, 07 Nov 2024 19:48:11 GMT
+ADD rootfs.tar.xz / # buildkit
+# Thu, 07 Nov 2024 19:48:11 GMT
 CMD ["bash"]
 # Thu, 07 Nov 2024 19:48:11 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/* # buildkit
@@ -45,41 +45,41 @@ CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:6dce3b49cfe6dc4b4e0198412bb0578215c86dae41303c47438639853bcba562`  
-		Last Modified: Thu, 17 Oct 2024 00:24:36 GMT  
-		Size: 31.4 MB (31428800 bytes)  
+	-	`sha256:55ab1b300d4b4b00c98fb396b36f0f7ba5dab2f7d18927e3742d364632723cbe`  
+		Last Modified: Tue, 12 Nov 2024 00:55:04 GMT  
+		Size: 31.5 MB (31451561 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:88eaa6af07e80815b9fb4c2b788ff13937b48ffe4bb8940bc74a4ebd9dcc0af0`  
-		Last Modified: Sat, 09 Nov 2024 02:50:53 GMT  
-		Size: 1.6 MB (1581743 bytes)  
+	-	`sha256:2f4c61d1bdafda5117543d142b627a93d494aee1bdf8a2cf3508005675915031`  
+		Last Modified: Tue, 12 Nov 2024 02:44:19 GMT  
+		Size: 1.4 MB (1377307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8fc308e06790cee18a9ad30ed228344b83a860e4887b202b4797ca3d7105c289`  
-		Last Modified: Sat, 09 Nov 2024 02:50:55 GMT  
-		Size: 213.5 MB (213531377 bytes)  
+	-	`sha256:1dab9d35aaa3d90e3a57333883d3cbd792392c2e52e6915661ec94a0d76862ee`  
+		Last Modified: Tue, 12 Nov 2024 02:44:21 GMT  
+		Size: 213.5 MB (213531355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `openjdk:24-ea-slim-bullseye` - unknown; unknown
 
 ```console
-$ docker pull openjdk@sha256:a747c2fc3428eb5335daa83e673ef1d6cf92c98e335c92713663fe9105407484
+$ docker pull openjdk@sha256:5ad0a001646b91c6b61951e68d03f37056df4a7547988a0afa020c40cae39028
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.8 MB (2829746 bytes)**  
+-	Total Size: **2.8 MB (2828373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3e8bb7b76ea089005e8597342b13be9282cb5e6dc448fc2107be8efa9e54ff5`
+-	Image ID: `sha256:2ca48530088edd2ffe7c6ad11ecfdbf9a53ddedb2d5856994ab4388ee7e827cf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7838c743a525bfd140582c30d1ec1beaa632aa9b5ada17820117ec0c9703e6d3`  
-		Last Modified: Sat, 09 Nov 2024 02:50:53 GMT  
-		Size: 2.8 MB (2812354 bytes)  
+	-	`sha256:ea5448539ebc9048dec12a962fa64a41e8467988b5ada5ccf3e6deab244f226a`  
+		Last Modified: Tue, 12 Nov 2024 02:44:19 GMT  
+		Size: 2.8 MB (2810804 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a3bf542a99e6361d5b612e0bdd4bc09082199a052ed1709daf3b78da64ad110f`  
-		Last Modified: Sat, 09 Nov 2024 02:50:52 GMT  
-		Size: 17.4 KB (17392 bytes)  
+	-	`sha256:4f570e1a4c5b5eac93d367bcccf592b0f623d0ffb4560b2435069513ff2d0941`  
+		Last Modified: Tue, 12 Nov 2024 02:44:19 GMT  
+		Size: 17.6 KB (17569 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `openjdk:24-ea-slim-bullseye` - linux; arm64 variant v8
