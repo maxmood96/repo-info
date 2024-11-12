@@ -4,6 +4,7 @@
 
 -	[`logstash:7.17.25`](#logstash71725)
 -	[`logstash:8.15.3`](#logstash8153)
+-	[`logstash:8.16.0`](#logstash8160)
 
 ## `logstash:7.17.25`
 
@@ -602,3 +603,12 @@ $ docker pull logstash@sha256:93de7eeb86e5b87336a5c145b163bb6a7b18e01b5b0a5a26d7
 		Last Modified: Thu, 17 Oct 2024 22:22:26 GMT  
 		Size: 34.5 KB (34492 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `logstash:8.16.0`
+
+```console
+$ docker pull logstash@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
