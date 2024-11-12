@@ -1,7 +1,7 @@
 ## `node:alpine3.19`
 
 ```console
-$ docker pull node@sha256:d6daa8e9cc923ad74a74a563e5938c7276596b26ce0ad3f0beb4381405e8475e
+$ docker pull node@sha256:20c8c424d9e8aa1f5dc21bd1d87e8885c75f15dfab5f800bb3f016dc949b0e6e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -96,20 +96,20 @@ $ docker pull node@sha256:b7f9e93c3da43102bffc71b2077fb159935e539c6104a437e8f249
 ### `node:alpine3.19` - linux; arm variant v6
 
 ```console
-$ docker pull node@sha256:e4aeee5990826cf8a3ce65cdb920ccfa17db4081ae5e629f922c2312a0f42013
+$ docker pull node@sha256:2d67903fe89835164c81e3fae488f8639125a87d9af54966bfcbe0987a4126d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.6 MB (53571670 bytes)**  
+-	Total Size: **53.6 MB (53571922 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:137d5efe16c51a42df38f41f27ab6a59f776b2a5357719d29a534f497df4b2e9`
+-	Image ID: `sha256:3bb441d450fe4a47b7772541e5cbd0133e0b643108b33c1e11005d4dade5bb1f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 22:49:26 GMT
-ADD file:87d4cb9e99b4a12939a030198a62d49f1c5b7856f27d62fea0e948cd2120d51d in / 
-# Fri, 06 Sep 2024 22:49:27 GMT
+# Fri, 06 Sep 2024 12:04:22 GMT
+ADD alpine-minirootfs-3.19.4-armhf.tar.gz / # buildkit
+# Fri, 06 Sep 2024 12:04:22 GMT
 CMD ["/bin/sh"]
 # Fri, 25 Oct 2024 06:01:46 GMT
 ENV NODE_VERSION=23.1.0
@@ -128,41 +128,41 @@ CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:8922ced57063579c37aeb21c1c664433762d26f8051e187a63b559c21b36da53`  
-		Last Modified: Fri, 06 Sep 2024 22:49:59 GMT  
-		Size: 3.2 MB (3176391 bytes)  
+	-	`sha256:1962dd3845094270fb16c55729f52e68e09c9fdecbe06ccfa89e981fa679172d`  
+		Last Modified: Mon, 09 Sep 2024 07:03:19 GMT  
+		Size: 3.2 MB (3176432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf73288a1aca9bc7da510b30294101146201ccf30f5d1c77f2bbaec30fead280`  
-		Last Modified: Fri, 25 Oct 2024 17:38:10 GMT  
-		Size: 49.0 MB (49007607 bytes)  
+	-	`sha256:924e53a6e21b647bfff8da7b3e278cf4f103c1629dfd4184c6de7574cbd2c250`  
+		Last Modified: Tue, 12 Nov 2024 08:04:53 GMT  
+		Size: 49.0 MB (49007827 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34b6332b03a324ee6ff15e7d434c511cdf012ce3555a16b2ac0bfdfdbff44692`  
-		Last Modified: Fri, 25 Oct 2024 17:38:08 GMT  
-		Size: 1.4 MB (1387226 bytes)  
+	-	`sha256:50852b016215804759394cd968dd3e262de7d133631c2a94e5295b31d07e6796`  
+		Last Modified: Tue, 12 Nov 2024 08:04:51 GMT  
+		Size: 1.4 MB (1387216 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b2ace2881ae0ae0b8295f5e7cc22667d24ea0c9178e1ec34ae0f6bd7c3e0ad5`  
-		Last Modified: Fri, 25 Oct 2024 17:38:08 GMT  
-		Size: 446.0 B  
+	-	`sha256:3b94266e5825157fca585254dcc198b1773029429e4ae50d1777085e77e9b9c0`  
+		Last Modified: Tue, 12 Nov 2024 08:04:50 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:f5b0ce95ecdc86169a617dad6ac1ef1458795b54f4553ff9f5a7fbd156b60c30
+$ docker pull node@sha256:144e9e3fb760136fd7a56cf527475147d51f1a94ef13332e95ba40742ef2a23f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.5 KB (23481 bytes)**  
+-	Total Size: **23.7 KB (23686 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb15fb192c4af77a8c3514934a32d5a8467beef5548522486e1ef341a9eeb8f3`
+-	Image ID: `sha256:831da42a9a36cffcefc07077fe58a627f9cd4244a2f8b2feb7121f33eb069f21`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9af0506e8ba9ddfbf68a8bce88f2a80b66e4662c3042a0da8fa3f0197e800aa7`  
-		Last Modified: Fri, 25 Oct 2024 17:38:08 GMT  
-		Size: 23.5 KB (23481 bytes)  
+	-	`sha256:d7cabd4da6d90a43ba471b866a349398c4f1feb4173df3f37974b17fe9eafc08`  
+		Last Modified: Tue, 12 Nov 2024 08:04:50 GMT  
+		Size: 23.7 KB (23686 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `node:alpine3.19` - linux; arm variant v7
