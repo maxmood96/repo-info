@@ -1,14 +1,15 @@
 ## `varnish:stable`
 
 ```console
-$ docker pull varnish@sha256:4ca484b725151d0d7fef4981bb3eae53e2acd546a3ea007402073fa1efa89c8c
+$ docker pull varnish@sha256:5316358e37d6483a9d871567fe040188e8b7fc5e428b5a05bafa3cea45d519ce
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 11
+-	Platforms: 12
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v7
+	-	unknown; unknown
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 	-	linux; 386
@@ -99,58 +100,80 @@ $ docker pull varnish@sha256:b333b90d72fbe742b7de9f179a1a76808d1693126090444ea2f
 ### `varnish:stable` - linux; arm variant v7
 
 ```console
-$ docker pull varnish@sha256:d7abf2045f401927745a85aaa8a94e711e6885d638e084c8e478570db113a5e3
+$ docker pull varnish@sha256:64869f8649218936d22fbc4ddac170fa656110142449f0c2a1fb5f5267fb824a
 ```
 
--	Docker Version: 23.0.11
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **105.6 MB (105572118 bytes)**  
+-	Total Size: **99.1 MB (99067059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c035b821cc4a214def698275b58aa9b2581c5ab2146ebb88848edd384d87d162`
+-	Image ID: `sha256:8faed3629ad3e6492ad5706a215925c220a6e34862d0f3cda68d4b0ae6889198`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
--	Default Command: `[]`
 
 ```dockerfile
-# Thu, 17 Oct 2024 03:03:21 GMT
-ADD file:e76e8ba7ebca0b1dcaec16ad1e863ab59c7e155f0b95ba46f5543e418a904b35 in / 
-# Thu, 17 Oct 2024 03:03:22 GMT
+# Sun, 10 Nov 2024 02:42:48 GMT
+ADD rootfs.tar.xz / # buildkit
+# Sun, 10 Nov 2024 02:42:48 GMT
 CMD ["bash"]
-# Mon, 11 Nov 2024 19:06:17 GMT
+# Sun, 10 Nov 2024 02:42:48 GMT
 ARG PKG_COMMIT=10da6a585eb7d8defe9d273a51df5b133500eb6b
-# Mon, 11 Nov 2024 19:06:17 GMT
+# Sun, 10 Nov 2024 02:42:48 GMT
 ARG VARNISH_VERSION=6.0.13
-# Mon, 11 Nov 2024 19:06:17 GMT
+# Sun, 10 Nov 2024 02:42:48 GMT
 ARG DIST_SHA512=3bdb4f04bdb22789ebe04a1e57dc814a7d7e642456cce2696f7e05fe557a277f18d5dc4a2df22a27fa9445447af3356ebdb3c5d63c01bb32d9bff7881aa8a703
-# Mon, 11 Nov 2024 19:06:17 GMT
+# Sun, 10 Nov 2024 02:42:48 GMT
 ENV VARNISH_SIZE=100M
-# Mon, 11 Nov 2024 19:08:06 GMT
-# ARGS: DIST_SHA512=3bdb4f04bdb22789ebe04a1e57dc814a7d7e642456cce2696f7e05fe557a277f18d5dc4a2df22a27fa9445447af3356ebdb3c5d63c01bb32d9bff7881aa8a703 PKG_COMMIT=10da6a585eb7d8defe9d273a51df5b133500eb6b VARNISH_VERSION=6.0.13
-RUN set -e;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout "$PKG_COMMIT";     rm -rf .git;     curl -f "https://varnish-cache.org/downloads/varnish-$VARNISH_VERSION.tgz" -o $tmpdir/orig.tgz;     echo "$DIST_SHA512  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|$VARNISH_VERSION|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y --no-install-recommends install ../*.deb;     apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS;     mkdir /pkgs;     mv ../*dev*.deb /pkgs;     rm -rf /var/lib/apt/lists/* "$tmpdir";
-# Mon, 11 Nov 2024 19:08:08 GMT
+# Sun, 10 Nov 2024 02:42:48 GMT
+# ARGS: PKG_COMMIT=10da6a585eb7d8defe9d273a51df5b133500eb6b VARNISH_VERSION=6.0.13 DIST_SHA512=3bdb4f04bdb22789ebe04a1e57dc814a7d7e642456cce2696f7e05fe557a277f18d5dc4a2df22a27fa9445447af3356ebdb3c5d63c01bb32d9bff7881aa8a703
+RUN set -e;     BASE_PKGS="curl dpkg-dev debhelper devscripts equivs git pkg-config apt-utils fakeroot";     export DEBIAN_FRONTEND=noninteractive;     export DEBCONF_NONINTERACTIVE_SEEN=true;     tmpdir="$(mktemp -d)";     cd "$tmpdir";     apt-get update;     apt-get install -y --no-install-recommends $BASE_PKGS;     git clone https://github.com/varnishcache/pkg-varnish-cache.git;     cd pkg-varnish-cache;     git checkout "$PKG_COMMIT";     rm -rf .git;     curl -f "https://varnish-cache.org/downloads/varnish-$VARNISH_VERSION.tgz" -o $tmpdir/orig.tgz;     echo "$DIST_SHA512  $tmpdir/orig.tgz" | sha512sum -c -;     tar xavf $tmpdir/orig.tgz --strip 1;     sed -i -e "s|@VERSION@|$VARNISH_VERSION|"  "debian/changelog";     mk-build-deps --install --tool="apt-get -o Debug::pkgProblemResolver=yes --yes" debian/control;     sed -i '' debian/varnish*;     dpkg-buildpackage -us -uc -j"$(nproc)";     apt-get -y --no-install-recommends install ../*.deb;     apt-get -y purge --auto-remove varnish-build-deps $BASE_PKGS;     mkdir /pkgs;     mv ../*dev*.deb /pkgs;     rm -rf /var/lib/apt/lists/* "$tmpdir"; # buildkit
+# Sun, 10 Nov 2024 02:42:48 GMT
 WORKDIR /etc/varnish
-# Mon, 11 Nov 2024 19:08:08 GMT
-COPY dir:70ca6de1505e99367a417b2ec0c091d5e6d2379f760be9da7079e2cd535138e2 in /usr/local/bin/ 
-# Mon, 11 Nov 2024 19:08:08 GMT
+# Sun, 10 Nov 2024 02:42:48 GMT
+COPY scripts/ /usr/local/bin/ # buildkit
+# Sun, 10 Nov 2024 02:42:48 GMT
 ENTRYPOINT ["/usr/local/bin/docker-varnish-entrypoint"]
-# Mon, 11 Nov 2024 19:08:08 GMT
-EXPOSE 80 8443
-# Mon, 11 Nov 2024 19:08:08 GMT
+# Sun, 10 Nov 2024 02:42:48 GMT
+EXPOSE map[80/tcp:{} 8443/tcp:{}]
+# Sun, 10 Nov 2024 02:42:48 GMT
 CMD []
 ```
 
 -	Layers:
-	-	`sha256:d6319e551f4eae5cadf245338228c7b7cbad94a77c481a88ccbffef7b89f0aee`  
-		Last Modified: Thu, 17 Oct 2024 03:06:55 GMT  
-		Size: 24.7 MB (24718197 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c99b753c14f33f1802a71bfa07320696185ee0f185274e88a4b71caf01b5094d`  
-		Last Modified: Mon, 11 Nov 2024 19:09:19 GMT  
-		Size: 80.9 MB (80853201 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7c20ff8699d72c6c6aebbfcf4010484d1465c6bad8ffd6f2db47eca38558d769`  
-		Last Modified: Mon, 11 Nov 2024 19:09:07 GMT  
-		Size: 720.0 B  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ddd3c6488ea8b62db6811ba136fe14cba70219532910e67a91ed3388ec9f5757`  
+		Last Modified: Tue, 12 Nov 2024 00:56:42 GMT  
+		Size: 24.7 MB (24718909 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8456a9b5aa6395e5bd4e0d827bd0199786266efef009523afdebcecd9951a00f`  
+		Last Modified: Tue, 12 Nov 2024 15:58:13 GMT  
+		Size: 74.3 MB (74347410 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a3502743e7a4885b252192550073c40c3d05ceb83c44064ac6796510cfb6b9a5`  
+		Last Modified: Tue, 12 Nov 2024 15:58:11 GMT  
+		Size: 708.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `varnish:stable` - unknown; unknown
+
+```console
+$ docker pull varnish@sha256:5f0d72757437b64ee1a3c80df979868e544eb384f4fb590e5db0ae967ceaabff
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **12.7 KB (12733 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:13e599a23ce279cbd2c4813430f6977c69171fa8037fa7b65e0c3c107e3162b3`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:5160c1321f23efb99a42de03d1215594467e7b280037b0a7ed07b5fde3b8e9f8`  
+		Last Modified: Tue, 12 Nov 2024 15:58:11 GMT  
+		Size: 12.7 KB (12733 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ### `varnish:stable` - linux; arm64 variant v8
 
