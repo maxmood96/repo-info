@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dea6f607c28c4b8e3615dc0ee93c3826ac8c433e649dc3f29845e5365d0f4327`
+- Image ID: `sha256:57063560c3b17eaba413ecb03b74635495eff35efe419843bbcbb4ae9ba8cf4a`
 - Created: `2024-05-08T09:27:26Z`
 - Virtual Size: ~ 247.50 Mb  
   (total size of all layers on-disk)
@@ -315,16 +315,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.10.1-r0 description:
+curl-8.11.0-r2 description:
 URL retrival utility and library
 
-curl-8.10.1-r0 webpage:
+curl-8.11.0-r2 webpage:
 https://curl.se/
 
-curl-8.10.1-r0 installed size:
-252 KiB
+curl-8.11.0-r2 installed size:
+256 KiB
 
-curl-8.10.1-r0 license:
+curl-8.11.0-r2 license:
 curl
 
 ```
@@ -502,16 +502,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.10.1-r0 description:
+libcurl-8.11.0-r2 description:
 The multiprotocol file transfer library
 
-libcurl-8.10.1-r0 webpage:
+libcurl-8.11.0-r2 webpage:
 https://curl.se/
 
-libcurl-8.10.1-r0 installed size:
-644 KiB
+libcurl-8.11.0-r2 installed size:
+636 KiB
 
-libcurl-8.10.1-r0 license:
+libcurl-8.11.0-r2 license:
 curl
 
 ```
@@ -621,16 +621,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-16.3-r0 description:
+libpq-16.4-r0 description:
 PostgreSQL client library
 
-libpq-16.3-r0 webpage:
+libpq-16.4-r0 webpage:
 https://www.postgresql.org/
 
-libpq-16.3-r0 installed size:
+libpq-16.4-r0 installed size:
 328 KiB
 
-libpq-16.3-r0 license:
+libpq-16.4-r0 license:
 PostgreSQL
 
 ```
