@@ -1,7 +1,7 @@
 ## `node:iron-alpine3.19`
 
 ```console
-$ docker pull node@sha256:35ece557d0c941cf933820d3051438d70a62815a9be014edbc60c68fc80115a6
+$ docker pull node@sha256:f0e4e6abd40cf8eb86248eb2627b8d948e65ab34cf54b5da4e2a5f8015fbc2af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -98,20 +98,20 @@ $ docker pull node@sha256:fde38cb74eb4573eda869055cf9035db8ea470279a1b5224706b16
 ### `node:iron-alpine3.19` - linux; arm variant v6
 
 ```console
-$ docker pull node@sha256:e876e2e644f13f333155266ec56e93f2acc57e015a3f9d1422d805e42386e663
+$ docker pull node@sha256:7d8d2e021f71777e9c8b21d4571b5a9beee397db4b4058970caeb023f91f2ca9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.5 MB (45507534 bytes)**  
+-	Total Size: **45.5 MB (45507478 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fa35ce4ef04a0e676dc3c67cae105134bf89d76174eb5d2be6cf774d0008e44`
+-	Image ID: `sha256:7dcdd058af04c745cc12a7f4fa3e95a27c2a0f9beb2bf89602bb16e6687ae1e8`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 22:49:26 GMT
-ADD file:87d4cb9e99b4a12939a030198a62d49f1c5b7856f27d62fea0e948cd2120d51d in / 
-# Fri, 06 Sep 2024 22:49:27 GMT
+# Fri, 06 Sep 2024 12:04:22 GMT
+ADD alpine-minirootfs-3.19.4-armhf.tar.gz / # buildkit
+# Fri, 06 Sep 2024 12:04:22 GMT
 CMD ["/bin/sh"]
 # Fri, 04 Oct 2024 15:27:57 GMT
 ENV NODE_VERSION=20.18.0
@@ -130,41 +130,41 @@ CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:8922ced57063579c37aeb21c1c664433762d26f8051e187a63b559c21b36da53`  
-		Last Modified: Fri, 06 Sep 2024 22:49:59 GMT  
-		Size: 3.2 MB (3176391 bytes)  
+	-	`sha256:1962dd3845094270fb16c55729f52e68e09c9fdecbe06ccfa89e981fa679172d`  
+		Last Modified: Mon, 09 Sep 2024 07:03:19 GMT  
+		Size: 3.2 MB (3176432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:51b756c76b3ec1a13fce91906f8ec6bebe8ae1336ece83fbd43eca92516d98d2`  
-		Last Modified: Fri, 04 Oct 2024 19:56:14 GMT  
-		Size: 40.9 MB (40943487 bytes)  
+	-	`sha256:71dfa6cf7b8b9fd134cfdc0f8ec393ca306c8fb16a7e1130b803e9680e5eb8fb`  
+		Last Modified: Tue, 12 Nov 2024 12:10:57 GMT  
+		Size: 40.9 MB (40943379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5fc41b41ff7b8198c69055445d8c8fb7e7ac836da7163f4b8fcb52704509fbf1`  
-		Last Modified: Fri, 04 Oct 2024 19:56:13 GMT  
-		Size: 1.4 MB (1387212 bytes)  
+	-	`sha256:6c4f5eecb9d7c50e82cdf1ae8d835ec3dfc297472ec1627d028293692167f4d5`  
+		Last Modified: Tue, 12 Nov 2024 12:10:56 GMT  
+		Size: 1.4 MB (1387220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44ec1572d640c720d0404b8c04b7e3186cbe0ced8a817c040bf35330d05c0184`  
-		Last Modified: Fri, 04 Oct 2024 19:56:12 GMT  
-		Size: 444.0 B  
+	-	`sha256:8e10fee4db7a9c5045f49f40eae641c152d28f9f24b0501358b8e18d2f4fe16c`  
+		Last Modified: Tue, 12 Nov 2024 12:10:55 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:iron-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:78b74d8b6ca307de69114d24f7191d2ade0cc244f88a3da12057d3881d6c7738
+$ docker pull node@sha256:49cb8e45de85ef6d00d919c60ea2f2a9bf1b632b60f60402bbdf3710753644ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.8 KB (23765 bytes)**  
+-	Total Size: **23.7 KB (23686 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b8ab7274ad79ea89a8362a032e37974324d1b21a0fa1ea90b1edbdc4e24e47de`
+-	Image ID: `sha256:a0dbf32ed695c8a074b001663e085414da1099a6404c1f52ba4b1d1e1c7508a5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:01bc391e8b7b5cf22049f2b53bda195656df6edaf4e24162d18c39fdbabc50f6`  
-		Last Modified: Fri, 04 Oct 2024 19:56:12 GMT  
-		Size: 23.8 KB (23765 bytes)  
+	-	`sha256:cd30f3e628c37e1f301c570c4d36c2ddf4c568695c5d4174b9e7cda37b2d0ecc`  
+		Last Modified: Tue, 12 Nov 2024 12:10:55 GMT  
+		Size: 23.7 KB (23686 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `node:iron-alpine3.19` - linux; arm variant v7

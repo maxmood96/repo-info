@@ -1,7 +1,7 @@
 ## `node:20-alpine3.20`
 
 ```console
-$ docker pull node@sha256:210406ea695f26d53ca224f52479cce9bd3036ea5564d4cb96bc9b63285d0f2b
+$ docker pull node@sha256:305f8324c81cb22ab17a9a7c0e1d36eb04e03e65e8e3e525eb8ed24ed836cd92
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -98,20 +98,20 @@ $ docker pull node@sha256:6a8ff6879fff185fb0bf98d25d4398fea63f8d7389730ebb2ef918
 ### `node:20-alpine3.20` - linux; arm variant v6
 
 ```console
-$ docker pull node@sha256:2c129f0eb9129b17ccd18c695c7e803653700a4e84a76b8aa759813a2d34fb30
+$ docker pull node@sha256:82066b0a1da28470b0a8dcdb5761bae08d32e3d6403a9dcbf94f7a56387b49db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.7 MB (45691963 bytes)**  
+-	Total Size: **45.7 MB (45692019 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79184d629180c88149fe6a2d8ae1e46b9c1e738e0888e54eb0d8dfa826c7dae9`
+-	Image ID: `sha256:c7e9d470180b4b4e7b618ddf83a77a6e6ecafab2d29a7b3e81df80206a778b5d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 22:49:23 GMT
-ADD file:faa3509308d5524875c6afec4d4d1a357118aa1587e5485eca63c2907b37d968 in / 
-# Fri, 06 Sep 2024 22:49:24 GMT
+# Fri, 06 Sep 2024 12:05:36 GMT
+ADD alpine-minirootfs-3.20.3-armhf.tar.gz / # buildkit
+# Fri, 06 Sep 2024 12:05:36 GMT
 CMD ["/bin/sh"]
 # Fri, 04 Oct 2024 15:27:57 GMT
 ENV NODE_VERSION=20.18.0
@@ -130,41 +130,41 @@ CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:97964a4b92f04f720ed681b3ec62b071ced94b08b57765c612866e77a71ec087`  
-		Last Modified: Fri, 06 Sep 2024 22:49:47 GMT  
-		Size: 3.4 MB (3366506 bytes)  
+	-	`sha256:655a2516811563036720a66963f9c64bc14eb53aac8eeceaebcda6bf661651bb`  
+		Last Modified: Mon, 09 Sep 2024 07:03:58 GMT  
+		Size: 3.4 MB (3366596 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87dddd856f30bbe8f1a2df42a134e5166573bc9d18609dbf7938f82f9be3a377`  
-		Last Modified: Fri, 04 Oct 2024 20:54:19 GMT  
-		Size: 40.9 MB (40938742 bytes)  
+	-	`sha256:0cff34c2fb3446bc1f9d54d03d741ef9a8f97d2e5f1d272397eabc4c7b5f57a5`  
+		Last Modified: Tue, 12 Nov 2024 12:45:16 GMT  
+		Size: 40.9 MB (40938719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7938fc8b96f5772be42b638b6f55780912cba3e6a7924729e4280279b551dafe`  
-		Last Modified: Fri, 04 Oct 2024 20:54:18 GMT  
-		Size: 1.4 MB (1386270 bytes)  
+	-	`sha256:632e6fba1774e74eca894b73e866f3acaa92fb30d17937d7e342fb2e6a458c9f`  
+		Last Modified: Tue, 12 Nov 2024 12:45:15 GMT  
+		Size: 1.4 MB (1386262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:921322d7387e33e6a5f92c763c1958862afcccd6ba8560941a7e17883edf1c75`  
-		Last Modified: Fri, 04 Oct 2024 20:54:17 GMT  
-		Size: 445.0 B  
+	-	`sha256:2dd53c705a39eb5b2254e444bb7463051a3bd96b84b382f0717844cf5d48d6a6`  
+		Last Modified: Tue, 12 Nov 2024 12:45:15 GMT  
+		Size: 442.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:20-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:1e44659d676a968a59d46516b801f82b5c49f907ef1cb1e2dd327c984e284baa
+$ docker pull node@sha256:88cbf292122646e0fec6e256d696b6670aa5a43372f735b6f87457f2e3757614
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.3 KB (25328 bytes)**  
+-	Total Size: **24.9 KB (24938 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f7e0075a02d282e17ad69bda40ec2d11dfdf0ed1d954efa07e0dab855e3c5a0`
+-	Image ID: `sha256:71ec5bff9736c3d7e5406e2245b1b6705508b476a93c6830f952b9ce87d81a4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4182e0c05a72a6ecefdf6387bfb31e60a2d369edaae45dba7c0e0dd4ccd501ed`  
-		Last Modified: Fri, 04 Oct 2024 20:54:17 GMT  
-		Size: 25.3 KB (25328 bytes)  
+	-	`sha256:5449e09344db3833dbeb13130b8fbcdb525426d103b4a961aa46dcdb36ff43b5`  
+		Last Modified: Tue, 12 Nov 2024 12:45:15 GMT  
+		Size: 24.9 KB (24938 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `node:20-alpine3.20` - linux; arm variant v7

@@ -1,7 +1,7 @@
 ## `node:hydrogen-alpine3.20`
 
 ```console
-$ docker pull node@sha256:40b5a09847e38ed37419c348797cbb5401ee523a0333a4f6dcdc202b02a53553
+$ docker pull node@sha256:e3264182fe5aad5bce0a1b156ae34262a74a34c032cd01674bc0de69a2608303
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -322,19 +322,19 @@ $ docker pull node@sha256:fe04afe40f0d9cbaaa4a7784e7447fe05127b11a7615001d61215c
 ### `node:hydrogen-alpine3.20` - linux; ppc64le
 
 ```console
-$ docker pull node@sha256:0bb524ad46c96fe6be0645bfbc89ead33438dff2d8593d7afb2ccf105761f378
+$ docker pull node@sha256:3286eee1a13249b7b631d9e4ce0c1267bfa5acc74c6b9e88bc2c9d54227d2baa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.3 MB (47252099 bytes)**  
+-	Total Size: **47.3 MB (47252415 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a685c7fa232e27e0b74d79c0210d76f8afeaa569356b3849bca7d3bc11369fba`
+-	Image ID: `sha256:e60b7bfc8bccce09e0eba048b16593f030ab72da1bd2b923808c0384d2edf875`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
 # Tue, 09 Jul 2024 05:33:43 GMT
-ADD file:c1f14e23acaff59e2dc7a11f65f8fdfbed8be1350a135493a06b692ecefb26cc in / 
+ADD alpine-minirootfs-3.20.3-ppc64le.tar.gz / # buildkit
 # Tue, 09 Jul 2024 05:33:43 GMT
 CMD ["/bin/sh"]
 # Tue, 09 Jul 2024 05:33:43 GMT
@@ -354,45 +354,45 @@ CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:b5caf700653f785a3409fb40484075ff91a3a7a84b79ad6a91b165589b35fbc0`  
-		Last Modified: Fri, 06 Sep 2024 22:26:38 GMT  
-		Size: 3.6 MB (3572419 bytes)  
+	-	`sha256:22892cdc5e9ff297ac012c2fbe3c12724a3cf4d0a55f5f03f95a7f3ab3e77e36`  
+		Last Modified: Tue, 12 Nov 2024 00:55:07 GMT  
+		Size: 3.6 MB (3572459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:519f34ce6cd530327d42ca499ff58d30f02b785603225fadfbb102ab999545ca`  
-		Last Modified: Sat, 07 Sep 2024 08:07:41 GMT  
-		Size: 42.3 MB (42299156 bytes)  
+	-	`sha256:23d5432911bcfd91cb27aeb32281a252fab218ff0d4eb1307d430c3d06723b66`  
+		Last Modified: Tue, 12 Nov 2024 10:10:41 GMT  
+		Size: 42.3 MB (42299428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba4c3cd2490467e75b247137e5f49b8cd0fe9cab5bead5852008eb5061b1a17a`  
-		Last Modified: Sat, 07 Sep 2024 08:07:40 GMT  
-		Size: 1.4 MB (1380079 bytes)  
+	-	`sha256:c898ad1d486aa6426dfe5dd7bc659c60334b5b87882615bd66f0ced28f945dd7`  
+		Last Modified: Tue, 12 Nov 2024 10:10:40 GMT  
+		Size: 1.4 MB (1380083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e4d4c910230dc02640c96d6d48913a2e20d558c3494064ae0f82f71f621b7fe`  
-		Last Modified: Sat, 07 Sep 2024 08:07:39 GMT  
+	-	`sha256:1348d9cdc636d705ae56f04321c83970e315080a243504fc5a66ce35c3ec7ae7`  
+		Last Modified: Tue, 12 Nov 2024 10:10:39 GMT  
 		Size: 445.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:hydrogen-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:ec956cc031ffce0e6a6cfe56d38b03a616c1d3250c17de09e82c7ee7ec7455a3
+$ docker pull node@sha256:9a56e8d7b473fd6b471aa5abbad007ad46bcb2b5a966c3a08181ee5c810c1e7c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **376.4 KB (376376 bytes)**  
+-	Total Size: **399.1 KB (399087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fe605191eb15ba807b7b3708b54102dbe5829a78b226d25d9a96233c8fb7aa7b`
+-	Image ID: `sha256:6ffa1a314b35bb305f162b96a1d2e288528f8e63c3c16bed3b72a646aa69b172`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7f1357729a45c5849d43efd6cf15c319bdf5c1d6589e37895bbe2024b5254847`  
-		Last Modified: Sat, 07 Sep 2024 08:07:39 GMT  
-		Size: 351.2 KB (351191 bytes)  
+	-	`sha256:769f1c203e3401bb19124893b35b921dbb81e5f0f50b72a6b41b470b8cd01fa1`  
+		Last Modified: Tue, 12 Nov 2024 10:10:39 GMT  
+		Size: 373.7 KB (373663 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7794cd6edfe98963a522742793bb908230c62c2ca602a224608de4a816847d84`  
-		Last Modified: Sat, 07 Sep 2024 08:07:39 GMT  
-		Size: 25.2 KB (25185 bytes)  
+	-	`sha256:34ac80893407b7e407dfbedafe9a1cda773a65d48255990ba8e0b28fc4e0c40d`  
+		Last Modified: Tue, 12 Nov 2024 10:10:39 GMT  
+		Size: 25.4 KB (25424 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `node:hydrogen-alpine3.20` - linux; s390x
