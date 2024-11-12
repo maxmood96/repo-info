@@ -1,7 +1,7 @@
 ## `neurodebian:bullseye-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:8d27ee78f2e00c10238e7f713ca08ef2dea31e8c18a2cd330d516bdef4323656
+$ docker pull neurodebian@sha256:03cbdb56368499523b423c42dfb04c2610566ef157caea89cb484b797d96f7da
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -174,18 +174,18 @@ $ docker pull neurodebian@sha256:0ab1d82d946c58360e2a6630d5c49be18c5a6981f9a5108
 ### `neurodebian:bullseye-non-free` - linux; 386
 
 ```console
-$ docker pull neurodebian@sha256:e3be5a5c53975c91cbd979fd670794915bea99bd476d526a357ac2ed86967741
+$ docker pull neurodebian@sha256:1d8853f7410229e33e0e1eb7d3c0f1c986d0956ac3667a4a00eee8502222ff88
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **67.7 MB (67681619 bytes)**  
+-	Total Size: **67.7 MB (67697344 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:351ec6e66e29aef5a228977c44b8f85e3f12952fe4d8517681a201038797de6b`
+-	Image ID: `sha256:506288179711128f76d5ddde51c19b0683b5e131733e5b78349c66e17b7e7eed`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Fri, 21 Jun 2024 21:57:43 GMT
-ADD file:31542b73f2ef95a398c04a3361c14f990df163d3e44e6722e9514136e87e3e77 in / 
+ADD rootfs.tar.xz / # buildkit
 # Fri, 21 Jun 2024 21:57:43 GMT
 CMD ["bash"]
 # Fri, 21 Jun 2024 21:57:43 GMT
@@ -201,51 +201,51 @@ RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.
 ```
 
 -	Layers:
-	-	`sha256:cd6bd96dbaa583d06df851786128ccc2ec26b49565e22942268380380fa3588a`  
-		Last Modified: Thu, 17 Oct 2024 00:42:53 GMT  
-		Size: 56.1 MB (56077823 bytes)  
+	-	`sha256:401daab178046178ea38abc84ce80fe4a7e7530a75e6b198a161344b358750f7`  
+		Last Modified: Tue, 12 Nov 2024 00:54:54 GMT  
+		Size: 56.1 MB (56093682 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79423534cf5965fe2f04fc5e975a694b4f8638b3320caa4c643e9ed24444bbb8`  
-		Last Modified: Thu, 17 Oct 2024 01:14:28 GMT  
-		Size: 11.5 MB (11500373 bytes)  
+	-	`sha256:852ae5e516fa02820da75a950a2294dc25d67da99c33d679ded811ab6c0d6089`  
+		Last Modified: Tue, 12 Nov 2024 02:14:47 GMT  
+		Size: 11.5 MB (11500245 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:480013482db658c37a6c2ffea386ec2af1f1f4c4f5c2f5e2fff0dfbd003657cb`  
-		Last Modified: Thu, 17 Oct 2024 01:14:27 GMT  
+	-	`sha256:10ff72eea72a6cd65b46ea3111a4a99ddfc564018dc4244298d84496d5c8b8ca`  
+		Last Modified: Tue, 12 Nov 2024 02:14:47 GMT  
 		Size: 1.7 KB (1744 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce407a6bb2bfdc3323339b75bed14f72ccd45b312cc74e36d338dd1ec0ba424f`  
-		Last Modified: Thu, 17 Oct 2024 01:14:27 GMT  
-		Size: 245.0 B  
+	-	`sha256:6d85b7909226fa80dcb04b965a3dffa806c46cb25fdf24c12ef6747b428cc641`  
+		Last Modified: Tue, 12 Nov 2024 02:14:47 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1a8aa075707f8ed6aa84772b58aa32934020c09898ac7f66af7d51ffcd498d5c`  
-		Last Modified: Thu, 17 Oct 2024 01:14:27 GMT  
-		Size: 101.1 KB (101074 bytes)  
+	-	`sha256:3532548a28e972d50b8e915b968250f536debd39f6faa3e4b28fb6d723f7639c`  
+		Last Modified: Tue, 12 Nov 2024 02:14:47 GMT  
+		Size: 101.1 KB (101069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e4ec9646e3b4d8c55e9ecdf6614030b3ed43d718ee92062ed8c317666411935`  
-		Last Modified: Thu, 17 Oct 2024 01:14:28 GMT  
-		Size: 360.0 B  
+	-	`sha256:cd1b1adbd380455d0c77a203b2d2c09f432ef2a8a02241618dd006ccb95ba4e4`  
+		Last Modified: Tue, 12 Nov 2024 02:14:47 GMT  
+		Size: 358.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `neurodebian:bullseye-non-free` - unknown; unknown
 
 ```console
-$ docker pull neurodebian@sha256:447a2ef6cca5559abee275287989f394b1340cd5c1401eee08c935ca552bd6bd
+$ docker pull neurodebian@sha256:212079c516e0addb2743f2e8cc567cd40f8ffc7839b61ff48aae727858c94332
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.2 MB (4235862 bytes)**  
+-	Total Size: **4.3 MB (4251105 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dccb8928053c0e11dca31752e4b544026893738954a0e0b3275e7e5f55121f0b`
+-	Image ID: `sha256:cdb6915bfe6b29bfd22f1abaa95f7e7e993a81dfb7bdabe9c3c8979f76ee9cf8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ca8421cbbb10d45e2d2886e9f17bb470ba726da45075619590b1c0ce67f4a3b3`  
-		Last Modified: Thu, 17 Oct 2024 01:14:27 GMT  
-		Size: 4.2 MB (4220339 bytes)  
+	-	`sha256:a0bf5352d1cc80c064869854eaa71c8fff6141f9aab0ed63b2fd723a22d6c8a6`  
+		Last Modified: Tue, 12 Nov 2024 02:14:47 GMT  
+		Size: 4.2 MB (4235414 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9c81157c4a2f79bca7249db43b05996ea04ea5426501cf870045d0eece9cbddf`  
-		Last Modified: Thu, 17 Oct 2024 01:14:27 GMT  
-		Size: 15.5 KB (15523 bytes)  
+	-	`sha256:d6f521ec6a86a2bb91bc017f685c79a6ed5e6ec6eae3ac01da89c7a1bc8c0546`  
+		Last Modified: Tue, 12 Nov 2024 02:14:47 GMT  
+		Size: 15.7 KB (15691 bytes)  
 		MIME: application/vnd.in-toto+json
