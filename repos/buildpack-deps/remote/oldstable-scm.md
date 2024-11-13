@@ -1,7 +1,7 @@
 ## `buildpack-deps:oldstable-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:dece6b2b6cff356b300bab333df2eebe764526754b4cdb38b1fb8f98998eee06
+$ docker pull buildpack-deps@sha256:da5b63b001c7fd1e3848311c92018c1ae23dea341002a7e34546c586107e4a32
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -140,18 +140,18 @@ $ docker pull buildpack-deps@sha256:d17122d5550612fcfb8bdb86e3884095b4bb789a98d2
 ### `buildpack-deps:oldstable-scm` - linux; arm64 variant v8
 
 ```console
-$ docker pull buildpack-deps@sha256:663f17b029a1bf24ca58f209ff1577c2d1b9a7aed2ecadbfc6ba889c327a0382
+$ docker pull buildpack-deps@sha256:fad764dca1afb9d5ed0c4a860ade11f9bf47e382ffef6c27585b54f76d1c1f1a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **124.3 MB (124315342 bytes)**  
+-	Total Size: **124.1 MB (124142744 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2754992e17ca3179605d3f122e480a5b71db85b29892344fbaadb8f3fd43c5e2`
+-	Image ID: `sha256:5eebaef5f9ec18d565a0443d4a966e2bc5993c9b3c08fecbe3c128e5b11f2435`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Fri, 28 Apr 2023 21:58:08 GMT
-ADD file:bfb52ce9788d517977c9e84dad795a6adb46efc0e8eff88853137b783826c104 in / 
+ADD rootfs.tar.xz / # buildkit
 # Fri, 28 Apr 2023 21:58:08 GMT
 CMD ["bash"]
 # Fri, 28 Apr 2023 21:58:08 GMT
@@ -161,41 +161,41 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 ```
 
 -	Layers:
-	-	`sha256:76475c2689e229fac9e8ba4a02e64decb7fd62b2a3e4ad65ba97f8e1a35471f2`  
-		Last Modified: Thu, 17 Oct 2024 01:14:55 GMT  
-		Size: 53.7 MB (53734895 bytes)  
+	-	`sha256:a839664fe62f615da74af799f94ccbc890a15d0f78470aac54302c2fd5475615`  
+		Last Modified: Tue, 12 Nov 2024 00:57:41 GMT  
+		Size: 53.8 MB (53757072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1deb2c2ef23607994f7238c8d97d113f5ebd868b8eb64a0c10d2e0983f036a39`  
-		Last Modified: Sat, 19 Oct 2024 01:11:09 GMT  
-		Size: 15.7 MB (15747789 bytes)  
+	-	`sha256:ca9e545ff305fe56558a94b064a901c16b373a3501daf5519f82ec19db6a3655`  
+		Last Modified: Tue, 12 Nov 2024 11:16:34 GMT  
+		Size: 15.5 MB (15543588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3fbc6072bf5318ca0f9f250b4fcc6254d92483650689f0b0d77274be187abd96`  
-		Last Modified: Sat, 19 Oct 2024 05:18:19 GMT  
-		Size: 54.8 MB (54832658 bytes)  
+	-	`sha256:d952be101e4ab063ff4eafa1d2809245e9ac9e713c342da9f201d2280d4a6c9b`  
+		Last Modified: Wed, 13 Nov 2024 02:42:41 GMT  
+		Size: 54.8 MB (54842084 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:oldstable-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:1965623055033a3db2cd3d6d55f03b896eeeca6c187d658624bfdb8ad6528736
+$ docker pull buildpack-deps@sha256:7ecf1d6096ee569b3305ca895d03f0cf4ed6853b5f2b012860cecd5f2ec9a0ee
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.7 MB (7733284 bytes)**  
+-	Total Size: **7.7 MB (7733308 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6670f84a12848f56394136665a519aceecb0d2286466693304dc42e0605ca50a`
+-	Image ID: `sha256:aaa18e52374bf24b029c1eace5a916de6aca3fb9c70c7172d02810ab66ce5bbd`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e2d1f70c81ca0b6cd23296d317fd5165b255a7e0a1572a49f179932ebb08e535`  
-		Last Modified: Sat, 19 Oct 2024 05:18:17 GMT  
-		Size: 7.7 MB (7725839 bytes)  
+	-	`sha256:6aad38936d8c50842283a826822caf2b85d3b0dd0cc9a1c657b1e75edcf44881`  
+		Last Modified: Wed, 13 Nov 2024 02:42:39 GMT  
+		Size: 7.7 MB (7725875 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b826fcef0fc38aaa49e948810018ef936f777127503a8a92bbbab59aabd9f1c5`  
-		Last Modified: Sat, 19 Oct 2024 05:18:17 GMT  
-		Size: 7.4 KB (7445 bytes)  
+	-	`sha256:224e45f9c93f64a7486b029f1a1a8f448f6aa6fb5143c96fabb7cc39e27208a5`  
+		Last Modified: Wed, 13 Nov 2024 02:42:39 GMT  
+		Size: 7.4 KB (7433 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:oldstable-scm` - linux; 386
