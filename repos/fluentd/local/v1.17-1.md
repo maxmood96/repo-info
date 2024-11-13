@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d68fa270df800fba908fafe09411210c40196d3c28848d1f5c5d0c4fa569a2e3`
+- Image ID: `sha256:b0a570051e688f5f0a0e0cd20067931161c8859d7021664f26eec1ba1949f8b1`
 - Created: `2024-08-20T02:01:21Z`
-- Virtual Size: ~ 46.28 Mb  
+- Virtual Size: ~ 46.29 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/bin/entrypoint.sh"]`
@@ -364,16 +364,16 @@ GPL-2.0-or-later
 ### `apk` package: `ruby`
 
 ```console
-ruby-3.2.4-r0 description:
+ruby-3.2.6-r0 description:
 An object-oriented language for quick and easy programming
 
-ruby-3.2.4-r0 webpage:
+ruby-3.2.6-r0 webpage:
 https://www.ruby-lang.org/
 
-ruby-3.2.4-r0 installed size:
+ruby-3.2.6-r0 installed size:
 48 KiB
 
-ruby-3.2.4-r0 license:
+ruby-3.2.6-r0 license:
 Ruby AND BSD-2-Clause AND MIT
 
 ```
@@ -381,16 +381,16 @@ Ruby AND BSD-2-Clause AND MIT
 ### `apk` package: `ruby-libs`
 
 ```console
-ruby-libs-3.2.4-r0 description:
+ruby-libs-3.2.6-r0 description:
 Libraries necessary to run Ruby
 
-ruby-libs-3.2.4-r0 webpage:
+ruby-libs-3.2.6-r0 webpage:
 https://www.ruby-lang.org/
 
-ruby-libs-3.2.4-r0 installed size:
+ruby-libs-3.2.6-r0 installed size:
 17 MiB
 
-ruby-libs-3.2.4-r0 license:
+ruby-libs-3.2.6-r0 license:
 Ruby AND BSD-2-Clause AND MIT
 
 ```
