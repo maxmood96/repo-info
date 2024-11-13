@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cd00a03fdcec66f9ec672f47e38d4ab0bcc6127854e6660997cf28c13570d515`
-- Created: `2024-11-08T10:45:47Z`
-- Virtual Size: ~ 619.64 Mb  
+- Image ID: `sha256:780779b097fba8e76a39d39f0f34ce2e5bd628429919a69180f6c2f235a7e799`
+- Created: `2024-11-10T19:13:47Z`
+- Virtual Size: ~ 618.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -15,4 +15,4 @@
   - `CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
-  - `org.opencontainers.image.version=22.04`
+  - `org.opencontainers.image.version=20.04`
