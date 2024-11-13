@@ -1242,14 +1242,9 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 - `none`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ghostscript=9.55.0~dfsg1-0ubuntu5.9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.55.0%7edfsg1-0ubuntu5.9.dsc' ghostscript_9.55.0~dfsg1-0ubuntu5.9.dsc 2814 SHA512:e67e6fc8e05684ae924a6f3dcb7b49c2630e7f846842747c21806083cef4d44a368f93e2f4ca603dcc22fb52e41efa495edd3433149769c8acb2a1cb3f39fef9
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.55.0%7edfsg1.orig.tar.xz' ghostscript_9.55.0~dfsg1.orig.tar.xz 53473556 SHA512:fb6dec73b8a1d88a6fe624d23549162f4e29059f41145aeb9bf96c09a7fb5e415fc15be5e2dbbcd21f49ecb2a91c78bc4f0d14eee8b3fe32884b405f0e709b93
-'http://archive.ubuntu.com/ubuntu/pool/main/g/ghostscript/ghostscript_9.55.0%7edfsg1-0ubuntu5.9.debian.tar.xz' ghostscript_9.55.0~dfsg1-0ubuntu5.9.debian.tar.xz 180096 SHA512:7c74466585d5befbf354bc088ac82d7c0713283c988e2f255560562084e3fac4e497bcdbf9863585cacadec6d8774865479d3851ffb404f6be3d434bc5709d27
-```
 
 ### `dpkg` source package: `giflib=5.1.9-2ubuntu0.1`
 
@@ -5255,14 +5250,9 @@ Licenses: (parsed from: `/usr/share/doc/openjdk-11-jdk/copyright`, `/usr/share/d
 - `LGPL`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjdk-lts=11.0.24+8-1ubuntu3~22.04
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.24%2b8-1ubuntu3%7e22.04.dsc' openjdk-lts_11.0.24+8-1ubuntu3~22.04.dsc 4684 SHA512:7f3b71ed2e6cec1b8624f589dba51a8248ccaa620ec16cc74e523163dc7b18d90763046f97bb5f89095fa76682d56fb2e5729e10c06510f5ec581c46b4697c56
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.24%2b8.orig.tar.xz' openjdk-lts_11.0.24+8.orig.tar.xz 69220884 SHA512:7c7fdecf4d8a9c052922d7804fa0c2537b76bdc0cae7cf9bc0c15ed5bdb53a4a26e7a8bf42627c02c2de71cf556402e65dfd3ce956064cbc65f24ca85a47bb84
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjdk-lts/openjdk-lts_11.0.24%2b8-1ubuntu3%7e22.04.debian.tar.xz' openjdk-lts_11.0.24+8-1ubuntu3~22.04.debian.tar.xz 175612 SHA512:697065a7f3c42376338b930b4f6020136ca2c4d79522c004c2e97bf5c0d209851414b010890535b4ec42d37a9b805900571db28b159f67e86edb8fb2e976277d
-```
 
 ### `dpkg` source package: `openjpeg2=2.4.0-6ubuntu0.1`
 
