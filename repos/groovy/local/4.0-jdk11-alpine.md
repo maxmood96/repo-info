@@ -1,10 +1,10 @@
-# `groovy:4.0.23-jdk11-alpine`
+# `groovy:4.0.24-jdk11-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ec831c1f7a4029dd7a4a6f45e585c4cc1f4ea46e25f7f1a0ee4dfe0e8482118a`
-- Created: `2024-09-30T16:23:25Z`
-- Virtual Size: ~ 343.85 Mb  
+- Image ID: `sha256:b4c88493a1d5b981b6e2400037a46a5a3c451ec2195cc51d90966fec51e87c55`
+- Created: `2024-11-09T02:52:58Z`
+- Virtual Size: ~ 343.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.25+9`
   - `GROOVY_HOME=/opt/groovy`
-  - `GROOVY_VERSION=4.0.23`
+  - `GROOVY_VERSION=4.0.24`
 
 ## `apk` (`.apk`-based packages)
 
@@ -636,16 +636,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.3-r0 description:
+libexpat-2.6.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.3-r0 webpage:
+libexpat-2.6.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.3-r0 installed size:
+libexpat-2.6.4-r0 installed size:
 144 KiB
 
-libexpat-2.6.3-r0 license:
+libexpat-2.6.4-r0 license:
 MIT
 
 ```
