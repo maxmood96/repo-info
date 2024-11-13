@@ -1,7 +1,7 @@
 ## `python:3-alpine3.19`
 
 ```console
-$ docker pull python@sha256:0b06bd8f53de5f52013c9f54156655657f29074a7c82ebc4441c5601245f3118
+$ docker pull python@sha256:71e6884b2bc1fc63cd50f812fd6368f24f836024414e71928f9a40daed675f5c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -251,19 +251,19 @@ $ docker pull python@sha256:32859f813c922043ee04e0618290fd4bebb80d1663042e1a8cae
 ### `python:3-alpine3.19` - linux; arm64 variant v8
 
 ```console
-$ docker pull python@sha256:746a4628333ea513ca03672e6778edd0ce5d5114e09824b43674c6cd9f915c58
+$ docker pull python@sha256:65d282f02269589e55041c61bc01cd236f212405e7d1664fe8043f69fb22b22a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.4 MB (16400595 bytes)**  
+-	Total Size: **18.5 MB (18484973 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa041da947ff3ec803ad367cd205bee5015c787009400d036c1e3a642e523d0b`
+-	Image ID: `sha256:ec0b1acaeac7b15a83fa833215bf5c8544c79d993990d0b5c98a2df6d017acf6`
 -	Default Command: `["python3"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 22:44:16 GMT
-ADD file:9865d69f45511580cc2a05d8a9573251b6eb5a84520efe2e8295532e3ccd6321 in / 
-# Fri, 06 Sep 2024 22:44:16 GMT
+# Fri, 06 Sep 2024 12:04:22 GMT
+ADD alpine-minirootfs-3.19.4-aarch64.tar.gz / # buildkit
+# Fri, 06 Sep 2024 12:04:22 GMT
 CMD ["/bin/sh"]
 # Fri, 18 Oct 2024 23:23:40 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
@@ -284,45 +284,45 @@ CMD ["python3"]
 ```
 
 -	Layers:
-	-	`sha256:188a7166e45935ced07634efdc8e63c13f5f7673b60b051b353475ee00e28fe0`  
-		Last Modified: Fri, 06 Sep 2024 22:44:50 GMT  
-		Size: 3.4 MB (3359103 bytes)  
+	-	`sha256:6c9d4d66fb4987fcd48c673e8b29bb504a3cfb33f10b97cbcea126aa3b8b59fd`  
+		Last Modified: Mon, 09 Sep 2024 07:03:21 GMT  
+		Size: 3.4 MB (3359246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0af5e108d11417d6c9b88f2adc6208ba7cd7ae2294a7e7ad1d0b08c1475dc339`  
-		Last Modified: Sat, 19 Oct 2024 02:09:09 GMT  
-		Size: 630.3 KB (630347 bytes)  
+	-	`sha256:d753bd2a9a33ee88849463a569e2eba4113a82aeaf4a5bddb8d8ddbbe83f41ae`  
+		Last Modified: Tue, 12 Nov 2024 20:53:36 GMT  
+		Size: 630.4 KB (630353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b48ed73ce28b9284f5ae0895a3a61b78b6ce01b84a045833d8a0d93e6aa91935`  
-		Last Modified: Sat, 19 Oct 2024 02:50:47 GMT  
-		Size: 12.4 MB (12410897 bytes)  
+	-	`sha256:274ae2b1e1a9d524c1ca438b75c41e4ce6cff8ad7882c14dc7e91789be3ea2f3`  
+		Last Modified: Tue, 12 Nov 2024 21:32:56 GMT  
+		Size: 14.5 MB (14495124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ba32e5b905de1aacb6a747b1a4e45aade910ecccfe320a958f6474d1bdf79b3`  
-		Last Modified: Sat, 19 Oct 2024 02:50:46 GMT  
-		Size: 248.0 B  
+	-	`sha256:429fac537c99342f9dbacd0851f0833f510a1ca70993d93adc004ba2fff618da`  
+		Last Modified: Tue, 12 Nov 2024 21:32:56 GMT  
+		Size: 250.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `python:3-alpine3.19` - unknown; unknown
 
 ```console
-$ docker pull python@sha256:6da6a6f9ba65a6196555fca183b917509a7563868412dc34f796b4e6b5f5a178
+$ docker pull python@sha256:6cfda2887f9c3f6c9b31f862c30544b8fff96ae326561a9a9784007acd5404a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.0 MB (1013349 bytes)**  
+-	Total Size: **1.0 MB (1013554 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a6f4d3b9afbcb391d77018fc4748f9d038448767bf421e1ddad1e8d3cf37db4`
+-	Image ID: `sha256:2b63907bca11bc8eb45407675cf4fbdae6e3a211f136d38e1501d2de68dea973`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:41c0b2eba04474ae85c8a4f749371aead10dd0a1f08a2450d04d2a7d6a67938f`  
-		Last Modified: Sat, 19 Oct 2024 02:50:46 GMT  
+	-	`sha256:a3f0eb03e9f2bc771be9da1a407b62a9ba6526f34004db75b4a33d7fe6a27ef3`  
+		Last Modified: Tue, 12 Nov 2024 21:32:56 GMT  
 		Size: 992.9 KB (992923 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5cf370934f1d33f58177253508e7549dcd2eac1386ca34bbadb24b17e035df1b`  
-		Last Modified: Sat, 19 Oct 2024 02:50:46 GMT  
-		Size: 20.4 KB (20426 bytes)  
+	-	`sha256:8d42073a1805e2eadaf462f675c14ecb0f6cc1c3806061189da5fba344c35f81`  
+		Last Modified: Tue, 12 Nov 2024 21:32:55 GMT  
+		Size: 20.6 KB (20631 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `python:3-alpine3.19` - linux; 386
