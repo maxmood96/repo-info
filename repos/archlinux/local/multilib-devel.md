@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:559d9693277569132d87b31d9a5b2314bf13f2e14fbbd530dac227b9a0838af7`
-- Created: `2024-11-03T00:07:41Z`
-- Virtual Size: ~ 975.18 Mb  
+- Image ID: `sha256:e6ea8b8396eacb2c730bce363a73c77f035936f20e2567e4d7dde8301da66c35`
+- Created: `2024-11-10T00:07:43Z`
+- Virtual Size: ~ 975.08 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/usr/bin/bash"]`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
 - Labels:
   - `org.opencontainers.image.authors=Santiago Torres-Arias <santiago@archlinux.org> (@SantiagoTorres), Christian Rebischke <Chris.Rebischke@archlinux.org> (@shibumi), Justin Kromlinger <hashworks@archlinux.org> (@hashworks)`
-  - `org.opencontainers.image.created=2024-11-03T00:07:41+00:00`
+  - `org.opencontainers.image.created=2024-11-10T00:07:43+00:00`
   - `org.opencontainers.image.description=Official containerd image of Arch Linux, a simple, lightweight Linux distribution aimed for flexibility.`
   - `org.opencontainers.image.documentation=https://wiki.archlinux.org/title/Docker#Arch_Linux`
   - `org.opencontainers.image.licenses=GPL-3.0-or-later`
@@ -21,4 +21,4 @@
   - `org.opencontainers.image.source=https://gitlab.archlinux.org/archlinux/archlinux-docker`
   - `org.opencontainers.image.title=Arch Linux multilib-devel Image`
   - `org.opencontainers.image.url=https://gitlab.archlinux.org/archlinux/archlinux-docker/-/blob/master/README.md`
-  - `org.opencontainers.image.version=20241103.0.276161`
+  - `org.opencontainers.image.version=20241110.0.278197`
