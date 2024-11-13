@@ -1,7 +1,7 @@
 ## `buildpack-deps:bookworm-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:f948a52f98f161f722c2e6749f46e1ce8b409dc6820e7ac5914f1f9fcee6c6b5
+$ docker pull buildpack-deps@sha256:d7e582fc6f4d4fb8d6350bffba0bfcb4004639874b24e13c97588972858c54d0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -148,18 +148,18 @@ $ docker pull buildpack-deps@sha256:146afff14da66d2415f7e870a0b5475327d3b8c5c301
 ### `buildpack-deps:bookworm-scm` - linux; arm variant v7
 
 ```console
-$ docker pull buildpack-deps@sha256:d8da1a84da0bff207409bbac38dd1a02df0945b14ffd1fa2e34036a968789458
+$ docker pull buildpack-deps@sha256:a1a7d7b2ed0d74c7edcc906946a895b12bc703515f59b7cd3c2f80574576b92b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **126.7 MB (126740448 bytes)**  
+-	Total Size: **126.8 MB (126752072 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11391af0d1d3a25dfc5836b449c838b6faf132d3b8f3207da24d749b265ef353`
+-	Image ID: `sha256:9f29cddf530323d1831b929fa166f4322a1ff2ff5aa607bbafb8ff47657c9ed1`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-ADD file:2ce9af7b514320ba230746cbff4f2f2e2b8d4a62ac035ebbe6575e17544f6416 in / 
+ADD rootfs.tar.xz / # buildkit
 # Wed, 10 May 2023 23:29:59 GMT
 CMD ["bash"]
 # Wed, 10 May 2023 23:29:59 GMT
@@ -169,41 +169,41 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 ```
 
 -	Layers:
-	-	`sha256:b683f99b4cdeb3cb4e487b268b3949647168e16d00d07e004e03af92331dbfed`  
-		Last Modified: Thu, 17 Oct 2024 03:06:32 GMT  
-		Size: 45.1 MB (45147940 bytes)  
+	-	`sha256:46618ec96098836cac7950050ba554a969ebf8e9938d85d5f0d97015d3d25076`  
+		Last Modified: Tue, 12 Nov 2024 00:56:14 GMT  
+		Size: 45.2 MB (45150563 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a47b7fd5031c50fee563f16760ae6e5334672d6c9ba07d159b9e3a17a3b62011`  
-		Last Modified: Sat, 19 Oct 2024 00:56:10 GMT  
-		Size: 22.0 MB (21957404 bytes)  
+	-	`sha256:df9660b2b46aa0c77f5dd078f4e57432faf3dbcda91672b9e3f8c1b7892e0ee2`  
+		Last Modified: Tue, 12 Nov 2024 15:59:18 GMT  
+		Size: 22.0 MB (21960017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:542f68420f2ab6efd74aba4b4ff72fe115144308ecea01703acfd9de4db386df`  
-		Last Modified: Sat, 19 Oct 2024 06:36:59 GMT  
-		Size: 59.6 MB (59635104 bytes)  
+	-	`sha256:b55e7c0c5dd07ea67f173b9a9aa1ca29ae1ec286d0ed6813853bdaca8b1caeac`  
+		Last Modified: Wed, 13 Nov 2024 07:37:50 GMT  
+		Size: 59.6 MB (59641492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:bookworm-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:82abbe189e4134358a35de062d14a33ab4ef2350f5335ed22d488f490c39e3f8
+$ docker pull buildpack-deps@sha256:e81242a212ee50dd07a2de65d9ddb3c8375566532d787a1d71c83c483165b4bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.8 MB (7773386 bytes)**  
+-	Total Size: **7.8 MB (7773446 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5a185c3d89851dea1a6599e78d946fb300c3e2ee6fe011b211285a182fc5e834`
+-	Image ID: `sha256:d0821de40bb134ad4c5de19b6e1b3f3cbc7a73d01c6dfad7a612804c07e1c123`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f581eedd8301e57f012174ed44c98b695ef71465963ae45671ac92102a1eaafe`  
-		Last Modified: Sat, 19 Oct 2024 06:36:58 GMT  
-		Size: 7.8 MB (7765651 bytes)  
+	-	`sha256:d70a741654943520f905a495fde4b165325a7a7f381b8afb3e2c9b8d8f4c245b`  
+		Last Modified: Wed, 13 Nov 2024 07:37:49 GMT  
+		Size: 7.8 MB (7765723 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bcf5b6a5be36ea85b8ff05143189e2f676d385b38504343c20e9f59dc37a002e`  
-		Last Modified: Sat, 19 Oct 2024 06:36:57 GMT  
-		Size: 7.7 KB (7735 bytes)  
+	-	`sha256:d7bf508a28326d76e5bb56cc5fb92b642419e7820332eefd105977a8adaf6042`  
+		Last Modified: Wed, 13 Nov 2024 07:37:48 GMT  
+		Size: 7.7 KB (7723 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:bookworm-scm` - linux; arm64 variant v8

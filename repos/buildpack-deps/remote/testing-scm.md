@@ -1,7 +1,7 @@
 ## `buildpack-deps:testing-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:28354ee27c9eb4ac359a24d05c6739da60d9425997ea05d5492f064bc5719cf8
+$ docker pull buildpack-deps@sha256:8157c89224111aa0da93190f0464dfca8b39bac9ff7c461fc24de5874fdae2a4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -148,18 +148,18 @@ $ docker pull buildpack-deps@sha256:55cb1fe2158d176fa5dcb4daeac857818c62b2e9366d
 ### `buildpack-deps:testing-scm` - linux; arm variant v7
 
 ```console
-$ docker pull buildpack-deps@sha256:da6fdb925b5de7f3beaaf9f7138cfab36ec0cbfdcdabf72cdad10c36ca194511
+$ docker pull buildpack-deps@sha256:b6766c9d485c53509f2a273917a0180e17e320c8c343a33328cf84df6c06e49a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **127.9 MB (127859410 bytes)**  
+-	Total Size: **128.1 MB (128092993 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:290b778918d3f0776bc82777549e9e66202608ae29931c36c3a39cb680f69433`
+-	Image ID: `sha256:faf45ac2a1324984e287a93dea6694fe11f741ab7a7cb57cb719e5c0008bea1e`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Wed, 31 Jan 2024 23:01:46 GMT
-ADD file:7b183110c42f24584c122a8e76db1e925d5fd8b3489ae273dbca0b0cc3bc0090 in / 
+ADD rootfs.tar.xz / # buildkit
 # Wed, 31 Jan 2024 23:01:46 GMT
 CMD ["bash"]
 # Wed, 31 Jan 2024 23:01:46 GMT
@@ -169,41 +169,41 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 ```
 
 -	Layers:
-	-	`sha256:a5589eaa1616610f1da5585cd04faf9e418fe913dd4e9ef827abdbe93f8caa5b`  
-		Last Modified: Thu, 17 Oct 2024 03:10:29 GMT  
-		Size: 47.7 MB (47659640 bytes)  
+	-	`sha256:da23906b82d0da338b0e507d1bef5cf2747e130d745e77708e8f5279af9a4764`  
+		Last Modified: Tue, 12 Nov 2024 01:02:46 GMT  
+		Size: 47.7 MB (47681766 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a052304c7554ffebe70b582d4e2eb7d1d61098f5f96c8c9603940278d081561`  
-		Last Modified: Sat, 19 Oct 2024 00:58:30 GMT  
-		Size: 19.0 MB (18971211 bytes)  
+	-	`sha256:2d9b00d9d0a43af35aa09caad4b98ca01f5b7a33e4efde2bc19aa6be0499f216`  
+		Last Modified: Tue, 12 Nov 2024 16:02:34 GMT  
+		Size: 18.9 MB (18945100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fcfcca10ec23fe707cc08f7ab790838065704861f60c0f678095482cc25ef593`  
-		Last Modified: Sat, 19 Oct 2024 06:40:45 GMT  
-		Size: 61.2 MB (61228559 bytes)  
+	-	`sha256:16ec7eb745d8411abb388ce98360bbd90d28cae91d3a58e4bf19484532efd8c5`  
+		Last Modified: Wed, 13 Nov 2024 07:41:04 GMT  
+		Size: 61.5 MB (61466127 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:testing-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:a9757a6eef12d8e4457f63d8128b0b8c16a0230cee675ce2af94935916d16c2f
+$ docker pull buildpack-deps@sha256:973f4e53128e19f1f9266d9cd0f2752ebabc1e8631cfacd8e89115f78f77bed3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.5 MB (7493910 bytes)**  
+-	Total Size: **7.6 MB (7623110 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eea98d047064758984f353ad89edcd13307d0700c40c376b60bdac9d397af66c`
+-	Image ID: `sha256:34a59900152de20035a985374979d3abebc48fc6bdc88ea158ab266383f35c96`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7a93cf475e613ba4986581169e51da296f5eab2d1af2eec23ca1a4ebddd8c326`  
-		Last Modified: Sat, 19 Oct 2024 06:40:43 GMT  
-		Size: 7.5 MB (7486524 bytes)  
+	-	`sha256:542109b2c54fcaa00863e4dadc9f26c5bd33f11aab7bb8aceb900e6d975a5ab8`  
+		Last Modified: Wed, 13 Nov 2024 07:41:03 GMT  
+		Size: 7.6 MB (7615736 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:20c2dfc26ee7918a49826fed2ffc0d36d6dd4dab8b3cc5d2ec3b13523d04f02c`  
-		Last Modified: Sat, 19 Oct 2024 06:40:42 GMT  
-		Size: 7.4 KB (7386 bytes)  
+	-	`sha256:520375c3be7d6fabf47e01d871addb473c014dfa6eaa9613ce94f8e357714bcd`  
+		Last Modified: Wed, 13 Nov 2024 07:41:02 GMT  
+		Size: 7.4 KB (7374 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:testing-scm` - linux; arm64 variant v8

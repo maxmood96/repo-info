@@ -1,7 +1,7 @@
 ## `buildpack-deps:unstable`
 
 ```console
-$ docker pull buildpack-deps@sha256:028345b99add57b3eae4215f010851ca33ea90413d462ba5d97dd77be22fe5ff
+$ docker pull buildpack-deps@sha256:b64770c1262ffafe04a645a1f0314cf42d4c2af2a2ce2b32b70206840287b933
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -363,18 +363,18 @@ $ docker pull buildpack-deps@sha256:c68dc1085e970079c0dad9475c90a626f3fac854d399
 ### `buildpack-deps:unstable` - linux; mips64le
 
 ```console
-$ docker pull buildpack-deps@sha256:7aed501446d1d4aff5e4e665344ff39c2bb23697f79269ade9d17d43c74bc637
+$ docker pull buildpack-deps@sha256:ce8aa039e9a6e82c43c475c3fef10d04e2b8123d1061e406889d4b27902238ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **346.4 MB (346369313 bytes)**  
+-	Total Size: **347.4 MB (347392359 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d558ca969f15110f47b12e6e5f8ac0b3c2bc1d5aef4bccd85c13c7d012683040`
+-	Image ID: `sha256:355f4a8116380ddc999b74d29f04f5c60cd5557750ff6bcdbdf6b754204fe5fe`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Fri, 12 Jan 2024 22:06:44 GMT
-ADD file:8ffd9575546e69884562db46178b841df2ba1ed04549599485b7c502f81ac4cc in / 
+ADD rootfs.tar.xz / # buildkit
 # Fri, 12 Jan 2024 22:06:44 GMT
 CMD ["bash"]
 # Fri, 12 Jan 2024 22:06:44 GMT
@@ -386,41 +386,41 @@ RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		auto
 ```
 
 -	Layers:
-	-	`sha256:e3c6aca2e6ea9e1b19b3c46a60581e28de71137e5bd8fe9c8ea62365a8e75d74`  
-		Last Modified: Thu, 17 Oct 2024 01:18:46 GMT  
-		Size: 52.2 MB (52157899 bytes)  
+	-	`sha256:1f6d00c97864e98dad498c4c1087cda2fb16f2ac6e7a71ac1353418dd4215995`  
+		Last Modified: Tue, 12 Nov 2024 00:59:58 GMT  
+		Size: 52.3 MB (52275237 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35efd481e6347988498fa292e64d8b2f0d728f327f48bccb1d2c2bf371f2f1e1`  
-		Last Modified: Sat, 19 Oct 2024 00:58:29 GMT  
-		Size: 20.9 MB (20887623 bytes)  
+	-	`sha256:28ee73bc743170bb5e4087d57c95a63d610fb1282220d73ff90af4707b831d99`  
+		Last Modified: Tue, 12 Nov 2024 18:03:00 GMT  
+		Size: 21.0 MB (20950191 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d10d42e894e27bd8661997e28ccc989f4b18c73e3892449a02653f995d796aea`  
-		Last Modified: Sat, 19 Oct 2024 02:11:09 GMT  
-		Size: 65.3 MB (65280292 bytes)  
+	-	`sha256:63aac7a2dcb6a719b792ac16c19c2652ad08047befbc851b6ae687255f6838b0`  
+		Last Modified: Wed, 13 Nov 2024 02:06:14 GMT  
+		Size: 65.4 MB (65354987 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5494e53db7cb17f11f8f3553b0b8f89e494429f535472ab40c3dc0a4a53a958b`  
-		Last Modified: Sat, 19 Oct 2024 03:09:12 GMT  
-		Size: 208.0 MB (208043499 bytes)  
+	-	`sha256:9b021b9b5ef29ca07d0584978e6368d7c104c4da333fb3b2f41e3c5fd0643928`  
+		Last Modified: Wed, 13 Nov 2024 07:13:31 GMT  
+		Size: 208.8 MB (208811944 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:unstable` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:0c7f47bdc09a05b6d948bb27b33411f3b5a300b2c8d1c54d84eebe0c13592d98
+$ docker pull buildpack-deps@sha256:8c879aa61306b6af21c2966d8d1d1c3b7ef264bd3594436ea3e5368f393c1aad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.0 KB (10021 bytes)**  
+-	Total Size: **10.0 KB (10009 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b52a53cd41b52a2ffac4c7c5eff91689862f82eab42ecf464a1ad8ccafa36f61`
+-	Image ID: `sha256:7546a610f8060307d18969256b9af525deb7e2d6898ab8ac5b12b4a9eb135d6c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c6c4c3b65b2f2ee5188b595c005cab57e11fa88adc238818500a0f9d289bb37a`  
-		Last Modified: Sat, 19 Oct 2024 03:08:54 GMT  
-		Size: 10.0 KB (10021 bytes)  
+	-	`sha256:8a2ea7b2944f183bac3a45fc36453a325c7160840c26f1b60d78a02b64bdc82c`  
+		Last Modified: Wed, 13 Nov 2024 07:13:12 GMT  
+		Size: 10.0 KB (10009 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:unstable` - linux; ppc64le
