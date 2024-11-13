@@ -1,7 +1,7 @@
 ## `buildpack-deps:sid-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:1c1ac3f96a55033b5a71fba4382f64bb41cd477a3820000c0d406c71deefc9f1
+$ docker pull buildpack-deps@sha256:6397591feeb7bb7eb87e8c0f254a1e24039f0baf4edb05d076bd1b4fd46f1e59
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -451,18 +451,18 @@ $ docker pull buildpack-deps@sha256:e104f83870e9f99a4669b944a6bbcbebacf57fc25899
 ### `buildpack-deps:sid-scm` - linux; riscv64
 
 ```console
-$ docker pull buildpack-deps@sha256:ab2c9935ec3cd5ea01e59c813479dfdbe44a93881633c9ab35a027bc963fbb2b
+$ docker pull buildpack-deps@sha256:b1ff1906add1fb70313c577117e0d172eecca5e616541f277d1df15c124473f3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **137.3 MB (137343646 bytes)**  
+-	Total Size: **137.5 MB (137493036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30b025b9611b4913fb2e9ce20401ffc0abdc8d1d1f86c8933186f6b02ff7f4c8`
+-	Image ID: `sha256:a0c0338c21ac3a3fa571e5249baa17a5f73296e9746192fb53bf3d3899338f50`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Fri, 12 Jan 2024 22:06:44 GMT
-ADD file:9748961f840a27ae3342039309a28acc84e3a482f5ca3ece5bdaf9f92e7ebe33 in / 
+ADD rootfs.tar.xz / # buildkit
 # Fri, 12 Jan 2024 22:06:44 GMT
 CMD ["bash"]
 # Fri, 12 Jan 2024 22:06:44 GMT
@@ -472,41 +472,41 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 ```
 
 -	Layers:
-	-	`sha256:29cf887cb660615390407db841ad4c44be2414b9bf999ba668d93a8305675c7e`  
-		Last Modified: Thu, 17 Oct 2024 01:14:47 GMT  
-		Size: 51.6 MB (51562685 bytes)  
+	-	`sha256:0dca4f64307c74a46b21f69146149abf9e633cc0b181c05fb118d6e04f8d6365`  
+		Last Modified: Tue, 12 Nov 2024 00:58:50 GMT  
+		Size: 51.7 MB (51741042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de12fa48532c87115805a1e3efbbdd980575096676ddd00868f642d72782b610`  
-		Last Modified: Sat, 19 Oct 2024 01:03:17 GMT  
-		Size: 20.0 MB (20023981 bytes)  
+	-	`sha256:9c466fdbf53844e588f96639c3cb6fc67b78c84c769678e12defd736cd290219`  
+		Last Modified: Wed, 13 Nov 2024 01:46:00 GMT  
+		Size: 20.1 MB (20078602 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80c05579e9b49f41a2b6960286d8ab9b1d090127915ab4b5f2c9ec35e3db7815`  
-		Last Modified: Sat, 19 Oct 2024 03:48:10 GMT  
-		Size: 65.8 MB (65756980 bytes)  
+	-	`sha256:439d63c37fb468843722515950f8cedabe03fb1bda52b47185c22c3906764368`  
+		Last Modified: Wed, 13 Nov 2024 13:12:18 GMT  
+		Size: 65.7 MB (65673392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:sid-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:1c2cf945f847e73794eaad19c99277f7632971602dd13cc6de4b1f441087c709
+$ docker pull buildpack-deps@sha256:a981e5f551d16a3003273421d9acd4b47cb89408eb8dea9dbd0a138453ee6483
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.6 MB (7588619 bytes)**  
+-	Total Size: **7.6 MB (7610799 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:00950719b6663cf9a97df3b358162af671f7ca9b8b02fe2daa10b4ab5abc3f80`
+-	Image ID: `sha256:7b40c6a8d0a3a3b90eb1d7556b81990d9b56f97d5601a5a73c55fdc13e21aab3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:953dc6ddab24f26925a8b0c459f5e303f3adc5374831eed917b8e26a9c0deaee`  
-		Last Modified: Sat, 19 Oct 2024 03:48:02 GMT  
-		Size: 7.6 MB (7581279 bytes)  
+	-	`sha256:da3a9b030263111edcd9997e68d717f34adbbcd5d31eaa68dc52b24b51489cea`  
+		Last Modified: Wed, 13 Nov 2024 13:12:09 GMT  
+		Size: 7.6 MB (7603470 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:da3224b770b161aa53b6afc3fd6cca8fa7a8e2c13cf53415c7f406ae104506e5`  
-		Last Modified: Sat, 19 Oct 2024 03:48:01 GMT  
-		Size: 7.3 KB (7340 bytes)  
+	-	`sha256:0eae6b3779ce9720f800bd04d3f838abc47fe393aa169da47f0af517f7bc32ea`  
+		Last Modified: Wed, 13 Nov 2024 13:12:08 GMT  
+		Size: 7.3 KB (7329 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `buildpack-deps:sid-scm` - linux; s390x
