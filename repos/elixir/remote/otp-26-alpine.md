@@ -1,7 +1,7 @@
 ## `elixir:otp-26-alpine`
 
 ```console
-$ docker pull elixir@sha256:03031f0ddfeec9d819197bd69bb0fa69d5c958f95f08e5c0d4334f3d941e8ec3
+$ docker pull elixir@sha256:92299892e3e0aa409c81b170052cf3577f8ac5c61ffd90ce500bd6c45ae9a3ad
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -93,19 +93,19 @@ $ docker pull elixir@sha256:515492eca152661f91f79b9d0b573c51a8c2db9cf3e923c3f0c6
 ### `elixir:otp-26-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull elixir@sha256:a336bf19e61cd172335044e00e94e51c1237ae618e9ffb42012a090de72439ea
+$ docker pull elixir@sha256:28e4d1e4d3b2c662b8830a83cdc3e4128e0925bb78802de8a63760740fd0975f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.5 MB (55479077 bytes)**  
+-	Total Size: **55.5 MB (55478974 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23bb7726611a9c94c218e3121e28d094d6fd4042af160d66548d9d8759e8def9`
+-	Image ID: `sha256:8023723308ac9d844c7e29b6b649707d33ca50c00f25dc1d33e2cddd9f987f40`
 -	Default Command: `["iex"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 22:08:00 GMT
-ADD file:8096a7e97160f837a432988b8138ffab07ff212be781f530c8baa2067265d071 in / 
-# Fri, 06 Sep 2024 22:08:01 GMT
+# Fri, 06 Sep 2024 12:05:36 GMT
+ADD alpine-minirootfs-3.20.3-armv7.tar.gz / # buildkit
+# Fri, 06 Sep 2024 12:05:36 GMT
 CMD ["/bin/sh"]
 # Tue, 01 Oct 2024 10:39:24 GMT
 ENV OTP_VERSION=26.2.5.2 REBAR3_VERSION=3.24.0
@@ -124,41 +124,41 @@ CMD ["iex"]
 ```
 
 -	Layers:
-	-	`sha256:da2748c71804914f58a58693c998a4885dd24623380daf301f4a1a88185cb4c8`  
-		Last Modified: Fri, 06 Sep 2024 22:08:26 GMT  
-		Size: 3.1 MB (3095502 bytes)  
+	-	`sha256:2723bbe95689a46bd4cbe83e27fb42475660f41b02c96d21411fa76d803e8553`  
+		Last Modified: Mon, 09 Sep 2024 07:03:59 GMT  
+		Size: 3.1 MB (3095487 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73a307f88bbc258d8a5480fa0d0a7f9ff76bdd10401472b74fb07450e1a7f972`  
-		Last Modified: Mon, 11 Nov 2024 20:06:11 GMT  
-		Size: 45.5 MB (45472007 bytes)  
+	-	`sha256:f1e1dbbb43ad09dab1a51b7ba12d22b16edfdb49621b19425b45e1f153066c88`  
+		Last Modified: Tue, 12 Nov 2024 16:37:02 GMT  
+		Size: 45.5 MB (45471939 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6612878a61d46b78cb1fc99241ad283217fd926865fde52c0a141b534dad260d`  
-		Last Modified: Mon, 11 Nov 2024 21:00:47 GMT  
-		Size: 6.9 MB (6911568 bytes)  
+	-	`sha256:e19619c04e98333ffd467c696374336b4169927c7c08a58854a43ccf75b2a35b`  
+		Last Modified: Wed, 13 Nov 2024 10:51:19 GMT  
+		Size: 6.9 MB (6911548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elixir:otp-26-alpine` - unknown; unknown
 
 ```console
-$ docker pull elixir@sha256:c84ddf3e8336de55d3922348ff66df556ea901a9453f653c5655d0170abac86a
+$ docker pull elixir@sha256:1d112fa7f9e076ae64edd15b5ae35bf77234cc889f334383c1280183d64ba126
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **284.3 KB (284297 bytes)**  
+-	Total Size: **284.3 KB (284284 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ecb5c7a5580cc8405652156b51026e3a6d2fe69f78ac280937b06fd761c47910`
+-	Image ID: `sha256:cf62df9a0ec0478946b8088c9e04e36f6b57eb97b174c212498ffeb4decdc361`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b7214a0b1860312f34f036a21862c4c3dabcb47aadb79ea6644b1788259a23c7`  
-		Last Modified: Mon, 11 Nov 2024 21:00:46 GMT  
+	-	`sha256:17f3a09ad0c98c5a63cb920e92e8f34628be42761edd3a852f13f91683553332`  
+		Last Modified: Wed, 13 Nov 2024 10:51:19 GMT  
 		Size: 274.7 KB (274689 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6bfa26c62e39e4744980877dd6d45f40e3cdc4bf5290cdaa83b894cc7f61aa9d`  
-		Last Modified: Mon, 11 Nov 2024 21:00:46 GMT  
-		Size: 9.6 KB (9608 bytes)  
+	-	`sha256:0e1cb08edb3f1dddadb195393dc219c4dd849b3ce42993660cea4964e2870fca`  
+		Last Modified: Wed, 13 Nov 2024 10:51:19 GMT  
+		Size: 9.6 KB (9595 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `elixir:otp-26-alpine` - linux; arm64 variant v8
