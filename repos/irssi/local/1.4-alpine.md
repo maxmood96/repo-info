@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ee8718185e934cf00977ac16947769332a38a80ba94b1958d5134cc5096dddec`
+- Image ID: `sha256:6dcb4192b79f55a67f2729efd9f09cfbc73a0affdfc7396e23e27c93e742d7f9`
 - Created: `2024-05-22T22:40:32Z`
-- Virtual Size: ~ 61.75 Mb  
+- Virtual Size: ~ 67.47 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irssi"]`
@@ -155,16 +155,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `glib`
 
 ```console
-glib-2.80.4-r0 description:
+glib-2.80.5-r0 description:
 Common C routines used by Gtk+ and other libs
 
-glib-2.80.4-r0 webpage:
+glib-2.80.5-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.80.4-r0 installed size:
+glib-2.80.5-r0 installed size:
 5216 KiB
 
-glib-2.80.4-r0 license:
+glib-2.80.5-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -206,16 +206,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.2-r0 description:
+libcrypto3-3.3.2-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.3.2-r0 webpage:
+libcrypto3-3.3.2-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.2-r0 installed size:
+libcrypto3-3.3.2-r1 installed size:
 4660 KiB
 
-libcrypto3-3.3.2-r0 license:
+libcrypto3-3.3.2-r1 license:
 Apache-2.0
 
 ```
@@ -291,16 +291,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r0 description:
+libncursesw-6.4_p20240420-r1 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r0 webpage:
+libncursesw-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r0 installed size:
+libncursesw-6.4_p20240420-r1 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r0 license:
+libncursesw-6.4_p20240420-r1 license:
 X11
 
 ```
@@ -308,16 +308,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.2-r0 description:
+libssl3-3.3.2-r1 description:
 SSL shared libraries
 
-libssl3-3.3.2-r0 webpage:
+libssl3-3.3.2-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.2-r0 installed size:
+libssl3-3.3.2-r1 installed size:
 796 KiB
 
-libssl3-3.3.2-r0 license:
+libssl3-3.3.2-r1 license:
 Apache-2.0
 
 ```
@@ -359,16 +359,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r0 description:
+ncurses-terminfo-base-6.4_p20240420-r1 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r0 webpage:
+ncurses-terminfo-base-6.4_p20240420-r1 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r0 installed size:
+ncurses-terminfo-base-6.4_p20240420-r1 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r0 license:
+ncurses-terminfo-base-6.4_p20240420-r1 license:
 X11
 
 ```
