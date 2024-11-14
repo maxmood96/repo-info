@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f0eb8a55fb3cfd08c0a145c7fec2638a24ec79e8ab0d0a419996c541753ec2b7`
+- Image ID: `sha256:1634c649127503ac5b34c784b64394c1c5473ef84d50df9ce63afc5385b6938d`
 - Created: `2024-11-07T18:04:14Z`
 - Virtual Size: ~ 185.74 Mb  
   (total size of all layers on-disk)
@@ -242,16 +242,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.11.0-r1 description:
+libcurl-8.11.0-r2 description:
 The multiprotocol file transfer library
 
-libcurl-8.11.0-r1 webpage:
+libcurl-8.11.0-r2 webpage:
 https://curl.se/
 
-libcurl-8.11.0-r1 installed size:
+libcurl-8.11.0-r2 installed size:
 636 KiB
 
-libcurl-8.11.0-r1 license:
+libcurl-8.11.0-r2 license:
 curl
 
 ```
