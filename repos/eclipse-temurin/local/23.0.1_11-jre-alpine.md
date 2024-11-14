@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:49bf0c3603f8517830b2654044f272fe846eee36d25aa7e2948498826de913c6`
+- Image ID: `sha256:116b89359bf1c0d9955c6ab30064043fba8bb84ab3442634a0011a1957f5bf0d`
 - Created: `2024-10-23T15:41:32Z`
 - Virtual Size: ~ 209.57 Mb  
   (total size of all layers on-disk)
@@ -633,16 +633,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.3-r0 description:
+libexpat-2.6.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.3-r0 webpage:
+libexpat-2.6.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.3-r0 installed size:
+libexpat-2.6.4-r0 installed size:
 144 KiB
 
-libexpat-2.6.3-r0 license:
+libexpat-2.6.4-r0 license:
 MIT
 
 ```
