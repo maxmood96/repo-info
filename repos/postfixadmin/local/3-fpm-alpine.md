@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:28030a044668062ccf79765fb040803bd3d04e627ab4f892ba845ff11b0e5172`
+- Image ID: `sha256:ab5f012a4f6edd4c971a11f39267d8e5fb33c9cd0ebd2a9df4bbdb8f3dd9ab23`
 - Created: `2023-11-10T16:38:27Z`
-- Virtual Size: ~ 94.38 Mb  
+- Virtual Size: ~ 94.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -252,16 +252,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.10.1-r0 description:
+curl-8.11.0-r2 description:
 URL retrival utility and library
 
-curl-8.10.1-r0 webpage:
+curl-8.11.0-r2 webpage:
 https://curl.se/
 
-curl-8.10.1-r0 installed size:
-252 KiB
+curl-8.11.0-r2 installed size:
+256 KiB
 
-curl-8.10.1-r0 license:
+curl-8.11.0-r2 license:
 curl
 
 ```
@@ -320,16 +320,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.10.1-r0 description:
+libcurl-8.11.0-r2 description:
 The multiprotocol file transfer library
 
-libcurl-8.10.1-r0 webpage:
+libcurl-8.11.0-r2 webpage:
 https://curl.se/
 
-libcurl-8.10.1-r0 installed size:
-644 KiB
+libcurl-8.11.0-r2 installed size:
+636 KiB
 
-libcurl-8.10.1-r0 license:
+libcurl-8.11.0-r2 license:
 curl
 
 ```
@@ -388,16 +388,16 @@ X11
 ### `apk` package: `libpq`
 
 ```console
-libpq-16.3-r0 description:
+libpq-16.4-r0 description:
 PostgreSQL client library
 
-libpq-16.3-r0 webpage:
+libpq-16.4-r0 webpage:
 https://www.postgresql.org/
 
-libpq-16.3-r0 installed size:
+libpq-16.4-r0 installed size:
 328 KiB
 
-libpq-16.3-r0 license:
+libpq-16.4-r0 license:
 PostgreSQL
 
 ```
