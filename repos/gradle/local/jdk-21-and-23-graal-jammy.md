@@ -1,9 +1,9 @@
-# `gradle:8.10.2-jdk-lts-and-current-graal`
+# `gradle:8.11.0-jdk-lts-and-current-graal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8aa4a10a622da649ffc67d15268fa9959c6f3de926258666e6af6ff248220f66`
-- Created: `2024-10-16T03:51:19Z`
+- Image ID: `sha256:432e1d1512dc99c17c502e7f37859943849dc4822c559d7ed50d0b0f3637b8a3`
+- Created: `2024-11-13T00:13:30Z`
 - Virtual Size: ~ 1.87 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,7 +14,7 @@
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_LTS_HOME=/opt/java/graalvm21`
   - `JAVA_CURRENT_HOME=/opt/java/graalvm23`
-  - `GRADLE_VERSION=8.10.2`
+  - `GRADLE_VERSION=8.11`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -1762,19 +1762,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-124.134`
+### `dpkg` source package: `linux=5.15.0-125.135`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-124.134`
+- `linux-libc-dev:amd64=5.15.0-125.135`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.15.0-125.135
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-125.135.dsc' linux_5.15.0-125.135.dsc 7758 SHA512:bbd176710c72b72e8a32849174d9c39e8e54a43cf52e5af0112fad2eeabde1b21d8b91af363231b1ab8bb8a42dee7738ff3a707881dea28fc612480ad2d495f2
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-125.135.diff.gz' linux_5.15.0-125.135.diff.gz 10886353 SHA512:78bac15b50df779066d04b1e56e820dce923974b4f95bc1fe139928bd9894bf589b52e57ea74853143ea87960df38f829043ffb42f3583b90209a06cb9acaa98
+```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
 
@@ -2310,20 +2315,25 @@ $ apt-get source -qq --print-uris python-fastbencode=0.0.5-1build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-fastbencode/python-fastbencode_0.0.5-1build1.debian.tar.xz' python-fastbencode_0.0.5-1build1.debian.tar.xz 36708 SHA512:136b9b009fcd823e657e1082dfd5fd6f77e9676f85deff3859f7404d693a442f284549067abaf6e37584aac985a66a3ee308fe97da55ff792f1b1941c43aaa55
 ```
 
-### `dpkg` source package: `python-urllib3=1.26.5-1~exp1ubuntu0.1`
+### `dpkg` source package: `python-urllib3=1.26.5-1~exp1ubuntu0.2`
 
 Binary Packages:
 
-- `python3-urllib3=1.26.5-1~exp1ubuntu0.1`
+- `python3-urllib3=1.26.5-1~exp1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 
 - `Expat`
 - `PSF-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-urllib3=1.26.5-1~exp1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.2.dsc' python-urllib3_1.26.5-1~exp1ubuntu0.2.dsc 2378 SHA512:f6eb7387a8ecdbd976f8cf8a6a4c4990eba0061d052ae27c17fdecf360835396c23b102c0aada5f7f5a3d6d916c5b046c764c20f9be40989e82e56d7e8f0ee91
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5.orig.tar.gz' python-urllib3_1.26.5.orig.tar.gz 292865 SHA512:4a1899b223b00894d49f6dff5fc95d410e5b0ab28c11f7e3cd82d03e50438b0c5b0adf693a33fd80f1586312dc0012836713998674da15531bf82d52645881f6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.2.debian.tar.xz' python-urllib3_1.26.5-1~exp1ubuntu0.2.debian.tar.xz 15604 SHA512:b4d78f88e447f739c7378ffff98146e239df1f662c8f99e0708df6538e579450502dc6fbfcdd4ba6845ec957a3bf33a77e269153c491a36069a01a357e02f36b
+```
 
 ### `dpkg` source package: `python3-defaults=3.10.6-1~22.04.1`
 

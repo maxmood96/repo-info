@@ -1,9 +1,9 @@
-# `gradle:8.10.2-jdk-lts-and-current`
+# `gradle:8.11.0-jdk-lts-and-current`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a63d29906e1ba6e34a1de3b84aaa7dd83159df4eb501c7027632db5e9d738c0d`
-- Created: `2024-10-16T03:51:19Z`
+- Image ID: `sha256:2149756de88bb254fbd125fee7e9c0c212d3973902a9e62318d4fb2363b2fc8f`
+- Created: `2024-11-13T00:13:30Z`
 - Virtual Size: ~ 1.06 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,7 +19,7 @@
   - `JAVA_LTS_HOME=/opt/java/openjdk21`
   - `JAVA_CURRENT_HOME=/opt/java/openjdk23`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.10.2`
+  - `GRADLE_VERSION=8.11`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -2286,20 +2286,25 @@ $ apt-get source -qq --print-uris python-fastbencode=0.0.5-1build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-fastbencode/python-fastbencode_0.0.5-1build1.debian.tar.xz' python-fastbencode_0.0.5-1build1.debian.tar.xz 36708 SHA512:136b9b009fcd823e657e1082dfd5fd6f77e9676f85deff3859f7404d693a442f284549067abaf6e37584aac985a66a3ee308fe97da55ff792f1b1941c43aaa55
 ```
 
-### `dpkg` source package: `python-urllib3=1.26.5-1~exp1ubuntu0.1`
+### `dpkg` source package: `python-urllib3=1.26.5-1~exp1ubuntu0.2`
 
 Binary Packages:
 
-- `python3-urllib3=1.26.5-1~exp1ubuntu0.1`
+- `python3-urllib3=1.26.5-1~exp1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 
 - `Expat`
 - `PSF-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-urllib3=1.26.5-1~exp1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.2.dsc' python-urllib3_1.26.5-1~exp1ubuntu0.2.dsc 2378 SHA512:f6eb7387a8ecdbd976f8cf8a6a4c4990eba0061d052ae27c17fdecf360835396c23b102c0aada5f7f5a3d6d916c5b046c764c20f9be40989e82e56d7e8f0ee91
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5.orig.tar.gz' python-urllib3_1.26.5.orig.tar.gz 292865 SHA512:4a1899b223b00894d49f6dff5fc95d410e5b0ab28c11f7e3cd82d03e50438b0c5b0adf693a33fd80f1586312dc0012836713998674da15531bf82d52645881f6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.26.5-1%7eexp1ubuntu0.2.debian.tar.xz' python-urllib3_1.26.5-1~exp1ubuntu0.2.debian.tar.xz 15604 SHA512:b4d78f88e447f739c7378ffff98146e239df1f662c8f99e0708df6538e579450502dc6fbfcdd4ba6845ec957a3bf33a77e269153c491a36069a01a357e02f36b
+```
 
 ### `dpkg` source package: `python3-defaults=3.10.6-1~22.04.1`
 

@@ -1,10 +1,10 @@
-# `gradle:8.10.2-jdk8-focal`
+# `gradle:8.11.0-jdk8-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ceeffd35b41aa79822a43351a6a8e6b2e15bc2c6767a517d0c8eaa62db42b977`
-- Created: `2024-10-16T03:51:19Z`
-- Virtual Size: ~ 673.87 Mb  
+- Image ID: `sha256:793b06bf4824a85d5940c6006e05212eb9ac558827483cf74eeda0df98c80712`
+- Created: `2024-11-13T00:13:30Z`
+- Virtual Size: ~ 673.61 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk8u432-b06`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.10.2`
+  - `GRADLE_VERSION=8.11`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=20.04`
@@ -2145,20 +2145,25 @@ $ apt-get source -qq --print-uris python-fastimport=0.9.8-5build1
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/python-fastimport/python-fastimport_0.9.8-5build1.debian.tar.xz' python-fastimport_0.9.8-5build1.debian.tar.xz 13644 SHA256:f83a7b8f5824f22c46aacb7ededbed2d801cbcedf67500c5ac3bc71aa6aa981c
 ```
 
-### `dpkg` source package: `python-urllib3=1.25.8-2ubuntu0.3`
+### `dpkg` source package: `python-urllib3=1.25.8-2ubuntu0.4`
 
 Binary Packages:
 
-- `python3-urllib3=1.25.8-2ubuntu0.3`
+- `python3-urllib3=1.25.8-2ubuntu0.4`
 
 Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 
 - `Expat`
 - `PSF-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python-urllib3=1.25.8-2ubuntu0.4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.25.8-2ubuntu0.4.dsc' python-urllib3_1.25.8-2ubuntu0.4.dsc 2377 SHA512:2181913327f8d7526cc14f1237b963e3ab091362e017460aa532e9c796bf3de77a3787c37cc95c5fae9e59c6be37c75871db2d39c57e311dc890d64c2981a2b6
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.25.8.orig.tar.gz' python-urllib3_1.25.8.orig.tar.gz 261077 SHA512:6e380d98d9a8b06534abfab4eb67b685a8311a091e31adcefe2b0ffc61d2b728229df067790b20358f2646e9054a546450c3351e4aa618f31d85573ea50ceaa2
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.25.8-2ubuntu0.4.debian.tar.xz' python-urllib3_1.25.8-2ubuntu0.4.debian.tar.xz 16492 SHA512:fcbc6cabe674613a51325cb7a1728099957c51f460ef221df6bdce94e0bb4a20ad9f2848c9bc46cb6ae2e750bf4045617c62d097c3e77ed87579443b339e4e53
+```
 
 ### `dpkg` source package: `python2.7=2.7.18-1~20.04.4`
 
