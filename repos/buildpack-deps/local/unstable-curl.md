@@ -81,19 +81,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.9.10
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.10.dsc' apt_2.9.10.dsc 2977 SHA256:1594188e9a1c3af45846f1f4391852e4d8ecbe631a6991747452cb3acd73fe5c
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.10.tar.xz' apt_2.9.10.tar.xz 2388688 SHA256:948ede1c9ebdc2fdbb91a12776f23b33df326ff01bcf0ce062e5bfe3260d1bcb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.9.10/
 
-- https://sources.debian.net/src/apt/2.9.10/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.9.10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.9.10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-2`
 
@@ -2580,20 +2574,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.40.2-10
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2-10.dsc' util-linux_2.40.2-10.dsc 5120 SHA256:c242c7bca63a307c4e489bca3c7a2e7ce28838dcd15311f48d3701422311a310
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2.orig.tar.xz' util-linux_2.40.2.orig.tar.xz 8854820 SHA256:d78b37a66f5922d70edf3bdfb01a6b33d34ed3c3cafd6628203b2a2b67c8e8b3
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2-10.debian.tar.xz' util-linux_2.40.2-10.debian.tar.xz 113336 SHA256:a75aad89ff1c05991915a64719f1b8fc4060e7c4e29b15373c52eb6307276459
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.40.2-10/
 
-- https://sources.debian.net/src/util-linux/2.40.2-10/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.40.2-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.40.2-10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.24.5-2`
 

@@ -1077,20 +1077,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/li
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.6.3-2
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.6.3-2.dsc' expat_2.6.3-2.dsc 1964 SHA256:689b5e692cffd817f3308e8c5544c709de5c5107a70d37f98b82075cdca8e1d4
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.6.3.orig.tar.gz' expat_2.6.3.orig.tar.gz 8417246 SHA256:2dbff05dad8ccf08a24d2858c2c16802c22a22db6526db32ecb0fa17eea2ae61
-'http://deb.debian.org/debian/pool/main/e/expat/expat_2.6.3-2.debian.tar.xz' expat_2.6.3-2.debian.tar.xz 15020 SHA256:a45839a726e0625f993615592cb7d2d703305aaf601377d5610469df088edcca
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/expat/2.6.3-2/
 
-- https://sources.debian.net/src/expat/2.6.3-2/ (for browsing the source)
-- https://sources.debian.net/src/expat/2.6.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/expat/2.6.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `fftw3=3.3.10-1`
 
@@ -2820,20 +2813,13 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-dav1d/copyright`, `/usr/s
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.19.1-1
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.19.1-1.dsc' libheif_1.19.1-1.dsc 3631 SHA256:9ecb5b399c03015324e239e226e937363b8dc83f5420901d0b1f3581aa553b72
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.19.1.orig.tar.gz' libheif_1.19.1.orig.tar.gz 1649119 SHA256:994913eb2a29c00c146d6f3d61e07d9ff0d8e9eccb0624d87e4be8b108c74e4b
-'http://deb.debian.org/debian/pool/main/libh/libheif/libheif_1.19.1-1.debian.tar.xz' libheif_1.19.1-1.debian.tar.xz 12440 SHA256:83a5611d1ff3e24be50d1c19ad9a5a6ebf6f60bac47e304fd9884a6755a470df
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libheif/1.19.1-1/
 
-- https://sources.debian.net/src/libheif/1.19.1-1/ (for browsing the source)
-- https://sources.debian.net/src/libheif/1.19.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libheif/1.19.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
@@ -5852,20 +5838,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.40.2-9
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2-9.dsc' util-linux_2.40.2-9.dsc 4999 SHA256:4b18cfc3aff11d4f8098a2ff23a2305f09d6fc29b4311158cd93dc1933cecce7
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2.orig.tar.xz' util-linux_2.40.2.orig.tar.xz 8854820 SHA256:d78b37a66f5922d70edf3bdfb01a6b33d34ed3c3cafd6628203b2a2b67c8e8b3
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2-9.debian.tar.xz' util-linux_2.40.2-9.debian.tar.xz 113332 SHA256:017158df54e466b3f6f8bea207600abb01d941dfa61b7432c22e4faea75071e6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.40.2-9/
 
-- https://sources.debian.net/src/util-linux/2.40.2-9/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.40.2-9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.40.2-9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.24.5-2`
 
