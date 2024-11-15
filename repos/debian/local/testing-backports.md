@@ -1902,20 +1902,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.40.2-9
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2-9.dsc' util-linux_2.40.2-9.dsc 4999 SHA256:4b18cfc3aff11d4f8098a2ff23a2305f09d6fc29b4311158cd93dc1933cecce7
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2.orig.tar.xz' util-linux_2.40.2.orig.tar.xz 8854820 SHA256:d78b37a66f5922d70edf3bdfb01a6b33d34ed3c3cafd6628203b2a2b67c8e8b3
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2-9.debian.tar.xz' util-linux_2.40.2-9.debian.tar.xz 113332 SHA256:017158df54e466b3f6f8bea207600abb01d941dfa61b7432c22e4faea75071e6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.40.2-9/
 
-- https://sources.debian.net/src/util-linux/2.40.2-9/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.40.2-9/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.40.2-9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xxhash=0.8.2-2`
 
