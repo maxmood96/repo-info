@@ -184,7 +184,12 @@ $ docker pull amazonlinux@sha256:4211726aa28ff0c1144f6defcf87a148384b29106325c81
 
 ## `amazonlinux:2.0.20241113.1`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazonlinux@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazonlinux:2018.03`
 
@@ -419,7 +424,12 @@ $ docker pull amazonlinux@sha256:075eb086d69f567ffd2cf3695a12ee91cb07f694ab45f48
 
 ## `amazonlinux:2023.6.20241111.0`
 
-**does not exist** (yet?)
+```console
+$ docker pull amazonlinux@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `amazonlinux:latest`
 
