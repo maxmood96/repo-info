@@ -62,9 +62,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=2.9.10
-'http://http.debian.net/debian/pool/main/a/apt/apt_2.9.10.dsc' apt_2.9.10.dsc 2977 SHA256:1594188e9a1c3af45846f1f4391852e4d8ecbe631a6991747452cb3acd73fe5c
-'http://http.debian.net/debian/pool/main/a/apt/apt_2.9.10.tar.xz' apt_2.9.10.tar.xz 2388688 SHA256:948ede1c9ebdc2fdbb91a12776f23b33df326ff01bcf0ce062e5bfe3260d1bcb
+'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.10.dsc' apt_2.9.10.dsc 2977 SHA256:1594188e9a1c3af45846f1f4391852e4d8ecbe631a6991747452cb3acd73fe5c
+'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.10.tar.xz' apt_2.9.10.tar.xz 2388688 SHA256:948ede1c9ebdc2fdbb91a12776f23b33df326ff01bcf0ce062e5bfe3260d1bcb
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/apt/2.9.10/ (for browsing the source)
+- https://sources.debian.net/src/apt/2.9.10/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/2.9.10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-2`
 
@@ -1009,11 +1015,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris glib2.0=2.82.2-2
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.82.2-2.dsc' glib2.0_2.82.2-2.dsc 4921 SHA256:8efac317b5e38b880185a88904eb3228aaeac3ad43552448d675c697eaa02327
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.82.2.orig-unicode-data.tar.xz' glib2.0_2.82.2.orig-unicode-data.tar.xz 262908 SHA256:9bf66a7e9f2f18cbd7a72f561dc1f997990b53243435008777109c823cd7e1ea
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.82.2.orig.tar.xz' glib2.0_2.82.2.orig.tar.xz 5555528 SHA256:ab45f5a323048b1659ee0fbda5cecd94b099ab3e4b9abf26ae06aeb3e781fd63
-'http://http.debian.net/debian/pool/main/g/glib2.0/glib2.0_2.82.2-2.debian.tar.xz' glib2.0_2.82.2-2.debian.tar.xz 135776 SHA256:4e5660c5f430bd31b8d3fe00b4e6e7ca116ca3fdd0765d0fb61f0d30190dbeb1
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.2-2.dsc' glib2.0_2.82.2-2.dsc 4921 SHA256:8efac317b5e38b880185a88904eb3228aaeac3ad43552448d675c697eaa02327
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.2.orig-unicode-data.tar.xz' glib2.0_2.82.2.orig-unicode-data.tar.xz 262908 SHA256:9bf66a7e9f2f18cbd7a72f561dc1f997990b53243435008777109c823cd7e1ea
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.2.orig.tar.xz' glib2.0_2.82.2.orig.tar.xz 5555528 SHA256:ab45f5a323048b1659ee0fbda5cecd94b099ab3e4b9abf26ae06aeb3e781fd63
+'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.2-2.debian.tar.xz' glib2.0_2.82.2-2.debian.tar.xz 135776 SHA256:4e5660c5f430bd31b8d3fe00b4e6e7ca116ca3fdd0765d0fb61f0d30190dbeb1
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/glib2.0/2.82.2-2/ (for browsing the source)
+- https://sources.debian.net/src/glib2.0/2.82.2-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/glib2.0/2.82.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.40-3`
 
@@ -3552,14 +3564,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.40.2-9
-'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.40.2-9.dsc' util-linux_2.40.2-9.dsc 4999 SHA256:4b18cfc3aff11d4f8098a2ff23a2305f09d6fc29b4311158cd93dc1933cecce7
-'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.40.2.orig.tar.xz' util-linux_2.40.2.orig.tar.xz 8854820 SHA256:d78b37a66f5922d70edf3bdfb01a6b33d34ed3c3cafd6628203b2a2b67c8e8b3
-'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.40.2-9.debian.tar.xz' util-linux_2.40.2-9.debian.tar.xz 113332 SHA256:017158df54e466b3f6f8bea207600abb01d941dfa61b7432c22e4faea75071e6
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/util-linux/2.40.2-9/
+
 
 ### `dpkg` source package: `vim=2:9.1.0777-1`
 
@@ -3596,14 +3607,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:9.1.0777-1
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.0777-1.dsc' vim_9.1.0777-1.dsc 3230 SHA256:9cc01acecbac02544e41fd943f58dcc58f7fcc6523407eac4ca49a715f1069e4
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.0777.orig.tar.xz' vim_9.1.0777.orig.tar.xz 12048620 SHA256:06d999e75a26fd195fa5df2f4bfdb19c32ba7a4783129a8adedecd22f60332bd
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.0777-1.debian.tar.xz' vim_9.1.0777-1.debian.tar.xz 188972 SHA256:0b50beeb055010c071965ab439ff93e4af0da7206f477f9501ee021f31bfac3a
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/vim/2:9.1.0777-1/
+
 
 ### `dpkg` source package: `wget=1.24.5-2`
 
