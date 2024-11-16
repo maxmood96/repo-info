@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9a1b70406e6d97e1e5abdd04da0b19ed755578eba57cb7527451e571248f7ee1`
-- Created: `2024-06-20T09:31:03Z`
-- Virtual Size: ~ 193.68 Mb  
+- Image ID: `sha256:3dc7fb9704c508e0d58e835187972e1330cee0b5a91b15a92f388acee6c693a7`
+- Created: `2024-11-14T10:47:28Z`
+- Virtual Size: ~ 194.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -608,16 +608,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r1 description:
+libncursesw-6.4_p20240420-r2 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r1 webpage:
+libncursesw-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r1 installed size:
+libncursesw-6.4_p20240420-r2 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r1 license:
+libncursesw-6.4_p20240420-r2 license:
 X11
 
 ```
@@ -625,16 +625,16 @@ X11
 ### `apk` package: `libpanelw`
 
 ```console
-libpanelw-6.4_p20240420-r1 description:
+libpanelw-6.4_p20240420-r2 description:
 Console display library (libpanelw)
 
-libpanelw-6.4_p20240420-r1 webpage:
+libpanelw-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-libpanelw-6.4_p20240420-r1 installed size:
+libpanelw-6.4_p20240420-r2 installed size:
 32 KiB
 
-libpanelw-6.4_p20240420-r1 license:
+libpanelw-6.4_p20240420-r2 license:
 X11
 
 ```
@@ -914,16 +914,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r1 description:
+ncurses-terminfo-base-6.4_p20240420-r2 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r1 webpage:
+ncurses-terminfo-base-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r1 installed size:
+ncurses-terminfo-base-6.4_p20240420-r2 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r1 license:
+ncurses-terminfo-base-6.4_p20240420-r2 license:
 X11
 
 ```

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0bf8bfd9cf936a5f78a68262cb363250b4fff34e69520148c35d8424e2da500e`
-- Created: `2024-10-30T07:44:30Z`
-- Virtual Size: ~ 194.33 Mb  
+- Image ID: `sha256:ebf4b4ca4a9e4361d37089fafe3315c5ad2aed56028d850b57f025934d766800`
+- Created: `2024-11-14T10:47:28Z`
+- Virtual Size: ~ 194.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -353,16 +353,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.10.1-r0 description:
+curl-8.11.0-r2 description:
 URL retrival utility and library
 
-curl-8.10.1-r0 webpage:
+curl-8.11.0-r2 webpage:
 https://curl.se/
 
-curl-8.10.1-r0 installed size:
-252 KiB
+curl-8.11.0-r2 installed size:
+256 KiB
 
-curl-8.10.1-r0 license:
+curl-8.11.0-r2 license:
 curl
 
 ```
@@ -506,16 +506,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.10.1-r0 description:
+libcurl-8.11.0-r2 description:
 The multiprotocol file transfer library
 
-libcurl-8.10.1-r0 webpage:
+libcurl-8.11.0-r2 webpage:
 https://curl.se/
 
-libcurl-8.10.1-r0 installed size:
-644 KiB
+libcurl-8.11.0-r2 installed size:
+636 KiB
 
-libcurl-8.10.1-r0 license:
+libcurl-8.11.0-r2 license:
 curl
 
 ```
@@ -540,16 +540,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.3-r0 description:
+libexpat-2.6.4-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.3-r0 webpage:
+libexpat-2.6.4-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.3-r0 installed size:
+libexpat-2.6.4-r0 installed size:
 144 KiB
 
-libexpat-2.6.3-r0 license:
+libexpat-2.6.4-r0 license:
 MIT
 
 ```
@@ -608,16 +608,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r1 description:
+libncursesw-6.4_p20240420-r2 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r1 webpage:
+libncursesw-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r1 installed size:
+libncursesw-6.4_p20240420-r2 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r1 license:
+libncursesw-6.4_p20240420-r2 license:
 X11
 
 ```
@@ -625,16 +625,16 @@ X11
 ### `apk` package: `libpanelw`
 
 ```console
-libpanelw-6.4_p20240420-r1 description:
+libpanelw-6.4_p20240420-r2 description:
 Console display library (libpanelw)
 
-libpanelw-6.4_p20240420-r1 webpage:
+libpanelw-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-libpanelw-6.4_p20240420-r1 installed size:
+libpanelw-6.4_p20240420-r2 installed size:
 32 KiB
 
-libpanelw-6.4_p20240420-r1 license:
+libpanelw-6.4_p20240420-r2 license:
 X11
 
 ```
@@ -914,16 +914,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r1 description:
+ncurses-terminfo-base-6.4_p20240420-r2 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r1 webpage:
+ncurses-terminfo-base-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r1 installed size:
+ncurses-terminfo-base-6.4_p20240420-r2 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r1 license:
+ncurses-terminfo-base-6.4_p20240420-r2 license:
 X11
 
 ```
