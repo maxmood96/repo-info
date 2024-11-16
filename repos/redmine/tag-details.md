@@ -27,6 +27,21 @@
 -	[`redmine:5.1.4-alpine3.19`](#redmine514-alpine319)
 -	[`redmine:5.1.4-alpine3.20`](#redmine514-alpine320)
 -	[`redmine:5.1.4-bookworm`](#redmine514-bookworm)
+-	[`redmine:6`](#redmine6)
+-	[`redmine:6-alpine`](#redmine6-alpine)
+-	[`redmine:6-alpine3.19`](#redmine6-alpine319)
+-	[`redmine:6-alpine3.20`](#redmine6-alpine320)
+-	[`redmine:6-bookworm`](#redmine6-bookworm)
+-	[`redmine:6.0`](#redmine60)
+-	[`redmine:6.0-alpine`](#redmine60-alpine)
+-	[`redmine:6.0-alpine3.19`](#redmine60-alpine319)
+-	[`redmine:6.0-alpine3.20`](#redmine60-alpine320)
+-	[`redmine:6.0-bookworm`](#redmine60-bookworm)
+-	[`redmine:6.0.1`](#redmine601)
+-	[`redmine:6.0.1-alpine`](#redmine601-alpine)
+-	[`redmine:6.0.1-alpine3.19`](#redmine601-alpine319)
+-	[`redmine:6.0.1-alpine3.20`](#redmine601-alpine320)
+-	[`redmine:6.0.1-bookworm`](#redmine601-bookworm)
 -	[`redmine:alpine`](#redminealpine)
 -	[`redmine:alpine3.19`](#redminealpine319)
 -	[`redmine:alpine3.20`](#redminealpine320)
@@ -31597,6 +31612,66 @@ $ docker pull redmine@sha256:27df6b8c823a09c83c5f03e7b479a1daff0b7b8ebf2b86139c5
 		Last Modified: Wed, 13 Nov 2024 03:55:56 GMT  
 		Size: 42.0 KB (41976 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `redmine:6`
+
+**does not exist** (yet?)
+
+## `redmine:6-alpine`
+
+**does not exist** (yet?)
+
+## `redmine:6-alpine3.19`
+
+**does not exist** (yet?)
+
+## `redmine:6-alpine3.20`
+
+**does not exist** (yet?)
+
+## `redmine:6-bookworm`
+
+**does not exist** (yet?)
+
+## `redmine:6.0`
+
+**does not exist** (yet?)
+
+## `redmine:6.0-alpine`
+
+**does not exist** (yet?)
+
+## `redmine:6.0-alpine3.19`
+
+**does not exist** (yet?)
+
+## `redmine:6.0-alpine3.20`
+
+**does not exist** (yet?)
+
+## `redmine:6.0-bookworm`
+
+**does not exist** (yet?)
+
+## `redmine:6.0.1`
+
+**does not exist** (yet?)
+
+## `redmine:6.0.1-alpine`
+
+**does not exist** (yet?)
+
+## `redmine:6.0.1-alpine3.19`
+
+**does not exist** (yet?)
+
+## `redmine:6.0.1-alpine3.20`
+
+**does not exist** (yet?)
+
+## `redmine:6.0.1-bookworm`
+
+**does not exist** (yet?)
 
 ## `redmine:alpine`
 
