@@ -1,10 +1,10 @@
-# `mariadb:10.11.9-jammy`
+# `mariadb:10.11.10-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:341c6a0bbc97e5bdeda7638ebfcf7094b62ca12d2e971a9a6f5d66aa0f9cf368`
-- Created: `2024-09-03T02:17:54Z`
-- Virtual Size: ~ 404.51 Mb  
+- Image ID: `sha256:73b895f9f0fdb34280b709e601d5293a411b1c92cc2ff71a2f70d88fa0d6ddc0`
+- Created: `2024-11-04T20:52:12Z`
+- Virtual Size: ~ 326.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.17`
   - `LANG=C.UTF-8`
-  - `MARIADB_VERSION=1:10.11.9+maria~ubu2204`
+  - `MARIADB_VERSION=1:10.11.10+maria~ubu2204`
 - Labels:
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/library/ubuntu:jammy`
@@ -25,7 +25,7 @@
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=10.11.9`
+  - `org.opencontainers.image.version=10.11.10`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -211,11 +211,11 @@ $ apt-get source -qq --print-uris bzip2=1.0.8-5build1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bzip2/bzip2_1.0.8-5build1.debian.tar.bz2' bzip2_1.0.8-5build1.debian.tar.bz2 26870 SHA512:e030c257c3458d780fd0ffc6f328efd69d0e875e81acd7441a7c6651194ebded61017c96aad7c99061f93d50dfc33056abe98c9a599abc900f49d51c4a1eed6f
 ```
 
-### `dpkg` source package: `ca-certificates=20230311ubuntu0.22.04.1`
+### `dpkg` source package: `ca-certificates=20240203~22.04.1`
 
 Binary Packages:
 
-- `ca-certificates=20230311ubuntu0.22.04.1`
+- `ca-certificates=20240203~22.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 
@@ -223,9 +223,13 @@ Licenses: (parsed from: `/usr/share/doc/ca-certificates/copyright`)
 - `GPL-2+`
 - `MPL-2.0`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris ca-certificates=20240203~22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20240203%7e22.04.1.dsc' ca-certificates_20240203~22.04.1.dsc 1850 SHA512:af1c4a4a202eead02abba4808ce5e7b731f7e2db6b194e74ff9f5331b515213490ba63181f7ffc59f01f5bd13b7fe80519694c7ff21502cd7e2e095075896696
+'http://archive.ubuntu.com/ubuntu/pool/main/c/ca-certificates/ca-certificates_20240203%7e22.04.1.tar.xz' ca-certificates_20240203~22.04.1.tar.xz 263132 SHA512:64e97c5b258dfede258dd9b447d2a1f5a43db0e70309bb4e0259b8ed9d103e1a751fb563bb4902460667385d38325945e806726aa6db8876920dff670034f3f1
+```
 
 ### `dpkg` source package: `cdebconf=0.261ubuntu1`
 
@@ -457,11 +461,11 @@ $ apt-get source -qq --print-uris findutils=4.8.0-1ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.8.0-1ubuntu3.debian.tar.xz' findutils_4.8.0-1ubuntu3.debian.tar.xz 27716 SHA512:f0ce8b61f4e0beabad3178424c804468dc4c57f37794887954df28c36227ce77f00383903274a1995a104f9def44270070b9e033eb46d52f5aaaedb1f5883587
 ```
 
-### `dpkg` source package: `galera-4=26.4.19-ubu2204`
+### `dpkg` source package: `galera-4=26.4.20-ubu2204`
 
 Binary Packages:
 
-- `galera-4=26.4.19-ubu2204`
+- `galera-4=26.4.20-ubu2204`
 
 Licenses: (parsed from: `/usr/share/doc/galera-4/copyright`)
 
@@ -1530,18 +1534,18 @@ $ apt-get source -qq --print-uris lz4=1.9.3-2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.9.3-2build2.debian.tar.xz' lz4_1.9.3-2build2.debian.tar.xz 14088 SHA512:9f61516a672186299a96aee5b7a71d9cb1ad3db2697fa10b802fef14a63587bb3459281f7300726711a116893c10858914f558aece1d224876e287020a23dde6
 ```
 
-### `dpkg` source package: `mariadb=1:10.11.9+maria~ubu2204`
+### `dpkg` source package: `mariadb=1:10.11.10+maria~ubu2204`
 
 Binary Packages:
 
-- `libmariadb3:amd64=1:10.11.9+maria~ubu2204`
-- `mariadb-backup=1:10.11.9+maria~ubu2204`
-- `mariadb-client=1:10.11.9+maria~ubu2204`
-- `mariadb-client-core=1:10.11.9+maria~ubu2204`
-- `mariadb-common=1:10.11.9+maria~ubu2204`
-- `mariadb-server=1:10.11.9+maria~ubu2204`
-- `mariadb-server-core=1:10.11.9+maria~ubu2204`
-- `mysql-common=1:10.11.9+maria~ubu2204`
+- `libmariadb3:amd64=1:10.11.10+maria~ubu2204`
+- `mariadb-backup=1:10.11.10+maria~ubu2204`
+- `mariadb-client=1:10.11.10+maria~ubu2204`
+- `mariadb-client-core=1:10.11.10+maria~ubu2204`
+- `mariadb-common=1:10.11.10+maria~ubu2204`
+- `mariadb-server=1:10.11.10+maria~ubu2204`
+- `mariadb-server-core=1:10.11.10+maria~ubu2204`
+- `mysql-common=1:10.11.10+maria~ubu2204`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1550,9 +1554,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb=1:10.11.9+maria~ubu2204
-'http://archive.mariadb.org/mariadb-10.11.9/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.9%2bmaria%7eubu2204.dsc' mariadb_10.11.9+maria~ubu2204.dsc 4298 SHA256:875a88af5f00c12bfc19f2b26a7900dcdee7701632fbd61137e826cc89faa75e
-'http://archive.mariadb.org/mariadb-10.11.9/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.9%2bmaria%7eubu2204.tar.xz' mariadb_10.11.9+maria~ubu2204.tar.xz 62897164 SHA256:9506c8ba94f747a4a6fed72afaef9ad0b35ca488bf33749b1dc1dbdd0577d26c
+$ apt-get source -qq --print-uris mariadb=1:10.11.10+maria~ubu2204
+'http://archive.mariadb.org/mariadb-10.11.10/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.10%2bmaria%7eubu2204.dsc' mariadb_10.11.10+maria~ubu2204.dsc 4302 SHA256:00d02107a5c714bdbaf9a215e1d4efce9901539bf66d6a86f8b2365b27c8ca0f
+'http://archive.mariadb.org/mariadb-10.11.10/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.10%2bmaria%7eubu2204.tar.xz' mariadb_10.11.10+maria~ubu2204.tar.xz 65435396 SHA256:ad09502cadc94fa0211ad197d936d284ff4b6ac48285ec257e445d6f4b0d767d
 ```
 
 ### `dpkg` source package: `mawk=1.3.4.20200120-3`

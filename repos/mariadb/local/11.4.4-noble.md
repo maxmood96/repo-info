@@ -1,10 +1,10 @@
-# `mariadb:11.4.3-noble`
+# `mariadb:11.4.4-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:12cccacf61b37a23e638412afeced20431b7d3745b09d67b99b9827ff2c58018`
-- Created: `2024-09-03T02:17:54Z`
-- Virtual Size: ~ 406.20 Mb  
+- Image ID: `sha256:139128a59e49940fb6296a245fd436b8f3d6e80d7c3e9c4c63db844b414da9ba`
+- Created: `2024-11-04T20:52:12Z`
+- Virtual Size: ~ 405.87 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.17`
   - `LANG=C.UTF-8`
-  - `MARIADB_VERSION=1:11.4.3+maria~ubu2404`
+  - `MARIADB_VERSION=1:11.4.4+maria~ubu2404`
 - Labels:
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/library/ubuntu:noble`
@@ -25,4 +25,4 @@
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=11.4.3`
+  - `org.opencontainers.image.version=11.4.4`
