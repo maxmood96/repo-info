@@ -1,7 +1,7 @@
-## `ibm-semeru-runtimes:open-17-jdk-jammy`
+## `ibm-semeru-runtimes:open-8u432-b06-jre-focal`
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:6ef9bd10c103a908786a17c7491f26626755ff9bf22c73b922854ae95bffb3ad
+$ docker pull ibm-semeru-runtimes@sha256:43b55ff2a8702b8ada64dd781343aeab0ff88473583564298018e30e2434acea
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15,39 +15,39 @@ $ docker pull ibm-semeru-runtimes@sha256:6ef9bd10c103a908786a17c7491f26626755ff9
 	-	linux; s390x
 	-	unknown; unknown
 
-### `ibm-semeru-runtimes:open-17-jdk-jammy` - linux; amd64
+### `ibm-semeru-runtimes:open-8u432-b06-jre-focal` - linux; amd64
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:2134db70db47d368d33e65c1b6edab7638ef7a4bd82a1682b9286785f7225e52
+$ docker pull ibm-semeru-runtimes@sha256:410553698a4bd5980f450a691d4f02cb7be0cb9764178c428832d22cb2f27976
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **265.8 MB (265841244 bytes)**  
+-	Total Size: **98.3 MB (98290589 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:18499eca37f842d4d13bdd64c44b925ba9636c14f921cf7c4392fc580de9f9e2`
+-	Image ID: `sha256:8cbc3b6414373d641bcf5e315f61f66a61ca24fd1b062fbdaecd0707e4977f29`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 11 Sep 2024 16:25:16 GMT
+# Fri, 11 Oct 2024 03:38:25 GMT
 ARG RELEASE
-# Wed, 11 Sep 2024 16:25:16 GMT
+# Fri, 11 Oct 2024 03:38:25 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 11 Sep 2024 16:25:16 GMT
+# Fri, 11 Oct 2024 03:38:25 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 11 Sep 2024 16:25:16 GMT
-LABEL org.opencontainers.image.version=22.04
-# Wed, 11 Sep 2024 16:25:17 GMT
-ADD file:ebe009f86035c175ba244badd298a2582914415cf62783d510eab3a311a5d4e1 in / 
-# Wed, 11 Sep 2024 16:25:18 GMT
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
 CMD ["/bin/bash"]
 # Thu, 14 Nov 2024 10:27:45 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Thu, 14 Nov 2024 10:27:45 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 14 Nov 2024 10:27:45 GMT
-ENV JAVA_VERSION=jdk-17.0.13+11_openj9-0.48.0
+ENV JAVA_VERSION=jdk8u432-b06_openj9-0.48.0
 # Thu, 14 Nov 2024 10:27:45 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='77ce078b6040defe6aca3734c8805671866bf7a27008af751542c96dc02bbfe5';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.13%2B11_openj9-0.48.0/ibm-semeru-open-jdk_aarch64_linux_17.0.13_11_openj9-0.48.0.tar.gz';          ;;        amd64|x86_64)          ESUM='0964047f5f4f2419e9c7dee9d2f5d34968dcd271741f4341429ebe3a6fd80cb6';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.13%2B11_openj9-0.48.0/ibm-semeru-open-jdk_x64_linux_17.0.13_11_openj9-0.48.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='73ab5fffa3cb24997a07204b58befc665940639a59b8f4ec831583aac0546a9e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.13%2B11_openj9-0.48.0/ibm-semeru-open-jdk_ppc64le_linux_17.0.13_11_openj9-0.48.0.tar.gz';          ;;        s390x)          ESUM='5e93884fc4103dbaf4e10d6f832d9ca6a7fb2c584d4ec998300307092d4b70ef';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.13%2B11_openj9-0.48.0/ibm-semeru-open-jdk_s390x_linux_17.0.13_11_openj9-0.48.0.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)         ESUM='01e57b0ada3dc34b08d2f4644b64244f7a1e9a63cf885f47b9baadf663230b5d';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u432-b06_openj9-0.48.0/ibm-semeru-open-jre_aarch64_linux_8u432b06_openj9-0.48.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='8ba759756722e415ae011bee0c4045f38e2b8e15535488944420fb8c1932d710';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u432-b06_openj9-0.48.0/ibm-semeru-open-jre_ppc64le_linux_8u432b06_openj9-0.48.0.tar.gz';          ;;        amd64|x86_64)          ESUM='b38ef6c7520463822affa424b4ad0e16686b86b01255b0c9912743d3f6e98a73';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u432-b06_openj9-0.48.0/ibm-semeru-open-jre_x64_linux_8u432b06_openj9-0.48.0.tar.gz';          ;;        s390x)          ESUM='5bcb556f2cd0352c14205321afdeac37615249f874ae37e84601287f5eb5be5b';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u432-b06_openj9-0.48.0/ibm-semeru-open-jre_s390x_linux_8u432b06_openj9-0.48.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz; # buildkit
 # Thu, 14 Nov 2024 10:27:45 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Thu, 14 Nov 2024 10:27:45 GMT
@@ -57,80 +57,80 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 ```
 
 -	Layers:
-	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
-		Size: 29.5 MB (29535688 bytes)  
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc6d43d52f0fadc0c8054085669f21e6966c8e185235324c6d5c5d274706495e`  
-		Last Modified: Mon, 18 Nov 2024 19:06:10 GMT  
-		Size: 12.2 MB (12175084 bytes)  
+	-	`sha256:4ea1dfd8224c5929744856017900f3b84053c59b0ec12390d9b456db219f6383`  
+		Last Modified: Mon, 18 Nov 2024 19:05:53 GMT  
+		Size: 16.1 MB (16082647 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b50fecd966d519574f44478eb19455e475c8d924bceb946e48b09e74be64a167`  
-		Last Modified: Mon, 18 Nov 2024 19:06:13 GMT  
-		Size: 218.0 MB (217965683 bytes)  
+	-	`sha256:fac04c7012b444932a39a5d93637c813e71455cc61adde593b67d5d4fa6f99f2`  
+		Last Modified: Mon, 18 Nov 2024 19:05:53 GMT  
+		Size: 50.4 MB (50401639 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7033d9d9900424c2bf075db207f2556656627a8ad3c1d50e4ed3c60907714480`  
-		Last Modified: Mon, 18 Nov 2024 19:06:10 GMT  
-		Size: 6.2 MB (6164789 bytes)  
+	-	`sha256:2f11458886f60069c3778e59dd69a77574fbb17be0c60070cf3003d7b5167951`  
+		Last Modified: Mon, 18 Nov 2024 19:05:53 GMT  
+		Size: 4.3 MB (4295243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `ibm-semeru-runtimes:open-17-jdk-jammy` - unknown; unknown
+### `ibm-semeru-runtimes:open-8u432-b06-jre-focal` - unknown; unknown
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:8c8ca5e0e473bce150fcdb38b97558488097a8bb31c5f7932ad8b6fbf4023222
+$ docker pull ibm-semeru-runtimes@sha256:13e9d09aea0ce061f1a9e8be567a706eec2a251e488504f4342f36cc27f6b0e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3693789 bytes)**  
+-	Total Size: **3.6 MB (3644305 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87d27bd827073e1a8c7a93425ba043817e4e98d4921a368948a3f89e5273a68c`
+-	Image ID: `sha256:4a02eb117ed0df569582df739d57ea6b242d9e8344346652dcd5276bafa545b6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ce842e6527e0f016d95c9d9a61e02679635a8c4b711a670695aa9e13463a7c1d`  
-		Last Modified: Mon, 18 Nov 2024 19:06:10 GMT  
-		Size: 3.7 MB (3669080 bytes)  
+	-	`sha256:2161cc1ca1f55dcf934d38dc121933b0a25cd13f619b869a8fba9d18db104ddb`  
+		Last Modified: Mon, 18 Nov 2024 19:05:53 GMT  
+		Size: 3.6 MB (3620360 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0b36dc9526f319c2238262d0321b0c1e9d52fdf62983db6c1a57ec61a9913f5f`  
-		Last Modified: Mon, 18 Nov 2024 19:06:10 GMT  
-		Size: 24.7 KB (24709 bytes)  
+	-	`sha256:3a6722c537787a4a380b357e95c19d8255c2814eafbf55da2cea2a008b777387`  
+		Last Modified: Mon, 18 Nov 2024 19:05:53 GMT  
+		Size: 23.9 KB (23945 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `ibm-semeru-runtimes:open-17-jdk-jammy` - linux; arm64 variant v8
+### `ibm-semeru-runtimes:open-8u432-b06-jre-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:bb8988c20d8698d74131db718bc39c45bcf5f7bcbc9f1800269f21f2823b3ced
+$ docker pull ibm-semeru-runtimes@sha256:243c583e531946476b9639f414d2af6c282030307d08d1f3a4ae2ef744fafaab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **253.4 MB (253374540 bytes)**  
+-	Total Size: **95.8 MB (95769580 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:572334d6c9b219fe5975ad80fa9747c87015dfdf7d2455d3cf9d92fb1b54225b`
+-	Image ID: `sha256:f6a0d80a6ed38f304c23a6ddc9520fa0b867a0f3f0d436e8e7a87c6ed4316ee0`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 11 Sep 2024 16:26:04 GMT
+# Fri, 11 Oct 2024 03:39:45 GMT
 ARG RELEASE
-# Wed, 11 Sep 2024 16:26:04 GMT
+# Fri, 11 Oct 2024 03:39:45 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 11 Sep 2024 16:26:04 GMT
+# Fri, 11 Oct 2024 03:39:45 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 11 Sep 2024 16:26:04 GMT
-LABEL org.opencontainers.image.version=22.04
-# Wed, 11 Sep 2024 16:26:06 GMT
-ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Wed, 11 Sep 2024 16:26:06 GMT
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
 CMD ["/bin/bash"]
 # Thu, 14 Nov 2024 10:27:45 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Thu, 14 Nov 2024 10:27:45 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 14 Nov 2024 10:27:45 GMT
-ENV JAVA_VERSION=jdk-17.0.13+11_openj9-0.48.0
+ENV JAVA_VERSION=jdk8u432-b06_openj9-0.48.0
 # Thu, 14 Nov 2024 10:27:45 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='77ce078b6040defe6aca3734c8805671866bf7a27008af751542c96dc02bbfe5';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.13%2B11_openj9-0.48.0/ibm-semeru-open-jdk_aarch64_linux_17.0.13_11_openj9-0.48.0.tar.gz';          ;;        amd64|x86_64)          ESUM='0964047f5f4f2419e9c7dee9d2f5d34968dcd271741f4341429ebe3a6fd80cb6';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.13%2B11_openj9-0.48.0/ibm-semeru-open-jdk_x64_linux_17.0.13_11_openj9-0.48.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='73ab5fffa3cb24997a07204b58befc665940639a59b8f4ec831583aac0546a9e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.13%2B11_openj9-0.48.0/ibm-semeru-open-jdk_ppc64le_linux_17.0.13_11_openj9-0.48.0.tar.gz';          ;;        s390x)          ESUM='5e93884fc4103dbaf4e10d6f832d9ca6a7fb2c584d4ec998300307092d4b70ef';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.13%2B11_openj9-0.48.0/ibm-semeru-open-jdk_s390x_linux_17.0.13_11_openj9-0.48.0.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)         ESUM='01e57b0ada3dc34b08d2f4644b64244f7a1e9a63cf885f47b9baadf663230b5d';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u432-b06_openj9-0.48.0/ibm-semeru-open-jre_aarch64_linux_8u432b06_openj9-0.48.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='8ba759756722e415ae011bee0c4045f38e2b8e15535488944420fb8c1932d710';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u432-b06_openj9-0.48.0/ibm-semeru-open-jre_ppc64le_linux_8u432b06_openj9-0.48.0.tar.gz';          ;;        amd64|x86_64)          ESUM='b38ef6c7520463822affa424b4ad0e16686b86b01255b0c9912743d3f6e98a73';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u432-b06_openj9-0.48.0/ibm-semeru-open-jre_x64_linux_8u432b06_openj9-0.48.0.tar.gz';          ;;        s390x)          ESUM='5bcb556f2cd0352c14205321afdeac37615249f874ae37e84601287f5eb5be5b';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u432-b06_openj9-0.48.0/ibm-semeru-open-jre_s390x_linux_8u432b06_openj9-0.48.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz; # buildkit
 # Thu, 14 Nov 2024 10:27:45 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Thu, 14 Nov 2024 10:27:45 GMT
@@ -140,80 +140,80 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 ```
 
 -	Layers:
-	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
-		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
-		Size: 27.4 MB (27358329 bytes)  
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77e2579fa9ed432452dd8563d1dc040de22c49fcfc4a3cd906b5e75b095c2926`  
-		Last Modified: Mon, 18 Nov 2024 19:12:40 GMT  
-		Size: 12.1 MB (12128239 bytes)  
+	-	`sha256:eb1ef414821b192c760ac142f4466c76cf31f2fbfd0e37a74b4ad61c78e57b23`  
+		Last Modified: Mon, 18 Nov 2024 19:10:43 GMT  
+		Size: 15.9 MB (15945040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:832065b4ebc2065c7302444cb237be53cbb6cd13c36561c75e93d0422d6200ef`  
-		Last Modified: Mon, 18 Nov 2024 19:22:40 GMT  
-		Size: 208.1 MB (208069772 bytes)  
+	-	`sha256:79a780f4b04ee5b77c12a5730039adb1b03626a066e7afd1365841a2efea799b`  
+		Last Modified: Mon, 18 Nov 2024 19:13:55 GMT  
+		Size: 49.8 MB (49805625 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:614b26261f064c85efc34e32939b28c7109d58a817ca9cd3c9e53f3db0ed5fe9`  
-		Last Modified: Mon, 18 Nov 2024 19:22:36 GMT  
-		Size: 5.8 MB (5818200 bytes)  
+	-	`sha256:df57e705c7348b030d9debaf7be7edf2d60e45fb05822001e0c326cecbd9c54d`  
+		Last Modified: Mon, 18 Nov 2024 19:13:54 GMT  
+		Size: 4.0 MB (4045087 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `ibm-semeru-runtimes:open-17-jdk-jammy` - unknown; unknown
+### `ibm-semeru-runtimes:open-8u432-b06-jre-focal` - unknown; unknown
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:2a12e5e623a7e2fed2c9669f6ab6644bf25aaca120f671df13dcda2cac32616f
+$ docker pull ibm-semeru-runtimes@sha256:845c5a83a62473fcdc23ff327686737a38b8dc3a165daca1521ce401330b3b2c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3682925 bytes)**  
+-	Total Size: **3.6 MB (3644198 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b15a8aff598ad3c9224e34ade34498b5935c5b85a99225db627bda0b0b773aa3`
+-	Image ID: `sha256:9ef9fc09aa7a8065fbf999072c554a5fd470df94cf716d495411183495adb181`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:90d34c7335e61081db7df9599130f2b9ad9e494e5bc51dc8708e9f53ce88110c`  
-		Last Modified: Mon, 18 Nov 2024 19:22:36 GMT  
-		Size: 3.7 MB (3658082 bytes)  
+	-	`sha256:76b0545b54c3901099a63f5bc2090f4facc70de3be0644df97d79677a54663b4`  
+		Last Modified: Mon, 18 Nov 2024 19:13:54 GMT  
+		Size: 3.6 MB (3620143 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:33f49a80e543968f81e45b44cf723e61969c9422e5665ceda80b8656a7d63245`  
-		Last Modified: Mon, 18 Nov 2024 19:22:35 GMT  
-		Size: 24.8 KB (24843 bytes)  
+	-	`sha256:74f310b598dd2493788af77e3911c29e122b6f11076383d0386a5e77c460d5a8`  
+		Last Modified: Mon, 18 Nov 2024 19:13:53 GMT  
+		Size: 24.1 KB (24055 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `ibm-semeru-runtimes:open-17-jdk-jammy` - linux; ppc64le
+### `ibm-semeru-runtimes:open-8u432-b06-jre-focal` - linux; ppc64le
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:1ba6540e8d3829055f93cc9018401d427beaf1e37c772fa1a310fdfe0bcacd1f
+$ docker pull ibm-semeru-runtimes@sha256:bbd0649ee600d60d453f3f5425450071da4362bb726fd0209bda0d8c09ee650a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **271.6 MB (271629798 bytes)**  
+-	Total Size: **104.6 MB (104608863 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36dda42a81439cc945b63af55501db6a81a7266d1f25950e07185016eebf2d6f`
+-	Image ID: `sha256:a27ec63264ae7ab1e6dae9a7b21f69237a247ceaa7c9051c55be76187e55af2f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 11 Sep 2024 16:25:52 GMT
+# Fri, 11 Oct 2024 03:38:35 GMT
 ARG RELEASE
-# Wed, 11 Sep 2024 16:25:52 GMT
+# Fri, 11 Oct 2024 03:38:35 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 11 Sep 2024 16:25:52 GMT
+# Fri, 11 Oct 2024 03:38:35 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 11 Sep 2024 16:25:53 GMT
-LABEL org.opencontainers.image.version=22.04
-# Wed, 11 Sep 2024 16:25:57 GMT
-ADD file:8b71bf5e48ac3a761ff94511892207fd277c013e3c67b735b87f7338e62bb1f3 in / 
-# Wed, 11 Sep 2024 16:25:57 GMT
+# Fri, 11 Oct 2024 03:38:35 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:38 GMT
+ADD file:869a92a1e06a4985a0281417502ee0c0d8ba6cc4e0b72062dd8e4eb87833bae7 in / 
+# Fri, 11 Oct 2024 03:38:39 GMT
 CMD ["/bin/bash"]
 # Thu, 14 Nov 2024 10:27:45 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Thu, 14 Nov 2024 10:27:45 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 14 Nov 2024 10:27:45 GMT
-ENV JAVA_VERSION=jdk-17.0.13+11_openj9-0.48.0
+ENV JAVA_VERSION=jdk8u432-b06_openj9-0.48.0
 # Thu, 14 Nov 2024 10:27:45 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='77ce078b6040defe6aca3734c8805671866bf7a27008af751542c96dc02bbfe5';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.13%2B11_openj9-0.48.0/ibm-semeru-open-jdk_aarch64_linux_17.0.13_11_openj9-0.48.0.tar.gz';          ;;        amd64|x86_64)          ESUM='0964047f5f4f2419e9c7dee9d2f5d34968dcd271741f4341429ebe3a6fd80cb6';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.13%2B11_openj9-0.48.0/ibm-semeru-open-jdk_x64_linux_17.0.13_11_openj9-0.48.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='73ab5fffa3cb24997a07204b58befc665940639a59b8f4ec831583aac0546a9e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.13%2B11_openj9-0.48.0/ibm-semeru-open-jdk_ppc64le_linux_17.0.13_11_openj9-0.48.0.tar.gz';          ;;        s390x)          ESUM='5e93884fc4103dbaf4e10d6f832d9ca6a7fb2c584d4ec998300307092d4b70ef';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.13%2B11_openj9-0.48.0/ibm-semeru-open-jdk_s390x_linux_17.0.13_11_openj9-0.48.0.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)         ESUM='01e57b0ada3dc34b08d2f4644b64244f7a1e9a63cf885f47b9baadf663230b5d';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u432-b06_openj9-0.48.0/ibm-semeru-open-jre_aarch64_linux_8u432b06_openj9-0.48.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='8ba759756722e415ae011bee0c4045f38e2b8e15535488944420fb8c1932d710';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u432-b06_openj9-0.48.0/ibm-semeru-open-jre_ppc64le_linux_8u432b06_openj9-0.48.0.tar.gz';          ;;        amd64|x86_64)          ESUM='b38ef6c7520463822affa424b4ad0e16686b86b01255b0c9912743d3f6e98a73';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u432-b06_openj9-0.48.0/ibm-semeru-open-jre_x64_linux_8u432b06_openj9-0.48.0.tar.gz';          ;;        s390x)          ESUM='5bcb556f2cd0352c14205321afdeac37615249f874ae37e84601287f5eb5be5b';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u432-b06_openj9-0.48.0/ibm-semeru-open-jre_s390x_linux_8u432b06_openj9-0.48.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz; # buildkit
 # Thu, 14 Nov 2024 10:27:45 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Thu, 14 Nov 2024 10:27:45 GMT
@@ -223,80 +223,80 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 ```
 
 -	Layers:
-	-	`sha256:bd389594e541fc722f244791a495e1a62a526cb95daeea3d2304d9be4e2f0e2a`  
-		Last Modified: Wed, 11 Sep 2024 17:24:59 GMT  
-		Size: 34.4 MB (34448242 bytes)  
+	-	`sha256:cd720328ce8da41e08a7dd5922261b0c1980c2565df21b810488c55260400f68`  
+		Last Modified: Fri, 11 Oct 2024 04:41:42 GMT  
+		Size: 32.1 MB (32076506 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4d6230a31e14b4a918b32fc7a3b685fad8ecafe0901deee916736d3e6f4db6ad`  
-		Last Modified: Tue, 17 Sep 2024 01:15:01 GMT  
-		Size: 12.9 MB (12888132 bytes)  
+	-	`sha256:7c03062ba6cc89d48fbed8c001c307b5b41e0a5f776a5ecb43457bcbf48b0c0d`  
+		Last Modified: Mon, 04 Nov 2024 22:05:24 GMT  
+		Size: 17.3 MB (17256542 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d21bd0b4ca84543db0f6212f9fd9cba9506ed6531dfc31d4f4e9ed2c5095a84f`  
-		Last Modified: Mon, 18 Nov 2024 19:21:28 GMT  
-		Size: 219.4 MB (219364644 bytes)  
+	-	`sha256:6b6e8a0dfb05fbfb8d5f4430d16254b1403d32cbcf3e506dd343bc0566fadfd2`  
+		Last Modified: Mon, 18 Nov 2024 19:10:10 GMT  
+		Size: 51.8 MB (51803595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2623a33ddf815399eaafec6549db1f59382ebff8cb281cb3aa022e3e115dc6c`  
-		Last Modified: Mon, 18 Nov 2024 19:21:21 GMT  
-		Size: 4.9 MB (4928780 bytes)  
+	-	`sha256:5c4ca1b23a61783df25fb22b60ceb3c16419a18209feca4d535017658e7317fe`  
+		Last Modified: Mon, 18 Nov 2024 19:10:08 GMT  
+		Size: 3.5 MB (3472220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `ibm-semeru-runtimes:open-17-jdk-jammy` - unknown; unknown
+### `ibm-semeru-runtimes:open-8u432-b06-jre-focal` - unknown; unknown
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:a089a35a829971b3d8eed0a5bd03e3a52522009ec8dc475e7c27814812686e55
+$ docker pull ibm-semeru-runtimes@sha256:2528c309235efadca105a29ace3444edd425b7153a225ddf4a328cebe0234b93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3688717 bytes)**  
+-	Total Size: **3.6 MB (3648942 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c8e69d76db781dc03440009e9dc9a00fd71841df9840b07f033d9c52158823b5`
+-	Image ID: `sha256:b02d8857363c7bebd61719401f7c8c836043aa858286be5826e1a729f1400164`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a867a7bcedeeded479856cf3c4d2b1cb9d1da3b72e6fd19c2de3e9188c2e9756`  
-		Last Modified: Mon, 18 Nov 2024 19:21:21 GMT  
-		Size: 3.7 MB (3663960 bytes)  
+	-	`sha256:b6063ad2cfbda4ef15ed978594d118e4072ad8c53bd761e258aac3cc8005ffa9`  
+		Last Modified: Mon, 18 Nov 2024 19:10:08 GMT  
+		Size: 3.6 MB (3624961 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7174f6e682bc31621a149c694de6d3cea89c5a188d39cc8d87cfce696ffbcb05`  
-		Last Modified: Mon, 18 Nov 2024 19:21:20 GMT  
-		Size: 24.8 KB (24757 bytes)  
+	-	`sha256:34557b048cf8144da9aa8de27a9f493d34e3f9ab42d3670bf7d5428ec72b144d`  
+		Last Modified: Mon, 18 Nov 2024 19:10:08 GMT  
+		Size: 24.0 KB (23981 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `ibm-semeru-runtimes:open-17-jdk-jammy` - linux; s390x
+### `ibm-semeru-runtimes:open-8u432-b06-jre-focal` - linux; s390x
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:13b1b443de00b732a427fb8925867f18dad985bfb18ff99f34fd89c3c2d957b2
+$ docker pull ibm-semeru-runtimes@sha256:384659b2cc8799df86e3d0d1b36a0b8488ab2bda20b6c0454d031b4382608a54
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **260.8 MB (260793086 bytes)**  
+-	Total Size: **96.9 MB (96855512 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aaa9189d76f4ef892114ca8fb7cd0966a13b91326b871ff47c4ade0ca037512a`
+-	Image ID: `sha256:20b74e1795a87123182f0877b5bf932f08cdcccdcca8fb1b949931c08c838a03`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 11 Sep 2024 16:25:31 GMT
+# Fri, 11 Oct 2024 03:38:23 GMT
 ARG RELEASE
-# Wed, 11 Sep 2024 16:25:31 GMT
+# Fri, 11 Oct 2024 03:38:23 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 11 Sep 2024 16:25:31 GMT
+# Fri, 11 Oct 2024 03:38:23 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 11 Sep 2024 16:25:31 GMT
-LABEL org.opencontainers.image.version=22.04
-# Wed, 11 Sep 2024 16:25:32 GMT
-ADD file:6dc78f1eec678e679ed1d9f92297dbcf99806da788dde329389d5d786006603f in / 
-# Wed, 11 Sep 2024 16:25:32 GMT
+# Fri, 11 Oct 2024 03:38:23 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:24 GMT
+ADD file:e3e9bad1c3576edf8ddea2dd7af2ed8ecac1ad0b15d714dd9c51f679d44d13b6 in / 
+# Fri, 11 Oct 2024 03:38:24 GMT
 CMD ["/bin/bash"]
 # Thu, 14 Nov 2024 10:27:45 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
 # Thu, 14 Nov 2024 10:27:45 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/* # buildkit
 # Thu, 14 Nov 2024 10:27:45 GMT
-ENV JAVA_VERSION=jdk-17.0.13+11_openj9-0.48.0
+ENV JAVA_VERSION=jdk8u432-b06_openj9-0.48.0
 # Thu, 14 Nov 2024 10:27:45 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='77ce078b6040defe6aca3734c8805671866bf7a27008af751542c96dc02bbfe5';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.13%2B11_openj9-0.48.0/ibm-semeru-open-jdk_aarch64_linux_17.0.13_11_openj9-0.48.0.tar.gz';          ;;        amd64|x86_64)          ESUM='0964047f5f4f2419e9c7dee9d2f5d34968dcd271741f4341429ebe3a6fd80cb6';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.13%2B11_openj9-0.48.0/ibm-semeru-open-jdk_x64_linux_17.0.13_11_openj9-0.48.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='73ab5fffa3cb24997a07204b58befc665940639a59b8f4ec831583aac0546a9e';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.13%2B11_openj9-0.48.0/ibm-semeru-open-jdk_ppc64le_linux_17.0.13_11_openj9-0.48.0.tar.gz';          ;;        s390x)          ESUM='5e93884fc4103dbaf4e10d6f832d9ca6a7fb2c584d4ec998300307092d4b70ef';          BINARY_URL='https://github.com/ibmruntimes/semeru17-binaries/releases/download/jdk-17.0.13%2B11_openj9-0.48.0/ibm-semeru-open-jdk_s390x_linux_17.0.13_11_openj9-0.48.0.tar.gz';          ;;       *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)         ESUM='01e57b0ada3dc34b08d2f4644b64244f7a1e9a63cf885f47b9baadf663230b5d';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u432-b06_openj9-0.48.0/ibm-semeru-open-jre_aarch64_linux_8u432b06_openj9-0.48.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='8ba759756722e415ae011bee0c4045f38e2b8e15535488944420fb8c1932d710';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u432-b06_openj9-0.48.0/ibm-semeru-open-jre_ppc64le_linux_8u432b06_openj9-0.48.0.tar.gz';          ;;        amd64|x86_64)          ESUM='b38ef6c7520463822affa424b4ad0e16686b86b01255b0c9912743d3f6e98a73';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u432-b06_openj9-0.48.0/ibm-semeru-open-jre_x64_linux_8u432b06_openj9-0.48.0.tar.gz';          ;;        s390x)          ESUM='5bcb556f2cd0352c14205321afdeac37615249f874ae37e84601287f5eb5be5b';          BINARY_URL='https://github.com/ibmruntimes/semeru8-binaries/releases/download/jdk8u432-b06_openj9-0.48.0/ibm-semeru-open-jre_s390x_linux_8u432b06_openj9-0.48.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz; # buildkit
 # Thu, 14 Nov 2024 10:27:45 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Thu, 14 Nov 2024 10:27:45 GMT
@@ -306,43 +306,43 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 ```
 
 -	Layers:
-	-	`sha256:41e9fbd89079d8e47609ae158236d59896fd2503db1ebdfef058864054170e01`  
-		Last Modified: Wed, 11 Sep 2024 17:25:11 GMT  
-		Size: 28.0 MB (28001475 bytes)  
+	-	`sha256:f6b14778eb4fed5cbb0bd80eea19d48526571f3b2dfa0196faf63f42fdb8c6c2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:53 GMT  
+		Size: 26.4 MB (26365979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19d7fcbb74a18dbda1a95a881c01c2cc4d8a0d6fe38b3b4f8b5899f281f9815e`  
-		Last Modified: Tue, 17 Sep 2024 01:57:02 GMT  
-		Size: 12.2 MB (12203759 bytes)  
+	-	`sha256:ae76440d6755e318199681b6d987a4b8660d5945e0ea29db0a034c2ad4c00548`  
+		Last Modified: Mon, 04 Nov 2024 22:07:59 GMT  
+		Size: 15.8 MB (15773072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9cc9560723ec51c8b7e8657adc3e5bf9e3965c9b93235839a6670fafe8a2f3c`  
-		Last Modified: Mon, 18 Nov 2024 19:43:45 GMT  
-		Size: 214.4 MB (214416365 bytes)  
+	-	`sha256:92a616bbd7359c48be78fdb083a3790dc1b67ba9c9e3a7cf0c3f4b4080e09c0d`  
+		Last Modified: Mon, 18 Nov 2024 19:33:21 GMT  
+		Size: 50.3 MB (50340179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f381e37a30e05bcaa0b397899d5252f5a366e469ac68608c007e0e48aa52e587`  
-		Last Modified: Mon, 18 Nov 2024 19:43:42 GMT  
-		Size: 6.2 MB (6171487 bytes)  
+	-	`sha256:101f77881de620f800da9513d88cd6dad3892af7253684866e0898f96230e3b4`  
+		Last Modified: Mon, 18 Nov 2024 19:33:20 GMT  
+		Size: 4.4 MB (4376282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `ibm-semeru-runtimes:open-17-jdk-jammy` - unknown; unknown
+### `ibm-semeru-runtimes:open-8u432-b06-jre-focal` - unknown; unknown
 
 ```console
-$ docker pull ibm-semeru-runtimes@sha256:5bdbb3e2a0fc7c38807c6101cf4afd10598f8111919aba505456b05db05ff9b1
+$ docker pull ibm-semeru-runtimes@sha256:8f38769ecf1ec136367b177e70121671cbbb9f687b1c2f7388286c6ce7c9151c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3686391 bytes)**  
+-	Total Size: **3.6 MB (3645726 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c6e0944358acfd0d4baee29e7c136a64b64945f0c813212db3f798e928ca4c5d`
+-	Image ID: `sha256:cfbdfe8a0474a26955fb977948bf5ceb2425f975299d4d812961d242d6941152`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1584b60f0abeb4327e77a23f2dea931d3d0efeec5e7e835495439b92a0d9036a`  
-		Last Modified: Mon, 18 Nov 2024 19:43:42 GMT  
-		Size: 3.7 MB (3661682 bytes)  
+	-	`sha256:283085032013c5faff02f8936501b4c7311c3f09006dfb7b977be8120fc9d733`  
+		Last Modified: Mon, 18 Nov 2024 19:33:20 GMT  
+		Size: 3.6 MB (3621781 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c4da1d08460c64fc4d48064c502b1d51816d052772e7a68134658723837cdcda`  
-		Last Modified: Mon, 18 Nov 2024 19:43:42 GMT  
-		Size: 24.7 KB (24709 bytes)  
+	-	`sha256:09d08973f3e5509db9ffb919a2d177ba5e12fc109bfc393599ed87e7d19df8ff`  
+		Last Modified: Mon, 18 Nov 2024 19:33:19 GMT  
+		Size: 23.9 KB (23945 bytes)  
 		MIME: application/vnd.in-toto+json
