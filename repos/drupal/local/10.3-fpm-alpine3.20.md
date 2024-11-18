@@ -1,9 +1,9 @@
-# `drupal:10.3.7-php8.2-fpm-alpine3.20`
+# `drupal:10.3.8-php8.2-fpm-alpine3.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e4a99783e8678d1ed3ed3a91bd7aa997ce59b422ed144341238b68a5106b771e`
-- Created: `2024-11-07T10:27:22Z`
+- Image ID: `sha256:f802639bc5ec2d86f7f8ed122acf8139dca4c61a7a3193c9634ebb38e2e71b80`
+- Created: `2024-11-12T16:27:18Z`
 - Virtual Size: ~ 182.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.2.25.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.25.tar.xz.asc`
   - `PHP_SHA256=330b54876ea1d05ade12ee9726167332058bccd58dffa1d4e12117f6b4f616b9`
-  - `DRUPAL_VERSION=10.3.7`
+  - `DRUPAL_VERSION=10.3.8`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `apk` (`.apk`-based packages)
@@ -216,16 +216,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.10.1-r0 description:
+curl-8.11.0-r2 description:
 URL retrival utility and library
 
-curl-8.10.1-r0 webpage:
+curl-8.11.0-r2 webpage:
 https://curl.se/
 
-curl-8.10.1-r0 installed size:
-252 KiB
+curl-8.11.0-r2 installed size:
+256 KiB
 
-curl-8.10.1-r0 license:
+curl-8.11.0-r2 license:
 curl
 
 ```
@@ -318,16 +318,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.10.1-r0 description:
+libcurl-8.11.0-r2 description:
 The multiprotocol file transfer library
 
-libcurl-8.10.1-r0 webpage:
+libcurl-8.11.0-r2 webpage:
 https://curl.se/
 
-libcurl-8.10.1-r0 installed size:
-644 KiB
+libcurl-8.11.0-r2 installed size:
+636 KiB
 
-libcurl-8.10.1-r0 license:
+libcurl-8.11.0-r2 license:
 curl
 
 ```
