@@ -9159,11 +9159,21 @@ $ docker pull cassandra@sha256:e46ed4f602fbcc90235cd1844e9ddfdf7537ddbe5d0b64987
 
 ## `cassandra:4.0.15`
 
-**does not exist** (yet?)
+```console
+$ docker pull cassandra@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `cassandra:4.0.15-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull cassandra@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `cassandra:4.1`
 
