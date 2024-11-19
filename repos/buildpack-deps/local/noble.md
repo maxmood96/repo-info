@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:34bda0190071cc444553b7a709fd8cd57d63a7c2c2186ba13b47282c6abd6acb`
+- Image ID: `sha256:82589fbbc3626a0332cec0738858c13ddaefb8af7f97cb915c4d791a6dce21d3`
 - Created: `2024-05-22T20:42:04Z`
-- Virtual Size: ~ 817.57 Mb  
+- Virtual Size: ~ 814.02 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -1486,20 +1486,20 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `krb5=1.20.1-6ubuntu2.1`
+### `dpkg` source package: `krb5=1.20.1-6ubuntu2.2`
 
 Binary Packages:
 
-- `krb5-multidev:amd64=1.20.1-6ubuntu2.1`
-- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2.1`
-- `libgssrpc4t64:amd64=1.20.1-6ubuntu2.1`
-- `libk5crypto3:amd64=1.20.1-6ubuntu2.1`
-- `libkadm5clnt-mit12:amd64=1.20.1-6ubuntu2.1`
-- `libkadm5srv-mit12:amd64=1.20.1-6ubuntu2.1`
-- `libkdb5-10t64:amd64=1.20.1-6ubuntu2.1`
-- `libkrb5-3:amd64=1.20.1-6ubuntu2.1`
-- `libkrb5-dev:amd64=1.20.1-6ubuntu2.1`
-- `libkrb5support0:amd64=1.20.1-6ubuntu2.1`
+- `krb5-multidev:amd64=1.20.1-6ubuntu2.2`
+- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2.2`
+- `libgssrpc4t64:amd64=1.20.1-6ubuntu2.2`
+- `libk5crypto3:amd64=1.20.1-6ubuntu2.2`
+- `libkadm5clnt-mit12:amd64=1.20.1-6ubuntu2.2`
+- `libkadm5srv-mit12:amd64=1.20.1-6ubuntu2.2`
+- `libkdb5-10t64:amd64=1.20.1-6ubuntu2.2`
+- `libkrb5-3:amd64=1.20.1-6ubuntu2.2`
+- `libkrb5-dev:amd64=1.20.1-6ubuntu2.2`
+- `libkrb5support0:amd64=1.20.1-6ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libgssrpc4t64/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkadm5clnt-mit12/copyright`, `/usr/share/doc/libkadm5srv-mit12/copyright`, `/usr/share/doc/libkdb5-10t64/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5-dev/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1855,13 +1855,13 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `libheif=1.17.6-1ubuntu4`
+### `dpkg` source package: `libheif=1.17.6-1ubuntu4.1`
 
 Binary Packages:
 
-- `libheif-plugin-aomdec:amd64=1.17.6-1ubuntu4`
-- `libheif-plugin-libde265:amd64=1.17.6-1ubuntu4`
-- `libheif1:amd64=1.17.6-1ubuntu4`
+- `libheif-plugin-aomdec:amd64=1.17.6-1ubuntu4.1`
+- `libheif-plugin-libde265:amd64=1.17.6-1ubuntu4.1`
+- `libheif1:amd64=1.17.6-1ubuntu4.1`
 
 Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/share/doc/libheif-plugin-libde265/copyright`, `/usr/share/doc/libheif1/copyright`)
 
@@ -2544,11 +2544,11 @@ Licenses: (parsed from: `/usr/share/doc/libzstd-dev/copyright`, `/usr/share/doc/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `linux=6.8.0-47.47`
+### `dpkg` source package: `linux=6.8.0-48.48`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-47.47`
+- `linux-libc-dev:amd64=6.8.0-48.48`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2750,12 +2750,12 @@ Licenses: (parsed from: `/usr/share/doc/libmpfr6/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mysql-8.0=8.0.39-0ubuntu0.24.04.2`
+### `dpkg` source package: `mysql-8.0=8.0.40-0ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=8.0.39-0ubuntu0.24.04.2`
-- `libmysqlclient21:amd64=8.0.39-0ubuntu0.24.04.2`
+- `libmysqlclient-dev=8.0.40-0ubuntu0.24.04.1`
+- `libmysqlclient21:amd64=8.0.40-0ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient21/copyright`)
 
@@ -2906,12 +2906,12 @@ Licenses: (parsed from: `/usr/share/doc/libopenexr-3-1-30/copyright`, `/usr/shar
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openjpeg2=2.5.0-2ubuntu0.1`
+### `dpkg` source package: `openjpeg2=2.5.0-2ubuntu0.2`
 
 Binary Packages:
 
-- `libopenjp2-7:amd64=2.5.0-2ubuntu0.1`
-- `libopenjp2-7-dev:amd64=2.5.0-2ubuntu0.1`
+- `libopenjp2-7:amd64=2.5.0-2ubuntu0.2`
+- `libopenjp2-7-dev:amd64=2.5.0-2ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc/libopenjp2-7-dev/copyright`)
 
@@ -2929,11 +2929,11 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openldap=2.6.7+dfsg-1~exp1ubuntu8`
+### `dpkg` source package: `openldap=2.6.7+dfsg-1~exp1ubuntu8.1`
 
 Binary Packages:
 
-- `libldap2:amd64=2.6.7+dfsg-1~exp1ubuntu8`
+- `libldap2:amd64=2.6.7+dfsg-1~exp1ubuntu8.1`
 
 Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dc073b53d6ac3a55820ef7f37b3b01f8eab8d306c872ee6dd8cc8c3273bfb59a`
+- Image ID: `sha256:dee0b65c56e0a1b3c483fa616dd56fb948fa1bed194753f7c8917ff7273d0134`
 - Created: `2024-05-22T20:42:04Z`
-- Virtual Size: ~ 250.91 Mb  
+- Virtual Size: ~ 250.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -527,13 +527,13 @@ Licenses: (parsed from: `/usr/share/doc/findutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `gcc-14=14-20240412-0ubuntu1`
+### `dpkg` source package: `gcc-14=14.2.0-4ubuntu2~24.04`
 
 Binary Packages:
 
-- `gcc-14-base:amd64=14-20240412-0ubuntu1`
-- `libgcc-s1:amd64=14-20240412-0ubuntu1`
-- `libstdc++6:amd64=14-20240412-0ubuntu1`
+- `gcc-14-base:amd64=14.2.0-4ubuntu2~24.04`
+- `libgcc-s1:amd64=14.2.0-4ubuntu2~24.04`
+- `libstdc++6:amd64=14.2.0-4ubuntu2~24.04`
 
 Licenses: (parsed from: `/usr/share/doc/gcc-14-base/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libstdc++6/copyright`)
 
@@ -777,14 +777,14 @@ Licenses: (parsed from: `/usr/share/doc/libkeyutils1/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `krb5=1.20.1-6ubuntu2.1`
+### `dpkg` source package: `krb5=1.20.1-6ubuntu2.2`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2.1`
-- `libk5crypto3:amd64=1.20.1-6ubuntu2.1`
-- `libkrb5-3:amd64=1.20.1-6ubuntu2.1`
-- `libkrb5support0:amd64=1.20.1-6ubuntu2.1`
+- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2.2`
+- `libk5crypto3:amd64=1.20.1-6ubuntu2.2`
+- `libkrb5-3:amd64=1.20.1-6ubuntu2.2`
+- `libkrb5support0:amd64=1.20.1-6ubuntu2.2`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
@@ -1393,11 +1393,11 @@ Licenses: (parsed from: `/usr/share/doc/libnpth0t64/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openldap=2.6.7+dfsg-1~exp1ubuntu8`
+### `dpkg` source package: `openldap=2.6.7+dfsg-1~exp1ubuntu8.1`
 
 Binary Packages:
 
-- `libldap2:amd64=2.6.7+dfsg-1~exp1ubuntu8`
+- `libldap2:amd64=2.6.7+dfsg-1~exp1ubuntu8.1`
 
 Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 
