@@ -36,7 +36,7 @@
 ## `clickhouse:24`
 
 ```console
-$ docker pull clickhouse@sha256:7bc9fa5ec703a95ffd5a2c6a271dab034aa0637dbc2fefbd5fc57e3283bec064
+$ docker pull clickhouse@sha256:aa887dfaa8d915a18ad93d25cef0334138ffeeb386353600ed90ecf07ff4eb5c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -49,13 +49,13 @@ $ docker pull clickhouse@sha256:7bc9fa5ec703a95ffd5a2c6a271dab034aa0637dbc2fefbd
 ### `clickhouse:24` - linux; amd64
 
 ```console
-$ docker pull clickhouse@sha256:be2eb6602bb634c641a26de50062bc6db4a413fc5f8e2d30d69e63ae218c9300
+$ docker pull clickhouse@sha256:3073efa0428c680834cf03dd2428fac3408a8a60310cd0613f51731eb25bcdb2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **180.5 MB (180502273 bytes)**  
+-	Total Size: **180.6 MB (180553647 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:780779b097fba8e76a39d39f0f34ce2e5bd628429919a69180f6c2f235a7e799`
+-	Image ID: `sha256:33410aa159ab43ebeaa868575df2dc69997cf9bbc495f419df632b5938060b2e`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -71,48 +71,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
 # Fri, 11 Oct 2024 03:38:27 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.10.1.2812
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -121,65 +121,65 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7111f8833bc453e9ec8c2ebf32ac32b825681a3b9b8e372c9e3398f52bb2d7bc`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 8.8 MB (8802605 bytes)  
+	-	`sha256:e11845068165d574aa2798c6158bf4904622cd7aff2c5675c6643ff0ba4fda74`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 8.8 MB (8802587 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c21f8f8706bb6e315bd1248a431189fb5403141581d2dd8c747495194028dc0`  
-		Last Modified: Tue, 12 Nov 2024 00:55:36 GMT  
-		Size: 143.3 MB (143321321 bytes)  
+	-	`sha256:5feec6ebdd2d272ba4886d83efac935f56f806e73e527a868a28138c61e67718`  
+		Last Modified: Mon, 18 Nov 2024 21:06:08 GMT  
+		Size: 143.4 MB (143372719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4048caa8e9536cbc81bd812da3ddbfcf0c242bc84e0aae8e5b62218311ada6f`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 187.0 B  
+	-	`sha256:1dfeab913ab2cc5b1eae6e120652382b1e4419e753305cbecd10ed1fd65a4bc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18cef3cb7c9b8b7831050f192376fb3ec2e596319cbb7f00ab13fac740d9b429`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 863.5 KB (863478 bytes)  
+	-	`sha256:c2e1a6ccef3905d7f4b64758101a5566220595da9cd94b3a8efe3c7c3d500827`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 863.5 KB (863474 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7326086bcd43354f495c22f41a1362e035b86efb1231658cc777d828e06c09b5`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
+	-	`sha256:52154b45f848fae4d6dc15923fd51d332c33b0e778b1c11e06eb83e661dd7a95`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be0c972525eaadda0b5d220a60713fe6ae4aed202d0ce097494dd54d4cbddf88`  
-		Last Modified: Tue, 12 Nov 2024 00:55:35 GMT  
-		Size: 362.0 B  
+	-	`sha256:b265890db07ff12d8c1d5226fa954754fc2424e3c212fb8ec6357953893fe05f`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 363.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aaab0e4e89c886c68156494d0d15588424bdb261b6c099366489de19a967e3ea`  
-		Last Modified: Tue, 12 Nov 2024 00:55:35 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:ff950eeed9b85019e89aaffe2962b82fdbc03b54f59941891af221eb1511d3a4`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 3.1 KB (3143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:30fec73f163c700239a92f41e19b9f40da215af99c5ca19bc44ce23749fe999b
+$ docker pull clickhouse@sha256:064a3c846ada78d4c69bda131ebe8c761653440c1cc0f3585a7a48d399021fad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.5 KB (26526 bytes)**  
+-	Total Size: **26.5 KB (26499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32c0598285c843a368616c4153906d3ac3f653d3bfb236c35369f61c93ff8f72`
+-	Image ID: `sha256:37c888f3eb66030483fa7a082a00d60e89b78ac7a1f1e67da42a74eca0169fae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1e1412d68f0c82d49f7df302740602685430eae38a51dff2f5622494b8ef7716`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 26.5 KB (26526 bytes)  
+	-	`sha256:f50539b9c37f17df612e4afdb20de110705ae3090a3db1da1b402faa4f251cc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:05 GMT  
+		Size: 26.5 KB (26499 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clickhouse:24` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:6eae6f07acede5586409eb0529970b5e8bbb650dbaf17e39c4efbb144757a6cd
+$ docker pull clickhouse@sha256:f36884dc6d24d60a9bb6c320e8a052190ae2358d8f66efc4c71ad5ffa4638d72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.2 MB (174163120 bytes)**  
+-	Total Size: **174.2 MB (174195698 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d854e5fd0220b4126259e851b7ba390e22ab2b139704525b4329d29c0a7db8e3`
+-	Image ID: `sha256:a68ae827e8dcb485e903cb0057678535df1e43de4da3302cf7efd6fb2bcb936e`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -195,48 +195,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
 # Fri, 11 Oct 2024 03:39:47 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.10.1.2812
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -245,59 +245,59 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23ba974f84eb2fc21ccc6b14da8a5b6116a1131bd64b71ae6fb6023c06759053`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
-		Size: 8.7 MB (8662321 bytes)  
+	-	`sha256:a86846b838547ebb3f9804d50f4fe8eb4f6bfeff8d4821e1998c250e0dfd1a11`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 8.7 MB (8662233 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0f0a0c59e6c74754aaf916f8b6df9f98cffb99cb60e3ff6958bfafbe40c7254`  
-		Last Modified: Tue, 12 Nov 2024 01:06:54 GMT  
-		Size: 138.7 MB (138659691 bytes)  
+	-	`sha256:b7371f123ab3df4a130514d8f7597c2f06a212dda18e5943a8eb98574c2d0b52`  
+		Last Modified: Mon, 18 Nov 2024 20:05:57 GMT  
+		Size: 138.7 MB (138692361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6adb863b4b4c69d8d08447ff2f92bde3bf58985fd69c6d0272273bfe6c682c8a`  
-		Last Modified: Tue, 12 Nov 2024 01:06:50 GMT  
-		Size: 184.0 B  
+	-	`sha256:a627ba3ba9c0dd7675bded26bee97be800d7ae7233b65cc5e87dec6385d6d684`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d046b9b6fb2887e045118fa7b549f271dd6834e27a1a81bec062a420becc2333`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
-		Size: 863.5 KB (863474 bytes)  
+	-	`sha256:e7eab81eafda560d04753033a7793b0fbad07c01a37f4e1fa1b6cbb5d57fbe8d`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 863.5 KB (863471 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79602d6db082d0d6dd1cc2f9451cf185d6d2ae4746da01fcbbddfe11250b70ce`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
+	-	`sha256:81b4918a2555f120c31a57c5c66f22600ab0bc3d121542385b9eb52b639f3796`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9521f306a3451bfc3d658df655e47b14b6dfe1fa8a4ee01fa7239d256513d150`  
-		Last Modified: Tue, 12 Nov 2024 01:06:52 GMT  
-		Size: 363.0 B  
+	-	`sha256:d4db6c7d5229f43bb415dcabb1c0fd300ecc1dbfed18d77c6e553ba203fcc0d0`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7419c1b0b1b714719c8c0457161ee358c44e630ee2c264733dad78f1f666faa`  
-		Last Modified: Tue, 12 Nov 2024 01:06:52 GMT  
-		Size: 3.1 KB (3143 bytes)  
+	-	`sha256:c30b9bec89bc291fd156ad60a897a8bc119acda2d3294db0909a7abb9b7aa124`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 3.1 KB (3141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:53da8ae3932d2be58b4497df239aa92f12380d79a3046061686fb1473f1c482f
+$ docker pull clickhouse@sha256:2f77217c545db83c44c23cc6abdf4f34ce68265d9e261c4af075dc598e2811bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.8 KB (26762 bytes)**  
+-	Total Size: **26.7 KB (26735 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50c2a42d0eb4773da3eb4d1f61c94f4652b79ba86145e6503c285a87d063c446`
+-	Image ID: `sha256:ca457bdd672219881e4c7f28900a0fb3c0f87120ecf163a2c6fbfddd3eb9cf2d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8a15f595e98190849d608ae4aaf07c44b896636f633ab5818e0c64c15671d1a2`  
-		Last Modified: Tue, 12 Nov 2024 01:06:50 GMT  
-		Size: 26.8 KB (26762 bytes)  
+	-	`sha256:5791af50f4fcfa896eb3c0edf644ae24c07abc17fd5982c1cbb1724b8ede7636`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 26.7 KB (26735 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24-focal`
 
 ```console
-$ docker pull clickhouse@sha256:7bc9fa5ec703a95ffd5a2c6a271dab034aa0637dbc2fefbd5fc57e3283bec064
+$ docker pull clickhouse@sha256:aa887dfaa8d915a18ad93d25cef0334138ffeeb386353600ed90ecf07ff4eb5c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -310,13 +310,13 @@ $ docker pull clickhouse@sha256:7bc9fa5ec703a95ffd5a2c6a271dab034aa0637dbc2fefbd
 ### `clickhouse:24-focal` - linux; amd64
 
 ```console
-$ docker pull clickhouse@sha256:be2eb6602bb634c641a26de50062bc6db4a413fc5f8e2d30d69e63ae218c9300
+$ docker pull clickhouse@sha256:3073efa0428c680834cf03dd2428fac3408a8a60310cd0613f51731eb25bcdb2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **180.5 MB (180502273 bytes)**  
+-	Total Size: **180.6 MB (180553647 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:780779b097fba8e76a39d39f0f34ce2e5bd628429919a69180f6c2f235a7e799`
+-	Image ID: `sha256:33410aa159ab43ebeaa868575df2dc69997cf9bbc495f419df632b5938060b2e`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -332,48 +332,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
 # Fri, 11 Oct 2024 03:38:27 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.10.1.2812
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -382,65 +382,65 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7111f8833bc453e9ec8c2ebf32ac32b825681a3b9b8e372c9e3398f52bb2d7bc`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 8.8 MB (8802605 bytes)  
+	-	`sha256:e11845068165d574aa2798c6158bf4904622cd7aff2c5675c6643ff0ba4fda74`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 8.8 MB (8802587 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c21f8f8706bb6e315bd1248a431189fb5403141581d2dd8c747495194028dc0`  
-		Last Modified: Tue, 12 Nov 2024 00:55:36 GMT  
-		Size: 143.3 MB (143321321 bytes)  
+	-	`sha256:5feec6ebdd2d272ba4886d83efac935f56f806e73e527a868a28138c61e67718`  
+		Last Modified: Mon, 18 Nov 2024 21:06:08 GMT  
+		Size: 143.4 MB (143372719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4048caa8e9536cbc81bd812da3ddbfcf0c242bc84e0aae8e5b62218311ada6f`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 187.0 B  
+	-	`sha256:1dfeab913ab2cc5b1eae6e120652382b1e4419e753305cbecd10ed1fd65a4bc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18cef3cb7c9b8b7831050f192376fb3ec2e596319cbb7f00ab13fac740d9b429`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 863.5 KB (863478 bytes)  
+	-	`sha256:c2e1a6ccef3905d7f4b64758101a5566220595da9cd94b3a8efe3c7c3d500827`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 863.5 KB (863474 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7326086bcd43354f495c22f41a1362e035b86efb1231658cc777d828e06c09b5`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
+	-	`sha256:52154b45f848fae4d6dc15923fd51d332c33b0e778b1c11e06eb83e661dd7a95`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be0c972525eaadda0b5d220a60713fe6ae4aed202d0ce097494dd54d4cbddf88`  
-		Last Modified: Tue, 12 Nov 2024 00:55:35 GMT  
-		Size: 362.0 B  
+	-	`sha256:b265890db07ff12d8c1d5226fa954754fc2424e3c212fb8ec6357953893fe05f`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 363.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aaab0e4e89c886c68156494d0d15588424bdb261b6c099366489de19a967e3ea`  
-		Last Modified: Tue, 12 Nov 2024 00:55:35 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:ff950eeed9b85019e89aaffe2962b82fdbc03b54f59941891af221eb1511d3a4`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 3.1 KB (3143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24-focal` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:30fec73f163c700239a92f41e19b9f40da215af99c5ca19bc44ce23749fe999b
+$ docker pull clickhouse@sha256:064a3c846ada78d4c69bda131ebe8c761653440c1cc0f3585a7a48d399021fad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.5 KB (26526 bytes)**  
+-	Total Size: **26.5 KB (26499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32c0598285c843a368616c4153906d3ac3f653d3bfb236c35369f61c93ff8f72`
+-	Image ID: `sha256:37c888f3eb66030483fa7a082a00d60e89b78ac7a1f1e67da42a74eca0169fae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1e1412d68f0c82d49f7df302740602685430eae38a51dff2f5622494b8ef7716`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 26.5 KB (26526 bytes)  
+	-	`sha256:f50539b9c37f17df612e4afdb20de110705ae3090a3db1da1b402faa4f251cc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:05 GMT  
+		Size: 26.5 KB (26499 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clickhouse:24-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:6eae6f07acede5586409eb0529970b5e8bbb650dbaf17e39c4efbb144757a6cd
+$ docker pull clickhouse@sha256:f36884dc6d24d60a9bb6c320e8a052190ae2358d8f66efc4c71ad5ffa4638d72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.2 MB (174163120 bytes)**  
+-	Total Size: **174.2 MB (174195698 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d854e5fd0220b4126259e851b7ba390e22ab2b139704525b4329d29c0a7db8e3`
+-	Image ID: `sha256:a68ae827e8dcb485e903cb0057678535df1e43de4da3302cf7efd6fb2bcb936e`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -456,48 +456,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
 # Fri, 11 Oct 2024 03:39:47 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.10.1.2812
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -506,59 +506,59 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23ba974f84eb2fc21ccc6b14da8a5b6116a1131bd64b71ae6fb6023c06759053`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
-		Size: 8.7 MB (8662321 bytes)  
+	-	`sha256:a86846b838547ebb3f9804d50f4fe8eb4f6bfeff8d4821e1998c250e0dfd1a11`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 8.7 MB (8662233 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0f0a0c59e6c74754aaf916f8b6df9f98cffb99cb60e3ff6958bfafbe40c7254`  
-		Last Modified: Tue, 12 Nov 2024 01:06:54 GMT  
-		Size: 138.7 MB (138659691 bytes)  
+	-	`sha256:b7371f123ab3df4a130514d8f7597c2f06a212dda18e5943a8eb98574c2d0b52`  
+		Last Modified: Mon, 18 Nov 2024 20:05:57 GMT  
+		Size: 138.7 MB (138692361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6adb863b4b4c69d8d08447ff2f92bde3bf58985fd69c6d0272273bfe6c682c8a`  
-		Last Modified: Tue, 12 Nov 2024 01:06:50 GMT  
-		Size: 184.0 B  
+	-	`sha256:a627ba3ba9c0dd7675bded26bee97be800d7ae7233b65cc5e87dec6385d6d684`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d046b9b6fb2887e045118fa7b549f271dd6834e27a1a81bec062a420becc2333`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
-		Size: 863.5 KB (863474 bytes)  
+	-	`sha256:e7eab81eafda560d04753033a7793b0fbad07c01a37f4e1fa1b6cbb5d57fbe8d`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 863.5 KB (863471 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79602d6db082d0d6dd1cc2f9451cf185d6d2ae4746da01fcbbddfe11250b70ce`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
+	-	`sha256:81b4918a2555f120c31a57c5c66f22600ab0bc3d121542385b9eb52b639f3796`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9521f306a3451bfc3d658df655e47b14b6dfe1fa8a4ee01fa7239d256513d150`  
-		Last Modified: Tue, 12 Nov 2024 01:06:52 GMT  
-		Size: 363.0 B  
+	-	`sha256:d4db6c7d5229f43bb415dcabb1c0fd300ecc1dbfed18d77c6e553ba203fcc0d0`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7419c1b0b1b714719c8c0457161ee358c44e630ee2c264733dad78f1f666faa`  
-		Last Modified: Tue, 12 Nov 2024 01:06:52 GMT  
-		Size: 3.1 KB (3143 bytes)  
+	-	`sha256:c30b9bec89bc291fd156ad60a897a8bc119acda2d3294db0909a7abb9b7aa124`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 3.1 KB (3141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24-focal` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:53da8ae3932d2be58b4497df239aa92f12380d79a3046061686fb1473f1c482f
+$ docker pull clickhouse@sha256:2f77217c545db83c44c23cc6abdf4f34ce68265d9e261c4af075dc598e2811bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.8 KB (26762 bytes)**  
+-	Total Size: **26.7 KB (26735 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50c2a42d0eb4773da3eb4d1f61c94f4652b79ba86145e6503c285a87d063c446`
+-	Image ID: `sha256:ca457bdd672219881e4c7f28900a0fb3c0f87120ecf163a2c6fbfddd3eb9cf2d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8a15f595e98190849d608ae4aaf07c44b896636f633ab5818e0c64c15671d1a2`  
-		Last Modified: Tue, 12 Nov 2024 01:06:50 GMT  
-		Size: 26.8 KB (26762 bytes)  
+	-	`sha256:5791af50f4fcfa896eb3c0edf644ae24c07abc17fd5982c1cbb1724b8ede7636`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 26.7 KB (26735 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.10`
 
 ```console
-$ docker pull clickhouse@sha256:7bc9fa5ec703a95ffd5a2c6a271dab034aa0637dbc2fefbd5fc57e3283bec064
+$ docker pull clickhouse@sha256:aa887dfaa8d915a18ad93d25cef0334138ffeeb386353600ed90ecf07ff4eb5c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -571,13 +571,13 @@ $ docker pull clickhouse@sha256:7bc9fa5ec703a95ffd5a2c6a271dab034aa0637dbc2fefbd
 ### `clickhouse:24.10` - linux; amd64
 
 ```console
-$ docker pull clickhouse@sha256:be2eb6602bb634c641a26de50062bc6db4a413fc5f8e2d30d69e63ae218c9300
+$ docker pull clickhouse@sha256:3073efa0428c680834cf03dd2428fac3408a8a60310cd0613f51731eb25bcdb2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **180.5 MB (180502273 bytes)**  
+-	Total Size: **180.6 MB (180553647 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:780779b097fba8e76a39d39f0f34ce2e5bd628429919a69180f6c2f235a7e799`
+-	Image ID: `sha256:33410aa159ab43ebeaa868575df2dc69997cf9bbc495f419df632b5938060b2e`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -593,48 +593,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
 # Fri, 11 Oct 2024 03:38:27 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.10.1.2812
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -643,65 +643,65 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7111f8833bc453e9ec8c2ebf32ac32b825681a3b9b8e372c9e3398f52bb2d7bc`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 8.8 MB (8802605 bytes)  
+	-	`sha256:e11845068165d574aa2798c6158bf4904622cd7aff2c5675c6643ff0ba4fda74`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 8.8 MB (8802587 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c21f8f8706bb6e315bd1248a431189fb5403141581d2dd8c747495194028dc0`  
-		Last Modified: Tue, 12 Nov 2024 00:55:36 GMT  
-		Size: 143.3 MB (143321321 bytes)  
+	-	`sha256:5feec6ebdd2d272ba4886d83efac935f56f806e73e527a868a28138c61e67718`  
+		Last Modified: Mon, 18 Nov 2024 21:06:08 GMT  
+		Size: 143.4 MB (143372719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4048caa8e9536cbc81bd812da3ddbfcf0c242bc84e0aae8e5b62218311ada6f`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 187.0 B  
+	-	`sha256:1dfeab913ab2cc5b1eae6e120652382b1e4419e753305cbecd10ed1fd65a4bc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18cef3cb7c9b8b7831050f192376fb3ec2e596319cbb7f00ab13fac740d9b429`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 863.5 KB (863478 bytes)  
+	-	`sha256:c2e1a6ccef3905d7f4b64758101a5566220595da9cd94b3a8efe3c7c3d500827`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 863.5 KB (863474 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7326086bcd43354f495c22f41a1362e035b86efb1231658cc777d828e06c09b5`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
+	-	`sha256:52154b45f848fae4d6dc15923fd51d332c33b0e778b1c11e06eb83e661dd7a95`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be0c972525eaadda0b5d220a60713fe6ae4aed202d0ce097494dd54d4cbddf88`  
-		Last Modified: Tue, 12 Nov 2024 00:55:35 GMT  
-		Size: 362.0 B  
+	-	`sha256:b265890db07ff12d8c1d5226fa954754fc2424e3c212fb8ec6357953893fe05f`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 363.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aaab0e4e89c886c68156494d0d15588424bdb261b6c099366489de19a967e3ea`  
-		Last Modified: Tue, 12 Nov 2024 00:55:35 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:ff950eeed9b85019e89aaffe2962b82fdbc03b54f59941891af221eb1511d3a4`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 3.1 KB (3143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24.10` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:30fec73f163c700239a92f41e19b9f40da215af99c5ca19bc44ce23749fe999b
+$ docker pull clickhouse@sha256:064a3c846ada78d4c69bda131ebe8c761653440c1cc0f3585a7a48d399021fad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.5 KB (26526 bytes)**  
+-	Total Size: **26.5 KB (26499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32c0598285c843a368616c4153906d3ac3f653d3bfb236c35369f61c93ff8f72`
+-	Image ID: `sha256:37c888f3eb66030483fa7a082a00d60e89b78ac7a1f1e67da42a74eca0169fae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1e1412d68f0c82d49f7df302740602685430eae38a51dff2f5622494b8ef7716`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 26.5 KB (26526 bytes)  
+	-	`sha256:f50539b9c37f17df612e4afdb20de110705ae3090a3db1da1b402faa4f251cc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:05 GMT  
+		Size: 26.5 KB (26499 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clickhouse:24.10` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:6eae6f07acede5586409eb0529970b5e8bbb650dbaf17e39c4efbb144757a6cd
+$ docker pull clickhouse@sha256:f36884dc6d24d60a9bb6c320e8a052190ae2358d8f66efc4c71ad5ffa4638d72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.2 MB (174163120 bytes)**  
+-	Total Size: **174.2 MB (174195698 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d854e5fd0220b4126259e851b7ba390e22ab2b139704525b4329d29c0a7db8e3`
+-	Image ID: `sha256:a68ae827e8dcb485e903cb0057678535df1e43de4da3302cf7efd6fb2bcb936e`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -717,48 +717,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
 # Fri, 11 Oct 2024 03:39:47 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.10.1.2812
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -767,59 +767,59 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23ba974f84eb2fc21ccc6b14da8a5b6116a1131bd64b71ae6fb6023c06759053`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
-		Size: 8.7 MB (8662321 bytes)  
+	-	`sha256:a86846b838547ebb3f9804d50f4fe8eb4f6bfeff8d4821e1998c250e0dfd1a11`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 8.7 MB (8662233 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0f0a0c59e6c74754aaf916f8b6df9f98cffb99cb60e3ff6958bfafbe40c7254`  
-		Last Modified: Tue, 12 Nov 2024 01:06:54 GMT  
-		Size: 138.7 MB (138659691 bytes)  
+	-	`sha256:b7371f123ab3df4a130514d8f7597c2f06a212dda18e5943a8eb98574c2d0b52`  
+		Last Modified: Mon, 18 Nov 2024 20:05:57 GMT  
+		Size: 138.7 MB (138692361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6adb863b4b4c69d8d08447ff2f92bde3bf58985fd69c6d0272273bfe6c682c8a`  
-		Last Modified: Tue, 12 Nov 2024 01:06:50 GMT  
-		Size: 184.0 B  
+	-	`sha256:a627ba3ba9c0dd7675bded26bee97be800d7ae7233b65cc5e87dec6385d6d684`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d046b9b6fb2887e045118fa7b549f271dd6834e27a1a81bec062a420becc2333`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
-		Size: 863.5 KB (863474 bytes)  
+	-	`sha256:e7eab81eafda560d04753033a7793b0fbad07c01a37f4e1fa1b6cbb5d57fbe8d`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 863.5 KB (863471 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79602d6db082d0d6dd1cc2f9451cf185d6d2ae4746da01fcbbddfe11250b70ce`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
+	-	`sha256:81b4918a2555f120c31a57c5c66f22600ab0bc3d121542385b9eb52b639f3796`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9521f306a3451bfc3d658df655e47b14b6dfe1fa8a4ee01fa7239d256513d150`  
-		Last Modified: Tue, 12 Nov 2024 01:06:52 GMT  
-		Size: 363.0 B  
+	-	`sha256:d4db6c7d5229f43bb415dcabb1c0fd300ecc1dbfed18d77c6e553ba203fcc0d0`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7419c1b0b1b714719c8c0457161ee358c44e630ee2c264733dad78f1f666faa`  
-		Last Modified: Tue, 12 Nov 2024 01:06:52 GMT  
-		Size: 3.1 KB (3143 bytes)  
+	-	`sha256:c30b9bec89bc291fd156ad60a897a8bc119acda2d3294db0909a7abb9b7aa124`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 3.1 KB (3141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24.10` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:53da8ae3932d2be58b4497df239aa92f12380d79a3046061686fb1473f1c482f
+$ docker pull clickhouse@sha256:2f77217c545db83c44c23cc6abdf4f34ce68265d9e261c4af075dc598e2811bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.8 KB (26762 bytes)**  
+-	Total Size: **26.7 KB (26735 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50c2a42d0eb4773da3eb4d1f61c94f4652b79ba86145e6503c285a87d063c446`
+-	Image ID: `sha256:ca457bdd672219881e4c7f28900a0fb3c0f87120ecf163a2c6fbfddd3eb9cf2d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8a15f595e98190849d608ae4aaf07c44b896636f633ab5818e0c64c15671d1a2`  
-		Last Modified: Tue, 12 Nov 2024 01:06:50 GMT  
-		Size: 26.8 KB (26762 bytes)  
+	-	`sha256:5791af50f4fcfa896eb3c0edf644ae24c07abc17fd5982c1cbb1724b8ede7636`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 26.7 KB (26735 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.10-focal`
 
 ```console
-$ docker pull clickhouse@sha256:7bc9fa5ec703a95ffd5a2c6a271dab034aa0637dbc2fefbd5fc57e3283bec064
+$ docker pull clickhouse@sha256:aa887dfaa8d915a18ad93d25cef0334138ffeeb386353600ed90ecf07ff4eb5c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -832,13 +832,13 @@ $ docker pull clickhouse@sha256:7bc9fa5ec703a95ffd5a2c6a271dab034aa0637dbc2fefbd
 ### `clickhouse:24.10-focal` - linux; amd64
 
 ```console
-$ docker pull clickhouse@sha256:be2eb6602bb634c641a26de50062bc6db4a413fc5f8e2d30d69e63ae218c9300
+$ docker pull clickhouse@sha256:3073efa0428c680834cf03dd2428fac3408a8a60310cd0613f51731eb25bcdb2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **180.5 MB (180502273 bytes)**  
+-	Total Size: **180.6 MB (180553647 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:780779b097fba8e76a39d39f0f34ce2e5bd628429919a69180f6c2f235a7e799`
+-	Image ID: `sha256:33410aa159ab43ebeaa868575df2dc69997cf9bbc495f419df632b5938060b2e`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -854,48 +854,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
 # Fri, 11 Oct 2024 03:38:27 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.10.1.2812
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -904,65 +904,65 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7111f8833bc453e9ec8c2ebf32ac32b825681a3b9b8e372c9e3398f52bb2d7bc`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 8.8 MB (8802605 bytes)  
+	-	`sha256:e11845068165d574aa2798c6158bf4904622cd7aff2c5675c6643ff0ba4fda74`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 8.8 MB (8802587 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c21f8f8706bb6e315bd1248a431189fb5403141581d2dd8c747495194028dc0`  
-		Last Modified: Tue, 12 Nov 2024 00:55:36 GMT  
-		Size: 143.3 MB (143321321 bytes)  
+	-	`sha256:5feec6ebdd2d272ba4886d83efac935f56f806e73e527a868a28138c61e67718`  
+		Last Modified: Mon, 18 Nov 2024 21:06:08 GMT  
+		Size: 143.4 MB (143372719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4048caa8e9536cbc81bd812da3ddbfcf0c242bc84e0aae8e5b62218311ada6f`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 187.0 B  
+	-	`sha256:1dfeab913ab2cc5b1eae6e120652382b1e4419e753305cbecd10ed1fd65a4bc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18cef3cb7c9b8b7831050f192376fb3ec2e596319cbb7f00ab13fac740d9b429`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 863.5 KB (863478 bytes)  
+	-	`sha256:c2e1a6ccef3905d7f4b64758101a5566220595da9cd94b3a8efe3c7c3d500827`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 863.5 KB (863474 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7326086bcd43354f495c22f41a1362e035b86efb1231658cc777d828e06c09b5`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
+	-	`sha256:52154b45f848fae4d6dc15923fd51d332c33b0e778b1c11e06eb83e661dd7a95`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be0c972525eaadda0b5d220a60713fe6ae4aed202d0ce097494dd54d4cbddf88`  
-		Last Modified: Tue, 12 Nov 2024 00:55:35 GMT  
-		Size: 362.0 B  
+	-	`sha256:b265890db07ff12d8c1d5226fa954754fc2424e3c212fb8ec6357953893fe05f`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 363.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aaab0e4e89c886c68156494d0d15588424bdb261b6c099366489de19a967e3ea`  
-		Last Modified: Tue, 12 Nov 2024 00:55:35 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:ff950eeed9b85019e89aaffe2962b82fdbc03b54f59941891af221eb1511d3a4`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 3.1 KB (3143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24.10-focal` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:30fec73f163c700239a92f41e19b9f40da215af99c5ca19bc44ce23749fe999b
+$ docker pull clickhouse@sha256:064a3c846ada78d4c69bda131ebe8c761653440c1cc0f3585a7a48d399021fad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.5 KB (26526 bytes)**  
+-	Total Size: **26.5 KB (26499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32c0598285c843a368616c4153906d3ac3f653d3bfb236c35369f61c93ff8f72`
+-	Image ID: `sha256:37c888f3eb66030483fa7a082a00d60e89b78ac7a1f1e67da42a74eca0169fae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1e1412d68f0c82d49f7df302740602685430eae38a51dff2f5622494b8ef7716`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 26.5 KB (26526 bytes)  
+	-	`sha256:f50539b9c37f17df612e4afdb20de110705ae3090a3db1da1b402faa4f251cc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:05 GMT  
+		Size: 26.5 KB (26499 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clickhouse:24.10-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:6eae6f07acede5586409eb0529970b5e8bbb650dbaf17e39c4efbb144757a6cd
+$ docker pull clickhouse@sha256:f36884dc6d24d60a9bb6c320e8a052190ae2358d8f66efc4c71ad5ffa4638d72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.2 MB (174163120 bytes)**  
+-	Total Size: **174.2 MB (174195698 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d854e5fd0220b4126259e851b7ba390e22ab2b139704525b4329d29c0a7db8e3`
+-	Image ID: `sha256:a68ae827e8dcb485e903cb0057678535df1e43de4da3302cf7efd6fb2bcb936e`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -978,48 +978,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
 # Fri, 11 Oct 2024 03:39:47 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.10.1.2812
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -1028,95 +1028,1103 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23ba974f84eb2fc21ccc6b14da8a5b6116a1131bd64b71ae6fb6023c06759053`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
-		Size: 8.7 MB (8662321 bytes)  
+	-	`sha256:a86846b838547ebb3f9804d50f4fe8eb4f6bfeff8d4821e1998c250e0dfd1a11`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 8.7 MB (8662233 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0f0a0c59e6c74754aaf916f8b6df9f98cffb99cb60e3ff6958bfafbe40c7254`  
-		Last Modified: Tue, 12 Nov 2024 01:06:54 GMT  
-		Size: 138.7 MB (138659691 bytes)  
+	-	`sha256:b7371f123ab3df4a130514d8f7597c2f06a212dda18e5943a8eb98574c2d0b52`  
+		Last Modified: Mon, 18 Nov 2024 20:05:57 GMT  
+		Size: 138.7 MB (138692361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6adb863b4b4c69d8d08447ff2f92bde3bf58985fd69c6d0272273bfe6c682c8a`  
-		Last Modified: Tue, 12 Nov 2024 01:06:50 GMT  
-		Size: 184.0 B  
+	-	`sha256:a627ba3ba9c0dd7675bded26bee97be800d7ae7233b65cc5e87dec6385d6d684`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d046b9b6fb2887e045118fa7b549f271dd6834e27a1a81bec062a420becc2333`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
-		Size: 863.5 KB (863474 bytes)  
+	-	`sha256:e7eab81eafda560d04753033a7793b0fbad07c01a37f4e1fa1b6cbb5d57fbe8d`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 863.5 KB (863471 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79602d6db082d0d6dd1cc2f9451cf185d6d2ae4746da01fcbbddfe11250b70ce`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
+	-	`sha256:81b4918a2555f120c31a57c5c66f22600ab0bc3d121542385b9eb52b639f3796`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9521f306a3451bfc3d658df655e47b14b6dfe1fa8a4ee01fa7239d256513d150`  
-		Last Modified: Tue, 12 Nov 2024 01:06:52 GMT  
-		Size: 363.0 B  
+	-	`sha256:d4db6c7d5229f43bb415dcabb1c0fd300ecc1dbfed18d77c6e553ba203fcc0d0`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7419c1b0b1b714719c8c0457161ee358c44e630ee2c264733dad78f1f666faa`  
-		Last Modified: Tue, 12 Nov 2024 01:06:52 GMT  
-		Size: 3.1 KB (3143 bytes)  
+	-	`sha256:c30b9bec89bc291fd156ad60a897a8bc119acda2d3294db0909a7abb9b7aa124`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 3.1 KB (3141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24.10-focal` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:53da8ae3932d2be58b4497df239aa92f12380d79a3046061686fb1473f1c482f
+$ docker pull clickhouse@sha256:2f77217c545db83c44c23cc6abdf4f34ce68265d9e261c4af075dc598e2811bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.8 KB (26762 bytes)**  
+-	Total Size: **26.7 KB (26735 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50c2a42d0eb4773da3eb4d1f61c94f4652b79ba86145e6503c285a87d063c446`
+-	Image ID: `sha256:ca457bdd672219881e4c7f28900a0fb3c0f87120ecf163a2c6fbfddd3eb9cf2d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8a15f595e98190849d608ae4aaf07c44b896636f633ab5818e0c64c15671d1a2`  
-		Last Modified: Tue, 12 Nov 2024 01:06:50 GMT  
-		Size: 26.8 KB (26762 bytes)  
+	-	`sha256:5791af50f4fcfa896eb3c0edf644ae24c07abc17fd5982c1cbb1724b8ede7636`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 26.7 KB (26735 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.10.2`
 
 ```console
-$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull clickhouse@sha256:aa887dfaa8d915a18ad93d25cef0334138ffeeb386353600ed90ecf07ff4eb5c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `clickhouse:24.10.2` - linux; amd64
+
+```console
+$ docker pull clickhouse@sha256:3073efa0428c680834cf03dd2428fac3408a8a60310cd0613f51731eb25bcdb2
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **180.6 MB (180553647 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:33410aa159ab43ebeaa868575df2dc69997cf9bbc495f419df632b5938060b2e`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e11845068165d574aa2798c6158bf4904622cd7aff2c5675c6643ff0ba4fda74`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 8.8 MB (8802587 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5feec6ebdd2d272ba4886d83efac935f56f806e73e527a868a28138c61e67718`  
+		Last Modified: Mon, 18 Nov 2024 21:06:08 GMT  
+		Size: 143.4 MB (143372719 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1dfeab913ab2cc5b1eae6e120652382b1e4419e753305cbecd10ed1fd65a4bc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 185.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c2e1a6ccef3905d7f4b64758101a5566220595da9cd94b3a8efe3c7c3d500827`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 863.5 KB (863474 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:52154b45f848fae4d6dc15923fd51d332c33b0e778b1c11e06eb83e661dd7a95`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b265890db07ff12d8c1d5226fa954754fc2424e3c212fb8ec6357953893fe05f`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 363.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ff950eeed9b85019e89aaffe2962b82fdbc03b54f59941891af221eb1511d3a4`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 3.1 KB (3143 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.10.2` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:064a3c846ada78d4c69bda131ebe8c761653440c1cc0f3585a7a48d399021fad
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **26.5 KB (26499 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:37c888f3eb66030483fa7a082a00d60e89b78ac7a1f1e67da42a74eca0169fae`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:f50539b9c37f17df612e4afdb20de110705ae3090a3db1da1b402faa4f251cc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:05 GMT  
+		Size: 26.5 KB (26499 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `clickhouse:24.10.2` - linux; arm64 variant v8
+
+```console
+$ docker pull clickhouse@sha256:f36884dc6d24d60a9bb6c320e8a052190ae2358d8f66efc4c71ad5ffa4638d72
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **174.2 MB (174195698 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a68ae827e8dcb485e903cb0057678535df1e43de4da3302cf7efd6fb2bcb936e`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a86846b838547ebb3f9804d50f4fe8eb4f6bfeff8d4821e1998c250e0dfd1a11`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 8.7 MB (8662233 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b7371f123ab3df4a130514d8f7597c2f06a212dda18e5943a8eb98574c2d0b52`  
+		Last Modified: Mon, 18 Nov 2024 20:05:57 GMT  
+		Size: 138.7 MB (138692361 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a627ba3ba9c0dd7675bded26bee97be800d7ae7233b65cc5e87dec6385d6d684`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 186.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e7eab81eafda560d04753033a7793b0fbad07c01a37f4e1fa1b6cbb5d57fbe8d`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 863.5 KB (863471 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:81b4918a2555f120c31a57c5c66f22600ab0bc3d121542385b9eb52b639f3796`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d4db6c7d5229f43bb415dcabb1c0fd300ecc1dbfed18d77c6e553ba203fcc0d0`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 362.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c30b9bec89bc291fd156ad60a897a8bc119acda2d3294db0909a7abb9b7aa124`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 3.1 KB (3141 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.10.2` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:2f77217c545db83c44c23cc6abdf4f34ce68265d9e261c4af075dc598e2811bf
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **26.7 KB (26735 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ca457bdd672219881e4c7f28900a0fb3c0f87120ecf163a2c6fbfddd3eb9cf2d`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:5791af50f4fcfa896eb3c0edf644ae24c07abc17fd5982c1cbb1724b8ede7636`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 26.7 KB (26735 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.10.2-focal`
 
 ```console
-$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull clickhouse@sha256:aa887dfaa8d915a18ad93d25cef0334138ffeeb386353600ed90ecf07ff4eb5c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `clickhouse:24.10.2-focal` - linux; amd64
+
+```console
+$ docker pull clickhouse@sha256:3073efa0428c680834cf03dd2428fac3408a8a60310cd0613f51731eb25bcdb2
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **180.6 MB (180553647 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:33410aa159ab43ebeaa868575df2dc69997cf9bbc495f419df632b5938060b2e`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e11845068165d574aa2798c6158bf4904622cd7aff2c5675c6643ff0ba4fda74`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 8.8 MB (8802587 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5feec6ebdd2d272ba4886d83efac935f56f806e73e527a868a28138c61e67718`  
+		Last Modified: Mon, 18 Nov 2024 21:06:08 GMT  
+		Size: 143.4 MB (143372719 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1dfeab913ab2cc5b1eae6e120652382b1e4419e753305cbecd10ed1fd65a4bc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 185.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c2e1a6ccef3905d7f4b64758101a5566220595da9cd94b3a8efe3c7c3d500827`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 863.5 KB (863474 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:52154b45f848fae4d6dc15923fd51d332c33b0e778b1c11e06eb83e661dd7a95`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b265890db07ff12d8c1d5226fa954754fc2424e3c212fb8ec6357953893fe05f`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 363.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ff950eeed9b85019e89aaffe2962b82fdbc03b54f59941891af221eb1511d3a4`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 3.1 KB (3143 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.10.2-focal` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:064a3c846ada78d4c69bda131ebe8c761653440c1cc0f3585a7a48d399021fad
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **26.5 KB (26499 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:37c888f3eb66030483fa7a082a00d60e89b78ac7a1f1e67da42a74eca0169fae`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:f50539b9c37f17df612e4afdb20de110705ae3090a3db1da1b402faa4f251cc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:05 GMT  
+		Size: 26.5 KB (26499 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `clickhouse:24.10.2-focal` - linux; arm64 variant v8
+
+```console
+$ docker pull clickhouse@sha256:f36884dc6d24d60a9bb6c320e8a052190ae2358d8f66efc4c71ad5ffa4638d72
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **174.2 MB (174195698 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a68ae827e8dcb485e903cb0057678535df1e43de4da3302cf7efd6fb2bcb936e`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a86846b838547ebb3f9804d50f4fe8eb4f6bfeff8d4821e1998c250e0dfd1a11`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 8.7 MB (8662233 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b7371f123ab3df4a130514d8f7597c2f06a212dda18e5943a8eb98574c2d0b52`  
+		Last Modified: Mon, 18 Nov 2024 20:05:57 GMT  
+		Size: 138.7 MB (138692361 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a627ba3ba9c0dd7675bded26bee97be800d7ae7233b65cc5e87dec6385d6d684`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 186.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e7eab81eafda560d04753033a7793b0fbad07c01a37f4e1fa1b6cbb5d57fbe8d`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 863.5 KB (863471 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:81b4918a2555f120c31a57c5c66f22600ab0bc3d121542385b9eb52b639f3796`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d4db6c7d5229f43bb415dcabb1c0fd300ecc1dbfed18d77c6e553ba203fcc0d0`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 362.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c30b9bec89bc291fd156ad60a897a8bc119acda2d3294db0909a7abb9b7aa124`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 3.1 KB (3141 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.10.2-focal` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:2f77217c545db83c44c23cc6abdf4f34ce68265d9e261c4af075dc598e2811bf
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **26.7 KB (26735 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ca457bdd672219881e4c7f28900a0fb3c0f87120ecf163a2c6fbfddd3eb9cf2d`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:5791af50f4fcfa896eb3c0edf644ae24c07abc17fd5982c1cbb1724b8ede7636`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 26.7 KB (26735 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.10.2.80`
 
 ```console
-$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull clickhouse@sha256:aa887dfaa8d915a18ad93d25cef0334138ffeeb386353600ed90ecf07ff4eb5c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `clickhouse:24.10.2.80` - linux; amd64
+
+```console
+$ docker pull clickhouse@sha256:3073efa0428c680834cf03dd2428fac3408a8a60310cd0613f51731eb25bcdb2
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **180.6 MB (180553647 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:33410aa159ab43ebeaa868575df2dc69997cf9bbc495f419df632b5938060b2e`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e11845068165d574aa2798c6158bf4904622cd7aff2c5675c6643ff0ba4fda74`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 8.8 MB (8802587 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5feec6ebdd2d272ba4886d83efac935f56f806e73e527a868a28138c61e67718`  
+		Last Modified: Mon, 18 Nov 2024 21:06:08 GMT  
+		Size: 143.4 MB (143372719 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1dfeab913ab2cc5b1eae6e120652382b1e4419e753305cbecd10ed1fd65a4bc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 185.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c2e1a6ccef3905d7f4b64758101a5566220595da9cd94b3a8efe3c7c3d500827`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 863.5 KB (863474 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:52154b45f848fae4d6dc15923fd51d332c33b0e778b1c11e06eb83e661dd7a95`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b265890db07ff12d8c1d5226fa954754fc2424e3c212fb8ec6357953893fe05f`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 363.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ff950eeed9b85019e89aaffe2962b82fdbc03b54f59941891af221eb1511d3a4`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 3.1 KB (3143 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.10.2.80` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:064a3c846ada78d4c69bda131ebe8c761653440c1cc0f3585a7a48d399021fad
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **26.5 KB (26499 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:37c888f3eb66030483fa7a082a00d60e89b78ac7a1f1e67da42a74eca0169fae`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:f50539b9c37f17df612e4afdb20de110705ae3090a3db1da1b402faa4f251cc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:05 GMT  
+		Size: 26.5 KB (26499 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `clickhouse:24.10.2.80` - linux; arm64 variant v8
+
+```console
+$ docker pull clickhouse@sha256:f36884dc6d24d60a9bb6c320e8a052190ae2358d8f66efc4c71ad5ffa4638d72
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **174.2 MB (174195698 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a68ae827e8dcb485e903cb0057678535df1e43de4da3302cf7efd6fb2bcb936e`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a86846b838547ebb3f9804d50f4fe8eb4f6bfeff8d4821e1998c250e0dfd1a11`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 8.7 MB (8662233 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b7371f123ab3df4a130514d8f7597c2f06a212dda18e5943a8eb98574c2d0b52`  
+		Last Modified: Mon, 18 Nov 2024 20:05:57 GMT  
+		Size: 138.7 MB (138692361 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a627ba3ba9c0dd7675bded26bee97be800d7ae7233b65cc5e87dec6385d6d684`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 186.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e7eab81eafda560d04753033a7793b0fbad07c01a37f4e1fa1b6cbb5d57fbe8d`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 863.5 KB (863471 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:81b4918a2555f120c31a57c5c66f22600ab0bc3d121542385b9eb52b639f3796`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d4db6c7d5229f43bb415dcabb1c0fd300ecc1dbfed18d77c6e553ba203fcc0d0`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 362.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c30b9bec89bc291fd156ad60a897a8bc119acda2d3294db0909a7abb9b7aa124`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 3.1 KB (3141 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.10.2.80` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:2f77217c545db83c44c23cc6abdf4f34ce68265d9e261c4af075dc598e2811bf
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **26.7 KB (26735 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ca457bdd672219881e4c7f28900a0fb3c0f87120ecf163a2c6fbfddd3eb9cf2d`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:5791af50f4fcfa896eb3c0edf644ae24c07abc17fd5982c1cbb1724b8ede7636`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 26.7 KB (26735 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.10.2.80-focal`
 
 ```console
-$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull clickhouse@sha256:aa887dfaa8d915a18ad93d25cef0334138ffeeb386353600ed90ecf07ff4eb5c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `clickhouse:24.10.2.80-focal` - linux; amd64
+
+```console
+$ docker pull clickhouse@sha256:3073efa0428c680834cf03dd2428fac3408a8a60310cd0613f51731eb25bcdb2
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **180.6 MB (180553647 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:33410aa159ab43ebeaa868575df2dc69997cf9bbc495f419df632b5938060b2e`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e11845068165d574aa2798c6158bf4904622cd7aff2c5675c6643ff0ba4fda74`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 8.8 MB (8802587 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5feec6ebdd2d272ba4886d83efac935f56f806e73e527a868a28138c61e67718`  
+		Last Modified: Mon, 18 Nov 2024 21:06:08 GMT  
+		Size: 143.4 MB (143372719 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1dfeab913ab2cc5b1eae6e120652382b1e4419e753305cbecd10ed1fd65a4bc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 185.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c2e1a6ccef3905d7f4b64758101a5566220595da9cd94b3a8efe3c7c3d500827`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 863.5 KB (863474 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:52154b45f848fae4d6dc15923fd51d332c33b0e778b1c11e06eb83e661dd7a95`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b265890db07ff12d8c1d5226fa954754fc2424e3c212fb8ec6357953893fe05f`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 363.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ff950eeed9b85019e89aaffe2962b82fdbc03b54f59941891af221eb1511d3a4`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 3.1 KB (3143 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.10.2.80-focal` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:064a3c846ada78d4c69bda131ebe8c761653440c1cc0f3585a7a48d399021fad
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **26.5 KB (26499 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:37c888f3eb66030483fa7a082a00d60e89b78ac7a1f1e67da42a74eca0169fae`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:f50539b9c37f17df612e4afdb20de110705ae3090a3db1da1b402faa4f251cc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:05 GMT  
+		Size: 26.5 KB (26499 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `clickhouse:24.10.2.80-focal` - linux; arm64 variant v8
+
+```console
+$ docker pull clickhouse@sha256:f36884dc6d24d60a9bb6c320e8a052190ae2358d8f66efc4c71ad5ffa4638d72
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **174.2 MB (174195698 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:a68ae827e8dcb485e903cb0057678535df1e43de4da3302cf7efd6fb2bcb936e`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a86846b838547ebb3f9804d50f4fe8eb4f6bfeff8d4821e1998c250e0dfd1a11`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 8.7 MB (8662233 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b7371f123ab3df4a130514d8f7597c2f06a212dda18e5943a8eb98574c2d0b52`  
+		Last Modified: Mon, 18 Nov 2024 20:05:57 GMT  
+		Size: 138.7 MB (138692361 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a627ba3ba9c0dd7675bded26bee97be800d7ae7233b65cc5e87dec6385d6d684`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 186.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e7eab81eafda560d04753033a7793b0fbad07c01a37f4e1fa1b6cbb5d57fbe8d`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 863.5 KB (863471 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:81b4918a2555f120c31a57c5c66f22600ab0bc3d121542385b9eb52b639f3796`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d4db6c7d5229f43bb415dcabb1c0fd300ecc1dbfed18d77c6e553ba203fcc0d0`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 362.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c30b9bec89bc291fd156ad60a897a8bc119acda2d3294db0909a7abb9b7aa124`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 3.1 KB (3141 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.10.2.80-focal` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:2f77217c545db83c44c23cc6abdf4f34ce68265d9e261c4af075dc598e2811bf
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **26.7 KB (26735 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ca457bdd672219881e4c7f28900a0fb3c0f87120ecf163a2c6fbfddd3eb9cf2d`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:5791af50f4fcfa896eb3c0edf644ae24c07abc17fd5982c1cbb1724b8ede7636`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 26.7 KB (26735 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.3`
 
 ```console
-$ docker pull clickhouse@sha256:65cc866aac0e00a6b0f47015f504cba9d3b3a3cc906f5b4e52d71d9a13707295
+$ docker pull clickhouse@sha256:a959b93fd697b98b666cd6785e9ae5c8399f97fd18c292cd05064b0ade1bdc10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1129,13 +2137,13 @@ $ docker pull clickhouse@sha256:65cc866aac0e00a6b0f47015f504cba9d3b3a3cc906f5b4e
 ### `clickhouse:24.3` - linux; amd64
 
 ```console
-$ docker pull clickhouse@sha256:c289f3357934a59c8df32e38f46717666ef48fb22f16ba88504842ad9ab55057
+$ docker pull clickhouse@sha256:bdfe63c36f0cb1d46c4afeb68b09ff5b232ceb6a93342af306cc37ef2caacc40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **297.5 MB (297511750 bytes)**  
+-	Total Size: **297.4 MB (297443951 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2cd2e0d4d0268fad64fc1d15db2246633f2ed80b2530426737584fe9866e92d`
+-	Image ID: `sha256:5ec830c15f99be6a4bc00e3f53130204977735cff5972d4639757fa8ed7261ba`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -1151,48 +2159,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
 # Fri, 11 Oct 2024 03:38:27 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.3.13.40
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.3.14.35
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.13.40 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.13.40 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.13.40 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.13.40 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -1201,65 +2209,65 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e10c55cd1d667adb252a4d6747dd3ff98c2e5fd8ec94b8e8a853c71d48ac7f53`  
-		Last Modified: Tue, 12 Nov 2024 00:55:54 GMT  
-		Size: 8.8 MB (8802650 bytes)  
+	-	`sha256:dc4349295a30f5633937a1bc092bec1c82695ddfd8955b8bb5fedd667580fda1`  
+		Last Modified: Mon, 18 Nov 2024 20:06:31 GMT  
+		Size: 8.8 MB (8802606 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a6db53e848773ac965d917ff203b5173c8151e03138f5b7acc2bf32dd9ab870`  
-		Last Modified: Tue, 12 Nov 2024 00:55:57 GMT  
-		Size: 260.3 MB (260330598 bytes)  
+	-	`sha256:a90e98037cdc68bd3bd57a6f7d4e87a4b7bbbfda65c98dcb410b712e36ce9abc`  
+		Last Modified: Mon, 18 Nov 2024 20:06:38 GMT  
+		Size: 260.3 MB (260262844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ddfab2ae361ce2d2db63312a3e93a526b702cf3e4e10a018b410fe2147b0826`  
-		Last Modified: Tue, 12 Nov 2024 00:55:54 GMT  
-		Size: 346.0 B  
+	-	`sha256:603324bec5fdd275d1b54e5b85b4683fb79b60c25859e1a1e501de4c7385eb6c`  
+		Last Modified: Mon, 18 Nov 2024 20:06:30 GMT  
+		Size: 349.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf8aa72042ed8e0be5a3920224242fc7cdcafbfeb7280218c8439d0ba150f809`  
-		Last Modified: Tue, 12 Nov 2024 00:55:54 GMT  
-		Size: 863.5 KB (863476 bytes)  
+	-	`sha256:737142a71c6850267fbbca130d678ca0821ba40569c900cdc20ebfdd29c17e3b`  
+		Last Modified: Mon, 18 Nov 2024 20:06:31 GMT  
+		Size: 863.5 KB (863471 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c9f9db3a285345521ed70deb53a73153e353715e2e8e4976e0ffa97c236c296a`  
-		Last Modified: Tue, 12 Nov 2024 00:55:54 GMT  
+	-	`sha256:e66c68ee28dcd47004997a8a48f04af830fb66cc9b6f660c3c7fe15ab924f1de`  
+		Last Modified: Mon, 18 Nov 2024 20:06:32 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c0f5857dc58d47020d0d4bec291ddfdba3d1c0259e54e83c255b98e09cad68b`  
-		Last Modified: Tue, 12 Nov 2024 00:55:55 GMT  
-		Size: 360.0 B  
+	-	`sha256:a9eb19838727458fd3b28c7b1a78d95ea5acbc31962923aff0a261d43e9f51ad`  
+		Last Modified: Mon, 18 Nov 2024 20:06:32 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9028d92b314d2596e2d3f5ce617257a35c38a1d2e79ba962357a2741963df81a`  
-		Last Modified: Tue, 12 Nov 2024 00:55:42 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:79be74f34f41c7e88691ba050be7c2a78401668d41560a8b11f86b1f45c5a411`  
+		Last Modified: Mon, 18 Nov 2024 20:06:32 GMT  
+		Size: 3.1 KB (3141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24.3` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:b888d927481b1d47d60c9f5ef1191f6a487995c84264cae7cbd37966e7214c39
+$ docker pull clickhouse@sha256:c039285153d9794aa2e78d3ea7c34a1c83c03a57ba0f07f7945245a27e8e2e4d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **25.3 KB (25278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21d54f21a541c83c6cb2b6586615cfec4346f71de467d49d46d2a6c5b683238b`
+-	Image ID: `sha256:0c0127b13de2f69cada0646b70b1c38dbfcad4dc055b65343e605aa510d2d13a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f042d19fd7edc8c5a3ff4a042dd521d7eb65727bb779b73b14f1dda5b0cf7aff`  
-		Last Modified: Tue, 12 Nov 2024 00:55:54 GMT  
+	-	`sha256:bf6ed6310c4f352c18babfa257b66edcd2e8500ee6501271a1d1bbe15b4639c8`  
+		Last Modified: Mon, 18 Nov 2024 20:06:31 GMT  
 		Size: 25.3 KB (25278 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clickhouse:24.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:0f15c044786702dc99e19e911749b23d2edd2dbbc6c158eacf46e05ff7e7f176
+$ docker pull clickhouse@sha256:834ec1b749893206dc7a6ba5aa9ac85446c8f58171d1e934311bea1801e6add0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **285.0 MB (284991050 bytes)**  
+-	Total Size: **286.0 MB (285993226 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5af05545f78127ee0804f1c557139fd211cb28905bd930c0ab44a85ec759b486`
+-	Image ID: `sha256:fd94852f8c365151aa1775115b9a6ac2ca7701c67e8e174a2d1353737d2dbd79`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -1275,48 +2283,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
 # Fri, 11 Oct 2024 03:39:47 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.3.13.40
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.3.14.35
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.13.40 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.13.40 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.13.40 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.13.40 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -1325,59 +2333,59 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23ba974f84eb2fc21ccc6b14da8a5b6116a1131bd64b71ae6fb6023c06759053`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
-		Size: 8.7 MB (8662321 bytes)  
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97834f7eecadf60bfb24081933e8084f7861371bef3882bcc30642f4062ae788`  
-		Last Modified: Tue, 12 Nov 2024 01:09:51 GMT  
-		Size: 249.5 MB (249487447 bytes)  
+	-	`sha256:1bb8cd16abd8b1cc2089409c1804a81daf37d8c0b1e790771c8f3c627b4817d0`  
+		Last Modified: Mon, 18 Nov 2024 20:09:21 GMT  
+		Size: 250.5 MB (250489631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f2a7242804b913aae26afac636978a9c1ae85309eb029039badba64bdf4f5b9`  
-		Last Modified: Tue, 12 Nov 2024 01:09:46 GMT  
-		Size: 353.0 B  
+	-	`sha256:42d2b9ae7dc28a86d74efaf057fdf5fa3d7ec13f7e846f7f1adaeb4e6cab2db3`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 349.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7867f5d53eaedd052d0e6b5499d54fe22e0975c8b57cd61ba5b8768749d20bee`  
-		Last Modified: Tue, 12 Nov 2024 01:09:46 GMT  
-		Size: 863.5 KB (863479 bytes)  
+	-	`sha256:061c50d579970f38c199ee0d16d897797fe3baddf9e9c1515036ccb8d4741319`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 863.5 KB (863476 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00beda7972859546008c521ae79b8e2bbdc0bd502ba8620805495f46b4b0d62d`  
-		Last Modified: Tue, 12 Nov 2024 01:09:46 GMT  
+	-	`sha256:bf56093c6ea32d71954bf6215e876e1dfd80d61536cc17c8cb1dd9042b5beacd`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4eeb399d8db934dfd23e431b496a19a67aab69041474ae6a8b97ec7afe4dd060`  
-		Last Modified: Tue, 12 Nov 2024 01:09:47 GMT  
-		Size: 362.0 B  
+	-	`sha256:0f2187ca256d0261e951dcaf4882c42e9af92da1da71954bc47fa1087978f2b8`  
+		Last Modified: Mon, 18 Nov 2024 20:09:17 GMT  
+		Size: 361.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aaabf091eea37629b46996cab18b80152dea41dc6a9678f770cfb3eacff3d2a6`  
-		Last Modified: Tue, 12 Nov 2024 01:09:47 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:7a9ba020a18f6f926b8e64647cbac78712f017c66ab7459780412ba1b3a4d820`  
+		Last Modified: Mon, 18 Nov 2024 20:09:17 GMT  
+		Size: 3.1 KB (3143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24.3` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:45a3695cf706dae86c5e1192847ecefcd476942243c961d39e3d69dbd14dbe30
+$ docker pull clickhouse@sha256:f27a92c93086fbd80abd972b59f9a45a8bd3ad61709630985199f09f20fe8ce3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **25.5 KB (25466 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28f514b9242e91460d0f52e90f29854c31118ca4474f8012fbf9ad6c7550cca4`
+-	Image ID: `sha256:0e92e3ca5118335d71cfd040286d52ed0118bd10ec5f4011f1e63d54e20222ca`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a1754f2703abef646e101fafb62d9eebb84e74c87c621f25677c3213519479e7`  
-		Last Modified: Tue, 12 Nov 2024 01:09:46 GMT  
+	-	`sha256:8dd23a374d3a37db5702626e0c93c5216b79a2e7e9755d31c0c8ec3ba4fff5df`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
 		Size: 25.5 KB (25466 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.3-focal`
 
 ```console
-$ docker pull clickhouse@sha256:65cc866aac0e00a6b0f47015f504cba9d3b3a3cc906f5b4e52d71d9a13707295
+$ docker pull clickhouse@sha256:a959b93fd697b98b666cd6785e9ae5c8399f97fd18c292cd05064b0ade1bdc10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1390,13 +2398,13 @@ $ docker pull clickhouse@sha256:65cc866aac0e00a6b0f47015f504cba9d3b3a3cc906f5b4e
 ### `clickhouse:24.3-focal` - linux; amd64
 
 ```console
-$ docker pull clickhouse@sha256:c289f3357934a59c8df32e38f46717666ef48fb22f16ba88504842ad9ab55057
+$ docker pull clickhouse@sha256:bdfe63c36f0cb1d46c4afeb68b09ff5b232ceb6a93342af306cc37ef2caacc40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **297.5 MB (297511750 bytes)**  
+-	Total Size: **297.4 MB (297443951 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2cd2e0d4d0268fad64fc1d15db2246633f2ed80b2530426737584fe9866e92d`
+-	Image ID: `sha256:5ec830c15f99be6a4bc00e3f53130204977735cff5972d4639757fa8ed7261ba`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -1412,48 +2420,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
 # Fri, 11 Oct 2024 03:38:27 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.3.13.40
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.3.14.35
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.13.40 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.13.40 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.13.40 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.13.40 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -1462,65 +2470,65 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e10c55cd1d667adb252a4d6747dd3ff98c2e5fd8ec94b8e8a853c71d48ac7f53`  
-		Last Modified: Tue, 12 Nov 2024 00:55:54 GMT  
-		Size: 8.8 MB (8802650 bytes)  
+	-	`sha256:dc4349295a30f5633937a1bc092bec1c82695ddfd8955b8bb5fedd667580fda1`  
+		Last Modified: Mon, 18 Nov 2024 20:06:31 GMT  
+		Size: 8.8 MB (8802606 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a6db53e848773ac965d917ff203b5173c8151e03138f5b7acc2bf32dd9ab870`  
-		Last Modified: Tue, 12 Nov 2024 00:55:57 GMT  
-		Size: 260.3 MB (260330598 bytes)  
+	-	`sha256:a90e98037cdc68bd3bd57a6f7d4e87a4b7bbbfda65c98dcb410b712e36ce9abc`  
+		Last Modified: Mon, 18 Nov 2024 20:06:38 GMT  
+		Size: 260.3 MB (260262844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ddfab2ae361ce2d2db63312a3e93a526b702cf3e4e10a018b410fe2147b0826`  
-		Last Modified: Tue, 12 Nov 2024 00:55:54 GMT  
-		Size: 346.0 B  
+	-	`sha256:603324bec5fdd275d1b54e5b85b4683fb79b60c25859e1a1e501de4c7385eb6c`  
+		Last Modified: Mon, 18 Nov 2024 20:06:30 GMT  
+		Size: 349.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf8aa72042ed8e0be5a3920224242fc7cdcafbfeb7280218c8439d0ba150f809`  
-		Last Modified: Tue, 12 Nov 2024 00:55:54 GMT  
-		Size: 863.5 KB (863476 bytes)  
+	-	`sha256:737142a71c6850267fbbca130d678ca0821ba40569c900cdc20ebfdd29c17e3b`  
+		Last Modified: Mon, 18 Nov 2024 20:06:31 GMT  
+		Size: 863.5 KB (863471 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c9f9db3a285345521ed70deb53a73153e353715e2e8e4976e0ffa97c236c296a`  
-		Last Modified: Tue, 12 Nov 2024 00:55:54 GMT  
+	-	`sha256:e66c68ee28dcd47004997a8a48f04af830fb66cc9b6f660c3c7fe15ab924f1de`  
+		Last Modified: Mon, 18 Nov 2024 20:06:32 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c0f5857dc58d47020d0d4bec291ddfdba3d1c0259e54e83c255b98e09cad68b`  
-		Last Modified: Tue, 12 Nov 2024 00:55:55 GMT  
-		Size: 360.0 B  
+	-	`sha256:a9eb19838727458fd3b28c7b1a78d95ea5acbc31962923aff0a261d43e9f51ad`  
+		Last Modified: Mon, 18 Nov 2024 20:06:32 GMT  
+		Size: 364.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9028d92b314d2596e2d3f5ce617257a35c38a1d2e79ba962357a2741963df81a`  
-		Last Modified: Tue, 12 Nov 2024 00:55:42 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:79be74f34f41c7e88691ba050be7c2a78401668d41560a8b11f86b1f45c5a411`  
+		Last Modified: Mon, 18 Nov 2024 20:06:32 GMT  
+		Size: 3.1 KB (3141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24.3-focal` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:b888d927481b1d47d60c9f5ef1191f6a487995c84264cae7cbd37966e7214c39
+$ docker pull clickhouse@sha256:c039285153d9794aa2e78d3ea7c34a1c83c03a57ba0f07f7945245a27e8e2e4d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **25.3 KB (25278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21d54f21a541c83c6cb2b6586615cfec4346f71de467d49d46d2a6c5b683238b`
+-	Image ID: `sha256:0c0127b13de2f69cada0646b70b1c38dbfcad4dc055b65343e605aa510d2d13a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f042d19fd7edc8c5a3ff4a042dd521d7eb65727bb779b73b14f1dda5b0cf7aff`  
-		Last Modified: Tue, 12 Nov 2024 00:55:54 GMT  
+	-	`sha256:bf6ed6310c4f352c18babfa257b66edcd2e8500ee6501271a1d1bbe15b4639c8`  
+		Last Modified: Mon, 18 Nov 2024 20:06:31 GMT  
 		Size: 25.3 KB (25278 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clickhouse:24.3-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:0f15c044786702dc99e19e911749b23d2edd2dbbc6c158eacf46e05ff7e7f176
+$ docker pull clickhouse@sha256:834ec1b749893206dc7a6ba5aa9ac85446c8f58171d1e934311bea1801e6add0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **285.0 MB (284991050 bytes)**  
+-	Total Size: **286.0 MB (285993226 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5af05545f78127ee0804f1c557139fd211cb28905bd930c0ab44a85ec759b486`
+-	Image ID: `sha256:fd94852f8c365151aa1775115b9a6ac2ca7701c67e8e174a2d1353737d2dbd79`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -1536,48 +2544,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
 # Fri, 11 Oct 2024 03:39:47 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.3.13.40
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.3.14.35
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.13.40 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.13.40 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.13.40 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.13.40 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -1586,95 +2594,1103 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23ba974f84eb2fc21ccc6b14da8a5b6116a1131bd64b71ae6fb6023c06759053`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
-		Size: 8.7 MB (8662321 bytes)  
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97834f7eecadf60bfb24081933e8084f7861371bef3882bcc30642f4062ae788`  
-		Last Modified: Tue, 12 Nov 2024 01:09:51 GMT  
-		Size: 249.5 MB (249487447 bytes)  
+	-	`sha256:1bb8cd16abd8b1cc2089409c1804a81daf37d8c0b1e790771c8f3c627b4817d0`  
+		Last Modified: Mon, 18 Nov 2024 20:09:21 GMT  
+		Size: 250.5 MB (250489631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f2a7242804b913aae26afac636978a9c1ae85309eb029039badba64bdf4f5b9`  
-		Last Modified: Tue, 12 Nov 2024 01:09:46 GMT  
-		Size: 353.0 B  
+	-	`sha256:42d2b9ae7dc28a86d74efaf057fdf5fa3d7ec13f7e846f7f1adaeb4e6cab2db3`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 349.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7867f5d53eaedd052d0e6b5499d54fe22e0975c8b57cd61ba5b8768749d20bee`  
-		Last Modified: Tue, 12 Nov 2024 01:09:46 GMT  
-		Size: 863.5 KB (863479 bytes)  
+	-	`sha256:061c50d579970f38c199ee0d16d897797fe3baddf9e9c1515036ccb8d4741319`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 863.5 KB (863476 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00beda7972859546008c521ae79b8e2bbdc0bd502ba8620805495f46b4b0d62d`  
-		Last Modified: Tue, 12 Nov 2024 01:09:46 GMT  
+	-	`sha256:bf56093c6ea32d71954bf6215e876e1dfd80d61536cc17c8cb1dd9042b5beacd`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4eeb399d8db934dfd23e431b496a19a67aab69041474ae6a8b97ec7afe4dd060`  
-		Last Modified: Tue, 12 Nov 2024 01:09:47 GMT  
-		Size: 362.0 B  
+	-	`sha256:0f2187ca256d0261e951dcaf4882c42e9af92da1da71954bc47fa1087978f2b8`  
+		Last Modified: Mon, 18 Nov 2024 20:09:17 GMT  
+		Size: 361.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aaabf091eea37629b46996cab18b80152dea41dc6a9678f770cfb3eacff3d2a6`  
-		Last Modified: Tue, 12 Nov 2024 01:09:47 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:7a9ba020a18f6f926b8e64647cbac78712f017c66ab7459780412ba1b3a4d820`  
+		Last Modified: Mon, 18 Nov 2024 20:09:17 GMT  
+		Size: 3.1 KB (3143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24.3-focal` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:45a3695cf706dae86c5e1192847ecefcd476942243c961d39e3d69dbd14dbe30
+$ docker pull clickhouse@sha256:f27a92c93086fbd80abd972b59f9a45a8bd3ad61709630985199f09f20fe8ce3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **25.5 KB (25466 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28f514b9242e91460d0f52e90f29854c31118ca4474f8012fbf9ad6c7550cca4`
+-	Image ID: `sha256:0e92e3ca5118335d71cfd040286d52ed0118bd10ec5f4011f1e63d54e20222ca`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a1754f2703abef646e101fafb62d9eebb84e74c87c621f25677c3213519479e7`  
-		Last Modified: Tue, 12 Nov 2024 01:09:46 GMT  
+	-	`sha256:8dd23a374d3a37db5702626e0c93c5216b79a2e7e9755d31c0c8ec3ba4fff5df`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
 		Size: 25.5 KB (25466 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.3.14`
 
 ```console
-$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull clickhouse@sha256:a959b93fd697b98b666cd6785e9ae5c8399f97fd18c292cd05064b0ade1bdc10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `clickhouse:24.3.14` - linux; amd64
+
+```console
+$ docker pull clickhouse@sha256:bdfe63c36f0cb1d46c4afeb68b09ff5b232ceb6a93342af306cc37ef2caacc40
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **297.4 MB (297443951 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5ec830c15f99be6a4bc00e3f53130204977735cff5972d4639757fa8ed7261ba`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.3.14.35
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:dc4349295a30f5633937a1bc092bec1c82695ddfd8955b8bb5fedd667580fda1`  
+		Last Modified: Mon, 18 Nov 2024 20:06:31 GMT  
+		Size: 8.8 MB (8802606 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a90e98037cdc68bd3bd57a6f7d4e87a4b7bbbfda65c98dcb410b712e36ce9abc`  
+		Last Modified: Mon, 18 Nov 2024 20:06:38 GMT  
+		Size: 260.3 MB (260262844 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:603324bec5fdd275d1b54e5b85b4683fb79b60c25859e1a1e501de4c7385eb6c`  
+		Last Modified: Mon, 18 Nov 2024 20:06:30 GMT  
+		Size: 349.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:737142a71c6850267fbbca130d678ca0821ba40569c900cdc20ebfdd29c17e3b`  
+		Last Modified: Mon, 18 Nov 2024 20:06:31 GMT  
+		Size: 863.5 KB (863471 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e66c68ee28dcd47004997a8a48f04af830fb66cc9b6f660c3c7fe15ab924f1de`  
+		Last Modified: Mon, 18 Nov 2024 20:06:32 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a9eb19838727458fd3b28c7b1a78d95ea5acbc31962923aff0a261d43e9f51ad`  
+		Last Modified: Mon, 18 Nov 2024 20:06:32 GMT  
+		Size: 364.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:79be74f34f41c7e88691ba050be7c2a78401668d41560a8b11f86b1f45c5a411`  
+		Last Modified: Mon, 18 Nov 2024 20:06:32 GMT  
+		Size: 3.1 KB (3141 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.3.14` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:c039285153d9794aa2e78d3ea7c34a1c83c03a57ba0f07f7945245a27e8e2e4d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.3 KB (25278 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0c0127b13de2f69cada0646b70b1c38dbfcad4dc055b65343e605aa510d2d13a`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:bf6ed6310c4f352c18babfa257b66edcd2e8500ee6501271a1d1bbe15b4639c8`  
+		Last Modified: Mon, 18 Nov 2024 20:06:31 GMT  
+		Size: 25.3 KB (25278 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `clickhouse:24.3.14` - linux; arm64 variant v8
+
+```console
+$ docker pull clickhouse@sha256:834ec1b749893206dc7a6ba5aa9ac85446c8f58171d1e934311bea1801e6add0
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **286.0 MB (285993226 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fd94852f8c365151aa1775115b9a6ac2ca7701c67e8e174a2d1353737d2dbd79`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.3.14.35
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1bb8cd16abd8b1cc2089409c1804a81daf37d8c0b1e790771c8f3c627b4817d0`  
+		Last Modified: Mon, 18 Nov 2024 20:09:21 GMT  
+		Size: 250.5 MB (250489631 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:42d2b9ae7dc28a86d74efaf057fdf5fa3d7ec13f7e846f7f1adaeb4e6cab2db3`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 349.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:061c50d579970f38c199ee0d16d897797fe3baddf9e9c1515036ccb8d4741319`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 863.5 KB (863476 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bf56093c6ea32d71954bf6215e876e1dfd80d61536cc17c8cb1dd9042b5beacd`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0f2187ca256d0261e951dcaf4882c42e9af92da1da71954bc47fa1087978f2b8`  
+		Last Modified: Mon, 18 Nov 2024 20:09:17 GMT  
+		Size: 361.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7a9ba020a18f6f926b8e64647cbac78712f017c66ab7459780412ba1b3a4d820`  
+		Last Modified: Mon, 18 Nov 2024 20:09:17 GMT  
+		Size: 3.1 KB (3143 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.3.14` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:f27a92c93086fbd80abd972b59f9a45a8bd3ad61709630985199f09f20fe8ce3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.5 KB (25466 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0e92e3ca5118335d71cfd040286d52ed0118bd10ec5f4011f1e63d54e20222ca`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:8dd23a374d3a37db5702626e0c93c5216b79a2e7e9755d31c0c8ec3ba4fff5df`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 25.5 KB (25466 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.3.14-focal`
 
 ```console
-$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull clickhouse@sha256:a959b93fd697b98b666cd6785e9ae5c8399f97fd18c292cd05064b0ade1bdc10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `clickhouse:24.3.14-focal` - linux; amd64
+
+```console
+$ docker pull clickhouse@sha256:bdfe63c36f0cb1d46c4afeb68b09ff5b232ceb6a93342af306cc37ef2caacc40
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **297.4 MB (297443951 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5ec830c15f99be6a4bc00e3f53130204977735cff5972d4639757fa8ed7261ba`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.3.14.35
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:dc4349295a30f5633937a1bc092bec1c82695ddfd8955b8bb5fedd667580fda1`  
+		Last Modified: Mon, 18 Nov 2024 20:06:31 GMT  
+		Size: 8.8 MB (8802606 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a90e98037cdc68bd3bd57a6f7d4e87a4b7bbbfda65c98dcb410b712e36ce9abc`  
+		Last Modified: Mon, 18 Nov 2024 20:06:38 GMT  
+		Size: 260.3 MB (260262844 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:603324bec5fdd275d1b54e5b85b4683fb79b60c25859e1a1e501de4c7385eb6c`  
+		Last Modified: Mon, 18 Nov 2024 20:06:30 GMT  
+		Size: 349.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:737142a71c6850267fbbca130d678ca0821ba40569c900cdc20ebfdd29c17e3b`  
+		Last Modified: Mon, 18 Nov 2024 20:06:31 GMT  
+		Size: 863.5 KB (863471 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e66c68ee28dcd47004997a8a48f04af830fb66cc9b6f660c3c7fe15ab924f1de`  
+		Last Modified: Mon, 18 Nov 2024 20:06:32 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a9eb19838727458fd3b28c7b1a78d95ea5acbc31962923aff0a261d43e9f51ad`  
+		Last Modified: Mon, 18 Nov 2024 20:06:32 GMT  
+		Size: 364.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:79be74f34f41c7e88691ba050be7c2a78401668d41560a8b11f86b1f45c5a411`  
+		Last Modified: Mon, 18 Nov 2024 20:06:32 GMT  
+		Size: 3.1 KB (3141 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.3.14-focal` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:c039285153d9794aa2e78d3ea7c34a1c83c03a57ba0f07f7945245a27e8e2e4d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.3 KB (25278 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0c0127b13de2f69cada0646b70b1c38dbfcad4dc055b65343e605aa510d2d13a`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:bf6ed6310c4f352c18babfa257b66edcd2e8500ee6501271a1d1bbe15b4639c8`  
+		Last Modified: Mon, 18 Nov 2024 20:06:31 GMT  
+		Size: 25.3 KB (25278 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `clickhouse:24.3.14-focal` - linux; arm64 variant v8
+
+```console
+$ docker pull clickhouse@sha256:834ec1b749893206dc7a6ba5aa9ac85446c8f58171d1e934311bea1801e6add0
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **286.0 MB (285993226 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fd94852f8c365151aa1775115b9a6ac2ca7701c67e8e174a2d1353737d2dbd79`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.3.14.35
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1bb8cd16abd8b1cc2089409c1804a81daf37d8c0b1e790771c8f3c627b4817d0`  
+		Last Modified: Mon, 18 Nov 2024 20:09:21 GMT  
+		Size: 250.5 MB (250489631 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:42d2b9ae7dc28a86d74efaf057fdf5fa3d7ec13f7e846f7f1adaeb4e6cab2db3`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 349.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:061c50d579970f38c199ee0d16d897797fe3baddf9e9c1515036ccb8d4741319`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 863.5 KB (863476 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bf56093c6ea32d71954bf6215e876e1dfd80d61536cc17c8cb1dd9042b5beacd`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0f2187ca256d0261e951dcaf4882c42e9af92da1da71954bc47fa1087978f2b8`  
+		Last Modified: Mon, 18 Nov 2024 20:09:17 GMT  
+		Size: 361.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7a9ba020a18f6f926b8e64647cbac78712f017c66ab7459780412ba1b3a4d820`  
+		Last Modified: Mon, 18 Nov 2024 20:09:17 GMT  
+		Size: 3.1 KB (3143 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.3.14-focal` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:f27a92c93086fbd80abd972b59f9a45a8bd3ad61709630985199f09f20fe8ce3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.5 KB (25466 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0e92e3ca5118335d71cfd040286d52ed0118bd10ec5f4011f1e63d54e20222ca`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:8dd23a374d3a37db5702626e0c93c5216b79a2e7e9755d31c0c8ec3ba4fff5df`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 25.5 KB (25466 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.3.14.35`
 
 ```console
-$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull clickhouse@sha256:a959b93fd697b98b666cd6785e9ae5c8399f97fd18c292cd05064b0ade1bdc10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `clickhouse:24.3.14.35` - linux; amd64
+
+```console
+$ docker pull clickhouse@sha256:bdfe63c36f0cb1d46c4afeb68b09ff5b232ceb6a93342af306cc37ef2caacc40
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **297.4 MB (297443951 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5ec830c15f99be6a4bc00e3f53130204977735cff5972d4639757fa8ed7261ba`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.3.14.35
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:dc4349295a30f5633937a1bc092bec1c82695ddfd8955b8bb5fedd667580fda1`  
+		Last Modified: Mon, 18 Nov 2024 20:06:31 GMT  
+		Size: 8.8 MB (8802606 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a90e98037cdc68bd3bd57a6f7d4e87a4b7bbbfda65c98dcb410b712e36ce9abc`  
+		Last Modified: Mon, 18 Nov 2024 20:06:38 GMT  
+		Size: 260.3 MB (260262844 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:603324bec5fdd275d1b54e5b85b4683fb79b60c25859e1a1e501de4c7385eb6c`  
+		Last Modified: Mon, 18 Nov 2024 20:06:30 GMT  
+		Size: 349.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:737142a71c6850267fbbca130d678ca0821ba40569c900cdc20ebfdd29c17e3b`  
+		Last Modified: Mon, 18 Nov 2024 20:06:31 GMT  
+		Size: 863.5 KB (863471 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e66c68ee28dcd47004997a8a48f04af830fb66cc9b6f660c3c7fe15ab924f1de`  
+		Last Modified: Mon, 18 Nov 2024 20:06:32 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a9eb19838727458fd3b28c7b1a78d95ea5acbc31962923aff0a261d43e9f51ad`  
+		Last Modified: Mon, 18 Nov 2024 20:06:32 GMT  
+		Size: 364.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:79be74f34f41c7e88691ba050be7c2a78401668d41560a8b11f86b1f45c5a411`  
+		Last Modified: Mon, 18 Nov 2024 20:06:32 GMT  
+		Size: 3.1 KB (3141 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.3.14.35` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:c039285153d9794aa2e78d3ea7c34a1c83c03a57ba0f07f7945245a27e8e2e4d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.3 KB (25278 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0c0127b13de2f69cada0646b70b1c38dbfcad4dc055b65343e605aa510d2d13a`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:bf6ed6310c4f352c18babfa257b66edcd2e8500ee6501271a1d1bbe15b4639c8`  
+		Last Modified: Mon, 18 Nov 2024 20:06:31 GMT  
+		Size: 25.3 KB (25278 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `clickhouse:24.3.14.35` - linux; arm64 variant v8
+
+```console
+$ docker pull clickhouse@sha256:834ec1b749893206dc7a6ba5aa9ac85446c8f58171d1e934311bea1801e6add0
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **286.0 MB (285993226 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fd94852f8c365151aa1775115b9a6ac2ca7701c67e8e174a2d1353737d2dbd79`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.3.14.35
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1bb8cd16abd8b1cc2089409c1804a81daf37d8c0b1e790771c8f3c627b4817d0`  
+		Last Modified: Mon, 18 Nov 2024 20:09:21 GMT  
+		Size: 250.5 MB (250489631 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:42d2b9ae7dc28a86d74efaf057fdf5fa3d7ec13f7e846f7f1adaeb4e6cab2db3`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 349.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:061c50d579970f38c199ee0d16d897797fe3baddf9e9c1515036ccb8d4741319`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 863.5 KB (863476 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bf56093c6ea32d71954bf6215e876e1dfd80d61536cc17c8cb1dd9042b5beacd`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0f2187ca256d0261e951dcaf4882c42e9af92da1da71954bc47fa1087978f2b8`  
+		Last Modified: Mon, 18 Nov 2024 20:09:17 GMT  
+		Size: 361.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7a9ba020a18f6f926b8e64647cbac78712f017c66ab7459780412ba1b3a4d820`  
+		Last Modified: Mon, 18 Nov 2024 20:09:17 GMT  
+		Size: 3.1 KB (3143 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.3.14.35` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:f27a92c93086fbd80abd972b59f9a45a8bd3ad61709630985199f09f20fe8ce3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.5 KB (25466 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0e92e3ca5118335d71cfd040286d52ed0118bd10ec5f4011f1e63d54e20222ca`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:8dd23a374d3a37db5702626e0c93c5216b79a2e7e9755d31c0c8ec3ba4fff5df`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 25.5 KB (25466 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.3.14.35-focal`
 
 ```console
-$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull clickhouse@sha256:a959b93fd697b98b666cd6785e9ae5c8399f97fd18c292cd05064b0ade1bdc10
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `clickhouse:24.3.14.35-focal` - linux; amd64
+
+```console
+$ docker pull clickhouse@sha256:bdfe63c36f0cb1d46c4afeb68b09ff5b232ceb6a93342af306cc37ef2caacc40
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **297.4 MB (297443951 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5ec830c15f99be6a4bc00e3f53130204977735cff5972d4639757fa8ed7261ba`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.3.14.35
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:dc4349295a30f5633937a1bc092bec1c82695ddfd8955b8bb5fedd667580fda1`  
+		Last Modified: Mon, 18 Nov 2024 20:06:31 GMT  
+		Size: 8.8 MB (8802606 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a90e98037cdc68bd3bd57a6f7d4e87a4b7bbbfda65c98dcb410b712e36ce9abc`  
+		Last Modified: Mon, 18 Nov 2024 20:06:38 GMT  
+		Size: 260.3 MB (260262844 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:603324bec5fdd275d1b54e5b85b4683fb79b60c25859e1a1e501de4c7385eb6c`  
+		Last Modified: Mon, 18 Nov 2024 20:06:30 GMT  
+		Size: 349.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:737142a71c6850267fbbca130d678ca0821ba40569c900cdc20ebfdd29c17e3b`  
+		Last Modified: Mon, 18 Nov 2024 20:06:31 GMT  
+		Size: 863.5 KB (863471 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e66c68ee28dcd47004997a8a48f04af830fb66cc9b6f660c3c7fe15ab924f1de`  
+		Last Modified: Mon, 18 Nov 2024 20:06:32 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a9eb19838727458fd3b28c7b1a78d95ea5acbc31962923aff0a261d43e9f51ad`  
+		Last Modified: Mon, 18 Nov 2024 20:06:32 GMT  
+		Size: 364.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:79be74f34f41c7e88691ba050be7c2a78401668d41560a8b11f86b1f45c5a411`  
+		Last Modified: Mon, 18 Nov 2024 20:06:32 GMT  
+		Size: 3.1 KB (3141 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.3.14.35-focal` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:c039285153d9794aa2e78d3ea7c34a1c83c03a57ba0f07f7945245a27e8e2e4d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.3 KB (25278 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0c0127b13de2f69cada0646b70b1c38dbfcad4dc055b65343e605aa510d2d13a`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:bf6ed6310c4f352c18babfa257b66edcd2e8500ee6501271a1d1bbe15b4639c8`  
+		Last Modified: Mon, 18 Nov 2024 20:06:31 GMT  
+		Size: 25.3 KB (25278 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `clickhouse:24.3.14.35-focal` - linux; arm64 variant v8
+
+```console
+$ docker pull clickhouse@sha256:834ec1b749893206dc7a6ba5aa9ac85446c8f58171d1e934311bea1801e6add0
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **286.0 MB (285993226 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fd94852f8c365151aa1775115b9a6ac2ca7701c67e8e174a2d1353737d2dbd79`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.3.14.35
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.3.14.35 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1bb8cd16abd8b1cc2089409c1804a81daf37d8c0b1e790771c8f3c627b4817d0`  
+		Last Modified: Mon, 18 Nov 2024 20:09:21 GMT  
+		Size: 250.5 MB (250489631 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:42d2b9ae7dc28a86d74efaf057fdf5fa3d7ec13f7e846f7f1adaeb4e6cab2db3`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 349.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:061c50d579970f38c199ee0d16d897797fe3baddf9e9c1515036ccb8d4741319`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 863.5 KB (863476 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bf56093c6ea32d71954bf6215e876e1dfd80d61536cc17c8cb1dd9042b5beacd`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0f2187ca256d0261e951dcaf4882c42e9af92da1da71954bc47fa1087978f2b8`  
+		Last Modified: Mon, 18 Nov 2024 20:09:17 GMT  
+		Size: 361.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7a9ba020a18f6f926b8e64647cbac78712f017c66ab7459780412ba1b3a4d820`  
+		Last Modified: Mon, 18 Nov 2024 20:09:17 GMT  
+		Size: 3.1 KB (3143 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.3.14.35-focal` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:f27a92c93086fbd80abd972b59f9a45a8bd3ad61709630985199f09f20fe8ce3
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.5 KB (25466 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0e92e3ca5118335d71cfd040286d52ed0118bd10ec5f4011f1e63d54e20222ca`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:8dd23a374d3a37db5702626e0c93c5216b79a2e7e9755d31c0c8ec3ba4fff5df`  
+		Last Modified: Mon, 18 Nov 2024 20:09:16 GMT  
+		Size: 25.5 KB (25466 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.8`
 
 ```console
-$ docker pull clickhouse@sha256:483935440135426977c106678d8e66a62cc35d6789d46da88404ab1fc5a381c3
+$ docker pull clickhouse@sha256:698363cd1136335696abf40a67f5546127dfdf5fe6ad2ca88fe60cd3ae7bdf2e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1687,13 +3703,13 @@ $ docker pull clickhouse@sha256:483935440135426977c106678d8e66a62cc35d6789d46da8
 ### `clickhouse:24.8` - linux; amd64
 
 ```console
-$ docker pull clickhouse@sha256:cdc811aae31208585fa3fb4f4f12a3d3acf32c4e26101f92ce8f563a605cd37a
+$ docker pull clickhouse@sha256:47cef6f2fbb1fb511670b86d9f4783ec9cfa3c072a40a59282a980cf38b6aa0c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **178.8 MB (178783594 bytes)**  
+-	Total Size: **178.8 MB (178812657 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8af14c36eab65d777010e7558f8c267935cf981ffb70df18f651c6b505848103`
+-	Image ID: `sha256:e1387e7bdaf532e3d74a9b01fa5552a8d49c42257102256a8dd84a75943af949`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -1709,48 +3725,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
 # Fri, 11 Oct 2024 03:38:27 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.8.6.70
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.8.7.41
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -1759,65 +3775,65 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85b07dd07e1b82d4c98112e85407bd268cf85766f2c34d147b20651183802910`  
-		Last Modified: Tue, 12 Nov 2024 00:55:47 GMT  
-		Size: 8.8 MB (8802576 bytes)  
+	-	`sha256:7e67b6741df06aa8eb8d8fcb7c95e8cc10d7e92f9a3cb3181ae40f97bba8a4f2`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 8.8 MB (8802629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69f45f27d0be4d81ed312ac77c0769ecc8a26ebe5a2f89fe1a5411013b124944`  
-		Last Modified: Tue, 12 Nov 2024 00:55:49 GMT  
-		Size: 141.6 MB (141602673 bytes)  
+	-	`sha256:d8ba309f2e22dfad8a2676a95340a87935e01c40b10278c763606e6a38f8ae3f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:18 GMT  
+		Size: 141.6 MB (141631685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dce7ca591ce59226feabf12de023349866551184c68e2e102fe522b32496a008`  
-		Last Modified: Tue, 12 Nov 2024 00:55:46 GMT  
+	-	`sha256:48aef40100afaae89d86927eec76e4e414602914f5b5e776ca029cf0907bf538`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
 		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41ef09230e4836d994bbe5443402cc90ef111b6f73ca6f76bab13170c36f853f`  
-		Last Modified: Tue, 12 Nov 2024 00:55:47 GMT  
-		Size: 863.5 KB (863476 bytes)  
+	-	`sha256:a0f960df628b7b0375c45e65adc733c6779004504ec3ef541e913e73cc895b07`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 863.5 KB (863478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c625ca81d187d83be46a1890b904f7a7217a8bfe819bb44172ff6eb35299dbf`  
-		Last Modified: Tue, 12 Nov 2024 00:55:47 GMT  
+	-	`sha256:ec64844717ad2ae00fe14780a6cc2f44eb95615036366e291852afabf464492f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d86a2945cbff6e172e884ea3d417becb92421dc5bfe36fb7a44c20ccaf7df9bc`  
-		Last Modified: Tue, 12 Nov 2024 00:55:48 GMT  
-		Size: 364.0 B  
+	-	`sha256:fc4d29135e7f625c0a17e60870a4120bf338bf85646c29a1281f4c26ef11796b`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eee8ade4d8aa3b9136d6604417a36f0141161876e30640d194d7a8328b96ae70`  
-		Last Modified: Tue, 12 Nov 2024 00:55:48 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:d2cfd9c027f10cb6506f9e0695b3c98044eab94a91ebe1b125e9b3f95f4e54c9`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 3.1 KB (3142 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24.8` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:21243244872f6c180cc0540daf6c78a7563153542ab8a4569a42ef6e6cf86fb9
+$ docker pull clickhouse@sha256:b101c6fca19411ff534750286eaf83eecb9bb127846c5077bbf85882c93b6d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **25.9 KB (25875 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e098533a234612bdb0324e86fa5b658021558488e993e0b47f1e4349a1096d38`
+-	Image ID: `sha256:23c985ecdf74273a1483a770cc4add37729a95eaf93cd09b69b9f5433d9ab26f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6e00efd847634f80df847d3d9a293f3653c937f4d22714d0574aeaf2755183e2`  
-		Last Modified: Tue, 12 Nov 2024 00:55:46 GMT  
+	-	`sha256:1c0ef4be653a14e13ddd9f068f8b7e943b538376f38f98b9a9c90b9ee1ceb60a`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
 		Size: 25.9 KB (25875 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clickhouse:24.8` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:232efe54fed33fb29e34d26048cda3acdf546796dd1c025e0b130b1acc0c2364
+$ docker pull clickhouse@sha256:d00c2769c76341b3cf1a4dc8e9f5a5b1ee9b893de45609ae576556ebab7882ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.2 MB (172169371 bytes)**  
+-	Total Size: **172.2 MB (172188479 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:193563e3cedf52c1cf0fac821d51c7f6027324022fde1b5acc3e709a6d8d07e7`
+-	Image ID: `sha256:0c08925b341a204c06bd134b161f7126a241b3031a0a0d2fc3ab207d2c58bef0`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -1833,48 +3849,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
 # Fri, 11 Oct 2024 03:39:47 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.8.6.70
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.8.7.41
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -1883,59 +3899,59 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23ba974f84eb2fc21ccc6b14da8a5b6116a1131bd64b71ae6fb6023c06759053`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
-		Size: 8.7 MB (8662321 bytes)  
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6948cfea4a51c536096b2b78d89558f999dc084aafe6d0a64ad270d500c584a3`  
-		Last Modified: Tue, 12 Nov 2024 01:08:40 GMT  
-		Size: 136.7 MB (136665946 bytes)  
+	-	`sha256:03120df1d949cda902248b711ed24360e5f33e29ab93d0fcc3ad4f49f4c94663`  
+		Last Modified: Mon, 18 Nov 2024 20:08:02 GMT  
+		Size: 136.7 MB (136685053 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ae1e740a57e967033425e15cbbef58623f580e3e05eaa488af2549150489016`  
-		Last Modified: Tue, 12 Nov 2024 01:08:37 GMT  
-		Size: 186.0 B  
+	-	`sha256:a05d90f88b9b12fdedfe65bc756bff7ebf2bcd74475f8002682c5912815c5ea0`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ca632dae928fb1896852c1fb89b6c1e5cdf2e934a59b4e94165c64241f35478`  
-		Last Modified: Tue, 12 Nov 2024 01:08:37 GMT  
-		Size: 863.5 KB (863471 bytes)  
+	-	`sha256:d73efb287cd7a74820405dc5e4d603782ddab7a5d7675d8257e9b89562076788`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 863.5 KB (863473 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49220562a2798401ef2a70bfba4f678a869b1627ab96f492fba656704002f582`  
-		Last Modified: Tue, 12 Nov 2024 01:08:37 GMT  
+	-	`sha256:021af34596bc467a509c70e886da66789b1d1cbb835980cfb8d2e74962bd504a`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13c29b785e3f2042e0c04eb6997fad37c4f703ac19a8f81c07b45531dc26e42d`  
-		Last Modified: Tue, 12 Nov 2024 01:08:38 GMT  
+	-	`sha256:9cf8f562b370201341e7dfa04698b7cd723787c43682db929bc33aa4618dc511`  
+		Last Modified: Mon, 18 Nov 2024 20:07:59 GMT  
 		Size: 361.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:438b90cdb70d964cf18a00c838bcbe410cb2b74a1fa57cf456fda21c4f0903a4`  
-		Last Modified: Tue, 12 Nov 2024 01:08:38 GMT  
-		Size: 3.1 KB (3142 bytes)  
+	-	`sha256:127256b32943afe8f2b034ae5168c0037568ed72ab28fecb0336a496b56352bf`  
+		Last Modified: Mon, 18 Nov 2024 20:07:59 GMT  
+		Size: 3.1 KB (3141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24.8` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:ddfe734a1c712615ee3d0127f21f4b191885287ccf44661a20ceebeec233d98a
+$ docker pull clickhouse@sha256:dee6a322dd46dd22fbcda8db3070427a0d203231dfafa78e92767b46a3a20ae0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **26.1 KB (26087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb0e80c78377cd8a46ca655d9b51e98396c3a1b41c98720ddd0880a3067768ac`
+-	Image ID: `sha256:4f4ccb8f250378ac75e417fc9c9f2ec26e248ad4d82ded701075407f0e6c2dab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d1a1a00d2596db9b2273ff26bbaca213308822cf8e26ab1c6cf979bc6ca32b96`  
-		Last Modified: Tue, 12 Nov 2024 01:08:37 GMT  
+	-	`sha256:df1379770a3a3a41c884e93ea770d057adc7fb09481238e53c57279c24b95360`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
 		Size: 26.1 KB (26087 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.8-focal`
 
 ```console
-$ docker pull clickhouse@sha256:483935440135426977c106678d8e66a62cc35d6789d46da88404ab1fc5a381c3
+$ docker pull clickhouse@sha256:698363cd1136335696abf40a67f5546127dfdf5fe6ad2ca88fe60cd3ae7bdf2e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1948,13 +3964,13 @@ $ docker pull clickhouse@sha256:483935440135426977c106678d8e66a62cc35d6789d46da8
 ### `clickhouse:24.8-focal` - linux; amd64
 
 ```console
-$ docker pull clickhouse@sha256:cdc811aae31208585fa3fb4f4f12a3d3acf32c4e26101f92ce8f563a605cd37a
+$ docker pull clickhouse@sha256:47cef6f2fbb1fb511670b86d9f4783ec9cfa3c072a40a59282a980cf38b6aa0c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **178.8 MB (178783594 bytes)**  
+-	Total Size: **178.8 MB (178812657 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8af14c36eab65d777010e7558f8c267935cf981ffb70df18f651c6b505848103`
+-	Image ID: `sha256:e1387e7bdaf532e3d74a9b01fa5552a8d49c42257102256a8dd84a75943af949`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -1970,48 +3986,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
 # Fri, 11 Oct 2024 03:38:27 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.8.6.70
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.8.7.41
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -2020,65 +4036,65 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85b07dd07e1b82d4c98112e85407bd268cf85766f2c34d147b20651183802910`  
-		Last Modified: Tue, 12 Nov 2024 00:55:47 GMT  
-		Size: 8.8 MB (8802576 bytes)  
+	-	`sha256:7e67b6741df06aa8eb8d8fcb7c95e8cc10d7e92f9a3cb3181ae40f97bba8a4f2`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 8.8 MB (8802629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69f45f27d0be4d81ed312ac77c0769ecc8a26ebe5a2f89fe1a5411013b124944`  
-		Last Modified: Tue, 12 Nov 2024 00:55:49 GMT  
-		Size: 141.6 MB (141602673 bytes)  
+	-	`sha256:d8ba309f2e22dfad8a2676a95340a87935e01c40b10278c763606e6a38f8ae3f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:18 GMT  
+		Size: 141.6 MB (141631685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dce7ca591ce59226feabf12de023349866551184c68e2e102fe522b32496a008`  
-		Last Modified: Tue, 12 Nov 2024 00:55:46 GMT  
+	-	`sha256:48aef40100afaae89d86927eec76e4e414602914f5b5e776ca029cf0907bf538`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
 		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41ef09230e4836d994bbe5443402cc90ef111b6f73ca6f76bab13170c36f853f`  
-		Last Modified: Tue, 12 Nov 2024 00:55:47 GMT  
-		Size: 863.5 KB (863476 bytes)  
+	-	`sha256:a0f960df628b7b0375c45e65adc733c6779004504ec3ef541e913e73cc895b07`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 863.5 KB (863478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c625ca81d187d83be46a1890b904f7a7217a8bfe819bb44172ff6eb35299dbf`  
-		Last Modified: Tue, 12 Nov 2024 00:55:47 GMT  
+	-	`sha256:ec64844717ad2ae00fe14780a6cc2f44eb95615036366e291852afabf464492f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d86a2945cbff6e172e884ea3d417becb92421dc5bfe36fb7a44c20ccaf7df9bc`  
-		Last Modified: Tue, 12 Nov 2024 00:55:48 GMT  
-		Size: 364.0 B  
+	-	`sha256:fc4d29135e7f625c0a17e60870a4120bf338bf85646c29a1281f4c26ef11796b`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eee8ade4d8aa3b9136d6604417a36f0141161876e30640d194d7a8328b96ae70`  
-		Last Modified: Tue, 12 Nov 2024 00:55:48 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:d2cfd9c027f10cb6506f9e0695b3c98044eab94a91ebe1b125e9b3f95f4e54c9`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 3.1 KB (3142 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24.8-focal` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:21243244872f6c180cc0540daf6c78a7563153542ab8a4569a42ef6e6cf86fb9
+$ docker pull clickhouse@sha256:b101c6fca19411ff534750286eaf83eecb9bb127846c5077bbf85882c93b6d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **25.9 KB (25875 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e098533a234612bdb0324e86fa5b658021558488e993e0b47f1e4349a1096d38`
+-	Image ID: `sha256:23c985ecdf74273a1483a770cc4add37729a95eaf93cd09b69b9f5433d9ab26f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6e00efd847634f80df847d3d9a293f3653c937f4d22714d0574aeaf2755183e2`  
-		Last Modified: Tue, 12 Nov 2024 00:55:46 GMT  
+	-	`sha256:1c0ef4be653a14e13ddd9f068f8b7e943b538376f38f98b9a9c90b9ee1ceb60a`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
 		Size: 25.9 KB (25875 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clickhouse:24.8-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:232efe54fed33fb29e34d26048cda3acdf546796dd1c025e0b130b1acc0c2364
+$ docker pull clickhouse@sha256:d00c2769c76341b3cf1a4dc8e9f5a5b1ee9b893de45609ae576556ebab7882ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.2 MB (172169371 bytes)**  
+-	Total Size: **172.2 MB (172188479 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:193563e3cedf52c1cf0fac821d51c7f6027324022fde1b5acc3e709a6d8d07e7`
+-	Image ID: `sha256:0c08925b341a204c06bd134b161f7126a241b3031a0a0d2fc3ab207d2c58bef0`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -2094,48 +4110,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
 # Fri, 11 Oct 2024 03:39:47 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.8.6.70
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.8.7.41
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -2144,95 +4160,1103 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23ba974f84eb2fc21ccc6b14da8a5b6116a1131bd64b71ae6fb6023c06759053`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
-		Size: 8.7 MB (8662321 bytes)  
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6948cfea4a51c536096b2b78d89558f999dc084aafe6d0a64ad270d500c584a3`  
-		Last Modified: Tue, 12 Nov 2024 01:08:40 GMT  
-		Size: 136.7 MB (136665946 bytes)  
+	-	`sha256:03120df1d949cda902248b711ed24360e5f33e29ab93d0fcc3ad4f49f4c94663`  
+		Last Modified: Mon, 18 Nov 2024 20:08:02 GMT  
+		Size: 136.7 MB (136685053 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ae1e740a57e967033425e15cbbef58623f580e3e05eaa488af2549150489016`  
-		Last Modified: Tue, 12 Nov 2024 01:08:37 GMT  
-		Size: 186.0 B  
+	-	`sha256:a05d90f88b9b12fdedfe65bc756bff7ebf2bcd74475f8002682c5912815c5ea0`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ca632dae928fb1896852c1fb89b6c1e5cdf2e934a59b4e94165c64241f35478`  
-		Last Modified: Tue, 12 Nov 2024 01:08:37 GMT  
-		Size: 863.5 KB (863471 bytes)  
+	-	`sha256:d73efb287cd7a74820405dc5e4d603782ddab7a5d7675d8257e9b89562076788`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 863.5 KB (863473 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49220562a2798401ef2a70bfba4f678a869b1627ab96f492fba656704002f582`  
-		Last Modified: Tue, 12 Nov 2024 01:08:37 GMT  
+	-	`sha256:021af34596bc467a509c70e886da66789b1d1cbb835980cfb8d2e74962bd504a`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13c29b785e3f2042e0c04eb6997fad37c4f703ac19a8f81c07b45531dc26e42d`  
-		Last Modified: Tue, 12 Nov 2024 01:08:38 GMT  
+	-	`sha256:9cf8f562b370201341e7dfa04698b7cd723787c43682db929bc33aa4618dc511`  
+		Last Modified: Mon, 18 Nov 2024 20:07:59 GMT  
 		Size: 361.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:438b90cdb70d964cf18a00c838bcbe410cb2b74a1fa57cf456fda21c4f0903a4`  
-		Last Modified: Tue, 12 Nov 2024 01:08:38 GMT  
-		Size: 3.1 KB (3142 bytes)  
+	-	`sha256:127256b32943afe8f2b034ae5168c0037568ed72ab28fecb0336a496b56352bf`  
+		Last Modified: Mon, 18 Nov 2024 20:07:59 GMT  
+		Size: 3.1 KB (3141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24.8-focal` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:ddfe734a1c712615ee3d0127f21f4b191885287ccf44661a20ceebeec233d98a
+$ docker pull clickhouse@sha256:dee6a322dd46dd22fbcda8db3070427a0d203231dfafa78e92767b46a3a20ae0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **26.1 KB (26087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb0e80c78377cd8a46ca655d9b51e98396c3a1b41c98720ddd0880a3067768ac`
+-	Image ID: `sha256:4f4ccb8f250378ac75e417fc9c9f2ec26e248ad4d82ded701075407f0e6c2dab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d1a1a00d2596db9b2273ff26bbaca213308822cf8e26ab1c6cf979bc6ca32b96`  
-		Last Modified: Tue, 12 Nov 2024 01:08:37 GMT  
+	-	`sha256:df1379770a3a3a41c884e93ea770d057adc7fb09481238e53c57279c24b95360`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
 		Size: 26.1 KB (26087 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.8.7`
 
 ```console
-$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull clickhouse@sha256:698363cd1136335696abf40a67f5546127dfdf5fe6ad2ca88fe60cd3ae7bdf2e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `clickhouse:24.8.7` - linux; amd64
+
+```console
+$ docker pull clickhouse@sha256:47cef6f2fbb1fb511670b86d9f4783ec9cfa3c072a40a59282a980cf38b6aa0c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **178.8 MB (178812657 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e1387e7bdaf532e3d74a9b01fa5552a8d49c42257102256a8dd84a75943af949`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.8.7.41
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7e67b6741df06aa8eb8d8fcb7c95e8cc10d7e92f9a3cb3181ae40f97bba8a4f2`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 8.8 MB (8802629 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d8ba309f2e22dfad8a2676a95340a87935e01c40b10278c763606e6a38f8ae3f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:18 GMT  
+		Size: 141.6 MB (141631685 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:48aef40100afaae89d86927eec76e4e414602914f5b5e776ca029cf0907bf538`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 185.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a0f960df628b7b0375c45e65adc733c6779004504ec3ef541e913e73cc895b07`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 863.5 KB (863478 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ec64844717ad2ae00fe14780a6cc2f44eb95615036366e291852afabf464492f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fc4d29135e7f625c0a17e60870a4120bf338bf85646c29a1281f4c26ef11796b`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 362.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d2cfd9c027f10cb6506f9e0695b3c98044eab94a91ebe1b125e9b3f95f4e54c9`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 3.1 KB (3142 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.8.7` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:b101c6fca19411ff534750286eaf83eecb9bb127846c5077bbf85882c93b6d5e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.9 KB (25875 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:23c985ecdf74273a1483a770cc4add37729a95eaf93cd09b69b9f5433d9ab26f`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:1c0ef4be653a14e13ddd9f068f8b7e943b538376f38f98b9a9c90b9ee1ceb60a`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 25.9 KB (25875 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `clickhouse:24.8.7` - linux; arm64 variant v8
+
+```console
+$ docker pull clickhouse@sha256:d00c2769c76341b3cf1a4dc8e9f5a5b1ee9b893de45609ae576556ebab7882ef
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **172.2 MB (172188479 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0c08925b341a204c06bd134b161f7126a241b3031a0a0d2fc3ab207d2c58bef0`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.8.7.41
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:03120df1d949cda902248b711ed24360e5f33e29ab93d0fcc3ad4f49f4c94663`  
+		Last Modified: Mon, 18 Nov 2024 20:08:02 GMT  
+		Size: 136.7 MB (136685053 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a05d90f88b9b12fdedfe65bc756bff7ebf2bcd74475f8002682c5912815c5ea0`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 185.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d73efb287cd7a74820405dc5e4d603782ddab7a5d7675d8257e9b89562076788`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 863.5 KB (863473 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:021af34596bc467a509c70e886da66789b1d1cbb835980cfb8d2e74962bd504a`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9cf8f562b370201341e7dfa04698b7cd723787c43682db929bc33aa4618dc511`  
+		Last Modified: Mon, 18 Nov 2024 20:07:59 GMT  
+		Size: 361.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:127256b32943afe8f2b034ae5168c0037568ed72ab28fecb0336a496b56352bf`  
+		Last Modified: Mon, 18 Nov 2024 20:07:59 GMT  
+		Size: 3.1 KB (3141 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.8.7` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:dee6a322dd46dd22fbcda8db3070427a0d203231dfafa78e92767b46a3a20ae0
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **26.1 KB (26087 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4f4ccb8f250378ac75e417fc9c9f2ec26e248ad4d82ded701075407f0e6c2dab`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:df1379770a3a3a41c884e93ea770d057adc7fb09481238e53c57279c24b95360`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 26.1 KB (26087 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.8.7-focal`
 
 ```console
-$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull clickhouse@sha256:698363cd1136335696abf40a67f5546127dfdf5fe6ad2ca88fe60cd3ae7bdf2e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `clickhouse:24.8.7-focal` - linux; amd64
+
+```console
+$ docker pull clickhouse@sha256:47cef6f2fbb1fb511670b86d9f4783ec9cfa3c072a40a59282a980cf38b6aa0c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **178.8 MB (178812657 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e1387e7bdaf532e3d74a9b01fa5552a8d49c42257102256a8dd84a75943af949`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.8.7.41
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7e67b6741df06aa8eb8d8fcb7c95e8cc10d7e92f9a3cb3181ae40f97bba8a4f2`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 8.8 MB (8802629 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d8ba309f2e22dfad8a2676a95340a87935e01c40b10278c763606e6a38f8ae3f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:18 GMT  
+		Size: 141.6 MB (141631685 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:48aef40100afaae89d86927eec76e4e414602914f5b5e776ca029cf0907bf538`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 185.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a0f960df628b7b0375c45e65adc733c6779004504ec3ef541e913e73cc895b07`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 863.5 KB (863478 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ec64844717ad2ae00fe14780a6cc2f44eb95615036366e291852afabf464492f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fc4d29135e7f625c0a17e60870a4120bf338bf85646c29a1281f4c26ef11796b`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 362.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d2cfd9c027f10cb6506f9e0695b3c98044eab94a91ebe1b125e9b3f95f4e54c9`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 3.1 KB (3142 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.8.7-focal` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:b101c6fca19411ff534750286eaf83eecb9bb127846c5077bbf85882c93b6d5e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.9 KB (25875 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:23c985ecdf74273a1483a770cc4add37729a95eaf93cd09b69b9f5433d9ab26f`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:1c0ef4be653a14e13ddd9f068f8b7e943b538376f38f98b9a9c90b9ee1ceb60a`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 25.9 KB (25875 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `clickhouse:24.8.7-focal` - linux; arm64 variant v8
+
+```console
+$ docker pull clickhouse@sha256:d00c2769c76341b3cf1a4dc8e9f5a5b1ee9b893de45609ae576556ebab7882ef
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **172.2 MB (172188479 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0c08925b341a204c06bd134b161f7126a241b3031a0a0d2fc3ab207d2c58bef0`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.8.7.41
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:03120df1d949cda902248b711ed24360e5f33e29ab93d0fcc3ad4f49f4c94663`  
+		Last Modified: Mon, 18 Nov 2024 20:08:02 GMT  
+		Size: 136.7 MB (136685053 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a05d90f88b9b12fdedfe65bc756bff7ebf2bcd74475f8002682c5912815c5ea0`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 185.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d73efb287cd7a74820405dc5e4d603782ddab7a5d7675d8257e9b89562076788`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 863.5 KB (863473 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:021af34596bc467a509c70e886da66789b1d1cbb835980cfb8d2e74962bd504a`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9cf8f562b370201341e7dfa04698b7cd723787c43682db929bc33aa4618dc511`  
+		Last Modified: Mon, 18 Nov 2024 20:07:59 GMT  
+		Size: 361.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:127256b32943afe8f2b034ae5168c0037568ed72ab28fecb0336a496b56352bf`  
+		Last Modified: Mon, 18 Nov 2024 20:07:59 GMT  
+		Size: 3.1 KB (3141 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.8.7-focal` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:dee6a322dd46dd22fbcda8db3070427a0d203231dfafa78e92767b46a3a20ae0
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **26.1 KB (26087 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4f4ccb8f250378ac75e417fc9c9f2ec26e248ad4d82ded701075407f0e6c2dab`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:df1379770a3a3a41c884e93ea770d057adc7fb09481238e53c57279c24b95360`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 26.1 KB (26087 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.8.7.41`
 
 ```console
-$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull clickhouse@sha256:698363cd1136335696abf40a67f5546127dfdf5fe6ad2ca88fe60cd3ae7bdf2e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `clickhouse:24.8.7.41` - linux; amd64
+
+```console
+$ docker pull clickhouse@sha256:47cef6f2fbb1fb511670b86d9f4783ec9cfa3c072a40a59282a980cf38b6aa0c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **178.8 MB (178812657 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e1387e7bdaf532e3d74a9b01fa5552a8d49c42257102256a8dd84a75943af949`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.8.7.41
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7e67b6741df06aa8eb8d8fcb7c95e8cc10d7e92f9a3cb3181ae40f97bba8a4f2`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 8.8 MB (8802629 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d8ba309f2e22dfad8a2676a95340a87935e01c40b10278c763606e6a38f8ae3f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:18 GMT  
+		Size: 141.6 MB (141631685 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:48aef40100afaae89d86927eec76e4e414602914f5b5e776ca029cf0907bf538`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 185.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a0f960df628b7b0375c45e65adc733c6779004504ec3ef541e913e73cc895b07`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 863.5 KB (863478 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ec64844717ad2ae00fe14780a6cc2f44eb95615036366e291852afabf464492f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fc4d29135e7f625c0a17e60870a4120bf338bf85646c29a1281f4c26ef11796b`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 362.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d2cfd9c027f10cb6506f9e0695b3c98044eab94a91ebe1b125e9b3f95f4e54c9`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 3.1 KB (3142 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.8.7.41` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:b101c6fca19411ff534750286eaf83eecb9bb127846c5077bbf85882c93b6d5e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.9 KB (25875 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:23c985ecdf74273a1483a770cc4add37729a95eaf93cd09b69b9f5433d9ab26f`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:1c0ef4be653a14e13ddd9f068f8b7e943b538376f38f98b9a9c90b9ee1ceb60a`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 25.9 KB (25875 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `clickhouse:24.8.7.41` - linux; arm64 variant v8
+
+```console
+$ docker pull clickhouse@sha256:d00c2769c76341b3cf1a4dc8e9f5a5b1ee9b893de45609ae576556ebab7882ef
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **172.2 MB (172188479 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0c08925b341a204c06bd134b161f7126a241b3031a0a0d2fc3ab207d2c58bef0`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.8.7.41
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:03120df1d949cda902248b711ed24360e5f33e29ab93d0fcc3ad4f49f4c94663`  
+		Last Modified: Mon, 18 Nov 2024 20:08:02 GMT  
+		Size: 136.7 MB (136685053 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a05d90f88b9b12fdedfe65bc756bff7ebf2bcd74475f8002682c5912815c5ea0`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 185.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d73efb287cd7a74820405dc5e4d603782ddab7a5d7675d8257e9b89562076788`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 863.5 KB (863473 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:021af34596bc467a509c70e886da66789b1d1cbb835980cfb8d2e74962bd504a`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9cf8f562b370201341e7dfa04698b7cd723787c43682db929bc33aa4618dc511`  
+		Last Modified: Mon, 18 Nov 2024 20:07:59 GMT  
+		Size: 361.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:127256b32943afe8f2b034ae5168c0037568ed72ab28fecb0336a496b56352bf`  
+		Last Modified: Mon, 18 Nov 2024 20:07:59 GMT  
+		Size: 3.1 KB (3141 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.8.7.41` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:dee6a322dd46dd22fbcda8db3070427a0d203231dfafa78e92767b46a3a20ae0
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **26.1 KB (26087 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4f4ccb8f250378ac75e417fc9c9f2ec26e248ad4d82ded701075407f0e6c2dab`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:df1379770a3a3a41c884e93ea770d057adc7fb09481238e53c57279c24b95360`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 26.1 KB (26087 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.8.7.41-focal`
 
 ```console
-$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull clickhouse@sha256:698363cd1136335696abf40a67f5546127dfdf5fe6ad2ca88fe60cd3ae7bdf2e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `clickhouse:24.8.7.41-focal` - linux; amd64
+
+```console
+$ docker pull clickhouse@sha256:47cef6f2fbb1fb511670b86d9f4783ec9cfa3c072a40a59282a980cf38b6aa0c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **178.8 MB (178812657 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e1387e7bdaf532e3d74a9b01fa5552a8d49c42257102256a8dd84a75943af949`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.8.7.41
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7e67b6741df06aa8eb8d8fcb7c95e8cc10d7e92f9a3cb3181ae40f97bba8a4f2`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 8.8 MB (8802629 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d8ba309f2e22dfad8a2676a95340a87935e01c40b10278c763606e6a38f8ae3f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:18 GMT  
+		Size: 141.6 MB (141631685 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:48aef40100afaae89d86927eec76e4e414602914f5b5e776ca029cf0907bf538`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 185.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a0f960df628b7b0375c45e65adc733c6779004504ec3ef541e913e73cc895b07`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 863.5 KB (863478 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ec64844717ad2ae00fe14780a6cc2f44eb95615036366e291852afabf464492f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fc4d29135e7f625c0a17e60870a4120bf338bf85646c29a1281f4c26ef11796b`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 362.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d2cfd9c027f10cb6506f9e0695b3c98044eab94a91ebe1b125e9b3f95f4e54c9`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 3.1 KB (3142 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.8.7.41-focal` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:b101c6fca19411ff534750286eaf83eecb9bb127846c5077bbf85882c93b6d5e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.9 KB (25875 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:23c985ecdf74273a1483a770cc4add37729a95eaf93cd09b69b9f5433d9ab26f`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:1c0ef4be653a14e13ddd9f068f8b7e943b538376f38f98b9a9c90b9ee1ceb60a`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 25.9 KB (25875 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `clickhouse:24.8.7.41-focal` - linux; arm64 variant v8
+
+```console
+$ docker pull clickhouse@sha256:d00c2769c76341b3cf1a4dc8e9f5a5b1ee9b893de45609ae576556ebab7882ef
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **172.2 MB (172188479 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0c08925b341a204c06bd134b161f7126a241b3031a0a0d2fc3ab207d2c58bef0`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.8.7.41
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:03120df1d949cda902248b711ed24360e5f33e29ab93d0fcc3ad4f49f4c94663`  
+		Last Modified: Mon, 18 Nov 2024 20:08:02 GMT  
+		Size: 136.7 MB (136685053 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a05d90f88b9b12fdedfe65bc756bff7ebf2bcd74475f8002682c5912815c5ea0`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 185.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d73efb287cd7a74820405dc5e4d603782ddab7a5d7675d8257e9b89562076788`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 863.5 KB (863473 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:021af34596bc467a509c70e886da66789b1d1cbb835980cfb8d2e74962bd504a`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9cf8f562b370201341e7dfa04698b7cd723787c43682db929bc33aa4618dc511`  
+		Last Modified: Mon, 18 Nov 2024 20:07:59 GMT  
+		Size: 361.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:127256b32943afe8f2b034ae5168c0037568ed72ab28fecb0336a496b56352bf`  
+		Last Modified: Mon, 18 Nov 2024 20:07:59 GMT  
+		Size: 3.1 KB (3141 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.8.7.41-focal` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:dee6a322dd46dd22fbcda8db3070427a0d203231dfafa78e92767b46a3a20ae0
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **26.1 KB (26087 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4f4ccb8f250378ac75e417fc9c9f2ec26e248ad4d82ded701075407f0e6c2dab`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:df1379770a3a3a41c884e93ea770d057adc7fb09481238e53c57279c24b95360`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 26.1 KB (26087 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.9`
 
 ```console
-$ docker pull clickhouse@sha256:a4c1e4a9897de86216d9cea74acc1796d2e678698c704aae376cb6131618123a
+$ docker pull clickhouse@sha256:95917d87b6c57270af9abdfbeaa5d7b88d813a4a28d984d16207ed038818da86
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2245,13 +5269,13 @@ $ docker pull clickhouse@sha256:a4c1e4a9897de86216d9cea74acc1796d2e678698c704aae
 ### `clickhouse:24.9` - linux; amd64
 
 ```console
-$ docker pull clickhouse@sha256:ae9b0d3d63d3d35aa0113a2a38063a10840ebc0f37e87fb362740971f0521e06
+$ docker pull clickhouse@sha256:24c147a07e416691cef95aae7ffa58ea07439880fd3022fbff329329a74ac049
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **181.4 MB (181386353 bytes)**  
+-	Total Size: **179.3 MB (179305080 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:797296700c3fcc096d888f8695ac176c5c33d248a6d5623d38e691ded69f6356`
+-	Image ID: `sha256:8481deefc73e3bcb2c21bd0d76d8c2415b41fcc564993e7621fd4940409c1db7`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -2267,48 +5291,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
 # Fri, 11 Oct 2024 03:38:27 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.9.2.42
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.9.3.128
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.2.42 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.2.42 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.2.42 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.2.42 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -2317,65 +5341,65 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e68efb36e419c9ae1ea4abc884c927fd41b3b6882420f53b60c1954dc6cd314`  
-		Last Modified: Tue, 12 Nov 2024 00:55:41 GMT  
-		Size: 8.8 MB (8802641 bytes)  
+	-	`sha256:5e15b0b4d694bad5f3c6ca5e5744f61f6f07837e6dcf88c5dd86ce6646b65f39`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 8.8 MB (8802589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e59482d5b9e8ac2275b7beacb6480996f8cd17ce43d0889428ed38d8ab5f7f38`  
-		Last Modified: Tue, 12 Nov 2024 00:55:43 GMT  
-		Size: 144.2 MB (144205372 bytes)  
+	-	`sha256:b3ba56f782ba1762e80edd7d2920b4b0970a37f738f8284be32d04ed9efddf2a`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 142.1 MB (142124154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:859a0e6cfc617c6d9273e2eb2bbb4dce205345e81959323a66dc490f3e61dfcf`  
-		Last Modified: Tue, 12 Nov 2024 00:55:41 GMT  
-		Size: 186.0 B  
+	-	`sha256:be5fd0be77bf5fef30f129aa2516620add4a583706017496cc11384924ce4ead`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d48af0c00d3ecb9124aefb75aafeeff66caeed524790e65ba7efbe3d6000006e`  
-		Last Modified: Tue, 12 Nov 2024 00:55:41 GMT  
+	-	`sha256:2ecda6c4ae5ded0d521129071991a02ed0fee3c43f544a5358e77c6c89036ebf`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
 		Size: 863.5 KB (863474 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4a1285251c75b3b6f72a0d1ff0fc9381e5f064899820ba81091314bf284533ec`  
-		Last Modified: Tue, 12 Nov 2024 00:55:41 GMT  
+	-	`sha256:60b2f8d34b2bbcca1e9b028a99c34b66a57c80d78d50151d2e7ed46daa6a7808`  
+		Last Modified: Mon, 18 Nov 2024 20:06:14 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8f6ba6c98f4885d8fad2ae658a77d668456ae07badd4e3dadacb49ce8d96dee`  
-		Last Modified: Tue, 12 Nov 2024 00:55:42 GMT  
-		Size: 360.0 B  
+	-	`sha256:217024fbf7f8b25ec8ce47d74c2a1ffead51e7364c018fd410c8fd180677b55f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:14 GMT  
+		Size: 361.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9028d92b314d2596e2d3f5ce617257a35c38a1d2e79ba962357a2741963df81a`  
-		Last Modified: Tue, 12 Nov 2024 00:55:42 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:105b54b1cca978a37bee956925552d8b406dd1211ff113c1fd2ca37186190246`  
+		Last Modified: Mon, 18 Nov 2024 20:06:14 GMT  
+		Size: 3.1 KB (3141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24.9` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:479224fc13cc78d123e923233199190e76a883373000ce7dde3d1869f096a402
+$ docker pull clickhouse@sha256:83e6726807428e467a209397221766017bd35c36cebd3291edaf23dfd4d4d876
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.3 KB (25263 bytes)**  
+-	Total Size: **25.3 KB (25274 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95f7318cc7d666c8f431be751b0b881d1e1442a837eab71946ca1e4270528d4e`
+-	Image ID: `sha256:65b65aadce97ae243b0258cd77399b506f0ec9f6ce53229548cad3b054b85191`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:509647db4ed48d459339826f0d270211db4eac76ed3f2e57d160ee7cc8836ffa`  
-		Last Modified: Tue, 12 Nov 2024 00:55:41 GMT  
-		Size: 25.3 KB (25263 bytes)  
+	-	`sha256:d99e3dea25205bcee42d5ec71a98fa8c98d79fa3aabea5f6b207c80320136afc`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 25.3 KB (25274 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clickhouse:24.9` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:368cbcd37206ebf95468318546259ebb796c2d1d295d31ea980b6df80ad64ed1
+$ docker pull clickhouse@sha256:ff0663d28148ff37f407c0747c0ec2ee1daa7edf402902e297b9498e72f185d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.4 MB (174393866 bytes)**  
+-	Total Size: **172.6 MB (172636079 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3914cdd99af870b7975a77088bf91e5f1440e73f9836f26aa420ecde6878b92a`
+-	Image ID: `sha256:e9757d60d8ef45953a75e2064857bc2840a2e9852e16836453128270a67f0679`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -2391,48 +5415,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
 # Fri, 11 Oct 2024 03:39:47 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.9.2.42
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.9.3.128
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.2.42 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.2.42 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.2.42 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.2.42 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -2441,59 +5465,59 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23ba974f84eb2fc21ccc6b14da8a5b6116a1131bd64b71ae6fb6023c06759053`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
-		Size: 8.7 MB (8662321 bytes)  
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b4cd409aa7a2dc0bb2030b168d4d164e6e7b569de28f07716b37b8b2b27bfc96`  
-		Last Modified: Tue, 12 Nov 2024 01:07:49 GMT  
-		Size: 138.9 MB (138890440 bytes)  
+	-	`sha256:54eee1a828755b8263fe2502b17ab154bf021d94eb2f403be0f11c9114c4fbdb`  
+		Last Modified: Mon, 18 Nov 2024 20:07:04 GMT  
+		Size: 137.1 MB (137132654 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62b9ff1aef9a175262e6028b4451b9bb3fd931b2a590b7771f393534756e9b02`  
-		Last Modified: Tue, 12 Nov 2024 01:07:46 GMT  
+	-	`sha256:e9f774813cb7f9b1a6441941042f3066f75022a99edb91b1b2c957a7a3b61757`  
+		Last Modified: Mon, 18 Nov 2024 20:07:01 GMT  
 		Size: 184.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1735bf61434f2c3d5e2b69c84b035080c356cd05e3c7d7e364fa72146ca0b7d`  
-		Last Modified: Tue, 12 Nov 2024 01:07:46 GMT  
-		Size: 863.5 KB (863472 bytes)  
+	-	`sha256:952515573b1c5460b81626a0a61476bb346e4e70b923a873661af0cbd18fabeb`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 863.5 KB (863471 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:015af92968bb35cf6a9f3d3da9ffcc1247793a951f2cae23f4df58feb5a5b935`  
-		Last Modified: Tue, 12 Nov 2024 01:07:46 GMT  
+	-	`sha256:cfd67aeea5e6ea64c2f333b0a053da848613823a6f686d77d8e19696b1374f0a`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81fbce02053b8c546bea00f06df6024c96893880d917af9ac6bcff5c86dfa76e`  
-		Last Modified: Tue, 12 Nov 2024 01:07:47 GMT  
-		Size: 362.0 B  
+	-	`sha256:47dbe23c4dcb320ba874bc91b536a8d51463d9ac61ba829ed901b1a2be327b36`  
+		Last Modified: Mon, 18 Nov 2024 20:07:03 GMT  
+		Size: 361.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4a9cca3930b6fe8cec4b1788f45fa096342d3460e07668dd60ac57de4211bca8`  
-		Last Modified: Tue, 12 Nov 2024 01:07:47 GMT  
+	-	`sha256:fe91bb7b2da741a03a2af4eb41773365e8ae5e4a499c68409bb27a146a04c261`  
+		Last Modified: Mon, 18 Nov 2024 20:07:03 GMT  
 		Size: 3.1 KB (3143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24.9` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:07174820d710f6b3657b9b6a47e4066cadcd9606279952ec166a8eaf5106b049
+$ docker pull clickhouse@sha256:1897282b473c2d034c8566a4d3d83039be197c92469ae5b61594cbc6fc00357d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.5 KB (25451 bytes)**  
+-	Total Size: **25.5 KB (25462 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:17b85815816540b5849b962fce81e36f5c6f6d66171aafa98fde573178598d17`
+-	Image ID: `sha256:6f05f49e41fb1f170d36e02cffe5ebc991782bd236d1e9edafa0d36af3de38bb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f0731053bbad48baf1fcce8c7676743469de10d412e08553f912d0d80732e09b`  
-		Last Modified: Tue, 12 Nov 2024 01:07:46 GMT  
-		Size: 25.5 KB (25451 bytes)  
+	-	`sha256:394afef8bb85ec6c69f19efabcddc608c825603d4cf61ceffdc415ceb5851332`  
+		Last Modified: Mon, 18 Nov 2024 20:07:01 GMT  
+		Size: 25.5 KB (25462 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.9-focal`
 
 ```console
-$ docker pull clickhouse@sha256:a4c1e4a9897de86216d9cea74acc1796d2e678698c704aae376cb6131618123a
+$ docker pull clickhouse@sha256:95917d87b6c57270af9abdfbeaa5d7b88d813a4a28d984d16207ed038818da86
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2506,13 +5530,13 @@ $ docker pull clickhouse@sha256:a4c1e4a9897de86216d9cea74acc1796d2e678698c704aae
 ### `clickhouse:24.9-focal` - linux; amd64
 
 ```console
-$ docker pull clickhouse@sha256:ae9b0d3d63d3d35aa0113a2a38063a10840ebc0f37e87fb362740971f0521e06
+$ docker pull clickhouse@sha256:24c147a07e416691cef95aae7ffa58ea07439880fd3022fbff329329a74ac049
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **181.4 MB (181386353 bytes)**  
+-	Total Size: **179.3 MB (179305080 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:797296700c3fcc096d888f8695ac176c5c33d248a6d5623d38e691ded69f6356`
+-	Image ID: `sha256:8481deefc73e3bcb2c21bd0d76d8c2415b41fcc564993e7621fd4940409c1db7`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -2528,48 +5552,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
 # Fri, 11 Oct 2024 03:38:27 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.9.2.42
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.9.3.128
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.2.42 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.2.42 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.2.42 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.2.42 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -2578,65 +5602,65 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e68efb36e419c9ae1ea4abc884c927fd41b3b6882420f53b60c1954dc6cd314`  
-		Last Modified: Tue, 12 Nov 2024 00:55:41 GMT  
-		Size: 8.8 MB (8802641 bytes)  
+	-	`sha256:5e15b0b4d694bad5f3c6ca5e5744f61f6f07837e6dcf88c5dd86ce6646b65f39`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 8.8 MB (8802589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e59482d5b9e8ac2275b7beacb6480996f8cd17ce43d0889428ed38d8ab5f7f38`  
-		Last Modified: Tue, 12 Nov 2024 00:55:43 GMT  
-		Size: 144.2 MB (144205372 bytes)  
+	-	`sha256:b3ba56f782ba1762e80edd7d2920b4b0970a37f738f8284be32d04ed9efddf2a`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 142.1 MB (142124154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:859a0e6cfc617c6d9273e2eb2bbb4dce205345e81959323a66dc490f3e61dfcf`  
-		Last Modified: Tue, 12 Nov 2024 00:55:41 GMT  
-		Size: 186.0 B  
+	-	`sha256:be5fd0be77bf5fef30f129aa2516620add4a583706017496cc11384924ce4ead`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d48af0c00d3ecb9124aefb75aafeeff66caeed524790e65ba7efbe3d6000006e`  
-		Last Modified: Tue, 12 Nov 2024 00:55:41 GMT  
+	-	`sha256:2ecda6c4ae5ded0d521129071991a02ed0fee3c43f544a5358e77c6c89036ebf`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
 		Size: 863.5 KB (863474 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4a1285251c75b3b6f72a0d1ff0fc9381e5f064899820ba81091314bf284533ec`  
-		Last Modified: Tue, 12 Nov 2024 00:55:41 GMT  
+	-	`sha256:60b2f8d34b2bbcca1e9b028a99c34b66a57c80d78d50151d2e7ed46daa6a7808`  
+		Last Modified: Mon, 18 Nov 2024 20:06:14 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8f6ba6c98f4885d8fad2ae658a77d668456ae07badd4e3dadacb49ce8d96dee`  
-		Last Modified: Tue, 12 Nov 2024 00:55:42 GMT  
-		Size: 360.0 B  
+	-	`sha256:217024fbf7f8b25ec8ce47d74c2a1ffead51e7364c018fd410c8fd180677b55f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:14 GMT  
+		Size: 361.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9028d92b314d2596e2d3f5ce617257a35c38a1d2e79ba962357a2741963df81a`  
-		Last Modified: Tue, 12 Nov 2024 00:55:42 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:105b54b1cca978a37bee956925552d8b406dd1211ff113c1fd2ca37186190246`  
+		Last Modified: Mon, 18 Nov 2024 20:06:14 GMT  
+		Size: 3.1 KB (3141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24.9-focal` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:479224fc13cc78d123e923233199190e76a883373000ce7dde3d1869f096a402
+$ docker pull clickhouse@sha256:83e6726807428e467a209397221766017bd35c36cebd3291edaf23dfd4d4d876
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.3 KB (25263 bytes)**  
+-	Total Size: **25.3 KB (25274 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95f7318cc7d666c8f431be751b0b881d1e1442a837eab71946ca1e4270528d4e`
+-	Image ID: `sha256:65b65aadce97ae243b0258cd77399b506f0ec9f6ce53229548cad3b054b85191`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:509647db4ed48d459339826f0d270211db4eac76ed3f2e57d160ee7cc8836ffa`  
-		Last Modified: Tue, 12 Nov 2024 00:55:41 GMT  
-		Size: 25.3 KB (25263 bytes)  
+	-	`sha256:d99e3dea25205bcee42d5ec71a98fa8c98d79fa3aabea5f6b207c80320136afc`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 25.3 KB (25274 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clickhouse:24.9-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:368cbcd37206ebf95468318546259ebb796c2d1d295d31ea980b6df80ad64ed1
+$ docker pull clickhouse@sha256:ff0663d28148ff37f407c0747c0ec2ee1daa7edf402902e297b9498e72f185d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.4 MB (174393866 bytes)**  
+-	Total Size: **172.6 MB (172636079 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3914cdd99af870b7975a77088bf91e5f1440e73f9836f26aa420ecde6878b92a`
+-	Image ID: `sha256:e9757d60d8ef45953a75e2064857bc2840a2e9852e16836453128270a67f0679`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -2652,48 +5676,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
 # Fri, 11 Oct 2024 03:39:47 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.9.2.42
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.9.3.128
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.2.42 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.2.42 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.2.42 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.2.42 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -2702,95 +5726,1103 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23ba974f84eb2fc21ccc6b14da8a5b6116a1131bd64b71ae6fb6023c06759053`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
-		Size: 8.7 MB (8662321 bytes)  
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b4cd409aa7a2dc0bb2030b168d4d164e6e7b569de28f07716b37b8b2b27bfc96`  
-		Last Modified: Tue, 12 Nov 2024 01:07:49 GMT  
-		Size: 138.9 MB (138890440 bytes)  
+	-	`sha256:54eee1a828755b8263fe2502b17ab154bf021d94eb2f403be0f11c9114c4fbdb`  
+		Last Modified: Mon, 18 Nov 2024 20:07:04 GMT  
+		Size: 137.1 MB (137132654 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62b9ff1aef9a175262e6028b4451b9bb3fd931b2a590b7771f393534756e9b02`  
-		Last Modified: Tue, 12 Nov 2024 01:07:46 GMT  
+	-	`sha256:e9f774813cb7f9b1a6441941042f3066f75022a99edb91b1b2c957a7a3b61757`  
+		Last Modified: Mon, 18 Nov 2024 20:07:01 GMT  
 		Size: 184.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1735bf61434f2c3d5e2b69c84b035080c356cd05e3c7d7e364fa72146ca0b7d`  
-		Last Modified: Tue, 12 Nov 2024 01:07:46 GMT  
-		Size: 863.5 KB (863472 bytes)  
+	-	`sha256:952515573b1c5460b81626a0a61476bb346e4e70b923a873661af0cbd18fabeb`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 863.5 KB (863471 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:015af92968bb35cf6a9f3d3da9ffcc1247793a951f2cae23f4df58feb5a5b935`  
-		Last Modified: Tue, 12 Nov 2024 01:07:46 GMT  
+	-	`sha256:cfd67aeea5e6ea64c2f333b0a053da848613823a6f686d77d8e19696b1374f0a`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81fbce02053b8c546bea00f06df6024c96893880d917af9ac6bcff5c86dfa76e`  
-		Last Modified: Tue, 12 Nov 2024 01:07:47 GMT  
-		Size: 362.0 B  
+	-	`sha256:47dbe23c4dcb320ba874bc91b536a8d51463d9ac61ba829ed901b1a2be327b36`  
+		Last Modified: Mon, 18 Nov 2024 20:07:03 GMT  
+		Size: 361.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4a9cca3930b6fe8cec4b1788f45fa096342d3460e07668dd60ac57de4211bca8`  
-		Last Modified: Tue, 12 Nov 2024 01:07:47 GMT  
+	-	`sha256:fe91bb7b2da741a03a2af4eb41773365e8ae5e4a499c68409bb27a146a04c261`  
+		Last Modified: Mon, 18 Nov 2024 20:07:03 GMT  
 		Size: 3.1 KB (3143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:24.9-focal` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:07174820d710f6b3657b9b6a47e4066cadcd9606279952ec166a8eaf5106b049
+$ docker pull clickhouse@sha256:1897282b473c2d034c8566a4d3d83039be197c92469ae5b61594cbc6fc00357d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.5 KB (25451 bytes)**  
+-	Total Size: **25.5 KB (25462 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:17b85815816540b5849b962fce81e36f5c6f6d66171aafa98fde573178598d17`
+-	Image ID: `sha256:6f05f49e41fb1f170d36e02cffe5ebc991782bd236d1e9edafa0d36af3de38bb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f0731053bbad48baf1fcce8c7676743469de10d412e08553f912d0d80732e09b`  
-		Last Modified: Tue, 12 Nov 2024 01:07:46 GMT  
-		Size: 25.5 KB (25451 bytes)  
+	-	`sha256:394afef8bb85ec6c69f19efabcddc608c825603d4cf61ceffdc415ceb5851332`  
+		Last Modified: Mon, 18 Nov 2024 20:07:01 GMT  
+		Size: 25.5 KB (25462 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.9.3`
 
 ```console
-$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull clickhouse@sha256:95917d87b6c57270af9abdfbeaa5d7b88d813a4a28d984d16207ed038818da86
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `clickhouse:24.9.3` - linux; amd64
+
+```console
+$ docker pull clickhouse@sha256:24c147a07e416691cef95aae7ffa58ea07439880fd3022fbff329329a74ac049
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **179.3 MB (179305080 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8481deefc73e3bcb2c21bd0d76d8c2415b41fcc564993e7621fd4940409c1db7`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.9.3.128
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5e15b0b4d694bad5f3c6ca5e5744f61f6f07837e6dcf88c5dd86ce6646b65f39`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 8.8 MB (8802589 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b3ba56f782ba1762e80edd7d2920b4b0970a37f738f8284be32d04ed9efddf2a`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 142.1 MB (142124154 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:be5fd0be77bf5fef30f129aa2516620add4a583706017496cc11384924ce4ead`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 185.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2ecda6c4ae5ded0d521129071991a02ed0fee3c43f544a5358e77c6c89036ebf`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 863.5 KB (863474 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:60b2f8d34b2bbcca1e9b028a99c34b66a57c80d78d50151d2e7ed46daa6a7808`  
+		Last Modified: Mon, 18 Nov 2024 20:06:14 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:217024fbf7f8b25ec8ce47d74c2a1ffead51e7364c018fd410c8fd180677b55f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:14 GMT  
+		Size: 361.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:105b54b1cca978a37bee956925552d8b406dd1211ff113c1fd2ca37186190246`  
+		Last Modified: Mon, 18 Nov 2024 20:06:14 GMT  
+		Size: 3.1 KB (3141 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.9.3` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:83e6726807428e467a209397221766017bd35c36cebd3291edaf23dfd4d4d876
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.3 KB (25274 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:65b65aadce97ae243b0258cd77399b506f0ec9f6ce53229548cad3b054b85191`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d99e3dea25205bcee42d5ec71a98fa8c98d79fa3aabea5f6b207c80320136afc`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 25.3 KB (25274 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `clickhouse:24.9.3` - linux; arm64 variant v8
+
+```console
+$ docker pull clickhouse@sha256:ff0663d28148ff37f407c0747c0ec2ee1daa7edf402902e297b9498e72f185d4
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **172.6 MB (172636079 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e9757d60d8ef45953a75e2064857bc2840a2e9852e16836453128270a67f0679`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.9.3.128
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:54eee1a828755b8263fe2502b17ab154bf021d94eb2f403be0f11c9114c4fbdb`  
+		Last Modified: Mon, 18 Nov 2024 20:07:04 GMT  
+		Size: 137.1 MB (137132654 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e9f774813cb7f9b1a6441941042f3066f75022a99edb91b1b2c957a7a3b61757`  
+		Last Modified: Mon, 18 Nov 2024 20:07:01 GMT  
+		Size: 184.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:952515573b1c5460b81626a0a61476bb346e4e70b923a873661af0cbd18fabeb`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 863.5 KB (863471 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:cfd67aeea5e6ea64c2f333b0a053da848613823a6f686d77d8e19696b1374f0a`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:47dbe23c4dcb320ba874bc91b536a8d51463d9ac61ba829ed901b1a2be327b36`  
+		Last Modified: Mon, 18 Nov 2024 20:07:03 GMT  
+		Size: 361.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fe91bb7b2da741a03a2af4eb41773365e8ae5e4a499c68409bb27a146a04c261`  
+		Last Modified: Mon, 18 Nov 2024 20:07:03 GMT  
+		Size: 3.1 KB (3143 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.9.3` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:1897282b473c2d034c8566a4d3d83039be197c92469ae5b61594cbc6fc00357d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.5 KB (25462 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6f05f49e41fb1f170d36e02cffe5ebc991782bd236d1e9edafa0d36af3de38bb`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:394afef8bb85ec6c69f19efabcddc608c825603d4cf61ceffdc415ceb5851332`  
+		Last Modified: Mon, 18 Nov 2024 20:07:01 GMT  
+		Size: 25.5 KB (25462 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.9.3-focal`
 
 ```console
-$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull clickhouse@sha256:95917d87b6c57270af9abdfbeaa5d7b88d813a4a28d984d16207ed038818da86
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `clickhouse:24.9.3-focal` - linux; amd64
+
+```console
+$ docker pull clickhouse@sha256:24c147a07e416691cef95aae7ffa58ea07439880fd3022fbff329329a74ac049
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **179.3 MB (179305080 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8481deefc73e3bcb2c21bd0d76d8c2415b41fcc564993e7621fd4940409c1db7`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.9.3.128
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5e15b0b4d694bad5f3c6ca5e5744f61f6f07837e6dcf88c5dd86ce6646b65f39`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 8.8 MB (8802589 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b3ba56f782ba1762e80edd7d2920b4b0970a37f738f8284be32d04ed9efddf2a`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 142.1 MB (142124154 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:be5fd0be77bf5fef30f129aa2516620add4a583706017496cc11384924ce4ead`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 185.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2ecda6c4ae5ded0d521129071991a02ed0fee3c43f544a5358e77c6c89036ebf`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 863.5 KB (863474 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:60b2f8d34b2bbcca1e9b028a99c34b66a57c80d78d50151d2e7ed46daa6a7808`  
+		Last Modified: Mon, 18 Nov 2024 20:06:14 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:217024fbf7f8b25ec8ce47d74c2a1ffead51e7364c018fd410c8fd180677b55f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:14 GMT  
+		Size: 361.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:105b54b1cca978a37bee956925552d8b406dd1211ff113c1fd2ca37186190246`  
+		Last Modified: Mon, 18 Nov 2024 20:06:14 GMT  
+		Size: 3.1 KB (3141 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.9.3-focal` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:83e6726807428e467a209397221766017bd35c36cebd3291edaf23dfd4d4d876
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.3 KB (25274 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:65b65aadce97ae243b0258cd77399b506f0ec9f6ce53229548cad3b054b85191`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d99e3dea25205bcee42d5ec71a98fa8c98d79fa3aabea5f6b207c80320136afc`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 25.3 KB (25274 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `clickhouse:24.9.3-focal` - linux; arm64 variant v8
+
+```console
+$ docker pull clickhouse@sha256:ff0663d28148ff37f407c0747c0ec2ee1daa7edf402902e297b9498e72f185d4
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **172.6 MB (172636079 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e9757d60d8ef45953a75e2064857bc2840a2e9852e16836453128270a67f0679`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.9.3.128
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:54eee1a828755b8263fe2502b17ab154bf021d94eb2f403be0f11c9114c4fbdb`  
+		Last Modified: Mon, 18 Nov 2024 20:07:04 GMT  
+		Size: 137.1 MB (137132654 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e9f774813cb7f9b1a6441941042f3066f75022a99edb91b1b2c957a7a3b61757`  
+		Last Modified: Mon, 18 Nov 2024 20:07:01 GMT  
+		Size: 184.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:952515573b1c5460b81626a0a61476bb346e4e70b923a873661af0cbd18fabeb`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 863.5 KB (863471 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:cfd67aeea5e6ea64c2f333b0a053da848613823a6f686d77d8e19696b1374f0a`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:47dbe23c4dcb320ba874bc91b536a8d51463d9ac61ba829ed901b1a2be327b36`  
+		Last Modified: Mon, 18 Nov 2024 20:07:03 GMT  
+		Size: 361.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fe91bb7b2da741a03a2af4eb41773365e8ae5e4a499c68409bb27a146a04c261`  
+		Last Modified: Mon, 18 Nov 2024 20:07:03 GMT  
+		Size: 3.1 KB (3143 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.9.3-focal` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:1897282b473c2d034c8566a4d3d83039be197c92469ae5b61594cbc6fc00357d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.5 KB (25462 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6f05f49e41fb1f170d36e02cffe5ebc991782bd236d1e9edafa0d36af3de38bb`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:394afef8bb85ec6c69f19efabcddc608c825603d4cf61ceffdc415ceb5851332`  
+		Last Modified: Mon, 18 Nov 2024 20:07:01 GMT  
+		Size: 25.5 KB (25462 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.9.3.128`
 
 ```console
-$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull clickhouse@sha256:95917d87b6c57270af9abdfbeaa5d7b88d813a4a28d984d16207ed038818da86
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `clickhouse:24.9.3.128` - linux; amd64
+
+```console
+$ docker pull clickhouse@sha256:24c147a07e416691cef95aae7ffa58ea07439880fd3022fbff329329a74ac049
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **179.3 MB (179305080 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8481deefc73e3bcb2c21bd0d76d8c2415b41fcc564993e7621fd4940409c1db7`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.9.3.128
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5e15b0b4d694bad5f3c6ca5e5744f61f6f07837e6dcf88c5dd86ce6646b65f39`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 8.8 MB (8802589 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b3ba56f782ba1762e80edd7d2920b4b0970a37f738f8284be32d04ed9efddf2a`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 142.1 MB (142124154 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:be5fd0be77bf5fef30f129aa2516620add4a583706017496cc11384924ce4ead`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 185.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2ecda6c4ae5ded0d521129071991a02ed0fee3c43f544a5358e77c6c89036ebf`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 863.5 KB (863474 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:60b2f8d34b2bbcca1e9b028a99c34b66a57c80d78d50151d2e7ed46daa6a7808`  
+		Last Modified: Mon, 18 Nov 2024 20:06:14 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:217024fbf7f8b25ec8ce47d74c2a1ffead51e7364c018fd410c8fd180677b55f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:14 GMT  
+		Size: 361.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:105b54b1cca978a37bee956925552d8b406dd1211ff113c1fd2ca37186190246`  
+		Last Modified: Mon, 18 Nov 2024 20:06:14 GMT  
+		Size: 3.1 KB (3141 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.9.3.128` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:83e6726807428e467a209397221766017bd35c36cebd3291edaf23dfd4d4d876
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.3 KB (25274 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:65b65aadce97ae243b0258cd77399b506f0ec9f6ce53229548cad3b054b85191`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d99e3dea25205bcee42d5ec71a98fa8c98d79fa3aabea5f6b207c80320136afc`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 25.3 KB (25274 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `clickhouse:24.9.3.128` - linux; arm64 variant v8
+
+```console
+$ docker pull clickhouse@sha256:ff0663d28148ff37f407c0747c0ec2ee1daa7edf402902e297b9498e72f185d4
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **172.6 MB (172636079 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e9757d60d8ef45953a75e2064857bc2840a2e9852e16836453128270a67f0679`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.9.3.128
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:54eee1a828755b8263fe2502b17ab154bf021d94eb2f403be0f11c9114c4fbdb`  
+		Last Modified: Mon, 18 Nov 2024 20:07:04 GMT  
+		Size: 137.1 MB (137132654 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e9f774813cb7f9b1a6441941042f3066f75022a99edb91b1b2c957a7a3b61757`  
+		Last Modified: Mon, 18 Nov 2024 20:07:01 GMT  
+		Size: 184.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:952515573b1c5460b81626a0a61476bb346e4e70b923a873661af0cbd18fabeb`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 863.5 KB (863471 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:cfd67aeea5e6ea64c2f333b0a053da848613823a6f686d77d8e19696b1374f0a`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:47dbe23c4dcb320ba874bc91b536a8d51463d9ac61ba829ed901b1a2be327b36`  
+		Last Modified: Mon, 18 Nov 2024 20:07:03 GMT  
+		Size: 361.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fe91bb7b2da741a03a2af4eb41773365e8ae5e4a499c68409bb27a146a04c261`  
+		Last Modified: Mon, 18 Nov 2024 20:07:03 GMT  
+		Size: 3.1 KB (3143 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.9.3.128` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:1897282b473c2d034c8566a4d3d83039be197c92469ae5b61594cbc6fc00357d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.5 KB (25462 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6f05f49e41fb1f170d36e02cffe5ebc991782bd236d1e9edafa0d36af3de38bb`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:394afef8bb85ec6c69f19efabcddc608c825603d4cf61ceffdc415ceb5851332`  
+		Last Modified: Mon, 18 Nov 2024 20:07:01 GMT  
+		Size: 25.5 KB (25462 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:24.9.3.128-focal`
 
 ```console
-$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull clickhouse@sha256:95917d87b6c57270af9abdfbeaa5d7b88d813a4a28d984d16207ed038818da86
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `clickhouse:24.9.3.128-focal` - linux; amd64
+
+```console
+$ docker pull clickhouse@sha256:24c147a07e416691cef95aae7ffa58ea07439880fd3022fbff329329a74ac049
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **179.3 MB (179305080 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:8481deefc73e3bcb2c21bd0d76d8c2415b41fcc564993e7621fd4940409c1db7`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.9.3.128
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5e15b0b4d694bad5f3c6ca5e5744f61f6f07837e6dcf88c5dd86ce6646b65f39`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 8.8 MB (8802589 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b3ba56f782ba1762e80edd7d2920b4b0970a37f738f8284be32d04ed9efddf2a`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 142.1 MB (142124154 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:be5fd0be77bf5fef30f129aa2516620add4a583706017496cc11384924ce4ead`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 185.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2ecda6c4ae5ded0d521129071991a02ed0fee3c43f544a5358e77c6c89036ebf`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 863.5 KB (863474 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:60b2f8d34b2bbcca1e9b028a99c34b66a57c80d78d50151d2e7ed46daa6a7808`  
+		Last Modified: Mon, 18 Nov 2024 20:06:14 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:217024fbf7f8b25ec8ce47d74c2a1ffead51e7364c018fd410c8fd180677b55f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:14 GMT  
+		Size: 361.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:105b54b1cca978a37bee956925552d8b406dd1211ff113c1fd2ca37186190246`  
+		Last Modified: Mon, 18 Nov 2024 20:06:14 GMT  
+		Size: 3.1 KB (3141 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.9.3.128-focal` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:83e6726807428e467a209397221766017bd35c36cebd3291edaf23dfd4d4d876
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.3 KB (25274 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:65b65aadce97ae243b0258cd77399b506f0ec9f6ce53229548cad3b054b85191`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d99e3dea25205bcee42d5ec71a98fa8c98d79fa3aabea5f6b207c80320136afc`  
+		Last Modified: Mon, 18 Nov 2024 20:06:13 GMT  
+		Size: 25.3 KB (25274 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `clickhouse:24.9.3.128-focal` - linux; arm64 variant v8
+
+```console
+$ docker pull clickhouse@sha256:ff0663d28148ff37f407c0747c0ec2ee1daa7edf402902e297b9498e72f185d4
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **172.6 MB (172636079 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e9757d60d8ef45953a75e2064857bc2840a2e9852e16836453128270a67f0679`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.9.3.128
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.9.3.128 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:54eee1a828755b8263fe2502b17ab154bf021d94eb2f403be0f11c9114c4fbdb`  
+		Last Modified: Mon, 18 Nov 2024 20:07:04 GMT  
+		Size: 137.1 MB (137132654 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e9f774813cb7f9b1a6441941042f3066f75022a99edb91b1b2c957a7a3b61757`  
+		Last Modified: Mon, 18 Nov 2024 20:07:01 GMT  
+		Size: 184.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:952515573b1c5460b81626a0a61476bb346e4e70b923a873661af0cbd18fabeb`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 863.5 KB (863471 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:cfd67aeea5e6ea64c2f333b0a053da848613823a6f686d77d8e19696b1374f0a`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:47dbe23c4dcb320ba874bc91b536a8d51463d9ac61ba829ed901b1a2be327b36`  
+		Last Modified: Mon, 18 Nov 2024 20:07:03 GMT  
+		Size: 361.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fe91bb7b2da741a03a2af4eb41773365e8ae5e4a499c68409bb27a146a04c261`  
+		Last Modified: Mon, 18 Nov 2024 20:07:03 GMT  
+		Size: 3.1 KB (3143 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:24.9.3.128-focal` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:1897282b473c2d034c8566a4d3d83039be197c92469ae5b61594cbc6fc00357d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.5 KB (25462 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6f05f49e41fb1f170d36e02cffe5ebc991782bd236d1e9edafa0d36af3de38bb`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:394afef8bb85ec6c69f19efabcddc608c825603d4cf61ceffdc415ceb5851332`  
+		Last Modified: Mon, 18 Nov 2024 20:07:01 GMT  
+		Size: 25.5 KB (25462 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:focal`
 
 ```console
-$ docker pull clickhouse@sha256:7bc9fa5ec703a95ffd5a2c6a271dab034aa0637dbc2fefbd5fc57e3283bec064
+$ docker pull clickhouse@sha256:aa887dfaa8d915a18ad93d25cef0334138ffeeb386353600ed90ecf07ff4eb5c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2803,13 +6835,13 @@ $ docker pull clickhouse@sha256:7bc9fa5ec703a95ffd5a2c6a271dab034aa0637dbc2fefbd
 ### `clickhouse:focal` - linux; amd64
 
 ```console
-$ docker pull clickhouse@sha256:be2eb6602bb634c641a26de50062bc6db4a413fc5f8e2d30d69e63ae218c9300
+$ docker pull clickhouse@sha256:3073efa0428c680834cf03dd2428fac3408a8a60310cd0613f51731eb25bcdb2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **180.5 MB (180502273 bytes)**  
+-	Total Size: **180.6 MB (180553647 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:780779b097fba8e76a39d39f0f34ce2e5bd628429919a69180f6c2f235a7e799`
+-	Image ID: `sha256:33410aa159ab43ebeaa868575df2dc69997cf9bbc495f419df632b5938060b2e`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -2825,48 +6857,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
 # Fri, 11 Oct 2024 03:38:27 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.10.1.2812
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -2875,65 +6907,65 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7111f8833bc453e9ec8c2ebf32ac32b825681a3b9b8e372c9e3398f52bb2d7bc`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 8.8 MB (8802605 bytes)  
+	-	`sha256:e11845068165d574aa2798c6158bf4904622cd7aff2c5675c6643ff0ba4fda74`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 8.8 MB (8802587 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c21f8f8706bb6e315bd1248a431189fb5403141581d2dd8c747495194028dc0`  
-		Last Modified: Tue, 12 Nov 2024 00:55:36 GMT  
-		Size: 143.3 MB (143321321 bytes)  
+	-	`sha256:5feec6ebdd2d272ba4886d83efac935f56f806e73e527a868a28138c61e67718`  
+		Last Modified: Mon, 18 Nov 2024 21:06:08 GMT  
+		Size: 143.4 MB (143372719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4048caa8e9536cbc81bd812da3ddbfcf0c242bc84e0aae8e5b62218311ada6f`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 187.0 B  
+	-	`sha256:1dfeab913ab2cc5b1eae6e120652382b1e4419e753305cbecd10ed1fd65a4bc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18cef3cb7c9b8b7831050f192376fb3ec2e596319cbb7f00ab13fac740d9b429`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 863.5 KB (863478 bytes)  
+	-	`sha256:c2e1a6ccef3905d7f4b64758101a5566220595da9cd94b3a8efe3c7c3d500827`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 863.5 KB (863474 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7326086bcd43354f495c22f41a1362e035b86efb1231658cc777d828e06c09b5`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
+	-	`sha256:52154b45f848fae4d6dc15923fd51d332c33b0e778b1c11e06eb83e661dd7a95`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be0c972525eaadda0b5d220a60713fe6ae4aed202d0ce097494dd54d4cbddf88`  
-		Last Modified: Tue, 12 Nov 2024 00:55:35 GMT  
-		Size: 362.0 B  
+	-	`sha256:b265890db07ff12d8c1d5226fa954754fc2424e3c212fb8ec6357953893fe05f`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 363.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aaab0e4e89c886c68156494d0d15588424bdb261b6c099366489de19a967e3ea`  
-		Last Modified: Tue, 12 Nov 2024 00:55:35 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:ff950eeed9b85019e89aaffe2962b82fdbc03b54f59941891af221eb1511d3a4`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 3.1 KB (3143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:focal` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:30fec73f163c700239a92f41e19b9f40da215af99c5ca19bc44ce23749fe999b
+$ docker pull clickhouse@sha256:064a3c846ada78d4c69bda131ebe8c761653440c1cc0f3585a7a48d399021fad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.5 KB (26526 bytes)**  
+-	Total Size: **26.5 KB (26499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32c0598285c843a368616c4153906d3ac3f653d3bfb236c35369f61c93ff8f72`
+-	Image ID: `sha256:37c888f3eb66030483fa7a082a00d60e89b78ac7a1f1e67da42a74eca0169fae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1e1412d68f0c82d49f7df302740602685430eae38a51dff2f5622494b8ef7716`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 26.5 KB (26526 bytes)  
+	-	`sha256:f50539b9c37f17df612e4afdb20de110705ae3090a3db1da1b402faa4f251cc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:05 GMT  
+		Size: 26.5 KB (26499 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clickhouse:focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:6eae6f07acede5586409eb0529970b5e8bbb650dbaf17e39c4efbb144757a6cd
+$ docker pull clickhouse@sha256:f36884dc6d24d60a9bb6c320e8a052190ae2358d8f66efc4c71ad5ffa4638d72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.2 MB (174163120 bytes)**  
+-	Total Size: **174.2 MB (174195698 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d854e5fd0220b4126259e851b7ba390e22ab2b139704525b4329d29c0a7db8e3`
+-	Image ID: `sha256:a68ae827e8dcb485e903cb0057678535df1e43de4da3302cf7efd6fb2bcb936e`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -2949,48 +6981,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
 # Fri, 11 Oct 2024 03:39:47 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.10.1.2812
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -2999,59 +7031,59 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23ba974f84eb2fc21ccc6b14da8a5b6116a1131bd64b71ae6fb6023c06759053`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
-		Size: 8.7 MB (8662321 bytes)  
+	-	`sha256:a86846b838547ebb3f9804d50f4fe8eb4f6bfeff8d4821e1998c250e0dfd1a11`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 8.7 MB (8662233 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0f0a0c59e6c74754aaf916f8b6df9f98cffb99cb60e3ff6958bfafbe40c7254`  
-		Last Modified: Tue, 12 Nov 2024 01:06:54 GMT  
-		Size: 138.7 MB (138659691 bytes)  
+	-	`sha256:b7371f123ab3df4a130514d8f7597c2f06a212dda18e5943a8eb98574c2d0b52`  
+		Last Modified: Mon, 18 Nov 2024 20:05:57 GMT  
+		Size: 138.7 MB (138692361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6adb863b4b4c69d8d08447ff2f92bde3bf58985fd69c6d0272273bfe6c682c8a`  
-		Last Modified: Tue, 12 Nov 2024 01:06:50 GMT  
-		Size: 184.0 B  
+	-	`sha256:a627ba3ba9c0dd7675bded26bee97be800d7ae7233b65cc5e87dec6385d6d684`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d046b9b6fb2887e045118fa7b549f271dd6834e27a1a81bec062a420becc2333`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
-		Size: 863.5 KB (863474 bytes)  
+	-	`sha256:e7eab81eafda560d04753033a7793b0fbad07c01a37f4e1fa1b6cbb5d57fbe8d`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 863.5 KB (863471 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79602d6db082d0d6dd1cc2f9451cf185d6d2ae4746da01fcbbddfe11250b70ce`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
+	-	`sha256:81b4918a2555f120c31a57c5c66f22600ab0bc3d121542385b9eb52b639f3796`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9521f306a3451bfc3d658df655e47b14b6dfe1fa8a4ee01fa7239d256513d150`  
-		Last Modified: Tue, 12 Nov 2024 01:06:52 GMT  
-		Size: 363.0 B  
+	-	`sha256:d4db6c7d5229f43bb415dcabb1c0fd300ecc1dbfed18d77c6e553ba203fcc0d0`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7419c1b0b1b714719c8c0457161ee358c44e630ee2c264733dad78f1f666faa`  
-		Last Modified: Tue, 12 Nov 2024 01:06:52 GMT  
-		Size: 3.1 KB (3143 bytes)  
+	-	`sha256:c30b9bec89bc291fd156ad60a897a8bc119acda2d3294db0909a7abb9b7aa124`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 3.1 KB (3141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:focal` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:53da8ae3932d2be58b4497df239aa92f12380d79a3046061686fb1473f1c482f
+$ docker pull clickhouse@sha256:2f77217c545db83c44c23cc6abdf4f34ce68265d9e261c4af075dc598e2811bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.8 KB (26762 bytes)**  
+-	Total Size: **26.7 KB (26735 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50c2a42d0eb4773da3eb4d1f61c94f4652b79ba86145e6503c285a87d063c446`
+-	Image ID: `sha256:ca457bdd672219881e4c7f28900a0fb3c0f87120ecf163a2c6fbfddd3eb9cf2d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8a15f595e98190849d608ae4aaf07c44b896636f633ab5818e0c64c15671d1a2`  
-		Last Modified: Tue, 12 Nov 2024 01:06:50 GMT  
-		Size: 26.8 KB (26762 bytes)  
+	-	`sha256:5791af50f4fcfa896eb3c0edf644ae24c07abc17fd5982c1cbb1724b8ede7636`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 26.7 KB (26735 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:latest`
 
 ```console
-$ docker pull clickhouse@sha256:7bc9fa5ec703a95ffd5a2c6a271dab034aa0637dbc2fefbd5fc57e3283bec064
+$ docker pull clickhouse@sha256:aa887dfaa8d915a18ad93d25cef0334138ffeeb386353600ed90ecf07ff4eb5c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3064,13 +7096,13 @@ $ docker pull clickhouse@sha256:7bc9fa5ec703a95ffd5a2c6a271dab034aa0637dbc2fefbd
 ### `clickhouse:latest` - linux; amd64
 
 ```console
-$ docker pull clickhouse@sha256:be2eb6602bb634c641a26de50062bc6db4a413fc5f8e2d30d69e63ae218c9300
+$ docker pull clickhouse@sha256:3073efa0428c680834cf03dd2428fac3408a8a60310cd0613f51731eb25bcdb2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **180.5 MB (180502273 bytes)**  
+-	Total Size: **180.6 MB (180553647 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:780779b097fba8e76a39d39f0f34ce2e5bd628429919a69180f6c2f235a7e799`
+-	Image ID: `sha256:33410aa159ab43ebeaa868575df2dc69997cf9bbc495f419df632b5938060b2e`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -3086,48 +7118,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
 # Fri, 11 Oct 2024 03:38:27 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.10.1.2812
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -3136,65 +7168,65 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7111f8833bc453e9ec8c2ebf32ac32b825681a3b9b8e372c9e3398f52bb2d7bc`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 8.8 MB (8802605 bytes)  
+	-	`sha256:e11845068165d574aa2798c6158bf4904622cd7aff2c5675c6643ff0ba4fda74`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 8.8 MB (8802587 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c21f8f8706bb6e315bd1248a431189fb5403141581d2dd8c747495194028dc0`  
-		Last Modified: Tue, 12 Nov 2024 00:55:36 GMT  
-		Size: 143.3 MB (143321321 bytes)  
+	-	`sha256:5feec6ebdd2d272ba4886d83efac935f56f806e73e527a868a28138c61e67718`  
+		Last Modified: Mon, 18 Nov 2024 21:06:08 GMT  
+		Size: 143.4 MB (143372719 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4048caa8e9536cbc81bd812da3ddbfcf0c242bc84e0aae8e5b62218311ada6f`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 187.0 B  
+	-	`sha256:1dfeab913ab2cc5b1eae6e120652382b1e4419e753305cbecd10ed1fd65a4bc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18cef3cb7c9b8b7831050f192376fb3ec2e596319cbb7f00ab13fac740d9b429`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 863.5 KB (863478 bytes)  
+	-	`sha256:c2e1a6ccef3905d7f4b64758101a5566220595da9cd94b3a8efe3c7c3d500827`  
+		Last Modified: Mon, 18 Nov 2024 21:06:03 GMT  
+		Size: 863.5 KB (863474 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7326086bcd43354f495c22f41a1362e035b86efb1231658cc777d828e06c09b5`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
+	-	`sha256:52154b45f848fae4d6dc15923fd51d332c33b0e778b1c11e06eb83e661dd7a95`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:be0c972525eaadda0b5d220a60713fe6ae4aed202d0ce097494dd54d4cbddf88`  
-		Last Modified: Tue, 12 Nov 2024 00:55:35 GMT  
-		Size: 362.0 B  
+	-	`sha256:b265890db07ff12d8c1d5226fa954754fc2424e3c212fb8ec6357953893fe05f`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 363.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aaab0e4e89c886c68156494d0d15588424bdb261b6c099366489de19a967e3ea`  
-		Last Modified: Tue, 12 Nov 2024 00:55:35 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:ff950eeed9b85019e89aaffe2962b82fdbc03b54f59941891af221eb1511d3a4`  
+		Last Modified: Mon, 18 Nov 2024 21:06:04 GMT  
+		Size: 3.1 KB (3143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:latest` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:30fec73f163c700239a92f41e19b9f40da215af99c5ca19bc44ce23749fe999b
+$ docker pull clickhouse@sha256:064a3c846ada78d4c69bda131ebe8c761653440c1cc0f3585a7a48d399021fad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.5 KB (26526 bytes)**  
+-	Total Size: **26.5 KB (26499 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:32c0598285c843a368616c4153906d3ac3f653d3bfb236c35369f61c93ff8f72`
+-	Image ID: `sha256:37c888f3eb66030483fa7a082a00d60e89b78ac7a1f1e67da42a74eca0169fae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1e1412d68f0c82d49f7df302740602685430eae38a51dff2f5622494b8ef7716`  
-		Last Modified: Tue, 12 Nov 2024 00:55:34 GMT  
-		Size: 26.5 KB (26526 bytes)  
+	-	`sha256:f50539b9c37f17df612e4afdb20de110705ae3090a3db1da1b402faa4f251cc6`  
+		Last Modified: Mon, 18 Nov 2024 21:06:05 GMT  
+		Size: 26.5 KB (26499 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clickhouse:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:6eae6f07acede5586409eb0529970b5e8bbb650dbaf17e39c4efbb144757a6cd
+$ docker pull clickhouse@sha256:f36884dc6d24d60a9bb6c320e8a052190ae2358d8f66efc4c71ad5ffa4638d72
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **174.2 MB (174163120 bytes)**  
+-	Total Size: **174.2 MB (174195698 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d854e5fd0220b4126259e851b7ba390e22ab2b139704525b4329d29c0a7db8e3`
+-	Image ID: `sha256:a68ae827e8dcb485e903cb0057678535df1e43de4da3302cf7efd6fb2bcb936e`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -3210,48 +7242,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
 # Fri, 11 Oct 2024 03:39:47 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.10.1.2812
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.10.2.80
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.1.2812 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.10.2.80 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -3260,59 +7292,59 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23ba974f84eb2fc21ccc6b14da8a5b6116a1131bd64b71ae6fb6023c06759053`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
-		Size: 8.7 MB (8662321 bytes)  
+	-	`sha256:a86846b838547ebb3f9804d50f4fe8eb4f6bfeff8d4821e1998c250e0dfd1a11`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 8.7 MB (8662233 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0f0a0c59e6c74754aaf916f8b6df9f98cffb99cb60e3ff6958bfafbe40c7254`  
-		Last Modified: Tue, 12 Nov 2024 01:06:54 GMT  
-		Size: 138.7 MB (138659691 bytes)  
+	-	`sha256:b7371f123ab3df4a130514d8f7597c2f06a212dda18e5943a8eb98574c2d0b52`  
+		Last Modified: Mon, 18 Nov 2024 20:05:57 GMT  
+		Size: 138.7 MB (138692361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6adb863b4b4c69d8d08447ff2f92bde3bf58985fd69c6d0272273bfe6c682c8a`  
-		Last Modified: Tue, 12 Nov 2024 01:06:50 GMT  
-		Size: 184.0 B  
+	-	`sha256:a627ba3ba9c0dd7675bded26bee97be800d7ae7233b65cc5e87dec6385d6d684`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 186.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d046b9b6fb2887e045118fa7b549f271dd6834e27a1a81bec062a420becc2333`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
-		Size: 863.5 KB (863474 bytes)  
+	-	`sha256:e7eab81eafda560d04753033a7793b0fbad07c01a37f4e1fa1b6cbb5d57fbe8d`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
+		Size: 863.5 KB (863471 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:79602d6db082d0d6dd1cc2f9451cf185d6d2ae4746da01fcbbddfe11250b70ce`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
+	-	`sha256:81b4918a2555f120c31a57c5c66f22600ab0bc3d121542385b9eb52b639f3796`  
+		Last Modified: Mon, 18 Nov 2024 20:05:54 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9521f306a3451bfc3d658df655e47b14b6dfe1fa8a4ee01fa7239d256513d150`  
-		Last Modified: Tue, 12 Nov 2024 01:06:52 GMT  
-		Size: 363.0 B  
+	-	`sha256:d4db6c7d5229f43bb415dcabb1c0fd300ecc1dbfed18d77c6e553ba203fcc0d0`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7419c1b0b1b714719c8c0457161ee358c44e630ee2c264733dad78f1f666faa`  
-		Last Modified: Tue, 12 Nov 2024 01:06:52 GMT  
-		Size: 3.1 KB (3143 bytes)  
+	-	`sha256:c30b9bec89bc291fd156ad60a897a8bc119acda2d3294db0909a7abb9b7aa124`  
+		Last Modified: Mon, 18 Nov 2024 20:05:55 GMT  
+		Size: 3.1 KB (3141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:latest` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:53da8ae3932d2be58b4497df239aa92f12380d79a3046061686fb1473f1c482f
+$ docker pull clickhouse@sha256:2f77217c545db83c44c23cc6abdf4f34ce68265d9e261c4af075dc598e2811bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.8 KB (26762 bytes)**  
+-	Total Size: **26.7 KB (26735 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:50c2a42d0eb4773da3eb4d1f61c94f4652b79ba86145e6503c285a87d063c446`
+-	Image ID: `sha256:ca457bdd672219881e4c7f28900a0fb3c0f87120ecf163a2c6fbfddd3eb9cf2d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8a15f595e98190849d608ae4aaf07c44b896636f633ab5818e0c64c15671d1a2`  
-		Last Modified: Tue, 12 Nov 2024 01:06:50 GMT  
-		Size: 26.8 KB (26762 bytes)  
+	-	`sha256:5791af50f4fcfa896eb3c0edf644ae24c07abc17fd5982c1cbb1724b8ede7636`  
+		Last Modified: Mon, 18 Nov 2024 20:05:53 GMT  
+		Size: 26.7 KB (26735 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:lts`
 
 ```console
-$ docker pull clickhouse@sha256:483935440135426977c106678d8e66a62cc35d6789d46da88404ab1fc5a381c3
+$ docker pull clickhouse@sha256:698363cd1136335696abf40a67f5546127dfdf5fe6ad2ca88fe60cd3ae7bdf2e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3325,13 +7357,13 @@ $ docker pull clickhouse@sha256:483935440135426977c106678d8e66a62cc35d6789d46da8
 ### `clickhouse:lts` - linux; amd64
 
 ```console
-$ docker pull clickhouse@sha256:cdc811aae31208585fa3fb4f4f12a3d3acf32c4e26101f92ce8f563a605cd37a
+$ docker pull clickhouse@sha256:47cef6f2fbb1fb511670b86d9f4783ec9cfa3c072a40a59282a980cf38b6aa0c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **178.8 MB (178783594 bytes)**  
+-	Total Size: **178.8 MB (178812657 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8af14c36eab65d777010e7558f8c267935cf981ffb70df18f651c6b505848103`
+-	Image ID: `sha256:e1387e7bdaf532e3d74a9b01fa5552a8d49c42257102256a8dd84a75943af949`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -3347,48 +7379,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
 # Fri, 11 Oct 2024 03:38:27 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.8.6.70
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.8.7.41
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -3397,65 +7429,65 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85b07dd07e1b82d4c98112e85407bd268cf85766f2c34d147b20651183802910`  
-		Last Modified: Tue, 12 Nov 2024 00:55:47 GMT  
-		Size: 8.8 MB (8802576 bytes)  
+	-	`sha256:7e67b6741df06aa8eb8d8fcb7c95e8cc10d7e92f9a3cb3181ae40f97bba8a4f2`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 8.8 MB (8802629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69f45f27d0be4d81ed312ac77c0769ecc8a26ebe5a2f89fe1a5411013b124944`  
-		Last Modified: Tue, 12 Nov 2024 00:55:49 GMT  
-		Size: 141.6 MB (141602673 bytes)  
+	-	`sha256:d8ba309f2e22dfad8a2676a95340a87935e01c40b10278c763606e6a38f8ae3f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:18 GMT  
+		Size: 141.6 MB (141631685 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dce7ca591ce59226feabf12de023349866551184c68e2e102fe522b32496a008`  
-		Last Modified: Tue, 12 Nov 2024 00:55:46 GMT  
+	-	`sha256:48aef40100afaae89d86927eec76e4e414602914f5b5e776ca029cf0907bf538`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
 		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41ef09230e4836d994bbe5443402cc90ef111b6f73ca6f76bab13170c36f853f`  
-		Last Modified: Tue, 12 Nov 2024 00:55:47 GMT  
-		Size: 863.5 KB (863476 bytes)  
+	-	`sha256:a0f960df628b7b0375c45e65adc733c6779004504ec3ef541e913e73cc895b07`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 863.5 KB (863478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c625ca81d187d83be46a1890b904f7a7217a8bfe819bb44172ff6eb35299dbf`  
-		Last Modified: Tue, 12 Nov 2024 00:55:47 GMT  
+	-	`sha256:ec64844717ad2ae00fe14780a6cc2f44eb95615036366e291852afabf464492f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d86a2945cbff6e172e884ea3d417becb92421dc5bfe36fb7a44c20ccaf7df9bc`  
-		Last Modified: Tue, 12 Nov 2024 00:55:48 GMT  
-		Size: 364.0 B  
+	-	`sha256:fc4d29135e7f625c0a17e60870a4120bf338bf85646c29a1281f4c26ef11796b`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 362.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eee8ade4d8aa3b9136d6604417a36f0141161876e30640d194d7a8328b96ae70`  
-		Last Modified: Tue, 12 Nov 2024 00:55:48 GMT  
-		Size: 3.1 KB (3144 bytes)  
+	-	`sha256:d2cfd9c027f10cb6506f9e0695b3c98044eab94a91ebe1b125e9b3f95f4e54c9`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 3.1 KB (3142 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:lts` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:21243244872f6c180cc0540daf6c78a7563153542ab8a4569a42ef6e6cf86fb9
+$ docker pull clickhouse@sha256:b101c6fca19411ff534750286eaf83eecb9bb127846c5077bbf85882c93b6d5e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **25.9 KB (25875 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e098533a234612bdb0324e86fa5b658021558488e993e0b47f1e4349a1096d38`
+-	Image ID: `sha256:23c985ecdf74273a1483a770cc4add37729a95eaf93cd09b69b9f5433d9ab26f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6e00efd847634f80df847d3d9a293f3653c937f4d22714d0574aeaf2755183e2`  
-		Last Modified: Tue, 12 Nov 2024 00:55:46 GMT  
+	-	`sha256:1c0ef4be653a14e13ddd9f068f8b7e943b538376f38f98b9a9c90b9ee1ceb60a`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
 		Size: 25.9 KB (25875 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clickhouse:lts` - linux; arm64 variant v8
 
 ```console
-$ docker pull clickhouse@sha256:232efe54fed33fb29e34d26048cda3acdf546796dd1c025e0b130b1acc0c2364
+$ docker pull clickhouse@sha256:d00c2769c76341b3cf1a4dc8e9f5a5b1ee9b893de45609ae576556ebab7882ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.2 MB (172169371 bytes)**  
+-	Total Size: **172.2 MB (172188479 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:193563e3cedf52c1cf0fac821d51c7f6027324022fde1b5acc3e709a6d8d07e7`
+-	Image ID: `sha256:0c08925b341a204c06bd134b161f7126a241b3031a0a0d2fc3ab207d2c58bef0`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
@@ -3471,48 +7503,48 @@ LABEL org.opencontainers.image.version=20.04
 ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
 # Fri, 11 Oct 2024 03:39:47 GMT
 CMD ["/bin/bash"]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG DEBIAN_FRONTEND=noninteractive
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG apt_archive=http://archive.ubuntu.com
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 # ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
 RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPO_CHANNEL=stable
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
-# Sun, 10 Nov 2024 19:13:47 GMT
-ARG VERSION=24.8.6.70
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.8.7.41
+# Mon, 18 Nov 2024 17:56:28 GMT
 ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN locale-gen en_US.UTF-8 # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV LANG=en_US.UTF-8
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV TZ=UTC
-# Sun, 10 Nov 2024 19:13:47 GMT
-# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.6.70 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 VOLUME [/var/lib/clickhouse]
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
-# Sun, 10 Nov 2024 19:13:47 GMT
+# Mon, 18 Nov 2024 17:56:28 GMT
 ENTRYPOINT ["/entrypoint.sh"]
 ```
 
@@ -3521,60 +7553,312 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:23ba974f84eb2fc21ccc6b14da8a5b6116a1131bd64b71ae6fb6023c06759053`  
-		Last Modified: Tue, 12 Nov 2024 01:06:51 GMT  
-		Size: 8.7 MB (8662321 bytes)  
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6948cfea4a51c536096b2b78d89558f999dc084aafe6d0a64ad270d500c584a3`  
-		Last Modified: Tue, 12 Nov 2024 01:08:40 GMT  
-		Size: 136.7 MB (136665946 bytes)  
+	-	`sha256:03120df1d949cda902248b711ed24360e5f33e29ab93d0fcc3ad4f49f4c94663`  
+		Last Modified: Mon, 18 Nov 2024 20:08:02 GMT  
+		Size: 136.7 MB (136685053 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ae1e740a57e967033425e15cbbef58623f580e3e05eaa488af2549150489016`  
-		Last Modified: Tue, 12 Nov 2024 01:08:37 GMT  
-		Size: 186.0 B  
+	-	`sha256:a05d90f88b9b12fdedfe65bc756bff7ebf2bcd74475f8002682c5912815c5ea0`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ca632dae928fb1896852c1fb89b6c1e5cdf2e934a59b4e94165c64241f35478`  
-		Last Modified: Tue, 12 Nov 2024 01:08:37 GMT  
-		Size: 863.5 KB (863471 bytes)  
+	-	`sha256:d73efb287cd7a74820405dc5e4d603782ddab7a5d7675d8257e9b89562076788`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 863.5 KB (863473 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49220562a2798401ef2a70bfba4f678a869b1627ab96f492fba656704002f582`  
-		Last Modified: Tue, 12 Nov 2024 01:08:37 GMT  
+	-	`sha256:021af34596bc467a509c70e886da66789b1d1cbb835980cfb8d2e74962bd504a`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13c29b785e3f2042e0c04eb6997fad37c4f703ac19a8f81c07b45531dc26e42d`  
-		Last Modified: Tue, 12 Nov 2024 01:08:38 GMT  
+	-	`sha256:9cf8f562b370201341e7dfa04698b7cd723787c43682db929bc33aa4618dc511`  
+		Last Modified: Mon, 18 Nov 2024 20:07:59 GMT  
 		Size: 361.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:438b90cdb70d964cf18a00c838bcbe410cb2b74a1fa57cf456fda21c4f0903a4`  
-		Last Modified: Tue, 12 Nov 2024 01:08:38 GMT  
-		Size: 3.1 KB (3142 bytes)  
+	-	`sha256:127256b32943afe8f2b034ae5168c0037568ed72ab28fecb0336a496b56352bf`  
+		Last Modified: Mon, 18 Nov 2024 20:07:59 GMT  
+		Size: 3.1 KB (3141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clickhouse:lts` - unknown; unknown
 
 ```console
-$ docker pull clickhouse@sha256:ddfe734a1c712615ee3d0127f21f4b191885287ccf44661a20ceebeec233d98a
+$ docker pull clickhouse@sha256:dee6a322dd46dd22fbcda8db3070427a0d203231dfafa78e92767b46a3a20ae0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **26.1 KB (26087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb0e80c78377cd8a46ca655d9b51e98396c3a1b41c98720ddd0880a3067768ac`
+-	Image ID: `sha256:4f4ccb8f250378ac75e417fc9c9f2ec26e248ad4d82ded701075407f0e6c2dab`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d1a1a00d2596db9b2273ff26bbaca213308822cf8e26ab1c6cf979bc6ca32b96`  
-		Last Modified: Tue, 12 Nov 2024 01:08:37 GMT  
+	-	`sha256:df1379770a3a3a41c884e93ea770d057adc7fb09481238e53c57279c24b95360`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
 		Size: 26.1 KB (26087 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `clickhouse:lts-focal`
 
 ```console
-$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull clickhouse@sha256:698363cd1136335696abf40a67f5546127dfdf5fe6ad2ca88fe60cd3ae7bdf2e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 4
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `clickhouse:lts-focal` - linux; amd64
+
+```console
+$ docker pull clickhouse@sha256:47cef6f2fbb1fb511670b86d9f4783ec9cfa3c072a40a59282a980cf38b6aa0c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **178.8 MB (178812657 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e1387e7bdaf532e3d74a9b01fa5552a8d49c42257102256a8dd84a75943af949`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.8.7.41
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7e67b6741df06aa8eb8d8fcb7c95e8cc10d7e92f9a3cb3181ae40f97bba8a4f2`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 8.8 MB (8802629 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d8ba309f2e22dfad8a2676a95340a87935e01c40b10278c763606e6a38f8ae3f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:18 GMT  
+		Size: 141.6 MB (141631685 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:48aef40100afaae89d86927eec76e4e414602914f5b5e776ca029cf0907bf538`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 185.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a0f960df628b7b0375c45e65adc733c6779004504ec3ef541e913e73cc895b07`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 863.5 KB (863478 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ec64844717ad2ae00fe14780a6cc2f44eb95615036366e291852afabf464492f`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fc4d29135e7f625c0a17e60870a4120bf338bf85646c29a1281f4c26ef11796b`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 362.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d2cfd9c027f10cb6506f9e0695b3c98044eab94a91ebe1b125e9b3f95f4e54c9`  
+		Last Modified: Mon, 18 Nov 2024 20:06:16 GMT  
+		Size: 3.1 KB (3142 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:lts-focal` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:b101c6fca19411ff534750286eaf83eecb9bb127846c5077bbf85882c93b6d5e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **25.9 KB (25875 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:23c985ecdf74273a1483a770cc4add37729a95eaf93cd09b69b9f5433d9ab26f`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:1c0ef4be653a14e13ddd9f068f8b7e943b538376f38f98b9a9c90b9ee1ceb60a`  
+		Last Modified: Mon, 18 Nov 2024 20:06:15 GMT  
+		Size: 25.9 KB (25875 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `clickhouse:lts-focal` - linux; arm64 variant v8
+
+```console
+$ docker pull clickhouse@sha256:d00c2769c76341b3cf1a4dc8e9f5a5b1ee9b893de45609ae576556ebab7882ef
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **172.2 MB (172188479 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:0c08925b341a204c06bd134b161f7126a241b3031a0a0d2fc3ab207d2c58bef0`
+-	Entrypoint: `["\/entrypoint.sh"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
+CMD ["/bin/bash"]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG DEBIAN_FRONTEND=noninteractive
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG apt_archive=http://archive.ubuntu.com
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com
+RUN sed -i "s|http://archive.ubuntu.com|${apt_archive}|g" /etc/apt/sources.list     && groupadd -r clickhouse --gid=101     && useradd -r -g clickhouse --uid=101 --home-dir=/var/lib/clickhouse --shell=/bin/bash clickhouse     && apt-get update     && apt-get install --yes --no-install-recommends         ca-certificates         locales         tzdata         wget     && rm -rf /var/lib/apt/lists/* /var/cache/debconf /tmp/* # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPO_CHANNEL=stable
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG VERSION=24.8.7.41
+# Mon, 18 Nov 2024 17:56:28 GMT
+ARG PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse local -q 'SELECT 1' >/dev/null 2>&1 && exit 0 || :     ; apt-get update     && apt-get install --yes --no-install-recommends         dirmngr         gnupg2     && mkdir -p /etc/apt/sources.list.d     && GNUPGHOME=$(mktemp -d)     && GNUPGHOME="$GNUPGHOME" gpg --batch --no-default-keyring         --keyring /usr/share/keyrings/clickhouse-keyring.gpg         --keyserver hkp://keyserver.ubuntu.com:80         --recv-keys 3a9ea1193a97b548be1457d48919f6bd2b48d754     && rm -rf "$GNUPGHOME"     && chmod +r /usr/share/keyrings/clickhouse-keyring.gpg     && echo "${REPOSITORY}" > /etc/apt/sources.list.d/clickhouse.list     && echo "installing from repository: ${REPOSITORY}"     && apt-get update     && for package in ${PACKAGES}; do         packages="${packages} ${package}=${VERSION}"     ; done     && apt-get install --yes --no-install-recommends ${packages} || exit 1     && rm -rf         /var/lib/apt/lists/*         /var/cache/debconf         /tmp/*     && apt-get autoremove --purge -yq dirmngr gnupg2     && chmod ugo+Xrw -R /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN clickhouse-local -q 'SELECT * FROM system.build_options'     && mkdir -p /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client     && chmod ugo+Xrw -R /var/lib/clickhouse /var/log/clickhouse-server /etc/clickhouse-server /etc/clickhouse-client # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN locale-gen en_US.UTF-8 # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV LANG=en_US.UTF-8
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV TZ=UTC
+# Mon, 18 Nov 2024 17:56:28 GMT
+# ARGS: DEBIAN_FRONTEND=noninteractive apt_archive=http://archive.ubuntu.com REPO_CHANNEL=stable REPOSITORY=deb [signed-by=/usr/share/keyrings/clickhouse-keyring.gpg] https://packages.clickhouse.com/deb stable main VERSION=24.8.7.41 PACKAGES=clickhouse-client clickhouse-server clickhouse-common-static
+RUN mkdir /docker-entrypoint-initdb.d # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY docker_related_config.xml /etc/clickhouse-server/config.d/ # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+COPY entrypoint.sh /entrypoint.sh # buildkit
+# Mon, 18 Nov 2024 17:56:28 GMT
+EXPOSE map[8123/tcp:{} 9000/tcp:{} 9009/tcp:{}]
+# Mon, 18 Nov 2024 17:56:28 GMT
+VOLUME [/var/lib/clickhouse]
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENV CLICKHOUSE_CONFIG=/etc/clickhouse-server/config.xml
+# Mon, 18 Nov 2024 17:56:28 GMT
+ENTRYPOINT ["/entrypoint.sh"]
+```
+
+-	Layers:
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f5085ce1b8372caa58717960d0f8dcb37ae411893306a36fe2c4f69ced7d8b16`  
+		Last Modified: Mon, 18 Nov 2024 20:07:02 GMT  
+		Size: 8.7 MB (8662322 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:03120df1d949cda902248b711ed24360e5f33e29ab93d0fcc3ad4f49f4c94663`  
+		Last Modified: Mon, 18 Nov 2024 20:08:02 GMT  
+		Size: 136.7 MB (136685053 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a05d90f88b9b12fdedfe65bc756bff7ebf2bcd74475f8002682c5912815c5ea0`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 185.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d73efb287cd7a74820405dc5e4d603782ddab7a5d7675d8257e9b89562076788`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 863.5 KB (863473 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:021af34596bc467a509c70e886da66789b1d1cbb835980cfb8d2e74962bd504a`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9cf8f562b370201341e7dfa04698b7cd723787c43682db929bc33aa4618dc511`  
+		Last Modified: Mon, 18 Nov 2024 20:07:59 GMT  
+		Size: 361.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:127256b32943afe8f2b034ae5168c0037568ed72ab28fecb0336a496b56352bf`  
+		Last Modified: Mon, 18 Nov 2024 20:07:59 GMT  
+		Size: 3.1 KB (3141 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `clickhouse:lts-focal` - unknown; unknown
+
+```console
+$ docker pull clickhouse@sha256:dee6a322dd46dd22fbcda8db3070427a0d203231dfafa78e92767b46a3a20ae0
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **26.1 KB (26087 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:4f4ccb8f250378ac75e417fc9c9f2ec26e248ad4d82ded701075407f0e6c2dab`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:df1379770a3a3a41c884e93ea770d057adc7fb09481238e53c57279c24b95360`  
+		Last Modified: Mon, 18 Nov 2024 20:07:58 GMT  
+		Size: 26.1 KB (26087 bytes)  
+		MIME: application/vnd.in-toto+json
