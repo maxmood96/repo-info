@@ -1,10 +1,10 @@
-# `ubuntu:24.04`
+# `ubuntu:25.04`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fec8bfd95b54439b934c5033dc62d79b946291c327814f2d4df181e1d7536806`
-- Created: `2024-10-16T09:25:57.559746466Z`
-- Virtual Size: ~ 78.12 Mb  
+- Image ID: `sha256:31925fd300805a54566860a01127c6bca887d48b4acb3bca0f6f24868101ace3`
+- Created: `2024-11-11T07:04:28.711427496Z`
+- Virtual Size: ~ 80.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -12,4 +12,4 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
-  - `org.opencontainers.image.version=24.04`
+  - `org.opencontainers.image.version=25.04`
