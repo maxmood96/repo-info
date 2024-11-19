@@ -410,19 +410,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.20
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.20.dsc' debianutils_5.20.dsc 1631 SHA256:ceb4258f9923aef343cc281419140b00e89274eb2e89d12e459bcd8a9abc1ef1
-'http://deb.debian.org/debian/pool/main/d/debianutils/debianutils_5.20.tar.xz' debianutils_5.20.tar.xz 80776 SHA256:dce8731adee52d1620d562c1d98b8f4177b4ae591b7a17091ffe09700dbd4be8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debianutils/5.20/
 
-- https://sources.debian.net/src/debianutils/5.20/ (for browsing the source)
-- https://sources.debian.net/src/debianutils/5.20/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debianutils/5.20/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `diffutils=1:3.10-1`
 
@@ -1693,20 +1687,13 @@ Licenses: (parsed from: `/usr/share/doc/login.defs/copyright`, `/usr/share/doc/p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.16.0-4
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0-4.dsc' shadow_4.16.0-4.dsc 2614 SHA256:cbb20576e02bb4dedf10723243b33897f57cffb26c85d585882b6485dadeeead
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0.orig.tar.xz' shadow_4.16.0.orig.tar.xz 2053720 SHA256:a0255570541a356c3718966987c8be0658691fda804826fda7576c8e69e0cfda
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0-4.debian.tar.xz' shadow_4.16.0-4.debian.tar.xz 169620 SHA256:7bb1a604494dc9567be64fa50994b72fd51011af86095d566bd71832c4d98d36
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.16.0-4/
 
-- https://sources.debian.net/src/shadow/1:4.16.0-4/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.16.0-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.16.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=257~rc1-4`
 
@@ -1726,20 +1713,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257~rc1-4
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257%7erc1-4.dsc' systemd_257~rc1-4.dsc 8261 SHA256:14d246bf1de5cca1342300cfa79639b2e9743f14b0208be255c736742108a01a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257%7erc1.orig.tar.gz' systemd_257~rc1.orig.tar.gz 16177341 SHA256:eda7234d166fabe4c642dea316340b352ba9dddb6ea11f9f1ec953c76fabbfcc
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257%7erc1-4.debian.tar.xz' systemd_257~rc1-4.debian.tar.xz 175912 SHA256:eda9854474ee321b913b262c780e982f60f56fe44f4b0fc962615192d9d62656
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257~rc1-4/
 
-- https://sources.debian.net/src/systemd/257~rc1-4/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257~rc1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257~rc1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.11-1`
 
