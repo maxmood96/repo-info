@@ -1,10 +1,10 @@
-# `clickhouse:24.9`
+# `clickhouse:lts`
 
 ## Docker Metadata
 
-- Image ID: `sha256:797296700c3fcc096d888f8695ac176c5c33d248a6d5623d38e691ded69f6356`
-- Created: `2024-11-10T19:13:47Z`
-- Virtual Size: ~ 625.04 Mb  
+- Image ID: `sha256:e1387e7bdaf532e3d74a9b01fa5552a8d49c42257102256a8dd84a75943af949`
+- Created: `2024-11-18T17:56:28Z`
+- Virtual Size: ~ 612.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
