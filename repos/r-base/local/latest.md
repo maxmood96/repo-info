@@ -108,20 +108,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:4.0.1-3
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.0.1-3.dsc' audit_4.0.1-3.dsc 2408 SHA256:e3a4c0c50009b732a177badcc7da3b37b794e1962a1a232c85a148e731ce524b
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.0.1.orig.tar.gz' audit_4.0.1.orig.tar.gz 1194961 SHA256:3890319b8536446d70801e20a5790c63e879f99be83875a858460641c6c7aff4
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.0.1-3.debian.tar.xz' audit_4.0.1-3.debian.tar.xz 19460 SHA256:021e2d5ec28313b66549d4fd7bf211ccb3e7fb05042d0014635454768fee31ba
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/audit/1:4.0.1-3/
 
-- https://sources.debian.net/src/audit/1:4.0.1-3/ (for browsing the source)
-- https://sources.debian.net/src/audit/1:4.0.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/audit/1:4.0.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-files=13.5`
 
@@ -589,13 +582,13 @@ Licenses: (parsed from: `/usr/share/doc/debianutils/copyright`)
 - `SMAIL-GPL`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debianutils=5.20
-'http://http.debian.net/debian/pool/main/d/debianutils/debianutils_5.20.dsc' debianutils_5.20.dsc 1631 SHA256:ceb4258f9923aef343cc281419140b00e89274eb2e89d12e459bcd8a9abc1ef1
-'http://http.debian.net/debian/pool/main/d/debianutils/debianutils_5.20.tar.xz' debianutils_5.20.tar.xz 80776 SHA256:dce8731adee52d1620d562c1d98b8f4177b4ae591b7a17091ffe09700dbd4be8
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/debianutils/5.20/
+
 
 ### `dpkg` source package: `diffutils=1:3.10-1`
 
@@ -1130,21 +1123,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.6-2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.6-2.dsc' gnutls28_3.8.6-2.dsc 3269 SHA256:4ec462fc0173a7e33a7051586ea4486b4856cbd97e38e9a96f88f033cf0862f8
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.6.orig.tar.xz' gnutls28_3.8.6.orig.tar.xz 6517476 SHA256:2e1588aae53cb32d43937f1f4eca28febd9c0c7aa1734fc5dd61a7e81e0ebcdd
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.6.orig.tar.xz.asc' gnutls28_3.8.6.orig.tar.xz.asc 228 SHA256:53ad69e21ea74447117aa55e51853c49e745f2c1e2de97539c6fbbec306cf65e
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.6-2.debian.tar.xz' gnutls28_3.8.6-2.debian.tar.xz 77512 SHA256:7a71826206b082d6742fafcb6dee37aa9ae147b9bad8a69875f5eed8ea7a915b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.6-2/
 
-- https://sources.debian.net/src/gnutls28/3.8.6-2/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.6-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.6-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-2`
 
@@ -3266,10 +3251,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris shadow=1:4.16.0-4
-'http://http.debian.net/debian/pool/main/s/shadow/shadow_4.16.0-4.dsc' shadow_4.16.0-4.dsc 2614 SHA256:cbb20576e02bb4dedf10723243b33897f57cffb26c85d585882b6485dadeeead
-'http://http.debian.net/debian/pool/main/s/shadow/shadow_4.16.0.orig.tar.xz' shadow_4.16.0.orig.tar.xz 2053720 SHA256:a0255570541a356c3718966987c8be0658691fda804826fda7576c8e69e0cfda
-'http://http.debian.net/debian/pool/main/s/shadow/shadow_4.16.0-4.debian.tar.xz' shadow_4.16.0-4.debian.tar.xz 169620 SHA256:7bb1a604494dc9567be64fa50994b72fd51011af86095d566bd71832c4d98d36
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0-4.dsc' shadow_4.16.0-4.dsc 2614 SHA256:cbb20576e02bb4dedf10723243b33897f57cffb26c85d585882b6485dadeeead
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0.orig.tar.xz' shadow_4.16.0.orig.tar.xz 2053720 SHA256:a0255570541a356c3718966987c8be0658691fda804826fda7576c8e69e0cfda
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0-4.debian.tar.xz' shadow_4.16.0-4.debian.tar.xz 169620 SHA256:7bb1a604494dc9567be64fa50994b72fd51011af86095d566bd71832c4d98d36
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/shadow/1:4.16.0-4/ (for browsing the source)
+- https://sources.debian.net/src/shadow/1:4.16.0-4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/shadow/1:4.16.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `survival=3.7-0-1`
 
