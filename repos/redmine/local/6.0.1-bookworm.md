@@ -4029,20 +4029,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-15=15.9-0+deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.9-0%2bdeb12u1.dsc' postgresql-15_15.9-0+deb12u1.dsc 3919 SHA256:460a683e3107d8912129f0bbeb49aebe5d4a23c1a804e1c877d420b9bacd775e
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.9.orig.tar.bz2' postgresql-15_15.9.orig.tar.bz2 23135232 SHA256:74f2d4565035f0cf729ecb059949faaf1102cbd93759b359822f98f82198c783
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.9-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.9-0+deb12u1.debian.tar.xz 27052 SHA256:9ebb91c68e098afc8d93c0122810926e15740d4cbe162a52a500d17835c81832
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-15/15.9-0+deb12u1/
 
-- https://sources.debian.net/src/postgresql-15/15.9-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-15/15.9-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-15/15.9-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.2-3`
 
