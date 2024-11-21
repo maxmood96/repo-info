@@ -625,14 +625,9 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.72.4-0ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.3.dsc' glib2.0_2.72.4-0ubuntu2.3.dsc 3670 SHA512:bea1f5359cdfc0cf6403812b87263221523a54e50726fa7a2232e08f0eda35e3e23c6b98d1a978bfe141fc9a50732a335e5f7570489dafd042038f4ed2534f1e
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4.orig.tar.xz' glib2.0_2.72.4.orig.tar.xz 4884256 SHA512:b4e2e0985e2184ee9656c4f1b4e15d8d1264f3d23d31349bc43d92e8432cffa48e1685c40517efb08dc5b57b8285acf65f2747deeb50e50d9cacec7160e7edf8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.3.debian.tar.xz' glib2.0_2.72.4-0ubuntu2.3.debian.tar.xz 146736 SHA512:0c94042cdadf2ead450f5bc97e06fd503e4954488d423f08280a050098d3a7a4203640f7e677d2d567d5d44b73ec94d297d77ffb8d3452bb947b78c87c9d8221
-```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.8`
 
@@ -1980,14 +1975,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.6.dsc' python3.10_3.10.12-1~22.04.6.dsc 3674 SHA512:5019349e8e95a79503aa5b2719e47addcc5c2df7b180ac978fe5313ae51509ce041f2bc492a6d0cc52fdf1683491b4ec31906702e8f1116cbd55f024afd9733d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.6.debian.tar.xz' python3.10_3.10.12-1~22.04.6.debian.tar.xz 243264 SHA512:0c93b8fe785b0b7137e922436782c5e9bf183794d9c8cfeaea6f3a56673136ff4c228f4831ef380048e28a550f276f7034d615df40d884f2c2a4be25aad0a9d8
-```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
