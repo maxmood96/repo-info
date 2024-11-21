@@ -303,15 +303,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.18
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.18.dsc' curl_7.81.0-1ubuntu1.18.dsc 3143 SHA512:036207144cf45829dae73369b911b032410774d290b3dc758a685f9b1706ea03719f41a13216f2e4c7c2f4f375bc3493b34579fc2aea9a2341c35d167bf368f7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.18.debian.tar.xz' curl_7.81.0-1ubuntu1.18.debian.tar.xz 77396 SHA512:50ca7954a46b6f3c2212d0a517ddb1d5a7d470c502a716242bcd1a85c577462695da55ba5b477fcb71d9cb410dd279b9627bf04ba054c04640d04da572625437
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -2045,14 +2039,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.18-13ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18-13ubuntu1.2.dsc' python2.7_2.7.18-13ubuntu1.2.dsc 3427 SHA512:56eeb4ffab1cd86b20f9b6dae7f6822b89654c488a94a276a3a798aff53962b7e2403761b23c23a27b756f4cc3aa46bf3a35515bbced2ddf55ae5e304f03e527
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18.orig.tar.gz' python2.7_2.7.18.orig.tar.gz 17539408 SHA512:9a81cea8f8853b183364b399a238604075b00d18badb0cde118b20fe4428135de5d75a3feca0d56a3d8d40d557e3933de573671072d9da6f76f84435d23bf1ba
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18-13ubuntu1.2.diff.gz' python2.7_2.7.18-13ubuntu1.2.diff.gz 383073 SHA512:6ab93433daf4ce29c23cbdaf17dcd132759695e019ee7916278791a93888be8b36ad41be9db83a4084a1afc1c0c76427ecb2d2fb5d0c34a2fe7681aa64e94987
-```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
