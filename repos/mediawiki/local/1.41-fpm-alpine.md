@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:af167ea0636c1084f6d6773e3dc49482327f78aaad96b51ea927ff093a3bbf14`
+- Image ID: `sha256:663c7d9d50ebb72af45c945290106860b1e9cd8a69ae5db1c7b2865a4da9debb`
 - Created: `2024-10-10T17:52:24Z`
-- Virtual Size: ~ 546.65 Mb  
+- Virtual Size: ~ 546.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.30`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.30.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.30.tar.xz.asc`
-  - `PHP_SHA256=f24a6007f0b25a53cb7fbaee69c85017e0345b62089c2425a0afb7e177192ed1`
+  - `PHP_VERSION=8.1.31`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.31.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.31.tar.xz.asc`
+  - `PHP_SHA256=c4f244d46ba51c72f7d13d4f66ce6a9e9a8d6b669c51be35e01765ba58e7afca`
   - `MEDIAWIKI_MAJOR_VERSION=1.41`
   - `MEDIAWIKI_VERSION=1.41.4`
 
@@ -641,16 +641,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r1 description:
+libncursesw-6.4_p20240420-r2 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r1 webpage:
+libncursesw-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r1 installed size:
+libncursesw-6.4_p20240420-r2 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r1 license:
+libncursesw-6.4_p20240420-r2 license:
 X11
 
 ```
@@ -658,16 +658,16 @@ X11
 ### `apk` package: `libpanelw`
 
 ```console
-libpanelw-6.4_p20240420-r1 description:
+libpanelw-6.4_p20240420-r2 description:
 Console display library (libpanelw)
 
-libpanelw-6.4_p20240420-r1 webpage:
+libpanelw-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-libpanelw-6.4_p20240420-r1 installed size:
+libpanelw-6.4_p20240420-r2 installed size:
 32 KiB
 
-libpanelw-6.4_p20240420-r1 license:
+libpanelw-6.4_p20240420-r2 license:
 X11
 
 ```
@@ -947,16 +947,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r1 description:
+ncurses-terminfo-base-6.4_p20240420-r2 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r1 webpage:
+ncurses-terminfo-base-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r1 installed size:
+ncurses-terminfo-base-6.4_p20240420-r2 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r1 license:
+ncurses-terminfo-base-6.4_p20240420-r2 license:
 X11
 
 ```
