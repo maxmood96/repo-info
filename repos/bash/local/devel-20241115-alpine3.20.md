@@ -1,18 +1,18 @@
-# `bash:devel-20241108`
+# `bash:devel-20241115`
 
 ## Docker Metadata
 
-- Image ID: `sha256:86d2e821358b428e148174e6f0ac3cb7eb5515926b4aac657d7212f4a28a9d3d`
-- Created: `2024-11-12T05:18:29Z`
-- Virtual Size: ~ 14.90 Mb  
+- Image ID: `sha256:977a8a15bc9e7c1f0172141ae058a11c2083040a478edba05ad63a7a80e2d9d8`
+- Created: `2024-11-19T05:18:25Z`
+- Virtual Size: ~ 14.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["bash"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `_BASH_COMMIT=b116cfe57df2c061cd953b77a0fc1b738dd5fe94`
-  - `_BASH_VERSION=devel-20241108`
+  - `_BASH_COMMIT=fa68e6da80970c302948674369d278164a33ed39`
+  - `_BASH_VERSION=devel-20241115`
 
 ## `apk` (`.apk`-based packages)
 
@@ -155,16 +155,16 @@ Apache-2.0
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r1 description:
+libncursesw-6.4_p20240420-r2 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r1 webpage:
+libncursesw-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r1 installed size:
+libncursesw-6.4_p20240420-r2 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r1 license:
+libncursesw-6.4_p20240420-r2 license:
 X11
 
 ```
@@ -223,16 +223,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r1 description:
+ncurses-terminfo-base-6.4_p20240420-r2 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r1 webpage:
+ncurses-terminfo-base-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r1 installed size:
+ncurses-terminfo-base-6.4_p20240420-r2 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r1 license:
+ncurses-terminfo-base-6.4_p20240420-r2 license:
 X11
 
 ```
