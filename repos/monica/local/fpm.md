@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:34fdf9bb247178c5dbd8ab4ddddefb22f9a393a9b218548e417625b768dbe47e`
+- Image ID: `sha256:e48265515f59de61850951c852201dc00bdce1b0449bf772fba7f014ddbc6205`
 - Created: `2024-05-08T09:27:26Z`
-- Virtual Size: ~ 644.88 Mb  
+- Virtual Size: ~ 644.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.25`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.25.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.25.tar.xz.asc`
-  - `PHP_SHA256=330b54876ea1d05ade12ee9726167332058bccd58dffa1d4e12117f6b4f616b9`
+  - `PHP_VERSION=8.2.26`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.26.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.26.tar.xz.asc`
+  - `PHP_SHA256=54747400cb4874288ad41a785e6147e2ff546cceeeb55c23c00c771ac125c6ef`
   - `PHP_OPCACHE_VALIDATE_TIMESTAMPS=0`
   - `PHP_OPCACHE_MAX_ACCELERATED_FILES=20000`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=192`
@@ -2836,11 +2836,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkgconf/1.8.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkgconf/1.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-15=15.8-0+deb12u1`
+### `dpkg` source package: `postgresql-15=15.9-0+deb12u1`
 
 Binary Packages:
 
-- `libpq5:amd64=15.8-0+deb12u1`
+- `libpq5:amd64=15.9-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -2857,20 +2857,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-15=15.8-0+deb12u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.8-0%2bdeb12u1.dsc' postgresql-15_15.8-0+deb12u1.dsc 3919 SHA256:79ec6c54824ad3653a75400593e9741fd69d2a6fa9bf73fa95785562ee25c3b0
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.8.orig.tar.bz2' postgresql-15_15.8.orig.tar.bz2 23119460 SHA256:4403515f9a69eeb3efebc98f30b8c696122bfdf895e92b3b23f5b8e769edcb6a
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.8-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.8-0+deb12u1.debian.tar.xz 26132 SHA256:7587beb629016891e3493f1458bbcc2d774012b82fb5cc40e55b53c248a9bb79
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-15/15.9-0+deb12u1/
 
-- https://sources.debian.net/src/postgresql-15/15.8-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-15/15.8-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-15/15.8-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=3.0-2`
 
