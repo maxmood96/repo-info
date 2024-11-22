@@ -1,9 +1,9 @@
-# `aerospike:ce-7.2.0.3`
+# `aerospike:ce-7.2.0.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:04c2d30ea0feb99e1ae8b5ced9aae32da1a4816a8ad40d839dae86ea497f87bb`
-- Created: `2024-11-01T23:25:06Z`
+- Image ID: `sha256:d5316391e4ea66e85a575c18c171c2e21f52feeade323334e645daf25be62b7b`
+- Created: `2024-11-21T04:27:43Z`
 - Virtual Size: ~ 202.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -20,4 +20,4 @@
   - `org.opencontainers.image.title=Aerospike Community Server`
   - `org.opencontainers.image.url=https://github.com/aerospike/aerospike-server.docker`
   - `org.opencontainers.image.vendor=Aerospike`
-  - `org.opencontainers.image.version=7.2.0.3`
+  - `org.opencontainers.image.version=7.2.0.4`
