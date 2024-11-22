@@ -1,10 +1,10 @@
-# `php:8.3.13-fpm-bullseye`
+# `php:8.4.1-fpm-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c47571cedd0ccbe4ccd20b647efaf468f9f54dbb16f6e8e998f1916712ed3088`
-- Created: `2024-10-24T16:31:40Z`
-- Virtual Size: ~ 452.64 Mb  
+- Image ID: `sha256:9ab6cc0107282deae14aa59b1de72e631c0d9767e73423dcf06a2bb7b4843ddc`
+- Created: `2024-11-21T14:39:47Z`
+- Virtual Size: ~ 458.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -16,11 +16,11 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.13`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.13.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.13.tar.xz.asc`
-  - `PHP_SHA256=89adb978cca209124fe53fd6327bc4966ca21213a7fa2e9504f854e340873018`
+  - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
+  - `PHP_VERSION=8.4.1`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.1.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.1.tar.xz.asc`
+  - `PHP_SHA256=94c8a4fd419d45748951fa6d73bd55f6bdf0adaefb8814880a67baa66027311f`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -461,12 +461,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.32-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.32-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.74.0-1.3+deb11u13`
+### `dpkg` source package: `curl=7.74.0-1.3+deb11u14`
 
 Binary Packages:
 
-- `curl=7.74.0-1.3+deb11u13`
-- `libcurl4:amd64=7.74.0-1.3+deb11u13`
+- `curl=7.74.0-1.3+deb11u14`
+- `libcurl4:amd64=7.74.0-1.3+deb11u14`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -480,17 +480,17 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.74.0-1.3+deb11u13
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.74.0-1.3%2bdeb11u13.dsc' curl_7.74.0-1.3+deb11u13.dsc 2740 SHA256:c24d188df313ef92753ab4d755cfda396095a1e374e65af70a60983bdc293e82
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.74.0.orig.tar.gz' curl_7.74.0.orig.tar.gz 4043409 SHA256:e56b3921eeb7a2951959c02db0912b5fcd5fdba5aca071da819e1accf338bbd7
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.74.0-1.3%2bdeb11u13.debian.tar.xz' curl_7.74.0-1.3+deb11u13.debian.tar.xz 76768 SHA256:30c92557142bb7d16b3a877e932d125d02142d6f7cc4984d92b0d4a015caea23
+$ apt-get source -qq --print-uris curl=7.74.0-1.3+deb11u14
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0-1.3%2bdeb11u14.dsc' curl_7.74.0-1.3+deb11u14.dsc 2732 SHA256:155a55d8cdd8fc88356ad0d10cdd1a336c658be1274349a3e23d92f156d2e04c
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0.orig.tar.gz' curl_7.74.0.orig.tar.gz 4043409 SHA256:e56b3921eeb7a2951959c02db0912b5fcd5fdba5aca071da819e1accf338bbd7
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0-1.3%2bdeb11u14.debian.tar.xz' curl_7.74.0-1.3+deb11u14.debian.tar.xz 77932 SHA256:547bb0223f05ebeea75276e51c85ad3784c0403cc5873d7dd04107b8628ac551
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u13/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u13/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u13/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u14/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u14/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u14/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2.1+deb11u1`
 
