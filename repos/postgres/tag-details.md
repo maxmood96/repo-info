@@ -6285,27 +6285,57 @@ $ docker pull postgres@sha256:34a55f7050a94c65a53e52f61460c4d9009cf90985d8fff63c
 
 ## `postgres:12.22`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:12.22-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:12.22-alpine3.19`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:12.22-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:12.22-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:12.22-bullseye`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:13`
 
@@ -12511,27 +12541,57 @@ $ docker pull postgres@sha256:e9fda60d6653b9667410a4548b8643273f5344b2484b3282bb
 
 ## `postgres:13.18`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:13.18-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:13.18-alpine3.19`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:13.18-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:13.18-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:13.18-bullseye`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:14`
 
@@ -18737,27 +18797,57 @@ $ docker pull postgres@sha256:532662681309f2406f6dec11a847bb60e3faa8c115ec9c8b41
 
 ## `postgres:14.15`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:14.15-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:14.15-alpine3.19`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:14.15-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:14.15-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:14.15-bullseye`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:15`
 
@@ -24963,27 +25053,57 @@ $ docker pull postgres@sha256:922f52871b07a0b3c91e5326b7d8c1ad25174b4153fcf700b7
 
 ## `postgres:15.10`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:15.10-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:15.10-alpine3.19`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:15.10-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:15.10-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:15.10-bullseye`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:16`
 
@@ -31189,27 +31309,57 @@ $ docker pull postgres@sha256:14a936a5d567249bc95517069bad808e5c73a39abfaf4ff252
 
 ## `postgres:16.6`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:16.6-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:16.6-alpine3.19`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:16.6-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:16.6-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:16.6-bullseye`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:17`
 
@@ -37277,27 +37427,57 @@ $ docker pull postgres@sha256:472d9dbfeab627852cae4a6fee027100810e05be95a1d748dd
 
 ## `postgres:17.2`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:17.2-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:17.2-alpine3.19`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:17.2-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:17.2-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:17.2-bullseye`
 
-**does not exist** (yet?)
+```console
+$ docker pull postgres@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `postgres:alpine`
 
