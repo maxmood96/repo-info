@@ -137,20 +137,13 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:4.0.1-3
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.0.1-3.dsc' audit_4.0.1-3.dsc 2408 SHA256:e3a4c0c50009b732a177badcc7da3b37b794e1962a1a232c85a148e731ce524b
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.0.1.orig.tar.gz' audit_4.0.1.orig.tar.gz 1194961 SHA256:3890319b8536446d70801e20a5790c63e879f99be83875a858460641c6c7aff4
-'http://deb.debian.org/debian/pool/main/a/audit/audit_4.0.1-3.debian.tar.xz' audit_4.0.1-3.debian.tar.xz 19460 SHA256:021e2d5ec28313b66549d4fd7bf211ccb3e7fb05042d0014635454768fee31ba
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/audit/1:4.0.1-3/
 
-- https://sources.debian.net/src/audit/1:4.0.1-3/ (for browsing the source)
-- https://sources.debian.net/src/audit/1:4.0.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/audit/1:4.0.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-files=13.5`
 
@@ -2024,20 +2017,13 @@ Licenses: (parsed from: `/usr/share/doc/login.defs/copyright`, `/usr/share/doc/p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.16.0-4
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0-4.dsc' shadow_4.16.0-4.dsc 2614 SHA256:cbb20576e02bb4dedf10723243b33897f57cffb26c85d585882b6485dadeeead
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0.orig.tar.xz' shadow_4.16.0.orig.tar.xz 2053720 SHA256:a0255570541a356c3718966987c8be0658691fda804826fda7576c8e69e0cfda
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0-4.debian.tar.xz' shadow_4.16.0-4.debian.tar.xz 169620 SHA256:7bb1a604494dc9567be64fa50994b72fd51011af86095d566bd71832c4d98d36
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.16.0-4/
 
-- https://sources.debian.net/src/shadow/1:4.16.0-4/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.16.0-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.16.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sqlite3=3.46.1-1`
 
@@ -2085,20 +2071,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=256.7-3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.7-3.dsc' systemd_256.7-3.dsc 8247 SHA256:7b5107c297812d87b5afb5653deb6cfed8062afa3e58aab0261fba54dac6d729
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.7.orig.tar.gz' systemd_256.7.orig.tar.gz 15672532 SHA256:896d76ff65c88f5fd9e42f90d152b0579049158a163431dd77cdc57748b1d7b0
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.7-3.debian.tar.xz' systemd_256.7-3.debian.tar.xz 175728 SHA256:7393db1479161a5e84e497f0d30ec8584e40cde3a87c89035587afac88234acf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/256.7-3/
 
-- https://sources.debian.net/src/systemd/256.7-3/ (for browsing the source)
-- https://sources.debian.net/src/systemd/256.7-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/256.7-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.11-1`
 
