@@ -1,10 +1,10 @@
-# `gradle:8.11.0-jdk-lts-and-current-alpine`
+# `gradle:8.11.1-jdk-lts-and-current-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:51ff9d0048d4dc61701f69908e1ac542b3275d17ff920b9e8ad2d757403a4b83`
-- Created: `2024-11-13T00:13:30Z`
-- Virtual Size: ~ 910.73 Mb  
+- Image ID: `sha256:811c54f68a7c68982bd4c4ed4f72b05cbc07afae2734011aa98b1d9d42a76ab0`
+- Created: `2024-11-20T19:11:06Z`
+- Virtual Size: ~ 911.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `JAVA_CURRENT_HOME=/opt/java/openjdk23`
   - `JAVA_LTS_HOME=/opt/java/openjdk21`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.11`
+  - `GRADLE_VERSION=8.11.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -961,16 +961,16 @@ OLDAP-2.8
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r1 description:
+libncursesw-6.4_p20240420-r2 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r1 webpage:
+libncursesw-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r1 installed size:
+libncursesw-6.4_p20240420-r2 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r1 license:
+libncursesw-6.4_p20240420-r2 license:
 X11
 
 ```
@@ -978,16 +978,16 @@ X11
 ### `apk` package: `libpanelw`
 
 ```console
-libpanelw-6.4_p20240420-r1 description:
+libpanelw-6.4_p20240420-r2 description:
 Console display library (libpanelw)
 
-libpanelw-6.4_p20240420-r1 webpage:
+libpanelw-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-libpanelw-6.4_p20240420-r1 installed size:
+libpanelw-6.4_p20240420-r2 installed size:
 32 KiB
 
-libpanelw-6.4_p20240420-r1 license:
+libpanelw-6.4_p20240420-r2 license:
 X11
 
 ```
@@ -1284,16 +1284,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r1 description:
+ncurses-terminfo-base-6.4_p20240420-r2 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r1 webpage:
+ncurses-terminfo-base-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r1 installed size:
+ncurses-terminfo-base-6.4_p20240420-r2 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r1 license:
+ncurses-terminfo-base-6.4_p20240420-r2 license:
 X11
 
 ```

@@ -1,9 +1,9 @@
-# `gradle:8.11.0-jdk17-graal`
+# `gradle:8.11.1-jdk17-graal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ef9e32a9051edeb75953c6fc87637e41f70642529ea5ff3cf278af602fbf210d`
-- Created: `2024-11-13T00:13:30Z`
+- Image ID: `sha256:b624bccac9a2327c44117e6dd49b8f4795b61d5dd547db598cae44c753627538`
+- Created: `2024-11-20T19:11:06Z`
 - Virtual Size: ~ 1.15 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_VERSION=17.0.9`
-  - `GRADLE_VERSION=8.11`
+  - `GRADLE_VERSION=8.11.1`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -404,13 +404,13 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.2.debian.tar.xz' coreutils_8.32-4.1ubuntu1.2.debian.tar.xz 44868 SHA512:7718e917f8f2c5c5574e73a079ea8fd3b32bc898f2e12168dc3711dfdd896e4727283011050b80f65e60994fca49da031d70901d453612132764dca7dec99543
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.18`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.19`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.18`
-- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.18`
-- `libcurl4:amd64=7.81.0-1ubuntu1.18`
+- `curl=7.81.0-1ubuntu1.19`
+- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.19`
+- `libcurl4:amd64=7.81.0-1ubuntu1.19`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -421,9 +421,15 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.19
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.19.dsc' curl_7.81.0-1ubuntu1.19.dsc 3188 SHA512:6800c2d74e8a57ef93f8e41cc9b340e72512670d1d748d6b03f3deb00ab8e180a289654128b2e6ca748a1efcbae6e7f4cba84dafa979dcac559a5e1a610d3da7
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.19.debian.tar.xz' curl_7.81.0-1ubuntu1.19.debian.tar.xz 78124 SHA512:fb677743f6395f02c08f8d8caf2056abcb7c3972658fc86aeab949f7c5af55f373e1cc0b90eab369c162851a660d5c30c373e4f4a9487c6df93f58ad7f0fc14e
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -856,11 +862,11 @@ $ apt-get source -qq --print-uris gdbm=1.23-1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.23-1.debian.tar.xz' gdbm_1.23-1.debian.tar.xz 18484 SHA512:e7ca0a608da94e5b5bc5949e27b794c87e032202eb09359ad55f6c1a7a6e895f01126781a4e0fbfdb8fef3de7c4a312b9d5a653aaf55ce8c5afbceb945945253
 ```
 
-### `dpkg` source package: `git-lfs=3.0.2-1ubuntu0.2`
+### `dpkg` source package: `git-lfs=3.0.2-1ubuntu0.3`
 
 Binary Packages:
 
-- `git-lfs=3.0.2-1ubuntu0.2`
+- `git-lfs=3.0.2-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/git-lfs/copyright`)
 
@@ -869,10 +875,10 @@ Licenses: (parsed from: `/usr/share/doc/git-lfs/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git-lfs=3.0.2-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.0.2-1ubuntu0.2.dsc' git-lfs_3.0.2-1ubuntu0.2.dsc 2611 SHA512:c211039d929d99a329de92ff428398f8dcdfb4640fb2c9e35d226edc5b8d59f9598728459f983b492ab9a3b9f73d323e7db9b17aa749ef2651d058fe31327c2a
+$ apt-get source -qq --print-uris git-lfs=3.0.2-1ubuntu0.3
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.0.2-1ubuntu0.3.dsc' git-lfs_3.0.2-1ubuntu0.3.dsc 2778 SHA512:05e22b5e4afebf1ad5e5213e6a1d5df27b60b0bb5ff850beb172d3969bebe47c5275aef275464a2c95dcb2766e5a212ee0c49c79363515fea25206397cffd96e
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.0.2.orig.tar.xz' git-lfs_3.0.2.orig.tar.xz 478588 SHA512:5026a08285cd9e8737a27dce836d53e2d14e1c8d8dc5f6664d0f6dbe696a2fdd8f461908fb184b70cf5817bfa86f94c5097d81db7736536e3d5f8661c4ed787b
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.0.2-1ubuntu0.2.debian.tar.xz' git-lfs_3.0.2-1ubuntu0.2.debian.tar.xz 4396 SHA512:bc66c729b750190ab5e7251e364316b04c0eeece203b2824a7d6b6244dcb326e3fae315fd68d27083845f2e1aa35874586a4412bdbac221aabcd105969b8f4c4
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.0.2-1ubuntu0.3.debian.tar.xz' git-lfs_3.0.2-1ubuntu0.3.debian.tar.xz 4432 SHA512:023ef83d2682cf50b7d9d38c272cbd009eb4c8ce7ef046a04c8f4750bd634cc9ab43307a46faa16c77d84f942670491bd6033ab949990d79fb8344d4afb54c75
 ```
 
 ### `dpkg` source package: `git=1:2.34.1-1ubuntu1.11`
@@ -1755,11 +1761,11 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-125.135`
+### `dpkg` source package: `linux=5.15.0-126.136`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-125.135`
+- `linux-libc-dev:amd64=5.15.0-126.136`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1768,10 +1774,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.15.0-125.135
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-125.135.dsc' linux_5.15.0-125.135.dsc 7758 SHA512:bbd176710c72b72e8a32849174d9c39e8e54a43cf52e5af0112fad2eeabde1b21d8b91af363231b1ab8bb8a42dee7738ff3a707881dea28fc612480ad2d495f2
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-125.135.diff.gz' linux_5.15.0-125.135.diff.gz 10886353 SHA512:78bac15b50df779066d04b1e56e820dce923974b4f95bc1fe139928bd9894bf589b52e57ea74853143ea87960df38f829043ffb42f3583b90209a06cb9acaa98
+$ apt-get source -qq --print-uris linux=5.15.0-126.136
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-126.136.dsc' linux_5.15.0-126.136.dsc 7758 SHA512:04172fb6f6dc535517237e067f500a32a86e526208697d610b23f88da9c5545a3659943c6c580f0729fef7bc03c5058f463ee90d6b07d42b936a8b24cf7fc301
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-126.136.diff.gz' linux_5.15.0-126.136.diff.gz 10886538 SHA512:69c394adedb3dccfb637a1349ee79fe327a81d91d0ad79ba797a83bc9ba06047440d15b3baf0ea3f632b03ac40f7315eca527f51dc50ce55954fc54e587affe7
 ```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
@@ -2348,14 +2354,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.1.tar.gz' python3-defaults_3.10.6-1~22.04.1.tar.gz 145962 SHA512:c509a2a887e4b758fbfcb6173ff046a6f73bdfdde3bd89f77102a4d99c7219d8e1805b41541c6cf658fe9dd44da188e6af450d87236d863d29f06147fea26ea1
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.6`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.7`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.6`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.6`
-- `python3.10=3.10.12-1~22.04.6`
-- `python3.10-minimal=3.10.12-1~22.04.6`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.7`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.7`
+- `python3.10=3.10.12-1~22.04.7`
+- `python3.10-minimal=3.10.12-1~22.04.7`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -2380,10 +2386,10 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.6.dsc' python3.10_3.10.12-1~22.04.6.dsc 3674 SHA512:5019349e8e95a79503aa5b2719e47addcc5c2df7b180ac978fe5313ae51509ce041f2bc492a6d0cc52fdf1683491b4ec31906702e8f1116cbd55f024afd9733d
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.7.dsc' python3.10_3.10.12-1~22.04.7.dsc 3674 SHA512:0db6a66ee8b37d71299d0f2c92e13fee807ccaf864dc831d999fb3127729b515bd8b40406fb6dd35c2cb51c2139a2cd7c4d28480e172234a9a2b362d14313c6c
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.6.debian.tar.xz' python3.10_3.10.12-1~22.04.6.debian.tar.xz 243264 SHA512:0c93b8fe785b0b7137e922436782c5e9bf183794d9c8cfeaea6f3a56673136ff4c228f4831ef380048e28a550f276f7034d615df40d884f2c2a4be25aad0a9d8
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.7.debian.tar.xz' python3.10_3.10.12-1~22.04.7.debian.tar.xz 245668 SHA512:caa1f59358b0a1d737723be6a67e2a5a72ffc25253bf01da17f5626f791c7be07870d1fcc3cb1b2ff12c2b8f6dc270acc9d84c117576e54c7005ef242b330301
 ```
 
 ### `dpkg` source package: `readline=8.1.2-1`

@@ -789,14 +789,9 @@ Licenses: (parsed from: `/usr/share/doc/git-lfs/copyright`)
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git-lfs=3.0.2-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.0.2-1ubuntu0.2.dsc' git-lfs_3.0.2-1ubuntu0.2.dsc 2611 SHA512:c211039d929d99a329de92ff428398f8dcdfb4640fb2c9e35d226edc5b8d59f9598728459f983b492ab9a3b9f73d323e7db9b17aa749ef2651d058fe31327c2a
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.0.2.orig.tar.xz' git-lfs_3.0.2.orig.tar.xz 478588 SHA512:5026a08285cd9e8737a27dce836d53e2d14e1c8d8dc5f6664d0f6dbe696a2fdd8f461908fb184b70cf5817bfa86f94c5097d81db7736536e3d5f8661c4ed787b
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.0.2-1ubuntu0.2.debian.tar.xz' git-lfs_3.0.2-1ubuntu0.2.debian.tar.xz 4396 SHA512:bc66c729b750190ab5e7251e364316b04c0eeece203b2824a7d6b6244dcb326e3fae315fd68d27083845f2e1aa35874586a4412bdbac221aabcd105969b8f4c4
-```
 
 ### `dpkg` source package: `git=1:2.34.1-1ubuntu1.11`
 
@@ -2316,14 +2311,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.6
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.6.dsc' python3.10_3.10.12-1~22.04.6.dsc 3674 SHA512:5019349e8e95a79503aa5b2719e47addcc5c2df7b180ac978fe5313ae51509ce041f2bc492a6d0cc52fdf1683491b4ec31906702e8f1116cbd55f024afd9733d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.6.debian.tar.xz' python3.10_3.10.12-1~22.04.6.debian.tar.xz 243264 SHA512:0c93b8fe785b0b7137e922436782c5e9bf183794d9c8cfeaea6f3a56673136ff4c228f4831ef380048e28a550f276f7034d615df40d884f2c2a4be25aad0a9d8
-```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 

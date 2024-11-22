@@ -1,9 +1,9 @@
-# `gradle:8.11.0-jdk21-corretto`
+# `gradle:8.11.1-jdk21-corretto`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1b009598a3caf787c49cc5324556ca20eea1cc542387b2cb5633aab4d433e9b5`
-- Created: `2024-11-13T00:13:30Z`
+- Image ID: `sha256:3c204df151ee42eee98326bdcc20467a859a14c1c4d76e519376ec47c375258f`
+- Created: `2024-11-20T19:11:06Z`
 - Virtual Size: ~ 833.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `LANG=C.UTF-8`
   - `JAVA_HOME=/usr/lib/jvm/java-21-amazon-corretto`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.11`
+  - `GRADLE_VERSION=8.11.1`
 
 ## `rpm` (`.rpm`-based packages)
 

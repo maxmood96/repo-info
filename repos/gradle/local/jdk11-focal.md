@@ -1,10 +1,10 @@
-# `gradle:8.11.0-jdk11-focal`
+# `gradle:8.11.1-jdk11-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:20d9dbcc9dd7042bed1ff4a50c7b59d1daf9df74441bbab0621c2a0e56653cbc`
-- Created: `2024-11-13T00:13:30Z`
-- Virtual Size: ~ 747.89 Mb  
+- Image ID: `sha256:88ec545d75e7fae002bca492ea008a6ef08f4b86369a4f16dec08e568f89b033`
+- Created: `2024-11-20T19:11:06Z`
+- Virtual Size: ~ 747.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.25+9`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.11`
+  - `GRADLE_VERSION=8.11.1`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=20.04`
@@ -2165,14 +2165,14 @@ $ apt-get source -qq --print-uris python-urllib3=1.25.8-2ubuntu0.4
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.25.8-2ubuntu0.4.debian.tar.xz' python-urllib3_1.25.8-2ubuntu0.4.debian.tar.xz 16492 SHA512:fcbc6cabe674613a51325cb7a1728099957c51f460ef221df6bdce94e0bb4a20ad9f2848c9bc46cb6ae2e750bf4045617c62d097c3e77ed87579443b339e4e53
 ```
 
-### `dpkg` source package: `python2.7=2.7.18-1~20.04.4`
+### `dpkg` source package: `python2.7=2.7.18-1~20.04.5`
 
 Binary Packages:
 
-- `libpython2.7-minimal:amd64=2.7.18-1~20.04.4`
-- `libpython2.7-stdlib:amd64=2.7.18-1~20.04.4`
-- `python2.7=2.7.18-1~20.04.4`
-- `python2.7-minimal=2.7.18-1~20.04.4`
+- `libpython2.7-minimal:amd64=2.7.18-1~20.04.5`
+- `libpython2.7-stdlib:amd64=2.7.18-1~20.04.5`
+- `python2.7=2.7.18-1~20.04.5`
+- `python2.7-minimal=2.7.18-1~20.04.5`
 
 Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -2193,14 +2193,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.18-1~20.04.4
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18-1%7e20.04.4.dsc' python2.7_2.7.18-1~20.04.4.dsc 3334 SHA512:718e7de0eaa660cc0f777ee60c28d6316262f6c75038120d0a5a50736bdb6146156a45e8145582b6ffb0af56975be3f61c55f01390d27e0df503ac7d7ce89251
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18.orig.tar.gz' python2.7_2.7.18.orig.tar.gz 17539408 SHA512:9a81cea8f8853b183364b399a238604075b00d18badb0cde118b20fe4428135de5d75a3feca0d56a3d8d40d557e3933de573671072d9da6f76f84435d23bf1ba
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18-1%7e20.04.4.diff.gz' python2.7_2.7.18-1~20.04.4.diff.gz 306005 SHA512:55525fa9662f0a19a67ce53a6af2bf698557d91fdf791791f3fd778b5cf97fdc36a33a3e0525f1da08aa3471b11666d4970458a9149cf8a295fb59874b3f5d4f
-```
 
 ### `dpkg` source package: `python3-defaults=3.8.2-0ubuntu2`
 
@@ -2222,14 +2217,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.8.2-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.8.2-0ubuntu2.tar.gz' python3-defaults_3.8.2-0ubuntu2.tar.gz 138226 SHA256:e4969a54306421ebfd195d0c064935db7c53f9f152d8abaae63da33819235e9a
 ```
 
-### `dpkg` source package: `python3.8=3.8.10-0ubuntu1~20.04.12`
+### `dpkg` source package: `python3.8=3.8.10-0ubuntu1~20.04.13`
 
 Binary Packages:
 
-- `libpython3.8-minimal:amd64=3.8.10-0ubuntu1~20.04.12`
-- `libpython3.8-stdlib:amd64=3.8.10-0ubuntu1~20.04.12`
-- `python3.8=3.8.10-0ubuntu1~20.04.12`
-- `python3.8-minimal=3.8.10-0ubuntu1~20.04.12`
+- `libpython3.8-minimal:amd64=3.8.10-0ubuntu1~20.04.13`
+- `libpython3.8-stdlib:amd64=3.8.10-0ubuntu1~20.04.13`
+- `python3.8=3.8.10-0ubuntu1~20.04.13`
+- `python3.8-minimal=3.8.10-0ubuntu1~20.04.13`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/share/doc/libpython3.8-stdlib/copyright`, `/usr/share/doc/python3.8/copyright`, `/usr/share/doc/python3.8-minimal/copyright`)
 
@@ -2254,10 +2249,10 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.8=3.8.10-0ubuntu1~20.04.12
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.12.dsc' python3.8_3.8.10-0ubuntu1~20.04.12.dsc 3508 SHA512:ee99133c5be3e582eb27e6f5c85c815aa7464b56fb5d6028b605ee543b542ea88d54af19e474c08b0b848557c8474f9a8ff4667d53f9419b22ba7e373fbe8d70
+$ apt-get source -qq --print-uris python3.8=3.8.10-0ubuntu1~20.04.13
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.13.dsc' python3.8_3.8.10-0ubuntu1~20.04.13.dsc 3508 SHA512:d030821a34771a4af31686ea6d5b79a201681bdb5b13d3c83b56ac187eab2c328c0bb14577779c4e17527583fb86fe33614aef099e40bb63a27351ed6866eded
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10.orig.tar.xz' python3.8_3.8.10.orig.tar.xz 18433456 SHA512:0be69705483ff9692e12048a96180e586f9d84c8d53066629f7fb2389585eb75c0f3506bb8182936e322508f58b71f4d8c6dfebbab9049b31b49da11d3b98e80
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.12.debian.tar.xz' python3.8_3.8.10-0ubuntu1~20.04.12.debian.tar.xz 246352 SHA512:94895fe559180cd3f2f8018b96d69f06d85f3e19a48e762e4523ec529e2dbbfcda015c2bd374517e63ca9e2725ca240838b9bafdccbf3e8fadbe70bf61a1d223
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.13.debian.tar.xz' python3.8_3.8.10-0ubuntu1~20.04.13.debian.tar.xz 248584 SHA512:ad633aa6f7551bbf2d4415776f89f5b5e9c697f2ba46ca7de7124fb346d336bfae85031b3fdf7d4329fa78a3de42a3a365bbc9016228ea9dd74ce48964028772
 ```
 
 ### `dpkg` source package: `readline=8.0-4`

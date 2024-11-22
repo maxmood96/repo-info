@@ -1,9 +1,9 @@
-# `gradle:8.11.0-jdk23`
+# `gradle:8.11.1-jdk23`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ea088a636013b21a79c36871375ea9ef8494dc7de1a50ccde11d1bb72eba5c49`
-- Created: `2024-11-13T00:13:30Z`
+- Image ID: `sha256:db81ccd3c04269423b0479e6816caf4e25f0f625402a3d4e59551d809ab9ebe1`
+- Created: `2024-11-20T19:11:06Z`
 - Virtual Size: ~ 798.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-23.0.1+11`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.11`
+  - `GRADLE_VERSION=8.11.1`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`
