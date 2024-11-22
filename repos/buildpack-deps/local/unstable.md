@@ -4166,21 +4166,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=6.8.2-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.8.2-1.dsc' mercurial_6.8.2-1.dsc 2806 SHA256:11ba7b87cefc7fa5f7c2ce1a3b1da821813484176e547b5ae4d3abd8f11e29e5
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.8.2.orig.tar.gz' mercurial_6.8.2.orig.tar.gz 8326288 SHA256:aac618106768ad1ed976c3fe7c8659fec99e6f0b5337ea6ea554fae8490c4f4e
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.8.2.orig.tar.gz.asc' mercurial_6.8.2.orig.tar.gz.asc 659 SHA256:0582f17c63af5170ee6325f6ebb568c5792c4b27b0da60d258ae5786e06512f5
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.8.2-1.debian.tar.xz' mercurial_6.8.2-1.debian.tar.xz 55352 SHA256:0474f33b23c8dd6050b82d469164642bff66de57faa21225d4f7046875764ec7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/6.8.2-1/
 
-- https://sources.debian.net/src/mercurial/6.8.2-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/6.8.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/6.8.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpclib3=1.3.1-1`
 
@@ -5458,20 +5450,13 @@ Licenses: (parsed from: `/usr/share/doc/libsysprof-capture-4-dev/copyright`)
 - `LGPL-3.0+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysprof=47.0-2
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_47.0-2.dsc' sysprof_47.0-2.dsc 3059 SHA256:bb680f9328ab18da6a7afeac2279438ba9a069b501d43541b9a7dd8d0044065a
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_47.0.orig.tar.xz' sysprof_47.0.orig.tar.xz 1189924 SHA256:7424c629434660654288c04248998c357d1ce87ee1559fd44df1980992ef5df5
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_47.0-2.debian.tar.xz' sysprof_47.0-2.debian.tar.xz 16656 SHA256:0ca0d0be9c463d42f7af02995ebae703f835cd2b93e9ee936b5e373cafdba026
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysprof/47.0-2/
 
-- https://sources.debian.net/src/sysprof/47.0-2/ (for browsing the source)
-- https://sources.debian.net/src/sysprof/47.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysprof/47.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=257~rc1-4`
 
