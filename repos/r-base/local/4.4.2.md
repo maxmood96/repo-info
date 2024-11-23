@@ -132,9 +132,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris base-files=13.5
-'http://http.debian.net/debian/pool/main/b/base-files/base-files_13.5.dsc' base-files_13.5.dsc 1100 SHA256:e5e4772aae38b90b23b882f18a277f9c9dc72f1861a0743bd26ec1af0a056492
-'http://http.debian.net/debian/pool/main/b/base-files/base-files_13.5.tar.xz' base-files_13.5.tar.xz 68200 SHA256:a478a680b60c63c0ae78fef166ae681adc945b29a2aea4c2d03ba2921b72d419
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.5.dsc' base-files_13.5.dsc 1100 SHA256:e5e4772aae38b90b23b882f18a277f9c9dc72f1861a0743bd26ec1af0a056492
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.5.tar.xz' base-files_13.5.tar.xz 68200 SHA256:a478a680b60c63c0ae78fef166ae681adc945b29a2aea4c2d03ba2921b72d419
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/base-files/13.5/ (for browsing the source)
+- https://sources.debian.net/src/base-files/13.5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/13.5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.5`
 
@@ -1447,10 +1453,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris lapack=3.12.0-3
-'http://http.debian.net/debian/pool/main/l/lapack/lapack_3.12.0-3.dsc' lapack_3.12.0-3.dsc 3307 SHA256:e00e9d07a748ee1e48e6c3d879459de13d172bd267b45894b7893d2b15d8ea34
-'http://http.debian.net/debian/pool/main/l/lapack/lapack_3.12.0.orig.tar.gz' lapack_3.12.0.orig.tar.gz 7933607 SHA256:eac9570f8e0ad6f30ce4b963f4f033f0f643e7c3912fc9ee6cd99120675ad48b
-'http://http.debian.net/debian/pool/main/l/lapack/lapack_3.12.0-3.debian.tar.xz' lapack_3.12.0-3.debian.tar.xz 28756 SHA256:ff6dacfcd3d8502b2fe53ae8296a00f322055cdfbdb5b2edc1b292d522dc936e
+'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.12.0-3.dsc' lapack_3.12.0-3.dsc 3307 SHA256:e00e9d07a748ee1e48e6c3d879459de13d172bd267b45894b7893d2b15d8ea34
+'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.12.0.orig.tar.gz' lapack_3.12.0.orig.tar.gz 7933607 SHA256:eac9570f8e0ad6f30ce4b963f4f033f0f643e7c3912fc9ee6cd99120675ad48b
+'http://deb.debian.org/debian/pool/main/l/lapack/lapack_3.12.0-3.debian.tar.xz' lapack_3.12.0-3.debian.tar.xz 28756 SHA256:ff6dacfcd3d8502b2fe53ae8296a00f322055cdfbdb5b2edc1b292d522dc936e
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/lapack/3.12.0-3/ (for browsing the source)
+- https://sources.debian.net/src/lapack/3.12.0-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/lapack/3.12.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lattice=0.22-6-1`
 
@@ -2634,10 +2646,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openblas=0.3.28+ds-3
-'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.28%2bds-3.dsc' openblas_0.3.28+ds-3.dsc 4553 SHA256:aab06f824141868bb9c7cd23905b9e544cf1702bab61cd429a0d2a0b8b849d9a
-'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.28%2bds.orig.tar.xz' openblas_0.3.28+ds.orig.tar.xz 2181324 SHA256:938211591b6ad62285830021192b2a0f98bca70cc7f9aac68edca56e1c4e380d
-'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.28%2bds-3.debian.tar.xz' openblas_0.3.28+ds-3.debian.tar.xz 25396 SHA256:7130a66a063750aa4c6766082baf2bc880c884847a159f53d73b67ecefe58fb8
+'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.28%2bds-3.dsc' openblas_0.3.28+ds-3.dsc 4553 SHA256:aab06f824141868bb9c7cd23905b9e544cf1702bab61cd429a0d2a0b8b849d9a
+'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.28%2bds.orig.tar.xz' openblas_0.3.28+ds.orig.tar.xz 2181324 SHA256:938211591b6ad62285830021192b2a0f98bca70cc7f9aac68edca56e1c4e380d
+'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.28%2bds-3.debian.tar.xz' openblas_0.3.28+ds-3.debian.tar.xz 25396 SHA256:7130a66a063750aa4c6766082baf2bc880c884847a159f53d73b67ecefe58fb8
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/openblas/0.3.28+ds-3/ (for browsing the source)
+- https://sources.debian.net/src/openblas/0.3.28+ds-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openblas/0.3.28+ds-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.5.18+dfsg-3`
 
@@ -3247,20 +3265,13 @@ Licenses: (parsed from: `/usr/share/doc/login.defs/copyright`, `/usr/share/doc/p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.16.0-4
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0-4.dsc' shadow_4.16.0-4.dsc 2614 SHA256:cbb20576e02bb4dedf10723243b33897f57cffb26c85d585882b6485dadeeead
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0.orig.tar.xz' shadow_4.16.0.orig.tar.xz 2053720 SHA256:a0255570541a356c3718966987c8be0658691fda804826fda7576c8e69e0cfda
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0-4.debian.tar.xz' shadow_4.16.0-4.debian.tar.xz 169620 SHA256:7bb1a604494dc9567be64fa50994b72fd51011af86095d566bd71832c4d98d36
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.16.0-4/
 
-- https://sources.debian.net/src/shadow/1:4.16.0-4/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.16.0-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.16.0-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `survival=3.7-0-1`
 
@@ -3299,20 +3310,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=256.7-3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.7-3.dsc' systemd_256.7-3.dsc 8247 SHA256:7b5107c297812d87b5afb5653deb6cfed8062afa3e58aab0261fba54dac6d729
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.7.orig.tar.gz' systemd_256.7.orig.tar.gz 15672532 SHA256:896d76ff65c88f5fd9e42f90d152b0579049158a163431dd77cdc57748b1d7b0
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_256.7-3.debian.tar.xz' systemd_256.7-3.debian.tar.xz 175728 SHA256:7393db1479161a5e84e497f0d30ec8584e40cde3a87c89035587afac88234acf
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/256.7-3/
 
-- https://sources.debian.net/src/systemd/256.7-3/ (for browsing the source)
-- https://sources.debian.net/src/systemd/256.7-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/256.7-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.11-1`
 
