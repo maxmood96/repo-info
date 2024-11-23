@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:beeb8c4b92eef29a466ad447a266585d65fab8ca43ca9857952a7ea997e6cd73`
+- Image ID: `sha256:ae6769367851d4b69af225cbd3c6d1897ea3f5ee2fdef4b22dbf06d979df1910`
 - Created: `2024-09-17T21:10:58Z`
-- Virtual Size: ~ 550.47 Mb  
+- Virtual Size: ~ 550.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.13`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.13.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.13.tar.xz.asc`
-  - `PHP_SHA256=89adb978cca209124fe53fd6327bc4966ca21213a7fa2e9504f854e340873018`
+  - `PHP_VERSION=8.3.14`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.14.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.14.tar.xz.asc`
+  - `PHP_SHA256=58b4cb9019bf70c0cbcdb814c7df79b9065059d14cf7dbf48d971f8e56ae9be7`
 - Labels:
   - `org.opencontainers.image.description=Official build of Unit for Docker.`
   - `org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images`
