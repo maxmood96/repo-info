@@ -1,10 +1,10 @@
-# `drupal:11.0.7-php8.3-fpm-bullseye`
+# `drupal:11.0.9-php8.3-fpm-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d8ff60f81b3a9c4a1d7292cf3282bf0a1f1abb52389c947d87010a89e3528ab8`
-- Created: `2024-11-12T16:58:06Z`
-- Virtual Size: ~ 542.00 Mb  
+- Image ID: `sha256:2b8e78e9286678dc5bb66df7a2276cfc17004d10ffa2102e0c2465e9694748f2`
+- Created: `2024-11-22T17:04:07Z`
+- Virtual Size: ~ 542.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,11 +17,11 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.13`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.13.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.13.tar.xz.asc`
-  - `PHP_SHA256=89adb978cca209124fe53fd6327bc4966ca21213a7fa2e9504f854e340873018`
-  - `DRUPAL_VERSION=11.0.7`
+  - `PHP_VERSION=8.3.14`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.14.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.14.tar.xz.asc`
+  - `PHP_SHA256=58b4cb9019bf70c0cbcdb814c7df79b9065059d14cf7dbf48d971f8e56ae9be7`
+  - `DRUPAL_VERSION=11.0.9`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -463,12 +463,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/coreutils/8.32-4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/coreutils/8.32-4/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `curl=7.74.0-1.3+deb11u13`
+### `dpkg` source package: `curl=7.74.0-1.3+deb11u14`
 
 Binary Packages:
 
-- `curl=7.74.0-1.3+deb11u13`
-- `libcurl4:amd64=7.74.0-1.3+deb11u13`
+- `curl=7.74.0-1.3+deb11u14`
+- `libcurl4:amd64=7.74.0-1.3+deb11u14`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -482,17 +482,17 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=7.74.0-1.3+deb11u13
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.74.0-1.3%2bdeb11u13.dsc' curl_7.74.0-1.3+deb11u13.dsc 2740 SHA256:c24d188df313ef92753ab4d755cfda396095a1e374e65af70a60983bdc293e82
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.74.0.orig.tar.gz' curl_7.74.0.orig.tar.gz 4043409 SHA256:e56b3921eeb7a2951959c02db0912b5fcd5fdba5aca071da819e1accf338bbd7
-'http://deb.debian.org/debian/pool/main/c/curl/curl_7.74.0-1.3%2bdeb11u13.debian.tar.xz' curl_7.74.0-1.3+deb11u13.debian.tar.xz 76768 SHA256:30c92557142bb7d16b3a877e932d125d02142d6f7cc4984d92b0d4a015caea23
+$ apt-get source -qq --print-uris curl=7.74.0-1.3+deb11u14
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0-1.3%2bdeb11u14.dsc' curl_7.74.0-1.3+deb11u14.dsc 2732 SHA256:155a55d8cdd8fc88356ad0d10cdd1a336c658be1274349a3e23d92f156d2e04c
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0.orig.tar.gz' curl_7.74.0.orig.tar.gz 4043409 SHA256:e56b3921eeb7a2951959c02db0912b5fcd5fdba5aca071da819e1accf338bbd7
+'http://deb.debian.org/debian-security/pool/updates/main/c/curl/curl_7.74.0-1.3%2bdeb11u14.debian.tar.xz' curl_7.74.0-1.3+deb11u14.debian.tar.xz 77932 SHA256:547bb0223f05ebeea75276e51c85ad3784c0403cc5873d7dd04107b8628ac551
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u13/ (for browsing the source)
-- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u13/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u13/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u14/ (for browsing the source)
+- https://sources.debian.net/src/curl/7.74.0-1.3+deb11u14/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/7.74.0-1.3+deb11u14/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2.1+deb11u1`
 
@@ -2644,11 +2644,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkg-config/0.29.2-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkg-config/0.29.2-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-13=13.17-0+deb11u1`
+### `dpkg` source package: `postgresql-13=13.18-0+deb11u1`
 
 Binary Packages:
 
-- `libpq5:amd64=13.17-0+deb11u1`
+- `libpq5:amd64=13.18-0+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -2671,17 +2671,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-13=13.17-0+deb11u1
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.17-0%2bdeb11u1.dsc' postgresql-13_13.17-0+deb11u1.dsc 3703 SHA256:d3d1aa7eeb5b4b1a44e8d922892fda7e77ca83f12e7f45629153cfdfa506c54d
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.17.orig.tar.bz2' postgresql-13_13.17.orig.tar.bz2 21681613 SHA256:022b0a6e7bc374a777eece33708895d7b60cae07d492b286b296a49d7395d78b
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.17-0%2bdeb11u1.debian.tar.xz' postgresql-13_13.17-0+deb11u1.debian.tar.xz 35984 SHA256:cd368c147453712bd3331e2a83e35df486330486599c3267804eeec59e709033
+$ apt-get source -qq --print-uris postgresql-13=13.18-0+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.18-0%2bdeb11u1.dsc' postgresql-13_13.18-0+deb11u1.dsc 3703 SHA256:a9baa430b851a6cf7ae090e733e5ff3594700bdc8c838489642b219cdb0b376d
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.18.orig.tar.bz2' postgresql-13_13.18.orig.tar.bz2 21687645 SHA256:ceea92abee2a8c19408d278b68de6a78b6bd3dbb4fa2d653fa7ca745d666aab1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.18-0%2bdeb11u1.debian.tar.xz' postgresql-13_13.18-0+deb11u1.debian.tar.xz 36088 SHA256:7c339a61498fe1e068fd9514ff0bf4dd97e30c2e5ab0e3d462e3622c83dd34a9
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-13/13.17-0+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-13/13.17-0+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-13/13.17-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-13/13.18-0+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-13/13.18-0+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-13/13.18-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=2.0.3-1`
 

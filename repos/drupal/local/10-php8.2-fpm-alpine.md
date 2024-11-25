@@ -1,10 +1,10 @@
-# `drupal:10.3.8-php8.2-fpm-alpine3.20`
+# `drupal:10.3.10-php8.2-fpm-alpine3.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6e27bac1d34e9cc57e5eec16ab1674fe9f9e06746b4d4ad358811fef6551d542`
-- Created: `2024-11-12T16:27:18Z`
-- Virtual Size: ~ 182.41 Mb  
+- Image ID: `sha256:b6cda51fe745a68da887316169cac9e4c5b89b36eafb1af0ea924a05e941034f`
+- Created: `2024-11-22T16:58:41Z`
+- Virtual Size: ~ 182.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,11 +17,11 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.25`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.25.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.25.tar.xz.asc`
-  - `PHP_SHA256=330b54876ea1d05ade12ee9726167332058bccd58dffa1d4e12117f6b4f616b9`
-  - `DRUPAL_VERSION=10.3.8`
+  - `PHP_VERSION=8.2.26`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.26.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.26.tar.xz.asc`
+  - `PHP_SHA256=54747400cb4874288ad41a785e6147e2ff546cceeeb55c23c00c771ac125c6ef`
+  - `DRUPAL_VERSION=10.3.10`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `apk` (`.apk`-based packages)
@@ -386,16 +386,16 @@ BSD-3-Clause AND IJG AND Zlib
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r1 description:
+libncursesw-6.4_p20240420-r2 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r1 webpage:
+libncursesw-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r1 installed size:
+libncursesw-6.4_p20240420-r2 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r1 license:
+libncursesw-6.4_p20240420-r2 license:
 X11
 
 ```
@@ -607,16 +607,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r1 description:
+ncurses-terminfo-base-6.4_p20240420-r2 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r1 webpage:
+ncurses-terminfo-base-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r1 installed size:
+ncurses-terminfo-base-6.4_p20240420-r2 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r1 license:
+ncurses-terminfo-base-6.4_p20240420-r2 license:
 X11
 
 ```
