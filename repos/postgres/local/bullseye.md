@@ -1,9 +1,9 @@
-# `postgres:17.1-bullseye`
+# `postgres:17.2-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fcabd3716b6b05561deb541889507de8e87dc1bc499f774fb3c63916a36b7492`
-- Created: `2024-11-14T19:48:01Z`
+- Image ID: `sha256:12904aba17e0121f02f0a87248506774407708b1f8cfd9278492f01eaf4e5e30`
+- Created: `2024-11-21T20:16:44Z`
 - Virtual Size: ~ 426.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,5 +14,5 @@
   - `GOSU_VERSION=1.17`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=17`
-  - `PG_VERSION=17.1-1.pgdg110+1`
+  - `PG_VERSION=17.2-1.pgdg110+1`
   - `PGDATA=/var/lib/postgresql/data`
