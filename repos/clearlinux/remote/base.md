@@ -1,7 +1,7 @@
 ## `clearlinux:base`
 
 ```console
-$ docker pull clearlinux@sha256:b868a7403fdeca14b66fa988faf1af6fe2049b71b40247808e16a0910c145adb
+$ docker pull clearlinux@sha256:9450f61f65d599213479e38dcab5784bbfcc9abaadd9f7a62e95a519eb6ab9a6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,52 +12,52 @@ $ docker pull clearlinux@sha256:b868a7403fdeca14b66fa988faf1af6fe2049b71b4024780
 ### `clearlinux:base` - linux; amd64
 
 ```console
-$ docker pull clearlinux@sha256:a293372120e023d002494569523755c6ccb05dd095a1d75569be6d8c9cf02666
+$ docker pull clearlinux@sha256:021d7e6e95059dc75fd7a7ff39dfb0456dd8942d0d5833908f80922ae9e104bc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **72.1 MB (72146954 bytes)**  
+-	Total Size: **72.1 MB (72067736 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5d62d2db97807cca4022b03e325bc067e5f2e9765d1812562a8f91a7707c77c`
+-	Image ID: `sha256:b1211fa623d46c0d7d50869bb98be1dcf1d9061ccfc525e511e58c14f705c134`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Wed, 13 Nov 2024 17:07:13 GMT
+# Tue, 19 Nov 2024 23:37:10 GMT
 MAINTAINER William Douglas <william.douglas@intel.com>
-# Wed, 13 Nov 2024 17:07:13 GMT
+# Tue, 19 Nov 2024 23:37:10 GMT
 ADD base.tar.xz / # buildkit
-# Wed, 13 Nov 2024 17:07:13 GMT
+# Tue, 19 Nov 2024 23:37:10 GMT
 RUN cd /etc &&     grep root /usr/share/defaults/etc/passwd > /etc/passwd &&     grep root /usr/share/defaults/etc/group > /etc/group &&     echo 'root:!:::::::' > /etc/shadow # buildkit
-# Wed, 13 Nov 2024 17:07:13 GMT
+# Tue, 19 Nov 2024 23:37:10 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:6ec6a50996e602d49fc51121f062c3302737bed63feae7cdb949b8624cbb01de`  
-		Last Modified: Mon, 18 Nov 2024 19:05:08 GMT  
-		Size: 72.1 MB (72146740 bytes)  
+	-	`sha256:7e457e7b95d3b6808c8f3b89f1d4add01d433d9135d496635c510329bf6d305a`  
+		Last Modified: Mon, 25 Nov 2024 20:23:45 GMT  
+		Size: 72.1 MB (72067522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a660f7519f75a84a13b8a20df2b16a0ecf26349cf8fb85d3afd31b6fdba706d5`  
-		Last Modified: Mon, 18 Nov 2024 19:05:06 GMT  
+	-	`sha256:f89d4f847aa09b827fcfa600d89611d801bd884ea62321545d4e4b26969b5ba8`  
+		Last Modified: Mon, 25 Nov 2024 20:23:44 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clearlinux:base` - unknown; unknown
 
 ```console
-$ docker pull clearlinux@sha256:5804eb355ac184ef188ac7cc6ccca035dcb4b1337e9045323ebba0b40fa92182
+$ docker pull clearlinux@sha256:07cd0ae33d061fcd700144de96906fa1c13740f3b5afb35f7cb6802f01ffe5ce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **6.3 KB (6275 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80052703397e11e807c5f1728e79751ee7808361d9cce830f143a21bb887cce5`
+-	Image ID: `sha256:0d669f753018fd548cb97f1c373356cdda46f33d76f6c5bd62823e5ceedb9fcb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:95b47eaf76b909c7c20243b2ec489b17162e9ea1a6bd5c8f6847375af2faaa2b`  
-		Last Modified: Mon, 18 Nov 2024 19:05:06 GMT  
+	-	`sha256:16beadf54659c60ab47dc858183b7cb669fbad1c8c5ce2dc53a8e726725b9666`  
+		Last Modified: Mon, 25 Nov 2024 20:23:44 GMT  
 		Size: 6.3 KB (6275 bytes)  
 		MIME: application/vnd.in-toto+json
