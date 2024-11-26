@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a42be9644aab75e85059f55cb79122b829ea5601acaa08b829eb7628682db7bb`
-- Created: `2024-10-15T23:44:17Z`
-- Virtual Size: ~ 208.04 Mb  
+- Image ID: `sha256:6741c8cbf0b1ba13c68b9b7d762de7811ac6c52efe9daf5620f8f0439deba878`
+- Created: `2024-11-25T22:19:28Z`
+- Virtual Size: ~ 208.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -395,8 +395,8 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url gmp-6.0.0-15.el7
-https://yum.oracle.com/repo/OracleLinux/OL7/8/security/validation/x86_64/getPackageSource/gmp-6.0.0-15.el7.src.rpm
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/gmp-6.0.0-15.el7.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL7/8/security/validation/x86_64/getPackageSource/gmp-6.0.0-15.el7.src.rpm
 ```
 
 ### `rpm` package: `gnupg2-2.0.22-5.el7_5.x86_64`
@@ -532,15 +532,15 @@ $ dnf --quiet download --source --url kpartx-0.4.9-136.0.5.el7_9
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/device-mapper-multipath-0.4.9-136.0.5.el7_9.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.15.1-55.0.3.el7_9.x86_64`
+### `rpm` package: `krb5-libs-1.15.1-55.0.5.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.15.1-55.0.3.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/krb5-1.15.1-55.0.3.el7_9.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.15.1-55.0.5.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/krb5-1.15.1-55.0.5.el7_9.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.2.51-15.el7.x86_64`
@@ -1457,15 +1457,15 @@ $ dnf --quiet download --source --url tar-1.26-35.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/tar-1.26-35.el7.src.rpm
 ```
 
-### `rpm` package: `tzdata-2024a-1.el7.noarch`
+### `rpm` package: `tzdata-2024b-2.el7.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-2024a-1.el7.noarch
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/tzdata-2024a-1.el7.src.rpm
+$ dnf --quiet download --source --url tzdata-2024b-2.el7.noarch
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/tzdata-2024b-2.el7.src.rpm
 ```
 
 ### `rpm` package: `ustr-1.0.4-16.el7.x86_64`
