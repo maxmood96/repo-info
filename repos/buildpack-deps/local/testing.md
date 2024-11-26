@@ -4972,20 +4972,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-17=17.0-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.0-1.dsc' postgresql-17_17.0-1.dsc 4270 SHA256:7eb5e7ab976f87b36cf7d8b440e82014b4e25bd14c8d0ee155b6e808c14e91e1
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.0.orig.tar.bz2' postgresql-17_17.0.orig.tar.bz2 21419388 SHA256:7e276131c0fdd6b62588dbad9b3bb24b8c3498d5009328dba59af16e819109de
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.0-1.debian.tar.xz' postgresql-17_17.0-1.debian.tar.xz 24472 SHA256:a513881788b19ba67171ce5d9d48171727546d4247546681f4bbf9101d51cf15
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-17/17.0-1/
 
-- https://sources.debian.net/src/postgresql-17/17.0-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-17/17.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-17/17.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.4-6`
 
@@ -5447,20 +5440,13 @@ Licenses: (parsed from: `/usr/share/doc/libsysprof-capture-4-dev/copyright`)
 - `LGPL-3.0+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysprof=47.0-2
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_47.0-2.dsc' sysprof_47.0-2.dsc 3059 SHA256:bb680f9328ab18da6a7afeac2279438ba9a069b501d43541b9a7dd8d0044065a
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_47.0.orig.tar.xz' sysprof_47.0.orig.tar.xz 1189924 SHA256:7424c629434660654288c04248998c357d1ce87ee1559fd44df1980992ef5df5
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_47.0-2.debian.tar.xz' sysprof_47.0-2.debian.tar.xz 16656 SHA256:0ca0d0be9c463d42f7af02995ebae703f835cd2b93e9ee936b5e373cafdba026
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysprof/47.0-2/
 
-- https://sources.debian.net/src/sysprof/47.0-2/ (for browsing the source)
-- https://sources.debian.net/src/sysprof/47.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysprof/47.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=256.7-3`
 
