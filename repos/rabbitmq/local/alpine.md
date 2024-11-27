@@ -1,10 +1,10 @@
-# `rabbitmq:4.0.3-alpine`
+# `rabbitmq:4.0.4-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ab43ea5d853c5fa0013dbc38dfbacdcbfe2e2ecc291697edd4b5d37c7c225c97`
-- Created: `2024-11-01T11:35:30Z`
-- Virtual Size: ~ 142.44 Mb  
+- Image ID: `sha256:c525d8456b21a12907f567699a7d335b9bf09f53a94118e725edf4650764fae7`
+- Created: `2024-11-22T21:01:04Z`
+- Virtual Size: ~ 154.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `ERLANG_INSTALL_PATH_PREFIX=/opt/erlang`
   - `OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
-  - `RABBITMQ_VERSION=4.0.3`
+  - `RABBITMQ_VERSION=4.0.4`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `HOME=/var/lib/rabbitmq`
@@ -214,16 +214,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r1 description:
+libncursesw-6.4_p20240420-r2 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r1 webpage:
+libncursesw-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r1 installed size:
+libncursesw-6.4_p20240420-r2 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r1 license:
+libncursesw-6.4_p20240420-r2 license:
 X11
 
 ```
@@ -316,16 +316,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r1 description:
+ncurses-terminfo-base-6.4_p20240420-r2 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r1 webpage:
+ncurses-terminfo-base-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r1 installed size:
+ncurses-terminfo-base-6.4_p20240420-r2 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r1 license:
+ncurses-terminfo-base-6.4_p20240420-r2 license:
 X11
 
 ```
