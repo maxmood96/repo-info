@@ -753,9 +753,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris jq=1.6-1ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/j/jq/jq_1.6-1ubuntu0.20.04.1.dsc' jq_1.6-1ubuntu0.20.04.1.dsc 2065 SHA512:45bae3cd4a6467e164d74c7873a1e23c30ca5e7d5bda31d39ca86fdddae295cb4b6a4339e6314cb2c1153f2a1462b949ef5e4bc4471770971722b97df8b5ca05
-'http://archive.ubuntu.com/ubuntu/pool/universe/j/jq/jq_1.6.orig.tar.gz' jq_1.6.orig.tar.gz 419859 SHA512:1a67af3ca16b7b4bf125868cea2185f7e98576d195f30d3e202a3f8a788ac98aa90db6685d36e9261eb85809e48b1ffc85ad30f6ebe0a76b9257fc3f92834dd0
-'http://archive.ubuntu.com/ubuntu/pool/universe/j/jq/jq_1.6-1ubuntu0.20.04.1.debian.tar.xz' jq_1.6-1ubuntu0.20.04.1.debian.tar.xz 14792 SHA512:2ef0e698d05add01ca6d53663c195855569ba28b7b058cf432a4d78d8f7d6716c3a78c2cdd23de85604ed67db9c16f453a7686ac5aad30c81cee60a3cb3a4dd8
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jq/jq_1.6-1ubuntu0.20.04.1.dsc' jq_1.6-1ubuntu0.20.04.1.dsc 2065 SHA512:45bae3cd4a6467e164d74c7873a1e23c30ca5e7d5bda31d39ca86fdddae295cb4b6a4339e6314cb2c1153f2a1462b949ef5e4bc4471770971722b97df8b5ca05
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jq/jq_1.6.orig.tar.gz' jq_1.6.orig.tar.gz 419859 SHA512:1a67af3ca16b7b4bf125868cea2185f7e98576d195f30d3e202a3f8a788ac98aa90db6685d36e9261eb85809e48b1ffc85ad30f6ebe0a76b9257fc3f92834dd0
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jq/jq_1.6-1ubuntu0.20.04.1.debian.tar.xz' jq_1.6-1ubuntu0.20.04.1.debian.tar.xz 14792 SHA512:2ef0e698d05add01ca6d53663c195855569ba28b7b058cf432a4d78d8f7d6716c3a78c2cdd23de85604ed67db9c16f453a7686ac5aad30c81cee60a3cb3a4dd8
 ```
 
 ### `dpkg` source package: `keyutils=1.6-6ubuntu1.1`
