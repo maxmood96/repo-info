@@ -1,9 +1,9 @@
-# `odoo:18.0-20241118`
+# `odoo:18.0-20241125`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c01f61490654912d47a1dea92186b0ed4d025f65ffd660805a456a01f229bf19`
-- Created: `2024-11-18T09:26:19Z`
+- Image ID: `sha256:7d9bc77230906d0a98c0a68d2cbca9c0b53c77a1d545ff21202b0b2bb787bd35`
+- Created: `2024-11-25T09:49:34Z`
 - Virtual Size: ~ 1.92 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
