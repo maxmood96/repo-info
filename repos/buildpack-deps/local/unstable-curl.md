@@ -1157,20 +1157,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap-ng0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap-ng=0.8.5-3
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.5-3.dsc' libcap-ng_0.8.5-3.dsc 1697 SHA256:8596590ccfc36311c2f3063b7dc440e443437c627199fa4812e4d8d8f4e67f52
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.5.orig.tar.gz' libcap-ng_0.8.5.orig.tar.gz 59265 SHA256:e4be07fdd234f10b866433f224d183626003c65634ed0552b02e654a380244c2
-'http://deb.debian.org/debian/pool/main/libc/libcap-ng/libcap-ng_0.8.5-3.debian.tar.xz' libcap-ng_0.8.5-3.debian.tar.xz 7788 SHA256:4a31790886166999c72811157209ce1106012a4be88063ec5aa138f073c9de03
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libcap-ng/0.8.5-3/
 
-- https://sources.debian.net/src/libcap-ng/0.8.5-3/ (for browsing the source)
-- https://sources.debian.net/src/libcap-ng/0.8.5-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcap-ng/0.8.5-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libcap2=1:2.66-5`
 
@@ -1856,20 +1849,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp3-9/copyright`)
 - `GPL-3+ with Autoconf generic exception`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp3=1.4.0-1
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.4.0-1.dsc' nghttp3_1.4.0-1.dsc 1355 SHA256:dfad9bb2b9bc5224d395e6b2cf594d07f1710a3112c2563495c4629baff43186
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.4.0.orig.tar.gz' nghttp3_1.4.0.orig.tar.gz 628880 SHA256:43a78073b103acd4668c8d3314eb98e5d002095c1e49014e48ca20bd3094408f
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.4.0-1.debian.tar.xz' nghttp3_1.4.0-1.debian.tar.xz 4504 SHA256:93489c65249d1d63e2c30ace29eecf2322ca6ac0cd719bb6c6f2279d70867954
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp3/1.4.0-1/
 
-- https://sources.debian.net/src/nghttp3/1.4.0-1/ (for browsing the source)
-- https://sources.debian.net/src/nghttp3/1.4.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp3/1.4.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ngtcp2=1.6.0-1`
 
@@ -1891,20 +1877,13 @@ Licenses: (parsed from: `/usr/share/doc/libngtcp2-16/copyright`, `/usr/share/doc
 - `GPL-3+ with Autoconf generic exception`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ngtcp2=1.6.0-1
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.6.0-1.dsc' ngtcp2_1.6.0-1.dsc 1717 SHA256:551144fea304c7c9d79f67feddfcd5b80eca2aee853afd95c4a864755ad1ff70
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.6.0.orig.tar.bz2' ngtcp2_1.6.0.orig.tar.bz2 807796 SHA256:3e40cfb92ab710295cb7c07721db28d16c6f251f61420a462c448cf39a59cc29
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.6.0-1.debian.tar.xz' ngtcp2_1.6.0-1.debian.tar.xz 6016 SHA256:147a059def5ea5ce156c5707ba610e1beff414f1ce3049db985ec553f1015bec
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ngtcp2/1.6.0-1/
 
-- https://sources.debian.net/src/ngtcp2/1.6.0-1/ (for browsing the source)
-- https://sources.debian.net/src/ngtcp2/1.6.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ngtcp2/1.6.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.6-3.1`
 
