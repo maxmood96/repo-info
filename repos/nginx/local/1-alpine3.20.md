@@ -1,20 +1,20 @@
-# `nginx:1.27.2-alpine`
+# `nginx:1.27.3-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a5967740120f9a30029392fe9c47961962888cc48e6c4b47025b1f2b964ffbb6`
-- Created: `2024-10-02T17:55:35Z`
-- Virtual Size: ~ 52.50 Mb  
+- Image ID: `sha256:91ca84b4f57794f97f70443afccff26aed771e36bc48bad1e26c2ce66124ea66`
+- Created: `2024-11-26T18:42:08Z`
+- Virtual Size: ~ 52.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
 - Command: `["nginx","-g","daemon off;"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `NGINX_VERSION=1.27.2`
+  - `NGINX_VERSION=1.27.3`
   - `PKG_RELEASE=1`
   - `DYNPKG_RELEASE=1`
-  - `NJS_VERSION=0.8.6`
+  - `NJS_VERSION=0.8.7`
   - `NJS_RELEASE=1`
 - Labels:
   - `maintainer=NGINX Docker Maintainers <docker-maint@nginx.com>`
@@ -551,16 +551,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r1 description:
+libncursesw-6.4_p20240420-r2 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r1 webpage:
+libncursesw-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r1 installed size:
+libncursesw-6.4_p20240420-r2 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r1 license:
+libncursesw-6.4_p20240420-r2 license:
 X11
 
 ```
@@ -891,16 +891,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r1 description:
+ncurses-terminfo-base-6.4_p20240420-r2 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r1 webpage:
+ncurses-terminfo-base-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r1 installed size:
+ncurses-terminfo-base-6.4_p20240420-r2 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r1 license:
+ncurses-terminfo-base-6.4_p20240420-r2 license:
 X11
 
 ```
@@ -925,16 +925,16 @@ MIT
 ### `apk` package: `nginx`
 
 ```console
-nginx-1.27.2-r1 description:
+nginx-1.27.3-r1 description:
 High performance web server
 
-nginx-1.27.2-r1 webpage:
+nginx-1.27.3-r1 webpage:
 https://nginx.org/
 
-nginx-1.27.2-r1 installed size:
-2633 KiB
+nginx-1.27.3-r1 installed size:
+2661 KiB
 
-nginx-1.27.2-r1 license:
+nginx-1.27.3-r1 license:
 2-clause BSD-like license
 
 ```
@@ -942,16 +942,16 @@ nginx-1.27.2-r1 license:
 ### `apk` package: `nginx-module-geoip`
 
 ```console
-nginx-module-geoip-1.27.2-r1 description:
+nginx-module-geoip-1.27.3-r1 description:
 nginx GeoIP dynamic modules
 
-nginx-module-geoip-1.27.2-r1 webpage:
+nginx-module-geoip-1.27.3-r1 webpage:
 https://nginx.org/
 
-nginx-module-geoip-1.27.2-r1 installed size:
+nginx-module-geoip-1.27.3-r1 installed size:
 74 KiB
 
-nginx-module-geoip-1.27.2-r1 license:
+nginx-module-geoip-1.27.3-r1 license:
 2-clause BSD-like license
 
 ```
@@ -959,16 +959,16 @@ nginx-module-geoip-1.27.2-r1 license:
 ### `apk` package: `nginx-module-image-filter`
 
 ```console
-nginx-module-image-filter-1.27.2-r1 description:
+nginx-module-image-filter-1.27.3-r1 description:
 nginx image filter dynamic module
 
-nginx-module-image-filter-1.27.2-r1 webpage:
+nginx-module-image-filter-1.27.3-r1 webpage:
 https://nginx.org/
 
-nginx-module-image-filter-1.27.2-r1 installed size:
+nginx-module-image-filter-1.27.3-r1 installed size:
 56 KiB
 
-nginx-module-image-filter-1.27.2-r1 license:
+nginx-module-image-filter-1.27.3-r1 license:
 2-clause BSD-like license
 
 ```
@@ -976,16 +976,16 @@ nginx-module-image-filter-1.27.2-r1 license:
 ### `apk` package: `nginx-module-njs`
 
 ```console
-nginx-module-njs-1.27.2.0.8.6-r1 description:
+nginx-module-njs-1.27.3.0.8.7-r1 description:
 nginx njs dynamic modules
 
-nginx-module-njs-1.27.2.0.8.6-r1 webpage:
+nginx-module-njs-1.27.3.0.8.7-r1 webpage:
 https://nginx.org/
 
-nginx-module-njs-1.27.2.0.8.6-r1 installed size:
-8472 KiB
+nginx-module-njs-1.27.3.0.8.7-r1 installed size:
+8478 KiB
 
-nginx-module-njs-1.27.2.0.8.6-r1 license:
+nginx-module-njs-1.27.3.0.8.7-r1 license:
 2-clause BSD-like license
 
 ```
@@ -993,16 +993,16 @@ nginx-module-njs-1.27.2.0.8.6-r1 license:
 ### `apk` package: `nginx-module-xslt`
 
 ```console
-nginx-module-xslt-1.27.2-r1 description:
+nginx-module-xslt-1.27.3-r1 description:
 nginx xslt dynamic module
 
-nginx-module-xslt-1.27.2-r1 webpage:
+nginx-module-xslt-1.27.3-r1 webpage:
 https://nginx.org/
 
-nginx-module-xslt-1.27.2-r1 installed size:
+nginx-module-xslt-1.27.3-r1 installed size:
 56 KiB
 
-nginx-module-xslt-1.27.2-r1 license:
+nginx-module-xslt-1.27.3-r1 license:
 2-clause BSD-like license
 
 ```
