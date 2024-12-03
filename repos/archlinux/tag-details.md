@@ -100,7 +100,12 @@ $ docker pull archlinux@sha256:ceaeb0a9110116e81f1ba710eecc1284603f69e7c7af6fa65
 
 ## `archlinux:base-20241201.0.284684`
 
-**does not exist** (yet?)
+```console
+$ docker pull archlinux@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `archlinux:base-devel`
 
@@ -192,7 +197,12 @@ $ docker pull archlinux@sha256:979cdf626a17bc7ada8b3f28f1a4e88842e85e72c61eece61
 
 ## `archlinux:base-devel-20241201.0.284684`
 
-**does not exist** (yet?)
+```console
+$ docker pull archlinux@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `archlinux:latest`
 
@@ -372,4 +382,9 @@ $ docker pull archlinux@sha256:85dbdc55e30e0bb61c95cbe3f212e8bb00be5053554b882c8
 
 ## `archlinux:multilib-devel-20241201.0.284684`
 
-**does not exist** (yet?)
+```console
+$ docker pull archlinux@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
