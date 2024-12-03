@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:82589fbbc3626a0332cec0738858c13ddaefb8af7f97cb915c4d791a6dce21d3`
+- Image ID: `sha256:fb7cb61cb2b87dc4a68b6ea91ebea0d11384037db0ebe0fd7c66f83b1da30f57`
 - Created: `2024-05-22T20:42:04Z`
-- Virtual Size: ~ 814.02 Mb  
+- Virtual Size: ~ 814.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -16,11 +16,11 @@
 
 ## `dpkg` (`.deb`-based packages)
 
-### `dpkg` source package: `acl=2.3.2-1build1`
+### `dpkg` source package: `acl=2.3.2-1build1.1`
 
 Binary Packages:
 
-- `libacl1:amd64=2.3.2-1build1`
+- `libacl1:amd64=2.3.2-1build1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libacl1/copyright`)
 
@@ -130,12 +130,12 @@ Licenses: (parsed from: `/usr/share/doc/libattr1/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `audit=1:3.1.2-2.1build1`
+### `dpkg` source package: `audit=1:3.1.2-2.1build1.1`
 
 Binary Packages:
 
-- `libaudit-common=1:3.1.2-2.1build1`
-- `libaudit1:amd64=1:3.1.2-2.1build1`
+- `libaudit-common=1:3.1.2-2.1build1.1`
+- `libaudit1:amd64=1:3.1.2-2.1build1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/doc/libaudit1/copyright`)
 
@@ -415,14 +415,14 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.4`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.5`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.4`
-- `libcurl3t64-gnutls:amd64=8.5.0-2ubuntu10.4`
-- `libcurl4-openssl-dev:amd64=8.5.0-2ubuntu10.4`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.4`
+- `curl=8.5.0-2ubuntu10.5`
+- `libcurl3t64-gnutls:amd64=8.5.0-2ubuntu10.5`
+- `libcurl4-openssl-dev:amd64=8.5.0-2ubuntu10.5`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.5`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3t64-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -1006,18 +1006,18 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `glib2.0=2.80.0-6ubuntu3.1`
+### `dpkg` source package: `glib2.0=2.80.0-6ubuntu3.2`
 
 Binary Packages:
 
-- `gir1.2-glib-2.0:amd64=2.80.0-6ubuntu3.1`
-- `gir1.2-glib-2.0-dev:amd64=2.80.0-6ubuntu3.1`
-- `libgirepository-2.0-0:amd64=2.80.0-6ubuntu3.1`
-- `libglib2.0-0t64:amd64=2.80.0-6ubuntu3.1`
-- `libglib2.0-bin=2.80.0-6ubuntu3.1`
-- `libglib2.0-data=2.80.0-6ubuntu3.1`
-- `libglib2.0-dev:amd64=2.80.0-6ubuntu3.1`
-- `libglib2.0-dev-bin=2.80.0-6ubuntu3.1`
+- `gir1.2-glib-2.0:amd64=2.80.0-6ubuntu3.2`
+- `gir1.2-glib-2.0-dev:amd64=2.80.0-6ubuntu3.2`
+- `libgirepository-2.0-0:amd64=2.80.0-6ubuntu3.2`
+- `libglib2.0-0t64:amd64=2.80.0-6ubuntu3.2`
+- `libglib2.0-bin=2.80.0-6ubuntu3.2`
+- `libglib2.0-data=2.80.0-6ubuntu3.2`
+- `libglib2.0-dev:amd64=2.80.0-6ubuntu3.2`
+- `libglib2.0-dev-bin=2.80.0-6ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/gir1.2-glib-2.0/copyright`, `/usr/share/doc/gir1.2-glib-2.0-dev/copyright`, `/usr/share/doc/libgirepository-2.0-0/copyright`, `/usr/share/doc/libglib2.0-0t64/copyright`, `/usr/share/doc/libglib2.0-bin/copyright`, `/usr/share/doc/libglib2.0-data/copyright`, `/usr/share/doc/libglib2.0-dev/copyright`, `/usr/share/doc/libglib2.0-dev-bin/copyright`)
 
@@ -2544,11 +2544,11 @@ Licenses: (parsed from: `/usr/share/doc/libzstd-dev/copyright`, `/usr/share/doc/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `linux=6.8.0-48.48`
+### `dpkg` source package: `linux=6.8.0-49.49`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.8.0-48.48`
+- `linux-libc-dev:amd64=6.8.0-49.49`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3216,12 +3216,12 @@ Licenses: (parsed from: `/usr/share/doc/libpkgconf3/copyright`, `/usr/share/doc/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `postgresql-16=16.4-0ubuntu0.24.04.2`
+### `dpkg` source package: `postgresql-16=16.6-0ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `libpq-dev=16.4-0ubuntu0.24.04.2`
-- `libpq5:amd64=16.4-0ubuntu0.24.04.2`
+- `libpq-dev=16.6-0ubuntu0.24.04.1`
+- `libpq5:amd64=16.6-0ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -3316,14 +3316,14 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.2`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.3`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.2`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.2`
-- `python3.12=3.12.3-1ubuntu0.2`
-- `python3.12-minimal=3.12.3-1ubuntu0.2`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.3`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.3`
+- `python3.12=3.12.3-1ubuntu0.3`
+- `python3.12-minimal=3.12.3-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 

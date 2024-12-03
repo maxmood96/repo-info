@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:41b5bec1bc757a78cbb8d29b21ff7de20e0bafa483afb3a9556016331f586a1d`
+- Image ID: `sha256:a42fd4116a699db2d4e7a8dcc690dd3362f29a31d0305d44e60b1da7400121a8`
 - Created: `2024-05-22T20:42:04Z`
 - Virtual Size: ~ 111.82 Mb  
   (total size of all layers on-disk)
@@ -16,11 +16,11 @@
 
 ## `dpkg` (`.deb`-based packages)
 
-### `dpkg` source package: `acl=2.3.2-1build1`
+### `dpkg` source package: `acl=2.3.2-1build1.1`
 
 Binary Packages:
 
-- `libacl1:amd64=2.3.2-1build1`
+- `libacl1:amd64=2.3.2-1build1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libacl1/copyright`)
 
@@ -83,12 +83,12 @@ Licenses: (parsed from: `/usr/share/doc/libattr1/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `audit=1:3.1.2-2.1build1`
+### `dpkg` source package: `audit=1:3.1.2-2.1build1.1`
 
 Binary Packages:
 
-- `libaudit-common=1:3.1.2-2.1build1`
-- `libaudit1:amd64=1:3.1.2-2.1build1`
+- `libaudit-common=1:3.1.2-2.1build1.1`
+- `libaudit1:amd64=1:3.1.2-2.1build1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/doc/libaudit1/copyright`)
 
@@ -239,12 +239,12 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.4`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.5`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.4`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.4`
+- `curl=8.5.0-2ubuntu10.5`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.5`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 

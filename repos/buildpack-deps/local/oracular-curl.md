@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0b7b838a1e6a2498c0f2b75d67c8db81136efdc82a162f30a7585633d1d465a7`
+- Image ID: `sha256:2c44578c4539dd052a272af1de7f824a2b22957771ec3454116fb0e0cdf6b203`
 - Created: `2024-08-13T17:58:12Z`
-- Virtual Size: ~ 118.20 Mb  
+- Virtual Size: ~ 118.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -257,12 +257,12 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=8.9.1-2ubuntu2`
+### `dpkg` source package: `curl=8.9.1-2ubuntu2.1`
 
 Binary Packages:
 
-- `curl=8.9.1-2ubuntu2`
-- `libcurl4t64:amd64=8.9.1-2ubuntu2`
+- `curl=8.9.1-2ubuntu2.1`
+- `libcurl4t64:amd64=8.9.1-2ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -1632,12 +1632,12 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/sqlite3/3.46.1-1/
 
 
-### `dpkg` source package: `systemd=256.5-2ubuntu3`
+### `dpkg` source package: `systemd=256.5-2ubuntu3.1`
 
 Binary Packages:
 
-- `libsystemd0:amd64=256.5-2ubuntu3`
-- `libudev1:amd64=256.5-2ubuntu3`
+- `libsystemd0:amd64=256.5-2ubuntu3.1`
+- `libudev1:amd64=256.5-2ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 

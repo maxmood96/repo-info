@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dee0b65c56e0a1b3c483fa616dd56fb948fa1bed194753f7c8917ff7273d0134`
+- Image ID: `sha256:131aa2852b90e0ada1162bf44687db88ffbac12639b7a8d6f057c2bfa7a0354e`
 - Created: `2024-05-22T20:42:04Z`
-- Virtual Size: ~ 250.92 Mb  
+- Virtual Size: ~ 251.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -16,11 +16,11 @@
 
 ## `dpkg` (`.deb`-based packages)
 
-### `dpkg` source package: `acl=2.3.2-1build1`
+### `dpkg` source package: `acl=2.3.2-1build1.1`
 
 Binary Packages:
 
-- `libacl1:amd64=2.3.2-1build1`
+- `libacl1:amd64=2.3.2-1build1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libacl1/copyright`)
 
@@ -111,12 +111,12 @@ Licenses: (parsed from: `/usr/share/doc/libattr1/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `audit=1:3.1.2-2.1build1`
+### `dpkg` source package: `audit=1:3.1.2-2.1build1.1`
 
 Binary Packages:
 
-- `libaudit-common=1:3.1.2-2.1build1`
-- `libaudit1:amd64=1:3.1.2-2.1build1`
+- `libaudit-common=1:3.1.2-2.1build1.1`
+- `libaudit1:amd64=1:3.1.2-2.1build1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/doc/libaudit1/copyright`)
 
@@ -267,13 +267,13 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.4`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.5`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.4`
-- `libcurl3t64-gnutls:amd64=8.5.0-2ubuntu10.4`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.4`
+- `curl=8.5.0-2ubuntu10.5`
+- `libcurl3t64-gnutls:amd64=8.5.0-2ubuntu10.5`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.5`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3t64-gnutls/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -1633,14 +1633,14 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.2`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.3`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.2`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.2`
-- `python3.12=3.12.3-1ubuntu0.2`
-- `python3.12-minimal=3.12.3-1ubuntu0.2`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.3`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.3`
+- `python3.12=3.12.3-1ubuntu0.3`
+- `python3.12-minimal=3.12.3-1ubuntu0.3`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 

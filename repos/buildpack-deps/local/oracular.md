@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0d3c744fb1b4abd4294a55843131e06d21bd63a052da9f1f5d0a5407fbbc7aaa`
+- Image ID: `sha256:32b5a46626d0cc438768876575effe13f925efd7379f00d0400c7b3741369191`
 - Created: `2024-08-13T17:58:12Z`
-- Virtual Size: ~ 828.28 Mb  
+- Virtual Size: ~ 828.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -427,14 +427,14 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=8.9.1-2ubuntu2`
+### `dpkg` source package: `curl=8.9.1-2ubuntu2.1`
 
 Binary Packages:
 
-- `curl=8.9.1-2ubuntu2`
-- `libcurl3t64-gnutls:amd64=8.9.1-2ubuntu2`
-- `libcurl4-openssl-dev:amd64=8.9.1-2ubuntu2`
-- `libcurl4t64:amd64=8.9.1-2ubuntu2`
+- `curl=8.9.1-2ubuntu2.1`
+- `libcurl3t64-gnutls:amd64=8.9.1-2ubuntu2.1`
+- `libcurl4-openssl-dev:amd64=8.9.1-2ubuntu2.1`
+- `libcurl4t64:amd64=8.9.1-2ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3t64-gnutls/copyright`, `/usr/share/doc/libcurl4-openssl-dev/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -2715,11 +2715,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/libzstd/1.5.6+dfsg-1/
 
 
-### `dpkg` source package: `linux=6.11.0-8.8`
+### `dpkg` source package: `linux=6.11.0-9.9`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.11.0-8.8`
+- `linux-libc-dev:amd64=6.11.0-9.9`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2899,12 +2899,12 @@ Licenses: (parsed from: `/usr/share/doc/libmpfr6/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mysql-8.0=8.0.39-1`
+### `dpkg` source package: `mysql-8.0=8.0.40-0ubuntu0.24.10.1`
 
 Binary Packages:
 
-- `libmysqlclient-dev=8.0.39-1`
-- `libmysqlclient21:amd64=8.0.39-1`
+- `libmysqlclient-dev=8.0.40-0ubuntu0.24.10.1`
+- `libmysqlclient21:amd64=8.0.40-0ubuntu0.24.10.1`
 
 Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/share/doc/libmysqlclient21/copyright`)
 
@@ -2923,10 +2923,6 @@ Licenses: (parsed from: `/usr/share/doc/libmysqlclient-dev/copyright`, `/usr/sha
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/mysql-8.0/8.0.39-1/
 
 
 ### `dpkg` source package: `mysql-defaults=1.1.1`
@@ -3077,12 +3073,12 @@ Licenses: (parsed from: `/usr/share/doc/libopenexr-3-1-30/copyright`, `/usr/shar
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openjpeg2=2.5.0-2ubuntu1`
+### `dpkg` source package: `openjpeg2=2.5.0-2ubuntu1.1`
 
 Binary Packages:
 
-- `libopenjp2-7:amd64=2.5.0-2ubuntu1`
-- `libopenjp2-7-dev:amd64=2.5.0-2ubuntu1`
+- `libopenjp2-7:amd64=2.5.0-2ubuntu1.1`
+- `libopenjp2-7-dev:amd64=2.5.0-2ubuntu1.1`
 
 Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc/libopenjp2-7-dev/copyright`)
 
@@ -3401,12 +3397,12 @@ Licenses: (parsed from: `/usr/share/doc/libpkgconf3/copyright`, `/usr/share/doc/
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `postgresql-16=16.4-1build1`
+### `dpkg` source package: `postgresql-16=16.6-0ubuntu0.24.10.1`
 
 Binary Packages:
 
-- `libpq-dev=16.4-1build1`
-- `libpq5:amd64=16.4-1build1`
+- `libpq-dev=16.6-0ubuntu0.24.10.1`
+- `libpq5:amd64=16.6-0ubuntu0.24.10.1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -3482,14 +3478,14 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3.12=3.12.7-1`
+### `dpkg` source package: `python3.12=3.12.7-1ubuntu1`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.7-1`
-- `libpython3.12-stdlib:amd64=3.12.7-1`
-- `python3.12=3.12.7-1`
-- `python3.12-minimal=3.12.7-1`
+- `libpython3.12-minimal:amd64=3.12.7-1ubuntu1`
+- `libpython3.12-stdlib:amd64=3.12.7-1ubuntu1`
+- `python3.12=3.12.7-1ubuntu1`
+- `python3.12-minimal=3.12.7-1ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -3513,10 +3509,6 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/python3.12/3.12.7-1/
 
 
 ### `dpkg` source package: `readline=8.2-5`
@@ -3778,12 +3770,12 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/sysprof/47.0-1/
 
 
-### `dpkg` source package: `systemd=256.5-2ubuntu3`
+### `dpkg` source package: `systemd=256.5-2ubuntu3.1`
 
 Binary Packages:
 
-- `libsystemd0:amd64=256.5-2ubuntu3`
-- `libudev1:amd64=256.5-2ubuntu3`
+- `libsystemd0:amd64=256.5-2ubuntu3.1`
+- `libudev1:amd64=256.5-2ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -3905,11 +3897,11 @@ The source package *may* still be available for download from:
 - http://snapshot.debian.org/package/ucf/3.0043+nmu1/
 
 
-### `dpkg` source package: `unbound=1.20.0-1ubuntu2`
+### `dpkg` source package: `unbound=1.20.0-1ubuntu2.1`
 
 Binary Packages:
 
-- `libunbound8:amd64=1.20.0-1ubuntu2`
+- `libunbound8:amd64=1.20.0-1ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libunbound8/copyright`)
 

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0113271dcab80bce9700ced13a5585c0c989e1b56647edc2486bdbf7e270ae92`
+- Image ID: `sha256:71d68ca44aa08186ffc80697404b975b0f1762747a215809a8a9f250099ea38b`
 - Created: `2024-08-13T17:58:12Z`
-- Virtual Size: ~ 259.53 Mb  
+- Virtual Size: ~ 259.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -285,13 +285,13 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=8.9.1-2ubuntu2`
+### `dpkg` source package: `curl=8.9.1-2ubuntu2.1`
 
 Binary Packages:
 
-- `curl=8.9.1-2ubuntu2`
-- `libcurl3t64-gnutls:amd64=8.9.1-2ubuntu2`
-- `libcurl4t64:amd64=8.9.1-2ubuntu2`
+- `curl=8.9.1-2ubuntu2.1`
+- `libcurl3t64-gnutls:amd64=8.9.1-2ubuntu2.1`
+- `libcurl4t64:amd64=8.9.1-2ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3t64-gnutls/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -1793,14 +1793,14 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `python3.12=3.12.7-1`
+### `dpkg` source package: `python3.12=3.12.7-1ubuntu1`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.7-1`
-- `libpython3.12-stdlib:amd64=3.12.7-1`
-- `python3.12=3.12.7-1`
-- `python3.12-minimal=3.12.7-1`
+- `libpython3.12-minimal:amd64=3.12.7-1ubuntu1`
+- `libpython3.12-stdlib:amd64=3.12.7-1ubuntu1`
+- `python3.12=3.12.7-1ubuntu1`
+- `python3.12-minimal=3.12.7-1ubuntu1`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -1824,10 +1824,6 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
-
-The source package *may* still be available for download from:
-
-- http://snapshot.debian.org/package/python3.12/3.12.7-1/
 
 
 ### `dpkg` source package: `readline=8.2-5`
@@ -2016,12 +2012,12 @@ Licenses: (parsed from: `/usr/share/doc/libsvn1/copyright`, `/usr/share/doc/subv
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `systemd=256.5-2ubuntu3`
+### `dpkg` source package: `systemd=256.5-2ubuntu3.1`
 
 Binary Packages:
 
-- `libsystemd0:amd64=256.5-2ubuntu3`
-- `libudev1:amd64=256.5-2ubuntu3`
+- `libsystemd0:amd64=256.5-2ubuntu3.1`
+- `libudev1:amd64=256.5-2ubuntu3.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
