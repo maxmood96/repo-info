@@ -1,7 +1,7 @@
 ## `swipl:latest`
 
 ```console
-$ docker pull swipl@sha256:a032a52464bba5d37dbc70c42b26a6c39beab9fbc9b69ef5ae63696964c5551a
+$ docker pull swipl@sha256:ad7ac362dcfaea2d0edff7341e7c75c13b099bfdf21afcd292a500970fe06767
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -81,20 +81,18 @@ $ docker pull swipl@sha256:9fe922f63d6db357960bcd6064021cbb5da594affa1dd6a58da4d
 ### `swipl:latest` - linux; arm variant v7
 
 ```console
-$ docker pull swipl@sha256:bbad6e71362808d76fb1b47a4b44872bcdd02ebfbc73c71d603c327107d7d1bc
+$ docker pull swipl@sha256:8c434f95531392e7e16c6535cce394d613c5dcd46238d6f166a9d25e4a359db2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.8 MB (82773455 bytes)**  
+-	Total Size: **82.0 MB (81988123 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:357288401bc4d7563834c7e5ed60b71fc388adcde05b65742d913fe2dde5920b`
+-	Image ID: `sha256:2e3c566298f52cac96377924196fdcaf961275153f84c78ceb9a2c429cc97212`
 -	Default Command: `["swipl"]`
 
 ```dockerfile
-# Mon, 11 Nov 2024 00:00:00 GMT
-ADD rootfs.tar.xz / # buildkit
-# Mon, 11 Nov 2024 00:00:00 GMT
-CMD ["bash"]
+# Mon, 02 Dec 2024 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1733097600'
 # Mon, 02 Dec 2024 15:14:22 GMT
 LABEL maintainer=Dave Curylo <dave@curylo.org>, Michael Hendricks <michael@ndrix.org>
 # Mon, 02 Dec 2024 15:14:22 GMT
@@ -108,41 +106,41 @@ CMD ["swipl"]
 ```
 
 -	Layers:
-	-	`sha256:ddd3c6488ea8b62db6811ba136fe14cba70219532910e67a91ed3388ec9f5757`  
-		Last Modified: Tue, 12 Nov 2024 00:56:42 GMT  
-		Size: 24.7 MB (24718909 bytes)  
+	-	`sha256:80b4fb4796cece09f69103235c60ffd0226a78c400a2953144b84c17de4df93d`  
+		Last Modified: Tue, 03 Dec 2024 01:28:14 GMT  
+		Size: 23.9 MB (23933588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7da7007a03cac73be2169fa5ca584038434fa5be4b2634a843ee8cf6297ccb4f`  
-		Last Modified: Mon, 02 Dec 2024 20:26:01 GMT  
-		Size: 43.7 MB (43717250 bytes)  
+	-	`sha256:eed768177d9eb673c371756471dc78b5d891cac2ce2443ee54c4ccefdfbdbd00`  
+		Last Modified: Tue, 03 Dec 2024 07:27:37 GMT  
+		Size: 43.7 MB (43717233 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc98a095a66d9b3cdbcd4d868448ad0fe5f37ce1d3245abbd5e723915726f831`  
-		Last Modified: Mon, 02 Dec 2024 20:26:00 GMT  
-		Size: 14.3 MB (14337296 bytes)  
+	-	`sha256:48444b574c68731ce1e770d59c6293daaf8b07a250bfc3a704455aa346fc3125`  
+		Last Modified: Tue, 03 Dec 2024 16:54:32 GMT  
+		Size: 14.3 MB (14337302 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swipl:latest` - unknown; unknown
 
 ```console
-$ docker pull swipl@sha256:e208dda9a6552c4598a19b610a97665eae23908f3f402df7c6cb1068b397490a
+$ docker pull swipl@sha256:c73909e3d11e4845cb4542450dec0301f45a53a9d970d3b8e29e941575202a46
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3183696 bytes)**  
+-	Total Size: **3.2 MB (3182449 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c663a8f73ec08991a6f75b26bb156831e64d6c31db849fee51d6d667e0da6988`
+-	Image ID: `sha256:69aebeddc98e92420b8247faf7e77f93e0ff97da5725f8cd610e63b8921e684f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:17bfff15568cb518c054abfdffbb2385a6a9d052bdca0c448017afa5d8a5912f`  
-		Last Modified: Mon, 02 Dec 2024 20:25:59 GMT  
-		Size: 3.2 MB (3166113 bytes)  
+	-	`sha256:5248624551fea0172b3310e858bcc057849dbc5470e8e0a3942c6a4ee01a6cb2`  
+		Last Modified: Tue, 03 Dec 2024 16:54:32 GMT  
+		Size: 3.2 MB (3164865 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e8b637f63ad7e3972754db3b93918536f8064dfbb23706e24100c9f93c936827`  
-		Last Modified: Mon, 02 Dec 2024 20:25:59 GMT  
-		Size: 17.6 KB (17583 bytes)  
+	-	`sha256:4ba4bb5f85f6634c5088c3a9a440c25d84ccba526f18f6de62063c873e4816e9`  
+		Last Modified: Tue, 03 Dec 2024 16:54:32 GMT  
+		Size: 17.6 KB (17584 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swipl:latest` - linux; arm64 variant v8
