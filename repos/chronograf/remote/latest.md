@@ -1,7 +1,7 @@
 ## `chronograf:latest`
 
 ```console
-$ docker pull chronograf@sha256:18200f03814c9cb448ed2604d3593447dda4056c967b2f12bcac3d1e22222d33
+$ docker pull chronograf@sha256:f6877613a1f76be6870685199e8080872c7256691affd70b0464cd2cf5bdc886
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,21 +16,19 @@ $ docker pull chronograf@sha256:18200f03814c9cb448ed2604d3593447dda4056c967b2f12
 ### `chronograf:latest` - linux; amd64
 
 ```console
-$ docker pull chronograf@sha256:cbb2398ca1e9c1e79905f76a6f508c0b84e124ed19d8bd1ef329113df6bd0554
+$ docker pull chronograf@sha256:55179cf3247aed84a08e6880b420d6b0d7d6c6e1f681cea25cd72ba48bdc0ae6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **84.2 MB (84245436 bytes)**  
+-	Total Size: **83.2 MB (83154481 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9ef430dd9bd942ea971170a9ad41a7b86bf2b0bd54963f64e172414e8bbf7b6a`
+-	Image ID: `sha256:72b958df0fda7d82ce567ce17ab6ee07dcc5dbefe414410ce84ed2fd2c5fac70`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
 # Mon, 03 Jun 2024 14:32:31 GMT
-ADD rootfs.tar.xz / # buildkit
-# Mon, 03 Jun 2024 14:32:31 GMT
-CMD ["bash"]
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
 # Mon, 03 Jun 2024 14:32:31 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
 # Mon, 03 Jun 2024 14:32:31 GMT
@@ -54,52 +52,52 @@ CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:2d429b9e73a6cf90a5bb85105c8118b30a1b2deedeae3ea9587055ffcb80eb45`  
-		Last Modified: Tue, 12 Nov 2024 00:55:04 GMT  
-		Size: 29.1 MB (29127995 bytes)  
+	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
+		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
+		Size: 28.2 MB (28231580 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1224e7e2d3fcfa467dc4f217326c057f4f2dd7300e13ef8f9e857ce39d3b4a1a`  
-		Last Modified: Tue, 12 Nov 2024 02:38:20 GMT  
-		Size: 7.9 MB (7875383 bytes)  
+	-	`sha256:16d1b25159cefd879024a50ac2a21f071888ee20994d1d560b1ed646bad30676`  
+		Last Modified: Tue, 03 Dec 2024 02:29:26 GMT  
+		Size: 7.7 MB (7680870 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:156341f7966c50570025c0aa511f08d25d6323a659a42aed5dbf0d667f59476a`  
-		Last Modified: Tue, 12 Nov 2024 02:38:20 GMT  
-		Size: 47.2 MB (47217593 bytes)  
+	-	`sha256:504c8e1c66df44af38ba4711698f5fd119bd1d3c0a5d3cbbad222b6de6be76db`  
+		Last Modified: Tue, 03 Dec 2024 02:29:26 GMT  
+		Size: 47.2 MB (47217567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8cc833227a91630f06fdbd4aa78c70728725f847e7108c30819c0dd7b1bcc2f1`  
-		Last Modified: Tue, 12 Nov 2024 02:38:19 GMT  
-		Size: 12.2 KB (12246 bytes)  
+	-	`sha256:838382be2ab64d8e09274691b82074f7619d8f270200fdeb820adb86bb0b2526`  
+		Last Modified: Tue, 03 Dec 2024 02:29:26 GMT  
+		Size: 12.2 KB (12245 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:942d7292f5707350b55e75b6962c10f687a2f79cd6897f52184d0d756f3640af`  
-		Last Modified: Tue, 12 Nov 2024 02:38:20 GMT  
+	-	`sha256:8597baf10c7f4991bb67c12ecd1064563d82773d44fa11fcb39fd1b11619e744`  
+		Last Modified: Tue, 03 Dec 2024 02:29:26 GMT  
 		Size: 11.9 KB (11904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e59b128af6ad42b6a2e4237a81330a24126fa56928cb1282247f5a0b2e934cce`  
-		Last Modified: Tue, 12 Nov 2024 02:38:20 GMT  
+	-	`sha256:c4e643f9b16da6d1d3b681b9d7db20df09ec9518cb56018c8f4b79af604725a3`  
+		Last Modified: Tue, 03 Dec 2024 02:29:26 GMT  
 		Size: 315.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:latest` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:d283d9166d23e08f8f2ecab79a9506abca9aca59180582cf53a41af1716e8570
+$ docker pull chronograf@sha256:5720a12825375d7b7a0c1e253129b817d15fc760b5d1a434e73580621afbb3f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2722905 bytes)**  
+-	Total Size: **2.7 MB (2721657 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3dff9e10e6a0907fdc037209f268bd74095409b257480933f04b1cad3729d68f`
+-	Image ID: `sha256:2f55bf58b616a89619e2ca47656f498e76f513ab42fa925ea7ce02a488613b86`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3e81168bed413e125218f95a0a4120c7164a7f95a704ffc312fa47035416659c`  
-		Last Modified: Tue, 12 Nov 2024 02:38:20 GMT  
-		Size: 2.7 MB (2706777 bytes)  
+	-	`sha256:f86610197bd4dd56307695e593f78f560f42c259a4481365558d72ef23ac213c`  
+		Last Modified: Tue, 03 Dec 2024 02:29:26 GMT  
+		Size: 2.7 MB (2705529 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8da14de2590a125267c353c750cc1c061c345a17e9a5da32b3651a9e5dc1c2ec`  
-		Last Modified: Tue, 12 Nov 2024 02:38:19 GMT  
+	-	`sha256:90853a1cf3a79efb76a02ecac0aabab26757acfc1ce2e9dea710f795ea378fe7`  
+		Last Modified: Tue, 03 Dec 2024 02:29:26 GMT  
 		Size: 16.1 KB (16128 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -196,21 +194,19 @@ $ docker pull chronograf@sha256:b310981b0390adbddba27b5ffa275d03002a50389474dc02
 ### `chronograf:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull chronograf@sha256:55b50dea2f2137ce54f443d25b2abfeae47947ee823b2f08388d6eda47d37d8d
+$ docker pull chronograf@sha256:e7e6e8bcd037e4e3ef78dacf184dfd0607468688afcf34385ecf6fd6a43c688d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **81.8 MB (81804433 bytes)**  
+-	Total Size: **80.5 MB (80513339 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22992893a7f71a7317d6d6a37c09a42bd342530c32f54b834b877cf5e2c5ab0c`
+-	Image ID: `sha256:65251b89dd6b695070376aecd12bca6d93d4e0c50c538c14ead4ef1b8ad206e6`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["chronograf"]`
 
 ```dockerfile
 # Mon, 03 Jun 2024 14:32:31 GMT
-ADD rootfs.tar.xz / # buildkit
-# Mon, 03 Jun 2024 14:32:31 GMT
-CMD ["bash"]
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
 # Mon, 03 Jun 2024 14:32:31 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     apt-get update && apt-get install -y gnupg ca-certificates dirmngr --no-install-recommends &&     rm -rf /var/lib/apt/lists/* &&     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
 # Mon, 03 Jun 2024 14:32:31 GMT
@@ -234,51 +230,51 @@ CMD ["chronograf"]
 ```
 
 -	Layers:
-	-	`sha256:6d29a096dd42e5e003949f934fa6b1a3ec8e076dd8cfc2a85a4e750a3639bf7a`  
-		Last Modified: Tue, 12 Nov 2024 00:56:55 GMT  
-		Size: 29.2 MB (29157356 bytes)  
+	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
+		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
+		Size: 28.1 MB (28058810 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5311845117483a02d47c2a837750ed149b17f6ad45451557d3edf3b2361b65d1`  
-		Last Modified: Tue, 12 Nov 2024 11:20:18 GMT  
-		Size: 7.7 MB (7652059 bytes)  
+	-	`sha256:e4b37923b73842e71b50c0097b23bdbf8c1fd5737de2267f0155b551b4a35e04`  
+		Last Modified: Tue, 03 Dec 2024 05:43:25 GMT  
+		Size: 7.5 MB (7459550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9f1f751938fc31cf6a008145a362d6ef94697cef76dd2dcd3a8bb9c969ba5f5`  
-		Last Modified: Tue, 12 Nov 2024 11:20:19 GMT  
-		Size: 45.0 MB (44970549 bytes)  
+	-	`sha256:46cca2e9b8da36020418d166d65e08204386ea6f0f9c8322e4bd8326297bf576`  
+		Last Modified: Tue, 03 Dec 2024 05:43:26 GMT  
+		Size: 45.0 MB (44970512 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0fa6316747afbf579f3ace66f98703019df3b8b3d7083660d7e299b89205fc7b`  
-		Last Modified: Tue, 12 Nov 2024 11:20:18 GMT  
-		Size: 12.2 KB (12244 bytes)  
+	-	`sha256:af126f9679492862794ec3faa0aa3a04dc474c3487ed61d6e3362db8da417d84`  
+		Last Modified: Tue, 03 Dec 2024 05:43:24 GMT  
+		Size: 12.2 KB (12246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:38ad95dbffe5e0b91bcdb9f70a444a19e3b49b1f65366caee2370468e451a8ff`  
-		Last Modified: Tue, 12 Nov 2024 11:20:18 GMT  
-		Size: 11.9 KB (11909 bytes)  
+	-	`sha256:7e77b78079d47e9a8f9ddfb5a8c846820b91f9661f995c92a8e852ba1d225538`  
+		Last Modified: Tue, 03 Dec 2024 05:43:24 GMT  
+		Size: 11.9 KB (11905 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:522a008c121d0b587cccc212b8a01b87d0893dd790681b545ce2777b6031c31f`  
-		Last Modified: Tue, 12 Nov 2024 11:20:19 GMT  
+	-	`sha256:811ed1b8177864765392b433bcdaadb9a7d967c62836d60595ad00bec37e4ba6`  
+		Last Modified: Tue, 03 Dec 2024 05:43:25 GMT  
 		Size: 316.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `chronograf:latest` - unknown; unknown
 
 ```console
-$ docker pull chronograf@sha256:8005aae06ed87a042209bcd22fd86c390c027dfefd1ab385657eb9c4ff90b1ea
+$ docker pull chronograf@sha256:38606c6e184fd9a185d7dc62063caf17e7fb05f859ff7cd6d02af14ab3413586
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.7 MB (2723284 bytes)**  
+-	Total Size: **2.7 MB (2722036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a57bfeb1040a95763cafa6296c548fbc9a7c9d83b29c2a572fdd51e3e6aa28ce`
+-	Image ID: `sha256:376b2d0b0fea4af460bac0228148298741be2212268e3bddd98b7980c0b1c4b1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:519a1a88095896e326f6589cb0448391ad985d186bae96a9b24df79476d03244`  
-		Last Modified: Tue, 12 Nov 2024 11:20:18 GMT  
-		Size: 2.7 MB (2707049 bytes)  
+	-	`sha256:fa9dec0ce88733aebf94edfe9b94a5a4a2658b69f26d434dcfd834896edd7588`  
+		Last Modified: Tue, 03 Dec 2024 05:43:25 GMT  
+		Size: 2.7 MB (2705801 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6e694a5a62286326bdb76d6c68673eb2b6e170f2c7e26eb255c0224ddbc61be`  
-		Last Modified: Tue, 12 Nov 2024 11:20:18 GMT  
+	-	`sha256:940877f4eedacf098fda84d4925a189fb1243588d36c9d11468460a06aeb4e1e`  
+		Last Modified: Tue, 03 Dec 2024 05:43:24 GMT  
 		Size: 16.2 KB (16235 bytes)  
 		MIME: application/vnd.in-toto+json
