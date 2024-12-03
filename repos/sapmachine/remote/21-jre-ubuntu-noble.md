@@ -1,7 +1,7 @@
 ## `sapmachine:21-jre-ubuntu-noble`
 
 ```console
-$ docker pull sapmachine@sha256:8856d2ca3ac76119e5ac44b94ebb8f302c1cba1b6015a445b8cc7a9f22bafae2
+$ docker pull sapmachine@sha256:ef0530a0c5757eb5619a90d5b356fc19215aa8cddf5ee1554dda50f6f77e434d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -150,27 +150,27 @@ $ docker pull sapmachine@sha256:5e9640b674bfc435a1b59f380b7b36d1500aba75ce2e6998
 ### `sapmachine:21-jre-ubuntu-noble` - linux; ppc64le
 
 ```console
-$ docker pull sapmachine@sha256:4822e4b50830d645440521b5b49f3c1fa016b24e75ae907977e6e96f2e493c84
+$ docker pull sapmachine@sha256:0fc6e6d56900ecb3ff4089e024294602df54ea03d5d1ba87540c5ba0a9856c4d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **96.1 MB (96139953 bytes)**  
+-	Total Size: **96.1 MB (96140029 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3977c3567a5bd8e6ec4d2fba90e0ee64b975a56bf9ef0edbee1abe21dbc14611`
+-	Image ID: `sha256:e5534c7ff8f73efa8298c7dfc72e973da35209426b8a25766e2799d926e970e7`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Wed, 16 Oct 2024 09:26:09 GMT
+# Wed, 16 Oct 2024 12:49:09 GMT
 ARG RELEASE
-# Wed, 16 Oct 2024 09:26:09 GMT
+# Wed, 16 Oct 2024 12:49:09 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 16 Oct 2024 09:26:09 GMT
+# Wed, 16 Oct 2024 12:49:09 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 16 Oct 2024 09:26:09 GMT
+# Wed, 16 Oct 2024 12:49:09 GMT
 LABEL org.opencontainers.image.version=24.04
-# Wed, 16 Oct 2024 09:26:12 GMT
-ADD file:8427b57c40c05cd946f6695dbd1754b0a521a98decd2cdc16eeb114c7128804a in / 
-# Wed, 16 Oct 2024 09:26:12 GMT
+# Wed, 16 Oct 2024 12:49:09 GMT
+ADD file:43ada82586e21a3bec38211b678fc6eb9b5e39f96a2d31fced4653d2b54a553f in / 
+# Wed, 16 Oct 2024 12:49:09 GMT
 CMD ["/bin/bash"]
 # Wed, 16 Oct 2024 12:49:09 GMT
 RUN apt-get update     && apt-get -y --no-install-recommends install ca-certificates gnupg     && export GNUPGHOME="$(mktemp -d)"     && gpg --no-default-keyring --keyring gnupg-ring:/etc/apt/trusted.gpg.d/sapmachine.gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys CACB9FE09150307D1D22D82962754C3B3ABCFE23     && chmod 644 /etc/apt/trusted.gpg.d/sapmachine.gpg     && echo "deb http://dist.sapmachine.io/debian/$(dpkg --print-architecture)/ ./" > /etc/apt/sources.list.d/sapmachine.list     && apt-get update     && apt-get -y --no-install-recommends install sapmachine-21-jre=21.0.5     && apt-get remove -y --purge --autoremove ca-certificates gnupg     && rm -rf "$GNUPGHOME" /var/lib/apt/lists/* # buildkit
@@ -181,35 +181,35 @@ CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:991986948126e836a79c1084e3bee33549a43b83cabfe16234aef5b4b30d86f9`  
-		Last Modified: Wed, 16 Oct 2024 12:48:24 GMT  
-		Size: 34.4 MB (34388822 bytes)  
+	-	`sha256:4e112885c8061d52bcd0f8d99851b65be887b95c74de235a16946b3562526bbb`  
+		Last Modified: Tue, 19 Nov 2024 17:38:45 GMT  
+		Size: 34.4 MB (34388820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cc20dacd0ad6b43c911e8c03255013fdfd8d4998943d19f4feeaddc4c45bc4c`  
-		Last Modified: Sat, 16 Nov 2024 03:48:48 GMT  
-		Size: 61.8 MB (61751131 bytes)  
+	-	`sha256:8417540d3457377d4600d25949f5658e9cb01c4baaa9d1169d42f0f2e07c5260`  
+		Last Modified: Tue, 03 Dec 2024 08:35:39 GMT  
+		Size: 61.8 MB (61751209 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `sapmachine:21-jre-ubuntu-noble` - unknown; unknown
 
 ```console
-$ docker pull sapmachine@sha256:c75fc584a6b209e53fc883efa6ba4daf68b461b106796c69ab5ebabc375243d9
+$ docker pull sapmachine@sha256:cccd1147985223a7ac9674e88f2bd0ef69e0f8d5ace6c8cb72495c185d213e1b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 MB (2401834 bytes)**  
+-	Total Size: **2.4 MB (2401855 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad88e5f4ecb67a613e2bb1ded3f0fffcb09264e273861a8b7818ebf073549492`
+-	Image ID: `sha256:27a257e8f0a0c377dd67de2a9cd1e6fa5c3b297e68f21a49ab336bd69f737e53`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cde9b74a3ea7cba1ddbf1045d4f39c92fb2387e99bc8bb68f58d8a831778b454`  
-		Last Modified: Sat, 16 Nov 2024 03:48:46 GMT  
-		Size: 2.4 MB (2391311 bytes)  
+	-	`sha256:24ba6508be0ceb8cd3b84d93173f7685f5c9298ac0fb048fcf710c5e14928cad`  
+		Last Modified: Tue, 03 Dec 2024 08:35:37 GMT  
+		Size: 2.4 MB (2391331 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ff84763600a3bf1e4a00588368087bd0c44d78abd025a4afb4498e1d0f8410a6`  
-		Last Modified: Sat, 16 Nov 2024 03:48:46 GMT  
-		Size: 10.5 KB (10523 bytes)  
+	-	`sha256:3727c819e7fde16b2060ec5e28b50b5b3b21fb5c609c79db5750e9b70619f0e1`  
+		Last Modified: Tue, 03 Dec 2024 08:35:36 GMT  
+		Size: 10.5 KB (10524 bytes)  
 		MIME: application/vnd.in-toto+json
