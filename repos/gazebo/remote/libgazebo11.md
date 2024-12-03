@@ -1,7 +1,7 @@
 ## `gazebo:libgazebo11`
 
 ```console
-$ docker pull gazebo@sha256:0c3c8d6dcffcf06280541d9dd5dbc97e29f22e0cf488940cbdf0e227f3152c4b
+$ docker pull gazebo@sha256:f515a05d208c51bd01f4e5ff5edddbf7184e1518b11956ec0e1ddd8ef37c0d26
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,49 +12,49 @@ $ docker pull gazebo@sha256:0c3c8d6dcffcf06280541d9dd5dbc97e29f22e0cf488940cbdf0
 ### `gazebo:libgazebo11` - linux; amd64
 
 ```console
-$ docker pull gazebo@sha256:fee665665f4c00c246276ec324cf093126531777104bdfbdfa631c667637d02e
+$ docker pull gazebo@sha256:1ed9219bfa06a16aef8d63207329259c137ea7c02798865250876fc298029b40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **609.2 MB (609242743 bytes)**  
+-	Total Size: **609.0 MB (609016991 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cce9d6c81e16b8e14c883e8de38a32ee0c432516c400843dd803efc142798be1`
+-	Image ID: `sha256:7475336507cdfa1d0e3034c0eedbe64325b392c41a503de3c235a85ec883c626`
 -	Entrypoint: `["\/gzserver_entrypoint.sh"]`
 -	Default Command: `["gzserver"]`
 
 ```dockerfile
-# Tue, 10 Oct 2023 09:44:30 GMT
+# Fri, 11 Oct 2024 03:38:25 GMT
 ARG RELEASE
-# Tue, 10 Oct 2023 09:44:30 GMT
+# Fri, 11 Oct 2024 03:38:25 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 10 Oct 2023 09:44:30 GMT
+# Fri, 11 Oct 2024 03:38:25 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 10 Oct 2023 09:44:30 GMT
+# Fri, 11 Oct 2024 03:38:25 GMT
 LABEL org.opencontainers.image.version=20.04
-# Tue, 10 Oct 2023 09:44:30 GMT
+# Fri, 11 Oct 2024 03:38:27 GMT
 ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
-# Tue, 10 Oct 2023 09:44:30 GMT
+# Fri, 11 Oct 2024 03:38:27 GMT
 CMD ["/bin/bash"]
-# Tue, 10 Oct 2023 09:44:30 GMT
+# Thu, 28 Nov 2024 06:47:41 GMT
 RUN echo 'Etc/UTC' > /etc/timezone &&     ln -s /usr/share/zoneinfo/Etc/UTC /etc/localtime &&     apt-get update &&     apt-get install -q -y --no-install-recommends tzdata &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 10 Oct 2023 09:44:30 GMT
+# Thu, 28 Nov 2024 06:47:41 GMT
 RUN apt-get update && apt-get install -q -y --no-install-recommends     dirmngr     gnupg2     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 10 Oct 2023 09:44:30 GMT
+# Thu, 28 Nov 2024 06:47:41 GMT
 RUN set -eux; 	key='D2486D2DD83DB69272AFE98867170598AF249743'; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	mkdir -p /usr/share/keyrings; 	gpg --batch --export "$key" > /usr/share/keyrings/pkgs-osrf-archive-keyring.gpg; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" # buildkit
-# Tue, 10 Oct 2023 09:44:30 GMT
+# Thu, 28 Nov 2024 06:47:41 GMT
 RUN . /etc/os-release     && echo "deb [ signed-by=/usr/share/keyrings/pkgs-osrf-archive-keyring.gpg ] http://packages.osrfoundation.org/gazebo/$ID-stable $VERSION_CODENAME main" > /etc/apt/sources.list.d/gazebo-latest.list # buildkit
-# Tue, 10 Oct 2023 09:44:30 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     gazebo11=11.14.0-1*     && rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 10 Oct 2023 09:44:30 GMT
+# Thu, 28 Nov 2024 06:47:41 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     gazebo11=11.15.0-1*     && rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 28 Nov 2024 06:47:41 GMT
 EXPOSE map[11345/tcp:{}]
-# Tue, 10 Oct 2023 09:44:30 GMT
+# Thu, 28 Nov 2024 06:47:41 GMT
 COPY ./gzserver_entrypoint.sh / # buildkit
-# Tue, 10 Oct 2023 09:44:30 GMT
+# Thu, 28 Nov 2024 06:47:41 GMT
 ENTRYPOINT ["/gzserver_entrypoint.sh"]
-# Tue, 10 Oct 2023 09:44:30 GMT
+# Thu, 28 Nov 2024 06:47:41 GMT
 CMD ["gzserver"]
-# Tue, 10 Oct 2023 09:44:30 GMT
-RUN apt-get update && apt-get install -y --no-install-recommends     libgazebo11-dev=11.14.0-1*     && rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 28 Nov 2024 06:47:41 GMT
+RUN apt-get update && apt-get install -y --no-install-recommends     libgazebo11-dev=11.15.0-1*     && rm -rf /var/lib/apt/lists/* # buildkit
 ```
 
 -	Layers:
@@ -62,55 +62,55 @@ RUN apt-get update && apt-get install -y --no-install-recommends     libgazebo11
 		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:088e633987239294f68bc645f7dc9db24b616d70d1a5d0cc16cbf24d3165acbe`  
-		Last Modified: Wed, 16 Oct 2024 16:16:41 GMT  
-		Size: 1.2 MB (1198837 bytes)  
+	-	`sha256:f83071177be7c7bec24605107bc20da1f92ff5f8bd8c6c60dbeba2b1234591ef`  
+		Last Modified: Mon, 02 Dec 2024 20:29:57 GMT  
+		Size: 1.2 MB (1198850 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:819cbfaea2d31922ae9cb1bdd84a0f680a24f2594db0a3ffe9a18cc4a0e840ad`  
-		Last Modified: Wed, 16 Oct 2024 16:16:41 GMT  
-		Size: 5.4 MB (5361863 bytes)  
+	-	`sha256:93494aa21f34334db98ac2d6df6d925cb32bdd139017cf7997e858a04d37578e`  
+		Last Modified: Mon, 02 Dec 2024 20:29:57 GMT  
+		Size: 5.4 MB (5361848 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c3dff08a5a9954ee6e10f522bb3eb0f1ef576d5ffe525e4152232e8312af32f`  
-		Last Modified: Wed, 16 Oct 2024 16:16:40 GMT  
-		Size: 1.4 KB (1448 bytes)  
+	-	`sha256:c3f7c7f683b3d144e6f8edafc518b2372e9bb39ac75d623f7ced6ff5a87db5ea`  
+		Last Modified: Mon, 02 Dec 2024 20:29:57 GMT  
+		Size: 1.4 KB (1450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:433770b6b22a8774f20e08b9eb1310e6a9bff8605215b9425835e8652b7ff6fa`  
-		Last Modified: Wed, 16 Oct 2024 16:16:41 GMT  
-		Size: 292.0 B  
+	-	`sha256:9e8e82a107c13d8eb46fba7a043eadd0907b13adffec5ac4bf878a60176e6edd`  
+		Last Modified: Mon, 02 Dec 2024 20:29:57 GMT  
+		Size: 294.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77c4cc642c2f6cdfd7894459f124589169dd4f1ecafa5ffad2495b45dc356f9f`  
-		Last Modified: Wed, 16 Oct 2024 16:16:46 GMT  
-		Size: 278.1 MB (278052887 bytes)  
+	-	`sha256:da7baa10ae3e83af0aaa184f8fafdf2eac039b23d12c34c2ac3e511e2a47123b`  
+		Last Modified: Mon, 02 Dec 2024 20:30:02 GMT  
+		Size: 278.0 MB (277997659 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:487b4c6ed6e0459748f0199cd8120978eb129ee26ccbe025ef8988500bcf7a86`  
-		Last Modified: Wed, 16 Oct 2024 16:16:41 GMT  
-		Size: 188.0 B  
+	-	`sha256:2e4b18484b8d994d54e0867bac33f684b86cf01a8edf6e0620c5a3aead32647d`  
+		Last Modified: Mon, 02 Dec 2024 20:29:58 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d9148ad3724853d3ec2465a7af854fb9d46051de349108fd8cf22f0c36dfce0a`  
-		Last Modified: Wed, 16 Oct 2024 16:53:12 GMT  
-		Size: 297.1 MB (297116168 bytes)  
+	-	`sha256:ee9a4ea8694c031b6529ca9947ee7f5f6a3d673f45ead5d585beb1b7fb7fa5a6`  
+		Last Modified: Mon, 02 Dec 2024 21:09:51 GMT  
+		Size: 296.9 MB (296945641 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gazebo:libgazebo11` - unknown; unknown
 
 ```console
-$ docker pull gazebo@sha256:f14550c3864c123ef1a20ff0431707427c2bbc0407606d733a570789de1ddfbe
+$ docker pull gazebo@sha256:fb2f666c221d578a8331543b8b70907e872577b8638f48d0c3fdc1a3162b22ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.5 MB (37455601 bytes)**  
+-	Total Size: **37.6 MB (37550375 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d44eed3b8fee6e11b7fd77f01942084e6b3b29e061d689c910bf022cd49efa9a`
+-	Image ID: `sha256:551b3c6ce980c59ab6cda1bdb21324174acc1970f732a1a1a3a964df8032cd04`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2a24fe47718fd06ef0a9034b17ca50ef25f7756d77066f68f10d406866ac35b6`  
-		Last Modified: Wed, 16 Oct 2024 16:53:09 GMT  
-		Size: 37.4 MB (37446933 bytes)  
+	-	`sha256:8a78df4aac01bb814b75f5341acdb55da308db837681b1f2bbc24e73a13987af`  
+		Last Modified: Mon, 02 Dec 2024 21:09:46 GMT  
+		Size: 37.5 MB (37541712 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2dea80e27c44e4a75d6b54bda85ddebad8484a88f5d67b4cf269c0a1ef908104`  
-		Last Modified: Wed, 16 Oct 2024 16:53:08 GMT  
-		Size: 8.7 KB (8668 bytes)  
+	-	`sha256:1be51d1868b6c8a495f09d9e2b3c4ddc435631fff59d5fb419cbce116d836d1a`  
+		Last Modified: Mon, 02 Dec 2024 21:09:46 GMT  
+		Size: 8.7 KB (8663 bytes)  
 		MIME: application/vnd.in-toto+json
