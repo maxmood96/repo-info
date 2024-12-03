@@ -1,7 +1,7 @@
 ## `node:lts-bookworm-slim`
 
 ```console
-$ docker pull node@sha256:ab1ba25996833ac547afb1dd8d59f4d31bd2b29b5574bf20b07e57cb5726d274
+$ docker pull node@sha256:6a81ed4d692aeec5d74bfc764df45fca6ce0477a6a6b63905db039dff325bcee
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -100,21 +100,19 @@ $ docker pull node@sha256:8f53a46fa83d55f6872dbb75f044080ba340cf98d63caa7030f504
 ### `node:lts-bookworm-slim` - linux; arm variant v7
 
 ```console
-$ docker pull node@sha256:fe73ba3894023bacc385787099407ecd780df0368c7fedf7a937ffddbecc9c32
+$ docker pull node@sha256:05c6d99878a4a43cdfe7fbe96c520e828e9d408d465c51313a20659ba7f40abf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.8 MB (68811311 bytes)**  
+-	Total Size: **68.0 MB (68025962 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4810f58408afc9905315c695e93f6d0cd0886adc48a48bd2e1191d2eba802609`
+-	Image ID: `sha256:9ad3240620b714118d61c9bf0069b022a2eff97edc6e51f878726464411e4cd4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
 # Tue, 29 Oct 2024 20:39:22 GMT
-ADD rootfs.tar.xz / # buildkit
-# Tue, 29 Oct 2024 20:39:22 GMT
-CMD ["bash"]
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1733097600'
 # Tue, 29 Oct 2024 20:39:22 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
 # Tue, 29 Oct 2024 20:39:22 GMT
@@ -134,69 +132,67 @@ CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:ddd3c6488ea8b62db6811ba136fe14cba70219532910e67a91ed3388ec9f5757`  
-		Last Modified: Tue, 12 Nov 2024 00:56:42 GMT  
-		Size: 24.7 MB (24718909 bytes)  
+	-	`sha256:80b4fb4796cece09f69103235c60ffd0226a78c400a2953144b84c17de4df93d`  
+		Last Modified: Tue, 03 Dec 2024 01:28:14 GMT  
+		Size: 23.9 MB (23933588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b12e8f4279bfa57e91b124afb54540f003f2bca339945f6a92e0fe2521df05e`  
-		Last Modified: Tue, 12 Nov 2024 19:56:38 GMT  
-		Size: 3.3 KB (3314 bytes)  
+	-	`sha256:4e36de412b65340b16b213b12b6911c753aaf7f7cf66ad90d42c8db59b6bb31e`  
+		Last Modified: Tue, 03 Dec 2024 08:11:06 GMT  
+		Size: 3.3 KB (3315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5fcf600b8495651668ce6e216a015dcd1fc89835e4900d04958bc992fc55b39e`  
-		Last Modified: Tue, 12 Nov 2024 21:47:14 GMT  
-		Size: 42.4 MB (42375974 bytes)  
+	-	`sha256:43f5b6a4359b5cdb114f17496e2f75fd4cc33e6284b694676f89313b21703284`  
+		Last Modified: Tue, 03 Dec 2024 08:12:46 GMT  
+		Size: 42.4 MB (42375934 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e139109e6258b5d0c82dc1bb5c391fde70611e449dbeaf88d390d94f2f72b096`  
-		Last Modified: Tue, 12 Nov 2024 21:47:13 GMT  
-		Size: 1.7 MB (1712666 bytes)  
+	-	`sha256:ced29dc8920246b62a472d4349ab2a5bb82fb7ac55c0a2ddf89c66889ca271db`  
+		Last Modified: Tue, 03 Dec 2024 08:12:44 GMT  
+		Size: 1.7 MB (1712677 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ce77767a8630765ec3849a35a6d4b790fd7b50ba12b9b5d0b60e180fc130191`  
-		Last Modified: Tue, 12 Nov 2024 21:47:13 GMT  
+	-	`sha256:36bafd07e1febe3d78496de343a52ff5027de0a3d8fede1d34d4b732903b6620`  
+		Last Modified: Tue, 03 Dec 2024 08:12:44 GMT  
 		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:lts-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:01b96c473d6913b56970d3b7887aaf8e8ed1ab716ac5d27151856125bae918ea
+$ docker pull node@sha256:5179d0646f1bbdd12267571af15bb26af2627942a8eae68e2eab54f31827a10b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2621262 bytes)**  
+-	Total Size: **2.6 MB (2620014 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8be9316de324eb33a02d3bbfcc3a8cbbd32bab5e8b429be386b194d3a5f64376`
+-	Image ID: `sha256:437a9d5845b5fa5e685453cac07478801179f9e39dd86cda99327092523835c9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2e428c02036c9fe916f7c9e203075f95c90ffedd2ce34c86c8512375949c180b`  
-		Last Modified: Tue, 12 Nov 2024 21:47:13 GMT  
-		Size: 2.6 MB (2594066 bytes)  
+	-	`sha256:54766ae5e006d22665f789ab641ac9318fc2a1eddd80b479b357b507668a0823`  
+		Last Modified: Tue, 03 Dec 2024 08:12:45 GMT  
+		Size: 2.6 MB (2592818 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b099feb8d574557e2a8a953597bc73170e5605aef725df20e63d56d5f6651bac`  
-		Last Modified: Tue, 12 Nov 2024 21:47:13 GMT  
+	-	`sha256:6cb2860ac6e950d5614e9d3e475c14ff0c508a4ee4f2eacb3f1e5175ed1319c3`  
+		Last Modified: Tue, 03 Dec 2024 08:12:44 GMT  
 		Size: 27.2 KB (27196 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `node:lts-bookworm-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull node@sha256:e5a7cb14e3c3c11fc8d7a55a8fc906930b91da5d7f3b5cf5334e24630be1493e
+$ docker pull node@sha256:0ed40441529402a20775b4d05c8bb63a31e0ba021bfd9efdcb4038f3984266ed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.9 MB (77860470 bytes)**  
+-	Total Size: **76.8 MB (76762024 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86b2bbb4e4f9107b0019f4d08e6b2503ce542cb1390304b1811c20294ab71854`
+-	Image ID: `sha256:8b65ed98fdc41a095fe4eb3c7bbb93fe5440b2b383fffb0f891883f97ca35199`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
 # Tue, 29 Oct 2024 20:39:22 GMT
-ADD rootfs.tar.xz / # buildkit
-# Tue, 29 Oct 2024 20:39:22 GMT
-CMD ["bash"]
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
 # Tue, 29 Oct 2024 20:39:22 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
 # Tue, 29 Oct 2024 20:39:22 GMT
@@ -216,48 +212,48 @@ CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:6d29a096dd42e5e003949f934fa6b1a3ec8e076dd8cfc2a85a4e750a3639bf7a`  
-		Last Modified: Tue, 12 Nov 2024 00:56:55 GMT  
-		Size: 29.2 MB (29157356 bytes)  
+	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
+		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
+		Size: 28.1 MB (28058810 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:38a18e35815a230920e7c08533e3c3c02ac27fa4add044f140e32a114df942e2`  
-		Last Modified: Tue, 12 Nov 2024 15:27:41 GMT  
-		Size: 3.3 KB (3312 bytes)  
+	-	`sha256:815883e27b16789a3274549f7a04eee803f56188b22ba66a7370f35491d794e7`  
+		Last Modified: Tue, 03 Dec 2024 06:19:26 GMT  
+		Size: 3.3 KB (3311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba17c38c0fdaff161f6366391996d6ee5f1a5523e66d6d4ec223d3d0c8ffacc0`  
-		Last Modified: Tue, 12 Nov 2024 17:01:20 GMT  
-		Size: 47.0 MB (46986901 bytes)  
+	-	`sha256:8c7c64a002153ae519eacdeea2f4d6205144d9e53822d1d4286b5b0c81b0c31f`  
+		Last Modified: Tue, 03 Dec 2024 06:21:15 GMT  
+		Size: 47.0 MB (46986957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1c427cd0d031bd0f5273330c7c2004601a8238c3c55845c5f9136dd3a8e299f5`  
-		Last Modified: Tue, 12 Nov 2024 17:01:19 GMT  
-		Size: 1.7 MB (1712454 bytes)  
+	-	`sha256:b32760f01f8f20cd24ba4c1dfaf3450b56e264e3ea98894ed8b9c5f01f81440b`  
+		Last Modified: Tue, 03 Dec 2024 06:21:14 GMT  
+		Size: 1.7 MB (1712499 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4efbbd10f2eb7778f6694e9fca1978563e58781d6402853bcfdc7569149572a`  
-		Last Modified: Tue, 12 Nov 2024 17:01:18 GMT  
+	-	`sha256:1a010aabbfa71963d6eefae6bc62832ea5d7dfc22d4205da73ec767cc0efb081`  
+		Last Modified: Tue, 03 Dec 2024 06:21:13 GMT  
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:lts-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:6d5e8fc0b1405020f3a3e30efc4930f2058d9f43ed3847d178c15f666de3b502
+$ docker pull node@sha256:759c133f166d33f72c994a6aae5460247f05f4048065cdb15c6f2af2204719ad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2616123 bytes)**  
+-	Total Size: **2.6 MB (2614875 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1bae5eb0ea1331e01b7d56a6ee22921131975c6694225a9bdfe9f8f987cf2ce2`
+-	Image ID: `sha256:8a562fa0f2bb7e10f01ffa1c96b072cbda033842e7c3cf7678be23c7cf64eb31`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0534ab8b7d2ee7b48ef6c2825e45c5f9be2ad53f6087dcd312c59aae02954bc2`  
-		Last Modified: Tue, 12 Nov 2024 17:01:19 GMT  
-		Size: 2.6 MB (2588871 bytes)  
+	-	`sha256:fc23bd0785e6693494f9bee65daf7adb84f9319db48c25d1d5f95337d9b5b49b`  
+		Last Modified: Tue, 03 Dec 2024 06:21:14 GMT  
+		Size: 2.6 MB (2587623 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:32a995521d650b4acf34b8cba32bde36e1687a40a79ee474e2c8576831430a99`  
-		Last Modified: Tue, 12 Nov 2024 17:01:18 GMT  
+	-	`sha256:8771365696aab9415a9666a89367698c3a40eb0d353127ab5aeb7156f9c216b7`  
+		Last Modified: Tue, 03 Dec 2024 06:21:13 GMT  
 		Size: 27.3 KB (27252 bytes)  
 		MIME: application/vnd.in-toto+json
 
