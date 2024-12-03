@@ -1,7 +1,7 @@
 ## `pypy:2-slim-bookworm`
 
 ```console
-$ docker pull pypy@sha256:2c68d94dd481c7a90ef1636d21232cd4e95e8a1921900ad8d3f7600e1288e8c1
+$ docker pull pypy@sha256:1afcb3885ab1cffbfcafa98c91b1cbb2c8c7a81aa4cab563ccfd8af8d58706e8
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -93,20 +93,18 @@ $ docker pull pypy@sha256:165a7a8ff4c628dccf0ddc1ed39dec743d836402ead6e2b6a5b524
 ### `pypy:2-slim-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull pypy@sha256:5810c17d253c7d9e683b38b6b01833f35874ee088d04c8175b12d7cf8f588b0f
+$ docker pull pypy@sha256:08d519d10fabe93156650c8c74992432d8d0ce48a844ff3e647d1e5fe17b1ec8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.7 MB (63738612 bytes)**  
+-	Total Size: **62.4 MB (62447026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6bdd27493580c7df2189494916b0836ff0966f16dd62e671ffdbd8ca38bb0917`
+-	Image ID: `sha256:74aec5b264718dc820b34f8ab349d83cd0450ed224a67c0e346061df0f04e3ef`
 -	Default Command: `["pypy"]`
 
 ```dockerfile
 # Wed, 28 Aug 2024 10:07:11 GMT
-ADD rootfs.tar.xz / # buildkit
-# Wed, 28 Aug 2024 10:07:11 GMT
-CMD ["bash"]
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
 # Wed, 28 Aug 2024 10:07:11 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Wed, 28 Aug 2024 10:07:11 GMT
@@ -128,44 +126,44 @@ CMD ["pypy"]
 ```
 
 -	Layers:
-	-	`sha256:6d29a096dd42e5e003949f934fa6b1a3ec8e076dd8cfc2a85a4e750a3639bf7a`  
-		Last Modified: Tue, 12 Nov 2024 00:56:55 GMT  
-		Size: 29.2 MB (29157356 bytes)  
+	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
+		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
+		Size: 28.1 MB (28058810 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d847e644e3906b31b79791cd7fda1c3d2196e093d2dfdc0e1f687091abfee1b3`  
-		Last Modified: Tue, 12 Nov 2024 20:10:50 GMT  
-		Size: 3.3 MB (3322875 bytes)  
+	-	`sha256:efe3a0b512a6dc17a6995b8a6b39731f187d7ddd8b9cf06ce23c7d7b9d820ab2`  
+		Last Modified: Tue, 03 Dec 2024 07:57:35 GMT  
+		Size: 3.1 MB (3129804 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fafbcf5b5891841030e12954f301be51e510859836800f3466e44fc9597c34e1`  
-		Last Modified: Tue, 12 Nov 2024 20:12:36 GMT  
-		Size: 29.3 MB (29305696 bytes)  
+	-	`sha256:589eef1da5c8692224ded2e83e56830d2485172b57643bd12612fb6eaec6572e`  
+		Last Modified: Tue, 03 Dec 2024 07:59:09 GMT  
+		Size: 29.3 MB (29305720 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5592d0ca7ba410d37d0acf5a63cc0ada3940a0edf7f0df77cc6da0402b51ace2`  
-		Last Modified: Tue, 12 Nov 2024 20:12:35 GMT  
-		Size: 2.0 MB (1952685 bytes)  
+	-	`sha256:475f608bfb0907ff32563b58222ed986a3e231a23fb1404ac19fa2f9a23bb323`  
+		Last Modified: Tue, 03 Dec 2024 07:59:08 GMT  
+		Size: 2.0 MB (1952692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:2-slim-bookworm` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:fbebbec12bee6967c3df6707c76da69016c449b05cb06b5bc0d5b904e6793177
+$ docker pull pypy@sha256:6b0cc80366a44d16011cf0365ff30f96c8b8f8b80f8c785f15dd1f9d674a0125
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 MB (2402901 bytes)**  
+-	Total Size: **2.4 MB (2401653 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e77b43f5dcc66369cc297e9bf41b6d3edfd32172143f46eded9d8b1b592ba3ec`
+-	Image ID: `sha256:a94a3f7e2a4377f7c8204e62868fb2a9d11ced2b6832570c30099c49b7e13c74`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:494655d98ca46564460ac3fdd05fd31f09c4de8dc4b1515983813b8ed6911e87`  
-		Last Modified: Tue, 12 Nov 2024 20:12:35 GMT  
-		Size: 2.4 MB (2380400 bytes)  
+	-	`sha256:a027480c6560110329b080888bfa5323db51b19e2b3086c64f92091d0fc6b3bf`  
+		Last Modified: Tue, 03 Dec 2024 07:59:08 GMT  
+		Size: 2.4 MB (2379152 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f64d4dbb3ec974110551220bbf9de47a6c95dce7779e88acd564d66efa4e086b`  
-		Last Modified: Tue, 12 Nov 2024 20:12:35 GMT  
+	-	`sha256:6c77aa7ba5872c1776a30b75fba27296c6712189c89315df0963f92ef8787ea2`  
+		Last Modified: Tue, 03 Dec 2024 07:59:08 GMT  
 		Size: 22.5 KB (22501 bytes)  
 		MIME: application/vnd.in-toto+json
 
