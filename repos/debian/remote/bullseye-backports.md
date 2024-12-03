@@ -1,7 +1,7 @@
 ## `debian:bullseye-backports`
 
 ```console
-$ docker pull debian@sha256:0be6372a343c9f9b40176541facf85943cc28560749d6cb3cd655f4ef3728ed3
+$ docker pull debian@sha256:8025a06bb77c4d58d3522afb68cde538f59296f5ef0efee83cdd170ba298cf8c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,219 +18,211 @@ $ docker pull debian@sha256:0be6372a343c9f9b40176541facf85943cc28560749d6cb3cd65
 ### `debian:bullseye-backports` - linux; amd64
 
 ```console
-$ docker pull debian@sha256:ad68e32ee12d419f462690fe80ebe88caaf4cfd3693aaf59985ee137c7e59c42
+$ docker pull debian@sha256:c3ea17351bfa2367df7d01098d51d79d3590f6b9e43caeb4fbd70d21998a2f49
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.1 MB (55109005 bytes)**  
+-	Total Size: **53.7 MB (53739372 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a47b0b254062a881bb40cfb19cc6d891eff61bba66d481f5ad36652fc2796ee`
+-	Image ID: `sha256:033b7cecc2a93431af877952267cbff91ec5e8cf961b964d235329fb74bb1a42`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 11 Nov 2024 00:00:00 GMT
-ADD rootfs.tar.xz / # buildkit
-# Mon, 11 Nov 2024 00:00:00 GMT
-CMD ["bash"]
-# Mon, 11 Nov 2024 00:00:00 GMT
+# Mon, 02 Dec 2024 00:00:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bullseye' '@1733097600'
+# Mon, 02 Dec 2024 00:00:00 GMT
 RUN echo 'deb http://deb.debian.org/debian bullseye-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
 ```
 
 -	Layers:
-	-	`sha256:c2056d933cd629f55ac55802dda223f122286bf60ec42a24f0d0f6ae2615315c`  
-		Last Modified: Tue, 12 Nov 2024 00:55:16 GMT  
-		Size: 55.1 MB (55108780 bytes)  
+	-	`sha256:cd606f6f489eb66f1307280aec321b3af3aa998dca447ae1cc91c6b884240064`  
+		Last Modified: Tue, 03 Dec 2024 01:27:20 GMT  
+		Size: 53.7 MB (53739147 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2361a354fdf69fd99c824e0da06e6b4a8439e06e1a4c531114b68212f9e52d5b`  
-		Last Modified: Tue, 12 Nov 2024 02:01:49 GMT  
+	-	`sha256:d244007ffa861a6a71947b31223454ba48ed0e91ff7e1fd4c24a9292b4f5e8b9`  
+		Last Modified: Tue, 03 Dec 2024 02:13:52 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:bullseye-backports` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:53d88db803b5d324887119a2f93dfe21bfeee1fabd8dddb76bfa5e417f8f970d
+$ docker pull debian@sha256:d03197e158c071abf8349ee629353018905b3cb39cfed00dd4c59e5b33575fb6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.9 MB (3929731 bytes)**  
+-	Total Size: **3.9 MB (3927856 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:021fbac5c52900a0fa6a43a0353b8e74dcdfd0a3f40990f6474e75432a1d8738`
+-	Image ID: `sha256:ad0e1b674a6a8ad7ef744b1e132ad233d63dd0a0693b5ed347a4a7b84df5882a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6acc0a4b4984f17825f2dc240161027aa68806b99c80f25bcb0079009a2ec747`  
-		Last Modified: Tue, 12 Nov 2024 02:01:49 GMT  
-		Size: 3.9 MB (3923884 bytes)  
+	-	`sha256:60c634f2341e26540ebdadc3df00160fee8953a23b9b07bbd488d17c71696b6f`  
+		Last Modified: Tue, 03 Dec 2024 02:13:53 GMT  
+		Size: 3.9 MB (3922009 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e334b90535967ba74fa717400cb8df89e887dc8c6ae42271d85d0589688d5d2f`  
-		Last Modified: Tue, 12 Nov 2024 02:01:49 GMT  
+	-	`sha256:961e0f6c0c1d64cceb357bd6ff3e2c78af29190653659663b2a9b3a16920859c`  
+		Last Modified: Tue, 03 Dec 2024 02:13:52 GMT  
 		Size: 5.8 KB (5847 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `debian:bullseye-backports` - linux; arm variant v7
 
 ```console
-$ docker pull debian@sha256:15de717de0a157da1914e3c6299d61d37d0c293d5fe0acb0a6f0dbb476b7b6d0
+$ docker pull debian@sha256:76a3b27fd44e01006e0af629eb20f8810e26f10ca952be611a8ba0adc013a36a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.3 MB (50272565 bytes)**  
+-	Total Size: **49.0 MB (49025246 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30edc6fb888f95664f210938acab5f9783a1a38573e6878e2b4ace0566a774ac`
+-	Image ID: `sha256:5a99f5da7054aa55b1411b2e8b6a9aaae553af4a76ba751ce553e2797542dd43`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 11 Nov 2024 00:00:00 GMT
-ADD rootfs.tar.xz / # buildkit
-# Mon, 11 Nov 2024 00:00:00 GMT
-CMD ["bash"]
-# Mon, 11 Nov 2024 00:00:00 GMT
+# Mon, 02 Dec 2024 00:00:00 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bullseye' '@1733097600'
+# Mon, 02 Dec 2024 00:00:00 GMT
 RUN echo 'deb http://deb.debian.org/debian bullseye-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
 ```
 
 -	Layers:
-	-	`sha256:c18c6ef253e2b87a07739846b10eb333531241b80c23e3aec0643adc1b449e1a`  
-		Last Modified: Tue, 12 Nov 2024 00:57:22 GMT  
-		Size: 50.3 MB (50272340 bytes)  
+	-	`sha256:69dbedc8019388fd330866fcfa04c35d28f86d1ef986691ee290054433639992`  
+		Last Modified: Tue, 03 Dec 2024 01:28:37 GMT  
+		Size: 49.0 MB (49025021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b064d2b4cb61edcec878b32242fd589abf57c88da41ceb6153b035f580d2d35`  
-		Last Modified: Tue, 12 Nov 2024 02:20:18 GMT  
+	-	`sha256:b807492ae60651100e80b822728fa4689ed2eedf3b6d7d9a5b8b2c2691c80903`  
+		Last Modified: Tue, 03 Dec 2024 02:19:07 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:bullseye-backports` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:456c7a65fdfe9fbe8502717f23968dbecaffa61bdde35e76ecd67af652f5d00d
+$ docker pull debian@sha256:1e86806407b5e966e98375f86fea8b77ff4da2b59cc6b892a6fd9624cf93e33a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.9 MB (3931342 bytes)**  
+-	Total Size: **3.9 MB (3929467 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10783caa161b85db4995ef10f921e4d196ea4d435257f9207d9af35f73c8f82d`
+-	Image ID: `sha256:ae1d117255bc76b18873ec60590c246738b3c544e0fb656045d2cd6c5472df44`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a0cd7f55bf9cc8596bb216b119f1a0b4863b1fd5332732aa9006013731574ea1`  
-		Last Modified: Tue, 12 Nov 2024 02:20:18 GMT  
-		Size: 3.9 MB (3925444 bytes)  
+	-	`sha256:e972d2355904fd5bacad0318bf266de1ae7d363bced1324f59c739b50aa226f4`  
+		Last Modified: Tue, 03 Dec 2024 02:19:07 GMT  
+		Size: 3.9 MB (3923569 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d1abd0dd636890991ff195b84e7322cf6691ec6e2f6271216f7e8acb85fded9a`  
-		Last Modified: Tue, 12 Nov 2024 02:20:18 GMT  
+	-	`sha256:d7719390ffaf53ae0c4e42df3b13c348b9ddb5988285a7a2cd25ffd021417f98`  
+		Last Modified: Tue, 03 Dec 2024 02:19:07 GMT  
 		Size: 5.9 KB (5898 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `debian:bullseye-backports` - linux; arm64 variant v8
 
 ```console
-$ docker pull debian@sha256:41bb591422bfde39d35fc2525bf86263547edb835c14c8f616a4c086abde8bb6
+$ docker pull debian@sha256:d64484d2a8434c9bc5019d7ef3fc2d0118a119a043bf4167190eb58f7692f065
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **53.8 MB (53757297 bytes)**  
+-	Total Size: **52.2 MB (52246220 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3bb4e65d513fd1616a7a2a6b7333f15f66ac30233cce83d5210694396b9ec4b2`
+-	Image ID: `sha256:99c0071730b98162a1de59f9253c191d78592c5001ca9927812bec1d8cd35539`
 -	Default Command: `["bash"]`
 
 ```dockerfile
-# Mon, 11 Nov 2024 00:00:00 GMT
-ADD rootfs.tar.xz / # buildkit
-# Mon, 11 Nov 2024 00:00:00 GMT
-CMD ["bash"]
-# Mon, 11 Nov 2024 00:00:00 GMT
+# Mon, 02 Dec 2024 00:00:00 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1733097600'
+# Mon, 02 Dec 2024 00:00:00 GMT
 RUN echo 'deb http://deb.debian.org/debian bullseye-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
 ```
 
 -	Layers:
-	-	`sha256:a839664fe62f615da74af799f94ccbc890a15d0f78470aac54302c2fd5475615`  
-		Last Modified: Tue, 12 Nov 2024 00:57:41 GMT  
-		Size: 53.8 MB (53757072 bytes)  
+	-	`sha256:e357e1f94476a03fde298261e8c007d487d3cfade45a9eef064eba724a5c5e2e`  
+		Last Modified: Tue, 03 Dec 2024 01:30:26 GMT  
+		Size: 52.2 MB (52245994 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76aa55ac52f2277851d46572b8a5767c71668df15c6634e16d7c507b3895035d`  
-		Last Modified: Tue, 12 Nov 2024 02:22:10 GMT  
-		Size: 225.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `debian:bullseye-backports` - unknown; unknown
-
-```console
-$ docker pull debian@sha256:ada0219d8145624213cc958ecdf27e876c37aed10963395661271c40fe898287
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.9 MB (3929377 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a19cd0236cda16e6fb8fb86dead05d3c5e3ce3d9bf142585456af75f8feb869c`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:7c0cc88469415dd7ac44f4c490d1f408908112dd32ef6825a6887dfe7b15f857`  
-		Last Modified: Tue, 12 Nov 2024 02:22:11 GMT  
-		Size: 3.9 MB (3923462 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:028570c9b8193376b7900334657b3e004de898d84e186088e5376dc222a6204a`  
-		Last Modified: Tue, 12 Nov 2024 02:22:10 GMT  
-		Size: 5.9 KB (5915 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `debian:bullseye-backports` - linux; 386
-
-```console
-$ docker pull debian@sha256:4e183723f2df7e38f3804ab53c9c977d17253cf9de5dabb48e4e9a9ee17fcc57
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.1 MB (56093908 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:327e9a68178d996842496a8cc87f677e40bdf902c9cdf4d1132370cb3e0d9995`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Mon, 11 Nov 2024 00:00:00 GMT
-ADD rootfs.tar.xz / # buildkit
-# Mon, 11 Nov 2024 00:00:00 GMT
-CMD ["bash"]
-# Mon, 11 Nov 2024 00:00:00 GMT
-RUN echo 'deb http://deb.debian.org/debian bullseye-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
-```
-
--	Layers:
-	-	`sha256:401daab178046178ea38abc84ce80fe4a7e7530a75e6b198a161344b358750f7`  
-		Last Modified: Tue, 12 Nov 2024 00:54:54 GMT  
-		Size: 56.1 MB (56093682 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5fae5c9d87cf89c44a1d23e8a51a88c4d84b6bd167a8b80bab1b3fb3e41d834c`  
-		Last Modified: Tue, 12 Nov 2024 02:01:59 GMT  
+	-	`sha256:e1d433fc18ed286c5b77aba9dde06c1d509ec5fedd2c038988b7dde5f799c5b2`  
+		Last Modified: Tue, 03 Dec 2024 02:18:32 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `debian:bullseye-backports` - unknown; unknown
 
 ```console
-$ docker pull debian@sha256:793022b658257993e55fd6182a383f5260bab25fc554c83d83b6b3fdc7f00127
+$ docker pull debian@sha256:ef3af8ad295ff60423cf62826f01edbecad21066e2b689f6a64d229ef97c292a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.9 MB (3926219 bytes)**  
+-	Total Size: **3.9 MB (3927502 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7fe7e24f11f8b65aabcf3709779584900a94ff82ae050ee45c2299bd236c2079`
+-	Image ID: `sha256:b41effd98eefe1da49d8d465e2efa6e0b6e19bb35bf2fcfc46994d9f72d4f4cf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:021a2a45b2b87d34200a76937bd9b6a8cde88fc6ab3db02555a07dc301414612`  
-		Last Modified: Tue, 12 Nov 2024 02:02:00 GMT  
-		Size: 3.9 MB (3920389 bytes)  
+	-	`sha256:b30317d979993b37a1a9160f6d903f5c7c6a17decdc8753108b6a72c0f98326c`  
+		Last Modified: Tue, 03 Dec 2024 02:18:33 GMT  
+		Size: 3.9 MB (3921587 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ce165645f12802ffd62b62371603f1138171a6e0194abd03e24f968decdb0988`  
-		Last Modified: Tue, 12 Nov 2024 02:02:00 GMT  
+	-	`sha256:b82817147ead89afb5ffe84f6588641f8b6775a2595e334f04d14f26e03ed494`  
+		Last Modified: Tue, 03 Dec 2024 02:18:32 GMT  
+		Size: 5.9 KB (5915 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `debian:bullseye-backports` - linux; 386
+
+```console
+$ docker pull debian@sha256:0742425ab27a96aae2b1a6606095d7c63112afef8abcb79dc3ce4275b1badce1
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **54.7 MB (54676500 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:ff7131c2bbae9e11b7ca5a496191fe82f9d0a2d988d0ed54563c0438d5b0e17f`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 02 Dec 2024 00:00:00 GMT
+RUN # debian.sh --arch 'i386' out/ 'bullseye' '@1733097600'
+# Mon, 02 Dec 2024 00:00:00 GMT
+RUN echo 'deb http://deb.debian.org/debian bullseye-backports main' > /etc/apt/sources.list.d/backports.list # buildkit
+```
+
+-	Layers:
+	-	`sha256:862f429b4105c1e5714d48631896837c3ca6f797479296293b7c33c6699eae95`  
+		Last Modified: Tue, 03 Dec 2024 01:27:25 GMT  
+		Size: 54.7 MB (54676275 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f5d8f63b96e7b7ed0b56c330c5ad9be40d32383416f788c010cb2c3d7fc7c4c7`  
+		Last Modified: Tue, 03 Dec 2024 02:13:50 GMT  
+		Size: 225.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `debian:bullseye-backports` - unknown; unknown
+
+```console
+$ docker pull debian@sha256:dd4f00543ba683dafe680731838bb64610081c0182d3e762f6e775b686bd8ed5
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.9 MB (3924344 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6f2aedeceb34204cebf1995079fdda31fef26653d12df20743424428be43172a`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:5ccf55083d8d1cc21fcb9895f1250b4834872994536e2fab490fb2bcd219ac4d`  
+		Last Modified: Tue, 03 Dec 2024 02:13:50 GMT  
+		Size: 3.9 MB (3918514 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:3dfc2953b90759314e7f0defc21e0273b24bbe0cbb1000e252462e8ff18e85cb`  
+		Last Modified: Tue, 03 Dec 2024 02:13:50 GMT  
 		Size: 5.8 KB (5830 bytes)  
 		MIME: application/vnd.in-toto+json
