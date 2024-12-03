@@ -8,7 +8,170 @@
 
 ## `kibana:7.17.26`
 
-**does not exist** (yet?)
+```console
+$ docker pull kibana@sha256:bc1cd2972c35efde55c189a354bb85586b60fa2c20042902961a9053f7adf86b
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; amd64
+	-	unknown; unknown
+
+### `kibana:7.17.26` - linux; amd64
+
+```console
+$ docker pull kibana@sha256:8bd133f1822584d4ebd4cbaceda8855f89f4bd78426d9164b7372a1bf6c5be2a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **350.2 MB (350190795 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:86125e2096145214289b981b29771bafe313de9ff71028f97b3e48e966177b65`
+-	Entrypoint: `["\/bin\/tini","--"]`
+-	Default Command: `["\/usr\/local\/bin\/kibana-docker"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
+CMD ["/bin/bash"]
+# Tue, 03 Dec 2024 13:02:17 GMT
+EXPOSE map[5601/tcp:{}]
+# Tue, 03 Dec 2024 13:02:17 GMT
+RUN for iter in {1..10}; do       export DEBIAN_FRONTEND=noninteractive &&       apt-get update  &&       apt-get upgrade -y  &&       apt-get install -y --no-install-recommends        fontconfig fonts-liberation libnss3 libfontconfig1 ca-certificates curl &&       apt-get clean &&       rm -rf /var/lib/apt/lists/* && exit_code=0 && break || exit_code=$? && echo "apt-get error: retry $iter in 10s" &&       sleep 10;     done;     (exit $exit_code) # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+RUN set -e ;     TINI_BIN="" ;     case "$(arch)" in         aarch64)             TINI_BIN='tini-arm64' ;             ;;         x86_64)             TINI_BIN='tini-amd64' ;             ;;         *) echo >&2 "Unsupported architecture $(arch)" ; exit 1 ;;     esac ;   TINI_VERSION='v0.19.0' ;   curl --retry 8 -S -L -O "https://github.com/krallin/tini/releases/download/${TINI_VERSION}/${TINI_BIN}" ;   curl --retry 8 -S -L -O "https://github.com/krallin/tini/releases/download/${TINI_VERSION}/${TINI_BIN}.sha256sum" ;   sha256sum -c "${TINI_BIN}.sha256sum" ;   rm "${TINI_BIN}.sha256sum" ;   mv "${TINI_BIN}" /bin/tini ;   chmod +x /bin/tini # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+RUN mkdir /usr/share/fonts/local # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+RUN curl --retry 8 -S -L -o /usr/share/fonts/local/NotoSansCJK-Regular.ttc https://github.com/googlefonts/noto-cjk/raw/NotoSansV2.001/NotoSansCJK-Regular.ttc # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+RUN echo "5dcd1c336cc9344cb77c03a0cd8982ca8a7dc97d620fd6c9c434e02dcb1ceeb3  /usr/share/fonts/local/NotoSansCJK-Regular.ttc" | sha256sum -c - # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+RUN fc-cache -v # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+COPY --chown=1000:0 /usr/share/kibana /usr/share/kibana # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+WORKDIR /usr/share/kibana
+# Tue, 03 Dec 2024 13:02:17 GMT
+RUN ln -s /usr/share/kibana /opt/kibana # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+ENV ELASTIC_CONTAINER=true
+# Tue, 03 Dec 2024 13:02:17 GMT
+ENV PATH=/usr/share/kibana/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 03 Dec 2024 13:02:17 GMT
+COPY --chown=1000:0 config/kibana.yml /usr/share/kibana/config/kibana.yml # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+COPY bin/kibana-docker /usr/local/bin/ # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+RUN chmod g+ws /usr/share/kibana &&     find /usr/share/kibana -gid 0 -and -not -perm /g+w -exec chmod g+w {} \; # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+RUN find / -xdev -perm -4000 -exec chmod u-s {} + # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+RUN groupadd --gid 1000 kibana &&     useradd --uid 1000 --gid 1000 -G 0       --home-dir /usr/share/kibana --no-create-home       kibana # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+LABEL org.label-schema.build-date=2024-11-26T12:11:54.291Z org.label-schema.license=Elastic License org.label-schema.name=Kibana org.label-schema.schema-version=1.0 org.label-schema.url=https://www.elastic.co/products/kibana org.label-schema.usage=https://www.elastic.co/guide/en/kibana/reference/index.html org.label-schema.vcs-ref=2ed05e4a85cb41a24646b02ee9c1b6ab2b0e9cde org.label-schema.vcs-url=https://github.com/elastic/kibana org.label-schema.vendor=Elastic org.label-schema.version=7.17.26 org.opencontainers.image.created=2024-11-26T12:11:54.291Z org.opencontainers.image.documentation=https://www.elastic.co/guide/en/kibana/reference/index.html org.opencontainers.image.licenses=Elastic License org.opencontainers.image.revision=2ed05e4a85cb41a24646b02ee9c1b6ab2b0e9cde org.opencontainers.image.source=https://github.com/elastic/kibana org.opencontainers.image.title=Kibana org.opencontainers.image.url=https://www.elastic.co/products/kibana org.opencontainers.image.vendor=Elastic org.opencontainers.image.version=7.17.26
+# Tue, 03 Dec 2024 13:02:17 GMT
+ENTRYPOINT ["/bin/tini" "--"]
+# Tue, 03 Dec 2024 13:02:17 GMT
+CMD ["/usr/local/bin/kibana-docker"]
+# Tue, 03 Dec 2024 13:02:17 GMT
+USER kibana
+```
+
+-	Layers:
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:590ed550527a8d93ce633556d61b3e8d88cba7a24ddd478e9dd2a0eff903f356`  
+		Last Modified: Tue, 03 Dec 2024 19:31:30 GMT  
+		Size: 10.7 MB (10723869 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3e3faf5e235fa4ed4a10867776317a8fc758f9c43e77261eeb268a5a2a2dfe3d`  
+		Last Modified: Tue, 03 Dec 2024 19:31:30 GMT  
+		Size: 9.5 KB (9529 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6d4540743acfa28d456e5a1c03288a086f5cf9516128650bb9f0c91f485d2c49`  
+		Last Modified: Tue, 03 Dec 2024 19:31:29 GMT  
+		Size: 160.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8d52c57c949c1fe77eedb3044cb913825a4033656c5c645c995570d664ec10c2`  
+		Last Modified: Tue, 03 Dec 2024 19:31:30 GMT  
+		Size: 16.5 MB (16460489 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d1a9c9dc1a614345e36404a07049a2a31cbd02df4087b1c615821ead296eebf8`  
+		Last Modified: Tue, 03 Dec 2024 19:31:31 GMT  
+		Size: 5.3 KB (5297 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ad6fee08805b694cee2f7aa48045c870791e6bef6810ad0af859fc2d834df11e`  
+		Last Modified: Tue, 03 Dec 2024 19:31:37 GMT  
+		Size: 295.3 MB (295283661 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:349b98ddec90697e1647392f923a2db66340fc8982f2e35f654c02484b85c982`  
+		Last Modified: Tue, 03 Dec 2024 19:31:31 GMT  
+		Size: 132.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:10db4bdc349a2fd8528ffcb9db8f5e731595dbae068e86e4e6070e5bf7a64d76`  
+		Last Modified: Tue, 03 Dec 2024 19:31:32 GMT  
+		Size: 397.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aaaf4716c51a2e356d33073829801012b426ecee71a7c5babc27be690e3ed97f`  
+		Last Modified: Tue, 03 Dec 2024 19:31:32 GMT  
+		Size: 4.5 KB (4505 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3fb3330f94467c337a6c80df2da2a7d1e287194455bfc6ee4ef0c622674f7e67`  
+		Last Modified: Tue, 03 Dec 2024 19:31:32 GMT  
+		Size: 401.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:453bc89ed015468a939e7d5c9225c54fd94eca0f6cb76853a5c82893a2617886`  
+		Last Modified: Tue, 03 Dec 2024 19:31:33 GMT  
+		Size: 189.4 KB (189431 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d4fd951edd397b9e9e9a589c5b6bcf5150168c9e8ab417b7679ceb1884b81a69`  
+		Last Modified: Tue, 03 Dec 2024 19:31:33 GMT  
+		Size: 1.8 KB (1800 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `kibana:7.17.26` - unknown; unknown
+
+```console
+$ docker pull kibana@sha256:d976750be8431f5ef218ede2cb31d95e5d27215a64fb5dd7994b3c1cee3bcffb
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.5 MB (3475895 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:31bba74442fd7a91de0ef9e612838c02719954157fc379ccb19d8b8ff29e23f6`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d6d1481f84b053597ae05baf4171fde6d92471b449773d478cfbc7b5d37efc61`  
+		Last Modified: Tue, 03 Dec 2024 19:31:30 GMT  
+		Size: 3.4 MB (3431386 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:496016d74cc223ded5101c845edce3ce7da3e6fd51233207ba21263a5441402b`  
+		Last Modified: Tue, 03 Dec 2024 19:31:30 GMT  
+		Size: 44.5 KB (44509 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `kibana:8.15.5`
 
