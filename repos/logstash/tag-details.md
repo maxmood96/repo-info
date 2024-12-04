@@ -9,11 +9,156 @@
 ## `logstash:7.17.26`
 
 ```console
-$ docker pull logstash@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+$ docker pull logstash@sha256:acfe91befdd579bfcbff6336bd63e087a4b1330cbbd2aea0bf317171db3870f0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 0
+-	Platforms: 2
+	-	linux; amd64
+	-	unknown; unknown
+
+### `logstash:7.17.26` - linux; amd64
+
+```console
+$ docker pull logstash@sha256:3f0fd65748174a8cbcb12187c9e9f641084ac986715f10108464fdc6aec77f6a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **451.0 MB (450986081 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f8008a134f95a22df5d39d7d595cdb214fdf14d250c520ed3dc5dd826f97c23c`
+-	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:38:25 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:38:25 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:38:27 GMT
+ADD file:7486147a645d8835a5181c79f00a3606c6b714c83bcbfcd8862221eb14690f9e in / 
+# Fri, 11 Oct 2024 03:38:27 GMT
+CMD ["/bin/bash"]
+# Tue, 03 Dec 2024 13:02:17 GMT
+RUN for iter in {1..10}; do     export DEBIAN_FRONTEND=noninteractive &&     apt-get update -y &&     apt-get upgrade -y &&     apt-get install -y procps findutils tar gzip curl &&     apt-get install -y locales &&     apt-get clean all &&     locale-gen 'en_US.UTF-8' &&     apt-get clean metadata &&     exit_code=0 && break || exit_code=$? &&     echo "packaging error: retry $iter in 10s" &&     apt-get clean all &&     apt-get clean metadata &&     sleep 10; done;     (exit $exit_code) # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+RUN groupadd --gid 1000 logstash &&     adduser --uid 1000 --gid 1000     --home /usr/share/logstash --no-create-home     logstash # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+RUN curl -Lo - https://artifacts.elastic.co/downloads/logstash/logstash-7.17.26-linux-$(arch).tar.gz |     tar zxf - -C /usr/share &&     mv /usr/share/logstash-7.17.26 /usr/share/logstash &&     chown --recursive logstash:logstash /usr/share/logstash/ &&     chown -R logstash:root /usr/share/logstash &&     chmod -R g=u /usr/share/logstash &&     mkdir /licenses/ &&     mv /usr/share/logstash/NOTICE.TXT /licenses/NOTICE.TXT &&     mv /usr/share/logstash/LICENSE.txt /licenses/LICENSE.txt &&     find /usr/share/logstash -type d -exec chmod g+s {} \; &&     ln -s /usr/share/logstash /opt/logstash # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+WORKDIR /usr/share/logstash
+# Tue, 03 Dec 2024 13:02:17 GMT
+ENV ELASTIC_CONTAINER=true
+# Tue, 03 Dec 2024 13:02:17 GMT
+ENV PATH=/usr/share/logstash/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 03 Dec 2024 13:02:17 GMT
+COPY config/pipelines.yml config/pipelines.yml # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+COPY config/logstash-full.yml config/logstash.yml # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+COPY config/log4j2.properties config/ # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+COPY pipeline/default.conf pipeline/logstash.conf # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+RUN chown --recursive logstash:root config/ pipeline/ # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+ENV LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8
+# Tue, 03 Dec 2024 13:02:17 GMT
+COPY env2yaml/env2yaml /usr/local/bin/ # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+COPY bin/docker-entrypoint /usr/local/bin/ # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+RUN chmod 0755 /usr/local/bin/docker-entrypoint # buildkit
+# Tue, 03 Dec 2024 13:02:17 GMT
+USER 1000
+# Tue, 03 Dec 2024 13:02:17 GMT
+EXPOSE map[5044/tcp:{} 9600/tcp:{}]
+# Tue, 03 Dec 2024 13:02:17 GMT
+LABEL org.label-schema.schema-version=1.0 org.label-schema.vendor=Elastic org.opencontainers.image.vendor=Elastic org.label-schema.name=logstash org.opencontainers.image.title=logstash org.label-schema.version=7.17.26 org.opencontainers.image.version=7.17.26 org.label-schema.url=https://www.elastic.co/products/logstash org.label-schema.vcs-url=https://github.com/elastic/logstash org.label-schema.license=Elastic License org.opencontainers.image.licenses=Elastic License org.opencontainers.image.description=Logstash is a free and open server-side data processing pipeline that ingests data from a multitude of sources, transforms it, and then sends it to your favorite 'stash.' org.label-schema.build-date=2024-10-22T09:18:02+00:00 org.opencontainers.image.created=2024-10-22T09:18:02+00:00
+# Tue, 03 Dec 2024 13:02:17 GMT
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
+```
+
+-	Layers:
+	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
+		Size: 27.5 MB (27511060 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2db6aeeb96fc01883119363b6cca3fdb39b89036d6a317b6ad5ec4c7f4c975e7`  
+		Last Modified: Tue, 03 Dec 2024 19:30:30 GMT  
+		Size: 50.4 MB (50409358 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:67fb4172d9a8cf1cfbd5e468d9deb80f9931e7d3e7d33934cc46560b6b219375`  
+		Last Modified: Tue, 03 Dec 2024 19:30:30 GMT  
+		Size: 1.8 KB (1807 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ff54592f3770c76c69d4a526c8a7d286a136ae29dc91da5c223b98f8b82f4d5b`  
+		Last Modified: Tue, 03 Dec 2024 19:30:36 GMT  
+		Size: 371.0 MB (370999252 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b1d9318cb0250cd0fac086ce89a6d4a37c10e0d22b8a668dd1cedb3e5ab5c1a1`  
+		Last Modified: Tue, 03 Dec 2024 19:30:30 GMT  
+		Size: 381.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d7eb889b5053bdb66d1765a64d9137d17d41735d18ec1ba53e5703eb0fa852d7`  
+		Last Modified: Tue, 03 Dec 2024 19:30:30 GMT  
+		Size: 278.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7a465e4eb4962dfb93a40fab2da0b2449f27877a4918a2bf84501672e80c4a0b`  
+		Last Modified: Tue, 03 Dec 2024 19:30:30 GMT  
+		Size: 474.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:98e78fd8fe26c9d1736d1e19c3e3f6e6876a5457dbdb49b6563af726e9ed4537`  
+		Last Modified: Tue, 03 Dec 2024 19:30:31 GMT  
+		Size: 276.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2f66875b69814f164e0d7ea594119f1e78335f2b4e294d941e66fb6cda2d133a`  
+		Last Modified: Tue, 03 Dec 2024 19:30:31 GMT  
+		Size: 826.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:84e86ef604def7ff65dc33e6178ef64e0647bc1ccaa2ceff2ff7d282a01e19c6`  
+		Last Modified: Tue, 03 Dec 2024 19:30:32 GMT  
+		Size: 2.1 MB (2061813 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bdf5881c9caee2982a1f6e4fd384c3d9a9758d471315989bdc2c7e9d6fe82262`  
+		Last Modified: Tue, 03 Dec 2024 19:30:32 GMT  
+		Size: 492.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `logstash:7.17.26` - unknown; unknown
+
+```console
+$ docker pull logstash@sha256:df8de812c1c7ae5d741af46b84b6d2a917ad5ffa54ca774065e6a6e4bdba2176
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.3 MB (3342661 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:6d81999f2643343581d519bd06cfbfb3eb96aae567d0e65a84bf3e132c88568f`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:fb8e580a1164c26525d7db74bc1e10a47ef9fe186981393e2c7348a24ce3466a`  
+		Last Modified: Tue, 03 Dec 2024 19:30:30 GMT  
+		Size: 3.3 MB (3310475 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:013204889f606a0d0eb98352aa450cbebaddea8072e5d3f08851d60f81345bb3`  
+		Last Modified: Tue, 03 Dec 2024 19:30:30 GMT  
+		Size: 32.2 KB (32186 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `logstash:8.15.5`
 
