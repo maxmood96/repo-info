@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:914b1c21371e27001024a08bd2cfd798004bb10bf0f17828a873ccd61fc18d4e`
+- Image ID: `sha256:c65329af8fd0e31dad7e5e4ffa2b31a5c3a702620adc2dbe6afd7abb4c75ebd7`
 - Created: `2024-08-28T10:12:01Z`
 - Virtual Size: ~ 1.06 Gb  
   (total size of all layers on-disk)
@@ -3939,11 +3939,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.115-1`
+### `dpkg` source package: `linux=6.1.119-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.115-1`
+- `linux-libc-dev:amd64=6.1.119-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -3958,17 +3958,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.115-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.115-1.dsc' linux_6.1.115-1.dsc 290930 SHA256:32364118b8566256f91e4069fc5b44e11b51ede9c36d3537a376a4be9ac5dcef
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.115.orig.tar.xz' linux_6.1.115.orig.tar.xz 137696352 SHA256:3b76c6646daa9f12182ca93d6d74a1433e3a2f01bbf7ae0dbae828380e9be00d
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.115-1.debian.tar.xz' linux_6.1.115-1.debian.tar.xz 1691192 SHA256:71d28a1db9ec1c5d589e1be6898bdb72a43f0363afad87dc924f5eed8925d8f1
+$ apt-get source -qq --print-uris linux=6.1.119-1
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.119-1.dsc' linux_6.1.119-1.dsc 290930 SHA256:c13e92aa9821c3f3300c5524f35f2e0da7def1313803547a6c7d41c150fb1714
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.119.orig.tar.xz' linux_6.1.119.orig.tar.xz 137707144 SHA256:59e74f3e07779dc13de2ddf10ee6652d373373248caa0517ba7871846985c847
+'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_6.1.119-1.debian.tar.xz' linux_6.1.119-1.debian.tar.xz 1696788 SHA256:6f99efa9463c35b875fc7138f1acb72186e283d49cbad5f59c62d35808fb5ae2
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.115-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.115-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.115-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.119-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.119-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.119-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
@@ -4944,12 +4944,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkgconf/1.8.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkgconf/1.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-15=15.8-0+deb12u1`
+### `dpkg` source package: `postgresql-15=15.10-0+deb12u1`
 
 Binary Packages:
 
-- `libpq-dev=15.8-0+deb12u1`
-- `libpq5:amd64=15.8-0+deb12u1`
+- `libpq-dev=15.10-0+deb12u1`
+- `libpq5:amd64=15.10-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/libpq5/copyright`)
 
@@ -4969,17 +4969,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-15=15.8-0+deb12u1
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.8-0%2bdeb12u1.dsc' postgresql-15_15.8-0+deb12u1.dsc 3919 SHA256:79ec6c54824ad3653a75400593e9741fd69d2a6fa9bf73fa95785562ee25c3b0
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.8.orig.tar.bz2' postgresql-15_15.8.orig.tar.bz2 23119460 SHA256:4403515f9a69eeb3efebc98f30b8c696122bfdf895e92b3b23f5b8e769edcb6a
-'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.8-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.8-0+deb12u1.debian.tar.xz 26132 SHA256:7587beb629016891e3493f1458bbcc2d774012b82fb5cc40e55b53c248a9bb79
+$ apt-get source -qq --print-uris postgresql-15=15.10-0+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.10-0%2bdeb12u1.dsc' postgresql-15_15.10-0+deb12u1.dsc 3926 SHA256:fb102e64f6be7a19c027b9763d491b151637b21b434cf559608ffb247ce78cc2
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.10.orig.tar.bz2' postgresql-15_15.10.orig.tar.bz2 23138615 SHA256:55abe738d441f0e58658b3ec6f88097a713b5e3b73139f6230d7b5c4c389e573
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.10-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.10-0+deb12u1.debian.tar.xz 27280 SHA256:9c9815592b657827f1cbe40ae429df4e9a1380b1b88f5d05a3baf274a94abcdd
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-15/15.8-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-15/15.8-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-15/15.8-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-15/15.10-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-15/15.10-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-15/15.10-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.2-3`
 
@@ -5630,11 +5630,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tk8.6/8.6.13-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tk8.6/8.6.13-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2024a-0+deb12u1`
+### `dpkg` source package: `tzdata=2024b-0+deb12u1`
 
 Binary Packages:
 
-- `tzdata=2024a-0+deb12u1`
+- `tzdata=2024b-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -5643,18 +5643,18 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2024a-0+deb12u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a-0%2bdeb12u1.dsc' tzdata_2024a-0+deb12u1.dsc 2396 SHA256:ff17f292b29f10c3e745251d30975fd219e09e166e51bd35bfce40417ec60151
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA256:0d0434459acbd2059a7a8da1f3304a84a86591f6ed69c6248fffa502b6edffe3
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA256:f64725f9f65419e7b009e3b95b75ea9516382d0be64aef63d78654d9c569ed0d
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a-0%2bdeb12u1.debian.tar.xz' tzdata_2024a-0+deb12u1.debian.tar.xz 119888 SHA256:566e271a26378fdd685e82ee1e32a7b3abe47d6c7bf5008160d74b229539e266
+$ apt-get source -qq --print-uris tzdata=2024b-0+deb12u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b-0%2bdeb12u1.dsc' tzdata_2024b-0+deb12u1.dsc 2396 SHA256:b04aa6ead0a73875a45232af4d15c7064f315be181aa2b920ec337ffbf1e422c
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz' tzdata_2024b.orig.tar.gz 459393 SHA256:70e754db126a8d0db3d16d6b4cb5f7ec1e04d5f261255e4558a67fe92d39e550
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz.asc' tzdata_2024b.orig.tar.gz.asc 833 SHA256:5bc86ae1ee1f600eefefd5377faf5519d4863c960efb625286638d077178d883
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b-0%2bdeb12u1.debian.tar.xz' tzdata_2024b-0+deb12u1.debian.tar.xz 121868 SHA256:34378ab9dc647c3c6d2cae6b60821b372b63f3fe82ab3e816fd861e4046fb20d
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2024a-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2024a-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2024a-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2024b-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2024b-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2024b-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0043+nmu1`
 
