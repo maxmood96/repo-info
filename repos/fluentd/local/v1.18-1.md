@@ -1,10 +1,10 @@
-# `fluentd:v1.17.1-1.0`
+# `fluentd:v1.18.0-1.0`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b0a570051e688f5f0a0e0cd20067931161c8859d7021664f26eec1ba1949f8b1`
-- Created: `2024-08-20T02:01:21Z`
-- Virtual Size: ~ 46.29 Mb  
+- Image ID: `sha256:09d87a44d66174de902e064074a16ce13ebb2161ee79c98f493773be1bc1b968`
+- Created: `2024-12-02T04:34:11Z`
+- Virtual Size: ~ 36.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/bin/entrypoint.sh"]`
@@ -16,7 +16,7 @@
 - Labels:
   - `Description=Fluentd docker image`
   - `Vendor=Fluent Organization`
-  - `Version=1.17.1`
+  - `Version=1.18.0`
   - `maintainer=Fluentd developers <fluentd@googlegroups.com>`
 
 ## `apk` (`.apk`-based packages)
