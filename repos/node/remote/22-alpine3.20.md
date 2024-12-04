@@ -1,7 +1,7 @@
 ## `node:22-alpine3.20`
 
 ```console
-$ docker pull node@sha256:bb1dbd416ac5ba46c0ed716af99b8fa268712928f9a24ab3cc0023ac3d3fc22b
+$ docker pull node@sha256:adeb6d34aff46b81fb1dcf746961b6363180c53a91741c3c5c5db926c8df576c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -244,13 +244,13 @@ $ docker pull node@sha256:38e2e58a9977619cc1386493317566485636bdfbc2d32f76c14053
 ### `node:22-alpine3.20` - linux; arm64 variant v8
 
 ```console
-$ docker pull node@sha256:cd36984e764b7c715aa362783ac87b255481626d903898b471d2da911dc26e8b
+$ docker pull node@sha256:0bfa294df852fd6b1e5fdc229e5f9be94902ed192b8748541e36c8707a7fed10
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.1 MB (54071239 bytes)**  
+-	Total Size: **54.9 MB (54899009 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:497218cf1f189ca765c5b775615beda2d58c3d727d2f599565010ed53281cd77`
+-	Image ID: `sha256:47b30121094b3e0fc43f9c60c585e73d08c7d28ac5f48191aece4d58416bddbc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
@@ -259,19 +259,19 @@ $ docker pull node@sha256:cd36984e764b7c715aa362783ac87b255481626d903898b471d2da
 ADD alpine-minirootfs-3.20.3-aarch64.tar.gz / # buildkit
 # Fri, 06 Sep 2024 12:05:36 GMT
 CMD ["/bin/sh"]
-# Tue, 29 Oct 2024 20:39:22 GMT
-ENV NODE_VERSION=22.11.0
-# Tue, 29 Oct 2024 20:39:22 GMT
-RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= OPENSSL_ARCH='linux*' && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64) ARCH='x64' CHECKSUM="95e9a410b7ce732705493cd44496c8e77ccb11516c75c2ef794f19a9943d178c" OPENSSL_ARCH=linux-x86_64;;         x86) OPENSSL_ARCH=linux-elf;;         aarch64) OPENSSL_ARCH=linux-aarch64;;         arm*) OPENSSL_ARCH=linux-armv4;;         ppc64le) OPENSSL_ARCH=linux-ppc64le;;         s390x) OPENSSL_ARCH=linux-s390x;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3         py-setuptools     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;   && apk del .build-deps   && node --version   && npm --version # buildkit
-# Tue, 29 Oct 2024 20:39:22 GMT
+# Tue, 03 Dec 2024 22:23:01 GMT
+ENV NODE_VERSION=22.12.0
+# Tue, 03 Dec 2024 22:23:01 GMT
+RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= OPENSSL_ARCH='linux*' && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64) ARCH='x64' CHECKSUM="43532120bad06cdea17c2ffba81ebfcff4611532a3569ef996faa39aadcbc759" OPENSSL_ARCH=linux-x86_64;;         x86) OPENSSL_ARCH=linux-elf;;         aarch64) OPENSSL_ARCH=linux-aarch64;;         arm*) OPENSSL_ARCH=linux-armv4;;         ppc64le) OPENSSL_ARCH=linux-ppc64le;;         s390x) OPENSSL_ARCH=linux-s390x;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3         py-setuptools     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;   && apk del .build-deps   && node --version   && npm --version # buildkit
+# Tue, 03 Dec 2024 22:23:01 GMT
 ENV YARN_VERSION=1.22.22
-# Tue, 29 Oct 2024 20:39:22 GMT
+# Tue, 03 Dec 2024 22:23:01 GMT
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version   && rm -rf /tmp/* # buildkit
-# Tue, 29 Oct 2024 20:39:22 GMT
+# Tue, 03 Dec 2024 22:23:01 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 29 Oct 2024 20:39:22 GMT
+# Tue, 03 Dec 2024 22:23:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 29 Oct 2024 20:39:22 GMT
+# Tue, 03 Dec 2024 22:23:01 GMT
 CMD ["node"]
 ```
 
@@ -280,53 +280,53 @@ CMD ["node"]
 		Last Modified: Mon, 09 Sep 2024 07:03:59 GMT  
 		Size: 4.1 MB (4087726 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5675372057efa11e37f5d747f494fea4d10c68d0610faa82223204ed26f40414`  
-		Last Modified: Tue, 12 Nov 2024 16:59:49 GMT  
-		Size: 48.6 MB (48596795 bytes)  
+	-	`sha256:94b38c7f95d59f1c2f8f78bd33d1f15335947dd68e8fd27e5bd7ba2cc9622b9c`  
+		Last Modified: Wed, 04 Dec 2024 03:21:43 GMT  
+		Size: 49.4 MB (49424565 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:862a86549f4d23e7a12ef04663bf9cac9461d74d02c3782e62251c90b3c84dc4`  
-		Last Modified: Tue, 12 Nov 2024 16:59:47 GMT  
-		Size: 1.4 MB (1386274 bytes)  
+	-	`sha256:95d3e6d56d566564aeef442ddef924dcfc49549fba89e9c81bb1a6a4573dfac8`  
+		Last Modified: Wed, 04 Dec 2024 03:21:42 GMT  
+		Size: 1.4 MB (1386273 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a89c6fd3d56df1b188c0a54087106249db62f9e315c2f94bb02683999eb9abf8`  
-		Last Modified: Tue, 12 Nov 2024 16:59:47 GMT  
-		Size: 444.0 B  
+	-	`sha256:cb18c4500f01a9282ee6c91161dd4166dc517cbf70f7519f43a1190946110565`  
+		Last Modified: Wed, 04 Dec 2024 03:21:42 GMT  
+		Size: 445.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:22-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:dafcd88a2166049cc3dda5da23f13741fbf3f4e9cc1902bb44482e693d4dfbcf
+$ docker pull node@sha256:ad1b1276b5301003c5c368f19ee3b7958c8eebe70e8e47e588725b9ddbb96a0b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **438.9 KB (438868 bytes)**  
+-	Total Size: **438.9 KB (438867 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ddfc5dc27608a7ffb96bea5b79f5211db034e44a0472ac05790506bc7e322da8`
+-	Image ID: `sha256:0d3c19210a16907ee6201925f33244154a779e3ecbdfa29b5b2c9c4852bc2e6d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b38143ff78f38ec415c99c697b9141a5b0c2adc638a3c87824fad164945bd068`  
-		Last Modified: Tue, 12 Nov 2024 16:59:47 GMT  
+	-	`sha256:fbf6ff04e64bb96f00e1c6336eacb73d896639aebb13393c72ce1dd891036643`  
+		Last Modified: Wed, 04 Dec 2024 03:21:42 GMT  
 		Size: 413.3 KB (413347 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:29928932ef57be3c0f746d85e9c55c0644225d5e8cedef0d1787a116a0e74268`  
-		Last Modified: Tue, 12 Nov 2024 16:59:47 GMT  
-		Size: 25.5 KB (25521 bytes)  
+	-	`sha256:54f2cabfc4c133275ecf69f95515d9cf7130fc0d9b64c370ba9fdae74dec539b`  
+		Last Modified: Wed, 04 Dec 2024 03:21:42 GMT  
+		Size: 25.5 KB (25520 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `node:22-alpine3.20` - linux; s390x
 
 ```console
-$ docker pull node@sha256:3297e5d8a5e6db672a129d081d1ade0faceece734e9fe3d86e802ff8b799f536
+$ docker pull node@sha256:b59f1ed2ebbb9bea68cbc1d97b8f5ec0e6d674efd84e060ca29376ce9982ddb1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **55.5 MB (55508180 bytes)**  
+-	Total Size: **56.3 MB (56344174 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:487efbba11de35ecc6fa39df7c05af746eae9f6c8060647ecfb54faae0e712d1`
+-	Image ID: `sha256:1cc837cf6a47ad8b055484f5a2cea1a73625f5b209dda9f469fd3d364c40625b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
@@ -335,19 +335,19 @@ $ docker pull node@sha256:3297e5d8a5e6db672a129d081d1ade0faceece734e9fe3d86e802f
 ADD alpine-minirootfs-3.20.3-s390x.tar.gz / # buildkit
 # Fri, 06 Sep 2024 12:05:36 GMT
 CMD ["/bin/sh"]
-# Tue, 29 Oct 2024 20:39:22 GMT
-ENV NODE_VERSION=22.11.0
-# Tue, 29 Oct 2024 20:39:22 GMT
-RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= OPENSSL_ARCH='linux*' && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64) ARCH='x64' CHECKSUM="95e9a410b7ce732705493cd44496c8e77ccb11516c75c2ef794f19a9943d178c" OPENSSL_ARCH=linux-x86_64;;         x86) OPENSSL_ARCH=linux-elf;;         aarch64) OPENSSL_ARCH=linux-aarch64;;         arm*) OPENSSL_ARCH=linux-armv4;;         ppc64le) OPENSSL_ARCH=linux-ppc64le;;         s390x) OPENSSL_ARCH=linux-s390x;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3         py-setuptools     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;   && apk del .build-deps   && node --version   && npm --version # buildkit
-# Tue, 29 Oct 2024 20:39:22 GMT
+# Tue, 03 Dec 2024 22:23:01 GMT
+ENV NODE_VERSION=22.12.0
+# Tue, 03 Dec 2024 22:23:01 GMT
+RUN addgroup -g 1000 node     && adduser -u 1000 -G node -s /bin/sh -D node     && apk add --no-cache         libstdc++     && apk add --no-cache --virtual .build-deps         curl     && ARCH= OPENSSL_ARCH='linux*' && alpineArch="$(apk --print-arch)"       && case "${alpineArch##*-}" in         x86_64) ARCH='x64' CHECKSUM="43532120bad06cdea17c2ffba81ebfcff4611532a3569ef996faa39aadcbc759" OPENSSL_ARCH=linux-x86_64;;         x86) OPENSSL_ARCH=linux-elf;;         aarch64) OPENSSL_ARCH=linux-aarch64;;         arm*) OPENSSL_ARCH=linux-armv4;;         ppc64le) OPENSSL_ARCH=linux-ppc64le;;         s390x) OPENSSL_ARCH=linux-s390x;;         *) ;;       esac   && if [ -n "${CHECKSUM}" ]; then     set -eu;     curl -fsSLO --compressed "https://unofficial-builds.nodejs.org/download/release/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz";     echo "$CHECKSUM  node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" | sha256sum -c -       && tar -xJf "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz" -C /usr/local --strip-components=1 --no-same-owner       && ln -s /usr/local/bin/node /usr/local/bin/nodejs;   else     echo "Building from source"     && apk add --no-cache --virtual .build-deps-full         binutils-gold         g++         gcc         gnupg         libgcc         linux-headers         make         python3         py-setuptools     && export GNUPGHOME="$(mktemp -d)"     && for key in       C0D6248439F1D5604AAFFB4021D900FFDB233756       DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7       CC68F5A3106FF448322E48ED27F5E38D5B0A215F       8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600       890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4       C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C       108F52B48DB57BB0CC439B2997B01419BD92F80A       A363A499291CBBC940DD62E41F10027AF002F8B0     ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;     done     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION.tar.xz"     && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"     && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc     && gpgconf --kill all     && rm -rf "$GNUPGHOME"     && grep " node-v$NODE_VERSION.tar.xz\$" SHASUMS256.txt | sha256sum -c -     && tar -xf "node-v$NODE_VERSION.tar.xz"     && cd "node-v$NODE_VERSION"     && ./configure     && make -j$(getconf _NPROCESSORS_ONLN) V=     && make install     && apk del .build-deps-full     && cd ..     && rm -Rf "node-v$NODE_VERSION"     && rm "node-v$NODE_VERSION.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt;   fi   && rm -f "node-v$NODE_VERSION-linux-$ARCH-musl.tar.xz"   && find /usr/local/include/node/openssl/archs -mindepth 1 -maxdepth 1 ! -name "$OPENSSL_ARCH" -exec rm -rf {} \;   && apk del .build-deps   && node --version   && npm --version # buildkit
+# Tue, 03 Dec 2024 22:23:01 GMT
 ENV YARN_VERSION=1.22.22
-# Tue, 29 Oct 2024 20:39:22 GMT
+# Tue, 03 Dec 2024 22:23:01 GMT
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && apk del .build-deps-yarn   && yarn --version   && rm -rf /tmp/* # buildkit
-# Tue, 29 Oct 2024 20:39:22 GMT
+# Tue, 03 Dec 2024 22:23:01 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 29 Oct 2024 20:39:22 GMT
+# Tue, 03 Dec 2024 22:23:01 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 29 Oct 2024 20:39:22 GMT
+# Tue, 03 Dec 2024 22:23:01 GMT
 CMD ["node"]
 ```
 
@@ -356,39 +356,39 @@ CMD ["node"]
 		Last Modified: Tue, 12 Nov 2024 00:55:29 GMT  
 		Size: 3.5 MB (3461608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7910ef3e6c851b64a630dc3a41bd36724deffd9ebd9ecece7378b189edccdb7a`  
-		Last Modified: Tue, 12 Nov 2024 14:20:04 GMT  
-		Size: 50.7 MB (50659854 bytes)  
+	-	`sha256:b14f64095f8466a8057f5db792962aae083eb8eb5682b55fe2097f38eecf31be`  
+		Last Modified: Wed, 04 Dec 2024 03:43:40 GMT  
+		Size: 51.5 MB (51495851 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:720c35bf22528441224b530ba93f73130377138c0c1e188de617d4b2bc92fedd`  
-		Last Modified: Tue, 12 Nov 2024 14:20:03 GMT  
-		Size: 1.4 MB (1386274 bytes)  
+	-	`sha256:ae91bf056b15f85a17845ecbeb64d3f145e0457909fad5789c8396fe345de4c4`  
+		Last Modified: Wed, 04 Dec 2024 03:43:39 GMT  
+		Size: 1.4 MB (1386271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4810ed7d94146d76495502b6ae22e7fe00bb00887a9b29ab172015181e8a6e9`  
-		Last Modified: Tue, 12 Nov 2024 14:20:03 GMT  
+	-	`sha256:747c7903a5f3ef657fe8863bbc52b6b66e5b3932b0e0e71b697978d78bfa0ba1`  
+		Last Modified: Wed, 04 Dec 2024 03:43:39 GMT  
 		Size: 444.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:22-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:b8a340360dfe56fb79fc0ba121ce2466699a9a82ee5f886792148e6ec52d40bd
+$ docker pull node@sha256:eba43121dd03d0e73ba60e4a59f04864de5e3667ab55ef3c5be4eab5a070a00a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **436.6 KB (436594 bytes)**  
+-	Total Size: **436.6 KB (436595 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64f4b0bf0113a25f5fc24368a338a595f87d6a6a40ba526bf9a4beabe69f1ea0`
+-	Image ID: `sha256:a3ef6e4d89877b0a861e76c799912ef00fa3a9ad5277a4bb6840a796c3a746c1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fe58d53957bbe22714f67e5aeabda1387a8f020bb70ad2e31cc4b426272e1310`  
-		Last Modified: Tue, 12 Nov 2024 14:20:03 GMT  
+	-	`sha256:7b8735fd92868f53b83f44c70c344fd9f9dd4dcec926fa5aa62378b3361704cb`  
+		Last Modified: Wed, 04 Dec 2024 03:43:39 GMT  
 		Size: 411.3 KB (411265 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a0e8ae7d2cfc08780aff6db24ceb47d2d499ef49870c40e8d807722f005e845d`  
-		Last Modified: Tue, 12 Nov 2024 14:20:03 GMT  
-		Size: 25.3 KB (25329 bytes)  
+	-	`sha256:1c0ff3cdf737977c6f6926a8605420e959d64f5d18f0d67d83f5c2ba8120b6a0`  
+		Last Modified: Wed, 04 Dec 2024 03:43:39 GMT  
+		Size: 25.3 KB (25330 bytes)  
 		MIME: application/vnd.in-toto+json
