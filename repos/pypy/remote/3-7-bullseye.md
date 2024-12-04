@@ -1,7 +1,7 @@
 ## `pypy:3-7-bullseye`
 
 ```console
-$ docker pull pypy@sha256:7c661ee54b42d2103fa9472fd5079e43fba6279424de1bcb14d5e4425ad22c24
+$ docker pull pypy@sha256:d57c4a404faaa55b1a3c5d2d66bafac3ab4258968813cbb3d21e89e864550c75
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -111,20 +111,18 @@ $ docker pull pypy@sha256:467a8b2fe7e9a4a63b7b85fa1d942e4267cf283e8c4c89a1ee8c6f
 ### `pypy:3-7-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull pypy@sha256:d29aed5c25d75d99c9120656dfbfedf5d4d0b59e467a45c9465c45f7a0e2653f
+$ docker pull pypy@sha256:3cc3a610f13553395bc9a85c166733e444655788353baadb367776893ff84287
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **348.7 MB (348654483 bytes)**  
+-	Total Size: **347.2 MB (347156488 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa62abbd0b323b330add26500dac6d383baf12c7fcd353bd0fc0d1b8f5a31b22`
+-	Image ID: `sha256:dd99e14a030cb5cf0dd32a8a0b734d7417d12150102b408c2cbe99f31bb63b24`
 -	Default Command: `["pypy3"]`
 
 ```dockerfile
 # Fri, 28 Apr 2023 21:58:08 GMT
-ADD rootfs.tar.xz / # buildkit
-# Fri, 28 Apr 2023 21:58:08 GMT
-CMD ["bash"]
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1733097600'
 # Fri, 28 Apr 2023 21:58:08 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -152,57 +150,57 @@ CMD ["pypy3"]
 ```
 
 -	Layers:
-	-	`sha256:a839664fe62f615da74af799f94ccbc890a15d0f78470aac54302c2fd5475615`  
-		Last Modified: Tue, 12 Nov 2024 00:57:41 GMT  
-		Size: 53.8 MB (53757072 bytes)  
+	-	`sha256:e357e1f94476a03fde298261e8c007d487d3cfade45a9eef064eba724a5c5e2e`  
+		Last Modified: Tue, 03 Dec 2024 01:30:26 GMT  
+		Size: 52.2 MB (52245994 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca9e545ff305fe56558a94b064a901c16b373a3501daf5519f82ec19db6a3655`  
-		Last Modified: Tue, 12 Nov 2024 11:16:34 GMT  
-		Size: 15.5 MB (15543588 bytes)  
+	-	`sha256:c0b2279cee7374c65ae079e8ccdceeeb8b20c07ffc727e5b7cd595285b44a3a0`  
+		Last Modified: Tue, 03 Dec 2024 05:39:10 GMT  
+		Size: 15.5 MB (15544048 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d952be101e4ab063ff4eafa1d2809245e9ac9e713c342da9f201d2280d4a6c9b`  
-		Last Modified: Wed, 13 Nov 2024 02:42:41 GMT  
-		Size: 54.8 MB (54842084 bytes)  
+	-	`sha256:2749caeb5baae1b5e6316a6f02e57835aa548497fba6792be844c743a57c72a2`  
+		Last Modified: Tue, 03 Dec 2024 11:51:00 GMT  
+		Size: 54.9 MB (54852316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ae8ab89b79ca6b4fbc5b7006d242a238846ed57f82ebef3fc069e6bb0aa0532`  
-		Last Modified: Wed, 13 Nov 2024 08:04:21 GMT  
-		Size: 190.0 MB (189977453 bytes)  
+	-	`sha256:8e711ab753fd7e271d97eb54f50e7e1a99221d70c2b97b5351966959fcf945e2`  
+		Last Modified: Tue, 03 Dec 2024 16:21:21 GMT  
+		Size: 190.0 MB (189979774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69458cb5118856936230ade7f81c805684e104317863c45dfb720f339770194a`  
-		Last Modified: Wed, 13 Nov 2024 14:03:19 GMT  
-		Size: 3.0 MB (2974537 bytes)  
+	-	`sha256:885461520f418c1777f6bc0588b4307cf94e072d17b4d8167ad5bbab981e0698`  
+		Last Modified: Tue, 03 Dec 2024 22:17:49 GMT  
+		Size: 3.0 MB (2974530 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85df7712ba306a89fa86473a3e1a5d4124b89fc99e9ac736191a9f50177c27e8`  
-		Last Modified: Wed, 13 Nov 2024 14:03:20 GMT  
-		Size: 28.3 MB (28317435 bytes)  
+	-	`sha256:55a4f795b4fc0c66ebad05f730ba279f5b11690852098024bf6ab252319e75c8`  
+		Last Modified: Tue, 03 Dec 2024 22:17:50 GMT  
+		Size: 28.3 MB (28317460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8767b092e06fc36b181b7a3851548188c4cac15c5fc0c89cc0201e3280d456c`  
-		Last Modified: Wed, 13 Nov 2024 14:03:19 GMT  
-		Size: 3.2 MB (3242314 bytes)  
+	-	`sha256:61824d891f02028737abc8f8699e4e285cdf5797a45ca08bfac1cdec29e56aa1`  
+		Last Modified: Tue, 03 Dec 2024 22:17:49 GMT  
+		Size: 3.2 MB (3242366 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `pypy:3-7-bullseye` - unknown; unknown
 
 ```console
-$ docker pull pypy@sha256:97e37790b8bb9b45ef7b539a290bf07133e1e24caff140fcd5a4db129382d333
+$ docker pull pypy@sha256:ec735f648aef5422d83a27240e66ca38d8a91e3b324bd72756bf4ae7582b4e9b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.5 MB (15458919 bytes)**  
+-	Total Size: **15.5 MB (15457117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1daa8ebb74d95e4787d641d298bb4a9461c807de00aec5fb4ff764f07801def4`
+-	Image ID: `sha256:cbd6de8aba5b9333339b3aa5dcad3c1a2771d867fc0dc334835ac758b2779aaf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:939ce01d7b826ac07610602931d44f66450dfb28198308ff6fd093fd41c9d4b2`  
-		Last Modified: Wed, 13 Nov 2024 14:03:19 GMT  
-		Size: 15.4 MB (15430030 bytes)  
+	-	`sha256:2d57777eb0bdd603d0ed5323809fb1c503a68f805006a0f4a001e25d2b262381`  
+		Last Modified: Tue, 03 Dec 2024 22:17:49 GMT  
+		Size: 15.4 MB (15428227 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:602197d8824a9f328de0a09f23e712c3855a6d2664152863623861d4e91b1fe5`  
-		Last Modified: Wed, 13 Nov 2024 14:03:18 GMT  
-		Size: 28.9 KB (28889 bytes)  
+	-	`sha256:645754291fe857900c185ed92a3cfaa32753ee88996759eef7c5af9a219f78ab`  
+		Last Modified: Tue, 03 Dec 2024 22:17:49 GMT  
+		Size: 28.9 KB (28890 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `pypy:3-7-bullseye` - linux; 386
