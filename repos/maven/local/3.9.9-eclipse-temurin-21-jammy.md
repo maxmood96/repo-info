@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:21726aaf77e939f27321fc093436c24ad3f98bcc3179e92773fd87ef43137861`
+- Image ID: `sha256:fdb19e707dcf02eb063ed880ea7b9bb7170cc9ce7bdd727d0ea7f24af2f4c9cf`
 - Created: `2024-08-20T18:12:59Z`
-- Virtual Size: ~ 517.71 Mb  
+- Virtual Size: ~ 518.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -313,13 +313,13 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.2.debian.tar.xz' coreutils_8.32-4.1ubuntu1.2.debian.tar.xz 44868 SHA512:7718e917f8f2c5c5574e73a079ea8fd3b32bc898f2e12168dc3711dfdd896e4727283011050b80f65e60994fca49da031d70901d453612132764dca7dec99543
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.18`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.19`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.18`
-- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.18`
-- `libcurl4:amd64=7.81.0-1ubuntu1.18`
+- `curl=7.81.0-1ubuntu1.19`
+- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.19`
+- `libcurl4:amd64=7.81.0-1ubuntu1.19`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -330,9 +330,15 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.19
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.19.dsc' curl_7.81.0-1ubuntu1.19.dsc 3188 SHA512:6800c2d74e8a57ef93f8e41cc9b340e72512670d1d748d6b03f3deb00ab8e180a289654128b2e6ca748a1efcbae6e7f4cba84dafa979dcac559a5e1a610d3da7
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.19.debian.tar.xz' curl_7.81.0-1ubuntu1.19.debian.tar.xz 78124 SHA512:fb677743f6395f02c08f8d8caf2056abcb7c3972658fc86aeab949f7c5af55f373e1cc0b90eab369c162851a660d5c30c373e4f4a9487c6df93f58ad7f0fc14e
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
