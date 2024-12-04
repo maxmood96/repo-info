@@ -1,7 +1,7 @@
 ## `ghost:5-alpine`
 
 ```console
-$ docker pull ghost@sha256:59ce3104e864410a0db23eeb88fe0dfa82de8330406d3c2fbfd22d310bbd5034
+$ docker pull ghost@sha256:fc2140ff9baea0b2d69fadef05c0b8ad4b85f2da98524aa0df673204bed6a05e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,13 +18,13 @@ $ docker pull ghost@sha256:59ce3104e864410a0db23eeb88fe0dfa82de8330406d3c2fbfd22
 ### `ghost:5-alpine` - linux; amd64
 
 ```console
-$ docker pull ghost@sha256:c19b5c08fd0049daf9af4f437c85b23888a6ce787c9d1ca789b5d9e290162a51
+$ docker pull ghost@sha256:07e58da4796438eb230c2bdcb81d9245a5982aed324551ac1250185e83d3720c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **146.5 MB (146511756 bytes)**  
+-	Total Size: **146.5 MB (146511192 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8167bd1409dd1fd0aed9b307bb8faa5241fe4c272ddaedc260d1394823af7c7c`
+-	Image ID: `sha256:c2bdc1cdc713276385dd3dae5183c598fdaee381053c6a2bdbf2da32f3b8b317`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -47,39 +47,39 @@ COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Fri, 15 Nov 2024 23:05:18 GMT
 CMD ["node"]
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 RUN apk add --no-cache 		bash # buildkit
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 ENV GOSU_VERSION=1.17
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 RUN set -eux; ln -svf gosu /usr/local/bin/su-exec; su-exec nobody true # backwards compatibility (TODO remove in Ghost 6+) # buildkit
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 ENV NODE_ENV=production
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 ENV GHOST_CLI_VERSION=1.26.1
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Fri, 29 Nov 2024 15:19:12 GMT
-ENV GHOST_VERSION=5.101.6
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
+ENV GHOST_VERSION=5.103.0
+# Tue, 03 Dec 2024 19:11:22 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		apkDel=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		virtual='.build-deps-ghost'; 		apkDel="$apkDel $virtual"; 		apk add --no-cache --virtual "$virtual" g++ linux-headers make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			virtualPackages='g++ make python3'; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.12.1 in Alpine 3.15 is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 			virtual=".build-deps-${package%%@*}"; 			apkDel="$apkDel $virtual"; 			apk add --no-cache --virtual "$virtual" $virtualPackages; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$apkDel" ]; then 		apk del --no-network $apkDel; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 WORKDIR /var/lib/ghost
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 VOLUME [/var/lib/ghost/content]
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 EXPOSE map[2368/tcp:{}]
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -100,69 +100,69 @@ CMD ["node" "current/index.js"]
 		Last Modified: Mon, 18 Nov 2024 15:04:47 GMT  
 		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da384d634cf66b1d5b8a44e373c3dc5fd9f6f3166b8bf472609813f3b9c431b3`  
-		Last Modified: Tue, 03 Dec 2024 00:25:10 GMT  
-		Size: 776.0 KB (776030 bytes)  
+	-	`sha256:149dcc3cd1584e045edc3153e2ab32e005de0d4b6d41a4874d8ceec0e9f5179f`  
+		Last Modified: Tue, 03 Dec 2024 23:30:49 GMT  
+		Size: 776.0 KB (776023 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50210284d0de5759261194db62776011ea233eb1d47dec28fca3ef9bbb6bedd9`  
-		Last Modified: Tue, 03 Dec 2024 00:25:10 GMT  
-		Size: 1.1 MB (1121671 bytes)  
+	-	`sha256:6ab7b8c08841c1a56dffd7b492f44e1825cfce56803587ed283ed342510867fc`  
+		Last Modified: Tue, 03 Dec 2024 23:30:49 GMT  
+		Size: 1.1 MB (1121668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9142eaa20ec67260bf8d664b8834619270fb3c6809017a87c64a170c3686bcf2`  
-		Last Modified: Tue, 03 Dec 2024 00:25:10 GMT  
-		Size: 176.0 B  
+	-	`sha256:842931508c360c9873eb6753c9a6b8bd81e8dd33eb376d5bf9f830707755e9d8`  
+		Last Modified: Tue, 03 Dec 2024 23:30:49 GMT  
+		Size: 177.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26db4b9466ce08b30742e4e0fff8dc4c5d12c3294e7048346d3ecbfa0efc31fe`  
-		Last Modified: Tue, 03 Dec 2024 00:25:10 GMT  
-		Size: 10.9 MB (10928805 bytes)  
+	-	`sha256:99201628f89c97727d6e133045c4f2bc1d026c6681acbde6052817b04d119ac8`  
+		Last Modified: Tue, 03 Dec 2024 23:30:49 GMT  
+		Size: 10.9 MB (10928233 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ba953dc29cfb22181cef31bfd49f497d8a99ba35ecbb75ce403539df56aa5c6`  
-		Last Modified: Tue, 03 Dec 2024 00:25:13 GMT  
-		Size: 88.8 MB (88785952 bytes)  
+	-	`sha256:50949a0dde7af654c788956d1802fd20bc8be75edd92cb2972d633f889a3b005`  
+		Last Modified: Tue, 03 Dec 2024 23:30:51 GMT  
+		Size: 88.8 MB (88785970 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d5304c0f64de8ae35817ef9aaad886ef4a1351cafc9fd47de8b6165ad6d9e956`  
-		Last Modified: Tue, 03 Dec 2024 00:25:11 GMT  
-		Size: 548.0 B  
+	-	`sha256:1b30ea9698aaea37b1d876465b0a5eeff543d4ccdae849884de8f5cc6e31a06d`  
+		Last Modified: Tue, 03 Dec 2024 23:30:50 GMT  
+		Size: 547.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:5-alpine` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:1eda5bf89c5e5caa3fa803e39f6b88e382850e02a260686fd08bd77f139ad6bf
+$ docker pull ghost@sha256:2280bc321127b9fc5aa75af6bb26263e52475dd8f7a311a7221593a83dc2626f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **3.3 MB (3347096 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9442f64e0eb694c3c30449f42f7c32f63297350c2ef58c54f9f6cb6ce70b04d5`
+-	Image ID: `sha256:30533dc5c42ec8e6e06fa3820c5ee1af3f35ba1c1e628cbcdc9ee4643bf65a9f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c786e2d87615b2dc92551739f8593bce7a530578ba37a70e309cb32aaa807a19`  
-		Last Modified: Tue, 03 Dec 2024 00:25:10 GMT  
+	-	`sha256:81cfd6b0ab99dcc1b441afed9d7dc32abaf9edb07d9de40e35cbbe38419ad2b5`  
+		Last Modified: Tue, 03 Dec 2024 23:30:49 GMT  
 		Size: 3.3 MB (3314850 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fb0dd86ca0d87b1815bead47ec7a4f3d828e092b857cd173559e06578b617d4d`  
-		Last Modified: Tue, 03 Dec 2024 00:25:10 GMT  
+	-	`sha256:698832f6307aa172b24be26ad4cef6fc368d5809fa4988b573c5955ec36630db`  
+		Last Modified: Tue, 03 Dec 2024 23:30:49 GMT  
 		Size: 32.2 KB (32246 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `ghost:5-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull ghost@sha256:82e7f3900c9e52e21cd2eb614e5a0061c49d2b1b2bafb9db8e8faf1b239650f4
+$ docker pull ghost@sha256:4547fcee9515268407ed742c3e4ff1de031667ecad3ae5395ad819c6d7c07849
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **153.0 MB (153034248 bytes)**  
+-	Total Size: **153.0 MB (153033177 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a67c596dd3968228ab1e1c1730323b1e6ce4a5fa7bbff2477f9e163a00f135bb`
+-	Image ID: `sha256:a04f3886430f89139363a6eaaf3d5ff8a41e9d108fef36242770e26693b5e12b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","current\/index.js"]`
 
@@ -185,39 +185,39 @@ COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
 ENTRYPOINT ["docker-entrypoint.sh"]
 # Fri, 15 Nov 2024 23:05:18 GMT
 CMD ["node"]
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 RUN apk add --no-cache 		bash # buildkit
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 ENV GOSU_VERSION=1.17
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 RUN set -eux; 		apk add --no-cache --virtual .gosu-deps 		ca-certificates 		dpkg 		gnupg 	; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apk del --no-network .gosu-deps; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 RUN set -eux; ln -svf gosu /usr/local/bin/su-exec; su-exec nobody true # backwards compatibility (TODO remove in Ghost 6+) # buildkit
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 ENV NODE_ENV=production
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 ENV GHOST_CLI_VERSION=1.26.1
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 RUN set -eux; 	npm install -g "ghost-cli@$GHOST_CLI_VERSION"; 	npm cache clean --force # buildkit
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 ENV GHOST_INSTALL=/var/lib/ghost
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 ENV GHOST_CONTENT=/var/lib/ghost/content
-# Fri, 29 Nov 2024 15:19:12 GMT
-ENV GHOST_VERSION=5.101.6
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
+ENV GHOST_VERSION=5.103.0
+# Tue, 03 Dec 2024 19:11:22 GMT
 RUN set -eux; 	mkdir -p "$GHOST_INSTALL"; 	chown node:node "$GHOST_INSTALL"; 		apkDel=; 		installCmd='gosu node ghost install "$GHOST_VERSION" --db mysql --dbhost mysql --no-prompt --no-stack --no-setup --dir "$GHOST_INSTALL"'; 	if ! eval "$installCmd"; then 		virtual='.build-deps-ghost'; 		apkDel="$apkDel $virtual"; 		apk add --no-cache --virtual "$virtual" g++ linux-headers make python3; 		eval "$installCmd"; 	fi; 		cd "$GHOST_INSTALL"; 	gosu node ghost config --no-prompt --ip '::' --port 2368 --url 'http://localhost:2368'; 	gosu node ghost config paths.contentPath "$GHOST_CONTENT"; 		gosu node ln -s config.production.json "$GHOST_INSTALL/config.development.json"; 	readlink -f "$GHOST_INSTALL/config.development.json"; 		mv "$GHOST_CONTENT" "$GHOST_INSTALL/content.orig"; 	mkdir -p "$GHOST_CONTENT"; 	chown node:node "$GHOST_CONTENT"; 	chmod 1777 "$GHOST_CONTENT"; 		cd "$GHOST_INSTALL/current"; 	packages="$(node -p ' 		var ghost = require("./package.json"); 		var transform = require("./node_modules/@tryghost/image-transform/package.json"); 		[ 			"sharp@" + transform.optionalDependencies["sharp"], 			"sqlite3@" + ghost.optionalDependencies["sqlite3"], 		].join(" ") 	')"; 	if echo "$packages" | grep 'undefined'; then exit 1; fi; 	for package in $packages; do 		installCmd='gosu node yarn add "$package" --force'; 		if ! eval "$installCmd"; then 			virtualPackages='g++ make python3'; 			case "$package" in 				sharp@*) echo >&2 "sorry: libvips 8.12.1 in Alpine 3.15 is not new enough (8.12.2+) for sharp 0.30 😞"; continue ;; 			esac; 			virtual=".build-deps-${package%%@*}"; 			apkDel="$apkDel $virtual"; 			apk add --no-cache --virtual "$virtual" $virtualPackages; 						eval "$installCmd --build-from-source"; 		fi; 	done; 		if [ -n "$apkDel" ]; then 		apk del --no-network $apkDel; 	fi; 		gosu node yarn cache clean; 	gosu node npm cache clean --force; 	npm cache clean --force; 	rm -rv /tmp/yarn* /tmp/v8* # buildkit
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 WORKDIR /var/lib/ghost
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 VOLUME [/var/lib/ghost/content]
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 COPY docker-entrypoint.sh /usr/local/bin # buildkit
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 EXPOSE map[2368/tcp:{}]
-# Fri, 29 Nov 2024 15:19:12 GMT
+# Tue, 03 Dec 2024 19:11:22 GMT
 CMD ["node" "current/index.js"]
 ```
 
@@ -254,36 +254,36 @@ CMD ["node" "current/index.js"]
 		Last Modified: Mon, 18 Nov 2024 20:25:31 GMT  
 		Size: 10.9 MB (10896985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0ac1b302127104f083b59a9c8638846029051d4a2a3139e6b87ec79c88adcb8`  
-		Last Modified: Tue, 03 Dec 2024 00:35:23 GMT  
-		Size: 97.2 MB (97227474 bytes)  
+	-	`sha256:a75f86f3cb0156175c657c8a9a6c1ce5044e654d12776ee59c319926e923fdb7`  
+		Last Modified: Tue, 03 Dec 2024 23:42:57 GMT  
+		Size: 97.2 MB (97226403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0997c4496298afaf2580fede26b7fde227ca247268a5457bb2f22e0a8e014f76`  
-		Last Modified: Tue, 03 Dec 2024 00:35:20 GMT  
+	-	`sha256:bfc51c5d7d10c25be519f3c7fd12710ff9111b6d2097d5996fae4a3ea97b7869`  
+		Last Modified: Tue, 03 Dec 2024 23:42:54 GMT  
 		Size: 544.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `ghost:5-alpine` - unknown; unknown
 
 ```console
-$ docker pull ghost@sha256:45d92480cd9fc9a7c558e3d4572ff1172bb5e209fbe7a70d7ea2cb8c49e2d450
+$ docker pull ghost@sha256:92b5986a5ab52368825ffc247343463b1dc0babc1ceeff4d106036b00744511b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **32.2 KB (32159 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4dbad01246d96dec8e59123382065304c795a0726ac3c9a1e74aac106365199d`
+-	Image ID: `sha256:649cdb5859e843855a0fae0f0fd0dbe82d87fd06d75a6e91d0e5264e10f81802`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:79ed46abdc318cb827e68637f789cdaecec11910c6d80a2d92728f0cdcbf8204`  
-		Last Modified: Tue, 03 Dec 2024 00:35:20 GMT  
+	-	`sha256:1bfe74352a859d0e8e5e5bb65fd396b4c9360b8307ceee00cb88e628d49ca175`  
+		Last Modified: Tue, 03 Dec 2024 23:42:53 GMT  
 		Size: 32.2 KB (32159 bytes)  
 		MIME: application/vnd.in-toto+json
 
