@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:752afd3fa76e9fd0de2dc9f6f964ef579e1db7f3f4c69cbd18f51251f4b066cc`
+- Image ID: `sha256:06579794b01625e7c4aace3f25a228aefc82a42747218dcd1011c71d51c9ab55`
 - Created: `2024-10-03T17:49:34Z`
-- Virtual Size: ~ 592.09 Mb  
+- Virtual Size: ~ 592.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -2585,14 +2585,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python3-defaults/3.9.2-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python3-defaults/3.9.2-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python3.9=3.9.2-1`
+### `dpkg` source package: `python3.9=3.9.2-1+deb11u2`
 
 Binary Packages:
 
-- `libpython3.9-minimal:amd64=3.9.2-1`
-- `libpython3.9-stdlib:amd64=3.9.2-1`
-- `python3.9=3.9.2-1`
-- `python3.9-minimal=3.9.2-1`
+- `libpython3.9-minimal:amd64=3.9.2-1+deb11u2`
+- `libpython3.9-stdlib:amd64=3.9.2-1+deb11u2`
+- `python3.9=3.9.2-1+deb11u2`
+- `python3.9-minimal=3.9.2-1+deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.9-minimal/copyright`, `/usr/share/doc/libpython3.9-stdlib/copyright`, `/usr/share/doc/python3.9/copyright`, `/usr/share/doc/python3.9-minimal/copyright`)
 
@@ -2617,17 +2617,17 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.9-minimal/copyright`, `/usr/s
 Source:
 
 ```console
-$ apt-get source -qq --print-uris python3.9=3.9.2-1
-'http://deb.debian.org/debian/pool/main/p/python3.9/python3.9_3.9.2-1.dsc' python3.9_3.9.2-1.dsc 3493 SHA256:63bc63b864067e7f993be8bc9bf2a08363fde05895bea86961fc5d781e42b68b
-'http://deb.debian.org/debian/pool/main/p/python3.9/python3.9_3.9.2.orig.tar.xz' python3.9_3.9.2.orig.tar.xz 18889164 SHA256:3c2034c54f811448f516668dce09d24008a0716c3a794dd8639b5388cbde247d
-'http://deb.debian.org/debian/pool/main/p/python3.9/python3.9_3.9.2-1.debian.tar.xz' python3.9_3.9.2-1.debian.tar.xz 211484 SHA256:b8b9e1710ca5dc5b0f0d9734494024ea11f560e36c34eb9191ccb0605798a490
+$ apt-get source -qq --print-uris python3.9=3.9.2-1+deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2-1%2bdeb11u2.dsc' python3.9_3.9.2-1+deb11u2.dsc 3500 SHA256:23ea92123f616a54ef5cafe0e7899cb3eac6f58af1858ea11fc52e7f7a8dc380
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2.orig.tar.xz' python3.9_3.9.2.orig.tar.xz 18889164 SHA256:3c2034c54f811448f516668dce09d24008a0716c3a794dd8639b5388cbde247d
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2-1%2bdeb11u2.debian.tar.xz' python3.9_3.9.2-1+deb11u2.debian.tar.xz 266268 SHA256:9fe6bded4dd0200c4e15d386354e8486f31f19d5356458cb05d8899e4226f96a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/python3.9/3.9.2-1/ (for browsing the source)
-- https://sources.debian.net/src/python3.9/3.9.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.9/3.9.2-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/python3.9/3.9.2-1+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/python3.9/3.9.2-1+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python3.9/3.9.2-1+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.1-1`
 
@@ -2874,11 +2874,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.34+dfsg-1+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.34+dfsg-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2024a-0+deb11u1`
+### `dpkg` source package: `tzdata=2024b-0+deb11u1`
 
 Binary Packages:
 
-- `tzdata=2024a-0+deb11u1`
+- `tzdata=2024b-0+deb11u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2887,18 +2887,18 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2024a-0+deb11u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a-0%2bdeb11u1.dsc' tzdata_2024a-0+deb11u1.dsc 2269 SHA256:63dcd00127b57f0fbb804f234430bac966be622b774d45f69eab21a35e596025
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA256:0d0434459acbd2059a7a8da1f3304a84a86591f6ed69c6248fffa502b6edffe3
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA256:f64725f9f65419e7b009e3b95b75ea9516382d0be64aef63d78654d9c569ed0d
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024a-0%2bdeb11u1.debian.tar.xz' tzdata_2024a-0+deb11u1.debian.tar.xz 106548 SHA256:0455dfbbee01c416518d73de11d14835afebd1ca32cfe6cea7b3ed74f0f20afc
+$ apt-get source -qq --print-uris tzdata=2024b-0+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2024b-0%2bdeb11u1.dsc' tzdata_2024b-0+deb11u1.dsc 2269 SHA256:1d43d2b7d5770dc7211971832b53bdfad71cdc775c03fcbaff4fe537b35caf1e
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2024b.orig.tar.gz' tzdata_2024b.orig.tar.gz 459393 SHA256:70e754db126a8d0db3d16d6b4cb5f7ec1e04d5f261255e4558a67fe92d39e550
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2024b.orig.tar.gz.asc' tzdata_2024b.orig.tar.gz.asc 833 SHA256:5bc86ae1ee1f600eefefd5377faf5519d4863c960efb625286638d077178d883
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2024b-0%2bdeb11u1.debian.tar.xz' tzdata_2024b-0+deb11u1.debian.tar.xz 108500 SHA256:e7626545ca04daba17d5dfce0d6f013d7aaece475d8c73715ec063a5ded330e0
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2024a-0+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2024a-0+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2024a-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2024b-0+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2024b-0+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2024b-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.36.1-8+deb11u2`
 
