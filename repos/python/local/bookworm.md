@@ -1,9 +1,9 @@
-# `python:3.13.0-bookworm`
+# `python:3.13.1-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:058afcc560957fbdc04c93e41e22a38b422c2a270c5ac3904148a766a0d33870`
-- Created: `2024-10-18T23:23:40Z`
+- Image ID: `sha256:3ca4060004b1230bba8efca6a76283a7d408632856207ebeee6c96d93fb5639c`
+- Created: `2024-12-04T02:30:19Z`
 - Virtual Size: ~ 1.02 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,8 +11,8 @@
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
-  - `PYTHON_VERSION=3.13.0`
-  - `PYTHON_SHA256=086de5882e3cb310d4dca48457522e2e48018ecd43da9cdf827f6a0759efb07d`
+  - `PYTHON_VERSION=3.13.1`
+  - `PYTHON_SHA256=9cf9427bee9e2242e3877dd0f6b641c1853ca461f39d6503ce260a59c80bf0d9`
 
 ## `dpkg` (`.deb`-based packages)
 
