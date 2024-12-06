@@ -81,19 +81,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.9.14
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.14.dsc' apt_2.9.14.dsc 3081 SHA256:09c1290a4d7eb544d06979e8f6eea925225c102a938653de0a0c7cc07d7b31f8
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.14.tar.xz' apt_2.9.14.tar.xz 2389672 SHA256:c57b1f65854ee4189847157b5d294164ac7cd73cbfd9a5825d5d9ab820762911
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.9.14/
 
-- https://sources.debian.net/src/apt/2.9.14/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.9.14/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.9.14/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-2`
 
@@ -738,20 +732,13 @@ Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gmp=2:6.3.0+dfsg-2
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.3.0%2bdfsg-2.dsc' gmp_6.3.0+dfsg-2.dsc 2251 SHA256:31bf88a2899f7a6eb2dc0db438ba2b27f87562dfe73815a3bbc8b65675ba1a51
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.3.0%2bdfsg.orig.tar.xz' gmp_6.3.0+dfsg.orig.tar.xz 1870556 SHA256:bd2966e6d277f79328e894a5a9f3ba3fbf2ed2be81def5f48623e30c23fb1572
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.3.0%2bdfsg-2.debian.tar.xz' gmp_6.3.0+dfsg-2.debian.tar.xz 19156 SHA256:07fbc1f67c1c076575f8196f3b5a2d2be0268be10940ca59293d7f1669365f4e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gmp/2:6.3.0+dfsg-2/
 
-- https://sources.debian.net/src/gmp/2:6.3.0+dfsg-2/ (for browsing the source)
-- https://sources.debian.net/src/gmp/2:6.3.0+dfsg-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gmp/2:6.3.0+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnupg2=2.2.45-2`
 
@@ -2189,21 +2176,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2024b-3
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b-3.dsc' tzdata_2024b-3.dsc 2429 SHA256:a2eac3f85bc5a4fd8db87807e042c2669ced5c1080eafe098807f146a350ea26
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz' tzdata_2024b.orig.tar.gz 459393 SHA256:70e754db126a8d0db3d16d6b4cb5f7ec1e04d5f261255e4558a67fe92d39e550
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz.asc' tzdata_2024b.orig.tar.gz.asc 833 SHA256:5bc86ae1ee1f600eefefd5377faf5519d4863c960efb625286638d077178d883
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b-3.debian.tar.xz' tzdata_2024b-3.debian.tar.xz 124296 SHA256:23316f63947d44c95dfdcc90394943d9c398075314203e6f13ea4fcf08aa5e11
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2024b-3/
 
-- https://sources.debian.net/src/tzdata/2024b-3/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2024b-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2024b-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `usrmerge=39`
 
