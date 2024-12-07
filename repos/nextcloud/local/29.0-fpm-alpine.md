@@ -1,10 +1,10 @@
-# `nextcloud:29.0.9-fpm-alpine`
+# `nextcloud:29.0.10-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3d910b09e09dd2968defb35b713994b5ab8e27ffa2ba24a783949b00521e1099`
-- Created: `2024-11-07T23:24:17Z`
-- Virtual Size: ~ 888.95 Mb  
+- Image ID: `sha256:f1545b811d2d052a8a8e36703f75cb6560212bf95c3558eee81f15dac589db1c`
+- Created: `2024-12-05T20:29:40Z`
+- Virtual Size: ~ 918.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=54747400cb4874288ad41a785e6147e2ff546cceeeb55c23c00c771ac125c6ef`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
-  - `NEXTCLOUD_VERSION=29.0.9`
+  - `NEXTCLOUD_VERSION=29.0.10`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1186,16 +1186,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-16.5-r0 description:
+libpq-16.6-r0 description:
 PostgreSQL client library
 
-libpq-16.5-r0 webpage:
+libpq-16.6-r0 webpage:
 https://www.postgresql.org/
 
-libpq-16.5-r0 installed size:
+libpq-16.6-r0 installed size:
 328 KiB
 
-libpq-16.5-r0 license:
+libpq-16.6-r0 license:
 PostgreSQL
 
 ```
