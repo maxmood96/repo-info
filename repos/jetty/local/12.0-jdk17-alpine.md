@@ -1,10 +1,10 @@
-# `jetty:12.0.14-jdk17-alpine`
+# `jetty:12.0.15-jdk17-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:35dfeaf0858595f9b3a9cb9f1f44571a9cda9cb2ed9242cc9fdffbeb79a66b40`
-- Created: `2024-10-02T21:05:31Z`
-- Virtual Size: ~ 377.03 Mb  
+- Image ID: `sha256:9ebd5b912a8ffe58575824684097ebac22863b88eb3becc7a5ac53d0a4a24ecd`
+- Created: `2024-12-04T01:30:10Z`
+- Virtual Size: ~ 377.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -16,11 +16,11 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.13+11`
-  - `JETTY_VERSION=12.0.14`
+  - `JETTY_VERSION=12.0.15`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
   - `TMPDIR=/tmp/jetty`
-  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.14/jetty-home-12.0.14.tar.gz`
+  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/12.0.15/jetty-home-12.0.15.tar.gz`
   - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3`
 
 ## `apk` (`.apk`-based packages)
