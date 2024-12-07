@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dab4742eee4eda408a3a455c8aec29aa21f37394ac4442af4963327b404e36cc`
+- Image ID: `sha256:d48b9e29fc4be8c8fd30aedb55a5444fcc9b3443cd9868f0e43c975a1aea05b2`
 - Created: `2024-09-20T21:15:09Z`
-- Virtual Size: ~ 250.73 Mb  
+- Virtual Size: ~ 250.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -590,11 +590,11 @@ $ apt-get source -qq --print-uris gnutls28=3.7.3-4ubuntu1.5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.5.debian.tar.xz' gnutls28_3.7.3-4ubuntu1.5.debian.tar.xz 88576 SHA512:aab7435e49efb1d7b8e4dd84c9fec9a9e68d56b6b78e95de9accfc7d3ec390ed397014374e22a86d0a193f01e8eba5bf46c85ef37c1794b51c673f3582fe2e35
 ```
 
-### `dpkg` source package: `gosu=1.14-1`
+### `dpkg` source package: `gosu=1.14-1ubuntu0.1`
 
 Binary Packages:
 
-- `gosu=1.14-1`
+- `gosu=1.14-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/gosu/copyright`)
 
@@ -605,10 +605,10 @@ Licenses: (parsed from: `/usr/share/doc/gosu/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gosu=1.14-1
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.14-1.dsc' gosu_1.14-1.dsc 2021 SHA512:a0ab08dd928b4ff4239862ab728284e3549fa0b5dc30ed6c68269d606165deb1a64a4472f96277cf87ab33f67e17633b5deb9195f9d313e5878784267bff512e
+$ apt-get source -qq --print-uris gosu=1.14-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.14-1ubuntu0.1.dsc' gosu_1.14-1ubuntu0.1.dsc 2148 SHA512:d249396e83d49a7b219abc9fe1f4ca6e3b25c7d210cccd4da167e39550b833046ba190b6a934546382ce41a63f4c988c8df99bc0c4e7d5fcddb038546e15b688
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.14.orig.tar.gz' gosu_1.14.orig.tar.gz 16791 SHA512:258bc33bf7150f4520e8b5cd0497ccfe3ee83d39c866565ec5e0cfe3ccd28ef1a5694075b301936c94a45cd44621c44e28c3e0fcd0acd465a3a4fe5cff85adf2
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.14-1.debian.tar.xz' gosu_1.14-1.debian.tar.xz 3084 SHA512:bde4bc8b376cd0b663cc92ac3b54ed67848f590e3f2a41b73fdd2095ccc4d635d48ee45e0fbe7ae6667485f5f013525f65b185a9775e7dbea435bded3cb39d9f
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.14-1ubuntu0.1.debian.tar.xz' gosu_1.14-1ubuntu0.1.debian.tar.xz 3224 SHA512:71d9050bf5487d329666977f64096542e7aa5e3adfc17499815b0b11ebd2afa597b6ee3a1f6c04e66bfb8f0d6968d96eeacea8a6dde9ed6f4d9c14c7fcd2b9d9
 ```
 
 ### `dpkg` source package: `grep=3.7-1build1`
@@ -1461,14 +1461,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.1.tar.gz' python3-defaults_3.10.6-1~22.04.1.tar.gz 145962 SHA512:c509a2a887e4b758fbfcb6173ff046a6f73bdfdde3bd89f77102a4d99c7219d8e1805b41541c6cf658fe9dd44da188e6af450d87236d863d29f06147fea26ea1
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.6`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.7`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.6`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.6`
-- `python3.10=3.10.12-1~22.04.6`
-- `python3.10-minimal=3.10.12-1~22.04.6`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.7`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.7`
+- `python3.10=3.10.12-1~22.04.7`
+- `python3.10-minimal=3.10.12-1~22.04.7`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -1490,9 +1490,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.7.dsc' python3.10_3.10.12-1~22.04.7.dsc 3674 SHA512:0db6a66ee8b37d71299d0f2c92e13fee807ccaf864dc831d999fb3127729b515bd8b40406fb6dd35c2cb51c2139a2cd7c4d28480e172234a9a2b362d14313c6c
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.7.debian.tar.xz' python3.10_3.10.12-1~22.04.7.debian.tar.xz 245668 SHA512:caa1f59358b0a1d737723be6a67e2a5a72ffc25253bf01da17f5626f791c7be07870d1fcc3cb1b2ff12c2b8f6dc270acc9d84c117576e54c7005ef242b330301
+```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
