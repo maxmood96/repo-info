@@ -174,10 +174,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris bash=5.2.32-1
-'http://http.debian.net/debian/pool/main/b/bash/bash_5.2.32-1.dsc' bash_5.2.32-1.dsc 2294 SHA256:7d010193c5f7304111991cc8212eb8fbf23599338323e14dd9c43c01f07f42a6
-'http://http.debian.net/debian/pool/main/b/bash/bash_5.2.32.orig.tar.xz' bash_5.2.32.orig.tar.xz 5598292 SHA256:b683d2674e316b7e49091f2f80901c5ea7455b6eab2431c73936fce0b4846cd2
-'http://http.debian.net/debian/pool/main/b/bash/bash_5.2.32-1.debian.tar.xz' bash_5.2.32-1.debian.tar.xz 87896 SHA256:1105321d23bc5b93ee9b57007c65ff789443cad5504e509f49e16db815b4fc62
+'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2.32-1.dsc' bash_5.2.32-1.dsc 2294 SHA256:7d010193c5f7304111991cc8212eb8fbf23599338323e14dd9c43c01f07f42a6
+'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2.32.orig.tar.xz' bash_5.2.32.orig.tar.xz 5598292 SHA256:b683d2674e316b7e49091f2f80901c5ea7455b6eab2431c73936fce0b4846cd2
+'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2.32-1.debian.tar.xz' bash_5.2.32-1.debian.tar.xz 87896 SHA256:1105321d23bc5b93ee9b57007c65ff789443cad5504e509f49e16db815b4fc62
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/bash/5.2.32-1/ (for browsing the source)
+- https://sources.debian.net/src/bash/5.2.32-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/bash/5.2.32-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `binutils=2.43.50.20241126-3`
 
@@ -198,14 +204,13 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.43.50.20241126-3
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.43.50.20241126-3.dsc' binutils_2.43.50.20241126-3.dsc 11358 SHA256:4bb5d7049cffae4f1d559bf7b14bc2971e2768a7a7fb9ee0e1aaadfd804f8c32
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.43.50.20241126.orig.tar.xz' binutils_2.43.50.20241126.orig.tar.xz 24105580 SHA256:d0547cdc27d6e10ca9a8628df9939bc718cf1ed0cc6e14ed7a951a05456b4628
-'http://http.debian.net/debian/pool/main/b/binutils/binutils_2.43.50.20241126-3.debian.tar.xz' binutils_2.43.50.20241126-3.debian.tar.xz 103328 SHA256:739e4dca461a65489bd7aadd87c9848ec2f2be702f555698a224bbe13e77a623
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/binutils/2.43.50.20241126-3/
+
 
 ### `dpkg` source package: `boot=1.3-31-1`
 
@@ -1056,20 +1061,13 @@ Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gmp=2:6.3.0+dfsg-2
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.3.0%2bdfsg-2.dsc' gmp_6.3.0+dfsg-2.dsc 2251 SHA256:31bf88a2899f7a6eb2dc0db438ba2b27f87562dfe73815a3bbc8b65675ba1a51
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.3.0%2bdfsg.orig.tar.xz' gmp_6.3.0+dfsg.orig.tar.xz 1870556 SHA256:bd2966e6d277f79328e894a5a9f3ba3fbf2ed2be81def5f48623e30c23fb1572
-'http://deb.debian.org/debian/pool/main/g/gmp/gmp_6.3.0%2bdfsg-2.debian.tar.xz' gmp_6.3.0+dfsg-2.debian.tar.xz 19156 SHA256:07fbc1f67c1c076575f8196f3b5a2d2be0268be10940ca59293d7f1669365f4e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gmp/2:6.3.0+dfsg-2/
 
-- https://sources.debian.net/src/gmp/2:6.3.0+dfsg-2/ (for browsing the source)
-- https://sources.debian.net/src/gmp/2:6.3.0+dfsg-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gmp/2:6.3.0+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnupg2=2.2.45-2`
 
@@ -2109,11 +2107,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libunistring=1.2-1
-'http://http.debian.net/debian/pool/main/libu/libunistring/libunistring_1.2-1.dsc' libunistring_1.2-1.dsc 2181 SHA256:5d951adce58920ab7e598f04b903f402382557ad102576d01184553437467dd6
-'http://http.debian.net/debian/pool/main/libu/libunistring/libunistring_1.2.orig.tar.xz' libunistring_1.2.orig.tar.xz 2502196 SHA256:632bd65ed74a881ca8a0309a1001c428bd1cbd5cd7ddbf8cedcd2e65f4dcdc44
-'http://http.debian.net/debian/pool/main/libu/libunistring/libunistring_1.2.orig.tar.xz.asc' libunistring_1.2.orig.tar.xz.asc 833 SHA256:91da3f033231a635dae9e0161c834b74e890e1eba19d4e5972b26c5c312ac2cb
-'http://http.debian.net/debian/pool/main/libu/libunistring/libunistring_1.2-1.debian.tar.xz' libunistring_1.2-1.debian.tar.xz 13656 SHA256:0605dbb77c072393abaa9e6ec8507d57d91f62aee4d7a7f968f295e4e9ab3bcf
+'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.2-1.dsc' libunistring_1.2-1.dsc 2181 SHA256:5d951adce58920ab7e598f04b903f402382557ad102576d01184553437467dd6
+'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.2.orig.tar.xz' libunistring_1.2.orig.tar.xz 2502196 SHA256:632bd65ed74a881ca8a0309a1001c428bd1cbd5cd7ddbf8cedcd2e65f4dcdc44
+'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.2.orig.tar.xz.asc' libunistring_1.2.orig.tar.xz.asc 833 SHA256:91da3f033231a635dae9e0161c834b74e890e1eba19d4e5972b26c5c312ac2cb
+'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.2-1.debian.tar.xz' libunistring_1.2-1.debian.tar.xz 13656 SHA256:0605dbb77c072393abaa9e6ec8507d57d91f62aee4d7a7f968f295e4e9ab3bcf
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libunistring/1.2-1/ (for browsing the source)
+- https://sources.debian.net/src/libunistring/1.2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libunistring/1.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libwebp=1.4.0-0.1`
 
@@ -2805,20 +2809,13 @@ Licenses: (parsed from: `/usr/share/doc/libpango-1.0-0/copyright`, `/usr/share/d
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.54.0+ds-3
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.54.0%2bds-3.dsc' pango1.0_1.54.0+ds-3.dsc 3638 SHA256:eccf7bfc77aae3c07424d1782cc2027844ab616c26155b846cbb92af5e01e588
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.54.0%2bds.orig.tar.xz' pango1.0_1.54.0+ds.orig.tar.xz 1745280 SHA256:2275f1160e492b442a7dfbaa10cf8aeaea83cea1ff0ee1eed9d88fa1e21aebe8
-'http://deb.debian.org/debian/pool/main/p/pango1.0/pango1.0_1.54.0%2bds-3.debian.tar.xz' pango1.0_1.54.0+ds-3.debian.tar.xz 43816 SHA256:2942e4ce3dab7a602cf1e31e044bc52597fa389a50da96379b48703853da86c1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pango1.0/1.54.0+ds-3/
 
-- https://sources.debian.net/src/pango1.0/1.54.0+ds-3/ (for browsing the source)
-- https://sources.debian.net/src/pango1.0/1.54.0+ds-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pango1.0/1.54.0+ds-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `patch=2.7.6-7`
 
@@ -3268,10 +3265,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris shadow=1:4.16.0-5
-'http://http.debian.net/debian/pool/main/s/shadow/shadow_4.16.0-5.dsc' shadow_4.16.0-5.dsc 2614 SHA256:3ec0c2fc709e150750346042781cb9b522a0d8cf2fc2cb1a0068e37a6db80f87
-'http://http.debian.net/debian/pool/main/s/shadow/shadow_4.16.0.orig.tar.xz' shadow_4.16.0.orig.tar.xz 2053720 SHA256:a0255570541a356c3718966987c8be0658691fda804826fda7576c8e69e0cfda
-'http://http.debian.net/debian/pool/main/s/shadow/shadow_4.16.0-5.debian.tar.xz' shadow_4.16.0-5.debian.tar.xz 170244 SHA256:a9e44af0350887db6ba15763ee283caad042b678ab5bdc7e58ac19becb24202a
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0-5.dsc' shadow_4.16.0-5.dsc 2614 SHA256:3ec0c2fc709e150750346042781cb9b522a0d8cf2fc2cb1a0068e37a6db80f87
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0.orig.tar.xz' shadow_4.16.0.orig.tar.xz 2053720 SHA256:a0255570541a356c3718966987c8be0658691fda804826fda7576c8e69e0cfda
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0-5.debian.tar.xz' shadow_4.16.0-5.debian.tar.xz 170244 SHA256:a9e44af0350887db6ba15763ee283caad042b678ab5bdc7e58ac19becb24202a
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/shadow/1:4.16.0-5/ (for browsing the source)
+- https://sources.debian.net/src/shadow/1:4.16.0-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/shadow/1:4.16.0-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `survival=3.7-0-1`
 
@@ -3460,21 +3463,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2024b-3
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b-3.dsc' tzdata_2024b-3.dsc 2429 SHA256:a2eac3f85bc5a4fd8db87807e042c2669ced5c1080eafe098807f146a350ea26
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz' tzdata_2024b.orig.tar.gz 459393 SHA256:70e754db126a8d0db3d16d6b4cb5f7ec1e04d5f261255e4558a67fe92d39e550
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz.asc' tzdata_2024b.orig.tar.gz.asc 833 SHA256:5bc86ae1ee1f600eefefd5377faf5519d4863c960efb625286638d077178d883
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b-3.debian.tar.xz' tzdata_2024b-3.debian.tar.xz 124296 SHA256:23316f63947d44c95dfdcc90394943d9c398075314203e6f13ea4fcf08aa5e11
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2024b-3/
 
-- https://sources.debian.net/src/tzdata/2024b-3/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2024b-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2024b-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0043+nmu1`
 
@@ -3490,9 +3485,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ucf=3.0043+nmu1
-'http://http.debian.net/debian/pool/main/u/ucf/ucf_3.0043%2bnmu1.dsc' ucf_3.0043+nmu1.dsc 1567 SHA256:5ef70fa7a58cd3f162932661453a1e9d21d749b47a1aa84198f7c4cd9eac20ee
-'http://http.debian.net/debian/pool/main/u/ucf/ucf_3.0043%2bnmu1.tar.xz' ucf_3.0043+nmu1.tar.xz 70916 SHA256:a07143046236cb082517e346362306cb3fe4d3634cad1add40c905b0e0ecf58c
+'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0043%2bnmu1.dsc' ucf_3.0043+nmu1.dsc 1567 SHA256:5ef70fa7a58cd3f162932661453a1e9d21d749b47a1aa84198f7c4cd9eac20ee
+'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0043%2bnmu1.tar.xz' ucf_3.0043+nmu1.tar.xz 70916 SHA256:a07143046236cb082517e346362306cb3fe4d3634cad1add40c905b0e0ecf58c
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/ucf/3.0043+nmu1/ (for browsing the source)
+- https://sources.debian.net/src/ucf/3.0043+nmu1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ucf/3.0043+nmu1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unzip=6.0-28`
 
@@ -3570,10 +3571,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris util-linux=2.40.2-11
-'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.40.2-11.dsc' util-linux_2.40.2-11.dsc 5120 SHA256:28af220ebe42dd7ca20493c778433214c0b7f827369ec6646823f1b9146d5f01
-'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.40.2.orig.tar.xz' util-linux_2.40.2.orig.tar.xz 8854820 SHA256:d78b37a66f5922d70edf3bdfb01a6b33d34ed3c3cafd6628203b2a2b67c8e8b3
-'http://http.debian.net/debian/pool/main/u/util-linux/util-linux_2.40.2-11.debian.tar.xz' util-linux_2.40.2-11.debian.tar.xz 113512 SHA256:b7be86aac8ffd3e0731fb06fe3d8677bc64075944998ca6bb8e4f794d92b1999
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2-11.dsc' util-linux_2.40.2-11.dsc 5120 SHA256:28af220ebe42dd7ca20493c778433214c0b7f827369ec6646823f1b9146d5f01
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2.orig.tar.xz' util-linux_2.40.2.orig.tar.xz 8854820 SHA256:d78b37a66f5922d70edf3bdfb01a6b33d34ed3c3cafd6628203b2a2b67c8e8b3
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2-11.debian.tar.xz' util-linux_2.40.2-11.debian.tar.xz 113512 SHA256:b7be86aac8ffd3e0731fb06fe3d8677bc64075944998ca6bb8e4f794d92b1999
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/util-linux/2.40.2-11/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.40.2-11/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.40.2-11/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `vim=2:9.1.0861-1`
 
