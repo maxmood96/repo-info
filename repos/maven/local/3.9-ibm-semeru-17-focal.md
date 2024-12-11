@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:69b50866e321528ab3eb57a2a2969df69d80f2a9f5b8c570982a7ecd9bcb5c05`
+- Image ID: `sha256:170aacf277edc791156ce1e7657e6710d4751f22e34dd8fcbb830b08e921c8ef`
 - Created: `2024-08-20T18:12:59Z`
 - Virtual Size: ~ 592.92 Mb  
   (total size of all layers on-disk)
@@ -487,14 +487,9 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.2.9-1ubuntu0.7
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1ubuntu0.7.dsc' expat_2.2.9-1ubuntu0.7.dsc 1930 SHA512:ec51e762e3414d30e4b069b44e80297ef9fc5b1873356be296658ae3afe18cecf35105af5a44be2fe7cb878882c25a0b3cb6fe7dd1feee7ffe397c6c010fb69c
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9.orig.tar.gz' expat_2.2.9.orig.tar.gz 8273174 SHA512:e274fa7f30630450cb3ca681b266d765dbb7f5d00d1275ff9d9b2e2f6e1095893b8af4e3f4172ae6297c7a8a831a0a6becd484fe4bcdca09c37922f630780ef0
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1ubuntu0.7.debian.tar.xz' expat_2.2.9-1ubuntu0.7.debian.tar.xz 28840 SHA512:889eaabbb8fcfceaa3b1ee66c49d49388216bf10a4dc6be51bc2384bcdf1bd1c1bba7fb5b3d0a48192097fdb4275b8e3a01ec981d834398205fc3d5778c285c9
-```
 
 ### `dpkg` source package: `findutils=4.7.0-1ubuntu1`
 
