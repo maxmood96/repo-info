@@ -1,10 +1,10 @@
-# `tomcat:11.0.1-jre21-temurin-jammy`
+# `tomcat:11.0.2-jre21-temurin-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1fa02ac2804cdabf9d00a5c6ab886c7ade5fe57a8d368d26c26c5954e4b3d65b`
-- Created: `2024-11-10T21:03:31Z`
-- Virtual Size: ~ 304.92 Mb  
+- Image ID: `sha256:5989e9046f59287e764da12eddaf1c98d18434af7d9ccfa5b2f1800f72462b7e`
+- Created: `2024-12-09T15:03:32Z`
+- Virtual Size: ~ 304.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -20,8 +20,8 @@
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `GPG_KEYS=48F8E69F6390C9F25CFEDCD268248959359E722B A9C5DF4D22E99998D9875A5110C01C5A2F6059E7`
   - `TOMCAT_MAJOR=11`
-  - `TOMCAT_VERSION=11.0.1`
-  - `TOMCAT_SHA512=dce8800532c9dcb079d456e9ea561ac9b7c854a8c50dfcd78339d077f9db127d86dba339db3fcea16c75039c9201c3446ecd4807efe0d42fcf005d2061cbc090`
+  - `TOMCAT_VERSION=11.0.2`
+  - `TOMCAT_SHA512=635d0b704d47a97050e3de995d372ef361ddb7589efbc53003afd6ac692d8db4a4125ae5dcc01af9e7371e8e598c98982e2a25617179b6ba0a04406299cca544`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -524,14 +524,9 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.4.7-1ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.4.dsc' expat_2.4.7-1ubuntu0.4.dsc 1962 SHA512:e6cdab825e628b38ecb908535f1cec5ac2289c53255e645b57b3269cf5deec21e3d64a802e288b0dda75dad0408c1fa8e64c921e611dcef5553e55f5fe2ddf44
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7.orig.tar.gz' expat_2.4.7.orig.tar.gz 8316374 SHA512:91bc9792c4ba1d0ad835f633d8cfa62130692f48308eea8932ec5e13a01542120561b0f255b4adc58b1adae6f83632cbabf428b5b5c0d2ac6de542478a951232
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.4.debian.tar.xz' expat_2.4.7-1ubuntu0.4.debian.tar.xz 23076 SHA512:64348f4a3a8306c765c0cd3d1de57d484780d081d747889ff590309c8e0c30c229557d504528e29d3b48ad81bf534b7605c38e11da469c69ce48526af9b55078
-```
 
 ### `dpkg` source package: `findutils=4.8.0-1ubuntu3`
 
