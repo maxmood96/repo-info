@@ -788,7 +788,12 @@ $ docker pull couchbase@sha256:d6a3d2e1a5b12207764e6ba8007e41e07ca6c779a070cfd49
 
 ## `couchbase:7.6.4`
 
-**does not exist** (yet?)
+```console
+$ docker pull couchbase@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `couchbase:community`
 
@@ -3254,7 +3259,12 @@ $ docker pull couchbase@sha256:d6a3d2e1a5b12207764e6ba8007e41e07ca6c779a070cfd49
 
 ## `couchbase:enterprise-7.6.4`
 
-**does not exist** (yet?)
+```console
+$ docker pull couchbase@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `couchbase:latest`
 
