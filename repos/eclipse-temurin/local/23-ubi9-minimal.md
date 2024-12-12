@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0c534ab04e1f0a1d537424e06939bf6bacbf7e1e1b94b3b1f38cbc0a99639101`
+- Image ID: `sha256:d648d95e33ed7ac92685e44a10bc2b3ea672a332329c9fc26ded1ce2c179c216`
 - Created: `2024-10-23T15:41:32Z`
-- Virtual Size: ~ 511.77 Mb  
+- Virtual Size: ~ 509.65 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -19,7 +19,7 @@
   - `JAVA_VERSION=jdk-23.0.1+11`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-11-14T14:03:48Z`
+  - `build-date=2024-12-09T18:11:07Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -31,10 +31,10 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
-  - `release=1731593028`
+  - `release=1733767867`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://www.redhat.com`
-  - `vcs-ref=ed8745a7a03752cc96aedcff40c4eb3ee49117c5`
+  - `vcs-ref=fee5a8f3e74ac2340dca04210f5456952058c9f4`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.5`
@@ -1373,11 +1373,16 @@ $ dnf --quiet download --source --url p11-kit-trust-0.25.3-2.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/p11-kit-0.25.3-2.el9.src.rpm
 ```
 
-### `rpm` package: `pam-1.5.1-20.el9.x86_64`
+### `rpm` package: `pam-1.5.1-22.el9_5.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url pam-1.5.1-22.el9_5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pam-1.5.1-22.el9_5.src.rpm
+```
 
 ### `rpm` package: `pcre-8.44-4.el9.x86_64`
 
