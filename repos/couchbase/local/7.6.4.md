@@ -1,10 +1,10 @@
-# `couchbase:7.6.3`
+# `couchbase:7.6.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ba3a46a56717114c7d9a9e75ba5538403252161f66fe571bae33d58c09c49fd9`
-- Created: `2024-08-30T20:05:06Z`
-- Virtual Size: ~ 1.74 Gb  
+- Image ID: `sha256:e9ce6132cdb3fa96f599f385750800b1b5373663d2fee48a3c63a8d979f66cc1`
+- Created: `2024-12-11T01:31:34Z`
+- Virtual Size: ~ 1.73 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -303,11 +303,11 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.2.debian.tar.xz' coreutils_8.32-4.1ubuntu1.2.debian.tar.xz 44868 SHA512:7718e917f8f2c5c5574e73a079ea8fd3b32bc898f2e12168dc3711dfdd896e4727283011050b80f65e60994fca49da031d70901d453612132764dca7dec99543
 ```
 
-### `dpkg` source package: `couchbase-server=7.6.3-4200-1`
+### `dpkg` source package: `couchbase-server=7.6.4-5146-1`
 
 Binary Packages:
 
-- `couchbase-server=7.6.3-4200-1`
+- `couchbase-server=7.6.4-5146-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -546,11 +546,11 @@ $ apt-get source -qq --print-uris e2fsprogs=1.46.5-2ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5-2ubuntu1.2.debian.tar.xz' e2fsprogs_1.46.5-2ubuntu1.2.debian.tar.xz 86604 SHA512:acb7f22a63d9c0e58d626af655cdcb6e6cfcedafdd7edbc6b7b757d1b388ee04c416db98c577a8cdf2259c46ea16a679f9be770374515b21d93bd0af66bd2a1d
 ```
 
-### `dpkg` source package: `expat=2.4.7-1ubuntu0.4`
+### `dpkg` source package: `expat=2.4.7-1ubuntu0.5`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.4.7-1ubuntu0.4`
+- `libexpat1:amd64=2.4.7-1ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
@@ -559,10 +559,10 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris expat=2.4.7-1ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.4.dsc' expat_2.4.7-1ubuntu0.4.dsc 1962 SHA512:e6cdab825e628b38ecb908535f1cec5ac2289c53255e645b57b3269cf5deec21e3d64a802e288b0dda75dad0408c1fa8e64c921e611dcef5553e55f5fe2ddf44
+$ apt-get source -qq --print-uris expat=2.4.7-1ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.5.dsc' expat_2.4.7-1ubuntu0.5.dsc 2141 SHA512:3af5d57b8d1fe10ff3de977c5b59b885e3f261a90a4794d7ec6f862fc2ed05fb5a4ae98e309a575c861638c79836fea43b9334468a260df35bb7e345a230324a
 'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7.orig.tar.gz' expat_2.4.7.orig.tar.gz 8316374 SHA512:91bc9792c4ba1d0ad835f633d8cfa62130692f48308eea8932ec5e13a01542120561b0f255b4adc58b1adae6f83632cbabf428b5b5c0d2ac6de542478a951232
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.4.debian.tar.xz' expat_2.4.7-1ubuntu0.4.debian.tar.xz 23076 SHA512:64348f4a3a8306c765c0cd3d1de57d484780d081d747889ff590309c8e0c30c229557d504528e29d3b48ad81bf534b7605c38e11da469c69ce48526af9b55078
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.5.debian.tar.xz' expat_2.4.7-1ubuntu0.5.debian.tar.xz 24740 SHA512:1f946e4b99b0d6182a9df7c98d27c4cdfb3ccb528fbd70c0019549480a5ff3d649050f2abdba66c51e0f165fd9b2856e248e26a085c386577dba674c49824c74
 ```
 
 ### `dpkg` source package: `findutils=4.8.0-1ubuntu3`
@@ -612,12 +612,12 @@ $ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gcc-12/gcc-12_12.3.0-1ubuntu1%7e22.04.debian.tar.xz' gcc-12_12.3.0-1ubuntu1~22.04.debian.tar.xz 575908 SHA512:d1bf37d9af699430d3b107d0966194b20aef22654337efdb99971b270609785020dd1f04ce6a0f3f3eb0dbad704b46e9d9e5dfa6a497e98c78a867f5bc290038
 ```
 
-### `dpkg` source package: `glib2.0=2.72.4-0ubuntu2.3`
+### `dpkg` source package: `glib2.0=2.72.4-0ubuntu2.4`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.72.4-0ubuntu2.3`
-- `libglib2.0-data=2.72.4-0ubuntu2.3`
+- `libglib2.0-0:amd64=2.72.4-0ubuntu2.4`
+- `libglib2.0-data=2.72.4-0ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-data/copyright`)
 
@@ -625,9 +625,14 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glib2.0=2.72.4-0ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.4.dsc' glib2.0_2.72.4-0ubuntu2.4.dsc 3670 SHA512:24eb93fd0b9f83cd455a4d82995ad77efd5cf73c202e3f5a07e723cf8426bdf7aae62bcf1c1261377680fc2f543c4c532d07e40a3852e8af8388c7275231eda5
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4.orig.tar.xz' glib2.0_2.72.4.orig.tar.xz 4884256 SHA512:b4e2e0985e2184ee9656c4f1b4e15d8d1264f3d23d31349bc43d92e8432cffa48e1685c40517efb08dc5b57b8285acf65f2747deeb50e50d9cacec7160e7edf8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.72.4-0ubuntu2.4.debian.tar.xz' glib2.0_2.72.4-0ubuntu2.4.debian.tar.xz 147340 SHA512:0474a45ecd8eeda5cdeceb566ad41e873bb176b0d9a0efc7a0e14e63ef32d38e32c8ff1f9af21d470f8fc1702f79e555597bed426819b1bb9e1f0f1f2b6ea187
+```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.8`
 
@@ -1946,14 +1951,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.1.tar.gz' python3-defaults_3.10.6-1~22.04.1.tar.gz 145962 SHA512:c509a2a887e4b758fbfcb6173ff046a6f73bdfdde3bd89f77102a4d99c7219d8e1805b41541c6cf658fe9dd44da188e6af450d87236d863d29f06147fea26ea1
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.6`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.7`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.6`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.6`
-- `python3.10=3.10.12-1~22.04.6`
-- `python3.10-minimal=3.10.12-1~22.04.6`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.7`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.7`
+- `python3.10=3.10.12-1~22.04.7`
+- `python3.10-minimal=3.10.12-1~22.04.7`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -1975,9 +1980,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.7.dsc' python3.10_3.10.12-1~22.04.7.dsc 3674 SHA512:0db6a66ee8b37d71299d0f2c92e13fee807ccaf864dc831d999fb3127729b515bd8b40406fb6dd35c2cb51c2139a2cd7c4d28480e172234a9a2b362d14313c6c
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.7.debian.tar.xz' python3.10_3.10.12-1~22.04.7.debian.tar.xz 245668 SHA512:caa1f59358b0a1d737723be6a67e2a5a72ffc25253bf01da17f5626f791c7be07870d1fcc3cb1b2ff12c2b8f6dc270acc9d84c117576e54c7005ef242b330301
+```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
