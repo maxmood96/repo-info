@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:553d52b35771e142d7e28ff8dd2c049039db104935dccaa2ac29554ed71b07c5`
+- Image ID: `sha256:2c25260b82bb19142115292c5c20819d236337732dbe6c9d85401af453b39739`
 - Created: `2024-11-21T21:43:46Z`
-- Virtual Size: ~ 466.19 Mb  
+- Virtual Size: ~ 465.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=11.6.2`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-11-14T14:03:48Z`
+  - `build-date=2024-12-09T18:11:07Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=MariaDB Database for relational SQL`
@@ -41,7 +41,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://www.redhat.com`
-  - `vcs-ref=ed8745a7a03752cc96aedcff40c4eb3ee49117c5`
+  - `vcs-ref=fee5a8f3e74ac2340dca04210f5456952058c9f4`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=11.6.2`
@@ -270,12 +270,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): GPLv2
 
-Source:
-
-```console
-$ dnf --quiet download --source --url epel-release-9-8.el9.noarch
-https://mirrors.iu13.net/epel/9/Everything/source/tree/Packages/e/epel-release-9-8.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
 
@@ -524,7 +519,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-https://mirrors.iu13.net/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+https://us.mirrors.cicku.me/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -1319,11 +1314,16 @@ $ dnf --quiet download --source --url p11-kit-trust-0.25.3-2.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/p11-kit-0.25.3-2.el9.src.rpm
 ```
 
-### `rpm` package: `pam-1.5.1-20.el9.x86_64`
+### `rpm` package: `pam-1.5.1-22.el9_5.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url pam-1.5.1-22.el9_5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pam-1.5.1-22.el9_5.src.rpm
+```
 
 ### `rpm` package: `pcre-8.44-4.el9.x86_64`
 
@@ -2092,7 +2092,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-https://mirrors.iu13.net/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+https://us.mirrors.cicku.me/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2103,7 +2103,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-https://mirrors.iu13.net/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+https://us.mirrors.cicku.me/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
