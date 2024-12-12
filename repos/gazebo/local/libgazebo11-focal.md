@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7475336507cdfa1d0e3034c0eedbe64325b392c41a503de3c235a85ec883c626`
-- Created: `2024-11-28T06:47:41Z`
-- Virtual Size: ~ 1.95 Gb  
+- Image ID: `sha256:5d0a27d0cf973beeeefbf7f38f32193c9cbbfe9e005372687d6a0fbf2e3cbaac`
+- Created: `2024-12-09T12:55:29Z`
+- Virtual Size: ~ 1.96 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/gzserver_entrypoint.sh"]`
