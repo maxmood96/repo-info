@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6741c8cbf0b1ba13c68b9b7d762de7811ac6c52efe9daf5620f8f0439deba878`
-- Created: `2024-11-25T22:19:28Z`
+- Image ID: `sha256:50463282112b0271e86226490f8f265a25803e9027da5110791e968ef330fe1f`
+- Created: `2024-12-10T23:51:26Z`
 - Virtual Size: ~ 208.00 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -532,15 +532,15 @@ $ dnf --quiet download --source --url kpartx-0.4.9-136.0.5.el7_9
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/device-mapper-multipath-0.4.9-136.0.5.el7_9.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.15.1-55.0.5.el7_9.x86_64`
+### `rpm` package: `krb5-libs-1.15.1-55.0.7.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.15.1-55.0.5.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/krb5-1.15.1-55.0.5.el7_9.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.15.1-55.0.7.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/krb5-1.15.1-55.0.7.el7_9.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.2.51-15.el7.x86_64`

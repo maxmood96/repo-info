@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:754a3d0c35dd53a82253c0e204d0457a3ae551f46eed8f6febd8ed3138c510a7`
-- Created: `2024-11-25T22:19:28Z`
+- Image ID: `sha256:05211a081d592eb56daf16b0651eb55b233a65466492b28345804309b45caf21`
+- Created: `2024-12-10T23:51:26Z`
 - Virtual Size: ~ 137.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -322,15 +322,15 @@ $ dnf --quiet download --source --url keyutils-libs-1.5.8-3.el7
 https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/keyutils-1.5.8-3.el7.src.rpm
 ```
 
-### `rpm` package: `krb5-libs-1.15.1-55.0.5.el7_9.x86_64`
+### `rpm` package: `krb5-libs-1.15.1-55.0.7.el7_9.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url krb5-libs-1.15.1-55.0.5.el7_9
-https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/krb5-1.15.1-55.0.5.el7_9.src.rpm
+$ dnf --quiet download --source --url krb5-libs-1.15.1-55.0.7.el7_9
+https://yum.oracle.com/repo/OracleLinux/OL7/latest/x86_64/getPackageSource/krb5-1.15.1-55.0.7.el7_9.src.rpm
 ```
 
 ### `rpm` package: `libacl-2.2.51-15.el7.x86_64`
