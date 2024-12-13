@@ -1,10 +1,10 @@
-# `matomo:5.1.2-apache`
+# `matomo:5.2.0-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1327e975b203563e5a1c5a1af69884dfada196cc934ddb1eccd803e9a12b62e8`
-- Created: `2024-09-25T20:44:12Z`
-- Virtual Size: ~ 579.83 Mb  
+- Image ID: `sha256:62c66c53b31ac0ccfd91f2b5693805ed936225825de2afefdba9bee616ab28ee`
+- Created: `2024-12-12T22:25:09Z`
+- Virtual Size: ~ 585.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,13 +18,13 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.26`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.26.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.26.tar.xz.asc`
-  - `PHP_SHA256=54747400cb4874288ad41a785e6147e2ff546cceeeb55c23c00c771ac125c6ef`
+  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
+  - `PHP_VERSION=8.3.14`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.14.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.14.tar.xz.asc`
+  - `PHP_SHA256=58b4cb9019bf70c0cbcdb814c7df79b9065059d14cf7dbf48d971f8e56ae9be7`
   - `PHP_MEMORY_LIMIT=256M`
-  - `MATOMO_VERSION=5.1.2`
+  - `MATOMO_VERSION=5.2.0`
 
 ## `dpkg` (`.deb`-based packages)
 
