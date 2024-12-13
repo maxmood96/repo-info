@@ -617,21 +617,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.11.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.11.0-1.dsc' curl_8.11.0-1.dsc 3252 SHA256:1fa81ff7d58c593cd65fd8ea60dc225aa4aa4b196ed23bfcfb0bfdad02953dab
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.11.0.orig.tar.gz' curl_8.11.0.orig.tar.gz 4167839 SHA256:264537d90e58d2b09dddc50944baf3c38e7089151c8986715e2aaeaaf2b8118f
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.11.0.orig.tar.gz.asc' curl_8.11.0.orig.tar.gz.asc 488 SHA256:b709d6115f2dbf47e3bfb1bbb5b70b235476f8b1bd46973a8b3afe7b74149c52
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.11.0-1.debian.tar.xz' curl_8.11.0-1.debian.tar.xz 55384 SHA256:e46ebcfb907ba6929770ff0e0b3a8a4a8019e8ed2f7d3491b10ccf2e6e9b4006
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.11.0-1/
 
-- https://sources.debian.net/src/curl/8.11.0-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.11.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.11.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-8`
 
@@ -3052,20 +3044,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.44-2
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.44-2.dsc' libpng1.6_1.6.44-2.dsc 2254 SHA256:1b06f9c144f4102886ed7b5f639f607708fcc1014e60ee17b1c7f8f6674ebd0d
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.44.orig.tar.gz' libpng1.6_1.6.44.orig.tar.gz 1558044 SHA256:0ef5b633d0c65f780c4fced27ff832998e71478c13b45dfb6e94f23a82f64f7c
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.44-2.debian.tar.xz' libpng1.6_1.6.44-2.debian.tar.xz 31580 SHA256:ee27a126c2de86c7ff13059cdc0fd922dda0ae6db0e6edd7feacb7a1fb6603f1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpng1.6/1.6.44-2/
 
-- https://sources.debian.net/src/libpng1.6/1.6.44-2/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.44-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.44-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -4434,20 +4419,13 @@ Licenses: (parsed from: `/usr/share/doc/libnpth0t64/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris npth=1.6-3.1
-'http://deb.debian.org/debian/pool/main/n/npth/npth_1.6-3.1.dsc' npth_1.6-3.1.dsc 1967 SHA256:3545fbabbf59c9427a6dc98f903f4ac50786fdfc2ce3f42a21668ec3151c25f7
-'http://deb.debian.org/debian/pool/main/n/npth/npth_1.6.orig.tar.bz2' npth_1.6.orig.tar.bz2 300486 SHA256:1393abd9adcf0762d34798dc34fdcf4d0d22a8410721e76f1e3afcd1daa4e2d1
-'http://deb.debian.org/debian/pool/main/n/npth/npth_1.6-3.1.debian.tar.xz' npth_1.6-3.1.debian.tar.xz 10924 SHA256:e2fb2f56060991436622ddc1dc52df8f3f3e87bc9325a8b30920fce5aa0f3e30
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/npth/1.6-3.1/
 
-- https://sources.debian.net/src/npth/1.6-3.1/ (for browsing the source)
-- https://sources.debian.net/src/npth/1.6-3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/npth/1.6-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openexr=3.1.5-5.1`
 
@@ -5450,20 +5428,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257~rc3-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257%7erc3-1.dsc' systemd_257~rc3-1.dsc 8665 SHA256:a7340c356731febbaeec44f360932cc9f9b5b7bae025c494b1f74f00b1edcd96
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257%7erc3.orig.tar.gz' systemd_257~rc3.orig.tar.gz 16226197 SHA256:bb0837988c3fb9b60d8ad38be791663a30cdb606242665f1157e1d884e2d892a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257%7erc3-1.debian.tar.xz' systemd_257~rc3-1.debian.tar.xz 175832 SHA256:c068395d476f335812b83a72379072f04b4dd5a2edaff2e9ea149863db644a5b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257~rc3-1/
 
-- https://sources.debian.net/src/systemd/257~rc3-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257~rc3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257~rc3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.11-1`
 
