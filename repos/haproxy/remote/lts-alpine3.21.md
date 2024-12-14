@@ -1,7 +1,7 @@
-## `haproxy:3.2-dev1-alpine3.20`
+## `haproxy:lts-alpine3.21`
 
 ```console
-$ docker pull haproxy@sha256:d6b157ae795f694b1c099c366e94a3608028305ac7fce3b3a5160fc6781d1747
+$ docker pull haproxy@sha256:3cbd1245a2269b255e307b599a953255a8ade494b35e2b624ce7c9ccb6f64714
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23,69 +23,69 @@ $ docker pull haproxy@sha256:d6b157ae795f694b1c099c366e94a3608028305ac7fce3b3a51
 	-	linux; s390x
 	-	unknown; unknown
 
-### `haproxy:3.2-dev1-alpine3.20` - linux; amd64
+### `haproxy:lts-alpine3.21` - linux; amd64
 
 ```console
-$ docker pull haproxy@sha256:ca6be4bef84dd9bc321d0b235ec117e9cf76164bc0ac5f472b2bb874387cf414
+$ docker pull haproxy@sha256:5f2485dc968155165c4962c6d04e33af36477cd8cc4cc70efd2c9e880567c644
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.4 MB (16409453 bytes)**  
+-	Total Size: **13.3 MB (13340749 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:66c2a91867da0fdaa49bd9587898ba2901384064a8f73f7b89ce330e9ed4f341`
+-	Image ID: `sha256:319821d297fbf5cf23f9c9d556561c34edd7aa07b5f6700d8573b3e6c248fac5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["haproxy","-f","\/usr\/local\/etc\/haproxy\/haproxy.cfg"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 12:05:36 GMT
-ADD alpine-minirootfs-3.20.3-x86_64.tar.gz / # buildkit
-# Fri, 06 Sep 2024 12:05:36 GMT
+# Thu, 05 Dec 2024 12:49:04 GMT
+ADD alpine-minirootfs-3.21.0-x86_64.tar.gz / # buildkit
+# Thu, 05 Dec 2024 12:49:04 GMT
 CMD ["/bin/sh"]
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 RUN set -eux; 	apk add --no-cache 		ca-certificates 	; # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 RUN set -eux; 	addgroup --gid 99 --system haproxy; 	adduser 		--disabled-password 		--home /var/lib/haproxy 		--ingroup haproxy 		--no-create-home 		--system 		--uid 99 		haproxy 	; 	mkdir /var/lib/haproxy; 	chown haproxy:haproxy /var/lib/haproxy # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_VERSION=3.2-dev1
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_URL=https://www.haproxy.org/download/3.2/src/devel/haproxy-3.2-dev1.tar.gz
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_SHA256=6fea62b4a1bb6f1f1c9f8ec55bd6c272913b4062a23ebf8411b6b1e2c5007a3f
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_VERSION=3.0.7
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_URL=https://www.haproxy.org/download/3.0/src/haproxy-3.0.7.tar.gz
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_SHA256=5c5c6b66645278435a89cd6e2a0d39f8e7d2546212d847bd0d236511ff996f11
+# Fri, 13 Dec 2024 00:50:46 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gcc 		libc-dev 		linux-headers 		lua5.4-dev 		make 		openssl 		openssl-dev 		pcre2-dev 		readline-dev 		tar 	; 		wget -O haproxy.tar.gz "$HAPROXY_URL"; 	echo "$HAPROXY_SHA256 *haproxy.tar.gz" | sha256sum -c; 	mkdir -p /usr/src/haproxy; 	tar -xzf haproxy.tar.gz -C /usr/src/haproxy --strip-components=1; 	rm haproxy.tar.gz; 		makeOpts=' 		TARGET=linux-musl 		USE_GETADDRINFO=1 		USE_LUA=1 LUA_INC=/usr/include/lua5.4 LUA_LIB=/usr/lib/lua5.4 		USE_OPENSSL=1 		USE_PCRE2=1 USE_PCRE2_JIT=1 		USE_PROMEX=1 				EXTRA_OBJS=" 		" 	'; 		nproc="$(getconf _NPROCESSORS_ONLN)"; 	eval "make -C /usr/src/haproxy -j '$nproc' all $makeOpts"; 	eval "make -C /usr/src/haproxy install-bin $makeOpts"; 		mkdir -p /usr/local/etc/haproxy; 	cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors; 	rm -rf /usr/src/haproxy; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .haproxy-rundeps $runDeps; 	apk del --no-network .build-deps; 		haproxy -v # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 STOPSIGNAL SIGUSR1
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 USER haproxy
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 WORKDIR /var/lib/haproxy
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 ```
 
 -	Layers:
-	-	`sha256:da9db072f522755cbeb85be2b3f84059b70571b229512f1571d9217b77e1087f`  
-		Last Modified: Fri, 06 Sep 2024 14:39:08 GMT  
-		Size: 3.6 MB (3623904 bytes)  
+	-	`sha256:38a8310d387e375e0ec6fabe047a9149e8eb214073db9f461fee6251fd936a75`  
+		Last Modified: Thu, 05 Dec 2024 21:56:24 GMT  
+		Size: 3.6 MB (3644443 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5986b7a0749a330e9bf0e062766fcc396478d1d1835ad0c51e8d80235f88c23`  
-		Last Modified: Wed, 11 Dec 2024 22:30:11 GMT  
-		Size: 290.9 KB (290891 bytes)  
+	-	`sha256:9e508591c1015bb93777a78099f44d178c71b914f349f7b7e0faddfd1536106c`  
+		Last Modified: Fri, 13 Dec 2024 20:28:51 GMT  
+		Size: 299.2 KB (299197 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:951730bc95c908827c97b6aab3ee1839317c4a1232833c2acab27c838eeca56e`  
-		Last Modified: Wed, 11 Dec 2024 22:30:11 GMT  
-		Size: 979.0 B  
+	-	`sha256:9ff9fb1acc1cc671adaaff4646e20fa321597565e88d1ac94d604a05164aa572`  
+		Last Modified: Fri, 13 Dec 2024 20:28:51 GMT  
+		Size: 975.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c608c437b51f8144140cf79dbda051d46448917a6b1263676886959d776f2e6f`  
-		Last Modified: Wed, 11 Dec 2024 22:30:11 GMT  
-		Size: 12.5 MB (12493205 bytes)  
+	-	`sha256:46249b51a63ad110a82db299c45f16fde86e48671e739d403eeb94e8c1fb1516`  
+		Last Modified: Fri, 13 Dec 2024 20:28:51 GMT  
+		Size: 9.4 MB (9395660 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d76ea72da84997e62ff9b5d87ae18d5bbe93258f437eae82c5714833e34e5b1f`  
-		Last Modified: Wed, 11 Dec 2024 22:30:11 GMT  
+	-	`sha256:04bf5a01e72a385d2eb55802427756eccd617204cb647e16cee92c72ef1a60f0`  
+		Last Modified: Fri, 13 Dec 2024 20:28:51 GMT  
 		Size: 442.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -93,277 +93,183 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `haproxy:3.2-dev1-alpine3.20` - unknown; unknown
+### `haproxy:lts-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull haproxy@sha256:cee80c6cd55c27ed015919443a3526c794c42ae2932cac2fb79580c1d73cd6c3
+$ docker pull haproxy@sha256:a7bbffa783fb0455664ea7a6bae91817f1119eda3b2ddc334c7a17cbaee493af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **198.9 KB (198918 bytes)**  
+-	Total Size: **208.4 KB (208376 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:566572ade10a295ae1e91e4811e5269636b731e8babb8ae8608566c3c47f3c56`
+-	Image ID: `sha256:4d1f48d1df5a7b07836211e5d169ba42bfa90014b69b9dff05714a85db21e6d0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:932d6a2eae6a6b564a04ab19bf6fbd6f52994c595465ccb1b5e959c201171a9e`  
-		Last Modified: Wed, 11 Dec 2024 22:30:11 GMT  
-		Size: 179.0 KB (179020 bytes)  
+	-	`sha256:1e959b884a9713d5abac8de1be83ec5877a74e188daff9df1db2ee769974e954`  
+		Last Modified: Fri, 13 Dec 2024 20:28:51 GMT  
+		Size: 187.9 KB (187915 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6940888c129ab133efff2c4926b92aee16f89794530ed7c5df33b62440d94ab3`  
-		Last Modified: Wed, 11 Dec 2024 22:30:11 GMT  
-		Size: 19.9 KB (19898 bytes)  
+	-	`sha256:7f1f0354ae17033b5eea4c3f37ea1c1d04fc80e3c6dc817a1cf0526c58816935`  
+		Last Modified: Fri, 13 Dec 2024 20:28:51 GMT  
+		Size: 20.5 KB (20461 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `haproxy:3.2-dev1-alpine3.20` - linux; arm variant v6
+### `haproxy:lts-alpine3.21` - linux; arm variant v6
 
 ```console
-$ docker pull haproxy@sha256:4c2c9837f92756bab9db47d4e277b412d19ba3cdffe3d111781ead7aed654c6f
+$ docker pull haproxy@sha256:917cf0945c8c0ef03bdcf29300cf87d93a535af6d1ac2871e8969800a817c11c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.9 MB (15871632 bytes)**  
+-	Total Size: **13.0 MB (13049906 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1aba63a944bf80fb6f720970b5f056c768293212ed0db81f8fdb715a0bfef69a`
+-	Image ID: `sha256:9d70361960e71bb0bb2507a7e3d6f500f5b9b89f5784a838df4d6c3164c95983`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["haproxy","-f","\/usr\/local\/etc\/haproxy\/haproxy.cfg"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 12:05:36 GMT
-ADD alpine-minirootfs-3.20.3-armhf.tar.gz / # buildkit
-# Fri, 06 Sep 2024 12:05:36 GMT
+# Thu, 05 Dec 2024 12:49:04 GMT
+ADD alpine-minirootfs-3.21.0-armhf.tar.gz / # buildkit
+# Thu, 05 Dec 2024 12:49:04 GMT
 CMD ["/bin/sh"]
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 RUN set -eux; 	apk add --no-cache 		ca-certificates 	; # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 RUN set -eux; 	addgroup --gid 99 --system haproxy; 	adduser 		--disabled-password 		--home /var/lib/haproxy 		--ingroup haproxy 		--no-create-home 		--system 		--uid 99 		haproxy 	; 	mkdir /var/lib/haproxy; 	chown haproxy:haproxy /var/lib/haproxy # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_VERSION=3.2-dev1
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_URL=https://www.haproxy.org/download/3.2/src/devel/haproxy-3.2-dev1.tar.gz
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_SHA256=6fea62b4a1bb6f1f1c9f8ec55bd6c272913b4062a23ebf8411b6b1e2c5007a3f
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_VERSION=3.0.7
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_URL=https://www.haproxy.org/download/3.0/src/haproxy-3.0.7.tar.gz
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_SHA256=5c5c6b66645278435a89cd6e2a0d39f8e7d2546212d847bd0d236511ff996f11
+# Fri, 13 Dec 2024 00:50:46 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gcc 		libc-dev 		linux-headers 		lua5.4-dev 		make 		openssl 		openssl-dev 		pcre2-dev 		readline-dev 		tar 	; 		wget -O haproxy.tar.gz "$HAPROXY_URL"; 	echo "$HAPROXY_SHA256 *haproxy.tar.gz" | sha256sum -c; 	mkdir -p /usr/src/haproxy; 	tar -xzf haproxy.tar.gz -C /usr/src/haproxy --strip-components=1; 	rm haproxy.tar.gz; 		makeOpts=' 		TARGET=linux-musl 		USE_GETADDRINFO=1 		USE_LUA=1 LUA_INC=/usr/include/lua5.4 LUA_LIB=/usr/lib/lua5.4 		USE_OPENSSL=1 		USE_PCRE2=1 USE_PCRE2_JIT=1 		USE_PROMEX=1 				EXTRA_OBJS=" 		" 	'; 		nproc="$(getconf _NPROCESSORS_ONLN)"; 	eval "make -C /usr/src/haproxy -j '$nproc' all $makeOpts"; 	eval "make -C /usr/src/haproxy install-bin $makeOpts"; 		mkdir -p /usr/local/etc/haproxy; 	cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors; 	rm -rf /usr/src/haproxy; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .haproxy-rundeps $runDeps; 	apk del --no-network .build-deps; 		haproxy -v # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 STOPSIGNAL SIGUSR1
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 USER haproxy
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 WORKDIR /var/lib/haproxy
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 ```
 
 -	Layers:
-	-	`sha256:655a2516811563036720a66963f9c64bc14eb53aac8eeceaebcda6bf661651bb`  
-		Last Modified: Mon, 09 Sep 2024 07:03:58 GMT  
-		Size: 3.4 MB (3366596 bytes)  
+	-	`sha256:f2148afcbc6cd4497527fc652f65872130774bf9baace0e1e6a85cad9da5f62e`  
+		Last Modified: Thu, 05 Dec 2024 22:17:29 GMT  
+		Size: 3.4 MB (3367182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93b506ff9dcaba1b8959509e2dd40ebb5fff02226039b86e10ca1fa29368dec3`  
-		Last Modified: Tue, 12 Nov 2024 02:35:17 GMT  
-		Size: 291.8 KB (291776 bytes)  
+	-	`sha256:bd44aaa48485b34fdab4f109e9b7512483d23834d34d8a626f20c760ca5edcde`  
+		Last Modified: Fri, 13 Dec 2024 20:28:28 GMT  
+		Size: 300.4 KB (300385 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1b4c3bd7d6d27b793be61ad84883e470f72e92eaa7a51c86df9962ad290b28a`  
-		Last Modified: Tue, 12 Nov 2024 02:35:16 GMT  
+	-	`sha256:f15781b07f906913c6e8fd8cd015deff5ba2938111db23d71cf048ae9220b649`  
+		Last Modified: Fri, 13 Dec 2024 20:28:28 GMT  
+		Size: 975.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f99ff9be64c45fad9356d774ef3e3c4c573cc2fd92bc07989e98a7faa83ad2e`  
+		Last Modified: Fri, 13 Dec 2024 20:30:32 GMT  
+		Size: 9.4 MB (9380885 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a234fdefbd58b075169dce903b55238a6deaabb9b7d866f449bae717f8f6a49e`  
+		Last Modified: Fri, 13 Dec 2024 20:30:31 GMT  
+		Size: 447.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `haproxy:lts-alpine3.21` - unknown; unknown
+
+```console
+$ docker pull haproxy@sha256:a6ea9a0082a8074fbba93ccf30c3ab656d70215e4cb8ea2383db9411a9c9f9f0
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **20.4 KB (20366 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:7d4a7d436a8e32961d5da2b174ce716f1d6df4b8fe6b1204e973b3260c2d18da`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:e4c6d01c8c7fdfedbad738dbd1598aede46c61088e1f94182dd2ebe8322a4ec7`  
+		Last Modified: Fri, 13 Dec 2024 20:30:31 GMT  
+		Size: 20.4 KB (20366 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `haproxy:lts-alpine3.21` - linux; arm variant v7
+
+```console
+$ docker pull haproxy@sha256:c495aff437ee4cc20c88498170d50a4902a5212462d3e2b6da49773dfdb957c6
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **12.6 MB (12640556 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:11d7837c6d302908181564af924ad49e55e3dc086204a061484783dc61d63f9d`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["haproxy","-f","\/usr\/local\/etc\/haproxy\/haproxy.cfg"]`
+
+```dockerfile
+# Thu, 05 Dec 2024 12:49:04 GMT
+ADD alpine-minirootfs-3.21.0-armv7.tar.gz / # buildkit
+# Thu, 05 Dec 2024 12:49:04 GMT
+CMD ["/bin/sh"]
+# Fri, 13 Dec 2024 00:50:46 GMT
+RUN set -eux; 	apk add --no-cache 		ca-certificates 	; # buildkit
+# Fri, 13 Dec 2024 00:50:46 GMT
+RUN set -eux; 	addgroup --gid 99 --system haproxy; 	adduser 		--disabled-password 		--home /var/lib/haproxy 		--ingroup haproxy 		--no-create-home 		--system 		--uid 99 		haproxy 	; 	mkdir /var/lib/haproxy; 	chown haproxy:haproxy /var/lib/haproxy # buildkit
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_VERSION=3.0.7
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_URL=https://www.haproxy.org/download/3.0/src/haproxy-3.0.7.tar.gz
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_SHA256=5c5c6b66645278435a89cd6e2a0d39f8e7d2546212d847bd0d236511ff996f11
+# Fri, 13 Dec 2024 00:50:46 GMT
+RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gcc 		libc-dev 		linux-headers 		lua5.4-dev 		make 		openssl 		openssl-dev 		pcre2-dev 		readline-dev 		tar 	; 		wget -O haproxy.tar.gz "$HAPROXY_URL"; 	echo "$HAPROXY_SHA256 *haproxy.tar.gz" | sha256sum -c; 	mkdir -p /usr/src/haproxy; 	tar -xzf haproxy.tar.gz -C /usr/src/haproxy --strip-components=1; 	rm haproxy.tar.gz; 		makeOpts=' 		TARGET=linux-musl 		USE_GETADDRINFO=1 		USE_LUA=1 LUA_INC=/usr/include/lua5.4 LUA_LIB=/usr/lib/lua5.4 		USE_OPENSSL=1 		USE_PCRE2=1 USE_PCRE2_JIT=1 		USE_PROMEX=1 				EXTRA_OBJS=" 		" 	'; 		nproc="$(getconf _NPROCESSORS_ONLN)"; 	eval "make -C /usr/src/haproxy -j '$nproc' all $makeOpts"; 	eval "make -C /usr/src/haproxy install-bin $makeOpts"; 		mkdir -p /usr/local/etc/haproxy; 	cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors; 	rm -rf /usr/src/haproxy; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .haproxy-rundeps $runDeps; 	apk del --no-network .build-deps; 		haproxy -v # buildkit
+# Fri, 13 Dec 2024 00:50:46 GMT
+STOPSIGNAL SIGUSR1
+# Fri, 13 Dec 2024 00:50:46 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Fri, 13 Dec 2024 00:50:46 GMT
+USER haproxy
+# Fri, 13 Dec 2024 00:50:46 GMT
+WORKDIR /var/lib/haproxy
+# Fri, 13 Dec 2024 00:50:46 GMT
+CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
+```
+
+-	Layers:
+	-	`sha256:39ad020c297459aff9281e5c635286218011e335f3460834ae8397a771bfec55`  
+		Last Modified: Thu, 05 Dec 2024 22:17:38 GMT  
+		Size: 3.1 MB (3100035 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:845915b26f71f4e1256d6563721ae973b56b00bfc20516b7e2a8d2be5df41318`  
+		Last Modified: Fri, 13 Dec 2024 20:28:18 GMT  
+		Size: 299.4 KB (299404 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5f517d87d15c61d5ee6088c94b526de71e4c54dbb8fe7bcdc1443b4120a7378e`  
+		Last Modified: Fri, 13 Dec 2024 20:28:18 GMT  
 		Size: 976.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff604d63ffedb494730910be6c277d91453cb4aed93ce3ea659e9755eb99505e`  
-		Last Modified: Wed, 11 Dec 2024 22:30:27 GMT  
-		Size: 12.2 MB (12211808 bytes)  
+	-	`sha256:593d831b2c081236413ee863e3268d387ede2541f879849762eae1dfeac36ec4`  
+		Last Modified: Fri, 13 Dec 2024 20:30:27 GMT  
+		Size: 9.2 MB (9239668 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aaf4914f74ba97feac7f68b53697a0da8749bc165424dc1cf87b19774e48556f`  
-		Last Modified: Wed, 11 Dec 2024 22:30:27 GMT  
-		Size: 444.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `haproxy:3.2-dev1-alpine3.20` - unknown; unknown
-
-```console
-$ docker pull haproxy@sha256:6a907223a3a0d3a8e78fb00a28590c905e534ae6af29da7520db7d0788b1d194
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **19.8 KB (19785 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:59e0f1b318634c213133a00704f16e974bd8b62d2b8d31f66e1dc0274a9fa214`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:143a87746e2ccf0fd0c40bf4758bd701d894c0dbd2ca80be7a9d32a83c242adc`  
-		Last Modified: Wed, 11 Dec 2024 22:30:26 GMT  
-		Size: 19.8 KB (19785 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `haproxy:3.2-dev1-alpine3.20` - linux; arm variant v7
-
-```console
-$ docker pull haproxy@sha256:a364231232d3b2d3d67719179c3b27391a998c5826cc200d18ecaf75283f7d29
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.3 MB (15291290 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d73ddcc1f94c65fb197e531d70b79a0543d4285ef865db6dd9cf0c6bade10c42`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["haproxy","-f","\/usr\/local\/etc\/haproxy\/haproxy.cfg"]`
-
-```dockerfile
-# Fri, 06 Sep 2024 12:05:36 GMT
-ADD alpine-minirootfs-3.20.3-armv7.tar.gz / # buildkit
-# Fri, 06 Sep 2024 12:05:36 GMT
-CMD ["/bin/sh"]
-# Wed, 11 Dec 2024 18:16:31 GMT
-RUN set -eux; 	apk add --no-cache 		ca-certificates 	; # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
-RUN set -eux; 	addgroup --gid 99 --system haproxy; 	adduser 		--disabled-password 		--home /var/lib/haproxy 		--ingroup haproxy 		--no-create-home 		--system 		--uid 99 		haproxy 	; 	mkdir /var/lib/haproxy; 	chown haproxy:haproxy /var/lib/haproxy # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_VERSION=3.2-dev1
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_URL=https://www.haproxy.org/download/3.2/src/devel/haproxy-3.2-dev1.tar.gz
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_SHA256=6fea62b4a1bb6f1f1c9f8ec55bd6c272913b4062a23ebf8411b6b1e2c5007a3f
-# Wed, 11 Dec 2024 18:16:31 GMT
-RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gcc 		libc-dev 		linux-headers 		lua5.4-dev 		make 		openssl 		openssl-dev 		pcre2-dev 		readline-dev 		tar 	; 		wget -O haproxy.tar.gz "$HAPROXY_URL"; 	echo "$HAPROXY_SHA256 *haproxy.tar.gz" | sha256sum -c; 	mkdir -p /usr/src/haproxy; 	tar -xzf haproxy.tar.gz -C /usr/src/haproxy --strip-components=1; 	rm haproxy.tar.gz; 		makeOpts=' 		TARGET=linux-musl 		USE_GETADDRINFO=1 		USE_LUA=1 LUA_INC=/usr/include/lua5.4 LUA_LIB=/usr/lib/lua5.4 		USE_OPENSSL=1 		USE_PCRE2=1 USE_PCRE2_JIT=1 		USE_PROMEX=1 				EXTRA_OBJS=" 		" 	'; 		nproc="$(getconf _NPROCESSORS_ONLN)"; 	eval "make -C /usr/src/haproxy -j '$nproc' all $makeOpts"; 	eval "make -C /usr/src/haproxy install-bin $makeOpts"; 		mkdir -p /usr/local/etc/haproxy; 	cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors; 	rm -rf /usr/src/haproxy; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .haproxy-rundeps $runDeps; 	apk del --no-network .build-deps; 		haproxy -v # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
-STOPSIGNAL SIGUSR1
-# Wed, 11 Dec 2024 18:16:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 11 Dec 2024 18:16:31 GMT
-USER haproxy
-# Wed, 11 Dec 2024 18:16:31 GMT
-WORKDIR /var/lib/haproxy
-# Wed, 11 Dec 2024 18:16:31 GMT
-CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
-```
-
--	Layers:
-	-	`sha256:2723bbe95689a46bd4cbe83e27fb42475660f41b02c96d21411fa76d803e8553`  
-		Last Modified: Mon, 09 Sep 2024 07:03:59 GMT  
-		Size: 3.1 MB (3095487 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19d19af6260668ec5acebf06ca1010e7c7f5c1d62a13cc5b460c3cf3e29d8a5c`  
-		Last Modified: Tue, 12 Nov 2024 02:25:39 GMT  
-		Size: 291.0 KB (290959 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2bbfe72087166183a14beb591e9018b8725bfe385e9f581cabb3ac98f8584c8b`  
-		Last Modified: Tue, 12 Nov 2024 02:25:39 GMT  
-		Size: 978.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25b2194d0d0b9c4a2d87be0baa1c46fd2e03ef75f7b7961b48d98254174f58ed`  
-		Last Modified: Wed, 11 Dec 2024 22:31:45 GMT  
-		Size: 11.9 MB (11903388 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a029aa931dc01864418aa925df7b7f9df191753b54094fcda56db5c276664f6c`  
-		Last Modified: Wed, 11 Dec 2024 22:31:44 GMT  
-		Size: 446.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `haproxy:3.2-dev1-alpine3.20` - unknown; unknown
-
-```console
-$ docker pull haproxy@sha256:3245754d15f156635ce7dbf135a9c71ef2a25ac84af0118a7fc7c581f3d51cf1
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **199.1 KB (199055 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e0b5180c2e8fd8f5bb45b85fac644e2e94bc823a639c350c3e6211838d1a8a97`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:d4ae4cc4fcca21eb9cc578ed7a7a6f10a629918b1236f0cfe6ccb45eb73cb444`  
-		Last Modified: Wed, 11 Dec 2024 22:31:44 GMT  
-		Size: 179.1 KB (179056 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:3212b946ae9f2d8a4b18bae6946c62007c96900dd34676fb274b212093131226`  
-		Last Modified: Wed, 11 Dec 2024 22:31:44 GMT  
-		Size: 20.0 KB (19999 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `haproxy:3.2-dev1-alpine3.20` - linux; arm64 variant v8
-
-```console
-$ docker pull haproxy@sha256:8aab119b78313e07800280e4d273aa937281469eeb67a769a9862408fcb257c9
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **17.3 MB (17250667 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e879972a5db7539cea69a5c276efebf05a1a758fbd4263f6286106fd058cb357`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["haproxy","-f","\/usr\/local\/etc\/haproxy\/haproxy.cfg"]`
-
-```dockerfile
-# Fri, 06 Sep 2024 12:05:36 GMT
-ADD alpine-minirootfs-3.20.3-aarch64.tar.gz / # buildkit
-# Fri, 06 Sep 2024 12:05:36 GMT
-CMD ["/bin/sh"]
-# Wed, 11 Dec 2024 18:16:31 GMT
-RUN set -eux; 	apk add --no-cache 		ca-certificates 	; # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
-RUN set -eux; 	addgroup --gid 99 --system haproxy; 	adduser 		--disabled-password 		--home /var/lib/haproxy 		--ingroup haproxy 		--no-create-home 		--system 		--uid 99 		haproxy 	; 	mkdir /var/lib/haproxy; 	chown haproxy:haproxy /var/lib/haproxy # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_VERSION=3.2-dev1
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_URL=https://www.haproxy.org/download/3.2/src/devel/haproxy-3.2-dev1.tar.gz
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_SHA256=6fea62b4a1bb6f1f1c9f8ec55bd6c272913b4062a23ebf8411b6b1e2c5007a3f
-# Wed, 11 Dec 2024 18:16:31 GMT
-RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gcc 		libc-dev 		linux-headers 		lua5.4-dev 		make 		openssl 		openssl-dev 		pcre2-dev 		readline-dev 		tar 	; 		wget -O haproxy.tar.gz "$HAPROXY_URL"; 	echo "$HAPROXY_SHA256 *haproxy.tar.gz" | sha256sum -c; 	mkdir -p /usr/src/haproxy; 	tar -xzf haproxy.tar.gz -C /usr/src/haproxy --strip-components=1; 	rm haproxy.tar.gz; 		makeOpts=' 		TARGET=linux-musl 		USE_GETADDRINFO=1 		USE_LUA=1 LUA_INC=/usr/include/lua5.4 LUA_LIB=/usr/lib/lua5.4 		USE_OPENSSL=1 		USE_PCRE2=1 USE_PCRE2_JIT=1 		USE_PROMEX=1 				EXTRA_OBJS=" 		" 	'; 		nproc="$(getconf _NPROCESSORS_ONLN)"; 	eval "make -C /usr/src/haproxy -j '$nproc' all $makeOpts"; 	eval "make -C /usr/src/haproxy install-bin $makeOpts"; 		mkdir -p /usr/local/etc/haproxy; 	cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors; 	rm -rf /usr/src/haproxy; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .haproxy-rundeps $runDeps; 	apk del --no-network .build-deps; 		haproxy -v # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
-STOPSIGNAL SIGUSR1
-# Wed, 11 Dec 2024 18:16:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 11 Dec 2024 18:16:31 GMT
-USER haproxy
-# Wed, 11 Dec 2024 18:16:31 GMT
-WORKDIR /var/lib/haproxy
-# Wed, 11 Dec 2024 18:16:31 GMT
-CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
-```
-
--	Layers:
-	-	`sha256:9986a736f7d3d24bb01b0a560fa0f19c4b57e56c646e1f998941529d28710e6b`  
-		Last Modified: Mon, 09 Sep 2024 07:03:59 GMT  
-		Size: 4.1 MB (4087726 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d80d24f2bc16f7a3a353ee1f6bade1e4cfff2d6d55b81bb6d21c167a605baac5`  
-		Last Modified: Wed, 11 Dec 2024 22:30:42 GMT  
-		Size: 293.5 KB (293525 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c607c79d0c005448b29b1411b49eb1bfa39ead72f6c40d21a14b18eada363bdd`  
-		Last Modified: Wed, 11 Dec 2024 22:30:42 GMT  
-		Size: 980.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c28533c71b733b77011ffbdc39f05f1253964b6b8f4c0351b0dbc20e38dd0226`  
-		Last Modified: Wed, 11 Dec 2024 22:30:43 GMT  
-		Size: 12.9 MB (12867963 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a041052b4d94c20cb3c895d4673efcd9d251352b25240ff49387a990edd9dcb`  
-		Last Modified: Wed, 11 Dec 2024 22:30:42 GMT  
+	-	`sha256:22d034c8163d6fe8400a5ebaf56d5a120740d9736b1a86e86852ba3b4b9f874d`  
+		Last Modified: Fri, 13 Dec 2024 20:30:26 GMT  
 		Size: 441.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -371,281 +277,375 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `haproxy:3.2-dev1-alpine3.20` - unknown; unknown
+### `haproxy:lts-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull haproxy@sha256:7d6023c638495b9573ad58406d4a4bef391ae26a8cf5f87f002e4519c311630a
+$ docker pull haproxy@sha256:38985106e851f038a643e0dacb850575ea5e8b42a18c1826c45808722663c089
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **199.1 KB (199108 bytes)**  
+-	Total Size: **208.5 KB (208548 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:87f2fe9cef684761f1685d2a3636411d9a623cd335323f2bb20f1a0fde704ca4`
+-	Image ID: `sha256:77875fb95217876b4e7dfff8d93d6333371e7456dea47a4d48b2a1fc56abe60a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3544a208087cdf20fc59b46df628814861e5e6b06291cd4f64877a496b225c3a`  
-		Last Modified: Wed, 11 Dec 2024 22:30:42 GMT  
-		Size: 179.1 KB (179076 bytes)  
+	-	`sha256:a9e84eec9787b0125bc9bd85b783e1f1235e56cb31ed41f3bd958e3bbbe595c3`  
+		Last Modified: Fri, 13 Dec 2024 20:30:26 GMT  
+		Size: 188.0 KB (187967 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:df8bf4aa746192a0e0f1afc29fe093bffe7da7417143a907b999bc26100806ca`  
-		Last Modified: Wed, 11 Dec 2024 22:30:42 GMT  
-		Size: 20.0 KB (20032 bytes)  
+	-	`sha256:07dc36e62e2530fb03d0e7796c89c96cc1eed30a9512267282d1d8e370cc4582`  
+		Last Modified: Fri, 13 Dec 2024 20:30:26 GMT  
+		Size: 20.6 KB (20581 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `haproxy:3.2-dev1-alpine3.20` - linux; 386
+### `haproxy:lts-alpine3.21` - linux; arm64 variant v8
 
 ```console
-$ docker pull haproxy@sha256:1f7155d00e679672585121a239484bd2d30176174ce4cf4402338a264b612f0f
+$ docker pull haproxy@sha256:2adebf65d87047be194b8ca43bf24fa21a5cb2866e093b852990810a19d86c04
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.8 MB (15846740 bytes)**  
+-	Total Size: **13.6 MB (13649316 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:20baff525aa67f9745f4d8b22084cd4834b3a549ba5382152a7192f9d385c244`
+-	Image ID: `sha256:d122e886fc7d207a361b928762cf2342f14ca8dc1cc31264cc6e8a55759d7bdc`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["haproxy","-f","\/usr\/local\/etc\/haproxy\/haproxy.cfg"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 12:05:36 GMT
-ADD alpine-minirootfs-3.20.3-x86.tar.gz / # buildkit
-# Fri, 06 Sep 2024 12:05:36 GMT
+# Thu, 05 Dec 2024 12:49:04 GMT
+ADD alpine-minirootfs-3.21.0-aarch64.tar.gz / # buildkit
+# Thu, 05 Dec 2024 12:49:04 GMT
 CMD ["/bin/sh"]
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 RUN set -eux; 	apk add --no-cache 		ca-certificates 	; # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 RUN set -eux; 	addgroup --gid 99 --system haproxy; 	adduser 		--disabled-password 		--home /var/lib/haproxy 		--ingroup haproxy 		--no-create-home 		--system 		--uid 99 		haproxy 	; 	mkdir /var/lib/haproxy; 	chown haproxy:haproxy /var/lib/haproxy # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_VERSION=3.2-dev1
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_URL=https://www.haproxy.org/download/3.2/src/devel/haproxy-3.2-dev1.tar.gz
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_SHA256=6fea62b4a1bb6f1f1c9f8ec55bd6c272913b4062a23ebf8411b6b1e2c5007a3f
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_VERSION=3.0.7
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_URL=https://www.haproxy.org/download/3.0/src/haproxy-3.0.7.tar.gz
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_SHA256=5c5c6b66645278435a89cd6e2a0d39f8e7d2546212d847bd0d236511ff996f11
+# Fri, 13 Dec 2024 00:50:46 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gcc 		libc-dev 		linux-headers 		lua5.4-dev 		make 		openssl 		openssl-dev 		pcre2-dev 		readline-dev 		tar 	; 		wget -O haproxy.tar.gz "$HAPROXY_URL"; 	echo "$HAPROXY_SHA256 *haproxy.tar.gz" | sha256sum -c; 	mkdir -p /usr/src/haproxy; 	tar -xzf haproxy.tar.gz -C /usr/src/haproxy --strip-components=1; 	rm haproxy.tar.gz; 		makeOpts=' 		TARGET=linux-musl 		USE_GETADDRINFO=1 		USE_LUA=1 LUA_INC=/usr/include/lua5.4 LUA_LIB=/usr/lib/lua5.4 		USE_OPENSSL=1 		USE_PCRE2=1 USE_PCRE2_JIT=1 		USE_PROMEX=1 				EXTRA_OBJS=" 		" 	'; 		nproc="$(getconf _NPROCESSORS_ONLN)"; 	eval "make -C /usr/src/haproxy -j '$nproc' all $makeOpts"; 	eval "make -C /usr/src/haproxy install-bin $makeOpts"; 		mkdir -p /usr/local/etc/haproxy; 	cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors; 	rm -rf /usr/src/haproxy; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .haproxy-rundeps $runDeps; 	apk del --no-network .build-deps; 		haproxy -v # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 STOPSIGNAL SIGUSR1
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 USER haproxy
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 WORKDIR /var/lib/haproxy
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 ```
 
 -	Layers:
-	-	`sha256:9d36213c2c70043b8757c7d7ef3b21782d1ad5b2dd6d50df305e14054d6a1cb7`  
-		Last Modified: Mon, 09 Sep 2024 07:03:56 GMT  
-		Size: 3.5 MB (3469219 bytes)  
+	-	`sha256:cb8611c9fe5154550f45e284cf977cda4e2b2fee3478552eee31d84be3c95003`  
+		Last Modified: Thu, 05 Dec 2024 22:17:35 GMT  
+		Size: 4.0 MB (3993186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a57835720f8c4adc7e0b1e6395285d538f39e97e592989399f87eed654c1c53`  
-		Last Modified: Wed, 11 Dec 2024 22:30:20 GMT  
-		Size: 291.4 KB (291372 bytes)  
+	-	`sha256:a5f86d5cc1e43fbd2039bd32583f1bad05de4cf043ef1728991312f7e212a7b6`  
+		Last Modified: Fri, 13 Dec 2024 20:29:10 GMT  
+		Size: 301.8 KB (301789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b3e173534a42d9c7696534f1671efc20b240f99568d174e05ff2eccf9af4e8e`  
-		Last Modified: Wed, 11 Dec 2024 22:30:20 GMT  
-		Size: 978.0 B  
+	-	`sha256:0200faccea227483173625c65e1dc565554a1d328bce77c17da267c2d0357986`  
+		Last Modified: Fri, 13 Dec 2024 20:29:10 GMT  
+		Size: 976.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ad9a01e6fd9b63a6ebe02f5e39a74c0e8af6b7681cacf9cfaee8d998280a022`  
-		Last Modified: Wed, 11 Dec 2024 22:30:21 GMT  
-		Size: 12.1 MB (12084697 bytes)  
+	-	`sha256:17bb9687c21b7303f08ae57c4986bebf4f8391cbc16415fcecc40c877854aaa3`  
+		Last Modified: Fri, 13 Dec 2024 20:30:47 GMT  
+		Size: 9.4 MB (9352893 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:126a8862f452ef91537f47e0b9630dc6081407bba9a6dfef891f9e0725691a48`  
-		Last Modified: Wed, 11 Dec 2024 22:30:21 GMT  
-		Size: 442.0 B  
+	-	`sha256:dafcdf5adae51b54c973dc39e58c2674fb74cb997fe9eafabc659c7ecd83d07d`  
+		Last Modified: Fri, 13 Dec 2024 20:30:46 GMT  
+		Size: 440.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `haproxy:3.2-dev1-alpine3.20` - unknown; unknown
+### `haproxy:lts-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull haproxy@sha256:3dc93ba62e9626ce3dee65ec7cd5669ba96d41c7fb7b119e1552df13e1f7be2c
+$ docker pull haproxy@sha256:b0e1563b30eaa59d2bd52bfa25e65d13a89c2eb995ef5cb9270edf2961b04fb5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **198.9 KB (198857 bytes)**  
+-	Total Size: **208.6 KB (208616 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc550ff2ed1b588d4a98742c5a004c21ad00ddcf9b986ceaaf014eff0cca8aca`
+-	Image ID: `sha256:c8fcf51d49b6e7bbbd1e6f0b6c33a30a6dbef14a5703afe9ef12d8ea54b4d328`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e44313a152056ca0f677982f20eaccf296e74f9737a8be20011c55823126875a`  
-		Last Modified: Wed, 11 Dec 2024 22:30:21 GMT  
-		Size: 179.0 KB (178995 bytes)  
+	-	`sha256:a74afe48d8972ec1639f90477ffc83781ae518c044df920dd7fcd1e68cea514c`  
+		Last Modified: Fri, 13 Dec 2024 20:30:47 GMT  
+		Size: 188.0 KB (187995 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1503fd1356268823d807c2c38e315d663ecee995d604b571af2561fcd118c904`  
-		Last Modified: Wed, 11 Dec 2024 22:30:20 GMT  
-		Size: 19.9 KB (19862 bytes)  
+	-	`sha256:66dac29340713b59982157fb16c8f719d54e26be35a27b3bafbd7e759cb396c0`  
+		Last Modified: Fri, 13 Dec 2024 20:30:46 GMT  
+		Size: 20.6 KB (20621 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `haproxy:3.2-dev1-alpine3.20` - linux; ppc64le
+### `haproxy:lts-alpine3.21` - linux; 386
 
 ```console
-$ docker pull haproxy@sha256:2671ebc47032f8c1095d9d87a435cd7866a8c0b0e94ec6683e5755b971fdbd78
+$ docker pull haproxy@sha256:37106e01d1a0addd1d428d9a8dffc48de62dd5f484420f6e2213e881506baeda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.7 MB (16716942 bytes)**  
+-	Total Size: **12.9 MB (12930452 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc313ca36a3210fc60a370532daa988ea321bf0b5a772e490f769823f48ea517`
+-	Image ID: `sha256:47879a5d3e36c8b7a010e0a4a8c2afd1ff677174a005e9c488290dd549c0a251`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["haproxy","-f","\/usr\/local\/etc\/haproxy\/haproxy.cfg"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 12:05:36 GMT
-ADD alpine-minirootfs-3.20.3-ppc64le.tar.gz / # buildkit
-# Fri, 06 Sep 2024 12:05:36 GMT
+# Thu, 05 Dec 2024 12:49:04 GMT
+ADD alpine-minirootfs-3.21.0-x86.tar.gz / # buildkit
+# Thu, 05 Dec 2024 12:49:04 GMT
 CMD ["/bin/sh"]
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 RUN set -eux; 	apk add --no-cache 		ca-certificates 	; # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 RUN set -eux; 	addgroup --gid 99 --system haproxy; 	adduser 		--disabled-password 		--home /var/lib/haproxy 		--ingroup haproxy 		--no-create-home 		--system 		--uid 99 		haproxy 	; 	mkdir /var/lib/haproxy; 	chown haproxy:haproxy /var/lib/haproxy # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_VERSION=3.2-dev1
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_URL=https://www.haproxy.org/download/3.2/src/devel/haproxy-3.2-dev1.tar.gz
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_SHA256=6fea62b4a1bb6f1f1c9f8ec55bd6c272913b4062a23ebf8411b6b1e2c5007a3f
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_VERSION=3.0.7
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_URL=https://www.haproxy.org/download/3.0/src/haproxy-3.0.7.tar.gz
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_SHA256=5c5c6b66645278435a89cd6e2a0d39f8e7d2546212d847bd0d236511ff996f11
+# Fri, 13 Dec 2024 00:50:46 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gcc 		libc-dev 		linux-headers 		lua5.4-dev 		make 		openssl 		openssl-dev 		pcre2-dev 		readline-dev 		tar 	; 		wget -O haproxy.tar.gz "$HAPROXY_URL"; 	echo "$HAPROXY_SHA256 *haproxy.tar.gz" | sha256sum -c; 	mkdir -p /usr/src/haproxy; 	tar -xzf haproxy.tar.gz -C /usr/src/haproxy --strip-components=1; 	rm haproxy.tar.gz; 		makeOpts=' 		TARGET=linux-musl 		USE_GETADDRINFO=1 		USE_LUA=1 LUA_INC=/usr/include/lua5.4 LUA_LIB=/usr/lib/lua5.4 		USE_OPENSSL=1 		USE_PCRE2=1 USE_PCRE2_JIT=1 		USE_PROMEX=1 				EXTRA_OBJS=" 		" 	'; 		nproc="$(getconf _NPROCESSORS_ONLN)"; 	eval "make -C /usr/src/haproxy -j '$nproc' all $makeOpts"; 	eval "make -C /usr/src/haproxy install-bin $makeOpts"; 		mkdir -p /usr/local/etc/haproxy; 	cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors; 	rm -rf /usr/src/haproxy; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .haproxy-rundeps $runDeps; 	apk del --no-network .build-deps; 		haproxy -v # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 STOPSIGNAL SIGUSR1
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 USER haproxy
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 WORKDIR /var/lib/haproxy
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 ```
 
 -	Layers:
-	-	`sha256:22892cdc5e9ff297ac012c2fbe3c12724a3cf4d0a55f5f03f95a7f3ab3e77e36`  
-		Last Modified: Tue, 12 Nov 2024 00:55:07 GMT  
-		Size: 3.6 MB (3572459 bytes)  
+	-	`sha256:8e5e849a30a22d7386238d38bd56dd5564638f4856bee415fad2bc5852c31989`  
+		Last Modified: Thu, 05 Dec 2024 22:17:33 GMT  
+		Size: 3.5 MB (3466081 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c463c0a79078958d61115a21183ccb8e6c89936abd80d508515ee5391dc8a15`  
-		Last Modified: Wed, 11 Dec 2024 22:30:32 GMT  
-		Size: 294.0 KB (294041 bytes)  
+	-	`sha256:597fb22e49e0d405ec83558a88d72ddcf1ec9cb9232141e1498c2b130c0220df`  
+		Last Modified: Fri, 13 Dec 2024 20:28:38 GMT  
+		Size: 299.8 KB (299796 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4471e2b37a63125b868776ed451c0588d62256e63e715de9879fe08d23ee9e13`  
-		Last Modified: Wed, 11 Dec 2024 22:30:32 GMT  
-		Size: 978.0 B  
+	-	`sha256:bbd6d3d4682379dc6a447bdf4d668d20d6766c14914ee9fc9433928204dd5b38`  
+		Last Modified: Fri, 13 Dec 2024 20:28:38 GMT  
+		Size: 974.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75fcab828f0c6a2da8328aa52b1bbe8b05cf404b1fd9efa156810eccdcb36c79`  
-		Last Modified: Wed, 11 Dec 2024 22:30:33 GMT  
-		Size: 12.8 MB (12848988 bytes)  
+	-	`sha256:b6544d41d7195ecbfcaa0527d4c58d9dbeed41e71fc99e41f6ea43cd4fdfc31a`  
+		Last Modified: Fri, 13 Dec 2024 20:28:38 GMT  
+		Size: 9.2 MB (9163122 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8426c17b8cc1352efd934004a945d45cef66478fc3ea6f9ce5e2748b8692dcb`  
-		Last Modified: Wed, 11 Dec 2024 22:30:32 GMT  
-		Size: 444.0 B  
+	-	`sha256:d5c113895bfe59bcf43fac754a0d343d751814958e1ec054e2e71982925230cc`  
+		Last Modified: Fri, 13 Dec 2024 20:28:38 GMT  
+		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `haproxy:3.2-dev1-alpine3.20` - unknown; unknown
+### `haproxy:lts-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull haproxy@sha256:dbf7a483c5dba1186e1dbb39c3f63bc5c08878e823d889aea6fd17cec4fdc197
+$ docker pull haproxy@sha256:24e3abb3712ba53e388b5488a50d504cfbdbb43c2e0d12a038a3412ad0225082
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **197.0 KB (197046 bytes)**  
+-	Total Size: **208.3 KB (208297 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:863958441eb63012ac692f1907ed5498882719885eb327f6f681e023b07b91a2`
+-	Image ID: `sha256:08442913507913d76e93d731e4559d41e1a9802e0efe64f9f127c9b690a64725`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0cc8c83be26d5a30878b12b423754c06a082422afd1f9968beff995f74bfd926`  
-		Last Modified: Wed, 11 Dec 2024 22:30:32 GMT  
-		Size: 177.1 KB (177100 bytes)  
+	-	`sha256:43ebc9670cce16299ef993b79ca21ad221c8ac653f49c4befc2184b378395491`  
+		Last Modified: Fri, 13 Dec 2024 20:28:38 GMT  
+		Size: 187.9 KB (187880 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ceef4a0a7b4eefaab83809e6f29429d6fab206ef2dab11977683cbd0d8623815`  
-		Last Modified: Wed, 11 Dec 2024 22:30:32 GMT  
-		Size: 19.9 KB (19946 bytes)  
+	-	`sha256:1ef1654db97d4f0d0851f959bcc2ff9f713a75512bd7d64e4e48831cb271d853`  
+		Last Modified: Fri, 13 Dec 2024 20:28:38 GMT  
+		Size: 20.4 KB (20417 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `haproxy:3.2-dev1-alpine3.20` - linux; riscv64
+### `haproxy:lts-alpine3.21` - linux; ppc64le
 
 ```console
-$ docker pull haproxy@sha256:570841f41156758dbec429a07e16e158f9cce624047e9be99d6ea361fbf7e792
+$ docker pull haproxy@sha256:18fb6758ba099df9f4df6890551d484b1c7070a3da93820437a00a80cc739c51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **15.4 MB (15440780 bytes)**  
+-	Total Size: **13.8 MB (13783305 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b2e8092aff5394e4a85ea002467bbc302ca518799f5d1c2d6ed4567f4711d84c`
+-	Image ID: `sha256:b0237a755603c5f22fc973fb0c93c2be35cc007263e54eb7d2fc51e3baca2fe5`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["haproxy","-f","\/usr\/local\/etc\/haproxy\/haproxy.cfg"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 12:05:36 GMT
-ADD alpine-minirootfs-3.20.3-riscv64.tar.gz / # buildkit
-# Fri, 06 Sep 2024 12:05:36 GMT
+# Thu, 05 Dec 2024 12:49:04 GMT
+ADD alpine-minirootfs-3.21.0-ppc64le.tar.gz / # buildkit
+# Thu, 05 Dec 2024 12:49:04 GMT
 CMD ["/bin/sh"]
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 RUN set -eux; 	apk add --no-cache 		ca-certificates 	; # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 RUN set -eux; 	addgroup --gid 99 --system haproxy; 	adduser 		--disabled-password 		--home /var/lib/haproxy 		--ingroup haproxy 		--no-create-home 		--system 		--uid 99 		haproxy 	; 	mkdir /var/lib/haproxy; 	chown haproxy:haproxy /var/lib/haproxy # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_VERSION=3.2-dev1
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_URL=https://www.haproxy.org/download/3.2/src/devel/haproxy-3.2-dev1.tar.gz
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_SHA256=6fea62b4a1bb6f1f1c9f8ec55bd6c272913b4062a23ebf8411b6b1e2c5007a3f
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_VERSION=3.0.7
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_URL=https://www.haproxy.org/download/3.0/src/haproxy-3.0.7.tar.gz
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_SHA256=5c5c6b66645278435a89cd6e2a0d39f8e7d2546212d847bd0d236511ff996f11
+# Fri, 13 Dec 2024 00:50:46 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gcc 		libc-dev 		linux-headers 		lua5.4-dev 		make 		openssl 		openssl-dev 		pcre2-dev 		readline-dev 		tar 	; 		wget -O haproxy.tar.gz "$HAPROXY_URL"; 	echo "$HAPROXY_SHA256 *haproxy.tar.gz" | sha256sum -c; 	mkdir -p /usr/src/haproxy; 	tar -xzf haproxy.tar.gz -C /usr/src/haproxy --strip-components=1; 	rm haproxy.tar.gz; 		makeOpts=' 		TARGET=linux-musl 		USE_GETADDRINFO=1 		USE_LUA=1 LUA_INC=/usr/include/lua5.4 LUA_LIB=/usr/lib/lua5.4 		USE_OPENSSL=1 		USE_PCRE2=1 USE_PCRE2_JIT=1 		USE_PROMEX=1 				EXTRA_OBJS=" 		" 	'; 		nproc="$(getconf _NPROCESSORS_ONLN)"; 	eval "make -C /usr/src/haproxy -j '$nproc' all $makeOpts"; 	eval "make -C /usr/src/haproxy install-bin $makeOpts"; 		mkdir -p /usr/local/etc/haproxy; 	cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors; 	rm -rf /usr/src/haproxy; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .haproxy-rundeps $runDeps; 	apk del --no-network .build-deps; 		haproxy -v # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 STOPSIGNAL SIGUSR1
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 USER haproxy
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 WORKDIR /var/lib/haproxy
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 ```
 
 -	Layers:
-	-	`sha256:ea37667e50ca807fa8abc1caf0d21091cbbe1d66b2c217158fb3e91c2787afaf`  
-		Last Modified: Tue, 12 Nov 2024 00:55:56 GMT  
-		Size: 3.4 MB (3371482 bytes)  
+	-	`sha256:a12ff663c50b78339bd273940ba035e29d8220954846a4c35a5f79080b37a3d3`  
+		Last Modified: Thu, 05 Dec 2024 22:18:21 GMT  
+		Size: 3.6 MB (3577108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d3a7d8e10cc876c8b2861fcc79ed00d14ca9c28a2cefdc97e7f861cdb3c8671`  
-		Last Modified: Tue, 12 Nov 2024 03:59:24 GMT  
-		Size: 291.7 KB (291678 bytes)  
+	-	`sha256:d5f4820385be42c4f78279631a96c0bd6d8604e4ceee241be2c85a06ecc6d3fa`  
+		Last Modified: Fri, 13 Dec 2024 20:27:41 GMT  
+		Size: 302.1 KB (302150 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a767220e19fb98d2faec8def112ecc54eaae8f397741bebab931d93413862e25`  
-		Last Modified: Tue, 12 Nov 2024 03:59:24 GMT  
+	-	`sha256:96030b2ed32cc56840069565227b3d7c2042ea8ae99d8a4f34ebafa238fd65de`  
+		Last Modified: Fri, 13 Dec 2024 20:27:40 GMT  
+		Size: 976.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:735bc988b1e9aed4e77864b642cda26d140f8d6455e3c4a8bf6c1f4b180260cf`  
+		Last Modified: Fri, 13 Dec 2024 20:29:08 GMT  
+		Size: 9.9 MB (9902594 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fd13d51220e80584090af676c784ef75b780ad042ace6239c4fd25e41f8234ff`  
+		Last Modified: Fri, 13 Dec 2024 20:29:07 GMT  
+		Size: 445.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `haproxy:lts-alpine3.21` - unknown; unknown
+
+```console
+$ docker pull haproxy@sha256:2e3536b934417487ce9d4dad0e0da4fb0095a7a7a92f5b363317a2b4577b8f85
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **206.5 KB (206530 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:91fd9837c3eb059bfe0bd04c59675d5a10b7ad2aee6e3ed748b3e45b47b7184d`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:21056f300c017b591b36474e84738280c1936d8ed8f050cfb1a06a608c1b2db1`  
+		Last Modified: Fri, 13 Dec 2024 20:29:07 GMT  
+		Size: 186.0 KB (186007 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:590a880bc30798beddded9479c4d87f4b1501a0d7cfbd214947472b5b944d970`  
+		Last Modified: Fri, 13 Dec 2024 20:29:07 GMT  
+		Size: 20.5 KB (20523 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `haproxy:lts-alpine3.21` - linux; riscv64
+
+```console
+$ docker pull haproxy@sha256:25530e443a81a2d3ba257dbdc42232ba663609e92b11440db3fb1476ee2b43fa
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **12.7 MB (12719312 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9703caab87f5cb54ed520e54e2fe38180d61e98bd0cc0268fce3a1e0b4cae8cc`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["haproxy","-f","\/usr\/local\/etc\/haproxy\/haproxy.cfg"]`
+
+```dockerfile
+# Thu, 05 Dec 2024 12:49:04 GMT
+ADD alpine-minirootfs-3.21.0-riscv64.tar.gz / # buildkit
+# Thu, 05 Dec 2024 12:49:04 GMT
+CMD ["/bin/sh"]
+# Fri, 13 Dec 2024 00:50:46 GMT
+RUN set -eux; 	apk add --no-cache 		ca-certificates 	; # buildkit
+# Fri, 13 Dec 2024 00:50:46 GMT
+RUN set -eux; 	addgroup --gid 99 --system haproxy; 	adduser 		--disabled-password 		--home /var/lib/haproxy 		--ingroup haproxy 		--no-create-home 		--system 		--uid 99 		haproxy 	; 	mkdir /var/lib/haproxy; 	chown haproxy:haproxy /var/lib/haproxy # buildkit
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_VERSION=3.0.7
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_URL=https://www.haproxy.org/download/3.0/src/haproxy-3.0.7.tar.gz
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_SHA256=5c5c6b66645278435a89cd6e2a0d39f8e7d2546212d847bd0d236511ff996f11
+# Fri, 13 Dec 2024 00:50:46 GMT
+RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gcc 		libc-dev 		linux-headers 		lua5.4-dev 		make 		openssl 		openssl-dev 		pcre2-dev 		readline-dev 		tar 	; 		wget -O haproxy.tar.gz "$HAPROXY_URL"; 	echo "$HAPROXY_SHA256 *haproxy.tar.gz" | sha256sum -c; 	mkdir -p /usr/src/haproxy; 	tar -xzf haproxy.tar.gz -C /usr/src/haproxy --strip-components=1; 	rm haproxy.tar.gz; 		makeOpts=' 		TARGET=linux-musl 		USE_GETADDRINFO=1 		USE_LUA=1 LUA_INC=/usr/include/lua5.4 LUA_LIB=/usr/lib/lua5.4 		USE_OPENSSL=1 		USE_PCRE2=1 USE_PCRE2_JIT=1 		USE_PROMEX=1 				EXTRA_OBJS=" 		" 	'; 		nproc="$(getconf _NPROCESSORS_ONLN)"; 	eval "make -C /usr/src/haproxy -j '$nproc' all $makeOpts"; 	eval "make -C /usr/src/haproxy install-bin $makeOpts"; 		mkdir -p /usr/local/etc/haproxy; 	cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors; 	rm -rf /usr/src/haproxy; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .haproxy-rundeps $runDeps; 	apk del --no-network .build-deps; 		haproxy -v # buildkit
+# Fri, 13 Dec 2024 00:50:46 GMT
+STOPSIGNAL SIGUSR1
+# Fri, 13 Dec 2024 00:50:46 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Fri, 13 Dec 2024 00:50:46 GMT
+USER haproxy
+# Fri, 13 Dec 2024 00:50:46 GMT
+WORKDIR /var/lib/haproxy
+# Fri, 13 Dec 2024 00:50:46 GMT
+CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
+```
+
+-	Layers:
+	-	`sha256:a6d4526e72329f3572a607f27b44cacf8e150856b24a0178c889732b00471eb3`  
+		Last Modified: Thu, 05 Dec 2024 22:19:03 GMT  
+		Size: 3.4 MB (3354022 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:dd31ceeba599115c930bf00886a89fdfdace42c270afdfc6cf5034c408581f24`  
+		Last Modified: Fri, 13 Dec 2024 22:24:05 GMT  
+		Size: 299.6 KB (299642 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0fcaf500a9bfbc533b8dae448d15e0b3e8e16aeeb12b412a6a51aee6eb18a0d8`  
+		Last Modified: Fri, 13 Dec 2024 22:24:04 GMT  
 		Size: 978.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84e1aa25cda0e1b481da6e68e27cc4dede97574c91c81390ca67269beda9e7f7`  
-		Last Modified: Wed, 11 Dec 2024 22:40:22 GMT  
-		Size: 11.8 MB (11776161 bytes)  
+	-	`sha256:8e02a6a5a3768f8944abd9ad850be4d85e266dc48b9d913329cc15822c20a2af`  
+		Last Modified: Fri, 13 Dec 2024 22:47:52 GMT  
+		Size: 9.1 MB (9064189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c5532051588dfe092f60c7f8a08a0bf88076689518921bcbd19c629f44f5c59c`  
-		Last Modified: Wed, 11 Dec 2024 22:40:20 GMT  
+	-	`sha256:9df7b98993ab5754687cd0774484b05aa19d502d213071f88713440809c19aea`  
+		Last Modified: Fri, 13 Dec 2024 22:47:51 GMT  
 		Size: 449.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -653,120 +653,120 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `haproxy:3.2-dev1-alpine3.20` - unknown; unknown
+### `haproxy:lts-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull haproxy@sha256:7cf17b2f9d3b4d20588b6d205ecacc777356cbf8dd612f372511ace87ec65694
+$ docker pull haproxy@sha256:c0e3e6b053b8ad25ac72877772c2c6f23a72d50ab338270d10c7a94522df321c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **197.0 KB (197042 bytes)**  
+-	Total Size: **206.5 KB (206526 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c947871589d8d483d414b93e082549a0f66edc32119e336baad2e906b2b04512`
+-	Image ID: `sha256:731eaeca85317387bb4660bade7c1a100aa3fa02cb131251b512d0935731d36f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0fb34129f299307c4ab72a07903da3a58668b9510bfacfc7e23d9f995f20b552`  
-		Last Modified: Wed, 11 Dec 2024 22:40:20 GMT  
-		Size: 177.1 KB (177096 bytes)  
+	-	`sha256:4719145ea07be1c83397ae6a788b62607ebf2ef600a2aed80b4d3b512bec5a9d`  
+		Last Modified: Fri, 13 Dec 2024 22:47:51 GMT  
+		Size: 186.0 KB (186003 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:91a17b3637d65ee0fb8629487131639b59f86fa8808a7cee8958ded24190eaeb`  
-		Last Modified: Wed, 11 Dec 2024 22:40:20 GMT  
-		Size: 19.9 KB (19946 bytes)  
+	-	`sha256:54be66ed6c2c4dece704d4069ee4c890061a74cd410b23c19c648b6f02f0432e`  
+		Last Modified: Fri, 13 Dec 2024 22:47:51 GMT  
+		Size: 20.5 KB (20523 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `haproxy:3.2-dev1-alpine3.20` - linux; s390x
+### `haproxy:lts-alpine3.21` - linux; s390x
 
 ```console
-$ docker pull haproxy@sha256:879f09ada5b9da30fa05a2cd7061e83706b165e565d057ecd09077bbb6c3bf1e
+$ docker pull haproxy@sha256:347a52f03611b3ebbf4bc2a8282b445255bd403727d20d90cda17e826462e51a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.3 MB (16266560 bytes)**  
+-	Total Size: **13.4 MB (13352890 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff848a8a38f93ad420c0ceb2699c952e46e9ec8227ca330a145528ae086ba5a5`
+-	Image ID: `sha256:b464abae9ee70d3ec978493824eaa2b0c022fb3f30656c86c6bb7f2b8ec713ae`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["haproxy","-f","\/usr\/local\/etc\/haproxy\/haproxy.cfg"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 12:05:36 GMT
-ADD alpine-minirootfs-3.20.3-s390x.tar.gz / # buildkit
-# Fri, 06 Sep 2024 12:05:36 GMT
+# Thu, 05 Dec 2024 12:49:04 GMT
+ADD alpine-minirootfs-3.21.0-s390x.tar.gz / # buildkit
+# Thu, 05 Dec 2024 12:49:04 GMT
 CMD ["/bin/sh"]
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 RUN set -eux; 	apk add --no-cache 		ca-certificates 	; # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 RUN set -eux; 	addgroup --gid 99 --system haproxy; 	adduser 		--disabled-password 		--home /var/lib/haproxy 		--ingroup haproxy 		--no-create-home 		--system 		--uid 99 		haproxy 	; 	mkdir /var/lib/haproxy; 	chown haproxy:haproxy /var/lib/haproxy # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_VERSION=3.2-dev1
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_URL=https://www.haproxy.org/download/3.2/src/devel/haproxy-3.2-dev1.tar.gz
-# Wed, 11 Dec 2024 18:16:31 GMT
-ENV HAPROXY_SHA256=6fea62b4a1bb6f1f1c9f8ec55bd6c272913b4062a23ebf8411b6b1e2c5007a3f
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_VERSION=3.0.7
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_URL=https://www.haproxy.org/download/3.0/src/haproxy-3.0.7.tar.gz
+# Fri, 13 Dec 2024 00:50:46 GMT
+ENV HAPROXY_SHA256=5c5c6b66645278435a89cd6e2a0d39f8e7d2546212d847bd0d236511ff996f11
+# Fri, 13 Dec 2024 00:50:46 GMT
 RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gcc 		libc-dev 		linux-headers 		lua5.4-dev 		make 		openssl 		openssl-dev 		pcre2-dev 		readline-dev 		tar 	; 		wget -O haproxy.tar.gz "$HAPROXY_URL"; 	echo "$HAPROXY_SHA256 *haproxy.tar.gz" | sha256sum -c; 	mkdir -p /usr/src/haproxy; 	tar -xzf haproxy.tar.gz -C /usr/src/haproxy --strip-components=1; 	rm haproxy.tar.gz; 		makeOpts=' 		TARGET=linux-musl 		USE_GETADDRINFO=1 		USE_LUA=1 LUA_INC=/usr/include/lua5.4 LUA_LIB=/usr/lib/lua5.4 		USE_OPENSSL=1 		USE_PCRE2=1 USE_PCRE2_JIT=1 		USE_PROMEX=1 				EXTRA_OBJS=" 		" 	'; 		nproc="$(getconf _NPROCESSORS_ONLN)"; 	eval "make -C /usr/src/haproxy -j '$nproc' all $makeOpts"; 	eval "make -C /usr/src/haproxy install-bin $makeOpts"; 		mkdir -p /usr/local/etc/haproxy; 	cp -R /usr/src/haproxy/examples/errorfiles /usr/local/etc/haproxy/errors; 	rm -rf /usr/src/haproxy; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .haproxy-rundeps $runDeps; 	apk del --no-network .build-deps; 		haproxy -v # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 STOPSIGNAL SIGUSR1
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 USER haproxy
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 WORKDIR /var/lib/haproxy
-# Wed, 11 Dec 2024 18:16:31 GMT
+# Fri, 13 Dec 2024 00:50:46 GMT
 CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 ```
 
 -	Layers:
-	-	`sha256:4261d20208fd5fe57c9f53c86783089a963169d6db6f16306e083ca43f937e0b`  
-		Last Modified: Tue, 12 Nov 2024 00:55:29 GMT  
-		Size: 3.5 MB (3461608 bytes)  
+	-	`sha256:ff43eb924acdd7a1002f16e7eb02fc41d4f0bae5329c5666d70c223b6e44f6a1`  
+		Last Modified: Thu, 05 Dec 2024 22:19:55 GMT  
+		Size: 3.5 MB (3469520 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5a5b88d63cee51eb69d8f7fefe7edea845f61d5c1ceef9702cc0400406d1a22`  
-		Last Modified: Wed, 11 Dec 2024 22:31:40 GMT  
-		Size: 291.9 KB (291898 bytes)  
+	-	`sha256:c1c6bb41d73f39a586e7546bef3089a9f187cce6a791b0ced28e805eb51cd271`  
+		Last Modified: Fri, 13 Dec 2024 20:28:54 GMT  
+		Size: 300.4 KB (300434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c41c6808543622418dcf358c7652f9f5438ab84b7adf92dab2c90ce79d72139`  
-		Last Modified: Wed, 11 Dec 2024 22:31:40 GMT  
-		Size: 981.0 B  
+	-	`sha256:e3371042292b97385cd0692d6fa54b079ae46a89c8c47da15e9c8f6c33acf3c7`  
+		Last Modified: Fri, 13 Dec 2024 20:28:54 GMT  
+		Size: 976.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8d40bcb8b943479e6f244abb2fc8578549aa96c1100c9f445fd3d73954f0120e`  
-		Last Modified: Wed, 11 Dec 2024 22:31:41 GMT  
-		Size: 12.5 MB (12511599 bytes)  
+	-	`sha256:df62f705d14611070afc8525a19ffc125b9826d9b22f4b45da2c28ab46ec76f1`  
+		Last Modified: Fri, 13 Dec 2024 20:31:47 GMT  
+		Size: 9.6 MB (9581482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31c212c680e20233c34b7671e525ed15edadd2b3ea02b2d62fccdbc89dd46446`  
-		Last Modified: Wed, 11 Dec 2024 22:31:41 GMT  
-		Size: 442.0 B  
+	-	`sha256:aab5ddf2f5fde808d32259a6b20eba65faf665ed44fc22d4a2f1d2a72903118e`  
+		Last Modified: Fri, 13 Dec 2024 20:31:47 GMT  
+		Size: 446.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `haproxy:3.2-dev1-alpine3.20` - unknown; unknown
+### `haproxy:lts-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull haproxy@sha256:9d1f1a26b3521aa1391a81f3e13523b47499d78e183c0eccbc5857a23b0a0017
+$ docker pull haproxy@sha256:e7dd47d5d338c29bb70fba00b865c652d95be6d9a8d3b6ff45ea9bff506dd7a3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **197.0 KB (196964 bytes)**  
+-	Total Size: **206.4 KB (206423 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a898067266aae1784e16aa9eb6f990db332e58f0a03be66043625988f5040ee8`
+-	Image ID: `sha256:bd04a98fe56c41e244c666322c846e39be94b60d7aa67547a242b8b7d1e768a1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:51e78132c83f851de3dcdabaee863889b60448d9967595ee5a19c2081ceca5b9`  
-		Last Modified: Wed, 11 Dec 2024 22:31:40 GMT  
-		Size: 177.1 KB (177066 bytes)  
+	-	`sha256:cbea9d47862cae9a9a936ddee4da605833975277d8a5a5071900fc54f1cf6857`  
+		Last Modified: Fri, 13 Dec 2024 20:31:47 GMT  
+		Size: 186.0 KB (185961 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c93f8896dbe3ed9b08a81ac83dde803dbb1ade14646fd88717ac8ed1681aa4b1`  
-		Last Modified: Wed, 11 Dec 2024 22:31:40 GMT  
-		Size: 19.9 KB (19898 bytes)  
+	-	`sha256:20aae91cb5ca60a21955565eebe28b521923936f46519ac74261b8ac8b978215`  
+		Last Modified: Fri, 13 Dec 2024 20:31:47 GMT  
+		Size: 20.5 KB (20462 bytes)  
 		MIME: application/vnd.in-toto+json
