@@ -439,11 +439,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris curl=8.11.0-1
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.11.0-1.dsc' curl_8.11.0-1.dsc 3252 SHA256:1fa81ff7d58c593cd65fd8ea60dc225aa4aa4b196ed23bfcfb0bfdad02953dab
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.11.0.orig.tar.gz' curl_8.11.0.orig.tar.gz 4167839 SHA256:264537d90e58d2b09dddc50944baf3c38e7089151c8986715e2aaeaaf2b8118f
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.11.0.orig.tar.gz.asc' curl_8.11.0.orig.tar.gz.asc 488 SHA256:b709d6115f2dbf47e3bfb1bbb5b70b235476f8b1bd46973a8b3afe7b74149c52
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.11.0-1.debian.tar.xz' curl_8.11.0-1.debian.tar.xz 55384 SHA256:e46ebcfb907ba6929770ff0e0b3a8a4a8019e8ed2f7d3491b10ccf2e6e9b4006
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.11.0-1.dsc' curl_8.11.0-1.dsc 3252 SHA256:1fa81ff7d58c593cd65fd8ea60dc225aa4aa4b196ed23bfcfb0bfdad02953dab
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.11.0.orig.tar.gz' curl_8.11.0.orig.tar.gz 4167839 SHA256:264537d90e58d2b09dddc50944baf3c38e7089151c8986715e2aaeaaf2b8118f
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.11.0.orig.tar.gz.asc' curl_8.11.0.orig.tar.gz.asc 488 SHA256:b709d6115f2dbf47e3bfb1bbb5b70b235476f8b1bd46973a8b3afe7b74149c52
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.11.0-1.debian.tar.xz' curl_8.11.0-1.debian.tar.xz 55384 SHA256:e46ebcfb907ba6929770ff0e0b3a8a4a8019e8ed2f7d3491b10ccf2e6e9b4006
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/curl/8.11.0-1/ (for browsing the source)
+- https://sources.debian.net/src/curl/8.11.0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/8.11.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-8`
 
@@ -1003,21 +1009,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0t64/copyright`)
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.82.2-3
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.2-3.dsc' glib2.0_2.82.2-3.dsc 4921 SHA256:e8a5be508d8c1c339c08a2bde5cc603aba8d7b92e8c64a0f438e60cec436d81e
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.2.orig-unicode-data.tar.xz' glib2.0_2.82.2.orig-unicode-data.tar.xz 262908 SHA256:9bf66a7e9f2f18cbd7a72f561dc1f997990b53243435008777109c823cd7e1ea
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.2.orig.tar.xz' glib2.0_2.82.2.orig.tar.xz 5555528 SHA256:ab45f5a323048b1659ee0fbda5cecd94b099ab3e4b9abf26ae06aeb3e781fd63
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.2-3.debian.tar.xz' glib2.0_2.82.2-3.debian.tar.xz 141444 SHA256:75b15253ba4e09b5fbaa4c7210569c879673636e724e765ef5f3a56e466095c1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.82.2-3/
 
-- https://sources.debian.net/src/glib2.0/2.82.2-3/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.82.2-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.82.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.40-4`
 
@@ -1195,21 +1193,13 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.12-1.1
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12-1.1.dsc' gzip_1.12-1.1.dsc 2167 SHA256:212bff0edd2ccbbf816d7168f46f81d714b57043c249411e2e2d0fd71c3d3e40
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12.orig.tar.xz' gzip_1.12.orig.tar.xz 825548 SHA256:ce5e03e519f637e1f814011ace35c4f87b33c0bbabeec35baf5fbd3479e91956
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12.orig.tar.xz.asc' gzip_1.12.orig.tar.xz.asc 833 SHA256:3ed9ab54452576e0be0d477c772c9f47baa36415133fef7dd1fcf7b15480ba32
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12-1.1.debian.tar.xz' gzip_1.12-1.1.debian.tar.xz 19244 SHA256:d48d5314c0255114f43964f78b87262299bbac840e5f511a078e2d2590937ad6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gzip/1.12-1.1/
 
-- https://sources.debian.net/src/gzip/1.12-1.1/ (for browsing the source)
-- https://sources.debian.net/src/gzip/1.12-1.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gzip/1.12-1.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `harfbuzz=10.0.1-1`
 
@@ -1241,20 +1231,13 @@ Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 - `UFL-1.0`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=10.0.1-1
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_10.0.1-1.dsc' harfbuzz_10.0.1-1.dsc 2887 SHA256:18a4c6efe5104c47fe6968e6e46e54cc709efe68eb13d1a88117a3913741ff89
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_10.0.1.orig.tar.xz' harfbuzz_10.0.1.orig.tar.xz 17914712 SHA256:b2cb13bd351904cb9038f907dc0dee0ae07127061242fe3556b2795c4e9748fc
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_10.0.1-1.debian.tar.xz' harfbuzz_10.0.1-1.debian.tar.xz 19880 SHA256:405d1fdab68135d3915dc21d146baf3e5357ac414b4912722b7c7a4098e3370c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/harfbuzz/10.0.1-1/
 
-- https://sources.debian.net/src/harfbuzz/10.0.1-1/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/10.0.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/10.0.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.25`
 
@@ -2855,20 +2838,13 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-16-0/copyright`, `/usr/share/do
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre2=10.44-4
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.44-4.dsc' pcre2_10.44-4.dsc 2340 SHA256:5e414aa6efd346705abd29e6c99e863e90dc86277fa76b6be3f1ef102ee802a5
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.44.orig.tar.gz' pcre2_10.44.orig.tar.gz 2552792 SHA256:86b9cb0aa3bcb7994faa88018292bc704cdbb708e785f7c74352ff6ea7d3175b
-'http://deb.debian.org/debian/pool/main/p/pcre2/pcre2_10.44-4.diff.gz' pcre2_10.44-4.diff.gz 15999 SHA256:d78d855dc54393baa35e70850e27eaaffce3ca7ee8b0f426091a5537fc4867b7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pcre2/10.44-4/
 
-- https://sources.debian.net/src/pcre2/10.44-4/ (for browsing the source)
-- https://sources.debian.net/src/pcre2/10.44-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pcre2/10.44-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `perl=5.40.0-8`
 
@@ -3313,14 +3289,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257~rc3-1
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_257%7erc3-1.dsc' systemd_257~rc3-1.dsc 8665 SHA256:a7340c356731febbaeec44f360932cc9f9b5b7bae025c494b1f74f00b1edcd96
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_257%7erc3.orig.tar.gz' systemd_257~rc3.orig.tar.gz 16226197 SHA256:bb0837988c3fb9b60d8ad38be791663a30cdb606242665f1157e1d884e2d892a
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_257%7erc3-1.debian.tar.xz' systemd_257~rc3-1.debian.tar.xz 175832 SHA256:c068395d476f335812b83a72379072f04b4dd5a2edaff2e9ea149863db644a5b
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/systemd/257~rc3-1/
+
 
 ### `dpkg` source package: `sysvinit=3.11-1`
 
@@ -3644,20 +3619,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xauth=1:1.1.2-1
-'http://deb.debian.org/debian/pool/main/x/xauth/xauth_1.1.2-1.dsc' xauth_1.1.2-1.dsc 1840 SHA256:5b6f718530b68c385368bae7267e7dd0044882290e7b3e4fbe6d63bb8d65c9f0
-'http://deb.debian.org/debian/pool/main/x/xauth/xauth_1.1.2.orig.tar.gz' xauth_1.1.2.orig.tar.gz 214621 SHA256:84d27a1023d8da524c134f424b312e53cb96e08871f96868aa20316bfcbbc054
-'http://deb.debian.org/debian/pool/main/x/xauth/xauth_1.1.2-1.diff.gz' xauth_1.1.2-1.diff.gz 18091 SHA256:6afd6f9a3c9b6320e4b523bbe6e5ff3960d59310c9b0efc8b6496d39144710ed
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/xauth/1:1.1.2-1/
 
-- https://sources.debian.net/src/xauth/1:1.1.2-1/ (for browsing the source)
-- https://sources.debian.net/src/xauth/1:1.1.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xauth/1:1.1.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xdg-utils=1.2.1-2`
 
