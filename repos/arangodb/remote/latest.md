@@ -1,7 +1,7 @@
 ## `arangodb:latest`
 
 ```console
-$ docker pull arangodb@sha256:bab5f96a0cd667f3cd2ef6eb2f058bce89a94c1f9e86b7dec864254a55f52ad3
+$ docker pull arangodb@sha256:adeaa727f37b9c53bf1e58551812774ab01f8729a9a1317d4e0aa9be668660a2
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,163 +14,163 @@ $ docker pull arangodb@sha256:bab5f96a0cd667f3cd2ef6eb2f058bce89a94c1f9e86b7dec8
 ### `arangodb:latest` - linux; amd64
 
 ```console
-$ docker pull arangodb@sha256:98dee3ef63853826c6b162b189ad9bc0cbd28736b8f86449949e7309553fa259
+$ docker pull arangodb@sha256:967dc76e9507b9671ae315180c23dcf83c945ea4af4d141f41c7a0ee014f55fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.6 MB (304636261 bytes)**  
+-	Total Size: **305.0 MB (304980753 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:61cbf573466c897f98267dae7f24e353b7a4e675fe66d5a53f80df2da2628908`
+-	Image ID: `sha256:b0c14a24222eb26d9677a9f423fc3a0255e73b9dce0c9a640e8c6d3508df4ff2`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["arangod"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 12:02:06 GMT
-ADD alpine-minirootfs-3.17.10-x86_64.tar.gz / # buildkit
-# Fri, 06 Sep 2024 12:02:06 GMT
+# Fri, 06 Sep 2024 12:03:22 GMT
+ADD alpine-minirootfs-3.18.9-x86_64.tar.gz / # buildkit
+# Fri, 06 Sep 2024 12:03:22 GMT
 CMD ["/bin/sh"]
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 MAINTAINER Frank Celler <info@arangodb.com>
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 ENV ARANGO_VERSION=3.12.3
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 RUN apk add --no-cache gnupg pwgen binutils numactl numactl-tools &&     gpg --batch --keyserver keys.openpgp.org --recv-keys 8003EDF6F05459984878D4A6C04AD0FD86FEC04D &&     mkdir /docker-entrypoint-initdb.d &&     cd /tmp                                &&     arch="$(apk --print-arch)"             &&     case "$arch" in                                   x86_64)  dpkgArch='amd64'          ;;         aarch64) dpkgArch='arm64'          ;;         *) echo >&2 "unsupported: $arch" && exit 1 ;;     esac                                   &&     ARANGO_URL="https://download.arangodb.com/arangodb312/DEBIAN/$dpkgArch" &&     ARANGO_PACKAGE="arangodb3_${ARANGO_VERSION}-1_${dpkgArch}.deb" &&     ARANGO_PACKAGE_URL="${ARANGO_URL}/${ARANGO_PACKAGE}" &&     ARANGO_SIGNATURE_URL="${ARANGO_PACKAGE_URL}.asc" &&     wget ${ARANGO_SIGNATURE_URL}           &&     wget ${ARANGO_PACKAGE_URL}             &&     gpg --verify ${ARANGO_PACKAGE}.asc     &&     ar x ${ARANGO_PACKAGE} data.tar.gz     &&     tar -C / -x -z -f data.tar.gz          &&     sed -ri         -e 's!127\.0\.0\.1!0.0.0.0!g'         -e 's!^(file\s*=\s*).*!\1 -!'         -e 's!^\s*uid\s*=.*!!'         /etc/arangodb3/arangod.conf        &&     chgrp -R 0 /var/lib/arangodb3 /var/lib/arangodb3-apps &&     chmod -R 775 /var/lib/arangodb3 /var/lib/arangodb3-apps &&     rm -f ${ARANGO_PACKAGE}* data.tar.gz &&     apk del gnupg # buildkit
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 ENV GLIBCXX_FORCE_NEW=1
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 RUN echo "UTC" > /etc/timezone # buildkit
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 VOLUME [/var/lib/arangodb3 /var/lib/arangodb3-apps]
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 EXPOSE map[8529/tcp:{}]
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 CMD ["arangod"]
 ```
 
 -	Layers:
-	-	`sha256:fbcfea79c1c4819e0689385057cfd4cbd2ee9ba20e6d420b360644788a22862c`  
-		Last Modified: Mon, 09 Sep 2024 07:01:59 GMT  
-		Size: 3.4 MB (3392252 bytes)  
+	-	`sha256:dc0decf4841d19b14e836c2d82bd5cb9540fb5e0d1359549ca243f49036557e9`  
+		Last Modified: Mon, 09 Sep 2024 07:02:43 GMT  
+		Size: 3.4 MB (3416401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b84a29e021b6aaeabf075ce866c32091fd8ef712fab99f9fda373a5ea636b9f6`  
-		Last Modified: Tue, 12 Nov 2024 02:02:16 GMT  
-		Size: 301.2 MB (301241853 bytes)  
+	-	`sha256:e14e191d0c9dfa842273ab598994dd6b2096bcfcea1264a43a6b729037b28669`  
+		Last Modified: Fri, 13 Dec 2024 22:27:59 GMT  
+		Size: 301.6 MB (301562196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c5ab759f98983a52ff63397651f5a3fae8b1a3df12ddf541a8c33c6ff136a0f`  
-		Last Modified: Tue, 12 Nov 2024 02:02:06 GMT  
+	-	`sha256:be08d90dbea18c6a8a8df8d03a510cde742483f9718dafe9f7228a8a9aad0dde`  
+		Last Modified: Fri, 13 Dec 2024 22:27:52 GMT  
 		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47eda9f35c5db5a20cdc21a94c2c33f7476801a78dd4cc5838f84a33d32a6644`  
-		Last Modified: Tue, 12 Nov 2024 02:02:06 GMT  
+	-	`sha256:454e295c1ca40e9283f772c20807e853a125e69e0cce1761cdf8a26744439e47`  
+		Last Modified: Fri, 13 Dec 2024 22:27:52 GMT  
 		Size: 2.0 KB (2016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `arangodb:latest` - unknown; unknown
 
 ```console
-$ docker pull arangodb@sha256:845c9dfee6094aea497c014869c699e3a9987cee93586de26ce0e18cfe342c9e
+$ docker pull arangodb@sha256:7a7c14147663bafb1435addff25ec1dcd42539f3a37e485f6d0d03fb22913eab
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **372.9 KB (372905 bytes)**  
+-	Total Size: **377.0 KB (376978 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c110e5dc85c76c5fb3bde7d10a499557d4c419e5880b9dfbd97685fe0231b03`
+-	Image ID: `sha256:50b84f6bcda6a96189a5dbd6c5ba99b53bf5e0499702bb4e6bb0f4458356b379`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e1d5a7fef24fc5803d50e90ffd05076e6e2c31dc2adee6bff6a50b27c245b7cf`  
-		Last Modified: Tue, 12 Nov 2024 02:02:06 GMT  
-		Size: 358.5 KB (358520 bytes)  
+	-	`sha256:72dceff12dcd619058f21847ede4eb18a18aafadb08d4ac0b464618a6ae5c075`  
+		Last Modified: Fri, 13 Dec 2024 22:27:52 GMT  
+		Size: 362.6 KB (362557 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:51e15f395bd212b71c9bfa97c3fe80c1ef8a28d2c92b213aee3206a6536ba9fd`  
-		Last Modified: Tue, 12 Nov 2024 02:02:06 GMT  
-		Size: 14.4 KB (14385 bytes)  
+	-	`sha256:db71984b14eb46e9a0729136b86ae4d1414134e6b014cbe3c2c7107e82a74372`  
+		Last Modified: Fri, 13 Dec 2024 22:27:52 GMT  
+		Size: 14.4 KB (14421 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `arangodb:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull arangodb@sha256:5c5a9c26a373492d81244bd0e6c932631b332ac4ef86d4a5efe8c77cd6eb1d33
+$ docker pull arangodb@sha256:a6c730c5b6450dc07d880df0bca51dc1eed54250938dd4b201d1c106990b466b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **306.5 MB (306524920 bytes)**  
+-	Total Size: **307.0 MB (307022235 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:19aee834bf6ab375f9410ab8b6826994a9c9d150925ea1ac6e62b45173185ab5`
+-	Image ID: `sha256:51a89ed54d108b80c6f24f6b4d4b4af0fe7c3492af2b3701818729a1f9910ef7`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["arangod"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 12:02:06 GMT
-ADD alpine-minirootfs-3.17.10-aarch64.tar.gz / # buildkit
-# Fri, 06 Sep 2024 12:02:06 GMT
+# Fri, 06 Sep 2024 12:03:22 GMT
+ADD alpine-minirootfs-3.18.9-aarch64.tar.gz / # buildkit
+# Fri, 06 Sep 2024 12:03:22 GMT
 CMD ["/bin/sh"]
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 MAINTAINER Frank Celler <info@arangodb.com>
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 ENV ARANGO_VERSION=3.12.3
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 RUN apk add --no-cache gnupg pwgen binutils numactl numactl-tools &&     gpg --batch --keyserver keys.openpgp.org --recv-keys 8003EDF6F05459984878D4A6C04AD0FD86FEC04D &&     mkdir /docker-entrypoint-initdb.d &&     cd /tmp                                &&     arch="$(apk --print-arch)"             &&     case "$arch" in                                   x86_64)  dpkgArch='amd64'          ;;         aarch64) dpkgArch='arm64'          ;;         *) echo >&2 "unsupported: $arch" && exit 1 ;;     esac                                   &&     ARANGO_URL="https://download.arangodb.com/arangodb312/DEBIAN/$dpkgArch" &&     ARANGO_PACKAGE="arangodb3_${ARANGO_VERSION}-1_${dpkgArch}.deb" &&     ARANGO_PACKAGE_URL="${ARANGO_URL}/${ARANGO_PACKAGE}" &&     ARANGO_SIGNATURE_URL="${ARANGO_PACKAGE_URL}.asc" &&     wget ${ARANGO_SIGNATURE_URL}           &&     wget ${ARANGO_PACKAGE_URL}             &&     gpg --verify ${ARANGO_PACKAGE}.asc     &&     ar x ${ARANGO_PACKAGE} data.tar.gz     &&     tar -C / -x -z -f data.tar.gz          &&     sed -ri         -e 's!127\.0\.0\.1!0.0.0.0!g'         -e 's!^(file\s*=\s*).*!\1 -!'         -e 's!^\s*uid\s*=.*!!'         /etc/arangodb3/arangod.conf        &&     chgrp -R 0 /var/lib/arangodb3 /var/lib/arangodb3-apps &&     chmod -R 775 /var/lib/arangodb3 /var/lib/arangodb3-apps &&     rm -f ${ARANGO_PACKAGE}* data.tar.gz &&     apk del gnupg # buildkit
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 ENV GLIBCXX_FORCE_NEW=1
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 RUN echo "UTC" > /etc/timezone # buildkit
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 VOLUME [/var/lib/arangodb3 /var/lib/arangodb3-apps]
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 EXPOSE map[8529/tcp:{}]
-# Wed, 30 Oct 2024 15:12:33 GMT
+# Fri, 13 Dec 2024 15:32:12 GMT
 CMD ["arangod"]
 ```
 
 -	Layers:
-	-	`sha256:61254a502902280aa7caa832f8b3ed5c96aa04faf42ab0ba23ff17638f910f21`  
-		Last Modified: Mon, 09 Sep 2024 07:02:02 GMT  
-		Size: 3.3 MB (3275161 bytes)  
+	-	`sha256:0dfcae9cb3f09031e3687535f2d3e3c2f08533799b67ed61076e79e4ed1c7c4a`  
+		Last Modified: Mon, 09 Sep 2024 07:02:44 GMT  
+		Size: 3.3 MB (3340451 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9e8e9682cd434a2ff1f05b8704c94bc802b2a4676dab3d5b6f19874bf55a864`  
-		Last Modified: Tue, 12 Nov 2024 02:04:12 GMT  
-		Size: 303.2 MB (303247603 bytes)  
+	-	`sha256:b9f28796bd11769c801303bffc3deb305dc81ffe1c1ea61f9745261a37282287`  
+		Last Modified: Fri, 13 Dec 2024 22:27:37 GMT  
+		Size: 303.7 MB (303679629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03f16d88fc0fd758c5db76f41930152f7a237f0963dc0697c99e75dd10f8dae8`  
-		Last Modified: Tue, 12 Nov 2024 02:04:05 GMT  
+	-	`sha256:537a98245e53bbd806aba6b3ab77f00c98d14efb3ca146af8950b05091be46c9`  
+		Last Modified: Fri, 13 Dec 2024 22:27:30 GMT  
 		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6ad0d0cfd87b12f0d4f8e2e8ae21d794ab6c36e018bc84d180091112073d86b`  
-		Last Modified: Tue, 12 Nov 2024 02:04:05 GMT  
-		Size: 2.0 KB (2016 bytes)  
+	-	`sha256:1c64b585c9406e1fdbb6d3626b4591005fe8330f7c08e9cb8a86a56d84e55678`  
+		Last Modified: Fri, 13 Dec 2024 22:27:30 GMT  
+		Size: 2.0 KB (2015 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `arangodb:latest` - unknown; unknown
 
 ```console
-$ docker pull arangodb@sha256:93368a07c6f35753b2f185178c69fe2602bbf6663edebe4f6bb8e5bd475b282f
+$ docker pull arangodb@sha256:8d412bd91489c98b2a4f94ff2ba75d8a57e03a5cac5dc29acf8e8768da6d6aba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **478.3 KB (478310 bytes)**  
+-	Total Size: **482.4 KB (482383 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f94ce7f3dcfbf25e6cff5bcd99dd68702ba49c5ec0fef96d01954cd41fa0cbca`
+-	Image ID: `sha256:dff883a2d4cac838cbc8db71c3b237afa24632a1388209dff45a421b61d4558f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8b35ce6b0edc95ead634e438ed902c32e5aa00e1075526844f2def7d6832b732`  
-		Last Modified: Tue, 12 Nov 2024 02:04:05 GMT  
-		Size: 463.8 KB (463819 bytes)  
+	-	`sha256:989f2e74055d5e3986c0b18203c1966b4f109ef8b0d6c5aef00548a734aaf55c`  
+		Last Modified: Fri, 13 Dec 2024 22:27:31 GMT  
+		Size: 467.9 KB (467856 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b99f0be5a6b1b2308800feeeff4d2e86bd588c6e7cf17661d56cd4191a118368`  
-		Last Modified: Tue, 12 Nov 2024 02:04:05 GMT  
-		Size: 14.5 KB (14491 bytes)  
+	-	`sha256:df6d1a704125cb70cedba44b4915f006ddd00d7b4f840e6168b29b54d7fa4744`  
+		Last Modified: Fri, 13 Dec 2024 22:27:30 GMT  
+		Size: 14.5 KB (14527 bytes)  
 		MIME: application/vnd.in-toto+json
