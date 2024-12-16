@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7a407736c2db9e75af598013e5b3b696cf95865994b48f764479ef60414554a2`
+- Image ID: `sha256:afb30607cf87d3bdfb2c402c7ef00de2743c8022013fe20438c5ee8a5685b4ee`
 - Created: `2024-11-15T17:24:07Z`
-- Virtual Size: ~ 432.51 Mb  
+- Virtual Size: ~ 432.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -762,16 +762,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.11.0-r2 description:
+libcurl-8.11.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.11.0-r2 webpage:
+libcurl-8.11.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.11.0-r2 installed size:
-636 KiB
+libcurl-8.11.1-r0 installed size:
+640 KiB
 
-libcurl-8.11.0-r2 license:
+libcurl-8.11.1-r0 license:
 curl
 
 ```
@@ -1918,16 +1918,16 @@ MIT
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.8-r0 description:
+pyc-3.12.8-r1 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.8-r0 webpage:
+pyc-3.12.8-r1 webpage:
 https://www.python.org/
 
-pyc-3.12.8-r0 installed size:
+pyc-3.12.8-r1 installed size:
 4096 B
 
-pyc-3.12.8-r0 license:
+pyc-3.12.8-r1 license:
 PSF-2.0
 
 ```
@@ -1935,16 +1935,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.8-r0 description:
+python3-3.12.8-r1 description:
 High-level scripting language
 
-python3-3.12.8-r0 webpage:
+python3-3.12.8-r1 webpage:
 https://www.python.org/
 
-python3-3.12.8-r0 installed size:
+python3-3.12.8-r1 installed size:
 24 MiB
 
-python3-3.12.8-r0 license:
+python3-3.12.8-r1 license:
 PSF-2.0
 
 ```
@@ -1952,16 +1952,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.8-r0 description:
+python3-pyc-3.12.8-r1 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.8-r0 webpage:
+python3-pyc-3.12.8-r1 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.8-r0 installed size:
+python3-pyc-3.12.8-r1 installed size:
 4096 B
 
-python3-pyc-3.12.8-r0 license:
+python3-pyc-3.12.8-r1 license:
 PSF-2.0
 
 ```
@@ -1969,16 +1969,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.8-r0 description:
+python3-pycache-pyc0-3.12.8-r1 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.8-r0 webpage:
+python3-pycache-pyc0-3.12.8-r1 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.8-r0 installed size:
+python3-pycache-pyc0-3.12.8-r1 installed size:
 11 MiB
 
-python3-pycache-pyc0-3.12.8-r0 license:
+python3-pycache-pyc0-3.12.8-r1 license:
 PSF-2.0
 
 ```
