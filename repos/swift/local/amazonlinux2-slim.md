@@ -1,10 +1,10 @@
-# `swift:6.0.2-amazonlinux2-slim`
+# `swift:6.0.3-amazonlinux2-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:621dfc5df80ecf7ffb65f89f7f9d3262e1414832e826eafa31e0419993a4c83a`
-- Created: `2024-10-28T18:01:55Z`
-- Virtual Size: ~ 737.81 Mb  
+- Image ID: `sha256:acca03e8379f82fbb449141ca5d664e141b7d2cbc65a7f734acb7dbfe93d8b39`
+- Created: `2024-12-12T07:44:15Z`
+- Virtual Size: ~ 702.58 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=amazonlinux2`
-  - `SWIFT_BRANCH=swift-6.0.2-release`
-  - `SWIFT_VERSION=swift-6.0.2-RELEASE`
+  - `SWIFT_BRANCH=swift-6.0.3-release`
+  - `SWIFT_VERSION=swift-6.0.3-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`

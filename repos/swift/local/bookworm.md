@@ -1,10 +1,10 @@
-# `swift:6.0.2-bookworm`
+# `swift:6.0.3-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:198676751473abd6be500ba73e545645e5fdd9e2e4bedcd2e9f13115403aa0f9`
-- Created: `2024-10-28T18:01:55Z`
-- Virtual Size: ~ 3.37 Gb  
+- Image ID: `sha256:6706d9074baa0766396896c361b60794119e679bcee886fcb9aaa6e15972cb47`
+- Created: `2024-12-12T07:44:15Z`
+- Virtual Size: ~ 3.31 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=debian12`
-  - `SWIFT_BRANCH=swift-6.0.2-release`
-  - `SWIFT_VERSION=swift-6.0.2-RELEASE`
+  - `SWIFT_BRANCH=swift-6.0.3-release`
+  - `SWIFT_VERSION=swift-6.0.3-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -1013,11 +1013,12 @@ Binary Packages:
 - `libitm1:amd64=12.2.0-14`
 - `liblsan0:amd64=12.2.0-14`
 - `libquadmath0:amd64=12.2.0-14`
+- `libstdc++-12-dev:amd64=12.2.0-14`
 - `libstdc++6:amd64=12.2.0-14`
 - `libtsan2:amd64=12.2.0-14`
 - `libubsan1:amd64=12.2.0-14`
 
-Licenses: (parsed from: `/usr/share/doc/cpp-12/copyright`, `/usr/share/doc/gcc-12/copyright`, `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/libasan8/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libcc1-0/copyright`, `/usr/share/doc/libgcc-12-dev/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libitm1/copyright`, `/usr/share/doc/liblsan0/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++6/copyright`, `/usr/share/doc/libtsan2/copyright`, `/usr/share/doc/libubsan1/copyright`)
+Licenses: (parsed from: `/usr/share/doc/cpp-12/copyright`, `/usr/share/doc/gcc-12/copyright`, `/usr/share/doc/gcc-12-base/copyright`, `/usr/share/doc/libasan8/copyright`, `/usr/share/doc/libatomic1/copyright`, `/usr/share/doc/libcc1-0/copyright`, `/usr/share/doc/libgcc-12-dev/copyright`, `/usr/share/doc/libgcc-s1/copyright`, `/usr/share/doc/libgomp1/copyright`, `/usr/share/doc/libitm1/copyright`, `/usr/share/doc/liblsan0/copyright`, `/usr/share/doc/libquadmath0/copyright`, `/usr/share/doc/libstdc++-12-dev/copyright`, `/usr/share/doc/libstdc++6/copyright`, `/usr/share/doc/libtsan2/copyright`, `/usr/share/doc/libubsan1/copyright`)
 
 - `Artistic`
 - `GFDL-1.2`

@@ -1,10 +1,10 @@
-# `swift:6.0.2-focal`
+# `swift:6.0.3-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a38df890b1d93106e5263a165213ed7bf0b2502d678a660f3135878d711bd0f1`
-- Created: `2024-10-28T18:01:55Z`
-- Virtual Size: ~ 3.13 Gb  
+- Image ID: `sha256:33d099da5d99277ad1aad56a80ceff6dd28ad7f890421109cc5ca5b8d9a295f5`
+- Created: `2024-12-12T07:44:15Z`
+- Virtual Size: ~ 3.05 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -12,8 +12,8 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubuntu20.04`
-  - `SWIFT_BRANCH=swift-6.0.2-release`
-  - `SWIFT_VERSION=swift-6.0.2-RELEASE`
+  - `SWIFT_BRANCH=swift-6.0.3-release`
+  - `SWIFT_VERSION=swift-6.0.3-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `description=Docker Container for the Swift programming language`
@@ -499,19 +499,24 @@ $ apt-get source -qq --print-uris e2fsprogs=1.45.5-2ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5-2ubuntu1.2.debian.tar.xz' e2fsprogs_1.45.5-2ubuntu1.2.debian.tar.xz 82932 SHA512:e038c9aa3af0593a6240840145b53742dbb2718dd58975e507b625eef3e341e5989ae0c7f02805a30ad213066af1cbfe8138f6baf500eedf66301dcb0966cb29
 ```
 
-### `dpkg` source package: `expat=2.2.9-1ubuntu0.7`
+### `dpkg` source package: `expat=2.2.9-1ubuntu0.8`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.2.9-1ubuntu0.7`
+- `libexpat1:amd64=2.2.9-1ubuntu0.8`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris expat=2.2.9-1ubuntu0.8
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1ubuntu0.8.dsc' expat_2.2.9-1ubuntu0.8.dsc 2109 SHA512:fa4d85bed1c8967c9c8889a560a031d45c1d5ef6bf8abee5c57944e9748ef8c721394ab4f031d2fa011b57eabed0deb3513b509486cfa14396f918ba2764e788
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9.orig.tar.gz' expat_2.2.9.orig.tar.gz 8273174 SHA512:e274fa7f30630450cb3ca681b266d765dbb7f5d00d1275ff9d9b2e2f6e1095893b8af4e3f4172ae6297c7a8a831a0a6becd484fe4bcdca09c37922f630780ef0
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1ubuntu0.8.debian.tar.xz' expat_2.2.9-1ubuntu0.8.debian.tar.xz 30356 SHA512:e919ddd7eac8c2a9b7b41d835106e80aa5dafca9fc89f9f8349f5f2c33ee8d5897e99dd6cdfa0216ecc62676310a98a20ee2b3874585fe5628fb557fe55f3155
+```
 
 ### `dpkg` source package: `file=1:5.38-4`
 
@@ -683,12 +688,12 @@ $ apt-get source -qq --print-uris git=1:2.25.1-1ubuntu3.13
 'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.13.debian.tar.xz' git_2.25.1-1ubuntu3.13.debian.tar.xz 715152 SHA512:5cc26bdc58e2c04e3a98478668e64aae7a53ce52b59330553f9c965dc6ca11dd99efb6ed79733bdebfd067a34f02b33bbada919926bef31b7445cfbc0734eda8
 ```
 
-### `dpkg` source package: `glib2.0=2.64.6-1~ubuntu20.04.7`
+### `dpkg` source package: `glib2.0=2.64.6-1~ubuntu20.04.8`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.64.6-1~ubuntu20.04.7`
-- `libglib2.0-data=2.64.6-1~ubuntu20.04.7`
+- `libglib2.0-0:amd64=2.64.6-1~ubuntu20.04.8`
+- `libglib2.0-data=2.64.6-1~ubuntu20.04.8`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-data/copyright`)
 
@@ -696,9 +701,14 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glib2.0=2.64.6-1~ubuntu20.04.8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.6-1%7eubuntu20.04.8.dsc' glib2.0_2.64.6-1~ubuntu20.04.8.dsc 3338 SHA512:bebdd47535bbe58054ff42bf270bef84cbf941b794d1ca55e1fc7e63c5f82a185c199e713a6ae5b2c31a131fb5d73da6f11765380d44f03057780b35f19078d3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.6.orig.tar.xz' glib2.0_2.64.6.orig.tar.xz 4781576 SHA512:5cd82c4d9b143e7aa130c24e25fb9def06dd915ef8ad8ed3883931bf5cddecf69c2e669ef6aa1d910484ede75b671e7c48a4f3fe50aa78955bff57b04f0cf958
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.6-1%7eubuntu20.04.8.debian.tar.xz' glib2.0_2.64.6-1~ubuntu20.04.8.debian.tar.xz 149448 SHA512:9c70a3596576e5cac959e4a9f91f2b55e9d7a39e5dd37593147e98f2be93fa441fb4b64f507d4cb96fef3a31062a4dc44034b39d2a38d075ab1dfba7ee327eb4
+```
 
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.16`
 
@@ -1691,19 +1701,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4%2bdfsg-3ubuntu0.1.debian.tar.xz' libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz 17300 SHA512:0484891be5603d00bd57b799c708b9395fccbaa8c6c44f535377f6fa2c7ac22c01c8a3c1b45e1c1f3c30f19dc74d510626bf82067fcbfb53c39f1bcc2249affe
 ```
 
-### `dpkg` source package: `linux=5.4.0-198.218`
+### `dpkg` source package: `linux=5.4.0-202.222`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.4.0-198.218`
+- `linux-libc-dev:amd64=5.4.0-202.222`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.4.0-202.222
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-202.222.dsc' linux_5.4.0-202.222.dsc 7377 SHA512:6f1ca6f8c8ed43811a1405a479c47ca2f0bb68ae204d0da574ef74dd7b5e0340a78ca03ca3180bde293374533374a5d50ee6a3ac15ec99f524c3e5a59ae05e0b
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-202.222.diff.gz' linux_5.4.0-202.222.diff.gz 9833069 SHA512:92996cd43253348c7060cdc29671dcfcff7d3691ae279327c0caed36bb1c7a65a073c62e7eefb05f772e0f353dac7576b127c00a2139c136e2613987eacd139e
+```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu2`
 
@@ -2255,13 +2270,13 @@ $ apt-get source -qq --print-uris publicsuffix=20200303.0012-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/publicsuffix/publicsuffix_20200303.0012-1.debian.tar.xz' publicsuffix_20200303.0012-1.debian.tar.xz 15328 SHA256:3dbbd7b1e20bafc3e5ad73732cb026a4b8e6e5dafa25a9047151e9a28b251647
 ```
 
-### `dpkg` source package: `python3.8=3.8.10-0ubuntu1~20.04.12`
+### `dpkg` source package: `python3.8=3.8.10-0ubuntu1~20.04.13`
 
 Binary Packages:
 
-- `libpython3.8:amd64=3.8.10-0ubuntu1~20.04.12`
-- `libpython3.8-minimal:amd64=3.8.10-0ubuntu1~20.04.12`
-- `libpython3.8-stdlib:amd64=3.8.10-0ubuntu1~20.04.12`
+- `libpython3.8:amd64=3.8.10-0ubuntu1~20.04.13`
+- `libpython3.8-minimal:amd64=3.8.10-0ubuntu1~20.04.13`
+- `libpython3.8-stdlib:amd64=3.8.10-0ubuntu1~20.04.13`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.8/copyright`, `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/share/doc/libpython3.8-stdlib/copyright`)
 
@@ -2283,9 +2298,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.8/copyright`, `/usr/share/doc
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.8=3.8.10-0ubuntu1~20.04.13
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.13.dsc' python3.8_3.8.10-0ubuntu1~20.04.13.dsc 3508 SHA512:d030821a34771a4af31686ea6d5b79a201681bdb5b13d3c83b56ac187eab2c328c0bb14577779c4e17527583fb86fe33614aef099e40bb63a27351ed6866eded
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10.orig.tar.xz' python3.8_3.8.10.orig.tar.xz 18433456 SHA512:0be69705483ff9692e12048a96180e586f9d84c8d53066629f7fb2389585eb75c0f3506bb8182936e322508f58b71f4d8c6dfebbab9049b31b49da11d3b98e80
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.13.debian.tar.xz' python3.8_3.8.10-0ubuntu1~20.04.13.debian.tar.xz 248584 SHA512:ad633aa6f7551bbf2d4415776f89f5b5e9c697f2ba46ca7de7124fb346d336bfae85031b3fdf7d4329fa78a3de42a3a365bbc9016228ea9dd74ce48964028772
+```
 
 ### `dpkg` source package: `readline=8.0-4`
 
