@@ -2036,20 +2036,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257~rc3-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257%7erc3-1.dsc' systemd_257~rc3-1.dsc 8665 SHA256:a7340c356731febbaeec44f360932cc9f9b5b7bae025c494b1f74f00b1edcd96
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257%7erc3.orig.tar.gz' systemd_257~rc3.orig.tar.gz 16226197 SHA256:bb0837988c3fb9b60d8ad38be791663a30cdb606242665f1157e1d884e2d892a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257%7erc3-1.debian.tar.xz' systemd_257~rc3-1.debian.tar.xz 175832 SHA256:c068395d476f335812b83a72379072f04b4dd5a2edaff2e9ea149863db644a5b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257~rc3-1/
 
-- https://sources.debian.net/src/systemd/257~rc3-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257~rc3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257~rc3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.11-1`
 
