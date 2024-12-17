@@ -1711,21 +1711,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.82.0-2
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.82.0-2.dsc' gobject-introspection_1.82.0-2.dsc 4180 SHA256:296726a4877d202bf71017d68b719162ab98547b0af515103ca5be63fa652592
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.82.0.orig-glib.tar.xz' gobject-introspection_1.82.0.orig-glib.tar.xz 5475296 SHA256:b3764dd6e29b664085921dd4dd6ba2430fc19760ab6857ecfa3ebd4e8c1d114c
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.82.0.orig.tar.xz' gobject-introspection_1.82.0.orig.tar.xz 1052872 SHA256:0f5a4c1908424bf26bc41e9361168c363685080fbdb87a196c891c8401ca2f09
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.82.0-2.debian.tar.xz' gobject-introspection_1.82.0-2.debian.tar.xz 58052 SHA256:67f81e0ad073e6f1c9d8dc47d40c1ae4497621e53d94004906353d42ed1c8841
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gobject-introspection/1.82.0-2/
 
-- https://sources.debian.net/src/gobject-introspection/1.82.0-2/ (for browsing the source)
-- https://sources.debian.net/src/gobject-introspection/1.82.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gobject-introspection/1.82.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-2`
 
