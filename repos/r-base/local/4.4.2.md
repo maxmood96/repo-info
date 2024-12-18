@@ -354,20 +354,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-cluster/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cluster=2.1.6-1
-'http://deb.debian.org/debian/pool/main/c/cluster/cluster_2.1.6-1.dsc' cluster_2.1.6-1.dsc 1831 SHA256:2a30de784a94d98b08ce82e1c6da81c851c83587ec87012b3df0f5d2ea759598
-'http://deb.debian.org/debian/pool/main/c/cluster/cluster_2.1.6.orig.tar.gz' cluster_2.1.6.orig.tar.gz 369050 SHA256:d1c50efafd35a55387cc5b36086b97d5591e0b33c48dc718005d2f5907113164
-'http://deb.debian.org/debian/pool/main/c/cluster/cluster_2.1.6-1.debian.tar.xz' cluster_2.1.6-1.debian.tar.xz 4356 SHA256:7c0fc2b7d445438fc5d92c8289369c8611024c07aa62f1203d16927842d4fb4d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cluster/2.1.6-1/
 
-- https://sources.debian.net/src/cluster/2.1.6-1/ (for browsing the source)
-- https://sources.debian.net/src/cluster/2.1.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cluster/2.1.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `codetools=0.2-20-1`
 
@@ -435,21 +428,13 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.11.0-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.11.0-1.dsc' curl_8.11.0-1.dsc 3252 SHA256:1fa81ff7d58c593cd65fd8ea60dc225aa4aa4b196ed23bfcfb0bfdad02953dab
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.11.0.orig.tar.gz' curl_8.11.0.orig.tar.gz 4167839 SHA256:264537d90e58d2b09dddc50944baf3c38e7089151c8986715e2aaeaaf2b8118f
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.11.0.orig.tar.gz.asc' curl_8.11.0.orig.tar.gz.asc 488 SHA256:b709d6115f2dbf47e3bfb1bbb5b70b235476f8b1bd46973a8b3afe7b74149c52
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.11.0-1.debian.tar.xz' curl_8.11.0-1.debian.tar.xz 55384 SHA256:e46ebcfb907ba6929770ff0e0b3a8a4a8019e8ed2f7d3491b10ccf2e6e9b4006
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.11.0-1/
 
-- https://sources.debian.net/src/curl/8.11.0-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.11.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.11.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-8`
 
@@ -1836,20 +1821,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.44-2
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.44-2.dsc' libpng1.6_1.6.44-2.dsc 2254 SHA256:1b06f9c144f4102886ed7b5f639f607708fcc1014e60ee17b1c7f8f6674ebd0d
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.44.orig.tar.gz' libpng1.6_1.6.44.orig.tar.gz 1558044 SHA256:0ef5b633d0c65f780c4fced27ff832998e71478c13b45dfb6e94f23a82f64f7c
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.44-2.debian.tar.xz' libpng1.6_1.6.44-2.debian.tar.xz 31580 SHA256:ee27a126c2de86c7ff13059cdc0fd922dda0ae6db0e6edd7feacb7a1fb6603f1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpng1.6/1.6.44-2/
 
-- https://sources.debian.net/src/libpng1.6/1.6.44-2/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.44-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.44-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -2382,14 +2360,13 @@ Licenses: (parsed from: `/usr/share/doc/littler/copyright`, `/usr/share/doc/r-cr
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris littler=0.3.20-1
-'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.20-1.dsc' littler_0.3.20-1.dsc 1874 SHA256:32d5e850ba9237e174a52406e0b013d4aac4b1d8204856b7ca5a64a666ca275a
-'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.20.orig.tar.gz' littler_0.3.20.orig.tar.gz 125661 SHA256:9810cca571878782afdd579d81404eb8a951ea4b9171d6bf7bdee7d7ed5b065a
-'http://http.debian.net/debian/pool/main/l/littler/littler_0.3.20-1.debian.tar.xz' littler_0.3.20-1.debian.tar.xz 7136 SHA256:809c149ac73569b7c5e62b1112ede9943c405dfcfdba5aedd1cb0ed0c4181f91
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/littler/0.3.20-1/
+
 
 ### `dpkg` source package: `lz4=1.9.4-3`
 
