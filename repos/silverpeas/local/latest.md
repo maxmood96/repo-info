@@ -590,15 +590,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.19
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.19.dsc' curl_7.81.0-1ubuntu1.19.dsc 3188 SHA512:6800c2d74e8a57ef93f8e41cc9b340e72512670d1d748d6b03f3deb00ab8e180a289654128b2e6ca748a1efcbae6e7f4cba84dafa979dcac559a5e1a610d3da7
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.19.debian.tar.xz' curl_7.81.0-1ubuntu1.19.debian.tar.xz 78124 SHA512:fb677743f6395f02c08f8d8caf2056abcb7c3972658fc86aeab949f7c5af55f373e1cc0b90eab369c162851a660d5c30c373e4f4a9487c6df93f58ad7f0fc14e
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -1526,14 +1520,9 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer-plugins-base1.0-0/copyright
 - `LGPL-2+`
 - `MIT/X11 (BSD like) LGPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gst-plugins-base1.0=1.20.1-1ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1-1ubuntu0.2.dsc' gst-plugins-base1.0_1.20.1-1ubuntu0.2.dsc 3796 SHA512:3fe509406d9037ea60532876281b91ec9effce507f45e36e3b50d40a1283a0c89a36e82c69d17de253e3c31e4d5f3b217b69074151c1164fcaffea1119140b28
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1.orig.tar.xz' gst-plugins-base1.0_1.20.1.orig.tar.xz 3290068 SHA512:679a0eee1973fa9612e2e24978e2c2d9d8fdc5732e1699b4a87712881f1549d0811719a13ff4fe77b91322ca4425c39623b371703f6b3a36fb7238b977d3e541
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gst-plugins-base1.0/gst-plugins-base1.0_1.20.1-1ubuntu0.2.debian.tar.xz' gst-plugins-base1.0_1.20.1-1ubuntu0.2.debian.tar.xz 45856 SHA512:d449ce097ffabf9e5008a9033aac41fc0be0c80d635e49edbcb52731ac6c57699d59f6cd867e95d9d58119434f08f3965505976b70b8360a69b1bd3641af2908
-```
 
 ### `dpkg` source package: `gstreamer1.0=1.20.3-0ubuntu1`
 
@@ -1549,14 +1538,9 @@ Licenses: (parsed from: `/usr/share/doc/libgstreamer1.0-0/copyright`)
 - `LGPL-2+`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gstreamer1.0=1.20.3-0ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.20.3-0ubuntu1.dsc' gstreamer1.0_1.20.3-0ubuntu1.dsc 2960 SHA512:fa0c8cbd74136bb94eaf5f31e42498fd440e38067905196bc5be0914b9bb9d1ed1a0fba6c69daf4197414a06036c338d3467aa4e9cd46417ab8610d128eea9c8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.20.3.orig.tar.xz' gstreamer1.0_1.20.3.orig.tar.xz 2681088 SHA512:e93f9fbf2d7a839dcbe2030ed16dd53eb250741db7c2f1cea396c23e4fabf9a0caff6be4babf7c10aec4b56dc8319a970b1b0bfa6eea2e36aed3e6e1265d9278
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gstreamer1.0/gstreamer1.0_1.20.3-0ubuntu1.debian.tar.xz' gstreamer1.0_1.20.3-0ubuntu1.debian.tar.xz 44492 SHA512:659d0c1de1269c6104747d4863205c025a4b722b4537236f146ede0fbb9ed696532ac737dbadb23f710484b6d12540d95f79627e7751ebef914f68a87e07b5af
-```
 
 ### `dpkg` source package: `gzip=1.10-4ubuntu4.1`
 
