@@ -1,18 +1,18 @@
-# `docker:27.4.0-dind-rootless`
+# `docker:27.4.1-dind-rootless`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9f8322a7c3c8154f09895c7509500e24519267dec8b762f4d2243bd47bfefd97`
-- Created: `2024-12-09T17:51:24Z`
-- Virtual Size: ~ 426.37 Mb  
+- Image ID: `sha256:9ac21e00f0e378fc035348ce70ab9abe4f699206a932595ad076eebe0f9222fa`
+- Created: `2024-12-18T12:04:25Z`
+- Virtual Size: ~ 426.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["dockerd-entrypoint.sh"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `DOCKER_VERSION=27.4.0`
-  - `DOCKER_BUILDX_VERSION=0.19.2`
-  - `DOCKER_COMPOSE_VERSION=2.32.0`
+  - `DOCKER_VERSION=27.4.1`
+  - `DOCKER_BUILDX_VERSION=0.19.3`
+  - `DOCKER_COMPOSE_VERSION=2.32.1`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e`
 
@@ -1381,16 +1381,16 @@ GPL-2.0-or-later AND 0BSD AND Public-Domain AND LGPL-2.1-or-later
 ### `apk` package: `zfs`
 
 ```console
-zfs-2.2.6-r1 description:
+zfs-2.2.7-r0 description:
 Advanced filesystem and volume manager
 
-zfs-2.2.6-r1 webpage:
+zfs-2.2.7-r0 webpage:
 https://openzfs.org
 
-zfs-2.2.6-r1 installed size:
-1180 KiB
+zfs-2.2.7-r0 installed size:
+1183 KiB
 
-zfs-2.2.6-r1 license:
+zfs-2.2.7-r0 license:
 CDDL-1.0
 
 ```
@@ -1398,16 +1398,16 @@ CDDL-1.0
 ### `apk` package: `zfs-libs`
 
 ```console
-zfs-libs-2.2.6-r1 description:
+zfs-libs-2.2.7-r0 description:
 Advanced filesystem and volume manager (libraries)
 
-zfs-libs-2.2.6-r1 webpage:
+zfs-libs-2.2.7-r0 webpage:
 https://openzfs.org
 
-zfs-libs-2.2.6-r1 installed size:
-4092 KiB
+zfs-libs-2.2.7-r0 installed size:
+4093 KiB
 
-zfs-libs-2.2.6-r1 license:
+zfs-libs-2.2.7-r0 license:
 CDDL-1.0
 
 ```
