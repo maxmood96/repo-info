@@ -2268,20 +2268,13 @@ Licenses: (parsed from: `/usr/share/doc/libnpth0t64/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris npth=1.6-3.1
-'http://deb.debian.org/debian/pool/main/n/npth/npth_1.6-3.1.dsc' npth_1.6-3.1.dsc 1967 SHA256:3545fbabbf59c9427a6dc98f903f4ac50786fdfc2ce3f42a21668ec3151c25f7
-'http://deb.debian.org/debian/pool/main/n/npth/npth_1.6.orig.tar.bz2' npth_1.6.orig.tar.bz2 300486 SHA256:1393abd9adcf0762d34798dc34fdcf4d0d22a8410721e76f1e3afcd1daa4e2d1
-'http://deb.debian.org/debian/pool/main/n/npth/npth_1.6-3.1.debian.tar.xz' npth_1.6-3.1.debian.tar.xz 10924 SHA256:e2fb2f56060991436622ddc1dc52df8f3f3e87bc9325a8b30920fce5aa0f3e30
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/npth/1.6-3.1/
 
-- https://sources.debian.net/src/npth/1.6-3.1/ (for browsing the source)
-- https://sources.debian.net/src/npth/1.6-3.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/npth/1.6-3.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.5.18+dfsg-3`
 
