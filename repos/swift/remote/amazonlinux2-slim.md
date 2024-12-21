@@ -1,7 +1,7 @@
 ## `swift:amazonlinux2-slim`
 
 ```console
-$ docker pull swift@sha256:0481c78ad4231f8d78af6379aa7da18a6ad177a23eb125d868cf53c33a6d05ff
+$ docker pull swift@sha256:ab79c3bc8b1fce965b680826401be247c30d5e47da73e7712e22ab0ea241a06d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -86,19 +86,19 @@ $ docker pull swift@sha256:2d66e094a164941a6e01a1ada1fa853791da48e67f755e7edc612
 ### `swift:amazonlinux2-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:c699a85c95b108c3400ec597a3e46e8dc0d86dd68730316fd305d100e32780a0
+$ docker pull swift@sha256:4a418beba9dec00f335b843d594f37201612906dc403465fda961e763fa6441e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **239.6 MB (239621086 bytes)**  
+-	Total Size: **240.7 MB (240739129 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7665015f59c53053503b150bdbe7aab3b9872361c4d6518a89fff3285dcad10d`
+-	Image ID: `sha256:bf25bb9a0d547cee142352987bb01b5cc9a1e84c8f8b09e526925d1e839a8f07`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Fri, 15 Nov 2024 22:25:20 GMT
+# Thu, 12 Dec 2024 07:44:15 GMT
 COPY /rootfs/ / # buildkit
-# Fri, 15 Nov 2024 22:25:20 GMT
+# Thu, 12 Dec 2024 07:44:15 GMT
 CMD ["/bin/bash"]
 # Thu, 12 Dec 2024 07:44:15 GMT
 LABEL maintainer=Swift Infrastructure <swift-infrastructure@forums.swift.org>
@@ -126,31 +126,31 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 		Last Modified: Sat, 16 Nov 2024 00:03:57 GMT  
 		Size: 64.6 MB (64581887 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7ef4777a262ccee1924175dfbf8f04d88bc7b12cf0a3e5f9e878918f64c2baf`  
-		Last Modified: Fri, 13 Dec 2024 00:26:54 GMT  
-		Size: 175.0 MB (175039199 bytes)  
+	-	`sha256:65d05a41c0ed6227e9eec1a3bd9f75ff4d37d9ee417de4e2f3040d9434047da5`  
+		Last Modified: Sat, 21 Dec 2024 04:15:34 GMT  
+		Size: 176.2 MB (176157242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:amazonlinux2-slim` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:e6111a2692a2f7d30b17aafc3180608966cdb0c61042a1f8ee265dd3223bf377
+$ docker pull swift@sha256:d9103e732c181771d0c851a723601faa18287a3961bb29a62dd6f03a68ef6da4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5088566 bytes)**  
+-	Total Size: **5.1 MB (5078963 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b1f93c709f0605a7fe9d395cdef0b7a506676c03493c4e5700a0652a3ddef09`
+-	Image ID: `sha256:c468422da7231e063746f60e8fccc78ac92416811e5a0e2478ff208154de2225`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:28dac426ef96c0b387cbc63d0cb3a9c9812f0f88f39af372301e6c20949d3c27`  
-		Last Modified: Fri, 13 Dec 2024 00:26:50 GMT  
-		Size: 5.1 MB (5076577 bytes)  
+	-	`sha256:a2bacc459f39f36dfc68472ef72a6b79bdd0ec9b7acbb062cd2fc69028df0d10`  
+		Last Modified: Sat, 21 Dec 2024 04:15:30 GMT  
+		Size: 5.1 MB (5066974 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f2066640df703d55e933a3e599abf080f93bdf2b61f89c9d1d9f4a6eedf2cb9f`  
-		Last Modified: Fri, 13 Dec 2024 00:26:50 GMT  
+	-	`sha256:bcf77a6da8de595b966f1d0491ab5c853919d4cfd1e853fc0eb5b1b579d6bce8`  
+		Last Modified: Sat, 21 Dec 2024 04:15:30 GMT  
 		Size: 12.0 KB (11989 bytes)  
 		MIME: application/vnd.in-toto+json
