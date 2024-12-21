@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:39be3111116abb5c02370c26a3af0fa4949835cd9ff550b13f3b7af38ead4379`
+- Image ID: `sha256:869a8d9b6efb4f65b4e0e4c56604060cf68f8953d943b1041eb68bea7ff66391`
 - Created: `2024-11-17T02:07:21Z`
-- Virtual Size: ~ 139.42 Mb  
+- Virtual Size: ~ 139.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.26`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.26.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.26.tar.xz.asc`
-  - `PHP_SHA256=54747400cb4874288ad41a785e6147e2ff546cceeeb55c23c00c771ac125c6ef`
+  - `PHP_VERSION=8.2.27`
+  - `PHP_URL=https://www.php.net/distributions/php-8.2.27.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.27.tar.xz.asc`
+  - `PHP_SHA256=3eec91294d8c09b3df80b39ec36d574ed9b05de4c8afcb25fa215d48f9ecbc6b`
   - `GOSU_VERSION=1.17`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
@@ -254,16 +254,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.11.0-r2 description:
+curl-8.11.1-r0 description:
 URL retrival utility and library
 
-curl-8.11.0-r2 webpage:
+curl-8.11.1-r0 webpage:
 https://curl.se/
 
-curl-8.11.0-r2 installed size:
+curl-8.11.1-r0 installed size:
 242 KiB
 
-curl-8.11.0-r2 license:
+curl-8.11.1-r0 license:
 curl
 
 ```
@@ -832,16 +832,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.11.0-r2 description:
+libcurl-8.11.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.11.0-r2 webpage:
+libcurl-8.11.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.11.0-r2 installed size:
+libcurl-8.11.1-r0 installed size:
 620 KiB
 
-libcurl-8.11.0-r2 license:
+libcurl-8.11.1-r0 license:
 curl
 
 ```
