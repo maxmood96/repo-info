@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b6427588353236a8531cec6d48e6292136293139f2baf9069ef63a8234e29ba7`
+- Image ID: `sha256:fc1724b4d2437aded7aa21c6583c7b8113200151e79e1bff17dd9155642aee40`
 - Created: `2024-11-04T20:52:12Z`
-- Virtual Size: ~ 463.44 Mb  
+- Virtual Size: ~ 463.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=10.11.10`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-12-09T18:11:07Z`
+  - `build-date=2024-12-18T04:52:16Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=MariaDB Database for relational SQL`
@@ -41,7 +41,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://www.redhat.com`
-  - `vcs-ref=fee5a8f3e74ac2340dca04210f5456952058c9f4`
+  - `vcs-ref=0724d65b854a0151fb7d10b0e6510d8aee28e115`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=10.11.10`
@@ -254,11 +254,16 @@ $ dnf --quiet download --source --url elfutils-libelf-0.191-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/elfutils-0.191-4.el9.src.rpm
 ```
 
-### `rpm` package: `epel-release-9-8.el9.noarch`
+### `rpm` package: `epel-release-9-9.el9.noarch`
 
 Licenses (from `rpm --query`): GPLv2
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url epel-release-9-9.el9.noarch
+rsync://mirror.us.mirhosting.net/epel/9/Everything/source/tree/Packages/e/epel-release-9-9.el9.src.rpm
+```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
 
@@ -507,7 +512,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-http://mirror.lstn.net/fedora-epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+rsync://mirror.us.mirhosting.net/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -939,11 +944,16 @@ $ dnf --quiet download --source --url libselinux-3.6-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libselinux-3.6-1.el9.src.rpm
 ```
 
-### `rpm` package: `libsemanage-3.6-1.el9.x86_64`
+### `rpm` package: `libsemanage-3.6-2.1.el9_5.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libsemanage-3.6-2.1.el9_5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libsemanage-3.6-2.1.el9_5.src.rpm
+```
 
 ### `rpm` package: `libsepol-3.6-1.el9.x86_64`
 
@@ -1275,17 +1285,27 @@ $ dnf --quiet download --source --url openssl-libs-3.2.2-6.el9_5
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.2.2-6.el9_5.src.rpm
 ```
 
-### `rpm` package: `p11-kit-0.25.3-2.el9.x86_64`
+### `rpm` package: `p11-kit-0.25.3-3.el9_5.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `p11-kit-trust-0.25.3-2.el9.x86_64`
+```console
+$ dnf --quiet download --source --url p11-kit-0.25.3-3.el9_5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/p11-kit-0.25.3-3.el9_5.src.rpm
+```
+
+### `rpm` package: `p11-kit-trust-0.25.3-3.el9_5.x86_64`
 
 Licenses (from `rpm --query`): BSD-3-Clause
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url p11-kit-trust-0.25.3-3.el9_5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/p11-kit-0.25.3-3.el9_5.src.rpm
+```
 
 ### `rpm` package: `pam-1.5.1-22.el9_5.x86_64`
 
@@ -2065,7 +2085,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-http://mirror.lstn.net/fedora-epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+rsync://mirror.us.mirhosting.net/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2076,7 +2096,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-http://mirror.lstn.net/fedora-epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+rsync://mirror.us.mirhosting.net/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
@@ -2167,11 +2187,16 @@ $ dnf --quiet download --source --url setup-2.13.7-10.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/setup-2.13.7-10.el9.src.rpm
 ```
 
-### `rpm` package: `shadow-utils-4.9-9.el9.x86_64`
+### `rpm` package: `shadow-utils-4.9-10.el9_5.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url shadow-utils-4.9-10.el9_5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/shadow-utils-4.9-10.el9_5.src.rpm
+```
 
 ### `rpm` package: `socat-1.7.4.1-6.el9.x86_64`
 
