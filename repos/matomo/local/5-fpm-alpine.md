@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3bf54fe55f770cb8c8e1ef0086fa202bbf7c1d6c6cb2d31db1732769ced9f423`
+- Image ID: `sha256:0f6ac0a02448e8f67f15a1a1e8f18e64258f1f8522f0102b03b4429fde7c2660`
 - Created: `2024-12-12T22:25:09Z`
-- Virtual Size: ~ 165.05 Mb  
+- Virtual Size: ~ 165.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.14`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.14.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.14.tar.xz.asc`
-  - `PHP_SHA256=58b4cb9019bf70c0cbcdb814c7df79b9065059d14cf7dbf48d971f8e56ae9be7`
+  - `PHP_VERSION=8.3.15`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.15.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.15.tar.xz.asc`
+  - `PHP_SHA256=3df5d45637283f759eef8fc3ce03de829ded3e200c3da278936a684955d2f94f`
   - `PHP_MEMORY_LIMIT=256M`
   - `MATOMO_VERSION=5.2.0`
 
@@ -250,16 +250,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.11.0-r2 description:
+curl-8.11.1-r0 description:
 URL retrival utility and library
 
-curl-8.11.0-r2 webpage:
+curl-8.11.1-r0 webpage:
 https://curl.se/
 
-curl-8.11.0-r2 installed size:
+curl-8.11.1-r0 installed size:
 242 KiB
 
-curl-8.11.0-r2 license:
+curl-8.11.1-r0 license:
 curl
 
 ```
@@ -352,16 +352,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.11.0-r2 description:
+libcurl-8.11.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.11.0-r2 webpage:
+libcurl-8.11.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.11.0-r2 installed size:
+libcurl-8.11.1-r0 installed size:
 620 KiB
 
-libcurl-8.11.0-r2 license:
+libcurl-8.11.1-r0 license:
 curl
 
 ```
