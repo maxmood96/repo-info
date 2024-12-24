@@ -1,10 +1,10 @@
-# `gradle:8.11.1-jdk8-focal`
+# `gradle:8.12.0-jdk8-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2ac0386cf7b068f5987979c700e8d90912659c550348dc6dcfdeb43c200fa27b`
-- Created: `2024-11-20T19:11:06Z`
-- Virtual Size: ~ 673.62 Mb  
+- Image ID: `sha256:ebcc98e7e4333c2c2d682519f96ca740b9c44437a9d3d0a483b34e504efdb2bf`
+- Created: `2024-12-20T17:54:11Z`
+- Virtual Size: ~ 673.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk8u432-b06`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.11.1`
+  - `GRADLE_VERSION=8.12`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=20.04`
@@ -387,10 +387,9 @@ $ apt-get source -qq --print-uris coreutils=8.30-3ubuntu2
 Binary Packages:
 
 - `curl=7.68.0-1ubuntu2.24`
-- `libcurl3-gnutls:amd64=7.68.0-1ubuntu2.24`
 - `libcurl4:amd64=7.68.0-1ubuntu2.24`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
+Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-4-Clause`
@@ -402,6 +401,30 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `curl=7.68.0-1ubuntu2.25`
+
+Binary Packages:
+
+- `libcurl3-gnutls:amd64=7.68.0-1ubuntu2.25`
+
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
+
+- `BSD-3-Clause`
+- `BSD-4-Clause`
+- `ISC`
+- `curl`
+- `other`
+- `public-domain`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.25
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.25.dsc' curl_7.68.0-1ubuntu2.25.dsc 2737 SHA512:662f204efe6ad8fce4c4115cc6788c96084be2989440dbfd38ebf9cd02114581b237e8ac8caa555489b5d5bb55a84eb7b84f071e3f5bc52e36e94e098b4a9313
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.25.debian.tar.xz' curl_7.68.0-1ubuntu2.25.debian.tar.xz 77412 SHA512:ed0c6526b6b35fd16a4264cf89cf9008585b7fb6785a36506b31bb9834285567aed856712967215e4f5e0e3a2cf917a70f8de9c83a1f5c6582b1042f5ebff16d
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
 
@@ -2155,14 +2178,14 @@ $ apt-get source -qq --print-uris python-urllib3=1.25.8-2ubuntu0.4
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python-urllib3/python-urllib3_1.25.8-2ubuntu0.4.debian.tar.xz' python-urllib3_1.25.8-2ubuntu0.4.debian.tar.xz 16492 SHA512:fcbc6cabe674613a51325cb7a1728099957c51f460ef221df6bdce94e0bb4a20ad9f2848c9bc46cb6ae2e750bf4045617c62d097c3e77ed87579443b339e4e53
 ```
 
-### `dpkg` source package: `python2.7=2.7.18-1~20.04.5`
+### `dpkg` source package: `python2.7=2.7.18-1~20.04.6`
 
 Binary Packages:
 
-- `libpython2.7-minimal:amd64=2.7.18-1~20.04.5`
-- `libpython2.7-stdlib:amd64=2.7.18-1~20.04.5`
-- `python2.7=2.7.18-1~20.04.5`
-- `python2.7-minimal=2.7.18-1~20.04.5`
+- `libpython2.7-minimal:amd64=2.7.18-1~20.04.6`
+- `libpython2.7-stdlib:amd64=2.7.18-1~20.04.6`
+- `python2.7=2.7.18-1~20.04.6`
+- `python2.7-minimal=2.7.18-1~20.04.6`
 
 Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/share/doc/libpython2.7-stdlib/copyright`, `/usr/share/doc/python2.7/copyright`, `/usr/share/doc/python2.7-minimal/copyright`)
 
@@ -2183,9 +2206,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python2.7=2.7.18-1~20.04.6
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18-1%7e20.04.6.dsc' python2.7_2.7.18-1~20.04.6.dsc 3167 SHA512:b82f9f3756b4e0679ebec71f00ae8ca0a85b5f20217fd4c7aec90c437a223223fb1ae4e34ae943feb93ab13308681b54404679fab0a38c23812668f8ba77668f
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18.orig.tar.gz' python2.7_2.7.18.orig.tar.gz 17539408 SHA512:9a81cea8f8853b183364b399a238604075b00d18badb0cde118b20fe4428135de5d75a3feca0d56a3d8d40d557e3933de573671072d9da6f76f84435d23bf1ba
+'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18-1%7e20.04.6.diff.gz' python2.7_2.7.18-1~20.04.6.diff.gz 302039 SHA512:631313859c2106cba48f05fb13b68330399b3efedbd108be3a89a5aa67589c052e954e74f8dc695fc9d20f5ea3784c075f1df322bb882591fa735b9bc96f39b1
+```
 
 ### `dpkg` source package: `python3-defaults=3.8.2-0ubuntu2`
 

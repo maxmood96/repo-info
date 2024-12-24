@@ -1,10 +1,10 @@
-# `gradle:8.11.1-jdk11-alpine`
+# `gradle:8.12.0-jdk11-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:40b7bc0f1331c6c3dbd5360a35424d4c14f1257670ee846ef8a1b3abb0f3f469`
-- Created: `2024-11-20T19:11:06Z`
-- Virtual Size: ~ 547.19 Mb  
+- Image ID: `sha256:6a2069d425da568eea771753255046bf252888f6f9cc178e89efcdafccb769f1`
+- Created: `2024-12-20T17:54:11Z`
+- Virtual Size: ~ 547.12 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.25+9`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.11.1`
+  - `GRADLE_VERSION=8.12`
 
 ## `apk` (`.apk`-based packages)
 
@@ -738,16 +738,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.11.0-r2 description:
+libcurl-8.11.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.11.0-r2 webpage:
+libcurl-8.11.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.11.0-r2 installed size:
-636 KiB
+libcurl-8.11.1-r0 installed size:
+640 KiB
 
-libcurl-8.11.0-r2 license:
+libcurl-8.11.1-r0 license:
 curl
 
 ```
@@ -1401,16 +1401,16 @@ GPL-2.0-or-later
 ### `apk` package: `pyc`
 
 ```console
-pyc-3.12.7-r0 description:
+pyc-3.12.8-r1 description:
 Meta package for pulling in all -pyc packages
 
-pyc-3.12.7-r0 webpage:
+pyc-3.12.8-r1 webpage:
 https://www.python.org/
 
-pyc-3.12.7-r0 installed size:
+pyc-3.12.8-r1 installed size:
 4096 B
 
-pyc-3.12.7-r0 license:
+pyc-3.12.8-r1 license:
 PSF-2.0
 
 ```
@@ -1418,16 +1418,16 @@ PSF-2.0
 ### `apk` package: `python3`
 
 ```console
-python3-3.12.7-r0 description:
+python3-3.12.8-r1 description:
 High-level scripting language
 
-python3-3.12.7-r0 webpage:
+python3-3.12.8-r1 webpage:
 https://www.python.org/
 
-python3-3.12.7-r0 installed size:
+python3-3.12.8-r1 installed size:
 24 MiB
 
-python3-3.12.7-r0 license:
+python3-3.12.8-r1 license:
 PSF-2.0
 
 ```
@@ -1435,16 +1435,16 @@ PSF-2.0
 ### `apk` package: `python3-pyc`
 
 ```console
-python3-pyc-3.12.7-r0 description:
+python3-pyc-3.12.8-r1 description:
 High-level scripting language (install .pyc cache files)
 
-python3-pyc-3.12.7-r0 webpage:
+python3-pyc-3.12.8-r1 webpage:
 https://www.python.org/
 
-python3-pyc-3.12.7-r0 installed size:
+python3-pyc-3.12.8-r1 installed size:
 4096 B
 
-python3-pyc-3.12.7-r0 license:
+python3-pyc-3.12.8-r1 license:
 PSF-2.0
 
 ```
@@ -1452,16 +1452,16 @@ PSF-2.0
 ### `apk` package: `python3-pycache-pyc0`
 
 ```console
-python3-pycache-pyc0-3.12.7-r0 description:
+python3-pycache-pyc0-3.12.8-r1 description:
 High-level scripting language (.pyc pycache files)
 
-python3-pycache-pyc0-3.12.7-r0 webpage:
+python3-pycache-pyc0-3.12.8-r1 webpage:
 https://www.python.org/
 
-python3-pycache-pyc0-3.12.7-r0 installed size:
+python3-pycache-pyc0-3.12.8-r1 installed size:
 11 MiB
 
-python3-pycache-pyc0-3.12.7-r0 license:
+python3-pycache-pyc0-3.12.8-r1 license:
 PSF-2.0
 
 ```
