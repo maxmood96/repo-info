@@ -3300,15 +3300,30 @@ $ docker pull mediawiki@sha256:bc5abb692b74178093029c964f91965b9909210de2cc49d87
 
 ## `mediawiki:1.39.11`
 
-**does not exist** (yet?)
+```console
+$ docker pull mediawiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mediawiki:1.39.11-fpm`
 
-**does not exist** (yet?)
+```console
+$ docker pull mediawiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mediawiki:1.39.11-fpm-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull mediawiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mediawiki:1.41`
 
@@ -6579,15 +6594,30 @@ $ docker pull mediawiki@sha256:2589f6624a6d43f8735d9023635bf0837eb5454eda1788b43
 
 ## `mediawiki:1.41.5`
 
-**does not exist** (yet?)
+```console
+$ docker pull mediawiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mediawiki:1.41.5-fpm`
 
-**does not exist** (yet?)
+```console
+$ docker pull mediawiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mediawiki:1.41.5-fpm-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull mediawiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mediawiki:1.42`
 
@@ -9858,15 +9888,30 @@ $ docker pull mediawiki@sha256:424f11e19ebff03638888f37e455b39a1966e4dd11ec56784
 
 ## `mediawiki:1.42.4`
 
-**does not exist** (yet?)
+```console
+$ docker pull mediawiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mediawiki:1.42.4-fpm`
 
-**does not exist** (yet?)
+```console
+$ docker pull mediawiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mediawiki:1.42.4-fpm-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull mediawiki@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `mediawiki:latest`
 
