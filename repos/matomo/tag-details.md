@@ -11837,19 +11837,39 @@ $ docker pull matomo@sha256:ddba24cd795d9a100380effc1d1b9df2c9973c15b86a3ed84193
 
 ## `matomo:5.2.1`
 
-**does not exist** (yet?)
+```console
+$ docker pull matomo@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `matomo:5.2.1-apache`
 
-**does not exist** (yet?)
+```console
+$ docker pull matomo@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `matomo:5.2.1-fpm`
 
-**does not exist** (yet?)
+```console
+$ docker pull matomo@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `matomo:5.2.1-fpm-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull matomo@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `matomo:apache`
 
