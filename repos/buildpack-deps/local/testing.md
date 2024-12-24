@@ -3805,20 +3805,13 @@ Licenses: (parsed from: `/usr/share/doc/libyaml-0-2/copyright`, `/usr/share/doc/
 - `Expat`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libyaml=0.2.5-1
-'http://deb.debian.org/debian/pool/main/liby/libyaml/libyaml_0.2.5-1.dsc' libyaml_0.2.5-1.dsc 2071 SHA256:1edbf86e5cd76937ff62892ba6c2537456d645d834d4cd4a82430b8be7051bf4
-'http://deb.debian.org/debian/pool/main/liby/libyaml/libyaml_0.2.5.orig.tar.gz' libyaml_0.2.5.orig.tar.gz 85055 SHA256:fa240dbf262be053f3898006d502d514936c818e422afdcf33921c63bed9bf2e
-'http://deb.debian.org/debian/pool/main/liby/libyaml/libyaml_0.2.5-1.debian.tar.xz' libyaml_0.2.5-1.debian.tar.xz 5324 SHA256:8730e0510129e516c3c7c1cda7428e02a0a122699e57ed203f835a338a686d1f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libyaml/0.2.5-1/
 
-- https://sources.debian.net/src/libyaml/0.2.5-1/ (for browsing the source)
-- https://sources.debian.net/src/libyaml/0.2.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libyaml/0.2.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libzstd=1.5.6+dfsg-1`
 
@@ -3865,20 +3858,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.11.10-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.11.10-1.dsc' linux_6.11.10-1.dsc 206706 SHA256:a31808dab30438982b04d14dab2cdff523feaa2852bae5beece7426654a5197d
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.11.10.orig.tar.xz' linux_6.11.10.orig.tar.xz 149935036 SHA256:dda5580024fcec2e9499adb8aa553ef2967f6a8e03582ef4f23363239734cfac
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.11.10-1.debian.tar.xz' linux_6.11.10-1.debian.tar.xz 1603324 SHA256:5e013eb63a71966fc110b269cb612347efbaf8a15efb4f5200a1af4dab109a64
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/6.11.10-1/
 
-- https://sources.debian.net/src/linux/6.11.10-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.11.10-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.11.10-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-3`
 
@@ -4984,19 +4970,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.12.6-1
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.12.6-1.dsc' python3-defaults_3.12.6-1.dsc 2988 SHA256:681f4b32dd4483127b418e330ccdd3d2c37b56eb31077088c8563820147ec617
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.12.6-1.tar.gz' python3-defaults_3.12.6-1.tar.gz 147105 SHA256:4507577b36d7562fc86e8731475a5b0c437f39b966164f85c90a89330dd00b26
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-defaults/3.12.6-1/
 
-- https://sources.debian.net/src/python3-defaults/3.12.6-1/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.12.6-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.12.6-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.12=3.12.7-3`
 
@@ -5442,20 +5422,13 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tar=1.35+dfsg-3
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg-3.dsc' tar_1.35+dfsg-3.dsc 2009 SHA256:0ea713a8af04a41d297202e7ac20813735328a5f8d4de3882fba5595709955f8
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg.orig.tar.xz' tar_1.35+dfsg.orig.tar.xz 2111608 SHA256:9ae57e981c1e73c0eebc2b26c9b0c4497fe310ef1d516ea430efb5470b71f7a8
-'http://deb.debian.org/debian/pool/main/t/tar/tar_1.35%2bdfsg-3.debian.tar.xz' tar_1.35+dfsg-3.debian.tar.xz 20824 SHA256:6028f2172de2498b8fc2baef4854796d829ae7ba2a91de4f7615fe1a56729313
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tar/1.35+dfsg-3/
 
-- https://sources.debian.net/src/tar/1.35+dfsg-3/ (for browsing the source)
-- https://sources.debian.net/src/tar/1.35+dfsg-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tar/1.35+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tiff=4.5.1+git230720-5`
 
