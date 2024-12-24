@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:dd2127a82cafa6eb36074427914a17cab7d5fb464a4b624a167f523b27241f15`
+- Image ID: `sha256:2783a9024064ee0a8bcec4ed0664dcf5c708196ea894c9a67b28f637973c0489`
 - Created: `2024-11-22T13:33:57Z`
 - Virtual Size: ~ 94.24 Mb  
   (total size of all layers on-disk)
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.14`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.14.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.14.tar.xz.asc`
-  - `PHP_SHA256=58b4cb9019bf70c0cbcdb814c7df79b9065059d14cf7dbf48d971f8e56ae9be7`
+  - `PHP_VERSION=8.3.15`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.15.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.15.tar.xz.asc`
+  - `PHP_SHA256=3df5d45637283f759eef8fc3ce03de829ded3e200c3da278936a684955d2f94f`
   - `POSTFIXADMIN_VERSION=3.3.14`
   - `POSTFIXADMIN_SHA512=18837c112e08f3a7d41d829d2f26f5e791d5a0b9b8d0ac458d9a266f5b1aac2f0d9e6b7ebec0c5324ac54d944ba81cba210b2cf82075bcf7ab588c7d96eb49fb`
 - Labels:
@@ -286,16 +286,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.11.0-r2 description:
+curl-8.11.1-r0 description:
 URL retrival utility and library
 
-curl-8.11.0-r2 webpage:
+curl-8.11.1-r0 webpage:
 https://curl.se/
 
-curl-8.11.0-r2 installed size:
+curl-8.11.1-r0 installed size:
 242 KiB
 
-curl-8.11.0-r2 license:
+curl-8.11.1-r0 license:
 curl
 
 ```
@@ -337,16 +337,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.11.0-r2 description:
+libcurl-8.11.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.11.0-r2 webpage:
+libcurl-8.11.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.11.0-r2 installed size:
+libcurl-8.11.1-r0 installed size:
 620 KiB
 
-libcurl-8.11.0-r2 license:
+libcurl-8.11.1-r0 license:
 curl
 
 ```
