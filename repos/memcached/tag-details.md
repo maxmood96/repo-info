@@ -4821,19 +4821,39 @@ $ docker pull memcached@sha256:9633d4f6d1ceb311422b86502f057cfd400959e6fa3f9fa28
 
 ## `memcached:1.6.34`
 
-**does not exist** (yet?)
+```console
+$ docker pull memcached@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `memcached:1.6.34-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull memcached@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `memcached:1.6.34-alpine3.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull memcached@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `memcached:1.6.34-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull memcached@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `memcached:alpine`
 
