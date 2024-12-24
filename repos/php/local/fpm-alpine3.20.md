@@ -1,10 +1,10 @@
-# `php:8.4.1-fpm-alpine3.20`
+# `php:8.4.2-fpm-alpine3.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2a3953cd956b0eec8de941b2ed04cf802ac872c3ce001c3f227201d1376426fb`
-- Created: `2024-11-21T14:39:47Z`
-- Virtual Size: ~ 95.96 Mb  
+- Image ID: `sha256:0ad4e410aa956b80f1fa6c15d8f16ab57291ddf8caf29566c4964dcdb664286b`
+- Created: `2024-12-19T20:11:07Z`
+- Virtual Size: ~ 95.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.1`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.1.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.1.tar.xz.asc`
-  - `PHP_SHA256=94c8a4fd419d45748951fa6d73bd55f6bdf0adaefb8814880a67baa66027311f`
+  - `PHP_VERSION=8.4.2`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.2.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.2.tar.xz.asc`
+  - `PHP_SHA256=92636453210f7f2174d6ee6df17a5811368f556a6c2c2cbcf019321e36456e01`
 
 ## `apk` (`.apk`-based packages)
 
@@ -214,16 +214,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.11.0-r2 description:
+curl-8.11.1-r0 description:
 URL retrival utility and library
 
-curl-8.11.0-r2 webpage:
+curl-8.11.1-r0 webpage:
 https://curl.se/
 
-curl-8.11.0-r2 installed size:
+curl-8.11.1-r0 installed size:
 256 KiB
 
-curl-8.11.0-r2 license:
+curl-8.11.1-r0 license:
 curl
 
 ```
@@ -282,16 +282,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.11.0-r2 description:
+libcurl-8.11.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.11.0-r2 webpage:
+libcurl-8.11.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.11.0-r2 installed size:
-636 KiB
+libcurl-8.11.1-r0 installed size:
+640 KiB
 
-libcurl-8.11.0-r2 license:
+libcurl-8.11.1-r0 license:
 curl
 
 ```
