@@ -20,7 +20,7 @@
 ## `telegraf:1.31`
 
 ```console
-$ docker pull telegraf@sha256:e5a5f49f93d31d8fa4202b771ef046cc9451be82f5872dd0986aaf504328dc79
+$ docker pull telegraf@sha256:e7766bed79e1b1f8b307a74dff1004167b55efbdad833ea807248905ea37dd99
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -35,86 +35,86 @@ $ docker pull telegraf@sha256:e5a5f49f93d31d8fa4202b771ef046cc9451be82f5872dd098
 ### `telegraf:1.31` - linux; amd64
 
 ```console
-$ docker pull telegraf@sha256:f90f820e1ac66dee3a2021b1af3a6cdbd3fdd2268e04853e25f25f9940d2b1cc
+$ docker pull telegraf@sha256:e1b4c27833c2938876d621ea0069e17e7ff542f39c8719049f114eb36d601690
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.6 MB (157598960 bytes)**  
+-	Total Size: **157.6 MB (157598652 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c01145e05d28a42e225f0631fa58d7335623f63c4b5f69dd9fc587717065761`
+-	Image ID: `sha256:b65877181256104db196dbf2fbce4bd042775a05503958112d1f092d9844803c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends iputils-ping snmp procps lm-sensors libcap2-bin &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 ENV TELEGRAF_VERSION=1.31.3
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     rm -f telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb* # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 EXPOSE map[8092/udp:{} 8094/tcp:{} 8125/udp:{}]
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 CMD ["telegraf"]
 ```
 
 -	Layers:
-	-	`sha256:fdf894e782a221820acf469d425b802be26aedb5e5d26ea80a650ff6a974d488`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 48.5 MB (48497210 bytes)  
+	-	`sha256:0a96bdb8280554b560ffee0f2e5f9843dc7b625f28192021ee103ecbcc2d629b`  
+		Last Modified: Tue, 24 Dec 2024 21:32:13 GMT  
+		Size: 48.5 MB (48497066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd71677db44bb63b94de61b6f1f95d5540b4ba2d6a8a6bc4d19f422b25e0c2b`  
-		Last Modified: Tue, 03 Dec 2024 02:28:49 GMT  
-		Size: 23.9 MB (23865876 bytes)  
+	-	`sha256:54c7be425079efba0003054ee884bf72f1ffebca733bedd6f077d2809ee9aa6f`  
+		Last Modified: Tue, 24 Dec 2024 22:15:27 GMT  
+		Size: 23.9 MB (23865817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cdde2d05cba99da2e74d73e991ecb82a79bfd76157e4a68b16c077db6065d39e`  
-		Last Modified: Tue, 03 Dec 2024 03:24:44 GMT  
-		Size: 18.9 MB (18948037 bytes)  
+	-	`sha256:653d1814857109e9b1cc1ccde62f5dee03564dbdcc5e5a4323744c7efc7867d4`  
+		Last Modified: Tue, 24 Dec 2024 23:21:45 GMT  
+		Size: 18.9 MB (18947948 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d9ad3fec4223bc2bf574eb64f9553bb9fa2e114fe36f2f735f5033f493cf358`  
-		Last Modified: Tue, 03 Dec 2024 03:24:44 GMT  
-		Size: 1.8 KB (1773 bytes)  
+	-	`sha256:7013bc6bb2b583d21f8dd226e302c37be6487b23e2b9668b59f5c19eeb5123be`  
+		Last Modified: Tue, 24 Dec 2024 23:21:45 GMT  
+		Size: 1.8 KB (1771 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac2313abe8bd5db514c7915eadb9f3d95df411eda1e8d64c6ab79259f85ce908`  
-		Last Modified: Tue, 03 Dec 2024 03:24:45 GMT  
-		Size: 66.3 MB (66285441 bytes)  
+	-	`sha256:a4aa26cc3a71162b582402bea52bc061f590c468760f14b168820af735b34f65`  
+		Last Modified: Tue, 24 Dec 2024 23:21:46 GMT  
+		Size: 66.3 MB (66285426 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2cf9fc86eed7a55414fd83276295772cf771b843c5a0ebc24141a5c5e6a3e81`  
-		Last Modified: Tue, 03 Dec 2024 03:24:44 GMT  
-		Size: 623.0 B  
+	-	`sha256:02bd192a99a12ce5d7c0574cda4d2371ebdc880ba7733e9f6f1e44ddc0700329`  
+		Last Modified: Tue, 24 Dec 2024 23:21:45 GMT  
+		Size: 624.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `telegraf:1.31` - unknown; unknown
 
 ```console
-$ docker pull telegraf@sha256:11294cbbbfb6477f27fc39bb164375f034e7aa4145103f960d1f196b0313ddab
+$ docker pull telegraf@sha256:90f509c60fc9ef670eb7f18cda300b0e816df719511041ba70567e2955ddb0ce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6431813 bytes)**  
+-	Total Size: **6.4 MB (6429050 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ff21b632f27ef2b0ef34dadea4d778750d9b22ce199adb24ed20fda027fe0e3`
+-	Image ID: `sha256:5f922e94cb926848dfb26885c71ba4f8e863405b7417f91766495902405fcb4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e566cd69d2ab26fccface2dc7836f61e03df8b9af8d985c5eac4f4704a78d27d`  
-		Last Modified: Tue, 03 Dec 2024 03:24:44 GMT  
-		Size: 6.4 MB (6417343 bytes)  
+	-	`sha256:1efaeab6a7d06f5435c93afc5c07e21bb5252c268dda51ebad00c89cca1d6bb1`  
+		Last Modified: Tue, 24 Dec 2024 23:21:45 GMT  
+		Size: 6.4 MB (6414580 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ce0d300dd93561d3aef0afaf7f2b9b41345a42092f3c6b7acd7385f76b632599`  
-		Last Modified: Tue, 03 Dec 2024 03:24:44 GMT  
+	-	`sha256:4979f533aefffdb2b92f65ffa57ff8467abe8253130d5b3f74c71297bbe5bd4d`  
+		Last Modified: Tue, 24 Dec 2024 23:21:45 GMT  
 		Size: 14.5 KB (14470 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -470,7 +470,7 @@ $ docker pull telegraf@sha256:3c1199bc5e2229bba0fa164cb749ad110ae8ccfaebe006a2f0
 ## `telegraf:1.31.3`
 
 ```console
-$ docker pull telegraf@sha256:e5a5f49f93d31d8fa4202b771ef046cc9451be82f5872dd0986aaf504328dc79
+$ docker pull telegraf@sha256:e7766bed79e1b1f8b307a74dff1004167b55efbdad833ea807248905ea37dd99
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -485,86 +485,86 @@ $ docker pull telegraf@sha256:e5a5f49f93d31d8fa4202b771ef046cc9451be82f5872dd098
 ### `telegraf:1.31.3` - linux; amd64
 
 ```console
-$ docker pull telegraf@sha256:f90f820e1ac66dee3a2021b1af3a6cdbd3fdd2268e04853e25f25f9940d2b1cc
+$ docker pull telegraf@sha256:e1b4c27833c2938876d621ea0069e17e7ff542f39c8719049f114eb36d601690
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.6 MB (157598960 bytes)**  
+-	Total Size: **157.6 MB (157598652 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c01145e05d28a42e225f0631fa58d7335623f63c4b5f69dd9fc587717065761`
+-	Image ID: `sha256:b65877181256104db196dbf2fbce4bd042775a05503958112d1f092d9844803c`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends iputils-ping snmp procps lm-sensors libcap2-bin &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 ENV TELEGRAF_VERSION=1.31.3
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     rm -f telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb* # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 EXPOSE map[8092/udp:{} 8094/tcp:{} 8125/udp:{}]
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 CMD ["telegraf"]
 ```
 
 -	Layers:
-	-	`sha256:fdf894e782a221820acf469d425b802be26aedb5e5d26ea80a650ff6a974d488`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 48.5 MB (48497210 bytes)  
+	-	`sha256:0a96bdb8280554b560ffee0f2e5f9843dc7b625f28192021ee103ecbcc2d629b`  
+		Last Modified: Tue, 24 Dec 2024 21:32:13 GMT  
+		Size: 48.5 MB (48497066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd71677db44bb63b94de61b6f1f95d5540b4ba2d6a8a6bc4d19f422b25e0c2b`  
-		Last Modified: Tue, 03 Dec 2024 02:28:49 GMT  
-		Size: 23.9 MB (23865876 bytes)  
+	-	`sha256:54c7be425079efba0003054ee884bf72f1ffebca733bedd6f077d2809ee9aa6f`  
+		Last Modified: Tue, 24 Dec 2024 22:15:27 GMT  
+		Size: 23.9 MB (23865817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cdde2d05cba99da2e74d73e991ecb82a79bfd76157e4a68b16c077db6065d39e`  
-		Last Modified: Tue, 03 Dec 2024 03:24:44 GMT  
-		Size: 18.9 MB (18948037 bytes)  
+	-	`sha256:653d1814857109e9b1cc1ccde62f5dee03564dbdcc5e5a4323744c7efc7867d4`  
+		Last Modified: Tue, 24 Dec 2024 23:21:45 GMT  
+		Size: 18.9 MB (18947948 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d9ad3fec4223bc2bf574eb64f9553bb9fa2e114fe36f2f735f5033f493cf358`  
-		Last Modified: Tue, 03 Dec 2024 03:24:44 GMT  
-		Size: 1.8 KB (1773 bytes)  
+	-	`sha256:7013bc6bb2b583d21f8dd226e302c37be6487b23e2b9668b59f5c19eeb5123be`  
+		Last Modified: Tue, 24 Dec 2024 23:21:45 GMT  
+		Size: 1.8 KB (1771 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac2313abe8bd5db514c7915eadb9f3d95df411eda1e8d64c6ab79259f85ce908`  
-		Last Modified: Tue, 03 Dec 2024 03:24:45 GMT  
-		Size: 66.3 MB (66285441 bytes)  
+	-	`sha256:a4aa26cc3a71162b582402bea52bc061f590c468760f14b168820af735b34f65`  
+		Last Modified: Tue, 24 Dec 2024 23:21:46 GMT  
+		Size: 66.3 MB (66285426 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2cf9fc86eed7a55414fd83276295772cf771b843c5a0ebc24141a5c5e6a3e81`  
-		Last Modified: Tue, 03 Dec 2024 03:24:44 GMT  
-		Size: 623.0 B  
+	-	`sha256:02bd192a99a12ce5d7c0574cda4d2371ebdc880ba7733e9f6f1e44ddc0700329`  
+		Last Modified: Tue, 24 Dec 2024 23:21:45 GMT  
+		Size: 624.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `telegraf:1.31.3` - unknown; unknown
 
 ```console
-$ docker pull telegraf@sha256:11294cbbbfb6477f27fc39bb164375f034e7aa4145103f960d1f196b0313ddab
+$ docker pull telegraf@sha256:90f509c60fc9ef670eb7f18cda300b0e816df719511041ba70567e2955ddb0ce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6431813 bytes)**  
+-	Total Size: **6.4 MB (6429050 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1ff21b632f27ef2b0ef34dadea4d778750d9b22ce199adb24ed20fda027fe0e3`
+-	Image ID: `sha256:5f922e94cb926848dfb26885c71ba4f8e863405b7417f91766495902405fcb4b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e566cd69d2ab26fccface2dc7836f61e03df8b9af8d985c5eac4f4704a78d27d`  
-		Last Modified: Tue, 03 Dec 2024 03:24:44 GMT  
-		Size: 6.4 MB (6417343 bytes)  
+	-	`sha256:1efaeab6a7d06f5435c93afc5c07e21bb5252c268dda51ebad00c89cca1d6bb1`  
+		Last Modified: Tue, 24 Dec 2024 23:21:45 GMT  
+		Size: 6.4 MB (6414580 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ce0d300dd93561d3aef0afaf7f2b9b41345a42092f3c6b7acd7385f76b632599`  
-		Last Modified: Tue, 03 Dec 2024 03:24:44 GMT  
+	-	`sha256:4979f533aefffdb2b92f65ffa57ff8467abe8253130d5b3f74c71297bbe5bd4d`  
+		Last Modified: Tue, 24 Dec 2024 23:21:45 GMT  
 		Size: 14.5 KB (14470 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -920,7 +920,7 @@ $ docker pull telegraf@sha256:3c1199bc5e2229bba0fa164cb749ad110ae8ccfaebe006a2f0
 ## `telegraf:1.32`
 
 ```console
-$ docker pull telegraf@sha256:75cc1d41761efb9e22574ec9a10f764b317c0f56753e18dbf4e45176deddffb7
+$ docker pull telegraf@sha256:a9561bb77e83f927894d4f1ccfd135d357076bf771f1e4acb28ee056bbb184ff
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -935,87 +935,87 @@ $ docker pull telegraf@sha256:75cc1d41761efb9e22574ec9a10f764b317c0f56753e18dbf4
 ### `telegraf:1.32` - linux; amd64
 
 ```console
-$ docker pull telegraf@sha256:90b5da625ef921f5089383356e1e85d1f070dd2dc85346c3df1b507db7606af2
+$ docker pull telegraf@sha256:1c699e31c715350963e403cd6356da85ab91b1c937d3c831aa4bd6e70313253a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **161.3 MB (161334634 bytes)**  
+-	Total Size: **161.3 MB (161334379 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c8d5700fd4697294bdbe7fc69ffa77031da25a24380565c74b29b5a8a188fbe7`
+-	Image ID: `sha256:828289431ddc4e681b822e6c8e0ef745f212eeb904bb15746d1b398328d17962`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends iputils-ping snmp procps lm-sensors libcap2-bin &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 ENV TELEGRAF_VERSION=1.32.3
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     rm -f telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb* # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 EXPOSE map[8092/udp:{} 8094/tcp:{} 8125/udp:{}]
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 CMD ["telegraf"]
 ```
 
 -	Layers:
-	-	`sha256:fdf894e782a221820acf469d425b802be26aedb5e5d26ea80a650ff6a974d488`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 48.5 MB (48497210 bytes)  
+	-	`sha256:0a96bdb8280554b560ffee0f2e5f9843dc7b625f28192021ee103ecbcc2d629b`  
+		Last Modified: Tue, 24 Dec 2024 21:32:13 GMT  
+		Size: 48.5 MB (48497066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd71677db44bb63b94de61b6f1f95d5540b4ba2d6a8a6bc4d19f422b25e0c2b`  
-		Last Modified: Tue, 03 Dec 2024 02:28:49 GMT  
-		Size: 23.9 MB (23865876 bytes)  
+	-	`sha256:54c7be425079efba0003054ee884bf72f1ffebca733bedd6f077d2809ee9aa6f`  
+		Last Modified: Tue, 24 Dec 2024 22:15:27 GMT  
+		Size: 23.9 MB (23865817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8584d808a3544732d2399a1cd75f7504a45963e284e8b36e35924d8f4c059036`  
-		Last Modified: Tue, 03 Dec 2024 03:24:49 GMT  
-		Size: 18.9 MB (18948077 bytes)  
+	-	`sha256:bbf9288c04ef24a7a430826d2712c6a1761c179fc3b6dbf5acf1ad36d273a876`  
+		Last Modified: Tue, 24 Dec 2024 23:21:58 GMT  
+		Size: 18.9 MB (18948047 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca00c6f890e0c9fd8664ec62dd36ae0ba459bc85b6c8775a00b49a29684b62ea`  
-		Last Modified: Tue, 03 Dec 2024 03:24:49 GMT  
-		Size: 1.8 KB (1783 bytes)  
+	-	`sha256:f4e8f8dd3c6ff997428abcc0c5ef24b4cc837a7cb71ad3213c4b183ddd7c8854`  
+		Last Modified: Tue, 24 Dec 2024 23:21:57 GMT  
+		Size: 1.8 KB (1785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f68c52fca4a74c9ca22ab6e9d2db88ae970c008321be4458589999d63145bd1`  
-		Last Modified: Tue, 03 Dec 2024 03:24:50 GMT  
-		Size: 70.0 MB (70021066 bytes)  
+	-	`sha256:ea77c07f598b14468c1ba2c5e54a934536fb24bb377f4591c0800440419e2716`  
+		Last Modified: Tue, 24 Dec 2024 23:21:59 GMT  
+		Size: 70.0 MB (70021040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61f81c5679d91f6eb7b6d208c827e7fd6c79872c309e3ff2b5bb1f22566e72c2`  
-		Last Modified: Tue, 03 Dec 2024 03:24:49 GMT  
-		Size: 622.0 B  
+	-	`sha256:4a753ec2d17b79aa749029f878c004c958c8cf5d0f081dc0eb7490fcc3a1b522`  
+		Last Modified: Tue, 24 Dec 2024 23:21:57 GMT  
+		Size: 624.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `telegraf:1.32` - unknown; unknown
 
 ```console
-$ docker pull telegraf@sha256:36987cdbf8a516239f06a248d28c72ce71a808f720553e84d7307890df5e4b54
+$ docker pull telegraf@sha256:b1f3acef162db07de427a2b2b1ef1cd2ef963487268b436311b1018f7876d66c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6441755 bytes)**  
+-	Total Size: **6.4 MB (6438508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9ccf68973c8a0c34c264e6c78c790646c3f8b09d42432cd3df1abbf2c08b93e7`
+-	Image ID: `sha256:008abdf936f164e96b1d7c025136870fc4026862ed5bd9d209886083730235e4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:da57eead985241ab767643723a8fbd672ef650bdf07a3c5b470e896d89bf4d9b`  
-		Last Modified: Tue, 03 Dec 2024 03:24:49 GMT  
-		Size: 6.4 MB (6426983 bytes)  
+	-	`sha256:10765a469d4af148f22b987be1341b3d216826e041f0f2b588c5690595ba3e0c`  
+		Last Modified: Tue, 24 Dec 2024 23:21:57 GMT  
+		Size: 6.4 MB (6424038 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:34c03b9eadb80e8f1b89585f3267fe9be38fa86e3aee39579d7e1e5aff80676a`  
-		Last Modified: Tue, 03 Dec 2024 03:24:49 GMT  
-		Size: 14.8 KB (14772 bytes)  
+	-	`sha256:355c30f5c76ac417ed215cab5f9d679b3fee52b4bcfe9fddcb0d2951f67f545e`  
+		Last Modified: Tue, 24 Dec 2024 23:21:57 GMT  
+		Size: 14.5 KB (14470 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `telegraf:1.32` - linux; arm variant v7
@@ -1370,7 +1370,7 @@ $ docker pull telegraf@sha256:c85b59700690d98745cb96f176ac655994b903886cfa983ccc
 ## `telegraf:1.32.3`
 
 ```console
-$ docker pull telegraf@sha256:75cc1d41761efb9e22574ec9a10f764b317c0f56753e18dbf4e45176deddffb7
+$ docker pull telegraf@sha256:a9561bb77e83f927894d4f1ccfd135d357076bf771f1e4acb28ee056bbb184ff
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1385,87 +1385,87 @@ $ docker pull telegraf@sha256:75cc1d41761efb9e22574ec9a10f764b317c0f56753e18dbf4
 ### `telegraf:1.32.3` - linux; amd64
 
 ```console
-$ docker pull telegraf@sha256:90b5da625ef921f5089383356e1e85d1f070dd2dc85346c3df1b507db7606af2
+$ docker pull telegraf@sha256:1c699e31c715350963e403cd6356da85ab91b1c937d3c831aa4bd6e70313253a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **161.3 MB (161334634 bytes)**  
+-	Total Size: **161.3 MB (161334379 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c8d5700fd4697294bdbe7fc69ffa77031da25a24380565c74b29b5a8a188fbe7`
+-	Image ID: `sha256:828289431ddc4e681b822e6c8e0ef745f212eeb904bb15746d1b398328d17962`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 RUN DEBIAN_FRONTEND=noninteractive apt-get update &&     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends iputils-ping snmp procps lm-sensors libcap2-bin &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 RUN set -ex &&     mkdir ~/.gnupg;     echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf;     for key in         9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E ;     do         gpg --keyserver hkp://keyserver.ubuntu.com --recv-keys "$key" ;     done # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 ENV TELEGRAF_VERSION=1.32.3
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)" &&     case "${dpkgArch##*-}" in       amd64) ARCH='amd64';;       arm64) ARCH='arm64';;       armhf) ARCH='armhf';;       armel) ARCH='armel';;       *)     echo "Unsupported architecture: ${dpkgArch}"; exit 1;;     esac &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc &&     wget --no-verbose https://dl.influxdata.com/telegraf/releases/telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     gpg --batch --verify telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb.asc telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     dpkg -i telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb &&     rm -f telegraf_${TELEGRAF_VERSION}-1_${ARCH}.deb* # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 EXPOSE map[8092/udp:{} 8094/tcp:{} 8125/udp:{}]
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Mon, 18 Nov 2024 20:48:32 GMT
+# Mon, 09 Dec 2024 21:08:54 GMT
 CMD ["telegraf"]
 ```
 
 -	Layers:
-	-	`sha256:fdf894e782a221820acf469d425b802be26aedb5e5d26ea80a650ff6a974d488`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 48.5 MB (48497210 bytes)  
+	-	`sha256:0a96bdb8280554b560ffee0f2e5f9843dc7b625f28192021ee103ecbcc2d629b`  
+		Last Modified: Tue, 24 Dec 2024 21:32:13 GMT  
+		Size: 48.5 MB (48497066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd71677db44bb63b94de61b6f1f95d5540b4ba2d6a8a6bc4d19f422b25e0c2b`  
-		Last Modified: Tue, 03 Dec 2024 02:28:49 GMT  
-		Size: 23.9 MB (23865876 bytes)  
+	-	`sha256:54c7be425079efba0003054ee884bf72f1ffebca733bedd6f077d2809ee9aa6f`  
+		Last Modified: Tue, 24 Dec 2024 22:15:27 GMT  
+		Size: 23.9 MB (23865817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8584d808a3544732d2399a1cd75f7504a45963e284e8b36e35924d8f4c059036`  
-		Last Modified: Tue, 03 Dec 2024 03:24:49 GMT  
-		Size: 18.9 MB (18948077 bytes)  
+	-	`sha256:bbf9288c04ef24a7a430826d2712c6a1761c179fc3b6dbf5acf1ad36d273a876`  
+		Last Modified: Tue, 24 Dec 2024 23:21:58 GMT  
+		Size: 18.9 MB (18948047 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca00c6f890e0c9fd8664ec62dd36ae0ba459bc85b6c8775a00b49a29684b62ea`  
-		Last Modified: Tue, 03 Dec 2024 03:24:49 GMT  
-		Size: 1.8 KB (1783 bytes)  
+	-	`sha256:f4e8f8dd3c6ff997428abcc0c5ef24b4cc837a7cb71ad3213c4b183ddd7c8854`  
+		Last Modified: Tue, 24 Dec 2024 23:21:57 GMT  
+		Size: 1.8 KB (1785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f68c52fca4a74c9ca22ab6e9d2db88ae970c008321be4458589999d63145bd1`  
-		Last Modified: Tue, 03 Dec 2024 03:24:50 GMT  
-		Size: 70.0 MB (70021066 bytes)  
+	-	`sha256:ea77c07f598b14468c1ba2c5e54a934536fb24bb377f4591c0800440419e2716`  
+		Last Modified: Tue, 24 Dec 2024 23:21:59 GMT  
+		Size: 70.0 MB (70021040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61f81c5679d91f6eb7b6d208c827e7fd6c79872c309e3ff2b5bb1f22566e72c2`  
-		Last Modified: Tue, 03 Dec 2024 03:24:49 GMT  
-		Size: 622.0 B  
+	-	`sha256:4a753ec2d17b79aa749029f878c004c958c8cf5d0f081dc0eb7490fcc3a1b522`  
+		Last Modified: Tue, 24 Dec 2024 23:21:57 GMT  
+		Size: 624.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `telegraf:1.32.3` - unknown; unknown
 
 ```console
-$ docker pull telegraf@sha256:36987cdbf8a516239f06a248d28c72ce71a808f720553e84d7307890df5e4b54
+$ docker pull telegraf@sha256:b1f3acef162db07de427a2b2b1ef1cd2ef963487268b436311b1018f7876d66c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.4 MB (6441755 bytes)**  
+-	Total Size: **6.4 MB (6438508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9ccf68973c8a0c34c264e6c78c790646c3f8b09d42432cd3df1abbf2c08b93e7`
+-	Image ID: `sha256:008abdf936f164e96b1d7c025136870fc4026862ed5bd9d209886083730235e4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:da57eead985241ab767643723a8fbd672ef650bdf07a3c5b470e896d89bf4d9b`  
-		Last Modified: Tue, 03 Dec 2024 03:24:49 GMT  
-		Size: 6.4 MB (6426983 bytes)  
+	-	`sha256:10765a469d4af148f22b987be1341b3d216826e041f0f2b588c5690595ba3e0c`  
+		Last Modified: Tue, 24 Dec 2024 23:21:57 GMT  
+		Size: 6.4 MB (6424038 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:34c03b9eadb80e8f1b89585f3267fe9be38fa86e3aee39579d7e1e5aff80676a`  
-		Last Modified: Tue, 03 Dec 2024 03:24:49 GMT  
-		Size: 14.8 KB (14772 bytes)  
+	-	`sha256:355c30f5c76ac417ed215cab5f9d679b3fee52b4bcfe9fddcb0d2951f67f545e`  
+		Last Modified: Tue, 24 Dec 2024 23:21:57 GMT  
+		Size: 14.5 KB (14470 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `telegraf:1.32.3` - linux; arm variant v7
@@ -1820,7 +1820,7 @@ $ docker pull telegraf@sha256:c85b59700690d98745cb96f176ac655994b903886cfa983ccc
 ## `telegraf:1.33`
 
 ```console
-$ docker pull telegraf@sha256:9e1e6c928401d7d335915a83c4b7d19df29fcba5e550fe3524ef5d1c5a8d913f
+$ docker pull telegraf@sha256:680458a3a0a4697b23a6b2d390991f7afd55589b734a9b1ff76b67045159ccbb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1835,19 +1835,19 @@ $ docker pull telegraf@sha256:9e1e6c928401d7d335915a83c4b7d19df29fcba5e550fe3524
 ### `telegraf:1.33` - linux; amd64
 
 ```console
-$ docker pull telegraf@sha256:f5d75cd8943f1f3927c20cbaf69bb541a0c0f21db5b9a87e82e2aeff0aab3f2a
+$ docker pull telegraf@sha256:9914ddd25d014cfef42b29945643e111fe3359f28f647fc1711006d4728b71e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.3 MB (164337836 bytes)**  
+-	Total Size: **164.3 MB (164337675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28b0eff2abe3c880907ec09cc86666f55ccfa20fdf052547ce740e7c795d8b0d`
+-	Image ID: `sha256:666974c79fea63bdc95ee71d3f0483a8511bf35cf445db664a708b90f4f91e5a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 09 Dec 2024 21:08:54 GMT
@@ -1869,53 +1869,53 @@ CMD ["telegraf"]
 ```
 
 -	Layers:
-	-	`sha256:fdf894e782a221820acf469d425b802be26aedb5e5d26ea80a650ff6a974d488`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 48.5 MB (48497210 bytes)  
+	-	`sha256:0a96bdb8280554b560ffee0f2e5f9843dc7b625f28192021ee103ecbcc2d629b`  
+		Last Modified: Tue, 24 Dec 2024 21:32:13 GMT  
+		Size: 48.5 MB (48497066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd71677db44bb63b94de61b6f1f95d5540b4ba2d6a8a6bc4d19f422b25e0c2b`  
-		Last Modified: Tue, 03 Dec 2024 02:28:49 GMT  
-		Size: 23.9 MB (23865876 bytes)  
+	-	`sha256:54c7be425079efba0003054ee884bf72f1ffebca733bedd6f077d2809ee9aa6f`  
+		Last Modified: Tue, 24 Dec 2024 22:15:27 GMT  
+		Size: 23.9 MB (23865817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34a1a61d9f4ee7645baa168af976c33bcdb6db4c60ccc12c816992fcb1a66c73`  
-		Last Modified: Tue, 10 Dec 2024 01:29:23 GMT  
-		Size: 18.9 MB (18948074 bytes)  
+	-	`sha256:00ea042f7af0af45684f2e467cf4fea905b33fe8e68a6e9a84e891b6f1cd7e2a`  
+		Last Modified: Tue, 24 Dec 2024 23:21:55 GMT  
+		Size: 18.9 MB (18948122 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:150cdea4328a2349912cc4adc99ba756d0f6f91884b3bf2d34eeb5e993d957b5`  
-		Last Modified: Tue, 10 Dec 2024 01:29:23 GMT  
-		Size: 1.8 KB (1771 bytes)  
+	-	`sha256:1a427735e269b8580bb01a6e38c28818f6d413680eb67a6b53428b16fd3a4214`  
+		Last Modified: Tue, 24 Dec 2024 23:21:55 GMT  
+		Size: 1.8 KB (1785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dccbf029dc3bd9c799fb200bfe8c3137394115ddca14d1fe634d6d868427278`  
-		Last Modified: Tue, 10 Dec 2024 01:29:24 GMT  
-		Size: 73.0 MB (73024281 bytes)  
+	-	`sha256:ab9ef2be3db327b2e0f248bf12aceeee49ca9bb66920dc92fdc55a3271f1237b`  
+		Last Modified: Tue, 24 Dec 2024 23:21:56 GMT  
+		Size: 73.0 MB (73024260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eaf6a9e715edf7afa2559e97fb26ced4f0ccd355547f5a06852fc85d7dc6e928`  
-		Last Modified: Tue, 10 Dec 2024 01:29:23 GMT  
-		Size: 624.0 B  
+	-	`sha256:57122ef5ca9aae1841b94746d3812a9bb324aaf6881d9325c380226116decea9`  
+		Last Modified: Tue, 24 Dec 2024 23:21:55 GMT  
+		Size: 625.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `telegraf:1.33` - unknown; unknown
 
 ```console
-$ docker pull telegraf@sha256:83d58cd5f93b008e4838cc69050cc75b0105860ae53b83e10b79e8bb70f11148
+$ docker pull telegraf@sha256:fbb59d4694532e273ff8131b9be52fdeb9d0e9424586ee820560e7b54db991c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 MB (6451805 bytes)**  
+-	Total Size: **6.4 MB (6449281 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f8b5fb0764af50a1748faf2de2196c37f360fdb7d23a7135789fe19fe420e95b`
+-	Image ID: `sha256:563413b89b3d2b9d8cc291785563055af2fbbe9a18b66fce72417fd65b6d1609`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:991384b93cbdb521b9392011b19b143c3e8a226ffc0ec0de1b2ea4448aae0b6a`  
-		Last Modified: Tue, 10 Dec 2024 01:29:23 GMT  
-		Size: 6.4 MB (6437033 bytes)  
+	-	`sha256:b468749829f434f99736649248b915c3549244b4ada16935516312d384e119c7`  
+		Last Modified: Tue, 24 Dec 2024 23:21:55 GMT  
+		Size: 6.4 MB (6434510 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:75208fad75fad2e62315e1d9d7e616bd18057f1cffe957ef614abd54fe0d0ca1`  
-		Last Modified: Tue, 10 Dec 2024 01:29:23 GMT  
-		Size: 14.8 KB (14772 bytes)  
+	-	`sha256:cf3b44288d65b3aaa02eb85b924a4dd8fe35501e0fedb30953f9cf9a083146e1`  
+		Last Modified: Tue, 24 Dec 2024 23:21:55 GMT  
+		Size: 14.8 KB (14771 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `telegraf:1.33` - linux; arm variant v7
@@ -2270,7 +2270,7 @@ $ docker pull telegraf@sha256:d6078b18266041b3760f8e5a1c1c3a6f3664a054a103eb7a6a
 ## `telegraf:1.33.0`
 
 ```console
-$ docker pull telegraf@sha256:9e1e6c928401d7d335915a83c4b7d19df29fcba5e550fe3524ef5d1c5a8d913f
+$ docker pull telegraf@sha256:680458a3a0a4697b23a6b2d390991f7afd55589b734a9b1ff76b67045159ccbb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2285,19 +2285,19 @@ $ docker pull telegraf@sha256:9e1e6c928401d7d335915a83c4b7d19df29fcba5e550fe3524
 ### `telegraf:1.33.0` - linux; amd64
 
 ```console
-$ docker pull telegraf@sha256:f5d75cd8943f1f3927c20cbaf69bb541a0c0f21db5b9a87e82e2aeff0aab3f2a
+$ docker pull telegraf@sha256:9914ddd25d014cfef42b29945643e111fe3359f28f647fc1711006d4728b71e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.3 MB (164337836 bytes)**  
+-	Total Size: **164.3 MB (164337675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28b0eff2abe3c880907ec09cc86666f55ccfa20fdf052547ce740e7c795d8b0d`
+-	Image ID: `sha256:666974c79fea63bdc95ee71d3f0483a8511bf35cf445db664a708b90f4f91e5a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 09 Dec 2024 21:08:54 GMT
@@ -2319,53 +2319,53 @@ CMD ["telegraf"]
 ```
 
 -	Layers:
-	-	`sha256:fdf894e782a221820acf469d425b802be26aedb5e5d26ea80a650ff6a974d488`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 48.5 MB (48497210 bytes)  
+	-	`sha256:0a96bdb8280554b560ffee0f2e5f9843dc7b625f28192021ee103ecbcc2d629b`  
+		Last Modified: Tue, 24 Dec 2024 21:32:13 GMT  
+		Size: 48.5 MB (48497066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd71677db44bb63b94de61b6f1f95d5540b4ba2d6a8a6bc4d19f422b25e0c2b`  
-		Last Modified: Tue, 03 Dec 2024 02:28:49 GMT  
-		Size: 23.9 MB (23865876 bytes)  
+	-	`sha256:54c7be425079efba0003054ee884bf72f1ffebca733bedd6f077d2809ee9aa6f`  
+		Last Modified: Tue, 24 Dec 2024 22:15:27 GMT  
+		Size: 23.9 MB (23865817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34a1a61d9f4ee7645baa168af976c33bcdb6db4c60ccc12c816992fcb1a66c73`  
-		Last Modified: Tue, 10 Dec 2024 01:29:23 GMT  
-		Size: 18.9 MB (18948074 bytes)  
+	-	`sha256:00ea042f7af0af45684f2e467cf4fea905b33fe8e68a6e9a84e891b6f1cd7e2a`  
+		Last Modified: Tue, 24 Dec 2024 23:21:55 GMT  
+		Size: 18.9 MB (18948122 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:150cdea4328a2349912cc4adc99ba756d0f6f91884b3bf2d34eeb5e993d957b5`  
-		Last Modified: Tue, 10 Dec 2024 01:29:23 GMT  
-		Size: 1.8 KB (1771 bytes)  
+	-	`sha256:1a427735e269b8580bb01a6e38c28818f6d413680eb67a6b53428b16fd3a4214`  
+		Last Modified: Tue, 24 Dec 2024 23:21:55 GMT  
+		Size: 1.8 KB (1785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dccbf029dc3bd9c799fb200bfe8c3137394115ddca14d1fe634d6d868427278`  
-		Last Modified: Tue, 10 Dec 2024 01:29:24 GMT  
-		Size: 73.0 MB (73024281 bytes)  
+	-	`sha256:ab9ef2be3db327b2e0f248bf12aceeee49ca9bb66920dc92fdc55a3271f1237b`  
+		Last Modified: Tue, 24 Dec 2024 23:21:56 GMT  
+		Size: 73.0 MB (73024260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eaf6a9e715edf7afa2559e97fb26ced4f0ccd355547f5a06852fc85d7dc6e928`  
-		Last Modified: Tue, 10 Dec 2024 01:29:23 GMT  
-		Size: 624.0 B  
+	-	`sha256:57122ef5ca9aae1841b94746d3812a9bb324aaf6881d9325c380226116decea9`  
+		Last Modified: Tue, 24 Dec 2024 23:21:55 GMT  
+		Size: 625.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `telegraf:1.33.0` - unknown; unknown
 
 ```console
-$ docker pull telegraf@sha256:83d58cd5f93b008e4838cc69050cc75b0105860ae53b83e10b79e8bb70f11148
+$ docker pull telegraf@sha256:fbb59d4694532e273ff8131b9be52fdeb9d0e9424586ee820560e7b54db991c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 MB (6451805 bytes)**  
+-	Total Size: **6.4 MB (6449281 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f8b5fb0764af50a1748faf2de2196c37f360fdb7d23a7135789fe19fe420e95b`
+-	Image ID: `sha256:563413b89b3d2b9d8cc291785563055af2fbbe9a18b66fce72417fd65b6d1609`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:991384b93cbdb521b9392011b19b143c3e8a226ffc0ec0de1b2ea4448aae0b6a`  
-		Last Modified: Tue, 10 Dec 2024 01:29:23 GMT  
-		Size: 6.4 MB (6437033 bytes)  
+	-	`sha256:b468749829f434f99736649248b915c3549244b4ada16935516312d384e119c7`  
+		Last Modified: Tue, 24 Dec 2024 23:21:55 GMT  
+		Size: 6.4 MB (6434510 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:75208fad75fad2e62315e1d9d7e616bd18057f1cffe957ef614abd54fe0d0ca1`  
-		Last Modified: Tue, 10 Dec 2024 01:29:23 GMT  
-		Size: 14.8 KB (14772 bytes)  
+	-	`sha256:cf3b44288d65b3aaa02eb85b924a4dd8fe35501e0fedb30953f9cf9a083146e1`  
+		Last Modified: Tue, 24 Dec 2024 23:21:55 GMT  
+		Size: 14.8 KB (14771 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `telegraf:1.33.0` - linux; arm variant v7
@@ -2897,7 +2897,7 @@ $ docker pull telegraf@sha256:d6078b18266041b3760f8e5a1c1c3a6f3664a054a103eb7a6a
 ## `telegraf:latest`
 
 ```console
-$ docker pull telegraf@sha256:9e1e6c928401d7d335915a83c4b7d19df29fcba5e550fe3524ef5d1c5a8d913f
+$ docker pull telegraf@sha256:680458a3a0a4697b23a6b2d390991f7afd55589b734a9b1ff76b67045159ccbb
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2912,19 +2912,19 @@ $ docker pull telegraf@sha256:9e1e6c928401d7d335915a83c4b7d19df29fcba5e550fe3524
 ### `telegraf:latest` - linux; amd64
 
 ```console
-$ docker pull telegraf@sha256:f5d75cd8943f1f3927c20cbaf69bb541a0c0f21db5b9a87e82e2aeff0aab3f2a
+$ docker pull telegraf@sha256:9914ddd25d014cfef42b29945643e111fe3359f28f647fc1711006d4728b71e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.3 MB (164337836 bytes)**  
+-	Total Size: **164.3 MB (164337675 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:28b0eff2abe3c880907ec09cc86666f55ccfa20fdf052547ce740e7c795d8b0d`
+-	Image ID: `sha256:666974c79fea63bdc95ee71d3f0483a8511bf35cf445db664a708b90f4f91e5a`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["telegraf"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 09 Dec 2024 21:08:54 GMT
@@ -2946,53 +2946,53 @@ CMD ["telegraf"]
 ```
 
 -	Layers:
-	-	`sha256:fdf894e782a221820acf469d425b802be26aedb5e5d26ea80a650ff6a974d488`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 48.5 MB (48497210 bytes)  
+	-	`sha256:0a96bdb8280554b560ffee0f2e5f9843dc7b625f28192021ee103ecbcc2d629b`  
+		Last Modified: Tue, 24 Dec 2024 21:32:13 GMT  
+		Size: 48.5 MB (48497066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bd71677db44bb63b94de61b6f1f95d5540b4ba2d6a8a6bc4d19f422b25e0c2b`  
-		Last Modified: Tue, 03 Dec 2024 02:28:49 GMT  
-		Size: 23.9 MB (23865876 bytes)  
+	-	`sha256:54c7be425079efba0003054ee884bf72f1ffebca733bedd6f077d2809ee9aa6f`  
+		Last Modified: Tue, 24 Dec 2024 22:15:27 GMT  
+		Size: 23.9 MB (23865817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34a1a61d9f4ee7645baa168af976c33bcdb6db4c60ccc12c816992fcb1a66c73`  
-		Last Modified: Tue, 10 Dec 2024 01:29:23 GMT  
-		Size: 18.9 MB (18948074 bytes)  
+	-	`sha256:00ea042f7af0af45684f2e467cf4fea905b33fe8e68a6e9a84e891b6f1cd7e2a`  
+		Last Modified: Tue, 24 Dec 2024 23:21:55 GMT  
+		Size: 18.9 MB (18948122 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:150cdea4328a2349912cc4adc99ba756d0f6f91884b3bf2d34eeb5e993d957b5`  
-		Last Modified: Tue, 10 Dec 2024 01:29:23 GMT  
-		Size: 1.8 KB (1771 bytes)  
+	-	`sha256:1a427735e269b8580bb01a6e38c28818f6d413680eb67a6b53428b16fd3a4214`  
+		Last Modified: Tue, 24 Dec 2024 23:21:55 GMT  
+		Size: 1.8 KB (1785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dccbf029dc3bd9c799fb200bfe8c3137394115ddca14d1fe634d6d868427278`  
-		Last Modified: Tue, 10 Dec 2024 01:29:24 GMT  
-		Size: 73.0 MB (73024281 bytes)  
+	-	`sha256:ab9ef2be3db327b2e0f248bf12aceeee49ca9bb66920dc92fdc55a3271f1237b`  
+		Last Modified: Tue, 24 Dec 2024 23:21:56 GMT  
+		Size: 73.0 MB (73024260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eaf6a9e715edf7afa2559e97fb26ced4f0ccd355547f5a06852fc85d7dc6e928`  
-		Last Modified: Tue, 10 Dec 2024 01:29:23 GMT  
-		Size: 624.0 B  
+	-	`sha256:57122ef5ca9aae1841b94746d3812a9bb324aaf6881d9325c380226116decea9`  
+		Last Modified: Tue, 24 Dec 2024 23:21:55 GMT  
+		Size: 625.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `telegraf:latest` - unknown; unknown
 
 ```console
-$ docker pull telegraf@sha256:83d58cd5f93b008e4838cc69050cc75b0105860ae53b83e10b79e8bb70f11148
+$ docker pull telegraf@sha256:fbb59d4694532e273ff8131b9be52fdeb9d0e9424586ee820560e7b54db991c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.5 MB (6451805 bytes)**  
+-	Total Size: **6.4 MB (6449281 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f8b5fb0764af50a1748faf2de2196c37f360fdb7d23a7135789fe19fe420e95b`
+-	Image ID: `sha256:563413b89b3d2b9d8cc291785563055af2fbbe9a18b66fce72417fd65b6d1609`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:991384b93cbdb521b9392011b19b143c3e8a226ffc0ec0de1b2ea4448aae0b6a`  
-		Last Modified: Tue, 10 Dec 2024 01:29:23 GMT  
-		Size: 6.4 MB (6437033 bytes)  
+	-	`sha256:b468749829f434f99736649248b915c3549244b4ada16935516312d384e119c7`  
+		Last Modified: Tue, 24 Dec 2024 23:21:55 GMT  
+		Size: 6.4 MB (6434510 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:75208fad75fad2e62315e1d9d7e616bd18057f1cffe957ef614abd54fe0d0ca1`  
-		Last Modified: Tue, 10 Dec 2024 01:29:23 GMT  
-		Size: 14.8 KB (14772 bytes)  
+	-	`sha256:cf3b44288d65b3aaa02eb85b924a4dd8fe35501e0fedb30953f9cf9a083146e1`  
+		Last Modified: Tue, 24 Dec 2024 23:21:55 GMT  
+		Size: 14.8 KB (14771 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `telegraf:latest` - linux; arm variant v7
