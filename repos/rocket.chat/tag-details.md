@@ -222,7 +222,12 @@ $ docker pull rocket.chat@sha256:e59bc8ebd711e687d3cfd373b9b60edacdd8cbed3aa38b7
 
 ## `rocket.chat:6.10.9`
 
-**does not exist** (yet?)
+```console
+$ docker pull rocket.chat@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `rocket.chat:6.11`
 
@@ -526,7 +531,12 @@ $ docker pull rocket.chat@sha256:61dedbbed87e155e745136bc90ab054c50a82878da36144
 
 ## `rocket.chat:6.12.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull rocket.chat@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `rocket.chat:6.13`
 
@@ -630,7 +640,12 @@ $ docker pull rocket.chat@sha256:906f0d221ab9c2ab2ca331ff239bfc3ab616f1dfe84e75d
 
 ## `rocket.chat:6.13.1`
 
-**does not exist** (yet?)
+```console
+$ docker pull rocket.chat@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `rocket.chat:6.9`
 
@@ -1034,15 +1049,30 @@ $ docker pull rocket.chat@sha256:1b065592303a556802de72b77734870ac4648d35bd94627
 
 ## `rocket.chat:7.0.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull rocket.chat@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `rocket.chat:7.1`
 
-**does not exist** (yet?)
+```console
+$ docker pull rocket.chat@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `rocket.chat:7.1.0`
 
-**does not exist** (yet?)
+```console
+$ docker pull rocket.chat@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `rocket.chat:latest`
 
