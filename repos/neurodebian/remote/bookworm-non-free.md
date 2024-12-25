@@ -1,7 +1,7 @@
 ## `neurodebian:bookworm-non-free`
 
 ```console
-$ docker pull neurodebian@sha256:81f633276b9be30fa1dd00b0723598ca82c4071e30da9746fc744a70d1d430fd
+$ docker pull neurodebian@sha256:443a23c1d6975b64d9ef984ca22ab68e6a7a7e8a60babb3d93567bcfd54d9b1f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,18 +16,18 @@ $ docker pull neurodebian@sha256:81f633276b9be30fa1dd00b0723598ca82c4071e30da974
 ### `neurodebian:bookworm-non-free` - linux; amd64
 
 ```console
-$ docker pull neurodebian@sha256:f0b826db0485d7e82be034c6c5e7edf87df12d265d6677d054029eca4e93eb8c
+$ docker pull neurodebian@sha256:768a5888324da8f10650f0864345902be005b88d7ea333ca49d729eba304bf93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **59.9 MB (59859562 bytes)**  
+-	Total Size: **59.9 MB (59859382 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7686c9b19aef29cd8dbd901aef411bfa8220e559879f8633d2b8abd2cc429f7f`
+-	Image ID: `sha256:18be643e311310cec76b259aa91c752d66eda009b5314841a821671d80385fec`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Fri, 21 Jun 2024 21:57:43 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Fri, 21 Jun 2024 21:57:43 GMT
 RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 21 Jun 2024 21:57:43 GMT
@@ -41,205 +41,205 @@ RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.
 ```
 
 -	Layers:
-	-	`sha256:fdf894e782a221820acf469d425b802be26aedb5e5d26ea80a650ff6a974d488`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 48.5 MB (48497210 bytes)  
+	-	`sha256:0a96bdb8280554b560ffee0f2e5f9843dc7b625f28192021ee103ecbcc2d629b`  
+		Last Modified: Tue, 24 Dec 2024 21:32:13 GMT  
+		Size: 48.5 MB (48497066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e3cc0f98744a051a1a5f2afd9efb44ebed4fa17eb3c1dddb60d9c9400c80ab2`  
-		Last Modified: Tue, 03 Dec 2024 02:31:50 GMT  
-		Size: 11.3 MB (11266780 bytes)  
+	-	`sha256:9bc3f2ba2cdabe9286f5e36312b98da1c17f9f020aeaab444d860731680de491`  
+		Last Modified: Tue, 24 Dec 2024 22:28:59 GMT  
+		Size: 11.3 MB (11266769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0ba287ed08d01881207dca39c00528deb3fdc3f2d81914037be7b1cfdbe874d`  
-		Last Modified: Tue, 03 Dec 2024 02:31:49 GMT  
-		Size: 1.7 KB (1745 bytes)  
+	-	`sha256:d0deac410ae9043bd2dc82cbee38b1679d26ca09c8aa209c1e724d414678348b`  
+		Last Modified: Tue, 24 Dec 2024 22:28:59 GMT  
+		Size: 1.7 KB (1740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:150a6037915fb13285e5895a6a1c62c6afc1704844f3fba6208d25301de77e56`  
-		Last Modified: Tue, 03 Dec 2024 02:31:49 GMT  
-		Size: 247.0 B  
+	-	`sha256:8d8d0b79701bb957f0dfbef51ba6875a52a2c48a37152bcb08c185754a6b0f66`  
+		Last Modified: Tue, 24 Dec 2024 22:28:59 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8683715aebd7fa532f695293a9e651f0864ce67665530642a85014fd00d60f96`  
-		Last Modified: Tue, 03 Dec 2024 02:31:49 GMT  
-		Size: 93.2 KB (93152 bytes)  
+	-	`sha256:5267bcb64b35e6799972636f526e483e3aa87fef0037e69845743e0ca8b8e065`  
+		Last Modified: Tue, 24 Dec 2024 22:28:59 GMT  
+		Size: 93.1 KB (93134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9738867365afce7f70b32c401344176aad5e654c99fb07a9333af858e584b4e9`  
-		Last Modified: Tue, 03 Dec 2024 02:31:50 GMT  
-		Size: 428.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `neurodebian:bookworm-non-free` - unknown; unknown
-
-```console
-$ docker pull neurodebian@sha256:5ea80b90c3a2e9c97601511fd1dc77bf211dee1d51e558aa1fda464ca36368ae
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.0 MB (3953302 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bc33c8834e62878218057544094ea5fe3dd9746688832eccb7832c6c514dd2f1`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:7bf28a7d462fb022e11d07e4097edcfda51808238332b04d7be6307f77970fb9`  
-		Last Modified: Tue, 03 Dec 2024 02:31:50 GMT  
-		Size: 3.9 MB (3937271 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:2408a1585fa162bca505495ed4028662a915c5800c5ec73c3024bf5a965ac6d9`  
-		Last Modified: Tue, 03 Dec 2024 02:31:49 GMT  
-		Size: 16.0 KB (16031 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `neurodebian:bookworm-non-free` - linux; arm64 variant v8
-
-```console
-$ docker pull neurodebian@sha256:8727cc1156f0afd9f41a4c982dec32a7669106b1396116e3bf6adae8aa7f4756
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **59.7 MB (59653939 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1f52ed086311e71cb3ca17d2f26956adde08dc02a426a23d623a6b6b455dc26b`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Fri, 21 Jun 2024 21:57:43 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
-# Fri, 21 Jun 2024 21:57:43 GMT
-RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 21 Jun 2024 21:57:43 GMT
-RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver keyserver.ubuntu.com --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian # buildkit
-# Fri, 21 Jun 2024 21:57:43 GMT
-RUN { 	echo 'deb http://neuro.debian.net/debian bookworm main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel bookworm main'; } > /etc/apt/sources.list.d/neurodebian.sources.list # buildkit
-# Fri, 21 Jun 2024 21:57:43 GMT
-RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 21 Jun 2024 21:57:43 GMT
-RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.d/debian.sources || srcs=/etc/apt/sources.list; sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list $srcs # buildkit
-```
-
--	Layers:
-	-	`sha256:82312fccb35f18983647c1ea71154b98ae9893fb61ca4febe12d584a3ea9ad6d`  
-		Last Modified: Tue, 03 Dec 2024 01:29:57 GMT  
-		Size: 48.3 MB (48325680 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f6d6f082b94e725149735aff5f39abf2a5c1faa04f4f35829c2b04bcf36fdb0`  
-		Last Modified: Tue, 03 Dec 2024 06:16:59 GMT  
-		Size: 11.2 MB (11232475 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed7164374defb4bad306066d94c7dac571980f047bf262c550c04b585b492527`  
-		Last Modified: Tue, 03 Dec 2024 06:16:58 GMT  
-		Size: 1.7 KB (1745 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e96a1000d937bcfa52ee6cff54a54a79274765aab42bb61041dba4d40c8ea00a`  
-		Last Modified: Tue, 03 Dec 2024 06:16:58 GMT  
-		Size: 247.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c9ab49634abc6db7b16ad6e4f6d1bd12260c9a0555ba2d16c5abca22782e40f3`  
-		Last Modified: Tue, 03 Dec 2024 06:16:58 GMT  
-		Size: 93.4 KB (93363 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7dfadfcf78518bb3680188a8aa8e9b4e03dd0606fff44a59bb7c8d5499eaf1b4`  
-		Last Modified: Tue, 03 Dec 2024 06:17:11 GMT  
-		Size: 429.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `neurodebian:bookworm-non-free` - unknown; unknown
-
-```console
-$ docker pull neurodebian@sha256:ff00f65b3308cbfe02001d7be3d5101574bcafc13cd2ed12fb2c5ea4a3f904a3
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.0 MB (3953707 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88092ab67db4a2a365b3756e65b7129bc9d0f9970f46cee3556212d286bc0541`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:5196f61854393e3f4bd1507046c2519f7c7085fc551d84440d34fc98c60437db`  
-		Last Modified: Tue, 03 Dec 2024 06:17:11 GMT  
-		Size: 3.9 MB (3937524 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:cfdbf730785a3a5e3830386fbec8ccf928bede15706f942762a042e778e73df6`  
-		Last Modified: Tue, 03 Dec 2024 06:17:10 GMT  
-		Size: 16.2 KB (16183 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `neurodebian:bookworm-non-free` - linux; 386
-
-```console
-$ docker pull neurodebian@sha256:8dc7482bab5a6e73520137dab2efc0ea2e1cc8fc7b00a55bed98c1f0f08d9b86
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.3 MB (61260740 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c795e80457b17a40c2f0ba40bb9b3c56514d9bd56e840230b6cec3cf737c4acb`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Fri, 21 Jun 2024 21:57:43 GMT
-RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1733097600'
-# Fri, 21 Jun 2024 21:57:43 GMT
-RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 21 Jun 2024 21:57:43 GMT
-RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver keyserver.ubuntu.com --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian # buildkit
-# Fri, 21 Jun 2024 21:57:43 GMT
-RUN { 	echo 'deb http://neuro.debian.net/debian bookworm main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel bookworm main'; } > /etc/apt/sources.list.d/neurodebian.sources.list # buildkit
-# Fri, 21 Jun 2024 21:57:43 GMT
-RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 21 Jun 2024 21:57:43 GMT
-RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.d/debian.sources || srcs=/etc/apt/sources.list; sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list $srcs # buildkit
-```
-
--	Layers:
-	-	`sha256:53769c348e57d646b1ec110dabf9d81a3f570afdb3b8216d1178515e4ea4ce1f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:09 GMT  
-		Size: 49.5 MB (49476152 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f4351f3571feee02247d67c5362a4118390ace6f8c203163c4f98131c109f39`  
-		Last Modified: Tue, 03 Dec 2024 02:15:01 GMT  
-		Size: 11.7 MB (11688949 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:47502da2499b6aa6bf2b0b61829d4882722d17064ba80d8bb48ea95f18de4d5d`  
-		Last Modified: Tue, 03 Dec 2024 02:15:00 GMT  
-		Size: 1.7 KB (1745 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8807895808115d1d32826306aed408a2b386e021fe7a1a16f92541a7466a2bc9`  
-		Last Modified: Tue, 03 Dec 2024 02:15:00 GMT  
-		Size: 247.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00ae4b46bcce38d9c1ec20a3d33ac2e841511ae54438cfaafe1d94b487dcc6b0`  
-		Last Modified: Tue, 03 Dec 2024 02:15:00 GMT  
-		Size: 93.2 KB (93220 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53f86ac460bc7c2375830f2b95cf8a012950443b99acbd0fc9bfc962541710a1`  
-		Last Modified: Tue, 03 Dec 2024 02:15:01 GMT  
+	-	`sha256:d8390eea91189a76a421f4d57bdbb1e57d625efd228f3316cbe5c6579be49b9e`  
+		Last Modified: Tue, 24 Dec 2024 22:29:00 GMT  
 		Size: 427.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `neurodebian:bookworm-non-free` - unknown; unknown
 
 ```console
-$ docker pull neurodebian@sha256:ddd3208bdcab3b163d0e37e9f5c42ceb55651e14db8e8389f4adaa1ae19865fd
+$ docker pull neurodebian@sha256:7268f1535b731831e096a6c7db3c741401bef526399cb76eafeda86afe9cfac5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.0 MB (3951184 bytes)**  
+-	Total Size: **3.9 MB (3948881 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56a502d814818aeb638b6714649752b3a5f5ef284ca7087a822e7014812d9e26`
+-	Image ID: `sha256:b74af61c14a4e36f7041f838e55bcfab42d41adf84312885cad5ce7fe0b48e43`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1d21298306b6c34fabffe2598c235ed691faa6d0a6279c00194aa06ecb984533`  
-		Last Modified: Tue, 03 Dec 2024 02:15:00 GMT  
-		Size: 3.9 MB (3935188 bytes)  
+	-	`sha256:2223d1f3e771ecea574420349455caecd33a0a72a45bad63421db328a0a9a14f`  
+		Last Modified: Tue, 24 Dec 2024 22:28:59 GMT  
+		Size: 3.9 MB (3932850 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e7ebb9243e1a48616e3d08d94ef366bbf4796762ab8c72db1e88b6d07afdce1d`  
-		Last Modified: Tue, 03 Dec 2024 02:15:00 GMT  
+	-	`sha256:8ab5f83f7192c7ffe9040fbe39dbc121af4ddf43e4297120ed914b8bf00c2b38`  
+		Last Modified: Tue, 24 Dec 2024 22:28:59 GMT  
+		Size: 16.0 KB (16031 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `neurodebian:bookworm-non-free` - linux; arm64 variant v8
+
+```console
+$ docker pull neurodebian@sha256:fa97feec1d4944ff4684fa7ec8556f425fa31a11c10de0e0791700b8d8df1101
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **59.7 MB (59653653 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2577dbdb1d1713f34148796b855dccfb4c136e1de53881ff63bfb66b932eb15f`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Fri, 21 Jun 2024 21:57:43 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
+# Fri, 21 Jun 2024 21:57:43 GMT
+RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 21 Jun 2024 21:57:43 GMT
+RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver keyserver.ubuntu.com --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian # buildkit
+# Fri, 21 Jun 2024 21:57:43 GMT
+RUN { 	echo 'deb http://neuro.debian.net/debian bookworm main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel bookworm main'; } > /etc/apt/sources.list.d/neurodebian.sources.list # buildkit
+# Fri, 21 Jun 2024 21:57:43 GMT
+RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 21 Jun 2024 21:57:43 GMT
+RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.d/debian.sources || srcs=/etc/apt/sources.list; sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list $srcs # buildkit
+```
+
+-	Layers:
+	-	`sha256:ba1dd0e85e0bf7e5cb632a24bbc3ec0060700bc5be9273b05d7e059950225037`  
+		Last Modified: Tue, 24 Dec 2024 21:34:06 GMT  
+		Size: 48.3 MB (48325484 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c0367019e15543f02a69e834f1c24024f42ff4a354dc1d505f1fb3f7f641f344`  
+		Last Modified: Wed, 25 Dec 2024 02:19:39 GMT  
+		Size: 11.2 MB (11232347 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1a91a2c5dffa6242c8635282e5d3644e5542d4d3fa55a50296ad77f135894427`  
+		Last Modified: Wed, 25 Dec 2024 02:19:38 GMT  
+		Size: 1.7 KB (1743 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:51f7a3036299a2c5f2be4ab8d3c47a46eab3f06d55ab60826cc639ced1d6c067`  
+		Last Modified: Wed, 25 Dec 2024 02:19:38 GMT  
+		Size: 246.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:06582c2036bcbd28dd303ac041a31fa9d209a44ef50795590fe9abd81bb38db7`  
+		Last Modified: Wed, 25 Dec 2024 02:19:39 GMT  
+		Size: 93.4 KB (93405 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9ea873f9506330dd9096c06c86ddf5aeae6dfe621dfcfb5960765ec2c9251a95`  
+		Last Modified: Wed, 25 Dec 2024 02:19:52 GMT  
+		Size: 428.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `neurodebian:bookworm-non-free` - unknown; unknown
+
+```console
+$ docker pull neurodebian@sha256:d450d31baf94e8405e36a31eb7e9b2c2dee3fcd5d08f4f68f25ff6a0e827faaf
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.9 MB (3949287 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2bae39e06a4ad965359f8e2212ab571a45be9a5c5956670e173bb3dbc1063be0`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:8f3b70b147c37ed8d6c99456de344fb2031278ae354f9c735dacbb5088f512d5`  
+		Last Modified: Wed, 25 Dec 2024 02:19:53 GMT  
+		Size: 3.9 MB (3933104 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:c5d99980963c9a4ccf630c30593aaa1b2ca192c6318ca07d627096ff1744aeb9`  
+		Last Modified: Wed, 25 Dec 2024 02:19:52 GMT  
+		Size: 16.2 KB (16183 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `neurodebian:bookworm-non-free` - linux; 386
+
+```console
+$ docker pull neurodebian@sha256:7ec09d90b1c08b2bcec6573ec48c34ffcee477df590f112d5bf99f53db759324
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **61.3 MB (61260564 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:79b2316f1509e6210f4a7ff1fd05f9d56b454ee1e277932a55d63987e31b9e49`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Fri, 21 Jun 2024 21:57:43 GMT
+RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1734912000'
+# Fri, 21 Jun 2024 21:57:43 GMT
+RUN set -x 	&& apt-get update 	&& { 		which gpg 		|| apt-get install -y --no-install-recommends gnupg 	; } 	&& { 		gpg --version | grep -q '^gpg (GnuPG) 1\.' 		|| apt-get install -y --no-install-recommends dirmngr 	; } 	&& rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 21 Jun 2024 21:57:43 GMT
+RUN set -x 	&& export GNUPGHOME="$(mktemp -d)" 	&& gpg --batch --keyserver keyserver.ubuntu.com --recv-keys DD95CC430502E37EF840ACEEA5D32F012649A5A9 	&& gpg --batch --export DD95CC430502E37EF840ACEEA5D32F012649A5A9 > /etc/apt/trusted.gpg.d/neurodebian.gpg 	&& rm -rf "$GNUPGHOME" 	&& apt-key list | grep neurodebian # buildkit
+# Fri, 21 Jun 2024 21:57:43 GMT
+RUN { 	echo 'deb http://neuro.debian.net/debian bookworm main'; 	echo 'deb http://neuro.debian.net/debian data main'; 	echo '#deb-src http://neuro.debian.net/debian-devel bookworm main'; } > /etc/apt/sources.list.d/neurodebian.sources.list # buildkit
+# Fri, 21 Jun 2024 21:57:43 GMT
+RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neurodebian-freeze eatmydata 	&& ln -s /usr/bin/eatmydata /usr/local/bin/apt-get 	&& rm -rf /var/lib/apt/lists/* # buildkit
+# Fri, 21 Jun 2024 21:57:43 GMT
+RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.d/debian.sources || srcs=/etc/apt/sources.list; sed -i -e 's,main *$,main contrib non-free,g' /etc/apt/sources.list.d/neurodebian.sources.list $srcs # buildkit
+```
+
+-	Layers:
+	-	`sha256:dd322311a74f01b8b9ba5bb8502c37125af9fcf12a3c2deee1502f4932057adb`  
+		Last Modified: Tue, 24 Dec 2024 21:32:22 GMT  
+		Size: 49.5 MB (49475925 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ae635fb490f2cae4d48b0dab392e6924439a9ff0983598ad44c3dd59a103e630`  
+		Last Modified: Tue, 24 Dec 2024 22:25:21 GMT  
+		Size: 11.7 MB (11689000 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:237a27182edea584b14c266d7502f3b4115cb5c41028d75ef2bf5fa03965032c`  
+		Last Modified: Tue, 24 Dec 2024 22:25:21 GMT  
+		Size: 1.7 KB (1744 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aa4c41a48b8336769e9e874de5d168aaaf9803703bbb14816f197a1f92dbd9b0`  
+		Last Modified: Tue, 24 Dec 2024 22:25:21 GMT  
+		Size: 246.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7a543f8d766a8e16660afc6c1d3a72a188d6b8797c95b78b2946f8393bfe32f3`  
+		Last Modified: Tue, 24 Dec 2024 22:25:21 GMT  
+		Size: 93.2 KB (93223 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6cae7fd7966c639f84dc900379fb668174ae0d07b06ceb03c208e5eab1cadf20`  
+		Last Modified: Tue, 24 Dec 2024 22:25:22 GMT  
+		Size: 426.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `neurodebian:bookworm-non-free` - unknown; unknown
+
+```console
+$ docker pull neurodebian@sha256:373503456b67e3ba1a4da14b390432a88c34ecf706b129f85e638c01da436ddc
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.9 MB (3946763 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:db20ecea7fbf37361af5c2c9ceb8f16fbe9d29735172b54c184ac38f14c4b78c`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:4ca959f7688b8d655ebe995ec8d4e77bfaa76d4f9795313c6ca478ec35d3ce5d`  
+		Last Modified: Tue, 24 Dec 2024 22:25:21 GMT  
+		Size: 3.9 MB (3930767 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:446645abb9cdf6a0ab3aab2d89e42cef15f7b51ca7e389f1540b11a44b1f224d`  
+		Last Modified: Tue, 24 Dec 2024 22:25:21 GMT  
 		Size: 16.0 KB (15996 bytes)  
 		MIME: application/vnd.in-toto+json
