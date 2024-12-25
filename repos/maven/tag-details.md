@@ -1908,7 +1908,7 @@ $ docker pull maven@sha256:713d556c64a4563f474ec768ddde76dda0bff71e18e07e3ae0e12
 ## `maven:3-amazoncorretto-11-debian`
 
 ```console
-$ docker pull maven@sha256:07246a0af54784fdd043b11902fe26c165ce87ebaf51da74561aad7ee8745e53
+$ docker pull maven@sha256:21a69a67581cfdba0359fa364650bf8414085aa31c16a0f2766f21bf494725ea
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1921,19 +1921,19 @@ $ docker pull maven@sha256:07246a0af54784fdd043b11902fe26c165ce87ebaf51da74561aa
 ### `maven:3-amazoncorretto-11-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:f56a891a8c2d60c05fc27e94e7fdde7e4f94e148f85a8ed5e4f56927958cd07f
+$ docker pull maven@sha256:d6e6c50d90532a65da7912bb7e40a894dfd8c5f7f589508da1c79528a8c40baf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.0 MB (241037953 bytes)**  
+-	Total Size: **241.0 MB (241039117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f11584bfd8becdd289924fbfcbaccdcb60d642a9a75e5c9b46ce979b27df2578`
+-	Image ID: `sha256:f02a44bf8c6e0812baffe12dbbc402ebb11ea343987fc29bcc1b043acd406e6d`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -1969,71 +1969,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922faa54581dd155260ada067b1d02e79e4b04e987a949339e9417f24705a069`  
-		Last Modified: Mon, 09 Dec 2024 20:42:31 GMT  
-		Size: 203.6 MB (203634896 bytes)  
+	-	`sha256:36450b4b7edc9daf401324b19b381c3d6b831c96db39e1b5168699025a1d387f`  
+		Last Modified: Tue, 24 Dec 2024 22:39:02 GMT  
+		Size: 203.6 MB (203636061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:191954cb45685ee074d375d99dae0d541b8a10fc3cdbd8b7c45a9058c7a67925`  
-		Last Modified: Mon, 09 Dec 2024 20:42:27 GMT  
+	-	`sha256:85a53a8e763a560a15e208073d78cd3bf290b589b77065df2db5988414f9fa1a`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
 		Size: 9.2 MB (9170441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ec24c128927e43b7c88f36f7c1b5808b962cef2b38285401447204f2e4546ec`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
+	-	`sha256:ad0483291349ac15c314fc9e17ad4e80015fe2d669c3531e4e821d5812a3ab59`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
 		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3825331641f3ca43326d913ccf30e497cfe45efb837b747f3549923e4267f6a0`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
-		Size: 155.0 B  
+	-	`sha256:79dce5d06bbdee8522c0f53f27e58849e8ef88a6fed3225d64946db4eb4b7042`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-11-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:18455b15c0765c517544f2fd62834cfdc58d4bdbb5c72b3b7b0481556dc7b939
+$ docker pull maven@sha256:8cf2de72051f655b6ca09740a5701d4cce0cfd15387c7369e425eb0725dd1a81
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3024411 bytes)**  
+-	Total Size: **3.0 MB (3020167 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ffec63b25cefdcc28f45362e01d1c4f6547e249a457d464662326971b9c7be6`
+-	Image ID: `sha256:9de589dc979b78faf2edd3d3ae802aec33610d43e64b742b18669a2905018a98`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:14d88952f2d588be83728051673534baf0d037d56562968afff11b8eda43e0fd`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
-		Size: 3.0 MB (3005198 bytes)  
+	-	`sha256:2f1743904307f8ee110083eaee99c1fd3e693dedf5364d60797255e783cc8dbb`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 3.0 MB (3000954 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9eaf2292438e467757e3620693b15f9ebed9b38b2fd5cbc211760a618bb9d988`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
+	-	`sha256:60d88a3745436374172bdf2db58061f175167a2dace61561c901f06c4c8c3ccc`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
 		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-amazoncorretto-11-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:ffcef4372d4ddae929662bc5bd4638ed1c397da4bbff71ef11db824838396b15
+$ docker pull maven@sha256:0312306a4f2e34d11c329f92ed36db33d0f137ba70c234cd6a166602fa9fcc26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.6 MB (237638199 bytes)**  
+-	Total Size: **237.6 MB (237637787 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea342f18d06aec3ec3118ba51acf1748cc5a0973e0748479d02bddb778ee816a`
+-	Image ID: `sha256:0eab9e858362e58ec93ff6937b40f742b2e6ef983ad27bc1410c30e7d091b804`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -2069,59 +2069,59 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37c630dfdea6c7abe6c8974fd22a30a3331dad0eed32f27fdf0644d1aabeb876`  
-		Last Modified: Tue, 10 Dec 2024 02:41:36 GMT  
-		Size: 200.4 MB (200407923 bytes)  
+	-	`sha256:b2f00a0a44879e2a363f446735ab1818d9b3a47a1cc53eb291022be044f29e0a`  
+		Last Modified: Wed, 25 Dec 2024 07:43:38 GMT  
+		Size: 200.4 MB (200407586 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c10727b442a2a987f01906ef6927d2187a284dd28baf90a51d4b4da30215451a`  
-		Last Modified: Tue, 10 Dec 2024 02:41:32 GMT  
-		Size: 9.2 MB (9170429 bytes)  
+	-	`sha256:7225f630f0a449824f6de2bf09a15bd95bde218eef23bee1710611ff18262175`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c7c44bf18d9125a91aca3c2f2596bc4ff2a76992628c117d2d9ad5f7437c6b48`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 850.0 B  
+	-	`sha256:737d1875dc105612418c9f9223640307d49548301d409078c05f9614dee081a3`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8f71d750bd54eede80fad326a5e6cdfd7a089590805f82a2b52d5fd9d6f8f8b`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 155.0 B  
+	-	`sha256:c178ca3cdf904b54af7e73cd4b74ecefa73ab241aa7a4a7c21500f5186beadaa`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-11-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:f79c629a728fccb5b376cc7db47a5b505b9c218f285369a294f7fa0f0f9b7826
+$ docker pull maven@sha256:34c9c811aa6f724fb3508d03a0b1ad1286be25bec0c56b9bd5d722108bca4acc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3024875 bytes)**  
+-	Total Size: **3.0 MB (3020633 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:91367ba7d347f401beadee302df885ff863a8fe815c1394f18f206f38cbdf50e`
+-	Image ID: `sha256:a41c42d5693be45f5ddb686c9abf8a4037704ced382d780a130e659822492e94`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bcf34b7611ef6dfeeb983f79ae5fdd41ac9d36e56d285c0c0e8df8e65dc08ec9`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 3.0 MB (3005494 bytes)  
+	-	`sha256:4fef2af62286bb724ac4883ae33d2bfb3784156966e61864dcb2988ac28808a3`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 3.0 MB (3001251 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:040866b3d484c0b64e17d3f978b7c1f2a3286b2eb23b5b2f283075239f8a0d95`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 19.4 KB (19381 bytes)  
+	-	`sha256:751a1eb254fd6e75586b76462737f33546a0b5edc1350d963228796cd6d59c6f`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3-amazoncorretto-11-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:07246a0af54784fdd043b11902fe26c165ce87ebaf51da74561aad7ee8745e53
+$ docker pull maven@sha256:21a69a67581cfdba0359fa364650bf8414085aa31c16a0f2766f21bf494725ea
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2134,19 +2134,19 @@ $ docker pull maven@sha256:07246a0af54784fdd043b11902fe26c165ce87ebaf51da74561aa
 ### `maven:3-amazoncorretto-11-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:f56a891a8c2d60c05fc27e94e7fdde7e4f94e148f85a8ed5e4f56927958cd07f
+$ docker pull maven@sha256:d6e6c50d90532a65da7912bb7e40a894dfd8c5f7f589508da1c79528a8c40baf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.0 MB (241037953 bytes)**  
+-	Total Size: **241.0 MB (241039117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f11584bfd8becdd289924fbfcbaccdcb60d642a9a75e5c9b46ce979b27df2578`
+-	Image ID: `sha256:f02a44bf8c6e0812baffe12dbbc402ebb11ea343987fc29bcc1b043acd406e6d`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -2182,71 +2182,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922faa54581dd155260ada067b1d02e79e4b04e987a949339e9417f24705a069`  
-		Last Modified: Mon, 09 Dec 2024 20:42:31 GMT  
-		Size: 203.6 MB (203634896 bytes)  
+	-	`sha256:36450b4b7edc9daf401324b19b381c3d6b831c96db39e1b5168699025a1d387f`  
+		Last Modified: Tue, 24 Dec 2024 22:39:02 GMT  
+		Size: 203.6 MB (203636061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:191954cb45685ee074d375d99dae0d541b8a10fc3cdbd8b7c45a9058c7a67925`  
-		Last Modified: Mon, 09 Dec 2024 20:42:27 GMT  
+	-	`sha256:85a53a8e763a560a15e208073d78cd3bf290b589b77065df2db5988414f9fa1a`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
 		Size: 9.2 MB (9170441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ec24c128927e43b7c88f36f7c1b5808b962cef2b38285401447204f2e4546ec`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
+	-	`sha256:ad0483291349ac15c314fc9e17ad4e80015fe2d669c3531e4e821d5812a3ab59`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
 		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3825331641f3ca43326d913ccf30e497cfe45efb837b747f3549923e4267f6a0`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
-		Size: 155.0 B  
+	-	`sha256:79dce5d06bbdee8522c0f53f27e58849e8ef88a6fed3225d64946db4eb4b7042`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-11-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:18455b15c0765c517544f2fd62834cfdc58d4bdbb5c72b3b7b0481556dc7b939
+$ docker pull maven@sha256:8cf2de72051f655b6ca09740a5701d4cce0cfd15387c7369e425eb0725dd1a81
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3024411 bytes)**  
+-	Total Size: **3.0 MB (3020167 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ffec63b25cefdcc28f45362e01d1c4f6547e249a457d464662326971b9c7be6`
+-	Image ID: `sha256:9de589dc979b78faf2edd3d3ae802aec33610d43e64b742b18669a2905018a98`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:14d88952f2d588be83728051673534baf0d037d56562968afff11b8eda43e0fd`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
-		Size: 3.0 MB (3005198 bytes)  
+	-	`sha256:2f1743904307f8ee110083eaee99c1fd3e693dedf5364d60797255e783cc8dbb`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 3.0 MB (3000954 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9eaf2292438e467757e3620693b15f9ebed9b38b2fd5cbc211760a618bb9d988`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
+	-	`sha256:60d88a3745436374172bdf2db58061f175167a2dace61561c901f06c4c8c3ccc`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
 		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-amazoncorretto-11-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:ffcef4372d4ddae929662bc5bd4638ed1c397da4bbff71ef11db824838396b15
+$ docker pull maven@sha256:0312306a4f2e34d11c329f92ed36db33d0f137ba70c234cd6a166602fa9fcc26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.6 MB (237638199 bytes)**  
+-	Total Size: **237.6 MB (237637787 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea342f18d06aec3ec3118ba51acf1748cc5a0973e0748479d02bddb778ee816a`
+-	Image ID: `sha256:0eab9e858362e58ec93ff6937b40f742b2e6ef983ad27bc1410c30e7d091b804`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -2282,53 +2282,53 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37c630dfdea6c7abe6c8974fd22a30a3331dad0eed32f27fdf0644d1aabeb876`  
-		Last Modified: Tue, 10 Dec 2024 02:41:36 GMT  
-		Size: 200.4 MB (200407923 bytes)  
+	-	`sha256:b2f00a0a44879e2a363f446735ab1818d9b3a47a1cc53eb291022be044f29e0a`  
+		Last Modified: Wed, 25 Dec 2024 07:43:38 GMT  
+		Size: 200.4 MB (200407586 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c10727b442a2a987f01906ef6927d2187a284dd28baf90a51d4b4da30215451a`  
-		Last Modified: Tue, 10 Dec 2024 02:41:32 GMT  
-		Size: 9.2 MB (9170429 bytes)  
+	-	`sha256:7225f630f0a449824f6de2bf09a15bd95bde218eef23bee1710611ff18262175`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c7c44bf18d9125a91aca3c2f2596bc4ff2a76992628c117d2d9ad5f7437c6b48`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 850.0 B  
+	-	`sha256:737d1875dc105612418c9f9223640307d49548301d409078c05f9614dee081a3`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8f71d750bd54eede80fad326a5e6cdfd7a089590805f82a2b52d5fd9d6f8f8b`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 155.0 B  
+	-	`sha256:c178ca3cdf904b54af7e73cd4b74ecefa73ab241aa7a4a7c21500f5186beadaa`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-11-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:f79c629a728fccb5b376cc7db47a5b505b9c218f285369a294f7fa0f0f9b7826
+$ docker pull maven@sha256:34c9c811aa6f724fb3508d03a0b1ad1286be25bec0c56b9bd5d722108bca4acc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3024875 bytes)**  
+-	Total Size: **3.0 MB (3020633 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:91367ba7d347f401beadee302df885ff863a8fe815c1394f18f206f38cbdf50e`
+-	Image ID: `sha256:a41c42d5693be45f5ddb686c9abf8a4037704ced382d780a130e659822492e94`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bcf34b7611ef6dfeeb983f79ae5fdd41ac9d36e56d285c0c0e8df8e65dc08ec9`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 3.0 MB (3005494 bytes)  
+	-	`sha256:4fef2af62286bb724ac4883ae33d2bfb3784156966e61864dcb2988ac28808a3`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 3.0 MB (3001251 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:040866b3d484c0b64e17d3f978b7c1f2a3286b2eb23b5b2f283075239f8a0d95`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 19.4 KB (19381 bytes)  
+	-	`sha256:751a1eb254fd6e75586b76462737f33546a0b5edc1350d963228796cd6d59c6f`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3-amazoncorretto-17`
@@ -3083,7 +3083,7 @@ $ docker pull maven@sha256:0020cf837d876134275d4f4eb52f7c5ad2b77981834306aaecfc4
 ## `maven:3-amazoncorretto-17-debian`
 
 ```console
-$ docker pull maven@sha256:6eb37f462d703f390c7649e285a2cba3244d26b3c4780e9a5743c4296d81f737
+$ docker pull maven@sha256:c26417a9daa6c49e7ef634fa0c2a581d1d8a43a28482011a9c1fe03022eb3b9e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3096,19 +3096,19 @@ $ docker pull maven@sha256:6eb37f462d703f390c7649e285a2cba3244d26b3c4780e9a5743c
 ### `maven:3-amazoncorretto-17-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:e0499750502788e789c6eed4d6cc47f089efb5e98f3920db236b94f1fd44a36d
+$ docker pull maven@sha256:cd19bfa572126327677e81ef0265032d840954a2bd92f1890098ae7b68bc88ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.9 MB (238923242 bytes)**  
+-	Total Size: **238.9 MB (238923256 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b39ffa4f192eb0d909049862225f406fe92584ba24dcdd25a2ca2394528ee18`
+-	Image ID: `sha256:1ec73da9166e8187c42523ca8f1809fcc53d494af99834f6b663ea6e57c8fc89`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -3144,71 +3144,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6bd605e55415a21a79cb44063579ae319db81753d426c51b3596a88448d4324d`  
-		Last Modified: Mon, 09 Dec 2024 20:31:54 GMT  
-		Size: 201.5 MB (201520184 bytes)  
+	-	`sha256:5b8a8ed6ef70eff5e37193c556413ab3ed681bfb0ad703fa68a9bc979e06d7db`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 201.5 MB (201520197 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:040f087bba961db973efbc8cf025c845df8b04f74d07049f86889e28a956525a`  
-		Last Modified: Mon, 09 Dec 2024 20:31:49 GMT  
-		Size: 9.2 MB (9170441 bytes)  
+	-	`sha256:c645781e092c07d6a0843af4191176761dd7bb07527b07f8324f006eb4adfdf3`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0354a9a64bdf84ec236066e08683e4a72d42ec2b56cfd08f979fe2c141d888a`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 850.0 B  
+	-	`sha256:6a0f1b0cf3c87da01f6ad1ba29493d7b1bbad065555bd0b81e86b32790f2527b`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1517b8d88921f1de5fcf7795d350f67c5c30b13e249017228d0fc7887152ce5`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 155.0 B  
+	-	`sha256:30e10ba0325eb3bb549f9245f1dee1c82675b5f5cc765e331819083f01f5dba2`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-17-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:0fd87c78d77ed24fdd9af48dcfec3069c3cde5fe3ef3096b5558eafac42352ab
+$ docker pull maven@sha256:9438ebbe807c19f50f98635f3119cd1b5d8886067a26ebc0a42c4f6267bc5b3e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018610 bytes)**  
+-	Total Size: **3.0 MB (3014376 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23318f260ec3d4c440b36d208f434c7b520b51bb895eb160e242a729b126726e`
+-	Image ID: `sha256:dc75643faa536f1a6d6360858cc1fb2274da0e1286accfc78322b72697601aad`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:623ef16bf71fdbe752d9a66a0fa30a662f37897f430703e6f05a8544d0946818`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 3.0 MB (2999398 bytes)  
+	-	`sha256:cfefe596825d83fe5b603bccc6bea83f2bcdc6f618f7644bce86bc23daca9e20`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 3.0 MB (2995163 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4771f142f590f15bd2cd40c9d3c5e125600ec0c3d89df79567f3a6cce5d68c12`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 19.2 KB (19212 bytes)  
+	-	`sha256:c412b8581df1fec4266b58bf93dc5d199d8908037466a707934fe2b2735fcbef`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-amazoncorretto-17-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:3edb30b349640c8be0a85e9cfbfbc4b4bcfc58d3aee87991ac472749a872514f
+$ docker pull maven@sha256:d427e1310b94088b3e956d06c6c9e0889ca084a81e3f0bf90b0aadf1cdfc298b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.1 MB (237053194 bytes)**  
+-	Total Size: **237.1 MB (237052943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a35aa78a5e3090a7efa97d47013856d131c51063b3502b19b1fb3f2dc1c3b63`
+-	Image ID: `sha256:595309375c80517e901a312505c2c67ea6d4ce141f6b175e14dc3138ed9af936`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -3244,59 +3244,59 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e1e03ce8ae306c1b9809b6a1263c141bcf0fd494718ffe0d34eb727db82d606`  
-		Last Modified: Tue, 10 Dec 2024 02:22:11 GMT  
-		Size: 199.8 MB (199822910 bytes)  
+	-	`sha256:1f9c94a51aa52de7670b7bace65113fbe0489143772414c738c957a532cb920e`  
+		Last Modified: Wed, 25 Dec 2024 07:44:29 GMT  
+		Size: 199.8 MB (199822750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:694f6618fd18469987ee9c97941bb88de0549291d9ddadc2a143ad04eb3474f8`  
-		Last Modified: Tue, 10 Dec 2024 02:22:07 GMT  
-		Size: 9.2 MB (9170437 bytes)  
+	-	`sha256:d0e730b04999ace32443fb944f5739f182f96f780ffafefc30e68c1475aa0b13`  
+		Last Modified: Wed, 25 Dec 2024 07:44:25 GMT  
+		Size: 9.2 MB (9170436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2bb0c05753ad097cdbdce27b2b70c06408dfa58ad31e556679b92f2e0580a789`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
-		Size: 850.0 B  
+	-	`sha256:e761b858135dfe97252f118c5e7cbb83f45d489dfbf776be219acf3f3fcc5d30`  
+		Last Modified: Wed, 25 Dec 2024 07:44:24 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33dd498a83b94bd088299af763f6e4923c7356da8fdb1d5dc14f00a08db58cba`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
-		Size: 155.0 B  
+	-	`sha256:0da921b0cf72152656366d4a09211bb881a788437bdbbdcbab27201b3f8dc34b`  
+		Last Modified: Wed, 25 Dec 2024 07:44:25 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-17-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:3afdd7557b0dbc3632a73081045c3d9f1a4a5b4566390c526cec5d7b6b06068c
+$ docker pull maven@sha256:b27cdd28d122770a9256003ddf682032d8ab58fe5e9708fb387528b6e521b77c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018438 bytes)**  
+-	Total Size: **3.0 MB (3014205 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff25405c11c353104aae44a2acfd63119dff05f164376035495469d21c8bc354`
+-	Image ID: `sha256:af930de310cc6896458764d6062ef9dac109e9c1c0be591b9fbcd5904f8c18c0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5564111de98f48ee97275b2eb8c81cd78e2e288e18cff1808258b16b167865bb`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
-		Size: 3.0 MB (2999056 bytes)  
+	-	`sha256:1f3615450a3eae38adec7ee48ef2e27b7a54fe95c87df88a08b8b0d9e7a6bcb9`  
+		Last Modified: Wed, 25 Dec 2024 07:44:25 GMT  
+		Size: 3.0 MB (2994823 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bfb3013db23b05219464c39a33aa1849d8bd987295418308caf2a35c0e4a41c9`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
+	-	`sha256:e2c5d989c0efabf58340cb5364267ae7b1db896301ac5f6594c78f647eaeb0fb`  
+		Last Modified: Wed, 25 Dec 2024 07:44:24 GMT  
 		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3-amazoncorretto-17-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:6eb37f462d703f390c7649e285a2cba3244d26b3c4780e9a5743c4296d81f737
+$ docker pull maven@sha256:c26417a9daa6c49e7ef634fa0c2a581d1d8a43a28482011a9c1fe03022eb3b9e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3309,19 +3309,19 @@ $ docker pull maven@sha256:6eb37f462d703f390c7649e285a2cba3244d26b3c4780e9a5743c
 ### `maven:3-amazoncorretto-17-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:e0499750502788e789c6eed4d6cc47f089efb5e98f3920db236b94f1fd44a36d
+$ docker pull maven@sha256:cd19bfa572126327677e81ef0265032d840954a2bd92f1890098ae7b68bc88ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.9 MB (238923242 bytes)**  
+-	Total Size: **238.9 MB (238923256 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b39ffa4f192eb0d909049862225f406fe92584ba24dcdd25a2ca2394528ee18`
+-	Image ID: `sha256:1ec73da9166e8187c42523ca8f1809fcc53d494af99834f6b663ea6e57c8fc89`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -3357,71 +3357,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6bd605e55415a21a79cb44063579ae319db81753d426c51b3596a88448d4324d`  
-		Last Modified: Mon, 09 Dec 2024 20:31:54 GMT  
-		Size: 201.5 MB (201520184 bytes)  
+	-	`sha256:5b8a8ed6ef70eff5e37193c556413ab3ed681bfb0ad703fa68a9bc979e06d7db`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 201.5 MB (201520197 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:040f087bba961db973efbc8cf025c845df8b04f74d07049f86889e28a956525a`  
-		Last Modified: Mon, 09 Dec 2024 20:31:49 GMT  
-		Size: 9.2 MB (9170441 bytes)  
+	-	`sha256:c645781e092c07d6a0843af4191176761dd7bb07527b07f8324f006eb4adfdf3`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0354a9a64bdf84ec236066e08683e4a72d42ec2b56cfd08f979fe2c141d888a`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 850.0 B  
+	-	`sha256:6a0f1b0cf3c87da01f6ad1ba29493d7b1bbad065555bd0b81e86b32790f2527b`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1517b8d88921f1de5fcf7795d350f67c5c30b13e249017228d0fc7887152ce5`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 155.0 B  
+	-	`sha256:30e10ba0325eb3bb549f9245f1dee1c82675b5f5cc765e331819083f01f5dba2`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-17-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:0fd87c78d77ed24fdd9af48dcfec3069c3cde5fe3ef3096b5558eafac42352ab
+$ docker pull maven@sha256:9438ebbe807c19f50f98635f3119cd1b5d8886067a26ebc0a42c4f6267bc5b3e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018610 bytes)**  
+-	Total Size: **3.0 MB (3014376 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23318f260ec3d4c440b36d208f434c7b520b51bb895eb160e242a729b126726e`
+-	Image ID: `sha256:dc75643faa536f1a6d6360858cc1fb2274da0e1286accfc78322b72697601aad`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:623ef16bf71fdbe752d9a66a0fa30a662f37897f430703e6f05a8544d0946818`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 3.0 MB (2999398 bytes)  
+	-	`sha256:cfefe596825d83fe5b603bccc6bea83f2bcdc6f618f7644bce86bc23daca9e20`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 3.0 MB (2995163 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4771f142f590f15bd2cd40c9d3c5e125600ec0c3d89df79567f3a6cce5d68c12`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 19.2 KB (19212 bytes)  
+	-	`sha256:c412b8581df1fec4266b58bf93dc5d199d8908037466a707934fe2b2735fcbef`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-amazoncorretto-17-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:3edb30b349640c8be0a85e9cfbfbc4b4bcfc58d3aee87991ac472749a872514f
+$ docker pull maven@sha256:d427e1310b94088b3e956d06c6c9e0889ca084a81e3f0bf90b0aadf1cdfc298b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.1 MB (237053194 bytes)**  
+-	Total Size: **237.1 MB (237052943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a35aa78a5e3090a7efa97d47013856d131c51063b3502b19b1fb3f2dc1c3b63`
+-	Image ID: `sha256:595309375c80517e901a312505c2c67ea6d4ce141f6b175e14dc3138ed9af936`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -3457,52 +3457,52 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e1e03ce8ae306c1b9809b6a1263c141bcf0fd494718ffe0d34eb727db82d606`  
-		Last Modified: Tue, 10 Dec 2024 02:22:11 GMT  
-		Size: 199.8 MB (199822910 bytes)  
+	-	`sha256:1f9c94a51aa52de7670b7bace65113fbe0489143772414c738c957a532cb920e`  
+		Last Modified: Wed, 25 Dec 2024 07:44:29 GMT  
+		Size: 199.8 MB (199822750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:694f6618fd18469987ee9c97941bb88de0549291d9ddadc2a143ad04eb3474f8`  
-		Last Modified: Tue, 10 Dec 2024 02:22:07 GMT  
-		Size: 9.2 MB (9170437 bytes)  
+	-	`sha256:d0e730b04999ace32443fb944f5739f182f96f780ffafefc30e68c1475aa0b13`  
+		Last Modified: Wed, 25 Dec 2024 07:44:25 GMT  
+		Size: 9.2 MB (9170436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2bb0c05753ad097cdbdce27b2b70c06408dfa58ad31e556679b92f2e0580a789`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
-		Size: 850.0 B  
+	-	`sha256:e761b858135dfe97252f118c5e7cbb83f45d489dfbf776be219acf3f3fcc5d30`  
+		Last Modified: Wed, 25 Dec 2024 07:44:24 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33dd498a83b94bd088299af763f6e4923c7356da8fdb1d5dc14f00a08db58cba`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
-		Size: 155.0 B  
+	-	`sha256:0da921b0cf72152656366d4a09211bb881a788437bdbbdcbab27201b3f8dc34b`  
+		Last Modified: Wed, 25 Dec 2024 07:44:25 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-17-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:3afdd7557b0dbc3632a73081045c3d9f1a4a5b4566390c526cec5d7b6b06068c
+$ docker pull maven@sha256:b27cdd28d122770a9256003ddf682032d8ab58fe5e9708fb387528b6e521b77c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018438 bytes)**  
+-	Total Size: **3.0 MB (3014205 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff25405c11c353104aae44a2acfd63119dff05f164376035495469d21c8bc354`
+-	Image ID: `sha256:af930de310cc6896458764d6062ef9dac109e9c1c0be591b9fbcd5904f8c18c0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5564111de98f48ee97275b2eb8c81cd78e2e288e18cff1808258b16b167865bb`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
-		Size: 3.0 MB (2999056 bytes)  
+	-	`sha256:1f3615450a3eae38adec7ee48ef2e27b7a54fe95c87df88a08b8b0d9e7a6bcb9`  
+		Last Modified: Wed, 25 Dec 2024 07:44:25 GMT  
+		Size: 3.0 MB (2994823 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bfb3013db23b05219464c39a33aa1849d8bd987295418308caf2a35c0e4a41c9`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
+	-	`sha256:e2c5d989c0efabf58340cb5364267ae7b1db896301ac5f6594c78f647eaeb0fb`  
+		Last Modified: Wed, 25 Dec 2024 07:44:24 GMT  
 		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4258,7 +4258,7 @@ $ docker pull maven@sha256:ca8726b7a93ddfb7b3af42bca32e2c9a2e68228113162dd8c4e16
 ## `maven:3-amazoncorretto-21-debian`
 
 ```console
-$ docker pull maven@sha256:fa247839d77686a170df0c220924f21108617ba5206aa04d6a5885f9b0adc064
+$ docker pull maven@sha256:0297db3be9a5b563b0d886461224a0325ca3740cc4477fc49c5c647d6712499b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4271,19 +4271,19 @@ $ docker pull maven@sha256:fa247839d77686a170df0c220924f21108617ba5206aa04d6a588
 ### `maven:3-amazoncorretto-21-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:cb4d16d9dc6ce8cc1871911b82bb066fe0687d93fde2fafd09db3b18bbc67417
+$ docker pull maven@sha256:f4f670cf10bd7648498bc27585d18f9db6ff347d6e813f8eaadb54ae60a304b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.1 MB (254139405 bytes)**  
+-	Total Size: **254.1 MB (254139059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2d5f6499cd7ee9e34cad52e6805ad12ade49efaf967bd2b1bbb6b1f1173edde`
+-	Image ID: `sha256:2dcfe13e93c6ae1138a3c9d6f849b76be430157a8c4f982bc5c64975ad6cc002`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -4319,71 +4319,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:525b5720295b79ebac3495aaaf60011b11c43238507d7ce087160256bc6fd97b`  
-		Last Modified: Mon, 09 Dec 2024 20:31:43 GMT  
-		Size: 216.7 MB (216736348 bytes)  
+	-	`sha256:aabfa15455560ed1bd2328a7821a42a84f3650acc865f2187c0b06f2ae176eef`  
+		Last Modified: Tue, 24 Dec 2024 22:39:15 GMT  
+		Size: 216.7 MB (216736000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f376598fd0822e8fefd016b6267bf83a0580985ef1e3b84440af37d48c489759`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 9.2 MB (9170441 bytes)  
+	-	`sha256:c645781e092c07d6a0843af4191176761dd7bb07527b07f8324f006eb4adfdf3`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a62da7db1ad086623eb81c8d1011258a160bcfcb884da2c7716d4f9efbea8418`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 850.0 B  
+	-	`sha256:6a0f1b0cf3c87da01f6ad1ba29493d7b1bbad065555bd0b81e86b32790f2527b`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:386c25cf85a2c5a83d35ed983fa02b99f2d337dfb4ff7cc970877de045353c56`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 154.0 B  
+	-	`sha256:30e10ba0325eb3bb549f9245f1dee1c82675b5f5cc765e331819083f01f5dba2`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-21-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:d9e8e30534f70656e4562544b4d6d84e856880629608d77403486391f8d17559
+$ docker pull maven@sha256:4fa0f35d87db27f06082dddb605067bd2767fb33b8e2925924fe515401a64495
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018510 bytes)**  
+-	Total Size: **3.0 MB (3014275 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6c21ca3c550304d2dc7abfa58b2ebbe7e444c9a862e2ac29471d6f151ab0b28`
+-	Image ID: `sha256:a3f6ea33bc3fef581dc17c3c6d627a5f77ba750ef4a2f9204e54b0257b04bd6b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b0fac53a856d432f4b51bc1e8db81568555bb10a5320851f3e5399b5c4799075`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 3.0 MB (2999297 bytes)  
+	-	`sha256:4ed2c30f2a67a60ad6eaefe90b8f739775233e25aaa6d42e533aa23adf5c13c5`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 3.0 MB (2995062 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b147d26747209b63652a4020fac924ee12582c000c43802972eefd67b5fcbf7e`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
+	-	`sha256:d42766da24aa0e7e818d0ded888932fb08284a70ecec8ca7cfe57d40dc4d91d8`  
+		Last Modified: Tue, 24 Dec 2024 22:39:08 GMT  
 		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-amazoncorretto-21-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:00b0a43c44cd3d9c32bc5c22160484f878bf85aeb0ff21422ceaccd1806ee998
+$ docker pull maven@sha256:0b3ad8a450bc77519b3baefbfcd797c747c61c02a8780ad46caeec40bde5afc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.7 MB (251701171 bytes)**  
+-	Total Size: **251.7 MB (251700966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:735cd64f57d78b500efd2f6cca65d171668c1fbac7982481b812a0071192f12e`
+-	Image ID: `sha256:a02a0b90f6b7b4a29fd7da6fd79e0b91032f0d2768fd5d7741f1a3e211795a24`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -4419,59 +4419,59 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd997dd7f8c27c4e3de5778b0e4635734590e28a1e3724b77623e3c9bbeea21b`  
-		Last Modified: Tue, 10 Dec 2024 02:26:11 GMT  
-		Size: 214.5 MB (214470886 bytes)  
+	-	`sha256:f1fa1eff39f4841b833a6e95f85f6fa8349afb48e1d5e6d119cec7732f2c2775`  
+		Last Modified: Wed, 25 Dec 2024 07:45:21 GMT  
+		Size: 214.5 MB (214470778 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92db06626165e33a8236aed2f2b7aa487aa56eece4616f3d651c16bb9cdd9677`  
-		Last Modified: Tue, 10 Dec 2024 02:26:07 GMT  
-		Size: 9.2 MB (9170437 bytes)  
+	-	`sha256:18dc6a06e61cd6a5d8f8effa0459ebf14d24d13f24632cd871df97a23980f84c`  
+		Last Modified: Wed, 25 Dec 2024 07:45:17 GMT  
+		Size: 9.2 MB (9170429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98f88c97a19048974214412b9cde1a4e68c3e8dbc0aa0031ed91b8c5c57fb937`  
-		Last Modified: Tue, 10 Dec 2024 02:26:06 GMT  
-		Size: 851.0 B  
+	-	`sha256:76bd07bc67f987583b20a96c34195b554fdb8688e24a2e1070014804c9abb5ec`  
+		Last Modified: Wed, 25 Dec 2024 07:45:16 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39190d755d657a1759560a1ed3be1dac21120c50bea46faae254a31055600a11`  
-		Last Modified: Tue, 10 Dec 2024 02:26:06 GMT  
-		Size: 155.0 B  
+	-	`sha256:c7fbcc76d85d17608a6a42be44fd50028febafc1addb56d9f9f419535b0b27b0`  
+		Last Modified: Wed, 25 Dec 2024 07:45:17 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-21-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:7ef0e178de2aa0bc4a8be77250e426919fb3e5fca6aad2e98dc6b1987723ccb1
+$ docker pull maven@sha256:5f4e77839b04924d02650cd13cae4522176c24c92b8c530378b1dbaaed964a4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018337 bytes)**  
+-	Total Size: **3.0 MB (3014104 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:154d3eb47d356f02eeb9cb2464358f1fc5ec1b1be4c918d5894ea63ccd757b2e`
+-	Image ID: `sha256:23c5e5fa1d9665a394710f85709bcf82629d066d900a755db3056ad4697fd6d4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d299b608851a93f5e0c8101ea83c623a1a74a19e64d58edb8381e8d4ee44da18`  
-		Last Modified: Tue, 10 Dec 2024 02:26:07 GMT  
-		Size: 3.0 MB (2998955 bytes)  
+	-	`sha256:8e993931599ca60cb4a3c06216158cf355ddf6c801e8f8fcb01c9047c9ae7eef`  
+		Last Modified: Wed, 25 Dec 2024 07:45:17 GMT  
+		Size: 3.0 MB (2994722 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6625557b8723c6f90fa7be6f7da5f276e9e7710f22796c588c257b9291efc25`  
-		Last Modified: Tue, 10 Dec 2024 02:26:06 GMT  
+	-	`sha256:7958cac85fd62cc4cdca2eb4241642d99b69ebcaa6278efeda5cdd68ca8aa105`  
+		Last Modified: Wed, 25 Dec 2024 07:45:16 GMT  
 		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3-amazoncorretto-21-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:fa247839d77686a170df0c220924f21108617ba5206aa04d6a5885f9b0adc064
+$ docker pull maven@sha256:0297db3be9a5b563b0d886461224a0325ca3740cc4477fc49c5c647d6712499b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4484,19 +4484,19 @@ $ docker pull maven@sha256:fa247839d77686a170df0c220924f21108617ba5206aa04d6a588
 ### `maven:3-amazoncorretto-21-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:cb4d16d9dc6ce8cc1871911b82bb066fe0687d93fde2fafd09db3b18bbc67417
+$ docker pull maven@sha256:f4f670cf10bd7648498bc27585d18f9db6ff347d6e813f8eaadb54ae60a304b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.1 MB (254139405 bytes)**  
+-	Total Size: **254.1 MB (254139059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2d5f6499cd7ee9e34cad52e6805ad12ade49efaf967bd2b1bbb6b1f1173edde`
+-	Image ID: `sha256:2dcfe13e93c6ae1138a3c9d6f849b76be430157a8c4f982bc5c64975ad6cc002`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -4532,71 +4532,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:525b5720295b79ebac3495aaaf60011b11c43238507d7ce087160256bc6fd97b`  
-		Last Modified: Mon, 09 Dec 2024 20:31:43 GMT  
-		Size: 216.7 MB (216736348 bytes)  
+	-	`sha256:aabfa15455560ed1bd2328a7821a42a84f3650acc865f2187c0b06f2ae176eef`  
+		Last Modified: Tue, 24 Dec 2024 22:39:15 GMT  
+		Size: 216.7 MB (216736000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f376598fd0822e8fefd016b6267bf83a0580985ef1e3b84440af37d48c489759`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 9.2 MB (9170441 bytes)  
+	-	`sha256:c645781e092c07d6a0843af4191176761dd7bb07527b07f8324f006eb4adfdf3`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a62da7db1ad086623eb81c8d1011258a160bcfcb884da2c7716d4f9efbea8418`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 850.0 B  
+	-	`sha256:6a0f1b0cf3c87da01f6ad1ba29493d7b1bbad065555bd0b81e86b32790f2527b`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:386c25cf85a2c5a83d35ed983fa02b99f2d337dfb4ff7cc970877de045353c56`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 154.0 B  
+	-	`sha256:30e10ba0325eb3bb549f9245f1dee1c82675b5f5cc765e331819083f01f5dba2`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-21-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:d9e8e30534f70656e4562544b4d6d84e856880629608d77403486391f8d17559
+$ docker pull maven@sha256:4fa0f35d87db27f06082dddb605067bd2767fb33b8e2925924fe515401a64495
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018510 bytes)**  
+-	Total Size: **3.0 MB (3014275 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6c21ca3c550304d2dc7abfa58b2ebbe7e444c9a862e2ac29471d6f151ab0b28`
+-	Image ID: `sha256:a3f6ea33bc3fef581dc17c3c6d627a5f77ba750ef4a2f9204e54b0257b04bd6b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b0fac53a856d432f4b51bc1e8db81568555bb10a5320851f3e5399b5c4799075`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 3.0 MB (2999297 bytes)  
+	-	`sha256:4ed2c30f2a67a60ad6eaefe90b8f739775233e25aaa6d42e533aa23adf5c13c5`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 3.0 MB (2995062 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b147d26747209b63652a4020fac924ee12582c000c43802972eefd67b5fcbf7e`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
+	-	`sha256:d42766da24aa0e7e818d0ded888932fb08284a70ecec8ca7cfe57d40dc4d91d8`  
+		Last Modified: Tue, 24 Dec 2024 22:39:08 GMT  
 		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-amazoncorretto-21-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:00b0a43c44cd3d9c32bc5c22160484f878bf85aeb0ff21422ceaccd1806ee998
+$ docker pull maven@sha256:0b3ad8a450bc77519b3baefbfcd797c747c61c02a8780ad46caeec40bde5afc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.7 MB (251701171 bytes)**  
+-	Total Size: **251.7 MB (251700966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:735cd64f57d78b500efd2f6cca65d171668c1fbac7982481b812a0071192f12e`
+-	Image ID: `sha256:a02a0b90f6b7b4a29fd7da6fd79e0b91032f0d2768fd5d7741f1a3e211795a24`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -4632,52 +4632,52 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd997dd7f8c27c4e3de5778b0e4635734590e28a1e3724b77623e3c9bbeea21b`  
-		Last Modified: Tue, 10 Dec 2024 02:26:11 GMT  
-		Size: 214.5 MB (214470886 bytes)  
+	-	`sha256:f1fa1eff39f4841b833a6e95f85f6fa8349afb48e1d5e6d119cec7732f2c2775`  
+		Last Modified: Wed, 25 Dec 2024 07:45:21 GMT  
+		Size: 214.5 MB (214470778 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92db06626165e33a8236aed2f2b7aa487aa56eece4616f3d651c16bb9cdd9677`  
-		Last Modified: Tue, 10 Dec 2024 02:26:07 GMT  
-		Size: 9.2 MB (9170437 bytes)  
+	-	`sha256:18dc6a06e61cd6a5d8f8effa0459ebf14d24d13f24632cd871df97a23980f84c`  
+		Last Modified: Wed, 25 Dec 2024 07:45:17 GMT  
+		Size: 9.2 MB (9170429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98f88c97a19048974214412b9cde1a4e68c3e8dbc0aa0031ed91b8c5c57fb937`  
-		Last Modified: Tue, 10 Dec 2024 02:26:06 GMT  
-		Size: 851.0 B  
+	-	`sha256:76bd07bc67f987583b20a96c34195b554fdb8688e24a2e1070014804c9abb5ec`  
+		Last Modified: Wed, 25 Dec 2024 07:45:16 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39190d755d657a1759560a1ed3be1dac21120c50bea46faae254a31055600a11`  
-		Last Modified: Tue, 10 Dec 2024 02:26:06 GMT  
-		Size: 155.0 B  
+	-	`sha256:c7fbcc76d85d17608a6a42be44fd50028febafc1addb56d9f9f419535b0b27b0`  
+		Last Modified: Wed, 25 Dec 2024 07:45:17 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-21-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:7ef0e178de2aa0bc4a8be77250e426919fb3e5fca6aad2e98dc6b1987723ccb1
+$ docker pull maven@sha256:5f4e77839b04924d02650cd13cae4522176c24c92b8c530378b1dbaaed964a4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018337 bytes)**  
+-	Total Size: **3.0 MB (3014104 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:154d3eb47d356f02eeb9cb2464358f1fc5ec1b1be4c918d5894ea63ccd757b2e`
+-	Image ID: `sha256:23c5e5fa1d9665a394710f85709bcf82629d066d900a755db3056ad4697fd6d4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d299b608851a93f5e0c8101ea83c623a1a74a19e64d58edb8381e8d4ee44da18`  
-		Last Modified: Tue, 10 Dec 2024 02:26:07 GMT  
-		Size: 3.0 MB (2998955 bytes)  
+	-	`sha256:8e993931599ca60cb4a3c06216158cf355ddf6c801e8f8fcb01c9047c9ae7eef`  
+		Last Modified: Wed, 25 Dec 2024 07:45:17 GMT  
+		Size: 3.0 MB (2994722 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6625557b8723c6f90fa7be6f7da5f276e9e7710f22796c588c257b9291efc25`  
-		Last Modified: Tue, 10 Dec 2024 02:26:06 GMT  
+	-	`sha256:7958cac85fd62cc4cdca2eb4241642d99b69ebcaa6278efeda5cdd68ca8aa105`  
+		Last Modified: Wed, 25 Dec 2024 07:45:16 GMT  
 		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5413,7 +5413,7 @@ $ docker pull maven@sha256:e626aacdf29e29ad8fc7c7466084dbe71cbd36dec43f2501f0e91
 ## `maven:3-amazoncorretto-23-debian`
 
 ```console
-$ docker pull maven@sha256:6b3986c4485ba720abe495cffd7e5243d17d09f6083e43c923c8881790c8f3fc
+$ docker pull maven@sha256:fb26c294353f2d40475c07ca6ee7850bd083e5dcf07b8b48d3a391d72aa1a467
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5426,19 +5426,19 @@ $ docker pull maven@sha256:6b3986c4485ba720abe495cffd7e5243d17d09f6083e43c923c88
 ### `maven:3-amazoncorretto-23-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:29da3d97b320f8cf5abcee06c7540a5b6da123543b411645fe425eaa921cc849
+$ docker pull maven@sha256:44357e7c1584fc1f52d09712dd83774d84d75f7173bc8a152e46f39d351e2ff0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **261.6 MB (261644045 bytes)**  
+-	Total Size: **261.6 MB (261644051 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8722af39cfd7974db197cf3417ae5d5c7c30814161a5d0ed48772a91edb52d56`
+-	Image ID: `sha256:74bb745bd7ff4626e5c188140d1c8139916f28546f02a7af97660fcd6fd447b2`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-23-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -5474,71 +5474,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f79347c5dfb5b7e191a5f422d3bef6a484f6964a75b11ae6c8fb356d5465d8d5`  
-		Last Modified: Mon, 09 Dec 2024 20:31:50 GMT  
-		Size: 224.2 MB (224240990 bytes)  
+	-	`sha256:6abe81f2c5a3de75f2c37e63f206b358357374f8ea56f7a24775d1037d527523`  
+		Last Modified: Tue, 24 Dec 2024 22:39:07 GMT  
+		Size: 224.2 MB (224240995 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e6722fe424e3619e348376ffd1cc75b2627be5d1cacfda4366c48ce9b41edad`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 9.2 MB (9170438 bytes)  
+	-	`sha256:85a53a8e763a560a15e208073d78cd3bf290b589b77065df2db5988414f9fa1a`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 9.2 MB (9170441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4270152709991d7e116db0878f19955217f0f7d3acd7adc2dd443ec6df179bc`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 850.0 B  
+	-	`sha256:ad0483291349ac15c314fc9e17ad4e80015fe2d669c3531e4e821d5812a3ab59`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d392805aefd4733a800c2876a2fbff766c1fa6b8e3fccd588787ce4c536b74a4`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 155.0 B  
+	-	`sha256:79dce5d06bbdee8522c0f53f27e58849e8ef88a6fed3225d64946db4eb4b7042`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-23-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:70bfdeabc81a775e298ac138807ebbfec9463b4ec556669d9805ec567e38acb7
+$ docker pull maven@sha256:ba9186af9a0faf594fce6a1693e0471537e010b1959b08f2deea76f2eb99088f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3020458 bytes)**  
+-	Total Size: **3.0 MB (3016220 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:378881e273445887693e7c8b10a3fb204df4301efcc042840e69090b31fd139a`
+-	Image ID: `sha256:e7228406bd1bb92b265b86e0e3d6ceb201d2e308bfede069d774f35a79526211`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2cef979391edf0e810f434439a9c0141f9be41648fff58b8d5cf43eb75dab063`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 3.0 MB (3001245 bytes)  
+	-	`sha256:606357f34696756672c900c6d3272ac2ecb3525ce82beda37fd82b08a93a1206`  
+		Last Modified: Tue, 24 Dec 2024 22:39:02 GMT  
+		Size: 3.0 MB (2997007 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:50f3b0757914a1d81b6a17ecdf00f1d421bbdc824bd3ed7b36cabbaea9a560d6`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
+	-	`sha256:d58b3efa7c5d98b2fa128b2c86227e73b4bfdcec3b3ca6f8683643e4eb888e56`  
+		Last Modified: Tue, 24 Dec 2024 22:39:01 GMT  
 		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-amazoncorretto-23-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:4913e322a3886a6c531d7fcede01c650ade5b54e8d43138897fda7ae9c2750d0
+$ docker pull maven@sha256:6b7708f6e3cea8e5e91dda1e3fb08d959b2bce4d571b9ce23c4fb150d10559aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **259.0 MB (258989092 bytes)**  
+-	Total Size: **259.0 MB (258988932 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b99a0f430948d5a45a4ae7036aa644c4805262ad3c94f885eadbb15b5c204908`
+-	Image ID: `sha256:ebd50d29f62162ec6f5d66eb1ba469e41c62aa0c686d544f93041d11f7dde065`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-23-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -5574,59 +5574,59 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06727bb706706d0066c2269bf6ead6565e2f4e3c1a72c999eb669a715f2587a4`  
-		Last Modified: Tue, 10 Dec 2024 02:29:13 GMT  
-		Size: 221.8 MB (221758808 bytes)  
+	-	`sha256:b2be63af51cb44e2d7e17ccc19aacc27061c7d9b29b4cf89c6a5bbcb7a0eb63f`  
+		Last Modified: Wed, 25 Dec 2024 07:46:22 GMT  
+		Size: 221.8 MB (221758729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:779b480759d55ef43f0de932ec7061cd3329df9ea634542d63ec5dca1a9205c5`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 9.2 MB (9170437 bytes)  
+	-	`sha256:f14249ca97659ac8b53330cde3a4d334162f6cf9d2530574ab4ca1dbb4bd64a9`  
+		Last Modified: Wed, 25 Dec 2024 07:46:18 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:443c2cab7c10d9c35466e057a316b34783cb6ff896bea066e5c484f998564e11`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
+	-	`sha256:a6f4f0267adcb7f3499d3f377c983d569569218ed6cb1fcc3d0c44a472100642`  
+		Last Modified: Wed, 25 Dec 2024 07:46:17 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fccc83b55bded8d14bcc625de1704f188c6ecee26d7e70e3a591c9274670a13d`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 155.0 B  
+	-	`sha256:b3c9a97f6814f224ccadd9093718b8d9ce0c3b35ed5bbcbc0ba57caa0466e455`  
+		Last Modified: Wed, 25 Dec 2024 07:46:18 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-23-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:ee9165c6c0823b7cf109448f997811c80d67f355daf782c0b1f9ebe4e1e039d7
+$ docker pull maven@sha256:b5f15e66c2645de71e3cb1ffbe9cd022856b75745e1f0c834722a8ebe6f44379
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3019643 bytes)**  
+-	Total Size: **3.0 MB (3015409 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fcd2530426206825426d3462aa743ee33cd7cd2c8b8f2e6ac2efab8174c4541`
+-	Image ID: `sha256:5a6283a058a0b6e748eed2541029eddace850b273749f0e244b8d6ae34382573`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:18c2e67e9c94b6ac2589920138c2dd31c629de20efe8a896f536e125987e85da`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 3.0 MB (3000262 bytes)  
+	-	`sha256:d3b8721d574bde59754c20eefaa2b918626c3309f1e522b473485cf9970a13c4`  
+		Last Modified: Wed, 25 Dec 2024 07:46:18 GMT  
+		Size: 3.0 MB (2996027 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:82fd51711e8f9048efa15a91626ca8c1834d6d10eab102a8582936123248ccc6`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 19.4 KB (19381 bytes)  
+	-	`sha256:c0a878d593c4a74b2e18d117cdc557c8368799df81dbe9abdf778ca067d787da`  
+		Last Modified: Wed, 25 Dec 2024 07:46:17 GMT  
+		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3-amazoncorretto-23-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:6b3986c4485ba720abe495cffd7e5243d17d09f6083e43c923c8881790c8f3fc
+$ docker pull maven@sha256:fb26c294353f2d40475c07ca6ee7850bd083e5dcf07b8b48d3a391d72aa1a467
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5639,19 +5639,19 @@ $ docker pull maven@sha256:6b3986c4485ba720abe495cffd7e5243d17d09f6083e43c923c88
 ### `maven:3-amazoncorretto-23-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:29da3d97b320f8cf5abcee06c7540a5b6da123543b411645fe425eaa921cc849
+$ docker pull maven@sha256:44357e7c1584fc1f52d09712dd83774d84d75f7173bc8a152e46f39d351e2ff0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **261.6 MB (261644045 bytes)**  
+-	Total Size: **261.6 MB (261644051 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8722af39cfd7974db197cf3417ae5d5c7c30814161a5d0ed48772a91edb52d56`
+-	Image ID: `sha256:74bb745bd7ff4626e5c188140d1c8139916f28546f02a7af97660fcd6fd447b2`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-23-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -5687,71 +5687,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f79347c5dfb5b7e191a5f422d3bef6a484f6964a75b11ae6c8fb356d5465d8d5`  
-		Last Modified: Mon, 09 Dec 2024 20:31:50 GMT  
-		Size: 224.2 MB (224240990 bytes)  
+	-	`sha256:6abe81f2c5a3de75f2c37e63f206b358357374f8ea56f7a24775d1037d527523`  
+		Last Modified: Tue, 24 Dec 2024 22:39:07 GMT  
+		Size: 224.2 MB (224240995 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e6722fe424e3619e348376ffd1cc75b2627be5d1cacfda4366c48ce9b41edad`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 9.2 MB (9170438 bytes)  
+	-	`sha256:85a53a8e763a560a15e208073d78cd3bf290b589b77065df2db5988414f9fa1a`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 9.2 MB (9170441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4270152709991d7e116db0878f19955217f0f7d3acd7adc2dd443ec6df179bc`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 850.0 B  
+	-	`sha256:ad0483291349ac15c314fc9e17ad4e80015fe2d669c3531e4e821d5812a3ab59`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d392805aefd4733a800c2876a2fbff766c1fa6b8e3fccd588787ce4c536b74a4`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 155.0 B  
+	-	`sha256:79dce5d06bbdee8522c0f53f27e58849e8ef88a6fed3225d64946db4eb4b7042`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-23-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:70bfdeabc81a775e298ac138807ebbfec9463b4ec556669d9805ec567e38acb7
+$ docker pull maven@sha256:ba9186af9a0faf594fce6a1693e0471537e010b1959b08f2deea76f2eb99088f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3020458 bytes)**  
+-	Total Size: **3.0 MB (3016220 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:378881e273445887693e7c8b10a3fb204df4301efcc042840e69090b31fd139a`
+-	Image ID: `sha256:e7228406bd1bb92b265b86e0e3d6ceb201d2e308bfede069d774f35a79526211`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2cef979391edf0e810f434439a9c0141f9be41648fff58b8d5cf43eb75dab063`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 3.0 MB (3001245 bytes)  
+	-	`sha256:606357f34696756672c900c6d3272ac2ecb3525ce82beda37fd82b08a93a1206`  
+		Last Modified: Tue, 24 Dec 2024 22:39:02 GMT  
+		Size: 3.0 MB (2997007 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:50f3b0757914a1d81b6a17ecdf00f1d421bbdc824bd3ed7b36cabbaea9a560d6`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
+	-	`sha256:d58b3efa7c5d98b2fa128b2c86227e73b4bfdcec3b3ca6f8683643e4eb888e56`  
+		Last Modified: Tue, 24 Dec 2024 22:39:01 GMT  
 		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-amazoncorretto-23-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:4913e322a3886a6c531d7fcede01c650ade5b54e8d43138897fda7ae9c2750d0
+$ docker pull maven@sha256:6b7708f6e3cea8e5e91dda1e3fb08d959b2bce4d571b9ce23c4fb150d10559aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **259.0 MB (258989092 bytes)**  
+-	Total Size: **259.0 MB (258988932 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b99a0f430948d5a45a4ae7036aa644c4805262ad3c94f885eadbb15b5c204908`
+-	Image ID: `sha256:ebd50d29f62162ec6f5d66eb1ba469e41c62aa0c686d544f93041d11f7dde065`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-23-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -5787,53 +5787,53 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06727bb706706d0066c2269bf6ead6565e2f4e3c1a72c999eb669a715f2587a4`  
-		Last Modified: Tue, 10 Dec 2024 02:29:13 GMT  
-		Size: 221.8 MB (221758808 bytes)  
+	-	`sha256:b2be63af51cb44e2d7e17ccc19aacc27061c7d9b29b4cf89c6a5bbcb7a0eb63f`  
+		Last Modified: Wed, 25 Dec 2024 07:46:22 GMT  
+		Size: 221.8 MB (221758729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:779b480759d55ef43f0de932ec7061cd3329df9ea634542d63ec5dca1a9205c5`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 9.2 MB (9170437 bytes)  
+	-	`sha256:f14249ca97659ac8b53330cde3a4d334162f6cf9d2530574ab4ca1dbb4bd64a9`  
+		Last Modified: Wed, 25 Dec 2024 07:46:18 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:443c2cab7c10d9c35466e057a316b34783cb6ff896bea066e5c484f998564e11`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
+	-	`sha256:a6f4f0267adcb7f3499d3f377c983d569569218ed6cb1fcc3d0c44a472100642`  
+		Last Modified: Wed, 25 Dec 2024 07:46:17 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fccc83b55bded8d14bcc625de1704f188c6ecee26d7e70e3a591c9274670a13d`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 155.0 B  
+	-	`sha256:b3c9a97f6814f224ccadd9093718b8d9ce0c3b35ed5bbcbc0ba57caa0466e455`  
+		Last Modified: Wed, 25 Dec 2024 07:46:18 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-23-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:ee9165c6c0823b7cf109448f997811c80d67f355daf782c0b1f9ebe4e1e039d7
+$ docker pull maven@sha256:b5f15e66c2645de71e3cb1ffbe9cd022856b75745e1f0c834722a8ebe6f44379
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3019643 bytes)**  
+-	Total Size: **3.0 MB (3015409 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fcd2530426206825426d3462aa743ee33cd7cd2c8b8f2e6ac2efab8174c4541`
+-	Image ID: `sha256:5a6283a058a0b6e748eed2541029eddace850b273749f0e244b8d6ae34382573`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:18c2e67e9c94b6ac2589920138c2dd31c629de20efe8a896f536e125987e85da`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 3.0 MB (3000262 bytes)  
+	-	`sha256:d3b8721d574bde59754c20eefaa2b918626c3309f1e522b473485cf9970a13c4`  
+		Last Modified: Wed, 25 Dec 2024 07:46:18 GMT  
+		Size: 3.0 MB (2996027 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:82fd51711e8f9048efa15a91626ca8c1834d6d10eab102a8582936123248ccc6`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 19.4 KB (19381 bytes)  
+	-	`sha256:c0a878d593c4a74b2e18d117cdc557c8368799df81dbe9abdf778ca067d787da`  
+		Last Modified: Wed, 25 Dec 2024 07:46:17 GMT  
+		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3-amazoncorretto-8`
@@ -6584,7 +6584,7 @@ $ docker pull maven@sha256:249a276369af1e5165b196c1b7f5ddbf46fb0d9b04786580837e9
 ## `maven:3-amazoncorretto-8-debian`
 
 ```console
-$ docker pull maven@sha256:ead0be38b701111b41bd3271d7d423c00613dbd0802014335346f7aee479aa4f
+$ docker pull maven@sha256:aec89d19a28025b6e256735ee6dff194e07a8a823e49259718512b2f6fa20179
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6597,19 +6597,19 @@ $ docker pull maven@sha256:ead0be38b701111b41bd3271d7d423c00613dbd0802014335346f
 ### `maven:3-amazoncorretto-8-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:9c84852b386038909344d5dd93128dc1c47457ffce793468d1b8bc13260e86df
+$ docker pull maven@sha256:b32f0dc07c01477a0a446ab34bb23b9a71668800507d3948c2b8e864a1e796f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **163.4 MB (163395368 bytes)**  
+-	Total Size: **163.4 MB (163395397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c91987438d4b46afaedc09e516d22030daf9fe32f308136f7a6c4a90f11980d`
+-	Image ID: `sha256:8ae3c5fa017a4d739fb345728c7cde669a2e90de8dcfc158764f7025c2b16723`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -6645,159 +6645,159 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:abcb9e93bb5cd8e91e36f864b88358405955b26a709ae571c4f2d590885126b0`  
-		Last Modified: Mon, 09 Dec 2024 20:33:06 GMT  
-		Size: 126.0 MB (125992312 bytes)  
+	-	`sha256:ea57055d233b707639b0b1ae98c2dffd98425e4051a5c77239ab8f66dbd3de6d`  
+		Last Modified: Tue, 24 Dec 2024 22:39:11 GMT  
+		Size: 126.0 MB (125992335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fffc27c99ac86edcb3d7347189a8982b6f3c478c41efbee6c85aa15f54cd70b8`  
-		Last Modified: Mon, 09 Dec 2024 20:33:05 GMT  
-		Size: 9.2 MB (9170441 bytes)  
+	-	`sha256:f2b1a07cb35708098a508c04492611903e5ec8decbecd5674f3c13a06d7f51b8`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1047011a6cddeac3c5846ee8a76100341ce2ff1842600edc4666424b6d09e734`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 849.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a146603672f7651357e370347f7b863e4937824d03e1f948bda8b113b3571fda`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 154.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `maven:3-amazoncorretto-8-debian` - unknown; unknown
-
-```console
-$ docker pull maven@sha256:57ea3c3d6c9cf2650d0eccb8888ac5b38283234eb9cf2c18cc69b0530f4e0c3d
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2896786 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:906c10bd2a2d3ec971d303b7897922e74c46848cd908a1154523dcd68afb670b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:060dc568fb3516b4de83f2589b8fb745569cb077ad3d5c9f650e7c0f73e8f60b`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 2.9 MB (2877561 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:2f457ae9970ee2595602a3aa642ef924c326e3dad86a88c9bef37efa38286550`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 19.2 KB (19225 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `maven:3-amazoncorretto-8-debian` - linux; arm64 variant v8
-
-```console
-$ docker pull maven@sha256:f48abb6b60ed75272a52b2c8ecb67d1a78b6e508df24018d9566728e2c1e7012
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **147.0 MB (146989495 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d295e6912a4dcc982733b5979a84b07ad1ea475429c39efe01e3007a85008abb`
--	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
--	Default Command: `["mvn"]`
-
-```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
-# Sat, 07 Dec 2024 17:04:44 GMT
-RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto/jre
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.title=Apache Maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENV MAVEN_HOME=/usr/share/maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-COPY /usr/share/maven /usr/share/maven # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-ARG MAVEN_VERSION=3.9.9
-# Sat, 07 Dec 2024 17:04:44 GMT
-ARG USER_HOME_DIR=/root
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENV MAVEN_CONFIG=/root/.m2
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Sat, 07 Dec 2024 17:04:44 GMT
-CMD ["mvn"]
-```
-
--	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67fd9e95ea5d8fd2261416cc1831b673d67310dd184234703fcdb85420bd00e2`  
-		Last Modified: Tue, 10 Dec 2024 02:40:25 GMT  
-		Size: 109.8 MB (109759216 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2f29b71765035887887fb4b7ecd59501a0be9d327228bc74ad3d88c0736ba7f`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
-		Size: 9.2 MB (9170432 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb4c9bb33986713f58a05136922e59223675c082b3905a54a5e4a2c0328789c5`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
+	-	`sha256:e5ec3a517dcd5b2e7290f3e0749a19baf21bb362ca0c3575e45c37c4ddb70c1d`  
+		Last Modified: Tue, 24 Dec 2024 22:39:08 GMT  
 		Size: 851.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2e40f8b74640ff195fd2e72d94b0b22df3327e546c8ddabd07aa1743751f240`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
+	-	`sha256:703c0f7be71cd3a179bb8ed6755fae97aaa70d204845c37e46cf9db83e4096d2`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-8-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:ffc19c98afae95e08f2fd8ab6e37c3d8ce1d88bcf9c162b518cff37c898e2bb4
+$ docker pull maven@sha256:ae4aab22c63b01e772ef8c72f2be1b4c415b3aa26dd070ced1c4b777b52d635c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2879801 bytes)**  
+-	Total Size: **2.9 MB (2893027 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9ccca7189aab4d933ea9a38732bc6c3d516cc2653354513fff4646d2e6328a6`
+-	Image ID: `sha256:cd603ca7c03d5304e87855ee0112eef5a744567a6beb59ecbaa358cebaec8585`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a865df99530b9f1b2cc720ae3414098c9be103a6bc6a893bdb8c391b5e1c6f45`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
-		Size: 2.9 MB (2860407 bytes)  
+	-	`sha256:c1db1c26a39bbdb6f34f92c8bb2f708d833543cafc66fa9a111bb2ff56a3d711`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 2.9 MB (2873803 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aac0d6da541ead1924fe1beda2c79c97e74e6d8c3da1554f855a491c359c86bd`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
+	-	`sha256:d3899e195f16b6908c2163f975956903f7c5b8c0025ae84b3bc76132379aa5ae`  
+		Last Modified: Tue, 24 Dec 2024 22:39:08 GMT  
+		Size: 19.2 KB (19224 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `maven:3-amazoncorretto-8-debian` - linux; arm64 variant v8
+
+```console
+$ docker pull maven@sha256:3f937dc244d00e8ba232d5c7ecfd972cef6b1a3d05f5ea67281bedca42e7a03f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **147.0 MB (146989295 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2556ce27029abdd83aadc8c7cdd8deb87ca39af1a10dea0ba6ae494984ac2b80`
+-	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
+-	Default Command: `["mvn"]`
+
+```dockerfile
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto/jre
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.title=Apache Maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENV MAVEN_HOME=/usr/share/maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+COPY /usr/share/maven /usr/share/maven # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+ARG MAVEN_VERSION=3.9.9
+# Sat, 07 Dec 2024 17:04:44 GMT
+ARG USER_HOME_DIR=/root
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENV MAVEN_CONFIG=/root/.m2
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
+# Sat, 07 Dec 2024 17:04:44 GMT
+CMD ["mvn"]
+```
+
+-	Layers:
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6bb98469ebb204fee7bd8a5e73c7698cf537896a3dc8344040ec68331ff78093`  
+		Last Modified: Wed, 25 Dec 2024 07:47:11 GMT  
+		Size: 109.8 MB (109759105 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:47b0fbead17b87172ee0762b52b37c96df90648200a14e8a4678aa465784f807`  
+		Last Modified: Wed, 25 Dec 2024 07:47:09 GMT  
+		Size: 9.2 MB (9170429 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3656c88111960666dfca000d2e1c9bcb52eb031970d8cebc87b35801f7c9c9a1`  
+		Last Modified: Wed, 25 Dec 2024 07:47:08 GMT  
+		Size: 851.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c8b1614c934698b682661c85d73dc6a26f1707c56b8998d8b613884c93e4bd96`  
+		Last Modified: Wed, 25 Dec 2024 07:47:08 GMT  
+		Size: 155.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `maven:3-amazoncorretto-8-debian` - unknown; unknown
+
+```console
+$ docker pull maven@sha256:7eb8adac46c8a7144e9a735f3e086c38823f6bfab16107da32916750621a9e29
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.9 MB (2876015 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d091ecfa586ab6c562e8682464ae28bf47ad9fe1cb84ea21b84a67daec163fd7`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:b58052a25f279ea77b9da238d31d46bb1c47867336db2e37124b99f5002dee00`  
+		Last Modified: Wed, 25 Dec 2024 07:47:09 GMT  
+		Size: 2.9 MB (2856621 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:47ac551eae0332e7008085994d6fde439a038b5fcfef8ebd9ab9309096017098`  
+		Last Modified: Wed, 25 Dec 2024 07:47:08 GMT  
 		Size: 19.4 KB (19394 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3-amazoncorretto-8-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:ead0be38b701111b41bd3271d7d423c00613dbd0802014335346f7aee479aa4f
+$ docker pull maven@sha256:aec89d19a28025b6e256735ee6dff194e07a8a823e49259718512b2f6fa20179
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6810,19 +6810,19 @@ $ docker pull maven@sha256:ead0be38b701111b41bd3271d7d423c00613dbd0802014335346f
 ### `maven:3-amazoncorretto-8-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:9c84852b386038909344d5dd93128dc1c47457ffce793468d1b8bc13260e86df
+$ docker pull maven@sha256:b32f0dc07c01477a0a446ab34bb23b9a71668800507d3948c2b8e864a1e796f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **163.4 MB (163395368 bytes)**  
+-	Total Size: **163.4 MB (163395397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c91987438d4b46afaedc09e516d22030daf9fe32f308136f7a6c4a90f11980d`
+-	Image ID: `sha256:8ae3c5fa017a4d739fb345728c7cde669a2e90de8dcfc158764f7025c2b16723`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -6858,152 +6858,152 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:abcb9e93bb5cd8e91e36f864b88358405955b26a709ae571c4f2d590885126b0`  
-		Last Modified: Mon, 09 Dec 2024 20:33:06 GMT  
-		Size: 126.0 MB (125992312 bytes)  
+	-	`sha256:ea57055d233b707639b0b1ae98c2dffd98425e4051a5c77239ab8f66dbd3de6d`  
+		Last Modified: Tue, 24 Dec 2024 22:39:11 GMT  
+		Size: 126.0 MB (125992335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fffc27c99ac86edcb3d7347189a8982b6f3c478c41efbee6c85aa15f54cd70b8`  
-		Last Modified: Mon, 09 Dec 2024 20:33:05 GMT  
-		Size: 9.2 MB (9170441 bytes)  
+	-	`sha256:f2b1a07cb35708098a508c04492611903e5ec8decbecd5674f3c13a06d7f51b8`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1047011a6cddeac3c5846ee8a76100341ce2ff1842600edc4666424b6d09e734`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 849.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a146603672f7651357e370347f7b863e4937824d03e1f948bda8b113b3571fda`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 154.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `maven:3-amazoncorretto-8-debian-bookworm` - unknown; unknown
-
-```console
-$ docker pull maven@sha256:57ea3c3d6c9cf2650d0eccb8888ac5b38283234eb9cf2c18cc69b0530f4e0c3d
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2896786 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:906c10bd2a2d3ec971d303b7897922e74c46848cd908a1154523dcd68afb670b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:060dc568fb3516b4de83f2589b8fb745569cb077ad3d5c9f650e7c0f73e8f60b`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 2.9 MB (2877561 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:2f457ae9970ee2595602a3aa642ef924c326e3dad86a88c9bef37efa38286550`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 19.2 KB (19225 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `maven:3-amazoncorretto-8-debian-bookworm` - linux; arm64 variant v8
-
-```console
-$ docker pull maven@sha256:f48abb6b60ed75272a52b2c8ecb67d1a78b6e508df24018d9566728e2c1e7012
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **147.0 MB (146989495 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d295e6912a4dcc982733b5979a84b07ad1ea475429c39efe01e3007a85008abb`
--	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
--	Default Command: `["mvn"]`
-
-```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
-# Sat, 07 Dec 2024 17:04:44 GMT
-RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto/jre
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.title=Apache Maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENV MAVEN_HOME=/usr/share/maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-COPY /usr/share/maven /usr/share/maven # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-ARG MAVEN_VERSION=3.9.9
-# Sat, 07 Dec 2024 17:04:44 GMT
-ARG USER_HOME_DIR=/root
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENV MAVEN_CONFIG=/root/.m2
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Sat, 07 Dec 2024 17:04:44 GMT
-CMD ["mvn"]
-```
-
--	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67fd9e95ea5d8fd2261416cc1831b673d67310dd184234703fcdb85420bd00e2`  
-		Last Modified: Tue, 10 Dec 2024 02:40:25 GMT  
-		Size: 109.8 MB (109759216 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2f29b71765035887887fb4b7ecd59501a0be9d327228bc74ad3d88c0736ba7f`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
-		Size: 9.2 MB (9170432 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb4c9bb33986713f58a05136922e59223675c082b3905a54a5e4a2c0328789c5`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
+	-	`sha256:e5ec3a517dcd5b2e7290f3e0749a19baf21bb362ca0c3575e45c37c4ddb70c1d`  
+		Last Modified: Tue, 24 Dec 2024 22:39:08 GMT  
 		Size: 851.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2e40f8b74640ff195fd2e72d94b0b22df3327e546c8ddabd07aa1743751f240`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
+	-	`sha256:703c0f7be71cd3a179bb8ed6755fae97aaa70d204845c37e46cf9db83e4096d2`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-8-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:ffc19c98afae95e08f2fd8ab6e37c3d8ce1d88bcf9c162b518cff37c898e2bb4
+$ docker pull maven@sha256:ae4aab22c63b01e772ef8c72f2be1b4c415b3aa26dd070ced1c4b777b52d635c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2879801 bytes)**  
+-	Total Size: **2.9 MB (2893027 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9ccca7189aab4d933ea9a38732bc6c3d516cc2653354513fff4646d2e6328a6`
+-	Image ID: `sha256:cd603ca7c03d5304e87855ee0112eef5a744567a6beb59ecbaa358cebaec8585`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a865df99530b9f1b2cc720ae3414098c9be103a6bc6a893bdb8c391b5e1c6f45`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
-		Size: 2.9 MB (2860407 bytes)  
+	-	`sha256:c1db1c26a39bbdb6f34f92c8bb2f708d833543cafc66fa9a111bb2ff56a3d711`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 2.9 MB (2873803 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aac0d6da541ead1924fe1beda2c79c97e74e6d8c3da1554f855a491c359c86bd`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
+	-	`sha256:d3899e195f16b6908c2163f975956903f7c5b8c0025ae84b3bc76132379aa5ae`  
+		Last Modified: Tue, 24 Dec 2024 22:39:08 GMT  
+		Size: 19.2 KB (19224 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `maven:3-amazoncorretto-8-debian-bookworm` - linux; arm64 variant v8
+
+```console
+$ docker pull maven@sha256:3f937dc244d00e8ba232d5c7ecfd972cef6b1a3d05f5ea67281bedca42e7a03f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **147.0 MB (146989295 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2556ce27029abdd83aadc8c7cdd8deb87ca39af1a10dea0ba6ae494984ac2b80`
+-	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
+-	Default Command: `["mvn"]`
+
+```dockerfile
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto/jre
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.title=Apache Maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENV MAVEN_HOME=/usr/share/maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+COPY /usr/share/maven /usr/share/maven # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+ARG MAVEN_VERSION=3.9.9
+# Sat, 07 Dec 2024 17:04:44 GMT
+ARG USER_HOME_DIR=/root
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENV MAVEN_CONFIG=/root/.m2
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
+# Sat, 07 Dec 2024 17:04:44 GMT
+CMD ["mvn"]
+```
+
+-	Layers:
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6bb98469ebb204fee7bd8a5e73c7698cf537896a3dc8344040ec68331ff78093`  
+		Last Modified: Wed, 25 Dec 2024 07:47:11 GMT  
+		Size: 109.8 MB (109759105 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:47b0fbead17b87172ee0762b52b37c96df90648200a14e8a4678aa465784f807`  
+		Last Modified: Wed, 25 Dec 2024 07:47:09 GMT  
+		Size: 9.2 MB (9170429 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3656c88111960666dfca000d2e1c9bcb52eb031970d8cebc87b35801f7c9c9a1`  
+		Last Modified: Wed, 25 Dec 2024 07:47:08 GMT  
+		Size: 851.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c8b1614c934698b682661c85d73dc6a26f1707c56b8998d8b613884c93e4bd96`  
+		Last Modified: Wed, 25 Dec 2024 07:47:08 GMT  
+		Size: 155.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `maven:3-amazoncorretto-8-debian-bookworm` - unknown; unknown
+
+```console
+$ docker pull maven@sha256:7eb8adac46c8a7144e9a735f3e086c38823f6bfab16107da32916750621a9e29
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.9 MB (2876015 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d091ecfa586ab6c562e8682464ae28bf47ad9fe1cb84ea21b84a67daec163fd7`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:b58052a25f279ea77b9da238d31d46bb1c47867336db2e37124b99f5002dee00`  
+		Last Modified: Wed, 25 Dec 2024 07:47:09 GMT  
+		Size: 2.9 MB (2856621 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:47ac551eae0332e7008085994d6fde439a038b5fcfef8ebd9ab9309096017098`  
+		Last Modified: Wed, 25 Dec 2024 07:47:08 GMT  
 		Size: 19.4 KB (19394 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -22426,7 +22426,7 @@ $ docker pull maven@sha256:713d556c64a4563f474ec768ddde76dda0bff71e18e07e3ae0e12
 ## `maven:3.9-amazoncorretto-11-debian`
 
 ```console
-$ docker pull maven@sha256:07246a0af54784fdd043b11902fe26c165ce87ebaf51da74561aad7ee8745e53
+$ docker pull maven@sha256:21a69a67581cfdba0359fa364650bf8414085aa31c16a0f2766f21bf494725ea
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22439,19 +22439,19 @@ $ docker pull maven@sha256:07246a0af54784fdd043b11902fe26c165ce87ebaf51da74561aa
 ### `maven:3.9-amazoncorretto-11-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:f56a891a8c2d60c05fc27e94e7fdde7e4f94e148f85a8ed5e4f56927958cd07f
+$ docker pull maven@sha256:d6e6c50d90532a65da7912bb7e40a894dfd8c5f7f589508da1c79528a8c40baf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.0 MB (241037953 bytes)**  
+-	Total Size: **241.0 MB (241039117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f11584bfd8becdd289924fbfcbaccdcb60d642a9a75e5c9b46ce979b27df2578`
+-	Image ID: `sha256:f02a44bf8c6e0812baffe12dbbc402ebb11ea343987fc29bcc1b043acd406e6d`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -22487,71 +22487,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922faa54581dd155260ada067b1d02e79e4b04e987a949339e9417f24705a069`  
-		Last Modified: Mon, 09 Dec 2024 20:42:31 GMT  
-		Size: 203.6 MB (203634896 bytes)  
+	-	`sha256:36450b4b7edc9daf401324b19b381c3d6b831c96db39e1b5168699025a1d387f`  
+		Last Modified: Tue, 24 Dec 2024 22:39:02 GMT  
+		Size: 203.6 MB (203636061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:191954cb45685ee074d375d99dae0d541b8a10fc3cdbd8b7c45a9058c7a67925`  
-		Last Modified: Mon, 09 Dec 2024 20:42:27 GMT  
+	-	`sha256:85a53a8e763a560a15e208073d78cd3bf290b589b77065df2db5988414f9fa1a`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
 		Size: 9.2 MB (9170441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ec24c128927e43b7c88f36f7c1b5808b962cef2b38285401447204f2e4546ec`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
+	-	`sha256:ad0483291349ac15c314fc9e17ad4e80015fe2d669c3531e4e821d5812a3ab59`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
 		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3825331641f3ca43326d913ccf30e497cfe45efb837b747f3549923e4267f6a0`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
-		Size: 155.0 B  
+	-	`sha256:79dce5d06bbdee8522c0f53f27e58849e8ef88a6fed3225d64946db4eb4b7042`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-amazoncorretto-11-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:18455b15c0765c517544f2fd62834cfdc58d4bdbb5c72b3b7b0481556dc7b939
+$ docker pull maven@sha256:8cf2de72051f655b6ca09740a5701d4cce0cfd15387c7369e425eb0725dd1a81
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3024411 bytes)**  
+-	Total Size: **3.0 MB (3020167 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ffec63b25cefdcc28f45362e01d1c4f6547e249a457d464662326971b9c7be6`
+-	Image ID: `sha256:9de589dc979b78faf2edd3d3ae802aec33610d43e64b742b18669a2905018a98`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:14d88952f2d588be83728051673534baf0d037d56562968afff11b8eda43e0fd`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
-		Size: 3.0 MB (3005198 bytes)  
+	-	`sha256:2f1743904307f8ee110083eaee99c1fd3e693dedf5364d60797255e783cc8dbb`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 3.0 MB (3000954 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9eaf2292438e467757e3620693b15f9ebed9b38b2fd5cbc211760a618bb9d988`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
+	-	`sha256:60d88a3745436374172bdf2db58061f175167a2dace61561c901f06c4c8c3ccc`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
 		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.9-amazoncorretto-11-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:ffcef4372d4ddae929662bc5bd4638ed1c397da4bbff71ef11db824838396b15
+$ docker pull maven@sha256:0312306a4f2e34d11c329f92ed36db33d0f137ba70c234cd6a166602fa9fcc26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.6 MB (237638199 bytes)**  
+-	Total Size: **237.6 MB (237637787 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea342f18d06aec3ec3118ba51acf1748cc5a0973e0748479d02bddb778ee816a`
+-	Image ID: `sha256:0eab9e858362e58ec93ff6937b40f742b2e6ef983ad27bc1410c30e7d091b804`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -22587,59 +22587,59 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37c630dfdea6c7abe6c8974fd22a30a3331dad0eed32f27fdf0644d1aabeb876`  
-		Last Modified: Tue, 10 Dec 2024 02:41:36 GMT  
-		Size: 200.4 MB (200407923 bytes)  
+	-	`sha256:b2f00a0a44879e2a363f446735ab1818d9b3a47a1cc53eb291022be044f29e0a`  
+		Last Modified: Wed, 25 Dec 2024 07:43:38 GMT  
+		Size: 200.4 MB (200407586 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c10727b442a2a987f01906ef6927d2187a284dd28baf90a51d4b4da30215451a`  
-		Last Modified: Tue, 10 Dec 2024 02:41:32 GMT  
-		Size: 9.2 MB (9170429 bytes)  
+	-	`sha256:7225f630f0a449824f6de2bf09a15bd95bde218eef23bee1710611ff18262175`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c7c44bf18d9125a91aca3c2f2596bc4ff2a76992628c117d2d9ad5f7437c6b48`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 850.0 B  
+	-	`sha256:737d1875dc105612418c9f9223640307d49548301d409078c05f9614dee081a3`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8f71d750bd54eede80fad326a5e6cdfd7a089590805f82a2b52d5fd9d6f8f8b`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 155.0 B  
+	-	`sha256:c178ca3cdf904b54af7e73cd4b74ecefa73ab241aa7a4a7c21500f5186beadaa`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-amazoncorretto-11-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:f79c629a728fccb5b376cc7db47a5b505b9c218f285369a294f7fa0f0f9b7826
+$ docker pull maven@sha256:34c9c811aa6f724fb3508d03a0b1ad1286be25bec0c56b9bd5d722108bca4acc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3024875 bytes)**  
+-	Total Size: **3.0 MB (3020633 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:91367ba7d347f401beadee302df885ff863a8fe815c1394f18f206f38cbdf50e`
+-	Image ID: `sha256:a41c42d5693be45f5ddb686c9abf8a4037704ced382d780a130e659822492e94`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bcf34b7611ef6dfeeb983f79ae5fdd41ac9d36e56d285c0c0e8df8e65dc08ec9`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 3.0 MB (3005494 bytes)  
+	-	`sha256:4fef2af62286bb724ac4883ae33d2bfb3784156966e61864dcb2988ac28808a3`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 3.0 MB (3001251 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:040866b3d484c0b64e17d3f978b7c1f2a3286b2eb23b5b2f283075239f8a0d95`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 19.4 KB (19381 bytes)  
+	-	`sha256:751a1eb254fd6e75586b76462737f33546a0b5edc1350d963228796cd6d59c6f`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9-amazoncorretto-11-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:07246a0af54784fdd043b11902fe26c165ce87ebaf51da74561aad7ee8745e53
+$ docker pull maven@sha256:21a69a67581cfdba0359fa364650bf8414085aa31c16a0f2766f21bf494725ea
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22652,19 +22652,19 @@ $ docker pull maven@sha256:07246a0af54784fdd043b11902fe26c165ce87ebaf51da74561aa
 ### `maven:3.9-amazoncorretto-11-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:f56a891a8c2d60c05fc27e94e7fdde7e4f94e148f85a8ed5e4f56927958cd07f
+$ docker pull maven@sha256:d6e6c50d90532a65da7912bb7e40a894dfd8c5f7f589508da1c79528a8c40baf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.0 MB (241037953 bytes)**  
+-	Total Size: **241.0 MB (241039117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f11584bfd8becdd289924fbfcbaccdcb60d642a9a75e5c9b46ce979b27df2578`
+-	Image ID: `sha256:f02a44bf8c6e0812baffe12dbbc402ebb11ea343987fc29bcc1b043acd406e6d`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -22700,71 +22700,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922faa54581dd155260ada067b1d02e79e4b04e987a949339e9417f24705a069`  
-		Last Modified: Mon, 09 Dec 2024 20:42:31 GMT  
-		Size: 203.6 MB (203634896 bytes)  
+	-	`sha256:36450b4b7edc9daf401324b19b381c3d6b831c96db39e1b5168699025a1d387f`  
+		Last Modified: Tue, 24 Dec 2024 22:39:02 GMT  
+		Size: 203.6 MB (203636061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:191954cb45685ee074d375d99dae0d541b8a10fc3cdbd8b7c45a9058c7a67925`  
-		Last Modified: Mon, 09 Dec 2024 20:42:27 GMT  
+	-	`sha256:85a53a8e763a560a15e208073d78cd3bf290b589b77065df2db5988414f9fa1a`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
 		Size: 9.2 MB (9170441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ec24c128927e43b7c88f36f7c1b5808b962cef2b38285401447204f2e4546ec`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
+	-	`sha256:ad0483291349ac15c314fc9e17ad4e80015fe2d669c3531e4e821d5812a3ab59`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
 		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3825331641f3ca43326d913ccf30e497cfe45efb837b747f3549923e4267f6a0`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
-		Size: 155.0 B  
+	-	`sha256:79dce5d06bbdee8522c0f53f27e58849e8ef88a6fed3225d64946db4eb4b7042`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-amazoncorretto-11-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:18455b15c0765c517544f2fd62834cfdc58d4bdbb5c72b3b7b0481556dc7b939
+$ docker pull maven@sha256:8cf2de72051f655b6ca09740a5701d4cce0cfd15387c7369e425eb0725dd1a81
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3024411 bytes)**  
+-	Total Size: **3.0 MB (3020167 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ffec63b25cefdcc28f45362e01d1c4f6547e249a457d464662326971b9c7be6`
+-	Image ID: `sha256:9de589dc979b78faf2edd3d3ae802aec33610d43e64b742b18669a2905018a98`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:14d88952f2d588be83728051673534baf0d037d56562968afff11b8eda43e0fd`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
-		Size: 3.0 MB (3005198 bytes)  
+	-	`sha256:2f1743904307f8ee110083eaee99c1fd3e693dedf5364d60797255e783cc8dbb`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 3.0 MB (3000954 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9eaf2292438e467757e3620693b15f9ebed9b38b2fd5cbc211760a618bb9d988`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
+	-	`sha256:60d88a3745436374172bdf2db58061f175167a2dace61561c901f06c4c8c3ccc`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
 		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.9-amazoncorretto-11-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:ffcef4372d4ddae929662bc5bd4638ed1c397da4bbff71ef11db824838396b15
+$ docker pull maven@sha256:0312306a4f2e34d11c329f92ed36db33d0f137ba70c234cd6a166602fa9fcc26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.6 MB (237638199 bytes)**  
+-	Total Size: **237.6 MB (237637787 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea342f18d06aec3ec3118ba51acf1748cc5a0973e0748479d02bddb778ee816a`
+-	Image ID: `sha256:0eab9e858362e58ec93ff6937b40f742b2e6ef983ad27bc1410c30e7d091b804`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -22800,53 +22800,53 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37c630dfdea6c7abe6c8974fd22a30a3331dad0eed32f27fdf0644d1aabeb876`  
-		Last Modified: Tue, 10 Dec 2024 02:41:36 GMT  
-		Size: 200.4 MB (200407923 bytes)  
+	-	`sha256:b2f00a0a44879e2a363f446735ab1818d9b3a47a1cc53eb291022be044f29e0a`  
+		Last Modified: Wed, 25 Dec 2024 07:43:38 GMT  
+		Size: 200.4 MB (200407586 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c10727b442a2a987f01906ef6927d2187a284dd28baf90a51d4b4da30215451a`  
-		Last Modified: Tue, 10 Dec 2024 02:41:32 GMT  
-		Size: 9.2 MB (9170429 bytes)  
+	-	`sha256:7225f630f0a449824f6de2bf09a15bd95bde218eef23bee1710611ff18262175`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c7c44bf18d9125a91aca3c2f2596bc4ff2a76992628c117d2d9ad5f7437c6b48`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 850.0 B  
+	-	`sha256:737d1875dc105612418c9f9223640307d49548301d409078c05f9614dee081a3`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8f71d750bd54eede80fad326a5e6cdfd7a089590805f82a2b52d5fd9d6f8f8b`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 155.0 B  
+	-	`sha256:c178ca3cdf904b54af7e73cd4b74ecefa73ab241aa7a4a7c21500f5186beadaa`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-amazoncorretto-11-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:f79c629a728fccb5b376cc7db47a5b505b9c218f285369a294f7fa0f0f9b7826
+$ docker pull maven@sha256:34c9c811aa6f724fb3508d03a0b1ad1286be25bec0c56b9bd5d722108bca4acc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3024875 bytes)**  
+-	Total Size: **3.0 MB (3020633 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:91367ba7d347f401beadee302df885ff863a8fe815c1394f18f206f38cbdf50e`
+-	Image ID: `sha256:a41c42d5693be45f5ddb686c9abf8a4037704ced382d780a130e659822492e94`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bcf34b7611ef6dfeeb983f79ae5fdd41ac9d36e56d285c0c0e8df8e65dc08ec9`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 3.0 MB (3005494 bytes)  
+	-	`sha256:4fef2af62286bb724ac4883ae33d2bfb3784156966e61864dcb2988ac28808a3`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 3.0 MB (3001251 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:040866b3d484c0b64e17d3f978b7c1f2a3286b2eb23b5b2f283075239f8a0d95`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 19.4 KB (19381 bytes)  
+	-	`sha256:751a1eb254fd6e75586b76462737f33546a0b5edc1350d963228796cd6d59c6f`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9-amazoncorretto-17`
@@ -23601,7 +23601,7 @@ $ docker pull maven@sha256:0020cf837d876134275d4f4eb52f7c5ad2b77981834306aaecfc4
 ## `maven:3.9-amazoncorretto-17-debian`
 
 ```console
-$ docker pull maven@sha256:6eb37f462d703f390c7649e285a2cba3244d26b3c4780e9a5743c4296d81f737
+$ docker pull maven@sha256:c26417a9daa6c49e7ef634fa0c2a581d1d8a43a28482011a9c1fe03022eb3b9e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23614,19 +23614,19 @@ $ docker pull maven@sha256:6eb37f462d703f390c7649e285a2cba3244d26b3c4780e9a5743c
 ### `maven:3.9-amazoncorretto-17-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:e0499750502788e789c6eed4d6cc47f089efb5e98f3920db236b94f1fd44a36d
+$ docker pull maven@sha256:cd19bfa572126327677e81ef0265032d840954a2bd92f1890098ae7b68bc88ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.9 MB (238923242 bytes)**  
+-	Total Size: **238.9 MB (238923256 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b39ffa4f192eb0d909049862225f406fe92584ba24dcdd25a2ca2394528ee18`
+-	Image ID: `sha256:1ec73da9166e8187c42523ca8f1809fcc53d494af99834f6b663ea6e57c8fc89`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -23662,71 +23662,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6bd605e55415a21a79cb44063579ae319db81753d426c51b3596a88448d4324d`  
-		Last Modified: Mon, 09 Dec 2024 20:31:54 GMT  
-		Size: 201.5 MB (201520184 bytes)  
+	-	`sha256:5b8a8ed6ef70eff5e37193c556413ab3ed681bfb0ad703fa68a9bc979e06d7db`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 201.5 MB (201520197 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:040f087bba961db973efbc8cf025c845df8b04f74d07049f86889e28a956525a`  
-		Last Modified: Mon, 09 Dec 2024 20:31:49 GMT  
-		Size: 9.2 MB (9170441 bytes)  
+	-	`sha256:c645781e092c07d6a0843af4191176761dd7bb07527b07f8324f006eb4adfdf3`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0354a9a64bdf84ec236066e08683e4a72d42ec2b56cfd08f979fe2c141d888a`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 850.0 B  
+	-	`sha256:6a0f1b0cf3c87da01f6ad1ba29493d7b1bbad065555bd0b81e86b32790f2527b`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1517b8d88921f1de5fcf7795d350f67c5c30b13e249017228d0fc7887152ce5`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 155.0 B  
+	-	`sha256:30e10ba0325eb3bb549f9245f1dee1c82675b5f5cc765e331819083f01f5dba2`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-amazoncorretto-17-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:0fd87c78d77ed24fdd9af48dcfec3069c3cde5fe3ef3096b5558eafac42352ab
+$ docker pull maven@sha256:9438ebbe807c19f50f98635f3119cd1b5d8886067a26ebc0a42c4f6267bc5b3e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018610 bytes)**  
+-	Total Size: **3.0 MB (3014376 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23318f260ec3d4c440b36d208f434c7b520b51bb895eb160e242a729b126726e`
+-	Image ID: `sha256:dc75643faa536f1a6d6360858cc1fb2274da0e1286accfc78322b72697601aad`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:623ef16bf71fdbe752d9a66a0fa30a662f37897f430703e6f05a8544d0946818`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 3.0 MB (2999398 bytes)  
+	-	`sha256:cfefe596825d83fe5b603bccc6bea83f2bcdc6f618f7644bce86bc23daca9e20`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 3.0 MB (2995163 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4771f142f590f15bd2cd40c9d3c5e125600ec0c3d89df79567f3a6cce5d68c12`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 19.2 KB (19212 bytes)  
+	-	`sha256:c412b8581df1fec4266b58bf93dc5d199d8908037466a707934fe2b2735fcbef`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.9-amazoncorretto-17-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:3edb30b349640c8be0a85e9cfbfbc4b4bcfc58d3aee87991ac472749a872514f
+$ docker pull maven@sha256:d427e1310b94088b3e956d06c6c9e0889ca084a81e3f0bf90b0aadf1cdfc298b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.1 MB (237053194 bytes)**  
+-	Total Size: **237.1 MB (237052943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a35aa78a5e3090a7efa97d47013856d131c51063b3502b19b1fb3f2dc1c3b63`
+-	Image ID: `sha256:595309375c80517e901a312505c2c67ea6d4ce141f6b175e14dc3138ed9af936`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -23762,59 +23762,59 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e1e03ce8ae306c1b9809b6a1263c141bcf0fd494718ffe0d34eb727db82d606`  
-		Last Modified: Tue, 10 Dec 2024 02:22:11 GMT  
-		Size: 199.8 MB (199822910 bytes)  
+	-	`sha256:1f9c94a51aa52de7670b7bace65113fbe0489143772414c738c957a532cb920e`  
+		Last Modified: Wed, 25 Dec 2024 07:44:29 GMT  
+		Size: 199.8 MB (199822750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:694f6618fd18469987ee9c97941bb88de0549291d9ddadc2a143ad04eb3474f8`  
-		Last Modified: Tue, 10 Dec 2024 02:22:07 GMT  
-		Size: 9.2 MB (9170437 bytes)  
+	-	`sha256:d0e730b04999ace32443fb944f5739f182f96f780ffafefc30e68c1475aa0b13`  
+		Last Modified: Wed, 25 Dec 2024 07:44:25 GMT  
+		Size: 9.2 MB (9170436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2bb0c05753ad097cdbdce27b2b70c06408dfa58ad31e556679b92f2e0580a789`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
-		Size: 850.0 B  
+	-	`sha256:e761b858135dfe97252f118c5e7cbb83f45d489dfbf776be219acf3f3fcc5d30`  
+		Last Modified: Wed, 25 Dec 2024 07:44:24 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33dd498a83b94bd088299af763f6e4923c7356da8fdb1d5dc14f00a08db58cba`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
-		Size: 155.0 B  
+	-	`sha256:0da921b0cf72152656366d4a09211bb881a788437bdbbdcbab27201b3f8dc34b`  
+		Last Modified: Wed, 25 Dec 2024 07:44:25 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-amazoncorretto-17-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:3afdd7557b0dbc3632a73081045c3d9f1a4a5b4566390c526cec5d7b6b06068c
+$ docker pull maven@sha256:b27cdd28d122770a9256003ddf682032d8ab58fe5e9708fb387528b6e521b77c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018438 bytes)**  
+-	Total Size: **3.0 MB (3014205 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff25405c11c353104aae44a2acfd63119dff05f164376035495469d21c8bc354`
+-	Image ID: `sha256:af930de310cc6896458764d6062ef9dac109e9c1c0be591b9fbcd5904f8c18c0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5564111de98f48ee97275b2eb8c81cd78e2e288e18cff1808258b16b167865bb`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
-		Size: 3.0 MB (2999056 bytes)  
+	-	`sha256:1f3615450a3eae38adec7ee48ef2e27b7a54fe95c87df88a08b8b0d9e7a6bcb9`  
+		Last Modified: Wed, 25 Dec 2024 07:44:25 GMT  
+		Size: 3.0 MB (2994823 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bfb3013db23b05219464c39a33aa1849d8bd987295418308caf2a35c0e4a41c9`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
+	-	`sha256:e2c5d989c0efabf58340cb5364267ae7b1db896301ac5f6594c78f647eaeb0fb`  
+		Last Modified: Wed, 25 Dec 2024 07:44:24 GMT  
 		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9-amazoncorretto-17-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:6eb37f462d703f390c7649e285a2cba3244d26b3c4780e9a5743c4296d81f737
+$ docker pull maven@sha256:c26417a9daa6c49e7ef634fa0c2a581d1d8a43a28482011a9c1fe03022eb3b9e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23827,19 +23827,19 @@ $ docker pull maven@sha256:6eb37f462d703f390c7649e285a2cba3244d26b3c4780e9a5743c
 ### `maven:3.9-amazoncorretto-17-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:e0499750502788e789c6eed4d6cc47f089efb5e98f3920db236b94f1fd44a36d
+$ docker pull maven@sha256:cd19bfa572126327677e81ef0265032d840954a2bd92f1890098ae7b68bc88ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.9 MB (238923242 bytes)**  
+-	Total Size: **238.9 MB (238923256 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b39ffa4f192eb0d909049862225f406fe92584ba24dcdd25a2ca2394528ee18`
+-	Image ID: `sha256:1ec73da9166e8187c42523ca8f1809fcc53d494af99834f6b663ea6e57c8fc89`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -23875,71 +23875,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6bd605e55415a21a79cb44063579ae319db81753d426c51b3596a88448d4324d`  
-		Last Modified: Mon, 09 Dec 2024 20:31:54 GMT  
-		Size: 201.5 MB (201520184 bytes)  
+	-	`sha256:5b8a8ed6ef70eff5e37193c556413ab3ed681bfb0ad703fa68a9bc979e06d7db`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 201.5 MB (201520197 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:040f087bba961db973efbc8cf025c845df8b04f74d07049f86889e28a956525a`  
-		Last Modified: Mon, 09 Dec 2024 20:31:49 GMT  
-		Size: 9.2 MB (9170441 bytes)  
+	-	`sha256:c645781e092c07d6a0843af4191176761dd7bb07527b07f8324f006eb4adfdf3`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0354a9a64bdf84ec236066e08683e4a72d42ec2b56cfd08f979fe2c141d888a`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 850.0 B  
+	-	`sha256:6a0f1b0cf3c87da01f6ad1ba29493d7b1bbad065555bd0b81e86b32790f2527b`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1517b8d88921f1de5fcf7795d350f67c5c30b13e249017228d0fc7887152ce5`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 155.0 B  
+	-	`sha256:30e10ba0325eb3bb549f9245f1dee1c82675b5f5cc765e331819083f01f5dba2`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-amazoncorretto-17-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:0fd87c78d77ed24fdd9af48dcfec3069c3cde5fe3ef3096b5558eafac42352ab
+$ docker pull maven@sha256:9438ebbe807c19f50f98635f3119cd1b5d8886067a26ebc0a42c4f6267bc5b3e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018610 bytes)**  
+-	Total Size: **3.0 MB (3014376 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23318f260ec3d4c440b36d208f434c7b520b51bb895eb160e242a729b126726e`
+-	Image ID: `sha256:dc75643faa536f1a6d6360858cc1fb2274da0e1286accfc78322b72697601aad`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:623ef16bf71fdbe752d9a66a0fa30a662f37897f430703e6f05a8544d0946818`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 3.0 MB (2999398 bytes)  
+	-	`sha256:cfefe596825d83fe5b603bccc6bea83f2bcdc6f618f7644bce86bc23daca9e20`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 3.0 MB (2995163 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4771f142f590f15bd2cd40c9d3c5e125600ec0c3d89df79567f3a6cce5d68c12`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 19.2 KB (19212 bytes)  
+	-	`sha256:c412b8581df1fec4266b58bf93dc5d199d8908037466a707934fe2b2735fcbef`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.9-amazoncorretto-17-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:3edb30b349640c8be0a85e9cfbfbc4b4bcfc58d3aee87991ac472749a872514f
+$ docker pull maven@sha256:d427e1310b94088b3e956d06c6c9e0889ca084a81e3f0bf90b0aadf1cdfc298b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.1 MB (237053194 bytes)**  
+-	Total Size: **237.1 MB (237052943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a35aa78a5e3090a7efa97d47013856d131c51063b3502b19b1fb3f2dc1c3b63`
+-	Image ID: `sha256:595309375c80517e901a312505c2c67ea6d4ce141f6b175e14dc3138ed9af936`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -23975,52 +23975,52 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e1e03ce8ae306c1b9809b6a1263c141bcf0fd494718ffe0d34eb727db82d606`  
-		Last Modified: Tue, 10 Dec 2024 02:22:11 GMT  
-		Size: 199.8 MB (199822910 bytes)  
+	-	`sha256:1f9c94a51aa52de7670b7bace65113fbe0489143772414c738c957a532cb920e`  
+		Last Modified: Wed, 25 Dec 2024 07:44:29 GMT  
+		Size: 199.8 MB (199822750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:694f6618fd18469987ee9c97941bb88de0549291d9ddadc2a143ad04eb3474f8`  
-		Last Modified: Tue, 10 Dec 2024 02:22:07 GMT  
-		Size: 9.2 MB (9170437 bytes)  
+	-	`sha256:d0e730b04999ace32443fb944f5739f182f96f780ffafefc30e68c1475aa0b13`  
+		Last Modified: Wed, 25 Dec 2024 07:44:25 GMT  
+		Size: 9.2 MB (9170436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2bb0c05753ad097cdbdce27b2b70c06408dfa58ad31e556679b92f2e0580a789`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
-		Size: 850.0 B  
+	-	`sha256:e761b858135dfe97252f118c5e7cbb83f45d489dfbf776be219acf3f3fcc5d30`  
+		Last Modified: Wed, 25 Dec 2024 07:44:24 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33dd498a83b94bd088299af763f6e4923c7356da8fdb1d5dc14f00a08db58cba`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
-		Size: 155.0 B  
+	-	`sha256:0da921b0cf72152656366d4a09211bb881a788437bdbbdcbab27201b3f8dc34b`  
+		Last Modified: Wed, 25 Dec 2024 07:44:25 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-amazoncorretto-17-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:3afdd7557b0dbc3632a73081045c3d9f1a4a5b4566390c526cec5d7b6b06068c
+$ docker pull maven@sha256:b27cdd28d122770a9256003ddf682032d8ab58fe5e9708fb387528b6e521b77c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018438 bytes)**  
+-	Total Size: **3.0 MB (3014205 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff25405c11c353104aae44a2acfd63119dff05f164376035495469d21c8bc354`
+-	Image ID: `sha256:af930de310cc6896458764d6062ef9dac109e9c1c0be591b9fbcd5904f8c18c0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5564111de98f48ee97275b2eb8c81cd78e2e288e18cff1808258b16b167865bb`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
-		Size: 3.0 MB (2999056 bytes)  
+	-	`sha256:1f3615450a3eae38adec7ee48ef2e27b7a54fe95c87df88a08b8b0d9e7a6bcb9`  
+		Last Modified: Wed, 25 Dec 2024 07:44:25 GMT  
+		Size: 3.0 MB (2994823 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bfb3013db23b05219464c39a33aa1849d8bd987295418308caf2a35c0e4a41c9`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
+	-	`sha256:e2c5d989c0efabf58340cb5364267ae7b1db896301ac5f6594c78f647eaeb0fb`  
+		Last Modified: Wed, 25 Dec 2024 07:44:24 GMT  
 		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -24776,7 +24776,7 @@ $ docker pull maven@sha256:ca8726b7a93ddfb7b3af42bca32e2c9a2e68228113162dd8c4e16
 ## `maven:3.9-amazoncorretto-21-debian`
 
 ```console
-$ docker pull maven@sha256:fa247839d77686a170df0c220924f21108617ba5206aa04d6a5885f9b0adc064
+$ docker pull maven@sha256:0297db3be9a5b563b0d886461224a0325ca3740cc4477fc49c5c647d6712499b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24789,19 +24789,19 @@ $ docker pull maven@sha256:fa247839d77686a170df0c220924f21108617ba5206aa04d6a588
 ### `maven:3.9-amazoncorretto-21-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:cb4d16d9dc6ce8cc1871911b82bb066fe0687d93fde2fafd09db3b18bbc67417
+$ docker pull maven@sha256:f4f670cf10bd7648498bc27585d18f9db6ff347d6e813f8eaadb54ae60a304b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.1 MB (254139405 bytes)**  
+-	Total Size: **254.1 MB (254139059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2d5f6499cd7ee9e34cad52e6805ad12ade49efaf967bd2b1bbb6b1f1173edde`
+-	Image ID: `sha256:2dcfe13e93c6ae1138a3c9d6f849b76be430157a8c4f982bc5c64975ad6cc002`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -24837,71 +24837,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:525b5720295b79ebac3495aaaf60011b11c43238507d7ce087160256bc6fd97b`  
-		Last Modified: Mon, 09 Dec 2024 20:31:43 GMT  
-		Size: 216.7 MB (216736348 bytes)  
+	-	`sha256:aabfa15455560ed1bd2328a7821a42a84f3650acc865f2187c0b06f2ae176eef`  
+		Last Modified: Tue, 24 Dec 2024 22:39:15 GMT  
+		Size: 216.7 MB (216736000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f376598fd0822e8fefd016b6267bf83a0580985ef1e3b84440af37d48c489759`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 9.2 MB (9170441 bytes)  
+	-	`sha256:c645781e092c07d6a0843af4191176761dd7bb07527b07f8324f006eb4adfdf3`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a62da7db1ad086623eb81c8d1011258a160bcfcb884da2c7716d4f9efbea8418`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 850.0 B  
+	-	`sha256:6a0f1b0cf3c87da01f6ad1ba29493d7b1bbad065555bd0b81e86b32790f2527b`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:386c25cf85a2c5a83d35ed983fa02b99f2d337dfb4ff7cc970877de045353c56`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 154.0 B  
+	-	`sha256:30e10ba0325eb3bb549f9245f1dee1c82675b5f5cc765e331819083f01f5dba2`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-amazoncorretto-21-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:d9e8e30534f70656e4562544b4d6d84e856880629608d77403486391f8d17559
+$ docker pull maven@sha256:4fa0f35d87db27f06082dddb605067bd2767fb33b8e2925924fe515401a64495
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018510 bytes)**  
+-	Total Size: **3.0 MB (3014275 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6c21ca3c550304d2dc7abfa58b2ebbe7e444c9a862e2ac29471d6f151ab0b28`
+-	Image ID: `sha256:a3f6ea33bc3fef581dc17c3c6d627a5f77ba750ef4a2f9204e54b0257b04bd6b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b0fac53a856d432f4b51bc1e8db81568555bb10a5320851f3e5399b5c4799075`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 3.0 MB (2999297 bytes)  
+	-	`sha256:4ed2c30f2a67a60ad6eaefe90b8f739775233e25aaa6d42e533aa23adf5c13c5`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 3.0 MB (2995062 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b147d26747209b63652a4020fac924ee12582c000c43802972eefd67b5fcbf7e`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
+	-	`sha256:d42766da24aa0e7e818d0ded888932fb08284a70ecec8ca7cfe57d40dc4d91d8`  
+		Last Modified: Tue, 24 Dec 2024 22:39:08 GMT  
 		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.9-amazoncorretto-21-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:00b0a43c44cd3d9c32bc5c22160484f878bf85aeb0ff21422ceaccd1806ee998
+$ docker pull maven@sha256:0b3ad8a450bc77519b3baefbfcd797c747c61c02a8780ad46caeec40bde5afc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.7 MB (251701171 bytes)**  
+-	Total Size: **251.7 MB (251700966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:735cd64f57d78b500efd2f6cca65d171668c1fbac7982481b812a0071192f12e`
+-	Image ID: `sha256:a02a0b90f6b7b4a29fd7da6fd79e0b91032f0d2768fd5d7741f1a3e211795a24`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -24937,59 +24937,59 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd997dd7f8c27c4e3de5778b0e4635734590e28a1e3724b77623e3c9bbeea21b`  
-		Last Modified: Tue, 10 Dec 2024 02:26:11 GMT  
-		Size: 214.5 MB (214470886 bytes)  
+	-	`sha256:f1fa1eff39f4841b833a6e95f85f6fa8349afb48e1d5e6d119cec7732f2c2775`  
+		Last Modified: Wed, 25 Dec 2024 07:45:21 GMT  
+		Size: 214.5 MB (214470778 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92db06626165e33a8236aed2f2b7aa487aa56eece4616f3d651c16bb9cdd9677`  
-		Last Modified: Tue, 10 Dec 2024 02:26:07 GMT  
-		Size: 9.2 MB (9170437 bytes)  
+	-	`sha256:18dc6a06e61cd6a5d8f8effa0459ebf14d24d13f24632cd871df97a23980f84c`  
+		Last Modified: Wed, 25 Dec 2024 07:45:17 GMT  
+		Size: 9.2 MB (9170429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98f88c97a19048974214412b9cde1a4e68c3e8dbc0aa0031ed91b8c5c57fb937`  
-		Last Modified: Tue, 10 Dec 2024 02:26:06 GMT  
-		Size: 851.0 B  
+	-	`sha256:76bd07bc67f987583b20a96c34195b554fdb8688e24a2e1070014804c9abb5ec`  
+		Last Modified: Wed, 25 Dec 2024 07:45:16 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39190d755d657a1759560a1ed3be1dac21120c50bea46faae254a31055600a11`  
-		Last Modified: Tue, 10 Dec 2024 02:26:06 GMT  
-		Size: 155.0 B  
+	-	`sha256:c7fbcc76d85d17608a6a42be44fd50028febafc1addb56d9f9f419535b0b27b0`  
+		Last Modified: Wed, 25 Dec 2024 07:45:17 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-amazoncorretto-21-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:7ef0e178de2aa0bc4a8be77250e426919fb3e5fca6aad2e98dc6b1987723ccb1
+$ docker pull maven@sha256:5f4e77839b04924d02650cd13cae4522176c24c92b8c530378b1dbaaed964a4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018337 bytes)**  
+-	Total Size: **3.0 MB (3014104 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:154d3eb47d356f02eeb9cb2464358f1fc5ec1b1be4c918d5894ea63ccd757b2e`
+-	Image ID: `sha256:23c5e5fa1d9665a394710f85709bcf82629d066d900a755db3056ad4697fd6d4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d299b608851a93f5e0c8101ea83c623a1a74a19e64d58edb8381e8d4ee44da18`  
-		Last Modified: Tue, 10 Dec 2024 02:26:07 GMT  
-		Size: 3.0 MB (2998955 bytes)  
+	-	`sha256:8e993931599ca60cb4a3c06216158cf355ddf6c801e8f8fcb01c9047c9ae7eef`  
+		Last Modified: Wed, 25 Dec 2024 07:45:17 GMT  
+		Size: 3.0 MB (2994722 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6625557b8723c6f90fa7be6f7da5f276e9e7710f22796c588c257b9291efc25`  
-		Last Modified: Tue, 10 Dec 2024 02:26:06 GMT  
+	-	`sha256:7958cac85fd62cc4cdca2eb4241642d99b69ebcaa6278efeda5cdd68ca8aa105`  
+		Last Modified: Wed, 25 Dec 2024 07:45:16 GMT  
 		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9-amazoncorretto-21-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:fa247839d77686a170df0c220924f21108617ba5206aa04d6a5885f9b0adc064
+$ docker pull maven@sha256:0297db3be9a5b563b0d886461224a0325ca3740cc4477fc49c5c647d6712499b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25002,19 +25002,19 @@ $ docker pull maven@sha256:fa247839d77686a170df0c220924f21108617ba5206aa04d6a588
 ### `maven:3.9-amazoncorretto-21-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:cb4d16d9dc6ce8cc1871911b82bb066fe0687d93fde2fafd09db3b18bbc67417
+$ docker pull maven@sha256:f4f670cf10bd7648498bc27585d18f9db6ff347d6e813f8eaadb54ae60a304b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.1 MB (254139405 bytes)**  
+-	Total Size: **254.1 MB (254139059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2d5f6499cd7ee9e34cad52e6805ad12ade49efaf967bd2b1bbb6b1f1173edde`
+-	Image ID: `sha256:2dcfe13e93c6ae1138a3c9d6f849b76be430157a8c4f982bc5c64975ad6cc002`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -25050,71 +25050,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:525b5720295b79ebac3495aaaf60011b11c43238507d7ce087160256bc6fd97b`  
-		Last Modified: Mon, 09 Dec 2024 20:31:43 GMT  
-		Size: 216.7 MB (216736348 bytes)  
+	-	`sha256:aabfa15455560ed1bd2328a7821a42a84f3650acc865f2187c0b06f2ae176eef`  
+		Last Modified: Tue, 24 Dec 2024 22:39:15 GMT  
+		Size: 216.7 MB (216736000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f376598fd0822e8fefd016b6267bf83a0580985ef1e3b84440af37d48c489759`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 9.2 MB (9170441 bytes)  
+	-	`sha256:c645781e092c07d6a0843af4191176761dd7bb07527b07f8324f006eb4adfdf3`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a62da7db1ad086623eb81c8d1011258a160bcfcb884da2c7716d4f9efbea8418`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 850.0 B  
+	-	`sha256:6a0f1b0cf3c87da01f6ad1ba29493d7b1bbad065555bd0b81e86b32790f2527b`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:386c25cf85a2c5a83d35ed983fa02b99f2d337dfb4ff7cc970877de045353c56`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 154.0 B  
+	-	`sha256:30e10ba0325eb3bb549f9245f1dee1c82675b5f5cc765e331819083f01f5dba2`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-amazoncorretto-21-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:d9e8e30534f70656e4562544b4d6d84e856880629608d77403486391f8d17559
+$ docker pull maven@sha256:4fa0f35d87db27f06082dddb605067bd2767fb33b8e2925924fe515401a64495
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018510 bytes)**  
+-	Total Size: **3.0 MB (3014275 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6c21ca3c550304d2dc7abfa58b2ebbe7e444c9a862e2ac29471d6f151ab0b28`
+-	Image ID: `sha256:a3f6ea33bc3fef581dc17c3c6d627a5f77ba750ef4a2f9204e54b0257b04bd6b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b0fac53a856d432f4b51bc1e8db81568555bb10a5320851f3e5399b5c4799075`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 3.0 MB (2999297 bytes)  
+	-	`sha256:4ed2c30f2a67a60ad6eaefe90b8f739775233e25aaa6d42e533aa23adf5c13c5`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 3.0 MB (2995062 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b147d26747209b63652a4020fac924ee12582c000c43802972eefd67b5fcbf7e`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
+	-	`sha256:d42766da24aa0e7e818d0ded888932fb08284a70ecec8ca7cfe57d40dc4d91d8`  
+		Last Modified: Tue, 24 Dec 2024 22:39:08 GMT  
 		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.9-amazoncorretto-21-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:00b0a43c44cd3d9c32bc5c22160484f878bf85aeb0ff21422ceaccd1806ee998
+$ docker pull maven@sha256:0b3ad8a450bc77519b3baefbfcd797c747c61c02a8780ad46caeec40bde5afc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.7 MB (251701171 bytes)**  
+-	Total Size: **251.7 MB (251700966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:735cd64f57d78b500efd2f6cca65d171668c1fbac7982481b812a0071192f12e`
+-	Image ID: `sha256:a02a0b90f6b7b4a29fd7da6fd79e0b91032f0d2768fd5d7741f1a3e211795a24`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -25150,52 +25150,52 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd997dd7f8c27c4e3de5778b0e4635734590e28a1e3724b77623e3c9bbeea21b`  
-		Last Modified: Tue, 10 Dec 2024 02:26:11 GMT  
-		Size: 214.5 MB (214470886 bytes)  
+	-	`sha256:f1fa1eff39f4841b833a6e95f85f6fa8349afb48e1d5e6d119cec7732f2c2775`  
+		Last Modified: Wed, 25 Dec 2024 07:45:21 GMT  
+		Size: 214.5 MB (214470778 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92db06626165e33a8236aed2f2b7aa487aa56eece4616f3d651c16bb9cdd9677`  
-		Last Modified: Tue, 10 Dec 2024 02:26:07 GMT  
-		Size: 9.2 MB (9170437 bytes)  
+	-	`sha256:18dc6a06e61cd6a5d8f8effa0459ebf14d24d13f24632cd871df97a23980f84c`  
+		Last Modified: Wed, 25 Dec 2024 07:45:17 GMT  
+		Size: 9.2 MB (9170429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98f88c97a19048974214412b9cde1a4e68c3e8dbc0aa0031ed91b8c5c57fb937`  
-		Last Modified: Tue, 10 Dec 2024 02:26:06 GMT  
-		Size: 851.0 B  
+	-	`sha256:76bd07bc67f987583b20a96c34195b554fdb8688e24a2e1070014804c9abb5ec`  
+		Last Modified: Wed, 25 Dec 2024 07:45:16 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39190d755d657a1759560a1ed3be1dac21120c50bea46faae254a31055600a11`  
-		Last Modified: Tue, 10 Dec 2024 02:26:06 GMT  
-		Size: 155.0 B  
+	-	`sha256:c7fbcc76d85d17608a6a42be44fd50028febafc1addb56d9f9f419535b0b27b0`  
+		Last Modified: Wed, 25 Dec 2024 07:45:17 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-amazoncorretto-21-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:7ef0e178de2aa0bc4a8be77250e426919fb3e5fca6aad2e98dc6b1987723ccb1
+$ docker pull maven@sha256:5f4e77839b04924d02650cd13cae4522176c24c92b8c530378b1dbaaed964a4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018337 bytes)**  
+-	Total Size: **3.0 MB (3014104 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:154d3eb47d356f02eeb9cb2464358f1fc5ec1b1be4c918d5894ea63ccd757b2e`
+-	Image ID: `sha256:23c5e5fa1d9665a394710f85709bcf82629d066d900a755db3056ad4697fd6d4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d299b608851a93f5e0c8101ea83c623a1a74a19e64d58edb8381e8d4ee44da18`  
-		Last Modified: Tue, 10 Dec 2024 02:26:07 GMT  
-		Size: 3.0 MB (2998955 bytes)  
+	-	`sha256:8e993931599ca60cb4a3c06216158cf355ddf6c801e8f8fcb01c9047c9ae7eef`  
+		Last Modified: Wed, 25 Dec 2024 07:45:17 GMT  
+		Size: 3.0 MB (2994722 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6625557b8723c6f90fa7be6f7da5f276e9e7710f22796c588c257b9291efc25`  
-		Last Modified: Tue, 10 Dec 2024 02:26:06 GMT  
+	-	`sha256:7958cac85fd62cc4cdca2eb4241642d99b69ebcaa6278efeda5cdd68ca8aa105`  
+		Last Modified: Wed, 25 Dec 2024 07:45:16 GMT  
 		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -25931,7 +25931,7 @@ $ docker pull maven@sha256:e626aacdf29e29ad8fc7c7466084dbe71cbd36dec43f2501f0e91
 ## `maven:3.9-amazoncorretto-23-debian`
 
 ```console
-$ docker pull maven@sha256:6b3986c4485ba720abe495cffd7e5243d17d09f6083e43c923c8881790c8f3fc
+$ docker pull maven@sha256:fb26c294353f2d40475c07ca6ee7850bd083e5dcf07b8b48d3a391d72aa1a467
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25944,19 +25944,19 @@ $ docker pull maven@sha256:6b3986c4485ba720abe495cffd7e5243d17d09f6083e43c923c88
 ### `maven:3.9-amazoncorretto-23-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:29da3d97b320f8cf5abcee06c7540a5b6da123543b411645fe425eaa921cc849
+$ docker pull maven@sha256:44357e7c1584fc1f52d09712dd83774d84d75f7173bc8a152e46f39d351e2ff0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **261.6 MB (261644045 bytes)**  
+-	Total Size: **261.6 MB (261644051 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8722af39cfd7974db197cf3417ae5d5c7c30814161a5d0ed48772a91edb52d56`
+-	Image ID: `sha256:74bb745bd7ff4626e5c188140d1c8139916f28546f02a7af97660fcd6fd447b2`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-23-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -25992,71 +25992,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f79347c5dfb5b7e191a5f422d3bef6a484f6964a75b11ae6c8fb356d5465d8d5`  
-		Last Modified: Mon, 09 Dec 2024 20:31:50 GMT  
-		Size: 224.2 MB (224240990 bytes)  
+	-	`sha256:6abe81f2c5a3de75f2c37e63f206b358357374f8ea56f7a24775d1037d527523`  
+		Last Modified: Tue, 24 Dec 2024 22:39:07 GMT  
+		Size: 224.2 MB (224240995 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e6722fe424e3619e348376ffd1cc75b2627be5d1cacfda4366c48ce9b41edad`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 9.2 MB (9170438 bytes)  
+	-	`sha256:85a53a8e763a560a15e208073d78cd3bf290b589b77065df2db5988414f9fa1a`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 9.2 MB (9170441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4270152709991d7e116db0878f19955217f0f7d3acd7adc2dd443ec6df179bc`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 850.0 B  
+	-	`sha256:ad0483291349ac15c314fc9e17ad4e80015fe2d669c3531e4e821d5812a3ab59`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d392805aefd4733a800c2876a2fbff766c1fa6b8e3fccd588787ce4c536b74a4`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 155.0 B  
+	-	`sha256:79dce5d06bbdee8522c0f53f27e58849e8ef88a6fed3225d64946db4eb4b7042`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-amazoncorretto-23-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:70bfdeabc81a775e298ac138807ebbfec9463b4ec556669d9805ec567e38acb7
+$ docker pull maven@sha256:ba9186af9a0faf594fce6a1693e0471537e010b1959b08f2deea76f2eb99088f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3020458 bytes)**  
+-	Total Size: **3.0 MB (3016220 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:378881e273445887693e7c8b10a3fb204df4301efcc042840e69090b31fd139a`
+-	Image ID: `sha256:e7228406bd1bb92b265b86e0e3d6ceb201d2e308bfede069d774f35a79526211`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2cef979391edf0e810f434439a9c0141f9be41648fff58b8d5cf43eb75dab063`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 3.0 MB (3001245 bytes)  
+	-	`sha256:606357f34696756672c900c6d3272ac2ecb3525ce82beda37fd82b08a93a1206`  
+		Last Modified: Tue, 24 Dec 2024 22:39:02 GMT  
+		Size: 3.0 MB (2997007 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:50f3b0757914a1d81b6a17ecdf00f1d421bbdc824bd3ed7b36cabbaea9a560d6`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
+	-	`sha256:d58b3efa7c5d98b2fa128b2c86227e73b4bfdcec3b3ca6f8683643e4eb888e56`  
+		Last Modified: Tue, 24 Dec 2024 22:39:01 GMT  
 		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.9-amazoncorretto-23-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:4913e322a3886a6c531d7fcede01c650ade5b54e8d43138897fda7ae9c2750d0
+$ docker pull maven@sha256:6b7708f6e3cea8e5e91dda1e3fb08d959b2bce4d571b9ce23c4fb150d10559aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **259.0 MB (258989092 bytes)**  
+-	Total Size: **259.0 MB (258988932 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b99a0f430948d5a45a4ae7036aa644c4805262ad3c94f885eadbb15b5c204908`
+-	Image ID: `sha256:ebd50d29f62162ec6f5d66eb1ba469e41c62aa0c686d544f93041d11f7dde065`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-23-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -26092,59 +26092,59 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06727bb706706d0066c2269bf6ead6565e2f4e3c1a72c999eb669a715f2587a4`  
-		Last Modified: Tue, 10 Dec 2024 02:29:13 GMT  
-		Size: 221.8 MB (221758808 bytes)  
+	-	`sha256:b2be63af51cb44e2d7e17ccc19aacc27061c7d9b29b4cf89c6a5bbcb7a0eb63f`  
+		Last Modified: Wed, 25 Dec 2024 07:46:22 GMT  
+		Size: 221.8 MB (221758729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:779b480759d55ef43f0de932ec7061cd3329df9ea634542d63ec5dca1a9205c5`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 9.2 MB (9170437 bytes)  
+	-	`sha256:f14249ca97659ac8b53330cde3a4d334162f6cf9d2530574ab4ca1dbb4bd64a9`  
+		Last Modified: Wed, 25 Dec 2024 07:46:18 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:443c2cab7c10d9c35466e057a316b34783cb6ff896bea066e5c484f998564e11`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
+	-	`sha256:a6f4f0267adcb7f3499d3f377c983d569569218ed6cb1fcc3d0c44a472100642`  
+		Last Modified: Wed, 25 Dec 2024 07:46:17 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fccc83b55bded8d14bcc625de1704f188c6ecee26d7e70e3a591c9274670a13d`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 155.0 B  
+	-	`sha256:b3c9a97f6814f224ccadd9093718b8d9ce0c3b35ed5bbcbc0ba57caa0466e455`  
+		Last Modified: Wed, 25 Dec 2024 07:46:18 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-amazoncorretto-23-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:ee9165c6c0823b7cf109448f997811c80d67f355daf782c0b1f9ebe4e1e039d7
+$ docker pull maven@sha256:b5f15e66c2645de71e3cb1ffbe9cd022856b75745e1f0c834722a8ebe6f44379
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3019643 bytes)**  
+-	Total Size: **3.0 MB (3015409 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fcd2530426206825426d3462aa743ee33cd7cd2c8b8f2e6ac2efab8174c4541`
+-	Image ID: `sha256:5a6283a058a0b6e748eed2541029eddace850b273749f0e244b8d6ae34382573`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:18c2e67e9c94b6ac2589920138c2dd31c629de20efe8a896f536e125987e85da`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 3.0 MB (3000262 bytes)  
+	-	`sha256:d3b8721d574bde59754c20eefaa2b918626c3309f1e522b473485cf9970a13c4`  
+		Last Modified: Wed, 25 Dec 2024 07:46:18 GMT  
+		Size: 3.0 MB (2996027 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:82fd51711e8f9048efa15a91626ca8c1834d6d10eab102a8582936123248ccc6`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 19.4 KB (19381 bytes)  
+	-	`sha256:c0a878d593c4a74b2e18d117cdc557c8368799df81dbe9abdf778ca067d787da`  
+		Last Modified: Wed, 25 Dec 2024 07:46:17 GMT  
+		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9-amazoncorretto-23-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:6b3986c4485ba720abe495cffd7e5243d17d09f6083e43c923c8881790c8f3fc
+$ docker pull maven@sha256:fb26c294353f2d40475c07ca6ee7850bd083e5dcf07b8b48d3a391d72aa1a467
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26157,19 +26157,19 @@ $ docker pull maven@sha256:6b3986c4485ba720abe495cffd7e5243d17d09f6083e43c923c88
 ### `maven:3.9-amazoncorretto-23-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:29da3d97b320f8cf5abcee06c7540a5b6da123543b411645fe425eaa921cc849
+$ docker pull maven@sha256:44357e7c1584fc1f52d09712dd83774d84d75f7173bc8a152e46f39d351e2ff0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **261.6 MB (261644045 bytes)**  
+-	Total Size: **261.6 MB (261644051 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8722af39cfd7974db197cf3417ae5d5c7c30814161a5d0ed48772a91edb52d56`
+-	Image ID: `sha256:74bb745bd7ff4626e5c188140d1c8139916f28546f02a7af97660fcd6fd447b2`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-23-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -26205,71 +26205,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f79347c5dfb5b7e191a5f422d3bef6a484f6964a75b11ae6c8fb356d5465d8d5`  
-		Last Modified: Mon, 09 Dec 2024 20:31:50 GMT  
-		Size: 224.2 MB (224240990 bytes)  
+	-	`sha256:6abe81f2c5a3de75f2c37e63f206b358357374f8ea56f7a24775d1037d527523`  
+		Last Modified: Tue, 24 Dec 2024 22:39:07 GMT  
+		Size: 224.2 MB (224240995 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e6722fe424e3619e348376ffd1cc75b2627be5d1cacfda4366c48ce9b41edad`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 9.2 MB (9170438 bytes)  
+	-	`sha256:85a53a8e763a560a15e208073d78cd3bf290b589b77065df2db5988414f9fa1a`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 9.2 MB (9170441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4270152709991d7e116db0878f19955217f0f7d3acd7adc2dd443ec6df179bc`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 850.0 B  
+	-	`sha256:ad0483291349ac15c314fc9e17ad4e80015fe2d669c3531e4e821d5812a3ab59`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d392805aefd4733a800c2876a2fbff766c1fa6b8e3fccd588787ce4c536b74a4`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 155.0 B  
+	-	`sha256:79dce5d06bbdee8522c0f53f27e58849e8ef88a6fed3225d64946db4eb4b7042`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-amazoncorretto-23-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:70bfdeabc81a775e298ac138807ebbfec9463b4ec556669d9805ec567e38acb7
+$ docker pull maven@sha256:ba9186af9a0faf594fce6a1693e0471537e010b1959b08f2deea76f2eb99088f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3020458 bytes)**  
+-	Total Size: **3.0 MB (3016220 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:378881e273445887693e7c8b10a3fb204df4301efcc042840e69090b31fd139a`
+-	Image ID: `sha256:e7228406bd1bb92b265b86e0e3d6ceb201d2e308bfede069d774f35a79526211`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2cef979391edf0e810f434439a9c0141f9be41648fff58b8d5cf43eb75dab063`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 3.0 MB (3001245 bytes)  
+	-	`sha256:606357f34696756672c900c6d3272ac2ecb3525ce82beda37fd82b08a93a1206`  
+		Last Modified: Tue, 24 Dec 2024 22:39:02 GMT  
+		Size: 3.0 MB (2997007 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:50f3b0757914a1d81b6a17ecdf00f1d421bbdc824bd3ed7b36cabbaea9a560d6`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
+	-	`sha256:d58b3efa7c5d98b2fa128b2c86227e73b4bfdcec3b3ca6f8683643e4eb888e56`  
+		Last Modified: Tue, 24 Dec 2024 22:39:01 GMT  
 		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.9-amazoncorretto-23-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:4913e322a3886a6c531d7fcede01c650ade5b54e8d43138897fda7ae9c2750d0
+$ docker pull maven@sha256:6b7708f6e3cea8e5e91dda1e3fb08d959b2bce4d571b9ce23c4fb150d10559aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **259.0 MB (258989092 bytes)**  
+-	Total Size: **259.0 MB (258988932 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b99a0f430948d5a45a4ae7036aa644c4805262ad3c94f885eadbb15b5c204908`
+-	Image ID: `sha256:ebd50d29f62162ec6f5d66eb1ba469e41c62aa0c686d544f93041d11f7dde065`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-23-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -26305,53 +26305,53 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06727bb706706d0066c2269bf6ead6565e2f4e3c1a72c999eb669a715f2587a4`  
-		Last Modified: Tue, 10 Dec 2024 02:29:13 GMT  
-		Size: 221.8 MB (221758808 bytes)  
+	-	`sha256:b2be63af51cb44e2d7e17ccc19aacc27061c7d9b29b4cf89c6a5bbcb7a0eb63f`  
+		Last Modified: Wed, 25 Dec 2024 07:46:22 GMT  
+		Size: 221.8 MB (221758729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:779b480759d55ef43f0de932ec7061cd3329df9ea634542d63ec5dca1a9205c5`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 9.2 MB (9170437 bytes)  
+	-	`sha256:f14249ca97659ac8b53330cde3a4d334162f6cf9d2530574ab4ca1dbb4bd64a9`  
+		Last Modified: Wed, 25 Dec 2024 07:46:18 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:443c2cab7c10d9c35466e057a316b34783cb6ff896bea066e5c484f998564e11`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
+	-	`sha256:a6f4f0267adcb7f3499d3f377c983d569569218ed6cb1fcc3d0c44a472100642`  
+		Last Modified: Wed, 25 Dec 2024 07:46:17 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fccc83b55bded8d14bcc625de1704f188c6ecee26d7e70e3a591c9274670a13d`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 155.0 B  
+	-	`sha256:b3c9a97f6814f224ccadd9093718b8d9ce0c3b35ed5bbcbc0ba57caa0466e455`  
+		Last Modified: Wed, 25 Dec 2024 07:46:18 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-amazoncorretto-23-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:ee9165c6c0823b7cf109448f997811c80d67f355daf782c0b1f9ebe4e1e039d7
+$ docker pull maven@sha256:b5f15e66c2645de71e3cb1ffbe9cd022856b75745e1f0c834722a8ebe6f44379
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3019643 bytes)**  
+-	Total Size: **3.0 MB (3015409 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fcd2530426206825426d3462aa743ee33cd7cd2c8b8f2e6ac2efab8174c4541`
+-	Image ID: `sha256:5a6283a058a0b6e748eed2541029eddace850b273749f0e244b8d6ae34382573`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:18c2e67e9c94b6ac2589920138c2dd31c629de20efe8a896f536e125987e85da`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 3.0 MB (3000262 bytes)  
+	-	`sha256:d3b8721d574bde59754c20eefaa2b918626c3309f1e522b473485cf9970a13c4`  
+		Last Modified: Wed, 25 Dec 2024 07:46:18 GMT  
+		Size: 3.0 MB (2996027 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:82fd51711e8f9048efa15a91626ca8c1834d6d10eab102a8582936123248ccc6`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 19.4 KB (19381 bytes)  
+	-	`sha256:c0a878d593c4a74b2e18d117cdc557c8368799df81dbe9abdf778ca067d787da`  
+		Last Modified: Wed, 25 Dec 2024 07:46:17 GMT  
+		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9-amazoncorretto-8`
@@ -27102,7 +27102,7 @@ $ docker pull maven@sha256:249a276369af1e5165b196c1b7f5ddbf46fb0d9b04786580837e9
 ## `maven:3.9-amazoncorretto-8-debian`
 
 ```console
-$ docker pull maven@sha256:ead0be38b701111b41bd3271d7d423c00613dbd0802014335346f7aee479aa4f
+$ docker pull maven@sha256:aec89d19a28025b6e256735ee6dff194e07a8a823e49259718512b2f6fa20179
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27115,19 +27115,19 @@ $ docker pull maven@sha256:ead0be38b701111b41bd3271d7d423c00613dbd0802014335346f
 ### `maven:3.9-amazoncorretto-8-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:9c84852b386038909344d5dd93128dc1c47457ffce793468d1b8bc13260e86df
+$ docker pull maven@sha256:b32f0dc07c01477a0a446ab34bb23b9a71668800507d3948c2b8e864a1e796f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **163.4 MB (163395368 bytes)**  
+-	Total Size: **163.4 MB (163395397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c91987438d4b46afaedc09e516d22030daf9fe32f308136f7a6c4a90f11980d`
+-	Image ID: `sha256:8ae3c5fa017a4d739fb345728c7cde669a2e90de8dcfc158764f7025c2b16723`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -27163,159 +27163,159 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:abcb9e93bb5cd8e91e36f864b88358405955b26a709ae571c4f2d590885126b0`  
-		Last Modified: Mon, 09 Dec 2024 20:33:06 GMT  
-		Size: 126.0 MB (125992312 bytes)  
+	-	`sha256:ea57055d233b707639b0b1ae98c2dffd98425e4051a5c77239ab8f66dbd3de6d`  
+		Last Modified: Tue, 24 Dec 2024 22:39:11 GMT  
+		Size: 126.0 MB (125992335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fffc27c99ac86edcb3d7347189a8982b6f3c478c41efbee6c85aa15f54cd70b8`  
-		Last Modified: Mon, 09 Dec 2024 20:33:05 GMT  
-		Size: 9.2 MB (9170441 bytes)  
+	-	`sha256:f2b1a07cb35708098a508c04492611903e5ec8decbecd5674f3c13a06d7f51b8`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1047011a6cddeac3c5846ee8a76100341ce2ff1842600edc4666424b6d09e734`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 849.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a146603672f7651357e370347f7b863e4937824d03e1f948bda8b113b3571fda`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 154.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `maven:3.9-amazoncorretto-8-debian` - unknown; unknown
-
-```console
-$ docker pull maven@sha256:57ea3c3d6c9cf2650d0eccb8888ac5b38283234eb9cf2c18cc69b0530f4e0c3d
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2896786 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:906c10bd2a2d3ec971d303b7897922e74c46848cd908a1154523dcd68afb670b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:060dc568fb3516b4de83f2589b8fb745569cb077ad3d5c9f650e7c0f73e8f60b`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 2.9 MB (2877561 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:2f457ae9970ee2595602a3aa642ef924c326e3dad86a88c9bef37efa38286550`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 19.2 KB (19225 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `maven:3.9-amazoncorretto-8-debian` - linux; arm64 variant v8
-
-```console
-$ docker pull maven@sha256:f48abb6b60ed75272a52b2c8ecb67d1a78b6e508df24018d9566728e2c1e7012
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **147.0 MB (146989495 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d295e6912a4dcc982733b5979a84b07ad1ea475429c39efe01e3007a85008abb`
--	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
--	Default Command: `["mvn"]`
-
-```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
-# Sat, 07 Dec 2024 17:04:44 GMT
-RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto/jre
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.title=Apache Maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENV MAVEN_HOME=/usr/share/maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-COPY /usr/share/maven /usr/share/maven # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-ARG MAVEN_VERSION=3.9.9
-# Sat, 07 Dec 2024 17:04:44 GMT
-ARG USER_HOME_DIR=/root
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENV MAVEN_CONFIG=/root/.m2
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Sat, 07 Dec 2024 17:04:44 GMT
-CMD ["mvn"]
-```
-
--	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67fd9e95ea5d8fd2261416cc1831b673d67310dd184234703fcdb85420bd00e2`  
-		Last Modified: Tue, 10 Dec 2024 02:40:25 GMT  
-		Size: 109.8 MB (109759216 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2f29b71765035887887fb4b7ecd59501a0be9d327228bc74ad3d88c0736ba7f`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
-		Size: 9.2 MB (9170432 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb4c9bb33986713f58a05136922e59223675c082b3905a54a5e4a2c0328789c5`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
+	-	`sha256:e5ec3a517dcd5b2e7290f3e0749a19baf21bb362ca0c3575e45c37c4ddb70c1d`  
+		Last Modified: Tue, 24 Dec 2024 22:39:08 GMT  
 		Size: 851.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2e40f8b74640ff195fd2e72d94b0b22df3327e546c8ddabd07aa1743751f240`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
+	-	`sha256:703c0f7be71cd3a179bb8ed6755fae97aaa70d204845c37e46cf9db83e4096d2`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-amazoncorretto-8-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:ffc19c98afae95e08f2fd8ab6e37c3d8ce1d88bcf9c162b518cff37c898e2bb4
+$ docker pull maven@sha256:ae4aab22c63b01e772ef8c72f2be1b4c415b3aa26dd070ced1c4b777b52d635c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2879801 bytes)**  
+-	Total Size: **2.9 MB (2893027 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9ccca7189aab4d933ea9a38732bc6c3d516cc2653354513fff4646d2e6328a6`
+-	Image ID: `sha256:cd603ca7c03d5304e87855ee0112eef5a744567a6beb59ecbaa358cebaec8585`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a865df99530b9f1b2cc720ae3414098c9be103a6bc6a893bdb8c391b5e1c6f45`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
-		Size: 2.9 MB (2860407 bytes)  
+	-	`sha256:c1db1c26a39bbdb6f34f92c8bb2f708d833543cafc66fa9a111bb2ff56a3d711`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 2.9 MB (2873803 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aac0d6da541ead1924fe1beda2c79c97e74e6d8c3da1554f855a491c359c86bd`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
+	-	`sha256:d3899e195f16b6908c2163f975956903f7c5b8c0025ae84b3bc76132379aa5ae`  
+		Last Modified: Tue, 24 Dec 2024 22:39:08 GMT  
+		Size: 19.2 KB (19224 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `maven:3.9-amazoncorretto-8-debian` - linux; arm64 variant v8
+
+```console
+$ docker pull maven@sha256:3f937dc244d00e8ba232d5c7ecfd972cef6b1a3d05f5ea67281bedca42e7a03f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **147.0 MB (146989295 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2556ce27029abdd83aadc8c7cdd8deb87ca39af1a10dea0ba6ae494984ac2b80`
+-	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
+-	Default Command: `["mvn"]`
+
+```dockerfile
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto/jre
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.title=Apache Maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENV MAVEN_HOME=/usr/share/maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+COPY /usr/share/maven /usr/share/maven # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+ARG MAVEN_VERSION=3.9.9
+# Sat, 07 Dec 2024 17:04:44 GMT
+ARG USER_HOME_DIR=/root
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENV MAVEN_CONFIG=/root/.m2
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
+# Sat, 07 Dec 2024 17:04:44 GMT
+CMD ["mvn"]
+```
+
+-	Layers:
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6bb98469ebb204fee7bd8a5e73c7698cf537896a3dc8344040ec68331ff78093`  
+		Last Modified: Wed, 25 Dec 2024 07:47:11 GMT  
+		Size: 109.8 MB (109759105 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:47b0fbead17b87172ee0762b52b37c96df90648200a14e8a4678aa465784f807`  
+		Last Modified: Wed, 25 Dec 2024 07:47:09 GMT  
+		Size: 9.2 MB (9170429 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3656c88111960666dfca000d2e1c9bcb52eb031970d8cebc87b35801f7c9c9a1`  
+		Last Modified: Wed, 25 Dec 2024 07:47:08 GMT  
+		Size: 851.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c8b1614c934698b682661c85d73dc6a26f1707c56b8998d8b613884c93e4bd96`  
+		Last Modified: Wed, 25 Dec 2024 07:47:08 GMT  
+		Size: 155.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `maven:3.9-amazoncorretto-8-debian` - unknown; unknown
+
+```console
+$ docker pull maven@sha256:7eb8adac46c8a7144e9a735f3e086c38823f6bfab16107da32916750621a9e29
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.9 MB (2876015 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d091ecfa586ab6c562e8682464ae28bf47ad9fe1cb84ea21b84a67daec163fd7`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:b58052a25f279ea77b9da238d31d46bb1c47867336db2e37124b99f5002dee00`  
+		Last Modified: Wed, 25 Dec 2024 07:47:09 GMT  
+		Size: 2.9 MB (2856621 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:47ac551eae0332e7008085994d6fde439a038b5fcfef8ebd9ab9309096017098`  
+		Last Modified: Wed, 25 Dec 2024 07:47:08 GMT  
 		Size: 19.4 KB (19394 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9-amazoncorretto-8-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:ead0be38b701111b41bd3271d7d423c00613dbd0802014335346f7aee479aa4f
+$ docker pull maven@sha256:aec89d19a28025b6e256735ee6dff194e07a8a823e49259718512b2f6fa20179
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27328,19 +27328,19 @@ $ docker pull maven@sha256:ead0be38b701111b41bd3271d7d423c00613dbd0802014335346f
 ### `maven:3.9-amazoncorretto-8-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:9c84852b386038909344d5dd93128dc1c47457ffce793468d1b8bc13260e86df
+$ docker pull maven@sha256:b32f0dc07c01477a0a446ab34bb23b9a71668800507d3948c2b8e864a1e796f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **163.4 MB (163395368 bytes)**  
+-	Total Size: **163.4 MB (163395397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c91987438d4b46afaedc09e516d22030daf9fe32f308136f7a6c4a90f11980d`
+-	Image ID: `sha256:8ae3c5fa017a4d739fb345728c7cde669a2e90de8dcfc158764f7025c2b16723`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -27376,152 +27376,152 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:abcb9e93bb5cd8e91e36f864b88358405955b26a709ae571c4f2d590885126b0`  
-		Last Modified: Mon, 09 Dec 2024 20:33:06 GMT  
-		Size: 126.0 MB (125992312 bytes)  
+	-	`sha256:ea57055d233b707639b0b1ae98c2dffd98425e4051a5c77239ab8f66dbd3de6d`  
+		Last Modified: Tue, 24 Dec 2024 22:39:11 GMT  
+		Size: 126.0 MB (125992335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fffc27c99ac86edcb3d7347189a8982b6f3c478c41efbee6c85aa15f54cd70b8`  
-		Last Modified: Mon, 09 Dec 2024 20:33:05 GMT  
-		Size: 9.2 MB (9170441 bytes)  
+	-	`sha256:f2b1a07cb35708098a508c04492611903e5ec8decbecd5674f3c13a06d7f51b8`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1047011a6cddeac3c5846ee8a76100341ce2ff1842600edc4666424b6d09e734`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 849.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a146603672f7651357e370347f7b863e4937824d03e1f948bda8b113b3571fda`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 154.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `maven:3.9-amazoncorretto-8-debian-bookworm` - unknown; unknown
-
-```console
-$ docker pull maven@sha256:57ea3c3d6c9cf2650d0eccb8888ac5b38283234eb9cf2c18cc69b0530f4e0c3d
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2896786 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:906c10bd2a2d3ec971d303b7897922e74c46848cd908a1154523dcd68afb670b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:060dc568fb3516b4de83f2589b8fb745569cb077ad3d5c9f650e7c0f73e8f60b`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 2.9 MB (2877561 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:2f457ae9970ee2595602a3aa642ef924c326e3dad86a88c9bef37efa38286550`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 19.2 KB (19225 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `maven:3.9-amazoncorretto-8-debian-bookworm` - linux; arm64 variant v8
-
-```console
-$ docker pull maven@sha256:f48abb6b60ed75272a52b2c8ecb67d1a78b6e508df24018d9566728e2c1e7012
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **147.0 MB (146989495 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d295e6912a4dcc982733b5979a84b07ad1ea475429c39efe01e3007a85008abb`
--	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
--	Default Command: `["mvn"]`
-
-```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
-# Sat, 07 Dec 2024 17:04:44 GMT
-RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto/jre
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.title=Apache Maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENV MAVEN_HOME=/usr/share/maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-COPY /usr/share/maven /usr/share/maven # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-ARG MAVEN_VERSION=3.9.9
-# Sat, 07 Dec 2024 17:04:44 GMT
-ARG USER_HOME_DIR=/root
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENV MAVEN_CONFIG=/root/.m2
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Sat, 07 Dec 2024 17:04:44 GMT
-CMD ["mvn"]
-```
-
--	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67fd9e95ea5d8fd2261416cc1831b673d67310dd184234703fcdb85420bd00e2`  
-		Last Modified: Tue, 10 Dec 2024 02:40:25 GMT  
-		Size: 109.8 MB (109759216 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2f29b71765035887887fb4b7ecd59501a0be9d327228bc74ad3d88c0736ba7f`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
-		Size: 9.2 MB (9170432 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb4c9bb33986713f58a05136922e59223675c082b3905a54a5e4a2c0328789c5`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
+	-	`sha256:e5ec3a517dcd5b2e7290f3e0749a19baf21bb362ca0c3575e45c37c4ddb70c1d`  
+		Last Modified: Tue, 24 Dec 2024 22:39:08 GMT  
 		Size: 851.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2e40f8b74640ff195fd2e72d94b0b22df3327e546c8ddabd07aa1743751f240`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
+	-	`sha256:703c0f7be71cd3a179bb8ed6755fae97aaa70d204845c37e46cf9db83e4096d2`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-amazoncorretto-8-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:ffc19c98afae95e08f2fd8ab6e37c3d8ce1d88bcf9c162b518cff37c898e2bb4
+$ docker pull maven@sha256:ae4aab22c63b01e772ef8c72f2be1b4c415b3aa26dd070ced1c4b777b52d635c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2879801 bytes)**  
+-	Total Size: **2.9 MB (2893027 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9ccca7189aab4d933ea9a38732bc6c3d516cc2653354513fff4646d2e6328a6`
+-	Image ID: `sha256:cd603ca7c03d5304e87855ee0112eef5a744567a6beb59ecbaa358cebaec8585`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a865df99530b9f1b2cc720ae3414098c9be103a6bc6a893bdb8c391b5e1c6f45`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
-		Size: 2.9 MB (2860407 bytes)  
+	-	`sha256:c1db1c26a39bbdb6f34f92c8bb2f708d833543cafc66fa9a111bb2ff56a3d711`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 2.9 MB (2873803 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aac0d6da541ead1924fe1beda2c79c97e74e6d8c3da1554f855a491c359c86bd`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
+	-	`sha256:d3899e195f16b6908c2163f975956903f7c5b8c0025ae84b3bc76132379aa5ae`  
+		Last Modified: Tue, 24 Dec 2024 22:39:08 GMT  
+		Size: 19.2 KB (19224 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `maven:3.9-amazoncorretto-8-debian-bookworm` - linux; arm64 variant v8
+
+```console
+$ docker pull maven@sha256:3f937dc244d00e8ba232d5c7ecfd972cef6b1a3d05f5ea67281bedca42e7a03f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **147.0 MB (146989295 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2556ce27029abdd83aadc8c7cdd8deb87ca39af1a10dea0ba6ae494984ac2b80`
+-	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
+-	Default Command: `["mvn"]`
+
+```dockerfile
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto/jre
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.title=Apache Maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENV MAVEN_HOME=/usr/share/maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+COPY /usr/share/maven /usr/share/maven # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+ARG MAVEN_VERSION=3.9.9
+# Sat, 07 Dec 2024 17:04:44 GMT
+ARG USER_HOME_DIR=/root
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENV MAVEN_CONFIG=/root/.m2
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
+# Sat, 07 Dec 2024 17:04:44 GMT
+CMD ["mvn"]
+```
+
+-	Layers:
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6bb98469ebb204fee7bd8a5e73c7698cf537896a3dc8344040ec68331ff78093`  
+		Last Modified: Wed, 25 Dec 2024 07:47:11 GMT  
+		Size: 109.8 MB (109759105 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:47b0fbead17b87172ee0762b52b37c96df90648200a14e8a4678aa465784f807`  
+		Last Modified: Wed, 25 Dec 2024 07:47:09 GMT  
+		Size: 9.2 MB (9170429 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3656c88111960666dfca000d2e1c9bcb52eb031970d8cebc87b35801f7c9c9a1`  
+		Last Modified: Wed, 25 Dec 2024 07:47:08 GMT  
+		Size: 851.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c8b1614c934698b682661c85d73dc6a26f1707c56b8998d8b613884c93e4bd96`  
+		Last Modified: Wed, 25 Dec 2024 07:47:08 GMT  
+		Size: 155.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `maven:3.9-amazoncorretto-8-debian-bookworm` - unknown; unknown
+
+```console
+$ docker pull maven@sha256:7eb8adac46c8a7144e9a735f3e086c38823f6bfab16107da32916750621a9e29
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.9 MB (2876015 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d091ecfa586ab6c562e8682464ae28bf47ad9fe1cb84ea21b84a67daec163fd7`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:b58052a25f279ea77b9da238d31d46bb1c47867336db2e37124b99f5002dee00`  
+		Last Modified: Wed, 25 Dec 2024 07:47:09 GMT  
+		Size: 2.9 MB (2856621 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:47ac551eae0332e7008085994d6fde439a038b5fcfef8ebd9ab9309096017098`  
+		Last Modified: Wed, 25 Dec 2024 07:47:08 GMT  
 		Size: 19.4 KB (19394 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -42944,7 +42944,7 @@ $ docker pull maven@sha256:713d556c64a4563f474ec768ddde76dda0bff71e18e07e3ae0e12
 ## `maven:3.9.9-amazoncorretto-11-debian`
 
 ```console
-$ docker pull maven@sha256:07246a0af54784fdd043b11902fe26c165ce87ebaf51da74561aad7ee8745e53
+$ docker pull maven@sha256:21a69a67581cfdba0359fa364650bf8414085aa31c16a0f2766f21bf494725ea
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -42957,19 +42957,19 @@ $ docker pull maven@sha256:07246a0af54784fdd043b11902fe26c165ce87ebaf51da74561aa
 ### `maven:3.9.9-amazoncorretto-11-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:f56a891a8c2d60c05fc27e94e7fdde7e4f94e148f85a8ed5e4f56927958cd07f
+$ docker pull maven@sha256:d6e6c50d90532a65da7912bb7e40a894dfd8c5f7f589508da1c79528a8c40baf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.0 MB (241037953 bytes)**  
+-	Total Size: **241.0 MB (241039117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f11584bfd8becdd289924fbfcbaccdcb60d642a9a75e5c9b46ce979b27df2578`
+-	Image ID: `sha256:f02a44bf8c6e0812baffe12dbbc402ebb11ea343987fc29bcc1b043acd406e6d`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -43005,71 +43005,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922faa54581dd155260ada067b1d02e79e4b04e987a949339e9417f24705a069`  
-		Last Modified: Mon, 09 Dec 2024 20:42:31 GMT  
-		Size: 203.6 MB (203634896 bytes)  
+	-	`sha256:36450b4b7edc9daf401324b19b381c3d6b831c96db39e1b5168699025a1d387f`  
+		Last Modified: Tue, 24 Dec 2024 22:39:02 GMT  
+		Size: 203.6 MB (203636061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:191954cb45685ee074d375d99dae0d541b8a10fc3cdbd8b7c45a9058c7a67925`  
-		Last Modified: Mon, 09 Dec 2024 20:42:27 GMT  
+	-	`sha256:85a53a8e763a560a15e208073d78cd3bf290b589b77065df2db5988414f9fa1a`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
 		Size: 9.2 MB (9170441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ec24c128927e43b7c88f36f7c1b5808b962cef2b38285401447204f2e4546ec`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
+	-	`sha256:ad0483291349ac15c314fc9e17ad4e80015fe2d669c3531e4e821d5812a3ab59`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
 		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3825331641f3ca43326d913ccf30e497cfe45efb837b747f3549923e4267f6a0`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
-		Size: 155.0 B  
+	-	`sha256:79dce5d06bbdee8522c0f53f27e58849e8ef88a6fed3225d64946db4eb4b7042`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-amazoncorretto-11-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:18455b15c0765c517544f2fd62834cfdc58d4bdbb5c72b3b7b0481556dc7b939
+$ docker pull maven@sha256:8cf2de72051f655b6ca09740a5701d4cce0cfd15387c7369e425eb0725dd1a81
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3024411 bytes)**  
+-	Total Size: **3.0 MB (3020167 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ffec63b25cefdcc28f45362e01d1c4f6547e249a457d464662326971b9c7be6`
+-	Image ID: `sha256:9de589dc979b78faf2edd3d3ae802aec33610d43e64b742b18669a2905018a98`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:14d88952f2d588be83728051673534baf0d037d56562968afff11b8eda43e0fd`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
-		Size: 3.0 MB (3005198 bytes)  
+	-	`sha256:2f1743904307f8ee110083eaee99c1fd3e693dedf5364d60797255e783cc8dbb`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 3.0 MB (3000954 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9eaf2292438e467757e3620693b15f9ebed9b38b2fd5cbc211760a618bb9d988`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
+	-	`sha256:60d88a3745436374172bdf2db58061f175167a2dace61561c901f06c4c8c3ccc`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
 		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.9.9-amazoncorretto-11-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:ffcef4372d4ddae929662bc5bd4638ed1c397da4bbff71ef11db824838396b15
+$ docker pull maven@sha256:0312306a4f2e34d11c329f92ed36db33d0f137ba70c234cd6a166602fa9fcc26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.6 MB (237638199 bytes)**  
+-	Total Size: **237.6 MB (237637787 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea342f18d06aec3ec3118ba51acf1748cc5a0973e0748479d02bddb778ee816a`
+-	Image ID: `sha256:0eab9e858362e58ec93ff6937b40f742b2e6ef983ad27bc1410c30e7d091b804`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -43105,59 +43105,59 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37c630dfdea6c7abe6c8974fd22a30a3331dad0eed32f27fdf0644d1aabeb876`  
-		Last Modified: Tue, 10 Dec 2024 02:41:36 GMT  
-		Size: 200.4 MB (200407923 bytes)  
+	-	`sha256:b2f00a0a44879e2a363f446735ab1818d9b3a47a1cc53eb291022be044f29e0a`  
+		Last Modified: Wed, 25 Dec 2024 07:43:38 GMT  
+		Size: 200.4 MB (200407586 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c10727b442a2a987f01906ef6927d2187a284dd28baf90a51d4b4da30215451a`  
-		Last Modified: Tue, 10 Dec 2024 02:41:32 GMT  
-		Size: 9.2 MB (9170429 bytes)  
+	-	`sha256:7225f630f0a449824f6de2bf09a15bd95bde218eef23bee1710611ff18262175`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c7c44bf18d9125a91aca3c2f2596bc4ff2a76992628c117d2d9ad5f7437c6b48`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 850.0 B  
+	-	`sha256:737d1875dc105612418c9f9223640307d49548301d409078c05f9614dee081a3`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8f71d750bd54eede80fad326a5e6cdfd7a089590805f82a2b52d5fd9d6f8f8b`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 155.0 B  
+	-	`sha256:c178ca3cdf904b54af7e73cd4b74ecefa73ab241aa7a4a7c21500f5186beadaa`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-amazoncorretto-11-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:f79c629a728fccb5b376cc7db47a5b505b9c218f285369a294f7fa0f0f9b7826
+$ docker pull maven@sha256:34c9c811aa6f724fb3508d03a0b1ad1286be25bec0c56b9bd5d722108bca4acc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3024875 bytes)**  
+-	Total Size: **3.0 MB (3020633 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:91367ba7d347f401beadee302df885ff863a8fe815c1394f18f206f38cbdf50e`
+-	Image ID: `sha256:a41c42d5693be45f5ddb686c9abf8a4037704ced382d780a130e659822492e94`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bcf34b7611ef6dfeeb983f79ae5fdd41ac9d36e56d285c0c0e8df8e65dc08ec9`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 3.0 MB (3005494 bytes)  
+	-	`sha256:4fef2af62286bb724ac4883ae33d2bfb3784156966e61864dcb2988ac28808a3`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 3.0 MB (3001251 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:040866b3d484c0b64e17d3f978b7c1f2a3286b2eb23b5b2f283075239f8a0d95`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 19.4 KB (19381 bytes)  
+	-	`sha256:751a1eb254fd6e75586b76462737f33546a0b5edc1350d963228796cd6d59c6f`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9.9-amazoncorretto-11-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:07246a0af54784fdd043b11902fe26c165ce87ebaf51da74561aad7ee8745e53
+$ docker pull maven@sha256:21a69a67581cfdba0359fa364650bf8414085aa31c16a0f2766f21bf494725ea
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -43170,19 +43170,19 @@ $ docker pull maven@sha256:07246a0af54784fdd043b11902fe26c165ce87ebaf51da74561aa
 ### `maven:3.9.9-amazoncorretto-11-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:f56a891a8c2d60c05fc27e94e7fdde7e4f94e148f85a8ed5e4f56927958cd07f
+$ docker pull maven@sha256:d6e6c50d90532a65da7912bb7e40a894dfd8c5f7f589508da1c79528a8c40baf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **241.0 MB (241037953 bytes)**  
+-	Total Size: **241.0 MB (241039117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f11584bfd8becdd289924fbfcbaccdcb60d642a9a75e5c9b46ce979b27df2578`
+-	Image ID: `sha256:f02a44bf8c6e0812baffe12dbbc402ebb11ea343987fc29bcc1b043acd406e6d`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -43218,71 +43218,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:922faa54581dd155260ada067b1d02e79e4b04e987a949339e9417f24705a069`  
-		Last Modified: Mon, 09 Dec 2024 20:42:31 GMT  
-		Size: 203.6 MB (203634896 bytes)  
+	-	`sha256:36450b4b7edc9daf401324b19b381c3d6b831c96db39e1b5168699025a1d387f`  
+		Last Modified: Tue, 24 Dec 2024 22:39:02 GMT  
+		Size: 203.6 MB (203636061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:191954cb45685ee074d375d99dae0d541b8a10fc3cdbd8b7c45a9058c7a67925`  
-		Last Modified: Mon, 09 Dec 2024 20:42:27 GMT  
+	-	`sha256:85a53a8e763a560a15e208073d78cd3bf290b589b77065df2db5988414f9fa1a`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
 		Size: 9.2 MB (9170441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ec24c128927e43b7c88f36f7c1b5808b962cef2b38285401447204f2e4546ec`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
+	-	`sha256:ad0483291349ac15c314fc9e17ad4e80015fe2d669c3531e4e821d5812a3ab59`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
 		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3825331641f3ca43326d913ccf30e497cfe45efb837b747f3549923e4267f6a0`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
-		Size: 155.0 B  
+	-	`sha256:79dce5d06bbdee8522c0f53f27e58849e8ef88a6fed3225d64946db4eb4b7042`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-amazoncorretto-11-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:18455b15c0765c517544f2fd62834cfdc58d4bdbb5c72b3b7b0481556dc7b939
+$ docker pull maven@sha256:8cf2de72051f655b6ca09740a5701d4cce0cfd15387c7369e425eb0725dd1a81
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3024411 bytes)**  
+-	Total Size: **3.0 MB (3020167 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ffec63b25cefdcc28f45362e01d1c4f6547e249a457d464662326971b9c7be6`
+-	Image ID: `sha256:9de589dc979b78faf2edd3d3ae802aec33610d43e64b742b18669a2905018a98`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:14d88952f2d588be83728051673534baf0d037d56562968afff11b8eda43e0fd`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
-		Size: 3.0 MB (3005198 bytes)  
+	-	`sha256:2f1743904307f8ee110083eaee99c1fd3e693dedf5364d60797255e783cc8dbb`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 3.0 MB (3000954 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9eaf2292438e467757e3620693b15f9ebed9b38b2fd5cbc211760a618bb9d988`  
-		Last Modified: Mon, 09 Dec 2024 20:42:26 GMT  
+	-	`sha256:60d88a3745436374172bdf2db58061f175167a2dace61561c901f06c4c8c3ccc`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
 		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.9.9-amazoncorretto-11-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:ffcef4372d4ddae929662bc5bd4638ed1c397da4bbff71ef11db824838396b15
+$ docker pull maven@sha256:0312306a4f2e34d11c329f92ed36db33d0f137ba70c234cd6a166602fa9fcc26
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.6 MB (237638199 bytes)**  
+-	Total Size: **237.6 MB (237637787 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea342f18d06aec3ec3118ba51acf1748cc5a0973e0748479d02bddb778ee816a`
+-	Image ID: `sha256:0eab9e858362e58ec93ff6937b40f742b2e6ef983ad27bc1410c30e7d091b804`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-11-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -43318,53 +43318,53 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37c630dfdea6c7abe6c8974fd22a30a3331dad0eed32f27fdf0644d1aabeb876`  
-		Last Modified: Tue, 10 Dec 2024 02:41:36 GMT  
-		Size: 200.4 MB (200407923 bytes)  
+	-	`sha256:b2f00a0a44879e2a363f446735ab1818d9b3a47a1cc53eb291022be044f29e0a`  
+		Last Modified: Wed, 25 Dec 2024 07:43:38 GMT  
+		Size: 200.4 MB (200407586 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c10727b442a2a987f01906ef6927d2187a284dd28baf90a51d4b4da30215451a`  
-		Last Modified: Tue, 10 Dec 2024 02:41:32 GMT  
-		Size: 9.2 MB (9170429 bytes)  
+	-	`sha256:7225f630f0a449824f6de2bf09a15bd95bde218eef23bee1710611ff18262175`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c7c44bf18d9125a91aca3c2f2596bc4ff2a76992628c117d2d9ad5f7437c6b48`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 850.0 B  
+	-	`sha256:737d1875dc105612418c9f9223640307d49548301d409078c05f9614dee081a3`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8f71d750bd54eede80fad326a5e6cdfd7a089590805f82a2b52d5fd9d6f8f8b`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 155.0 B  
+	-	`sha256:c178ca3cdf904b54af7e73cd4b74ecefa73ab241aa7a4a7c21500f5186beadaa`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-amazoncorretto-11-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:f79c629a728fccb5b376cc7db47a5b505b9c218f285369a294f7fa0f0f9b7826
+$ docker pull maven@sha256:34c9c811aa6f724fb3508d03a0b1ad1286be25bec0c56b9bd5d722108bca4acc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3024875 bytes)**  
+-	Total Size: **3.0 MB (3020633 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:91367ba7d347f401beadee302df885ff863a8fe815c1394f18f206f38cbdf50e`
+-	Image ID: `sha256:a41c42d5693be45f5ddb686c9abf8a4037704ced382d780a130e659822492e94`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bcf34b7611ef6dfeeb983f79ae5fdd41ac9d36e56d285c0c0e8df8e65dc08ec9`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 3.0 MB (3005494 bytes)  
+	-	`sha256:4fef2af62286bb724ac4883ae33d2bfb3784156966e61864dcb2988ac28808a3`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 3.0 MB (3001251 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:040866b3d484c0b64e17d3f978b7c1f2a3286b2eb23b5b2f283075239f8a0d95`  
-		Last Modified: Tue, 10 Dec 2024 02:41:31 GMT  
-		Size: 19.4 KB (19381 bytes)  
+	-	`sha256:751a1eb254fd6e75586b76462737f33546a0b5edc1350d963228796cd6d59c6f`  
+		Last Modified: Wed, 25 Dec 2024 07:43:34 GMT  
+		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9.9-amazoncorretto-17`
@@ -44119,7 +44119,7 @@ $ docker pull maven@sha256:0020cf837d876134275d4f4eb52f7c5ad2b77981834306aaecfc4
 ## `maven:3.9.9-amazoncorretto-17-debian`
 
 ```console
-$ docker pull maven@sha256:6eb37f462d703f390c7649e285a2cba3244d26b3c4780e9a5743c4296d81f737
+$ docker pull maven@sha256:c26417a9daa6c49e7ef634fa0c2a581d1d8a43a28482011a9c1fe03022eb3b9e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -44132,19 +44132,19 @@ $ docker pull maven@sha256:6eb37f462d703f390c7649e285a2cba3244d26b3c4780e9a5743c
 ### `maven:3.9.9-amazoncorretto-17-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:e0499750502788e789c6eed4d6cc47f089efb5e98f3920db236b94f1fd44a36d
+$ docker pull maven@sha256:cd19bfa572126327677e81ef0265032d840954a2bd92f1890098ae7b68bc88ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.9 MB (238923242 bytes)**  
+-	Total Size: **238.9 MB (238923256 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b39ffa4f192eb0d909049862225f406fe92584ba24dcdd25a2ca2394528ee18`
+-	Image ID: `sha256:1ec73da9166e8187c42523ca8f1809fcc53d494af99834f6b663ea6e57c8fc89`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -44180,71 +44180,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6bd605e55415a21a79cb44063579ae319db81753d426c51b3596a88448d4324d`  
-		Last Modified: Mon, 09 Dec 2024 20:31:54 GMT  
-		Size: 201.5 MB (201520184 bytes)  
+	-	`sha256:5b8a8ed6ef70eff5e37193c556413ab3ed681bfb0ad703fa68a9bc979e06d7db`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 201.5 MB (201520197 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:040f087bba961db973efbc8cf025c845df8b04f74d07049f86889e28a956525a`  
-		Last Modified: Mon, 09 Dec 2024 20:31:49 GMT  
-		Size: 9.2 MB (9170441 bytes)  
+	-	`sha256:c645781e092c07d6a0843af4191176761dd7bb07527b07f8324f006eb4adfdf3`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0354a9a64bdf84ec236066e08683e4a72d42ec2b56cfd08f979fe2c141d888a`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 850.0 B  
+	-	`sha256:6a0f1b0cf3c87da01f6ad1ba29493d7b1bbad065555bd0b81e86b32790f2527b`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1517b8d88921f1de5fcf7795d350f67c5c30b13e249017228d0fc7887152ce5`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 155.0 B  
+	-	`sha256:30e10ba0325eb3bb549f9245f1dee1c82675b5f5cc765e331819083f01f5dba2`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-amazoncorretto-17-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:0fd87c78d77ed24fdd9af48dcfec3069c3cde5fe3ef3096b5558eafac42352ab
+$ docker pull maven@sha256:9438ebbe807c19f50f98635f3119cd1b5d8886067a26ebc0a42c4f6267bc5b3e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018610 bytes)**  
+-	Total Size: **3.0 MB (3014376 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23318f260ec3d4c440b36d208f434c7b520b51bb895eb160e242a729b126726e`
+-	Image ID: `sha256:dc75643faa536f1a6d6360858cc1fb2274da0e1286accfc78322b72697601aad`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:623ef16bf71fdbe752d9a66a0fa30a662f37897f430703e6f05a8544d0946818`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 3.0 MB (2999398 bytes)  
+	-	`sha256:cfefe596825d83fe5b603bccc6bea83f2bcdc6f618f7644bce86bc23daca9e20`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 3.0 MB (2995163 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4771f142f590f15bd2cd40c9d3c5e125600ec0c3d89df79567f3a6cce5d68c12`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 19.2 KB (19212 bytes)  
+	-	`sha256:c412b8581df1fec4266b58bf93dc5d199d8908037466a707934fe2b2735fcbef`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.9.9-amazoncorretto-17-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:3edb30b349640c8be0a85e9cfbfbc4b4bcfc58d3aee87991ac472749a872514f
+$ docker pull maven@sha256:d427e1310b94088b3e956d06c6c9e0889ca084a81e3f0bf90b0aadf1cdfc298b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.1 MB (237053194 bytes)**  
+-	Total Size: **237.1 MB (237052943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a35aa78a5e3090a7efa97d47013856d131c51063b3502b19b1fb3f2dc1c3b63`
+-	Image ID: `sha256:595309375c80517e901a312505c2c67ea6d4ce141f6b175e14dc3138ed9af936`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -44280,59 +44280,59 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e1e03ce8ae306c1b9809b6a1263c141bcf0fd494718ffe0d34eb727db82d606`  
-		Last Modified: Tue, 10 Dec 2024 02:22:11 GMT  
-		Size: 199.8 MB (199822910 bytes)  
+	-	`sha256:1f9c94a51aa52de7670b7bace65113fbe0489143772414c738c957a532cb920e`  
+		Last Modified: Wed, 25 Dec 2024 07:44:29 GMT  
+		Size: 199.8 MB (199822750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:694f6618fd18469987ee9c97941bb88de0549291d9ddadc2a143ad04eb3474f8`  
-		Last Modified: Tue, 10 Dec 2024 02:22:07 GMT  
-		Size: 9.2 MB (9170437 bytes)  
+	-	`sha256:d0e730b04999ace32443fb944f5739f182f96f780ffafefc30e68c1475aa0b13`  
+		Last Modified: Wed, 25 Dec 2024 07:44:25 GMT  
+		Size: 9.2 MB (9170436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2bb0c05753ad097cdbdce27b2b70c06408dfa58ad31e556679b92f2e0580a789`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
-		Size: 850.0 B  
+	-	`sha256:e761b858135dfe97252f118c5e7cbb83f45d489dfbf776be219acf3f3fcc5d30`  
+		Last Modified: Wed, 25 Dec 2024 07:44:24 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33dd498a83b94bd088299af763f6e4923c7356da8fdb1d5dc14f00a08db58cba`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
-		Size: 155.0 B  
+	-	`sha256:0da921b0cf72152656366d4a09211bb881a788437bdbbdcbab27201b3f8dc34b`  
+		Last Modified: Wed, 25 Dec 2024 07:44:25 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-amazoncorretto-17-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:3afdd7557b0dbc3632a73081045c3d9f1a4a5b4566390c526cec5d7b6b06068c
+$ docker pull maven@sha256:b27cdd28d122770a9256003ddf682032d8ab58fe5e9708fb387528b6e521b77c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018438 bytes)**  
+-	Total Size: **3.0 MB (3014205 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff25405c11c353104aae44a2acfd63119dff05f164376035495469d21c8bc354`
+-	Image ID: `sha256:af930de310cc6896458764d6062ef9dac109e9c1c0be591b9fbcd5904f8c18c0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5564111de98f48ee97275b2eb8c81cd78e2e288e18cff1808258b16b167865bb`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
-		Size: 3.0 MB (2999056 bytes)  
+	-	`sha256:1f3615450a3eae38adec7ee48ef2e27b7a54fe95c87df88a08b8b0d9e7a6bcb9`  
+		Last Modified: Wed, 25 Dec 2024 07:44:25 GMT  
+		Size: 3.0 MB (2994823 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bfb3013db23b05219464c39a33aa1849d8bd987295418308caf2a35c0e4a41c9`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
+	-	`sha256:e2c5d989c0efabf58340cb5364267ae7b1db896301ac5f6594c78f647eaeb0fb`  
+		Last Modified: Wed, 25 Dec 2024 07:44:24 GMT  
 		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9.9-amazoncorretto-17-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:6eb37f462d703f390c7649e285a2cba3244d26b3c4780e9a5743c4296d81f737
+$ docker pull maven@sha256:c26417a9daa6c49e7ef634fa0c2a581d1d8a43a28482011a9c1fe03022eb3b9e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -44345,19 +44345,19 @@ $ docker pull maven@sha256:6eb37f462d703f390c7649e285a2cba3244d26b3c4780e9a5743c
 ### `maven:3.9.9-amazoncorretto-17-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:e0499750502788e789c6eed4d6cc47f089efb5e98f3920db236b94f1fd44a36d
+$ docker pull maven@sha256:cd19bfa572126327677e81ef0265032d840954a2bd92f1890098ae7b68bc88ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **238.9 MB (238923242 bytes)**  
+-	Total Size: **238.9 MB (238923256 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b39ffa4f192eb0d909049862225f406fe92584ba24dcdd25a2ca2394528ee18`
+-	Image ID: `sha256:1ec73da9166e8187c42523ca8f1809fcc53d494af99834f6b663ea6e57c8fc89`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -44393,71 +44393,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6bd605e55415a21a79cb44063579ae319db81753d426c51b3596a88448d4324d`  
-		Last Modified: Mon, 09 Dec 2024 20:31:54 GMT  
-		Size: 201.5 MB (201520184 bytes)  
+	-	`sha256:5b8a8ed6ef70eff5e37193c556413ab3ed681bfb0ad703fa68a9bc979e06d7db`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 201.5 MB (201520197 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:040f087bba961db973efbc8cf025c845df8b04f74d07049f86889e28a956525a`  
-		Last Modified: Mon, 09 Dec 2024 20:31:49 GMT  
-		Size: 9.2 MB (9170441 bytes)  
+	-	`sha256:c645781e092c07d6a0843af4191176761dd7bb07527b07f8324f006eb4adfdf3`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0354a9a64bdf84ec236066e08683e4a72d42ec2b56cfd08f979fe2c141d888a`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 850.0 B  
+	-	`sha256:6a0f1b0cf3c87da01f6ad1ba29493d7b1bbad065555bd0b81e86b32790f2527b`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f1517b8d88921f1de5fcf7795d350f67c5c30b13e249017228d0fc7887152ce5`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 155.0 B  
+	-	`sha256:30e10ba0325eb3bb549f9245f1dee1c82675b5f5cc765e331819083f01f5dba2`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-amazoncorretto-17-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:0fd87c78d77ed24fdd9af48dcfec3069c3cde5fe3ef3096b5558eafac42352ab
+$ docker pull maven@sha256:9438ebbe807c19f50f98635f3119cd1b5d8886067a26ebc0a42c4f6267bc5b3e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018610 bytes)**  
+-	Total Size: **3.0 MB (3014376 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:23318f260ec3d4c440b36d208f434c7b520b51bb895eb160e242a729b126726e`
+-	Image ID: `sha256:dc75643faa536f1a6d6360858cc1fb2274da0e1286accfc78322b72697601aad`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:623ef16bf71fdbe752d9a66a0fa30a662f37897f430703e6f05a8544d0946818`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 3.0 MB (2999398 bytes)  
+	-	`sha256:cfefe596825d83fe5b603bccc6bea83f2bcdc6f618f7644bce86bc23daca9e20`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 3.0 MB (2995163 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4771f142f590f15bd2cd40c9d3c5e125600ec0c3d89df79567f3a6cce5d68c12`  
-		Last Modified: Mon, 09 Dec 2024 20:31:48 GMT  
-		Size: 19.2 KB (19212 bytes)  
+	-	`sha256:c412b8581df1fec4266b58bf93dc5d199d8908037466a707934fe2b2735fcbef`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.9.9-amazoncorretto-17-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:3edb30b349640c8be0a85e9cfbfbc4b4bcfc58d3aee87991ac472749a872514f
+$ docker pull maven@sha256:d427e1310b94088b3e956d06c6c9e0889ca084a81e3f0bf90b0aadf1cdfc298b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **237.1 MB (237053194 bytes)**  
+-	Total Size: **237.1 MB (237052943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a35aa78a5e3090a7efa97d47013856d131c51063b3502b19b1fb3f2dc1c3b63`
+-	Image ID: `sha256:595309375c80517e901a312505c2c67ea6d4ce141f6b175e14dc3138ed9af936`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-17-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -44493,52 +44493,52 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e1e03ce8ae306c1b9809b6a1263c141bcf0fd494718ffe0d34eb727db82d606`  
-		Last Modified: Tue, 10 Dec 2024 02:22:11 GMT  
-		Size: 199.8 MB (199822910 bytes)  
+	-	`sha256:1f9c94a51aa52de7670b7bace65113fbe0489143772414c738c957a532cb920e`  
+		Last Modified: Wed, 25 Dec 2024 07:44:29 GMT  
+		Size: 199.8 MB (199822750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:694f6618fd18469987ee9c97941bb88de0549291d9ddadc2a143ad04eb3474f8`  
-		Last Modified: Tue, 10 Dec 2024 02:22:07 GMT  
-		Size: 9.2 MB (9170437 bytes)  
+	-	`sha256:d0e730b04999ace32443fb944f5739f182f96f780ffafefc30e68c1475aa0b13`  
+		Last Modified: Wed, 25 Dec 2024 07:44:25 GMT  
+		Size: 9.2 MB (9170436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2bb0c05753ad097cdbdce27b2b70c06408dfa58ad31e556679b92f2e0580a789`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
-		Size: 850.0 B  
+	-	`sha256:e761b858135dfe97252f118c5e7cbb83f45d489dfbf776be219acf3f3fcc5d30`  
+		Last Modified: Wed, 25 Dec 2024 07:44:24 GMT  
+		Size: 848.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33dd498a83b94bd088299af763f6e4923c7356da8fdb1d5dc14f00a08db58cba`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
-		Size: 155.0 B  
+	-	`sha256:0da921b0cf72152656366d4a09211bb881a788437bdbbdcbab27201b3f8dc34b`  
+		Last Modified: Wed, 25 Dec 2024 07:44:25 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-amazoncorretto-17-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:3afdd7557b0dbc3632a73081045c3d9f1a4a5b4566390c526cec5d7b6b06068c
+$ docker pull maven@sha256:b27cdd28d122770a9256003ddf682032d8ab58fe5e9708fb387528b6e521b77c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018438 bytes)**  
+-	Total Size: **3.0 MB (3014205 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff25405c11c353104aae44a2acfd63119dff05f164376035495469d21c8bc354`
+-	Image ID: `sha256:af930de310cc6896458764d6062ef9dac109e9c1c0be591b9fbcd5904f8c18c0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5564111de98f48ee97275b2eb8c81cd78e2e288e18cff1808258b16b167865bb`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
-		Size: 3.0 MB (2999056 bytes)  
+	-	`sha256:1f3615450a3eae38adec7ee48ef2e27b7a54fe95c87df88a08b8b0d9e7a6bcb9`  
+		Last Modified: Wed, 25 Dec 2024 07:44:25 GMT  
+		Size: 3.0 MB (2994823 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bfb3013db23b05219464c39a33aa1849d8bd987295418308caf2a35c0e4a41c9`  
-		Last Modified: Tue, 10 Dec 2024 02:22:06 GMT  
+	-	`sha256:e2c5d989c0efabf58340cb5364267ae7b1db896301ac5f6594c78f647eaeb0fb`  
+		Last Modified: Wed, 25 Dec 2024 07:44:24 GMT  
 		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -45294,7 +45294,7 @@ $ docker pull maven@sha256:ca8726b7a93ddfb7b3af42bca32e2c9a2e68228113162dd8c4e16
 ## `maven:3.9.9-amazoncorretto-21-debian`
 
 ```console
-$ docker pull maven@sha256:fa247839d77686a170df0c220924f21108617ba5206aa04d6a5885f9b0adc064
+$ docker pull maven@sha256:0297db3be9a5b563b0d886461224a0325ca3740cc4477fc49c5c647d6712499b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -45307,19 +45307,19 @@ $ docker pull maven@sha256:fa247839d77686a170df0c220924f21108617ba5206aa04d6a588
 ### `maven:3.9.9-amazoncorretto-21-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:cb4d16d9dc6ce8cc1871911b82bb066fe0687d93fde2fafd09db3b18bbc67417
+$ docker pull maven@sha256:f4f670cf10bd7648498bc27585d18f9db6ff347d6e813f8eaadb54ae60a304b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.1 MB (254139405 bytes)**  
+-	Total Size: **254.1 MB (254139059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2d5f6499cd7ee9e34cad52e6805ad12ade49efaf967bd2b1bbb6b1f1173edde`
+-	Image ID: `sha256:2dcfe13e93c6ae1138a3c9d6f849b76be430157a8c4f982bc5c64975ad6cc002`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -45355,71 +45355,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:525b5720295b79ebac3495aaaf60011b11c43238507d7ce087160256bc6fd97b`  
-		Last Modified: Mon, 09 Dec 2024 20:31:43 GMT  
-		Size: 216.7 MB (216736348 bytes)  
+	-	`sha256:aabfa15455560ed1bd2328a7821a42a84f3650acc865f2187c0b06f2ae176eef`  
+		Last Modified: Tue, 24 Dec 2024 22:39:15 GMT  
+		Size: 216.7 MB (216736000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f376598fd0822e8fefd016b6267bf83a0580985ef1e3b84440af37d48c489759`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 9.2 MB (9170441 bytes)  
+	-	`sha256:c645781e092c07d6a0843af4191176761dd7bb07527b07f8324f006eb4adfdf3`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a62da7db1ad086623eb81c8d1011258a160bcfcb884da2c7716d4f9efbea8418`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 850.0 B  
+	-	`sha256:6a0f1b0cf3c87da01f6ad1ba29493d7b1bbad065555bd0b81e86b32790f2527b`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:386c25cf85a2c5a83d35ed983fa02b99f2d337dfb4ff7cc970877de045353c56`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 154.0 B  
+	-	`sha256:30e10ba0325eb3bb549f9245f1dee1c82675b5f5cc765e331819083f01f5dba2`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-amazoncorretto-21-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:d9e8e30534f70656e4562544b4d6d84e856880629608d77403486391f8d17559
+$ docker pull maven@sha256:4fa0f35d87db27f06082dddb605067bd2767fb33b8e2925924fe515401a64495
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018510 bytes)**  
+-	Total Size: **3.0 MB (3014275 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6c21ca3c550304d2dc7abfa58b2ebbe7e444c9a862e2ac29471d6f151ab0b28`
+-	Image ID: `sha256:a3f6ea33bc3fef581dc17c3c6d627a5f77ba750ef4a2f9204e54b0257b04bd6b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b0fac53a856d432f4b51bc1e8db81568555bb10a5320851f3e5399b5c4799075`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 3.0 MB (2999297 bytes)  
+	-	`sha256:4ed2c30f2a67a60ad6eaefe90b8f739775233e25aaa6d42e533aa23adf5c13c5`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 3.0 MB (2995062 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b147d26747209b63652a4020fac924ee12582c000c43802972eefd67b5fcbf7e`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
+	-	`sha256:d42766da24aa0e7e818d0ded888932fb08284a70ecec8ca7cfe57d40dc4d91d8`  
+		Last Modified: Tue, 24 Dec 2024 22:39:08 GMT  
 		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.9.9-amazoncorretto-21-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:00b0a43c44cd3d9c32bc5c22160484f878bf85aeb0ff21422ceaccd1806ee998
+$ docker pull maven@sha256:0b3ad8a450bc77519b3baefbfcd797c747c61c02a8780ad46caeec40bde5afc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.7 MB (251701171 bytes)**  
+-	Total Size: **251.7 MB (251700966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:735cd64f57d78b500efd2f6cca65d171668c1fbac7982481b812a0071192f12e`
+-	Image ID: `sha256:a02a0b90f6b7b4a29fd7da6fd79e0b91032f0d2768fd5d7741f1a3e211795a24`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -45455,59 +45455,59 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd997dd7f8c27c4e3de5778b0e4635734590e28a1e3724b77623e3c9bbeea21b`  
-		Last Modified: Tue, 10 Dec 2024 02:26:11 GMT  
-		Size: 214.5 MB (214470886 bytes)  
+	-	`sha256:f1fa1eff39f4841b833a6e95f85f6fa8349afb48e1d5e6d119cec7732f2c2775`  
+		Last Modified: Wed, 25 Dec 2024 07:45:21 GMT  
+		Size: 214.5 MB (214470778 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92db06626165e33a8236aed2f2b7aa487aa56eece4616f3d651c16bb9cdd9677`  
-		Last Modified: Tue, 10 Dec 2024 02:26:07 GMT  
-		Size: 9.2 MB (9170437 bytes)  
+	-	`sha256:18dc6a06e61cd6a5d8f8effa0459ebf14d24d13f24632cd871df97a23980f84c`  
+		Last Modified: Wed, 25 Dec 2024 07:45:17 GMT  
+		Size: 9.2 MB (9170429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98f88c97a19048974214412b9cde1a4e68c3e8dbc0aa0031ed91b8c5c57fb937`  
-		Last Modified: Tue, 10 Dec 2024 02:26:06 GMT  
-		Size: 851.0 B  
+	-	`sha256:76bd07bc67f987583b20a96c34195b554fdb8688e24a2e1070014804c9abb5ec`  
+		Last Modified: Wed, 25 Dec 2024 07:45:16 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39190d755d657a1759560a1ed3be1dac21120c50bea46faae254a31055600a11`  
-		Last Modified: Tue, 10 Dec 2024 02:26:06 GMT  
-		Size: 155.0 B  
+	-	`sha256:c7fbcc76d85d17608a6a42be44fd50028febafc1addb56d9f9f419535b0b27b0`  
+		Last Modified: Wed, 25 Dec 2024 07:45:17 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-amazoncorretto-21-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:7ef0e178de2aa0bc4a8be77250e426919fb3e5fca6aad2e98dc6b1987723ccb1
+$ docker pull maven@sha256:5f4e77839b04924d02650cd13cae4522176c24c92b8c530378b1dbaaed964a4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018337 bytes)**  
+-	Total Size: **3.0 MB (3014104 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:154d3eb47d356f02eeb9cb2464358f1fc5ec1b1be4c918d5894ea63ccd757b2e`
+-	Image ID: `sha256:23c5e5fa1d9665a394710f85709bcf82629d066d900a755db3056ad4697fd6d4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d299b608851a93f5e0c8101ea83c623a1a74a19e64d58edb8381e8d4ee44da18`  
-		Last Modified: Tue, 10 Dec 2024 02:26:07 GMT  
-		Size: 3.0 MB (2998955 bytes)  
+	-	`sha256:8e993931599ca60cb4a3c06216158cf355ddf6c801e8f8fcb01c9047c9ae7eef`  
+		Last Modified: Wed, 25 Dec 2024 07:45:17 GMT  
+		Size: 3.0 MB (2994722 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6625557b8723c6f90fa7be6f7da5f276e9e7710f22796c588c257b9291efc25`  
-		Last Modified: Tue, 10 Dec 2024 02:26:06 GMT  
+	-	`sha256:7958cac85fd62cc4cdca2eb4241642d99b69ebcaa6278efeda5cdd68ca8aa105`  
+		Last Modified: Wed, 25 Dec 2024 07:45:16 GMT  
 		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9.9-amazoncorretto-21-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:fa247839d77686a170df0c220924f21108617ba5206aa04d6a5885f9b0adc064
+$ docker pull maven@sha256:0297db3be9a5b563b0d886461224a0325ca3740cc4477fc49c5c647d6712499b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -45520,19 +45520,19 @@ $ docker pull maven@sha256:fa247839d77686a170df0c220924f21108617ba5206aa04d6a588
 ### `maven:3.9.9-amazoncorretto-21-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:cb4d16d9dc6ce8cc1871911b82bb066fe0687d93fde2fafd09db3b18bbc67417
+$ docker pull maven@sha256:f4f670cf10bd7648498bc27585d18f9db6ff347d6e813f8eaadb54ae60a304b9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **254.1 MB (254139405 bytes)**  
+-	Total Size: **254.1 MB (254139059 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e2d5f6499cd7ee9e34cad52e6805ad12ade49efaf967bd2b1bbb6b1f1173edde`
+-	Image ID: `sha256:2dcfe13e93c6ae1138a3c9d6f849b76be430157a8c4f982bc5c64975ad6cc002`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -45568,71 +45568,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:525b5720295b79ebac3495aaaf60011b11c43238507d7ce087160256bc6fd97b`  
-		Last Modified: Mon, 09 Dec 2024 20:31:43 GMT  
-		Size: 216.7 MB (216736348 bytes)  
+	-	`sha256:aabfa15455560ed1bd2328a7821a42a84f3650acc865f2187c0b06f2ae176eef`  
+		Last Modified: Tue, 24 Dec 2024 22:39:15 GMT  
+		Size: 216.7 MB (216736000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f376598fd0822e8fefd016b6267bf83a0580985ef1e3b84440af37d48c489759`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 9.2 MB (9170441 bytes)  
+	-	`sha256:c645781e092c07d6a0843af4191176761dd7bb07527b07f8324f006eb4adfdf3`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a62da7db1ad086623eb81c8d1011258a160bcfcb884da2c7716d4f9efbea8418`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 850.0 B  
+	-	`sha256:6a0f1b0cf3c87da01f6ad1ba29493d7b1bbad065555bd0b81e86b32790f2527b`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:386c25cf85a2c5a83d35ed983fa02b99f2d337dfb4ff7cc970877de045353c56`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 154.0 B  
+	-	`sha256:30e10ba0325eb3bb549f9245f1dee1c82675b5f5cc765e331819083f01f5dba2`  
+		Last Modified: Tue, 24 Dec 2024 22:39:06 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-amazoncorretto-21-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:d9e8e30534f70656e4562544b4d6d84e856880629608d77403486391f8d17559
+$ docker pull maven@sha256:4fa0f35d87db27f06082dddb605067bd2767fb33b8e2925924fe515401a64495
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018510 bytes)**  
+-	Total Size: **3.0 MB (3014275 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b6c21ca3c550304d2dc7abfa58b2ebbe7e444c9a862e2ac29471d6f151ab0b28`
+-	Image ID: `sha256:a3f6ea33bc3fef581dc17c3c6d627a5f77ba750ef4a2f9204e54b0257b04bd6b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b0fac53a856d432f4b51bc1e8db81568555bb10a5320851f3e5399b5c4799075`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
-		Size: 3.0 MB (2999297 bytes)  
+	-	`sha256:4ed2c30f2a67a60ad6eaefe90b8f739775233e25aaa6d42e533aa23adf5c13c5`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 3.0 MB (2995062 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b147d26747209b63652a4020fac924ee12582c000c43802972eefd67b5fcbf7e`  
-		Last Modified: Mon, 09 Dec 2024 20:31:40 GMT  
+	-	`sha256:d42766da24aa0e7e818d0ded888932fb08284a70ecec8ca7cfe57d40dc4d91d8`  
+		Last Modified: Tue, 24 Dec 2024 22:39:08 GMT  
 		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.9.9-amazoncorretto-21-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:00b0a43c44cd3d9c32bc5c22160484f878bf85aeb0ff21422ceaccd1806ee998
+$ docker pull maven@sha256:0b3ad8a450bc77519b3baefbfcd797c747c61c02a8780ad46caeec40bde5afc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.7 MB (251701171 bytes)**  
+-	Total Size: **251.7 MB (251700966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:735cd64f57d78b500efd2f6cca65d171668c1fbac7982481b812a0071192f12e`
+-	Image ID: `sha256:a02a0b90f6b7b4a29fd7da6fd79e0b91032f0d2768fd5d7741f1a3e211795a24`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-21-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -45668,52 +45668,52 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd997dd7f8c27c4e3de5778b0e4635734590e28a1e3724b77623e3c9bbeea21b`  
-		Last Modified: Tue, 10 Dec 2024 02:26:11 GMT  
-		Size: 214.5 MB (214470886 bytes)  
+	-	`sha256:f1fa1eff39f4841b833a6e95f85f6fa8349afb48e1d5e6d119cec7732f2c2775`  
+		Last Modified: Wed, 25 Dec 2024 07:45:21 GMT  
+		Size: 214.5 MB (214470778 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92db06626165e33a8236aed2f2b7aa487aa56eece4616f3d651c16bb9cdd9677`  
-		Last Modified: Tue, 10 Dec 2024 02:26:07 GMT  
-		Size: 9.2 MB (9170437 bytes)  
+	-	`sha256:18dc6a06e61cd6a5d8f8effa0459ebf14d24d13f24632cd871df97a23980f84c`  
+		Last Modified: Wed, 25 Dec 2024 07:45:17 GMT  
+		Size: 9.2 MB (9170429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98f88c97a19048974214412b9cde1a4e68c3e8dbc0aa0031ed91b8c5c57fb937`  
-		Last Modified: Tue, 10 Dec 2024 02:26:06 GMT  
-		Size: 851.0 B  
+	-	`sha256:76bd07bc67f987583b20a96c34195b554fdb8688e24a2e1070014804c9abb5ec`  
+		Last Modified: Wed, 25 Dec 2024 07:45:16 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39190d755d657a1759560a1ed3be1dac21120c50bea46faae254a31055600a11`  
-		Last Modified: Tue, 10 Dec 2024 02:26:06 GMT  
-		Size: 155.0 B  
+	-	`sha256:c7fbcc76d85d17608a6a42be44fd50028febafc1addb56d9f9f419535b0b27b0`  
+		Last Modified: Wed, 25 Dec 2024 07:45:17 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-amazoncorretto-21-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:7ef0e178de2aa0bc4a8be77250e426919fb3e5fca6aad2e98dc6b1987723ccb1
+$ docker pull maven@sha256:5f4e77839b04924d02650cd13cae4522176c24c92b8c530378b1dbaaed964a4a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3018337 bytes)**  
+-	Total Size: **3.0 MB (3014104 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:154d3eb47d356f02eeb9cb2464358f1fc5ec1b1be4c918d5894ea63ccd757b2e`
+-	Image ID: `sha256:23c5e5fa1d9665a394710f85709bcf82629d066d900a755db3056ad4697fd6d4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d299b608851a93f5e0c8101ea83c623a1a74a19e64d58edb8381e8d4ee44da18`  
-		Last Modified: Tue, 10 Dec 2024 02:26:07 GMT  
-		Size: 3.0 MB (2998955 bytes)  
+	-	`sha256:8e993931599ca60cb4a3c06216158cf355ddf6c801e8f8fcb01c9047c9ae7eef`  
+		Last Modified: Wed, 25 Dec 2024 07:45:17 GMT  
+		Size: 3.0 MB (2994722 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6625557b8723c6f90fa7be6f7da5f276e9e7710f22796c588c257b9291efc25`  
-		Last Modified: Tue, 10 Dec 2024 02:26:06 GMT  
+	-	`sha256:7958cac85fd62cc4cdca2eb4241642d99b69ebcaa6278efeda5cdd68ca8aa105`  
+		Last Modified: Wed, 25 Dec 2024 07:45:16 GMT  
 		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -46449,7 +46449,7 @@ $ docker pull maven@sha256:e626aacdf29e29ad8fc7c7466084dbe71cbd36dec43f2501f0e91
 ## `maven:3.9.9-amazoncorretto-23-debian`
 
 ```console
-$ docker pull maven@sha256:6b3986c4485ba720abe495cffd7e5243d17d09f6083e43c923c8881790c8f3fc
+$ docker pull maven@sha256:fb26c294353f2d40475c07ca6ee7850bd083e5dcf07b8b48d3a391d72aa1a467
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -46462,19 +46462,19 @@ $ docker pull maven@sha256:6b3986c4485ba720abe495cffd7e5243d17d09f6083e43c923c88
 ### `maven:3.9.9-amazoncorretto-23-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:29da3d97b320f8cf5abcee06c7540a5b6da123543b411645fe425eaa921cc849
+$ docker pull maven@sha256:44357e7c1584fc1f52d09712dd83774d84d75f7173bc8a152e46f39d351e2ff0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **261.6 MB (261644045 bytes)**  
+-	Total Size: **261.6 MB (261644051 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8722af39cfd7974db197cf3417ae5d5c7c30814161a5d0ed48772a91edb52d56`
+-	Image ID: `sha256:74bb745bd7ff4626e5c188140d1c8139916f28546f02a7af97660fcd6fd447b2`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-23-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -46510,71 +46510,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f79347c5dfb5b7e191a5f422d3bef6a484f6964a75b11ae6c8fb356d5465d8d5`  
-		Last Modified: Mon, 09 Dec 2024 20:31:50 GMT  
-		Size: 224.2 MB (224240990 bytes)  
+	-	`sha256:6abe81f2c5a3de75f2c37e63f206b358357374f8ea56f7a24775d1037d527523`  
+		Last Modified: Tue, 24 Dec 2024 22:39:07 GMT  
+		Size: 224.2 MB (224240995 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e6722fe424e3619e348376ffd1cc75b2627be5d1cacfda4366c48ce9b41edad`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 9.2 MB (9170438 bytes)  
+	-	`sha256:85a53a8e763a560a15e208073d78cd3bf290b589b77065df2db5988414f9fa1a`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 9.2 MB (9170441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4270152709991d7e116db0878f19955217f0f7d3acd7adc2dd443ec6df179bc`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 850.0 B  
+	-	`sha256:ad0483291349ac15c314fc9e17ad4e80015fe2d669c3531e4e821d5812a3ab59`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d392805aefd4733a800c2876a2fbff766c1fa6b8e3fccd588787ce4c536b74a4`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 155.0 B  
+	-	`sha256:79dce5d06bbdee8522c0f53f27e58849e8ef88a6fed3225d64946db4eb4b7042`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-amazoncorretto-23-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:70bfdeabc81a775e298ac138807ebbfec9463b4ec556669d9805ec567e38acb7
+$ docker pull maven@sha256:ba9186af9a0faf594fce6a1693e0471537e010b1959b08f2deea76f2eb99088f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3020458 bytes)**  
+-	Total Size: **3.0 MB (3016220 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:378881e273445887693e7c8b10a3fb204df4301efcc042840e69090b31fd139a`
+-	Image ID: `sha256:e7228406bd1bb92b265b86e0e3d6ceb201d2e308bfede069d774f35a79526211`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2cef979391edf0e810f434439a9c0141f9be41648fff58b8d5cf43eb75dab063`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 3.0 MB (3001245 bytes)  
+	-	`sha256:606357f34696756672c900c6d3272ac2ecb3525ce82beda37fd82b08a93a1206`  
+		Last Modified: Tue, 24 Dec 2024 22:39:02 GMT  
+		Size: 3.0 MB (2997007 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:50f3b0757914a1d81b6a17ecdf00f1d421bbdc824bd3ed7b36cabbaea9a560d6`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
+	-	`sha256:d58b3efa7c5d98b2fa128b2c86227e73b4bfdcec3b3ca6f8683643e4eb888e56`  
+		Last Modified: Tue, 24 Dec 2024 22:39:01 GMT  
 		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.9.9-amazoncorretto-23-debian` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:4913e322a3886a6c531d7fcede01c650ade5b54e8d43138897fda7ae9c2750d0
+$ docker pull maven@sha256:6b7708f6e3cea8e5e91dda1e3fb08d959b2bce4d571b9ce23c4fb150d10559aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **259.0 MB (258989092 bytes)**  
+-	Total Size: **259.0 MB (258988932 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b99a0f430948d5a45a4ae7036aa644c4805262ad3c94f885eadbb15b5c204908`
+-	Image ID: `sha256:ebd50d29f62162ec6f5d66eb1ba469e41c62aa0c686d544f93041d11f7dde065`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-23-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -46610,59 +46610,59 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06727bb706706d0066c2269bf6ead6565e2f4e3c1a72c999eb669a715f2587a4`  
-		Last Modified: Tue, 10 Dec 2024 02:29:13 GMT  
-		Size: 221.8 MB (221758808 bytes)  
+	-	`sha256:b2be63af51cb44e2d7e17ccc19aacc27061c7d9b29b4cf89c6a5bbcb7a0eb63f`  
+		Last Modified: Wed, 25 Dec 2024 07:46:22 GMT  
+		Size: 221.8 MB (221758729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:779b480759d55ef43f0de932ec7061cd3329df9ea634542d63ec5dca1a9205c5`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 9.2 MB (9170437 bytes)  
+	-	`sha256:f14249ca97659ac8b53330cde3a4d334162f6cf9d2530574ab4ca1dbb4bd64a9`  
+		Last Modified: Wed, 25 Dec 2024 07:46:18 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:443c2cab7c10d9c35466e057a316b34783cb6ff896bea066e5c484f998564e11`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
+	-	`sha256:a6f4f0267adcb7f3499d3f377c983d569569218ed6cb1fcc3d0c44a472100642`  
+		Last Modified: Wed, 25 Dec 2024 07:46:17 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fccc83b55bded8d14bcc625de1704f188c6ecee26d7e70e3a591c9274670a13d`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 155.0 B  
+	-	`sha256:b3c9a97f6814f224ccadd9093718b8d9ce0c3b35ed5bbcbc0ba57caa0466e455`  
+		Last Modified: Wed, 25 Dec 2024 07:46:18 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-amazoncorretto-23-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:ee9165c6c0823b7cf109448f997811c80d67f355daf782c0b1f9ebe4e1e039d7
+$ docker pull maven@sha256:b5f15e66c2645de71e3cb1ffbe9cd022856b75745e1f0c834722a8ebe6f44379
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3019643 bytes)**  
+-	Total Size: **3.0 MB (3015409 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fcd2530426206825426d3462aa743ee33cd7cd2c8b8f2e6ac2efab8174c4541`
+-	Image ID: `sha256:5a6283a058a0b6e748eed2541029eddace850b273749f0e244b8d6ae34382573`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:18c2e67e9c94b6ac2589920138c2dd31c629de20efe8a896f536e125987e85da`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 3.0 MB (3000262 bytes)  
+	-	`sha256:d3b8721d574bde59754c20eefaa2b918626c3309f1e522b473485cf9970a13c4`  
+		Last Modified: Wed, 25 Dec 2024 07:46:18 GMT  
+		Size: 3.0 MB (2996027 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:82fd51711e8f9048efa15a91626ca8c1834d6d10eab102a8582936123248ccc6`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 19.4 KB (19381 bytes)  
+	-	`sha256:c0a878d593c4a74b2e18d117cdc557c8368799df81dbe9abdf778ca067d787da`  
+		Last Modified: Wed, 25 Dec 2024 07:46:17 GMT  
+		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9.9-amazoncorretto-23-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:6b3986c4485ba720abe495cffd7e5243d17d09f6083e43c923c8881790c8f3fc
+$ docker pull maven@sha256:fb26c294353f2d40475c07ca6ee7850bd083e5dcf07b8b48d3a391d72aa1a467
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -46675,19 +46675,19 @@ $ docker pull maven@sha256:6b3986c4485ba720abe495cffd7e5243d17d09f6083e43c923c88
 ### `maven:3.9.9-amazoncorretto-23-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:29da3d97b320f8cf5abcee06c7540a5b6da123543b411645fe425eaa921cc849
+$ docker pull maven@sha256:44357e7c1584fc1f52d09712dd83774d84d75f7173bc8a152e46f39d351e2ff0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **261.6 MB (261644045 bytes)**  
+-	Total Size: **261.6 MB (261644051 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8722af39cfd7974db197cf3417ae5d5c7c30814161a5d0ed48772a91edb52d56`
+-	Image ID: `sha256:74bb745bd7ff4626e5c188140d1c8139916f28546f02a7af97660fcd6fd447b2`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-23-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -46723,71 +46723,71 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f79347c5dfb5b7e191a5f422d3bef6a484f6964a75b11ae6c8fb356d5465d8d5`  
-		Last Modified: Mon, 09 Dec 2024 20:31:50 GMT  
-		Size: 224.2 MB (224240990 bytes)  
+	-	`sha256:6abe81f2c5a3de75f2c37e63f206b358357374f8ea56f7a24775d1037d527523`  
+		Last Modified: Tue, 24 Dec 2024 22:39:07 GMT  
+		Size: 224.2 MB (224240995 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e6722fe424e3619e348376ffd1cc75b2627be5d1cacfda4366c48ce9b41edad`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 9.2 MB (9170438 bytes)  
+	-	`sha256:85a53a8e763a560a15e208073d78cd3bf290b589b77065df2db5988414f9fa1a`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 9.2 MB (9170441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4270152709991d7e116db0878f19955217f0f7d3acd7adc2dd443ec6df179bc`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 850.0 B  
+	-	`sha256:ad0483291349ac15c314fc9e17ad4e80015fe2d669c3531e4e821d5812a3ab59`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 849.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d392805aefd4733a800c2876a2fbff766c1fa6b8e3fccd588787ce4c536b74a4`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 155.0 B  
+	-	`sha256:79dce5d06bbdee8522c0f53f27e58849e8ef88a6fed3225d64946db4eb4b7042`  
+		Last Modified: Tue, 24 Dec 2024 22:38:59 GMT  
+		Size: 153.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-amazoncorretto-23-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:70bfdeabc81a775e298ac138807ebbfec9463b4ec556669d9805ec567e38acb7
+$ docker pull maven@sha256:ba9186af9a0faf594fce6a1693e0471537e010b1959b08f2deea76f2eb99088f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3020458 bytes)**  
+-	Total Size: **3.0 MB (3016220 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:378881e273445887693e7c8b10a3fb204df4301efcc042840e69090b31fd139a`
+-	Image ID: `sha256:e7228406bd1bb92b265b86e0e3d6ceb201d2e308bfede069d774f35a79526211`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2cef979391edf0e810f434439a9c0141f9be41648fff58b8d5cf43eb75dab063`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
-		Size: 3.0 MB (3001245 bytes)  
+	-	`sha256:606357f34696756672c900c6d3272ac2ecb3525ce82beda37fd82b08a93a1206`  
+		Last Modified: Tue, 24 Dec 2024 22:39:02 GMT  
+		Size: 3.0 MB (2997007 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:50f3b0757914a1d81b6a17ecdf00f1d421bbdc824bd3ed7b36cabbaea9a560d6`  
-		Last Modified: Mon, 09 Dec 2024 20:31:47 GMT  
+	-	`sha256:d58b3efa7c5d98b2fa128b2c86227e73b4bfdcec3b3ca6f8683643e4eb888e56`  
+		Last Modified: Tue, 24 Dec 2024 22:39:01 GMT  
 		Size: 19.2 KB (19213 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.9.9-amazoncorretto-23-debian-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:4913e322a3886a6c531d7fcede01c650ade5b54e8d43138897fda7ae9c2750d0
+$ docker pull maven@sha256:6b7708f6e3cea8e5e91dda1e3fb08d959b2bce4d571b9ce23c4fb150d10559aa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **259.0 MB (258989092 bytes)**  
+-	Total Size: **259.0 MB (258988932 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b99a0f430948d5a45a4ae7036aa644c4805262ad3c94f885eadbb15b5c204908`
+-	Image ID: `sha256:ebd50d29f62162ec6f5d66eb1ba469e41c62aa0c686d544f93041d11f7dde065`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-23-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -46823,53 +46823,53 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06727bb706706d0066c2269bf6ead6565e2f4e3c1a72c999eb669a715f2587a4`  
-		Last Modified: Tue, 10 Dec 2024 02:29:13 GMT  
-		Size: 221.8 MB (221758808 bytes)  
+	-	`sha256:b2be63af51cb44e2d7e17ccc19aacc27061c7d9b29b4cf89c6a5bbcb7a0eb63f`  
+		Last Modified: Wed, 25 Dec 2024 07:46:22 GMT  
+		Size: 221.8 MB (221758729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:779b480759d55ef43f0de932ec7061cd3329df9ea634542d63ec5dca1a9205c5`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 9.2 MB (9170437 bytes)  
+	-	`sha256:f14249ca97659ac8b53330cde3a4d334162f6cf9d2530574ab4ca1dbb4bd64a9`  
+		Last Modified: Wed, 25 Dec 2024 07:46:18 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:443c2cab7c10d9c35466e057a316b34783cb6ff896bea066e5c484f998564e11`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
+	-	`sha256:a6f4f0267adcb7f3499d3f377c983d569569218ed6cb1fcc3d0c44a472100642`  
+		Last Modified: Wed, 25 Dec 2024 07:46:17 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fccc83b55bded8d14bcc625de1704f188c6ecee26d7e70e3a591c9274670a13d`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 155.0 B  
+	-	`sha256:b3c9a97f6814f224ccadd9093718b8d9ce0c3b35ed5bbcbc0ba57caa0466e455`  
+		Last Modified: Wed, 25 Dec 2024 07:46:18 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-amazoncorretto-23-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:ee9165c6c0823b7cf109448f997811c80d67f355daf782c0b1f9ebe4e1e039d7
+$ docker pull maven@sha256:b5f15e66c2645de71e3cb1ffbe9cd022856b75745e1f0c834722a8ebe6f44379
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (3019643 bytes)**  
+-	Total Size: **3.0 MB (3015409 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5fcd2530426206825426d3462aa743ee33cd7cd2c8b8f2e6ac2efab8174c4541`
+-	Image ID: `sha256:5a6283a058a0b6e748eed2541029eddace850b273749f0e244b8d6ae34382573`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:18c2e67e9c94b6ac2589920138c2dd31c629de20efe8a896f536e125987e85da`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 3.0 MB (3000262 bytes)  
+	-	`sha256:d3b8721d574bde59754c20eefaa2b918626c3309f1e522b473485cf9970a13c4`  
+		Last Modified: Wed, 25 Dec 2024 07:46:18 GMT  
+		Size: 3.0 MB (2996027 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:82fd51711e8f9048efa15a91626ca8c1834d6d10eab102a8582936123248ccc6`  
-		Last Modified: Tue, 10 Dec 2024 02:29:08 GMT  
-		Size: 19.4 KB (19381 bytes)  
+	-	`sha256:c0a878d593c4a74b2e18d117cdc557c8368799df81dbe9abdf778ca067d787da`  
+		Last Modified: Wed, 25 Dec 2024 07:46:17 GMT  
+		Size: 19.4 KB (19382 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9.9-amazoncorretto-8`
@@ -47620,7 +47620,7 @@ $ docker pull maven@sha256:249a276369af1e5165b196c1b7f5ddbf46fb0d9b04786580837e9
 ## `maven:3.9.9-amazoncorretto-8-debian`
 
 ```console
-$ docker pull maven@sha256:ead0be38b701111b41bd3271d7d423c00613dbd0802014335346f7aee479aa4f
+$ docker pull maven@sha256:aec89d19a28025b6e256735ee6dff194e07a8a823e49259718512b2f6fa20179
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -47633,19 +47633,19 @@ $ docker pull maven@sha256:ead0be38b701111b41bd3271d7d423c00613dbd0802014335346f
 ### `maven:3.9.9-amazoncorretto-8-debian` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:9c84852b386038909344d5dd93128dc1c47457ffce793468d1b8bc13260e86df
+$ docker pull maven@sha256:b32f0dc07c01477a0a446ab34bb23b9a71668800507d3948c2b8e864a1e796f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **163.4 MB (163395368 bytes)**  
+-	Total Size: **163.4 MB (163395397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c91987438d4b46afaedc09e516d22030daf9fe32f308136f7a6c4a90f11980d`
+-	Image ID: `sha256:8ae3c5fa017a4d739fb345728c7cde669a2e90de8dcfc158764f7025c2b16723`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -47681,159 +47681,159 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:abcb9e93bb5cd8e91e36f864b88358405955b26a709ae571c4f2d590885126b0`  
-		Last Modified: Mon, 09 Dec 2024 20:33:06 GMT  
-		Size: 126.0 MB (125992312 bytes)  
+	-	`sha256:ea57055d233b707639b0b1ae98c2dffd98425e4051a5c77239ab8f66dbd3de6d`  
+		Last Modified: Tue, 24 Dec 2024 22:39:11 GMT  
+		Size: 126.0 MB (125992335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fffc27c99ac86edcb3d7347189a8982b6f3c478c41efbee6c85aa15f54cd70b8`  
-		Last Modified: Mon, 09 Dec 2024 20:33:05 GMT  
-		Size: 9.2 MB (9170441 bytes)  
+	-	`sha256:f2b1a07cb35708098a508c04492611903e5ec8decbecd5674f3c13a06d7f51b8`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1047011a6cddeac3c5846ee8a76100341ce2ff1842600edc4666424b6d09e734`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 849.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a146603672f7651357e370347f7b863e4937824d03e1f948bda8b113b3571fda`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 154.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `maven:3.9.9-amazoncorretto-8-debian` - unknown; unknown
-
-```console
-$ docker pull maven@sha256:57ea3c3d6c9cf2650d0eccb8888ac5b38283234eb9cf2c18cc69b0530f4e0c3d
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2896786 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:906c10bd2a2d3ec971d303b7897922e74c46848cd908a1154523dcd68afb670b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:060dc568fb3516b4de83f2589b8fb745569cb077ad3d5c9f650e7c0f73e8f60b`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 2.9 MB (2877561 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:2f457ae9970ee2595602a3aa642ef924c326e3dad86a88c9bef37efa38286550`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 19.2 KB (19225 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `maven:3.9.9-amazoncorretto-8-debian` - linux; arm64 variant v8
-
-```console
-$ docker pull maven@sha256:f48abb6b60ed75272a52b2c8ecb67d1a78b6e508df24018d9566728e2c1e7012
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **147.0 MB (146989495 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d295e6912a4dcc982733b5979a84b07ad1ea475429c39efe01e3007a85008abb`
--	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
--	Default Command: `["mvn"]`
-
-```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
-# Sat, 07 Dec 2024 17:04:44 GMT
-RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto/jre
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.title=Apache Maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENV MAVEN_HOME=/usr/share/maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-COPY /usr/share/maven /usr/share/maven # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-ARG MAVEN_VERSION=3.9.9
-# Sat, 07 Dec 2024 17:04:44 GMT
-ARG USER_HOME_DIR=/root
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENV MAVEN_CONFIG=/root/.m2
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Sat, 07 Dec 2024 17:04:44 GMT
-CMD ["mvn"]
-```
-
--	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67fd9e95ea5d8fd2261416cc1831b673d67310dd184234703fcdb85420bd00e2`  
-		Last Modified: Tue, 10 Dec 2024 02:40:25 GMT  
-		Size: 109.8 MB (109759216 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2f29b71765035887887fb4b7ecd59501a0be9d327228bc74ad3d88c0736ba7f`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
-		Size: 9.2 MB (9170432 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb4c9bb33986713f58a05136922e59223675c082b3905a54a5e4a2c0328789c5`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
+	-	`sha256:e5ec3a517dcd5b2e7290f3e0749a19baf21bb362ca0c3575e45c37c4ddb70c1d`  
+		Last Modified: Tue, 24 Dec 2024 22:39:08 GMT  
 		Size: 851.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2e40f8b74640ff195fd2e72d94b0b22df3327e546c8ddabd07aa1743751f240`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
+	-	`sha256:703c0f7be71cd3a179bb8ed6755fae97aaa70d204845c37e46cf9db83e4096d2`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-amazoncorretto-8-debian` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:ffc19c98afae95e08f2fd8ab6e37c3d8ce1d88bcf9c162b518cff37c898e2bb4
+$ docker pull maven@sha256:ae4aab22c63b01e772ef8c72f2be1b4c415b3aa26dd070ced1c4b777b52d635c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2879801 bytes)**  
+-	Total Size: **2.9 MB (2893027 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9ccca7189aab4d933ea9a38732bc6c3d516cc2653354513fff4646d2e6328a6`
+-	Image ID: `sha256:cd603ca7c03d5304e87855ee0112eef5a744567a6beb59ecbaa358cebaec8585`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a865df99530b9f1b2cc720ae3414098c9be103a6bc6a893bdb8c391b5e1c6f45`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
-		Size: 2.9 MB (2860407 bytes)  
+	-	`sha256:c1db1c26a39bbdb6f34f92c8bb2f708d833543cafc66fa9a111bb2ff56a3d711`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 2.9 MB (2873803 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aac0d6da541ead1924fe1beda2c79c97e74e6d8c3da1554f855a491c359c86bd`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
+	-	`sha256:d3899e195f16b6908c2163f975956903f7c5b8c0025ae84b3bc76132379aa5ae`  
+		Last Modified: Tue, 24 Dec 2024 22:39:08 GMT  
+		Size: 19.2 KB (19224 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `maven:3.9.9-amazoncorretto-8-debian` - linux; arm64 variant v8
+
+```console
+$ docker pull maven@sha256:3f937dc244d00e8ba232d5c7ecfd972cef6b1a3d05f5ea67281bedca42e7a03f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **147.0 MB (146989295 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2556ce27029abdd83aadc8c7cdd8deb87ca39af1a10dea0ba6ae494984ac2b80`
+-	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
+-	Default Command: `["mvn"]`
+
+```dockerfile
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto/jre
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.title=Apache Maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENV MAVEN_HOME=/usr/share/maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+COPY /usr/share/maven /usr/share/maven # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+ARG MAVEN_VERSION=3.9.9
+# Sat, 07 Dec 2024 17:04:44 GMT
+ARG USER_HOME_DIR=/root
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENV MAVEN_CONFIG=/root/.m2
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
+# Sat, 07 Dec 2024 17:04:44 GMT
+CMD ["mvn"]
+```
+
+-	Layers:
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6bb98469ebb204fee7bd8a5e73c7698cf537896a3dc8344040ec68331ff78093`  
+		Last Modified: Wed, 25 Dec 2024 07:47:11 GMT  
+		Size: 109.8 MB (109759105 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:47b0fbead17b87172ee0762b52b37c96df90648200a14e8a4678aa465784f807`  
+		Last Modified: Wed, 25 Dec 2024 07:47:09 GMT  
+		Size: 9.2 MB (9170429 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3656c88111960666dfca000d2e1c9bcb52eb031970d8cebc87b35801f7c9c9a1`  
+		Last Modified: Wed, 25 Dec 2024 07:47:08 GMT  
+		Size: 851.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c8b1614c934698b682661c85d73dc6a26f1707c56b8998d8b613884c93e4bd96`  
+		Last Modified: Wed, 25 Dec 2024 07:47:08 GMT  
+		Size: 155.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `maven:3.9.9-amazoncorretto-8-debian` - unknown; unknown
+
+```console
+$ docker pull maven@sha256:7eb8adac46c8a7144e9a735f3e086c38823f6bfab16107da32916750621a9e29
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.9 MB (2876015 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d091ecfa586ab6c562e8682464ae28bf47ad9fe1cb84ea21b84a67daec163fd7`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:b58052a25f279ea77b9da238d31d46bb1c47867336db2e37124b99f5002dee00`  
+		Last Modified: Wed, 25 Dec 2024 07:47:09 GMT  
+		Size: 2.9 MB (2856621 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:47ac551eae0332e7008085994d6fde439a038b5fcfef8ebd9ab9309096017098`  
+		Last Modified: Wed, 25 Dec 2024 07:47:08 GMT  
 		Size: 19.4 KB (19394 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9.9-amazoncorretto-8-debian-bookworm`
 
 ```console
-$ docker pull maven@sha256:ead0be38b701111b41bd3271d7d423c00613dbd0802014335346f7aee479aa4f
+$ docker pull maven@sha256:aec89d19a28025b6e256735ee6dff194e07a8a823e49259718512b2f6fa20179
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -47846,19 +47846,19 @@ $ docker pull maven@sha256:ead0be38b701111b41bd3271d7d423c00613dbd0802014335346f
 ### `maven:3.9.9-amazoncorretto-8-debian-bookworm` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:9c84852b386038909344d5dd93128dc1c47457ffce793468d1b8bc13260e86df
+$ docker pull maven@sha256:b32f0dc07c01477a0a446ab34bb23b9a71668800507d3948c2b8e864a1e796f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **163.4 MB (163395368 bytes)**  
+-	Total Size: **163.4 MB (163395397 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c91987438d4b46afaedc09e516d22030daf9fe32f308136f7a6c4a90f11980d`
+-	Image ID: `sha256:8ae3c5fa017a4d739fb345728c7cde669a2e90de8dcfc158764f7025c2b16723`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1733097600'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
 # Sat, 07 Dec 2024 17:04:44 GMT
 RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
 # Sat, 07 Dec 2024 17:04:44 GMT
@@ -47894,152 +47894,152 @@ CMD ["mvn"]
 ```
 
 -	Layers:
-	-	`sha256:bc0965b23a04fe7f2d9fb20f597008fcf89891de1c705ffc1c80483a1f098e4f`  
-		Last Modified: Tue, 03 Dec 2024 01:27:13 GMT  
-		Size: 28.2 MB (28231580 bytes)  
+	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
+		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:abcb9e93bb5cd8e91e36f864b88358405955b26a709ae571c4f2d590885126b0`  
-		Last Modified: Mon, 09 Dec 2024 20:33:06 GMT  
-		Size: 126.0 MB (125992312 bytes)  
+	-	`sha256:ea57055d233b707639b0b1ae98c2dffd98425e4051a5c77239ab8f66dbd3de6d`  
+		Last Modified: Tue, 24 Dec 2024 22:39:11 GMT  
+		Size: 126.0 MB (125992335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fffc27c99ac86edcb3d7347189a8982b6f3c478c41efbee6c85aa15f54cd70b8`  
-		Last Modified: Mon, 09 Dec 2024 20:33:05 GMT  
-		Size: 9.2 MB (9170441 bytes)  
+	-	`sha256:f2b1a07cb35708098a508c04492611903e5ec8decbecd5674f3c13a06d7f51b8`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 9.2 MB (9170444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1047011a6cddeac3c5846ee8a76100341ce2ff1842600edc4666424b6d09e734`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 849.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a146603672f7651357e370347f7b863e4937824d03e1f948bda8b113b3571fda`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 154.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `maven:3.9.9-amazoncorretto-8-debian-bookworm` - unknown; unknown
-
-```console
-$ docker pull maven@sha256:57ea3c3d6c9cf2650d0eccb8888ac5b38283234eb9cf2c18cc69b0530f4e0c3d
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2896786 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:906c10bd2a2d3ec971d303b7897922e74c46848cd908a1154523dcd68afb670b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:060dc568fb3516b4de83f2589b8fb745569cb077ad3d5c9f650e7c0f73e8f60b`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 2.9 MB (2877561 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:2f457ae9970ee2595602a3aa642ef924c326e3dad86a88c9bef37efa38286550`  
-		Last Modified: Mon, 09 Dec 2024 20:33:04 GMT  
-		Size: 19.2 KB (19225 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `maven:3.9.9-amazoncorretto-8-debian-bookworm` - linux; arm64 variant v8
-
-```console
-$ docker pull maven@sha256:f48abb6b60ed75272a52b2c8ecb67d1a78b6e508df24018d9566728e2c1e7012
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **147.0 MB (146989495 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d295e6912a4dcc982733b5979a84b07ad1ea475429c39efe01e3007a85008abb`
--	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
--	Default Command: `["mvn"]`
-
-```dockerfile
-# Mon, 02 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1733097600'
-# Sat, 07 Dec 2024 17:04:44 GMT
-RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto/jre
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.title=Apache Maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENV MAVEN_HOME=/usr/share/maven
-# Sat, 07 Dec 2024 17:04:44 GMT
-COPY /usr/share/maven /usr/share/maven # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
-# Sat, 07 Dec 2024 17:04:44 GMT
-ARG MAVEN_VERSION=3.9.9
-# Sat, 07 Dec 2024 17:04:44 GMT
-ARG USER_HOME_DIR=/root
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENV MAVEN_CONFIG=/root/.m2
-# Sat, 07 Dec 2024 17:04:44 GMT
-ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
-# Sat, 07 Dec 2024 17:04:44 GMT
-CMD ["mvn"]
-```
-
--	Layers:
-	-	`sha256:bb3f2b52e6af242cee1bc6c19ce79e05544f8a1d13f5a6c1e828d98d2dbdc94e`  
-		Last Modified: Tue, 03 Dec 2024 01:30:11 GMT  
-		Size: 28.1 MB (28058810 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67fd9e95ea5d8fd2261416cc1831b673d67310dd184234703fcdb85420bd00e2`  
-		Last Modified: Tue, 10 Dec 2024 02:40:25 GMT  
-		Size: 109.8 MB (109759216 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2f29b71765035887887fb4b7ecd59501a0be9d327228bc74ad3d88c0736ba7f`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
-		Size: 9.2 MB (9170432 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb4c9bb33986713f58a05136922e59223675c082b3905a54a5e4a2c0328789c5`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
+	-	`sha256:e5ec3a517dcd5b2e7290f3e0749a19baf21bb362ca0c3575e45c37c4ddb70c1d`  
+		Last Modified: Tue, 24 Dec 2024 22:39:08 GMT  
 		Size: 851.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b2e40f8b74640ff195fd2e72d94b0b22df3327e546c8ddabd07aa1743751f240`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
+	-	`sha256:703c0f7be71cd3a179bb8ed6755fae97aaa70d204845c37e46cf9db83e4096d2`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-amazoncorretto-8-debian-bookworm` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:ffc19c98afae95e08f2fd8ab6e37c3d8ce1d88bcf9c162b518cff37c898e2bb4
+$ docker pull maven@sha256:ae4aab22c63b01e772ef8c72f2be1b4c415b3aa26dd070ced1c4b777b52d635c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.9 MB (2879801 bytes)**  
+-	Total Size: **2.9 MB (2893027 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9ccca7189aab4d933ea9a38732bc6c3d516cc2653354513fff4646d2e6328a6`
+-	Image ID: `sha256:cd603ca7c03d5304e87855ee0112eef5a744567a6beb59ecbaa358cebaec8585`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a865df99530b9f1b2cc720ae3414098c9be103a6bc6a893bdb8c391b5e1c6f45`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
-		Size: 2.9 MB (2860407 bytes)  
+	-	`sha256:c1db1c26a39bbdb6f34f92c8bb2f708d833543cafc66fa9a111bb2ff56a3d711`  
+		Last Modified: Tue, 24 Dec 2024 22:39:09 GMT  
+		Size: 2.9 MB (2873803 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aac0d6da541ead1924fe1beda2c79c97e74e6d8c3da1554f855a491c359c86bd`  
-		Last Modified: Tue, 10 Dec 2024 02:40:22 GMT  
+	-	`sha256:d3899e195f16b6908c2163f975956903f7c5b8c0025ae84b3bc76132379aa5ae`  
+		Last Modified: Tue, 24 Dec 2024 22:39:08 GMT  
+		Size: 19.2 KB (19224 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `maven:3.9.9-amazoncorretto-8-debian-bookworm` - linux; arm64 variant v8
+
+```console
+$ docker pull maven@sha256:3f937dc244d00e8ba232d5c7ecfd972cef6b1a3d05f5ea67281bedca42e7a03f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **147.0 MB (146989295 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2556ce27029abdd83aadc8c7cdd8deb87ca39af1a10dea0ba6ae494984ac2b80`
+-	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
+-	Default Command: `["mvn"]`
+
+```dockerfile
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN apt-get update   && apt-get install -y curl gnupg openssh-client   && export GNUPGHOME="$(mktemp -d)"   && curl -fL https://apt.corretto.aws/corretto.key -o corretto.key   && echo '18bbe2461ff5acb1212f95f3e41034c503460532de21c24f5f935359b2303586 *corretto.key' | sha256sum -c -   && gpg --batch --import corretto.key   && rm corretto.key   && gpg --batch --export '6DC3636DAE534049C8B94623A122542AB04F24E3' > /usr/share/keyrings/corretto.gpg   && unset GNUPGHOME   && echo "deb [signed-by=/usr/share/keyrings/corretto.gpg] https://apt.corretto.aws stable main" > /etc/apt/sources.list.d/corretto.list   && apt-get update   && apt-get remove --purge --autoremove -y curl gnupg   && apt-get install -y java-1.8.0-amazon-corretto-jdk   && rm -rf /var/lib/apt/lists/* # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENV JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto/jre
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.title=Apache Maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.source=https://github.com/carlossg/docker-maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.url=https://github.com/carlossg/docker-maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+LABEL org.opencontainers.image.description=Apache Maven is a software project management and comprehension tool. Based on the concept of a project object model (POM), Maven can manage a project's build, reporting and documentation from a central piece of information.
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENV MAVEN_HOME=/usr/share/maven
+# Sat, 07 Dec 2024 17:04:44 GMT
+COPY /usr/share/maven /usr/share/maven # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+COPY /usr/local/bin/mvn-entrypoint.sh /usr/local/bin/mvn-entrypoint.sh # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+COPY /usr/share/maven/ref/settings-docker.xml /usr/share/maven/ref/settings-docker.xml # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+RUN ln -s ${MAVEN_HOME}/bin/mvn /usr/bin/mvn # buildkit
+# Sat, 07 Dec 2024 17:04:44 GMT
+ARG MAVEN_VERSION=3.9.9
+# Sat, 07 Dec 2024 17:04:44 GMT
+ARG USER_HOME_DIR=/root
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENV MAVEN_CONFIG=/root/.m2
+# Sat, 07 Dec 2024 17:04:44 GMT
+ENTRYPOINT ["/usr/local/bin/mvn-entrypoint.sh"]
+# Sat, 07 Dec 2024 17:04:44 GMT
+CMD ["mvn"]
+```
+
+-	Layers:
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6bb98469ebb204fee7bd8a5e73c7698cf537896a3dc8344040ec68331ff78093`  
+		Last Modified: Wed, 25 Dec 2024 07:47:11 GMT  
+		Size: 109.8 MB (109759105 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:47b0fbead17b87172ee0762b52b37c96df90648200a14e8a4678aa465784f807`  
+		Last Modified: Wed, 25 Dec 2024 07:47:09 GMT  
+		Size: 9.2 MB (9170429 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3656c88111960666dfca000d2e1c9bcb52eb031970d8cebc87b35801f7c9c9a1`  
+		Last Modified: Wed, 25 Dec 2024 07:47:08 GMT  
+		Size: 851.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c8b1614c934698b682661c85d73dc6a26f1707c56b8998d8b613884c93e4bd96`  
+		Last Modified: Wed, 25 Dec 2024 07:47:08 GMT  
+		Size: 155.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `maven:3.9.9-amazoncorretto-8-debian-bookworm` - unknown; unknown
+
+```console
+$ docker pull maven@sha256:7eb8adac46c8a7144e9a735f3e086c38823f6bfab16107da32916750621a9e29
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.9 MB (2876015 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d091ecfa586ab6c562e8682464ae28bf47ad9fe1cb84ea21b84a67daec163fd7`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:b58052a25f279ea77b9da238d31d46bb1c47867336db2e37124b99f5002dee00`  
+		Last Modified: Wed, 25 Dec 2024 07:47:09 GMT  
+		Size: 2.9 MB (2856621 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:47ac551eae0332e7008085994d6fde439a038b5fcfef8ebd9ab9309096017098`  
+		Last Modified: Wed, 25 Dec 2024 07:47:08 GMT  
 		Size: 19.4 KB (19394 bytes)  
 		MIME: application/vnd.in-toto+json
 
