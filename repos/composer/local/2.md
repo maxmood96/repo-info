@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ef5efb684daa37d5e139ffe922942bcba2769656655eff3a2deedf2f77062bd4`
+- Image ID: `sha256:597f41083011e7bbca4e999c9fd285d81a3967eec31e4a4a1c482f0bcc8bcc68`
 - Created: `2024-12-12T08:30:55Z`
-- Virtual Size: ~ 201.01 Mb  
+- Virtual Size: ~ 200.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.1`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.1.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.1.tar.xz.asc`
-  - `PHP_SHA256=94c8a4fd419d45748951fa6d73bd55f6bdf0adaefb8814880a67baa66027311f`
+  - `PHP_VERSION=8.4.2`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.2.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.2.tar.xz.asc`
+  - `PHP_SHA256=92636453210f7f2174d6ee6df17a5811368f556a6c2c2cbcf019321e36456e01`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
   - `COMPOSER_VERSION=2.8.4`
@@ -234,16 +234,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r8 description:
+busybox-1.37.0-r9 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r8 webpage:
+busybox-1.37.0-r9 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r8 installed size:
+busybox-1.37.0-r9 installed size:
 798 KiB
 
-busybox-1.37.0-r8 license:
+busybox-1.37.0-r9 license:
 GPL-2.0-only
 
 ```
@@ -251,16 +251,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r8 description:
+busybox-binsh-1.37.0-r9 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r8 webpage:
+busybox-binsh-1.37.0-r9 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r8 installed size:
+busybox-binsh-1.37.0-r9 installed size:
 1 B
 
-busybox-binsh-1.37.0-r8 license:
+busybox-binsh-1.37.0-r9 license:
 GPL-2.0-only
 
 ```
@@ -1237,16 +1237,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r8 description:
+ssl_client-1.37.0-r9 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r8 webpage:
+ssl_client-1.37.0-r9 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r8 installed size:
+ssl_client-1.37.0-r9 installed size:
 14 KiB
 
-ssl_client-1.37.0-r8 license:
+ssl_client-1.37.0-r9 license:
 GPL-2.0-only
 
 ```
