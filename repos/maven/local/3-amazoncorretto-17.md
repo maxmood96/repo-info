@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4c9573f557aa2edca316e631056a2e23c4239825c35702805345e63388dc7c16`
+- Image ID: `sha256:898b0a2030e41dcb6c84a16e6544e8826fbaf149827b78673c576f525e4b9f9d`
 - Created: `2024-08-20T18:12:59Z`
-- Virtual Size: ~ 948.61 Mb  
+- Virtual Size: ~ 951.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -496,7 +496,7 @@ $ dnf --quiet download --source --url gnupg2-2.0.22-5.amzn2.0.5
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/92400c5dbbd4b99d1583478d648774dea8028235cafeed1b8315a7b22a6253fe/../../../../../blobstore/189e1bdc950a8e13918173d73835981842c90ee3b3cef07c116152a00b8b8a59/gnupg2-2.0.22-5.amzn2.0.5.src.rpm
 ```
 
-### `rpm` package: `gpg-pubkey-b04f24e3-5de94a19`
+### `rpm` package: `gpg-pubkey-b04f24e3-674f7571`
 
 Licenses (from `rpm --query`): pubkey
 
