@@ -1,9 +1,9 @@
-# `postfixadmin:3.3.14-apache`
+# `postfixadmin:3.3.15-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:76fdb71fb798622380ec00205f7286fd824d4b91e43710c8f2f1f6f3edd71bf5`
-- Created: `2024-11-22T13:33:57Z`
+- Image ID: `sha256:c01fe072deef23ad91f0207a9b617ae17d7aa53a0af2221ae82f602c6fceb255`
+- Created: `2024-12-21T02:12:45Z`
 - Virtual Size: ~ 516.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -23,8 +23,8 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.3.15.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.15.tar.xz.asc`
   - `PHP_SHA256=3df5d45637283f759eef8fc3ce03de829ded3e200c3da278936a684955d2f94f`
-  - `POSTFIXADMIN_VERSION=3.3.14`
-  - `POSTFIXADMIN_SHA512=18837c112e08f3a7d41d829d2f26f5e791d5a0b9b8d0ac458d9a266f5b1aac2f0d9e6b7ebec0c5324ac54d944ba81cba210b2cf82075bcf7ab588c7d96eb49fb`
+  - `POSTFIXADMIN_VERSION=3.3.15`
+  - `POSTFIXADMIN_SHA512=02c4a7fb0d5b148a2f9e73e0278a47d1ee63b29a0019cf510f04d33386fc50727c0dae728eafee688a136159ba462af1931fe0658daa06671459c43668867865`
   - `APACHE_DOCUMENT_ROOT=/var/www/html/public`
 - Labels:
   - `maintainer=David Goodwin <david@codepoets.co.uk> (@DavidGoodwin)`
