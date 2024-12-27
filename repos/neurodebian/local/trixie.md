@@ -1880,21 +1880,13 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 - `LGPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pinentry=1.2.1-4
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.1-4.dsc' pinentry_1.2.1-4.dsc 3209 SHA256:8c1240f043facebf25a5857788bd7166c79c556ef2d5c3ab8886ab178009cb9e
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.1.orig.tar.bz2' pinentry_1.2.1.orig.tar.bz2 547698 SHA256:457a185e5a85238fb945a955dc6352ab962dc8b48720b62fc9fa48c7540a4067
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.1.orig.tar.bz2.asc' pinentry_1.2.1.orig.tar.bz2.asc 390 SHA256:9f7d9c7509e4ff4161a043893d76183bd975230fcad671b643c90f78e500ba95
-'http://deb.debian.org/debian/pool/main/p/pinentry/pinentry_1.2.1-4.debian.tar.xz' pinentry_1.2.1-4.debian.tar.xz 20440 SHA256:8bf603ae85df7fd944ae43ef2ccdf537d6e14ef024800705232e1f81a3689754
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pinentry/1.2.1-4/
 
-- https://sources.debian.net/src/pinentry/1.2.1-4/ (for browsing the source)
-- https://sources.debian.net/src/pinentry/1.2.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pinentry/1.2.1-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-5`
 
