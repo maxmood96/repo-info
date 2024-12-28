@@ -1,10 +1,10 @@
-# `spark:3.5.3-scala2.12-java11-ubuntu`
+# `spark:3.5.4-scala2.12-java11-ubuntu`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2868de839703ecc7218d1d7c0a0cb76e8bab83b263c38dabe6b3f6f303d5dfa7`
-- Created: `2024-10-10T06:58:10Z`
-- Virtual Size: ~ 679.42 Mb  
+- Image ID: `sha256:f22cca3d9dfbda666a8aff58b3bbe56cdc87669d714bbb0d15ccdba200451a7b`
+- Created: `2024-12-22T05:28:31Z`
+- Virtual Size: ~ 679.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/entrypoint.sh"]`
@@ -15,9 +15,9 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.25+9`
-  - `SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz`
-  - `SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz.asc`
-  - `GPG_KEY=0A2D660358B6F6F8071FD16F6606986CF5A8447C`
+  - `SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.5.4/spark-3.5.4-bin-hadoop3.tgz`
+  - `SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.5.4/spark-3.5.4-bin-hadoop3.tgz.asc`
+  - `GPG_KEY=19F745C40A0E550420BB2C522541488DA93FE4B4`
   - `SPARK_HOME=/opt/spark`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`

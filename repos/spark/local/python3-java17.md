@@ -1,9 +1,9 @@
-# `spark:3.5.3-scala2.12-java17-python3-ubuntu`
+# `spark:3.5.4-scala2.12-java17-python3-ubuntu`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ee085b857bfc9a27b35cd340b562efe8840bb0f31aefe60325ce93f69a8045de`
-- Created: `2024-10-10T06:58:10Z`
+- Image ID: `sha256:da01889877f2309257e04ddba8e0865c4f3c1003135b034617eaa322664f4783`
+- Created: `2024-12-22T05:28:31Z`
 - Virtual Size: ~ 1.15 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,9 +15,9 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.13+11`
-  - `SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz`
-  - `SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz.asc`
-  - `GPG_KEY=0A2D660358B6F6F8071FD16F6606986CF5A8447C`
+  - `SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.5.4/spark-3.5.4-bin-hadoop3.tgz`
+  - `SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.5.4/spark-3.5.4-bin-hadoop3.tgz.asc`
+  - `GPG_KEY=19F745C40A0E550420BB2C522541488DA93FE4B4`
   - `SPARK_HOME=/opt/spark`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -564,20 +564,25 @@ $ apt-get source -qq --print-uris e2fsprogs=1.46.5-2ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5-2ubuntu1.2.debian.tar.xz' e2fsprogs_1.46.5-2ubuntu1.2.debian.tar.xz 86604 SHA512:acb7f22a63d9c0e58d626af655cdcb6e6cfcedafdd7edbc6b7b757d1b388ee04c416db98c577a8cdf2259c46ea16a679f9be770374515b21d93bd0af66bd2a1d
 ```
 
-### `dpkg` source package: `expat=2.4.7-1ubuntu0.4`
+### `dpkg` source package: `expat=2.4.7-1ubuntu0.5`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.4.7-1ubuntu0.4`
-- `libexpat1-dev:amd64=2.4.7-1ubuntu0.4`
+- `libexpat1:amd64=2.4.7-1ubuntu0.5`
+- `libexpat1-dev:amd64=2.4.7-1ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/libexpat1-dev/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris expat=2.4.7-1ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.5.dsc' expat_2.4.7-1ubuntu0.5.dsc 2141 SHA512:3af5d57b8d1fe10ff3de977c5b59b885e3f261a90a4794d7ec6f862fc2ed05fb5a4ae98e309a575c861638c79836fea43b9334468a260df35bb7e345a230324a
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7.orig.tar.gz' expat_2.4.7.orig.tar.gz 8316374 SHA512:91bc9792c4ba1d0ad835f633d8cfa62130692f48308eea8932ec5e13a01542120561b0f255b4adc58b1adae6f83632cbabf428b5b5c0d2ac6de542478a951232
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.5.debian.tar.xz' expat_2.4.7-1ubuntu0.5.debian.tar.xz 24740 SHA512:1f946e4b99b0d6182a9df7c98d27c4cdfb3ccb528fbd70c0019549480a5ff3d649050f2abdba66c51e0f165fd9b2856e248e26a085c386577dba674c49824c74
+```
 
 ### `dpkg` source package: `fakeroot=1.28-1ubuntu1`
 
@@ -928,11 +933,11 @@ $ apt-get source -qq --print-uris gnutls28=3.7.3-4ubuntu1.5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.7.3-4ubuntu1.5.debian.tar.xz' gnutls28_3.7.3-4ubuntu1.5.debian.tar.xz 88576 SHA512:aab7435e49efb1d7b8e4dd84c9fec9a9e68d56b6b78e95de9accfc7d3ec390ed397014374e22a86d0a193f01e8eba5bf46c85ef37c1794b51c673f3582fe2e35
 ```
 
-### `dpkg` source package: `gosu=1.14-1`
+### `dpkg` source package: `gosu=1.14-1ubuntu0.1`
 
 Binary Packages:
 
-- `gosu=1.14-1`
+- `gosu=1.14-1ubuntu0.1`
 
 Licenses: (parsed from: `/usr/share/doc/gosu/copyright`)
 
@@ -943,10 +948,10 @@ Licenses: (parsed from: `/usr/share/doc/gosu/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gosu=1.14-1
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.14-1.dsc' gosu_1.14-1.dsc 2021 SHA512:a0ab08dd928b4ff4239862ab728284e3549fa0b5dc30ed6c68269d606165deb1a64a4472f96277cf87ab33f67e17633b5deb9195f9d313e5878784267bff512e
+$ apt-get source -qq --print-uris gosu=1.14-1ubuntu0.1
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.14-1ubuntu0.1.dsc' gosu_1.14-1ubuntu0.1.dsc 2148 SHA512:d249396e83d49a7b219abc9fe1f4ca6e3b25c7d210cccd4da167e39550b833046ba190b6a934546382ce41a63f4c988c8df99bc0c4e7d5fcddb038546e15b688
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.14.orig.tar.gz' gosu_1.14.orig.tar.gz 16791 SHA512:258bc33bf7150f4520e8b5cd0497ccfe3ee83d39c866565ec5e0cfe3ccd28ef1a5694075b301936c94a45cd44621c44e28c3e0fcd0acd465a3a4fe5cff85adf2
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.14-1.debian.tar.xz' gosu_1.14-1.debian.tar.xz 3084 SHA512:bde4bc8b376cd0b663cc92ac3b54ed67848f590e3f2a41b73fdd2095ccc4d635d48ee45e0fbe7ae6667485f5f013525f65b185a9775e7dbea435bded3cb39d9f
+'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.14-1ubuntu0.1.debian.tar.xz' gosu_1.14-1ubuntu0.1.debian.tar.xz 3224 SHA512:71d9050bf5487d329666977f64096542e7aa5e3adfc17499815b0b11ebd2afa597b6ee3a1f6c04e66bfb8f0d6968d96eeacea8a6dde9ed6f4d9c14c7fcd2b9d9
 ```
 
 ### `dpkg` source package: `grep=3.7-1build1`
@@ -1450,11 +1455,11 @@ $ apt-get source -qq --print-uris libgcrypt20=1.9.4-3ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgcrypt20/libgcrypt20_1.9.4-3ubuntu3.debian.tar.xz' libgcrypt20_1.9.4-3ubuntu3.debian.tar.xz 35172 SHA512:fec6751987d91e0234a9da212456763045eabf52166fb30f4832db0460b0a250caff879ac9c80dddf5697945e3a5b1effa036206b96fbf047f2bb705d74a5245
 ```
 
-### `dpkg` source package: `libgd2=2.3.0-2ubuntu2`
+### `dpkg` source package: `libgd2=2.3.0-2ubuntu2.3`
 
 Binary Packages:
 
-- `libgd3:amd64=2.3.0-2ubuntu2`
+- `libgd3:amd64=2.3.0-2ubuntu2.3`
 
 Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 
@@ -1473,10 +1478,10 @@ Licenses: (parsed from: `/usr/share/doc/libgd3/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libgd2=2.3.0-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.3.0-2ubuntu2.dsc' libgd2_2.3.0-2ubuntu2.dsc 2318 SHA512:96c030bf2491b412fa423cbac1b2f2d3ace638a99c66ea8e7f55cd1c409d1fa5999a7fd02968949eb56fb8b28dc03d61e4464d0de13a5ef7428051b133ccc235
+$ apt-get source -qq --print-uris libgd2=2.3.0-2ubuntu2.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.3.0-2ubuntu2.3.dsc' libgd2_2.3.0-2ubuntu2.3.dsc 2371 SHA512:dc97e4b404e1b5f3f2723b9dfca188a9948295bd2fecb91cbcadc195e5f9e059f60318f8996a6364fb103b0fc5f719e9193c0afae5096ecc28c31e51c7a42b55
 'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.3.0.orig.tar.gz' libgd2_2.3.0.orig.tar.gz 3102749 SHA512:1ffdbe41f24fcdb22f5b195b8f1a22650a3dc30a798c23a7ee1a93acfdb70c2608d97ff908a01246ad44e1cfc13dbd20cc006d7a25b882907489daa1880db30b
-'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.3.0-2ubuntu2.debian.tar.xz' libgd2_2.3.0-2ubuntu2.debian.tar.xz 34548 SHA512:992da1a98982cca39cd6df17c963b4f4e169d99a9331c74ad5f02eb80371c909b51d83c7362df96ed41cc2206ff478bd705f2d983de90456c8560601aaa25732
+'http://archive.ubuntu.com/ubuntu/pool/main/libg/libgd2/libgd2_2.3.0-2ubuntu2.3.debian.tar.xz' libgd2_2.3.0-2ubuntu2.3.debian.tar.xz 35264 SHA512:e7dfcd3c44a13f3c85d8d0e011b94c022d13c6bb37c069e4c7f8a70f45b19c90a828052520bd61e49cb5e4637ab22245fdbbb97f4001f9f1b39e7a9689049d16
 ```
 
 ### `dpkg` source package: `libgpg-error=1.43-3`
@@ -2133,19 +2138,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-124.134`
+### `dpkg` source package: `linux=5.15.0-130.140`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-124.134`
+- `linux-libc-dev:amd64=5.15.0-130.140`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.15.0-130.140
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-130.140.dsc' linux_5.15.0-130.140.dsc 7758 SHA512:bc3e963f1a9a9e944146defe883ac08ff9bcd333e62dc897e528f9b3f6197ade8201aef4bdc8ee2556a1b50610f918a4e074dc1bc8c7d9dfdfaa89f8584b7875
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-130.140.diff.gz' linux_5.15.0-130.140.diff.gz 11155671 SHA512:5d4335b5e1b9309343580d7c22574e119d42e02aadc98d1249cb6d66bbe98efb738733da23bf606b398437feaabe18fbcea69d677c41938c192485ac8cff4150
+```
 
 ### `dpkg` source package: `lmdb=0.9.24-1build2`
 
@@ -2841,11 +2851,11 @@ $ apt-get source -qq --print-uris procps=2:3.3.17-6ubuntu2.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.17-6ubuntu2.1.debian.tar.xz' procps_3.3.17-6ubuntu2.1.debian.tar.xz 35488 SHA512:720a52d14be82aecd59e2456fbb19574c99cc5281660a36994ef4aa619c14bbec43fd30b5e949446e5db6b6bebf8003a5f173298fe8bf56ac949d61ad0225a79
 ```
 
-### `dpkg` source package: `python-pip=22.0.2+dfsg-1ubuntu0.4`
+### `dpkg` source package: `python-pip=22.0.2+dfsg-1ubuntu0.5`
 
 Binary Packages:
 
-- `python3-pip=22.0.2+dfsg-1ubuntu0.4`
+- `python3-pip=22.0.2+dfsg-1ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/python3-pip/copyright`)
 
@@ -2907,17 +2917,17 @@ $ apt-get source -qq --print-uris python3-stdlib-extensions=3.10.8-1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.10.8-1%7e22.04.debian.tar.xz' python3-stdlib-extensions_3.10.8-1~22.04.debian.tar.xz 25884 SHA512:214b4a62091181291a22ce1a2016e5b3d8f24f62f245494f82bd3a527b46886f1537f1e33fcde5261c81cb50d6d177cdeb899955d7da7c367511594ed99825ce
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.6`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.7`
 
 Binary Packages:
 
-- `libpython3.10:amd64=3.10.12-1~22.04.6`
-- `libpython3.10-dev:amd64=3.10.12-1~22.04.6`
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.6`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.6`
-- `python3.10=3.10.12-1~22.04.6`
-- `python3.10-dev=3.10.12-1~22.04.6`
-- `python3.10-minimal=3.10.12-1~22.04.6`
+- `libpython3.10:amd64=3.10.12-1~22.04.7`
+- `libpython3.10-dev:amd64=3.10.12-1~22.04.7`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.7`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.7`
+- `python3.10=3.10.12-1~22.04.7`
+- `python3.10-dev=3.10.12-1~22.04.7`
+- `python3.10-minimal=3.10.12-1~22.04.7`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/doc/libpython3.10-dev/copyright`, `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-dev/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -2939,9 +2949,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/do
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.7.dsc' python3.10_3.10.12-1~22.04.7.dsc 3674 SHA512:0db6a66ee8b37d71299d0f2c92e13fee807ccaf864dc831d999fb3127729b515bd8b40406fb6dd35c2cb51c2139a2cd7c4d28480e172234a9a2b362d14313c6c
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.7.debian.tar.xz' python3.10_3.10.12-1~22.04.7.debian.tar.xz 245668 SHA512:caa1f59358b0a1d737723be6a67e2a5a72ffc25253bf01da17f5626f791c7be07870d1fcc3cb1b2ff12c2b8f6dc270acc9d84c117576e54c7005ef242b330301
+```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 

@@ -1,9 +1,9 @@
-# `spark:3.5.3-scala2.12-java11-r-ubuntu`
+# `spark:3.5.4-scala2.12-java11-r-ubuntu`
 
 ## Docker Metadata
 
-- Image ID: `sha256:29c6ea63977069d084c2567be35e826de674545df0b8888ce02b07575954f110`
-- Created: `2024-10-10T06:58:10Z`
+- Image ID: `sha256:2998c2688f56ab275c485eff517554782450e4e81626f1af5c533666e50f0979`
+- Created: `2024-12-22T05:28:31Z`
 - Virtual Size: ~ 1.32 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,9 +15,9 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.25+9`
-  - `SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz`
-  - `SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.5.3/spark-3.5.3-bin-hadoop3.tgz.asc`
-  - `GPG_KEY=0A2D660358B6F6F8071FD16F6606986CF5A8447C`
+  - `SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.5.4/spark-3.5.4-bin-hadoop3.tgz`
+  - `SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.5.4/spark-3.5.4-bin-hadoop3.tgz.asc`
+  - `GPG_KEY=19F745C40A0E550420BB2C522541488DA93FE4B4`
   - `SPARK_HOME=/opt/spark`
   - `R_HOME=/usr/lib/R`
 - Labels:
@@ -984,12 +984,12 @@ $ apt-get source -qq --print-uris gdbm=1.18.1-5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.18.1-5.debian.tar.xz' gdbm_1.18.1-5.debian.tar.xz 16348 SHA256:3c1a0e05b40a97ee51ce77c736c72c37738ba31b2720111d3bc99175a2c3a3ed
 ```
 
-### `dpkg` source package: `glib2.0=2.64.6-1~ubuntu20.04.7`
+### `dpkg` source package: `glib2.0=2.64.6-1~ubuntu20.04.8`
 
 Binary Packages:
 
-- `libglib2.0-0:amd64=2.64.6-1~ubuntu20.04.7`
-- `libglib2.0-data=2.64.6-1~ubuntu20.04.7`
+- `libglib2.0-0:amd64=2.64.6-1~ubuntu20.04.8`
+- `libglib2.0-data=2.64.6-1~ubuntu20.04.8`
 
 Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc/libglib2.0-data/copyright`)
 
@@ -997,9 +997,14 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris glib2.0=2.64.6-1~ubuntu20.04.8
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.6-1%7eubuntu20.04.8.dsc' glib2.0_2.64.6-1~ubuntu20.04.8.dsc 3338 SHA512:bebdd47535bbe58054ff42bf270bef84cbf941b794d1ca55e1fc7e63c5f82a185c199e713a6ae5b2c31a131fb5d73da6f11765380d44f03057780b35f19078d3
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.6.orig.tar.xz' glib2.0_2.64.6.orig.tar.xz 4781576 SHA512:5cd82c4d9b143e7aa130c24e25fb9def06dd915ef8ad8ed3883931bf5cddecf69c2e669ef6aa1d910484ede75b671e7c48a4f3fe50aa78955bff57b04f0cf958
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glib2.0/glib2.0_2.64.6-1%7eubuntu20.04.8.debian.tar.xz' glib2.0_2.64.6-1~ubuntu20.04.8.debian.tar.xz 149448 SHA512:9c70a3596576e5cac959e4a9f91f2b55e9d7a39e5dd37593147e98f2be93fa441fb4b64f507d4cb96fef3a31062a4dc44034b39d2a38d075ab1dfba7ee327eb4
+```
 
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.16`
 
@@ -3695,19 +3700,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4%2bdfsg-3ubuntu0.1.debian.tar.xz' libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz 17300 SHA512:0484891be5603d00bd57b799c708b9395fccbaa8c6c44f535377f6fa2c7ac22c01c8a3c1b45e1c1f3c30f19dc74d510626bf82067fcbfb53c39f1bcc2249affe
 ```
 
-### `dpkg` source package: `linux=5.4.0-198.218`
+### `dpkg` source package: `linux=5.4.0-204.224`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.4.0-198.218`
+- `linux-libc-dev:amd64=5.4.0-204.224`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.4.0-204.224
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-204.224.dsc' linux_5.4.0-204.224.dsc 7418 SHA512:bdde0b49cc23946806302ad002ca27ed4356303a505741283fcadcb2b0041873faeb4377baf8f17dc16d64b92788f4a4fb695e1e4238d257b2f2a7ca970f00f1
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-204.224.diff.gz' linux_5.4.0-204.224.diff.gz 9836816 SHA512:2a83dda5b296dab8d56f554ac6f31ea45abd62432ee3ae78fef43e580004ee07b6435d6075568eaa2614c2670ee1a8b8af2017946d8405c0fdfd89a2ac3ea6a7
+```
 
 ### `dpkg` source package: `llvm-toolchain-12=1:12.0.0-3ubuntu1~20.04.5`
 
