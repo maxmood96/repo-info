@@ -347,15 +347,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris cdebconf=0.274
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.274.dsc' cdebconf_0.274.dsc 2707 SHA256:ec08db9e6d8cc24f7747ca2090701154a21115b45d2d31c938b9d6105552d691
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.274.tar.xz' cdebconf_0.274.tar.xz 284912 SHA256:5488e03ad1269a6b8fbc3427ad4cac305ac896c90e57cf11f882cceb3eecba10
+'http://http.debian.net/debian/pool/main/c/cdebconf/cdebconf_0.274.dsc' cdebconf_0.274.dsc 2707 SHA256:ec08db9e6d8cc24f7747ca2090701154a21115b45d2d31c938b9d6105552d691
+'http://http.debian.net/debian/pool/main/c/cdebconf/cdebconf_0.274.tar.xz' cdebconf_0.274.tar.xz 284912 SHA256:5488e03ad1269a6b8fbc3427ad4cac305ac896c90e57cf11f882cceb3eecba10
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/cdebconf/0.274/ (for browsing the source)
-- https://sources.debian.net/src/cdebconf/0.274/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cdebconf/0.274/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cluster=2.1.8-1`
 
@@ -1713,17 +1707,11 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libgpg-error=1.51-2
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.51-2.dsc' libgpg-error_1.51-2.dsc 2935 SHA256:a41a00868707d70d95e45180440bcf768826fda08116c5a68ac68ebd8ce09ab0
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.51.orig.tar.bz2' libgpg-error_1.51.orig.tar.bz2 1085510 SHA256:be0f1b2db6b93eed55369cdf79f19f72750c8c7c39fc20b577e724545427e6b2
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.51.orig.tar.bz2.asc' libgpg-error_1.51.orig.tar.bz2.asc 228 SHA256:5e8c9179635b3105f4c07d09168fda9ce039607e926628aec6a06134908be918
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.51-2.debian.tar.xz' libgpg-error_1.51-2.debian.tar.xz 19800 SHA256:0b36279edb54d572cf85e20f392b932583090b760c2209cf826f2a4c116273de
+'http://http.debian.net/debian/pool/main/libg/libgpg-error/libgpg-error_1.51-2.dsc' libgpg-error_1.51-2.dsc 2935 SHA256:a41a00868707d70d95e45180440bcf768826fda08116c5a68ac68ebd8ce09ab0
+'http://http.debian.net/debian/pool/main/libg/libgpg-error/libgpg-error_1.51.orig.tar.bz2' libgpg-error_1.51.orig.tar.bz2 1085510 SHA256:be0f1b2db6b93eed55369cdf79f19f72750c8c7c39fc20b577e724545427e6b2
+'http://http.debian.net/debian/pool/main/libg/libgpg-error/libgpg-error_1.51.orig.tar.bz2.asc' libgpg-error_1.51.orig.tar.bz2.asc 228 SHA256:5e8c9179635b3105f4c07d09168fda9ce039607e926628aec6a06134908be918
+'http://http.debian.net/debian/pool/main/libg/libgpg-error/libgpg-error_1.51-2.debian.tar.xz' libgpg-error_1.51-2.debian.tar.xz 19800 SHA256:0b36279edb54d572cf85e20f392b932583090b760c2209cf826f2a4c116273de
 ```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libgpg-error/1.51-2/ (for browsing the source)
-- https://sources.debian.net/src/libgpg-error/1.51-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgpg-error/1.51-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
@@ -3340,10 +3328,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris survival=3.7-0-1
-'http://http.debian.net/debian/pool/main/s/survival/survival_3.7-0-1.dsc' survival_3.7-0-1.dsc 1861 SHA256:c92017025736f7ac54a3de80be0308712394fb16a7254c4767a77d9a33a1b79b
-'http://http.debian.net/debian/pool/main/s/survival/survival_3.7-0.orig.tar.gz' survival_3.7-0.orig.tar.gz 6918683 SHA256:cd96b08ec928b0028f69c942cc788e190b4543c8518d71deb6d8a712de44feef
-'http://http.debian.net/debian/pool/main/s/survival/survival_3.7-0-1.debian.tar.xz' survival_3.7-0-1.debian.tar.xz 6368 SHA256:0477f8f04224af8b57003d3b1c7609b5007075c925c799311d02d05807b119bc
+'http://deb.debian.org/debian/pool/main/s/survival/survival_3.7-0-1.dsc' survival_3.7-0-1.dsc 1861 SHA256:c92017025736f7ac54a3de80be0308712394fb16a7254c4767a77d9a33a1b79b
+'http://deb.debian.org/debian/pool/main/s/survival/survival_3.7-0.orig.tar.gz' survival_3.7-0.orig.tar.gz 6918683 SHA256:cd96b08ec928b0028f69c942cc788e190b4543c8518d71deb6d8a712de44feef
+'http://deb.debian.org/debian/pool/main/s/survival/survival_3.7-0-1.debian.tar.xz' survival_3.7-0-1.debian.tar.xz 6368 SHA256:0477f8f04224af8b57003d3b1c7609b5007075c925c799311d02d05807b119bc
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/survival/3.7-0-1/ (for browsing the source)
+- https://sources.debian.net/src/survival/3.7-0-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/survival/3.7-0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=257-2`
 
@@ -3363,20 +3357,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257-2
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257-2.dsc' systemd_257-2.dsc 8637 SHA256:b31c86ed8f884e46a93732e81e449ae47ac85fef0289dfd56a4fc8c2f1dc4185
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.orig.tar.gz' systemd_257.orig.tar.gz 16184128 SHA256:14f6907eb5e289d8c39cbe1ef891ca54d8a0e3582c986a9ef5844b3f29add43b
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257-2.debian.tar.xz' systemd_257-2.debian.tar.xz 177008 SHA256:c51150b61571a668c6a8f551cfed786f7e703d014d2e2b8ff5cbf2c58bf84c26
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257-2/
 
-- https://sources.debian.net/src/systemd/257-2/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.11-1`
 
