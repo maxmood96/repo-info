@@ -1,7 +1,7 @@
 ## `xwiki:16-postgres-tomcat`
 
 ```console
-$ docker pull xwiki@sha256:fe28da0c9d1359bf8b0a31bcf5f6d1ae3fe17d00cca03f2f99eae16968b66327
+$ docker pull xwiki@sha256:157de80c839b4d3b0854c0d135ac0c9efb2e7e805404182e793eeeafba340a53
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull xwiki@sha256:fe28da0c9d1359bf8b0a31bcf5f6d1ae3fe17d00cca03f2f99eae
 ### `xwiki:16-postgres-tomcat` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:ce0170d0640792260efd534e553fb515ebe7458bb9d071ddaa497aac4b1eb80f
+$ docker pull xwiki@sha256:0b99f36dfbd2ef57a4780de07f7848e3ce171252590317572d77a8569bf3ac33
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **616.1 MB (616056273 bytes)**  
+-	Total Size: **616.7 MB (616745311 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:30c847cb57a0b94d574e579101fd459c26530094566312b18a83d1325010d637`
+-	Image ID: `sha256:01da7fed96402395a518baa3155c68d8e9c59568baa78cc0188b098ce920b839`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -87,53 +87,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Mon, 09 Dec 2024 15:07:33 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 10 Dec 2024 13:44:08 GMT
-ENV XWIKI_VERSION=16.10.1
-# Tue, 10 Dec 2024 13:44:08 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.1
-# Tue, 10 Dec 2024 13:44:08 GMT
-ENV XWIKI_DOWNLOAD_SHA256=f9f365da951626711ec44aebd0276517d8fe1522b1c209c0d3af9c302071ee6e
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
+ENV XWIKI_VERSION=16.10.2
+# Thu, 26 Dec 2024 14:50:58 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.2
+# Thu, 26 Dec 2024 14:50:58 GMT
+ENV XWIKI_DOWNLOAD_SHA256=1a6287416db4243e3d40939e19509ca4ebe9e4f46f8fcf7204f223bcfff8b6e2
+# Thu, 26 Dec 2024 14:50:58 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.4
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 ENV POSTGRES_JDBC_SHA256=188976721ead8e8627eb6d8389d500dccc0c9bebd885268a3047180274a6031e
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.4
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.4.jar
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.4.jar
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 CMD ["xwiki"]
 ```
 
@@ -178,69 +178,69 @@ CMD ["xwiki"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f252d90fb0412a34ebc9b9eab84390958b0153dfd287ead64441d17c9b6b4a18`  
-		Last Modified: Tue, 10 Dec 2024 18:33:53 GMT  
-		Size: 191.2 MB (191150010 bytes)  
+	-	`sha256:65617dbff51c1f06441344503541ce3f17186f02878481ffb184455de446e8f4`  
+		Last Modified: Fri, 27 Dec 2024 21:28:43 GMT  
+		Size: 191.7 MB (191716843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aac3cec3b1f6cc14ed9d4ee312ccea4a01826be586975771133a332850515ab5`  
-		Last Modified: Tue, 10 Dec 2024 18:33:54 GMT  
-		Size: 316.6 MB (316575348 bytes)  
+	-	`sha256:710c43745b5a2f2d4b9504f4dcfc936d83ec7fd09463c7ac545cb577e2662dec`  
+		Last Modified: Fri, 27 Dec 2024 21:28:44 GMT  
+		Size: 316.7 MB (316697546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea7d73845f7278ba60e0eab390816c15082e5f7f908d7bfb7281c1c1d8f484ac`  
-		Last Modified: Tue, 10 Dec 2024 18:33:49 GMT  
-		Size: 1.0 MB (1013642 bytes)  
+	-	`sha256:d6012eda87da4d74d90829f9235fca45c2d55c8993dcf8907934d97317dca032`  
+		Last Modified: Fri, 27 Dec 2024 21:28:40 GMT  
+		Size: 1.0 MB (1013645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0fd1bce81e7d156190808910a5f73521f05c09a8558984e231b2a64784876548`  
-		Last Modified: Tue, 10 Dec 2024 18:33:49 GMT  
-		Size: 1.3 KB (1338 bytes)  
+	-	`sha256:3df505db3de1a4e5b0cfcdb55d8d245d274eb44864bdd219e8bc811c14dc7fff`  
+		Last Modified: Fri, 27 Dec 2024 21:28:40 GMT  
+		Size: 1.3 KB (1342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b911fb7f195d4d06bc082abc633a602cb1c6858e3185b915756545ba970b6ce1`  
-		Last Modified: Tue, 10 Dec 2024 18:33:50 GMT  
-		Size: 2.5 KB (2461 bytes)  
+	-	`sha256:2bd68f0a59b695ae27f93da18558dbc06356e36c39749e8b660147b98ea0c927`  
+		Last Modified: Fri, 27 Dec 2024 21:28:41 GMT  
+		Size: 2.5 KB (2462 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7bebbafdc70236d607b5cab85ba417a590169ecbd35dea8ffe65d72781d5d6ad`  
-		Last Modified: Tue, 10 Dec 2024 18:33:50 GMT  
-		Size: 6.6 KB (6598 bytes)  
+	-	`sha256:b0f7ed08b65873889d67484db010df2da464b2f10c3fd723262c4398fcdb2bf4`  
+		Last Modified: Fri, 27 Dec 2024 21:28:41 GMT  
+		Size: 6.6 KB (6597 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f48b8234fa27daa7b1bb30a1fe87ced19eaf38568270039026a3a5fbed70d56`  
-		Last Modified: Tue, 10 Dec 2024 18:33:51 GMT  
+	-	`sha256:72428bf313c6237e491cdf6baf5dbb2fb3e4346b97496d98742e4ae4f6f59e15`  
+		Last Modified: Fri, 27 Dec 2024 21:28:42 GMT  
 		Size: 2.4 KB (2418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:16-postgres-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:8860eea9bf5d5f610745b136d481d09415ce4de60c3f3fae0d47a8eebb9fb02e
+$ docker pull xwiki@sha256:af03703d150473b50d9634490637d07e710c9026cec5b583225fcff0c1042786
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 MB (8836276 bytes)**  
+-	Total Size: **8.8 MB (8795568 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9362dc17e9a9dd6e676b2543284a7a9d23c362c10a806d077db5c54b8a76639`
+-	Image ID: `sha256:0ee69a2c6029bcfbb737c8a7a226c5aaf864e24ece9cfd1e529adae0286528ba`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fd25d8ad9fc0bc6856df04a200309bd63ab4d16b433ee473a1de6c98e7d376b6`  
-		Last Modified: Tue, 10 Dec 2024 18:33:49 GMT  
-		Size: 8.8 MB (8794953 bytes)  
+	-	`sha256:8365244c1f9bb571a77e35c3b51708ead115e1a74d68271b1d660ff4ecc11695`  
+		Last Modified: Fri, 27 Dec 2024 21:28:40 GMT  
+		Size: 8.8 MB (8753615 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2b1be66ef8bcebfdd2d0f6cc0365fff0bab85bb7cfa0ba91485614e540fb9f0c`  
-		Last Modified: Tue, 10 Dec 2024 18:33:49 GMT  
-		Size: 41.3 KB (41323 bytes)  
+	-	`sha256:2f0b87baab0d18e0cccf50bcd689b1f4ee27c654afcc2cccb478107f1e0eeead`  
+		Last Modified: Fri, 27 Dec 2024 21:28:40 GMT  
+		Size: 42.0 KB (41953 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:16-postgres-tomcat` - linux; arm64 variant v8
 
 ```console
-$ docker pull xwiki@sha256:fef84e3a0e817bc0cbbcdf6e14f2eff545e28ba2a2e7215b1263574b6c1c6091
+$ docker pull xwiki@sha256:a3979e6b3aa70bfbb9e4874a8325ee47bd9f4e4fb78c1e76b91c1723c03a571e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **612.4 MB (612386716 bytes)**  
+-	Total Size: **612.5 MB (612508932 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ad59dfc001875ee47237e9c1df43055def9eec1c41b2c6c7ad0938ed9c7f8f21`
+-	Image ID: `sha256:e74d81ac8dc9267c32e3cdd09c74fe57784f210bf300834ba2b7ac3e6d2a785d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -307,53 +307,53 @@ EXPOSE map[8080/tcp:{}]
 ENTRYPOINT []
 # Mon, 09 Dec 2024 15:07:33 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 10 Dec 2024 13:44:08 GMT
-ENV XWIKI_VERSION=16.10.1
-# Tue, 10 Dec 2024 13:44:08 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.1
-# Tue, 10 Dec 2024 13:44:08 GMT
-ENV XWIKI_DOWNLOAD_SHA256=f9f365da951626711ec44aebd0276517d8fe1522b1c209c0d3af9c302071ee6e
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
+ENV XWIKI_VERSION=16.10.2
+# Thu, 26 Dec 2024 14:50:58 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.2
+# Thu, 26 Dec 2024 14:50:58 GMT
+ENV XWIKI_DOWNLOAD_SHA256=1a6287416db4243e3d40939e19509ca4ebe9e4f46f8fcf7204f223bcfff8b6e2
+# Thu, 26 Dec 2024 14:50:58 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 ENV POSTGRES_JDBC_VERSION=42.7.4
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 ENV POSTGRES_JDBC_SHA256=188976721ead8e8627eb6d8389d500dccc0c9bebd885268a3047180274a6031e
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 ENV POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.4
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 ENV POSTGRES_JDBC_ARTIFACT=postgresql-42.7.4.jar
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 ENV POSTGRES_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/postgresql-42.7.4.jar
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 RUN curl -fSL "${POSTGRES_JDBC_PREFIX}/${POSTGRES_JDBC_ARTIFACT}" -o $POSTGRES_JDBC_TARGET &&   echo "$POSTGRES_JDBC_SHA256 $POSTGRES_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 10 Dec 2024 13:44:08 GMT
+# Thu, 26 Dec 2024 14:50:58 GMT
 CMD ["xwiki"]
 ```
 
@@ -402,51 +402,51 @@ CMD ["xwiki"]
 		Last Modified: Tue, 10 Dec 2024 05:14:01 GMT  
 		Size: 188.8 MB (188824761 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49ecc45da93017188fdb06549bf6d830a1a997dbb743ba1b8a5218214d811c25`  
-		Last Modified: Tue, 10 Dec 2024 18:32:16 GMT  
-		Size: 316.6 MB (316575340 bytes)  
+	-	`sha256:d17d87795e7b89f39ec173a9bba3ced87c89c72c265d23e359b0bd6b0477a228`  
+		Last Modified: Fri, 27 Dec 2024 21:29:44 GMT  
+		Size: 316.7 MB (316697546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:20b0c92704c1f336e4fd2013b39b3a32d92b8fc11ec280ce0745b5474fafc7de`  
-		Last Modified: Tue, 10 Dec 2024 18:32:06 GMT  
-		Size: 1.0 MB (1013639 bytes)  
+	-	`sha256:ac0e3ef88799a5a8e5588228f144a6b4fd66d0d0a2d2c9a63730e9b44a1db937`  
+		Last Modified: Fri, 27 Dec 2024 21:42:16 GMT  
+		Size: 1.0 MB (1013643 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1a7f275bd7925bd4b998b4ad3ee9f92356b1af17ba8a605b6bf2b6a58eee1b7d`  
-		Last Modified: Tue, 10 Dec 2024 18:32:06 GMT  
-		Size: 1.3 KB (1343 bytes)  
+	-	`sha256:f7df5ffd408c37bdb1dc742fb080b891948bc24db22dae85eabaa199d678254a`  
+		Last Modified: Fri, 27 Dec 2024 21:42:16 GMT  
+		Size: 1.3 KB (1345 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:612d5a97b84bd07d3fc4dc91fc7bd0f33ab0919f5a7659152fe4399a3aef3a12`  
-		Last Modified: Tue, 10 Dec 2024 18:32:06 GMT  
-		Size: 2.5 KB (2462 bytes)  
+	-	`sha256:1179c2f5bd0866033ddadf6227e0f60db1a1b71ffae943fea393cf1ca17f50eb`  
+		Last Modified: Fri, 27 Dec 2024 21:42:15 GMT  
+		Size: 2.5 KB (2466 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d451776453cd4ca2d273d34beb8eb5011b42fa22b462926f302cce50b6390c8d`  
-		Last Modified: Tue, 10 Dec 2024 18:32:07 GMT  
+	-	`sha256:1ceecdc551489255f28f78cfa0a51dd3407a02a08c0a97624d8d35bd7757d099`  
+		Last Modified: Fri, 27 Dec 2024 21:42:16 GMT  
 		Size: 6.6 KB (6599 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd10a2f7c33409d141740ded05b6b9fa3516d3c26a491f9c05ac379ca736dc09`  
-		Last Modified: Tue, 10 Dec 2024 18:32:07 GMT  
+	-	`sha256:6f411800101742fdc8d4857b11799d85517d982910c67d81d8bf4a132963e739`  
+		Last Modified: Fri, 27 Dec 2024 21:42:16 GMT  
 		Size: 2.4 KB (2419 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:16-postgres-tomcat` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:7566fd457c4e721f9549dcb247efe5b393805ce0373b9a6a5695c77f3cfb5c59
+$ docker pull xwiki@sha256:490da88b2e20a372ef6df9cb4abfbf92e224a53f75b54fcbdfb2b2c889fe6e51
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 MB (8837201 bytes)**  
+-	Total Size: **8.8 MB (8796500 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4cca9b23861e1755e62ac0b2345f2b4b1b6876976612a22e7c1c2d2c3c3cfd74`
+-	Image ID: `sha256:bace8789c964388f7e400ead93327b414eee6167cc5e477dc2131d787cd73318`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f5cef13c927358002d8e8124913107d2cf01e76cd92bcac00555e0fda32778df`  
-		Last Modified: Tue, 10 Dec 2024 18:32:06 GMT  
-		Size: 8.8 MB (8795705 bytes)  
+	-	`sha256:27cb7c5f7a1585e705b08f5c2b587208542b72d69cc084ab06188f836c1356fe`  
+		Last Modified: Fri, 27 Dec 2024 21:42:16 GMT  
+		Size: 8.8 MB (8754350 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:419fdf21c458d7e156cc4c6e5415c78f92ed4d7a6296bb93236ba0e468b05208`  
-		Last Modified: Tue, 10 Dec 2024 18:32:06 GMT  
-		Size: 41.5 KB (41496 bytes)  
+	-	`sha256:11f6a7745f70415cac13490af9ebdb0236d812d09f71916fe8f91454c9881d6d`  
+		Last Modified: Fri, 27 Dec 2024 21:42:15 GMT  
+		Size: 42.1 KB (42150 bytes)  
 		MIME: application/vnd.in-toto+json
