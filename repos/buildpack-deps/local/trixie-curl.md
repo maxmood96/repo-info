@@ -527,19 +527,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.87
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.87.dsc' debconf_1.5.87.dsc 2035 SHA256:f46059b530efcb86082ee703225356869727e25babf9c3ad0c4a2e48f87e2977
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.87.tar.xz' debconf_1.5.87.tar.xz 574232 SHA256:2b813be2ab3904a9194a07f2d97ab8e1d79c47ec2ca2f6a1f238c3cb4ff31c66
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.87/
 
-- https://sources.debian.net/src/debconf/1.5.87/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.87/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.87/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2023.4`
 
@@ -2014,20 +2008,13 @@ Licenses: (parsed from: `/usr/share/doc/libldap-2.5-0/copyright`)
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.5.18+dfsg-3
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.18%2bdfsg-3.dsc' openldap_2.5.18+dfsg-3.dsc 3312 SHA256:d6683f3fb2b6ffa87a1f2d1fc27df8897c7c6b84a2350257a255cbc3624f275c
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.18%2bdfsg.orig.tar.xz' openldap_2.5.18+dfsg.orig.tar.xz 3684372 SHA256:06c2f0ee591594ae28cfbde843a70b3e009b1f09d7f3110a1570236ac46a86b5
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.18%2bdfsg-3.debian.tar.xz' openldap_2.5.18+dfsg-3.debian.tar.xz 170524 SHA256:3659cea45ff2027712f2fe95ccff5fe1a0806769092670cabf53d05291f08e8c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.5.18+dfsg-3/
 
-- https://sources.debian.net/src/openldap/2.5.18+dfsg-3/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.5.18+dfsg-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.5.18+dfsg-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.3.2-2`
 
@@ -2081,21 +2068,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `customFSFUL`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.25.5-2
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.5-2.dsc' p11-kit_0.25.5-2.dsc 2538 SHA256:5953f5639503fe32217117e222bbc231130d9e79dda74259b4017b7bfc5bd910
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.5.orig.tar.xz' p11-kit_0.25.5.orig.tar.xz 1002056 SHA256:04d0a86450cdb1be018f26af6699857171a188ac6d5b8c90786a60854e1198e5
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.5.orig.tar.xz.asc' p11-kit_0.25.5.orig.tar.xz.asc 228 SHA256:066c92b9d2accb2fda6a2f71e676fb6526fcc153051b1f04ee7d7c8c96a09989
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.5-2.debian.tar.xz' p11-kit_0.25.5-2.debian.tar.xz 24108 SHA256:df84eb66f6dd2a53796dfbb2edc58a4b37046b19a8d186baf072163cd6c9c528
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.25.5-2/
 
-- https://sources.debian.net/src/p11-kit/0.25.5-2/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.25.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.25.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.5.3-7`
 
@@ -2537,8 +2516,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris usrmerge=39
-'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_39.dsc' usrmerge_39.dsc 981 SHA256:44027067423faefd31ac321c283fc9b07184fecbd5304ed41490c03825b89a28
-'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_39.tar.xz' usrmerge_39.tar.xz 14908 SHA256:90b4ee198469292da4ee8b4ce2ec7b3ec439d61e6beb3ed9d3fa82b0e46e7fa3
+'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_39%2bnmu2.dsc' usrmerge_39+nmu2.dsc 1720 SHA256:989e4db1bb4c246e84bfcd69a17a28ce8018d51722a0c34b0507ef1466e01f97
+'http://deb.debian.org/debian/pool/main/u/usrmerge/usrmerge_39%2bnmu2.tar.xz' usrmerge_39+nmu2.tar.xz 15024 SHA256:b923b6563cc4f18b95b97682d0611576744b9958df773aebd7a35824beb25735
 ```
 
 Other potentially useful URLs:
