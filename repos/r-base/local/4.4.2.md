@@ -152,9 +152,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris base-passwd=3.6.5
-'http://http.debian.net/debian/pool/main/b/base-passwd/base-passwd_3.6.5.dsc' base-passwd_3.6.5.dsc 1762 SHA256:18802a37a5b32e5271e27512f3017c9aaf91497e96517fa5c586a50b03c71f6c
-'http://http.debian.net/debian/pool/main/b/base-passwd/base-passwd_3.6.5.tar.xz' base-passwd_3.6.5.tar.xz 60064 SHA256:bd30ab67b1f8029d3e70d3419e5033fb4595ab91c91307c3b7c00978e8d111b2
+'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.5.dsc' base-passwd_3.6.5.dsc 1762 SHA256:18802a37a5b32e5271e27512f3017c9aaf91497e96517fa5c586a50b03c71f6c
+'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.5.tar.xz' base-passwd_3.6.5.tar.xz 60064 SHA256:bd30ab67b1f8029d3e70d3419e5033fb4595ab91c91307c3b7c00978e8d111b2
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/base-passwd/3.6.5/ (for browsing the source)
+- https://sources.debian.net/src/base-passwd/3.6.5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-passwd/3.6.5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bash=5.2.37-1`
 
@@ -544,19 +550,13 @@ Licenses: (parsed from: `/usr/share/doc/debconf/copyright`)
 
 - `BSD-2-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris debconf=1.5.87
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.87.dsc' debconf_1.5.87.dsc 2035 SHA256:f46059b530efcb86082ee703225356869727e25babf9c3ad0c4a2e48f87e2977
-'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.87.tar.xz' debconf_1.5.87.tar.xz 574232 SHA256:2b813be2ab3904a9194a07f2d97ab8e1d79c47ec2ca2f6a1f238c3cb4ff31c66
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/debconf/1.5.87/
 
-- https://sources.debian.net/src/debconf/1.5.87/ (for browsing the source)
-- https://sources.debian.net/src/debconf/1.5.87/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/debconf/1.5.87/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2023.4`
 
@@ -1306,9 +1306,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris init-system-helpers=1.67
-'http://http.debian.net/debian/pool/main/i/init-system-helpers/init-system-helpers_1.67.dsc' init-system-helpers_1.67.dsc 2234 SHA256:26e89df8709f6af0bc7629df7d6ccd327227ab9be8788c9232ffe9b559a7e86d
-'http://http.debian.net/debian/pool/main/i/init-system-helpers/init-system-helpers_1.67.tar.xz' init-system-helpers_1.67.tar.xz 45180 SHA256:3fa7f7f1cffd0300363b49062c953023705009640e50141b00362e9fb40c5556
+'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.67.dsc' init-system-helpers_1.67.dsc 2234 SHA256:26e89df8709f6af0bc7629df7d6ccd327227ab9be8788c9232ffe9b559a7e86d
+'http://deb.debian.org/debian/pool/main/i/init-system-helpers/init-system-helpers_1.67.tar.xz' init-system-helpers_1.67.tar.xz 45180 SHA256:3fa7f7f1cffd0300363b49062c953023705009640e50141b00362e9fb40c5556
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/init-system-helpers/1.67/ (for browsing the source)
+- https://sources.debian.net/src/init-system-helpers/1.67/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/init-system-helpers/1.67/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `isl=0.27-1`
 
@@ -2754,21 +2760,13 @@ Licenses: (parsed from: `/usr/share/doc/libp11-kit0/copyright`)
 - `customFSFUL`
 - `customFSFULLRWD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris p11-kit=0.25.5-2
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.5-2.dsc' p11-kit_0.25.5-2.dsc 2538 SHA256:5953f5639503fe32217117e222bbc231130d9e79dda74259b4017b7bfc5bd910
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.5.orig.tar.xz' p11-kit_0.25.5.orig.tar.xz 1002056 SHA256:04d0a86450cdb1be018f26af6699857171a188ac6d5b8c90786a60854e1198e5
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.5.orig.tar.xz.asc' p11-kit_0.25.5.orig.tar.xz.asc 228 SHA256:066c92b9d2accb2fda6a2f71e676fb6526fcc153051b1f04ee7d7c8c96a09989
-'http://deb.debian.org/debian/pool/main/p/p11-kit/p11-kit_0.25.5-2.debian.tar.xz' p11-kit_0.25.5-2.debian.tar.xz 24108 SHA256:df84eb66f6dd2a53796dfbb2edc58a4b37046b19a8d186baf072163cd6c9c528
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/p11-kit/0.25.5-2/
 
-- https://sources.debian.net/src/p11-kit/0.25.5-2/ (for browsing the source)
-- https://sources.debian.net/src/p11-kit/0.25.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/p11-kit/0.25.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pam=1.5.3-7`
 
@@ -3324,20 +3322,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-survival/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris survival=3.7-0-1
-'http://deb.debian.org/debian/pool/main/s/survival/survival_3.7-0-1.dsc' survival_3.7-0-1.dsc 1861 SHA256:c92017025736f7ac54a3de80be0308712394fb16a7254c4767a77d9a33a1b79b
-'http://deb.debian.org/debian/pool/main/s/survival/survival_3.7-0.orig.tar.gz' survival_3.7-0.orig.tar.gz 6918683 SHA256:cd96b08ec928b0028f69c942cc788e190b4543c8518d71deb6d8a712de44feef
-'http://deb.debian.org/debian/pool/main/s/survival/survival_3.7-0-1.debian.tar.xz' survival_3.7-0-1.debian.tar.xz 6368 SHA256:0477f8f04224af8b57003d3b1c7609b5007075c925c799311d02d05807b119bc
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/survival/3.7-0-1/
 
-- https://sources.debian.net/src/survival/3.7-0-1/ (for browsing the source)
-- https://sources.debian.net/src/survival/3.7-0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/survival/3.7-0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=257-2`
 
@@ -3567,8 +3558,8 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris usrmerge=39
-'http://http.debian.net/debian/pool/main/u/usrmerge/usrmerge_39.dsc' usrmerge_39.dsc 981 SHA256:44027067423faefd31ac321c283fc9b07184fecbd5304ed41490c03825b89a28
-'http://http.debian.net/debian/pool/main/u/usrmerge/usrmerge_39.tar.xz' usrmerge_39.tar.xz 14908 SHA256:90b4ee198469292da4ee8b4ce2ec7b3ec439d61e6beb3ed9d3fa82b0e46e7fa3
+'http://http.debian.net/debian/pool/main/u/usrmerge/usrmerge_39%2bnmu2.dsc' usrmerge_39+nmu2.dsc 1720 SHA256:989e4db1bb4c246e84bfcd69a17a28ce8018d51722a0c34b0507ef1466e01f97
+'http://http.debian.net/debian/pool/main/u/usrmerge/usrmerge_39%2bnmu2.tar.xz' usrmerge_39+nmu2.tar.xz 15024 SHA256:b923b6563cc4f18b95b97682d0611576744b9958df773aebd7a35824beb25735
 ```
 
 ### `dpkg` source package: `util-linux=2.40.2-12`
@@ -3653,10 +3644,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris vim=2:9.1.0861-1
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.0861-1.dsc' vim_9.1.0861-1.dsc 3230 SHA256:ebfc6908990d7f18fb84c77e5bf0976f24c158f9a1d877a835c9e0c28b0ed813
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.0861.orig.tar.xz' vim_9.1.0861.orig.tar.xz 12089652 SHA256:9cdb88b891770fb151c074d7a4957b3441ab0720b07af3e463c7dfd158b29f6b
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.0861-1.debian.tar.xz' vim_9.1.0861-1.debian.tar.xz 189148 SHA256:7b5c4ef0658f50d7d447649ecbdea2b3b4b5f5cdc4bd1195c1ffce8cc98a45ec
+'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.0861-1.dsc' vim_9.1.0861-1.dsc 3230 SHA256:ebfc6908990d7f18fb84c77e5bf0976f24c158f9a1d877a835c9e0c28b0ed813
+'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.0861.orig.tar.xz' vim_9.1.0861.orig.tar.xz 12089652 SHA256:9cdb88b891770fb151c074d7a4957b3441ab0720b07af3e463c7dfd158b29f6b
+'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.0861-1.debian.tar.xz' vim_9.1.0861-1.debian.tar.xz 189148 SHA256:7b5c4ef0658f50d7d447649ecbdea2b3b4b5f5cdc4bd1195c1ffce8cc98a45ec
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/vim/2:9.1.0861-1/ (for browsing the source)
+- https://sources.debian.net/src/vim/2:9.1.0861-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/vim/2:9.1.0861-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.24.5-2`
 
