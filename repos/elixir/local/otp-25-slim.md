@@ -1,10 +1,10 @@
-# `elixir:1.18.0-otp-25-slim`
+# `elixir:1.18.1-otp-25-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:99b094eca98c3f03064e2fae6f2761eddbb59bfb225c456e6a1564007e7d636c`
-- Created: `2024-12-26T01:45:11Z`
-- Virtual Size: ~ 295.16 Mb  
+- Image ID: `sha256:acfb78b0fa340d0e245192235b1317ab814b36491abb13107b28aa244199ec73`
+- Created: `2024-12-26T17:16:07Z`
+- Virtual Size: ~ 295.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["iex"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `OTP_VERSION=25.3.2.13`
   - `REBAR3_VERSION=3.24.0`
-  - `ELIXIR_VERSION=v1.18.0`
+  - `ELIXIR_VERSION=v1.18.1`
   - `LANG=C.UTF-8`
 - Labels:
   - `org.opencontainers.image.version=25.3.2.13`
