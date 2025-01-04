@@ -1,10 +1,10 @@
-# `friendica:2024.12-dev-fpm-alpine`
+# `friendica:2025.02-dev-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:869a8d9b6efb4f65b4e0e4c56604060cf68f8953d943b1041eb68bea7ff66391`
-- Created: `2024-11-17T02:07:21Z`
-- Virtual Size: ~ 139.44 Mb  
+- Image ID: `sha256:95b7d70d718e6dafa8093d3f4abebd0e761e0de849198105e25dd10a7699caa8`
+- Created: `2025-01-01T19:19:24Z`
+- Virtual Size: ~ 140.15 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint-dev.sh"]`
@@ -25,8 +25,8 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `FRIENDICA_SYSLOG_FLAGS=39`
-  - `FRIENDICA_VERSION=2024.12-dev`
-  - `FRIENDICA_ADDONS=2024.12-dev`
+  - `FRIENDICA_VERSION=2025.02-dev`
+  - `FRIENDICA_ADDONS=2025.02-dev`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1954,16 +1954,16 @@ Zlib
 ### `apk` package: `zstd-libs`
 
 ```console
-zstd-libs-1.5.6-r1 description:
+zstd-libs-1.5.6-r2 description:
 Zstandard - Fast real-time compression algorithm (libraries)
 
-zstd-libs-1.5.6-r1 webpage:
-https://www.zstd.net/
+zstd-libs-1.5.6-r2 webpage:
+https://facebook.github.io/zstd/
 
-zstd-libs-1.5.6-r1 installed size:
-693 KiB
+zstd-libs-1.5.6-r2 installed size:
+697 KiB
 
-zstd-libs-1.5.6-r1 license:
+zstd-libs-1.5.6-r2 license:
 BSD-3-Clause OR GPL-2.0-or-later
 
 ```

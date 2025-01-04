@@ -1,10 +1,10 @@
-# `friendica:2024.08-fpm-alpine`
+# `friendica:2024.12-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:46f5febaf7e03ba4dc3b4323c8790eef41bb8c1f055fb5957f21a0d78d350344`
-- Created: `2024-10-17T22:39:30Z`
-- Virtual Size: ~ 243.44 Mb  
+- Image ID: `sha256:f41260a0f8a6ce3edd19818668e25a47cc879b931a3b333d1b95672b83579536`
+- Created: `2025-01-01T19:19:24Z`
+- Virtual Size: ~ 264.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -25,10 +25,10 @@
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `FRIENDICA_SYSLOG_FLAGS=39`
-  - `FRIENDICA_VERSION=2024.08`
-  - `FRIENDICA_ADDONS=2024.08`
-  - `FRIENDICA_DOWNLOAD_SHA256=3e93178734bc82abd0c7c8b8b7c13baa4c18ae33a0f07c169518c13c4317717d`
-  - `FRIENDICA_DOWNLOAD_ADDONS_SHA256=748d399f64670e37a5afc94ef65483291c52e9374e26c0ee5235f91b55449f54`
+  - `FRIENDICA_VERSION=2024.12`
+  - `FRIENDICA_ADDONS=2024.12`
+  - `FRIENDICA_DOWNLOAD_SHA256=37bb0fad549c955fced70059b62cd4f3364e344363011a2d054f1b6c425cfb9e`
+  - `FRIENDICA_DOWNLOAD_ADDONS_SHA256=fbbece635dfaec9d2365581aaafb913cec00128e5815087c9d9b8a46d8dc7ed5`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1616,16 +1616,16 @@ Zlib
 ### `apk` package: `zstd-libs`
 
 ```console
-zstd-libs-1.5.6-r1 description:
+zstd-libs-1.5.6-r2 description:
 Zstandard - Fast real-time compression algorithm (libraries)
 
-zstd-libs-1.5.6-r1 webpage:
-https://www.zstd.net/
+zstd-libs-1.5.6-r2 webpage:
+https://facebook.github.io/zstd/
 
-zstd-libs-1.5.6-r1 installed size:
-693 KiB
+zstd-libs-1.5.6-r2 installed size:
+697 KiB
 
-zstd-libs-1.5.6-r1 license:
+zstd-libs-1.5.6-r2 license:
 BSD-3-Clause OR GPL-2.0-or-later
 
 ```
