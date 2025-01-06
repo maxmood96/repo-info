@@ -304,6 +304,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 42.3 KB (42325 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7a9f0458ce5fcbad712d89015185a61d12b403d8a13783e7cfaf062e51518898`  
+		Last Modified: Thu, 19 Dec 2024 23:14:58 GMT  
 		Size: 337.9 MB (337912428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43697e4b8629ea9560615043846321cbfaf292a8caafa168d46689599c18dfd2`  
@@ -339,6 +340,7 @@ $ docker pull open-liberty@sha256:162be8de191e766da282548d9265630ab7f45d45f0fcdb
 		Size: 5.5 MB (5538284 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:804de7338ca2654f81d7cee313f9fdced11fb01f3bd1aa5b4a04edac40b16ccb`  
+		Last Modified: Thu, 19 Dec 2024 23:14:50 GMT  
 		Size: 39.3 KB (39346 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -599,6 +601,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 
 -	Layers:
 	-	`sha256:41e9fbd89079d8e47609ae158236d59896fd2503db1ebdfef058864054170e01`  
+		Last Modified: Wed, 11 Sep 2024 17:25:11 GMT  
 		Size: 28.0 MB (28001475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:19d7fcbb74a18dbda1a95a881c01c2cc4d8a0d6fe38b3b4f8b5899f281f9815e`  
@@ -622,7 +625,6 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 10.0 KB (9984 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2139976ac9485a6cd0e35c659a4aa53ea9065efb655b7481535aea52ce6e75ab`  
-		Last Modified: Thu, 19 Dec 2024 22:43:09 GMT  
 		Size: 240.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e426c629507b2f29768d47f874d1690e7854748abf70b8d5d36dc8a8c04d7b59`  
@@ -634,7 +636,6 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 337.9 MB (337912382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:784bf3c42de80460c63edf25f6eeb19272ca71032f0cd49caef7cdaa9e08ff9b`  
-		Last Modified: Thu, 19 Dec 2024 22:55:25 GMT  
 		Size: 1.1 KB (1057 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fc15b6c5ca8b681d33cf7a667050beda66890e29e57934f547041700a9f9a168`  

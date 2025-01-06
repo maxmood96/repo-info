@@ -148,7 +148,6 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 1.1 KB (1055 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:40866e05ddd2bc692c8c64a34dbaaaa400c12f247a350d6c2dc159a148ae5c6c`  
-		Last Modified: Thu, 19 Dec 2024 22:16:59 GMT  
 		Size: 11.3 KB (11330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b3284a468f4310c359590e1c0fd7f449051061ab3f62dfc17eccf7178b550888`  
@@ -172,9 +171,11 @@ $ docker pull open-liberty@sha256:cda74386dc2c9d52a71688c238588c3c9b6e04a3935c95
 
 -	Layers:
 	-	`sha256:7cf33221036c738300ce90beb84788603a923e9772a2708d0d0f789b19e0acc6`  
+		Last Modified: Thu, 19 Dec 2024 22:16:58 GMT  
 		Size: 5.6 MB (5601137 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6ca4bbdc5901c44ba7d511c8f9afb027934dd6c5dd3f3401fff16b2624576a2f`  
+		Last Modified: Thu, 19 Dec 2024 22:16:58 GMT  
 		Size: 38.7 KB (38695 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -302,6 +303,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 42.3 KB (42325 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:52d6841cc852cdd4e6fcee23eaa8e4f413207139ebaec7acc1f0a44f841de457`  
+		Last Modified: Thu, 19 Dec 2024 23:11:43 GMT  
 		Size: 361.4 MB (361418468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:89a9f67c27ae21699069eca0160f9c9c8751dedf7f7918de702c1f29fa87a327`  
@@ -313,7 +315,6 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 11.3 KB (11333 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d6319b1212b4dae2e014fa41965345262321749e705e824f6e1e1dc67c71c59c`  
-		Last Modified: Thu, 19 Dec 2024 23:11:32 GMT  
 		Size: 13.0 MB (13027988 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -465,6 +466,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 36.5 KB (36499 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eec038c0ad4d17a07da219f89cd6510aa8d0151f2d8bf7d4214c53ec02e1b357`  
+		Last Modified: Thu, 19 Dec 2024 23:10:49 GMT  
 		Size: 361.4 MB (361418666 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a50301fe2c807cbe0cad58c5dfdb7ee343b63defc7ec952e5c32b4fb6dd8b2c0`  
@@ -596,6 +598,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 
 -	Layers:
 	-	`sha256:41e9fbd89079d8e47609ae158236d59896fd2503db1ebdfef058864054170e01`  
+		Last Modified: Wed, 11 Sep 2024 17:25:11 GMT  
 		Size: 28.0 MB (28001475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:19d7fcbb74a18dbda1a95a881c01c2cc4d8a0d6fe38b3b4f8b5899f281f9815e`  
@@ -603,10 +606,10 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 12.2 MB (12203759 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2f548077faffbeb9ab09f574ebae67e13d3317200cd3613df609effae4b92c77`  
+		Last Modified: Thu, 19 Dec 2024 21:49:19 GMT  
 		Size: 50.9 MB (50865429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7ddec57d686772b9ae7f80d1d520170f90bcdf89ece83b87fb6201872b5286d1`  
-		Last Modified: Thu, 19 Dec 2024 21:49:18 GMT  
 		Size: 4.6 MB (4555256 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:53bd6591b6faaf33732aad8cd9e10163c5a137d6f080aba9ed0c8d6323a9509d`  
@@ -614,6 +617,7 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 1.1 KB (1050 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:081abeb906a039fbd4b91e47ef25b09cc4efd294b5c6fedb3adfe013ff236c6e`  
+		Last Modified: Thu, 19 Dec 2024 22:45:34 GMT  
 		Size: 10.0 KB (9987 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0d160aa519e23bf7472354191021b2b60888e52db9d5654476bc7c9249851a0`  
@@ -621,7 +625,6 @@ CMD ["/opt/ol/wlp/bin/server" "run" "defaultServer"]
 		Size: 242.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e390392fb105ca00e825a0f63836405906fde70d2c4ae9f82e88e8d093fe4d6`  
-		Last Modified: Thu, 19 Dec 2024 22:45:34 GMT  
 		Size: 33.1 KB (33112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d4ce5e36ed406f5ca01128bb6a0e773cff5a702f1981c66a4f0ab71c6edecaf8`  
