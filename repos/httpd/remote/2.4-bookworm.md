@@ -72,7 +72,6 @@ CMD ["httpd-foreground"]
 		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c3081b233c7dd955ca68d62866c9d7f08e514c4c5044b3539928e0aacbc81f1`  
-		Last Modified: Tue, 24 Dec 2024 22:18:44 GMT  
 		Size: 145.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -80,6 +79,7 @@ CMD ["httpd-foreground"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:172b239db5c25a08be9acc9fa106e0e16c2a9f3a44527dfdfc853dc9a5528053`  
+		Last Modified: Tue, 24 Dec 2024 22:18:44 GMT  
 		Size: 4.0 MB (4007966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bbff13f6be426ca9ee14644224b0422191bc2018f9679080058f2e84ada57ddb`  
@@ -171,6 +171,7 @@ CMD ["httpd-foreground"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:02acb4463ba790dc459c2da07782677cdf253e51c830a5824b41f8205c75de33`  
+		Last Modified: Tue, 24 Dec 2024 22:32:16 GMT  
 		Size: 3.5 MB (3515763 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7a365de937709a505ee3bd4d99633f13a7a2c30af5e806cb3a60fc7f441df964`  
@@ -251,6 +252,7 @@ CMD ["httpd-foreground"]
 
 -	Layers:
 	-	`sha256:24f0da30a772db626789cda3e7b0911098d07574c40b30be943d43dec3ed685f`  
+		Last Modified: Tue, 24 Dec 2024 21:33:51 GMT  
 		Size: 23.9 MB (23933522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:71d5a649db8fbc159bda9369c6c4b2044b11b1b9c3ea13ed610e85ee575a409b`  
@@ -387,6 +389,7 @@ $ docker pull httpd@sha256:4cff7fd47ec419a2b5db19925d529f89dbc2abdfb1e752d91e03a
 		Size: 2.5 MB (2512251 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:25bab0750fa240560447d4b9ab25af895f5f19d3ce7b7eb556f8f373e6809618`  
+		Last Modified: Tue, 24 Dec 2024 22:53:11 GMT  
 		Size: 38.0 KB (38025 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -544,9 +547,11 @@ CMD ["httpd-foreground"]
 		Size: 3.4 MB (3377362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:388e62835df532fbe32cb9ff38000d38a7449af17b09298a0fbd0f06c72096c1`  
+		Last Modified: Tue, 24 Dec 2024 23:05:22 GMT  
 		Size: 26.2 MB (26175258 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e6ac50f6d7c21e4eac30aac4930fe638cbe9b177e5de595dd5d9a8da2fe6f4a7`  
+		Last Modified: Tue, 24 Dec 2024 23:05:20 GMT  
 		Size: 291.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -615,6 +620,7 @@ CMD ["httpd-foreground"]
 
 -	Layers:
 	-	`sha256:4a1ea4d3c9e0863e99d27aae6dac9a4b908a6413e758c7785d8fefe555b0e760`  
+		Last Modified: Wed, 25 Dec 2024 00:32:48 GMT  
 		Size: 32.1 MB (32063240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c1f63aafeaf11215562381ca26ae058f75d729c508bbfa8c9f38a5f7462d1da2`  
@@ -634,7 +640,6 @@ CMD ["httpd-foreground"]
 		Size: 27.3 MB (27332830 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6eec9dcb2c4edc654b3f143c6f0b92627345f9b00cee9bf9626cb977dba0f3e4`  
-		Last Modified: Wed, 25 Dec 2024 04:07:07 GMT  
 		Size: 291.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
