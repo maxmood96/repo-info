@@ -54,7 +54,6 @@ CMD ["erl"]
 		Size: 48.5 MB (48497066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8de85552e2280313a4b344aafb4679a335319b68c81732b638a326e2426cb57f`  
-		Last Modified: Tue, 24 Dec 2024 22:33:59 GMT  
 		Size: 70.3 MB (70334542 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -74,9 +73,11 @@ $ docker pull erlang@sha256:90ae2ea8bd9d6814d3e3d56f68a87ad75fd66be1bec0582490f3
 
 -	Layers:
 	-	`sha256:11f891cd6215599e1f7f9f1479a947223f32d272afc4c9e38d0ea8bed5e61309`  
+		Last Modified: Tue, 24 Dec 2024 22:33:58 GMT  
 		Size: 3.7 MB (3709308 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9a212319339c9e70bb5eabb0139efd91053a192cd8a86b70009943612aac1975`  
+		Last Modified: Tue, 24 Dec 2024 22:33:57 GMT  
 		Size: 13.6 KB (13602 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -131,7 +132,6 @@ $ docker pull erlang@sha256:c48e6107d4ef1341541c516ebf17f22457d7a9f965c8e1a3a1cb
 
 -	Layers:
 	-	`sha256:a6afb172e9898965b32c75b61aa036d67fe61e4d014a7b3f139e97bbf8810216`  
-		Last Modified: Wed, 25 Dec 2024 01:42:43 GMT  
 		Size: 3.7 MB (3712808 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7ec2d22e89f906422458f29a286d59f03852527258ffcd50511d864aad459879`  
@@ -288,7 +288,6 @@ CMD ["erl"]
 		Size: 49.5 MB (49475925 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ca44d1694041f067ebf8d5b4f893979eacee074bbacec58ae6385ba43f6332c`  
-		Last Modified: Tue, 24 Dec 2024 22:22:09 GMT  
 		Size: 61.1 MB (61082179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -343,10 +342,10 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:fa42b2983a081afbe5b1653f1c107472f7b73564ae2a3f6a75d6b4702023cc0c`  
+		Last Modified: Tue, 24 Dec 2024 21:33:19 GMT  
 		Size: 48.8 MB (48771644 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0cc59f63202059cc1a98ba153f0b85086eb0bbdd85327f45bb99993b46795184`  
-		Last Modified: Wed, 25 Dec 2024 12:42:30 GMT  
 		Size: 61.0 MB (61039631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
