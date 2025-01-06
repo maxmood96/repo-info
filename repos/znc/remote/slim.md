@@ -57,14 +57,13 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Size: 3.4 MB (3419728 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7255ba75f09422e92f5b03173d4ac2445ed0dc5d63bd5fc7e400f2d8ed14d6f0`  
-		Last Modified: Tue, 12 Nov 2024 02:15:36 GMT  
 		Size: 48.7 MB (48738616 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48c47e2e766d93b260dc09d164e658d80c3b49c332212869ed93b16a2b35fb99`  
+		Last Modified: Tue, 12 Nov 2024 02:15:35 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f66d374b785294f04add930f967130dee87e921997e90dfcaec93d997e438254`  
-		Last Modified: Tue, 12 Nov 2024 02:15:35 GMT  
 		Size: 749.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -88,6 +87,7 @@ $ docker pull znc@sha256:6b59288fc7c23245f43bea0db325743d0d3786aaac32d930f89d701
 		Size: 2.1 MB (2138640 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0a8e73106c34f624e828feaab045b9f220294ff45319a3370f95ffd2d100eb6f`  
+		Last Modified: Tue, 12 Nov 2024 02:15:35 GMT  
 		Size: 14.0 KB (14026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -135,7 +135,6 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Size: 3.2 MB (3176432 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b27a3f96d29923ef46e08a34814b935b4d1f40bc3836ef2c04cd3a693aaa78ef`  
-		Last Modified: Tue, 12 Nov 2024 06:36:14 GMT  
 		Size: 47.1 MB (47057236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0569fa38966c4810094c11b5f2106ea179b371bb82bc49708e9a5bb6a5858475`  
@@ -210,7 +209,6 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Size: 3.4 MB (3359246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4a2efe174d3548884a91aa29a27ea7fb2f28a9140b5f6790ff4fa017b38ea041`  
-		Last Modified: Tue, 12 Nov 2024 11:01:19 GMT  
 		Size: 48.7 MB (48692583 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e294d2e4f62e4a5d05063ca34b3bd9a7ecb119f1d111dd4bc56be49ef689b198`  
@@ -238,9 +236,9 @@ $ docker pull znc@sha256:17ee86d4911c5faf0491ff17a25a65dddeb7e8b2fbd9a10b5dedc1f
 
 -	Layers:
 	-	`sha256:06c41fc48e2b37bc5f8c3476059dd96046eda68b9e108ae329709982a1cbeb86`  
-		Last Modified: Tue, 12 Nov 2024 11:01:17 GMT  
 		Size: 2.1 MB (2138769 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1ca77749514918e3de88123ff5122ddb63b3ab564eec0def695f592bb1dd7f04`  
+		Last Modified: Tue, 12 Nov 2024 11:01:17 GMT  
 		Size: 14.1 KB (14118 bytes)  
 		MIME: application/vnd.in-toto+json
