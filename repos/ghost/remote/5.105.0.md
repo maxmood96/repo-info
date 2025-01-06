@@ -91,6 +91,7 @@ CMD ["node" "current/index.js"]
 		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc67292de214497f3df1bb8c7534f9667821144248e153cb38caa9c8dc2dfd32`  
+		Last Modified: Tue, 24 Dec 2024 22:30:14 GMT  
 		Size: 38.2 MB (38233611 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cffa8bce274c5d1b790b5451a6eaf5c8dc368c87c5ad2e9efd3265dbac817459`  
@@ -212,7 +213,6 @@ CMD ["node" "current/index.js"]
 
 -	Layers:
 	-	`sha256:24f0da30a772db626789cda3e7b0911098d07574c40b30be943d43dec3ed685f`  
-		Last Modified: Tue, 24 Dec 2024 21:33:51 GMT  
 		Size: 23.9 MB (23933522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c2fe4fa5b2c6264b401c6b7347d785111036a3eb9a7c3256bcee60529694460`  
@@ -268,7 +268,6 @@ $ docker pull ghost@sha256:d411bf7676cf1b1c78890e44158b1ff663790e45594cddd174a7e
 
 -	Layers:
 	-	`sha256:25f2bcf7da627f638fbdaae709d9fa9426e1b2a229c4b6c7a9c08bdda8dffb91`  
-		Last Modified: Wed, 25 Dec 2024 15:15:38 GMT  
 		Size: 5.4 MB (5423262 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7d6d784c75bab4a44aa4618d6bcc20e517097eab171b58e35819fc5780d41bb1`  
@@ -346,7 +345,6 @@ CMD ["node" "current/index.js"]
 		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:81a01029a719a21f69560bd03804f320ea9330551bd56471b93621fffb36eb3d`  
-		Last Modified: Wed, 25 Dec 2024 02:21:35 GMT  
 		Size: 3.3 KB (3309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ad495997bc4e6579be7172a3472c8d772e9807068b50952cd0099f5c2f967fc8`  
@@ -402,6 +400,7 @@ $ docker pull ghost@sha256:326ee5d217168ae5cc78b19dc22108b2637561f71ab98cb8472b7
 		Size: 5.4 MB (5418043 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a32e98525e7e18ff86a724640a2d13df98796b060fa03dd6b26dcbab70c7dc6a`  
+		Last Modified: Wed, 25 Dec 2024 10:59:27 GMT  
 		Size: 29.4 KB (29439 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -471,7 +470,6 @@ CMD ["node" "current/index.js"]
 
 -	Layers:
 	-	`sha256:4a1ea4d3c9e0863e99d27aae6dac9a4b908a6413e758c7785d8fefe555b0e760`  
-		Last Modified: Wed, 25 Dec 2024 00:32:48 GMT  
 		Size: 32.1 MB (32063240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:72df64322c1d4bb0fb14e87285d46097be26febecc00fea90f10d5d634ef753d`  
@@ -495,7 +493,6 @@ CMD ["node" "current/index.js"]
 		Size: 1.4 MB (1366630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5899ccb6d1c12f417f895ee27c3327a434dcf3bc8701e6a04cc8b1aa146c9753`  
-		Last Modified: Wed, 25 Dec 2024 12:29:14 GMT  
 		Size: 10.9 MB (10936866 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11568ccfe110cae2786bd4f83ac2faab49e171efc0e4a8527b6d59292a42c0ea`  
@@ -527,9 +524,11 @@ $ docker pull ghost@sha256:007f57488b1d9400a8247d235f0982bebb18f8ad767ba8c11e266
 
 -	Layers:
 	-	`sha256:d27b4745d3ecab5f01db92ec475cc32bb0481e410fc968da52c2fb3cf6a694ce`  
+		Last Modified: Wed, 25 Dec 2024 12:29:12 GMT  
 		Size: 5.4 MB (5414057 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2642f44604721c7077454c907f3788ae1d5cf64af4c2d2cb6142e14c72afeba0`  
+		Last Modified: Wed, 25 Dec 2024 12:29:11 GMT  
 		Size: 29.4 KB (29355 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -603,6 +602,7 @@ CMD ["node" "current/index.js"]
 		Size: 26.9 MB (26878901 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:91757443920b358467e953edd396e53d9980d181370629765edbdbd905873b10`  
+		Last Modified: Wed, 25 Dec 2024 00:36:54 GMT  
 		Size: 3.3 KB (3310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d5098c7538cf511aa509c79da5e61ac94f682b1afcad5dfc88f22dc71afedc23`  
@@ -626,7 +626,6 @@ CMD ["node" "current/index.js"]
 		Size: 10.9 MB (10927280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fec3ab84f8dcdac34fed0e946e456b62aa56938f7f685568fc5100d40c9f7259`  
-		Last Modified: Wed, 25 Dec 2024 05:03:09 GMT  
 		Size: 99.2 MB (99237532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
