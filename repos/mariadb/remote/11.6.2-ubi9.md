@@ -267,7 +267,6 @@ CMD ["mariadbd"]
 		Size: 913.8 KB (913801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0119184863f03e046868b9b5ee636889108c5d244a838586c9efe39c75486b44`  
-		Last Modified: Thu, 19 Dec 2024 06:37:30 GMT  
 		Size: 301.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b8e4daa7c9265c040e507f69f9ff8becfad8b1d1b8169db9fec1ed8fecd1ee55`  
@@ -287,7 +286,6 @@ CMD ["mariadbd"]
 		Size: 4.0 KB (4039 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:81146c67cddfd0107e843e350b3f0bf0b69658ddbb16f57e3dc5644b1c38f64d`  
-		Last Modified: Thu, 19 Dec 2024 06:38:58 GMT  
 		Size: 8.4 KB (8401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -421,7 +419,6 @@ CMD ["mariadbd"]
 		Size: 299.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:99aca980a2fcfb8ff2f767cc7274e5feb10e7a949bc561b9d93624390a4223cb`  
-		Last Modified: Thu, 19 Dec 2024 06:41:33 GMT  
 		Size: 317.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7cceaebf9b0c56a7e584c1c0d44f6263c79c7ec0a5b1dcf5a349fc5af242cc52`  
@@ -429,11 +426,9 @@ CMD ["mariadbd"]
 		Size: 112.4 MB (112357760 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4694eb58a30f26d4b19d72ce9a66754b038c507fd04667b699fa653d8964d672`  
-		Last Modified: Thu, 19 Dec 2024 06:41:33 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9d46a0216a0d4ed9c75c144b571185ffdbe0cce89e77185b0221f8f7f8330385`  
-		Last Modified: Thu, 19 Dec 2024 06:41:33 GMT  
 		Size: 4.0 KB (4038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e70a9e0a9548692a032e4e569da28f31819b73ec97b48f698b0b5f29bed58d19`  
