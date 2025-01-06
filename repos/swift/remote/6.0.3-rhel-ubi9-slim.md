@@ -77,6 +77,7 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 
 -	Layers:
 	-	`sha256:ae7be659c02f62e985aa71cc461267a889f03c2e7888b1fe7cadc746c933e12c`  
+		Last Modified: Wed, 18 Dec 2024 06:12:01 GMT  
 		Size: 88.5 MB (88492632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:559ab600f762eb7f8be18f84133cca01f609f4f79c44605206ebba6aa3d054cf`  
@@ -173,6 +174,7 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 
 -	Layers:
 	-	`sha256:d1d82f01ce6444423dc8ed8648a4857b3ec3b02a6ff08d1fcc224527a2007a06`  
+		Last Modified: Wed, 18 Dec 2024 06:12:09 GMT  
 		Size: 86.2 MB (86220570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c92fea65384d76d5eac601137f7776edfe49287809eb8832956ab7ac25d920d7`  
