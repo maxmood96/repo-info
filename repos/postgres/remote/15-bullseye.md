@@ -119,7 +119,6 @@ CMD ["postgres"]
 		Size: 102.0 MB (101958886 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:65ece2d7af68731ffd93961f2fb3a7346f7c1daa293441fc3d67ca51d30a9f57`  
-		Last Modified: Tue, 24 Dec 2024 22:15:18 GMT  
 		Size: 9.8 KB (9774 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c6fb314ec7e27b37711a5d69481cbb6fcbd1bf37610ff9431ce13dfc7df10bf8`  
@@ -259,7 +258,6 @@ CMD ["postgres"]
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f714306b2cfa0dfacfb0f63927be9716b313319a5c22d0418ddbf8e7dafa562b`  
-		Last Modified: Wed, 25 Dec 2024 01:02:30 GMT  
 		Size: 3.1 KB (3139 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2022dd5c71128252ad514a687fb47bcb028c13de93f62394698f31054ea6c769`  
@@ -283,7 +281,6 @@ CMD ["postgres"]
 		Size: 5.4 KB (5416 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:38fc4302a40fe2602af668bcbf2b99de200c0f55cf930abf1b6fba86d583fd07`  
-		Last Modified: Wed, 25 Dec 2024 02:00:58 GMT  
 		Size: 184.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -407,7 +404,6 @@ CMD ["postgres"]
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:28d3b9dbaed7d106be4ba171aa5b5a596db02edbc3d728d71f140bcbb16d12d2`  
-		Last Modified: Wed, 25 Dec 2024 01:02:18 GMT  
 		Size: 3.1 KB (3142 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:23443048119c43a28d172fa7632c313656bc078a6e165a05314b4164fae22c5f`  
@@ -563,7 +559,6 @@ CMD ["postgres"]
 		Size: 108.8 MB (108754941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b367d0557589a7708f9ab5d55ac22a34960b06d117196ed5c5840cdd8ebde99c`  
-		Last Modified: Tue, 24 Dec 2024 22:36:55 GMT  
 		Size: 9.8 KB (9782 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:63e00dd531ea4374c109a40de1d840dfaf6cf7340cbef06695ad8309b7903bf8`  
@@ -571,7 +566,6 @@ CMD ["postgres"]
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b60530de68d251d679d09bbd387b7d64d964f84bd8877153972b0b053ecdc1d4`  
-		Last Modified: Tue, 24 Dec 2024 22:36:55 GMT  
 		Size: 167.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:df4dd7f7ca17b2b951bc3516296aeedaefd49a64c5fc51f18e4df23ad2df4c3a`  
