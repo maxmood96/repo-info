@@ -82,7 +82,6 @@ $ docker pull elixir@sha256:67bdb963cca9dec2a1ee2db92b66cb4ce5c1423a4af636b673fa
 
 -	Layers:
 	-	`sha256:2de29c424d3b3b89f1a4cc64577d5af9f91ad01c1a0784606458fac138e38bec`  
-		Last Modified: Thu, 02 Jan 2025 19:30:24 GMT  
 		Size: 278.7 KB (278687 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ebe3580fad26c6c20b283a10c7df23ff2cdfedd5e7688dc1d6ad44dc2c836f93`  
@@ -196,7 +195,6 @@ CMD ["iex"]
 
 -	Layers:
 	-	`sha256:9986a736f7d3d24bb01b0a560fa0f19c4b57e56c646e1f998941529d28710e6b`  
-		Last Modified: Mon, 09 Sep 2024 07:03:59 GMT  
 		Size: 4.1 MB (4087726 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:de8d3892825bd313a51ccc633ac65a6033912b93b38e232313dc2c61d7cadc8d`  
@@ -271,7 +269,6 @@ CMD ["iex"]
 		Size: 3.5 MB (3469219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:84059e6d65821613b15631478b48a43f6a9af3d6c3e3cc9b8bb4b92e4854f2e6`  
-		Last Modified: Tue, 12 Nov 2024 02:47:52 GMT  
 		Size: 46.7 MB (46720392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bcaa44f8c0dd18070e52e3758ffd66835aabba20d4d0fb8862d2387e564a7000`  
@@ -342,10 +339,10 @@ CMD ["iex"]
 		Size: 3.6 MB (3572459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:363b577ff6eca4f9ccfcf84512e9091169eb59ef70ab084dac27c858572b735f`  
+		Last Modified: Tue, 12 Nov 2024 08:57:51 GMT  
 		Size: 46.8 MB (46807484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a5014e6a9b2d9d81f341ee73d59f3fedf7381cb6c2549685fcd9855793628109`  
-		Last Modified: Thu, 02 Jan 2025 19:45:47 GMT  
 		Size: 7.4 MB (7447421 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -408,6 +405,7 @@ CMD ["iex"]
 
 -	Layers:
 	-	`sha256:4261d20208fd5fe57c9f53c86783089a963169d6db6f16306e083ca43f937e0b`  
+		Last Modified: Tue, 12 Nov 2024 00:55:29 GMT  
 		Size: 3.5 MB (3461608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:05eb23d1d8fb8f245a67327704c349e7273b15f84b7e123d8c9cd2aee089f727`  
