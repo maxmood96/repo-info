@@ -52,6 +52,7 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 		Size: 54.7 MB (54712110 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a70b52f6e336b8413c2bc4d145049fdcd35e67e0062a48039b1dccfcd257f50`  
+		Last Modified: Tue, 24 Dec 2024 22:26:50 GMT  
 		Size: 1.8 MB (1796915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -114,6 +115,7 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 
 -	Layers:
 	-	`sha256:24f0da30a772db626789cda3e7b0911098d07574c40b30be943d43dec3ed685f`  
+		Last Modified: Tue, 24 Dec 2024 21:33:51 GMT  
 		Size: 23.9 MB (23933522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:689318bf76a8dd4043ce70c82f26289471b16ae5819c010091389de80431b97b`  
@@ -191,7 +193,6 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 		Size: 54.5 MB (54478718 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:644c7934a85b5386cf1664e7edcefe7194b3a4e888f05f1e989c0e505590ecfc`  
-		Last Modified: Wed, 25 Dec 2024 01:56:23 GMT  
 		Size: 1.5 MB (1488031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
