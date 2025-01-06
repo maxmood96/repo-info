@@ -87,7 +87,6 @@ CMD ["mongod"]
 
 -	Layers:
 	-	`sha256:b2d9645b7a627311307a917af9385030c91e049ec7862656cb4e05f50090c46a`  
-		Last Modified: Fri, 06 Dec 2024 01:28:34 GMT  
 		Size: 100.8 MB (100777534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ec77b46e44c57b77c9e7308150d82a4cf09cd3782e389a96b72ed9a09d6e8002`  
@@ -103,7 +102,6 @@ CMD ["mongod"]
 		Size: 1.2 KB (1235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6494bd74d14cd370421d14267513ef65c51d66d4eb787fa6c862a897043fb108`  
-		Last Modified: Fri, 20 Dec 2024 21:29:52 GMT  
 		Size: 4.1 KB (4071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e47dad8fcc5ae5f475a141387a297bce968218f03e7bcf8987c46b184975120d`  

@@ -87,7 +87,6 @@ CMD ["mongod"]
 
 -	Layers:
 	-	`sha256:b2d9645b7a627311307a917af9385030c91e049ec7862656cb4e05f50090c46a`  
-		Last Modified: Fri, 06 Dec 2024 01:28:34 GMT  
 		Size: 100.8 MB (100777534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:60ed10a7c65c3668320bc9569c464e5476aa869e50f6acbbff966495bfd80656`  
@@ -143,6 +142,5 @@ $ docker pull percona@sha256:cd8b8a042d8c1751b40ac0729ba18458c9c32942316ba63c9dc
 
 -	Layers:
 	-	`sha256:12c7973b554c20191044f6681aabd61fb430fbe6854418d59f714adefc6a67c7`  
-		Last Modified: Fri, 20 Dec 2024 21:29:53 GMT  
 		Size: 32.2 KB (32227 bytes)  
 		MIME: application/vnd.in-toto+json
