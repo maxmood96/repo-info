@@ -243,7 +243,6 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 		Size: 34.4 MB (34448242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d5ba759f0622bf9c0e3a62cfaaeedbf629b4a47bad21f09b1f342bd764ad4fc6`  
-		Last Modified: Sat, 19 Oct 2024 04:12:41 GMT  
 		Size: 8.2 MB (8205814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
