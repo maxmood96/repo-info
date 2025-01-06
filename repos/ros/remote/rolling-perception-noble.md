@@ -77,7 +77,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 		Size: 29.8 MB (29751784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cab3b2484efd73305009117d35bdc14769dac7cc55a59591b622561a50646fbc`  
-		Last Modified: Sat, 16 Nov 2024 02:57:56 GMT  
 		Size: 683.9 KB (683912 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b9ee196cfb19dc0d61a08117b1827bc75c1072281719ccd336f9acb1b3c93cd`  
@@ -101,7 +100,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 		Size: 194.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b2931749fcbc5a8423464f2953dac75c839bba7110eb40057b47c9609f91bb21`  
-		Last Modified: Sat, 16 Nov 2024 03:51:21 GMT  
 		Size: 114.1 MB (114148980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:db366bc2268cda50986b7cae4fa1ddabd7b92d8a85d54daad5f28244f0442207`  
@@ -247,11 +245,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 		Size: 2.4 KB (2433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:38d8e30c16d2403bfc5a15fba00e5199f46f4591a1eee5d2275906979cf66b30`  
-		Last Modified: Sat, 16 Nov 2024 04:50:06 GMT  
 		Size: 26.7 MB (26685018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b3c666d99c3684fc94bde4a3ffc855b0531e32378be05043ef1e46456f43005a`  
-		Last Modified: Sat, 16 Nov 2024 06:09:27 GMT  
 		Size: 277.0 MB (276994555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -275,6 +271,5 @@ $ docker pull ros@sha256:b3e2e1bc3e3636e6af3e3de3cf921fd07c65a56b8fc579bc5f24e08
 		Size: 42.2 MB (42237129 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:adbf7b5374f52bb97eb4921b165bb92c4f0be4615cdeec62c9fdfb1edf699598`  
-		Last Modified: Sat, 16 Nov 2024 06:09:20 GMT  
 		Size: 9.8 KB (9790 bytes)  
 		MIME: application/vnd.in-toto+json

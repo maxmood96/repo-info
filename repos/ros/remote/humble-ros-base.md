@@ -95,7 +95,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-humble-
 		Size: 106.5 MB (106531769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6410a8272a83deb81f823b1cb3bf041f95c7d711601610c50de02837a1fab738`  
-		Last Modified: Tue, 17 Sep 2024 01:01:08 GMT  
 		Size: 196.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:543a0131e0c73a7071017bbc743e74591d78261e5fb886e39f5f89da54721d7a`  
@@ -111,6 +110,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-humble-
 		Size: 2.4 KB (2430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bd82b3fc9b8259a2df8418e0bd1c22651c30c4d5d33aefdb144429af07a39515`  
+		Last Modified: Tue, 17 Sep 2024 01:58:29 GMT  
 		Size: 22.8 MB (22824416 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -134,6 +134,7 @@ $ docker pull ros@sha256:10163c349a13ba6ae506742ac20d9c43d56817b576158f89a814bb6
 		Size: 22.7 MB (22673585 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2d6fc7ed6f0445f1c7823fa43bc6979f8f17efd432b5c51f659d218c913a4ead`  
+		Last Modified: Tue, 17 Sep 2024 01:58:28 GMT  
 		Size: 17.1 KB (17121 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -197,7 +198,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-humble-
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
-		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fc648e781bb9c3ead233b1bdec9bbcf8d27119e3cc6f1578606a8207d368c17b`  
@@ -233,7 +233,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-humble-
 		Size: 338.0 KB (337991 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ebaafba2dac67131d8abb8cc1c154deefa1f261c8a6ea45890c38a327ab8ecba`  
-		Last Modified: Tue, 17 Sep 2024 06:12:09 GMT  
 		Size: 2.5 KB (2473 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8bc16a1d1ac077be73e099a09b28bd4a72f6e448919e903104f9f40a9ccdd13d`  
@@ -257,9 +256,9 @@ $ docker pull ros@sha256:c33b48de1db8cedf6d472fbd730a05797f1f794fc4e03a6aa5d6e7a
 
 -	Layers:
 	-	`sha256:b3039f0dbc51e996d27a48ccefcdda069c93560250042546ebf27af7c1a2a6f5`  
+		Last Modified: Tue, 17 Sep 2024 06:12:10 GMT  
 		Size: 22.7 MB (22686610 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c2ec6bbd359a8df0209b028fbf4ea1f665527ca946dd3d7c29d5ae4a41d9e6e9`  
-		Last Modified: Tue, 17 Sep 2024 06:12:09 GMT  
 		Size: 17.5 KB (17494 bytes)  
 		MIME: application/vnd.in-toto+json
