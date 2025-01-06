@@ -145,7 +145,6 @@ WORKDIR /go
 		Size: 3.4 MB (3366596 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f09660efa60074dd6fc7ed0eaa983537498c86f66f4ce6ec6fd9caf5018feac3`  
-		Last Modified: Tue, 12 Nov 2024 06:28:18 GMT  
 		Size: 291.8 KB (291778 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:569843b3031b27806b4332ef906025ac81fe5ab3623a61a6d2306598bfd512bf`  
@@ -177,7 +176,6 @@ $ docker pull golang@sha256:7b1009e56d0de81fe3b1ad8f769b408c46d56a61d7eb3c3778f7
 
 -	Layers:
 	-	`sha256:4056994e586307221d4e998e7106f14e0b8610d59649d07c6c14dab40d621f9c`  
-		Last Modified: Tue, 03 Dec 2024 22:28:52 GMT  
 		Size: 26.0 KB (25989 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -257,7 +255,6 @@ $ docker pull golang@sha256:6ccc2a28d3d32d478f72f318bf319085e269abbc4c98b8b77a86
 		Size: 210.1 KB (210074 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:44ac4e9be7c71f36707433e33e983e44887a6e8e217b49f3b2c7105bed808089`  
-		Last Modified: Wed, 04 Dec 2024 07:18:46 GMT  
 		Size: 26.2 KB (26204 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -334,7 +331,6 @@ $ docker pull golang@sha256:4ec967b00e1154c488f91785f9e916c3c40be430bb1fef4ef5d7
 
 -	Layers:
 	-	`sha256:dbcaf2fee8099963c35c29bf35faa8aef92bd29a7720a49c47726dcd65ba19a9`  
-		Last Modified: Wed, 04 Dec 2024 01:42:04 GMT  
 		Size: 210.1 KB (210146 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a3f0e26a409d0792434b766f2df8397685dd73b15f625b6f4402ca9e7cf2971f`  
@@ -415,7 +411,6 @@ $ docker pull golang@sha256:a78f62d8bf313922733dfe723033fdb8228053e404609bc33cdc
 
 -	Layers:
 	-	`sha256:91466505c35c924c1447638d3f83156d954121ad4ef96d09913c9da2975aeefe`  
-		Last Modified: Tue, 03 Dec 2024 22:28:51 GMT  
 		Size: 210.0 KB (209961 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:486013dead1a65c5e1753e93cf16097403fe35d9476a3c83ac749ec7fa011a27`  
@@ -544,6 +539,7 @@ WORKDIR /go
 		Size: 3.4 MB (3371482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c9da01c4ee7a2864330da14801bdf35f981730b5e2ffea0588c9ac48734e26b`  
+		Last Modified: Wed, 13 Nov 2024 01:22:36 GMT  
 		Size: 291.7 KB (291671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c56ea5001679e325e9959f4e49e737d7b5d8a17fc575fd3810ab4495a88e73ee`  
@@ -620,7 +616,6 @@ WORKDIR /go
 
 -	Layers:
 	-	`sha256:4261d20208fd5fe57c9f53c86783089a963169d6db6f16306e083ca43f937e0b`  
-		Last Modified: Tue, 12 Nov 2024 00:55:29 GMT  
 		Size: 3.5 MB (3461608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dcd7484226737ceedacb2f6eba2ffed52277681762f797e80ac3aab9dcd04a0d`  
