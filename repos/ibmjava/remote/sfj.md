@@ -60,7 +60,6 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 		Size: 1.4 MB (1449649 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:84202509c66318b6ab00fb73a6bc4bd97699967424a243e169a0cfef46051ce9`  
-		Last Modified: Mon, 09 Dec 2024 19:28:30 GMT  
 		Size: 70.3 MB (70256342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
