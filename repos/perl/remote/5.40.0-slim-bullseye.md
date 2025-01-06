@@ -183,6 +183,7 @@ CMD ["perl5.40.0" "-de0"]
 		Size: 135.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:67654538453885d7e712fa2c50e3032a5f48a346da77c8b9b65f4e822e8630b1`  
+		Last Modified: Wed, 25 Dec 2024 02:46:12 GMT  
 		Size: 25.0 MB (25035644 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c58724fe12573cadfcb27b09e27624f1f79166315871cf9b3bda56dbac9a73dd`  
@@ -206,6 +207,7 @@ $ docker pull perl@sha256:88898b6fd9d224be8c5fb77f79d7c94cc31783ad47c91d9772858b
 
 -	Layers:
 	-	`sha256:c582c790d2b2990932b54cd663a9a07aa31225fe4a4f2b183f76257c7fb457a7`  
+		Last Modified: Wed, 25 Dec 2024 02:46:11 GMT  
 		Size: 4.0 MB (3973495 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f455c518d635f636f39911f85c610fae98abb24d3fedc1d53d7c50b9eb56ad08`  
