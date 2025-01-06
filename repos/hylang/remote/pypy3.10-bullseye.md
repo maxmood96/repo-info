@@ -98,7 +98,6 @@ $ docker pull hylang@sha256:19a30f90a8628a71f605ab953003edf3eb194496ba6b269017f6
 		Size: 2.7 MB (2699845 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7b8685ec35b56d78012c4c8d117ffdef44b2d4b69e745d667315dd0c83eac44e`  
-		Last Modified: Wed, 25 Dec 2024 00:30:30 GMT  
 		Size: 9.3 KB (9343 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -183,7 +182,6 @@ $ docker pull hylang@sha256:80ae3802f66707c74f2285c2ba96fb9846eb3730074c1119c57b
 
 -	Layers:
 	-	`sha256:100dd6933dfea6ab222a3ef61aef6ad0e58f55963325b6b071f2908848d54057`  
-		Last Modified: Wed, 25 Dec 2024 11:06:03 GMT  
 		Size: 2.7 MB (2700146 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:368b21ed6e6df13c29b2117885df75c5309eb901988c755eece2eb883c70cee8`  
@@ -252,6 +250,7 @@ CMD ["hy"]
 		Size: 3.3 MB (3306004 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:368b60d4a92ce67b219d88e2a1f2cfaa32936dced4b7986c118de282573e6fb7`  
+		Last Modified: Tue, 24 Dec 2024 23:23:07 GMT  
 		Size: 6.4 MB (6357901 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -271,7 +270,6 @@ $ docker pull hylang@sha256:2965265189fccc75ec2258bbf4f691709693eccf07299682abc0
 
 -	Layers:
 	-	`sha256:e71bd13d42062bdaa7e440cbb10a3a375ca1374fcca749a9b7602135341c1b6b`  
-		Last Modified: Tue, 24 Dec 2024 23:23:07 GMT  
 		Size: 2.7 MB (2696951 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3681f4bfc947856683020a5c890d7c28c35de635fb41ebf692da190c4827ca20`  
