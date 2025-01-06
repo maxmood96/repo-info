@@ -135,7 +135,6 @@ CMD ["bash"]
 		Size: 2.9 MB (2885837 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eeebf786c3be03a954ac864084bfa36738395f5509b0091fffcd9a376c68ef83`  
-		Last Modified: Thu, 19 Dec 2024 21:33:40 GMT  
 		Size: 329.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -341,7 +340,6 @@ CMD ["bash"]
 		Size: 2.9 MB (2874841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:84bb07f7c1e1584e8afef08bda998fb59facc78a735644e12aa34cd53ae1c921`  
-		Last Modified: Thu, 19 Dec 2024 21:31:35 GMT  
 		Size: 337.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -365,6 +363,7 @@ $ docker pull bash@sha256:c2051f60d905d67763e356f367325aac24b680b192c7b0e5951c13
 		Size: 115.5 KB (115461 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9233a7d312d35d965f83942cd941091e2df223879045fe841c151c3f5de929f2`  
+		Last Modified: Thu, 19 Dec 2024 21:31:35 GMT  
 		Size: 20.3 KB (20322 bytes)  
 		MIME: application/vnd.in-toto+json
 
