@@ -70,6 +70,7 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bb0a5927c302d6e5e93a6570c06c06ce9862ef400bd5fea534fea403fd76e9b8`  
+		Last Modified: Tue, 17 Dec 2024 19:31:13 GMT  
 		Size: 1.3 KB (1307 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:65e7b1cd8a1d4aa5917755e9a51eb72256b93ddf6aa3825cbd84213d86f046d3`  
@@ -77,17 +78,17 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:93a76e8a87993daefe8a56da532e9ecac69a46fe935f34deac5f3e2ccff312c7`  
-		Last Modified: Tue, 17 Dec 2024 19:31:13 GMT  
 		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:50f37de67167c5db5acc1c6ba5c9f86ac4f699f4c646ecae8bccaaa2a6b86bb0`  
+		Last Modified: Tue, 17 Dec 2024 19:31:14 GMT  
 		Size: 465.9 KB (465852 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d125faf71663c9c259588da9545dcfc1d961e59d92ce5a9486c7d389cb61bc2c`  
-		Last Modified: Tue, 17 Dec 2024 19:31:13 GMT  
 		Size: 6.4 MB (6375751 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c9f9b5ddb5fe65a52ed1c161189ff40d0273af9d50a8a6777a98abffd5b4f7d0`  
+		Last Modified: Tue, 17 Dec 2024 19:31:12 GMT  
 		Size: 1.9 KB (1881 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:19f6b8c72206232edf4922cfb68939224b12d0d8eb8e2e4c88e5e66875586d0b`  
@@ -99,6 +100,5 @@ CMD ["--config" "nats-server.conf"]
 		Size: 1.3 KB (1302 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b7d656e63d77c756e50abf1d5d895ac8c06814dd594cc1bf16ea92894907949e`  
-		Last Modified: Tue, 17 Dec 2024 19:31:12 GMT  
 		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
