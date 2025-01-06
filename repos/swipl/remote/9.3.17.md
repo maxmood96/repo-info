@@ -50,6 +50,7 @@ CMD ["swipl"]
 		Size: 49.2 MB (49222702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8003441359fc966759842c26be2c8ec4061692b73925fa2443c8231899948c71`  
+		Last Modified: Tue, 24 Dec 2024 22:28:07 GMT  
 		Size: 18.7 MB (18715016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -105,7 +106,6 @@ CMD ["swipl"]
 
 -	Layers:
 	-	`sha256:24f0da30a772db626789cda3e7b0911098d07574c40b30be943d43dec3ed685f`  
-		Last Modified: Tue, 24 Dec 2024 21:33:51 GMT  
 		Size: 23.9 MB (23933522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d1ebd7f3d299ae9edb64c4475cfd0618cfdfb3cf438f8456045c09ce30f2495b`  
