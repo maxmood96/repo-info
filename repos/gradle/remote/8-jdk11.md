@@ -253,7 +253,6 @@ USER root
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1677534b2c971c7f45b85a2275c0f50e08b13d66b0ed3391817900c921164515`  
-		Last Modified: Thu, 24 Oct 2024 01:58:22 GMT  
 		Size: 4.3 KB (4300 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -289,11 +288,9 @@ $ docker pull gradle@sha256:c1711b99122b8e291ee1d3aad3d2b7c38d07d07ca7271e87f1c5
 
 -	Layers:
 	-	`sha256:6d240e7c26739524813f49c3d685060f0f65094ff84aba33febbf5988264af39`  
-		Last Modified: Sat, 21 Dec 2024 00:23:16 GMT  
 		Size: 7.4 MB (7449508 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6c608d49abd236465cd35cbe8f287bfd9d44e6c2fc315b0a3cf3bf0ee3a17cb9`  
-		Last Modified: Sat, 21 Dec 2024 00:23:16 GMT  
 		Size: 23.1 KB (23064 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -385,7 +382,6 @@ USER root
 		Size: 142.4 MB (142386670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:42ca6248b7bdf803452c2e8c8ad830432f6693f9c08e3f74a3ef8bf48906e648`  
-		Last Modified: Thu, 24 Oct 2024 01:03:48 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8bec2e0ea1baef3f64532625145074b35338d2a1adeaaa7914d0828b1338cb90`  
@@ -401,7 +397,6 @@ USER root
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:955330bf60c407102b82abdeb69eae76108d7eeeb7da0f38161d441951b81dbc`  
-		Last Modified: Sat, 21 Dec 2024 00:24:42 GMT  
 		Size: 50.2 MB (50222308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a0ef9ef571bf1ad53c222501797a7d19fd9b410255398e186a93587c4d294ede`  
@@ -685,7 +680,6 @@ USER root
 		Size: 50.3 MB (50349031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6346917a8ae394600996f174f84d64deff2343975f99e6ffa18d127215ca5bc1`  
-		Last Modified: Fri, 20 Dec 2024 23:33:34 GMT  
 		Size: 136.6 MB (136564075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3d9686a6fcd5587e0c15ce525cb68fef5befff07cf882711bcefb5d5e791bcb8`  
