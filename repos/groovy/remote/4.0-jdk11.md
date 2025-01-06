@@ -119,7 +119,6 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 244.1 KB (244122 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:07a48c4fecf819f7b23209f94701ae524d52e0b8cd665f41ba25756754d204b0`  
-		Last Modified: Mon, 11 Nov 2024 18:58:15 GMT  
 		Size: 30.0 MB (29972353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb9b550e39a0a9e010f018455a25ca487fa940821b837b5c44919d5fe3ef7d5d`  
@@ -367,7 +366,6 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 142.4 MB (142386670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:42ca6248b7bdf803452c2e8c8ad830432f6693f9c08e3f74a3ef8bf48906e648`  
-		Last Modified: Thu, 24 Oct 2024 01:03:48 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8bec2e0ea1baef3f64532625145074b35338d2a1adeaaa7914d0828b1338cb90`  
@@ -387,7 +385,6 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 241.1 KB (241060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6802465fa4158d284e770d570959d446bed9a0a18708308f4989ad5eb22cb0d8`  
-		Last Modified: Mon, 11 Nov 2024 18:59:35 GMT  
 		Size: 30.0 MB (29972355 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d2ce1321a32a4b13c7a0be28fc35e1c1f47b11bc64bcf2258ccbb9bdedb986ec`  
@@ -411,7 +408,6 @@ $ docker pull groovy@sha256:8ee8b556b82bf875ebf5ec5f928f6ce06e0a47cbc13a5d2d0728
 
 -	Layers:
 	-	`sha256:c60b54006490ba1564b8cc5a54d28e2afd8ef7e666eb5de485a6e168eeff401f`  
-		Last Modified: Mon, 11 Nov 2024 18:59:34 GMT  
 		Size: 3.9 MB (3908666 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:32b842cc83d52fda7139467ca273fb132978d3efcc666eeb12808c2bc6d7d7bc`  
@@ -521,7 +517,6 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 279.4 KB (279350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f2592853e97b8fde5e57d4026b54313f42c171c31e5c6579295ef047376bfc8a`  
-		Last Modified: Mon, 11 Nov 2024 19:00:42 GMT  
 		Size: 30.0 MB (29972318 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:beb6ca7c146adb67926a697735a36f1659c63a7bcc0528de0d984869ea9ae0a2`  
