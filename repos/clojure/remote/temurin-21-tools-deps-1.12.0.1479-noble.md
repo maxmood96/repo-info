@@ -126,7 +126,6 @@ $ docker pull clojure@sha256:60f6f6b1a13f9637ca0bb299c3e04c0314bed854fa1980b8a7f
 
 -	Layers:
 	-	`sha256:63696e2eb372ca122fa2f48f3e99560ddd96d147338f4f844ab8b1aa90355597`  
-		Last Modified: Tue, 03 Dec 2024 03:26:00 GMT  
 		Size: 5.7 MB (5673505 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7642e7f6eb13aad5b17c1e139d2405cefc0ccf80f5939194b967d886c92fdc5c`  
@@ -198,6 +197,7 @@ CMD ["-M" "--repl"]
 
 -	Layers:
 	-	`sha256:8bb55f0677778c3027fcc4253dc452bc9c22de989a696391e739fb1cdbbdb4c2`  
+		Last Modified: Tue, 19 Nov 2024 17:38:33 GMT  
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4710d3748e6eecf27ed172c1655ce54d98b0ba8e89dbcfe941361161b2a0618c`  
@@ -209,6 +209,7 @@ CMD ["-M" "--repl"]
 		Size: 155.8 MB (155805585 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7fd1e99b1134f43d1ad6a09a008bf11d5405fcfb92de8dd0e7fc5ff58cbbd6e4`  
+		Last Modified: Tue, 03 Dec 2024 05:51:57 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6184ac905aa0c460b38ae58070c80a28b697353a6023b702220e852201f5d684`  
@@ -220,7 +221,6 @@ CMD ["-M" "--repl"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:de314b2841497700d3f9d8a56bcc8c74aa330d2791b3865e87dbfa06b9f02182`  
-		Last Modified: Tue, 03 Dec 2024 15:31:06 GMT  
 		Size: 54.9 MB (54890386 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7f17f880744a5e7ee083ed68fda19ca72f7694306a5f2c1fe42cf6d93ec4a291`  
