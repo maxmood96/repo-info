@@ -117,9 +117,11 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 489.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5552dc54b96ea25685904a24423e4766458f4923ae4dc0edeb9914c335160578`  
+		Last Modified: Tue, 24 Dec 2024 22:29:31 GMT  
 		Size: 26.1 MB (26054275 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8163ce39a7010cbd8ca4ab2c21739514970b93f5bd0bb974a0e08d42166d7d98`  
+		Last Modified: Tue, 24 Dec 2024 22:29:31 GMT  
 		Size: 2.4 KB (2447 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8230dafae88358793d40b59290f1bb8b61774f9dcae86e3d135075499e3ac8f6`  
@@ -257,7 +259,6 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f4ed7b1b9105789e8dcb4a70b1bca07a9fdba709e47328dbbaea9c5b4bf87290`  
-		Last Modified: Tue, 24 Dec 2024 23:02:50 GMT  
 		Size: 69.1 MB (69119370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f1a233e03098e618374485da8fda6624c4ced95642637d019537cc640d4a81df`  
@@ -273,6 +274,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 487.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c7ba96ffbfa679dbd30e9712f69b4e81f84eb1164112a4ef8cf7fb20b6595021`  
+		Last Modified: Wed, 25 Dec 2024 00:27:53 GMT  
 		Size: 23.8 MB (23796361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8871965b2e42044abb067becd9c13542efd56c0ff8a9ee5667c456cdf6916f2e`  
@@ -324,6 +326,7 @@ $ docker pull drupal@sha256:b8fe709b137ee9f78af20faf2ef1c1055108ab4c1d7a5bfea7a6
 		Size: 6.2 MB (6230553 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3bfa053a4e7bb065c8bb18bed55828653e627a51542cc34fde37c67f3bc5b251`  
+		Last Modified: Wed, 25 Dec 2024 13:30:33 GMT  
 		Size: 23.9 KB (23944 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -421,7 +424,6 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:abc642a94b5347df0d6ea1bf323ec06b440d16ded54ef691e0eb26abdc7d6496`  
-		Last Modified: Wed, 25 Dec 2024 00:49:44 GMT  
 		Size: 12.0 MB (12019581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f84b5192da72b9cd6b6d208a726351a2186d04a0009eb27b65cf6ba70af0041`  
@@ -587,6 +589,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f21b152a827f4c02b82030a80488a67516669eec0a6e282b74d8b3d223e99614`  
+		Last Modified: Tue, 24 Dec 2024 22:27:59 GMT  
 		Size: 26.5 MB (26536134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a758a5f874d634c381f6bec68c17d53c06a63062c6b9eb89006c3fabde9767a1`  
@@ -606,7 +609,6 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 8.9 KB (8879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c00c7eb2b5343657ebb2390f80e86b146635564fcf5a2f7025dbe641f1ed8c0`  
-		Last Modified: Tue, 24 Dec 2024 23:20:52 GMT  
 		Size: 2.0 MB (1964839 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1fc0babf0ce12e7d9718e0a4644ec05a9c019be8f4daf958d88db435cbe247b7`  
@@ -614,7 +616,6 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 315.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b565bf56613f3b4fb7d57ca4b898c4e3bddec756bc7f99154ab44a595c27bb97`  
-		Last Modified: Tue, 24 Dec 2024 23:20:53 GMT  
 		Size: 3.4 MB (3429012 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -634,6 +635,7 @@ $ docker pull drupal@sha256:f87c4a25acc2abcf3f08e5fcaa9cc0b056619585af2b9a48e619
 
 -	Layers:
 	-	`sha256:c0b4ec0b1a216ee24f76ced91ea0e8ea894cca5536bc75b1981ae0e3339e735e`  
+		Last Modified: Tue, 24 Dec 2024 23:20:52 GMT  
 		Size: 6.4 MB (6412374 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:714626d14eed6ec3fb6f5bba628506d8af6bab5943a8adfc204fc2c7e0afe7d0`  
