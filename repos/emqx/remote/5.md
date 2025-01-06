@@ -87,7 +87,6 @@ $ docker pull emqx@sha256:288711b11344aa0b0cb1ca4c92d353b38bf62a7b9b489c3550af45
 
 -	Layers:
 	-	`sha256:9ffa4ddece85986f0d86098778a2e6b513ac2da16b25a18ab0a316a7f8304f35`  
-		Last Modified: Tue, 24 Dec 2024 22:14:00 GMT  
 		Size: 2.6 MB (2614485 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ff5234f7324fc532b1fcb570b2e34aad74e0f2ce7dda957189687964faf2653d`  
