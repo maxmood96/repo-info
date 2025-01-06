@@ -66,6 +66,7 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 12.2 MB (12174528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:42c1311a3e996cd9038d1fbbdb4985e0a540fa0541a512f5e96d1672b8600777`  
+		Last Modified: Thu, 19 Dec 2024 21:32:15 GMT  
 		Size: 238.6 MB (238579387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cebae8280e79fecd60437ebf2c168db5f0a83e7582b05b56a4e2cb2de016937b`  
@@ -139,7 +140,6 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
-		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:77e2579fa9ed432452dd8563d1dc040de22c49fcfc4a3cd906b5e75b095c2926`  
@@ -175,6 +175,7 @@ $ docker pull ibm-semeru-runtimes@sha256:0b4e2406f31e97e868161bd687cfc894556e557
 		Size: 3.7 MB (3657914 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a8198ec65d5ca048d04ecda17a10134cf7acadb29e5304f451c1229ff3dcab11`  
+		Last Modified: Thu, 19 Dec 2024 22:33:07 GMT  
 		Size: 25.0 KB (24957 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -253,7 +254,6 @@ $ docker pull ibm-semeru-runtimes@sha256:5bfcdd9054e53cb1d7a0493d8091b36254c6003
 
 -	Layers:
 	-	`sha256:ffe5a35aad03c1fa50c7a7e9ce81e544be5fb3be16cea39c6b5893fe42fd560a`  
-		Last Modified: Thu, 19 Dec 2024 22:52:46 GMT  
 		Size: 3.7 MB (3663789 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:985087656d8546562cd85812cb6e797bd0236ba656eaef4cea249701d67fdce4`  
@@ -304,7 +304,6 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 
 -	Layers:
 	-	`sha256:41e9fbd89079d8e47609ae158236d59896fd2503db1ebdfef058864054170e01`  
-		Last Modified: Wed, 11 Sep 2024 17:25:11 GMT  
 		Size: 28.0 MB (28001475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:19d7fcbb74a18dbda1a95a881c01c2cc4d8a0d6fe38b3b4f8b5899f281f9815e`  
