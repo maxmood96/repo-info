@@ -387,7 +387,6 @@ CMD ["xwiki"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4bca028e31a392b6603b7929851a3bac241bd09916d10fa88f606ec036f3cc7b`  
-		Last Modified: Tue, 10 Dec 2024 02:47:56 GMT  
 		Size: 13.4 MB (13428400 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a5b740db3c43f49f9288e60e87632fa4aa0ddf340b6905cb1d99db0d1ecdff65`  
@@ -403,7 +402,6 @@ CMD ["xwiki"]
 		Size: 188.8 MB (188824761 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e032e1ab06f86e32c9349c7242400e414926eb0ef02ec8cd99b3e696ce0927f6`  
-		Last Modified: Tue, 10 Dec 2024 05:22:22 GMT  
 		Size: 307.1 MB (307144484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5e4d055cccca28fe583c5eb5789bb8b3b3daa50543e2e46c0ce7b5e45cd3f828`  
@@ -447,6 +445,5 @@ $ docker pull xwiki@sha256:c53e15d3a31e8394841a064b490cb35485b3d73855753ecca68b9
 		Size: 8.8 MB (8784274 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bb81a1c94ae47cd558618c609b72d0aa4bcca836168155da33c3e294e2c26ec5`  
-		Last Modified: Tue, 10 Dec 2024 05:24:43 GMT  
 		Size: 41.2 KB (41166 bytes)  
 		MIME: application/vnd.in-toto+json
