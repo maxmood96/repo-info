@@ -145,7 +145,6 @@ $ docker pull sonarqube@sha256:638b6b191848ad02247b3f8ce6c4d0485884e450999fe2f90
 
 -	Layers:
 	-	`sha256:41f2dca9ce7d18d865fa26b336edd6c905b9234bef64b9cacb73ed37666f34a6`  
-		Last Modified: Tue, 17 Dec 2024 19:30:11 GMT  
 		Size: 4.7 MB (4654625 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:08bae3a92aaedd2550d505293b4a527190618613e3559f43c4da2d7a2ada4f90`  
@@ -246,6 +245,7 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 		Size: 16.1 MB (16062123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6c88cd8dd8835e47c7a890ad7abd2ca59cf691145582518cf5843edbd6d6bfa0`  
+		Last Modified: Thu, 24 Oct 2024 01:12:30 GMT  
 		Size: 46.4 MB (46430856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0c3c08b455337af9ba6b5fe522389a1d0a2b621fe437f3832a54289cac03397`  
