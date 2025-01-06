@@ -62,6 +62,7 @@ CMD ["iex"]
 		Size: 51.7 MB (51671978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1085741f563db846204a2b255245e2a74343385ee6adbec4839ac1d29c0314fc`  
+		Last Modified: Thu, 02 Jan 2025 19:29:33 GMT  
 		Size: 7.4 MB (7449983 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -203,7 +204,6 @@ CMD ["iex"]
 		Size: 51.9 MB (51868120 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7cfb128f4560cc199ee9b9ef747da0ed8ead4dc790f085cd273f7554e7edaa24`  
-		Last Modified: Thu, 02 Jan 2025 20:03:20 GMT  
 		Size: 7.4 MB (7449860 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -270,6 +270,7 @@ CMD ["iex"]
 		Size: 3.5 MB (3469219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b1ba9c5b2f589855f6f72ef4def046d90736354786b5c5e2a7b7349d29fa7f8c`  
+		Last Modified: Tue, 12 Nov 2024 02:47:26 GMT  
 		Size: 50.0 MB (50047891 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3d632b216de84b6050830f4d40a51445969d54d9e41db28d4b6ac5c33acf6966`  
@@ -340,6 +341,7 @@ CMD ["iex"]
 		Size: 3.6 MB (3572459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:08413f374d1ab64cc0aff998e62ab05cc4e62e593a2eb799b56042c289520951`  
+		Last Modified: Tue, 12 Nov 2024 08:45:17 GMT  
 		Size: 50.1 MB (50139044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3b1b1b44ef0ef015d9ced9a35ab9c133b21391b0200f01e8e93fa1767a070fca`  
@@ -363,7 +365,6 @@ $ docker pull elixir@sha256:f3b2723d53a0248db9e4e99639fed99e5777b5db7838fd9fd74a
 
 -	Layers:
 	-	`sha256:3c92a89b8878c65fe4d6e4b201ff5a1d806fd60ccd8731e24b3989e0684d5578`  
-		Last Modified: Thu, 02 Jan 2025 19:40:07 GMT  
 		Size: 272.4 KB (272448 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d13f96ef72f39cdd2b22ad6d3acb7c7005b926e4da1356bb77e86b6808de152b`  
@@ -406,7 +407,6 @@ CMD ["iex"]
 
 -	Layers:
 	-	`sha256:4261d20208fd5fe57c9f53c86783089a963169d6db6f16306e083ca43f937e0b`  
-		Last Modified: Tue, 12 Nov 2024 00:55:29 GMT  
 		Size: 3.5 MB (3461608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:61208b62bd26299e7025a689082d21ab682d1d4203b0a76e37f2d2ca8f968f5a`  
@@ -438,5 +438,6 @@ $ docker pull elixir@sha256:9f615e9b2f104c3b5ecbe4dcbe6dfc87d7b590855b1dea2ed48f
 		Size: 272.4 KB (272402 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8f4ad5ecea169cb97d8deeb72e79780155a10224299f7de1f41ffb27af7674b1`  
+		Last Modified: Thu, 02 Jan 2025 19:37:53 GMT  
 		Size: 10.4 KB (10430 bytes)  
 		MIME: application/vnd.in-toto+json
