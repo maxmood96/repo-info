@@ -477,7 +477,6 @@ CMD ["notary-server" "--version"]
 		Size: 118.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a930a0f8ab3d07dab42d81b5408079068138e1ed4ff442f3f48f30a0008f90d`  
-		Last Modified: Sat, 16 Mar 2024 10:33:53 GMT  
 		Size: 4.6 MB (4639148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
