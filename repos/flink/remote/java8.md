@@ -89,7 +89,6 @@ CMD ["help"]
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:71459320ef32b268802c2f64b34298d9d9849894d4ab5184dd8ad57faca01e4b`  
-		Last Modified: Thu, 24 Oct 2024 00:56:42 GMT  
 		Size: 16.1 MB (16142489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6da2561f7ba6259d0e125c0d8892f9bfb3f7dcbc57c06319fcc67992948be00`  
@@ -267,7 +266,6 @@ CMD ["help"]
 		Size: 483.7 MB (483656772 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2cdc8c679418bb23a906a6e584f0595c0d0c83f187bf7696dc325dab2798674d`  
-		Last Modified: Thu, 24 Oct 2024 02:02:43 GMT  
 		Size: 2.3 KB (2268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
