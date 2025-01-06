@@ -111,7 +111,6 @@ CMD ["--config" "nats-server.conf"]
 		Size: 5.6 MB (5553927 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4e4aef5e79acad5215cfeb435fcd7a420447cc550b3045715dcd97efb7cb374f`  
-		Last Modified: Tue, 17 Dec 2024 20:07:21 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -188,7 +187,6 @@ $ docker pull nats@sha256:f9eaffb5a7d57be14405ae9a378201ab9a8b8f29afc536e0f8cc62
 
 -	Layers:
 	-	`sha256:163a6014f277c730d1ebece60d800e1889e07231871cc75ab28b5544c87be3b1`  
-		Last Modified: Tue, 17 Dec 2024 20:07:18 GMT  
 		Size: 10.6 KB (10600 bytes)  
 		MIME: application/vnd.in-toto+json
 
