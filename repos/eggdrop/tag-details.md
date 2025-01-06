@@ -304,7 +304,6 @@ CMD ["eggdrop.conf"]
 		Size: 1.9 KB (1949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:776b62d46e233e54ce00d37d88180b4e077c5cbc9639887866f6185d3b00cd46`  
-		Last Modified: Tue, 12 Nov 2024 02:35:49 GMT  
 		Size: 1.1 KB (1124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -419,7 +418,6 @@ CMD ["eggdrop.conf"]
 		Size: 5.0 MB (4969738 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:74bd752aab17f337de75cadeaee28c031c9c0b7b009188d30e1c67d08892940f`  
-		Last Modified: Tue, 12 Nov 2024 02:18:23 GMT  
 		Size: 6.0 MB (5964216 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -766,7 +764,6 @@ CMD ["eggdrop.conf"]
 		Size: 5.0 MB (4969738 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:74bd752aab17f337de75cadeaee28c031c9c0b7b009188d30e1c67d08892940f`  
-		Last Modified: Tue, 12 Nov 2024 02:18:23 GMT  
 		Size: 6.0 MB (5964216 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -1448,7 +1445,6 @@ CMD ["eggdrop.conf"]
 		Size: 5.0 MB (4969738 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:74bd752aab17f337de75cadeaee28c031c9c0b7b009188d30e1c67d08892940f`  
-		Last Modified: Tue, 12 Nov 2024 02:18:23 GMT  
 		Size: 6.0 MB (5964216 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -1795,7 +1791,6 @@ CMD ["eggdrop.conf"]
 		Size: 5.0 MB (4969738 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:74bd752aab17f337de75cadeaee28c031c9c0b7b009188d30e1c67d08892940f`  
-		Last Modified: Tue, 12 Nov 2024 02:18:23 GMT  
 		Size: 6.0 MB (5964216 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
