@@ -118,7 +118,6 @@ USER rootless
 		Size: 18.8 MB (18849782 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ad24f9b3d669899f0f5f23801046015e880091cff81479e6dc4a2464d5a8ec2`  
-		Last Modified: Tue, 24 Dec 2024 21:32:32 GMT  
 		Size: 18.8 MB (18798849 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:811f28cd53491fd377c809f4c1c0fc61d5ceebe49d7bfd1d47aa28b543023f92`  
@@ -166,7 +165,6 @@ USER rootless
 		Size: 986.6 KB (986574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c9340f8395632fd0b84ca660f9c5ddc5ae74b53143502448784f6c8b279f0c97`  
-		Last Modified: Tue, 24 Dec 2024 23:15:44 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9c0fd53e20d35ad7304b5500cda40c58a677aae8a389177d9fead4fe77968e8`  
@@ -389,5 +387,6 @@ $ docker pull docker@sha256:e8d0403bea695392b58170f591386fa2e3e09a6618edeb8c08f5
 
 -	Layers:
 	-	`sha256:3afc678b55581a6f659badce76fe969f6eea0315895a0bda326cad30992876cf`  
+		Last Modified: Wed, 25 Dec 2024 07:47:59 GMT  
 		Size: 30.5 KB (30527 bytes)  
 		MIME: application/vnd.in-toto+json
