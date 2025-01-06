@@ -120,7 +120,6 @@ $ docker pull eclipse-temurin@sha256:231893635b700cf5eeba7bc043ebba3e4fb53bd09e7
 
 -	Layers:
 	-	`sha256:835b7898d0b797a70e811e24f9eb57eb3c290fcd3e9287da8b66d3d074a023c3`  
-		Last Modified: Thu, 19 Dec 2024 06:28:01 GMT  
 		Size: 3.6 MB (3584813 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:86099a958784df1269bd8edbadec71334d7322a5b7ea387d974ea682ed5fc256`  
@@ -233,6 +232,7 @@ $ docker pull eclipse-temurin@sha256:0a6deb859f963bef798d309ba355b8eacbb7458b2dc
 
 -	Layers:
 	-	`sha256:dad990938b7dac59f305e13d566a03cfe9885bc7d913e97224061b5e2c8f48df`  
+		Last Modified: Thu, 19 Dec 2024 06:33:42 GMT  
 		Size: 3.6 MB (3583992 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:91007378cf1ba5bd4adbde3d411502939010e25e1ab91fbdffdeba069d1b3d52`  
@@ -313,13 +313,14 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 43.8 MB (43794286 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43ba1070e381ba17323f8d239e6cdd49953a6bc3dd93eb1d577039150e95992e`  
+		Last Modified: Thu, 19 Dec 2024 06:29:27 GMT  
 		Size: 39.5 MB (39476308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11079708370ebeb3dca2988113d6969714265c2f5c815f15d47b8977f5ccdd6f`  
-		Last Modified: Thu, 19 Dec 2024 06:35:51 GMT  
 		Size: 52.9 MB (52911104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd44cd767fb1804280aa1ad39aff99e1515a77a8f292aa9cbe06c049ea9fae0f`  
+		Last Modified: Thu, 19 Dec 2024 06:35:49 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb05f2d1321631f3821638b5ab3a16e361e3114ad154581a5923cc0461fcd77f`  
@@ -343,7 +344,6 @@ $ docker pull eclipse-temurin@sha256:d716ec7d78e26615ea5012c96aa1bb0ced2c3c58a13
 
 -	Layers:
 	-	`sha256:d332d4391a5be449d24e784f517ec66543c32b119312d18aea41cf97a17547d3`  
-		Last Modified: Thu, 19 Dec 2024 06:35:49 GMT  
 		Size: 3.6 MB (3584639 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1c5b957daf64ab9f875f515cff6dd3ea3abc5d2eeb99156a8bef83285fceaadc`  
@@ -436,7 +436,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1ae2e5135bbda97a1a98302fb01e5f5f6fbec8eb1f0d3f0525f7e2414bb8c753`  
-		Last Modified: Thu, 19 Dec 2024 06:36:18 GMT  
 		Size: 2.3 KB (2292 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

@@ -98,6 +98,7 @@ $ docker pull eclipse-temurin@sha256:2795908d1374a9619ef854ef944b92a99825cb19248
 
 -	Layers:
 	-	`sha256:33f15168e94ee4ad7ef22304374349d326b19554ea920cf3cac08c1148e2f619`  
+		Last Modified: Thu, 24 Oct 2024 00:56:50 GMT  
 		Size: 3.7 MB (3740060 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:aa0d3836c6ebd06cdb524e39f272bd3268aa23516988474ef30ae92fb8c8908b`  
@@ -168,6 +169,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2fc950120cee4a57e9352b3b04180f968f437e30aa198c65ee961523550e56dc`  
+		Last Modified: Thu, 24 Oct 2024 01:02:11 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -242,6 +244,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7944fa14982850a5d6fef396e75bb75cff1a66cd0eb74db10ed75ba31d11c024`  
@@ -253,6 +256,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 40.9 MB (40867269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3322a350fa3f095851250a8b23a470ffc75f358f910f7d881e545b7ed5a79776`  
+		Last Modified: Thu, 24 Oct 2024 01:00:53 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ab1197c8b21b66735ccb4f40c68ac95ff7b56ef5adcd15dc645a4cb370730063`  
@@ -367,9 +371,9 @@ $ docker pull eclipse-temurin@sha256:134ae620155cbee5a2c20d35a9f2ffbfa77c5c87dcf
 
 -	Layers:
 	-	`sha256:ceceffdcaaff2cfcc6301a28c447e33948fef422b171e69f56882bb0a259fcb5`  
-		Last Modified: Thu, 24 Oct 2024 05:50:45 GMT  
 		Size: 3.7 MB (3744612 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c5c158d5d9baf135c03f30a0f94d3056780bd474bf1ee9fafc9910879388d528`  
+		Last Modified: Thu, 24 Oct 2024 05:50:44 GMT  
 		Size: 22.1 KB (22052 bytes)  
 		MIME: application/vnd.in-toto+json
