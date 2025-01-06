@@ -725,7 +725,6 @@ CMD ["server.sh"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:94af2a8b46727d7e74b5a9b021c72fee0360514505ac4671c5afccaac87e7269`  
-		Last Modified: Tue, 03 Dec 2024 03:24:33 GMT  
 		Size: 72.9 MB (72927915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -1174,7 +1173,6 @@ $ docker pull orientdb@sha256:36e383179d053a2278e1739ddc95e43d6ee526d4ec7bb01d1d
 
 -	Layers:
 	-	`sha256:de0542f3441df634287777f348cc8bf32eb4b90f1fbe87aeb797f6d51daa4503`  
-		Last Modified: Tue, 03 Dec 2024 03:24:38 GMT  
 		Size: 3.5 MB (3549880 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5d9b51263e18f6576518b0c1b21256415ccd0c1c2502a7fe3c86afe5b7594277`  
@@ -1583,7 +1581,6 @@ CMD ["server.sh"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:94af2a8b46727d7e74b5a9b021c72fee0360514505ac4671c5afccaac87e7269`  
-		Last Modified: Tue, 03 Dec 2024 03:24:33 GMT  
 		Size: 72.9 MB (72927915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -2032,7 +2029,6 @@ $ docker pull orientdb@sha256:36e383179d053a2278e1739ddc95e43d6ee526d4ec7bb01d1d
 
 -	Layers:
 	-	`sha256:de0542f3441df634287777f348cc8bf32eb4b90f1fbe87aeb797f6d51daa4503`  
-		Last Modified: Tue, 03 Dec 2024 03:24:38 GMT  
 		Size: 3.5 MB (3549880 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5d9b51263e18f6576518b0c1b21256415ccd0c1c2502a7fe3c86afe5b7594277`  
@@ -2441,7 +2437,6 @@ CMD ["server.sh"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:94af2a8b46727d7e74b5a9b021c72fee0360514505ac4671c5afccaac87e7269`  
-		Last Modified: Tue, 03 Dec 2024 03:24:33 GMT  
 		Size: 72.9 MB (72927915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
