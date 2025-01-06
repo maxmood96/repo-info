@@ -129,6 +129,7 @@ RUN # debian.sh --arch 'armhf' out/ 'testing' '@1734912000'
 
 -	Layers:
 	-	`sha256:09224a7e0b4e703929eacf79312b0755eeb8650608fb40c1847f2fcd131fc2e7`  
+		Last Modified: Tue, 24 Dec 2024 21:36:48 GMT  
 		Size: 46.8 MB (46767960 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -323,7 +324,6 @@ RUN # debian.sh --arch 'riscv64' out/ 'testing' '@1734912000'
 
 -	Layers:
 	-	`sha256:08472a2c71afb313a23a9d9330a521aada323417db4b4a4aa870241914d76d46`  
-		Last Modified: Tue, 24 Dec 2024 21:38:38 GMT  
 		Size: 50.7 MB (50704574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -365,6 +365,7 @@ RUN # debian.sh --arch 's390x' out/ 'testing' '@1734912000'
 
 -	Layers:
 	-	`sha256:d4ad176155d7de1a9408f8a75122ec6d1bfb314b586705e42bcec6225e2d35ea`  
+		Last Modified: Tue, 24 Dec 2024 21:36:24 GMT  
 		Size: 52.2 MB (52167532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

@@ -129,7 +129,6 @@ RUN # debian.sh --arch 'armhf' out/ 'sid' '@1734912000'
 
 -	Layers:
 	-	`sha256:fd381bc5446358c906dd1f7ac3878d03bb1e1267963891069c3e6e2c97919218`  
-		Last Modified: Tue, 24 Dec 2024 21:35:32 GMT  
 		Size: 46.8 MB (46763305 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -235,7 +234,6 @@ $ docker pull debian@sha256:1c06a3473b7dd37e312f435199da2be802ed33c0d823fa359058
 
 -	Layers:
 	-	`sha256:c9febd55a318a2cb12618531e373ba462b7d821c096b2e1d7667fb563f8aab7d`  
-		Last Modified: Tue, 24 Dec 2024 21:32:38 GMT  
 		Size: 3.2 MB (3226043 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -301,7 +299,6 @@ $ docker pull debian@sha256:fd94e6e37e4d56af1b39b444f69040deba1bfc6c488d03c9cdad
 
 -	Layers:
 	-	`sha256:108d5ddaf5fb9fdf4245e53a9fc945a96bc5606b8a41bc173c7c42ba952f8ec9`  
-		Last Modified: Wed, 25 Dec 2024 00:33:16 GMT  
 		Size: 3.2 MB (3233222 bytes)  
 		MIME: application/vnd.in-toto+json
 

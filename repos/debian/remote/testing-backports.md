@@ -50,7 +50,6 @@ RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/so
 		Size: 52.2 MB (52212346 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e78ecb5873c6e0407b8f61e262e8399cbe14f8de8950dcd87f11d4df7ea0fe15`  
-		Last Modified: Tue, 24 Dec 2024 22:13:51 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -152,6 +151,7 @@ RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/so
 
 -	Layers:
 	-	`sha256:09224a7e0b4e703929eacf79312b0755eeb8650608fb40c1847f2fcd131fc2e7`  
+		Last Modified: Tue, 24 Dec 2024 21:36:48 GMT  
 		Size: 46.8 MB (46767960 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c2869db4a4b843aee7d1ecc8efebad181f86464bb28e43e52bd4075da651195`  
@@ -208,6 +208,7 @@ RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/so
 		Size: 52.4 MB (52425571 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9c57c1aafa4352f100107e0a81a6a817c13d674fe244adecd395d1b3acd7144`  
+		Last Modified: Tue, 24 Dec 2024 22:18:34 GMT  
 		Size: 220.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -260,7 +261,6 @@ RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/so
 		Size: 53.0 MB (53029052 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:59cfab0e1c19ee0ac0910581a7194e4ca55047a10f46fb924b46aa66186adbec`  
-		Last Modified: Tue, 24 Dec 2024 22:13:56 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -284,7 +284,6 @@ $ docker pull debian@sha256:71685132acd3cda3e989728ed83fc3e89ce52119367760a7c20e
 		Size: 3.2 MB (3226551 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:25c39f560fbaf94c9515d272e6461cce6ab3d44be0ac71056cbb5e24bd7c85f9`  
-		Last Modified: Tue, 24 Dec 2024 22:13:56 GMT  
 		Size: 5.8 KB (5818 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -313,6 +312,7 @@ RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/so
 		Size: 51.7 MB (51716839 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:27f1ed4989c227923066721850e1221aa777dd25f6ac637b8abc0b4bf20bb5d7`  
+		Last Modified: Tue, 24 Dec 2024 22:18:35 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -410,7 +410,6 @@ RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/so
 
 -	Layers:
 	-	`sha256:08472a2c71afb313a23a9d9330a521aada323417db4b4a4aa870241914d76d46`  
-		Last Modified: Tue, 24 Dec 2024 21:38:38 GMT  
 		Size: 50.7 MB (50704574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4269dbf6e198128198bbad03a3f8ca83784d24402a09cb221d8e41cf9a0fe621`  
@@ -463,6 +462,7 @@ RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/so
 
 -	Layers:
 	-	`sha256:d4ad176155d7de1a9408f8a75122ec6d1bfb314b586705e42bcec6225e2d35ea`  
+		Last Modified: Tue, 24 Dec 2024 21:36:24 GMT  
 		Size: 52.2 MB (52167532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5d30cd1db5ade3694e3356fd97cc384f566adb4d1f0eeda11df2396503d5fff8`  

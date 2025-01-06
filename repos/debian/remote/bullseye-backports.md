@@ -36,7 +36,6 @@ RUN echo 'deb http://deb.debian.org/debian bullseye-backports main' > /etc/apt/s
 
 -	Layers:
 	-	`sha256:5d6e107a26c2ffb6e234f04132358dea70a691a64c1152f984d2f2ba0e218c58`  
-		Last Modified: Tue, 24 Dec 2024 21:32:13 GMT  
 		Size: 53.7 MB (53738957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5dccc9591d21115ff55cb68b6ad3e23a2b3172462d076dee682b220d4ebf1d1a`  
@@ -166,7 +165,6 @@ $ docker pull debian@sha256:9fe078e2a1c858062ceb89a8bc19ac4df7c267f112452cb797bd
 
 -	Layers:
 	-	`sha256:3c369765ad3403d6dfed7020b5596e42a2e69ace80dc6a8e1435cf744bc555b6`  
-		Last Modified: Tue, 24 Dec 2024 22:17:44 GMT  
 		Size: 3.9 MB (3917096 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:85d64a51f64009aa682f76d4a6fd9ccfeeb7046379a3eb12386cd9b63b8d8c12`  
