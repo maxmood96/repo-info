@@ -117,7 +117,6 @@ $ docker pull liquibase@sha256:49a757763f040466b12fdcb8e226a8877f51a314b0e3a0528
 
 -	Layers:
 	-	`sha256:d8c5cb662d83822ad36be08504ef455be3e6b0a56ac833531607a3245e148932`  
-		Last Modified: Tue, 12 Nov 2024 02:14:17 GMT  
 		Size: 378.3 KB (378254 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5a6b7a0b216bb037cdf4c9f4b9e159cb402077f7fef94c0758ebf8024328fa60`  
@@ -235,6 +234,5 @@ $ docker pull liquibase@sha256:16b71a7f2bcd22198564998bef125bcc4035e4b08a0392d95
 		Size: 377.5 KB (377500 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5f59fe77b340b91adc033de18f868d6e384a2aceb3567164f465e6b7b2f4bd8e`  
-		Last Modified: Tue, 12 Nov 2024 13:18:15 GMT  
 		Size: 21.4 KB (21401 bytes)  
 		MIME: application/vnd.in-toto+json
