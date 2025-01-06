@@ -75,7 +75,6 @@ CMD ["spiped"]
 		Size: 7.6 KB (7552 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:faaff9889bcd7686a7e389188c9b1da11b944593c3f367ce73321c9cd1f9f4d3`  
-		Last Modified: Tue, 12 Nov 2024 02:37:26 GMT  
 		Size: 2.5 MB (2500052 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:742ceb23f0c29b5b00035c6ae582d5ff76d9120d036d2c2963228c0b95b636c1`  
@@ -167,7 +166,6 @@ CMD ["spiped"]
 		Size: 2.2 MB (2155051 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b11376d8ca4651e301f66a4e1203da53694eb1be5d78239a60c000768c941525`  
-		Last Modified: Tue, 12 Nov 2024 06:29:08 GMT  
 		Size: 96.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17a2a3ed2d5ea66800cdf4bb8bb04faca0e1725b756688c0d63daf5bcca2d310`  
@@ -247,11 +245,9 @@ CMD ["spiped"]
 		Size: 7.6 KB (7564 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d17e1750441e507ad7e1f0363aabe05175114a5764b1e7ab139af0e89e3e8ae2`  
-		Last Modified: Tue, 12 Nov 2024 15:31:28 GMT  
 		Size: 2.0 MB (2000280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9db3501f51148e9fbda41edee3f07843a542820b52626ecebc0d123cff9f86f0`  
-		Last Modified: Tue, 12 Nov 2024 15:31:28 GMT  
 		Size: 96.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56c83efd7947156d56b945c49da1d15a267824161f7cbb06f182a19f951d46eb`  
@@ -343,7 +339,6 @@ CMD ["spiped"]
 		Size: 94.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:198174201e9ff5bde070dcb1468a1be3c27943e332be9207cbf99edd10b46552`  
-		Last Modified: Tue, 12 Nov 2024 10:30:10 GMT  
 		Size: 335.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -363,7 +358,6 @@ $ docker pull spiped@sha256:0673de50fe1b90d9eba54ceb48d9f764a97f6d383426370685df
 
 -	Layers:
 	-	`sha256:b7546d292551cf31ac3bd93e1e6e162b689c94b9443030c420887493a945351d`  
-		Last Modified: Tue, 12 Nov 2024 10:30:09 GMT  
 		Size: 74.2 KB (74237 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:95d4514b51e612f28c127e3cff2d26e19284f01ad6b7f8ee94cea702f485a8e0`  
@@ -543,7 +537,6 @@ $ docker pull spiped@sha256:68986bada3dc3e301441051f41dd84386659fa6521bcfba1865e
 		Size: 72.3 KB (72261 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:90553d9dcd0f0a8f53c333aed2eed7edd767d790498bd322ce254e64fa3dd8cb`  
-		Last Modified: Tue, 12 Nov 2024 08:08:12 GMT  
 		Size: 14.4 KB (14353 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -715,7 +708,6 @@ $ docker pull spiped@sha256:0eae92830e9bc1adf13eac44f18f428cde18ca2b63aae15579bc
 
 -	Layers:
 	-	`sha256:511653a9b9e8708d56eb05048ec62f75f94b92d11463839efcc6c8f9d950ddbd`  
-		Last Modified: Tue, 12 Nov 2024 08:43:35 GMT  
 		Size: 72.2 KB (72227 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:23d284526c8ef1bc8f766ba9f4b30d40ffacde5f0411805933554ef0edf6dc33`  
