@@ -120,7 +120,6 @@ $ docker pull mongo-express@sha256:cecfddab51bcbc58c2e89fe7acf01e6bef6d35dc0bf3b
 		Size: 997.0 KB (996978 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:344b0ab149c707eead08e56c552914f71a1e0b04670ec991feadc1db36fbe164`  
-		Last Modified: Wed, 20 Nov 2024 20:24:32 GMT  
 		Size: 15.3 KB (15298 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -233,6 +232,5 @@ $ docker pull mongo-express@sha256:ed5bbe33cc81352c8c97999775e2073474d80f568be0a
 		Size: 997.0 KB (997022 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f0bd2f440bb418c416620d66704e7ce5fc54a612a57a18d4217e7a606811cc8f`  
-		Last Modified: Wed, 20 Nov 2024 22:06:47 GMT  
 		Size: 15.4 KB (15405 bytes)  
 		MIME: application/vnd.in-toto+json
