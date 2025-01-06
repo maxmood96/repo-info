@@ -73,7 +73,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-
 
 -	Layers:
 	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:627070c22110350c23cc50089a841b8c4257eb28ce66dea53acf5039c3230e34`  
@@ -93,6 +92,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-
 		Size: 272.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11090410af8961388a4a44a929c9fbc8eb6000dac2075e09c4392d7ec0a60ae4`  
+		Last Modified: Wed, 16 Oct 2024 16:18:35 GMT  
 		Size: 177.0 MB (177040113 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e07f0bec1e43c18cd93acea1d11ffd7fc0409d8b06afa3a0c107f8ad80b105a`  
@@ -136,7 +136,6 @@ $ docker pull ros@sha256:484ae3d7703cd9196cd102483161d0b7186e59dbf22b85d5fab7de1
 		Size: 51.8 MB (51772160 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2007b29cd2d3707f184206d8eb6d98b88ce3c07950eecade7713d537424a3fe3`  
-		Last Modified: Wed, 16 Oct 2024 17:39:57 GMT  
 		Size: 9.4 KB (9377 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -212,6 +211,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-
 		Size: 4.5 MB (4487363 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:76988805d937c32e95625d04f6a3a561ee4feaf82eb48fd5d9502e1c28e7c082`  
+		Last Modified: Wed, 16 Oct 2024 02:32:38 GMT  
 		Size: 2.0 KB (2000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:78b15be849ecb15e904949ad5b4b76855e4d560b6c8a711e75536ff0176a9352`  
@@ -223,7 +223,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-
 		Size: 157.5 MB (157517036 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c61b02ccda3db25327a374133aa1fb86419164045f707000d1b8c7f6e896e05`  
-		Last Modified: Wed, 16 Oct 2024 02:32:39 GMT  
 		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b41b450c86af2668fbfeff608edb2127c5008dce25e7960e258c77b4050f665b`  
@@ -235,7 +234,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-
 		Size: 331.3 KB (331276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a225158d1859182a815bd5a7ba8429ab8ab1bb51a4db5ae89222bb30b8a1d0ba`  
-		Last Modified: Wed, 16 Oct 2024 03:18:51 GMT  
 		Size: 846.9 KB (846890 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f1949580a963a0afcdb9b0814bbfc7b5e0dc62740075d4abdb4a5b82b36229b`  
@@ -259,7 +257,6 @@ $ docker pull ros@sha256:2a56749f526b236ae91d2d30d45dad202afec2ebf09d945c1bb2f89
 
 -	Layers:
 	-	`sha256:51c8eda415d83c183b49d4002ff8cc36d5a9a3613207945774f72915b53049f1`  
-		Last Modified: Wed, 16 Oct 2024 04:19:50 GMT  
 		Size: 51.4 MB (51405954 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:23c38dd0da5fb9be55744dbdfc895056e1c5e33edd01adbde39a997a878a511f`  
@@ -347,7 +344,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-
 		Size: 271.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:70554c999e53a1aad7c55aafc6f0ddb8095bd7b1eb3c0dc38e07aec7896ae2cf`  
-		Last Modified: Wed, 16 Oct 2024 04:13:13 GMT  
 		Size: 171.5 MB (171452633 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8acdb47098b878011f0003ad6c94e50363b2156e2bb6951fa21f9012a17f1bcf`  
@@ -359,6 +355,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-
 		Size: 45.0 MB (44990886 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:38185782b6690ae35720744a5321274a8651237c9d6900cebc10a000409af2e5`  
+		Last Modified: Wed, 16 Oct 2024 06:04:27 GMT  
 		Size: 331.3 KB (331287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c843243ae0d09c7eda36f37ac0bc9801a113bf37beb05fae37942f88241e275c`  
@@ -366,6 +363,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-
 		Size: 897.3 KB (897322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1db189cc6360c266d7a1ffd1e118ed31d7aa4d94fbf89e2b9f61d27b2d708de5`  
+		Last Modified: Wed, 16 Oct 2024 07:02:30 GMT  
 		Size: 534.1 MB (534054793 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -389,5 +387,6 @@ $ docker pull ros@sha256:2089ccdb5ec87560873e2f9d8e237f15e4cc8864ee9712ba7644899
 		Size: 51.6 MB (51639952 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8cba67582c70ecd2b1eb3c0bc40ac7048edea9bc21f872b199feedd5079197cb`  
+		Last Modified: Wed, 16 Oct 2024 07:02:18 GMT  
 		Size: 9.5 KB (9458 bytes)  
 		MIME: application/vnd.in-toto+json
