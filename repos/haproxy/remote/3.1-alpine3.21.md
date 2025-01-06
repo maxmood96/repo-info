@@ -81,7 +81,6 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 976.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8894c6c074f82227a64bcff5a335db59e9160b3dbd1fb47576eb8c6ab47af1b8`  
-		Last Modified: Fri, 13 Dec 2024 20:28:53 GMT  
 		Size: 10.1 MB (10136363 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:996e3fe68c8273279e26b6533c7bc7fce4a36a418824899fe810a9293510ac67`  
@@ -109,7 +108,6 @@ $ docker pull haproxy@sha256:0e7f33710026100ae9a865c5da4252589a41a0c12ebe9df9a92
 
 -	Layers:
 	-	`sha256:097077e6ba254100103e03339323b2b143752f4281a155ba7b42f4b202d37315`  
-		Last Modified: Fri, 13 Dec 2024 20:28:52 GMT  
 		Size: 187.9 KB (187899 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ab79a59c24898b50e69965d9312deabccf52659e3b686db65e3847f7e2f6c25a`  
@@ -179,7 +177,6 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 10.2 MB (10161298 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fa732bdb88da893a1a99d21c2723aeef6ea4a5da862f5df9762a8e7671c0dfdf`  
-		Last Modified: Fri, 13 Dec 2024 20:29:30 GMT  
 		Size: 445.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -257,7 +254,6 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 3.1 MB (3100035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:845915b26f71f4e1256d6563721ae973b56b00bfc20516b7e2a8d2be5df41318`  
-		Last Modified: Fri, 13 Dec 2024 20:28:18 GMT  
 		Size: 299.4 KB (299404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f517d87d15c61d5ee6088c94b526de71e4c54dbb8fe7bcdc1443b4120a7378e`  
@@ -575,7 +571,6 @@ $ docker pull haproxy@sha256:29c8c23854403557433d17bc6288580b495597c2ac7e5e82483
 
 -	Layers:
 	-	`sha256:d971787f3c64e207b1abaa8c2f79f84d77f7bb59448f29d3dd3e01451038ec1f`  
-		Last Modified: Fri, 13 Dec 2024 20:28:23 GMT  
 		Size: 186.0 KB (185991 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e49f4a825ab96aa851677c0e5c52d4e60bcdb36db3c71d5d72d32976060203ef`  
