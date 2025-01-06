@@ -50,7 +50,6 @@ CMD ["perl5.41.6" "-de0"]
 		Size: 135.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2234a5ce8a58e126b7601aaded5533210f5fc1c28f1b8078476773a923d244de`  
-		Last Modified: Tue, 24 Dec 2024 22:40:58 GMT  
 		Size: 25.9 MB (25933276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:260d57cf2e2d98e801f3d427343d798a6f5dbf36f5f18088b680eccf825db452`  
