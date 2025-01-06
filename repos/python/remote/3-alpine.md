@@ -94,7 +94,6 @@ $ docker pull python@sha256:2de9a4123c2fe3308fce9118e5d32193d894031f4ac79f9f721f
 		Size: 623.5 KB (623535 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:aee760f975c1e89530e8b42a9e8f6b7700615c3d8057863f8ac61c2cda5c3548`  
-		Last Modified: Mon, 09 Dec 2024 20:44:46 GMT  
 		Size: 21.7 KB (21717 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -212,7 +211,6 @@ CMD ["python3"]
 		Size: 3.1 MB (3100035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9ab38e56202f9fc9c9425228cbdf2bf8622d8ce895d26b7c1489618f59071bdc`  
-		Last Modified: Tue, 10 Dec 2024 03:03:34 GMT  
 		Size: 462.0 KB (461960 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5faf7e7deeae797020f8fe12df299c63c71f3b20b04198a5d5db911e0a19535`  
@@ -370,7 +368,6 @@ CMD ["python3"]
 		Size: 462.3 KB (462315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:85a0b7e9a71424c030c5ca54d5c5ff9c1530b602987a8f7ac416284cb3d3aa6b`  
-		Last Modified: Mon, 09 Dec 2024 20:48:41 GMT  
 		Size: 12.7 MB (12737140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bf8db913a7ea049c16d9ca613e3f530aa8be294c79939147a651a863b09d5671`  
@@ -443,7 +440,6 @@ CMD ["python3"]
 		Size: 3.6 MB (3577108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d3bd79ca32868bc6d8d73a0b359b770e642c788dcfd4bab6d6f4840a01cd486`  
-		Last Modified: Mon, 09 Dec 2024 22:50:55 GMT  
 		Size: 465.4 KB (465393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:74331e7f641e0d647b60426779666fa370d844f373a50b356586b891a75f44e0`  
@@ -520,7 +516,6 @@ CMD ["python3"]
 		Size: 3.5 MB (3469520 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:950372b002be222d1a8441f85f9ad504dd2da3942575d6132f98398bfeb138a3`  
-		Last Modified: Tue, 10 Dec 2024 02:33:54 GMT  
 		Size: 462.9 KB (462901 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8dcfc6875f1f21cb92f481a977426bbe64c728e5f7edd14cc8c4fce425aa59a4`  

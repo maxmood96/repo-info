@@ -88,7 +88,6 @@ $ docker pull python@sha256:86cbd43e5a3dbb6d4596ba2cd3da5da9b53127c50e3a99e4f76c
 
 -	Layers:
 	-	`sha256:78817d39c236e41516d2deaf1aefb22abcf0cd76d9a4591dea72b8a0ecdda20a`  
-		Last Modified: Tue, 24 Dec 2024 22:29:20 GMT  
 		Size: 2.4 MB (2408824 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:da1c0751e6dd7395dcc3e8a50e3cd813fd3a7e32dc7ec86234b2d06f42cdab2f`  
@@ -167,7 +166,6 @@ $ docker pull python@sha256:c2a027810061c2acdb9a7105eada310e3cab1f6c484f984d175f
 		Size: 2.4 MB (2412360 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:485b84c1377028f105e53f77246bf87d92e0d4dacfb84a4f23de226c2d2e2261`  
-		Last Modified: Wed, 25 Dec 2024 03:15:18 GMT  
 		Size: 22.7 KB (22677 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -238,7 +236,6 @@ $ docker pull python@sha256:f3d62709c6c2b705230d82b06696c2a578870848fca9d30f765a
 
 -	Layers:
 	-	`sha256:5469fcdb37d0651d4bacf4a60c9801706bbcc18bdcabcda35ea75bb831843c2a`  
-		Last Modified: Wed, 25 Dec 2024 06:58:19 GMT  
 		Size: 2.4 MB (2411101 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:22401858d4215ddae1fe086a81a3e886080d09cd94cc51c55d874892e3485ce7`  
@@ -317,7 +314,6 @@ $ docker pull python@sha256:120905d1b33243a95d3897a68f6b9957144c797793841d999e59
 		Size: 2.4 MB (2409137 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:04954d4a169fed05375e9ce3c8cb5be2bf080bda52f8c1bbc4b1b851f655c395`  
-		Last Modified: Wed, 25 Dec 2024 04:43:38 GMT  
 		Size: 22.7 KB (22725 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -439,7 +435,6 @@ CMD ["python3"]
 		Size: 3.5 MB (3520177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a4eff0bf4a301ee9c164f2799e0cee5ad3c6496c8491705f24c4f43cc9b2e5d`  
-		Last Modified: Wed, 25 Dec 2024 07:57:45 GMT  
 		Size: 13.1 MB (13060032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b62f2c60f3af6931d8917163d6f6bce04ce2bc61b7f68cd2c3dbcdee91b66a33`  
@@ -463,7 +458,6 @@ $ docker pull python@sha256:d6afb9ded91909f62869ee0ea0b207364f0d3b07a7457189ff1c
 
 -	Layers:
 	-	`sha256:772e5827ad060a13812557c90256f10477bd81b32d1eeaba719a30a1c19c3f7a`  
-		Last Modified: Wed, 25 Dec 2024 07:57:45 GMT  
 		Size: 2.4 MB (2413186 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a06c931785aea4137f1f559e709d6524951d8d25bbe0793a4e8d9e3f24a20781`  
