@@ -211,7 +211,6 @@ CMD ["mariadbd"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
-		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5c38f11f7a7d51c88b952297dbfe9af44325b5359e2fd9428576a8e9dd0423c7`  
@@ -227,7 +226,6 @@ CMD ["mariadbd"]
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:98204272c2f5c6ade4f0d90e981a897b0ce6db3d7baa91479b22c2e3784eb4e7`  
-		Last Modified: Fri, 15 Nov 2024 01:11:39 GMT  
 		Size: 335.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d0cb29f83d29f89c27f6e861f6b1361fa0dc92fa81f02142455c66d072691381`  
@@ -235,7 +233,6 @@ CMD ["mariadbd"]
 		Size: 66.9 MB (66859539 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:919c5864bdb3c29b01a472aff858dcaf985e8e3470d491411b5cc16d75f4df90`  
-		Last Modified: Fri, 15 Nov 2024 01:11:39 GMT  
 		Size: 4.0 KB (4022 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8dca10932c1d492fb79535ed817948df6033c31f34d966e09c22664f6a0d4a73`  
@@ -463,7 +460,6 @@ CMD ["mariadbd"]
 
 -	Layers:
 	-	`sha256:41e9fbd89079d8e47609ae158236d59896fd2503db1ebdfef058864054170e01`  
-		Last Modified: Wed, 11 Sep 2024 17:25:11 GMT  
 		Size: 28.0 MB (28001475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3e73977b46f79de83230eb9f50c12bff7f4015d032ef2789bb7beadfce7b427e`  
@@ -479,7 +475,6 @@ CMD ["mariadbd"]
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0e8c02cf8e5b6dd6307ace4fe91cbc7582c49f9c54ccaab97cf50fdd9e527013`  
-		Last Modified: Fri, 15 Nov 2024 01:26:51 GMT  
 		Size: 337.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c64d144da38337f29276d46fc9327b5ea5a887e726d86eca8a4c4e5ef30e9176`  
@@ -511,9 +506,9 @@ $ docker pull mariadb@sha256:d76d73ed42c7ce80d46f5ab7888a9830800e52dc54f600a13d2
 
 -	Layers:
 	-	`sha256:d925025305318669d5dfe2fdd39d482f88ff2333a35ce5815aa696246f90755f`  
-		Last Modified: Fri, 15 Nov 2024 01:26:51 GMT  
 		Size: 4.6 MB (4614165 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2568dd871179aefced770fa7de51a3b1cba0dbc0b2ec72dfb9a9c612662ec290`  
+		Last Modified: Fri, 15 Nov 2024 01:26:51 GMT  
 		Size: 30.7 KB (30693 bytes)  
 		MIME: application/vnd.in-toto+json
