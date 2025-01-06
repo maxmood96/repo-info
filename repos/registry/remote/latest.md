@@ -93,7 +93,6 @@ $ docker pull registry@sha256:ef807d6ab3ae145cb40e6bc86fbd8de0fb6f4c6726ac88e619
 
 -	Layers:
 	-	`sha256:547ee2ce16efcc56c2f70e31f7327b246f129ae9e0e0f5393b19da960f910466`  
-		Last Modified: Tue, 12 Nov 2024 02:37:06 GMT  
 		Size: 179.0 KB (179007 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d8e019b81fd4a44bcc35582450d9aeddbdb46be2e2b6e0e5bd6cbe0dcc431d8b`  
