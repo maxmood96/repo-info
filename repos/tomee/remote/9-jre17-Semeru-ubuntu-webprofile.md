@@ -126,11 +126,9 @@ $ docker pull tomee@sha256:9a9508ef7b4efe951982a271996cef3bb0af04caf47cd1ca41750
 
 -	Layers:
 	-	`sha256:d9d4117eaec69f299ab45eb2453c6208b405d419c7f39b98566fc8e19b086824`  
-		Last Modified: Thu, 19 Dec 2024 22:16:26 GMT  
 		Size: 3.9 MB (3939488 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:552f5ba919472cd7feba91e9ff69ea30183ba1a3cb53217a28b7b2e8f19bfca7`  
-		Last Modified: Thu, 19 Dec 2024 22:16:26 GMT  
 		Size: 26.8 KB (26771 bytes)  
 		MIME: application/vnd.in-toto+json
 
