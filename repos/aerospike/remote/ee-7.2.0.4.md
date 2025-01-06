@@ -175,7 +175,6 @@ CMD ["asd"]
 		Size: 51.4 MB (51380071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6420c19d9909118068b7cfd2cb19818bcc869f7e0bbfdc4e4dab5f070371d3f1`  
-		Last Modified: Tue, 03 Dec 2024 05:37:44 GMT  
 		Size: 1.2 KB (1196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f30084fb2780b4b63dc37a51579d32d39cc9d57a747f3c899d89330593f36515`  
