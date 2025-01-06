@@ -115,6 +115,5 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'javac -version'; javac -
 		Size: 193.3 MB (193250833 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7ffb29101a71a5db114c275364bae846ca7d80ab5348e9e30021399c3415d074`  
-		Last Modified: Wed, 11 Dec 2024 20:41:54 GMT  
 		Size: 339.0 KB (338997 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip

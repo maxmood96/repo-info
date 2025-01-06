@@ -52,7 +52,6 @@ CMD ["jshell"]
 		Size: 120.6 MB (120601318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:46fb2a8bd498902345819970866375add66010e0749a9bb34d2ececc2c7797cc`  
-		Last Modified: Wed, 11 Dec 2024 21:49:03 GMT  
 		Size: 1.0 KB (1026 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ff648452939cc4b5e3a6fbc4886dd168b4b0aee78b0cb674c6c819d2b4035216`  
@@ -60,10 +59,10 @@ CMD ["jshell"]
 		Size: 1.1 KB (1058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a59ea971a0a38e343becb4285f0264d8a890943aff9fb89e7dd56036492ae39b`  
-		Last Modified: Wed, 11 Dec 2024 21:49:03 GMT  
 		Size: 1.0 KB (1027 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:859b0f378b4c054d0c47e491781b7c94374238e239f5d617101e6f1e1b537902`  
+		Last Modified: Wed, 11 Dec 2024 21:49:03 GMT  
 		Size: 1.0 KB (1029 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:eb1af311d381d7802efd089ddd09e31f8fdcf4015383f1c12ade719d0418b5cf`  
@@ -145,7 +144,6 @@ CMD ["jshell"]
 		Size: 1.1 KB (1146 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:39e284350c531f6a3098d779a7873a0279ab1e7db8e1cff29ac2512ff8cdc7ce`  
-		Last Modified: Wed, 11 Dec 2024 21:48:01 GMT  
 		Size: 72.1 KB (72082 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d938c924ffcf60caa435ce33aa789b8a0afa158ada6e0c4d50dcedb0436c5624`  
@@ -153,9 +151,11 @@ CMD ["jshell"]
 		Size: 1.0 KB (1028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:265965b6da40dbc054d258c80aecb486e1446f7328da9320fda9f72c5f038d4f`  
+		Last Modified: Wed, 11 Dec 2024 21:48:12 GMT  
 		Size: 202.6 MB (202575376 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d73591f77f93c0da34aacc98f1cf0d63b65c17550ab280cfb6ac6dfe87e37a88`  
+		Last Modified: Wed, 11 Dec 2024 21:48:01 GMT  
 		Size: 3.9 MB (3850620 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:db5077992551549d9babe214875efc4fee2ee3f91ea3a7731e41b33235c41104`  
