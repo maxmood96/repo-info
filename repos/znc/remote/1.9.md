@@ -65,7 +65,6 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 		Size: 48.7 MB (48738616 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48c47e2e766d93b260dc09d164e658d80c3b49c332212869ed93b16a2b35fb99`  
-		Last Modified: Tue, 12 Nov 2024 02:15:35 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f66d374b785294f04add930f967130dee87e921997e90dfcaec93d997e438254`  
@@ -253,7 +252,6 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 		Size: 750.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:62fe02be43e44e4f106593a660f4aad34a6ad8516ae5e9bb09675cb5286f8e26`  
-		Last Modified: Wed, 13 Nov 2024 02:38:16 GMT  
 		Size: 102.4 MB (102390625 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17059de2064f7ceb4fb5900be50f931bdf7d4a942df9adc104a7f59e5efff504`  
@@ -281,6 +279,5 @@ $ docker pull znc@sha256:0d9bdc95d82944d0eda5e9f8b13e9952ea7d8c52dff2cebe71b1b59
 		Size: 6.8 MB (6790587 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8bb48e630b2407925ceb398b656847f1d2edd6f4d44d8da58f75657ff46b7bc4`  
-		Last Modified: Wed, 13 Nov 2024 02:38:13 GMT  
 		Size: 9.7 KB (9690 bytes)  
 		MIME: application/vnd.in-toto+json
