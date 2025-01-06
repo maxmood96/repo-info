@@ -90,11 +90,9 @@ $ docker pull ibm-semeru-runtimes@sha256:d4672d776afb5f1585791ddfe02d20a04aabddd
 
 -	Layers:
 	-	`sha256:e0db27115f216f9043be51cc978f11609b332fb446e8f3774c5ecfd396f0ae7c`  
-		Last Modified: Thu, 19 Dec 2024 21:31:40 GMT  
 		Size: 3.6 MB (3585294 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:78dc7eeb7278f310168369c1fd61c8a012d5fa29af5280bf37b8de4c28352768`  
-		Last Modified: Thu, 19 Dec 2024 21:31:40 GMT  
 		Size: 24.8 KB (24826 bytes)  
 		MIME: application/vnd.in-toto+json
 
