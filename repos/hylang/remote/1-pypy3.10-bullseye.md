@@ -240,7 +240,6 @@ CMD ["hy"]
 		Size: 31.2 MB (31178945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eedba45b47b91aec0c57851fab60cabce7da96e23e9f013722eb8ec32d1a34dd`  
-		Last Modified: Tue, 24 Dec 2024 22:28:48 GMT  
 		Size: 874.7 KB (874706 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5466c3d4f2eacef0b8a70b0b3d8776ef87e0786d3b4a07ed505f71494b5367af`  

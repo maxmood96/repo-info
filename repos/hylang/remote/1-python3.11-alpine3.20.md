@@ -72,7 +72,6 @@ CMD ["hy"]
 		Size: 3.6 MB (3623904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9186a39bd3be579af9336914ebccc7901f286a4911fdb0e97a0dcc863c26693`  
-		Last Modified: Wed, 04 Dec 2024 20:36:12 GMT  
 		Size: 455.1 KB (455126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1693b20144617933752a6c8b06a540c250962310533768e3dfb551527bfda170`  
@@ -163,11 +162,9 @@ CMD ["hy"]
 		Size: 3.4 MB (3366596 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b9be0ab417dbcb0046d0ccc0e89ca0760a1be6e19d9dd44bd3985a517723442`  
-		Last Modified: Tue, 12 Nov 2024 14:21:21 GMT  
 		Size: 456.0 KB (456017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b04db34b0f2db7f044f720fedf1c95e316fe70867b82bf8b24b1ee51e87982ca`  
-		Last Modified: Wed, 04 Dec 2024 21:05:34 GMT  
 		Size: 17.8 MB (17778177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b568685a2f81211d1a3f456a5483d752242bbca71ed8cd74f41d8b9d84c7d9c`  
@@ -436,7 +433,6 @@ CMD ["hy"]
 		Size: 455.6 KB (455596 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f36db991963d5bd59aca292f1bac1f122742ffd42b7c0e177ba67ffdc14b5731`  
-		Last Modified: Wed, 04 Dec 2024 20:35:44 GMT  
 		Size: 18.6 MB (18585554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c0e4a35aa4540e3c9de64d752835a3000b6a4b6ea61eb642eeac075d0f940051`  
@@ -618,11 +614,9 @@ CMD ["hy"]
 		Size: 456.1 KB (456137 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:081ccfb9d404059356fbb8757b279dd6b5f0bc7d50e3759cd97b8cd0f8f30a7f`  
-		Last Modified: Wed, 04 Dec 2024 22:31:58 GMT  
 		Size: 18.8 MB (18757075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0566558c9dd943424d30896a9b85116003d2c4e985751a20769239a37ab4d3ba`  
-		Last Modified: Wed, 04 Dec 2024 22:31:51 GMT  
 		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:deaa27a24ac4d808d4e85162ce570155d0f36ef0b6c7006d3b9585133ce5b946`  
