@@ -88,7 +88,6 @@ CMD ["catalina.sh" "run"]
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:583da9dd1084c6dfff7a3dfa7b9f8d63160a8820a6ca23d4aca9dcd61483797b`  
-		Last Modified: Tue, 12 Nov 2024 04:00:34 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -128,6 +127,5 @@ $ docker pull tomee@sha256:af0c65a172e64fee1917a43c10dda5575a82e1c09363fa932f4dd
 		Size: 1.2 MB (1190460 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:17415b19557a9fd89302c47b58a2b475198852f59514f064af684c56429b33ab`  
-		Last Modified: Tue, 12 Nov 2024 04:00:34 GMT  
 		Size: 29.2 KB (29211 bytes)  
 		MIME: application/vnd.in-toto+json

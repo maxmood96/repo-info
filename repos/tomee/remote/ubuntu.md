@@ -270,6 +270,5 @@ $ docker pull tomee@sha256:36f5033f79fa7e9770f10802319e059b3c83f153fed78f5aaf001
 		Size: 4.1 MB (4098276 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:402e84237b12377bc2151b5804598e35366f9b03f635b901b752021af4220611`  
-		Last Modified: Thu, 24 Oct 2024 05:21:09 GMT  
 		Size: 45.6 KB (45615 bytes)  
 		MIME: application/vnd.in-toto+json
