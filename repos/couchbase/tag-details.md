@@ -126,7 +126,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 581.6 MB (581606645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c1f12568e81669c3486dfefd3a7ec4251a7502beaef457d25b6cd8073431ed8`  
-		Last Modified: Tue, 12 Nov 2024 00:57:55 GMT  
 		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9de1ef0f44e68c300f1b04ffda254e09257c2150fcbbf5cbe979646878a86d57`  
@@ -150,7 +149,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4415972b5950cb7d95b8c95a3cd363dd571eb483d08ed7b481c7558b8619d84d`  
-		Last Modified: Tue, 12 Nov 2024 00:57:57 GMT  
 		Size: 869.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -270,11 +268,9 @@ VOLUME [/opt/couchbase/var]
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f8afbf2f1c19b5c3d3c4cbe897177ce3c9840d161fc0565a3c6efab784eb292f`  
-		Last Modified: Tue, 12 Nov 2024 00:58:12 GMT  
 		Size: 6.3 MB (6299173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:400bc3fbd7c94e788acf49bf00e316d1fcd9b182010d90c30381eae089bc06bb`  
-		Last Modified: Tue, 12 Nov 2024 00:58:11 GMT  
 		Size: 1.8 KB (1812 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7a1c89ce562297e58a96cd81b8b1fe5443d7b6ff2b214d58811cada4e2e83db8`  
@@ -294,11 +290,9 @@ VOLUME [/opt/couchbase/var]
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2214065218982b6113375606491ab1e634762ddca3ef5504388b1d3c6a1ac08c`  
-		Last Modified: Tue, 12 Nov 2024 00:58:13 GMT  
 		Size: 232.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:76a64633e343063c6181b8f3ce93821d5b254c9e5f0a77263f25a7c0eb54a0b0`  
-		Last Modified: Tue, 12 Nov 2024 00:58:13 GMT  
 		Size: 217.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -409,7 +403,6 @@ VOLUME [/opt/couchbase/var]
 
 -	Layers:
 	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
-		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:525bf66eb50e8cdc352eff12e1fead418e3a3069f2b2e1b344a29ba629e80aad`  
@@ -433,7 +426,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 709.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:91989d7df9f972a800f38d69c3b7d9d75c8473fce3c5291ba58818a8cf085190`  
-		Last Modified: Tue, 12 Nov 2024 01:24:50 GMT  
 		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c0b99df0e555bfeec0a317a4b7a5de6d951b36f478df438ac0350779e07ed73a`  
@@ -718,7 +710,6 @@ VOLUME [/opt/couchbase/var]
 
 -	Layers:
 	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
-		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:68c396dd29f50bcc388cd0a519fac3f34e943a627c9613af69542b47bc466da9`  
@@ -905,7 +896,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 187.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0e05105422fbe68ce9e63c322db62cb0c03c6d6ce8d543b5923087760b80230`  
-		Last Modified: Wed, 11 Dec 2024 20:31:15 GMT  
 		Size: 818.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9b19bb06f3c79a6921855e7577dfa4a8a2ee0dbfef49e3ef3d13eb64eb62ac6`  
@@ -1043,7 +1033,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 770.4 KB (770448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:be4b80241375276135ce691e34844832bbc260efe1e17f69b3f6c0c63a909cf8`  
-		Last Modified: Wed, 11 Dec 2024 20:35:22 GMT  
 		Size: 2.0 KB (1996 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c3461cd28120e1f6e3a2a5d1632a4c0b55c34c9f983e76358764a1c2ef23dd3`  
@@ -1063,7 +1052,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 854.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c96fd38386fb9ec7054edc75e6910d24e7f2828b2898eba07f0ab18f31df677a`  
-		Last Modified: Wed, 11 Dec 2024 20:35:24 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ae18f583723b3303d32822f4967c9220fefebebdca459e5cbccd3efd1a0b5a6f`  
@@ -1344,7 +1332,6 @@ VOLUME [/opt/couchbase/var]
 
 -	Layers:
 	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
-		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c2d226b8a2a5bed7e39fdd186b0130b1e137e9c1e042bebfd75a673998138b6`  
@@ -1408,7 +1395,6 @@ $ docker pull couchbase@sha256:ca6a7c009639b29a6e72fccae3f2a6f7084dae7d09ad263d1
 
 -	Layers:
 	-	`sha256:22722e4310d9de112ec3a5fbc00a7349c38061faab4b2422942248924a9977bb`  
-		Last Modified: Tue, 12 Nov 2024 01:18:24 GMT  
 		Size: 36.0 KB (35987 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1521,7 +1507,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 393.8 MB (393839665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5338fd01715c169985f29512ae5aebf54a7c5646c559613d8be8d23a23d3370`  
-		Last Modified: Tue, 12 Nov 2024 00:57:24 GMT  
 		Size: 191.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a7704e91a72f65a6a7811eb71b9fd0e8285024c4e2996765e2ec0e53410134e`  
@@ -1693,7 +1678,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 233.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eafb32c5c5d80acf3f43306845fe4a87701eb0809b1c2fde4b42d1f82f2ea908`  
-		Last Modified: Tue, 12 Nov 2024 00:57:12 GMT  
 		Size: 220.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -1721,7 +1705,6 @@ $ docker pull couchbase@sha256:cc7a0d8c9b8d1c7d89028f71c4bf0ce42115bf9a691763543
 
 -	Layers:
 	-	`sha256:1309c973f2523ad10063ae9e5dab51ba4ac5082c4b443ad55eec0dff4cd6c9c1`  
-		Last Modified: Tue, 12 Nov 2024 00:57:10 GMT  
 		Size: 31.0 KB (30979 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1804,7 +1787,6 @@ VOLUME [/opt/couchbase/var]
 
 -	Layers:
 	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
-		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e419e16c8ab3f43fb2e52fa1ba0754f15791c4425990295e17cfd17cd375024`  
@@ -1816,11 +1798,9 @@ VOLUME [/opt/couchbase/var]
 		Size: 1.8 KB (1817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17c601b56297f6edd59be6e756c0a993cf32fe38982037ced4332963c04c67ee`  
-		Last Modified: Tue, 12 Nov 2024 01:26:36 GMT  
 		Size: 293.8 MB (293797569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a20ae7027a29c4e3c8af7de8f8994afaa9f4a856a6b013d91ba4a902fa439af8`  
-		Last Modified: Tue, 12 Nov 2024 01:26:29 GMT  
 		Size: 186.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2547f94f71653fe4d3977fe5144a73cdca9b6322dc980abe6b939fb9b2651fdb`  
@@ -1828,7 +1808,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 710.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d7ac90046bfeabf6a0980821846e8555ad3d2f4bf6ec352172c55ae67448daff`  
-		Last Modified: Tue, 12 Nov 2024 01:26:30 GMT  
 		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9923c7d2b70be634f64891fa4c4f3d1d9337c9ca19b3064356184c8ab2c3eb6d`  
@@ -1836,7 +1815,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 232.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:612e04cb9c863ea03e6bedbd21197534afa56d6f5d6f74866e9e1e23ae915389`  
-		Last Modified: Tue, 12 Nov 2024 01:26:31 GMT  
 		Size: 217.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -1864,7 +1842,6 @@ $ docker pull couchbase@sha256:0ee5e890c71d90cd7bf3941c042ecd792256919a2ea29d518
 
 -	Layers:
 	-	`sha256:d0f49fe2faebcc583a63536fcb072f338e0abde849cf5bb95ab0fe289287a04b`  
-		Last Modified: Tue, 12 Nov 2024 01:26:29 GMT  
 		Size: 31.1 KB (31137 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1992,7 +1969,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 232.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd2c2e751e345d362ad129af7c338f7fc75acc0a3e67ec3a955dd2a4dcd2366f`  
-		Last Modified: Tue, 12 Nov 2024 00:57:21 GMT  
 		Size: 218.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -2103,7 +2079,6 @@ VOLUME [/opt/couchbase/var]
 
 -	Layers:
 	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
-		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a0a87bfd0a7181920474e87c7920879cc89e906ca81559bad045f9294c33d7d0`  
@@ -2111,7 +2086,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 6.1 MB (6128843 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:16b1a14c7dd6c90b90d1abaf9287cfd7d2b79bad7e250fdec20e18521b55cccd`  
-		Last Modified: Tue, 12 Nov 2024 01:22:55 GMT  
 		Size: 1.8 KB (1816 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8d64baeab963456e940d34f69de18e2781940319ee2dafdd23ff36de78a23a22`  
@@ -2412,7 +2386,6 @@ VOLUME [/opt/couchbase/var]
 
 -	Layers:
 	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
-		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c2d226b8a2a5bed7e39fdd186b0130b1e137e9c1e042bebfd75a673998138b6`  
@@ -2476,7 +2449,6 @@ $ docker pull couchbase@sha256:ca6a7c009639b29a6e72fccae3f2a6f7084dae7d09ad263d1
 
 -	Layers:
 	-	`sha256:22722e4310d9de112ec3a5fbc00a7349c38061faab4b2422942248924a9977bb`  
-		Last Modified: Tue, 12 Nov 2024 01:18:24 GMT  
 		Size: 36.0 KB (35987 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2599,7 +2571,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 187.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0e05105422fbe68ce9e63c322db62cb0c03c6d6ce8d543b5923087760b80230`  
-		Last Modified: Wed, 11 Dec 2024 20:31:15 GMT  
 		Size: 818.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9b19bb06f3c79a6921855e7577dfa4a8a2ee0dbfef49e3ef3d13eb64eb62ac6`  
@@ -2737,7 +2708,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 770.4 KB (770448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:be4b80241375276135ce691e34844832bbc260efe1e17f69b3f6c0c63a909cf8`  
-		Last Modified: Wed, 11 Dec 2024 20:35:22 GMT  
 		Size: 2.0 KB (1996 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c3461cd28120e1f6e3a2a5d1632a4c0b55c34c9f983e76358764a1c2ef23dd3`  
@@ -2757,7 +2727,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 854.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c96fd38386fb9ec7054edc75e6910d24e7f2828b2898eba07f0ab18f31df677a`  
-		Last Modified: Wed, 11 Dec 2024 20:35:24 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ae18f583723b3303d32822f4967c9220fefebebdca459e5cbccd3efd1a0b5a6f`  
@@ -2901,7 +2870,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 581.6 MB (581606645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c1f12568e81669c3486dfefd3a7ec4251a7502beaef457d25b6cd8073431ed8`  
-		Last Modified: Tue, 12 Nov 2024 00:57:55 GMT  
 		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9de1ef0f44e68c300f1b04ffda254e09257c2150fcbbf5cbe979646878a86d57`  
@@ -2925,7 +2893,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4415972b5950cb7d95b8c95a3cd363dd571eb483d08ed7b481c7558b8619d84d`  
-		Last Modified: Tue, 12 Nov 2024 00:57:57 GMT  
 		Size: 869.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3045,11 +3012,9 @@ VOLUME [/opt/couchbase/var]
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f8afbf2f1c19b5c3d3c4cbe897177ce3c9840d161fc0565a3c6efab784eb292f`  
-		Last Modified: Tue, 12 Nov 2024 00:58:12 GMT  
 		Size: 6.3 MB (6299173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:400bc3fbd7c94e788acf49bf00e316d1fcd9b182010d90c30381eae089bc06bb`  
-		Last Modified: Tue, 12 Nov 2024 00:58:11 GMT  
 		Size: 1.8 KB (1812 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7a1c89ce562297e58a96cd81b8b1fe5443d7b6ff2b214d58811cada4e2e83db8`  
@@ -3069,11 +3034,9 @@ VOLUME [/opt/couchbase/var]
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2214065218982b6113375606491ab1e634762ddca3ef5504388b1d3c6a1ac08c`  
-		Last Modified: Tue, 12 Nov 2024 00:58:13 GMT  
 		Size: 232.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:76a64633e343063c6181b8f3ce93821d5b254c9e5f0a77263f25a7c0eb54a0b0`  
-		Last Modified: Tue, 12 Nov 2024 00:58:13 GMT  
 		Size: 217.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -3184,7 +3147,6 @@ VOLUME [/opt/couchbase/var]
 
 -	Layers:
 	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
-		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:525bf66eb50e8cdc352eff12e1fead418e3a3069f2b2e1b344a29ba629e80aad`  
@@ -3208,7 +3170,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 709.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:91989d7df9f972a800f38d69c3b7d9d75c8473fce3c5291ba58818a8cf085190`  
-		Last Modified: Tue, 12 Nov 2024 01:24:50 GMT  
 		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c0b99df0e555bfeec0a317a4b7a5de6d951b36f478df438ac0350779e07ed73a`  
@@ -3493,7 +3454,6 @@ VOLUME [/opt/couchbase/var]
 
 -	Layers:
 	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
-		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:68c396dd29f50bcc388cd0a519fac3f34e943a627c9613af69542b47bc466da9`  
@@ -3680,7 +3640,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 187.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0e05105422fbe68ce9e63c322db62cb0c03c6d6ce8d543b5923087760b80230`  
-		Last Modified: Wed, 11 Dec 2024 20:31:15 GMT  
 		Size: 818.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9b19bb06f3c79a6921855e7577dfa4a8a2ee0dbfef49e3ef3d13eb64eb62ac6`  
@@ -3818,7 +3777,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 770.4 KB (770448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:be4b80241375276135ce691e34844832bbc260efe1e17f69b3f6c0c63a909cf8`  
-		Last Modified: Wed, 11 Dec 2024 20:35:22 GMT  
 		Size: 2.0 KB (1996 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c3461cd28120e1f6e3a2a5d1632a4c0b55c34c9f983e76358764a1c2ef23dd3`  
@@ -3838,7 +3796,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 854.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c96fd38386fb9ec7054edc75e6910d24e7f2828b2898eba07f0ab18f31df677a`  
-		Last Modified: Wed, 11 Dec 2024 20:35:24 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ae18f583723b3303d32822f4967c9220fefebebdca459e5cbccd3efd1a0b5a6f`  
@@ -3993,7 +3950,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 187.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0e05105422fbe68ce9e63c322db62cb0c03c6d6ce8d543b5923087760b80230`  
-		Last Modified: Wed, 11 Dec 2024 20:31:15 GMT  
 		Size: 818.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9b19bb06f3c79a6921855e7577dfa4a8a2ee0dbfef49e3ef3d13eb64eb62ac6`  
@@ -4131,7 +4087,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 770.4 KB (770448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:be4b80241375276135ce691e34844832bbc260efe1e17f69b3f6c0c63a909cf8`  
-		Last Modified: Wed, 11 Dec 2024 20:35:22 GMT  
 		Size: 2.0 KB (1996 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c3461cd28120e1f6e3a2a5d1632a4c0b55c34c9f983e76358764a1c2ef23dd3`  
@@ -4151,7 +4106,6 @@ VOLUME [/opt/couchbase/var]
 		Size: 854.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c96fd38386fb9ec7054edc75e6910d24e7f2828b2898eba07f0ab18f31df677a`  
-		Last Modified: Wed, 11 Dec 2024 20:35:24 GMT  
 		Size: 233.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ae18f583723b3303d32822f4967c9220fefebebdca459e5cbccd3efd1a0b5a6f`  

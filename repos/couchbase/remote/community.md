@@ -243,7 +243,6 @@ VOLUME [/opt/couchbase/var]
 
 -	Layers:
 	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
-		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c2d226b8a2a5bed7e39fdd186b0130b1e137e9c1e042bebfd75a673998138b6`  
@@ -307,6 +306,5 @@ $ docker pull couchbase@sha256:ca6a7c009639b29a6e72fccae3f2a6f7084dae7d09ad263d1
 
 -	Layers:
 	-	`sha256:22722e4310d9de112ec3a5fbc00a7349c38061faab4b2422942248924a9977bb`  
-		Last Modified: Tue, 12 Nov 2024 01:18:24 GMT  
 		Size: 36.0 KB (35987 bytes)  
 		MIME: application/vnd.in-toto+json
