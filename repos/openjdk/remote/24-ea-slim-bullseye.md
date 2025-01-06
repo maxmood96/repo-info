@@ -48,6 +48,7 @@ CMD ["jshell"]
 		Size: 30.3 MB (30252643 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5fae3e01fe4823c5606c9a5f504959356edd990a39e151387a1ece2c86c950fe`  
+		Last Modified: Tue, 24 Dec 2024 22:31:00 GMT  
 		Size: 1.4 MB (1377232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8516f2b1ece682a14e91f06745cb4916f315adad7e622aad970830826648ddad`  
@@ -144,6 +145,5 @@ $ docker pull openjdk@sha256:9afa58c26a589d5c459781718c78931bdcb36dd5516311be495
 		Size: 2.8 MB (2827574 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0f13aecbe3181762e5bb360b71bdb9570bd582aadb4c52ab9b43fae484a97343`  
-		Last Modified: Wed, 25 Dec 2024 02:36:06 GMT  
 		Size: 17.7 KB (17713 bytes)  
 		MIME: application/vnd.in-toto+json
