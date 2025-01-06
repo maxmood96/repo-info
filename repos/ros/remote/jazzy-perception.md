@@ -89,7 +89,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-jazzy-p
 		Size: 2.0 KB (2002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b98f3e08353bf8f53937fa7168cbad7d39df3214474bc9b07557880d6ff63b08`  
-		Last Modified: Tue, 03 Dec 2024 02:17:23 GMT  
 		Size: 270.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c01218c18dd3d57f0fd398836513b6b50fbe554ff4b460941357ebfb7289972`  
@@ -97,7 +96,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-jazzy-p
 		Size: 122.7 MB (122691998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48a4d000285c3d2a81b20a96c50372bd1cde9b88f7611ccaa417fea7a3c85459`  
-		Last Modified: Tue, 03 Dec 2024 02:17:24 GMT  
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17292e7638873b8383a8077c14d0b55cd66f74bc5428ac9cbfb5d353da8c8423`  
@@ -109,7 +107,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-jazzy-p
 		Size: 342.4 KB (342357 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b28e771bfd74e3604730bf79016216276d7f5a0ffa622e23f687b33b7f0baacc`  
-		Last Modified: Tue, 03 Dec 2024 03:25:06 GMT  
 		Size: 2.4 KB (2416 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:401ff9aff2459f1c5d9ec5957ad0af8f8e54696b7d93bda3cdae79703db2adc5`  
@@ -227,7 +224,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-jazzy-p
 		Size: 272.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b494426cf0020c43838c91deb89a9ce6da60bcac380a766a5a3103053fc4a0de`  
-		Last Modified: Tue, 03 Dec 2024 10:21:30 GMT  
 		Size: 117.5 MB (117505391 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f8c8974010aba9f0fb6ac664cee0cae14553b8820fc0de89028fb2488ebf0691`  
@@ -271,10 +267,8 @@ $ docker pull ros@sha256:38549375d57cce7193d1af5695b5cc258a0f8cace9a8422ceec8b93
 
 -	Layers:
 	-	`sha256:5dd951732a50d4fd8c0545c0a5e25217a1592065ba21c5613a335d1da0848826`  
-		Last Modified: Tue, 03 Dec 2024 17:33:39 GMT  
 		Size: 59.6 MB (59627646 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:00965e6ee42767f47226885fc15c63bd6409b9685ab7ea40f6b37a2fcb866799`  
-		Last Modified: Tue, 03 Dec 2024 17:33:37 GMT  
 		Size: 9.8 KB (9768 bytes)  
 		MIME: application/vnd.in-toto+json
