@@ -67,7 +67,6 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Size: 48.0 MB (48048593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ffdb80cf23335d5c83849d89e4742fc2ab15fb79ed36c40b9bdfe1a8e8e89d7b`  
-		Last Modified: Fri, 20 Dec 2024 21:35:24 GMT  
 		Size: 370.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -235,7 +234,6 @@ $ docker pull traefik@sha256:dcaf6dd7e6186b3d470686c3199f4197f1e767c8f098ddb3c3c
 
 -	Layers:
 	-	`sha256:42dcdbd41794affe87a58df7d2f5e1475336fee7ad1bfcc56d2dd18d495a681c`  
-		Last Modified: Sat, 21 Dec 2024 00:20:34 GMT  
 		Size: 825.0 KB (824990 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c086d41559662e811363e2dd13a4bbe5686e472f179f0a16a301f98bdce69220`  
