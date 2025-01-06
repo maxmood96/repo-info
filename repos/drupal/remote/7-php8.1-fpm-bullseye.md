@@ -259,6 +259,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f4ed7b1b9105789e8dcb4a70b1bca07a9fdba709e47328dbbaea9c5b4bf87290`  
+		Last Modified: Tue, 24 Dec 2024 23:02:50 GMT  
 		Size: 69.1 MB (69119370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f1a233e03098e618374485da8fda6624c4ced95642637d019537cc640d4a81df`  
@@ -282,7 +283,6 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 2.4 KB (2447 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dd9eeb57dd70b9f101019b83b5e808f7093b1c59f2e087ae75738bdd3e3775c7`  
-		Last Modified: Wed, 25 Dec 2024 00:27:52 GMT  
 		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -424,6 +424,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:abc642a94b5347df0d6ea1bf323ec06b440d16ded54ef691e0eb26abdc7d6496`  
+		Last Modified: Wed, 25 Dec 2024 00:49:44 GMT  
 		Size: 12.0 MB (12019581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f84b5192da72b9cd6b6d208a726351a2186d04a0009eb27b65cf6ba70af0041`  
@@ -605,17 +606,16 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e61679ee985a6c2cc09fbf29328c808f8b315e4abd94f6ea9862496069c5a9e8`  
-		Last Modified: Tue, 24 Dec 2024 22:27:59 GMT  
 		Size: 8.9 KB (8879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c00c7eb2b5343657ebb2390f80e86b146635564fcf5a2f7025dbe641f1ed8c0`  
 		Size: 2.0 MB (1964839 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1fc0babf0ce12e7d9718e0a4644ec05a9c019be8f4daf958d88db435cbe247b7`  
-		Last Modified: Tue, 24 Dec 2024 23:20:52 GMT  
 		Size: 315.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b565bf56613f3b4fb7d57ca4b898c4e3bddec756bc7f99154ab44a595c27bb97`  
+		Last Modified: Tue, 24 Dec 2024 23:20:53 GMT  
 		Size: 3.4 MB (3429012 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
