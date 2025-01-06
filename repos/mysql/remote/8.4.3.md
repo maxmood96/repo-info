@@ -75,10 +75,10 @@ CMD ["mysqld"]
 		Size: 885.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d7c84b66ede077e0a8717528112591fbfd5f3ced4040c124eb6659b3c14940d4`  
-		Last Modified: Thu, 21 Nov 2024 23:10:57 GMT  
 		Size: 983.0 KB (983003 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:299f6f88c6cfd0fdcd8f375f1c26bdd1d4f04eded1587b11419b7f8ae0934d3b`  
+		Last Modified: Thu, 21 Nov 2024 23:10:57 GMT  
 		Size: 6.9 MB (6900481 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d39eae8f992719502e3a1d7552504b1acad7bf67f068af86e0dec581ddad018f`  
@@ -94,6 +94,7 @@ CMD ["mysqld"]
 		Size: 47.6 MB (47559709 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d496030b710c9fcd2314de6c4b1e7921739e9552cf0338ebd4b51de517252e01`  
+		Last Modified: Thu, 21 Nov 2024 23:10:58 GMT  
 		Size: 321.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4d755d8c89d19d65a71254593f2410f5bc54a1b5cb51b4763665bbfd08f05451`  
@@ -101,7 +102,6 @@ CMD ["mysqld"]
 		Size: 67.0 MB (66957121 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:699d8e3dc44b682de3b43954ad50435abff0302f59f790cbe032bb70f7edc214`  
-		Last Modified: Thu, 21 Nov 2024 23:10:58 GMT  
 		Size: 5.3 KB (5328 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -125,7 +125,6 @@ $ docker pull mysql@sha256:884241880bf669b687d360962b743b33b25533116d683b90f2b94
 		Size: 14.9 MB (14871778 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3b5cd99ce99088b40020b732dff8d28f06c94e2d50fa9a1872ba9e33ecb1ec02`  
-		Last Modified: Thu, 21 Nov 2024 23:10:56 GMT  
 		Size: 34.2 KB (34249 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -189,9 +188,11 @@ CMD ["mysqld"]
 		Size: 47.7 MB (47667392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bbcaadfa83903ddc9308d3aaf06f5d34a9498c7299facf5e699043ad60cfddb3`  
+		Last Modified: Fri, 22 Nov 2024 05:08:57 GMT  
 		Size: 882.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0924329359e826029c0b9e3bae69796feef0fffead03a7536e402448e2fb2ab`  
+		Last Modified: Fri, 22 Nov 2024 05:08:57 GMT  
 		Size: 913.5 KB (913454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c595f1ed755a5990b59de61c16bb5578c742a829179eba8151027a643bea940f`  
@@ -211,10 +212,10 @@ CMD ["mysqld"]
 		Size: 46.5 MB (46452190 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2c4b00b72fec9f40e32c595b0d4614bc939895a979f731d49d85db7ad8473db6`  
-		Last Modified: Fri, 22 Nov 2024 05:10:35 GMT  
 		Size: 319.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ffa7a4d749fc90300ad811051e76d69a553d218ef501225fedf92f424e65db05`  
+		Last Modified: Fri, 22 Nov 2024 05:10:37 GMT  
 		Size: 67.2 MB (67188665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ae13e90ab7aa2e5ba35a429ec001df2df298c79d291831dbef6b7571439bee11`  
