@@ -52,7 +52,6 @@ CMD ["jshell"]
 		Size: 49.1 MB (49098702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c018680c56821d8fe24b3e63efb1afeab379aa93e2f0fb9c80bda8f193a36620`  
-		Last Modified: Sat, 14 Dec 2024 00:30:44 GMT  
 		Size: 48.8 MB (48765766 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ac7d3c0f5c7bc4714e1085bff2f6b1e177c2827b43dee345836ae20cd43b339`  
@@ -301,7 +300,6 @@ CMD ["jshell"]
 		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9d3a5f94574e26ac4d18bddd2b0e52b2613c203ff2f0139fc891cc0aa51b9e07`  
-		Last Modified: Sat, 14 Dec 2024 00:32:02 GMT  
 		Size: 331.5 KB (331531 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b9722dcb51de3386fa565a6bbbe0f8b0cba2f76bd95c789e3ed47b55a95df56c`  
