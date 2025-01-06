@@ -67,7 +67,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 
 -	Layers:
 	-	`sha256:b338562f40a7fb7360dfae935da6d7e40d2545db18bc461d9d70ec1b2b657f33`  
-		Last Modified: Thu, 13 Jun 2024 01:26:49 GMT  
 		Size: 27.3 MB (27337703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b1b752ddf75c64e105424fb16f5a2053ddad33f059e3be8e520e35908cc4e97`  
@@ -75,7 +74,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 2.8 MB (2780035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d574eb224b5ddbe14656e28913cf5eeb5b14aa651aa3bcb9288aa43f1000aec5`  
-		Last Modified: Fri, 21 Jun 2024 01:03:11 GMT  
 		Size: 64.6 MB (64555923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb9d6fb145c5367510a78273891d0ba84d7257b0bfdf3cd340f4e3d6f211de0a`  
@@ -137,7 +135,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 
 -	Layers:
 	-	`sha256:187ecffbd1e0eae5de6567dff32bd58f28623635657779760c9d9539d6b7cc59`  
-		Last Modified: Tue, 02 Aug 2022 00:57:06 GMT  
 		Size: 24.9 MB (24889750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6702eef9c7d9ec6ede2c5f9a15a047b314ccc9140f25694f337c0127478bb25b`  
@@ -356,7 +353,6 @@ $ docker pull mono@sha256:e69c4a0ff0efcd311f3ec0da7e72cbafaa9689b8555686674db7d3
 		Size: 11.1 MB (11074056 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f11f469c7181081a082c334f89f2885f7a6a0953d5e152e5f75db2af4504d80e`  
-		Last Modified: Fri, 21 Jun 2024 02:03:57 GMT  
 		Size: 7.9 KB (7870 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -452,7 +448,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:b338562f40a7fb7360dfae935da6d7e40d2545db18bc461d9d70ec1b2b657f33`  
-		Last Modified: Thu, 13 Jun 2024 01:26:49 GMT  
 		Size: 27.3 MB (27337703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b1b752ddf75c64e105424fb16f5a2053ddad33f059e3be8e520e35908cc4e97`  
@@ -460,7 +455,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 2.8 MB (2780035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d574eb224b5ddbe14656e28913cf5eeb5b14aa651aa3bcb9288aa43f1000aec5`  
-		Last Modified: Fri, 21 Jun 2024 01:03:11 GMT  
 		Size: 64.6 MB (64555923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -516,7 +510,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:187ecffbd1e0eae5de6567dff32bd58f28623635657779760c9d9539d6b7cc59`  
-		Last Modified: Tue, 02 Aug 2022 00:57:06 GMT  
 		Size: 24.9 MB (24889750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6702eef9c7d9ec6ede2c5f9a15a047b314ccc9140f25694f337c0127478bb25b`  
@@ -713,7 +706,6 @@ $ docker pull mono@sha256:21b839469b89df687807ffdd3f870708c16efa44a6b299510e9d63
 		Size: 4.1 MB (4120175 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:190e2c58614be0d956b94cdc868f9beb77c2f2d8ef16c981339f2b2c23f56975`  
-		Last Modified: Fri, 21 Jun 2024 01:03:12 GMT  
 		Size: 10.1 KB (10074 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -805,7 +797,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 
 -	Layers:
 	-	`sha256:b338562f40a7fb7360dfae935da6d7e40d2545db18bc461d9d70ec1b2b657f33`  
-		Last Modified: Thu, 13 Jun 2024 01:26:49 GMT  
 		Size: 27.3 MB (27337703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17858d27bab2d3cac617525d602bdb6430ef30203a5879d871c8ac9c5ed9ccc3`  
@@ -837,7 +828,6 @@ $ docker pull mono@sha256:f6671a285cbddce3760628595ffd4269c14d56576a01a7e1c1d9e0
 
 -	Layers:
 	-	`sha256:3f1bc3f47a2da7c663404a8b55db0810f54025932a6bfdbd60ed373988d5c3a3`  
-		Last Modified: Fri, 21 Jun 2024 02:10:25 GMT  
 		Size: 11.0 MB (10994359 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bddb6bc492023a1217e6c5d5449b14b7a64e1659932a9e489d3eac1a6c8cbdb2`  
@@ -875,7 +865,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 
 -	Layers:
 	-	`sha256:187ecffbd1e0eae5de6567dff32bd58f28623635657779760c9d9539d6b7cc59`  
-		Last Modified: Tue, 02 Aug 2022 00:57:06 GMT  
 		Size: 24.9 MB (24889750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:eb25ee9d7e5ee2ba3d5fe6104206a45f2c5c425365a535e0aaac7bb9bd71034e`  
@@ -924,7 +913,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 22.9 MB (22944997 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f82b184891ecf71303c14e6658ace46e95f5f157682da9b582cb967e9648c10d`  
-		Last Modified: Fri, 21 Jun 2024 05:27:15 GMT  
 		Size: 2.4 MB (2370004 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0593643cc80b45c3e95e55271aebb7b5b474a3c444cff93983b44b2a84dafeae`  
@@ -1066,7 +1054,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 2.8 MB (2791746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:69732935ca2831417791f9677707cd4ac5cce2cc5ceac6ccf0939905aa577562`  
-		Last Modified: Fri, 21 Jun 2024 01:03:31 GMT  
 		Size: 68.6 MB (68593059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:af0ac94ccf1051dd80381d13771eba83828ecbdd644eca8d13963217a4fcad77`  
@@ -1136,7 +1123,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 2.9 MB (2892610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a7f103eac188d225f1b73fa0b0d6a3f2560c7fc46d7ec0f0e7e7a07330eb1ff0`  
-		Last Modified: Wed, 03 Aug 2022 02:16:04 GMT  
 		Size: 41.8 MB (41839360 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d3a64f5c66cdaf23afe83539fd8177bddc2e783d6ca6ee6eb3cabd08a6a5c375`  
@@ -1190,7 +1176,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:b338562f40a7fb7360dfae935da6d7e40d2545db18bc461d9d70ec1b2b657f33`  
-		Last Modified: Thu, 13 Jun 2024 01:26:49 GMT  
 		Size: 27.3 MB (27337703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17858d27bab2d3cac617525d602bdb6430ef30203a5879d871c8ac9c5ed9ccc3`  
@@ -1254,7 +1239,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:187ecffbd1e0eae5de6567dff32bd58f28623635657779760c9d9539d6b7cc59`  
-		Last Modified: Tue, 02 Aug 2022 00:57:06 GMT  
 		Size: 24.9 MB (24889750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:eb25ee9d7e5ee2ba3d5fe6104206a45f2c5c425365a535e0aaac7bb9bd71034e`  
@@ -1297,7 +1281,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 22.9 MB (22944997 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f82b184891ecf71303c14e6658ace46e95f5f157682da9b582cb967e9648c10d`  
-		Last Modified: Fri, 21 Jun 2024 05:27:15 GMT  
 		Size: 2.4 MB (2370004 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0593643cc80b45c3e95e55271aebb7b5b474a3c444cff93983b44b2a84dafeae`  
@@ -1321,7 +1304,6 @@ $ docker pull mono@sha256:af9aa3d2e47127aab2e357a9ea276d08bdd273a6c5aaf87cd45400
 
 -	Layers:
 	-	`sha256:8be89a42680753d1fc2276e6a396e95cea8773106f77e26aec995d0df0ca7a8c`  
-		Last Modified: Fri, 21 Jun 2024 05:27:14 GMT  
 		Size: 4.0 MB (4033035 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:37aea1d9ffd12da273a2d239b6f7316eb3559a4d114eed112ff0adae18c136a8`  
@@ -1427,7 +1409,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 2.8 MB (2791746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:69732935ca2831417791f9677707cd4ac5cce2cc5ceac6ccf0939905aa577562`  
-		Last Modified: Fri, 21 Jun 2024 01:03:31 GMT  
 		Size: 68.6 MB (68593059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1491,7 +1472,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 2.9 MB (2892610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a7f103eac188d225f1b73fa0b0d6a3f2560c7fc46d7ec0f0e7e7a07330eb1ff0`  
-		Last Modified: Wed, 03 Aug 2022 02:16:04 GMT  
 		Size: 41.8 MB (41839360 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -1543,7 +1523,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 
 -	Layers:
 	-	`sha256:b338562f40a7fb7360dfae935da6d7e40d2545db18bc461d9d70ec1b2b657f33`  
-		Last Modified: Thu, 13 Jun 2024 01:26:49 GMT  
 		Size: 27.3 MB (27337703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17858d27bab2d3cac617525d602bdb6430ef30203a5879d871c8ac9c5ed9ccc3`  
@@ -1575,7 +1554,6 @@ $ docker pull mono@sha256:f6671a285cbddce3760628595ffd4269c14d56576a01a7e1c1d9e0
 
 -	Layers:
 	-	`sha256:3f1bc3f47a2da7c663404a8b55db0810f54025932a6bfdbd60ed373988d5c3a3`  
-		Last Modified: Fri, 21 Jun 2024 02:10:25 GMT  
 		Size: 11.0 MB (10994359 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bddb6bc492023a1217e6c5d5449b14b7a64e1659932a9e489d3eac1a6c8cbdb2`  
@@ -1613,7 +1591,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 
 -	Layers:
 	-	`sha256:187ecffbd1e0eae5de6567dff32bd58f28623635657779760c9d9539d6b7cc59`  
-		Last Modified: Tue, 02 Aug 2022 00:57:06 GMT  
 		Size: 24.9 MB (24889750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:eb25ee9d7e5ee2ba3d5fe6104206a45f2c5c425365a535e0aaac7bb9bd71034e`  
@@ -1662,7 +1639,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 22.9 MB (22944997 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f82b184891ecf71303c14e6658ace46e95f5f157682da9b582cb967e9648c10d`  
-		Last Modified: Fri, 21 Jun 2024 05:27:15 GMT  
 		Size: 2.4 MB (2370004 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0593643cc80b45c3e95e55271aebb7b5b474a3c444cff93983b44b2a84dafeae`  
@@ -1804,7 +1780,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 2.8 MB (2791746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:69732935ca2831417791f9677707cd4ac5cce2cc5ceac6ccf0939905aa577562`  
-		Last Modified: Fri, 21 Jun 2024 01:03:31 GMT  
 		Size: 68.6 MB (68593059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:af0ac94ccf1051dd80381d13771eba83828ecbdd644eca8d13963217a4fcad77`  
@@ -1874,7 +1849,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 2.9 MB (2892610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a7f103eac188d225f1b73fa0b0d6a3f2560c7fc46d7ec0f0e7e7a07330eb1ff0`  
-		Last Modified: Wed, 03 Aug 2022 02:16:04 GMT  
 		Size: 41.8 MB (41839360 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d3a64f5c66cdaf23afe83539fd8177bddc2e783d6ca6ee6eb3cabd08a6a5c375`  
@@ -1928,7 +1902,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:b338562f40a7fb7360dfae935da6d7e40d2545db18bc461d9d70ec1b2b657f33`  
-		Last Modified: Thu, 13 Jun 2024 01:26:49 GMT  
 		Size: 27.3 MB (27337703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17858d27bab2d3cac617525d602bdb6430ef30203a5879d871c8ac9c5ed9ccc3`  
@@ -1992,7 +1965,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:187ecffbd1e0eae5de6567dff32bd58f28623635657779760c9d9539d6b7cc59`  
-		Last Modified: Tue, 02 Aug 2022 00:57:06 GMT  
 		Size: 24.9 MB (24889750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:eb25ee9d7e5ee2ba3d5fe6104206a45f2c5c425365a535e0aaac7bb9bd71034e`  
@@ -2035,7 +2007,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 22.9 MB (22944997 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f82b184891ecf71303c14e6658ace46e95f5f157682da9b582cb967e9648c10d`  
-		Last Modified: Fri, 21 Jun 2024 05:27:15 GMT  
 		Size: 2.4 MB (2370004 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0593643cc80b45c3e95e55271aebb7b5b474a3c444cff93983b44b2a84dafeae`  
@@ -2059,7 +2030,6 @@ $ docker pull mono@sha256:af9aa3d2e47127aab2e357a9ea276d08bdd273a6c5aaf87cd45400
 
 -	Layers:
 	-	`sha256:8be89a42680753d1fc2276e6a396e95cea8773106f77e26aec995d0df0ca7a8c`  
-		Last Modified: Fri, 21 Jun 2024 05:27:14 GMT  
 		Size: 4.0 MB (4033035 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:37aea1d9ffd12da273a2d239b6f7316eb3559a4d114eed112ff0adae18c136a8`  
@@ -2165,7 +2135,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 2.8 MB (2791746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:69732935ca2831417791f9677707cd4ac5cce2cc5ceac6ccf0939905aa577562`  
-		Last Modified: Fri, 21 Jun 2024 01:03:31 GMT  
 		Size: 68.6 MB (68593059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2229,7 +2198,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 2.9 MB (2892610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a7f103eac188d225f1b73fa0b0d6a3f2560c7fc46d7ec0f0e7e7a07330eb1ff0`  
-		Last Modified: Wed, 03 Aug 2022 02:16:04 GMT  
 		Size: 41.8 MB (41839360 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -2281,7 +2249,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 
 -	Layers:
 	-	`sha256:b338562f40a7fb7360dfae935da6d7e40d2545db18bc461d9d70ec1b2b657f33`  
-		Last Modified: Thu, 13 Jun 2024 01:26:49 GMT  
 		Size: 27.3 MB (27337703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17858d27bab2d3cac617525d602bdb6430ef30203a5879d871c8ac9c5ed9ccc3`  
@@ -2313,7 +2280,6 @@ $ docker pull mono@sha256:f6671a285cbddce3760628595ffd4269c14d56576a01a7e1c1d9e0
 
 -	Layers:
 	-	`sha256:3f1bc3f47a2da7c663404a8b55db0810f54025932a6bfdbd60ed373988d5c3a3`  
-		Last Modified: Fri, 21 Jun 2024 02:10:25 GMT  
 		Size: 11.0 MB (10994359 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bddb6bc492023a1217e6c5d5449b14b7a64e1659932a9e489d3eac1a6c8cbdb2`  
@@ -2351,7 +2317,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 
 -	Layers:
 	-	`sha256:187ecffbd1e0eae5de6567dff32bd58f28623635657779760c9d9539d6b7cc59`  
-		Last Modified: Tue, 02 Aug 2022 00:57:06 GMT  
 		Size: 24.9 MB (24889750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:eb25ee9d7e5ee2ba3d5fe6104206a45f2c5c425365a535e0aaac7bb9bd71034e`  
@@ -2400,7 +2365,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 22.9 MB (22944997 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f82b184891ecf71303c14e6658ace46e95f5f157682da9b582cb967e9648c10d`  
-		Last Modified: Fri, 21 Jun 2024 05:27:15 GMT  
 		Size: 2.4 MB (2370004 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0593643cc80b45c3e95e55271aebb7b5b474a3c444cff93983b44b2a84dafeae`  
@@ -2542,7 +2506,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 2.8 MB (2791746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:69732935ca2831417791f9677707cd4ac5cce2cc5ceac6ccf0939905aa577562`  
-		Last Modified: Fri, 21 Jun 2024 01:03:31 GMT  
 		Size: 68.6 MB (68593059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:af0ac94ccf1051dd80381d13771eba83828ecbdd644eca8d13963217a4fcad77`  
@@ -2612,7 +2575,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 2.9 MB (2892610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a7f103eac188d225f1b73fa0b0d6a3f2560c7fc46d7ec0f0e7e7a07330eb1ff0`  
-		Last Modified: Wed, 03 Aug 2022 02:16:04 GMT  
 		Size: 41.8 MB (41839360 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d3a64f5c66cdaf23afe83539fd8177bddc2e783d6ca6ee6eb3cabd08a6a5c375`  
@@ -2666,7 +2628,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:b338562f40a7fb7360dfae935da6d7e40d2545db18bc461d9d70ec1b2b657f33`  
-		Last Modified: Thu, 13 Jun 2024 01:26:49 GMT  
 		Size: 27.3 MB (27337703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17858d27bab2d3cac617525d602bdb6430ef30203a5879d871c8ac9c5ed9ccc3`  
@@ -2730,7 +2691,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:187ecffbd1e0eae5de6567dff32bd58f28623635657779760c9d9539d6b7cc59`  
-		Last Modified: Tue, 02 Aug 2022 00:57:06 GMT  
 		Size: 24.9 MB (24889750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:eb25ee9d7e5ee2ba3d5fe6104206a45f2c5c425365a535e0aaac7bb9bd71034e`  
@@ -2773,7 +2733,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 22.9 MB (22944997 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f82b184891ecf71303c14e6658ace46e95f5f157682da9b582cb967e9648c10d`  
-		Last Modified: Fri, 21 Jun 2024 05:27:15 GMT  
 		Size: 2.4 MB (2370004 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0593643cc80b45c3e95e55271aebb7b5b474a3c444cff93983b44b2a84dafeae`  
@@ -2797,7 +2756,6 @@ $ docker pull mono@sha256:af9aa3d2e47127aab2e357a9ea276d08bdd273a6c5aaf87cd45400
 
 -	Layers:
 	-	`sha256:8be89a42680753d1fc2276e6a396e95cea8773106f77e26aec995d0df0ca7a8c`  
-		Last Modified: Fri, 21 Jun 2024 05:27:14 GMT  
 		Size: 4.0 MB (4033035 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:37aea1d9ffd12da273a2d239b6f7316eb3559a4d114eed112ff0adae18c136a8`  
@@ -2903,7 +2861,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 2.8 MB (2791746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:69732935ca2831417791f9677707cd4ac5cce2cc5ceac6ccf0939905aa577562`  
-		Last Modified: Fri, 21 Jun 2024 01:03:31 GMT  
 		Size: 68.6 MB (68593059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2967,7 +2924,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 2.9 MB (2892610 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a7f103eac188d225f1b73fa0b0d6a3f2560c7fc46d7ec0f0e7e7a07330eb1ff0`  
-		Last Modified: Wed, 03 Aug 2022 02:16:04 GMT  
 		Size: 41.8 MB (41839360 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -3019,7 +2975,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 
 -	Layers:
 	-	`sha256:b338562f40a7fb7360dfae935da6d7e40d2545db18bc461d9d70ec1b2b657f33`  
-		Last Modified: Thu, 13 Jun 2024 01:26:49 GMT  
 		Size: 27.3 MB (27337703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b1b752ddf75c64e105424fb16f5a2053ddad33f059e3be8e520e35908cc4e97`  
@@ -3027,7 +2982,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 2.8 MB (2780035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d574eb224b5ddbe14656e28913cf5eeb5b14aa651aa3bcb9288aa43f1000aec5`  
-		Last Modified: Fri, 21 Jun 2024 01:03:11 GMT  
 		Size: 64.6 MB (64555923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb9d6fb145c5367510a78273891d0ba84d7257b0bfdf3cd340f4e3d6f211de0a`  
@@ -3089,7 +3043,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 
 -	Layers:
 	-	`sha256:187ecffbd1e0eae5de6567dff32bd58f28623635657779760c9d9539d6b7cc59`  
-		Last Modified: Tue, 02 Aug 2022 00:57:06 GMT  
 		Size: 24.9 MB (24889750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6702eef9c7d9ec6ede2c5f9a15a047b314ccc9140f25694f337c0127478bb25b`  
@@ -3308,7 +3261,6 @@ $ docker pull mono@sha256:e69c4a0ff0efcd311f3ec0da7e72cbafaa9689b8555686674db7d3
 		Size: 11.1 MB (11074056 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f11f469c7181081a082c334f89f2885f7a6a0953d5e152e5f75db2af4504d80e`  
-		Last Modified: Fri, 21 Jun 2024 02:03:57 GMT  
 		Size: 7.9 KB (7870 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3404,7 +3356,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:b338562f40a7fb7360dfae935da6d7e40d2545db18bc461d9d70ec1b2b657f33`  
-		Last Modified: Thu, 13 Jun 2024 01:26:49 GMT  
 		Size: 27.3 MB (27337703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b1b752ddf75c64e105424fb16f5a2053ddad33f059e3be8e520e35908cc4e97`  
@@ -3412,7 +3363,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 2.8 MB (2780035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d574eb224b5ddbe14656e28913cf5eeb5b14aa651aa3bcb9288aa43f1000aec5`  
-		Last Modified: Fri, 21 Jun 2024 01:03:11 GMT  
 		Size: 64.6 MB (64555923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3468,7 +3418,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:187ecffbd1e0eae5de6567dff32bd58f28623635657779760c9d9539d6b7cc59`  
-		Last Modified: Tue, 02 Aug 2022 00:57:06 GMT  
 		Size: 24.9 MB (24889750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6702eef9c7d9ec6ede2c5f9a15a047b314ccc9140f25694f337c0127478bb25b`  
@@ -3665,7 +3614,6 @@ $ docker pull mono@sha256:21b839469b89df687807ffdd3f870708c16efa44a6b299510e9d63
 		Size: 4.1 MB (4120175 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:190e2c58614be0d956b94cdc868f9beb77c2f2d8ef16c981339f2b2c23f56975`  
-		Last Modified: Fri, 21 Jun 2024 01:03:12 GMT  
 		Size: 10.1 KB (10074 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3757,7 +3705,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 
 -	Layers:
 	-	`sha256:b338562f40a7fb7360dfae935da6d7e40d2545db18bc461d9d70ec1b2b657f33`  
-		Last Modified: Thu, 13 Jun 2024 01:26:49 GMT  
 		Size: 27.3 MB (27337703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b1b752ddf75c64e105424fb16f5a2053ddad33f059e3be8e520e35908cc4e97`  
@@ -3765,7 +3712,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 2.8 MB (2780035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d574eb224b5ddbe14656e28913cf5eeb5b14aa651aa3bcb9288aa43f1000aec5`  
-		Last Modified: Fri, 21 Jun 2024 01:03:11 GMT  
 		Size: 64.6 MB (64555923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb9d6fb145c5367510a78273891d0ba84d7257b0bfdf3cd340f4e3d6f211de0a`  
@@ -3827,7 +3773,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 
 -	Layers:
 	-	`sha256:187ecffbd1e0eae5de6567dff32bd58f28623635657779760c9d9539d6b7cc59`  
-		Last Modified: Tue, 02 Aug 2022 00:57:06 GMT  
 		Size: 24.9 MB (24889750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6702eef9c7d9ec6ede2c5f9a15a047b314ccc9140f25694f337c0127478bb25b`  
@@ -4046,7 +3991,6 @@ $ docker pull mono@sha256:e69c4a0ff0efcd311f3ec0da7e72cbafaa9689b8555686674db7d3
 		Size: 11.1 MB (11074056 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f11f469c7181081a082c334f89f2885f7a6a0953d5e152e5f75db2af4504d80e`  
-		Last Modified: Fri, 21 Jun 2024 02:03:57 GMT  
 		Size: 7.9 KB (7870 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4142,7 +4086,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:b338562f40a7fb7360dfae935da6d7e40d2545db18bc461d9d70ec1b2b657f33`  
-		Last Modified: Thu, 13 Jun 2024 01:26:49 GMT  
 		Size: 27.3 MB (27337703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b1b752ddf75c64e105424fb16f5a2053ddad33f059e3be8e520e35908cc4e97`  
@@ -4150,7 +4093,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 2.8 MB (2780035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d574eb224b5ddbe14656e28913cf5eeb5b14aa651aa3bcb9288aa43f1000aec5`  
-		Last Modified: Fri, 21 Jun 2024 01:03:11 GMT  
 		Size: 64.6 MB (64555923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -4206,7 +4148,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:187ecffbd1e0eae5de6567dff32bd58f28623635657779760c9d9539d6b7cc59`  
-		Last Modified: Tue, 02 Aug 2022 00:57:06 GMT  
 		Size: 24.9 MB (24889750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6702eef9c7d9ec6ede2c5f9a15a047b314ccc9140f25694f337c0127478bb25b`  
@@ -4403,7 +4344,6 @@ $ docker pull mono@sha256:21b839469b89df687807ffdd3f870708c16efa44a6b299510e9d63
 		Size: 4.1 MB (4120175 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:190e2c58614be0d956b94cdc868f9beb77c2f2d8ef16c981339f2b2c23f56975`  
-		Last Modified: Fri, 21 Jun 2024 01:03:12 GMT  
 		Size: 10.1 KB (10074 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4495,7 +4435,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 
 -	Layers:
 	-	`sha256:b338562f40a7fb7360dfae935da6d7e40d2545db18bc461d9d70ec1b2b657f33`  
-		Last Modified: Thu, 13 Jun 2024 01:26:49 GMT  
 		Size: 27.3 MB (27337703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b1b752ddf75c64e105424fb16f5a2053ddad33f059e3be8e520e35908cc4e97`  
@@ -4503,7 +4442,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 2.8 MB (2780035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d574eb224b5ddbe14656e28913cf5eeb5b14aa651aa3bcb9288aa43f1000aec5`  
-		Last Modified: Fri, 21 Jun 2024 01:03:11 GMT  
 		Size: 64.6 MB (64555923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb9d6fb145c5367510a78273891d0ba84d7257b0bfdf3cd340f4e3d6f211de0a`  
@@ -4565,7 +4503,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 
 -	Layers:
 	-	`sha256:187ecffbd1e0eae5de6567dff32bd58f28623635657779760c9d9539d6b7cc59`  
-		Last Modified: Tue, 02 Aug 2022 00:57:06 GMT  
 		Size: 24.9 MB (24889750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6702eef9c7d9ec6ede2c5f9a15a047b314ccc9140f25694f337c0127478bb25b`  
@@ -4784,7 +4721,6 @@ $ docker pull mono@sha256:e69c4a0ff0efcd311f3ec0da7e72cbafaa9689b8555686674db7d3
 		Size: 11.1 MB (11074056 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f11f469c7181081a082c334f89f2885f7a6a0953d5e152e5f75db2af4504d80e`  
-		Last Modified: Fri, 21 Jun 2024 02:03:57 GMT  
 		Size: 7.9 KB (7870 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4880,7 +4816,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:b338562f40a7fb7360dfae935da6d7e40d2545db18bc461d9d70ec1b2b657f33`  
-		Last Modified: Thu, 13 Jun 2024 01:26:49 GMT  
 		Size: 27.3 MB (27337703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b1b752ddf75c64e105424fb16f5a2053ddad33f059e3be8e520e35908cc4e97`  
@@ -4888,7 +4823,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 2.8 MB (2780035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d574eb224b5ddbe14656e28913cf5eeb5b14aa651aa3bcb9288aa43f1000aec5`  
-		Last Modified: Fri, 21 Jun 2024 01:03:11 GMT  
 		Size: 64.6 MB (64555923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -4944,7 +4878,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:187ecffbd1e0eae5de6567dff32bd58f28623635657779760c9d9539d6b7cc59`  
-		Last Modified: Tue, 02 Aug 2022 00:57:06 GMT  
 		Size: 24.9 MB (24889750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6702eef9c7d9ec6ede2c5f9a15a047b314ccc9140f25694f337c0127478bb25b`  
@@ -5141,7 +5074,6 @@ $ docker pull mono@sha256:21b839469b89df687807ffdd3f870708c16efa44a6b299510e9d63
 		Size: 4.1 MB (4120175 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:190e2c58614be0d956b94cdc868f9beb77c2f2d8ef16c981339f2b2c23f56975`  
-		Last Modified: Fri, 21 Jun 2024 01:03:12 GMT  
 		Size: 10.1 KB (10074 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5233,7 +5165,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 
 -	Layers:
 	-	`sha256:b338562f40a7fb7360dfae935da6d7e40d2545db18bc461d9d70ec1b2b657f33`  
-		Last Modified: Thu, 13 Jun 2024 01:26:49 GMT  
 		Size: 27.3 MB (27337703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b1b752ddf75c64e105424fb16f5a2053ddad33f059e3be8e520e35908cc4e97`  
@@ -5241,7 +5172,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 2.8 MB (2780035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d574eb224b5ddbe14656e28913cf5eeb5b14aa651aa3bcb9288aa43f1000aec5`  
-		Last Modified: Fri, 21 Jun 2024 01:03:11 GMT  
 		Size: 64.6 MB (64555923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb9d6fb145c5367510a78273891d0ba84d7257b0bfdf3cd340f4e3d6f211de0a`  
@@ -5303,7 +5233,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 
 -	Layers:
 	-	`sha256:187ecffbd1e0eae5de6567dff32bd58f28623635657779760c9d9539d6b7cc59`  
-		Last Modified: Tue, 02 Aug 2022 00:57:06 GMT  
 		Size: 24.9 MB (24889750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6702eef9c7d9ec6ede2c5f9a15a047b314ccc9140f25694f337c0127478bb25b`  
@@ -5522,7 +5451,6 @@ $ docker pull mono@sha256:e69c4a0ff0efcd311f3ec0da7e72cbafaa9689b8555686674db7d3
 		Size: 11.1 MB (11074056 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f11f469c7181081a082c334f89f2885f7a6a0953d5e152e5f75db2af4504d80e`  
-		Last Modified: Fri, 21 Jun 2024 02:03:57 GMT  
 		Size: 7.9 KB (7870 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5618,7 +5546,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:b338562f40a7fb7360dfae935da6d7e40d2545db18bc461d9d70ec1b2b657f33`  
-		Last Modified: Thu, 13 Jun 2024 01:26:49 GMT  
 		Size: 27.3 MB (27337703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b1b752ddf75c64e105424fb16f5a2053ddad33f059e3be8e520e35908cc4e97`  
@@ -5626,7 +5553,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 2.8 MB (2780035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d574eb224b5ddbe14656e28913cf5eeb5b14aa651aa3bcb9288aa43f1000aec5`  
-		Last Modified: Fri, 21 Jun 2024 01:03:11 GMT  
 		Size: 64.6 MB (64555923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -5682,7 +5608,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:187ecffbd1e0eae5de6567dff32bd58f28623635657779760c9d9539d6b7cc59`  
-		Last Modified: Tue, 02 Aug 2022 00:57:06 GMT  
 		Size: 24.9 MB (24889750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6702eef9c7d9ec6ede2c5f9a15a047b314ccc9140f25694f337c0127478bb25b`  
@@ -5879,7 +5804,6 @@ $ docker pull mono@sha256:21b839469b89df687807ffdd3f870708c16efa44a6b299510e9d63
 		Size: 4.1 MB (4120175 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:190e2c58614be0d956b94cdc868f9beb77c2f2d8ef16c981339f2b2c23f56975`  
-		Last Modified: Fri, 21 Jun 2024 01:03:12 GMT  
 		Size: 10.1 KB (10074 bytes)  
 		MIME: application/vnd.in-toto+json
 

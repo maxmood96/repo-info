@@ -44,7 +44,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:b338562f40a7fb7360dfae935da6d7e40d2545db18bc461d9d70ec1b2b657f33`  
-		Last Modified: Thu, 13 Jun 2024 01:26:49 GMT  
 		Size: 27.3 MB (27337703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b1b752ddf75c64e105424fb16f5a2053ddad33f059e3be8e520e35908cc4e97`  
@@ -52,7 +51,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 2.8 MB (2780035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d574eb224b5ddbe14656e28913cf5eeb5b14aa651aa3bcb9288aa43f1000aec5`  
-		Last Modified: Fri, 21 Jun 2024 01:03:11 GMT  
 		Size: 64.6 MB (64555923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -108,7 +106,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:187ecffbd1e0eae5de6567dff32bd58f28623635657779760c9d9539d6b7cc59`  
-		Last Modified: Tue, 02 Aug 2022 00:57:06 GMT  
 		Size: 24.9 MB (24889750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6702eef9c7d9ec6ede2c5f9a15a047b314ccc9140f25694f337c0127478bb25b`  
@@ -305,7 +302,6 @@ $ docker pull mono@sha256:21b839469b89df687807ffdd3f870708c16efa44a6b299510e9d63
 		Size: 4.1 MB (4120175 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:190e2c58614be0d956b94cdc868f9beb77c2f2d8ef16c981339f2b2c23f56975`  
-		Last Modified: Fri, 21 Jun 2024 01:03:12 GMT  
 		Size: 10.1 KB (10074 bytes)  
 		MIME: application/vnd.in-toto+json
 
