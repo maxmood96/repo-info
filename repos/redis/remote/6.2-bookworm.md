@@ -121,7 +121,6 @@ $ docker pull redis@sha256:12160aa7616ac15f3b668641bc2a55863d4f6a04fd30215394792
 
 -	Layers:
 	-	`sha256:9959d473fb40c9886e68c5914f0a2469c05fab9c2ac02789deb09fe9716b80dc`  
-		Last Modified: Tue, 24 Dec 2024 22:16:06 GMT  
 		Size: 2.3 MB (2265770 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:40a9e24c9a858a8eae219f199f12a86bb10ef85c78167d13cad438ff748c55ef`  
@@ -395,7 +394,6 @@ CMD ["redis-server"]
 		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:09fc6d52d57a97f33e2bbbe5a4a7e48b9a7de6222180471056cf26b1ff3bfe85`  
-		Last Modified: Wed, 25 Dec 2024 01:24:00 GMT  
 		Size: 1.1 KB (1103 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:00b1f24592680924927057c8d6458779983a82b65c427f563deea3293e91a996`  
@@ -603,11 +601,9 @@ CMD ["redis-server"]
 
 -	Layers:
 	-	`sha256:8a9f899eb883b68bbb36209214842bc927b7c446aa0471f0b241ae7e76adb6e5`  
-		Last Modified: Tue, 24 Dec 2024 21:33:38 GMT  
 		Size: 28.5 MB (28505873 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5d5e3a886ce0ac3bb044cde26c3d4a0c62e45c326bec3a754a1a695b1e55ee00`  
-		Last Modified: Wed, 25 Dec 2024 11:24:06 GMT  
 		Size: 1.1 KB (1103 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:735b4f0bbfeb6ad150142dc0a4d6f24164299d5ff2f9e3731b6f55815d307bef`  
@@ -631,7 +627,6 @@ CMD ["redis-server"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8af5323e33a15068a89a90b3a744c31ab2a51056fb3a2d3a0aeee90da0351c6`  
-		Last Modified: Wed, 25 Dec 2024 11:41:38 GMT  
 		Size: 570.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -757,7 +752,6 @@ $ docker pull redis@sha256:17b56bf7c1768712b00be38d739ed6f13705de9978639e0a26d00
 		Size: 2.3 MB (2270072 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8202dbbfbc9e8d708398b460d124916a8a63b30b2178679e71555d2f2c1c0fd5`  
-		Last Modified: Wed, 25 Dec 2024 05:58:56 GMT  
 		Size: 35.8 KB (35830 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -859,10 +853,8 @@ $ docker pull redis@sha256:343a8e8cb3fc25d39e95311c5f4cc06d2529ddd7c56dbd1398817
 
 -	Layers:
 	-	`sha256:e365d5482176e4890378bcca47947fe354612d826a02082df0bcb750c3daae36`  
-		Last Modified: Wed, 25 Dec 2024 00:04:41 GMT  
 		Size: 2.3 MB (2265494 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fd80f5c1a4c1c77ff115771a716b5184b4fd20de743307921430b3bdc60ed72f`  
-		Last Modified: Wed, 25 Dec 2024 00:04:41 GMT  
 		Size: 35.8 KB (35766 bytes)  
 		MIME: application/vnd.in-toto+json
