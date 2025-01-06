@@ -165,6 +165,7 @@ CMD ["hy"]
 		Size: 3.3 MB (3305534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bd60fe119851eb0da367a1b74851f2a2e65d9d397546affbd85068a061448700`  
+		Last Modified: Wed, 25 Dec 2024 11:05:17 GMT  
 		Size: 6.4 MB (6358211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -277,7 +278,6 @@ $ docker pull hylang@sha256:617066845f3fae4defabee7f965d9ee85da0d9d8fff9a41bb034
 		Size: 2.4 MB (2404033 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1f28dabd3ff91789d6c07b217ed2b867061bda8e6740c85d4ac099c288931395`  
-		Last Modified: Tue, 24 Dec 2024 23:23:05 GMT  
 		Size: 11.7 KB (11685 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -338,6 +338,7 @@ CMD ["hy"]
 		Size: 791.7 MB (791681213 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ced4cff0f964eb6bf2b0f43e8409dc735064b9eb934d411a7ff7c2abd7e9e4ae`  
+		Last Modified: Wed, 11 Dec 2024 20:41:46 GMT  
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1dfadb20990ef2cf1ed1a2bf3abe4f70abe09c05b3af566562f30ce9a26b3b28`  
@@ -345,6 +346,7 @@ CMD ["hy"]
 		Size: 355.9 KB (355931 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:343fdf7e57e505bc021cceff35d137140ea3d39dfa4525870de58238b131c0e0`  
+		Last Modified: Wed, 11 Dec 2024 20:41:46 GMT  
 		Size: 15.5 MB (15539581 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:938a6b6e4381306006ae411197980ad200dbce55250b3ff1a1932bce42e45aed`  
@@ -449,6 +451,7 @@ CMD ["hy"]
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ff811a22365ae6f54010ba5aa2bd7dca2f0cdbad78b1f0286a41594be75735aa`  
+		Last Modified: Wed, 11 Dec 2024 20:47:27 GMT  
 		Size: 461.1 KB (461062 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:fc16594811a30599d8f482b77630b267039cf5f49878bc581df5375effeda5e0`  
