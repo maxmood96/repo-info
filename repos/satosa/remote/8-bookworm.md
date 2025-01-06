@@ -203,7 +203,6 @@ CMD ["gunicorn" "-b0.0.0.0:8080" "satosa.wsgi:app"]
 		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8148339320ac7311d2b967a813f7ab73f6fdfdfac314cda895b222cf7eac3190`  
-		Last Modified: Wed, 25 Dec 2024 10:30:25 GMT  
 		Size: 21.3 MB (21304295 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e232c04efca95683cc6face1699f80f0c5a0e2fa1713c4e5b651f7891a315320`  
@@ -243,6 +242,5 @@ $ docker pull satosa@sha256:aba150e4c316fefe5acdfe0f569322128297c332c67814f81f56
 		Size: 2.6 MB (2607690 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:264fcc753cf906148e3a423a1eb4d1461a1c5c8c4b357fd1fac9afe86e289c78`  
-		Last Modified: Wed, 25 Dec 2024 10:30:24 GMT  
 		Size: 22.3 KB (22301 bytes)  
 		MIME: application/vnd.in-toto+json
