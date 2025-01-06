@@ -113,10 +113,10 @@ $ docker pull gradle@sha256:47aae745ee806a23843889948870fd13a277eb6922ef6ca15be5
 
 -	Layers:
 	-	`sha256:0a58cf811c4d4ac3c87f9d4d95794dd8ae89f84655e836f34b81cdc232f58967`  
-		Last Modified: Fri, 20 Dec 2024 23:15:03 GMT  
 		Size: 10.7 MB (10717458 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5bcfce2432573c9638fa76b0a2d238f0e8903de77a8ebb9fc87c66676b6866ee`  
+		Last Modified: Fri, 20 Dec 2024 23:15:03 GMT  
 		Size: 19.7 KB (19746 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -226,6 +226,5 @@ $ docker pull gradle@sha256:d4d5a4100f42275b018f6aad3cef57c1e21bc548967ebb600f2d
 		Size: 10.7 MB (10716457 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4d899b6a376e93683b3b23ab279314de238daad4f18a100d7ea3c46631aedc50`  
-		Last Modified: Sat, 21 Dec 2024 04:34:29 GMT  
 		Size: 19.9 KB (19944 bytes)  
 		MIME: application/vnd.in-toto+json
