@@ -40,10 +40,10 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 
 -	Layers:
 	-	`sha256:5d6e107a26c2ffb6e234f04132358dea70a691a64c1152f984d2f2ba0e218c58`  
-		Last Modified: Tue, 24 Dec 2024 21:32:13 GMT  
 		Size: 53.7 MB (53738957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f392250a6120024a6f59fbe82fa68ac8f53e7c1e5f411683a8959bf0173b465`  
+		Last Modified: Tue, 24 Dec 2024 22:28:15 GMT  
 		Size: 11.1 MB (11105105 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7cf56865f2d4e9edd1d24e2990f89c7aae22e386899b5b021073b358970a1743`  
@@ -74,6 +74,7 @@ $ docker pull neurodebian@sha256:38d5242a495a82abc4aba1dfa83d090b2df9353ce487f38
 
 -	Layers:
 	-	`sha256:cea5aff2e72b4c906af18a1c9224fd851860d650bb8fefa1821ae31df6ea8333`  
+		Last Modified: Tue, 24 Dec 2024 22:28:15 GMT  
 		Size: 4.2 MB (4232796 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:28ace802cc48e21435ac96628e0636016872d8cb3343d64c50d6bad48f0985ee`  
@@ -120,6 +121,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 		Size: 1.7 KB (1740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:583285aa42d4ba42549ac2e4ea57d0849fc285d04fffe2155b702638dfda9ade`  
+		Last Modified: Wed, 25 Dec 2024 02:19:02 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4a2a8e49cbdd987bb7224891093e38a2baa58d5a5b27980b70b0c710e3e4f973`  
@@ -143,7 +145,6 @@ $ docker pull neurodebian@sha256:eddfdb6cf6edf5427280693935f2555124f345682bd6b85
 
 -	Layers:
 	-	`sha256:91ec6f7f2dbce4309be95b5563eddabd323be54db4549319bb9edd6248226fe6`  
-		Last Modified: Wed, 25 Dec 2024 02:19:02 GMT  
 		Size: 4.2 MB (4232403 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7f0527fd20e9bcfdeb921f6242b5306a618168d939e96b2b9bd5fd9dbbcc53f0`  
@@ -182,6 +183,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 		Size: 54.7 MB (54676016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:285a2d916d50108e0806e4d5b0cfee8fada6dbc0363b5f1f194a14b7250ea7d0`  
+		Last Modified: Tue, 24 Dec 2024 22:25:15 GMT  
 		Size: 11.5 MB (11500257 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc896858da3c833c56d11c5fc28a8ab13f16b6fbe38862cbaa105670f9f63305`  
@@ -189,11 +191,9 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 		Size: 1.7 KB (1738 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:42bb193da8982808546aa6f34961b552e984efee3ed9a4bae2a514be5dc6ac1a`  
-		Last Modified: Tue, 24 Dec 2024 22:25:14 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:74e0cb76cc33b913ee236ef79eb2b82a795453b7840e74667b45324a4dee464f`  
-		Last Modified: Tue, 24 Dec 2024 22:25:15 GMT  
 		Size: 101.1 KB (101055 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
