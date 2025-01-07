@@ -98,7 +98,6 @@ $ docker pull eclipse-temurin@sha256:8a27e3ec9e0025fddca7574ab31f2531f1c22f90ce2
 
 -	Layers:
 	-	`sha256:d8db8deca921ed5cddc4e40d4f01f934a6a8407f54bb565861b092d7e92fe081`  
-		Last Modified: Thu, 24 Oct 2024 00:56:50 GMT  
 		Size: 3.9 MB (3917648 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:11335d574d7504c172efdf4a862cf97ceab2bec188f3cd2c5e6e949c16b8bc55`  
@@ -161,7 +160,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:af4535fefa85aab377ffee53a9a8637be43f01918d6d23dbb58309fdb14b627d`  
-		Last Modified: Thu, 24 Oct 2024 00:59:33 GMT  
 		Size: 99.0 MB (99029384 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:678fd7c7361510ee3146f84cf55e361f3f4518ae74a966d822a2d691e6bfc66c`  
@@ -192,7 +190,6 @@ $ docker pull eclipse-temurin@sha256:af3b50fc48270090b8b9cf2d9051bd571abccc5eaa9
 		Size: 3.9 MB (3921358 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d7153f797cebdb134f8a5223875a0c34290d9b62616401f34b9e6014f126c87a`  
-		Last Modified: Thu, 24 Oct 2024 00:59:30 GMT  
 		Size: 22.6 KB (22575 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -279,10 +276,10 @@ $ docker pull eclipse-temurin@sha256:2425ee65dd0830e546c6b44edc8247a9bbdc1e63057
 
 -	Layers:
 	-	`sha256:6f12a681258466e17e2a0b6513731bfd81e441cdf80abdffc74dda8d343832ae`  
-		Last Modified: Thu, 24 Oct 2024 00:58:15 GMT  
 		Size: 3.9 MB (3918013 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:039f7ebd5c61ca54bbe33071211d4ccc1e5c08634bc45acd4f34206c970232d9`  
+		Last Modified: Thu, 24 Oct 2024 00:58:14 GMT  
 		Size: 22.6 KB (22606 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -369,7 +366,6 @@ $ docker pull eclipse-temurin@sha256:e696e688598b5c2d4451f73639136dc04fdd3a86500
 
 -	Layers:
 	-	`sha256:21a6050276c3f3253a44ce808f7f2c44b17d02e7dc0ff99d49fc8dd7a1262b66`  
-		Last Modified: Thu, 24 Oct 2024 05:49:55 GMT  
 		Size: 3.9 MB (3920258 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:886474b8c8473aaea95c1c63545160df945304eaf1ff86127ede55e4d8e54687`  

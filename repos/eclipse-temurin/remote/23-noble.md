@@ -197,7 +197,6 @@ $ docker pull eclipse-temurin@sha256:4e97f1881ca049e39f1caaca7f5b9be7b8f047a8152
 
 -	Layers:
 	-	`sha256:afe04d35287c24e2b65d7a67f2052cf150f2b1b9a6b863fb3e6f947bdafab044`  
-		Last Modified: Tue, 03 Dec 2024 05:53:14 GMT  
 		Size: 3.4 MB (3427438 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dffd946b328f5a91df8135c126ab1298771f7a77a3d49a89213603e9049230b0`  
@@ -270,7 +269,6 @@ CMD ["jshell"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:00bd83220c8b3d1d1101ddfdd527c4a14929b2de860bff342e89f938a2e7b141`  
-		Last Modified: Tue, 03 Dec 2024 04:54:07 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -294,6 +292,7 @@ $ docker pull eclipse-temurin@sha256:b826779b80c21809e6402fb62c2503cbbf7d387ad7f
 		Size: 3.3 MB (3343742 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e7690e3ac22042f1e690a7121a6e8edd1e848a2e1affa2a240252be519b81c54`  
+		Last Modified: Tue, 03 Dec 2024 04:54:07 GMT  
 		Size: 24.7 KB (24703 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -347,6 +346,7 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:0dcc8c973ba119a0fb5275114fd0456179bba1132bdc69f2afa4e1c4a235c540`  
+		Last Modified: Tue, 19 Nov 2024 17:38:52 GMT  
 		Size: 31.0 MB (30980838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4461d53dc0eced0e40fa80251442976c0789866683647b09c3844dffb1587c9e`  
@@ -362,7 +362,6 @@ CMD ["jshell"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:393ff38c634e81bae0d233b7cfdfef3a6f3493a30e595d59ac75366773a0a01c`  
-		Last Modified: Tue, 03 Dec 2024 07:17:13 GMT  
 		Size: 2.3 KB (2284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -448,6 +447,7 @@ CMD ["jshell"]
 		Size: 20.4 MB (20442783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3d6fcfe71ef871ddd1a6e13db5fcf562e5cb82458af60e2753b44f1cfb8d069e`  
+		Last Modified: Tue, 03 Dec 2024 04:20:42 GMT  
 		Size: 154.4 MB (154416835 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  

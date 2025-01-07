@@ -106,7 +106,6 @@ $ docker pull eclipse-temurin@sha256:b671302cb262a2f98252d3cb731008cc0e2869e1518
 		Size: 3.1 MB (3120351 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:66d6551a9711c6295451fecee9e9aceef6adcd47c06f7a81743197c350d40086`  
-		Last Modified: Tue, 03 Dec 2024 02:30:18 GMT  
 		Size: 24.1 KB (24080 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -157,6 +156,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:b25adda5718ef4d96696ce8f0e58cde58fbe9977456036f84293bba8f26c5567`  
+		Last Modified: Tue, 19 Nov 2024 17:38:39 GMT  
 		Size: 26.9 MB (26869639 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:83a5eb6a2db557356b46da4a6e217de6ed249bca2210cdccd1a0430c803e8512`  
@@ -259,6 +259,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 46.4 MB (46430917 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4e5c0bfb583c70e3d3b37ce5b84ddaf77609232633842ecaf5813b86ce4d4af2`  
+		Last Modified: Tue, 03 Dec 2024 05:51:21 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b7573b7342583b03280fa66f7b674dec2151c223902f20c24aa397d98d85f88f`  
@@ -348,6 +349,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 46.8 MB (46762182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e60a413d8f1d2854996f94b5e719fbb86df5b60809978625f97778ed86d7c31c`  
+		Last Modified: Tue, 03 Dec 2024 04:50:10 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:95ba30f4301275d6ae1761c121c07cb02d5476b51064f56f7b50010797c182f4`  
@@ -371,7 +373,6 @@ $ docker pull eclipse-temurin@sha256:d106851e38e3c17bfd2c8184f2a1481d1e6ff982747
 
 -	Layers:
 	-	`sha256:daa209deef53381878d27960cfcc1577d10359e6a4ec2f18343b5198b3fffb94`  
-		Last Modified: Tue, 03 Dec 2024 04:50:10 GMT  
 		Size: 3.1 MB (3124275 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1df5da95c5871656051802eb95ec460abddb19cc39a49499d4640fd4ef659592`  
@@ -426,6 +427,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:0dcc8c973ba119a0fb5275114fd0456179bba1132bdc69f2afa4e1c4a235c540`  
+		Last Modified: Tue, 19 Nov 2024 17:38:52 GMT  
 		Size: 31.0 MB (30980838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f71802e45f04a2768174040c20bde61c8c2abaf2a16ed53d5c7442cf9dc97ae`  

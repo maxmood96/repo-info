@@ -94,7 +94,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 103.6 MB (103634661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e938961550369e58a8bce822a4d86a001339cf7fd7822a5a63ba08c9823e9b40`  
-		Last Modified: Thu, 19 Dec 2024 06:28:09 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f09fa5db038fcbc0ba3204a180a4c9622afdb4a61f9aa9c449c7a40fb3254f5c`  
@@ -199,7 +198,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 37.6 MB (37577418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:57f5ca1f094534b84eeb5099558913cebb9becc0ece5d82f47d4ed1bff8f0530`  
-		Last Modified: Thu, 19 Dec 2024 06:29:45 GMT  
 		Size: 37.4 MB (37443775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d05d4c74dbd539def0b06aaf95cd4574000f88abced66b1b48b8c63c0eaffa12`  
@@ -324,7 +322,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7697ea9b6e0ac6fdf94a8aa5c8b6e0944aaf24b708f40e36589608e9f077daed`  
-		Last Modified: Thu, 19 Dec 2024 06:29:26 GMT  
 		Size: 2.3 KB (2315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

@@ -86,7 +86,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 39.4 MB (39432409 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b2a0e98fe8d7924f1df539cb2c254529d4cab25f054b43d68f590e47d008f276`  
-		Last Modified: Thu, 19 Dec 2024 06:27:56 GMT  
 		Size: 37.0 MB (36987507 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a5706f262e1d11a06e037ad6aaffee24fcb437b17fec5b7bab2731319ef414f6`  
@@ -122,6 +121,7 @@ $ docker pull eclipse-temurin@sha256:122e20db5a6943c3bd5e6f5b677f914737aa91ba79a
 		Size: 3.6 MB (3612424 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:aebfc16f7a7793cc43e5fe904e394943932f8d9c80f162a547f58a8a1a052b0c`  
+		Last Modified: Thu, 19 Dec 2024 06:27:50 GMT  
 		Size: 19.2 KB (19200 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -198,7 +198,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 37.6 MB (37577418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:57f5ca1f094534b84eeb5099558913cebb9becc0ece5d82f47d4ed1bff8f0530`  
-		Last Modified: Thu, 19 Dec 2024 06:29:45 GMT  
 		Size: 37.4 MB (37443775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:41d9ef217cd4ed49688593827307e386f674fff03133f151f2ec15325abc38f2`  
@@ -234,6 +233,7 @@ $ docker pull eclipse-temurin@sha256:b7b152dda843ebf05f7f93f8beafcdb85bbc490ceb2
 		Size: 3.6 MB (3612293 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3b63674784eb95a23525d970d555cdea5804f1804c0d1241ba7bd73993d4fe5a`  
+		Last Modified: Thu, 19 Dec 2024 06:30:20 GMT  
 		Size: 19.3 KB (19308 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -314,7 +314,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 39.5 MB (39476308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a357953d48c0ebf4e3bb23ae1c5221389d0fa710450f9dd5a0cb1ffb9f1a0646`  
-		Last Modified: Thu, 19 Dec 2024 06:30:11 GMT  
 		Size: 41.2 MB (41246863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:21028ca9a46806a11f2ff5eb20bdff1334da3f79334fae4ea073ce905a9eaa18`  
