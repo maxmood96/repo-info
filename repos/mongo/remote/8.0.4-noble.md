@@ -111,6 +111,7 @@ CMD ["mongod"]
 		Size: 242.1 MB (242056265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:05cc0f1cded4ad17b51117ffcb3f5c0b5197cc52495d9a922416183d3105fd6e`  
+		Last Modified: Mon, 09 Dec 2024 20:38:00 GMT  
 		Size: 5.0 KB (4996 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -130,9 +131,11 @@ $ docker pull mongo@sha256:4f3a9cedeb0af30f16f652bea4759139d3a907ac30b98d9cab8dd
 
 -	Layers:
 	-	`sha256:cfdf5e6c458675464fd22510767fbb6adfa80e4340aefdd45a6e37970ce17a5b`  
+		Last Modified: Mon, 09 Dec 2024 20:37:59 GMT  
 		Size: 2.5 MB (2497837 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ed65411667e6cc826e7168c932e9397f93ce453dc8427c3091326403f4990ea5`  
+		Last Modified: Mon, 09 Dec 2024 20:37:59 GMT  
 		Size: 28.6 KB (28571 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -216,6 +219,7 @@ CMD ["mongod"]
 		Size: 1.2 KB (1217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6e2b33d58e9a8050338a63963e7a4d3f199e76f3a82083b53b3eddf6bdcebf38`  
+		Last Modified: Tue, 03 Dec 2024 06:14:00 GMT  
 		Size: 1.5 MB (1491716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14c5b23bf5cf2e4b85b5aa1d3cd7ea65fd9991be6d569a37036ccf5faca7b4b9`  
