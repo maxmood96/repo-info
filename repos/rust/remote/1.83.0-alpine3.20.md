@@ -68,6 +68,7 @@ $ docker pull rust@sha256:eb7dfe1af3151e00eb0f09c8490d55212aca396578378fcff5eccb
 
 -	Layers:
 	-	`sha256:5f24b042877685de690c69e7040f7cffe9afea15fc4f3ce5603b794fa95b3f9d`  
+		Last Modified: Tue, 07 Jan 2025 03:17:52 GMT  
 		Size: 703.6 KB (703610 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:089595f53cfd991dd29775187be7adf0b57a2b755e2fb71f1969421c9fa19c4d`  
@@ -112,6 +113,7 @@ RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in         
 		Size: 52.9 MB (52946253 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a5f5c65e82878a882751b85d69f1b5e1fef9e5a1e2b6e8c6fb91b5a9106f0035`  
+		Last Modified: Mon, 02 Dec 2024 20:39:25 GMT  
 		Size: 237.6 MB (237588485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

@@ -66,6 +66,7 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 		Size: 211.3 MB (211306201 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:38d98af84437384925566ea242879295e12024ebb5eb5b15e881954fb4488ae3`  
+		Last Modified: Wed, 25 Dec 2024 01:26:09 GMT  
 		Size: 191.4 MB (191418254 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -140,6 +141,7 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 		Size: 175.2 MB (175243028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ec7ca5ada34c61d8f67d13dbf1a810cb088abfc1c6ca0b6fef8ea29c0a96edca`  
+		Last Modified: Thu, 26 Dec 2024 01:37:58 GMT  
 		Size: 224.5 MB (224498129 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -163,6 +165,7 @@ $ docker pull rust@sha256:1b4844205ab4139f96edbb498395f1ca4d7876a2f9c252bde6b9d8
 		Size: 15.3 MB (15278608 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:175ce8cd852730f8b21635227d1601bce32c22fd1959f066710af6fe5e3b9426`  
+		Last Modified: Thu, 26 Dec 2024 01:37:52 GMT  
 		Size: 13.2 KB (13247 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -237,6 +240,7 @@ $ docker pull rust@sha256:c82ea511b7cef80972b6e3d23c4778e73dd078bc02c2b0f37c9e56
 		Size: 15.5 MB (15502741 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ecb58b38fd482df005dd2bd2fffba8a89e4ae4a837eb1ec0f65106b4a6925001`  
+		Last Modified: Wed, 25 Dec 2024 19:15:39 GMT  
 		Size: 13.3 KB (13291 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -283,6 +287,7 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 		Size: 66.2 MB (66211662 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e9f260c3ceedc14c6d40a97e604c5fafe4ae04fc97161d786230fedbc3a4488`  
+		Last Modified: Wed, 25 Dec 2024 00:14:13 GMT  
 		Size: 210.2 MB (210222920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9294d2c6271efa5d71cfd39b729ae0faf85c0d1c2f056cb95afe8f188134c44e`  
