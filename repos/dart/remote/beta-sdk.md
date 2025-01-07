@@ -151,7 +151,6 @@ $ docker pull dart@sha256:3c067a294b56b8ea4c26865542e0093694cead07223dc1647aca17
 
 -	Layers:
 	-	`sha256:d811f66e1e90d870183db5689368cab185f2a38b1dc53f9d6d40f73d7f328258`  
-		Last Modified: Wed, 25 Dec 2024 03:49:58 GMT  
 		Size: 18.0 KB (18013 bytes)  
 		MIME: application/vnd.in-toto+json
 
