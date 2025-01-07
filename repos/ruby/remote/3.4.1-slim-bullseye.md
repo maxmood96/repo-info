@@ -66,6 +66,7 @@ CMD ["irb"]
 		Size: 9.8 MB (9815425 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e114e109dd1b90cf4ca4f0229fca7427e72e98c8bc6fcf3d481d4b927adb1876`  
+		Last Modified: Thu, 26 Dec 2024 16:31:01 GMT  
 		Size: 190.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8f245cb29e551de507be8a1bb624bb202fcca35e6c425947ef1daf761eeb7e72`  
@@ -93,9 +94,11 @@ $ docker pull ruby@sha256:f874149e6c6ecc265b6541cb082997451de0bd121d371d37bd54d6
 
 -	Layers:
 	-	`sha256:0e4f52aa40869933670d7d6b8277e824b635e10080780d19ca7ca7da786b0a07`  
+		Last Modified: Thu, 26 Dec 2024 16:31:01 GMT  
 		Size: 4.1 MB (4114598 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:77b74266e3f7bc6c8c5fa434d8661f7b8e49e115be76eddc23d6fcbd6b1a3b60`  
+		Last Modified: Thu, 26 Dec 2024 16:31:01 GMT  
 		Size: 23.6 KB (23640 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -146,6 +149,7 @@ CMD ["irb"]
 		Size: 25.5 MB (25533937 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:75063bb23fd5b73ce02abc628590dd595ca39f7fccec8a574bd45b2b674de54a`  
+		Last Modified: Wed, 25 Dec 2024 12:19:57 GMT  
 		Size: 7.9 MB (7936464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:176b552407713c9037c6398f8f8357a5acef6e9ce34a591ba25033fb3bdfa0f9`  
@@ -331,6 +335,7 @@ CMD ["irb"]
 		Size: 36.6 MB (36606081 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bf8e5ae1b86a165d508e74d6fcf375aa090ee6ead4e3273784cfa751f156f10d`  
+		Last Modified: Thu, 26 Dec 2024 16:31:03 GMT  
 		Size: 142.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -350,6 +355,7 @@ $ docker pull ruby@sha256:e265b4722bc2402607923422a98b08d802dff08f1237d78b640e05
 
 -	Layers:
 	-	`sha256:0fe1a93eac273253cf4d29c7113a9c067aab6b99be5a9db13f056d9ec4e21ccd`  
+		Last Modified: Thu, 26 Dec 2024 16:31:03 GMT  
 		Size: 4.1 MB (4118791 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8b0fd79618ccde58ae43ca0859bebe60b7c5eb22ae1fa9de09059805b15c688e`  
