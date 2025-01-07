@@ -184,6 +184,7 @@ CMD ["mongo-express"]
 		Size: 3.4 MB (3359246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:55b646bedde00306f5e12c0e681ee985ef441e91b22278d16db3cd13d2975220`  
+		Last Modified: Wed, 20 Nov 2024 19:49:46 GMT  
 		Size: 42.2 MB (42176348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:28e4cdbeccf68ae9ce47ad2caa1737d54563706835227ad12859e4bf0b36e802`  
@@ -191,7 +192,6 @@ CMD ["mongo-express"]
 		Size: 1.4 MB (1387217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d381a7daebb432502fd6016f77001db040d4437bc347b529e5637ea75562ab23`  
-		Last Modified: Wed, 20 Nov 2024 19:49:45 GMT  
 		Size: 443.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ac5463b67b47edd21070129c281e5755b200cdeb57ffdc2bf8f722e2d6a91efe`  
