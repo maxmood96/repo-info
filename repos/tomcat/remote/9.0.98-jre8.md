@@ -122,6 +122,7 @@ CMD ["catalina.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ca8ea7c25772ed747c0f65868e20dc6b3d1adade7867c68ad8cb868fef6528ac`  
+		Last Modified: Tue, 10 Dec 2024 02:09:28 GMT  
 		Size: 13.4 MB (13417814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:539648211ff73e2fb3c91961f35ba302aa19c4613f9055fe94afe27b07bae139`  
@@ -391,6 +392,7 @@ CMD ["catalina.sh" "run"]
 		Size: 40.9 MB (40866846 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:70fc8b4b1871977a0f5511e531b0ab95f25a83af81ba644a9096c7c3543b0fb5`  
+		Last Modified: Tue, 03 Dec 2024 05:49:06 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eae69ee20c6733b6e0cda312fa7519c9bc7f42c9a133407a21b34f6ecc9853c6`  
@@ -406,6 +408,7 @@ CMD ["catalina.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d3d2fca1a6f780fc3e14f63e4a3e31b39a0b0db5b75abe25bec3fd47719cffd0`  
+		Last Modified: Tue, 10 Dec 2024 02:50:02 GMT  
 		Size: 13.4 MB (13427120 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bd7c35c162daa0f9f98455ba69f5cc5f26aa1cd70f76a67554555c557e3eb32a`  
@@ -528,6 +531,7 @@ CMD ["catalina.sh" "run"]
 		Size: 18.8 MB (18845906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ebba8dc80d20e19ad4bae5a7894e994b0c56701acce23665b6d6c0f245eebaf1`  
+		Last Modified: Tue, 03 Dec 2024 04:45:39 GMT  
 		Size: 41.3 MB (41258824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bd594dd7ebcd31adf2e90eeecdfd243de8d05290429607d4e0534887d2034cae`  
@@ -547,6 +551,7 @@ CMD ["catalina.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ec9d8ce3bd78993695cf99502642ff178c0189ec27f548b5aad927781227185`  
+		Last Modified: Tue, 10 Dec 2024 02:27:18 GMT  
 		Size: 13.5 MB (13452460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0d43efd071cc6fbab5afa68e3f87ccf99b92f356091332b3ef5a684ddb4e9d88`  

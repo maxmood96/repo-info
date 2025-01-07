@@ -102,6 +102,7 @@ CMD ["catalina.sh" "run"]
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b8102a0b8aebb9e83cf9b49babb681033fba25f145e468519031ad5707f50183`  
+		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 17.0 MB (16966381 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e948b4564476a47332ef63d2b656fcb32b4f8aabfde1e9783e2991a957f2f314`  
@@ -117,6 +118,7 @@ CMD ["catalina.sh" "run"]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0a14f0b85d55f3e624ff4ca32a41b81f6817de8a1f2f3585bb1d27beeaff241d`  
+		Last Modified: Tue, 10 Dec 2024 02:09:23 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -124,6 +126,7 @@ CMD ["catalina.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1577a65af535c48375bd5f0e45bb19c23deb93930687e5a2eb33651342ece63e`  
+		Last Modified: Tue, 10 Dec 2024 02:09:24 GMT  
 		Size: 13.6 MB (13600499 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cc7a3e20a31c8cb911bb5f047acc0a562653908510fded54440f5d1d5435f7dd`  
@@ -254,6 +257,7 @@ CMD ["catalina.sh" "run"]
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbfdd2cb5856b7bf8e7d1b56f9c9b6b08ae4d7e368b83e97d203faea90fde0c8`  
+		Last Modified: Tue, 03 Dec 2024 07:49:24 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:63f07a1634e5fcadc9f90a07f7d608da458fa34ec48fabd31dc42f549cebe7ca`  
@@ -297,6 +301,7 @@ $ docker pull tomcat@sha256:626a66b0dea73fe4ad50ff24d90a64088ce29b88a228459ead66
 		Size: 3.2 MB (3185634 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e2f4635932736b20aeab445903a0bd1af5852ca3240706a08afbbbe8e4a2ee7c`  
+		Last Modified: Tue, 10 Dec 2024 05:09:37 GMT  
 		Size: 23.8 KB (23833 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -534,6 +539,7 @@ CMD ["catalina.sh" "run"]
 		Size: 46.8 MB (46762182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e60a413d8f1d2854996f94b5e719fbb86df5b60809978625f97778ed86d7c31c`  
+		Last Modified: Tue, 03 Dec 2024 04:50:10 GMT  
 		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:95ba30f4301275d6ae1761c121c07cb02d5476b51064f56f7b50010797c182f4`  
@@ -680,6 +686,7 @@ CMD ["catalina.sh" "run"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c91449fe072600e62db0d5beea7a781b1c0afdfa8b8ad21c9a79638e59ac235`  
+		Last Modified: Tue, 03 Dec 2024 06:59:53 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0a28af60776296a49073ac56e1e1b272bec831fb3bc60ca5a91fe2cb81a25f5`  
@@ -810,6 +817,7 @@ CMD ["catalina.sh" "run"]
 		Size: 30.0 MB (30020826 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4797233a5c5384584920c35814bc8b38ea24dccbedde0a0e68b3fb1a30877a17`  
+		Last Modified: Tue, 03 Dec 2024 04:16:13 GMT  
 		Size: 17.6 MB (17613148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f49ac462dc7df24c27528f6dbc7e7a49aacfd9321fb6ab19e8b559ca5276243`  
@@ -825,6 +833,7 @@ CMD ["catalina.sh" "run"]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a087350ad615619258b91b1188fffd2424c4c9777987b804ba873df1f28ba607`  
+		Last Modified: Tue, 10 Dec 2024 05:47:03 GMT  
 		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -860,6 +869,7 @@ $ docker pull tomcat@sha256:b3bf7ee25ae8626259789394db6d383fc7b9e1d4f32f9bd91e39
 
 -	Layers:
 	-	`sha256:64241a03b960f3cfce27e64854cd40d18d5e8676fc5d167ed9028ff1656766c1`  
+		Last Modified: Tue, 10 Dec 2024 05:47:03 GMT  
 		Size: 3.2 MB (3185458 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d4a501ec4c50144f3aac46b8074eb0df5801be8f351a63c8fa813d3766d862fd`  

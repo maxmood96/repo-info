@@ -128,6 +128,7 @@ CMD ["catalina.sh" "run"]
 		Size: 13.6 MB (13611418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:563d4cd726ce11cdc88a1026309aedcf55ade4dedfee957d9535d751cadafff7`  
+		Last Modified: Tue, 10 Dec 2024 02:09:28 GMT  
 		Size: 229.2 KB (229249 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -294,6 +295,7 @@ $ docker pull tomcat@sha256:a041e01ca25ebc0369b5c80c90a8ec691aab06da57f72035e197
 
 -	Layers:
 	-	`sha256:41fbb2bac431fb4dca3492021e2f2e6528e3a818ce348a2b621bb11b7bd19f49`  
+		Last Modified: Tue, 10 Dec 2024 05:10:37 GMT  
 		Size: 3.8 MB (3774872 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:826d431614db8944937e82c4e01dbf6051a055d13c9395e7a94a299d3f582f27`  
@@ -408,6 +410,7 @@ CMD ["catalina.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0d81c3b8aff249b0d4fa05e017dc3da1106dab7ee27f6e961ade05dfb49f3d26`  
+		Last Modified: Tue, 10 Dec 2024 02:45:17 GMT  
 		Size: 13.6 MB (13612529 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:23a49fa0ed9e4dd9b59d8f189ac41abb7ab6448d9ca4e44a8a4ef097df0e35db`  
@@ -554,6 +557,7 @@ CMD ["catalina.sh" "run"]
 		Size: 13.6 MB (13626915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e3b956961b4fa6ae9802db9077a41a6289fb288d3b9c9199219ac02670899fc5`  
+		Last Modified: Tue, 10 Dec 2024 02:19:09 GMT  
 		Size: 258.8 KB (258763 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -676,6 +680,7 @@ CMD ["catalina.sh" "run"]
 		Size: 43.9 MB (43943407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3f26b56544cb69df62eeb7f99607b83222cc0287008fbeca07554cb171de6100`  
+		Last Modified: Thu, 24 Oct 2024 17:32:48 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb36841c35a2b10c356fdb612c0af05dd3474471d0535c2747539deef4c45426`  
