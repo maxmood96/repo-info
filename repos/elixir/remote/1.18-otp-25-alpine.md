@@ -121,7 +121,6 @@ CMD ["iex"]
 
 -	Layers:
 	-	`sha256:2723bbe95689a46bd4cbe83e27fb42475660f41b02c96d21411fa76d803e8553`  
-		Last Modified: Mon, 09 Sep 2024 07:03:59 GMT  
 		Size: 3.1 MB (3095487 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:032252876ed94b98f59290a62438307b857fc27734d127194a38520451486e7f`  
@@ -192,6 +191,7 @@ CMD ["iex"]
 
 -	Layers:
 	-	`sha256:9986a736f7d3d24bb01b0a560fa0f19c4b57e56c646e1f998941529d28710e6b`  
+		Last Modified: Mon, 09 Sep 2024 07:03:59 GMT  
 		Size: 4.1 MB (4087726 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:daf43345b637ddddc852bcfe60fac8645869df85ad3b9023d78f6eee34379d80`  
@@ -262,7 +262,6 @@ CMD ["iex"]
 
 -	Layers:
 	-	`sha256:9d36213c2c70043b8757c7d7ef3b21782d1ad5b2dd6d50df305e14054d6a1cb7`  
-		Last Modified: Mon, 09 Sep 2024 07:03:56 GMT  
 		Size: 3.5 MB (3469219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2c86ee70554f414cf06f206175aaecbdb62c25c1d4a3e06530c64ed2c08b4969`  
@@ -294,5 +293,6 @@ $ docker pull elixir@sha256:d366bf2973e48f120755fa8abb27b7e85b110a785478dd51d44d
 		Size: 274.1 KB (274077 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e76eaadaa26b290167bec51ab0e3b62225e980704e78bd9f8d166102a21f5471`  
+		Last Modified: Thu, 02 Jan 2025 19:30:18 GMT  
 		Size: 9.5 KB (9502 bytes)  
 		MIME: application/vnd.in-toto+json
