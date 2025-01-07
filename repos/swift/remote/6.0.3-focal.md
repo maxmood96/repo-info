@@ -100,6 +100,7 @@ $ docker pull swift@sha256:72e6e67a2d2e40a281fe53ac7980b42d5470f94e68d462acad4be
 		Size: 7.7 MB (7698953 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5ffe222076c88ea8c69ccdbaf5fc40684ebf0a21f9c8a7f52da09687810fd2ed`  
+		Last Modified: Thu, 12 Dec 2024 22:37:11 GMT  
 		Size: 15.9 KB (15865 bytes)  
 		MIME: application/vnd.in-toto+json
 

@@ -151,6 +151,7 @@ RUN set -e;     ARCH_NAME="$(dpkg --print-architecture)";     url=;     case "${
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3513b7a33c60a0722796080cc5152d172b88fbbee311c4f1105726e3f1856fa3`  
+		Last Modified: Fri, 13 Dec 2024 00:00:48 GMT  
 		Size: 20.0 MB (20028811 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d48e4ca9bf67281ab152b11f1b65ec6c8330d8a6acb2b4aae95be3672782fef4`  
