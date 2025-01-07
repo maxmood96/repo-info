@@ -143,7 +143,6 @@ CMD ["telegraf"]
 		Size: 2.5 MB (2530641 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f8b8407cde6b289ef88c65d4c870f030de85057927bf7f73ccf2183e846830ea`  
-		Last Modified: Tue, 10 Dec 2024 02:39:24 GMT  
 		Size: 65.7 MB (65736032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a988d5dfd388833596c99e986e35557c873170cd19d2815675410dd36e887136`  
