@@ -56,11 +56,9 @@ CMD ["pypy3"]
 
 -	Layers:
 	-	`sha256:5d6e107a26c2ffb6e234f04132358dea70a691a64c1152f984d2f2ba0e218c58`  
-		Last Modified: Tue, 24 Dec 2024 21:32:13 GMT  
 		Size: 53.7 MB (53738957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2377065f3b700cf1b5e391d26c572c8b91892dd44acd75deebdab5e403b23175`  
-		Last Modified: Tue, 24 Dec 2024 22:15:26 GMT  
 		Size: 15.6 MB (15558293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5ee26b7a209f9a26720207792b237af3e19c0efeed8695e1e630fcd0feef9230`  
@@ -151,6 +149,7 @@ CMD ["pypy3"]
 
 -	Layers:
 	-	`sha256:447d428f9ffe60c6c8cc59e00901cd865a36737372ba05710598d7eaf0a1144d`  
+		Last Modified: Tue, 24 Dec 2024 21:34:37 GMT  
 		Size: 52.2 MB (52245698 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eceb2e49ad0ea75b24fca7d94b98a8202f70828ce20fd23846a542d8dca2667d`  
@@ -193,6 +192,7 @@ $ docker pull pypy@sha256:eeae8de26d1dec10d009fd172f91108039912b1fd55e7c42652ef5
 
 -	Layers:
 	-	`sha256:c2ac843fa3ac3a2c29baba8abad7b27ec65ae20bbc1c99fa82d1e587e570cd38`  
+		Last Modified: Wed, 25 Dec 2024 16:42:01 GMT  
 		Size: 15.4 MB (15403581 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3cea1ef6bf93549b1c9af1ce260d4433791667cb8ab432377efaa547a33b20bc`  
@@ -247,6 +247,7 @@ CMD ["pypy3"]
 		Size: 54.7 MB (54676016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:30483a4cb9e6228b018657587065a3e6487de3276661a2330332744722b7a439`  
+		Last Modified: Tue, 24 Dec 2024 22:14:51 GMT  
 		Size: 16.1 MB (16061993 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6a970a4937f3da89cf59e0bd2ab38633517b173866fbf02a490f384820768c5d`  
@@ -262,7 +263,6 @@ CMD ["pypy3"]
 		Size: 3.1 MB (3120227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:38e1fbdfe8ca1c0a46431d72ecbb32476e3915e9e36dce9998c508c6f0aa26f7`  
-		Last Modified: Wed, 25 Dec 2024 01:16:21 GMT  
 		Size: 26.2 MB (26222350 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:67f0aaf429a31757dce85cd9580f780bb266f978aaee77c8d0f92b4faf843ec7`  

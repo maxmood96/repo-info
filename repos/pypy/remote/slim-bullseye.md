@@ -212,11 +212,9 @@ CMD ["pypy3"]
 		Size: 874.7 KB (874706 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5466c3d4f2eacef0b8a70b0b3d8776ef87e0786d3b4a07ed505f71494b5367af`  
-		Last Modified: Tue, 24 Dec 2024 22:28:48 GMT  
 		Size: 26.9 MB (26862135 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b9edb961d4139c14183245254a7dc58e387eb14e79674e5c284ad8f345998a8`  
-		Last Modified: Tue, 24 Dec 2024 22:28:48 GMT  
 		Size: 3.3 MB (3306004 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

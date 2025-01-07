@@ -204,7 +204,6 @@ CMD ["pypy3"]
 
 -	Layers:
 	-	`sha256:fba9c0797a7b5bba079e0fd9d815a8878aea58430ea12c84047010f98fbe34d7`  
-		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
 		Size: 29.2 MB (29205387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54da50edab8e1ae217fbbfdf92110368f2923d0a23ed8232c88fc831a2f70344`  
@@ -236,6 +235,7 @@ $ docker pull pypy@sha256:3f390c810af77b64f74410428b1c15dd464a4e5c059699fb73fc34
 
 -	Layers:
 	-	`sha256:9125c73c092e2a8d8ecc4e5ca8e6222496a6e1abca65833d38085978e4568c6d`  
+		Last Modified: Tue, 24 Dec 2024 22:28:42 GMT  
 		Size: 2.4 MB (2394411 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6508fd5890a201df419e0756a5c80ab8ed9fc686a6bdb4b31918829050a8f3aa`  
