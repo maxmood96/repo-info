@@ -293,11 +293,9 @@ $ docker pull tomcat@sha256:49260fb48646c31b2f50100111f264ada7eed34fb665c9f3d444
 
 -	Layers:
 	-	`sha256:8fd561020bdfa7a82937fd216fb345f3d8074bc9605530bdacde2ba4b8f1fc92`  
-		Last Modified: Tue, 10 Dec 2024 05:16:20 GMT  
 		Size: 3.2 MB (3216174 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:92366396b38460de67b48b578b6199ec1b93d3b6f19ccb8a205bcf6f6de1f84f`  
-		Last Modified: Tue, 10 Dec 2024 05:16:19 GMT  
 		Size: 23.9 KB (23905 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -523,7 +521,6 @@ CMD ["catalina.sh" "run"]
 
 -	Layers:
 	-	`sha256:4e112885c8061d52bcd0f8d99851b65be887b95c74de235a16946b3562526bbb`  
-		Last Modified: Tue, 19 Nov 2024 17:38:45 GMT  
 		Size: 34.4 MB (34388820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eb08691d29d174440113fb3d94aec487ff706b850acfce25b3870b67886fdc90`  
@@ -531,7 +528,6 @@ CMD ["catalina.sh" "run"]
 		Size: 18.8 MB (18845906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ebba8dc80d20e19ad4bae5a7894e994b0c56701acce23665b6d6c0f245eebaf1`  
-		Last Modified: Tue, 03 Dec 2024 04:45:39 GMT  
 		Size: 41.3 MB (41258824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bd594dd7ebcd31adf2e90eeecdfd243de8d05290429607d4e0534887d2034cae`  
@@ -551,7 +547,6 @@ CMD ["catalina.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ec9d8ce3bd78993695cf99502642ff178c0189ec27f548b5aad927781227185`  
-		Last Modified: Tue, 10 Dec 2024 02:27:18 GMT  
 		Size: 13.5 MB (13452460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0d43efd071cc6fbab5afa68e3f87ccf99b92f356091332b3ef5a684ddb4e9d88`  
@@ -579,7 +574,6 @@ $ docker pull tomcat@sha256:36fd6de42b54d83ec957d506a8b73d55356ae42a77c9d83902b6
 
 -	Layers:
 	-	`sha256:c005677cf906532538bf67b82fb65824e45f77dd98a6e32c1820f459484c72b3`  
-		Last Modified: Tue, 10 Dec 2024 02:27:17 GMT  
 		Size: 3.2 MB (3215069 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d8f0218998ac71df7058a0c4cb12f0c25653c565de1daaf5843ad65a086e8fc0`  
