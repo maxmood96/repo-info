@@ -56,19 +56,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.9.17
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.17.dsc' apt_2.9.17.dsc 3003 SHA256:e982849d9e091ba1dc331b6833a53b7b7f7e0b412e213936a012da501a29c0bf
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.17.tar.xz' apt_2.9.17.tar.xz 2390108 SHA256:30a0f5bb66e50e66355eaa810097192f977dfeb5c2aa57b9c4f59870be7b0d04
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.9.17/
 
-- https://sources.debian.net/src/apt/2.9.17/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.9.17/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.9.17/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-2`
 
@@ -164,19 +158,13 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.6.5
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.5.dsc' base-passwd_3.6.5.dsc 1762 SHA256:18802a37a5b32e5271e27512f3017c9aaf91497e96517fa5c586a50b03c71f6c
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.5.tar.xz' base-passwd_3.6.5.tar.xz 60064 SHA256:bd30ab67b1f8029d3e70d3419e5033fb4595ab91c91307c3b7c00978e8d111b2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-passwd/3.6.5/
 
-- https://sources.debian.net/src/base-passwd/3.6.5/ (for browsing the source)
-- https://sources.debian.net/src/base-passwd/3.6.5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-passwd/3.6.5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bash=5.2.37-1`
 
