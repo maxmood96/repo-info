@@ -239,6 +239,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Size: 6.8 MB (6766991 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c91bc86156b66d0dd2aacf37a6ee8e586549e934a436aad25d5f9e7e0ff2f6f0`  
+		Last Modified: Wed, 25 Dec 2024 19:17:36 GMT  
 		Size: 1.3 KB (1266 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fe65a8d8b5a3a6af5113ec0415e10b41d9eed50baab830cb75460e56d4c1fff8`  
