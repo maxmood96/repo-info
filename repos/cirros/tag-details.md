@@ -77,7 +77,6 @@ $ docker pull cirros@sha256:d0884c82a60f26d02b36413ec5b80643383196156b08f31d42db
 
 -	Layers:
 	-	`sha256:9cff5790e12d94517b5aa89f689a070404995d1faf54e7503a547720a585c8fe`  
-		Last Modified: Thu, 26 Sep 2024 23:57:56 GMT  
 		Size: 7.5 KB (7503 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -110,7 +109,6 @@ CMD ["/sbin/init"]
 		Size: 6.9 MB (6916072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dbc8558494c81739dbd5516e1c317c4cd9ebd08fa8a23a06dd7ae846a9598505`  
-		Last Modified: Fri, 27 Sep 2024 10:21:32 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8d39b9020a5a1701d7002d70869f306d79a54f817f21150ea75a8884afddfa0a`  
@@ -322,7 +320,6 @@ $ docker pull cirros@sha256:d0884c82a60f26d02b36413ec5b80643383196156b08f31d42db
 
 -	Layers:
 	-	`sha256:9cff5790e12d94517b5aa89f689a070404995d1faf54e7503a547720a585c8fe`  
-		Last Modified: Thu, 26 Sep 2024 23:57:56 GMT  
 		Size: 7.5 KB (7503 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -355,7 +352,6 @@ CMD ["/sbin/init"]
 		Size: 6.9 MB (6916072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dbc8558494c81739dbd5516e1c317c4cd9ebd08fa8a23a06dd7ae846a9598505`  
-		Last Modified: Fri, 27 Sep 2024 10:21:32 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8d39b9020a5a1701d7002d70869f306d79a54f817f21150ea75a8884afddfa0a`  
@@ -567,7 +563,6 @@ $ docker pull cirros@sha256:d0884c82a60f26d02b36413ec5b80643383196156b08f31d42db
 
 -	Layers:
 	-	`sha256:9cff5790e12d94517b5aa89f689a070404995d1faf54e7503a547720a585c8fe`  
-		Last Modified: Thu, 26 Sep 2024 23:57:56 GMT  
 		Size: 7.5 KB (7503 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -600,7 +595,6 @@ CMD ["/sbin/init"]
 		Size: 6.9 MB (6916072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dbc8558494c81739dbd5516e1c317c4cd9ebd08fa8a23a06dd7ae846a9598505`  
-		Last Modified: Fri, 27 Sep 2024 10:21:32 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8d39b9020a5a1701d7002d70869f306d79a54f817f21150ea75a8884afddfa0a`  
@@ -812,7 +806,6 @@ $ docker pull cirros@sha256:d0884c82a60f26d02b36413ec5b80643383196156b08f31d42db
 
 -	Layers:
 	-	`sha256:9cff5790e12d94517b5aa89f689a070404995d1faf54e7503a547720a585c8fe`  
-		Last Modified: Thu, 26 Sep 2024 23:57:56 GMT  
 		Size: 7.5 KB (7503 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -845,7 +838,6 @@ CMD ["/sbin/init"]
 		Size: 6.9 MB (6916072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dbc8558494c81739dbd5516e1c317c4cd9ebd08fa8a23a06dd7ae846a9598505`  
-		Last Modified: Fri, 27 Sep 2024 10:21:32 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8d39b9020a5a1701d7002d70869f306d79a54f817f21150ea75a8884afddfa0a`  
