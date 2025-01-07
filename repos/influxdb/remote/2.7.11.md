@@ -255,6 +255,5 @@ $ docker pull influxdb@sha256:90b1c95d6993032369f780eced4a90848472245c3535c9d85b
 		Size: 2.8 MB (2847855 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8beb0a5dc5245ffc4a7f1f2db4c923e55fb59fd51625784376f017202f0dae2f`  
-		Last Modified: Wed, 25 Dec 2024 02:13:21 GMT  
 		Size: 33.9 KB (33903 bytes)  
 		MIME: application/vnd.in-toto+json

@@ -75,7 +75,6 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 		Size: 3.6 MB (3613999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a2b373194a57402c5b4bba439c0debcc21e50640ca97e8399e26f0876569f14`  
-		Last Modified: Tue, 07 Jan 2025 03:32:57 GMT  
 		Size: 280.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:061a33113abb88563b3ca4a1cbbe9414e262161926b31684de0c0152272983bd`  
@@ -83,7 +82,6 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 		Size: 9.6 MB (9642320 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6a1ffa749e13fdb6fc29c353eb66441610718728517e29f8289129d083eae3b5`  
-		Last Modified: Tue, 07 Jan 2025 03:32:58 GMT  
 		Size: 5.8 MB (5820938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:636417211ffa93e8d533b3f63da642d55948a9b18b80779626fc03f980552398`  
@@ -127,7 +125,6 @@ $ docker pull influxdb@sha256:c489832e97fed6a8c174c6fcee31df53712c9d88f30be71032
 
 -	Layers:
 	-	`sha256:2116dae99c98c083cc71c4f50984d41491a780e7dca92621741b895dc0dcabf1`  
-		Last Modified: Tue, 07 Jan 2025 03:32:58 GMT  
 		Size: 911.3 KB (911326 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0fa68b5e9ec2aae472e56e53a0940569d6aff634c0cb972a3aa20e969c2ec067`  
@@ -199,7 +196,6 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 		Size: 4.1 MB (4086686 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5ce83109ec04193e8d1d95cc284000b3744402e6eb3a74774afb3a1dfca37714`  
-		Last Modified: Tue, 07 Jan 2025 08:37:56 GMT  
 		Size: 280.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d72ae5757088c40ba9252bc398341fd4347da11535780149b3b39104b7d2d2c4`  
