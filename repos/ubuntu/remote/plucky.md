@@ -103,7 +103,6 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:30edb5d57d6dcf9a2d6c372642827a2271cc4b4b697e28bf865c61a4cbde43dc`  
-		Last Modified: Fri, 13 Dec 2024 04:29:57 GMT  
 		Size: 27.7 MB (27738902 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
