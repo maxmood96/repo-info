@@ -126,6 +126,7 @@ USER rootless
 		Size: 19.3 MB (19295661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:70862de023324d95f6e89f34a8ff628b9a65573855f3647ae4ef5c8fba94c39c`  
+		Last Modified: Tue, 24 Dec 2024 21:32:33 GMT  
 		Size: 537.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:acb562c615e5c2b2f97d57b32ac270747bc59790846ad0b969f242ae2542552d`  
@@ -137,6 +138,7 @@ USER rootless
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5579a4fc862939406728f9250f0c43029808e31aca72e70d480ac4fc03dbda3f`  
+		Last Modified: Tue, 24 Dec 2024 22:14:03 GMT  
 		Size: 6.7 MB (6733495 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:656c2ead8e91873395012236ff2ba3c4ff07c2457a2cd99c3f15716ac740613c`  
@@ -168,10 +170,10 @@ USER rootless
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9c0fd53e20d35ad7304b5500cda40c58a677aae8a389177d9fead4fe77968e8`  
-		Last Modified: Tue, 24 Dec 2024 23:15:44 GMT  
 		Size: 1.1 KB (1051 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:49e8104b46553c880ec1ce40bf672913d8c05a3dd940c3885ffee7529a5ce625`  
+		Last Modified: Tue, 24 Dec 2024 23:15:44 GMT  
 		Size: 21.3 MB (21303863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cab0d3d6d47290079d3dc665f5f41e7b9022264f0343d8a3fca456c47eadd7e9`  
@@ -346,6 +348,7 @@ USER rootless
 		Size: 1.5 KB (1513 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:db0b1a5e0f5d5a5940df19deb412fb06a0ba912718248df36af0af04038a36d2`  
+		Last Modified: Tue, 24 Dec 2024 22:20:19 GMT  
 		Size: 3.3 KB (3259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:91e675049dfb176c7df62b7321e44b57adf569ec2b051bfabd653bd117ff3663`  
