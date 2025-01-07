@@ -68,6 +68,7 @@ $ docker pull buildpack-deps@sha256:78e10cbf9a671667bf7b3d8335e47d06fd1c1ec245b7
 
 -	Layers:
 	-	`sha256:58854f5729553ed11b4b4acdcb9e1d4974197f6848542b0ec0095851f527aae0`  
+		Last Modified: Tue, 24 Dec 2024 22:15:27 GMT  
 		Size: 4.4 MB (4359309 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a17346ad6f402d6b78f1873712cfbd4e4f3c11982f6d58aadb843ee325276480`  
@@ -100,7 +101,6 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 		Size: 46.0 MB (46024242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a0349a30657cc8a48dadcd47420d47a1614d83b85dca5ce8b1e26ac1c4a5a247`  
-		Last Modified: Wed, 25 Dec 2024 01:30:39 GMT  
 		Size: 22.5 MB (22540466 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -228,6 +228,7 @@ $ docker pull buildpack-deps@sha256:2b238c9cd2f14226485469825b8a3cfa1731f7453f38
 		Size: 4.4 MB (4359582 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5468e18d32057a0d0df379bdfe3d55df236e0d986efbfa384c639f747c5fc091`  
+		Last Modified: Wed, 25 Dec 2024 01:49:18 GMT  
 		Size: 7.3 KB (7256 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -276,10 +277,10 @@ $ docker pull buildpack-deps@sha256:2ca5ddc166b3a9080f2d317f24aed8b3f9e6d270e829
 
 -	Layers:
 	-	`sha256:c1177544b515ad946b5993d76f99f87518868cb930ec617deb4c7f333ac01bbd`  
+		Last Modified: Tue, 24 Dec 2024 22:14:43 GMT  
 		Size: 4.4 MB (4356366 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:081c0e46ba5dd437f4f05afde3518463673e1fd42af7910cfce86ed4f4afdcbb`  
-		Last Modified: Tue, 24 Dec 2024 22:14:43 GMT  
 		Size: 7.1 KB (7136 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -308,6 +309,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 		Size: 48.8 MB (48771644 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0cb6e11ed066e836dca02164f5f47ac1b39b5177eecb98796a4c515c972272aa`  
+		Last Modified: Wed, 25 Dec 2024 11:45:56 GMT  
 		Size: 23.5 MB (23458082 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -352,7 +354,6 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 
 -	Layers:
 	-	`sha256:308f39459045dc7bdf1e0f0796ba6cc67e14899ab5c36afc6c0692da37a1f331`  
-		Last Modified: Wed, 25 Dec 2024 09:07:26 GMT  
 		Size: 52.3 MB (52328075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5a609591090f1b2fe90289666414a8be62bd40b89ccbd53d2567ba14f37f52a`  

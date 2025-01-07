@@ -103,6 +103,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 		Size: 48.8 MB (48771903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ef48cdc7993c776d6ccec56389e66a4c68ee1ceec1afa89a25ae9e60ac171c2`  
+		Last Modified: Wed, 25 Dec 2024 01:31:21 GMT  
 		Size: 20.3 MB (20307127 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -178,6 +179,7 @@ $ docker pull buildpack-deps@sha256:e5b3c6617ddc7dfa5dea4d3466e8399618b939191fff
 		Size: 4.0 MB (4035068 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:226f2c9463b01100e1886f2b39cd87877b091b38888e03a35733eb5434dca693`  
+		Last Modified: Wed, 25 Dec 2024 03:45:02 GMT  
 		Size: 6.9 KB (6864 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -259,6 +261,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 		Size: 53.0 MB (53038809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:794215da1008afee770eb56416f34dd01e9c2b54727b8c520b5cbb72c9a0c70e`  
+		Last Modified: Tue, 24 Dec 2024 22:14:45 GMT  
 		Size: 22.5 MB (22515087 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -311,7 +314,6 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 		Size: 51.8 MB (51771333 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8315cddf1f38d3ec912dd995fc72b7c70105918274b7bd71b5f66a9e8789a52c`  
-		Last Modified: Wed, 25 Dec 2024 11:47:53 GMT  
 		Size: 21.7 MB (21740832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -380,6 +382,7 @@ $ docker pull buildpack-deps@sha256:c854f9dbc0b75ad34548c282a02dd53497d2ee2d2162
 
 -	Layers:
 	-	`sha256:2945471a977bc79fc65ab1b0291642d646fea7a53ebf73f9ba48a602721089d6`  
+		Last Modified: Wed, 25 Dec 2024 06:15:10 GMT  
 		Size: 4.0 MB (4037309 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:633e76ccbc3b1c75a9365f242d137f91d83d6bdd76c2e2ae6d907c7605e9f04d`  
@@ -489,5 +492,6 @@ $ docker pull buildpack-deps@sha256:f8e5119c4285a6bbd487c652207a52aed0fd5cdd0a17
 		Size: 4.0 MB (4034969 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ddabea051d8174cc32d4fb86261fd2183aa95a5398db760f3cca927ae41a970a`  
+		Last Modified: Wed, 25 Dec 2024 00:17:25 GMT  
 		Size: 6.8 KB (6804 bytes)  
 		MIME: application/vnd.in-toto+json
