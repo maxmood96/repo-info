@@ -76,7 +76,6 @@ CMD ["kapacitord"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8284ddf57c03d97884a998219f0fbd84edab303351cdba3ac1526a116e907210`  
@@ -84,6 +83,7 @@ CMD ["kapacitord"]
 		Size: 7.1 MB (7102850 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d31374502893792a31db584800ad37a8a541b54d0e30c206096d825a30574a30`  
+		Last Modified: Sat, 19 Oct 2024 02:54:02 GMT  
 		Size: 39.3 MB (39341279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:315cc682eb42b199026ce3e64d0418ea12b812ac21133fda9e723fae616b9e42`  
@@ -91,7 +91,6 @@ CMD ["kapacitord"]
 		Size: 65.7 MB (65672554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f8f6f3acd66b85be15c6add078c145ee01234c38b30d3c701eb08f271c01dc66`  
-		Last Modified: Sat, 19 Oct 2024 02:54:01 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:098bccfec1724c823ff4c7a2414148d001b1cecad4d61ab440bf226d2bdbae22`  
@@ -115,6 +114,7 @@ $ docker pull kapacitor@sha256:8850132cbde3a544a05ac1f8b59e85045c8ba00f93e9affd4
 
 -	Layers:
 	-	`sha256:a1be9c3cf079bde45e4caea455d8295b89283842708e0e9d3eb0b4749cd31b8d`  
+		Last Modified: Sat, 19 Oct 2024 02:54:01 GMT  
 		Size: 3.6 MB (3550252 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9466d241ff8c3adfa7213179989e03c26b0ba00e6099f59ed59740d3de8447ea`  
@@ -172,14 +172,13 @@ CMD ["kapacitord"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ee2b4e5eab18cf336bf82b89529f3587544f710c5e1a0aa67e5ed1fdec85146`  
-		Last Modified: Sat, 19 Oct 2024 05:22:20 GMT  
 		Size: 7.0 MB (7049559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2f108269d10135dbd4b3363075d4ac7f8a1e25a29362481a579a58a391634221`  
-		Last Modified: Sat, 19 Oct 2024 08:36:38 GMT  
 		Size: 36.4 MB (36372409 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5e44c854c5d337d53cbc3c7f42f791f1233430183f0aafa4c9f33c0c6f475c4`  
@@ -211,6 +210,7 @@ $ docker pull kapacitor@sha256:15f20c366dc9dae85363efdae2a95b9da54ee56f822bdf5e3
 
 -	Layers:
 	-	`sha256:45935f1cd8c9de13e29256bc3adf3990af6b2db7db11800e22b5a4d5082db242`  
+		Last Modified: Sat, 19 Oct 2024 08:36:37 GMT  
 		Size: 3.6 MB (3550518 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:90ed25fda9974e52c249605b05c1ebcc632f7f525730c78989f5ad225672f34f`  
@@ -279,7 +279,6 @@ CMD ["kapacitord"]
 		Size: 280.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:23906e0559c74e075b796888c5ddd1672b67895e20310fc5360d06aad170975d`  
-		Last Modified: Tue, 12 Nov 2024 02:14:07 GMT  
 		Size: 290.9 KB (290895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:500f50d897b82d5464df0fc724eed3d5eb4e4ac5f1732c9f155ebb55350e516a`  
@@ -291,7 +290,6 @@ CMD ["kapacitord"]
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f4cec25e3e782fe3abc87e0d12fda70ac6170410b82063f4472cc8f81f5bd794`  
-		Last Modified: Tue, 12 Nov 2024 02:14:08 GMT  
 		Size: 230.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -382,7 +380,6 @@ CMD ["kapacitord"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8284ddf57c03d97884a998219f0fbd84edab303351cdba3ac1526a116e907210`  
@@ -390,6 +387,7 @@ CMD ["kapacitord"]
 		Size: 7.1 MB (7102850 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d31374502893792a31db584800ad37a8a541b54d0e30c206096d825a30574a30`  
+		Last Modified: Sat, 19 Oct 2024 02:54:02 GMT  
 		Size: 39.3 MB (39341279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:315cc682eb42b199026ce3e64d0418ea12b812ac21133fda9e723fae616b9e42`  
@@ -397,7 +395,6 @@ CMD ["kapacitord"]
 		Size: 65.7 MB (65672554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f8f6f3acd66b85be15c6add078c145ee01234c38b30d3c701eb08f271c01dc66`  
-		Last Modified: Sat, 19 Oct 2024 02:54:01 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:098bccfec1724c823ff4c7a2414148d001b1cecad4d61ab440bf226d2bdbae22`  
@@ -421,6 +418,7 @@ $ docker pull kapacitor@sha256:8850132cbde3a544a05ac1f8b59e85045c8ba00f93e9affd4
 
 -	Layers:
 	-	`sha256:a1be9c3cf079bde45e4caea455d8295b89283842708e0e9d3eb0b4749cd31b8d`  
+		Last Modified: Sat, 19 Oct 2024 02:54:01 GMT  
 		Size: 3.6 MB (3550252 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9466d241ff8c3adfa7213179989e03c26b0ba00e6099f59ed59740d3de8447ea`  
@@ -478,14 +476,13 @@ CMD ["kapacitord"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ee2b4e5eab18cf336bf82b89529f3587544f710c5e1a0aa67e5ed1fdec85146`  
-		Last Modified: Sat, 19 Oct 2024 05:22:20 GMT  
 		Size: 7.0 MB (7049559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2f108269d10135dbd4b3363075d4ac7f8a1e25a29362481a579a58a391634221`  
-		Last Modified: Sat, 19 Oct 2024 08:36:38 GMT  
 		Size: 36.4 MB (36372409 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5e44c854c5d337d53cbc3c7f42f791f1233430183f0aafa4c9f33c0c6f475c4`  
@@ -517,6 +514,7 @@ $ docker pull kapacitor@sha256:15f20c366dc9dae85363efdae2a95b9da54ee56f822bdf5e3
 
 -	Layers:
 	-	`sha256:45935f1cd8c9de13e29256bc3adf3990af6b2db7db11800e22b5a4d5082db242`  
+		Last Modified: Sat, 19 Oct 2024 08:36:37 GMT  
 		Size: 3.6 MB (3550518 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:90ed25fda9974e52c249605b05c1ebcc632f7f525730c78989f5ad225672f34f`  
@@ -585,7 +583,6 @@ CMD ["kapacitord"]
 		Size: 280.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:23906e0559c74e075b796888c5ddd1672b67895e20310fc5360d06aad170975d`  
-		Last Modified: Tue, 12 Nov 2024 02:14:07 GMT  
 		Size: 290.9 KB (290895 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:500f50d897b82d5464df0fc724eed3d5eb4e4ac5f1732c9f155ebb55350e516a`  
@@ -597,7 +594,6 @@ CMD ["kapacitord"]
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f4cec25e3e782fe3abc87e0d12fda70ac6170410b82063f4472cc8f81f5bd794`  
-		Last Modified: Tue, 12 Nov 2024 02:14:08 GMT  
 		Size: 230.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -688,7 +684,6 @@ CMD ["kapacitord"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8284ddf57c03d97884a998219f0fbd84edab303351cdba3ac1526a116e907210`  
@@ -786,10 +781,10 @@ CMD ["kapacitord"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ee2b4e5eab18cf336bf82b89529f3587544f710c5e1a0aa67e5ed1fdec85146`  
-		Last Modified: Sat, 19 Oct 2024 05:22:20 GMT  
 		Size: 7.0 MB (7049559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e56450686787eef42d2d8303b7ad5e724b5f247ffd66c187984bc8427445cb31`  
@@ -801,6 +796,7 @@ CMD ["kapacitord"]
 		Size: 67.8 MB (67822024 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34771b86c1d3ad4939ac7fd39a5cc7abd79efb4d9175389fcb6ac5cff0a846d9`  
+		Last Modified: Mon, 28 Oct 2024 18:00:31 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f9cca3ffb481c2e26b551a92a3bf8d7fc5eaeea50d65f7d122a72f3f802c62b6`  
@@ -905,7 +901,6 @@ CMD ["kapacitord"]
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c8d341b2a713279282b63733cc3f66bea88f5d3f1a02213be85948833f8061d`  
-		Last Modified: Tue, 12 Nov 2024 02:14:05 GMT  
 		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -996,7 +991,6 @@ CMD ["kapacitord"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8284ddf57c03d97884a998219f0fbd84edab303351cdba3ac1526a116e907210`  
@@ -1094,10 +1088,10 @@ CMD ["kapacitord"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ee2b4e5eab18cf336bf82b89529f3587544f710c5e1a0aa67e5ed1fdec85146`  
-		Last Modified: Sat, 19 Oct 2024 05:22:20 GMT  
 		Size: 7.0 MB (7049559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e56450686787eef42d2d8303b7ad5e724b5f247ffd66c187984bc8427445cb31`  
@@ -1109,6 +1103,7 @@ CMD ["kapacitord"]
 		Size: 67.8 MB (67822024 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34771b86c1d3ad4939ac7fd39a5cc7abd79efb4d9175389fcb6ac5cff0a846d9`  
+		Last Modified: Mon, 28 Oct 2024 18:00:31 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f9cca3ffb481c2e26b551a92a3bf8d7fc5eaeea50d65f7d122a72f3f802c62b6`  
@@ -1213,7 +1208,6 @@ CMD ["kapacitord"]
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c8d341b2a713279282b63733cc3f66bea88f5d3f1a02213be85948833f8061d`  
-		Last Modified: Tue, 12 Nov 2024 02:14:05 GMT  
 		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1314,7 +1308,6 @@ CMD ["kapacitord"]
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c8d341b2a713279282b63733cc3f66bea88f5d3f1a02213be85948833f8061d`  
-		Last Modified: Tue, 12 Nov 2024 02:14:05 GMT  
 		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1405,7 +1398,6 @@ CMD ["kapacitord"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8284ddf57c03d97884a998219f0fbd84edab303351cdba3ac1526a116e907210`  
@@ -1503,10 +1495,10 @@ CMD ["kapacitord"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ee2b4e5eab18cf336bf82b89529f3587544f710c5e1a0aa67e5ed1fdec85146`  
-		Last Modified: Sat, 19 Oct 2024 05:22:20 GMT  
 		Size: 7.0 MB (7049559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e56450686787eef42d2d8303b7ad5e724b5f247ffd66c187984bc8427445cb31`  
@@ -1518,6 +1510,7 @@ CMD ["kapacitord"]
 		Size: 67.8 MB (67822024 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34771b86c1d3ad4939ac7fd39a5cc7abd79efb4d9175389fcb6ac5cff0a846d9`  
+		Last Modified: Mon, 28 Oct 2024 18:00:31 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f9cca3ffb481c2e26b551a92a3bf8d7fc5eaeea50d65f7d122a72f3f802c62b6`  
