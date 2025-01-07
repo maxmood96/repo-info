@@ -54,6 +54,7 @@ CMD ["pypy3"]
 		Size: 30.3 MB (30252643 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3637558319e8836eb01cfa0842e11ddd12e89ee2325c2880fb71fc4b34219252`  
+		Last Modified: Tue, 24 Dec 2024 22:34:24 GMT  
 		Size: 862.6 KB (862576 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0621c4b3ffe973fec8f27d1b8e6f4e88e498c7285f24f21d22cffddc1d3380b6`  
@@ -130,7 +131,6 @@ CMD ["pypy3"]
 		Size: 28.7 MB (28744853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:32e488e0bc1bb153fdff89af0750cf02c99ca3e508604e20dfc654b3a70091c8`  
-		Last Modified: Wed, 25 Dec 2024 04:01:39 GMT  
 		Size: 849.8 KB (849753 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:79c15b906a8847e9f08c8a3f0c691f0fc0803900a46fc4172a8da5483557b735`  
@@ -158,9 +158,11 @@ $ docker pull pypy@sha256:d9fde4d31d99a575b5445db69f000d886563d88524db931cf2258f
 
 -	Layers:
 	-	`sha256:9e311276810eb0e555070493d46e0e26c82457b827a40c4b332b45d1cec5568a`  
+		Last Modified: Wed, 25 Dec 2024 04:01:39 GMT  
 		Size: 2.7 MB (2695759 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0245cebe56f3f6d2da37dc44e358942ac4f2180c3d77eea3a21667402e87cf25`  
+		Last Modified: Wed, 25 Dec 2024 04:01:38 GMT  
 		Size: 28.5 KB (28468 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -213,6 +215,7 @@ CMD ["pypy3"]
 		Size: 26.9 MB (26862135 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b9edb961d4139c14183245254a7dc58e387eb14e79674e5c284ad8f345998a8`  
+		Last Modified: Tue, 24 Dec 2024 22:28:48 GMT  
 		Size: 3.3 MB (3306004 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -232,7 +235,6 @@ $ docker pull pypy@sha256:3acb7b695dac61588e1f6fa7ca8f7b9bed8c98b0958e71ec75b92e
 
 -	Layers:
 	-	`sha256:7bd530df1e2fc45ade38cb3f9b3ba8b03b74619089f1eead659c9d05e2510f98`  
-		Last Modified: Tue, 24 Dec 2024 22:28:48 GMT  
 		Size: 2.7 MB (2692394 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0fb99ac5d97b43e650c81e7741429dd774092d2c9fdc0aa911f2ac7ba463bbd2`  
