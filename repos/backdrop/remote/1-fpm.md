@@ -117,6 +117,7 @@ CMD ["php-fpm"]
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e704d95498acda0a70e87e7333f45974b335c60780cf7da02b9aecb0fbe6128f`  
+		Last Modified: Tue, 24 Dec 2024 22:29:37 GMT  
 		Size: 27.3 MB (27330415 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ce8811626a016736918d3140800b090b4a8fe3e15927e57b68b46d8c1e979f59`  
@@ -148,6 +149,7 @@ CMD ["php-fpm"]
 		Size: 8.8 MB (8805172 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6a2145820f31f242e8497903e1249667594866a1e5e644ae9826fe0a67216edc`  
+		Last Modified: Tue, 24 Dec 2024 23:16:51 GMT  
 		Size: 950.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -313,6 +315,7 @@ CMD ["php-fpm"]
 		Size: 8.8 MB (8805178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6ec892150962167dba7d71d543f958a0bf40701a5ae58db1652d755762e0d24`  
+		Last Modified: Wed, 25 Dec 2024 08:11:11 GMT  
 		Size: 950.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -332,6 +335,7 @@ $ docker pull backdrop@sha256:4035652de5d2e9ad3339914bec259adca56a215957fd495760
 
 -	Layers:
 	-	`sha256:fb6c252dbe4ea833252dda54fc2112612673c417b50fcdf43a2d74689f991020`  
+		Last Modified: Wed, 25 Dec 2024 08:11:11 GMT  
 		Size: 6.5 MB (6458186 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e7fe47c998d7cda12ac60ab77a48c08ac91810247c1243eca5942377359731f6`  
