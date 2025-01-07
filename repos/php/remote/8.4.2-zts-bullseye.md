@@ -89,6 +89,7 @@ CMD ["php" "-a"]
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5c694472b6a0c67ea3d5faa6ceb8107488eb4673c2b84f1cf06d159699a03b50`  
+		Last Modified: Tue, 24 Dec 2024 22:24:01 GMT  
 		Size: 13.7 MB (13662582 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6e4a7cd5f7fd95dc8ce64b54e69a573cb6d52e0060057dc5a9b627df03ffcc7`  
@@ -96,7 +97,6 @@ CMD ["php" "-a"]
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c6a490c3ac1ef49a3b95629b56d467fce7479a60234ad1d35dc21b0d54570b9`  
-		Last Modified: Tue, 24 Dec 2024 22:24:02 GMT  
 		Size: 39.6 MB (39622036 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:20d55b0cbcecde00f010409511710ea0795f7a67220ba9b3672a46ed2a9cd929`  
@@ -104,6 +104,7 @@ CMD ["php" "-a"]
 		Size: 2.4 KB (2445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:283d7cb9612332ab26a2f1ddc9bcc28082c41e26f7d0571638d6fc5f7b93a0ee`  
+		Last Modified: Tue, 24 Dec 2024 22:24:02 GMT  
 		Size: 243.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -123,6 +124,7 @@ $ docker pull php@sha256:74db815917122b32bdeebdd480db32696c915bca8ed20b11c3a6121
 
 -	Layers:
 	-	`sha256:3a1deb25baeef6062d83975e0eece020fd07be231a4cff2fe8f24eb84b676c32`  
+		Last Modified: Tue, 24 Dec 2024 22:24:01 GMT  
 		Size: 6.4 MB (6383989 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2b4c817c3891f80e607dc7b7c1a9c26ff65e569b0ce0c84b247b9ca4a9312dd7`  
@@ -188,6 +190,7 @@ CMD ["php" "-a"]
 
 -	Layers:
 	-	`sha256:0d436ac8a1fac914a00940d8604851d3414adc2ed370af15a8a5e6b319671b5b`  
+		Last Modified: Tue, 24 Dec 2024 21:34:33 GMT  
 		Size: 25.5 MB (25533937 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb0989fbbfc5677cb7ba281af4449917eb6aa0771685fd9d9c06b43b50ece3bd`  
@@ -219,6 +222,7 @@ CMD ["php" "-a"]
 		Size: 2.4 KB (2448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c4943bfb1c27cf06af4d6cc5f74fbedc0cdc8639e1315cb0e9fd1d67f55bbf5f`  
+		Last Modified: Tue, 24 Dec 2024 23:12:42 GMT  
 		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -320,7 +324,6 @@ CMD ["php" "-a"]
 		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6c508a708f9dd1cf5f085d1e613f8e12808441a5b982324f147a4b3668480644`  
-		Last Modified: Tue, 24 Dec 2024 23:21:23 GMT  
 		Size: 13.7 MB (13661789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c9bb23e183e987bbe5d70fb82131202a147cd2a04972c5a0c32730f258952d1`  
@@ -328,7 +331,6 @@ CMD ["php" "-a"]
 		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e77ac3ae77668debacf94e20fe9bcde812f5017d54c68a2d267a39f6d4936147`  
-		Last Modified: Tue, 24 Dec 2024 23:30:40 GMT  
 		Size: 39.3 MB (39272975 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b1c745b7f94ff87287723399c5058a51451ce1b29a93375c0c1f9f965ec9bfb5`  
@@ -336,6 +338,7 @@ CMD ["php" "-a"]
 		Size: 2.4 KB (2447 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8439dd115cd8f1fa4d40a8be16fd507f086f6548b8ad8c5bcdc2364174c46f8d`  
+		Last Modified: Tue, 24 Dec 2024 23:30:39 GMT  
 		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -355,6 +358,7 @@ $ docker pull php@sha256:7338168cb544dba8bbfeebdc6c3d781b019b3af9fead1e26028981c
 
 -	Layers:
 	-	`sha256:162f3378f3701970778ec7a3710741d61786b6103e68233cb4d7d7cbdd27c8c9`  
+		Last Modified: Tue, 24 Dec 2024 23:30:39 GMT  
 		Size: 6.4 MB (6386758 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3a2178dfe813cac6739f0200bc55f92f8201c815c3423554690c0238340455fd`  
@@ -424,6 +428,7 @@ CMD ["php" "-a"]
 		Size: 31.2 MB (31178945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:83787d22f8d72528f3cccab7b38dcb6e7e3dabb926ec1d3006512f85c18f165d`  
+		Last Modified: Tue, 24 Dec 2024 22:22:42 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3c572e1e5be29b5ef98088d426b9f8542ac64961247ebf8371c2973c7527dda5`  
