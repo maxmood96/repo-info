@@ -83,6 +83,7 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 		Size: 5.8 MB (5820921 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:350078b5827c590786ffa202ff5e7d457f5ce17578e04d1c1e5a86907d8d2e51`  
+		Last Modified: Tue, 24 Dec 2024 22:27:27 GMT  
 		Size: 3.2 KB (3227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:620187628669b47cda0dd9123d6c9ec83be49f919e909674af1b656bd2a4281f`  
@@ -102,9 +103,11 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 		Size: 208.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b93f8466c77b915f1de61395ec259eb44b54354c2d53ee034db9f1215f5c420`  
+		Last Modified: Tue, 24 Dec 2024 22:27:28 GMT  
 		Size: 234.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9d47214fe47b1e82ff5c4c4725fd2842f0155566df5b4abdd087474edf165344`  
+		Last Modified: Tue, 24 Dec 2024 22:27:29 GMT  
 		Size: 6.3 KB (6288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -128,6 +131,7 @@ $ docker pull influxdb@sha256:af0aa27200123ebaae4036cbfa2c7ac252b56fa97dac7c2b75
 		Size: 2.8 MB (2848627 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8ef6de32486cd7c360225f7fab7cc8f77b10dbdc34b79a0efcbd4df782741fa5`  
+		Last Modified: Tue, 24 Dec 2024 22:27:27 GMT  
 		Size: 33.7 KB (33720 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -195,6 +199,7 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d74f53f4e2a360da5abfca2277671a38f9231b23bbf96fe58ded32e590ef860f`  
+		Last Modified: Wed, 25 Dec 2024 02:13:21 GMT  
 		Size: 9.4 MB (9394168 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:873e4e4c9210bed2334d3c40b9b66323a577a4c23ae188832bca29ae670e0a75`  
@@ -226,6 +231,7 @@ ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 		Size: 233.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:27705135a6a1dfdefecec1447d44ac97a81ed890397237d000e5a4e8257f0b76`  
+		Last Modified: Wed, 25 Dec 2024 02:13:23 GMT  
 		Size: 6.3 KB (6287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
