@@ -105,6 +105,7 @@ CMD ["mariadbd"]
 
 -	Layers:
 	-	`sha256:1e6b7297048ae70484705dda4e582fb8ad5778ea4c8ae464cf3e6a02ac439012`  
+		Last Modified: Wed, 18 Dec 2024 06:15:23 GMT  
 		Size: 39.4 MB (39432409 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dfba6f8d68c8d85bfdb636ed7dabd98674bf96557980202094ebbc61fb31770b`  
@@ -124,6 +125,7 @@ CMD ["mariadbd"]
 		Size: 315.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:05f544d52df1acef481511439d3731fb585a66453c82a4d897d86ee66f00134e`  
+		Last Modified: Thu, 19 Dec 2024 06:28:03 GMT  
 		Size: 106.3 MB (106297669 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:06139977f95011ef9cc0adaf58f0bd15ab8ce4b39e117e4830a193c4263ec781`  
@@ -155,6 +157,7 @@ $ docker pull mariadb@sha256:17b8ac1727e6f6b1656af29d4625e90b39ccc0201d80d23b3ba
 
 -	Layers:
 	-	`sha256:27d0451908465cc557ad4c7aa7e9c9725cec74c96fca1d087dd6adc1c7293cec`  
+		Last Modified: Thu, 19 Dec 2024 06:28:00 GMT  
 		Size: 4.0 MB (4025207 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5081b22c296d7c608a74940fbcd49a3e799ce5c2a65218e6a0e8b6b2f77aeee3`  
@@ -252,7 +255,6 @@ CMD ["mariadbd"]
 
 -	Layers:
 	-	`sha256:3415b32764d8c185fafcd0c946a41d5028c72a76a1c10bcd8690f139ff79eb40`  
-		Last Modified: Wed, 18 Dec 2024 06:15:28 GMT  
 		Size: 37.6 MB (37577418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dddd2646963cf55c51258516a47ad51722be951ad64cc336917b609bf4842b9b`  
@@ -260,7 +262,6 @@ CMD ["mariadbd"]
 		Size: 881.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:05b6033037830a49822327c9a17cb5d407e0eeaa9e46e326ff0e27aa08ed34b7`  
-		Last Modified: Thu, 19 Dec 2024 06:37:30 GMT  
 		Size: 913.8 KB (913801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0119184863f03e046868b9b5ee636889108c5d244a838586c9efe39c75486b44`  
@@ -272,6 +273,7 @@ CMD ["mariadbd"]
 		Size: 318.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ba2ef2ebbbdced24ceaf68fd94b9de7e2b90cebf4932413d543a8077b54a5a9`  
+		Last Modified: Thu, 19 Dec 2024 06:39:01 GMT  
 		Size: 104.6 MB (104608928 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2500b7ded8ffbc51dce6ae63fbc6131983bbee1a4dc7601238fd28dda1791bbc`  
@@ -306,7 +308,6 @@ $ docker pull mariadb@sha256:fb2ea67124602fa38a787ea30add0677e0993c998d9886a028d
 		Size: 4.0 MB (4025068 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8e61473d53a2d709e8fa66f067fd9c48e26bf19b1db460db7353a47e87ee4eb6`  
-		Last Modified: Thu, 19 Dec 2024 06:38:57 GMT  
 		Size: 30.3 KB (30298 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -400,6 +401,7 @@ CMD ["mariadbd"]
 
 -	Layers:
 	-	`sha256:08256d51c6c275f4c9f694d18b8f1c909073b012ba7c7d9b5ea9f948ab194c83`  
+		Last Modified: Wed, 18 Dec 2024 06:15:40 GMT  
 		Size: 43.8 MB (43794286 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0038cde2c190c05a15347362185472b37226b50c08cb6f0390e30e29ab19b91`  
@@ -423,7 +425,6 @@ CMD ["mariadbd"]
 		Size: 112.4 MB (112357760 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4694eb58a30f26d4b19d72ce9a66754b038c507fd04667b699fa653d8964d672`  
-		Last Modified: Thu, 19 Dec 2024 06:41:33 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9d46a0216a0d4ed9c75c144b571185ffdbe0cce89e77185b0221f8f7f8330385`  
@@ -549,7 +550,6 @@ CMD ["mariadbd"]
 
 -	Layers:
 	-	`sha256:09ca79ad6db051c7cb34adea156f17305f9fe366951ef8100fcdbf06dd0dd31c`  
-		Last Modified: Wed, 18 Dec 2024 06:15:33 GMT  
 		Size: 37.5 MB (37533376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c7d5e6977905585a3eee194536aae023c72e63b0a182101635f6b76e741a43a`  
