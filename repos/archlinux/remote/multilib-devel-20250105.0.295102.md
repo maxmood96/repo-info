@@ -78,6 +78,7 @@ $ docker pull archlinux@sha256:7f9ecef7e3853105e82c3de3d19ef23318211a3656ba9bdd4
 
 -	Layers:
 	-	`sha256:957597259501490e469c8418ee89c128a9621ed33c5fa52137a2321b4a9c442a`  
+		Last Modified: Tue, 07 Jan 2025 03:15:03 GMT  
 		Size: 12.2 MB (12164822 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8d12b515b47b52b249bb9e07785903d76faa1762d42281a49d36b1ce792e9870`  
