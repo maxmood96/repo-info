@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3ad5f129a0e66a8901289c78af6732d9412b29f9851db69ab585dca17dc5e524`
+- Image ID: `sha256:898e0445a904f91cd524b96a1cf10b21c9fc1d4c6e4c17c3903d871aae735dce`
 - Created: `2024-08-14T23:51:24Z`
-- Virtual Size: ~ 58.49 Mb  
+- Virtual Size: ~ 52.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -93,16 +93,16 @@ BSD-2-Clause AND custom
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.4-r0 description:
+apk-tools-2.14.4-r1 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.4-r0 webpage:
+apk-tools-2.14.4-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.4-r0 installed size:
+apk-tools-2.14.4-r1 installed size:
 296 KiB
 
-apk-tools-2.14.4-r0 license:
+apk-tools-2.14.4-r1 license:
 GPL-2.0-only
 
 ```
@@ -178,16 +178,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20240705-r0 description:
+ca-certificates-20241121-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20240705-r0 webpage:
+ca-certificates-20241121-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20240705-r0 installed size:
-712 KiB
+ca-certificates-20241121-r0 installed size:
+684 KiB
 
-ca-certificates-20240705-r0 license:
+ca-certificates-20241121-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -195,16 +195,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20240705-r0 description:
+ca-certificates-bundle-20241121-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20240705-r0 webpage:
+ca-certificates-bundle-20241121-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20240705-r0 installed size:
-236 KiB
+ca-certificates-bundle-20241121-r0 installed size:
+228 KiB
 
-ca-certificates-bundle-20240705-r0 license:
+ca-certificates-bundle-20241121-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -212,16 +212,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.11.0-r2 description:
+curl-8.11.1-r0 description:
 URL retrival utility and library
 
-curl-8.11.0-r2 webpage:
+curl-8.11.1-r0 webpage:
 https://curl.se/
 
-curl-8.11.0-r2 installed size:
+curl-8.11.1-r0 installed size:
 256 KiB
 
-curl-8.11.0-r2 license:
+curl-8.11.1-r0 license:
 curl
 
 ```
@@ -348,16 +348,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.11.0-r2 description:
+libcurl-8.11.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.11.0-r2 webpage:
+libcurl-8.11.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.11.0-r2 installed size:
-636 KiB
+libcurl-8.11.1-r0 installed size:
+640 KiB
 
-libcurl-8.11.0-r2 license:
+libcurl-8.11.1-r0 license:
 curl
 
 ```
@@ -569,16 +569,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r1 description:
+libncursesw-6.4_p20240420-r2 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r1 webpage:
+libncursesw-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r1 installed size:
+libncursesw-6.4_p20240420-r2 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r1 license:
+libncursesw-6.4_p20240420-r2 license:
 X11
 
 ```
@@ -926,16 +926,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r1 description:
+ncurses-terminfo-base-6.4_p20240420-r2 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r1 webpage:
+ncurses-terminfo-base-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r1 installed size:
+ncurses-terminfo-base-6.4_p20240420-r2 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r1 license:
+ncurses-terminfo-base-6.4_p20240420-r2 license:
 X11
 
 ```
