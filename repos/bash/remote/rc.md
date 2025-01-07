@@ -127,7 +127,6 @@ CMD ["bash"]
 
 -	Layers:
 	-	`sha256:f2148afcbc6cd4497527fc652f65872130774bf9baace0e1e6a85cad9da5f62e`  
-		Last Modified: Thu, 05 Dec 2024 22:17:29 GMT  
 		Size: 3.4 MB (3367182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:29266749a4719d6f043f6b52a919818f0b00efdf9b21d27231a342c0b1fddf07`  
@@ -224,6 +223,7 @@ $ docker pull bash@sha256:e353e1db1df874385358f591ebd0e760fe8cfae2a31d0754fb64f2
 		Size: 115.5 KB (115548 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:996f2af91855a1c41b7b33f19d78346119ba635b14a51a65daec05e188aaae99`  
+		Last Modified: Thu, 19 Dec 2024 21:32:59 GMT  
 		Size: 20.5 KB (20456 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -269,7 +269,6 @@ CMD ["bash"]
 		Size: 3.0 MB (3032986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3f5516e62491c18dabd8608b873d6a58ece3faef6f935e5069b218094d06b030`  
-		Last Modified: Thu, 19 Dec 2024 21:32:30 GMT  
 		Size: 332.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -293,7 +292,6 @@ $ docker pull bash@sha256:3f07de3b699ff32c5a579a0b5bdeb7b6efd5f37530ab9f435e3894
 		Size: 115.6 KB (115576 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7e4cb188aaf50cf432475b631888d7c46b77fb01ec7e570bd9baaa798da67929`  
-		Last Modified: Thu, 19 Dec 2024 21:32:30 GMT  
 		Size: 20.5 KB (20493 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -331,6 +329,7 @@ CMD ["bash"]
 
 -	Layers:
 	-	`sha256:8e5e849a30a22d7386238d38bd56dd5564638f4856bee415fad2bc5852c31989`  
+		Last Modified: Thu, 05 Dec 2024 22:17:33 GMT  
 		Size: 3.5 MB (3466081 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5d71560f3e0f56daed9f6d279d712969f77562b29d1564e3109059388c57e0b3`  
@@ -428,10 +427,10 @@ $ docker pull bash@sha256:9b4641706c764434796e19fe4d53fe371ca78f63a59063c7bb88c5
 
 -	Layers:
 	-	`sha256:3efdc8555a942d37567e919290015b5eb9959c1727b0fd52caf10f6680eb2f3d`  
-		Last Modified: Thu, 19 Dec 2024 21:33:27 GMT  
 		Size: 113.6 KB (113591 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a155927659471dae8a20ad2651e5b75753cfb18f82596a09a07d293114ad5ff3`  
+		Last Modified: Thu, 19 Dec 2024 21:33:27 GMT  
 		Size: 20.4 KB (20421 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -543,7 +542,6 @@ CMD ["bash"]
 		Size: 3.5 MB (3469520 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:59cd3f83f67d60a3041e5ff11769c09d51cb5a7539430b1dd5b2c57637947a53`  
-		Last Modified: Thu, 19 Dec 2024 21:33:37 GMT  
 		Size: 3.0 MB (3043574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eb26d79d8ce202b801389a474a7a329bce29b0869de8040d3f73e664305e8b5b`  
