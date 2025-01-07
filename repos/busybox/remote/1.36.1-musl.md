@@ -107,7 +107,6 @@ RUN BusyBox 1.36.1 (musl), Alpine 3.21.0
 
 -	Layers:
 	-	`sha256:54cc78f380b557fe24cd5ee9087e6fb120c391a40cb310c24efa52cff08b37e7`  
-		Last Modified: Wed, 11 Dec 2024 00:27:56 GMT  
 		Size: 844.6 KB (844566 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -236,7 +235,6 @@ RUN BusyBox 1.36.1 (musl), Alpine 3.21.0
 
 -	Layers:
 	-	`sha256:79e71bf9ae405eaf0977d9d89296e9676645524ba9c8abfb3c76fcf7c4af6648`  
-		Last Modified: Wed, 11 Dec 2024 00:27:59 GMT  
 		Size: 940.7 KB (940695 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
