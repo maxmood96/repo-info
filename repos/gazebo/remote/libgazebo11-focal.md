@@ -59,9 +59,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends     libgazebo11
 
 -	Layers:
 	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d55b27724939102ee35a9cdb48f34f5216667c81055955817b5cbbc269506bd1`  
+		Last Modified: Mon, 09 Dec 2024 19:29:15 GMT  
 		Size: 1.2 MB (1198847 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b80fb44c058ddabcd4051befdffe65128238e5ec5036d38d25a65d857c1c0f28`  
@@ -105,6 +107,7 @@ $ docker pull gazebo@sha256:5e456cfb80f91f5d184b9a016c089e378e268ff233ecfd93373c
 
 -	Layers:
 	-	`sha256:f13305cf555b2104abb7d8a0782217856fcd51f2b18e354ea105c5e5c373f6dd`  
+		Last Modified: Mon, 09 Dec 2024 20:39:35 GMT  
 		Size: 37.5 MB (37541712 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a781552e8708b7f1ff4f52aa3cefb93f05dc179ea71dc170313789b30fb98e9f`  
