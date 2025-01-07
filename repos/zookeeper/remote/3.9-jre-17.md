@@ -120,6 +120,7 @@ CMD ["zkServer.sh" "start-foreground"]
 		Size: 1.1 MB (1116360 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:45aa5d193ff3f355a3a7fc612a4f1ad93f8af770af51dfb95a8e6027dec5cddc`  
+		Last Modified: Mon, 28 Oct 2024 17:57:27 GMT  
 		Size: 20.7 MB (20738601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -526,6 +527,7 @@ CMD ["zkServer.sh" "start-foreground"]
 		Size: 43.9 MB (43943407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3f26b56544cb69df62eeb7f99607b83222cc0287008fbeca07554cb171de6100`  
+		Last Modified: Thu, 24 Oct 2024 17:32:48 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb36841c35a2b10c356fdb612c0af05dd3474471d0535c2747539deef4c45426`  
