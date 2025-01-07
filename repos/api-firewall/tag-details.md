@@ -8,7 +8,7 @@
 ## `api-firewall:0.8.6`
 
 ```console
-$ docker pull api-firewall@sha256:2ec63705362c74a1cef64bb859ea1bca6beba15b415a3764024ace6ad46a6dec
+$ docker pull api-firewall@sha256:d7a2d4e8d03d1a87eef6742843dcf2f088a55c4c82c56cfe6bd2db01cde6be62
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23,20 +23,20 @@ $ docker pull api-firewall@sha256:2ec63705362c74a1cef64bb859ea1bca6beba15b415a37
 ### `api-firewall:0.8.6` - linux; amd64
 
 ```console
-$ docker pull api-firewall@sha256:606bd91e8f8c3920a1cba91ba7dc3c4398774f2a9245912b591721ebf7c610df
+$ docker pull api-firewall@sha256:95b51573cc0b2d1aea11dcab1c3a9c7c373279a308d3717fa7f21d09193fa4cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14874040 bytes)**  
+-	Total Size: **14.9 MB (14865815 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef626ad0c0dedff3f60dbcd17db4a6608dab5982987c7feaf8dcbcd55f97434d`
+-	Image ID: `sha256:f2556ddbb833cdc0f41e1934fb6f4f9f7cd3c593bf9f92b2705d1d8356f198a3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["api-firewall"]`
 
 ```dockerfile
-# Thu, 05 Dec 2024 12:49:04 GMT
-ADD alpine-minirootfs-3.21.0-x86_64.tar.gz / # buildkit
-# Thu, 05 Dec 2024 12:49:04 GMT
+# Fri, 20 Dec 2024 14:14:14 GMT
+ADD alpine-minirootfs-3.21.1-x86_64.tar.gz / # buildkit
+# Fri, 20 Dec 2024 14:14:14 GMT
 CMD ["/bin/sh"]
 # Fri, 20 Dec 2024 14:14:14 GMT
 ENV APIFW_PATH=/opt/api-firewall
@@ -59,64 +59,63 @@ CMD ["api-firewall"]
 ```
 
 -	Layers:
-	-	`sha256:38a8310d387e375e0ec6fabe047a9149e8eb214073db9f461fee6251fd936a75`  
-		Last Modified: Thu, 05 Dec 2024 21:56:24 GMT  
-		Size: 3.6 MB (3644443 bytes)  
+	-	`sha256:245043d9199c263f869fc0558f43f7cb98bbc92acdd5def1b4f690adc0ac7807`  
+		Last Modified: Mon, 06 Jan 2025 21:44:42 GMT  
+		Size: 3.6 MB (3636222 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b3e4d2c270245e9a590e4cacd67a19370228870792cd62f4091f41cc78ea0b6`  
-		Last Modified: Fri, 20 Dec 2024 21:28:27 GMT  
-		Size: 909.0 B  
+	-	`sha256:f493e165054334fe502f4c9168686cfb797bddfa179d18c0bd51853321cf37b8`  
+		Size: 904.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0f95eb265d1ea2eadab97e2acf01b59bdd041cc13d8c01bf5eb6d6b8a534b0a`  
-		Last Modified: Fri, 20 Dec 2024 21:28:27 GMT  
-		Size: 11.2 MB (11228336 bytes)  
+	-	`sha256:56ff132dd362d4fbef9f595c5919bb74ff8a1e25ca90bf8edd59de2bfac53a3a`  
+		Last Modified: Tue, 07 Jan 2025 03:13:43 GMT  
+		Size: 11.2 MB (11228339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ceabbdefd227bee6e40bfeac774ec6e01d6a764aae434ded1575a9f741cfb539`  
-		Last Modified: Fri, 20 Dec 2024 21:28:27 GMT  
-		Size: 352.0 B  
+	-	`sha256:a2539153e486786626103553aa0abf54206e669205eebdc0c9578a52ce963a91`  
+		Last Modified: Tue, 07 Jan 2025 03:13:43 GMT  
+		Size: 350.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `api-firewall:0.8.6` - unknown; unknown
 
 ```console
-$ docker pull api-firewall@sha256:53bda069fd9f4aa12cb260e13896a4280aa2a33f95d58ccfe805acd0fc39d769
+$ docker pull api-firewall@sha256:13139d84a35f1e13f7404b05d018ad33c11df2c020f1bc9f988cce0bb5efd064
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **158.0 KB (157955 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:963a4fd1520fc1839db21d23a467a64ff50080e756b247b16bf406e1b5ea8caa`
+-	Image ID: `sha256:fd26278ec968a11dc6fc47244c4e98772ea6f2f5346db9019b97a99342c9a72f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cd13ed25467d6bdd2daac59719796b549aa2ec49e60cd37e3de3587dc8c92aec`  
-		Last Modified: Fri, 20 Dec 2024 21:28:27 GMT  
+	-	`sha256:9fc0c8fa74edf6d79a41e4c2241ba8a62be497621b50b76aa69063ea3cc2001d`  
+		Last Modified: Tue, 07 Jan 2025 03:13:43 GMT  
 		Size: 144.4 KB (144409 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3bb3a4890602403c7846a58024087741cd5af22bd9b5892860935ca482245072`  
-		Last Modified: Fri, 20 Dec 2024 21:28:27 GMT  
+	-	`sha256:2b965a2704f6414f7c186d7a41db565da2f91e579c847c0a4bb7057878237be7`  
+		Last Modified: Tue, 07 Jan 2025 03:13:43 GMT  
 		Size: 13.5 KB (13546 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `api-firewall:0.8.6` - linux; arm64 variant v8
 
 ```console
-$ docker pull api-firewall@sha256:1db1a23dca8a40873682a41e030358282fb15eb617d1b4a6ff02192f20b0f1fa
+$ docker pull api-firewall@sha256:1f3a04dd2e2413d2ce1485cda56d89e0cf857bf5786215025327cb0b85842dbc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.4 MB (14352758 bytes)**  
+-	Total Size: **14.3 MB (14342603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f464bce7564fec82a5e581c26282c821191db99060d9d737baa0d4b6674af52`
+-	Image ID: `sha256:42c4f301970469e093039cebce758d9f645a7a1938ee65423a23b085d04e05e9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["api-firewall"]`
 
 ```dockerfile
-# Thu, 05 Dec 2024 12:49:04 GMT
-ADD alpine-minirootfs-3.21.0-aarch64.tar.gz / # buildkit
-# Thu, 05 Dec 2024 12:49:04 GMT
+# Fri, 20 Dec 2024 14:14:14 GMT
+ADD alpine-minirootfs-3.21.1-aarch64.tar.gz / # buildkit
+# Fri, 20 Dec 2024 14:14:14 GMT
 CMD ["/bin/sh"]
 # Fri, 20 Dec 2024 14:14:14 GMT
 ENV APIFW_PATH=/opt/api-firewall
@@ -139,63 +138,64 @@ CMD ["api-firewall"]
 ```
 
 -	Layers:
-	-	`sha256:cb8611c9fe5154550f45e284cf977cda4e2b2fee3478552eee31d84be3c95003`  
-		Last Modified: Thu, 05 Dec 2024 22:17:35 GMT  
-		Size: 4.0 MB (3993186 bytes)  
+	-	`sha256:707c94c90c597447ce10a36c9b56355c1cc67d0cf593a592daeb419d99a30d85`  
+		Last Modified: Tue, 07 Jan 2025 03:02:50 GMT  
+		Size: 4.0 MB (3983007 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdb6c7c1b3c655bc0ac115c21f5c5c84fc654ad073f8e3f33298ca064b4539a7`  
-		Last Modified: Fri, 20 Dec 2024 21:33:21 GMT  
-		Size: 910.0 B  
+	-	`sha256:fb0470619f19d7b542810d65ef73b7720b410f3dc7d55785e8372759b543445e`  
+		Last Modified: Tue, 07 Jan 2025 03:42:21 GMT  
+		Size: 908.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bec65af62ccf999456b7b4ae75707ceac48697c1b9f9e777dfd329d47c8ef4d0`  
-		Last Modified: Fri, 20 Dec 2024 21:33:22 GMT  
-		Size: 10.4 MB (10358307 bytes)  
+	-	`sha256:d96e56f47d35eb86095dc1afe5d7ec22d184c61bcf12cff62a08ab9cc5901a46`  
+		Last Modified: Tue, 07 Jan 2025 03:42:22 GMT  
+		Size: 10.4 MB (10358333 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b518cfb71f33e72e753b225f15ad86adf605989552f59ca19cc04a63463bb83`  
+	-	`sha256:034c5f800702dae01720e0ac9f6571afa546ad071f49414c8a6dd58d13db837c`  
+		Last Modified: Tue, 07 Jan 2025 03:42:21 GMT  
 		Size: 355.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `api-firewall:0.8.6` - unknown; unknown
 
 ```console
-$ docker pull api-firewall@sha256:f2c8733c36b1ee6a168001db8c104fb62b0ac9456479b06e5fd7eeb2fdbc1e50
+$ docker pull api-firewall@sha256:b7699dd7d397aaddecdf6200e65dbe24627fd2c012d68a194f1375bfcc6a4bea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **158.1 KB (158082 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33bca9a2a5067bae84db598a51da275092701471ce89527b1b360bcc4d6ad399`
+-	Image ID: `sha256:5f4bd285cdbb01c0f20c94af726a2c1e01fa79c14036fc9113f745a0b2c6599f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0ec7d40d6f5818bc1dca8337bfbb6372e9c90d3f4ee7c87b7878d281ebbec388`  
-		Last Modified: Fri, 20 Dec 2024 21:33:22 GMT  
+	-	`sha256:0be2fd290f9ba0ae5d0a2c0990e2c3962c62ecda70506b86212ed93bb11d4f41`  
+		Last Modified: Tue, 07 Jan 2025 03:42:21 GMT  
 		Size: 144.4 KB (144441 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f683df3cb183078e5d2f897c4f55cfe29e87292081eb1c3d67e509d9a1237aec`  
-		Last Modified: Fri, 20 Dec 2024 21:33:21 GMT  
+	-	`sha256:ec28c0d12e42fb8fa872a6c8faa021ca1308dd142505d067a20ce926a39a61dd`  
+		Last Modified: Tue, 07 Jan 2025 03:42:21 GMT  
 		Size: 13.6 KB (13641 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `api-firewall:0.8.6` - linux; 386
 
 ```console
-$ docker pull api-firewall@sha256:782a4f9854e5654ed40e8a338c500b624b15ae1fe7144bfa6b87b478f26c4843
+$ docker pull api-firewall@sha256:875fba8efbbf8780cecdcb6aad8ba0d351e88a57fbae67dddc03bf097605cbd8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.2 MB (13199304 bytes)**  
+-	Total Size: **13.2 MB (13191511 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:61a8276c9d36143d323003262fd35bafab7b80f8f67049daa930d333e6b5b51e`
+-	Image ID: `sha256:1a7e309f6da6d469be43eac151c80ba154fa8cfbaa418b5d828297fe5fa90990`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["api-firewall"]`
 
 ```dockerfile
-# Thu, 05 Dec 2024 12:49:04 GMT
-ADD alpine-minirootfs-3.21.0-x86.tar.gz / # buildkit
-# Thu, 05 Dec 2024 12:49:04 GMT
+# Fri, 20 Dec 2024 14:14:14 GMT
+ADD alpine-minirootfs-3.21.1-x86.tar.gz / # buildkit
+# Fri, 20 Dec 2024 14:14:14 GMT
 CMD ["/bin/sh"]
 # Fri, 20 Dec 2024 14:14:14 GMT
 ENV APIFW_PATH=/opt/api-firewall
@@ -218,51 +218,50 @@ CMD ["api-firewall"]
 ```
 
 -	Layers:
-	-	`sha256:8e5e849a30a22d7386238d38bd56dd5564638f4856bee415fad2bc5852c31989`  
-		Last Modified: Thu, 05 Dec 2024 22:17:33 GMT  
-		Size: 3.5 MB (3466081 bytes)  
+	-	`sha256:1b51cef20fac755ea70acf005c7461407387b0deae88500e38a1982868469f7a`  
+		Size: 3.5 MB (3458271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f220be47da6f10c62d62b7b3eb9ef34a55ad4d7733b4d6cabed89d5bf7393ac`  
-		Last Modified: Fri, 20 Dec 2024 21:28:51 GMT  
-		Size: 911.0 B  
+	-	`sha256:fd7c9157f234faaf9af1491ed50a17435f09bf85bf51071f6e0502661e45f85f`  
+		Last Modified: Tue, 07 Jan 2025 03:13:57 GMT  
+		Size: 905.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f17ed9368d15389d8f0d3b1b2f48703331fc7d36f761d78b6a15454a4e90cc7`  
-		Last Modified: Fri, 20 Dec 2024 21:28:51 GMT  
-		Size: 9.7 MB (9731960 bytes)  
+	-	`sha256:be2a02f8ba93f39d998ba77f929fc07b34c4c366db8f53844a68987eed4d7f53`  
+		Last Modified: Tue, 07 Jan 2025 03:13:58 GMT  
+		Size: 9.7 MB (9731984 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5fa24a1b59111f00e98739a080e827ba7f5847d774abf11b9166c3dafba7e0e`  
-		Last Modified: Fri, 20 Dec 2024 21:28:51 GMT  
-		Size: 352.0 B  
+	-	`sha256:a753c8c38f8b93cbba9cfd458f38f4801d3f0ec5685318a6167dce016ef0d8fb`  
+		Last Modified: Tue, 07 Jan 2025 03:13:57 GMT  
+		Size: 351.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `api-firewall:0.8.6` - unknown; unknown
 
 ```console
-$ docker pull api-firewall@sha256:1ced8cadf6d3bdf9f194b6f6642b6608f51cecc6f38836a579a9783c081b1509
+$ docker pull api-firewall@sha256:2041d2c16d0508247dd7b32ad91e8af367ef6001d2a0a96a08f5410b08af38e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.9 KB (157913 bytes)**  
+-	Total Size: **157.9 KB (157914 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e559db765300c0aa1d22e375c4c644282e7f6d16f763dbf0a3a3aa938537963`
+-	Image ID: `sha256:abcf8522c78170bc02dc81133c3d38f0f098393021d4db3ba0c65b84c7b68ac0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:73368c000676a2f36d6231dc6b6aad757b8c38952fb41f865b732f92e2d32f66`  
-		Last Modified: Fri, 20 Dec 2024 21:28:51 GMT  
+	-	`sha256:022bf153a187650ed4dd8a89ae2aaefac3a846b004e35599b3e6af9bb7dae918`  
+		Last Modified: Tue, 07 Jan 2025 03:13:57 GMT  
 		Size: 144.4 KB (144394 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1a199389dc16fb9b9c6915caf0c89c39d20a370a48fe413d695b752370267f5c`  
-		Last Modified: Fri, 20 Dec 2024 21:28:51 GMT  
-		Size: 13.5 KB (13519 bytes)  
+	-	`sha256:940834aa3b398f6eded584e2caa33de6da2c42c3309e55482e3f8f0b0843bf59`  
+		Last Modified: Tue, 07 Jan 2025 03:13:57 GMT  
+		Size: 13.5 KB (13520 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `api-firewall:latest`
 
 ```console
-$ docker pull api-firewall@sha256:2ec63705362c74a1cef64bb859ea1bca6beba15b415a3764024ace6ad46a6dec
+$ docker pull api-firewall@sha256:d7a2d4e8d03d1a87eef6742843dcf2f088a55c4c82c56cfe6bd2db01cde6be62
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -277,20 +276,20 @@ $ docker pull api-firewall@sha256:2ec63705362c74a1cef64bb859ea1bca6beba15b415a37
 ### `api-firewall:latest` - linux; amd64
 
 ```console
-$ docker pull api-firewall@sha256:606bd91e8f8c3920a1cba91ba7dc3c4398774f2a9245912b591721ebf7c610df
+$ docker pull api-firewall@sha256:95b51573cc0b2d1aea11dcab1c3a9c7c373279a308d3717fa7f21d09193fa4cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.9 MB (14874040 bytes)**  
+-	Total Size: **14.9 MB (14865815 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ef626ad0c0dedff3f60dbcd17db4a6608dab5982987c7feaf8dcbcd55f97434d`
+-	Image ID: `sha256:f2556ddbb833cdc0f41e1934fb6f4f9f7cd3c593bf9f92b2705d1d8356f198a3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["api-firewall"]`
 
 ```dockerfile
-# Thu, 05 Dec 2024 12:49:04 GMT
-ADD alpine-minirootfs-3.21.0-x86_64.tar.gz / # buildkit
-# Thu, 05 Dec 2024 12:49:04 GMT
+# Fri, 20 Dec 2024 14:14:14 GMT
+ADD alpine-minirootfs-3.21.1-x86_64.tar.gz / # buildkit
+# Fri, 20 Dec 2024 14:14:14 GMT
 CMD ["/bin/sh"]
 # Fri, 20 Dec 2024 14:14:14 GMT
 ENV APIFW_PATH=/opt/api-firewall
@@ -313,64 +312,63 @@ CMD ["api-firewall"]
 ```
 
 -	Layers:
-	-	`sha256:38a8310d387e375e0ec6fabe047a9149e8eb214073db9f461fee6251fd936a75`  
-		Last Modified: Thu, 05 Dec 2024 21:56:24 GMT  
-		Size: 3.6 MB (3644443 bytes)  
+	-	`sha256:245043d9199c263f869fc0558f43f7cb98bbc92acdd5def1b4f690adc0ac7807`  
+		Last Modified: Mon, 06 Jan 2025 21:44:42 GMT  
+		Size: 3.6 MB (3636222 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b3e4d2c270245e9a590e4cacd67a19370228870792cd62f4091f41cc78ea0b6`  
-		Last Modified: Fri, 20 Dec 2024 21:28:27 GMT  
-		Size: 909.0 B  
+	-	`sha256:f493e165054334fe502f4c9168686cfb797bddfa179d18c0bd51853321cf37b8`  
+		Size: 904.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0f95eb265d1ea2eadab97e2acf01b59bdd041cc13d8c01bf5eb6d6b8a534b0a`  
-		Last Modified: Fri, 20 Dec 2024 21:28:27 GMT  
-		Size: 11.2 MB (11228336 bytes)  
+	-	`sha256:56ff132dd362d4fbef9f595c5919bb74ff8a1e25ca90bf8edd59de2bfac53a3a`  
+		Last Modified: Tue, 07 Jan 2025 03:13:43 GMT  
+		Size: 11.2 MB (11228339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ceabbdefd227bee6e40bfeac774ec6e01d6a764aae434ded1575a9f741cfb539`  
-		Last Modified: Fri, 20 Dec 2024 21:28:27 GMT  
-		Size: 352.0 B  
+	-	`sha256:a2539153e486786626103553aa0abf54206e669205eebdc0c9578a52ce963a91`  
+		Last Modified: Tue, 07 Jan 2025 03:13:43 GMT  
+		Size: 350.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `api-firewall:latest` - unknown; unknown
 
 ```console
-$ docker pull api-firewall@sha256:53bda069fd9f4aa12cb260e13896a4280aa2a33f95d58ccfe805acd0fc39d769
+$ docker pull api-firewall@sha256:13139d84a35f1e13f7404b05d018ad33c11df2c020f1bc9f988cce0bb5efd064
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **158.0 KB (157955 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:963a4fd1520fc1839db21d23a467a64ff50080e756b247b16bf406e1b5ea8caa`
+-	Image ID: `sha256:fd26278ec968a11dc6fc47244c4e98772ea6f2f5346db9019b97a99342c9a72f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cd13ed25467d6bdd2daac59719796b549aa2ec49e60cd37e3de3587dc8c92aec`  
-		Last Modified: Fri, 20 Dec 2024 21:28:27 GMT  
+	-	`sha256:9fc0c8fa74edf6d79a41e4c2241ba8a62be497621b50b76aa69063ea3cc2001d`  
+		Last Modified: Tue, 07 Jan 2025 03:13:43 GMT  
 		Size: 144.4 KB (144409 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3bb3a4890602403c7846a58024087741cd5af22bd9b5892860935ca482245072`  
-		Last Modified: Fri, 20 Dec 2024 21:28:27 GMT  
+	-	`sha256:2b965a2704f6414f7c186d7a41db565da2f91e579c847c0a4bb7057878237be7`  
+		Last Modified: Tue, 07 Jan 2025 03:13:43 GMT  
 		Size: 13.5 KB (13546 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `api-firewall:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull api-firewall@sha256:1db1a23dca8a40873682a41e030358282fb15eb617d1b4a6ff02192f20b0f1fa
+$ docker pull api-firewall@sha256:1f3a04dd2e2413d2ce1485cda56d89e0cf857bf5786215025327cb0b85842dbc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **14.4 MB (14352758 bytes)**  
+-	Total Size: **14.3 MB (14342603 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0f464bce7564fec82a5e581c26282c821191db99060d9d737baa0d4b6674af52`
+-	Image ID: `sha256:42c4f301970469e093039cebce758d9f645a7a1938ee65423a23b085d04e05e9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["api-firewall"]`
 
 ```dockerfile
-# Thu, 05 Dec 2024 12:49:04 GMT
-ADD alpine-minirootfs-3.21.0-aarch64.tar.gz / # buildkit
-# Thu, 05 Dec 2024 12:49:04 GMT
+# Fri, 20 Dec 2024 14:14:14 GMT
+ADD alpine-minirootfs-3.21.1-aarch64.tar.gz / # buildkit
+# Fri, 20 Dec 2024 14:14:14 GMT
 CMD ["/bin/sh"]
 # Fri, 20 Dec 2024 14:14:14 GMT
 ENV APIFW_PATH=/opt/api-firewall
@@ -393,63 +391,64 @@ CMD ["api-firewall"]
 ```
 
 -	Layers:
-	-	`sha256:cb8611c9fe5154550f45e284cf977cda4e2b2fee3478552eee31d84be3c95003`  
-		Last Modified: Thu, 05 Dec 2024 22:17:35 GMT  
-		Size: 4.0 MB (3993186 bytes)  
+	-	`sha256:707c94c90c597447ce10a36c9b56355c1cc67d0cf593a592daeb419d99a30d85`  
+		Last Modified: Tue, 07 Jan 2025 03:02:50 GMT  
+		Size: 4.0 MB (3983007 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdb6c7c1b3c655bc0ac115c21f5c5c84fc654ad073f8e3f33298ca064b4539a7`  
-		Last Modified: Fri, 20 Dec 2024 21:33:21 GMT  
-		Size: 910.0 B  
+	-	`sha256:fb0470619f19d7b542810d65ef73b7720b410f3dc7d55785e8372759b543445e`  
+		Last Modified: Tue, 07 Jan 2025 03:42:21 GMT  
+		Size: 908.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bec65af62ccf999456b7b4ae75707ceac48697c1b9f9e777dfd329d47c8ef4d0`  
-		Last Modified: Fri, 20 Dec 2024 21:33:22 GMT  
-		Size: 10.4 MB (10358307 bytes)  
+	-	`sha256:d96e56f47d35eb86095dc1afe5d7ec22d184c61bcf12cff62a08ab9cc5901a46`  
+		Last Modified: Tue, 07 Jan 2025 03:42:22 GMT  
+		Size: 10.4 MB (10358333 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b518cfb71f33e72e753b225f15ad86adf605989552f59ca19cc04a63463bb83`  
+	-	`sha256:034c5f800702dae01720e0ac9f6571afa546ad071f49414c8a6dd58d13db837c`  
+		Last Modified: Tue, 07 Jan 2025 03:42:21 GMT  
 		Size: 355.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `api-firewall:latest` - unknown; unknown
 
 ```console
-$ docker pull api-firewall@sha256:f2c8733c36b1ee6a168001db8c104fb62b0ac9456479b06e5fd7eeb2fdbc1e50
+$ docker pull api-firewall@sha256:b7699dd7d397aaddecdf6200e65dbe24627fd2c012d68a194f1375bfcc6a4bea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **158.1 KB (158082 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:33bca9a2a5067bae84db598a51da275092701471ce89527b1b360bcc4d6ad399`
+-	Image ID: `sha256:5f4bd285cdbb01c0f20c94af726a2c1e01fa79c14036fc9113f745a0b2c6599f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0ec7d40d6f5818bc1dca8337bfbb6372e9c90d3f4ee7c87b7878d281ebbec388`  
-		Last Modified: Fri, 20 Dec 2024 21:33:22 GMT  
+	-	`sha256:0be2fd290f9ba0ae5d0a2c0990e2c3962c62ecda70506b86212ed93bb11d4f41`  
+		Last Modified: Tue, 07 Jan 2025 03:42:21 GMT  
 		Size: 144.4 KB (144441 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f683df3cb183078e5d2f897c4f55cfe29e87292081eb1c3d67e509d9a1237aec`  
-		Last Modified: Fri, 20 Dec 2024 21:33:21 GMT  
+	-	`sha256:ec28c0d12e42fb8fa872a6c8faa021ca1308dd142505d067a20ce926a39a61dd`  
+		Last Modified: Tue, 07 Jan 2025 03:42:21 GMT  
 		Size: 13.6 KB (13641 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `api-firewall:latest` - linux; 386
 
 ```console
-$ docker pull api-firewall@sha256:782a4f9854e5654ed40e8a338c500b624b15ae1fe7144bfa6b87b478f26c4843
+$ docker pull api-firewall@sha256:875fba8efbbf8780cecdcb6aad8ba0d351e88a57fbae67dddc03bf097605cbd8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.2 MB (13199304 bytes)**  
+-	Total Size: **13.2 MB (13191511 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:61a8276c9d36143d323003262fd35bafab7b80f8f67049daa930d333e6b5b51e`
+-	Image ID: `sha256:1a7e309f6da6d469be43eac151c80ba154fa8cfbaa418b5d828297fe5fa90990`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["api-firewall"]`
 
 ```dockerfile
-# Thu, 05 Dec 2024 12:49:04 GMT
-ADD alpine-minirootfs-3.21.0-x86.tar.gz / # buildkit
-# Thu, 05 Dec 2024 12:49:04 GMT
+# Fri, 20 Dec 2024 14:14:14 GMT
+ADD alpine-minirootfs-3.21.1-x86.tar.gz / # buildkit
+# Fri, 20 Dec 2024 14:14:14 GMT
 CMD ["/bin/sh"]
 # Fri, 20 Dec 2024 14:14:14 GMT
 ENV APIFW_PATH=/opt/api-firewall
@@ -472,43 +471,42 @@ CMD ["api-firewall"]
 ```
 
 -	Layers:
-	-	`sha256:8e5e849a30a22d7386238d38bd56dd5564638f4856bee415fad2bc5852c31989`  
-		Last Modified: Thu, 05 Dec 2024 22:17:33 GMT  
-		Size: 3.5 MB (3466081 bytes)  
+	-	`sha256:1b51cef20fac755ea70acf005c7461407387b0deae88500e38a1982868469f7a`  
+		Size: 3.5 MB (3458271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f220be47da6f10c62d62b7b3eb9ef34a55ad4d7733b4d6cabed89d5bf7393ac`  
-		Last Modified: Fri, 20 Dec 2024 21:28:51 GMT  
-		Size: 911.0 B  
+	-	`sha256:fd7c9157f234faaf9af1491ed50a17435f09bf85bf51071f6e0502661e45f85f`  
+		Last Modified: Tue, 07 Jan 2025 03:13:57 GMT  
+		Size: 905.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5f17ed9368d15389d8f0d3b1b2f48703331fc7d36f761d78b6a15454a4e90cc7`  
-		Last Modified: Fri, 20 Dec 2024 21:28:51 GMT  
-		Size: 9.7 MB (9731960 bytes)  
+	-	`sha256:be2a02f8ba93f39d998ba77f929fc07b34c4c366db8f53844a68987eed4d7f53`  
+		Last Modified: Tue, 07 Jan 2025 03:13:58 GMT  
+		Size: 9.7 MB (9731984 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5fa24a1b59111f00e98739a080e827ba7f5847d774abf11b9166c3dafba7e0e`  
-		Last Modified: Fri, 20 Dec 2024 21:28:51 GMT  
-		Size: 352.0 B  
+	-	`sha256:a753c8c38f8b93cbba9cfd458f38f4801d3f0ec5685318a6167dce016ef0d8fb`  
+		Last Modified: Tue, 07 Jan 2025 03:13:57 GMT  
+		Size: 351.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `api-firewall:latest` - unknown; unknown
 
 ```console
-$ docker pull api-firewall@sha256:1ced8cadf6d3bdf9f194b6f6642b6608f51cecc6f38836a579a9783c081b1509
+$ docker pull api-firewall@sha256:2041d2c16d0508247dd7b32ad91e8af367ef6001d2a0a96a08f5410b08af38e2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.9 KB (157913 bytes)**  
+-	Total Size: **157.9 KB (157914 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1e559db765300c0aa1d22e375c4c644282e7f6d16f763dbf0a3a3aa938537963`
+-	Image ID: `sha256:abcf8522c78170bc02dc81133c3d38f0f098393021d4db3ba0c65b84c7b68ac0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:73368c000676a2f36d6231dc6b6aad757b8c38952fb41f865b732f92e2d32f66`  
-		Last Modified: Fri, 20 Dec 2024 21:28:51 GMT  
+	-	`sha256:022bf153a187650ed4dd8a89ae2aaefac3a846b004e35599b3e6af9bb7dae918`  
+		Last Modified: Tue, 07 Jan 2025 03:13:57 GMT  
 		Size: 144.4 KB (144394 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1a199389dc16fb9b9c6915caf0c89c39d20a370a48fe413d695b752370267f5c`  
-		Last Modified: Fri, 20 Dec 2024 21:28:51 GMT  
-		Size: 13.5 KB (13519 bytes)  
+	-	`sha256:940834aa3b398f6eded584e2caa33de6da2c42c3309e55482e3f8f0b0843bf59`  
+		Last Modified: Tue, 07 Jan 2025 03:13:57 GMT  
+		Size: 13.5 KB (13520 bytes)  
 		MIME: application/vnd.in-toto+json
