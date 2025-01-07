@@ -75,6 +75,7 @@ CMD ["clj"]
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f230d3f854701990cfaac714a5e83e61caeca6cc0efdab1d522bf78d0954d7e`  
+		Last Modified: Tue, 07 Jan 2025 03:31:20 GMT  
 		Size: 2.3 KB (2305 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -86,6 +87,7 @@ CMD ["clj"]
 		Size: 25.0 MB (25033700 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f51563a7f7398da0cfa2cf6f3d08dc3efcbb0ffdbabbc2c6c372a3cef7021e9d`  
+		Last Modified: Tue, 07 Jan 2025 04:22:56 GMT  
 		Size: 619.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

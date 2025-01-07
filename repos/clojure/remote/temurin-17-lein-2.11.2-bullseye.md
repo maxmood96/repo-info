@@ -151,6 +151,7 @@ CMD ["repl"]
 
 -	Layers:
 	-	`sha256:447d428f9ffe60c6c8cc59e00901cd865a36737372ba05710598d7eaf0a1144d`  
+		Last Modified: Tue, 24 Dec 2024 21:34:37 GMT  
 		Size: 52.2 MB (52245698 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8dce462c22105422e138f6d754df187041f54e682066c38e939203fda7d53c73`  
@@ -194,5 +195,6 @@ $ docker pull clojure@sha256:c02a0325433d64a0e9f80c2dfb2bb4a539c732d2d36b28642ca
 		Size: 6.6 MB (6624789 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:03d79a2f22d59e29998ebc7c1f08aeb54760885e9db3cb6c72ffc694c34b1067`  
+		Last Modified: Wed, 25 Dec 2024 07:26:20 GMT  
 		Size: 18.5 KB (18544 bytes)  
 		MIME: application/vnd.in-toto+json
