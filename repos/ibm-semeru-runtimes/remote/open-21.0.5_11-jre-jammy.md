@@ -90,7 +90,6 @@ $ docker pull ibm-semeru-runtimes@sha256:7537a1a91f262bb46a0c9e11be5614c5cf12342
 
 -	Layers:
 	-	`sha256:ee6df7cb0d53ec7b7283437783c9387eebed6588525e3c809028fc4a66ae1e77`  
-		Last Modified: Thu, 19 Dec 2024 21:31:40 GMT  
 		Size: 3.6 MB (3584663 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:833c3d03bc8c5baf7a581647f94f923c567b08db2aefa58a5a7b2293e527f2ea`  
@@ -145,6 +144,7 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:77e2579fa9ed432452dd8563d1dc040de22c49fcfc4a3cd906b5e75b095c2926`  
+		Last Modified: Mon, 18 Nov 2024 19:12:40 GMT  
 		Size: 12.1 MB (12128239 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bcd934ea1f101095f318ff00d5a67a12a963537e31dd7aab595a6692aee6fb5e`  
@@ -152,7 +152,6 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 52.1 MB (52065851 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7849819da7cac1165717b961cc3d0899a25a421652c29f32e49ae79708ebf6ae`  
-		Last Modified: Thu, 19 Dec 2024 22:30:40 GMT  
 		Size: 4.8 MB (4845428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -255,6 +254,7 @@ $ docker pull ibm-semeru-runtimes@sha256:179addb7a74176ec758e8d30bb1b358a8a058a3
 
 -	Layers:
 	-	`sha256:63667e3a1d5968c554a32c4a2e691f0a11b5b1045c89941d17b19e43a264f30b`  
+		Last Modified: Thu, 19 Dec 2024 21:58:02 GMT  
 		Size: 3.6 MB (3581429 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c27f456047d1c025b8e6e8b059713727288bf431f02120ca4ff1985ee848ba6b`  
@@ -305,6 +305,7 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 
 -	Layers:
 	-	`sha256:41e9fbd89079d8e47609ae158236d59896fd2503db1ebdfef058864054170e01`  
+		Last Modified: Wed, 11 Sep 2024 17:25:11 GMT  
 		Size: 28.0 MB (28001475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:19d7fcbb74a18dbda1a95a881c01c2cc4d8a0d6fe38b3b4f8b5899f281f9815e`  
@@ -316,6 +317,7 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 55.0 MB (55007210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:601a1578e665564853f3b4d57189855dd799003938db1ffd0ee3899b4b601128`  
+		Last Modified: Thu, 19 Dec 2024 22:18:44 GMT  
 		Size: 5.3 MB (5307192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
