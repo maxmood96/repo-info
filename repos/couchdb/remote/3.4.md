@@ -192,14 +192,13 @@ CMD ["/opt/couchdb/bin/couchdb"]
 		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:21a405661fba139064992f04e24f4b90be6d9c4442dca24e23e518d2e59dad73`  
-		Last Modified: Wed, 25 Dec 2024 01:53:41 GMT  
 		Size: 1.2 KB (1182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fdc5f9c5d9b9bd4888bea0443733b0691d17772dfee772cef5aa0864414bb95d`  
+		Last Modified: Wed, 25 Dec 2024 01:53:41 GMT  
 		Size: 7.5 MB (7462059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:73540eb5222e6f17fbccc19811cc03ed27a495d20c66675e4752a04af74f8d38`  
-		Last Modified: Wed, 25 Dec 2024 01:53:41 GMT  
 		Size: 348.9 KB (348918 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24cfdbd862f0e26044f42b60422f1d71e9c53d27610aaef80818912be8ce5fa2`  
@@ -227,7 +226,6 @@ CMD ["/opt/couchdb/bin/couchdb"]
 		Size: 2.2 KB (2227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34a1e54e9cd2bdaadd0e8d6dc43cea6efb2568e851663f7762a7740c25eb7807`  
-		Last Modified: Wed, 25 Dec 2024 01:53:43 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -251,6 +249,7 @@ $ docker pull couchdb@sha256:b3150f8a8a167f03f3610a0bd6877f94c7f4bb31639ac45c03c
 		Size: 3.9 MB (3933852 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d725cbf03fb1e25a40eeec5f1f3a7a02da8ef255300967b8cb2c6005b49f8e1c`  
+		Last Modified: Wed, 25 Dec 2024 01:53:41 GMT  
 		Size: 32.0 KB (31970 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -312,9 +311,11 @@ CMD ["/opt/couchdb/bin/couchdb"]
 		Size: 26.9 MB (26878901 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d2a4394b0f84809ff62d78d9a98ecbd213df038461fd4e6cce5a611b796ffc94`  
+		Last Modified: Wed, 25 Dec 2024 00:20:01 GMT  
 		Size: 1.2 KB (1182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3a1e483ea142b6a237a711bdc7992eea2224e414e04ff73917cd6555056500d7`  
+		Last Modified: Wed, 25 Dec 2024 00:20:01 GMT  
 		Size: 7.2 MB (7194520 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c3fc32c0014ca03ab56b527bcec878148c78751b35a84c494f79d9b6d1c21904`  
