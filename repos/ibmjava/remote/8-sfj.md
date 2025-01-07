@@ -60,7 +60,6 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 		Size: 1.4 MB (1449649 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:84202509c66318b6ab00fb73a6bc4bd97699967424a243e169a0cfef46051ce9`  
-		Last Modified: Mon, 09 Dec 2024 19:28:30 GMT  
 		Size: 70.3 MB (70256342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -84,6 +83,7 @@ $ docker pull ibmjava@sha256:968eb6180683d9c6126d33d6dc4146e227c66d39312bed02092
 		Size: 2.0 MB (2035907 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:03ae2393a0114c11b34ded5a29fb73cd0bd121840ccf8dd8c2056565dd2ac6ab`  
+		Last Modified: Mon, 09 Dec 2024 19:28:29 GMT  
 		Size: 13.2 KB (13181 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -158,7 +158,6 @@ $ docker pull ibmjava@sha256:903f6be9afc840afacbf732198ab927e52349c25e4a256c0bfd
 		Size: 2.0 MB (2034403 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dab42f74e36b23dabd974cb247396ce5fc0b76b81878f8261115ea998fe3efa7`  
-		Last Modified: Mon, 09 Dec 2024 19:30:15 GMT  
 		Size: 13.2 KB (13215 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -201,7 +200,6 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 
 -	Layers:
 	-	`sha256:41e9fbd89079d8e47609ae158236d59896fd2503db1ebdfef058864054170e01`  
-		Last Modified: Wed, 11 Sep 2024 17:25:11 GMT  
 		Size: 28.0 MB (28001475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb6d015aafef1cc8c93af1c71f0f144845de0b5e0e0bbcd3c27bccf671404292`  
