@@ -105,6 +105,7 @@ $ docker pull aerospike@sha256:3a14cf287bd8a3fcaf7f0deafd1763a457c4c258be07c6015
 		Size: 2.0 MB (1956203 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:697940b78d3e3beb85b5358530e0b1a6748e9cf6d3a8e78983dd423f5e64c070`  
+		Last Modified: Tue, 07 Jan 2025 01:30:23 GMT  
 		Size: 29.2 KB (29163 bytes)  
 		MIME: application/vnd.in-toto+json
 
