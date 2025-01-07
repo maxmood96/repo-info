@@ -69,7 +69,6 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 
 -	Layers:
 	-	`sha256:2534953f34d35976fc44cd67bfdd39fdcd9e2eaae57ada0be53d5fb936cd3a0b`  
-		Last Modified: Tue, 10 Sep 2024 17:49:01 GMT  
 		Size: 1.5 GB (1462192413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:90641eccc9d7a78ab99d123ca3884acb8ffc002eb44bc5e68f261f0810d5202b`  
@@ -93,6 +92,7 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4aa8b4f8bca373596d0d6fbe6dbc37b95b7b911ca02f2ecdd399056b4931a074`  
+		Last Modified: Thu, 12 Dec 2024 22:53:01 GMT  
 		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:48ebe4dcec3651a6d7ef412b8d6f2bf94454c2788f6a799dbe1e352cb3059249`  
@@ -100,6 +100,7 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Size: 1.4 KB (1396 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1d3abe30fd1af8efab9d6915c834b10d8f3ca25671f50524f308114745f89b00`  
+		Last Modified: Thu, 12 Dec 2024 22:53:20 GMT  
 		Size: 150.4 MB (150362589 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b4f5827ca80b3566281500e2db396f1293363968ac76150eeaefc59f10e2feed`  
@@ -107,7 +108,6 @@ CMD ["powershell.exe" "-nologo" "-ExecutionPolicy" "Bypass"]
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2a1c1c0a31a9ec93f46d0bc9c7f4e1e520be2ec2e1e8d171ffa9685a98dc3036`  
-		Last Modified: Thu, 12 Dec 2024 22:52:57 GMT  
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8c7f094eddd8e240169ca5fb48a330ebc47a2904acd00f542aafbb258fa2a934`  
