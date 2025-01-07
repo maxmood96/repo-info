@@ -190,6 +190,7 @@ $ docker pull debian@sha256:d14bbbc3c8ab26b225220d861a6a927ec79711cd5f9ad4121d7c
 
 -	Layers:
 	-	`sha256:5646c82d0358b485d53bc97ae4b2357857b0c208f41c10ccb358076ffd22f94b`  
+		Last Modified: Tue, 24 Dec 2024 21:36:22 GMT  
 		Size: 2.2 MB (2248674 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -278,6 +279,7 @@ RUN # debian.sh --arch 'ppc64el' out/ 'stable' '@1734912000'
 
 -	Layers:
 	-	`sha256:dd896d0769486336c4812dbff772386c54658009c262d9d1c2251115923a5929`  
+		Last Modified: Wed, 25 Dec 2024 00:34:53 GMT  
 		Size: 32.1 MB (32063246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

@@ -86,6 +86,7 @@ RUN # debian.sh --arch 'armel' out/ 'unstable' '@1734912000'
 
 -	Layers:
 	-	`sha256:3762ab95f7021ba34c1175027467ded65353f2c6419dc7eae90ec043e56cf68c`  
+		Last Modified: Tue, 24 Dec 2024 21:36:13 GMT  
 		Size: 48.8 MB (48771907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -105,7 +106,6 @@ $ docker pull debian@sha256:80e56033509e79d9626959aa7111ec04a20b5b4b76c9b35077c2
 
 -	Layers:
 	-	`sha256:9cf2378188fb4cafc7b4330cf8c5a3b2330cd1bf2d72641d42fd9b878f0bba8a`  
-		Last Modified: Tue, 24 Dec 2024 21:36:11 GMT  
 		Size: 3.2 MB (3232353 bytes)  
 		MIME: application/vnd.in-toto+json
 
