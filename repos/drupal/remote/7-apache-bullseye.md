@@ -135,7 +135,6 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 12.0 MB (12042184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:72c4b4ec668c0b854ae1e33e95af629362387c49d77a2d7c740987dbb88f7fe6`  
-		Last Modified: Tue, 24 Dec 2024 22:28:58 GMT  
 		Size: 487.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2f49c4eebdc2515473ce6f4757c5de9827afba22d41a8382ce4c0f74f1b24dbe`  
@@ -143,7 +142,6 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 11.1 MB (11086002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bacf399a9f12ef9062f80d43de9e8f9f75e25008db308ca3ff2ab0a32e924f64`  
-		Last Modified: Tue, 24 Dec 2024 22:28:59 GMT  
 		Size: 2.5 KB (2454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4516ed8cf4abc44790c88969e7033dfb0f165b74167931afc59acf9895f1ffdb`  
@@ -187,7 +185,6 @@ $ docker pull drupal@sha256:c56523085da6c0d509766fac931aa4f5666efe91b5793e68257e
 
 -	Layers:
 	-	`sha256:79efd2e8fbeef6c3af8768f450b6d141208055ba1f33c76ff4a983ae00d1ad50`  
-		Last Modified: Tue, 24 Dec 2024 23:20:53 GMT  
 		Size: 7.0 MB (6958523 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:69138747555e25756147c27d30227acd933e08b59bb6cf8d77c56d31e1550313`  
@@ -287,7 +284,6 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 25.5 MB (25533937 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb0989fbbfc5677cb7ba281af4449917eb6aa0771685fd9d9c06b43b50ece3bd`  
-		Last Modified: Tue, 24 Dec 2024 23:02:48 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f4ed7b1b9105789e8dcb4a70b1bca07a9fdba709e47328dbbaea9c5b4bf87290`  
@@ -303,7 +299,6 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 17.8 MB (17816910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:86811bfff4829cf3afee4fce7a3006f3c6feaa948a11933e1820e45a2312ac45`  
-		Last Modified: Tue, 24 Dec 2024 23:06:18 GMT  
 		Size: 430.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d84f5d8db52cece037b8cd45cd578cc082637e51412b4f107e61850a8c1bf4bf`  
@@ -463,7 +458,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 
 -	Layers:
 	-	`sha256:879a6187682fc52c69294a2f450abdb54e257a50e8133ec6e89cb140345be6ce`  
-		Last Modified: Tue, 24 Dec 2024 21:34:50 GMT  
+		Last Modified: Tue, 07 Jan 2025 19:56:27 GMT  
 		Size: 28.7 MB (28744853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:834d60e98531329a411a90bc750803a988fe332fd46e0c9f626164216b0bf9ed`  
@@ -491,7 +486,6 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 485.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c6179c50e0212c001105212017f288dd5a64290947a1a80fbfcc46b9b0e3fc75`  
-		Last Modified: Wed, 25 Dec 2024 00:53:13 GMT  
 		Size: 12.0 MB (12041464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1f05d23f251aae1f06268cf23fd471bc1614f9c86a8cb8e923019c7678faf701`  
@@ -503,7 +497,6 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 11.2 MB (11154601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0563ba74cd6678c14a231576bb49587c0439d73899fea7e20a71705ae631bec8`  
-		Last Modified: Wed, 25 Dec 2024 00:53:13 GMT  
 		Size: 2.5 KB (2454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f8e5fe093c24369ac5c3f1a3f169afdba70d72e094f6f258e9e9c3f62e09a3d1`  
@@ -547,7 +540,6 @@ $ docker pull drupal@sha256:ab140ec653dbe4147355a2a6daafed4eaa129f494212dfc04bee
 
 -	Layers:
 	-	`sha256:1feab0eca9a90e6a13b79b37061db92981164a50a7ada07038b20631e3a91e27`  
-		Last Modified: Wed, 25 Dec 2024 08:43:05 GMT  
 		Size: 7.0 MB (6961319 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:64046a7c90cc51bdcfde5ad318b725f12859f20238185d048046b95514ee4d62`  
