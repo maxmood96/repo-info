@@ -65,14 +65,13 @@ CMD ["/etc/docker/registry/config.yml"]
 		Size: 293.4 KB (293379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:813676e291ef88d6de121b9a67d4b546585c87f2b89df39d4fd14ba984cd655f`  
-		Last Modified: Tue, 12 Nov 2024 02:37:06 GMT  
 		Size: 6.4 MB (6403784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc2fb7dcec6119c150b59df0550dc646f6a45351470a7b74f0a904df40418a12`  
-		Last Modified: Tue, 12 Nov 2024 02:37:05 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:916205650bfe545ec2ac378e84f53759e0c977a77e583f0525e05cf3c8923df5`  
+		Last Modified: Tue, 12 Nov 2024 02:37:06 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -92,11 +91,9 @@ $ docker pull registry@sha256:ef807d6ab3ae145cb40e6bc86fbd8de0fb6f4c6726ac88e619
 
 -	Layers:
 	-	`sha256:547ee2ce16efcc56c2f70e31f7327b246f129ae9e0e0f5393b19da960f910466`  
-		Last Modified: Tue, 12 Nov 2024 02:37:06 GMT  
 		Size: 179.0 KB (179007 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d8e019b81fd4a44bcc35582450d9aeddbdb46be2e2b6e0e5bd6cbe0dcc431d8b`  
-		Last Modified: Tue, 12 Nov 2024 02:37:05 GMT  
 		Size: 14.1 KB (14065 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -142,10 +139,10 @@ CMD ["/etc/docker/registry/config.yml"]
 		Size: 3.2 MB (3158999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b739e776fe9e57644b5e4e99c00c4dbb4a039c894137288a095e5adcc3f78d8`  
-		Last Modified: Tue, 12 Nov 2024 06:28:42 GMT  
 		Size: 294.0 KB (294026 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b5afee98ad80b18cdcc1e4f610c4b5f499b6c55c68ea75a4743e1e680fa910f4`  
+		Last Modified: Tue, 12 Nov 2024 06:28:42 GMT  
 		Size: 6.0 MB (6024109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fc7f5e00a1807cf3e9f780608fcb4b45baf5e9735de16505b91749f287e31298`  
@@ -223,9 +220,11 @@ CMD ["/etc/docker/registry/config.yml"]
 		Size: 292.9 KB (292920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a4518dd25cdc89f46b95212b0f8e670f000254dc3db5b67aade21b5b01391faa`  
+		Last Modified: Tue, 12 Nov 2024 15:29:50 GMT  
 		Size: 6.0 MB (6017216 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:636f5962f66761865cdcee4ec702fda4f4dbe8fb126939f83ec2992209d0b66f`  
+		Last Modified: Tue, 12 Nov 2024 15:29:49 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:81a61ee3ce5af7f700529f55881a97ca5cebdc8c11c768d681b35e4bd9860c1c`  
@@ -299,7 +298,6 @@ CMD ["/etc/docker/registry/config.yml"]
 		Size: 3.3 MB (3340451 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cfe29ef241d9fe87b99b77f4d96972773b3ae04f1a46c6fea0e0a60800f5f1e1`  
-		Last Modified: Tue, 12 Nov 2024 10:28:25 GMT  
 		Size: 295.8 KB (295832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d2787542bdb41f6b8315204be8ea01cb7ff82d9e6de97e9283e8af8dc6ce650e`  
@@ -459,6 +457,7 @@ CMD ["/etc/docker/registry/config.yml"]
 
 -	Layers:
 	-	`sha256:2cf6287c29b40fb867eb63db5d7189724563e69538ef303e15274f8139042129`  
+		Last Modified: Tue, 12 Nov 2024 00:56:53 GMT  
 		Size: 3.2 MB (3230439 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9149be30168d1b1aa8ec6b23c36dcdc39c2b2dcd978c5e0a2d8ca86109a0df7a`  
@@ -474,7 +473,6 @@ CMD ["/etc/docker/registry/config.yml"]
 		Size: 370.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:277269a6b2649ecc19571438083237ee6b8b605bcb79eb5d2de467a0ab86a175`  
-		Last Modified: Tue, 12 Nov 2024 08:41:21 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -498,5 +496,6 @@ $ docker pull registry@sha256:1c55fb5b8a1b682c0cb9ca173aa7fd36a7a8a0686c87592d29
 		Size: 177.1 KB (177053 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d5953f2e3297796f4051786b247167696c4fdc409fca54425806f0ac4df56219`  
+		Last Modified: Tue, 12 Nov 2024 08:41:21 GMT  
 		Size: 14.1 KB (14065 bytes)  
 		MIME: application/vnd.in-toto+json
