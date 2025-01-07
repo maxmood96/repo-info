@@ -58,7 +58,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 64.6 MB (64555923 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb9d6fb145c5367510a78273891d0ba84d7257b0bfdf3cd340f4e3d6f211de0a`  
-		Last Modified: Fri, 21 Jun 2024 02:02:49 GMT  
 		Size: 159.9 MB (159916216 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -124,6 +123,7 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 2.5 MB (2467715 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3781ed66d8db4f1e7c7b6323f62af11c65550a10f339ad7c0fb68f9467f8026d`  
+		Last Modified: Wed, 01 Mar 2023 07:23:17 GMT  
 		Size: 24.5 MB (24503499 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4f32f45a77bbef0505ff02ad954c1ce25d1cb8f5b668bbd7c73fa538966d0c0b`  
@@ -160,7 +160,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 
 -	Layers:
 	-	`sha256:99d1ebcdd364332a1427098feecc8f94a8978ec971b171f7cca03bf01d1a149c`  
-		Last Modified: Thu, 13 Jun 2024 01:03:01 GMT  
 		Size: 22.9 MB (22944997 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:47de34cd92203a1c44adc48be4330b559dcef9e18da3b5babab329d0fd26e11f`  
@@ -233,6 +232,7 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 26.1 MB (26109272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7eedc96c6829dd818687f02719ed29ee02b62d29b93d260a87cbfdf65bd82307`  
+		Last Modified: Fri, 21 Jun 2024 07:34:59 GMT  
 		Size: 2.6 MB (2644870 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cc18ec37f21948c54422a8a2bd31634ae80dc4cd7d1f82b12857c17ad3e4aeec`  
@@ -333,6 +333,7 @@ $ docker pull mono@sha256:e69c4a0ff0efcd311f3ec0da7e72cbafaa9689b8555686674db7d3
 		Size: 11.1 MB (11074056 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f11f469c7181081a082c334f89f2885f7a6a0953d5e152e5f75db2af4504d80e`  
+		Last Modified: Fri, 21 Jun 2024 02:03:57 GMT  
 		Size: 7.9 KB (7870 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -366,7 +367,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 
 -	Layers:
 	-	`sha256:fc8842eebb7ccaf249b2bb2d6a3878fffdae26c9db8f23b393c7f76a6249d2f6`  
-		Last Modified: Tue, 02 Aug 2022 01:25:45 GMT  
 		Size: 30.6 MB (30560308 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1100971c8a3b3eb42c6e22a4c25f405143f007bda60d16697d49b333925b4d84`  
