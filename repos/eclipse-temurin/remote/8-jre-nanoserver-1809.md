@@ -77,6 +77,5 @@ RUN echo Verifying install ...     && echo java -version && java -version     &&
 		Size: 41.1 MB (41061481 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c2ad61c8730cbe4bb0501a870816236a052ad56e51664dde917a15377d1144cd`  
-		Last Modified: Wed, 11 Dec 2024 21:46:11 GMT  
 		Size: 100.3 KB (100316 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
