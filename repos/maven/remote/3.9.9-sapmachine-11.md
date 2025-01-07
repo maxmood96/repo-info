@@ -87,6 +87,7 @@ CMD ["mvn"]
 		Size: 201.2 MB (201237858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4311b9e8105c0cbe154841c58999aeb66690b76926ed1eb48c5c915707a981`  
+		Last Modified: Mon, 09 Dec 2024 20:33:02 GMT  
 		Size: 25.4 MB (25446226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fc1e16434e8b09d1b2b5083be41f3556beb4bad9d5b60baf51139125236ec0d3`  
@@ -200,9 +201,11 @@ CMD ["mvn"]
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f87c1e225a913ec2eeb1f563db61d2e8f6c905a25f48821442ea495e8b67dc6a`  
+		Last Modified: Tue, 03 Dec 2024 10:55:27 GMT  
 		Size: 199.7 MB (199740059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:630663af55b74246cf27606c424d0e57b64cf8a1694a2adf89f68e7bc431e2a2`  
+		Last Modified: Tue, 10 Dec 2024 02:33:04 GMT  
 		Size: 25.5 MB (25526401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:84f3d36902a7e5da04996d931611fe201136fa13c26e9221f13ec8c68682f5d1`  
@@ -312,7 +315,6 @@ CMD ["mvn"]
 
 -	Layers:
 	-	`sha256:4e112885c8061d52bcd0f8d99851b65be887b95c74de235a16946b3562526bbb`  
-		Last Modified: Tue, 19 Nov 2024 17:38:45 GMT  
 		Size: 34.4 MB (34388820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0054bdc255dc1b06b8b1161447179fa9c23f8df02f78bc2fe0b702ac092d803e`  
@@ -336,6 +338,7 @@ CMD ["mvn"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3fcac9e0ea8b72fa7fa848eea6728aab69ae37d3050093bae9ef17e7365584ea`  
+		Last Modified: Tue, 03 Dec 2024 23:12:16 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -355,7 +358,6 @@ $ docker pull maven@sha256:bbb76928d0f9f4e73fa78b8b7b7145996b16207ce4e01a30598ae
 
 -	Layers:
 	-	`sha256:7dc1cbd0c4b1fdeffc79e95cbac5076f1792ec28442cf4d7a74b27e84050dc8d`  
-		Last Modified: Mon, 09 Dec 2024 23:48:58 GMT  
 		Size: 4.2 MB (4176646 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:24c84f4ad123db1f9438e9694f399d19e5b6e04f989a26fa7f5baa482d5e6e58`  
