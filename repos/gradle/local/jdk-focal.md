@@ -2232,14 +2232,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython2.7-minimal/copyright`, `/usr/s
 - `implied`
 - `see above, some license as Python`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python2.7=2.7.18-1~20.04.6
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18-1%7e20.04.6.dsc' python2.7_2.7.18-1~20.04.6.dsc 3167 SHA512:b82f9f3756b4e0679ebec71f00ae8ca0a85b5f20217fd4c7aec90c437a223223fb1ae4e34ae943feb93ab13308681b54404679fab0a38c23812668f8ba77668f
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18.orig.tar.gz' python2.7_2.7.18.orig.tar.gz 17539408 SHA512:9a81cea8f8853b183364b399a238604075b00d18badb0cde118b20fe4428135de5d75a3feca0d56a3d8d40d557e3933de573671072d9da6f76f84435d23bf1ba
-'http://archive.ubuntu.com/ubuntu/pool/universe/p/python2.7/python2.7_2.7.18-1%7e20.04.6.diff.gz' python2.7_2.7.18-1~20.04.6.diff.gz 302039 SHA512:631313859c2106cba48f05fb13b68330399b3efedbd108be3a89a5aa67589c052e954e74f8dc695fc9d20f5ea3784c075f1df322bb882591fa735b9bc96f39b1
-```
 
 ### `dpkg` source package: `python3-defaults=3.8.2-0ubuntu2`
 
