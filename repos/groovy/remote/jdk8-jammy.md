@@ -103,6 +103,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:72838466cfa4a4742c8ed9ad9046e8b38f8719912783bc6fa07f65aa09596de5`  
+		Last Modified: Mon, 11 Nov 2024 19:57:33 GMT  
 		Size: 4.3 KB (4337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -226,6 +227,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 99.0 MB (99029384 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:678fd7c7361510ee3146f84cf55e361f3f4518ae74a966d822a2d691e6bfc66c`  
+		Last Modified: Thu, 24 Oct 2024 00:59:30 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ee17a34338bb474b4022b01c5ab877394b02ac69adc2025c5e476bf3afe25545`  
@@ -377,6 +379,7 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 241.1 KB (241056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6a5ab349e4f6d2d54b63a179eca8beaa29183d098fcee69a3497866fedd0101`  
+		Last Modified: Mon, 11 Nov 2024 18:58:30 GMT  
 		Size: 30.0 MB (29972309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3065ab2e26d9c6cf28a70829f3d25027c83b2404a286bf7a02d0e507e5db69b4`  
@@ -508,9 +511,11 @@ RUN set -o errexit -o nounset     && echo "Testing Groovy installation"     && g
 		Size: 279.3 KB (279348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3cd8ae9f989d200301d40a14adb1311cb3ad0c0c0be9fc6e4600c95cef382233`  
+		Last Modified: Mon, 11 Nov 2024 18:59:02 GMT  
 		Size: 30.0 MB (29972308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e3cddf9c55aaafb6c78a33b4b2b04b03090be4c9ec9ec810b5180f3e65d34ad8`  
+		Last Modified: Mon, 11 Nov 2024 18:59:01 GMT  
 		Size: 136.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -530,8 +535,10 @@ $ docker pull groovy@sha256:6cb2e6d3c82c7cc2e9522cb8af972960f4b78206b644e061c230
 
 -	Layers:
 	-	`sha256:badbdf50e7d661aa828c0b6a1db505802a07faad7d7635d0e30f7343aa517d0a`  
+		Last Modified: Mon, 11 Nov 2024 18:59:01 GMT  
 		Size: 4.0 MB (4012966 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2bbcf57330debf1fd19ff3aa393f5df76c464ce27644a3a76125890797937d0c`  
+		Last Modified: Mon, 11 Nov 2024 18:59:01 GMT  
 		Size: 25.0 KB (24986 bytes)  
 		MIME: application/vnd.in-toto+json
