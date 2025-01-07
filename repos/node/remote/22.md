@@ -161,7 +161,6 @@ CMD ["node"]
 		Size: 44.2 MB (44199967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8edd0b2553b5f713f3599802646253e049500cbf687966d319c07d85faa64679`  
-		Last Modified: Wed, 25 Dec 2024 03:43:44 GMT  
 		Size: 21.8 MB (21767217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bcaf98fafca7f2bb5e42aa0418e5ad79c885f1afd75a0c044855cb3f9f482cb6`  
@@ -184,7 +183,6 @@ CMD ["node"]
 		Size: 1.3 MB (1250672 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f425b25145f8fe5874e9fca557a54a0ee6df7daa486cc5c73238bc2127b63d50`  
-		Last Modified: Wed, 25 Dec 2024 20:01:00 GMT  
 		Size: 448.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -266,6 +264,7 @@ CMD ["node"]
 		Size: 64.3 MB (64347452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8e5e0e9e68b5c9172e85869f2decfc76c39919ba6ae80d8e2b597d25e854f0d3`  
+		Last Modified: Wed, 25 Dec 2024 11:19:12 GMT  
 		Size: 202.7 MB (202686398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f9c5a973b5c3a1cc15fc8223320b63e02fa53025ed9bd75f5543031380e1deac`  
@@ -277,7 +276,6 @@ CMD ["node"]
 		Size: 55.3 MB (55287189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff27b22d4715bb21d59136d42286f3d0543fefaf2412462db3416f6fe2171564`  
-		Last Modified: Wed, 25 Dec 2024 15:12:15 GMT  
 		Size: 1.3 MB (1250674 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ef82dc52da6e1122395f73a49267bf11e0410ed3b7882f204a4d05caac266492`  
@@ -355,6 +353,7 @@ CMD ["node"]
 		Size: 52.3 MB (52328075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5a609591090f1b2fe90289666414a8be62bd40b89ccbd53d2567ba14f37f52a`  
+		Last Modified: Wed, 25 Dec 2024 12:51:22 GMT  
 		Size: 25.5 MB (25523681 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b44eb81eb15a16dd3be1309db287e3a3b8589c16f49f4938705cd78c20f9035c`  
@@ -402,6 +401,7 @@ $ docker pull node@sha256:f3ea90d3bd8108ab8f6580cb9828c203d0cd09cd688671eeccad2a
 		Size: 15.8 MB (15783009 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2e198195633e9f06e7969d1c528647ad788f7d9e67998f5328591e065ab9405f`  
+		Last Modified: Wed, 25 Dec 2024 17:56:40 GMT  
 		Size: 24.4 KB (24402 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -467,11 +467,9 @@ CMD ["node"]
 		Size: 3.3 KB (3319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ae64be612c66f2036701b98d5b7a051223919dab2bca60997e16eba9c78e677`  
-		Last Modified: Wed, 25 Dec 2024 08:44:32 GMT  
 		Size: 55.4 MB (55353165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:89f93bd2569552393984521b93f6289638e1abc42aab82c0a757a3e96a09d829`  
-		Last Modified: Wed, 25 Dec 2024 08:44:31 GMT  
 		Size: 1.3 MB (1250669 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:70f5fbc02835b9053e09be3b6cb1744cb95e4679d7f2bfe03ded5f32c9dd7df8`  
