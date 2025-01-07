@@ -76,7 +76,6 @@ $ docker pull mono@sha256:5a8421c386b586f98034983cc67448394e910e05ff857862418296
 		Size: 4.1 MB (4124009 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3ec35e37e8929d1729d15f72eaafb529c88604e0eb2b568452d3927312850835`  
-		Last Modified: Fri, 21 Jun 2024 01:03:10 GMT  
 		Size: 10.1 KB (10110 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -108,13 +107,14 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:187ecffbd1e0eae5de6567dff32bd58f28623635657779760c9d9539d6b7cc59`  
+		Last Modified: Tue, 02 Aug 2022 00:57:06 GMT  
 		Size: 24.9 MB (24889750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6702eef9c7d9ec6ede2c5f9a15a047b314ccc9140f25694f337c0127478bb25b`  
+		Last Modified: Wed, 01 Mar 2023 07:23:12 GMT  
 		Size: 2.5 MB (2467715 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3781ed66d8db4f1e7c7b6323f62af11c65550a10f339ad7c0fb68f9467f8026d`  
-		Last Modified: Wed, 01 Mar 2023 07:23:17 GMT  
 		Size: 24.5 MB (24503499 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -208,10 +208,10 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 
 -	Layers:
 	-	`sha256:7abf9f73c7747bb840a8edcd895830e53f09498136de3015568a9cd9f5ab10ed`  
+		Last Modified: Thu, 13 Jun 2024 00:44:26 GMT  
 		Size: 26.1 MB (26109272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7eedc96c6829dd818687f02719ed29ee02b62d29b93d260a87cbfdf65bd82307`  
-		Last Modified: Fri, 21 Jun 2024 07:34:59 GMT  
 		Size: 2.6 MB (2644870 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cc18ec37f21948c54422a8a2bd31634ae80dc4cd7d1f82b12857c17ad3e4aeec`  
@@ -278,6 +278,7 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 2.8 MB (2791765 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd658841b3e1b2084a6340e82f84033bf765e9ea9830350aa5a4aba88cbf3166`  
+		Last Modified: Fri, 21 Jun 2024 01:03:14 GMT  
 		Size: 68.6 MB (68585515 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
