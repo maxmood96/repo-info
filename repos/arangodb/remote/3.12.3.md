@@ -171,6 +171,5 @@ $ docker pull arangodb@sha256:8d412bd91489c98b2a4f94ff2ba75d8a57e03a5cac5dc29acf
 		Size: 467.9 KB (467856 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:df6d1a704125cb70cedba44b4915f006ddd00d7b4f840e6168b29b54d7fa4744`  
-		Last Modified: Fri, 13 Dec 2024 22:27:30 GMT  
 		Size: 14.5 KB (14527 bytes)  
 		MIME: application/vnd.in-toto+json
