@@ -83,6 +83,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:77b9df10ef36ffbf1ed109d7c7e168a2c3bc3dd891b0d2569a07b3a2d05a4fa5`  
+		Last Modified: Mon, 08 Jul 2024 19:02:18 GMT  
 		Size: 98.7 MB (98655491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -131,6 +132,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:5764400fc7ac6c7590523ad6dfbd05051cafb64520b4fc4a84a6f6ff7cafaadf`  
+		Last Modified: Mon, 08 Jul 2024 19:17:58 GMT  
 		Size: 104.2 MB (104175675 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
