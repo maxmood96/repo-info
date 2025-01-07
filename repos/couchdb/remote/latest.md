@@ -95,7 +95,6 @@ CMD ["/opt/couchdb/bin/couchdb"]
 		Size: 96.7 MB (96662981 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:079cf07cf1f22b553cfe6e0e448e13320822f05c26f7f1c25d87cfccb7a5cc43`  
-		Last Modified: Tue, 24 Dec 2024 22:26:30 GMT  
 		Size: 379.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:641de90d2ef7cdfedbea23b79a2e304f5a6f9d54eed7701c0f0eddd894948926`  
@@ -103,6 +102,7 @@ CMD ["/opt/couchdb/bin/couchdb"]
 		Size: 1.2 KB (1244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17a2636500314b81e7dd60618845dd45f6f6335f0867c05e08790ae3eb145ccf`  
+		Last Modified: Tue, 24 Dec 2024 22:26:30 GMT  
 		Size: 2.2 KB (2228 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c13f6a635d7083f3177ba4dc07ee43f9b772da6d28c2af4c369336a630a31c79`  
@@ -199,6 +199,7 @@ CMD ["/opt/couchdb/bin/couchdb"]
 		Size: 7.5 MB (7462059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:73540eb5222e6f17fbccc19811cc03ed27a495d20c66675e4752a04af74f8d38`  
+		Last Modified: Wed, 25 Dec 2024 01:53:41 GMT  
 		Size: 348.9 KB (348918 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24cfdbd862f0e26044f42b60422f1d71e9c53d27610aaef80818912be8ce5fa2`  
@@ -214,7 +215,6 @@ CMD ["/opt/couchdb/bin/couchdb"]
 		Size: 96.4 MB (96398944 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:574c249cb1ec8ae2e4b152aaaa3f4ce3e58549d185f1ceaddc26455a872aa726`  
-		Last Modified: Wed, 25 Dec 2024 01:53:42 GMT  
 		Size: 383.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:665c42d0cc8e21427b17c8591fc4922c7559ff85c8e36335b2f5d50316351ab3`  
@@ -226,6 +226,7 @@ CMD ["/opt/couchdb/bin/couchdb"]
 		Size: 2.2 KB (2227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34a1e54e9cd2bdaadd0e8d6dc43cea6efb2568e851663f7762a7740c25eb7807`  
+		Last Modified: Wed, 25 Dec 2024 01:53:43 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -343,7 +344,6 @@ CMD ["/opt/couchdb/bin/couchdb"]
 		Size: 1.2 KB (1245 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a5576253da59a2391f1fcc1f52d6d9e2e22a7c0d4295da468d31651c9eaf2b0c`  
-		Last Modified: Wed, 25 Dec 2024 00:20:03 GMT  
 		Size: 2.2 KB (2226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:00f40eff8a7811876babb158c957d964a248adeaf8ec642bde97f956d002b9c8`  
