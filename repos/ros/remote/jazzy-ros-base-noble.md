@@ -83,7 +83,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-jazzy-r
 		Size: 3.6 MB (3560620 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fa924df05280940cb19b9e74ac5885a2f67622eab697a7433b583a120694239`  
-		Last Modified: Tue, 03 Dec 2024 02:17:23 GMT  
 		Size: 2.0 KB (2002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b98f3e08353bf8f53937fa7168cbad7d39df3214474bc9b07557880d6ff63b08`  
@@ -91,7 +90,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-jazzy-r
 		Size: 270.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c01218c18dd3d57f0fd398836513b6b50fbe554ff4b460941357ebfb7289972`  
-		Last Modified: Tue, 03 Dec 2024 02:17:25 GMT  
 		Size: 122.7 MB (122691998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48a4d000285c3d2a81b20a96c50372bd1cde9b88f7611ccaa417fea7a3c85459`  
@@ -99,6 +97,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-jazzy-r
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17292e7638873b8383a8077c14d0b55cd66f74bc5428ac9cbfb5d353da8c8423`  
+		Last Modified: Tue, 03 Dec 2024 03:25:07 GMT  
 		Size: 114.1 MB (114147298 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9d15681af803fdb5522376544c8684b41f96b7302f381c439f144544ecee9777`  
@@ -206,6 +205,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-jazzy-r
 		Size: 684.2 KB (684168 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:66c673bfa5b508b4c5473b5d450e971cdb23a088fdd04c3bc04bc7016a57396a`  
+		Last Modified: Tue, 03 Dec 2024 10:21:26 GMT  
 		Size: 3.6 MB (3559491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a75b4ec669cbefd2d68a727cdba4a382b80cd85f1930c4c17ea0f72808c33af2`  
@@ -217,6 +217,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-jazzy-r
 		Size: 272.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b494426cf0020c43838c91deb89a9ce6da60bcac380a766a5a3103053fc4a0de`  
+		Last Modified: Tue, 03 Dec 2024 10:21:30 GMT  
 		Size: 117.5 MB (117505391 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f8c8974010aba9f0fb6ac664cee0cae14553b8820fc0de89028fb2488ebf0691`  
@@ -256,7 +257,6 @@ $ docker pull ros@sha256:b8472536f3ad366ed0de26b4a07718010d0c531a2a9314fa2e5e874
 
 -	Layers:
 	-	`sha256:d143fc48534527d4b52d19d90b1eb2e299e6bd26d3cccf5253d1a9f86cd11661`  
-		Last Modified: Tue, 03 Dec 2024 14:37:51 GMT  
 		Size: 23.9 MB (23885912 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b6352b919778348e72928b0aaf7853e1ed552213db004c5e67a2be60d5514f75`  
