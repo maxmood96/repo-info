@@ -1,7 +1,7 @@
 ## `gradle:7-jdk17-alpine`
 
 ```console
-$ docker pull gradle@sha256:efff946fd44fb26483b828a470c176548f930cf47341887fa673b5876862fa36
+$ docker pull gradle@sha256:ee689df4c4a69289d0fcbb6319e18fb4a45d8c102d252441bb713f9047644bde
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,19 +12,19 @@ $ docker pull gradle@sha256:efff946fd44fb26483b828a470c176548f930cf47341887fa673
 ### `gradle:7-jdk17-alpine` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:10ed0d8054d02c0bf07f80770c1ee64c01140ccf0a7ded64e58471c93f15a25a
+$ docker pull gradle@sha256:5377832a1060f1c8d574cd5bbfa2c056873be0837e4891b4945442875df3ed25
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **324.0 MB (323954222 bytes)**  
+-	Total Size: **321.7 MB (321663313 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a6cb37cd95ce8480b0216802a1dfd1eaf425d05ca068c3f3fa67a7b398fb4e00`
+-	Image ID: `sha256:6f2fdc5aeba89fc5720a92737d22ecfdc541d8cef2d6c7515ba37e17ade6466f`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
 # Mon, 05 Feb 2024 22:05:50 GMT
-ADD alpine-minirootfs-3.20.3-x86_64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.4-x86_64.tar.gz / # buildkit
 # Mon, 05 Feb 2024 22:05:50 GMT
 CMD ["/bin/sh"]
 # Mon, 05 Feb 2024 22:05:50 GMT
@@ -76,65 +76,65 @@ USER root
 ```
 
 -	Layers:
-	-	`sha256:da9db072f522755cbeb85be2b3f84059b70571b229512f1571d9217b77e1087f`  
-		Last Modified: Fri, 06 Sep 2024 14:39:08 GMT  
-		Size: 3.6 MB (3623904 bytes)  
+	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
+		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
+		Size: 3.6 MB (3613999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:271c672380d9e6c1adbb4a6d4022eb294e5b840ad2dfdb200f7666d2347d8785`  
-		Last Modified: Tue, 12 Nov 2024 02:38:47 GMT  
-		Size: 23.0 MB (22953395 bytes)  
+	-	`sha256:2596515a216afec869dba3c2bec5b62ba6c48118722dfbff7def49d152ea214d`  
+		Last Modified: Tue, 07 Jan 2025 03:31:19 GMT  
+		Size: 20.6 MB (20646952 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87f906cb517e9f117723f09bd4f24c42b6e0db41d2465a2b09bba69e65ffb95e`  
-		Last Modified: Tue, 12 Nov 2024 02:38:49 GMT  
-		Size: 143.7 MB (143689002 bytes)  
+	-	`sha256:d28b1aaac687d0c998775cd178cfcb63c4942a7cae3524abf72b2cb773ada6b6`  
+		Last Modified: Tue, 07 Jan 2025 03:31:22 GMT  
+		Size: 143.7 MB (143688951 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a2bd53639fc30cf5eddf18027f47695541b28435d6281a1a15c32da7ca9aa58`  
-		Last Modified: Tue, 12 Nov 2024 02:38:47 GMT  
-		Size: 128.0 B  
+	-	`sha256:8c458e7badcfa1c296cf3de2ce32be91ebfc3e6c7af5bfcd4daf878398cdfa11`  
+		Last Modified: Tue, 07 Jan 2025 03:31:18 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ae9f181b9a20026da33fd930467819ec964e7d1cc60357c69cf9893e2ef55103`  
-		Last Modified: Tue, 12 Nov 2024 02:38:47 GMT  
+	-	`sha256:30c5896dd8c5c1d3a7168bce341204f1cc3906f540b490bd5c36ca8902c86ba2`  
+		Last Modified: Tue, 07 Jan 2025 03:31:18 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bcb8bc440793ae322ef2d3f1dedb4f857368f2dc0e75a3714da06415c299eeb`  
-		Size: 1.0 KB (1023 bytes)  
+	-	`sha256:c32d53be91b845f3f1c161836d39049c4b2f09782b5b1ddb2b3c0a5a75a08076`  
+		Last Modified: Tue, 07 Jan 2025 04:20:24 GMT  
+		Size: 1.0 KB (1022 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0f5da99565a66ca24333f8c1561dca3f5b0591b191af842c3032d82d404efc46`  
-		Last Modified: Tue, 12 Nov 2024 03:14:49 GMT  
-		Size: 30.9 MB (30898995 bytes)  
+	-	`sha256:9f439b31b94a2417a992783a14d494121d4ab211c5b75db4a9542cd261e3d009`  
+		Last Modified: Tue, 07 Jan 2025 04:20:25 GMT  
+		Size: 30.9 MB (30924468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:572cc87dcb6c348f04239a1babe43dec81fa9f20f69d2c218ea3f6795e25d150`  
-		Last Modified: Tue, 12 Nov 2024 03:14:50 GMT  
-		Size: 122.7 MB (122730559 bytes)  
+	-	`sha256:f036b228af780966feaff6ff4c4e6e4862dcf19cc210ff337e784c16e4fa28ad`  
+		Size: 122.7 MB (122730569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de224e5bd7751a6898515e13da67071d271d4b501efd90fe45f6eaec6791be91`  
-		Last Modified: Tue, 12 Nov 2024 03:14:48 GMT  
-		Size: 54.9 KB (54903 bytes)  
+	-	`sha256:4b42c56ffcb4567466fbafc533ea72c731cbcd0382112dcdd45e4802d24dc14a`  
+		Last Modified: Tue, 07 Jan 2025 04:20:25 GMT  
+		Size: 54.9 KB (54909 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:7-jdk17-alpine` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:7b018527007d84ff992418e4a4c2244bc9d0661584e30c83c2aa73253820ca19
+$ docker pull gradle@sha256:2f52356c718a7468aac5fd69c6640596ee9d1dad99dde98cbf6a9e3d486c5a77
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3248143 bytes)**  
+-	Total Size: **3.2 MB (3238341 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0c2cdee29596ada8d923d8b0c5fe2e641f40e9a8810e7d60d6c3d84c285383db`
+-	Image ID: `sha256:e4d5d65151465df43787aa99b70632e99dd482edc64e79e2b2a82cbcf932e21e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:df46eebb32feda1a06ce7ed08e5f5cf1549b4e06baf99d2ccdb1481410996cad`  
-		Size: 3.2 MB (3225679 bytes)  
+	-	`sha256:afa41554752c9832cb4200f506f97c62a6fed4fa43141b9e27a2cd3fa82fb190`  
+		Size: 3.2 MB (3215877 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:143428c36b2fff8b4e6bff6912a7ab2488ac5e9d4f3601ce9576c1eec3f8550f`  
-		Last Modified: Tue, 12 Nov 2024 03:14:48 GMT  
+	-	`sha256:c3acf4dc2e99cccadbda52805407c64c9105695044c27cbbd1f69f45531e5124`  
+		Last Modified: Tue, 07 Jan 2025 04:20:25 GMT  
 		Size: 22.5 KB (22464 bytes)  
 		MIME: application/vnd.in-toto+json
