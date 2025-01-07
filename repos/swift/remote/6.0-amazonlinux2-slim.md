@@ -55,6 +55,7 @@ RUN set -e;     ARCH_NAME="$(rpm --eval '%{_arch}')";     url=;     case "${ARCH
 		Size: 62.7 MB (62677439 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3dcf88ef85373ad804858cd3caa35482a7a08d9eafd910b847b016a8b4ba4957`  
+		Last Modified: Fri, 20 Dec 2024 22:32:25 GMT  
 		Size: 200.4 MB (200414455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -78,6 +79,7 @@ $ docker pull swift@sha256:2d66e094a164941a6e01a1ada1fa853791da48e67f755e7edc612
 		Size: 5.1 MB (5067540 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fee37f54685be7bb0ae9eacaba6935d48215b017e56a97a461af74e71906c16e`  
+		Last Modified: Fri, 20 Dec 2024 22:32:22 GMT  
 		Size: 11.9 KB (11897 bytes)  
 		MIME: application/vnd.in-toto+json
 
