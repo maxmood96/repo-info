@@ -83,7 +83,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-iron-ro
 		Size: 3.6 MB (3624624 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d1eb353b4ff7460b69326f178db7028bef8949ed46ce7c9350cfda0c589be8c6`  
-		Last Modified: Tue, 17 Sep 2024 01:01:01 GMT  
 		Size: 2.0 KB (2000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ac8e7cb50e4a3269f4c49ce050ab8e86311ccdc3aff32892c3744297e921c5c`  
@@ -135,7 +134,6 @@ $ docker pull ros@sha256:e8e45a5abd446d57fe0ee7b556059d0f9d3da94f8576448235e474c
 		Size: 23.7 MB (23676964 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0fcb4bf154ffc745753b7138d756ea50c89610caaa2efba2edbe08880e66f5c5`  
-		Last Modified: Tue, 17 Sep 2024 01:58:31 GMT  
 		Size: 17.1 KB (17090 bytes)  
 		MIME: application/vnd.in-toto+json
 
