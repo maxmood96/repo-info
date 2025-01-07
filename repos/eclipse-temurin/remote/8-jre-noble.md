@@ -102,6 +102,7 @@ $ docker pull eclipse-temurin@sha256:c0b63c13b3fa61e9bef877e08b3bb94323ee678b94b
 		Size: 3.2 MB (3150310 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0996dba834db5434d3a1e163880aac0be0ec0180c780a02b735ad1cc9ff066f3`  
+		Last Modified: Tue, 03 Dec 2024 02:30:02 GMT  
 		Size: 22.7 KB (22660 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -164,6 +165,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 39.3 MB (39345247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7549812bba1a1bea4ea83ed4b69f53102bbfb59a697661ef545d2fad3ad27807`  
+		Last Modified: Tue, 03 Dec 2024 07:46:00 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5a69e5cbcfd439a4b28fa1de1e7620d39d8b66ef16cc506c4a7e1b5fbe691215`  
@@ -191,7 +193,6 @@ $ docker pull eclipse-temurin@sha256:14c9501f819179d7e70196fe6aad3d2337bd40759f0
 		Size: 3.2 MB (3156024 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6fb8b6760f9c4d48e90f70abc49dbbab38021101b61fb0255ae82a69ad3f5fda`  
-		Last Modified: Tue, 03 Dec 2024 07:46:00 GMT  
 		Size: 22.8 KB (22762 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -254,7 +255,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 40.9 MB (40866846 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:70fc8b4b1871977a0f5511e531b0ab95f25a83af81ba644a9096c7c3543b0fb5`  
-		Last Modified: Tue, 03 Dec 2024 05:49:06 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eae69ee20c6733b6e0cda312fa7519c9bc7f42c9a133407a21b34f6ecc9853c6`  
@@ -341,7 +341,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 18.8 MB (18845906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ebba8dc80d20e19ad4bae5a7894e994b0c56701acce23665b6d6c0f245eebaf1`  
-		Last Modified: Tue, 03 Dec 2024 04:45:39 GMT  
 		Size: 41.3 MB (41258824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bd594dd7ebcd31adf2e90eeecdfd243de8d05290429607d4e0534887d2034cae`  
