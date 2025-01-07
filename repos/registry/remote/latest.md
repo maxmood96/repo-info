@@ -1,7 +1,7 @@
 ## `registry:latest`
 
 ```console
-$ docker pull registry@sha256:2fc8a6fedb91029d2ab86f39c3b499280f369cf540bbff838423e05d93e75f99
+$ docker pull registry@sha256:26f7266535a3a1dae81e137ba4935c59d96e7bb4b700f64e4af8959ca5ab0419
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -69,6 +69,7 @@ CMD ["/etc/docker/registry/config.yml"]
 		Size: 6.4 MB (6403784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:afcf3903ce8c5842c04532ba00a69ce19f238b03872154ad1e257d39a64933c6`  
+		Last Modified: Tue, 07 Jan 2025 03:15:27 GMT  
 		Size: 370.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ae1e60cf899f2ae517e502d7f8798722c6d0f61d2454862f2bd87172793a1c65`  
@@ -181,19 +182,19 @@ $ docker pull registry@sha256:6c9f5f2789f4de52c26469f088906e1f8b2e6839bcb87e54d5
 ### `registry:latest` - linux; arm variant v7
 
 ```console
-$ docker pull registry@sha256:47ef7710ba9f4fbd700872c21eab27a5dfa893a0e0911715852cdd2868ef21df
+$ docker pull registry@sha256:9126ddb9b38b2265550e19f0240941a7118b5c620b7561338830de10f9963db0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.2 MB (9222173 bytes)**  
+-	Total Size: **9.2 MB (9201788 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6200c959b354647eaf359eec9856aba78d2f961b1429c5cdcfa94c358192dbf2`
+-	Image ID: `sha256:44abcbb25e569ce7af153a0dacc3e8071eee28693c2f5cae1be010ae314a7aff`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
 
 ```dockerfile
 # Mon, 02 Oct 2023 18:42:41 GMT
-ADD alpine-minirootfs-3.18.9-armv7.tar.gz / # buildkit
+ADD alpine-minirootfs-3.18.10-armv7.tar.gz / # buildkit
 # Mon, 02 Oct 2023 18:42:41 GMT
 CMD ["/bin/sh"]
 # Mon, 02 Oct 2023 18:42:41 GMT
@@ -215,66 +216,67 @@ CMD ["/etc/docker/registry/config.yml"]
 ```
 
 -	Layers:
-	-	`sha256:7e2a8985a55f5e4f3b3ae472c5b93ce2792c73bcc72c5b6d704ccb5fb434a07b`  
-		Last Modified: Mon, 09 Sep 2024 07:02:44 GMT  
-		Size: 2.9 MB (2911454 bytes)  
+	-	`sha256:52e1a0d0bc554ff1294b79e52982946141f0dbe774dd603e745e91fa95cbdcc0`  
+		Last Modified: Tue, 07 Jan 2025 02:56:17 GMT  
+		Size: 2.9 MB (2904510 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2862979d3b8c65bc60344e1997591bded8ed142bd7fd405120128eca7f49ca44`  
-		Last Modified: Tue, 12 Nov 2024 15:29:49 GMT  
-		Size: 292.9 KB (292920 bytes)  
+	-	`sha256:c00e99f059306c5402b4ded95e14a270a824d4046c3afce7ddf45e4eee26102a`  
+		Last Modified: Tue, 07 Jan 2025 06:19:46 GMT  
+		Size: 279.5 KB (279477 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4518dd25cdc89f46b95212b0f8e670f000254dc3db5b67aade21b5b01391faa`  
-		Last Modified: Tue, 12 Nov 2024 15:29:50 GMT  
+	-	`sha256:2a29bd9d7fda548e4391ecbf347c7005f5d6bf0924f75cf1e9db23fd9ffb372d`  
+		Last Modified: Tue, 07 Jan 2025 06:19:46 GMT  
 		Size: 6.0 MB (6017216 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:636f5962f66761865cdcee4ec702fda4f4dbe8fb126939f83ec2992209d0b66f`  
-		Size: 369.0 B  
+	-	`sha256:dbf2211f7dd108ea925e6711fb7c6eb5b5d585daba27d80e0959797ef413bd6d`  
+		Last Modified: Tue, 07 Jan 2025 06:19:46 GMT  
+		Size: 371.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81a61ee3ce5af7f700529f55881a97ca5cebdc8c11c768d681b35e4bd9860c1c`  
-		Last Modified: Tue, 12 Nov 2024 15:29:49 GMT  
+	-	`sha256:c90dcac0c0f3a1067c4e16107f6b510984601b4d0fc54416356fe6146b745b13`  
+		Last Modified: Tue, 07 Jan 2025 06:19:46 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `registry:latest` - unknown; unknown
 
 ```console
-$ docker pull registry@sha256:78b317756a86aa4c6aeb9088c93296bfaa48d4c4cbc06a0ca11c7fd65e62a6a1
+$ docker pull registry@sha256:318421972eaee19efeda0906a3aee9306fac431b3f50064b33f118dc18771ecf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **193.2 KB (193197 bytes)**  
+-	Total Size: **188.4 KB (188374 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:72878d323f86f97f5c0701a676fd961d4b6c6a25d2f67b24461e2aaa011a824d`
+-	Image ID: `sha256:8a335c7e70e90b941d4c2ae8df80a015fbf11300b06ba6648736b76227d2917c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e791e9085d9badcc51e175cf9eb345929d3837ee061f19a89772b55d1009f974`  
-		Last Modified: Tue, 12 Nov 2024 15:29:49 GMT  
-		Size: 179.0 KB (179043 bytes)  
+	-	`sha256:fd7824ae74a43ef109d829b530d3f102c52e1b383289db4d500989c60673d068`  
+		Last Modified: Tue, 07 Jan 2025 06:19:46 GMT  
+		Size: 174.2 KB (174220 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:898f7fdd08c3b472b4e5cff35cbe6e5139db5eb1bc94259a80e14b98868bac1b`  
-		Last Modified: Tue, 12 Nov 2024 15:29:49 GMT  
+	-	`sha256:392edc5795705d1b0fa57d8865fe41531ca9467fd9ae58f6ad3f23545649c8df`  
+		Last Modified: Tue, 07 Jan 2025 06:19:46 GMT  
 		Size: 14.2 KB (14154 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `registry:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull registry@sha256:1ef66c49c952ab0d20c905634d50d3a0da70133b0cdb52732a30a0fd89f01a2c
+$ docker pull registry@sha256:9c833162b2eece5355ceb22acd599d2524cc6486f59c545583f4958816da0657
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.5 MB (9461601 bytes)**  
+-	Total Size: **9.4 MB (9444451 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1c6adc34955df9f22da1fdc0474dcbab66dfce57ded89499201125f7dc1b9924`
+-	Image ID: `sha256:d7f5db491c361ca1e645859af99f3b172a2ac3ac1b9896dcf3ef352036deaf96`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
 
 ```dockerfile
 # Mon, 02 Oct 2023 18:42:41 GMT
-ADD alpine-minirootfs-3.18.9-aarch64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.18.10-aarch64.tar.gz / # buildkit
 # Mon, 02 Oct 2023 18:42:41 GMT
 CMD ["/bin/sh"]
 # Mon, 02 Oct 2023 18:42:41 GMT
@@ -296,47 +298,48 @@ CMD ["/etc/docker/registry/config.yml"]
 ```
 
 -	Layers:
-	-	`sha256:0dfcae9cb3f09031e3687535f2d3e3c2f08533799b67ed61076e79e4ed1c7c4a`  
-		Last Modified: Mon, 09 Sep 2024 07:02:44 GMT  
-		Size: 3.3 MB (3340451 bytes)  
+	-	`sha256:fb3f1f9d2d6533828602bbf29a9a8cc07ae4a2a3e88846100e68ce43a16d2932`  
+		Last Modified: Tue, 07 Jan 2025 03:03:28 GMT  
+		Size: 3.3 MB (3337435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfe29ef241d9fe87b99b77f4d96972773b3ae04f1a46c6fea0e0a60800f5f1e1`  
-		Last Modified: Tue, 12 Nov 2024 10:28:25 GMT  
-		Size: 295.8 KB (295832 bytes)  
+	-	`sha256:de214b2e86deccd7ec891d7639ec311ffe0367fb8514cbac3837f5ef085f774e`  
+		Last Modified: Tue, 07 Jan 2025 07:09:15 GMT  
+		Size: 281.7 KB (281703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2787542bdb41f6b8315204be8ea01cb7ff82d9e6de97e9283e8af8dc6ce650e`  
-		Size: 5.8 MB (5824734 bytes)  
+	-	`sha256:4a9b3e296f121ec56f918ca09de97ee071efc86ad29dcc854d0549d2697e9b18`  
+		Last Modified: Tue, 07 Jan 2025 07:09:15 GMT  
+		Size: 5.8 MB (5824732 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b69fee0ac896543d4936d9c57aea16e665df781ec13ec5257f8bea258da7c79`  
-		Last Modified: Tue, 12 Nov 2024 10:28:25 GMT  
-		Size: 370.0 B  
+	-	`sha256:203af9cbfb3f6d2622303f23f9c4eedb0ebef36e84f0b5eda69bc69f03cb5c24`  
+		Last Modified: Tue, 07 Jan 2025 07:09:14 GMT  
+		Size: 367.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbb2de197705d02128cc248e6540d752209fe9ed73a32bfb6b19947205030524`  
-		Last Modified: Tue, 12 Nov 2024 10:28:25 GMT  
+	-	`sha256:db1ddda351657531159618bf230a5095d1db2a3ab53a8ef428f3c97a24168783`  
+		Last Modified: Tue, 07 Jan 2025 07:09:15 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `registry:latest` - unknown; unknown
 
 ```console
-$ docker pull registry@sha256:bbf9ae6a42e4d8aef2759420301cfcc7ed642ba200ae3bf030fd5fdb9d0d2a9d
+$ docker pull registry@sha256:b56f57d3c345198d50b4f417b5a2cf570f28c1af31c0689cc9564b9a0e4267af
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **193.2 KB (193247 bytes)**  
+-	Total Size: **188.4 KB (188424 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb8bd06db3380d6a4af9f2d942917235c0df5b1a02aec67120ee470ae2e11a94`
+-	Image ID: `sha256:64436b8673609b7502ac0cde578248704a53a2f342e3fe7d3a9c280ca0a16e43`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1b1f1a3aa2b9f06c429988bbdfa0c781210c0d81d6befa0769051742b9607830`  
-		Last Modified: Tue, 12 Nov 2024 10:28:25 GMT  
-		Size: 179.1 KB (179063 bytes)  
+	-	`sha256:c51cf8033267067c13ee1ad51fda4b7233f140962f2432a72592909a84e3a2f5`  
+		Last Modified: Tue, 07 Jan 2025 07:09:15 GMT  
+		Size: 174.2 KB (174240 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a601ce5a2c5491c5fd401d93594ecbf76515407f52ce37185f82be3efee56e04`  
-		Last Modified: Tue, 12 Nov 2024 10:28:25 GMT  
+	-	`sha256:dcf56cf60418af47370ec7e6e57b3227568605665e3680e9e3a3c9c6e4e62cba`  
+		Last Modified: Tue, 07 Jan 2025 07:09:14 GMT  
 		Size: 14.2 KB (14184 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -386,6 +389,7 @@ CMD ["/etc/docker/registry/config.yml"]
 		Size: 282.1 KB (282083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0bf20f96a940953487c46a1c9baf778a210d310416efb77d636fa930da8bdeae`  
+		Last Modified: Tue, 07 Jan 2025 06:13:14 GMT  
 		Size: 5.7 MB (5689216 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd024ed6200b5876a9fbac4bc327fc76555e3da1dd66feb73f348909da0ef3c5`  
@@ -424,19 +428,19 @@ $ docker pull registry@sha256:4c53f4667d6d91bf033df9d18ceccf31eec8c36a6cb580d4cc
 ### `registry:latest` - linux; s390x
 
 ```console
-$ docker pull registry@sha256:cad4fdf4a03376ba0904fafcb75e16e3468c10f61e3c64a4cfbb372470c8b891
+$ docker pull registry@sha256:51e058f2ed6c99da7f064e2edd532a25f4e131452d3c38753e3f70c1abeab583
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **9.7 MB (9684971 bytes)**  
+-	Total Size: **9.7 MB (9662898 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90d7cccb184b781c20bdbb9ceff63cafb03db8074fdc32bac40da22617b729bb`
+-	Image ID: `sha256:3d323e8994059f531daad4e5b537ab4686d057a5e1ce7048a9a3a7a03cd45030`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["\/etc\/docker\/registry\/config.yml"]`
 
 ```dockerfile
 # Mon, 02 Oct 2023 18:42:41 GMT
-ADD alpine-minirootfs-3.18.9-s390x.tar.gz / # buildkit
+ADD alpine-minirootfs-3.18.10-s390x.tar.gz / # buildkit
 # Mon, 02 Oct 2023 18:42:41 GMT
 CMD ["/bin/sh"]
 # Mon, 02 Oct 2023 18:42:41 GMT
@@ -458,46 +462,47 @@ CMD ["/etc/docker/registry/config.yml"]
 ```
 
 -	Layers:
-	-	`sha256:2cf6287c29b40fb867eb63db5d7189724563e69538ef303e15274f8139042129`  
-		Last Modified: Tue, 12 Nov 2024 00:56:53 GMT  
-		Size: 3.2 MB (3230439 bytes)  
+	-	`sha256:3f361b0906ea16e3dece69ee08f2757263eec429d79816947474341b7bb78cda`  
+		Last Modified: Tue, 07 Jan 2025 02:33:55 GMT  
+		Size: 3.2 MB (3221764 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9149be30168d1b1aa8ec6b23c36dcdc39c2b2dcd978c5e0a2d8ca86109a0df7a`  
-		Last Modified: Tue, 12 Nov 2024 08:41:21 GMT  
-		Size: 293.9 KB (293899 bytes)  
+	-	`sha256:aa30bcca2667fd92ed4f05b233be5f3923c7bf4068e427e55e80c69accae8cc7`  
+		Last Modified: Tue, 07 Jan 2025 06:18:40 GMT  
+		Size: 280.5 KB (280502 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2ded3165ca2acf8ea3ca820d45d88d54ade5de9f1264cc65acbe94b26d0b26`  
-		Last Modified: Tue, 12 Nov 2024 08:41:21 GMT  
+	-	`sha256:b5d01416ada54fdf42e0f8038487e81d3ca6644e614aec672200df5b19fff00b`  
+		Last Modified: Tue, 07 Jan 2025 06:18:41 GMT  
 		Size: 6.2 MB (6160049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:878ae226c4b32247c8b552259cd2ff67e2c68b8c6dfe9af0b0785d28d04a9618`  
-		Last Modified: Tue, 12 Nov 2024 08:41:21 GMT  
-		Size: 370.0 B  
+	-	`sha256:65d403d2dd580732e316a0e33a62b41c5d9cf37426bac4861e6fdfee7b666318`  
+		Last Modified: Tue, 07 Jan 2025 06:18:40 GMT  
+		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:277269a6b2649ecc19571438083237ee6b8b605bcb79eb5d2de467a0ab86a175`  
-		Last Modified: Tue, 12 Nov 2024 08:41:21 GMT  
+	-	`sha256:abe06d437b66f6a4cc177bb0d90eb1b42a6dc4eb63c63ff204588f61dd53c06a`  
+		Last Modified: Tue, 07 Jan 2025 06:18:41 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `registry:latest` - unknown; unknown
 
 ```console
-$ docker pull registry@sha256:1c55fb5b8a1b682c0cb9ca173aa7fd36a7a8a0686c87592d298c085ba1bf31c9
+$ docker pull registry@sha256:b8e44d226fbf5a75f7f57602fe57366f47830fd02d3059763c84e569b07f1875
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **191.1 KB (191118 bytes)**  
+-	Total Size: **186.3 KB (186298 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8431cec168c6e8aeb1395b10dad52b6f9cdcadef36d4c1b5a36532ee574595ad`
+-	Image ID: `sha256:c0a5de63d743bd096ef313f0e864cc7468613a4d657916edb2d9bce42a1c9030`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7068d24c38f441b8c1a3dca81bc616b32e4c6eea0489aa2e68837a2b1d02973c`  
-		Size: 177.1 KB (177053 bytes)  
+	-	`sha256:292f3c534f05732a64699849e73e36e51a2f31666c23e5ce7ce7352efcb992a9`  
+		Last Modified: Tue, 07 Jan 2025 06:18:40 GMT  
+		Size: 172.2 KB (172233 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d5953f2e3297796f4051786b247167696c4fdc409fca54425806f0ac4df56219`  
-		Last Modified: Tue, 12 Nov 2024 08:41:21 GMT  
+	-	`sha256:90cd775f6b7a08fefd088bdf59a7baa32f9431356a7b99503e3bc9b0707ff855`  
+		Last Modified: Tue, 07 Jan 2025 06:18:41 GMT  
 		Size: 14.1 KB (14065 bytes)  
 		MIME: application/vnd.in-toto+json
