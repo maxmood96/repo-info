@@ -115,6 +115,7 @@ RUN
 
 -	Layers:
 	-	`sha256:bba906eac447b254388044e25a46082c06582e319329cd9307b763ea4f7deb06`  
+		Last Modified: Fri, 15 Mar 2024 23:55:41 GMT  
 		Size: 96.7 KB (96709 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:70de639185ba17522c49753aa565f10f4c655ffd4c7e520f49aba50ace51e62d`  
@@ -201,6 +202,7 @@ CMD ["notary-signer" "--version"]
 		Size: 351.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34589411af2e17d04d981d078bbe0a72fb854bec0188371246f576cffb3eb357`  
+		Last Modified: Mon, 18 Mar 2024 16:05:24 GMT  
 		Size: 373.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -316,6 +318,7 @@ $ docker pull notary@sha256:00e453626795750671543855488e17d9b70f263458fa914e5466
 
 -	Layers:
 	-	`sha256:8fd6d0681b9a5f70c04a29a10f6ae83fc92e39a967426153745551b916318ff2`  
+		Last Modified: Sat, 16 Mar 2024 15:49:31 GMT  
 		Size: 96.7 KB (96716 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:faa8d302ab055339f450fa910a0ce8af9da2efaf28eeb5106230956c91330504`  
@@ -371,6 +374,7 @@ CMD ["notary-signer" "--version"]
 
 -	Layers:
 	-	`sha256:f7286662823688d15d8d154fce6a97114514723ec2d9806a9527337308bd4dd9`  
+		Last Modified: Sat, 27 Jan 2024 00:39:18 GMT  
 		Size: 2.8 MB (2811055 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5e23a9a4d3fd14eb612e5eda8418b001357a5e223cd1e1f685ba0f13076defc9`  
@@ -490,10 +494,10 @@ CMD ["notary-signer" "--version"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:94d6f88114303c019db74807ce120dedc88f0b82788c35b9dd3bbcfcef7b35df`  
-		Last Modified: Sat, 16 Mar 2024 10:34:19 GMT  
 		Size: 354.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d1bce13479dfad62d6689e970d72ac66774849a79e1b549ecd0c603e8d91cb59`  
+		Last Modified: Sat, 16 Mar 2024 10:34:19 GMT  
 		Size: 375.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -617,6 +621,5 @@ $ docker pull notary@sha256:e8326eb34838897b53c80aaab771af4cc16c0298768228f8cc4b
 		Size: 94.8 KB (94755 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:12e22ca82d24a4a3f67e7928c6c6a9889525b36ed128e501e2fb7a2f5fb5d6f0`  
-		Last Modified: Sun, 17 Mar 2024 22:28:17 GMT  
 		Size: 18.4 KB (18425 bytes)  
 		MIME: application/vnd.in-toto+json
