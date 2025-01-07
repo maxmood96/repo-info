@@ -56,6 +56,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 		Size: 244.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:809dd25b48752fba0eeac0fcf5c38a88f0e12b0db0b022acf82ae7fafd98800f`  
+		Last Modified: Tue, 03 Dec 2024 02:31:57 GMT  
 		Size: 91.4 KB (91435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -221,5 +222,6 @@ $ docker pull neurodebian@sha256:640e8a6c2b29256a11a97f4fab868b83769f471a9a56a78
 		Size: 3.6 MB (3561502 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dda46b32b1387c0fd07559cd518cb696c94a4a839d171f21cf6124f57cee113a`  
+		Last Modified: Tue, 03 Dec 2024 02:15:10 GMT  
 		Size: 13.6 KB (13638 bytes)  
 		MIME: application/vnd.in-toto+json

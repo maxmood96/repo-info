@@ -44,9 +44,11 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 		Size: 48.5 MB (48497066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:096d5194d130e490b02f9eed837f199ac0d1abb923e345a62f61451a52a2cdd4`  
+		Last Modified: Tue, 24 Dec 2024 22:29:02 GMT  
 		Size: 11.3 MB (11266794 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:063a5616cfa155fb951bd0c9cf1dd0f9322ec8b3d98dc600700cce46c3e435cf`  
+		Last Modified: Tue, 24 Dec 2024 22:29:01 GMT  
 		Size: 1.7 KB (1740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:72f06dced8f7c7fe5dbfd8ef9650f54793d5d6196b43078f72fcd64b157bb6bc`  
@@ -121,6 +123,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 		Size: 1.7 KB (1743 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:51f7a3036299a2c5f2be4ab8d3c47a46eab3f06d55ab60826cc639ced1d6c067`  
+		Last Modified: Wed, 25 Dec 2024 02:19:38 GMT  
 		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:06582c2036bcbd28dd303ac041a31fa9d209a44ef50795590fe9abd81bb38db7`  

@@ -46,6 +46,7 @@ RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.
 		Size: 48.5 MB (48497066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9bc3f2ba2cdabe9286f5e36312b98da1c17f9f020aeaab444d860731680de491`  
+		Last Modified: Tue, 24 Dec 2024 22:28:59 GMT  
 		Size: 11.3 MB (11266769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d0deac410ae9043bd2dc82cbee38b1679d26ca09c8aa209c1e724d414678348b`  
@@ -130,6 +131,7 @@ RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.
 		Size: 1.7 KB (1743 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:51f7a3036299a2c5f2be4ab8d3c47a46eab3f06d55ab60826cc639ced1d6c067`  
+		Last Modified: Wed, 25 Dec 2024 02:19:38 GMT  
 		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:06582c2036bcbd28dd303ac041a31fa9d209a44ef50795590fe9abd81bb38db7`  
@@ -206,6 +208,7 @@ RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.
 		Size: 1.7 KB (1744 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aa4c41a48b8336769e9e874de5d168aaaf9803703bbb14816f197a1f92dbd9b0`  
+		Last Modified: Tue, 24 Dec 2024 22:25:21 GMT  
 		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7a543f8d766a8e16660afc6c1d3a72a188d6b8797c95b78b2946f8393bfe32f3`  
