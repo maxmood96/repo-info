@@ -343,7 +343,6 @@ $ docker pull gazebo@sha256:5e456cfb80f91f5d184b9a016c089e378e268ff233ecfd93373c
 		Size: 37.5 MB (37541712 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a781552e8708b7f1ff4f52aa3cefb93f05dc179ea71dc170313789b30fb98e9f`  
-		Last Modified: Mon, 09 Dec 2024 20:39:31 GMT  
 		Size: 8.7 KB (8662 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -460,7 +459,6 @@ $ docker pull gazebo@sha256:5e456cfb80f91f5d184b9a016c089e378e268ff233ecfd93373c
 		Size: 37.5 MB (37541712 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a781552e8708b7f1ff4f52aa3cefb93f05dc179ea71dc170313789b30fb98e9f`  
-		Last Modified: Mon, 09 Dec 2024 20:39:31 GMT  
 		Size: 8.7 KB (8662 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -577,6 +575,5 @@ $ docker pull gazebo@sha256:5e456cfb80f91f5d184b9a016c089e378e268ff233ecfd93373c
 		Size: 37.5 MB (37541712 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a781552e8708b7f1ff4f52aa3cefb93f05dc179ea71dc170313789b30fb98e9f`  
-		Last Modified: Mon, 09 Dec 2024 20:39:31 GMT  
 		Size: 8.7 KB (8662 bytes)  
 		MIME: application/vnd.in-toto+json
