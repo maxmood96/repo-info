@@ -411,6 +411,5 @@ $ docker pull orientdb@sha256:c7910d39d2de9b9cfecadba208c2b1ec24d79ed24047193c56
 		Size: 3.4 MB (3416992 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:03fbe84b1b32dabbc1d8c197a4faeb5a19c1d2c62c213e7ccbc7cedd64df067a`  
-		Last Modified: Tue, 03 Dec 2024 14:33:07 GMT  
 		Size: 14.6 KB (14625 bytes)  
 		MIME: application/vnd.in-toto+json
