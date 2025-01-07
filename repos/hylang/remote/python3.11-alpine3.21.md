@@ -80,7 +80,6 @@ CMD ["hy"]
 		Size: 16.2 MB (16170129 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:976ae72214aad85b1a101d4b9d12dcb9282279bc1817115958aa38a768898ea1`  
-		Last Modified: Mon, 09 Dec 2024 20:43:49 GMT  
 		Size: 251.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:78d01da0dd8c59ac1303d8756cf33ad7aaa7087010c554e2cc412aa5650cb131`  
@@ -163,11 +162,9 @@ CMD ["hy"]
 		Size: 3.4 MB (3367182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1f5457a5c3371d1e99413bd7b17c4cc7a7f8718c57db9467e23e6b0315051483`  
-		Last Modified: Tue, 10 Dec 2024 01:40:04 GMT  
 		Size: 463.0 KB (462974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:302b2f669bfe2606f0c15b455f10846be4a9c3d37bf6d37cecbb0632e5cd0fa3`  
-		Last Modified: Tue, 10 Dec 2024 01:47:23 GMT  
 		Size: 15.7 MB (15716936 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f7127ca7419906d0b04eb037cb866657cafc134251bf621e2624f1aabbb84466`  
@@ -282,6 +279,7 @@ $ docker pull hylang@sha256:9e099b460d3332026aafca07d090ffc9de2c60773c55001ecc1d
 
 -	Layers:
 	-	`sha256:41b75019340725b722dcfea0a89c804912c031fd770653dc2cb9514256452ac1`  
+		Last Modified: Wed, 11 Dec 2024 19:32:37 GMT  
 		Size: 669.7 KB (669656 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9724ce1174687c1fc59b101f83cfd49d0e8366f8a194740af5b88f135e2c39e6`  
@@ -340,7 +338,6 @@ CMD ["hy"]
 		Size: 4.0 MB (3993186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:52e189a1282f54a74c15169c13fb587c16981e2a6bee34e159746d90b8d2b63d`  
-		Last Modified: Tue, 10 Dec 2024 01:02:04 GMT  
 		Size: 464.9 KB (464899 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7aa4fe636bcf3c91777e0a782636128dcb226307ce6cab6512540f90f9bdc265`  
@@ -427,6 +424,7 @@ CMD ["hy"]
 
 -	Layers:
 	-	`sha256:1b51cef20fac755ea70acf005c7461407387b0deae88500e38a1982868469f7a`  
+		Last Modified: Tue, 07 Jan 2025 02:28:41 GMT  
 		Size: 3.5 MB (3458271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:77ee490e1f74aefd6d615ef85a946b719f7f1fe3d7181c45e4bc474ab67ede94`  
@@ -434,7 +432,6 @@ CMD ["hy"]
 		Size: 444.6 KB (444631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a1f7a365f8694954ac8a989f0907c14ef51641a96a95999f4796c645b949b75c`  
-		Last Modified: Tue, 07 Jan 2025 03:22:30 GMT  
 		Size: 16.4 MB (16385929 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b5cc2929745c53c41e6899a993217bcc50030f49b4a044e0aecd7b8a43e18f8b`  
@@ -517,10 +514,10 @@ CMD ["hy"]
 
 -	Layers:
 	-	`sha256:a12ff663c50b78339bd273940ba035e29d8220954846a4c35a5f79080b37a3d3`  
-		Last Modified: Thu, 05 Dec 2024 22:18:21 GMT  
 		Size: 3.6 MB (3577108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:181d75a5801941a93a0526e4bb3afa19cd6520ab413ea6abc4bab4b84099383f`  
+		Last Modified: Mon, 09 Dec 2024 23:07:24 GMT  
 		Size: 465.4 KB (465407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e6827c981aa240968bfd8a98c4bf73d9921347b9b42e04ff4a86226d0210f223`  
@@ -552,10 +549,10 @@ $ docker pull hylang@sha256:4220c6c8338ff0dc32008df81acc50a430ee641c2189d1f098f8
 
 -	Layers:
 	-	`sha256:c26a08fe370c86bb331960d8da2a2e79e7e2f169bc338d9a4c0fa15532c23acf`  
-		Last Modified: Wed, 11 Dec 2024 19:34:17 GMT  
 		Size: 664.9 KB (664876 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e7590bbbc0a121900cff7800860ae97f3dc01c1be8641456f7f5e14655c2307f`  
+		Last Modified: Wed, 11 Dec 2024 19:34:17 GMT  
 		Size: 9.4 KB (9410 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -614,7 +611,6 @@ CMD ["hy"]
 		Size: 462.9 KB (462902 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7386a4fd58fa8bb85f890575b48945fbcf00010226e852ff30ecb1a3962b8ab9`  
-		Last Modified: Tue, 10 Dec 2024 02:54:07 GMT  
 		Size: 16.6 MB (16646010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a60937b12655e75cf2bee88b05e977179feff9dea2022730abfc72ab94a9ccd0`  

@@ -61,6 +61,7 @@ CMD ["hy"]
 		Size: 1.7 GB (1720268357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3308b54d35b61854238974280a5b0ecc72a98e2ead17d04f42770a7b35407090`  
+		Last Modified: Tue, 10 Dec 2024 18:45:28 GMT  
 		Size: 293.9 MB (293901821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:547bf53b05965b80a2424a130e72129cc88a9de9b7cb3026787cd813b81db5dd`  
@@ -92,7 +93,6 @@ CMD ["hy"]
 		Size: 1.3 KB (1329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e4007bbcbedf9bff98f20682c1a8eb7e0ced69d2d5b64dd183a486698f6edd82`  
-		Last Modified: Wed, 11 Dec 2024 20:47:27 GMT  
 		Size: 3.9 MB (3909085 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2c4c2232fd58155cefc2218cb04019e4560914e851b00a3e8ca3f381ddd09830`  
