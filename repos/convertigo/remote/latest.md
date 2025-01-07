@@ -173,7 +173,6 @@ CMD ["convertigo"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:13a891d2c3122cd607e0d11fe72727a2b2a61a8399eba477835d52100ef03f65`  
-		Last Modified: Tue, 10 Dec 2024 02:09:48 GMT  
 		Size: 2.4 MB (2430856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1938c6fc1d68816b06d81f7203c4df0965c4d0f7d6b5c9f5a72a5900800c386e`  
@@ -347,10 +346,10 @@ CMD ["convertigo"]
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bbd1f22a9dd7228be27e706b25f1b3429d02ca813b8c0e0263edaa65a05911c8`  
+		Last Modified: Thu, 24 Oct 2024 01:09:29 GMT  
 		Size: 22.1 MB (22072026 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:769c454e4083771448c1ca566548905f47f1628bcd3d645e5486a44156028a57`  
-		Last Modified: Thu, 24 Oct 2024 01:15:08 GMT  
 		Size: 155.8 MB (155805359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b6fa8b0f1fe6e6b10b29a94eda5f2f8685322a6a9a25fcdf3aa25f40dd28d31`  
@@ -358,7 +357,6 @@ CMD ["convertigo"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:795abbf1e836cd5e5bbe1b004ef8374ccd5b8067cf7902905f2776353abd5423`  
-		Last Modified: Thu, 24 Oct 2024 01:15:04 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1016c3c2d10d9be61db400c27b61bcd31eb48e3a63fc305f7a2db3f6bd2963fb`  
@@ -390,10 +388,10 @@ CMD ["convertigo"]
 		Size: 2.3 MB (2261621 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:96ad038c8775610237e06244e4292648c25412e5cee428e60e1a2bc9c064c12c`  
+		Last Modified: Tue, 10 Dec 2024 02:51:47 GMT  
 		Size: 4.5 KB (4475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c3fa7ae7d0b1b6b1d623e08f8bcb7ea7ca9c673bf88a5ef7c6807ac0d3135bcd`  
-		Last Modified: Tue, 10 Dec 2024 02:51:47 GMT  
 		Size: 28.0 KB (27996 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:40085f715d2258e8e58e84417c6b9e0ab57a194b52448a34ec78359489d1df36`  
