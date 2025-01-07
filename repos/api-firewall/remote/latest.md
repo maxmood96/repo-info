@@ -53,6 +53,7 @@ CMD ["api-firewall"]
 
 -	Layers:
 	-	`sha256:38a8310d387e375e0ec6fabe047a9149e8eb214073db9f461fee6251fd936a75`  
+		Last Modified: Thu, 05 Dec 2024 21:56:24 GMT  
 		Size: 3.6 MB (3644443 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7b3e4d2c270245e9a590e4cacd67a19370228870792cd62f4091f41cc78ea0b6`  
@@ -64,6 +65,7 @@ CMD ["api-firewall"]
 		Size: 11.2 MB (11228336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ceabbdefd227bee6e40bfeac774ec6e01d6a764aae434ded1575a9f741cfb539`  
+		Last Modified: Fri, 20 Dec 2024 21:28:27 GMT  
 		Size: 352.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -87,7 +89,6 @@ $ docker pull api-firewall@sha256:53bda069fd9f4aa12cb260e13896a4280aa2a33f95d58c
 		Size: 144.4 KB (144409 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3bb3a4890602403c7846a58024087741cd5af22bd9b5892860935ca482245072`  
-		Last Modified: Fri, 20 Dec 2024 21:28:27 GMT  
 		Size: 13.5 KB (13546 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -138,7 +139,6 @@ CMD ["api-firewall"]
 		Size: 910.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bec65af62ccf999456b7b4ae75707ceac48697c1b9f9e777dfd329d47c8ef4d0`  
-		Last Modified: Fri, 20 Dec 2024 21:33:22 GMT  
 		Size: 10.4 MB (10358307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6b518cfb71f33e72e753b225f15ad86adf605989552f59ca19cc04a63463bb83`  
@@ -210,7 +210,6 @@ CMD ["api-firewall"]
 
 -	Layers:
 	-	`sha256:8e5e849a30a22d7386238d38bd56dd5564638f4856bee415fad2bc5852c31989`  
-		Last Modified: Thu, 05 Dec 2024 22:17:33 GMT  
 		Size: 3.5 MB (3466081 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9f220be47da6f10c62d62b7b3eb9ef34a55ad4d7733b4d6cabed89d5bf7393ac`  
@@ -218,6 +217,7 @@ CMD ["api-firewall"]
 		Size: 911.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f17ed9368d15389d8f0d3b1b2f48703331fc7d36f761d78b6a15454a4e90cc7`  
+		Last Modified: Fri, 20 Dec 2024 21:28:51 GMT  
 		Size: 9.7 MB (9731960 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b5fa24a1b59111f00e98739a080e827ba7f5847d774abf11b9166c3dafba7e0e`  
@@ -245,6 +245,5 @@ $ docker pull api-firewall@sha256:1ced8cadf6d3bdf9f194b6f6642b6608f51cecc6f38836
 		Size: 144.4 KB (144394 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1a199389dc16fb9b9c6915caf0c89c39d20a370a48fe413d695b752370267f5c`  
-		Last Modified: Fri, 20 Dec 2024 21:28:51 GMT  
 		Size: 13.5 KB (13519 bytes)  
 		MIME: application/vnd.in-toto+json
