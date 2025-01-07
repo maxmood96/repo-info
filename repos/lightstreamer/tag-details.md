@@ -175,7 +175,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -187,7 +186,6 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:98e24ffe0c28c998036af5f010d4af9406aa83b0c6d5a7014d97643d13e920a1`  
-		Last Modified: Tue, 03 Dec 2024 03:22:15 GMT  
 		Size: 103.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b01a3228143a010d9e0695fadc4718c7d30ab90ea1c37197329eb5f7b56bf7c8`  
@@ -313,10 +311,10 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7ce404b21cb0f04a91817371c6f6d3323ba053f980bdc5936f2edcb3b7e0f0a7`  
+		Last Modified: Tue, 03 Dec 2024 13:22:23 GMT  
 		Size: 103.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a691cf87ba36b61325bd46faddd3f536cd76bb4864d9052fd9b397ddeca2984c`  
-		Last Modified: Tue, 03 Dec 2024 13:22:41 GMT  
 		Size: 36.5 MB (36516705 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -340,7 +338,6 @@ $ docker pull lightstreamer@sha256:abde90204b9f5f52705bcdb882fb8f232df8a44f57557
 
 -	Layers:
 	-	`sha256:421ec70b254c73ce53a04ddb824bc82b0f7c5fc56c8ee494d15f74a794f5a88e`  
-		Last Modified: Tue, 03 Dec 2024 13:22:39 GMT  
 		Size: 18.6 KB (18606 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -439,7 +436,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -577,6 +573,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7ce404b21cb0f04a91817371c6f6d3323ba053f980bdc5936f2edcb3b7e0f0a7`  
+		Last Modified: Tue, 03 Dec 2024 13:22:23 GMT  
 		Size: 103.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c43830ad2e4c0ea7374d8f3b253035e413fddcd5e25cc81359bdc211e0c05f1`  
@@ -604,7 +601,6 @@ $ docker pull lightstreamer@sha256:244919ce5d376ab2d54ecbdd0deb05f900a69efc2de1a
 
 -	Layers:
 	-	`sha256:97425de0e7f5b4d1ee7acbcb3048df57858b344bf1b8d78fb9b9d32b9edca8f9`  
-		Last Modified: Tue, 03 Dec 2024 13:22:23 GMT  
 		Size: 18.3 KB (18292 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -703,7 +699,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -841,6 +836,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7ce404b21cb0f04a91817371c6f6d3323ba053f980bdc5936f2edcb3b7e0f0a7`  
+		Last Modified: Tue, 03 Dec 2024 13:22:23 GMT  
 		Size: 103.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c43830ad2e4c0ea7374d8f3b253035e413fddcd5e25cc81359bdc211e0c05f1`  
@@ -868,7 +864,6 @@ $ docker pull lightstreamer@sha256:244919ce5d376ab2d54ecbdd0deb05f900a69efc2de1a
 
 -	Layers:
 	-	`sha256:97425de0e7f5b4d1ee7acbcb3048df57858b344bf1b8d78fb9b9d32b9edca8f9`  
-		Last Modified: Tue, 03 Dec 2024 13:22:23 GMT  
 		Size: 18.3 KB (18292 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -967,7 +962,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -979,7 +973,6 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:98e24ffe0c28c998036af5f010d4af9406aa83b0c6d5a7014d97643d13e920a1`  
-		Last Modified: Tue, 03 Dec 2024 03:22:15 GMT  
 		Size: 103.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b01a3228143a010d9e0695fadc4718c7d30ab90ea1c37197329eb5f7b56bf7c8`  
@@ -1105,10 +1098,10 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7ce404b21cb0f04a91817371c6f6d3323ba053f980bdc5936f2edcb3b7e0f0a7`  
+		Last Modified: Tue, 03 Dec 2024 13:22:23 GMT  
 		Size: 103.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a691cf87ba36b61325bd46faddd3f536cd76bb4864d9052fd9b397ddeca2984c`  
-		Last Modified: Tue, 03 Dec 2024 13:22:41 GMT  
 		Size: 36.5 MB (36516705 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -1132,7 +1125,6 @@ $ docker pull lightstreamer@sha256:abde90204b9f5f52705bcdb882fb8f232df8a44f57557
 
 -	Layers:
 	-	`sha256:421ec70b254c73ce53a04ddb824bc82b0f7c5fc56c8ee494d15f74a794f5a88e`  
-		Last Modified: Tue, 03 Dec 2024 13:22:39 GMT  
 		Size: 18.6 KB (18606 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1231,7 +1223,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -1243,7 +1234,6 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:98e24ffe0c28c998036af5f010d4af9406aa83b0c6d5a7014d97643d13e920a1`  
-		Last Modified: Tue, 03 Dec 2024 03:22:15 GMT  
 		Size: 103.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b01a3228143a010d9e0695fadc4718c7d30ab90ea1c37197329eb5f7b56bf7c8`  
@@ -1369,10 +1359,10 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7ce404b21cb0f04a91817371c6f6d3323ba053f980bdc5936f2edcb3b7e0f0a7`  
+		Last Modified: Tue, 03 Dec 2024 13:22:23 GMT  
 		Size: 103.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a691cf87ba36b61325bd46faddd3f536cd76bb4864d9052fd9b397ddeca2984c`  
-		Last Modified: Tue, 03 Dec 2024 13:22:41 GMT  
 		Size: 36.5 MB (36516705 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -1396,7 +1386,6 @@ $ docker pull lightstreamer@sha256:abde90204b9f5f52705bcdb882fb8f232df8a44f57557
 
 -	Layers:
 	-	`sha256:421ec70b254c73ce53a04ddb824bc82b0f7c5fc56c8ee494d15f74a794f5a88e`  
-		Last Modified: Tue, 03 Dec 2024 13:22:39 GMT  
 		Size: 18.6 KB (18606 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1494,7 +1483,6 @@ CMD ["./LS.sh" "run"]
 		Size: 157.6 MB (157585711 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11be3e61358234818e215b9d11d1584bb7cf33bbbe329ccff717d555f1be2994`  
-		Last Modified: Tue, 03 Dec 2024 02:30:28 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b9d1e181a2a2b6ed242e21c8a4d40d33cf851fd5522737a9aaa8a708d215f94`  
@@ -1510,6 +1498,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb685100ed5c893231376ef38fd68ad1ce248e507e73455abec0eac35b1308f3`  
+		Last Modified: Tue, 03 Dec 2024 03:23:06 GMT  
 		Size: 59.0 MB (58959842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -1658,6 +1647,7 @@ $ docker pull lightstreamer@sha256:3340de911561a78d0423b47ab405af192f58525ea5a88
 
 -	Layers:
 	-	`sha256:12cafd8afefffc6b99c548b639f35c8100d8493af3410f0ab6a726afa5d113c2`  
+		Last Modified: Tue, 03 Dec 2024 13:26:39 GMT  
 		Size: 21.0 KB (20998 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1768,6 +1758,7 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fa2e7420fd10c6e2f0c51372c6075a9e8d095279bfae4755b7bd9ce26399d6c`  
+		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 2.6 KB (2634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb793a23024696ce179d56c145f31c291e40b0e3197e6790a497291258d3161c`  
@@ -1795,7 +1786,6 @@ $ docker pull lightstreamer@sha256:eb7e5ff93ed327b3e43d1576eb542ed7b6de6a884be37
 
 -	Layers:
 	-	`sha256:c0d7516f3f395c8209def4ead3e503d30e3843616c1cc8975eec70a3b2c71a04`  
-		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 19.6 KB (19561 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2032,6 +2022,7 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fa2e7420fd10c6e2f0c51372c6075a9e8d095279bfae4755b7bd9ce26399d6c`  
+		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 2.6 KB (2634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb793a23024696ce179d56c145f31c291e40b0e3197e6790a497291258d3161c`  
@@ -2059,7 +2050,6 @@ $ docker pull lightstreamer@sha256:eb7e5ff93ed327b3e43d1576eb542ed7b6de6a884be37
 
 -	Layers:
 	-	`sha256:c0d7516f3f395c8209def4ead3e503d30e3843616c1cc8975eec70a3b2c71a04`  
-		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 19.6 KB (19561 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2813,7 +2803,6 @@ CMD ["./LS.sh" "run"]
 		Size: 157.6 MB (157585711 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11be3e61358234818e215b9d11d1584bb7cf33bbbe329ccff717d555f1be2994`  
-		Last Modified: Tue, 03 Dec 2024 02:30:28 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b9d1e181a2a2b6ed242e21c8a4d40d33cf851fd5522737a9aaa8a708d215f94`  
@@ -2829,6 +2818,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb685100ed5c893231376ef38fd68ad1ce248e507e73455abec0eac35b1308f3`  
+		Last Modified: Tue, 03 Dec 2024 03:23:06 GMT  
 		Size: 59.0 MB (58959842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -2977,6 +2967,7 @@ $ docker pull lightstreamer@sha256:3340de911561a78d0423b47ab405af192f58525ea5a88
 
 -	Layers:
 	-	`sha256:12cafd8afefffc6b99c548b639f35c8100d8493af3410f0ab6a726afa5d113c2`  
+		Last Modified: Tue, 03 Dec 2024 13:26:39 GMT  
 		Size: 21.0 KB (20998 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3074,7 +3065,6 @@ CMD ["./LS.sh" "run"]
 		Size: 157.6 MB (157585711 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11be3e61358234818e215b9d11d1584bb7cf33bbbe329ccff717d555f1be2994`  
-		Last Modified: Tue, 03 Dec 2024 02:30:28 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b9d1e181a2a2b6ed242e21c8a4d40d33cf851fd5522737a9aaa8a708d215f94`  
@@ -3090,6 +3080,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb685100ed5c893231376ef38fd68ad1ce248e507e73455abec0eac35b1308f3`  
+		Last Modified: Tue, 03 Dec 2024 03:23:06 GMT  
 		Size: 59.0 MB (58959842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -3238,6 +3229,7 @@ $ docker pull lightstreamer@sha256:3340de911561a78d0423b47ab405af192f58525ea5a88
 
 -	Layers:
 	-	`sha256:12cafd8afefffc6b99c548b639f35c8100d8493af3410f0ab6a726afa5d113c2`  
+		Last Modified: Tue, 03 Dec 2024 13:26:39 GMT  
 		Size: 21.0 KB (20998 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3338,7 +3330,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -3346,6 +3337,7 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fa2e7420fd10c6e2f0c51372c6075a9e8d095279bfae4755b7bd9ce26399d6c`  
+		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 2.6 KB (2634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c44a86c03af0a6440db0a6d785d74a2c6fcca09843af1254d218e50fa9731e1`  
@@ -3469,7 +3461,6 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3619d1f74395b616c800ccd1c2b5ba61676e4fc9cddbcac6c58301ab4214ea9b`  
-		Last Modified: Tue, 03 Dec 2024 13:25:37 GMT  
 		Size: 2.6 KB (2644 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:850c8e654eae7154c90bb0c524ede2d94d3aef7400f3d0e38ee9ad042e3e8168`  
@@ -3496,7 +3487,6 @@ $ docker pull lightstreamer@sha256:8454e72b8f676489cd7e99143affb98ebadf7ac00d921
 
 -	Layers:
 	-	`sha256:b45aa6de3f30a1a37e0b51a5fceafa37bca4918c79c622b439d7818a623d8ff7`  
-		Last Modified: Tue, 03 Dec 2024 13:25:37 GMT  
 		Size: 19.7 KB (19702 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3597,7 +3587,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -3605,6 +3594,7 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fa2e7420fd10c6e2f0c51372c6075a9e8d095279bfae4755b7bd9ce26399d6c`  
+		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 2.6 KB (2634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c44a86c03af0a6440db0a6d785d74a2c6fcca09843af1254d218e50fa9731e1`  
@@ -3728,7 +3718,6 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3619d1f74395b616c800ccd1c2b5ba61676e4fc9cddbcac6c58301ab4214ea9b`  
-		Last Modified: Tue, 03 Dec 2024 13:25:37 GMT  
 		Size: 2.6 KB (2644 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:850c8e654eae7154c90bb0c524ede2d94d3aef7400f3d0e38ee9ad042e3e8168`  
@@ -3755,7 +3744,6 @@ $ docker pull lightstreamer@sha256:8454e72b8f676489cd7e99143affb98ebadf7ac00d921
 
 -	Layers:
 	-	`sha256:b45aa6de3f30a1a37e0b51a5fceafa37bca4918c79c622b439d7818a623d8ff7`  
-		Last Modified: Tue, 03 Dec 2024 13:25:37 GMT  
 		Size: 19.7 KB (19702 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3868,6 +3856,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aab17a15c09ffc5ea8b18bc1a8e6afe7d12e359789d3c13589f825da01e64eba`  
+		Last Modified: Tue, 03 Dec 2024 03:22:15 GMT  
 		Size: 33.5 MB (33462389 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -4128,6 +4117,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aab17a15c09ffc5ea8b18bc1a8e6afe7d12e359789d3c13589f825da01e64eba`  
+		Last Modified: Tue, 03 Dec 2024 03:22:15 GMT  
 		Size: 33.5 MB (33462389 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -4388,6 +4378,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aab17a15c09ffc5ea8b18bc1a8e6afe7d12e359789d3c13589f825da01e64eba`  
+		Last Modified: Tue, 03 Dec 2024 03:22:15 GMT  
 		Size: 33.5 MB (33462389 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -4634,7 +4625,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -4792,6 +4782,7 @@ $ docker pull lightstreamer@sha256:5a506a918b1484e433317aac2ab450b226b3d6aa2ebe2
 
 -	Layers:
 	-	`sha256:4019d70f54eb45c1c02d6098fde7b2a76cb01b905d15a62b189bbcf410655f33`  
+		Last Modified: Tue, 03 Dec 2024 13:22:55 GMT  
 		Size: 19.6 KB (19559 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4890,7 +4881,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -5048,6 +5038,7 @@ $ docker pull lightstreamer@sha256:5a506a918b1484e433317aac2ab450b226b3d6aa2ebe2
 
 -	Layers:
 	-	`sha256:4019d70f54eb45c1c02d6098fde7b2a76cb01b905d15a62b189bbcf410655f33`  
+		Last Modified: Tue, 03 Dec 2024 13:22:55 GMT  
 		Size: 19.6 KB (19559 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5160,6 +5151,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aab17a15c09ffc5ea8b18bc1a8e6afe7d12e359789d3c13589f825da01e64eba`  
+		Last Modified: Tue, 03 Dec 2024 03:22:15 GMT  
 		Size: 33.5 MB (33462389 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -5420,6 +5412,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aab17a15c09ffc5ea8b18bc1a8e6afe7d12e359789d3c13589f825da01e64eba`  
+		Last Modified: Tue, 03 Dec 2024 03:22:15 GMT  
 		Size: 33.5 MB (33462389 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -5680,6 +5673,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aab17a15c09ffc5ea8b18bc1a8e6afe7d12e359789d3c13589f825da01e64eba`  
+		Last Modified: Tue, 03 Dec 2024 03:22:15 GMT  
 		Size: 33.5 MB (33462389 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -5926,7 +5920,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -6084,6 +6077,7 @@ $ docker pull lightstreamer@sha256:5a506a918b1484e433317aac2ab450b226b3d6aa2ebe2
 
 -	Layers:
 	-	`sha256:4019d70f54eb45c1c02d6098fde7b2a76cb01b905d15a62b189bbcf410655f33`  
+		Last Modified: Tue, 03 Dec 2024 13:22:55 GMT  
 		Size: 19.6 KB (19559 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6182,7 +6176,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -6340,6 +6333,7 @@ $ docker pull lightstreamer@sha256:5a506a918b1484e433317aac2ab450b226b3d6aa2ebe2
 
 -	Layers:
 	-	`sha256:4019d70f54eb45c1c02d6098fde7b2a76cb01b905d15a62b189bbcf410655f33`  
+		Last Modified: Tue, 03 Dec 2024 13:22:55 GMT  
 		Size: 19.6 KB (19559 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6448,9 +6442,11 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2eb768624b3613782d8376dda4b2f4bab1146da8e34b9f61da83d5dd1e0e7f81`  
+		Last Modified: Tue, 03 Dec 2024 03:22:24 GMT  
 		Size: 2.6 KB (2633 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8953e8c9018d409b5e290112e7ec3c37d3ad8ab08dcad76e5cad63b183f18538`  
+		Last Modified: Tue, 03 Dec 2024 03:22:25 GMT  
 		Size: 50.1 MB (50072348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -6707,9 +6703,11 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2eb768624b3613782d8376dda4b2f4bab1146da8e34b9f61da83d5dd1e0e7f81`  
+		Last Modified: Tue, 03 Dec 2024 03:22:24 GMT  
 		Size: 2.6 KB (2633 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8953e8c9018d409b5e290112e7ec3c37d3ad8ab08dcad76e5cad63b183f18538`  
+		Last Modified: Tue, 03 Dec 2024 03:22:25 GMT  
 		Size: 50.1 MB (50072348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -6966,9 +6964,11 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2eb768624b3613782d8376dda4b2f4bab1146da8e34b9f61da83d5dd1e0e7f81`  
+		Last Modified: Tue, 03 Dec 2024 03:22:24 GMT  
 		Size: 2.6 KB (2633 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8953e8c9018d409b5e290112e7ec3c37d3ad8ab08dcad76e5cad63b183f18538`  
+		Last Modified: Tue, 03 Dec 2024 03:22:25 GMT  
 		Size: 50.1 MB (50072348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -7215,7 +7215,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -7349,7 +7348,6 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:06ae7bbe4f0b394632abd8b65e2e50425802b9986f05859f55738145ec977dfb`  
-		Last Modified: Tue, 03 Dec 2024 13:23:31 GMT  
 		Size: 50.1 MB (50072372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -7373,6 +7371,7 @@ $ docker pull lightstreamer@sha256:c7f77d5ea954b6d59c32a4bfe31796baae0739cf64b20
 
 -	Layers:
 	-	`sha256:f3f90b49d152404207f816134aa35b14043a2d1637659dfebdd2eeba06417f04`  
+		Last Modified: Tue, 03 Dec 2024 13:23:29 GMT  
 		Size: 19.3 KB (19313 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7471,7 +7470,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -7605,7 +7603,6 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:06ae7bbe4f0b394632abd8b65e2e50425802b9986f05859f55738145ec977dfb`  
-		Last Modified: Tue, 03 Dec 2024 13:23:31 GMT  
 		Size: 50.1 MB (50072372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -7629,6 +7626,7 @@ $ docker pull lightstreamer@sha256:c7f77d5ea954b6d59c32a4bfe31796baae0739cf64b20
 
 -	Layers:
 	-	`sha256:f3f90b49d152404207f816134aa35b14043a2d1637659dfebdd2eeba06417f04`  
+		Last Modified: Tue, 03 Dec 2024 13:23:29 GMT  
 		Size: 19.3 KB (19313 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7737,9 +7735,11 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2eb768624b3613782d8376dda4b2f4bab1146da8e34b9f61da83d5dd1e0e7f81`  
+		Last Modified: Tue, 03 Dec 2024 03:22:24 GMT  
 		Size: 2.6 KB (2633 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8953e8c9018d409b5e290112e7ec3c37d3ad8ab08dcad76e5cad63b183f18538`  
+		Last Modified: Tue, 03 Dec 2024 03:22:25 GMT  
 		Size: 50.1 MB (50072348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -7996,9 +7996,11 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2eb768624b3613782d8376dda4b2f4bab1146da8e34b9f61da83d5dd1e0e7f81`  
+		Last Modified: Tue, 03 Dec 2024 03:22:24 GMT  
 		Size: 2.6 KB (2633 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8953e8c9018d409b5e290112e7ec3c37d3ad8ab08dcad76e5cad63b183f18538`  
+		Last Modified: Tue, 03 Dec 2024 03:22:25 GMT  
 		Size: 50.1 MB (50072348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -8255,9 +8257,11 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2eb768624b3613782d8376dda4b2f4bab1146da8e34b9f61da83d5dd1e0e7f81`  
+		Last Modified: Tue, 03 Dec 2024 03:22:24 GMT  
 		Size: 2.6 KB (2633 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8953e8c9018d409b5e290112e7ec3c37d3ad8ab08dcad76e5cad63b183f18538`  
+		Last Modified: Tue, 03 Dec 2024 03:22:25 GMT  
 		Size: 50.1 MB (50072348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -8504,7 +8508,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -8638,7 +8641,6 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:06ae7bbe4f0b394632abd8b65e2e50425802b9986f05859f55738145ec977dfb`  
-		Last Modified: Tue, 03 Dec 2024 13:23:31 GMT  
 		Size: 50.1 MB (50072372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -8662,6 +8664,7 @@ $ docker pull lightstreamer@sha256:c7f77d5ea954b6d59c32a4bfe31796baae0739cf64b20
 
 -	Layers:
 	-	`sha256:f3f90b49d152404207f816134aa35b14043a2d1637659dfebdd2eeba06417f04`  
+		Last Modified: Tue, 03 Dec 2024 13:23:29 GMT  
 		Size: 19.3 KB (19313 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8760,7 +8763,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -8894,7 +8896,6 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:06ae7bbe4f0b394632abd8b65e2e50425802b9986f05859f55738145ec977dfb`  
-		Last Modified: Tue, 03 Dec 2024 13:23:31 GMT  
 		Size: 50.1 MB (50072372 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -8918,6 +8919,7 @@ $ docker pull lightstreamer@sha256:c7f77d5ea954b6d59c32a4bfe31796baae0739cf64b20
 
 -	Layers:
 	-	`sha256:f3f90b49d152404207f816134aa35b14043a2d1637659dfebdd2eeba06417f04`  
+		Last Modified: Tue, 03 Dec 2024 13:23:29 GMT  
 		Size: 19.3 KB (19313 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9154,10 +9156,10 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34e02bf542393023dfffcca41581399ecdb59c13fc23d4a413e955b7e81edd4d`  
-		Last Modified: Tue, 03 Dec 2024 13:24:19 GMT  
 		Size: 2.6 KB (2637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:02b585325482a8c8f5ea1b0cec877009984feaba55a65e95cda63dc6c11116df`  
+		Last Modified: Tue, 03 Dec 2024 13:24:20 GMT  
 		Size: 49.9 MB (49851006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -9418,10 +9420,10 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34e02bf542393023dfffcca41581399ecdb59c13fc23d4a413e955b7e81edd4d`  
-		Last Modified: Tue, 03 Dec 2024 13:24:19 GMT  
 		Size: 2.6 KB (2637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:02b585325482a8c8f5ea1b0cec877009984feaba55a65e95cda63dc6c11116df`  
+		Last Modified: Tue, 03 Dec 2024 13:24:20 GMT  
 		Size: 49.9 MB (49851006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -9682,10 +9684,10 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34e02bf542393023dfffcca41581399ecdb59c13fc23d4a413e955b7e81edd4d`  
-		Last Modified: Tue, 03 Dec 2024 13:24:19 GMT  
 		Size: 2.6 KB (2637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:02b585325482a8c8f5ea1b0cec877009984feaba55a65e95cda63dc6c11116df`  
+		Last Modified: Tue, 03 Dec 2024 13:24:20 GMT  
 		Size: 49.9 MB (49851006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -9810,7 +9812,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -9818,7 +9819,6 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:07ede11930b3b207a6d5abc9d22aa360f211759a29111d9fb64f168aedde560f`  
-		Last Modified: Tue, 03 Dec 2024 04:32:23 GMT  
 		Size: 2.6 KB (2637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f7bf974d93d2e93dfbfc52a9f226356418a6abfc991b4b329d237bb2af3ef50`  
@@ -9946,6 +9946,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc33b7f26a27173b3d178e6a3d28f5ea6cd0edf3a9c872199b9c6d19a1cabf81`  
+		Last Modified: Tue, 03 Dec 2024 13:24:02 GMT  
 		Size: 49.9 MB (49850980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -10070,7 +10071,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -10078,7 +10078,6 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:07ede11930b3b207a6d5abc9d22aa360f211759a29111d9fb64f168aedde560f`  
-		Last Modified: Tue, 03 Dec 2024 04:32:23 GMT  
 		Size: 2.6 KB (2637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f7bf974d93d2e93dfbfc52a9f226356418a6abfc991b4b329d237bb2af3ef50`  
@@ -10206,6 +10205,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc33b7f26a27173b3d178e6a3d28f5ea6cd0edf3a9c872199b9c6d19a1cabf81`  
+		Last Modified: Tue, 03 Dec 2024 13:24:02 GMT  
 		Size: 49.9 MB (49850980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -10466,10 +10466,10 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34e02bf542393023dfffcca41581399ecdb59c13fc23d4a413e955b7e81edd4d`  
-		Last Modified: Tue, 03 Dec 2024 13:24:19 GMT  
 		Size: 2.6 KB (2637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:02b585325482a8c8f5ea1b0cec877009984feaba55a65e95cda63dc6c11116df`  
+		Last Modified: Tue, 03 Dec 2024 13:24:20 GMT  
 		Size: 49.9 MB (49851006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -10730,10 +10730,10 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34e02bf542393023dfffcca41581399ecdb59c13fc23d4a413e955b7e81edd4d`  
-		Last Modified: Tue, 03 Dec 2024 13:24:19 GMT  
 		Size: 2.6 KB (2637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:02b585325482a8c8f5ea1b0cec877009984feaba55a65e95cda63dc6c11116df`  
+		Last Modified: Tue, 03 Dec 2024 13:24:20 GMT  
 		Size: 49.9 MB (49851006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -10994,10 +10994,10 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34e02bf542393023dfffcca41581399ecdb59c13fc23d4a413e955b7e81edd4d`  
-		Last Modified: Tue, 03 Dec 2024 13:24:19 GMT  
 		Size: 2.6 KB (2637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:02b585325482a8c8f5ea1b0cec877009984feaba55a65e95cda63dc6c11116df`  
+		Last Modified: Tue, 03 Dec 2024 13:24:20 GMT  
 		Size: 49.9 MB (49851006 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -11122,7 +11122,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -11130,7 +11129,6 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:07ede11930b3b207a6d5abc9d22aa360f211759a29111d9fb64f168aedde560f`  
-		Last Modified: Tue, 03 Dec 2024 04:32:23 GMT  
 		Size: 2.6 KB (2637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f7bf974d93d2e93dfbfc52a9f226356418a6abfc991b4b329d237bb2af3ef50`  
@@ -11258,6 +11256,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc33b7f26a27173b3d178e6a3d28f5ea6cd0edf3a9c872199b9c6d19a1cabf81`  
+		Last Modified: Tue, 03 Dec 2024 13:24:02 GMT  
 		Size: 49.9 MB (49850980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -11382,7 +11381,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -11390,7 +11388,6 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:07ede11930b3b207a6d5abc9d22aa360f211759a29111d9fb64f168aedde560f`  
-		Last Modified: Tue, 03 Dec 2024 04:32:23 GMT  
 		Size: 2.6 KB (2637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f7bf974d93d2e93dfbfc52a9f226356418a6abfc991b4b329d237bb2af3ef50`  
@@ -11518,6 +11515,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc33b7f26a27173b3d178e6a3d28f5ea6cd0edf3a9c872199b9c6d19a1cabf81`  
+		Last Modified: Tue, 03 Dec 2024 13:24:02 GMT  
 		Size: 49.9 MB (49850980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -11680,7 +11678,6 @@ $ docker pull lightstreamer@sha256:6d586d4aeff2070719e7a746a8e576f9e71bf2b8313db
 
 -	Layers:
 	-	`sha256:57b9e7278eecd9687f780e31f7e8c72de97ba20df37f8adcaee241d440404289`  
-		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 19.5 KB (19537 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11778,6 +11775,7 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c18cbf659ceac856905bc66f237fe33da9e19964c914916d618dee4e27f3b08f`  
+		Last Modified: Tue, 03 Dec 2024 13:25:16 GMT  
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39bb8493accf3d51a6e077957afa2231fac7e76160fe67a3ee1e2dd393cf89f0`  
@@ -11916,7 +11914,6 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbddf069174f3239b06d92da351ad4f66a5ee08e2b427175a1b4d5874adcac13`  
-		Last Modified: Tue, 03 Dec 2024 03:22:29 GMT  
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e3751691dea1510cebe87604c0ed23b2530f34295ce56d62002111cc35867145`  
@@ -11944,7 +11941,6 @@ $ docker pull lightstreamer@sha256:4e5e7410d264095f4d4a3011b967e9b3aa7f4941cedba
 
 -	Layers:
 	-	`sha256:09266db6953387335afb20236464b229321c6e5755d1838de900dc91d4fd8e53`  
-		Last Modified: Tue, 03 Dec 2024 03:22:29 GMT  
 		Size: 18.9 KB (18918 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12042,7 +12038,6 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34e02bf542393023dfffcca41581399ecdb59c13fc23d4a413e955b7e81edd4d`  
-		Last Modified: Tue, 03 Dec 2024 13:24:19 GMT  
 		Size: 2.6 KB (2637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54749a21f2ddf6de2d42828afc2d6fd726b014e6407361e2bbfe6c1b973847a0`  
@@ -12180,7 +12175,6 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbddf069174f3239b06d92da351ad4f66a5ee08e2b427175a1b4d5874adcac13`  
-		Last Modified: Tue, 03 Dec 2024 03:22:29 GMT  
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e3751691dea1510cebe87604c0ed23b2530f34295ce56d62002111cc35867145`  
@@ -12208,7 +12202,6 @@ $ docker pull lightstreamer@sha256:4e5e7410d264095f4d4a3011b967e9b3aa7f4941cedba
 
 -	Layers:
 	-	`sha256:09266db6953387335afb20236464b229321c6e5755d1838de900dc91d4fd8e53`  
-		Last Modified: Tue, 03 Dec 2024 03:22:29 GMT  
 		Size: 18.9 KB (18918 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12306,7 +12299,6 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34e02bf542393023dfffcca41581399ecdb59c13fc23d4a413e955b7e81edd4d`  
-		Last Modified: Tue, 03 Dec 2024 13:24:19 GMT  
 		Size: 2.6 KB (2637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54749a21f2ddf6de2d42828afc2d6fd726b014e6407361e2bbfe6c1b973847a0`  
@@ -12472,7 +12464,6 @@ $ docker pull lightstreamer@sha256:6d586d4aeff2070719e7a746a8e576f9e71bf2b8313db
 
 -	Layers:
 	-	`sha256:57b9e7278eecd9687f780e31f7e8c72de97ba20df37f8adcaee241d440404289`  
-		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 19.5 KB (19537 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12570,6 +12561,7 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c18cbf659ceac856905bc66f237fe33da9e19964c914916d618dee4e27f3b08f`  
+		Last Modified: Tue, 03 Dec 2024 13:25:16 GMT  
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39bb8493accf3d51a6e077957afa2231fac7e76160fe67a3ee1e2dd393cf89f0`  
@@ -12736,7 +12728,6 @@ $ docker pull lightstreamer@sha256:6d586d4aeff2070719e7a746a8e576f9e71bf2b8313db
 
 -	Layers:
 	-	`sha256:57b9e7278eecd9687f780e31f7e8c72de97ba20df37f8adcaee241d440404289`  
-		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 19.5 KB (19537 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -12834,6 +12825,7 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c18cbf659ceac856905bc66f237fe33da9e19964c914916d618dee4e27f3b08f`  
+		Last Modified: Tue, 03 Dec 2024 13:25:16 GMT  
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39bb8493accf3d51a6e077957afa2231fac7e76160fe67a3ee1e2dd393cf89f0`  
@@ -12962,7 +12954,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -13098,7 +13089,6 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:349726b0c5c3d0e8374dc97375361ddacd5b2fba082540d8f46638f05c55314b`  
-		Last Modified: Tue, 03 Dec 2024 13:24:38 GMT  
 		Size: 57.8 MB (57845161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -13223,7 +13213,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -13359,7 +13348,6 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:349726b0c5c3d0e8374dc97375361ddacd5b2fba082540d8f46638f05c55314b`  
-		Last Modified: Tue, 03 Dec 2024 13:24:38 GMT  
 		Size: 57.8 MB (57845161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -13522,7 +13510,6 @@ $ docker pull lightstreamer@sha256:6d586d4aeff2070719e7a746a8e576f9e71bf2b8313db
 
 -	Layers:
 	-	`sha256:57b9e7278eecd9687f780e31f7e8c72de97ba20df37f8adcaee241d440404289`  
-		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 19.5 KB (19537 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13620,6 +13607,7 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c18cbf659ceac856905bc66f237fe33da9e19964c914916d618dee4e27f3b08f`  
+		Last Modified: Tue, 03 Dec 2024 13:25:16 GMT  
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39bb8493accf3d51a6e077957afa2231fac7e76160fe67a3ee1e2dd393cf89f0`  
@@ -13758,7 +13746,6 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbddf069174f3239b06d92da351ad4f66a5ee08e2b427175a1b4d5874adcac13`  
-		Last Modified: Tue, 03 Dec 2024 03:22:29 GMT  
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e3751691dea1510cebe87604c0ed23b2530f34295ce56d62002111cc35867145`  
@@ -13786,7 +13773,6 @@ $ docker pull lightstreamer@sha256:4e5e7410d264095f4d4a3011b967e9b3aa7f4941cedba
 
 -	Layers:
 	-	`sha256:09266db6953387335afb20236464b229321c6e5755d1838de900dc91d4fd8e53`  
-		Last Modified: Tue, 03 Dec 2024 03:22:29 GMT  
 		Size: 18.9 KB (18918 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13884,7 +13870,6 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34e02bf542393023dfffcca41581399ecdb59c13fc23d4a413e955b7e81edd4d`  
-		Last Modified: Tue, 03 Dec 2024 13:24:19 GMT  
 		Size: 2.6 KB (2637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54749a21f2ddf6de2d42828afc2d6fd726b014e6407361e2bbfe6c1b973847a0`  
@@ -14022,7 +14007,6 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbddf069174f3239b06d92da351ad4f66a5ee08e2b427175a1b4d5874adcac13`  
-		Last Modified: Tue, 03 Dec 2024 03:22:29 GMT  
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e3751691dea1510cebe87604c0ed23b2530f34295ce56d62002111cc35867145`  
@@ -14050,7 +14034,6 @@ $ docker pull lightstreamer@sha256:4e5e7410d264095f4d4a3011b967e9b3aa7f4941cedba
 
 -	Layers:
 	-	`sha256:09266db6953387335afb20236464b229321c6e5755d1838de900dc91d4fd8e53`  
-		Last Modified: Tue, 03 Dec 2024 03:22:29 GMT  
 		Size: 18.9 KB (18918 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14148,7 +14131,6 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34e02bf542393023dfffcca41581399ecdb59c13fc23d4a413e955b7e81edd4d`  
-		Last Modified: Tue, 03 Dec 2024 13:24:19 GMT  
 		Size: 2.6 KB (2637 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54749a21f2ddf6de2d42828afc2d6fd726b014e6407361e2bbfe6c1b973847a0`  
@@ -14314,7 +14296,6 @@ $ docker pull lightstreamer@sha256:6d586d4aeff2070719e7a746a8e576f9e71bf2b8313db
 
 -	Layers:
 	-	`sha256:57b9e7278eecd9687f780e31f7e8c72de97ba20df37f8adcaee241d440404289`  
-		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 19.5 KB (19537 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14412,6 +14393,7 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c18cbf659ceac856905bc66f237fe33da9e19964c914916d618dee4e27f3b08f`  
+		Last Modified: Tue, 03 Dec 2024 13:25:16 GMT  
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39bb8493accf3d51a6e077957afa2231fac7e76160fe67a3ee1e2dd393cf89f0`  
@@ -14578,7 +14560,6 @@ $ docker pull lightstreamer@sha256:6d586d4aeff2070719e7a746a8e576f9e71bf2b8313db
 
 -	Layers:
 	-	`sha256:57b9e7278eecd9687f780e31f7e8c72de97ba20df37f8adcaee241d440404289`  
-		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 19.5 KB (19537 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14676,6 +14657,7 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c18cbf659ceac856905bc66f237fe33da9e19964c914916d618dee4e27f3b08f`  
+		Last Modified: Tue, 03 Dec 2024 13:25:16 GMT  
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39bb8493accf3d51a6e077957afa2231fac7e76160fe67a3ee1e2dd393cf89f0`  
@@ -14804,7 +14786,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -14940,7 +14921,6 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:349726b0c5c3d0e8374dc97375361ddacd5b2fba082540d8f46638f05c55314b`  
-		Last Modified: Tue, 03 Dec 2024 13:24:38 GMT  
 		Size: 57.8 MB (57845161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -15065,7 +15045,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -15201,7 +15180,6 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2636 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:349726b0c5c3d0e8374dc97375361ddacd5b2fba082540d8f46638f05c55314b`  
-		Last Modified: Tue, 03 Dec 2024 13:24:38 GMT  
 		Size: 57.8 MB (57845161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -15323,7 +15301,6 @@ CMD ["./LS.sh" "run"]
 		Size: 157.6 MB (157585711 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11be3e61358234818e215b9d11d1584bb7cf33bbbe329ccff717d555f1be2994`  
-		Last Modified: Tue, 03 Dec 2024 02:30:28 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b9d1e181a2a2b6ed242e21c8a4d40d33cf851fd5522737a9aaa8a708d215f94`  
@@ -15339,6 +15316,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb685100ed5c893231376ef38fd68ad1ce248e507e73455abec0eac35b1308f3`  
+		Last Modified: Tue, 03 Dec 2024 03:23:06 GMT  
 		Size: 59.0 MB (58959842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -15487,6 +15465,7 @@ $ docker pull lightstreamer@sha256:3340de911561a78d0423b47ab405af192f58525ea5a88
 
 -	Layers:
 	-	`sha256:12cafd8afefffc6b99c548b639f35c8100d8493af3410f0ab6a726afa5d113c2`  
+		Last Modified: Tue, 03 Dec 2024 13:26:39 GMT  
 		Size: 21.0 KB (20998 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15597,6 +15576,7 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fa2e7420fd10c6e2f0c51372c6075a9e8d095279bfae4755b7bd9ce26399d6c`  
+		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 2.6 KB (2634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb793a23024696ce179d56c145f31c291e40b0e3197e6790a497291258d3161c`  
@@ -15624,7 +15604,6 @@ $ docker pull lightstreamer@sha256:eb7e5ff93ed327b3e43d1576eb542ed7b6de6a884be37
 
 -	Layers:
 	-	`sha256:c0d7516f3f395c8209def4ead3e503d30e3843616c1cc8975eec70a3b2c71a04`  
-		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 19.6 KB (19561 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15861,6 +15840,7 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fa2e7420fd10c6e2f0c51372c6075a9e8d095279bfae4755b7bd9ce26399d6c`  
+		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 2.6 KB (2634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb793a23024696ce179d56c145f31c291e40b0e3197e6790a497291258d3161c`  
@@ -15888,7 +15868,6 @@ $ docker pull lightstreamer@sha256:eb7e5ff93ed327b3e43d1576eb542ed7b6de6a884be37
 
 -	Layers:
 	-	`sha256:c0d7516f3f395c8209def4ead3e503d30e3843616c1cc8975eec70a3b2c71a04`  
-		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 19.6 KB (19561 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16642,7 +16621,6 @@ CMD ["./LS.sh" "run"]
 		Size: 157.6 MB (157585711 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11be3e61358234818e215b9d11d1584bb7cf33bbbe329ccff717d555f1be2994`  
-		Last Modified: Tue, 03 Dec 2024 02:30:28 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b9d1e181a2a2b6ed242e21c8a4d40d33cf851fd5522737a9aaa8a708d215f94`  
@@ -16658,6 +16636,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb685100ed5c893231376ef38fd68ad1ce248e507e73455abec0eac35b1308f3`  
+		Last Modified: Tue, 03 Dec 2024 03:23:06 GMT  
 		Size: 59.0 MB (58959842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -16806,6 +16785,7 @@ $ docker pull lightstreamer@sha256:3340de911561a78d0423b47ab405af192f58525ea5a88
 
 -	Layers:
 	-	`sha256:12cafd8afefffc6b99c548b639f35c8100d8493af3410f0ab6a726afa5d113c2`  
+		Last Modified: Tue, 03 Dec 2024 13:26:39 GMT  
 		Size: 21.0 KB (20998 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16903,7 +16883,6 @@ CMD ["./LS.sh" "run"]
 		Size: 157.6 MB (157585711 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11be3e61358234818e215b9d11d1584bb7cf33bbbe329ccff717d555f1be2994`  
-		Last Modified: Tue, 03 Dec 2024 02:30:28 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b9d1e181a2a2b6ed242e21c8a4d40d33cf851fd5522737a9aaa8a708d215f94`  
@@ -16919,6 +16898,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb685100ed5c893231376ef38fd68ad1ce248e507e73455abec0eac35b1308f3`  
+		Last Modified: Tue, 03 Dec 2024 03:23:06 GMT  
 		Size: 59.0 MB (58959842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -17067,6 +17047,7 @@ $ docker pull lightstreamer@sha256:3340de911561a78d0423b47ab405af192f58525ea5a88
 
 -	Layers:
 	-	`sha256:12cafd8afefffc6b99c548b639f35c8100d8493af3410f0ab6a726afa5d113c2`  
+		Last Modified: Tue, 03 Dec 2024 13:26:39 GMT  
 		Size: 21.0 KB (20998 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17167,7 +17148,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -17175,6 +17155,7 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fa2e7420fd10c6e2f0c51372c6075a9e8d095279bfae4755b7bd9ce26399d6c`  
+		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 2.6 KB (2634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c44a86c03af0a6440db0a6d785d74a2c6fcca09843af1254d218e50fa9731e1`  
@@ -17298,7 +17279,6 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3619d1f74395b616c800ccd1c2b5ba61676e4fc9cddbcac6c58301ab4214ea9b`  
-		Last Modified: Tue, 03 Dec 2024 13:25:37 GMT  
 		Size: 2.6 KB (2644 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:850c8e654eae7154c90bb0c524ede2d94d3aef7400f3d0e38ee9ad042e3e8168`  
@@ -17325,7 +17305,6 @@ $ docker pull lightstreamer@sha256:8454e72b8f676489cd7e99143affb98ebadf7ac00d921
 
 -	Layers:
 	-	`sha256:b45aa6de3f30a1a37e0b51a5fceafa37bca4918c79c622b439d7818a623d8ff7`  
-		Last Modified: Tue, 03 Dec 2024 13:25:37 GMT  
 		Size: 19.7 KB (19702 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17426,7 +17405,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -17434,6 +17412,7 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fa2e7420fd10c6e2f0c51372c6075a9e8d095279bfae4755b7bd9ce26399d6c`  
+		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 2.6 KB (2634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c44a86c03af0a6440db0a6d785d74a2c6fcca09843af1254d218e50fa9731e1`  
@@ -17557,7 +17536,6 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3619d1f74395b616c800ccd1c2b5ba61676e4fc9cddbcac6c58301ab4214ea9b`  
-		Last Modified: Tue, 03 Dec 2024 13:25:37 GMT  
 		Size: 2.6 KB (2644 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:850c8e654eae7154c90bb0c524ede2d94d3aef7400f3d0e38ee9ad042e3e8168`  
@@ -17584,7 +17562,6 @@ $ docker pull lightstreamer@sha256:8454e72b8f676489cd7e99143affb98ebadf7ac00d921
 
 -	Layers:
 	-	`sha256:b45aa6de3f30a1a37e0b51a5fceafa37bca4918c79c622b439d7818a623d8ff7`  
-		Last Modified: Tue, 03 Dec 2024 13:25:37 GMT  
 		Size: 19.7 KB (19702 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17682,7 +17659,6 @@ CMD ["./LS.sh" "run"]
 		Size: 157.6 MB (157585711 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11be3e61358234818e215b9d11d1584bb7cf33bbbe329ccff717d555f1be2994`  
-		Last Modified: Tue, 03 Dec 2024 02:30:28 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b9d1e181a2a2b6ed242e21c8a4d40d33cf851fd5522737a9aaa8a708d215f94`  
@@ -17698,6 +17674,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb685100ed5c893231376ef38fd68ad1ce248e507e73455abec0eac35b1308f3`  
+		Last Modified: Tue, 03 Dec 2024 03:23:06 GMT  
 		Size: 59.0 MB (58959842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -17846,6 +17823,7 @@ $ docker pull lightstreamer@sha256:3340de911561a78d0423b47ab405af192f58525ea5a88
 
 -	Layers:
 	-	`sha256:12cafd8afefffc6b99c548b639f35c8100d8493af3410f0ab6a726afa5d113c2`  
+		Last Modified: Tue, 03 Dec 2024 13:26:39 GMT  
 		Size: 21.0 KB (20998 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17956,6 +17934,7 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fa2e7420fd10c6e2f0c51372c6075a9e8d095279bfae4755b7bd9ce26399d6c`  
+		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 2.6 KB (2634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb793a23024696ce179d56c145f31c291e40b0e3197e6790a497291258d3161c`  
@@ -17983,7 +17962,6 @@ $ docker pull lightstreamer@sha256:eb7e5ff93ed327b3e43d1576eb542ed7b6de6a884be37
 
 -	Layers:
 	-	`sha256:c0d7516f3f395c8209def4ead3e503d30e3843616c1cc8975eec70a3b2c71a04`  
-		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 19.6 KB (19561 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18220,6 +18198,7 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fa2e7420fd10c6e2f0c51372c6075a9e8d095279bfae4755b7bd9ce26399d6c`  
+		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 2.6 KB (2634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb793a23024696ce179d56c145f31c291e40b0e3197e6790a497291258d3161c`  
@@ -18247,7 +18226,6 @@ $ docker pull lightstreamer@sha256:eb7e5ff93ed327b3e43d1576eb542ed7b6de6a884be37
 
 -	Layers:
 	-	`sha256:c0d7516f3f395c8209def4ead3e503d30e3843616c1cc8975eec70a3b2c71a04`  
-		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 19.6 KB (19561 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19001,7 +18979,6 @@ CMD ["./LS.sh" "run"]
 		Size: 157.6 MB (157585711 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11be3e61358234818e215b9d11d1584bb7cf33bbbe329ccff717d555f1be2994`  
-		Last Modified: Tue, 03 Dec 2024 02:30:28 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b9d1e181a2a2b6ed242e21c8a4d40d33cf851fd5522737a9aaa8a708d215f94`  
@@ -19017,6 +18994,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb685100ed5c893231376ef38fd68ad1ce248e507e73455abec0eac35b1308f3`  
+		Last Modified: Tue, 03 Dec 2024 03:23:06 GMT  
 		Size: 59.0 MB (58959842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -19165,6 +19143,7 @@ $ docker pull lightstreamer@sha256:3340de911561a78d0423b47ab405af192f58525ea5a88
 
 -	Layers:
 	-	`sha256:12cafd8afefffc6b99c548b639f35c8100d8493af3410f0ab6a726afa5d113c2`  
+		Last Modified: Tue, 03 Dec 2024 13:26:39 GMT  
 		Size: 21.0 KB (20998 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19262,7 +19241,6 @@ CMD ["./LS.sh" "run"]
 		Size: 157.6 MB (157585711 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11be3e61358234818e215b9d11d1584bb7cf33bbbe329ccff717d555f1be2994`  
-		Last Modified: Tue, 03 Dec 2024 02:30:28 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b9d1e181a2a2b6ed242e21c8a4d40d33cf851fd5522737a9aaa8a708d215f94`  
@@ -19278,6 +19256,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb685100ed5c893231376ef38fd68ad1ce248e507e73455abec0eac35b1308f3`  
+		Last Modified: Tue, 03 Dec 2024 03:23:06 GMT  
 		Size: 59.0 MB (58959842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -19426,6 +19405,7 @@ $ docker pull lightstreamer@sha256:3340de911561a78d0423b47ab405af192f58525ea5a88
 
 -	Layers:
 	-	`sha256:12cafd8afefffc6b99c548b639f35c8100d8493af3410f0ab6a726afa5d113c2`  
+		Last Modified: Tue, 03 Dec 2024 13:26:39 GMT  
 		Size: 21.0 KB (20998 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19526,7 +19506,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -19534,6 +19513,7 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fa2e7420fd10c6e2f0c51372c6075a9e8d095279bfae4755b7bd9ce26399d6c`  
+		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 2.6 KB (2634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c44a86c03af0a6440db0a6d785d74a2c6fcca09843af1254d218e50fa9731e1`  
@@ -19657,7 +19637,6 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3619d1f74395b616c800ccd1c2b5ba61676e4fc9cddbcac6c58301ab4214ea9b`  
-		Last Modified: Tue, 03 Dec 2024 13:25:37 GMT  
 		Size: 2.6 KB (2644 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:850c8e654eae7154c90bb0c524ede2d94d3aef7400f3d0e38ee9ad042e3e8168`  
@@ -19684,7 +19663,6 @@ $ docker pull lightstreamer@sha256:8454e72b8f676489cd7e99143affb98ebadf7ac00d921
 
 -	Layers:
 	-	`sha256:b45aa6de3f30a1a37e0b51a5fceafa37bca4918c79c622b439d7818a623d8ff7`  
-		Last Modified: Tue, 03 Dec 2024 13:25:37 GMT  
 		Size: 19.7 KB (19702 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -19785,7 +19763,6 @@ CMD ["./LS.sh" "run"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -19793,6 +19770,7 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fa2e7420fd10c6e2f0c51372c6075a9e8d095279bfae4755b7bd9ce26399d6c`  
+		Last Modified: Tue, 03 Dec 2024 03:22:45 GMT  
 		Size: 2.6 KB (2634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c44a86c03af0a6440db0a6d785d74a2c6fcca09843af1254d218e50fa9731e1`  
@@ -19916,7 +19894,6 @@ CMD ["./LS.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3619d1f74395b616c800ccd1c2b5ba61676e4fc9cddbcac6c58301ab4214ea9b`  
-		Last Modified: Tue, 03 Dec 2024 13:25:37 GMT  
 		Size: 2.6 KB (2644 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:850c8e654eae7154c90bb0c524ede2d94d3aef7400f3d0e38ee9ad042e3e8168`  
@@ -19943,7 +19920,6 @@ $ docker pull lightstreamer@sha256:8454e72b8f676489cd7e99143affb98ebadf7ac00d921
 
 -	Layers:
 	-	`sha256:b45aa6de3f30a1a37e0b51a5fceafa37bca4918c79c622b439d7818a623d8ff7`  
-		Last Modified: Tue, 03 Dec 2024 13:25:37 GMT  
 		Size: 19.7 KB (19702 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20041,7 +20017,6 @@ CMD ["./LS.sh" "run"]
 		Size: 157.6 MB (157585711 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11be3e61358234818e215b9d11d1584bb7cf33bbbe329ccff717d555f1be2994`  
-		Last Modified: Tue, 03 Dec 2024 02:30:28 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b9d1e181a2a2b6ed242e21c8a4d40d33cf851fd5522737a9aaa8a708d215f94`  
@@ -20057,6 +20032,7 @@ CMD ["./LS.sh" "run"]
 		Size: 2.6 KB (2645 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb685100ed5c893231376ef38fd68ad1ce248e507e73455abec0eac35b1308f3`  
+		Last Modified: Tue, 03 Dec 2024 03:23:06 GMT  
 		Size: 59.0 MB (58959842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -20205,5 +20181,6 @@ $ docker pull lightstreamer@sha256:3340de911561a78d0423b47ab405af192f58525ea5a88
 
 -	Layers:
 	-	`sha256:12cafd8afefffc6b99c548b639f35c8100d8493af3410f0ab6a726afa5d113c2`  
+		Last Modified: Tue, 03 Dec 2024 13:26:39 GMT  
 		Size: 21.0 KB (20998 bytes)  
 		MIME: application/vnd.in-toto+json
