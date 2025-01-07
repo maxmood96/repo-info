@@ -48,7 +48,6 @@ RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in         
 		Size: 61.6 MB (61552984 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:089ee06bb31b7ff57a9d55f23f285eb9bc8299ae3f93a55152a1678e8825a24d`  
-		Last Modified: Tue, 07 Jan 2025 03:17:50 GMT  
 		Size: 231.2 MB (231195503 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
