@@ -119,6 +119,7 @@ CMD ["irb"]
 		Size: 1.3 MB (1272099 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3daffe37f650a8a82b2040aa4c8a77998d17b23b75c5aeb9f32ec16304e46111`  
+		Last Modified: Mon, 04 Nov 2024 23:06:57 GMT  
 		Size: 143.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -278,5 +279,6 @@ $ docker pull jruby@sha256:854b83379733e2b6322aab400638632de7a2fe22973d53a3af29e
 		Size: 5.1 MB (5054738 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e1e0851c8e586decc6b3842cafb2750802c779f6496ebe274d13599f72a3e5c3`  
+		Last Modified: Mon, 04 Nov 2024 23:36:55 GMT  
 		Size: 21.4 KB (21397 bytes)  
 		MIME: application/vnd.in-toto+json
