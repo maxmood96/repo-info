@@ -195,6 +195,7 @@ $ docker pull neo4j@sha256:5f398b38a45f7a3ed886c2d6df62a244f958efa26bd8bb5d87ab5
 
 -	Layers:
 	-	`sha256:a2ed025f9d16bbd43a1aad58e5154193cf0a0b2551c52c67f638eb9a9597ca4f`  
+		Last Modified: Wed, 25 Dec 2024 02:14:32 GMT  
 		Size: 3.2 MB (3229070 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4a6a722ad70de3c437d07e6ddc74990b7708c99f0253c6c91665c31cb1e726a7`  
