@@ -107,7 +107,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-23-amazon-corretto
 
 -	Layers:
 	-	`sha256:98ab3ce9b55607064b358289eeb810db43f69e016067c07e7136a807475f6f27`  
-		Last Modified: Tue, 17 Dec 2024 02:01:08 GMT  
 		Size: 52.3 MB (52276382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a200cabe61fbc13989972edf7dc16aadad985337674402bf82e734570147c16b`  

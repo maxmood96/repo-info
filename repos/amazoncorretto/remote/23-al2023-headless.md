@@ -47,7 +47,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-23-amazon-corretto
 		Size: 53.2 MB (53156313 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:99232b3fa37edda1a2ec9bd4deed4d5d1e98e718ea5c97023d0346c9420a06c2`  
-		Last Modified: Fri, 20 Dec 2024 22:33:36 GMT  
 		Size: 93.1 MB (93127193 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -107,7 +106,6 @@ ENV JAVA_HOME=/usr/lib/jvm/java-23-amazon-corretto
 
 -	Layers:
 	-	`sha256:98ab3ce9b55607064b358289eeb810db43f69e016067c07e7136a807475f6f27`  
-		Last Modified: Tue, 17 Dec 2024 02:01:08 GMT  
 		Size: 52.3 MB (52276382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5589753fdd1f3b3fc6a74b7f95738694f38b562b37b5328992b07691fbb92f32`  
