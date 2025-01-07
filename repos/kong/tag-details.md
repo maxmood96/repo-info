@@ -107,10 +107,10 @@ CMD ["kong" "docker-start"]
 		Size: 133.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7d612756d8c09c88a3da6257448a41113165c7cee257cec51b92a52fd0f62df`  
-		Last Modified: Tue, 12 Nov 2024 02:18:00 GMT  
 		Size: 33.1 MB (33112365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:941c92156102c206cc52bc5777df2533d21b9242fb946dd5a9e7bd088b688356`  
+		Last Modified: Tue, 12 Nov 2024 02:17:59 GMT  
 		Size: 880.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -212,10 +212,10 @@ CMD ["kong" "docker-start"]
 		Size: 133.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7d612756d8c09c88a3da6257448a41113165c7cee257cec51b92a52fd0f62df`  
-		Last Modified: Tue, 12 Nov 2024 02:18:00 GMT  
 		Size: 33.1 MB (33112365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:941c92156102c206cc52bc5777df2533d21b9242fb946dd5a9e7bd088b688356`  
+		Last Modified: Tue, 12 Nov 2024 02:17:59 GMT  
 		Size: 880.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -317,10 +317,10 @@ CMD ["kong" "docker-start"]
 		Size: 133.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7d612756d8c09c88a3da6257448a41113165c7cee257cec51b92a52fd0f62df`  
-		Last Modified: Tue, 12 Nov 2024 02:18:00 GMT  
 		Size: 33.1 MB (33112365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:941c92156102c206cc52bc5777df2533d21b9242fb946dd5a9e7bd088b688356`  
+		Last Modified: Tue, 12 Nov 2024 02:17:59 GMT  
 		Size: 880.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -422,7 +422,6 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a063bf11eab36bb71804044e9ac359f2fcea0a9c352ef5744b4783ed2939776d`  
@@ -454,6 +453,7 @@ $ docker pull kong@sha256:e739926fbef2090e332d277399a1ff68df527f3237a5be44950d9b
 
 -	Layers:
 	-	`sha256:dbb94002d2e06c36d53a36fa72662750d6dfa70a01fe695ae417ca1e5de0b65a`  
+		Last Modified: Tue, 17 Sep 2024 00:59:22 GMT  
 		Size: 7.1 MB (7109928 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:19575f5bf8ee3d36d0bdb6ef67338c060c3e6a7dec7419cc22b01dc6ca28551d`  
@@ -535,10 +535,10 @@ CMD ["kong" "docker-start"]
 		Size: 133.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7d612756d8c09c88a3da6257448a41113165c7cee257cec51b92a52fd0f62df`  
-		Last Modified: Tue, 12 Nov 2024 02:18:00 GMT  
 		Size: 33.1 MB (33112365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:941c92156102c206cc52bc5777df2533d21b9242fb946dd5a9e7bd088b688356`  
+		Last Modified: Tue, 12 Nov 2024 02:17:59 GMT  
 		Size: 880.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -640,10 +640,10 @@ CMD ["kong" "docker-start"]
 		Size: 133.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7d612756d8c09c88a3da6257448a41113165c7cee257cec51b92a52fd0f62df`  
-		Last Modified: Tue, 12 Nov 2024 02:18:00 GMT  
 		Size: 33.1 MB (33112365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:941c92156102c206cc52bc5777df2533d21b9242fb946dd5a9e7bd088b688356`  
+		Last Modified: Tue, 12 Nov 2024 02:17:59 GMT  
 		Size: 880.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -745,7 +745,6 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a063bf11eab36bb71804044e9ac359f2fcea0a9c352ef5744b4783ed2939776d`  
@@ -777,6 +776,7 @@ $ docker pull kong@sha256:e739926fbef2090e332d277399a1ff68df527f3237a5be44950d9b
 
 -	Layers:
 	-	`sha256:dbb94002d2e06c36d53a36fa72662750d6dfa70a01fe695ae417ca1e5de0b65a`  
+		Last Modified: Tue, 17 Sep 2024 00:59:22 GMT  
 		Size: 7.1 MB (7109928 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:19575f5bf8ee3d36d0bdb6ef67338c060c3e6a7dec7419cc22b01dc6ca28551d`  
@@ -975,7 +975,6 @@ CMD ["kong" "docker-start"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6624610a05794c402c1d9351a8a3c73574aaa8bc800705607c2d7002996c11c3`  
-		Last Modified: Sat, 21 Dec 2024 03:05:42 GMT  
 		Size: 89.9 MB (89892238 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c745ff0825fc7daeabe8e1ffa75f2aa2d52a3cd748c9148d1083194cfaf0e88`  
@@ -1003,7 +1002,6 @@ $ docker pull kong@sha256:66c5f9ff2734959a92d6fd0807c6cff5dd683ecb2530b09e6fcf60
 		Size: 5.3 MB (5295115 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c6134e3a89b75f7b4aa6319f436d1467822db4f57fde93bf5d2f45086e87db96`  
-		Last Modified: Sat, 21 Dec 2024 03:05:39 GMT  
 		Size: 16.4 KB (16400 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1085,7 +1083,6 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24e2fd999df51906cdccfcedaf920e01f7608269a9277373b2c1aaaf00114077`  
@@ -1093,11 +1090,9 @@ CMD ["kong" "docker-start"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:242be8294227195d2167c8972b2bff01103e09928107390a33373006a31d18a2`  
-		Last Modified: Tue, 17 Sep 2024 00:59:06 GMT  
 		Size: 62.7 MB (62717846 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a1572abe74a5b278158243ab24efbebbd158a63ce0eb676dbf5d254bbe44073e`  
-		Last Modified: Tue, 17 Sep 2024 00:59:05 GMT  
 		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1121,6 +1116,7 @@ $ docker pull kong@sha256:61c9880c7801e7a4a65b1e34f7ad2aa547cdd0bde2b02df13a4a30
 		Size: 5.9 MB (5906050 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:501cb57c9b669ad4f9d09575f7859c9e055c196d08a2f538b7f5a37552a37f00`  
+		Last Modified: Tue, 17 Sep 2024 00:59:05 GMT  
 		Size: 15.1 KB (15135 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1189,6 +1185,7 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b3aa62581876de35f39e3006576ae17be1ba694443d06f16438ffdf97929df3`  
@@ -1220,6 +1217,7 @@ $ docker pull kong@sha256:f0894fdcfc66e799b656a6ed4e49521ba15fdf5559b40e95b17682
 
 -	Layers:
 	-	`sha256:2ab7f1c87fa98a442a6f8a186bad8a649713fc8e62a007894037a0f2c2dc4942`  
+		Last Modified: Tue, 17 Sep 2024 02:22:26 GMT  
 		Size: 5.9 MB (5884099 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5036d6def21f22217c2ffd1632681dc8b281a97adffe40cf0a901ca090a420fa`  
@@ -1305,7 +1303,6 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24e2fd999df51906cdccfcedaf920e01f7608269a9277373b2c1aaaf00114077`  
@@ -1313,11 +1310,9 @@ CMD ["kong" "docker-start"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:242be8294227195d2167c8972b2bff01103e09928107390a33373006a31d18a2`  
-		Last Modified: Tue, 17 Sep 2024 00:59:06 GMT  
 		Size: 62.7 MB (62717846 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a1572abe74a5b278158243ab24efbebbd158a63ce0eb676dbf5d254bbe44073e`  
-		Last Modified: Tue, 17 Sep 2024 00:59:05 GMT  
 		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1341,6 +1336,7 @@ $ docker pull kong@sha256:61c9880c7801e7a4a65b1e34f7ad2aa547cdd0bde2b02df13a4a30
 		Size: 5.9 MB (5906050 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:501cb57c9b669ad4f9d09575f7859c9e055c196d08a2f538b7f5a37552a37f00`  
+		Last Modified: Tue, 17 Sep 2024 00:59:05 GMT  
 		Size: 15.1 KB (15135 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1409,6 +1405,7 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b3aa62581876de35f39e3006576ae17be1ba694443d06f16438ffdf97929df3`  
@@ -1440,6 +1437,7 @@ $ docker pull kong@sha256:f0894fdcfc66e799b656a6ed4e49521ba15fdf5559b40e95b17682
 
 -	Layers:
 	-	`sha256:2ab7f1c87fa98a442a6f8a186bad8a649713fc8e62a007894037a0f2c2dc4942`  
+		Last Modified: Tue, 17 Sep 2024 02:22:26 GMT  
 		Size: 5.9 MB (5884099 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5036d6def21f22217c2ffd1632681dc8b281a97adffe40cf0a901ca090a420fa`  
@@ -1525,7 +1523,6 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24e2fd999df51906cdccfcedaf920e01f7608269a9277373b2c1aaaf00114077`  
@@ -1533,11 +1530,9 @@ CMD ["kong" "docker-start"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:242be8294227195d2167c8972b2bff01103e09928107390a33373006a31d18a2`  
-		Last Modified: Tue, 17 Sep 2024 00:59:06 GMT  
 		Size: 62.7 MB (62717846 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a1572abe74a5b278158243ab24efbebbd158a63ce0eb676dbf5d254bbe44073e`  
-		Last Modified: Tue, 17 Sep 2024 00:59:05 GMT  
 		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1561,6 +1556,7 @@ $ docker pull kong@sha256:61c9880c7801e7a4a65b1e34f7ad2aa547cdd0bde2b02df13a4a30
 		Size: 5.9 MB (5906050 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:501cb57c9b669ad4f9d09575f7859c9e055c196d08a2f538b7f5a37552a37f00`  
+		Last Modified: Tue, 17 Sep 2024 00:59:05 GMT  
 		Size: 15.1 KB (15135 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1629,6 +1625,7 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b3aa62581876de35f39e3006576ae17be1ba694443d06f16438ffdf97929df3`  
@@ -1660,6 +1657,7 @@ $ docker pull kong@sha256:f0894fdcfc66e799b656a6ed4e49521ba15fdf5559b40e95b17682
 
 -	Layers:
 	-	`sha256:2ab7f1c87fa98a442a6f8a186bad8a649713fc8e62a007894037a0f2c2dc4942`  
+		Last Modified: Tue, 17 Sep 2024 02:22:26 GMT  
 		Size: 5.9 MB (5884099 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5036d6def21f22217c2ffd1632681dc8b281a97adffe40cf0a901ca090a420fa`  
@@ -1745,7 +1743,6 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24e2fd999df51906cdccfcedaf920e01f7608269a9277373b2c1aaaf00114077`  
@@ -1753,11 +1750,9 @@ CMD ["kong" "docker-start"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:242be8294227195d2167c8972b2bff01103e09928107390a33373006a31d18a2`  
-		Last Modified: Tue, 17 Sep 2024 00:59:06 GMT  
 		Size: 62.7 MB (62717846 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a1572abe74a5b278158243ab24efbebbd158a63ce0eb676dbf5d254bbe44073e`  
-		Last Modified: Tue, 17 Sep 2024 00:59:05 GMT  
 		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1781,6 +1776,7 @@ $ docker pull kong@sha256:61c9880c7801e7a4a65b1e34f7ad2aa547cdd0bde2b02df13a4a30
 		Size: 5.9 MB (5906050 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:501cb57c9b669ad4f9d09575f7859c9e055c196d08a2f538b7f5a37552a37f00`  
+		Last Modified: Tue, 17 Sep 2024 00:59:05 GMT  
 		Size: 15.1 KB (15135 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1849,6 +1845,7 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b3aa62581876de35f39e3006576ae17be1ba694443d06f16438ffdf97929df3`  
@@ -1880,6 +1877,7 @@ $ docker pull kong@sha256:f0894fdcfc66e799b656a6ed4e49521ba15fdf5559b40e95b17682
 
 -	Layers:
 	-	`sha256:2ab7f1c87fa98a442a6f8a186bad8a649713fc8e62a007894037a0f2c2dc4942`  
+		Last Modified: Tue, 17 Sep 2024 02:22:26 GMT  
 		Size: 5.9 MB (5884099 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5036d6def21f22217c2ffd1632681dc8b281a97adffe40cf0a901ca090a420fa`  
@@ -1965,7 +1963,6 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6b517eafcefa5bb3670bd51e2df70b303ba30cd18af6eca36fd8e1e5b47bb239`  
@@ -2001,7 +1998,6 @@ $ docker pull kong@sha256:52b300b46fbb3eeee8b91046ca7f7096ab73a2257fb12d71f169e2
 		Size: 4.9 MB (4936668 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:74d687c7f45e06f1025b83603cac88f7d7e8a93a217891bde1426760bece1711`  
-		Last Modified: Tue, 17 Sep 2024 00:59:14 GMT  
 		Size: 15.1 KB (15134 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2070,6 +2066,7 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b3aa62581876de35f39e3006576ae17be1ba694443d06f16438ffdf97929df3`  
@@ -2077,11 +2074,9 @@ CMD ["kong" "docker-start"]
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f71772e2bb265f5e1a65dc6d01e0eaf8405b5cb1521ecaac2113a6a6b6cc6571`  
-		Last Modified: Tue, 17 Sep 2024 02:20:48 GMT  
 		Size: 67.2 MB (67223068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9242abbe5e7681afe369ebafa22feb5e4066c1aab9fe8c55af12e845c058e4c`  
-		Last Modified: Tue, 17 Sep 2024 02:20:46 GMT  
 		Size: 1.2 KB (1157 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2105,6 +2100,7 @@ $ docker pull kong@sha256:c38e237fa13e444881b8181b8d72e6c4c925066d5238ed171bc3fb
 		Size: 4.9 MB (4943000 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:630d9f4288f8b325bddf123eddee819bbca763da3e9424fa6e44d124a7eb45f5`  
+		Last Modified: Tue, 17 Sep 2024 02:20:46 GMT  
 		Size: 15.4 KB (15436 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2186,7 +2182,6 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6b517eafcefa5bb3670bd51e2df70b303ba30cd18af6eca36fd8e1e5b47bb239`  
@@ -2222,7 +2217,6 @@ $ docker pull kong@sha256:52b300b46fbb3eeee8b91046ca7f7096ab73a2257fb12d71f169e2
 		Size: 4.9 MB (4936668 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:74d687c7f45e06f1025b83603cac88f7d7e8a93a217891bde1426760bece1711`  
-		Last Modified: Tue, 17 Sep 2024 00:59:14 GMT  
 		Size: 15.1 KB (15134 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2291,6 +2285,7 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b3aa62581876de35f39e3006576ae17be1ba694443d06f16438ffdf97929df3`  
@@ -2298,11 +2293,9 @@ CMD ["kong" "docker-start"]
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f71772e2bb265f5e1a65dc6d01e0eaf8405b5cb1521ecaac2113a6a6b6cc6571`  
-		Last Modified: Tue, 17 Sep 2024 02:20:48 GMT  
 		Size: 67.2 MB (67223068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9242abbe5e7681afe369ebafa22feb5e4066c1aab9fe8c55af12e845c058e4c`  
-		Last Modified: Tue, 17 Sep 2024 02:20:46 GMT  
 		Size: 1.2 KB (1157 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2326,6 +2319,7 @@ $ docker pull kong@sha256:c38e237fa13e444881b8181b8d72e6c4c925066d5238ed171bc3fb
 		Size: 4.9 MB (4943000 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:630d9f4288f8b325bddf123eddee819bbca763da3e9424fa6e44d124a7eb45f5`  
+		Last Modified: Tue, 17 Sep 2024 02:20:46 GMT  
 		Size: 15.4 KB (15436 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2407,7 +2401,6 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6b517eafcefa5bb3670bd51e2df70b303ba30cd18af6eca36fd8e1e5b47bb239`  
@@ -2443,7 +2436,6 @@ $ docker pull kong@sha256:52b300b46fbb3eeee8b91046ca7f7096ab73a2257fb12d71f169e2
 		Size: 4.9 MB (4936668 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:74d687c7f45e06f1025b83603cac88f7d7e8a93a217891bde1426760bece1711`  
-		Last Modified: Tue, 17 Sep 2024 00:59:14 GMT  
 		Size: 15.1 KB (15134 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2512,6 +2504,7 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b3aa62581876de35f39e3006576ae17be1ba694443d06f16438ffdf97929df3`  
@@ -2519,11 +2512,9 @@ CMD ["kong" "docker-start"]
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f71772e2bb265f5e1a65dc6d01e0eaf8405b5cb1521ecaac2113a6a6b6cc6571`  
-		Last Modified: Tue, 17 Sep 2024 02:20:48 GMT  
 		Size: 67.2 MB (67223068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9242abbe5e7681afe369ebafa22feb5e4066c1aab9fe8c55af12e845c058e4c`  
-		Last Modified: Tue, 17 Sep 2024 02:20:46 GMT  
 		Size: 1.2 KB (1157 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2547,6 +2538,7 @@ $ docker pull kong@sha256:c38e237fa13e444881b8181b8d72e6c4c925066d5238ed171bc3fb
 		Size: 4.9 MB (4943000 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:630d9f4288f8b325bddf123eddee819bbca763da3e9424fa6e44d124a7eb45f5`  
+		Last Modified: Tue, 17 Sep 2024 02:20:46 GMT  
 		Size: 15.4 KB (15436 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2628,7 +2620,6 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6b517eafcefa5bb3670bd51e2df70b303ba30cd18af6eca36fd8e1e5b47bb239`  
@@ -2664,7 +2655,6 @@ $ docker pull kong@sha256:52b300b46fbb3eeee8b91046ca7f7096ab73a2257fb12d71f169e2
 		Size: 4.9 MB (4936668 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:74d687c7f45e06f1025b83603cac88f7d7e8a93a217891bde1426760bece1711`  
-		Last Modified: Tue, 17 Sep 2024 00:59:14 GMT  
 		Size: 15.1 KB (15134 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2733,6 +2723,7 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b3aa62581876de35f39e3006576ae17be1ba694443d06f16438ffdf97929df3`  
@@ -2740,11 +2731,9 @@ CMD ["kong" "docker-start"]
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f71772e2bb265f5e1a65dc6d01e0eaf8405b5cb1521ecaac2113a6a6b6cc6571`  
-		Last Modified: Tue, 17 Sep 2024 02:20:48 GMT  
 		Size: 67.2 MB (67223068 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9242abbe5e7681afe369ebafa22feb5e4066c1aab9fe8c55af12e845c058e4c`  
-		Last Modified: Tue, 17 Sep 2024 02:20:46 GMT  
 		Size: 1.2 KB (1157 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2768,6 +2757,7 @@ $ docker pull kong@sha256:c38e237fa13e444881b8181b8d72e6c4c925066d5238ed171bc3fb
 		Size: 4.9 MB (4943000 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:630d9f4288f8b325bddf123eddee819bbca763da3e9424fa6e44d124a7eb45f5`  
+		Last Modified: Tue, 17 Sep 2024 02:20:46 GMT  
 		Size: 15.4 KB (15436 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2849,19 +2839,15 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43a156af603f3a03b081a983c7e973e8a1736084868614fb76f7e7a581b49758`  
-		Last Modified: Tue, 17 Sep 2024 00:59:13 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e032d2b24653f4c22de4d915dce3406c6aa1980e06780bd87a402da054e37094`  
-		Last Modified: Tue, 17 Sep 2024 00:59:15 GMT  
 		Size: 67.7 MB (67708615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a1572abe74a5b278158243ab24efbebbd158a63ce0eb676dbf5d254bbe44073e`  
-		Last Modified: Tue, 17 Sep 2024 00:59:05 GMT  
 		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2954,6 +2940,7 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b3aa62581876de35f39e3006576ae17be1ba694443d06f16438ffdf97929df3`  
@@ -2965,6 +2952,7 @@ CMD ["kong" "docker-start"]
 		Size: 67.6 MB (67646946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b641deca7a61ba77a09e62061b7b4ffddf0549958445c4670531101516c5e82`  
+		Last Modified: Tue, 17 Sep 2024 02:19:56 GMT  
 		Size: 1.2 KB (1158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2984,6 +2972,7 @@ $ docker pull kong@sha256:84fdeede9e71fb976f918cc6e6a366abbeeb0ed0ba9289c2fcc7e3
 
 -	Layers:
 	-	`sha256:6c301b4f52a71e1f5dc9d40dd4ac5d9aa4cad3a6c7334ca665941b8fa1252cc1`  
+		Last Modified: Tue, 17 Sep 2024 02:19:57 GMT  
 		Size: 5.0 MB (5021584 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:497bb535bed0dbb14dfb43e86b1632b8b90b0b2de13b666a07bc9893af97db15`  
@@ -3069,19 +3058,15 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43a156af603f3a03b081a983c7e973e8a1736084868614fb76f7e7a581b49758`  
-		Last Modified: Tue, 17 Sep 2024 00:59:13 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e032d2b24653f4c22de4d915dce3406c6aa1980e06780bd87a402da054e37094`  
-		Last Modified: Tue, 17 Sep 2024 00:59:15 GMT  
 		Size: 67.7 MB (67708615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a1572abe74a5b278158243ab24efbebbd158a63ce0eb676dbf5d254bbe44073e`  
-		Last Modified: Tue, 17 Sep 2024 00:59:05 GMT  
 		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3174,6 +3159,7 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b3aa62581876de35f39e3006576ae17be1ba694443d06f16438ffdf97929df3`  
@@ -3185,6 +3171,7 @@ CMD ["kong" "docker-start"]
 		Size: 67.6 MB (67646946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b641deca7a61ba77a09e62061b7b4ffddf0549958445c4670531101516c5e82`  
+		Last Modified: Tue, 17 Sep 2024 02:19:56 GMT  
 		Size: 1.2 KB (1158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3204,6 +3191,7 @@ $ docker pull kong@sha256:84fdeede9e71fb976f918cc6e6a366abbeeb0ed0ba9289c2fcc7e3
 
 -	Layers:
 	-	`sha256:6c301b4f52a71e1f5dc9d40dd4ac5d9aa4cad3a6c7334ca665941b8fa1252cc1`  
+		Last Modified: Tue, 17 Sep 2024 02:19:57 GMT  
 		Size: 5.0 MB (5021584 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:497bb535bed0dbb14dfb43e86b1632b8b90b0b2de13b666a07bc9893af97db15`  
@@ -3289,19 +3277,15 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43a156af603f3a03b081a983c7e973e8a1736084868614fb76f7e7a581b49758`  
-		Last Modified: Tue, 17 Sep 2024 00:59:13 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e032d2b24653f4c22de4d915dce3406c6aa1980e06780bd87a402da054e37094`  
-		Last Modified: Tue, 17 Sep 2024 00:59:15 GMT  
 		Size: 67.7 MB (67708615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a1572abe74a5b278158243ab24efbebbd158a63ce0eb676dbf5d254bbe44073e`  
-		Last Modified: Tue, 17 Sep 2024 00:59:05 GMT  
 		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3394,6 +3378,7 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b3aa62581876de35f39e3006576ae17be1ba694443d06f16438ffdf97929df3`  
@@ -3405,6 +3390,7 @@ CMD ["kong" "docker-start"]
 		Size: 67.6 MB (67646946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b641deca7a61ba77a09e62061b7b4ffddf0549958445c4670531101516c5e82`  
+		Last Modified: Tue, 17 Sep 2024 02:19:56 GMT  
 		Size: 1.2 KB (1158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3424,6 +3410,7 @@ $ docker pull kong@sha256:84fdeede9e71fb976f918cc6e6a366abbeeb0ed0ba9289c2fcc7e3
 
 -	Layers:
 	-	`sha256:6c301b4f52a71e1f5dc9d40dd4ac5d9aa4cad3a6c7334ca665941b8fa1252cc1`  
+		Last Modified: Tue, 17 Sep 2024 02:19:57 GMT  
 		Size: 5.0 MB (5021584 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:497bb535bed0dbb14dfb43e86b1632b8b90b0b2de13b666a07bc9893af97db15`  
@@ -3509,19 +3496,15 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43a156af603f3a03b081a983c7e973e8a1736084868614fb76f7e7a581b49758`  
-		Last Modified: Tue, 17 Sep 2024 00:59:13 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e032d2b24653f4c22de4d915dce3406c6aa1980e06780bd87a402da054e37094`  
-		Last Modified: Tue, 17 Sep 2024 00:59:15 GMT  
 		Size: 67.7 MB (67708615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a1572abe74a5b278158243ab24efbebbd158a63ce0eb676dbf5d254bbe44073e`  
-		Last Modified: Tue, 17 Sep 2024 00:59:05 GMT  
 		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3614,6 +3597,7 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b3aa62581876de35f39e3006576ae17be1ba694443d06f16438ffdf97929df3`  
@@ -3625,6 +3609,7 @@ CMD ["kong" "docker-start"]
 		Size: 67.6 MB (67646946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b641deca7a61ba77a09e62061b7b4ffddf0549958445c4670531101516c5e82`  
+		Last Modified: Tue, 17 Sep 2024 02:19:56 GMT  
 		Size: 1.2 KB (1158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3644,6 +3629,7 @@ $ docker pull kong@sha256:84fdeede9e71fb976f918cc6e6a366abbeeb0ed0ba9289c2fcc7e3
 
 -	Layers:
 	-	`sha256:6c301b4f52a71e1f5dc9d40dd4ac5d9aa4cad3a6c7334ca665941b8fa1252cc1`  
+		Last Modified: Tue, 17 Sep 2024 02:19:57 GMT  
 		Size: 5.0 MB (5021584 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:497bb535bed0dbb14dfb43e86b1632b8b90b0b2de13b666a07bc9893af97db15`  
@@ -3729,11 +3715,9 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f2f4cf5b05541c564470dd9c31a7e069849fe848969e0c72fd0657b1b7023e8`  
-		Last Modified: Tue, 17 Sep 2024 00:58:58 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0183922cc67aa6ce647c5310fa77fa3173aab6526e09a61e3bbbd08622be182c`  
@@ -3741,6 +3725,7 @@ CMD ["kong" "docker-start"]
 		Size: 88.0 MB (87985692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1175c32a1e68fba6caa9437a6a4c1c0130d167f491c6efeb582ae6b8bd601beb`  
+		Last Modified: Tue, 17 Sep 2024 00:58:58 GMT  
 		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3760,6 +3745,7 @@ $ docker pull kong@sha256:c8a2b3627a6d88cc74af3261c942d29dbfb003ff8f44829124ac9e
 
 -	Layers:
 	-	`sha256:88ab2fbad70a567af0795094b4ac81186dacff845957f5d7b7b494cb3c6659a1`  
+		Last Modified: Tue, 17 Sep 2024 00:58:58 GMT  
 		Size: 3.1 KB (3103 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:113141d1145c121da26cb1fa8f9d8710810dcdd1342c244f15540551b94207ae`  
@@ -3832,6 +3818,7 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b3aa62581876de35f39e3006576ae17be1ba694443d06f16438ffdf97929df3`  
@@ -3949,11 +3936,9 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f2f4cf5b05541c564470dd9c31a7e069849fe848969e0c72fd0657b1b7023e8`  
-		Last Modified: Tue, 17 Sep 2024 00:58:58 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0183922cc67aa6ce647c5310fa77fa3173aab6526e09a61e3bbbd08622be182c`  
@@ -3961,6 +3946,7 @@ CMD ["kong" "docker-start"]
 		Size: 88.0 MB (87985692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1175c32a1e68fba6caa9437a6a4c1c0130d167f491c6efeb582ae6b8bd601beb`  
+		Last Modified: Tue, 17 Sep 2024 00:58:58 GMT  
 		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3980,6 +3966,7 @@ $ docker pull kong@sha256:c8a2b3627a6d88cc74af3261c942d29dbfb003ff8f44829124ac9e
 
 -	Layers:
 	-	`sha256:88ab2fbad70a567af0795094b4ac81186dacff845957f5d7b7b494cb3c6659a1`  
+		Last Modified: Tue, 17 Sep 2024 00:58:58 GMT  
 		Size: 3.1 KB (3103 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:113141d1145c121da26cb1fa8f9d8710810dcdd1342c244f15540551b94207ae`  
@@ -4052,6 +4039,7 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b3aa62581876de35f39e3006576ae17be1ba694443d06f16438ffdf97929df3`  
@@ -4169,11 +4157,9 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f2f4cf5b05541c564470dd9c31a7e069849fe848969e0c72fd0657b1b7023e8`  
-		Last Modified: Tue, 17 Sep 2024 00:58:58 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0183922cc67aa6ce647c5310fa77fa3173aab6526e09a61e3bbbd08622be182c`  
@@ -4181,6 +4167,7 @@ CMD ["kong" "docker-start"]
 		Size: 88.0 MB (87985692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1175c32a1e68fba6caa9437a6a4c1c0130d167f491c6efeb582ae6b8bd601beb`  
+		Last Modified: Tue, 17 Sep 2024 00:58:58 GMT  
 		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -4200,6 +4187,7 @@ $ docker pull kong@sha256:c8a2b3627a6d88cc74af3261c942d29dbfb003ff8f44829124ac9e
 
 -	Layers:
 	-	`sha256:88ab2fbad70a567af0795094b4ac81186dacff845957f5d7b7b494cb3c6659a1`  
+		Last Modified: Tue, 17 Sep 2024 00:58:58 GMT  
 		Size: 3.1 KB (3103 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:113141d1145c121da26cb1fa8f9d8710810dcdd1342c244f15540551b94207ae`  
@@ -4272,6 +4260,7 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b3aa62581876de35f39e3006576ae17be1ba694443d06f16438ffdf97929df3`  
@@ -4389,11 +4378,9 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f2f4cf5b05541c564470dd9c31a7e069849fe848969e0c72fd0657b1b7023e8`  
-		Last Modified: Tue, 17 Sep 2024 00:58:58 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0183922cc67aa6ce647c5310fa77fa3173aab6526e09a61e3bbbd08622be182c`  
@@ -4401,6 +4388,7 @@ CMD ["kong" "docker-start"]
 		Size: 88.0 MB (87985692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1175c32a1e68fba6caa9437a6a4c1c0130d167f491c6efeb582ae6b8bd601beb`  
+		Last Modified: Tue, 17 Sep 2024 00:58:58 GMT  
 		Size: 1.2 KB (1155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -4420,6 +4408,7 @@ $ docker pull kong@sha256:c8a2b3627a6d88cc74af3261c942d29dbfb003ff8f44829124ac9e
 
 -	Layers:
 	-	`sha256:88ab2fbad70a567af0795094b4ac81186dacff845957f5d7b7b494cb3c6659a1`  
+		Last Modified: Tue, 17 Sep 2024 00:58:58 GMT  
 		Size: 3.1 KB (3103 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:113141d1145c121da26cb1fa8f9d8710810dcdd1342c244f15540551b94207ae`  
@@ -4492,6 +4481,7 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b3aa62581876de35f39e3006576ae17be1ba694443d06f16438ffdf97929df3`  
@@ -4722,7 +4712,6 @@ CMD ["kong" "docker-start"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6624610a05794c402c1d9351a8a3c73574aaa8bc800705607c2d7002996c11c3`  
-		Last Modified: Sat, 21 Dec 2024 03:05:42 GMT  
 		Size: 89.9 MB (89892238 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c745ff0825fc7daeabe8e1ffa75f2aa2d52a3cd748c9148d1083194cfaf0e88`  
@@ -4750,7 +4739,6 @@ $ docker pull kong@sha256:66c5f9ff2734959a92d6fd0807c6cff5dd683ecb2530b09e6fcf60
 		Size: 5.3 MB (5295115 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c6134e3a89b75f7b4aa6319f436d1467822db4f57fde93bf5d2f45086e87db96`  
-		Last Modified: Sat, 21 Dec 2024 03:05:39 GMT  
 		Size: 16.4 KB (16400 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4945,7 +4933,6 @@ CMD ["kong" "docker-start"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6624610a05794c402c1d9351a8a3c73574aaa8bc800705607c2d7002996c11c3`  
-		Last Modified: Sat, 21 Dec 2024 03:05:42 GMT  
 		Size: 89.9 MB (89892238 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c745ff0825fc7daeabe8e1ffa75f2aa2d52a3cd748c9148d1083194cfaf0e88`  
@@ -4973,7 +4960,6 @@ $ docker pull kong@sha256:66c5f9ff2734959a92d6fd0807c6cff5dd683ecb2530b09e6fcf60
 		Size: 5.3 MB (5295115 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c6134e3a89b75f7b4aa6319f436d1467822db4f57fde93bf5d2f45086e87db96`  
-		Last Modified: Sat, 21 Dec 2024 03:05:39 GMT  
 		Size: 16.4 KB (16400 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5168,7 +5154,6 @@ CMD ["kong" "docker-start"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6624610a05794c402c1d9351a8a3c73574aaa8bc800705607c2d7002996c11c3`  
-		Last Modified: Sat, 21 Dec 2024 03:05:42 GMT  
 		Size: 89.9 MB (89892238 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c745ff0825fc7daeabe8e1ffa75f2aa2d52a3cd748c9148d1083194cfaf0e88`  
@@ -5196,7 +5181,6 @@ $ docker pull kong@sha256:66c5f9ff2734959a92d6fd0807c6cff5dd683ecb2530b09e6fcf60
 		Size: 5.3 MB (5295115 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c6134e3a89b75f7b4aa6319f436d1467822db4f57fde93bf5d2f45086e87db96`  
-		Last Modified: Sat, 21 Dec 2024 03:05:39 GMT  
 		Size: 16.4 KB (16400 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5391,7 +5375,6 @@ CMD ["kong" "docker-start"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6624610a05794c402c1d9351a8a3c73574aaa8bc800705607c2d7002996c11c3`  
-		Last Modified: Sat, 21 Dec 2024 03:05:42 GMT  
 		Size: 89.9 MB (89892238 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c745ff0825fc7daeabe8e1ffa75f2aa2d52a3cd748c9148d1083194cfaf0e88`  
@@ -5419,7 +5402,6 @@ $ docker pull kong@sha256:66c5f9ff2734959a92d6fd0807c6cff5dd683ecb2530b09e6fcf60
 		Size: 5.3 MB (5295115 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c6134e3a89b75f7b4aa6319f436d1467822db4f57fde93bf5d2f45086e87db96`  
-		Last Modified: Sat, 21 Dec 2024 03:05:39 GMT  
 		Size: 16.4 KB (16400 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5614,7 +5596,6 @@ CMD ["kong" "docker-start"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6624610a05794c402c1d9351a8a3c73574aaa8bc800705607c2d7002996c11c3`  
-		Last Modified: Sat, 21 Dec 2024 03:05:42 GMT  
 		Size: 89.9 MB (89892238 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c745ff0825fc7daeabe8e1ffa75f2aa2d52a3cd748c9148d1083194cfaf0e88`  
@@ -5642,7 +5623,6 @@ $ docker pull kong@sha256:66c5f9ff2734959a92d6fd0807c6cff5dd683ecb2530b09e6fcf60
 		Size: 5.3 MB (5295115 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c6134e3a89b75f7b4aa6319f436d1467822db4f57fde93bf5d2f45086e87db96`  
-		Last Modified: Sat, 21 Dec 2024 03:05:39 GMT  
 		Size: 16.4 KB (16400 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5837,7 +5817,6 @@ CMD ["kong" "docker-start"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6624610a05794c402c1d9351a8a3c73574aaa8bc800705607c2d7002996c11c3`  
-		Last Modified: Sat, 21 Dec 2024 03:05:42 GMT  
 		Size: 89.9 MB (89892238 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c745ff0825fc7daeabe8e1ffa75f2aa2d52a3cd748c9148d1083194cfaf0e88`  
@@ -5865,6 +5844,5 @@ $ docker pull kong@sha256:66c5f9ff2734959a92d6fd0807c6cff5dd683ecb2530b09e6fcf60
 		Size: 5.3 MB (5295115 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c6134e3a89b75f7b4aa6319f436d1467822db4f57fde93bf5d2f45086e87db96`  
-		Last Modified: Sat, 21 Dec 2024 03:05:39 GMT  
 		Size: 16.4 KB (16400 bytes)  
 		MIME: application/vnd.in-toto+json
