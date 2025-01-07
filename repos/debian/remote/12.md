@@ -279,7 +279,6 @@ RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1734912000'
 
 -	Layers:
 	-	`sha256:308f39459045dc7bdf1e0f0796ba6cc67e14899ab5c36afc6c0692da37a1f331`  
-		Last Modified: Wed, 25 Dec 2024 09:07:26 GMT  
 		Size: 52.3 MB (52328075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -299,6 +298,7 @@ $ docker pull debian@sha256:ab38f9b910a87bcec1d2a528b1d1bef1bd7895066ed12496f81c
 
 -	Layers:
 	-	`sha256:c7730e96c7647d5657f68b9e722967dcb7df6425ba6cbd3883cad30dccc5501d`  
+		Last Modified: Wed, 25 Dec 2024 09:07:25 GMT  
 		Size: 3.6 MB (3622918 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -341,6 +341,5 @@ $ docker pull debian@sha256:1d6a87f65d816d20c735234d8bc7393be525d154a74e3fa139fc
 
 -	Layers:
 	-	`sha256:0478ef0029f16a81ecf84fd6bf0e73e01fd7f87bc78b7d0373fc0fe8f93aaec3`  
-		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
 		Size: 3.6 MB (3618398 bytes)  
 		MIME: application/vnd.in-toto+json
