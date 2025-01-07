@@ -84,7 +84,6 @@ CMD ["ts3server"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d45425e14a2e5fb90b826c58692701eae2f447fe29bb885a0cf36f55629cd66a`  
-		Last Modified: Tue, 12 Nov 2024 02:10:54 GMT  
 		Size: 1.6 KB (1559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -186,7 +185,6 @@ CMD ["ts3server"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d45425e14a2e5fb90b826c58692701eae2f447fe29bb885a0cf36f55629cd66a`  
-		Last Modified: Tue, 12 Nov 2024 02:10:54 GMT  
 		Size: 1.6 KB (1559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -288,7 +286,6 @@ CMD ["ts3server"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d45425e14a2e5fb90b826c58692701eae2f447fe29bb885a0cf36f55629cd66a`  
-		Last Modified: Tue, 12 Nov 2024 02:10:54 GMT  
 		Size: 1.6 KB (1559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
