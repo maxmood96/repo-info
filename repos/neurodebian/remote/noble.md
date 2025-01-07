@@ -60,6 +60,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:10363b67b7c7df5a7f19aeb132cc2e1c148a4850360cbfea065de604e7e84689`  
+		Last Modified: Tue, 03 Dec 2024 02:31:15 GMT  
 		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:148844dcd0fea449935fdfbce9218162d22b312bdf46e3e6b3944aacbf3d4402`  
