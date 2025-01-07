@@ -91,7 +91,6 @@ CMD ["mongod"]
 		Size: 100.8 MB (100777534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ec77b46e44c57b77c9e7308150d82a4cf09cd3782e389a96b72ed9a09d6e8002`  
-		Last Modified: Fri, 20 Dec 2024 21:29:52 GMT  
 		Size: 4.3 MB (4300326 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:902d13ef4ab459ed56775ec1cf5ac74d3d5f3f899612bbc2dd628beaf590fb36`  
@@ -99,6 +98,7 @@ CMD ["mongod"]
 		Size: 200.6 MB (200563055 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11d0b8121c5cc316d557aeb423992506aa884f60e67337c1e59595355479cb3b`  
+		Last Modified: Fri, 20 Dec 2024 21:29:52 GMT  
 		Size: 1.2 KB (1235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6494bd74d14cd370421d14267513ef65c51d66d4eb787fa6c862a897043fb108`  
@@ -114,15 +114,12 @@ CMD ["mongod"]
 		Size: 914.5 KB (914521 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:458215f49b0524389dce9bed7edbef9f9ecbce60988a00c4057200dbb7e379de`  
-		Last Modified: Fri, 20 Dec 2024 21:29:53 GMT  
 		Size: 13.2 KB (13205 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:81896b577631381e3f353e8c7cf650af4d7ea728dfe38ce06a53e1bc779c4790`  
-		Last Modified: Fri, 20 Dec 2024 21:29:53 GMT  
 		Size: 4.0 KB (3961 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dec2793466c2f7f7bbaa6e618faf0f8d08976e845a2d4156525cde1f4d7a1a91`  
-		Last Modified: Fri, 20 Dec 2024 21:29:53 GMT  
 		Size: 4.8 KB (4835 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -142,5 +139,6 @@ $ docker pull percona@sha256:47bf802d03a6547a6c21811f036c010d4b62a099222201b0f67
 
 -	Layers:
 	-	`sha256:c1e16bbf53cd9c84ba6e98595b1ea84a36649ab0bca620fa91910f4481dcc841`  
+		Last Modified: Fri, 20 Dec 2024 21:29:52 GMT  
 		Size: 32.2 KB (32214 bytes)  
 		MIME: application/vnd.in-toto+json
