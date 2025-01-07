@@ -235,6 +235,7 @@ $ docker pull nginx@sha256:62f6b09986a78023cc6de925f7f20e8ff8d24eb1e1ceeb00f67e5
 
 -	Layers:
 	-	`sha256:2554eb3228fb3018ab3ecc2594152bacf61c87a7a07456e3e0b322b87dcc040c`  
+		Last Modified: Wed, 14 Aug 2024 00:15:08 GMT  
 		Size: 4.3 MB (4265671 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:60892d2f7791e77f137bf8e08d4f5d0b61a6d59a8d43acbc2d13738b72b97580`  
@@ -414,6 +415,7 @@ RUN set -x;     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;  
 		Size: 38.5 MB (38513064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ef3dd9169685fa276a8a62c4c8a1b21c7fb6c378cbc10e0b6af51f3f367aa9d2`  
+		Last Modified: Tue, 24 Dec 2024 23:03:36 GMT  
 		Size: 629.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ca859205549e87184aef14b13fe324de3b9bcb4fa86ab89c95ac55f05ae10709`  
@@ -515,6 +517,7 @@ RUN set -x;     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;  
 
 -	Layers:
 	-	`sha256:fba9c0797a7b5bba079e0fd9d815a8878aea58430ea12c84047010f98fbe34d7`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
 		Size: 29.2 MB (29205387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cfaac5469ab6ba679883551252355f23dd887a89de7713829e995bc6490fad2b`  
@@ -522,6 +525,7 @@ RUN set -x;     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;  
 		Size: 39.0 MB (39039955 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1ac0d463806957aac36ae4c6baee2cf9c7f31feec9e7c06efa8bf4666ea68f64`  
+		Last Modified: Tue, 24 Dec 2024 22:18:07 GMT  
 		Size: 629.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c6565414b1e1036345a9eb8946251beb67b5810b55d89d7ac8706d94da81d0e2`  
@@ -623,6 +627,7 @@ RUN set -x;     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;  
 
 -	Layers:
 	-	`sha256:8a9f899eb883b68bbb36209214842bc927b7c446aa0471f0b241ae7e76adb6e5`  
+		Last Modified: Tue, 24 Dec 2024 21:33:38 GMT  
 		Size: 28.5 MB (28505873 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b7be3136f0ab7781b2b6a45c51ee24ae894cb726cb08a372c9a220598c1c6a4e`  
