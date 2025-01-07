@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:08997aaffffb23422f1f503c6363445a48b10f24e8ebdc885e331315ac9a9c7d`
+- Image ID: `sha256:3fd8c9f69ecbe975e23e99abdb809807473a66db371fdaacb1c4379bfbf0b5f2`
 - Created: `2023-09-18T06:58:15Z`
-- Virtual Size: ~ 28.44 Mb  
+- Virtual Size: ~ 28.41 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint.sh"]`
@@ -119,16 +119,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20240226-r0 description:
+ca-certificates-20241121-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20240226-r0 webpage:
+ca-certificates-20241121-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20240226-r0 installed size:
-712 KiB
+ca-certificates-20241121-r0 installed size:
+684 KiB
 
-ca-certificates-20240226-r0 license:
+ca-certificates-20241121-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -136,16 +136,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20240226-r0 description:
+ca-certificates-bundle-20241121-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20240226-r0 webpage:
+ca-certificates-bundle-20241121-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20240226-r0 installed size:
-236 KiB
+ca-certificates-bundle-20241121-r0 installed size:
+228 KiB
 
-ca-certificates-bundle-20240226-r0 license:
+ca-certificates-bundle-20241121-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -170,16 +170,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.7-r0 description:
+libcrypto3-3.1.7-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.1.7-r0 webpage:
+libcrypto3-3.1.7-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.7-r0 installed size:
+libcrypto3-3.1.7-r1 installed size:
 4480 KiB
 
-libcrypto3-3.1.7-r0 license:
+libcrypto3-3.1.7-r1 license:
 Apache-2.0
 
 ```
@@ -204,16 +204,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libpq`
 
 ```console
-libpq-15.8-r0 description:
+libpq-15.10-r0 description:
 PostgreSQL client library
 
-libpq-15.8-r0 webpage:
+libpq-15.10-r0 webpage:
 https://www.postgresql.org/
 
-libpq-15.8-r0 installed size:
+libpq-15.10-r0 installed size:
 320 KiB
 
-libpq-15.8-r0 license:
+libpq-15.10-r0 license:
 PostgreSQL
 
 ```
@@ -221,16 +221,16 @@ PostgreSQL
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.7-r0 description:
+libssl3-3.1.7-r1 description:
 SSL shared libraries
 
-libssl3-3.1.7-r0 webpage:
+libssl3-3.1.7-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.7-r0 installed size:
+libssl3-3.1.7-r1 installed size:
 552 KiB
 
-libssl3-3.1.7-r0 license:
+libssl3-3.1.7-r1 license:
 Apache-2.0
 
 ```
