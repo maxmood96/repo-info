@@ -38,7 +38,6 @@ CMD ["/bin/bash"]
 		Size: 72.1 MB (72063079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b868939f5b0c0efaa45714babdd4c66ccfe0b0717ee91595d8e706c8f363eeba`  
-		Last Modified: Tue, 24 Dec 2024 21:32:26 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -58,6 +57,5 @@ $ docker pull clearlinux@sha256:596b9d5bd7a1a03e68b343d2a80553d9f0dfe97bd26ccca1
 
 -	Layers:
 	-	`sha256:c2b51f7806467715245f71ab6e1a5bf39d70685b75e64a366a64d23eec65088a`  
-		Last Modified: Tue, 24 Dec 2024 21:32:26 GMT  
 		Size: 6.3 KB (6275 bytes)  
 		MIME: application/vnd.in-toto+json
