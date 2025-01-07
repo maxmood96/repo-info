@@ -96,6 +96,7 @@ $ docker pull swift@sha256:af7926eee42bd09a691e781bd7f390c943c11d9881a1d5686af1c
 
 -	Layers:
 	-	`sha256:95b89eaed126226961b27e651844213e59bb2ad21ecd10a70f98cbed3020960e`  
+		Last Modified: Thu, 12 Dec 2024 22:34:40 GMT  
 		Size: 8.2 MB (8228230 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:45722577fb62803e11fdd6e2dc834af24e8adaa41c358fec8a770451b2e500d8`  
@@ -188,7 +189,6 @@ $ docker pull swift@sha256:da49a8b1e0cf002f3a55563bcfbe50a025bca207298066c781977
 
 -	Layers:
 	-	`sha256:2d1f12bcb96e336dcba46860692e0e1775524ebd9f90c500d3eb015132c85776`  
-		Last Modified: Fri, 13 Dec 2024 00:05:21 GMT  
 		Size: 8.2 MB (8223906 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d4227a42fe7f2e29b799c2a3403417889450850da7046302751df44a9c12bd23`  
