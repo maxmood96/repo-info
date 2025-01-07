@@ -101,13 +101,13 @@ CMD ["mvn"]
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4d0025a6d227055a0c5ca18d61c309ea497c7cdb54880fd25cccdcd868517152`  
+		Last Modified: Tue, 03 Dec 2024 02:30:16 GMT  
 		Size: 17.0 MB (16966337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5a7ece70ec66417d09e8021eefbb8c65dc851f0987cbbb583367896e3dd555e8`  
 		Size: 145.6 MB (145608939 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:623a4ff914ca6b60fd1e2837844d91857bc19571a66b9d3c976670d748d0860e`  
-		Last Modified: Tue, 03 Dec 2024 02:30:15 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d3bf2e80222117936b32fdfee7b096a291bdc3780323bdd2ff10ff1c3ed34de`  
@@ -119,7 +119,6 @@ CMD ["mvn"]
 		Size: 22.5 MB (22533812 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e7425e138f3f846e076e679e2debdcca48a07209532d455049b6baea2acb776`  
-		Last Modified: Mon, 09 Dec 2024 20:33:08 GMT  
 		Size: 9.2 MB (9170435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c6cd29bcaef124b3d7b8d2e020f8a890992c13ecc09b12d59d0d07817af68963`  
@@ -131,7 +130,6 @@ CMD ["mvn"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ecc07efcfe83c002d18f39d303f6f47a3463d0ba09bfd4d92464cf1524f6fa3`  
-		Last Modified: Mon, 09 Dec 2024 20:33:07 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -239,7 +237,6 @@ CMD ["mvn"]
 
 -	Layers:
 	-	`sha256:b25adda5718ef4d96696ce8f0e58cde58fbe9977456036f84293bba8f26c5567`  
-		Last Modified: Tue, 19 Nov 2024 17:38:39 GMT  
 		Size: 26.9 MB (26869639 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:83a5eb6a2db557356b46da4a6e217de6ed249bca2210cdccd1a0430c803e8512`  
@@ -295,6 +292,7 @@ $ docker pull maven@sha256:b92ab1be29c1264d526ddb96c7e58a0db0e942f08675be665dce4
 
 -	Layers:
 	-	`sha256:1ee304ca0ec32899bbeebc01749680603b084d5ba70624d9fa4de6100d7f9186`  
+		Last Modified: Tue, 10 Dec 2024 05:25:56 GMT  
 		Size: 4.7 MB (4729378 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bf0470b2f0ee0f3c38d4667b2e4418f3032cdf308544a91336a2c3da5826e4fd`  
@@ -529,6 +527,7 @@ CMD ["mvn"]
 		Size: 34.4 MB (34388820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eb08691d29d174440113fb3d94aec487ff706b850acfce25b3870b67886fdc90`  
+		Last Modified: Tue, 03 Dec 2024 04:44:50 GMT  
 		Size: 18.8 MB (18845906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:576ec6c9f10f75f0116a6bb0c79d840dd733c77e0dc8cd786c0e69cb885ba060`  
@@ -668,6 +667,7 @@ CMD ["mvn"]
 
 -	Layers:
 	-	`sha256:755503a8fb36d6a0d08275c3792ab81b69fdff95054dff0aa932d6dc30107609`  
+		Last Modified: Tue, 19 Nov 2024 17:38:58 GMT  
 		Size: 30.0 MB (30020826 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4797233a5c5384584920c35814bc8b38ea24dccbedde0a0e68b3fb1a30877a17`  
@@ -683,7 +683,6 @@ CMD ["mvn"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c2c999470d0659bc7be79116cb0a44cea1653496c3c250ef903a802adcf8129`  
-		Last Modified: Tue, 03 Dec 2024 04:16:13 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a55b662a3033f920fd2e4051291973130dd1bf7b2e66921ff3d5fd944686971`  
@@ -727,6 +726,5 @@ $ docker pull maven@sha256:33c5a8cb9ee7e97e2a0db7220b0455a6047257590f384ee3bb106
 		Size: 4.7 MB (4726974 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e8772d0f17511cf1273a22299251d6b88d665a5561e6f0b46ffe7a449cad9206`  
-		Last Modified: Tue, 10 Dec 2024 06:02:56 GMT  
 		Size: 19.6 KB (19612 bytes)  
 		MIME: application/vnd.in-toto+json

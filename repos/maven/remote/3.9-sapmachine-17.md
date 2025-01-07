@@ -103,7 +103,6 @@ CMD ["mvn"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2462e9ea7bfe577b213c8d25d710768d456a1480d0e384d9b554dabab760e6a7`  
-		Last Modified: Mon, 09 Dec 2024 20:33:01 GMT  
 		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -205,9 +204,11 @@ CMD ["mvn"]
 		Size: 198.9 MB (198927661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9436fc1c706d46cfdb5b9ff92b598f890c9d388d55ab46151864fd22c17e9f7b`  
+		Last Modified: Tue, 10 Dec 2024 02:33:59 GMT  
 		Size: 25.5 MB (25526437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bf532f35e168f81d92d94502e8f8377692aad3d4d3460aa8e39539c45e27b6a0`  
+		Last Modified: Tue, 10 Dec 2024 02:33:58 GMT  
 		Size: 9.2 MB (9170434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d08d4aa36331aec0df974e9e86d3a1a5684cfc78174c58405292948450d8ca47`  
@@ -219,7 +220,6 @@ CMD ["mvn"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a84b9758441509dd241ce4619e69a5f36d498d8d9510e656f4dcf9e4468f5c4`  
-		Last Modified: Tue, 10 Dec 2024 02:33:58 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -239,7 +239,6 @@ $ docker pull maven@sha256:142676862aec8450dfbc26988dfff1112c09c5b7443a31fc4a9ef
 
 -	Layers:
 	-	`sha256:34cf172844c649991a158a83ad23d120ac5897eb081af02a3e171304720027ed`  
-		Last Modified: Tue, 10 Dec 2024 02:33:58 GMT  
 		Size: 4.2 MB (4166392 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:90d496a2453f587f5d957ee6bdd776028fdf13585d36be22fd2d7e7a472eaa95`  
@@ -328,6 +327,7 @@ CMD ["mvn"]
 		Size: 9.2 MB (9170426 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:492c861cb55733cbdc4fcd8c6f3dc5ec674b4411b258ec983fbbc95982d8e3d4`  
+		Last Modified: Tue, 03 Dec 2024 23:13:57 GMT  
 		Size: 851.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
