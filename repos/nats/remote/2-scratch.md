@@ -168,7 +168,6 @@ CMD ["--config" "nats-server.conf"]
 		Size: 5.5 MB (5541438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2cdb512b6ca4232a2dd947f49e124f42a6360977706249ce886b49eaba3d3658`  
-		Last Modified: Tue, 17 Dec 2024 20:07:18 GMT  
 		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

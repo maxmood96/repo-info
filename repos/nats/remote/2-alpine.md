@@ -127,6 +127,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:f2148afcbc6cd4497527fc652f65872130774bf9baace0e1e6a85cad9da5f62e`  
+		Last Modified: Thu, 05 Dec 2024 22:17:29 GMT  
 		Size: 3.4 MB (3367182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:af40215e42d92bd72970c881af08ff0be57978182c0ffc369a75fa63356a3ca8`  
@@ -201,7 +202,6 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 3.1 MB (3100035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cc51158f73d5719731f6de6d6d24db0e1d4124a5ecd84bab5548388db0eded5a`  
-		Last Modified: Tue, 17 Dec 2024 19:29:01 GMT  
 		Size: 6.0 MB (6006607 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24c2203fb8a3575ff778e4d6965d233a19dd24a5bc90771ecca824833e155b06`  
@@ -273,7 +273,6 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 4.0 MB (3993186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d311607882428389c8bbb10058ff9f4a07c6714b605f6bd92afa58faf53ccf1`  
-		Last Modified: Tue, 17 Dec 2024 19:29:19 GMT  
 		Size: 5.9 MB (5918236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:120d4d49d4ce04dd2b71e71ea3c19191133df462671d15362ec224b0c7a6b329`  
@@ -341,7 +340,6 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:a12ff663c50b78339bd273940ba035e29d8220954846a4c35a5f79080b37a3d3`  
-		Last Modified: Thu, 05 Dec 2024 22:18:21 GMT  
 		Size: 3.6 MB (3577108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:672eaefb89f5c4c03dc1dfd0e81f2f3ad81e138d028b4087f87cd3ee9958423d`  
@@ -353,7 +351,6 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6435cc906fd110b2082eb0900e048df12cb9ea784fd2c023d2802fb66bac5a46`  
-		Last Modified: Tue, 17 Dec 2024 19:28:25 GMT  
 		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
