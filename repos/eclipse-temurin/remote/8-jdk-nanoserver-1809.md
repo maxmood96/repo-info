@@ -61,7 +61,6 @@ RUN echo Verifying install ...     && echo javac -version && javac -version     
 		Size: 1.1 KB (1097 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:585b67105d7ca657523ed4b4de9fb1a8ec198e4cc2931932d5a30df0b4354bea`  
-		Last Modified: Wed, 11 Dec 2024 21:50:02 GMT  
 		Size: 1.1 KB (1068 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d50b77162570d94bc8739231b3861bc2ec3f31d81357aac58016fcf4b033779e`  

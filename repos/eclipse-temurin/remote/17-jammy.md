@@ -83,7 +83,7 @@ CMD ["jshell"]
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c99e6e516a5474bebeee0593966c60a8c43c6b8abc8ab2e651bd4ae22aae858`  
-		Last Modified: Thu, 24 Oct 2024 00:57:03 GMT  
+		Last Modified: Tue, 07 Jan 2025 20:03:23 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -169,7 +169,6 @@ CMD ["jshell"]
 		Size: 21.0 MB (20990121 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9af8acc1d537ea37f4ad29000530864b5f95d27e5a25c0a28902c2e19aefd77b`  
-		Last Modified: Thu, 24 Oct 2024 01:11:34 GMT  
 		Size: 142.0 MB (142021114 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b5be95c4dce594de9313939303163c0bc7858af445e88fedc71379a446c4016`  
@@ -365,7 +364,6 @@ CMD ["jshell"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:62911f12cfcca329f353b9a5d07da976f7185262fd431dfa0f84c1ef1c4cff87`  
-		Last Modified: Thu, 24 Oct 2024 01:12:02 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -447,7 +445,6 @@ CMD ["jshell"]
 		Size: 28.0 MB (28001475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2cb0ca1880d7dd970acd5d5126a92411a1081022283260881f19edcad41fe035`  
-		Last Modified: Thu, 24 Oct 2024 17:21:34 GMT  
 		Size: 20.4 MB (20415840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e6c3f0743a4b637bd8e92ce02e4cc5bc5b0a4ad9168a7b247a2e99b95f46652c`  
@@ -479,10 +476,8 @@ $ docker pull eclipse-temurin@sha256:790bf423f80372a1dcc21483bb00c4b698b891a16a2
 
 -	Layers:
 	-	`sha256:f235d79586d13a059fd82ade213f0d858b4ee51a9f3979d77ea4b08182f4333e`  
-		Last Modified: Thu, 24 Oct 2024 17:21:33 GMT  
 		Size: 3.9 MB (3877445 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:da70aaa448450988cc7c7a86bcb4d034632cfe6106900e6906c2e2696e7dc5c4`  
-		Last Modified: Thu, 24 Oct 2024 17:21:33 GMT  
 		Size: 24.0 KB (23956 bytes)  
 		MIME: application/vnd.in-toto+json

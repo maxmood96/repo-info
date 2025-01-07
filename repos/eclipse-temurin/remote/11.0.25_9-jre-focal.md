@@ -159,7 +159,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 23.6 MB (23620412 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aaf7dfa91dfefd2d38b8ffd98f5296dec749e2c8b186d41439b07e2e8ade5eba`  
-		Last Modified: Thu, 24 Oct 2024 00:57:44 GMT  
 		Size: 18.5 MB (18475795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c8093744049f1e6544bf09a901607e84ec8a21a339eccacff52bd5496db13970`  
@@ -191,7 +190,6 @@ $ docker pull eclipse-temurin@sha256:5bdd000ac88be0e170fb07183ff40b7d67093b6f472
 
 -	Layers:
 	-	`sha256:1f6a0c6d39556896693f18929bfaffe734ee4c9fca21ad40f001b41ad4d284bd`  
-		Last Modified: Thu, 24 Oct 2024 01:07:21 GMT  
 		Size: 3.7 MB (3726766 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:14f36bba456975004d996b7cf7d0883e04f976bafe4e09c62281ee033842ba97`  
@@ -254,7 +252,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 20.1 MB (20093942 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7a8d51799e7a038cc10554ed7b04e5a902ee5e6b3ca315d726100382293a207d`  
-		Last Modified: Thu, 24 Oct 2024 01:05:49 GMT  
 		Size: 45.6 MB (45578850 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e32b0317d30777fb74a12a1353e97c830b5d2c85173c5ce3d417606ee53f66b9`  
@@ -353,7 +350,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:06ac21355d98d2bfa345f43721d74fc775131a4ca4586d96ebb78dd439cccb84`  
-		Last Modified: Thu, 24 Oct 2024 08:54:41 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -432,7 +428,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 26.4 MB (26365979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1229ca6c28b3587bf0822f628b9bc384d271a9e038f92df5c33bc243381ce251`  
-		Last Modified: Thu, 24 Oct 2024 17:01:47 GMT  
 		Size: 19.9 MB (19901078 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5d83916e7436ca079be5bb8b176191c09810a1fa36c2f06358b02fb1f6802b99`  

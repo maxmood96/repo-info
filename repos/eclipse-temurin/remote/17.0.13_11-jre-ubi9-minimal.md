@@ -96,7 +96,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 46.9 MB (46941644 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:851ded349958e9b76db05703f75ba1b5671d7798a0e5450b74253d762f50b4ec`  
-		Last Modified: Thu, 19 Dec 2024 06:27:55 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ea6c6a5e4b70979acfc0e2bf41131662bcfd646da98e15a25b18c4db38c6b245`  
@@ -120,7 +119,6 @@ $ docker pull eclipse-temurin@sha256:d5cd1520308fd7b55bd11081aa383ff85051429b360
 
 -	Layers:
 	-	`sha256:42887efaa7d5881094ff148f300508ecf98fdd6dd08126e6a46cd2e1ec11376b`  
-		Last Modified: Thu, 19 Dec 2024 06:27:55 GMT  
 		Size: 3.6 MB (3582317 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d85cdd3db7a8b511debb0958dce1ccc544a218bfc36ef1cbdc92c2bab763ff95`  
@@ -205,7 +203,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 37.4 MB (37443775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd02626d8c573065d38fbff6de07893ecbf9b86b1c4c6560733141a5deeb816c`  
-		Last Modified: Thu, 19 Dec 2024 06:32:31 GMT  
 		Size: 46.4 MB (46427080 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b200c86852f4cf6e12528244b63febc7b6800a013862ee8ed86a173764aa51fc`  
@@ -350,7 +347,6 @@ $ docker pull eclipse-temurin@sha256:62ad27de7d11ccf1a2bfc3bf7a565d970d93dd53f3a
 		Size: 3.6 MB (3582143 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0ad70daaf68156e571b9aa44f9aceb730575f10271d6f03802055c26d69dd3c5`  
-		Last Modified: Thu, 19 Dec 2024 06:33:52 GMT  
 		Size: 20.1 KB (20097 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -431,11 +427,9 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 37.0 MB (37006770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37810ef1f737904638ee04f5499e5d20a3bcbc1eed27453bcde513274496fe9d`  
-		Last Modified: Thu, 19 Dec 2024 06:33:57 GMT  
 		Size: 43.9 MB (43937890 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4217b717dae481f96c5445393a59c65c0b9bc73d6cb3a94c17cd463dcdede00e`  
-		Last Modified: Thu, 19 Dec 2024 06:33:56 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:801128f1b05eb6fe155354590cd6347510df446a749dafa50b616f3be7decc4e`  

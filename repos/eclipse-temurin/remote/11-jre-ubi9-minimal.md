@@ -96,7 +96,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 44.2 MB (44230705 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:851ded349958e9b76db05703f75ba1b5671d7798a0e5450b74253d762f50b4ec`  
-		Last Modified: Thu, 19 Dec 2024 06:27:55 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8d45a4f71a0b7fe946e45e08436254d7fbd37f7bafa6827f1777fed013c09c2b`  
@@ -124,7 +123,6 @@ $ docker pull eclipse-temurin@sha256:11bc561d0e93cd0969438d3b8c9f9f5dcd21da3bf2d
 		Size: 3.6 MB (3594802 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e6b157c91c0be5f390d0d9ea8090c6f6e52b2127797466e53d1eb0a46442dbd6`  
-		Last Modified: Thu, 19 Dec 2024 06:27:55 GMT  
 		Size: 20.0 KB (20041 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -209,7 +207,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 42.6 MB (42586562 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3a384890bf7412204a564cb5993fd6b1d3e432d47e0359a43c74eb525cacec9f`  
-		Last Modified: Thu, 19 Dec 2024 06:31:24 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2c8f235a1384abade4048a0ebe19b486e5597563eccfcd3fdd03f530fa8da8dd`  
@@ -318,7 +315,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 39.5 MB (39476308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:519b870ad4c12f75be0d9d0e35220d80b664b32024dc46e1e9a97f4d1074246a`  
-		Last Modified: Thu, 19 Dec 2024 06:32:04 GMT  
 		Size: 39.7 MB (39724079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f9cf88dfcede249a722451dfa4548a578c8a9dd62137ff64975d2778feee7e77`  
@@ -459,7 +455,6 @@ $ docker pull eclipse-temurin@sha256:941c02703cf25ffadda29f006ada901377875dd7396
 
 -	Layers:
 	-	`sha256:8c94ce8f57adaf336d6bb2a3c5efc278a8583ae486cb279516894b526b8572bf`  
-		Last Modified: Thu, 19 Dec 2024 07:08:09 GMT  
 		Size: 3.6 MB (3586421 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d52150bb76de5a4729e58e4bca5530c03bc563d86073361c49fc105ce0fdd336`  
