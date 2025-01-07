@@ -93,7 +93,6 @@ VOLUME [/opt/couchbase/var]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b66e4c8297c01db11c191858fd6cf8a7511d64a9118a1c1c750d681e3841e7f3`  
@@ -105,10 +104,10 @@ VOLUME [/opt/couchbase/var]
 		Size: 926.1 KB (926065 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:36ee6a894c26a477744c2bc2b3101e65176887db8b0aeb5cf047c5884101d455`  
+		Last Modified: Wed, 11 Dec 2024 20:31:14 GMT  
 		Size: 2.0 KB (1991 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:de7451ade6546d4e3b9d7953419d27c746ce6b0e9f23a891197a416e9a34cf29`  
-		Last Modified: Wed, 11 Dec 2024 20:31:24 GMT  
 		Size: 701.9 MB (701874383 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dac90a5eb80de27a57eeff0fead5cf60c6a688e1e8ab5d0510560b51277ea74a`  
@@ -242,6 +241,7 @@ VOLUME [/opt/couchbase/var]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0584481da729d18de66076f7754e37c2bbc39cbf05bd725b8aa1ebf12e1429a`  
@@ -249,6 +249,7 @@ VOLUME [/opt/couchbase/var]
 		Size: 38.8 MB (38844107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9437b11152e6789daaee1b8b2816829ecec5fe6f7b7e66d2b57cf0a8fb340f5`  
+		Last Modified: Wed, 11 Dec 2024 20:35:22 GMT  
 		Size: 770.4 KB (770448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:be4b80241375276135ce691e34844832bbc260efe1e17f69b3f6c0c63a909cf8`  
@@ -303,5 +304,6 @@ $ docker pull couchbase@sha256:38911045564e44eee162d11ab29804f5a2411172e6c55fc09
 
 -	Layers:
 	-	`sha256:f05cbd60b6824e37fba0b063111378fdd30aa399b050e17cc9fbeb37de5ea28d`  
+		Last Modified: Wed, 11 Dec 2024 20:35:22 GMT  
 		Size: 36.6 KB (36641 bytes)  
 		MIME: application/vnd.in-toto+json
