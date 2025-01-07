@@ -89,7 +89,6 @@ $ docker pull znc@sha256:68713ef1103b56aae97ddf31847010b13c6cb91d2a090f891bf14bf
 		Size: 2.1 MB (2130817 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:47d63b9d1a34945ad4886546f7d614e1ebdf0d911c2ff9c8ce8e218a5d0cb838`  
-		Last Modified: Tue, 07 Jan 2025 03:32:19 GMT  
 		Size: 14.0 KB (14026 bytes)  
 		MIME: application/vnd.in-toto+json
 
