@@ -119,7 +119,6 @@ $ docker pull nginx@sha256:7875be552a3d4b9a811c5195a2a091c59f38c1764241180118118
 		Size: 3.0 MB (2964409 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f6d6d9ae9db6b519d42971adb3b9723316ee8927dc6f4eaecc9bd0fe4487860d`  
-		Last Modified: Tue, 24 Dec 2024 23:15:50 GMT  
 		Size: 19.7 KB (19674 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -206,6 +205,7 @@ RUN set -x;     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;  
 		Size: 1.4 KB (1400 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9646aae53509daf6da63bda41410a3f25d003517f6631b04e54515eba02677f5`  
+		Last Modified: Wed, 25 Dec 2024 07:49:26 GMT  
 		Size: 2.8 MB (2845168 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -229,6 +229,5 @@ $ docker pull nginx@sha256:813efaa2b1e26190295ae4e94be4015d03bd0c95d6576f7a59ecd
 		Size: 3.0 MB (2964813 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1a41b7e80c253e0840e5e18228a071d2dbde0007bc979f962564369ed758d1d3`  
-		Last Modified: Wed, 25 Dec 2024 07:49:26 GMT  
 		Size: 19.8 KB (19802 bytes)  
 		MIME: application/vnd.in-toto+json
