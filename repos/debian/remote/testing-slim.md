@@ -215,7 +215,6 @@ RUN # debian.sh --arch 'i386' out/ 'testing' '@1734912000'
 
 -	Layers:
 	-	`sha256:fc9fd6816d8a2fd7b6b88f89b8b98e1597c5d4fd057055479210bba9eacb918b`  
-		Last Modified: Tue, 24 Dec 2024 21:32:38 GMT  
 		Size: 32.5 MB (32470465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
