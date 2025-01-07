@@ -61,13 +61,14 @@ CMD ["/etc/docker/registry/config.yml"]
 		Size: 3.4 MB (3416401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6cb0aa443e23aedd28f0818f7a18de9911383d0b9b621bc448070ded1d6c81c3`  
-		Last Modified: Tue, 12 Nov 2024 02:37:06 GMT  
 		Size: 293.4 KB (293379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:813676e291ef88d6de121b9a67d4b546585c87f2b89df39d4fd14ba984cd655f`  
+		Last Modified: Tue, 12 Nov 2024 02:37:06 GMT  
 		Size: 6.4 MB (6403784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc2fb7dcec6119c150b59df0550dc646f6a45351470a7b74f0a904df40418a12`  
+		Last Modified: Tue, 12 Nov 2024 02:37:05 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:916205650bfe545ec2ac378e84f53759e0c977a77e583f0525e05cf3c8923df5`  
@@ -91,9 +92,11 @@ $ docker pull registry@sha256:ef807d6ab3ae145cb40e6bc86fbd8de0fb6f4c6726ac88e619
 
 -	Layers:
 	-	`sha256:547ee2ce16efcc56c2f70e31f7327b246f129ae9e0e0f5393b19da960f910466`  
+		Last Modified: Tue, 12 Nov 2024 02:37:06 GMT  
 		Size: 179.0 KB (179007 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d8e019b81fd4a44bcc35582450d9aeddbdb46be2e2b6e0e5bd6cbe0dcc431d8b`  
+		Last Modified: Tue, 12 Nov 2024 02:37:05 GMT  
 		Size: 14.1 KB (14065 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -139,6 +142,7 @@ CMD ["/etc/docker/registry/config.yml"]
 		Size: 3.2 MB (3158999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b739e776fe9e57644b5e4e99c00c4dbb4a039c894137288a095e5adcc3f78d8`  
+		Last Modified: Tue, 12 Nov 2024 06:28:42 GMT  
 		Size: 294.0 KB (294026 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b5afee98ad80b18cdcc1e4f610c4b5f499b6c55c68ea75a4743e1e680fa910f4`  
@@ -146,7 +150,6 @@ CMD ["/etc/docker/registry/config.yml"]
 		Size: 6.0 MB (6024109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fc7f5e00a1807cf3e9f780608fcb4b45baf5e9735de16505b91749f287e31298`  
-		Last Modified: Tue, 12 Nov 2024 06:28:42 GMT  
 		Size: 370.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3adbb8c5936d65b71c7da2c2cabe8705bd496d982f440619bbe8c594d5c3f02d`  
@@ -305,7 +308,6 @@ CMD ["/etc/docker/registry/config.yml"]
 		Size: 5.8 MB (5824734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b69fee0ac896543d4936d9c57aea16e665df781ec13ec5257f8bea258da7c79`  
-		Last Modified: Tue, 12 Nov 2024 10:28:25 GMT  
 		Size: 370.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bbb2de197705d02128cc248e6540d752209fe9ed73a32bfb6b19947205030524`  
@@ -329,11 +331,9 @@ $ docker pull registry@sha256:bbf9ae6a42e4d8aef2759420301cfcc7ed642ba200ae3bf030
 
 -	Layers:
 	-	`sha256:1b1f1a3aa2b9f06c429988bbdfa0c781210c0d81d6befa0769051742b9607830`  
-		Last Modified: Tue, 12 Nov 2024 10:28:25 GMT  
 		Size: 179.1 KB (179063 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a601ce5a2c5491c5fd401d93594ecbf76515407f52ce37185f82be3efee56e04`  
-		Last Modified: Tue, 12 Nov 2024 10:28:25 GMT  
 		Size: 14.2 KB (14184 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -461,11 +461,9 @@ CMD ["/etc/docker/registry/config.yml"]
 		Size: 3.2 MB (3230439 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9149be30168d1b1aa8ec6b23c36dcdc39c2b2dcd978c5e0a2d8ca86109a0df7a`  
-		Last Modified: Tue, 12 Nov 2024 08:41:21 GMT  
 		Size: 293.9 KB (293899 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bf2ded3165ca2acf8ea3ca820d45d88d54ade5de9f1264cc65acbe94b26d0b26`  
-		Last Modified: Tue, 12 Nov 2024 08:41:21 GMT  
 		Size: 6.2 MB (6160049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:878ae226c4b32247c8b552259cd2ff67e2c68b8c6dfe9af0b0785d28d04a9618`  
@@ -473,6 +471,7 @@ CMD ["/etc/docker/registry/config.yml"]
 		Size: 370.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:277269a6b2649ecc19571438083237ee6b8b605bcb79eb5d2de467a0ab86a175`  
+		Last Modified: Tue, 12 Nov 2024 08:41:21 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
