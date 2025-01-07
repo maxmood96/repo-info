@@ -46,6 +46,7 @@ CMD ["swipl"]
 		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7496c099bea5f0bc5005126267f0d68ccc04229546498eea1aab42d24be1a5b1`  
+		Last Modified: Tue, 24 Dec 2024 22:28:52 GMT  
 		Size: 49.2 MB (49222820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:00df54a73587a336f2e2e7594fd9af3315fc7333cfb6f8a92e0861d9d4d6b4f4`  
@@ -69,11 +70,9 @@ $ docker pull swipl@sha256:ad99b78ccd325d5d419f84be48d71f345c445ec01ca394f7b0669
 
 -	Layers:
 	-	`sha256:a0e4d025fc5ee69ebd95f3f8681f6a21c6aa8bfa2ea33c8ddda4cc71376e8630`  
-		Last Modified: Tue, 24 Dec 2024 22:28:52 GMT  
 		Size: 3.2 MB (3162038 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6ff2a789015886856b2bd7b3243cf84e53fde72749a56ba5d2463771147093cd`  
-		Last Modified: Tue, 24 Dec 2024 22:28:52 GMT  
 		Size: 17.5 KB (17507 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -114,6 +113,7 @@ CMD ["swipl"]
 		Size: 43.7 MB (43717338 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cc47a012eaf6ce7da0c0013a25c520acd3c546dd6af4d5e24828f1b45b8d597b`  
+		Last Modified: Wed, 25 Dec 2024 03:35:00 GMT  
 		Size: 14.1 MB (14098691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -174,7 +174,6 @@ CMD ["swipl"]
 		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:223d1b2fdbeea88a159b5f79e34dd7d5e96d66ba8ad4f56f8c3641469c5f19e9`  
-		Last Modified: Wed, 25 Dec 2024 01:34:49 GMT  
 		Size: 47.7 MB (47706255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d5050431f3da6ea07bfff3a803e4f45f038c95d44aefeb091adf4c61019883a8`  
