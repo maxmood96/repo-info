@@ -92,7 +92,6 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:781d4adf60a4cb43488b773a0078653e3884cedd3733d0893b25d17ed4684e02`  
-		Last Modified: Fri, 20 Dec 2024 23:15:13 GMT  
 		Size: 136.6 MB (136611742 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -221,9 +220,9 @@ $ docker pull gradle@sha256:4011f8993dbc86a5a2ed014bfd5df3185388a910dbbb300dd123
 
 -	Layers:
 	-	`sha256:785e18fd19da87f6f3718087abf93e6ca002b5144b2e1e4531260e318fd57056`  
-		Last Modified: Sat, 21 Dec 2024 04:38:02 GMT  
 		Size: 10.9 MB (10878124 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:48d3b742688b20d26c031d4a07b4f219c78e43a5ad4a3ac6d24a6b62f72a0b55`  
+		Last Modified: Sat, 21 Dec 2024 04:38:01 GMT  
 		Size: 25.9 KB (25940 bytes)  
 		MIME: application/vnd.in-toto+json
