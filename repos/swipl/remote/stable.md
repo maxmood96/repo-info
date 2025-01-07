@@ -42,7 +42,6 @@ CMD ["swipl"]
 
 -	Layers:
 	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
-		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
 		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7496c099bea5f0bc5005126267f0d68ccc04229546498eea1aab42d24be1a5b1`  
@@ -204,5 +203,6 @@ $ docker pull swipl@sha256:c31efc8899c64765fa6a81964f1736bff6c16e4a3d4038d96a771
 		Size: 3.2 MB (3162378 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:41695fbe88978c22195bbbd89f798179d847bd1ae9301bf38f29773f1e37e898`  
+		Last Modified: Wed, 25 Dec 2024 01:41:17 GMT  
 		Size: 17.6 KB (17601 bytes)  
 		MIME: application/vnd.in-toto+json
