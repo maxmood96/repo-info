@@ -66,6 +66,7 @@ $ docker pull photon@sha256:7fa30fa3223bb4650753e3514a2844074562e4bc31cebf11d90d
 
 -	Layers:
 	-	`sha256:da2c0503631a592791012402407127edb5507c32200ff7b5710d8ac4aa6bc7e1`  
+		Last Modified: Tue, 10 Dec 2024 23:27:19 GMT  
 		Size: 416.8 KB (416831 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9d07d93cf1e9f7201eeec827a0816c35ea7d082060036392e34b8d5fdc3774de`  
@@ -180,6 +181,7 @@ $ docker pull photon@sha256:7fa30fa3223bb4650753e3514a2844074562e4bc31cebf11d90d
 
 -	Layers:
 	-	`sha256:da2c0503631a592791012402407127edb5507c32200ff7b5710d8ac4aa6bc7e1`  
+		Last Modified: Tue, 10 Dec 2024 23:27:19 GMT  
 		Size: 416.8 KB (416831 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9d07d93cf1e9f7201eeec827a0816c35ea7d082060036392e34b8d5fdc3774de`  
@@ -325,6 +327,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:c5fa4e6489d132f677498637293544147d580f14c0e3a8e1c5430d06a346b2bf`  
+		Last Modified: Mon, 02 Dec 2024 23:22:46 GMT  
 		Size: 16.2 MB (16151482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -439,6 +442,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:c5fa4e6489d132f677498637293544147d580f14c0e3a8e1c5430d06a346b2bf`  
+		Last Modified: Mon, 02 Dec 2024 23:22:46 GMT  
 		Size: 16.2 MB (16151482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
