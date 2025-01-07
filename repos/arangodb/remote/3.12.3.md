@@ -57,6 +57,7 @@ CMD ["arangod"]
 		Size: 3.4 MB (3407632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:afbf11229f90d63e134ecbba3c7ae2cca5ac5999024c047fee6c57165aab9c24`  
+		Last Modified: Tue, 07 Jan 2025 03:14:40 GMT  
 		Size: 301.6 MB (301562228 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4e04f7e25502cc7d4e11aa930e7ea544213c22c7ba8aadec7127d41beb6ae2b2`  
@@ -146,6 +147,7 @@ CMD ["arangod"]
 		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a2e288f5200958f847d861466a61a7565f2be2907c60828348da69ca07da9799`  
+		Last Modified: Tue, 07 Jan 2025 03:44:27 GMT  
 		Size: 2.0 KB (2017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
