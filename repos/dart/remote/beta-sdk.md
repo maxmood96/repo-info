@@ -131,7 +131,6 @@ RUN set -eux;     case "$(dpkg --print-architecture)" in         amd64)         
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eb82857ad87744ffd556c2177c02088d914ca17c377ab029ccffe8b2f4fabb5d`  
-		Last Modified: Wed, 25 Dec 2024 03:50:02 GMT  
 		Size: 150.2 MB (150230591 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
