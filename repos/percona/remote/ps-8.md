@@ -89,7 +89,6 @@ CMD ["mysqld"]
 		Size: 1.5 KB (1534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ad9bc72e820d58b41b864c4e33ffcd4537e33ee11e8e3e14ec4997b412a49de`  
-		Last Modified: Fri, 20 Dec 2024 22:31:18 GMT  
 		Size: 8.0 MB (8020189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5e0a33605cbffd296c71376002da5186465956bd5211de5dda93c2423e75e1cc`  
@@ -101,6 +100,7 @@ CMD ["mysqld"]
 		Size: 1.1 KB (1120 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5798017bc5552a01f8fe5652d599f75e00362ff94ac2f57e199d71e9c9c17f0e`  
+		Last Modified: Fri, 20 Dec 2024 22:31:19 GMT  
 		Size: 4.0 KB (3958 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cca929b08eef0c14f696ed882fa4a9cc28f103f452bdea6e3b9655166e33e52d`  
@@ -124,5 +124,6 @@ $ docker pull percona@sha256:463aa913e3678285664b348b66b39117089885e6063a405aa3e
 
 -	Layers:
 	-	`sha256:6ccee53d38ea6327b4cf49fac526c410e87a3e2099e27ac8d5f6f9dae587c122`  
+		Last Modified: Fri, 20 Dec 2024 22:31:18 GMT  
 		Size: 28.6 KB (28644 bytes)  
 		MIME: application/vnd.in-toto+json
