@@ -89,7 +89,6 @@ CMD ["catalina.sh" "run"]
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:57f36f6acf3d307937e04e9bd4cb21b592e53a05248a0c3963c62fd9e5b5a5fe`  
-		Last Modified: Tue, 07 Jan 2025 04:22:40 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -97,11 +96,9 @@ CMD ["catalina.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:847a65bfaf6340993ad3a7eab560ea92682b35601791f093073a0003002dddec`  
-		Last Modified: Tue, 07 Jan 2025 04:22:40 GMT  
 		Size: 1.1 MB (1113731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f1e39cb280ee267b8309b979bb67843acb76219dcfd6a653c1ed9d51318fcffe`  
-		Last Modified: Tue, 07 Jan 2025 04:22:40 GMT  
 		Size: 75.6 KB (75603 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a2f6a67968bdd332446468c8dfa341b0dabe08b3f9909ffbb4709f636ba8b9ed`  
