@@ -95,14 +95,13 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Size: 64.4 MB (64391074 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1523f4b3f5602bf41caf8d8e649536ac0b3e56984c81a9f518fb20c6516ca075`  
+		Last Modified: Wed, 25 Dec 2024 00:14:20 GMT  
 		Size: 211.3 MB (211306201 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e322a82667fa8dc1533bfefff77d66ffd800986babdeea755015defe0d240dc2`  
-		Last Modified: Wed, 25 Dec 2024 01:35:37 GMT  
 		Size: 6.2 MB (6161505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f84ef7a27cde1a6f08a415c8574e11b7891e7a88c4b29e3e76cb9c5dff2a38d3`  
-		Last Modified: Wed, 25 Dec 2024 01:35:37 GMT  
 		Size: 24.3 MB (24307567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ede450bd572d0d7daab26a9d54e1320fc00a26d678873640485366f9b3ab1fee`  
@@ -214,9 +213,11 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 
 -	Layers:
 	-	`sha256:ba1dd0e85e0bf7e5cb632a24bbc3ec0060700bc5be9273b05d7e059950225037`  
+		Last Modified: Tue, 24 Dec 2024 21:34:06 GMT  
 		Size: 48.3 MB (48325484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92b12b0dccf212c795e61e16dcc85f0caa01c231281e3287400bd334ffedb5ff`  
+		Last Modified: Wed, 25 Dec 2024 01:49:19 GMT  
 		Size: 23.4 MB (23405768 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd63102cac360c09802a29bab13f15de711e8bd1a730d419c66110513700983c`  
@@ -240,6 +241,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17051ae5b610f6779bb3e82f3d5f67e5202d252740882848f11dd27e4108c2c9`  
+		Last Modified: Wed, 25 Dec 2024 19:24:23 GMT  
 		Size: 7.2 MB (7166547 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:370441ca28ee79ed544b76b177cca6bd7465d035bc4bfa2ea843746b234b202f`  
@@ -266,5 +268,6 @@ $ docker pull unit@sha256:1689e324fe9fa7758ae3ec4975be2fe84c79e662d3fef221aecc87
 
 -	Layers:
 	-	`sha256:e46c909b6ce2262dd94de9e4da51c6ad43066a26fa70f619380a1fb8b43c6e40`  
+		Last Modified: Wed, 25 Dec 2024 19:24:23 GMT  
 		Size: 24.5 KB (24471 bytes)  
 		MIME: application/vnd.in-toto+json
