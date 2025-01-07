@@ -149,6 +149,7 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 12.1 MB (12128239 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f2ab4b9134964339ef84ae44fd3995fb456111baebb64a8b7af9cf7f701d4dc2`  
+		Last Modified: Thu, 19 Dec 2024 22:17:45 GMT  
 		Size: 49.8 MB (49805608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c73a52a53b0daa64fd3f61d4a7799bbf893bfbfe7761dd92d87ab9c8b153efa9`  
@@ -338,6 +339,7 @@ $ docker pull ibm-semeru-runtimes@sha256:e6139aba0d136bc151ef26819b995156cd5b847
 
 -	Layers:
 	-	`sha256:77ee896fc1718b768da77608618e7f3627eabb0b93a61809b844adf182ea6aa1`  
+		Last Modified: Thu, 19 Dec 2024 21:41:35 GMT  
 		Size: 3.6 MB (3608015 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8e21a85ccadf2df110a1433a44b86a6465d6fce0f57af0d41e0afe1056edbec1`  
