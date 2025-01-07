@@ -191,6 +191,7 @@ $ docker pull eclipse-temurin@sha256:231396350739ff5874403e232e582a3d477fa90a50c
 
 -	Layers:
 	-	`sha256:b4f3551a800b4e7c2b9dbf0876f6111226f0ef699376e356381b9c7e6eb5dc57`  
+		Last Modified: Tue, 03 Dec 2024 07:45:23 GMT  
 		Size: 3.3 MB (3331147 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b65cdd64378e9697d40a9b33186e952f29ef20266800534a337de58730b45502`  
@@ -482,6 +483,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'javac -version'; javac -
 		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:299dc7be9247614705ac756c60bab5e363c49e94c9f838664538977a3b509ac9`  
+		Last Modified: Wed, 11 Dec 2024 20:42:03 GMT  
 		Size: 193.3 MB (193250833 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7ffb29101a71a5db114c275364bae846ca7d80ab5348e9e30021399c3415d074`  

@@ -102,9 +102,11 @@ $ docker pull eclipse-temurin@sha256:eb009e7c8ac16d2d0fc41dd3e3b311e7107006b0821
 
 -	Layers:
 	-	`sha256:d69ba6a481634df3ef9a03b54e11082d1afab8079b3202f52e84625203a11299`  
+		Last Modified: Tue, 03 Dec 2024 02:30:11 GMT  
 		Size: 3.1 MB (3133480 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:767809d1d34758c8d33d400e4eea88392fcb63a18cf341b0e19ec2be62c8a575`  
+		Last Modified: Tue, 03 Dec 2024 02:30:11 GMT  
 		Size: 23.2 KB (23238 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -432,6 +434,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 30.0 MB (30020826 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4797233a5c5384584920c35814bc8b38ea24dccbedde0a0e68b3fb1a30877a17`  
+		Last Modified: Tue, 03 Dec 2024 04:16:13 GMT  
 		Size: 17.6 MB (17613148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:abd3741a54da2a94dd71dd4f97d54f7a1143fdfe920e7ac7559c6caf0c9afb91`  
@@ -518,6 +521,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:37bc8679f4684c92dc3dca2e2adbc432f0a1ec39a8665139c0d6e49fd1474b02`  
+		Last Modified: Wed, 11 Dec 2024 20:36:52 GMT  
 		Size: 75.8 MB (75769153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:60c7e2d216e34d0b3d012f2a87f778d23a7ef20a9efc1f3ec3c63653e532406b`  
