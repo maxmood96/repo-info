@@ -145,10 +145,10 @@ RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.
 		Size: 3.6 MB (3557863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7a5dc9f05589119104912fa1a1717ff92659e13dab1440dc6b266b58957e5ee8`  
-		Last Modified: Tue, 03 Dec 2024 06:15:49 GMT  
 		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bc2614b4bbf71177097aa4d12c46d11d7578598e10aa3592123e9463cdfb0e7`  
+		Last Modified: Tue, 03 Dec 2024 06:15:49 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c2df2b4e0bcd2792b731ac676570a2eeed647f45c932ddece55a8243a41bca9`  
@@ -180,5 +180,6 @@ $ docker pull neurodebian@sha256:962a5986a3ecef9ad02e63677ab36ae8aaccb2752411b75
 		Size: 2.0 MB (1988278 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9676ba9bc0661d12309280a6c4a0b4719091d811cab7dc686ec2953c8cce7ca4`  
+		Last Modified: Tue, 03 Dec 2024 06:16:00 GMT  
 		Size: 16.0 KB (16030 bytes)  
 		MIME: application/vnd.in-toto+json
