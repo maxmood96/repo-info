@@ -77,7 +77,6 @@ CMD ["repl"]
 		Size: 4.5 MB (4514141 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:02a7f39816a4d314e4a6057fcf1f9f1af3f0f61f2424d948b02b7497043447c3`  
-		Last Modified: Tue, 24 Dec 2024 22:38:05 GMT  
 		Size: 396.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
