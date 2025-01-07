@@ -1,7 +1,7 @@
 ## `znc:latest`
 
 ```console
-$ docker pull znc@sha256:81008b6d7450be6d6f7b7f241b19c4cee19fb8f8fc778a22d6076adc53cbf79c
+$ docker pull znc@sha256:e716085b40c73ff432777c8fc097a1fc13ff861a1084530d74dd30b284c68694
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16,18 +16,18 @@ $ docker pull znc@sha256:81008b6d7450be6d6f7b7f241b19c4cee19fb8f8fc778a22d6076ad
 ### `znc:latest` - linux; amd64
 
 ```console
-$ docker pull znc@sha256:8868ad64ab7e86759d13ea45a4674e82c550ee9faecc2750d81915ff529cf549
+$ docker pull znc@sha256:df40c938c0a9f4812d0083a2c0fcd062128e2bf415a551f846b258da2a1e858f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **160.1 MB (160057757 bytes)**  
+-	Total Size: **158.0 MB (157952292 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:90665877ac61c7cd0625dceb499c8567c6810d237b3f08e07875ffd97a61673c`
+-	Image ID: `sha256:593cc9c61f0411c5a0bc847d6621454001cf6bb2c60a6548220a71b1ca01e852`
 -	Entrypoint: `["\/entrypoint.sh"]`
 
 ```dockerfile
 # Wed, 03 Jul 2024 16:05:23 GMT
-ADD alpine-minirootfs-3.19.4-x86_64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.19.5-x86_64.tar.gz / # buildkit
 # Wed, 03 Jul 2024 16:05:23 GMT
 CMD ["/bin/sh"]
 # Wed, 03 Jul 2024 16:05:23 GMT
@@ -56,51 +56,52 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 ```
 
 -	Layers:
-	-	`sha256:a7cd7d9a21440da0d765f2989d75f069adf9b3463a765421a0590bca720920d4`  
-		Last Modified: Mon, 09 Sep 2024 07:03:22 GMT  
-		Size: 3.4 MB (3419728 bytes)  
+	-	`sha256:eb002c13a70b63d5677b5a03f11b7b8b60f7d62f296fbb7475169a617500d3cb`  
+		Last Modified: Tue, 07 Jan 2025 02:28:43 GMT  
+		Size: 3.4 MB (3413271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7255ba75f09422e92f5b03173d4ac2445ed0dc5d63bd5fc7e400f2d8ed14d6f0`  
-		Last Modified: Tue, 12 Nov 2024 02:15:36 GMT  
-		Size: 48.7 MB (48738616 bytes)  
+	-	`sha256:bbee9c933a5086145c18bb76d6cd13ace916c9e9b0aac1ac6626b017c8877ea4`  
+		Last Modified: Tue, 07 Jan 2025 03:32:21 GMT  
+		Size: 46.6 MB (46640219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48c47e2e766d93b260dc09d164e658d80c3b49c332212869ed93b16a2b35fb99`  
-		Last Modified: Tue, 12 Nov 2024 02:15:35 GMT  
+	-	`sha256:2a1166cc9094add7747ffd8e4d9638f12b3e84f3dced588b6a0ba45927babd00`  
+		Last Modified: Tue, 07 Jan 2025 03:32:20 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f66d374b785294f04add930f967130dee87e921997e90dfcaec93d997e438254`  
-		Last Modified: Tue, 12 Nov 2024 02:15:35 GMT  
-		Size: 749.0 B  
+	-	`sha256:d068f85a3b3887a2e25ad06c4638173c474053a7ffa678dc683a24ea0ad9c35c`  
+		Last Modified: Tue, 07 Jan 2025 03:32:19 GMT  
+		Size: 750.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:743edbe5fb0489332c63e2a74d1ba362e46fa280399fe6c839520c5b0520edb3`  
-		Last Modified: Tue, 12 Nov 2024 03:14:26 GMT  
-		Size: 107.9 MB (107898161 bytes)  
+	-	`sha256:f1b60ae4a373e2cd05b51a3b8e7c4033c9742d2b8bee3586f5fe660ea709729c`  
+		Last Modified: Tue, 07 Jan 2025 04:18:38 GMT  
+		Size: 107.9 MB (107897547 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2655bbd710e271936146abde038817c9c80c018f35243848de745df0c6b5afa`  
-		Size: 331.0 B  
+	-	`sha256:20be272abaa8b74c9d8e8456abc294ef8799fdca32344db27c2907431a71e87d`  
+		Last Modified: Tue, 07 Jan 2025 04:18:35 GMT  
+		Size: 333.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `znc:latest` - unknown; unknown
 
 ```console
-$ docker pull znc@sha256:d788e8983658a9069f68a71722a4408bc72f01c0ed837b693b9a5b6b2c73fb60
+$ docker pull znc@sha256:6569ebde33bfc1a7c6e9d0f3d5a7d18109f3c5a05d94042807a4856b4d323c73
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.8 MB (6764314 bytes)**  
+-	Total Size: **6.7 MB (6749585 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:962e4ee36d892f194cf69d833b27c34cd9e1d57d77241e22cdfddba1c832392f`
+-	Image ID: `sha256:1752731c3746d3db3358b34c1698ffe37f95aa919dcc581f7a1ba595a6dc5992`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:16dc9e8b49c08a9ea045a229ea8710c95b199e51fca708ec738381b317334519`  
-		Last Modified: Tue, 12 Nov 2024 03:14:24 GMT  
-		Size: 6.8 MB (6754716 bytes)  
+	-	`sha256:0987bd2e1e92b42fdc9947f6900419ece9fafa2ae5956d102b12c28b30f319f6`  
+		Last Modified: Tue, 07 Jan 2025 04:18:36 GMT  
+		Size: 6.7 MB (6739987 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:605e398d6a92c631bff1405e86b3dee0c2a9882c81f2106dafcc5d97aad467df`  
-		Last Modified: Tue, 12 Nov 2024 03:14:23 GMT  
+	-	`sha256:1f35e4c088ba629d5ee0967ae442e557c27a912ae8ad441d9b70af71e8fd9990`  
+		Last Modified: Tue, 07 Jan 2025 04:18:35 GMT  
 		Size: 9.6 KB (9598 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -156,7 +157,6 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 		Size: 47.1 MB (47057236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0569fa38966c4810094c11b5f2106ea179b371bb82bc49708e9a5bb6a5858475`  
-		Last Modified: Tue, 12 Nov 2024 06:36:12 GMT  
 		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c7fe78d2155beeb9cdb650cca986261f658b966381489425ff6386b9b62b1962`  
@@ -240,6 +240,7 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 		Size: 3.4 MB (3359246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4a2efe174d3548884a91aa29a27ea7fb2f28a9140b5f6790ff4fa017b38ea041`  
+		Last Modified: Tue, 12 Nov 2024 11:01:19 GMT  
 		Size: 48.7 MB (48692583 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e294d2e4f62e4a5d05063ca34b3bd9a7ecb119f1d111dd4bc56be49ef689b198`  
@@ -247,7 +248,6 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4e94c1dd8fdbe845a00e0fb1749d09bb9bd2370758ae02f265d1e7a35568c358`  
-		Last Modified: Tue, 12 Nov 2024 11:01:17 GMT  
 		Size: 750.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:62fe02be43e44e4f106593a660f4aad34a6ad8516ae5e9bb09675cb5286f8e26`  
@@ -255,6 +255,7 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 		Size: 102.4 MB (102390625 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17059de2064f7ceb4fb5900be50f931bdf7d4a942df9adc104a7f59e5efff504`  
+		Last Modified: Wed, 13 Nov 2024 02:38:13 GMT  
 		Size: 330.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
