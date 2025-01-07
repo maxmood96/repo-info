@@ -64,7 +64,6 @@ $ docker pull debian@sha256:ff561b0ede2ea93d151066b77e987b405b5da27c837a55ef8efb
 		Size: 3.9 MB (3917516 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:826889499f82cc68d24f4c9b6da4633827ca9bf411eea8438de5f253b68252f9`  
-		Last Modified: Tue, 24 Dec 2024 22:13:57 GMT  
 		Size: 5.8 KB (5847 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -93,7 +92,6 @@ RUN echo 'deb http://deb.debian.org/debian bullseye-backports main' > /etc/apt/s
 		Size: 49.0 MB (49024766 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c25abad382fb7b17466665da9d935de024d7b6f207e3437ef03e70ae8676435`  
-		Last Modified: Tue, 24 Dec 2024 22:16:58 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -117,7 +115,6 @@ $ docker pull debian@sha256:21a84fdfb5ae40b3127ba61136375d069980fa4ee74841a0cf67
 		Size: 3.9 MB (3919078 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a120924482a066181da1c7a26758b90acc47f4df02b3f65e730fa9652cadeb60`  
-		Last Modified: Tue, 24 Dec 2024 22:16:58 GMT  
 		Size: 5.9 KB (5899 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -142,7 +139,6 @@ RUN echo 'deb http://deb.debian.org/debian bullseye-backports main' > /etc/apt/s
 
 -	Layers:
 	-	`sha256:447d428f9ffe60c6c8cc59e00901cd865a36737372ba05710598d7eaf0a1144d`  
-		Last Modified: Tue, 24 Dec 2024 21:34:37 GMT  
 		Size: 52.2 MB (52245698 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a911210198b8398970aeec573144fb776017c7731555a24369243ebea84ebf08`  
@@ -219,6 +215,7 @@ $ docker pull debian@sha256:e9483ca78c92728ed86eac8ed966fc6925dca6be63b60b987681
 
 -	Layers:
 	-	`sha256:349551f25bee8b925593725fa3071e5fcdc684223e96098de1724c97ef6b6be5`  
+		Last Modified: Tue, 24 Dec 2024 22:13:55 GMT  
 		Size: 3.9 MB (3914023 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dcb752c759c824d2617fb5557c713ce38be9b370d64b863ef3553a06ef852f00`  
