@@ -50,6 +50,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzr
 
 -	Layers:
 	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3c439405a1dd88c17c6ae4e1c05d5c4a282f8957203f506a1d3b8c0b018b66b3`  
@@ -57,6 +58,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzr
 		Size: 11.1 MB (11147032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:841fed924c2a2b74fd07c670509feadf6fc8830b3356a2ad22a1066d9c45c02d`  
+		Last Modified: Sat, 19 Oct 2024 02:52:27 GMT  
 		Size: 60.9 MB (60925550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -117,7 +119,6 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzr
 
 -	Layers:
 	-	`sha256:10b337d353b3ceaf6823ab2d8696989401feed741b22eb313c8a0cd378762d39`  
-		Last Modified: Fri, 11 Oct 2024 04:41:36 GMT  
 		Size: 23.6 MB (23620412 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:961fa3ee3eee16522e395458be87f5269ec5b27ec4fcb4d916faeb1068afaba7`  
@@ -186,7 +187,6 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzr
 
 -	Layers:
 	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
-		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a902a6ffa3ee5a0c3f67d06b1a3bb3611210a02b2f2878ae8c1ba1419d989ce1`  
@@ -328,7 +328,6 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzr
 		Size: 26.4 MB (26365979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:178338141fcd63fb07a3b3174480acba6d71f4005370e73b64d2d0aa4c75dd76`  
-		Last Modified: Sat, 19 Oct 2024 03:49:50 GMT  
 		Size: 10.7 MB (10704103 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:848ffcc86defea840ce0480def4a0552dc82be2b64b587e49f72509940010a27`  
@@ -356,5 +355,6 @@ $ docker pull buildpack-deps@sha256:726a303218623b57ec890bd1e8aeb189e63595dce259
 		Size: 6.7 MB (6673010 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0da6957fefcd4006ddf29690171e830dfa4d1fc366257b8fcccbe3e718288e03`  
+		Last Modified: Sat, 19 Oct 2024 05:10:42 GMT  
 		Size: 7.4 KB (7382 bytes)  
 		MIME: application/vnd.in-toto+json

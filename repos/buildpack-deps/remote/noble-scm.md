@@ -60,6 +60,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Size: 13.6 MB (13617608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48cf16388a9a3471d6a91777a42a673b8db99767b831de048212ce4136744cd4`  
+		Last Modified: Tue, 03 Dec 2024 03:17:02 GMT  
 		Size: 45.4 MB (45394654 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -152,6 +153,7 @@ $ docker pull buildpack-deps@sha256:36916e586b63927eb00c8e6fc63fbdc374caea9a8df5
 		Size: 5.1 MB (5077409 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:45fd512c1fead54e3108bb7fe7ec75f4060f3a0fd9edbf39d3c7428b311bd686`  
+		Last Modified: Tue, 03 Dec 2024 17:19:39 GMT  
 		Size: 7.4 KB (7365 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -196,6 +198,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Size: 13.5 MB (13452932 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:af04d25eb37c1d037171f5c201d5753407b0902b0f09c9b548efca5b1d914b62`  
+		Last Modified: Tue, 03 Dec 2024 11:53:13 GMT  
 		Size: 45.4 MB (45358165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -215,7 +218,6 @@ $ docker pull buildpack-deps@sha256:eb791a3b3cca1c3b2935910956af05c9087a209ff88a
 
 -	Layers:
 	-	`sha256:1ada12157811656b092a572f885b9ac7f9ea75283b5e90e82f9b3c671db09087`  
-		Last Modified: Tue, 03 Dec 2024 11:53:11 GMT  
 		Size: 5.1 MB (5083314 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a31276f86b42d0658076bc44da5d06e42007914f26474b55afed3926035e7dad`  
@@ -288,7 +290,6 @@ $ docker pull buildpack-deps@sha256:c0e1990e1e896cfb17ed7ecabf67bc00438fc31b10d3
 		Size: 5.1 MB (5083805 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:37f843b90490e92473c16e8e26ee5619d996af35343267bf4b7e5e268185f27b`  
-		Last Modified: Tue, 03 Dec 2024 09:46:20 GMT  
 		Size: 7.3 KB (7337 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -325,7 +326,6 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 
 -	Layers:
 	-	`sha256:0dcc8c973ba119a0fb5275114fd0456179bba1132bdc69f2afa4e1c4a235c540`  
-		Last Modified: Tue, 19 Nov 2024 17:38:52 GMT  
 		Size: 31.0 MB (30980838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:789bf3edf440eb67602bc2c6173f31d3292b752b03bbf690c473a5038b858343`  
@@ -333,6 +333,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Size: 14.3 MB (14321082 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f505f2c8e1079fb73360d2ba6b4c3130e06fd9586abaa35474f69fd6f08ac0c3`  
+		Last Modified: Tue, 03 Dec 2024 09:51:22 GMT  
 		Size: 53.9 MB (53856700 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -352,9 +353,11 @@ $ docker pull buildpack-deps@sha256:2ad46ad8d7e5e2137bad7101c0d437b7fee331f0b8d0
 
 -	Layers:
 	-	`sha256:0a4cc0ae30668e7591cd209c89d192583fba68aabb43372e03f01edab1d00e88`  
+		Last Modified: Tue, 03 Dec 2024 09:51:14 GMT  
 		Size: 5.1 MB (5066659 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b02388bcac06974d94d50c9bf05df475bfa01487bba4a6f5101eb76f87477102`  
+		Last Modified: Tue, 03 Dec 2024 09:51:13 GMT  
 		Size: 7.3 KB (7337 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -395,7 +398,6 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Size: 30.0 MB (30020826 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f35190d0c1306f85de6133cb1ceca330cd03ee2f6baead3be847b0c8e4273f57`  
-		Last Modified: Tue, 03 Dec 2024 04:10:05 GMT  
 		Size: 15.0 MB (14960770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:05107eaec609414c9540f16903f6f4fed09e9055d47bca5a3188db8c2f781888`  
@@ -419,7 +421,6 @@ $ docker pull buildpack-deps@sha256:6ed16ad608670de1d059165b62dc4296f911a80f55ef
 
 -	Layers:
 	-	`sha256:afe48d2c0a0654f448b9f66dbab36a88607d875e7c911c05e8c35914c9cffc68`  
-		Last Modified: Tue, 03 Dec 2024 07:57:25 GMT  
 		Size: 5.1 MB (5078452 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:95f4e0a101ac487e58274d0e6e005419118d9466a66d95d30a72475ea5022f9a`  

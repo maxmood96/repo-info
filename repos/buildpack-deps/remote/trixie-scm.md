@@ -46,6 +46,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 
 -	Layers:
 	-	`sha256:5dc28167de372c586b840aa2cdcf07e2afc8e85b392a5dbb5552be77587eff75`  
+		Last Modified: Tue, 24 Dec 2024 21:32:36 GMT  
 		Size: 52.2 MB (52212351 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bfcdb7af4643d9e902826381436aafc5ca852c439990983daa707960060dbc0`  
@@ -53,7 +54,6 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Size: 21.4 MB (21406167 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:389a305f06858b3033956e0f308da92fdc18e3e15dddb5afd66e1616ffcfefee`  
-		Last Modified: Tue, 24 Dec 2024 23:16:10 GMT  
 		Size: 67.0 MB (67018604 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -77,7 +77,6 @@ $ docker pull buildpack-deps@sha256:7d4871b2ae7aa36acc715a500392660f5689484aceb2
 		Size: 7.6 MB (7630236 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:82f2e0053dd96bd8cd5b4a230c83c0a7e5257148a9de0bd3d0a3393bdbe84855`  
-		Last Modified: Tue, 24 Dec 2024 23:16:09 GMT  
 		Size: 7.3 KB (7314 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -104,7 +103,6 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 
 -	Layers:
 	-	`sha256:b5a5271e09aab30795789f051d2425121101b650637f36e772bdb80c62bb4833`  
-		Last Modified: Tue, 24 Dec 2024 21:35:34 GMT  
 		Size: 48.7 MB (48738917 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dd230c08c2a8f220f4a7754708d43b365ecaa32d038ae6429f10953c7ef0284c`  
@@ -163,10 +161,10 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 
 -	Layers:
 	-	`sha256:7dbbd0b59e8fd2a826bed9f5cfe195c9cb61ad138accd85ab45d8f8eb5e53a51`  
-		Last Modified: Tue, 24 Dec 2024 21:37:24 GMT  
 		Size: 46.8 MB (46767965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b1a49163ae7afb92f788f8101a5f0b57af46d0766372255bb4e15ef002eddc2`  
+		Last Modified: Wed, 25 Dec 2024 03:45:38 GMT  
 		Size: 19.6 MB (19597771 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7b3bbaffabd773ffb28e659f3ce21da08dd9edecbf06a175c763618e87bc80bf`  
@@ -308,6 +306,7 @@ $ docker pull buildpack-deps@sha256:5a9b37dd3faa1ecacdf995efc5378d4aef76a0e2c881
 
 -	Layers:
 	-	`sha256:d4176d3aee41ac8297cff2ec7c65318a223c554c1a53a52c90b590ab98dbc90a`  
+		Last Modified: Tue, 24 Dec 2024 23:16:09 GMT  
 		Size: 7.6 MB (7624985 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c2bfdb5ac8660a8546888c6f358a1b17678bc0ed0bc11c382e9e3b8483e278c3`  
@@ -342,7 +341,6 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 		Size: 51.7 MB (51716844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb196cc5b6a238393d49fa4e93d6bc6fb9d8eb10a08514c2266839519f9d3f69`  
-		Last Modified: Wed, 25 Dec 2024 11:49:41 GMT  
 		Size: 21.7 MB (21727749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:744f68c6043110a4194987507fa740e27f0945cb8eaa1052f3742a94320b81d1`  
@@ -393,7 +391,6 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 
 -	Layers:
 	-	`sha256:7d0c0062851cd41c4b765bee1eaa246592e96d9c4a0268bfea5c5d2a73be0e62`  
-		Last Modified: Wed, 25 Dec 2024 00:36:18 GMT  
 		Size: 56.0 MB (56044104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9e488722a9275f087219fc61d856ea4c4ed4b328a7554350726557ef4cf4353e`  
@@ -421,10 +418,10 @@ $ docker pull buildpack-deps@sha256:2b06e303b9d694adde4ce23adf32c9f03d4167781248
 
 -	Layers:
 	-	`sha256:3d221998e22788cb8a2b02540f6857f35bb3cb2f738de6eaabe9b76c2e68c850`  
-		Last Modified: Wed, 25 Dec 2024 09:46:03 GMT  
 		Size: 7.6 MB (7636779 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7a72d9fd70f2c7fc82d37604332bc4674b24948400a81327450b5900c533a8e8`  
+		Last Modified: Wed, 25 Dec 2024 09:46:01 GMT  
 		Size: 7.3 KB (7346 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -479,10 +476,8 @@ $ docker pull buildpack-deps@sha256:1deb1d53abb5b2497f99707bf429f1e7394353b828e6
 
 -	Layers:
 	-	`sha256:b4acacdb0de60835cf6eb931b0139b18df6c0200b4da3188db08206ba326a551`  
-		Last Modified: Wed, 25 Dec 2024 03:31:19 GMT  
 		Size: 7.6 MB (7630655 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5c7aa0c685a441410c3da89e021f02c99785fa3c91ab5cab3f7588232b8d1062`  
-		Last Modified: Wed, 25 Dec 2024 03:31:19 GMT  
 		Size: 7.3 KB (7314 bytes)  
 		MIME: application/vnd.in-toto+json
