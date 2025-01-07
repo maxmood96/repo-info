@@ -74,6 +74,7 @@ $ docker pull buildpack-deps@sha256:7d4871b2ae7aa36acc715a500392660f5689484aceb2
 
 -	Layers:
 	-	`sha256:09688db7c2ddf0451b6758d67daee2d4544615d3d39a28715be92acf490dd5ab`  
+		Last Modified: Tue, 24 Dec 2024 23:16:09 GMT  
 		Size: 7.6 MB (7630236 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:82f2e0053dd96bd8cd5b4a230c83c0a7e5257148a9de0bd3d0a3393bdbe84855`  
@@ -104,6 +105,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 
 -	Layers:
 	-	`sha256:b5a5271e09aab30795789f051d2425121101b650637f36e772bdb80c62bb4833`  
+		Last Modified: Tue, 24 Dec 2024 21:35:34 GMT  
 		Size: 48.7 MB (48738917 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dd230c08c2a8f220f4a7754708d43b365ecaa32d038ae6429f10953c7ef0284c`  
@@ -135,6 +137,7 @@ $ docker pull buildpack-deps@sha256:7d9dc8b7dd6bb6ee676a4cc75a339fe24989d490c4e4
 		Size: 7.6 MB (7630510 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3d4a9013c8d44395229ae2ce70484fc0d89b290409e786de5724759e8247d2e1`  
+		Last Modified: Wed, 25 Dec 2024 04:51:03 GMT  
 		Size: 7.4 KB (7374 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -307,9 +310,11 @@ $ docker pull buildpack-deps@sha256:5a9b37dd3faa1ecacdf995efc5378d4aef76a0e2c881
 
 -	Layers:
 	-	`sha256:d4176d3aee41ac8297cff2ec7c65318a223c554c1a53a52c90b590ab98dbc90a`  
+		Last Modified: Tue, 24 Dec 2024 23:16:09 GMT  
 		Size: 7.6 MB (7624985 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c2bfdb5ac8660a8546888c6f358a1b17678bc0ed0bc11c382e9e3b8483e278c3`  
+		Last Modified: Tue, 24 Dec 2024 23:16:09 GMT  
 		Size: 7.3 KB (7292 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -419,6 +424,7 @@ $ docker pull buildpack-deps@sha256:2b06e303b9d694adde4ce23adf32c9f03d4167781248
 
 -	Layers:
 	-	`sha256:3d221998e22788cb8a2b02540f6857f35bb3cb2f738de6eaabe9b76c2e68c850`  
+		Last Modified: Wed, 25 Dec 2024 09:46:03 GMT  
 		Size: 7.6 MB (7636779 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7a72d9fd70f2c7fc82d37604332bc4674b24948400a81327450b5900c533a8e8`  

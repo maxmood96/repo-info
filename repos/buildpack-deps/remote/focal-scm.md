@@ -58,6 +58,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		bzr
 		Size: 11.1 MB (11147032 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:841fed924c2a2b74fd07c670509feadf6fc8830b3356a2ad22a1066d9c45c02d`  
+		Last Modified: Sat, 19 Oct 2024 02:52:27 GMT  
 		Size: 60.9 MB (60925550 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
