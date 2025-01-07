@@ -274,6 +274,7 @@ CMD ["server.sh"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb3a1f06fad0e68d376c4073c3aa1bb7fbcf68f15dd4bb4d0b0cbb7872bdafee`  
+		Last Modified: Tue, 03 Dec 2024 03:24:45 GMT  
 		Size: 76.1 MB (76086741 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e14b03c49fa1f5509b0981d2a7173924016b99e0b283b88dde7042b4cf7ba2b`  
@@ -571,6 +572,7 @@ CMD ["server.sh"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb3a1f06fad0e68d376c4073c3aa1bb7fbcf68f15dd4bb4d0b0cbb7872bdafee`  
+		Last Modified: Tue, 03 Dec 2024 03:24:45 GMT  
 		Size: 76.1 MB (76086741 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e14b03c49fa1f5509b0981d2a7173924016b99e0b283b88dde7042b4cf7ba2b`  
@@ -747,6 +749,7 @@ $ docker pull orientdb@sha256:baef98598db407db6f5864de42d1094215308f3c16ae1a22f2
 
 -	Layers:
 	-	`sha256:0e802cb6816a8220182f2db2b512270a7968a14501707669fcb6928d2ee9bed0`  
+		Last Modified: Tue, 03 Dec 2024 03:24:31 GMT  
 		Size: 3.4 MB (3415835 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ed54b814f2adf1e0fd05831f7d706f2fb31de76b632853bcc6d781b41e788c4e`  
@@ -1317,6 +1320,7 @@ $ docker pull orientdb@sha256:038bf7d1b87858971116348ca26cabfca60f1f69e9c142d51e
 		Size: 3.6 MB (3553570 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1b7a3e8e8522af4fc0e24daae49a1b238c953ce29fca5410edcd764039160966`  
+		Last Modified: Tue, 03 Dec 2024 19:03:50 GMT  
 		Size: 16.9 KB (16919 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1603,6 +1607,7 @@ $ docker pull orientdb@sha256:baef98598db407db6f5864de42d1094215308f3c16ae1a22f2
 
 -	Layers:
 	-	`sha256:0e802cb6816a8220182f2db2b512270a7968a14501707669fcb6928d2ee9bed0`  
+		Last Modified: Tue, 03 Dec 2024 03:24:31 GMT  
 		Size: 3.4 MB (3415835 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ed54b814f2adf1e0fd05831f7d706f2fb31de76b632853bcc6d781b41e788c4e`  
@@ -2173,6 +2178,7 @@ $ docker pull orientdb@sha256:038bf7d1b87858971116348ca26cabfca60f1f69e9c142d51e
 		Size: 3.6 MB (3553570 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1b7a3e8e8522af4fc0e24daae49a1b238c953ce29fca5410edcd764039160966`  
+		Last Modified: Tue, 03 Dec 2024 19:03:50 GMT  
 		Size: 16.9 KB (16919 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2459,6 +2465,7 @@ $ docker pull orientdb@sha256:baef98598db407db6f5864de42d1094215308f3c16ae1a22f2
 
 -	Layers:
 	-	`sha256:0e802cb6816a8220182f2db2b512270a7968a14501707669fcb6928d2ee9bed0`  
+		Last Modified: Tue, 03 Dec 2024 03:24:31 GMT  
 		Size: 3.4 MB (3415835 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ed54b814f2adf1e0fd05831f7d706f2fb31de76b632853bcc6d781b41e788c4e`  
