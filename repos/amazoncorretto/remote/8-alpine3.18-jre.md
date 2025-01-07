@@ -45,7 +45,6 @@ ENV JAVA_HOME=/usr/lib/jvm/default-jvm/jre
 		Size: 3.4 MB (3416401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:93fbb9a965d3205e852905aac174b5034d21ce0ee781f5b26488ea9edde1d75c`  
-		Last Modified: Tue, 12 Nov 2024 02:11:40 GMT  
 		Size: 41.7 MB (41655885 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
