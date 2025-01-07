@@ -135,6 +135,7 @@ $ docker pull mongo@sha256:4f3a9cedeb0af30f16f652bea4759139d3a907ac30b98d9cab8dd
 		Size: 2.5 MB (2497837 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ed65411667e6cc826e7168c932e9397f93ce453dc8427c3091326403f4990ea5`  
+		Last Modified: Mon, 09 Dec 2024 20:37:59 GMT  
 		Size: 28.6 KB (28571 bytes)  
 		MIME: application/vnd.in-toto+json
 
