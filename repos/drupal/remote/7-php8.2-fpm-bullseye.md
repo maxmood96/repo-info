@@ -97,9 +97,11 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 30.3 MB (30252643 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:38dca462c8fa05d87a85eac989d130ea8f318a1d2418378bbbb96d5fb8413061`  
+		Last Modified: Tue, 24 Dec 2024 22:27:49 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6141c85109a3f8338dd2b4fa761f7c301ed622d5d1b8f83f02c3eea71deedd8e`  
+		Last Modified: Tue, 24 Dec 2024 22:27:50 GMT  
 		Size: 91.4 MB (91447922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ffaffb1dff77d041b80e66ee11f9a4e71b172888edf322c9b0448c3a0536def2`  
@@ -163,6 +165,7 @@ $ docker pull drupal@sha256:18b8609e8687a3f9797d1de23bfff8d4d0829da87f30bf05b7a2
 
 -	Layers:
 	-	`sha256:244eafc13523a33bd6e34724e5d26a29ee736521a89102a9f6508d8a19add566`  
+		Last Modified: Tue, 24 Dec 2024 23:20:54 GMT  
 		Size: 6.4 MB (6421084 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0a360981ae8fdb4bdf866278231c0fdd778146d431e8ce7ff13fdf9967f059df`  
@@ -256,6 +259,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f4ed7b1b9105789e8dcb4a70b1bca07a9fdba709e47328dbbaea9c5b4bf87290`  
+		Last Modified: Tue, 24 Dec 2024 23:02:50 GMT  
 		Size: 69.1 MB (69119370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f1a233e03098e618374485da8fda6624c4ced95642637d019537cc640d4a81df`  
@@ -267,6 +271,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 12.3 MB (12252911 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e2438f5fd646532c094d36de996753f3268765b445d99b43dd45a15a95c30800`  
+		Last Modified: Tue, 24 Dec 2024 23:58:17 GMT  
 		Size: 489.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fb3587f6e71f840efbd25de97fb8c2c62bc149b06f0aa310cc21b6364bf8290`  
@@ -318,9 +323,11 @@ $ docker pull drupal@sha256:70518a78eb41ed39c482db29760beb0f11f3348c079c14fc43f6
 
 -	Layers:
 	-	`sha256:2a80979d7be5f948cbf50b889809ee101a6f94be7763d451a58aa4b6f700bc6f`  
+		Last Modified: Wed, 25 Dec 2024 13:26:42 GMT  
 		Size: 6.2 MB (6229901 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0cf61dd1b20b2d01bc339541d7e9fdf234f99b22b438c9467eeb554cc35523b4`  
+		Last Modified: Wed, 25 Dec 2024 13:26:41 GMT  
 		Size: 23.3 KB (23293 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -426,9 +433,11 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 489.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bdab6c54cbeef49d1a249b2693fe5e40b532907f4c5b483f9929d57c1cb8e8e0`  
+		Last Modified: Wed, 25 Dec 2024 00:27:11 GMT  
 		Size: 26.4 MB (26380060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c3c55035f96dd73fb7863e36989a96dc1bf852684e16894e464ba919b615591b`  
+		Last Modified: Wed, 25 Dec 2024 00:27:09 GMT  
 		Size: 2.4 KB (2446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:80ab5cf11c0326e3ded7e11569b5726f0a6e5a25b97d693a6d4ee254377257a3`  
@@ -452,6 +461,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 314.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c34a8960725707a38fbe3d4e9d8a5f228f20546cc013f9b736b29259d4eb9692`  
+		Last Modified: Wed, 25 Dec 2024 08:38:21 GMT  
 		Size: 3.4 MB (3429002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -565,6 +575,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b1897ce3b1558d331b30d69fc69ec0c1ed45fb43ae0a869a9835ab31d932ec4`  
+		Last Modified: Tue, 24 Dec 2024 22:24:22 GMT  
 		Size: 92.5 MB (92521547 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:debb32b58ab6c2ffa870db5b27fcd1097a9acd1ba69f07b382ca8694544fe4f9`  
