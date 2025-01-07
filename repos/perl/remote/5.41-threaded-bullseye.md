@@ -149,6 +149,7 @@ CMD ["perl5.41.6" "-de0"]
 		Size: 167.5 MB (167525588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ec8f5c18c71e1b31ebf53c48dcfc5807fdfd016e660f939ad93986aa79ab7a36`  
+		Last Modified: Wed, 25 Dec 2024 20:20:21 GMT  
 		Size: 135.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb4893f71f17f333db6955ad62664067ffc9b92d384507d6e3b2639e48e328b8`  
@@ -217,6 +218,7 @@ CMD ["perl5.41.6" "-de0"]
 
 -	Layers:
 	-	`sha256:447d428f9ffe60c6c8cc59e00901cd865a36737372ba05710598d7eaf0a1144d`  
+		Last Modified: Tue, 24 Dec 2024 21:34:37 GMT  
 		Size: 52.2 MB (52245698 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eceb2e49ad0ea75b24fca7d94b98a8202f70828ce20fd23846a542d8dca2667d`  
@@ -317,9 +319,11 @@ CMD ["perl5.41.6" "-de0"]
 		Size: 200.0 MB (199979533 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:482c22a8c607a349e0f3ee09f2e2d1d05961da74cab4f29c8a87c8d2188f2597`  
+		Last Modified: Wed, 25 Dec 2024 01:24:34 GMT  
 		Size: 135.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb89fb6fa54feb6d7282c571368fa3d59ee64ff5e4751de504a22ced5e85724d`  
+		Last Modified: Wed, 25 Dec 2024 01:24:34 GMT  
 		Size: 15.4 MB (15442292 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6a70ee41d61a063c90f0bf2ae6fcb67ce6bccd70dbba8c04a080acfea55b3d8e`  
