@@ -109,6 +109,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4933639dfc581e84670cd2542197e53b50417b6278bfca01f60694157d16500e`  
+		Last Modified: Tue, 24 Dec 2024 22:29:30 GMT  
 		Size: 12.0 MB (12020182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3205fc918429ab59c5b822e194bf70aae1766daca2abc18e6db7065953b343a8`  
@@ -136,6 +137,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 8.9 KB (8883 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ca74ec671af2a1f5bf134e9e376de04c5e20a7cbfb32a6c53c1df87be8b722a`  
+		Last Modified: Tue, 24 Dec 2024 23:21:04 GMT  
 		Size: 1.9 MB (1898419 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a4046f37ac93ea60c807c40b48ae832429013f324613527f2fb86a8b2e90b1eb`  
@@ -411,7 +413,6 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 28.7 MB (28744853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:834d60e98531329a411a90bc750803a988fe332fd46e0c9f626164216b0bf9ed`  
-		Last Modified: Tue, 24 Dec 2024 23:21:22 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6518b047c296e77da2d983476df278091b3a6a373547505d5dfb7d5b8a0c2699`  
@@ -419,7 +420,6 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 86.7 MB (86734336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ea19be978e0cfada36d5340360118f62486323ea1dabdcf29354c30974b84789`  
-		Last Modified: Tue, 24 Dec 2024 23:21:22 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:abc642a94b5347df0d6ea1bf323ec06b440d16ded54ef691e0eb26abdc7d6496`  
@@ -431,7 +431,6 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 486.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ae72d74dd3e80bceddd7d23b6d2b7ce273ddd4523a004677521010604643e2e4`  
-		Last Modified: Wed, 25 Dec 2024 00:56:32 GMT  
 		Size: 26.1 MB (26099155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9b4bcd65d8c6d65f924ad265efc606caa667668c1f55cb22fcd4bf0ffe063210`  
