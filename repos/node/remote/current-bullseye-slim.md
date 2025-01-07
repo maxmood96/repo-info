@@ -65,7 +65,6 @@ CMD ["node"]
 		Size: 1.7 MB (1736008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3e24fc5f166955d36598275883f1198fbafabc83629ad7cbc9ebddcd04136d4d`  
-		Last Modified: Tue, 24 Dec 2024 22:29:39 GMT  
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -135,7 +134,6 @@ CMD ["node"]
 		Size: 26.6 MB (26589312 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:53e226da343301c1ff115a622038f9afd480082b7e466c3d80bcfcfd1293b910`  
-		Last Modified: Fri, 27 Sep 2024 11:19:21 GMT  
 		Size: 4.1 KB (4056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:376e81d03ced115d4533e6c6ff84fed3a031b3965f89502f6ecfac335bef4d16`  
