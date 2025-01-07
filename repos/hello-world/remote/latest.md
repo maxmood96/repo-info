@@ -74,7 +74,6 @@ $ docker pull hello-world@sha256:579b3724a7b189f6dca599a46f16d801a43d5def185de0b
 		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8b338b9c4c5a42cc78090f082d81ed4010c013d8ec03311051a613571f7f988a`  
-		Last Modified: Fri, 15 Dec 2023 22:04:48 GMT  
 		Size: 5.0 KB (4950 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -119,7 +118,6 @@ $ docker pull hello-world@sha256:6901d6a88eee6e90f0baa62b020bb61c4f13194cbcd9bf5
 
 -	Layers:
 	-	`sha256:ae1a9373da65899c4799f2eeb01f1545ab9767b6ba84a3bf39763be56a0299df`  
-		Last Modified: Fri, 15 Dec 2023 22:05:39 GMT  
 		Size: 4.8 KB (4766 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -351,6 +349,7 @@ $ docker pull hello-world@sha256:951bcd144ddccd1ee902dc180b435faabaaa6a8747e70cb
 
 -	Layers:
 	-	`sha256:ce386759ac9119e33d2394bcfe30cf512f4fa1882fb3b3b4062d1d93240193d8`  
+		Last Modified: Fri, 15 Dec 2023 22:08:45 GMT  
 		Size: 4.8 KB (4774 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -395,6 +394,7 @@ $ docker pull hello-world@sha256:838d191bca398e46cddebc48e816da83b0389d4ed2d64f4
 
 -	Layers:
 	-	`sha256:e5a36287fc1de00b683dd6cad99c6b4325917d4f58a68753f88e794c3c70184d`  
+		Last Modified: Fri, 15 Dec 2023 22:12:00 GMT  
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e0a75ff9ee852d6b8f9bf24a8587be3660e533249b04490c747c68cbc0eb3609`  
@@ -423,7 +423,6 @@ CMD ["/hello"]
 
 -	Layers:
 	-	`sha256:347fc929ddc17ac8da9fb3271c1110d22298e5c8a030e25d9ea1509d4db74b73`  
-		Last Modified: Fri, 15 Dec 2023 22:08:21 GMT  
 		Size: 3.0 KB (2981 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -496,7 +495,6 @@ $ docker pull hello-world@sha256:50f420e8710676da03668e446f1f51097b745e3e2c9807b
 		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cece95ee2767d2d10fbe1ae5875121ae9958d04ab439bc8af5e1c7138d3f4bf5`  
-		Last Modified: Fri, 15 Dec 2023 22:09:41 GMT  
 		Size: 5.0 KB (4950 bytes)  
 		MIME: application/vnd.in-toto+json
 
