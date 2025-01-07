@@ -89,7 +89,6 @@ CMD ["php" "-a"]
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5c694472b6a0c67ea3d5faa6ceb8107488eb4673c2b84f1cf06d159699a03b50`  
-		Last Modified: Tue, 24 Dec 2024 22:24:01 GMT  
 		Size: 13.7 MB (13662582 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6e4a7cd5f7fd95dc8ce64b54e69a573cb6d52e0060057dc5a9b627df03ffcc7`  
@@ -105,7 +104,6 @@ CMD ["php" "-a"]
 		Size: 2.4 KB (2445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:283d7cb9612332ab26a2f1ddc9bcc28082c41e26f7d0571638d6fc5f7b93a0ee`  
-		Last Modified: Tue, 24 Dec 2024 22:24:02 GMT  
 		Size: 243.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -125,7 +123,6 @@ $ docker pull php@sha256:74db815917122b32bdeebdd480db32696c915bca8ed20b11c3a6121
 
 -	Layers:
 	-	`sha256:3a1deb25baeef6062d83975e0eece020fd07be231a4cff2fe8f24eb84b676c32`  
-		Last Modified: Tue, 24 Dec 2024 22:24:01 GMT  
 		Size: 6.4 MB (6383989 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2b4c817c3891f80e607dc7b7c1a9c26ff65e569b0ce0c84b247b9ca4a9312dd7`  
@@ -191,10 +188,10 @@ CMD ["php" "-a"]
 
 -	Layers:
 	-	`sha256:0d436ac8a1fac914a00940d8604851d3414adc2ed370af15a8a5e6b319671b5b`  
-		Last Modified: Tue, 24 Dec 2024 21:34:33 GMT  
 		Size: 25.5 MB (25533937 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb0989fbbfc5677cb7ba281af4449917eb6aa0771685fd9d9c06b43b50ece3bd`  
+		Last Modified: Tue, 24 Dec 2024 23:02:48 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f4ed7b1b9105789e8dcb4a70b1bca07a9fdba709e47328dbbaea9c5b4bf87290`  
@@ -222,7 +219,6 @@ CMD ["php" "-a"]
 		Size: 2.4 KB (2448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c4943bfb1c27cf06af4d6cc5f74fbedc0cdc8639e1315cb0e9fd1d67f55bbf5f`  
-		Last Modified: Tue, 24 Dec 2024 23:12:42 GMT  
 		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -340,7 +336,6 @@ CMD ["php" "-a"]
 		Size: 2.4 KB (2447 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8439dd115cd8f1fa4d40a8be16fd507f086f6548b8ad8c5bcdc2364174c46f8d`  
-		Last Modified: Tue, 24 Dec 2024 23:30:39 GMT  
 		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -429,7 +424,6 @@ CMD ["php" "-a"]
 		Size: 31.2 MB (31178945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:83787d22f8d72528f3cccab7b38dcb6e7e3dabb926ec1d3006512f85c18f165d`  
-		Last Modified: Tue, 24 Dec 2024 22:22:42 GMT  
 		Size: 224.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3c572e1e5be29b5ef98088d426b9f8542ac64961247ebf8371c2973c7527dda5`  
@@ -477,8 +471,10 @@ $ docker pull php@sha256:e72161ee9d56deda44dc70793db4eb96faf421796aac85b30067ce5
 
 -	Layers:
 	-	`sha256:741a50264566e6079388a41198f7db0c0d3857d522694c179597558f8acf14f5`  
+		Last Modified: Tue, 24 Dec 2024 22:22:43 GMT  
 		Size: 6.4 MB (6374661 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3e82107be179766a068ab19f3f43356c861a903c5e39479b46aaf20d624aee7b`  
+		Last Modified: Tue, 24 Dec 2024 22:22:42 GMT  
 		Size: 39.5 KB (39538 bytes)  
 		MIME: application/vnd.in-toto+json
