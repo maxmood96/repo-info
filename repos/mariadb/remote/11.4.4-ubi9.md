@@ -113,9 +113,11 @@ CMD ["mariadbd"]
 		Size: 882.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:02f8b2ca67b89841240a51d4b9e18c566b779106c0bcc6a56df53aeefc6363b6`  
+		Last Modified: Thu, 19 Dec 2024 06:27:57 GMT  
 		Size: 983.5 KB (983464 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:45aea009b3cebba2d43e796849cc36379b165729c95cbfae474acdd3eb08603c`  
+		Last Modified: Thu, 19 Dec 2024 06:27:57 GMT  
 		Size: 345.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:42745b6b2ee32b5ef9decfd84390cb1eeeb31f5ab61aeb4b170ba8f8b778fb70`  
@@ -135,6 +137,7 @@ CMD ["mariadbd"]
 		Size: 4.0 KB (4039 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b11cdb1febf0fdf9d4a6c10f0d893ce6e720264ba8525a0d68da97b9f9225830`  
+		Last Modified: Thu, 19 Dec 2024 06:27:58 GMT  
 		Size: 8.4 KB (8401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -252,6 +255,7 @@ CMD ["mariadbd"]
 
 -	Layers:
 	-	`sha256:3415b32764d8c185fafcd0c946a41d5028c72a76a1c10bcd8690f139ff79eb40`  
+		Last Modified: Wed, 18 Dec 2024 06:15:28 GMT  
 		Size: 37.6 MB (37577418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dddd2646963cf55c51258516a47ad51722be951ad64cc336917b609bf4842b9b`  
@@ -259,6 +263,7 @@ CMD ["mariadbd"]
 		Size: 881.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:05b6033037830a49822327c9a17cb5d407e0eeaa9e46e326ff0e27aa08ed34b7`  
+		Last Modified: Thu, 19 Dec 2024 06:37:30 GMT  
 		Size: 913.8 KB (913801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1f52435fad7808237d71e14b62cf376790e69bd39a2e0389e06631d6ad1a2c91`  
@@ -550,6 +555,7 @@ CMD ["mariadbd"]
 
 -	Layers:
 	-	`sha256:09ca79ad6db051c7cb34adea156f17305f9fe366951ef8100fcdbf06dd0dd31c`  
+		Last Modified: Wed, 18 Dec 2024 06:15:33 GMT  
 		Size: 37.5 MB (37533376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c7d5e6977905585a3eee194536aae023c72e63b0a182101635f6b76e741a43a`  
