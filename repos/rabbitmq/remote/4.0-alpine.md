@@ -93,10 +93,10 @@ CMD ["rabbitmq-server"]
 		Size: 3.6 MB (3644443 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e907fb34e6bc18c69a602e0855ca77c9fa9acaa3d7b5a04ea5ce8e33a9c32884`  
-		Last Modified: Thu, 19 Dec 2024 21:38:44 GMT  
 		Size: 45.0 MB (44989091 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2777f2942bec64f35192baa34c4a2e2d768313bd35262f499fd3fb92f5d8c132`  
+		Last Modified: Thu, 19 Dec 2024 21:38:43 GMT  
 		Size: 8.3 MB (8309031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bec817ad43288cdd2ce0b70696a394de2206e1c26cc094eb7b4346191ff669ec`  
@@ -152,6 +152,7 @@ $ docker pull rabbitmq@sha256:44f5e33af8e7851e2c29703b6d40971d279eec504b98c591ca
 		Size: 2.9 MB (2928053 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8731bfe7162e440e1e21dff29eef527fecce6a3f5129a663fdcfd33ed498cf3a`  
+		Last Modified: Thu, 19 Dec 2024 21:38:42 GMT  
 		Size: 59.8 KB (59844 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -240,6 +241,7 @@ CMD ["rabbitmq-server"]
 		Size: 18.4 MB (18358860 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:00a4220c453713ea7898ede8762c944ebb974b73eae22a9ffb42bbc2e15a56f2`  
+		Last Modified: Thu, 19 Dec 2024 21:34:08 GMT  
 		Size: 192.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5c52e159af917b25866e9f62ba1d03785ee35ec892c94984848a28913d7c9ae9`  
@@ -270,7 +272,6 @@ $ docker pull rabbitmq@sha256:764a86252e6f11afe99dcbbaf6b210fd54592f14ef6082f001
 
 -	Layers:
 	-	`sha256:c3e894f44332cebb5d80ee7972ad8690ae6533e4bc39925151624be70d9f64f8`  
-		Last Modified: Thu, 19 Dec 2024 21:34:08 GMT  
 		Size: 59.8 KB (59821 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -344,7 +345,6 @@ CMD ["rabbitmq-server"]
 		Size: 3.1 MB (3100035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ad2b3721282056a0fbdf0b389f8240ea975c82b77984990f1d8480f41dabf5a9`  
-		Last Modified: Sat, 14 Dec 2024 01:51:43 GMT  
 		Size: 35.5 MB (35525480 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6b49e7d4cf7950ef2ecaae88c8aa09bded6033ff8154ea428b91f87f0d5649e`  
@@ -392,7 +392,6 @@ $ docker pull rabbitmq@sha256:899068631bb772e648f9dd597b4864ef1af53067354108df13
 
 -	Layers:
 	-	`sha256:205191bb2232bfa27050b9e59ed495481f427d3e41b73022c9735da0f8f8732d`  
-		Last Modified: Thu, 19 Dec 2024 21:41:20 GMT  
 		Size: 653.9 KB (653905 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5c104e092c2741cb5ea2aed92a503a2800c3c28aa0dcc1b90405f2de468f2c91`  
@@ -482,6 +481,7 @@ CMD ["rabbitmq-server"]
 		Size: 43.0 MB (43002128 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c48299d35c659b6409c1cce3634fda16fefc1d027d69e4982af580262fa43b98`  
+		Last Modified: Sat, 14 Dec 2024 01:49:22 GMT  
 		Size: 9.0 MB (9031962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2c289f326f6712b60e1def2ef3a349f4342d63432909457e67a851f40b21e022`  
@@ -614,6 +614,7 @@ CMD ["rabbitmq-server"]
 		Size: 35.7 MB (35684325 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:484db9460efa3950edef40f713642675789d98ba6505198f133fd59a3c8da1ba`  
+		Last Modified: Thu, 19 Dec 2024 21:38:04 GMT  
 		Size: 8.3 MB (8320817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f6227325681dbe15422a7a7e6ba61182ec6ad74712e9f86c048763a6c7bfd797`  
@@ -665,6 +666,7 @@ $ docker pull rabbitmq@sha256:874d36fac703eb53e053a96dfa47902b7a45bb40e7a487f5db
 		Size: 3.1 MB (3070503 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1a9fa1b41d2b2f7d8c7a18a09059146d87b4453a7de45f31fb2590485b22c5e5`  
+		Last Modified: Thu, 19 Dec 2024 21:38:03 GMT  
 		Size: 2.9 MB (2917003 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:21ba1e75b4f672d88a37215800d82856d72abda1736acca7e58cf89fb7f09511`  
@@ -753,7 +755,6 @@ CMD ["rabbitmq-server"]
 		Size: 1.3 MB (1345139 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:be04c79a600e50e21e69fd274a29da8f4593eddb866c84d3054c2277c9d56b73`  
-		Last Modified: Thu, 19 Dec 2024 23:04:42 GMT  
 		Size: 18.4 MB (18359061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:631ca58e0cdf49f0f87d65f09386117de828312014754c613ce4d5c640ffebb8`  
@@ -761,7 +762,6 @@ CMD ["rabbitmq-server"]
 		Size: 192.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:787a0dd93063d1d9b17855d554e5057f17f9c49e747b041ad0deca4d55bd7e75`  
-		Last Modified: Thu, 19 Dec 2024 23:04:41 GMT  
 		Size: 106.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:30201452b03fda8840d66a6f449cd69cce633ee444c738406e82331fce89215a`  
@@ -769,7 +769,6 @@ CMD ["rabbitmq-server"]
 		Size: 625.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d80d500cf88bf3cbc4c8bff7502f81bab6a363b5011b98ebd11de071c91d4412`  
-		Last Modified: Thu, 19 Dec 2024 23:04:42 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -789,9 +788,11 @@ $ docker pull rabbitmq@sha256:e85840dc25b1b3b1320ed800228d4eea8fba9c14912d0d52f8
 
 -	Layers:
 	-	`sha256:55c5e090662813e01c37f9cad048bd1cf76e71da449fbc56ac07dd3fe7d9e15a`  
+		Last Modified: Thu, 19 Dec 2024 23:04:41 GMT  
 		Size: 652.0 KB (651952 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9167d50f9ba9c4cbe234a224bfe4da975585b51c6a5bf7e1a086f2b6fe36a188`  
+		Last Modified: Thu, 19 Dec 2024 23:04:42 GMT  
 		Size: 3.1 MB (3087591 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1c7b7e6354e2e4ad3d1ce30b81e6f40d151d3ac7dea96020449f5d96d9a4c9ba`  
@@ -799,7 +800,6 @@ $ docker pull rabbitmq@sha256:e85840dc25b1b3b1320ed800228d4eea8fba9c14912d0d52f8
 		Size: 2.9 MB (2932760 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9882be4f94532c46eb9da8fdba05ebf85f8b0e5bdaedfc290536ea20581e1985`  
-		Last Modified: Thu, 19 Dec 2024 23:04:41 GMT  
 		Size: 59.9 KB (59906 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -869,6 +869,7 @@ CMD ["rabbitmq-server"]
 
 -	Layers:
 	-	`sha256:a6d4526e72329f3572a607f27b44cacf8e150856b24a0178c889732b00471eb3`  
+		Last Modified: Thu, 05 Dec 2024 22:19:03 GMT  
 		Size: 3.4 MB (3354022 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e3f359027c27b19d95fc947dcd7e167020faf9ba96fa247b2f309772108cf5c0`  
@@ -927,6 +928,7 @@ $ docker pull rabbitmq@sha256:06cb80319c09cac68ce0482c7b0e7306837b5fd54629f749f3
 		Size: 3.1 MB (3125246 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0a089e01847cf56f38c3757c7783a706916dfd0e52d186fedcdf719ed3f13207`  
+		Last Modified: Fri, 20 Dec 2024 00:19:53 GMT  
 		Size: 3.0 MB (2970427 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4e9fc7fc89ee246cd7656ec36768b8f803a3aedc61e5707ae39bbffd8ad54f72`  
@@ -1004,7 +1006,6 @@ CMD ["rabbitmq-server"]
 		Size: 3.5 MB (3469520 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:81e3a99aef2640ce207c9f308d5206d6e3ca989e9abd51f58ad3645764d95821`  
-		Last Modified: Sat, 14 Dec 2024 01:49:03 GMT  
 		Size: 36.1 MB (36102528 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:82de821cdbc35512b8f2c1255c8f4f64656454ab15159ff36d8cf7f4aaa2bd8c`  
@@ -1012,7 +1013,6 @@ CMD ["rabbitmq-server"]
 		Size: 7.5 MB (7508430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c4ff993f646b00bc883ab6125009bdbacc49033662b2b42969a7373114affa9d`  
-		Last Modified: Sat, 14 Dec 2024 01:49:03 GMT  
 		Size: 1.3 MB (1323335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:240aa07519f279976ad51d540f8b99a024ec98d9583bd6e4263fbad6978baa78`  
