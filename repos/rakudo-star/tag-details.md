@@ -67,6 +67,7 @@ CMD ["raku"]
 		Size: 23.9 MB (23865817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7aa8176e6d893aff4b57b2c22574ec2afadff4673b8e0954e275244bfd3d7bc1`  
+		Last Modified: Tue, 24 Dec 2024 23:16:06 GMT  
 		Size: 64.4 MB (64391074 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1d7cff01b997fa565dc9bc379ff5a67015df215692faead9f74af83d3b951e04`  
@@ -140,11 +141,9 @@ CMD ["raku"]
 
 -	Layers:
 	-	`sha256:ba1dd0e85e0bf7e5cb632a24bbc3ec0060700bc5be9273b05d7e059950225037`  
-		Last Modified: Tue, 24 Dec 2024 21:34:06 GMT  
 		Size: 48.3 MB (48325484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92b12b0dccf212c795e61e16dcc85f0caa01c231281e3287400bd334ffedb5ff`  
-		Last Modified: Wed, 25 Dec 2024 01:49:19 GMT  
 		Size: 23.4 MB (23405768 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd63102cac360c09802a29bab13f15de711e8bd1a730d419c66110513700983c`  
@@ -156,6 +155,7 @@ CMD ["raku"]
 		Size: 3.2 KB (3236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b0433fc466e6bf75a60d0764aacda7117b7bbcbfb8aa7fb83e6c832f9a89076`  
+		Last Modified: Wed, 25 Dec 2024 12:22:55 GMT  
 		Size: 40.6 MB (40610316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -258,7 +258,6 @@ $ docker pull rakudo-star@sha256:d2c0d3c69456a88195a2731bbf4e995f890926446f0a467
 
 -	Layers:
 	-	`sha256:39f7d77067acdf69cbe24980455a14e7de3fe402531ee0ed4fda3b8dcad2d64a`  
-		Last Modified: Tue, 17 Dec 2024 19:47:36 GMT  
 		Size: 120.7 KB (120720 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f5c253be0f28475551c334cf5a296191de44283a1b3ea58c2f285c5a08ca2ef6`  
@@ -411,7 +410,6 @@ $ docker pull rakudo-star@sha256:d2c0d3c69456a88195a2731bbf4e995f890926446f0a467
 
 -	Layers:
 	-	`sha256:39f7d77067acdf69cbe24980455a14e7de3fe402531ee0ed4fda3b8dcad2d64a`  
-		Last Modified: Tue, 17 Dec 2024 19:47:36 GMT  
 		Size: 120.7 KB (120720 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f5c253be0f28475551c334cf5a296191de44283a1b3ea58c2f285c5a08ca2ef6`  
@@ -548,6 +546,7 @@ CMD ["raku"]
 		Size: 23.9 MB (23865817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7aa8176e6d893aff4b57b2c22574ec2afadff4673b8e0954e275244bfd3d7bc1`  
+		Last Modified: Tue, 24 Dec 2024 23:16:06 GMT  
 		Size: 64.4 MB (64391074 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1d7cff01b997fa565dc9bc379ff5a67015df215692faead9f74af83d3b951e04`  
@@ -621,11 +620,9 @@ CMD ["raku"]
 
 -	Layers:
 	-	`sha256:ba1dd0e85e0bf7e5cb632a24bbc3ec0060700bc5be9273b05d7e059950225037`  
-		Last Modified: Tue, 24 Dec 2024 21:34:06 GMT  
 		Size: 48.3 MB (48325484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92b12b0dccf212c795e61e16dcc85f0caa01c231281e3287400bd334ffedb5ff`  
-		Last Modified: Wed, 25 Dec 2024 01:49:19 GMT  
 		Size: 23.4 MB (23405768 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd63102cac360c09802a29bab13f15de711e8bd1a730d419c66110513700983c`  
@@ -637,6 +634,7 @@ CMD ["raku"]
 		Size: 3.2 KB (3236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b0433fc466e6bf75a60d0764aacda7117b7bbcbfb8aa7fb83e6c832f9a89076`  
+		Last Modified: Wed, 25 Dec 2024 12:22:55 GMT  
 		Size: 40.6 MB (40610316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -723,6 +721,7 @@ CMD ["raku"]
 		Size: 23.9 MB (23865817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7aa8176e6d893aff4b57b2c22574ec2afadff4673b8e0954e275244bfd3d7bc1`  
+		Last Modified: Tue, 24 Dec 2024 23:16:06 GMT  
 		Size: 64.4 MB (64391074 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1d7cff01b997fa565dc9bc379ff5a67015df215692faead9f74af83d3b951e04`  
@@ -796,11 +795,9 @@ CMD ["raku"]
 
 -	Layers:
 	-	`sha256:ba1dd0e85e0bf7e5cb632a24bbc3ec0060700bc5be9273b05d7e059950225037`  
-		Last Modified: Tue, 24 Dec 2024 21:34:06 GMT  
 		Size: 48.3 MB (48325484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92b12b0dccf212c795e61e16dcc85f0caa01c231281e3287400bd334ffedb5ff`  
-		Last Modified: Wed, 25 Dec 2024 01:49:19 GMT  
 		Size: 23.4 MB (23405768 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd63102cac360c09802a29bab13f15de711e8bd1a730d419c66110513700983c`  
@@ -812,6 +809,7 @@ CMD ["raku"]
 		Size: 3.2 KB (3236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b0433fc466e6bf75a60d0764aacda7117b7bbcbfb8aa7fb83e6c832f9a89076`  
+		Last Modified: Wed, 25 Dec 2024 12:22:55 GMT  
 		Size: 40.6 MB (40610316 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
