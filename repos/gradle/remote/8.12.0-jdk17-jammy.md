@@ -93,6 +93,7 @@ USER root
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
+		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:99d0251816371836a858f54c5970ac350864e14f3750cae6c585f5c5db16839f`  
@@ -100,6 +101,7 @@ USER root
 		Size: 20.7 MB (20691097 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bf50b48fa6693be87391ed004de58b5f295b8ea2db307c2f43a422b60c294584`  
+		Last Modified: Thu, 24 Oct 2024 00:57:08 GMT  
 		Size: 144.5 MB (144541787 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2023aaf73bd8ccd243f2dfd135629182686997eb072b9ca65be21fd86ffbb376`  
@@ -151,6 +153,7 @@ $ docker pull gradle@sha256:2a4bae701a53a56b404d9e4a4987359500cc0ddde3665b68a661
 		Size: 7.6 MB (7585947 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:63f34279454f20fd988a44197b0fcfd2aef3983c00d9c85aa811333990978a54`  
+		Last Modified: Fri, 20 Dec 2024 21:36:42 GMT  
 		Size: 22.8 KB (22768 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -250,6 +253,7 @@ USER root
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e962c808693de8e8300688ad9a6c609cc2f56d38850cee86d09ef295f6752075`  
+		Last Modified: Thu, 24 Oct 2024 02:02:20 GMT  
 		Size: 4.3 KB (4304 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -425,6 +429,7 @@ $ docker pull gradle@sha256:40b294f6d9a329da0e90b978bd751160d85c6119a2f555d85b0a
 
 -	Layers:
 	-	`sha256:548ded1ac862790ba8c2c4d74142661b19db170f00b78d6eee1493dfa92fd82f`  
+		Last Modified: Sat, 21 Dec 2024 00:26:34 GMT  
 		Size: 7.7 MB (7687621 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7db62c1af336ecbd96c4d4db61df367e82b8e804fdbfa01c9338e8fe99eb9494`  
@@ -512,6 +517,7 @@ USER root
 		Size: 34.4 MB (34448242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e53be26f570a8d0058af6059806115fa86b4453b82f2f77234ea6324998b956f`  
+		Last Modified: Thu, 24 Oct 2024 01:12:08 GMT  
 		Size: 22.6 MB (22612504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:52e25f85edb64e1650364dd96157ef6705b583a7e3be7176d106289fb8d58313`  
@@ -527,6 +533,7 @@ USER root
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:88cc12a8d27ce32eaee29f82f4386f95979c0d1b8ddf93d417a6601abe332d7d`  
+		Last Modified: Fri, 20 Dec 2024 23:31:54 GMT  
 		Size: 4.3 KB (4315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -566,6 +573,7 @@ $ docker pull gradle@sha256:f7fb033532dd652d15acc3da3a33b06844428c3d898de17b5ed4
 		Size: 7.6 MB (7616624 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f89c2b45884dc9b2ccccc4840238b602f366113c7855f064daa07085592e0cf1`  
+		Last Modified: Fri, 20 Dec 2024 23:31:54 GMT  
 		Size: 22.8 KB (22841 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -648,9 +656,11 @@ USER root
 		Size: 28.0 MB (28001475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2cb0ca1880d7dd970acd5d5126a92411a1081022283260881f19edcad41fe035`  
+		Last Modified: Thu, 24 Oct 2024 17:21:34 GMT  
 		Size: 20.4 MB (20415840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e6c3f0743a4b637bd8e92ce02e4cc5bc5b0a4ad9168a7b247a2e99b95f46652c`  
+		Last Modified: Thu, 24 Oct 2024 17:21:36 GMT  
 		Size: 134.6 MB (134601137 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6a5029ac29307dc20d602fd8845bd6ada58bbd46097f210b9ac6581027345bac`  
@@ -658,7 +668,6 @@ USER root
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1da97f3365441622fe7ff9b35247d0f921600aab4f8296b1b8fac289536bde76`  
-		Last Modified: Thu, 24 Oct 2024 17:21:34 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:36ad58eaecc60c1a0690672b45e82ae01e4e53de7af69189fe1b6d8d4460ca13`  
