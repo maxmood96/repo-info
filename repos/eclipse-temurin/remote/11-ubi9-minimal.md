@@ -87,6 +87,7 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:1e6b7297048ae70484705dda4e582fb8ad5778ea4c8ae464cf3e6a02ac439012`  
+		Last Modified: Wed, 18 Dec 2024 06:15:23 GMT  
 		Size: 39.4 MB (39432409 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8f37d24dc82dd947fd41b42350cf3d1434701380e2ee1724491e35038fa6faf8`  
@@ -201,10 +202,10 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:3415b32764d8c185fafcd0c946a41d5028c72a76a1c10bcd8690f139ff79eb40`  
+		Last Modified: Wed, 18 Dec 2024 06:15:28 GMT  
 		Size: 37.6 MB (37577418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:57f5ca1f094534b84eeb5099558913cebb9becc0ece5d82f47d4ed1bff8f0530`  
-		Last Modified: Thu, 19 Dec 2024 06:29:45 GMT  
 		Size: 37.4 MB (37443775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f413a3846276b2e7adfb46ae1bc7209969af2970471c740304e09b62270c00b`  
@@ -240,6 +241,7 @@ $ docker pull eclipse-temurin@sha256:b74ea578db1e43dd92c82dec79506fef4eb485ea2d6
 		Size: 3.7 MB (3686119 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5b48c820487ce6632f06266759fdf0e134493c39c11087219bd5f0ba266614af`  
+		Last Modified: Thu, 19 Dec 2024 06:30:55 GMT  
 		Size: 21.1 KB (21060 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -351,6 +353,7 @@ $ docker pull eclipse-temurin@sha256:66a524fb1857b4b799f4ce400daf81c52e8e750a33e
 
 -	Layers:
 	-	`sha256:1659ba486cb27578e1da709228a4c83f8eb0a5bc9ae111303511260be471cded`  
+		Last Modified: Thu, 19 Dec 2024 06:31:15 GMT  
 		Size: 3.7 MB (3683608 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:083c932f1ccfba6704cfa08ac773c69bfcdfa0fd441eb435b2129d760cca56f5`  
@@ -445,7 +448,6 @@ CMD ["jshell"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb87e353baebe0db43ce44a3c42f3ae228f69cf083b74b4b59afbab013c4b3a8`  
-		Last Modified: Thu, 19 Dec 2024 06:30:42 GMT  
 		Size: 2.3 KB (2291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -465,6 +467,7 @@ $ docker pull eclipse-temurin@sha256:b77932ebca9489d1833fb7be8b3bd05fb8804603757
 
 -	Layers:
 	-	`sha256:7174d87c03e5b72c4f2e48472ea9b631d351a0da4070fe8d977d7f92e07e9690`  
+		Last Modified: Thu, 19 Dec 2024 06:30:41 GMT  
 		Size: 3.7 MB (3673527 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e8e909a9325f095bba96f49a700f6180c970f281830c07a7def70bc661a1e864`  
