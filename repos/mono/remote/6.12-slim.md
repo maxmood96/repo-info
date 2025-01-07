@@ -155,7 +155,6 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 2.4 MB (2370028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14dae79eba6437cf8f1fe8c17653348408d9b42ad8948d93472bbffd86792d7b`  
-		Last Modified: Fri, 21 Jun 2024 05:26:05 GMT  
 		Size: 23.6 MB (23573077 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

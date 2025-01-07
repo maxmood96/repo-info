@@ -78,7 +78,6 @@ $ docker pull mono@sha256:fc661c46136b8f9cbe60f721c811fb05d600f7614c9ddef8306ca5
 
 -	Layers:
 	-	`sha256:08c2cae238c884d7e44ae9bd57336a51412c9603e15025c0a456eca7dd888aba`  
-		Last Modified: Fri, 21 Jun 2024 02:02:46 GMT  
 		Size: 11.1 MB (11078059 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2dda4ada58791fac758ee1dc7c9ee2756a6d55125463cc11427657bfedecb286`  
@@ -169,7 +168,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 2.4 MB (2370028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14dae79eba6437cf8f1fe8c17653348408d9b42ad8948d93472bbffd86792d7b`  
-		Last Modified: Fri, 21 Jun 2024 05:26:05 GMT  
 		Size: 23.6 MB (23573077 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f623ef7b096557bbf700a18c1f6616fa36cfb781282427c32b42ee2bf6f5d788`  
@@ -242,7 +240,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 29.3 MB (29329348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8a97a948909451f0ef002b4ce1035b5a09a3acde1633d198b1b7d25d6729f696`  
-		Last Modified: Fri, 21 Jun 2024 17:09:25 GMT  
 		Size: 158.2 MB (158217029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -311,7 +308,6 @@ RUN apt-get update   && apt-get install -y binutils curl mono-devel ca-certifica
 		Size: 68.6 MB (68585515 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:30bbf7033252959af4d7a4d2f468bba517cf0aeaf9f9e131902187bdc9737e6d`  
-		Last Modified: Fri, 21 Jun 2024 02:04:03 GMT  
 		Size: 160.1 MB (160086629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -335,7 +331,6 @@ $ docker pull mono@sha256:e69c4a0ff0efcd311f3ec0da7e72cbafaa9689b8555686674db7d3
 		Size: 11.1 MB (11074056 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f11f469c7181081a082c334f89f2885f7a6a0953d5e152e5f75db2af4504d80e`  
-		Last Modified: Fri, 21 Jun 2024 02:03:57 GMT  
 		Size: 7.9 KB (7870 bytes)  
 		MIME: application/vnd.in-toto+json
 
