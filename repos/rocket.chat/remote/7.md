@@ -83,10 +83,10 @@ CMD ["node" "main.js"]
 		Size: 40.8 MB (40755124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a107cb3707f114bb0f80418351d83c4277239b64ed9f9ed0f4054a5df9f23d5`  
+		Last Modified: Tue, 24 Dec 2024 22:30:06 GMT  
 		Size: 1.7 MB (1712413 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:28e443844026d13d040ebd4f5a2958c022d0f551d8c4f5d841ab389155811c3b`  
-		Last Modified: Tue, 24 Dec 2024 22:30:06 GMT  
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:974fcd5b79cf16de78f9d9412dd9310edba823c4a89deb7f1983f637ef5ebc44`  
