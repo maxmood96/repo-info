@@ -100,7 +100,12 @@ $ docker pull archlinux@sha256:8bb0af37c95a3ba4a150df5169d2a3992fd4f8c57ed538166
 
 ## `archlinux:base-20250105.0.295102`
 
-**does not exist** (yet?)
+```console
+$ docker pull archlinux@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `archlinux:base-devel`
 
@@ -192,7 +197,12 @@ $ docker pull archlinux@sha256:07d63b69c408eb5f1024971ff81cf0456ca3af98755ad5c43
 
 ## `archlinux:base-devel-20250105.0.295102`
 
-**does not exist** (yet?)
+```console
+$ docker pull archlinux@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `archlinux:latest`
 
@@ -366,9 +376,15 @@ $ docker pull archlinux@sha256:ec4a71aa2d6be867da722570d0c04aa0ec293ce666a1f3b15
 		Size: 12.2 MB (12153736 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dc4a5129e1bc10603215924119a907c069c8a01c8bb976b73765d7db9e8727de`  
+		Last Modified: Thu, 02 Jan 2025 19:29:43 GMT  
 		Size: 11.8 KB (11811 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `archlinux:multilib-devel-20250105.0.295102`
 
-**does not exist** (yet?)
+```console
+$ docker pull archlinux@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
