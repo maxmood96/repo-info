@@ -42,7 +42,6 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:81ed317f5a171f4b98a556682fa6dd95c58884070e067ef426683ea70099ae3c`  
-		Last Modified: Mon, 08 Jul 2024 18:59:16 GMT  
 		Size: 101.6 MB (101585009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -66,6 +65,7 @@ $ docker pull mageia@sha256:7e25dd6c78d79f708bed974f2e5c35d71da240dc11a0d35fdb0e
 		Size: 7.2 MB (7150253 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:35ac409ae43e1743e803b89c2f65e4327da6f5247b2f3ac5033cf3951492abe3`  
+		Last Modified: Mon, 08 Jul 2024 18:59:13 GMT  
 		Size: 5.2 KB (5250 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -158,6 +158,7 @@ $ docker pull mageia@sha256:05d0bc4332ece91d36639974a3a3aac2bf97a147e67c83377136
 
 -	Layers:
 	-	`sha256:a1144e5388de748a236c9508058e4e8f95fcd94b3bb82020ec2451b545aabc04`  
+		Last Modified: Mon, 08 Jul 2024 19:17:01 GMT  
 		Size: 7.1 MB (7135220 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:35b59940e02a8e04ef171ad4cc99f38a593ae83505fa6d64e7dd55dc0cea8085`  
@@ -363,7 +364,6 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:81ed317f5a171f4b98a556682fa6dd95c58884070e067ef426683ea70099ae3c`  
-		Last Modified: Mon, 08 Jul 2024 18:59:16 GMT  
 		Size: 101.6 MB (101585009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -387,6 +387,7 @@ $ docker pull mageia@sha256:7e25dd6c78d79f708bed974f2e5c35d71da240dc11a0d35fdb0e
 		Size: 7.2 MB (7150253 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:35ac409ae43e1743e803b89c2f65e4327da6f5247b2f3ac5033cf3951492abe3`  
+		Last Modified: Mon, 08 Jul 2024 18:59:13 GMT  
 		Size: 5.2 KB (5250 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -479,6 +480,7 @@ $ docker pull mageia@sha256:05d0bc4332ece91d36639974a3a3aac2bf97a147e67c83377136
 
 -	Layers:
 	-	`sha256:a1144e5388de748a236c9508058e4e8f95fcd94b3bb82020ec2451b545aabc04`  
+		Last Modified: Mon, 08 Jul 2024 19:17:01 GMT  
 		Size: 7.1 MB (7135220 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:35b59940e02a8e04ef171ad4cc99f38a593ae83505fa6d64e7dd55dc0cea8085`  
