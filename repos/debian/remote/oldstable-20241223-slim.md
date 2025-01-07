@@ -34,6 +34,7 @@ RUN # debian.sh --arch 'amd64' out/ 'oldstable' '@1734912000'
 
 -	Layers:
 	-	`sha256:14ac846c86be7d23a713587de0dc5410a9afd9efa7e43d95e36765f58da7e5c5`  
+		Last Modified: Tue, 24 Dec 2024 21:32:33 GMT  
 		Size: 30.3 MB (30252641 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -119,6 +120,7 @@ RUN # debian.sh --arch 'arm64' out/ 'oldstable' '@1734912000'
 
 -	Layers:
 	-	`sha256:d1a801051210b285506b17a4c944d905fdfaa4c0b8f971da3063e2275b4cb262`  
+		Last Modified: Tue, 24 Dec 2024 21:35:22 GMT  
 		Size: 28.7 MB (28744853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

@@ -68,6 +68,7 @@ $ docker pull debian@sha256:fc807435d8c53d3302db0493d370d669f6db88055b4bfff197b5
 
 -	Layers:
 	-	`sha256:5e939ef767b2cd4b64162fc5513f216296028a0c368572ab841e4705a55fa2c5`  
+		Last Modified: Tue, 24 Dec 2024 22:13:34 GMT  
 		Size: 3.6 MB (3619210 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2a5d598f7dcc00a8180e4e917b780cdecff40d1e576f2ee07ee24833fb8d7cb2`  
@@ -96,6 +97,7 @@ RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' > /etc/apt/s
 
 -	Layers:
 	-	`sha256:9bbb619898c2cd76f2f957a170378432dffd62e9bd50226234d805ff7ac0d544`  
+		Last Modified: Tue, 24 Dec 2024 21:33:13 GMT  
 		Size: 46.0 MB (46024242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb32a10127d938bd16992601370c9a31e761d62af3d54ad2e249a6525b669d14`  
@@ -225,6 +227,7 @@ $ docker pull debian@sha256:23689afd37c5263a3607cb5af51991882921a5672abbe738f42f
 
 -	Layers:
 	-	`sha256:c956f9632741d19259d27de702687ad778d836ad18734a5b4b4fa4f80b7408f7`  
+		Last Modified: Tue, 24 Dec 2024 22:17:29 GMT  
 		Size: 3.6 MB (3619425 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:814a1b1ac3438d3f694c304b01570828531602029c091db5b7af1bb906716d26`  
@@ -379,6 +382,7 @@ $ docker pull debian@sha256:f18a75518b663ab4a0f05fa4cf3934065f902804a56e9da5409f
 
 -	Layers:
 	-	`sha256:d04703dffa7eafb77a11e73603016abcf1054169d9457fa1d9a258a11e5d272f`  
+		Last Modified: Wed, 25 Dec 2024 12:49:27 GMT  
 		Size: 3.6 MB (3623470 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c9a183c27b0dcc321089bbb2c25a3adb698ab1701cc1595fe0314775e5682b7b`  
