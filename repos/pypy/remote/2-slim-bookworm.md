@@ -62,7 +62,6 @@ CMD ["pypy"]
 		Size: 31.3 MB (31333915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14c48b86ee65daa25cf1e0b96dab823ad8dfc9c1dab5a47f77f88bf5dc799220`  
-		Last Modified: Tue, 24 Dec 2024 22:34:10 GMT  
 		Size: 2.0 MB (1952804 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -208,7 +207,6 @@ CMD ["pypy"]
 		Size: 29.2 MB (29205387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:966f01481b680c5215470d142119e90bb7cf78b75d661b7b654dc28e9ddb40c4`  
-		Last Modified: Tue, 24 Dec 2024 22:28:28 GMT  
 		Size: 3.3 MB (3309259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5fe6933c143703e0cd355676e7ff3162b6080a07fcbcf0f14e338a39dee1bea5`  

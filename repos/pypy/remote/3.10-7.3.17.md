@@ -66,7 +66,7 @@ CMD ["pypy3"]
 		Size: 15.6 MB (15558293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5ee26b7a209f9a26720207792b237af3e19c0efeed8695e1e630fcd0feef9230`  
-		Last Modified: Tue, 24 Dec 2024 23:16:05 GMT  
+		Last Modified: Tue, 07 Jan 2025 19:49:56 GMT  
 		Size: 54.8 MB (54753708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:41c7cd6fb37363fd1ec16dad3463ecc5820eda12c418a82b4849604252d29b88`  
@@ -106,7 +106,6 @@ $ docker pull pypy@sha256:b8488feb96ab4b86a6624a3a166326663e777341f170d3d48fe66f
 		Size: 15.4 MB (15401150 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ecedf3c7aa5c6b8e142b9d58df120f8c3fcb697fdd1959524affa14fa13ea7ee`  
-		Last Modified: Wed, 25 Dec 2024 01:18:02 GMT  
 		Size: 28.6 KB (28585 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -357,7 +356,6 @@ CMD ["pypy"]
 		Size: 355.9 KB (355931 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:343fdf7e57e505bc021cceff35d137140ea3d39dfa4525870de58238b131c0e0`  
-		Last Modified: Wed, 11 Dec 2024 20:41:46 GMT  
 		Size: 15.5 MB (15539581 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:938a6b6e4381306006ae411197980ad200dbce55250b3ff1a1932bce42e45aed`  
@@ -438,7 +436,6 @@ CMD ["pypy"]
 		Size: 1.3 KB (1319 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ff811a22365ae6f54010ba5aa2bd7dca2f0cdbad78b1f0286a41594be75735aa`  
-		Last Modified: Wed, 11 Dec 2024 20:47:27 GMT  
 		Size: 461.1 KB (461062 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:fc16594811a30599d8f482b77630b267039cf5f49878bc581df5375effeda5e0`  
@@ -446,7 +443,6 @@ CMD ["pypy"]
 		Size: 15.5 MB (15497236 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f47373c9310f206528fbeed152780d9676142f1e9e11154ec94517140f1eb902`  
-		Last Modified: Wed, 11 Dec 2024 20:47:27 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:582146f51e6c2647231925f9d218562e98fa427f34dbe958a75a8a7958bd75c9`  
