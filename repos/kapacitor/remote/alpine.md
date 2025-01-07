@@ -1,7 +1,7 @@
 ## `kapacitor:alpine`
 
 ```console
-$ docker pull kapacitor@sha256:54f2d2409a6c334ddeadf042d80e7c2348070bc9e99cf2f0a025f8625a57a8cd
+$ docker pull kapacitor@sha256:081d04ede1850615af084ddcd0533c80601a7c955d5fc108dea71a566e66de22
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,20 +12,20 @@ $ docker pull kapacitor@sha256:54f2d2409a6c334ddeadf042d80e7c2348070bc9e99cf2f0a
 ### `kapacitor:alpine` - linux; amd64
 
 ```console
-$ docker pull kapacitor@sha256:086feffd7511df430538db51953f3b1aa97d993c6f354ddb47b30a28268c72d6
+$ docker pull kapacitor@sha256:19a2c4a2177a17db510b3455aeccaf09b26b34dfc1904eb93d24076c46655e4e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.9 MB (75897933 bytes)**  
+-	Total Size: **75.9 MB (75875874 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:153f69c84916f02f4a6dc6dea4288fbd5e0f117dbb28cc409a6c83d94b148960`
+-	Image ID: `sha256:448235eeb4366369184bd504faa3fd3a9144ec0b951459d82a4767994244e810`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["kapacitord"]`
 
 ```dockerfile
-# Fri, 06 Sep 2024 12:05:36 GMT
-ADD alpine-minirootfs-3.20.3-x86_64.tar.gz / # buildkit
-# Fri, 06 Sep 2024 12:05:36 GMT
+# Mon, 28 Oct 2024 16:40:55 GMT
+ADD alpine-minirootfs-3.20.4-x86_64.tar.gz / # buildkit
+# Mon, 28 Oct 2024 16:40:55 GMT
 CMD ["/bin/sh"]
 # Mon, 28 Oct 2024 16:40:55 GMT
 RUN echo 'hosts: files dns' >> /etc/nsswitch.conf # buildkit
@@ -50,48 +50,49 @@ CMD ["kapacitord"]
 ```
 
 -	Layers:
-	-	`sha256:da9db072f522755cbeb85be2b3f84059b70571b229512f1571d9217b77e1087f`  
-		Last Modified: Fri, 06 Sep 2024 14:39:08 GMT  
-		Size: 3.6 MB (3623904 bytes)  
+	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
+		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
+		Size: 3.6 MB (3613999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:885590f1f7b0d800a74c7fafd930c3af61b5fe15daab2678bce790c7f2f9cd22`  
-		Last Modified: Tue, 12 Nov 2024 02:14:04 GMT  
-		Size: 280.0 B  
+	-	`sha256:5042cc15aa3f084ef338d138f4818ca1a6de97e4f056987d94bfae59511bd41d`  
+		Size: 279.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dac53a171ae4ce01f5e27baec3ad5f6f037a1881b346195983a643819a07b883`  
-		Last Modified: Tue, 12 Nov 2024 02:14:04 GMT  
-		Size: 292.6 KB (292605 bytes)  
+	-	`sha256:e4a2dd5a3edbe3bb3d9f02ffb7d7691bc81f91cfa00a93e8d5096998173e052b`  
+		Last Modified: Tue, 07 Jan 2025 03:33:03 GMT  
+		Size: 280.9 KB (280855 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:888177041de4c96b1f68418e7bc5cd4687108fbcbc610cfc109e1ed4b0bda3c6`  
-		Size: 72.0 MB (71980643 bytes)  
+	-	`sha256:5ac70ef3a37829d19665351ec2e30694e568a500ac0fef3da9dcc3d8c346e89e`  
+		Last Modified: Tue, 07 Jan 2025 03:33:05 GMT  
+		Size: 72.0 MB (71980244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:560f14c58286ce05ab80eb37c85d56c1be46dad43efe846b230ab9485fd49396`  
-		Last Modified: Tue, 12 Nov 2024 02:14:04 GMT  
-		Size: 224.0 B  
+	-	`sha256:f1ccb0c3b6c2c7cc173409f6cd25dedf19c44baf1d42efd74190b546c096a189`  
+		Last Modified: Tue, 07 Jan 2025 03:33:03 GMT  
+		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8d341b2a713279282b63733cc3f66bea88f5d3f1a02213be85948833f8061d`  
-		Size: 277.0 B  
+	-	`sha256:0bcc157a0695c33742bdaae44173f5f7f430937ae371216bfb70ee625ffc60eb`  
+		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `kapacitor:alpine` - unknown; unknown
 
 ```console
-$ docker pull kapacitor@sha256:fd6657b7e90030fbb5a9534bffa32859cd913c81d638b9d597a0b4e53d93817c
+$ docker pull kapacitor@sha256:3d10d048c07d3b656f05ef64c0220215256c6c2fe4b6cd266b58ee39dd787640
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **380.8 KB (380796 bytes)**  
+-	Total Size: **378.1 KB (378139 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b0bdcc14d39feff37d8496fd2d25c12af54310733fcb8271d15baa6b2dc768b`
+-	Image ID: `sha256:a1ef06c20907dd546d4a786d7512f5e4cc36892b93bce3ee1b708804c81b6212`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cba342c70ae180705b80a828265e8fa05932dee56ee3dcf1ec209aada94ec9d8`  
-		Last Modified: Tue, 12 Nov 2024 02:14:04 GMT  
-		Size: 365.1 KB (365112 bytes)  
+	-	`sha256:8b600c398ef76b5f1a3cff321d8a58c0e1b015a650d197f3e4104ba2b1e6e6df`  
+		Last Modified: Tue, 07 Jan 2025 03:33:03 GMT  
+		Size: 362.5 KB (362455 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6097a085c6c0682ab3aec996dd441ead4d2d4f3eafed141ab953b589e3b790f2`  
+	-	`sha256:c6b7930a4990a1c8c6579173d0e6b66b60e07a85ad5c72737ec18923d092101a`  
+		Last Modified: Tue, 07 Jan 2025 03:33:03 GMT  
 		Size: 15.7 KB (15684 bytes)  
 		MIME: application/vnd.in-toto+json
