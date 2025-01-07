@@ -107,11 +107,9 @@ CMD ["composer"]
 		Size: 3.6 MB (3644443 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:926a903e79620f0a500e6c0b8920613cf3e77ee6fb031d64dfb3cb7d88442adc`  
-		Last Modified: Fri, 20 Dec 2024 21:35:34 GMT  
 		Size: 3.3 MB (3336077 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3c946fba36f12b591be4b090159dd42766dc43c2a20caf28d504ef17c4491759`  
-		Last Modified: Fri, 20 Dec 2024 21:35:33 GMT  
 		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ac17bc9a4d3a9a1781e2999ce34426d9eec4eed120cb79c459b841169a923918`  
@@ -275,6 +273,7 @@ CMD ["composer"]
 		Size: 945.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:065854d8dae5a225e01a05809bd10528e215d02290cc6d9f51d4bc29dc1ac134`  
+		Last Modified: Wed, 11 Dec 2024 23:33:48 GMT  
 		Size: 217.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c7d8a646b13a1fce87a53e224ba759100c5661201fa77b07c2bb37e766e4399`  
@@ -302,16 +301,17 @@ CMD ["composer"]
 		Size: 30.6 MB (30641288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c129606c926c4221d682770c2daaa54b304e77c6d10ac37d86224ded916fede3`  
+		Last Modified: Fri, 20 Dec 2024 23:03:36 GMT  
 		Size: 256.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ca357cec05180899d9e8d28334a0e6bc9298b37bca1b6c8c1c400e1a8ff18b0`  
 		Size: 1.4 MB (1416457 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:386d76b9a3e1f7c21e5a182c9d58502bc43af53578e67a16921add85659a9209`  
-		Last Modified: Thu, 12 Dec 2024 19:27:26 GMT  
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3e9b049e98e5aa565b7511812e1351103b5e9f811e326eac0f30a2e3743b9c24`  
+		Last Modified: Fri, 20 Dec 2024 23:03:36 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -423,9 +423,11 @@ CMD ["composer"]
 		Size: 3.1 MB (3128235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:30daf13605f2d1179f6005fb32926b33b8626b9ceb92de019df902d09cedf935`  
+		Last Modified: Wed, 11 Dec 2024 23:35:19 GMT  
 		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f7365fc515397f6962469f3d1c8654b5801822a766158bca2e8a9fa961d78db8`  
+		Last Modified: Wed, 11 Dec 2024 23:35:19 GMT  
 		Size: 220.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5a7b2510a73dde296829d64a7a766b9532e9e98238663d7544fcb11d828edf19`  
@@ -445,15 +447,12 @@ CMD ["composer"]
 		Size: 2.4 KB (2441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5302c968087e93f72bd0a3e8da913da2a3b5cc3802ff0de5d389e6740323ef52`  
-		Last Modified: Fri, 20 Dec 2024 22:12:45 GMT  
 		Size: 19.9 KB (19899 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:71edb0952ef713ac379d22d60a6a0e5e1ab8e1a7e0d6858994829d1584dfa20b`  
-		Last Modified: Sat, 21 Dec 2024 00:54:42 GMT  
 		Size: 30.2 MB (30150125 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5bdfebf91571a2efa29d6268aafa0080828a4a9bc3ad5ecc7e2b43895774db5f`  
-		Last Modified: Sat, 21 Dec 2024 00:54:40 GMT  
 		Size: 258.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4d312a625a9cea21c47b3651da95e34689bc2b048df02e891d27f92700227cbe`  
@@ -465,7 +464,6 @@ CMD ["composer"]
 		Size: 420.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f64f2a4c489fad4e0d0a64578400ebae97f48ff6414114e2193580823d120a7`  
-		Last Modified: Sat, 21 Dec 2024 00:54:41 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -592,6 +590,7 @@ CMD ["composer"]
 		Size: 13.6 MB (13580520 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f7b64ce4fbef8321cb5b9a415b540a4baa87078a9d7ee17306f53198aa5c3d6b`  
+		Last Modified: Fri, 20 Dec 2024 22:01:14 GMT  
 		Size: 494.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5a01d64640e85e99659018a2a9d802c50d724bde24674cd1ace68a407f974cc8`  
@@ -599,6 +598,7 @@ CMD ["composer"]
 		Size: 20.9 MB (20912964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:61930bd78024ed559eceaae6edaa2d5a5396db98ea69ec50e91c0ce227b97848`  
+		Last Modified: Fri, 20 Dec 2024 22:01:14 GMT  
 		Size: 2.4 KB (2441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:60e991f93dcb7aadac92e8529d0719e89be0fbb0cc3478b38e16914291fef40b`  
@@ -610,10 +610,10 @@ CMD ["composer"]
 		Size: 32.0 MB (32002924 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dafd0942fb02c25d23f08063ad2cbeab093d6cf618b8d1e3da7813080cf0a5d3`  
+		Last Modified: Sat, 21 Dec 2024 01:55:16 GMT  
 		Size: 258.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbbc1bdc44e9a45913e2c17420d5f0c504ad83620bb6aa1a544f6a6608694652`  
-		Last Modified: Sat, 21 Dec 2024 01:55:17 GMT  
 		Size: 1.4 MB (1368492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:25613c051b7489fcf2c3b4ae8295ffdcd74e959353d1a2f93d7c8e645d2fdf8e`  
@@ -733,7 +733,6 @@ CMD ["composer"]
 		Size: 3.5 MB (3466081 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c898e29d83e9db370e8891b59d2b75d52becd1c60e7168a6068c60ab70d34d74`  
-		Last Modified: Fri, 20 Dec 2024 21:35:45 GMT  
 		Size: 3.4 MB (3376600 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1aaee1fb0dd467b0c78610a290f1dab2d06cab056e446bcd035ed5a5be5bad5f`  
@@ -765,11 +764,9 @@ CMD ["composer"]
 		Size: 20.1 KB (20067 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:23849d787e1a192bfd435c7fd7263c32435e87bd9d1fcbb9a4ae64a8f665d79f`  
-		Last Modified: Fri, 20 Dec 2024 22:30:33 GMT  
 		Size: 11.4 MB (11421351 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8e11a704e653b95e9384311dd22ed4490a9a261e61d75660e76d9f67171b51f4`  
-		Last Modified: Fri, 20 Dec 2024 22:30:33 GMT  
 		Size: 257.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:96af06b16830c267b956c54985affd5e7e43886fa2db245a39455ef078ad59e0`  
@@ -889,6 +886,7 @@ CMD ["composer"]
 
 -	Layers:
 	-	`sha256:a12ff663c50b78339bd273940ba035e29d8220954846a4c35a5f79080b37a3d3`  
+		Last Modified: Thu, 05 Dec 2024 22:18:21 GMT  
 		Size: 3.6 MB (3577108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:62dab8c9093e7207bf34d7e27bcaf8a12d512bc9a6228a188ccd032ab556c048`  
@@ -904,7 +902,6 @@ CMD ["composer"]
 		Size: 217.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:73154329c1c9a418799584abd71b5689505fae8a1fe0c1edf20b4c054fdfa404`  
-		Last Modified: Fri, 20 Dec 2024 21:50:46 GMT  
 		Size: 13.6 MB (13580519 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbe8613e572e5a00abda95594733a8b015a569e70fcfb60f921b46b1d3b0b4ce`  
@@ -912,7 +909,6 @@ CMD ["composer"]
 		Size: 494.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92bfbf1907d341a6d1c62419f97827940bb943dfd0067d8cce4a44af3d1da5c0`  
-		Last Modified: Fri, 20 Dec 2024 21:50:46 GMT  
 		Size: 22.3 MB (22287679 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4aa21b603882a7aa1280eb0a92a0814e2acb781ef4ea1490d6871b2cf300d5ed`  
@@ -924,7 +920,6 @@ CMD ["composer"]
 		Size: 19.9 KB (19897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:320193b91948f33c75121c293867d724d3bd3982783314901a94db790aab8942`  
-		Last Modified: Sat, 21 Dec 2024 00:47:37 GMT  
 		Size: 32.9 MB (32943931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a87a05827ee97083cff81d981bb3bc249115eff0447c4e4a7b65127727301f1c`  
@@ -964,7 +959,6 @@ $ docker pull composer@sha256:10851df2bb02f14a5d955ff5ee65aa6ccab36c724f71ce5e0f
 		Size: 2.2 MB (2158810 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2c80bb77f9349195e9186f11e18f9830292abd319b18227f24b1f5a28246e4b3`  
-		Last Modified: Sat, 21 Dec 2024 00:47:36 GMT  
 		Size: 30.7 KB (30699 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1092,7 +1086,6 @@ CMD ["composer"]
 		Size: 258.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c57af59a23156600be33dba882bdf1a5e0021aa8a1a596a9177787f956d9b64a`  
-		Last Modified: Sat, 21 Dec 2024 14:35:22 GMT  
 		Size: 1.4 MB (1378532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:081edbee53f3a9cf4b66b37a4a382dd412be359ae83d996f3486c00c340e622a`  
@@ -1232,6 +1225,7 @@ CMD ["composer"]
 		Size: 493.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0154e3b89ce7965e82ffec7aff04edec326644e952fe96eca0cbe395ccb151b8`  
+		Last Modified: Sat, 21 Dec 2024 01:07:03 GMT  
 		Size: 21.9 MB (21867735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6cf1a08d85e9f5ffb6b386d5b9a9c2260779e2408eb44cf874b23d61902f877a`  
@@ -1247,7 +1241,6 @@ CMD ["composer"]
 		Size: 31.7 MB (31675723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:75f1671f7a4b9055dd3f4c65b5f95cca757e39df07b78b85cd25865c7838f093`  
-		Last Modified: Sat, 21 Dec 2024 02:09:56 GMT  
 		Size: 257.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:23a786d406f9afd0e23cf22f180471c74e952824c2f48ebe920d51a5cca6b585`  
@@ -1259,7 +1252,6 @@ CMD ["composer"]
 		Size: 419.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2bca8707ab38c51cacfdd23547715666185b870f73ac54d0e7369b2a8e2d2e22`  
-		Last Modified: Sat, 21 Dec 2024 02:09:57 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
