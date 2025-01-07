@@ -109,6 +109,7 @@ $ docker pull ros@sha256:dfd3b5fd109a806bf23fa27a79aa8347acd69827d577bdf1c36ba34
 		Size: 17.9 MB (17859461 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7e6a9cadf7b6646045c8109a867f9c4a5162ab9d59dd1e6fc3215d9c02a6931e`  
+		Last Modified: Sat, 16 Nov 2024 02:57:56 GMT  
 		Size: 16.4 KB (16394 bytes)  
 		MIME: application/vnd.in-toto+json
 

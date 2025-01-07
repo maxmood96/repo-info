@@ -103,6 +103,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 		Size: 114.1 MB (114148980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:db366bc2268cda50986b7cae4fa1ddabd7b92d8a85d54daad5f28244f0442207`  
+		Last Modified: Sat, 16 Nov 2024 03:51:15 GMT  
 		Size: 326.7 KB (326714 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:402345e6fb621ea7619b1d18f51c5deb245660494444030ab446d6990881169b`  
@@ -232,12 +233,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6924bb4685c143af5e2bec8959405bd94b82464901eb4ebdd3aedde9908dd1aa`  
+		Last Modified: Sat, 16 Nov 2024 04:50:07 GMT  
 		Size: 111.0 MB (111007847 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d7125737b4604e0deee24622b4f35e76bb2a81ea469185a71a4f100a1b17a02b`  
+		Last Modified: Sat, 16 Nov 2024 04:50:04 GMT  
 		Size: 326.7 KB (326708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:df0549a9b72e086e413b36d2ba5a9a97fc7e361f45714c5af076739e3a30b02d`  
+		Last Modified: Sat, 16 Nov 2024 04:50:04 GMT  
 		Size: 2.4 KB (2433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:38d8e30c16d2403bfc5a15fba00e5199f46f4591a1eee5d2275906979cf66b30`  
@@ -245,7 +249,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-rolling
 		Size: 26.7 MB (26685018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b3c666d99c3684fc94bde4a3ffc855b0531e32378be05043ef1e46456f43005a`  
-		Last Modified: Sat, 16 Nov 2024 06:09:27 GMT  
 		Size: 277.0 MB (276994555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -265,6 +268,7 @@ $ docker pull ros@sha256:b3e2e1bc3e3636e6af3e3de3cf921fd07c65a56b8fc579bc5f24e08
 
 -	Layers:
 	-	`sha256:d7013a2972f834c1d3266202edaf2fda5bbd571e07feddea42a4bd6ff5b28b46`  
+		Last Modified: Sat, 16 Nov 2024 06:09:22 GMT  
 		Size: 42.2 MB (42237129 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:adbf7b5374f52bb97eb4921b165bb92c4f0be4615cdeec62c9fdfb1edf699598`  
