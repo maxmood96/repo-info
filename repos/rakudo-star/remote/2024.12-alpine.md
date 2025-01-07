@@ -123,7 +123,6 @@ CMD ["raku"]
 		Size: 960.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c358d950d08f053246db63fdbc290842d546c94b7851aa57035dad0806cbdcc9`  
-		Last Modified: Tue, 17 Dec 2024 23:12:48 GMT  
 		Size: 42.4 MB (42403708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
