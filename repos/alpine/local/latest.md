@@ -1,10 +1,10 @@
-# `alpine:3.21.0`
+# `alpine:3.21.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4048db5d36726e313ab8f7ffccf2362a34cba69e4cdd49119713483a68641fce`
-- Created: `2024-12-05T12:49:04Z`
-- Virtual Size: ~ 7.84 Mb  
+- Image ID: `sha256:8a87ea05ce928fc576af504b9e838b12312274c4e39c7de784d30bc2226d0a99`
+- Created: `2025-01-06T19:11:15Z`
+- Virtual Size: ~ 7.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -16,16 +16,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.6.8-r0 description:
+alpine-baselayout-3.6.8-r1 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.6.8-r0 webpage:
+alpine-baselayout-3.6.8-r1 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.6.8-r0 installed size:
+alpine-baselayout-3.6.8-r1 installed size:
 6532 B
 
-alpine-baselayout-3.6.8-r0 license:
+alpine-baselayout-3.6.8-r1 license:
 GPL-2.0-only
 
 ```
@@ -33,16 +33,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.6.8-r0 description:
+alpine-baselayout-data-3.6.8-r1 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.6.8-r0 webpage:
+alpine-baselayout-data-3.6.8-r1 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-data-3.6.8-r0 installed size:
+alpine-baselayout-data-3.6.8-r1 installed size:
 18 KiB
 
-alpine-baselayout-data-3.6.8-r0 license:
+alpine-baselayout-data-3.6.8-r1 license:
 GPL-2.0-only
 
 ```
@@ -67,16 +67,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.0-r0 description:
+alpine-release-3.21.1-r0 description:
 Alpine release data
 
-alpine-release-3.21.0-r0 webpage:
+alpine-release-3.21.1-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.0-r0 installed size:
+alpine-release-3.21.1-r0 installed size:
 346 B
 
-alpine-release-3.21.0-r0 license:
+alpine-release-3.21.1-r0 license:
 MIT
 
 ```
@@ -101,16 +101,16 @@ GPL-2.0-only
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r8 description:
+busybox-1.37.0-r9 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r8 webpage:
+busybox-1.37.0-r9 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r8 installed size:
+busybox-1.37.0-r9 installed size:
 798 KiB
 
-busybox-1.37.0-r8 license:
+busybox-1.37.0-r9 license:
 GPL-2.0-only
 
 ```
@@ -118,16 +118,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r8 description:
+busybox-binsh-1.37.0-r9 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r8 webpage:
+busybox-binsh-1.37.0-r9 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r8 installed size:
+busybox-binsh-1.37.0-r9 installed size:
 1 B
 
-busybox-binsh-1.37.0-r8 license:
+busybox-binsh-1.37.0-r9 license:
 GPL-2.0-only
 
 ```
@@ -135,16 +135,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241010-r0 description:
+ca-certificates-bundle-20241121-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241010-r0 webpage:
+ca-certificates-bundle-20241121-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241010-r0 installed size:
-220 KiB
+ca-certificates-bundle-20241121-r0 installed size:
+204 KiB
 
-ca-certificates-bundle-20241010-r0 license:
+ca-certificates-bundle-20241121-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -237,16 +237,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r8 description:
+ssl_client-1.37.0-r9 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r8 webpage:
+ssl_client-1.37.0-r9 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r8 installed size:
+ssl_client-1.37.0-r9 installed size:
 14 KiB
 
-ssl_client-1.37.0-r8 license:
+ssl_client-1.37.0-r9 license:
 GPL-2.0-only
 
 ```
