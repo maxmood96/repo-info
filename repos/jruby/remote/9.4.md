@@ -91,6 +91,7 @@ CMD ["irb"]
 		Size: 20.3 MB (20256519 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c5b976e3f54b1ccb59126bbebdd9dddd00f4330598a66b99a3af092c2327bcf6`  
+		Last Modified: Thu, 24 Oct 2024 00:56:50 GMT  
 		Size: 41.9 MB (41884825 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:18cd7d015707d2f742c801bb7950e6cf59ad8d36e72e6a842ad68b6588973533`  
@@ -138,7 +139,6 @@ $ docker pull jruby@sha256:7643c469bff088813db471a5cd20a0ec7c8d24566362a2444e5d1
 
 -	Layers:
 	-	`sha256:acd483177ebc6394c31637065af03ff450b8b9c7cc1bde50b91767b8975307c9`  
-		Last Modified: Mon, 04 Nov 2024 23:06:57 GMT  
 		Size: 5.1 MB (5081783 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ba7a590d4dcbdac8461071e1141052e2674b27ec6e2b8ae414220883e600e638`  
@@ -218,7 +218,6 @@ CMD ["irb"]
 
 -	Layers:
 	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
-		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7944fa14982850a5d6fef396e75bb75cff1a66cd0eb74db10ed75ba31d11c024`  
@@ -250,6 +249,7 @@ CMD ["irb"]
 		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:94968b5317845c581cebbc9d3815b90173b48b01207c2321ed3ba56a93c0d437`  
+		Last Modified: Mon, 04 Nov 2024 23:36:56 GMT  
 		Size: 1.3 MB (1272089 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7cc6ddc573a32906e75f3aded4615617294fd8be5620c3f9b06a9048dd9e8f74`  
@@ -273,10 +273,8 @@ $ docker pull jruby@sha256:854b83379733e2b6322aab400638632de7a2fe22973d53a3af29e
 
 -	Layers:
 	-	`sha256:08cfea373e6704be80ca522b61bbe6bc0fde8e474f428922101bf46a5becb619`  
-		Last Modified: Mon, 04 Nov 2024 23:36:56 GMT  
 		Size: 5.1 MB (5054738 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e1e0851c8e586decc6b3842cafb2750802c779f6496ebe274d13599f72a3e5c3`  
-		Last Modified: Mon, 04 Nov 2024 23:36:55 GMT  
 		Size: 21.4 KB (21397 bytes)  
 		MIME: application/vnd.in-toto+json
