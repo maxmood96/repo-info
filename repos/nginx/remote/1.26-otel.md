@@ -87,6 +87,7 @@ RUN set -x;     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;  
 		Size: 395.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b90f21a19b0aec6d5bdbe4eacd165d70950211bc6eaba32a91e6cba9b56d920`  
+		Last Modified: Tue, 24 Dec 2024 22:18:05 GMT  
 		Size: 1.2 KB (1210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a7f0ecbff4459961a9504dea504fb31e972af4e851bbdf4f19d3e9329756ec2f`  
@@ -186,6 +187,7 @@ RUN set -x;     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;  
 		Size: 38.5 MB (38513064 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ef3dd9169685fa276a8a62c4c8a1b21c7fb6c378cbc10e0b6af51f3f367aa9d2`  
+		Last Modified: Tue, 24 Dec 2024 23:03:36 GMT  
 		Size: 629.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ca859205549e87184aef14b13fe324de3b9bcb4fa86ab89c95ac55f05ae10709`  
@@ -197,7 +199,6 @@ RUN set -x;     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;  
 		Size: 394.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:906d56a624a1e7826c366d1e07e344dad3f2c4dcf05c74cfb33b0e1c6400f89c`  
-		Last Modified: Tue, 24 Dec 2024 23:03:37 GMT  
 		Size: 1.2 KB (1210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:73b98a4d439f6c0bddf32694826d25b895f97cc636d808db2225eb4d37fe938e`  
@@ -205,7 +206,6 @@ RUN set -x;     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;  
 		Size: 1.4 KB (1400 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9646aae53509daf6da63bda41410a3f25d003517f6631b04e54515eba02677f5`  
-		Last Modified: Wed, 25 Dec 2024 07:49:26 GMT  
 		Size: 2.8 MB (2845168 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -225,6 +225,7 @@ $ docker pull nginx@sha256:813efaa2b1e26190295ae4e94be4015d03bd0c95d6576f7a59ecd
 
 -	Layers:
 	-	`sha256:afa4040d851b0d33888887a901c9b7149471604828f320bad1cf0b6f6e20baee`  
+		Last Modified: Wed, 25 Dec 2024 07:49:26 GMT  
 		Size: 3.0 MB (2964813 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1a41b7e80c253e0840e5e18228a071d2dbde0007bc979f962564369ed758d1d3`  

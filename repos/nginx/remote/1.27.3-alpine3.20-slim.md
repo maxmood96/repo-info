@@ -81,6 +81,7 @@ CMD ["nginx" "-g" "daemon off;"]
 		Size: 4.1 MB (4056137 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:af9c0e53c5a430c700d068066f35cb313945c9917bee94108bae13a933f6b6b4`  
+		Last Modified: Tue, 26 Nov 2024 20:23:14 GMT  
 		Size: 628.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b2eb2b8af93a0c4d2b5f5a70ed620869b406658462aba70b03f12f442aa40cc1`  
@@ -198,7 +199,6 @@ CMD ["nginx" "-g" "daemon off;"]
 		Size: 1.2 KB (1211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:98c94687a5de3597655766fa52e0ee7f048fcb1aa251c1e1c87ff12c4d242bab`  
-		Last Modified: Tue, 26 Nov 2024 21:08:09 GMT  
 		Size: 1.4 KB (1399 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -276,7 +276,6 @@ CMD ["nginx" "-g" "daemon off;"]
 		Size: 3.1 MB (3095487 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:da25195ddb822acf37d57ea78d0dadbc196377386efcfda0173becc62e589e59`  
-		Last Modified: Tue, 26 Nov 2024 20:28:57 GMT  
 		Size: 3.5 MB (3541707 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:88c4498e22eb2059cadfb46a32a087788a647690496d30bd8a31924212630025`  
@@ -320,7 +319,6 @@ $ docker pull nginx@sha256:783275f1eb7319a1b3d24cfc2ff3ef4342b9ac69c525b6dc4e5a6
 		Size: 465.2 KB (465232 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6dbd3491ba12174aee87f26c440ceda08ebd519b8bb465b54035eaa4f63ca3d3`  
-		Last Modified: Tue, 26 Nov 2024 20:28:57 GMT  
 		Size: 30.9 KB (30895 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -374,9 +372,11 @@ CMD ["nginx" "-g" "daemon off;"]
 
 -	Layers:
 	-	`sha256:9986a736f7d3d24bb01b0a560fa0f19c4b57e56c646e1f998941529d28710e6b`  
+		Last Modified: Mon, 09 Sep 2024 07:03:59 GMT  
 		Size: 4.1 MB (4087726 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1cb15b755ebd8bc952bebaeaa06146588eb251b581cb9f1ee854686de2130a2d`  
+		Last Modified: Tue, 26 Nov 2024 20:23:54 GMT  
 		Size: 4.5 MB (4503872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3f4e4c7e275af8dd7fedd5c2194d287eb609435973ef29f1c4f5526d105a67e1`  
@@ -384,6 +384,7 @@ CMD ["nginx" "-g" "daemon off;"]
 		Size: 629.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f25994e8065c49a45802ba5b3eee92fd5796b0d06f716818685582eba26157b`  
+		Last Modified: Tue, 26 Nov 2024 20:23:54 GMT  
 		Size: 955.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d54cacdeff19a98ab91fdabf2f43ea9ac82cfe558bcf1f681acfcfed41a34337`  
@@ -477,11 +478,9 @@ CMD ["nginx" "-g" "daemon off;"]
 		Size: 3.5 MB (3469219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:36c77a5adda0ac1cb797a3981cf47fba63e38be9937eddc33264d4700b7f85e4`  
-		Last Modified: Tue, 26 Nov 2024 20:24:48 GMT  
 		Size: 4.1 MB (4096548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9acde86dcc25b5c43c89d099cb22f9df9f48558ff7465baf1aad50692974e2a8`  
-		Last Modified: Tue, 26 Nov 2024 20:24:47 GMT  
 		Size: 626.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f947748ab311c2b35e25d224ddaf1d4dcfd86343a1f5ae6a7ce943459db5e144`  
@@ -497,7 +496,6 @@ CMD ["nginx" "-g" "daemon off;"]
 		Size: 1.2 KB (1209 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b4bbb83b5c8500eea8db517c1b6c46d08c92445d1397130506b0685e72e45ac`  
-		Last Modified: Tue, 26 Nov 2024 20:24:48 GMT  
 		Size: 1.4 KB (1396 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -688,10 +686,10 @@ CMD ["nginx" "-g" "daemon off;"]
 		Size: 627.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9189ab81c4802b0314eb2fca96e84afc6ab8e9df82c9e3e0fcf5b10ef260a296`  
+		Last Modified: Tue, 03 Dec 2024 02:07:24 GMT  
 		Size: 957.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:212efe735a1f62deb7f2b4de11c98460ddfc01ae6d00e4afedb5ebb959267fce`  
-		Last Modified: Tue, 03 Dec 2024 02:07:24 GMT  
 		Size: 406.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:360f78832f82dafb51ce155aa772c00f1e0d35907a2354fa051e390b41a2cd5c`  
