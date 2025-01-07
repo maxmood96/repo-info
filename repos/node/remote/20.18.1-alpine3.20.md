@@ -214,6 +214,7 @@ CMD ["node"]
 		Size: 1.4 MB (1386267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e65278c30016c09abe69f2389e96c83b6956a73d5040d14979175d7a7561a1c0`  
+		Last Modified: Wed, 20 Nov 2024 21:17:16 GMT  
 		Size: 446.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -237,7 +238,6 @@ $ docker pull node@sha256:be9c4b3377339808faa2679edce5fe9d9a560649c8d22ec99a0e1f
 		Size: 367.8 KB (367784 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:71f08bec7764ce54b9672d7b7c5e443e8efca27189b257d1f36ee780d4d64f97`  
-		Last Modified: Wed, 20 Nov 2024 21:17:17 GMT  
 		Size: 24.8 KB (24842 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -357,6 +357,7 @@ CMD ["node"]
 		Size: 3.6 MB (3572459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:52b0d62920577c80ebab0a254c41f554797c7f6e0919c6dbbb9c2b55ccfebc01`  
+		Last Modified: Wed, 20 Nov 2024 19:59:19 GMT  
 		Size: 45.2 MB (45246606 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d0445291635499b5b94d4aef510a8de03f727c8f976f8ace04e210c44e61f1b1`  
@@ -384,6 +385,7 @@ $ docker pull node@sha256:22705232f95b0fb128dcfa6f2433e0919159e6125b63d66be56cfd
 
 -	Layers:
 	-	`sha256:e1b8aa004f96b861458a093f33900e81cc24c22823660fbdaf6831a67cd049bc`  
+		Last Modified: Wed, 20 Nov 2024 19:59:17 GMT  
 		Size: 365.8 KB (365820 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9d29528fb3a92c9283e0a3bc19bb2413afa2532f9409b4b0c91fd44cdb38bd0b`  
@@ -435,11 +437,9 @@ CMD ["node"]
 		Size: 43.6 MB (43619586 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8e0a4b8ef2420e7953837713d1f2b8522379071de0d48811f3368da3dc1bde87`  
-		Last Modified: Wed, 20 Nov 2024 20:26:42 GMT  
 		Size: 1.4 MB (1386266 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:597093517cd7d51811fdd18889e3e79ff7e802fa7e65dfc0860eaf497174e829`  
-		Last Modified: Wed, 20 Nov 2024 20:26:42 GMT  
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
