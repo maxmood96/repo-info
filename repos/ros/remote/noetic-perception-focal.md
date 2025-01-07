@@ -73,6 +73,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-
 
 -	Layers:
 	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:627070c22110350c23cc50089a841b8c4257eb28ce66dea53acf5039c3230e34`  
@@ -224,7 +225,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-
 		Size: 157.5 MB (157517036 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c61b02ccda3db25327a374133aa1fb86419164045f707000d1b8c7f6e896e05`  
-		Last Modified: Wed, 16 Oct 2024 02:32:39 GMT  
 		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b41b450c86af2668fbfeff608edb2127c5008dce25e7960e258c77b4050f665b`  
@@ -332,6 +332,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:99e7692d171772b08f5a9d0dc4a7b1ae51b870e77829dd8e7c0a62b1f9817239`  
+		Last Modified: Wed, 16 Oct 2024 04:13:05 GMT  
 		Size: 1.2 MB (1198705 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5f9119823a2bf386bf829a11e39290d3f3441a7210eb39b4a7342f8481643ac`  
@@ -366,7 +367,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-
 		Size: 897.3 KB (897322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1db189cc6360c266d7a1ffd1e118ed31d7aa4d94fbf89e2b9f61d27b2d708de5`  
-		Last Modified: Wed, 16 Oct 2024 07:02:30 GMT  
 		Size: 534.1 MB (534054793 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -390,6 +390,5 @@ $ docker pull ros@sha256:2089ccdb5ec87560873e2f9d8e237f15e4cc8864ee9712ba7644899
 		Size: 51.6 MB (51639952 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8cba67582c70ecd2b1eb3c0bc40ac7048edea9bc21f872b199feedd5079197cb`  
-		Last Modified: Wed, 16 Oct 2024 07:02:18 GMT  
 		Size: 9.5 KB (9458 bytes)  
 		MIME: application/vnd.in-toto+json

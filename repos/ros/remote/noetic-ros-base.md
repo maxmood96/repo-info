@@ -71,6 +71,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-
 
 -	Layers:
 	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:627070c22110350c23cc50089a841b8c4257eb28ce66dea53acf5039c3230e34`  
@@ -126,6 +127,7 @@ $ docker pull ros@sha256:7534e1102db6fa8364771006961a05c05197aef2de7c978b00e7a2b
 
 -	Layers:
 	-	`sha256:c9912d0d53a7c301dc7275a2f952e6f82b44921b0248bdfc4d4cd4c958bd7126`  
+		Last Modified: Wed, 16 Oct 2024 16:52:10 GMT  
 		Size: 27.6 MB (27594813 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7118bcec179b41f121295fec5f259cde05401067095f8b0f6c22535897169636`  
@@ -215,7 +217,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-
 		Size: 157.5 MB (157517036 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c61b02ccda3db25327a374133aa1fb86419164045f707000d1b8c7f6e896e05`  
-		Last Modified: Wed, 16 Oct 2024 02:32:39 GMT  
 		Size: 195.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b41b450c86af2668fbfeff608edb2127c5008dce25e7960e258c77b4050f665b`  
@@ -251,7 +252,6 @@ $ docker pull ros@sha256:9bc66574adabc536cff0ca51f33d6a859efc2166256401492dbe4d2
 		Size: 27.4 MB (27358168 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5ed656d35de762e9baed95088a4d31b34a03cdc9ad04dccbd81dc4ea4b1763cc`  
-		Last Modified: Wed, 16 Oct 2024 03:18:50 GMT  
 		Size: 13.8 KB (13784 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -317,6 +317,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-noetic-
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:99e7692d171772b08f5a9d0dc4a7b1ae51b870e77829dd8e7c0a62b1f9817239`  
+		Last Modified: Wed, 16 Oct 2024 04:13:05 GMT  
 		Size: 1.2 MB (1198705 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5f9119823a2bf386bf829a11e39290d3f3441a7210eb39b4a7342f8481643ac`  
@@ -371,6 +372,5 @@ $ docker pull ros@sha256:d7f07c89fc0129e2bc9f71244b1268d8bb57d4dd4bb75c39e92aff6
 		Size: 27.5 MB (27545099 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:71e2265e87cc5692dd2c4402c7bbff074b3cf227f920f9cc95d923bbccec1eb7`  
-		Last Modified: Wed, 16 Oct 2024 06:04:26 GMT  
 		Size: 13.8 KB (13812 bytes)  
 		MIME: application/vnd.in-toto+json
