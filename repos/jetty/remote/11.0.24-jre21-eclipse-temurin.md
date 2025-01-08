@@ -87,7 +87,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 -	Layers:
 	-	`sha256:de44b265507ae44b212defcb50694d666f136b35c1090d9709068bc861bb2d64`  
-		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
+		Last Modified: Wed, 08 Jan 2025 01:47:07 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b2aca828e4248fce10f3d3612c8801ec98c9a90f3ac01dbcb1adecb3ac3193b`  
@@ -115,7 +115,6 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bd99489c6b9762c3d45a9b65fb558fcfa278d11a55c613b48d21c37d55cfbfaa`  
-		Last Modified: Tue, 03 Dec 2024 03:17:58 GMT  
 		Size: 1.6 KB (1634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -135,7 +134,7 @@ $ docker pull jetty@sha256:67d284ddd892b16c5a1e6e79b058cf572b3add69d9c4c46f9955d
 
 -	Layers:
 	-	`sha256:a44b7b3aa4fd539d6f31aae5bbdb847af8fd15fe27878a008519ffa025dbf38a`  
-		Last Modified: Tue, 07 Jan 2025 23:45:27 GMT  
+		Last Modified: Tue, 03 Dec 2024 03:17:58 GMT  
 		Size: 3.2 MB (3235390 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2b5cff8e4e94a2d5921b2727bc5838994ca964026dfd5c1684c403573f6c28f4`  
@@ -219,7 +218,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 -	Layers:
 	-	`sha256:8bb55f0677778c3027fcc4253dc452bc9c22de989a696391e739fb1cdbbdb4c2`  
-		Last Modified: Wed, 08 Jan 2025 00:53:35 GMT  
+		Last Modified: Wed, 08 Jan 2025 03:22:49 GMT  
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:636d6d39497cde5edbefcc48f9d73d53c8b5408b69b8cc70ceb265af74eba9e2`  
@@ -231,7 +230,6 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 52.0 MB (52035456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:efb313e1fd0513a62a67780f19c8e4cb294b660af94a52fbeb0302ab0b93e143`  
-		Last Modified: Wed, 08 Jan 2025 00:37:34 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a80ffa69e5d576654e2474885f7a5bb66318dc08f1edc611817b9ad0763a6d8f`  

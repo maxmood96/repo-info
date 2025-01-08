@@ -87,7 +87,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 -	Layers:
 	-	`sha256:de44b265507ae44b212defcb50694d666f136b35c1090d9709068bc861bb2d64`  
-		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
+		Last Modified: Wed, 08 Jan 2025 01:47:07 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b2aca828e4248fce10f3d3612c8801ec98c9a90f3ac01dbcb1adecb3ac3193b`  
@@ -139,6 +139,7 @@ $ docker pull jetty@sha256:a26d573543c1266fc630d0499ae055c6db7cf2885703670452014
 		Size: 3.2 MB (3221207 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2366852a2112131a772ae4413f165edc0c09346702238a9039703e992baeb034`  
+		Last Modified: Tue, 03 Dec 2024 03:17:26 GMT  
 		Size: 21.5 KB (21547 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -218,7 +219,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 -	Layers:
 	-	`sha256:8bb55f0677778c3027fcc4253dc452bc9c22de989a696391e739fb1cdbbdb4c2`  
-		Last Modified: Wed, 08 Jan 2025 00:53:35 GMT  
+		Last Modified: Wed, 08 Jan 2025 03:22:49 GMT  
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:636d6d39497cde5edbefcc48f9d73d53c8b5408b69b8cc70ceb265af74eba9e2`  
@@ -230,7 +231,6 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 52.0 MB (52035456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:efb313e1fd0513a62a67780f19c8e4cb294b660af94a52fbeb0302ab0b93e143`  
-		Last Modified: Wed, 08 Jan 2025 00:37:34 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a80ffa69e5d576654e2474885f7a5bb66318dc08f1edc611817b9ad0763a6d8f`  
@@ -266,7 +266,6 @@ $ docker pull jetty@sha256:27354f0ab7d193f69c14c04024e79bb6198110b5d0288c0acd917
 
 -	Layers:
 	-	`sha256:af3223f18c4d26cb819fe099dbd6fc67c87b64a3a407d4c9662f14777aeffdb2`  
-		Last Modified: Tue, 03 Dec 2024 12:46:48 GMT  
 		Size: 3.2 MB (3221701 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3a7706e501ba2ace0cb26752de616a947fbaa8402f2845036e2665823c216de6`  
