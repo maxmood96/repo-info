@@ -73,11 +73,9 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Size: 344.5 KB (344495 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2806a68fc42aa330bf56cb205269fa5babf79accb9b1386be6a9e0fb93119cbb`  
-		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:22666c5dabea757b86076cd5fe26537d5bebbe49a7a79cf89c5ee12643efa9b8`  
-		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:413691bf0e8f67c1a40025543e4c2d35b542644368a6478293fbed434ecb5d9f`  
@@ -89,7 +87,6 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3ef2efc888bd6324dfb7b051550d7efe5480bd2b53a9c5da68fc5c5a86bd7760`  
-		Last Modified: Tue, 24 Dec 2024 21:33:11 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:46e018d4d50ac765f64fd6c45823dff2ba7c53d05bdf53def4650edd17021382`  
@@ -97,13 +94,15 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a87787eeb120e7bcc6042c679f7f51cc3c1f290e226d2cae2942f93826f74e97`  
+		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
 		Size: 19.6 MB (19637964 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:884da3d04c115b4a1215815cf66e0d0be9480171f497ef11dc2b9abab5d6fa52`  
+		Last Modified: Tue, 24 Dec 2024 21:33:09 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c38c6d76f55c43dcabade54de45a3b2ac5397beea2b685d25cec730cba2a53c6`  
-		Last Modified: Tue, 24 Dec 2024 21:33:09 GMT  
+		Last Modified: Wed, 08 Jan 2025 07:30:26 GMT  
 		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f7937e1c18b4dbdd128c94ee1e67dbf60e81fb28a163156f31c1e430c2bd2031`  
