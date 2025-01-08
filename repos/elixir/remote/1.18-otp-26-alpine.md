@@ -129,7 +129,6 @@ CMD ["iex"]
 		Size: 3.1 MB (3095487 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f1e1dbbb43ad09dab1a51b7ba12d22b16edfdb49621b19425b45e1f153066c88`  
-		Last Modified: Tue, 12 Nov 2024 16:37:02 GMT  
 		Size: 45.5 MB (45471939 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:75dd95cae5dbd36f1f7d1ca96618288e6fb56a60c84310ce13bbef41455294ad`  
@@ -271,7 +270,7 @@ CMD ["iex"]
 		Size: 3.5 MB (3463189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26d0c6bd5db92567147ed28e32e4742e2456cfce40c563ed7e9e18ba697a563a`  
-		Last Modified: Wed, 08 Jan 2025 05:32:01 GMT  
+		Last Modified: Tue, 07 Jan 2025 18:39:48 GMT  
 		Size: 44.6 MB (44635154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:711579d21b3be367964d2443a733b7a4d02a0af059368acb727827c35f2e0659`  
@@ -366,9 +365,11 @@ $ docker pull elixir@sha256:ba62e2033c407621dce9600c68887d2692cabb6d3f8f7c45705b
 
 -	Layers:
 	-	`sha256:76d7b94d1dd83877386acf531ec81e1ce630a93e765f4822babc185a8fe957b8`  
+		Last Modified: Wed, 08 Jan 2025 06:36:29 GMT  
 		Size: 268.2 KB (268218 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f5e01526a74c72a77b61a27fe92365cf4fda4b044fa0957670a8a7aefbbb9d68`  
+		Last Modified: Tue, 07 Jan 2025 20:30:51 GMT  
 		Size: 9.6 KB (9565 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -407,7 +408,6 @@ CMD ["iex"]
 
 -	Layers:
 	-	`sha256:2ed16bdf68dac880df118dfa3d21d44652bc18382729359f97297fa5998086cd`  
-		Last Modified: Tue, 07 Jan 2025 02:32:49 GMT  
 		Size: 3.5 MB (3459179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:04a0b9902208077a52e20cb8a0a72a2a745a2c25493939a711c101eba54387a1`  
@@ -435,7 +435,6 @@ $ docker pull elixir@sha256:0fdad9e07b8cf8fa08008b5bb73c7dde645d441d17351277579b
 
 -	Layers:
 	-	`sha256:84bcf334b4dc9af2e4fb695e7d265de8a6c7c687b16676ef96640f0ab4f0aec3`  
-		Last Modified: Tue, 07 Jan 2025 21:18:03 GMT  
 		Size: 268.2 KB (268190 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1cb335c5ba29b2fc591b7947e3b44ea9182f47ebccdc6b43f6cb62600cacf3d3`  
