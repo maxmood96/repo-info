@@ -193,6 +193,7 @@ RUN BusyBox 1.37.0 (musl), Alpine 3.21.0
 
 -	Layers:
 	-	`sha256:23836afb919973e470ce992415099f3798d3c9690b7b2c90a77df9071b6c5414`  
+		Last Modified: Wed, 11 Dec 2024 00:27:27 GMT  
 		Size: 856.8 KB (856841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -298,6 +299,7 @@ $ docker pull busybox@sha256:e93cb3596a2b014a480d8e266ff1781d034b51e221e3f74081e
 
 -	Layers:
 	-	`sha256:d3dd99eb15d517b30c12b9b8f0692caaea70bf91ad242045367c88f99088cbac`  
+		Last Modified: Wed, 11 Dec 2024 00:28:57 GMT  
 		Size: 2.0 KB (2017 bytes)  
 		MIME: application/vnd.in-toto+json
 

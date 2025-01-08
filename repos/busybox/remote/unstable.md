@@ -44,7 +44,7 @@ RUN BusyBox 1.37.0 (glibc), Debian 12
 
 -	Layers:
 	-	`sha256:9c0abc9c5bd3a7854141800ba1f4a227baa88b11b49d8207eadc483c3f2496de`  
-		Last Modified: Tue, 07 Jan 2025 23:45:38 GMT  
+		Last Modified: Wed, 11 Dec 2024 00:27:27 GMT  
 		Size: 2.2 MB (2155907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -368,6 +368,7 @@ $ docker pull busybox@sha256:e93cb3596a2b014a480d8e266ff1781d034b51e221e3f74081e
 
 -	Layers:
 	-	`sha256:d3dd99eb15d517b30c12b9b8f0692caaea70bf91ad242045367c88f99088cbac`  
+		Last Modified: Wed, 11 Dec 2024 00:28:57 GMT  
 		Size: 2.0 KB (2017 bytes)  
 		MIME: application/vnd.in-toto+json
 
