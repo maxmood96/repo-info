@@ -75,10 +75,11 @@ CMD ["node" "main.js"]
 		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd1c43950fbfc7c30161da4beceb8cdae3cde1f5db431332e5c33e2002c32084`  
-		Last Modified: Wed, 08 Jan 2025 07:03:35 GMT  
+		Last Modified: Tue, 24 Dec 2024 22:30:06 GMT  
 		Size: 3.3 KB (3310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6726259f0c6bba0dee5b30a5bfdb64477dafcce298c4c324d39bc6c8674fdb45`  
+		Last Modified: Wed, 08 Jan 2025 10:51:28 GMT  
 		Size: 40.8 MB (40755124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a107cb3707f114bb0f80418351d83c4277239b64ed9f9ed0f4054a5df9f23d5`  
@@ -90,23 +91,20 @@ CMD ["node" "main.js"]
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:974fcd5b79cf16de78f9d9412dd9310edba823c4a89deb7f1983f637ef5ebc44`  
-		Last Modified: Tue, 24 Dec 2024 23:22:58 GMT  
 		Size: 45.1 MB (45131066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:70fef5a11b68cf1aa42620490b095cfdbb2842e3e1e5292e3461a0a2482f6baf`  
-		Last Modified: Tue, 24 Dec 2024 23:22:58 GMT  
 		Size: 1.2 KB (1171 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6415a6752b507df325fd0496e2dcaa0431765c9a0a4a55530810edc09ab08bbd`  
-		Last Modified: Tue, 24 Dec 2024 23:23:02 GMT  
 		Size: 320.3 MB (320256922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -126,6 +124,5 @@ $ docker pull rocket.chat@sha256:a752b4d6da0aa41d2bbdda0d88fe2838a7037db835f6ef7
 
 -	Layers:
 	-	`sha256:830cc34f9ab0b8a923882fbcabd8521ebd9c8cf88652822fa00436aa49a353a2`  
-		Last Modified: Tue, 24 Dec 2024 23:22:58 GMT  
 		Size: 23.7 KB (23709 bytes)  
 		MIME: application/vnd.in-toto+json
