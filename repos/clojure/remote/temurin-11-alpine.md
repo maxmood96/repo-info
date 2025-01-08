@@ -61,7 +61,7 @@ CMD ["clj"]
 
 -	Layers:
 	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Wed, 08 Jan 2025 14:03:53 GMT  
+		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
 		Size: 3.6 MB (3613999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5e43fef20d7b051aba53ee4596ecca1cb29fb1c018c2e74fc2e6a07c09d8d90f`  
@@ -69,7 +69,7 @@ CMD ["clj"]
 		Size: 16.0 MB (16005430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5e48c0d9a1bd107175bae19f8e4f432e07dfef6120eb88ead216753f4cc20dc`  
-		Last Modified: Wed, 08 Jan 2025 13:03:35 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:31:15 GMT  
 		Size: 140.8 MB (140775085 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:10df55c6432c9bd7d01b17806d969dd683edcec13872b46e9ea00f40da22bc3e`  
@@ -81,13 +81,15 @@ CMD ["clj"]
 		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Wed, 08 Jan 2025 13:42:46 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fa22d6e795d66c2543e88890b8e4afe11799af794a690e8354067f342eece2c`  
+		Last Modified: Tue, 07 Jan 2025 04:22:53 GMT  
 		Size: 25.0 MB (25033693 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39edf6eb3f39790f4c7a3102960c1a0ab1ee2a6431c04e000ce19a62a8cef4cc`  
+		Last Modified: Tue, 07 Jan 2025 04:22:52 GMT  
 		Size: 619.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -107,7 +109,7 @@ $ docker pull clojure@sha256:f4620409f3ccdc7b57c88bf779b3172e5e1c7b6239964b75487
 
 -	Layers:
 	-	`sha256:0d0d5f0c0a5d4d3a4f71bfc2816bfc66de0989b3f75b555c71337889c446ea10`  
-		Last Modified: Wed, 08 Jan 2025 13:28:46 GMT  
+		Last Modified: Tue, 07 Jan 2025 04:22:53 GMT  
 		Size: 1.1 MB (1137764 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:60d6751ea6c47f7009519823a2f83651c64aa16d97050f7a18c60a2bb26ffbb2`  
