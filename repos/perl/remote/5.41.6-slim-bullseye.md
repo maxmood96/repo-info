@@ -54,6 +54,7 @@ CMD ["perl5.41.6" "-de0"]
 		Size: 25.9 MB (25933276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:260d57cf2e2d98e801f3d427343d798a6f5dbf36f5f18088b680eccf825db452`  
+		Last Modified: Tue, 24 Dec 2024 22:40:57 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -112,7 +113,6 @@ CMD ["perl5.41.6" "-de0"]
 		Size: 25.5 MB (25533937 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b2c244e4af9eb53a32a1c90291e2d517a4dae56a499398fa04707e112956c732`  
-		Last Modified: Wed, 25 Dec 2024 04:31:10 GMT  
 		Size: 135.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b7986cb54463b0b5ee54168e756515f0e6eb81ba67dc606384a744b7221280ce`  
@@ -140,7 +140,6 @@ $ docker pull perl@sha256:f82988240d2994e3b56d8002a76fbf127684e73bfdf8f89e21b653
 
 -	Layers:
 	-	`sha256:5b101eb7850c1b4cb16213f2a138df0b3af45339ee5023247199aa483f8a3da9`  
-		Last Modified: Wed, 25 Dec 2024 05:43:55 GMT  
 		Size: 4.0 MB (3972443 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e741d5e14725c34e171e6971c96fb516060b7356032581cf9f51c994ea855458`  
@@ -207,10 +206,11 @@ $ docker pull perl@sha256:5835449636e6067bf21622b68a190788c3612c30fb296c3abc76a3
 
 -	Layers:
 	-	`sha256:118f94beb72cfe985b74fb4a514b80364ad9b8c685f27bb6f7255598fcea8b9d`  
+		Last Modified: Wed, 08 Jan 2025 05:54:17 GMT  
 		Size: 4.0 MB (3972849 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0271a36d3c6ffb7fa78d3c05f9c4c6955b1a8a179cc27cac9dc402c335b15d82`  
-		Last Modified: Wed, 08 Jan 2025 03:55:02 GMT  
+		Last Modified: Wed, 25 Dec 2024 03:48:36 GMT  
 		Size: 18.4 KB (18357 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -241,7 +241,6 @@ CMD ["perl5.41.6" "-de0"]
 
 -	Layers:
 	-	`sha256:eabd0eca84f0fa21c2f70f76b8b8cf28e46ca9b60ad0046239cb7712afdf935c`  
-		Last Modified: Tue, 24 Dec 2024 21:32:27 GMT  
 		Size: 31.2 MB (31178945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:99ee9715aaf289c347d34ac4155c1870d8bfaca47fbb625c570ff218cbf15e27`  
