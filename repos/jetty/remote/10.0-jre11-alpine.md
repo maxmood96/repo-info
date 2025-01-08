@@ -77,7 +77,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 -	Layers:
 	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:03:30 GMT  
 		Size: 3.6 MB (3613999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c28eb1281fdad4dc13cae3798c1407468c069c31b287f6a69961372aa640b5e4`  
@@ -89,11 +89,10 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 43.6 MB (43577968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a4233d01232ab4d34c864cd6b3c052e216dd74eb06d21e79ce4dda95a8fe2cfd`  
-		Last Modified: Tue, 07 Jan 2025 03:31:16 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b8499c64e58312731bfefb031a2ad0656f896641e2c36c6ec0ae1a46a6bc65c`  
-		Last Modified: Tue, 07 Jan 2025 03:31:16 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:30:36 GMT  
 		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:83cc14ecaddfb5f6aca946f92c88d91352e1f4142d8bee15ce67fc117e2c433a`  
@@ -101,11 +100,10 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 12.1 MB (12143066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8749bd735a88403c175305377cd258108621a1c9d61fba71af11ca0de2257cc`  
-		Last Modified: Tue, 07 Jan 2025 04:18:48 GMT  
 		Size: 1.6 KB (1635 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -125,7 +123,6 @@ $ docker pull jetty@sha256:a2aca03ef4ce8af5c87e9021c8a628161fc1fe122fbb2ecfecbe8
 
 -	Layers:
 	-	`sha256:a1eec28eea211536ae0d79192ed295b867bd0740a1d2eadd2bc24167b2e15e34`  
-		Last Modified: Tue, 07 Jan 2025 04:18:48 GMT  
 		Size: 1.0 MB (1008207 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a8575e6e6a91e404bd598df46ceb9c4af987ec220f6cd191b6d720234c91d62d`  

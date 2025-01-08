@@ -82,11 +82,10 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 40.5 MB (40496003 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e49d657af1c6971efe29ff3262cd58beaf9676072f4df4df2c6afdacd36c2842`  
-		Last Modified: Thu, 02 Jan 2025 19:29:12 GMT  
 		Size: 1.6 KB (1632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -110,7 +109,6 @@ $ docker pull jetty@sha256:d448dff99700201c1cc46e47857350adc5e4d9f317678e1c4df07
 		Size: 6.0 MB (6023232 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4b93c4946459f30ff5166c6d8a9b2c397d097d55972fd0e795380fe1a2bdba46`  
-		Last Modified: Thu, 02 Jan 2025 19:29:12 GMT  
 		Size: 18.4 KB (18368 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -173,18 +171,17 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 -	Layers:
 	-	`sha256:ac443ee34758d1600a5b00a6cdb0786b24d6b89a9b4fb2518f0fdcc1f7353b57`  
+		Last Modified: Sat, 16 Nov 2024 00:03:57 GMT  
 		Size: 64.6 MB (64581887 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c520393dae5bcb364385e9b1b7b5f017fd81834b93db884937ea2f00d247ab7c`  
-		Last Modified: Sat, 21 Dec 2024 01:49:30 GMT  
 		Size: 162.8 MB (162839630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:74bfeb03fd5dc10893e87a46fbef9666dabedb5e0b781fe95b35932c6e37cc24`  
-		Last Modified: Thu, 02 Jan 2025 19:56:59 GMT  
 		Size: 40.6 MB (40607553 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3c392e011ebca0c691d5daed5271db5b78224097180a437ee3d7d5cdccb25ad0`  
