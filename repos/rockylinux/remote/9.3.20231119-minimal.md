@@ -85,6 +85,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:f83849d764d8c993e814c46239f4a88e669e32a40a30e99dacee189f5472be0a`  
+		Last Modified: Thu, 30 May 2024 02:35:38 GMT  
 		Size: 45.3 MB (45266281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -157,6 +158,7 @@ $ docker pull rockylinux@sha256:95f96f1481b875cc851805c8bcc3d2d08d4d763def6ad464
 		Size: 2.2 MB (2215437 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e526ae2620049a9b3ae6baa850bb3006983673650ec425172ad553312be5e66e`  
+		Last Modified: Tue, 07 Jan 2025 23:59:13 GMT  
 		Size: 5.4 KB (5408 bytes)  
 		MIME: application/vnd.in-toto+json
 

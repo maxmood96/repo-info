@@ -98,7 +98,6 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:f8f3cac9c8888dab353f1a319477f2cbc6c272c4ea474c971ca6f2774914ec3b`  
-		Last Modified: Tue, 05 Dec 2023 02:11:10 GMT  
 		Size: 72.1 MB (72149514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -122,6 +121,7 @@ $ docker pull rockylinux@sha256:5dbfe9dfad144a238d5f3090ebad49873350946bf4d7ac8e
 		Size: 5.1 MB (5082627 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0371311448eeae4b813b65a5c568a370ae94469c16e8ecfde2be8586ef561e64`  
+		Last Modified: Thu, 30 May 2024 02:36:08 GMT  
 		Size: 5.4 KB (5386 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -207,6 +207,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:9fce7f2b19bbb14963a2473ccdb12aa957656e7312f722f2f357baf65efb3744`  
+		Last Modified: Tue, 07 Jan 2025 23:58:59 GMT  
 		Size: 35.5 MB (35491291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -230,7 +231,6 @@ $ docker pull rockylinux@sha256:dd4ea4c62bda83fc005f97034a643b20a00c01c5ee32918f
 		Size: 1.9 MB (1940202 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:25cf362f5530255f2ce41a3d98f8c41a72e290e734e05764b1a8bee984ae1faa`  
-		Last Modified: Thu, 30 May 2024 02:36:32 GMT  
 		Size: 5.4 KB (5434 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -317,7 +317,6 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:f8f3cac9c8888dab353f1a319477f2cbc6c272c4ea474c971ca6f2774914ec3b`  
-		Last Modified: Tue, 05 Dec 2023 02:11:10 GMT  
 		Size: 72.1 MB (72149514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -341,6 +340,7 @@ $ docker pull rockylinux@sha256:5dbfe9dfad144a238d5f3090ebad49873350946bf4d7ac8e
 		Size: 5.1 MB (5082627 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0371311448eeae4b813b65a5c568a370ae94469c16e8ecfde2be8586ef561e64`  
+		Last Modified: Thu, 30 May 2024 02:36:08 GMT  
 		Size: 5.4 KB (5386 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -426,6 +426,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:9fce7f2b19bbb14963a2473ccdb12aa957656e7312f722f2f357baf65efb3744`  
+		Last Modified: Tue, 07 Jan 2025 23:58:59 GMT  
 		Size: 35.5 MB (35491291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -449,7 +450,6 @@ $ docker pull rockylinux@sha256:dd4ea4c62bda83fc005f97034a643b20a00c01c5ee32918f
 		Size: 1.9 MB (1940202 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:25cf362f5530255f2ce41a3d98f8c41a72e290e734e05764b1a8bee984ae1faa`  
-		Last Modified: Thu, 30 May 2024 02:36:32 GMT  
 		Size: 5.4 KB (5434 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -536,7 +536,6 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:f8f3cac9c8888dab353f1a319477f2cbc6c272c4ea474c971ca6f2774914ec3b`  
-		Last Modified: Tue, 05 Dec 2023 02:11:10 GMT  
 		Size: 72.1 MB (72149514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -560,6 +559,7 @@ $ docker pull rockylinux@sha256:5dbfe9dfad144a238d5f3090ebad49873350946bf4d7ac8e
 		Size: 5.1 MB (5082627 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0371311448eeae4b813b65a5c568a370ae94469c16e8ecfde2be8586ef561e64`  
+		Last Modified: Thu, 30 May 2024 02:36:08 GMT  
 		Size: 5.4 KB (5386 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -645,6 +645,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:9fce7f2b19bbb14963a2473ccdb12aa957656e7312f722f2f357baf65efb3744`  
+		Last Modified: Tue, 07 Jan 2025 23:58:59 GMT  
 		Size: 35.5 MB (35491291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -668,7 +669,6 @@ $ docker pull rockylinux@sha256:dd4ea4c62bda83fc005f97034a643b20a00c01c5ee32918f
 		Size: 1.9 MB (1940202 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:25cf362f5530255f2ce41a3d98f8c41a72e290e734e05764b1a8bee984ae1faa`  
-		Last Modified: Thu, 30 May 2024 02:36:32 GMT  
 		Size: 5.4 KB (5434 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -972,6 +972,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:f83849d764d8c993e814c46239f4a88e669e32a40a30e99dacee189f5472be0a`  
+		Last Modified: Thu, 30 May 2024 02:35:38 GMT  
 		Size: 45.3 MB (45266281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1044,6 +1045,7 @@ $ docker pull rockylinux@sha256:95f96f1481b875cc851805c8bcc3d2d08d4d763def6ad464
 		Size: 2.2 MB (2215437 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e526ae2620049a9b3ae6baa850bb3006983673650ec425172ad553312be5e66e`  
+		Last Modified: Tue, 07 Jan 2025 23:59:13 GMT  
 		Size: 5.4 KB (5408 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1396,6 +1398,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:f83849d764d8c993e814c46239f4a88e669e32a40a30e99dacee189f5472be0a`  
+		Last Modified: Thu, 30 May 2024 02:35:38 GMT  
 		Size: 45.3 MB (45266281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1468,6 +1471,7 @@ $ docker pull rockylinux@sha256:95f96f1481b875cc851805c8bcc3d2d08d4d763def6ad464
 		Size: 2.2 MB (2215437 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e526ae2620049a9b3ae6baa850bb3006983673650ec425172ad553312be5e66e`  
+		Last Modified: Tue, 07 Jan 2025 23:59:13 GMT  
 		Size: 5.4 KB (5408 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1820,6 +1824,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:f83849d764d8c993e814c46239f4a88e669e32a40a30e99dacee189f5472be0a`  
+		Last Modified: Thu, 30 May 2024 02:35:38 GMT  
 		Size: 45.3 MB (45266281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1892,6 +1897,7 @@ $ docker pull rockylinux@sha256:95f96f1481b875cc851805c8bcc3d2d08d4d763def6ad464
 		Size: 2.2 MB (2215437 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e526ae2620049a9b3ae6baa850bb3006983673650ec425172ad553312be5e66e`  
+		Last Modified: Tue, 07 Jan 2025 23:59:13 GMT  
 		Size: 5.4 KB (5408 bytes)  
 		MIME: application/vnd.in-toto+json
 
