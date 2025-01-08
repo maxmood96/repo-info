@@ -167,11 +167,10 @@ CMD ["jshell"]
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:249596a5311aaea32b3729eb67190425163f8c00aafe7ca6fb7108acf052ee92`  
-		Last Modified: Tue, 03 Dec 2024 05:53:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 04:32:47 GMT  
 		Size: 22.5 MB (22501772 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6e590ea67ec4e7e29bbe34f2122db36476efb281e204492e9e4e51978be60934`  
-		Last Modified: Tue, 03 Dec 2024 05:53:19 GMT  
 		Size: 163.3 MB (163279478 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -179,6 +178,7 @@ CMD ["jshell"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d6180786758704b6206948dd6907e297795682d8ce4f144770c2f938e116fbad`  
+		Last Modified: Tue, 03 Dec 2024 05:53:13 GMT  
 		Size: 2.3 KB (2284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -260,6 +260,7 @@ CMD ["jshell"]
 		Size: 34.4 MB (34388820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:91bae64c3875457141796290daec799babc2c7d9136ac6443ff21bb984c933ef`  
+		Last Modified: Tue, 03 Dec 2024 04:54:08 GMT  
 		Size: 22.1 MB (22080795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aa2f594ee9993683658a6e3ea5c4be59e31a6c0cc5466ee200a1cfa4966e8e79`  
@@ -447,11 +448,10 @@ CMD ["jshell"]
 		Size: 30.0 MB (30020826 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:949ce62fe931a2114b9aae78b9afb17ad1b7756ec2047a8dfccd1b94912f87d6`  
-		Last Modified: Tue, 03 Dec 2024 04:20:40 GMT  
 		Size: 20.4 MB (20442783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3d6fcfe71ef871ddd1a6e13db5fcf562e5cb82458af60e2753b44f1cfb8d069e`  
-		Last Modified: Tue, 03 Dec 2024 04:20:42 GMT  
+		Last Modified: Wed, 08 Jan 2025 04:35:23 GMT  
 		Size: 154.4 MB (154416835 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -483,7 +483,6 @@ $ docker pull eclipse-temurin@sha256:df51c673ee2cdcf2f24303272691f982f99059d64c6
 		Size: 3.2 MB (3241889 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:060d6b9fbff433b02be97daa38a7ffdff7c9ab1fda039398e3e8003127036d62`  
-		Last Modified: Tue, 03 Dec 2024 04:20:39 GMT  
 		Size: 24.6 KB (24642 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -520,6 +519,7 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:2534953f34d35976fc44cd67bfdd39fdcd9e2eaae57ada0be53d5fb936cd3a0b`  
+		Last Modified: Tue, 10 Sep 2024 17:49:01 GMT  
 		Size: 1.5 GB (1462192413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:90641eccc9d7a78ab99d123ca3884acb8ffc002eb44bc5e68f261f0810d5202b`  
@@ -539,7 +539,6 @@ CMD ["jshell"]
 		Size: 398.3 MB (398346639 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7b0c942856999ceeed8d1358be8b3fc5f9191d00d9abe647e09842d58fbaf75f`  
-		Last Modified: Wed, 11 Dec 2024 20:40:06 GMT  
 		Size: 349.0 KB (349023 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:61701d10e7c949431d246fbf54a7c1445c9571f47144217fa12b450c2dc90177`  
@@ -584,7 +583,6 @@ CMD ["jshell"]
 		Size: 1.7 GB (1720268357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3308b54d35b61854238974280a5b0ecc72a98e2ead17d04f42770a7b35407090`  
-		Last Modified: Tue, 10 Dec 2024 18:45:28 GMT  
 		Size: 293.9 MB (293901821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:46bed75039172f4981744123ce8963d7f6f49afd1baf1107f1c20f7ab6464253`  
@@ -592,6 +590,7 @@ CMD ["jshell"]
 		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:68a8ef93325eeeaa2f0b7cf0ca44346f96262591f710a2e78e0e151b400df7c7`  
+		Last Modified: Wed, 11 Dec 2024 21:48:48 GMT  
 		Size: 1.3 KB (1293 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d7b4e58a844c30d61f952bd95cf4617334ea11413172dee9d08d0ac2ff14678a`  

@@ -173,7 +173,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a80ffa69e5d576654e2474885f7a5bb66318dc08f1edc611817b9ad0763a6d8f`  
-		Last Modified: Tue, 03 Dec 2024 05:52:24 GMT  
+		Last Modified: Wed, 08 Jan 2025 04:34:26 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -197,6 +197,7 @@ $ docker pull eclipse-temurin@sha256:4fc026652c6e5f422e1d5c0218c57b77a7b55eedda4
 		Size: 3.1 MB (3123319 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:38368b3cabcbd81df99259619c9f64f50c9e809b67ff78024efd327d2236e460`  
+		Last Modified: Wed, 08 Jan 2025 05:34:11 GMT  
 		Size: 23.4 KB (23386 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -342,6 +343,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 31.0 MB (30980838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f71802e45f04a2768174040c20bde61c8c2abaf2a16ed53d5c7442cf9dc97ae`  
+		Last Modified: Tue, 03 Dec 2024 06:59:56 GMT  
 		Size: 17.9 MB (17861902 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8e892a79f39130d99271ac6de69a4da8bd98965dfef4a220a36c77c79554a715`  
@@ -353,6 +355,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:77391e25426093f861e8e6be8b2bc18c1b4155323bac2540015a330a4cfcda06`  
+		Last Modified: Tue, 03 Dec 2024 07:09:35 GMT  
 		Size: 2.3 KB (2284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -372,9 +375,11 @@ $ docker pull eclipse-temurin@sha256:9f70a7b2d6bc192386e1b34c3647c464643fba6647c
 
 -	Layers:
 	-	`sha256:d9c07cc00786189cdb1c4a13f7da2151bd6259623d6fb122ae6c2385b876136e`  
+		Last Modified: Tue, 03 Dec 2024 07:09:36 GMT  
 		Size: 3.1 MB (3115095 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dbe4607d60aedc604e7eed03f3cbdae9305e0c4b4f2ae719a0262d1b12ba0064`  
+		Last Modified: Tue, 03 Dec 2024 07:09:35 GMT  
 		Size: 23.3 KB (23300 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -433,6 +438,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 17.6 MB (17613148 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7f5e866b62bafcf23f50c4f6929da5d0f17777a700540327589829f3748e334d`  
+		Last Modified: Tue, 03 Dec 2024 07:32:48 GMT  
 		Size: 49.5 MB (49467155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a1d167057d00a6b0d737c1eeaad9d9d16dc02ed3538095e6ab62e4bbb384495e`  
@@ -499,6 +505,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 
 -	Layers:
 	-	`sha256:2534953f34d35976fc44cd67bfdd39fdcd9e2eaae57ada0be53d5fb936cd3a0b`  
+		Last Modified: Tue, 10 Sep 2024 17:49:01 GMT  
 		Size: 1.5 GB (1462192413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:90641eccc9d7a78ab99d123ca3884acb8ffc002eb44bc5e68f261f0810d5202b`  
@@ -506,10 +513,10 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 		Size: 791.7 MB (791681213 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2344c998e44cbbe25c00477391b425cf43013ed4a5ed66b6a3306fe10f63e050`  
-		Last Modified: Wed, 11 Dec 2024 20:38:47 GMT  
 		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:095eb3928a39d3f2aa9ba196d515799a5bde8c4de6da12c9421ce89f8b89e98b`  
+		Last Modified: Wed, 11 Dec 2024 20:38:47 GMT  
 		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f364d334dbc2db304d04dbe067d61b1ba86941f22544a0866c9e4658e14ea5b6`  
@@ -556,7 +563,6 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 		Size: 1.7 GB (1720268357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3308b54d35b61854238974280a5b0ecc72a98e2ead17d04f42770a7b35407090`  
-		Last Modified: Tue, 10 Dec 2024 18:45:28 GMT  
 		Size: 293.9 MB (293901821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:23b4a70a021def97f2942726c2a480986d39cf486b23ab2af138e46ea961f5f1`  
