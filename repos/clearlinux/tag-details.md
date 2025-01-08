@@ -45,7 +45,6 @@ CMD ["/bin/bash"]
 		Size: 72.1 MB (72063079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b868939f5b0c0efaa45714babdd4c66ccfe0b0717ee91595d8e706c8f363eeba`  
-		Last Modified: Tue, 24 Dec 2024 21:32:26 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -109,7 +108,6 @@ CMD ["/bin/bash"]
 		Size: 72.1 MB (72063079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b868939f5b0c0efaa45714babdd4c66ccfe0b0717ee91595d8e706c8f363eeba`  
-		Last Modified: Tue, 24 Dec 2024 21:32:26 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
