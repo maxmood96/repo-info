@@ -52,6 +52,5 @@ RUN cmd /S /C #(nop)  LABEL org.opencontainers.image.vendor=Traefik Labs org.ope
 		Size: 1.0 KB (1031 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c2a9311149b8e9a404cb248ba7061679e201c22746d2021be12664eef400beb1`  
-		Last Modified: Tue, 07 Jan 2025 23:27:42 GMT  
 		Size: 1.0 KB (1038 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
