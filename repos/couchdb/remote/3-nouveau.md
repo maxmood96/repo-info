@@ -183,11 +183,10 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 		Size: 371.7 KB (371729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5491a85599389598f4ae4df7db4104b6da7723852ac5f210acfe61ae16eb4c05`  
-		Last Modified: Wed, 25 Dec 2024 01:54:44 GMT  
 		Size: 99.2 KB (99243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:20818de3db827a12cc43f45e8841bd485c27f4146654164284028c54b9f0d6d1`  
-		Last Modified: Wed, 25 Dec 2024 01:54:45 GMT  
+		Last Modified: Wed, 08 Jan 2025 07:29:26 GMT  
 		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:097df282cd1da39e995343dac702aae7f7fb2cd58b33f3a6a2441d6c9f06966a`  
@@ -215,7 +214,6 @@ $ docker pull couchdb@sha256:8ba0e0b18c1a7e4e32389111f081ae7bf1b3f6ac7777e131c9b
 
 -	Layers:
 	-	`sha256:62d72f23452552a6a0928f3848e52515ff78ffb9dc774def5afe25c384ff243d`  
-		Last Modified: Wed, 25 Dec 2024 01:54:44 GMT  
 		Size: 3.5 MB (3460660 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5e4d833a4b2d22d62f507bd62fbed1a72aa74f46fb9d85fd435b48abe785f26f`  
@@ -276,7 +274,6 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 		Size: 1.2 KB (1182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f0e0a3c7f1d0f935538e8ff2aa56dac1d231683d64a57812ad21ed765e4abfc6`  
-		Last Modified: Wed, 25 Dec 2024 00:21:40 GMT  
 		Size: 7.2 MB (7194534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d41685f5b5b235cd1d7f732a592c02ecd2e439e9ed9120cef9b9ab9665642e15`  
@@ -284,6 +281,7 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 		Size: 73.1 MB (73064479 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0257bef5565d9b3594324b756798cb4647d6be33b3e243eade90717420c925e6`  
+		Last Modified: Wed, 08 Jan 2025 06:29:06 GMT  
 		Size: 378.1 KB (378058 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f4a56552cad79291b577b103b879577665fc6e0ad910fbc359a4c7f8233e9b86`  
@@ -319,6 +317,7 @@ $ docker pull couchdb@sha256:cfe1541f8a26e00e63f5e1a91bf34a6ee36167f05d044f2375a
 
 -	Layers:
 	-	`sha256:a3a900434fa87de5deb010e6de783d5a999a1aa991a7f4931c1d30e08dee4ccd`  
+		Last Modified: Wed, 25 Dec 2024 00:21:40 GMT  
 		Size: 3.5 MB (3455405 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d30fb7e76abe4da6bf610fc3445754b5c39ea4703ed1bd57f43712fa15621758`  
