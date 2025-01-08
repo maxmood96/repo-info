@@ -48,7 +48,7 @@ CMD ["/hello"]
 
 -	Layers:
 	-	`sha256:c1ec31eb59444d78df06a974d155e597c894ab4cda84f08294145e845394988e`  
-		Last Modified: Tue, 07 Jan 2025 23:53:59 GMT  
+		Last Modified: Fri, 15 Dec 2023 22:04:48 GMT  
 		Size: 2.5 KB (2459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -68,7 +68,6 @@ $ docker pull hello-world@sha256:579b3724a7b189f6dca599a46f16d801a43d5def185de0b
 
 -	Layers:
 	-	`sha256:f0f2bb83c74908dafb652044b180ffa2f529712e248f0e9985e93699bdf3fbae`  
-		Last Modified: Fri, 15 Dec 2023 22:04:48 GMT  
 		Size: 1.4 KB (1416 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8b338b9c4c5a42cc78090f082d81ed4010c013d8ec03311051a613571f7f988a`  
@@ -236,7 +235,7 @@ CMD ["/hello"]
 
 -	Layers:
 	-	`sha256:478afc9190022e867bb857b1a25cc5abc7678287af6cb930562ec25be709f1b7`  
-		Last Modified: Wed, 08 Jan 2025 00:07:52 GMT  
+		Last Modified: Fri, 15 Dec 2023 23:12:04 GMT  
 		Size: 3.2 KB (3195 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -285,6 +284,7 @@ CMD ["/hello"]
 
 -	Layers:
 	-	`sha256:2c01f93040aa75d3ea306a02d7ba2b73aec9901fdec0df7b02174a76f710b0d7`  
+		Last Modified: Fri, 15 Dec 2023 22:04:49 GMT  
 		Size: 2.7 KB (2720 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -349,7 +349,6 @@ $ docker pull hello-world@sha256:951bcd144ddccd1ee902dc180b435faabaaa6a8747e70cb
 
 -	Layers:
 	-	`sha256:ce386759ac9119e33d2394bcfe30cf512f4fa1882fb3b3b4062d1d93240193d8`  
-		Last Modified: Fri, 15 Dec 2023 22:08:45 GMT  
 		Size: 4.8 KB (4774 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -374,7 +373,7 @@ CMD ["/hello"]
 
 -	Layers:
 	-	`sha256:a78434e319074562cf136bd314faceedf90ac6626b371049cba4bcef51216454`  
-		Last Modified: Wed, 08 Jan 2025 00:35:25 GMT  
+		Last Modified: Fri, 15 Dec 2023 22:12:01 GMT  
 		Size: 3.9 KB (3926 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -398,7 +397,6 @@ $ docker pull hello-world@sha256:838d191bca398e46cddebc48e816da83b0389d4ed2d64f4
 		Size: 1.4 KB (1432 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e0a75ff9ee852d6b8f9bf24a8587be3660e533249b04490c747c68cbc0eb3609`  
-		Last Modified: Fri, 15 Dec 2023 22:12:00 GMT  
 		Size: 5.0 KB (4976 bytes)  
 		MIME: application/vnd.in-toto+json
 
