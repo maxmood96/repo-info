@@ -170,6 +170,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc483684911d86b090060c92df14f726837c35e778b4717b0bf3e156e573da53`  
+		Last Modified: Thu, 24 Oct 2024 01:56:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -189,6 +190,7 @@ $ docker pull cassandra@sha256:fb730a5cd1eee9dc30ff953b1e67a4eddb9606846a504b753
 
 -	Layers:
 	-	`sha256:28d23aabf08210892ec15d1a2fe2eb154f331b1ef1b13ac4286a5f622bc6b898`  
+		Last Modified: Thu, 24 Oct 2024 01:56:17 GMT  
 		Size: 4.5 MB (4478716 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6f51e19c5563a8f6eeb7681999831176c554a9b817af18e44a100e7ea9eb848d`  
@@ -282,7 +284,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c95e18a6d5f5e6456251a25bb5dcd7a491aad979836b6b4cfe2ec9a8d1432cd5`  
@@ -290,7 +291,6 @@ CMD ["cassandra" "-f"]
 		Size: 39.4 MB (39353031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:700765f8574086bd5b472a340b39674bb69473632583cb63669d6fa51333ecef`  
-		Last Modified: Thu, 24 Oct 2024 01:02:54 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:163bd30fc48b3dc50f5922ac81e299b4edb0273024677c0bd93c5cf68219c5aa`  
@@ -590,15 +590,12 @@ CMD ["cassandra" "-f"]
 		Size: 41.3 MB (41258841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f40913c8dd0cbdac8a2fcefb6244c38598b6d43fb5e4027ebab7e6e1dfc1455`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d42c92f926f5ec86fe2b04391e1dce5558a8f7501c507763295dd61df7ac8bdf`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0632df4c3fb454824287118de5d560ee34a8b78ab447cbf1c840bb04df02b024`  
-		Last Modified: Thu, 24 Oct 2024 05:46:21 GMT  
 		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:85a3968a764710f9dfead5637686c4e8aadc9ee8a7c60be239c16b7e977feb51`  
@@ -610,6 +607,7 @@ CMD ["cassandra" "-f"]
 		Size: 904.7 KB (904723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbf3b8961138394606616705ee8d939a6b5610e0614cf86f530a7418c56b869c`  
+		Last Modified: Thu, 24 Oct 2024 05:46:23 GMT  
 		Size: 32.7 MB (32685049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b677060deed7ac9df6ba77ce4c5a1add499922cfa4d68ec0184d8370740319e4`  
@@ -784,6 +782,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc483684911d86b090060c92df14f726837c35e778b4717b0bf3e156e573da53`  
+		Last Modified: Thu, 24 Oct 2024 01:56:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -803,6 +802,7 @@ $ docker pull cassandra@sha256:fb730a5cd1eee9dc30ff953b1e67a4eddb9606846a504b753
 
 -	Layers:
 	-	`sha256:28d23aabf08210892ec15d1a2fe2eb154f331b1ef1b13ac4286a5f622bc6b898`  
+		Last Modified: Thu, 24 Oct 2024 01:56:17 GMT  
 		Size: 4.5 MB (4478716 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6f51e19c5563a8f6eeb7681999831176c554a9b817af18e44a100e7ea9eb848d`  
@@ -896,7 +896,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c95e18a6d5f5e6456251a25bb5dcd7a491aad979836b6b4cfe2ec9a8d1432cd5`  
@@ -904,7 +903,6 @@ CMD ["cassandra" "-f"]
 		Size: 39.4 MB (39353031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:700765f8574086bd5b472a340b39674bb69473632583cb63669d6fa51333ecef`  
-		Last Modified: Thu, 24 Oct 2024 01:02:54 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:163bd30fc48b3dc50f5922ac81e299b4edb0273024677c0bd93c5cf68219c5aa`  
@@ -1204,15 +1202,12 @@ CMD ["cassandra" "-f"]
 		Size: 41.3 MB (41258841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f40913c8dd0cbdac8a2fcefb6244c38598b6d43fb5e4027ebab7e6e1dfc1455`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d42c92f926f5ec86fe2b04391e1dce5558a8f7501c507763295dd61df7ac8bdf`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0632df4c3fb454824287118de5d560ee34a8b78ab447cbf1c840bb04df02b024`  
-		Last Modified: Thu, 24 Oct 2024 05:46:21 GMT  
 		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:85a3968a764710f9dfead5637686c4e8aadc9ee8a7c60be239c16b7e977feb51`  
@@ -1224,6 +1219,7 @@ CMD ["cassandra" "-f"]
 		Size: 904.7 KB (904723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbf3b8961138394606616705ee8d939a6b5610e0614cf86f530a7418c56b869c`  
+		Last Modified: Thu, 24 Oct 2024 05:46:23 GMT  
 		Size: 32.7 MB (32685049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b677060deed7ac9df6ba77ce4c5a1add499922cfa4d68ec0184d8370740319e4`  
@@ -1398,6 +1394,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b8e58853a09c19561ef8d74504793cd55bf961f83a1487bca25254aa21465020`  
+		Last Modified: Thu, 24 Oct 2024 01:56:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1417,7 +1414,6 @@ $ docker pull cassandra@sha256:a7cb688dba40d8d2d22a9134a0090be1dd6dc6149586fbec6
 
 -	Layers:
 	-	`sha256:d5ccdac9b47ed9548eb8269c17ec9578d5800bc6eaca4711e68c1646002b7dbc`  
-		Last Modified: Thu, 24 Oct 2024 01:56:17 GMT  
 		Size: 4.5 MB (4470202 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ec06085b4fe2d06379ce304c0b6bddd2d9d4d1a530d60a490078ff9519dcd0bb`  
@@ -1511,7 +1507,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c95e18a6d5f5e6456251a25bb5dcd7a491aad979836b6b4cfe2ec9a8d1432cd5`  
@@ -1519,7 +1514,6 @@ CMD ["cassandra" "-f"]
 		Size: 39.4 MB (39353031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:700765f8574086bd5b472a340b39674bb69473632583cb63669d6fa51333ecef`  
-		Last Modified: Thu, 24 Oct 2024 01:02:54 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:163bd30fc48b3dc50f5922ac81e299b4edb0273024677c0bd93c5cf68219c5aa`  
@@ -1717,6 +1711,7 @@ $ docker pull cassandra@sha256:271e39f43e35636ca8797f7a05e936467d72d7e4ab17940ed
 
 -	Layers:
 	-	`sha256:9916802da7d1aca755e29b63695a7cf58d1e264b00d61bc043441ce63e065b94`  
+		Last Modified: Thu, 24 Oct 2024 08:49:14 GMT  
 		Size: 4.5 MB (4470619 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b0c44bc43a46e7819c8fff50abdd02cd322c9a9e3214f4d2fd3251faf80085fd`  
@@ -1818,15 +1813,12 @@ CMD ["cassandra" "-f"]
 		Size: 41.3 MB (41258841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f40913c8dd0cbdac8a2fcefb6244c38598b6d43fb5e4027ebab7e6e1dfc1455`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d42c92f926f5ec86fe2b04391e1dce5558a8f7501c507763295dd61df7ac8bdf`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0632df4c3fb454824287118de5d560ee34a8b78ab447cbf1c840bb04df02b024`  
-		Last Modified: Thu, 24 Oct 2024 05:46:21 GMT  
 		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:85a3968a764710f9dfead5637686c4e8aadc9ee8a7c60be239c16b7e977feb51`  
@@ -1838,7 +1830,6 @@ CMD ["cassandra" "-f"]
 		Size: 904.7 KB (904723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a543105208781b987ba379a8e6a29417dc01b45f413b09ad84f957017584dd1d`  
-		Last Modified: Thu, 24 Oct 2024 05:47:26 GMT  
 		Size: 28.3 MB (28346020 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:95e0773b27a247a19621e161c2cf828365972cf6e9af21e0ac9aa399d6caf21e`  
@@ -2013,6 +2004,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b8e58853a09c19561ef8d74504793cd55bf961f83a1487bca25254aa21465020`  
+		Last Modified: Thu, 24 Oct 2024 01:56:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2032,7 +2024,6 @@ $ docker pull cassandra@sha256:a7cb688dba40d8d2d22a9134a0090be1dd6dc6149586fbec6
 
 -	Layers:
 	-	`sha256:d5ccdac9b47ed9548eb8269c17ec9578d5800bc6eaca4711e68c1646002b7dbc`  
-		Last Modified: Thu, 24 Oct 2024 01:56:17 GMT  
 		Size: 4.5 MB (4470202 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ec06085b4fe2d06379ce304c0b6bddd2d9d4d1a530d60a490078ff9519dcd0bb`  
@@ -2126,7 +2117,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c95e18a6d5f5e6456251a25bb5dcd7a491aad979836b6b4cfe2ec9a8d1432cd5`  
@@ -2134,7 +2124,6 @@ CMD ["cassandra" "-f"]
 		Size: 39.4 MB (39353031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:700765f8574086bd5b472a340b39674bb69473632583cb63669d6fa51333ecef`  
-		Last Modified: Thu, 24 Oct 2024 01:02:54 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:163bd30fc48b3dc50f5922ac81e299b4edb0273024677c0bd93c5cf68219c5aa`  
@@ -2332,6 +2321,7 @@ $ docker pull cassandra@sha256:271e39f43e35636ca8797f7a05e936467d72d7e4ab17940ed
 
 -	Layers:
 	-	`sha256:9916802da7d1aca755e29b63695a7cf58d1e264b00d61bc043441ce63e065b94`  
+		Last Modified: Thu, 24 Oct 2024 08:49:14 GMT  
 		Size: 4.5 MB (4470619 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b0c44bc43a46e7819c8fff50abdd02cd322c9a9e3214f4d2fd3251faf80085fd`  
@@ -2433,15 +2423,12 @@ CMD ["cassandra" "-f"]
 		Size: 41.3 MB (41258841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f40913c8dd0cbdac8a2fcefb6244c38598b6d43fb5e4027ebab7e6e1dfc1455`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d42c92f926f5ec86fe2b04391e1dce5558a8f7501c507763295dd61df7ac8bdf`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0632df4c3fb454824287118de5d560ee34a8b78ab447cbf1c840bb04df02b024`  
-		Last Modified: Thu, 24 Oct 2024 05:46:21 GMT  
 		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:85a3968a764710f9dfead5637686c4e8aadc9ee8a7c60be239c16b7e977feb51`  
@@ -2453,7 +2440,6 @@ CMD ["cassandra" "-f"]
 		Size: 904.7 KB (904723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a543105208781b987ba379a8e6a29417dc01b45f413b09ad84f957017584dd1d`  
-		Last Modified: Thu, 24 Oct 2024 05:47:26 GMT  
 		Size: 28.3 MB (28346020 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:95e0773b27a247a19621e161c2cf828365972cf6e9af21e0ac9aa399d6caf21e`  
@@ -2628,6 +2614,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b8e58853a09c19561ef8d74504793cd55bf961f83a1487bca25254aa21465020`  
+		Last Modified: Thu, 24 Oct 2024 01:56:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2647,7 +2634,6 @@ $ docker pull cassandra@sha256:a7cb688dba40d8d2d22a9134a0090be1dd6dc6149586fbec6
 
 -	Layers:
 	-	`sha256:d5ccdac9b47ed9548eb8269c17ec9578d5800bc6eaca4711e68c1646002b7dbc`  
-		Last Modified: Thu, 24 Oct 2024 01:56:17 GMT  
 		Size: 4.5 MB (4470202 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ec06085b4fe2d06379ce304c0b6bddd2d9d4d1a530d60a490078ff9519dcd0bb`  
@@ -2741,7 +2727,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c95e18a6d5f5e6456251a25bb5dcd7a491aad979836b6b4cfe2ec9a8d1432cd5`  
@@ -2749,7 +2734,6 @@ CMD ["cassandra" "-f"]
 		Size: 39.4 MB (39353031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:700765f8574086bd5b472a340b39674bb69473632583cb63669d6fa51333ecef`  
-		Last Modified: Thu, 24 Oct 2024 01:02:54 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:163bd30fc48b3dc50f5922ac81e299b4edb0273024677c0bd93c5cf68219c5aa`  
@@ -2947,6 +2931,7 @@ $ docker pull cassandra@sha256:271e39f43e35636ca8797f7a05e936467d72d7e4ab17940ed
 
 -	Layers:
 	-	`sha256:9916802da7d1aca755e29b63695a7cf58d1e264b00d61bc043441ce63e065b94`  
+		Last Modified: Thu, 24 Oct 2024 08:49:14 GMT  
 		Size: 4.5 MB (4470619 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b0c44bc43a46e7819c8fff50abdd02cd322c9a9e3214f4d2fd3251faf80085fd`  
@@ -3048,15 +3033,12 @@ CMD ["cassandra" "-f"]
 		Size: 41.3 MB (41258841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f40913c8dd0cbdac8a2fcefb6244c38598b6d43fb5e4027ebab7e6e1dfc1455`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d42c92f926f5ec86fe2b04391e1dce5558a8f7501c507763295dd61df7ac8bdf`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0632df4c3fb454824287118de5d560ee34a8b78ab447cbf1c840bb04df02b024`  
-		Last Modified: Thu, 24 Oct 2024 05:46:21 GMT  
 		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:85a3968a764710f9dfead5637686c4e8aadc9ee8a7c60be239c16b7e977feb51`  
@@ -3068,7 +3050,6 @@ CMD ["cassandra" "-f"]
 		Size: 904.7 KB (904723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a543105208781b987ba379a8e6a29417dc01b45f413b09ad84f957017584dd1d`  
-		Last Modified: Thu, 24 Oct 2024 05:47:26 GMT  
 		Size: 28.3 MB (28346020 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:95e0773b27a247a19621e161c2cf828365972cf6e9af21e0ac9aa399d6caf21e`  
@@ -3243,6 +3224,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b8e58853a09c19561ef8d74504793cd55bf961f83a1487bca25254aa21465020`  
+		Last Modified: Thu, 24 Oct 2024 01:56:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3262,7 +3244,6 @@ $ docker pull cassandra@sha256:a7cb688dba40d8d2d22a9134a0090be1dd6dc6149586fbec6
 
 -	Layers:
 	-	`sha256:d5ccdac9b47ed9548eb8269c17ec9578d5800bc6eaca4711e68c1646002b7dbc`  
-		Last Modified: Thu, 24 Oct 2024 01:56:17 GMT  
 		Size: 4.5 MB (4470202 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ec06085b4fe2d06379ce304c0b6bddd2d9d4d1a530d60a490078ff9519dcd0bb`  
@@ -3356,7 +3337,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c95e18a6d5f5e6456251a25bb5dcd7a491aad979836b6b4cfe2ec9a8d1432cd5`  
@@ -3364,7 +3344,6 @@ CMD ["cassandra" "-f"]
 		Size: 39.4 MB (39353031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:700765f8574086bd5b472a340b39674bb69473632583cb63669d6fa51333ecef`  
-		Last Modified: Thu, 24 Oct 2024 01:02:54 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:163bd30fc48b3dc50f5922ac81e299b4edb0273024677c0bd93c5cf68219c5aa`  
@@ -3562,6 +3541,7 @@ $ docker pull cassandra@sha256:271e39f43e35636ca8797f7a05e936467d72d7e4ab17940ed
 
 -	Layers:
 	-	`sha256:9916802da7d1aca755e29b63695a7cf58d1e264b00d61bc043441ce63e065b94`  
+		Last Modified: Thu, 24 Oct 2024 08:49:14 GMT  
 		Size: 4.5 MB (4470619 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b0c44bc43a46e7819c8fff50abdd02cd322c9a9e3214f4d2fd3251faf80085fd`  
@@ -3663,15 +3643,12 @@ CMD ["cassandra" "-f"]
 		Size: 41.3 MB (41258841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f40913c8dd0cbdac8a2fcefb6244c38598b6d43fb5e4027ebab7e6e1dfc1455`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d42c92f926f5ec86fe2b04391e1dce5558a8f7501c507763295dd61df7ac8bdf`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0632df4c3fb454824287118de5d560ee34a8b78ab447cbf1c840bb04df02b024`  
-		Last Modified: Thu, 24 Oct 2024 05:46:21 GMT  
 		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:85a3968a764710f9dfead5637686c4e8aadc9ee8a7c60be239c16b7e977feb51`  
@@ -3683,7 +3660,6 @@ CMD ["cassandra" "-f"]
 		Size: 904.7 KB (904723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a543105208781b987ba379a8e6a29417dc01b45f413b09ad84f957017584dd1d`  
-		Last Modified: Thu, 24 Oct 2024 05:47:26 GMT  
 		Size: 28.3 MB (28346020 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:95e0773b27a247a19621e161c2cf828365972cf6e9af21e0ac9aa399d6caf21e`  
@@ -3858,6 +3834,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc483684911d86b090060c92df14f726837c35e778b4717b0bf3e156e573da53`  
+		Last Modified: Thu, 24 Oct 2024 01:56:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3877,6 +3854,7 @@ $ docker pull cassandra@sha256:fb730a5cd1eee9dc30ff953b1e67a4eddb9606846a504b753
 
 -	Layers:
 	-	`sha256:28d23aabf08210892ec15d1a2fe2eb154f331b1ef1b13ac4286a5f622bc6b898`  
+		Last Modified: Thu, 24 Oct 2024 01:56:17 GMT  
 		Size: 4.5 MB (4478716 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6f51e19c5563a8f6eeb7681999831176c554a9b817af18e44a100e7ea9eb848d`  
@@ -3970,7 +3948,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c95e18a6d5f5e6456251a25bb5dcd7a491aad979836b6b4cfe2ec9a8d1432cd5`  
@@ -3978,7 +3955,6 @@ CMD ["cassandra" "-f"]
 		Size: 39.4 MB (39353031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:700765f8574086bd5b472a340b39674bb69473632583cb63669d6fa51333ecef`  
-		Last Modified: Thu, 24 Oct 2024 01:02:54 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:163bd30fc48b3dc50f5922ac81e299b4edb0273024677c0bd93c5cf68219c5aa`  
@@ -4278,15 +4254,12 @@ CMD ["cassandra" "-f"]
 		Size: 41.3 MB (41258841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f40913c8dd0cbdac8a2fcefb6244c38598b6d43fb5e4027ebab7e6e1dfc1455`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d42c92f926f5ec86fe2b04391e1dce5558a8f7501c507763295dd61df7ac8bdf`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0632df4c3fb454824287118de5d560ee34a8b78ab447cbf1c840bb04df02b024`  
-		Last Modified: Thu, 24 Oct 2024 05:46:21 GMT  
 		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:85a3968a764710f9dfead5637686c4e8aadc9ee8a7c60be239c16b7e977feb51`  
@@ -4298,6 +4271,7 @@ CMD ["cassandra" "-f"]
 		Size: 904.7 KB (904723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbf3b8961138394606616705ee8d939a6b5610e0614cf86f530a7418c56b869c`  
+		Last Modified: Thu, 24 Oct 2024 05:46:23 GMT  
 		Size: 32.7 MB (32685049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b677060deed7ac9df6ba77ce4c5a1add499922cfa4d68ec0184d8370740319e4`  
@@ -4472,6 +4446,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc483684911d86b090060c92df14f726837c35e778b4717b0bf3e156e573da53`  
+		Last Modified: Thu, 24 Oct 2024 01:56:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -4491,6 +4466,7 @@ $ docker pull cassandra@sha256:fb730a5cd1eee9dc30ff953b1e67a4eddb9606846a504b753
 
 -	Layers:
 	-	`sha256:28d23aabf08210892ec15d1a2fe2eb154f331b1ef1b13ac4286a5f622bc6b898`  
+		Last Modified: Thu, 24 Oct 2024 01:56:17 GMT  
 		Size: 4.5 MB (4478716 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6f51e19c5563a8f6eeb7681999831176c554a9b817af18e44a100e7ea9eb848d`  
@@ -4584,7 +4560,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c95e18a6d5f5e6456251a25bb5dcd7a491aad979836b6b4cfe2ec9a8d1432cd5`  
@@ -4592,7 +4567,6 @@ CMD ["cassandra" "-f"]
 		Size: 39.4 MB (39353031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:700765f8574086bd5b472a340b39674bb69473632583cb63669d6fa51333ecef`  
-		Last Modified: Thu, 24 Oct 2024 01:02:54 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:163bd30fc48b3dc50f5922ac81e299b4edb0273024677c0bd93c5cf68219c5aa`  
@@ -4892,15 +4866,12 @@ CMD ["cassandra" "-f"]
 		Size: 41.3 MB (41258841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f40913c8dd0cbdac8a2fcefb6244c38598b6d43fb5e4027ebab7e6e1dfc1455`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d42c92f926f5ec86fe2b04391e1dce5558a8f7501c507763295dd61df7ac8bdf`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0632df4c3fb454824287118de5d560ee34a8b78ab447cbf1c840bb04df02b024`  
-		Last Modified: Thu, 24 Oct 2024 05:46:21 GMT  
 		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:85a3968a764710f9dfead5637686c4e8aadc9ee8a7c60be239c16b7e977feb51`  
@@ -4912,6 +4883,7 @@ CMD ["cassandra" "-f"]
 		Size: 904.7 KB (904723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbf3b8961138394606616705ee8d939a6b5610e0614cf86f530a7418c56b869c`  
+		Last Modified: Thu, 24 Oct 2024 05:46:23 GMT  
 		Size: 32.7 MB (32685049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b677060deed7ac9df6ba77ce4c5a1add499922cfa4d68ec0184d8370740319e4`  
@@ -5086,6 +5058,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc483684911d86b090060c92df14f726837c35e778b4717b0bf3e156e573da53`  
+		Last Modified: Thu, 24 Oct 2024 01:56:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -5105,6 +5078,7 @@ $ docker pull cassandra@sha256:fb730a5cd1eee9dc30ff953b1e67a4eddb9606846a504b753
 
 -	Layers:
 	-	`sha256:28d23aabf08210892ec15d1a2fe2eb154f331b1ef1b13ac4286a5f622bc6b898`  
+		Last Modified: Thu, 24 Oct 2024 01:56:17 GMT  
 		Size: 4.5 MB (4478716 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6f51e19c5563a8f6eeb7681999831176c554a9b817af18e44a100e7ea9eb848d`  
@@ -5198,7 +5172,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c95e18a6d5f5e6456251a25bb5dcd7a491aad979836b6b4cfe2ec9a8d1432cd5`  
@@ -5206,7 +5179,6 @@ CMD ["cassandra" "-f"]
 		Size: 39.4 MB (39353031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:700765f8574086bd5b472a340b39674bb69473632583cb63669d6fa51333ecef`  
-		Last Modified: Thu, 24 Oct 2024 01:02:54 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:163bd30fc48b3dc50f5922ac81e299b4edb0273024677c0bd93c5cf68219c5aa`  
@@ -5506,15 +5478,12 @@ CMD ["cassandra" "-f"]
 		Size: 41.3 MB (41258841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f40913c8dd0cbdac8a2fcefb6244c38598b6d43fb5e4027ebab7e6e1dfc1455`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d42c92f926f5ec86fe2b04391e1dce5558a8f7501c507763295dd61df7ac8bdf`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0632df4c3fb454824287118de5d560ee34a8b78ab447cbf1c840bb04df02b024`  
-		Last Modified: Thu, 24 Oct 2024 05:46:21 GMT  
 		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:85a3968a764710f9dfead5637686c4e8aadc9ee8a7c60be239c16b7e977feb51`  
@@ -5526,6 +5495,7 @@ CMD ["cassandra" "-f"]
 		Size: 904.7 KB (904723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbf3b8961138394606616705ee8d939a6b5610e0614cf86f530a7418c56b869c`  
+		Last Modified: Thu, 24 Oct 2024 05:46:23 GMT  
 		Size: 32.7 MB (32685049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b677060deed7ac9df6ba77ce4c5a1add499922cfa4d68ec0184d8370740319e4`  
@@ -5700,6 +5670,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc483684911d86b090060c92df14f726837c35e778b4717b0bf3e156e573da53`  
+		Last Modified: Thu, 24 Oct 2024 01:56:18 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -5719,6 +5690,7 @@ $ docker pull cassandra@sha256:fb730a5cd1eee9dc30ff953b1e67a4eddb9606846a504b753
 
 -	Layers:
 	-	`sha256:28d23aabf08210892ec15d1a2fe2eb154f331b1ef1b13ac4286a5f622bc6b898`  
+		Last Modified: Thu, 24 Oct 2024 01:56:17 GMT  
 		Size: 4.5 MB (4478716 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6f51e19c5563a8f6eeb7681999831176c554a9b817af18e44a100e7ea9eb848d`  
@@ -5812,7 +5784,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c95e18a6d5f5e6456251a25bb5dcd7a491aad979836b6b4cfe2ec9a8d1432cd5`  
@@ -5820,7 +5791,6 @@ CMD ["cassandra" "-f"]
 		Size: 39.4 MB (39353031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:700765f8574086bd5b472a340b39674bb69473632583cb63669d6fa51333ecef`  
-		Last Modified: Thu, 24 Oct 2024 01:02:54 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:163bd30fc48b3dc50f5922ac81e299b4edb0273024677c0bd93c5cf68219c5aa`  
@@ -6120,15 +6090,12 @@ CMD ["cassandra" "-f"]
 		Size: 41.3 MB (41258841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f40913c8dd0cbdac8a2fcefb6244c38598b6d43fb5e4027ebab7e6e1dfc1455`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d42c92f926f5ec86fe2b04391e1dce5558a8f7501c507763295dd61df7ac8bdf`  
-		Last Modified: Thu, 24 Oct 2024 01:03:19 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0632df4c3fb454824287118de5d560ee34a8b78ab447cbf1c840bb04df02b024`  
-		Last Modified: Thu, 24 Oct 2024 05:46:21 GMT  
 		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:85a3968a764710f9dfead5637686c4e8aadc9ee8a7c60be239c16b7e977feb51`  
@@ -6140,6 +6107,7 @@ CMD ["cassandra" "-f"]
 		Size: 904.7 KB (904723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbf3b8961138394606616705ee8d939a6b5610e0614cf86f530a7418c56b869c`  
+		Last Modified: Thu, 24 Oct 2024 05:46:23 GMT  
 		Size: 32.7 MB (32685049 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b677060deed7ac9df6ba77ce4c5a1add499922cfa4d68ec0184d8370740319e4`  
@@ -6330,7 +6298,7 @@ $ docker pull cassandra@sha256:825160ed57ffc60235951c1f1089a675398fbc2e1d6881a82
 
 -	Layers:
 	-	`sha256:68760da86a15377044924e475dcf7ed9634c0e98353377a038661e5d863627d6`  
-		Last Modified: Thu, 24 Oct 2024 01:56:15 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:28:15 GMT  
 		Size: 4.4 MB (4429951 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:af75b2db7ec1b2afdd7c4a9a5e9245434249d00fe2389b41c35404cbe1f8c48f`  
@@ -6422,7 +6390,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43bfd8d4469ca05e8d1cc250f43590a657c78eb92464f4124149cbc4cb84cece`  
@@ -6434,9 +6401,11 @@ CMD ["cassandra" "-f"]
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:caa32df3ceec8af6367522db81498aef990a43c02534b21a68c22f0eb7cbac0d`  
+		Last Modified: Thu, 24 Oct 2024 01:08:02 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c5098f18883b32f7bcaa09c15a451cdb96015ce04f3afa935311a1b1bc31c1f`  
+		Last Modified: Thu, 24 Oct 2024 02:47:47 GMT  
 		Size: 1.7 KB (1729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4760daf040c6d6a015df9bd9d28a389acc2af401736968b4c58d8ee9f28a8253`  
@@ -6444,6 +6413,7 @@ CMD ["cassandra" "-f"]
 		Size: 10.7 MB (10730485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3c8c7234f66e0ad21458125c384c6aa970362fa9d27dc8cb30dbc856c1bdda38`  
+		Last Modified: Thu, 24 Oct 2024 02:47:48 GMT  
 		Size: 950.8 KB (950781 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a779c7ce0ac358ceba8e6470490b471dcc0391291bf382c315dc16e9bd110a96`  
@@ -6567,6 +6537,7 @@ CMD ["cassandra" "-f"]
 		Size: 16.1 MB (16062123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2df4b49837842cfab8a95fec666778763869dffc44881af662c920632ae031b5`  
+		Last Modified: Thu, 24 Oct 2024 01:06:21 GMT  
 		Size: 45.6 MB (45576593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92ec09f4527c9ff858afbd6c055995c0e8a4d9d97ea97cf12b1b94149cf94c9d`  
@@ -6590,7 +6561,6 @@ CMD ["cassandra" "-f"]
 		Size: 914.5 KB (914458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0ffc366b3f74c6b0bf666a3abd481823b69c7ba8670d11b92c5dc1655ef6aa2`  
-		Last Modified: Thu, 24 Oct 2024 08:45:36 GMT  
 		Size: 50.5 MB (50476918 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ef0adc57e5b268b54789fc1d40aaa82457e7bcb6994695644fe93a14e56c386`  
@@ -6730,6 +6700,7 @@ CMD ["cassandra" "-f"]
 		Size: 12.1 MB (12118255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a804217dd7daa3ef251f071e77e1ca3c347be2d9218e5da606077959aacad356`  
+		Last Modified: Thu, 24 Oct 2024 16:15:37 GMT  
 		Size: 904.7 KB (904740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:446eca152f5890c15a06affdc7648b10ff981a2b348d8b81f89ab4b8de8f5fc5`  
@@ -6868,6 +6839,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.7 KB (1740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d88437164180e9936e280c22fbb28e78c4a7b2bf71c6371d27fb8c63a25b304c`  
+		Last Modified: Thu, 24 Oct 2024 20:37:42 GMT  
 		Size: 11.2 MB (11237631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ec800af9bbbe8ba3078f895d1087f42a29faf4aa203e72f798e76f90c75967c0`  
@@ -7062,7 +7034,7 @@ $ docker pull cassandra@sha256:825160ed57ffc60235951c1f1089a675398fbc2e1d6881a82
 
 -	Layers:
 	-	`sha256:68760da86a15377044924e475dcf7ed9634c0e98353377a038661e5d863627d6`  
-		Last Modified: Thu, 24 Oct 2024 01:56:15 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:28:15 GMT  
 		Size: 4.4 MB (4429951 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:af75b2db7ec1b2afdd7c4a9a5e9245434249d00fe2389b41c35404cbe1f8c48f`  
@@ -7154,7 +7126,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43bfd8d4469ca05e8d1cc250f43590a657c78eb92464f4124149cbc4cb84cece`  
@@ -7166,9 +7137,11 @@ CMD ["cassandra" "-f"]
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:caa32df3ceec8af6367522db81498aef990a43c02534b21a68c22f0eb7cbac0d`  
+		Last Modified: Thu, 24 Oct 2024 01:08:02 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c5098f18883b32f7bcaa09c15a451cdb96015ce04f3afa935311a1b1bc31c1f`  
+		Last Modified: Thu, 24 Oct 2024 02:47:47 GMT  
 		Size: 1.7 KB (1729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4760daf040c6d6a015df9bd9d28a389acc2af401736968b4c58d8ee9f28a8253`  
@@ -7176,6 +7149,7 @@ CMD ["cassandra" "-f"]
 		Size: 10.7 MB (10730485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3c8c7234f66e0ad21458125c384c6aa970362fa9d27dc8cb30dbc856c1bdda38`  
+		Last Modified: Thu, 24 Oct 2024 02:47:48 GMT  
 		Size: 950.8 KB (950781 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a779c7ce0ac358ceba8e6470490b471dcc0391291bf382c315dc16e9bd110a96`  
@@ -7299,6 +7273,7 @@ CMD ["cassandra" "-f"]
 		Size: 16.1 MB (16062123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2df4b49837842cfab8a95fec666778763869dffc44881af662c920632ae031b5`  
+		Last Modified: Thu, 24 Oct 2024 01:06:21 GMT  
 		Size: 45.6 MB (45576593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92ec09f4527c9ff858afbd6c055995c0e8a4d9d97ea97cf12b1b94149cf94c9d`  
@@ -7322,7 +7297,6 @@ CMD ["cassandra" "-f"]
 		Size: 914.5 KB (914458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0ffc366b3f74c6b0bf666a3abd481823b69c7ba8670d11b92c5dc1655ef6aa2`  
-		Last Modified: Thu, 24 Oct 2024 08:45:36 GMT  
 		Size: 50.5 MB (50476918 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ef0adc57e5b268b54789fc1d40aaa82457e7bcb6994695644fe93a14e56c386`  
@@ -7462,6 +7436,7 @@ CMD ["cassandra" "-f"]
 		Size: 12.1 MB (12118255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a804217dd7daa3ef251f071e77e1ca3c347be2d9218e5da606077959aacad356`  
+		Last Modified: Thu, 24 Oct 2024 16:15:37 GMT  
 		Size: 904.7 KB (904740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:446eca152f5890c15a06affdc7648b10ff981a2b348d8b81f89ab4b8de8f5fc5`  
@@ -7600,6 +7575,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.7 KB (1740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d88437164180e9936e280c22fbb28e78c4a7b2bf71c6371d27fb8c63a25b304c`  
+		Last Modified: Thu, 24 Oct 2024 20:37:42 GMT  
 		Size: 11.2 MB (11237631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ec800af9bbbe8ba3078f895d1087f42a29faf4aa203e72f798e76f90c75967c0`  
@@ -7766,6 +7742,7 @@ CMD ["cassandra" "-f"]
 		Size: 11.5 MB (11491876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:852e243ec9f271e7975c91ca6be8ee6a2ad89a66cac0a000be63d546ba046871`  
+		Last Modified: Mon, 18 Nov 2024 22:05:22 GMT  
 		Size: 983.7 KB (983739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c3496cb085e28216f1b40d05ae87f79719e5adaaaa8ee9876455e38e48434a1f`  
@@ -7793,6 +7770,7 @@ $ docker pull cassandra@sha256:ec201c7f92e453038cbbc81b966ad1a081e1783620a86cbab
 
 -	Layers:
 	-	`sha256:d7d62d6a57ffcff983c952c4a12af0db5ac0225b8771b9219f4555b341958c93`  
+		Last Modified: Mon, 18 Nov 2024 22:05:22 GMT  
 		Size: 4.4 MB (4426777 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:40c5ad0640403cf83a62eeaedf68699be388608a3ece4342db1160f04d0fc932`  
@@ -7884,7 +7862,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43bfd8d4469ca05e8d1cc250f43590a657c78eb92464f4124149cbc4cb84cece`  
@@ -7896,6 +7873,7 @@ CMD ["cassandra" "-f"]
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:caa32df3ceec8af6367522db81498aef990a43c02534b21a68c22f0eb7cbac0d`  
+		Last Modified: Thu, 24 Oct 2024 01:08:02 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d780060180bade27b4ef3c30874073318813e5e57b547836f2545847845c8fd8`  
@@ -7935,7 +7913,6 @@ $ docker pull cassandra@sha256:eea37f95959e260a286198e77791d9ce9e7c40ccfc8147a92
 
 -	Layers:
 	-	`sha256:14f976af574e60a9b5781af0917b95fc9b6754eab2031f6c9168601e1d911962`  
-		Last Modified: Mon, 18 Nov 2024 22:05:38 GMT  
 		Size: 4.4 MB (4430552 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6b57df21c3edfe2a5dd0b9a61be6e839bd98fd389d5dbe531013c30b99352d18`  
@@ -8031,6 +8008,7 @@ CMD ["cassandra" "-f"]
 		Size: 16.1 MB (16062123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2df4b49837842cfab8a95fec666778763869dffc44881af662c920632ae031b5`  
+		Last Modified: Thu, 24 Oct 2024 01:06:21 GMT  
 		Size: 45.6 MB (45576593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92ec09f4527c9ff858afbd6c055995c0e8a4d9d97ea97cf12b1b94149cf94c9d`  
@@ -8226,7 +8204,6 @@ $ docker pull cassandra@sha256:02bf61d10aacdc9a992d8d44fc7c74cf6b320e32565d42b82
 		Size: 4.4 MB (4431027 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:737a515db24681bfedd7fd0fe90e85e37e8a4eb018ee2509f99ef76e4ad83d85`  
-		Last Modified: Tue, 19 Nov 2024 02:06:21 GMT  
 		Size: 34.7 KB (34710 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8333,6 +8310,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.7 KB (1739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5a8d44696142b150a15651803945360b7c164c45cecde77cdaa0576176fc5387`  
+		Last Modified: Mon, 18 Nov 2024 22:42:31 GMT  
 		Size: 11.2 MB (11237406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d4323450a7b724e914646ef54da238aba7cff0c739594a2928bd2da07fd2c222`  
@@ -8340,10 +8318,10 @@ CMD ["cassandra" "-f"]
 		Size: 948.7 KB (948716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2c24d2a830a559097a8891875f82080f7e7897e0cfba2c2888f9e5a7f2eb0198`  
+		Last Modified: Mon, 18 Nov 2024 22:42:32 GMT  
 		Size: 48.4 MB (48402718 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4a1a7acd367faf63e1572b83f4b4292adfe7e77484fd166c1c8dcf6e800cdb95`  
-		Last Modified: Mon, 18 Nov 2024 22:42:31 GMT  
 		Size: 1.2 KB (1217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -8498,6 +8476,7 @@ CMD ["cassandra" "-f"]
 		Size: 11.5 MB (11491876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:852e243ec9f271e7975c91ca6be8ee6a2ad89a66cac0a000be63d546ba046871`  
+		Last Modified: Mon, 18 Nov 2024 22:05:22 GMT  
 		Size: 983.7 KB (983739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c3496cb085e28216f1b40d05ae87f79719e5adaaaa8ee9876455e38e48434a1f`  
@@ -8525,6 +8504,7 @@ $ docker pull cassandra@sha256:ec201c7f92e453038cbbc81b966ad1a081e1783620a86cbab
 
 -	Layers:
 	-	`sha256:d7d62d6a57ffcff983c952c4a12af0db5ac0225b8771b9219f4555b341958c93`  
+		Last Modified: Mon, 18 Nov 2024 22:05:22 GMT  
 		Size: 4.4 MB (4426777 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:40c5ad0640403cf83a62eeaedf68699be388608a3ece4342db1160f04d0fc932`  
@@ -8616,7 +8596,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43bfd8d4469ca05e8d1cc250f43590a657c78eb92464f4124149cbc4cb84cece`  
@@ -8628,6 +8607,7 @@ CMD ["cassandra" "-f"]
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:caa32df3ceec8af6367522db81498aef990a43c02534b21a68c22f0eb7cbac0d`  
+		Last Modified: Thu, 24 Oct 2024 01:08:02 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d780060180bade27b4ef3c30874073318813e5e57b547836f2545847845c8fd8`  
@@ -8667,7 +8647,6 @@ $ docker pull cassandra@sha256:eea37f95959e260a286198e77791d9ce9e7c40ccfc8147a92
 
 -	Layers:
 	-	`sha256:14f976af574e60a9b5781af0917b95fc9b6754eab2031f6c9168601e1d911962`  
-		Last Modified: Mon, 18 Nov 2024 22:05:38 GMT  
 		Size: 4.4 MB (4430552 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6b57df21c3edfe2a5dd0b9a61be6e839bd98fd389d5dbe531013c30b99352d18`  
@@ -8763,6 +8742,7 @@ CMD ["cassandra" "-f"]
 		Size: 16.1 MB (16062123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2df4b49837842cfab8a95fec666778763869dffc44881af662c920632ae031b5`  
+		Last Modified: Thu, 24 Oct 2024 01:06:21 GMT  
 		Size: 45.6 MB (45576593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92ec09f4527c9ff858afbd6c055995c0e8a4d9d97ea97cf12b1b94149cf94c9d`  
@@ -8958,7 +8938,6 @@ $ docker pull cassandra@sha256:02bf61d10aacdc9a992d8d44fc7c74cf6b320e32565d42b82
 		Size: 4.4 MB (4431027 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:737a515db24681bfedd7fd0fe90e85e37e8a4eb018ee2509f99ef76e4ad83d85`  
-		Last Modified: Tue, 19 Nov 2024 02:06:21 GMT  
 		Size: 34.7 KB (34710 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9065,6 +9044,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.7 KB (1739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5a8d44696142b150a15651803945360b7c164c45cecde77cdaa0576176fc5387`  
+		Last Modified: Mon, 18 Nov 2024 22:42:31 GMT  
 		Size: 11.2 MB (11237406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d4323450a7b724e914646ef54da238aba7cff0c739594a2928bd2da07fd2c222`  
@@ -9072,10 +9052,10 @@ CMD ["cassandra" "-f"]
 		Size: 948.7 KB (948716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2c24d2a830a559097a8891875f82080f7e7897e0cfba2c2888f9e5a7f2eb0198`  
+		Last Modified: Mon, 18 Nov 2024 22:42:32 GMT  
 		Size: 48.4 MB (48402718 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4a1a7acd367faf63e1572b83f4b4292adfe7e77484fd166c1c8dcf6e800cdb95`  
-		Last Modified: Mon, 18 Nov 2024 22:42:31 GMT  
 		Size: 1.2 KB (1217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -9230,6 +9210,7 @@ CMD ["cassandra" "-f"]
 		Size: 11.5 MB (11491876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:852e243ec9f271e7975c91ca6be8ee6a2ad89a66cac0a000be63d546ba046871`  
+		Last Modified: Mon, 18 Nov 2024 22:05:22 GMT  
 		Size: 983.7 KB (983739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c3496cb085e28216f1b40d05ae87f79719e5adaaaa8ee9876455e38e48434a1f`  
@@ -9257,6 +9238,7 @@ $ docker pull cassandra@sha256:ec201c7f92e453038cbbc81b966ad1a081e1783620a86cbab
 
 -	Layers:
 	-	`sha256:d7d62d6a57ffcff983c952c4a12af0db5ac0225b8771b9219f4555b341958c93`  
+		Last Modified: Mon, 18 Nov 2024 22:05:22 GMT  
 		Size: 4.4 MB (4426777 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:40c5ad0640403cf83a62eeaedf68699be388608a3ece4342db1160f04d0fc932`  
@@ -9348,7 +9330,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43bfd8d4469ca05e8d1cc250f43590a657c78eb92464f4124149cbc4cb84cece`  
@@ -9360,6 +9341,7 @@ CMD ["cassandra" "-f"]
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:caa32df3ceec8af6367522db81498aef990a43c02534b21a68c22f0eb7cbac0d`  
+		Last Modified: Thu, 24 Oct 2024 01:08:02 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d780060180bade27b4ef3c30874073318813e5e57b547836f2545847845c8fd8`  
@@ -9399,7 +9381,6 @@ $ docker pull cassandra@sha256:eea37f95959e260a286198e77791d9ce9e7c40ccfc8147a92
 
 -	Layers:
 	-	`sha256:14f976af574e60a9b5781af0917b95fc9b6754eab2031f6c9168601e1d911962`  
-		Last Modified: Mon, 18 Nov 2024 22:05:38 GMT  
 		Size: 4.4 MB (4430552 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6b57df21c3edfe2a5dd0b9a61be6e839bd98fd389d5dbe531013c30b99352d18`  
@@ -9495,6 +9476,7 @@ CMD ["cassandra" "-f"]
 		Size: 16.1 MB (16062123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2df4b49837842cfab8a95fec666778763869dffc44881af662c920632ae031b5`  
+		Last Modified: Thu, 24 Oct 2024 01:06:21 GMT  
 		Size: 45.6 MB (45576593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92ec09f4527c9ff858afbd6c055995c0e8a4d9d97ea97cf12b1b94149cf94c9d`  
@@ -9690,7 +9672,6 @@ $ docker pull cassandra@sha256:02bf61d10aacdc9a992d8d44fc7c74cf6b320e32565d42b82
 		Size: 4.4 MB (4431027 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:737a515db24681bfedd7fd0fe90e85e37e8a4eb018ee2509f99ef76e4ad83d85`  
-		Last Modified: Tue, 19 Nov 2024 02:06:21 GMT  
 		Size: 34.7 KB (34710 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9797,6 +9778,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.7 KB (1739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5a8d44696142b150a15651803945360b7c164c45cecde77cdaa0576176fc5387`  
+		Last Modified: Mon, 18 Nov 2024 22:42:31 GMT  
 		Size: 11.2 MB (11237406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d4323450a7b724e914646ef54da238aba7cff0c739594a2928bd2da07fd2c222`  
@@ -9804,10 +9786,10 @@ CMD ["cassandra" "-f"]
 		Size: 948.7 KB (948716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2c24d2a830a559097a8891875f82080f7e7897e0cfba2c2888f9e5a7f2eb0198`  
+		Last Modified: Mon, 18 Nov 2024 22:42:32 GMT  
 		Size: 48.4 MB (48402718 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4a1a7acd367faf63e1572b83f4b4292adfe7e77484fd166c1c8dcf6e800cdb95`  
-		Last Modified: Mon, 18 Nov 2024 22:42:31 GMT  
 		Size: 1.2 KB (1217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -9962,6 +9944,7 @@ CMD ["cassandra" "-f"]
 		Size: 11.5 MB (11491876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:852e243ec9f271e7975c91ca6be8ee6a2ad89a66cac0a000be63d546ba046871`  
+		Last Modified: Mon, 18 Nov 2024 22:05:22 GMT  
 		Size: 983.7 KB (983739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c3496cb085e28216f1b40d05ae87f79719e5adaaaa8ee9876455e38e48434a1f`  
@@ -9989,6 +9972,7 @@ $ docker pull cassandra@sha256:ec201c7f92e453038cbbc81b966ad1a081e1783620a86cbab
 
 -	Layers:
 	-	`sha256:d7d62d6a57ffcff983c952c4a12af0db5ac0225b8771b9219f4555b341958c93`  
+		Last Modified: Mon, 18 Nov 2024 22:05:22 GMT  
 		Size: 4.4 MB (4426777 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:40c5ad0640403cf83a62eeaedf68699be388608a3ece4342db1160f04d0fc932`  
@@ -10080,7 +10064,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43bfd8d4469ca05e8d1cc250f43590a657c78eb92464f4124149cbc4cb84cece`  
@@ -10092,6 +10075,7 @@ CMD ["cassandra" "-f"]
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:caa32df3ceec8af6367522db81498aef990a43c02534b21a68c22f0eb7cbac0d`  
+		Last Modified: Thu, 24 Oct 2024 01:08:02 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d780060180bade27b4ef3c30874073318813e5e57b547836f2545847845c8fd8`  
@@ -10131,7 +10115,6 @@ $ docker pull cassandra@sha256:eea37f95959e260a286198e77791d9ce9e7c40ccfc8147a92
 
 -	Layers:
 	-	`sha256:14f976af574e60a9b5781af0917b95fc9b6754eab2031f6c9168601e1d911962`  
-		Last Modified: Mon, 18 Nov 2024 22:05:38 GMT  
 		Size: 4.4 MB (4430552 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6b57df21c3edfe2a5dd0b9a61be6e839bd98fd389d5dbe531013c30b99352d18`  
@@ -10227,6 +10210,7 @@ CMD ["cassandra" "-f"]
 		Size: 16.1 MB (16062123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2df4b49837842cfab8a95fec666778763869dffc44881af662c920632ae031b5`  
+		Last Modified: Thu, 24 Oct 2024 01:06:21 GMT  
 		Size: 45.6 MB (45576593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92ec09f4527c9ff858afbd6c055995c0e8a4d9d97ea97cf12b1b94149cf94c9d`  
@@ -10422,7 +10406,6 @@ $ docker pull cassandra@sha256:02bf61d10aacdc9a992d8d44fc7c74cf6b320e32565d42b82
 		Size: 4.4 MB (4431027 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:737a515db24681bfedd7fd0fe90e85e37e8a4eb018ee2509f99ef76e4ad83d85`  
-		Last Modified: Tue, 19 Nov 2024 02:06:21 GMT  
 		Size: 34.7 KB (34710 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10529,6 +10512,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.7 KB (1739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5a8d44696142b150a15651803945360b7c164c45cecde77cdaa0576176fc5387`  
+		Last Modified: Mon, 18 Nov 2024 22:42:31 GMT  
 		Size: 11.2 MB (11237406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d4323450a7b724e914646ef54da238aba7cff0c739594a2928bd2da07fd2c222`  
@@ -10536,10 +10520,10 @@ CMD ["cassandra" "-f"]
 		Size: 948.7 KB (948716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2c24d2a830a559097a8891875f82080f7e7897e0cfba2c2888f9e5a7f2eb0198`  
+		Last Modified: Mon, 18 Nov 2024 22:42:32 GMT  
 		Size: 48.4 MB (48402718 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4a1a7acd367faf63e1572b83f4b4292adfe7e77484fd166c1c8dcf6e800cdb95`  
-		Last Modified: Mon, 18 Nov 2024 22:42:31 GMT  
 		Size: 1.2 KB (1217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -10722,7 +10706,7 @@ $ docker pull cassandra@sha256:825160ed57ffc60235951c1f1089a675398fbc2e1d6881a82
 
 -	Layers:
 	-	`sha256:68760da86a15377044924e475dcf7ed9634c0e98353377a038661e5d863627d6`  
-		Last Modified: Thu, 24 Oct 2024 01:56:15 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:28:15 GMT  
 		Size: 4.4 MB (4429951 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:af75b2db7ec1b2afdd7c4a9a5e9245434249d00fe2389b41c35404cbe1f8c48f`  
@@ -10814,7 +10798,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43bfd8d4469ca05e8d1cc250f43590a657c78eb92464f4124149cbc4cb84cece`  
@@ -10826,9 +10809,11 @@ CMD ["cassandra" "-f"]
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:caa32df3ceec8af6367522db81498aef990a43c02534b21a68c22f0eb7cbac0d`  
+		Last Modified: Thu, 24 Oct 2024 01:08:02 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c5098f18883b32f7bcaa09c15a451cdb96015ce04f3afa935311a1b1bc31c1f`  
+		Last Modified: Thu, 24 Oct 2024 02:47:47 GMT  
 		Size: 1.7 KB (1729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4760daf040c6d6a015df9bd9d28a389acc2af401736968b4c58d8ee9f28a8253`  
@@ -10836,6 +10821,7 @@ CMD ["cassandra" "-f"]
 		Size: 10.7 MB (10730485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3c8c7234f66e0ad21458125c384c6aa970362fa9d27dc8cb30dbc856c1bdda38`  
+		Last Modified: Thu, 24 Oct 2024 02:47:48 GMT  
 		Size: 950.8 KB (950781 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a779c7ce0ac358ceba8e6470490b471dcc0391291bf382c315dc16e9bd110a96`  
@@ -10959,6 +10945,7 @@ CMD ["cassandra" "-f"]
 		Size: 16.1 MB (16062123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2df4b49837842cfab8a95fec666778763869dffc44881af662c920632ae031b5`  
+		Last Modified: Thu, 24 Oct 2024 01:06:21 GMT  
 		Size: 45.6 MB (45576593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92ec09f4527c9ff858afbd6c055995c0e8a4d9d97ea97cf12b1b94149cf94c9d`  
@@ -10982,7 +10969,6 @@ CMD ["cassandra" "-f"]
 		Size: 914.5 KB (914458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0ffc366b3f74c6b0bf666a3abd481823b69c7ba8670d11b92c5dc1655ef6aa2`  
-		Last Modified: Thu, 24 Oct 2024 08:45:36 GMT  
 		Size: 50.5 MB (50476918 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ef0adc57e5b268b54789fc1d40aaa82457e7bcb6994695644fe93a14e56c386`  
@@ -11122,6 +11108,7 @@ CMD ["cassandra" "-f"]
 		Size: 12.1 MB (12118255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a804217dd7daa3ef251f071e77e1ca3c347be2d9218e5da606077959aacad356`  
+		Last Modified: Thu, 24 Oct 2024 16:15:37 GMT  
 		Size: 904.7 KB (904740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:446eca152f5890c15a06affdc7648b10ff981a2b348d8b81f89ab4b8de8f5fc5`  
@@ -11260,6 +11247,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.7 KB (1740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d88437164180e9936e280c22fbb28e78c4a7b2bf71c6371d27fb8c63a25b304c`  
+		Last Modified: Thu, 24 Oct 2024 20:37:42 GMT  
 		Size: 11.2 MB (11237631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ec800af9bbbe8ba3078f895d1087f42a29faf4aa203e72f798e76f90c75967c0`  
@@ -11454,7 +11442,7 @@ $ docker pull cassandra@sha256:825160ed57ffc60235951c1f1089a675398fbc2e1d6881a82
 
 -	Layers:
 	-	`sha256:68760da86a15377044924e475dcf7ed9634c0e98353377a038661e5d863627d6`  
-		Last Modified: Thu, 24 Oct 2024 01:56:15 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:28:15 GMT  
 		Size: 4.4 MB (4429951 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:af75b2db7ec1b2afdd7c4a9a5e9245434249d00fe2389b41c35404cbe1f8c48f`  
@@ -11546,7 +11534,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43bfd8d4469ca05e8d1cc250f43590a657c78eb92464f4124149cbc4cb84cece`  
@@ -11558,9 +11545,11 @@ CMD ["cassandra" "-f"]
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:caa32df3ceec8af6367522db81498aef990a43c02534b21a68c22f0eb7cbac0d`  
+		Last Modified: Thu, 24 Oct 2024 01:08:02 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c5098f18883b32f7bcaa09c15a451cdb96015ce04f3afa935311a1b1bc31c1f`  
+		Last Modified: Thu, 24 Oct 2024 02:47:47 GMT  
 		Size: 1.7 KB (1729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4760daf040c6d6a015df9bd9d28a389acc2af401736968b4c58d8ee9f28a8253`  
@@ -11568,6 +11557,7 @@ CMD ["cassandra" "-f"]
 		Size: 10.7 MB (10730485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3c8c7234f66e0ad21458125c384c6aa970362fa9d27dc8cb30dbc856c1bdda38`  
+		Last Modified: Thu, 24 Oct 2024 02:47:48 GMT  
 		Size: 950.8 KB (950781 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a779c7ce0ac358ceba8e6470490b471dcc0391291bf382c315dc16e9bd110a96`  
@@ -11691,6 +11681,7 @@ CMD ["cassandra" "-f"]
 		Size: 16.1 MB (16062123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2df4b49837842cfab8a95fec666778763869dffc44881af662c920632ae031b5`  
+		Last Modified: Thu, 24 Oct 2024 01:06:21 GMT  
 		Size: 45.6 MB (45576593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92ec09f4527c9ff858afbd6c055995c0e8a4d9d97ea97cf12b1b94149cf94c9d`  
@@ -11714,7 +11705,6 @@ CMD ["cassandra" "-f"]
 		Size: 914.5 KB (914458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0ffc366b3f74c6b0bf666a3abd481823b69c7ba8670d11b92c5dc1655ef6aa2`  
-		Last Modified: Thu, 24 Oct 2024 08:45:36 GMT  
 		Size: 50.5 MB (50476918 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ef0adc57e5b268b54789fc1d40aaa82457e7bcb6994695644fe93a14e56c386`  
@@ -11854,6 +11844,7 @@ CMD ["cassandra" "-f"]
 		Size: 12.1 MB (12118255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a804217dd7daa3ef251f071e77e1ca3c347be2d9218e5da606077959aacad356`  
+		Last Modified: Thu, 24 Oct 2024 16:15:37 GMT  
 		Size: 904.7 KB (904740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:446eca152f5890c15a06affdc7648b10ff981a2b348d8b81f89ab4b8de8f5fc5`  
@@ -11992,6 +11983,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.7 KB (1740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d88437164180e9936e280c22fbb28e78c4a7b2bf71c6371d27fb8c63a25b304c`  
+		Last Modified: Thu, 24 Oct 2024 20:37:42 GMT  
 		Size: 11.2 MB (11237631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ec800af9bbbe8ba3078f895d1087f42a29faf4aa203e72f798e76f90c75967c0`  
@@ -12186,7 +12178,7 @@ $ docker pull cassandra@sha256:825160ed57ffc60235951c1f1089a675398fbc2e1d6881a82
 
 -	Layers:
 	-	`sha256:68760da86a15377044924e475dcf7ed9634c0e98353377a038661e5d863627d6`  
-		Last Modified: Thu, 24 Oct 2024 01:56:15 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:28:15 GMT  
 		Size: 4.4 MB (4429951 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:af75b2db7ec1b2afdd7c4a9a5e9245434249d00fe2389b41c35404cbe1f8c48f`  
@@ -12278,7 +12270,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43bfd8d4469ca05e8d1cc250f43590a657c78eb92464f4124149cbc4cb84cece`  
@@ -12290,9 +12281,11 @@ CMD ["cassandra" "-f"]
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:caa32df3ceec8af6367522db81498aef990a43c02534b21a68c22f0eb7cbac0d`  
+		Last Modified: Thu, 24 Oct 2024 01:08:02 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c5098f18883b32f7bcaa09c15a451cdb96015ce04f3afa935311a1b1bc31c1f`  
+		Last Modified: Thu, 24 Oct 2024 02:47:47 GMT  
 		Size: 1.7 KB (1729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4760daf040c6d6a015df9bd9d28a389acc2af401736968b4c58d8ee9f28a8253`  
@@ -12300,6 +12293,7 @@ CMD ["cassandra" "-f"]
 		Size: 10.7 MB (10730485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3c8c7234f66e0ad21458125c384c6aa970362fa9d27dc8cb30dbc856c1bdda38`  
+		Last Modified: Thu, 24 Oct 2024 02:47:48 GMT  
 		Size: 950.8 KB (950781 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a779c7ce0ac358ceba8e6470490b471dcc0391291bf382c315dc16e9bd110a96`  
@@ -12423,6 +12417,7 @@ CMD ["cassandra" "-f"]
 		Size: 16.1 MB (16062123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2df4b49837842cfab8a95fec666778763869dffc44881af662c920632ae031b5`  
+		Last Modified: Thu, 24 Oct 2024 01:06:21 GMT  
 		Size: 45.6 MB (45576593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92ec09f4527c9ff858afbd6c055995c0e8a4d9d97ea97cf12b1b94149cf94c9d`  
@@ -12446,7 +12441,6 @@ CMD ["cassandra" "-f"]
 		Size: 914.5 KB (914458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0ffc366b3f74c6b0bf666a3abd481823b69c7ba8670d11b92c5dc1655ef6aa2`  
-		Last Modified: Thu, 24 Oct 2024 08:45:36 GMT  
 		Size: 50.5 MB (50476918 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ef0adc57e5b268b54789fc1d40aaa82457e7bcb6994695644fe93a14e56c386`  
@@ -12586,6 +12580,7 @@ CMD ["cassandra" "-f"]
 		Size: 12.1 MB (12118255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a804217dd7daa3ef251f071e77e1ca3c347be2d9218e5da606077959aacad356`  
+		Last Modified: Thu, 24 Oct 2024 16:15:37 GMT  
 		Size: 904.7 KB (904740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:446eca152f5890c15a06affdc7648b10ff981a2b348d8b81f89ab4b8de8f5fc5`  
@@ -12724,6 +12719,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.7 KB (1740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d88437164180e9936e280c22fbb28e78c4a7b2bf71c6371d27fb8c63a25b304c`  
+		Last Modified: Thu, 24 Oct 2024 20:37:42 GMT  
 		Size: 11.2 MB (11237631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ec800af9bbbe8ba3078f895d1087f42a29faf4aa203e72f798e76f90c75967c0`  
@@ -12918,7 +12914,7 @@ $ docker pull cassandra@sha256:825160ed57ffc60235951c1f1089a675398fbc2e1d6881a82
 
 -	Layers:
 	-	`sha256:68760da86a15377044924e475dcf7ed9634c0e98353377a038661e5d863627d6`  
-		Last Modified: Thu, 24 Oct 2024 01:56:15 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:28:15 GMT  
 		Size: 4.4 MB (4429951 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:af75b2db7ec1b2afdd7c4a9a5e9245434249d00fe2389b41c35404cbe1f8c48f`  
@@ -13010,7 +13006,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43bfd8d4469ca05e8d1cc250f43590a657c78eb92464f4124149cbc4cb84cece`  
@@ -13022,9 +13017,11 @@ CMD ["cassandra" "-f"]
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:caa32df3ceec8af6367522db81498aef990a43c02534b21a68c22f0eb7cbac0d`  
+		Last Modified: Thu, 24 Oct 2024 01:08:02 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c5098f18883b32f7bcaa09c15a451cdb96015ce04f3afa935311a1b1bc31c1f`  
+		Last Modified: Thu, 24 Oct 2024 02:47:47 GMT  
 		Size: 1.7 KB (1729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4760daf040c6d6a015df9bd9d28a389acc2af401736968b4c58d8ee9f28a8253`  
@@ -13032,6 +13029,7 @@ CMD ["cassandra" "-f"]
 		Size: 10.7 MB (10730485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3c8c7234f66e0ad21458125c384c6aa970362fa9d27dc8cb30dbc856c1bdda38`  
+		Last Modified: Thu, 24 Oct 2024 02:47:48 GMT  
 		Size: 950.8 KB (950781 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a779c7ce0ac358ceba8e6470490b471dcc0391291bf382c315dc16e9bd110a96`  
@@ -13155,6 +13153,7 @@ CMD ["cassandra" "-f"]
 		Size: 16.1 MB (16062123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2df4b49837842cfab8a95fec666778763869dffc44881af662c920632ae031b5`  
+		Last Modified: Thu, 24 Oct 2024 01:06:21 GMT  
 		Size: 45.6 MB (45576593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92ec09f4527c9ff858afbd6c055995c0e8a4d9d97ea97cf12b1b94149cf94c9d`  
@@ -13178,7 +13177,6 @@ CMD ["cassandra" "-f"]
 		Size: 914.5 KB (914458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0ffc366b3f74c6b0bf666a3abd481823b69c7ba8670d11b92c5dc1655ef6aa2`  
-		Last Modified: Thu, 24 Oct 2024 08:45:36 GMT  
 		Size: 50.5 MB (50476918 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ef0adc57e5b268b54789fc1d40aaa82457e7bcb6994695644fe93a14e56c386`  
@@ -13318,6 +13316,7 @@ CMD ["cassandra" "-f"]
 		Size: 12.1 MB (12118255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a804217dd7daa3ef251f071e77e1ca3c347be2d9218e5da606077959aacad356`  
+		Last Modified: Thu, 24 Oct 2024 16:15:37 GMT  
 		Size: 904.7 KB (904740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:446eca152f5890c15a06affdc7648b10ff981a2b348d8b81f89ab4b8de8f5fc5`  
@@ -13456,6 +13455,7 @@ CMD ["cassandra" "-f"]
 		Size: 1.7 KB (1740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d88437164180e9936e280c22fbb28e78c4a7b2bf71c6371d27fb8c63a25b304c`  
+		Last Modified: Thu, 24 Oct 2024 20:37:42 GMT  
 		Size: 11.2 MB (11237631 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ec800af9bbbe8ba3078f895d1087f42a29faf4aa203e72f798e76f90c75967c0`  
@@ -13622,7 +13622,7 @@ CMD ["cassandra" "-f"]
 		Size: 11.5 MB (11491861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:09bb1bb42e9a2a5df32ec33bf391041d7044cc60d6495064c8c385d03ca39e2c`  
-		Last Modified: Tue, 07 Jan 2025 21:44:49 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 983.7 KB (983733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:10154685d2bdcf8983034e74f5511388a937e3a31b862b49a609b5045b63772c`  
@@ -13630,7 +13630,7 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2bfd359355379ac5e311edc77af6b5f135a511d880a4009084ef7ecf2d21ac82`  
-		Last Modified: Tue, 07 Jan 2025 22:38:08 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:45 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -13650,11 +13650,10 @@ $ docker pull cassandra@sha256:7e06d17333165d46221bc7559fcc6402c99dc2d4f2e8e4bc8
 
 -	Layers:
 	-	`sha256:05f216f55f5ed521385c361cd925f6da99350e37f22322be522e336d41b04ff8`  
-		Last Modified: Tue, 07 Jan 2025 21:28:59 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 4.5 MB (4457941 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b009b064231801eec74e6ddcb23bcdf4aace5087b9512d3bb608f6dd180cdf57`  
-		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 35.9 KB (35864 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13742,7 +13741,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:22923f2d3771652152b182f665fc71345ceb11b32ee14f72a772b486d1a6b396`  
@@ -13758,7 +13756,7 @@ CMD ["cassandra" "-f"]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bf4964a8487d6563a924b9b8b2ba51ae91c369b762094a8c54f248715e527ce`  
-		Last Modified: Thu, 24 Oct 2024 02:46:31 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:28:45 GMT  
 		Size: 1.7 KB (1730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f1e035384469e5fa73a3630d483f3dd5bbc015acfbdc566707a5bc0b053aeab2`  
@@ -13774,6 +13772,7 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0986beacdfd9781bd1bab2f9ac64309fbf20505a8a5c10410e10aae88f9dabb4`  
+		Last Modified: Thu, 24 Oct 2024 02:46:32 GMT  
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -13793,7 +13792,6 @@ $ docker pull cassandra@sha256:c10a5768b8ef70517707890b5ce023f24e2a3e192aaa6bf9e
 
 -	Layers:
 	-	`sha256:3af8108e40fa59792b9df5ead543f5ce19c62441ddd09db4807c53bd46e04988`  
-		Last Modified: Thu, 24 Oct 2024 02:46:32 GMT  
 		Size: 4.5 MB (4460483 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c5bada17d0541d3ef539fdbbfebcc8214b0bbb9887093c23b9e39e49f371ebef`  
@@ -13893,7 +13891,7 @@ CMD ["cassandra" "-f"]
 		Size: 46.4 MB (46430856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0c3c08b455337af9ba6b5fe522389a1d0a2b621fe437f3832a54289cac03397`  
-		Last Modified: Tue, 07 Jan 2025 22:28:50 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:12:28 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26811a6e12de121df2970871f9027eb19d2c672b0045944972cf63a39c74aa15`  
@@ -13913,7 +13911,6 @@ CMD ["cassandra" "-f"]
 		Size: 914.5 KB (914456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cf656852e1eefee1296556be882af752623b2b6372bc989e08c59b6843fbe655`  
-		Last Modified: Tue, 07 Jan 2025 22:28:53 GMT  
 		Size: 70.4 MB (70434236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fab4aff1fdd7754bfc49d291eb29fbb2c2418755ea6a2c5ea4fd0379da162e8`  
@@ -14049,7 +14046,6 @@ CMD ["cassandra" "-f"]
 		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ec3dcd5ac6c0cd163f781408b64bd1c703f22e81abf8a3c72e9c61829c36a7c`  
-		Last Modified: Thu, 24 Oct 2024 16:13:15 GMT  
 		Size: 12.1 MB (12118212 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ac6decb4f88d7560375bad2726e8e48af8c2a39edc5e248618da3e31039fe41`  
@@ -14057,10 +14053,10 @@ CMD ["cassandra" "-f"]
 		Size: 904.7 KB (904735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bceb84a1fbc88c0873f2e97cc16b97481450118d76fe58cab6cfd2cdc1bbc083`  
+		Last Modified: Thu, 24 Oct 2024 16:13:16 GMT  
 		Size: 70.4 MB (70434196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d2a9b3a69e357257012a8aeac43e2a4622e633f8d640f934272f36efcfe7504`  
-		Last Modified: Thu, 24 Oct 2024 16:13:14 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -14176,6 +14172,7 @@ CMD ["cassandra" "-f"]
 		Size: 16.1 MB (16141938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:202da4a4f6d062585c4f0ceae45eeca1c654d6feae753209341ae2fe55213d41`  
+		Last Modified: Thu, 24 Oct 2024 17:32:49 GMT  
 		Size: 43.9 MB (43943407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3f26b56544cb69df62eeb7f99607b83222cc0287008fbeca07554cb171de6100`  
@@ -14183,6 +14180,7 @@ CMD ["cassandra" "-f"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb36841c35a2b10c356fdb612c0af05dd3474471d0535c2747539deef4c45426`  
+		Last Modified: Thu, 24 Oct 2024 17:32:48 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3426158c9cdf93bb093bba04da8bd6a33d714e81923bcfa48da3a751ab103860`  
@@ -14202,7 +14200,6 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3985765d28b41600c4311cdb12539e6b62174eb1312356b343cab386399af955`  
-		Last Modified: Thu, 24 Oct 2024 20:35:09 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -14357,7 +14354,7 @@ CMD ["cassandra" "-f"]
 		Size: 11.5 MB (11491861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:09bb1bb42e9a2a5df32ec33bf391041d7044cc60d6495064c8c385d03ca39e2c`  
-		Last Modified: Tue, 07 Jan 2025 21:44:49 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 983.7 KB (983733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:10154685d2bdcf8983034e74f5511388a937e3a31b862b49a609b5045b63772c`  
@@ -14365,7 +14362,7 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2bfd359355379ac5e311edc77af6b5f135a511d880a4009084ef7ecf2d21ac82`  
-		Last Modified: Tue, 07 Jan 2025 22:38:08 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:45 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -14385,11 +14382,10 @@ $ docker pull cassandra@sha256:7e06d17333165d46221bc7559fcc6402c99dc2d4f2e8e4bc8
 
 -	Layers:
 	-	`sha256:05f216f55f5ed521385c361cd925f6da99350e37f22322be522e336d41b04ff8`  
-		Last Modified: Tue, 07 Jan 2025 21:28:59 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 4.5 MB (4457941 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b009b064231801eec74e6ddcb23bcdf4aace5087b9512d3bb608f6dd180cdf57`  
-		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 35.9 KB (35864 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14477,7 +14473,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:22923f2d3771652152b182f665fc71345ceb11b32ee14f72a772b486d1a6b396`  
@@ -14493,7 +14488,7 @@ CMD ["cassandra" "-f"]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bf4964a8487d6563a924b9b8b2ba51ae91c369b762094a8c54f248715e527ce`  
-		Last Modified: Thu, 24 Oct 2024 02:46:31 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:28:45 GMT  
 		Size: 1.7 KB (1730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f1e035384469e5fa73a3630d483f3dd5bbc015acfbdc566707a5bc0b053aeab2`  
@@ -14509,6 +14504,7 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0986beacdfd9781bd1bab2f9ac64309fbf20505a8a5c10410e10aae88f9dabb4`  
+		Last Modified: Thu, 24 Oct 2024 02:46:32 GMT  
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -14528,7 +14524,6 @@ $ docker pull cassandra@sha256:c10a5768b8ef70517707890b5ce023f24e2a3e192aaa6bf9e
 
 -	Layers:
 	-	`sha256:3af8108e40fa59792b9df5ead543f5ce19c62441ddd09db4807c53bd46e04988`  
-		Last Modified: Thu, 24 Oct 2024 02:46:32 GMT  
 		Size: 4.5 MB (4460483 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c5bada17d0541d3ef539fdbbfebcc8214b0bbb9887093c23b9e39e49f371ebef`  
@@ -14628,7 +14623,7 @@ CMD ["cassandra" "-f"]
 		Size: 46.4 MB (46430856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0c3c08b455337af9ba6b5fe522389a1d0a2b621fe437f3832a54289cac03397`  
-		Last Modified: Tue, 07 Jan 2025 22:28:50 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:12:28 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26811a6e12de121df2970871f9027eb19d2c672b0045944972cf63a39c74aa15`  
@@ -14648,7 +14643,6 @@ CMD ["cassandra" "-f"]
 		Size: 914.5 KB (914456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cf656852e1eefee1296556be882af752623b2b6372bc989e08c59b6843fbe655`  
-		Last Modified: Tue, 07 Jan 2025 22:28:53 GMT  
 		Size: 70.4 MB (70434236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fab4aff1fdd7754bfc49d291eb29fbb2c2418755ea6a2c5ea4fd0379da162e8`  
@@ -14784,7 +14778,6 @@ CMD ["cassandra" "-f"]
 		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ec3dcd5ac6c0cd163f781408b64bd1c703f22e81abf8a3c72e9c61829c36a7c`  
-		Last Modified: Thu, 24 Oct 2024 16:13:15 GMT  
 		Size: 12.1 MB (12118212 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ac6decb4f88d7560375bad2726e8e48af8c2a39edc5e248618da3e31039fe41`  
@@ -14792,10 +14785,10 @@ CMD ["cassandra" "-f"]
 		Size: 904.7 KB (904735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bceb84a1fbc88c0873f2e97cc16b97481450118d76fe58cab6cfd2cdc1bbc083`  
+		Last Modified: Thu, 24 Oct 2024 16:13:16 GMT  
 		Size: 70.4 MB (70434196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d2a9b3a69e357257012a8aeac43e2a4622e633f8d640f934272f36efcfe7504`  
-		Last Modified: Thu, 24 Oct 2024 16:13:14 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -14911,6 +14904,7 @@ CMD ["cassandra" "-f"]
 		Size: 16.1 MB (16141938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:202da4a4f6d062585c4f0ceae45eeca1c654d6feae753209341ae2fe55213d41`  
+		Last Modified: Thu, 24 Oct 2024 17:32:49 GMT  
 		Size: 43.9 MB (43943407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3f26b56544cb69df62eeb7f99607b83222cc0287008fbeca07554cb171de6100`  
@@ -14918,6 +14912,7 @@ CMD ["cassandra" "-f"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb36841c35a2b10c356fdb612c0af05dd3474471d0535c2747539deef4c45426`  
+		Last Modified: Thu, 24 Oct 2024 17:32:48 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3426158c9cdf93bb093bba04da8bd6a33d714e81923bcfa48da3a751ab103860`  
@@ -14937,7 +14932,6 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3985765d28b41600c4311cdb12539e6b62174eb1312356b343cab386399af955`  
-		Last Modified: Thu, 24 Oct 2024 20:35:09 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15092,7 +15086,7 @@ CMD ["cassandra" "-f"]
 		Size: 11.5 MB (11491861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:09bb1bb42e9a2a5df32ec33bf391041d7044cc60d6495064c8c385d03ca39e2c`  
-		Last Modified: Tue, 07 Jan 2025 21:44:49 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 983.7 KB (983733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:10154685d2bdcf8983034e74f5511388a937e3a31b862b49a609b5045b63772c`  
@@ -15100,7 +15094,7 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2bfd359355379ac5e311edc77af6b5f135a511d880a4009084ef7ecf2d21ac82`  
-		Last Modified: Tue, 07 Jan 2025 22:38:08 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:45 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15120,11 +15114,10 @@ $ docker pull cassandra@sha256:7e06d17333165d46221bc7559fcc6402c99dc2d4f2e8e4bc8
 
 -	Layers:
 	-	`sha256:05f216f55f5ed521385c361cd925f6da99350e37f22322be522e336d41b04ff8`  
-		Last Modified: Tue, 07 Jan 2025 21:28:59 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 4.5 MB (4457941 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b009b064231801eec74e6ddcb23bcdf4aace5087b9512d3bb608f6dd180cdf57`  
-		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 35.9 KB (35864 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15212,7 +15205,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:22923f2d3771652152b182f665fc71345ceb11b32ee14f72a772b486d1a6b396`  
@@ -15228,7 +15220,7 @@ CMD ["cassandra" "-f"]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bf4964a8487d6563a924b9b8b2ba51ae91c369b762094a8c54f248715e527ce`  
-		Last Modified: Thu, 24 Oct 2024 02:46:31 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:28:45 GMT  
 		Size: 1.7 KB (1730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f1e035384469e5fa73a3630d483f3dd5bbc015acfbdc566707a5bc0b053aeab2`  
@@ -15244,6 +15236,7 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0986beacdfd9781bd1bab2f9ac64309fbf20505a8a5c10410e10aae88f9dabb4`  
+		Last Modified: Thu, 24 Oct 2024 02:46:32 GMT  
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15263,7 +15256,6 @@ $ docker pull cassandra@sha256:c10a5768b8ef70517707890b5ce023f24e2a3e192aaa6bf9e
 
 -	Layers:
 	-	`sha256:3af8108e40fa59792b9df5ead543f5ce19c62441ddd09db4807c53bd46e04988`  
-		Last Modified: Thu, 24 Oct 2024 02:46:32 GMT  
 		Size: 4.5 MB (4460483 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c5bada17d0541d3ef539fdbbfebcc8214b0bbb9887093c23b9e39e49f371ebef`  
@@ -15363,7 +15355,7 @@ CMD ["cassandra" "-f"]
 		Size: 46.4 MB (46430856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0c3c08b455337af9ba6b5fe522389a1d0a2b621fe437f3832a54289cac03397`  
-		Last Modified: Tue, 07 Jan 2025 22:28:50 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:12:28 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26811a6e12de121df2970871f9027eb19d2c672b0045944972cf63a39c74aa15`  
@@ -15383,7 +15375,6 @@ CMD ["cassandra" "-f"]
 		Size: 914.5 KB (914456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cf656852e1eefee1296556be882af752623b2b6372bc989e08c59b6843fbe655`  
-		Last Modified: Tue, 07 Jan 2025 22:28:53 GMT  
 		Size: 70.4 MB (70434236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fab4aff1fdd7754bfc49d291eb29fbb2c2418755ea6a2c5ea4fd0379da162e8`  
@@ -15519,7 +15510,6 @@ CMD ["cassandra" "-f"]
 		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ec3dcd5ac6c0cd163f781408b64bd1c703f22e81abf8a3c72e9c61829c36a7c`  
-		Last Modified: Thu, 24 Oct 2024 16:13:15 GMT  
 		Size: 12.1 MB (12118212 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ac6decb4f88d7560375bad2726e8e48af8c2a39edc5e248618da3e31039fe41`  
@@ -15527,10 +15517,10 @@ CMD ["cassandra" "-f"]
 		Size: 904.7 KB (904735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bceb84a1fbc88c0873f2e97cc16b97481450118d76fe58cab6cfd2cdc1bbc083`  
+		Last Modified: Thu, 24 Oct 2024 16:13:16 GMT  
 		Size: 70.4 MB (70434196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d2a9b3a69e357257012a8aeac43e2a4622e633f8d640f934272f36efcfe7504`  
-		Last Modified: Thu, 24 Oct 2024 16:13:14 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15646,6 +15636,7 @@ CMD ["cassandra" "-f"]
 		Size: 16.1 MB (16141938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:202da4a4f6d062585c4f0ceae45eeca1c654d6feae753209341ae2fe55213d41`  
+		Last Modified: Thu, 24 Oct 2024 17:32:49 GMT  
 		Size: 43.9 MB (43943407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3f26b56544cb69df62eeb7f99607b83222cc0287008fbeca07554cb171de6100`  
@@ -15653,6 +15644,7 @@ CMD ["cassandra" "-f"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb36841c35a2b10c356fdb612c0af05dd3474471d0535c2747539deef4c45426`  
+		Last Modified: Thu, 24 Oct 2024 17:32:48 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3426158c9cdf93bb093bba04da8bd6a33d714e81923bcfa48da3a751ab103860`  
@@ -15672,7 +15664,6 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3985765d28b41600c4311cdb12539e6b62174eb1312356b343cab386399af955`  
-		Last Modified: Thu, 24 Oct 2024 20:35:09 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15827,7 +15818,7 @@ CMD ["cassandra" "-f"]
 		Size: 11.5 MB (11491861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:09bb1bb42e9a2a5df32ec33bf391041d7044cc60d6495064c8c385d03ca39e2c`  
-		Last Modified: Tue, 07 Jan 2025 21:44:49 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 983.7 KB (983733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:10154685d2bdcf8983034e74f5511388a937e3a31b862b49a609b5045b63772c`  
@@ -15835,7 +15826,7 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2bfd359355379ac5e311edc77af6b5f135a511d880a4009084ef7ecf2d21ac82`  
-		Last Modified: Tue, 07 Jan 2025 22:38:08 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:45 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15855,11 +15846,10 @@ $ docker pull cassandra@sha256:7e06d17333165d46221bc7559fcc6402c99dc2d4f2e8e4bc8
 
 -	Layers:
 	-	`sha256:05f216f55f5ed521385c361cd925f6da99350e37f22322be522e336d41b04ff8`  
-		Last Modified: Tue, 07 Jan 2025 21:28:59 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 4.5 MB (4457941 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b009b064231801eec74e6ddcb23bcdf4aace5087b9512d3bb608f6dd180cdf57`  
-		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 35.9 KB (35864 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15947,7 +15937,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:22923f2d3771652152b182f665fc71345ceb11b32ee14f72a772b486d1a6b396`  
@@ -15963,7 +15952,7 @@ CMD ["cassandra" "-f"]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bf4964a8487d6563a924b9b8b2ba51ae91c369b762094a8c54f248715e527ce`  
-		Last Modified: Thu, 24 Oct 2024 02:46:31 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:28:45 GMT  
 		Size: 1.7 KB (1730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f1e035384469e5fa73a3630d483f3dd5bbc015acfbdc566707a5bc0b053aeab2`  
@@ -15979,6 +15968,7 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0986beacdfd9781bd1bab2f9ac64309fbf20505a8a5c10410e10aae88f9dabb4`  
+		Last Modified: Thu, 24 Oct 2024 02:46:32 GMT  
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -15998,7 +15988,6 @@ $ docker pull cassandra@sha256:c10a5768b8ef70517707890b5ce023f24e2a3e192aaa6bf9e
 
 -	Layers:
 	-	`sha256:3af8108e40fa59792b9df5ead543f5ce19c62441ddd09db4807c53bd46e04988`  
-		Last Modified: Thu, 24 Oct 2024 02:46:32 GMT  
 		Size: 4.5 MB (4460483 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c5bada17d0541d3ef539fdbbfebcc8214b0bbb9887093c23b9e39e49f371ebef`  
@@ -16098,7 +16087,7 @@ CMD ["cassandra" "-f"]
 		Size: 46.4 MB (46430856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0c3c08b455337af9ba6b5fe522389a1d0a2b621fe437f3832a54289cac03397`  
-		Last Modified: Tue, 07 Jan 2025 22:28:50 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:12:28 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26811a6e12de121df2970871f9027eb19d2c672b0045944972cf63a39c74aa15`  
@@ -16118,7 +16107,6 @@ CMD ["cassandra" "-f"]
 		Size: 914.5 KB (914456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cf656852e1eefee1296556be882af752623b2b6372bc989e08c59b6843fbe655`  
-		Last Modified: Tue, 07 Jan 2025 22:28:53 GMT  
 		Size: 70.4 MB (70434236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fab4aff1fdd7754bfc49d291eb29fbb2c2418755ea6a2c5ea4fd0379da162e8`  
@@ -16254,7 +16242,6 @@ CMD ["cassandra" "-f"]
 		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ec3dcd5ac6c0cd163f781408b64bd1c703f22e81abf8a3c72e9c61829c36a7c`  
-		Last Modified: Thu, 24 Oct 2024 16:13:15 GMT  
 		Size: 12.1 MB (12118212 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ac6decb4f88d7560375bad2726e8e48af8c2a39edc5e248618da3e31039fe41`  
@@ -16262,10 +16249,10 @@ CMD ["cassandra" "-f"]
 		Size: 904.7 KB (904735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bceb84a1fbc88c0873f2e97cc16b97481450118d76fe58cab6cfd2cdc1bbc083`  
+		Last Modified: Thu, 24 Oct 2024 16:13:16 GMT  
 		Size: 70.4 MB (70434196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d2a9b3a69e357257012a8aeac43e2a4622e633f8d640f934272f36efcfe7504`  
-		Last Modified: Thu, 24 Oct 2024 16:13:14 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16381,6 +16368,7 @@ CMD ["cassandra" "-f"]
 		Size: 16.1 MB (16141938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:202da4a4f6d062585c4f0ceae45eeca1c654d6feae753209341ae2fe55213d41`  
+		Last Modified: Thu, 24 Oct 2024 17:32:49 GMT  
 		Size: 43.9 MB (43943407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3f26b56544cb69df62eeb7f99607b83222cc0287008fbeca07554cb171de6100`  
@@ -16388,6 +16376,7 @@ CMD ["cassandra" "-f"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb36841c35a2b10c356fdb612c0af05dd3474471d0535c2747539deef4c45426`  
+		Last Modified: Thu, 24 Oct 2024 17:32:48 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3426158c9cdf93bb093bba04da8bd6a33d714e81923bcfa48da3a751ab103860`  
@@ -16407,7 +16396,6 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3985765d28b41600c4311cdb12539e6b62174eb1312356b343cab386399af955`  
-		Last Modified: Thu, 24 Oct 2024 20:35:09 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16562,7 +16550,7 @@ CMD ["cassandra" "-f"]
 		Size: 11.5 MB (11491861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:09bb1bb42e9a2a5df32ec33bf391041d7044cc60d6495064c8c385d03ca39e2c`  
-		Last Modified: Tue, 07 Jan 2025 21:44:49 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 983.7 KB (983733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:10154685d2bdcf8983034e74f5511388a937e3a31b862b49a609b5045b63772c`  
@@ -16570,7 +16558,7 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2bfd359355379ac5e311edc77af6b5f135a511d880a4009084ef7ecf2d21ac82`  
-		Last Modified: Tue, 07 Jan 2025 22:38:08 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:45 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16590,11 +16578,10 @@ $ docker pull cassandra@sha256:7e06d17333165d46221bc7559fcc6402c99dc2d4f2e8e4bc8
 
 -	Layers:
 	-	`sha256:05f216f55f5ed521385c361cd925f6da99350e37f22322be522e336d41b04ff8`  
-		Last Modified: Tue, 07 Jan 2025 21:28:59 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 4.5 MB (4457941 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b009b064231801eec74e6ddcb23bcdf4aace5087b9512d3bb608f6dd180cdf57`  
-		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 35.9 KB (35864 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16682,7 +16669,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:22923f2d3771652152b182f665fc71345ceb11b32ee14f72a772b486d1a6b396`  
@@ -16698,7 +16684,7 @@ CMD ["cassandra" "-f"]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bf4964a8487d6563a924b9b8b2ba51ae91c369b762094a8c54f248715e527ce`  
-		Last Modified: Thu, 24 Oct 2024 02:46:31 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:28:45 GMT  
 		Size: 1.7 KB (1730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f1e035384469e5fa73a3630d483f3dd5bbc015acfbdc566707a5bc0b053aeab2`  
@@ -16714,6 +16700,7 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0986beacdfd9781bd1bab2f9ac64309fbf20505a8a5c10410e10aae88f9dabb4`  
+		Last Modified: Thu, 24 Oct 2024 02:46:32 GMT  
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -16733,7 +16720,6 @@ $ docker pull cassandra@sha256:c10a5768b8ef70517707890b5ce023f24e2a3e192aaa6bf9e
 
 -	Layers:
 	-	`sha256:3af8108e40fa59792b9df5ead543f5ce19c62441ddd09db4807c53bd46e04988`  
-		Last Modified: Thu, 24 Oct 2024 02:46:32 GMT  
 		Size: 4.5 MB (4460483 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c5bada17d0541d3ef539fdbbfebcc8214b0bbb9887093c23b9e39e49f371ebef`  
@@ -16833,7 +16819,7 @@ CMD ["cassandra" "-f"]
 		Size: 46.4 MB (46430856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0c3c08b455337af9ba6b5fe522389a1d0a2b621fe437f3832a54289cac03397`  
-		Last Modified: Tue, 07 Jan 2025 22:28:50 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:12:28 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26811a6e12de121df2970871f9027eb19d2c672b0045944972cf63a39c74aa15`  
@@ -16853,7 +16839,6 @@ CMD ["cassandra" "-f"]
 		Size: 914.5 KB (914456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cf656852e1eefee1296556be882af752623b2b6372bc989e08c59b6843fbe655`  
-		Last Modified: Tue, 07 Jan 2025 22:28:53 GMT  
 		Size: 70.4 MB (70434236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fab4aff1fdd7754bfc49d291eb29fbb2c2418755ea6a2c5ea4fd0379da162e8`  
@@ -16989,7 +16974,6 @@ CMD ["cassandra" "-f"]
 		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ec3dcd5ac6c0cd163f781408b64bd1c703f22e81abf8a3c72e9c61829c36a7c`  
-		Last Modified: Thu, 24 Oct 2024 16:13:15 GMT  
 		Size: 12.1 MB (12118212 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ac6decb4f88d7560375bad2726e8e48af8c2a39edc5e248618da3e31039fe41`  
@@ -16997,10 +16981,10 @@ CMD ["cassandra" "-f"]
 		Size: 904.7 KB (904735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bceb84a1fbc88c0873f2e97cc16b97481450118d76fe58cab6cfd2cdc1bbc083`  
+		Last Modified: Thu, 24 Oct 2024 16:13:16 GMT  
 		Size: 70.4 MB (70434196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d2a9b3a69e357257012a8aeac43e2a4622e633f8d640f934272f36efcfe7504`  
-		Last Modified: Thu, 24 Oct 2024 16:13:14 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -17116,6 +17100,7 @@ CMD ["cassandra" "-f"]
 		Size: 16.1 MB (16141938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:202da4a4f6d062585c4f0ceae45eeca1c654d6feae753209341ae2fe55213d41`  
+		Last Modified: Thu, 24 Oct 2024 17:32:49 GMT  
 		Size: 43.9 MB (43943407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3f26b56544cb69df62eeb7f99607b83222cc0287008fbeca07554cb171de6100`  
@@ -17123,6 +17108,7 @@ CMD ["cassandra" "-f"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb36841c35a2b10c356fdb612c0af05dd3474471d0535c2747539deef4c45426`  
+		Last Modified: Thu, 24 Oct 2024 17:32:48 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3426158c9cdf93bb093bba04da8bd6a33d714e81923bcfa48da3a751ab103860`  
@@ -17142,7 +17128,6 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3985765d28b41600c4311cdb12539e6b62174eb1312356b343cab386399af955`  
-		Last Modified: Thu, 24 Oct 2024 20:35:09 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -17297,7 +17282,7 @@ CMD ["cassandra" "-f"]
 		Size: 11.5 MB (11491861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:09bb1bb42e9a2a5df32ec33bf391041d7044cc60d6495064c8c385d03ca39e2c`  
-		Last Modified: Tue, 07 Jan 2025 21:44:49 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 983.7 KB (983733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:10154685d2bdcf8983034e74f5511388a937e3a31b862b49a609b5045b63772c`  
@@ -17305,7 +17290,7 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2bfd359355379ac5e311edc77af6b5f135a511d880a4009084ef7ecf2d21ac82`  
-		Last Modified: Tue, 07 Jan 2025 22:38:08 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:45 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -17325,11 +17310,10 @@ $ docker pull cassandra@sha256:7e06d17333165d46221bc7559fcc6402c99dc2d4f2e8e4bc8
 
 -	Layers:
 	-	`sha256:05f216f55f5ed521385c361cd925f6da99350e37f22322be522e336d41b04ff8`  
-		Last Modified: Tue, 07 Jan 2025 21:28:59 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 4.5 MB (4457941 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b009b064231801eec74e6ddcb23bcdf4aace5087b9512d3bb608f6dd180cdf57`  
-		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 35.9 KB (35864 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17417,7 +17401,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:22923f2d3771652152b182f665fc71345ceb11b32ee14f72a772b486d1a6b396`  
@@ -17433,7 +17416,7 @@ CMD ["cassandra" "-f"]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bf4964a8487d6563a924b9b8b2ba51ae91c369b762094a8c54f248715e527ce`  
-		Last Modified: Thu, 24 Oct 2024 02:46:31 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:28:45 GMT  
 		Size: 1.7 KB (1730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f1e035384469e5fa73a3630d483f3dd5bbc015acfbdc566707a5bc0b053aeab2`  
@@ -17449,6 +17432,7 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0986beacdfd9781bd1bab2f9ac64309fbf20505a8a5c10410e10aae88f9dabb4`  
+		Last Modified: Thu, 24 Oct 2024 02:46:32 GMT  
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -17468,7 +17452,6 @@ $ docker pull cassandra@sha256:c10a5768b8ef70517707890b5ce023f24e2a3e192aaa6bf9e
 
 -	Layers:
 	-	`sha256:3af8108e40fa59792b9df5ead543f5ce19c62441ddd09db4807c53bd46e04988`  
-		Last Modified: Thu, 24 Oct 2024 02:46:32 GMT  
 		Size: 4.5 MB (4460483 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c5bada17d0541d3ef539fdbbfebcc8214b0bbb9887093c23b9e39e49f371ebef`  
@@ -17568,7 +17551,7 @@ CMD ["cassandra" "-f"]
 		Size: 46.4 MB (46430856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0c3c08b455337af9ba6b5fe522389a1d0a2b621fe437f3832a54289cac03397`  
-		Last Modified: Tue, 07 Jan 2025 22:28:50 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:12:28 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26811a6e12de121df2970871f9027eb19d2c672b0045944972cf63a39c74aa15`  
@@ -17588,7 +17571,6 @@ CMD ["cassandra" "-f"]
 		Size: 914.5 KB (914456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cf656852e1eefee1296556be882af752623b2b6372bc989e08c59b6843fbe655`  
-		Last Modified: Tue, 07 Jan 2025 22:28:53 GMT  
 		Size: 70.4 MB (70434236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fab4aff1fdd7754bfc49d291eb29fbb2c2418755ea6a2c5ea4fd0379da162e8`  
@@ -17724,7 +17706,6 @@ CMD ["cassandra" "-f"]
 		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ec3dcd5ac6c0cd163f781408b64bd1c703f22e81abf8a3c72e9c61829c36a7c`  
-		Last Modified: Thu, 24 Oct 2024 16:13:15 GMT  
 		Size: 12.1 MB (12118212 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ac6decb4f88d7560375bad2726e8e48af8c2a39edc5e248618da3e31039fe41`  
@@ -17732,10 +17713,10 @@ CMD ["cassandra" "-f"]
 		Size: 904.7 KB (904735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bceb84a1fbc88c0873f2e97cc16b97481450118d76fe58cab6cfd2cdc1bbc083`  
+		Last Modified: Thu, 24 Oct 2024 16:13:16 GMT  
 		Size: 70.4 MB (70434196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d2a9b3a69e357257012a8aeac43e2a4622e633f8d640f934272f36efcfe7504`  
-		Last Modified: Thu, 24 Oct 2024 16:13:14 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -17851,6 +17832,7 @@ CMD ["cassandra" "-f"]
 		Size: 16.1 MB (16141938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:202da4a4f6d062585c4f0ceae45eeca1c654d6feae753209341ae2fe55213d41`  
+		Last Modified: Thu, 24 Oct 2024 17:32:49 GMT  
 		Size: 43.9 MB (43943407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3f26b56544cb69df62eeb7f99607b83222cc0287008fbeca07554cb171de6100`  
@@ -17858,6 +17840,7 @@ CMD ["cassandra" "-f"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb36841c35a2b10c356fdb612c0af05dd3474471d0535c2747539deef4c45426`  
+		Last Modified: Thu, 24 Oct 2024 17:32:48 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3426158c9cdf93bb093bba04da8bd6a33d714e81923bcfa48da3a751ab103860`  
@@ -17877,7 +17860,6 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3985765d28b41600c4311cdb12539e6b62174eb1312356b343cab386399af955`  
-		Last Modified: Thu, 24 Oct 2024 20:35:09 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18032,7 +18014,7 @@ CMD ["cassandra" "-f"]
 		Size: 11.5 MB (11491861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:09bb1bb42e9a2a5df32ec33bf391041d7044cc60d6495064c8c385d03ca39e2c`  
-		Last Modified: Tue, 07 Jan 2025 21:44:49 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 983.7 KB (983733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:10154685d2bdcf8983034e74f5511388a937e3a31b862b49a609b5045b63772c`  
@@ -18040,7 +18022,7 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2bfd359355379ac5e311edc77af6b5f135a511d880a4009084ef7ecf2d21ac82`  
-		Last Modified: Tue, 07 Jan 2025 22:38:08 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:45 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18060,11 +18042,10 @@ $ docker pull cassandra@sha256:7e06d17333165d46221bc7559fcc6402c99dc2d4f2e8e4bc8
 
 -	Layers:
 	-	`sha256:05f216f55f5ed521385c361cd925f6da99350e37f22322be522e336d41b04ff8`  
-		Last Modified: Tue, 07 Jan 2025 21:28:59 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 4.5 MB (4457941 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b009b064231801eec74e6ddcb23bcdf4aace5087b9512d3bb608f6dd180cdf57`  
-		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 35.9 KB (35864 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18152,7 +18133,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:22923f2d3771652152b182f665fc71345ceb11b32ee14f72a772b486d1a6b396`  
@@ -18168,7 +18148,7 @@ CMD ["cassandra" "-f"]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bf4964a8487d6563a924b9b8b2ba51ae91c369b762094a8c54f248715e527ce`  
-		Last Modified: Thu, 24 Oct 2024 02:46:31 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:28:45 GMT  
 		Size: 1.7 KB (1730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f1e035384469e5fa73a3630d483f3dd5bbc015acfbdc566707a5bc0b053aeab2`  
@@ -18184,6 +18164,7 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0986beacdfd9781bd1bab2f9ac64309fbf20505a8a5c10410e10aae88f9dabb4`  
+		Last Modified: Thu, 24 Oct 2024 02:46:32 GMT  
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18203,7 +18184,6 @@ $ docker pull cassandra@sha256:c10a5768b8ef70517707890b5ce023f24e2a3e192aaa6bf9e
 
 -	Layers:
 	-	`sha256:3af8108e40fa59792b9df5ead543f5ce19c62441ddd09db4807c53bd46e04988`  
-		Last Modified: Thu, 24 Oct 2024 02:46:32 GMT  
 		Size: 4.5 MB (4460483 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c5bada17d0541d3ef539fdbbfebcc8214b0bbb9887093c23b9e39e49f371ebef`  
@@ -18303,7 +18283,7 @@ CMD ["cassandra" "-f"]
 		Size: 46.4 MB (46430856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0c3c08b455337af9ba6b5fe522389a1d0a2b621fe437f3832a54289cac03397`  
-		Last Modified: Tue, 07 Jan 2025 22:28:50 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:12:28 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26811a6e12de121df2970871f9027eb19d2c672b0045944972cf63a39c74aa15`  
@@ -18323,7 +18303,6 @@ CMD ["cassandra" "-f"]
 		Size: 914.5 KB (914456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cf656852e1eefee1296556be882af752623b2b6372bc989e08c59b6843fbe655`  
-		Last Modified: Tue, 07 Jan 2025 22:28:53 GMT  
 		Size: 70.4 MB (70434236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fab4aff1fdd7754bfc49d291eb29fbb2c2418755ea6a2c5ea4fd0379da162e8`  
@@ -18459,7 +18438,6 @@ CMD ["cassandra" "-f"]
 		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ec3dcd5ac6c0cd163f781408b64bd1c703f22e81abf8a3c72e9c61829c36a7c`  
-		Last Modified: Thu, 24 Oct 2024 16:13:15 GMT  
 		Size: 12.1 MB (12118212 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ac6decb4f88d7560375bad2726e8e48af8c2a39edc5e248618da3e31039fe41`  
@@ -18467,10 +18445,10 @@ CMD ["cassandra" "-f"]
 		Size: 904.7 KB (904735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bceb84a1fbc88c0873f2e97cc16b97481450118d76fe58cab6cfd2cdc1bbc083`  
+		Last Modified: Thu, 24 Oct 2024 16:13:16 GMT  
 		Size: 70.4 MB (70434196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d2a9b3a69e357257012a8aeac43e2a4622e633f8d640f934272f36efcfe7504`  
-		Last Modified: Thu, 24 Oct 2024 16:13:14 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18586,6 +18564,7 @@ CMD ["cassandra" "-f"]
 		Size: 16.1 MB (16141938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:202da4a4f6d062585c4f0ceae45eeca1c654d6feae753209341ae2fe55213d41`  
+		Last Modified: Thu, 24 Oct 2024 17:32:49 GMT  
 		Size: 43.9 MB (43943407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3f26b56544cb69df62eeb7f99607b83222cc0287008fbeca07554cb171de6100`  
@@ -18593,6 +18572,7 @@ CMD ["cassandra" "-f"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb36841c35a2b10c356fdb612c0af05dd3474471d0535c2747539deef4c45426`  
+		Last Modified: Thu, 24 Oct 2024 17:32:48 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3426158c9cdf93bb093bba04da8bd6a33d714e81923bcfa48da3a751ab103860`  
@@ -18612,7 +18592,6 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3985765d28b41600c4311cdb12539e6b62174eb1312356b343cab386399af955`  
-		Last Modified: Thu, 24 Oct 2024 20:35:09 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18767,7 +18746,7 @@ CMD ["cassandra" "-f"]
 		Size: 11.5 MB (11491861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:09bb1bb42e9a2a5df32ec33bf391041d7044cc60d6495064c8c385d03ca39e2c`  
-		Last Modified: Tue, 07 Jan 2025 21:44:49 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 983.7 KB (983733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:10154685d2bdcf8983034e74f5511388a937e3a31b862b49a609b5045b63772c`  
@@ -18775,7 +18754,7 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2bfd359355379ac5e311edc77af6b5f135a511d880a4009084ef7ecf2d21ac82`  
-		Last Modified: Tue, 07 Jan 2025 22:38:08 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:45 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18795,11 +18774,10 @@ $ docker pull cassandra@sha256:7e06d17333165d46221bc7559fcc6402c99dc2d4f2e8e4bc8
 
 -	Layers:
 	-	`sha256:05f216f55f5ed521385c361cd925f6da99350e37f22322be522e336d41b04ff8`  
-		Last Modified: Tue, 07 Jan 2025 21:28:59 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 4.5 MB (4457941 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b009b064231801eec74e6ddcb23bcdf4aace5087b9512d3bb608f6dd180cdf57`  
-		Last Modified: Thu, 24 Oct 2024 01:56:44 GMT  
 		Size: 35.9 KB (35864 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18887,7 +18865,6 @@ CMD ["cassandra" "-f"]
 		Size: 26.6 MB (26639293 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed86084ba4ec44c57061b2db095ef9690641a41020a61ffaf80be611a6be6241`  
-		Last Modified: Thu, 24 Oct 2024 00:59:31 GMT  
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:22923f2d3771652152b182f665fc71345ceb11b32ee14f72a772b486d1a6b396`  
@@ -18903,7 +18880,7 @@ CMD ["cassandra" "-f"]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bf4964a8487d6563a924b9b8b2ba51ae91c369b762094a8c54f248715e527ce`  
-		Last Modified: Thu, 24 Oct 2024 02:46:31 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:28:45 GMT  
 		Size: 1.7 KB (1730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f1e035384469e5fa73a3630d483f3dd5bbc015acfbdc566707a5bc0b053aeab2`  
@@ -18919,6 +18896,7 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0986beacdfd9781bd1bab2f9ac64309fbf20505a8a5c10410e10aae88f9dabb4`  
+		Last Modified: Thu, 24 Oct 2024 02:46:32 GMT  
 		Size: 1.2 KB (1220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -18938,7 +18916,6 @@ $ docker pull cassandra@sha256:c10a5768b8ef70517707890b5ce023f24e2a3e192aaa6bf9e
 
 -	Layers:
 	-	`sha256:3af8108e40fa59792b9df5ead543f5ce19c62441ddd09db4807c53bd46e04988`  
-		Last Modified: Thu, 24 Oct 2024 02:46:32 GMT  
 		Size: 4.5 MB (4460483 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c5bada17d0541d3ef539fdbbfebcc8214b0bbb9887093c23b9e39e49f371ebef`  
@@ -19038,7 +19015,7 @@ CMD ["cassandra" "-f"]
 		Size: 46.4 MB (46430856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0c3c08b455337af9ba6b5fe522389a1d0a2b621fe437f3832a54289cac03397`  
-		Last Modified: Tue, 07 Jan 2025 22:28:50 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:12:28 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26811a6e12de121df2970871f9027eb19d2c672b0045944972cf63a39c74aa15`  
@@ -19058,7 +19035,6 @@ CMD ["cassandra" "-f"]
 		Size: 914.5 KB (914456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cf656852e1eefee1296556be882af752623b2b6372bc989e08c59b6843fbe655`  
-		Last Modified: Tue, 07 Jan 2025 22:28:53 GMT  
 		Size: 70.4 MB (70434236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fab4aff1fdd7754bfc49d291eb29fbb2c2418755ea6a2c5ea4fd0379da162e8`  
@@ -19194,7 +19170,6 @@ CMD ["cassandra" "-f"]
 		Size: 1.7 KB (1736 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ec3dcd5ac6c0cd163f781408b64bd1c703f22e81abf8a3c72e9c61829c36a7c`  
-		Last Modified: Thu, 24 Oct 2024 16:13:15 GMT  
 		Size: 12.1 MB (12118212 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ac6decb4f88d7560375bad2726e8e48af8c2a39edc5e248618da3e31039fe41`  
@@ -19202,10 +19177,10 @@ CMD ["cassandra" "-f"]
 		Size: 904.7 KB (904735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bceb84a1fbc88c0873f2e97cc16b97481450118d76fe58cab6cfd2cdc1bbc083`  
+		Last Modified: Thu, 24 Oct 2024 16:13:16 GMT  
 		Size: 70.4 MB (70434196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d2a9b3a69e357257012a8aeac43e2a4622e633f8d640f934272f36efcfe7504`  
-		Last Modified: Thu, 24 Oct 2024 16:13:14 GMT  
 		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -19321,6 +19296,7 @@ CMD ["cassandra" "-f"]
 		Size: 16.1 MB (16141938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:202da4a4f6d062585c4f0ceae45eeca1c654d6feae753209341ae2fe55213d41`  
+		Last Modified: Thu, 24 Oct 2024 17:32:49 GMT  
 		Size: 43.9 MB (43943407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3f26b56544cb69df62eeb7f99607b83222cc0287008fbeca07554cb171de6100`  
@@ -19328,6 +19304,7 @@ CMD ["cassandra" "-f"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb36841c35a2b10c356fdb612c0af05dd3474471d0535c2747539deef4c45426`  
+		Last Modified: Thu, 24 Oct 2024 17:32:48 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3426158c9cdf93bb093bba04da8bd6a33d714e81923bcfa48da3a751ab103860`  
@@ -19347,7 +19324,6 @@ CMD ["cassandra" "-f"]
 		Size: 70.4 MB (70434475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3985765d28b41600c4311cdb12539e6b62174eb1312356b343cab386399af955`  
-		Last Modified: Thu, 24 Oct 2024 20:35:09 GMT  
 		Size: 1.2 KB (1221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
