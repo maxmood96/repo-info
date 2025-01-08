@@ -86,6 +86,7 @@ $ docker pull elixir@sha256:7a863ce16a4c735177ddbb2745e3402d0734857924970d56359e
 		Size: 273.7 KB (273673 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:47edf61824e4f70f3ff05eee21c649bad7b015803f4e4410de7a0b693f13355c`  
+		Last Modified: Tue, 07 Jan 2025 19:10:53 GMT  
 		Size: 10.4 KB (10428 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -152,6 +153,7 @@ $ docker pull elixir@sha256:8e5e089fe435204a7b7c0691066b6ace5f811b23d9f800dd8002
 
 -	Layers:
 	-	`sha256:72ab4dcf1761299315ff20a949443b301c31eeee1134d3593932b29739645d39`  
+		Last Modified: Thu, 02 Jan 2025 19:54:34 GMT  
 		Size: 274.4 KB (274405 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f442414466f4b6ea1ff23b48d59a62be76e2de175d452a2ad4ae697444d3a7a8`  
@@ -225,7 +227,6 @@ $ docker pull elixir@sha256:3c94808930c08076a4204da7c1a86006ff6e2cede7069de25caa
 		Size: 274.5 KB (274485 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:34960a69a53497e4017cc117caca04d63fecf4117d8cb553d1acdc9a06153874`  
-		Last Modified: Tue, 07 Jan 2025 20:46:34 GMT  
 		Size: 10.6 KB (10555 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -363,6 +364,7 @@ $ docker pull elixir@sha256:e6d389eab1b05e278c5eb6ef36b55cefeafb46b22350866e3864
 
 -	Layers:
 	-	`sha256:d83d327cf5dc6f9440626d1bfecba3156751a0fda1e57d14e18b652d377ef805`  
+		Last Modified: Tue, 07 Jan 2025 19:25:46 GMT  
 		Size: 267.8 KB (267802 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f106c28bb543680060c24bcf236bbb3646c1c150d8143789b77e464d4b5d31c8`  
@@ -409,6 +411,7 @@ CMD ["iex"]
 		Size: 3.5 MB (3459179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14222fdb6913612281828a38e746ef583f767835b9f337bbdb9767e49f660bb3`  
+		Last Modified: Wed, 08 Jan 2025 03:32:30 GMT  
 		Size: 47.7 MB (47670652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5c7467cb044b1bc94f368d6cf8fefc63c4b9a50024ee8ebd8e44dc3921670e3`  
@@ -432,7 +435,7 @@ $ docker pull elixir@sha256:4d879cc6d90b657a199ed3f36e5ff4714b476e2f894631899172
 
 -	Layers:
 	-	`sha256:428f7ccbf5df79428f2054a6c766aa0157b863d5a2d6b277ff45f0158328e738`  
-		Last Modified: Wed, 08 Jan 2025 01:37:28 GMT  
+		Last Modified: Tue, 07 Jan 2025 20:51:52 GMT  
 		Size: 267.8 KB (267756 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d064d6e5682f06a867b602d1605a3849dddf7f959b6b2ff0c4eeee2adb8b9038`  
