@@ -97,7 +97,7 @@ USER root
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1967582fbbe48da0f44ae5f24d4ecdbfcb32e005c0235041b1ddb4382bebd088`  
-		Last Modified: Thu, 24 Oct 2024 00:57:00 GMT  
+		Last Modified: Tue, 07 Jan 2025 23:20:31 GMT  
 		Size: 16.1 MB (16142475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bbcdd5be0eb71025a105ec18ff66181d19cc62fddbd5f7b8d19fb9ea2be0630b`  
@@ -109,7 +109,6 @@ USER root
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6cacf2d88ab4fffd9cd634473d5ceddad404c00911e743d7fc3e43ed07560b04`  
-		Last Modified: Thu, 24 Oct 2024 00:57:00 GMT  
 		Size: 2.3 KB (2284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bd808ecd6068319da1c6e3f9f08ad58be7537e1af631ed2f7f5105eba891e8dd`  
@@ -121,7 +120,6 @@ USER root
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5fecfea4835580384ab8285cd2063a01a39e87a3c79e266b984da69a4f008bab`  
-		Last Modified: Thu, 24 Oct 2024 01:57:37 GMT  
 		Size: 50.6 MB (50634865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:302de23cc0bd6feecdfabef27c3a01a6b58e85c3b9dc61604297db422143814f`  
@@ -149,7 +147,6 @@ $ docker pull gradle@sha256:dc9542463e4c7fb732aed389e0d30ffe8531652d951f0e8f9621
 
 -	Layers:
 	-	`sha256:594dc1c5431a4711beabdbe9a068ade459f2cb6b96f29756138674e5ad4b4713`  
-		Last Modified: Thu, 24 Oct 2024 01:57:36 GMT  
 		Size: 7.4 MB (7359410 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:81d53c42ef46c3777a0f05ca158ba90a3838184adc66c7932bfdf385633ff207`  
@@ -241,6 +238,7 @@ USER root
 		Size: 15.9 MB (15891671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:27df165d9e9a39ba64bf0837895d2ced7b899cc1422b2140e05a2386e2c46d9b`  
+		Last Modified: Thu, 24 Oct 2024 01:05:40 GMT  
 		Size: 138.1 MB (138079192 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c08548e6a57ce10bd166b64c4744be11e9a7619e3625279a468486d2574d983e`  
@@ -260,6 +258,7 @@ USER root
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7da112d0185985c66992eb43ea61eb606537862e462f667597ad608f5c877447`  
+		Last Modified: Thu, 24 Oct 2024 01:58:24 GMT  
 		Size: 53.1 MB (53133484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c2c0a94cbc8cdc72497445c00af020de4c8704aca6d2ce3b9d139950ec95b2a3`  
@@ -407,6 +406,7 @@ USER root
 		Size: 107.7 MB (107696667 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7d630ef399c072f4efbd42777423b60166a13479b4e2e39598b305fa3c60bf8c`  
+		Last Modified: Thu, 24 Oct 2024 02:52:23 GMT  
 		Size: 425.0 KB (425028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -526,10 +526,10 @@ USER root
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:930f7822acb2a99974c489938b35688c213713dd4ed352b42460ed0158c61046`  
-		Last Modified: Thu, 24 Oct 2024 01:05:59 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:75e08dc98bd324cb23887d085518e3e5561bc5c98b850c7f24e9e6a890a2eaed`  
+		Last Modified: Thu, 24 Oct 2024 01:56:33 GMT  
 		Size: 4.3 KB (4314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -545,6 +545,7 @@ USER root
 		Size: 107.7 MB (107696649 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c8e881e1c8adc308e74ebc7334f31a678ad755267a28d783695bf5dc0bb2ca8c`  
+		Last Modified: Thu, 24 Oct 2024 05:15:05 GMT  
 		Size: 35.0 KB (34985 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -676,6 +677,7 @@ USER root
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:69651d18e08514ea6743e17d14b2bd00cfe932e4e310ef3d2724c1f8a111f426`  
+		Last Modified: Thu, 24 Oct 2024 18:12:52 GMT  
 		Size: 50.3 MB (50330236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0c1114b288716b9958900f042b89d042a5cb7c2b42f196fef1dfe73226a96d6`  
