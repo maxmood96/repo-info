@@ -100,7 +100,6 @@ $ docker pull hylang@sha256:fefebe4b340ee06431fae390567aba2c17135097612ce7ab570f
 
 -	Layers:
 	-	`sha256:5a216203f57cb63c45741920212de695ebc47ab963d6ede5b42a5212bbb8b988`  
-		Last Modified: Tue, 24 Dec 2024 23:23:32 GMT  
 		Size: 2.4 MB (2418871 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3690a45c3432827a5a359361142a73f24a6fd0a466623db3cd3549294e85892e`  
@@ -325,11 +324,11 @@ CMD ["hy"]
 
 -	Layers:
 	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
-		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Last Modified: Tue, 07 Jan 2025 21:57:10 GMT  
 		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d584bf23d8fc2e40e9e41b249d2c41000a6ff47e4e7df4309ee6a2baf0970899`  
-		Last Modified: Tue, 07 Jan 2025 19:57:32 GMT  
+		Last Modified: Wed, 25 Dec 2024 04:16:21 GMT  
 		Size: 3.1 MB (3137682 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:914edf00dfe8f095531dcf38ba764e333f8747c6c87b8dd0022c1473324db24f`  
@@ -341,7 +340,6 @@ CMD ["hy"]
 		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5980bdca012bdf99c136d5b9326c2cc5f49dd06a7b48b0be75f10f54e7d64a16`  
-		Last Modified: Wed, 25 Dec 2024 11:00:08 GMT  
 		Size: 5.7 MB (5674890 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -420,6 +418,7 @@ CMD ["hy"]
 		Size: 3.3 MB (3316815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:53586f9800446f81173b320145a8aa3bbdfad129238e4b0acb41d26fcdc2884f`  
+		Last Modified: Tue, 24 Dec 2024 22:44:24 GMT  
 		Size: 12.8 MB (12817540 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ecdf339f914d70dabac445648ab67c76a0863fae54bab2346722abdc32f7b9b`  
@@ -498,7 +497,6 @@ CMD ["hy"]
 
 -	Layers:
 	-	`sha256:4a1ea4d3c9e0863e99d27aae6dac9a4b908a6413e758c7785d8fefe555b0e760`  
-		Last Modified: Wed, 25 Dec 2024 00:32:48 GMT  
 		Size: 32.1 MB (32063240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5bc7f727bc90d04e6d16da7b1ec079fdaef9f19e51ae70a4c086f6cb8c311a14`  

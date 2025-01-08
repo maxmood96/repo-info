@@ -70,7 +70,7 @@ CMD ["hy"]
 		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f7d891cc9f68e309eedef48c2572273fab39cf1cc347d2281d2da3f664ec5368`  
-		Last Modified: Tue, 24 Dec 2024 22:27:29 GMT  
+		Last Modified: Tue, 07 Jan 2025 21:42:52 GMT  
 		Size: 3.3 MB (3317283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:96b561a6925ac3ddad01edad323333c166c67527844255b4a621552d94f1598e`  
@@ -106,6 +106,7 @@ $ docker pull hylang@sha256:d37733bdc953282377c85f5c1263e0797673089e224e5814f2a5
 		Size: 2.5 MB (2464566 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:021451b71bf6cb6f4f300eb27f6ffa234db3e4163b5b25187c9396f7f0d8eb09`  
+		Last Modified: Tue, 24 Dec 2024 23:23:26 GMT  
 		Size: 9.3 KB (9277 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -247,6 +248,7 @@ CMD ["hy"]
 		Size: 23.9 MB (23933522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8f8288f7a601ddb4b02acf714d6ee53ed985f84aef779897e930992d04bb5871`  
+		Last Modified: Wed, 25 Dec 2024 07:39:21 GMT  
 		Size: 2.7 MB (2721262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:da6f2abcbc9f8c374a9b0cf29801e373a708ee62c51484a58e2bb358d0ae8858`  
@@ -278,6 +280,7 @@ $ docker pull hylang@sha256:43b113bf6bf6a6dc29f7175a647d1a524228750d927424aeb371
 
 -	Layers:
 	-	`sha256:477989a3207f654c92e3adf9747d7899d3fb19052d4dd6ad037855cecad18cdd`  
+		Last Modified: Wed, 25 Dec 2024 15:18:39 GMT  
 		Size: 2.5 MB (2466867 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7513db2290236e19f82e1a0f2b5a5bfd3d187c685ac3e1bb9721b744cdec4ce0`  
@@ -330,7 +333,7 @@ CMD ["hy"]
 
 -	Layers:
 	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
-		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Last Modified: Tue, 07 Jan 2025 21:57:10 GMT  
 		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:681f5b8ff8010135c072ddef91d563db5d69c0d0a38d4b6c79ffe3df80338747`  
@@ -338,7 +341,7 @@ CMD ["hy"]
 		Size: 3.1 MB (3137729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b1227c93bfb78d6c0275ab648c14c8979cd9a2cf3d5ebae317a44f13952385b1`  
-		Last Modified: Wed, 25 Dec 2024 05:35:09 GMT  
+		Last Modified: Tue, 07 Jan 2025 22:24:47 GMT  
 		Size: 16.1 MB (16126169 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb08acae466ddfe3a5d89ab1aba432157d42f7a12a4a23c181cc4401001e6127`  
@@ -366,7 +369,6 @@ $ docker pull hylang@sha256:bb69eb3a8b20ac2f5525917c4ced85cba6667bfef56ce6b1cc79
 
 -	Layers:
 	-	`sha256:2237aa5504a9a372434d7296c464bf591d485505b8cb3c4d8a427f1e3f70cf79`  
-		Last Modified: Wed, 25 Dec 2024 11:02:03 GMT  
 		Size: 2.5 MB (2464887 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f657d2d008afe50a2b76ceb1dd3567357a769a94711ce132c34b2f8d8caa6f7e`  
@@ -427,7 +429,6 @@ CMD ["hy"]
 		Size: 3.3 MB (3316834 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:81d68b73cbfe72239c4ca83fb84856eb496185af9486ae443e2dfba86b45babd`  
-		Last Modified: Tue, 24 Dec 2024 22:42:41 GMT  
 		Size: 16.4 MB (16433408 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:291be4d8bf407583749425c3901c3cd405ec291895f7ef9ea57113708366641e`  
@@ -508,13 +509,14 @@ CMD ["hy"]
 
 -	Layers:
 	-	`sha256:4a1ea4d3c9e0863e99d27aae6dac9a4b908a6413e758c7785d8fefe555b0e760`  
-		Last Modified: Wed, 25 Dec 2024 00:32:48 GMT  
 		Size: 32.1 MB (32063240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c6e349d4e1e3b8d870499c5d0912b4ebab1d2b5b0719c791729a78151ca542e`  
+		Last Modified: Wed, 25 Dec 2024 08:15:01 GMT  
 		Size: 3.5 MB (3520196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:647e9b07a3e63fb301e50f1ee80d7d01f615e38c5a97ff2d9df28825a3fc54e3`  
+		Last Modified: Wed, 25 Dec 2024 08:31:06 GMT  
 		Size: 16.8 MB (16836652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c3e1e28f0f6483fa290be0b85f6f9e7ec43887806d7dc4613ba20bde9e926e8`  
