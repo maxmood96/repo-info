@@ -52,15 +52,19 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c1e5fc20939f49ca46aaa63fda94b740a46522034dd33a99dc846c2ab47da385`  
+		Last Modified: Tue, 17 Sep 2024 00:58:49 GMT  
 		Size: 3.6 MB (3622683 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14d7c12d3dff8024cc7a65a06760eefef7523e92d4ab01561da2876474be6e25`  
+		Last Modified: Tue, 17 Sep 2024 00:58:49 GMT  
 		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:257f9b0966cd5484318ba1e2300bcf4102ad856d15cf79307d6575cb919be75d`  
+		Last Modified: Tue, 17 Sep 2024 00:58:49 GMT  
 		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:25429882efb06104ffa477fe41e22a29ad87a1b8b5a97eddc221fb3cfb85bc29`  
+		Last Modified: Tue, 17 Sep 2024 00:58:50 GMT  
 		Size: 110.0 KB (110041 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -129,9 +133,11 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ab8ce4fcc7ac84933f63a18dcc1f51edb6a54d593241a9ad9eda2da49c4a0a93`  
+		Last Modified: Tue, 17 Sep 2024 02:36:52 GMT  
 		Size: 3.6 MB (3594202 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8420d28ea54fd4f14398ac3479d15abc9d09b6fdfd86904d39445315fa9ccd4a`  
+		Last Modified: Tue, 17 Sep 2024 02:36:52 GMT  
 		Size: 1.7 KB (1747 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:89798e75750754cd749a20391aabd4a2982ab8ea03464d1069af684488290b27`  
@@ -163,5 +169,6 @@ $ docker pull neurodebian@sha256:769792b0a9ae99abbe1b81296f09e1e53c2e66264384854
 		Size: 2.0 MB (2041314 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:783fe908caebc3d7a05968a298b4c97dd56aff0cc5841272d2f31f8d0eac4efd`  
+		Last Modified: Tue, 17 Sep 2024 02:36:52 GMT  
 		Size: 13.7 KB (13683 bytes)  
 		MIME: application/vnd.in-toto+json

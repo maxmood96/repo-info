@@ -52,15 +52,19 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d5bb8d306692844672bbfa1d36b12ac9e70dcba3afed1b205da716bd98445dfd`  
+		Last Modified: Tue, 03 Dec 2024 02:31:15 GMT  
 		Size: 3.6 MB (3558848 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:060c4cfbe42dcf01c60754dde056484b11eb0bf692306f5b6e056073296c5dbd`  
+		Last Modified: Tue, 03 Dec 2024 02:31:15 GMT  
 		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:10363b67b7c7df5a7f19aeb132cc2e1c148a4850360cbfea065de604e7e84689`  
+		Last Modified: Tue, 03 Dec 2024 02:31:15 GMT  
 		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:148844dcd0fea449935fdfbce9218162d22b312bdf46e3e6b3944aacbf3d4402`  
+		Last Modified: Tue, 03 Dec 2024 02:31:15 GMT  
 		Size: 101.6 KB (101627 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -84,6 +88,7 @@ $ docker pull neurodebian@sha256:0dd7607b772e7d3e7a9f3c08dcd17fe3fd5d72058d713f6
 		Size: 2.0 MB (1987197 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:50eac1b2f08d5d06cf4f78d38044ff517d06861bd698f3072184621c47feb780`  
+		Last Modified: Tue, 03 Dec 2024 02:31:15 GMT  
 		Size: 13.7 KB (13660 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -136,9 +141,11 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 		Size: 1.7 KB (1748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bc2614b4bbf71177097aa4d12c46d11d7578598e10aa3592123e9463cdfb0e7`  
+		Last Modified: Tue, 03 Dec 2024 06:15:49 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c2df2b4e0bcd2792b731ac676570a2eeed647f45c932ddece55a8243a41bca9`  
+		Last Modified: Tue, 03 Dec 2024 06:15:49 GMT  
 		Size: 102.2 KB (102155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -162,5 +169,6 @@ $ docker pull neurodebian@sha256:fadec3f89a7e65d06897f8d31756c5c2b70d389671fc741
 		Size: 2.0 MB (1988242 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ebc91794bcf6ed620350bcd79c932cb607a78ee37e21fb3a7ac0cc318172128e`  
+		Last Modified: Tue, 03 Dec 2024 06:15:49 GMT  
 		Size: 13.8 KB (13784 bytes)  
 		MIME: application/vnd.in-toto+json
