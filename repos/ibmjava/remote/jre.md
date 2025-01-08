@@ -80,6 +80,7 @@ $ docker pull ibmjava@sha256:ca1aa15027d75e20dd6f2725d720246718778e844588013568e
 
 -	Layers:
 	-	`sha256:26bb82bf5b99aa14e34482fbae311dcb66f4e89b0618ef09ede9e9057df56d42`  
+		Last Modified: Mon, 09 Dec 2024 19:28:47 GMT  
 		Size: 2.1 MB (2053356 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:360449831d14ac0026c288b8ad77f3f03b3dfd4d7d7181ebf2db2d64ba1f7dea`  
@@ -126,6 +127,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 
 -	Layers:
 	-	`sha256:bd389594e541fc722f244791a495e1a62a526cb95daeea3d2304d9be4e2f0e2a`  
+		Last Modified: Wed, 11 Sep 2024 17:24:59 GMT  
 		Size: 34.4 MB (34448242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5432b06a5eb0b15c862e467e7550b35e423da42224cc982fc620a3e04b458d07`  
@@ -157,6 +159,7 @@ $ docker pull ibmjava@sha256:86340dccfe394b34bb3845936529c0efb1d0bf79a173649129a
 		Size: 2.1 MB (2050650 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3d2fe4b7081976e30b0e7a2762f515752a84cfe599118f4866bc692c9ce1de36`  
+		Last Modified: Mon, 09 Dec 2024 19:28:56 GMT  
 		Size: 13.8 KB (13818 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -203,6 +206,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 		Size: 28.0 MB (28001475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb6d015aafef1cc8c93af1c71f0f144845de0b5e0e0bbcd3c27bccf671404292`  
+		Last Modified: Tue, 17 Sep 2024 02:12:21 GMT  
 		Size: 1.4 MB (1441914 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b9b5ee1b4aea2eb53f28f33b78c5d4a81f3ccb0aab0c6564549accefa761168b`  
@@ -226,6 +230,7 @@ $ docker pull ibmjava@sha256:310161041567a40c5b87ef853cf33896177b7ba4fef95ae4030
 
 -	Layers:
 	-	`sha256:aae87576164d106236d17541b23f0d6d25223af5f799350e490063166735ff3d`  
+		Last Modified: Tue, 10 Dec 2024 02:23:32 GMT  
 		Size: 2.0 MB (2047439 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:725a01ee9d7af3679c149d5a4289528c20cde3938ce948f0dd4635975cd7117e`  
