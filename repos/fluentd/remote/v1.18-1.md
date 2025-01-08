@@ -65,7 +65,7 @@ CMD ["fluentd"]
 
 -	Layers:
 	-	`sha256:eb002c13a70b63d5677b5a03f11b7b8b60f7d62f296fbb7475169a617500d3cb`  
-		Last Modified: Wed, 08 Jan 2025 03:16:29 GMT  
+		Last Modified: Tue, 07 Jan 2025 02:28:43 GMT  
 		Size: 3.4 MB (3413271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26cd378b01f03e6be712dcfcdb323317cca29acf1ba1e5cfcf4e51a34cd50d49`  
@@ -73,6 +73,7 @@ CMD ["fluentd"]
 		Size: 10.1 MB (10071273 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:68aeb3ce22de6a9f47c7553fdb4ec0e782152ede465a8ec31d04870e1ebec4fc`  
+		Last Modified: Tue, 07 Jan 2025 03:34:23 GMT  
 		Size: 1.3 KB (1306 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:75c056cce2ddac76a24273a6be985fe440a9ddcbf652c9a04d7a42aa488fe4e9`  
@@ -100,6 +101,7 @@ $ docker pull fluentd@sha256:ae7cde16897feb8f9913040d6e0f873a8173e0a11a9e0ca6378
 
 -	Layers:
 	-	`sha256:940969d9a7406d40753c78203a1ff07ce91da381dcfd4a38efe7f13559bdaaf5`  
+		Last Modified: Tue, 07 Jan 2025 03:34:24 GMT  
 		Size: 966.9 KB (966895 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f51382362c1a792939fbcd7505f44969d3c0684f4a6e55fb358f260b83bbab9e`  
@@ -157,7 +159,6 @@ CMD ["fluentd"]
 		Size: 3.2 MB (3169627 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7ba58b9263897cc0e79ef4c6e654d14352ced6a609a760bec255f8f0a2b39e26`  
-		Last Modified: Tue, 07 Jan 2025 18:12:51 GMT  
 		Size: 9.1 MB (9099087 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f5665918c386010085ebb738d6eb1e7378309c19c6137ed7f582cb5c94a9a1cc`  
@@ -165,7 +166,6 @@ CMD ["fluentd"]
 		Size: 1.3 KB (1307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:73443ffa09ef618036cffc98c38421d9ec3fad5a2a4e5d8c386d9cf54ae41e77`  
-		Last Modified: Tue, 07 Jan 2025 18:12:50 GMT  
 		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b046d755911d1c8d32e7545f94db43ea045030f91f6e80d997a90bf084352014`  
@@ -247,6 +247,7 @@ CMD ["fluentd"]
 		Size: 10.2 MB (10192491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9481ad8fa03c61d0f3f12a5aad626700181a57ab4f9253301a349c8829149e2`  
+		Last Modified: Tue, 07 Jan 2025 15:35:25 GMT  
 		Size: 1.3 KB (1308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d5bf2598d98331c3efd2672d4adbdc5a071eb9c5deba1ef533d68325a715ed3a`  
@@ -278,6 +279,7 @@ $ docker pull fluentd@sha256:01b4921e77406f889d0437125b71bdf5f805cf04641a193eb3c
 		Size: 967.0 KB (967037 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:58d187a63c79ddb91a2e0179f2797fcea1fa99c3ab862784dcaf7657bb889bd1`  
+		Last Modified: Tue, 07 Jan 2025 15:35:25 GMT  
 		Size: 15.0 KB (14964 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -421,13 +423,14 @@ CMD ["fluentd"]
 		Size: 3.4 MB (3362221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:90a33dfed01d5417a57d4f45cfbe928b58c88eec772bf26ac6e5b6a340464ba3`  
+		Last Modified: Tue, 07 Jan 2025 09:44:20 GMT  
 		Size: 9.9 MB (9853607 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:45a58106e64ea15d2ae20c1eea3281aee6cb3e91b09a3eb406579523c1d407a5`  
-		Last Modified: Tue, 07 Jan 2025 09:44:19 GMT  
 		Size: 1.3 KB (1307 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:75268cb14ad8a568e21378f40ce4ea09fb692dcd6aa489c70c60e7a7c8cc856d`  
+		Last Modified: Tue, 07 Jan 2025 09:44:19 GMT  
 		Size: 403.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6094d9f76c3cf37404c3e1c5b117c681cc454a3abfaa93e95920d77c6bc23b50`  
@@ -541,7 +544,7 @@ $ docker pull fluentd@sha256:031207cae7590e9bf888427eeb0a07bf194dd73708bc727f6e9
 
 -	Layers:
 	-	`sha256:e325a002bcd4d4c25a459aa84b41cad23d135795b9053ea23bdca9fbdda56a8a`  
-		Last Modified: Tue, 07 Jan 2025 15:26:01 GMT  
+		Last Modified: Wed, 08 Jan 2025 04:31:58 GMT  
 		Size: 962.0 KB (961985 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:41a7a7190a30fee7904cbe99d8c9059425326504ce2d1e6c3a2a620adf1daba2`  
