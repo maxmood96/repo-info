@@ -98,7 +98,6 @@ CMD ["catalina.sh" "run"]
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb5d4d56ef13b8a0dc2486230ea1989490aa6a301fbc594a8423fc3a2f861e89`  
-		Last Modified: Thu, 24 Oct 2024 00:58:40 GMT  
 		Size: 20.7 MB (20691339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c4219879992d7c2f81b5b001a1c16992a494a179741f0e543f84b55b1c5cffa0`  
@@ -150,6 +149,7 @@ $ docker pull tomcat@sha256:c3ae0d05e6ace6a5e0578105cd01635ffacec7c920e5b194d79e
 		Size: 4.0 MB (4016991 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:862c27771e3ed5da03761bb713c4c977540133c03a6963e65694b6d8b7daaf3a`  
+		Last Modified: Tue, 10 Dec 2024 01:29:58 GMT  
 		Size: 29.0 KB (28969 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -284,6 +284,7 @@ $ docker pull tomcat@sha256:87a3c4fbf250560df5d5814d8df1b87b467f32139fadc69c3ceb
 
 -	Layers:
 	-	`sha256:69890810b63a2344944b6ca16c99fa6e215a191976b54a6f1604db02458822c3`  
+		Last Modified: Wed, 08 Jan 2025 01:59:40 GMT  
 		Size: 4.1 MB (4112577 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a06fb6dd44267c60042a2eb1dfa7c20965849c7236cb18d248a8165c7c58a061`  
@@ -378,7 +379,6 @@ CMD ["catalina.sh" "run"]
 		Size: 22.6 MB (22612504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:988ce157267296dc2ab4a0077ed37d28e3b19bdea7a3545a464c261c2ff0503f`  
-		Last Modified: Thu, 24 Oct 2024 01:17:23 GMT  
 		Size: 157.8 MB (157768878 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5ef2f562922cdb53dbd0f31e7aa5ba1616b5a874169cf5a164118f0c7b54d45c`  
@@ -386,11 +386,9 @@ CMD ["catalina.sh" "run"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbfdc80a938bdbfe4a8a10fc4faddce66990f56e6c6e950020b17654d87b7f2f`  
-		Last Modified: Thu, 24 Oct 2024 01:17:19 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eef52b3e2ff29bb8151e108853e8bfd5de3fcd2dd14221f38707ca3456c4a236`  
-		Last Modified: Tue, 10 Dec 2024 01:37:12 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -422,7 +420,6 @@ $ docker pull tomcat@sha256:fb7af8f2c017acd54169ad3558cee469dc9bb116b01e40295e0c
 
 -	Layers:
 	-	`sha256:495c2d048751cd9ddad880a65496e3b5ce422a45ea87c3a5ee2ac755f88e03c6`  
-		Last Modified: Tue, 10 Dec 2024 01:40:43 GMT  
 		Size: 4.0 MB (4044410 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1f2d8fc0e2f309c3675d9dafe6c15c67b8382409d91fb5c8071da0ae3f473618`  
@@ -525,7 +522,6 @@ CMD ["catalina.sh" "run"]
 		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cbea120d399c572b15f50bca7216d291ce57e893795d7adc44694532ae5e9a8f`  
-		Last Modified: Thu, 24 Oct 2024 17:38:20 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9f67a4535a8b8813e30fddef34ebb728f1ad91a3d1bcdad3cfc79a23e4fdef80`  
@@ -537,7 +533,7 @@ CMD ["catalina.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ceb5105995ad3f33d88e840766ed26cb107e31da43d41aee75a3f116b26388bd`  
-		Last Modified: Wed, 08 Jan 2025 00:04:00 GMT  
+		Last Modified: Tue, 10 Dec 2024 05:03:47 GMT  
 		Size: 14.3 MB (14326542 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
