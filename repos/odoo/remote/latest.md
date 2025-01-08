@@ -229,7 +229,7 @@ CMD ["odoo"]
 
 -	Layers:
 	-	`sha256:8bb55f0677778c3027fcc4253dc452bc9c22de989a696391e739fb1cdbbdb4c2`  
-		Last Modified: Tue, 19 Nov 2024 17:38:33 GMT  
+		Last Modified: Wed, 08 Jan 2025 06:48:47 GMT  
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d565ed86e62ed5d5676c9727f5b1a3633ee3969c042d236ac1fba49d667c49c`  
@@ -245,6 +245,7 @@ CMD ["odoo"]
 		Size: 485.0 KB (485011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9bfdab3d8df1faefb7de77c3510c909b0d99bcc1178d007b57aa9fa14fb7708e`  
+		Last Modified: Tue, 07 Jan 2025 03:08:06 GMT  
 		Size: 366.3 MB (366293034 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb2acfe7737e2bc45549f931b08c66b4a369dc9bb65f6cbe0cd87429c3dd953d`  
@@ -280,7 +281,6 @@ $ docker pull odoo@sha256:660d0fa1249a6d89acd57d3a74a4e400a769e52a38da6f93f7782f
 
 -	Layers:
 	-	`sha256:1e581cee7af1c587bef0d3f8380b79a872b62ab3270490c2295cf05758f760e8`  
-		Last Modified: Tue, 07 Jan 2025 03:08:00 GMT  
 		Size: 58.3 MB (58344587 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3a028aad2cee0766059b838aa806f374cc72ae58d95ad5bb62c39fc2dc7034b0`  
