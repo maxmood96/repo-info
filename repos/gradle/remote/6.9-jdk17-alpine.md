@@ -105,7 +105,6 @@ USER root
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1bfa2d7e23b46b2a604365f2d11624b3e010057f6e3c25b9a27c4a74f4b33447`  
-		Last Modified: Tue, 07 Jan 2025 04:20:24 GMT  
 		Size: 30.9 MB (30924504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e1c1e397ffd3a2def112df896367d053b87914544a1193da4c4dc2a5d7e5360e`  
