@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:3cc6137bd729ce1e7c590a7cbbc3971e242c2678b80e1019b1eaaa5990bed954`
+- Image ID: `sha256:785f5a0f33b34a05f054fae143cda76972de349d3d8dfdb16e6f80498b3c4fd1`
 - Created: `2024-12-12T08:31:09Z`
-- Virtual Size: ~ 200.33 Mb  
+- Virtual Size: ~ 199.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -64,16 +64,16 @@ LGPL-2.1-or-later AND GPL-2.0-or-later
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.6.8-r0 description:
+alpine-baselayout-3.6.8-r1 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.6.8-r0 webpage:
+alpine-baselayout-3.6.8-r1 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.6.8-r0 installed size:
+alpine-baselayout-3.6.8-r1 installed size:
 6532 B
 
-alpine-baselayout-3.6.8-r0 license:
+alpine-baselayout-3.6.8-r1 license:
 GPL-2.0-only
 
 ```
@@ -81,16 +81,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.6.8-r0 description:
+alpine-baselayout-data-3.6.8-r1 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.6.8-r0 webpage:
+alpine-baselayout-data-3.6.8-r1 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-data-3.6.8-r0 installed size:
+alpine-baselayout-data-3.6.8-r1 installed size:
 18 KiB
 
-alpine-baselayout-data-3.6.8-r0 license:
+alpine-baselayout-data-3.6.8-r1 license:
 GPL-2.0-only
 
 ```
@@ -115,16 +115,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.0-r0 description:
+alpine-release-3.21.1-r0 description:
 Alpine release data
 
-alpine-release-3.21.0-r0 webpage:
+alpine-release-3.21.1-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.0-r0 installed size:
+alpine-release-3.21.1-r0 installed size:
 346 B
 
-alpine-release-3.21.0-r0 license:
+alpine-release-3.21.1-r0 license:
 MIT
 
 ```
@@ -285,16 +285,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20241010-r0 description:
+ca-certificates-20241121-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20241010-r0 webpage:
+ca-certificates-20241121-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20241010-r0 installed size:
-254 KiB
+ca-certificates-20241121-r0 installed size:
+238 KiB
 
-ca-certificates-20241010-r0 license:
+ca-certificates-20241121-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -302,16 +302,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241010-r0 description:
+ca-certificates-bundle-20241121-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241010-r0 webpage:
+ca-certificates-bundle-20241121-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241010-r0 installed size:
-220 KiB
+ca-certificates-bundle-20241121-r0 installed size:
+204 KiB
 
-ca-certificates-bundle-20241010-r0 license:
+ca-certificates-bundle-20241121-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -319,16 +319,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `coreutils`
 
 ```console
-coreutils-9.5-r1 description:
+coreutils-9.5-r2 description:
 The basic file, shell and text manipulation utilities
 
-coreutils-9.5-r1 webpage:
+coreutils-9.5-r2 webpage:
 https://www.gnu.org/software/coreutils/
 
-coreutils-9.5-r1 installed size:
+coreutils-9.5-r2 installed size:
 1006 KiB
 
-coreutils-9.5-r1 license:
+coreutils-9.5-r2 license:
 GPL-3.0-or-later
 
 ```
@@ -336,16 +336,16 @@ GPL-3.0-or-later
 ### `apk` package: `coreutils-env`
 
 ```console
-coreutils-env-9.5-r1 description:
+coreutils-env-9.5-r2 description:
 The basic file, shell and text manipulation utilities
 
-coreutils-env-9.5-r1 webpage:
+coreutils-env-9.5-r2 webpage:
 https://www.gnu.org/software/coreutils/
 
-coreutils-env-9.5-r1 installed size:
+coreutils-env-9.5-r2 installed size:
 46 KiB
 
-coreutils-env-9.5-r1 license:
+coreutils-env-9.5-r2 license:
 GPL-3.0-or-later
 
 ```
@@ -353,16 +353,16 @@ GPL-3.0-or-later
 ### `apk` package: `coreutils-fmt`
 
 ```console
-coreutils-fmt-9.5-r1 description:
+coreutils-fmt-9.5-r2 description:
 The basic file, shell and text manipulation utilities
 
-coreutils-fmt-9.5-r1 webpage:
+coreutils-fmt-9.5-r2 webpage:
 https://www.gnu.org/software/coreutils/
 
-coreutils-fmt-9.5-r1 installed size:
+coreutils-fmt-9.5-r2 installed size:
 42 KiB
 
-coreutils-fmt-9.5-r1 license:
+coreutils-fmt-9.5-r2 license:
 GPL-3.0-or-later
 
 ```
@@ -370,16 +370,16 @@ GPL-3.0-or-later
 ### `apk` package: `coreutils-sha512sum`
 
 ```console
-coreutils-sha512sum-9.5-r1 description:
+coreutils-sha512sum-9.5-r2 description:
 The basic file, shell and text manipulation utilities
 
-coreutils-sha512sum-9.5-r1 webpage:
+coreutils-sha512sum-9.5-r2 webpage:
 https://www.gnu.org/software/coreutils/
 
-coreutils-sha512sum-9.5-r1 installed size:
+coreutils-sha512sum-9.5-r2 installed size:
 46 KiB
 
-coreutils-sha512sum-9.5-r1 license:
+coreutils-sha512sum-9.5-r2 license:
 GPL-3.0-or-later
 
 ```
@@ -1424,16 +1424,16 @@ Zlib
 ### `apk` package: `zstd-libs`
 
 ```console
-zstd-libs-1.5.6-r1 description:
+zstd-libs-1.5.6-r2 description:
 Zstandard - Fast real-time compression algorithm (libraries)
 
-zstd-libs-1.5.6-r1 webpage:
-https://www.zstd.net/
+zstd-libs-1.5.6-r2 webpage:
+https://facebook.github.io/zstd/
 
-zstd-libs-1.5.6-r1 installed size:
-693 KiB
+zstd-libs-1.5.6-r2 installed size:
+697 KiB
 
-zstd-libs-1.5.6-r1 license:
+zstd-libs-1.5.6-r2 license:
 BSD-3-Clause OR GPL-2.0-or-later
 
 ```
