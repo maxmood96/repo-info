@@ -74,7 +74,7 @@ CMD ["notary-server" "--version"]
 
 -	Layers:
 	-	`sha256:a88dc8b54e91eb6b19695ef7e04865926d4df23004f414a3ee86978617492d4d`  
-		Last Modified: Sat, 27 Jan 2024 00:31:53 GMT  
+		Last Modified: Wed, 08 Jan 2025 03:14:50 GMT  
 		Size: 2.8 MB (2807837 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c034980324141a71bfe01bd164edc3cd590226e1ad438ed74fdbe32d9b6bf9fc`  
@@ -126,10 +126,10 @@ RUN
 		Size: 100.3 KB (100265 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:262c7788bd6b438dba15ed0f2d5f01ee56a073fff83a3b212e074fb1521a0112`  
-		Last Modified: Fri, 15 Mar 2024 23:55:47 GMT  
 		Size: 19.2 KB (19230 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e06de32fcfc6905d81d35c7b7db680c6c6aedaa43ea5ac5b2c294120bf8e8d15`  
+		Last Modified: Fri, 15 Mar 2024 23:55:47 GMT  
 		Size: 3.6 KB (3610 bytes)  
 		MIME: application/vnd.oci.descriptor.v1+json+dsse
 	-	`sha256:896e91010c744da82bf729d2b2196a4556721ab537ca014966f094664a984426`  
@@ -195,7 +195,7 @@ CMD ["notary-server" "--version"]
 		Size: 117.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:61be247f48e8f3878008266b94146502febffc5e99c61cb7e6938c3219b96ebc`  
-		Last Modified: Tue, 07 Jan 2025 23:52:52 GMT  
+		Last Modified: Mon, 18 Mar 2024 16:05:08 GMT  
 		Size: 4.9 MB (4893556 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -207,7 +207,6 @@ CMD ["notary-server" "--version"]
 		Size: 417.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ea12a5d844e6138c0d7ceb9febc5b878c65f067621e396d35dbc429731634805`  
-		Last Modified: Mon, 18 Mar 2024 16:05:08 GMT  
 		Size: 376.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -227,7 +226,6 @@ $ docker pull notary@sha256:7afcd6756cbb249bf078970fe37729734a0ffd89836ab54e8cfa
 
 -	Layers:
 	-	`sha256:0f0d130e83a940c4f59a70dd33e559b05d44fb63174309b3d44b22e26906938f`  
-		Last Modified: Mon, 18 Mar 2024 16:05:08 GMT  
 		Size: 19.0 KB (18958 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -289,7 +287,6 @@ CMD ["notary-server" "--version"]
 		Size: 119.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:62a74dd6cfb23f956474fbf87c3209ad8a7a2123041028347ad93f6a9a8ef093`  
-		Last Modified: Sat, 16 Mar 2024 15:49:12 GMT  
 		Size: 4.7 MB (4734448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -297,6 +294,7 @@ CMD ["notary-server" "--version"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:890840aeb70a4e98ad1a38397f402cdf5bdab54f9f8c5fe8c5e9d1b368306fcf`  
+		Last Modified: Sat, 16 Mar 2024 15:49:12 GMT  
 		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4cc45db379a44d0232df1d54db230a68fa7d753c793c38c806102941d7cac83e`  
@@ -472,7 +470,7 @@ CMD ["notary-server" "--version"]
 
 -	Layers:
 	-	`sha256:04646341bdb047ee1a3dd65db76069b9117954385033f5a340622fd170fa4b73`  
-		Last Modified: Wed, 08 Jan 2025 00:48:52 GMT  
+		Last Modified: Sat, 27 Jan 2024 00:28:46 GMT  
 		Size: 2.8 MB (2802980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0bdd1c5d3e50adc22c43338f6229f0cb0a9078a2b9498124d390dc7ca3e57ea1`  
@@ -574,6 +572,7 @@ CMD ["notary-server" "--version"]
 		Size: 2.6 MB (2592124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2d495ce178eb936d65241f75f3c49b1a8688ae60a9854465dfac55bd788186dd`  
+		Last Modified: Sun, 17 Mar 2024 22:25:09 GMT  
 		Size: 1.2 KB (1187 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9cc2710f93cb6fc53a91060153fe29ed141ce2c34a194fe777ac97c9a78376c1`  
@@ -688,7 +687,7 @@ CMD ["notary-server" "--version"]
 
 -	Layers:
 	-	`sha256:a88dc8b54e91eb6b19695ef7e04865926d4df23004f414a3ee86978617492d4d`  
-		Last Modified: Sat, 27 Jan 2024 00:31:53 GMT  
+		Last Modified: Wed, 08 Jan 2025 03:14:50 GMT  
 		Size: 2.8 MB (2807837 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c034980324141a71bfe01bd164edc3cd590226e1ad438ed74fdbe32d9b6bf9fc`  
@@ -740,10 +739,10 @@ RUN
 		Size: 100.3 KB (100265 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:262c7788bd6b438dba15ed0f2d5f01ee56a073fff83a3b212e074fb1521a0112`  
-		Last Modified: Fri, 15 Mar 2024 23:55:47 GMT  
 		Size: 19.2 KB (19230 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e06de32fcfc6905d81d35c7b7db680c6c6aedaa43ea5ac5b2c294120bf8e8d15`  
+		Last Modified: Fri, 15 Mar 2024 23:55:47 GMT  
 		Size: 3.6 KB (3610 bytes)  
 		MIME: application/vnd.oci.descriptor.v1+json+dsse
 	-	`sha256:896e91010c744da82bf729d2b2196a4556721ab537ca014966f094664a984426`  
@@ -809,7 +808,7 @@ CMD ["notary-server" "--version"]
 		Size: 117.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:61be247f48e8f3878008266b94146502febffc5e99c61cb7e6938c3219b96ebc`  
-		Last Modified: Tue, 07 Jan 2025 23:52:52 GMT  
+		Last Modified: Mon, 18 Mar 2024 16:05:08 GMT  
 		Size: 4.9 MB (4893556 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -821,7 +820,6 @@ CMD ["notary-server" "--version"]
 		Size: 417.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ea12a5d844e6138c0d7ceb9febc5b878c65f067621e396d35dbc429731634805`  
-		Last Modified: Mon, 18 Mar 2024 16:05:08 GMT  
 		Size: 376.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -841,7 +839,6 @@ $ docker pull notary@sha256:7afcd6756cbb249bf078970fe37729734a0ffd89836ab54e8cfa
 
 -	Layers:
 	-	`sha256:0f0d130e83a940c4f59a70dd33e559b05d44fb63174309b3d44b22e26906938f`  
-		Last Modified: Mon, 18 Mar 2024 16:05:08 GMT  
 		Size: 19.0 KB (18958 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -903,7 +900,6 @@ CMD ["notary-server" "--version"]
 		Size: 119.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:62a74dd6cfb23f956474fbf87c3209ad8a7a2123041028347ad93f6a9a8ef093`  
-		Last Modified: Sat, 16 Mar 2024 15:49:12 GMT  
 		Size: 4.7 MB (4734448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -911,6 +907,7 @@ CMD ["notary-server" "--version"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:890840aeb70a4e98ad1a38397f402cdf5bdab54f9f8c5fe8c5e9d1b368306fcf`  
+		Last Modified: Sat, 16 Mar 2024 15:49:12 GMT  
 		Size: 418.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4cc45db379a44d0232df1d54db230a68fa7d753c793c38c806102941d7cac83e`  
@@ -1086,7 +1083,7 @@ CMD ["notary-server" "--version"]
 
 -	Layers:
 	-	`sha256:04646341bdb047ee1a3dd65db76069b9117954385033f5a340622fd170fa4b73`  
-		Last Modified: Wed, 08 Jan 2025 00:48:52 GMT  
+		Last Modified: Sat, 27 Jan 2024 00:28:46 GMT  
 		Size: 2.8 MB (2802980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0bdd1c5d3e50adc22c43338f6229f0cb0a9078a2b9498124d390dc7ca3e57ea1`  
@@ -1188,6 +1185,7 @@ CMD ["notary-server" "--version"]
 		Size: 2.6 MB (2592124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2d495ce178eb936d65241f75f3c49b1a8688ae60a9854465dfac55bd788186dd`  
+		Last Modified: Sun, 17 Mar 2024 22:25:09 GMT  
 		Size: 1.2 KB (1187 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9cc2710f93cb6fc53a91060153fe29ed141ce2c34a194fe777ac97c9a78376c1`  
@@ -1304,7 +1302,7 @@ CMD ["notary-signer" "--version"]
 
 -	Layers:
 	-	`sha256:a88dc8b54e91eb6b19695ef7e04865926d4df23004f414a3ee86978617492d4d`  
-		Last Modified: Sat, 27 Jan 2024 00:31:53 GMT  
+		Last Modified: Wed, 08 Jan 2025 03:14:50 GMT  
 		Size: 2.8 MB (2807837 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:598998d406def7e37a6b047aafede720f173afae1e7d0c9d8754532edced1cc7`  
@@ -1324,6 +1322,7 @@ CMD ["notary-signer" "--version"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f7831ea774cdf32dcdf25e00c82f5e4affb01d88cd6f3ca8e0c4ab12a772efbd`  
+		Last Modified: Fri, 15 Mar 2024 23:55:41 GMT  
 		Size: 354.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3b0696da5e464a807f3bd0467578a2b1a9965ffebe8a81c74a3db316c0f641f7`  
@@ -1359,6 +1358,7 @@ RUN
 		Size: 19.2 KB (19244 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c34aca72d8ab1446e2afeee6cebd46983df63996e477cf16ae7ea4b2e3bb0b40`  
+		Last Modified: Fri, 15 Mar 2024 23:55:41 GMT  
 		Size: 3.6 KB (3610 bytes)  
 		MIME: application/vnd.oci.descriptor.v1+json+dsse
 	-	`sha256:7c409924f1fc3a534ac26d681d468ffa6db137b4a41a7f32dad261d228a12d9e`  
@@ -1522,7 +1522,6 @@ CMD ["notary-signer" "--version"]
 		Size: 119.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14b16276b3e752da6d1f2323971d646cb9768612c4ae298a2f12c966176b7352`  
-		Last Modified: Sat, 16 Mar 2024 15:49:31 GMT  
 		Size: 4.4 MB (4393056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -1558,6 +1557,7 @@ $ docker pull notary@sha256:00e453626795750671543855488e17d9b70f263458fa914e5466
 		Size: 96.7 KB (96716 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:faa8d302ab055339f450fa910a0ce8af9da2efaf28eeb5106230956c91330504`  
+		Last Modified: Sat, 16 Mar 2024 15:49:31 GMT  
 		Size: 18.4 KB (18430 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1709,7 +1709,7 @@ CMD ["notary-signer" "--version"]
 
 -	Layers:
 	-	`sha256:04646341bdb047ee1a3dd65db76069b9117954385033f5a340622fd170fa4b73`  
-		Last Modified: Wed, 08 Jan 2025 00:48:52 GMT  
+		Last Modified: Sat, 27 Jan 2024 00:28:46 GMT  
 		Size: 2.8 MB (2802980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0bdd1c5d3e50adc22c43338f6229f0cb0a9078a2b9498124d390dc7ca3e57ea1`  
@@ -1721,6 +1721,7 @@ CMD ["notary-signer" "--version"]
 		Size: 119.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed9a9bc9dbd03912dd05947826d7c8c1c2f4a649cc150e5d24e9093214430737`  
+		Last Modified: Sat, 16 Mar 2024 10:34:19 GMT  
 		Size: 4.3 MB (4296993 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -1732,7 +1733,7 @@ CMD ["notary-signer" "--version"]
 		Size: 354.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d1bce13479dfad62d6689e970d72ac66774849a79e1b549ecd0c603e8d91cb59`  
-		Last Modified: Wed, 08 Jan 2025 00:49:09 GMT  
+		Last Modified: Sat, 16 Mar 2024 10:34:19 GMT  
 		Size: 375.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1756,7 +1757,6 @@ $ docker pull notary@sha256:e0b80caef7399f7aa8a5695f0bdb3ca1ea0087b91fab189c4b45
 		Size: 94.8 KB (94777 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b42eb964a753f455e098519a381c4533d519aa5c789cd10f9cc17d5d7243874f`  
-		Last Modified: Sat, 16 Mar 2024 10:34:19 GMT  
 		Size: 18.5 KB (18461 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1812,6 +1812,7 @@ CMD ["notary-signer" "--version"]
 		Size: 2.6 MB (2592124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2d495ce178eb936d65241f75f3c49b1a8688ae60a9854465dfac55bd788186dd`  
+		Last Modified: Sun, 17 Mar 2024 22:25:09 GMT  
 		Size: 1.2 KB (1187 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d56acc24b23285e0ab13f1b5b0fa9d582b8672b64d79249df493fc7cdeba2184`  
@@ -1830,7 +1831,6 @@ CMD ["notary-signer" "--version"]
 		Size: 353.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7cb7a9d68b80a529028bd07ff4aa947d73b306c43df57298e5309879545a8c04`  
-		Last Modified: Sun, 17 Mar 2024 22:28:17 GMT  
 		Size: 375.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1850,10 +1850,10 @@ $ docker pull notary@sha256:e8326eb34838897b53c80aaab771af4cc16c0298768228f8cc4b
 
 -	Layers:
 	-	`sha256:1420fd5a391224485481f3289bea121ceea95b6869b731053173af5eb6a6159e`  
-		Last Modified: Sun, 17 Mar 2024 22:28:17 GMT  
 		Size: 94.8 KB (94755 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:12e22ca82d24a4a3f67e7928c6c6a9889525b36ed128e501e2fb7a2f5fb5d6f0`  
+		Last Modified: Sun, 17 Mar 2024 22:28:17 GMT  
 		Size: 18.4 KB (18425 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1926,7 +1926,7 @@ CMD ["notary-signer" "--version"]
 
 -	Layers:
 	-	`sha256:a88dc8b54e91eb6b19695ef7e04865926d4df23004f414a3ee86978617492d4d`  
-		Last Modified: Sat, 27 Jan 2024 00:31:53 GMT  
+		Last Modified: Wed, 08 Jan 2025 03:14:50 GMT  
 		Size: 2.8 MB (2807837 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:598998d406def7e37a6b047aafede720f173afae1e7d0c9d8754532edced1cc7`  
@@ -1946,6 +1946,7 @@ CMD ["notary-signer" "--version"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f7831ea774cdf32dcdf25e00c82f5e4affb01d88cd6f3ca8e0c4ab12a772efbd`  
+		Last Modified: Fri, 15 Mar 2024 23:55:41 GMT  
 		Size: 354.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3b0696da5e464a807f3bd0467578a2b1a9965ffebe8a81c74a3db316c0f641f7`  
@@ -1981,6 +1982,7 @@ RUN
 		Size: 19.2 KB (19244 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c34aca72d8ab1446e2afeee6cebd46983df63996e477cf16ae7ea4b2e3bb0b40`  
+		Last Modified: Fri, 15 Mar 2024 23:55:41 GMT  
 		Size: 3.6 KB (3610 bytes)  
 		MIME: application/vnd.oci.descriptor.v1+json+dsse
 	-	`sha256:7c409924f1fc3a534ac26d681d468ffa6db137b4a41a7f32dad261d228a12d9e`  
@@ -2144,7 +2146,6 @@ CMD ["notary-signer" "--version"]
 		Size: 119.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14b16276b3e752da6d1f2323971d646cb9768612c4ae298a2f12c966176b7352`  
-		Last Modified: Sat, 16 Mar 2024 15:49:31 GMT  
 		Size: 4.4 MB (4393056 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -2180,6 +2181,7 @@ $ docker pull notary@sha256:00e453626795750671543855488e17d9b70f263458fa914e5466
 		Size: 96.7 KB (96716 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:faa8d302ab055339f450fa910a0ce8af9da2efaf28eeb5106230956c91330504`  
+		Last Modified: Sat, 16 Mar 2024 15:49:31 GMT  
 		Size: 18.4 KB (18430 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2331,7 +2333,7 @@ CMD ["notary-signer" "--version"]
 
 -	Layers:
 	-	`sha256:04646341bdb047ee1a3dd65db76069b9117954385033f5a340622fd170fa4b73`  
-		Last Modified: Wed, 08 Jan 2025 00:48:52 GMT  
+		Last Modified: Sat, 27 Jan 2024 00:28:46 GMT  
 		Size: 2.8 MB (2802980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0bdd1c5d3e50adc22c43338f6229f0cb0a9078a2b9498124d390dc7ca3e57ea1`  
@@ -2343,6 +2345,7 @@ CMD ["notary-signer" "--version"]
 		Size: 119.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed9a9bc9dbd03912dd05947826d7c8c1c2f4a649cc150e5d24e9093214430737`  
+		Last Modified: Sat, 16 Mar 2024 10:34:19 GMT  
 		Size: 4.3 MB (4296993 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -2354,7 +2357,7 @@ CMD ["notary-signer" "--version"]
 		Size: 354.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d1bce13479dfad62d6689e970d72ac66774849a79e1b549ecd0c603e8d91cb59`  
-		Last Modified: Wed, 08 Jan 2025 00:49:09 GMT  
+		Last Modified: Sat, 16 Mar 2024 10:34:19 GMT  
 		Size: 375.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2378,7 +2381,6 @@ $ docker pull notary@sha256:e0b80caef7399f7aa8a5695f0bdb3ca1ea0087b91fab189c4b45
 		Size: 94.8 KB (94777 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b42eb964a753f455e098519a381c4533d519aa5c789cd10f9cc17d5d7243874f`  
-		Last Modified: Sat, 16 Mar 2024 10:34:19 GMT  
 		Size: 18.5 KB (18461 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2434,6 +2436,7 @@ CMD ["notary-signer" "--version"]
 		Size: 2.6 MB (2592124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2d495ce178eb936d65241f75f3c49b1a8688ae60a9854465dfac55bd788186dd`  
+		Last Modified: Sun, 17 Mar 2024 22:25:09 GMT  
 		Size: 1.2 KB (1187 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d56acc24b23285e0ab13f1b5b0fa9d582b8672b64d79249df493fc7cdeba2184`  
@@ -2452,7 +2455,6 @@ CMD ["notary-signer" "--version"]
 		Size: 353.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7cb7a9d68b80a529028bd07ff4aa947d73b306c43df57298e5309879545a8c04`  
-		Last Modified: Sun, 17 Mar 2024 22:28:17 GMT  
 		Size: 375.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2472,9 +2474,9 @@ $ docker pull notary@sha256:e8326eb34838897b53c80aaab771af4cc16c0298768228f8cc4b
 
 -	Layers:
 	-	`sha256:1420fd5a391224485481f3289bea121ceea95b6869b731053173af5eb6a6159e`  
-		Last Modified: Sun, 17 Mar 2024 22:28:17 GMT  
 		Size: 94.8 KB (94755 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:12e22ca82d24a4a3f67e7928c6c6a9889525b36ed128e501e2fb7a2f5fb5d6f0`  
+		Last Modified: Sun, 17 Mar 2024 22:28:17 GMT  
 		Size: 18.4 KB (18425 bytes)  
 		MIME: application/vnd.in-toto+json
