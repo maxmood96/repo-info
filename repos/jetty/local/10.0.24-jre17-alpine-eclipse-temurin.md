@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6178213297c7241ad58464125e594415d291289c26a49705ffb718396a99f284`
+- Image ID: `sha256:8455cbd2046364fd6d392cc887c526d243957dced43611de0fc9a7f14dcd5470`
 - Created: `2024-09-10T00:22:25Z`
-- Virtual Size: ~ 200.22 Mb  
+- Virtual Size: ~ 194.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -79,16 +79,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.4-r0 description:
+apk-tools-2.14.4-r1 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.4-r0 webpage:
+apk-tools-2.14.4-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.4-r0 installed size:
+apk-tools-2.14.4-r1 installed size:
 296 KiB
 
-apk-tools-2.14.4-r0 license:
+apk-tools-2.14.4-r1 license:
 GPL-2.0-only
 
 ```
@@ -164,16 +164,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20240705-r0 description:
+ca-certificates-20241121-r0 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20240705-r0 webpage:
+ca-certificates-20241121-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20240705-r0 installed size:
-712 KiB
+ca-certificates-20241121-r0 installed size:
+684 KiB
 
-ca-certificates-20240705-r0 license:
+ca-certificates-20241121-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -181,16 +181,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20240705-r0 description:
+ca-certificates-bundle-20241121-r0 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20240705-r0 webpage:
+ca-certificates-bundle-20241121-r0 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20240705-r0 installed size:
-236 KiB
+ca-certificates-bundle-20241121-r0 installed size:
+228 KiB
 
-ca-certificates-bundle-20240705-r0 license:
+ca-certificates-bundle-20241121-r0 license:
 MPL-2.0 AND MIT
 
 ```
@@ -198,16 +198,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `coreutils`
 
 ```console
-coreutils-9.5-r1 description:
+coreutils-9.5-r2 description:
 The basic file, shell and text manipulation utilities
 
-coreutils-9.5-r1 webpage:
+coreutils-9.5-r2 webpage:
 https://www.gnu.org/software/coreutils/
 
-coreutils-9.5-r1 installed size:
-1036 KiB
+coreutils-9.5-r2 installed size:
+1024 KiB
 
-coreutils-9.5-r1 license:
+coreutils-9.5-r2 license:
 GPL-3.0-or-later
 
 ```
@@ -215,16 +215,16 @@ GPL-3.0-or-later
 ### `apk` package: `coreutils-env`
 
 ```console
-coreutils-env-9.5-r1 description:
+coreutils-env-9.5-r2 description:
 The basic file, shell and text manipulation utilities
 
-coreutils-env-9.5-r1 webpage:
+coreutils-env-9.5-r2 webpage:
 https://www.gnu.org/software/coreutils/
 
-coreutils-env-9.5-r1 installed size:
+coreutils-env-9.5-r2 installed size:
 60 KiB
 
-coreutils-env-9.5-r1 license:
+coreutils-env-9.5-r2 license:
 GPL-3.0-or-later
 
 ```
@@ -232,16 +232,16 @@ GPL-3.0-or-later
 ### `apk` package: `coreutils-fmt`
 
 ```console
-coreutils-fmt-9.5-r1 description:
+coreutils-fmt-9.5-r2 description:
 The basic file, shell and text manipulation utilities
 
-coreutils-fmt-9.5-r1 webpage:
+coreutils-fmt-9.5-r2 webpage:
 https://www.gnu.org/software/coreutils/
 
-coreutils-fmt-9.5-r1 installed size:
+coreutils-fmt-9.5-r2 installed size:
 56 KiB
 
-coreutils-fmt-9.5-r1 license:
+coreutils-fmt-9.5-r2 license:
 GPL-3.0-or-later
 
 ```
@@ -249,16 +249,16 @@ GPL-3.0-or-later
 ### `apk` package: `coreutils-sha512sum`
 
 ```console
-coreutils-sha512sum-9.5-r1 description:
+coreutils-sha512sum-9.5-r2 description:
 The basic file, shell and text manipulation utilities
 
-coreutils-sha512sum-9.5-r1 webpage:
+coreutils-sha512sum-9.5-r2 webpage:
 https://www.gnu.org/software/coreutils/
 
-coreutils-sha512sum-9.5-r1 installed size:
+coreutils-sha512sum-9.5-r2 installed size:
 60 KiB
 
-coreutils-sha512sum-9.5-r1 license:
+coreutils-sha512sum-9.5-r2 license:
 GPL-3.0-or-later
 
 ```
@@ -266,16 +266,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.11.0-r2 description:
+curl-8.11.1-r0 description:
 URL retrival utility and library
 
-curl-8.11.0-r2 webpage:
+curl-8.11.1-r0 webpage:
 https://curl.se/
 
-curl-8.11.0-r2 installed size:
+curl-8.11.1-r0 installed size:
 256 KiB
 
-curl-8.11.0-r2 license:
+curl-8.11.1-r0 license:
 curl
 
 ```
@@ -674,16 +674,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.11.0-r2 description:
+libcurl-8.11.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.11.0-r2 webpage:
+libcurl-8.11.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.11.0-r2 installed size:
-636 KiB
+libcurl-8.11.1-r0 installed size:
+640 KiB
 
-libcurl-8.11.0-r2 license:
+libcurl-8.11.1-r0 license:
 curl
 
 ```
@@ -844,16 +844,16 @@ OLDAP-2.8
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r1 description:
+libncursesw-6.4_p20240420-r2 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r1 webpage:
+libncursesw-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r1 installed size:
+libncursesw-6.4_p20240420-r2 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r1 license:
+libncursesw-6.4_p20240420-r2 license:
 X11
 
 ```
@@ -1048,16 +1048,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r1 description:
+ncurses-terminfo-base-6.4_p20240420-r2 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r1 webpage:
+ncurses-terminfo-base-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r1 installed size:
+ncurses-terminfo-base-6.4_p20240420-r2 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r1 license:
+ncurses-terminfo-base-6.4_p20240420-r2 license:
 X11
 
 ```

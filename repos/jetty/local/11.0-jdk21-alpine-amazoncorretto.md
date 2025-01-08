@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c14d819868f70cbc4b2d13bc0095edd5d79d9f0788f2a1ed6a31308b1b100f23`
+- Image ID: `sha256:7bb3f86eeb3ad5b3ef845a7c82067e12e3fed269d36bc24d8e164e2cd3b122ea`
 - Created: `2024-09-10T00:22:25Z`
-- Virtual Size: ~ 352.04 Mb  
+- Virtual Size: ~ 352.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -93,16 +93,16 @@ https://github.com/corretto/corretto-jdk/blob/develop/LICENSE
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.4-r0 description:
+apk-tools-2.14.4-r1 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.4-r0 webpage:
+apk-tools-2.14.4-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.4-r0 installed size:
+apk-tools-2.14.4-r1 installed size:
 296 KiB
 
-apk-tools-2.14.4-r0 license:
+apk-tools-2.14.4-r1 license:
 GPL-2.0-only
 
 ```
@@ -178,16 +178,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20240705-r0 description:
+ca-certificates-20241121-r1 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20240705-r0 webpage:
+ca-certificates-20241121-r1 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20240705-r0 installed size:
-712 KiB
+ca-certificates-20241121-r1 installed size:
+720 KiB
 
-ca-certificates-20240705-r0 license:
+ca-certificates-20241121-r1 license:
 MPL-2.0 AND MIT
 
 ```
@@ -195,16 +195,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20240705-r0 description:
+ca-certificates-bundle-20241121-r1 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20240705-r0 webpage:
+ca-certificates-bundle-20241121-r1 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20240705-r0 installed size:
-236 KiB
+ca-certificates-bundle-20241121-r1 installed size:
+240 KiB
 
-ca-certificates-bundle-20240705-r0 license:
+ca-certificates-bundle-20241121-r1 license:
 MPL-2.0 AND MIT
 
 ```
@@ -212,16 +212,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.11.0-r2 description:
+curl-8.11.1-r0 description:
 URL retrival utility and library
 
-curl-8.11.0-r2 webpage:
+curl-8.11.1-r0 webpage:
 https://curl.se/
 
-curl-8.11.0-r2 installed size:
+curl-8.11.1-r0 installed size:
 256 KiB
 
-curl-8.11.0-r2 license:
+curl-8.11.1-r0 license:
 curl
 
 ```
@@ -518,16 +518,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.2-r0 description:
+libcrypto3-3.3.2-r1 description:
 Crypto library from openssl
 
-libcrypto3-3.3.2-r0 webpage:
+libcrypto3-3.3.2-r1 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.2-r0 installed size:
+libcrypto3-3.3.2-r1 installed size:
 4660 KiB
 
-libcrypto3-3.3.2-r0 license:
+libcrypto3-3.3.2-r1 license:
 Apache-2.0
 
 ```
@@ -535,16 +535,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.11.0-r2 description:
+libcurl-8.11.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.11.0-r2 webpage:
+libcurl-8.11.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.11.0-r2 installed size:
-636 KiB
+libcurl-8.11.1-r0 installed size:
+640 KiB
 
-libcurl-8.11.0-r2 license:
+libcurl-8.11.1-r0 license:
 curl
 
 ```
@@ -654,16 +654,16 @@ OLDAP-2.8
 ### `apk` package: `libncursesw`
 
 ```console
-libncursesw-6.4_p20240420-r1 description:
+libncursesw-6.4_p20240420-r2 description:
 Console display library (libncursesw)
 
-libncursesw-6.4_p20240420-r1 webpage:
+libncursesw-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-libncursesw-6.4_p20240420-r1 installed size:
+libncursesw-6.4_p20240420-r2 installed size:
 344 KiB
 
-libncursesw-6.4_p20240420-r1 license:
+libncursesw-6.4_p20240420-r2 license:
 X11
 
 ```
@@ -705,16 +705,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.2-r0 description:
+libssl3-3.3.2-r1 description:
 SSL shared libraries
 
-libssl3-3.3.2-r0 webpage:
+libssl3-3.3.2-r1 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.2-r0 installed size:
+libssl3-3.3.2-r1 installed size:
 796 KiB
 
-libssl3-3.3.2-r0 license:
+libssl3-3.3.2-r1 license:
 Apache-2.0
 
 ```
@@ -790,16 +790,16 @@ MIT AND BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `ncurses-terminfo-base`
 
 ```console
-ncurses-terminfo-base-6.4_p20240420-r1 description:
+ncurses-terminfo-base-6.4_p20240420-r2 description:
 Descriptions of common terminals
 
-ncurses-terminfo-base-6.4_p20240420-r1 webpage:
+ncurses-terminfo-base-6.4_p20240420-r2 webpage:
 https://invisible-island.net/ncurses/
 
-ncurses-terminfo-base-6.4_p20240420-r1 installed size:
+ncurses-terminfo-base-6.4_p20240420-r2 installed size:
 212 KiB
 
-ncurses-terminfo-base-6.4_p20240420-r1 license:
+ncurses-terminfo-base-6.4_p20240420-r2 license:
 X11
 
 ```
