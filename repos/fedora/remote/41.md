@@ -40,6 +40,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:0c5a86865c5d3e78a4ab19ac7c516ffe93e41e0fd67f052a72f52d07cd2c59f9`  
+		Last Modified: Thu, 31 Oct 2024 11:14:26 GMT  
 		Size: 58.6 MB (58596808 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -63,6 +64,7 @@ $ docker pull fedora@sha256:1a4c50024e4dbac78c462ac10aa9e65c99fc629f7f7364761f49
 		Size: 2.9 MB (2880871 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ed57bcc1ac9adaf0d9ed91f75014b074eaf95b694145130c4b92ae007fe2d438`  
+		Last Modified: Thu, 31 Oct 2024 22:59:08 GMT  
 		Size: 5.3 KB (5286 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -91,6 +93,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:e3c408ecb0c25f0bcbefeb272d74ab9fba5836e7f68cc60cd46da7dc4ac7df03`  
+		Last Modified: Thu, 31 Oct 2024 23:03:06 GMT  
 		Size: 57.2 MB (57209276 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -110,9 +113,11 @@ $ docker pull fedora@sha256:6b9427ba629dbe7a6e200528986b1afba982d98e4de4b9d6a490
 
 -	Layers:
 	-	`sha256:d221ca0874ef4fd4fa2476e8248fcfeb51f057f04b2c48d02edf07889df49cec`  
+		Last Modified: Thu, 31 Oct 2024 23:03:04 GMT  
 		Size: 2.9 MB (2880901 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:03e89972560ef4451e0f133b8fcf3934076b740ef001ba4dab2b988e2b4e29a3`  
+		Last Modified: Thu, 31 Oct 2024 23:03:03 GMT  
 		Size: 5.3 KB (5328 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -165,6 +170,7 @@ $ docker pull fedora@sha256:1d3dbcada8d311000003851d02489b631581e33f179ce797d736
 		Size: 2.9 MB (2881521 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d84d77273c6c1649ddce19baa13930719155713f92282c344ba8ab5ee9d483c0`  
+		Last Modified: Thu, 31 Oct 2024 23:05:28 GMT  
 		Size: 5.3 KB (5308 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -193,6 +199,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:46a98843a38519a1e191b4c7e885a6469c0649910463a7a57a7f15d0e1e51639`  
+		Last Modified: Thu, 31 Oct 2024 23:04:37 GMT  
 		Size: 59.4 MB (59426710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
