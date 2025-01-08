@@ -37,7 +37,7 @@ RUN BusyBox 1.37.0 (uclibc), Buildroot 2024.11, Debian 12
 
 -	Layers:
 	-	`sha256:2e5133296f9819f72ef8b1fe3253b3494a29b2c2ea82906b268057808253b7f2`  
-		Last Modified: Wed, 11 Dec 2024 00:27:16 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:27:42 GMT  
 		Size: 756.4 KB (756382 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -80,7 +80,7 @@ RUN BusyBox 1.37.0 (uclibc), Buildroot 2024.11, Debian 12
 
 -	Layers:
 	-	`sha256:519c8dbee44acd95d67bb3fda26949953c26127454b29d53e81f08bbd41c683a`  
-		Last Modified: Wed, 11 Dec 2024 00:27:51 GMT  
+		Last Modified: Wed, 08 Jan 2025 12:28:29 GMT  
 		Size: 745.8 KB (745802 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -165,7 +165,7 @@ RUN BusyBox 1.37.0 (uclibc), Buildroot 2024.11, Debian 12
 
 -	Layers:
 	-	`sha256:5043223a7558c91abe673ea4f174bff99d74814541db03da7c939a6bcc3bdeba`  
-		Last Modified: Wed, 11 Dec 2024 00:27:31 GMT  
+		Last Modified: Wed, 08 Jan 2025 12:28:30 GMT  
 		Size: 811.9 KB (811875 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -208,7 +208,6 @@ RUN BusyBox 1.37.0 (uclibc), Buildroot 2024.11, Debian 12
 
 -	Layers:
 	-	`sha256:9a5dad3f7606b5be10d8148cfde0806d9b9a2d4f8cb24252e2f1b5d43c5a05f6`  
-		Last Modified: Wed, 08 Jan 2025 10:27:47 GMT  
 		Size: 710.4 KB (710398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -251,6 +250,6 @@ RUN BusyBox 1.37.0 (uclibc), Buildroot 2024.11, Debian 12
 
 -	Layers:
 	-	`sha256:501b661a327476daf2047e4304599d4885fa9d1a96152d2a0fd06d72da19ea32`  
-		Last Modified: Wed, 11 Dec 2024 00:27:42 GMT  
+		Last Modified: Wed, 08 Jan 2025 12:28:31 GMT  
 		Size: 949.7 KB (949660 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip

@@ -56,7 +56,7 @@ $ docker pull busybox@sha256:45ab217e5df2e2795aee328831f7399721eeae54b412a99c59f
 
 -	Layers:
 	-	`sha256:66e8b993cc1cb0764c1a2eeb4ea8fb7e7e08dab8a89304afd44e6d052e3be051`  
-		Last Modified: Wed, 11 Dec 2024 00:27:17 GMT  
+		Last Modified: Wed, 08 Jan 2025 12:28:49 GMT  
 		Size: 2.0 KB (2017 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -79,6 +79,7 @@ RUN BusyBox 1.36.1 (uclibc), Buildroot 2024.11, Debian 12
 
 -	Layers:
 	-	`sha256:6def87cf80875c4390f002b32f49cb7ea478e8af4fb4628b0c3d09516f0a7ea7`  
+		Last Modified: Wed, 11 Dec 2024 00:28:05 GMT  
 		Size: 743.6 KB (743588 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -98,7 +99,7 @@ $ docker pull busybox@sha256:f5f13326b40146855b23cedc47aca486910df9a4e486da6ed03
 
 -	Layers:
 	-	`sha256:18c6bfe9e4b635f5804cd375c0aae22980e936347d3f8e7c0d9edb14d68e8e15`  
-		Last Modified: Wed, 11 Dec 2024 00:28:04 GMT  
+		Last Modified: Wed, 08 Jan 2025 12:28:49 GMT  
 		Size: 2.0 KB (2017 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -121,7 +122,7 @@ RUN BusyBox 1.36.1 (uclibc), Buildroot 2024.11, Debian 12
 
 -	Layers:
 	-	`sha256:d88a559c4f4e244dbbfef5693647fc1a543b6bd4fb04b0d2dfbb0a805598cb67`  
-		Last Modified: Wed, 08 Jan 2025 10:28:09 GMT  
+		Last Modified: Wed, 11 Dec 2024 00:27:42 GMT  
 		Size: 708.1 KB (708054 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -141,6 +142,7 @@ $ docker pull busybox@sha256:231c3f8a4e83f66bd46086d8a9689df505cd6ae564a0ba46efa
 
 -	Layers:
 	-	`sha256:61a409d4ba0d08ce1de6b77b5147de64bb0418926cdd8daca928996401c74126`  
+		Last Modified: Wed, 11 Dec 2024 00:27:42 GMT  
 		Size: 2.0 KB (2017 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -163,7 +165,7 @@ RUN BusyBox 1.36.1 (uclibc), Buildroot 2024.11, Debian 12
 
 -	Layers:
 	-	`sha256:d65bce1c38c68e9c2da4c96cff10bcdaf9a4248cff53c435dac8d9ed1ccfe569`  
-		Last Modified: Wed, 08 Jan 2025 10:46:01 GMT  
+		Last Modified: Wed, 11 Dec 2024 00:27:52 GMT  
 		Size: 808.7 KB (808703 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -206,6 +208,7 @@ RUN BusyBox 1.36.1 (uclibc), Buildroot 2024.11, Debian 12
 
 -	Layers:
 	-	`sha256:bbdab0aaac2ffe03bed3a07609b6fddea128815a3899fc916127fccff40d65f7`  
+		Last Modified: Wed, 11 Dec 2024 00:27:27 GMT  
 		Size: 707.1 KB (707144 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
