@@ -64,7 +64,6 @@ CMD ["irssi"]
 		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b5c72424751c946aad602294c0df5d40037ca42682cebec04a4f041ee2be9e87`  
-		Last Modified: Tue, 24 Dec 2024 22:17:33 GMT  
 		Size: 18.1 MB (18077911 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f87dc8ccdaeb7bbf6a9e9254d58992f7fd7f7182215f7405a0fc365c70f8f5be`  
@@ -100,6 +99,7 @@ $ docker pull irssi@sha256:d8645bd2d7f96a8dddad326c5143053dfd95ea0b89e52905f5a37
 		Size: 5.4 MB (5378443 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d928a21e7945ff14be8f994621ee799b35e23a723350e66d943c2cf3c4d0f3ee`  
+		Last Modified: Tue, 24 Dec 2024 22:17:32 GMT  
 		Size: 18.7 KB (18716 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -233,7 +233,6 @@ CMD ["irssi"]
 		Size: 3.3 KB (3322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ba47e1eab4f52f16a0ebf6cde2a2a0c0624c37afa514038f8aa4bddcdd82bee5`  
-		Last Modified: Tue, 24 Dec 2024 22:32:38 GMT  
 		Size: 4.3 MB (4299083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -257,6 +256,7 @@ $ docker pull irssi@sha256:537f4343b468b13181de2ae031bd16002f2f93b1f3002b2fcb27d
 
 -	Layers:
 	-	`sha256:3e326db06a200c7054291876c43280cc704dc20d413c080346d8839c37204fcd`  
+		Last Modified: Tue, 24 Dec 2024 22:32:38 GMT  
 		Size: 5.4 MB (5379801 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8e12aa5aaf85a263b7d5ab5c79f027744ceb6eab3a345d3cb1c9cb9bb8a955a3`  
@@ -309,6 +309,7 @@ CMD ["irssi"]
 		Size: 17.9 MB (17855086 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:accc204fceaaba7801bf27e6a416f65a7ba7588c33a04b53a1a8620df94addc3`  
+		Last Modified: Tue, 24 Dec 2024 22:54:18 GMT  
 		Size: 3.3 KB (3323 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:59452d743e2018a043d72664977a6ed9cfc55da0b0018177afc6930cc7207474`  
@@ -336,7 +337,6 @@ $ docker pull irssi@sha256:891dca0a83a3cbe6caae3736c2b8b8d4ae478bbca3cb103abf832
 
 -	Layers:
 	-	`sha256:b00f4ec4af66f492dafd182b0094e8f6fc59f9c4d6f3de2ef8797f83821784e4`  
-		Last Modified: Tue, 24 Dec 2024 22:54:18 GMT  
 		Size: 5.4 MB (5384919 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3afee7b7d0daadba8ed43e12739820878f1df08b9d3eab75e57a6f1c9270fd35`  
@@ -381,6 +381,7 @@ CMD ["irssi"]
 
 -	Layers:
 	-	`sha256:fba9c0797a7b5bba079e0fd9d815a8878aea58430ea12c84047010f98fbe34d7`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
 		Size: 29.2 MB (29205387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1d0e21ec2cd7bb2aff9e70cde4cc9bbc54d02b13d6930570ff1ecf4a9ae95963`  
@@ -542,7 +543,7 @@ CMD ["irssi"]
 		Size: 32.1 MB (32063240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1baf30d6f351b66cd9b6d1560ee9fbb2792ef6a2dac398f3d5bbecbe1bec5fbb`  
-		Last Modified: Wed, 25 Dec 2024 04:09:31 GMT  
+		Last Modified: Wed, 08 Jan 2025 04:40:32 GMT  
 		Size: 18.6 MB (18585472 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ae4426abb9601636cb08c2051d18318d3dc52d6bc7d66a2031a821dad55a0447`  
@@ -619,9 +620,11 @@ CMD ["irssi"]
 
 -	Layers:
 	-	`sha256:0e7e84bd4cca9e29f08dfac96d436e65bdd31929520e73147137b382fbc89b70`  
+		Last Modified: Tue, 24 Dec 2024 21:33:49 GMT  
 		Size: 26.9 MB (26878901 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4a5393b1a641f2765ce0615f8fe15377fde13c41dfd16d1c961cf7aa4fd8afa7`  
+		Last Modified: Tue, 24 Dec 2024 22:32:32 GMT  
 		Size: 18.0 MB (18037644 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d803e78d7184cd114dbe79be927c3e3506855c70dea9a4f3d39c3e4538a599c8`  
