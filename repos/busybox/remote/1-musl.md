@@ -41,7 +41,6 @@ RUN BusyBox 1.37.0 (musl), Alpine 3.21.0
 
 -	Layers:
 	-	`sha256:c7fba674bdcd7385de4e790807047081ed8255c1566336976706804c8a02627e`  
-		Last Modified: Wed, 11 Dec 2024 00:27:17 GMT  
 		Size: 860.4 KB (860397 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -84,7 +83,6 @@ RUN BusyBox 1.37.0 (musl), Alpine 3.21.0
 
 -	Layers:
 	-	`sha256:b84cf97bf870f044e33c4531e6a88912907ffb2f342c1b2b8c8dee075dc1435d`  
-		Last Modified: Wed, 11 Dec 2024 00:27:16 GMT  
 		Size: 951.3 KB (951281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -107,7 +105,6 @@ RUN BusyBox 1.37.0 (musl), Alpine 3.21.0
 
 -	Layers:
 	-	`sha256:4235c90e874ce1e491d9dbcfdfdd8f19e7cf65e4424eccf8ba03a42dd1f171d3`  
-		Last Modified: Wed, 11 Dec 2024 00:27:29 GMT  
 		Size: 847.8 KB (847847 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -150,6 +147,7 @@ RUN BusyBox 1.37.0 (musl), Alpine 3.21.0
 
 -	Layers:
 	-	`sha256:94e95b322094a857524f076d8e3edec7eb321ea1c04b6d4e3ccd36c4a3b44c8d`  
+		Last Modified: Wed, 11 Dec 2024 00:27:41 GMT  
 		Size: 892.2 KB (892155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -212,7 +210,6 @@ $ docker pull busybox@sha256:1ae6023d58954ac629a694028e235b193899abd38c84fdf4786
 
 -	Layers:
 	-	`sha256:748b4818a96487748d9647adcb97fe16c3e3687efea7f9ced29900ddb029b9ff`  
-		Last Modified: Wed, 11 Dec 2024 00:27:26 GMT  
 		Size: 2.0 KB (2017 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -278,7 +275,6 @@ RUN BusyBox 1.37.0 (musl), Alpine 3.21.0
 
 -	Layers:
 	-	`sha256:d6ed8af9267cae72360b538db389b16f7ec6771b1dd721e8f6cfb24b0484c1fb`  
-		Last Modified: Wed, 11 Dec 2024 00:28:58 GMT  
 		Size: 923.6 KB (923559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -321,6 +317,7 @@ RUN BusyBox 1.37.0 (musl), Alpine 3.21.0
 
 -	Layers:
 	-	`sha256:7ff99405658c145780ae0f0b7d4689b8b3450d2602687c95434e4787aeff76bf`  
+		Last Modified: Wed, 11 Dec 2024 00:40:21 GMT  
 		Size: 924.0 KB (923974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
