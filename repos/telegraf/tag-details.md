@@ -74,7 +74,7 @@ CMD ["telegraf"]
 		Size: 48.5 MB (48497066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54c7be425079efba0003054ee884bf72f1ffebca733bedd6f077d2809ee9aa6f`  
-		Last Modified: Wed, 08 Jan 2025 03:47:00 GMT  
+		Last Modified: Tue, 24 Dec 2024 22:15:27 GMT  
 		Size: 23.9 MB (23865817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:653d1814857109e9b1cc1ccde62f5dee03564dbdcc5e5a4323744c7efc7867d4`  
@@ -110,9 +110,11 @@ $ docker pull telegraf@sha256:90f509c60fc9ef670eb7f18cda300b0e816df719511041ba70
 
 -	Layers:
 	-	`sha256:1efaeab6a7d06f5435c93afc5c07e21bb5252c268dda51ebad00c89cca1d6bb1`  
+		Last Modified: Wed, 08 Jan 2025 05:57:45 GMT  
 		Size: 6.4 MB (6414580 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4979f533aefffdb2b92f65ffa57ff8467abe8253130d5b3f74c71297bbe5bd4d`  
+		Last Modified: Tue, 24 Dec 2024 23:21:45 GMT  
 		Size: 14.5 KB (14470 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -194,10 +196,10 @@ $ docker pull telegraf@sha256:23e3de2db369b05ab135f183eed1f838afe25bd32ea2a73d94
 
 -	Layers:
 	-	`sha256:c867478f32bbd1de150d2a0188c4dee9ad754b3bd5578426aa07f972e8d66249`  
+		Last Modified: Wed, 08 Jan 2025 05:57:46 GMT  
 		Size: 6.4 MB (6409984 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:738df23a5f47d64cad27872d34512400df61f5fa88d33d7f81d6a5f15d6e1754`  
-		Last Modified: Wed, 25 Dec 2024 14:45:59 GMT  
 		Size: 14.6 KB (14556 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -251,7 +253,6 @@ CMD ["telegraf"]
 		Size: 18.9 MB (18870819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f3a3234f16fbfb2639349fbdd74cc1ab1c092b1088fddfd3665b73f1bd1e9907`  
-		Last Modified: Wed, 08 Jan 2025 03:57:56 GMT  
 		Size: 1.8 KB (1785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2037bb26edb96295a374e2228609b967ab72b11431e5c4cc1d659e2f5dd1d2b9`  
@@ -283,7 +284,6 @@ $ docker pull telegraf@sha256:19b597ca238143eced3ff7ea85aae5ecbf366e67ce47b74892
 		Size: 6.4 MB (6416063 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:64df1019e57de44a14e4b76bd166051c09d68ced9ffe3dd0eb736672c25943e6`  
-		Last Modified: Wed, 08 Jan 2025 03:57:57 GMT  
 		Size: 14.6 KB (14578 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -346,6 +346,7 @@ CMD ["telegraf"]
 		Size: 279.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b9d7df941ae2a687739e98681b580f17843913cc17cfeadaf85edffffdb52823`  
+		Last Modified: Tue, 07 Jan 2025 03:19:11 GMT  
 		Size: 2.4 MB (2435096 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:06b0d29c21861b49d645475fa8c093639315e5d2d3fe6e194486244c8f21e0ce`  
@@ -520,7 +521,7 @@ CMD ["telegraf"]
 		Size: 48.5 MB (48497066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54c7be425079efba0003054ee884bf72f1ffebca733bedd6f077d2809ee9aa6f`  
-		Last Modified: Wed, 08 Jan 2025 03:47:00 GMT  
+		Last Modified: Tue, 24 Dec 2024 22:15:27 GMT  
 		Size: 23.9 MB (23865817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:653d1814857109e9b1cc1ccde62f5dee03564dbdcc5e5a4323744c7efc7867d4`  
@@ -556,9 +557,11 @@ $ docker pull telegraf@sha256:90f509c60fc9ef670eb7f18cda300b0e816df719511041ba70
 
 -	Layers:
 	-	`sha256:1efaeab6a7d06f5435c93afc5c07e21bb5252c268dda51ebad00c89cca1d6bb1`  
+		Last Modified: Wed, 08 Jan 2025 05:57:45 GMT  
 		Size: 6.4 MB (6414580 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4979f533aefffdb2b92f65ffa57ff8467abe8253130d5b3f74c71297bbe5bd4d`  
+		Last Modified: Tue, 24 Dec 2024 23:21:45 GMT  
 		Size: 14.5 KB (14470 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -640,10 +643,10 @@ $ docker pull telegraf@sha256:23e3de2db369b05ab135f183eed1f838afe25bd32ea2a73d94
 
 -	Layers:
 	-	`sha256:c867478f32bbd1de150d2a0188c4dee9ad754b3bd5578426aa07f972e8d66249`  
+		Last Modified: Wed, 08 Jan 2025 05:57:46 GMT  
 		Size: 6.4 MB (6409984 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:738df23a5f47d64cad27872d34512400df61f5fa88d33d7f81d6a5f15d6e1754`  
-		Last Modified: Wed, 25 Dec 2024 14:45:59 GMT  
 		Size: 14.6 KB (14556 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -697,7 +700,6 @@ CMD ["telegraf"]
 		Size: 18.9 MB (18870819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f3a3234f16fbfb2639349fbdd74cc1ab1c092b1088fddfd3665b73f1bd1e9907`  
-		Last Modified: Wed, 08 Jan 2025 03:57:56 GMT  
 		Size: 1.8 KB (1785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2037bb26edb96295a374e2228609b967ab72b11431e5c4cc1d659e2f5dd1d2b9`  
@@ -729,7 +731,6 @@ $ docker pull telegraf@sha256:19b597ca238143eced3ff7ea85aae5ecbf366e67ce47b74892
 		Size: 6.4 MB (6416063 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:64df1019e57de44a14e4b76bd166051c09d68ced9ffe3dd0eb736672c25943e6`  
-		Last Modified: Wed, 08 Jan 2025 03:57:57 GMT  
 		Size: 14.6 KB (14578 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -792,6 +793,7 @@ CMD ["telegraf"]
 		Size: 279.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b9d7df941ae2a687739e98681b580f17843913cc17cfeadaf85edffffdb52823`  
+		Last Modified: Tue, 07 Jan 2025 03:19:11 GMT  
 		Size: 2.4 MB (2435096 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:06b0d29c21861b49d645475fa8c093639315e5d2d3fe6e194486244c8f21e0ce`  
@@ -966,14 +968,14 @@ CMD ["telegraf"]
 		Size: 48.5 MB (48497066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54c7be425079efba0003054ee884bf72f1ffebca733bedd6f077d2809ee9aa6f`  
-		Last Modified: Wed, 08 Jan 2025 03:47:00 GMT  
+		Last Modified: Tue, 24 Dec 2024 22:15:27 GMT  
 		Size: 23.9 MB (23865817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bbf9288c04ef24a7a430826d2712c6a1761c179fc3b6dbf5acf1ad36d273a876`  
+		Last Modified: Tue, 24 Dec 2024 23:21:58 GMT  
 		Size: 18.9 MB (18948047 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f4e8f8dd3c6ff997428abcc0c5ef24b4cc837a7cb71ad3213c4b183ddd7c8854`  
-		Last Modified: Tue, 24 Dec 2024 23:21:57 GMT  
 		Size: 1.8 KB (1785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ea77c07f598b14468c1ba2c5e54a934536fb24bb377f4591c0800440419e2716`  
@@ -981,7 +983,6 @@ CMD ["telegraf"]
 		Size: 70.0 MB (70021040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4a753ec2d17b79aa749029f878c004c958c8cf5d0f081dc0eb7490fcc3a1b522`  
-		Last Modified: Tue, 24 Dec 2024 23:21:57 GMT  
 		Size: 624.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1145,7 +1146,6 @@ CMD ["telegraf"]
 		Size: 18.9 MB (18870819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f3a3234f16fbfb2639349fbdd74cc1ab1c092b1088fddfd3665b73f1bd1e9907`  
-		Last Modified: Wed, 08 Jan 2025 03:57:56 GMT  
 		Size: 1.8 KB (1785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7927f6daa63bf08ee5eb2b48e0598f433de2dd35e152ee55722bd4a0936a03d8`  
@@ -1173,6 +1173,7 @@ $ docker pull telegraf@sha256:5c99fd6f3b89fd6f071b47240fbc43f9d1ce7214dffacc5e98
 
 -	Layers:
 	-	`sha256:63ef022e0e70766df723d6350a80df3919634bec852f1baefcb185efb1d6eb3a`  
+		Last Modified: Wed, 25 Dec 2024 10:31:34 GMT  
 		Size: 6.4 MB (6424714 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:26bde39422c3f620abd52ccc830647bcecf3f4fe56d00558d585076e6a72b354`  
@@ -1271,6 +1272,7 @@ $ docker pull telegraf@sha256:4e121644113813aed77a4dd6e2aa340487932394691110560a
 		Size: 1.1 MB (1072877 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dc233e95a06b1faed5e1f77ce0541c69cc738d25bc71b363f6cb543bb01cc417`  
+		Last Modified: Tue, 07 Jan 2025 03:20:11 GMT  
 		Size: 15.0 KB (14961 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1328,7 +1330,6 @@ CMD ["telegraf"]
 		Size: 62.9 MB (62945710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:476cdc74588bcbbfa359dcd372097ae2d5cb68efe5b3aa889fbf09ce380c0ff8`  
-		Last Modified: Tue, 07 Jan 2025 15:29:59 GMT  
 		Size: 328.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1413,14 +1414,14 @@ CMD ["telegraf"]
 		Size: 48.5 MB (48497066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54c7be425079efba0003054ee884bf72f1ffebca733bedd6f077d2809ee9aa6f`  
-		Last Modified: Wed, 08 Jan 2025 03:47:00 GMT  
+		Last Modified: Tue, 24 Dec 2024 22:15:27 GMT  
 		Size: 23.9 MB (23865817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bbf9288c04ef24a7a430826d2712c6a1761c179fc3b6dbf5acf1ad36d273a876`  
+		Last Modified: Tue, 24 Dec 2024 23:21:58 GMT  
 		Size: 18.9 MB (18948047 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f4e8f8dd3c6ff997428abcc0c5ef24b4cc837a7cb71ad3213c4b183ddd7c8854`  
-		Last Modified: Tue, 24 Dec 2024 23:21:57 GMT  
 		Size: 1.8 KB (1785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ea77c07f598b14468c1ba2c5e54a934536fb24bb377f4591c0800440419e2716`  
@@ -1428,7 +1429,6 @@ CMD ["telegraf"]
 		Size: 70.0 MB (70021040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4a753ec2d17b79aa749029f878c004c958c8cf5d0f081dc0eb7490fcc3a1b522`  
-		Last Modified: Tue, 24 Dec 2024 23:21:57 GMT  
 		Size: 624.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1592,7 +1592,6 @@ CMD ["telegraf"]
 		Size: 18.9 MB (18870819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f3a3234f16fbfb2639349fbdd74cc1ab1c092b1088fddfd3665b73f1bd1e9907`  
-		Last Modified: Wed, 08 Jan 2025 03:57:56 GMT  
 		Size: 1.8 KB (1785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7927f6daa63bf08ee5eb2b48e0598f433de2dd35e152ee55722bd4a0936a03d8`  
@@ -1620,6 +1619,7 @@ $ docker pull telegraf@sha256:5c99fd6f3b89fd6f071b47240fbc43f9d1ce7214dffacc5e98
 
 -	Layers:
 	-	`sha256:63ef022e0e70766df723d6350a80df3919634bec852f1baefcb185efb1d6eb3a`  
+		Last Modified: Wed, 25 Dec 2024 10:31:34 GMT  
 		Size: 6.4 MB (6424714 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:26bde39422c3f620abd52ccc830647bcecf3f4fe56d00558d585076e6a72b354`  
@@ -1718,6 +1718,7 @@ $ docker pull telegraf@sha256:4e121644113813aed77a4dd6e2aa340487932394691110560a
 		Size: 1.1 MB (1072877 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dc233e95a06b1faed5e1f77ce0541c69cc738d25bc71b363f6cb543bb01cc417`  
+		Last Modified: Tue, 07 Jan 2025 03:20:11 GMT  
 		Size: 15.0 KB (14961 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1775,7 +1776,6 @@ CMD ["telegraf"]
 		Size: 62.9 MB (62945710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:476cdc74588bcbbfa359dcd372097ae2d5cb68efe5b3aa889fbf09ce380c0ff8`  
-		Last Modified: Tue, 07 Jan 2025 15:29:59 GMT  
 		Size: 328.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1860,7 +1860,7 @@ CMD ["telegraf"]
 		Size: 48.5 MB (48497066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54c7be425079efba0003054ee884bf72f1ffebca733bedd6f077d2809ee9aa6f`  
-		Last Modified: Wed, 08 Jan 2025 03:47:00 GMT  
+		Last Modified: Tue, 24 Dec 2024 22:15:27 GMT  
 		Size: 23.9 MB (23865817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:00ea042f7af0af45684f2e467cf4fea905b33fe8e68a6e9a84e891b6f1cd7e2a`  
@@ -1872,11 +1872,9 @@ CMD ["telegraf"]
 		Size: 1.8 KB (1785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ab9ef2be3db327b2e0f248bf12aceeee49ca9bb66920dc92fdc55a3271f1237b`  
-		Last Modified: Tue, 24 Dec 2024 23:21:56 GMT  
 		Size: 73.0 MB (73024260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:57122ef5ca9aae1841b94746d3812a9bb324aaf6881d9325c380226116decea9`  
-		Last Modified: Tue, 24 Dec 2024 23:21:55 GMT  
 		Size: 625.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1986,7 +1984,6 @@ $ docker pull telegraf@sha256:f8ff144a4b5f7c47e3e4b5e07cfe66d11933e420a648b0bf3c
 		Size: 6.4 MB (6429922 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9df9d718116b30474c44ca5feaaf40c75698b56ecdd9c0450ee17f5e05581876`  
-		Last Modified: Wed, 25 Dec 2024 14:47:34 GMT  
 		Size: 14.9 KB (14866 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2040,11 +2037,10 @@ CMD ["telegraf"]
 		Size: 18.9 MB (18870819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f3a3234f16fbfb2639349fbdd74cc1ab1c092b1088fddfd3665b73f1bd1e9907`  
-		Last Modified: Wed, 08 Jan 2025 03:57:56 GMT  
 		Size: 1.8 KB (1785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34ad396c371f5045a691bb4ca0fc7ff833bc83cf1b3f3988c9eec6d26920b2f6`  
-		Last Modified: Wed, 25 Dec 2024 10:32:07 GMT  
+		Last Modified: Wed, 08 Jan 2025 06:26:01 GMT  
 		Size: 65.9 MB (65936010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ac6b4ef88184633c184d048ee22af2f8d6a9ef022bae0cb88252fba140933dff`  
@@ -2131,7 +2127,7 @@ CMD ["telegraf"]
 		Size: 3.6 MB (3613999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ec9781b07564528fafbe14bdc35aed4aec96a64d3eef32392c7e767b7a63f53`  
-		Last Modified: Wed, 08 Jan 2025 03:58:20 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:20:01 GMT  
 		Size: 281.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eb3a93be72e4716a08b9c0340f57ceb8ee6bf204e79dd5ed84511d1e9f104a94`  
@@ -2167,6 +2163,7 @@ $ docker pull telegraf@sha256:06053a6dd334e508edb57dcbcbcf2e46378a3cf76dcb4f1482
 		Size: 1.1 MB (1083349 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f207461ca6b26c1a98175b8c21394ef2f8a341b8fa0181dc9857d9a5b32c7b8a`  
+		Last Modified: Tue, 07 Jan 2025 03:20:01 GMT  
 		Size: 15.3 KB (15262 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2244,7 +2241,6 @@ $ docker pull telegraf@sha256:84d6e7c2497a7e1646b286903b3c353bcdb6716831fe04d6cb
 
 -	Layers:
 	-	`sha256:30a2d0667f220cadf07c21d13de1f7200812fc19e186e202b506d272d1b7e3a7`  
-		Last Modified: Tue, 07 Jan 2025 15:30:31 GMT  
 		Size: 1.1 MB (1078988 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:090ccdc4304df3efd1b72eb115b96ba2ecd349f10a9b99c74c89c2552d518084`  
@@ -2309,7 +2305,7 @@ CMD ["telegraf"]
 		Size: 48.5 MB (48497066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54c7be425079efba0003054ee884bf72f1ffebca733bedd6f077d2809ee9aa6f`  
-		Last Modified: Wed, 08 Jan 2025 03:47:00 GMT  
+		Last Modified: Tue, 24 Dec 2024 22:15:27 GMT  
 		Size: 23.9 MB (23865817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:00ea042f7af0af45684f2e467cf4fea905b33fe8e68a6e9a84e891b6f1cd7e2a`  
@@ -2321,11 +2317,9 @@ CMD ["telegraf"]
 		Size: 1.8 KB (1785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ab9ef2be3db327b2e0f248bf12aceeee49ca9bb66920dc92fdc55a3271f1237b`  
-		Last Modified: Tue, 24 Dec 2024 23:21:56 GMT  
 		Size: 73.0 MB (73024260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:57122ef5ca9aae1841b94746d3812a9bb324aaf6881d9325c380226116decea9`  
-		Last Modified: Tue, 24 Dec 2024 23:21:55 GMT  
 		Size: 625.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2435,7 +2429,6 @@ $ docker pull telegraf@sha256:f8ff144a4b5f7c47e3e4b5e07cfe66d11933e420a648b0bf3c
 		Size: 6.4 MB (6429922 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9df9d718116b30474c44ca5feaaf40c75698b56ecdd9c0450ee17f5e05581876`  
-		Last Modified: Wed, 25 Dec 2024 14:47:34 GMT  
 		Size: 14.9 KB (14866 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2489,11 +2482,10 @@ CMD ["telegraf"]
 		Size: 18.9 MB (18870819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f3a3234f16fbfb2639349fbdd74cc1ab1c092b1088fddfd3665b73f1bd1e9907`  
-		Last Modified: Wed, 08 Jan 2025 03:57:56 GMT  
 		Size: 1.8 KB (1785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34ad396c371f5045a691bb4ca0fc7ff833bc83cf1b3f3988c9eec6d26920b2f6`  
-		Last Modified: Wed, 25 Dec 2024 10:32:07 GMT  
+		Last Modified: Wed, 08 Jan 2025 06:26:01 GMT  
 		Size: 65.9 MB (65936010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ac6b4ef88184633c184d048ee22af2f8d6a9ef022bae0cb88252fba140933dff`  
@@ -2580,7 +2572,7 @@ CMD ["telegraf"]
 		Size: 3.6 MB (3613999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ec9781b07564528fafbe14bdc35aed4aec96a64d3eef32392c7e767b7a63f53`  
-		Last Modified: Wed, 08 Jan 2025 03:58:20 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:20:01 GMT  
 		Size: 281.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eb3a93be72e4716a08b9c0340f57ceb8ee6bf204e79dd5ed84511d1e9f104a94`  
@@ -2616,6 +2608,7 @@ $ docker pull telegraf@sha256:06053a6dd334e508edb57dcbcbcf2e46378a3cf76dcb4f1482
 		Size: 1.1 MB (1083349 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f207461ca6b26c1a98175b8c21394ef2f8a341b8fa0181dc9857d9a5b32c7b8a`  
+		Last Modified: Tue, 07 Jan 2025 03:20:01 GMT  
 		Size: 15.3 KB (15262 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2693,7 +2686,6 @@ $ docker pull telegraf@sha256:84d6e7c2497a7e1646b286903b3c353bcdb6716831fe04d6cb
 
 -	Layers:
 	-	`sha256:30a2d0667f220cadf07c21d13de1f7200812fc19e186e202b506d272d1b7e3a7`  
-		Last Modified: Tue, 07 Jan 2025 15:30:31 GMT  
 		Size: 1.1 MB (1078988 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:090ccdc4304df3efd1b72eb115b96ba2ecd349f10a9b99c74c89c2552d518084`  
@@ -2756,7 +2748,7 @@ CMD ["telegraf"]
 		Size: 3.6 MB (3613999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ec9781b07564528fafbe14bdc35aed4aec96a64d3eef32392c7e767b7a63f53`  
-		Last Modified: Wed, 08 Jan 2025 03:58:20 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:20:01 GMT  
 		Size: 281.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eb3a93be72e4716a08b9c0340f57ceb8ee6bf204e79dd5ed84511d1e9f104a94`  
@@ -2792,6 +2784,7 @@ $ docker pull telegraf@sha256:06053a6dd334e508edb57dcbcbcf2e46378a3cf76dcb4f1482
 		Size: 1.1 MB (1083349 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f207461ca6b26c1a98175b8c21394ef2f8a341b8fa0181dc9857d9a5b32c7b8a`  
+		Last Modified: Tue, 07 Jan 2025 03:20:01 GMT  
 		Size: 15.3 KB (15262 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2869,7 +2862,6 @@ $ docker pull telegraf@sha256:84d6e7c2497a7e1646b286903b3c353bcdb6716831fe04d6cb
 
 -	Layers:
 	-	`sha256:30a2d0667f220cadf07c21d13de1f7200812fc19e186e202b506d272d1b7e3a7`  
-		Last Modified: Tue, 07 Jan 2025 15:30:31 GMT  
 		Size: 1.1 MB (1078988 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:090ccdc4304df3efd1b72eb115b96ba2ecd349f10a9b99c74c89c2552d518084`  
@@ -2934,7 +2926,7 @@ CMD ["telegraf"]
 		Size: 48.5 MB (48497066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54c7be425079efba0003054ee884bf72f1ffebca733bedd6f077d2809ee9aa6f`  
-		Last Modified: Wed, 08 Jan 2025 03:47:00 GMT  
+		Last Modified: Tue, 24 Dec 2024 22:15:27 GMT  
 		Size: 23.9 MB (23865817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:00ea042f7af0af45684f2e467cf4fea905b33fe8e68a6e9a84e891b6f1cd7e2a`  
@@ -2946,11 +2938,9 @@ CMD ["telegraf"]
 		Size: 1.8 KB (1785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ab9ef2be3db327b2e0f248bf12aceeee49ca9bb66920dc92fdc55a3271f1237b`  
-		Last Modified: Tue, 24 Dec 2024 23:21:56 GMT  
 		Size: 73.0 MB (73024260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:57122ef5ca9aae1841b94746d3812a9bb324aaf6881d9325c380226116decea9`  
-		Last Modified: Tue, 24 Dec 2024 23:21:55 GMT  
 		Size: 625.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3060,7 +3050,6 @@ $ docker pull telegraf@sha256:f8ff144a4b5f7c47e3e4b5e07cfe66d11933e420a648b0bf3c
 		Size: 6.4 MB (6429922 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9df9d718116b30474c44ca5feaaf40c75698b56ecdd9c0450ee17f5e05581876`  
-		Last Modified: Wed, 25 Dec 2024 14:47:34 GMT  
 		Size: 14.9 KB (14866 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3114,11 +3103,10 @@ CMD ["telegraf"]
 		Size: 18.9 MB (18870819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f3a3234f16fbfb2639349fbdd74cc1ab1c092b1088fddfd3665b73f1bd1e9907`  
-		Last Modified: Wed, 08 Jan 2025 03:57:56 GMT  
 		Size: 1.8 KB (1785 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:34ad396c371f5045a691bb4ca0fc7ff833bc83cf1b3f3988c9eec6d26920b2f6`  
-		Last Modified: Wed, 25 Dec 2024 10:32:07 GMT  
+		Last Modified: Wed, 08 Jan 2025 06:26:01 GMT  
 		Size: 65.9 MB (65936010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ac6b4ef88184633c184d048ee22af2f8d6a9ef022bae0cb88252fba140933dff`  
