@@ -50,7 +50,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:03:30 GMT  
 		Size: 3.6 MB (3613999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:39b935d8651fbb7964ef2bf39ebf221a1f442568de7694629e1761452a65b6f9`  
@@ -58,7 +58,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 16.0 MB (16005516 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:755d5faf03857af103610e05659ec4760969cdf4009763feecfeb0572e148bc0`  
-		Last Modified: Tue, 07 Jan 2025 03:31:48 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:34:44 GMT  
 		Size: 53.1 MB (53124521 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:710623e6f9eef1d39a833696002c1e1aa241b4e12fba44c362d4aac7fd981339`  
@@ -90,7 +90,6 @@ $ docker pull eclipse-temurin@sha256:92be42542ed6657aac52066cba91a8551fe5d6211e5
 		Size: 881.2 KB (881205 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b9aeef019c968bf3f644bf5b4201272661c30b0441791881c89efaa4e860260c`  
-		Last Modified: Tue, 07 Jan 2025 03:31:46 GMT  
 		Size: 19.1 KB (19088 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -137,11 +136,10 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 4.1 MB (4086686 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:51e61d1ed8c9b433eb57a691962584a6412357c544ac832c38bb6e22744d17ce`  
-		Last Modified: Tue, 07 Jan 2025 07:28:09 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:42:09 GMT  
 		Size: 16.2 MB (16178922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6563d42bd3be9bed6a68f47927bd2480bd126e4287bb7d4c9acb9da8a821500b`  
-		Last Modified: Tue, 07 Jan 2025 07:29:21 GMT  
 		Size: 52.1 MB (52076142 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:066a534dc9f3984c6c787e3d8fa1236ac0b00fc9bcf496a12548e714098e9280`  
@@ -173,6 +171,6 @@ $ docker pull eclipse-temurin@sha256:70a8bbd4daf48cc1f0036cc3739ac06e15da1613820
 		Size: 880.0 KB (879998 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5d6458c0c541f18197c05b27b091d3ab8fc3a9ed45e05abd3b7b466ca40ba1f4`  
-		Last Modified: Tue, 07 Jan 2025 07:29:19 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:34:45 GMT  
 		Size: 19.2 KB (19199 bytes)  
 		MIME: application/vnd.in-toto+json
