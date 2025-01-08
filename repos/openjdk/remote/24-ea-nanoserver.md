@@ -59,9 +59,11 @@ CMD ["jshell"]
 		Size: 1.0 KB (1042 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:64740dec185693bc31ad2f2660e2ee1d9e1878f86921a80aa4da86d32d006c58`  
+		Last Modified: Mon, 06 Jan 2025 21:09:45 GMT  
 		Size: 1.1 KB (1064 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:2c5cd1cbdcecc395c2988670a18e86f8b3724bab545c3ca3e10b13452d9e69f8`  
+		Last Modified: Mon, 06 Jan 2025 21:09:45 GMT  
 		Size: 66.3 KB (66267 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:af6888a8bb8e5492f9d180e7f7be26eef08d70ea85ba8fcb708c9b310751dd3b`  
@@ -73,6 +75,7 @@ CMD ["jshell"]
 		Size: 1.0 KB (1036 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f18bcff28d564bec53c68bf249bf76637b3ef28a3deb5a88eef94dd0e56e71c9`  
+		Last Modified: Mon, 06 Jan 2025 21:09:55 GMT  
 		Size: 208.5 MB (208473156 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bb8e444b67fbae9093d629dce7b075e7f5f1741898ee75db80fb92b86b30cda7`  
