@@ -43,10 +43,11 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 
 -	Layers:
 	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Wed, 08 Jan 2025 14:03:53 GMT  
+		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
 		Size: 3.6 MB (3613999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:94ad1e0bc1086a0d66015a8c5cb2b20b9b24a12d4c39311e4799c0d9b5940200`  
+		Last Modified: Tue, 07 Jan 2025 03:31:12 GMT  
 		Size: 166.7 MB (166658819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -66,9 +67,11 @@ $ docker pull amazoncorretto@sha256:48b31c296044bc9df85bed40c9cc9a1c4de6b15babf0
 
 -	Layers:
 	-	`sha256:05f7cc9ee9c3f2f8cbf9fa851aeae7b554b69659f48a5763b71452fc18c3c4fe`  
+		Last Modified: Tue, 07 Jan 2025 03:31:10 GMT  
 		Size: 379.8 KB (379813 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:660d394f095be765305308e4c324fa632e2a8500a1cfe3a7ce12d21cd0ecca44`  
+		Last Modified: Tue, 07 Jan 2025 03:31:10 GMT  
 		Size: 10.7 KB (10719 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -104,10 +107,11 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 
 -	Layers:
 	-	`sha256:ef22e11fe7735044a1b56fc644666588aa863fb6abe827f676cb9d11ba34d993`  
-		Last Modified: Wed, 08 Jan 2025 13:54:43 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:03:03 GMT  
 		Size: 4.1 MB (4086686 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:70544c0c4b6a989283661f627440b537a03757649de4e8a27fe4683dae274906`  
+		Last Modified: Tue, 07 Jan 2025 07:26:56 GMT  
 		Size: 164.4 MB (164352274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -131,5 +135,6 @@ $ docker pull amazoncorretto@sha256:95d2b7a28044388b4ea04d9721ccc31e558864ad532a
 		Size: 378.6 KB (378640 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:65e7407e303ea1f0e46c47f14738fd9ac9bf16a272f64f5af192f96d6fe806e4`  
+		Last Modified: Tue, 07 Jan 2025 07:26:52 GMT  
 		Size: 10.9 KB (10872 bytes)  
 		MIME: application/vnd.in-toto+json
