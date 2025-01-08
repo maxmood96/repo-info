@@ -86,7 +86,6 @@ $ docker pull rust@sha256:a659d77486b7bfc27618f1e3d7ee548e37a02cdd64b4c899ab4108
 		Size: 15.1 MB (15073395 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e2e8d26a6e52f9524bf0f63cc09d3389219f268f99242d18acdf0c3e990bf79a`  
-		Last Modified: Wed, 25 Dec 2024 01:25:50 GMT  
 		Size: 11.2 KB (11249 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -125,9 +124,11 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 		Size: 49.0 MB (49024766 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:42910d07c1ff6fab4a63b5aee5a5925989edf977378fda85da04a7fbf04644d9`  
+		Last Modified: Wed, 25 Dec 2024 03:44:15 GMT  
 		Size: 14.7 MB (14673838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e6c52726a3c7d274c95228f4ad5ea84a935ec4fec8334ece90f30c21442894fb`  
+		Last Modified: Wed, 25 Dec 2024 13:01:49 GMT  
 		Size: 50.6 MB (50640814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3517098c11280c0a16a5adf19faec34c41bc2e558fa96b528234445b76c3b6f5`  
@@ -198,7 +199,6 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 		Size: 52.2 MB (52245698 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eceb2e49ad0ea75b24fca7d94b98a8202f70828ce20fd23846a542d8dca2667d`  
-		Last Modified: Wed, 25 Dec 2024 01:49:44 GMT  
 		Size: 15.5 MB (15544017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37f980dd00d0ffb99c81471a2f1d6dbe4936d0d24b2e81f9be4ad52c0cc28b66`  
@@ -273,7 +273,6 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 		Size: 54.7 MB (54676016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:30483a4cb9e6228b018657587065a3e6487de3276661a2330332744722b7a439`  
-		Last Modified: Tue, 24 Dec 2024 22:14:51 GMT  
 		Size: 16.1 MB (16061993 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6a970a4937f3da89cf59e0bd2ab38633517b173866fbf02a490f384820768c5d`  
