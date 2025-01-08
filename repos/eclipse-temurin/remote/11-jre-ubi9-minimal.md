@@ -91,7 +91,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 37.0 MB (36989235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37d9de4fc85c22769c7903965b5ccd4a4465746424d859511db0425803e3f9c4`  
-		Last Modified: Thu, 19 Dec 2024 06:27:56 GMT  
+		Last Modified: Wed, 08 Jan 2025 04:31:49 GMT  
 		Size: 44.2 MB (44230705 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:851ded349958e9b76db05703f75ba1b5671d7798a0e5450b74253d762f50b4ec`  
@@ -232,7 +232,6 @@ $ docker pull eclipse-temurin@sha256:5cd369cb73cf72929ac17fe20dc89f5abeaedfe4dd6
 
 -	Layers:
 	-	`sha256:a97d8d477fd83fe20b851c34d6eda6f3aef34175bb4f2b31f210528135ce51d9`  
-		Last Modified: Thu, 19 Dec 2024 06:31:24 GMT  
 		Size: 3.6 MB (3594599 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5ceb7a37f9629f0f141de793a90bc0045294d26521579472c742cbb7db39f6f9`  
@@ -321,7 +320,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 39.7 MB (39724079 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f9cf88dfcede249a722451dfa4548a578c8a9dd62137ff64975d2778feee7e77`  
-		Last Modified: Thu, 19 Dec 2024 06:32:02 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c4e8ae1a8ecda619646b6a1279e398b4b49b9a8992975de79e87cb45412d6a44`  
@@ -434,6 +432,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 37.8 MB (37809118 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:47180adf33871d3703ae7dbb723ce244e6aa5b174f091868f30d549ca3ece0ed`  
+		Last Modified: Thu, 19 Dec 2024 07:08:09 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4a5ece77edcd45d5709e08f82338849026c091ac348955cb2d58f50b4f4b2fb4`  
@@ -461,5 +460,6 @@ $ docker pull eclipse-temurin@sha256:941c02703cf25ffadda29f006ada901377875dd7396
 		Size: 3.6 MB (3586421 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d52150bb76de5a4729e58e4bca5530c03bc563d86073361c49fc105ce0fdd336`  
+		Last Modified: Thu, 19 Dec 2024 07:08:09 GMT  
 		Size: 20.0 KB (20043 bytes)  
 		MIME: application/vnd.in-toto+json
