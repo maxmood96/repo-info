@@ -50,7 +50,6 @@ RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/so
 		Size: 52.2 MB (52212346 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e78ecb5873c6e0407b8f61e262e8399cbe14f8de8950dcd87f11d4df7ea0fe15`  
-		Last Modified: Tue, 24 Dec 2024 22:13:51 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -70,6 +69,7 @@ $ docker pull debian@sha256:1a93a917fb2ea6b39445f7d78be6b9577211225ad57c16eb486c
 
 -	Layers:
 	-	`sha256:c0f468012c61e0a8cf3ac55a6dcb9d43509bef0718b8cf956711eca33bde67ae`  
+		Last Modified: Tue, 24 Dec 2024 22:13:51 GMT  
 		Size: 3.2 MB (3230063 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9aac46d4904f229f43747eca439a75e8b74cbbf5abbdb9c1176637c4c05e598d`  
@@ -125,7 +125,6 @@ $ docker pull debian@sha256:d91b7422a216fb0d480c93dcc6b335a111268d4ab62907fdee61
 		Size: 3.2 MB (3232880 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3cc0f4b472210eccf1ee4741597ccc8d5e31c2f48cf8948a201e593c1805065f`  
-		Last Modified: Tue, 24 Dec 2024 22:21:13 GMT  
 		Size: 5.9 KB (5889 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -173,7 +172,7 @@ $ docker pull debian@sha256:38cbd4f939b83f9ed18731c6f78bc7b44822e6de143d88e41f46
 
 -	Layers:
 	-	`sha256:09050b23e0bbec4e593699e29bc5e780183bbd76c47e5e7118207e3ca6a465b7`  
-		Last Modified: Wed, 08 Jan 2025 07:31:40 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:31:16 GMT  
 		Size: 3.2 MB (3231623 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9afc645d3b90f49a8549b1dbe56a9b090eabec58570cfe432a094383f2c60bd6`  
@@ -226,7 +225,6 @@ $ docker pull debian@sha256:c61b88e9dd83089b65ba69e98e0f61b00252f5b30b62389f71fb
 
 -	Layers:
 	-	`sha256:59cd86610564420cee0a44a3a56c880f072e3509620da777782dc9332bfbc833`  
-		Last Modified: Tue, 24 Dec 2024 22:18:35 GMT  
 		Size: 3.2 MB (3234271 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e993dc8a4f50b29fba0409df9a266ef2fedc800afb9a9153fd902efc897d0585`  
@@ -279,7 +277,6 @@ $ docker pull debian@sha256:71685132acd3cda3e989728ed83fc3e89ce52119367760a7c20e
 
 -	Layers:
 	-	`sha256:ad3edb96e3f81e0eba4ebae7b5177b013e015d8b5072f946ef3c9501d7d078b5`  
-		Last Modified: Tue, 24 Dec 2024 22:13:56 GMT  
 		Size: 3.2 MB (3226551 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:25c39f560fbaf94c9515d272e6461cce6ab3d44be0ac71056cbb5e24bd7c85f9`  
@@ -332,6 +329,7 @@ $ docker pull debian@sha256:134b714e7c8d1c547f561bbb3055ac0653bde7715e2030c13de5
 
 -	Layers:
 	-	`sha256:4443ef231d182376b226d90246da359c41a4230cc8ce17fdba9f46d95084a216`  
+		Last Modified: Wed, 08 Jan 2025 10:31:17 GMT  
 		Size: 5.7 KB (5661 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -380,10 +378,10 @@ $ docker pull debian@sha256:c9c5c51eacfd45bf51c49cf59e23e187e301139d00f416dea53d
 
 -	Layers:
 	-	`sha256:f1bb120fa669f1298af36e70dc3064b945e596ed645c78f7974e5bac2bd097b7`  
-		Last Modified: Wed, 25 Dec 2024 03:52:11 GMT  
 		Size: 3.2 MB (3233748 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2c70bb7d618e2a9be018bfa35350370ae2046ad425cf71b56f1fce7b63ddeefa`  
+		Last Modified: Wed, 25 Dec 2024 03:52:11 GMT  
 		Size: 5.9 KB (5863 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -408,11 +406,9 @@ RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/so
 
 -	Layers:
 	-	`sha256:08472a2c71afb313a23a9d9330a521aada323417db4b4a4aa870241914d76d46`  
-		Last Modified: Tue, 24 Dec 2024 21:38:38 GMT  
 		Size: 50.7 MB (50704574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4269dbf6e198128198bbad03a3f8ca83784d24402a09cb221d8e41cf9a0fe621`  
-		Last Modified: Tue, 24 Dec 2024 22:17:31 GMT  
 		Size: 221.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -465,7 +461,6 @@ RUN echo 'deb http://deb.debian.org/debian testing-backports main' > /etc/apt/so
 		Size: 52.2 MB (52167532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5d30cd1db5ade3694e3356fd97cc384f566adb4d1f0eeda11df2396503d5fff8`  
-		Last Modified: Tue, 24 Dec 2024 22:15:50 GMT  
 		Size: 220.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -489,5 +484,6 @@ $ docker pull debian@sha256:9906426dc3d4d4d6807015dac14efaba026e8954f1761b86a1b1
 		Size: 3.2 MB (3231656 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:023552034157a3308dc83707d32bcb06ab936ff837b6dbbbcec45cc7fa28c4fc`  
+		Last Modified: Tue, 24 Dec 2024 22:15:50 GMT  
 		Size: 5.8 KB (5837 bytes)  
 		MIME: application/vnd.in-toto+json
