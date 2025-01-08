@@ -109,6 +109,7 @@ $ docker pull haproxy@sha256:ca5fbaf554404495f21188791aee0856f686b6831427c563f50
 
 -	Layers:
 	-	`sha256:12b3ec6a187852ce350d9ab7a521d8475d43a4da837413bd0ee7c32af671a81a`  
+		Last Modified: Tue, 07 Jan 2025 03:18:34 GMT  
 		Size: 180.5 KB (180471 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8d73bdde1fffa61be33f8268164cb40b5f234885d1865bf9aa58bb020875c96c`  
@@ -174,7 +175,6 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 976.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:70b961c186b2bef0a18f227d170418b5a87408f8189a761492343c200e68bc0e`  
-		Last Modified: Tue, 07 Jan 2025 03:52:17 GMT  
 		Size: 9.4 MB (9381129 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cf29a1ffce770bb1a7db5952d5a6126d22a67bf493830f1288512de9e2aeedc8`  
@@ -260,6 +260,7 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 279.5 KB (279507 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8fb245d8362e89c100e34a156e8b9ed835b8199f32d828ee053e3d1f492e9954`  
+		Last Modified: Wed, 08 Jan 2025 01:34:37 GMT  
 		Size: 973.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:adc8c1cb452293d2cb9d92f90fbb6f922596a4f7ef7e9bfebd58cf2dc747af55`  
@@ -349,6 +350,7 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 4.0 MB (3983007 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b1da83d816d4824f9133356b2f8faa828d3dc299f06f8bf153b0934b5dc06a2d`  
+		Last Modified: Tue, 07 Jan 2025 04:11:02 GMT  
 		Size: 281.7 KB (281704 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1cad2940be1ad412f0a3c68ce77d397954b01129f1f91b747356f8df82d79d2b`  
@@ -438,11 +440,10 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 
 -	Layers:
 	-	`sha256:1b51cef20fac755ea70acf005c7461407387b0deae88500e38a1982868469f7a`  
-		Last Modified: Tue, 07 Jan 2025 02:28:41 GMT  
+		Last Modified: Wed, 08 Jan 2025 03:05:41 GMT  
 		Size: 3.5 MB (3458271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f4c22f978a77e13a6a686075aa2c16fb1ca90c38034e6b2a8d36540570912762`  
-		Last Modified: Tue, 07 Jan 2025 03:15:01 GMT  
 		Size: 279.9 KB (279933 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:db9ddec47a301197d02f7c07cf36bcdd42f5dbc05eb8afe396d449b1b0af8f70`  
@@ -532,10 +533,11 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 
 -	Layers:
 	-	`sha256:9207393f0daad55cddbc775f55edde5baecdca9e0441c9c1f627f2394d28b7c3`  
-		Last Modified: Wed, 08 Jan 2025 00:32:23 GMT  
+		Last Modified: Tue, 07 Jan 2025 02:32:05 GMT  
 		Size: 3.6 MB (3567745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b2763e59391230b20b539499288567b1d96ad58731916bfca6bbb499d5e4ab56`  
+		Last Modified: Tue, 07 Jan 2025 03:39:14 GMT  
 		Size: 282.1 KB (282115 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d1de7d93a7784969b90b7c7f2812a309fc376363099c98c03c22ae034b1787ce`  
@@ -628,11 +630,10 @@ CMD ["haproxy" "-f" "/usr/local/etc/haproxy/haproxy.cfg"]
 		Size: 3.3 MB (3345140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3cf06d862f52fa490092d7fbbb0c7b49c7dc1ec1e36a27e74419c8f1262970a6`  
-		Last Modified: Tue, 07 Jan 2025 05:14:29 GMT  
+		Last Modified: Wed, 08 Jan 2025 02:34:20 GMT  
 		Size: 279.8 KB (279842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b157c11bea1859e327f1547c12c5fc5c112d74ebc46ae5f06f771f0e8c0410b8`  
-		Last Modified: Tue, 07 Jan 2025 05:14:28 GMT  
 		Size: 974.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c96c8ec81d5739413899cec69ea6e229d9f07af04bb8ad75a7a34388375bd81`  
@@ -758,6 +759,7 @@ $ docker pull haproxy@sha256:533ed61c9de06bae2a72c347075732bd1871877d77483f8e69a
 
 -	Layers:
 	-	`sha256:521264e351b3fd313ea1da862caa6852fa2484802ec177c623bfdff8edfe7ba1`  
+		Last Modified: Wed, 08 Jan 2025 01:36:37 GMT  
 		Size: 178.5 KB (178520 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ce6592df05e7011bf20c4d024350d7bdc1ec4ed948799bcf45da17a0f484097d`  
