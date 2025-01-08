@@ -48,7 +48,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 
 -	Layers:
 	-	`sha256:de44b265507ae44b212defcb50694d666f136b35c1090d9709068bc861bb2d64`  
-		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
+		Last Modified: Wed, 08 Jan 2025 01:47:07 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d5bb8d306692844672bbfa1d36b12ac9e70dcba3afed1b205da716bd98445dfd`  
@@ -88,7 +88,6 @@ $ docker pull neurodebian@sha256:0dd7607b772e7d3e7a9f3c08dcd17fe3fd5d72058d713f6
 		Size: 2.0 MB (1987197 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:50eac1b2f08d5d06cf4f78d38044ff517d06861bd698f3072184621c47feb780`  
-		Last Modified: Tue, 03 Dec 2024 02:31:15 GMT  
 		Size: 13.7 KB (13660 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -129,7 +128,7 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 
 -	Layers:
 	-	`sha256:8bb55f0677778c3027fcc4253dc452bc9c22de989a696391e739fb1cdbbdb4c2`  
-		Last Modified: Wed, 08 Jan 2025 00:53:35 GMT  
+		Last Modified: Wed, 08 Jan 2025 03:22:49 GMT  
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c806577d234470cc5e1375c6c84e7102c2e92ed2f155ce9a119a4b67e98f9e3`  
@@ -145,7 +144,6 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c2df2b4e0bcd2792b731ac676570a2eeed647f45c932ddece55a8243a41bca9`  
-		Last Modified: Tue, 03 Dec 2024 06:15:49 GMT  
 		Size: 102.2 KB (102155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -165,7 +163,6 @@ $ docker pull neurodebian@sha256:fadec3f89a7e65d06897f8d31756c5c2b70d389671fc741
 
 -	Layers:
 	-	`sha256:8f17c09c31cf4b5cd87bde14628854326c2007d643625d168d5ed82a41251647`  
-		Last Modified: Tue, 03 Dec 2024 06:15:50 GMT  
 		Size: 2.0 MB (1988242 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ebc91794bcf6ed620350bcd79c932cb607a78ee37e21fb3a7ac0cc318172128e`  
