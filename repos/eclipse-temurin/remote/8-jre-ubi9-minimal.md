@@ -98,7 +98,6 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8cbaf74aa5bdcff2dbbd0a26aa593911bc69a68b3fbc4cb5240b4b2209f8a34e`  
-		Last Modified: Thu, 19 Dec 2024 06:27:51 GMT  
 		Size: 2.3 KB (2292 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -203,7 +202,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 37.4 MB (37443775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:41d9ef217cd4ed49688593827307e386f674fff03133f151f2ec15325abc38f2`  
-		Last Modified: Wed, 08 Jan 2025 00:38:37 GMT  
+		Last Modified: Thu, 19 Dec 2024 06:30:21 GMT  
 		Size: 40.9 MB (40860507 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f739d6e3f39cc613a1feb9a3c6527c38bb6fd1969ea5fa381ecf6781f4592c4a`  
@@ -235,7 +234,6 @@ $ docker pull eclipse-temurin@sha256:b7b152dda843ebf05f7f93f8beafcdb85bbc490ceb2
 		Size: 3.6 MB (3612293 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3b63674784eb95a23525d970d555cdea5804f1804c0d1241ba7bd73993d4fe5a`  
-		Last Modified: Thu, 19 Dec 2024 06:30:20 GMT  
 		Size: 19.3 KB (19308 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -316,7 +314,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 39.5 MB (39476308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a357953d48c0ebf4e3bb23ae1c5221389d0fa710450f9dd5a0cb1ffb9f1a0646`  
-		Last Modified: Thu, 19 Dec 2024 06:30:11 GMT  
+		Last Modified: Wed, 08 Jan 2025 02:37:26 GMT  
 		Size: 41.2 MB (41246863 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:21028ca9a46806a11f2ff5eb20bdff1334da3f79334fae4ea073ce905a9eaa18`  
@@ -324,6 +322,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc3457503d9fd2f86364c2f1544c3be85660c1b2ee568540515d607504806fc4`  
+		Last Modified: Thu, 19 Dec 2024 06:30:09 GMT  
 		Size: 2.3 KB (2291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

@@ -48,7 +48,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 
 -	Layers:
 	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 23:53:52 GMT  
+		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
 		Size: 3.6 MB (3613999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c28eb1281fdad4dc13cae3798c1407468c069c31b287f6a69961372aa640b5e4`  
@@ -56,6 +56,7 @@ ENTRYPOINT ["/__cacert_entrypoint.sh"]
 		Size: 16.0 MB (16005460 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:815cbdba5837ccdf5258a1cbc7579a49b8310d5914f037bb2e6302d044b20255`  
+		Last Modified: Wed, 08 Jan 2025 01:31:22 GMT  
 		Size: 43.6 MB (43577968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a4233d01232ab4d34c864cd6b3c052e216dd74eb06d21e79ce4dda95a8fe2cfd`  
@@ -87,6 +88,6 @@ $ docker pull eclipse-temurin@sha256:422685bae67045a044a639a3ed49cc1369ca77ecab7
 		Size: 889.9 KB (889942 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0e7246a00e326f1421d4090bdf168a2d6e3624279adc9f813550981b8c4e07f1`  
-		Last Modified: Wed, 08 Jan 2025 00:31:08 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:31:16 GMT  
 		Size: 18.3 KB (18277 bytes)  
 		MIME: application/vnd.in-toto+json
