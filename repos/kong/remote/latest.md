@@ -181,7 +181,7 @@ CMD ["kong" "docker-start"]
 
 -	Layers:
 	-	`sha256:8bb55f0677778c3027fcc4253dc452bc9c22de989a696391e739fb1cdbbdb4c2`  
-		Last Modified: Tue, 19 Nov 2024 17:38:33 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:53:35 GMT  
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7194d46e9b1f57bd8c0dbf07667d978ad7786c31bb20f3df1274fdbc100b7636`  
@@ -217,5 +217,6 @@ $ docker pull kong@sha256:66c5f9ff2734959a92d6fd0807c6cff5dd683ecb2530b09e6fcf60
 		Size: 5.3 MB (5295115 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c6134e3a89b75f7b4aa6319f436d1467822db4f57fde93bf5d2f45086e87db96`  
+		Last Modified: Sat, 21 Dec 2024 03:05:39 GMT  
 		Size: 16.4 KB (16400 bytes)  
 		MIME: application/vnd.in-toto+json
