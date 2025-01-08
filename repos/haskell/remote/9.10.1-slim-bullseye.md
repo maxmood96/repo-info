@@ -59,7 +59,7 @@ CMD ["ghci"]
 
 -	Layers:
 	-	`sha256:6c87eefc1f428634061bcdc9ec95ccceecd7c7475d35a777479af83f64ee6915`  
-		Last Modified: Tue, 24 Dec 2024 21:32:32 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:59:54 GMT  
 		Size: 30.3 MB (30252643 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3adc6ca41e9f189003b24dec3f4c14b97ca3844db7862b56904614182c6993b2`  
@@ -71,7 +71,6 @@ CMD ["ghci"]
 		Size: 21.6 MB (21635308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48c2972c58617ab58df2b9cf83c6c3415e2eff73d9524e4ff598fafc406b5885`  
-		Last Modified: Wed, 08 Jan 2025 06:34:04 GMT  
 		Size: 7.2 MB (7181374 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:60492e304956c37a67558591b2a5710f552a3c606ff9a39b83b40443d184e764`  
@@ -151,15 +150,14 @@ CMD ["ghci"]
 
 -	Layers:
 	-	`sha256:879a6187682fc52c69294a2f450abdb54e257a50e8133ec6e89cb140345be6ce`  
-		Last Modified: Tue, 24 Dec 2024 21:34:50 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:11:31 GMT  
 		Size: 28.7 MB (28744853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:089a558ecb44122b158faad098ff55e0e12c45fec286aca628788504e7f2a860`  
-		Last Modified: Wed, 08 Jan 2025 06:34:08 GMT  
+		Last Modified: Tue, 24 Dec 2024 22:35:18 GMT  
 		Size: 101.7 MB (101658997 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:29a0204d7e0d1294d8aa7f92db047d22343c4cc74571f3a605b03d26392e42bf`  
-		Last Modified: Tue, 24 Dec 2024 22:35:16 GMT  
 		Size: 23.9 MB (23858433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3bcfe854f113b99affbe6d8886c128e4ec3e5d0495ce724863e1c38786998ebe`  
@@ -187,7 +185,6 @@ $ docker pull haskell@sha256:ad59cdda6dec59bca75f8362ebdb23f620f4578d0b19707c406
 
 -	Layers:
 	-	`sha256:fb8850381c9b255465993b050dab1e1913a9c11d14724f3f94fe5654c5436848`  
-		Last Modified: Tue, 24 Dec 2024 22:35:15 GMT  
 		Size: 6.6 MB (6568963 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a1a055cddcf185432fb7b5d637033d5013007208b4765a64ce20fdc7ff289dd0`  
