@@ -124,6 +124,7 @@ CMD ["postgres"]
 		Size: 168.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24532596aeea699cb99fe8ada3aca74feebd42912268d350d92f4194a15a48dd`  
+		Last Modified: Tue, 07 Jan 2025 03:19:06 GMT  
 		Size: 5.4 KB (5414 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8d2ddb5bbec7ca8a174cd333f1880b98bcb7cdcbc4b149327926f15636f12164`  
@@ -225,6 +226,7 @@ CMD ["postgres"]
 		Size: 3.4 MB (3363944 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f478230af6d9a94a10f9570d33e7e450b7aaa5d99ee75790a082536a62884cea`  
+		Last Modified: Tue, 07 Jan 2025 19:38:29 GMT  
 		Size: 982.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:79ef499b999bbc83f320da62c82914be5640edf1a6fd8a16ae7a32efec59f30a`  
@@ -248,11 +250,9 @@ CMD ["postgres"]
 		Size: 9.2 KB (9202 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:83f112bc2429b826eeb136d0d6d911a0b74e8d1fd36ce8c2d71f3ad663eb0016`  
-		Last Modified: Tue, 07 Jan 2025 20:01:28 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:da7514de2b382d4ad530bf998ba12db231768e08abf4c41e9155b6aef5f05663`  
-		Last Modified: Tue, 07 Jan 2025 20:01:28 GMT  
 		Size: 167.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a8e1e9b22c9833d684700cea56a54f5adb4c7cc3fffb8462d51abb45925e3e96`  
@@ -366,18 +366,16 @@ CMD ["postgres"]
 		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:782c763d21adff94e45ea91f07059701f6aeba11fa815beafb3b0925cceae40f`  
-		Last Modified: Tue, 07 Jan 2025 20:15:26 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a513a93d7b0b02ec9385755a511569b61020d41953dfdcdad8beb8276895a6c0`  
-		Last Modified: Tue, 07 Jan 2025 20:26:34 GMT  
 		Size: 84.4 MB (84383001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:71d26d1383e9e4dd4258ebcf3c942bfa9bef01ab1b506e1123b5bc44b1731ebb`  
+		Last Modified: Tue, 07 Jan 2025 20:26:32 GMT  
 		Size: 9.2 KB (9203 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:85aa7892bb96c109fe0c962c41794c5af190aa67eed7f6c7ab7f15543a80d077`  
-		Last Modified: Tue, 07 Jan 2025 20:26:32 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:03e5817d7ef27518bdda42f3b47c7a717d6faf4fd77924b8a1fa1ba1f1136c04`  
@@ -389,7 +387,6 @@ CMD ["postgres"]
 		Size: 5.4 KB (5420 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4fd57c2689d0d928516c671fef48037918e682317491da4b8f1130d89aec6189`  
-		Last Modified: Tue, 07 Jan 2025 20:26:33 GMT  
 		Size: 184.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -413,7 +410,6 @@ $ docker pull postgres@sha256:7e1291cb5e19577356dff8ffaf27b85d9fa6b2683b9f94078c
 		Size: 589.5 KB (589546 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cabedb886885ca2a5225bc59571093db986a7ac7ec57a214fbfdca8341847acc`  
-		Last Modified: Tue, 07 Jan 2025 20:26:31 GMT  
 		Size: 45.1 KB (45133 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -487,11 +483,9 @@ CMD ["postgres"]
 		Size: 4.1 MB (4086686 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8eb18ebde9da6b7ef62116ff01795eee1d1db364a53f6603825008816862bb13`  
-		Last Modified: Wed, 08 Jan 2025 05:51:54 GMT  
 		Size: 984.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2bbf648fab39a14d56d2995aa02eeccb5798032d03567e2a1e2c6be79cebfe71`  
-		Last Modified: Tue, 07 Jan 2025 17:54:08 GMT  
 		Size: 1.0 MB (1041708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e89e0b018b26a7fc8073902d407a3dce1b6453138a08aaeb8139f7acf3d25cc3`  
@@ -625,9 +619,11 @@ CMD ["postgres"]
 		Size: 982.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2277caeeb884f7a4f71f4bf84fbfa0283a82010de0faa79fb0e6e3e5c00bec28`  
+		Last Modified: Tue, 07 Jan 2025 03:19:10 GMT  
 		Size: 1.1 MB (1089425 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:65d0eefb882072abd35b42eaf42764440e2babb5ed26cbcb4fea8ab42b59d17e`  
+		Last Modified: Tue, 07 Jan 2025 03:19:10 GMT  
 		Size: 171.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc57908568000abc46f44fcb104794c7a8ac65218d74ba691c877f0448530bc4`  
@@ -639,6 +635,7 @@ CMD ["postgres"]
 		Size: 96.1 MB (96101512 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:97892f17b0b83aa17fcffd49a8ce8fc9a4cae3710d3d47b06083569b5429f517`  
+		Last Modified: Tue, 07 Jan 2025 03:19:24 GMT  
 		Size: 9.2 KB (9197 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:199abd2f4e448ada9e8c579b990d3150233582be648ba9735c04851ec76eb3da`  
@@ -646,6 +643,7 @@ CMD ["postgres"]
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aca6bc73f9a047caa7b46fa0a8fd7bce7a3aed0989440b6b59295d30834341fd`  
+		Last Modified: Tue, 07 Jan 2025 03:19:25 GMT  
 		Size: 168.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64b9d72d62beac4431cae55f28eb83331944faf499d9801c6c547648ec69b834`  
@@ -755,6 +753,7 @@ CMD ["postgres"]
 		Size: 983.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9e7a6be0c58d18f750c63949c53c7e3a9539bd63442fdbb665ce390fdacb7384`  
+		Last Modified: Tue, 07 Jan 2025 15:15:58 GMT  
 		Size: 1.0 MB (1029821 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7181fd99157faafb29e7d1703a5dbc83b3fe7c77224c92d77c8171d814b4ce93`  
@@ -880,7 +879,6 @@ CMD ["postgres"]
 
 -	Layers:
 	-	`sha256:ea37667e50ca807fa8abc1caf0d21091cbbe1d66b2c217158fb3e91c2787afaf`  
-		Last Modified: Tue, 12 Nov 2024 00:55:56 GMT  
 		Size: 3.4 MB (3371482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7b8f6d509c68c45b1fdf0a1a4ab907f53741b31f985f51c20dc23cd8a8d6f8c6`  
@@ -892,7 +890,6 @@ CMD ["postgres"]
 		Size: 1.1 MB (1087949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:35e6b162445bb1f4714c82ba5ee78e748e64dab99e6d2b388464c3cc9685b39d`  
-		Last Modified: Tue, 12 Nov 2024 21:35:14 GMT  
 		Size: 178.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:71780435e839b7381f0d933d50d5f447819a9afaac78fd20e751316b070c6534`  
@@ -1013,7 +1010,6 @@ CMD ["postgres"]
 
 -	Layers:
 	-	`sha256:2ed16bdf68dac880df118dfa3d21d44652bc18382729359f97297fa5998086cd`  
-		Last Modified: Tue, 07 Jan 2025 02:32:49 GMT  
 		Size: 3.5 MB (3459179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2eafe7c8b9860553fb2cea051416d72bda2987943eb8479b124d8a67a91ca6f2`  
@@ -1032,7 +1028,7 @@ CMD ["postgres"]
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:352cb6074068af3d6f372857713bee109f65770a1164c2ce22a19cb05f5df269`  
-		Last Modified: Wed, 08 Jan 2025 05:55:14 GMT  
+		Last Modified: Tue, 07 Jan 2025 18:04:15 GMT  
 		Size: 99.7 MB (99698083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d43ff6f668c182d85fc7a9a635b68c5fa17c2c1d405beb97ddd3e05aaa40c9f2`  
@@ -1044,7 +1040,6 @@ CMD ["postgres"]
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:80ee825e12b4aa1dedd0dedb6d6eb66f4c09a3988dd64050537543ae50db1728`  
-		Last Modified: Tue, 07 Jan 2025 18:04:14 GMT  
 		Size: 169.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:98270485ed33f07146174ba6db9db9f6020cd2ec3aef1c4203ebb363f2c85711`  
