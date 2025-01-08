@@ -54,7 +54,7 @@ CMD ["pypy"]
 		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8271823596195f9cd14f8087df488dd573851531c9a27e51f3f32129dda3dcea`  
-		Last Modified: Wed, 08 Jan 2025 03:51:32 GMT  
+		Last Modified: Tue, 24 Dec 2024 22:34:10 GMT  
 		Size: 3.3 MB (3306403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ba62a8c0635400f1d5123ce00d10c35a13318a516bc8b97ea17f5901b970fe5b`  
@@ -131,10 +131,10 @@ CMD ["pypy"]
 		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64cec2f141f94f6bf9839b9855f0bae5a0ecf49c9664c27959507d2f162a794a`  
-		Last Modified: Wed, 25 Dec 2024 04:00:43 GMT  
 		Size: 3.1 MB (3129819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b7839794cef7fb2b1a6af4c049b66dcafa3595a4fb23e874c626bb6720e6e552`  
+		Last Modified: Wed, 08 Jan 2025 05:51:23 GMT  
 		Size: 29.3 MB (29305738 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a8079857bb5df24843e5418ffa66934b02ad9c4b6b263baa8068d89cf8f83c79`  
@@ -162,7 +162,6 @@ $ docker pull pypy@sha256:f7020e8c4a9968d2eebb42133ab4f2616e5247100c8d61c39974d5
 		Size: 2.4 MB (2377143 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1843838ad4cc45dec73db42ffab4be8481e8b32cf4e15efb294d4422011aaae9`  
-		Last Modified: Wed, 25 Dec 2024 04:02:16 GMT  
 		Size: 22.5 KB (22501 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -211,7 +210,7 @@ CMD ["pypy"]
 		Size: 3.3 MB (3309259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5fe6933c143703e0cd355676e7ff3162b6080a07fcbcf0f14e338a39dee1bea5`  
-		Last Modified: Wed, 08 Jan 2025 03:51:36 GMT  
+		Last Modified: Tue, 24 Dec 2024 22:28:28 GMT  
 		Size: 26.8 MB (26838570 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:65d0b685246e344f6d7e15c172144621ca65ef170b53f27cc2f6d62b4171e680`  
@@ -239,5 +238,6 @@ $ docker pull pypy@sha256:926067800bf196c703479732b1d4240fa77aa45b0e521be06c0ec9
 		Size: 2.4 MB (2373961 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0ad18166756eb52ee79416601b5bc092c4d94b0e82c65a1d3e6607fb93a8327d`  
+		Last Modified: Tue, 24 Dec 2024 22:28:27 GMT  
 		Size: 22.3 KB (22263 bytes)  
 		MIME: application/vnd.in-toto+json

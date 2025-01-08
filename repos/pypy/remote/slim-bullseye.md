@@ -86,6 +86,7 @@ $ docker pull pypy@sha256:66dec6025050f3e697a68721a416fc367097694accf91b2eca45a6
 		Size: 2.7 MB (2695338 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:76ec51a810f8a984c0bb3c90d16925b16b5e8d1b55e70873a64775f674a36ba0`  
+		Last Modified: Tue, 24 Dec 2024 22:34:24 GMT  
 		Size: 28.2 KB (28166 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -130,7 +131,7 @@ CMD ["pypy3"]
 		Size: 28.7 MB (28744853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:32e488e0bc1bb153fdff89af0750cf02c99ca3e508604e20dfc654b3a70091c8`  
-		Last Modified: Wed, 08 Jan 2025 05:14:02 GMT  
+		Last Modified: Wed, 25 Dec 2024 04:01:39 GMT  
 		Size: 849.8 KB (849753 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:79c15b906a8847e9f08c8a3f0c691f0fc0803900a46fc4172a8da5483557b735`  
@@ -203,7 +204,6 @@ CMD ["pypy3"]
 
 -	Layers:
 	-	`sha256:eabd0eca84f0fa21c2f70f76b8b8cf28e46ca9b60ad0046239cb7712afdf935c`  
-		Last Modified: Tue, 24 Dec 2024 21:32:27 GMT  
 		Size: 31.2 MB (31178945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eedba45b47b91aec0c57851fab60cabce7da96e23e9f013722eb8ec32d1a34dd`  
@@ -215,6 +215,7 @@ CMD ["pypy3"]
 		Size: 26.9 MB (26862135 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b9edb961d4139c14183245254a7dc58e387eb14e79674e5c284ad8f345998a8`  
+		Last Modified: Tue, 24 Dec 2024 22:28:48 GMT  
 		Size: 3.3 MB (3306004 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -234,8 +235,10 @@ $ docker pull pypy@sha256:3acb7b695dac61588e1f6fa7ca8f7b9bed8c98b0958e71ec75b92e
 
 -	Layers:
 	-	`sha256:7bd530df1e2fc45ade38cb3f9b3ba8b03b74619089f1eead659c9d05e2510f98`  
+		Last Modified: Tue, 24 Dec 2024 22:28:48 GMT  
 		Size: 2.7 MB (2692394 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0fb99ac5d97b43e650c81e7741429dd774092d2c9fdc0aa911f2ac7ba463bbd2`  
+		Last Modified: Tue, 24 Dec 2024 22:28:47 GMT  
 		Size: 28.1 KB (28060 bytes)  
 		MIME: application/vnd.in-toto+json
