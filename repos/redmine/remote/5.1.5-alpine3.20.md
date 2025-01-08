@@ -111,7 +111,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 
 -	Layers:
 	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:03:30 GMT  
 		Size: 3.6 MB (3613999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:47484751cda921a353fe5bc1b056aeb81e2a3bbeb4101a972c8ad87a4de43850`  
@@ -119,19 +119,15 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 6.7 MB (6670511 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:71b40f66fb4fbb721623b02d5faee88cf82e47043eeefb5da2559dbefca3a168`  
-		Last Modified: Tue, 07 Jan 2025 03:20:28 GMT  
 		Size: 185.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:256bdf1368cb06c40905ceef2d3473e48c8394e00abe826c1e14d9a0930ec3f0`  
-		Last Modified: Tue, 07 Jan 2025 03:20:28 GMT  
 		Size: 33.2 MB (33233546 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:74f694b2803afda0b51cbfa913a57f3951647df46b6e8e81b8e90a071422b8d4`  
-		Last Modified: Tue, 07 Jan 2025 03:20:28 GMT  
 		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd38758b0b86d265d7245a3533ba7ff6aea90d8ddda547797bedfbda02ca2830`  
-		Last Modified: Tue, 07 Jan 2025 04:26:11 GMT  
 		Size: 922.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ce32e76c7ab6edae23ef5e2ed584bb6e0e76250c475b0b3d7ad0834c49aa5637`  
@@ -150,6 +146,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 134.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7b9126abd28ef078372963c39253a189889d23c0bf3628ffcb293958c2e6c90b`  
+		Last Modified: Tue, 07 Jan 2025 04:26:13 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:05083553f7e6c32ab1fd150246c0cf6697cc30d5362dca12eb826154e3a3d78c`  
@@ -276,7 +273,6 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 3.4 MB (3363944 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0bc1bce0db574a57ce65e6cf822bdc14d5a2f477504655b0d45410f8e0965d58`  
-		Last Modified: Tue, 07 Jan 2025 17:54:53 GMT  
 		Size: 6.5 MB (6524757 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:311d229bd1e9838a969d09c6f7f6fc035c59367443aac874528dc13a51995b27`  
@@ -291,7 +287,6 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:485a515447ad0e81d51d7d1666468491531e0d36d56445518327ff841665c9da`  
-		Last Modified: Tue, 07 Jan 2025 20:45:31 GMT  
 		Size: 922.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a2cc0bcb3273d2b431fc7660f44023e2a48ae2bd890dccca1ee06dbb20f724bf`  
@@ -303,14 +298,12 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 1.2 MB (1161881 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ad2a8b1492bd861aa22e6682de95427365e2a2b112e8fe8f309ef6457ac3472`  
-		Last Modified: Tue, 07 Jan 2025 20:45:32 GMT  
 		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2c2c465f39a9f9604db5142a1c1dea5c5366f65d4ed0b8648e6e1ec0406db837`  
 		Size: 135.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d914b5d05baae1203e878beb32e83bc1b73ab3b6decc3d88d654b498b98e601b`  
-		Last Modified: Tue, 07 Jan 2025 20:45:33 GMT  
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c20110bdc5399577df598cebb7936df77cddad7bd76a58e2be7d2229a3769dca`  
@@ -318,7 +311,6 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 3.3 MB (3250680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2846e56fbc107ea831f3c06d4d6d961d7f3bb7fc90b7b8c2556393920e9bccb7`  
-		Last Modified: Tue, 07 Jan 2025 20:45:36 GMT  
 		Size: 69.9 MB (69861005 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f252b34ed66da32edea5211279417535b97d03c1a01e259476d6276dc1a4da2e`  
@@ -342,7 +334,6 @@ $ docker pull redmine@sha256:3f52f90cda34dd040e75c72c8a72fadb288f274159ff55fc628
 
 -	Layers:
 	-	`sha256:c0935d4b16c1bc7be8f9c6ff2c7658b4fad41813ad13843a460fad1cf5ab2b87`  
-		Last Modified: Tue, 07 Jan 2025 20:45:31 GMT  
 		Size: 41.8 KB (41770 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -438,7 +429,6 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 3.1 MB (3095487 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c365461f41c5dabf158c626b6e97c08591ab48c22d336152f8fbab5794134c11`  
-		Last Modified: Fri, 06 Dec 2024 22:37:04 GMT  
 		Size: 6.4 MB (6375880 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ea1388c50ae20735a4afc3f061f18890d7ec46063937225d7a060a8dfc1f2274`  
@@ -450,7 +440,6 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 31.1 MB (31075425 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:38a3257626caea61317b4d68f87d5837cd0f145e45aaa1dfe90a5c61b2743bce`  
-		Last Modified: Fri, 13 Dec 2024 00:31:09 GMT  
 		Size: 138.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bbfeadc7ba63b87a1a92e875477074f81d229547696834c17fd9aad59efa0711`  
@@ -462,7 +451,6 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 63.1 MB (63079578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11f49419555a1301bcd016d56b17bb85ce786be1f9cbf7b8da4872a10a1d46e2`  
-		Last Modified: Fri, 13 Dec 2024 01:54:11 GMT  
 		Size: 1.2 MB (1162104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92426895070a2958c88eb723e869d9192ded330524f19231a2e83915a2162422`  
@@ -478,11 +466,9 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 125.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f5fc109ba44ec01947e0cb9fc8f065327f5a4ad0a6ba581f999288e005366133`  
-		Last Modified: Tue, 17 Dec 2024 19:46:52 GMT  
 		Size: 3.3 MB (3250725 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d475b845559b4a5043e277f03625480a0d94b873ae4103b8fa098f81ecfe5ab5`  
-		Last Modified: Tue, 17 Dec 2024 19:46:54 GMT  
 		Size: 68.8 MB (68847154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a6683d580f947bc13e74b0034c1c5495f4a498b1fc3a2febd8b39b8f7bf9971`  
@@ -614,7 +600,6 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 33.3 MB (33297336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0107469499d33033595247cc40159f0aaee9b611d0062dca9adc326abc4c4f26`  
-		Last Modified: Tue, 07 Jan 2025 15:22:25 GMT  
 		Size: 137.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a26f49169e6dd22624bef68fafb13e0849de045c06c645fa6d6d8d198a408154`  
@@ -630,7 +615,6 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 1.1 MB (1120877 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:da127c3ccc905bc9922d4199d7ef23946fe9f1809d6184cdbbf9ea958b2fdb65`  
-		Last Modified: Tue, 07 Jan 2025 20:02:26 GMT  
 		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c6dbf8bec44e9780ec8131f50c63cd0f78a1ba348fa789ecba1415ceb6b770d`  
@@ -649,7 +633,6 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 70.6 MB (70597161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6657d7cf31c92cb8a2e429f00e812818b85b932b3b8d31efc911f347a6dc2d16`  
-		Last Modified: Tue, 07 Jan 2025 20:02:28 GMT  
 		Size: 2.0 KB (1969 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -669,7 +652,6 @@ $ docker pull redmine@sha256:68e22fb2e91468a8b6257a77a7276de71474ecf9dabacbaed7d
 
 -	Layers:
 	-	`sha256:3f0a5e6958014e4b8bc243a19dbfdda722f1b7a81f02c91c7762aff0e009666e`  
-		Last Modified: Tue, 07 Jan 2025 20:02:25 GMT  
 		Size: 41.8 KB (41806 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -765,6 +747,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 3.5 MB (3463189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:020cb52783c3cce76b31f267de297b6f0a5a08bf08a15cabe5cfe7588210efea`  
+		Last Modified: Tue, 07 Jan 2025 03:33:43 GMT  
 		Size: 6.7 MB (6736934 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:22b015424bc6b46b0370229a1370ed7499c64af0a667ab733affacc74a422d97`  
@@ -776,14 +759,13 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 29.1 MB (29145643 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:33e05895b26c495aa45d2eb2a9b1d3a432572efe4c7af51ece7fda99c0c04df2`  
+		Last Modified: Tue, 07 Jan 2025 03:33:43 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:70a1ff16c483902607076acf75cc763dd2f920933b3b97693357bad55422129a`  
-		Last Modified: Tue, 07 Jan 2025 04:21:44 GMT  
 		Size: 921.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1ab6897921f5aaf3b9fe517f40f210b4079aff0fdfc244d7d72f8b4524594694`  
-		Last Modified: Tue, 07 Jan 2025 04:21:47 GMT  
 		Size: 69.4 MB (69420524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fa26ffb0b5dd26fab9b9d4faa19c7d910802d5e4e61750f9cba84c3cd06035ac`  
@@ -794,6 +776,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ac35627455d2847eb512b24510dabb24482272301cfa0d2d66ba0eace12399a`  
+		Last Modified: Tue, 07 Jan 2025 04:21:45 GMT  
 		Size: 136.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:900611a0d4fd607c6e64e636015ceac3c7f2cf56f48eeaa97829d51910de5c5e`  
@@ -805,7 +788,6 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 3.3 MB (3250713 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6745c11426311e83f2462005b7374012f8e33cb50ec01db5c22a0e2adc4fa087`  
-		Last Modified: Tue, 07 Jan 2025 04:21:49 GMT  
 		Size: 70.7 MB (70669225 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9250ab348ad4959df22c6aba6d991cda5c1338897b056514c0ae104dcfb8ef3`  
@@ -925,6 +907,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 3.6 MB (3568727 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5d74eff8cec596ea1a14471b48abe758d77bd85d1fecab671d44ed27d9c82e56`  
+		Last Modified: Tue, 07 Jan 2025 09:20:00 GMT  
 		Size: 6.9 MB (6901405 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64424af065f6aa68e4b63ab4fef4c6647c9670df76956b268f2e6257c06af69a`  
@@ -955,7 +938,6 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 175.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c1c51b39b648ce99cfcfee79f0c23b55e5fefab158fddbe4488675c9da02dba0`  
-		Last Modified: Tue, 07 Jan 2025 12:40:44 GMT  
 		Size: 134.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9d60fb3be3465edf821ec3934168dd77961e06da652aa9236c49f454c8834552`  
@@ -991,7 +973,6 @@ $ docker pull redmine@sha256:9869af67709ce1cb7743323d90dec6e77bdf54bfcd78cd02262
 
 -	Layers:
 	-	`sha256:eea7cf4091c740c71b104b444787d2a7c4abec571d8fce04bad79b9484c72eaf`  
-		Last Modified: Tue, 07 Jan 2025 12:40:44 GMT  
 		Size: 41.7 KB (41674 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1098,6 +1079,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 31.3 MB (31324871 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:750f649d8af3be05753d632e938825fc57089ba78186bf1e9f50085c8ad18700`  
+		Last Modified: Fri, 13 Dec 2024 15:31:18 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a65df41786c88f5f104ea442a62f68575bc70695771bf10692c32b89a91b996f`  
@@ -1111,6 +1093,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 1.2 MB (1163822 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9475d356445a2291f6613e4e65a8f769240e411579d7bb6c928cfd9b975261c1`  
+		Last Modified: Tue, 17 Dec 2024 23:29:16 GMT  
 		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7369e68ee635e496b813f09446267b05f6a0bf0312436628cc4cbf804a8a9a58`  
@@ -1126,7 +1109,6 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 3.3 MB (3250579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:624116cb60a2aa10d9c94371779c4bc9bdece929c1feedb8620ac3cbc5c7bb8c`  
-		Last Modified: Tue, 17 Dec 2024 23:29:29 GMT  
 		Size: 73.9 MB (73932208 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a068b52ad80043b8bd406decefaed0342ab0f3690eb2dbe564c4a3a251daf159`  
@@ -1150,7 +1132,6 @@ $ docker pull redmine@sha256:8f43354f41f0b58f3fe047956d7e5ac987967968ac59b88a5ff
 
 -	Layers:
 	-	`sha256:78c115197d9fcb3af6e87873f201fee62e853b6613d37cba8dc29e02ae76c995`  
-		Last Modified: Tue, 17 Dec 2024 23:29:16 GMT  
 		Size: 41.7 KB (41674 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1242,6 +1223,7 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 
 -	Layers:
 	-	`sha256:2ed16bdf68dac880df118dfa3d21d44652bc18382729359f97297fa5998086cd`  
+		Last Modified: Tue, 07 Jan 2025 02:32:49 GMT  
 		Size: 3.5 MB (3459179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56b2af3c72152f3efb6a5884baa963f6f58178380040af78eb130a0e83d1a590`  
@@ -1249,11 +1231,9 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 7.1 MB (7050232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:89e00c1d511151a7d5d754f9c158e5fd46c2c55c858304a5b20c5c9e61b443a3`  
-		Last Modified: Tue, 07 Jan 2025 15:03:55 GMT  
 		Size: 186.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:09f8f019f3b4a8a42c27648883fc8ec64de11f9efe8c45581fb7c57b8cd65bda`  
-		Last Modified: Tue, 07 Jan 2025 15:15:14 GMT  
 		Size: 30.4 MB (30389649 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c83a52b1b361269d82170ba5821687f4aaca1b3a1c78dcbc4500f5e5224dea0d`  
@@ -1261,7 +1241,6 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ad658f4e8709047fdd807165642dcb9c9857d41d108a6e034a7864046af4e6c`  
-		Last Modified: Tue, 07 Jan 2025 20:39:49 GMT  
 		Size: 921.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:88505cb261779a1481017f4ec7b5dd0b14c4d0e8534422e0eac59ce61b116c38`  
@@ -1289,11 +1268,9 @@ CMD ["rails" "server" "-b" "0.0.0.0"]
 		Size: 3.3 MB (3250647 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:25ce1000b003a3336b70957dee3eb6c5223746501dcbfd97d6604d56d9acb106`  
-		Last Modified: Tue, 07 Jan 2025 20:39:52 GMT  
 		Size: 71.7 MB (71691326 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:75646d52bfdb8d1cb34ec515df25dfc27b7de99f8629518f928440e87f9a1049`  
-		Last Modified: Tue, 07 Jan 2025 20:39:50 GMT  
 		Size: 2.0 KB (1970 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
