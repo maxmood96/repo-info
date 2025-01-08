@@ -76,11 +76,9 @@ CMD ["mongo-express"]
 		Size: 42.6 MB (42631729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24ccc27c613d79e23ab0d19893d0505ba531b266e6b6c56267c0635c5ae8410e`  
-		Last Modified: Wed, 20 Nov 2024 19:24:48 GMT  
 		Size: 1.4 MB (1387217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c53026b414f8e18bfde927049ab4a6e1ec606161d8f06145728f87b6a2334050`  
-		Last Modified: Wed, 20 Nov 2024 19:24:48 GMT  
 		Size: 445.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0aeb5106464589ad8f843b3319f9d5ad77bdee18680d6b5621cbacc5eeb8ac4e`  
@@ -185,7 +183,6 @@ CMD ["mongo-express"]
 		Size: 3.4 MB (3359246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:55b646bedde00306f5e12c0e681ee985ef441e91b22278d16db3cd13d2975220`  
-		Last Modified: Wed, 20 Nov 2024 19:49:46 GMT  
 		Size: 42.2 MB (42176348 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:28e4cdbeccf68ae9ce47ad2caa1737d54563706835227ad12859e4bf0b36e802`  
@@ -197,6 +194,7 @@ CMD ["mongo-express"]
 		Size: 443.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ac5463b67b47edd21070129c281e5755b200cdeb57ffdc2bf8f722e2d6a91efe`  
+		Last Modified: Wed, 20 Nov 2024 22:06:47 GMT  
 		Size: 862.4 KB (862424 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dadb3e2e539a87024a0022b31c2d8d1aed3fb528641e39f6761d23aa35389fd9`  
@@ -208,7 +206,6 @@ CMD ["mongo-express"]
 		Size: 13.6 MB (13640431 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bcf7a772e95a4fac7a69e90a665bf73ae2658610e4730fba7e6b048d1d3168a5`  
-		Last Modified: Wed, 20 Nov 2024 22:06:47 GMT  
 		Size: 851.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -232,6 +229,5 @@ $ docker pull mongo-express@sha256:ed5bbe33cc81352c8c97999775e2073474d80f568be0a
 		Size: 997.0 KB (997022 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f0bd2f440bb418c416620d66704e7ce5fc54a612a57a18d4217e7a606811cc8f`  
-		Last Modified: Wed, 20 Nov 2024 22:06:47 GMT  
 		Size: 15.4 KB (15405 bytes)  
 		MIME: application/vnd.in-toto+json
