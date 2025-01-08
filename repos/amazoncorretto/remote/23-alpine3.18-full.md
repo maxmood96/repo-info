@@ -43,7 +43,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 
 -	Layers:
 	-	`sha256:5fa62e1bbddf13eb6443e20aa8ed938bec91a8a5d5d0a26e58e8eafb3ada9a1c`  
-		Last Modified: Tue, 07 Jan 2025 02:28:37 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:50:51 GMT  
 		Size: 3.4 MB (3407632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c0863073705fecf260ab18415cef20676956a41bf3b2701a6354837a6c510841`  
@@ -131,7 +131,6 @@ $ docker pull amazoncorretto@sha256:719b7352f9529ac72919156290d4943917630d1862b5
 
 -	Layers:
 	-	`sha256:025755d320b841fb3198d51f1829afec0ff4dedb670e0d9a3412c1bdb3ffe164`  
-		Last Modified: Tue, 07 Jan 2025 07:25:46 GMT  
 		Size: 380.9 KB (380857 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:357230a2c89e7d45e22a86227c284a54ff2a217a43a62076b936d93f0db7074a`  
