@@ -90,11 +90,11 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 343.6 KB (343578 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ccef1045412bf4dba8b8e2014fff4e7d34e3807f16e19e3080253d570a26cdd`  
-		Last Modified: Wed, 08 Jan 2025 05:29:55 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:33:29 GMT  
 		Size: 7.5 KB (7451 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b44c500748de0c4cb4f9a96f6076fd1c324930065b7146976fe1a494542e33ad`  
-		Last Modified: Wed, 08 Jan 2025 04:40:59 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:33:30 GMT  
 		Size: 14.6 MB (14638935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -195,6 +195,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 343.5 KB (343475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc8fbc790861f95c5dc2696a20d1cc676b86432cf1b370b1592df816c155f9d5`  
+		Last Modified: Tue, 07 Jan 2025 18:10:11 GMT  
 		Size: 7.5 KB (7450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dae92bb59d07a7d6ef0d7ae7ec8f78e314f0aca7deefec5fec1c9f83ff634288`  
@@ -291,7 +292,6 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 3.1 MB (3091288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a53bf021d99fe966b28264d81b1aa18a57a08c960444fdad5a10117cbce80e4d`  
-		Last Modified: Tue, 07 Jan 2025 18:01:57 GMT  
 		Size: 340.3 KB (340284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d0307cf68affcc31e4302ecc814c02e02594f39c7d6934b591eaf49bd14b9540`  
@@ -323,10 +323,10 @@ $ docker pull caddy@sha256:3fb64809bd1e8244f7bea0c9d329f0c26d2910cd02a8b988927c6
 
 -	Layers:
 	-	`sha256:a53f829bd6daf9a10115b0219176747b1690d4680412ec511557753fcb4d954c`  
-		Last Modified: Tue, 07 Jan 2025 18:02:17 GMT  
 		Size: 281.8 KB (281827 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0fe9fb18c2280ac1d537c60eba015680b6e3435c0e3cd9e9ad5252c2145d372b`  
+		Last Modified: Tue, 07 Jan 2025 18:02:17 GMT  
 		Size: 18.4 KB (18390 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -395,6 +395,7 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 4.1 MB (4086686 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:38c05a3621831e54621e4f1acaf4a8bb5e55116191284ce77a083cabdc4a93fe`  
+		Last Modified: Tue, 07 Jan 2025 15:32:47 GMT  
 		Size: 356.3 KB (356309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3dac5f58ddd3d404206dade70635464b77bcdc1ff2e477103abf966fe860e273`  
@@ -499,7 +500,6 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 		Size: 3.6 MB (3568727 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8d557e47367ddc5bfe0388f2168584eded91f46cd63365d227061578b0ba4fba`  
-		Last Modified: Tue, 07 Jan 2025 09:40:19 GMT  
 		Size: 357.5 KB (357457 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aa90326b74c9ad7342533dec887081f8217f0917106f4626ded5f90aade56a57`  
@@ -600,7 +600,6 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 
 -	Layers:
 	-	`sha256:ea37667e50ca807fa8abc1caf0d21091cbbe1d66b2c217158fb3e91c2787afaf`  
-		Last Modified: Tue, 12 Nov 2024 00:55:56 GMT  
 		Size: 3.4 MB (3371482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb8e4791757fafc8d5ec76994945b7f221ee3a7f72dce5e8491588396b4fd14a`  
@@ -636,6 +635,7 @@ $ docker pull caddy@sha256:e512d9e3dcfdfc8eaefc5fd9e4d36efc271021f1f32f26df279c0
 
 -	Layers:
 	-	`sha256:a54c64a9e3f6af4b319410f1ab337d6211aff9d5544b7a7f05bddd04002d169e`  
+		Last Modified: Wed, 13 Nov 2024 11:41:06 GMT  
 		Size: 283.5 KB (283533 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6fa2b6c9c4d6cedf08e5cf26aa83277da3d69b5368c604ef630a28b87d692d86`  
@@ -704,7 +704,6 @@ CMD ["caddy" "run" "--config" "/etc/caddy/Caddyfile" "--adapter" "caddyfile"]
 
 -	Layers:
 	-	`sha256:2ed16bdf68dac880df118dfa3d21d44652bc18382729359f97297fa5998086cd`  
-		Last Modified: Tue, 07 Jan 2025 02:32:49 GMT  
 		Size: 3.5 MB (3459179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:904289d136591d99b76dcee7d9e790a2a0fa92d4b2ee2c75116aa973eb3bcb6f`  
