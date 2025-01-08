@@ -172,7 +172,6 @@ RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1734912000'
 
 -	Layers:
 	-	`sha256:5fa7dd15071d14822d961b09931bde3279c2a5a07e678a129c7615eb940631c9`  
-		Last Modified: Tue, 24 Dec 2024 21:37:25 GMT  
 		Size: 31.9 MB (31861445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -301,6 +300,7 @@ $ docker pull debian@sha256:1cbcf8322f16565daf6388b14e57d6b123088b19f9d0ac655904
 
 -	Layers:
 	-	`sha256:1f9736ffa2310d48ec81106bca234c8b9a75e9045756ccba5b1308a7811f4456`  
+		Last Modified: Wed, 25 Dec 2024 00:36:48 GMT  
 		Size: 2.0 MB (1958879 bytes)  
 		MIME: application/vnd.in-toto+json
 

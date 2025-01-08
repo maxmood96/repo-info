@@ -64,6 +64,7 @@ $ docker pull debian@sha256:a8ad7bbb4860482b13183959a86cff82b16107c5557a5ba42af6
 		Size: 3.9 MB (3917518 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f6f1b86ce0c99fb243b647f33bae0bc06236aca6f37703b72496d250cdaa80db`  
+		Last Modified: Tue, 24 Dec 2024 22:13:47 GMT  
 		Size: 5.9 KB (5851 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -145,7 +146,6 @@ RUN echo 'deb http://deb.debian.org/debian oldstable-backports main' > /etc/apt/
 		Size: 52.2 MB (52245698 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6f6f587ccdf194bf78f6b4ddb7a0a4263918ba39a45455249e3bc4774295de18`  
-		Last Modified: Tue, 24 Dec 2024 22:18:05 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -169,6 +169,7 @@ $ docker pull debian@sha256:3850916187d15afffdec199318299ea4d4401c8f0bd96cf18419
 		Size: 3.9 MB (3917098 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5cc6de3f5328f88706e45ad9be27059e70a3630dd6d74883e89f7bdac263a635`  
+		Last Modified: Tue, 24 Dec 2024 22:18:05 GMT  
 		Size: 5.9 KB (5921 bytes)  
 		MIME: application/vnd.in-toto+json
 
