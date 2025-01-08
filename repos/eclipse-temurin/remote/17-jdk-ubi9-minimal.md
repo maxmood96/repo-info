@@ -99,7 +99,6 @@ CMD ["jshell"]
 		Size: 144.5 MB (144542126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:55e29115135a49e00d1f0a048172330e91e289f128d1533fba6d1e3c4eac2889`  
-		Last Modified: Thu, 19 Dec 2024 06:28:06 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c61c4877cf210c7d672e07409a3308bb61b80c5ac32ec3b31fa6eced81b7086`  
@@ -207,13 +206,15 @@ CMD ["jshell"]
 		Size: 37.6 MB (37577418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:57f5ca1f094534b84eeb5099558913cebb9becc0ece5d82f47d4ed1bff8f0530`  
+		Last Modified: Thu, 19 Dec 2024 06:29:45 GMT  
 		Size: 37.4 MB (37443775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b66ad59b933bf9ec6e0ae073c0d32b61913669b713ffc74fc3df934b2eb6979`  
-		Last Modified: Tue, 07 Jan 2025 21:32:52 GMT  
+		Last Modified: Thu, 19 Dec 2024 06:32:04 GMT  
 		Size: 143.4 MB (143365264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:90cde5c1238262cade6065d7bf685153aaa5773ffc2ca78211d8763d5eaa4f82`  
+		Last Modified: Thu, 19 Dec 2024 06:32:00 GMT  
 		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1d175b5d27b987133c651de31383e5e6b4cd114c3f9c1be0201b9ff2c42aa177`  
@@ -241,6 +242,7 @@ $ docker pull eclipse-temurin@sha256:1c8286a5125cabc75d5b01c5c0e91a28fee22e8ebb9
 		Size: 3.7 MB (3665989 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d4896a1f665667d6975703680e3b1520c05afb5fb029823ebb6e91aff37527ca`  
+		Last Modified: Thu, 19 Dec 2024 06:32:00 GMT  
 		Size: 21.1 KB (21084 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -440,6 +442,7 @@ CMD ["jshell"]
 		Size: 37.0 MB (37006770 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:430e94585d146a65d84db7b21a746cd13aadd7505d3ba25277ebc37578f79f3e`  
+		Last Modified: Thu, 19 Dec 2024 06:32:54 GMT  
 		Size: 134.6 MB (134592661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:934d9ff1b7fa14e1f58d62568327fe06d61d7e26e76852879bfc796b3bbb702d`  
