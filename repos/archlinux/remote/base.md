@@ -58,6 +58,7 @@ CMD ["/usr/bin/bash"]
 		Size: 153.1 MB (153099589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b6b4a585c6e7b1cbb51e0f620a4017295359daaf4fe97d4d44fb7ec8da52a7c8`  
+		Last Modified: Tue, 07 Jan 2025 03:14:26 GMT  
 		Size: 8.3 KB (8345 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
