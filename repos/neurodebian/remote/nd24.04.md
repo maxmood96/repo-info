@@ -87,6 +87,7 @@ $ docker pull neurodebian@sha256:0dd7607b772e7d3e7a9f3c08dcd17fe3fd5d72058d713f6
 		Size: 2.0 MB (1987197 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:50eac1b2f08d5d06cf4f78d38044ff517d06861bd698f3072184621c47feb780`  
+		Last Modified: Tue, 03 Dec 2024 02:31:15 GMT  
 		Size: 13.7 KB (13660 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -163,6 +164,7 @@ $ docker pull neurodebian@sha256:fadec3f89a7e65d06897f8d31756c5c2b70d389671fc741
 
 -	Layers:
 	-	`sha256:8f17c09c31cf4b5cd87bde14628854326c2007d643625d168d5ed82a41251647`  
+		Last Modified: Tue, 03 Dec 2024 06:15:50 GMT  
 		Size: 2.0 MB (1988242 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ebc91794bcf6ed620350bcd79c932cb607a78ee37e21fb3a7ac0cc318172128e`  
