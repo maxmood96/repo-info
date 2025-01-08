@@ -58,7 +58,6 @@ CMD ["iex"]
 		Size: 3.6 MB (3613999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5695fbec97f0c142505089ebee2ad51a362491eddbbceb3aae7e95e6a9f6691`  
-		Last Modified: Tue, 07 Jan 2025 18:39:10 GMT  
 		Size: 49.4 MB (49410817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b590f1418ca3c7c7b51247fb92843ff6e227bdad9586c3d4a551b1a871f84a98`  
@@ -86,7 +85,6 @@ $ docker pull elixir@sha256:7a863ce16a4c735177ddbb2745e3402d0734857924970d56359e
 		Size: 273.7 KB (273673 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:47edf61824e4f70f3ff05eee21c649bad7b015803f4e4410de7a0b693f13355c`  
-		Last Modified: Tue, 07 Jan 2025 19:10:53 GMT  
 		Size: 10.4 KB (10428 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -200,10 +198,10 @@ CMD ["iex"]
 		Size: 4.1 MB (4086686 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6da5e85dde7710276bd373b18f18fef91dc4413e2e3611c12c2beb718360b851`  
-		Last Modified: Tue, 07 Jan 2025 19:21:27 GMT  
 		Size: 49.2 MB (49196504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbc1b52329a0c56d4904bc68f1c5b5db0524086ceada52434abf63e730ac0aad`  
+		Last Modified: Tue, 07 Jan 2025 20:46:35 GMT  
 		Size: 7.4 MB (7449259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -227,6 +225,7 @@ $ docker pull elixir@sha256:3c94808930c08076a4204da7c1a86006ff6e2cede7069de25caa
 		Size: 274.5 KB (274485 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:34960a69a53497e4017cc117caca04d63fecf4117d8cb553d1acdc9a06153874`  
+		Last Modified: Wed, 08 Jan 2025 05:36:19 GMT  
 		Size: 10.6 KB (10555 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -411,7 +410,6 @@ CMD ["iex"]
 		Size: 3.5 MB (3459179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14222fdb6913612281828a38e746ef583f767835b9f337bbdb9767e49f660bb3`  
-		Last Modified: Wed, 08 Jan 2025 03:32:30 GMT  
 		Size: 47.7 MB (47670652 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5c7467cb044b1bc94f368d6cf8fefc63c4b9a50024ee8ebd8e44dc3921670e3`  

@@ -224,6 +224,7 @@ $ docker pull elixir@sha256:b3da0c1043161fff8ea0de76ed8e0efe02af17589a5d2895d40c
 
 -	Layers:
 	-	`sha256:38f248de55c8bb7fed065114b9c1d61fa293e28ca65d1394c372a28e2dffd087`  
+		Last Modified: Tue, 07 Jan 2025 20:53:04 GMT  
 		Size: 274.9 KB (274883 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a928e157122c40f9135efef0285bbda2bb8f71d38acceb24bbc61ca9abd06ebf`  
@@ -270,6 +271,7 @@ CMD ["iex"]
 		Size: 3.5 MB (3463189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26d0c6bd5db92567147ed28e32e4742e2456cfce40c563ed7e9e18ba697a563a`  
+		Last Modified: Wed, 08 Jan 2025 05:32:01 GMT  
 		Size: 44.6 MB (44635154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:711579d21b3be367964d2443a733b7a4d02a0af059368acb727827c35f2e0659`  
@@ -344,6 +346,7 @@ CMD ["iex"]
 		Size: 44.7 MB (44688136 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:72e4596a409352b38cbab6bb1d0b1cd551df8e034f7174ab0676c2ed9ba68599`  
+		Last Modified: Tue, 07 Jan 2025 20:30:52 GMT  
 		Size: 7.4 MB (7447204 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -363,11 +366,9 @@ $ docker pull elixir@sha256:ba62e2033c407621dce9600c68887d2692cabb6d3f8f7c45705b
 
 -	Layers:
 	-	`sha256:76d7b94d1dd83877386acf531ec81e1ce630a93e765f4822babc185a8fe957b8`  
-		Last Modified: Tue, 07 Jan 2025 20:30:52 GMT  
 		Size: 268.2 KB (268218 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f5e01526a74c72a77b61a27fe92365cf4fda4b044fa0957670a8a7aefbbb9d68`  
-		Last Modified: Tue, 07 Jan 2025 20:30:51 GMT  
 		Size: 9.6 KB (9565 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -434,6 +435,7 @@ $ docker pull elixir@sha256:0fdad9e07b8cf8fa08008b5bb73c7dde645d441d17351277579b
 
 -	Layers:
 	-	`sha256:84bcf334b4dc9af2e4fb695e7d265de8a6c7c687b16676ef96640f0ab4f0aec3`  
+		Last Modified: Tue, 07 Jan 2025 21:18:03 GMT  
 		Size: 268.2 KB (268190 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1cb335c5ba29b2fc591b7947e3b44ea9182f47ebccdc6b43f6cb62600cacf3d3`  
