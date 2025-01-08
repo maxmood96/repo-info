@@ -81,11 +81,10 @@ CMD []
 		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b7fd164df8de2e516756f7fff971f9f1141fac9ddb30e2a320d9a5ebef6089f`  
-		Last Modified: Tue, 24 Dec 2024 22:18:01 GMT  
 		Size: 105.7 MB (105723618 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:55b043eac9f04d1d5325812d1442fe43c5e5b603b4da1bfa85aa6f4e485128a3`  
@@ -113,7 +112,6 @@ $ docker pull varnish@sha256:ee0132da3f9ae61c8b466cfd80f612f3433f44877ba9ce9a758
 
 -	Layers:
 	-	`sha256:0473f5b5c519617c1dfd1c294b5aa43c42a17dfaa0fb16b9ec33c43fa2857717`  
-		Last Modified: Tue, 24 Dec 2024 22:17:58 GMT  
 		Size: 18.8 KB (18805 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -175,15 +173,13 @@ CMD []
 
 -	Layers:
 	-	`sha256:24f0da30a772db626789cda3e7b0911098d07574c40b30be943d43dec3ed685f`  
-		Last Modified: Tue, 24 Dec 2024 21:33:51 GMT  
 		Size: 23.9 MB (23933522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:488c51e05cebcc5317e8217c18fbdf0947fe66e4931dbc301e2c0ca2485bfc14`  
-		Last Modified: Wed, 25 Dec 2024 03:41:03 GMT  
 		Size: 80.4 MB (80392431 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c384a005a061279c600dca14807c333a6fdc1a1cef937fb66f847b550af34714`  
@@ -277,18 +273,17 @@ CMD []
 		Size: 28.1 MB (28058723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5a2eb623eb2c2af02a78dfda027bc7eb2c31ffd2aac6ef361ab8fd095db7b3f9`  
-		Last Modified: Wed, 25 Dec 2024 01:46:44 GMT  
 		Size: 100.2 MB (100194936 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c04b9154ccdb02a831d0bc2a3387ce3abec774d7dffc7fa2b3c9f09006102d9`  
+		Last Modified: Wed, 25 Dec 2024 01:46:42 GMT  
 		Size: 482.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d82144a02b397e33e14808e7eb4854efa7115fa6089a4f31a2dadb43045a4176`  
-		Last Modified: Wed, 25 Dec 2024 01:46:42 GMT  
 		Size: 1.5 KB (1517 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -308,6 +303,7 @@ $ docker pull varnish@sha256:0a25140ac522507518efb5b7063e81f3c77715e88df5b33f670
 
 -	Layers:
 	-	`sha256:2dba4ee5c0da0c6beffafc81069c3bbf5e240a1465e2c7387745eac286ab5cc9`  
+		Last Modified: Wed, 25 Dec 2024 01:46:42 GMT  
 		Size: 18.9 KB (18897 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -369,21 +365,20 @@ CMD []
 
 -	Layers:
 	-	`sha256:fba9c0797a7b5bba079e0fd9d815a8878aea58430ea12c84047010f98fbe34d7`  
+		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
 		Size: 29.2 MB (29205387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd7366598e7061825f05da3bcb220b5736395e05c957280b72e428b41b56906d`  
-		Last Modified: Tue, 24 Dec 2024 22:17:07 GMT  
 		Size: 101.9 MB (101868447 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:533821801dc415d6283bbdeb01f2725e1e6a8c2f3514f3182f04d91f2224545e`  
 		Size: 482.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c0de429d72b43f172ab0f4338dfeb624390652dc5bbf47036f9064e9d42acd54`  
-		Last Modified: Tue, 24 Dec 2024 22:17:05 GMT  
 		Size: 1.5 KB (1515 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -403,7 +398,6 @@ $ docker pull varnish@sha256:5a1beb3c1a2654f9bab347ccb3f385d25c0fb6f78f482ed87c3
 
 -	Layers:
 	-	`sha256:3faeca37c787fdd19f5ae4dc3a72aecad8fb97091f65c9730840cee1d8145630`  
-		Last Modified: Tue, 24 Dec 2024 22:17:05 GMT  
 		Size: 18.8 KB (18778 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -465,14 +459,14 @@ CMD []
 
 -	Layers:
 	-	`sha256:4a1ea4d3c9e0863e99d27aae6dac9a4b908a6413e758c7785d8fefe555b0e760`  
+		Last Modified: Wed, 25 Dec 2024 00:32:48 GMT  
 		Size: 32.1 MB (32063240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f5ff785233c8dc90bb0b8fdb548f4390030549be726889b276e7b82969ab8cde`  
-		Last Modified: Wed, 25 Dec 2024 06:09:56 GMT  
 		Size: 104.7 MB (104661327 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:004d60cf52e44e4525ab0febf2feb085fa71525180a50b0247b6ed27a9cfa513`  
@@ -562,7 +556,6 @@ CMD []
 
 -	Layers:
 	-	`sha256:0e7e84bd4cca9e29f08dfac96d436e65bdd31929520e73147137b382fbc89b70`  
-		Last Modified: Tue, 24 Dec 2024 21:33:49 GMT  
 		Size: 26.9 MB (26878901 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d22db82a36c3531a811b2d99b7623ec994e8011c1861ff9e366266db0a655fbd`  
@@ -570,7 +563,7 @@ CMD []
 		Size: 85.0 MB (84953117 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9491f342ff1a24b82df2907592107d25ddd6144c3ff42c6bba579057c34ba9bd`  
@@ -598,6 +591,5 @@ $ docker pull varnish@sha256:32d534185b36bb20b299a444c983d4a8589e75686c69d8904f2
 
 -	Layers:
 	-	`sha256:9d2736ccc0196c6c220e722919bfde54e1b082ed32fafac1399cdba220c0240a`  
-		Last Modified: Wed, 25 Dec 2024 00:13:12 GMT  
 		Size: 18.8 KB (18801 bytes)  
 		MIME: application/vnd.in-toto+json
