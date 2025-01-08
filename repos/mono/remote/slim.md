@@ -76,6 +76,7 @@ $ docker pull mono@sha256:5a8421c386b586f98034983cc67448394e910e05ff857862418296
 		Size: 4.1 MB (4124009 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3ec35e37e8929d1729d15f72eaafb529c88604e0eb2b568452d3927312850835`  
+		Last Modified: Fri, 21 Jun 2024 01:03:10 GMT  
 		Size: 10.1 KB (10110 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -111,9 +112,11 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 24.9 MB (24889750 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6702eef9c7d9ec6ede2c5f9a15a047b314ccc9140f25694f337c0127478bb25b`  
+		Last Modified: Wed, 01 Mar 2023 07:23:12 GMT  
 		Size: 2.5 MB (2467715 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3781ed66d8db4f1e7c7b6323f62af11c65550a10f339ad7c0fb68f9467f8026d`  
+		Last Modified: Wed, 01 Mar 2023 07:23:17 GMT  
 		Size: 24.5 MB (24503499 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -148,11 +151,11 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 22.9 MB (22944997 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:47de34cd92203a1c44adc48be4330b559dcef9e18da3b5babab329d0fd26e11f`  
-		Last Modified: Fri, 21 Jun 2024 05:26:04 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:47:04 GMT  
 		Size: 2.4 MB (2370028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14dae79eba6437cf8f1fe8c17653348408d9b42ad8948d93472bbffd86792d7b`  
-		Last Modified: Fri, 21 Jun 2024 05:26:05 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:47:05 GMT  
 		Size: 23.6 MB (23573077 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -211,6 +214,7 @@ RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapsh
 		Size: 26.1 MB (26109272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7eedc96c6829dd818687f02719ed29ee02b62d29b93d260a87cbfdf65bd82307`  
+		Last Modified: Fri, 21 Jun 2024 07:34:59 GMT  
 		Size: 2.6 MB (2644870 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cc18ec37f21948c54422a8a2bd31634ae80dc4cd7d1f82b12857c17ad3e4aeec`  
@@ -297,7 +301,6 @@ $ docker pull mono@sha256:21b839469b89df687807ffdd3f870708c16efa44a6b299510e9d63
 
 -	Layers:
 	-	`sha256:053ce445b27e3a8e224b16a3d2a8cdc9dc1d84ebee53d08de3d37ec36d5de95c`  
-		Last Modified: Fri, 21 Jun 2024 01:03:12 GMT  
 		Size: 4.1 MB (4120175 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:190e2c58614be0d956b94cdc868f9beb77c2f2d8ef16c981339f2b2c23f56975`  
