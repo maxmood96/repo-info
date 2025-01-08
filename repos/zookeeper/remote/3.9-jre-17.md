@@ -92,7 +92,7 @@ CMD ["zkServer.sh" "start-foreground"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
+		Last Modified: Wed, 08 Jan 2025 07:56:27 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17da8ec43a12ff631d1579ab778a0883e59bca58adc86136e1c447ef261a2b6e`  
@@ -241,7 +241,7 @@ CMD ["zkServer.sh" "start-foreground"]
 		Size: 16.1 MB (16062123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6c88cd8dd8835e47c7a890ad7abd2ca59cf691145582518cf5843edbd6d6bfa0`  
-		Last Modified: Thu, 24 Oct 2024 01:12:30 GMT  
+		Last Modified: Wed, 08 Jan 2025 07:29:05 GMT  
 		Size: 46.4 MB (46430856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0c3c08b455337af9ba6b5fe522389a1d0a2b621fe437f3832a54289cac03397`  
@@ -249,6 +249,7 @@ CMD ["zkServer.sh" "start-foreground"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26811a6e12de121df2970871f9027eb19d2c672b0045944972cf63a39c74aa15`  
+		Last Modified: Thu, 24 Oct 2024 01:12:28 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c9f566f73f3660c2f284eed4065177b843b37c33ad892c5e0985b3702954cd7`  
@@ -260,7 +261,6 @@ CMD ["zkServer.sh" "start-foreground"]
 		Size: 1.0 MB (1047412 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0b0a521e12eef77408e6a52ca978ae6b320be810b47b56a5405fe90f0110f37e`  
-		Last Modified: Mon, 28 Oct 2024 18:10:31 GMT  
 		Size: 20.7 MB (20738486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -377,6 +377,7 @@ CMD ["zkServer.sh" "start-foreground"]
 		Size: 34.4 MB (34448242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a17ffc205867b9282cd2860676c7adf209ffecaecd41f0da0505d0cdba6237c3`  
+		Last Modified: Thu, 24 Oct 2024 01:03:20 GMT  
 		Size: 17.6 MB (17648903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a3bb339e5e3d62195c59a2f131f0e5a6ed308feff23aef3cbbc79ca5cf0d4f20`  
@@ -384,6 +385,7 @@ CMD ["zkServer.sh" "start-foreground"]
 		Size: 46.8 MB (46762265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:728d0f9756105709617b91992b048ee157aead62b68260a06e5e2e7625eccdc9`  
+		Last Modified: Wed, 08 Jan 2025 06:28:42 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:52b9035dd65211aa831bbfc2574966166bf420eb3a839a3b8b2859a0ee5eb501`  
@@ -391,7 +393,6 @@ CMD ["zkServer.sh" "start-foreground"]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7ff15e5f35d70cce1cd2675aef50ee5aff5668ef9ce88555941638cfa6959a4b`  
-		Last Modified: Thu, 24 Oct 2024 13:08:50 GMT  
 		Size: 1.8 KB (1800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2f56cf873fbf243b23317414c692782e1fbdc503a42c38f583793e7ed24f89de`  
@@ -524,7 +525,6 @@ CMD ["zkServer.sh" "start-foreground"]
 		Size: 43.9 MB (43943407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3f26b56544cb69df62eeb7f99607b83222cc0287008fbeca07554cb171de6100`  
-		Last Modified: Thu, 24 Oct 2024 17:32:48 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fb36841c35a2b10c356fdb612c0af05dd3474471d0535c2747539deef4c45426`  
@@ -532,6 +532,7 @@ CMD ["zkServer.sh" "start-foreground"]
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:90f02fb802a6a5d75e168ba24796603afc030653cee22dab76d9a1c4bae4b8cc`  
+		Last Modified: Thu, 24 Oct 2024 20:26:49 GMT  
 		Size: 1.8 KB (1800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d872e1b28c6bd1fb3a27f181781307f5d59dfe17fa9c8d271a4669a790f1c3c8`  
@@ -539,6 +540,7 @@ CMD ["zkServer.sh" "start-foreground"]
 		Size: 1.1 MB (1083400 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e2ec3b63c5a4ba16f67c157fcccd22189a9eb59113394152636b5edbd0bf9739`  
+		Last Modified: Mon, 28 Oct 2024 18:04:23 GMT  
 		Size: 20.7 MB (20738590 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -570,6 +572,5 @@ $ docker pull zookeeper@sha256:34cc57d0e92b52a3afa6eab707584d0c986564f23218702da
 		Size: 3.8 MB (3796017 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ebe775bd32d59656ca0ea5e5f8d8240e2674bd34c2c3420c29840224a8c49b33`  
-		Last Modified: Mon, 28 Oct 2024 18:04:22 GMT  
 		Size: 24.6 KB (24623 bytes)  
 		MIME: application/vnd.in-toto+json
