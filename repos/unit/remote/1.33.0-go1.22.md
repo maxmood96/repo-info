@@ -83,7 +83,7 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Size: 48.5 MB (48497066 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54c7be425079efba0003054ee884bf72f1ffebca733bedd6f077d2809ee9aa6f`  
-		Last Modified: Wed, 08 Jan 2025 03:47:00 GMT  
+		Last Modified: Tue, 24 Dec 2024 22:15:27 GMT  
 		Size: 23.9 MB (23865817 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7aa8176e6d893aff4b57b2c22574ec2afadff4673b8e0954e275244bfd3d7bc1`  
@@ -235,9 +235,11 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c80db7b949c24f6134ebc444292c87ea919c088ebf5e06f021dbcb5f3a1ff26`  
+		Last Modified: Wed, 25 Dec 2024 19:17:37 GMT  
 		Size: 6.8 MB (6766991 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c91bc86156b66d0dd2aacf37a6ee8e586549e934a436aad25d5f9e7e0ff2f6f0`  
+		Last Modified: Wed, 08 Jan 2025 05:59:27 GMT  
 		Size: 1.3 KB (1266 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fe65a8d8b5a3a6af5113ec0415e10b41d9eed50baab830cb75460e56d4c1fff8`  
