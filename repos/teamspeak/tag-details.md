@@ -64,23 +64,20 @@ CMD ["ts3server"]
 
 -	Layers:
 	-	`sha256:5fa62e1bbddf13eb6443e20aa8ed938bec91a8a5d5d0a26e58e8eafb3ada9a1c`  
-		Last Modified: Tue, 07 Jan 2025 02:28:37 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:50:51 GMT  
 		Size: 3.4 MB (3407632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9dbeb1ec3d6629b680cb8b736025933c5dd4f715ee5ec6b3dd17054b5fd9f973`  
-		Last Modified: Tue, 07 Jan 2025 03:15:24 GMT  
 		Size: 1.3 MB (1312438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:daa1cb886aa4c29542231932f6a9c6e170b00fd0d30ff741e6231114914e15dd`  
-		Last Modified: Tue, 07 Jan 2025 03:15:24 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc208237990d2630bb38691c1b4df1c5810c723a737f702f9a1e48bd4854176e`  
-		Last Modified: Tue, 07 Jan 2025 03:15:24 GMT  
 		Size: 9.2 MB (9249258 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:96017aa274b81290fa9a660fbc755031607f1f3e87444a259f80fb9ce4363b42`  
@@ -104,7 +101,6 @@ $ docker pull teamspeak@sha256:69638f9777242dc16b421d9df6c9912492f85aa9b9de80816
 
 -	Layers:
 	-	`sha256:000e49d6e1c0649b42aee346dfecc3790907bcdf7f5f57ef70c20642792b686a`  
-		Last Modified: Tue, 07 Jan 2025 03:15:24 GMT  
 		Size: 14.2 KB (14218 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -166,23 +162,20 @@ CMD ["ts3server"]
 
 -	Layers:
 	-	`sha256:5fa62e1bbddf13eb6443e20aa8ed938bec91a8a5d5d0a26e58e8eafb3ada9a1c`  
-		Last Modified: Tue, 07 Jan 2025 02:28:37 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:50:51 GMT  
 		Size: 3.4 MB (3407632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9dbeb1ec3d6629b680cb8b736025933c5dd4f715ee5ec6b3dd17054b5fd9f973`  
-		Last Modified: Tue, 07 Jan 2025 03:15:24 GMT  
 		Size: 1.3 MB (1312438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:daa1cb886aa4c29542231932f6a9c6e170b00fd0d30ff741e6231114914e15dd`  
-		Last Modified: Tue, 07 Jan 2025 03:15:24 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc208237990d2630bb38691c1b4df1c5810c723a737f702f9a1e48bd4854176e`  
-		Last Modified: Tue, 07 Jan 2025 03:15:24 GMT  
 		Size: 9.2 MB (9249258 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:96017aa274b81290fa9a660fbc755031607f1f3e87444a259f80fb9ce4363b42`  
@@ -206,7 +199,6 @@ $ docker pull teamspeak@sha256:69638f9777242dc16b421d9df6c9912492f85aa9b9de80816
 
 -	Layers:
 	-	`sha256:000e49d6e1c0649b42aee346dfecc3790907bcdf7f5f57ef70c20642792b686a`  
-		Last Modified: Tue, 07 Jan 2025 03:15:24 GMT  
 		Size: 14.2 KB (14218 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -268,23 +260,20 @@ CMD ["ts3server"]
 
 -	Layers:
 	-	`sha256:5fa62e1bbddf13eb6443e20aa8ed938bec91a8a5d5d0a26e58e8eafb3ada9a1c`  
-		Last Modified: Tue, 07 Jan 2025 02:28:37 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:50:51 GMT  
 		Size: 3.4 MB (3407632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9dbeb1ec3d6629b680cb8b736025933c5dd4f715ee5ec6b3dd17054b5fd9f973`  
-		Last Modified: Tue, 07 Jan 2025 03:15:24 GMT  
 		Size: 1.3 MB (1312438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:daa1cb886aa4c29542231932f6a9c6e170b00fd0d30ff741e6231114914e15dd`  
-		Last Modified: Tue, 07 Jan 2025 03:15:24 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc208237990d2630bb38691c1b4df1c5810c723a737f702f9a1e48bd4854176e`  
-		Last Modified: Tue, 07 Jan 2025 03:15:24 GMT  
 		Size: 9.2 MB (9249258 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:96017aa274b81290fa9a660fbc755031607f1f3e87444a259f80fb9ce4363b42`  
@@ -308,6 +297,5 @@ $ docker pull teamspeak@sha256:69638f9777242dc16b421d9df6c9912492f85aa9b9de80816
 
 -	Layers:
 	-	`sha256:000e49d6e1c0649b42aee346dfecc3790907bcdf7f5f57ef70c20642792b686a`  
-		Last Modified: Tue, 07 Jan 2025 03:15:24 GMT  
 		Size: 14.2 KB (14218 bytes)  
 		MIME: application/vnd.in-toto+json
