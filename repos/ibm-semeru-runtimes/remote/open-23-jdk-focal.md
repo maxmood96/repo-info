@@ -62,11 +62,9 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0974a0d614cede2133b0e35182027b1a6e9d53096fa41e2a76ad78f660fbf2e`  
-		Last Modified: Thu, 19 Dec 2024 21:31:57 GMT  
 		Size: 16.1 MB (16084716 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:86d48996a5d16de9436351cc1e73a5635166cf6d7d9264a09997d36ed1e9f278`  
-		Last Modified: Thu, 19 Dec 2024 21:32:00 GMT  
 		Size: 238.6 MB (238579352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8a0f958b92cd0c7c7dcd0f213f36e7a1e96084fcf8761f30272c57060c39127d`  
@@ -90,6 +88,7 @@ $ docker pull ibm-semeru-runtimes@sha256:8c0d19ad8bb5c120786aad8deb9277240d27003
 
 -	Layers:
 	-	`sha256:7dcc7d17302c1fbdef6dc19b4fd19d0c273854df8e115cf3a024e52ec9535e59`  
+		Last Modified: Thu, 19 Dec 2024 21:31:57 GMT  
 		Size: 3.7 MB (3674820 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5ebfe9da6e63f44a753fd76f2a5deb94b0419579ebd60b61c305ee4b79331349`  
@@ -235,7 +234,6 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 239.6 MB (239571498 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cee290b2fa1a910587c91f7234cdbc8af72bc87375e37df8cccc0f9a803841ee`  
-		Last Modified: Thu, 19 Dec 2024 22:51:04 GMT  
 		Size: 5.4 MB (5440561 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -314,6 +312,7 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 15.8 MB (15773072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d5fcc02109dcc6e9cacccd3f09b3ea75e9f34d884dff7864f9afce1348589a09`  
+		Last Modified: Thu, 19 Dec 2024 22:20:33 GMT  
 		Size: 234.5 MB (234476108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ae8c774dbea441fb0def7fd69bc0aea84720cbcbcd0cab2d24581ae182a86877`  
@@ -337,10 +336,9 @@ $ docker pull ibm-semeru-runtimes@sha256:ed5b03eca81815be0a10610cd2e9096fc8ef4a2
 
 -	Layers:
 	-	`sha256:d79efb7c7472b05b63f2fd796179b900be7db2faf969bcfaf8c7aeea18a538d0`  
-		Last Modified: Thu, 19 Dec 2024 22:20:29 GMT  
+		Last Modified: Tue, 07 Jan 2025 22:41:52 GMT  
 		Size: 3.7 MB (3672514 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:65cf6c6bc8d20ad79af9cddb9923b0e31005caabbb17cd32f452006eefa93957`  
-		Last Modified: Thu, 19 Dec 2024 22:20:29 GMT  
 		Size: 24.1 KB (24140 bytes)  
 		MIME: application/vnd.in-toto+json
