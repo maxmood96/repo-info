@@ -68,6 +68,7 @@ $ docker pull rust@sha256:81e5905c4aca0e737072df73c0b478240576a52f3d9f8f225c035a
 
 -	Layers:
 	-	`sha256:2d2b0aa2b407c284007fa032c2a2c7eb76e5d8aa029adb848e8d4ae343db6ff5`  
+		Last Modified: Tue, 24 Dec 2024 22:18:13 GMT  
 		Size: 4.0 MB (3955287 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0f4734b019756db22fa8d0d5ef29b1ccff3a64e81b3ec92a488209e4d48e916a`  
@@ -124,7 +125,7 @@ $ docker pull rust@sha256:f74bb7d040eaa342dce35a6e66392c2eaa58e842271012af07c869
 
 -	Layers:
 	-	`sha256:70ea60f375ff50466e034357a6e8706d6bd0ba1d3735e515b27c7b04b95c32b4`  
-		Last Modified: Wed, 08 Jan 2025 03:56:13 GMT  
+		Last Modified: Wed, 25 Dec 2024 12:39:21 GMT  
 		Size: 3.8 MB (3771350 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3b9e7f2b1a82e482678a9bb68f0ab009dca7c11e45cc85b941d053afd19f4a3b`  
@@ -185,7 +186,6 @@ $ docker pull rust@sha256:5c736b2c84550e9c9e5e2bf8516edefeef98a6c6552f711aaeef8b
 		Size: 4.0 MB (3977630 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ad44d1bd10a94fece3134a79f7670d34f08a16adbd5edc1632faf6c4e7fc2ba7`  
-		Last Modified: Wed, 25 Dec 2024 06:37:43 GMT  
 		Size: 13.4 KB (13424 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -299,7 +299,6 @@ $ docker pull rust@sha256:a096fa4e5357dd64d1fe515d693925da74417b060eec561107358e
 		Size: 3.9 MB (3927848 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9b5a248b0b7e922f897662c79f3594762d601bf1a551a43582243794e8971c82`  
-		Last Modified: Wed, 25 Dec 2024 09:06:45 GMT  
 		Size: 13.3 KB (13339 bytes)  
 		MIME: application/vnd.in-toto+json
 
