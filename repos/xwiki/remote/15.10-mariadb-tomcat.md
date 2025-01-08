@@ -143,7 +143,6 @@ CMD ["xwiki"]
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b8102a0b8aebb9e83cf9b49babb681033fba25f145e468519031ad5707f50183`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
 		Size: 17.0 MB (16966381 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e948b4564476a47332ef63d2b656fcb32b4f8aabfde1e9783e2991a957f2f314`  
@@ -155,7 +154,7 @@ CMD ["xwiki"]
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dac37ec29a9a744ee416c3d313bafb8a47e50e62524ca8773b9515782f326873`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
+		Last Modified: Tue, 07 Jan 2025 23:18:15 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d3231c3821950c0b05b6106372497bb01492e45b8060ebe83020c5c87824d7e9`  
@@ -179,6 +178,7 @@ CMD ["xwiki"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:688f7b98eaa3562c55736637aec927d835eb39a838f24d80c58b6c1d96e5e960`  
+		Last Modified: Tue, 10 Dec 2024 05:13:03 GMT  
 		Size: 191.2 MB (191150207 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:64f3352154bf5d29fc9d150d303d0f800c0c7d0a4a84aa370fb3bd8590636b2a`  
@@ -222,7 +222,6 @@ $ docker pull xwiki@sha256:5b4365132ed87d5fe7bd4633339683e95447cf26a57130ffbb080
 
 -	Layers:
 	-	`sha256:f3e917c39235d2a998e04d884706bbf26c8750d72e2a3747ebed0206fa4eadba`  
-		Last Modified: Tue, 10 Dec 2024 05:12:57 GMT  
 		Size: 8.8 MB (8783561 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1e0f1377de79b823daefe294626388bca2ebca77a5d3337cbccf5b58c29183a4`  
@@ -378,7 +377,6 @@ CMD ["xwiki"]
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:16ca22a4ddc288ae35e07a6cf53adeec6bdad414d4aab28fcee63dd9f4860cd3`  
-		Last Modified: Tue, 03 Dec 2024 17:35:43 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -446,6 +444,5 @@ $ docker pull xwiki@sha256:afe686c96cf288b59dbaf0c70ac1d80517917eea4a8a7f8cac56b
 		Size: 8.8 MB (8784301 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:49dd87a15482666b5627861a974ca3363e7eac7373ef1eb88b091d5deadaeebb`  
-		Last Modified: Tue, 10 Dec 2024 05:27:05 GMT  
 		Size: 41.2 KB (41191 bytes)  
 		MIME: application/vnd.in-toto+json
