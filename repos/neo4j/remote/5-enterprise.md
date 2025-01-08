@@ -75,6 +75,7 @@ CMD ["neo4j"]
 		Size: 10.0 KB (10034 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7390194e73214d832f8245c04383a1325a68f596dabc35a40a1cc24244696a05`  
+		Last Modified: Tue, 24 Dec 2024 22:28:47 GMT  
 		Size: 449.6 MB (449648882 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -102,6 +103,7 @@ $ docker pull neo4j@sha256:ec0eec2038b51a194e3487449c2e771d20a9329555ea79868b64b
 		Size: 3.5 MB (3538275 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:db8f8a884660e7d61bb295260eac1fa7eb5eef9ff4b2710b17235d19b3041d63`  
+		Last Modified: Tue, 24 Dec 2024 22:28:39 GMT  
 		Size: 21.4 KB (21384 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -193,7 +195,6 @@ $ docker pull neo4j@sha256:02d573a2ea59d881cdb52beb756f7bd1f768870dfe4a0d0425278
 
 -	Layers:
 	-	`sha256:f4476e57e90176fc4e28f5d3a427c59e0efa43297e10d88a533fa4c45c9d9d6c`  
-		Last Modified: Wed, 25 Dec 2024 02:15:59 GMT  
 		Size: 3.5 MB (3537969 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2614968e6298454f59e10bd2bb0641fd7c91ef8a43124d67198ae8c7769f83e9`  
