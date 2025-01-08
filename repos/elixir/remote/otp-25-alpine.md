@@ -50,7 +50,7 @@ CMD ["iex"]
 
 -	Layers:
 	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:03:30 GMT  
 		Size: 3.6 MB (3613999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8165e58cf1254b17c63bb1f1dde06213a412e7a8ddd5c04cdc69db213d12f937`  
@@ -124,11 +124,10 @@ CMD ["iex"]
 		Size: 3.1 MB (3095487 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:032252876ed94b98f59290a62438307b857fc27734d127194a38520451486e7f`  
-		Last Modified: Tue, 12 Nov 2024 16:50:20 GMT  
 		Size: 45.0 MB (44955653 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f56b7a0fd3d096e5eb4fe883d2fa7649efad5e0cfdcdffec66e930b9d8da1bc2`  
-		Last Modified: Wed, 08 Jan 2025 07:35:59 GMT  
+		Last Modified: Thu, 02 Jan 2025 23:06:17 GMT  
 		Size: 7.5 MB (7529218 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -199,6 +198,7 @@ CMD ["iex"]
 		Size: 45.3 MB (45255143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:162da2f02caff3133d93785d0c747971efb2b35b0f372aa7298518b77d4e9117`  
+		Last Modified: Tue, 07 Jan 2025 20:49:28 GMT  
 		Size: 7.5 MB (7529419 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -265,7 +265,6 @@ CMD ["iex"]
 		Size: 3.5 MB (3463189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c64e5637cc8b151a740dbe3e0e6f908c2ca9bee1ace53c195810c09015a85a65`  
-		Last Modified: Tue, 07 Jan 2025 18:39:17 GMT  
 		Size: 44.1 MB (44110638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:70b99c7822237e1f53496a592df9d5fe0a60d272fd74b40dcb58a09a6ff1e656`  
