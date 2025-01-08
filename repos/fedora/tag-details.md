@@ -51,6 +51,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:0c6321f3889d450dcf0c3bd9dcccf322a20dc351997ef7bd4261de4796b551d4`  
+		Last Modified: Thu, 31 Oct 2024 22:59:40 GMT  
 		Size: 65.0 MB (64950404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -70,7 +71,6 @@ $ docker pull fedora@sha256:0e2db70ad704877f545a9011344022eeeb1bde90c57e700bbedb
 
 -	Layers:
 	-	`sha256:ec3db909f62b9ecf6c4d14be9b2e541543b1d82b76dab7305fc0d44eaf0f8d72`  
-		Last Modified: Thu, 31 Oct 2024 22:59:37 GMT  
 		Size: 4.4 MB (4386615 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:57b54c94ca36bed486f0ec80242346745a7cca986cc2dd73b91045fa84de7d76`  
@@ -123,6 +123,7 @@ $ docker pull fedora@sha256:d13f9e766b6b0889c7da627955ce28867c32a9b45c64a97e5fa3
 
 -	Layers:
 	-	`sha256:d2a0d8635bff8afe99b22245130f586b159959cf27a8a94ebccd1e69f63fcf2e`  
+		Last Modified: Thu, 31 Oct 2024 22:59:16 GMT  
 		Size: 4.4 MB (4386702 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1738bb91e4e1a6a78b36fc54f0b5139bee6b4dea940cb11f793e514d4bcf8136`  
@@ -155,7 +156,6 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:c6d062d5e8bb8f72dbfc5639cceb1f8a94d3d2c38a8f82ff904e7562708eba0b`  
-		Last Modified: Thu, 31 Oct 2024 22:59:46 GMT  
 		Size: 71.6 MB (71611844 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -228,7 +228,6 @@ $ docker pull fedora@sha256:7a8f1be78dc17962a41629ada1d4b1db298d422d2945f4a849c8
 
 -	Layers:
 	-	`sha256:66defd1ffb852516012e7f2e254dbf16eee15531e548c2fd39c6e62e244661a8`  
-		Last Modified: Thu, 31 Oct 2024 22:59:28 GMT  
 		Size: 4.4 MB (4389051 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ce91027b15673345c49bd6d9cfcd8bcf4cd71f560bde450817c5a512cc5efd0a`  
@@ -633,10 +632,10 @@ $ docker pull fedora@sha256:1d3dbcada8d311000003851d02489b631581e33f179ce797d736
 
 -	Layers:
 	-	`sha256:f9a3465954b2e3e4dfb9506d86001112d244e44145e4278b9310a67eab752c9f`  
-		Last Modified: Thu, 31 Oct 2024 23:05:28 GMT  
 		Size: 2.9 MB (2881521 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d84d77273c6c1649ddce19baa13930719155713f92282c344ba8ab5ee9d483c0`  
+		Last Modified: Thu, 31 Oct 2024 23:05:28 GMT  
 		Size: 5.3 KB (5308 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -735,7 +734,6 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:dfdabcb2640443c0deaae9fd849c36fd5319d4d5ff7643cc69be869f4cd29a3d`  
-		Last Modified: Thu, 31 Oct 2024 22:59:04 GMT  
 		Size: 57.8 MB (57845665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -755,7 +753,6 @@ $ docker pull fedora@sha256:6f5e4b600590dfdc3dd9cca6fa9e582452729fa5c4d8b5cde496
 
 -	Layers:
 	-	`sha256:d4cb8c572ce261f161fddfb5a35fbfa02da7e9e48f37a73ffdcb8db021192d80`  
-		Last Modified: Thu, 31 Oct 2024 22:59:03 GMT  
 		Size: 3.0 MB (2980174 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a1de2b429ab08aee560e6dbfd7e04d1451848db085d3faa7f45181e6c59dd907`  
@@ -1090,10 +1087,10 @@ $ docker pull fedora@sha256:1d3dbcada8d311000003851d02489b631581e33f179ce797d736
 
 -	Layers:
 	-	`sha256:f9a3465954b2e3e4dfb9506d86001112d244e44145e4278b9310a67eab752c9f`  
-		Last Modified: Thu, 31 Oct 2024 23:05:28 GMT  
 		Size: 2.9 MB (2881521 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d84d77273c6c1649ddce19baa13930719155713f92282c344ba8ab5ee9d483c0`  
+		Last Modified: Thu, 31 Oct 2024 23:05:28 GMT  
 		Size: 5.3 KB (5308 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1192,7 +1189,6 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:dfdabcb2640443c0deaae9fd849c36fd5319d4d5ff7643cc69be869f4cd29a3d`  
-		Last Modified: Thu, 31 Oct 2024 22:59:04 GMT  
 		Size: 57.8 MB (57845665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1212,7 +1208,6 @@ $ docker pull fedora@sha256:6f5e4b600590dfdc3dd9cca6fa9e582452729fa5c4d8b5cde496
 
 -	Layers:
 	-	`sha256:d4cb8c572ce261f161fddfb5a35fbfa02da7e9e48f37a73ffdcb8db021192d80`  
-		Last Modified: Thu, 31 Oct 2024 22:59:03 GMT  
 		Size: 3.0 MB (2980174 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a1de2b429ab08aee560e6dbfd7e04d1451848db085d3faa7f45181e6c59dd907`  
