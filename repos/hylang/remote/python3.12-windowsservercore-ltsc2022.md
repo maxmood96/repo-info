@@ -51,7 +51,6 @@ CMD ["hy"]
 
 -	Layers:
 	-	`sha256:2534953f34d35976fc44cd67bfdd39fdcd9e2eaae57ada0be53d5fb936cd3a0b`  
-		Last Modified: Tue, 10 Sep 2024 17:49:01 GMT  
 		Size: 1.5 GB (1462192413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:90641eccc9d7a78ab99d123ca3884acb8ffc002eb44bc5e68f261f0810d5202b`  
@@ -59,15 +58,14 @@ CMD ["hy"]
 		Size: 791.7 MB (791681213 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8da926f5375939d9dc382c854fc5da819e00a1ff2c7406fcddc8ba05f26ecb34`  
-		Last Modified: Wed, 08 Jan 2025 07:41:02 GMT  
+		Last Modified: Wed, 11 Dec 2024 20:43:49 GMT  
 		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5f58adc4231c3bbc7df9a3546d8ab43372f4dc9d70529b3c92f3366cb9b3a5db`  
-		Last Modified: Wed, 11 Dec 2024 20:43:47 GMT  
 		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:55fbdbe634f9ad8487a6fa24162448cacc4dc0dfd61ce1c1298c2ac24f78d976`  
-		Last Modified: Wed, 08 Jan 2025 06:41:05 GMT  
+		Last Modified: Wed, 11 Dec 2024 20:43:47 GMT  
 		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:010caa98cd1cce422bc61b1062237b35a780a9f4ac262cfb1477e4359133b089`  
@@ -83,7 +81,6 @@ CMD ["hy"]
 		Size: 1.3 KB (1289 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:46e1c60bf333a699e4f3114a8acd81137ae89056288921557ecdb8e973356d1c`  
-		Last Modified: Wed, 11 Dec 2024 21:48:13 GMT  
 		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:60280ebe2917a585840e151efe416cd1446ce91acdcaffec8c768d6df9844e8c`  
@@ -95,5 +92,6 @@ CMD ["hy"]
 		Size: 8.5 MB (8510638 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:85f8e2a8866df7d382a7dda31c3c78dcda840e1026d9a6267e964b240b91afc5`  
+		Last Modified: Wed, 11 Dec 2024 21:48:13 GMT  
 		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
