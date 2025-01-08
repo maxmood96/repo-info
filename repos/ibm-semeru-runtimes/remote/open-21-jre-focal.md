@@ -58,7 +58,7 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 
 -	Layers:
 	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Wed, 08 Jan 2025 01:50:06 GMT  
+		Last Modified: Wed, 08 Jan 2025 03:54:41 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8991519f4a95930fc9f2916f18b24092adbcec018466d814c36a2b33f08e0a17`  
@@ -153,6 +153,7 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 52.1 MB (52065826 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:342896d787121593f5a3cb7a1f99e553175514493ec61af90c41daeee11034b7`  
+		Last Modified: Thu, 19 Dec 2024 22:29:41 GMT  
 		Size: 4.9 MB (4873482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -227,11 +228,10 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 32.1 MB (32076506 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c03062ba6cc89d48fbed8c001c307b5b41e0a5f776a5ecb43457bcbf48b0c0d`  
-		Last Modified: Wed, 08 Jan 2025 02:36:08 GMT  
+		Last Modified: Mon, 04 Nov 2024 22:05:24 GMT  
 		Size: 17.3 MB (17256542 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:604996204bc61fb27e6616a35cb437f058f76c1ffda407ead0df6feef4417507`  
-		Last Modified: Thu, 19 Dec 2024 21:56:47 GMT  
 		Size: 57.3 MB (57302197 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e989efc36cfe47c9b696653f3aad96fd8385877504d3c1b642e0303e374b218`  
@@ -314,7 +314,6 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 15.8 MB (15773072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1a778403050c927fea60e0e803408ca4528da0ff1a70bc4209ba1a724eb93b49`  
-		Last Modified: Thu, 19 Dec 2024 22:17:08 GMT  
 		Size: 55.0 MB (55007211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ecacfba1b60c81682c94c37e6cc7f6f80877dbb0bfc012277a65336274d7f64`  
