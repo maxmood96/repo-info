@@ -62,7 +62,6 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 		Size: 28.2 MB (28231581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ddb1687b5672613fa73f7a286308b3960e06e9ec853e7d0c1c0dbc3ea749abd`  
-		Last Modified: Tue, 24 Dec 2024 22:26:56 GMT  
 		Size: 1.2 KB (1184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:46ed856780e9bb80fcdfffafd43cb57943322108b96cd06bf42f296deb7d69c2`  
@@ -70,13 +69,14 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 		Size: 7.7 MB (7680149 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e78c55ba4517913401daac55086a844da48b2005c61aff33d19a1ae1f1a9feb5`  
-		Last Modified: Tue, 24 Dec 2024 22:26:59 GMT  
 		Size: 77.3 MB (77283862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f265039d05937733bdaefcd694b300439df0b685092a1b4dc8a06e82c038e03f`  
+		Last Modified: Tue, 24 Dec 2024 22:26:56 GMT  
 		Size: 415.0 KB (414957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3b7b2252952f18cadccd30d7ae2a6c042178881ba59a65e6d4b7dc55b1f8f503`  
+		Last Modified: Tue, 24 Dec 2024 22:26:57 GMT  
 		Size: 99.3 KB (99284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aa6596eed2e21975c3c5ac4f0e5b25bf3c918148eda4cdb66cbe010342b64a78`  
@@ -112,6 +112,7 @@ $ docker pull couchdb@sha256:0d0afaaf32d66c062ab8962056611498d9b38573f810f65615b
 		Size: 3.5 MB (3461984 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:05736e5cad47019717caeadc82d090facf4ec39bb7a2117fe9d0fbb9f9a92a10`  
+		Last Modified: Tue, 24 Dec 2024 22:26:56 GMT  
 		Size: 24.6 KB (24564 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -176,7 +177,6 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 		Size: 76.6 MB (76583907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:947cb6c71c75acd16ed0bfd1d0f238667978af4c98fd445b5dadd76ff33c6723`  
-		Last Modified: Wed, 25 Dec 2024 01:54:44 GMT  
 		Size: 371.7 KB (371729 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5491a85599389598f4ae4df7db4104b6da7723852ac5f210acfe61ae16eb4c05`  
@@ -184,7 +184,6 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 		Size: 99.2 KB (99243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:20818de3db827a12cc43f45e8841bd485c27f4146654164284028c54b9f0d6d1`  
-		Last Modified: Wed, 25 Dec 2024 01:54:45 GMT  
 		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:097df282cd1da39e995343dac702aae7f7fb2cd58b33f3a6a2441d6c9f06966a`  
@@ -192,7 +191,6 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 		Size: 41.5 MB (41526879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54a07f143e366c3ed7179a048b97c03797e9044325f52527c50d8528fdbde8b1`  
-		Last Modified: Wed, 25 Dec 2024 01:54:45 GMT  
 		Size: 421.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -216,7 +214,6 @@ $ docker pull couchdb@sha256:8ba0e0b18c1a7e4e32389111f081ae7bf1b3f6ac7777e131c9b
 		Size: 3.5 MB (3460660 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5e4d833a4b2d22d62f507bd62fbed1a72aa74f46fb9d85fd435b48abe785f26f`  
-		Last Modified: Wed, 25 Dec 2024 01:54:43 GMT  
 		Size: 24.7 KB (24746 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -265,6 +262,7 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 
 -	Layers:
 	-	`sha256:0e7e84bd4cca9e29f08dfac96d436e65bdd31929520e73147137b382fbc89b70`  
+		Last Modified: Tue, 24 Dec 2024 21:33:49 GMT  
 		Size: 26.9 MB (26878901 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2df9d36639dd46ebd3956a13e26ecea4e122e659898a1b85a151860dd5985aa9`  
@@ -276,6 +274,7 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 		Size: 7.2 MB (7194534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d41685f5b5b235cd1d7f732a592c02ecd2e439e9ed9120cef9b9ab9665642e15`  
+		Last Modified: Wed, 25 Dec 2024 00:21:41 GMT  
 		Size: 73.1 MB (73064479 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0257bef5565d9b3594324b756798cb4647d6be33b3e243eade90717420c925e6`  
@@ -319,6 +318,5 @@ $ docker pull couchdb@sha256:cfe1541f8a26e00e63f5e1a91bf34a6ee36167f05d044f2375a
 		Size: 3.5 MB (3455405 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d30fb7e76abe4da6bf610fc3445754b5c39ea4703ed1bd57f43712fa15621758`  
-		Last Modified: Wed, 25 Dec 2024 00:21:40 GMT  
 		Size: 24.6 KB (24564 bytes)  
 		MIME: application/vnd.in-toto+json
