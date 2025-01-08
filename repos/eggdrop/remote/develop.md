@@ -69,7 +69,7 @@ CMD ["eggdrop.conf"]
 
 -	Layers:
 	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 21:43:40 GMT  
+		Last Modified: Tue, 07 Jan 2025 23:53:52 GMT  
 		Size: 3.6 MB (3613999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:01b15aa9d6bb751bc2ece118d1ceeac1fd953ae91ce5115ffcdb0dcc56737a9a`  
@@ -220,7 +220,7 @@ $ docker pull eggdrop@sha256:8b8b5931e6aa45504808ed42f3fa770e88bfa03b30cd1be92cc
 
 -	Layers:
 	-	`sha256:5fa8568ba8b239621bf35ae9442bc99692e1f7eb94655f84ec6d4ecf62921509`  
-		Last Modified: Tue, 07 Jan 2025 21:30:44 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:41:06 GMT  
 		Size: 17.0 KB (16954 bytes)  
 		MIME: application/vnd.in-toto+json
 
