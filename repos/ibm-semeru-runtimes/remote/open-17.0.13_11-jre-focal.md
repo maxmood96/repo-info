@@ -58,7 +58,7 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 
 -	Layers:
 	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Wed, 08 Jan 2025 03:54:41 GMT  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c868d8af19815a1e2f0c1e9dba32ee0f48b5ec1a16268a28fb6995d461bcc59`  
@@ -149,7 +149,6 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 15.9 MB (15945040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b46faf0eebcfce7ed31f70ab6f9b1130c8525ff706649cf1abd6f31b271a6947`  
-		Last Modified: Thu, 19 Dec 2024 22:25:28 GMT  
 		Size: 47.6 MB (47553900 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ed2fc24665c34e28e2078968f5dac2108fa211348833999adec7646eacc86775`  
@@ -228,14 +227,13 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 32.1 MB (32076506 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c03062ba6cc89d48fbed8c001c307b5b41e0a5f776a5ecb43457bcbf48b0c0d`  
-		Last Modified: Mon, 04 Nov 2024 22:05:24 GMT  
 		Size: 17.3 MB (17256542 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2a21a6c43ab5eac20fd8bfc2bf167f91b7a3db2009516deda9186115a3a5eac6`  
-		Last Modified: Thu, 19 Dec 2024 21:50:51 GMT  
 		Size: 52.7 MB (52701682 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ba002bc52a67ef782ebbe62f2cf8b14446eafc4734222016224ff1b7365114f6`  
+		Last Modified: Thu, 19 Dec 2024 21:50:49 GMT  
 		Size: 3.8 MB (3784792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -338,7 +336,6 @@ $ docker pull ibm-semeru-runtimes@sha256:a43964fd9911f434bbbe14582762dd6a2694003
 
 -	Layers:
 	-	`sha256:427a357d0fe6cdfedab56aa620f27c6d18aedf29513e6275b679efcf872c5a24`  
-		Last Modified: Thu, 19 Dec 2024 21:54:21 GMT  
 		Size: 3.6 MB (3588273 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:595da1ecbbcc0cffe4547948eae1245bf32700720df5b6326bb5d211fef0dbcb`  
