@@ -65,7 +65,6 @@ CMD ["arangod"]
 		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ec376324cb0972efed8b6f9183e6f78ba4f3c069c46d448466c95a672f5319e9`  
-		Last Modified: Tue, 07 Jan 2025 03:14:36 GMT  
 		Size: 2.0 KB (2016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -147,6 +146,7 @@ CMD ["arangod"]
 		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a2e288f5200958f847d861466a61a7565f2be2907c60828348da69ca07da9799`  
+		Last Modified: Tue, 07 Jan 2025 03:44:27 GMT  
 		Size: 2.0 KB (2017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -170,5 +170,6 @@ $ docker pull arangodb@sha256:07128f63f7fa261258f840dac632da20f15aa4dc3e61cf20da
 		Size: 467.5 KB (467457 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2280ff891e91a875704f6a288c0abf8417111f3278f7283886a96359d1a9fca3`  
+		Last Modified: Tue, 07 Jan 2025 03:44:27 GMT  
 		Size: 14.5 KB (14528 bytes)  
 		MIME: application/vnd.in-toto+json
