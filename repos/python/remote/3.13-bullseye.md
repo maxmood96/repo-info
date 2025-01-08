@@ -80,7 +80,6 @@ CMD ["python3"]
 		Size: 27.7 MB (27747135 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a69774f710c8a177645fce8164606ead5b27c50e6ac70950cb6f3472fb1b1a93`  
-		Last Modified: Wed, 25 Dec 2024 01:36:30 GMT  
 		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -100,7 +99,6 @@ $ docker pull python@sha256:4c505baabf341bb7fc59d7dfe57bf241d9e3198a9441ad54a14b
 
 -	Layers:
 	-	`sha256:650718fd2eedeb1dd49d3df49649580e8cff84218179ae11e98d366ed21703f7`  
-		Last Modified: Wed, 25 Dec 2024 01:36:30 GMT  
 		Size: 15.6 MB (15564011 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8cf982dd017446fc5712cd0c55cbe96bf8d1768ee37261eb40ae85dd2bae2747`  
@@ -153,9 +151,11 @@ CMD ["python3"]
 		Size: 49.0 MB (49024766 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:42910d07c1ff6fab4a63b5aee5a5925989edf977378fda85da04a7fbf04644d9`  
+		Last Modified: Wed, 25 Dec 2024 03:44:15 GMT  
 		Size: 14.7 MB (14673838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e6c52726a3c7d274c95228f4ad5ea84a935ec4fec8334ece90f30c21442894fb`  
+		Last Modified: Wed, 25 Dec 2024 13:01:49 GMT  
 		Size: 50.6 MB (50640814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3517098c11280c0a16a5adf19faec34c41bc2e558fa96b528234445b76c3b6f5`  
@@ -167,6 +167,7 @@ CMD ["python3"]
 		Size: 5.5 MB (5461088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff5d73d6cdb7b607577fe187fe2212ac0c5821d594fa92ad34ee3fdb237b2ebc`  
+		Last Modified: Wed, 25 Dec 2024 23:11:51 GMT  
 		Size: 26.5 MB (26498792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cf12132792d58141e416d19ecbdd8432322178515db59d2e1a1205932f666ad5`  
@@ -194,6 +195,7 @@ $ docker pull python@sha256:f9163b30d049d06a40a75b23084742fc41b2632effaee10757d1
 		Size: 15.4 MB (15364861 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9b4636ab5593530df7bc16db75c6212af6a5d16411f39a8a59cfda3b78a58f32`  
+		Last Modified: Wed, 25 Dec 2024 23:11:50 GMT  
 		Size: 20.3 KB (20271 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -242,7 +244,6 @@ CMD ["python3"]
 		Size: 52.2 MB (52245698 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eceb2e49ad0ea75b24fca7d94b98a8202f70828ce20fd23846a542d8dca2667d`  
-		Last Modified: Wed, 25 Dec 2024 01:49:44 GMT  
 		Size: 15.5 MB (15544017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37f980dd00d0ffb99c81471a2f1d6dbe4936d0d24b2e81f9be4ad52c0cc28b66`  
@@ -258,6 +259,7 @@ CMD ["python3"]
 		Size: 6.2 MB (6165031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:95fd2387e9d7ef00c60fcddca58d97f666b3483c7bdc00e52d789f389709adc8`  
+		Last Modified: Wed, 25 Dec 2024 17:37:41 GMT  
 		Size: 27.1 MB (27138112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:11808bd0ad61e40e517fbd9b823d715ca8e86a460f24b269151e744b0d1ff86d`  
@@ -281,7 +283,6 @@ $ docker pull python@sha256:5bcadf261a24ab5bd1992c50283e3e23599610b8a03dc893bdb2
 
 -	Layers:
 	-	`sha256:24579ee9101f5b0f5bebf00ffe7a51a80240d13442ada6d2d5d840a55c40ec3c`  
-		Last Modified: Wed, 25 Dec 2024 17:37:40 GMT  
 		Size: 15.6 MB (15566292 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:812ba9ea6847c61e591f0d76b096cbf33c76d7c06aa359d82128c19393e37deb`  
@@ -334,7 +335,6 @@ CMD ["python3"]
 		Size: 54.7 MB (54676016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:30483a4cb9e6228b018657587065a3e6487de3276661a2330332744722b7a439`  
-		Last Modified: Tue, 24 Dec 2024 22:14:51 GMT  
 		Size: 16.1 MB (16061993 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6a970a4937f3da89cf59e0bd2ab38633517b173866fbf02a490f384820768c5d`  
