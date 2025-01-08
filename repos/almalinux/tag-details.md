@@ -128,7 +128,6 @@ $ docker pull almalinux@sha256:f2618f92adf5ef72f06d19e422f46e1c61ba61adf20569001
 
 -	Layers:
 	-	`sha256:47d3f91c0e369859fa5c515efc7e1405d201439bdc2fcc6a23bf4eb04ee342c4`  
-		Last Modified: Fri, 25 Oct 2024 22:56:29 GMT  
 		Size: 4.6 MB (4624882 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f8ab52a8984c0a3059a8649a045fd27993c2b6244fc4eaeb3088f6384e720512`  
@@ -225,7 +224,6 @@ $ docker pull almalinux@sha256:fa7c4ea09ef6195bfa2847c7a8f909b490eeae1a018af1389
 
 -	Layers:
 	-	`sha256:63330caf996defe9065f32785e9033e63201f39fd82914c44a1d6ed2ed1b3924`  
-		Last Modified: Fri, 25 Oct 2024 22:58:19 GMT  
 		Size: 4.6 MB (4624714 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8ec9db7ef0192b78251f468022966221dad2298ad55c4f0f097a7c0e6eaf5fdf`  
@@ -340,7 +338,6 @@ $ docker pull almalinux@sha256:f2618f92adf5ef72f06d19e422f46e1c61ba61adf20569001
 
 -	Layers:
 	-	`sha256:47d3f91c0e369859fa5c515efc7e1405d201439bdc2fcc6a23bf4eb04ee342c4`  
-		Last Modified: Fri, 25 Oct 2024 22:56:29 GMT  
 		Size: 4.6 MB (4624882 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f8ab52a8984c0a3059a8649a045fd27993c2b6244fc4eaeb3088f6384e720512`  
@@ -437,7 +434,6 @@ $ docker pull almalinux@sha256:fa7c4ea09ef6195bfa2847c7a8f909b490eeae1a018af1389
 
 -	Layers:
 	-	`sha256:63330caf996defe9065f32785e9033e63201f39fd82914c44a1d6ed2ed1b3924`  
-		Last Modified: Fri, 25 Oct 2024 22:58:19 GMT  
 		Size: 4.6 MB (4624714 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8ec9db7ef0192b78251f468022966221dad2298ad55c4f0f097a7c0e6eaf5fdf`  
@@ -483,7 +479,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:e1328aec8aedff7ac7af628691a2485a260a3363f75621fe80096f995c948cd6`  
-		Last Modified: Thu, 24 Oct 2024 19:18:28 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:27:19 GMT  
 		Size: 30.0 MB (29978905 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -556,6 +552,7 @@ $ docker pull almalinux@sha256:f7bd29c981ea8ee6aacbec8394d9fdb7a9d91f0ab9cf97401
 		Size: 868.8 KB (868814 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7cae3e07ee144d91aae94735bec95a1c33d6fde5cbaa2337a72513e203f41717`  
+		Last Modified: Fri, 25 Oct 2024 22:56:53 GMT  
 		Size: 5.3 KB (5322 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -694,7 +691,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:e1328aec8aedff7ac7af628691a2485a260a3363f75621fe80096f995c948cd6`  
-		Last Modified: Thu, 24 Oct 2024 19:18:28 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:27:19 GMT  
 		Size: 30.0 MB (29978905 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -767,6 +764,7 @@ $ docker pull almalinux@sha256:f7bd29c981ea8ee6aacbec8394d9fdb7a9d91f0ab9cf97401
 		Size: 868.8 KB (868814 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7cae3e07ee144d91aae94735bec95a1c33d6fde5cbaa2337a72513e203f41717`  
+		Last Modified: Fri, 25 Oct 2024 22:56:53 GMT  
 		Size: 5.3 KB (5322 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -905,6 +903,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:2609da11fd88b1bbd9d644ca322ced1094671722bc7e7d1fee944c9bb693d0f3`  
+		Last Modified: Tue, 24 Sep 2024 01:00:29 GMT  
 		Size: 71.8 MB (71788857 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1047,6 +1046,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:c08ae1f9efd5fe584821878f928c16d2bf9c901a6fb90a20fd17ff43ee47e85e`  
+		Last Modified: Tue, 24 Sep 2024 01:08:51 GMT  
 		Size: 76.8 MB (76754126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1066,6 +1066,7 @@ $ docker pull almalinux@sha256:e541400e2c512e63eab61b92c027b3687f23c0c145bbe68d0
 
 -	Layers:
 	-	`sha256:300529d4c3c9be438e50aef4a4f430772bdcd5e18c3e14c7ea74c7374899a6eb`  
+		Last Modified: Tue, 24 Sep 2024 01:08:50 GMT  
 		Size: 5.1 MB (5104497 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9ad9f113d01f7d7dc00f6f9a4b5e09d0929743e56294406d141fd678c844b591`  
@@ -1277,6 +1278,7 @@ $ docker pull almalinux@sha256:715cde70fae0599e5e35cec72e2f25aa38d820f34c6f2e937
 		Size: 2.0 MB (1964957 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d7b726a4c621a2b505db7d113d9cc5510acc22d76a789ad8be08f5829b88465e`  
+		Last Modified: Tue, 24 Sep 2024 01:10:07 GMT  
 		Size: 5.5 KB (5519 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1318,6 +1320,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:2609da11fd88b1bbd9d644ca322ced1094671722bc7e7d1fee944c9bb693d0f3`  
+		Last Modified: Tue, 24 Sep 2024 01:00:29 GMT  
 		Size: 71.8 MB (71788857 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1460,6 +1463,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:c08ae1f9efd5fe584821878f928c16d2bf9c901a6fb90a20fd17ff43ee47e85e`  
+		Last Modified: Tue, 24 Sep 2024 01:08:51 GMT  
 		Size: 76.8 MB (76754126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1479,6 +1483,7 @@ $ docker pull almalinux@sha256:e541400e2c512e63eab61b92c027b3687f23c0c145bbe68d0
 
 -	Layers:
 	-	`sha256:300529d4c3c9be438e50aef4a4f430772bdcd5e18c3e14c7ea74c7374899a6eb`  
+		Last Modified: Tue, 24 Sep 2024 01:08:50 GMT  
 		Size: 5.1 MB (5104497 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9ad9f113d01f7d7dc00f6f9a4b5e09d0929743e56294406d141fd678c844b591`  
@@ -1524,6 +1529,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:2609da11fd88b1bbd9d644ca322ced1094671722bc7e7d1fee944c9bb693d0f3`  
+		Last Modified: Tue, 24 Sep 2024 01:00:29 GMT  
 		Size: 71.8 MB (71788857 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1666,6 +1672,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:c08ae1f9efd5fe584821878f928c16d2bf9c901a6fb90a20fd17ff43ee47e85e`  
+		Last Modified: Tue, 24 Sep 2024 01:08:51 GMT  
 		Size: 76.8 MB (76754126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1685,6 +1692,7 @@ $ docker pull almalinux@sha256:e541400e2c512e63eab61b92c027b3687f23c0c145bbe68d0
 
 -	Layers:
 	-	`sha256:300529d4c3c9be438e50aef4a4f430772bdcd5e18c3e14c7ea74c7374899a6eb`  
+		Last Modified: Tue, 24 Sep 2024 01:08:50 GMT  
 		Size: 5.1 MB (5104497 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9ad9f113d01f7d7dc00f6f9a4b5e09d0929743e56294406d141fd678c844b591`  
@@ -1896,6 +1904,7 @@ $ docker pull almalinux@sha256:715cde70fae0599e5e35cec72e2f25aa38d820f34c6f2e937
 		Size: 2.0 MB (1964957 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d7b726a4c621a2b505db7d113d9cc5510acc22d76a789ad8be08f5829b88465e`  
+		Last Modified: Tue, 24 Sep 2024 01:10:07 GMT  
 		Size: 5.5 KB (5519 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2103,6 +2112,7 @@ $ docker pull almalinux@sha256:715cde70fae0599e5e35cec72e2f25aa38d820f34c6f2e937
 		Size: 2.0 MB (1964957 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d7b726a4c621a2b505db7d113d9cc5510acc22d76a789ad8be08f5829b88465e`  
+		Last Modified: Tue, 24 Sep 2024 01:10:07 GMT  
 		Size: 5.5 KB (5519 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2213,7 +2223,6 @@ $ docker pull almalinux@sha256:8c484bfc53f9ef9de90f73e753c70218fbdc1ce012f4ddf12
 
 -	Layers:
 	-	`sha256:3c18dba006831aa5d417b31e7e29459793ca1fcd77e565208c55010865e81aff`  
-		Last Modified: Mon, 18 Nov 2024 21:41:03 GMT  
 		Size: 6.1 MB (6072028 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d9ee691ca65397109bb9e1be9e839adad6d2d5a39eac640f5c7a9fbcf31b0c73`  
@@ -2262,7 +2271,7 @@ $ docker pull almalinux@sha256:5cee0872b81952ab36a990c4ffe14009f358b42e2d3ac41f9
 
 -	Layers:
 	-	`sha256:e61f0dc730ea17eeadb6c2ba1e9aff9e4a16980ed59d837c1cf0a5506eb3a614`  
-		Last Modified: Mon, 18 Nov 2024 23:23:02 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:27:36 GMT  
 		Size: 6.1 MB (6074929 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:286942e0b3ced0fcbc4cf7306f805b0236ced80034992403fd8f31da20a8c791`  
@@ -2377,7 +2386,7 @@ $ docker pull almalinux@sha256:35d8f0b56b8766ba66bcc109bd4d186e634de87f676f84d46
 
 -	Layers:
 	-	`sha256:edb9c48278299e8b8b2fe408bcf234a98a4b69f547043f342af05d7fefaedad0`  
-		Last Modified: Tue, 07 Jan 2025 22:27:43 GMT  
+		Last Modified: Mon, 18 Nov 2024 21:05:36 GMT  
 		Size: 2.1 MB (2084726 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ca931a6a4ea34f9ab7743e26a60b19127ddb0dce11fabe714a8830d98785f404`  
@@ -2426,6 +2435,7 @@ $ docker pull almalinux@sha256:c839c47c77d9cc18926c12c135dd817db88d8a7c3723a6433
 
 -	Layers:
 	-	`sha256:15d4fab501756205926a9be70df90183cca4e5fc8ff0708c5ffd2108aa5730de`  
+		Last Modified: Mon, 18 Nov 2024 21:41:31 GMT  
 		Size: 2.1 MB (2084300 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fbff4622bdcb62459dc19be8562765418dbd21bddc9801fd82c5313f6397126d`  
@@ -2503,7 +2513,6 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:00d0fce57ff470e9de082ba7315c28a170c968af2d3c9084f545601b83b0c980`  
-		Last Modified: Mon, 18 Nov 2024 19:23:32 GMT  
 		Size: 33.2 MB (33221247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -2638,7 +2647,6 @@ $ docker pull almalinux@sha256:8c484bfc53f9ef9de90f73e753c70218fbdc1ce012f4ddf12
 
 -	Layers:
 	-	`sha256:3c18dba006831aa5d417b31e7e29459793ca1fcd77e565208c55010865e81aff`  
-		Last Modified: Mon, 18 Nov 2024 21:41:03 GMT  
 		Size: 6.1 MB (6072028 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d9ee691ca65397109bb9e1be9e839adad6d2d5a39eac640f5c7a9fbcf31b0c73`  
@@ -2687,7 +2695,7 @@ $ docker pull almalinux@sha256:5cee0872b81952ab36a990c4ffe14009f358b42e2d3ac41f9
 
 -	Layers:
 	-	`sha256:e61f0dc730ea17eeadb6c2ba1e9aff9e4a16980ed59d837c1cf0a5506eb3a614`  
-		Last Modified: Mon, 18 Nov 2024 23:23:02 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:27:36 GMT  
 		Size: 6.1 MB (6074929 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:286942e0b3ced0fcbc4cf7306f805b0236ced80034992403fd8f31da20a8c791`  
@@ -2851,7 +2859,6 @@ $ docker pull almalinux@sha256:8c484bfc53f9ef9de90f73e753c70218fbdc1ce012f4ddf12
 
 -	Layers:
 	-	`sha256:3c18dba006831aa5d417b31e7e29459793ca1fcd77e565208c55010865e81aff`  
-		Last Modified: Mon, 18 Nov 2024 21:41:03 GMT  
 		Size: 6.1 MB (6072028 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d9ee691ca65397109bb9e1be9e839adad6d2d5a39eac640f5c7a9fbcf31b0c73`  
@@ -2900,7 +2907,7 @@ $ docker pull almalinux@sha256:5cee0872b81952ab36a990c4ffe14009f358b42e2d3ac41f9
 
 -	Layers:
 	-	`sha256:e61f0dc730ea17eeadb6c2ba1e9aff9e4a16980ed59d837c1cf0a5506eb3a614`  
-		Last Modified: Mon, 18 Nov 2024 23:23:02 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:27:36 GMT  
 		Size: 6.1 MB (6074929 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:286942e0b3ced0fcbc4cf7306f805b0236ced80034992403fd8f31da20a8c791`  
@@ -3015,7 +3022,7 @@ $ docker pull almalinux@sha256:35d8f0b56b8766ba66bcc109bd4d186e634de87f676f84d46
 
 -	Layers:
 	-	`sha256:edb9c48278299e8b8b2fe408bcf234a98a4b69f547043f342af05d7fefaedad0`  
-		Last Modified: Tue, 07 Jan 2025 22:27:43 GMT  
+		Last Modified: Mon, 18 Nov 2024 21:05:36 GMT  
 		Size: 2.1 MB (2084726 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ca931a6a4ea34f9ab7743e26a60b19127ddb0dce11fabe714a8830d98785f404`  
@@ -3064,6 +3071,7 @@ $ docker pull almalinux@sha256:c839c47c77d9cc18926c12c135dd817db88d8a7c3723a6433
 
 -	Layers:
 	-	`sha256:15d4fab501756205926a9be70df90183cca4e5fc8ff0708c5ffd2108aa5730de`  
+		Last Modified: Mon, 18 Nov 2024 21:41:31 GMT  
 		Size: 2.1 MB (2084300 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fbff4622bdcb62459dc19be8562765418dbd21bddc9801fd82c5313f6397126d`  
@@ -3141,7 +3149,6 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:00d0fce57ff470e9de082ba7315c28a170c968af2d3c9084f545601b83b0c980`  
-		Last Modified: Mon, 18 Nov 2024 19:23:32 GMT  
 		Size: 33.2 MB (33221247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3227,7 +3234,7 @@ $ docker pull almalinux@sha256:35d8f0b56b8766ba66bcc109bd4d186e634de87f676f84d46
 
 -	Layers:
 	-	`sha256:edb9c48278299e8b8b2fe408bcf234a98a4b69f547043f342af05d7fefaedad0`  
-		Last Modified: Tue, 07 Jan 2025 22:27:43 GMT  
+		Last Modified: Mon, 18 Nov 2024 21:05:36 GMT  
 		Size: 2.1 MB (2084726 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ca931a6a4ea34f9ab7743e26a60b19127ddb0dce11fabe714a8830d98785f404`  
@@ -3276,6 +3283,7 @@ $ docker pull almalinux@sha256:c839c47c77d9cc18926c12c135dd817db88d8a7c3723a6433
 
 -	Layers:
 	-	`sha256:15d4fab501756205926a9be70df90183cca4e5fc8ff0708c5ffd2108aa5730de`  
+		Last Modified: Mon, 18 Nov 2024 21:41:31 GMT  
 		Size: 2.1 MB (2084300 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fbff4622bdcb62459dc19be8562765418dbd21bddc9801fd82c5313f6397126d`  
@@ -3353,7 +3361,6 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:00d0fce57ff470e9de082ba7315c28a170c968af2d3c9084f545601b83b0c980`  
-		Last Modified: Mon, 18 Nov 2024 19:23:32 GMT  
 		Size: 33.2 MB (33221247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -3488,7 +3495,6 @@ $ docker pull almalinux@sha256:8c484bfc53f9ef9de90f73e753c70218fbdc1ce012f4ddf12
 
 -	Layers:
 	-	`sha256:3c18dba006831aa5d417b31e7e29459793ca1fcd77e565208c55010865e81aff`  
-		Last Modified: Mon, 18 Nov 2024 21:41:03 GMT  
 		Size: 6.1 MB (6072028 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d9ee691ca65397109bb9e1be9e839adad6d2d5a39eac640f5c7a9fbcf31b0c73`  
@@ -3537,7 +3543,7 @@ $ docker pull almalinux@sha256:5cee0872b81952ab36a990c4ffe14009f358b42e2d3ac41f9
 
 -	Layers:
 	-	`sha256:e61f0dc730ea17eeadb6c2ba1e9aff9e4a16980ed59d837c1cf0a5506eb3a614`  
-		Last Modified: Mon, 18 Nov 2024 23:23:02 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:27:36 GMT  
 		Size: 6.1 MB (6074929 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:286942e0b3ced0fcbc4cf7306f805b0236ced80034992403fd8f31da20a8c791`  
@@ -3652,7 +3658,7 @@ $ docker pull almalinux@sha256:35d8f0b56b8766ba66bcc109bd4d186e634de87f676f84d46
 
 -	Layers:
 	-	`sha256:edb9c48278299e8b8b2fe408bcf234a98a4b69f547043f342af05d7fefaedad0`  
-		Last Modified: Tue, 07 Jan 2025 22:27:43 GMT  
+		Last Modified: Mon, 18 Nov 2024 21:05:36 GMT  
 		Size: 2.1 MB (2084726 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ca931a6a4ea34f9ab7743e26a60b19127ddb0dce11fabe714a8830d98785f404`  
@@ -3701,6 +3707,7 @@ $ docker pull almalinux@sha256:c839c47c77d9cc18926c12c135dd817db88d8a7c3723a6433
 
 -	Layers:
 	-	`sha256:15d4fab501756205926a9be70df90183cca4e5fc8ff0708c5ffd2108aa5730de`  
+		Last Modified: Mon, 18 Nov 2024 21:41:31 GMT  
 		Size: 2.1 MB (2084300 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fbff4622bdcb62459dc19be8562765418dbd21bddc9801fd82c5313f6397126d`  
@@ -3778,7 +3785,6 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:00d0fce57ff470e9de082ba7315c28a170c968af2d3c9084f545601b83b0c980`  
-		Last Modified: Mon, 18 Nov 2024 19:23:32 GMT  
 		Size: 33.2 MB (33221247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
