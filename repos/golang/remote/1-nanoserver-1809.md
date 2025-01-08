@@ -63,6 +63,7 @@ WORKDIR C:\go
 		Size: 1.0 KB (1039 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8e9f89d75dad44358058fb924a3fe3c80f9e3de3b5fab6f9533762ece824bc8c`  
+		Last Modified: Wed, 11 Dec 2024 21:47:57 GMT  
 		Size: 69.3 KB (69251 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5f90597a72a30c7e676d733f67e269d69df2958dee1a00c47f221a15b88c9740`  
@@ -70,15 +71,18 @@ WORKDIR C:\go
 		Size: 1.0 KB (1034 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:34a9585c9f3fe965a8278c8cfffcda989d690d0579ed05dfd488ea17eaa7d9e0`  
+		Last Modified: Wed, 11 Dec 2024 21:47:56 GMT  
 		Size: 1.0 KB (1040 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d3689e47dd7448c87c5bbeffd4ad3a548a094a3a8a7ff510561d2b29df85d2d3`  
+		Last Modified: Wed, 11 Dec 2024 21:48:07 GMT  
 		Size: 76.9 MB (76949923 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:980fbe2e82201a5704af6ea2f1ab6597060f1f23a5a5ea679b3ec9700c77d3a4`  
-		Last Modified: Wed, 08 Jan 2025 13:33:13 GMT  
+		Last Modified: Wed, 11 Dec 2024 21:47:56 GMT  
 		Size: 69.5 KB (69485 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:49ff3ad76b237b65125442fe54c35ea92c8fa1c7992ac0b263ad8dfe001ab0d7`  
+		Last Modified: Wed, 11 Dec 2024 21:47:56 GMT  
 		Size: 1.2 KB (1246 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
