@@ -58,19 +58,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.9.17
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.17.dsc' apt_2.9.17.dsc 3003 SHA256:e982849d9e091ba1dc331b6833a53b7b7f7e0b412e213936a012da501a29c0bf
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.17.tar.xz' apt_2.9.17.tar.xz 2390108 SHA256:30a0f5bb66e50e66355eaa810097192f977dfeb5c2aa57b9c4f59870be7b0d04
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.9.17/
 
-- https://sources.debian.net/src/apt/2.9.17/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.9.17/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.9.17/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-2`
 
@@ -628,11 +622,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris diffutils=1:3.10-1
-'http://http.debian.net/debian/pool/main/d/diffutils/diffutils_3.10-1.dsc' diffutils_3.10-1.dsc 1715 SHA256:f7542884c67d44f0af356c5365a3fef8a298f1fbcbebf9df81cfbc6d6937f05f
-'http://http.debian.net/debian/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz' diffutils_3.10.orig.tar.xz 1624240 SHA256:90e5e93cc724e4ebe12ede80df1634063c7a855692685919bfe60b556c9bd09e
-'http://http.debian.net/debian/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz.asc' diffutils_3.10.orig.tar.xz.asc 833 SHA256:a94faf8f1baa04ff220f7b2ccb137c16337284e023ebc4a1d5df475c08d810f7
-'http://http.debian.net/debian/pool/main/d/diffutils/diffutils_3.10-1.debian.tar.xz' diffutils_3.10-1.debian.tar.xz 13952 SHA256:ebf51a7ceff8c882f997ca428232fd3b58ac59a70840c4b10f8fcfaa881598ce
+'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10-1.dsc' diffutils_3.10-1.dsc 1715 SHA256:f7542884c67d44f0af356c5365a3fef8a298f1fbcbebf9df81cfbc6d6937f05f
+'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz' diffutils_3.10.orig.tar.xz 1624240 SHA256:90e5e93cc724e4ebe12ede80df1634063c7a855692685919bfe60b556c9bd09e
+'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz.asc' diffutils_3.10.orig.tar.xz.asc 833 SHA256:a94faf8f1baa04ff220f7b2ccb137c16337284e023ebc4a1d5df475c08d810f7
+'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10-1.debian.tar.xz' diffutils_3.10-1.debian.tar.xz 13952 SHA256:ebf51a7ceff8c882f997ca428232fd3b58ac59a70840c4b10f8fcfaa881598ce
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/diffutils/1:3.10-1/ (for browsing the source)
+- https://sources.debian.net/src/diffutils/1:3.10-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/diffutils/1:3.10-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dpkg=1.22.11`
 
@@ -1381,20 +1381,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris kernsmooth=2.23-24-1
-'http://deb.debian.org/debian/pool/main/k/kernsmooth/kernsmooth_2.23-24-1.dsc' kernsmooth_2.23-24-1.dsc 1891 SHA256:370bf641158785a92cf30b5476d7b4ec7abafe793f514b53cef7faf9a819124d
-'http://deb.debian.org/debian/pool/main/k/kernsmooth/kernsmooth_2.23-24.orig.tar.gz' kernsmooth_2.23-24.orig.tar.gz 26067 SHA256:d0b3ec39547ffd92565e91b0c3bb637f3b30e7a46afe416d8790b8c4f528ac5f
-'http://deb.debian.org/debian/pool/main/k/kernsmooth/kernsmooth_2.23-24-1.debian.tar.xz' kernsmooth_2.23-24-1.debian.tar.xz 3472 SHA256:3eb1235fa87c243ef68c3639da4800a7e11a5bfaa5791e52199e2d864141939e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/kernsmooth/2.23-24-1/
 
-- https://sources.debian.net/src/kernsmooth/2.23-24-1/ (for browsing the source)
-- https://sources.debian.net/src/kernsmooth/2.23-24-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/kernsmooth/2.23-24-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `keyutils=1.6.3-4`
 
@@ -3035,20 +3028,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-class/copyright`)
 - `GPL-2`
 - `GPL-2 | GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-cran-class=7.3-22-2
-'http://deb.debian.org/debian/pool/main/r/r-cran-class/r-cran-class_7.3-22-2.dsc' r-cran-class_7.3-22-2.dsc 1873 SHA256:f1b705a3b059c4315228192b468c007b1414f26834a5ef5ea985ac7f928afdc2
-'http://deb.debian.org/debian/pool/main/r/r-cran-class/r-cran-class_7.3-22.orig.tar.gz' r-cran-class_7.3-22.orig.tar.gz 20812 SHA256:b6994164e93843fcc7e08dfdc8c8b4af6a5a10ef7153d2e72a6855342508d15c
-'http://deb.debian.org/debian/pool/main/r/r-cran-class/r-cran-class_7.3-22-2.debian.tar.xz' r-cran-class_7.3-22-2.debian.tar.xz 3300 SHA256:1c13438d7b1645c7f4b027488d93b4362698de4805b8a75c121d7a5ca8579098
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/r-cran-class/7.3-22-2/
 
-- https://sources.debian.net/src/r-cran-class/7.3-22-2/ (for browsing the source)
-- https://sources.debian.net/src/r-cran-class/7.3-22-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-cran-class/7.3-22-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-docopt=0.7.1-2`
 
@@ -3106,20 +3092,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-nnet/copyright`)
 - `GPL-2`
 - `GPL-2 | GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-cran-nnet=7.3-19-2
-'http://deb.debian.org/debian/pool/main/r/r-cran-nnet/r-cran-nnet_7.3-19-2.dsc' r-cran-nnet_7.3-19-2.dsc 1848 SHA256:02c98934d24d70696c760e0e4fa8fae998a6ea275eb039ab140ef30d564523a3
-'http://deb.debian.org/debian/pool/main/r/r-cran-nnet/r-cran-nnet_7.3-19.orig.tar.gz' r-cran-nnet_7.3-19.orig.tar.gz 29152 SHA256:a9241f469270d3b03bbab7dc0d3c6a06a84010af16ba82fd3bd6660b35382ce7
-'http://deb.debian.org/debian/pool/main/r/r-cran-nnet/r-cran-nnet_7.3-19-2.debian.tar.xz' r-cran-nnet_7.3-19-2.debian.tar.xz 3332 SHA256:49aaccdda8d36b3f195ba69de26066b2e1245803a9ab4dafa536589fa85977b7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/r-cran-nnet/7.3-19-2/
 
-- https://sources.debian.net/src/r-cran-nnet/7.3-19-2/ (for browsing the source)
-- https://sources.debian.net/src/r-cran-nnet/7.3-19-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-cran-nnet/7.3-19-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-cran-spatial=7.3-17-1`
 
@@ -3132,20 +3111,13 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-spatial/copyright`)
 - `GPL-2`
 - `GPL-2 | GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris r-cran-spatial=7.3-17-1
-'http://deb.debian.org/debian/pool/main/r/r-cran-spatial/r-cran-spatial_7.3-17-1.dsc' r-cran-spatial_7.3-17-1.dsc 1884 SHA256:2b53f753efcdc641ef16e58e1bed93ee4a9d7bf52864e95359422d6c5ad4b5c0
-'http://deb.debian.org/debian/pool/main/r/r-cran-spatial/r-cran-spatial_7.3-17.orig.tar.gz' r-cran-spatial_7.3-17.orig.tar.gz 44661 SHA256:f1003ed8cff2a47169a4787c8be46e8c2c501cc06c8b1e5f97bf62507e5f5dd7
-'http://deb.debian.org/debian/pool/main/r/r-cran-spatial/r-cran-spatial_7.3-17-1.debian.tar.xz' r-cran-spatial_7.3-17-1.debian.tar.xz 3224 SHA256:1299d2624d2cd604237e97116659b15f60eb6bb6179c5265cee1b89a6b708fe8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/r-cran-spatial/7.3-17-1/
 
-- https://sources.debian.net/src/r-cran-spatial/7.3-17-1/ (for browsing the source)
-- https://sources.debian.net/src/r-cran-spatial/7.3-17-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/r-cran-spatial/7.3-17-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-6`
 
@@ -3791,10 +3763,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris xxhash=0.8.2-2
-'http://http.debian.net/debian/pool/main/x/xxhash/xxhash_0.8.2-2.dsc' xxhash_0.8.2-2.dsc 1969 SHA256:8fbf9f5a50a4cf48e771e157e386bd2b2938e46cecd4bc53117ee1a4a615af1d
-'http://http.debian.net/debian/pool/main/x/xxhash/xxhash_0.8.2.orig.tar.gz' xxhash_0.8.2.orig.tar.gz 1141188 SHA256:baee0c6afd4f03165de7a4e67988d16f0f2b257b51d0e3cb91909302a26a79c4
-'http://http.debian.net/debian/pool/main/x/xxhash/xxhash_0.8.2-2.debian.tar.xz' xxhash_0.8.2-2.debian.tar.xz 4920 SHA256:fcbdd52df60936173524743680f6d3c504b9a90553fe113cd0aa531faf4f2c4d
+'http://deb.debian.org/debian/pool/main/x/xxhash/xxhash_0.8.2-2.dsc' xxhash_0.8.2-2.dsc 1969 SHA256:8fbf9f5a50a4cf48e771e157e386bd2b2938e46cecd4bc53117ee1a4a615af1d
+'http://deb.debian.org/debian/pool/main/x/xxhash/xxhash_0.8.2.orig.tar.gz' xxhash_0.8.2.orig.tar.gz 1141188 SHA256:baee0c6afd4f03165de7a4e67988d16f0f2b257b51d0e3cb91909302a26a79c4
+'http://deb.debian.org/debian/pool/main/x/xxhash/xxhash_0.8.2-2.debian.tar.xz' xxhash_0.8.2-2.debian.tar.xz 4920 SHA256:fcbdd52df60936173524743680f6d3c504b9a90553fe113cd0aa531faf4f2c4d
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/xxhash/0.8.2-2/ (for browsing the source)
+- https://sources.debian.net/src/xxhash/0.8.2-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xxhash/0.8.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xz-utils=5.6.3-1`
 
