@@ -85,7 +85,7 @@ CMD ["memcached"]
 		Size: 281.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:57e8c9fc1c0023bdc9e9d3fced306697e617073042631f5fac9bf0c9a5857aec`  
-		Last Modified: Wed, 08 Jan 2025 06:17:28 GMT  
+		Last Modified: Tue, 24 Dec 2024 22:21:19 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -161,11 +161,9 @@ CMD ["memcached"]
 		Size: 25.8 MB (25754907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fa14209fabe4a80eb9b178ecfe79d1bb105587036b015407306770882c8d14af`  
-		Last Modified: Tue, 24 Dec 2024 22:36:59 GMT  
 		Size: 1.1 KB (1107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:68bc82217958354f4a330c00f3256c98d31c28238b1a8ef9f46b9ebe6b06a4f4`  
-		Last Modified: Tue, 24 Dec 2024 22:37:00 GMT  
 		Size: 2.1 MB (2096088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:52cf7c177fa36879b5b0cb63d05330fc53775ddddf42cc06f954ecd529b351e7`  
@@ -257,7 +255,6 @@ CMD ["memcached"]
 		Size: 1.1 KB (1108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b50cc9fccfbeb557a0fb8bf1b82f293cd18703bd3d0830092d10ffb46faf6ec9`  
-		Last Modified: Tue, 24 Dec 2024 23:02:16 GMT  
 		Size: 2.4 MB (2355305 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:046431d0aba356733aa2a86555a9b4e7814c979444192de7db0debf5c723f092`  
@@ -269,6 +266,7 @@ CMD ["memcached"]
 		Size: 281.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4326d3424e7dc9782243613e405c428d8eaba3c3c1afc5e0b4b0ab9735f1f387`  
+		Last Modified: Tue, 24 Dec 2024 23:02:16 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -340,7 +338,6 @@ CMD ["memcached"]
 
 -	Layers:
 	-	`sha256:fba9c0797a7b5bba079e0fd9d815a8878aea58430ea12c84047010f98fbe34d7`  
-		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
 		Size: 29.2 MB (29205387 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e668afa22b9bf58fdc652c0bffa14ab0b18a0e4fd8af05544403efd3ad6a7746`  
@@ -348,7 +345,6 @@ CMD ["memcached"]
 		Size: 1.1 KB (1108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dd44ce24e3068eef0e86047ac448ce589cced4bacc43c20d5e24653c921e8a91`  
-		Last Modified: Tue, 24 Dec 2024 22:17:21 GMT  
 		Size: 2.5 MB (2500692 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:45cac25950ac95698a0165bd9d76cd431b3b55f9c94f8b751d71f524368ef277`  
@@ -360,6 +356,7 @@ CMD ["memcached"]
 		Size: 282.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c5647099be9e38a3ea1440a1e179dd4f3e6957ed358de0a84ebddaafdfa69526`  
+		Last Modified: Wed, 08 Jan 2025 06:43:46 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -435,6 +432,7 @@ CMD ["memcached"]
 		Size: 28.5 MB (28505873 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7a02202985a9e09dfe1ef64f96d7f2e5b83d3f3387954475784f9c17c2715166`  
+		Last Modified: Tue, 24 Dec 2024 23:19:04 GMT  
 		Size: 1.1 KB (1111 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:55e108ba613205d57fe4ea372cda7204672f2df99cd34132d95cf9671bc99386`  
@@ -518,7 +516,6 @@ CMD ["memcached"]
 
 -	Layers:
 	-	`sha256:4a1ea4d3c9e0863e99d27aae6dac9a4b908a6413e758c7785d8fefe555b0e760`  
-		Last Modified: Wed, 25 Dec 2024 00:32:48 GMT  
 		Size: 32.1 MB (32063240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c5cbf88bb15aedb586605ccad1dc38f1331d5d56d774825d5e695ff3bb6bdef`  
@@ -526,7 +523,6 @@ CMD ["memcached"]
 		Size: 1.1 KB (1108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0a4bba66c678c571042567045c499de22980823c2d424e4aa9220aadf79264e0`  
-		Last Modified: Wed, 25 Dec 2024 04:17:27 GMT  
 		Size: 2.7 MB (2708552 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:71b6a1d8b446b311a32c3f553a64556f921b822ed8a0d2ad929ed64aa65a9c66`  
@@ -538,6 +534,7 @@ CMD ["memcached"]
 		Size: 281.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:44a694a42426b0d01abd0b946abd403bd5a1a2e7eecad1b51c4d1a7394993f8d`  
+		Last Modified: Wed, 08 Jan 2025 06:43:52 GMT  
 		Size: 119.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -561,7 +558,6 @@ $ docker pull memcached@sha256:2675930f2f0e53fd5476c893f872aa97701aa788a19028e0c
 		Size: 2.3 MB (2293679 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e217ed2fc84ecf9649805254f1f73a9ff9ba29895d4bf17f952e918940f3a14e`  
-		Last Modified: Wed, 25 Dec 2024 04:17:27 GMT  
 		Size: 21.3 KB (21296 bytes)  
 		MIME: application/vnd.in-toto+json
 
