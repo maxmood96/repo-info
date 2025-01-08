@@ -149,6 +149,7 @@ COPY 30-build-modules.sh /startup-sequence/ # buildkit
 
 -	Layers:
 	-	`sha256:7ebe2b3dea80a0cf44722451c51fa37efc40b0c599e291ba324046244780a76f`  
+		Last Modified: Tue, 07 Jan 2025 02:30:01 GMT  
 		Size: 3.2 MB (3169627 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26b19fd69445f34b80c9394c2b8eed43142c98f21082e617414b6a576aad697d`  
