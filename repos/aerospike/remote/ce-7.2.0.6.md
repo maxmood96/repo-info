@@ -69,18 +69,17 @@ CMD ["asd"]
 
 -	Layers:
 	-	`sha256:de44b265507ae44b212defcb50694d666f136b35c1090d9709068bc861bb2d64`  
-		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:50:26 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5ff64e53a469561bcd8c3098d4f88f64b58543f1d87e04cbc8f0f5327d8b16cb`  
-		Last Modified: Tue, 07 Jan 2025 01:30:24 GMT  
 		Size: 47.8 MB (47787967 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4cb56565cd7d330148c0d30814ec1e3ae305a14071e39d1c3645fca96e2c06b6`  
-		Last Modified: Tue, 07 Jan 2025 01:30:23 GMT  
 		Size: 1.2 KB (1193 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:22a5c163e97d5b2bbb8e9517a1d434a6ed48aa374cd89a782c5cf15ea66a470d`  
+		Last Modified: Tue, 07 Jan 2025 01:30:23 GMT  
 		Size: 1.1 KB (1108 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -166,11 +165,9 @@ CMD ["asd"]
 
 -	Layers:
 	-	`sha256:8bb55f0677778c3027fcc4253dc452bc9c22de989a696391e739fb1cdbbdb4c2`  
-		Last Modified: Wed, 08 Jan 2025 06:48:47 GMT  
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9c2ca6bc0c565059065603d4da83f422856064a3676fe4f4a212942d62d193d`  
-		Last Modified: Tue, 07 Jan 2025 02:52:33 GMT  
 		Size: 47.2 MB (47225267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd4f22c88b73aee63beaca34fd09444ad935083a72014183330726a279f73dfd`  
@@ -202,6 +199,6 @@ $ docker pull aerospike@sha256:066760aba39f8c6b86b0e3d9a262ba93fb8621667d9b67906
 		Size: 1.9 MB (1864583 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9c1619e69981c28e236b722c17057d19050f97ee7c3746652ba36fd5bc311f98`  
-		Last Modified: Tue, 07 Jan 2025 02:52:31 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:27:18 GMT  
 		Size: 29.2 KB (29225 bytes)  
 		MIME: application/vnd.in-toto+json
