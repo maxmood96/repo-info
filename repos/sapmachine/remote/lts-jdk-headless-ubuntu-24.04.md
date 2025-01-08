@@ -115,7 +115,7 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:8bb55f0677778c3027fcc4253dc452bc9c22de989a696391e739fb1cdbbdb4c2`  
-		Last Modified: Tue, 19 Nov 2024 17:38:33 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:53:35 GMT  
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0cbb74f068c813eb8924247babba068fe9577ee157e3231f29f7059dca35d1f0`  
