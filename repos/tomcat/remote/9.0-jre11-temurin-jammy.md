@@ -108,9 +108,11 @@ CMD ["catalina.sh" "run"]
 		Size: 47.2 MB (47216714 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b59d22db63f3eb3d77e5b705449730b93d844bcfa1ce1f13df22d49f13d15606`  
+		Last Modified: Thu, 24 Oct 2024 00:56:53 GMT  
 		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b80a9c727cee83bf408beb00d113d06d03954eb063419370a72b7844400e2d79`  
+		Last Modified: Thu, 24 Oct 2024 00:56:53 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a9a715cda5d306404efc85acaeea0291ca697025dbc00764e76326ee6e8ddc91`  
@@ -122,7 +124,6 @@ CMD ["catalina.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:84d129c380221c8cb8fd047c418352adf05a287e33aba65ed1dd2b31aaf97dea`  
-		Last Modified: Tue, 10 Dec 2024 02:09:20 GMT  
 		Size: 13.5 MB (13458061 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3c74efb03372d65491ea3e71ff0de77dc5401b48e4a4e1466fb8b0983a5cde6b`  
@@ -150,10 +151,10 @@ $ docker pull tomcat@sha256:0c2231ca4928b113c3207e4dca7c84d01dc5a5ad465cbf489aea
 
 -	Layers:
 	-	`sha256:a5f72ba4617fcf8a603e3ea780ecdb03171cf911d74cfa95e794f1c8546bb3c2`  
-		Last Modified: Tue, 10 Dec 2024 02:09:20 GMT  
 		Size: 3.8 MB (3782896 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4192a9d3cfdc900bb03ef40c8b461afe20262551824dff2379dcbeb56a4d1824`  
+		Last Modified: Tue, 10 Dec 2024 02:09:20 GMT  
 		Size: 21.9 KB (21895 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -248,10 +249,10 @@ CMD ["catalina.sh" "run"]
 		Size: 45.3 MB (45332427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5965f7813011785b126509aefedb841cfdde9e1a684a5f44fb2392df1a4f849c`  
+		Last Modified: Thu, 24 Oct 2024 01:08:02 GMT  
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:caa32df3ceec8af6367522db81498aef990a43c02534b21a68c22f0eb7cbac0d`  
-		Last Modified: Thu, 24 Oct 2024 01:08:02 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c99c144a73d95f42f3b6cb9eb97200f6774bbc931cacaaf3d3108007802a14d`  
@@ -386,7 +387,6 @@ CMD ["catalina.sh" "run"]
 		Size: 16.1 MB (16062123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2df4b49837842cfab8a95fec666778763869dffc44881af662c920632ae031b5`  
-		Last Modified: Thu, 24 Oct 2024 01:06:21 GMT  
 		Size: 45.6 MB (45576593 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92ec09f4527c9ff858afbd6c055995c0e8a4d9d97ea97cf12b1b94149cf94c9d`  
@@ -398,7 +398,6 @@ CMD ["catalina.sh" "run"]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:30c6285a3eb779015f8a9d9c3a9369fd708762355cf0f87c4e64caf2adb8326c`  
-		Last Modified: Tue, 10 Dec 2024 02:46:22 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -549,7 +548,6 @@ CMD ["catalina.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0a6bcc9258fea00e6e49fb50395a790e16c6e11b4935e0b07c073476d8870f13`  
-		Last Modified: Tue, 10 Dec 2024 02:26:19 GMT  
 		Size: 13.5 MB (13485552 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fc99107e3996d8cabb361c5ea6e0dea510910890ce4ed15651f2f394308aeef9`  
@@ -672,10 +670,10 @@ CMD ["catalina.sh" "run"]
 		Size: 16.1 MB (16141938 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bf5e0f6193e73bbe6dba381f5b604d78c687fb568a3426004724906455c5b2b8`  
+		Last Modified: Thu, 24 Oct 2024 17:12:25 GMT  
 		Size: 40.8 MB (40840105 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:608df4b783f11f89006ecb3fe175ffb71fddf64ebad8ab1caf4d45a77259beee`  
-		Last Modified: Thu, 24 Oct 2024 17:12:19 GMT  
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f4efa76e38434b60e6982fdefcf54fcea4a600ab20ccb3cd2597d69602f0ca72`  
