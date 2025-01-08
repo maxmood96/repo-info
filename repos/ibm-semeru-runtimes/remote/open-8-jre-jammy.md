@@ -62,6 +62,7 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:18e67b901c88c88104331c001f2afd05aa84676f840441e95ca7f42cf836c293`  
+		Last Modified: Thu, 19 Dec 2024 21:31:32 GMT  
 		Size: 12.2 MB (12174497 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0bfe30d75f74ef3f3c94ed4a81be9ee92955eb901a0e97b1183b5f8ccae06a02`  
@@ -93,7 +94,6 @@ $ docker pull ibm-semeru-runtimes@sha256:2bc24a817a8ba676d6498214d8288d3e1a488b8
 		Size: 3.6 MB (3611678 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9c5182813049f1946468d0ff02c1f8a9b54ee1047b4597ca37c17536e2f284a8`  
-		Last Modified: Thu, 19 Dec 2024 21:31:32 GMT  
 		Size: 24.6 KB (24625 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -235,6 +235,7 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 51.8 MB (51803594 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:87fcbc480ab841848f71f73627501557101902e8bcf7d5d70756ba5db4b029f7`  
+		Last Modified: Thu, 19 Dec 2024 21:40:38 GMT  
 		Size: 3.5 MB (3459275 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -258,6 +259,7 @@ $ docker pull ibm-semeru-runtimes@sha256:23db2e862fe880cb84ddde6fcf50e28cfae9747
 		Size: 3.6 MB (3610464 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:40730d5c64453633d3e484df479fc662af97697354ea03793974c7ce598d43b2`  
+		Last Modified: Thu, 19 Dec 2024 21:40:38 GMT  
 		Size: 24.7 KB (24673 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -308,6 +310,7 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 28.0 MB (28001475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:19d7fcbb74a18dbda1a95a881c01c2cc4d8a0d6fe38b3b4f8b5899f281f9815e`  
+		Last Modified: Wed, 08 Jan 2025 01:36:32 GMT  
 		Size: 12.2 MB (12203759 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e3f51ccaf2a286b38b7e2d9491bfe1bc67be8a3e1ad670797e3bcf73af3dd0ee`  
