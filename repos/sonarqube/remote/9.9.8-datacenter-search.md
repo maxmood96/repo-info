@@ -86,7 +86,7 @@ CMD ["/opt/sonarqube/docker/sonar.sh"]
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
+		Last Modified: Wed, 08 Jan 2025 07:56:27 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:17da8ec43a12ff631d1579ab778a0883e59bca58adc86136e1c447ef261a2b6e`  
@@ -138,7 +138,6 @@ $ docker pull sonarqube@sha256:7d7ee58acaef5ca8019deda66d8d77ae516077f4a12aba94f
 		Size: 4.4 MB (4447888 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:53fbed2dc1bcf3b90bc32e4ad48e1406d3ba128eef8ecc94db28b62b660e2922`  
-		Last Modified: Tue, 03 Dec 2024 00:25:07 GMT  
 		Size: 19.0 KB (18980 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -225,7 +224,7 @@ CMD ["/opt/sonarqube/docker/sonar.sh"]
 		Size: 16.1 MB (16062123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6c88cd8dd8835e47c7a890ad7abd2ca59cf691145582518cf5843edbd6d6bfa0`  
-		Last Modified: Thu, 24 Oct 2024 01:12:30 GMT  
+		Last Modified: Wed, 08 Jan 2025 07:29:05 GMT  
 		Size: 46.4 MB (46430856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0c3c08b455337af9ba6b5fe522389a1d0a2b621fe437f3832a54289cac03397`  
@@ -233,6 +232,7 @@ CMD ["/opt/sonarqube/docker/sonar.sh"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26811a6e12de121df2970871f9027eb19d2c672b0045944972cf63a39c74aa15`  
+		Last Modified: Thu, 24 Oct 2024 01:12:28 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b482f20fe0e60bc2476f18d6e785eb3d3f5503ca8bfb9bd9f1ecc4bbcfe4fe7f`  
@@ -264,6 +264,7 @@ $ docker pull sonarqube@sha256:a0c269e4b3f73915f0f31b6759267c6ebad7807667cd87048
 
 -	Layers:
 	-	`sha256:18e6e3d12a44dd2900b03a67f0f2e234f1431a18612eed8e94dd4ad9dd188e72`  
+		Last Modified: Tue, 03 Dec 2024 00:45:04 GMT  
 		Size: 4.4 MB (4447572 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2044cebeb95f14964961cda61309f4287324da52d365980af22fca260446eb3a`  
