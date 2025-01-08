@@ -137,6 +137,7 @@ $ docker pull erlang@sha256:07a7ef3c604c992ac72b64dfb3977a8134fdc698d2ccd2f3c11c
 		Size: 263.1 KB (263109 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b3b048c6b1ba3369feed0b7d89f12376d5ba88e716da2eb5a0533d5828ddbd75`  
+		Last Modified: Tue, 07 Jan 2025 06:33:12 GMT  
 		Size: 15.1 KB (15119 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -234,7 +235,7 @@ CMD ["erl"]
 		Size: 3.5 MB (3463189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26d0c6bd5db92567147ed28e32e4742e2456cfce40c563ed7e9e18ba697a563a`  
-		Last Modified: Wed, 08 Jan 2025 05:32:01 GMT  
+		Last Modified: Tue, 07 Jan 2025 18:39:48 GMT  
 		Size: 44.6 MB (44635154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -254,10 +255,11 @@ $ docker pull erlang@sha256:64edf58e330283f97f9516b344bb059f10c1358fc75f5e91bd23
 
 -	Layers:
 	-	`sha256:1f342f762e38aa8364fdacdc3f9ed6ccc089c8e8509fa03e44b0af714b2fb3f5`  
+		Last Modified: Tue, 07 Jan 2025 18:39:47 GMT  
 		Size: 262.4 KB (262354 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:dfa5201c60160039e9c93d1889713f170f8dba68e82c241b74f9823cd7d22ee1`  
-		Last Modified: Wed, 08 Jan 2025 04:32:16 GMT  
+		Last Modified: Tue, 07 Jan 2025 18:39:47 GMT  
 		Size: 15.0 KB (15011 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -351,7 +353,6 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:2ed16bdf68dac880df118dfa3d21d44652bc18382729359f97297fa5998086cd`  
-		Last Modified: Tue, 07 Jan 2025 02:32:49 GMT  
 		Size: 3.5 MB (3459179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:04a0b9902208077a52e20cb8a0a72a2a745a2c25493939a711c101eba54387a1`  
@@ -375,7 +376,6 @@ $ docker pull erlang@sha256:79904f729172979ceb3de334534982e1777819713b9798a8985e
 
 -	Layers:
 	-	`sha256:0f450acca2cd433ff323a5589bcba0029036a79abaff2cc334b8e2728d48aa2b`  
-		Last Modified: Tue, 07 Jan 2025 20:30:16 GMT  
 		Size: 261.2 KB (261164 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cc0cb8c7b5c0db1a51da389a636fdda047dbcceba4050dd61db857b9bd7e4bbd`  
