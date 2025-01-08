@@ -85,7 +85,6 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:a4ccbed189b6fa8a6006b2b389c510ca8f9e6e97e85874c665ed3451025f0831`  
-		Last Modified: Thu, 24 Oct 2024 19:18:28 GMT  
 		Size: 28.6 MB (28558852 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -105,7 +104,7 @@ $ docker pull almalinux@sha256:f7bd29c981ea8ee6aacbec8394d9fdb7a9d91f0ab9cf97401
 
 -	Layers:
 	-	`sha256:8625fcb7826a4e0ba615ec35693de324f7a659c0104f85d786baf976353160e1`  
-		Last Modified: Wed, 08 Jan 2025 02:27:18 GMT  
+		Last Modified: Fri, 25 Oct 2024 22:56:53 GMT  
 		Size: 868.8 KB (868814 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7cae3e07ee144d91aae94735bec95a1c33d6fde5cbaa2337a72513e203f41717`  
