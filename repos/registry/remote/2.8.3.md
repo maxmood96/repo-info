@@ -381,7 +381,7 @@ CMD ["/etc/docker/registry/config.yml"]
 
 -	Layers:
 	-	`sha256:5c877fdbcd847569c3edb3dc629e4db53a0f9f57223c60c49f8170fd4318dcc3`  
-		Last Modified: Wed, 08 Jan 2025 13:27:29 GMT  
+		Last Modified: Tue, 07 Jan 2025 02:32:59 GMT  
 		Size: 3.4 MB (3352784 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:079368551e03dbfebff6c494bbbecf25822cea384fbea6642472638c45c02625`  
