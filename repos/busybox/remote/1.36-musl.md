@@ -84,6 +84,7 @@ RUN BusyBox 1.36.1 (musl), Alpine 3.21.0
 
 -	Layers:
 	-	`sha256:72bb2e2d6823b7dbe1d90b2e199686ba1b9bf8e1d7213b824a4b2308a2a623cb`  
+		Last Modified: Wed, 11 Dec 2024 00:27:25 GMT  
 		Size: 947.9 KB (947912 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -106,6 +107,7 @@ RUN BusyBox 1.36.1 (musl), Alpine 3.21.0
 
 -	Layers:
 	-	`sha256:54cc78f380b557fe24cd5ee9087e6fb120c391a40cb310c24efa52cff08b37e7`  
+		Last Modified: Wed, 11 Dec 2024 00:27:56 GMT  
 		Size: 844.6 KB (844566 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -125,6 +127,7 @@ $ docker pull busybox@sha256:e3533de4d7093f9cb43cd4574ffbb7bb21ef7c7d3a0aecb2dd1
 
 -	Layers:
 	-	`sha256:765ae5e6821e2392ecd3c07c84ffde63ab95524e8f4089894e1b611aea5dd9ba`  
+		Last Modified: Wed, 11 Dec 2024 00:27:55 GMT  
 		Size: 2.0 KB (2017 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -147,7 +150,7 @@ RUN BusyBox 1.36.1 (musl), Alpine 3.21.0
 
 -	Layers:
 	-	`sha256:f21bed502a04d2e7ff42726eb1752b777d0894da6a3e40757c24789d065da209`  
-		Last Modified: Wed, 08 Jan 2025 12:28:44 GMT  
+		Last Modified: Wed, 11 Dec 2024 00:28:02 GMT  
 		Size: 890.2 KB (890182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -190,6 +193,7 @@ RUN BusyBox 1.36.1 (musl), Alpine 3.21.0
 
 -	Layers:
 	-	`sha256:0d957379212109c97b46d714ddc64b7a8640ab5db82f108107f29c1325d2c60e`  
+		Last Modified: Wed, 11 Dec 2024 00:27:18 GMT  
 		Size: 854.1 KB (854143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -232,6 +236,7 @@ RUN BusyBox 1.36.1 (musl), Alpine 3.21.0
 
 -	Layers:
 	-	`sha256:79e71bf9ae405eaf0977d9d89296e9676645524ba9c8abfb3c76fcf7c4af6648`  
+		Last Modified: Wed, 11 Dec 2024 00:27:59 GMT  
 		Size: 940.7 KB (940695 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -317,6 +322,7 @@ RUN BusyBox 1.36.1 (musl), Alpine 3.21.0
 
 -	Layers:
 	-	`sha256:b61c24a860b2d93d119395cc61d4ece8b3c8639e0c45e15957367b6b5572a3dd`  
+		Last Modified: Wed, 11 Dec 2024 00:40:51 GMT  
 		Size: 919.0 KB (919044 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
