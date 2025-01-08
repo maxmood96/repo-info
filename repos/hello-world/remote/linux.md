@@ -48,7 +48,7 @@ CMD ["/hello"]
 
 -	Layers:
 	-	`sha256:c1ec31eb59444d78df06a974d155e597c894ab4cda84f08294145e845394988e`  
-		Last Modified: Fri, 15 Dec 2023 22:04:48 GMT  
+		Last Modified: Tue, 07 Jan 2025 23:53:59 GMT  
 		Size: 2.5 KB (2459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -207,6 +207,7 @@ $ docker pull hello-world@sha256:70304c314d8a61ba1b36518624bb00bfff8d4b601615379
 
 -	Layers:
 	-	`sha256:9cec6b6d71d9885aff5e18ea66f5c98d2b4af09146a883c7de871a12076407c9`  
+		Last Modified: Fri, 15 Dec 2023 22:22:14 GMT  
 		Size: 1.4 KB (1437 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b382bcf7337b5acc658c4405b2d429d02f3dcaf87af69e9ce591a444b11ce23a`  
@@ -235,7 +236,7 @@ CMD ["/hello"]
 
 -	Layers:
 	-	`sha256:478afc9190022e867bb857b1a25cc5abc7678287af6cb930562ec25be709f1b7`  
-		Last Modified: Fri, 15 Dec 2023 23:12:04 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:07:52 GMT  
 		Size: 3.2 KB (3195 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -284,7 +285,6 @@ CMD ["/hello"]
 
 -	Layers:
 	-	`sha256:2c01f93040aa75d3ea306a02d7ba2b73aec9901fdec0df7b02174a76f710b0d7`  
-		Last Modified: Fri, 15 Dec 2023 22:04:49 GMT  
 		Size: 2.7 KB (2720 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -374,7 +374,7 @@ CMD ["/hello"]
 
 -	Layers:
 	-	`sha256:a78434e319074562cf136bd314faceedf90ac6626b371049cba4bcef51216454`  
-		Last Modified: Fri, 15 Dec 2023 22:12:01 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:35:25 GMT  
 		Size: 3.9 KB (3926 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
