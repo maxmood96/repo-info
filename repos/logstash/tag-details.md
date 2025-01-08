@@ -114,7 +114,6 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 278.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7a465e4eb4962dfb93a40fab2da0b2449f27877a4918a2bf84501672e80c4a0b`  
-		Last Modified: Tue, 03 Dec 2024 19:30:30 GMT  
 		Size: 474.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:98e78fd8fe26c9d1736d1e19c3e3f6e6876a5457dbdb49b6563af726e9ed4537`  
@@ -130,6 +129,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 2.1 MB (2061813 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bdf5881c9caee2982a1f6e4fd384c3d9a9758d471315989bdc2c7e9d6fe82262`  
+		Last Modified: Tue, 03 Dec 2024 19:30:32 GMT  
 		Size: 492.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -300,6 +300,7 @@ $ docker pull logstash@sha256:905ede1fe4fc3405c018695ec51200f67966ffa41cad0f0d24
 		Size: 3.3 MB (3310710 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9b583fe96f3f853b8bdf1cfbbf2dafc67d2ca23ee74784aabf8f0c398d0c884d`  
+		Last Modified: Wed, 04 Dec 2024 01:50:16 GMT  
 		Size: 32.3 KB (32314 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -395,6 +396,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 1.8 KB (1805 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4882e5d56e5a0ef233663cc42d2d8320a7954e77b7c440da96d427b7e1949e7b`  
+		Last Modified: Tue, 17 Dec 2024 19:30:12 GMT  
 		Size: 436.3 MB (436301698 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -533,6 +535,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 38.6 MB (38580216 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5dfe66d81f9cc1524352bdab74f4ad34bbcc7751bc9b4596d331b2925b46ca4b`  
+		Last Modified: Tue, 17 Dec 2024 19:49:00 GMT  
 		Size: 1.8 KB (1806 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b30503e174ba5af59259f81da68b531cc4a4486a22be7ff1e881664bc56907e`  
@@ -556,10 +559,10 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8cac03859b47c17312342d0575807f2a0356d6be3ca76d536b46d5f60d049043`  
-		Last Modified: Tue, 17 Dec 2024 19:49:02 GMT  
 		Size: 1.8 KB (1761 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37b6c386c58272d6d005013bfffbf718dc34696eca5cf55e01b4541934a6924a`  
+		Last Modified: Tue, 17 Dec 2024 19:49:03 GMT  
 		Size: 4.0 MB (4004303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c667b273290f083dcc2914ae32f1057c40d1cc55dc25b0f3efde52e2c80ed050`  
@@ -567,6 +570,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 1.9 MB (1937677 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:75dce67f936e244437a7be5c8d817507e9fbc2c0087866acba7883e8ec3cd122`  
+		Last Modified: Tue, 17 Dec 2024 19:49:03 GMT  
 		Size: 708.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -690,7 +694,6 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 1.8 KB (1806 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f5bae56b53db347df28b8b28b69fc783a569c5bd4eb221f8fb7f7f971d1b7a0`  
-		Last Modified: Tue, 17 Dec 2024 19:30:21 GMT  
 		Size: 431.6 MB (431564973 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -706,7 +709,6 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 1.6 KB (1577 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8677af43e2eab39e072c65133e43af79b51271d869f448924b244a4f14d055eb`  
-		Last Modified: Tue, 17 Dec 2024 19:30:15 GMT  
 		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5dfb3faf58e05e640842b17adcd769f1eb96619ac34d8dd0548cbbe9db64d4bf`  
@@ -722,6 +724,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 2.1 MB (2065126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd863fd6f1555ca10d2d1fdd20dbb8af8456ef7c3a56c98d8afad246de879673`  
+		Last Modified: Tue, 17 Dec 2024 19:30:17 GMT  
 		Size: 712.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -828,6 +831,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 38.6 MB (38580216 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5dfe66d81f9cc1524352bdab74f4ad34bbcc7751bc9b4596d331b2925b46ca4b`  
+		Last Modified: Tue, 17 Dec 2024 19:49:00 GMT  
 		Size: 1.8 KB (1806 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b60b5dcf2d91b3b266659d90fa8b487259bdb6a3e646aa1e4102063288dcbc1`  
@@ -839,6 +843,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:691b00add91e3ca96ef1ec8c49634f5e40d70304e08a1088fafc15972d5d95a3`  
+		Last Modified: Tue, 17 Dec 2024 19:50:32 GMT  
 		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:07e0ca7c06007a84570ec06b98a41ba0d081b99e2e44f2abef64131f31c4f829`  
@@ -861,6 +866,7 @@ ENTRYPOINT ["/usr/local/bin/docker-entrypoint"]
 		Size: 1.9 MB (1936983 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:01ea7020abbae0d771e26a86dbea74e20c5dd9856d4544e05bfe4ce1f627ff97`  
+		Last Modified: Tue, 17 Dec 2024 19:50:34 GMT  
 		Size: 709.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -884,7 +890,6 @@ $ docker pull logstash@sha256:f91d60df43eaba7594648e82c11e8ffd64b32b7101bc2782b3
 
 -	Layers:
 	-	`sha256:7baa7cc11a555caed4d9f854472818000b6ce12c0b3ca64daf26a0074ed7de5d`  
-		Last Modified: Tue, 17 Dec 2024 19:50:32 GMT  
 		Size: 3.5 MB (3518500 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:24c3f926e116d09208269d6b708c19a143192e1fb480161b5e501edcf70c1b2f`  
