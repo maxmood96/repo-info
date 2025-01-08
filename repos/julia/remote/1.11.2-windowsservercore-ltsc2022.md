@@ -43,6 +43,7 @@ CMD ["julia"]
 
 -	Layers:
 	-	`sha256:2534953f34d35976fc44cd67bfdd39fdcd9e2eaae57ada0be53d5fb936cd3a0b`  
+		Last Modified: Tue, 10 Sep 2024 17:49:01 GMT  
 		Size: 1.5 GB (1462192413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:90641eccc9d7a78ab99d123ca3884acb8ffc002eb44bc5e68f261f0810d5202b`  
@@ -50,11 +51,11 @@ CMD ["julia"]
 		Size: 791.7 MB (791681213 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cda9c04397413f58315de3553f61712659cf2f1ed06145c66e1231ed413a9f00`  
-		Last Modified: Wed, 11 Dec 2024 20:34:15 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:39:22 GMT  
 		Size: 1.3 KB (1287 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:597ca1d00160a4eb64ea9e2f32cc0c8bb26b789809229f03b76a3f85fec4fb0f`  
-		Last Modified: Wed, 11 Dec 2024 20:34:13 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:39:24 GMT  
 		Size: 1.3 KB (1320 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:35879923f8ac58a45b212252065761bb73266a76b06f3185e4caf47a4e84aea2`  

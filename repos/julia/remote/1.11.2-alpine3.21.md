@@ -47,7 +47,7 @@ CMD ["julia"]
 
 -	Layers:
 	-	`sha256:245043d9199c263f869fc0558f43f7cb98bbc92acdd5def1b4f690adc0ac7807`  
-		Last Modified: Wed, 08 Jan 2025 09:44:34 GMT  
+		Last Modified: Mon, 06 Jan 2025 21:44:42 GMT  
 		Size: 3.6 MB (3636222 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dfea49443540670719feb5b3d7c84731772edf05c3e93d4964afc7998620b59e`  
@@ -77,5 +77,6 @@ $ docker pull julia@sha256:883b67a9da670bb9e091d5ebe606731e2b44b586460fcfc8ada51
 		Size: 79.9 KB (79858 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:abdfce3f0aef8729b76cd6a85cd2a2395ea0bc8a28ba7a8c2a4c063a5fc87f20`  
+		Last Modified: Tue, 07 Jan 2025 03:20:09 GMT  
 		Size: 13.8 KB (13788 bytes)  
 		MIME: application/vnd.in-toto+json
