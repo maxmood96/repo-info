@@ -107,18 +107,17 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Size: 24.3 MB (24307567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ede450bd572d0d7daab26a9d54e1320fc00a26d678873640485366f9b3ab1fee`  
-		Last Modified: Wed, 25 Dec 2024 01:35:37 GMT  
+		Last Modified: Wed, 08 Jan 2025 02:32:20 GMT  
 		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cdf26f580513560a10ca19274f6b82d81d480216393addcdf35ae4a5bfc6b972`  
-		Last Modified: Wed, 25 Dec 2024 02:12:59 GMT  
 		Size: 7.2 MB (7246526 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:00738696827dc7d2d4321a58addcac91405f2a4027b7f63c00687bfa6bc345c8`  
-		Last Modified: Wed, 25 Dec 2024 02:12:59 GMT  
 		Size: 1.3 KB (1262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:12f9d9a512a5e7c5a254fe5ce618d534b1696111439cc70d1343afeba99ef16c`  
+		Last Modified: Wed, 25 Dec 2024 02:12:59 GMT  
 		Size: 1.5 KB (1451 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -270,5 +269,6 @@ $ docker pull unit@sha256:1689e324fe9fa7758ae3ec4975be2fe84c79e662d3fef221aecc87
 
 -	Layers:
 	-	`sha256:e46c909b6ce2262dd94de9e4da51c6ad43066a26fa70f619380a1fb8b43c6e40`  
+		Last Modified: Wed, 25 Dec 2024 19:24:23 GMT  
 		Size: 24.5 KB (24471 bytes)  
 		MIME: application/vnd.in-toto+json
