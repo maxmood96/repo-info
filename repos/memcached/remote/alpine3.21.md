@@ -75,13 +75,15 @@ CMD ["memcached"]
 		Size: 104.7 KB (104691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:756f41fb8df1484ea088ad65adbf3fec5ef75c59a3c1283ecffd6dee9b11ce95`  
+		Last Modified: Tue, 07 Jan 2025 03:23:24 GMT  
 		Size: 962.7 KB (962657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eb1722c4a9308df004c64b70eb4871e28630450099b9df570c07d52ea708cea3`  
+		Last Modified: Tue, 07 Jan 2025 03:23:24 GMT  
 		Size: 277.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5b0bd76340694d780f274545ae3e86a5730654918c6a9ab9a41caefb0eb779ea`  
-		Last Modified: Wed, 08 Jan 2025 14:45:32 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:23:25 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -105,6 +107,7 @@ $ docker pull memcached@sha256:7f96ec55167fcb777527cd409dc8ef6d9aa6d21dbcd863b4e
 		Size: 93.6 KB (93627 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:16ed6548056966367c0ff547f0353dd9f8f825f0a23e7bc9380d60bb9b6cc31b`  
+		Last Modified: Tue, 07 Jan 2025 03:23:24 GMT  
 		Size: 19.6 KB (19570 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -158,18 +161,23 @@ CMD ["memcached"]
 		Size: 4.0 MB (3983007 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:754dc9937c8a1b6d9c8ceb98f89650cf15eedc5166771088d7ced55a6c922473`  
+		Last Modified: Tue, 07 Jan 2025 04:20:02 GMT  
 		Size: 961.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bdda0e670d0bb60513dcc44b5011ae0fd97f2534d44ab71d774013e4dd17ceaa`  
+		Last Modified: Tue, 07 Jan 2025 04:20:02 GMT  
 		Size: 120.8 KB (120776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a01a27373c912c1e33268baa8727eeb07f0dc36bb279e793e7de2909aa4928ff`  
+		Last Modified: Tue, 07 Jan 2025 04:20:02 GMT  
 		Size: 961.2 KB (961250 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8fd3bf8e4bf24607b0e8f2c2d9d3bfe17f4171e3b73d39f59135eb971d0e9903`  
+		Last Modified: Tue, 07 Jan 2025 04:20:02 GMT  
 		Size: 275.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7bddb8bb13a1313700cfb399b6a9d14778290b7da0bac513ea07d6293c428cdb`  
+		Last Modified: Tue, 07 Jan 2025 04:20:03 GMT  
 		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -189,9 +197,11 @@ $ docker pull memcached@sha256:a10eb73fdf98a5556238c57963229be67ccaa3780702e2062
 
 -	Layers:
 	-	`sha256:a983a114b2609c5d8a45cf94d45671051f9e6c4feefce5006e96aba713d8a094`  
+		Last Modified: Tue, 07 Jan 2025 04:20:02 GMT  
 		Size: 93.7 KB (93731 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:149ad9f7c01212b10522e1368bb782a41dc7358e4b842e0d232726b562392777`  
+		Last Modified: Tue, 07 Jan 2025 04:20:02 GMT  
 		Size: 19.8 KB (19768 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -245,6 +255,7 @@ CMD ["memcached"]
 		Size: 3.5 MB (3458271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8b0ab30f00baf35721af5a6fc84c928b4158d4a2ef78e03707b73707bdb1bf0`  
+		Last Modified: Tue, 07 Jan 2025 04:22:50 GMT  
 		Size: 960.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:28f12b45cae08815a91d6c4d2c2c88aa173fe0d61e73a20562ee5b7119a494d8`  
@@ -252,6 +263,7 @@ CMD ["memcached"]
 		Size: 109.5 KB (109467 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:72214b75a3a99a80a10a99afa4cc5decf4655f35abe327404ce99ac9b4d509d2`  
+		Last Modified: Tue, 07 Jan 2025 04:22:50 GMT  
 		Size: 954.9 KB (954934 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4421282ac2c2a18a5a0802bc3527e10b8d304ec866c9b138a162710618316851`  
@@ -283,6 +295,7 @@ $ docker pull memcached@sha256:8fda8faeba8df9403954a246f0fe1a544f31228644273b579
 		Size: 93.6 KB (93582 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e90961faab23d6247fe2469d4e8fac71da2fb397fbabe6722dad721cf0ed2fa2`  
+		Last Modified: Tue, 07 Jan 2025 04:22:50 GMT  
 		Size: 19.5 KB (19513 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -332,13 +345,15 @@ CMD ["memcached"]
 
 -	Layers:
 	-	`sha256:9207393f0daad55cddbc775f55edde5baecdca9e0441c9c1f627f2394d28b7c3`  
-		Last Modified: Wed, 08 Jan 2025 14:25:41 GMT  
+		Last Modified: Tue, 07 Jan 2025 02:32:05 GMT  
 		Size: 3.6 MB (3567745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:290886131baa908c93701fedb00593a3479cfcbeeccc86f0e0c874247822b91f`  
+		Last Modified: Tue, 07 Jan 2025 03:50:13 GMT  
 		Size: 959.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b1cf0939cd518c7bf0f259452ecc1e1e78500e007525a133c1f53d58f1cd331e`  
+		Last Modified: Tue, 07 Jan 2025 03:50:13 GMT  
 		Size: 124.3 KB (124274 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5d0aa50af8dbd0f30a1199a5350608d6814ca1d7dff1c0992d68b298529d9bc9`  
@@ -350,6 +365,7 @@ CMD ["memcached"]
 		Size: 279.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c0400cd49b1cf1452efcf83a0ab27f1302f2b88dd0648867a74131cadd045d3f`  
+		Last Modified: Tue, 07 Jan 2025 03:50:14 GMT  
 		Size: 121.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -373,6 +389,7 @@ $ docker pull memcached@sha256:ce62b9a413aa6bd377420c8dc9c4f9a9cb494c341eda0b997
 		Size: 91.7 KB (91734 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0061e2ab574d9bc797f5f58ae906d5d2b3863d2cab983647bf4c60f14a978f65`  
+		Last Modified: Tue, 07 Jan 2025 03:50:13 GMT  
 		Size: 19.6 KB (19646 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -422,7 +439,7 @@ CMD ["memcached"]
 
 -	Layers:
 	-	`sha256:93a724ed1843277c272a09a7779ca31a802938fe3a88142df42e291e0dc759c3`  
-		Last Modified: Wed, 08 Jan 2025 12:55:42 GMT  
+		Last Modified: Tue, 07 Jan 2025 02:32:17 GMT  
 		Size: 3.5 MB (3459449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:113f2215779e43664b85ce27026aaedde13356649afeaa43e6de581f176cca8e`  
@@ -430,12 +447,15 @@ CMD ["memcached"]
 		Size: 961.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1bedf907f7d4d338a818bdff540814f4223df95b6e8c894db38013d84bd06825`  
+		Last Modified: Tue, 07 Jan 2025 03:45:22 GMT  
 		Size: 113.4 KB (113447 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e187bdc90e65d14ce49260a440eabe253202e8009c82822d2a2ae87435661984`  
+		Last Modified: Tue, 07 Jan 2025 03:45:22 GMT  
 		Size: 983.8 KB (983820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:05e61020e84997e1c9f362fb276118354556bbac4992e21dc07e677ce8a2008f`  
+		Last Modified: Tue, 07 Jan 2025 03:45:22 GMT  
 		Size: 279.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ccbab7a81d32530b6a5b22e33596ca2f37a778aeb7b931fc6786dfb6c8e77cee`  
@@ -459,8 +479,10 @@ $ docker pull memcached@sha256:b663774aabd2e319d65c058727ffa7df05477e1639132fb27
 
 -	Layers:
 	-	`sha256:b3261506c2a4652d70dd2350cde0b5eb34d5c5630540ae9aa9f64712854829cf`  
+		Last Modified: Tue, 07 Jan 2025 03:45:22 GMT  
 		Size: 91.7 KB (91676 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:91089a30c3ef17d24955d64bad919e17251e313870e4c73e2dba517025a86927`  
+		Last Modified: Tue, 07 Jan 2025 03:45:22 GMT  
 		Size: 19.6 KB (19571 bytes)  
 		MIME: application/vnd.in-toto+json
