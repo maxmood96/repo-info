@@ -40,6 +40,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 
 -	Layers:
 	-	`sha256:2534953f34d35976fc44cd67bfdd39fdcd9e2eaae57ada0be53d5fb936cd3a0b`  
+		Last Modified: Tue, 10 Sep 2024 17:49:01 GMT  
 		Size: 1.5 GB (1462192413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:90641eccc9d7a78ab99d123ca3884acb8ffc002eb44bc5e68f261f0810d5202b`  
@@ -54,11 +55,10 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 		Size: 1.3 KB (1281 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:37bc8679f4684c92dc3dca2e2adbc432f0a1ec39a8665139c0d6e49fd1474b02`  
-		Last Modified: Wed, 08 Jan 2025 10:30:35 GMT  
 		Size: 75.8 MB (75769153 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:60c7e2d216e34d0b3d012f2a87f778d23a7ef20a9efc1f3ec3c63653e532406b`  
-		Last Modified: Wed, 11 Dec 2024 20:36:47 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:30:44 GMT  
 		Size: 348.3 KB (348277 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
@@ -101,7 +101,6 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 		Size: 293.9 MB (293901821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:dafc65fd2306e5ae2e617da25c28ef3b1743778faba2b9e13dd4d76ce51344ae`  
-		Last Modified: Wed, 11 Dec 2024 20:38:15 GMT  
 		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:44ba13610bcf3369d1d9847d98122d794940826a1d428c24535e7d1f201926e6`  
@@ -109,7 +108,7 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 		Size: 1.3 KB (1301 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f072b7a37b41967221be7138a77e607842a2978e49f5988ff8679a5dbc67d016`  
-		Last Modified: Wed, 11 Dec 2024 20:38:21 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:30:47 GMT  
 		Size: 75.9 MB (75918820 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:dda77eac968d553ce11c1fe84df044a2ea1df9b8a2fe815e97d23f6507496096`  
