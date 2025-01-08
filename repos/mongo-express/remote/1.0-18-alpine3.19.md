@@ -68,10 +68,11 @@ CMD ["mongo-express"]
 
 -	Layers:
 	-	`sha256:a7cd7d9a21440da0d765f2989d75f069adf9b3463a765421a0590bca720920d4`  
-		Last Modified: Mon, 09 Sep 2024 07:03:22 GMT  
+		Last Modified: Wed, 08 Jan 2025 07:01:52 GMT  
 		Size: 3.4 MB (3419728 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6a5ba5322b4a5416240b08583db88aae9b9138dd36fd54aa9d20173c3db57851`  
+		Last Modified: Mon, 18 Nov 2024 15:04:48 GMT  
 		Size: 40.1 MB (40091144 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9c2c4a69072cc1e5ba000ae076927371dc1d755805dfc729ae27814d9b8ada2f`  
@@ -115,6 +116,7 @@ $ docker pull mongo-express@sha256:f344c8c7d4491248908e8ab6bc49b23501169aa90c260
 
 -	Layers:
 	-	`sha256:5c68ff27ea04646ca72d4380c7b2b6cc5dcda1b0cd66ded85d6f17056e850b7e`  
+		Last Modified: Mon, 18 Nov 2024 15:48:26 GMT  
 		Size: 997.0 KB (996978 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f0637371154a2e15aa86e382289653d361827fb1eccec4ceec2b20a8be186903`  
@@ -191,6 +193,7 @@ CMD ["mongo-express"]
 		Size: 1.4 MB (1387220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:628a8cd3385e1d2063448f845b9b3f70a2834e0ceb45f5e0a035e2a39d5e51bc`  
+		Last Modified: Mon, 18 Nov 2024 17:21:18 GMT  
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e45238959f1ddf4f8497f26c496c6ba336b080e2a6f03844c19e91abf1ded8da`  
@@ -206,7 +209,6 @@ CMD ["mongo-express"]
 		Size: 13.6 MB (13642367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d751af38797f0880970be4ba5a4924a6811d8df49c50fbe7ca5b8c97834c5240`  
-		Last Modified: Mon, 18 Nov 2024 17:54:43 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -226,6 +228,7 @@ $ docker pull mongo-express@sha256:f9070ffc8df8e257a9cd62c4a485ce66ca8d45577706a
 
 -	Layers:
 	-	`sha256:f21965d123e5277b344e97d00c458f44c0d749408d8e156096ce5ba7c8bcb229`  
+		Last Modified: Mon, 18 Nov 2024 17:54:44 GMT  
 		Size: 997.0 KB (997022 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:98b791c6fe3a2684f0753e7811a851a1fc18eaa6b3a81580f1b165b64af68ae0`  
