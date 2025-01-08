@@ -91,7 +91,6 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8f02bbbdc051a3943313619c0eb4dbc5420e3e4c151705bfff6349b1907deabc`  
-		Last Modified: Tue, 03 Dec 2024 02:30:12 GMT  
 		Size: 17.0 MB (16966381 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:77f9d1213f794ba88979837ce029ec1cbc6ba3dd989a10cab38706290143a57a`  
@@ -227,16 +226,18 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 17.0 MB (16981577 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1e1cc59c9018ea598169f40a94e20b78c3535114c4791de954f2285e28a26f79`  
+		Last Modified: Tue, 03 Dec 2024 05:50:11 GMT  
 		Size: 45.6 MB (45576653 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8156c0c55638ca4eac05f24f4e8e984bceaa7c250168e20702734e5164abebd1`  
-		Last Modified: Tue, 03 Dec 2024 05:50:09 GMT  
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:391177c82069403a977e7337ac47d76e4648d4cdba23f715e212a734faf7f807`  
+		Last Modified: Tue, 03 Dec 2024 05:50:10 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8292897833178641145b4d255aaa08825a604be76ed88e7f3ae7358e556ebbce`  
+		Last Modified: Tue, 03 Dec 2024 12:52:33 GMT  
 		Size: 14.6 MB (14570199 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -264,9 +265,9 @@ $ docker pull jetty@sha256:738bdd61ac10dfa523fd673cbc7d0f86dc350db2b37cbaf788492
 
 -	Layers:
 	-	`sha256:afbbfcea12caa43c528fa2f38a1952f166de48d1201a276432b16f33d5293d05`  
+		Last Modified: Tue, 03 Dec 2024 12:52:32 GMT  
 		Size: 3.2 MB (3247134 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a7bb01c38595cf08177fb2374cd9d84dd2513143be7602ab5e027b1a54293627`  
-		Last Modified: Tue, 03 Dec 2024 12:52:31 GMT  
 		Size: 21.7 KB (21651 bytes)  
 		MIME: application/vnd.in-toto+json
