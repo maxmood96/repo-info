@@ -86,6 +86,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd5b963ab6e2b8f84820c6e2725f5eeb288476faca2da8662bbf5cb7de087c82`  
+		Last Modified: Fri, 20 Dec 2024 23:15:50 GMT  
 		Size: 1.6 KB (1634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -180,6 +181,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 162.8 MB (162839630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:db4e7fd91d9fa9ef1f719e88166741086ff0ea29d96f1697f7d174ce25d958dc`  
+		Last Modified: Sat, 21 Dec 2024 04:48:16 GMT  
 		Size: 17.0 MB (17045894 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -207,7 +209,6 @@ $ docker pull jetty@sha256:6ae011c9720b45d5bdc3f2adb2b06fcd0b55bb8b37d4a1ae7b4dd
 
 -	Layers:
 	-	`sha256:5ef85b821bd5ce57d2a640b18e95ba335e9b99a4d1a941be3b855a01858e86ac`  
-		Last Modified: Sat, 21 Dec 2024 04:48:15 GMT  
 		Size: 5.9 MB (5908033 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4531a9caadcb0df0a59385915014b43f27c094bde9da264b72de170c19e8e026`  

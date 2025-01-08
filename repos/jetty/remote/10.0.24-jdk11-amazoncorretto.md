@@ -106,7 +106,6 @@ $ docker pull jetty@sha256:daf79cac1dfd71d558bf83e349cf5eedbb55ed532cf9489b5973f
 
 -	Layers:
 	-	`sha256:50d7adedfc49cd9726edf60263fe7a5244ee49a1dc837fc7b2b7703b0b216542`  
-		Last Modified: Fri, 20 Dec 2024 23:16:07 GMT  
 		Size: 5.9 MB (5915804 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:00c0d5bbd601c6d63f647f5ce83d190ae51e48bbf69d6672f5e29294e29a135c`  
