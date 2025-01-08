@@ -81,6 +81,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 3.6 MB (3613999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6cc442151d2c70db4810e987819a87bcc66ea2b637ca5678e865d5b76b8e5312`  
+		Last Modified: Tue, 07 Jan 2025 03:31:18 GMT  
 		Size: 16.0 MB (16005491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:561de8b096d4deabdaa687f9cc13e926407ae5b7c47ba9fb818606f9f3629344`  
@@ -88,11 +89,10 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 53.0 MB (53039424 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b1fdc4c445f81fc2c82c81d2f687928774de7a42244b72327631f45301ab66de`  
-		Last Modified: Tue, 07 Jan 2025 03:31:18 GMT  
+		Last Modified: Wed, 08 Jan 2025 04:34:34 GMT  
 		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:32599ff3ca8cf029c2dccbdda0ac4f8fb115d5ec94b4f4abe92b852da1f19982`  
-		Last Modified: Tue, 07 Jan 2025 03:31:18 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:134c2b76cd410c2f08e5d1f82891404b28e96dec2049b8e4cbcf81251ffb5bc8`  
@@ -104,7 +104,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9ea770fb37c347808a4892618f954b3dab803cd7adc9980f1be597e6b75554d`  
-		Last Modified: Wed, 08 Jan 2025 02:47:13 GMT  
+		Last Modified: Tue, 07 Jan 2025 04:20:34 GMT  
 		Size: 1.6 KB (1634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -124,9 +124,9 @@ $ docker pull jetty@sha256:bba18c3baff8eb67511335edd48d1ff98528f991996ea704b60b8
 
 -	Layers:
 	-	`sha256:e2bb3585774b2c09e26d019d2961f7ac1da817f86576c8810f7c60f8b309c035`  
-		Last Modified: Tue, 07 Jan 2025 04:20:34 GMT  
 		Size: 985.0 KB (984986 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0a7b14630d12cfa777cede94d3340403ac1622de0453df4feb9d05a91f13036c`  
+		Last Modified: Tue, 07 Jan 2025 04:20:34 GMT  
 		Size: 20.0 KB (20049 bytes)  
 		MIME: application/vnd.in-toto+json
