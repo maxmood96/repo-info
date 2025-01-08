@@ -43,11 +43,10 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 
 -	Layers:
 	-	`sha256:eb002c13a70b63d5677b5a03f11b7b8b60f7d62f296fbb7475169a617500d3cb`  
-		Last Modified: Tue, 07 Jan 2025 02:28:43 GMT  
+		Last Modified: Wed, 08 Jan 2025 07:51:28 GMT  
 		Size: 3.4 MB (3413271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:071f74a8a79e848ab70968d35ea6a1430e950e0d91fe31561af9f1715b421f16`  
-		Last Modified: Tue, 07 Jan 2025 03:30:29 GMT  
 		Size: 158.9 MB (158929633 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -71,7 +70,7 @@ $ docker pull amazoncorretto@sha256:c6ba2850671450931e44433be2e787e5acefbf8fefd3
 		Size: 380.8 KB (380792 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:89eb4567960f192552761f7274268a2eed65b5e360d6aeb115ffea6f3ca657f7`  
-		Last Modified: Wed, 08 Jan 2025 04:29:14 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:30:27 GMT  
 		Size: 9.4 KB (9415 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -107,6 +106,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 
 -	Layers:
 	-	`sha256:f2178dde0fb65be0d15359886bb642d5d8dac86ca2d709ab90f8f0ee62211ca2`  
+		Last Modified: Tue, 07 Jan 2025 03:03:15 GMT  
 		Size: 3.4 MB (3351948 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:97daba5a9b8a7f42a3fbd1580bd00dac20183704cc8aa4747fe56af7f9d6bdbd`  

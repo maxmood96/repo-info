@@ -47,7 +47,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 		Size: 3.4 MB (3407632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6f2f944e2e943788e6091c4ef9b268b253c6e9cc9444d9387b402ee0574f0471`  
-		Last Modified: Tue, 07 Jan 2025 03:29:13 GMT  
 		Size: 141.9 MB (141910303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
