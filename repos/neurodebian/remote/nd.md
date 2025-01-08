@@ -40,7 +40,6 @@ RUN set -x 	&& apt-get update 	&& apt-get install -y --no-install-recommends neu
 
 -	Layers:
 	-	`sha256:9d0fec2ddc88227c9ea9ee67204e0e6a57a98553e405c78f6403be7627bc3834`  
-		Last Modified: Tue, 03 Dec 2024 01:27:34 GMT  
 		Size: 52.1 MB (52141610 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0e623044ed6d226bb08223597c0f380daf46067df42de48e52515dd8b6015bd9`  
@@ -218,6 +217,7 @@ $ docker pull neurodebian@sha256:7a39472daab1f7ad10eddf0cd67f8453f4675bbd31ed229
 
 -	Layers:
 	-	`sha256:b9520b672b857555a8f6a7d165f2b5323247148278f458a7278373f979f2088f`  
+		Last Modified: Tue, 03 Dec 2024 02:15:30 GMT  
 		Size: 3.6 MB (3556335 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2a715947ef1aeb942d19d5f3d425c0a032538f9e6b2ee6340f7ab1c249910cdb`  
