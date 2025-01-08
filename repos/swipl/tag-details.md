@@ -144,7 +144,6 @@ $ docker pull swipl@sha256:c58983b1d641b0770ba657124657212448a29b567a4ffb46e6fdd
 
 -	Layers:
 	-	`sha256:7660a367b325228af9d09f35d846656fef0143abc84b6c15bb301ba635d62e8c`  
-		Last Modified: Wed, 25 Dec 2024 03:35:00 GMT  
 		Size: 3.2 MB (3160884 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:de48b7e25fc1545c70bdf57718404a2a56a95ac33c439a8443f414e76e7130a5`  
@@ -189,7 +188,6 @@ CMD ["swipl"]
 		Size: 47.7 MB (47706255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d5050431f3da6ea07bfff3a803e4f45f038c95d44aefeb091adf4c61019883a8`  
-		Last Modified: Wed, 25 Dec 2024 01:41:18 GMT  
 		Size: 17.9 MB (17939724 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -399,7 +397,6 @@ CMD ["swipl"]
 		Size: 47.7 MB (47706255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:96fbee26634be3255a53cb9f07386eb178ddf2d241fc7a9971c76c300c54e57f`  
-		Last Modified: Tue, 07 Jan 2025 18:45:52 GMT  
 		Size: 18.1 MB (18131767 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -609,7 +606,6 @@ CMD ["swipl"]
 		Size: 47.7 MB (47706255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:96fbee26634be3255a53cb9f07386eb178ddf2d241fc7a9971c76c300c54e57f`  
-		Last Modified: Tue, 07 Jan 2025 18:45:52 GMT  
 		Size: 18.1 MB (18131767 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -774,7 +770,6 @@ $ docker pull swipl@sha256:c58983b1d641b0770ba657124657212448a29b567a4ffb46e6fdd
 
 -	Layers:
 	-	`sha256:7660a367b325228af9d09f35d846656fef0143abc84b6c15bb301ba635d62e8c`  
-		Last Modified: Wed, 25 Dec 2024 03:35:00 GMT  
 		Size: 3.2 MB (3160884 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:de48b7e25fc1545c70bdf57718404a2a56a95ac33c439a8443f414e76e7130a5`  
@@ -819,7 +814,6 @@ CMD ["swipl"]
 		Size: 47.7 MB (47706255 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d5050431f3da6ea07bfff3a803e4f45f038c95d44aefeb091adf4c61019883a8`  
-		Last Modified: Wed, 25 Dec 2024 01:41:18 GMT  
 		Size: 17.9 MB (17939724 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
