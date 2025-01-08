@@ -64,6 +64,7 @@ CMD ["ts3server"]
 		Size: 1.3 MB (1312438 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:daa1cb886aa4c29542231932f6a9c6e170b00fd0d30ff741e6231114914e15dd`  
+		Last Modified: Tue, 07 Jan 2025 03:15:24 GMT  
 		Size: 1.3 KB (1283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc208237990d2630bb38691c1b4df1c5810c723a737f702f9a1e48bd4854176e`  
