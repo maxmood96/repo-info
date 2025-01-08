@@ -99,7 +99,6 @@ CMD ["mongod"]
 		Size: 153.7 MB (153686057 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0eec965d0f99268d7e736155ab9672ce990e5219557e516648d122490e36a086`  
-		Last Modified: Fri, 20 Dec 2024 21:29:50 GMT  
 		Size: 1.2 KB (1237 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a85ca6466fea7ec0ed541325589a9af37e82f4b05b3105f9dbc52cff7d036d55`  
