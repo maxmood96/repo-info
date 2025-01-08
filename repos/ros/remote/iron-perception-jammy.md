@@ -105,7 +105,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-iron-pe
 		Size: 85.0 MB (84961563 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:52a0547d9968b62e61f578a202d34e1d8fa2ab3d1ea00374118b5155eb554a46`  
-		Last Modified: Tue, 17 Sep 2024 01:58:31 GMT  
 		Size: 315.1 KB (315111 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a3d90fd3b189da91d9eb321cff21faafbad014dc98d94c03b50f6cf32d01bf4`  
@@ -113,7 +112,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-iron-pe
 		Size: 2.4 KB (2416 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56bf9f1e81fe596d17c20e89ff3648760dba253d4a63cf4a6da095a95f2e530d`  
-		Last Modified: Tue, 17 Sep 2024 01:58:32 GMT  
 		Size: 23.7 MB (23737116 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b516d5e0a7f715646eaf84f4372d78cbd699a5511c506141e9adbe309540977`  
@@ -141,7 +139,6 @@ $ docker pull ros@sha256:86a44a4ecde0aae3f295a0797bac0980b64f6878942e7689f1ed518
 		Size: 58.3 MB (58250482 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:020da288a7eb976b41ab3d4de13868dbe77dd6cd14cea558e0907367d3e26207`  
-		Last Modified: Tue, 17 Sep 2024 03:04:46 GMT  
 		Size: 9.6 KB (9640 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -235,7 +232,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-iron-pe
 		Size: 197.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fe7dd201263c103c809e1c44853e0636966888f2e37335ba2e026f35dafaafb2`  
-		Last Modified: Tue, 17 Sep 2024 06:13:47 GMT  
 		Size: 82.6 MB (82646665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c1f0f63fa981ec33dc63f4267e3f21c9f2816ea1bb26acc01a6ded62ef00af1`  
@@ -251,7 +247,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends     ros-iron-pe
 		Size: 23.1 MB (23128446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d806dae4ec45dfdd497ba2fcf284d15f981bee138fa71fd78bcb0235e96fc20f`  
-		Last Modified: Tue, 17 Sep 2024 08:00:22 GMT  
 		Size: 660.2 MB (660206262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -271,7 +266,6 @@ $ docker pull ros@sha256:a794980dc98b5c7b9fbf4043a6aa5c95f00f3ec596a162e7e245634
 
 -	Layers:
 	-	`sha256:de474500ff35deefa1abc0933752aa38cf597e1af65579be4580e9facb884dec`  
-		Last Modified: Tue, 17 Sep 2024 08:00:11 GMT  
 		Size: 58.2 MB (58246875 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:eee3e6d30d8cb2253f5eb15b99dc024f7005f8b62dd78ee6c2f11a8a00c995c0`  
