@@ -103,7 +103,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 
 -	Layers:
 	-	`sha256:245043d9199c263f869fc0558f43f7cb98bbc92acdd5def1b4f690adc0ac7807`  
-		Last Modified: Wed, 08 Jan 2025 09:44:34 GMT  
+		Last Modified: Mon, 06 Jan 2025 21:44:42 GMT  
 		Size: 3.6 MB (3636222 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9af95a73e68ff7768f6e915d93f497ff30d2304385bfbc45127635b8c6114a22`  
@@ -111,33 +111,32 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 3.3 MB (3319680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f2799f6a8e8ac70de966998118844e393ec11b5df494626ff35160bb0e5969e6`  
-		Last Modified: Tue, 07 Jan 2025 03:33:41 GMT  
 		Size: 941.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a9590f58dabbc32fc462d1292c7d4a09c535d6a7d5850f7d72bc15c108b35206`  
-		Last Modified: Wed, 08 Jan 2025 11:11:33 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:33:40 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cc882e91c7248b0ff0e68af3495b9127a73e83b81b10d2144bc873fc37a63fd7`  
-		Last Modified: Tue, 07 Jan 2025 03:33:41 GMT  
 		Size: 11.9 MB (11937928 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e826e275b7320de036fe05a2558f925970ed1a397a28d00dbd715ab2aabcf2dd`  
+		Last Modified: Wed, 08 Jan 2025 14:08:34 GMT  
 		Size: 487.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ef8f5a5b7f2f8986c981c73ee7f9fb9bd7c343ebbdc10988a35df1db2c687900`  
-		Last Modified: Tue, 07 Jan 2025 03:33:42 GMT  
 		Size: 12.7 MB (12699878 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cba32181e2bf0c363049cf31cd7fd14767cbd12b0a904d340523816ee834ebb3`  
+		Last Modified: Wed, 08 Jan 2025 13:42:51 GMT  
 		Size: 2.4 KB (2444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:13cbc2ea7dafecf4adab6aa1fab33f58d97758bc860d02cc510305fd3558173b`  
-		Last Modified: Tue, 07 Jan 2025 03:33:42 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:42:52 GMT  
 		Size: 19.8 KB (19753 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:42:46 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a7c56ceff4e77f193ff295197972cd84467d6bf8292c11493be0c859e00a61a4`  
@@ -145,7 +144,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 8.9 KB (8877 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b2ac8027470772bbaedb4c684d10f8b0e93755b6c3dbc66e76281304c5a9dd00`  
-		Last Modified: Tue, 07 Jan 2025 04:19:16 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:42:52 GMT  
 		Size: 1.9 MB (1912838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0cb1740dbefcd78377b42a714809682b1da189284055ec610e1c5ddce1a24b52`  
@@ -172,7 +171,6 @@ $ docker pull drupal@sha256:854f93f7f8c792f86cafc6a76cb370d4ac6cb6c5c11ba5868b6b
 
 -	Layers:
 	-	`sha256:5c0663b890c5f00b71ef1bc5258cba709e27f7c2c82af051a1f6379a9ec4e9bc`  
-		Last Modified: Tue, 07 Jan 2025 04:19:16 GMT  
 		Size: 279.7 KB (279749 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:525374cc784c93a6c1dcacc1c6d4976085d37d6357d589f37cbeca6acf9667de`  
@@ -260,11 +258,10 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 
 -	Layers:
 	-	`sha256:31d4a7f5d4e2c1fd6b13116c69b324d9255a249ba92b63cd7d98924ec5438675`  
-		Last Modified: Wed, 08 Jan 2025 10:45:39 GMT  
+		Last Modified: Wed, 08 Jan 2025 12:50:39 GMT  
 		Size: 3.4 MB (3361034 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e1bef010c611114840926e80cb28932ac752a42db1830688c08b53e3b0479b57`  
-		Last Modified: Tue, 07 Jan 2025 04:04:46 GMT  
 		Size: 3.3 MB (3288904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e6270f8fc8d436fea30c28e682f01c03d0fc9e3ad4d478dd522e49204e509af1`  
@@ -272,30 +269,25 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 942.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:100d76c367f31c843767d908ec20d1f4689fd733c923fd9605738b522084ac5a`  
-		Last Modified: Tue, 07 Jan 2025 04:04:45 GMT  
 		Size: 217.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:136e1913c1a3367199609013fc68d88296462607203a84bb86d7eba7ceea5995`  
-		Last Modified: Tue, 07 Jan 2025 06:04:16 GMT  
 		Size: 11.9 MB (11937927 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5636cedbb7e2965fd15eb9343b1ae3bb07fa68fee5ac45f64fb9f6975d506b2d`  
-		Last Modified: Tue, 07 Jan 2025 06:04:16 GMT  
 		Size: 492.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f9502a1240c8acdcf452b7893141032b5a3f3bb3855860d2959ffce2fe42138f`  
-		Last Modified: Tue, 07 Jan 2025 06:07:57 GMT  
 		Size: 11.4 MB (11436427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a5de3975e1f7746c1a65a6e867c5534a5ff50cf40e983a806bdc254718f6b82f`  
-		Last Modified: Tue, 07 Jan 2025 06:07:57 GMT  
 		Size: 2.4 KB (2445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:372efbf4cd25ba85b2af3d60087056f5e167e0a3e7c1b4b4a99ef4cd279da6ce`  
 		Size: 19.5 KB (19548 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:42:46 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bd176418bbd83cddd3a39c8176244f2a255ff4658a90f594391658ab2a76eb1a`  
@@ -310,7 +302,6 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 310.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b73266206151e55fbeb370b14139a9834cb29f39c1627e6098742ef3cd7ed9a5`  
-		Last Modified: Tue, 07 Jan 2025 18:35:57 GMT  
 		Size: 3.4 MB (3429007 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -413,7 +404,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 
 -	Layers:
 	-	`sha256:fa398bd1707194d783a6221bb60ba630f074222cdc0f4b6a05d9167d6e9c4a9f`  
-		Last Modified: Wed, 08 Jan 2025 11:10:39 GMT  
+		Last Modified: Tue, 07 Jan 2025 02:55:27 GMT  
 		Size: 3.1 MB (3093241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:23a46a05ef2f8f5dc8f91bb48ccb26f8769e182e5d38d1a1d557e82d060b4ec5`  
@@ -425,11 +416,9 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 940.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:90539fb79bdae2b2ecda3212490766029854e00ebfa8dd5d8618634d5b8b789b`  
-		Last Modified: Tue, 07 Jan 2025 03:49:16 GMT  
 		Size: 217.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:af34d49e7ed227b175af99a5de5a8c0ce0a96c8b35707880f240a7b51eaff332`  
-		Last Modified: Tue, 07 Jan 2025 05:47:41 GMT  
 		Size: 11.9 MB (11937926 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3182e3fdffc86e300815065acbf92bca4912c239a141f6191b950f65afccaf0c`  
@@ -437,7 +426,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 490.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c360b46f297176891a0519b25a10d42d06a5ca548b2008ece6d6c431cb0bde1e`  
-		Last Modified: Tue, 07 Jan 2025 05:51:33 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:42:56 GMT  
 		Size: 10.8 MB (10774453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1f9443ecb3ab8aa3641e5d8db98101d24205e680a6f7ce3314ee032f72a45d5d`  
@@ -445,14 +434,15 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 2.4 KB (2444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:32aa1e476fa7b0c85051ccab7dc943825087bcd07e5d76310923021db6427ce8`  
+		Last Modified: Tue, 07 Jan 2025 05:51:33 GMT  
 		Size: 19.6 KB (19563 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:42:46 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:13614f6576ef14198754f091ca4b0fa8f348fcc26909abbc41998db29f7c535e`  
-		Last Modified: Tue, 07 Jan 2025 05:51:33 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:42:56 GMT  
 		Size: 8.9 KB (8876 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c3b677a813951c767209a605b3f8c2537733773ae6573a48134ad09c167c5935`  
@@ -460,6 +450,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 1.3 MB (1276894 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ebc205ad4bcae15382aa4698f385c75ddc7a75527b2fa301737374ba77dda30c`  
+		Last Modified: Tue, 07 Jan 2025 18:42:17 GMT  
 		Size: 310.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e85ae6f36e219926a59cf89ed41f8fcf5308a5cdcd60b6233366ea6688600759`  
@@ -486,6 +477,7 @@ $ docker pull drupal@sha256:de2a5215d7f2739afec246b904b1c0ccb16d6322524417023849
 		Size: 277.0 KB (277004 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:81feb137a169ce09a15d14fac37d09910c1ba67d6dd02c6e121a7c14b193c27c`  
+		Last Modified: Tue, 07 Jan 2025 18:42:16 GMT  
 		Size: 24.0 KB (23994 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -576,44 +568,44 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 3.3 MB (3315021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ee8949964140eb86d4055cf8d682a19190f4519a76a0135d9c0635b8e590a12`  
-		Last Modified: Tue, 07 Jan 2025 04:25:07 GMT  
 		Size: 943.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a5dc0ab84d61c5b652f4966a78d4064b20a3ee74b683b2fff8a31bfa6695fd46`  
-		Last Modified: Tue, 07 Jan 2025 04:25:07 GMT  
+		Last Modified: Wed, 08 Jan 2025 12:29:30 GMT  
 		Size: 220.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7f4177f3aa12ce8283ea80c3cf2179210acd3ec15247cc5cf485e1dad3eee88`  
-		Last Modified: Tue, 07 Jan 2025 06:35:33 GMT  
 		Size: 11.9 MB (11937931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9440a0c20152419dbb0384eab44fa748d04520f6bf1d464a3584c5dbb7be8d6b`  
-		Last Modified: Tue, 07 Jan 2025 06:35:32 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:42:58 GMT  
 		Size: 493.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6999e333ebf87cced143819cc28b3d5636172cd026ec3453d5cf58100cbdb8c0`  
+		Last Modified: Tue, 07 Jan 2025 06:40:19 GMT  
 		Size: 12.7 MB (12689733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f3797fdcdb5ebba90ec07d941f55012132afd36677a6ba862da60a7da0ca5c9b`  
-		Last Modified: Tue, 07 Jan 2025 06:40:18 GMT  
 		Size: 2.4 KB (2446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9be5f3edff73c8d90d06d9b07cdc65665f000e8f3a48c22e9d37665f5415ed9`  
-		Last Modified: Tue, 07 Jan 2025 06:40:19 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:42:58 GMT  
 		Size: 19.6 KB (19554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:42:46 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b46aaecb8ad30ad05e768bb3c4cf6f4da62144b4e328858de97ba523804276c7`  
-		Last Modified: Tue, 07 Jan 2025 06:40:19 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:42:59 GMT  
 		Size: 8.9 KB (8877 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1d200138f0466aaadd0b2f245a984bc9225183f8aaac6a6aedfccde3d9a80799`  
+		Last Modified: Tue, 07 Jan 2025 16:14:33 GMT  
 		Size: 2.2 MB (2181493 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b39fa9e3db0fa93cc006d25f2c2c2aacd90a035028f5e0edc50b0246f1442cb`  
+		Last Modified: Tue, 07 Jan 2025 16:14:33 GMT  
 		Size: 310.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1ca60f736266e4a2c8d40578408e288fdb26740c38b9afdbfcd6a94512e77611`  
@@ -636,11 +628,10 @@ $ docker pull drupal@sha256:50e77b10a34e9459f4db0ba3d8a2a1b235d3d6e23dae129aa9e2
 
 -	Layers:
 	-	`sha256:d2fae50e26b0516b013b85cf5595e7438701c9dd130ff65b5ef84453b8f8824c`  
-		Last Modified: Tue, 07 Jan 2025 16:14:33 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:43:00 GMT  
 		Size: 277.0 KB (277040 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b33849c2ed863dde7892adb820ec0dc89edf4043b2015679f015749ee70592cb`  
-		Last Modified: Tue, 07 Jan 2025 16:14:33 GMT  
 		Size: 24.0 KB (24042 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -724,17 +715,19 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 
 -	Layers:
 	-	`sha256:1b51cef20fac755ea70acf005c7461407387b0deae88500e38a1982868469f7a`  
+		Last Modified: Tue, 07 Jan 2025 02:28:41 GMT  
 		Size: 3.5 MB (3458271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ab7543ebf1e616e7cb03f0f1221404748fa56b97579416f6039f5f69cee92a4b`  
-		Last Modified: Tue, 07 Jan 2025 03:30:22 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:43:00 GMT  
 		Size: 3.4 MB (3357012 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:70ab81f820746395d31cf04b56f837bae07305f6e37ec13b752fa38786550a43`  
-		Last Modified: Tue, 07 Jan 2025 03:30:22 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:43:01 GMT  
 		Size: 941.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:58b3e87e456e672054eefe2fdecbb32ef3535161bd695680b9d05f6eb94e0498`  
+		Last Modified: Wed, 08 Jan 2025 13:43:01 GMT  
 		Size: 216.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f45dbc3d1f606b6861d36c6fb6c92c7551a0c644bee6b5314f24cfaf5d261a9`  
@@ -742,7 +735,6 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 11.9 MB (11937918 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f52d474f1e10acf7d765d8ad62edc8c2372c0b62d121be8d4697025e4503c11b`  
-		Last Modified: Tue, 07 Jan 2025 03:30:23 GMT  
 		Size: 487.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c7e20b426cd68d0d8a2234b038f14ec814b7f518ff25be5fef02d4f213dc701c`  
@@ -750,28 +742,28 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 13.0 MB (13009129 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:29f8260a7f74618ce3ab9b7e8d29f1d66b40910993240bbb8eb112a22efa2eaa`  
-		Last Modified: Tue, 07 Jan 2025 03:30:23 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:43:02 GMT  
 		Size: 2.4 KB (2447 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0a986cc16b42c1d6f12f9821e1f4faee9e15a501dd1259a9ba62047a74c8fc32`  
 		Size: 19.7 KB (19740 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:42:46 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a19e9e327a150f468e6d6c40783d4067080c17e446514f7ac627b6ebe4d0fc25`  
+		Last Modified: Tue, 07 Jan 2025 03:30:23 GMT  
 		Size: 8.9 KB (8877 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f12b9bd8330bb801823c898163fe408711164be39821f6980a2f03f7711071a0`  
 		Size: 2.0 MB (1977300 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dfecf340fd6f7df960558867ae09ae6606283f221525f72a1c52efdc76f34aba`  
-		Last Modified: Tue, 07 Jan 2025 04:19:21 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:43:03 GMT  
 		Size: 310.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8d1ca5fc1d15848ed8822cc607f471682eb044eba1a0440989727d770c20f908`  
-		Last Modified: Tue, 07 Jan 2025 04:19:21 GMT  
 		Size: 3.4 MB (3429012 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -791,11 +783,10 @@ $ docker pull drupal@sha256:6cb58e981d787fc16bf8e29bd2c5fff5d971d8310b612f955dc1
 
 -	Layers:
 	-	`sha256:af45445efc4faca41b96bb0d9b9e70ae6ed888bc67e951811e8c95368001d7cc`  
-		Last Modified: Tue, 07 Jan 2025 04:19:20 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:43:03 GMT  
 		Size: 279.7 KB (279704 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c20ee2a9a1d50387555e4d57dba03354da6aaa27fc1bcd8babb9b96d72ae9fa7`  
-		Last Modified: Tue, 07 Jan 2025 04:19:20 GMT  
 		Size: 23.8 KB (23803 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -879,7 +870,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 
 -	Layers:
 	-	`sha256:9207393f0daad55cddbc775f55edde5baecdca9e0441c9c1f627f2394d28b7c3`  
-		Last Modified: Tue, 07 Jan 2025 02:32:05 GMT  
+		Last Modified: Wed, 08 Jan 2025 14:25:41 GMT  
 		Size: 3.6 MB (3567745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:770cb477b1c68317bfb2860d023b4972e2abdce0461a24b5e3c5d2ff8eadff58`  
@@ -887,47 +878,44 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 3.5 MB (3462737 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f8249e7b9c0ca9f3f0f47f0fd9d16c7a924f96930522c42609a86570d36e0ce7`  
-		Last Modified: Tue, 07 Jan 2025 03:57:03 GMT  
+		Last Modified: Wed, 08 Jan 2025 12:29:36 GMT  
 		Size: 940.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8e91a0f9929fb530faadf31b21d97adcb1eb6d139b4a4d3b93c2e76f0c02b000`  
 		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ddb064e7b13dc78008c480f9b50806ab38cd416489cee96649aa23811745db7`  
-		Last Modified: Tue, 07 Jan 2025 05:39:33 GMT  
 		Size: 11.9 MB (11937926 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5c2492777819c8a43eee1179a3c308d736a95916a35f14c60099102cd2cae69b`  
+		Last Modified: Tue, 07 Jan 2025 05:39:32 GMT  
 		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0b292a88221316377f0dfccbd731017ca5c6008a45dd2eca46c1d5d23778668`  
+		Last Modified: Wed, 08 Jan 2025 13:43:05 GMT  
 		Size: 13.1 MB (13099122 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d92d3c208c8d65bc3f733b9e43a860eeeb4e40b0ff931844b853ff824a310f00`  
-		Last Modified: Tue, 07 Jan 2025 05:43:01 GMT  
 		Size: 2.4 KB (2445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0ee591fcfdb981918b28e6664bc7c319e4a14b2386fedfc73cf11ac9f6d715f7`  
-		Last Modified: Tue, 07 Jan 2025 05:43:01 GMT  
 		Size: 19.6 KB (19563 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:42:46 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b6f61d701b5b8ed3e2e7e1cae5ca5eb949be519b6c4c86d4fe64818d6eb0cd82`  
-		Last Modified: Tue, 07 Jan 2025 05:43:02 GMT  
 		Size: 8.9 KB (8879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:24d8ddb560484762d7a8c0ccbad26970392d6811cbe5b43c30425b7614d1c92c`  
-		Last Modified: Tue, 07 Jan 2025 10:19:36 GMT  
 		Size: 1.7 MB (1682129 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c30080febb9b780ec6ace0ad11c9a7c776be09d9a4aeae49a3a64ba43b7034c0`  
+		Last Modified: Wed, 08 Jan 2025 13:43:06 GMT  
 		Size: 311.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ac550cc0d11f2156debfe7e8e12ba050d49aa43ef6958a3261734f135911acb2`  
-		Last Modified: Tue, 07 Jan 2025 10:19:36 GMT  
 		Size: 3.4 MB (3429009 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -950,6 +938,7 @@ $ docker pull drupal@sha256:4856d233e4f549cbc914315866ba71ab0b3b9b5f569e34570c86
 		Size: 275.0 KB (275043 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:805f5a714e5e1e85dd64d01bf7f26ec1da2d54ec9d743b0f3054d18b8ac61b0f`  
+		Last Modified: Tue, 07 Jan 2025 10:19:36 GMT  
 		Size: 23.9 KB (23932 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1037,11 +1026,9 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 3.4 MB (3354022 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9f4d72319026451a2551d3aadef8d677694387fab55cabeb9cbfc0eb4e3dea03`  
-		Last Modified: Thu, 12 Dec 2024 02:34:49 GMT  
 		Size: 3.4 MB (3445761 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1ca9c93fa8ac38e6017fe5251627d738084239fbab425319ead8bdece897e493`  
-		Last Modified: Thu, 12 Dec 2024 02:34:48 GMT  
 		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:011fcd924c23dea0d5c69cc213494734a9bd1dc4cba0284c8b817cd82ff126a6`  
@@ -1049,24 +1036,25 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b7b605691b931213834755f4a16edf6f96e3375b8149e329b26e7109bfa57d08`  
+		Last Modified: Wed, 08 Jan 2025 13:43:07 GMT  
 		Size: 11.9 MB (11938145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:81390ab67141b976192ed2d44102b225f31db18e36620cef51e75e1b5d0dbd6d`  
+		Last Modified: Wed, 08 Jan 2025 13:43:07 GMT  
 		Size: 494.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:af9655388dadf4834b2a3d174f39e87e33b487943d06f4987352a4daa8b22019`  
-		Last Modified: Thu, 12 Dec 2024 19:30:28 GMT  
 		Size: 12.4 MB (12436743 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff95f8bae03f84df28d87bef993e5f86023a5c4d38fe8dbcf06489221a9f1790`  
-		Last Modified: Thu, 12 Dec 2024 19:30:26 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:43:08 GMT  
 		Size: 2.4 KB (2445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3afdfe6893e4c2d7af648886a1da4e7347b6ce2e434da529c7156904f7dfb211`  
 		Size: 19.9 KB (19879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:42:46 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ef8acae40a40a87716b3a8fc1aafa4886f78e5f819f766c4908d7c04df282bbf`  
@@ -1074,6 +1062,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 8.9 KB (8878 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e8092a924ce145d2be12a645105c5616c1b31cf04a35c834b86073f544c4d1e8`  
+		Last Modified: Sat, 14 Dec 2024 02:21:06 GMT  
 		Size: 1.5 MB (1467865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f9f61c34a45eb0b2b5b1d2d08a032c3818d5cf0cc7404e911acdac03be1547dd`  
@@ -1081,7 +1070,6 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 312.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bf98b7241c0d9933f4471f8eed7c67cc85ac0c6006a19a37b99a77b3cd63da6a`  
-		Last Modified: Sat, 14 Dec 2024 02:21:07 GMT  
 		Size: 3.4 MB (3429008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -1101,10 +1089,11 @@ $ docker pull drupal@sha256:a689b10fba9160ea926df1437df30ec5e2fc42cfc718c6e39c01
 
 -	Layers:
 	-	`sha256:bffc170005e95b521d3c710a7b6fd3a288a99f015bdb0dbf70378ea9e6c5c629`  
-		Last Modified: Sat, 14 Dec 2024 02:21:06 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:43:09 GMT  
 		Size: 282.6 KB (282598 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:83876bb356804db1b26886c7728730b843e492d9e8413bcf3787b1c3db523ed1`  
+		Last Modified: Sat, 14 Dec 2024 02:21:05 GMT  
 		Size: 23.9 KB (23932 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1188,7 +1177,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 
 -	Layers:
 	-	`sha256:93a724ed1843277c272a09a7779ca31a802938fe3a88142df42e291e0dc759c3`  
-		Last Modified: Tue, 07 Jan 2025 02:32:17 GMT  
+		Last Modified: Wed, 08 Jan 2025 12:55:42 GMT  
 		Size: 3.5 MB (3459449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:81298346f7998688090749dc4a0c5695063618d53944be66940589a7c4cec0f0`  
@@ -1200,7 +1189,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 941.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:19010506c88f12a8f1bd5ca006528412ce5ffcb1745e840ef9578eb779ec3a4d`  
-		Last Modified: Wed, 08 Jan 2025 10:28:50 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:52:54 GMT  
 		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2509a764d7bb239559787132dfbe620fdbe33a46fbcecc0b493eca2cff2bd119`  
@@ -1208,14 +1197,13 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 11.9 MB (11937931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:33d5d40c93c8ae11cc3eca26576f22940f53d9eb24ea1803c84626b26793fb3b`  
-		Last Modified: Tue, 07 Jan 2025 05:43:35 GMT  
 		Size: 491.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fd759e2e5ab6a4daff6d44f5544f54eb6e639a88e96c919b4595d6b998b302e`  
-		Last Modified: Tue, 07 Jan 2025 05:47:12 GMT  
 		Size: 12.6 MB (12622856 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0447b50fa91187e3eedd4f4fa46518880f0474a61dcc4f0e864472a01966a739`  
+		Last Modified: Wed, 08 Jan 2025 13:43:10 GMT  
 		Size: 2.4 KB (2445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:67346b331bdbc65270b8c14e81fe3c100790038d93f05d5b0e6003a7ac92e7b8`  
@@ -1223,11 +1211,10 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 19.6 KB (19555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
+		Last Modified: Wed, 08 Jan 2025 13:42:46 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eeba7197e68b16c60b5e615d335ba5a2228ad7133070bea06e1a2cb177599bec`  
-		Last Modified: Tue, 07 Jan 2025 05:47:12 GMT  
 		Size: 8.9 KB (8877 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6973f4080ebd73d0b149b1deb1498fd3bdcced028377886516630c04f4aacaae`  
@@ -1235,6 +1222,7 @@ RUN set -eux; 	curl -fSL "$DRUPAL_URL" -o drupal.tar.gz; 	echo "${DRUPAL_MD5} *d
 		Size: 1.6 MB (1599919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:60a674a4560d841c6e7cc39c51943b04a1724cbc15bc97d546b0ba77c8768428`  
+		Last Modified: Wed, 08 Jan 2025 13:43:11 GMT  
 		Size: 309.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:174acd0cf88915fed9550638ae93451472e24810abd77b702a2f9b8e06373ce5`  
@@ -1258,9 +1246,9 @@ $ docker pull drupal@sha256:f517d3e3d32b26901070cceb4e46dabddb6b4cd3937b93e5fd1b
 
 -	Layers:
 	-	`sha256:f62225f9d034636ebcea7710ca15d180675a95b7940f6f9ae3796b3abd21d528`  
+		Last Modified: Wed, 08 Jan 2025 13:43:12 GMT  
 		Size: 275.0 KB (274985 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e3a92ced4b2deed4b146d1051e19372c43530a424235fc58c24d1e416aaf92bd`  
-		Last Modified: Tue, 07 Jan 2025 15:56:45 GMT  
 		Size: 23.9 KB (23860 bytes)  
 		MIME: application/vnd.in-toto+json
