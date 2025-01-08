@@ -58,18 +58,18 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 
 -	Layers:
 	-	`sha256:d9802f032d6798e2086607424bfe88cb8ec1d6f116e11cd99592dcaf261e9cd2`  
-		Last Modified: Wed, 08 Jan 2025 07:56:48 GMT  
+		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bea25b219008ee85c1419232471b3771e675d3f7f02f358be176ba48fe96e76e`  
-		Last Modified: Thu, 19 Dec 2024 21:31:51 GMT  
 		Size: 16.1 MB (16084679 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb3053f9bd89cfd8a6e60d6cbaa86a6d768b03928393f6a438736993ec268c8c`  
+		Last Modified: Thu, 19 Dec 2024 21:31:54 GMT  
 		Size: 231.7 MB (231727542 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:058a8820bbae8818a19884c1a9119ffc7fce26a0f552cabbe715f7a618b1d328`  
-		Last Modified: Wed, 08 Jan 2025 07:36:15 GMT  
+		Last Modified: Thu, 19 Dec 2024 21:31:51 GMT  
 		Size: 6.3 MB (6261212 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -140,7 +140,7 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 
 -	Layers:
 	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
-		Last Modified: Wed, 08 Jan 2025 06:38:19 GMT  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eb1ef414821b192c760ac142f4466c76cf31f2fbfd0e37a74b4ad61c78e57b23`  
@@ -148,7 +148,6 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 15.9 MB (15945040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7cf7a56af7d0cff3137a87c820c145ef712b67ebd17c1efc1f1ee376f7e55823`  
-		Last Modified: Thu, 19 Dec 2024 22:27:46 GMT  
 		Size: 221.3 MB (221335562 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:22a7d3b32c8f2dfaf937664d742db34978a1a1b045d292b7768fd5e2d3fa072f`  
@@ -172,7 +171,7 @@ $ docker pull ibm-semeru-runtimes@sha256:3b09f679bd61367a79e7027858956c646d4a276
 
 -	Layers:
 	-	`sha256:e5db5081f9920e493f98b7c6a11958cf46efcfee9b3807bc0b9a0a519797ff69`  
-		Last Modified: Wed, 08 Jan 2025 07:36:16 GMT  
+		Last Modified: Thu, 19 Dec 2024 22:27:41 GMT  
 		Size: 3.7 MB (3662504 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f057d65107c5bba2617aee3c867a5813f5025bf6d2a10c675622445deca98156`  
@@ -227,7 +226,7 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 32.1 MB (32076506 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c03062ba6cc89d48fbed8c001c307b5b41e0a5f776a5ecb43457bcbf48b0c0d`  
-		Last Modified: Mon, 04 Nov 2024 22:05:24 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:35:14 GMT  
 		Size: 17.3 MB (17256542 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:028f0ea2d5bd9ae82ef0f66f39eb28c00c93bb6a94834e657aa873d5e92d6067`  
@@ -255,11 +254,11 @@ $ docker pull ibm-semeru-runtimes@sha256:53b18e91145fca5e332baaf6e5f4721d7cc1266
 
 -	Layers:
 	-	`sha256:26af269db651a974235cfac9a8dc6fcf445bb98e3528fbb6f94abc4391bf6a82`  
-		Last Modified: Wed, 08 Jan 2025 07:36:17 GMT  
+		Last Modified: Thu, 19 Dec 2024 21:53:37 GMT  
 		Size: 3.7 MB (3674238 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:23f65d52a82d9e9a2525db1cff8e91dbd9da9fde074163ecbcca9134d0f6de14`  
-		Last Modified: Thu, 19 Dec 2024 21:53:36 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:36:11 GMT  
 		Size: 24.0 KB (24028 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -310,15 +309,13 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 26.4 MB (26365979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ae76440d6755e318199681b6d987a4b8660d5945e0ea29db0a034c2ad4c00548`  
-		Last Modified: Mon, 04 Nov 2024 22:07:59 GMT  
 		Size: 15.8 MB (15773072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a05004ed25fd15bd2fc7d8a28eac41c7acd40a3ab097e63a3de11970b76f92f5`  
-		Last Modified: Thu, 19 Dec 2024 21:57:41 GMT  
 		Size: 227.7 MB (227664284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9336a8387d9c165155aa6f5a1f99ad042f30b960e4c1735f8d07f3d3ff1d9354`  
-		Last Modified: Thu, 19 Dec 2024 21:57:38 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:36:12 GMT  
 		Size: 6.4 MB (6437802 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -338,9 +335,9 @@ $ docker pull ibm-semeru-runtimes@sha256:b4d01d1c859bc52572905ecdeabb76c972f59a5
 
 -	Layers:
 	-	`sha256:aa1e7b6750da85f77f43e97a8ecbdd1c84c018dd5cf016452123abc2339f1d6e`  
+		Last Modified: Thu, 19 Dec 2024 21:57:38 GMT  
 		Size: 3.7 MB (3671220 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bd3a8e2f2548b73c246e779d912cfdecead5d46d60983c9a7a207a319f2e1bd3`  
-		Last Modified: Thu, 19 Dec 2024 21:57:37 GMT  
 		Size: 24.0 KB (23993 bytes)  
 		MIME: application/vnd.in-toto+json
