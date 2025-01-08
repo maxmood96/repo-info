@@ -55,7 +55,7 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 
 -	Layers:
 	-	`sha256:245043d9199c263f869fc0558f43f7cb98bbc92acdd5def1b4f690adc0ac7807`  
-		Last Modified: Tue, 07 Jan 2025 19:42:27 GMT  
+		Last Modified: Mon, 06 Jan 2025 21:44:42 GMT  
 		Size: 3.6 MB (3636222 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b6caf831702c52149afbece153a63ee6dfe36aab733bc10718b890493388153b`  
@@ -63,11 +63,11 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Size: 444.2 KB (444188 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6e6c4ba31aa73f3cac6a8b41bce36720d1c0e805edc07f9b92f8e28c0ce199f3`  
-		Last Modified: Tue, 07 Jan 2025 20:10:13 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:15:52 GMT  
 		Size: 45.3 MB (45340035 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:329a223c845a80eaa430ba5677398487e09cde9c1cd8de8219cf841fd6cc7e75`  
-		Last Modified: Tue, 07 Jan 2025 20:19:59 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:15:51 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -91,7 +91,6 @@ $ docker pull traefik@sha256:a3c68e05c56adb9d78db9aa8c8ae589f5f13535d1aee38b0d9d
 		Size: 811.7 KB (811669 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c6a34d47cda08ad9083afd92f05fc2a4eda5ac364c34e4712fcd75ba002cf248`  
-		Last Modified: Tue, 07 Jan 2025 03:15:51 GMT  
 		Size: 12.5 KB (12538 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -211,10 +210,10 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Size: 446.4 KB (446381 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4e292ce1dbc7186e69eb018ca23df3af7e62cf8e8292378c8be9e321ce5ae825`  
-		Last Modified: Tue, 07 Jan 2025 07:11:29 GMT  
 		Size: 42.0 MB (42014670 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c68159b0f3f4734f6a3c3d76d06a39c46821a9879cc6af8d408f18992b6a25a5`  
+		Last Modified: Tue, 07 Jan 2025 07:11:28 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -278,11 +277,10 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 
 -	Layers:
 	-	`sha256:9207393f0daad55cddbc775f55edde5baecdca9e0441c9c1f627f2394d28b7c3`  
-		Last Modified: Tue, 07 Jan 2025 20:15:40 GMT  
+		Last Modified: Tue, 07 Jan 2025 02:32:05 GMT  
 		Size: 3.6 MB (3567745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d9a65fb645c1f955293754baab244e2409677c8d202e93738ef98008feb33f3`  
-		Last Modified: Tue, 07 Jan 2025 06:14:47 GMT  
 		Size: 446.8 KB (446761 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1eba9a272fb89ee41eebe83d69a6544f87287b5da18e816908670d7e93942f0d`  
@@ -314,7 +312,6 @@ $ docker pull traefik@sha256:9d7e3a668abb9690b107b84078eda6a6b11f3fba43e7b21e7a9
 		Size: 809.8 KB (809770 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d0b36a9276f409f219ecd37235b7ac1c8152aadee4889ed12e7c07a41809f933`  
-		Last Modified: Tue, 07 Jan 2025 06:16:43 GMT  
 		Size: 12.6 KB (12602 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -366,7 +363,6 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Size: 43.9 MB (43941420 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ecb19e331f17499d5aa26b991c575d5e5e2c85958f74da71dc33216b384f6187`  
-		Last Modified: Mon, 06 Jan 2025 15:44:38 GMT  
 		Size: 370.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -386,7 +382,6 @@ $ docker pull traefik@sha256:f26b017f973c3180fd45de465c65a2435743a63fae5f0d5c0c8
 
 -	Layers:
 	-	`sha256:57fd1e6d7eaff97903039bb14120533c0133c3892da5bea3c65e04328c9ec014`  
-		Last Modified: Mon, 06 Jan 2025 15:44:38 GMT  
 		Size: 817.0 KB (816966 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:595f49fa383c66f37bc5541e3ca39756d0e40e5c85365f124d87850a6f19d8cf`  
@@ -430,6 +425,7 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 
 -	Layers:
 	-	`sha256:93a724ed1843277c272a09a7779ca31a802938fe3a88142df42e291e0dc759c3`  
+		Last Modified: Tue, 07 Jan 2025 02:32:17 GMT  
 		Size: 3.5 MB (3459449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7f209a02bd150e692ee81b7bc2a458ef379b501a041ea43dbd0179c735b1dd8a`  
@@ -441,7 +437,6 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Size: 44.3 MB (44258018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:508c4be604cb29030056d1ce8f71b1e90649672de28c045f9dbc244d406ad1d0`  
-		Last Modified: Mon, 06 Jan 2025 15:30:32 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
