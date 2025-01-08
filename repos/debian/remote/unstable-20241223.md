@@ -86,6 +86,7 @@ RUN # debian.sh --arch 'armel' out/ 'unstable' '@1734912000'
 
 -	Layers:
 	-	`sha256:3762ab95f7021ba34c1175027467ded65353f2c6419dc7eae90ec043e56cf68c`  
+		Last Modified: Tue, 24 Dec 2024 21:36:13 GMT  
 		Size: 48.8 MB (48771907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -105,6 +106,7 @@ $ docker pull debian@sha256:80e56033509e79d9626959aa7111ec04a20b5b4b76c9b35077c2
 
 -	Layers:
 	-	`sha256:9cf2378188fb4cafc7b4330cf8c5a3b2330cd1bf2d72641d42fd9b878f0bba8a`  
+		Last Modified: Tue, 24 Dec 2024 21:36:11 GMT  
 		Size: 3.2 MB (3232353 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -127,7 +129,7 @@ RUN # debian.sh --arch 'armhf' out/ 'unstable' '@1734912000'
 
 -	Layers:
 	-	`sha256:e3c1acc05fbef0b49b7beae5fe752774d0d837ae734c25831aac4c703b6387fd`  
-		Last Modified: Wed, 08 Jan 2025 13:30:06 GMT  
+		Last Modified: Tue, 24 Dec 2024 21:38:00 GMT  
 		Size: 46.8 MB (46763309 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -147,6 +149,7 @@ $ docker pull debian@sha256:554b77af9e47d19e3f7dba4e68f4d8c5d0119504485a5ea782a7
 
 -	Layers:
 	-	`sha256:3a42e8131c5b1c0f868bd99683f7ed84d220b5138ec037a024084248ee3b3e61`  
+		Last Modified: Tue, 24 Dec 2024 21:37:59 GMT  
 		Size: 3.2 MB (3231094 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -169,6 +172,7 @@ RUN # debian.sh --arch 'arm64' out/ 'unstable' '@1734912000'
 
 -	Layers:
 	-	`sha256:292cceccf1d705ec66776ac4a8f9a94e278d00802f8cbb2801a6bf344a35b844`  
+		Last Modified: Tue, 24 Dec 2024 21:37:41 GMT  
 		Size: 52.4 MB (52432319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -188,7 +192,7 @@ $ docker pull debian@sha256:e936a7e41a7dce5313ec28378d6a2778582e287ca384b6f4ff03
 
 -	Layers:
 	-	`sha256:62d61f2872025c0bdb4dee70d285dfc7a8704eb5bd38da9ffdbebcd81693cf2d`  
-		Last Modified: Wed, 08 Jan 2025 13:32:03 GMT  
+		Last Modified: Tue, 24 Dec 2024 21:37:40 GMT  
 		Size: 3.2 MB (3233099 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -211,6 +215,7 @@ RUN # debian.sh --arch 'i386' out/ 'unstable' '@1734912000'
 
 -	Layers:
 	-	`sha256:38cd1a3ca278f6327b7f1997982125722985fc3e2b320756091d8fc5b6773896`  
+		Last Modified: Tue, 24 Dec 2024 21:32:43 GMT  
 		Size: 53.0 MB (53038813 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -253,6 +258,7 @@ RUN # debian.sh --arch 'mips64el' out/ 'unstable' '@1734912000'
 
 -	Layers:
 	-	`sha256:c7096bb99e4a357723a396c1bdc29df188367d48330c20e2a232e02ee8bc5c38`  
+		Last Modified: Tue, 24 Dec 2024 21:36:39 GMT  
 		Size: 51.8 MB (51771337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -295,6 +301,7 @@ $ docker pull debian@sha256:7ab9825fa1112e580a1fe85c0362b4187743dba6decc15a6b986
 
 -	Layers:
 	-	`sha256:5712cc75d12c7c107065e5d0615a4e45714cd0959d5b78072a95024ebd6d8238`  
+		Last Modified: Wed, 25 Dec 2024 09:07:54 GMT  
 		Size: 3.2 MB (3233222 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -337,6 +344,7 @@ $ docker pull debian@sha256:5e866f20d92155bfd26983c3779812a53489d3badb1e81d6e41b
 
 -	Layers:
 	-	`sha256:d0be4966121f9a08bdde0b8bf0996def295c986dee888439c4e8df4cba4401ef`  
+		Last Modified: Tue, 24 Dec 2024 21:45:49 GMT  
 		Size: 3.2 MB (3222911 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -359,7 +367,7 @@ RUN # debian.sh --arch 's390x' out/ 'unstable' '@1734912000'
 
 -	Layers:
 	-	`sha256:247c1bedc0404d0af0d2f2ae3dcc36bc79be0841a3cba394aece41f061634e91`  
-		Last Modified: Wed, 08 Jan 2025 13:30:11 GMT  
+		Last Modified: Tue, 24 Dec 2024 21:38:58 GMT  
 		Size: 52.2 MB (52169920 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -379,5 +387,6 @@ $ docker pull debian@sha256:c9efab1fc3a53294faa7b1f8bb573ff67f01cbddc364db18183a
 
 -	Layers:
 	-	`sha256:1579b4c3f5501f88f9be2d51e75ba2cfef1b0d5aebf7d80df9022b8c07fc3812`  
+		Last Modified: Tue, 24 Dec 2024 21:38:57 GMT  
 		Size: 3.2 MB (3231140 bytes)  
 		MIME: application/vnd.in-toto+json
