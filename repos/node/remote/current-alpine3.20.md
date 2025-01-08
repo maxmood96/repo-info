@@ -209,6 +209,7 @@ CMD ["node"]
 		Size: 48.8 MB (48804950 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:692e511f141017bc66cf83b92a37df3df489a1ed6e2709a6783e53c8f72abd9d`  
+		Last Modified: Tue, 07 Jan 2025 08:15:38 GMT  
 		Size: 1.4 MB (1382185 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bdf697e326ad2761e79b8bb9d86b370d03dc6c7efb00be5d15a30ec5742d8fa`  
@@ -284,7 +285,6 @@ CMD ["node"]
 		Size: 50.8 MB (50779820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6f795214240cedaebf34fb7e67a2b7a06d2b5acea9598dd4c828ca06b35a232c`  
-		Last Modified: Tue, 07 Jan 2025 09:34:50 GMT  
 		Size: 1.4 MB (1382185 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b2c56605d6d83fbbec491db973d7637ddd2a0857d3bdb1a1441294e7f93a2b2`  
@@ -356,6 +356,7 @@ CMD ["node"]
 		Size: 3.5 MB (3459179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:97df5cc4fdcbcbff69cafe284d38a534d0d4e28cef4ba76fd3f34f641016b2d0`  
+		Last Modified: Wed, 08 Jan 2025 02:39:14 GMT  
 		Size: 52.7 MB (52670479 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bf1d4d6971d50fd4e65de0ea3736b5b3909cca5f1baca5fbc2628dc98aa48db9`  
@@ -363,7 +364,6 @@ CMD ["node"]
 		Size: 1.4 MB (1382183 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f1bfa649105d8df5f724998c8756cfa11299ec2cefe1f663f6050a9b318d80e4`  
-		Last Modified: Wed, 08 Jan 2025 02:39:13 GMT  
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -383,9 +383,9 @@ $ docker pull node@sha256:21756f771e0e8638ce2a3f31b154d60785337708523f8d7a5ef438
 
 -	Layers:
 	-	`sha256:3bb82efea297851f640599f9eeb5558aaaa2122124d41f1b6913c2556bc31b15`  
-		Last Modified: Wed, 08 Jan 2025 02:39:13 GMT  
 		Size: 381.2 KB (381169 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a694c98f77d6d6e9e0d8c1ccda1f607a02631304704e269effb8264d61e83d81`  
+		Last Modified: Wed, 08 Jan 2025 02:39:13 GMT  
 		Size: 23.8 KB (23804 bytes)  
 		MIME: application/vnd.in-toto+json
