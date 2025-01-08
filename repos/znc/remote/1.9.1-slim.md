@@ -136,6 +136,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Size: 3.2 MB (3169627 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:26b19fd69445f34b80c9394c2b8eed43142c98f21082e617414b6a576aad697d`  
+		Last Modified: Tue, 07 Jan 2025 06:49:25 GMT  
 		Size: 45.3 MB (45279130 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3a4c6412cbb9a286f04871877b0c6a6cc4698b94dd5915f8049ddf8ea554882a`  
@@ -143,6 +144,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Size: 171.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:12d05039a5cdcbaa65d4cedb361439d0e8668daf04ff705cc107ba34ce05866d`  
+		Last Modified: Tue, 07 Jan 2025 06:49:24 GMT  
 		Size: 750.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -214,6 +216,7 @@ ENTRYPOINT ["/entrypoint.sh"]
 		Size: 46.7 MB (46701665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4395959983f224ebcbc26776aa9c45d18caa732a9325280d2874e2ac1e471550`  
+		Last Modified: Tue, 07 Jan 2025 07:18:30 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:504cf82a539e7caf3d1ca36fad9bf6bdc4cf3a7ea9eb62fbfd7c6f8e9ae84c64`  
@@ -237,8 +240,10 @@ $ docker pull znc@sha256:41938f8d681f99a28febd7e3031dfc4bc49fcc0575dbf728c1558bb
 
 -	Layers:
 	-	`sha256:92b4ba589b09ac18362f5806f9187e0225584ef689fcea3162736a18c2d707f7`  
+		Last Modified: Tue, 07 Jan 2025 07:18:31 GMT  
 		Size: 2.1 MB (2130946 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5ab9a6664821730be923bf4db820e8ab4145560413264a26567c8fa8cf272c37`  
+		Last Modified: Tue, 07 Jan 2025 07:18:30 GMT  
 		Size: 14.1 KB (14117 bytes)  
 		MIME: application/vnd.in-toto+json
