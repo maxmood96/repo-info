@@ -63,11 +63,11 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 6.3 MB (6347749 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5413da9dd68b96d78c2f9a6ad90c83c10eba4927bfcf99f8812ea179a093c146`  
-		Last Modified: Wed, 08 Jan 2025 01:08:59 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:20:06 GMT  
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cdba86b0d45f2bc8262ff57e28b3781caf6b47e078a80f3e89f03f05b9eac8a4`  
-		Last Modified: Tue, 07 Jan 2025 23:50:40 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:20:06 GMT  
 		Size: 408.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -87,7 +87,6 @@ $ docker pull nats@sha256:74e3d1c872d5047663341b23e819482b2bf389190102cfdb5f2b5a
 
 -	Layers:
 	-	`sha256:301c11a8c0e0cb7a10b31ed266709ff88d4cb1d04b4b773cda7d7a7af0a919ee`  
-		Last Modified: Tue, 07 Jan 2025 03:20:07 GMT  
 		Size: 14.3 KB (14322 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -283,7 +282,6 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 561.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:22af105e2b54631c9d3d6f803af860c168d3e5cc35a5fa5be13328311c288cc8`  
-		Last Modified: Tue, 07 Jan 2025 04:20:26 GMT  
 		Size: 408.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -343,7 +341,7 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 
 -	Layers:
 	-	`sha256:9207393f0daad55cddbc775f55edde5baecdca9e0441c9c1f627f2394d28b7c3`  
-		Last Modified: Wed, 08 Jan 2025 00:32:23 GMT  
+		Last Modified: Tue, 07 Jan 2025 02:32:05 GMT  
 		Size: 3.6 MB (3567745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:acef6d00c5d9f955c0ada0042b4d702b198dc599a72773715bec6a5deab07ba2`  
@@ -355,7 +353,6 @@ CMD ["nats-server" "--config" "/etc/nats/nats-server.conf"]
 		Size: 560.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:74d120b1f8dd2ce33447645c1b4328c2d88cbb5d570c67bc161cc99b05f5c68e`  
-		Last Modified: Tue, 07 Jan 2025 03:50:51 GMT  
 		Size: 410.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
