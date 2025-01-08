@@ -133,6 +133,7 @@ $ docker pull storm@sha256:b60eee989caa12ffbc6c4a95ceca4e580dd9e8242ce3ba3fbcba3
 
 -	Layers:
 	-	`sha256:80f65c7316fd186048d658c987de696fea22e004ce3f7da7a91a6b0521d95489`  
+		Last Modified: Tue, 03 Dec 2024 03:27:03 GMT  
 		Size: 4.6 MB (4580336 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cb3652e6d5b6b53505e3af1c8e0712ae11c048f3e73b5503559c517af468b282`  
@@ -222,6 +223,7 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:391177c82069403a977e7337ac47d76e4648d4cdba23f715e212a734faf7f807`  
+		Last Modified: Tue, 03 Dec 2024 05:50:10 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ca75124e0b1bab5888e1d4b317ae2e38f83b46f40f1f3a6770e0c7d93253a6e`  
@@ -232,6 +234,7 @@ ENTRYPOINT ["/docker-entrypoint.sh"]
 		Size: 12.2 MB (12170496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:713b9a9b93ac6349c016b0cb23c5729d11d064fab1287da320723e2dd39db0d0`  
+		Last Modified: Tue, 03 Dec 2024 14:42:51 GMT  
 		Size: 492.1 MB (492081115 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
