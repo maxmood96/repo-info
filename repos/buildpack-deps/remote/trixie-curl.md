@@ -50,6 +50,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 		Size: 52.2 MB (52212351 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6bfcdb7af4643d9e902826381436aafc5ca852c439990983daa707960060dbc0`  
+		Last Modified: Tue, 24 Dec 2024 22:15:33 GMT  
 		Size: 21.4 MB (21406167 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -98,10 +99,10 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 
 -	Layers:
 	-	`sha256:b5a5271e09aab30795789f051d2425121101b650637f36e772bdb80c62bb4833`  
+		Last Modified: Tue, 24 Dec 2024 21:35:34 GMT  
 		Size: 48.7 MB (48738917 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dd230c08c2a8f220f4a7754708d43b365ecaa32d038ae6429f10953c7ef0284c`  
-		Last Modified: Wed, 25 Dec 2024 01:32:00 GMT  
 		Size: 20.3 MB (20299500 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -121,6 +122,7 @@ $ docker pull buildpack-deps@sha256:5249a9b6c3225b7cdd92a20607cfe1c3c47147a8c556
 
 -	Layers:
 	-	`sha256:34870fbae21e0b6883d924cc25487991f18011694db6d982b0a7c0cc5abfa967`  
+		Last Modified: Wed, 25 Dec 2024 01:31:59 GMT  
 		Size: 4.0 MB (4033985 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:65217ace5608b04cfdb7be0856011ef54d34ca4d2e7593975e3f984a30f50b12`  
@@ -153,6 +155,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 		Size: 46.8 MB (46767965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b1a49163ae7afb92f788f8101a5f0b57af46d0766372255bb4e15ef002eddc2`  
+		Last Modified: Wed, 25 Dec 2024 03:45:38 GMT  
 		Size: 19.6 MB (19597771 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -254,7 +257,6 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 
 -	Layers:
 	-	`sha256:099da81c5d3f4771071b424bb19cc8bfc272821672d87e1978f2f206f3040f4f`  
-		Last Modified: Tue, 24 Dec 2024 21:32:39 GMT  
 		Size: 53.0 MB (53029057 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d26fe834ebc7804c0441c6204e790d670676126e97ebaad982188f420a6aa9d5`  
@@ -282,7 +284,6 @@ $ docker pull buildpack-deps@sha256:1af4aa32b10f9b824f312b01189850d6f65925c6ac7b
 		Size: 4.0 MB (4027520 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:eb18c66da45df8e7b0854753a2ecb960b9275dc954dbe068b0b00f7b9cc80faf`  
-		Last Modified: Tue, 24 Dec 2024 22:14:48 GMT  
 		Size: 6.8 KB (6799 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -380,7 +381,6 @@ $ docker pull buildpack-deps@sha256:8167f88b5b2f0edc2126acfb9fede58e66515e1eb945
 
 -	Layers:
 	-	`sha256:0ffbfd05d8ce927c2cb1a37b7a54dfbc2219a40ed922695f45e76c2395eb0130`  
-		Last Modified: Wed, 25 Dec 2024 06:15:57 GMT  
 		Size: 4.0 MB (4035035 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f318973cbadc4c4e9ed3cec306383915974799fb721ec605663411af882352dd`  
@@ -433,7 +433,6 @@ $ docker pull buildpack-deps@sha256:fbb90592bdd3214c8e2f0b09e8ab9095321a05fe9334
 
 -	Layers:
 	-	`sha256:30acd2fbe1bc37bbf990df720028dd37938ceaab937108f9afff0ca238462f74`  
-		Last Modified: Tue, 24 Dec 2024 22:29:40 GMT  
 		Size: 4.0 MB (4024608 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c389947547ae257dc1bbd00ecc6843f98740de854978cf081b04f5574af5b4ae`  
@@ -462,6 +461,7 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 
 -	Layers:
 	-	`sha256:e1fe280a5056c1901421b5598ff050c78aa067b752ad527583fba85c589bb647`  
+		Last Modified: Tue, 24 Dec 2024 21:37:42 GMT  
 		Size: 52.2 MB (52167537 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:febb20153a9b4c7c97b49477bb7e12772fe5782559f417bb6517d244a48d7108`  
@@ -485,7 +485,6 @@ $ docker pull buildpack-deps@sha256:2dc67f66fe046c155fb71c93d30202fd59a19df0e192
 
 -	Layers:
 	-	`sha256:7e814020747a7761e7643be79e26631bda0a3b058850c08076c37cd5b49f68f6`  
-		Last Modified: Wed, 25 Dec 2024 00:18:27 GMT  
 		Size: 4.0 MB (4032691 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:37e662e524479a0b85ce1f92804eac9a3174bc13e2a19f8008170fe8989d229b`  
