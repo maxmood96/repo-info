@@ -81,12 +81,15 @@ CMD ["mysqld"]
 
 -	Layers:
 	-	`sha256:aa65e7a4e79ce88e33d3670bba8ebe9e5cc2aac0934c80ace8637bb97f839006`  
+		Last Modified: Fri, 20 Dec 2024 21:29:05 GMT  
 		Size: 105.5 MB (105510489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f70f8d5272be7d90e8b95ad276ec53ec6d53322aa269067a2cb3163404022017`  
+		Last Modified: Fri, 20 Dec 2024 22:31:18 GMT  
 		Size: 1.5 KB (1534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3ad9bc72e820d58b41b864c4e33ffcd4537e33ee11e8e3e14ec4997b412a49de`  
+		Last Modified: Fri, 20 Dec 2024 22:31:18 GMT  
 		Size: 8.0 MB (8020189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5e0a33605cbffd296c71376002da5186465956bd5211de5dda93c2423e75e1cc`  
@@ -102,6 +105,7 @@ CMD ["mysqld"]
 		Size: 4.0 KB (3958 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cca929b08eef0c14f696ed882fa4a9cc28f103f452bdea6e3b9655166e33e52d`  
+		Last Modified: Fri, 20 Dec 2024 22:31:19 GMT  
 		Size: 3.3 KB (3282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -121,5 +125,6 @@ $ docker pull percona@sha256:463aa913e3678285664b348b66b39117089885e6063a405aa3e
 
 -	Layers:
 	-	`sha256:6ccee53d38ea6327b4cf49fac526c410e87a3e2099e27ac8d5f6f9dae587c122`  
+		Last Modified: Fri, 20 Dec 2024 22:31:18 GMT  
 		Size: 28.6 KB (28644 bytes)  
 		MIME: application/vnd.in-toto+json
