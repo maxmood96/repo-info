@@ -93,7 +93,7 @@ CMD ["mongod"]
 		Size: 1.2 KB (1217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0d3422d31c845e81955669c12fae32ec2f8975c34bf71c15f513ebb0c3f28f99`  
-		Last Modified: Tue, 07 Jan 2025 22:04:36 GMT  
+		Last Modified: Mon, 09 Dec 2024 20:37:59 GMT  
 		Size: 1.5 MB (1507485 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e9869afb5187e201a30dee6e4e2d6f47e75178ba69949fdd9cb7d449edde587b`  
@@ -113,7 +113,7 @@ CMD ["mongod"]
 		Size: 242.1 MB (242056265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:05cc0f1cded4ad17b51117ffcb3f5c0b5197cc52495d9a922416183d3105fd6e`  
-		Last Modified: Tue, 07 Jan 2025 22:25:05 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:33:34 GMT  
 		Size: 5.0 KB (4996 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -213,11 +213,10 @@ CMD ["mongod"]
 
 -	Layers:
 	-	`sha256:8bb55f0677778c3027fcc4253dc452bc9c22de989a696391e739fb1cdbbdb4c2`  
-		Last Modified: Tue, 19 Nov 2024 17:38:33 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:53:35 GMT  
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:50af98a999ca9179bc6f9f96cff2b6b06de18db2640d1c22668f22607b3fb6aa`  
-		Last Modified: Tue, 03 Dec 2024 06:14:00 GMT  
 		Size: 1.2 KB (1217 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6e2b33d58e9a8050338a63963e7a4d3f199e76f3a82083b53b3eddf6bdcebf38`  
@@ -261,6 +260,7 @@ $ docker pull mongo@sha256:4bfd15a96855b49e333edcd1581b1486ddf5d76205b35888b2c4b
 
 -	Layers:
 	-	`sha256:efb99bf710d3bf4d4b4813df3c76ba5ea96f8959f87da205b84fc893c3a75d56`  
+		Last Modified: Tue, 10 Dec 2024 00:21:33 GMT  
 		Size: 2.5 MB (2498973 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:79863932882a73481a4470049b2502617fd98aee2a4955e75486724090f01eb0`  
@@ -323,6 +323,7 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.3 KB (1312 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a2ddbad736a6f9fa78de3a34bd0410c4ee1808fe61c41a3f0373eba56cc60cf8`  
+		Last Modified: Tue, 07 Jan 2025 23:52:02 GMT  
 		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b41608e47826b91e5bcdcc4519ee9a0e5d3f01da93f01938b889348e17cabb84`  
@@ -389,6 +390,7 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.7 GB (1720268357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3308b54d35b61854238974280a5b0ecc72a98e2ead17d04f42770a7b35407090`  
+		Last Modified: Tue, 10 Dec 2024 18:45:28 GMT  
 		Size: 293.9 MB (293901821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:41aa1f7e3d9d06860b43694e7e6840918a8b4dd9dd21de6f2fe9788fde76d247`  
@@ -396,6 +398,7 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.3 KB (1298 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cb20e04fe6af42bfbd173691b8275c929574190857b59b99f9650c4dda51b396`  
+		Last Modified: Wed, 11 Dec 2024 20:41:49 GMT  
 		Size: 1.3 KB (1303 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:1537ca113fe2b64a2865d7eb2c5089fbf2b586d8b7cbca621c78d084a082aa61`  
@@ -407,7 +410,6 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:772fe9176b91ee6ccf25822870075ad991ed89a0c1ef782725d604c0616c3626`  
-		Last Modified: Wed, 11 Dec 2024 20:42:48 GMT  
 		Size: 768.8 MB (768840696 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:5e925aaa653a926aff64fb3bea76ddfa240756026c425e579414fccc52eb195a`  

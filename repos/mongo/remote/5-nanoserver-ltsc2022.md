@@ -51,7 +51,7 @@ CMD ["mongod" "--bind_ip_all"]
 
 -	Layers:
 	-	`sha256:f9d5d5ca3244fc2c429a892cbe6066394790f649f32d59acfdf012e490896378`  
-		Last Modified: Tue, 07 Jan 2025 22:25:44 GMT  
+		Last Modified: Tue, 10 Dec 2024 18:34:17 GMT  
 		Size: 120.6 MB (120601318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:775f8ecc24cec198786b17b7cf62600d80343606610ad8596ca04407a429abd6`  
@@ -63,6 +63,7 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.0 KB (1028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b4d50f10ef4c9c9c7b78d3759c8118356c6c7e5e235d2d194cd87c00b0db621b`  
+		Last Modified: Wed, 11 Dec 2024 21:49:31 GMT  
 		Size: 75.5 KB (75472 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:949b6e1f900a00389f1ec844b7165c0623be2ae51b18bd74432b3bce4c10ae20`  
@@ -74,7 +75,6 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 275.3 KB (275347 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:820030c8baa0436318e4b94bd77570df495046351f5fb54defadc5ed751c5191`  
-		Last Modified: Wed, 11 Dec 2024 21:49:30 GMT  
 		Size: 1.0 KB (1032 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:dae6a3c078d5a85b6181ee9c2ade08470da6778bcb3c4e640bb245382dad5e7d`  
@@ -94,6 +94,5 @@ CMD ["mongod" "--bind_ip_all"]
 		Size: 1.0 KB (1026 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bfa6a489071f2fdf61d849cf4ece7ad1f52a0da06fcce5460b7fa80ddfc4df66`  
-		Last Modified: Wed, 11 Dec 2024 21:49:29 GMT  
 		Size: 1.0 KB (1034 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
