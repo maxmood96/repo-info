@@ -79,7 +79,7 @@ CMD ["catalina.sh" "run"]
 
 -	Layers:
 	-	`sha256:de44b265507ae44b212defcb50694d666f136b35c1090d9709068bc861bb2d64`  
-		Last Modified: Wed, 08 Jan 2025 01:47:07 GMT  
+		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b8102a0b8aebb9e83cf9b49babb681033fba25f145e468519031ad5707f50183`  
@@ -107,6 +107,7 @@ CMD ["catalina.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:40b4e584eb7c308fb9b447f7836abd067fb55109b347ded596cfa4663e0781bc`  
+		Last Modified: Tue, 07 Jan 2025 01:32:14 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b278dbc0cf637edea9f6ff63ed2784a48a3ac398dae4742fec9ced16277ebaad`  
@@ -138,7 +139,6 @@ $ docker pull tomee@sha256:955965936e72999892bdea28f63cd2e2a94799a25a949570847fa
 		Size: 3.5 MB (3516250 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ecc69eef91f8d1234b62a636254b9b0197cc050e9e9eb692629d8cacac56df92`  
-		Last Modified: Tue, 07 Jan 2025 01:32:14 GMT  
 		Size: 29.4 KB (29358 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -210,7 +210,7 @@ CMD ["catalina.sh" "run"]
 
 -	Layers:
 	-	`sha256:8bb55f0677778c3027fcc4253dc452bc9c22de989a696391e739fb1cdbbdb4c2`  
-		Last Modified: Wed, 08 Jan 2025 03:22:49 GMT  
+		Last Modified: Tue, 19 Nov 2024 17:38:33 GMT  
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:636d6d39497cde5edbefcc48f9d73d53c8b5408b69b8cc70ceb265af74eba9e2`  
@@ -218,7 +218,6 @@ CMD ["catalina.sh" "run"]
 		Size: 17.0 MB (16981577 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2c00ca83c9141f23bb773168f443dd5ebfe15eb9251d848d166d8fff3158e24e`  
-		Last Modified: Tue, 03 Dec 2024 05:51:23 GMT  
 		Size: 46.4 MB (46430917 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4e5c0bfb583c70e3d3b37ce5b84ddaf77609232633842ecaf5813b86ce4d4af2`  
@@ -266,10 +265,8 @@ $ docker pull tomee@sha256:3798842b992753c603fcfc8c5830d9a0a117aa4f899004efe3131
 
 -	Layers:
 	-	`sha256:b9cd0e36eae1a62f42a7acd458e7f742947dcb93b864cf09a881bd396a3944d5`  
-		Last Modified: Tue, 07 Jan 2025 02:58:37 GMT  
 		Size: 3.5 MB (3516865 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:82d40b7b17aa4b41621717994caeda4d50416fd64e8cd4c4c49736f8d3e224e0`  
-		Last Modified: Tue, 07 Jan 2025 02:58:37 GMT  
 		Size: 29.6 KB (29649 bytes)  
 		MIME: application/vnd.in-toto+json
