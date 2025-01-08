@@ -46,7 +46,6 @@ RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.
 		Size: 52.1 MB (52113554 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4507e5811b953238ff193b1168d33f51c6e9d529f200a09d5a7cacc81a3cc8c3`  
-		Last Modified: Tue, 03 Dec 2024 02:31:58 GMT  
 		Size: 6.3 MB (6309097 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:53110b5d9fe921d17db007a1ddcf5a14b209223be44404d7367639af0432a720`  
@@ -54,14 +53,13 @@ RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.
 		Size: 1.7 KB (1741 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7073121ed00d2745775e339f48a955b95fe1cf8f720671dcb447fc1ed84db92f`  
-		Last Modified: Tue, 03 Dec 2024 02:31:57 GMT  
 		Size: 244.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e6a4d13654e7924d6b2b37ec66b136d37c2be5c0336ea4c05ed6c366e2a4fd3f`  
+		Last Modified: Tue, 03 Dec 2024 02:31:58 GMT  
 		Size: 91.4 KB (91421 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8461a91abccfb6a0564642a71b515e4966ed0f07a5adb19dea1de7fda249aaf0`  
-		Last Modified: Tue, 03 Dec 2024 02:31:58 GMT  
 		Size: 422.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -85,6 +83,7 @@ $ docker pull neurodebian@sha256:7de7481f3bac1a3622e0eed2ca47e8f02312431429159b5
 		Size: 3.6 MB (3564302 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c97d1de4b535410fddab63f0e6af15dfaa00cec28ba8c0fde0a15678db848775`  
+		Last Modified: Tue, 03 Dec 2024 02:31:58 GMT  
 		Size: 15.7 KB (15692 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -128,15 +127,12 @@ RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.
 		Size: 1.7 KB (1745 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e96d02cd9c1d5c2742decbe351e194414adec825bee6bbd6263521be0a514665`  
-		Last Modified: Tue, 03 Dec 2024 06:17:42 GMT  
 		Size: 245.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:de1d38c51092ac20a5bcd1dfc533de43a738889d192e62656482dc22f1505a79`  
-		Last Modified: Tue, 03 Dec 2024 06:17:42 GMT  
 		Size: 92.2 KB (92158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:da18a25c93d7133b2d4097e549a323142182e4dd20d54315927b6bd6573eb0f1`  
-		Last Modified: Tue, 03 Dec 2024 06:17:54 GMT  
 		Size: 423.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -156,11 +152,9 @@ $ docker pull neurodebian@sha256:c77a0b2714832915027f323e1b1215a7ec8179d23243626
 
 -	Layers:
 	-	`sha256:27c4680740117658f3a6d274e90c1bc193f9aed297af2e9c8658296f77a30654`  
-		Last Modified: Tue, 03 Dec 2024 06:17:55 GMT  
 		Size: 3.6 MB (3569181 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b37b47d54c077c2ac6d602d5b546c068ab8e54b2c34442bb70ec6ca92ca86216`  
-		Last Modified: Tue, 03 Dec 2024 06:17:54 GMT  
 		Size: 15.8 KB (15832 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -205,11 +199,9 @@ RUN [ -e /etc/apt/sources.list.d/debian.sources ] && srcs=/etc/apt/sources.list.
 		Size: 245.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cd92cccb8507bf0ea24147acd06ddac399895aa65bc91c02c25f650bd8c41174`  
-		Last Modified: Tue, 03 Dec 2024 02:28:31 GMT  
 		Size: 91.6 KB (91598 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e5c62cefd1610f7333f6f871c1794e559b2115e00c5863260f9ddedd99769cf8`  
-		Last Modified: Tue, 03 Dec 2024 02:28:31 GMT  
 		Size: 424.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -229,10 +221,8 @@ $ docker pull neurodebian@sha256:7260c43f0f9e6c3c34410fdfc970a0d4fcc49429c791e26
 
 -	Layers:
 	-	`sha256:deab7f2dbd81f35b295f26a1874c4c6ce9cea7f2c767ec20cdf21e9e17c46086`  
-		Last Modified: Tue, 03 Dec 2024 02:28:31 GMT  
 		Size: 3.6 MB (3561538 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2606e6a1a87f3ded6407b0d5258d8218f3da05be49ac5201a62941c4296cdb35`  
-		Last Modified: Tue, 03 Dec 2024 02:28:31 GMT  
 		Size: 15.7 KB (15662 bytes)  
 		MIME: application/vnd.in-toto+json
