@@ -84,10 +84,10 @@ $ docker pull openjdk@sha256:fe5ad2d7179659d7e471fd74ed2ec5eb130eb895fa40aa362c9
 
 -	Layers:
 	-	`sha256:19c39f7982a233ab5c5fdef8101eb9d74bf9fe1f1cebc595e0b3b03e74bd0f60`  
-		Last Modified: Mon, 06 Jan 2025 20:28:19 GMT  
 		Size: 8.4 MB (8436234 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4f413c3f4a67d448c2753bbe21d2ee1adc01e5d0c618efba5ee218eb027ecea8`  
+		Last Modified: Mon, 06 Jan 2025 20:28:17 GMT  
 		Size: 18.6 KB (18617 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -168,5 +168,6 @@ $ docker pull openjdk@sha256:ec17ffe7b1a63c36beb21e3ebfb774b1b2b391f2b17dace153b
 		Size: 8.6 MB (8573102 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:757567fe55e077f20537c1442c7294cb4fc35db029be94d3ad2655cc78facd6a`  
+		Last Modified: Mon, 06 Jan 2025 20:35:20 GMT  
 		Size: 18.8 KB (18761 bytes)  
 		MIME: application/vnd.in-toto+json
