@@ -107,6 +107,7 @@ CMD ["catalina.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ca91ed9634864bd5a537b3c8f9777a38fd197c022c19622de7f3f891108f5662`  
+		Last Modified: Tue, 07 Jan 2025 01:30:25 GMT  
 		Size: 495.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9365a61e5ee819f42cddd99b465a627d0a26fc22abb1f4ba8f8bb36a2d92f741`  
@@ -134,7 +135,6 @@ $ docker pull tomee@sha256:6b5d734e32cde6bf420852efe30c503e4be3f32b6310071adc985
 
 -	Layers:
 	-	`sha256:159a0cecc679fe24b33ec9056d3ba5384d9fcfe782e87f4e08b7de6bf7073d8f`  
-		Last Modified: Tue, 07 Jan 2025 01:30:25 GMT  
 		Size: 3.5 MB (3508381 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6cdd74df4ec7f25ae63c63d5492fc46901263e9fb86f7e7b0da515ea0590774a`  
@@ -210,7 +210,7 @@ CMD ["catalina.sh" "run"]
 
 -	Layers:
 	-	`sha256:8bb55f0677778c3027fcc4253dc452bc9c22de989a696391e739fb1cdbbdb4c2`  
-		Last Modified: Tue, 19 Nov 2024 17:38:33 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:53:35 GMT  
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:636d6d39497cde5edbefcc48f9d73d53c8b5408b69b8cc70ceb265af74eba9e2`  
@@ -222,7 +222,7 @@ CMD ["catalina.sh" "run"]
 		Size: 52.0 MB (52035456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:efb313e1fd0513a62a67780f19c8e4cb294b660af94a52fbeb0302ab0b93e143`  
-		Last Modified: Tue, 03 Dec 2024 05:52:24 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:37:34 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a80ffa69e5d576654e2474885f7a5bb66318dc08f1edc611817b9ad0763a6d8f`  
@@ -266,6 +266,7 @@ $ docker pull tomee@sha256:d7c31dda5c8636b6954f4c586aef8bb555de912442f24c81f2223
 
 -	Layers:
 	-	`sha256:c50db4028d8471cc6908b332df8a108c36e9389c4f693ba13b0c92c8d162b5aa`  
+		Last Modified: Tue, 07 Jan 2025 02:53:13 GMT  
 		Size: 3.5 MB (3509572 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:28cf877cd8e0f28b1e899950a30e98ea940e54555c3d9893f0487b846ea4e318`  
