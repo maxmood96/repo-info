@@ -68,13 +68,15 @@ CMD ["mongo-express"]
 
 -	Layers:
 	-	`sha256:619be1103602d98e1963557998c954c892b3872986c27365e9f651f5bc27cab8`  
-		Last Modified: Wed, 08 Jan 2025 02:05:02 GMT  
+		Last Modified: Wed, 08 Jan 2025 04:05:17 GMT  
 		Size: 3.4 MB (3402542 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7e9a007eb24b0933d3275c67be086dc77622f1ff9832cd958c1e95c151f1a8a5`  
+		Last Modified: Tue, 21 May 2024 17:38:21 GMT  
 		Size: 39.7 MB (39701778 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5189255e31c875046be6a3ece5ca5f1a54e136a8c8cba93e4e1bd790a5abe895`  
+		Last Modified: Tue, 21 May 2024 17:38:16 GMT  
 		Size: 1.4 MB (1382340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:88f4f8a6bc8d94f7f9fc9369452ba43b1da76575ce6afb0c273625b964aa59b2`  
@@ -86,7 +88,7 @@ CMD ["mongo-express"]
 		Size: 802.3 KB (802260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:45b24ec126f9adddbf26755ef3d6e6018db3130be0a4351dc633de2be6f060a6`  
-		Last Modified: Wed, 08 Jan 2025 01:46:43 GMT  
+		Last Modified: Tue, 21 May 2024 18:54:45 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9f7f59574f7db0afb123e92393fd591943720ba8325e2a93968ac03207463da9`  
@@ -199,7 +201,6 @@ CMD ["mongo-express"]
 		Size: 886.9 KB (886907 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4a17d49bb7c9b1c155f629f8aafbf911967fb0c524217fde3e1265650e2883d6`  
-		Last Modified: Wed, 08 Jan 2025 02:46:06 GMT  
 		Size: 93.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2aa624262f6c2c0374cdf88f907432420ea08c1853c5080bd2a94732fcacbafb`  
@@ -227,6 +228,7 @@ $ docker pull mongo-express@sha256:1655dca624bd69180fb3a1517213cf766615e6f09654f
 
 -	Layers:
 	-	`sha256:0b5697ffa03ecd3e2d95c8f764886160a2f93212c0c552e5367c4930e7fe348e`  
+		Last Modified: Wed, 22 May 2024 01:27:37 GMT  
 		Size: 853.8 KB (853794 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:14823bc6c9262151451390e9542239a27c7fc35b8b784ef2167081a33461b4ed`  
