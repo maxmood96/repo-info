@@ -82,9 +82,11 @@ CMD ["mvn"]
 		Size: 158.9 MB (158930109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c68839746d3c490dd9505175819f802c8850c858a7706f262fd171be0a852077`  
+		Last Modified: Tue, 07 Jan 2025 05:15:44 GMT  
 		Size: 2.3 MB (2319623 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56d85bb71e9425513cc722cb6d8eeb30780b2047d7c2f050338ac6ef0207630d`  
+		Last Modified: Tue, 07 Jan 2025 05:15:45 GMT  
 		Size: 9.2 MB (9170435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e3865ceb520004fa5c8788794ff649e12d74b48bb20d72fe71a30291def70fea`  
@@ -199,7 +201,6 @@ CMD ["mvn"]
 		Size: 2.4 MB (2383512 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ee78c8afd090c53276ce900c80fd937af4ad2c85b47103f8198ab6398439ac5`  
-		Last Modified: Tue, 07 Jan 2025 17:45:07 GMT  
 		Size: 9.2 MB (9170434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bf5b675b85eb2025ca694e400ba2cace18e0729b0d1d482a870bcae02297f1cb`  
@@ -211,6 +212,7 @@ CMD ["mvn"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b150095730009683db1789f4acc6dd395edd2b56bd7468014862172a05594b97`  
+		Last Modified: Tue, 07 Jan 2025 17:45:07 GMT  
 		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 

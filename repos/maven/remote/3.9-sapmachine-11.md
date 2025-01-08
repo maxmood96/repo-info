@@ -83,9 +83,11 @@ CMD ["mvn"]
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cef724932d71ea48dc040303276ee799bafb5f05bf9326603847899207fd470d`  
+		Last Modified: Tue, 03 Dec 2024 02:37:07 GMT  
 		Size: 201.2 MB (201237858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4311b9e8105c0cbe154841c58999aeb66690b76926ed1eb48c5c915707a981`  
+		Last Modified: Wed, 08 Jan 2025 05:48:40 GMT  
 		Size: 25.4 MB (25446226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fc1e16434e8b09d1b2b5083be41f3556beb4bad9d5b60baf51139125236ec0d3`  
@@ -101,6 +103,7 @@ CMD ["mvn"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:72369ddc39ca3630a0b58aacefec4c2018ccaefc7ae71083a9f71acd909ac0aa`  
+		Last Modified: Mon, 09 Dec 2024 20:33:02 GMT  
 		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -198,7 +201,6 @@ CMD ["mvn"]
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f87c1e225a913ec2eeb1f563db61d2e8f6c905a25f48821442ea495e8b67dc6a`  
-		Last Modified: Tue, 03 Dec 2024 10:55:27 GMT  
 		Size: 199.7 MB (199740059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:630663af55b74246cf27606c424d0e57b64cf8a1694a2adf89f68e7bc431e2a2`  
@@ -210,6 +212,7 @@ CMD ["mvn"]
 		Size: 9.2 MB (9170434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c7e27e6e33174c30c205c6991a8c55488fde7b567fce65b3ce33db3cb39bff47`  
+		Last Modified: Tue, 10 Dec 2024 02:33:02 GMT  
 		Size: 853.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -217,6 +220,7 @@ CMD ["mvn"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cde74a884c1b9903e1893977730b2ebe55db24f065bba74979886e08d572bc38`  
+		Last Modified: Tue, 10 Dec 2024 02:33:03 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
