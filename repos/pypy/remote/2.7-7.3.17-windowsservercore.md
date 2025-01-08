@@ -64,7 +64,6 @@ CMD ["pypy"]
 		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b9a8cdb14db0d9b445aa7c0ec509ceb5abd1da2654132adcad449d9d00bc06c4`  
-		Last Modified: Wed, 11 Dec 2024 20:42:56 GMT  
 		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:249330c75dfdae26ba03e8e85f34499c84248496e0e5a5683001ae22d4ffb161`  
@@ -147,7 +146,6 @@ CMD ["pypy"]
 		Size: 1.7 GB (1720268357 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:3308b54d35b61854238974280a5b0ecc72a98e2ead17d04f42770a7b35407090`  
-		Last Modified: Tue, 10 Dec 2024 18:45:28 GMT  
 		Size: 293.9 MB (293901821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:8251112778ed927c506e47408700f2a401026f5b7df606a85fbe21ffa82186e0`  

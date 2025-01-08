@@ -63,7 +63,6 @@ CMD ["pypy"]
 		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:b9a8cdb14db0d9b445aa7c0ec509ceb5abd1da2654132adcad449d9d00bc06c4`  
-		Last Modified: Wed, 11 Dec 2024 20:42:56 GMT  
 		Size: 1.3 KB (1286 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:249330c75dfdae26ba03e8e85f34499c84248496e0e5a5683001ae22d4ffb161`  
