@@ -43,11 +43,11 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 
 -	Layers:
 	-	`sha256:5fa62e1bbddf13eb6443e20aa8ed938bec91a8a5d5d0a26e58e8eafb3ada9a1c`  
-		Last Modified: Wed, 08 Jan 2025 10:50:51 GMT  
+		Last Modified: Tue, 07 Jan 2025 02:28:37 GMT  
 		Size: 3.4 MB (3407632 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c0863073705fecf260ab18415cef20676956a41bf3b2701a6354837a6c510841`  
-		Last Modified: Tue, 07 Jan 2025 03:30:48 GMT  
+		Last Modified: Wed, 08 Jan 2025 12:29:50 GMT  
 		Size: 166.7 MB (166658613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -67,11 +67,11 @@ $ docker pull amazoncorretto@sha256:082777b47f92693333257160c1c6eee731a12c7b8fac
 
 -	Layers:
 	-	`sha256:bc8e90e41117cf4b3645455731d555c6495cd6986ed5cb7a80be4769c8718c35`  
-		Last Modified: Tue, 07 Jan 2025 03:30:44 GMT  
+		Last Modified: Wed, 08 Jan 2025 12:29:46 GMT  
 		Size: 382.1 KB (382078 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7bb0295b6b2287b3885a992ce9c1582231d772450835a06aa7949a7d2b6ac230`  
-		Last Modified: Tue, 07 Jan 2025 03:30:44 GMT  
+		Last Modified: Wed, 08 Jan 2025 12:29:46 GMT  
 		Size: 9.4 KB (9413 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -111,7 +111,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 		Size: 3.3 MB (3337435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:28af2a6e39f5468c4b86a767a576f9a01b349842f2d90dfb87c305653d056011`  
-		Last Modified: Tue, 07 Jan 2025 07:25:50 GMT  
 		Size: 164.4 MB (164353136 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -131,6 +130,7 @@ $ docker pull amazoncorretto@sha256:719b7352f9529ac72919156290d4943917630d1862b5
 
 -	Layers:
 	-	`sha256:025755d320b841fb3198d51f1829afec0ff4dedb670e0d9a3412c1bdb3ffe164`  
+		Last Modified: Tue, 07 Jan 2025 07:25:46 GMT  
 		Size: 380.9 KB (380857 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:357230a2c89e7d45e22a86227c284a54ff2a217a43a62076b936d93f0db7074a`  
