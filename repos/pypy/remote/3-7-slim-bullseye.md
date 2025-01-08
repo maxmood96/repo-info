@@ -62,6 +62,7 @@ CMD ["pypy3"]
 		Size: 30.5 MB (30544341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:85ba4f20897da1055be57f264b9ba054be95f23e645fa5de4f23aa9feadfaaad`  
+		Last Modified: Tue, 24 Dec 2024 22:34:24 GMT  
 		Size: 3.3 MB (3306320 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -81,11 +82,9 @@ $ docker pull pypy@sha256:66dec6025050f3e697a68721a416fc367097694accf91b2eca45a6
 
 -	Layers:
 	-	`sha256:e2b87c4a315cd159db1e4953fe516f5cae8450c90690f0a24d2c3d63535c1568`  
-		Last Modified: Tue, 24 Dec 2024 22:34:24 GMT  
 		Size: 2.7 MB (2695338 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:76ec51a810f8a984c0bb3c90d16925b16b5e8d1b55e70873a64775f674a36ba0`  
-		Last Modified: Tue, 24 Dec 2024 22:34:24 GMT  
 		Size: 28.2 KB (28166 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -138,7 +137,7 @@ CMD ["pypy3"]
 		Size: 28.9 MB (28907750 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c36ab1a94d3878601fd93b79bbdbeb12f1e5d816d464ff8d8fa602f68a3f2946`  
-		Last Modified: Tue, 07 Jan 2025 21:50:03 GMT  
+		Last Modified: Wed, 25 Dec 2024 04:01:39 GMT  
 		Size: 3.3 MB (3306206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -207,7 +206,6 @@ CMD ["pypy3"]
 		Size: 31.2 MB (31178945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eedba45b47b91aec0c57851fab60cabce7da96e23e9f013722eb8ec32d1a34dd`  
-		Last Modified: Tue, 24 Dec 2024 22:28:48 GMT  
 		Size: 874.7 KB (874706 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5466c3d4f2eacef0b8a70b0b3d8776ef87e0786d3b4a07ed505f71494b5367af`  
@@ -235,6 +233,7 @@ $ docker pull pypy@sha256:3acb7b695dac61588e1f6fa7ca8f7b9bed8c98b0958e71ec75b92e
 
 -	Layers:
 	-	`sha256:7bd530df1e2fc45ade38cb3f9b3ba8b03b74619089f1eead659c9d05e2510f98`  
+		Last Modified: Tue, 24 Dec 2024 22:28:48 GMT  
 		Size: 2.7 MB (2692394 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0fb99ac5d97b43e650c81e7741429dd774092d2c9fdc0aa911f2ac7ba463bbd2`  
