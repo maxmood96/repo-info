@@ -114,6 +114,7 @@ $ docker pull rocket.chat@sha256:5646eff259128b76ee361b117b2967455aa5a7b7956f539
 
 -	Layers:
 	-	`sha256:6ea6d62242057329502f2aff879352403f210c263b1e77cf19704ef9a12902fd`  
+		Last Modified: Wed, 08 Jan 2025 05:53:20 GMT  
 		Size: 21.7 KB (21652 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -381,6 +382,7 @@ CMD ["node" "main.js"]
 		Size: 35.8 MB (35760875 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:123c05ff4dd5b1efaf2e0e0129242f6edf97089b014f39d01f7e6be85b23ff21`  
+		Last Modified: Wed, 08 Jan 2025 05:53:23 GMT  
 		Size: 1.7 KB (1690 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -412,7 +414,6 @@ $ docker pull rocket.chat@sha256:6aca1a12b9f1719726563e511658062de06cf4df8bea883
 
 -	Layers:
 	-	`sha256:b8d2d92f154e2f4d72669c4d64af4fb528427ef694a56ca325eee6ac5a947f14`  
-		Last Modified: Tue, 24 Dec 2024 22:18:29 GMT  
 		Size: 21.4 KB (21355 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -480,6 +481,7 @@ CMD ["node" "main.js"]
 		Size: 35.8 MB (35760875 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:123c05ff4dd5b1efaf2e0e0129242f6edf97089b014f39d01f7e6be85b23ff21`  
+		Last Modified: Wed, 08 Jan 2025 05:53:23 GMT  
 		Size: 1.7 KB (1690 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -511,7 +513,6 @@ $ docker pull rocket.chat@sha256:6aca1a12b9f1719726563e511658062de06cf4df8bea883
 
 -	Layers:
 	-	`sha256:b8d2d92f154e2f4d72669c4d64af4fb528427ef694a56ca325eee6ac5a947f14`  
-		Last Modified: Tue, 24 Dec 2024 22:18:29 GMT  
 		Size: 21.4 KB (21355 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -611,7 +612,6 @@ $ docker pull rocket.chat@sha256:c7e7a8e1e5a2c5b04bd3b5c19ccf396d90d176c2328bed3
 
 -	Layers:
 	-	`sha256:b2bb2668044339ab992b9c0f2262270e9c115a101302bbd9f95daa7b77f1505f`  
-		Last Modified: Tue, 24 Dec 2024 22:18:26 GMT  
 		Size: 21.4 KB (21355 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -711,7 +711,6 @@ $ docker pull rocket.chat@sha256:c7e7a8e1e5a2c5b04bd3b5c19ccf396d90d176c2328bed3
 
 -	Layers:
 	-	`sha256:b2bb2668044339ab992b9c0f2262270e9c115a101302bbd9f95daa7b77f1505f`  
-		Last Modified: Tue, 24 Dec 2024 22:18:26 GMT  
 		Size: 21.4 KB (21355 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -811,6 +810,7 @@ $ docker pull rocket.chat@sha256:5646eff259128b76ee361b117b2967455aa5a7b7956f539
 
 -	Layers:
 	-	`sha256:6ea6d62242057329502f2aff879352403f210c263b1e77cf19704ef9a12902fd`  
+		Last Modified: Wed, 08 Jan 2025 05:53:20 GMT  
 		Size: 21.7 KB (21652 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -910,6 +910,7 @@ $ docker pull rocket.chat@sha256:5646eff259128b76ee361b117b2967455aa5a7b7956f539
 
 -	Layers:
 	-	`sha256:6ea6d62242057329502f2aff879352403f210c263b1e77cf19704ef9a12902fd`  
+		Last Modified: Wed, 08 Jan 2025 05:53:20 GMT  
 		Size: 21.7 KB (21652 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1042,6 +1043,7 @@ $ docker pull rocket.chat@sha256:a752b4d6da0aa41d2bbdda0d88fe2838a7037db835f6ef7
 
 -	Layers:
 	-	`sha256:830cc34f9ab0b8a923882fbcabd8521ebd9c8cf88652822fa00436aa49a353a2`  
+		Last Modified: Tue, 24 Dec 2024 23:22:58 GMT  
 		Size: 23.7 KB (23709 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1440,6 +1442,7 @@ $ docker pull rocket.chat@sha256:a752b4d6da0aa41d2bbdda0d88fe2838a7037db835f6ef7
 
 -	Layers:
 	-	`sha256:830cc34f9ab0b8a923882fbcabd8521ebd9c8cf88652822fa00436aa49a353a2`  
+		Last Modified: Tue, 24 Dec 2024 23:22:58 GMT  
 		Size: 23.7 KB (23709 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1572,6 +1575,7 @@ $ docker pull rocket.chat@sha256:a752b4d6da0aa41d2bbdda0d88fe2838a7037db835f6ef7
 
 -	Layers:
 	-	`sha256:830cc34f9ab0b8a923882fbcabd8521ebd9c8cf88652822fa00436aa49a353a2`  
+		Last Modified: Tue, 24 Dec 2024 23:22:58 GMT  
 		Size: 23.7 KB (23709 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1704,5 +1708,6 @@ $ docker pull rocket.chat@sha256:a752b4d6da0aa41d2bbdda0d88fe2838a7037db835f6ef7
 
 -	Layers:
 	-	`sha256:830cc34f9ab0b8a923882fbcabd8521ebd9c8cf88652822fa00436aa49a353a2`  
+		Last Modified: Tue, 24 Dec 2024 23:22:58 GMT  
 		Size: 23.7 KB (23709 bytes)  
 		MIME: application/vnd.in-toto+json
