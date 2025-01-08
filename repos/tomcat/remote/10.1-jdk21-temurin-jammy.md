@@ -106,7 +106,7 @@ CMD ["catalina.sh" "run"]
 		Size: 157.6 MB (157585538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9630db58b5232fb46e6ef560b306e2517df1dae909df8fbd69fec8010c8f5568`  
-		Last Modified: Thu, 24 Oct 2024 00:58:39 GMT  
+		Last Modified: Wed, 08 Jan 2025 04:57:31 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:10353dd74c3c29e485737364bc076929167f6d3f2cab9c31376eef898e729ddb`  
@@ -146,10 +146,10 @@ $ docker pull tomcat@sha256:c3ae0d05e6ace6a5e0578105cd01635ffacec7c920e5b194d79e
 
 -	Layers:
 	-	`sha256:71ef013f333e2190845ec542ddde01a245ceb5579fb3b79e4c8ad39a3ac93ab0`  
+		Last Modified: Tue, 10 Dec 2024 01:29:58 GMT  
 		Size: 4.0 MB (4016991 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:862c27771e3ed5da03761bb713c4c977540133c03a6963e65694b6d8b7daaf3a`  
-		Last Modified: Tue, 10 Dec 2024 01:29:58 GMT  
 		Size: 29.0 KB (28969 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -232,14 +232,14 @@ CMD ["catalina.sh" "run"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
-		Last Modified: Wed, 08 Jan 2025 03:54:57 GMT  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bbd1f22a9dd7228be27e706b25f1b3429d02ca813b8c0e0263edaa65a05911c8`  
+		Last Modified: Thu, 24 Oct 2024 01:09:29 GMT  
 		Size: 22.1 MB (22072026 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:769c454e4083771448c1ca566548905f47f1628bcd3d645e5486a44156028a57`  
-		Last Modified: Thu, 24 Oct 2024 01:15:08 GMT  
 		Size: 155.8 MB (155805359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b6fa8b0f1fe6e6b10b29a94eda5f2f8685322a6a9a25fcdf3aa25f40dd28d31`  
@@ -390,7 +390,7 @@ CMD ["catalina.sh" "run"]
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eef52b3e2ff29bb8151e108853e8bfd5de3fcd2dd14221f38707ca3456c4a236`  
-		Last Modified: Wed, 08 Jan 2025 03:58:55 GMT  
+		Last Modified: Tue, 10 Dec 2024 01:37:12 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -422,7 +422,6 @@ $ docker pull tomcat@sha256:fb7af8f2c017acd54169ad3558cee469dc9bb116b01e40295e0c
 
 -	Layers:
 	-	`sha256:495c2d048751cd9ddad880a65496e3b5ce422a45ea87c3a5ee2ac755f88e03c6`  
-		Last Modified: Tue, 10 Dec 2024 01:40:43 GMT  
 		Size: 4.0 MB (4044410 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1f2d8fc0e2f309c3675d9dafe6c15c67b8382409d91fb5c8071da0ae3f473618`  
@@ -525,10 +524,10 @@ CMD ["catalina.sh" "run"]
 		Size: 161.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cbea120d399c572b15f50bca7216d291ce57e893795d7adc44694532ae5e9a8f`  
+		Last Modified: Thu, 24 Oct 2024 17:38:20 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9f67a4535a8b8813e30fddef34ebb728f1ad91a3d1bcdad3cfc79a23e4fdef80`  
-		Last Modified: Tue, 10 Dec 2024 05:01:03 GMT  
 		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -536,7 +535,6 @@ CMD ["catalina.sh" "run"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ceb5105995ad3f33d88e840766ed26cb107e31da43d41aee75a3f116b26388bd`  
-		Last Modified: Tue, 10 Dec 2024 05:03:47 GMT  
 		Size: 14.3 MB (14326542 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -560,6 +558,7 @@ $ docker pull tomcat@sha256:361c0ae1ffbac2375ed3a67e447f02a13e2017111614fb90c7aa
 
 -	Layers:
 	-	`sha256:8a1d3378bc389d03510f5a5f73158d4a5ccf3cf8d3ed2dce4708f158b7af2104`  
+		Last Modified: Tue, 10 Dec 2024 05:03:46 GMT  
 		Size: 3.9 MB (3941893 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:72c68b40cf36e55dcd08ebb6b9bd97152c3ad8b0449903117444a4953aa0a44c`  
