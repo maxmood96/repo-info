@@ -141,7 +141,6 @@ CMD ["convertigo"]
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb5d4d56ef13b8a0dc2486230ea1989490aa6a301fbc594a8423fc3a2f861e89`  
-		Last Modified: Thu, 24 Oct 2024 00:58:40 GMT  
 		Size: 20.7 MB (20691339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c4219879992d7c2f81b5b001a1c16992a494a179741f0e543f84b55b1c5cffa0`  
@@ -189,7 +188,6 @@ CMD ["convertigo"]
 		Size: 4.5 KB (4471 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:44747a636471adb17015212e00d56ab0b79e4bbe9bcfb0c6748d4aa45cc804f5`  
-		Last Modified: Tue, 10 Dec 2024 02:09:48 GMT  
 		Size: 28.0 KB (27999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:00dea8155813965ebd6a779392efc8ba07642871cd452cc726947f98ae38c346`  
@@ -197,7 +195,6 @@ CMD ["convertigo"]
 		Size: 118.7 MB (118693347 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:35063eeaca97159f5b22b697d72f6222bb844a3768a149e29a4147913bb50b9d`  
-		Last Modified: Tue, 10 Dec 2024 02:09:49 GMT  
 		Size: 449.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:94d1b38cfd8970fd58ee574098905207035012c3a02a1d7e774c7f596e6dd1b1`  
@@ -399,7 +396,6 @@ CMD ["convertigo"]
 		Size: 2.3 MB (2261621 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:96ad038c8775610237e06244e4292648c25412e5cee428e60e1a2bc9c064c12c`  
-		Last Modified: Tue, 10 Dec 2024 02:51:47 GMT  
 		Size: 4.5 KB (4475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c3fa7ae7d0b1b6b1d623e08f8bcb7ea7ca9c673bf88a5ef7c6807ac0d3135bcd`  
@@ -415,7 +411,6 @@ CMD ["convertigo"]
 		Size: 452.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d4e2b23c367ef96f8f633595085d6932364dc78d718a457bc600a5cc8d49a9b9`  
-		Last Modified: Tue, 10 Dec 2024 02:51:48 GMT  
 		Size: 2.2 KB (2244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -439,10 +434,10 @@ $ docker pull convertigo@sha256:16a2fdd20acd3eebdb663a64a7f6aa0a2b632a9973b757cd
 
 -	Layers:
 	-	`sha256:6aac18513bff789f3dc509cda915bb794847ade8bc34ab36c681d1871b0c54a3`  
-		Last Modified: Tue, 10 Dec 2024 02:51:47 GMT  
 		Size: 4.2 MB (4239401 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0701fd3b4726aefd39e1a452a57bd250f0db5539a9ca5f174f44d1e1b9dee68d`  
+		Last Modified: Wed, 08 Jan 2025 01:29:09 GMT  
 		Size: 46.0 KB (45967 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -581,7 +576,6 @@ CMD ["convertigo"]
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb5d4d56ef13b8a0dc2486230ea1989490aa6a301fbc594a8423fc3a2f861e89`  
-		Last Modified: Thu, 24 Oct 2024 00:58:40 GMT  
 		Size: 20.7 MB (20691339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c4219879992d7c2f81b5b001a1c16992a494a179741f0e543f84b55b1c5cffa0`  
@@ -629,7 +623,6 @@ CMD ["convertigo"]
 		Size: 4.5 KB (4471 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:44747a636471adb17015212e00d56ab0b79e4bbe9bcfb0c6748d4aa45cc804f5`  
-		Last Modified: Tue, 10 Dec 2024 02:09:48 GMT  
 		Size: 28.0 KB (27999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:00dea8155813965ebd6a779392efc8ba07642871cd452cc726947f98ae38c346`  
@@ -637,7 +630,6 @@ CMD ["convertigo"]
 		Size: 118.7 MB (118693347 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:35063eeaca97159f5b22b697d72f6222bb844a3768a149e29a4147913bb50b9d`  
-		Last Modified: Tue, 10 Dec 2024 02:09:49 GMT  
 		Size: 449.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:94d1b38cfd8970fd58ee574098905207035012c3a02a1d7e774c7f596e6dd1b1`  
@@ -839,7 +831,6 @@ CMD ["convertigo"]
 		Size: 2.3 MB (2261621 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:96ad038c8775610237e06244e4292648c25412e5cee428e60e1a2bc9c064c12c`  
-		Last Modified: Tue, 10 Dec 2024 02:51:47 GMT  
 		Size: 4.5 KB (4475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c3fa7ae7d0b1b6b1d623e08f8bcb7ea7ca9c673bf88a5ef7c6807ac0d3135bcd`  
@@ -855,7 +846,6 @@ CMD ["convertigo"]
 		Size: 452.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d4e2b23c367ef96f8f633595085d6932364dc78d718a457bc600a5cc8d49a9b9`  
-		Last Modified: Tue, 10 Dec 2024 02:51:48 GMT  
 		Size: 2.2 KB (2244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -879,10 +869,10 @@ $ docker pull convertigo@sha256:16a2fdd20acd3eebdb663a64a7f6aa0a2b632a9973b757cd
 
 -	Layers:
 	-	`sha256:6aac18513bff789f3dc509cda915bb794847ade8bc34ab36c681d1871b0c54a3`  
-		Last Modified: Tue, 10 Dec 2024 02:51:47 GMT  
 		Size: 4.2 MB (4239401 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0701fd3b4726aefd39e1a452a57bd250f0db5539a9ca5f174f44d1e1b9dee68d`  
+		Last Modified: Wed, 08 Jan 2025 01:29:09 GMT  
 		Size: 46.0 KB (45967 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1021,7 +1011,6 @@ CMD ["convertigo"]
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb5d4d56ef13b8a0dc2486230ea1989490aa6a301fbc594a8423fc3a2f861e89`  
-		Last Modified: Thu, 24 Oct 2024 00:58:40 GMT  
 		Size: 20.7 MB (20691339 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c4219879992d7c2f81b5b001a1c16992a494a179741f0e543f84b55b1c5cffa0`  
@@ -1069,7 +1058,6 @@ CMD ["convertigo"]
 		Size: 4.5 KB (4471 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:44747a636471adb17015212e00d56ab0b79e4bbe9bcfb0c6748d4aa45cc804f5`  
-		Last Modified: Tue, 10 Dec 2024 02:09:48 GMT  
 		Size: 28.0 KB (27999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:00dea8155813965ebd6a779392efc8ba07642871cd452cc726947f98ae38c346`  
@@ -1077,7 +1065,6 @@ CMD ["convertigo"]
 		Size: 118.7 MB (118693347 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:35063eeaca97159f5b22b697d72f6222bb844a3768a149e29a4147913bb50b9d`  
-		Last Modified: Tue, 10 Dec 2024 02:09:49 GMT  
 		Size: 449.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:94d1b38cfd8970fd58ee574098905207035012c3a02a1d7e774c7f596e6dd1b1`  
@@ -1279,7 +1266,6 @@ CMD ["convertigo"]
 		Size: 2.3 MB (2261621 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:96ad038c8775610237e06244e4292648c25412e5cee428e60e1a2bc9c064c12c`  
-		Last Modified: Tue, 10 Dec 2024 02:51:47 GMT  
 		Size: 4.5 KB (4475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c3fa7ae7d0b1b6b1d623e08f8bcb7ea7ca9c673bf88a5ef7c6807ac0d3135bcd`  
@@ -1295,7 +1281,6 @@ CMD ["convertigo"]
 		Size: 452.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d4e2b23c367ef96f8f633595085d6932364dc78d718a457bc600a5cc8d49a9b9`  
-		Last Modified: Tue, 10 Dec 2024 02:51:48 GMT  
 		Size: 2.2 KB (2244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -1319,9 +1304,9 @@ $ docker pull convertigo@sha256:16a2fdd20acd3eebdb663a64a7f6aa0a2b632a9973b757cd
 
 -	Layers:
 	-	`sha256:6aac18513bff789f3dc509cda915bb794847ade8bc34ab36c681d1871b0c54a3`  
-		Last Modified: Tue, 10 Dec 2024 02:51:47 GMT  
 		Size: 4.2 MB (4239401 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:0701fd3b4726aefd39e1a452a57bd250f0db5539a9ca5f174f44d1e1b9dee68d`  
+		Last Modified: Wed, 08 Jan 2025 01:29:09 GMT  
 		Size: 46.0 KB (45967 bytes)  
 		MIME: application/vnd.in-toto+json
