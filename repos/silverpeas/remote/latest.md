@@ -121,11 +121,9 @@ CMD ["/opt/run.sh"]
 		Size: 2.5 MB (2538613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a8a6ae83999e6cf7899ece1f9c04e0bc5968a3d9991f882f53199fa881fbecc2`  
-		Last Modified: Thu, 12 Dec 2024 19:32:31 GMT  
 		Size: 235.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a822fc87adf6a77502d4c07cc060d3ef30f851ce4101d385d7ca0e9428c9b547`  
-		Last Modified: Thu, 12 Dec 2024 19:32:31 GMT  
 		Size: 131.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e2ba68912f00400fc149a83d263d8d23750f3bb6b2033b2a638ffc5f0b6003e1`  
