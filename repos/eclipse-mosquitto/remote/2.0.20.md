@@ -57,10 +57,11 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 
 -	Layers:
 	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 23:53:52 GMT  
+		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
 		Size: 3.6 MB (3613999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4d4ff20bd0802ef1c0be7a00678d02b9fba26c9da54e0b8b4c3c49c8c8a0537e`  
+		Last Modified: Tue, 07 Jan 2025 03:14:42 GMT  
 		Size: 732.0 KB (731961 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0653e90c7e855a3bf85fc8861a9dd1eb6c8b2a170223cc257d0045c971f5d2c5`  
@@ -88,6 +89,7 @@ $ docker pull eclipse-mosquitto@sha256:064a0ebe98814f955826a7e0bf24da36a8a273178
 		Size: 172.0 KB (171978 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:999e4df43e1761848d8a1b90a6c4979ea06b81fb0c59bec2ad9bb3819c0ab63e`  
+		Last Modified: Tue, 07 Jan 2025 03:14:42 GMT  
 		Size: 23.2 KB (23154 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -379,6 +381,7 @@ $ docker pull eclipse-mosquitto@sha256:ffb1e9984acf19051a66fda1656652a78ce53b4bd
 		Size: 170.1 KB (170085 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:37bc99e563399860dfa2510774fcda871a1302283aa46217e41a3408561dbe32`  
+		Last Modified: Tue, 07 Jan 2025 03:36:45 GMT  
 		Size: 23.2 KB (23222 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -424,7 +427,6 @@ CMD ["/usr/sbin/mosquitto" "-c" "/mosquitto/config/mosquitto.conf"]
 		Size: 3.5 MB (3459179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:acd08826e3e8d7c757c71202c64b117592b488fd76fa1a8d940bf3f175280055`  
-		Last Modified: Tue, 07 Jan 2025 03:30:57 GMT  
 		Size: 756.4 KB (756430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8294327a6cb4b88dc1e03241df917979f49f7d4af33578dec8e87b3ca6b75c5b`  
@@ -452,6 +454,5 @@ $ docker pull eclipse-mosquitto@sha256:8f5760c4944fb3b078c487ec6ea87269dcdec34bd
 		Size: 170.0 KB (170027 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:48ff870a0b92f9d8f533159d423d0b1d1896e63398ab7cfead5f601cf19e1662`  
-		Last Modified: Tue, 07 Jan 2025 03:30:57 GMT  
 		Size: 23.2 KB (23153 bytes)  
 		MIME: application/vnd.in-toto+json
