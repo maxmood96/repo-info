@@ -107,11 +107,10 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 
 -	Layers:
 	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:03:30 GMT  
 		Size: 3.6 MB (3613999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5f690cc5dff53b7f3772d63ffe199fb2f3eddfd24672e86ab202b3efe6169474`  
-		Last Modified: Tue, 07 Jan 2025 03:30:18 GMT  
 		Size: 3.3 MB (3293723 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:865d24122ef3f248ea53498d2b868d31dd0ef496bdd13d9f4f69f19e82db3d61`  
@@ -123,14 +122,13 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a3fe049907d8e55cd4a1516a4cf2a21e29d0d30738ef8c1b8b242d1af40d9adb`  
-		Last Modified: Tue, 07 Jan 2025 03:30:18 GMT  
 		Size: 12.5 MB (12545519 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d4b64d5bb1a1596194c5c8ad2aa01366b754a5479a6505577bdd7691b03b7609`  
+		Last Modified: Tue, 07 Jan 2025 03:30:18 GMT  
 		Size: 484.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:92ebd68e3ae833d8afe00b55482b1736e39089eb9f38e8c3a71c00e7fc6896e0`  
-		Last Modified: Tue, 07 Jan 2025 03:30:19 GMT  
 		Size: 13.1 MB (13106340 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:52d1bb75461359b4aa2cb3d3878c8e9641482f7f167a80463b74dfbf49ea24f0`  
@@ -138,15 +136,13 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 2.4 KB (2444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3220b0206dbbcd36a7467b8ad0e4383fa270bb3f31197073af8f7611e6ddaea9`  
-		Last Modified: Tue, 07 Jan 2025 03:30:19 GMT  
 		Size: 19.4 KB (19430 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:796a19637bc5f89c6de60486aec2abb2530bd7baf1791a98dbe823f7f91eff0b`  
-		Last Modified: Tue, 07 Jan 2025 03:30:19 GMT  
 		Size: 9.2 KB (9179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6e8efde89fc4762059ed8c419d4b412ef96061dc085ec3aa790b3702050c23a`  
@@ -154,7 +150,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 1.9 MB (1902065 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6813709f9c63dfddcfa14ce2dab75ca0fd13d2f253ba6c93812eb320d8c70d9b`  
-		Last Modified: Wed, 08 Jan 2025 00:30:45 GMT  
 		Size: 310.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a0029040f64704864b7b6937fd4d4f50aa26f993540d18cb99213481a140eb94`  
@@ -162,6 +157,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 742.2 KB (742241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4b2ef42aba4bc5dac3ac3db0d4c6768914d26a67c7e9f38231f95e56b73cc46f`  
+		Last Modified: Wed, 08 Jan 2025 00:30:45 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f218b52806d254e900d665f0e5a680e82d8099271b372d2f12da952bb5424425`  
@@ -185,6 +181,7 @@ $ docker pull drupal@sha256:13f9b39b0ace618e769dedd5f3e6805cacf7666c44634db53072
 
 -	Layers:
 	-	`sha256:10e011561e9df66255373384497f5b05229abeb74f95210a86f1550263cc274f`  
+		Last Modified: Wed, 08 Jan 2025 00:30:45 GMT  
 		Size: 351.5 KB (351457 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:999d9c09b4ac6e6c24dad616cda683675d17b93b7dfed7a0fbf9c211741ee255`  
@@ -299,7 +296,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 496.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cfe23d072727bff6b8ba862d895cde9b557b0406427529680dd8ac33a0963596`  
-		Last Modified: Tue, 07 Jan 2025 05:33:10 GMT  
 		Size: 11.9 MB (11932931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e53789333b37bfb8004b21fd6493d618adf2d0026413d86d137f020354037a02`  
@@ -311,19 +307,16 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 19.2 KB (19216 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e3ae033f114969ea6d8a5b486b3dc950eadd6b7d5edca32e0ddbc9490ce0e15`  
-		Last Modified: Tue, 07 Jan 2025 05:33:09 GMT  
 		Size: 9.2 KB (9177 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bcc58e15b06205d2c6097d52ddc4bbc5bba060bed98f11c92cd7a6b105fe952a`  
-		Last Modified: Tue, 07 Jan 2025 20:25:26 GMT  
 		Size: 1.4 MB (1385574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f93046a029a8f7260177e9c9f1cb68cedda9e8eb467ac5bced8f611737a5d314`  
-		Last Modified: Tue, 07 Jan 2025 20:25:26 GMT  
 		Size: 312.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ad226106c754e0053574e8fbb1f7fae694d672194f3402f1cd3668cdb368d8f2`  
@@ -335,7 +328,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14cfa01b85fdd1bd45dd638149314f36353cfe4b3931cfec73b118e6746d5d51`  
-		Last Modified: Wed, 08 Jan 2025 00:28:50 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:35:50 GMT  
 		Size: 20.0 MB (20033270 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -355,7 +348,6 @@ $ docker pull drupal@sha256:7ec1ae944cd05d4180de3f8c7dfa43d6430397a4d9534aa49118
 
 -	Layers:
 	-	`sha256:bb1c656319d311b488e88105857fb5f97ec61de5bb598fcddb53424fb173e5fa`  
-		Last Modified: Wed, 08 Jan 2025 00:28:48 GMT  
 		Size: 33.6 KB (33615 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -466,6 +458,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 493.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:677b0030d11cd5e15f8e637279312c0f9fc467acf681cb2c9fcf5880a45b6483`  
+		Last Modified: Tue, 07 Jan 2025 05:16:17 GMT  
 		Size: 11.2 MB (11187713 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:100f2d670d3f27073da5bf6030d6bae6a0a9be09896a0a2c9ee9dc32d36dbcc0`  
@@ -473,11 +466,10 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 2.4 KB (2447 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d6573a35403a7d83b79a2b28a3e623b6ff10f69fbd4c918b07d3825ad1047b8a`  
-		Last Modified: Tue, 07 Jan 2025 05:16:17 GMT  
 		Size: 19.2 KB (19221 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:45c9c8ac020413a046ccd8c3d12af754ed8cdef6e65c87068835dd667dc42648`  
@@ -485,11 +477,9 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 9.2 KB (9178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d52c63b7c81fa3b73a47571d1346561e793e34ceddd422c11b69ecdee61d92aa`  
-		Last Modified: Tue, 07 Jan 2025 20:58:49 GMT  
 		Size: 1.3 MB (1275486 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:852cd5e2511ccdbab587d18820acc9670ea996a357eaa917c0356f7956e48f29`  
-		Last Modified: Tue, 07 Jan 2025 20:58:48 GMT  
 		Size: 309.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a718c31efe12e76a09dd2ca6c8d380984c4ad79ba7d3a6d2bcf01e9c564e57f5`  
@@ -501,7 +491,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b3778828be7f388d433cacfb23cd442f11af9feddece16f7d5a1834a2ad91587`  
-		Last Modified: Tue, 07 Jan 2025 20:58:50 GMT  
 		Size: 20.0 MB (20030948 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -521,7 +510,6 @@ $ docker pull drupal@sha256:564ca2fb3a7ca78e5e47af8a2b3e5d4da2da6e7d3c593d45493d
 
 -	Layers:
 	-	`sha256:7fe0672eaf7b983b174702781a4186b35df502b8904f6ad4d27912cec4fb91e0`  
-		Last Modified: Tue, 07 Jan 2025 20:58:48 GMT  
 		Size: 348.7 KB (348664 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4b057725fa52290c5157450ce08631043dd28204a5acb104d66385813be0873b`  
@@ -625,7 +613,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 944.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3c134198c2af672fa5dd2e3639c0be7847f521d9b05277485eaa64a00c4c20fb`  
-		Last Modified: Tue, 07 Jan 2025 04:36:53 GMT  
 		Size: 216.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:edcc80b1ee3d2edc1ba2564131aaaaec09b2845b926a65578aeec496dbd02346`  
@@ -637,7 +624,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 493.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c221958f4538af6ef29155cbb7c3dd84d1de7c5d00e852fdb0e98ce9149210f8`  
-		Last Modified: Tue, 07 Jan 2025 05:58:00 GMT  
 		Size: 13.2 MB (13164358 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6a2b3608c610cfca4525882a726c3f3242afdbccb015902a10c417a9a9c7c8c4`  
@@ -649,11 +635,10 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 19.2 KB (19201 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9072e0ac4a10978a65c662d5928d3cbbd909ef3f8ea91bb3424523d92ddd9c4f`  
-		Last Modified: Tue, 07 Jan 2025 05:58:00 GMT  
 		Size: 9.2 KB (9178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8a7a9282063173e2ca816537b7b5fed54624f8241792760e2543c131084436f5`  
@@ -661,11 +646,9 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 2.2 MB (2179376 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:db9590f8c734c451015433d0693df366e064ec688b6af05d00929cf4695e39dc`  
-		Last Modified: Tue, 07 Jan 2025 18:51:01 GMT  
 		Size: 310.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3daabd7ecd5ea1163adbfcdadbdc44e7e5c197532a42db754ff169ef1794f1a0`  
-		Last Modified: Tue, 07 Jan 2025 18:51:01 GMT  
 		Size: 742.2 KB (742239 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ac6ef24497ae36255d85c44ed89e9db50ae1719d302aa13a1f32f9fbc17b107c`  
@@ -789,7 +772,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 3.5 MB (3463189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:918daacf795a19aae6adaf948f0febb2d904c54e239cebd8c33369e5a3441511`  
-		Last Modified: Tue, 07 Jan 2025 03:27:52 GMT  
 		Size: 3.3 MB (3339862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9a3610ee925894c856be26fe360c4774bcaa60a51ec41217063e6905d6b6e4cf`  
@@ -805,7 +787,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 12.5 MB (12545518 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fa669ff8881d0d338eca785d23b2f77d7408743ab55fa8d43bd28bb9a8a7b32`  
-		Last Modified: Tue, 07 Jan 2025 03:27:53 GMT  
 		Size: 487.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fbd014f615681424c13e85c4f67dad6e992c9b57112049e9a5ec347ae843c97e`  
@@ -813,7 +794,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 13.4 MB (13441154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:be6cca70eb8a0ba2bd85169ff488c00be5ed491d8cf68e0b05b2869fb4893582`  
-		Last Modified: Wed, 08 Jan 2025 07:31:24 GMT  
+		Last Modified: Wed, 08 Jan 2025 10:31:03 GMT  
 		Size: 2.4 KB (2446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aa561ec0760ae4a0efeb07a62740d96a228bb589c473d4d3909b61e86a0e0f39`  
@@ -821,7 +802,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 19.4 KB (19418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:859562fb4dfb55be1a7d7217b11a5cfcf54261ac67fdeb04837ebbd98baf2a4b`  
@@ -865,7 +846,7 @@ $ docker pull drupal@sha256:172438438f7433dba061674af73c6c1820bc0a1624abca28f5b0
 
 -	Layers:
 	-	`sha256:09585cb5e08a07158c671186c3f7e7c6b0281fbd779d5af74bfb499c326c3853`  
-		Last Modified: Wed, 08 Jan 2025 06:36:25 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:29:19 GMT  
 		Size: 351.4 KB (351412 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ab73fdb9024bc806a4b3140e166f532db79f4fc89081505e6c358375a694b5d2`  
@@ -961,10 +942,10 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 3.6 MB (3568727 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:853c1c7ca97bd5883ed3428282fc1d95b690329961e07598c989d7cc3e28ab72`  
-		Last Modified: Tue, 07 Jan 2025 04:08:03 GMT  
 		Size: 3.4 MB (3419545 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2dd9082a14288e52e96ed72a73b7cb744d6f4a60665586a1301c8a7d13caadf8`  
+		Last Modified: Tue, 07 Jan 2025 04:08:02 GMT  
 		Size: 944.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:49e6835799395b61d043101026bec9208c8d02d4ab267305b04621b87ef4aff2`  
@@ -980,10 +961,10 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 492.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:368d50346186977c6ba5f16aade07ad92c49637bfbc12f788408c6e9e012f095`  
+		Last Modified: Tue, 07 Jan 2025 05:11:38 GMT  
 		Size: 13.6 MB (13604529 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c08a03140012bb612e445fe05830b1a363fbb17abecd6e361950b9238ad51a0c`  
-		Last Modified: Tue, 07 Jan 2025 05:11:38 GMT  
 		Size: 2.4 KB (2444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b8a0e28d62bb4c1f4b8ad709bc15cc908fbffebdf83ad7d4682492c1f80f85a`  
@@ -991,11 +972,11 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 19.2 KB (19203 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:52338ef7fba2476f39af648d727892100e312ccf03c4d55e07e411978b4e49bf`  
-		Last Modified: Wed, 08 Jan 2025 07:31:28 GMT  
+		Last Modified: Tue, 07 Jan 2025 05:11:38 GMT  
 		Size: 9.2 KB (9180 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:77bab5e2e4196597b0deb6a44d3ff24fc4067a96b228c6510aaf0c29443e72af`  
@@ -1011,7 +992,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 742.2 KB (742241 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:30a5092fbf32c427d5a80a3c702810fccbea075b08cfcb5c848882a615a84651`  
-		Last Modified: Tue, 07 Jan 2025 12:06:19 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5c2e39f3cc420375b9f298efdd546e09427fca8b071ccc42c33d7db0a27f83ea`  
@@ -1134,7 +1114,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 5.4 MB (5382174 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:71d2dfe107b4bddcc389bedcee9ca3fc81f02dc0799e313c21f307ddb454b4dc`  
-		Last Modified: Tue, 12 Nov 2024 06:14:47 GMT  
 		Size: 947.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6df7310166e795cb48e721a885b92af688db981613ad6597943011293aca738c`  
@@ -1154,17 +1133,18 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 13.2 MB (13152700 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:965a085d2679550a199b727ae369f24a296ddbe6b6ae6b1cd2a44b9a6ae3504f`  
+		Last Modified: Sat, 21 Dec 2024 07:40:23 GMT  
 		Size: 2.4 KB (2445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9e2e3ffa1aab30fa8a111fcf68aa7840c88c5bc806344311e426662116359cdc`  
-		Last Modified: Sat, 21 Dec 2024 07:40:23 GMT  
 		Size: 19.4 KB (19442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e529ef423e863b81f4cef6e0c5e42ea1004213b829d0dc331d825618111e74c3`  
+		Last Modified: Sat, 21 Dec 2024 07:40:23 GMT  
 		Size: 9.2 KB (9179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:99dbebd3e343e0ef7e4afcc462e544713323a3b6c291029addeafce275dd6edb`  
@@ -1204,6 +1184,7 @@ $ docker pull drupal@sha256:fd6b60d4c9f4256333da4c1592b5a26908a701f6393a6f32808e
 
 -	Layers:
 	-	`sha256:92fa9eaa52bbc77338027df969227c2866d7d2f0d8ea86f70b37e4d9a7132143`  
+		Last Modified: Sat, 21 Dec 2024 18:26:06 GMT  
 		Size: 351.3 KB (351325 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:54bba1fdda933e26cd3bcf8f3eca0e8954c408d884f759bf764f5ae3b4213c76`  
@@ -1295,10 +1276,10 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 
 -	Layers:
 	-	`sha256:2ed16bdf68dac880df118dfa3d21d44652bc18382729359f97297fa5998086cd`  
+		Last Modified: Tue, 07 Jan 2025 02:32:49 GMT  
 		Size: 3.5 MB (3459179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bcacb882a5db1e743c34cc92815e2f3aab3e188ee2522e3208a1ed1657316319`  
-		Last Modified: Tue, 07 Jan 2025 04:04:30 GMT  
 		Size: 3.5 MB (3485610 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:271c95db3928cf5b057875d0344bcbb766164738b63d3ec9f076fd1b10abd46e`  
@@ -1310,7 +1291,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cf20c2050f484c9af7008ba83abc6ce7a010848edf6ad571a533ae73e0a90dbd`  
-		Last Modified: Tue, 07 Jan 2025 05:11:20 GMT  
 		Size: 12.5 MB (12545508 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:65ae2880b0747a609c8902f536ef1ec04422094651f892a4bf87ca362025084e`  
@@ -1322,7 +1302,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 13.1 MB (13067183 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1ab0346c74a235320ef204a8f1b83416913ddde772b2d036336bb225cff443ea`  
-		Last Modified: Tue, 07 Jan 2025 05:14:54 GMT  
 		Size: 2.4 KB (2448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:53216e192d2d31e0fed038d330ff26607712e1a1d8cf698cb88632f6c9506c67`  
@@ -1330,7 +1309,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 19.2 KB (19211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 09:42:44 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c16e84f168090a37da8d88a59b075495a33cec5759c8b2217f0b1249999d799f`  
@@ -1342,7 +1321,6 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 1.6 MB (1596734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1f70b941d26ba3ede3bf796c8ae0446630ad6c602e2c1956de39631cb24d3e2e`  
-		Last Modified: Tue, 07 Jan 2025 19:29:17 GMT  
 		Size: 309.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5d37f1b5c92beb7e48196a64d4173719cc9f33f1a1b194fa96e9176ba60b0eaa`  
@@ -1350,6 +1328,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 742.2 KB (742236 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:959d5aa9a498e847db14cc2ce9235b7ded415ece46a6839996404d04cb5c7634`  
+		Last Modified: Tue, 07 Jan 2025 19:29:17 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c723c3c602237fb9d7ec633eca435bc46e7908d53fa8702dbe132e19d9b654a2`  
@@ -1377,5 +1356,6 @@ $ docker pull drupal@sha256:acbfe475abb4d1f76ded98a16a5d9e6d02d1bd2999493b89e479
 		Size: 346.6 KB (346645 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b79ff402c6d41433ecdb65b1b26760662ec7858bd202a266cbe7afc5d7fad951`  
+		Last Modified: Wed, 08 Jan 2025 00:31:43 GMT  
 		Size: 33.7 KB (33673 bytes)  
 		MIME: application/vnd.in-toto+json
