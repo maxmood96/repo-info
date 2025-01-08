@@ -91,7 +91,7 @@ RUN set -x     && apkArch="$(cat /etc/apk/arch)"     && nginxPackages="         
 		Size: 405.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:caeee18f68a8c145a475a34939b58d4b51aa4e680c0e9b22970b757e71049e6c`  
-		Last Modified: Tue, 07 Jan 2025 03:20:21 GMT  
+		Last Modified: Wed, 08 Jan 2025 06:09:04 GMT  
 		Size: 1.2 KB (1210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1cbfa66375e7e5b8ccb3f1aee9f920c15f073a53345887add77280cd20d1bf1e`  
@@ -243,6 +243,7 @@ $ docker pull nginx@sha256:6a031a72847a04dbbc7395e96dc1873969cc71e6046a105fa69bd
 
 -	Layers:
 	-	`sha256:1b90df371b7e031104dd7496de02ba8b5368ce053b2930b92c6e03645b963022`  
+		Last Modified: Tue, 07 Jan 2025 18:38:53 GMT  
 		Size: 867.2 KB (867240 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b9b69cb26aa77ec0eb5219b7b68c20a9a76e130eab043d4900e727b0429deee0`  
