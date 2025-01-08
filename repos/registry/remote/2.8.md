@@ -93,7 +93,6 @@ $ docker pull registry@sha256:d55a9d4facd989a597c3e1e809923ef98e64559317e771493c
 
 -	Layers:
 	-	`sha256:cf52253b7ad6a8f47432a215ca190cc99ed6545211f6ffb9932ab20b6611f4fe`  
-		Last Modified: Tue, 07 Jan 2025 03:15:27 GMT  
 		Size: 174.2 KB (174184 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8670d9a80801cbfa2a2c6a6c3c07051d5e5cca7fef29eabd2c7d5c2058dfa6f3`  
@@ -143,6 +142,7 @@ CMD ["/etc/docker/registry/config.yml"]
 		Size: 3.2 MB (3150100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c790e94d903071da79d816e6ec1ca41e3699e1920f692ff6a757e7905d0a19f3`  
+		Last Modified: Tue, 07 Jan 2025 06:42:17 GMT  
 		Size: 280.3 KB (280273 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1f6df2110c7bdc8eac0f1fca7ff7e0a2d394b02c1f72e06bb98d0146c319b346`  
@@ -216,7 +216,7 @@ CMD ["/etc/docker/registry/config.yml"]
 
 -	Layers:
 	-	`sha256:52e1a0d0bc554ff1294b79e52982946141f0dbe774dd603e745e91fa95cbdcc0`  
-		Last Modified: Tue, 07 Jan 2025 02:56:17 GMT  
+		Last Modified: Wed, 08 Jan 2025 07:27:54 GMT  
 		Size: 2.9 MB (2904510 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c00e99f059306c5402b4ded95e14a270a824d4046c3afce7ddf45e4eee26102a`  
@@ -309,7 +309,7 @@ CMD ["/etc/docker/registry/config.yml"]
 		Size: 5.8 MB (5824732 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:203af9cbfb3f6d2622303f23f9c4eedb0ebef36e84f0b5eda69bc69f03cb5c24`  
-		Last Modified: Wed, 08 Jan 2025 05:41:40 GMT  
+		Last Modified: Tue, 07 Jan 2025 07:09:14 GMT  
 		Size: 367.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:db1ddda351657531159618bf230a5095d1db2a3ab53a8ef428f3c97a24168783`  
@@ -461,7 +461,6 @@ CMD ["/etc/docker/registry/config.yml"]
 
 -	Layers:
 	-	`sha256:3f361b0906ea16e3dece69ee08f2757263eec429d79816947474341b7bb78cda`  
-		Last Modified: Tue, 07 Jan 2025 02:33:55 GMT  
 		Size: 3.2 MB (3221764 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aa30bcca2667fd92ed4f05b233be5f3923c7bf4068e427e55e80c69accae8cc7`  
