@@ -99,6 +99,7 @@ CMD ["mongod"]
 		Size: 153.7 MB (153686057 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0eec965d0f99268d7e736155ab9672ce990e5219557e516648d122490e36a086`  
+		Last Modified: Fri, 20 Dec 2024 21:29:50 GMT  
 		Size: 1.2 KB (1237 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a85ca6466fea7ec0ed541325589a9af37e82f4b05b3105f9dbc52cff7d036d55`  
@@ -114,7 +115,6 @@ CMD ["mongod"]
 		Size: 914.5 KB (914521 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e4d200aed9ea80be3dab7286cc89dc37d2cae28266c40d2d127e092b0c82f935`  
-		Last Modified: Fri, 20 Dec 2024 21:29:51 GMT  
 		Size: 13.2 KB (13205 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1f7a63c9529cd058f8349f0d13d4e17f2e4e9f63c6f8f1153202b7b40ec3e5d2`  
@@ -142,6 +142,5 @@ $ docker pull percona@sha256:17e33dab109a4c53c590963f6d2e1feba7cfe9f4dbed6866034
 
 -	Layers:
 	-	`sha256:d62db4fa3db9ecfd18e12756bdcb6a58f51fb67732351d4ad1dad411776c9294`  
-		Last Modified: Fri, 20 Dec 2024 21:29:50 GMT  
 		Size: 32.2 KB (32189 bytes)  
 		MIME: application/vnd.in-toto+json
