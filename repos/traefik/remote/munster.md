@@ -1,7 +1,7 @@
 ## `traefik:munster`
 
 ```console
-$ docker pull traefik@sha256:193e390d1d93573e16bf28fad6790b9a0f75645fb67c4e7ae04e7ded300f7aa3
+$ docker pull traefik@sha256:e5a04359eec0f53f7b1dc0e9bd2d00c5e072bc8bce47e5a54c548d00ab4c2e2d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,20 +22,20 @@ $ docker pull traefik@sha256:193e390d1d93573e16bf28fad6790b9a0f75645fb67c4e7ae04
 ### `traefik:munster` - linux; amd64
 
 ```console
-$ docker pull traefik@sha256:7737cd08e21de0094ce109b9af9fe0667349032190426a05255122bd57b7c589
+$ docker pull traefik@sha256:684cb01614fc38240a5f13e302920a12ba3c6d604ff90d0a6c0ade9a1294a712
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **52.1 MB (52124349 bytes)**  
+-	Total Size: **52.1 MB (52144442 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:455ebeb1215477cdd53ce54f3b47d101bac2168b0f8062e973ae35e0162422a7`
+-	Image ID: `sha256:3fe0092f8292c75f32db74577cf3eaef046263f75d395777d5ff3bdf9d4dbd23`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["traefik"]`
 
 ```dockerfile
-# Mon, 06 Jan 2025 19:11:15 GMT
-ADD alpine-minirootfs-3.21.1-x86_64.tar.gz / # buildkit
-# Mon, 06 Jan 2025 19:11:15 GMT
+# Tue, 07 Jan 2025 14:26:21 GMT
+ADD alpine-minirootfs-3.21.2-x86_64.tar.gz / # buildkit
+# Tue, 07 Jan 2025 14:26:21 GMT
 CMD ["/bin/sh"]
 # Tue, 07 Jan 2025 14:26:21 GMT
 RUN apk --no-cache add ca-certificates tzdata # buildkit
@@ -54,45 +54,45 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 ```
 
 -	Layers:
-	-	`sha256:245043d9199c263f869fc0558f43f7cb98bbc92acdd5def1b4f690adc0ac7807`  
-		Last Modified: Mon, 06 Jan 2025 21:44:42 GMT  
-		Size: 3.6 MB (3636222 bytes)  
+	-	`sha256:1f3e46996e2966e4faa5846e56e76e3748b7315e2ded61476c24403d592134f0`  
+		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
+		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9811c11c165ae6a701342c39d7d330838b12c0bc133143ce23bc1bf3912e7f00`  
-		Last Modified: Tue, 07 Jan 2025 22:27:42 GMT  
-		Size: 444.2 KB (444186 bytes)  
+	-	`sha256:0ac9a553b836e1345c40110887b76aed3c527e0fc790e0d2bb61da063611b575`  
+		Last Modified: Wed, 08 Jan 2025 18:13:05 GMT  
+		Size: 458.8 KB (458755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db441b981af66eb727278f688cf439a26613157dc80e836edc15d0e262846e0a`  
-		Last Modified: Tue, 07 Jan 2025 22:27:43 GMT  
-		Size: 48.0 MB (48043571 bytes)  
+	-	`sha256:cf695e22ac65b8445f54b46c7cad6e752cad5c9fdff2be638235fb3f367e5581`  
+		Last Modified: Wed, 08 Jan 2025 18:13:06 GMT  
+		Size: 48.0 MB (48043603 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b22849c2aacce7187cf8aa68525767f91dd0991239fdce28458f91eca54ca429`  
-		Last Modified: Tue, 07 Jan 2025 22:27:42 GMT  
-		Size: 370.0 B  
+	-	`sha256:0812f1466bfe90df17b7cf340ca6ac347007b556be35e053436692ab52a76a3a`  
+		Last Modified: Wed, 08 Jan 2025 18:13:05 GMT  
+		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `traefik:munster` - unknown; unknown
 
 ```console
-$ docker pull traefik@sha256:9b472bbdad7aef842f6b35a176c25ff7d921b3408a674993d6e5fe9c1b97ad1c
+$ docker pull traefik@sha256:a31de7f57c8e7e1c451b87e8f1713e105fdbecab6475c858fc1649e44129c0e8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **822.8 KB (822776 bytes)**  
+-	Total Size: **828.7 KB (828653 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d2c763415796e240757d6467ba3bdf094ebc7788d07cbf7ae2f3890b1cf96e9`
+-	Image ID: `sha256:611f932ceecf25ba826aa1273e479a5bad20e02c1f4a06cf7084fa2ab20c6625`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5a7cebd68690e4d5a836e89681c52473892ab7aee214eaa6522934bb7026d83a`  
-		Last Modified: Tue, 07 Jan 2025 22:27:42 GMT  
-		Size: 810.9 KB (810851 bytes)  
+	-	`sha256:730914796896590f6bd2e5cdff149e364638a67d9bc698fe9a078fc72ad789ff`  
+		Last Modified: Wed, 08 Jan 2025 18:13:05 GMT  
+		Size: 816.7 KB (816729 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a41e703dc382e349106fddb3d2ebda99834f5c9b6aa134023ffff939eec0fa91`  
-		Last Modified: Tue, 07 Jan 2025 22:27:42 GMT  
-		Size: 11.9 KB (11925 bytes)  
+	-	`sha256:6cb2a1a775c2dc1be60e8f4aac03fc75bbf3a95bc24eb5022d5fe9eb16a69914`  
+		Last Modified: Wed, 08 Jan 2025 18:13:05 GMT  
+		Size: 11.9 KB (11924 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `traefik:munster` - linux; arm variant v6
