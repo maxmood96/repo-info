@@ -16,6 +16,8 @@
 -	[`rocket.chat:7.0.4`](#rocketchat704)
 -	[`rocket.chat:7.1`](#rocketchat71)
 -	[`rocket.chat:7.1.0`](#rocketchat710)
+-	[`rocket.chat:7.2`](#rocketchat72)
+-	[`rocket.chat:7.2.0`](#rocketchat720)
 -	[`rocket.chat:latest`](#rocketchatlatest)
 
 ## `rocket.chat:6`
@@ -1582,6 +1584,24 @@ $ docker pull rocket.chat@sha256:a752b4d6da0aa41d2bbdda0d88fe2838a7037db835f6ef7
 		Last Modified: Tue, 24 Dec 2024 23:22:58 GMT  
 		Size: 23.7 KB (23709 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `rocket.chat:7.2`
+
+```console
+$ docker pull rocket.chat@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `rocket.chat:7.2.0`
+
+```console
+$ docker pull rocket.chat@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `rocket.chat:latest`
 
