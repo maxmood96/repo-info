@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:eebcc37d1cc725325e0f61371b632d1ab7148edd70865bc31b923f87323e32cd`
+- Image ID: `sha256:371bb7103e3cbf821f511b5784b83bcc3551d6526e0487bda9083b00d40e0344`
 - Created: `2024-12-11T00:16:44Z`
-- Virtual Size: ~ 61.84 Mb  
+- Virtual Size: ~ 56.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["hy"]`
@@ -72,16 +72,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.4-r0 description:
+apk-tools-2.14.4-r1 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.4-r0 webpage:
+apk-tools-2.14.4-r1 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.4-r0 installed size:
+apk-tools-2.14.4-r1 installed size:
 296 KiB
 
-apk-tools-2.14.4-r0 license:
+apk-tools-2.14.4-r1 license:
 GPL-2.0-only
 
 ```
@@ -123,16 +123,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20240705-r0 description:
+ca-certificates-20241121-r1 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20240705-r0 webpage:
+ca-certificates-20241121-r1 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20240705-r0 installed size:
-712 KiB
+ca-certificates-20241121-r1 installed size:
+720 KiB
 
-ca-certificates-20240705-r0 license:
+ca-certificates-20241121-r1 license:
 MPL-2.0 AND MIT
 
 ```
@@ -140,16 +140,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20240705-r0 description:
+ca-certificates-bundle-20241121-r1 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20240705-r0 webpage:
+ca-certificates-bundle-20241121-r1 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20240705-r0 installed size:
-236 KiB
+ca-certificates-bundle-20241121-r1 installed size:
+240 KiB
 
-ca-certificates-bundle-20240705-r0 license:
+ca-certificates-bundle-20241121-r1 license:
 MPL-2.0 AND MIT
 
 ```
