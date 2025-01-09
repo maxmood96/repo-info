@@ -1,7 +1,7 @@
 ## `node:iron-alpine3.21`
 
 ```console
-$ docker pull node@sha256:75d2b70ed4a14d9e533bcb48e0c383dd3c5f135052d71d06a39397f22ed81de9
+$ docker pull node@sha256:fbabb7f4a5d70fb7eb294062d62adf51cf63c8e91ddfca139362697c8a3da58b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -322,19 +322,19 @@ $ docker pull node@sha256:20bd12f5b6a7af0e32c438948f957f7589f4fc9e7a8e668a85ccd1
 ### `node:iron-alpine3.21` - linux; ppc64le
 
 ```console
-$ docker pull node@sha256:80330fedcf848d32f0f1474c85448bfd187d9b85a066657ffa0a626be3196d1b
+$ docker pull node@sha256:363d7eee491c3bf90755bb2b093561c7a5ade9a1eb5dfe2d08ed8966bf6226cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.1 MB (50131527 bytes)**  
+-	Total Size: **50.1 MB (50137550 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:73615845f80204cfeae0f8ad35e9cfb031d1bc4b2ed23af3da5df30066d0192d`
+-	Image ID: `sha256:2d3abd5ef9b6b6b307fd1e4fdc2a5159683a0c6730a460e18227db9d5047cd32`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
 # Thu, 05 Dec 2024 13:16:16 GMT
-ADD alpine-minirootfs-3.21.1-ppc64le.tar.gz / # buildkit
+ADD alpine-minirootfs-3.21.2-ppc64le.tar.gz / # buildkit
 # Thu, 05 Dec 2024 13:16:16 GMT
 CMD ["/bin/sh"]
 # Thu, 05 Dec 2024 13:16:16 GMT
@@ -354,44 +354,44 @@ CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:9207393f0daad55cddbc775f55edde5baecdca9e0441c9c1f627f2394d28b7c3`  
-		Last Modified: Tue, 07 Jan 2025 02:32:05 GMT  
-		Size: 3.6 MB (3567745 bytes)  
+	-	`sha256:244ac55e5ecd413dee99efe3ace7cb84420bfc9a727ec2327dae7805045d7470`  
+		Last Modified: Wed, 08 Jan 2025 17:24:16 GMT  
+		Size: 3.6 MB (3573601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84c283948adfd9d0066366ffd465956db9d13563a4ce66ab441719e02ab62641`  
-		Last Modified: Tue, 07 Jan 2025 07:11:45 GMT  
-		Size: 45.3 MB (45302778 bytes)  
+	-	`sha256:c8308fa6816a541725d55fc8b1ccd5a21b5700208e3a58e47c9448ad849d2bad`  
+		Last Modified: Wed, 08 Jan 2025 22:27:56 GMT  
+		Size: 45.3 MB (45302942 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7fc318bb7d1e0189730a530db3566b522166626065a0b228df13694430c120d`  
-		Last Modified: Tue, 07 Jan 2025 07:11:44 GMT  
-		Size: 1.3 MB (1260558 bytes)  
+	-	`sha256:3c492a531c0070c483bcb5580a8cf9e26487e30a1f7059ba79d6639f22dfb87f`  
+		Last Modified: Wed, 08 Jan 2025 22:27:52 GMT  
+		Size: 1.3 MB (1260561 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c5c288d43be978b1419db9be7acefaebfa88aec9fd0aa4ad63cc817c1a80ce6`  
-		Last Modified: Tue, 07 Jan 2025 07:11:43 GMT  
+	-	`sha256:5f8a9c4c2f46557c073e012130e7e608c9d1dbf4cdfe7195b980ea017703838f`  
+		Last Modified: Wed, 08 Jan 2025 22:27:52 GMT  
 		Size: 446.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:iron-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:fd0eba17ef9567bb26c269530dcb5ecd293b97c9a386dd2779f88e3e096db126
+$ docker pull node@sha256:e44dd03b786d6be0d06607d1b8aea4af41b2df6863222442b580cbd95484493f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **395.4 KB (395387 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0fd1b56a89aaaa460d4d6930f850fbc752650c92c0bc4210bda776957495946`
+-	Image ID: `sha256:b003a6ceeea7fc0fd2dd22ead3178876ffbbca183717c14788df574bc910776a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fe29128bbadeda63172d211ed7e16cb321d30971683d8dbd75a8192b75e1173d`  
-		Last Modified: Tue, 07 Jan 2025 07:11:43 GMT  
+	-	`sha256:6a6f6523f963d357900ae3658a6aee7fd32f1522d074294eb66a19549aedc6fc`  
+		Last Modified: Wed, 08 Jan 2025 22:27:52 GMT  
 		Size: 370.6 KB (370595 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:56d056c15c09b05cd9c19e7a6ad4f6362a50b9e9f6670e86303faebf0c4f3b59`  
-		Last Modified: Tue, 07 Jan 2025 07:11:43 GMT  
+	-	`sha256:9b45f7bba739effa6ba7e64783834d8fec71de5a4ee158d293a8c21d2ae3915e`  
+		Last Modified: Wed, 08 Jan 2025 22:27:52 GMT  
 		Size: 24.8 KB (24792 bytes)  
 		MIME: application/vnd.in-toto+json
 
