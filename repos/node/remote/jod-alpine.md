@@ -1,7 +1,7 @@
 ## `node:jod-alpine`
 
 ```console
-$ docker pull node@sha256:ee4f0973f1cb8a7fa5aa66a98cfade25fc75f515b9c7b43e4508b5f30e4c2b65
+$ docker pull node@sha256:187e9d7e49a5670a3adea14b6041e0d24c005956d7a771d6f406e3a5b6269bcc
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -244,20 +244,20 @@ $ docker pull node@sha256:a2b7dae3a7328abb831762f2c1e2ed8f1513f19525a37a4b2cef2a
 ### `node:jod-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull node@sha256:2a8992a08c96fc9f49f0f3ade399e05811744a30db169a96280979c73e321fea
+$ docker pull node@sha256:9090fa64b73b14ab658d907e7916afcb1633e4bdd5134f9b1be4a21a6c56f0b8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **54.8 MB (54809396 bytes)**  
+-	Total Size: **54.8 MB (54818741 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:856977a87525f30dddf7b24161314f91d89113fee0a45464cf8123d398279970`
+-	Image ID: `sha256:3ddbcab73d8c44e1730485477f2146db97b244e3da8606a5b720551a0b3d72eb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
-# Mon, 06 Jan 2025 19:11:15 GMT
-ADD alpine-minirootfs-3.21.1-aarch64.tar.gz / # buildkit
-# Mon, 06 Jan 2025 19:11:15 GMT
+# Tue, 07 Jan 2025 23:47:58 GMT
+ADD alpine-minirootfs-3.21.2-aarch64.tar.gz / # buildkit
+# Tue, 07 Jan 2025 23:47:58 GMT
 CMD ["/bin/sh"]
 # Tue, 07 Jan 2025 23:47:58 GMT
 ENV NODE_VERSION=22.13.0
@@ -276,64 +276,64 @@ CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:707c94c90c597447ce10a36c9b56355c1cc67d0cf593a592daeb419d99a30d85`  
-		Last Modified: Tue, 07 Jan 2025 03:02:50 GMT  
-		Size: 4.0 MB (3983007 bytes)  
+	-	`sha256:52f827f723504aa3325bb5a54247f0dc4b92bb72569525bc951532c4ef679bd4`  
+		Last Modified: Wed, 08 Jan 2025 17:23:52 GMT  
+		Size: 4.0 MB (3992359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db131b359432b23a2139430613eb415624071fd24e688f1e1d6945736b7734ce`  
-		Last Modified: Wed, 08 Jan 2025 03:21:26 GMT  
-		Size: 49.6 MB (49565310 bytes)  
+	-	`sha256:e64cb078c295fe437c297c35ca2502de3d409e8e888321ecef594645c2481cc4`  
+		Last Modified: Thu, 09 Jan 2025 02:56:10 GMT  
+		Size: 49.6 MB (49565296 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:886b1cb52eed112af57a2604720c590f065d911862a10d874f7818950f4cd339`  
-		Last Modified: Wed, 08 Jan 2025 03:21:25 GMT  
-		Size: 1.3 MB (1260634 bytes)  
+	-	`sha256:9a18ad7c209eff483f7f120d2221ec017041265030ae85b5098ddbd867e69982`  
+		Last Modified: Thu, 09 Jan 2025 02:56:09 GMT  
+		Size: 1.3 MB (1260641 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69832e7adb326adaf74bc99df57613162d9c9320b42232533886c54291914476`  
-		Last Modified: Wed, 08 Jan 2025 03:21:25 GMT  
+	-	`sha256:7c0dd348d8729235f1ed9dfb5b50969404097a5a007935a909a1eb8987b307be`  
+		Last Modified: Thu, 09 Jan 2025 02:56:08 GMT  
 		Size: 445.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:jod-alpine` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:4e03c370ece2d0d367b01a25e869a2dee28a2b6ab83f878901d7714947986f70
+$ docker pull node@sha256:177deb1074d966a6ca3446ca99ae7d3b338311f45cf196c7fa0b0edd1c588e22
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **415.9 KB (415943 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e54bd1673dd63137ee2acef1980fc98657361884b36e339b6303c20e042c659a`
+-	Image ID: `sha256:242867062b697d66b13f2a95c025fe03eceac25ec5faeceac147da1cea8c399b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0f5e80687f2a5f5b50a2aea5f922ac5cb08688505390f3c1d008080740f5e936`  
-		Last Modified: Wed, 08 Jan 2025 03:21:25 GMT  
+	-	`sha256:2c82aeeb71347202add8f9806ab531fb605b26408b9534ce7b6e72359406a5fc`  
+		Last Modified: Thu, 09 Jan 2025 02:56:09 GMT  
 		Size: 390.4 KB (390422 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:88475314bcc659524e5bd89612ef65c1b4b3d2a74450224bb3752c9905377337`  
-		Last Modified: Wed, 08 Jan 2025 03:21:24 GMT  
+	-	`sha256:401cb4a037f039163afc3c6419d53e80642dbd7b79a8071cf224d0afc78fc08f`  
+		Last Modified: Thu, 09 Jan 2025 02:56:08 GMT  
 		Size: 25.5 KB (25521 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `node:jod-alpine` - linux; s390x
 
 ```console
-$ docker pull node@sha256:70dc4d7fc7661870378b7244e35b7860a9b9f562821b04e9e17d2a9706b15218
+$ docker pull node@sha256:4ee394a3c18153bcb7bd1ceb7f5657b9e0707b22743616720e7ac75364bf5b3f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **56.4 MB (56420923 bytes)**  
+-	Total Size: **56.4 MB (56428400 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df582e7ab91f88f1c9f4335314aca5201b7de10fdb2b2ddb4b491f9d9e2b73dd`
+-	Image ID: `sha256:dd7efed9e0ed35fbe29c0f8772386508252d7b0f2ae63baffdb88b6d0ebff6e9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
-# Mon, 06 Jan 2025 19:11:15 GMT
-ADD alpine-minirootfs-3.21.1-s390x.tar.gz / # buildkit
-# Mon, 06 Jan 2025 19:11:15 GMT
+# Tue, 07 Jan 2025 23:47:58 GMT
+ADD alpine-minirootfs-3.21.2-s390x.tar.gz / # buildkit
+# Tue, 07 Jan 2025 23:47:58 GMT
 CMD ["/bin/sh"]
 # Tue, 07 Jan 2025 23:47:58 GMT
 ENV NODE_VERSION=22.13.0
@@ -352,43 +352,43 @@ CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:93a724ed1843277c272a09a7779ca31a802938fe3a88142df42e291e0dc759c3`  
-		Last Modified: Tue, 07 Jan 2025 02:32:17 GMT  
-		Size: 3.5 MB (3459449 bytes)  
+	-	`sha256:b2af93686f9384c40cfe861d7173877bb2ee1675c3ee70181799693c34c8722f`  
+		Last Modified: Wed, 08 Jan 2025 17:25:12 GMT  
+		Size: 3.5 MB (3466867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd1ca2854a0169ab6045c8c2c56d270c4c3148425d044762e013dd3bd8c37198`  
-		Last Modified: Wed, 08 Jan 2025 05:54:18 GMT  
-		Size: 51.7 MB (51700399 bytes)  
+	-	`sha256:35763314c48271edf50467fba28ed9def143952660d884a6cb79da811f6de864`  
+		Last Modified: Thu, 09 Jan 2025 02:48:27 GMT  
+		Size: 51.7 MB (51700433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f776dce434a08aae6e9cb59d3230e31a7a0bc2a8118b501d3e747b1de199e7f`  
-		Last Modified: Wed, 08 Jan 2025 05:54:17 GMT  
-		Size: 1.3 MB (1260631 bytes)  
+	-	`sha256:a0947173e743b4abfa79e555506f7afac809016f0298b44645f7961476e5dd2b`  
+		Last Modified: Thu, 09 Jan 2025 02:48:27 GMT  
+		Size: 1.3 MB (1260656 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:011939d67c2fb3c47340f470e961350fb210c517816adfe44fba79f6edc3ee50`  
-		Last Modified: Wed, 08 Jan 2025 05:54:17 GMT  
+	-	`sha256:d24d562cdd9d57251fea4a7b56b68527ef4f1b27fccd450ac2adba96514dbfc4`  
+		Last Modified: Thu, 09 Jan 2025 02:48:26 GMT  
 		Size: 444.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:jod-alpine` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:430cd78d0099c8993033593d7f25aef6b59c5fc5c5f6459c987bc70a3ed88993
+$ docker pull node@sha256:3a8943721e4c3b1084a611b6bbe7dc94812c939b434bdaff6874a0e12f14af93
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **413.7 KB (413673 bytes)**  
+-	Total Size: **413.7 KB (413672 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4c429cdcfb62c95385c66023a76ed2317dff072520df6022698ebe6c51b4a4ae`
+-	Image ID: `sha256:30db9923ceba6ec176c2942b8591db083e141dd8b8aa9132bd7dd54b34112cd1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f20606879add472238d46b1d4e9361d213b1d7678df54a17a35d5a7dddd757b4`  
-		Last Modified: Wed, 08 Jan 2025 05:54:17 GMT  
+	-	`sha256:2525116189f555d690b18b7620bcc6684040b2962480edf857aee9040c87d1a9`  
+		Last Modified: Thu, 09 Jan 2025 02:48:26 GMT  
 		Size: 388.3 KB (388343 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cfeb33a915159f11f4988851fe8853289aac7749219bccd5cf6851001d3dfc67`  
-		Last Modified: Wed, 08 Jan 2025 05:54:17 GMT  
-		Size: 25.3 KB (25330 bytes)  
+	-	`sha256:ab52d62491641e46461ffb90d49c56400e463eb1ada488909f1a349a41eb1e0b`  
+		Last Modified: Thu, 09 Jan 2025 02:48:26 GMT  
+		Size: 25.3 KB (25329 bytes)  
 		MIME: application/vnd.in-toto+json
