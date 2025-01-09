@@ -1,7 +1,7 @@
 ## `liquibase:alpine`
 
 ```console
-$ docker pull liquibase@sha256:714cfc2e1bffeb54bbad1013f74d19717f0f1fa6eeb558f9ec2f1b3c2dd4e7e0
+$ docker pull liquibase@sha256:9b756bf70b386f0e7c02377f8b6e8b2716a7bd02720840b5b57abd80155c4e04
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -128,19 +128,19 @@ $ docker pull liquibase@sha256:1ef77f588e7f70683080be36a8a7baa785a86b62e9f20f1a3
 ### `liquibase:alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull liquibase@sha256:7affa3d13963881c75d484e7559181dc6c87f994ae5613cef2b39cb39b6561d5
+$ docker pull liquibase@sha256:540759dc267589f92603381b965121a5273ea1c1fdb02860cfee7b3c0a0472da
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **229.9 MB (229855537 bytes)**  
+-	Total Size: **229.9 MB (229879701 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0a3238bcbdcd0d6b2e107778bbc42859530a5842d8960d4b658c649753822e40`
+-	Image ID: `sha256:0e18a54e772b661dcf43a64baa37ccdae1dcfb91dc95837b9e35583d90a5ad2a`
 -	Entrypoint: `["\/liquibase\/docker-entrypoint.sh"]`
 -	Default Command: `["--help"]`
 
 ```dockerfile
 # Thu, 07 Nov 2024 14:28:00 GMT
-ADD alpine-minirootfs-3.20.4-aarch64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.5-aarch64.tar.gz / # buildkit
 # Thu, 07 Nov 2024 14:28:00 GMT
 CMD ["/bin/sh"]
 # Thu, 07 Nov 2024 14:28:00 GMT
@@ -182,59 +182,59 @@ CMD ["--help"]
 ```
 
 -	Layers:
-	-	`sha256:ef22e11fe7735044a1b56fc644666588aa863fb6abe827f676cb9d11ba34d993`  
-		Last Modified: Tue, 07 Jan 2025 03:03:03 GMT  
-		Size: 4.1 MB (4086686 bytes)  
+	-	`sha256:0152682790bba2052e0b7dc52872083c01ea53c598fe87e3fe3eab5f9d4228cb`  
+		Last Modified: Wed, 08 Jan 2025 17:24:05 GMT  
+		Size: 4.1 MB (4090769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a39251f14351216880df5cf91e29ae0efd884c6eb0c5a0fdfb7b66de23f8bf8e`  
-		Last Modified: Tue, 07 Jan 2025 08:38:41 GMT  
-		Size: 984.0 B  
+	-	`sha256:e03bf2f107a7ee1b81f42804ef4a0ef8bd3b8709c5c1db7a055c3371435b13ba`  
+		Last Modified: Wed, 08 Jan 2025 23:34:14 GMT  
+		Size: 983.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:14d36771de0794a5a2a9ab09d9fdc1e289300c2a13142ccc5f72f3ac75a94da9`  
-		Last Modified: Tue, 07 Jan 2025 08:38:43 GMT  
-		Size: 62.3 MB (62316487 bytes)  
+	-	`sha256:91d0b216923a5c2e2f96d698269df193d015f0f28d2d729d99104f27704696e5`  
+		Last Modified: Wed, 08 Jan 2025 23:34:16 GMT  
+		Size: 62.3 MB (62336617 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35abeacdcf10e229ed75722ef3993c8d54c23f7582b78e4f79049d409c408fb4`  
-		Last Modified: Tue, 07 Jan 2025 08:38:45 GMT  
-		Size: 160.5 MB (160458808 bytes)  
+	-	`sha256:62529e69f26741807b4aa2e039fc5efe69d026add80d52dff24760db8a272166`  
+		Last Modified: Wed, 08 Jan 2025 23:34:18 GMT  
+		Size: 160.5 MB (160458871 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aab93bfd9cb93538e6140ca7ab88fa00ded6ef820538ec31d6bbcb4cbb33f613`  
-		Last Modified: Tue, 07 Jan 2025 08:38:42 GMT  
-		Size: 3.0 MB (2991891 bytes)  
+	-	`sha256:e0ca6e4c0add891a21d4a2fcfe07e29ab6a10616299a73e04a315956267e2503`  
+		Last Modified: Wed, 08 Jan 2025 23:34:14 GMT  
+		Size: 3.0 MB (2991778 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c26b0c429bee5bb49cdb9cfb2109d4ac72309d74091c8aa199526975e9858a7`  
-		Last Modified: Tue, 07 Jan 2025 08:38:42 GMT  
-		Size: 472.0 B  
+	-	`sha256:1b1af4e3c64d1bfb925c3d3c78c37b9caa7bb2de773fdde3a58789cc63250937`  
+		Last Modified: Wed, 08 Jan 2025 23:34:15 GMT  
+		Size: 475.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7101e72794a7960a45d70930f4a6ffebd3f2374dd700fd75fe74b5e1302b2ad`  
-		Last Modified: Tue, 07 Jan 2025 08:38:43 GMT  
-		Size: 177.0 B  
+	-	`sha256:916de3cf5e495752048b36886670612f32ebc6f943577870d98cbe88fc39089c`  
+		Last Modified: Wed, 08 Jan 2025 23:34:15 GMT  
+		Size: 176.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `liquibase:alpine` - unknown; unknown
 
 ```console
-$ docker pull liquibase@sha256:647b07079a4f2bfb1994bbf4b1869e5fa9ca915eac49d9bab3a9b9ef8558537d
+$ docker pull liquibase@sha256:1e813e075b65cc236c678e106492d6b7d0023fbb3973753d75268174a3da907c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **393.0 KB (393020 bytes)**  
+-	Total Size: **398.9 KB (398897 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa544e65d9125065e58076e8665a39a2289cb047da63e536d3ae9d19a7b0a3bc`
+-	Image ID: `sha256:7e7246fb528b14b9d368da248fef6c0ec12f024e2ab377b3da4d97cbe8c72a20`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f73782cbe08adf3614b94f37160204fff3494a152db31a30a191a9c31f10e4e2`  
-		Last Modified: Tue, 07 Jan 2025 08:38:41 GMT  
-		Size: 371.6 KB (371619 bytes)  
+	-	`sha256:dc118e3aec0b1ed99a6200b5b643bb1eaa34328f2ca04255a4cc2a372903f54d`  
+		Last Modified: Wed, 08 Jan 2025 23:34:14 GMT  
+		Size: 377.5 KB (377497 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:acf0da6886ac56b77c16f7783446d48c215b5e0c1cd33da8c25ccf818f491b4c`  
-		Last Modified: Tue, 07 Jan 2025 08:38:41 GMT  
-		Size: 21.4 KB (21401 bytes)  
+	-	`sha256:171babc8e5bc453d3019923f750c380f67bf5734c5c8eecd4dd9f2e5ba5d0169`  
+		Last Modified: Wed, 08 Jan 2025 23:34:14 GMT  
+		Size: 21.4 KB (21400 bytes)  
 		MIME: application/vnd.in-toto+json
