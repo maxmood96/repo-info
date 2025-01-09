@@ -413,7 +413,7 @@ $ docker pull bonita@sha256:fc8c171f42d195bc92dfd7e3de63bb6692509bedca4be90b9536
 ## `bonita:2022.2`
 
 ```console
-$ docker pull bonita@sha256:0f4805fdb225a05fad16791626a16c6a6d8d546686788d84256e2d5fad280f28
+$ docker pull bonita@sha256:bce450318ce4ce5d653bdc8896d22db2fe600483500351fb0ad6dad891f5ec33
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -428,19 +428,19 @@ $ docker pull bonita@sha256:0f4805fdb225a05fad16791626a16c6a6d8d546686788d84256e
 ### `bonita:2022.2` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:3abfce45cb7ebdc849a72378fb8ca6d7ce4aecf88335ee8c56ee47054fd5b8c5
+$ docker pull bonita@sha256:5188e32eeb271cead0ecec62485650f5ca149702d3452f6aa612fae5e33358d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **185.6 MB (185560715 bytes)**  
+-	Total Size: **185.6 MB (185598300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e13a3763a5eeb1227c713c67a021bc4771d6b71b17d4cb49ce43f526348ae5da`
+-	Image ID: `sha256:e3471e8eaf5d7ecd3f0b3aa3824977c6193002a9e6fba2de6cb03a99e83d1571`
 -	Entrypoint: `["\/opt\/files\/startup.sh"]`
 -	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
 
 ```dockerfile
 # Mon, 08 Jul 2024 07:02:02 GMT
-ADD alpine-minirootfs-3.20.4-x86_64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.5-x86_64.tar.gz / # buildkit
 # Mon, 08 Jul 2024 07:02:02 GMT
 CMD ["/bin/sh"]
 # Mon, 08 Jul 2024 07:02:02 GMT
@@ -518,60 +518,60 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
-		Size: 3.6 MB (3613999 bytes)  
+	-	`sha256:66a3d608f3fa52124f8463e9467f170c784abd549e8216aa45c6960b00b4b79b`  
+		Last Modified: Wed, 08 Jan 2025 15:55:45 GMT  
+		Size: 3.6 MB (3626260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c9ae828d576751c8dc840b9e1312ffc5a15f54c589bfadf27905e6afed87a422`  
-		Last Modified: Tue, 07 Jan 2025 03:20:00 GMT  
-		Size: 62.7 MB (62746367 bytes)  
+	-	`sha256:7fcce85a2d1c46d81f0ac2e80db005d94000aabed38b8ea64b20c1d2a6d38ca7`  
+		Last Modified: Wed, 08 Jan 2025 18:16:52 GMT  
+		Size: 62.8 MB (62771721 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df7515b6daff1fa58ee7e6f31e10b428fbb810e6562b4b844fd8a9a4063904b8`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
-		Size: 123.0 B  
+	-	`sha256:8e6c44d72b624209f41bb11468131325ebb11e7620aea3c56fec8d454370fe89`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6dee6e7ad9249a2d8b9e217371cc995119e2ffdc922a77bad3673033e6f9f164`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
-		Size: 959.0 B  
+	-	`sha256:1c067e3d716b220e2a521799ccc31cc2f81aa8483376a0eb816725296ba0e12f`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
+		Size: 957.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b1dba2079a749a8644437b7c2573fd53be7445072de7fcc9862aa66b4de6f39`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
-		Size: 115.0 B  
+	-	`sha256:bfd401cc65ee90d0558b9b5eef05e5a8e34c8f743d54c493313019d77dd12663`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
+		Size: 113.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06054a4959a411227f99f0f2b6063a60d252df239374d7d8771ee3fe6d8477ba`  
-		Last Modified: Tue, 07 Jan 2025 03:20:00 GMT  
+	-	`sha256:0f86759833c16d14dbf6a1c2285f9a35eef3d64dd1c2e94c3f0ce61a1009c505`  
+		Last Modified: Wed, 08 Jan 2025 18:16:52 GMT  
 		Size: 3.0 KB (2992 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eed1763c3913d1b10ba98a9c6c05b4e15c833d4c4184a984b63955568eafc94d`  
-		Last Modified: Tue, 07 Jan 2025 03:20:01 GMT  
-		Size: 119.2 MB (119190771 bytes)  
+	-	`sha256:a4488c046b2b3dcfb9e4f454e0d27a3a5327bef30aaf70c5dbc3d6857e26fa6d`  
+		Last Modified: Wed, 08 Jan 2025 18:16:53 GMT  
+		Size: 119.2 MB (119190746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:478d8f7b5fa1fb77f2c650581c77e6eaa0aef9aba152768e6917d1786e1209c0`  
-		Last Modified: Tue, 07 Jan 2025 03:20:00 GMT  
-		Size: 5.4 KB (5389 bytes)  
+	-	`sha256:078953c12b2583edab0584a367d6b2796d74604bd12d6b390f76f2f9012b7e40`  
+		Last Modified: Wed, 08 Jan 2025 18:16:52 GMT  
+		Size: 5.4 KB (5390 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bonita:2022.2` - unknown; unknown
 
 ```console
-$ docker pull bonita@sha256:4f7b1d7576625225348004421738d2ac20df9017aa0e796ac9d1d568ba69eae8
+$ docker pull bonita@sha256:401ff348594a0b9ec35547e456d392e8123fa01b465e6cce6f5d6df6e5f979a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **914.1 KB (914088 bytes)**  
+-	Total Size: **920.0 KB (919966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eac70f16c9681b2092e59059774712d0b3f6d5119c877e95f245ee20a045919c`
+-	Image ID: `sha256:c3235cacdeb59c6372172164372ba20c0ca84da872eb0c468afca23bd2c69f1a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:febde7285d651e4c70e7c6615ac6add1c20c4f937b52e10e245f35f1c3c24442`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
-		Size: 890.8 KB (890816 bytes)  
+	-	`sha256:1262c903057882def4c6095f99d576167e990ec9757b7dd9c57ef0fdde1e826c`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
+		Size: 896.7 KB (896694 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6f312ae4b3ece73317d863ee7dd0e8b7a0e231276035edc072f963459e6e93b8`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
+	-	`sha256:98e116b1eda94c3ef8c44c8667f38f779a2bc174162e20575d839da409604244`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
 		Size: 23.3 KB (23272 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -878,7 +878,7 @@ $ docker pull bonita@sha256:f0f0a37f914643aabf7fc9317589916e7a10300d33116b7eadd7
 ## `bonita:2022.2-u0`
 
 ```console
-$ docker pull bonita@sha256:0f4805fdb225a05fad16791626a16c6a6d8d546686788d84256e2d5fad280f28
+$ docker pull bonita@sha256:bce450318ce4ce5d653bdc8896d22db2fe600483500351fb0ad6dad891f5ec33
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -893,19 +893,19 @@ $ docker pull bonita@sha256:0f4805fdb225a05fad16791626a16c6a6d8d546686788d84256e
 ### `bonita:2022.2-u0` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:3abfce45cb7ebdc849a72378fb8ca6d7ce4aecf88335ee8c56ee47054fd5b8c5
+$ docker pull bonita@sha256:5188e32eeb271cead0ecec62485650f5ca149702d3452f6aa612fae5e33358d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **185.6 MB (185560715 bytes)**  
+-	Total Size: **185.6 MB (185598300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e13a3763a5eeb1227c713c67a021bc4771d6b71b17d4cb49ce43f526348ae5da`
+-	Image ID: `sha256:e3471e8eaf5d7ecd3f0b3aa3824977c6193002a9e6fba2de6cb03a99e83d1571`
 -	Entrypoint: `["\/opt\/files\/startup.sh"]`
 -	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
 
 ```dockerfile
 # Mon, 08 Jul 2024 07:02:02 GMT
-ADD alpine-minirootfs-3.20.4-x86_64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.5-x86_64.tar.gz / # buildkit
 # Mon, 08 Jul 2024 07:02:02 GMT
 CMD ["/bin/sh"]
 # Mon, 08 Jul 2024 07:02:02 GMT
@@ -983,60 +983,60 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
-		Size: 3.6 MB (3613999 bytes)  
+	-	`sha256:66a3d608f3fa52124f8463e9467f170c784abd549e8216aa45c6960b00b4b79b`  
+		Last Modified: Wed, 08 Jan 2025 15:55:45 GMT  
+		Size: 3.6 MB (3626260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c9ae828d576751c8dc840b9e1312ffc5a15f54c589bfadf27905e6afed87a422`  
-		Last Modified: Tue, 07 Jan 2025 03:20:00 GMT  
-		Size: 62.7 MB (62746367 bytes)  
+	-	`sha256:7fcce85a2d1c46d81f0ac2e80db005d94000aabed38b8ea64b20c1d2a6d38ca7`  
+		Last Modified: Wed, 08 Jan 2025 18:16:52 GMT  
+		Size: 62.8 MB (62771721 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df7515b6daff1fa58ee7e6f31e10b428fbb810e6562b4b844fd8a9a4063904b8`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
-		Size: 123.0 B  
+	-	`sha256:8e6c44d72b624209f41bb11468131325ebb11e7620aea3c56fec8d454370fe89`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6dee6e7ad9249a2d8b9e217371cc995119e2ffdc922a77bad3673033e6f9f164`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
-		Size: 959.0 B  
+	-	`sha256:1c067e3d716b220e2a521799ccc31cc2f81aa8483376a0eb816725296ba0e12f`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
+		Size: 957.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b1dba2079a749a8644437b7c2573fd53be7445072de7fcc9862aa66b4de6f39`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
-		Size: 115.0 B  
+	-	`sha256:bfd401cc65ee90d0558b9b5eef05e5a8e34c8f743d54c493313019d77dd12663`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
+		Size: 113.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06054a4959a411227f99f0f2b6063a60d252df239374d7d8771ee3fe6d8477ba`  
-		Last Modified: Tue, 07 Jan 2025 03:20:00 GMT  
+	-	`sha256:0f86759833c16d14dbf6a1c2285f9a35eef3d64dd1c2e94c3f0ce61a1009c505`  
+		Last Modified: Wed, 08 Jan 2025 18:16:52 GMT  
 		Size: 3.0 KB (2992 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eed1763c3913d1b10ba98a9c6c05b4e15c833d4c4184a984b63955568eafc94d`  
-		Last Modified: Tue, 07 Jan 2025 03:20:01 GMT  
-		Size: 119.2 MB (119190771 bytes)  
+	-	`sha256:a4488c046b2b3dcfb9e4f454e0d27a3a5327bef30aaf70c5dbc3d6857e26fa6d`  
+		Last Modified: Wed, 08 Jan 2025 18:16:53 GMT  
+		Size: 119.2 MB (119190746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:478d8f7b5fa1fb77f2c650581c77e6eaa0aef9aba152768e6917d1786e1209c0`  
-		Last Modified: Tue, 07 Jan 2025 03:20:00 GMT  
-		Size: 5.4 KB (5389 bytes)  
+	-	`sha256:078953c12b2583edab0584a367d6b2796d74604bd12d6b390f76f2f9012b7e40`  
+		Last Modified: Wed, 08 Jan 2025 18:16:52 GMT  
+		Size: 5.4 KB (5390 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bonita:2022.2-u0` - unknown; unknown
 
 ```console
-$ docker pull bonita@sha256:4f7b1d7576625225348004421738d2ac20df9017aa0e796ac9d1d568ba69eae8
+$ docker pull bonita@sha256:401ff348594a0b9ec35547e456d392e8123fa01b465e6cce6f5d6df6e5f979a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **914.1 KB (914088 bytes)**  
+-	Total Size: **920.0 KB (919966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eac70f16c9681b2092e59059774712d0b3f6d5119c877e95f245ee20a045919c`
+-	Image ID: `sha256:c3235cacdeb59c6372172164372ba20c0ca84da872eb0c468afca23bd2c69f1a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:febde7285d651e4c70e7c6615ac6add1c20c4f937b52e10e245f35f1c3c24442`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
-		Size: 890.8 KB (890816 bytes)  
+	-	`sha256:1262c903057882def4c6095f99d576167e990ec9757b7dd9c57ef0fdde1e826c`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
+		Size: 896.7 KB (896694 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6f312ae4b3ece73317d863ee7dd0e8b7a0e231276035edc072f963459e6e93b8`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
+	-	`sha256:98e116b1eda94c3ef8c44c8667f38f779a2bc174162e20575d839da409604244`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
 		Size: 23.3 KB (23272 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1343,7 +1343,7 @@ $ docker pull bonita@sha256:f0f0a37f914643aabf7fc9317589916e7a10300d33116b7eadd7
 ## `bonita:2023.1`
 
 ```console
-$ docker pull bonita@sha256:da919ef947b277af7a52f1e200db38d896d3900488d0da6eb34de19039ec0ad3
+$ docker pull bonita@sha256:c5c823e8e2507b967d55fd458b8e168bd38cdb09874e8e26a7b6f1c9d090ff17
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1358,19 +1358,19 @@ $ docker pull bonita@sha256:da919ef947b277af7a52f1e200db38d896d3900488d0da6eb34d
 ### `bonita:2023.1` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:7d5b3c18f53f442e8410a0793cd737077f313c3b37056333fa63695b3ca24f7a
+$ docker pull bonita@sha256:839309576f921c062eb32d00c7306f8548c63eb2d641d8ea9e64427cd9123457
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.5 MB (184548981 bytes)**  
+-	Total Size: **184.6 MB (184586621 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a29cb4133c5e35686e4275ec2bf610f7dac56ac500d719dab69241442e2e341`
+-	Image ID: `sha256:3c7c6d117c8bfb97c3e0b76314f01f64289353cd58923b97f3f86965d9f839e3`
 -	Entrypoint: `["\/opt\/files\/startup.sh"]`
 -	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
 
 ```dockerfile
 # Mon, 08 Jul 2024 07:05:57 GMT
-ADD alpine-minirootfs-3.20.4-x86_64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.5-x86_64.tar.gz / # buildkit
 # Mon, 08 Jul 2024 07:05:57 GMT
 CMD ["/bin/sh"]
 # Mon, 08 Jul 2024 07:05:57 GMT
@@ -1452,61 +1452,61 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
-		Size: 3.6 MB (3613999 bytes)  
+	-	`sha256:66a3d608f3fa52124f8463e9467f170c784abd549e8216aa45c6960b00b4b79b`  
+		Last Modified: Wed, 08 Jan 2025 15:55:45 GMT  
+		Size: 3.6 MB (3626260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66549bbe18cf4a766894d09daa7ca68de99fe1dec28356b076a95b28a26d303b`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 62.7 MB (62746361 bytes)  
+	-	`sha256:d87131e99d38b287035dfa2ac9ba12e0c61cdd62f01e64d80b9691672ebed5c6`  
+		Last Modified: Wed, 08 Jan 2025 18:17:04 GMT  
+		Size: 62.8 MB (62771776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07b0085de8d6725180b4baef21f65fc1aaf940a66740fa82dc6521a5f2b7e3d9`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
+	-	`sha256:ebce3f7a9f918d324689aa8d9a204324d3abd229dd393c335c31947eceb29ed1`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
 		Size: 123.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:316a425296944ff3f1bee23e124ec2ed863092134f8a88be8a06ecccc44a0e1a`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
+	-	`sha256:625a766af4de10c10600747bd7996532f5ba388e68d36670ebf6b1f9a8298fe7`  
+		Last Modified: Wed, 08 Jan 2025 18:17:02 GMT  
 		Size: 959.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db282f592b0b69f72df4b6ba4cdfd8176d31ac7d42d1ae10c0f8d171b6ba1749`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
+	-	`sha256:c3cac6e828598e8210b7fcd84264ee99829eb8a06f8b3fba37071d837309f2b1`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:223c54b4b7bab2bffd3b3de64ee27f671b3828fb3a3ad15adf99301ae1ddbbf4`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 3.4 KB (3427 bytes)  
+	-	`sha256:f39d6b0d3105a1df4ff48246622351cd7236dd2a81e0fede1723e5a8c850c722`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
+		Size: 3.4 KB (3428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49f0652e66a870a3e479a88a993279c88c65b1a645784c68ad5f3e3e8a7e41d0`  
-		Last Modified: Tue, 07 Jan 2025 03:33:35 GMT  
-		Size: 118.2 MB (118178608 bytes)  
+	-	`sha256:a3fc52347d1507c9706d8761cc789ddb1f73ed80b9840ad971b12befa51e3f0b`  
+		Last Modified: Wed, 08 Jan 2025 18:17:05 GMT  
+		Size: 118.2 MB (118178571 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f4585e64d3624f752ec12e7d8944d9b8215bf04e8fcf88c87d00f891fe7a907`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
+	-	`sha256:85222b2078f6c0397db8db28ba785a42db30c2b6219c34e9e7215735c54006b3`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
 		Size: 5.4 KB (5389 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bonita:2023.1` - unknown; unknown
 
 ```console
-$ docker pull bonita@sha256:8f1cc606a90a7abc2851f20fba07f23bf83c34a70ed40e3e0ed6c7fc8c0a2890
+$ docker pull bonita@sha256:3b40932a2cb7e60369bd084fecd38501a2a07e2d55b5286298f2f40a1cabfe12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **905.4 KB (905352 bytes)**  
+-	Total Size: **911.2 KB (911229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:951eef43f9de0abc987ba69f3233970e0dbe6a91bd56f322f7942b67891ba154`
+-	Image ID: `sha256:c95c5e7ed59899afb163cb554d405050d9252d0b93d791a3f4a3006173d62906`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:109b52551c976304c0e4225e96d265770a5cfb1ba7422f8c4b4f2fb9fbd2b455`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
-		Size: 881.9 KB (881910 bytes)  
+	-	`sha256:f03d081fb4baf16cd1a9b4ded32a8f6477033290a9bc3bf851ae1e40176a90b2`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
+		Size: 887.8 KB (887788 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f5fb5d14a6464a9be7aabed7986788c2d063d67041fa42c6d4db2308949a5b20`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
-		Size: 23.4 KB (23442 bytes)  
+	-	`sha256:f98e50441ea5d86128b4f4960b415a4218f82c16f1c16415781c8b02e7307cff`  
+		Last Modified: Wed, 08 Jan 2025 18:17:02 GMT  
+		Size: 23.4 KB (23441 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `bonita:2023.1` - linux; arm64 variant v8
@@ -1820,7 +1820,7 @@ $ docker pull bonita@sha256:f5dec7375e0f0952519479507be3d109a71872bb2cf96d8bf425
 ## `bonita:2023.1-u0`
 
 ```console
-$ docker pull bonita@sha256:da919ef947b277af7a52f1e200db38d896d3900488d0da6eb34de19039ec0ad3
+$ docker pull bonita@sha256:c5c823e8e2507b967d55fd458b8e168bd38cdb09874e8e26a7b6f1c9d090ff17
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1835,19 +1835,19 @@ $ docker pull bonita@sha256:da919ef947b277af7a52f1e200db38d896d3900488d0da6eb34d
 ### `bonita:2023.1-u0` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:7d5b3c18f53f442e8410a0793cd737077f313c3b37056333fa63695b3ca24f7a
+$ docker pull bonita@sha256:839309576f921c062eb32d00c7306f8548c63eb2d641d8ea9e64427cd9123457
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.5 MB (184548981 bytes)**  
+-	Total Size: **184.6 MB (184586621 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a29cb4133c5e35686e4275ec2bf610f7dac56ac500d719dab69241442e2e341`
+-	Image ID: `sha256:3c7c6d117c8bfb97c3e0b76314f01f64289353cd58923b97f3f86965d9f839e3`
 -	Entrypoint: `["\/opt\/files\/startup.sh"]`
 -	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
 
 ```dockerfile
 # Mon, 08 Jul 2024 07:05:57 GMT
-ADD alpine-minirootfs-3.20.4-x86_64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.5-x86_64.tar.gz / # buildkit
 # Mon, 08 Jul 2024 07:05:57 GMT
 CMD ["/bin/sh"]
 # Mon, 08 Jul 2024 07:05:57 GMT
@@ -1929,61 +1929,61 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
-		Size: 3.6 MB (3613999 bytes)  
+	-	`sha256:66a3d608f3fa52124f8463e9467f170c784abd549e8216aa45c6960b00b4b79b`  
+		Last Modified: Wed, 08 Jan 2025 15:55:45 GMT  
+		Size: 3.6 MB (3626260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66549bbe18cf4a766894d09daa7ca68de99fe1dec28356b076a95b28a26d303b`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 62.7 MB (62746361 bytes)  
+	-	`sha256:d87131e99d38b287035dfa2ac9ba12e0c61cdd62f01e64d80b9691672ebed5c6`  
+		Last Modified: Wed, 08 Jan 2025 18:17:04 GMT  
+		Size: 62.8 MB (62771776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07b0085de8d6725180b4baef21f65fc1aaf940a66740fa82dc6521a5f2b7e3d9`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
+	-	`sha256:ebce3f7a9f918d324689aa8d9a204324d3abd229dd393c335c31947eceb29ed1`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
 		Size: 123.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:316a425296944ff3f1bee23e124ec2ed863092134f8a88be8a06ecccc44a0e1a`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
+	-	`sha256:625a766af4de10c10600747bd7996532f5ba388e68d36670ebf6b1f9a8298fe7`  
+		Last Modified: Wed, 08 Jan 2025 18:17:02 GMT  
 		Size: 959.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db282f592b0b69f72df4b6ba4cdfd8176d31ac7d42d1ae10c0f8d171b6ba1749`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
+	-	`sha256:c3cac6e828598e8210b7fcd84264ee99829eb8a06f8b3fba37071d837309f2b1`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:223c54b4b7bab2bffd3b3de64ee27f671b3828fb3a3ad15adf99301ae1ddbbf4`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 3.4 KB (3427 bytes)  
+	-	`sha256:f39d6b0d3105a1df4ff48246622351cd7236dd2a81e0fede1723e5a8c850c722`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
+		Size: 3.4 KB (3428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49f0652e66a870a3e479a88a993279c88c65b1a645784c68ad5f3e3e8a7e41d0`  
-		Last Modified: Tue, 07 Jan 2025 03:33:35 GMT  
-		Size: 118.2 MB (118178608 bytes)  
+	-	`sha256:a3fc52347d1507c9706d8761cc789ddb1f73ed80b9840ad971b12befa51e3f0b`  
+		Last Modified: Wed, 08 Jan 2025 18:17:05 GMT  
+		Size: 118.2 MB (118178571 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f4585e64d3624f752ec12e7d8944d9b8215bf04e8fcf88c87d00f891fe7a907`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
+	-	`sha256:85222b2078f6c0397db8db28ba785a42db30c2b6219c34e9e7215735c54006b3`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
 		Size: 5.4 KB (5389 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bonita:2023.1-u0` - unknown; unknown
 
 ```console
-$ docker pull bonita@sha256:8f1cc606a90a7abc2851f20fba07f23bf83c34a70ed40e3e0ed6c7fc8c0a2890
+$ docker pull bonita@sha256:3b40932a2cb7e60369bd084fecd38501a2a07e2d55b5286298f2f40a1cabfe12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **905.4 KB (905352 bytes)**  
+-	Total Size: **911.2 KB (911229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:951eef43f9de0abc987ba69f3233970e0dbe6a91bd56f322f7942b67891ba154`
+-	Image ID: `sha256:c95c5e7ed59899afb163cb554d405050d9252d0b93d791a3f4a3006173d62906`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:109b52551c976304c0e4225e96d265770a5cfb1ba7422f8c4b4f2fb9fbd2b455`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
-		Size: 881.9 KB (881910 bytes)  
+	-	`sha256:f03d081fb4baf16cd1a9b4ded32a8f6477033290a9bc3bf851ae1e40176a90b2`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
+		Size: 887.8 KB (887788 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f5fb5d14a6464a9be7aabed7986788c2d063d67041fa42c6d4db2308949a5b20`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
-		Size: 23.4 KB (23442 bytes)  
+	-	`sha256:f98e50441ea5d86128b4f4960b415a4218f82c16f1c16415781c8b02e7307cff`  
+		Last Modified: Wed, 08 Jan 2025 18:17:02 GMT  
+		Size: 23.4 KB (23441 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `bonita:2023.1-u0` - linux; arm64 variant v8
@@ -2297,7 +2297,7 @@ $ docker pull bonita@sha256:f5dec7375e0f0952519479507be3d109a71872bb2cf96d8bf425
 ## `bonita:2023.2`
 
 ```console
-$ docker pull bonita@sha256:220cfd3ce3d34c601b394b6c27627f471b9b868812a089ca9e7b5b4e15439928
+$ docker pull bonita@sha256:a01f3920a6c094140f922a6bc91cd644ce824ae78fd5aa3d575a8e3804ce2ee1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2312,19 +2312,19 @@ $ docker pull bonita@sha256:220cfd3ce3d34c601b394b6c27627f471b9b868812a089ca9e7b
 ### `bonita:2023.2` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:566beec33a8ae41c07536c92e003ccf2a4e8500ecafe2ac205dcc3e0d009a9cc
+$ docker pull bonita@sha256:9a7b8be0335eca51240e576921f54fcdfb8c82472b0f9e04d39a33fe80a02eb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.4 MB (192387327 bytes)**  
+-	Total Size: **192.4 MB (192425524 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0cdbdaf08524327df614785cf3b423888360fbb799b03f8c9c2c8b01ca22261`
+-	Image ID: `sha256:376459bb6aec365e99f615be8f30be5752d17e1c863c39046af72cf1b281b869`
 -	Entrypoint: `["\/opt\/files\/startup.sh"]`
 -	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
 
 ```dockerfile
 # Mon, 08 Jul 2024 07:08:41 GMT
-ADD alpine-minirootfs-3.20.4-x86_64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.5-x86_64.tar.gz / # buildkit
 # Mon, 08 Jul 2024 07:08:41 GMT
 CMD ["/bin/sh"]
 # Mon, 08 Jul 2024 07:08:41 GMT
@@ -2404,60 +2404,60 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
-		Size: 3.6 MB (3613999 bytes)  
+	-	`sha256:66a3d608f3fa52124f8463e9467f170c784abd549e8216aa45c6960b00b4b79b`  
+		Last Modified: Wed, 08 Jan 2025 15:55:45 GMT  
+		Size: 3.6 MB (3626260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:383b8e6d31750cbe53f121af8235dbd37118448218c4366a8e9a42a3a845aaec`  
-		Last Modified: Tue, 07 Jan 2025 03:33:34 GMT  
-		Size: 68.6 MB (68589340 bytes)  
+	-	`sha256:a24854979e55d26ea6ba886a62b11271fc3b3aa0b8e58511e1ac900515805461`  
+		Last Modified: Wed, 08 Jan 2025 18:16:56 GMT  
+		Size: 68.6 MB (68615271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87ef99fd2b83f0c1f1d8085a5394c941fc2588767da5845f2470fcff7270cdb4`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 121.0 B  
+	-	`sha256:7c0557c93d928fd0d99725cb493940d90aa4c44c7ed3076499cdef92086c0783`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44866ebe06cc14ec4c0d16509a846f3aad78822dd0c11144b8c22f3b87f767c7`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
+	-	`sha256:dfbbfb5f3be677939423491830e17a3b727b392fa4f92b3cfd5cea6af35825ec`  
+		Last Modified: Wed, 08 Jan 2025 18:16:54 GMT  
 		Size: 958.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e05d1ad1276ba32c50b459bed5f5bd7ce8460b56b5fdce5556ec042cc374332`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 114.0 B  
+	-	`sha256:5d2125cf3931e4bf088b69efea36c25f1989f4fa4172d38e2d95235863f38b11`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7248a84fc2c5c0deaf18ca307a1dd92e610ee4fa820ff7a71471791c4fe58d8`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 3.6 KB (3612 bytes)  
+	-	`sha256:48af2960cafbf506204ff417840f1932ae079c8778cac11a93f9990008c9e068`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 3.6 KB (3613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab47fa7049e9da6c9813302c6d218ae6bbeb364d691d4b8af2ffdee060db959d`  
-		Last Modified: Tue, 07 Jan 2025 03:33:35 GMT  
-		Size: 120.2 MB (120173556 bytes)  
+	-	`sha256:3f74450d11734073a93dc5bad03f3eb7dcfffb65137129c745c71cb5f9852a83`  
+		Last Modified: Wed, 08 Jan 2025 18:16:57 GMT  
+		Size: 120.2 MB (120173557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81baec9f5a1ef66015b4a05c1e26ef879a219bcf020af89c400d01af2468a467`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 5.6 KB (5627 bytes)  
+	-	`sha256:a4446248ca40e45ab4201f417dbe98c122248cccc1b6377c3c2822041ecb102a`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 5.6 KB (5628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bonita:2023.2` - unknown; unknown
 
 ```console
-$ docker pull bonita@sha256:c492243b177bd21f71b94bf5d5949e30c308b0ace2d3e95af119642639b40299
+$ docker pull bonita@sha256:76704d018b8dfe83d3e60fe02d283822b78f2829293b0a282b2909a8b7e6c569
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.4 MB (1362013 bytes)**  
+-	Total Size: **1.4 MB (1367891 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb0ccc973dae0dacea38915b57b97217297921d356102c6cce3a06a11df08ff0`
+-	Image ID: `sha256:d3e2ff34cac1e9b80c419920795585de6d8293bbbdc0a4bd8d2e9b890ae10b33`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7cba4c1c1813686626e9a07d23cf382576058b9859c2b2195f3b46b310ce5e41`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 1.3 MB (1339091 bytes)  
+	-	`sha256:dbdf90f57620dd34aa6e3e6650d4b430a2db8cafdb875f084e4b8a27135ac9a0`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 1.3 MB (1344969 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c2e26dc76e4472e63180079951a0941c5e2014c1ae18c169ec1f61df13bcae1b`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
+	-	`sha256:8555e596e9e84a80f6572cbe66a8ac589269dba921f4a1fdeb8d8ec2761f2d99`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
 		Size: 22.9 KB (22922 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2768,7 +2768,7 @@ $ docker pull bonita@sha256:66cbffe7034451de8155a546e57343e0efc34321172cdb7da5a8
 ## `bonita:2023.2-u0`
 
 ```console
-$ docker pull bonita@sha256:220cfd3ce3d34c601b394b6c27627f471b9b868812a089ca9e7b5b4e15439928
+$ docker pull bonita@sha256:a01f3920a6c094140f922a6bc91cd644ce824ae78fd5aa3d575a8e3804ce2ee1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2783,19 +2783,19 @@ $ docker pull bonita@sha256:220cfd3ce3d34c601b394b6c27627f471b9b868812a089ca9e7b
 ### `bonita:2023.2-u0` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:566beec33a8ae41c07536c92e003ccf2a4e8500ecafe2ac205dcc3e0d009a9cc
+$ docker pull bonita@sha256:9a7b8be0335eca51240e576921f54fcdfb8c82472b0f9e04d39a33fe80a02eb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.4 MB (192387327 bytes)**  
+-	Total Size: **192.4 MB (192425524 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0cdbdaf08524327df614785cf3b423888360fbb799b03f8c9c2c8b01ca22261`
+-	Image ID: `sha256:376459bb6aec365e99f615be8f30be5752d17e1c863c39046af72cf1b281b869`
 -	Entrypoint: `["\/opt\/files\/startup.sh"]`
 -	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
 
 ```dockerfile
 # Mon, 08 Jul 2024 07:08:41 GMT
-ADD alpine-minirootfs-3.20.4-x86_64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.5-x86_64.tar.gz / # buildkit
 # Mon, 08 Jul 2024 07:08:41 GMT
 CMD ["/bin/sh"]
 # Mon, 08 Jul 2024 07:08:41 GMT
@@ -2875,60 +2875,60 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
-		Size: 3.6 MB (3613999 bytes)  
+	-	`sha256:66a3d608f3fa52124f8463e9467f170c784abd549e8216aa45c6960b00b4b79b`  
+		Last Modified: Wed, 08 Jan 2025 15:55:45 GMT  
+		Size: 3.6 MB (3626260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:383b8e6d31750cbe53f121af8235dbd37118448218c4366a8e9a42a3a845aaec`  
-		Last Modified: Tue, 07 Jan 2025 03:33:34 GMT  
-		Size: 68.6 MB (68589340 bytes)  
+	-	`sha256:a24854979e55d26ea6ba886a62b11271fc3b3aa0b8e58511e1ac900515805461`  
+		Last Modified: Wed, 08 Jan 2025 18:16:56 GMT  
+		Size: 68.6 MB (68615271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87ef99fd2b83f0c1f1d8085a5394c941fc2588767da5845f2470fcff7270cdb4`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 121.0 B  
+	-	`sha256:7c0557c93d928fd0d99725cb493940d90aa4c44c7ed3076499cdef92086c0783`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44866ebe06cc14ec4c0d16509a846f3aad78822dd0c11144b8c22f3b87f767c7`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
+	-	`sha256:dfbbfb5f3be677939423491830e17a3b727b392fa4f92b3cfd5cea6af35825ec`  
+		Last Modified: Wed, 08 Jan 2025 18:16:54 GMT  
 		Size: 958.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e05d1ad1276ba32c50b459bed5f5bd7ce8460b56b5fdce5556ec042cc374332`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 114.0 B  
+	-	`sha256:5d2125cf3931e4bf088b69efea36c25f1989f4fa4172d38e2d95235863f38b11`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7248a84fc2c5c0deaf18ca307a1dd92e610ee4fa820ff7a71471791c4fe58d8`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 3.6 KB (3612 bytes)  
+	-	`sha256:48af2960cafbf506204ff417840f1932ae079c8778cac11a93f9990008c9e068`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 3.6 KB (3613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab47fa7049e9da6c9813302c6d218ae6bbeb364d691d4b8af2ffdee060db959d`  
-		Last Modified: Tue, 07 Jan 2025 03:33:35 GMT  
-		Size: 120.2 MB (120173556 bytes)  
+	-	`sha256:3f74450d11734073a93dc5bad03f3eb7dcfffb65137129c745c71cb5f9852a83`  
+		Last Modified: Wed, 08 Jan 2025 18:16:57 GMT  
+		Size: 120.2 MB (120173557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81baec9f5a1ef66015b4a05c1e26ef879a219bcf020af89c400d01af2468a467`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 5.6 KB (5627 bytes)  
+	-	`sha256:a4446248ca40e45ab4201f417dbe98c122248cccc1b6377c3c2822041ecb102a`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 5.6 KB (5628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bonita:2023.2-u0` - unknown; unknown
 
 ```console
-$ docker pull bonita@sha256:c492243b177bd21f71b94bf5d5949e30c308b0ace2d3e95af119642639b40299
+$ docker pull bonita@sha256:76704d018b8dfe83d3e60fe02d283822b78f2829293b0a282b2909a8b7e6c569
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.4 MB (1362013 bytes)**  
+-	Total Size: **1.4 MB (1367891 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb0ccc973dae0dacea38915b57b97217297921d356102c6cce3a06a11df08ff0`
+-	Image ID: `sha256:d3e2ff34cac1e9b80c419920795585de6d8293bbbdc0a4bd8d2e9b890ae10b33`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7cba4c1c1813686626e9a07d23cf382576058b9859c2b2195f3b46b310ce5e41`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 1.3 MB (1339091 bytes)  
+	-	`sha256:dbdf90f57620dd34aa6e3e6650d4b430a2db8cafdb875f084e4b8a27135ac9a0`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 1.3 MB (1344969 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c2e26dc76e4472e63180079951a0941c5e2014c1ae18c169ec1f61df13bcae1b`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
+	-	`sha256:8555e596e9e84a80f6572cbe66a8ac589269dba921f4a1fdeb8d8ec2761f2d99`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
 		Size: 22.9 KB (22922 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3629,7 +3629,7 @@ $ docker pull bonita@sha256:fc8c171f42d195bc92dfd7e3de63bb6692509bedca4be90b9536
 ## `bonita:7.15`
 
 ```console
-$ docker pull bonita@sha256:0f4805fdb225a05fad16791626a16c6a6d8d546686788d84256e2d5fad280f28
+$ docker pull bonita@sha256:bce450318ce4ce5d653bdc8896d22db2fe600483500351fb0ad6dad891f5ec33
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3644,19 +3644,19 @@ $ docker pull bonita@sha256:0f4805fdb225a05fad16791626a16c6a6d8d546686788d84256e
 ### `bonita:7.15` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:3abfce45cb7ebdc849a72378fb8ca6d7ce4aecf88335ee8c56ee47054fd5b8c5
+$ docker pull bonita@sha256:5188e32eeb271cead0ecec62485650f5ca149702d3452f6aa612fae5e33358d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **185.6 MB (185560715 bytes)**  
+-	Total Size: **185.6 MB (185598300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e13a3763a5eeb1227c713c67a021bc4771d6b71b17d4cb49ce43f526348ae5da`
+-	Image ID: `sha256:e3471e8eaf5d7ecd3f0b3aa3824977c6193002a9e6fba2de6cb03a99e83d1571`
 -	Entrypoint: `["\/opt\/files\/startup.sh"]`
 -	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
 
 ```dockerfile
 # Mon, 08 Jul 2024 07:02:02 GMT
-ADD alpine-minirootfs-3.20.4-x86_64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.5-x86_64.tar.gz / # buildkit
 # Mon, 08 Jul 2024 07:02:02 GMT
 CMD ["/bin/sh"]
 # Mon, 08 Jul 2024 07:02:02 GMT
@@ -3734,60 +3734,60 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
-		Size: 3.6 MB (3613999 bytes)  
+	-	`sha256:66a3d608f3fa52124f8463e9467f170c784abd549e8216aa45c6960b00b4b79b`  
+		Last Modified: Wed, 08 Jan 2025 15:55:45 GMT  
+		Size: 3.6 MB (3626260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c9ae828d576751c8dc840b9e1312ffc5a15f54c589bfadf27905e6afed87a422`  
-		Last Modified: Tue, 07 Jan 2025 03:20:00 GMT  
-		Size: 62.7 MB (62746367 bytes)  
+	-	`sha256:7fcce85a2d1c46d81f0ac2e80db005d94000aabed38b8ea64b20c1d2a6d38ca7`  
+		Last Modified: Wed, 08 Jan 2025 18:16:52 GMT  
+		Size: 62.8 MB (62771721 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df7515b6daff1fa58ee7e6f31e10b428fbb810e6562b4b844fd8a9a4063904b8`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
-		Size: 123.0 B  
+	-	`sha256:8e6c44d72b624209f41bb11468131325ebb11e7620aea3c56fec8d454370fe89`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6dee6e7ad9249a2d8b9e217371cc995119e2ffdc922a77bad3673033e6f9f164`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
-		Size: 959.0 B  
+	-	`sha256:1c067e3d716b220e2a521799ccc31cc2f81aa8483376a0eb816725296ba0e12f`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
+		Size: 957.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b1dba2079a749a8644437b7c2573fd53be7445072de7fcc9862aa66b4de6f39`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
-		Size: 115.0 B  
+	-	`sha256:bfd401cc65ee90d0558b9b5eef05e5a8e34c8f743d54c493313019d77dd12663`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
+		Size: 113.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06054a4959a411227f99f0f2b6063a60d252df239374d7d8771ee3fe6d8477ba`  
-		Last Modified: Tue, 07 Jan 2025 03:20:00 GMT  
+	-	`sha256:0f86759833c16d14dbf6a1c2285f9a35eef3d64dd1c2e94c3f0ce61a1009c505`  
+		Last Modified: Wed, 08 Jan 2025 18:16:52 GMT  
 		Size: 3.0 KB (2992 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eed1763c3913d1b10ba98a9c6c05b4e15c833d4c4184a984b63955568eafc94d`  
-		Last Modified: Tue, 07 Jan 2025 03:20:01 GMT  
-		Size: 119.2 MB (119190771 bytes)  
+	-	`sha256:a4488c046b2b3dcfb9e4f454e0d27a3a5327bef30aaf70c5dbc3d6857e26fa6d`  
+		Last Modified: Wed, 08 Jan 2025 18:16:53 GMT  
+		Size: 119.2 MB (119190746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:478d8f7b5fa1fb77f2c650581c77e6eaa0aef9aba152768e6917d1786e1209c0`  
-		Last Modified: Tue, 07 Jan 2025 03:20:00 GMT  
-		Size: 5.4 KB (5389 bytes)  
+	-	`sha256:078953c12b2583edab0584a367d6b2796d74604bd12d6b390f76f2f9012b7e40`  
+		Last Modified: Wed, 08 Jan 2025 18:16:52 GMT  
+		Size: 5.4 KB (5390 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bonita:7.15` - unknown; unknown
 
 ```console
-$ docker pull bonita@sha256:4f7b1d7576625225348004421738d2ac20df9017aa0e796ac9d1d568ba69eae8
+$ docker pull bonita@sha256:401ff348594a0b9ec35547e456d392e8123fa01b465e6cce6f5d6df6e5f979a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **914.1 KB (914088 bytes)**  
+-	Total Size: **920.0 KB (919966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eac70f16c9681b2092e59059774712d0b3f6d5119c877e95f245ee20a045919c`
+-	Image ID: `sha256:c3235cacdeb59c6372172164372ba20c0ca84da872eb0c468afca23bd2c69f1a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:febde7285d651e4c70e7c6615ac6add1c20c4f937b52e10e245f35f1c3c24442`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
-		Size: 890.8 KB (890816 bytes)  
+	-	`sha256:1262c903057882def4c6095f99d576167e990ec9757b7dd9c57ef0fdde1e826c`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
+		Size: 896.7 KB (896694 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6f312ae4b3ece73317d863ee7dd0e8b7a0e231276035edc072f963459e6e93b8`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
+	-	`sha256:98e116b1eda94c3ef8c44c8667f38f779a2bc174162e20575d839da409604244`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
 		Size: 23.3 KB (23272 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4094,7 +4094,7 @@ $ docker pull bonita@sha256:f0f0a37f914643aabf7fc9317589916e7a10300d33116b7eadd7
 ## `bonita:7.15.0`
 
 ```console
-$ docker pull bonita@sha256:0f4805fdb225a05fad16791626a16c6a6d8d546686788d84256e2d5fad280f28
+$ docker pull bonita@sha256:bce450318ce4ce5d653bdc8896d22db2fe600483500351fb0ad6dad891f5ec33
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4109,19 +4109,19 @@ $ docker pull bonita@sha256:0f4805fdb225a05fad16791626a16c6a6d8d546686788d84256e
 ### `bonita:7.15.0` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:3abfce45cb7ebdc849a72378fb8ca6d7ce4aecf88335ee8c56ee47054fd5b8c5
+$ docker pull bonita@sha256:5188e32eeb271cead0ecec62485650f5ca149702d3452f6aa612fae5e33358d8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **185.6 MB (185560715 bytes)**  
+-	Total Size: **185.6 MB (185598300 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e13a3763a5eeb1227c713c67a021bc4771d6b71b17d4cb49ce43f526348ae5da`
+-	Image ID: `sha256:e3471e8eaf5d7ecd3f0b3aa3824977c6193002a9e6fba2de6cb03a99e83d1571`
 -	Entrypoint: `["\/opt\/files\/startup.sh"]`
 -	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
 
 ```dockerfile
 # Mon, 08 Jul 2024 07:02:02 GMT
-ADD alpine-minirootfs-3.20.4-x86_64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.5-x86_64.tar.gz / # buildkit
 # Mon, 08 Jul 2024 07:02:02 GMT
 CMD ["/bin/sh"]
 # Mon, 08 Jul 2024 07:02:02 GMT
@@ -4199,60 +4199,60 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
-		Size: 3.6 MB (3613999 bytes)  
+	-	`sha256:66a3d608f3fa52124f8463e9467f170c784abd549e8216aa45c6960b00b4b79b`  
+		Last Modified: Wed, 08 Jan 2025 15:55:45 GMT  
+		Size: 3.6 MB (3626260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c9ae828d576751c8dc840b9e1312ffc5a15f54c589bfadf27905e6afed87a422`  
-		Last Modified: Tue, 07 Jan 2025 03:20:00 GMT  
-		Size: 62.7 MB (62746367 bytes)  
+	-	`sha256:7fcce85a2d1c46d81f0ac2e80db005d94000aabed38b8ea64b20c1d2a6d38ca7`  
+		Last Modified: Wed, 08 Jan 2025 18:16:52 GMT  
+		Size: 62.8 MB (62771721 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:df7515b6daff1fa58ee7e6f31e10b428fbb810e6562b4b844fd8a9a4063904b8`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
-		Size: 123.0 B  
+	-	`sha256:8e6c44d72b624209f41bb11468131325ebb11e7620aea3c56fec8d454370fe89`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
+		Size: 121.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6dee6e7ad9249a2d8b9e217371cc995119e2ffdc922a77bad3673033e6f9f164`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
-		Size: 959.0 B  
+	-	`sha256:1c067e3d716b220e2a521799ccc31cc2f81aa8483376a0eb816725296ba0e12f`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
+		Size: 957.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b1dba2079a749a8644437b7c2573fd53be7445072de7fcc9862aa66b4de6f39`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
-		Size: 115.0 B  
+	-	`sha256:bfd401cc65ee90d0558b9b5eef05e5a8e34c8f743d54c493313019d77dd12663`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
+		Size: 113.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06054a4959a411227f99f0f2b6063a60d252df239374d7d8771ee3fe6d8477ba`  
-		Last Modified: Tue, 07 Jan 2025 03:20:00 GMT  
+	-	`sha256:0f86759833c16d14dbf6a1c2285f9a35eef3d64dd1c2e94c3f0ce61a1009c505`  
+		Last Modified: Wed, 08 Jan 2025 18:16:52 GMT  
 		Size: 3.0 KB (2992 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eed1763c3913d1b10ba98a9c6c05b4e15c833d4c4184a984b63955568eafc94d`  
-		Last Modified: Tue, 07 Jan 2025 03:20:01 GMT  
-		Size: 119.2 MB (119190771 bytes)  
+	-	`sha256:a4488c046b2b3dcfb9e4f454e0d27a3a5327bef30aaf70c5dbc3d6857e26fa6d`  
+		Last Modified: Wed, 08 Jan 2025 18:16:53 GMT  
+		Size: 119.2 MB (119190746 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:478d8f7b5fa1fb77f2c650581c77e6eaa0aef9aba152768e6917d1786e1209c0`  
-		Last Modified: Tue, 07 Jan 2025 03:20:00 GMT  
-		Size: 5.4 KB (5389 bytes)  
+	-	`sha256:078953c12b2583edab0584a367d6b2796d74604bd12d6b390f76f2f9012b7e40`  
+		Last Modified: Wed, 08 Jan 2025 18:16:52 GMT  
+		Size: 5.4 KB (5390 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bonita:7.15.0` - unknown; unknown
 
 ```console
-$ docker pull bonita@sha256:4f7b1d7576625225348004421738d2ac20df9017aa0e796ac9d1d568ba69eae8
+$ docker pull bonita@sha256:401ff348594a0b9ec35547e456d392e8123fa01b465e6cce6f5d6df6e5f979a9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **914.1 KB (914088 bytes)**  
+-	Total Size: **920.0 KB (919966 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eac70f16c9681b2092e59059774712d0b3f6d5119c877e95f245ee20a045919c`
+-	Image ID: `sha256:c3235cacdeb59c6372172164372ba20c0ca84da872eb0c468afca23bd2c69f1a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:febde7285d651e4c70e7c6615ac6add1c20c4f937b52e10e245f35f1c3c24442`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
-		Size: 890.8 KB (890816 bytes)  
+	-	`sha256:1262c903057882def4c6095f99d576167e990ec9757b7dd9c57ef0fdde1e826c`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
+		Size: 896.7 KB (896694 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6f312ae4b3ece73317d863ee7dd0e8b7a0e231276035edc072f963459e6e93b8`  
-		Last Modified: Tue, 07 Jan 2025 03:19:59 GMT  
+	-	`sha256:98e116b1eda94c3ef8c44c8667f38f779a2bc174162e20575d839da409604244`  
+		Last Modified: Wed, 08 Jan 2025 18:16:51 GMT  
 		Size: 23.3 KB (23272 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4559,7 +4559,7 @@ $ docker pull bonita@sha256:f0f0a37f914643aabf7fc9317589916e7a10300d33116b7eadd7
 ## `bonita:8.0`
 
 ```console
-$ docker pull bonita@sha256:da919ef947b277af7a52f1e200db38d896d3900488d0da6eb34de19039ec0ad3
+$ docker pull bonita@sha256:c5c823e8e2507b967d55fd458b8e168bd38cdb09874e8e26a7b6f1c9d090ff17
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4574,19 +4574,19 @@ $ docker pull bonita@sha256:da919ef947b277af7a52f1e200db38d896d3900488d0da6eb34d
 ### `bonita:8.0` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:7d5b3c18f53f442e8410a0793cd737077f313c3b37056333fa63695b3ca24f7a
+$ docker pull bonita@sha256:839309576f921c062eb32d00c7306f8548c63eb2d641d8ea9e64427cd9123457
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.5 MB (184548981 bytes)**  
+-	Total Size: **184.6 MB (184586621 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a29cb4133c5e35686e4275ec2bf610f7dac56ac500d719dab69241442e2e341`
+-	Image ID: `sha256:3c7c6d117c8bfb97c3e0b76314f01f64289353cd58923b97f3f86965d9f839e3`
 -	Entrypoint: `["\/opt\/files\/startup.sh"]`
 -	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
 
 ```dockerfile
 # Mon, 08 Jul 2024 07:05:57 GMT
-ADD alpine-minirootfs-3.20.4-x86_64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.5-x86_64.tar.gz / # buildkit
 # Mon, 08 Jul 2024 07:05:57 GMT
 CMD ["/bin/sh"]
 # Mon, 08 Jul 2024 07:05:57 GMT
@@ -4668,61 +4668,61 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
-		Size: 3.6 MB (3613999 bytes)  
+	-	`sha256:66a3d608f3fa52124f8463e9467f170c784abd549e8216aa45c6960b00b4b79b`  
+		Last Modified: Wed, 08 Jan 2025 15:55:45 GMT  
+		Size: 3.6 MB (3626260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66549bbe18cf4a766894d09daa7ca68de99fe1dec28356b076a95b28a26d303b`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 62.7 MB (62746361 bytes)  
+	-	`sha256:d87131e99d38b287035dfa2ac9ba12e0c61cdd62f01e64d80b9691672ebed5c6`  
+		Last Modified: Wed, 08 Jan 2025 18:17:04 GMT  
+		Size: 62.8 MB (62771776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07b0085de8d6725180b4baef21f65fc1aaf940a66740fa82dc6521a5f2b7e3d9`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
+	-	`sha256:ebce3f7a9f918d324689aa8d9a204324d3abd229dd393c335c31947eceb29ed1`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
 		Size: 123.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:316a425296944ff3f1bee23e124ec2ed863092134f8a88be8a06ecccc44a0e1a`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
+	-	`sha256:625a766af4de10c10600747bd7996532f5ba388e68d36670ebf6b1f9a8298fe7`  
+		Last Modified: Wed, 08 Jan 2025 18:17:02 GMT  
 		Size: 959.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db282f592b0b69f72df4b6ba4cdfd8176d31ac7d42d1ae10c0f8d171b6ba1749`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
+	-	`sha256:c3cac6e828598e8210b7fcd84264ee99829eb8a06f8b3fba37071d837309f2b1`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:223c54b4b7bab2bffd3b3de64ee27f671b3828fb3a3ad15adf99301ae1ddbbf4`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 3.4 KB (3427 bytes)  
+	-	`sha256:f39d6b0d3105a1df4ff48246622351cd7236dd2a81e0fede1723e5a8c850c722`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
+		Size: 3.4 KB (3428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49f0652e66a870a3e479a88a993279c88c65b1a645784c68ad5f3e3e8a7e41d0`  
-		Last Modified: Tue, 07 Jan 2025 03:33:35 GMT  
-		Size: 118.2 MB (118178608 bytes)  
+	-	`sha256:a3fc52347d1507c9706d8761cc789ddb1f73ed80b9840ad971b12befa51e3f0b`  
+		Last Modified: Wed, 08 Jan 2025 18:17:05 GMT  
+		Size: 118.2 MB (118178571 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f4585e64d3624f752ec12e7d8944d9b8215bf04e8fcf88c87d00f891fe7a907`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
+	-	`sha256:85222b2078f6c0397db8db28ba785a42db30c2b6219c34e9e7215735c54006b3`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
 		Size: 5.4 KB (5389 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bonita:8.0` - unknown; unknown
 
 ```console
-$ docker pull bonita@sha256:8f1cc606a90a7abc2851f20fba07f23bf83c34a70ed40e3e0ed6c7fc8c0a2890
+$ docker pull bonita@sha256:3b40932a2cb7e60369bd084fecd38501a2a07e2d55b5286298f2f40a1cabfe12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **905.4 KB (905352 bytes)**  
+-	Total Size: **911.2 KB (911229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:951eef43f9de0abc987ba69f3233970e0dbe6a91bd56f322f7942b67891ba154`
+-	Image ID: `sha256:c95c5e7ed59899afb163cb554d405050d9252d0b93d791a3f4a3006173d62906`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:109b52551c976304c0e4225e96d265770a5cfb1ba7422f8c4b4f2fb9fbd2b455`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
-		Size: 881.9 KB (881910 bytes)  
+	-	`sha256:f03d081fb4baf16cd1a9b4ded32a8f6477033290a9bc3bf851ae1e40176a90b2`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
+		Size: 887.8 KB (887788 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f5fb5d14a6464a9be7aabed7986788c2d063d67041fa42c6d4db2308949a5b20`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
-		Size: 23.4 KB (23442 bytes)  
+	-	`sha256:f98e50441ea5d86128b4f4960b415a4218f82c16f1c16415781c8b02e7307cff`  
+		Last Modified: Wed, 08 Jan 2025 18:17:02 GMT  
+		Size: 23.4 KB (23441 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `bonita:8.0` - linux; arm64 variant v8
@@ -5036,7 +5036,7 @@ $ docker pull bonita@sha256:f5dec7375e0f0952519479507be3d109a71872bb2cf96d8bf425
 ## `bonita:8.0.0`
 
 ```console
-$ docker pull bonita@sha256:da919ef947b277af7a52f1e200db38d896d3900488d0da6eb34de19039ec0ad3
+$ docker pull bonita@sha256:c5c823e8e2507b967d55fd458b8e168bd38cdb09874e8e26a7b6f1c9d090ff17
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5051,19 +5051,19 @@ $ docker pull bonita@sha256:da919ef947b277af7a52f1e200db38d896d3900488d0da6eb34d
 ### `bonita:8.0.0` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:7d5b3c18f53f442e8410a0793cd737077f313c3b37056333fa63695b3ca24f7a
+$ docker pull bonita@sha256:839309576f921c062eb32d00c7306f8548c63eb2d641d8ea9e64427cd9123457
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **184.5 MB (184548981 bytes)**  
+-	Total Size: **184.6 MB (184586621 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a29cb4133c5e35686e4275ec2bf610f7dac56ac500d719dab69241442e2e341`
+-	Image ID: `sha256:3c7c6d117c8bfb97c3e0b76314f01f64289353cd58923b97f3f86965d9f839e3`
 -	Entrypoint: `["\/opt\/files\/startup.sh"]`
 -	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
 
 ```dockerfile
 # Mon, 08 Jul 2024 07:05:57 GMT
-ADD alpine-minirootfs-3.20.4-x86_64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.5-x86_64.tar.gz / # buildkit
 # Mon, 08 Jul 2024 07:05:57 GMT
 CMD ["/bin/sh"]
 # Mon, 08 Jul 2024 07:05:57 GMT
@@ -5145,61 +5145,61 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
-		Size: 3.6 MB (3613999 bytes)  
+	-	`sha256:66a3d608f3fa52124f8463e9467f170c784abd549e8216aa45c6960b00b4b79b`  
+		Last Modified: Wed, 08 Jan 2025 15:55:45 GMT  
+		Size: 3.6 MB (3626260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:66549bbe18cf4a766894d09daa7ca68de99fe1dec28356b076a95b28a26d303b`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 62.7 MB (62746361 bytes)  
+	-	`sha256:d87131e99d38b287035dfa2ac9ba12e0c61cdd62f01e64d80b9691672ebed5c6`  
+		Last Modified: Wed, 08 Jan 2025 18:17:04 GMT  
+		Size: 62.8 MB (62771776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07b0085de8d6725180b4baef21f65fc1aaf940a66740fa82dc6521a5f2b7e3d9`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
+	-	`sha256:ebce3f7a9f918d324689aa8d9a204324d3abd229dd393c335c31947eceb29ed1`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
 		Size: 123.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:316a425296944ff3f1bee23e124ec2ed863092134f8a88be8a06ecccc44a0e1a`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
+	-	`sha256:625a766af4de10c10600747bd7996532f5ba388e68d36670ebf6b1f9a8298fe7`  
+		Last Modified: Wed, 08 Jan 2025 18:17:02 GMT  
 		Size: 959.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db282f592b0b69f72df4b6ba4cdfd8176d31ac7d42d1ae10c0f8d171b6ba1749`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
+	-	`sha256:c3cac6e828598e8210b7fcd84264ee99829eb8a06f8b3fba37071d837309f2b1`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:223c54b4b7bab2bffd3b3de64ee27f671b3828fb3a3ad15adf99301ae1ddbbf4`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 3.4 KB (3427 bytes)  
+	-	`sha256:f39d6b0d3105a1df4ff48246622351cd7236dd2a81e0fede1723e5a8c850c722`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
+		Size: 3.4 KB (3428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49f0652e66a870a3e479a88a993279c88c65b1a645784c68ad5f3e3e8a7e41d0`  
-		Last Modified: Tue, 07 Jan 2025 03:33:35 GMT  
-		Size: 118.2 MB (118178608 bytes)  
+	-	`sha256:a3fc52347d1507c9706d8761cc789ddb1f73ed80b9840ad971b12befa51e3f0b`  
+		Last Modified: Wed, 08 Jan 2025 18:17:05 GMT  
+		Size: 118.2 MB (118178571 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f4585e64d3624f752ec12e7d8944d9b8215bf04e8fcf88c87d00f891fe7a907`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
+	-	`sha256:85222b2078f6c0397db8db28ba785a42db30c2b6219c34e9e7215735c54006b3`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
 		Size: 5.4 KB (5389 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bonita:8.0.0` - unknown; unknown
 
 ```console
-$ docker pull bonita@sha256:8f1cc606a90a7abc2851f20fba07f23bf83c34a70ed40e3e0ed6c7fc8c0a2890
+$ docker pull bonita@sha256:3b40932a2cb7e60369bd084fecd38501a2a07e2d55b5286298f2f40a1cabfe12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **905.4 KB (905352 bytes)**  
+-	Total Size: **911.2 KB (911229 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:951eef43f9de0abc987ba69f3233970e0dbe6a91bd56f322f7942b67891ba154`
+-	Image ID: `sha256:c95c5e7ed59899afb163cb554d405050d9252d0b93d791a3f4a3006173d62906`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:109b52551c976304c0e4225e96d265770a5cfb1ba7422f8c4b4f2fb9fbd2b455`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
-		Size: 881.9 KB (881910 bytes)  
+	-	`sha256:f03d081fb4baf16cd1a9b4ded32a8f6477033290a9bc3bf851ae1e40176a90b2`  
+		Last Modified: Wed, 08 Jan 2025 18:17:03 GMT  
+		Size: 887.8 KB (887788 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f5fb5d14a6464a9be7aabed7986788c2d063d67041fa42c6d4db2308949a5b20`  
-		Last Modified: Tue, 07 Jan 2025 03:33:32 GMT  
-		Size: 23.4 KB (23442 bytes)  
+	-	`sha256:f98e50441ea5d86128b4f4960b415a4218f82c16f1c16415781c8b02e7307cff`  
+		Last Modified: Wed, 08 Jan 2025 18:17:02 GMT  
+		Size: 23.4 KB (23441 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `bonita:8.0.0` - linux; arm64 variant v8
@@ -5513,7 +5513,7 @@ $ docker pull bonita@sha256:f5dec7375e0f0952519479507be3d109a71872bb2cf96d8bf425
 ## `bonita:9.0`
 
 ```console
-$ docker pull bonita@sha256:220cfd3ce3d34c601b394b6c27627f471b9b868812a089ca9e7b5b4e15439928
+$ docker pull bonita@sha256:a01f3920a6c094140f922a6bc91cd644ce824ae78fd5aa3d575a8e3804ce2ee1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5528,19 +5528,19 @@ $ docker pull bonita@sha256:220cfd3ce3d34c601b394b6c27627f471b9b868812a089ca9e7b
 ### `bonita:9.0` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:566beec33a8ae41c07536c92e003ccf2a4e8500ecafe2ac205dcc3e0d009a9cc
+$ docker pull bonita@sha256:9a7b8be0335eca51240e576921f54fcdfb8c82472b0f9e04d39a33fe80a02eb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.4 MB (192387327 bytes)**  
+-	Total Size: **192.4 MB (192425524 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0cdbdaf08524327df614785cf3b423888360fbb799b03f8c9c2c8b01ca22261`
+-	Image ID: `sha256:376459bb6aec365e99f615be8f30be5752d17e1c863c39046af72cf1b281b869`
 -	Entrypoint: `["\/opt\/files\/startup.sh"]`
 -	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
 
 ```dockerfile
 # Mon, 08 Jul 2024 07:08:41 GMT
-ADD alpine-minirootfs-3.20.4-x86_64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.5-x86_64.tar.gz / # buildkit
 # Mon, 08 Jul 2024 07:08:41 GMT
 CMD ["/bin/sh"]
 # Mon, 08 Jul 2024 07:08:41 GMT
@@ -5620,60 +5620,60 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
-		Size: 3.6 MB (3613999 bytes)  
+	-	`sha256:66a3d608f3fa52124f8463e9467f170c784abd549e8216aa45c6960b00b4b79b`  
+		Last Modified: Wed, 08 Jan 2025 15:55:45 GMT  
+		Size: 3.6 MB (3626260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:383b8e6d31750cbe53f121af8235dbd37118448218c4366a8e9a42a3a845aaec`  
-		Last Modified: Tue, 07 Jan 2025 03:33:34 GMT  
-		Size: 68.6 MB (68589340 bytes)  
+	-	`sha256:a24854979e55d26ea6ba886a62b11271fc3b3aa0b8e58511e1ac900515805461`  
+		Last Modified: Wed, 08 Jan 2025 18:16:56 GMT  
+		Size: 68.6 MB (68615271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87ef99fd2b83f0c1f1d8085a5394c941fc2588767da5845f2470fcff7270cdb4`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 121.0 B  
+	-	`sha256:7c0557c93d928fd0d99725cb493940d90aa4c44c7ed3076499cdef92086c0783`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44866ebe06cc14ec4c0d16509a846f3aad78822dd0c11144b8c22f3b87f767c7`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
+	-	`sha256:dfbbfb5f3be677939423491830e17a3b727b392fa4f92b3cfd5cea6af35825ec`  
+		Last Modified: Wed, 08 Jan 2025 18:16:54 GMT  
 		Size: 958.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e05d1ad1276ba32c50b459bed5f5bd7ce8460b56b5fdce5556ec042cc374332`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 114.0 B  
+	-	`sha256:5d2125cf3931e4bf088b69efea36c25f1989f4fa4172d38e2d95235863f38b11`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7248a84fc2c5c0deaf18ca307a1dd92e610ee4fa820ff7a71471791c4fe58d8`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 3.6 KB (3612 bytes)  
+	-	`sha256:48af2960cafbf506204ff417840f1932ae079c8778cac11a93f9990008c9e068`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 3.6 KB (3613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab47fa7049e9da6c9813302c6d218ae6bbeb364d691d4b8af2ffdee060db959d`  
-		Last Modified: Tue, 07 Jan 2025 03:33:35 GMT  
-		Size: 120.2 MB (120173556 bytes)  
+	-	`sha256:3f74450d11734073a93dc5bad03f3eb7dcfffb65137129c745c71cb5f9852a83`  
+		Last Modified: Wed, 08 Jan 2025 18:16:57 GMT  
+		Size: 120.2 MB (120173557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81baec9f5a1ef66015b4a05c1e26ef879a219bcf020af89c400d01af2468a467`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 5.6 KB (5627 bytes)  
+	-	`sha256:a4446248ca40e45ab4201f417dbe98c122248cccc1b6377c3c2822041ecb102a`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 5.6 KB (5628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bonita:9.0` - unknown; unknown
 
 ```console
-$ docker pull bonita@sha256:c492243b177bd21f71b94bf5d5949e30c308b0ace2d3e95af119642639b40299
+$ docker pull bonita@sha256:76704d018b8dfe83d3e60fe02d283822b78f2829293b0a282b2909a8b7e6c569
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.4 MB (1362013 bytes)**  
+-	Total Size: **1.4 MB (1367891 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb0ccc973dae0dacea38915b57b97217297921d356102c6cce3a06a11df08ff0`
+-	Image ID: `sha256:d3e2ff34cac1e9b80c419920795585de6d8293bbbdc0a4bd8d2e9b890ae10b33`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7cba4c1c1813686626e9a07d23cf382576058b9859c2b2195f3b46b310ce5e41`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 1.3 MB (1339091 bytes)  
+	-	`sha256:dbdf90f57620dd34aa6e3e6650d4b430a2db8cafdb875f084e4b8a27135ac9a0`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 1.3 MB (1344969 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c2e26dc76e4472e63180079951a0941c5e2014c1ae18c169ec1f61df13bcae1b`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
+	-	`sha256:8555e596e9e84a80f6572cbe66a8ac589269dba921f4a1fdeb8d8ec2761f2d99`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
 		Size: 22.9 KB (22922 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5984,7 +5984,7 @@ $ docker pull bonita@sha256:66cbffe7034451de8155a546e57343e0efc34321172cdb7da5a8
 ## `bonita:9.0.0`
 
 ```console
-$ docker pull bonita@sha256:220cfd3ce3d34c601b394b6c27627f471b9b868812a089ca9e7b5b4e15439928
+$ docker pull bonita@sha256:a01f3920a6c094140f922a6bc91cd644ce824ae78fd5aa3d575a8e3804ce2ee1
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5999,19 +5999,19 @@ $ docker pull bonita@sha256:220cfd3ce3d34c601b394b6c27627f471b9b868812a089ca9e7b
 ### `bonita:9.0.0` - linux; amd64
 
 ```console
-$ docker pull bonita@sha256:566beec33a8ae41c07536c92e003ccf2a4e8500ecafe2ac205dcc3e0d009a9cc
+$ docker pull bonita@sha256:9a7b8be0335eca51240e576921f54fcdfb8c82472b0f9e04d39a33fe80a02eb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **192.4 MB (192387327 bytes)**  
+-	Total Size: **192.4 MB (192425524 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0cdbdaf08524327df614785cf3b423888360fbb799b03f8c9c2c8b01ca22261`
+-	Image ID: `sha256:376459bb6aec365e99f615be8f30be5752d17e1c863c39046af72cf1b281b869`
 -	Entrypoint: `["\/opt\/files\/startup.sh"]`
 -	Default Command: `["\/opt\/bonita\/server\/bin\/catalina.sh","run"]`
 
 ```dockerfile
 # Mon, 08 Jul 2024 07:08:41 GMT
-ADD alpine-minirootfs-3.20.4-x86_64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.5-x86_64.tar.gz / # buildkit
 # Mon, 08 Jul 2024 07:08:41 GMT
 CMD ["/bin/sh"]
 # Mon, 08 Jul 2024 07:08:41 GMT
@@ -6091,60 +6091,60 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 ```
 
 -	Layers:
-	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
-		Size: 3.6 MB (3613999 bytes)  
+	-	`sha256:66a3d608f3fa52124f8463e9467f170c784abd549e8216aa45c6960b00b4b79b`  
+		Last Modified: Wed, 08 Jan 2025 15:55:45 GMT  
+		Size: 3.6 MB (3626260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:383b8e6d31750cbe53f121af8235dbd37118448218c4366a8e9a42a3a845aaec`  
-		Last Modified: Tue, 07 Jan 2025 03:33:34 GMT  
-		Size: 68.6 MB (68589340 bytes)  
+	-	`sha256:a24854979e55d26ea6ba886a62b11271fc3b3aa0b8e58511e1ac900515805461`  
+		Last Modified: Wed, 08 Jan 2025 18:16:56 GMT  
+		Size: 68.6 MB (68615271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87ef99fd2b83f0c1f1d8085a5394c941fc2588767da5845f2470fcff7270cdb4`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 121.0 B  
+	-	`sha256:7c0557c93d928fd0d99725cb493940d90aa4c44c7ed3076499cdef92086c0783`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 122.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:44866ebe06cc14ec4c0d16509a846f3aad78822dd0c11144b8c22f3b87f767c7`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
+	-	`sha256:dfbbfb5f3be677939423491830e17a3b727b392fa4f92b3cfd5cea6af35825ec`  
+		Last Modified: Wed, 08 Jan 2025 18:16:54 GMT  
 		Size: 958.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8e05d1ad1276ba32c50b459bed5f5bd7ce8460b56b5fdce5556ec042cc374332`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 114.0 B  
+	-	`sha256:5d2125cf3931e4bf088b69efea36c25f1989f4fa4172d38e2d95235863f38b11`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7248a84fc2c5c0deaf18ca307a1dd92e610ee4fa820ff7a71471791c4fe58d8`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 3.6 KB (3612 bytes)  
+	-	`sha256:48af2960cafbf506204ff417840f1932ae079c8778cac11a93f9990008c9e068`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 3.6 KB (3613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab47fa7049e9da6c9813302c6d218ae6bbeb364d691d4b8af2ffdee060db959d`  
-		Last Modified: Tue, 07 Jan 2025 03:33:35 GMT  
-		Size: 120.2 MB (120173556 bytes)  
+	-	`sha256:3f74450d11734073a93dc5bad03f3eb7dcfffb65137129c745c71cb5f9852a83`  
+		Last Modified: Wed, 08 Jan 2025 18:16:57 GMT  
+		Size: 120.2 MB (120173557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81baec9f5a1ef66015b4a05c1e26ef879a219bcf020af89c400d01af2468a467`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 5.6 KB (5627 bytes)  
+	-	`sha256:a4446248ca40e45ab4201f417dbe98c122248cccc1b6377c3c2822041ecb102a`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 5.6 KB (5628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bonita:9.0.0` - unknown; unknown
 
 ```console
-$ docker pull bonita@sha256:c492243b177bd21f71b94bf5d5949e30c308b0ace2d3e95af119642639b40299
+$ docker pull bonita@sha256:76704d018b8dfe83d3e60fe02d283822b78f2829293b0a282b2909a8b7e6c569
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.4 MB (1362013 bytes)**  
+-	Total Size: **1.4 MB (1367891 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb0ccc973dae0dacea38915b57b97217297921d356102c6cce3a06a11df08ff0`
+-	Image ID: `sha256:d3e2ff34cac1e9b80c419920795585de6d8293bbbdc0a4bd8d2e9b890ae10b33`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7cba4c1c1813686626e9a07d23cf382576058b9859c2b2195f3b46b310ce5e41`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
-		Size: 1.3 MB (1339091 bytes)  
+	-	`sha256:dbdf90f57620dd34aa6e3e6650d4b430a2db8cafdb875f084e4b8a27135ac9a0`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
+		Size: 1.3 MB (1344969 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c2e26dc76e4472e63180079951a0941c5e2014c1ae18c169ec1f61df13bcae1b`  
-		Last Modified: Tue, 07 Jan 2025 03:33:33 GMT  
+	-	`sha256:8555e596e9e84a80f6572cbe66a8ac589269dba921f4a1fdeb8d8ec2761f2d99`  
+		Last Modified: Wed, 08 Jan 2025 18:16:55 GMT  
 		Size: 22.9 KB (22922 bytes)  
 		MIME: application/vnd.in-toto+json
 
