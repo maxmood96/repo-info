@@ -544,11 +544,21 @@ $ docker pull percona@sha256:463aa913e3678285664b348b66b39117089885e6063a405aa3e
 
 ## `percona:8.0.40-31`
 
-**does not exist** (yet?)
+```console
+$ docker pull percona@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `percona:8.0.40-31-centos`
 
-**does not exist** (yet?)
+```console
+$ docker pull percona@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `percona:ps-8`
 
@@ -814,7 +824,12 @@ $ docker pull percona@sha256:463aa913e3678285664b348b66b39117089885e6063a405aa3e
 
 ## `percona:ps-8.0.40-31`
 
-**does not exist** (yet?)
+```console
+$ docker pull percona@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `percona:psmdb-5.0`
 
