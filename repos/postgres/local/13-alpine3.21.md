@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0c4f8dc6f650369aebae8d5bb6eabea281c5c35016ad3e6e1b910a7d376a7554`
+- Image ID: `sha256:844163899fc215e0c1deb58b0ec835feb53e40947a1cecb8a31f4bce1a7f9f8e`
 - Created: `2024-12-06T00:14:30Z`
-- Virtual Size: ~ 267.85 Mb  
+- Virtual Size: ~ 267.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -24,16 +24,16 @@
 ### `apk` package: `alpine-baselayout`
 
 ```console
-alpine-baselayout-3.6.8-r0 description:
+alpine-baselayout-3.6.8-r1 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-3.6.8-r0 webpage:
+alpine-baselayout-3.6.8-r1 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-3.6.8-r0 installed size:
+alpine-baselayout-3.6.8-r1 installed size:
 6532 B
 
-alpine-baselayout-3.6.8-r0 license:
+alpine-baselayout-3.6.8-r1 license:
 GPL-2.0-only
 
 ```
@@ -41,16 +41,16 @@ GPL-2.0-only
 ### `apk` package: `alpine-baselayout-data`
 
 ```console
-alpine-baselayout-data-3.6.8-r0 description:
+alpine-baselayout-data-3.6.8-r1 description:
 Alpine base dir structure and init scripts
 
-alpine-baselayout-data-3.6.8-r0 webpage:
+alpine-baselayout-data-3.6.8-r1 webpage:
 https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout
 
-alpine-baselayout-data-3.6.8-r0 installed size:
+alpine-baselayout-data-3.6.8-r1 installed size:
 18 KiB
 
-alpine-baselayout-data-3.6.8-r0 license:
+alpine-baselayout-data-3.6.8-r1 license:
 GPL-2.0-only
 
 ```
@@ -75,16 +75,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.0-r0 description:
+alpine-release-3.21.2-r0 description:
 Alpine release data
 
-alpine-release-3.21.0-r0 webpage:
+alpine-release-3.21.2-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.0-r0 installed size:
+alpine-release-3.21.2-r0 installed size:
 346 B
 
-alpine-release-3.21.0-r0 license:
+alpine-release-3.21.2-r0 license:
 MIT
 
 ```
@@ -126,16 +126,16 @@ GPL-3.0-or-later
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r8 description:
+busybox-1.37.0-r9 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r8 webpage:
+busybox-1.37.0-r9 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r8 installed size:
+busybox-1.37.0-r9 installed size:
 798 KiB
 
-busybox-1.37.0-r8 license:
+busybox-1.37.0-r9 license:
 GPL-2.0-only
 
 ```
@@ -143,16 +143,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r8 description:
+busybox-binsh-1.37.0-r9 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r8 webpage:
+busybox-binsh-1.37.0-r9 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r8 installed size:
+busybox-binsh-1.37.0-r9 installed size:
 1 B
 
-busybox-binsh-1.37.0-r8 license:
+busybox-binsh-1.37.0-r9 license:
 GPL-2.0-only
 
 ```
@@ -160,16 +160,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241010-r0 description:
+ca-certificates-bundle-20241121-r1 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241010-r0 webpage:
+ca-certificates-bundle-20241121-r1 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241010-r0 installed size:
-220 KiB
+ca-certificates-bundle-20241121-r1 installed size:
+217 KiB
 
-ca-certificates-bundle-20241010-r0 license:
+ca-certificates-bundle-20241121-r1 license:
 MPL-2.0 AND MIT
 
 ```
@@ -670,16 +670,16 @@ GPL-2.0-only
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r8 description:
+ssl_client-1.37.0-r9 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r8 webpage:
+ssl_client-1.37.0-r9 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r8 installed size:
+ssl_client-1.37.0-r9 installed size:
 14 KiB
 
-ssl_client-1.37.0-r8 license:
+ssl_client-1.37.0-r9 license:
 GPL-2.0-only
 
 ```
@@ -738,16 +738,16 @@ Zlib
 ### `apk` package: `zstd`
 
 ```console
-zstd-1.5.6-r1 description:
+zstd-1.5.6-r2 description:
 Zstandard - Fast real-time compression algorithm
 
-zstd-1.5.6-r1 webpage:
-https://www.zstd.net/
+zstd-1.5.6-r2 webpage:
+https://facebook.github.io/zstd/
 
-zstd-1.5.6-r1 installed size:
+zstd-1.5.6-r2 installed size:
 279 KiB
 
-zstd-1.5.6-r1 license:
+zstd-1.5.6-r2 license:
 BSD-3-Clause OR GPL-2.0-or-later
 
 ```
@@ -755,16 +755,16 @@ BSD-3-Clause OR GPL-2.0-or-later
 ### `apk` package: `zstd-libs`
 
 ```console
-zstd-libs-1.5.6-r1 description:
+zstd-libs-1.5.6-r2 description:
 Zstandard - Fast real-time compression algorithm (libraries)
 
-zstd-libs-1.5.6-r1 webpage:
-https://www.zstd.net/
+zstd-libs-1.5.6-r2 webpage:
+https://facebook.github.io/zstd/
 
-zstd-libs-1.5.6-r1 installed size:
-693 KiB
+zstd-libs-1.5.6-r2 installed size:
+697 KiB
 
-zstd-libs-1.5.6-r1 license:
+zstd-libs-1.5.6-r2 license:
 BSD-3-Clause OR GPL-2.0-or-later
 
 ```
