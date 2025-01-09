@@ -1,7 +1,7 @@
 ## `golang:alpine3.20`
 
 ```console
-$ docker pull golang@sha256:6a8532e5441593becc88664617107ed567cb6862cb8b2d87eb33b7ee750f653c
+$ docker pull golang@sha256:e83455a4effdc73e73f0ff48410082172658b9b97e9699a877519bc29437bc64
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,18 +26,18 @@ $ docker pull golang@sha256:6a8532e5441593becc88664617107ed567cb6862cb8b2d87eb33
 ### `golang:alpine3.20` - linux; amd64
 
 ```console
-$ docker pull golang@sha256:907bcbdd58717facda647881051cf0abbaaa2b4274b3f1f4644b52a05fda1a85
+$ docker pull golang@sha256:2ac51b3fa7149c38e572f104a60f0a09211f3f2f7bca2e94c04be5bbe4e4ad8b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.9 MB (77940746 bytes)**  
+-	Total Size: **78.0 MB (77968235 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bac5e30c551d0852eb0eced0d252f7c2c06d8c85415b218c6dbed3f147be6ed9`
+-	Image ID: `sha256:5ad11ca62bce49ae9ff6ae96becbc778dd39876f8655cccdabece786866e8ec1`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
 # Tue, 03 Dec 2024 19:01:46 GMT
-ADD alpine-minirootfs-3.20.4-x86_64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.5-x86_64.tar.gz / # buildkit
 # Tue, 03 Dec 2024 19:01:46 GMT
 CMD ["/bin/sh"]
 # Tue, 03 Dec 2024 19:01:46 GMT
@@ -59,20 +59,20 @@ WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:63b69af3dc5582ce6b63be03623e334ccd4e5cb4bde42702bbfc7a986a1bf432`  
-		Last Modified: Tue, 07 Jan 2025 02:28:35 GMT  
-		Size: 3.6 MB (3613999 bytes)  
+	-	`sha256:66a3d608f3fa52124f8463e9467f170c784abd549e8216aa45c6960b00b4b79b`  
+		Last Modified: Wed, 08 Jan 2025 15:55:45 GMT  
+		Size: 3.6 MB (3626260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b581ca1e7ae37167d239ef52de4f3a732e969d9552d16ef81ab3c276e88b5f7`  
-		Last Modified: Tue, 07 Jan 2025 03:32:01 GMT  
-		Size: 279.1 KB (279140 bytes)  
+	-	`sha256:3fbe7652777a557be7320acd6bafa585a401104296826b9790d94fa35f28480d`  
+		Last Modified: Wed, 08 Jan 2025 18:15:10 GMT  
+		Size: 294.4 KB (294368 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:06f05ace1117d62b655e04f6f73c83617e3e0febc38681dbedf58f477dd0658c`  
 		Last Modified: Tue, 03 Dec 2024 22:28:52 GMT  
 		Size: 74.0 MB (74047449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:513f2d688ac1d4fcc2bcb605b972cdf759ac2e6e5fca8f3cfce61cd60f567e3c`  
-		Last Modified: Tue, 07 Jan 2025 03:32:01 GMT  
+	-	`sha256:bda4308841a6cc675c32eadc7ca82f1f5916886229ff6efcbc6e0f9015d73c80`  
+		Last Modified: Wed, 08 Jan 2025 18:15:10 GMT  
 		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -83,25 +83,25 @@ WORKDIR /go
 ### `golang:alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:9eb25bb5742c148a9287e3e464f715fa8d0b9896556633b315cafaf8310622e1
+$ docker pull golang@sha256:fb0c260157e995a1bbc52314a46c2be3928a8df8ccb8cbb92a505c4eabc01ffd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **229.0 KB (229009 bytes)**  
+-	Total Size: **234.9 KB (234885 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06c3b2ad037b0080e3df97325a03a4c2e99698e5af5bcae419658fcaa40ac311`
+-	Image ID: `sha256:3b951d8ee64cee83d7339ff3a2b999aff540f1ea673b739af0fbfc5c8b3b2859`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0bb9b508564fce3eca62ad9e8e22854b2a4f9245564d05db00f98ef85fadf519`  
-		Last Modified: Tue, 07 Jan 2025 03:32:01 GMT  
-		Size: 204.2 KB (204159 bytes)  
+	-	`sha256:26d8cf4328839f7dedcdd885a3e3c3b9490e09e405953011fa9cea54cfebaeac`  
+		Last Modified: Wed, 08 Jan 2025 18:15:10 GMT  
+		Size: 210.0 KB (210037 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:46fe509308b54cfea7678a3ac07b371bdefa5b223cd82e2219c7d814e3ff0dfb`  
-		Last Modified: Tue, 07 Jan 2025 03:32:01 GMT  
-		Size: 24.9 KB (24850 bytes)  
+	-	`sha256:1cf3c2fae0fd7bdf4e2c860732473ce020afb396176dba271b4fa32f77fac283`  
+		Last Modified: Wed, 08 Jan 2025 18:15:10 GMT  
+		Size: 24.8 KB (24848 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `golang:alpine3.20` - linux; arm variant v6
@@ -346,18 +346,18 @@ $ docker pull golang@sha256:5a46b9bb30b13dc07e7ee9a1e2f98767765c12f2dc174ddb508e
 ### `golang:alpine3.20` - linux; 386
 
 ```console
-$ docker pull golang@sha256:748cc290ca061688f62645baddbac93094ef317c31a645ac4c04a4bcfe90e473
+$ docker pull golang@sha256:c74d222feee45cd904f299da0c484310e396f6690efd4ba309303713e33cecba
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **75.7 MB (75656056 bytes)**  
+-	Total Size: **75.7 MB (75679386 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2858f530bb9666a7e7ca9c0287f9ba443b0789b3ed081a7dda669a4a78e5fb97`
+-	Image ID: `sha256:78ff8f99affb5e517270dc366e25e6041c616cfa3c1536799843e5db0c87d0b5`
 -	Default Command: `["\/bin\/sh"]`
 
 ```dockerfile
 # Tue, 03 Dec 2024 19:01:46 GMT
-ADD alpine-minirootfs-3.20.4-x86.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.5-x86.tar.gz / # buildkit
 # Tue, 03 Dec 2024 19:01:46 GMT
 CMD ["/bin/sh"]
 # Tue, 03 Dec 2024 19:01:46 GMT
@@ -379,21 +379,21 @@ WORKDIR /go
 ```
 
 -	Layers:
-	-	`sha256:a48310298946cd9150f3929f2f8cebe3709f1c7ecd0e99ff2b0c9b6502172586`  
-		Last Modified: Tue, 07 Jan 2025 02:28:41 GMT  
-		Size: 3.5 MB (3463189 bytes)  
+	-	`sha256:6d632fc6244662e41ee3b3f29090684a520e615dc5c282638a7587366dcd4fb9`  
+		Last Modified: Wed, 08 Jan 2025 17:23:34 GMT  
+		Size: 3.5 MB (3470969 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d7c84efa11455837cce6ed412240830b412a659a211803abccb3bea9b5d15c0c`  
-		Last Modified: Tue, 07 Jan 2025 03:15:46 GMT  
-		Size: 279.6 KB (279587 bytes)  
+	-	`sha256:c3a3a677255f257a26e3c31092d64b82f7cdc4d9fc0bd977c717324fdeca5854`  
+		Last Modified: Wed, 08 Jan 2025 18:11:15 GMT  
+		Size: 295.1 KB (295138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:253ee978a239d9a54a2ed89c291f3c5c0ee5f67c1dc8c9ff24b239116398d826`  
 		Last Modified: Tue, 03 Dec 2024 22:28:50 GMT  
 		Size: 71.9 MB (71913121 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91a4d82afa8df2b16150f546d94e4cc7f3a9e8317e24a1444c74c853324fb01f`  
-		Last Modified: Tue, 07 Jan 2025 03:15:46 GMT  
-		Size: 127.0 B  
+	-	`sha256:ccf56cc115cdb8fc5a484278226dbe6ef6b87be542888c4835ad8f524b11e95f`  
+		Last Modified: Wed, 08 Jan 2025 18:11:15 GMT  
+		Size: 126.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -403,24 +403,24 @@ WORKDIR /go
 ### `golang:alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull golang@sha256:3952430a023ea139e79d6fc1ed31f044b505eb2b16c5cdbe8e31d8838388849b
+$ docker pull golang@sha256:335d874ad36dc9cb5d1cdf5de058f825060f0ecc5a2e61a4f0f24071117b3709
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **228.9 KB (228912 bytes)**  
+-	Total Size: **234.8 KB (234790 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5bc1ddc3688f1dbc8ae43cd9ffb3dfa6b907d957114318e5ecab1251c2c8d3f4`
+-	Image ID: `sha256:cf31075a495bcdfcfb403dff0e067d75d9b6674b6b704a700e3ceee7ce213d3b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:51b0eb4d032268cf933aa3ab35f750a4e3afb668bed3421c934b2052c148c50b`  
-		Last Modified: Tue, 07 Jan 2025 03:15:46 GMT  
-		Size: 204.1 KB (204098 bytes)  
+	-	`sha256:53905285757173405e4def6b77ee232e03a33134e48dfaf447b87368e5f88e8e`  
+		Last Modified: Wed, 08 Jan 2025 18:11:15 GMT  
+		Size: 210.0 KB (209976 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:14f7155d382df3bdb6597912078f89a5fe41d9515a928b3d3c3662da1f54c589`  
-		Last Modified: Tue, 07 Jan 2025 03:15:46 GMT  
+	-	`sha256:b3137c1ca76bb95d7a96fc48aebb148542b43ff656164866b2f70e5d7796731b`  
+		Last Modified: Wed, 08 Jan 2025 18:11:15 GMT  
 		Size: 24.8 KB (24814 bytes)  
 		MIME: application/vnd.in-toto+json
 
