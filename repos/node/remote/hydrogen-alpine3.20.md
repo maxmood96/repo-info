@@ -1,7 +1,7 @@
 ## `node:hydrogen-alpine3.20`
 
 ```console
-$ docker pull node@sha256:1d9a7da5a2523e1ac7a14d0ce7826fd53f436cfbc306dffc2dd572d4c897447c
+$ docker pull node@sha256:3b1d8f9affac4cdc88ae84674d5884e465eb3ae6f2a60dd477a6d0ed8c18296a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -246,19 +246,19 @@ $ docker pull node@sha256:13ad6edc488c03c71b3120c8031fbc8e645964ee5baab596257093
 ### `node:hydrogen-alpine3.20` - linux; arm64 variant v8
 
 ```console
-$ docker pull node@sha256:5a9038d1dbd3ee88366d71c1e86daafc19220870a5bb1e3c7c62782d8418af41
+$ docker pull node@sha256:1d1c169dbcc0048742a0f2ed0fdb38f88077fe2d25279c388a31b2177ea20aad
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.1 MB (45074353 bytes)**  
+-	Total Size: **45.1 MB (45095401 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c21f061e969398ec3190a8c290279753120c21d64da6dddf158d8bf43f2777e0`
+-	Image ID: `sha256:b7d0ebc5f6b954193cce688745d4afcfc385af4fb72da76c806dd6a769780a54`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
 # Fri, 15 Nov 2024 23:05:18 GMT
-ADD alpine-minirootfs-3.20.4-aarch64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.5-aarch64.tar.gz / # buildkit
 # Fri, 15 Nov 2024 23:05:18 GMT
 CMD ["/bin/sh"]
 # Fri, 15 Nov 2024 23:05:18 GMT
@@ -278,44 +278,44 @@ CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:ef22e11fe7735044a1b56fc644666588aa863fb6abe827f676cb9d11ba34d993`  
-		Last Modified: Tue, 07 Jan 2025 03:03:03 GMT  
-		Size: 4.1 MB (4086686 bytes)  
+	-	`sha256:0152682790bba2052e0b7dc52872083c01ea53c598fe87e3fe3eab5f9d4228cb`  
+		Last Modified: Wed, 08 Jan 2025 17:24:05 GMT  
+		Size: 4.1 MB (4090769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62bba786d327c7f3a184a9ff8c65aa741519413577bae5cf37a62edbed01e743`  
-		Last Modified: Tue, 07 Jan 2025 13:18:03 GMT  
-		Size: 39.6 MB (39605093 bytes)  
+	-	`sha256:03923a9001b9f6ba58fba921b6541f07056b6b9df0ce89151e89fccdd77266db`  
+		Last Modified: Thu, 09 Jan 2025 04:08:31 GMT  
+		Size: 39.6 MB (39616751 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15af9ebed488996b1f129f512abfe1d1f5bb777e1f8486882141d31c1771a09e`  
-		Last Modified: Tue, 07 Jan 2025 13:18:02 GMT  
-		Size: 1.4 MB (1382130 bytes)  
+	-	`sha256:0ec93018e0b63490ff60b09bd0108cd3cd689e044da55abc7f16b42da3facf31`  
+		Last Modified: Thu, 09 Jan 2025 04:08:29 GMT  
+		Size: 1.4 MB (1387436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2aecc13ff9f16f6326c6abcbe0122b6ce12b76a89252d26421d72b68c964764f`  
-		Last Modified: Tue, 07 Jan 2025 13:18:01 GMT  
-		Size: 444.0 B  
+	-	`sha256:54e63515eba97f774fa91a664be0fd3262913dbfc44f7a6486f0c829537e071f`  
+		Last Modified: Thu, 09 Jan 2025 04:08:29 GMT  
+		Size: 445.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:hydrogen-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:a883cc6434c6a01a89253fded5f1d97e758cb60890daa56de57832b9ca91fd23
+$ docker pull node@sha256:7e99afa97319ce1504fbb0fb7c7ce424ce58a6b2527fa247ee537ddc20b613d2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **389.3 KB (389313 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b0c4954deb7b781462e59710c10bdd26cd03bb025a88edee8a999b0a13e5329`
+-	Image ID: `sha256:9677742ce060fa1b81c710b168c12a75c8b5776d66c76ccfe1237098e935aa26`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e5d06fd1610fc830eadca20237916655b5935b7679c6202a24d6640516f68ea2`  
-		Last Modified: Tue, 07 Jan 2025 13:18:02 GMT  
+	-	`sha256:99a9d46a0204b193d014b82364777f46390c079d1dbdc18b4aac80a9ec1f8e84`  
+		Last Modified: Thu, 09 Jan 2025 04:08:29 GMT  
 		Size: 365.7 KB (365684 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1b5ae2b7123d62cf08bd4a85c351a7795b3391b4fb13c201157b10ef6c87be55`  
-		Last Modified: Tue, 07 Jan 2025 13:18:01 GMT  
+	-	`sha256:bf71e359b356504f2d3b0c30278de6ddaf3145623d1a0bb11b654fe70a0bb068`  
+		Last Modified: Thu, 09 Jan 2025 04:08:29 GMT  
 		Size: 23.6 KB (23629 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -398,19 +398,19 @@ $ docker pull node@sha256:50596ec0b0a7b6c8e73e1462a98566db48dd9263c3d813f07bc77b
 ### `node:hydrogen-alpine3.20` - linux; s390x
 
 ```console
-$ docker pull node@sha256:6a17e9868909a5f1dd4a70b1378cb9aac1540070d877ac988673e9b6f22668a7
+$ docker pull node@sha256:c78c8e5babe23659d04208b01f3d4241c9448fc119b814fb6f3dd62fc02a3325
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.6 MB (45586675 bytes)**  
+-	Total Size: **45.6 MB (45604794 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:07149b4a22a9f47e809e6afa6d9eeb81254e7e2dd8be29c9b53a60753b9213a3`
+-	Image ID: `sha256:1ad7424b818b11d0420926ead39cdfb174ed402932f146e91e3094adac34821a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
 ```dockerfile
 # Fri, 15 Nov 2024 23:05:18 GMT
-ADD alpine-minirootfs-3.20.4-s390x.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.5-s390x.tar.gz / # buildkit
 # Fri, 15 Nov 2024 23:05:18 GMT
 CMD ["/bin/sh"]
 # Fri, 15 Nov 2024 23:05:18 GMT
@@ -430,43 +430,43 @@ CMD ["node"]
 ```
 
 -	Layers:
-	-	`sha256:2ed16bdf68dac880df118dfa3d21d44652bc18382729359f97297fa5998086cd`  
-		Last Modified: Tue, 07 Jan 2025 02:32:49 GMT  
-		Size: 3.5 MB (3459179 bytes)  
+	-	`sha256:3e71c43ed556c3ed564b517d9141db651f4134655f96c8731767c14c6dedc4d0`  
+		Last Modified: Wed, 08 Jan 2025 17:25:57 GMT  
+		Size: 3.5 MB (3463322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:166bc338ecbf485c07f67ba1b6f739a52baf307fce25820fbe038cdb6a01eb70`  
-		Last Modified: Tue, 07 Jan 2025 13:00:40 GMT  
-		Size: 40.7 MB (40744928 bytes)  
+	-	`sha256:e6340a292a640982666d652c9adb522834247f89713add84e073da1ee0c3a255`  
+		Last Modified: Thu, 09 Jan 2025 04:41:54 GMT  
+		Size: 40.8 MB (40753587 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5f3f3f80616ec3ff5a7a539877d376870e850cb538693fac61beed8cf753724`  
-		Last Modified: Tue, 07 Jan 2025 13:00:39 GMT  
-		Size: 1.4 MB (1382122 bytes)  
+	-	`sha256:5867b1881aff7e55bf0aa260a84eaef84b3ce0d3dfd12a7d81a3a0379fd94cd0`  
+		Last Modified: Thu, 09 Jan 2025 04:41:53 GMT  
+		Size: 1.4 MB (1387440 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e7f8f4b1202bc4e49e9e3f289982c1026dca83dbfc023d5313de94e9f68f8091`  
-		Last Modified: Tue, 07 Jan 2025 13:00:39 GMT  
-		Size: 446.0 B  
+	-	`sha256:60771b9ee817e6a1c2a8ed4e71c1d173b6646fe572b15765affda2692fa793d2`  
+		Last Modified: Thu, 09 Jan 2025 04:41:53 GMT  
+		Size: 445.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:hydrogen-alpine3.20` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:f24abbe8745e888f62a12ba74149b02631e128a9b041b977b489c8ecb7052f0c
+$ docker pull node@sha256:fd03af34168bb6d991763216527e161294d522b725d594ead0c9858ad4f3f211
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **387.2 KB (387186 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3e04c6efc27917cb50140d14c917029d042b7a45677cd04e124130e5b2c7b96`
+-	Image ID: `sha256:a63967804debc2e86e34a1350f676948fd2d686f4ef947b201be0e19f92d2caf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:491232d9d2e94fd3dd1b49c846b2934011d5cebf2e85c861fdeced1b021a0ee1`  
-		Last Modified: Tue, 07 Jan 2025 13:00:39 GMT  
+	-	`sha256:b65fcf380fa7ebf279887c5b673c91e7a4874d592429dbc46344fd3a332337fb`  
+		Last Modified: Thu, 09 Jan 2025 04:41:53 GMT  
 		Size: 363.7 KB (363677 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7f1ea9ac02d9981d48ce1c2cda0debf571fa8673c6ae674f838750f4a611884e`  
-		Last Modified: Tue, 07 Jan 2025 13:00:39 GMT  
+	-	`sha256:9857ed94a815b1c754e72d7073e3d956bae7c8e29ab90a9c2064e407018f7e26`  
+		Last Modified: Thu, 09 Jan 2025 04:41:53 GMT  
 		Size: 23.5 KB (23509 bytes)  
 		MIME: application/vnd.in-toto+json
