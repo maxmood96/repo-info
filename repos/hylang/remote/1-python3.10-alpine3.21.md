@@ -1,7 +1,7 @@
 ## `hylang:1-python3.10-alpine3.21`
 
 ```console
-$ docker pull hylang@sha256:bf443ec4ce233c8a5478f765ccf7c1f6470ea9f407009dd0d23c23471ce3ba3b
+$ docker pull hylang@sha256:0bc959c19e17849dd29e548ea54f3e23968ff29f5fa01b125223d0bfeae3d0f5
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,13 +26,13 @@ $ docker pull hylang@sha256:bf443ec4ce233c8a5478f765ccf7c1f6470ea9f407009dd0d23c
 ### `hylang:1-python3.10-alpine3.21` - linux; amd64
 
 ```console
-$ docker pull hylang@sha256:1ff0d8b1dc69987e32c9258a2b3e5368582a39451ee04038f38c1700d0dcbd3a
+$ docker pull hylang@sha256:f6726a2bfb28acc7d3178eae14e6dc880be0e71972f3240931105ada2352d673
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.9 MB (23895097 bytes)**  
+-	Total Size: **23.9 MB (23895714 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e5b4192f80e8b2a705e389781fe0ae46df6740878bd0be6d0365bfffd8a1bfe2`
+-	Image ID: `sha256:61acd1e7bd86c7e8ec74f3c166935c4a81ed55853a27329710fd7f84925620aa`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -58,13 +58,13 @@ RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gnupg 		tar 		xz 				
 RUN set -eux; 	for src in idle3 pip3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
 # Thu, 05 Dec 2024 13:19:52 GMT
 CMD ["python3"]
-# Wed, 11 Dec 2024 00:16:44 GMT
+# Wed, 08 Jan 2025 17:56:16 GMT
 ENV HY_VERSION=1.0.0
-# Wed, 11 Dec 2024 00:16:44 GMT
-ENV HYRULE_VERSION=0.7.0
-# Wed, 11 Dec 2024 00:16:44 GMT
+# Wed, 08 Jan 2025 17:56:16 GMT
+ENV HYRULE_VERSION=0.8.0
+# Wed, 08 Jan 2025 17:56:16 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION" # buildkit
-# Wed, 11 Dec 2024 00:16:44 GMT
+# Wed, 08 Jan 2025 17:56:16 GMT
 CMD ["hy"]
 ```
 
@@ -85,32 +85,32 @@ CMD ["hy"]
 		Last Modified: Wed, 08 Jan 2025 18:20:33 GMT  
 		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:27585969f692285ceca084b2bb49b06d0cc38d9cace28b69d2e9f3947840f190`  
-		Last Modified: Wed, 08 Jan 2025 19:16:29 GMT  
-		Size: 4.2 MB (4191572 bytes)  
+	-	`sha256:1adbad93260256a0d81ac0217fcd531c6399a9c8679d7a667e2a7942eff02a99`  
+		Last Modified: Thu, 09 Jan 2025 22:30:17 GMT  
+		Size: 4.2 MB (4192189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:1-python3.10-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:d04727f7e2ebfbca4823a224c49c70fd659a7860d3f3fd36734ee668f4a5c68c
+$ docker pull hylang@sha256:eaf296efe0f04b69f213f76269722e883ae3549116aa8000393b76d4211971ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **673.9 KB (673857 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:db7379533d44ebfdcb3ae52ec33f870c669fa659ca30df3f6f54ba8ee9438e17`
+-	Image ID: `sha256:2bae40283fc78e7b178bb11e346f825c6b0709e051add5f43266cd110ada5fb6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ed251fc513404da86746a1f6885385c6ed2a527e42c485734cfed5c976e1e22a`  
-		Last Modified: Wed, 08 Jan 2025 19:16:29 GMT  
+	-	`sha256:6e3f5ab80b822f089c1dc23a27962ad1b916c2b41d2cbd1b33698fb73980c35b`  
+		Last Modified: Thu, 09 Jan 2025 22:30:17 GMT  
 		Size: 664.5 KB (664515 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:65afa30629be9b35f67e455fbc2573be99ee063b8cf3a9595d2cc9640db7cf1c`  
-		Last Modified: Wed, 08 Jan 2025 19:16:28 GMT  
+	-	`sha256:e78b27e941f636cf8cf9da07803b046e1aac8fe2320daeafb650033aa1d6dc60`  
+		Last Modified: Thu, 09 Jan 2025 22:30:17 GMT  
 		Size: 9.3 KB (9342 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -477,13 +477,13 @@ $ docker pull hylang@sha256:91f3caffd661689a26858f9265993593e9d3e48038eb6e712cf8
 ### `hylang:1-python3.10-alpine3.21` - linux; ppc64le
 
 ```console
-$ docker pull hylang@sha256:05f79ef75e2d67df04b7afbf042e01244a511b4a03829ca1b0c19528f9a462c2
+$ docker pull hylang@sha256:606c95c7d7ba7168728477e50b8e6497414ef79ed6fda420ba9b11dc6a77156c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.5 MB (24526046 bytes)**  
+-	Total Size: **24.5 MB (24526353 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43a6c16d2778fdc4ec8656c9a575555f87a8b6a42fa18c175d8ec21cd186e8ee`
+-	Image ID: `sha256:2187baa645962998f14660151792525cf40d06e9c5d52f2fbc2d8b5dd574d321`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -509,13 +509,13 @@ RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gnupg 		tar 		xz 				
 RUN set -eux; 	for src in idle3 pip3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
 # Thu, 05 Dec 2024 13:19:52 GMT
 CMD ["python3"]
-# Wed, 11 Dec 2024 00:16:44 GMT
+# Wed, 08 Jan 2025 17:56:16 GMT
 ENV HY_VERSION=1.0.0
-# Wed, 11 Dec 2024 00:16:44 GMT
-ENV HYRULE_VERSION=0.7.0
-# Wed, 11 Dec 2024 00:16:44 GMT
+# Wed, 08 Jan 2025 17:56:16 GMT
+ENV HYRULE_VERSION=0.8.0
+# Wed, 08 Jan 2025 17:56:16 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION" # buildkit
-# Wed, 11 Dec 2024 00:16:44 GMT
+# Wed, 08 Jan 2025 17:56:16 GMT
 CMD ["hy"]
 ```
 
@@ -536,32 +536,32 @@ CMD ["hy"]
 		Last Modified: Thu, 09 Jan 2025 00:07:59 GMT  
 		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9aa807e87a882be49e6accf249a9be48521b27c1b3cc56ab528c1a006843f291`  
-		Last Modified: Thu, 09 Jan 2025 04:25:41 GMT  
-		Size: 4.2 MB (4191854 bytes)  
+	-	`sha256:34c3051bcdec3dacb28f56ebac6351b0f861fa0a237f0ea988b418c612f11ba3`  
+		Last Modified: Thu, 09 Jan 2025 23:11:16 GMT  
+		Size: 4.2 MB (4192161 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:1-python3.10-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:64f79e3c95f4683288475ae3743223a379fb048f8ff394d14018c30c5bc5e088
+$ docker pull hylang@sha256:fa676447f86ba81b10e632d32a33ac83d8ac1a87369a54723d13d246fa575dcc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **672.0 KB (672032 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff6665457e687f33f9491105313704affaccf2419ebfb7eb2f67f4d1a8ae0192`
+-	Image ID: `sha256:b61d89f139ab738b155ff0955c7c6a8281804fdb86635f4931e18fd51f4ea7ca`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1daedf2d9c7f8d85e5902ae7bacbf4befd385b9ee27931b306af679e47ca753d`  
-		Last Modified: Thu, 09 Jan 2025 04:25:41 GMT  
+	-	`sha256:6b772c09355868a35dfc264a69316fb22a79ba4651a4f5807fab460a2fe3105f`  
+		Last Modified: Thu, 09 Jan 2025 23:11:15 GMT  
 		Size: 662.6 KB (662622 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:be0c423b779944d8e1fcacad8e6d3fc333e0e232fb235b68907794171ecac27a`  
-		Last Modified: Thu, 09 Jan 2025 04:25:41 GMT  
+	-	`sha256:3debeda2fe5dee501f8a82294b02a4fc0fa6f4e3ef7a4cc690453d137858c9de`  
+		Last Modified: Thu, 09 Jan 2025 23:11:15 GMT  
 		Size: 9.4 KB (9410 bytes)  
 		MIME: application/vnd.in-toto+json
 
