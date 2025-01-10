@@ -706,7 +706,7 @@ $ docker pull docker@sha256:e1846fa27529b493120701937ff171257152d04957f4ef3644ec
 ## `docker:27-cli`
 
 ```console
-$ docker pull docker@sha256:48fb8184d093547916178a48ed6b558968aaa6686e3ab8a289aeff122f0dbb16
+$ docker pull docker@sha256:af0bcc63244e5110ac6499e4a9160a67101bf61abda35c2503ffc40038e8ee0a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -723,50 +723,50 @@ $ docker pull docker@sha256:48fb8184d093547916178a48ed6b558968aaa6686e3ab8a289ae
 ### `docker:27-cli` - linux; amd64
 
 ```console
-$ docker pull docker@sha256:dea2833e23bcc3138de633b3c4d7b11432f8894a0b242c73e5df6f4a9f5474b5
+$ docker pull docker@sha256:14fb2045b284b7c1267be8cf2cddc04ed69dbd03bd38f11964787f3409c3d872
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.5 MB (68467046 bytes)**  
+-	Total Size: **68.5 MB (68480117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47d7ebdf9e2b0761d43f6fb27cbb7fc1022bffdde9467cf9d8d10c1c12b2eb25`
+-	Image ID: `sha256:121ad6346a4041fd11f1532f55b02c5f48e26d2ed959c547d0a32456cfb26d50`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-x86_64.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -775,110 +775,110 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
 		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d185366bdae3ff1be746691465de29a0e0b2f3e04f28b39180d9375234c91e73`  
-		Last Modified: Wed, 08 Jan 2025 17:58:05 GMT  
-		Size: 8.1 MB (8058731 bytes)  
+	-	`sha256:d9da8d98be9c497538e046636271095d60600736b8b98dd17d89b85cf6750a8f`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 8.1 MB (8058734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5707d5cc11f48c4f3654fab4e9bb2d5d3c8cb71106dd2e58fec35df2b147afb4`  
-		Last Modified: Wed, 08 Jan 2025 17:58:05 GMT  
+	-	`sha256:4386589b6f3f3d4248a89850307f7fce69767219761e159ae96376e95133648c`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
 		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:089f82d81010cbc4aa96ca98767cc6be68fa0c12bdff13b1ce3fbbbf01f30718`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
-		Size: 18.7 MB (18669943 bytes)  
+	-	`sha256:0a489f3b5fec0148d769933a6c683cf67788489232797ba6b97cedc28fba6e83`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 18.7 MB (18669947 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bffe0aee10ea77c7f0546febfae38a67b69cd1b96736c3e3f8033fee03e1cda7`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
-		Size: 18.8 MB (18798856 bytes)  
+	-	`sha256:098516bf325695b24ce2974045b3ddb5dcdb829015737c0bed7a538be5456ee1`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 18.8 MB (18798865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f5fe673a5ecb77d234d78523d7959f55e887124ffa9ec541309b34336d237520`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
-		Size: 19.3 MB (19295647 bytes)  
+	-	`sha256:9f5bc19395419c3a98f4744b34640d249289415e1edb1e030bf6a58333628592`  
+		Last Modified: Thu, 09 Jan 2025 22:28:46 GMT  
+		Size: 19.3 MB (19308702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd9a9d0c2d0f87990929701ed18006a4ae011dffcb2da0e01d66319135edbb60`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
+	-	`sha256:9611a6289157d3d5da09d21f919439c1d7f75f52c4f1c86ee4935487625980c6`  
+		Last Modified: Thu, 09 Jan 2025 22:28:46 GMT  
 		Size: 538.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfc4b63b8b868cb525ebf3a8cae998e0f83daa0250882e0933778897af5cf8ec`  
-		Last Modified: Wed, 08 Jan 2025 17:58:07 GMT  
+	-	`sha256:380e7224928097502689c0c3e6dd922dbca5bceb3e5e249123e5b0ce9d13ecde`  
+		Last Modified: Thu, 09 Jan 2025 22:28:46 GMT  
 		Size: 1.0 KB (1013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dfdaf163319a658d74a3a98948f1da42cb54f7b0928587abb65b927ad17893e2`  
-		Last Modified: Wed, 08 Jan 2025 17:58:07 GMT  
+	-	`sha256:6fc6c2a895485e0e9ccb5a3268ffe8ca41f9b3ef6e932337b94f7591126ae90f`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:0e63ff85f2451ea7f0e4c617114477fb71d86727b36e691a488e15b745755da3
+$ docker pull docker@sha256:33591134c907ae526878a033450d74d609928559345e6d74a1f023c8e2d36d7b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.1 KB (38116 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ade6604eb1774c3a81972f45f4c3a45c5d62ccf4a48dd2a1952500abfc21122`
+-	Image ID: `sha256:2a58ae14d2c7ed97bda72428d86594211cc096db0714486306c2c813ca14cbf4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5927459d8ba59feef5736dc4a31d17c83f8515b60a205d43e8ed1fdd0a36dead`  
-		Last Modified: Wed, 08 Jan 2025 17:58:05 GMT  
+	-	`sha256:f6dd855ce8de79e67bc2d71204fe2553329c1352459d42eb3acac9cb4004d388`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
 		Size: 38.1 KB (38116 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:27-cli` - linux; arm variant v6
 
 ```console
-$ docker pull docker@sha256:c73864aeb2d05afde9505487f6076f1ab6a8c06dd7407762f03812226e3c8066
+$ docker pull docker@sha256:04e085d47837f3c88226ff1f38c8a88d482c857c5386e1a59856937b2ecd1421
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.6 MB (63600765 bytes)**  
+-	Total Size: **63.6 MB (63611235 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:615fa0d347d6efa265157a9c8b436cb193a2cd7f029b10f793cfdfcb0f9e9236`
+-	Image ID: `sha256:00caaa924646796848caddcb1ee6005e2956e112b0d4f64a30093f27d4f4038a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-armhf.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -907,90 +907,90 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 18:20:41 GMT  
 		Size: 17.4 MB (17448777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a6ad19aeac0c3a49d84fde43b19d62ab3d56806b9d4c722c38908a137da216eb`  
-		Last Modified: Wed, 08 Jan 2025 18:20:41 GMT  
-		Size: 18.1 MB (18106572 bytes)  
+	-	`sha256:16db69aa77862f611701d543dad7e67909f47fcd5d9a9574b9f97a11ba983d29`  
+		Last Modified: Thu, 09 Jan 2025 22:30:31 GMT  
+		Size: 18.1 MB (18117040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8123d7aab17cac82fab49710563ef043f0de005c8477feaba144980abad4f906`  
-		Last Modified: Wed, 08 Jan 2025 18:20:40 GMT  
-		Size: 540.0 B  
+	-	`sha256:5cc79f3781d43c0acb2321b1a5716529ab8dd5ef7077e18b0c58a7671854782d`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 541.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da735283888a4e92e66d035e7720607217570e99bf5783536f807fe088c0869e`  
-		Last Modified: Wed, 08 Jan 2025 18:20:41 GMT  
-		Size: 1.0 KB (1014 bytes)  
+	-	`sha256:7b0c94e4fa8de6f36d61b3f90d7d24a03d4c0adcf54276f3abd0226ed166a03e`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f56f2ce439d537e2a979dc56193cf849d0e43658ce075297be694e2a5c1f0aee`  
-		Last Modified: Wed, 08 Jan 2025 18:20:42 GMT  
-		Size: 116.0 B  
+	-	`sha256:a9240b077258b7ccef62b5cb88015fe3861991b7dbb7e3205cc5bdb5b0e9e62a`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 113.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:06f9190b69c90aa6648752c1e9ea165c5c99c430b677c8055e6b1487ce2d3b36
+$ docker pull docker@sha256:d210f6f120570400fce43adb6fcc00a9ab5c35a5f30d93f83c341323765d549c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.3 KB (38278 bytes)**  
+-	Total Size: **38.3 KB (38277 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e01d8af219c1af03a4cab1b52b2b27a706f541c2cc9d4819eb377b435d3a0c4`
+-	Image ID: `sha256:9e3d7698ebb176bbf00684f139d4c2eba2ab6be4a2fd527d83b3d60c0feefb29`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d6b52ce1e0833f6f41725cc02aa7a55925c1547a8c90e932ee21de4a11d4733a`  
-		Last Modified: Wed, 08 Jan 2025 18:20:40 GMT  
-		Size: 38.3 KB (38278 bytes)  
+	-	`sha256:825009d255d8ab64030412cb38732b2004046698dc2aaebe1bc503b0a5c168b5`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 38.3 KB (38277 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:27-cli` - linux; arm variant v7
 
 ```console
-$ docker pull docker@sha256:e018ece3ac72791e855045d3237f14cffe96a779439c75181e0f92e2a3c8b1af
+$ docker pull docker@sha256:5e71e6f4cd87cadb9d0f89cbeb32a7687ee1e49f84c428f371c3c33d65ca1254
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.6 MB (62607993 bytes)**  
+-	Total Size: **62.6 MB (62614380 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9a0ac2fa30d78aad6c637921a03c2a58e67df811af430e3b94614225215a8a3`
+-	Image ID: `sha256:9eae7261d9a104837a54d4a9ba6a157b650b261e83424ef011bdfe7c14a47a27`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-armv7.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -1011,98 +1011,98 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 18:35:54 GMT  
 		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98ecb4b3472a02002b0f0d358c915d5620cc898c4f1e7ed87ff9241e7cac4037`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 16.7 MB (16694585 bytes)  
+	-	`sha256:b346517794cfce1f41b95c705ae9e23769f0eead55b0e45aa310726d624d7e36`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 16.7 MB (16694613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40e49947850c731a11ba132f1d74360cc652900eabc347731392dac0cd0247ae`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 17.4 MB (17427588 bytes)  
+	-	`sha256:a8af6fe42dd3bd1002a36a0678d7433d5bc1c9b65222d55d1be8f669b50d50ad`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 17.4 MB (17427581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:38fd0659b69ad2c656a029e5bd8521530bcf523be99aa44cb9c939d0d8a22fd6`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 18.1 MB (18092638 bytes)  
+	-	`sha256:435b00e153eefddcfb5674d73a4be8017ab0cbee851a5bd11e33016e9b8b8fcc`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 18.1 MB (18098994 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c49aab9947c3092bafeceb71f5d65637b7dd7a8b326c6ba99b420c886e30af8`  
-		Last Modified: Wed, 08 Jan 2025 18:36:17 GMT  
-		Size: 538.0 B  
+	-	`sha256:8bd823050d528d8277f11b4566a452e8b76b5e7d7097577342b3d85675aa1f28`  
+		Last Modified: Thu, 09 Jan 2025 22:31:29 GMT  
+		Size: 542.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5197a6eb3f577d113db91f9c478f211e710ee31b8739a7a472fa5ade8a559c60`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 1.0 KB (1012 bytes)  
+	-	`sha256:98fba272fee8435a6f01afdef863fc92b288e2e33bb5d72e633c48abeb1c9967`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ef0f27fbd9e3184ecea1ffd56f47e7effcc0f84a38b805f6d08e59f61d04142`  
-		Last Modified: Wed, 08 Jan 2025 18:36:19 GMT  
+	-	`sha256:1f4a813131a303def688ad87697fb38ee2b0db911fc22611c905ded3e13d49c4`  
+		Last Modified: Thu, 09 Jan 2025 22:31:31 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:b36c627d6a7513218dc5b7bb4e157eeb77f9dabb793862367cc7fb5859c8540f
+$ docker pull docker@sha256:cb6dd5588f0d803d295eed89ded056f5735647bfc9589719d79a64463bb1026d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.3 KB (38278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3fcc99f949658c9f7a8807f065e1c669df29e41be61f92c9d5e3d7b99d16a854`
+-	Image ID: `sha256:f060462a83aae9ea7f421874df7e391e459030d30bdf354941fe07ac344be092`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:591e589e56a4f0e1bd9fbc3c3be2a463a4620ec4a23b5101601bcc90dc84581b`  
-		Last Modified: Wed, 08 Jan 2025 18:36:17 GMT  
+	-	`sha256:f4c1a16de2a45d8d90746fee23d460d04552b46abb5be4ff308f197dc56d4850`  
+		Last Modified: Thu, 09 Jan 2025 22:31:29 GMT  
 		Size: 38.3 KB (38278 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:27-cli` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:2292b410d670d092de710b5f9f193978bbcc915bda6afdbf495ec69e1913185b
+$ docker pull docker@sha256:81eee077efe20ebec34ab52d5c20325ed1bea82f0df73748f0ad7b7d6f2a16d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.4 MB (64436211 bytes)**  
+-	Total Size: **64.4 MB (64447458 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ded5a0195faa578c1fff46298bbaa0815f1cbbf27d3ba2a786ab6c524496d566`
+-	Image ID: `sha256:f69a358e88176c1004e07781eaa43e67048d5af647e0d0fb6260d82a2e5c3f14`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-aarch64.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -1111,60 +1111,60 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 17:23:52 GMT  
 		Size: 4.0 MB (3992359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd118a02a977501603a666f0534bd4e65d18527588ad5cf400f8c10d29b641a2`  
-		Last Modified: Wed, 08 Jan 2025 18:21:52 GMT  
-		Size: 8.1 MB (8073087 bytes)  
+	-	`sha256:3528552267cec0f9e2dee7d372df3bbea6255a3ca1a18ba3e58e5cfd106d15e1`  
+		Last Modified: Thu, 09 Jan 2025 22:29:23 GMT  
+		Size: 8.1 MB (8073134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf7344f9e39163b0db1d8cc353b60bb1b0f4a1f5bce6103ce319dc4b80767896`  
-		Last Modified: Wed, 08 Jan 2025 18:21:51 GMT  
-		Size: 454.0 B  
+	-	`sha256:d4781719ef357b2c136f17ff57b79d601b4058a8861d68048cf902106cf3ae9d`  
+		Last Modified: Thu, 09 Jan 2025 22:29:22 GMT  
+		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b491da4fa6243026056cc314d938e03599e8dff13f8ac4ff1e5ce0c0bb73c2f`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 17.6 MB (17619414 bytes)  
+	-	`sha256:4866b03f4ce1c603a6809790707aae8972781d4ff1b1090b3960153b3abec1e0`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 17.6 MB (17619398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52a0e3aeeec1250aebfa402c0a741416452445d234a867eea35c8c68d19e3c55`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 17.1 MB (17106452 bytes)  
+	-	`sha256:30d036bb2a7049761d033d283b4bc752d8e2d6e25b9ea4bf4329e6a7055ad82e`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 17.1 MB (17106450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:266bf3da8cdc43561b0a4d0e777fff32d6ee6ae16c3a43853b2df21faef62d4e`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 17.6 MB (17642742 bytes)  
+	-	`sha256:bc4fa20503c91c2405741c5b1d40f5567a7c641a4624b6c0693716eb0fa6752e`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 17.7 MB (17653961 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63b6b0d0e0d21087323094118ec8bbd6ef16965f2436eb105dc930706616ac3c`  
-		Last Modified: Wed, 08 Jan 2025 18:22:21 GMT  
-		Size: 541.0 B  
+	-	`sha256:f999290013a7bee6f7b09186deee9dc98564604594aac128b7293ef882edfd34`  
+		Last Modified: Thu, 09 Jan 2025 22:29:42 GMT  
+		Size: 540.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50d0cdcc6385756fabdd902e9c6d48c1f6f8b12bc391af806d11f26476c05183`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 1.0 KB (1014 bytes)  
+	-	`sha256:62dca40438acce378f07676329455acd2969680d9ceeeee33d5f34cb1f06c2f4`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 1.0 KB (1013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b883d10753dcfa1efd6a93df081b0ad43dda8c499d48cea04b2cdf24b57cd0c`  
-		Last Modified: Wed, 08 Jan 2025 18:22:23 GMT  
+	-	`sha256:730c1436b4a8c8addd307436381ccbe5d3d3adf57e2b67228ea624046c0f4997`  
+		Last Modified: Thu, 09 Jan 2025 22:29:44 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:6452df1b49249a1aff1effb95af689db74116864e358573f3eaff1c926acc964
+$ docker pull docker@sha256:be1d49fba5a57b05f51e6647474576cc8acff06ab95abf3e77f44caf4d9a18ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.3 KB (38322 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b416adce65063fc78e3d041f3b11da9e0f1b78c45e6a5adaab892a2b4e624a5`
+-	Image ID: `sha256:28b43e4d309391e554120eff22e63583f34139871e06468f4e755cb402ffeef0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:76ded0ab55bdce21dee7fb8ba60ace91a0714d20eda6c06c218e8cacad3cc6bc`  
-		Last Modified: Wed, 08 Jan 2025 18:22:21 GMT  
+	-	`sha256:e3495cd0038630409f260c6ff16e859457e5c2ec51e6b14353d33ab96727b433`  
+		Last Modified: Thu, 09 Jan 2025 22:29:42 GMT  
 		Size: 38.3 KB (38322 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2856,7 +2856,7 @@ $ docker pull docker@sha256:7e490ce3f280aa44814bcd1c50a1c27b31c2e937c9a15bacb186
 ## `docker:27-rc-cli`
 
 ```console
-$ docker pull docker@sha256:4b16de3a2373196251f5defc3e73cb887d804ac854c7eba35889af4befbbfd8f
+$ docker pull docker@sha256:c530b63738ba176075d4ba735299bc5c152273cfca1e15a69b1296ac54f9fcd7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2873,50 +2873,50 @@ $ docker pull docker@sha256:4b16de3a2373196251f5defc3e73cb887d804ac854c7eba35889
 ### `docker:27-rc-cli` - linux; amd64
 
 ```console
-$ docker pull docker@sha256:d4c238edbc99a56cb3ecd1180cac4a9c993ae18049e335c888200443cf91b94b
+$ docker pull docker@sha256:c14c4bef734c4e69c19de0eadcb6ed00b3e5ba89f1b0bbac8a3f5fd955aee3b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.6 MB (68646898 bytes)**  
+-	Total Size: **68.7 MB (68659936 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:20c8e38c7a745ab6299f8b00cf632dc83605fe3dda10aad28f0ef360523eeb23`
+-	Image ID: `sha256:61fd50be698735ae5547ffcd85443dc2f3f03657d29f023a56c53008fab07622`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-x86_64.tar.gz / # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
-ENV DOCKER_VERSION=27.5.0-rc.1
-# Mon, 23 Dec 2024 12:04:24 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Mon, 23 Dec 2024 12:04:24 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 CMD ["sh"]
 ```
 
@@ -2925,110 +2925,110 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
 		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d185366bdae3ff1be746691465de29a0e0b2f3e04f28b39180d9375234c91e73`  
-		Last Modified: Wed, 08 Jan 2025 17:58:05 GMT  
-		Size: 8.1 MB (8058731 bytes)  
+	-	`sha256:d9da8d98be9c497538e046636271095d60600736b8b98dd17d89b85cf6750a8f`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 8.1 MB (8058734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84093b170643807426ca3245685f647e26fe436e1ef1abba0ef4cf9534f507c3`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
+	-	`sha256:4386589b6f3f3d4248a89850307f7fce69767219761e159ae96376e95133648c`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
 		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa172934c35105c4a18182bd9b857ade0907d0d1764f9ad891155264506fe4c6`  
-		Last Modified: Wed, 08 Jan 2025 17:58:07 GMT  
-		Size: 18.8 MB (18849783 bytes)  
+	-	`sha256:3eec89dde7ca9124d2c1f9aad8c5610b044c03e8375a50440e2b400c0b684dbf`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
+		Size: 18.8 MB (18849789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:728c7914f544bf3f45e01d7a92f1ec9bd4d0f74f8279cf05e3fec45d6e3330d7`  
-		Last Modified: Wed, 08 Jan 2025 17:58:07 GMT  
-		Size: 18.8 MB (18798856 bytes)  
+	-	`sha256:621d9e9d8f1c084324a9bfc17effabc710a3142456efbde84cc52357b5d39c7a`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
+		Size: 18.8 MB (18798855 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7588327f44f74c8cfb1df740b4b112bb9f349bea682699af57bce24c05cc282`  
-		Last Modified: Wed, 08 Jan 2025 17:58:07 GMT  
-		Size: 19.3 MB (19295660 bytes)  
+	-	`sha256:432b891fc60d0f0b3357554b2556dcc95eda57ad9cab9cefea2dd40d3fbfe313`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
+		Size: 19.3 MB (19308691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:212466ce3060eb51a55ca7cf64d97bf0e233dddf9601a6dc91616bda989f5492`  
-		Last Modified: Wed, 08 Jan 2025 17:58:07 GMT  
+	-	`sha256:c6b8e858f3681e6fef39f2adbdfcaeaaf4d540cbf7142ddfd213872e305aa38a`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
 		Size: 538.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:804b79a204afdb2c58388b282b8ed120b0dc158fa22a5c2d2923a3bf5db3c694`  
-		Last Modified: Wed, 08 Jan 2025 17:58:08 GMT  
-		Size: 1.0 KB (1012 bytes)  
+	-	`sha256:33046038b891c90630e087369904e988fa6618edaa3a614ad802c2d6f5fbac02`  
+		Last Modified: Thu, 09 Jan 2025 22:28:48 GMT  
+		Size: 1.0 KB (1011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad7fc56b24e6aa15361bc928b8d0f71e680d193590e02cd51997ae117cff498a`  
-		Last Modified: Wed, 08 Jan 2025 17:58:08 GMT  
+	-	`sha256:639543bd8ef1632e940a6cba7fe057e640d898242a0b129845132d3be23fafe5`  
+		Last Modified: Thu, 09 Jan 2025 22:28:48 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27-rc-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:ac31f9565a499bd5f412771d53a30ae6893aea2c754db10fb301893149cdb56f
+$ docker pull docker@sha256:508e9f08c885952fec190ac965b8d01200e8cf11a98bc2f057d49d7ea7fc22fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **37.9 KB (37911 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:317515039c3071a5cce19466606d02a144a142b7b277371a89e192393172e080`
+-	Image ID: `sha256:950bbdc34c347fdedb963abb527179012b95cec6d6e7225294598b6caa564b50`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7aa158e968e34bc63e4befc85a45577b7a0b109591e0943d6ae80ab00097be4c`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
+	-	`sha256:f2dd35f84dacc2ba5f4b4d46fc3e5049242b63b573d54c8ac921484d00f56deb`  
+		Last Modified: Thu, 09 Jan 2025 22:28:46 GMT  
 		Size: 37.9 KB (37911 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:27-rc-cli` - linux; arm variant v6
 
 ```console
-$ docker pull docker@sha256:2e7e74e709a8b9028fe4a743d816cd6770373fe19a1e13e5c8666162a517c91d
+$ docker pull docker@sha256:db8c4d59993fec0c2c2ff454c708ea8b318ac99a2bff7095ef978d9cad65f55c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.8 MB (63760436 bytes)**  
+-	Total Size: **63.8 MB (63770910 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d8c15bb64c3dc55919c09b44a7239b2c6d3d932733ead970c77bf843d32699c`
+-	Image ID: `sha256:c2eeb2cdfdc70031e1cae04d9ac9ea5a212fd6c457fecb031ce9c0ff5f56972b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-armhf.tar.gz / # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
-ENV DOCKER_VERSION=27.5.0-rc.1
-# Mon, 23 Dec 2024 12:04:24 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Mon, 23 Dec 2024 12:04:24 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 CMD ["sh"]
 ```
 
@@ -3049,98 +3049,98 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 18:20:15 GMT  
 		Size: 453.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11fbab54b8c33ec7fe1e54aea2533ac4c726c7681009072e88d7bb0056ee820f`  
-		Last Modified: Wed, 08 Jan 2025 18:20:16 GMT  
-		Size: 16.9 MB (16866138 bytes)  
+	-	`sha256:5e9ab1964284c90cd66885201a9bbcfa54a7527c7036c167e8b25ba12315785d`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
+		Size: 16.9 MB (16866137 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52173ebe4d9e56aad1b08a4887413454783330788e1f9020dea7b819a39b55d6`  
-		Last Modified: Wed, 08 Jan 2025 18:20:16 GMT  
-		Size: 17.4 MB (17448771 bytes)  
+	-	`sha256:8a0a71ee996cd6ec00b3ca454fb99d1629126a0253f97fcfb804b92210e3e9ef`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
+		Size: 17.4 MB (17448786 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59bee8988b9009adee07e104fbdae1e17150da69675f290094af488eba90a7bd`  
-		Last Modified: Wed, 08 Jan 2025 18:20:16 GMT  
-		Size: 18.1 MB (18106577 bytes)  
+	-	`sha256:6dc27f56b4fbce0a698f26028b89d85a4b9344052051e6077787ec8ee4953d1f`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
+		Size: 18.1 MB (18117038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50ad93158fd9a65de4e80336f255cc9ccd128a5c8196fd88953432e9fc2699ce`  
-		Last Modified: Wed, 08 Jan 2025 18:20:17 GMT  
+	-	`sha256:a01bfd7920f902c6dba6f495793838e4136a4a693af86267c061790d0aa19aab`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
 		Size: 542.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6e58a75500fe9e1bebf429963a4aad7f19426d9ab4b13c0e33ee5a252571759`  
-		Last Modified: Wed, 08 Jan 2025 18:20:17 GMT  
-		Size: 1.0 KB (1018 bytes)  
+	-	`sha256:3e6d1fe7c267407142c7dcab85283bf1e880c8797a3e3698dcb175a58520bf54`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
+		Size: 1.0 KB (1017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26ad54b824ae7f5a03b05e7e93c7bbd376c5211294adb15419caad4de97c7e69`  
-		Last Modified: Wed, 08 Jan 2025 18:20:17 GMT  
+	-	`sha256:f969b16c61023503d53aa8108514e34fd6640304927df19de346779a0b3326b8`  
+		Last Modified: Thu, 09 Jan 2025 22:30:15 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27-rc-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:c94ada25b972ddbfa5f210fa2060f51a9c9551f353db8a6db43031c502099676
+$ docker pull docker@sha256:0830a2e84a624c9c57da889697c4144edf919bfeab45dbe7bc30592c900d9fc4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.1 KB (38064 bytes)**  
+-	Total Size: **38.1 KB (38065 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f6b0659e32a0a045fc36507435965380271659fc987674465c9fd323e027600`
+-	Image ID: `sha256:967a1a6debd9643f24408258619b1b9b99cf2f24ddd9086cbc67fb25f975f3e7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c00093cd0be751f5656918c0f734df4eb1ee4576bcd741b1496face4f0f90c87`  
-		Last Modified: Wed, 08 Jan 2025 18:20:15 GMT  
-		Size: 38.1 KB (38064 bytes)  
+	-	`sha256:0ec6853da71644a36f250a4531da87f14ab3cc6feb14bf5c860975ada6a5e32f`  
+		Last Modified: Thu, 09 Jan 2025 22:30:12 GMT  
+		Size: 38.1 KB (38065 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:27-rc-cli` - linux; arm variant v7
 
 ```console
-$ docker pull docker@sha256:d334992f33be2cfadc328b17abbe0cb9b68b3810fcf9beacd665cb013ba39ebe
+$ docker pull docker@sha256:f77687b33a860a855ddcdba07802faffc2949e28e64e9b7fcbf6b0843f0b95a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.8 MB (62769440 bytes)**  
+-	Total Size: **62.8 MB (62775766 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2577449fd00eb7babb468a212e89033ba803559f0b5aafdfdb2b828d09f7727e`
+-	Image ID: `sha256:e50b1de49d4a597cd3b9d0295012c9def8cdead807f7998e0d771d6b2ad3e425`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-armv7.tar.gz / # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
-ENV DOCKER_VERSION=27.5.0-rc.1
-# Mon, 23 Dec 2024 12:04:24 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Mon, 23 Dec 2024 12:04:24 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 CMD ["sh"]
 ```
 
@@ -3161,98 +3161,98 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 18:35:54 GMT  
 		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:069f09b40c84f1529b8ffdba1b3e433bbcc6e71b347c69887c7097159559ec1f`  
-		Last Modified: Wed, 08 Jan 2025 18:35:55 GMT  
-		Size: 16.9 MB (16856026 bytes)  
+	-	`sha256:5cce3d589c0262c7f4a8c32c1d67310d9f243e977791ab808712b89ecd304d29`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 16.9 MB (16856002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ed387bba547ca9836224f95363cf2479a388d110a757eb27a801e00cf6306e3`  
-		Last Modified: Wed, 08 Jan 2025 18:35:55 GMT  
-		Size: 17.4 MB (17427575 bytes)  
+	-	`sha256:46e4ad7c54ebd6402c0beb5affcbb3693426ec318dcc72b2587436c260e17f0c`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 17.4 MB (17427582 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74b70245f940390e6c626dba7eaa476ab448cf4e898cd4a84a72a9c3c539f2b6`  
-		Last Modified: Wed, 08 Jan 2025 18:35:56 GMT  
-		Size: 18.1 MB (18092653 bytes)  
+	-	`sha256:b2bc0a6c2f4ed088d3bc7fd01b80a4678cfa87f538c10648b3e5d91790618e95`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 18.1 MB (18098987 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b47a76f61278ef1619dc71793aeb867a91d9fe9ee16e7bdfa3e2a62ebcac084a`  
-		Last Modified: Wed, 08 Jan 2025 18:35:56 GMT  
-		Size: 541.0 B  
+	-	`sha256:87b8b9d2ef53aa5dad5ea0459ac27a83545b15e2948b7828669008b643c24e58`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
+		Size: 544.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ed52b15605de211c037fe5d15ef6e8369636f0042338c5e70b05165ddea059d`  
-		Last Modified: Wed, 08 Jan 2025 18:35:56 GMT  
-		Size: 1.0 KB (1013 bytes)  
+	-	`sha256:192c8acb0a9588aa498003df335dc4e6b0380ba2fea64d067694ca6419c199f4`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.0 KB (1019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4100cdb760440441b4cc258b93b2c090808b59e5239e1094438a9a7fd1b1e05`  
-		Last Modified: Wed, 08 Jan 2025 18:35:57 GMT  
+	-	`sha256:6ef1b77e5b58b0bfdc06052a14f6896d21976f883c36e576776800ebdc61923d`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27-rc-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:e7624fa8c194869d14547ef5976920a7e6cbafc715479c57958e555bd9a25c05
+$ docker pull docker@sha256:9dc154b1a93d7226c391a0f6f277f5a87071a7a4b28ad39a24aa63c5efb9a644
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.1 KB (38065 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab838a3344889f04b0958a85b57a538f936df7048b9a64f0f872cc61fcfff8e1`
+-	Image ID: `sha256:d06686dc6b6759416850118304c954bb9ded06b6a626aaf2f3c5454c315dd30c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2bd68db1ff4a9e6f595726b4ab783effbd00099d55e5be40e77d2713b62d450c`  
-		Last Modified: Wed, 08 Jan 2025 18:35:54 GMT  
+	-	`sha256:04c960f20088a663034bd90db6157f5bd22fcd140275c8d7fd96260cbce73166`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
 		Size: 38.1 KB (38065 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:27-rc-cli` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:014302f0639c1fbab1113ed2c20636e4edbd747d8931e365a18d159d27ad1031
+$ docker pull docker@sha256:db7d00873d2eebcc1c110e2264734bf73cf6a5a7564d840c06f9a366fcbe3203
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.6 MB (64612585 bytes)**  
+-	Total Size: **64.6 MB (64623851 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74c65f82ce56e8551bb37ec718febfe436a3f9dd387e95f5c7bc67a88a1b1c52`
+-	Image ID: `sha256:1b92eee8f92ab0b74ccdbce000c2ffb116d3b0402b11540eb08ac8fade003b3b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-aarch64.tar.gz / # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
-ENV DOCKER_VERSION=27.5.0-rc.1
-# Mon, 23 Dec 2024 12:04:24 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Mon, 23 Dec 2024 12:04:24 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 CMD ["sh"]
 ```
 
@@ -3261,61 +3261,61 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 17:23:52 GMT  
 		Size: 4.0 MB (3992359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd118a02a977501603a666f0534bd4e65d18527588ad5cf400f8c10d29b641a2`  
-		Last Modified: Wed, 08 Jan 2025 18:21:52 GMT  
-		Size: 8.1 MB (8073087 bytes)  
+	-	`sha256:3528552267cec0f9e2dee7d372df3bbea6255a3ca1a18ba3e58e5cfd106d15e1`  
+		Last Modified: Thu, 09 Jan 2025 22:29:23 GMT  
+		Size: 8.1 MB (8073134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf7344f9e39163b0db1d8cc353b60bb1b0f4a1f5bce6103ce319dc4b80767896`  
-		Last Modified: Wed, 08 Jan 2025 18:21:51 GMT  
-		Size: 454.0 B  
+	-	`sha256:d4781719ef357b2c136f17ff57b79d601b4058a8861d68048cf902106cf3ae9d`  
+		Last Modified: Thu, 09 Jan 2025 22:29:22 GMT  
+		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc9d0501c659e9996506457c271e935b286b1a36410eeba8026d42730c469bde`  
-		Last Modified: Wed, 08 Jan 2025 18:21:52 GMT  
-		Size: 17.8 MB (17795775 bytes)  
+	-	`sha256:8bcfe8386e2237fec90daf19cd8ba491dfd16e22403ea006d78c74d9e304e7da`  
+		Last Modified: Thu, 09 Jan 2025 22:29:24 GMT  
+		Size: 17.8 MB (17795789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c13fd75e9ccda9d1d254561f4bbbb148870f59ca6f4b024cd65844a98cb71cb`  
-		Last Modified: Wed, 08 Jan 2025 18:21:52 GMT  
-		Size: 17.1 MB (17106460 bytes)  
+	-	`sha256:a7a1a11b1c0f7f2eec8de0dee32306eb07511123c3079e8d30e5d2c55291cf73`  
+		Last Modified: Thu, 09 Jan 2025 22:29:24 GMT  
+		Size: 17.1 MB (17106442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f85bcd21765cb8c05d3739bcd1fb5482cbb351da6b1ad78fe38f3b9951dad85d`  
-		Last Modified: Wed, 08 Jan 2025 18:21:54 GMT  
-		Size: 17.6 MB (17642749 bytes)  
+	-	`sha256:41348e1c5583cceaf0d743a287b5829751e2de935eed8a50c782219d9792989c`  
+		Last Modified: Thu, 09 Jan 2025 22:29:24 GMT  
+		Size: 17.7 MB (17653974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2bb73011f2d3c9afe5ebd89ba6f896b42afb86f59c361549393c69cabc91720`  
-		Last Modified: Wed, 08 Jan 2025 18:21:53 GMT  
-		Size: 541.0 B  
+	-	`sha256:ae1e54ea85aba2ead18cf01620a297d57612c95088894b00881fffda27f1e5ea`  
+		Last Modified: Thu, 09 Jan 2025 22:29:24 GMT  
+		Size: 539.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3943034a025077136d95699e23a430ae80a733bcf578ba514dba74b0a1e1cd0`  
-		Last Modified: Wed, 08 Jan 2025 18:21:53 GMT  
-		Size: 1.0 KB (1012 bytes)  
+	-	`sha256:f14bbbf7fcfe04dd9d925b93b69abdc72380976ef81bbfd2dfc042e3f75b86c2`  
+		Last Modified: Thu, 09 Jan 2025 22:29:25 GMT  
+		Size: 1.0 KB (1011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c5550cda41ef4efe67333dba99c08cf7b06cf3f4b175838e8c086f1040d4b3b`  
-		Last Modified: Wed, 08 Jan 2025 18:21:53 GMT  
+	-	`sha256:2e82aac5329a578313454cdc01cbf748ca6cf66d7c8596e771bd64e8b648f3b1`  
+		Last Modified: Thu, 09 Jan 2025 22:29:25 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27-rc-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:7aff644be863d47180f441eafeb0ebbea3f154755d12195286c431f11b35035b
+$ docker pull docker@sha256:888b931181514dc4f8746b0c25742d486c4ab1d57229e622ac1ab58a2aa56922
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.1 KB (38105 bytes)**  
+-	Total Size: **38.1 KB (38104 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff2009808de7e1638e250881ecb8883b5d4e817b14fd3dbc1d57442f8b922285`
+-	Image ID: `sha256:216686a098d073262bf56f4b078d01073fe27189c8cc2d70c15b7a8f252d5be0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7096a8e7c5ec3000679e6a8f90e8ade60bc0e4a4270d5e6c590ba8bbed21bf37`  
-		Last Modified: Wed, 08 Jan 2025 18:21:51 GMT  
-		Size: 38.1 KB (38105 bytes)  
+	-	`sha256:36babd78e905080ce1f3d4ce7b845dcf86c25e282ea5b16c0a0f758017f9d2d4`  
+		Last Modified: Thu, 09 Jan 2025 22:29:22 GMT  
+		Size: 38.1 KB (38104 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `docker:27-rc-dind`
@@ -4361,7 +4361,7 @@ $ docker pull docker@sha256:6298f08c1eb8c457ff8970d23d672ad684e6fa48777fc12955d6
 ## `docker:27-rc-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:48c904f5e170ed211543c9b084281b5ff8dbe1fffcf7f0eb30059f82b8282817
+$ docker pull docker@sha256:45da1aef03960bd831584932b366823e5b42cba3e11f83817b8a1c38e6cf6f66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4372,14 +4372,14 @@ $ docker pull docker@sha256:48c904f5e170ed211543c9b084281b5ff8dbe1fffcf7f0eb3005
 ### `docker:27-rc-windowsservercore` - windows version 10.0.20348.2966; amd64
 
 ```console
-$ docker pull docker@sha256:f060df9628c987ea789c4df5780c0943df13de795de60711bb97d96b0529a222
+$ docker pull docker@sha256:34c8def198551f1459d069bd5d4d37df4100afe874339a550015e35c5280c9d1
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2313174502 bytes)**  
+-	Total Size: **2.3 GB (2313129839 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79c54349c5113cf4e6163046f713fabab511bacc7b343b6014c159fba49cbe30`
+-	Image ID: `sha256:c879b100b69e4588217fec80ac9427eb48b8583df5a57875fa7acff211cf3846`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -4388,31 +4388,31 @@ $ docker pull docker@sha256:f060df9628c987ea789c4df5780c0943df13de795de60711bb97
 RUN Apply image 10.0.20348.2700
 # Thu, 05 Dec 2024 01:36:58 GMT
 RUN Install update 10.0.20348.2966
-# Tue, 24 Dec 2024 21:32:16 GMT
+# Thu, 09 Jan 2025 22:28:59 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 24 Dec 2024 21:32:31 GMT
+# Thu, 09 Jan 2025 22:30:16 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 24 Dec 2024 21:32:32 GMT
-ENV DOCKER_VERSION=27.5.0-rc.1
-# Tue, 24 Dec 2024 21:32:32 GMT
-ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.1.zip
-# Tue, 24 Dec 2024 21:32:44 GMT
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.2.zip
+# Thu, 09 Jan 2025 22:30:37 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 24 Dec 2024 21:32:45 GMT
+# Thu, 09 Jan 2025 22:30:37 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Tue, 24 Dec 2024 21:32:45 GMT
+# Thu, 09 Jan 2025 22:30:38 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Tue, 24 Dec 2024 21:32:46 GMT
+# Thu, 09 Jan 2025 22:30:38 GMT
 ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Tue, 24 Dec 2024 21:32:54 GMT
+# Thu, 09 Jan 2025 22:30:47 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 24 Dec 2024 21:32:55 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Tue, 24 Dec 2024 21:32:56 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Tue, 24 Dec 2024 21:32:56 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Tue, 24 Dec 2024 21:33:05 GMT
+# Thu, 09 Jan 2025 22:30:47 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:48 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:48 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:58 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -4425,70 +4425,70 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 10 Dec 2024 18:41:03 GMT  
 		Size: 791.7 MB (791681213 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f63539bd5606097057aa02c357af9d7a0e1646815b12be20dc8f737692a0f0e3`  
-		Last Modified: Tue, 24 Dec 2024 21:33:14 GMT  
-		Size: 1.3 KB (1282 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a22d3469291cd45bf8e0e73371485a1742ba6f079a8eb2ed0cd0d86ddbfa6122`  
-		Last Modified: Tue, 24 Dec 2024 21:33:14 GMT  
-		Size: 344.5 KB (344495 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2806a68fc42aa330bf56cb205269fa5babf79accb9b1386be6a9e0fb93119cbb`  
-		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
-		Size: 1.3 KB (1281 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22666c5dabea757b86076cd5fe26537d5bebbe49a7a79cf89c5ee12643efa9b8`  
-		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
-		Size: 1.3 KB (1281 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:413691bf0e8f67c1a40025543e4c2d35b542644368a6478293fbed434ecb5d9f`  
-		Last Modified: Tue, 24 Dec 2024 21:33:14 GMT  
-		Size: 19.2 MB (19152808 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0afb618bebd1ae71a220d6645aba1b28bc34f615b1e3c1d1b95515b127f02cd7`  
-		Last Modified: Tue, 24 Dec 2024 21:33:11 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ef2efc888bd6324dfb7b051550d7efe5480bd2b53a9c5da68fc5c5a86bd7760`  
-		Last Modified: Tue, 24 Dec 2024 21:33:11 GMT  
-		Size: 1.3 KB (1284 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46e018d4d50ac765f64fd6c45823dff2ba7c53d05bdf53def4650edd17021382`  
-		Last Modified: Tue, 24 Dec 2024 21:33:10 GMT  
-		Size: 1.3 KB (1288 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a87787eeb120e7bcc6042c679f7f51cc3c1f290e226d2cae2942f93826f74e97`  
-		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
-		Size: 19.6 MB (19637964 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:884da3d04c115b4a1215815cf66e0d0be9480171f497ef11dc2b9abab5d6fa52`  
-		Last Modified: Tue, 24 Dec 2024 21:33:09 GMT  
-		Size: 1.3 KB (1283 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c38c6d76f55c43dcabade54de45a3b2ac5397beea2b685d25cec730cba2a53c6`  
-		Last Modified: Tue, 24 Dec 2024 21:33:09 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7937e1c18b4dbdd128c94ee1e67dbf60e81fb28a163156f31c1e430c2bd2031`  
-		Last Modified: Tue, 24 Dec 2024 21:33:09 GMT  
+	-	`sha256:e64f3ca98ebbeaabbe9caa8a22cf59bc40d9d102d2526d1049bd68a910921bf9`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
 		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4513c6265bdc4a4841cd89793fbc86cbe1d89824943d131fd32064295171fe7f`  
-		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
-		Size: 20.2 MB (20154041 bytes)  
+	-	`sha256:c556be6783cdbb2c773a11684d233d0b303cceca2409d251ca495028eb4e8b32`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 357.0 KB (356971 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:62db5363d85636ed44a6ab46f57b9f37cd884f03ec2ce37d0e33cd96233b9138`  
+		Last Modified: Thu, 09 Jan 2025 22:31:02 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b435965c81c2e8fb61ce8a0eadf77cfb0e2f9886595430f0033e80e767731f3c`  
+		Last Modified: Thu, 09 Jan 2025 22:31:02 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:159da7e211e53c5b7ddeec749a6c40bc4434d55aa46675a838d8e577c3dac69f`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 19.1 MB (19131765 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1584497e6e0be075b115c53cc08d3ac3095f7ab38fdfc856d8cb48449bb7e060`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0348525302a5482ba9b0d399d7eacc24af94672045c97ecb89568235ded2564b`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1283 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b3147b65b25122a7c3e76ab0b163ff239af806851dbe1337f4cceccfe784799f`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a9f472ac9bf23724607ca28bcc8bf1acc04896b2d5e40f90e05234e1dfef84e0`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 19.6 MB (19615417 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6fa14a61e024eeab3914a555cf693f8281b9bdb37f9ddb1cc3148658be9d36f7`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a7ee6431a575ea313a3aca6d1c013e02216a2a470e4eae7992499d19398ae8ab`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.3 KB (1279 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:625c47e3aecbfdba39fc9ee46db788bcfb5edb0fa800215f469c44defd7d81db`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0e92dc6bab1ddd4745640a6d67475207ee6ca87cb4ba8efe6494172cba722a6b`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 20.1 MB (20140505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `docker:27-rc-windowsservercore` - windows version 10.0.17763.6659; amd64
 
 ```console
-$ docker pull docker@sha256:686c30f73587c730321cad9c057971af53a33370b7d8d4286cae294d26ad4ec8
+$ docker pull docker@sha256:057210aa60aaff6fa876e991185b963cb8627dd9b2d8bf7dd4ec1ab520281f8b
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2073612215 bytes)**  
+-	Total Size: **2.1 GB (2073618238 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b84832ebdf5b660baa2d76253298957b71d48305b3240d2c38f373daca00d98f`
+-	Image ID: `sha256:aeed8631f9b336871bf7e8006b7e5fc007c9ef03c7355d97ccd061c85b38705f`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -4497,31 +4497,31 @@ $ docker pull docker@sha256:686c30f73587c730321cad9c057971af53a33370b7d8d4286cae
 RUN Apply image 10.0.17763.6293
 # Thu, 05 Dec 2024 05:10:22 GMT
 RUN Install update 10.0.17763.6659
-# Tue, 24 Dec 2024 21:32:05 GMT
+# Thu, 09 Jan 2025 22:28:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 24 Dec 2024 21:32:32 GMT
+# Thu, 09 Jan 2025 22:30:06 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 24 Dec 2024 21:32:33 GMT
-ENV DOCKER_VERSION=27.5.0-rc.1
-# Tue, 24 Dec 2024 21:32:33 GMT
-ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.1.zip
-# Tue, 24 Dec 2024 21:32:51 GMT
+# Thu, 09 Jan 2025 22:30:06 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Thu, 09 Jan 2025 22:30:07 GMT
+ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.2.zip
+# Thu, 09 Jan 2025 22:30:25 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 24 Dec 2024 21:32:51 GMT
+# Thu, 09 Jan 2025 22:30:25 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Tue, 24 Dec 2024 21:32:51 GMT
+# Thu, 09 Jan 2025 22:30:26 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Tue, 24 Dec 2024 21:32:52 GMT
+# Thu, 09 Jan 2025 22:30:26 GMT
 ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Tue, 24 Dec 2024 21:33:11 GMT
+# Thu, 09 Jan 2025 22:30:39 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 24 Dec 2024 21:33:11 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Tue, 24 Dec 2024 21:33:12 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Tue, 24 Dec 2024 21:33:12 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Tue, 24 Dec 2024 21:33:27 GMT
+# Thu, 09 Jan 2025 22:30:40 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:40 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:40 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:53 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -4534,63 +4534,63 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 10 Dec 2024 18:45:28 GMT  
 		Size: 293.9 MB (293901821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5cf5cc0f04280c4f94e99dc74bca4537c728a2e865602b4c7df0a869b97aa2d8`  
-		Last Modified: Tue, 24 Dec 2024 21:33:33 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:baf08f4f100241820dd2321371c9449504c180e9aa1f4f07045511f101355d4c`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 1.3 KB (1329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f5c018baa4cd08368e4409d9ae0701a563e189edc81adc7468070d83211bcf4`  
-		Last Modified: Tue, 24 Dec 2024 21:33:32 GMT  
-		Size: 471.9 KB (471890 bytes)  
+	-	`sha256:de7317db44443713338c98d87e8b8785cc16e61d3678b7739432fac7a0c9aae7`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 471.1 KB (471058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe5dfa39ceae9ecfc0b85879c1bcb7dca3dd816220ce026c911c0e30fb978d3f`  
-		Last Modified: Tue, 24 Dec 2024 21:33:32 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:329b49d91a016a02daed99f08dd3d940765b76b3f49239fd046b301c07ebd29e`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87db596dbd06aa586eae180b90bb0dceb163ef6e953c4e69bf1c89fb2b45631b`  
-		Last Modified: Tue, 24 Dec 2024 21:33:31 GMT  
-		Size: 1.3 KB (1294 bytes)  
+	-	`sha256:101b3efa01e144b60175fc234b7ef5e9b6b469d3f7fe547aec3c161816dc8238`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c6c8e6be11d6c2aa0ea24c4911a23b271b12242b2535e34e162365d65beec9a`  
-		Last Modified: Tue, 24 Dec 2024 21:33:33 GMT  
-		Size: 19.2 MB (19161495 bytes)  
+	-	`sha256:fbc6beeebc1583474f6206c51fe7f7bf7ffcba620d988f30721486a80317d9f4`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 19.2 MB (19157595 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b2a800dea9cd4124557d6b0c02bdd1a09c0c3adf94da5e9aacbec30a070b383`  
-		Last Modified: Tue, 24 Dec 2024 21:33:31 GMT  
+	-	`sha256:ab3b3346e95ba20efef3a0b225e8f6eeb2e4ad1c4a25ef214af3cd3884022c98`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
 		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6d4c0e71b35e0a4cfd400d2243d7b5d1b4e5057a89c8e8078cddaa8a4e78155`  
-		Last Modified: Tue, 24 Dec 2024 21:33:31 GMT  
-		Size: 1.3 KB (1275 bytes)  
+	-	`sha256:7713cf22c990e5be40762b0caefc453b83b1aa128ecdd9c87c6762c0c6205e9d`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3986b91b8e1d14f961566561f915ae092de47cb2fe551c16efad827743e846`  
-		Last Modified: Tue, 24 Dec 2024 21:33:31 GMT  
-		Size: 1.3 KB (1298 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a97c32bdf11582062e3ba8903a9933e9bad10302993456a9c6e008239c3130ca`  
-		Last Modified: Tue, 24 Dec 2024 21:33:32 GMT  
-		Size: 19.6 MB (19644920 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abcde94ac84f47d4747374f206c74626ec3ee839195b361af7c21a5d40566556`  
-		Last Modified: Tue, 24 Dec 2024 21:33:30 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ec3c7da2aea03b09076b099c426ff7c9b535cfa3a03620dc3521cdf8176e70b`  
-		Last Modified: Tue, 24 Dec 2024 21:33:30 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bf7001b3252d15320448d1fdd6d814bef5bfbc775a2eb7e002331e06c46b8f5`  
-		Last Modified: Tue, 24 Dec 2024 21:33:30 GMT  
+	-	`sha256:2a2cc7427122b33bfa2e3b833940957fa2e06340b1b76d201b8247b9619b0018`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
 		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a5d5eab58c6a81afbbfc00aae2929a4b893a3039b9da20e06a640895ab95011`  
-		Last Modified: Tue, 24 Dec 2024 21:33:32 GMT  
-		Size: 20.2 MB (20152101 bytes)  
+	-	`sha256:9809ead8de21abdf5846fdbfa94f9b71d4c9f078526765b5f31fdc63b87d6f76`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 19.6 MB (19643601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:04717aaf7687614f2bf808d407179765af282d2e2d252db64f7123966a04c2ea`  
+		Last Modified: Thu, 09 Jan 2025 22:30:57 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fbc9ca72b34caddfb3cca6c51f5db1b6f775d58c972fd36dc09ccbf44fc45fda`  
+		Last Modified: Thu, 09 Jan 2025 22:30:58 GMT  
+		Size: 1.4 KB (1385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f0b5317c77f72317760dc2066aa0c624718f445d00d319be2397030d26c637b4`  
+		Last Modified: Thu, 09 Jan 2025 22:30:58 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:995d49cd3175fcc8f1a22a3d4ad19eef4f50da337db1901caa160070954bfcfd`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 20.2 MB (20164019 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27-rc-windowsservercore-1809`
 
 ```console
-$ docker pull docker@sha256:3035d541fac80cabda27dc2faec0e57bb52941638fa59337481cb69e9f6e5cc6
+$ docker pull docker@sha256:19aea85a1ca846c490972fa5fe6cb66d345d256ccbe9e306586201ce200ef72f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4600,14 +4600,14 @@ $ docker pull docker@sha256:3035d541fac80cabda27dc2faec0e57bb52941638fa59337481c
 ### `docker:27-rc-windowsservercore-1809` - windows version 10.0.17763.6659; amd64
 
 ```console
-$ docker pull docker@sha256:686c30f73587c730321cad9c057971af53a33370b7d8d4286cae294d26ad4ec8
+$ docker pull docker@sha256:057210aa60aaff6fa876e991185b963cb8627dd9b2d8bf7dd4ec1ab520281f8b
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2073612215 bytes)**  
+-	Total Size: **2.1 GB (2073618238 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b84832ebdf5b660baa2d76253298957b71d48305b3240d2c38f373daca00d98f`
+-	Image ID: `sha256:aeed8631f9b336871bf7e8006b7e5fc007c9ef03c7355d97ccd061c85b38705f`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -4616,31 +4616,31 @@ $ docker pull docker@sha256:686c30f73587c730321cad9c057971af53a33370b7d8d4286cae
 RUN Apply image 10.0.17763.6293
 # Thu, 05 Dec 2024 05:10:22 GMT
 RUN Install update 10.0.17763.6659
-# Tue, 24 Dec 2024 21:32:05 GMT
+# Thu, 09 Jan 2025 22:28:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 24 Dec 2024 21:32:32 GMT
+# Thu, 09 Jan 2025 22:30:06 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 24 Dec 2024 21:32:33 GMT
-ENV DOCKER_VERSION=27.5.0-rc.1
-# Tue, 24 Dec 2024 21:32:33 GMT
-ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.1.zip
-# Tue, 24 Dec 2024 21:32:51 GMT
+# Thu, 09 Jan 2025 22:30:06 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Thu, 09 Jan 2025 22:30:07 GMT
+ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.2.zip
+# Thu, 09 Jan 2025 22:30:25 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 24 Dec 2024 21:32:51 GMT
+# Thu, 09 Jan 2025 22:30:25 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Tue, 24 Dec 2024 21:32:51 GMT
+# Thu, 09 Jan 2025 22:30:26 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Tue, 24 Dec 2024 21:32:52 GMT
+# Thu, 09 Jan 2025 22:30:26 GMT
 ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Tue, 24 Dec 2024 21:33:11 GMT
+# Thu, 09 Jan 2025 22:30:39 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 24 Dec 2024 21:33:11 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Tue, 24 Dec 2024 21:33:12 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Tue, 24 Dec 2024 21:33:12 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Tue, 24 Dec 2024 21:33:27 GMT
+# Thu, 09 Jan 2025 22:30:40 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:40 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:40 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:53 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -4653,63 +4653,63 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 10 Dec 2024 18:45:28 GMT  
 		Size: 293.9 MB (293901821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5cf5cc0f04280c4f94e99dc74bca4537c728a2e865602b4c7df0a869b97aa2d8`  
-		Last Modified: Tue, 24 Dec 2024 21:33:33 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:baf08f4f100241820dd2321371c9449504c180e9aa1f4f07045511f101355d4c`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 1.3 KB (1329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f5c018baa4cd08368e4409d9ae0701a563e189edc81adc7468070d83211bcf4`  
-		Last Modified: Tue, 24 Dec 2024 21:33:32 GMT  
-		Size: 471.9 KB (471890 bytes)  
+	-	`sha256:de7317db44443713338c98d87e8b8785cc16e61d3678b7739432fac7a0c9aae7`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 471.1 KB (471058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe5dfa39ceae9ecfc0b85879c1bcb7dca3dd816220ce026c911c0e30fb978d3f`  
-		Last Modified: Tue, 24 Dec 2024 21:33:32 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:329b49d91a016a02daed99f08dd3d940765b76b3f49239fd046b301c07ebd29e`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87db596dbd06aa586eae180b90bb0dceb163ef6e953c4e69bf1c89fb2b45631b`  
-		Last Modified: Tue, 24 Dec 2024 21:33:31 GMT  
-		Size: 1.3 KB (1294 bytes)  
+	-	`sha256:101b3efa01e144b60175fc234b7ef5e9b6b469d3f7fe547aec3c161816dc8238`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c6c8e6be11d6c2aa0ea24c4911a23b271b12242b2535e34e162365d65beec9a`  
-		Last Modified: Tue, 24 Dec 2024 21:33:33 GMT  
-		Size: 19.2 MB (19161495 bytes)  
+	-	`sha256:fbc6beeebc1583474f6206c51fe7f7bf7ffcba620d988f30721486a80317d9f4`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 19.2 MB (19157595 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b2a800dea9cd4124557d6b0c02bdd1a09c0c3adf94da5e9aacbec30a070b383`  
-		Last Modified: Tue, 24 Dec 2024 21:33:31 GMT  
+	-	`sha256:ab3b3346e95ba20efef3a0b225e8f6eeb2e4ad1c4a25ef214af3cd3884022c98`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
 		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6d4c0e71b35e0a4cfd400d2243d7b5d1b4e5057a89c8e8078cddaa8a4e78155`  
-		Last Modified: Tue, 24 Dec 2024 21:33:31 GMT  
-		Size: 1.3 KB (1275 bytes)  
+	-	`sha256:7713cf22c990e5be40762b0caefc453b83b1aa128ecdd9c87c6762c0c6205e9d`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3986b91b8e1d14f961566561f915ae092de47cb2fe551c16efad827743e846`  
-		Last Modified: Tue, 24 Dec 2024 21:33:31 GMT  
-		Size: 1.3 KB (1298 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a97c32bdf11582062e3ba8903a9933e9bad10302993456a9c6e008239c3130ca`  
-		Last Modified: Tue, 24 Dec 2024 21:33:32 GMT  
-		Size: 19.6 MB (19644920 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abcde94ac84f47d4747374f206c74626ec3ee839195b361af7c21a5d40566556`  
-		Last Modified: Tue, 24 Dec 2024 21:33:30 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ec3c7da2aea03b09076b099c426ff7c9b535cfa3a03620dc3521cdf8176e70b`  
-		Last Modified: Tue, 24 Dec 2024 21:33:30 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bf7001b3252d15320448d1fdd6d814bef5bfbc775a2eb7e002331e06c46b8f5`  
-		Last Modified: Tue, 24 Dec 2024 21:33:30 GMT  
+	-	`sha256:2a2cc7427122b33bfa2e3b833940957fa2e06340b1b76d201b8247b9619b0018`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
 		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a5d5eab58c6a81afbbfc00aae2929a4b893a3039b9da20e06a640895ab95011`  
-		Last Modified: Tue, 24 Dec 2024 21:33:32 GMT  
-		Size: 20.2 MB (20152101 bytes)  
+	-	`sha256:9809ead8de21abdf5846fdbfa94f9b71d4c9f078526765b5f31fdc63b87d6f76`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 19.6 MB (19643601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:04717aaf7687614f2bf808d407179765af282d2e2d252db64f7123966a04c2ea`  
+		Last Modified: Thu, 09 Jan 2025 22:30:57 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fbc9ca72b34caddfb3cca6c51f5db1b6f775d58c972fd36dc09ccbf44fc45fda`  
+		Last Modified: Thu, 09 Jan 2025 22:30:58 GMT  
+		Size: 1.4 KB (1385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f0b5317c77f72317760dc2066aa0c624718f445d00d319be2397030d26c637b4`  
+		Last Modified: Thu, 09 Jan 2025 22:30:58 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:995d49cd3175fcc8f1a22a3d4ad19eef4f50da337db1901caa160070954bfcfd`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 20.2 MB (20164019 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27-rc-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull docker@sha256:5e5d5678400e7ba14c8e1574d9c132a70f62ee8213020424e25cff95688c8e2b
+$ docker pull docker@sha256:f0ff9dce9c42381541507120fda9a4e6ffae9e7fd7ccf1db0cca0c74a544070d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -4719,14 +4719,14 @@ $ docker pull docker@sha256:5e5d5678400e7ba14c8e1574d9c132a70f62ee8213020424e25c
 ### `docker:27-rc-windowsservercore-ltsc2022` - windows version 10.0.20348.2966; amd64
 
 ```console
-$ docker pull docker@sha256:f060df9628c987ea789c4df5780c0943df13de795de60711bb97d96b0529a222
+$ docker pull docker@sha256:34c8def198551f1459d069bd5d4d37df4100afe874339a550015e35c5280c9d1
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2313174502 bytes)**  
+-	Total Size: **2.3 GB (2313129839 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79c54349c5113cf4e6163046f713fabab511bacc7b343b6014c159fba49cbe30`
+-	Image ID: `sha256:c879b100b69e4588217fec80ac9427eb48b8583df5a57875fa7acff211cf3846`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -4735,31 +4735,31 @@ $ docker pull docker@sha256:f060df9628c987ea789c4df5780c0943df13de795de60711bb97
 RUN Apply image 10.0.20348.2700
 # Thu, 05 Dec 2024 01:36:58 GMT
 RUN Install update 10.0.20348.2966
-# Tue, 24 Dec 2024 21:32:16 GMT
+# Thu, 09 Jan 2025 22:28:59 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 24 Dec 2024 21:32:31 GMT
+# Thu, 09 Jan 2025 22:30:16 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 24 Dec 2024 21:32:32 GMT
-ENV DOCKER_VERSION=27.5.0-rc.1
-# Tue, 24 Dec 2024 21:32:32 GMT
-ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.1.zip
-# Tue, 24 Dec 2024 21:32:44 GMT
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.2.zip
+# Thu, 09 Jan 2025 22:30:37 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 24 Dec 2024 21:32:45 GMT
+# Thu, 09 Jan 2025 22:30:37 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Tue, 24 Dec 2024 21:32:45 GMT
+# Thu, 09 Jan 2025 22:30:38 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Tue, 24 Dec 2024 21:32:46 GMT
+# Thu, 09 Jan 2025 22:30:38 GMT
 ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Tue, 24 Dec 2024 21:32:54 GMT
+# Thu, 09 Jan 2025 22:30:47 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 24 Dec 2024 21:32:55 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Tue, 24 Dec 2024 21:32:56 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Tue, 24 Dec 2024 21:32:56 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Tue, 24 Dec 2024 21:33:05 GMT
+# Thu, 09 Jan 2025 22:30:47 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:48 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:48 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:58 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -4772,190 +4772,80 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 10 Dec 2024 18:41:03 GMT  
 		Size: 791.7 MB (791681213 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f63539bd5606097057aa02c357af9d7a0e1646815b12be20dc8f737692a0f0e3`  
-		Last Modified: Tue, 24 Dec 2024 21:33:14 GMT  
-		Size: 1.3 KB (1282 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a22d3469291cd45bf8e0e73371485a1742ba6f079a8eb2ed0cd0d86ddbfa6122`  
-		Last Modified: Tue, 24 Dec 2024 21:33:14 GMT  
-		Size: 344.5 KB (344495 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2806a68fc42aa330bf56cb205269fa5babf79accb9b1386be6a9e0fb93119cbb`  
-		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
-		Size: 1.3 KB (1281 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22666c5dabea757b86076cd5fe26537d5bebbe49a7a79cf89c5ee12643efa9b8`  
-		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
-		Size: 1.3 KB (1281 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:413691bf0e8f67c1a40025543e4c2d35b542644368a6478293fbed434ecb5d9f`  
-		Last Modified: Tue, 24 Dec 2024 21:33:14 GMT  
-		Size: 19.2 MB (19152808 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0afb618bebd1ae71a220d6645aba1b28bc34f615b1e3c1d1b95515b127f02cd7`  
-		Last Modified: Tue, 24 Dec 2024 21:33:11 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ef2efc888bd6324dfb7b051550d7efe5480bd2b53a9c5da68fc5c5a86bd7760`  
-		Last Modified: Tue, 24 Dec 2024 21:33:11 GMT  
-		Size: 1.3 KB (1284 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46e018d4d50ac765f64fd6c45823dff2ba7c53d05bdf53def4650edd17021382`  
-		Last Modified: Tue, 24 Dec 2024 21:33:10 GMT  
-		Size: 1.3 KB (1288 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a87787eeb120e7bcc6042c679f7f51cc3c1f290e226d2cae2942f93826f74e97`  
-		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
-		Size: 19.6 MB (19637964 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:884da3d04c115b4a1215815cf66e0d0be9480171f497ef11dc2b9abab5d6fa52`  
-		Last Modified: Tue, 24 Dec 2024 21:33:09 GMT  
-		Size: 1.3 KB (1283 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c38c6d76f55c43dcabade54de45a3b2ac5397beea2b685d25cec730cba2a53c6`  
-		Last Modified: Tue, 24 Dec 2024 21:33:09 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7937e1c18b4dbdd128c94ee1e67dbf60e81fb28a163156f31c1e430c2bd2031`  
-		Last Modified: Tue, 24 Dec 2024 21:33:09 GMT  
+	-	`sha256:e64f3ca98ebbeaabbe9caa8a22cf59bc40d9d102d2526d1049bd68a910921bf9`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
 		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4513c6265bdc4a4841cd89793fbc86cbe1d89824943d131fd32064295171fe7f`  
-		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
-		Size: 20.2 MB (20154041 bytes)  
+	-	`sha256:c556be6783cdbb2c773a11684d233d0b303cceca2409d251ca495028eb4e8b32`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 357.0 KB (356971 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:62db5363d85636ed44a6ab46f57b9f37cd884f03ec2ce37d0e33cd96233b9138`  
+		Last Modified: Thu, 09 Jan 2025 22:31:02 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b435965c81c2e8fb61ce8a0eadf77cfb0e2f9886595430f0033e80e767731f3c`  
+		Last Modified: Thu, 09 Jan 2025 22:31:02 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:159da7e211e53c5b7ddeec749a6c40bc4434d55aa46675a838d8e577c3dac69f`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 19.1 MB (19131765 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1584497e6e0be075b115c53cc08d3ac3095f7ab38fdfc856d8cb48449bb7e060`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0348525302a5482ba9b0d399d7eacc24af94672045c97ecb89568235ded2564b`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1283 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b3147b65b25122a7c3e76ab0b163ff239af806851dbe1337f4cceccfe784799f`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a9f472ac9bf23724607ca28bcc8bf1acc04896b2d5e40f90e05234e1dfef84e0`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 19.6 MB (19615417 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6fa14a61e024eeab3914a555cf693f8281b9bdb37f9ddb1cc3148658be9d36f7`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a7ee6431a575ea313a3aca6d1c013e02216a2a470e4eae7992499d19398ae8ab`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.3 KB (1279 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:625c47e3aecbfdba39fc9ee46db788bcfb5edb0fa800215f469c44defd7d81db`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0e92dc6bab1ddd4745640a6d67475207ee6ca87cb4ba8efe6494172cba722a6b`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 20.1 MB (20140505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:ce26a4b6892bb5fff408af70028fd1f7aadf1ba1817049f7c36d386b938f2a31
+$ docker pull docker@sha256:edb7aff1c0cd6c7c15802d3bc3d4c76873b2329b9fe50c75c97f50e9449e35fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
-	-	windows version 10.0.20348.2966; amd64
+-	Platforms: 1
 	-	windows version 10.0.17763.6659; amd64
-
-### `docker:27-windowsservercore` - windows version 10.0.20348.2966; amd64
-
-```console
-$ docker pull docker@sha256:b59b50eddc96fa024759736642b20d31e812c747839aa0e04e6b3cd306d9c08f
-```
-
--	Docker Version: 26.1.3
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2312956798 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3dac0ff62690131e5cbadefa8b3173ce78f2fedeb1bedfb9599c99488be059a9`
--	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
--	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
-
-```dockerfile
-# Fri, 06 Sep 2024 00:01:38 GMT
-RUN Apply image 10.0.20348.2700
-# Thu, 05 Dec 2024 01:36:58 GMT
-RUN Install update 10.0.20348.2966
-# Thu, 19 Dec 2024 06:27:26 GMT
-SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Thu, 19 Dec 2024 06:28:34 GMT
-RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Thu, 19 Dec 2024 06:28:35 GMT
-ENV DOCKER_VERSION=27.4.1
-# Thu, 19 Dec 2024 06:28:36 GMT
-ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.4.1.zip
-# Thu, 19 Dec 2024 06:28:57 GMT
-RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:28:58 GMT
-ENV DOCKER_BUILDX_VERSION=0.19.3
-# Thu, 19 Dec 2024 06:28:59 GMT
-ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Thu, 19 Dec 2024 06:28:59 GMT
-ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Thu, 19 Dec 2024 06:29:10 GMT
-RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:11 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Thu, 19 Dec 2024 06:29:11 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Thu, 19 Dec 2024 06:29:12 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Thu, 19 Dec 2024 06:29:24 GMT
-RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
-```
-
--	Layers:
-	-	`sha256:2534953f34d35976fc44cd67bfdd39fdcd9e2eaae57ada0be53d5fb936cd3a0b`  
-		Last Modified: Tue, 10 Sep 2024 17:49:01 GMT  
-		Size: 1.5 GB (1462192413 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90641eccc9d7a78ab99d123ca3884acb8ffc002eb44bc5e68f261f0810d5202b`  
-		Last Modified: Tue, 10 Dec 2024 18:41:03 GMT  
-		Size: 791.7 MB (791681213 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2d7502a1bbe13300d252a2f9df8e505261a1640bc1bd25b0948e9c00fcc5b01`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 1.3 KB (1284 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f14c5b28592218521960824b8276896946f244fbb3651810d08c43452a2582cb`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 357.3 KB (357322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6330b409518a6d4ccfc671760fb4c29c3aa61745511abc8406e7598afdeb72f4`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eff2da6ec5d910a6c45c3b7bc2ada4de7ee595addaae450cfea2ba3fba3571f0`  
-		Last Modified: Thu, 19 Dec 2024 06:29:28 GMT  
-		Size: 1.3 KB (1314 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:981fcf2dca12be8aa09825096e39af48ab18642d75e6e2791014b5511999719c`  
-		Last Modified: Thu, 19 Dec 2024 06:29:30 GMT  
-		Size: 19.0 MB (18965788 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:559ffe22c82820dbe4c523868249c3f6a55385142d2e0ead71e852d8a7251d56`  
-		Last Modified: Thu, 19 Dec 2024 06:29:27 GMT  
-		Size: 1.3 KB (1285 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:458e70a57b4ce24dfc2a913ab05c3222397fe2e8a5d93868622a5da7a9340e81`  
-		Last Modified: Thu, 19 Dec 2024 06:29:27 GMT  
-		Size: 1.3 KB (1324 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04dd3b199caac21501453ed73a1b07e07e8909c492da3b0c12264e12be24f8f7`  
-		Last Modified: Thu, 19 Dec 2024 06:29:27 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffced5034da239bcce196f61166f31fa32a1046a0b90925f73df0a56a4540555`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 19.6 MB (19615775 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85d1d24e414a381ae30c27fae03be0f84206adbad1d9b6b30407bfecceb5e1e5`  
-		Last Modified: Thu, 19 Dec 2024 06:29:26 GMT  
-		Size: 1.3 KB (1284 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:deeb14568d7a7f723c99e08a5b860258c0e121c9b475c7f14d316ac30cb06d68`  
-		Last Modified: Thu, 19 Dec 2024 06:29:26 GMT  
-		Size: 1.3 KB (1289 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57a34da183fbb7bde6f718a61627a8077978264175188a7e437d8f791c46033e`  
-		Last Modified: Thu, 19 Dec 2024 06:29:26 GMT  
-		Size: 1.3 KB (1279 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7bdb77e5d84cc05ce04533280006424bb2742fe825cfe58eb5f5934b7a430dcf`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 20.1 MB (20132656 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `docker:27-windowsservercore` - windows version 10.0.17763.6659; amd64
 
 ```console
-$ docker pull docker@sha256:c442ec204cc8c3af89a231557d7113d731304aa9004ecc2fd2b7fdea9a2a5ed5
+$ docker pull docker@sha256:17d1ca1503ccd918b9f134fb58a7e94a6b55605a487375dc958dd83a765680e2
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2073460288 bytes)**  
+-	Total Size: **2.1 GB (2073461807 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd24b1732cd2a56ef18bd248405211562b17b3b25cc385edc36040b8cea00146`
+-	Image ID: `sha256:52119a98321109fc04c5bdc9d5a5997da126c6b299e2e05092227fbbdfcc5ac5`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -4964,31 +4854,31 @@ $ docker pull docker@sha256:c442ec204cc8c3af89a231557d7113d731304aa9004ecc2fd2b7
 RUN Apply image 10.0.17763.6293
 # Thu, 05 Dec 2024 05:10:22 GMT
 RUN Install update 10.0.17763.6659
-# Thu, 19 Dec 2024 06:27:25 GMT
+# Thu, 09 Jan 2025 22:28:42 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Thu, 19 Dec 2024 06:28:36 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Thu, 19 Dec 2024 06:28:36 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 ENV DOCKER_VERSION=27.4.1
-# Thu, 19 Dec 2024 06:28:37 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.4.1.zip
-# Thu, 19 Dec 2024 06:29:00 GMT
+# Thu, 09 Jan 2025 22:30:03 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:00 GMT
+# Thu, 09 Jan 2025 22:30:03 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Thu, 19 Dec 2024 06:29:01 GMT
+# Thu, 09 Jan 2025 22:30:04 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Thu, 19 Dec 2024 06:29:01 GMT
+# Thu, 09 Jan 2025 22:30:04 GMT
 ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Thu, 19 Dec 2024 06:29:14 GMT
+# Thu, 09 Jan 2025 22:30:16 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:15 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Thu, 19 Dec 2024 06:29:15 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Thu, 19 Dec 2024 06:29:16 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Thu, 19 Dec 2024 06:29:30 GMT
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:18 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:18 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:29 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -5001,63 +4891,63 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 10 Dec 2024 18:45:28 GMT  
 		Size: 293.9 MB (293901821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1cfd0430e259e32b94429bf581ea5f74b25080ea9e68899e17062c55bfdba4f`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 1.3 KB (1300 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:089d2b012e4350683f7592078e0330072d47face607cfdcfa1b177015a1d055d`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 475.3 KB (475261 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e54e6e8f743b8e62247f614caa153507aeea30e39ec7d133b120770472d150d`  
-		Last Modified: Thu, 19 Dec 2024 06:29:34 GMT  
-		Size: 1.3 KB (1298 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c46ebe5f7bc661958c2410ed2a60431be6d40269618a1223f8bc2c1f5392c26`  
-		Last Modified: Thu, 19 Dec 2024 06:29:34 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ac2d753848f2b9292c76be0e8c43f38d7c04ed25979be15179b781a3c2b47b9`  
-		Last Modified: Thu, 19 Dec 2024 06:29:36 GMT  
-		Size: 19.0 MB (18997863 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db4c651853f033dafb87a17fdd7690c1c3c3a0f4dfb6e083cf06ba8d91234d98`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da1a3389962e8b333bfcead93ec3aad31713a4bafd7b7be628b737077da7d60b`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e030ce22f45d6c461af01d11e768dcd4638cd9b989e6dc8aa7e384b7ccb80129`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5d987b1383b6b76eb88c20a38bac7e305fe1f8c311242b83bc819be0eee3eb3`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 19.6 MB (19648080 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27e0d2a17e8fa800de7106ca7d9cce51ab9562558d2d155ddfaaa0d979138750`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
-		Size: 1.3 KB (1302 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4d9b36807cefb176cc3c814de379c2bf6a17663ed8e0372f69d2cb06a02cd4e`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
+	-	`sha256:7750dc03308256989666ff5b54c38b3a2c612c962192c83de4eb1f582ca937b1`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60f2c79cb8ac15f188f4afd8366afee1f46ec780fa70082a4c9e991ac09c8537`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:5dbe0537aa6aca34fc480d362d820e72c216e0298e460381cfbb5dcb5fd023fb`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
+		Size: 472.5 KB (472525 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f72ede2a361313c0a7e7b059df25505b175cc277540b12cb48ee012d5a4ba93`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 20.2 MB (20157227 bytes)  
+	-	`sha256:fe45cd9447359ded7b92b30cf20968456c9963557aae6f640a79b6e9e154bb96`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:13e084105c5050f37f2a84321c45579ce3b732eafca7dacb323be6a6d0466d89`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5632113851589ab8b783167c256f837cf86bc42cf5a08905a82e3ca1050d791e`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
+		Size: 19.0 MB (18995177 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7d6fc5b4da6366b80ed16ea446e845f9e47d993a065cccd224a4bf5c26a9ffad`  
+		Last Modified: Thu, 09 Jan 2025 22:30:36 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cc1c4f578feffda9102418bc2ffcd55cf99c58f657c94a9e437200b4ab6e37ce`  
+		Last Modified: Thu, 09 Jan 2025 22:30:35 GMT  
+		Size: 1.3 KB (1317 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e594fee58a2fad417e3fde8355dc41c0508bd2ab66d1729873f044f701a70680`  
+		Last Modified: Thu, 09 Jan 2025 22:30:35 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:14ea03058c311bb36b7446687d979343ed3f3ecaf0b8a1a35a23c20666373964`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 19.6 MB (19646983 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:601a2adbccc0e8163567c2d53522349047c62ff729a5a3a1c6a4efbe2c8ff4bb`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:477c2e6248c325fbcac1b955bb7066d647e306083381336c71c46addade98c49`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:648ab5467de2471d85da31b50821da19a02285bd29d6edb1c98f0efea89d6074`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1343 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eff4279d2d18be75803362cc5a646d7d96b8fffd5030ddb9674444c5d344b414`  
+		Last Modified: Thu, 09 Jan 2025 22:30:36 GMT  
+		Size: 20.2 MB (20165195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27-windowsservercore-1809`
 
 ```console
-$ docker pull docker@sha256:5a5cd9f42944d54ac3da3dfda65c1d0342f266339ac3fde581f7021a2aa3c54c
+$ docker pull docker@sha256:edb7aff1c0cd6c7c15802d3bc3d4c76873b2329b9fe50c75c97f50e9449e35fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -5067,14 +4957,14 @@ $ docker pull docker@sha256:5a5cd9f42944d54ac3da3dfda65c1d0342f266339ac3fde581f7
 ### `docker:27-windowsservercore-1809` - windows version 10.0.17763.6659; amd64
 
 ```console
-$ docker pull docker@sha256:c442ec204cc8c3af89a231557d7113d731304aa9004ecc2fd2b7fdea9a2a5ed5
+$ docker pull docker@sha256:17d1ca1503ccd918b9f134fb58a7e94a6b55605a487375dc958dd83a765680e2
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2073460288 bytes)**  
+-	Total Size: **2.1 GB (2073461807 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd24b1732cd2a56ef18bd248405211562b17b3b25cc385edc36040b8cea00146`
+-	Image ID: `sha256:52119a98321109fc04c5bdc9d5a5997da126c6b299e2e05092227fbbdfcc5ac5`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -5083,31 +4973,31 @@ $ docker pull docker@sha256:c442ec204cc8c3af89a231557d7113d731304aa9004ecc2fd2b7
 RUN Apply image 10.0.17763.6293
 # Thu, 05 Dec 2024 05:10:22 GMT
 RUN Install update 10.0.17763.6659
-# Thu, 19 Dec 2024 06:27:25 GMT
+# Thu, 09 Jan 2025 22:28:42 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Thu, 19 Dec 2024 06:28:36 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Thu, 19 Dec 2024 06:28:36 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 ENV DOCKER_VERSION=27.4.1
-# Thu, 19 Dec 2024 06:28:37 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.4.1.zip
-# Thu, 19 Dec 2024 06:29:00 GMT
+# Thu, 09 Jan 2025 22:30:03 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:00 GMT
+# Thu, 09 Jan 2025 22:30:03 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Thu, 19 Dec 2024 06:29:01 GMT
+# Thu, 09 Jan 2025 22:30:04 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Thu, 19 Dec 2024 06:29:01 GMT
+# Thu, 09 Jan 2025 22:30:04 GMT
 ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Thu, 19 Dec 2024 06:29:14 GMT
+# Thu, 09 Jan 2025 22:30:16 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:15 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Thu, 19 Dec 2024 06:29:15 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Thu, 19 Dec 2024 06:29:16 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Thu, 19 Dec 2024 06:29:30 GMT
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:18 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:18 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:29 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -5120,57 +5010,57 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 10 Dec 2024 18:45:28 GMT  
 		Size: 293.9 MB (293901821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1cfd0430e259e32b94429bf581ea5f74b25080ea9e68899e17062c55bfdba4f`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 1.3 KB (1300 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:089d2b012e4350683f7592078e0330072d47face607cfdcfa1b177015a1d055d`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 475.3 KB (475261 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e54e6e8f743b8e62247f614caa153507aeea30e39ec7d133b120770472d150d`  
-		Last Modified: Thu, 19 Dec 2024 06:29:34 GMT  
-		Size: 1.3 KB (1298 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c46ebe5f7bc661958c2410ed2a60431be6d40269618a1223f8bc2c1f5392c26`  
-		Last Modified: Thu, 19 Dec 2024 06:29:34 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ac2d753848f2b9292c76be0e8c43f38d7c04ed25979be15179b781a3c2b47b9`  
-		Last Modified: Thu, 19 Dec 2024 06:29:36 GMT  
-		Size: 19.0 MB (18997863 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db4c651853f033dafb87a17fdd7690c1c3c3a0f4dfb6e083cf06ba8d91234d98`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da1a3389962e8b333bfcead93ec3aad31713a4bafd7b7be628b737077da7d60b`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e030ce22f45d6c461af01d11e768dcd4638cd9b989e6dc8aa7e384b7ccb80129`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5d987b1383b6b76eb88c20a38bac7e305fe1f8c311242b83bc819be0eee3eb3`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 19.6 MB (19648080 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27e0d2a17e8fa800de7106ca7d9cce51ab9562558d2d155ddfaaa0d979138750`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
-		Size: 1.3 KB (1302 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4d9b36807cefb176cc3c814de379c2bf6a17663ed8e0372f69d2cb06a02cd4e`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
+	-	`sha256:7750dc03308256989666ff5b54c38b3a2c612c962192c83de4eb1f582ca937b1`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60f2c79cb8ac15f188f4afd8366afee1f46ec780fa70082a4c9e991ac09c8537`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:5dbe0537aa6aca34fc480d362d820e72c216e0298e460381cfbb5dcb5fd023fb`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
+		Size: 472.5 KB (472525 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f72ede2a361313c0a7e7b059df25505b175cc277540b12cb48ee012d5a4ba93`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 20.2 MB (20157227 bytes)  
+	-	`sha256:fe45cd9447359ded7b92b30cf20968456c9963557aae6f640a79b6e9e154bb96`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:13e084105c5050f37f2a84321c45579ce3b732eafca7dacb323be6a6d0466d89`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5632113851589ab8b783167c256f837cf86bc42cf5a08905a82e3ca1050d791e`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
+		Size: 19.0 MB (18995177 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7d6fc5b4da6366b80ed16ea446e845f9e47d993a065cccd224a4bf5c26a9ffad`  
+		Last Modified: Thu, 09 Jan 2025 22:30:36 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cc1c4f578feffda9102418bc2ffcd55cf99c58f657c94a9e437200b4ab6e37ce`  
+		Last Modified: Thu, 09 Jan 2025 22:30:35 GMT  
+		Size: 1.3 KB (1317 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e594fee58a2fad417e3fde8355dc41c0508bd2ab66d1729873f044f701a70680`  
+		Last Modified: Thu, 09 Jan 2025 22:30:35 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:14ea03058c311bb36b7446687d979343ed3f3ecaf0b8a1a35a23c20666373964`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 19.6 MB (19646983 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:601a2adbccc0e8163567c2d53522349047c62ff729a5a3a1c6a4efbe2c8ff4bb`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:477c2e6248c325fbcac1b955bb7066d647e306083381336c71c46addade98c49`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:648ab5467de2471d85da31b50821da19a02285bd29d6edb1c98f0efea89d6074`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1343 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eff4279d2d18be75803362cc5a646d7d96b8fffd5030ddb9674444c5d344b414`  
+		Last Modified: Thu, 09 Jan 2025 22:30:36 GMT  
+		Size: 20.2 MB (20165195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27-windowsservercore-ltsc2022`
@@ -5940,7 +5830,7 @@ $ docker pull docker@sha256:e1846fa27529b493120701937ff171257152d04957f4ef3644ec
 ## `docker:27.4-cli`
 
 ```console
-$ docker pull docker@sha256:48fb8184d093547916178a48ed6b558968aaa6686e3ab8a289aeff122f0dbb16
+$ docker pull docker@sha256:af0bcc63244e5110ac6499e4a9160a67101bf61abda35c2503ffc40038e8ee0a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -5957,50 +5847,50 @@ $ docker pull docker@sha256:48fb8184d093547916178a48ed6b558968aaa6686e3ab8a289ae
 ### `docker:27.4-cli` - linux; amd64
 
 ```console
-$ docker pull docker@sha256:dea2833e23bcc3138de633b3c4d7b11432f8894a0b242c73e5df6f4a9f5474b5
+$ docker pull docker@sha256:14fb2045b284b7c1267be8cf2cddc04ed69dbd03bd38f11964787f3409c3d872
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.5 MB (68467046 bytes)**  
+-	Total Size: **68.5 MB (68480117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47d7ebdf9e2b0761d43f6fb27cbb7fc1022bffdde9467cf9d8d10c1c12b2eb25`
+-	Image ID: `sha256:121ad6346a4041fd11f1532f55b02c5f48e26d2ed959c547d0a32456cfb26d50`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-x86_64.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -6009,110 +5899,110 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
 		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d185366bdae3ff1be746691465de29a0e0b2f3e04f28b39180d9375234c91e73`  
-		Last Modified: Wed, 08 Jan 2025 17:58:05 GMT  
-		Size: 8.1 MB (8058731 bytes)  
+	-	`sha256:d9da8d98be9c497538e046636271095d60600736b8b98dd17d89b85cf6750a8f`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 8.1 MB (8058734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5707d5cc11f48c4f3654fab4e9bb2d5d3c8cb71106dd2e58fec35df2b147afb4`  
-		Last Modified: Wed, 08 Jan 2025 17:58:05 GMT  
+	-	`sha256:4386589b6f3f3d4248a89850307f7fce69767219761e159ae96376e95133648c`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
 		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:089f82d81010cbc4aa96ca98767cc6be68fa0c12bdff13b1ce3fbbbf01f30718`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
-		Size: 18.7 MB (18669943 bytes)  
+	-	`sha256:0a489f3b5fec0148d769933a6c683cf67788489232797ba6b97cedc28fba6e83`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 18.7 MB (18669947 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bffe0aee10ea77c7f0546febfae38a67b69cd1b96736c3e3f8033fee03e1cda7`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
-		Size: 18.8 MB (18798856 bytes)  
+	-	`sha256:098516bf325695b24ce2974045b3ddb5dcdb829015737c0bed7a538be5456ee1`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 18.8 MB (18798865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f5fe673a5ecb77d234d78523d7959f55e887124ffa9ec541309b34336d237520`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
-		Size: 19.3 MB (19295647 bytes)  
+	-	`sha256:9f5bc19395419c3a98f4744b34640d249289415e1edb1e030bf6a58333628592`  
+		Last Modified: Thu, 09 Jan 2025 22:28:46 GMT  
+		Size: 19.3 MB (19308702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd9a9d0c2d0f87990929701ed18006a4ae011dffcb2da0e01d66319135edbb60`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
+	-	`sha256:9611a6289157d3d5da09d21f919439c1d7f75f52c4f1c86ee4935487625980c6`  
+		Last Modified: Thu, 09 Jan 2025 22:28:46 GMT  
 		Size: 538.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfc4b63b8b868cb525ebf3a8cae998e0f83daa0250882e0933778897af5cf8ec`  
-		Last Modified: Wed, 08 Jan 2025 17:58:07 GMT  
+	-	`sha256:380e7224928097502689c0c3e6dd922dbca5bceb3e5e249123e5b0ce9d13ecde`  
+		Last Modified: Thu, 09 Jan 2025 22:28:46 GMT  
 		Size: 1.0 KB (1013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dfdaf163319a658d74a3a98948f1da42cb54f7b0928587abb65b927ad17893e2`  
-		Last Modified: Wed, 08 Jan 2025 17:58:07 GMT  
+	-	`sha256:6fc6c2a895485e0e9ccb5a3268ffe8ca41f9b3ef6e932337b94f7591126ae90f`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27.4-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:0e63ff85f2451ea7f0e4c617114477fb71d86727b36e691a488e15b745755da3
+$ docker pull docker@sha256:33591134c907ae526878a033450d74d609928559345e6d74a1f023c8e2d36d7b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.1 KB (38116 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ade6604eb1774c3a81972f45f4c3a45c5d62ccf4a48dd2a1952500abfc21122`
+-	Image ID: `sha256:2a58ae14d2c7ed97bda72428d86594211cc096db0714486306c2c813ca14cbf4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5927459d8ba59feef5736dc4a31d17c83f8515b60a205d43e8ed1fdd0a36dead`  
-		Last Modified: Wed, 08 Jan 2025 17:58:05 GMT  
+	-	`sha256:f6dd855ce8de79e67bc2d71204fe2553329c1352459d42eb3acac9cb4004d388`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
 		Size: 38.1 KB (38116 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:27.4-cli` - linux; arm variant v6
 
 ```console
-$ docker pull docker@sha256:c73864aeb2d05afde9505487f6076f1ab6a8c06dd7407762f03812226e3c8066
+$ docker pull docker@sha256:04e085d47837f3c88226ff1f38c8a88d482c857c5386e1a59856937b2ecd1421
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.6 MB (63600765 bytes)**  
+-	Total Size: **63.6 MB (63611235 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:615fa0d347d6efa265157a9c8b436cb193a2cd7f029b10f793cfdfcb0f9e9236`
+-	Image ID: `sha256:00caaa924646796848caddcb1ee6005e2956e112b0d4f64a30093f27d4f4038a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-armhf.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -6141,90 +6031,90 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 18:20:41 GMT  
 		Size: 17.4 MB (17448777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a6ad19aeac0c3a49d84fde43b19d62ab3d56806b9d4c722c38908a137da216eb`  
-		Last Modified: Wed, 08 Jan 2025 18:20:41 GMT  
-		Size: 18.1 MB (18106572 bytes)  
+	-	`sha256:16db69aa77862f611701d543dad7e67909f47fcd5d9a9574b9f97a11ba983d29`  
+		Last Modified: Thu, 09 Jan 2025 22:30:31 GMT  
+		Size: 18.1 MB (18117040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8123d7aab17cac82fab49710563ef043f0de005c8477feaba144980abad4f906`  
-		Last Modified: Wed, 08 Jan 2025 18:20:40 GMT  
-		Size: 540.0 B  
+	-	`sha256:5cc79f3781d43c0acb2321b1a5716529ab8dd5ef7077e18b0c58a7671854782d`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 541.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da735283888a4e92e66d035e7720607217570e99bf5783536f807fe088c0869e`  
-		Last Modified: Wed, 08 Jan 2025 18:20:41 GMT  
-		Size: 1.0 KB (1014 bytes)  
+	-	`sha256:7b0c94e4fa8de6f36d61b3f90d7d24a03d4c0adcf54276f3abd0226ed166a03e`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f56f2ce439d537e2a979dc56193cf849d0e43658ce075297be694e2a5c1f0aee`  
-		Last Modified: Wed, 08 Jan 2025 18:20:42 GMT  
-		Size: 116.0 B  
+	-	`sha256:a9240b077258b7ccef62b5cb88015fe3861991b7dbb7e3205cc5bdb5b0e9e62a`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 113.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27.4-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:06f9190b69c90aa6648752c1e9ea165c5c99c430b677c8055e6b1487ce2d3b36
+$ docker pull docker@sha256:d210f6f120570400fce43adb6fcc00a9ab5c35a5f30d93f83c341323765d549c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.3 KB (38278 bytes)**  
+-	Total Size: **38.3 KB (38277 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e01d8af219c1af03a4cab1b52b2b27a706f541c2cc9d4819eb377b435d3a0c4`
+-	Image ID: `sha256:9e3d7698ebb176bbf00684f139d4c2eba2ab6be4a2fd527d83b3d60c0feefb29`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d6b52ce1e0833f6f41725cc02aa7a55925c1547a8c90e932ee21de4a11d4733a`  
-		Last Modified: Wed, 08 Jan 2025 18:20:40 GMT  
-		Size: 38.3 KB (38278 bytes)  
+	-	`sha256:825009d255d8ab64030412cb38732b2004046698dc2aaebe1bc503b0a5c168b5`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 38.3 KB (38277 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:27.4-cli` - linux; arm variant v7
 
 ```console
-$ docker pull docker@sha256:e018ece3ac72791e855045d3237f14cffe96a779439c75181e0f92e2a3c8b1af
+$ docker pull docker@sha256:5e71e6f4cd87cadb9d0f89cbeb32a7687ee1e49f84c428f371c3c33d65ca1254
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.6 MB (62607993 bytes)**  
+-	Total Size: **62.6 MB (62614380 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9a0ac2fa30d78aad6c637921a03c2a58e67df811af430e3b94614225215a8a3`
+-	Image ID: `sha256:9eae7261d9a104837a54d4a9ba6a157b650b261e83424ef011bdfe7c14a47a27`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-armv7.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -6245,98 +6135,98 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 18:35:54 GMT  
 		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98ecb4b3472a02002b0f0d358c915d5620cc898c4f1e7ed87ff9241e7cac4037`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 16.7 MB (16694585 bytes)  
+	-	`sha256:b346517794cfce1f41b95c705ae9e23769f0eead55b0e45aa310726d624d7e36`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 16.7 MB (16694613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40e49947850c731a11ba132f1d74360cc652900eabc347731392dac0cd0247ae`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 17.4 MB (17427588 bytes)  
+	-	`sha256:a8af6fe42dd3bd1002a36a0678d7433d5bc1c9b65222d55d1be8f669b50d50ad`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 17.4 MB (17427581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:38fd0659b69ad2c656a029e5bd8521530bcf523be99aa44cb9c939d0d8a22fd6`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 18.1 MB (18092638 bytes)  
+	-	`sha256:435b00e153eefddcfb5674d73a4be8017ab0cbee851a5bd11e33016e9b8b8fcc`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 18.1 MB (18098994 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c49aab9947c3092bafeceb71f5d65637b7dd7a8b326c6ba99b420c886e30af8`  
-		Last Modified: Wed, 08 Jan 2025 18:36:17 GMT  
-		Size: 538.0 B  
+	-	`sha256:8bd823050d528d8277f11b4566a452e8b76b5e7d7097577342b3d85675aa1f28`  
+		Last Modified: Thu, 09 Jan 2025 22:31:29 GMT  
+		Size: 542.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5197a6eb3f577d113db91f9c478f211e710ee31b8739a7a472fa5ade8a559c60`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 1.0 KB (1012 bytes)  
+	-	`sha256:98fba272fee8435a6f01afdef863fc92b288e2e33bb5d72e633c48abeb1c9967`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ef0f27fbd9e3184ecea1ffd56f47e7effcc0f84a38b805f6d08e59f61d04142`  
-		Last Modified: Wed, 08 Jan 2025 18:36:19 GMT  
+	-	`sha256:1f4a813131a303def688ad87697fb38ee2b0db911fc22611c905ded3e13d49c4`  
+		Last Modified: Thu, 09 Jan 2025 22:31:31 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27.4-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:b36c627d6a7513218dc5b7bb4e157eeb77f9dabb793862367cc7fb5859c8540f
+$ docker pull docker@sha256:cb6dd5588f0d803d295eed89ded056f5735647bfc9589719d79a64463bb1026d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.3 KB (38278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3fcc99f949658c9f7a8807f065e1c669df29e41be61f92c9d5e3d7b99d16a854`
+-	Image ID: `sha256:f060462a83aae9ea7f421874df7e391e459030d30bdf354941fe07ac344be092`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:591e589e56a4f0e1bd9fbc3c3be2a463a4620ec4a23b5101601bcc90dc84581b`  
-		Last Modified: Wed, 08 Jan 2025 18:36:17 GMT  
+	-	`sha256:f4c1a16de2a45d8d90746fee23d460d04552b46abb5be4ff308f197dc56d4850`  
+		Last Modified: Thu, 09 Jan 2025 22:31:29 GMT  
 		Size: 38.3 KB (38278 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:27.4-cli` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:2292b410d670d092de710b5f9f193978bbcc915bda6afdbf495ec69e1913185b
+$ docker pull docker@sha256:81eee077efe20ebec34ab52d5c20325ed1bea82f0df73748f0ad7b7d6f2a16d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.4 MB (64436211 bytes)**  
+-	Total Size: **64.4 MB (64447458 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ded5a0195faa578c1fff46298bbaa0815f1cbbf27d3ba2a786ab6c524496d566`
+-	Image ID: `sha256:f69a358e88176c1004e07781eaa43e67048d5af647e0d0fb6260d82a2e5c3f14`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-aarch64.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -6345,60 +6235,60 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 17:23:52 GMT  
 		Size: 4.0 MB (3992359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd118a02a977501603a666f0534bd4e65d18527588ad5cf400f8c10d29b641a2`  
-		Last Modified: Wed, 08 Jan 2025 18:21:52 GMT  
-		Size: 8.1 MB (8073087 bytes)  
+	-	`sha256:3528552267cec0f9e2dee7d372df3bbea6255a3ca1a18ba3e58e5cfd106d15e1`  
+		Last Modified: Thu, 09 Jan 2025 22:29:23 GMT  
+		Size: 8.1 MB (8073134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf7344f9e39163b0db1d8cc353b60bb1b0f4a1f5bce6103ce319dc4b80767896`  
-		Last Modified: Wed, 08 Jan 2025 18:21:51 GMT  
-		Size: 454.0 B  
+	-	`sha256:d4781719ef357b2c136f17ff57b79d601b4058a8861d68048cf902106cf3ae9d`  
+		Last Modified: Thu, 09 Jan 2025 22:29:22 GMT  
+		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b491da4fa6243026056cc314d938e03599e8dff13f8ac4ff1e5ce0c0bb73c2f`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 17.6 MB (17619414 bytes)  
+	-	`sha256:4866b03f4ce1c603a6809790707aae8972781d4ff1b1090b3960153b3abec1e0`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 17.6 MB (17619398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52a0e3aeeec1250aebfa402c0a741416452445d234a867eea35c8c68d19e3c55`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 17.1 MB (17106452 bytes)  
+	-	`sha256:30d036bb2a7049761d033d283b4bc752d8e2d6e25b9ea4bf4329e6a7055ad82e`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 17.1 MB (17106450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:266bf3da8cdc43561b0a4d0e777fff32d6ee6ae16c3a43853b2df21faef62d4e`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 17.6 MB (17642742 bytes)  
+	-	`sha256:bc4fa20503c91c2405741c5b1d40f5567a7c641a4624b6c0693716eb0fa6752e`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 17.7 MB (17653961 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63b6b0d0e0d21087323094118ec8bbd6ef16965f2436eb105dc930706616ac3c`  
-		Last Modified: Wed, 08 Jan 2025 18:22:21 GMT  
-		Size: 541.0 B  
+	-	`sha256:f999290013a7bee6f7b09186deee9dc98564604594aac128b7293ef882edfd34`  
+		Last Modified: Thu, 09 Jan 2025 22:29:42 GMT  
+		Size: 540.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50d0cdcc6385756fabdd902e9c6d48c1f6f8b12bc391af806d11f26476c05183`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 1.0 KB (1014 bytes)  
+	-	`sha256:62dca40438acce378f07676329455acd2969680d9ceeeee33d5f34cb1f06c2f4`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 1.0 KB (1013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b883d10753dcfa1efd6a93df081b0ad43dda8c499d48cea04b2cdf24b57cd0c`  
-		Last Modified: Wed, 08 Jan 2025 18:22:23 GMT  
+	-	`sha256:730c1436b4a8c8addd307436381ccbe5d3d3adf57e2b67228ea624046c0f4997`  
+		Last Modified: Thu, 09 Jan 2025 22:29:44 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27.4-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:6452df1b49249a1aff1effb95af689db74116864e358573f3eaff1c926acc964
+$ docker pull docker@sha256:be1d49fba5a57b05f51e6647474576cc8acff06ab95abf3e77f44caf4d9a18ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.3 KB (38322 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b416adce65063fc78e3d041f3b11da9e0f1b78c45e6a5adaab892a2b4e624a5`
+-	Image ID: `sha256:28b43e4d309391e554120eff22e63583f34139871e06468f4e755cb402ffeef0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:76ded0ab55bdce21dee7fb8ba60ace91a0714d20eda6c06c218e8cacad3cc6bc`  
-		Last Modified: Wed, 08 Jan 2025 18:22:21 GMT  
+	-	`sha256:e3495cd0038630409f260c6ff16e859457e5c2ec51e6b14353d33ab96727b433`  
+		Last Modified: Thu, 09 Jan 2025 22:29:42 GMT  
 		Size: 38.3 KB (38322 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7445,134 +7335,24 @@ $ docker pull docker@sha256:9501b32f192f914fd2da6e1b5815c07c06f60d075f986e9aca91
 ## `docker:27.4-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:ce26a4b6892bb5fff408af70028fd1f7aadf1ba1817049f7c36d386b938f2a31
+$ docker pull docker@sha256:edb7aff1c0cd6c7c15802d3bc3d4c76873b2329b9fe50c75c97f50e9449e35fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
-	-	windows version 10.0.20348.2966; amd64
+-	Platforms: 1
 	-	windows version 10.0.17763.6659; amd64
-
-### `docker:27.4-windowsservercore` - windows version 10.0.20348.2966; amd64
-
-```console
-$ docker pull docker@sha256:b59b50eddc96fa024759736642b20d31e812c747839aa0e04e6b3cd306d9c08f
-```
-
--	Docker Version: 26.1.3
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2312956798 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3dac0ff62690131e5cbadefa8b3173ce78f2fedeb1bedfb9599c99488be059a9`
--	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
--	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
-
-```dockerfile
-# Fri, 06 Sep 2024 00:01:38 GMT
-RUN Apply image 10.0.20348.2700
-# Thu, 05 Dec 2024 01:36:58 GMT
-RUN Install update 10.0.20348.2966
-# Thu, 19 Dec 2024 06:27:26 GMT
-SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Thu, 19 Dec 2024 06:28:34 GMT
-RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Thu, 19 Dec 2024 06:28:35 GMT
-ENV DOCKER_VERSION=27.4.1
-# Thu, 19 Dec 2024 06:28:36 GMT
-ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.4.1.zip
-# Thu, 19 Dec 2024 06:28:57 GMT
-RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:28:58 GMT
-ENV DOCKER_BUILDX_VERSION=0.19.3
-# Thu, 19 Dec 2024 06:28:59 GMT
-ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Thu, 19 Dec 2024 06:28:59 GMT
-ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Thu, 19 Dec 2024 06:29:10 GMT
-RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:11 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Thu, 19 Dec 2024 06:29:11 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Thu, 19 Dec 2024 06:29:12 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Thu, 19 Dec 2024 06:29:24 GMT
-RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
-```
-
--	Layers:
-	-	`sha256:2534953f34d35976fc44cd67bfdd39fdcd9e2eaae57ada0be53d5fb936cd3a0b`  
-		Last Modified: Tue, 10 Sep 2024 17:49:01 GMT  
-		Size: 1.5 GB (1462192413 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90641eccc9d7a78ab99d123ca3884acb8ffc002eb44bc5e68f261f0810d5202b`  
-		Last Modified: Tue, 10 Dec 2024 18:41:03 GMT  
-		Size: 791.7 MB (791681213 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2d7502a1bbe13300d252a2f9df8e505261a1640bc1bd25b0948e9c00fcc5b01`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 1.3 KB (1284 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f14c5b28592218521960824b8276896946f244fbb3651810d08c43452a2582cb`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 357.3 KB (357322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6330b409518a6d4ccfc671760fb4c29c3aa61745511abc8406e7598afdeb72f4`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eff2da6ec5d910a6c45c3b7bc2ada4de7ee595addaae450cfea2ba3fba3571f0`  
-		Last Modified: Thu, 19 Dec 2024 06:29:28 GMT  
-		Size: 1.3 KB (1314 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:981fcf2dca12be8aa09825096e39af48ab18642d75e6e2791014b5511999719c`  
-		Last Modified: Thu, 19 Dec 2024 06:29:30 GMT  
-		Size: 19.0 MB (18965788 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:559ffe22c82820dbe4c523868249c3f6a55385142d2e0ead71e852d8a7251d56`  
-		Last Modified: Thu, 19 Dec 2024 06:29:27 GMT  
-		Size: 1.3 KB (1285 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:458e70a57b4ce24dfc2a913ab05c3222397fe2e8a5d93868622a5da7a9340e81`  
-		Last Modified: Thu, 19 Dec 2024 06:29:27 GMT  
-		Size: 1.3 KB (1324 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04dd3b199caac21501453ed73a1b07e07e8909c492da3b0c12264e12be24f8f7`  
-		Last Modified: Thu, 19 Dec 2024 06:29:27 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffced5034da239bcce196f61166f31fa32a1046a0b90925f73df0a56a4540555`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 19.6 MB (19615775 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85d1d24e414a381ae30c27fae03be0f84206adbad1d9b6b30407bfecceb5e1e5`  
-		Last Modified: Thu, 19 Dec 2024 06:29:26 GMT  
-		Size: 1.3 KB (1284 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:deeb14568d7a7f723c99e08a5b860258c0e121c9b475c7f14d316ac30cb06d68`  
-		Last Modified: Thu, 19 Dec 2024 06:29:26 GMT  
-		Size: 1.3 KB (1289 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57a34da183fbb7bde6f718a61627a8077978264175188a7e437d8f791c46033e`  
-		Last Modified: Thu, 19 Dec 2024 06:29:26 GMT  
-		Size: 1.3 KB (1279 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7bdb77e5d84cc05ce04533280006424bb2742fe825cfe58eb5f5934b7a430dcf`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 20.1 MB (20132656 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `docker:27.4-windowsservercore` - windows version 10.0.17763.6659; amd64
 
 ```console
-$ docker pull docker@sha256:c442ec204cc8c3af89a231557d7113d731304aa9004ecc2fd2b7fdea9a2a5ed5
+$ docker pull docker@sha256:17d1ca1503ccd918b9f134fb58a7e94a6b55605a487375dc958dd83a765680e2
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2073460288 bytes)**  
+-	Total Size: **2.1 GB (2073461807 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd24b1732cd2a56ef18bd248405211562b17b3b25cc385edc36040b8cea00146`
+-	Image ID: `sha256:52119a98321109fc04c5bdc9d5a5997da126c6b299e2e05092227fbbdfcc5ac5`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -7581,31 +7361,31 @@ $ docker pull docker@sha256:c442ec204cc8c3af89a231557d7113d731304aa9004ecc2fd2b7
 RUN Apply image 10.0.17763.6293
 # Thu, 05 Dec 2024 05:10:22 GMT
 RUN Install update 10.0.17763.6659
-# Thu, 19 Dec 2024 06:27:25 GMT
+# Thu, 09 Jan 2025 22:28:42 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Thu, 19 Dec 2024 06:28:36 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Thu, 19 Dec 2024 06:28:36 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 ENV DOCKER_VERSION=27.4.1
-# Thu, 19 Dec 2024 06:28:37 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.4.1.zip
-# Thu, 19 Dec 2024 06:29:00 GMT
+# Thu, 09 Jan 2025 22:30:03 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:00 GMT
+# Thu, 09 Jan 2025 22:30:03 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Thu, 19 Dec 2024 06:29:01 GMT
+# Thu, 09 Jan 2025 22:30:04 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Thu, 19 Dec 2024 06:29:01 GMT
+# Thu, 09 Jan 2025 22:30:04 GMT
 ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Thu, 19 Dec 2024 06:29:14 GMT
+# Thu, 09 Jan 2025 22:30:16 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:15 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Thu, 19 Dec 2024 06:29:15 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Thu, 19 Dec 2024 06:29:16 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Thu, 19 Dec 2024 06:29:30 GMT
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:18 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:18 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:29 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -7618,63 +7398,63 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 10 Dec 2024 18:45:28 GMT  
 		Size: 293.9 MB (293901821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1cfd0430e259e32b94429bf581ea5f74b25080ea9e68899e17062c55bfdba4f`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 1.3 KB (1300 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:089d2b012e4350683f7592078e0330072d47face607cfdcfa1b177015a1d055d`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 475.3 KB (475261 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e54e6e8f743b8e62247f614caa153507aeea30e39ec7d133b120770472d150d`  
-		Last Modified: Thu, 19 Dec 2024 06:29:34 GMT  
-		Size: 1.3 KB (1298 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c46ebe5f7bc661958c2410ed2a60431be6d40269618a1223f8bc2c1f5392c26`  
-		Last Modified: Thu, 19 Dec 2024 06:29:34 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ac2d753848f2b9292c76be0e8c43f38d7c04ed25979be15179b781a3c2b47b9`  
-		Last Modified: Thu, 19 Dec 2024 06:29:36 GMT  
-		Size: 19.0 MB (18997863 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db4c651853f033dafb87a17fdd7690c1c3c3a0f4dfb6e083cf06ba8d91234d98`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da1a3389962e8b333bfcead93ec3aad31713a4bafd7b7be628b737077da7d60b`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e030ce22f45d6c461af01d11e768dcd4638cd9b989e6dc8aa7e384b7ccb80129`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5d987b1383b6b76eb88c20a38bac7e305fe1f8c311242b83bc819be0eee3eb3`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 19.6 MB (19648080 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27e0d2a17e8fa800de7106ca7d9cce51ab9562558d2d155ddfaaa0d979138750`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
-		Size: 1.3 KB (1302 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4d9b36807cefb176cc3c814de379c2bf6a17663ed8e0372f69d2cb06a02cd4e`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
+	-	`sha256:7750dc03308256989666ff5b54c38b3a2c612c962192c83de4eb1f582ca937b1`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60f2c79cb8ac15f188f4afd8366afee1f46ec780fa70082a4c9e991ac09c8537`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:5dbe0537aa6aca34fc480d362d820e72c216e0298e460381cfbb5dcb5fd023fb`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
+		Size: 472.5 KB (472525 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f72ede2a361313c0a7e7b059df25505b175cc277540b12cb48ee012d5a4ba93`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 20.2 MB (20157227 bytes)  
+	-	`sha256:fe45cd9447359ded7b92b30cf20968456c9963557aae6f640a79b6e9e154bb96`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:13e084105c5050f37f2a84321c45579ce3b732eafca7dacb323be6a6d0466d89`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5632113851589ab8b783167c256f837cf86bc42cf5a08905a82e3ca1050d791e`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
+		Size: 19.0 MB (18995177 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7d6fc5b4da6366b80ed16ea446e845f9e47d993a065cccd224a4bf5c26a9ffad`  
+		Last Modified: Thu, 09 Jan 2025 22:30:36 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cc1c4f578feffda9102418bc2ffcd55cf99c58f657c94a9e437200b4ab6e37ce`  
+		Last Modified: Thu, 09 Jan 2025 22:30:35 GMT  
+		Size: 1.3 KB (1317 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e594fee58a2fad417e3fde8355dc41c0508bd2ab66d1729873f044f701a70680`  
+		Last Modified: Thu, 09 Jan 2025 22:30:35 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:14ea03058c311bb36b7446687d979343ed3f3ecaf0b8a1a35a23c20666373964`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 19.6 MB (19646983 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:601a2adbccc0e8163567c2d53522349047c62ff729a5a3a1c6a4efbe2c8ff4bb`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:477c2e6248c325fbcac1b955bb7066d647e306083381336c71c46addade98c49`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:648ab5467de2471d85da31b50821da19a02285bd29d6edb1c98f0efea89d6074`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1343 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eff4279d2d18be75803362cc5a646d7d96b8fffd5030ddb9674444c5d344b414`  
+		Last Modified: Thu, 09 Jan 2025 22:30:36 GMT  
+		Size: 20.2 MB (20165195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27.4-windowsservercore-1809`
 
 ```console
-$ docker pull docker@sha256:5a5cd9f42944d54ac3da3dfda65c1d0342f266339ac3fde581f7021a2aa3c54c
+$ docker pull docker@sha256:edb7aff1c0cd6c7c15802d3bc3d4c76873b2329b9fe50c75c97f50e9449e35fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -7684,14 +7464,14 @@ $ docker pull docker@sha256:5a5cd9f42944d54ac3da3dfda65c1d0342f266339ac3fde581f7
 ### `docker:27.4-windowsservercore-1809` - windows version 10.0.17763.6659; amd64
 
 ```console
-$ docker pull docker@sha256:c442ec204cc8c3af89a231557d7113d731304aa9004ecc2fd2b7fdea9a2a5ed5
+$ docker pull docker@sha256:17d1ca1503ccd918b9f134fb58a7e94a6b55605a487375dc958dd83a765680e2
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2073460288 bytes)**  
+-	Total Size: **2.1 GB (2073461807 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd24b1732cd2a56ef18bd248405211562b17b3b25cc385edc36040b8cea00146`
+-	Image ID: `sha256:52119a98321109fc04c5bdc9d5a5997da126c6b299e2e05092227fbbdfcc5ac5`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -7700,31 +7480,31 @@ $ docker pull docker@sha256:c442ec204cc8c3af89a231557d7113d731304aa9004ecc2fd2b7
 RUN Apply image 10.0.17763.6293
 # Thu, 05 Dec 2024 05:10:22 GMT
 RUN Install update 10.0.17763.6659
-# Thu, 19 Dec 2024 06:27:25 GMT
+# Thu, 09 Jan 2025 22:28:42 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Thu, 19 Dec 2024 06:28:36 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Thu, 19 Dec 2024 06:28:36 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 ENV DOCKER_VERSION=27.4.1
-# Thu, 19 Dec 2024 06:28:37 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.4.1.zip
-# Thu, 19 Dec 2024 06:29:00 GMT
+# Thu, 09 Jan 2025 22:30:03 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:00 GMT
+# Thu, 09 Jan 2025 22:30:03 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Thu, 19 Dec 2024 06:29:01 GMT
+# Thu, 09 Jan 2025 22:30:04 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Thu, 19 Dec 2024 06:29:01 GMT
+# Thu, 09 Jan 2025 22:30:04 GMT
 ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Thu, 19 Dec 2024 06:29:14 GMT
+# Thu, 09 Jan 2025 22:30:16 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:15 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Thu, 19 Dec 2024 06:29:15 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Thu, 19 Dec 2024 06:29:16 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Thu, 19 Dec 2024 06:29:30 GMT
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:18 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:18 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:29 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -7737,57 +7517,57 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 10 Dec 2024 18:45:28 GMT  
 		Size: 293.9 MB (293901821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1cfd0430e259e32b94429bf581ea5f74b25080ea9e68899e17062c55bfdba4f`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 1.3 KB (1300 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:089d2b012e4350683f7592078e0330072d47face607cfdcfa1b177015a1d055d`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 475.3 KB (475261 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e54e6e8f743b8e62247f614caa153507aeea30e39ec7d133b120770472d150d`  
-		Last Modified: Thu, 19 Dec 2024 06:29:34 GMT  
-		Size: 1.3 KB (1298 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c46ebe5f7bc661958c2410ed2a60431be6d40269618a1223f8bc2c1f5392c26`  
-		Last Modified: Thu, 19 Dec 2024 06:29:34 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ac2d753848f2b9292c76be0e8c43f38d7c04ed25979be15179b781a3c2b47b9`  
-		Last Modified: Thu, 19 Dec 2024 06:29:36 GMT  
-		Size: 19.0 MB (18997863 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db4c651853f033dafb87a17fdd7690c1c3c3a0f4dfb6e083cf06ba8d91234d98`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da1a3389962e8b333bfcead93ec3aad31713a4bafd7b7be628b737077da7d60b`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e030ce22f45d6c461af01d11e768dcd4638cd9b989e6dc8aa7e384b7ccb80129`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5d987b1383b6b76eb88c20a38bac7e305fe1f8c311242b83bc819be0eee3eb3`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 19.6 MB (19648080 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27e0d2a17e8fa800de7106ca7d9cce51ab9562558d2d155ddfaaa0d979138750`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
-		Size: 1.3 KB (1302 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4d9b36807cefb176cc3c814de379c2bf6a17663ed8e0372f69d2cb06a02cd4e`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
+	-	`sha256:7750dc03308256989666ff5b54c38b3a2c612c962192c83de4eb1f582ca937b1`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60f2c79cb8ac15f188f4afd8366afee1f46ec780fa70082a4c9e991ac09c8537`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:5dbe0537aa6aca34fc480d362d820e72c216e0298e460381cfbb5dcb5fd023fb`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
+		Size: 472.5 KB (472525 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f72ede2a361313c0a7e7b059df25505b175cc277540b12cb48ee012d5a4ba93`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 20.2 MB (20157227 bytes)  
+	-	`sha256:fe45cd9447359ded7b92b30cf20968456c9963557aae6f640a79b6e9e154bb96`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:13e084105c5050f37f2a84321c45579ce3b732eafca7dacb323be6a6d0466d89`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5632113851589ab8b783167c256f837cf86bc42cf5a08905a82e3ca1050d791e`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
+		Size: 19.0 MB (18995177 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7d6fc5b4da6366b80ed16ea446e845f9e47d993a065cccd224a4bf5c26a9ffad`  
+		Last Modified: Thu, 09 Jan 2025 22:30:36 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cc1c4f578feffda9102418bc2ffcd55cf99c58f657c94a9e437200b4ab6e37ce`  
+		Last Modified: Thu, 09 Jan 2025 22:30:35 GMT  
+		Size: 1.3 KB (1317 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e594fee58a2fad417e3fde8355dc41c0508bd2ab66d1729873f044f701a70680`  
+		Last Modified: Thu, 09 Jan 2025 22:30:35 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:14ea03058c311bb36b7446687d979343ed3f3ecaf0b8a1a35a23c20666373964`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 19.6 MB (19646983 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:601a2adbccc0e8163567c2d53522349047c62ff729a5a3a1c6a4efbe2c8ff4bb`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:477c2e6248c325fbcac1b955bb7066d647e306083381336c71c46addade98c49`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:648ab5467de2471d85da31b50821da19a02285bd29d6edb1c98f0efea89d6074`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1343 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eff4279d2d18be75803362cc5a646d7d96b8fffd5030ddb9674444c5d344b414`  
+		Last Modified: Thu, 09 Jan 2025 22:30:36 GMT  
+		Size: 20.2 MB (20165195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27.4-windowsservercore-ltsc2022`
@@ -9202,7 +8982,7 @@ $ docker pull docker@sha256:e1846fa27529b493120701937ff171257152d04957f4ef3644ec
 ## `docker:27.4.1-cli`
 
 ```console
-$ docker pull docker@sha256:48fb8184d093547916178a48ed6b558968aaa6686e3ab8a289aeff122f0dbb16
+$ docker pull docker@sha256:af0bcc63244e5110ac6499e4a9160a67101bf61abda35c2503ffc40038e8ee0a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9219,50 +8999,50 @@ $ docker pull docker@sha256:48fb8184d093547916178a48ed6b558968aaa6686e3ab8a289ae
 ### `docker:27.4.1-cli` - linux; amd64
 
 ```console
-$ docker pull docker@sha256:dea2833e23bcc3138de633b3c4d7b11432f8894a0b242c73e5df6f4a9f5474b5
+$ docker pull docker@sha256:14fb2045b284b7c1267be8cf2cddc04ed69dbd03bd38f11964787f3409c3d872
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.5 MB (68467046 bytes)**  
+-	Total Size: **68.5 MB (68480117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47d7ebdf9e2b0761d43f6fb27cbb7fc1022bffdde9467cf9d8d10c1c12b2eb25`
+-	Image ID: `sha256:121ad6346a4041fd11f1532f55b02c5f48e26d2ed959c547d0a32456cfb26d50`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-x86_64.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -9271,110 +9051,110 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
 		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d185366bdae3ff1be746691465de29a0e0b2f3e04f28b39180d9375234c91e73`  
-		Last Modified: Wed, 08 Jan 2025 17:58:05 GMT  
-		Size: 8.1 MB (8058731 bytes)  
+	-	`sha256:d9da8d98be9c497538e046636271095d60600736b8b98dd17d89b85cf6750a8f`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 8.1 MB (8058734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5707d5cc11f48c4f3654fab4e9bb2d5d3c8cb71106dd2e58fec35df2b147afb4`  
-		Last Modified: Wed, 08 Jan 2025 17:58:05 GMT  
+	-	`sha256:4386589b6f3f3d4248a89850307f7fce69767219761e159ae96376e95133648c`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
 		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:089f82d81010cbc4aa96ca98767cc6be68fa0c12bdff13b1ce3fbbbf01f30718`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
-		Size: 18.7 MB (18669943 bytes)  
+	-	`sha256:0a489f3b5fec0148d769933a6c683cf67788489232797ba6b97cedc28fba6e83`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 18.7 MB (18669947 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bffe0aee10ea77c7f0546febfae38a67b69cd1b96736c3e3f8033fee03e1cda7`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
-		Size: 18.8 MB (18798856 bytes)  
+	-	`sha256:098516bf325695b24ce2974045b3ddb5dcdb829015737c0bed7a538be5456ee1`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 18.8 MB (18798865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f5fe673a5ecb77d234d78523d7959f55e887124ffa9ec541309b34336d237520`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
-		Size: 19.3 MB (19295647 bytes)  
+	-	`sha256:9f5bc19395419c3a98f4744b34640d249289415e1edb1e030bf6a58333628592`  
+		Last Modified: Thu, 09 Jan 2025 22:28:46 GMT  
+		Size: 19.3 MB (19308702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd9a9d0c2d0f87990929701ed18006a4ae011dffcb2da0e01d66319135edbb60`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
+	-	`sha256:9611a6289157d3d5da09d21f919439c1d7f75f52c4f1c86ee4935487625980c6`  
+		Last Modified: Thu, 09 Jan 2025 22:28:46 GMT  
 		Size: 538.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfc4b63b8b868cb525ebf3a8cae998e0f83daa0250882e0933778897af5cf8ec`  
-		Last Modified: Wed, 08 Jan 2025 17:58:07 GMT  
+	-	`sha256:380e7224928097502689c0c3e6dd922dbca5bceb3e5e249123e5b0ce9d13ecde`  
+		Last Modified: Thu, 09 Jan 2025 22:28:46 GMT  
 		Size: 1.0 KB (1013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dfdaf163319a658d74a3a98948f1da42cb54f7b0928587abb65b927ad17893e2`  
-		Last Modified: Wed, 08 Jan 2025 17:58:07 GMT  
+	-	`sha256:6fc6c2a895485e0e9ccb5a3268ffe8ca41f9b3ef6e932337b94f7591126ae90f`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27.4.1-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:0e63ff85f2451ea7f0e4c617114477fb71d86727b36e691a488e15b745755da3
+$ docker pull docker@sha256:33591134c907ae526878a033450d74d609928559345e6d74a1f023c8e2d36d7b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.1 KB (38116 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ade6604eb1774c3a81972f45f4c3a45c5d62ccf4a48dd2a1952500abfc21122`
+-	Image ID: `sha256:2a58ae14d2c7ed97bda72428d86594211cc096db0714486306c2c813ca14cbf4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5927459d8ba59feef5736dc4a31d17c83f8515b60a205d43e8ed1fdd0a36dead`  
-		Last Modified: Wed, 08 Jan 2025 17:58:05 GMT  
+	-	`sha256:f6dd855ce8de79e67bc2d71204fe2553329c1352459d42eb3acac9cb4004d388`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
 		Size: 38.1 KB (38116 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:27.4.1-cli` - linux; arm variant v6
 
 ```console
-$ docker pull docker@sha256:c73864aeb2d05afde9505487f6076f1ab6a8c06dd7407762f03812226e3c8066
+$ docker pull docker@sha256:04e085d47837f3c88226ff1f38c8a88d482c857c5386e1a59856937b2ecd1421
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.6 MB (63600765 bytes)**  
+-	Total Size: **63.6 MB (63611235 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:615fa0d347d6efa265157a9c8b436cb193a2cd7f029b10f793cfdfcb0f9e9236`
+-	Image ID: `sha256:00caaa924646796848caddcb1ee6005e2956e112b0d4f64a30093f27d4f4038a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-armhf.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -9403,90 +9183,90 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 18:20:41 GMT  
 		Size: 17.4 MB (17448777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a6ad19aeac0c3a49d84fde43b19d62ab3d56806b9d4c722c38908a137da216eb`  
-		Last Modified: Wed, 08 Jan 2025 18:20:41 GMT  
-		Size: 18.1 MB (18106572 bytes)  
+	-	`sha256:16db69aa77862f611701d543dad7e67909f47fcd5d9a9574b9f97a11ba983d29`  
+		Last Modified: Thu, 09 Jan 2025 22:30:31 GMT  
+		Size: 18.1 MB (18117040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8123d7aab17cac82fab49710563ef043f0de005c8477feaba144980abad4f906`  
-		Last Modified: Wed, 08 Jan 2025 18:20:40 GMT  
-		Size: 540.0 B  
+	-	`sha256:5cc79f3781d43c0acb2321b1a5716529ab8dd5ef7077e18b0c58a7671854782d`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 541.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da735283888a4e92e66d035e7720607217570e99bf5783536f807fe088c0869e`  
-		Last Modified: Wed, 08 Jan 2025 18:20:41 GMT  
-		Size: 1.0 KB (1014 bytes)  
+	-	`sha256:7b0c94e4fa8de6f36d61b3f90d7d24a03d4c0adcf54276f3abd0226ed166a03e`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f56f2ce439d537e2a979dc56193cf849d0e43658ce075297be694e2a5c1f0aee`  
-		Last Modified: Wed, 08 Jan 2025 18:20:42 GMT  
-		Size: 116.0 B  
+	-	`sha256:a9240b077258b7ccef62b5cb88015fe3861991b7dbb7e3205cc5bdb5b0e9e62a`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 113.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27.4.1-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:06f9190b69c90aa6648752c1e9ea165c5c99c430b677c8055e6b1487ce2d3b36
+$ docker pull docker@sha256:d210f6f120570400fce43adb6fcc00a9ab5c35a5f30d93f83c341323765d549c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.3 KB (38278 bytes)**  
+-	Total Size: **38.3 KB (38277 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e01d8af219c1af03a4cab1b52b2b27a706f541c2cc9d4819eb377b435d3a0c4`
+-	Image ID: `sha256:9e3d7698ebb176bbf00684f139d4c2eba2ab6be4a2fd527d83b3d60c0feefb29`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d6b52ce1e0833f6f41725cc02aa7a55925c1547a8c90e932ee21de4a11d4733a`  
-		Last Modified: Wed, 08 Jan 2025 18:20:40 GMT  
-		Size: 38.3 KB (38278 bytes)  
+	-	`sha256:825009d255d8ab64030412cb38732b2004046698dc2aaebe1bc503b0a5c168b5`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 38.3 KB (38277 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:27.4.1-cli` - linux; arm variant v7
 
 ```console
-$ docker pull docker@sha256:e018ece3ac72791e855045d3237f14cffe96a779439c75181e0f92e2a3c8b1af
+$ docker pull docker@sha256:5e71e6f4cd87cadb9d0f89cbeb32a7687ee1e49f84c428f371c3c33d65ca1254
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.6 MB (62607993 bytes)**  
+-	Total Size: **62.6 MB (62614380 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9a0ac2fa30d78aad6c637921a03c2a58e67df811af430e3b94614225215a8a3`
+-	Image ID: `sha256:9eae7261d9a104837a54d4a9ba6a157b650b261e83424ef011bdfe7c14a47a27`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-armv7.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -9507,98 +9287,98 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 18:35:54 GMT  
 		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98ecb4b3472a02002b0f0d358c915d5620cc898c4f1e7ed87ff9241e7cac4037`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 16.7 MB (16694585 bytes)  
+	-	`sha256:b346517794cfce1f41b95c705ae9e23769f0eead55b0e45aa310726d624d7e36`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 16.7 MB (16694613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40e49947850c731a11ba132f1d74360cc652900eabc347731392dac0cd0247ae`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 17.4 MB (17427588 bytes)  
+	-	`sha256:a8af6fe42dd3bd1002a36a0678d7433d5bc1c9b65222d55d1be8f669b50d50ad`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 17.4 MB (17427581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:38fd0659b69ad2c656a029e5bd8521530bcf523be99aa44cb9c939d0d8a22fd6`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 18.1 MB (18092638 bytes)  
+	-	`sha256:435b00e153eefddcfb5674d73a4be8017ab0cbee851a5bd11e33016e9b8b8fcc`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 18.1 MB (18098994 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c49aab9947c3092bafeceb71f5d65637b7dd7a8b326c6ba99b420c886e30af8`  
-		Last Modified: Wed, 08 Jan 2025 18:36:17 GMT  
-		Size: 538.0 B  
+	-	`sha256:8bd823050d528d8277f11b4566a452e8b76b5e7d7097577342b3d85675aa1f28`  
+		Last Modified: Thu, 09 Jan 2025 22:31:29 GMT  
+		Size: 542.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5197a6eb3f577d113db91f9c478f211e710ee31b8739a7a472fa5ade8a559c60`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 1.0 KB (1012 bytes)  
+	-	`sha256:98fba272fee8435a6f01afdef863fc92b288e2e33bb5d72e633c48abeb1c9967`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ef0f27fbd9e3184ecea1ffd56f47e7effcc0f84a38b805f6d08e59f61d04142`  
-		Last Modified: Wed, 08 Jan 2025 18:36:19 GMT  
+	-	`sha256:1f4a813131a303def688ad87697fb38ee2b0db911fc22611c905ded3e13d49c4`  
+		Last Modified: Thu, 09 Jan 2025 22:31:31 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27.4.1-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:b36c627d6a7513218dc5b7bb4e157eeb77f9dabb793862367cc7fb5859c8540f
+$ docker pull docker@sha256:cb6dd5588f0d803d295eed89ded056f5735647bfc9589719d79a64463bb1026d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.3 KB (38278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3fcc99f949658c9f7a8807f065e1c669df29e41be61f92c9d5e3d7b99d16a854`
+-	Image ID: `sha256:f060462a83aae9ea7f421874df7e391e459030d30bdf354941fe07ac344be092`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:591e589e56a4f0e1bd9fbc3c3be2a463a4620ec4a23b5101601bcc90dc84581b`  
-		Last Modified: Wed, 08 Jan 2025 18:36:17 GMT  
+	-	`sha256:f4c1a16de2a45d8d90746fee23d460d04552b46abb5be4ff308f197dc56d4850`  
+		Last Modified: Thu, 09 Jan 2025 22:31:29 GMT  
 		Size: 38.3 KB (38278 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:27.4.1-cli` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:2292b410d670d092de710b5f9f193978bbcc915bda6afdbf495ec69e1913185b
+$ docker pull docker@sha256:81eee077efe20ebec34ab52d5c20325ed1bea82f0df73748f0ad7b7d6f2a16d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.4 MB (64436211 bytes)**  
+-	Total Size: **64.4 MB (64447458 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ded5a0195faa578c1fff46298bbaa0815f1cbbf27d3ba2a786ab6c524496d566`
+-	Image ID: `sha256:f69a358e88176c1004e07781eaa43e67048d5af647e0d0fb6260d82a2e5c3f14`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-aarch64.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -9607,67 +9387,67 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 17:23:52 GMT  
 		Size: 4.0 MB (3992359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd118a02a977501603a666f0534bd4e65d18527588ad5cf400f8c10d29b641a2`  
-		Last Modified: Wed, 08 Jan 2025 18:21:52 GMT  
-		Size: 8.1 MB (8073087 bytes)  
+	-	`sha256:3528552267cec0f9e2dee7d372df3bbea6255a3ca1a18ba3e58e5cfd106d15e1`  
+		Last Modified: Thu, 09 Jan 2025 22:29:23 GMT  
+		Size: 8.1 MB (8073134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf7344f9e39163b0db1d8cc353b60bb1b0f4a1f5bce6103ce319dc4b80767896`  
-		Last Modified: Wed, 08 Jan 2025 18:21:51 GMT  
-		Size: 454.0 B  
+	-	`sha256:d4781719ef357b2c136f17ff57b79d601b4058a8861d68048cf902106cf3ae9d`  
+		Last Modified: Thu, 09 Jan 2025 22:29:22 GMT  
+		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b491da4fa6243026056cc314d938e03599e8dff13f8ac4ff1e5ce0c0bb73c2f`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 17.6 MB (17619414 bytes)  
+	-	`sha256:4866b03f4ce1c603a6809790707aae8972781d4ff1b1090b3960153b3abec1e0`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 17.6 MB (17619398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52a0e3aeeec1250aebfa402c0a741416452445d234a867eea35c8c68d19e3c55`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 17.1 MB (17106452 bytes)  
+	-	`sha256:30d036bb2a7049761d033d283b4bc752d8e2d6e25b9ea4bf4329e6a7055ad82e`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 17.1 MB (17106450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:266bf3da8cdc43561b0a4d0e777fff32d6ee6ae16c3a43853b2df21faef62d4e`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 17.6 MB (17642742 bytes)  
+	-	`sha256:bc4fa20503c91c2405741c5b1d40f5567a7c641a4624b6c0693716eb0fa6752e`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 17.7 MB (17653961 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63b6b0d0e0d21087323094118ec8bbd6ef16965f2436eb105dc930706616ac3c`  
-		Last Modified: Wed, 08 Jan 2025 18:22:21 GMT  
-		Size: 541.0 B  
+	-	`sha256:f999290013a7bee6f7b09186deee9dc98564604594aac128b7293ef882edfd34`  
+		Last Modified: Thu, 09 Jan 2025 22:29:42 GMT  
+		Size: 540.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50d0cdcc6385756fabdd902e9c6d48c1f6f8b12bc391af806d11f26476c05183`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 1.0 KB (1014 bytes)  
+	-	`sha256:62dca40438acce378f07676329455acd2969680d9ceeeee33d5f34cb1f06c2f4`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 1.0 KB (1013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b883d10753dcfa1efd6a93df081b0ad43dda8c499d48cea04b2cdf24b57cd0c`  
-		Last Modified: Wed, 08 Jan 2025 18:22:23 GMT  
+	-	`sha256:730c1436b4a8c8addd307436381ccbe5d3d3adf57e2b67228ea624046c0f4997`  
+		Last Modified: Thu, 09 Jan 2025 22:29:44 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27.4.1-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:6452df1b49249a1aff1effb95af689db74116864e358573f3eaff1c926acc964
+$ docker pull docker@sha256:be1d49fba5a57b05f51e6647474576cc8acff06ab95abf3e77f44caf4d9a18ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.3 KB (38322 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b416adce65063fc78e3d041f3b11da9e0f1b78c45e6a5adaab892a2b4e624a5`
+-	Image ID: `sha256:28b43e4d309391e554120eff22e63583f34139871e06468f4e755cb402ffeef0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:76ded0ab55bdce21dee7fb8ba60ace91a0714d20eda6c06c218e8cacad3cc6bc`  
-		Last Modified: Wed, 08 Jan 2025 18:22:21 GMT  
+	-	`sha256:e3495cd0038630409f260c6ff16e859457e5c2ec51e6b14353d33ab96727b433`  
+		Last Modified: Thu, 09 Jan 2025 22:29:42 GMT  
 		Size: 38.3 KB (38322 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `docker:27.4.1-cli-alpine3.21`
 
 ```console
-$ docker pull docker@sha256:48fb8184d093547916178a48ed6b558968aaa6686e3ab8a289aeff122f0dbb16
+$ docker pull docker@sha256:af0bcc63244e5110ac6499e4a9160a67101bf61abda35c2503ffc40038e8ee0a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9684,50 +9464,50 @@ $ docker pull docker@sha256:48fb8184d093547916178a48ed6b558968aaa6686e3ab8a289ae
 ### `docker:27.4.1-cli-alpine3.21` - linux; amd64
 
 ```console
-$ docker pull docker@sha256:dea2833e23bcc3138de633b3c4d7b11432f8894a0b242c73e5df6f4a9f5474b5
+$ docker pull docker@sha256:14fb2045b284b7c1267be8cf2cddc04ed69dbd03bd38f11964787f3409c3d872
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.5 MB (68467046 bytes)**  
+-	Total Size: **68.5 MB (68480117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47d7ebdf9e2b0761d43f6fb27cbb7fc1022bffdde9467cf9d8d10c1c12b2eb25`
+-	Image ID: `sha256:121ad6346a4041fd11f1532f55b02c5f48e26d2ed959c547d0a32456cfb26d50`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-x86_64.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -9736,110 +9516,110 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
 		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d185366bdae3ff1be746691465de29a0e0b2f3e04f28b39180d9375234c91e73`  
-		Last Modified: Wed, 08 Jan 2025 17:58:05 GMT  
-		Size: 8.1 MB (8058731 bytes)  
+	-	`sha256:d9da8d98be9c497538e046636271095d60600736b8b98dd17d89b85cf6750a8f`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 8.1 MB (8058734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5707d5cc11f48c4f3654fab4e9bb2d5d3c8cb71106dd2e58fec35df2b147afb4`  
-		Last Modified: Wed, 08 Jan 2025 17:58:05 GMT  
+	-	`sha256:4386589b6f3f3d4248a89850307f7fce69767219761e159ae96376e95133648c`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
 		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:089f82d81010cbc4aa96ca98767cc6be68fa0c12bdff13b1ce3fbbbf01f30718`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
-		Size: 18.7 MB (18669943 bytes)  
+	-	`sha256:0a489f3b5fec0148d769933a6c683cf67788489232797ba6b97cedc28fba6e83`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 18.7 MB (18669947 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bffe0aee10ea77c7f0546febfae38a67b69cd1b96736c3e3f8033fee03e1cda7`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
-		Size: 18.8 MB (18798856 bytes)  
+	-	`sha256:098516bf325695b24ce2974045b3ddb5dcdb829015737c0bed7a538be5456ee1`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 18.8 MB (18798865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f5fe673a5ecb77d234d78523d7959f55e887124ffa9ec541309b34336d237520`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
-		Size: 19.3 MB (19295647 bytes)  
+	-	`sha256:9f5bc19395419c3a98f4744b34640d249289415e1edb1e030bf6a58333628592`  
+		Last Modified: Thu, 09 Jan 2025 22:28:46 GMT  
+		Size: 19.3 MB (19308702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd9a9d0c2d0f87990929701ed18006a4ae011dffcb2da0e01d66319135edbb60`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
+	-	`sha256:9611a6289157d3d5da09d21f919439c1d7f75f52c4f1c86ee4935487625980c6`  
+		Last Modified: Thu, 09 Jan 2025 22:28:46 GMT  
 		Size: 538.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfc4b63b8b868cb525ebf3a8cae998e0f83daa0250882e0933778897af5cf8ec`  
-		Last Modified: Wed, 08 Jan 2025 17:58:07 GMT  
+	-	`sha256:380e7224928097502689c0c3e6dd922dbca5bceb3e5e249123e5b0ce9d13ecde`  
+		Last Modified: Thu, 09 Jan 2025 22:28:46 GMT  
 		Size: 1.0 KB (1013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dfdaf163319a658d74a3a98948f1da42cb54f7b0928587abb65b927ad17893e2`  
-		Last Modified: Wed, 08 Jan 2025 17:58:07 GMT  
+	-	`sha256:6fc6c2a895485e0e9ccb5a3268ffe8ca41f9b3ef6e932337b94f7591126ae90f`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27.4.1-cli-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:0e63ff85f2451ea7f0e4c617114477fb71d86727b36e691a488e15b745755da3
+$ docker pull docker@sha256:33591134c907ae526878a033450d74d609928559345e6d74a1f023c8e2d36d7b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.1 KB (38116 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ade6604eb1774c3a81972f45f4c3a45c5d62ccf4a48dd2a1952500abfc21122`
+-	Image ID: `sha256:2a58ae14d2c7ed97bda72428d86594211cc096db0714486306c2c813ca14cbf4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5927459d8ba59feef5736dc4a31d17c83f8515b60a205d43e8ed1fdd0a36dead`  
-		Last Modified: Wed, 08 Jan 2025 17:58:05 GMT  
+	-	`sha256:f6dd855ce8de79e67bc2d71204fe2553329c1352459d42eb3acac9cb4004d388`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
 		Size: 38.1 KB (38116 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:27.4.1-cli-alpine3.21` - linux; arm variant v6
 
 ```console
-$ docker pull docker@sha256:c73864aeb2d05afde9505487f6076f1ab6a8c06dd7407762f03812226e3c8066
+$ docker pull docker@sha256:04e085d47837f3c88226ff1f38c8a88d482c857c5386e1a59856937b2ecd1421
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.6 MB (63600765 bytes)**  
+-	Total Size: **63.6 MB (63611235 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:615fa0d347d6efa265157a9c8b436cb193a2cd7f029b10f793cfdfcb0f9e9236`
+-	Image ID: `sha256:00caaa924646796848caddcb1ee6005e2956e112b0d4f64a30093f27d4f4038a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-armhf.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -9868,90 +9648,90 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 18:20:41 GMT  
 		Size: 17.4 MB (17448777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a6ad19aeac0c3a49d84fde43b19d62ab3d56806b9d4c722c38908a137da216eb`  
-		Last Modified: Wed, 08 Jan 2025 18:20:41 GMT  
-		Size: 18.1 MB (18106572 bytes)  
+	-	`sha256:16db69aa77862f611701d543dad7e67909f47fcd5d9a9574b9f97a11ba983d29`  
+		Last Modified: Thu, 09 Jan 2025 22:30:31 GMT  
+		Size: 18.1 MB (18117040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8123d7aab17cac82fab49710563ef043f0de005c8477feaba144980abad4f906`  
-		Last Modified: Wed, 08 Jan 2025 18:20:40 GMT  
-		Size: 540.0 B  
+	-	`sha256:5cc79f3781d43c0acb2321b1a5716529ab8dd5ef7077e18b0c58a7671854782d`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 541.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da735283888a4e92e66d035e7720607217570e99bf5783536f807fe088c0869e`  
-		Last Modified: Wed, 08 Jan 2025 18:20:41 GMT  
-		Size: 1.0 KB (1014 bytes)  
+	-	`sha256:7b0c94e4fa8de6f36d61b3f90d7d24a03d4c0adcf54276f3abd0226ed166a03e`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f56f2ce439d537e2a979dc56193cf849d0e43658ce075297be694e2a5c1f0aee`  
-		Last Modified: Wed, 08 Jan 2025 18:20:42 GMT  
-		Size: 116.0 B  
+	-	`sha256:a9240b077258b7ccef62b5cb88015fe3861991b7dbb7e3205cc5bdb5b0e9e62a`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 113.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27.4.1-cli-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:06f9190b69c90aa6648752c1e9ea165c5c99c430b677c8055e6b1487ce2d3b36
+$ docker pull docker@sha256:d210f6f120570400fce43adb6fcc00a9ab5c35a5f30d93f83c341323765d549c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.3 KB (38278 bytes)**  
+-	Total Size: **38.3 KB (38277 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e01d8af219c1af03a4cab1b52b2b27a706f541c2cc9d4819eb377b435d3a0c4`
+-	Image ID: `sha256:9e3d7698ebb176bbf00684f139d4c2eba2ab6be4a2fd527d83b3d60c0feefb29`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d6b52ce1e0833f6f41725cc02aa7a55925c1547a8c90e932ee21de4a11d4733a`  
-		Last Modified: Wed, 08 Jan 2025 18:20:40 GMT  
-		Size: 38.3 KB (38278 bytes)  
+	-	`sha256:825009d255d8ab64030412cb38732b2004046698dc2aaebe1bc503b0a5c168b5`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 38.3 KB (38277 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:27.4.1-cli-alpine3.21` - linux; arm variant v7
 
 ```console
-$ docker pull docker@sha256:e018ece3ac72791e855045d3237f14cffe96a779439c75181e0f92e2a3c8b1af
+$ docker pull docker@sha256:5e71e6f4cd87cadb9d0f89cbeb32a7687ee1e49f84c428f371c3c33d65ca1254
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.6 MB (62607993 bytes)**  
+-	Total Size: **62.6 MB (62614380 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9a0ac2fa30d78aad6c637921a03c2a58e67df811af430e3b94614225215a8a3`
+-	Image ID: `sha256:9eae7261d9a104837a54d4a9ba6a157b650b261e83424ef011bdfe7c14a47a27`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-armv7.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -9972,98 +9752,98 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 18:35:54 GMT  
 		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98ecb4b3472a02002b0f0d358c915d5620cc898c4f1e7ed87ff9241e7cac4037`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 16.7 MB (16694585 bytes)  
+	-	`sha256:b346517794cfce1f41b95c705ae9e23769f0eead55b0e45aa310726d624d7e36`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 16.7 MB (16694613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40e49947850c731a11ba132f1d74360cc652900eabc347731392dac0cd0247ae`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 17.4 MB (17427588 bytes)  
+	-	`sha256:a8af6fe42dd3bd1002a36a0678d7433d5bc1c9b65222d55d1be8f669b50d50ad`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 17.4 MB (17427581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:38fd0659b69ad2c656a029e5bd8521530bcf523be99aa44cb9c939d0d8a22fd6`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 18.1 MB (18092638 bytes)  
+	-	`sha256:435b00e153eefddcfb5674d73a4be8017ab0cbee851a5bd11e33016e9b8b8fcc`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 18.1 MB (18098994 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c49aab9947c3092bafeceb71f5d65637b7dd7a8b326c6ba99b420c886e30af8`  
-		Last Modified: Wed, 08 Jan 2025 18:36:17 GMT  
-		Size: 538.0 B  
+	-	`sha256:8bd823050d528d8277f11b4566a452e8b76b5e7d7097577342b3d85675aa1f28`  
+		Last Modified: Thu, 09 Jan 2025 22:31:29 GMT  
+		Size: 542.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5197a6eb3f577d113db91f9c478f211e710ee31b8739a7a472fa5ade8a559c60`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 1.0 KB (1012 bytes)  
+	-	`sha256:98fba272fee8435a6f01afdef863fc92b288e2e33bb5d72e633c48abeb1c9967`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ef0f27fbd9e3184ecea1ffd56f47e7effcc0f84a38b805f6d08e59f61d04142`  
-		Last Modified: Wed, 08 Jan 2025 18:36:19 GMT  
+	-	`sha256:1f4a813131a303def688ad87697fb38ee2b0db911fc22611c905ded3e13d49c4`  
+		Last Modified: Thu, 09 Jan 2025 22:31:31 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27.4.1-cli-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:b36c627d6a7513218dc5b7bb4e157eeb77f9dabb793862367cc7fb5859c8540f
+$ docker pull docker@sha256:cb6dd5588f0d803d295eed89ded056f5735647bfc9589719d79a64463bb1026d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.3 KB (38278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3fcc99f949658c9f7a8807f065e1c669df29e41be61f92c9d5e3d7b99d16a854`
+-	Image ID: `sha256:f060462a83aae9ea7f421874df7e391e459030d30bdf354941fe07ac344be092`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:591e589e56a4f0e1bd9fbc3c3be2a463a4620ec4a23b5101601bcc90dc84581b`  
-		Last Modified: Wed, 08 Jan 2025 18:36:17 GMT  
+	-	`sha256:f4c1a16de2a45d8d90746fee23d460d04552b46abb5be4ff308f197dc56d4850`  
+		Last Modified: Thu, 09 Jan 2025 22:31:29 GMT  
 		Size: 38.3 KB (38278 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:27.4.1-cli-alpine3.21` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:2292b410d670d092de710b5f9f193978bbcc915bda6afdbf495ec69e1913185b
+$ docker pull docker@sha256:81eee077efe20ebec34ab52d5c20325ed1bea82f0df73748f0ad7b7d6f2a16d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.4 MB (64436211 bytes)**  
+-	Total Size: **64.4 MB (64447458 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ded5a0195faa578c1fff46298bbaa0815f1cbbf27d3ba2a786ab6c524496d566`
+-	Image ID: `sha256:f69a358e88176c1004e07781eaa43e67048d5af647e0d0fb6260d82a2e5c3f14`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-aarch64.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -10072,60 +9852,60 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 17:23:52 GMT  
 		Size: 4.0 MB (3992359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd118a02a977501603a666f0534bd4e65d18527588ad5cf400f8c10d29b641a2`  
-		Last Modified: Wed, 08 Jan 2025 18:21:52 GMT  
-		Size: 8.1 MB (8073087 bytes)  
+	-	`sha256:3528552267cec0f9e2dee7d372df3bbea6255a3ca1a18ba3e58e5cfd106d15e1`  
+		Last Modified: Thu, 09 Jan 2025 22:29:23 GMT  
+		Size: 8.1 MB (8073134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf7344f9e39163b0db1d8cc353b60bb1b0f4a1f5bce6103ce319dc4b80767896`  
-		Last Modified: Wed, 08 Jan 2025 18:21:51 GMT  
-		Size: 454.0 B  
+	-	`sha256:d4781719ef357b2c136f17ff57b79d601b4058a8861d68048cf902106cf3ae9d`  
+		Last Modified: Thu, 09 Jan 2025 22:29:22 GMT  
+		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b491da4fa6243026056cc314d938e03599e8dff13f8ac4ff1e5ce0c0bb73c2f`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 17.6 MB (17619414 bytes)  
+	-	`sha256:4866b03f4ce1c603a6809790707aae8972781d4ff1b1090b3960153b3abec1e0`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 17.6 MB (17619398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52a0e3aeeec1250aebfa402c0a741416452445d234a867eea35c8c68d19e3c55`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 17.1 MB (17106452 bytes)  
+	-	`sha256:30d036bb2a7049761d033d283b4bc752d8e2d6e25b9ea4bf4329e6a7055ad82e`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 17.1 MB (17106450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:266bf3da8cdc43561b0a4d0e777fff32d6ee6ae16c3a43853b2df21faef62d4e`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 17.6 MB (17642742 bytes)  
+	-	`sha256:bc4fa20503c91c2405741c5b1d40f5567a7c641a4624b6c0693716eb0fa6752e`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 17.7 MB (17653961 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63b6b0d0e0d21087323094118ec8bbd6ef16965f2436eb105dc930706616ac3c`  
-		Last Modified: Wed, 08 Jan 2025 18:22:21 GMT  
-		Size: 541.0 B  
+	-	`sha256:f999290013a7bee6f7b09186deee9dc98564604594aac128b7293ef882edfd34`  
+		Last Modified: Thu, 09 Jan 2025 22:29:42 GMT  
+		Size: 540.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50d0cdcc6385756fabdd902e9c6d48c1f6f8b12bc391af806d11f26476c05183`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 1.0 KB (1014 bytes)  
+	-	`sha256:62dca40438acce378f07676329455acd2969680d9ceeeee33d5f34cb1f06c2f4`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 1.0 KB (1013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b883d10753dcfa1efd6a93df081b0ad43dda8c499d48cea04b2cdf24b57cd0c`  
-		Last Modified: Wed, 08 Jan 2025 18:22:23 GMT  
+	-	`sha256:730c1436b4a8c8addd307436381ccbe5d3d3adf57e2b67228ea624046c0f4997`  
+		Last Modified: Thu, 09 Jan 2025 22:29:44 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:27.4.1-cli-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:6452df1b49249a1aff1effb95af689db74116864e358573f3eaff1c926acc964
+$ docker pull docker@sha256:be1d49fba5a57b05f51e6647474576cc8acff06ab95abf3e77f44caf4d9a18ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.3 KB (38322 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b416adce65063fc78e3d041f3b11da9e0f1b78c45e6a5adaab892a2b4e624a5`
+-	Image ID: `sha256:28b43e4d309391e554120eff22e63583f34139871e06468f4e755cb402ffeef0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:76ded0ab55bdce21dee7fb8ba60ace91a0714d20eda6c06c218e8cacad3cc6bc`  
-		Last Modified: Wed, 08 Jan 2025 18:22:21 GMT  
+	-	`sha256:e3495cd0038630409f260c6ff16e859457e5c2ec51e6b14353d33ab96727b433`  
+		Last Modified: Thu, 09 Jan 2025 22:29:42 GMT  
 		Size: 38.3 KB (38322 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11817,134 +11597,24 @@ $ docker pull docker@sha256:9501b32f192f914fd2da6e1b5815c07c06f60d075f986e9aca91
 ## `docker:27.4.1-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:ce26a4b6892bb5fff408af70028fd1f7aadf1ba1817049f7c36d386b938f2a31
+$ docker pull docker@sha256:edb7aff1c0cd6c7c15802d3bc3d4c76873b2329b9fe50c75c97f50e9449e35fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
-	-	windows version 10.0.20348.2966; amd64
+-	Platforms: 1
 	-	windows version 10.0.17763.6659; amd64
-
-### `docker:27.4.1-windowsservercore` - windows version 10.0.20348.2966; amd64
-
-```console
-$ docker pull docker@sha256:b59b50eddc96fa024759736642b20d31e812c747839aa0e04e6b3cd306d9c08f
-```
-
--	Docker Version: 26.1.3
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2312956798 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3dac0ff62690131e5cbadefa8b3173ce78f2fedeb1bedfb9599c99488be059a9`
--	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
--	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
-
-```dockerfile
-# Fri, 06 Sep 2024 00:01:38 GMT
-RUN Apply image 10.0.20348.2700
-# Thu, 05 Dec 2024 01:36:58 GMT
-RUN Install update 10.0.20348.2966
-# Thu, 19 Dec 2024 06:27:26 GMT
-SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Thu, 19 Dec 2024 06:28:34 GMT
-RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Thu, 19 Dec 2024 06:28:35 GMT
-ENV DOCKER_VERSION=27.4.1
-# Thu, 19 Dec 2024 06:28:36 GMT
-ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.4.1.zip
-# Thu, 19 Dec 2024 06:28:57 GMT
-RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:28:58 GMT
-ENV DOCKER_BUILDX_VERSION=0.19.3
-# Thu, 19 Dec 2024 06:28:59 GMT
-ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Thu, 19 Dec 2024 06:28:59 GMT
-ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Thu, 19 Dec 2024 06:29:10 GMT
-RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:11 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Thu, 19 Dec 2024 06:29:11 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Thu, 19 Dec 2024 06:29:12 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Thu, 19 Dec 2024 06:29:24 GMT
-RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
-```
-
--	Layers:
-	-	`sha256:2534953f34d35976fc44cd67bfdd39fdcd9e2eaae57ada0be53d5fb936cd3a0b`  
-		Last Modified: Tue, 10 Sep 2024 17:49:01 GMT  
-		Size: 1.5 GB (1462192413 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90641eccc9d7a78ab99d123ca3884acb8ffc002eb44bc5e68f261f0810d5202b`  
-		Last Modified: Tue, 10 Dec 2024 18:41:03 GMT  
-		Size: 791.7 MB (791681213 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2d7502a1bbe13300d252a2f9df8e505261a1640bc1bd25b0948e9c00fcc5b01`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 1.3 KB (1284 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f14c5b28592218521960824b8276896946f244fbb3651810d08c43452a2582cb`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 357.3 KB (357322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6330b409518a6d4ccfc671760fb4c29c3aa61745511abc8406e7598afdeb72f4`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eff2da6ec5d910a6c45c3b7bc2ada4de7ee595addaae450cfea2ba3fba3571f0`  
-		Last Modified: Thu, 19 Dec 2024 06:29:28 GMT  
-		Size: 1.3 KB (1314 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:981fcf2dca12be8aa09825096e39af48ab18642d75e6e2791014b5511999719c`  
-		Last Modified: Thu, 19 Dec 2024 06:29:30 GMT  
-		Size: 19.0 MB (18965788 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:559ffe22c82820dbe4c523868249c3f6a55385142d2e0ead71e852d8a7251d56`  
-		Last Modified: Thu, 19 Dec 2024 06:29:27 GMT  
-		Size: 1.3 KB (1285 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:458e70a57b4ce24dfc2a913ab05c3222397fe2e8a5d93868622a5da7a9340e81`  
-		Last Modified: Thu, 19 Dec 2024 06:29:27 GMT  
-		Size: 1.3 KB (1324 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04dd3b199caac21501453ed73a1b07e07e8909c492da3b0c12264e12be24f8f7`  
-		Last Modified: Thu, 19 Dec 2024 06:29:27 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffced5034da239bcce196f61166f31fa32a1046a0b90925f73df0a56a4540555`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 19.6 MB (19615775 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85d1d24e414a381ae30c27fae03be0f84206adbad1d9b6b30407bfecceb5e1e5`  
-		Last Modified: Thu, 19 Dec 2024 06:29:26 GMT  
-		Size: 1.3 KB (1284 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:deeb14568d7a7f723c99e08a5b860258c0e121c9b475c7f14d316ac30cb06d68`  
-		Last Modified: Thu, 19 Dec 2024 06:29:26 GMT  
-		Size: 1.3 KB (1289 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57a34da183fbb7bde6f718a61627a8077978264175188a7e437d8f791c46033e`  
-		Last Modified: Thu, 19 Dec 2024 06:29:26 GMT  
-		Size: 1.3 KB (1279 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7bdb77e5d84cc05ce04533280006424bb2742fe825cfe58eb5f5934b7a430dcf`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 20.1 MB (20132656 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `docker:27.4.1-windowsservercore` - windows version 10.0.17763.6659; amd64
 
 ```console
-$ docker pull docker@sha256:c442ec204cc8c3af89a231557d7113d731304aa9004ecc2fd2b7fdea9a2a5ed5
+$ docker pull docker@sha256:17d1ca1503ccd918b9f134fb58a7e94a6b55605a487375dc958dd83a765680e2
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2073460288 bytes)**  
+-	Total Size: **2.1 GB (2073461807 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd24b1732cd2a56ef18bd248405211562b17b3b25cc385edc36040b8cea00146`
+-	Image ID: `sha256:52119a98321109fc04c5bdc9d5a5997da126c6b299e2e05092227fbbdfcc5ac5`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -11953,31 +11623,31 @@ $ docker pull docker@sha256:c442ec204cc8c3af89a231557d7113d731304aa9004ecc2fd2b7
 RUN Apply image 10.0.17763.6293
 # Thu, 05 Dec 2024 05:10:22 GMT
 RUN Install update 10.0.17763.6659
-# Thu, 19 Dec 2024 06:27:25 GMT
+# Thu, 09 Jan 2025 22:28:42 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Thu, 19 Dec 2024 06:28:36 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Thu, 19 Dec 2024 06:28:36 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 ENV DOCKER_VERSION=27.4.1
-# Thu, 19 Dec 2024 06:28:37 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.4.1.zip
-# Thu, 19 Dec 2024 06:29:00 GMT
+# Thu, 09 Jan 2025 22:30:03 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:00 GMT
+# Thu, 09 Jan 2025 22:30:03 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Thu, 19 Dec 2024 06:29:01 GMT
+# Thu, 09 Jan 2025 22:30:04 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Thu, 19 Dec 2024 06:29:01 GMT
+# Thu, 09 Jan 2025 22:30:04 GMT
 ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Thu, 19 Dec 2024 06:29:14 GMT
+# Thu, 09 Jan 2025 22:30:16 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:15 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Thu, 19 Dec 2024 06:29:15 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Thu, 19 Dec 2024 06:29:16 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Thu, 19 Dec 2024 06:29:30 GMT
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:18 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:18 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:29 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -11990,63 +11660,63 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 10 Dec 2024 18:45:28 GMT  
 		Size: 293.9 MB (293901821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1cfd0430e259e32b94429bf581ea5f74b25080ea9e68899e17062c55bfdba4f`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 1.3 KB (1300 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:089d2b012e4350683f7592078e0330072d47face607cfdcfa1b177015a1d055d`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 475.3 KB (475261 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e54e6e8f743b8e62247f614caa153507aeea30e39ec7d133b120770472d150d`  
-		Last Modified: Thu, 19 Dec 2024 06:29:34 GMT  
-		Size: 1.3 KB (1298 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c46ebe5f7bc661958c2410ed2a60431be6d40269618a1223f8bc2c1f5392c26`  
-		Last Modified: Thu, 19 Dec 2024 06:29:34 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ac2d753848f2b9292c76be0e8c43f38d7c04ed25979be15179b781a3c2b47b9`  
-		Last Modified: Thu, 19 Dec 2024 06:29:36 GMT  
-		Size: 19.0 MB (18997863 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db4c651853f033dafb87a17fdd7690c1c3c3a0f4dfb6e083cf06ba8d91234d98`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da1a3389962e8b333bfcead93ec3aad31713a4bafd7b7be628b737077da7d60b`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e030ce22f45d6c461af01d11e768dcd4638cd9b989e6dc8aa7e384b7ccb80129`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5d987b1383b6b76eb88c20a38bac7e305fe1f8c311242b83bc819be0eee3eb3`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 19.6 MB (19648080 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27e0d2a17e8fa800de7106ca7d9cce51ab9562558d2d155ddfaaa0d979138750`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
-		Size: 1.3 KB (1302 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4d9b36807cefb176cc3c814de379c2bf6a17663ed8e0372f69d2cb06a02cd4e`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
+	-	`sha256:7750dc03308256989666ff5b54c38b3a2c612c962192c83de4eb1f582ca937b1`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60f2c79cb8ac15f188f4afd8366afee1f46ec780fa70082a4c9e991ac09c8537`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:5dbe0537aa6aca34fc480d362d820e72c216e0298e460381cfbb5dcb5fd023fb`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
+		Size: 472.5 KB (472525 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f72ede2a361313c0a7e7b059df25505b175cc277540b12cb48ee012d5a4ba93`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 20.2 MB (20157227 bytes)  
+	-	`sha256:fe45cd9447359ded7b92b30cf20968456c9963557aae6f640a79b6e9e154bb96`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:13e084105c5050f37f2a84321c45579ce3b732eafca7dacb323be6a6d0466d89`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5632113851589ab8b783167c256f837cf86bc42cf5a08905a82e3ca1050d791e`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
+		Size: 19.0 MB (18995177 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7d6fc5b4da6366b80ed16ea446e845f9e47d993a065cccd224a4bf5c26a9ffad`  
+		Last Modified: Thu, 09 Jan 2025 22:30:36 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cc1c4f578feffda9102418bc2ffcd55cf99c58f657c94a9e437200b4ab6e37ce`  
+		Last Modified: Thu, 09 Jan 2025 22:30:35 GMT  
+		Size: 1.3 KB (1317 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e594fee58a2fad417e3fde8355dc41c0508bd2ab66d1729873f044f701a70680`  
+		Last Modified: Thu, 09 Jan 2025 22:30:35 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:14ea03058c311bb36b7446687d979343ed3f3ecaf0b8a1a35a23c20666373964`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 19.6 MB (19646983 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:601a2adbccc0e8163567c2d53522349047c62ff729a5a3a1c6a4efbe2c8ff4bb`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:477c2e6248c325fbcac1b955bb7066d647e306083381336c71c46addade98c49`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:648ab5467de2471d85da31b50821da19a02285bd29d6edb1c98f0efea89d6074`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1343 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eff4279d2d18be75803362cc5a646d7d96b8fffd5030ddb9674444c5d344b414`  
+		Last Modified: Thu, 09 Jan 2025 22:30:36 GMT  
+		Size: 20.2 MB (20165195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27.4.1-windowsservercore-1809`
 
 ```console
-$ docker pull docker@sha256:5a5cd9f42944d54ac3da3dfda65c1d0342f266339ac3fde581f7021a2aa3c54c
+$ docker pull docker@sha256:edb7aff1c0cd6c7c15802d3bc3d4c76873b2329b9fe50c75c97f50e9449e35fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -12056,14 +11726,14 @@ $ docker pull docker@sha256:5a5cd9f42944d54ac3da3dfda65c1d0342f266339ac3fde581f7
 ### `docker:27.4.1-windowsservercore-1809` - windows version 10.0.17763.6659; amd64
 
 ```console
-$ docker pull docker@sha256:c442ec204cc8c3af89a231557d7113d731304aa9004ecc2fd2b7fdea9a2a5ed5
+$ docker pull docker@sha256:17d1ca1503ccd918b9f134fb58a7e94a6b55605a487375dc958dd83a765680e2
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2073460288 bytes)**  
+-	Total Size: **2.1 GB (2073461807 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd24b1732cd2a56ef18bd248405211562b17b3b25cc385edc36040b8cea00146`
+-	Image ID: `sha256:52119a98321109fc04c5bdc9d5a5997da126c6b299e2e05092227fbbdfcc5ac5`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -12072,31 +11742,31 @@ $ docker pull docker@sha256:c442ec204cc8c3af89a231557d7113d731304aa9004ecc2fd2b7
 RUN Apply image 10.0.17763.6293
 # Thu, 05 Dec 2024 05:10:22 GMT
 RUN Install update 10.0.17763.6659
-# Thu, 19 Dec 2024 06:27:25 GMT
+# Thu, 09 Jan 2025 22:28:42 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Thu, 19 Dec 2024 06:28:36 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Thu, 19 Dec 2024 06:28:36 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 ENV DOCKER_VERSION=27.4.1
-# Thu, 19 Dec 2024 06:28:37 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.4.1.zip
-# Thu, 19 Dec 2024 06:29:00 GMT
+# Thu, 09 Jan 2025 22:30:03 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:00 GMT
+# Thu, 09 Jan 2025 22:30:03 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Thu, 19 Dec 2024 06:29:01 GMT
+# Thu, 09 Jan 2025 22:30:04 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Thu, 19 Dec 2024 06:29:01 GMT
+# Thu, 09 Jan 2025 22:30:04 GMT
 ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Thu, 19 Dec 2024 06:29:14 GMT
+# Thu, 09 Jan 2025 22:30:16 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:15 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Thu, 19 Dec 2024 06:29:15 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Thu, 19 Dec 2024 06:29:16 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Thu, 19 Dec 2024 06:29:30 GMT
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:18 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:18 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:29 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -12109,57 +11779,57 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 10 Dec 2024 18:45:28 GMT  
 		Size: 293.9 MB (293901821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1cfd0430e259e32b94429bf581ea5f74b25080ea9e68899e17062c55bfdba4f`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 1.3 KB (1300 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:089d2b012e4350683f7592078e0330072d47face607cfdcfa1b177015a1d055d`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 475.3 KB (475261 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e54e6e8f743b8e62247f614caa153507aeea30e39ec7d133b120770472d150d`  
-		Last Modified: Thu, 19 Dec 2024 06:29:34 GMT  
-		Size: 1.3 KB (1298 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c46ebe5f7bc661958c2410ed2a60431be6d40269618a1223f8bc2c1f5392c26`  
-		Last Modified: Thu, 19 Dec 2024 06:29:34 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ac2d753848f2b9292c76be0e8c43f38d7c04ed25979be15179b781a3c2b47b9`  
-		Last Modified: Thu, 19 Dec 2024 06:29:36 GMT  
-		Size: 19.0 MB (18997863 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db4c651853f033dafb87a17fdd7690c1c3c3a0f4dfb6e083cf06ba8d91234d98`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da1a3389962e8b333bfcead93ec3aad31713a4bafd7b7be628b737077da7d60b`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e030ce22f45d6c461af01d11e768dcd4638cd9b989e6dc8aa7e384b7ccb80129`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5d987b1383b6b76eb88c20a38bac7e305fe1f8c311242b83bc819be0eee3eb3`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 19.6 MB (19648080 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27e0d2a17e8fa800de7106ca7d9cce51ab9562558d2d155ddfaaa0d979138750`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
-		Size: 1.3 KB (1302 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4d9b36807cefb176cc3c814de379c2bf6a17663ed8e0372f69d2cb06a02cd4e`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
+	-	`sha256:7750dc03308256989666ff5b54c38b3a2c612c962192c83de4eb1f582ca937b1`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60f2c79cb8ac15f188f4afd8366afee1f46ec780fa70082a4c9e991ac09c8537`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:5dbe0537aa6aca34fc480d362d820e72c216e0298e460381cfbb5dcb5fd023fb`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
+		Size: 472.5 KB (472525 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f72ede2a361313c0a7e7b059df25505b175cc277540b12cb48ee012d5a4ba93`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 20.2 MB (20157227 bytes)  
+	-	`sha256:fe45cd9447359ded7b92b30cf20968456c9963557aae6f640a79b6e9e154bb96`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:13e084105c5050f37f2a84321c45579ce3b732eafca7dacb323be6a6d0466d89`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5632113851589ab8b783167c256f837cf86bc42cf5a08905a82e3ca1050d791e`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
+		Size: 19.0 MB (18995177 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7d6fc5b4da6366b80ed16ea446e845f9e47d993a065cccd224a4bf5c26a9ffad`  
+		Last Modified: Thu, 09 Jan 2025 22:30:36 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cc1c4f578feffda9102418bc2ffcd55cf99c58f657c94a9e437200b4ab6e37ce`  
+		Last Modified: Thu, 09 Jan 2025 22:30:35 GMT  
+		Size: 1.3 KB (1317 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e594fee58a2fad417e3fde8355dc41c0508bd2ab66d1729873f044f701a70680`  
+		Last Modified: Thu, 09 Jan 2025 22:30:35 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:14ea03058c311bb36b7446687d979343ed3f3ecaf0b8a1a35a23c20666373964`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 19.6 MB (19646983 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:601a2adbccc0e8163567c2d53522349047c62ff729a5a3a1c6a4efbe2c8ff4bb`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:477c2e6248c325fbcac1b955bb7066d647e306083381336c71c46addade98c49`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:648ab5467de2471d85da31b50821da19a02285bd29d6edb1c98f0efea89d6074`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1343 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eff4279d2d18be75803362cc5a646d7d96b8fffd5030ddb9674444c5d344b414`  
+		Last Modified: Thu, 09 Jan 2025 22:30:36 GMT  
+		Size: 20.2 MB (20165195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27.4.1-windowsservercore-ltsc2022`
@@ -12283,48 +11953,1450 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 
 ## `docker:27.5.0-rc.2`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `docker:27.5.0-rc.2-alpine3.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `docker:27.5.0-rc.2-cli`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:c530b63738ba176075d4ba735299bc5c152273cfca1e15a69b1296ac54f9fcd7
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 8
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm variant v6
+	-	unknown; unknown
+	-	linux; arm variant v7
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `docker:27.5.0-rc.2-cli` - linux; amd64
+
+```console
+$ docker pull docker@sha256:c14c4bef734c4e69c19de0eadcb6ed00b3e5ba89f1b0bbac8a3f5fd955aee3b0
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **68.7 MB (68659936 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:61fd50be698735ae5547ffcd85443dc2f3f03657d29f023a56c53008fab07622`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Wed, 08 Jan 2025 12:07:30 GMT
+ADD alpine-minirootfs-3.21.2-x86_64.tar.gz / # buildkit
+# Wed, 08 Jan 2025 12:07:30 GMT
+CMD ["/bin/sh"]
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_BUILDX_VERSION=0.19.3
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+COPY modprobe.sh /usr/local/bin/modprobe # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_TLS_CERTDIR=/certs
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 08 Jan 2025 18:52:25 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:1f3e46996e2966e4faa5846e56e76e3748b7315e2ded61476c24403d592134f0`  
+		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
+		Size: 3.6 MB (3641715 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d9da8d98be9c497538e046636271095d60600736b8b98dd17d89b85cf6750a8f`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 8.1 MB (8058734 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4386589b6f3f3d4248a89850307f7fce69767219761e159ae96376e95133648c`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 455.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3eec89dde7ca9124d2c1f9aad8c5610b044c03e8375a50440e2b400c0b684dbf`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
+		Size: 18.8 MB (18849789 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:621d9e9d8f1c084324a9bfc17effabc710a3142456efbde84cc52357b5d39c7a`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
+		Size: 18.8 MB (18798855 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:432b891fc60d0f0b3357554b2556dcc95eda57ad9cab9cefea2dd40d3fbfe313`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
+		Size: 19.3 MB (19308691 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c6b8e858f3681e6fef39f2adbdfcaeaaf4d540cbf7142ddfd213872e305aa38a`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
+		Size: 538.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:33046038b891c90630e087369904e988fa6618edaa3a614ad802c2d6f5fbac02`  
+		Last Modified: Thu, 09 Jan 2025 22:28:48 GMT  
+		Size: 1.0 KB (1011 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:639543bd8ef1632e940a6cba7fe057e640d898242a0b129845132d3be23fafe5`  
+		Last Modified: Thu, 09 Jan 2025 22:28:48 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `docker:27.5.0-rc.2-cli` - unknown; unknown
+
+```console
+$ docker pull docker@sha256:508e9f08c885952fec190ac965b8d01200e8cf11a98bc2f057d49d7ea7fc22fe
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **37.9 KB (37911 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:950bbdc34c347fdedb963abb527179012b95cec6d6e7225294598b6caa564b50`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:f2dd35f84dacc2ba5f4b4d46fc3e5049242b63b573d54c8ac921484d00f56deb`  
+		Last Modified: Thu, 09 Jan 2025 22:28:46 GMT  
+		Size: 37.9 KB (37911 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `docker:27.5.0-rc.2-cli` - linux; arm variant v6
+
+```console
+$ docker pull docker@sha256:db8c4d59993fec0c2c2ff454c708ea8b318ac99a2bff7095ef978d9cad65f55c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **63.8 MB (63770910 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c2eeb2cdfdc70031e1cae04d9ac9ea5a212fd6c457fecb031ce9c0ff5f56972b`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Wed, 08 Jan 2025 12:07:30 GMT
+ADD alpine-minirootfs-3.21.2-armhf.tar.gz / # buildkit
+# Wed, 08 Jan 2025 12:07:30 GMT
+CMD ["/bin/sh"]
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_BUILDX_VERSION=0.19.3
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+COPY modprobe.sh /usr/local/bin/modprobe # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_TLS_CERTDIR=/certs
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 08 Jan 2025 18:52:25 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:d3e229a4bb72770bd404e0f6590519a8e566146523e984834c6a3d82836f0069`  
+		Last Modified: Wed, 08 Jan 2025 17:23:44 GMT  
+		Size: 3.4 MB (3363879 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a8ad6872f504f55fd5dfe94a791ed8ab685db4ba2dd3480eb2ad66b1bb83da0b`  
+		Last Modified: Wed, 08 Jan 2025 18:20:15 GMT  
+		Size: 8.0 MB (7972910 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1f5ebb3ae482a680f38002a6478f8abc7edcd1bf788e37724c95efe3e0a74f1d`  
+		Last Modified: Wed, 08 Jan 2025 18:20:15 GMT  
+		Size: 453.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5e9ab1964284c90cd66885201a9bbcfa54a7527c7036c167e8b25ba12315785d`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
+		Size: 16.9 MB (16866137 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8a0a71ee996cd6ec00b3ca454fb99d1629126a0253f97fcfb804b92210e3e9ef`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
+		Size: 17.4 MB (17448786 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6dc27f56b4fbce0a698f26028b89d85a4b9344052051e6077787ec8ee4953d1f`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
+		Size: 18.1 MB (18117038 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a01bfd7920f902c6dba6f495793838e4136a4a693af86267c061790d0aa19aab`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
+		Size: 542.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3e6d1fe7c267407142c7dcab85283bf1e880c8797a3e3698dcb175a58520bf54`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
+		Size: 1.0 KB (1017 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f969b16c61023503d53aa8108514e34fd6640304927df19de346779a0b3326b8`  
+		Last Modified: Thu, 09 Jan 2025 22:30:15 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `docker:27.5.0-rc.2-cli` - unknown; unknown
+
+```console
+$ docker pull docker@sha256:0830a2e84a624c9c57da889697c4144edf919bfeab45dbe7bc30592c900d9fc4
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **38.1 KB (38065 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:967a1a6debd9643f24408258619b1b9b99cf2f24ddd9086cbc67fb25f975f3e7`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:0ec6853da71644a36f250a4531da87f14ab3cc6feb14bf5c860975ada6a5e32f`  
+		Last Modified: Thu, 09 Jan 2025 22:30:12 GMT  
+		Size: 38.1 KB (38065 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `docker:27.5.0-rc.2-cli` - linux; arm variant v7
+
+```console
+$ docker pull docker@sha256:f77687b33a860a855ddcdba07802faffc2949e28e64e9b7fcbf6b0843f0b95a7
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **62.8 MB (62775766 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e50b1de49d4a597cd3b9d0295012c9def8cdead807f7998e0d771d6b2ad3e425`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Wed, 08 Jan 2025 12:07:30 GMT
+ADD alpine-minirootfs-3.21.2-armv7.tar.gz / # buildkit
+# Wed, 08 Jan 2025 12:07:30 GMT
+CMD ["/bin/sh"]
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_BUILDX_VERSION=0.19.3
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+COPY modprobe.sh /usr/local/bin/modprobe # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_TLS_CERTDIR=/certs
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 08 Jan 2025 18:52:25 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:824bc99f06f2c6bebc1172ff7e39d7a1cdbd077ec44632079a629f69e9db7abf`  
+		Last Modified: Wed, 08 Jan 2025 17:34:01 GMT  
+		Size: 3.1 MB (3097112 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:429d04febd7f7d8a507ee9f0b3e686f63959da9eba7f9c44aacc0c4760e6b8eb`  
+		Last Modified: Wed, 08 Jan 2025 18:35:55 GMT  
+		Size: 7.3 MB (7293917 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6da18b0856209e09ddb1746d60b57bafc68fcbeaa264f0dfab0a99340b19e366`  
+		Last Modified: Wed, 08 Jan 2025 18:35:54 GMT  
+		Size: 455.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5cce3d589c0262c7f4a8c32c1d67310d9f243e977791ab808712b89ecd304d29`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 16.9 MB (16856002 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:46e4ad7c54ebd6402c0beb5affcbb3693426ec318dcc72b2587436c260e17f0c`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 17.4 MB (17427582 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b2bc0a6c2f4ed088d3bc7fd01b80a4678cfa87f538c10648b3e5d91790618e95`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 18.1 MB (18098987 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:87b8b9d2ef53aa5dad5ea0459ac27a83545b15e2948b7828669008b643c24e58`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
+		Size: 544.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:192c8acb0a9588aa498003df335dc4e6b0380ba2fea64d067694ca6419c199f4`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.0 KB (1019 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6ef1b77e5b58b0bfdc06052a14f6896d21976f883c36e576776800ebdc61923d`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `docker:27.5.0-rc.2-cli` - unknown; unknown
+
+```console
+$ docker pull docker@sha256:9dc154b1a93d7226c391a0f6f277f5a87071a7a4b28ad39a24aa63c5efb9a644
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **38.1 KB (38065 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d06686dc6b6759416850118304c954bb9ded06b6a626aaf2f3c5454c315dd30c`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:04c960f20088a663034bd90db6157f5bd22fcd140275c8d7fd96260cbce73166`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
+		Size: 38.1 KB (38065 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `docker:27.5.0-rc.2-cli` - linux; arm64 variant v8
+
+```console
+$ docker pull docker@sha256:db7d00873d2eebcc1c110e2264734bf73cf6a5a7564d840c06f9a366fcbe3203
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **64.6 MB (64623851 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1b92eee8f92ab0b74ccdbce000c2ffb116d3b0402b11540eb08ac8fade003b3b`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Wed, 08 Jan 2025 12:07:30 GMT
+ADD alpine-minirootfs-3.21.2-aarch64.tar.gz / # buildkit
+# Wed, 08 Jan 2025 12:07:30 GMT
+CMD ["/bin/sh"]
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_BUILDX_VERSION=0.19.3
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+COPY modprobe.sh /usr/local/bin/modprobe # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_TLS_CERTDIR=/certs
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 08 Jan 2025 18:52:25 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:52f827f723504aa3325bb5a54247f0dc4b92bb72569525bc951532c4ef679bd4`  
+		Last Modified: Wed, 08 Jan 2025 17:23:52 GMT  
+		Size: 4.0 MB (3992359 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3528552267cec0f9e2dee7d372df3bbea6255a3ca1a18ba3e58e5cfd106d15e1`  
+		Last Modified: Thu, 09 Jan 2025 22:29:23 GMT  
+		Size: 8.1 MB (8073134 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d4781719ef357b2c136f17ff57b79d601b4058a8861d68048cf902106cf3ae9d`  
+		Last Modified: Thu, 09 Jan 2025 22:29:22 GMT  
+		Size: 455.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8bcfe8386e2237fec90daf19cd8ba491dfd16e22403ea006d78c74d9e304e7da`  
+		Last Modified: Thu, 09 Jan 2025 22:29:24 GMT  
+		Size: 17.8 MB (17795789 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a7a1a11b1c0f7f2eec8de0dee32306eb07511123c3079e8d30e5d2c55291cf73`  
+		Last Modified: Thu, 09 Jan 2025 22:29:24 GMT  
+		Size: 17.1 MB (17106442 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:41348e1c5583cceaf0d743a287b5829751e2de935eed8a50c782219d9792989c`  
+		Last Modified: Thu, 09 Jan 2025 22:29:24 GMT  
+		Size: 17.7 MB (17653974 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ae1e54ea85aba2ead18cf01620a297d57612c95088894b00881fffda27f1e5ea`  
+		Last Modified: Thu, 09 Jan 2025 22:29:24 GMT  
+		Size: 539.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f14bbbf7fcfe04dd9d925b93b69abdc72380976ef81bbfd2dfc042e3f75b86c2`  
+		Last Modified: Thu, 09 Jan 2025 22:29:25 GMT  
+		Size: 1.0 KB (1011 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2e82aac5329a578313454cdc01cbf748ca6cf66d7c8596e771bd64e8b648f3b1`  
+		Last Modified: Thu, 09 Jan 2025 22:29:25 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `docker:27.5.0-rc.2-cli` - unknown; unknown
+
+```console
+$ docker pull docker@sha256:888b931181514dc4f8746b0c25742d486c4ab1d57229e622ac1ab58a2aa56922
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **38.1 KB (38104 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:216686a098d073262bf56f4b078d01073fe27189c8cc2d70c15b7a8f252d5be0`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:36babd78e905080ce1f3d4ce7b845dcf86c25e282ea5b16c0a0f758017f9d2d4`  
+		Last Modified: Thu, 09 Jan 2025 22:29:22 GMT  
+		Size: 38.1 KB (38104 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `docker:27.5.0-rc.2-cli-alpine3.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:c530b63738ba176075d4ba735299bc5c152273cfca1e15a69b1296ac54f9fcd7
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 8
+	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm variant v6
+	-	unknown; unknown
+	-	linux; arm variant v7
+	-	unknown; unknown
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `docker:27.5.0-rc.2-cli-alpine3.21` - linux; amd64
+
+```console
+$ docker pull docker@sha256:c14c4bef734c4e69c19de0eadcb6ed00b3e5ba89f1b0bbac8a3f5fd955aee3b0
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **68.7 MB (68659936 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:61fd50be698735ae5547ffcd85443dc2f3f03657d29f023a56c53008fab07622`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Wed, 08 Jan 2025 12:07:30 GMT
+ADD alpine-minirootfs-3.21.2-x86_64.tar.gz / # buildkit
+# Wed, 08 Jan 2025 12:07:30 GMT
+CMD ["/bin/sh"]
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_BUILDX_VERSION=0.19.3
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+COPY modprobe.sh /usr/local/bin/modprobe # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_TLS_CERTDIR=/certs
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 08 Jan 2025 18:52:25 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:1f3e46996e2966e4faa5846e56e76e3748b7315e2ded61476c24403d592134f0`  
+		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
+		Size: 3.6 MB (3641715 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d9da8d98be9c497538e046636271095d60600736b8b98dd17d89b85cf6750a8f`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 8.1 MB (8058734 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4386589b6f3f3d4248a89850307f7fce69767219761e159ae96376e95133648c`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 455.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3eec89dde7ca9124d2c1f9aad8c5610b044c03e8375a50440e2b400c0b684dbf`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
+		Size: 18.8 MB (18849789 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:621d9e9d8f1c084324a9bfc17effabc710a3142456efbde84cc52357b5d39c7a`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
+		Size: 18.8 MB (18798855 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:432b891fc60d0f0b3357554b2556dcc95eda57ad9cab9cefea2dd40d3fbfe313`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
+		Size: 19.3 MB (19308691 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c6b8e858f3681e6fef39f2adbdfcaeaaf4d540cbf7142ddfd213872e305aa38a`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
+		Size: 538.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:33046038b891c90630e087369904e988fa6618edaa3a614ad802c2d6f5fbac02`  
+		Last Modified: Thu, 09 Jan 2025 22:28:48 GMT  
+		Size: 1.0 KB (1011 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:639543bd8ef1632e940a6cba7fe057e640d898242a0b129845132d3be23fafe5`  
+		Last Modified: Thu, 09 Jan 2025 22:28:48 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `docker:27.5.0-rc.2-cli-alpine3.21` - unknown; unknown
+
+```console
+$ docker pull docker@sha256:508e9f08c885952fec190ac965b8d01200e8cf11a98bc2f057d49d7ea7fc22fe
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **37.9 KB (37911 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:950bbdc34c347fdedb963abb527179012b95cec6d6e7225294598b6caa564b50`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:f2dd35f84dacc2ba5f4b4d46fc3e5049242b63b573d54c8ac921484d00f56deb`  
+		Last Modified: Thu, 09 Jan 2025 22:28:46 GMT  
+		Size: 37.9 KB (37911 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `docker:27.5.0-rc.2-cli-alpine3.21` - linux; arm variant v6
+
+```console
+$ docker pull docker@sha256:db8c4d59993fec0c2c2ff454c708ea8b318ac99a2bff7095ef978d9cad65f55c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **63.8 MB (63770910 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c2eeb2cdfdc70031e1cae04d9ac9ea5a212fd6c457fecb031ce9c0ff5f56972b`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Wed, 08 Jan 2025 12:07:30 GMT
+ADD alpine-minirootfs-3.21.2-armhf.tar.gz / # buildkit
+# Wed, 08 Jan 2025 12:07:30 GMT
+CMD ["/bin/sh"]
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_BUILDX_VERSION=0.19.3
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+COPY modprobe.sh /usr/local/bin/modprobe # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_TLS_CERTDIR=/certs
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 08 Jan 2025 18:52:25 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:d3e229a4bb72770bd404e0f6590519a8e566146523e984834c6a3d82836f0069`  
+		Last Modified: Wed, 08 Jan 2025 17:23:44 GMT  
+		Size: 3.4 MB (3363879 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a8ad6872f504f55fd5dfe94a791ed8ab685db4ba2dd3480eb2ad66b1bb83da0b`  
+		Last Modified: Wed, 08 Jan 2025 18:20:15 GMT  
+		Size: 8.0 MB (7972910 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1f5ebb3ae482a680f38002a6478f8abc7edcd1bf788e37724c95efe3e0a74f1d`  
+		Last Modified: Wed, 08 Jan 2025 18:20:15 GMT  
+		Size: 453.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5e9ab1964284c90cd66885201a9bbcfa54a7527c7036c167e8b25ba12315785d`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
+		Size: 16.9 MB (16866137 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8a0a71ee996cd6ec00b3ca454fb99d1629126a0253f97fcfb804b92210e3e9ef`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
+		Size: 17.4 MB (17448786 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6dc27f56b4fbce0a698f26028b89d85a4b9344052051e6077787ec8ee4953d1f`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
+		Size: 18.1 MB (18117038 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a01bfd7920f902c6dba6f495793838e4136a4a693af86267c061790d0aa19aab`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
+		Size: 542.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3e6d1fe7c267407142c7dcab85283bf1e880c8797a3e3698dcb175a58520bf54`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
+		Size: 1.0 KB (1017 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f969b16c61023503d53aa8108514e34fd6640304927df19de346779a0b3326b8`  
+		Last Modified: Thu, 09 Jan 2025 22:30:15 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `docker:27.5.0-rc.2-cli-alpine3.21` - unknown; unknown
+
+```console
+$ docker pull docker@sha256:0830a2e84a624c9c57da889697c4144edf919bfeab45dbe7bc30592c900d9fc4
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **38.1 KB (38065 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:967a1a6debd9643f24408258619b1b9b99cf2f24ddd9086cbc67fb25f975f3e7`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:0ec6853da71644a36f250a4531da87f14ab3cc6feb14bf5c860975ada6a5e32f`  
+		Last Modified: Thu, 09 Jan 2025 22:30:12 GMT  
+		Size: 38.1 KB (38065 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `docker:27.5.0-rc.2-cli-alpine3.21` - linux; arm variant v7
+
+```console
+$ docker pull docker@sha256:f77687b33a860a855ddcdba07802faffc2949e28e64e9b7fcbf6b0843f0b95a7
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **62.8 MB (62775766 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e50b1de49d4a597cd3b9d0295012c9def8cdead807f7998e0d771d6b2ad3e425`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Wed, 08 Jan 2025 12:07:30 GMT
+ADD alpine-minirootfs-3.21.2-armv7.tar.gz / # buildkit
+# Wed, 08 Jan 2025 12:07:30 GMT
+CMD ["/bin/sh"]
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_BUILDX_VERSION=0.19.3
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+COPY modprobe.sh /usr/local/bin/modprobe # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_TLS_CERTDIR=/certs
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 08 Jan 2025 18:52:25 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:824bc99f06f2c6bebc1172ff7e39d7a1cdbd077ec44632079a629f69e9db7abf`  
+		Last Modified: Wed, 08 Jan 2025 17:34:01 GMT  
+		Size: 3.1 MB (3097112 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:429d04febd7f7d8a507ee9f0b3e686f63959da9eba7f9c44aacc0c4760e6b8eb`  
+		Last Modified: Wed, 08 Jan 2025 18:35:55 GMT  
+		Size: 7.3 MB (7293917 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6da18b0856209e09ddb1746d60b57bafc68fcbeaa264f0dfab0a99340b19e366`  
+		Last Modified: Wed, 08 Jan 2025 18:35:54 GMT  
+		Size: 455.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5cce3d589c0262c7f4a8c32c1d67310d9f243e977791ab808712b89ecd304d29`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 16.9 MB (16856002 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:46e4ad7c54ebd6402c0beb5affcbb3693426ec318dcc72b2587436c260e17f0c`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 17.4 MB (17427582 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b2bc0a6c2f4ed088d3bc7fd01b80a4678cfa87f538c10648b3e5d91790618e95`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 18.1 MB (18098987 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:87b8b9d2ef53aa5dad5ea0459ac27a83545b15e2948b7828669008b643c24e58`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
+		Size: 544.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:192c8acb0a9588aa498003df335dc4e6b0380ba2fea64d067694ca6419c199f4`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.0 KB (1019 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6ef1b77e5b58b0bfdc06052a14f6896d21976f883c36e576776800ebdc61923d`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `docker:27.5.0-rc.2-cli-alpine3.21` - unknown; unknown
+
+```console
+$ docker pull docker@sha256:9dc154b1a93d7226c391a0f6f277f5a87071a7a4b28ad39a24aa63c5efb9a644
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **38.1 KB (38065 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d06686dc6b6759416850118304c954bb9ded06b6a626aaf2f3c5454c315dd30c`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:04c960f20088a663034bd90db6157f5bd22fcd140275c8d7fd96260cbce73166`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
+		Size: 38.1 KB (38065 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `docker:27.5.0-rc.2-cli-alpine3.21` - linux; arm64 variant v8
+
+```console
+$ docker pull docker@sha256:db7d00873d2eebcc1c110e2264734bf73cf6a5a7564d840c06f9a366fcbe3203
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **64.6 MB (64623851 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:1b92eee8f92ab0b74ccdbce000c2ffb116d3b0402b11540eb08ac8fade003b3b`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["sh"]`
+
+```dockerfile
+# Wed, 08 Jan 2025 12:07:30 GMT
+ADD alpine-minirootfs-3.21.2-aarch64.tar.gz / # buildkit
+# Wed, 08 Jan 2025 12:07:30 GMT
+CMD ["/bin/sh"]
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_BUILDX_VERSION=0.19.3
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+COPY modprobe.sh /usr/local/bin/modprobe # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_TLS_CERTDIR=/certs
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 08 Jan 2025 18:52:25 GMT
+CMD ["sh"]
+```
+
+-	Layers:
+	-	`sha256:52f827f723504aa3325bb5a54247f0dc4b92bb72569525bc951532c4ef679bd4`  
+		Last Modified: Wed, 08 Jan 2025 17:23:52 GMT  
+		Size: 4.0 MB (3992359 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3528552267cec0f9e2dee7d372df3bbea6255a3ca1a18ba3e58e5cfd106d15e1`  
+		Last Modified: Thu, 09 Jan 2025 22:29:23 GMT  
+		Size: 8.1 MB (8073134 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:d4781719ef357b2c136f17ff57b79d601b4058a8861d68048cf902106cf3ae9d`  
+		Last Modified: Thu, 09 Jan 2025 22:29:22 GMT  
+		Size: 455.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8bcfe8386e2237fec90daf19cd8ba491dfd16e22403ea006d78c74d9e304e7da`  
+		Last Modified: Thu, 09 Jan 2025 22:29:24 GMT  
+		Size: 17.8 MB (17795789 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a7a1a11b1c0f7f2eec8de0dee32306eb07511123c3079e8d30e5d2c55291cf73`  
+		Last Modified: Thu, 09 Jan 2025 22:29:24 GMT  
+		Size: 17.1 MB (17106442 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:41348e1c5583cceaf0d743a287b5829751e2de935eed8a50c782219d9792989c`  
+		Last Modified: Thu, 09 Jan 2025 22:29:24 GMT  
+		Size: 17.7 MB (17653974 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ae1e54ea85aba2ead18cf01620a297d57612c95088894b00881fffda27f1e5ea`  
+		Last Modified: Thu, 09 Jan 2025 22:29:24 GMT  
+		Size: 539.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f14bbbf7fcfe04dd9d925b93b69abdc72380976ef81bbfd2dfc042e3f75b86c2`  
+		Last Modified: Thu, 09 Jan 2025 22:29:25 GMT  
+		Size: 1.0 KB (1011 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2e82aac5329a578313454cdc01cbf748ca6cf66d7c8596e771bd64e8b648f3b1`  
+		Last Modified: Thu, 09 Jan 2025 22:29:25 GMT  
+		Size: 116.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `docker:27.5.0-rc.2-cli-alpine3.21` - unknown; unknown
+
+```console
+$ docker pull docker@sha256:888b931181514dc4f8746b0c25742d486c4ab1d57229e622ac1ab58a2aa56922
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **38.1 KB (38104 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:216686a098d073262bf56f4b078d01073fe27189c8cc2d70c15b7a8f252d5be0`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:36babd78e905080ce1f3d4ce7b845dcf86c25e282ea5b16c0a0f758017f9d2d4`  
+		Last Modified: Thu, 09 Jan 2025 22:29:22 GMT  
+		Size: 38.1 KB (38104 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `docker:27.5.0-rc.2-dind`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `docker:27.5.0-rc.2-dind-alpine3.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `docker:27.5.0-rc.2-dind-rootless`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `docker:27.5.0-rc.2-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:45da1aef03960bd831584932b366823e5b42cba3e11f83817b8a1c38e6cf6f66
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 2
+	-	windows version 10.0.20348.2966; amd64
+	-	windows version 10.0.17763.6659; amd64
+
+### `docker:27.5.0-rc.2-windowsservercore` - windows version 10.0.20348.2966; amd64
+
+```console
+$ docker pull docker@sha256:34c8def198551f1459d069bd5d4d37df4100afe874339a550015e35c5280c9d1
+```
+
+-	Docker Version: 26.1.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 GB (2313129839 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c879b100b69e4588217fec80ac9427eb48b8583df5a57875fa7acff211cf3846`
+-	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
+
+```dockerfile
+# Fri, 06 Sep 2024 00:01:38 GMT
+RUN Apply image 10.0.20348.2700
+# Thu, 05 Dec 2024 01:36:58 GMT
+RUN Install update 10.0.20348.2966
+# Thu, 09 Jan 2025 22:28:59 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
+# Thu, 09 Jan 2025 22:30:16 GMT
+RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.2.zip
+# Thu, 09 Jan 2025 22:30:37 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
+# Thu, 09 Jan 2025 22:30:37 GMT
+ENV DOCKER_BUILDX_VERSION=0.19.3
+# Thu, 09 Jan 2025 22:30:38 GMT
+ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
+# Thu, 09 Jan 2025 22:30:38 GMT
+ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
+# Thu, 09 Jan 2025 22:30:47 GMT
+RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
+# Thu, 09 Jan 2025 22:30:47 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:48 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:48 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:58 GMT
+RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
+```
+
+-	Layers:
+	-	`sha256:2534953f34d35976fc44cd67bfdd39fdcd9e2eaae57ada0be53d5fb936cd3a0b`  
+		Last Modified: Tue, 10 Sep 2024 17:49:01 GMT  
+		Size: 1.5 GB (1462192413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:90641eccc9d7a78ab99d123ca3884acb8ffc002eb44bc5e68f261f0810d5202b`  
+		Last Modified: Tue, 10 Dec 2024 18:41:03 GMT  
+		Size: 791.7 MB (791681213 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e64f3ca98ebbeaabbe9caa8a22cf59bc40d9d102d2526d1049bd68a910921bf9`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 1.3 KB (1290 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c556be6783cdbb2c773a11684d233d0b303cceca2409d251ca495028eb4e8b32`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 357.0 KB (356971 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:62db5363d85636ed44a6ab46f57b9f37cd884f03ec2ce37d0e33cd96233b9138`  
+		Last Modified: Thu, 09 Jan 2025 22:31:02 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b435965c81c2e8fb61ce8a0eadf77cfb0e2f9886595430f0033e80e767731f3c`  
+		Last Modified: Thu, 09 Jan 2025 22:31:02 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:159da7e211e53c5b7ddeec749a6c40bc4434d55aa46675a838d8e577c3dac69f`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 19.1 MB (19131765 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1584497e6e0be075b115c53cc08d3ac3095f7ab38fdfc856d8cb48449bb7e060`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0348525302a5482ba9b0d399d7eacc24af94672045c97ecb89568235ded2564b`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1283 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b3147b65b25122a7c3e76ab0b163ff239af806851dbe1337f4cceccfe784799f`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a9f472ac9bf23724607ca28bcc8bf1acc04896b2d5e40f90e05234e1dfef84e0`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 19.6 MB (19615417 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6fa14a61e024eeab3914a555cf693f8281b9bdb37f9ddb1cc3148658be9d36f7`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a7ee6431a575ea313a3aca6d1c013e02216a2a470e4eae7992499d19398ae8ab`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.3 KB (1279 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:625c47e3aecbfdba39fc9ee46db788bcfb5edb0fa800215f469c44defd7d81db`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0e92dc6bab1ddd4745640a6d67475207ee6ca87cb4ba8efe6494172cba722a6b`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 20.1 MB (20140505 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `docker:27.5.0-rc.2-windowsservercore` - windows version 10.0.17763.6659; amd64
+
+```console
+$ docker pull docker@sha256:057210aa60aaff6fa876e991185b963cb8627dd9b2d8bf7dd4ec1ab520281f8b
+```
+
+-	Docker Version: 26.1.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.1 GB (2073618238 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:aeed8631f9b336871bf7e8006b7e5fc007c9ef03c7355d97ccd061c85b38705f`
+-	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
+
+```dockerfile
+# Fri, 06 Sep 2024 01:15:31 GMT
+RUN Apply image 10.0.17763.6293
+# Thu, 05 Dec 2024 05:10:22 GMT
+RUN Install update 10.0.17763.6659
+# Thu, 09 Jan 2025 22:28:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
+# Thu, 09 Jan 2025 22:30:06 GMT
+RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
+# Thu, 09 Jan 2025 22:30:06 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Thu, 09 Jan 2025 22:30:07 GMT
+ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.2.zip
+# Thu, 09 Jan 2025 22:30:25 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
+# Thu, 09 Jan 2025 22:30:25 GMT
+ENV DOCKER_BUILDX_VERSION=0.19.3
+# Thu, 09 Jan 2025 22:30:26 GMT
+ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
+# Thu, 09 Jan 2025 22:30:26 GMT
+ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
+# Thu, 09 Jan 2025 22:30:39 GMT
+RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
+# Thu, 09 Jan 2025 22:30:40 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:40 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:40 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:53 GMT
+RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
+```
+
+-	Layers:
+	-	`sha256:803f4a9590cb9c635813cbd0ee89190f92d5fe4c7589711cf468879e42ce02ba`  
+		Last Modified: Tue, 10 Sep 2024 17:55:31 GMT  
+		Size: 1.7 GB (1720268357 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3308b54d35b61854238974280a5b0ecc72a98e2ead17d04f42770a7b35407090`  
+		Last Modified: Tue, 10 Dec 2024 18:45:28 GMT  
+		Size: 293.9 MB (293901821 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:baf08f4f100241820dd2321371c9449504c180e9aa1f4f07045511f101355d4c`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 1.3 KB (1329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:de7317db44443713338c98d87e8b8785cc16e61d3678b7739432fac7a0c9aae7`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 471.1 KB (471058 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:329b49d91a016a02daed99f08dd3d940765b76b3f49239fd046b301c07ebd29e`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:101b3efa01e144b60175fc234b7ef5e9b6b469d3f7fe547aec3c161816dc8238`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1297 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fbc6beeebc1583474f6206c51fe7f7bf7ffcba620d988f30721486a80317d9f4`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 19.2 MB (19157595 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ab3b3346e95ba20efef3a0b225e8f6eeb2e4ad1c4a25ef214af3cd3884022c98`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
+		Size: 1.3 KB (1295 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7713cf22c990e5be40762b0caefc453b83b1aa128ecdd9c87c6762c0c6205e9d`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
+		Size: 1.3 KB (1292 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2a2cc7427122b33bfa2e3b833940957fa2e06340b1b76d201b8247b9619b0018`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
+		Size: 1.3 KB (1300 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9809ead8de21abdf5846fdbfa94f9b71d4c9f078526765b5f31fdc63b87d6f76`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 19.6 MB (19643601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:04717aaf7687614f2bf808d407179765af282d2e2d252db64f7123966a04c2ea`  
+		Last Modified: Thu, 09 Jan 2025 22:30:57 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fbc9ca72b34caddfb3cca6c51f5db1b6f775d58c972fd36dc09ccbf44fc45fda`  
+		Last Modified: Thu, 09 Jan 2025 22:30:58 GMT  
+		Size: 1.4 KB (1385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f0b5317c77f72317760dc2066aa0c624718f445d00d319be2397030d26c637b4`  
+		Last Modified: Thu, 09 Jan 2025 22:30:58 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:995d49cd3175fcc8f1a22a3d4ad19eef4f50da337db1901caa160070954bfcfd`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 20.2 MB (20164019 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27.5.0-rc.2-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:19aea85a1ca846c490972fa5fe6cb66d345d256ccbe9e306586201ce200ef72f
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	windows version 10.0.17763.6659; amd64
+
+### `docker:27.5.0-rc.2-windowsservercore-1809` - windows version 10.0.17763.6659; amd64
+
+```console
+$ docker pull docker@sha256:057210aa60aaff6fa876e991185b963cb8627dd9b2d8bf7dd4ec1ab520281f8b
+```
+
+-	Docker Version: 26.1.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.1 GB (2073618238 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:aeed8631f9b336871bf7e8006b7e5fc007c9ef03c7355d97ccd061c85b38705f`
+-	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
+
+```dockerfile
+# Fri, 06 Sep 2024 01:15:31 GMT
+RUN Apply image 10.0.17763.6293
+# Thu, 05 Dec 2024 05:10:22 GMT
+RUN Install update 10.0.17763.6659
+# Thu, 09 Jan 2025 22:28:51 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
+# Thu, 09 Jan 2025 22:30:06 GMT
+RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
+# Thu, 09 Jan 2025 22:30:06 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Thu, 09 Jan 2025 22:30:07 GMT
+ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.2.zip
+# Thu, 09 Jan 2025 22:30:25 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
+# Thu, 09 Jan 2025 22:30:25 GMT
+ENV DOCKER_BUILDX_VERSION=0.19.3
+# Thu, 09 Jan 2025 22:30:26 GMT
+ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
+# Thu, 09 Jan 2025 22:30:26 GMT
+ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
+# Thu, 09 Jan 2025 22:30:39 GMT
+RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
+# Thu, 09 Jan 2025 22:30:40 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:40 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:40 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:53 GMT
+RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
+```
+
+-	Layers:
+	-	`sha256:803f4a9590cb9c635813cbd0ee89190f92d5fe4c7589711cf468879e42ce02ba`  
+		Last Modified: Tue, 10 Sep 2024 17:55:31 GMT  
+		Size: 1.7 GB (1720268357 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:3308b54d35b61854238974280a5b0ecc72a98e2ead17d04f42770a7b35407090`  
+		Last Modified: Tue, 10 Dec 2024 18:45:28 GMT  
+		Size: 293.9 MB (293901821 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:baf08f4f100241820dd2321371c9449504c180e9aa1f4f07045511f101355d4c`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 1.3 KB (1329 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:de7317db44443713338c98d87e8b8785cc16e61d3678b7739432fac7a0c9aae7`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 471.1 KB (471058 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:329b49d91a016a02daed99f08dd3d940765b76b3f49239fd046b301c07ebd29e`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:101b3efa01e144b60175fc234b7ef5e9b6b469d3f7fe547aec3c161816dc8238`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1297 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fbc6beeebc1583474f6206c51fe7f7bf7ffcba620d988f30721486a80317d9f4`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 19.2 MB (19157595 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:ab3b3346e95ba20efef3a0b225e8f6eeb2e4ad1c4a25ef214af3cd3884022c98`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
+		Size: 1.3 KB (1295 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7713cf22c990e5be40762b0caefc453b83b1aa128ecdd9c87c6762c0c6205e9d`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
+		Size: 1.3 KB (1292 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2a2cc7427122b33bfa2e3b833940957fa2e06340b1b76d201b8247b9619b0018`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
+		Size: 1.3 KB (1300 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:9809ead8de21abdf5846fdbfa94f9b71d4c9f078526765b5f31fdc63b87d6f76`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 19.6 MB (19643601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:04717aaf7687614f2bf808d407179765af282d2e2d252db64f7123966a04c2ea`  
+		Last Modified: Thu, 09 Jan 2025 22:30:57 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fbc9ca72b34caddfb3cca6c51f5db1b6f775d58c972fd36dc09ccbf44fc45fda`  
+		Last Modified: Thu, 09 Jan 2025 22:30:58 GMT  
+		Size: 1.4 KB (1385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f0b5317c77f72317760dc2066aa0c624718f445d00d319be2397030d26c637b4`  
+		Last Modified: Thu, 09 Jan 2025 22:30:58 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:995d49cd3175fcc8f1a22a3d4ad19eef4f50da337db1901caa160070954bfcfd`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 20.2 MB (20164019 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:27.5.0-rc.2-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull docker@sha256:f0ff9dce9c42381541507120fda9a4e6ffae9e7fd7ccf1db0cca0c74a544070d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
+-	Platforms: 1
+	-	windows version 10.0.20348.2966; amd64
+
+### `docker:27.5.0-rc.2-windowsservercore-ltsc2022` - windows version 10.0.20348.2966; amd64
+
+```console
+$ docker pull docker@sha256:34c8def198551f1459d069bd5d4d37df4100afe874339a550015e35c5280c9d1
+```
+
+-	Docker Version: 26.1.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 GB (2313129839 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:c879b100b69e4588217fec80ac9427eb48b8583df5a57875fa7acff211cf3846`
+-	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
+
+```dockerfile
+# Fri, 06 Sep 2024 00:01:38 GMT
+RUN Apply image 10.0.20348.2700
+# Thu, 05 Dec 2024 01:36:58 GMT
+RUN Install update 10.0.20348.2966
+# Thu, 09 Jan 2025 22:28:59 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
+# Thu, 09 Jan 2025 22:30:16 GMT
+RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.2.zip
+# Thu, 09 Jan 2025 22:30:37 GMT
+RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
+# Thu, 09 Jan 2025 22:30:37 GMT
+ENV DOCKER_BUILDX_VERSION=0.19.3
+# Thu, 09 Jan 2025 22:30:38 GMT
+ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
+# Thu, 09 Jan 2025 22:30:38 GMT
+ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
+# Thu, 09 Jan 2025 22:30:47 GMT
+RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
+# Thu, 09 Jan 2025 22:30:47 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:48 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:48 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:58 GMT
+RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
+```
+
+-	Layers:
+	-	`sha256:2534953f34d35976fc44cd67bfdd39fdcd9e2eaae57ada0be53d5fb936cd3a0b`  
+		Last Modified: Tue, 10 Sep 2024 17:49:01 GMT  
+		Size: 1.5 GB (1462192413 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:90641eccc9d7a78ab99d123ca3884acb8ffc002eb44bc5e68f261f0810d5202b`  
+		Last Modified: Tue, 10 Dec 2024 18:41:03 GMT  
+		Size: 791.7 MB (791681213 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e64f3ca98ebbeaabbe9caa8a22cf59bc40d9d102d2526d1049bd68a910921bf9`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 1.3 KB (1290 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c556be6783cdbb2c773a11684d233d0b303cceca2409d251ca495028eb4e8b32`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 357.0 KB (356971 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:62db5363d85636ed44a6ab46f57b9f37cd884f03ec2ce37d0e33cd96233b9138`  
+		Last Modified: Thu, 09 Jan 2025 22:31:02 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b435965c81c2e8fb61ce8a0eadf77cfb0e2f9886595430f0033e80e767731f3c`  
+		Last Modified: Thu, 09 Jan 2025 22:31:02 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:159da7e211e53c5b7ddeec749a6c40bc4434d55aa46675a838d8e577c3dac69f`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 19.1 MB (19131765 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1584497e6e0be075b115c53cc08d3ac3095f7ab38fdfc856d8cb48449bb7e060`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0348525302a5482ba9b0d399d7eacc24af94672045c97ecb89568235ded2564b`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1283 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b3147b65b25122a7c3e76ab0b163ff239af806851dbe1337f4cceccfe784799f`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a9f472ac9bf23724607ca28bcc8bf1acc04896b2d5e40f90e05234e1dfef84e0`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 19.6 MB (19615417 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6fa14a61e024eeab3914a555cf693f8281b9bdb37f9ddb1cc3148658be9d36f7`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a7ee6431a575ea313a3aca6d1c013e02216a2a470e4eae7992499d19398ae8ab`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.3 KB (1279 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:625c47e3aecbfdba39fc9ee46db788bcfb5edb0fa800215f469c44defd7d81db`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0e92dc6bab1ddd4745640a6d67475207ee6ca87cb4ba8efe6494172cba722a6b`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 20.1 MB (20140505 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:cli`
 
 ```console
-$ docker pull docker@sha256:48fb8184d093547916178a48ed6b558968aaa6686e3ab8a289aeff122f0dbb16
+$ docker pull docker@sha256:af0bcc63244e5110ac6499e4a9160a67101bf61abda35c2503ffc40038e8ee0a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12341,50 +13413,50 @@ $ docker pull docker@sha256:48fb8184d093547916178a48ed6b558968aaa6686e3ab8a289ae
 ### `docker:cli` - linux; amd64
 
 ```console
-$ docker pull docker@sha256:dea2833e23bcc3138de633b3c4d7b11432f8894a0b242c73e5df6f4a9f5474b5
+$ docker pull docker@sha256:14fb2045b284b7c1267be8cf2cddc04ed69dbd03bd38f11964787f3409c3d872
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.5 MB (68467046 bytes)**  
+-	Total Size: **68.5 MB (68480117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47d7ebdf9e2b0761d43f6fb27cbb7fc1022bffdde9467cf9d8d10c1c12b2eb25`
+-	Image ID: `sha256:121ad6346a4041fd11f1532f55b02c5f48e26d2ed959c547d0a32456cfb26d50`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-x86_64.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -12393,110 +13465,110 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
 		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d185366bdae3ff1be746691465de29a0e0b2f3e04f28b39180d9375234c91e73`  
-		Last Modified: Wed, 08 Jan 2025 17:58:05 GMT  
-		Size: 8.1 MB (8058731 bytes)  
+	-	`sha256:d9da8d98be9c497538e046636271095d60600736b8b98dd17d89b85cf6750a8f`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 8.1 MB (8058734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5707d5cc11f48c4f3654fab4e9bb2d5d3c8cb71106dd2e58fec35df2b147afb4`  
-		Last Modified: Wed, 08 Jan 2025 17:58:05 GMT  
+	-	`sha256:4386589b6f3f3d4248a89850307f7fce69767219761e159ae96376e95133648c`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
 		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:089f82d81010cbc4aa96ca98767cc6be68fa0c12bdff13b1ce3fbbbf01f30718`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
-		Size: 18.7 MB (18669943 bytes)  
+	-	`sha256:0a489f3b5fec0148d769933a6c683cf67788489232797ba6b97cedc28fba6e83`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 18.7 MB (18669947 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bffe0aee10ea77c7f0546febfae38a67b69cd1b96736c3e3f8033fee03e1cda7`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
-		Size: 18.8 MB (18798856 bytes)  
+	-	`sha256:098516bf325695b24ce2974045b3ddb5dcdb829015737c0bed7a538be5456ee1`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 18.8 MB (18798865 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f5fe673a5ecb77d234d78523d7959f55e887124ffa9ec541309b34336d237520`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
-		Size: 19.3 MB (19295647 bytes)  
+	-	`sha256:9f5bc19395419c3a98f4744b34640d249289415e1edb1e030bf6a58333628592`  
+		Last Modified: Thu, 09 Jan 2025 22:28:46 GMT  
+		Size: 19.3 MB (19308702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd9a9d0c2d0f87990929701ed18006a4ae011dffcb2da0e01d66319135edbb60`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
+	-	`sha256:9611a6289157d3d5da09d21f919439c1d7f75f52c4f1c86ee4935487625980c6`  
+		Last Modified: Thu, 09 Jan 2025 22:28:46 GMT  
 		Size: 538.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfc4b63b8b868cb525ebf3a8cae998e0f83daa0250882e0933778897af5cf8ec`  
-		Last Modified: Wed, 08 Jan 2025 17:58:07 GMT  
+	-	`sha256:380e7224928097502689c0c3e6dd922dbca5bceb3e5e249123e5b0ce9d13ecde`  
+		Last Modified: Thu, 09 Jan 2025 22:28:46 GMT  
 		Size: 1.0 KB (1013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dfdaf163319a658d74a3a98948f1da42cb54f7b0928587abb65b927ad17893e2`  
-		Last Modified: Wed, 08 Jan 2025 17:58:07 GMT  
+	-	`sha256:6fc6c2a895485e0e9ccb5a3268ffe8ca41f9b3ef6e932337b94f7591126ae90f`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:0e63ff85f2451ea7f0e4c617114477fb71d86727b36e691a488e15b745755da3
+$ docker pull docker@sha256:33591134c907ae526878a033450d74d609928559345e6d74a1f023c8e2d36d7b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.1 KB (38116 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ade6604eb1774c3a81972f45f4c3a45c5d62ccf4a48dd2a1952500abfc21122`
+-	Image ID: `sha256:2a58ae14d2c7ed97bda72428d86594211cc096db0714486306c2c813ca14cbf4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5927459d8ba59feef5736dc4a31d17c83f8515b60a205d43e8ed1fdd0a36dead`  
-		Last Modified: Wed, 08 Jan 2025 17:58:05 GMT  
+	-	`sha256:f6dd855ce8de79e67bc2d71204fe2553329c1352459d42eb3acac9cb4004d388`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
 		Size: 38.1 KB (38116 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:cli` - linux; arm variant v6
 
 ```console
-$ docker pull docker@sha256:c73864aeb2d05afde9505487f6076f1ab6a8c06dd7407762f03812226e3c8066
+$ docker pull docker@sha256:04e085d47837f3c88226ff1f38c8a88d482c857c5386e1a59856937b2ecd1421
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.6 MB (63600765 bytes)**  
+-	Total Size: **63.6 MB (63611235 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:615fa0d347d6efa265157a9c8b436cb193a2cd7f029b10f793cfdfcb0f9e9236`
+-	Image ID: `sha256:00caaa924646796848caddcb1ee6005e2956e112b0d4f64a30093f27d4f4038a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-armhf.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -12525,90 +13597,90 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 18:20:41 GMT  
 		Size: 17.4 MB (17448777 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a6ad19aeac0c3a49d84fde43b19d62ab3d56806b9d4c722c38908a137da216eb`  
-		Last Modified: Wed, 08 Jan 2025 18:20:41 GMT  
-		Size: 18.1 MB (18106572 bytes)  
+	-	`sha256:16db69aa77862f611701d543dad7e67909f47fcd5d9a9574b9f97a11ba983d29`  
+		Last Modified: Thu, 09 Jan 2025 22:30:31 GMT  
+		Size: 18.1 MB (18117040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8123d7aab17cac82fab49710563ef043f0de005c8477feaba144980abad4f906`  
-		Last Modified: Wed, 08 Jan 2025 18:20:40 GMT  
-		Size: 540.0 B  
+	-	`sha256:5cc79f3781d43c0acb2321b1a5716529ab8dd5ef7077e18b0c58a7671854782d`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 541.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da735283888a4e92e66d035e7720607217570e99bf5783536f807fe088c0869e`  
-		Last Modified: Wed, 08 Jan 2025 18:20:41 GMT  
-		Size: 1.0 KB (1014 bytes)  
+	-	`sha256:7b0c94e4fa8de6f36d61b3f90d7d24a03d4c0adcf54276f3abd0226ed166a03e`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f56f2ce439d537e2a979dc56193cf849d0e43658ce075297be694e2a5c1f0aee`  
-		Last Modified: Wed, 08 Jan 2025 18:20:42 GMT  
-		Size: 116.0 B  
+	-	`sha256:a9240b077258b7ccef62b5cb88015fe3861991b7dbb7e3205cc5bdb5b0e9e62a`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 113.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:06f9190b69c90aa6648752c1e9ea165c5c99c430b677c8055e6b1487ce2d3b36
+$ docker pull docker@sha256:d210f6f120570400fce43adb6fcc00a9ab5c35a5f30d93f83c341323765d549c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.3 KB (38278 bytes)**  
+-	Total Size: **38.3 KB (38277 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0e01d8af219c1af03a4cab1b52b2b27a706f541c2cc9d4819eb377b435d3a0c4`
+-	Image ID: `sha256:9e3d7698ebb176bbf00684f139d4c2eba2ab6be4a2fd527d83b3d60c0feefb29`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d6b52ce1e0833f6f41725cc02aa7a55925c1547a8c90e932ee21de4a11d4733a`  
-		Last Modified: Wed, 08 Jan 2025 18:20:40 GMT  
-		Size: 38.3 KB (38278 bytes)  
+	-	`sha256:825009d255d8ab64030412cb38732b2004046698dc2aaebe1bc503b0a5c168b5`  
+		Last Modified: Thu, 09 Jan 2025 22:30:30 GMT  
+		Size: 38.3 KB (38277 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:cli` - linux; arm variant v7
 
 ```console
-$ docker pull docker@sha256:e018ece3ac72791e855045d3237f14cffe96a779439c75181e0f92e2a3c8b1af
+$ docker pull docker@sha256:5e71e6f4cd87cadb9d0f89cbeb32a7687ee1e49f84c428f371c3c33d65ca1254
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.6 MB (62607993 bytes)**  
+-	Total Size: **62.6 MB (62614380 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e9a0ac2fa30d78aad6c637921a03c2a58e67df811af430e3b94614225215a8a3`
+-	Image ID: `sha256:9eae7261d9a104837a54d4a9ba6a157b650b261e83424ef011bdfe7c14a47a27`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-armv7.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -12629,98 +13701,98 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 18:35:54 GMT  
 		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98ecb4b3472a02002b0f0d358c915d5620cc898c4f1e7ed87ff9241e7cac4037`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 16.7 MB (16694585 bytes)  
+	-	`sha256:b346517794cfce1f41b95c705ae9e23769f0eead55b0e45aa310726d624d7e36`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 16.7 MB (16694613 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:40e49947850c731a11ba132f1d74360cc652900eabc347731392dac0cd0247ae`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 17.4 MB (17427588 bytes)  
+	-	`sha256:a8af6fe42dd3bd1002a36a0678d7433d5bc1c9b65222d55d1be8f669b50d50ad`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 17.4 MB (17427581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:38fd0659b69ad2c656a029e5bd8521530bcf523be99aa44cb9c939d0d8a22fd6`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 18.1 MB (18092638 bytes)  
+	-	`sha256:435b00e153eefddcfb5674d73a4be8017ab0cbee851a5bd11e33016e9b8b8fcc`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 18.1 MB (18098994 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c49aab9947c3092bafeceb71f5d65637b7dd7a8b326c6ba99b420c886e30af8`  
-		Last Modified: Wed, 08 Jan 2025 18:36:17 GMT  
-		Size: 538.0 B  
+	-	`sha256:8bd823050d528d8277f11b4566a452e8b76b5e7d7097577342b3d85675aa1f28`  
+		Last Modified: Thu, 09 Jan 2025 22:31:29 GMT  
+		Size: 542.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5197a6eb3f577d113db91f9c478f211e710ee31b8739a7a472fa5ade8a559c60`  
-		Last Modified: Wed, 08 Jan 2025 18:36:18 GMT  
-		Size: 1.0 KB (1012 bytes)  
+	-	`sha256:98fba272fee8435a6f01afdef863fc92b288e2e33bb5d72e633c48abeb1c9967`  
+		Last Modified: Thu, 09 Jan 2025 22:31:30 GMT  
+		Size: 1.0 KB (1018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ef0f27fbd9e3184ecea1ffd56f47e7effcc0f84a38b805f6d08e59f61d04142`  
-		Last Modified: Wed, 08 Jan 2025 18:36:19 GMT  
+	-	`sha256:1f4a813131a303def688ad87697fb38ee2b0db911fc22611c905ded3e13d49c4`  
+		Last Modified: Thu, 09 Jan 2025 22:31:31 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:b36c627d6a7513218dc5b7bb4e157eeb77f9dabb793862367cc7fb5859c8540f
+$ docker pull docker@sha256:cb6dd5588f0d803d295eed89ded056f5735647bfc9589719d79a64463bb1026d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.3 KB (38278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3fcc99f949658c9f7a8807f065e1c669df29e41be61f92c9d5e3d7b99d16a854`
+-	Image ID: `sha256:f060462a83aae9ea7f421874df7e391e459030d30bdf354941fe07ac344be092`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:591e589e56a4f0e1bd9fbc3c3be2a463a4620ec4a23b5101601bcc90dc84581b`  
-		Last Modified: Wed, 08 Jan 2025 18:36:17 GMT  
+	-	`sha256:f4c1a16de2a45d8d90746fee23d460d04552b46abb5be4ff308f197dc56d4850`  
+		Last Modified: Thu, 09 Jan 2025 22:31:29 GMT  
 		Size: 38.3 KB (38278 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:cli` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:2292b410d670d092de710b5f9f193978bbcc915bda6afdbf495ec69e1913185b
+$ docker pull docker@sha256:81eee077efe20ebec34ab52d5c20325ed1bea82f0df73748f0ad7b7d6f2a16d9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.4 MB (64436211 bytes)**  
+-	Total Size: **64.4 MB (64447458 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ded5a0195faa578c1fff46298bbaa0815f1cbbf27d3ba2a786ab6c524496d566`
+-	Image ID: `sha256:f69a358e88176c1004e07781eaa43e67048d5af647e0d0fb6260d82a2e5c3f14`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-aarch64.tar.gz / # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_VERSION=27.4.1
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.4.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.4.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.4.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.4.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Wed, 18 Dec 2024 12:04:25 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:50:16 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 18 Dec 2024 12:04:25 GMT
+# Wed, 08 Jan 2025 18:50:16 GMT
 CMD ["sh"]
 ```
 
@@ -12729,60 +13801,60 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 17:23:52 GMT  
 		Size: 4.0 MB (3992359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd118a02a977501603a666f0534bd4e65d18527588ad5cf400f8c10d29b641a2`  
-		Last Modified: Wed, 08 Jan 2025 18:21:52 GMT  
-		Size: 8.1 MB (8073087 bytes)  
+	-	`sha256:3528552267cec0f9e2dee7d372df3bbea6255a3ca1a18ba3e58e5cfd106d15e1`  
+		Last Modified: Thu, 09 Jan 2025 22:29:23 GMT  
+		Size: 8.1 MB (8073134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf7344f9e39163b0db1d8cc353b60bb1b0f4a1f5bce6103ce319dc4b80767896`  
-		Last Modified: Wed, 08 Jan 2025 18:21:51 GMT  
-		Size: 454.0 B  
+	-	`sha256:d4781719ef357b2c136f17ff57b79d601b4058a8861d68048cf902106cf3ae9d`  
+		Last Modified: Thu, 09 Jan 2025 22:29:22 GMT  
+		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b491da4fa6243026056cc314d938e03599e8dff13f8ac4ff1e5ce0c0bb73c2f`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 17.6 MB (17619414 bytes)  
+	-	`sha256:4866b03f4ce1c603a6809790707aae8972781d4ff1b1090b3960153b3abec1e0`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 17.6 MB (17619398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52a0e3aeeec1250aebfa402c0a741416452445d234a867eea35c8c68d19e3c55`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 17.1 MB (17106452 bytes)  
+	-	`sha256:30d036bb2a7049761d033d283b4bc752d8e2d6e25b9ea4bf4329e6a7055ad82e`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 17.1 MB (17106450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:266bf3da8cdc43561b0a4d0e777fff32d6ee6ae16c3a43853b2df21faef62d4e`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 17.6 MB (17642742 bytes)  
+	-	`sha256:bc4fa20503c91c2405741c5b1d40f5567a7c641a4624b6c0693716eb0fa6752e`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 17.7 MB (17653961 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:63b6b0d0e0d21087323094118ec8bbd6ef16965f2436eb105dc930706616ac3c`  
-		Last Modified: Wed, 08 Jan 2025 18:22:21 GMT  
-		Size: 541.0 B  
+	-	`sha256:f999290013a7bee6f7b09186deee9dc98564604594aac128b7293ef882edfd34`  
+		Last Modified: Thu, 09 Jan 2025 22:29:42 GMT  
+		Size: 540.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50d0cdcc6385756fabdd902e9c6d48c1f6f8b12bc391af806d11f26476c05183`  
-		Last Modified: Wed, 08 Jan 2025 18:22:22 GMT  
-		Size: 1.0 KB (1014 bytes)  
+	-	`sha256:62dca40438acce378f07676329455acd2969680d9ceeeee33d5f34cb1f06c2f4`  
+		Last Modified: Thu, 09 Jan 2025 22:29:43 GMT  
+		Size: 1.0 KB (1013 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b883d10753dcfa1efd6a93df081b0ad43dda8c499d48cea04b2cdf24b57cd0c`  
-		Last Modified: Wed, 08 Jan 2025 18:22:23 GMT  
+	-	`sha256:730c1436b4a8c8addd307436381ccbe5d3d3adf57e2b67228ea624046c0f4997`  
+		Last Modified: Thu, 09 Jan 2025 22:29:44 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:6452df1b49249a1aff1effb95af689db74116864e358573f3eaff1c926acc964
+$ docker pull docker@sha256:be1d49fba5a57b05f51e6647474576cc8acff06ab95abf3e77f44caf4d9a18ca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.3 KB (38322 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b416adce65063fc78e3d041f3b11da9e0f1b78c45e6a5adaab892a2b4e624a5`
+-	Image ID: `sha256:28b43e4d309391e554120eff22e63583f34139871e06468f4e755cb402ffeef0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:76ded0ab55bdce21dee7fb8ba60ace91a0714d20eda6c06c218e8cacad3cc6bc`  
-		Last Modified: Wed, 08 Jan 2025 18:22:21 GMT  
+	-	`sha256:e3495cd0038630409f260c6ff16e859457e5c2ec51e6b14353d33ab96727b433`  
+		Last Modified: Thu, 09 Jan 2025 22:29:42 GMT  
 		Size: 38.3 KB (38322 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15119,7 +16191,7 @@ $ docker pull docker@sha256:7e490ce3f280aa44814bcd1c50a1c27b31c2e937c9a15bacb186
 ## `docker:rc-cli`
 
 ```console
-$ docker pull docker@sha256:4b16de3a2373196251f5defc3e73cb887d804ac854c7eba35889af4befbbfd8f
+$ docker pull docker@sha256:c530b63738ba176075d4ba735299bc5c152273cfca1e15a69b1296ac54f9fcd7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15136,50 +16208,50 @@ $ docker pull docker@sha256:4b16de3a2373196251f5defc3e73cb887d804ac854c7eba35889
 ### `docker:rc-cli` - linux; amd64
 
 ```console
-$ docker pull docker@sha256:d4c238edbc99a56cb3ecd1180cac4a9c993ae18049e335c888200443cf91b94b
+$ docker pull docker@sha256:c14c4bef734c4e69c19de0eadcb6ed00b3e5ba89f1b0bbac8a3f5fd955aee3b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.6 MB (68646898 bytes)**  
+-	Total Size: **68.7 MB (68659936 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:20c8e38c7a745ab6299f8b00cf632dc83605fe3dda10aad28f0ef360523eeb23`
+-	Image ID: `sha256:61fd50be698735ae5547ffcd85443dc2f3f03657d29f023a56c53008fab07622`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-x86_64.tar.gz / # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
-ENV DOCKER_VERSION=27.5.0-rc.1
-# Mon, 23 Dec 2024 12:04:24 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Mon, 23 Dec 2024 12:04:24 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 CMD ["sh"]
 ```
 
@@ -15188,110 +16260,110 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
 		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d185366bdae3ff1be746691465de29a0e0b2f3e04f28b39180d9375234c91e73`  
-		Last Modified: Wed, 08 Jan 2025 17:58:05 GMT  
-		Size: 8.1 MB (8058731 bytes)  
+	-	`sha256:d9da8d98be9c497538e046636271095d60600736b8b98dd17d89b85cf6750a8f`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
+		Size: 8.1 MB (8058734 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84093b170643807426ca3245685f647e26fe436e1ef1abba0ef4cf9534f507c3`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
+	-	`sha256:4386589b6f3f3d4248a89850307f7fce69767219761e159ae96376e95133648c`  
+		Last Modified: Thu, 09 Jan 2025 22:28:45 GMT  
 		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:aa172934c35105c4a18182bd9b857ade0907d0d1764f9ad891155264506fe4c6`  
-		Last Modified: Wed, 08 Jan 2025 17:58:07 GMT  
-		Size: 18.8 MB (18849783 bytes)  
+	-	`sha256:3eec89dde7ca9124d2c1f9aad8c5610b044c03e8375a50440e2b400c0b684dbf`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
+		Size: 18.8 MB (18849789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:728c7914f544bf3f45e01d7a92f1ec9bd4d0f74f8279cf05e3fec45d6e3330d7`  
-		Last Modified: Wed, 08 Jan 2025 17:58:07 GMT  
-		Size: 18.8 MB (18798856 bytes)  
+	-	`sha256:621d9e9d8f1c084324a9bfc17effabc710a3142456efbde84cc52357b5d39c7a`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
+		Size: 18.8 MB (18798855 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7588327f44f74c8cfb1df740b4b112bb9f349bea682699af57bce24c05cc282`  
-		Last Modified: Wed, 08 Jan 2025 17:58:07 GMT  
-		Size: 19.3 MB (19295660 bytes)  
+	-	`sha256:432b891fc60d0f0b3357554b2556dcc95eda57ad9cab9cefea2dd40d3fbfe313`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
+		Size: 19.3 MB (19308691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:212466ce3060eb51a55ca7cf64d97bf0e233dddf9601a6dc91616bda989f5492`  
-		Last Modified: Wed, 08 Jan 2025 17:58:07 GMT  
+	-	`sha256:c6b8e858f3681e6fef39f2adbdfcaeaaf4d540cbf7142ddfd213872e305aa38a`  
+		Last Modified: Thu, 09 Jan 2025 22:28:47 GMT  
 		Size: 538.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:804b79a204afdb2c58388b282b8ed120b0dc158fa22a5c2d2923a3bf5db3c694`  
-		Last Modified: Wed, 08 Jan 2025 17:58:08 GMT  
-		Size: 1.0 KB (1012 bytes)  
+	-	`sha256:33046038b891c90630e087369904e988fa6618edaa3a614ad802c2d6f5fbac02`  
+		Last Modified: Thu, 09 Jan 2025 22:28:48 GMT  
+		Size: 1.0 KB (1011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad7fc56b24e6aa15361bc928b8d0f71e680d193590e02cd51997ae117cff498a`  
-		Last Modified: Wed, 08 Jan 2025 17:58:08 GMT  
+	-	`sha256:639543bd8ef1632e940a6cba7fe057e640d898242a0b129845132d3be23fafe5`  
+		Last Modified: Thu, 09 Jan 2025 22:28:48 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:rc-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:ac31f9565a499bd5f412771d53a30ae6893aea2c754db10fb301893149cdb56f
+$ docker pull docker@sha256:508e9f08c885952fec190ac965b8d01200e8cf11a98bc2f057d49d7ea7fc22fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **37.9 KB (37911 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:317515039c3071a5cce19466606d02a144a142b7b277371a89e192393172e080`
+-	Image ID: `sha256:950bbdc34c347fdedb963abb527179012b95cec6d6e7225294598b6caa564b50`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7aa158e968e34bc63e4befc85a45577b7a0b109591e0943d6ae80ab00097be4c`  
-		Last Modified: Wed, 08 Jan 2025 17:58:06 GMT  
+	-	`sha256:f2dd35f84dacc2ba5f4b4d46fc3e5049242b63b573d54c8ac921484d00f56deb`  
+		Last Modified: Thu, 09 Jan 2025 22:28:46 GMT  
 		Size: 37.9 KB (37911 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:rc-cli` - linux; arm variant v6
 
 ```console
-$ docker pull docker@sha256:2e7e74e709a8b9028fe4a743d816cd6770373fe19a1e13e5c8666162a517c91d
+$ docker pull docker@sha256:db8c4d59993fec0c2c2ff454c708ea8b318ac99a2bff7095ef978d9cad65f55c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **63.8 MB (63760436 bytes)**  
+-	Total Size: **63.8 MB (63770910 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6d8c15bb64c3dc55919c09b44a7239b2c6d3d932733ead970c77bf843d32699c`
+-	Image ID: `sha256:c2eeb2cdfdc70031e1cae04d9ac9ea5a212fd6c457fecb031ce9c0ff5f56972b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-armhf.tar.gz / # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
-ENV DOCKER_VERSION=27.5.0-rc.1
-# Mon, 23 Dec 2024 12:04:24 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Mon, 23 Dec 2024 12:04:24 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 CMD ["sh"]
 ```
 
@@ -15312,98 +16384,98 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 18:20:15 GMT  
 		Size: 453.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:11fbab54b8c33ec7fe1e54aea2533ac4c726c7681009072e88d7bb0056ee820f`  
-		Last Modified: Wed, 08 Jan 2025 18:20:16 GMT  
-		Size: 16.9 MB (16866138 bytes)  
+	-	`sha256:5e9ab1964284c90cd66885201a9bbcfa54a7527c7036c167e8b25ba12315785d`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
+		Size: 16.9 MB (16866137 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52173ebe4d9e56aad1b08a4887413454783330788e1f9020dea7b819a39b55d6`  
-		Last Modified: Wed, 08 Jan 2025 18:20:16 GMT  
-		Size: 17.4 MB (17448771 bytes)  
+	-	`sha256:8a0a71ee996cd6ec00b3ca454fb99d1629126a0253f97fcfb804b92210e3e9ef`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
+		Size: 17.4 MB (17448786 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59bee8988b9009adee07e104fbdae1e17150da69675f290094af488eba90a7bd`  
-		Last Modified: Wed, 08 Jan 2025 18:20:16 GMT  
-		Size: 18.1 MB (18106577 bytes)  
+	-	`sha256:6dc27f56b4fbce0a698f26028b89d85a4b9344052051e6077787ec8ee4953d1f`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
+		Size: 18.1 MB (18117038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50ad93158fd9a65de4e80336f255cc9ccd128a5c8196fd88953432e9fc2699ce`  
-		Last Modified: Wed, 08 Jan 2025 18:20:17 GMT  
+	-	`sha256:a01bfd7920f902c6dba6f495793838e4136a4a693af86267c061790d0aa19aab`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
 		Size: 542.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6e58a75500fe9e1bebf429963a4aad7f19426d9ab4b13c0e33ee5a252571759`  
-		Last Modified: Wed, 08 Jan 2025 18:20:17 GMT  
-		Size: 1.0 KB (1018 bytes)  
+	-	`sha256:3e6d1fe7c267407142c7dcab85283bf1e880c8797a3e3698dcb175a58520bf54`  
+		Last Modified: Thu, 09 Jan 2025 22:30:13 GMT  
+		Size: 1.0 KB (1017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:26ad54b824ae7f5a03b05e7e93c7bbd376c5211294adb15419caad4de97c7e69`  
-		Last Modified: Wed, 08 Jan 2025 18:20:17 GMT  
+	-	`sha256:f969b16c61023503d53aa8108514e34fd6640304927df19de346779a0b3326b8`  
+		Last Modified: Thu, 09 Jan 2025 22:30:15 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:rc-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:c94ada25b972ddbfa5f210fa2060f51a9c9551f353db8a6db43031c502099676
+$ docker pull docker@sha256:0830a2e84a624c9c57da889697c4144edf919bfeab45dbe7bc30592c900d9fc4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.1 KB (38064 bytes)**  
+-	Total Size: **38.1 KB (38065 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f6b0659e32a0a045fc36507435965380271659fc987674465c9fd323e027600`
+-	Image ID: `sha256:967a1a6debd9643f24408258619b1b9b99cf2f24ddd9086cbc67fb25f975f3e7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c00093cd0be751f5656918c0f734df4eb1ee4576bcd741b1496face4f0f90c87`  
-		Last Modified: Wed, 08 Jan 2025 18:20:15 GMT  
-		Size: 38.1 KB (38064 bytes)  
+	-	`sha256:0ec6853da71644a36f250a4531da87f14ab3cc6feb14bf5c860975ada6a5e32f`  
+		Last Modified: Thu, 09 Jan 2025 22:30:12 GMT  
+		Size: 38.1 KB (38065 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:rc-cli` - linux; arm variant v7
 
 ```console
-$ docker pull docker@sha256:d334992f33be2cfadc328b17abbe0cb9b68b3810fcf9beacd665cb013ba39ebe
+$ docker pull docker@sha256:f77687b33a860a855ddcdba07802faffc2949e28e64e9b7fcbf6b0843f0b95a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **62.8 MB (62769440 bytes)**  
+-	Total Size: **62.8 MB (62775766 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2577449fd00eb7babb468a212e89033ba803559f0b5aafdfdb2b828d09f7727e`
+-	Image ID: `sha256:e50b1de49d4a597cd3b9d0295012c9def8cdead807f7998e0d771d6b2ad3e425`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-armv7.tar.gz / # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
-ENV DOCKER_VERSION=27.5.0-rc.1
-# Mon, 23 Dec 2024 12:04:24 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Mon, 23 Dec 2024 12:04:24 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 CMD ["sh"]
 ```
 
@@ -15424,98 +16496,98 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 18:35:54 GMT  
 		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:069f09b40c84f1529b8ffdba1b3e433bbcc6e71b347c69887c7097159559ec1f`  
-		Last Modified: Wed, 08 Jan 2025 18:35:55 GMT  
-		Size: 16.9 MB (16856026 bytes)  
+	-	`sha256:5cce3d589c0262c7f4a8c32c1d67310d9f243e977791ab808712b89ecd304d29`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 16.9 MB (16856002 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ed387bba547ca9836224f95363cf2479a388d110a757eb27a801e00cf6306e3`  
-		Last Modified: Wed, 08 Jan 2025 18:35:55 GMT  
-		Size: 17.4 MB (17427575 bytes)  
+	-	`sha256:46e4ad7c54ebd6402c0beb5affcbb3693426ec318dcc72b2587436c260e17f0c`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 17.4 MB (17427582 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74b70245f940390e6c626dba7eaa476ab448cf4e898cd4a84a72a9c3c539f2b6`  
-		Last Modified: Wed, 08 Jan 2025 18:35:56 GMT  
-		Size: 18.1 MB (18092653 bytes)  
+	-	`sha256:b2bc0a6c2f4ed088d3bc7fd01b80a4678cfa87f538c10648b3e5d91790618e95`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 18.1 MB (18098987 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b47a76f61278ef1619dc71793aeb867a91d9fe9ee16e7bdfa3e2a62ebcac084a`  
-		Last Modified: Wed, 08 Jan 2025 18:35:56 GMT  
-		Size: 541.0 B  
+	-	`sha256:87b8b9d2ef53aa5dad5ea0459ac27a83545b15e2948b7828669008b643c24e58`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
+		Size: 544.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ed52b15605de211c037fe5d15ef6e8369636f0042338c5e70b05165ddea059d`  
-		Last Modified: Wed, 08 Jan 2025 18:35:56 GMT  
-		Size: 1.0 KB (1013 bytes)  
+	-	`sha256:192c8acb0a9588aa498003df335dc4e6b0380ba2fea64d067694ca6419c199f4`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.0 KB (1019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4100cdb760440441b4cc258b93b2c090808b59e5239e1094438a9a7fd1b1e05`  
-		Last Modified: Wed, 08 Jan 2025 18:35:57 GMT  
+	-	`sha256:6ef1b77e5b58b0bfdc06052a14f6896d21976f883c36e576776800ebdc61923d`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:rc-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:e7624fa8c194869d14547ef5976920a7e6cbafc715479c57958e555bd9a25c05
+$ docker pull docker@sha256:9dc154b1a93d7226c391a0f6f277f5a87071a7a4b28ad39a24aa63c5efb9a644
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **38.1 KB (38065 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ab838a3344889f04b0958a85b57a538f936df7048b9a64f0f872cc61fcfff8e1`
+-	Image ID: `sha256:d06686dc6b6759416850118304c954bb9ded06b6a626aaf2f3c5454c315dd30c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2bd68db1ff4a9e6f595726b4ab783effbd00099d55e5be40e77d2713b62d450c`  
-		Last Modified: Wed, 08 Jan 2025 18:35:54 GMT  
+	-	`sha256:04c960f20088a663034bd90db6157f5bd22fcd140275c8d7fd96260cbce73166`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
 		Size: 38.1 KB (38065 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:rc-cli` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:014302f0639c1fbab1113ed2c20636e4edbd747d8931e365a18d159d27ad1031
+$ docker pull docker@sha256:db7d00873d2eebcc1c110e2264734bf73cf6a5a7564d840c06f9a366fcbe3203
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **64.6 MB (64612585 bytes)**  
+-	Total Size: **64.6 MB (64623851 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:74c65f82ce56e8551bb37ec718febfe436a3f9dd387e95f5c7bc67a88a1b1c52`
+-	Image ID: `sha256:1b92eee8f92ab0b74ccdbce000c2ffb116d3b0402b11540eb08ac8fade003b3b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["sh"]`
 
 ```dockerfile
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-aarch64.tar.gz / # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN apk add --no-cache 		ca-certificates 		openssh-client 		git # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN [ -e /etc/nsswitch.conf ] && grep '^hosts: files dns' /etc/nsswitch.conf # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN set -eux; 	addgroup -g 2375 -S docker # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
-ENV DOCKER_VERSION=27.5.0-rc.1
-# Mon, 23 Dec 2024 12:04:24 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/test/x86_64/docker-27.5.0-rc.2.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/test/armel/docker-27.5.0-rc.2.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/test/armhf/docker-27.5.0-rc.2.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/test/aarch64/docker-27.5.0-rc.2.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		'docker/docker' 	; 	rm docker.tgz; 		docker --version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-amd64'; 			sha256='32ed111e941e385c2fb8261eba06a4056915718fd606f8278834ac1931d261a2'; 			;; 		'armhf') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v6'; 			sha256='744352489292ab1439e4b4facfd49f81cbe25e71e205908bd9ec44618759739c'; 			;; 		'armv7') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm-v7'; 			sha256='5a83e1663b595147ac0225d876fc77e3b441e62dac7a59523ba7003eb6733b8b'; 			;; 		'aarch64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-arm64'; 			sha256='138b587399b27bb61945a36d67866177b85dea1155101a2be63c7ab715f18a2e'; 			;; 		'ppc64le') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-ppc64le'; 			sha256='b9eb337b16a75ad45ff846134d34599169bc6dfdb168fb51303fc6b08ed9f31e'; 			;; 		'riscv64') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-riscv64'; 			sha256='de8151fe6ced7118f2d680e1d1e7c5cb00496ca0e8b0f8b261450c6636d86978'; 			;; 		's390x') 			url='https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.linux-s390x'; 			sha256='422a9a0250d52dfdd6b78c8152fbf9df41993be4c7add93438c22122ff6c7da8'; 			;; 		*) echo >&2 "warning: unsupported 'docker-buildx' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-buildx' "$url"; 	echo "$sha256 *"'docker-buildx' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-buildx'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-buildx' "$plugin"; 	chmod +x "$plugin"; 		docker buildx version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Mon, 23 Dec 2024 12:04:24 GMT
-RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-x86_64'; 			sha256='ec81c40f138db0ca3aee71c2fffb0075636bea5a02109c75177f66e1b8f568b9'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv6'; 			sha256='a570825379639804e406c07fe73d052e7909e74c976c3a5cc6cad74a871e405d'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-armv7'; 			sha256='bd6a7456eb94e3bb7df31be43f84af9882149abe417f5b7a2635108325e7e604'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-aarch64'; 			sha256='7aa6406406be13c075e92cfbf322470318a9ad7a58c93a9fb3a215dc14aed8bd'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-ppc64le'; 			sha256='4e56b1e8f5d5e68ce66d5a156a96597b1d7534a94dd2d846d288797008e044eb'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-riscv64'; 			sha256='686bba58b9c2cad3edc4045dadb36ed2e2d4b0b72ada8eed832b6a9561fdb50d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-linux-s390x'; 			sha256='a40fdae1e4a3b90186bc06712b0b19079877bf408f39b3425bf65048e19bd8aa'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Wed, 08 Jan 2025 18:52:25 GMT
+RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-x86_64'; 			sha256='e746a42f33113ca1057a72adff5f07d584b38c94dd7cc8368f6a30c276367710'; 			;; 		'armhf') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv6'; 			sha256='7a527b3c21d2e9f1f98cef3b37ad2fcb84f410dfcd67916e6fad78123155d216'; 			;; 		'armv7') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-armv7'; 			sha256='556710d309f248fffbfab835c1142e32ea9dd0b1ccfbdbeea2624db0f35c68a6'; 			;; 		'aarch64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-aarch64'; 			sha256='c5b795b304410d46a754ecacfee36bf1f341e3bcd562a882525115e09ed90d6c'; 			;; 		'ppc64le') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-ppc64le'; 			sha256='4eb2cac95680923c50bd1b1248e460cafe99ebaa063e394dd5178bc4065e0efa'; 			;; 		'riscv64') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-riscv64'; 			sha256='d007f7dd93ea364d1e341e53308691f61cebb86a45b63d002157c22cba80510d'; 			;; 		's390x') 			url='https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-linux-s390x'; 			sha256='b91db23ea592c81162bb92b042873569cbe1e381400ad45447521cfa984bc184'; 			;; 		*) echo >&2 "warning: unsupported 'docker-compose' architecture ($apkArch); skipping"; exit 0 ;; 	esac; 		wget -O 'docker-compose' "$url"; 	echo "$sha256 *"'docker-compose' | sha256sum -c -; 		plugin='/usr/local/libexec/docker/cli-plugins/docker-compose'; 	mkdir -p "$(dirname "$plugin")"; 	mv -vT 'docker-compose' "$plugin"; 	chmod +x "$plugin"; 		ln -sv "$plugin" /usr/local/bin/; 	docker-compose --version; 	docker compose version # buildkit
+# Wed, 08 Jan 2025 18:52:25 GMT
 COPY modprobe.sh /usr/local/bin/modprobe # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENV DOCKER_TLS_CERTDIR=/certs
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 RUN mkdir /certs /certs/client && chmod 1777 /certs /certs/client # buildkit
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 23 Dec 2024 12:04:24 GMT
+# Wed, 08 Jan 2025 18:52:25 GMT
 CMD ["sh"]
 ```
 
@@ -15524,61 +16596,61 @@ CMD ["sh"]
 		Last Modified: Wed, 08 Jan 2025 17:23:52 GMT  
 		Size: 4.0 MB (3992359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd118a02a977501603a666f0534bd4e65d18527588ad5cf400f8c10d29b641a2`  
-		Last Modified: Wed, 08 Jan 2025 18:21:52 GMT  
-		Size: 8.1 MB (8073087 bytes)  
+	-	`sha256:3528552267cec0f9e2dee7d372df3bbea6255a3ca1a18ba3e58e5cfd106d15e1`  
+		Last Modified: Thu, 09 Jan 2025 22:29:23 GMT  
+		Size: 8.1 MB (8073134 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf7344f9e39163b0db1d8cc353b60bb1b0f4a1f5bce6103ce319dc4b80767896`  
-		Last Modified: Wed, 08 Jan 2025 18:21:51 GMT  
-		Size: 454.0 B  
+	-	`sha256:d4781719ef357b2c136f17ff57b79d601b4058a8861d68048cf902106cf3ae9d`  
+		Last Modified: Thu, 09 Jan 2025 22:29:22 GMT  
+		Size: 455.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dc9d0501c659e9996506457c271e935b286b1a36410eeba8026d42730c469bde`  
-		Last Modified: Wed, 08 Jan 2025 18:21:52 GMT  
-		Size: 17.8 MB (17795775 bytes)  
+	-	`sha256:8bcfe8386e2237fec90daf19cd8ba491dfd16e22403ea006d78c74d9e304e7da`  
+		Last Modified: Thu, 09 Jan 2025 22:29:24 GMT  
+		Size: 17.8 MB (17795789 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c13fd75e9ccda9d1d254561f4bbbb148870f59ca6f4b024cd65844a98cb71cb`  
-		Last Modified: Wed, 08 Jan 2025 18:21:52 GMT  
-		Size: 17.1 MB (17106460 bytes)  
+	-	`sha256:a7a1a11b1c0f7f2eec8de0dee32306eb07511123c3079e8d30e5d2c55291cf73`  
+		Last Modified: Thu, 09 Jan 2025 22:29:24 GMT  
+		Size: 17.1 MB (17106442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f85bcd21765cb8c05d3739bcd1fb5482cbb351da6b1ad78fe38f3b9951dad85d`  
-		Last Modified: Wed, 08 Jan 2025 18:21:54 GMT  
-		Size: 17.6 MB (17642749 bytes)  
+	-	`sha256:41348e1c5583cceaf0d743a287b5829751e2de935eed8a50c782219d9792989c`  
+		Last Modified: Thu, 09 Jan 2025 22:29:24 GMT  
+		Size: 17.7 MB (17653974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d2bb73011f2d3c9afe5ebd89ba6f896b42afb86f59c361549393c69cabc91720`  
-		Last Modified: Wed, 08 Jan 2025 18:21:53 GMT  
-		Size: 541.0 B  
+	-	`sha256:ae1e54ea85aba2ead18cf01620a297d57612c95088894b00881fffda27f1e5ea`  
+		Last Modified: Thu, 09 Jan 2025 22:29:24 GMT  
+		Size: 539.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3943034a025077136d95699e23a430ae80a733bcf578ba514dba74b0a1e1cd0`  
-		Last Modified: Wed, 08 Jan 2025 18:21:53 GMT  
-		Size: 1.0 KB (1012 bytes)  
+	-	`sha256:f14bbbf7fcfe04dd9d925b93b69abdc72380976ef81bbfd2dfc042e3f75b86c2`  
+		Last Modified: Thu, 09 Jan 2025 22:29:25 GMT  
+		Size: 1.0 KB (1011 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c5550cda41ef4efe67333dba99c08cf7b06cf3f4b175838e8c086f1040d4b3b`  
-		Last Modified: Wed, 08 Jan 2025 18:21:53 GMT  
+	-	`sha256:2e82aac5329a578313454cdc01cbf748ca6cf66d7c8596e771bd64e8b648f3b1`  
+		Last Modified: Thu, 09 Jan 2025 22:29:25 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:rc-cli` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:7aff644be863d47180f441eafeb0ebbea3f154755d12195286c431f11b35035b
+$ docker pull docker@sha256:888b931181514dc4f8746b0c25742d486c4ab1d57229e622ac1ab58a2aa56922
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **38.1 KB (38105 bytes)**  
+-	Total Size: **38.1 KB (38104 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ff2009808de7e1638e250881ecb8883b5d4e817b14fd3dbc1d57442f8b922285`
+-	Image ID: `sha256:216686a098d073262bf56f4b078d01073fe27189c8cc2d70c15b7a8f252d5be0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7096a8e7c5ec3000679e6a8f90e8ade60bc0e4a4270d5e6c590ba8bbed21bf37`  
-		Last Modified: Wed, 08 Jan 2025 18:21:51 GMT  
-		Size: 38.1 KB (38105 bytes)  
+	-	`sha256:36babd78e905080ce1f3d4ce7b845dcf86c25e282ea5b16c0a0f758017f9d2d4`  
+		Last Modified: Thu, 09 Jan 2025 22:29:22 GMT  
+		Size: 38.1 KB (38104 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `docker:rc-dind`
@@ -16624,7 +17696,7 @@ $ docker pull docker@sha256:6298f08c1eb8c457ff8970d23d672ad684e6fa48777fc12955d6
 ## `docker:rc-windowsservercore`
 
 ```console
-$ docker pull docker@sha256:48c904f5e170ed211543c9b084281b5ff8dbe1fffcf7f0eb30059f82b8282817
+$ docker pull docker@sha256:45da1aef03960bd831584932b366823e5b42cba3e11f83817b8a1c38e6cf6f66
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16635,14 +17707,14 @@ $ docker pull docker@sha256:48c904f5e170ed211543c9b084281b5ff8dbe1fffcf7f0eb3005
 ### `docker:rc-windowsservercore` - windows version 10.0.20348.2966; amd64
 
 ```console
-$ docker pull docker@sha256:f060df9628c987ea789c4df5780c0943df13de795de60711bb97d96b0529a222
+$ docker pull docker@sha256:34c8def198551f1459d069bd5d4d37df4100afe874339a550015e35c5280c9d1
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2313174502 bytes)**  
+-	Total Size: **2.3 GB (2313129839 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79c54349c5113cf4e6163046f713fabab511bacc7b343b6014c159fba49cbe30`
+-	Image ID: `sha256:c879b100b69e4588217fec80ac9427eb48b8583df5a57875fa7acff211cf3846`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -16651,31 +17723,31 @@ $ docker pull docker@sha256:f060df9628c987ea789c4df5780c0943df13de795de60711bb97
 RUN Apply image 10.0.20348.2700
 # Thu, 05 Dec 2024 01:36:58 GMT
 RUN Install update 10.0.20348.2966
-# Tue, 24 Dec 2024 21:32:16 GMT
+# Thu, 09 Jan 2025 22:28:59 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 24 Dec 2024 21:32:31 GMT
+# Thu, 09 Jan 2025 22:30:16 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 24 Dec 2024 21:32:32 GMT
-ENV DOCKER_VERSION=27.5.0-rc.1
-# Tue, 24 Dec 2024 21:32:32 GMT
-ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.1.zip
-# Tue, 24 Dec 2024 21:32:44 GMT
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.2.zip
+# Thu, 09 Jan 2025 22:30:37 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 24 Dec 2024 21:32:45 GMT
+# Thu, 09 Jan 2025 22:30:37 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Tue, 24 Dec 2024 21:32:45 GMT
+# Thu, 09 Jan 2025 22:30:38 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Tue, 24 Dec 2024 21:32:46 GMT
+# Thu, 09 Jan 2025 22:30:38 GMT
 ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Tue, 24 Dec 2024 21:32:54 GMT
+# Thu, 09 Jan 2025 22:30:47 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 24 Dec 2024 21:32:55 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Tue, 24 Dec 2024 21:32:56 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Tue, 24 Dec 2024 21:32:56 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Tue, 24 Dec 2024 21:33:05 GMT
+# Thu, 09 Jan 2025 22:30:47 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:48 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:48 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:58 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -16688,70 +17760,70 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 10 Dec 2024 18:41:03 GMT  
 		Size: 791.7 MB (791681213 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f63539bd5606097057aa02c357af9d7a0e1646815b12be20dc8f737692a0f0e3`  
-		Last Modified: Tue, 24 Dec 2024 21:33:14 GMT  
-		Size: 1.3 KB (1282 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a22d3469291cd45bf8e0e73371485a1742ba6f079a8eb2ed0cd0d86ddbfa6122`  
-		Last Modified: Tue, 24 Dec 2024 21:33:14 GMT  
-		Size: 344.5 KB (344495 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2806a68fc42aa330bf56cb205269fa5babf79accb9b1386be6a9e0fb93119cbb`  
-		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
-		Size: 1.3 KB (1281 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22666c5dabea757b86076cd5fe26537d5bebbe49a7a79cf89c5ee12643efa9b8`  
-		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
-		Size: 1.3 KB (1281 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:413691bf0e8f67c1a40025543e4c2d35b542644368a6478293fbed434ecb5d9f`  
-		Last Modified: Tue, 24 Dec 2024 21:33:14 GMT  
-		Size: 19.2 MB (19152808 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0afb618bebd1ae71a220d6645aba1b28bc34f615b1e3c1d1b95515b127f02cd7`  
-		Last Modified: Tue, 24 Dec 2024 21:33:11 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ef2efc888bd6324dfb7b051550d7efe5480bd2b53a9c5da68fc5c5a86bd7760`  
-		Last Modified: Tue, 24 Dec 2024 21:33:11 GMT  
-		Size: 1.3 KB (1284 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46e018d4d50ac765f64fd6c45823dff2ba7c53d05bdf53def4650edd17021382`  
-		Last Modified: Tue, 24 Dec 2024 21:33:10 GMT  
-		Size: 1.3 KB (1288 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a87787eeb120e7bcc6042c679f7f51cc3c1f290e226d2cae2942f93826f74e97`  
-		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
-		Size: 19.6 MB (19637964 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:884da3d04c115b4a1215815cf66e0d0be9480171f497ef11dc2b9abab5d6fa52`  
-		Last Modified: Tue, 24 Dec 2024 21:33:09 GMT  
-		Size: 1.3 KB (1283 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c38c6d76f55c43dcabade54de45a3b2ac5397beea2b685d25cec730cba2a53c6`  
-		Last Modified: Tue, 24 Dec 2024 21:33:09 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7937e1c18b4dbdd128c94ee1e67dbf60e81fb28a163156f31c1e430c2bd2031`  
-		Last Modified: Tue, 24 Dec 2024 21:33:09 GMT  
+	-	`sha256:e64f3ca98ebbeaabbe9caa8a22cf59bc40d9d102d2526d1049bd68a910921bf9`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
 		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4513c6265bdc4a4841cd89793fbc86cbe1d89824943d131fd32064295171fe7f`  
-		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
-		Size: 20.2 MB (20154041 bytes)  
+	-	`sha256:c556be6783cdbb2c773a11684d233d0b303cceca2409d251ca495028eb4e8b32`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 357.0 KB (356971 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:62db5363d85636ed44a6ab46f57b9f37cd884f03ec2ce37d0e33cd96233b9138`  
+		Last Modified: Thu, 09 Jan 2025 22:31:02 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b435965c81c2e8fb61ce8a0eadf77cfb0e2f9886595430f0033e80e767731f3c`  
+		Last Modified: Thu, 09 Jan 2025 22:31:02 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:159da7e211e53c5b7ddeec749a6c40bc4434d55aa46675a838d8e577c3dac69f`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 19.1 MB (19131765 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1584497e6e0be075b115c53cc08d3ac3095f7ab38fdfc856d8cb48449bb7e060`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0348525302a5482ba9b0d399d7eacc24af94672045c97ecb89568235ded2564b`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1283 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b3147b65b25122a7c3e76ab0b163ff239af806851dbe1337f4cceccfe784799f`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a9f472ac9bf23724607ca28bcc8bf1acc04896b2d5e40f90e05234e1dfef84e0`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 19.6 MB (19615417 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6fa14a61e024eeab3914a555cf693f8281b9bdb37f9ddb1cc3148658be9d36f7`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a7ee6431a575ea313a3aca6d1c013e02216a2a470e4eae7992499d19398ae8ab`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.3 KB (1279 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:625c47e3aecbfdba39fc9ee46db788bcfb5edb0fa800215f469c44defd7d81db`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0e92dc6bab1ddd4745640a6d67475207ee6ca87cb4ba8efe6494172cba722a6b`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 20.1 MB (20140505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `docker:rc-windowsservercore` - windows version 10.0.17763.6659; amd64
 
 ```console
-$ docker pull docker@sha256:686c30f73587c730321cad9c057971af53a33370b7d8d4286cae294d26ad4ec8
+$ docker pull docker@sha256:057210aa60aaff6fa876e991185b963cb8627dd9b2d8bf7dd4ec1ab520281f8b
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2073612215 bytes)**  
+-	Total Size: **2.1 GB (2073618238 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b84832ebdf5b660baa2d76253298957b71d48305b3240d2c38f373daca00d98f`
+-	Image ID: `sha256:aeed8631f9b336871bf7e8006b7e5fc007c9ef03c7355d97ccd061c85b38705f`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -16760,31 +17832,31 @@ $ docker pull docker@sha256:686c30f73587c730321cad9c057971af53a33370b7d8d4286cae
 RUN Apply image 10.0.17763.6293
 # Thu, 05 Dec 2024 05:10:22 GMT
 RUN Install update 10.0.17763.6659
-# Tue, 24 Dec 2024 21:32:05 GMT
+# Thu, 09 Jan 2025 22:28:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 24 Dec 2024 21:32:32 GMT
+# Thu, 09 Jan 2025 22:30:06 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 24 Dec 2024 21:32:33 GMT
-ENV DOCKER_VERSION=27.5.0-rc.1
-# Tue, 24 Dec 2024 21:32:33 GMT
-ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.1.zip
-# Tue, 24 Dec 2024 21:32:51 GMT
+# Thu, 09 Jan 2025 22:30:06 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Thu, 09 Jan 2025 22:30:07 GMT
+ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.2.zip
+# Thu, 09 Jan 2025 22:30:25 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 24 Dec 2024 21:32:51 GMT
+# Thu, 09 Jan 2025 22:30:25 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Tue, 24 Dec 2024 21:32:51 GMT
+# Thu, 09 Jan 2025 22:30:26 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Tue, 24 Dec 2024 21:32:52 GMT
+# Thu, 09 Jan 2025 22:30:26 GMT
 ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Tue, 24 Dec 2024 21:33:11 GMT
+# Thu, 09 Jan 2025 22:30:39 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 24 Dec 2024 21:33:11 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Tue, 24 Dec 2024 21:33:12 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Tue, 24 Dec 2024 21:33:12 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Tue, 24 Dec 2024 21:33:27 GMT
+# Thu, 09 Jan 2025 22:30:40 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:40 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:40 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:53 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -16797,63 +17869,63 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 10 Dec 2024 18:45:28 GMT  
 		Size: 293.9 MB (293901821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5cf5cc0f04280c4f94e99dc74bca4537c728a2e865602b4c7df0a869b97aa2d8`  
-		Last Modified: Tue, 24 Dec 2024 21:33:33 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:baf08f4f100241820dd2321371c9449504c180e9aa1f4f07045511f101355d4c`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 1.3 KB (1329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f5c018baa4cd08368e4409d9ae0701a563e189edc81adc7468070d83211bcf4`  
-		Last Modified: Tue, 24 Dec 2024 21:33:32 GMT  
-		Size: 471.9 KB (471890 bytes)  
+	-	`sha256:de7317db44443713338c98d87e8b8785cc16e61d3678b7739432fac7a0c9aae7`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 471.1 KB (471058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe5dfa39ceae9ecfc0b85879c1bcb7dca3dd816220ce026c911c0e30fb978d3f`  
-		Last Modified: Tue, 24 Dec 2024 21:33:32 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:329b49d91a016a02daed99f08dd3d940765b76b3f49239fd046b301c07ebd29e`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87db596dbd06aa586eae180b90bb0dceb163ef6e953c4e69bf1c89fb2b45631b`  
-		Last Modified: Tue, 24 Dec 2024 21:33:31 GMT  
-		Size: 1.3 KB (1294 bytes)  
+	-	`sha256:101b3efa01e144b60175fc234b7ef5e9b6b469d3f7fe547aec3c161816dc8238`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c6c8e6be11d6c2aa0ea24c4911a23b271b12242b2535e34e162365d65beec9a`  
-		Last Modified: Tue, 24 Dec 2024 21:33:33 GMT  
-		Size: 19.2 MB (19161495 bytes)  
+	-	`sha256:fbc6beeebc1583474f6206c51fe7f7bf7ffcba620d988f30721486a80317d9f4`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 19.2 MB (19157595 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b2a800dea9cd4124557d6b0c02bdd1a09c0c3adf94da5e9aacbec30a070b383`  
-		Last Modified: Tue, 24 Dec 2024 21:33:31 GMT  
+	-	`sha256:ab3b3346e95ba20efef3a0b225e8f6eeb2e4ad1c4a25ef214af3cd3884022c98`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
 		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6d4c0e71b35e0a4cfd400d2243d7b5d1b4e5057a89c8e8078cddaa8a4e78155`  
-		Last Modified: Tue, 24 Dec 2024 21:33:31 GMT  
-		Size: 1.3 KB (1275 bytes)  
+	-	`sha256:7713cf22c990e5be40762b0caefc453b83b1aa128ecdd9c87c6762c0c6205e9d`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3986b91b8e1d14f961566561f915ae092de47cb2fe551c16efad827743e846`  
-		Last Modified: Tue, 24 Dec 2024 21:33:31 GMT  
-		Size: 1.3 KB (1298 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a97c32bdf11582062e3ba8903a9933e9bad10302993456a9c6e008239c3130ca`  
-		Last Modified: Tue, 24 Dec 2024 21:33:32 GMT  
-		Size: 19.6 MB (19644920 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abcde94ac84f47d4747374f206c74626ec3ee839195b361af7c21a5d40566556`  
-		Last Modified: Tue, 24 Dec 2024 21:33:30 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ec3c7da2aea03b09076b099c426ff7c9b535cfa3a03620dc3521cdf8176e70b`  
-		Last Modified: Tue, 24 Dec 2024 21:33:30 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bf7001b3252d15320448d1fdd6d814bef5bfbc775a2eb7e002331e06c46b8f5`  
-		Last Modified: Tue, 24 Dec 2024 21:33:30 GMT  
+	-	`sha256:2a2cc7427122b33bfa2e3b833940957fa2e06340b1b76d201b8247b9619b0018`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
 		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a5d5eab58c6a81afbbfc00aae2929a4b893a3039b9da20e06a640895ab95011`  
-		Last Modified: Tue, 24 Dec 2024 21:33:32 GMT  
-		Size: 20.2 MB (20152101 bytes)  
+	-	`sha256:9809ead8de21abdf5846fdbfa94f9b71d4c9f078526765b5f31fdc63b87d6f76`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 19.6 MB (19643601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:04717aaf7687614f2bf808d407179765af282d2e2d252db64f7123966a04c2ea`  
+		Last Modified: Thu, 09 Jan 2025 22:30:57 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fbc9ca72b34caddfb3cca6c51f5db1b6f775d58c972fd36dc09ccbf44fc45fda`  
+		Last Modified: Thu, 09 Jan 2025 22:30:58 GMT  
+		Size: 1.4 KB (1385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f0b5317c77f72317760dc2066aa0c624718f445d00d319be2397030d26c637b4`  
+		Last Modified: Thu, 09 Jan 2025 22:30:58 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:995d49cd3175fcc8f1a22a3d4ad19eef4f50da337db1901caa160070954bfcfd`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 20.2 MB (20164019 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:rc-windowsservercore-1809`
 
 ```console
-$ docker pull docker@sha256:3035d541fac80cabda27dc2faec0e57bb52941638fa59337481cb69e9f6e5cc6
+$ docker pull docker@sha256:19aea85a1ca846c490972fa5fe6cb66d345d256ccbe9e306586201ce200ef72f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16863,14 +17935,14 @@ $ docker pull docker@sha256:3035d541fac80cabda27dc2faec0e57bb52941638fa59337481c
 ### `docker:rc-windowsservercore-1809` - windows version 10.0.17763.6659; amd64
 
 ```console
-$ docker pull docker@sha256:686c30f73587c730321cad9c057971af53a33370b7d8d4286cae294d26ad4ec8
+$ docker pull docker@sha256:057210aa60aaff6fa876e991185b963cb8627dd9b2d8bf7dd4ec1ab520281f8b
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2073612215 bytes)**  
+-	Total Size: **2.1 GB (2073618238 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b84832ebdf5b660baa2d76253298957b71d48305b3240d2c38f373daca00d98f`
+-	Image ID: `sha256:aeed8631f9b336871bf7e8006b7e5fc007c9ef03c7355d97ccd061c85b38705f`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -16879,31 +17951,31 @@ $ docker pull docker@sha256:686c30f73587c730321cad9c057971af53a33370b7d8d4286cae
 RUN Apply image 10.0.17763.6293
 # Thu, 05 Dec 2024 05:10:22 GMT
 RUN Install update 10.0.17763.6659
-# Tue, 24 Dec 2024 21:32:05 GMT
+# Thu, 09 Jan 2025 22:28:51 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 24 Dec 2024 21:32:32 GMT
+# Thu, 09 Jan 2025 22:30:06 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 24 Dec 2024 21:32:33 GMT
-ENV DOCKER_VERSION=27.5.0-rc.1
-# Tue, 24 Dec 2024 21:32:33 GMT
-ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.1.zip
-# Tue, 24 Dec 2024 21:32:51 GMT
+# Thu, 09 Jan 2025 22:30:06 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Thu, 09 Jan 2025 22:30:07 GMT
+ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.2.zip
+# Thu, 09 Jan 2025 22:30:25 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 24 Dec 2024 21:32:51 GMT
+# Thu, 09 Jan 2025 22:30:25 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Tue, 24 Dec 2024 21:32:51 GMT
+# Thu, 09 Jan 2025 22:30:26 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Tue, 24 Dec 2024 21:32:52 GMT
+# Thu, 09 Jan 2025 22:30:26 GMT
 ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Tue, 24 Dec 2024 21:33:11 GMT
+# Thu, 09 Jan 2025 22:30:39 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 24 Dec 2024 21:33:11 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Tue, 24 Dec 2024 21:33:12 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Tue, 24 Dec 2024 21:33:12 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Tue, 24 Dec 2024 21:33:27 GMT
+# Thu, 09 Jan 2025 22:30:40 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:40 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:40 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:53 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -16916,63 +17988,63 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 10 Dec 2024 18:45:28 GMT  
 		Size: 293.9 MB (293901821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5cf5cc0f04280c4f94e99dc74bca4537c728a2e865602b4c7df0a869b97aa2d8`  
-		Last Modified: Tue, 24 Dec 2024 21:33:33 GMT  
-		Size: 1.3 KB (1283 bytes)  
+	-	`sha256:baf08f4f100241820dd2321371c9449504c180e9aa1f4f07045511f101355d4c`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 1.3 KB (1329 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5f5c018baa4cd08368e4409d9ae0701a563e189edc81adc7468070d83211bcf4`  
-		Last Modified: Tue, 24 Dec 2024 21:33:32 GMT  
-		Size: 471.9 KB (471890 bytes)  
+	-	`sha256:de7317db44443713338c98d87e8b8785cc16e61d3678b7739432fac7a0c9aae7`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 471.1 KB (471058 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:fe5dfa39ceae9ecfc0b85879c1bcb7dca3dd816220ce026c911c0e30fb978d3f`  
-		Last Modified: Tue, 24 Dec 2024 21:33:32 GMT  
-		Size: 1.3 KB (1300 bytes)  
+	-	`sha256:329b49d91a016a02daed99f08dd3d940765b76b3f49239fd046b301c07ebd29e`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1285 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:87db596dbd06aa586eae180b90bb0dceb163ef6e953c4e69bf1c89fb2b45631b`  
-		Last Modified: Tue, 24 Dec 2024 21:33:31 GMT  
-		Size: 1.3 KB (1294 bytes)  
+	-	`sha256:101b3efa01e144b60175fc234b7ef5e9b6b469d3f7fe547aec3c161816dc8238`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1297 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:8c6c8e6be11d6c2aa0ea24c4911a23b271b12242b2535e34e162365d65beec9a`  
-		Last Modified: Tue, 24 Dec 2024 21:33:33 GMT  
-		Size: 19.2 MB (19161495 bytes)  
+	-	`sha256:fbc6beeebc1583474f6206c51fe7f7bf7ffcba620d988f30721486a80317d9f4`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 19.2 MB (19157595 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1b2a800dea9cd4124557d6b0c02bdd1a09c0c3adf94da5e9aacbec30a070b383`  
-		Last Modified: Tue, 24 Dec 2024 21:33:31 GMT  
+	-	`sha256:ab3b3346e95ba20efef3a0b225e8f6eeb2e4ad1c4a25ef214af3cd3884022c98`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
 		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e6d4c0e71b35e0a4cfd400d2243d7b5d1b4e5057a89c8e8078cddaa8a4e78155`  
-		Last Modified: Tue, 24 Dec 2024 21:33:31 GMT  
-		Size: 1.3 KB (1275 bytes)  
+	-	`sha256:7713cf22c990e5be40762b0caefc453b83b1aa128ecdd9c87c6762c0c6205e9d`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
+		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:cc3986b91b8e1d14f961566561f915ae092de47cb2fe551c16efad827743e846`  
-		Last Modified: Tue, 24 Dec 2024 21:33:31 GMT  
-		Size: 1.3 KB (1298 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a97c32bdf11582062e3ba8903a9933e9bad10302993456a9c6e008239c3130ca`  
-		Last Modified: Tue, 24 Dec 2024 21:33:32 GMT  
-		Size: 19.6 MB (19644920 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:abcde94ac84f47d4747374f206c74626ec3ee839195b361af7c21a5d40566556`  
-		Last Modified: Tue, 24 Dec 2024 21:33:30 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0ec3c7da2aea03b09076b099c426ff7c9b535cfa3a03620dc3521cdf8176e70b`  
-		Last Modified: Tue, 24 Dec 2024 21:33:30 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1bf7001b3252d15320448d1fdd6d814bef5bfbc775a2eb7e002331e06c46b8f5`  
-		Last Modified: Tue, 24 Dec 2024 21:33:30 GMT  
+	-	`sha256:2a2cc7427122b33bfa2e3b833940957fa2e06340b1b76d201b8247b9619b0018`  
+		Last Modified: Thu, 09 Jan 2025 22:30:59 GMT  
 		Size: 1.3 KB (1300 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:9a5d5eab58c6a81afbbfc00aae2929a4b893a3039b9da20e06a640895ab95011`  
-		Last Modified: Tue, 24 Dec 2024 21:33:32 GMT  
-		Size: 20.2 MB (20152101 bytes)  
+	-	`sha256:9809ead8de21abdf5846fdbfa94f9b71d4c9f078526765b5f31fdc63b87d6f76`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 19.6 MB (19643601 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:04717aaf7687614f2bf808d407179765af282d2e2d252db64f7123966a04c2ea`  
+		Last Modified: Thu, 09 Jan 2025 22:30:57 GMT  
+		Size: 1.3 KB (1303 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:fbc9ca72b34caddfb3cca6c51f5db1b6f775d58c972fd36dc09ccbf44fc45fda`  
+		Last Modified: Thu, 09 Jan 2025 22:30:58 GMT  
+		Size: 1.4 KB (1385 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f0b5317c77f72317760dc2066aa0c624718f445d00d319be2397030d26c637b4`  
+		Last Modified: Thu, 09 Jan 2025 22:30:58 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:995d49cd3175fcc8f1a22a3d4ad19eef4f50da337db1901caa160070954bfcfd`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 20.2 MB (20164019 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:rc-windowsservercore-ltsc2022`
 
 ```console
-$ docker pull docker@sha256:5e5d5678400e7ba14c8e1574d9c132a70f62ee8213020424e25cff95688c8e2b
+$ docker pull docker@sha256:f0ff9dce9c42381541507120fda9a4e6ffae9e7fd7ccf1db0cca0c74a544070d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -16982,14 +18054,14 @@ $ docker pull docker@sha256:5e5d5678400e7ba14c8e1574d9c132a70f62ee8213020424e25c
 ### `docker:rc-windowsservercore-ltsc2022` - windows version 10.0.20348.2966; amd64
 
 ```console
-$ docker pull docker@sha256:f060df9628c987ea789c4df5780c0943df13de795de60711bb97d96b0529a222
+$ docker pull docker@sha256:34c8def198551f1459d069bd5d4d37df4100afe874339a550015e35c5280c9d1
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2313174502 bytes)**  
+-	Total Size: **2.3 GB (2313129839 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79c54349c5113cf4e6163046f713fabab511bacc7b343b6014c159fba49cbe30`
+-	Image ID: `sha256:c879b100b69e4588217fec80ac9427eb48b8583df5a57875fa7acff211cf3846`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -16998,31 +18070,31 @@ $ docker pull docker@sha256:f060df9628c987ea789c4df5780c0943df13de795de60711bb97
 RUN Apply image 10.0.20348.2700
 # Thu, 05 Dec 2024 01:36:58 GMT
 RUN Install update 10.0.20348.2966
-# Tue, 24 Dec 2024 21:32:16 GMT
+# Thu, 09 Jan 2025 22:28:59 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Tue, 24 Dec 2024 21:32:31 GMT
+# Thu, 09 Jan 2025 22:30:16 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Tue, 24 Dec 2024 21:32:32 GMT
-ENV DOCKER_VERSION=27.5.0-rc.1
-# Tue, 24 Dec 2024 21:32:32 GMT
-ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.1.zip
-# Tue, 24 Dec 2024 21:32:44 GMT
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_VERSION=27.5.0-rc.2
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_URL=https://download.docker.com/win/static/test/x86_64/docker-27.5.0-rc.2.zip
+# Thu, 09 Jan 2025 22:30:37 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Tue, 24 Dec 2024 21:32:45 GMT
+# Thu, 09 Jan 2025 22:30:37 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Tue, 24 Dec 2024 21:32:45 GMT
+# Thu, 09 Jan 2025 22:30:38 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Tue, 24 Dec 2024 21:32:46 GMT
+# Thu, 09 Jan 2025 22:30:38 GMT
 ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Tue, 24 Dec 2024 21:32:54 GMT
+# Thu, 09 Jan 2025 22:30:47 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Tue, 24 Dec 2024 21:32:55 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Tue, 24 Dec 2024 21:32:56 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Tue, 24 Dec 2024 21:32:56 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Tue, 24 Dec 2024 21:33:05 GMT
+# Thu, 09 Jan 2025 22:30:47 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:48 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:48 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:58 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -17035,190 +18107,80 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 10 Dec 2024 18:41:03 GMT  
 		Size: 791.7 MB (791681213 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f63539bd5606097057aa02c357af9d7a0e1646815b12be20dc8f737692a0f0e3`  
-		Last Modified: Tue, 24 Dec 2024 21:33:14 GMT  
-		Size: 1.3 KB (1282 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a22d3469291cd45bf8e0e73371485a1742ba6f079a8eb2ed0cd0d86ddbfa6122`  
-		Last Modified: Tue, 24 Dec 2024 21:33:14 GMT  
-		Size: 344.5 KB (344495 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2806a68fc42aa330bf56cb205269fa5babf79accb9b1386be6a9e0fb93119cbb`  
-		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
-		Size: 1.3 KB (1281 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:22666c5dabea757b86076cd5fe26537d5bebbe49a7a79cf89c5ee12643efa9b8`  
-		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
-		Size: 1.3 KB (1281 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:413691bf0e8f67c1a40025543e4c2d35b542644368a6478293fbed434ecb5d9f`  
-		Last Modified: Tue, 24 Dec 2024 21:33:14 GMT  
-		Size: 19.2 MB (19152808 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:0afb618bebd1ae71a220d6645aba1b28bc34f615b1e3c1d1b95515b127f02cd7`  
-		Last Modified: Tue, 24 Dec 2024 21:33:11 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:3ef2efc888bd6324dfb7b051550d7efe5480bd2b53a9c5da68fc5c5a86bd7760`  
-		Last Modified: Tue, 24 Dec 2024 21:33:11 GMT  
-		Size: 1.3 KB (1284 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:46e018d4d50ac765f64fd6c45823dff2ba7c53d05bdf53def4650edd17021382`  
-		Last Modified: Tue, 24 Dec 2024 21:33:10 GMT  
-		Size: 1.3 KB (1288 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:a87787eeb120e7bcc6042c679f7f51cc3c1f290e226d2cae2942f93826f74e97`  
-		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
-		Size: 19.6 MB (19637964 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:884da3d04c115b4a1215815cf66e0d0be9480171f497ef11dc2b9abab5d6fa52`  
-		Last Modified: Tue, 24 Dec 2024 21:33:09 GMT  
-		Size: 1.3 KB (1283 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c38c6d76f55c43dcabade54de45a3b2ac5397beea2b685d25cec730cba2a53c6`  
-		Last Modified: Tue, 24 Dec 2024 21:33:09 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f7937e1c18b4dbdd128c94ee1e67dbf60e81fb28a163156f31c1e430c2bd2031`  
-		Last Modified: Tue, 24 Dec 2024 21:33:09 GMT  
+	-	`sha256:e64f3ca98ebbeaabbe9caa8a22cf59bc40d9d102d2526d1049bd68a910921bf9`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
 		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4513c6265bdc4a4841cd89793fbc86cbe1d89824943d131fd32064295171fe7f`  
-		Last Modified: Tue, 24 Dec 2024 21:33:12 GMT  
-		Size: 20.2 MB (20154041 bytes)  
+	-	`sha256:c556be6783cdbb2c773a11684d233d0b303cceca2409d251ca495028eb4e8b32`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 357.0 KB (356971 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:62db5363d85636ed44a6ab46f57b9f37cd884f03ec2ce37d0e33cd96233b9138`  
+		Last Modified: Thu, 09 Jan 2025 22:31:02 GMT  
+		Size: 1.3 KB (1285 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b435965c81c2e8fb61ce8a0eadf77cfb0e2f9886595430f0033e80e767731f3c`  
+		Last Modified: Thu, 09 Jan 2025 22:31:02 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:159da7e211e53c5b7ddeec749a6c40bc4434d55aa46675a838d8e577c3dac69f`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 19.1 MB (19131765 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1584497e6e0be075b115c53cc08d3ac3095f7ab38fdfc856d8cb48449bb7e060`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1286 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0348525302a5482ba9b0d399d7eacc24af94672045c97ecb89568235ded2564b`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1283 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:b3147b65b25122a7c3e76ab0b163ff239af806851dbe1337f4cceccfe784799f`  
+		Last Modified: Thu, 09 Jan 2025 22:31:01 GMT  
+		Size: 1.3 KB (1284 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a9f472ac9bf23724607ca28bcc8bf1acc04896b2d5e40f90e05234e1dfef84e0`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 19.6 MB (19615417 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:6fa14a61e024eeab3914a555cf693f8281b9bdb37f9ddb1cc3148658be9d36f7`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a7ee6431a575ea313a3aca6d1c013e02216a2a470e4eae7992499d19398ae8ab`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.3 KB (1279 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:625c47e3aecbfdba39fc9ee46db788bcfb5edb0fa800215f469c44defd7d81db`  
+		Last Modified: Thu, 09 Jan 2025 22:31:00 GMT  
+		Size: 1.3 KB (1282 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:0e92dc6bab1ddd4745640a6d67475207ee6ca87cb4ba8efe6494172cba722a6b`  
+		Last Modified: Thu, 09 Jan 2025 22:31:03 GMT  
+		Size: 20.1 MB (20140505 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:windowsservercore`
 
 ```console
-$ docker pull docker@sha256:ce26a4b6892bb5fff408af70028fd1f7aadf1ba1817049f7c36d386b938f2a31
+$ docker pull docker@sha256:edb7aff1c0cd6c7c15802d3bc3d4c76873b2329b9fe50c75c97f50e9449e35fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
--	Platforms: 2
-	-	windows version 10.0.20348.2966; amd64
+-	Platforms: 1
 	-	windows version 10.0.17763.6659; amd64
-
-### `docker:windowsservercore` - windows version 10.0.20348.2966; amd64
-
-```console
-$ docker pull docker@sha256:b59b50eddc96fa024759736642b20d31e812c747839aa0e04e6b3cd306d9c08f
-```
-
--	Docker Version: 26.1.3
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2312956798 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3dac0ff62690131e5cbadefa8b3173ce78f2fedeb1bedfb9599c99488be059a9`
--	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
--	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
-
-```dockerfile
-# Fri, 06 Sep 2024 00:01:38 GMT
-RUN Apply image 10.0.20348.2700
-# Thu, 05 Dec 2024 01:36:58 GMT
-RUN Install update 10.0.20348.2966
-# Thu, 19 Dec 2024 06:27:26 GMT
-SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Thu, 19 Dec 2024 06:28:34 GMT
-RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Thu, 19 Dec 2024 06:28:35 GMT
-ENV DOCKER_VERSION=27.4.1
-# Thu, 19 Dec 2024 06:28:36 GMT
-ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.4.1.zip
-# Thu, 19 Dec 2024 06:28:57 GMT
-RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:28:58 GMT
-ENV DOCKER_BUILDX_VERSION=0.19.3
-# Thu, 19 Dec 2024 06:28:59 GMT
-ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Thu, 19 Dec 2024 06:28:59 GMT
-ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Thu, 19 Dec 2024 06:29:10 GMT
-RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:11 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Thu, 19 Dec 2024 06:29:11 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Thu, 19 Dec 2024 06:29:12 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Thu, 19 Dec 2024 06:29:24 GMT
-RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
-```
-
--	Layers:
-	-	`sha256:2534953f34d35976fc44cd67bfdd39fdcd9e2eaae57ada0be53d5fb936cd3a0b`  
-		Last Modified: Tue, 10 Sep 2024 17:49:01 GMT  
-		Size: 1.5 GB (1462192413 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:90641eccc9d7a78ab99d123ca3884acb8ffc002eb44bc5e68f261f0810d5202b`  
-		Last Modified: Tue, 10 Dec 2024 18:41:03 GMT  
-		Size: 791.7 MB (791681213 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c2d7502a1bbe13300d252a2f9df8e505261a1640bc1bd25b0948e9c00fcc5b01`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 1.3 KB (1284 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f14c5b28592218521960824b8276896946f244fbb3651810d08c43452a2582cb`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 357.3 KB (357322 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:6330b409518a6d4ccfc671760fb4c29c3aa61745511abc8406e7598afdeb72f4`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:eff2da6ec5d910a6c45c3b7bc2ada4de7ee595addaae450cfea2ba3fba3571f0`  
-		Last Modified: Thu, 19 Dec 2024 06:29:28 GMT  
-		Size: 1.3 KB (1314 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:981fcf2dca12be8aa09825096e39af48ab18642d75e6e2791014b5511999719c`  
-		Last Modified: Thu, 19 Dec 2024 06:29:30 GMT  
-		Size: 19.0 MB (18965788 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:559ffe22c82820dbe4c523868249c3f6a55385142d2e0ead71e852d8a7251d56`  
-		Last Modified: Thu, 19 Dec 2024 06:29:27 GMT  
-		Size: 1.3 KB (1285 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:458e70a57b4ce24dfc2a913ab05c3222397fe2e8a5d93868622a5da7a9340e81`  
-		Last Modified: Thu, 19 Dec 2024 06:29:27 GMT  
-		Size: 1.3 KB (1324 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:04dd3b199caac21501453ed73a1b07e07e8909c492da3b0c12264e12be24f8f7`  
-		Last Modified: Thu, 19 Dec 2024 06:29:27 GMT  
-		Size: 1.3 KB (1286 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:ffced5034da239bcce196f61166f31fa32a1046a0b90925f73df0a56a4540555`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 19.6 MB (19615775 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:85d1d24e414a381ae30c27fae03be0f84206adbad1d9b6b30407bfecceb5e1e5`  
-		Last Modified: Thu, 19 Dec 2024 06:29:26 GMT  
-		Size: 1.3 KB (1284 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:deeb14568d7a7f723c99e08a5b860258c0e121c9b475c7f14d316ac30cb06d68`  
-		Last Modified: Thu, 19 Dec 2024 06:29:26 GMT  
-		Size: 1.3 KB (1289 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:57a34da183fbb7bde6f718a61627a8077978264175188a7e437d8f791c46033e`  
-		Last Modified: Thu, 19 Dec 2024 06:29:26 GMT  
-		Size: 1.3 KB (1279 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7bdb77e5d84cc05ce04533280006424bb2742fe825cfe58eb5f5934b7a430dcf`  
-		Last Modified: Thu, 19 Dec 2024 06:29:29 GMT  
-		Size: 20.1 MB (20132656 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `docker:windowsservercore` - windows version 10.0.17763.6659; amd64
 
 ```console
-$ docker pull docker@sha256:c442ec204cc8c3af89a231557d7113d731304aa9004ecc2fd2b7fdea9a2a5ed5
+$ docker pull docker@sha256:17d1ca1503ccd918b9f134fb58a7e94a6b55605a487375dc958dd83a765680e2
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2073460288 bytes)**  
+-	Total Size: **2.1 GB (2073461807 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd24b1732cd2a56ef18bd248405211562b17b3b25cc385edc36040b8cea00146`
+-	Image ID: `sha256:52119a98321109fc04c5bdc9d5a5997da126c6b299e2e05092227fbbdfcc5ac5`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -17227,31 +18189,31 @@ $ docker pull docker@sha256:c442ec204cc8c3af89a231557d7113d731304aa9004ecc2fd2b7
 RUN Apply image 10.0.17763.6293
 # Thu, 05 Dec 2024 05:10:22 GMT
 RUN Install update 10.0.17763.6659
-# Thu, 19 Dec 2024 06:27:25 GMT
+# Thu, 09 Jan 2025 22:28:42 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Thu, 19 Dec 2024 06:28:36 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Thu, 19 Dec 2024 06:28:36 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 ENV DOCKER_VERSION=27.4.1
-# Thu, 19 Dec 2024 06:28:37 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.4.1.zip
-# Thu, 19 Dec 2024 06:29:00 GMT
+# Thu, 09 Jan 2025 22:30:03 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:00 GMT
+# Thu, 09 Jan 2025 22:30:03 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Thu, 19 Dec 2024 06:29:01 GMT
+# Thu, 09 Jan 2025 22:30:04 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Thu, 19 Dec 2024 06:29:01 GMT
+# Thu, 09 Jan 2025 22:30:04 GMT
 ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Thu, 19 Dec 2024 06:29:14 GMT
+# Thu, 09 Jan 2025 22:30:16 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:15 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Thu, 19 Dec 2024 06:29:15 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Thu, 19 Dec 2024 06:29:16 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Thu, 19 Dec 2024 06:29:30 GMT
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:18 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:18 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:29 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -17264,63 +18226,63 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 10 Dec 2024 18:45:28 GMT  
 		Size: 293.9 MB (293901821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1cfd0430e259e32b94429bf581ea5f74b25080ea9e68899e17062c55bfdba4f`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 1.3 KB (1300 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:089d2b012e4350683f7592078e0330072d47face607cfdcfa1b177015a1d055d`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 475.3 KB (475261 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e54e6e8f743b8e62247f614caa153507aeea30e39ec7d133b120770472d150d`  
-		Last Modified: Thu, 19 Dec 2024 06:29:34 GMT  
-		Size: 1.3 KB (1298 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c46ebe5f7bc661958c2410ed2a60431be6d40269618a1223f8bc2c1f5392c26`  
-		Last Modified: Thu, 19 Dec 2024 06:29:34 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ac2d753848f2b9292c76be0e8c43f38d7c04ed25979be15179b781a3c2b47b9`  
-		Last Modified: Thu, 19 Dec 2024 06:29:36 GMT  
-		Size: 19.0 MB (18997863 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db4c651853f033dafb87a17fdd7690c1c3c3a0f4dfb6e083cf06ba8d91234d98`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da1a3389962e8b333bfcead93ec3aad31713a4bafd7b7be628b737077da7d60b`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e030ce22f45d6c461af01d11e768dcd4638cd9b989e6dc8aa7e384b7ccb80129`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5d987b1383b6b76eb88c20a38bac7e305fe1f8c311242b83bc819be0eee3eb3`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 19.6 MB (19648080 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27e0d2a17e8fa800de7106ca7d9cce51ab9562558d2d155ddfaaa0d979138750`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
-		Size: 1.3 KB (1302 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4d9b36807cefb176cc3c814de379c2bf6a17663ed8e0372f69d2cb06a02cd4e`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
+	-	`sha256:7750dc03308256989666ff5b54c38b3a2c612c962192c83de4eb1f582ca937b1`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60f2c79cb8ac15f188f4afd8366afee1f46ec780fa70082a4c9e991ac09c8537`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:5dbe0537aa6aca34fc480d362d820e72c216e0298e460381cfbb5dcb5fd023fb`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
+		Size: 472.5 KB (472525 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f72ede2a361313c0a7e7b059df25505b175cc277540b12cb48ee012d5a4ba93`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 20.2 MB (20157227 bytes)  
+	-	`sha256:fe45cd9447359ded7b92b30cf20968456c9963557aae6f640a79b6e9e154bb96`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:13e084105c5050f37f2a84321c45579ce3b732eafca7dacb323be6a6d0466d89`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5632113851589ab8b783167c256f837cf86bc42cf5a08905a82e3ca1050d791e`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
+		Size: 19.0 MB (18995177 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7d6fc5b4da6366b80ed16ea446e845f9e47d993a065cccd224a4bf5c26a9ffad`  
+		Last Modified: Thu, 09 Jan 2025 22:30:36 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cc1c4f578feffda9102418bc2ffcd55cf99c58f657c94a9e437200b4ab6e37ce`  
+		Last Modified: Thu, 09 Jan 2025 22:30:35 GMT  
+		Size: 1.3 KB (1317 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e594fee58a2fad417e3fde8355dc41c0508bd2ab66d1729873f044f701a70680`  
+		Last Modified: Thu, 09 Jan 2025 22:30:35 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:14ea03058c311bb36b7446687d979343ed3f3ecaf0b8a1a35a23c20666373964`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 19.6 MB (19646983 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:601a2adbccc0e8163567c2d53522349047c62ff729a5a3a1c6a4efbe2c8ff4bb`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:477c2e6248c325fbcac1b955bb7066d647e306083381336c71c46addade98c49`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:648ab5467de2471d85da31b50821da19a02285bd29d6edb1c98f0efea89d6074`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1343 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eff4279d2d18be75803362cc5a646d7d96b8fffd5030ddb9674444c5d344b414`  
+		Last Modified: Thu, 09 Jan 2025 22:30:36 GMT  
+		Size: 20.2 MB (20165195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:windowsservercore-1809`
 
 ```console
-$ docker pull docker@sha256:5a5cd9f42944d54ac3da3dfda65c1d0342f266339ac3fde581f7021a2aa3c54c
+$ docker pull docker@sha256:edb7aff1c0cd6c7c15802d3bc3d4c76873b2329b9fe50c75c97f50e9449e35fe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -17330,14 +18292,14 @@ $ docker pull docker@sha256:5a5cd9f42944d54ac3da3dfda65c1d0342f266339ac3fde581f7
 ### `docker:windowsservercore-1809` - windows version 10.0.17763.6659; amd64
 
 ```console
-$ docker pull docker@sha256:c442ec204cc8c3af89a231557d7113d731304aa9004ecc2fd2b7fdea9a2a5ed5
+$ docker pull docker@sha256:17d1ca1503ccd918b9f134fb58a7e94a6b55605a487375dc958dd83a765680e2
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 GB (2073460288 bytes)**  
+-	Total Size: **2.1 GB (2073461807 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd24b1732cd2a56ef18bd248405211562b17b3b25cc385edc36040b8cea00146`
+-	Image ID: `sha256:52119a98321109fc04c5bdc9d5a5997da126c6b299e2e05092227fbbdfcc5ac5`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -17346,31 +18308,31 @@ $ docker pull docker@sha256:c442ec204cc8c3af89a231557d7113d731304aa9004ecc2fd2b7
 RUN Apply image 10.0.17763.6293
 # Thu, 05 Dec 2024 05:10:22 GMT
 RUN Install update 10.0.17763.6659
-# Thu, 19 Dec 2024 06:27:25 GMT
+# Thu, 09 Jan 2025 22:28:42 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Thu, 19 Dec 2024 06:28:36 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 RUN $newPath = ('{0}\docker;{1}' -f $env:ProgramFiles, $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine);
-# Thu, 19 Dec 2024 06:28:36 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 ENV DOCKER_VERSION=27.4.1
-# Thu, 19 Dec 2024 06:28:37 GMT
+# Thu, 09 Jan 2025 22:29:47 GMT
 ENV DOCKER_URL=https://download.docker.com/win/static/stable/x86_64/docker-27.4.1.zip
-# Thu, 19 Dec 2024 06:29:00 GMT
+# Thu, 09 Jan 2025 22:30:03 GMT
 RUN Write-Host ('Downloading {0} ...' -f $env:DOCKER_URL); 	Invoke-WebRequest -Uri $env:DOCKER_URL -OutFile 'docker.zip'; 		Write-Host 'Expanding ...'; 	Expand-Archive docker.zip -DestinationPath $env:ProgramFiles; 		Write-Host 'Removing ...'; 	Remove-Item @( 			'docker.zip', 			('{0}\docker\dockerd.exe' -f $env:ProgramFiles) 		) -Force; 		Write-Host 'Verifying install ("docker --version") ...'; 	docker --version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:00 GMT
+# Thu, 09 Jan 2025 22:30:03 GMT
 ENV DOCKER_BUILDX_VERSION=0.19.3
-# Thu, 19 Dec 2024 06:29:01 GMT
+# Thu, 09 Jan 2025 22:30:04 GMT
 ENV DOCKER_BUILDX_URL=https://github.com/docker/buildx/releases/download/v0.19.3/buildx-v0.19.3.windows-amd64.exe
-# Thu, 19 Dec 2024 06:29:01 GMT
+# Thu, 09 Jan 2025 22:30:04 GMT
 ENV DOCKER_BUILDX_SHA256=fc24c33d547764ffc67ed430f5561c4d1bcbbee73df47648668331fa1cc2f289
-# Thu, 19 Dec 2024 06:29:14 GMT
+# Thu, 09 Jan 2025 22:30:16 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-buildx.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_BUILDX_URL); 	Invoke-WebRequest -Uri $env:DOCKER_BUILDX_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_BUILDX_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_BUILDX_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker buildx version") ...'; 	docker buildx version; 		Write-Host 'Complete.';
-# Thu, 19 Dec 2024 06:29:15 GMT
-ENV DOCKER_COMPOSE_VERSION=2.32.1
-# Thu, 19 Dec 2024 06:29:15 GMT
-ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.1/docker-compose-windows-x86_64.exe
-# Thu, 19 Dec 2024 06:29:16 GMT
-ENV DOCKER_COMPOSE_SHA256=5dc7ac86e8d3972c2c68066c6ac370daf0a42b7c8d3338336c9dbde34af06213
-# Thu, 19 Dec 2024 06:29:30 GMT
+# Thu, 09 Jan 2025 22:30:17 GMT
+ENV DOCKER_COMPOSE_VERSION=2.32.2
+# Thu, 09 Jan 2025 22:30:18 GMT
+ENV DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/v2.32.2/docker-compose-windows-x86_64.exe
+# Thu, 09 Jan 2025 22:30:18 GMT
+ENV DOCKER_COMPOSE_SHA256=f384ad29e5187745cad4c18a14ddafd5e7a748c68b5bd991599b1756e36d3bec
+# Thu, 09 Jan 2025 22:30:29 GMT
 RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creating {0} ...' -f $dir); 	New-Item -ItemType Directory $dir -Force; 		$plugin = ('{0}\docker-compose.exe' -f $dir); 	Write-Host ('Downloading {0} ...' -f $env:DOCKER_COMPOSE_URL); 	Invoke-WebRequest -Uri $env:DOCKER_COMPOSE_URL -OutFile $plugin; 		Write-Host ('Verifying sha256 ({0}) ...' -f $env:DOCKER_COMPOSE_SHA256); 	if ((Get-FileHash $plugin -Algorithm sha256).Hash -ne $env:DOCKER_COMPOSE_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Verifying install ("docker compose version") ...'; 	docker compose version; 		$link = ('{0}\docker\docker-compose.exe' -f $env:ProgramFiles); 	Write-Host ('Linking {0} to {1} ...' -f $plugin, $link); 	New-Item -ItemType SymbolicLink -Path $link -Target $plugin; 		Write-Host 'Verifying install ("docker-compose --version") ...'; 	docker-compose --version; 		Write-Host 'Complete.';
 ```
 
@@ -17383,57 +18345,57 @@ RUN $dir = ('{0}\docker\cli-plugins' -f $env:ProgramFiles); 	Write-Host ('Creati
 		Last Modified: Tue, 10 Dec 2024 18:45:28 GMT  
 		Size: 293.9 MB (293901821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e1cfd0430e259e32b94429bf581ea5f74b25080ea9e68899e17062c55bfdba4f`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 1.3 KB (1300 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:089d2b012e4350683f7592078e0330072d47face607cfdcfa1b177015a1d055d`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 475.3 KB (475261 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:4e54e6e8f743b8e62247f614caa153507aeea30e39ec7d133b120770472d150d`  
-		Last Modified: Thu, 19 Dec 2024 06:29:34 GMT  
-		Size: 1.3 KB (1298 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1c46ebe5f7bc661958c2410ed2a60431be6d40269618a1223f8bc2c1f5392c26`  
-		Last Modified: Thu, 19 Dec 2024 06:29:34 GMT  
-		Size: 1.3 KB (1301 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:7ac2d753848f2b9292c76be0e8c43f38d7c04ed25979be15179b781a3c2b47b9`  
-		Last Modified: Thu, 19 Dec 2024 06:29:36 GMT  
-		Size: 19.0 MB (18997863 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:db4c651853f033dafb87a17fdd7690c1c3c3a0f4dfb6e083cf06ba8d91234d98`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1293 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:da1a3389962e8b333bfcead93ec3aad31713a4bafd7b7be628b737077da7d60b`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e030ce22f45d6c461af01d11e768dcd4638cd9b989e6dc8aa7e384b7ccb80129`  
-		Last Modified: Thu, 19 Dec 2024 06:29:33 GMT  
-		Size: 1.3 KB (1297 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:c5d987b1383b6b76eb88c20a38bac7e305fe1f8c311242b83bc819be0eee3eb3`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 19.6 MB (19648080 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:27e0d2a17e8fa800de7106ca7d9cce51ab9562558d2d155ddfaaa0d979138750`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
-		Size: 1.3 KB (1302 bytes)  
-		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b4d9b36807cefb176cc3c814de379c2bf6a17663ed8e0372f69d2cb06a02cd4e`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
+	-	`sha256:7750dc03308256989666ff5b54c38b3a2c612c962192c83de4eb1f582ca937b1`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:60f2c79cb8ac15f188f4afd8366afee1f46ec780fa70082a4c9e991ac09c8537`  
-		Last Modified: Thu, 19 Dec 2024 06:29:32 GMT  
-		Size: 1.3 KB (1297 bytes)  
+	-	`sha256:5dbe0537aa6aca34fc480d362d820e72c216e0298e460381cfbb5dcb5fd023fb`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
+		Size: 472.5 KB (472525 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:2f72ede2a361313c0a7e7b059df25505b175cc277540b12cb48ee012d5a4ba93`  
-		Last Modified: Thu, 19 Dec 2024 06:29:35 GMT  
-		Size: 20.2 MB (20157227 bytes)  
+	-	`sha256:fe45cd9447359ded7b92b30cf20968456c9963557aae6f640a79b6e9e154bb96`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:13e084105c5050f37f2a84321c45579ce3b732eafca7dacb323be6a6d0466d89`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:5632113851589ab8b783167c256f837cf86bc42cf5a08905a82e3ca1050d791e`  
+		Last Modified: Thu, 09 Jan 2025 22:30:39 GMT  
+		Size: 19.0 MB (18995177 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7d6fc5b4da6366b80ed16ea446e845f9e47d993a065cccd224a4bf5c26a9ffad`  
+		Last Modified: Thu, 09 Jan 2025 22:30:36 GMT  
+		Size: 1.3 KB (1301 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:cc1c4f578feffda9102418bc2ffcd55cf99c58f657c94a9e437200b4ab6e37ce`  
+		Last Modified: Thu, 09 Jan 2025 22:30:35 GMT  
+		Size: 1.3 KB (1317 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e594fee58a2fad417e3fde8355dc41c0508bd2ab66d1729873f044f701a70680`  
+		Last Modified: Thu, 09 Jan 2025 22:30:35 GMT  
+		Size: 1.3 KB (1296 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:14ea03058c311bb36b7446687d979343ed3f3ecaf0b8a1a35a23c20666373964`  
+		Last Modified: Thu, 09 Jan 2025 22:30:37 GMT  
+		Size: 19.6 MB (19646983 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:601a2adbccc0e8163567c2d53522349047c62ff729a5a3a1c6a4efbe2c8ff4bb`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1298 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:477c2e6248c325fbcac1b955bb7066d647e306083381336c71c46addade98c49`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1302 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:648ab5467de2471d85da31b50821da19a02285bd29d6edb1c98f0efea89d6074`  
+		Last Modified: Thu, 09 Jan 2025 22:30:33 GMT  
+		Size: 1.3 KB (1343 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:eff4279d2d18be75803362cc5a646d7d96b8fffd5030ddb9674444c5d344b414`  
+		Last Modified: Thu, 09 Jan 2025 22:30:36 GMT  
+		Size: 20.2 MB (20165195 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ## `docker:windowsservercore-ltsc2022`
