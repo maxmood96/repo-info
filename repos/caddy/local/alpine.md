@@ -1,16 +1,16 @@
-# `caddy:2.8.4-alpine`
+# `caddy:2.9.1-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:612f0ff47f33888e3b61a8db399ff2dc22c2cefb8cb652d86a619e52eabcd51f`
-- Created: `2024-06-04T22:12:59Z`
-- Virtual Size: ~ 49.21 Mb  
+- Image ID: `sha256:1b7d0a82297a0ab4d6f0a855f790d0208a975163c02e307c171de9674d23a4a0`
+- Created: `2025-01-08T17:30:49Z`
+- Virtual Size: ~ 48.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["caddy","run","--config","/etc/caddy/Caddyfile","--adapter","caddyfile"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `CADDY_VERSION=v2.8.4`
+  - `CADDY_VERSION=v2.9.1`
   - `XDG_CONFIG_HOME=/config`
   - `XDG_DATA_HOME=/data`
 - Labels:
@@ -21,7 +21,7 @@
   - `org.opencontainers.image.title=Caddy`
   - `org.opencontainers.image.url=https://caddyserver.com`
   - `org.opencontainers.image.vendor=Light Code Labs`
-  - `org.opencontainers.image.version=v2.8.4`
+  - `org.opencontainers.image.version=v2.9.1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -130,16 +130,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20241121-r0 description:
+ca-certificates-20241121-r1 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20241121-r0 webpage:
+ca-certificates-20241121-r1 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20241121-r0 installed size:
-684 KiB
+ca-certificates-20241121-r1 installed size:
+720 KiB
 
-ca-certificates-20241121-r0 license:
+ca-certificates-20241121-r1 license:
 MPL-2.0 AND MIT
 
 ```
@@ -147,16 +147,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241121-r0 description:
+ca-certificates-bundle-20241121-r1 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241121-r0 webpage:
+ca-certificates-bundle-20241121-r1 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241121-r0 installed size:
-228 KiB
+ca-certificates-bundle-20241121-r1 installed size:
+240 KiB
 
-ca-certificates-bundle-20241121-r0 license:
+ca-certificates-bundle-20241121-r1 license:
 MPL-2.0 AND MIT
 
 ```
