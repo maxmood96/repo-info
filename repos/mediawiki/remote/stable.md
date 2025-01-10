@@ -1,7 +1,7 @@
 ## `mediawiki:stable`
 
 ```console
-$ docker pull mediawiki@sha256:1b1f10f32757ff07d3d2c8f1c001def2f01493fedf09606ac74656eeffdda867
+$ docker pull mediawiki@sha256:4e777c734cfba2246c2531821e04ac9594f3e7fab8a0a2a7f0ab74b44c048d7e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,13 +22,13 @@ $ docker pull mediawiki@sha256:1b1f10f32757ff07d3d2c8f1c001def2f01493fedf09606ac
 ### `mediawiki:stable` - linux; amd64
 
 ```console
-$ docker pull mediawiki@sha256:6055647ff58e9e62c3d064446036aa10baf79254bd819e98f4d993c0717db245
+$ docker pull mediawiki@sha256:b93f08d19c889cf9441bb3dd8f9c0e9ebfe57ed48afbdbc7de2366958e4998b3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **322.2 MB (322193286 bytes)**  
+-	Total Size: **324.1 MB (324067684 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:31482c1fd8309b454b9c01ad60fc4b50eb69f2c34741679a2f0969454bff049a`
+-	Image ID: `sha256:d45d873c41f7f1b67804f87fa1ba8a14bf8f7d2047622ee842b6ca29ffe11f2e`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -91,25 +91,25 @@ WORKDIR /var/www/html
 EXPOSE map[80/tcp:{}]
 # Thu, 21 Nov 2024 08:15:38 GMT
 CMD ["apache2-foreground"]
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends 		git 		librsvg2-bin 		imagemagick 		python3 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 		liblua5.1-0-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.24; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 	a2enmod rewrite; 	{ 		echo "<Directory /var/www/html>"; 		echo "  RewriteEngine On"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-f"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-d"; 		echo "  RewriteRule ^ %{DOCUMENT_ROOT}/index.php [L]"; 		echo "</Directory>"; 	} > "$APACHE_CONFDIR/conf-available/short-url.conf"; 	a2enconf short-url # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN sed -i "s/<\/VirtualHost>/\tAllowEncodedSlashes NoDecode\n<\/VirtualHost>/" "$APACHE_CONFDIR/sites-available/000-default.conf" # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
-ENV MEDIAWIKI_MAJOR_VERSION=1.42
-# Fri, 20 Dec 2024 23:07:36 GMT
-ENV MEDIAWIKI_VERSION=1.42.4
-# Fri, 20 Dec 2024 23:07:36 GMT
-RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
+ENV MEDIAWIKI_MAJOR_VERSION=1.43
+# Thu, 09 Jan 2025 11:23:56 GMT
+ENV MEDIAWIKI_VERSION=1.43.0
+# Thu, 09 Jan 2025 11:23:56 GMT
+RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 		E059C034E7A430583C252F4AA8F734246D73B586 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	[ 1.43.0 = "1.42.4" ] && 		sed -i 's|wikimedia/parsoid": "0.19.0"|wikimedia/parsoid": "0.19.1"|' 			composer.json; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Jan 2025 11:23:56 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -170,65 +170,65 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:559f34a95536a72e0a76bcc047df78df2b26df2d8d6c598e6e3a6aba3dca8fb2`  
-		Last Modified: Tue, 24 Dec 2024 23:18:48 GMT  
-		Size: 53.9 MB (53885075 bytes)  
+	-	`sha256:df3ba805c2be7b54536ac9c29d80381af160fa748395ea353345b41451fd396d`  
+		Last Modified: Thu, 09 Jan 2025 22:31:13 GMT  
+		Size: 53.9 MB (53884949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f48d39f21190fc3294b4fc78853af1f5776f5e471e433f204d554c7500fb5e42`  
-		Last Modified: Tue, 24 Dec 2024 23:18:47 GMT  
-		Size: 2.1 MB (2079161 bytes)  
+	-	`sha256:27f1cacefa295fb9d38a8b285da6b70474d1ba4fff6bbd0504feb8ed1ebcc86d`  
+		Last Modified: Thu, 09 Jan 2025 22:31:11 GMT  
+		Size: 2.1 MB (2080069 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a683cba3eb2c0e6f8c3bac4080d14641fa7dd4dcb03898c51a1c4ba4a9f6b1a`  
-		Last Modified: Tue, 24 Dec 2024 23:18:47 GMT  
-		Size: 578.0 B  
+	-	`sha256:7afb6725eada12c93f70e3946bf94404242f3ec31bc38d01fc47819d7664d083`  
+		Last Modified: Thu, 09 Jan 2025 22:31:10 GMT  
+		Size: 579.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:13b1a6908625d22793d645c1734464ed961303a2594339e39d4547769c86c789`  
-		Last Modified: Tue, 24 Dec 2024 23:18:47 GMT  
-		Size: 903.0 B  
+	-	`sha256:3d7d5bce76e7e93810f24c1adb70fe593ed1c06e8fb64c517d796404af21bfee`  
+		Last Modified: Thu, 09 Jan 2025 22:31:11 GMT  
+		Size: 906.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c7f9962fca8398956253a4d5b5184bc0e5fba3789bfb846e2ab3ce21aadea1d`  
-		Last Modified: Tue, 24 Dec 2024 23:18:48 GMT  
-		Size: 312.0 B  
+	-	`sha256:a8498d7a50ba6f508ad1a961c880706944bae04470f328373d9132c51a482601`  
+		Last Modified: Thu, 09 Jan 2025 22:31:11 GMT  
+		Size: 314.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:87a95963ae34dab5a447bcdbed56d59818c1d15b7f5b9e5fe2150bd9df263f82`  
-		Last Modified: Tue, 24 Dec 2024 23:18:48 GMT  
-		Size: 139.0 B  
+	-	`sha256:8d61e6cc3a1afc2169952e42e1539be0489eef758cc10e0173e02ce403bafb01`  
+		Last Modified: Thu, 09 Jan 2025 22:31:11 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:400ef9089c0372d604ff8bcb196bda2632f19f28860b5745b83887764cee2eff`  
-		Last Modified: Tue, 24 Dec 2024 23:18:49 GMT  
-		Size: 90.5 MB (90513770 bytes)  
+	-	`sha256:aebe48f62779ee9c568b2388f0d0fbee363cb9a04ccef664e9ac5b9cd3f3c0fd`  
+		Last Modified: Thu, 09 Jan 2025 22:31:16 GMT  
+		Size: 92.4 MB (92387379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mediawiki:stable` - unknown; unknown
 
 ```console
-$ docker pull mediawiki@sha256:51b23c6ba7ea6b20693bbe8959cb49da549b7b0fb168749efc4e37b7e6b5fe57
+$ docker pull mediawiki@sha256:1000a29a3834c790afcaf48e989e2cfcdcca04573d31a4b49bff6cb2787e5749
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.7 KB (47722 bytes)**  
+-	Total Size: **48.6 KB (48597 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:706e9e7643905acd23ba808f31fe8d62a4db347569968ec7a64a3ec2e9c94903`
+-	Image ID: `sha256:7784528ce717a61f177d2e56e60554662a2eba770afeccbf3f16fafd3c7a9b99`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b7af514753eb787788d78c4727e37502010ee3f0bca0bde7c946f338c7b73f22`  
-		Last Modified: Tue, 24 Dec 2024 23:18:47 GMT  
-		Size: 47.7 KB (47722 bytes)  
+	-	`sha256:35f6373d70753547e2d75e3564c0b9f25c9a0191a29c9248c89efb1d080d88d0`  
+		Last Modified: Thu, 09 Jan 2025 22:31:10 GMT  
+		Size: 48.6 KB (48597 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mediawiki:stable` - linux; arm variant v5
 
 ```console
-$ docker pull mediawiki@sha256:a610dd644b60eee6d4c0176e0a304808fdaaf8e28cdba1ca08c5d6af0e6489cb
+$ docker pull mediawiki@sha256:09eb9f1fd58fcd950d003bab27038b3b1cf78e739e7f9a4c73f19869f0da1b95
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **290.7 MB (290695976 bytes)**  
+-	Total Size: **292.6 MB (292564255 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f5efab4a7809d2cc96282c3511940283f735a7a73b1a27f6c4608359fc4049c`
+-	Image ID: `sha256:bd591b57993b3f19d2d1b433e5514d17afbe3d3618600c751d19bae6b9c46815`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -291,25 +291,25 @@ WORKDIR /var/www/html
 EXPOSE map[80/tcp:{}]
 # Thu, 21 Nov 2024 08:15:38 GMT
 CMD ["apache2-foreground"]
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends 		git 		librsvg2-bin 		imagemagick 		python3 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 		liblua5.1-0-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.24; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 	a2enmod rewrite; 	{ 		echo "<Directory /var/www/html>"; 		echo "  RewriteEngine On"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-f"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-d"; 		echo "  RewriteRule ^ %{DOCUMENT_ROOT}/index.php [L]"; 		echo "</Directory>"; 	} > "$APACHE_CONFDIR/conf-available/short-url.conf"; 	a2enconf short-url # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN sed -i "s/<\/VirtualHost>/\tAllowEncodedSlashes NoDecode\n<\/VirtualHost>/" "$APACHE_CONFDIR/sites-available/000-default.conf" # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
-ENV MEDIAWIKI_MAJOR_VERSION=1.42
-# Fri, 20 Dec 2024 23:07:36 GMT
-ENV MEDIAWIKI_VERSION=1.42.4
-# Fri, 20 Dec 2024 23:07:36 GMT
-RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
+ENV MEDIAWIKI_MAJOR_VERSION=1.43
+# Thu, 09 Jan 2025 11:23:56 GMT
+ENV MEDIAWIKI_VERSION=1.43.0
+# Thu, 09 Jan 2025 11:23:56 GMT
+RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 		E059C034E7A430583C252F4AA8F734246D73B586 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	[ 1.43.0 = "1.42.4" ] && 		sed -i 's|wikimedia/parsoid": "0.19.0"|wikimedia/parsoid": "0.19.1"|' 			composer.json; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Jan 2025 11:23:56 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -394,41 +394,41 @@ CMD ["apache2-foreground"]
 		Last Modified: Wed, 25 Dec 2024 05:36:15 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c9df012884c7aaaf666b2927cfce70e8e9a5eb4017e833a2c343fb62ec6ae2cb`  
-		Last Modified: Wed, 25 Dec 2024 05:36:18 GMT  
-		Size: 90.5 MB (90510941 bytes)  
+	-	`sha256:ef5cc247d74141a8c46419622d1a4a3008022223475a990d1d5a7579f090289b`  
+		Last Modified: Thu, 09 Jan 2025 22:31:27 GMT  
+		Size: 92.4 MB (92379220 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mediawiki:stable` - unknown; unknown
 
 ```console
-$ docker pull mediawiki@sha256:8ced9c1a4dbdaad1470e65b7e507f11ecb08e0657f313ddaa6c77518ef44e001
+$ docker pull mediawiki@sha256:1a4d4dfc6e17385ddc6a3525e5cf7bfcdd558b2d5613a6e8ac371b1e1c6799d3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.9 KB (47868 bytes)**  
+-	Total Size: **48.8 KB (48750 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b71d92aa55227282a094b6f7e2328be678b9abe5cf344c58b715276b5e5ebaa`
+-	Image ID: `sha256:69e1bef131b05caa0866e3ae3d1e75970d6925d560138842b7abf16e51cb46c3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d48dcac674b0e2879839456eaa246bb1fcb0e9581fef886f77de05f850d1e9f2`  
-		Last Modified: Wed, 25 Dec 2024 05:36:13 GMT  
-		Size: 47.9 KB (47868 bytes)  
+	-	`sha256:838ef75053f61f33864896d25c37ca2e76acb0b5b33a003fa5f039b07586e2f7`  
+		Last Modified: Thu, 09 Jan 2025 22:31:23 GMT  
+		Size: 48.8 KB (48750 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mediawiki:stable` - linux; arm variant v7
 
 ```console
-$ docker pull mediawiki@sha256:4c4f33aba9a8716148b3e4c90a82423d21c85d5688f8641000930981204dea4c
+$ docker pull mediawiki@sha256:b6cd7e823c5af5aac39a4e4994b56ccd8a6d1d5aba135d30770650bb2ad4edf3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **278.5 MB (278462403 bytes)**  
+-	Total Size: **280.3 MB (280332590 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:486bb08a7f28043cb347afd6fdae67d0a563660e91d22302fb19774e7d42fe6c`
+-	Image ID: `sha256:16b1d540371a5e11c123b947ebd2fd7c89e755a7c8be9495cef2961c5dd595fb`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -491,25 +491,25 @@ WORKDIR /var/www/html
 EXPOSE map[80/tcp:{}]
 # Thu, 21 Nov 2024 08:15:38 GMT
 CMD ["apache2-foreground"]
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends 		git 		librsvg2-bin 		imagemagick 		python3 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 		liblua5.1-0-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.24; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 	a2enmod rewrite; 	{ 		echo "<Directory /var/www/html>"; 		echo "  RewriteEngine On"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-f"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-d"; 		echo "  RewriteRule ^ %{DOCUMENT_ROOT}/index.php [L]"; 		echo "</Directory>"; 	} > "$APACHE_CONFDIR/conf-available/short-url.conf"; 	a2enconf short-url # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN sed -i "s/<\/VirtualHost>/\tAllowEncodedSlashes NoDecode\n<\/VirtualHost>/" "$APACHE_CONFDIR/sites-available/000-default.conf" # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
-ENV MEDIAWIKI_MAJOR_VERSION=1.42
-# Fri, 20 Dec 2024 23:07:36 GMT
-ENV MEDIAWIKI_VERSION=1.42.4
-# Fri, 20 Dec 2024 23:07:36 GMT
-RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
+ENV MEDIAWIKI_MAJOR_VERSION=1.43
+# Thu, 09 Jan 2025 11:23:56 GMT
+ENV MEDIAWIKI_VERSION=1.43.0
+# Thu, 09 Jan 2025 11:23:56 GMT
+RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 		E059C034E7A430583C252F4AA8F734246D73B586 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	[ 1.43.0 = "1.42.4" ] && 		sed -i 's|wikimedia/parsoid": "0.19.0"|wikimedia/parsoid": "0.19.1"|' 			composer.json; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Jan 2025 11:23:56 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -570,65 +570,65 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4b74adc06331db195ebc51070a9ba037a072d0dc433f1a45436a441d9869e0b4`  
-		Last Modified: Wed, 25 Dec 2024 14:13:37 GMT  
-		Size: 46.0 MB (45983584 bytes)  
+	-	`sha256:10b6a39312f9dea349e1fe35f6c5acc75dc86cfc993f9fd46fa23dfde7a08931`  
+		Last Modified: Thu, 09 Jan 2025 22:34:01 GMT  
+		Size: 46.0 MB (45983807 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03efa4e319c082318eff038068c3f5c2d3af5da62b1f2e6303220effd5d3ed8a`  
-		Last Modified: Wed, 25 Dec 2024 14:13:35 GMT  
-		Size: 1.6 MB (1574222 bytes)  
+	-	`sha256:79b499c2aee7a35d93bab31e7c1bae706fc679160363b79167ebf355fd21e280`  
+		Last Modified: Thu, 09 Jan 2025 22:34:00 GMT  
+		Size: 1.6 MB (1574267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e5c26aec3a332fc117193924ee09d62f9a20237ef5eabcd1355313d2fdb9cad`  
-		Last Modified: Wed, 25 Dec 2024 14:13:35 GMT  
-		Size: 574.0 B  
+	-	`sha256:1188b71f7761ff148ce037fc47cc5109fe61c3d67ca978e2e80e3d51141df044`  
+		Last Modified: Thu, 09 Jan 2025 22:33:59 GMT  
+		Size: 579.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71191eac3bd0ff9878632e9ca8d89de6fd98d9515070d7d7c9a20e22d0922c9d`  
-		Last Modified: Wed, 25 Dec 2024 14:13:35 GMT  
-		Size: 903.0 B  
+	-	`sha256:1a3b9a494779cb651b1b7d6c9a4d5b5fdf8b5b1f5d5b7af2ca892e52f0d804f8`  
+		Last Modified: Thu, 09 Jan 2025 22:33:59 GMT  
+		Size: 905.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8ce14bc5fd04d9fcabb0ce83256b7a3f2e95c0498bde19856131ce5908e2cb4f`  
-		Last Modified: Wed, 25 Dec 2024 14:13:36 GMT  
+	-	`sha256:38ac8dcbdf013791d077ac7db29212ed6a72f776624acf97d18ee510985f2470`  
+		Last Modified: Thu, 09 Jan 2025 22:34:00 GMT  
 		Size: 316.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6a139bcfb5a7f268b94f6183ca8c63a4e6d7af22c44ab388dceeda6cf50afceb`  
-		Last Modified: Wed, 25 Dec 2024 14:13:36 GMT  
-		Size: 138.0 B  
+	-	`sha256:430b86b02f9268042de598c164c2b14ad97a3924b152459d056e10edb78605ee`  
+		Last Modified: Thu, 09 Jan 2025 22:34:00 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37033d60759d3f64f491cd440ff4be8c16464405712c71a9be52b93f3d183915`  
-		Last Modified: Wed, 25 Dec 2024 14:13:39 GMT  
-		Size: 90.5 MB (90511068 bytes)  
+	-	`sha256:c1d1a589ba1f4cb684e0c812c8dc9b22c65e998fa481eeb45ff8bbdf09a2009f`  
+		Last Modified: Thu, 09 Jan 2025 22:34:03 GMT  
+		Size: 92.4 MB (92380978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mediawiki:stable` - unknown; unknown
 
 ```console
-$ docker pull mediawiki@sha256:eba224c8cfc47cd9fde5ab30ebe860ad34df45390aee9a5b70d28b0ce30157fb
+$ docker pull mediawiki@sha256:2137cfb1b42b023272155c386ec6d5f62d9d0c8a6071704d4cc701a82708c2d4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.9 KB (47860 bytes)**  
+-	Total Size: **48.7 KB (48743 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:504008ee4fe7d5332506cf6c382a183a06746c7ee83785b034b80afa5aa4654d`
+-	Image ID: `sha256:422d50f936e72b82308c8442b88579d38331f2a09412b615256a06515709947c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:15546995e2e2a2eba528cf54c2f91737728fff22ab8dfd90cee5bb165f723aa1`  
-		Last Modified: Wed, 25 Dec 2024 14:13:34 GMT  
-		Size: 47.9 KB (47860 bytes)  
+	-	`sha256:996e81aa775b4c367ac395627bc3a692d105a76a8dea1288679cc36e5ef611d9`  
+		Last Modified: Thu, 09 Jan 2025 22:33:59 GMT  
+		Size: 48.7 KB (48743 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mediawiki:stable` - linux; arm64 variant v8
 
 ```console
-$ docker pull mediawiki@sha256:235e5ab593085ec16da628936f37a941b29cdcd861f4e42620721b2c7e26d57d
+$ docker pull mediawiki@sha256:91cfda6a2ab66b33c8af81f5571d6eafee3fa4e02e2564788a71a592bf3bd5f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **313.3 MB (313267920 bytes)**  
+-	Total Size: **315.1 MB (315142100 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eff62a63da609487cd57b1d7c9c68e83ce5a067a530b84046452f4cbb2896b72`
+-	Image ID: `sha256:c3aa392edf5c21af37ed1a5e8ed266de8a7bc249e8e074509fcc09504a7356ea`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -691,25 +691,25 @@ WORKDIR /var/www/html
 EXPOSE map[80/tcp:{}]
 # Thu, 21 Nov 2024 08:15:38 GMT
 CMD ["apache2-foreground"]
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends 		git 		librsvg2-bin 		imagemagick 		python3 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 		liblua5.1-0-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.24; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 	a2enmod rewrite; 	{ 		echo "<Directory /var/www/html>"; 		echo "  RewriteEngine On"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-f"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-d"; 		echo "  RewriteRule ^ %{DOCUMENT_ROOT}/index.php [L]"; 		echo "</Directory>"; 	} > "$APACHE_CONFDIR/conf-available/short-url.conf"; 	a2enconf short-url # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN sed -i "s/<\/VirtualHost>/\tAllowEncodedSlashes NoDecode\n<\/VirtualHost>/" "$APACHE_CONFDIR/sites-available/000-default.conf" # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
-ENV MEDIAWIKI_MAJOR_VERSION=1.42
-# Fri, 20 Dec 2024 23:07:36 GMT
-ENV MEDIAWIKI_VERSION=1.42.4
-# Fri, 20 Dec 2024 23:07:36 GMT
-RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
+ENV MEDIAWIKI_MAJOR_VERSION=1.43
+# Thu, 09 Jan 2025 11:23:56 GMT
+ENV MEDIAWIKI_VERSION=1.43.0
+# Thu, 09 Jan 2025 11:23:56 GMT
+RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 		E059C034E7A430583C252F4AA8F734246D73B586 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	[ 1.43.0 = "1.42.4" ] && 		sed -i 's|wikimedia/parsoid": "0.19.0"|wikimedia/parsoid": "0.19.1"|' 			composer.json; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Jan 2025 11:23:56 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -770,65 +770,65 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a95828aaa9d5198b1017f02a0ce6a83f77c94377c5b3f4c798bfa1c946c2eebc`  
-		Last Modified: Wed, 25 Dec 2024 09:41:43 GMT  
-		Size: 51.1 MB (51094466 bytes)  
+	-	`sha256:0da16a775099d586603b6ae13d38276e9c6f4b5fce37194716d4f5c5d2cc7e97`  
+		Last Modified: Thu, 09 Jan 2025 22:32:20 GMT  
+		Size: 51.1 MB (51094572 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:31c293ccdaaa089d4838dd4abc6a39608533f7af0b7c892643deade5d19fd2a8`  
-		Last Modified: Wed, 25 Dec 2024 09:41:42 GMT  
-		Size: 2.3 MB (2334203 bytes)  
+	-	`sha256:066e064de7c9cbff29048994bffc78369b81de8cdc3434ea1bd1d547ad573070`  
+		Last Modified: Thu, 09 Jan 2025 22:32:18 GMT  
+		Size: 2.3 MB (2334251 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e18c4cf8db206d9fc455ecdc86425d7467897289f9322df8ecc95b997caa3e3a`  
-		Last Modified: Wed, 25 Dec 2024 09:41:42 GMT  
-		Size: 574.0 B  
+	-	`sha256:75564211e376f1869b315741373b61e8ccb870f7978d9a295ef2bfd927ef5c0c`  
+		Last Modified: Thu, 09 Jan 2025 22:32:18 GMT  
+		Size: 592.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f686611a5243f9a3b11aa816cdafd13c694b8351696b2302967b76fec98aa982`  
-		Last Modified: Wed, 25 Dec 2024 09:41:42 GMT  
-		Size: 905.0 B  
+	-	`sha256:0fce7b30b4138dddc3cf7cc5463d15fabc787b176db7159d2b1913e75b612fde`  
+		Last Modified: Thu, 09 Jan 2025 22:32:18 GMT  
+		Size: 907.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b37d4fe42c9a1f88a11c90b0525b93bbfceb22d0476a4f01c74df985c66fe513`  
-		Last Modified: Wed, 25 Dec 2024 09:41:43 GMT  
-		Size: 315.0 B  
+	-	`sha256:366a5ee328a0d775887736b59fa98771f36ad74dd5ab2fe28579c4c5c5076fbe`  
+		Last Modified: Thu, 09 Jan 2025 22:32:19 GMT  
+		Size: 317.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef32a540d10b9dfcb45b00017c1aa90cab8fc73222c4cb512d3ebd88ceece8fc`  
-		Last Modified: Wed, 25 Dec 2024 09:41:43 GMT  
-		Size: 139.0 B  
+	-	`sha256:76eba37311a5995a03359e4d4bdd4c74e20734e32f388ccd4de2bc7639a448be`  
+		Last Modified: Thu, 09 Jan 2025 22:32:19 GMT  
+		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f29ad28a33b5809ed73273d6bc01af6ac2b996e78028590cfde98c8e7ce885f`  
-		Last Modified: Wed, 25 Dec 2024 09:41:45 GMT  
-		Size: 90.5 MB (90513338 bytes)  
+	-	`sha256:2b24ea19b9020da6576b3a912d95d1261c5df0728009a8b30a1fdf0818a10478`  
+		Last Modified: Thu, 09 Jan 2025 22:32:21 GMT  
+		Size: 92.4 MB (92387341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mediawiki:stable` - unknown; unknown
 
 ```console
-$ docker pull mediawiki@sha256:537f7888f8eb906e7821596c482ad322aed4ba84a7b9fa0dd34f46865ee0bb9e
+$ docker pull mediawiki@sha256:0c7e85e9bfee26b9c6854550f80b4e852917b90f56b0ea6e57b26d58e182a193
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.9 KB (47908 bytes)**  
+-	Total Size: **48.8 KB (48795 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4cad0b10672c78e5b33cf2a37c8fb34b09603ec281a7a16ae60aa5c0694f75be`
+-	Image ID: `sha256:0e86f470f96e38e6b93369d536915112812526945a7b7b9a7ee0861649af78b5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e083573978c60bc12aa31afa39d569c9244b2d68e8e27e173b6fd43dc1a2f696`  
-		Last Modified: Wed, 25 Dec 2024 09:41:41 GMT  
-		Size: 47.9 KB (47908 bytes)  
+	-	`sha256:f85a62f3e0f2d6ecf4af771243145c1406945abda2c805843c95c0c7ce30fa2e`  
+		Last Modified: Thu, 09 Jan 2025 22:32:17 GMT  
+		Size: 48.8 KB (48795 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mediawiki:stable` - linux; 386
 
 ```console
-$ docker pull mediawiki@sha256:4c3031bfad68e7b3005388055d30048aa32e27a911471b8237d803ed06dc3a89
+$ docker pull mediawiki@sha256:772d7b3937d788005295e3275391359cd8bf8e096e312eba8691c2725460f819
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **322.6 MB (322609467 bytes)**  
+-	Total Size: **324.5 MB (324481474 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:df915968afc9cd2f5d9d63ea12859ccef05519d867672ecc073caa949cdffb27`
+-	Image ID: `sha256:4bb0da80695288c2f20f4c9e57611674494942fc02b57f4b37505b0f2b5afa0f`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -891,25 +891,25 @@ WORKDIR /var/www/html
 EXPOSE map[80/tcp:{}]
 # Thu, 21 Nov 2024 08:15:38 GMT
 CMD ["apache2-foreground"]
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends 		git 		librsvg2-bin 		imagemagick 		python3 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 		liblua5.1-0-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.24; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 	a2enmod rewrite; 	{ 		echo "<Directory /var/www/html>"; 		echo "  RewriteEngine On"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-f"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-d"; 		echo "  RewriteRule ^ %{DOCUMENT_ROOT}/index.php [L]"; 		echo "</Directory>"; 	} > "$APACHE_CONFDIR/conf-available/short-url.conf"; 	a2enconf short-url # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN sed -i "s/<\/VirtualHost>/\tAllowEncodedSlashes NoDecode\n<\/VirtualHost>/" "$APACHE_CONFDIR/sites-available/000-default.conf" # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
-ENV MEDIAWIKI_MAJOR_VERSION=1.42
-# Fri, 20 Dec 2024 23:07:36 GMT
-ENV MEDIAWIKI_VERSION=1.42.4
-# Fri, 20 Dec 2024 23:07:36 GMT
-RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
+ENV MEDIAWIKI_MAJOR_VERSION=1.43
+# Thu, 09 Jan 2025 11:23:56 GMT
+ENV MEDIAWIKI_VERSION=1.43.0
+# Thu, 09 Jan 2025 11:23:56 GMT
+RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 		E059C034E7A430583C252F4AA8F734246D73B586 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	[ 1.43.0 = "1.42.4" ] && 		sed -i 's|wikimedia/parsoid": "0.19.0"|wikimedia/parsoid": "0.19.1"|' 			composer.json; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Jan 2025 11:23:56 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -970,65 +970,65 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8851238b9f22c10342951a3fe06a9d04bdeba2601e525f031bdc312d1fd12cc2`  
-		Last Modified: Tue, 24 Dec 2024 23:18:38 GMT  
-		Size: 55.4 MB (55418213 bytes)  
+	-	`sha256:94c825327e4122bd8293b750c2a187085e0347878e825ea3ca390e302fb36d02`  
+		Last Modified: Thu, 09 Jan 2025 22:31:07 GMT  
+		Size: 55.4 MB (55418230 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d5b6c5ed85bec924565e5a16b19d3514df97fcc0e94e0fb8fee5daca3d6eac6`  
-		Last Modified: Tue, 24 Dec 2024 23:18:36 GMT  
-		Size: 2.1 MB (2079944 bytes)  
+	-	`sha256:48434244411665880bf4c057a5278e5e8ade84a270f91b821b80358513a0e2d3`  
+		Last Modified: Thu, 09 Jan 2025 22:31:05 GMT  
+		Size: 2.1 MB (2079962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:346da5e4f8b9e2bb4062eb80ef10c80b8909e7890c2105c9ba98812335a95b46`  
-		Last Modified: Tue, 24 Dec 2024 23:18:36 GMT  
-		Size: 572.0 B  
+	-	`sha256:7d219e33da5bcda8f4fbfe1fce2e876385e9b1acd37144c8c95dae808f76c718`  
+		Last Modified: Thu, 09 Jan 2025 22:31:05 GMT  
+		Size: 574.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:110dc6108aed443c56116ede06fb653a9e85c791045f075a4be176aedab4247d`  
-		Last Modified: Tue, 24 Dec 2024 23:18:36 GMT  
-		Size: 904.0 B  
+	-	`sha256:a7e9a63fdc2adaba4a0990528fd2b2d13f08ca05e23145dd4724e5229b0c9026`  
+		Last Modified: Thu, 09 Jan 2025 22:31:05 GMT  
+		Size: 903.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6898f939724172e2d3219329d0004c11224b7dbc77320ff7b9c5419722f3fabb`  
-		Last Modified: Tue, 24 Dec 2024 23:18:37 GMT  
-		Size: 312.0 B  
+	-	`sha256:ea2addcf3f0a25e77882f62fdba2d63e8daf8e893e4c34495926e316a157de2d`  
+		Last Modified: Thu, 09 Jan 2025 22:31:06 GMT  
+		Size: 311.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdd3b44880a61336cb847fa9c87719d49d21f1162a55509b13f6c023c78bb836`  
-		Last Modified: Tue, 24 Dec 2024 23:18:37 GMT  
+	-	`sha256:b7a909bdc8b14f97734a80b85478e17993d3353c95b57a63cb8ef2107e6e0993`  
+		Last Modified: Thu, 09 Jan 2025 22:31:06 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5d46b8faa240daffbc36de9e05484cfb4399937919dd803a96d0b96f86cc965`  
-		Last Modified: Tue, 24 Dec 2024 23:18:40 GMT  
-		Size: 90.5 MB (90513894 bytes)  
+	-	`sha256:5e29e78431e35ff5761371d0e198084886b8136c9bc410b1a2624f8f30fdaa42`  
+		Last Modified: Thu, 09 Jan 2025 22:31:09 GMT  
+		Size: 92.4 MB (92385866 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mediawiki:stable` - unknown; unknown
 
 ```console
-$ docker pull mediawiki@sha256:9ba0c8236534eeac5348d0622284b79b16238835e401571bf750dce341dda0b3
+$ docker pull mediawiki@sha256:9de0bb6f0f9e44a1bfe7b80bd796799255357f75bc1977d91f2d4834725c6b61
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.7 KB (47678 bytes)**  
+-	Total Size: **48.5 KB (48548 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:340468cbf3c91255aea8aa5438e1546e9382ac508d8f35a5a01f430bcd119faf`
+-	Image ID: `sha256:4925e1424485656157ff77d9db2b0c74678af9bdfdc074db2cbebdabbda194b8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:946474c3de4d7e9c7222706a0329c7147a068ef30649a48763b1108706e11d6f`  
-		Last Modified: Tue, 24 Dec 2024 23:18:36 GMT  
-		Size: 47.7 KB (47678 bytes)  
+	-	`sha256:8a718e9b0b8f2101ce6b9a6313cb25f8ebabba15310ae9fb3b59ca0ce7a88d10`  
+		Last Modified: Thu, 09 Jan 2025 22:31:05 GMT  
+		Size: 48.5 KB (48548 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mediawiki:stable` - linux; ppc64le
 
 ```console
-$ docker pull mediawiki@sha256:1e8b6eb059f8a52aea2ebb751a853c44a9af132a2f709f666e13222e7d5e0dea
+$ docker pull mediawiki@sha256:46c806947087fdc0c2e4d5472572d071856ce994f9594a557a62d6284e8cbd15
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **330.5 MB (330482216 bytes)**  
+-	Total Size: **332.4 MB (332353501 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5063f39afc727a13a3457143ff48f8e92456a62042fee4c2ce5fcb78c0f2e553`
+-	Image ID: `sha256:e01f34c95f50d70acb360565f166b4977d4dcd38376f024a944b35fd8e1e7139`
 -	Entrypoint: `["docker-php-entrypoint"]`
 -	Default Command: `["apache2-foreground"]`
 
@@ -1091,25 +1091,25 @@ WORKDIR /var/www/html
 EXPOSE map[80/tcp:{}]
 # Thu, 21 Nov 2024 08:15:38 GMT
 CMD ["apache2-foreground"]
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 		apt-get update; 	apt-get install -y --no-install-recommends 		git 		librsvg2-bin 		imagemagick 		python3 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libicu-dev 		libonig-dev 		liblua5.1-0-dev 	; 		docker-php-ext-install -j "$(nproc)" 		calendar 		intl 		mbstring 		mysqli 		opcache 	; 		pecl install APCu-5.1.24; 	pecl install LuaSandbox-4.1.2; 	docker-php-ext-enable 		apcu 		luasandbox 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 	a2enmod rewrite; 	{ 		echo "<Directory /var/www/html>"; 		echo "  RewriteEngine On"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-f"; 		echo "  RewriteCond %{REQUEST_FILENAME} !-d"; 		echo "  RewriteRule ^ %{DOCUMENT_ROOT}/index.php [L]"; 		echo "</Directory>"; 	} > "$APACHE_CONFDIR/conf-available/short-url.conf"; 	a2enconf short-url # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN sed -i "s/<\/VirtualHost>/\tAllowEncodedSlashes NoDecode\n<\/VirtualHost>/" "$APACHE_CONFDIR/sites-available/000-default.conf" # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=60'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
 RUN set -eux; 	mkdir -p /var/www/data; 	chown -R www-data:www-data /var/www/data # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
-ENV MEDIAWIKI_MAJOR_VERSION=1.42
-# Fri, 20 Dec 2024 23:07:36 GMT
-ENV MEDIAWIKI_VERSION=1.42.4
-# Fri, 20 Dec 2024 23:07:36 GMT
-RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 20 Dec 2024 23:07:36 GMT
+# Thu, 09 Jan 2025 11:23:56 GMT
+ENV MEDIAWIKI_MAJOR_VERSION=1.43
+# Thu, 09 Jan 2025 11:23:56 GMT
+ENV MEDIAWIKI_VERSION=1.43.0
+# Thu, 09 Jan 2025 11:23:56 GMT
+RUN set -eux; 	fetchDeps=" 		gnupg 		dirmngr 	"; 	apt-get update; 	apt-get install -y --no-install-recommends $fetchDeps; 		curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz" -o mediawiki.tar.gz; 	curl -fSL "https://releases.wikimedia.org/mediawiki/${MEDIAWIKI_MAJOR_VERSION}/mediawiki-${MEDIAWIKI_VERSION}.tar.gz.sig" -o mediawiki.tar.gz.sig; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 		D7D6767D135A514BEB86E9BA75682B08E8A3FEC4 		441276E9CCD15F44F6D97D18C119E1A64D70938E 		F7F780D82EBFB8A56556E7EE82403E59F9F8CD79 		1D98867E82982C8FE0ABC25F9B69B3109D3BB7B0 		E059C034E7A430583C252F4AA8F734246D73B586 	; 	gpg --batch --verify mediawiki.tar.gz.sig mediawiki.tar.gz; 	tar -x --strip-components=1 -f mediawiki.tar.gz; 	[ 1.43.0 = "1.42.4" ] && 		sed -i 's|wikimedia/parsoid": "0.19.0"|wikimedia/parsoid": "0.19.1"|' 			composer.json; 	gpgconf --kill all; 	rm -r "$GNUPGHOME" mediawiki.tar.gz.sig mediawiki.tar.gz; 	chown -R www-data:www-data extensions skins cache images; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 09 Jan 2025 11:23:56 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1170,51 +1170,51 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84d0253a1830753287dc1c9d097e72b737fa84b964332748129df758014c9b44`  
-		Last Modified: Wed, 25 Dec 2024 11:03:51 GMT  
-		Size: 58.1 MB (58078897 bytes)  
+	-	`sha256:90fc60c5a63d99d5b9ee15baa650bacf84ba8d29352553e1a84536b00f15abfc`  
+		Last Modified: Thu, 09 Jan 2025 22:31:49 GMT  
+		Size: 58.1 MB (58077628 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0e45f4a48e13595db4d2b01f46be70b9e2e3bbb0b6c3ff6e9f68a835e1fd7901`  
-		Last Modified: Wed, 25 Dec 2024 11:03:49 GMT  
-		Size: 1.8 MB (1809564 bytes)  
+	-	`sha256:1901128c3da44c5a4568e69b4377a21c4fe0650063047eb54659cf04d12027c5`  
+		Last Modified: Thu, 09 Jan 2025 22:31:48 GMT  
+		Size: 1.8 MB (1809610 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed4d07ea993eaffa268e30d540544415f6396c32525f3965eb3f40570aaa1594`  
-		Last Modified: Wed, 25 Dec 2024 11:03:49 GMT  
-		Size: 576.0 B  
+	-	`sha256:bcc338e35f415d6d66e01be77303ee2b958fed26634eb741e3a0df5a26b38230`  
+		Last Modified: Thu, 09 Jan 2025 22:31:47 GMT  
+		Size: 581.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d523d0d5aef96e1583a4f6bf9f6be35183773cb6bcdfa65ec56b2d73274c3c91`  
-		Last Modified: Wed, 25 Dec 2024 11:03:49 GMT  
-		Size: 901.0 B  
+	-	`sha256:b0f85e035a6f932d7d1eafb593e8c3c7092ba9b63465f874baaee99fa9533951`  
+		Last Modified: Thu, 09 Jan 2025 22:31:47 GMT  
+		Size: 904.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:25bfd3bb2641f3a16f9d4f68bccaa99044ed465bfda3d952527b4e2008590e2f`  
-		Last Modified: Wed, 25 Dec 2024 11:03:50 GMT  
-		Size: 316.0 B  
+	-	`sha256:1789144f1a86f848337dc06d7b70b06b7fb7254d2547b8fec48b9efed7a709d1`  
+		Last Modified: Thu, 09 Jan 2025 22:31:49 GMT  
+		Size: 318.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:742cfee90203e2a7754304bd762fd322b9c90e11ba6aa81000c6f80f75acaa4b`  
-		Last Modified: Wed, 25 Dec 2024 11:03:50 GMT  
+	-	`sha256:3fe149aeb2ed54fde9a2041b941a7cb55013b0f57d1bb06a520ee8483e5f3fe6`  
+		Last Modified: Thu, 09 Jan 2025 22:31:48 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3ddf90a5306b67378204288468c509ffe3d96a3a88c28aa6d914cd5d404b2ec`  
-		Last Modified: Wed, 25 Dec 2024 11:03:53 GMT  
-		Size: 90.5 MB (90514918 bytes)  
+	-	`sha256:57bba34aee98aa5cc746ca3234a2b4333ce8f40edb67e520b86b77050a1de18f`  
+		Last Modified: Thu, 09 Jan 2025 22:31:52 GMT  
+		Size: 92.4 MB (92387416 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mediawiki:stable` - unknown; unknown
 
 ```console
-$ docker pull mediawiki@sha256:f0495612fd5e5934118aa6d8550abca644d122a816ef195d26407bed7de03f78
+$ docker pull mediawiki@sha256:32764db6e7134d1ff93c684408c57bf2ad0353de30e352960e3c7fef54bdd07e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.8 KB (47778 bytes)**  
+-	Total Size: **48.7 KB (48659 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c62c12a083dc9a84cf94ececdcc838a3d0dbbb3ecba83d39472bbaa372f4a808`
+-	Image ID: `sha256:a70e4eec4a094c439b6b6646a92797c1a6f73c89fce34eeaa3c75c01ed1df080`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5768c3b00c45eb63cf75bf691d3d4b6dc4b43a554072dd8e4105dd7bab9912f1`  
-		Last Modified: Wed, 25 Dec 2024 11:03:48 GMT  
-		Size: 47.8 KB (47778 bytes)  
+	-	`sha256:5d67f40a5707e6ddcf80f0b2e3d8e6448f3600338abe57086fc8e1f0e3714355`  
+		Last Modified: Thu, 09 Jan 2025 22:31:47 GMT  
+		Size: 48.7 KB (48659 bytes)  
 		MIME: application/vnd.in-toto+json
