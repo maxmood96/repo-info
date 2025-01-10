@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a3db60bc6618d26f2d318cc9da44dff9c5186e4d13febb8f3cc5a487da3f3197`
+- Image ID: `sha256:edf8f1afe71ef7e3246daae6c4c0e718f06958264c06f268c79c88452becd1be`
 - Created: `2024-05-08T09:27:26Z`
-- Virtual Size: ~ 242.35 Mb  
+- Virtual Size: ~ 242.39 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/entrypoint.sh"]`
@@ -111,16 +111,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.1-r0 description:
+alpine-release-3.21.2-r0 description:
 Alpine release data
 
-alpine-release-3.21.1-r0 webpage:
+alpine-release-3.21.2-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.1-r0 installed size:
+alpine-release-3.21.2-r0 installed size:
 346 B
 
-alpine-release-3.21.1-r0 license:
+alpine-release-3.21.2-r0 license:
 MIT
 
 ```
@@ -247,16 +247,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20241121-r0 description:
+ca-certificates-20241121-r1 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20241121-r0 webpage:
+ca-certificates-20241121-r1 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20241121-r0 installed size:
-238 KiB
+ca-certificates-20241121-r1 installed size:
+251 KiB
 
-ca-certificates-20241121-r0 license:
+ca-certificates-20241121-r1 license:
 MPL-2.0 AND MIT
 
 ```
@@ -264,16 +264,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241121-r0 description:
+ca-certificates-bundle-20241121-r1 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241121-r0 webpage:
+ca-certificates-bundle-20241121-r1 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241121-r0 installed size:
-204 KiB
+ca-certificates-bundle-20241121-r1 installed size:
+217 KiB
 
-ca-certificates-bundle-20241121-r0 license:
+ca-certificates-bundle-20241121-r1 license:
 MPL-2.0 AND MIT
 
 ```
