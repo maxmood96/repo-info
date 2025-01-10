@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:593cc9c61f0411c5a0bc847d6621454001cf6bb2c60a6548220a71b1ca01e852`
+- Image ID: `sha256:2edd9a65cd97ccf9e41d22728d0e056b78e04d9941b5949f4413a52cb52c3c03`
 - Created: `2024-07-03T16:05:23Z`
-- Virtual Size: ~ 449.53 Mb  
+- Virtual Size: ~ 449.57 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -766,16 +766,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20241121-r0 description:
+ca-certificates-20241121-r1 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20241121-r0 webpage:
+ca-certificates-20241121-r1 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20241121-r0 installed size:
-684 KiB
+ca-certificates-20241121-r1 installed size:
+720 KiB
 
-ca-certificates-20241121-r0 license:
+ca-certificates-20241121-r1 license:
 MPL-2.0 AND MIT
 
 ```
@@ -783,16 +783,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241121-r0 description:
+ca-certificates-bundle-20241121-r1 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241121-r0 webpage:
+ca-certificates-bundle-20241121-r1 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241121-r0 installed size:
-228 KiB
+ca-certificates-bundle-20241121-r1 installed size:
+240 KiB
 
-ca-certificates-bundle-20241121-r0 license:
+ca-certificates-bundle-20241121-r1 license:
 MPL-2.0 AND MIT
 
 ```
@@ -1769,16 +1769,16 @@ rhash-libs-1.4.4-r0 license:
 ### `apk` package: `runtime-dependencies`
 
 ```console
-runtime-dependencies-20250107.032757 description:
+runtime-dependencies-20250108.180839 description:
 virtual meta package
 
-runtime-dependencies-20250107.032757 webpage:
+runtime-dependencies-20250108.180839 webpage:
 
 
-runtime-dependencies-20250107.032757 installed size:
+runtime-dependencies-20250108.180839 installed size:
 0 B
 
-runtime-dependencies-20250107.032757 license:
+runtime-dependencies-20250108.180839 license:
 
 
 ```
