@@ -1,7 +1,7 @@
 ## `spiped:alpine`
 
 ```console
-$ docker pull spiped@sha256:6ed6f7e10b4254a3da9ca5e256d36da154fc8a49dd7d351d8d257e73ac65e224
+$ docker pull spiped@sha256:3defbc7042c9287d78d336478981bdf2410928e48fd8a9504755509633620376
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -550,19 +550,19 @@ $ docker pull spiped@sha256:641f93fddb6e6a668353356d78a708a17b7271ab06e13c5d2d16
 ### `spiped:alpine` - linux; riscv64
 
 ```console
-$ docker pull spiped@sha256:da6591d15c86f3bf43fab6ccc0035a0650a5756859870abdd3276d24eedff6a9
+$ docker pull spiped@sha256:79982546d0bed357c3b7f570dab84958af0f189249fe28e89577d41749385d17
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.6 MB (5551193 bytes)**  
+-	Total Size: **3.6 MB (3596676 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0b8476d53de131526ad9562517c1b099c24ce9385a5730746d1e83247619389c`
+-	Image ID: `sha256:c84f4d20594fd72e32a00a9feabc004f2a01714cd681f91d6012c8315cb905ab`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["spiped"]`
 
 ```dockerfile
 # Thu, 23 May 2024 19:15:47 GMT
-ADD alpine-minirootfs-3.20.3-riscv64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.5-riscv64.tar.gz / # buildkit
 # Thu, 23 May 2024 19:15:47 GMT
 CMD ["/bin/sh"]
 # Thu, 23 May 2024 19:15:47 GMT
@@ -586,53 +586,53 @@ CMD ["spiped"]
 ```
 
 -	Layers:
-	-	`sha256:ea37667e50ca807fa8abc1caf0d21091cbbe1d66b2c217158fb3e91c2787afaf`  
-		Last Modified: Tue, 12 Nov 2024 00:55:56 GMT  
-		Size: 3.4 MB (3371482 bytes)  
+	-	`sha256:34b7590cc8ea3b21e8c3a0d69270b822d3ba63bc58c6cf0e36c987c95b18eb8d`  
+		Last Modified: Wed, 08 Jan 2025 17:49:41 GMT  
+		Size: 3.4 MB (3371926 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46aa88ab9b012a876209b14e6deee5c7982f819f8de6d7b9ed357459d28c597e`  
-		Last Modified: Wed, 13 Nov 2024 01:24:28 GMT  
-		Size: 962.0 B  
+	-	`sha256:afdd5abd6a9641f814dc31398b1f41f1208ca3c43eafd4a1c8885cb772431cc5`  
+		Last Modified: Fri, 10 Jan 2025 16:34:51 GMT  
+		Size: 964.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c5bdf98d05f4226e17074c09dea718e6191052243811401bf5891cdfb4f1005a`  
-		Last Modified: Wed, 13 Nov 2024 01:24:28 GMT  
-		Size: 7.6 KB (7564 bytes)  
+	-	`sha256:473a53dcc89c2068574226fb084968b4ffe7be1af4300f024b632369f8a8c233`  
+		Last Modified: Fri, 10 Jan 2025 16:34:51 GMT  
+		Size: 7.6 KB (7561 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c1cc53836a810c0768e9eb515600a82be8862a3129239035de56d851625f2890`  
-		Last Modified: Wed, 13 Nov 2024 01:24:29 GMT  
-		Size: 2.2 MB (2170750 bytes)  
+	-	`sha256:113dcefb1595560f60660ee7a991d2b59509bc30e01ceddb44741db3ef240384`  
+		Last Modified: Fri, 10 Jan 2025 16:34:51 GMT  
+		Size: 215.8 KB (215788 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1cd669ab852fa6faffdff5b54301703ace4f36faf005d628470fcef6f3ba9296`  
-		Last Modified: Wed, 13 Nov 2024 01:24:29 GMT  
+	-	`sha256:659fa19d2020016e65ba76874ea424e5842bf892ef9cbb0fb225538f1e187cf7`  
+		Last Modified: Fri, 10 Jan 2025 16:34:51 GMT  
 		Size: 96.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b31ad710654b9957b395b764e0751fb8ceb335cd3970bee0870c731d0c9d1631`  
-		Last Modified: Wed, 13 Nov 2024 01:24:30 GMT  
-		Size: 339.0 B  
+	-	`sha256:ecff65919c3bd12f584108c1e36a3685a85470a54c58c385eb56d95175f5ab8c`  
+		Last Modified: Fri, 10 Jan 2025 16:34:52 GMT  
+		Size: 341.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `spiped:alpine` - unknown; unknown
 
 ```console
-$ docker pull spiped@sha256:35c0217a072785ece237b37268cd30f7410f423b96bd889e56db03a674044795
+$ docker pull spiped@sha256:1fe29fb7531300754b92edf6a17cb43bbf6bdccf3669dda2f135e21ecd7bc35d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **86.6 KB (86610 bytes)**  
+-	Total Size: **86.5 KB (86525 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:21f8f74486982bdb4f701b16321ebb5b430c4a06622f6960273f474bfbb2188e`
+-	Image ID: `sha256:a1d832c44e71bd3c5c8e4af761656415c7160b797f2992b90ae6ccd9ad1d3bae`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:88a28221c4fd9d156a4ebf0935fa189d8524bb92c8fdc1d76981cf7435c2056e`  
-		Last Modified: Wed, 13 Nov 2024 01:24:28 GMT  
-		Size: 72.3 KB (72257 bytes)  
+	-	`sha256:22ce3c1ef9750e4e84284967ee5eccca34b598a38edbca4cd170feb5ca477190`  
+		Last Modified: Fri, 10 Jan 2025 16:34:51 GMT  
+		Size: 72.2 KB (72175 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2a28652304d303135a92cbe69570122aaa332626746b8080a921073de8775bb3`  
-		Last Modified: Wed, 13 Nov 2024 01:24:28 GMT  
-		Size: 14.4 KB (14353 bytes)  
+	-	`sha256:4aff322ae82649ec4042d09e767199a7e60414c2658b767de2a09545e6bc998d`  
+		Last Modified: Fri, 10 Jan 2025 16:34:51 GMT  
+		Size: 14.3 KB (14350 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `spiped:alpine` - linux; s390x
