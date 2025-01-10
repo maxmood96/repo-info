@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:775f44fd8eca66c024e904e61b498142ebdaaa0182c7b5d3cb5ec5e45f2a2656`
+- Image ID: `sha256:56922e02a10ceba0da3080f5666134668af56435f3c42beb4aeba517c59d0618`
 - Created: `2024-09-12T19:33:49Z`
-- Virtual Size: ~ 183.01 Mb  
+- Virtual Size: ~ 183.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -98,16 +98,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.1-r0 description:
+alpine-release-3.21.2-r0 description:
 Alpine release data
 
-alpine-release-3.21.1-r0 webpage:
+alpine-release-3.21.2-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.1-r0 installed size:
+alpine-release-3.21.2-r0 installed size:
 346 B
 
-alpine-release-3.21.1-r0 license:
+alpine-release-3.21.2-r0 license:
 MIT
 
 ```
@@ -251,16 +251,16 @@ MIT
 ### `apk` package: `ca-certificates`
 
 ```console
-ca-certificates-20241121-r0 description:
+ca-certificates-20241121-r1 description:
 Common CA certificates PEM files from Mozilla
 
-ca-certificates-20241121-r0 webpage:
+ca-certificates-20241121-r1 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-20241121-r0 installed size:
-238 KiB
+ca-certificates-20241121-r1 installed size:
+251 KiB
 
-ca-certificates-20241121-r0 license:
+ca-certificates-20241121-r1 license:
 MPL-2.0 AND MIT
 
 ```
@@ -268,16 +268,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241121-r0 description:
+ca-certificates-bundle-20241121-r1 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241121-r0 webpage:
+ca-certificates-bundle-20241121-r1 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241121-r0 installed size:
-204 KiB
+ca-certificates-bundle-20241121-r1 installed size:
+217 KiB
 
-ca-certificates-bundle-20241121-r0 license:
+ca-certificates-bundle-20241121-r1 license:
 MPL-2.0 AND MIT
 
 ```
