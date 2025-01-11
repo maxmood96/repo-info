@@ -1,7 +1,7 @@
 ## `percona:ps-8.0`
 
 ```console
-$ docker pull percona@sha256:5829df12a6e444ce572a128551915304edd583b78934a4c75a9370c6ed11d068
+$ docker pull percona@sha256:26f681b8ebd151076c0fd824fab662c9c8a8e932ae46bdce485fcd3c0e732da0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,51 +12,53 @@ $ docker pull percona@sha256:5829df12a6e444ce572a128551915304edd583b78934a4c75a9
 ### `percona:ps-8.0` - linux; amd64
 
 ```console
-$ docker pull percona@sha256:33ccaf1d620f11679fcbe221df737901410b8a597e07b3fd9188169323c3901d
+$ docker pull percona@sha256:7dacd5705acfb1b304e25b6269b48389185d11521a6f50c8c38d266121df0fa1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **385.9 MB (385932635 bytes)**  
+-	Total Size: **385.9 MB (385934106 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9b05850a06c67bbf7966eecd28f1aaffe70baf0d881e53d9e9cb141e5503fe5b`
+-	Image ID: `sha256:589abd9c09b22398eb517dcdb4820537bc191502770cbe4244204394a9771527`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["mysqld"]`
 
 ```dockerfile
-# Wed, 18 Dec 2024 04:56:51 GMT
+# Wed, 08 Jan 2025 11:00:36 GMT
 LABEL maintainer="Red Hat, Inc."
-# Wed, 18 Dec 2024 04:56:51 GMT
+# Wed, 08 Jan 2025 11:00:36 GMT
 LABEL vendor="Red Hat, Inc."
-# Wed, 18 Dec 2024 04:56:51 GMT
+# Wed, 08 Jan 2025 11:00:36 GMT
 LABEL url="https://www.redhat.com"
-# Wed, 18 Dec 2024 04:56:51 GMT
+# Wed, 08 Jan 2025 11:00:36 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.5"       distribution-scope="public"
-# Wed, 18 Dec 2024 04:56:51 GMT
+# Wed, 08 Jan 2025 11:00:36 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Wed, 18 Dec 2024 04:56:51 GMT
+# Wed, 08 Jan 2025 11:00:36 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Wed, 18 Dec 2024 04:56:51 GMT
+# Wed, 08 Jan 2025 11:00:36 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 18 Dec 2024 04:56:51 GMT
+# Wed, 08 Jan 2025 11:00:36 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Wed, 18 Dec 2024 04:56:51 GMT
+# Wed, 08 Jan 2025 11:00:36 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Wed, 18 Dec 2024 04:56:51 GMT
+# Wed, 08 Jan 2025 11:00:36 GMT
 LABEL io.openshift.expose-services=""
-# Wed, 18 Dec 2024 04:56:51 GMT
+# Wed, 08 Jan 2025 11:00:36 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Wed, 18 Dec 2024 04:56:51 GMT
+# Wed, 08 Jan 2025 11:00:36 GMT
 ENV container oci
-# Wed, 18 Dec 2024 04:56:51 GMT
-COPY dir:0485e287b26ef73c199c820b8915015ba33a659f620dc17eafe7e7a33f8bf780 in / 
-# Wed, 18 Dec 2024 04:56:51 GMT
+# Wed, 08 Jan 2025 11:00:36 GMT
+COPY dir:ca56c4399f153561fdce7628edce358895393e72057424065cc9920dd3bc2dfc in / 
+# Wed, 08 Jan 2025 11:00:36 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
-# Wed, 18 Dec 2024 04:56:51 GMT
+# Wed, 08 Jan 2025 11:00:36 GMT
 CMD ["/bin/bash"]
-# Wed, 18 Dec 2024 04:56:52 GMT
+# Wed, 08 Jan 2025 11:00:36 GMT
 RUN . /cachi2/cachi2.env &&     rm -rf /var/log/*
-# Wed, 18 Dec 2024 04:56:52 GMT
-LABEL "build-date"="2024-12-18T04:56:25" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="0724d65b854a0151fb7d10b0e6510d8aee28e115" "build-date"="2024-12-18T04:52:16Z" "release"="1734497536"
+# Wed, 08 Jan 2025 11:00:36 GMT
+LABEL "build-date"="2025-01-09T06:40:34" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="98c9e4c67f5f2dfc85d12e0f1fd70b809f2a3132" "build-date"="2025-01-09T06:29:15Z" "release"="1736404155"
+# Wed, 08 Jan 2025 11:00:36 GMT
+RUN /bin/sh
 # Wed, 08 Jan 2025 11:00:36 GMT
 LABEL org.opencontainers.image.authors=info@percona.com
 # Wed, 08 Jan 2025 11:00:36 GMT
@@ -112,51 +114,55 @@ CMD ["mysqld"]
 ```
 
 -	Layers:
-	-	`sha256:1e6b7297048ae70484705dda4e582fb8ad5778ea4c8ae464cf3e6a02ac439012`  
-		Last Modified: Wed, 18 Dec 2024 06:15:23 GMT  
-		Size: 39.4 MB (39432409 bytes)  
+	-	`sha256:eeaa3613f51c4b5b7fcccfbff65d07d2d2db56a76e38e2e028020458a3016d3b`  
+		Last Modified: Thu, 09 Jan 2025 07:47:12 GMT  
+		Size: 39.4 MB (39432422 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ddcbb9e5379eaae6c9cd8360aeacafd19a06e57c849c517b7efc209e7bea26f`  
-		Last Modified: Wed, 08 Jan 2025 23:32:41 GMT  
-		Size: 1.4 KB (1371 bytes)  
+	-	`sha256:5808a11b7bed4fb0f4e0161a315ca539c1c940faabe1402029784919a7dc4599`  
+		Last Modified: Thu, 09 Jan 2025 07:47:09 GMT  
+		Size: 400.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb94eff351dc1bf8a10ccb45bdb88ba7856ab2833f453be1b0528a0fa2198424`  
-		Last Modified: Wed, 08 Jan 2025 23:32:42 GMT  
-		Size: 8.3 MB (8336445 bytes)  
+	-	`sha256:de979cc62c2560860a82998c8121d11d640141616841b341c33e5cc9b27c60e6`  
+		Last Modified: Sat, 11 Jan 2025 01:29:47 GMT  
+		Size: 1.4 KB (1369 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19392592a0987f82e37e2b280072f8fa5a815f18f16fbb515f2f95ecbd9cce7c`  
-		Last Modified: Wed, 08 Jan 2025 23:32:47 GMT  
-		Size: 338.2 MB (338154053 bytes)  
+	-	`sha256:11a72f07cae8d459b50e0259f177b9b4a3584ed7341db5983d12103648a648a2`  
+		Last Modified: Sat, 11 Jan 2025 01:29:47 GMT  
+		Size: 8.3 MB (8336345 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:431af9ee1cf6c5f5bf7b824b8034e5c8047789ae48979a1165935fd11baa1251`  
-		Last Modified: Wed, 08 Jan 2025 23:32:41 GMT  
-		Size: 1.1 KB (1117 bytes)  
+	-	`sha256:ef412e132d16dcadfd328db67195efcc375f36c2bc833b54ab9ae0eda497fedc`  
+		Last Modified: Sat, 11 Jan 2025 01:29:51 GMT  
+		Size: 338.2 MB (338155210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f40910a95e5a708caaddbde294967a4e1f01e6c68a0190a3cab4a1cfe82d4539`  
-		Last Modified: Wed, 08 Jan 2025 23:32:42 GMT  
-		Size: 4.0 KB (3958 bytes)  
+	-	`sha256:9b1b043ca95a8067ae983dd69c58f51741d737f2f38a540f8d17df53b80f3e7b`  
+		Last Modified: Sat, 11 Jan 2025 01:29:47 GMT  
+		Size: 1.1 KB (1119 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:591254a9bebfd9b6136e2ea2cb0abb7356652feda6ca7a540c472fab4c492f0d`  
-		Last Modified: Wed, 08 Jan 2025 23:32:42 GMT  
+	-	`sha256:d3ab8dd7d16ed8b141c31a1b8c95ab63392796071d846891d027ef26f6a245e2`  
+		Last Modified: Sat, 11 Jan 2025 01:29:48 GMT  
+		Size: 4.0 KB (3959 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4a602ffebef6334b515c3b46bbdd7f09759db0ddb2dac414727e032ac7dd5f50`  
+		Last Modified: Sat, 11 Jan 2025 01:29:48 GMT  
 		Size: 3.3 KB (3282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `percona:ps-8.0` - unknown; unknown
 
 ```console
-$ docker pull percona@sha256:8351758d8b81b9aefa727c472c37a918c5bc17df4943350dd78c02983d06f7da
+$ docker pull percona@sha256:db3ff463dba4862195a8dd56cd70ed8edb0de7f68a57f6d35f60e187f283131f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.8 KB (30847 bytes)**  
+-	Total Size: **31.9 KB (31925 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24e76ff78add65091403410757de31ac1e98aa375e2671533012560e481e4808`
+-	Image ID: `sha256:7b286d4c1bcd15cb6a9c83b9b7f077f87aa6fe395138c887ddd285ccb548c438`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9b2711f3915f6af13ce9e04d7b34c0571b5b377fd0bb0ab77683d85b9f1927d1`  
-		Last Modified: Wed, 08 Jan 2025 23:32:41 GMT  
-		Size: 30.8 KB (30847 bytes)  
+	-	`sha256:e9a2407c6de20b5ab4e221cd167203866ead05a89f444735df62a95ba4f5848b`  
+		Last Modified: Sat, 11 Jan 2025 01:29:47 GMT  
+		Size: 31.9 KB (31925 bytes)  
 		MIME: application/vnd.in-toto+json
