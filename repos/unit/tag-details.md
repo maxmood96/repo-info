@@ -54,76 +54,1261 @@
 
 ## `unit:1.34.0-go1.22`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:782f92d437db6a50e735d001ead5f07ed3cb2aa740091e3915b4f44046bac61e
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `unit:1.34.0-go1.22` - linux; arm64 variant v8
+
+```console
+$ docker pull unit@sha256:f37c04cce8bca438f3f7eed446f78f4ed56a489fd4cb35d701f58d9c52becdc1
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **309.5 MB (309514287 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:950d76b597095e1f8625c7b2e66018b0eea8fa84ce5fad5d3dea0aa2386cc72a`
+-	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
+-	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
+
+```dockerfile
+# Wed, 10 May 2023 23:29:59 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
+# Wed, 10 May 2023 23:29:59 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 03 Dec 2024 18:23:12 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 03 Dec 2024 18:23:12 GMT
+ENV GOLANG_VERSION=1.22.10
+# Tue, 03 Dec 2024 18:23:12 GMT
+ENV GOTOOLCHAIN=local
+# Tue, 03 Dec 2024 18:23:12 GMT
+ENV GOPATH=/go
+# Tue, 03 Dec 2024 18:23:12 GMT
+ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 03 Dec 2024 18:23:12 GMT
+COPY /target/ / # buildkit
+# Tue, 03 Dec 2024 18:23:12 GMT
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
+# Tue, 03 Dec 2024 18:23:12 GMT
+WORKDIR /go
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.title=Unit (go1.22)
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.description=Official build of Unit for Docker.
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.url=https://unit.nginx.org
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.source=https://github.com/nginx/unit
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY welcome.* /usr/share/unit/welcome/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+STOPSIGNAL SIGTERM
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+EXPOSE map[80/tcp:{}]
+# Thu, 19 Dec 2024 18:23:57 GMT
+CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
+```
+
+-	Layers:
+	-	`sha256:ba1dd0e85e0bf7e5cb632a24bbc3ec0060700bc5be9273b05d7e059950225037`  
+		Last Modified: Tue, 24 Dec 2024 21:34:06 GMT  
+		Size: 48.3 MB (48325484 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:92b12b0dccf212c795e61e16dcc85f0caa01c231281e3287400bd334ffedb5ff`  
+		Last Modified: Wed, 25 Dec 2024 01:49:19 GMT  
+		Size: 23.4 MB (23405768 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fd63102cac360c09802a29bab13f15de711e8bd1a730d419c66110513700983c`  
+		Last Modified: Wed, 25 Dec 2024 08:11:51 GMT  
+		Size: 64.3 MB (64347452 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:47f0760d52ed73adddb3508ddcb5b6593cb64ca56a1ff03102d680fcf2358d2d`  
+		Last Modified: Wed, 25 Dec 2024 11:25:46 GMT  
+		Size: 86.3 MB (86344558 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:73a254541fddc7717e536d4c131af60e73f03399038bc2a24d1abcce87395f09`  
+		Last Modified: Wed, 04 Dec 2024 01:43:10 GMT  
+		Size: 66.3 MB (66292677 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:85d7486e8cc0f073ff375a8708effcaa66d48902d43eaae436c203c935a4a293`  
+		Last Modified: Wed, 25 Dec 2024 11:28:32 GMT  
+		Size: 126.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:69833ac4452783ca3fa83b740eaf50c87645259c3eeb41e83647faf622cf6bfd`  
+		Last Modified: Sat, 11 Jan 2025 02:06:42 GMT  
+		Size: 20.8 MB (20795472 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e919014cacfcf4cc6b445b63af97f882e3e92eb8c1ce7f8cc67b04edfe372140`  
+		Last Modified: Sat, 11 Jan 2025 02:06:41 GMT  
+		Size: 1.3 KB (1263 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2ba212ef64a50369c3646559d634ae5586aca340a20293fb69a5e19b66f5540f`  
+		Last Modified: Sat, 11 Jan 2025 02:06:41 GMT  
+		Size: 1.5 KB (1455 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `unit:1.34.0-go1.22` - unknown; unknown
+
+```console
+$ docker pull unit@sha256:d156b370435e42f2ea235f72e30cfda2f9d430d8f16537b30d0d304d72b99a32
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **27.9 KB (27869 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5e6e80e21394c512b1f9f61382054f2c25395b61c7f4557741336fbd450d995a`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:600541d8991a56a1ae25630dd6d9183f09ee615d2f83d2a9c0296a78a267997c`  
+		Last Modified: Sat, 11 Jan 2025 02:06:41 GMT  
+		Size: 27.9 KB (27869 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `unit:1.34.0-go1.23`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:37908206799b32f3ea0c8ffbfc0e1e5feed1100cfe56a4dfabb13af2e64edfdb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `unit:1.34.0-go1.23` - linux; arm64 variant v8
+
+```console
+$ docker pull unit@sha256:ad87cb4be1df273eadd9cef7effd3dd2fc227430f387665cef363dfe8e58e73a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **313.9 MB (313896038 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:f0faa8373b0b6666a7d70476f9b81bf195da1023fe3bed5747c556abb535f4c1`
+-	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
+-	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
+
+```dockerfile
+# Wed, 10 May 2023 23:29:59 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
+# Wed, 10 May 2023 23:29:59 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 03 Dec 2024 19:01:46 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 03 Dec 2024 19:01:46 GMT
+ENV GOLANG_VERSION=1.23.4
+# Tue, 03 Dec 2024 19:01:46 GMT
+ENV GOTOOLCHAIN=local
+# Tue, 03 Dec 2024 19:01:46 GMT
+ENV GOPATH=/go
+# Tue, 03 Dec 2024 19:01:46 GMT
+ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 03 Dec 2024 19:01:46 GMT
+COPY /target/ / # buildkit
+# Tue, 03 Dec 2024 19:01:46 GMT
+RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
+# Tue, 03 Dec 2024 19:01:46 GMT
+WORKDIR /go
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.title=Unit (go1.23)
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.description=Official build of Unit for Docker.
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.url=https://unit.nginx.org
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.source=https://github.com/nginx/unit
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY welcome.* /usr/share/unit/welcome/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+STOPSIGNAL SIGTERM
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+EXPOSE map[80/tcp:{}]
+# Thu, 19 Dec 2024 18:23:57 GMT
+CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
+```
+
+-	Layers:
+	-	`sha256:ba1dd0e85e0bf7e5cb632a24bbc3ec0060700bc5be9273b05d7e059950225037`  
+		Last Modified: Tue, 24 Dec 2024 21:34:06 GMT  
+		Size: 48.3 MB (48325484 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:92b12b0dccf212c795e61e16dcc85f0caa01c231281e3287400bd334ffedb5ff`  
+		Last Modified: Wed, 25 Dec 2024 01:49:19 GMT  
+		Size: 23.4 MB (23405768 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fd63102cac360c09802a29bab13f15de711e8bd1a730d419c66110513700983c`  
+		Last Modified: Wed, 25 Dec 2024 08:11:51 GMT  
+		Size: 64.3 MB (64347452 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:47f0760d52ed73adddb3508ddcb5b6593cb64ca56a1ff03102d680fcf2358d2d`  
+		Last Modified: Wed, 25 Dec 2024 11:25:46 GMT  
+		Size: 86.3 MB (86344558 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:39f8f326b04424eb2027d1f0e3255fe568d71a5567f894a08cd86605ebe51c58`  
+		Last Modified: Wed, 04 Dec 2024 01:41:07 GMT  
+		Size: 70.7 MB (70673417 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:df3aad8f12f66060f1575c7562f8831493595038c34f14527da5ffae2ea0332e`  
+		Last Modified: Wed, 25 Dec 2024 11:27:17 GMT  
+		Size: 126.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:93aa43fb2778b911cd4979e78dd292bfae20403fd6d78b8edce15438af048340`  
+		Last Modified: Sat, 11 Jan 2025 02:03:54 GMT  
+		Size: 20.8 MB (20796484 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:bd1825e4138f4117142cb456022c110e60306b708c5759cf7656f8ad8fa2b245`  
+		Last Modified: Sat, 11 Jan 2025 02:03:53 GMT  
+		Size: 1.3 KB (1263 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:627adcd8552e3c3929a9dee4d18c74f7d5343da80ad86d10c6c121a97e003c50`  
+		Last Modified: Sat, 11 Jan 2025 02:03:54 GMT  
+		Size: 1.5 KB (1454 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `unit:1.34.0-go1.23` - unknown; unknown
+
+```console
+$ docker pull unit@sha256:9e8e22c22698db9ef24777858d110fe778ac2b2ccef04011489c976438dca109
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **28.5 KB (28466 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:11dd2644ffd80d913f479afca794519f13f42243d15023d048c7215b0a3ab27a`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:f1bbc5dfdba8d2586f5ef77900096a124c2f50ac8e2b37467d54caf9b8068964`  
+		Last Modified: Sat, 11 Jan 2025 02:03:53 GMT  
+		Size: 28.5 KB (28466 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `unit:1.34.0-jsc11`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:83c05b0e06d7041f65be06adb2b47aea3b640dc14e8db66d9c88bbed1a48c8bd
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `unit:1.34.0-jsc11` - linux; arm64 variant v8
+
+```console
+$ docker pull unit@sha256:3bb60170a2a61c748e9067f26587b5bfad7d1590a8ccf536323ca28d958427b0
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **214.3 MB (214286325 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:b4ae17d0443e92f216747c82f1a06506d3a5773637367f342ccf3f540b74a90b`
+-	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
+-	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
+
+```dockerfile
+# Wed, 11 Sep 2024 16:26:04 GMT
+ARG RELEASE
+# Wed, 11 Sep 2024 16:26:04 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Wed, 11 Sep 2024 16:26:04 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Wed, 11 Sep 2024 16:26:04 GMT
+LABEL org.opencontainers.image.version=22.04
+# Wed, 11 Sep 2024 16:26:06 GMT
+ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
+# Wed, 11 Sep 2024 16:26:06 GMT
+CMD ["/bin/bash"]
+# Wed, 23 Oct 2024 15:41:32 GMT
+ENV JAVA_HOME=/opt/java/openjdk
+# Wed, 23 Oct 2024 15:41:32 GMT
+ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Wed, 23 Oct 2024 15:41:32 GMT
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
+# Wed, 23 Oct 2024 15:41:32 GMT
+RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
+# Wed, 23 Oct 2024 15:41:32 GMT
+ENV JAVA_VERSION=jdk-11.0.25+9
+# Wed, 23 Oct 2024 15:41:32 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='191baa2e052627614022171400a917d28f0987dc54da48aaf07b06f552bb9884';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jdk_x64_linux_hotspot_11.0.25_9.tar.gz';          ;;        arm64)          ESUM='f2087cc3abdd509b74facf8e43e81e36244d14c70dec080b8f3a662695417ca7';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.25_9.tar.gz';          ;;        armhf)          ESUM='6bdd7da08c9f8fedded8da0411b6566c16cb9a904d164b68a0b7f11c8376673a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jdk_arm_linux_hotspot_11.0.25_9.tar.gz';          ;;        ppc64el)          ESUM='0014ffdae26d2b8f840b4842e3f9d4edc3576b4a961770708273d8ecc86ba5b6';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.25_9.tar.gz';          ;;        s390x)          ESUM='5fb661da82943f42a14bed94beda6d4dd3188987bd13b77e8b6f907054a73e9d';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.25_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -r "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Wed, 23 Oct 2024 15:41:32 GMT
+RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
+# Wed, 23 Oct 2024 15:41:32 GMT
+COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
+# Wed, 23 Oct 2024 15:41:32 GMT
+ENTRYPOINT ["/__cacert_entrypoint.sh"]
+# Wed, 23 Oct 2024 15:41:32 GMT
+CMD ["jshell"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.title=Unit (jsc11)
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.description=Official build of Unit for Docker.
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.url=https://unit.nginx.org
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.source=https://github.com/nginx/unit
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && rm -rf /root/.m2     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY welcome.* /usr/share/unit/welcome/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+STOPSIGNAL SIGTERM
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+EXPOSE map[80/tcp:{}]
+# Thu, 19 Dec 2024 18:23:57 GMT
+CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
+```
+
+-	Layers:
+	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
+		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Size: 27.4 MB (27358329 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4821edbf1831262baf113efdfde0f697240ca3efc1fbebee80c4279708d73f92`  
+		Last Modified: Thu, 24 Oct 2024 00:58:15 GMT  
+		Size: 16.1 MB (16062123 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:729a387a18221fc41372d1fed9f3cde9512052f8bc68125d01d3c71ef2b5cd08`  
+		Last Modified: Thu, 24 Oct 2024 01:03:52 GMT  
+		Size: 142.4 MB (142386670 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:42ca6248b7bdf803452c2e8c8ad830432f6693f9c08e3f74a3ef8bf48906e648`  
+		Last Modified: Thu, 24 Oct 2024 01:03:48 GMT  
+		Size: 159.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8bec2e0ea1baef3f64532625145074b35338d2a1adeaaa7914d0828b1338cb90`  
+		Last Modified: Thu, 24 Oct 2024 01:03:48 GMT  
+		Size: 2.3 KB (2283 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:19d8fc93110cd5ba0c8eb12527f6047ec48da069ab3b64f75133a9986fb851fc`  
+		Last Modified: Sat, 11 Jan 2025 02:11:19 GMT  
+		Size: 28.5 MB (28474038 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:891256396cd72cb1d1722affa1016d2f6b2060922b52b60d7e56f9d66b40c247`  
+		Last Modified: Sat, 11 Jan 2025 02:11:18 GMT  
+		Size: 1.3 KB (1267 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:418da8fa78dd92fe43ec422bb8936fe3674411f81a855ede01836f7bebbb99a8`  
+		Last Modified: Sat, 11 Jan 2025 02:11:19 GMT  
+		Size: 1.5 KB (1456 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `unit:1.34.0-jsc11` - unknown; unknown
+
+```console
+$ docker pull unit@sha256:3b4d333b5af46951a04de9cfe531bf437035213694ad0d3973ef4d54fb949056
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **27.1 KB (27087 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:5c3f403f18e9cc2d84448a370bf8e1399d8f77060f56baef98e9cf1d8069564c`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d9590eadcb52ba00a3b92ccd1f05920797aa7c9fc27a5c4d4bcfb63f635d9ac2`  
+		Last Modified: Sat, 11 Jan 2025 02:11:18 GMT  
+		Size: 27.1 KB (27087 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `unit:1.34.0-minimal`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.34.0-node20`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:a0bfffcf17251cd8242e2886aa84b91f2e0ae87f08f1e5341d829e2a43a1bbd4
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `unit:1.34.0-node20` - linux; arm64 variant v8
+
+```console
+$ docker pull unit@sha256:01e112c0ece4b6b874f57343d417f8e8176823053f7dbf11a1ea4bbc21270ce1
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **411.8 MB (411811235 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fdf3fdcbc57600ade571c24411b29d3e490d4f1ba2d93f88465b54be4ecda7c3`
+-	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
+-	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
+
+```dockerfile
+# Wed, 10 May 2023 23:29:59 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
+# Wed, 10 May 2023 23:29:59 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Wed, 20 Nov 2024 16:05:40 GMT
+RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
+# Wed, 20 Nov 2024 16:05:40 GMT
+ENV NODE_VERSION=20.18.1
+# Wed, 20 Nov 2024 16:05:40 GMT
+RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && export GNUPGHOME="$(mktemp -d)"   && set -ex   && for key in     C0D6248439F1D5604AAFFB4021D900FFDB233756     DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7     CC68F5A3106FF448322E48ED27F5E38D5B0A215F     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4     C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C     108F52B48DB57BB0CC439B2997B01419BD92F80A     A363A499291CBBC940DD62E41F10027AF002F8B0   ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs   && node --version   && npm --version # buildkit
+# Wed, 20 Nov 2024 16:05:40 GMT
+ENV YARN_VERSION=1.22.22
+# Wed, 20 Nov 2024 16:05:40 GMT
+RUN set -ex   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && yarn --version   && rm -rf /tmp/* # buildkit
+# Wed, 20 Nov 2024 16:05:40 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Wed, 20 Nov 2024 16:05:40 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Wed, 20 Nov 2024 16:05:40 GMT
+CMD ["node"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.title=Unit (node20)
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.description=Official build of Unit for Docker.
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.url=https://unit.nginx.org
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.source=https://github.com/nginx/unit
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && npm -g install node-gyp     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure nodejs --node-gyp=/usr/local/bin/node-gyp     && make -j $NCPU node node-install libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure nodejs --node-gyp=/usr/local/bin/node-gyp     && make -j $NCPU node node-install libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && rm -rf /root/.cache/ && rm -rf /root/.npm     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY welcome.* /usr/share/unit/welcome/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+STOPSIGNAL SIGTERM
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+EXPOSE map[80/tcp:{}]
+# Thu, 19 Dec 2024 18:23:57 GMT
+CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
+```
+
+-	Layers:
+	-	`sha256:ba1dd0e85e0bf7e5cb632a24bbc3ec0060700bc5be9273b05d7e059950225037`  
+		Last Modified: Tue, 24 Dec 2024 21:34:06 GMT  
+		Size: 48.3 MB (48325484 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:92b12b0dccf212c795e61e16dcc85f0caa01c231281e3287400bd334ffedb5ff`  
+		Last Modified: Wed, 25 Dec 2024 01:49:19 GMT  
+		Size: 23.4 MB (23405768 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fd63102cac360c09802a29bab13f15de711e8bd1a730d419c66110513700983c`  
+		Last Modified: Wed, 25 Dec 2024 08:11:51 GMT  
+		Size: 64.3 MB (64347452 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8e5e0e9e68b5c9172e85869f2decfc76c39919ba6ae80d8e2b597d25e854f0d3`  
+		Last Modified: Wed, 25 Dec 2024 11:19:12 GMT  
+		Size: 202.7 MB (202686398 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f9c5a973b5c3a1cc15fc8223320b63e02fa53025ed9bd75f5543031380e1deac`  
+		Last Modified: Wed, 25 Dec 2024 15:10:10 GMT  
+		Size: 3.3 KB (3321 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:95ef6d101a72f5d15fc25ba75c93fa6bebc166096e78b3bb4a37b150edcc506e`  
+		Last Modified: Wed, 25 Dec 2024 15:14:01 GMT  
+		Size: 48.2 MB (48189689 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:676d989fa12f0af76a8d8f77eaacde17568a9d60bbc131caaecb0ebec1d6ccb7`  
+		Last Modified: Wed, 25 Dec 2024 15:14:00 GMT  
+		Size: 1.3 MB (1250674 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e3b34c2de4c28b2b5c60618198739921b95c7534bc2f45161f11e397236163f4`  
+		Last Modified: Wed, 25 Dec 2024 15:14:00 GMT  
+		Size: 447.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a7e520881ca82191e54b56a7663b158bd666947488f534bc64d5f24d174cc6f8`  
+		Last Modified: Sat, 11 Jan 2025 02:17:02 GMT  
+		Size: 23.6 MB (23599275 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4b7c848f0aa34ddb1bbbd6bb813eb7d6bb09ed42a5f528e339696190aaa86300`  
+		Last Modified: Sat, 11 Jan 2025 02:17:01 GMT  
+		Size: 1.3 KB (1273 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e3ac9213ff39bad72f1e267405d34a9adae5272a457041d338e88f0601190182`  
+		Last Modified: Sat, 11 Jan 2025 02:17:01 GMT  
+		Size: 1.5 KB (1454 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `unit:1.34.0-node20` - unknown; unknown
+
+```console
+$ docker pull unit@sha256:827edb68899900cdf0792634089e1d28c5b64df76133d613380389e99bf05a15
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **28.7 KB (28692 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e9a82d2fffa40a48120229ebf9cc90c113656e77877fad8a46738633788f88db`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:b7c497a2ddb9b255b607a266c238a0ab020ccf6c649ddb2f202bbf81147dcad1`  
+		Last Modified: Sat, 11 Jan 2025 02:17:00 GMT  
+		Size: 28.7 KB (28692 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `unit:1.34.0-node22`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:824abc938de1835626193d39118f234abe7f53f991d7e923d478b7a647d01adc
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `unit:1.34.0-node22` - linux; arm64 variant v8
+
+```console
+$ docker pull unit@sha256:1568f1dd3cccbee0348c23da1e57fb10b5a0d87feb2f52a77d1941768ceb6f7e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **419.6 MB (419572371 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d9539e364d81899eb7ce81d4ef61461cdf5ef8cfa3792c5692c755564adaa136`
+-	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
+-	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
+
+```dockerfile
+# Wed, 10 May 2023 23:29:59 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
+# Wed, 10 May 2023 23:29:59 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV NODE_VERSION=22.13.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && export GNUPGHOME="$(mktemp -d)"   && set -ex   && for key in     C0D6248439F1D5604AAFFB4021D900FFDB233756     DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7     CC68F5A3106FF448322E48ED27F5E38D5B0A215F     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4     C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C     108F52B48DB57BB0CC439B2997B01419BD92F80A     A363A499291CBBC940DD62E41F10027AF002F8B0   ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs   && node --version   && npm --version # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV YARN_VERSION=1.22.22
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && yarn --version   && rm -rf /tmp/* # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+CMD ["node"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.title=Unit (node22)
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.description=Official build of Unit for Docker.
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.url=https://unit.nginx.org
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.source=https://github.com/nginx/unit
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && npm -g install node-gyp     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure nodejs --node-gyp=/usr/local/bin/node-gyp     && make -j $NCPU node node-install libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure nodejs --node-gyp=/usr/local/bin/node-gyp     && make -j $NCPU node node-install libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && rm -rf /root/.cache/ && rm -rf /root/.npm     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY welcome.* /usr/share/unit/welcome/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+STOPSIGNAL SIGTERM
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+EXPOSE map[80/tcp:{}]
+# Thu, 19 Dec 2024 18:23:57 GMT
+CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
+```
+
+-	Layers:
+	-	`sha256:ba1dd0e85e0bf7e5cb632a24bbc3ec0060700bc5be9273b05d7e059950225037`  
+		Last Modified: Tue, 24 Dec 2024 21:34:06 GMT  
+		Size: 48.3 MB (48325484 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:92b12b0dccf212c795e61e16dcc85f0caa01c231281e3287400bd334ffedb5ff`  
+		Last Modified: Wed, 25 Dec 2024 01:49:19 GMT  
+		Size: 23.4 MB (23405768 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fd63102cac360c09802a29bab13f15de711e8bd1a730d419c66110513700983c`  
+		Last Modified: Wed, 25 Dec 2024 08:11:51 GMT  
+		Size: 64.3 MB (64347452 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8e5e0e9e68b5c9172e85869f2decfc76c39919ba6ae80d8e2b597d25e854f0d3`  
+		Last Modified: Wed, 25 Dec 2024 11:19:12 GMT  
+		Size: 202.7 MB (202686398 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f9c5a973b5c3a1cc15fc8223320b63e02fa53025ed9bd75f5543031380e1deac`  
+		Last Modified: Wed, 25 Dec 2024 15:10:10 GMT  
+		Size: 3.3 KB (3321 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9c2cdc66174abaa0537dbfab1d32604652bd75c6ee70f1004c285d2935d53f0b`  
+		Last Modified: Wed, 08 Jan 2025 03:22:41 GMT  
+		Size: 55.4 MB (55379059 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e5ed6b341e2321e13b8d6e3707e470f77320c4fd5d928f29af7e85f09ff6fc47`  
+		Last Modified: Wed, 08 Jan 2025 03:22:40 GMT  
+		Size: 1.3 MB (1250736 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fc3d9de5233e561598cf2683b01839549ff520a9357df3565a0406cc622f467d`  
+		Last Modified: Wed, 08 Jan 2025 03:22:39 GMT  
+		Size: 450.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f0c5be6503df7360c481c768c1792070f090a53ff8e2ceea57ea7c0078ae35ef`  
+		Last Modified: Sat, 11 Jan 2025 02:14:08 GMT  
+		Size: 24.2 MB (24170976 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:32c01e20ab51beb6dff11275153048a8083c279d5aa0815e00afaea85f7bc9d0`  
+		Last Modified: Sat, 11 Jan 2025 02:14:07 GMT  
+		Size: 1.3 KB (1272 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6f37151a98fc8011c862c02a4f5a094694cbc1512e1de142fceaafa5aa48a0a6`  
+		Last Modified: Sat, 11 Jan 2025 02:14:07 GMT  
+		Size: 1.5 KB (1455 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `unit:1.34.0-node22` - unknown; unknown
+
+```console
+$ docker pull unit@sha256:7d9bde0fa81530aa15e19170fca78a427b1ea50b328e6a7b2942fe2000f3941c
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **29.0 KB (28994 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2d90ad155470997ad4936115528356664930eab4d1c2b61423b74b0262967b32`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:512f5f84aee0dc0ba5c1d689a83e76c8655ed3d7e0e5cf89aea57e69d78f3d96`  
+		Last Modified: Sat, 11 Jan 2025 02:14:07 GMT  
+		Size: 29.0 KB (28994 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `unit:1.34.0-perl5.38`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:becc890a4eaa97b34e250db645edde4a3cf61986d78fb7ced6ca59b80d00359e
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `unit:1.34.0-perl5.38` - linux; arm64 variant v8
+
+```console
+$ docker pull unit@sha256:87435df90fa7a25da4cb627fcb299cb8996f5d0ecef0fdd53fb5db534e6c6d49
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **375.2 MB (375239278 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fe29f6f518118f3c4f2b12c148a3f57ea7e67a0ce6266d18fbcbfe4afe13fb63`
+-	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
+-	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
+
+```dockerfile
+# Wed, 10 May 2023 23:29:59 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
+# Wed, 10 May 2023 23:29:59 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Tue, 09 Jan 2024 01:14:25 GMT
+RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 21 Nov 2024 11:29:59 GMT
+WORKDIR /usr/src/perl
+# Thu, 21 Nov 2024 11:29:59 GMT
+RUN true     && curl -fL https://cpan.metacpan.org/authors/id/P/PE/PEVANS/perl-5.38.2.tar.gz -o perl-5.38.2.tar.gz     && echo 'a0a31534451eb7b83c7d6594a497543a54d488bc90ca00f5e34762577f40655e *perl-5.38.2.tar.gz' | sha256sum --strict --check -     && tar --strip-components=1 -xaf perl-5.38.2.tar.gz -C /usr/src/perl     && rm perl-5.38.2.tar.gz     && cat *.patch | patch -p1     && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"     && archBits="$(dpkg-architecture --query DEB_BUILD_ARCH_BITS)"     && archFlag="$([ "$archBits" = '64' ] && echo '-Duse64bitall' || echo '-Duse64bitint')"     && ./Configure -Darchname="$gnuArch" "$archFlag" -Duseshrplib -Dvendorprefix=/usr/local  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -fLO https://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7047.tar.gz     && echo '963e63c6e1a8725ff2f624e9086396ae150db51dd0a337c3781d09a994af05a5 *App-cpanminus-1.7047.tar.gz' | sha256sum --strict --check -     && tar -xzf App-cpanminus-1.7047.tar.gz && cd App-cpanminus-1.7047     && perl -pi -E 's{http://(www\.cpan\.org|backpan\.perl\.org|cpan\.metacpan\.org|fastapi\.metacpan\.org|cpanmetadb\.plackperl\.org)}{https://$1}g' bin/cpanm     && perl -pi -E 's{try_lwp=>1}{try_lwp=>0}g' bin/cpanm     && perl bin/cpanm . && cd /root     && curl -fLO 'https://www.cpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-1.94.tar.gz'     && echo '9d7be8a56d1bedda05c425306cc504ba134307e0c09bda4a788c98744ebcd95d *Net-SSLeay-1.94.tar.gz' | sha256sum --strict --check -     && cpanm --from $PWD Net-SSLeay-1.94.tar.gz     && curl -fLO 'https://www.cpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.085.tar.gz'     && echo '95b2f7c0628a7e246a159665fbf0620d0d7835e3a940f22d3fdd47c3aa799c2e *IO-Socket-SSL-2.085.tar.gz' | sha256sum --strict --check -     && SSL_CERT_DIR=/etc/ssl/certs cpanm --from $PWD IO-Socket-SSL-2.085.tar.gz     && curl -fL https://raw.githubusercontent.com/skaji/cpm/0.997017/cpm -o /usr/local/bin/cpm     && echo 'e3931a7d994c96f9c74b97d1b5b75a554fc4f06eadef1eca26ecc0bdcd1f2d11 */usr/local/bin/cpm' | sha256sum --strict --check -     && chmod +x /usr/local/bin/cpm     && true     && rm -fr /root/.cpanm /root/Net-SSLeay-1.94* /root/IO-Socket-SSL-2.085* /usr/src/perl /usr/src/App-cpanminus-1.7047* /tmp/*     && cpanm --version && cpm --version # buildkit
+# Thu, 21 Nov 2024 11:29:59 GMT
+WORKDIR /usr/src/app
+# Thu, 21 Nov 2024 11:29:59 GMT
+CMD ["perl5.38.2" "-de0"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.title=Unit (perl5.38)
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.description=Official build of Unit for Docker.
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.url=https://unit.nginx.org
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.source=https://github.com/nginx/unit
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure perl     && make -j $NCPU perl-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure perl     && make -j $NCPU perl-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY welcome.* /usr/share/unit/welcome/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+STOPSIGNAL SIGTERM
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+EXPOSE map[80/tcp:{}]
+# Thu, 19 Dec 2024 18:23:57 GMT
+CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
+```
+
+-	Layers:
+	-	`sha256:ba1dd0e85e0bf7e5cb632a24bbc3ec0060700bc5be9273b05d7e059950225037`  
+		Last Modified: Tue, 24 Dec 2024 21:34:06 GMT  
+		Size: 48.3 MB (48325484 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:92b12b0dccf212c795e61e16dcc85f0caa01c231281e3287400bd334ffedb5ff`  
+		Last Modified: Wed, 25 Dec 2024 01:49:19 GMT  
+		Size: 23.4 MB (23405768 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fd63102cac360c09802a29bab13f15de711e8bd1a730d419c66110513700983c`  
+		Last Modified: Wed, 25 Dec 2024 08:11:51 GMT  
+		Size: 64.3 MB (64347452 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:8e5e0e9e68b5c9172e85869f2decfc76c39919ba6ae80d8e2b597d25e854f0d3`  
+		Last Modified: Wed, 25 Dec 2024 11:19:12 GMT  
+		Size: 202.7 MB (202686398 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7f3ef01457f9732b43a96688539e6b2cd31db73b8b099b90d426c5a2e6e5a394`  
+		Last Modified: Wed, 25 Dec 2024 15:21:46 GMT  
+		Size: 135.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f6c6cbf8c1f1181783cc4d0db447e61130a851884333f67d75542f9c9eebb495`  
+		Last Modified: Wed, 25 Dec 2024 15:42:32 GMT  
+		Size: 15.5 MB (15484562 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:82ff0a38d33a203f92e3b8a3a9a3aa368ba37b5a9a7c9e8ce0f40bc693b99989`  
+		Last Modified: Wed, 25 Dec 2024 15:42:31 GMT  
+		Size: 132.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:299039a4dac32e7b59c5e359be7b8e70c1eb21f72dc71a1dc96efb8e15f65b15`  
+		Last Modified: Sat, 11 Jan 2025 02:19:46 GMT  
+		Size: 21.0 MB (20986630 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:1e96893eb539fdae7a7f6642ed57aa07cadf6f77ed1c71e930dd897c65b1db35`  
+		Last Modified: Sat, 11 Jan 2025 02:19:45 GMT  
+		Size: 1.3 KB (1265 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5cf487c2cb1acd5eb94a906002d7b29f046c9749b136fc5025c8dc4693e67326`  
+		Last Modified: Sat, 11 Jan 2025 02:19:45 GMT  
+		Size: 1.5 KB (1452 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `unit:1.34.0-perl5.38` - unknown; unknown
+
+```console
+$ docker pull unit@sha256:97b76a4d47da973944ab5c834554430edae0450cf9cd1dcd6aeee4789e1c43a5
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **27.7 KB (27652 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:172b58db59a63737db4a917912d9dd4c96d9d740430745f98423d018ec5023e7`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:4e78f17ce40361b1f77648c36586a1850cd6816617ed65d1fe495340a1e855a9`  
+		Last Modified: Sat, 11 Jan 2025 02:19:45 GMT  
+		Size: 27.7 KB (27652 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `unit:1.34.0-perl5.40`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.34.0-php8.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:6f8b7decd5f0702fce0e49757514860bad007d1e09c3ca68bf2f99d4e0b2c4f2
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `unit:1.34.0-php8.3` - linux; arm64 variant v8
+
+```console
+$ docker pull unit@sha256:d88d7da3344165928bbf778d63c1c079c1a03651be0a496454eff18d6b6eb054
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **195.3 MB (195307297 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:35d32349544fd8fbea686b2300bfdb69af8ec8b9b00006cb09a9b203db6a8992`
+-	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
+-	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
+
+```dockerfile
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_VERSION=8.3.15
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.3.15.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.15.tar.xz.asc
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_SHA256=3df5d45637283f759eef8fc3ce03de829ded3e200c3da278936a684955d2f94f
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+CMD ["php" "-a"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.title=Unit (php8.3)
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.description=Official build of Unit for Docker.
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.url=https://unit.nginx.org
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.source=https://github.com/nginx/unit
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure php     && make -j $NCPU php-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure php     && make -j $NCPU php-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && ldconfig     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY welcome.* /usr/share/unit/welcome/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+STOPSIGNAL SIGTERM
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+EXPOSE map[80/tcp:{}]
+# Thu, 19 Dec 2024 18:23:57 GMT
+CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
+```
+
+-	Layers:
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f6de54321d531850ff87c6246d4017603a5b45913b21b1ac9fec3f05fbfef635`  
+		Last Modified: Tue, 24 Dec 2024 23:07:21 GMT  
+		Size: 224.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a3bdf08462934214f25431962b05d5cacd6c3f869869f8db5363e56c95c2bc31`  
+		Last Modified: Tue, 24 Dec 2024 23:07:23 GMT  
+		Size: 97.9 MB (97936231 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f9687803207cdc9b6efb7871b95e27621a8a6b095ab542b254f0ecc6d9f697b`  
+		Last Modified: Tue, 24 Dec 2024 23:07:21 GMT  
+		Size: 225.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:5a3d7e5725b828d7b43b7cf5b7b7fc62ba38b1b95d52b2fd7bf9035535e73cd0`  
+		Last Modified: Tue, 24 Dec 2024 23:34:51 GMT  
+		Size: 12.6 MB (12634050 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:af98f1958ff28101ccd6b476678c55f9601732db04fd964dc10cf6478bd54964`  
+		Last Modified: Tue, 24 Dec 2024 23:34:50 GMT  
+		Size: 487.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:22b460f8ead9ff66cbb84c9bca886be94e9a88e289e6da9f093ee10760c2abe9`  
+		Last Modified: Tue, 24 Dec 2024 23:34:51 GMT  
+		Size: 35.8 MB (35847741 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:06832de3f71b49dae35940920a84c6c83f16f6dcc08161ff150982dbd24ce6f1`  
+		Last Modified: Tue, 24 Dec 2024 23:34:50 GMT  
+		Size: 2.4 KB (2446 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9c24506dfc77584405586a98434ee14de977316a14430b7a2922470667e75b91`  
+		Last Modified: Tue, 24 Dec 2024 23:34:51 GMT  
+		Size: 245.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:0dcfcaabaa4f6db24b406c962b56eb1c0cb48ea7cc4b99f141714aabb70f0c49`  
+		Last Modified: Sat, 11 Jan 2025 02:25:23 GMT  
+		Size: 20.8 MB (20824198 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:322c16573c8090a7084bf4fb7d1bc3a883a129526a7a7e21c28de5ce151f10b9`  
+		Last Modified: Sat, 11 Jan 2025 02:25:22 GMT  
+		Size: 1.3 KB (1272 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:48c1609b7d3ac954be7b7a7cb1eca37dcff8ad3652a792eb337629f838a7a334`  
+		Last Modified: Sat, 11 Jan 2025 02:25:22 GMT  
+		Size: 1.5 KB (1455 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `unit:1.34.0-php8.3` - unknown; unknown
+
+```console
+$ docker pull unit@sha256:d18b2402845e997ed876e9a2028598fcd57b929c7115f4d946b9e38c14686890
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **29.6 KB (29558 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:922f8648c4f2c5a6fb6d1be0aa506fe72e002b8b08e8ba3692d2fdb7bb3c23d4`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:921c32e458da357cba5b534349fd2c3e02bf8b57b57f0cd4e32bbc6d190a2c5d`  
+		Last Modified: Sat, 11 Jan 2025 02:25:22 GMT  
+		Size: 29.6 KB (29558 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `unit:1.34.0-php8.4`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:a4ef883a38b001725a20f55023a91c90039569a26cac365397e356fd4cd4feb5
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `unit:1.34.0-php8.4` - linux; arm64 variant v8
+
+```console
+$ docker pull unit@sha256:392abbfa371988fbbd41cf3bb7c184dd3a63bf9c2abbd0ef3a468a72cafd78dc
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **200.6 MB (200631172 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:537212fe7ab27a48a8e99eb64cd2ba325df01795e84065eb9049b60f3aa16045`
+-	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
+-	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
+
+```dockerfile
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_VERSION=8.4.2
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.4.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.2.tar.xz.asc
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_SHA256=92636453210f7f2174d6ee6df17a5811368f556a6c2c2cbcf019321e36456e01
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+CMD ["php" "-a"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.title=Unit (php8.4)
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.description=Official build of Unit for Docker.
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.url=https://unit.nginx.org
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.source=https://github.com/nginx/unit
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure php     && make -j $NCPU php-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure php     && make -j $NCPU php-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && ldconfig     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY welcome.* /usr/share/unit/welcome/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+STOPSIGNAL SIGTERM
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+EXPOSE map[80/tcp:{}]
+# Thu, 19 Dec 2024 18:23:57 GMT
+CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
+```
+
+-	Layers:
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f6de54321d531850ff87c6246d4017603a5b45913b21b1ac9fec3f05fbfef635`  
+		Last Modified: Tue, 24 Dec 2024 23:07:21 GMT  
+		Size: 224.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a3bdf08462934214f25431962b05d5cacd6c3f869869f8db5363e56c95c2bc31`  
+		Last Modified: Tue, 24 Dec 2024 23:07:23 GMT  
+		Size: 97.9 MB (97936231 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f9687803207cdc9b6efb7871b95e27621a8a6b095ab542b254f0ecc6d9f697b`  
+		Last Modified: Tue, 24 Dec 2024 23:07:21 GMT  
+		Size: 225.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b9f53a9ba108d0b9e18fa23664c2d5a17f4bbf402acecc3a7248ac7178d2fe87`  
+		Last Modified: Tue, 24 Dec 2024 23:07:22 GMT  
+		Size: 13.7 MB (13668428 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ff8f45fa647a472e184757b77acf9d491a4fa1430582c5d780e12d4a9433cf62`  
+		Last Modified: Tue, 24 Dec 2024 23:07:21 GMT  
+		Size: 487.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:62fd8ef07bf83a98c063d3a6529e1839593698eb5c75f096cd45f48d2d1b4d34`  
+		Last Modified: Tue, 24 Dec 2024 23:07:23 GMT  
+		Size: 40.1 MB (40134642 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fa5f578e5237bdf2a59c1c3bc8715e2ba5703a40437f445e799fbecf9524e402`  
+		Last Modified: Tue, 24 Dec 2024 23:07:22 GMT  
+		Size: 2.4 KB (2444 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:02da7d5a4057d390769f6f26e58a3bf539a6128bd5dc8484190b77a5b569644b`  
+		Last Modified: Tue, 24 Dec 2024 23:07:23 GMT  
+		Size: 245.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fa1877dea297f27dcd0db3881b439955df9147cf769bceb53bda4f6b4a93f856`  
+		Last Modified: Sat, 11 Jan 2025 02:22:35 GMT  
+		Size: 20.8 MB (20826796 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:cf1d0704f9fde00c3446cdd3e25f9ac97d93f13b41d9100b830b1295460494cd`  
+		Last Modified: Sat, 11 Jan 2025 02:22:34 GMT  
+		Size: 1.3 KB (1271 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e68be15d2c25343ba9159b124f54086527b88d45ef8d641539a8a63c6996b81c`  
+		Last Modified: Sat, 11 Jan 2025 02:22:34 GMT  
+		Size: 1.5 KB (1456 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `unit:1.34.0-php8.4` - unknown; unknown
+
+```console
+$ docker pull unit@sha256:05e9aa7bffd30a062fda06097107bdfac0517f7149128b31f91ce58414c60a5d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **30.2 KB (30157 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:348c41e7d2daaff400dfd2767851496eec327319b89e2dafc2657bd19d92ffbe`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d65aa9251b36532679c8f290705a720a33b12c6b5bd7a1743675018de0085dcb`  
+		Last Modified: Sat, 11 Jan 2025 02:22:34 GMT  
+		Size: 30.2 KB (30157 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `unit:1.34.0-python3.12`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.34.0-python3.12-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.34.0-python3.13`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.34.0-python3.13-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.34.0-ruby3.2`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.34.0-ruby3.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:1.34.0-wasm`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:go`
 
 ```console
-$ docker pull unit@sha256:c68e35f18671becb7b07ad96399df160ea281d7428fcd5e5788cff406dd5d510
+$ docker pull unit@sha256:c12dbdc19cc9cb10997d6154897831ec884847cf3984a07ba57053f7e5e304b4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -264,13 +1449,13 @@ $ docker pull unit@sha256:5ac35abb2e3971787737057d935122619430ed8abcf1398bf28fe7
 ### `unit:go` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:aa1e7e00967f237ac8a91e86fb22b17b7169ec879073990019c1007c9837111f
+$ docker pull unit@sha256:ad87cb4be1df273eadd9cef7effd3dd2fc227430f387665cef363dfe8e58e73a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **299.9 MB (299867600 bytes)**  
+-	Total Size: **313.9 MB (313896038 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:409b18ccdc30d4db21b9a1d38fdf181397316ca889cd24a33f23e2465f71013f`
+-	Image ID: `sha256:f0faa8373b0b6666a7d70476f9b81bf195da1023fe3bed5747c556abb535f4c1`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -281,49 +1466,49 @@ RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 ENV GOLANG_VERSION=1.23.4
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 ENV GOPATH=/go
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 COPY /target/ / # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 WORKDIR /go
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.title=Unit (go1.23)
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 17 Sep 2024 21:10:58 GMT
-LABEL org.opencontainers.image.version=1.33.0
-# Tue, 17 Sep 2024 21:10:58 GMT
-RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.33.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY welcome.* /usr/share/unit/welcome/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 STOPSIGNAL SIGTERM
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -356,43 +1541,43 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed3d76fbd983b47d7dcf86a80c6e2ca9a5fbe80333f495fc2d6252100c4ee575`  
-		Last Modified: Wed, 25 Dec 2024 19:16:43 GMT  
-		Size: 6.8 MB (6768044 bytes)  
+	-	`sha256:93aa43fb2778b911cd4979e78dd292bfae20403fd6d78b8edce15438af048340`  
+		Last Modified: Sat, 11 Jan 2025 02:03:54 GMT  
+		Size: 20.8 MB (20796484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5950b2b62d9306b603c717abbbe81898c7df5ea4b7d0d8ebb80e9f34cc583f5f`  
-		Last Modified: Wed, 25 Dec 2024 19:16:42 GMT  
-		Size: 1.3 KB (1264 bytes)  
+	-	`sha256:bd1825e4138f4117142cb456022c110e60306b708c5759cf7656f8ad8fa2b245`  
+		Last Modified: Sat, 11 Jan 2025 02:03:53 GMT  
+		Size: 1.3 KB (1263 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6a23dfc477ddb0580e6873fb7c02fce4ea684e41669dc9a3b4dfa5137a195f7`  
-		Last Modified: Wed, 25 Dec 2024 19:16:42 GMT  
-		Size: 1.5 KB (1455 bytes)  
+	-	`sha256:627adcd8552e3c3929a9dee4d18c74f7d5343da80ad86d10c6c121a97e003c50`  
+		Last Modified: Sat, 11 Jan 2025 02:03:54 GMT  
+		Size: 1.5 KB (1454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:go` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:d2e6f05fffae4c346b1c84ace09770e04b3a849a7ec3485f4394ce5e870587c7
+$ docker pull unit@sha256:9e8e22c22698db9ef24777858d110fe778ac2b2ccef04011489c976438dca109
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.9 KB (24866 bytes)**  
+-	Total Size: **28.5 KB (28466 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9d9c5c160eabff5f60c76f0022bca578a7e07c2ce3bb8026396abd8859b8e2f5`
+-	Image ID: `sha256:11dd2644ffd80d913f479afca794519f13f42243d15023d048c7215b0a3ab27a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5df31aeff047354efb6c3da5561c6abf9022dd3d21958c11e5ad43412caa5351`  
-		Last Modified: Wed, 25 Dec 2024 19:16:42 GMT  
-		Size: 24.9 KB (24866 bytes)  
+	-	`sha256:f1bbc5dfdba8d2586f5ef77900096a124c2f50ac8e2b37467d54caf9b8068964`  
+		Last Modified: Sat, 11 Jan 2025 02:03:53 GMT  
+		Size: 28.5 KB (28466 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:go1`
 
 ```console
-$ docker pull unit@sha256:c68e35f18671becb7b07ad96399df160ea281d7428fcd5e5788cff406dd5d510
+$ docker pull unit@sha256:c12dbdc19cc9cb10997d6154897831ec884847cf3984a07ba57053f7e5e304b4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -533,13 +1718,13 @@ $ docker pull unit@sha256:5ac35abb2e3971787737057d935122619430ed8abcf1398bf28fe7
 ### `unit:go1` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:aa1e7e00967f237ac8a91e86fb22b17b7169ec879073990019c1007c9837111f
+$ docker pull unit@sha256:ad87cb4be1df273eadd9cef7effd3dd2fc227430f387665cef363dfe8e58e73a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **299.9 MB (299867600 bytes)**  
+-	Total Size: **313.9 MB (313896038 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:409b18ccdc30d4db21b9a1d38fdf181397316ca889cd24a33f23e2465f71013f`
+-	Image ID: `sha256:f0faa8373b0b6666a7d70476f9b81bf195da1023fe3bed5747c556abb535f4c1`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -550,49 +1735,49 @@ RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 ENV GOLANG_VERSION=1.23.4
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 ENV GOPATH=/go
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 COPY /target/ / # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 WORKDIR /go
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.title=Unit (go1.23)
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 17 Sep 2024 21:10:58 GMT
-LABEL org.opencontainers.image.version=1.33.0
-# Tue, 17 Sep 2024 21:10:58 GMT
-RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.33.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY welcome.* /usr/share/unit/welcome/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 STOPSIGNAL SIGTERM
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -625,43 +1810,43 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed3d76fbd983b47d7dcf86a80c6e2ca9a5fbe80333f495fc2d6252100c4ee575`  
-		Last Modified: Wed, 25 Dec 2024 19:16:43 GMT  
-		Size: 6.8 MB (6768044 bytes)  
+	-	`sha256:93aa43fb2778b911cd4979e78dd292bfae20403fd6d78b8edce15438af048340`  
+		Last Modified: Sat, 11 Jan 2025 02:03:54 GMT  
+		Size: 20.8 MB (20796484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5950b2b62d9306b603c717abbbe81898c7df5ea4b7d0d8ebb80e9f34cc583f5f`  
-		Last Modified: Wed, 25 Dec 2024 19:16:42 GMT  
-		Size: 1.3 KB (1264 bytes)  
+	-	`sha256:bd1825e4138f4117142cb456022c110e60306b708c5759cf7656f8ad8fa2b245`  
+		Last Modified: Sat, 11 Jan 2025 02:03:53 GMT  
+		Size: 1.3 KB (1263 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6a23dfc477ddb0580e6873fb7c02fce4ea684e41669dc9a3b4dfa5137a195f7`  
-		Last Modified: Wed, 25 Dec 2024 19:16:42 GMT  
-		Size: 1.5 KB (1455 bytes)  
+	-	`sha256:627adcd8552e3c3929a9dee4d18c74f7d5343da80ad86d10c6c121a97e003c50`  
+		Last Modified: Sat, 11 Jan 2025 02:03:54 GMT  
+		Size: 1.5 KB (1454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:go1` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:d2e6f05fffae4c346b1c84ace09770e04b3a849a7ec3485f4394ce5e870587c7
+$ docker pull unit@sha256:9e8e22c22698db9ef24777858d110fe778ac2b2ccef04011489c976438dca109
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.9 KB (24866 bytes)**  
+-	Total Size: **28.5 KB (28466 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9d9c5c160eabff5f60c76f0022bca578a7e07c2ce3bb8026396abd8859b8e2f5`
+-	Image ID: `sha256:11dd2644ffd80d913f479afca794519f13f42243d15023d048c7215b0a3ab27a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5df31aeff047354efb6c3da5561c6abf9022dd3d21958c11e5ad43412caa5351`  
-		Last Modified: Wed, 25 Dec 2024 19:16:42 GMT  
-		Size: 24.9 KB (24866 bytes)  
+	-	`sha256:f1bbc5dfdba8d2586f5ef77900096a124c2f50ac8e2b37467d54caf9b8068964`  
+		Last Modified: Sat, 11 Jan 2025 02:03:53 GMT  
+		Size: 28.5 KB (28466 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:go1.22`
 
 ```console
-$ docker pull unit@sha256:d18846d9836f118722465b1c44906bce727981c90a4faff4d5e5f2a58cd369d4
+$ docker pull unit@sha256:2dea347afd3f68c1de8f87eb8b5a421d4869ca240b933d95ff3b586e0e704a1c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -802,13 +1987,13 @@ $ docker pull unit@sha256:203d42c18181744c4e77a2556cf7dd7f368c819ef86681e0206bde
 ### `unit:go1.22` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:a12a851cd8086087a3b8105d5e98bae2228d8ec303116185dee4befa8a17710d
+$ docker pull unit@sha256:f37c04cce8bca438f3f7eed446f78f4ed56a489fd4cb35d701f58d9c52becdc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **295.5 MB (295485809 bytes)**  
+-	Total Size: **309.5 MB (309514287 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d828e6a93ccbae58f14f796fdfecdacbe97235a6a5ed22906a282d02415a6b0`
+-	Image ID: `sha256:950d76b597095e1f8625c7b2e66018b0eea8fa84ce5fad5d3dea0aa2386cc72a`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -819,49 +2004,49 @@ RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 18:23:12 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 18:23:12 GMT
 ENV GOLANG_VERSION=1.22.10
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 18:23:12 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 18:23:12 GMT
 ENV GOPATH=/go
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 18:23:12 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 18:23:12 GMT
 COPY /target/ / # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 18:23:12 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 18:23:12 GMT
 WORKDIR /go
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.title=Unit (go1.22)
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 17 Sep 2024 21:10:58 GMT
-LABEL org.opencontainers.image.version=1.33.0
-# Tue, 17 Sep 2024 21:10:58 GMT
-RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.33.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY welcome.* /usr/share/unit/welcome/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 STOPSIGNAL SIGTERM
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -894,43 +2079,43 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c80db7b949c24f6134ebc444292c87ea919c088ebf5e06f021dbcb5f3a1ff26`  
-		Last Modified: Wed, 25 Dec 2024 19:17:37 GMT  
-		Size: 6.8 MB (6766991 bytes)  
+	-	`sha256:69833ac4452783ca3fa83b740eaf50c87645259c3eeb41e83647faf622cf6bfd`  
+		Last Modified: Sat, 11 Jan 2025 02:06:42 GMT  
+		Size: 20.8 MB (20795472 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c91bc86156b66d0dd2aacf37a6ee8e586549e934a436aad25d5f9e7e0ff2f6f0`  
-		Last Modified: Wed, 25 Dec 2024 19:17:36 GMT  
-		Size: 1.3 KB (1266 bytes)  
+	-	`sha256:e919014cacfcf4cc6b445b63af97f882e3e92eb8c1ce7f8cc67b04edfe372140`  
+		Last Modified: Sat, 11 Jan 2025 02:06:41 GMT  
+		Size: 1.3 KB (1263 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe65a8d8b5a3a6af5113ec0415e10b41d9eed50baab830cb75460e56d4c1fff8`  
-		Last Modified: Wed, 25 Dec 2024 19:17:36 GMT  
+	-	`sha256:2ba212ef64a50369c3646559d634ae5586aca340a20293fb69a5e19b66f5540f`  
+		Last Modified: Sat, 11 Jan 2025 02:06:41 GMT  
 		Size: 1.5 KB (1455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:go1.22` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:5d7d986b60e785e1a15b728677e96a747059d3d10c2a7470b1e70135041dac5b
+$ docker pull unit@sha256:d156b370435e42f2ea235f72e30cfda2f9d430d8f16537b30d0d304d72b99a32
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.3 KB (24270 bytes)**  
+-	Total Size: **27.9 KB (27869 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b1c2d34268b70e1a611c104ecc038d9aa58adf3cd6cc33b07dcbe74fe97a33a`
+-	Image ID: `sha256:5e6e80e21394c512b1f9f61382054f2c25395b61c7f4557741336fbd450d995a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:321c95a8d4c08daed28ee39b1288f695375ada881e077d734a58a6912cfb40fa`  
-		Last Modified: Wed, 25 Dec 2024 19:17:36 GMT  
-		Size: 24.3 KB (24270 bytes)  
+	-	`sha256:600541d8991a56a1ae25630dd6d9183f09ee615d2f83d2a9c0296a78a267997c`  
+		Last Modified: Sat, 11 Jan 2025 02:06:41 GMT  
+		Size: 27.9 KB (27869 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:go1.23`
 
 ```console
-$ docker pull unit@sha256:c68e35f18671becb7b07ad96399df160ea281d7428fcd5e5788cff406dd5d510
+$ docker pull unit@sha256:c12dbdc19cc9cb10997d6154897831ec884847cf3984a07ba57053f7e5e304b4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1071,13 +2256,13 @@ $ docker pull unit@sha256:5ac35abb2e3971787737057d935122619430ed8abcf1398bf28fe7
 ### `unit:go1.23` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:aa1e7e00967f237ac8a91e86fb22b17b7169ec879073990019c1007c9837111f
+$ docker pull unit@sha256:ad87cb4be1df273eadd9cef7effd3dd2fc227430f387665cef363dfe8e58e73a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **299.9 MB (299867600 bytes)**  
+-	Total Size: **313.9 MB (313896038 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:409b18ccdc30d4db21b9a1d38fdf181397316ca889cd24a33f23e2465f71013f`
+-	Image ID: `sha256:f0faa8373b0b6666a7d70476f9b81bf195da1023fe3bed5747c556abb535f4c1`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -1088,49 +2273,49 @@ RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		g++ 		gcc 		libc6-dev 		make 		pkg-config 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 ENV GOLANG_VERSION=1.23.4
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 ENV GOTOOLCHAIN=local
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 ENV GOPATH=/go
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 ENV PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 COPY /target/ / # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Tue, 03 Dec 2024 19:01:46 GMT
 WORKDIR /go
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.title=Unit (go1.23)
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 17 Sep 2024 21:10:58 GMT
-LABEL org.opencontainers.image.version=1.33.0
-# Tue, 17 Sep 2024 21:10:58 GMT
-RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.33.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY welcome.* /usr/share/unit/welcome/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 STOPSIGNAL SIGTERM
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -1163,43 +2348,43 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed3d76fbd983b47d7dcf86a80c6e2ca9a5fbe80333f495fc2d6252100c4ee575`  
-		Last Modified: Wed, 25 Dec 2024 19:16:43 GMT  
-		Size: 6.8 MB (6768044 bytes)  
+	-	`sha256:93aa43fb2778b911cd4979e78dd292bfae20403fd6d78b8edce15438af048340`  
+		Last Modified: Sat, 11 Jan 2025 02:03:54 GMT  
+		Size: 20.8 MB (20796484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5950b2b62d9306b603c717abbbe81898c7df5ea4b7d0d8ebb80e9f34cc583f5f`  
-		Last Modified: Wed, 25 Dec 2024 19:16:42 GMT  
-		Size: 1.3 KB (1264 bytes)  
+	-	`sha256:bd1825e4138f4117142cb456022c110e60306b708c5759cf7656f8ad8fa2b245`  
+		Last Modified: Sat, 11 Jan 2025 02:03:53 GMT  
+		Size: 1.3 KB (1263 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d6a23dfc477ddb0580e6873fb7c02fce4ea684e41669dc9a3b4dfa5137a195f7`  
-		Last Modified: Wed, 25 Dec 2024 19:16:42 GMT  
-		Size: 1.5 KB (1455 bytes)  
+	-	`sha256:627adcd8552e3c3929a9dee4d18c74f7d5343da80ad86d10c6c121a97e003c50`  
+		Last Modified: Sat, 11 Jan 2025 02:03:54 GMT  
+		Size: 1.5 KB (1454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:go1.23` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:d2e6f05fffae4c346b1c84ace09770e04b3a849a7ec3485f4394ce5e870587c7
+$ docker pull unit@sha256:9e8e22c22698db9ef24777858d110fe778ac2b2ccef04011489c976438dca109
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.9 KB (24866 bytes)**  
+-	Total Size: **28.5 KB (28466 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9d9c5c160eabff5f60c76f0022bca578a7e07c2ce3bb8026396abd8859b8e2f5`
+-	Image ID: `sha256:11dd2644ffd80d913f479afca794519f13f42243d15023d048c7215b0a3ab27a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5df31aeff047354efb6c3da5561c6abf9022dd3d21958c11e5ad43412caa5351`  
-		Last Modified: Wed, 25 Dec 2024 19:16:42 GMT  
-		Size: 24.9 KB (24866 bytes)  
+	-	`sha256:f1bbc5dfdba8d2586f5ef77900096a124c2f50ac8e2b37467d54caf9b8068964`  
+		Last Modified: Sat, 11 Jan 2025 02:03:53 GMT  
+		Size: 28.5 KB (28466 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:jsc`
 
 ```console
-$ docker pull unit@sha256:bbb9ad321bbc81c9931d4e9237b432ef9098858067cd0d8a6bceeebb874a0d2d
+$ docker pull unit@sha256:2239803257ed5ef262296661f4fb6f790c398adda0da4e53ea8bc6f0951d9efe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1342,13 +2527,13 @@ $ docker pull unit@sha256:7b5a847e4aecd25bc0eb39cbe327c5b8a5a2bd3f6e984159071768
 ### `unit:jsc` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:5c4ba3e1584744588e87e0a3f9b939f8bfae1ac60e75edcfd1dae5e8eefd4b32
+$ docker pull unit@sha256:3bb60170a2a61c748e9067f26587b5bfad7d1590a8ccf536323ca28d958427b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **199.8 MB (199774591 bytes)**  
+-	Total Size: **214.3 MB (214286325 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8213fcd3ffa8a265d2d7b9d69210add2a344d247952d0d44bd0ce87ecb0f78da`
+-	Image ID: `sha256:b4ae17d0443e92f216747c82f1a06506d3a5773637367f342ccf3f540b74a90b`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -1365,53 +2550,53 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
 # Wed, 11 Sep 2024 16:26:06 GMT
 CMD ["/bin/bash"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 ENV JAVA_VERSION=jdk-11.0.25+9
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='191baa2e052627614022171400a917d28f0987dc54da48aaf07b06f552bb9884';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jdk_x64_linux_hotspot_11.0.25_9.tar.gz';          ;;        arm64)          ESUM='f2087cc3abdd509b74facf8e43e81e36244d14c70dec080b8f3a662695417ca7';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.25_9.tar.gz';          ;;        armhf)          ESUM='6bdd7da08c9f8fedded8da0411b6566c16cb9a904d164b68a0b7f11c8376673a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jdk_arm_linux_hotspot_11.0.25_9.tar.gz';          ;;        ppc64el)          ESUM='0014ffdae26d2b8f840b4842e3f9d4edc3576b4a961770708273d8ecc86ba5b6';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.25_9.tar.gz';          ;;        s390x)          ESUM='5fb661da82943f42a14bed94beda6d4dd3188987bd13b77e8b6f907054a73e9d';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.25_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -r "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 CMD ["jshell"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.title=Unit (jsc11)
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 17 Sep 2024 21:10:58 GMT
-LABEL org.opencontainers.image.version=1.33.0
-# Tue, 17 Sep 2024 21:10:58 GMT
-RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.33.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && rm -rf /root/.m2     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && rm -rf /root/.m2     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY welcome.* /usr/share/unit/welcome/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 STOPSIGNAL SIGTERM
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -1436,43 +2621,43 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Thu, 24 Oct 2024 01:03:48 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:523717d52a2dc892e38b55370f91dd3d12f2962d3b2f001ed956283205777576`  
-		Last Modified: Thu, 24 Oct 2024 08:40:19 GMT  
-		Size: 14.0 MB (13962308 bytes)  
+	-	`sha256:19d8fc93110cd5ba0c8eb12527f6047ec48da069ab3b64f75133a9986fb851fc`  
+		Last Modified: Sat, 11 Jan 2025 02:11:19 GMT  
+		Size: 28.5 MB (28474038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69e0c892e4fadcf4c16206b1a8ad0c2b99dc45dad5bb8bfaedf0cf7b1d22a2ef`  
-		Last Modified: Thu, 24 Oct 2024 08:40:18 GMT  
-		Size: 1.3 KB (1266 bytes)  
+	-	`sha256:891256396cd72cb1d1722affa1016d2f6b2060922b52b60d7e56f9d66b40c247`  
+		Last Modified: Sat, 11 Jan 2025 02:11:18 GMT  
+		Size: 1.3 KB (1267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb81c29f0e977e23dbbd22894cbe12992a8bca2e466fff7676d858e96a09dde3`  
-		Last Modified: Thu, 24 Oct 2024 08:40:18 GMT  
-		Size: 1.5 KB (1453 bytes)  
+	-	`sha256:418da8fa78dd92fe43ec422bb8936fe3674411f81a855ede01836f7bebbb99a8`  
+		Last Modified: Sat, 11 Jan 2025 02:11:19 GMT  
+		Size: 1.5 KB (1456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:jsc` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:4dc304f32a53e2dec7c97c260d7db7979a51c7718773d1d6decdacabce1ae9d7
+$ docker pull unit@sha256:3b4d333b5af46951a04de9cfe531bf437035213694ad0d3973ef4d54fb949056
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.5 KB (23495 bytes)**  
+-	Total Size: **27.1 KB (27087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bda0afb00cc41c358f7006e6ad0b03892b221b92b4e9073a0d29829ba1d38daf`
+-	Image ID: `sha256:5c3f403f18e9cc2d84448a370bf8e1399d8f77060f56baef98e9cf1d8069564c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:655d41e35478b4e9d5ca46ca9380864108637c4e16759bb739f7be9cc4e32047`  
-		Last Modified: Thu, 24 Oct 2024 08:40:18 GMT  
-		Size: 23.5 KB (23495 bytes)  
+	-	`sha256:d9590eadcb52ba00a3b92ccd1f05920797aa7c9fc27a5c4d4bcfb63f635d9ac2`  
+		Last Modified: Sat, 11 Jan 2025 02:11:18 GMT  
+		Size: 27.1 KB (27087 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:jsc11`
 
 ```console
-$ docker pull unit@sha256:bbb9ad321bbc81c9931d4e9237b432ef9098858067cd0d8a6bceeebb874a0d2d
+$ docker pull unit@sha256:2239803257ed5ef262296661f4fb6f790c398adda0da4e53ea8bc6f0951d9efe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1615,13 +2800,13 @@ $ docker pull unit@sha256:7b5a847e4aecd25bc0eb39cbe327c5b8a5a2bd3f6e984159071768
 ### `unit:jsc11` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:5c4ba3e1584744588e87e0a3f9b939f8bfae1ac60e75edcfd1dae5e8eefd4b32
+$ docker pull unit@sha256:3bb60170a2a61c748e9067f26587b5bfad7d1590a8ccf536323ca28d958427b0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **199.8 MB (199774591 bytes)**  
+-	Total Size: **214.3 MB (214286325 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8213fcd3ffa8a265d2d7b9d69210add2a344d247952d0d44bd0ce87ecb0f78da`
+-	Image ID: `sha256:b4ae17d0443e92f216747c82f1a06506d3a5773637367f342ccf3f540b74a90b`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -1638,53 +2823,53 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
 # Wed, 11 Sep 2024 16:26:06 GMT
 CMD ["/bin/bash"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 ENV JAVA_VERSION=jdk-11.0.25+9
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='191baa2e052627614022171400a917d28f0987dc54da48aaf07b06f552bb9884';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jdk_x64_linux_hotspot_11.0.25_9.tar.gz';          ;;        arm64)          ESUM='f2087cc3abdd509b74facf8e43e81e36244d14c70dec080b8f3a662695417ca7';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jdk_aarch64_linux_hotspot_11.0.25_9.tar.gz';          ;;        armhf)          ESUM='6bdd7da08c9f8fedded8da0411b6566c16cb9a904d164b68a0b7f11c8376673a';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jdk_arm_linux_hotspot_11.0.25_9.tar.gz';          ;;        ppc64el)          ESUM='0014ffdae26d2b8f840b4842e3f9d4edc3576b4a961770708273d8ecc86ba5b6';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jdk_ppc64le_linux_hotspot_11.0.25_9.tar.gz';          ;;        s390x)          ESUM='5fb661da82943f42a14bed94beda6d4dd3188987bd13b77e8b6f907054a73e9d';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jdk_s390x_linux_hotspot_11.0.25_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -r "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 23 Oct 2024 15:41:32 GMT
 CMD ["jshell"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.title=Unit (jsc11)
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 17 Sep 2024 21:10:58 GMT
-LABEL org.opencontainers.image.version=1.33.0
-# Tue, 17 Sep 2024 21:10:58 GMT
-RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.33.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && rm -rf /root/.m2     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && rm -rf /root/.m2     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY welcome.* /usr/share/unit/welcome/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 STOPSIGNAL SIGTERM
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -1709,37 +2894,37 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Thu, 24 Oct 2024 01:03:48 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:523717d52a2dc892e38b55370f91dd3d12f2962d3b2f001ed956283205777576`  
-		Last Modified: Thu, 24 Oct 2024 08:40:19 GMT  
-		Size: 14.0 MB (13962308 bytes)  
+	-	`sha256:19d8fc93110cd5ba0c8eb12527f6047ec48da069ab3b64f75133a9986fb851fc`  
+		Last Modified: Sat, 11 Jan 2025 02:11:19 GMT  
+		Size: 28.5 MB (28474038 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69e0c892e4fadcf4c16206b1a8ad0c2b99dc45dad5bb8bfaedf0cf7b1d22a2ef`  
-		Last Modified: Thu, 24 Oct 2024 08:40:18 GMT  
-		Size: 1.3 KB (1266 bytes)  
+	-	`sha256:891256396cd72cb1d1722affa1016d2f6b2060922b52b60d7e56f9d66b40c247`  
+		Last Modified: Sat, 11 Jan 2025 02:11:18 GMT  
+		Size: 1.3 KB (1267 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb81c29f0e977e23dbbd22894cbe12992a8bca2e466fff7676d858e96a09dde3`  
-		Last Modified: Thu, 24 Oct 2024 08:40:18 GMT  
-		Size: 1.5 KB (1453 bytes)  
+	-	`sha256:418da8fa78dd92fe43ec422bb8936fe3674411f81a855ede01836f7bebbb99a8`  
+		Last Modified: Sat, 11 Jan 2025 02:11:19 GMT  
+		Size: 1.5 KB (1456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:jsc11` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:4dc304f32a53e2dec7c97c260d7db7979a51c7718773d1d6decdacabce1ae9d7
+$ docker pull unit@sha256:3b4d333b5af46951a04de9cfe531bf437035213694ad0d3973ef4d54fb949056
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.5 KB (23495 bytes)**  
+-	Total Size: **27.1 KB (27087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bda0afb00cc41c358f7006e6ad0b03892b221b92b4e9073a0d29829ba1d38daf`
+-	Image ID: `sha256:5c3f403f18e9cc2d84448a370bf8e1399d8f77060f56baef98e9cf1d8069564c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:655d41e35478b4e9d5ca46ca9380864108637c4e16759bb739f7be9cc4e32047`  
-		Last Modified: Thu, 24 Oct 2024 08:40:18 GMT  
-		Size: 23.5 KB (23495 bytes)  
+	-	`sha256:d9590eadcb52ba00a3b92ccd1f05920797aa7c9fc27a5c4d4bcfb63f635d9ac2`  
+		Last Modified: Sat, 11 Jan 2025 02:11:18 GMT  
+		Size: 27.1 KB (27087 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:latest`
@@ -2107,7 +3292,7 @@ $ docker pull unit@sha256:6b1b4ea216a26ca418c560fce26f2f4d1eac95e2460a4091c65462
 ## `unit:node`
 
 ```console
-$ docker pull unit@sha256:c1bd73762c8487fa8680aa4b09f79e5d405cac6d8f821f74d5caf54db674dfd6
+$ docker pull unit@sha256:86374e7cfe48d7599441cd06c81df056423818bf239c7e6500ef233710a78e8a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2254,13 +3439,13 @@ $ docker pull unit@sha256:16f490930e19ff251b46b5b444e2792f885c13796dc37c40f87726
 ### `unit:node` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:c21f02a13e40e28fcd842483e87c6bd8354429405ec75c404655b059e2ffae90
+$ docker pull unit@sha256:1568f1dd3cccbee0348c23da1e57fb10b5a0d87feb2f52a77d1941768ceb6f7e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **405.5 MB (405534589 bytes)**  
+-	Total Size: **419.6 MB (419572371 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e948235b519cc774012ede0b99c9a696cdfbd641bc622d537babf8bb59576ef`
+-	Image ID: `sha256:d9539e364d81899eb7ce81d4ef61461cdf5ef8cfa3792c5692c755564adaa136`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -2273,49 +3458,49 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV NODE_VERSION=22.13.0
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && export GNUPGHOME="$(mktemp -d)"   && set -ex   && for key in     C0D6248439F1D5604AAFFB4021D900FFDB233756     DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7     CC68F5A3106FF448322E48ED27F5E38D5B0A215F     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4     C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C     108F52B48DB57BB0CC439B2997B01419BD92F80A     A363A499291CBBC940DD62E41F10027AF002F8B0   ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs   && node --version   && npm --version # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV YARN_VERSION=1.22.22
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN set -ex   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && yarn --version   && rm -rf /tmp/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 CMD ["node"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.title=Unit (node22)
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 17 Sep 2024 21:10:58 GMT
-LABEL org.opencontainers.image.version=1.33.0
-# Tue, 17 Sep 2024 21:10:58 GMT
-RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.33.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && npm -g install node-gyp     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure nodejs --node-gyp=/usr/local/bin/node-gyp     && make -j $NCPU node node-install libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure nodejs --node-gyp=/usr/local/bin/node-gyp     && make -j $NCPU node node-install libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && rm -rf /root/.cache/ && rm -rf /root/.npm     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && npm -g install node-gyp     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure nodejs --node-gyp=/usr/local/bin/node-gyp     && make -j $NCPU node node-install libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure nodejs --node-gyp=/usr/local/bin/node-gyp     && make -j $NCPU node node-install libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && rm -rf /root/.cache/ && rm -rf /root/.npm     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY welcome.* /usr/share/unit/welcome/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 STOPSIGNAL SIGTERM
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -2352,43 +3537,43 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Wed, 08 Jan 2025 03:22:39 GMT  
 		Size: 450.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d47470efefe4cf14a7fd3353ff10b3b7ebb5007eca0614828976413d7443995e`  
-		Last Modified: Wed, 08 Jan 2025 05:18:45 GMT  
-		Size: 10.1 MB (10133204 bytes)  
+	-	`sha256:f0c5be6503df7360c481c768c1792070f090a53ff8e2ceea57ea7c0078ae35ef`  
+		Last Modified: Sat, 11 Jan 2025 02:14:08 GMT  
+		Size: 24.2 MB (24170976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5ba37238ae6cb1e88494d7d43b940d34416f6ff862619850d7a44ed2dd12c04`  
-		Last Modified: Wed, 08 Jan 2025 05:18:44 GMT  
-		Size: 1.3 KB (1268 bytes)  
+	-	`sha256:32c01e20ab51beb6dff11275153048a8083c279d5aa0815e00afaea85f7bc9d0`  
+		Last Modified: Sat, 11 Jan 2025 02:14:07 GMT  
+		Size: 1.3 KB (1272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:827bdb85cf99fe758ef6422c03ba4c52617d5e3499f204471f349178856b811f`  
-		Last Modified: Wed, 08 Jan 2025 05:18:44 GMT  
-		Size: 1.4 KB (1449 bytes)  
+	-	`sha256:6f37151a98fc8011c862c02a4f5a094694cbc1512e1de142fceaafa5aa48a0a6`  
+		Last Modified: Sat, 11 Jan 2025 02:14:07 GMT  
+		Size: 1.5 KB (1455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:node` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:a8bc12dedbcff7924a3ef0f691df136c28a3a2550e94b37065cde013a55f9b33
+$ docker pull unit@sha256:7d9bde0fa81530aa15e19170fca78a427b1ea50b328e6a7b2942fe2000f3941c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.4 KB (25399 bytes)**  
+-	Total Size: **29.0 KB (28994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5171a1115ed88babfe6ccfc69b9add4a4935a661b819b8a2edd008df89e25842`
+-	Image ID: `sha256:2d90ad155470997ad4936115528356664930eab4d1c2b61423b74b0262967b32`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e926b5add74c204b8fb7ccf20fdbb72bfcc1ff6fa56cbc7f5d36c526a588b0a0`  
-		Last Modified: Wed, 08 Jan 2025 05:18:44 GMT  
-		Size: 25.4 KB (25399 bytes)  
+	-	`sha256:512f5f84aee0dc0ba5c1d689a83e76c8655ed3d7e0e5cf89aea57e69d78f3d96`  
+		Last Modified: Sat, 11 Jan 2025 02:14:07 GMT  
+		Size: 29.0 KB (28994 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:node20`
 
 ```console
-$ docker pull unit@sha256:b904ef8dc335f48c157c77f83af051dc2eb00e315d10bccc957d39ef17a8cbc2
+$ docker pull unit@sha256:dc03a3395822cb05c8f29b3e30a441fc5b5e7f44f4442ee763aa0959be0b067e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2535,13 +3720,13 @@ $ docker pull unit@sha256:33f45868a18346c1fdcc6c3f15863befc60b72a514204e996b1bf2
 ### `unit:node20` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:ca356e0a159746b5a4ce56e3f46487e010618021ae0e1b9f0c00269f2eb883ec
+$ docker pull unit@sha256:01e112c0ece4b6b874f57343d417f8e8176823053f7dbf11a1ea4bbc21270ce1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **397.8 MB (397778741 bytes)**  
+-	Total Size: **411.8 MB (411811235 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:70b1ef638f7b26338ee802e94173dde10bb8e1adc6984f393dfbabcb27ed35dd`
+-	Image ID: `sha256:fdf3fdcbc57600ade571c24411b29d3e490d4f1ba2d93f88465b54be4ecda7c3`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -2554,49 +3739,49 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 20 Nov 2024 16:05:40 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 20 Nov 2024 16:05:40 GMT
 ENV NODE_VERSION=20.18.1
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 20 Nov 2024 16:05:40 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && export GNUPGHOME="$(mktemp -d)"   && set -ex   && for key in     C0D6248439F1D5604AAFFB4021D900FFDB233756     DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7     CC68F5A3106FF448322E48ED27F5E38D5B0A215F     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4     C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C     108F52B48DB57BB0CC439B2997B01419BD92F80A     A363A499291CBBC940DD62E41F10027AF002F8B0   ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs   && node --version   && npm --version # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 20 Nov 2024 16:05:40 GMT
 ENV YARN_VERSION=1.22.22
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 20 Nov 2024 16:05:40 GMT
 RUN set -ex   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && yarn --version   && rm -rf /tmp/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 20 Nov 2024 16:05:40 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 20 Nov 2024 16:05:40 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Wed, 20 Nov 2024 16:05:40 GMT
 CMD ["node"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.title=Unit (node20)
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 17 Sep 2024 21:10:58 GMT
-LABEL org.opencontainers.image.version=1.33.0
-# Tue, 17 Sep 2024 21:10:58 GMT
-RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.33.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && npm -g install node-gyp     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure nodejs --node-gyp=/usr/local/bin/node-gyp     && make -j $NCPU node node-install libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure nodejs --node-gyp=/usr/local/bin/node-gyp     && make -j $NCPU node node-install libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && rm -rf /root/.cache/ && rm -rf /root/.npm     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && npm -g install node-gyp     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure nodejs --node-gyp=/usr/local/bin/node-gyp     && make -j $NCPU node node-install libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure nodejs --node-gyp=/usr/local/bin/node-gyp     && make -j $NCPU node node-install libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && rm -rf /root/.cache/ && rm -rf /root/.npm     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY welcome.* /usr/share/unit/welcome/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 STOPSIGNAL SIGTERM
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -2633,43 +3818,43 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Wed, 25 Dec 2024 15:14:00 GMT  
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:480fff27c93dff4c016085b6d06dca8b33b7fc11bc1123ca04d95184547c3b06`  
-		Last Modified: Wed, 25 Dec 2024 19:20:48 GMT  
-		Size: 9.6 MB (9566789 bytes)  
+	-	`sha256:a7e520881ca82191e54b56a7663b158bd666947488f534bc64d5f24d174cc6f8`  
+		Last Modified: Sat, 11 Jan 2025 02:17:02 GMT  
+		Size: 23.6 MB (23599275 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8dbf0222abff96e8f34726d6d4cc0a80c4d33f7d5d567f21d0a0fbd92c28c65b`  
-		Last Modified: Wed, 25 Dec 2024 19:20:47 GMT  
-		Size: 1.3 KB (1265 bytes)  
+	-	`sha256:4b7c848f0aa34ddb1bbbd6bb813eb7d6bb09ed42a5f528e339696190aaa86300`  
+		Last Modified: Sat, 11 Jan 2025 02:17:01 GMT  
+		Size: 1.3 KB (1273 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:234f4e5deb4a74e3e511fd03eabd9d322a773d69ea67f92786eb0572ad718adc`  
-		Last Modified: Wed, 25 Dec 2024 19:20:47 GMT  
+	-	`sha256:e3ac9213ff39bad72f1e267405d34a9adae5272a457041d338e88f0601190182`  
+		Last Modified: Sat, 11 Jan 2025 02:17:01 GMT  
 		Size: 1.5 KB (1454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:node20` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:252b27f429cefe692ebe5a4e43f423166b1af5c7f5acb3d33e2d772fca955729
+$ docker pull unit@sha256:827edb68899900cdf0792634089e1d28c5b64df76133d613380389e99bf05a15
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.1 KB (25094 bytes)**  
+-	Total Size: **28.7 KB (28692 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ebffbee8e08854c23f11fc346f676014cb2bd96a44057796e8ce0449d6ad4e8e`
+-	Image ID: `sha256:e9a82d2fffa40a48120229ebf9cc90c113656e77877fad8a46738633788f88db`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7af09c7e717cb09d69de046adb3c3d864d34bbdfd39f1b9d9ef2fae75b62fc43`  
-		Last Modified: Wed, 25 Dec 2024 19:20:47 GMT  
-		Size: 25.1 KB (25094 bytes)  
+	-	`sha256:b7c497a2ddb9b255b607a266c238a0ab020ccf6c649ddb2f202bbf81147dcad1`  
+		Last Modified: Sat, 11 Jan 2025 02:17:00 GMT  
+		Size: 28.7 KB (28692 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:node22`
 
 ```console
-$ docker pull unit@sha256:c1bd73762c8487fa8680aa4b09f79e5d405cac6d8f821f74d5caf54db674dfd6
+$ docker pull unit@sha256:86374e7cfe48d7599441cd06c81df056423818bf239c7e6500ef233710a78e8a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2816,13 +4001,13 @@ $ docker pull unit@sha256:16f490930e19ff251b46b5b444e2792f885c13796dc37c40f87726
 ### `unit:node22` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:c21f02a13e40e28fcd842483e87c6bd8354429405ec75c404655b059e2ffae90
+$ docker pull unit@sha256:1568f1dd3cccbee0348c23da1e57fb10b5a0d87feb2f52a77d1941768ceb6f7e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **405.5 MB (405534589 bytes)**  
+-	Total Size: **419.6 MB (419572371 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5e948235b519cc774012ede0b99c9a696cdfbd641bc622d537babf8bb59576ef`
+-	Image ID: `sha256:d9539e364d81899eb7ce81d4ef61461cdf5ef8cfa3792c5692c755564adaa136`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -2835,49 +4020,49 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV NODE_VERSION=22.13.0
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && export GNUPGHOME="$(mktemp -d)"   && set -ex   && for key in     C0D6248439F1D5604AAFFB4021D900FFDB233756     DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7     CC68F5A3106FF448322E48ED27F5E38D5B0A215F     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4     C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C     108F52B48DB57BB0CC439B2997B01419BD92F80A     A363A499291CBBC940DD62E41F10027AF002F8B0   ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs   && node --version   && npm --version # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV YARN_VERSION=1.22.22
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN set -ex   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && yarn --version   && rm -rf /tmp/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 CMD ["node"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.title=Unit (node22)
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 17 Sep 2024 21:10:58 GMT
-LABEL org.opencontainers.image.version=1.33.0
-# Tue, 17 Sep 2024 21:10:58 GMT
-RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.33.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && npm -g install node-gyp     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure nodejs --node-gyp=/usr/local/bin/node-gyp     && make -j $NCPU node node-install libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure nodejs --node-gyp=/usr/local/bin/node-gyp     && make -j $NCPU node node-install libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && rm -rf /root/.cache/ && rm -rf /root/.npm     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && npm -g install node-gyp     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure nodejs --node-gyp=/usr/local/bin/node-gyp     && make -j $NCPU node node-install libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure nodejs --node-gyp=/usr/local/bin/node-gyp     && make -j $NCPU node node-install libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && rm -rf /root/.cache/ && rm -rf /root/.npm     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY welcome.* /usr/share/unit/welcome/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 STOPSIGNAL SIGTERM
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -2914,37 +4099,37 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Wed, 08 Jan 2025 03:22:39 GMT  
 		Size: 450.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d47470efefe4cf14a7fd3353ff10b3b7ebb5007eca0614828976413d7443995e`  
-		Last Modified: Wed, 08 Jan 2025 05:18:45 GMT  
-		Size: 10.1 MB (10133204 bytes)  
+	-	`sha256:f0c5be6503df7360c481c768c1792070f090a53ff8e2ceea57ea7c0078ae35ef`  
+		Last Modified: Sat, 11 Jan 2025 02:14:08 GMT  
+		Size: 24.2 MB (24170976 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5ba37238ae6cb1e88494d7d43b940d34416f6ff862619850d7a44ed2dd12c04`  
-		Last Modified: Wed, 08 Jan 2025 05:18:44 GMT  
-		Size: 1.3 KB (1268 bytes)  
+	-	`sha256:32c01e20ab51beb6dff11275153048a8083c279d5aa0815e00afaea85f7bc9d0`  
+		Last Modified: Sat, 11 Jan 2025 02:14:07 GMT  
+		Size: 1.3 KB (1272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:827bdb85cf99fe758ef6422c03ba4c52617d5e3499f204471f349178856b811f`  
-		Last Modified: Wed, 08 Jan 2025 05:18:44 GMT  
-		Size: 1.4 KB (1449 bytes)  
+	-	`sha256:6f37151a98fc8011c862c02a4f5a094694cbc1512e1de142fceaafa5aa48a0a6`  
+		Last Modified: Sat, 11 Jan 2025 02:14:07 GMT  
+		Size: 1.5 KB (1455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:node22` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:a8bc12dedbcff7924a3ef0f691df136c28a3a2550e94b37065cde013a55f9b33
+$ docker pull unit@sha256:7d9bde0fa81530aa15e19170fca78a427b1ea50b328e6a7b2942fe2000f3941c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.4 KB (25399 bytes)**  
+-	Total Size: **29.0 KB (28994 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5171a1115ed88babfe6ccfc69b9add4a4935a661b819b8a2edd008df89e25842`
+-	Image ID: `sha256:2d90ad155470997ad4936115528356664930eab4d1c2b61423b74b0262967b32`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e926b5add74c204b8fb7ccf20fdbb72bfcc1ff6fa56cbc7f5d36c526a588b0a0`  
-		Last Modified: Wed, 08 Jan 2025 05:18:44 GMT  
-		Size: 25.4 KB (25399 bytes)  
+	-	`sha256:512f5f84aee0dc0ba5c1d689a83e76c8655ed3d7e0e5cf89aea57e69d78f3d96`  
+		Last Modified: Sat, 11 Jan 2025 02:14:07 GMT  
+		Size: 29.0 KB (28994 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:perl`
@@ -3464,7 +4649,7 @@ $ docker pull unit@sha256:83bd166102ee0e4c632542bf66073dcabac2a911792ecc4e268156
 ## `unit:perl5.38`
 
 ```console
-$ docker pull unit@sha256:91d1fe01f359d27e977c7210a008f78e5f21280efdcc9c31fa8b9a870f2f5226
+$ docker pull unit@sha256:e0fcaacacfa51eccd409af3215265013ff4adef5aae6f6b9b308f8b60c29bccd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3599,13 +4784,13 @@ $ docker pull unit@sha256:8056946467dd8a287aa4bf93f7c6bc83d2a6048b9967a7a1742dd9
 ### `unit:perl5.38` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:2fbd05dd1a83f2b116f59d60b269877576d1cb4aa07e1e46b92a2162794d0c3e
+$ docker pull unit@sha256:87435df90fa7a25da4cb627fcb299cb8996f5d0ecef0fdd53fb5db534e6c6d49
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **361.2 MB (361202774 bytes)**  
+-	Total Size: **375.2 MB (375239278 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dcd6ec5a20bc6f23950dfbd14f711a9a1583f4fd93d0fddc5cc407f103c3bb79`
+-	Image ID: `sha256:fe29f6f518118f3c4f2b12c148a3f57ea7e67a0ce6266d18fbcbfe4afe13fb63`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -3618,41 +4803,41 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 21 Nov 2024 11:29:59 GMT
 WORKDIR /usr/src/perl
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 21 Nov 2024 11:29:59 GMT
 RUN true     && curl -fL https://cpan.metacpan.org/authors/id/P/PE/PEVANS/perl-5.38.2.tar.gz -o perl-5.38.2.tar.gz     && echo 'a0a31534451eb7b83c7d6594a497543a54d488bc90ca00f5e34762577f40655e *perl-5.38.2.tar.gz' | sha256sum --strict --check -     && tar --strip-components=1 -xaf perl-5.38.2.tar.gz -C /usr/src/perl     && rm perl-5.38.2.tar.gz     && cat *.patch | patch -p1     && gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"     && archBits="$(dpkg-architecture --query DEB_BUILD_ARCH_BITS)"     && archFlag="$([ "$archBits" = '64' ] && echo '-Duse64bitall' || echo '-Duse64bitint')"     && ./Configure -Darchname="$gnuArch" "$archFlag" -Duseshrplib -Dvendorprefix=/usr/local  -des     && make -j$(nproc)     && TEST_JOBS=$(nproc) make test_harness     && make install     && cd /usr/src     && curl -fLO https://www.cpan.org/authors/id/M/MI/MIYAGAWA/App-cpanminus-1.7047.tar.gz     && echo '963e63c6e1a8725ff2f624e9086396ae150db51dd0a337c3781d09a994af05a5 *App-cpanminus-1.7047.tar.gz' | sha256sum --strict --check -     && tar -xzf App-cpanminus-1.7047.tar.gz && cd App-cpanminus-1.7047     && perl -pi -E 's{http://(www\.cpan\.org|backpan\.perl\.org|cpan\.metacpan\.org|fastapi\.metacpan\.org|cpanmetadb\.plackperl\.org)}{https://$1}g' bin/cpanm     && perl -pi -E 's{try_lwp=>1}{try_lwp=>0}g' bin/cpanm     && perl bin/cpanm . && cd /root     && curl -fLO 'https://www.cpan.org/authors/id/C/CH/CHRISN/Net-SSLeay-1.94.tar.gz'     && echo '9d7be8a56d1bedda05c425306cc504ba134307e0c09bda4a788c98744ebcd95d *Net-SSLeay-1.94.tar.gz' | sha256sum --strict --check -     && cpanm --from $PWD Net-SSLeay-1.94.tar.gz     && curl -fLO 'https://www.cpan.org/authors/id/S/SU/SULLR/IO-Socket-SSL-2.085.tar.gz'     && echo '95b2f7c0628a7e246a159665fbf0620d0d7835e3a940f22d3fdd47c3aa799c2e *IO-Socket-SSL-2.085.tar.gz' | sha256sum --strict --check -     && SSL_CERT_DIR=/etc/ssl/certs cpanm --from $PWD IO-Socket-SSL-2.085.tar.gz     && curl -fL https://raw.githubusercontent.com/skaji/cpm/0.997017/cpm -o /usr/local/bin/cpm     && echo 'e3931a7d994c96f9c74b97d1b5b75a554fc4f06eadef1eca26ecc0bdcd1f2d11 */usr/local/bin/cpm' | sha256sum --strict --check -     && chmod +x /usr/local/bin/cpm     && true     && rm -fr /root/.cpanm /root/Net-SSLeay-1.94* /root/IO-Socket-SSL-2.085* /usr/src/perl /usr/src/App-cpanminus-1.7047* /tmp/*     && cpanm --version && cpm --version # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 21 Nov 2024 11:29:59 GMT
 WORKDIR /usr/src/app
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 21 Nov 2024 11:29:59 GMT
 CMD ["perl5.38.2" "-de0"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.title=Unit (perl5.38)
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 17 Sep 2024 21:10:58 GMT
-LABEL org.opencontainers.image.version=1.33.0
-# Tue, 17 Sep 2024 21:10:58 GMT
-RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.33.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure perl     && make -j $NCPU perl-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure perl     && make -j $NCPU perl-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure perl     && make -j $NCPU perl-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure perl     && make -j $NCPU perl-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY welcome.* /usr/share/unit/welcome/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 STOPSIGNAL SIGTERM
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -3685,37 +4870,37 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Wed, 25 Dec 2024 15:42:31 GMT  
 		Size: 132.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:95fb73b38466165b021d49bd8e6aaf1938a2e3586ea9d2f72f096a712e90525a`  
-		Last Modified: Wed, 25 Dec 2024 19:22:36 GMT  
-		Size: 7.0 MB (6950132 bytes)  
+	-	`sha256:299039a4dac32e7b59c5e359be7b8e70c1eb21f72dc71a1dc96efb8e15f65b15`  
+		Last Modified: Sat, 11 Jan 2025 02:19:46 GMT  
+		Size: 21.0 MB (20986630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:379ad40b29740c756adffb380874f6e61f8e77f92c0b0cce5a22345433a6f1ba`  
-		Last Modified: Wed, 25 Dec 2024 19:22:36 GMT  
-		Size: 1.3 KB (1259 bytes)  
+	-	`sha256:1e96893eb539fdae7a7f6642ed57aa07cadf6f77ed1c71e930dd897c65b1db35`  
+		Last Modified: Sat, 11 Jan 2025 02:19:45 GMT  
+		Size: 1.3 KB (1265 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c08dd1bc9e360566e71b68b11623377cf5b9efdc75da9dbc3d23cfb57ef3399`  
-		Last Modified: Wed, 25 Dec 2024 19:22:36 GMT  
+	-	`sha256:5cf487c2cb1acd5eb94a906002d7b29f046c9749b136fc5025c8dc4693e67326`  
+		Last Modified: Sat, 11 Jan 2025 02:19:45 GMT  
 		Size: 1.5 KB (1452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:perl5.38` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:17c59cab20c78ff15a64d1b029cf5b1987b12c9e443337204e9b59bffef7bf4e
+$ docker pull unit@sha256:97b76a4d47da973944ab5c834554430edae0450cf9cd1dcd6aeee4789e1c43a5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **24.1 KB (24053 bytes)**  
+-	Total Size: **27.7 KB (27652 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:35ff87cfe0c2507b4c3b7c0a59bb98da76ff1a473b58a7a53b19355e94e4124d`
+-	Image ID: `sha256:172b58db59a63737db4a917912d9dd4c96d9d740430745f98423d018ec5023e7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f3993a79c96102435a4e5b95d0e35665d17cbfa46071caaa1f2b879aa7191a8d`  
-		Last Modified: Wed, 25 Dec 2024 19:22:35 GMT  
-		Size: 24.1 KB (24053 bytes)  
+	-	`sha256:4e78f17ce40361b1f77648c36586a1850cd6816617ed65d1fe495340a1e855a9`  
+		Last Modified: Sat, 11 Jan 2025 02:19:45 GMT  
+		Size: 27.7 KB (27652 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:perl5.40`
@@ -3978,7 +5163,7 @@ $ docker pull unit@sha256:83bd166102ee0e4c632542bf66073dcabac2a911792ecc4e268156
 ## `unit:php`
 
 ```console
-$ docker pull unit@sha256:b08b405bbe4d8ac8f815f0547c9f0eb36d51c9435a265eeae5aaf217d0d76d17
+$ docker pull unit@sha256:18e2b86ed74eac1cbed2ddecea5ca93fdda51ce2fb34d28588c2a1916f1f3732
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4145,84 +5330,84 @@ $ docker pull unit@sha256:8a2c93048c359a8716048ecf5a62fce8400368a1b6b74b37aef88f
 ### `unit:php` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:c4369a83ec772b654ab3b3abbba351209d6f21a64dce8209da7ad4801f3f98f3
+$ docker pull unit@sha256:392abbfa371988fbbd41cf3bb7c184dd3a63bf9c2abbd0ef3a468a72cafd78dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **181.3 MB (181279934 bytes)**  
+-	Total Size: **200.6 MB (200631172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:327386f05ede4ef88daef9c634da6522c80fa73561c4d57c549ee94c3cc1c54c`
+-	Image ID: `sha256:537212fe7ab27a48a8e99eb64cd2ba325df01795e84065eb9049b60f3aa16045`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 17 Sep 2024 21:10:58 GMT
-ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Tue, 17 Sep 2024 21:10:58 GMT
-ENV PHP_VERSION=8.3.15
-# Tue, 17 Sep 2024 21:10:58 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.3.15.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.15.tar.xz.asc
-# Tue, 17 Sep 2024 21:10:58 GMT
-ENV PHP_SHA256=3df5d45637283f759eef8fc3ce03de829ded3e200c3da278936a684955d2f94f
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_VERSION=8.4.2
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.4.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.2.tar.xz.asc
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_SHA256=92636453210f7f2174d6ee6df17a5811368f556a6c2c2cbcf019321e36456e01
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 CMD ["php" "-a"]
-# Tue, 17 Sep 2024 21:10:58 GMT
-LABEL org.opencontainers.image.title=Unit (php8.3)
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.title=Unit (php8.4)
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 17 Sep 2024 21:10:58 GMT
-LABEL org.opencontainers.image.version=1.33.0
-# Tue, 17 Sep 2024 21:10:58 GMT
-RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.33.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure php     && make -j $NCPU php-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure php     && make -j $NCPU php-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && ldconfig     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure php     && make -j $NCPU php-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure php     && make -j $NCPU php-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && ldconfig     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY welcome.* /usr/share/unit/welcome/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 STOPSIGNAL SIGTERM
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -4243,63 +5428,63 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 24 Dec 2024 23:07:21 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a3d7e5725b828d7b43b7cf5b7b7fc62ba38b1b95d52b2fd7bf9035535e73cd0`  
-		Last Modified: Tue, 24 Dec 2024 23:34:51 GMT  
-		Size: 12.6 MB (12634050 bytes)  
+	-	`sha256:b9f53a9ba108d0b9e18fa23664c2d5a17f4bbf402acecc3a7248ac7178d2fe87`  
+		Last Modified: Tue, 24 Dec 2024 23:07:22 GMT  
+		Size: 13.7 MB (13668428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af98f1958ff28101ccd6b476678c55f9601732db04fd964dc10cf6478bd54964`  
-		Last Modified: Tue, 24 Dec 2024 23:34:50 GMT  
+	-	`sha256:ff8f45fa647a472e184757b77acf9d491a4fa1430582c5d780e12d4a9433cf62`  
+		Last Modified: Tue, 24 Dec 2024 23:07:21 GMT  
 		Size: 487.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22b460f8ead9ff66cbb84c9bca886be94e9a88e289e6da9f093ee10760c2abe9`  
-		Last Modified: Tue, 24 Dec 2024 23:34:51 GMT  
-		Size: 35.8 MB (35847741 bytes)  
+	-	`sha256:62fd8ef07bf83a98c063d3a6529e1839593698eb5c75f096cd45f48d2d1b4d34`  
+		Last Modified: Tue, 24 Dec 2024 23:07:23 GMT  
+		Size: 40.1 MB (40134642 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06832de3f71b49dae35940920a84c6c83f16f6dcc08161ff150982dbd24ce6f1`  
-		Last Modified: Tue, 24 Dec 2024 23:34:50 GMT  
-		Size: 2.4 KB (2446 bytes)  
+	-	`sha256:fa5f578e5237bdf2a59c1c3bc8715e2ba5703a40437f445e799fbecf9524e402`  
+		Last Modified: Tue, 24 Dec 2024 23:07:22 GMT  
+		Size: 2.4 KB (2444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c24506dfc77584405586a98434ee14de977316a14430b7a2922470667e75b91`  
-		Last Modified: Tue, 24 Dec 2024 23:34:51 GMT  
+	-	`sha256:02da7d5a4057d390769f6f26e58a3bf539a6128bd5dc8484190b77a5b569644b`  
+		Last Modified: Tue, 24 Dec 2024 23:07:23 GMT  
 		Size: 245.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d67e5c5fd9a2efd6f6781d9ebe8c8ae4af083949607177c1b4a425c33f8c406`  
-		Last Modified: Wed, 25 Dec 2024 10:33:07 GMT  
-		Size: 6.8 MB (6796843 bytes)  
+	-	`sha256:fa1877dea297f27dcd0db3881b439955df9147cf769bceb53bda4f6b4a93f856`  
+		Last Modified: Sat, 11 Jan 2025 02:22:35 GMT  
+		Size: 20.8 MB (20826796 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dfa401be8877be8b948be88b0d2ce6569aaf8d20e9c8ad61783455a63dcbaa9`  
-		Last Modified: Wed, 25 Dec 2024 10:33:06 GMT  
-		Size: 1.3 KB (1268 bytes)  
+	-	`sha256:cf1d0704f9fde00c3446cdd3e25f9ac97d93f13b41d9100b830b1295460494cd`  
+		Last Modified: Sat, 11 Jan 2025 02:22:34 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a808093a9ed6e055ac92feb167306809943605c7442950f051b0c92fdfb4328`  
-		Last Modified: Wed, 25 Dec 2024 10:33:06 GMT  
-		Size: 1.5 KB (1451 bytes)  
+	-	`sha256:e68be15d2c25343ba9159b124f54086527b88d45ef8d641539a8a63c6996b81c`  
+		Last Modified: Sat, 11 Jan 2025 02:22:34 GMT  
+		Size: 1.5 KB (1456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:php` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:b18e6a2bae39075c0ddb0820d06b580aca375165adb88132269a3bc4353996af
+$ docker pull unit@sha256:05e9aa7bffd30a062fda06097107bdfac0517f7149128b31f91ce58414c60a5d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.6 KB (26565 bytes)**  
+-	Total Size: **30.2 KB (30157 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:299aac69c8bce359bd58763b8198cce26ef4a607ebfaa14365d007769ad637b3`
+-	Image ID: `sha256:348c41e7d2daaff400dfd2767851496eec327319b89e2dafc2657bd19d92ffbe`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7fca54f7293f95db9416fd5700786c9ad61e53370f5a98faf8470f3d2ae12a85`  
-		Last Modified: Wed, 25 Dec 2024 10:33:06 GMT  
-		Size: 26.6 KB (26565 bytes)  
+	-	`sha256:d65aa9251b36532679c8f290705a720a33b12c6b5bd7a1743675018de0085dcb`  
+		Last Modified: Sat, 11 Jan 2025 02:22:34 GMT  
+		Size: 30.2 KB (30157 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:php8`
 
 ```console
-$ docker pull unit@sha256:b08b405bbe4d8ac8f815f0547c9f0eb36d51c9435a265eeae5aaf217d0d76d17
+$ docker pull unit@sha256:18e2b86ed74eac1cbed2ddecea5ca93fdda51ce2fb34d28588c2a1916f1f3732
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4466,84 +5651,84 @@ $ docker pull unit@sha256:8a2c93048c359a8716048ecf5a62fce8400368a1b6b74b37aef88f
 ### `unit:php8` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:c4369a83ec772b654ab3b3abbba351209d6f21a64dce8209da7ad4801f3f98f3
+$ docker pull unit@sha256:392abbfa371988fbbd41cf3bb7c184dd3a63bf9c2abbd0ef3a468a72cafd78dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **181.3 MB (181279934 bytes)**  
+-	Total Size: **200.6 MB (200631172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:327386f05ede4ef88daef9c634da6522c80fa73561c4d57c549ee94c3cc1c54c`
+-	Image ID: `sha256:537212fe7ab27a48a8e99eb64cd2ba325df01795e84065eb9049b60f3aa16045`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 17 Sep 2024 21:10:58 GMT
-ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Tue, 17 Sep 2024 21:10:58 GMT
-ENV PHP_VERSION=8.3.15
-# Tue, 17 Sep 2024 21:10:58 GMT
-ENV PHP_URL=https://www.php.net/distributions/php-8.3.15.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.15.tar.xz.asc
-# Tue, 17 Sep 2024 21:10:58 GMT
-ENV PHP_SHA256=3df5d45637283f759eef8fc3ce03de829ded3e200c3da278936a684955d2f94f
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_VERSION=8.4.2
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.4.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.2.tar.xz.asc
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_SHA256=92636453210f7f2174d6ee6df17a5811368f556a6c2c2cbcf019321e36456e01
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 CMD ["php" "-a"]
-# Tue, 17 Sep 2024 21:10:58 GMT
-LABEL org.opencontainers.image.title=Unit (php8.3)
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.title=Unit (php8.4)
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 17 Sep 2024 21:10:58 GMT
-LABEL org.opencontainers.image.version=1.33.0
-# Tue, 17 Sep 2024 21:10:58 GMT
-RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.33.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure php     && make -j $NCPU php-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure php     && make -j $NCPU php-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && ldconfig     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure php     && make -j $NCPU php-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure php     && make -j $NCPU php-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && ldconfig     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY welcome.* /usr/share/unit/welcome/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 STOPSIGNAL SIGTERM
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -4564,63 +5749,63 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 24 Dec 2024 23:07:21 GMT  
 		Size: 225.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a3d7e5725b828d7b43b7cf5b7b7fc62ba38b1b95d52b2fd7bf9035535e73cd0`  
-		Last Modified: Tue, 24 Dec 2024 23:34:51 GMT  
-		Size: 12.6 MB (12634050 bytes)  
+	-	`sha256:b9f53a9ba108d0b9e18fa23664c2d5a17f4bbf402acecc3a7248ac7178d2fe87`  
+		Last Modified: Tue, 24 Dec 2024 23:07:22 GMT  
+		Size: 13.7 MB (13668428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af98f1958ff28101ccd6b476678c55f9601732db04fd964dc10cf6478bd54964`  
-		Last Modified: Tue, 24 Dec 2024 23:34:50 GMT  
+	-	`sha256:ff8f45fa647a472e184757b77acf9d491a4fa1430582c5d780e12d4a9433cf62`  
+		Last Modified: Tue, 24 Dec 2024 23:07:21 GMT  
 		Size: 487.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22b460f8ead9ff66cbb84c9bca886be94e9a88e289e6da9f093ee10760c2abe9`  
-		Last Modified: Tue, 24 Dec 2024 23:34:51 GMT  
-		Size: 35.8 MB (35847741 bytes)  
+	-	`sha256:62fd8ef07bf83a98c063d3a6529e1839593698eb5c75f096cd45f48d2d1b4d34`  
+		Last Modified: Tue, 24 Dec 2024 23:07:23 GMT  
+		Size: 40.1 MB (40134642 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06832de3f71b49dae35940920a84c6c83f16f6dcc08161ff150982dbd24ce6f1`  
-		Last Modified: Tue, 24 Dec 2024 23:34:50 GMT  
-		Size: 2.4 KB (2446 bytes)  
+	-	`sha256:fa5f578e5237bdf2a59c1c3bc8715e2ba5703a40437f445e799fbecf9524e402`  
+		Last Modified: Tue, 24 Dec 2024 23:07:22 GMT  
+		Size: 2.4 KB (2444 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9c24506dfc77584405586a98434ee14de977316a14430b7a2922470667e75b91`  
-		Last Modified: Tue, 24 Dec 2024 23:34:51 GMT  
+	-	`sha256:02da7d5a4057d390769f6f26e58a3bf539a6128bd5dc8484190b77a5b569644b`  
+		Last Modified: Tue, 24 Dec 2024 23:07:23 GMT  
 		Size: 245.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d67e5c5fd9a2efd6f6781d9ebe8c8ae4af083949607177c1b4a425c33f8c406`  
-		Last Modified: Wed, 25 Dec 2024 10:33:07 GMT  
-		Size: 6.8 MB (6796843 bytes)  
+	-	`sha256:fa1877dea297f27dcd0db3881b439955df9147cf769bceb53bda4f6b4a93f856`  
+		Last Modified: Sat, 11 Jan 2025 02:22:35 GMT  
+		Size: 20.8 MB (20826796 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dfa401be8877be8b948be88b0d2ce6569aaf8d20e9c8ad61783455a63dcbaa9`  
-		Last Modified: Wed, 25 Dec 2024 10:33:06 GMT  
-		Size: 1.3 KB (1268 bytes)  
+	-	`sha256:cf1d0704f9fde00c3446cdd3e25f9ac97d93f13b41d9100b830b1295460494cd`  
+		Last Modified: Sat, 11 Jan 2025 02:22:34 GMT  
+		Size: 1.3 KB (1271 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a808093a9ed6e055ac92feb167306809943605c7442950f051b0c92fdfb4328`  
-		Last Modified: Wed, 25 Dec 2024 10:33:06 GMT  
-		Size: 1.5 KB (1451 bytes)  
+	-	`sha256:e68be15d2c25343ba9159b124f54086527b88d45ef8d641539a8a63c6996b81c`  
+		Last Modified: Sat, 11 Jan 2025 02:22:34 GMT  
+		Size: 1.5 KB (1456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:php8` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:b18e6a2bae39075c0ddb0820d06b580aca375165adb88132269a3bc4353996af
+$ docker pull unit@sha256:05e9aa7bffd30a062fda06097107bdfac0517f7149128b31f91ce58414c60a5d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.6 KB (26565 bytes)**  
+-	Total Size: **30.2 KB (30157 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:299aac69c8bce359bd58763b8198cce26ef4a607ebfaa14365d007769ad637b3`
+-	Image ID: `sha256:348c41e7d2daaff400dfd2767851496eec327319b89e2dafc2657bd19d92ffbe`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7fca54f7293f95db9416fd5700786c9ad61e53370f5a98faf8470f3d2ae12a85`  
-		Last Modified: Wed, 25 Dec 2024 10:33:06 GMT  
-		Size: 26.6 KB (26565 bytes)  
+	-	`sha256:d65aa9251b36532679c8f290705a720a33b12c6b5bd7a1743675018de0085dcb`  
+		Last Modified: Sat, 11 Jan 2025 02:22:34 GMT  
+		Size: 30.2 KB (30157 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:php8.3`
 
 ```console
-$ docker pull unit@sha256:b08b405bbe4d8ac8f815f0547c9f0eb36d51c9435a265eeae5aaf217d0d76d17
+$ docker pull unit@sha256:bad4c56e65ea66319f8155abd61856e915316ad482f6e397a48108d0b6bfd464
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4787,84 +5972,84 @@ $ docker pull unit@sha256:8a2c93048c359a8716048ecf5a62fce8400368a1b6b74b37aef88f
 ### `unit:php8.3` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:c4369a83ec772b654ab3b3abbba351209d6f21a64dce8209da7ad4801f3f98f3
+$ docker pull unit@sha256:d88d7da3344165928bbf778d63c1c079c1a03651be0a496454eff18d6b6eb054
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **181.3 MB (181279934 bytes)**  
+-	Total Size: **195.3 MB (195307297 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:327386f05ede4ef88daef9c634da6522c80fa73561c4d57c549ee94c3cc1c54c`
+-	Image ID: `sha256:35d32349544fd8fbea686b2300bfdb69af8ec8b9b00006cb09a9b203db6a8992`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV PHP_VERSION=8.3.15
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.15.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.15.tar.xz.asc
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENV PHP_SHA256=3df5d45637283f759eef8fc3ce03de829ded3e200c3da278936a684955d2f94f
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 CMD ["php" "-a"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.title=Unit (php8.3)
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Tue, 17 Sep 2024 21:10:58 GMT
-LABEL org.opencontainers.image.version=1.33.0
-# Tue, 17 Sep 2024 21:10:58 GMT
-RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.33.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure php     && make -j $NCPU php-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure php     && make -j $NCPU php-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && ldconfig     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure php     && make -j $NCPU php-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure php     && make -j $NCPU php-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && ldconfig     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 COPY welcome.* /usr/share/unit/welcome/ # buildkit
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 STOPSIGNAL SIGTERM
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 EXPOSE map[80/tcp:{}]
-# Tue, 17 Sep 2024 21:10:58 GMT
+# Thu, 19 Dec 2024 18:23:57 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -4905,42 +6090,203 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 24 Dec 2024 23:34:51 GMT  
 		Size: 245.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d67e5c5fd9a2efd6f6781d9ebe8c8ae4af083949607177c1b4a425c33f8c406`  
-		Last Modified: Wed, 25 Dec 2024 10:33:07 GMT  
-		Size: 6.8 MB (6796843 bytes)  
+	-	`sha256:0dcfcaabaa4f6db24b406c962b56eb1c0cb48ea7cc4b99f141714aabb70f0c49`  
+		Last Modified: Sat, 11 Jan 2025 02:25:23 GMT  
+		Size: 20.8 MB (20824198 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5dfa401be8877be8b948be88b0d2ce6569aaf8d20e9c8ad61783455a63dcbaa9`  
-		Last Modified: Wed, 25 Dec 2024 10:33:06 GMT  
-		Size: 1.3 KB (1268 bytes)  
+	-	`sha256:322c16573c8090a7084bf4fb7d1bc3a883a129526a7a7e21c28de5ce151f10b9`  
+		Last Modified: Sat, 11 Jan 2025 02:25:22 GMT  
+		Size: 1.3 KB (1272 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a808093a9ed6e055ac92feb167306809943605c7442950f051b0c92fdfb4328`  
-		Last Modified: Wed, 25 Dec 2024 10:33:06 GMT  
-		Size: 1.5 KB (1451 bytes)  
+	-	`sha256:48c1609b7d3ac954be7b7a7cb1eca37dcff8ad3652a792eb337629f838a7a334`  
+		Last Modified: Sat, 11 Jan 2025 02:25:22 GMT  
+		Size: 1.5 KB (1455 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:php8.3` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:b18e6a2bae39075c0ddb0820d06b580aca375165adb88132269a3bc4353996af
+$ docker pull unit@sha256:d18b2402845e997ed876e9a2028598fcd57b929c7115f4d946b9e38c14686890
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **26.6 KB (26565 bytes)**  
+-	Total Size: **29.6 KB (29558 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:299aac69c8bce359bd58763b8198cce26ef4a607ebfaa14365d007769ad637b3`
+-	Image ID: `sha256:922f8648c4f2c5a6fb6d1be0aa506fe72e002b8b08e8ba3692d2fdb7bb3c23d4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7fca54f7293f95db9416fd5700786c9ad61e53370f5a98faf8470f3d2ae12a85`  
-		Last Modified: Wed, 25 Dec 2024 10:33:06 GMT  
-		Size: 26.6 KB (26565 bytes)  
+	-	`sha256:921c32e458da357cba5b534349fd2c3e02bf8b57b57f0cd4e32bbc6d190a2c5d`  
+		Last Modified: Sat, 11 Jan 2025 02:25:22 GMT  
+		Size: 29.6 KB (29558 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `unit:php8.4`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:a4ef883a38b001725a20f55023a91c90039569a26cac365397e356fd4cd4feb5
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 2
+	-	linux; arm64 variant v8
+	-	unknown; unknown
+
+### `unit:php8.4` - linux; arm64 variant v8
+
+```console
+$ docker pull unit@sha256:392abbfa371988fbbd41cf3bb7c184dd3a63bf9c2abbd0ef3a468a72cafd78dc
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **200.6 MB (200631172 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:537212fe7ab27a48a8e99eb64cd2ba325df01795e84065eb9049b60f3aa16045`
+-	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
+-	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
+
+```dockerfile
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_INI_DIR=/usr/local/etc/php
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_LDFLAGS=-Wl,-O1 -pie
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_VERSION=8.4.2
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_URL=https://www.php.net/distributions/php-8.4.2.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.4.2.tar.xz.asc
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENV PHP_SHA256=92636453210f7f2174d6ee6df17a5811368f556a6c2c2cbcf019321e36456e01
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY docker-php-source /usr/local/bin/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--enable-phpdbg 		--enable-phpdbg-readline 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--enable-embed 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN docker-php-ext-enable sodium # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENTRYPOINT ["docker-php-entrypoint"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+CMD ["php" "-a"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.title=Unit (php8.4)
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.description=Official build of Unit for Docker.
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.url=https://unit.nginx.org
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.source=https://github.com/nginx/unit
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
+# Thu, 19 Dec 2024 18:23:57 GMT
+LABEL org.opencontainers.image.version=1.34.0
+# Thu, 19 Dec 2024 18:23:57 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure php     && make -j $NCPU php-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure php     && make -j $NCPU php-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && ldconfig     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+COPY welcome.* /usr/share/unit/welcome/ # buildkit
+# Thu, 19 Dec 2024 18:23:57 GMT
+STOPSIGNAL SIGTERM
+# Thu, 19 Dec 2024 18:23:57 GMT
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+# Thu, 19 Dec 2024 18:23:57 GMT
+EXPOSE map[80/tcp:{}]
+# Thu, 19 Dec 2024 18:23:57 GMT
+CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
+```
+
+-	Layers:
+	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
+		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
+		Size: 28.1 MB (28058723 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f6de54321d531850ff87c6246d4017603a5b45913b21b1ac9fec3f05fbfef635`  
+		Last Modified: Tue, 24 Dec 2024 23:07:21 GMT  
+		Size: 224.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a3bdf08462934214f25431962b05d5cacd6c3f869869f8db5363e56c95c2bc31`  
+		Last Modified: Tue, 24 Dec 2024 23:07:23 GMT  
+		Size: 97.9 MB (97936231 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f9687803207cdc9b6efb7871b95e27621a8a6b095ab542b254f0ecc6d9f697b`  
+		Last Modified: Tue, 24 Dec 2024 23:07:21 GMT  
+		Size: 225.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b9f53a9ba108d0b9e18fa23664c2d5a17f4bbf402acecc3a7248ac7178d2fe87`  
+		Last Modified: Tue, 24 Dec 2024 23:07:22 GMT  
+		Size: 13.7 MB (13668428 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ff8f45fa647a472e184757b77acf9d491a4fa1430582c5d780e12d4a9433cf62`  
+		Last Modified: Tue, 24 Dec 2024 23:07:21 GMT  
+		Size: 487.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:62fd8ef07bf83a98c063d3a6529e1839593698eb5c75f096cd45f48d2d1b4d34`  
+		Last Modified: Tue, 24 Dec 2024 23:07:23 GMT  
+		Size: 40.1 MB (40134642 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fa5f578e5237bdf2a59c1c3bc8715e2ba5703a40437f445e799fbecf9524e402`  
+		Last Modified: Tue, 24 Dec 2024 23:07:22 GMT  
+		Size: 2.4 KB (2444 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:02da7d5a4057d390769f6f26e58a3bf539a6128bd5dc8484190b77a5b569644b`  
+		Last Modified: Tue, 24 Dec 2024 23:07:23 GMT  
+		Size: 245.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fa1877dea297f27dcd0db3881b439955df9147cf769bceb53bda4f6b4a93f856`  
+		Last Modified: Sat, 11 Jan 2025 02:22:35 GMT  
+		Size: 20.8 MB (20826796 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:cf1d0704f9fde00c3446cdd3e25f9ac97d93f13b41d9100b830b1295460494cd`  
+		Last Modified: Sat, 11 Jan 2025 02:22:34 GMT  
+		Size: 1.3 KB (1271 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e68be15d2c25343ba9159b124f54086527b88d45ef8d641539a8a63c6996b81c`  
+		Last Modified: Sat, 11 Jan 2025 02:22:34 GMT  
+		Size: 1.5 KB (1456 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `unit:php8.4` - unknown; unknown
+
+```console
+$ docker pull unit@sha256:05e9aa7bffd30a062fda06097107bdfac0517f7149128b31f91ce58414c60a5d
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **30.2 KB (30157 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:348c41e7d2daaff400dfd2767851496eec327319b89e2dafc2657bd19d92ffbe`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:d65aa9251b36532679c8f290705a720a33b12c6b5bd7a1743675018de0085dcb`  
+		Last Modified: Sat, 11 Jan 2025 02:22:34 GMT  
+		Size: 30.2 KB (30157 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ## `unit:python`
 
@@ -6498,11 +7844,21 @@ $ docker pull unit@sha256:693e18213408f0af37ba7bab90df42176a0bce696012ca9bc297d0
 
 ## `unit:python3.13`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:python3.13-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull unit@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `unit:ruby`
 
