@@ -207,10 +207,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris bind9=1:9.18.28-0ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28-0ubuntu0.20.04.1.dsc' bind9_9.18.28-0ubuntu0.20.04.1.dsc 3181 SHA512:eccd6c8a6efed4a4b876a28478b702c6c7bd468bda2f2a114e7cdd8b9f1889182bd40b944edc28bd9986800c813d8b9799f191b6558e554a6f08fc57958a9a53
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28.orig.tar.xz' bind9_9.18.28.orig.tar.xz 5533340 SHA512:19ba625f155c60dd821e3afe52adf3897b3e81289320282b3f43d604af1e7d4e67fafb98a9849782684935008bcd148f190e05234d501aa056daa6724e0119bb
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28.orig.tar.xz.asc' bind9_9.18.28.orig.tar.xz.asc 833 SHA512:e6efe2a9995cabd70c1d2e8e4cb97a9a146e3289d75cfdc81ff8052329db3dd920b9f8f6ad0f1552a0e4e776b01fb077edd5f3d4ea3461952f71dda64574d640
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28-0ubuntu0.20.04.1.debian.tar.xz' bind9_9.18.28-0ubuntu0.20.04.1.debian.tar.xz 85136 SHA512:8a45e3ad74c9b78ca6ac15e4b6f6f3c3379dae123ed2f318884b67a30f335b4aa49a35c00d0c8434fa5a3e3d4231f8ad06d46441047c30cb9935af6c54bc4fae
+'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28-0ubuntu0.20.04.1.dsc' bind9_9.18.28-0ubuntu0.20.04.1.dsc 3181 SHA512:eccd6c8a6efed4a4b876a28478b702c6c7bd468bda2f2a114e7cdd8b9f1889182bd40b944edc28bd9986800c813d8b9799f191b6558e554a6f08fc57958a9a53
+'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28.orig.tar.xz' bind9_9.18.28.orig.tar.xz 5533340 SHA512:19ba625f155c60dd821e3afe52adf3897b3e81289320282b3f43d604af1e7d4e67fafb98a9849782684935008bcd148f190e05234d501aa056daa6724e0119bb
+'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28.orig.tar.xz.asc' bind9_9.18.28.orig.tar.xz.asc 833 SHA512:e6efe2a9995cabd70c1d2e8e4cb97a9a146e3289d75cfdc81ff8052329db3dd920b9f8f6ad0f1552a0e4e776b01fb077edd5f3d4ea3461952f71dda64574d640
+'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28-0ubuntu0.20.04.1.debian.tar.xz' bind9_9.18.28-0ubuntu0.20.04.1.debian.tar.xz 85136 SHA512:8a45e3ad74c9b78ca6ac15e4b6f6f3c3379dae123ed2f318884b67a30f335b4aa49a35c00d0c8434fa5a3e3d4231f8ad06d46441047c30cb9935af6c54bc4fae
 ```
 
 ### `dpkg` source package: `brotli=1.0.7-6ubuntu0.1`

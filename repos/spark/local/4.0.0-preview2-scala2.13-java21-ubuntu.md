@@ -207,10 +207,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris bind9=1:9.18.28-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28-0ubuntu0.22.04.1.dsc' bind9_9.18.28-0ubuntu0.22.04.1.dsc 3292 SHA512:2a452df1d8a66f4ac0a06d91403111a318071cfb43884fe80a8b95c4292ef8c48435e9ad05a5c0621ed47ecc36fa227589301e3c1f8d17e0cc420ecc35e33b87
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28.orig.tar.xz' bind9_9.18.28.orig.tar.xz 5533340 SHA512:19ba625f155c60dd821e3afe52adf3897b3e81289320282b3f43d604af1e7d4e67fafb98a9849782684935008bcd148f190e05234d501aa056daa6724e0119bb
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28.orig.tar.xz.asc' bind9_9.18.28.orig.tar.xz.asc 833 SHA512:e6efe2a9995cabd70c1d2e8e4cb97a9a146e3289d75cfdc81ff8052329db3dd920b9f8f6ad0f1552a0e4e776b01fb077edd5f3d4ea3461952f71dda64574d640
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28-0ubuntu0.22.04.1.debian.tar.xz' bind9_9.18.28-0ubuntu0.22.04.1.debian.tar.xz 92720 SHA512:b2fc0cc7f6c77caf360d8762b04aa5bcc454d1f20cd5aa2e054997a03fd8ed5c4deaf1b67dc929e38f081d57667d88e51941d85a7e3518d76c99324b586cdd8c
+'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28-0ubuntu0.22.04.1.dsc' bind9_9.18.28-0ubuntu0.22.04.1.dsc 3292 SHA512:2a452df1d8a66f4ac0a06d91403111a318071cfb43884fe80a8b95c4292ef8c48435e9ad05a5c0621ed47ecc36fa227589301e3c1f8d17e0cc420ecc35e33b87
+'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28.orig.tar.xz' bind9_9.18.28.orig.tar.xz 5533340 SHA512:19ba625f155c60dd821e3afe52adf3897b3e81289320282b3f43d604af1e7d4e67fafb98a9849782684935008bcd148f190e05234d501aa056daa6724e0119bb
+'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28.orig.tar.xz.asc' bind9_9.18.28.orig.tar.xz.asc 833 SHA512:e6efe2a9995cabd70c1d2e8e4cb97a9a146e3289d75cfdc81ff8052329db3dd920b9f8f6ad0f1552a0e4e776b01fb077edd5f3d4ea3461952f71dda64574d640
+'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28-0ubuntu0.22.04.1.debian.tar.xz' bind9_9.18.28-0ubuntu0.22.04.1.debian.tar.xz 92720 SHA512:b2fc0cc7f6c77caf360d8762b04aa5bcc454d1f20cd5aa2e054997a03fd8ed5c4deaf1b67dc929e38f081d57667d88e51941d85a7e3518d76c99324b586cdd8c
 ```
 
 ### `dpkg` source package: `binutils=2.38-4ubuntu2.6`
