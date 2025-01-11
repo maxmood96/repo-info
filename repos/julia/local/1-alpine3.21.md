@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8aede10c17a3e713881506dee5d6f8f3320bf026a988cfa65c96c36e88e0982d`
+- Image ID: `sha256:8c8aa12b2f61512eb496edf0163cc5d53f90e4cf2815f543db14b5cecc92404a`
 - Created: `2024-12-13T00:46:18Z`
 - Virtual Size: ~ 1.04 Gb  
   (total size of all layers on-disk)
@@ -71,16 +71,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.1-r0 description:
+alpine-release-3.21.2-r0 description:
 Alpine release data
 
-alpine-release-3.21.1-r0 webpage:
+alpine-release-3.21.2-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.1-r0 installed size:
+alpine-release-3.21.2-r0 installed size:
 346 B
 
-alpine-release-3.21.1-r0 license:
+alpine-release-3.21.2-r0 license:
 MIT
 
 ```
@@ -139,16 +139,16 @@ GPL-2.0-only
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
-ca-certificates-bundle-20241121-r0 description:
+ca-certificates-bundle-20241121-r1 description:
 Pre generated bundle of Mozilla certificates
 
-ca-certificates-bundle-20241121-r0 webpage:
+ca-certificates-bundle-20241121-r1 webpage:
 https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
 
-ca-certificates-bundle-20241121-r0 installed size:
-204 KiB
+ca-certificates-bundle-20241121-r1 installed size:
+217 KiB
 
-ca-certificates-bundle-20241121-r0 license:
+ca-certificates-bundle-20241121-r1 license:
 MPL-2.0 AND MIT
 
 ```
