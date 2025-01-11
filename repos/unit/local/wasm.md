@@ -1,10 +1,10 @@
-# `unit:1.33.0-wasm`
+# `unit:1.34.0-wasm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:29205f4830b6b1748e83a17d6dafd140948aa91f515b04a14104254a0443c13b`
-- Created: `2024-09-17T21:10:58Z`
-- Virtual Size: ~ 145.86 Mb  
+- Image ID: `sha256:fd1056ed80fb1046a47e50c03d857c47e6c87e96b04c55473385248ba09a7837`
+- Created: `2024-12-19T18:23:57Z`
+- Virtual Size: ~ 187.92 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `org.opencontainers.image.title=Unit (wasm)`
   - `org.opencontainers.image.url=https://unit.nginx.org`
   - `org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>`
-  - `org.opencontainers.image.version=1.33.0`
+  - `org.opencontainers.image.version=1.34.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -171,19 +171,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12.4+deb12u8
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u8.dsc' base-files_12.4+deb12u8.dsc 1133 SHA256:b3e66f1e91dc6b267e4dd2b107bef81584c548dc6c5143f822f0b01847249fb5
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u8.tar.xz' base-files_12.4+deb12u8.tar.xz 66152 SHA256:81d76673876c399ea89789e6867830eb6a7b4c91270eebe1d297ef6f9875f847
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/12.4+deb12u8/
 
-- https://sources.debian.net/src/base-files/12.4+deb12u8/ (for browsing the source)
-- https://sources.debian.net/src/base-files/12.4+deb12u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/12.4+deb12u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.1`
 
@@ -2075,20 +2069,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=252.31-1~deb12u1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.31-1%7edeb12u1.dsc' systemd_252.31-1~deb12u1.dsc 6617 SHA256:f1759fad1471788fa382f461c1865185fd89e29dc5c94ca1cc73c61a79ccfafb
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.31.orig.tar.gz' systemd_252.31.orig.tar.gz 12158516 SHA256:a4ad028436e8569befb46fb5d955ad6caf79efc93e420be1eecfed2b8e684387
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.31-1%7edeb12u1.debian.tar.xz' systemd_252.31-1~deb12u1.debian.tar.xz 171340 SHA256:28ce1c1cabf443ad3a5f6515c7086b600cfa872aa37b98ef33d3ccafe554ba41
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/252.31-1~deb12u1/
 
-- https://sources.debian.net/src/systemd/252.31-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/252.31-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/252.31-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.06-4`
 
@@ -2233,20 +2220,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.38.1-5+deb12u2
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u2.dsc' util-linux_2.38.1-5+deb12u2.dsc 4579 SHA256:114eccef186d9ce6bda28fd23e5be122b934de871b2f51069e69215b0d3ae5e3
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1.orig.tar.xz' util-linux_2.38.1.orig.tar.xz 7495904 SHA256:60492a19b44e6cf9a3ddff68325b333b8b52b6c59ce3ebd6a0ecaa4c5117e84f
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u2.debian.tar.xz' util-linux_2.38.1-5+deb12u2.debian.tar.xz 119524 SHA256:b3755c718da50574f5045d9725d48a2dd3ea3bbd837a66cd294777c27a1713db
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.38.1-5+deb12u2/
 
-- https://sources.debian.net/src/util-linux/2.38.1-5+deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.38.1-5+deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.38.1-5+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xxhash=0.8.1-1`
 

@@ -1,28 +1,27 @@
-# `unit:1.33.0-python3.12-slim`
+# `unit:1.34.0-python3.13-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4cac80897c709d0b0fa1b78f3e7acd1f9680a0270aad0093e60438a86e8987ba`
-- Created: `2024-09-17T21:10:58Z`
-- Virtual Size: ~ 142.84 Mb  
+- Image ID: `sha256:ea8734efcbe3e776d843cd4e1af51d9566c1a9da461b2f2b594b0f0899837b2a`
+- Created: `2024-12-19T18:23:57Z`
+- Virtual Size: ~ 182.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
 - Command: `["unitd","--no-daemon","--control","unix:/var/run/control.unit.sock"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `LANG=C.UTF-8`
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
-  - `PYTHON_VERSION=3.12.8`
-  - `PYTHON_SHA256=c909157bb25ec114e5869124cc2a9c4a4d4c1e957ca4ff553f1edc692101154e`
+  - `PYTHON_VERSION=3.13.1`
+  - `PYTHON_SHA256=9cf9427bee9e2242e3877dd0f6b641c1853ca461f39d6503ce260a59c80bf0d9`
 - Labels:
   - `org.opencontainers.image.description=Official build of Unit for Docker.`
   - `org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images`
   - `org.opencontainers.image.source=https://github.com/nginx/unit`
-  - `org.opencontainers.image.title=Unit (python3.12-slim)`
+  - `org.opencontainers.image.title=Unit (python3.13-slim)`
   - `org.opencontainers.image.url=https://unit.nginx.org`
   - `org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>`
-  - `org.opencontainers.image.version=1.33.0`
+  - `org.opencontainers.image.version=1.34.0`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -175,19 +174,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12.4+deb12u8
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u8.dsc' base-files_12.4+deb12u8.dsc 1133 SHA256:b3e66f1e91dc6b267e4dd2b107bef81584c548dc6c5143f822f0b01847249fb5
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u8.tar.xz' base-files_12.4+deb12u8.tar.xz 66152 SHA256:81d76673876c399ea89789e6867830eb6a7b4c91270eebe1d297ef6f9875f847
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/12.4+deb12u8/
 
-- https://sources.debian.net/src/base-files/12.4+deb12u8/ (for browsing the source)
-- https://sources.debian.net/src/base-files/12.4+deb12u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/12.4+deb12u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.1`
 
@@ -1336,44 +1329,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libmd/1.0.4-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libmd/1.0.4-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libnsl=1.3.0-2`
-
-Binary Packages:
-
-- `libnsl2:amd64=1.3.0-2`
-
-Licenses: (parsed from: `/usr/share/doc/libnsl2/copyright`)
-
-- `BSD-3-clause`
-- `GPL-2`
-- `GPL-2+-autoconf-exception`
-- `GPL-2+-libtool-exception`
-- `GPL-3`
-- `GPL-3+-autoconf-exception`
-- `LGPL-2.1`
-- `LGPL-2.1+`
-- `MIT`
-- `permissive-autoconf-m4`
-- `permissive-autoconf-m4-no-warranty`
-- `permissive-configure`
-- `permissive-fsf`
-- `permissive-makefile-in`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libnsl=1.3.0-2
-'http://deb.debian.org/debian/pool/main/libn/libnsl/libnsl_1.3.0-2.dsc' libnsl_1.3.0-2.dsc 1955 SHA256:1da570eed6693c774cce51f3c33f989d1aa4bf1dcb8660818d8a834a1a3728ef
-'http://deb.debian.org/debian/pool/main/libn/libnsl/libnsl_1.3.0.orig.tar.xz' libnsl_1.3.0.orig.tar.xz 321488 SHA256:eac3062957fa302c62eff4aed718a07bacbf9ceb0a058289f12a19bfdda3c8e2
-'http://deb.debian.org/debian/pool/main/libn/libnsl/libnsl_1.3.0-2.debian.tar.xz' libnsl_1.3.0-2.debian.tar.xz 4692 SHA256:7f8dccc706931b9e206448ffb475487a4a0abaded27cf611d418f4a34415dca7
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libnsl/1.3.0-2/ (for browsing the source)
-- https://sources.debian.net/src/libnsl/1.3.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libnsl/1.3.0-2/ (for access to the source package after it no longer exists in the archive)
-
 ### `dpkg` source package: `libpsl=0.21.2-1`
 
 Binary Packages:
@@ -1566,39 +1521,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libtasn1-6/4.19.0-2/ (for browsing the source)
 - https://sources.debian.net/src/libtasn1-6/4.19.0-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libtasn1-6/4.19.0-2/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `libtirpc=1.3.3+ds-1`
-
-Binary Packages:
-
-- `libtirpc-common=1.3.3+ds-1`
-- `libtirpc3:amd64=1.3.3+ds-1`
-
-Licenses: (parsed from: `/usr/share/doc/libtirpc-common/copyright`, `/usr/share/doc/libtirpc3/copyright`)
-
-- `BSD-2-Clause`
-- `BSD-3-Clause`
-- `BSD-4-Clause`
-- `GPL-2`
-- `LGPL-2.1`
-- `LGPL-2.1+`
-- `PERMISSIVE`
-- `__AUTO_PERMISSIVE__`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris libtirpc=1.3.3+ds-1
-'http://deb.debian.org/debian/pool/main/libt/libtirpc/libtirpc_1.3.3%2bds-1.dsc' libtirpc_1.3.3+ds-1.dsc 2129 SHA256:c05c5d76027d4162d5a29d73eef90076559bde0fa5133b2e0045d82155e1b2af
-'http://deb.debian.org/debian/pool/main/libt/libtirpc/libtirpc_1.3.3%2bds.orig.tar.gz' libtirpc_1.3.3+ds.orig.tar.gz 699030 SHA256:facd98473c3a16fe6564c6458ef96ebb84d144345d1171f034fa019424bba027
-'http://deb.debian.org/debian/pool/main/libt/libtirpc/libtirpc_1.3.3%2bds-1.debian.tar.xz' libtirpc_1.3.3+ds-1.debian.tar.xz 11232 SHA256:fd1865c49e905951a641082981c1dab7f018caea1a5e23af1791728a3320800e
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/libtirpc/1.3.3+ds-1/ (for browsing the source)
-- https://sources.debian.net/src/libtirpc/1.3.3+ds-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtirpc/1.3.3+ds-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libunistring=1.0-2`
 
@@ -2265,20 +2187,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=252.31-1~deb12u1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.31-1%7edeb12u1.dsc' systemd_252.31-1~deb12u1.dsc 6617 SHA256:f1759fad1471788fa382f461c1865185fd89e29dc5c94ca1cc73c61a79ccfafb
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.31.orig.tar.gz' systemd_252.31.orig.tar.gz 12158516 SHA256:a4ad028436e8569befb46fb5d955ad6caf79efc93e420be1eecfed2b8e684387
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.31-1%7edeb12u1.debian.tar.xz' systemd_252.31-1~deb12u1.debian.tar.xz 171340 SHA256:28ce1c1cabf443ad3a5f6515c7086b600cfa872aa37b98ef33d3ccafe554ba41
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/252.31-1~deb12u1/
 
-- https://sources.debian.net/src/systemd/252.31-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/252.31-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/252.31-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.06-4`
 
@@ -2423,20 +2338,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.38.1-5+deb12u2
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u2.dsc' util-linux_2.38.1-5+deb12u2.dsc 4579 SHA256:114eccef186d9ce6bda28fd23e5be122b934de871b2f51069e69215b0d3ae5e3
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1.orig.tar.xz' util-linux_2.38.1.orig.tar.xz 7495904 SHA256:60492a19b44e6cf9a3ddff68325b333b8b52b6c59ce3ebd6a0ecaa4c5117e84f
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u2.debian.tar.xz' util-linux_2.38.1-5+deb12u2.debian.tar.xz 119524 SHA256:b3755c718da50574f5045d9725d48a2dd3ea3bbd837a66cd294777c27a1713db
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.38.1-5+deb12u2/
 
-- https://sources.debian.net/src/util-linux/2.38.1-5+deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.38.1-5+deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.38.1-5+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xxhash=0.8.1-1`
 
