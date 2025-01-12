@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:59ff5b38dead634a5c22887e3ccc94ca7607bfeb0845ec9d229906a0c58ba263`
+- Image ID: `sha256:6c04841c8f36ad2ccfdc841edc30cadf707b88a6c688a61c3b771de472fab8f4`
 - Created: `2024-11-21T21:43:46Z`
 - Virtual Size: ~ 465.58 Mb  
   (total size of all layers on-disk)
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=11.6.2`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2024-12-18T04:52:16Z`
+  - `build-date=2025-01-09T06:29:15Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=MariaDB Database for relational SQL`
@@ -41,7 +41,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://www.redhat.com`
-  - `vcs-ref=0724d65b854a0151fb7d10b0e6510d8aee28e115`
+  - `vcs-ref=98c9e4c67f5f2dfc85d12e0f1fd70b809f2a3132`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=11.6.2`
@@ -274,7 +274,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-9.el9.noarch
-https://mirror-mci.yuki.net.uk/fedora-epel/9/Everything/source/tree/Packages/e/epel-release-9-9.el9.src.rpm
+rsync://mirror.us.mirhosting.net/epel/9/Everything/source/tree/Packages/e/epel-release-9-9.el9.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
@@ -524,7 +524,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-https://mirror-mci.yuki.net.uk/fedora-epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+rsync://mirror.us.mirhosting.net/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -2097,7 +2097,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-https://mirror-mci.yuki.net.uk/fedora-epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+rsync://mirror.us.mirhosting.net/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2108,7 +2108,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-https://mirror-mci.yuki.net.uk/fedora-epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+rsync://mirror.us.mirhosting.net/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
