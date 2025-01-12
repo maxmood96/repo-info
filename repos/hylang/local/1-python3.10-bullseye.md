@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a4ef1ccd19a530cf4b8681c3919e512ef70c26129454858e904671caa527baeb`
-- Created: `2024-12-11T00:16:44Z`
+- Image ID: `sha256:15ac936d69ad28220ce4622f6db5bdb82e3d449f9989892fdd76173e7b2f254f`
+- Created: `2025-01-08T17:56:16Z`
 - Virtual Size: ~ 134.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -15,7 +15,7 @@
   - `PYTHON_VERSION=3.10.16`
   - `PYTHON_SHA256=bfb249609990220491a1b92850a07135ed0831e41738cf681d63cf01b2a8fbd1`
   - `HY_VERSION=1.0.0`
-  - `HYRULE_VERSION=0.7.0`
+  - `HYRULE_VERSION=0.8.0`
 
 ## `dpkg` (`.deb`-based packages)
 
