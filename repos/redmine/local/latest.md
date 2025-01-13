@@ -263,20 +263,13 @@ Licenses: (parsed from: `/usr/share/doc/libavahi-client3/copyright`, `/usr/share
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris avahi=0.8-10
-'http://deb.debian.org/debian/pool/main/a/avahi/avahi_0.8-10.dsc' avahi_0.8-10.dsc 3901 SHA256:41fb69131632dc37c480260fff8de556c226ded22c26cb5e4a04b0762b55fead
-'http://deb.debian.org/debian/pool/main/a/avahi/avahi_0.8.orig.tar.gz' avahi_0.8.orig.tar.gz 1591458 SHA256:060309d7a333d38d951bc27598c677af1796934dbd98e1024e7ad8de798fedda
-'http://deb.debian.org/debian/pool/main/a/avahi/avahi_0.8-10.debian.tar.xz' avahi_0.8-10.debian.tar.xz 38136 SHA256:fdb83a68eae0d59d37ded3bc05350ff92d9dc0b6d312493b159af3025dd5520b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/avahi/0.8-10/
 
-- https://sources.debian.net/src/avahi/0.8-10/ (for browsing the source)
-- https://sources.debian.net/src/avahi/0.8-10/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/avahi/0.8-10/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-files=12.4+deb12u8`
 
@@ -288,19 +281,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=12.4+deb12u8
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u8.dsc' base-files_12.4+deb12u8.dsc 1133 SHA256:b3e66f1e91dc6b267e4dd2b107bef81584c548dc6c5143f822f0b01847249fb5
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u8.tar.xz' base-files_12.4+deb12u8.tar.xz 66152 SHA256:81d76673876c399ea89789e6867830eb6a7b4c91270eebe1d297ef6f9875f847
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/12.4+deb12u8/
 
-- https://sources.debian.net/src/base-files/12.4+deb12u8/ (for browsing the source)
-- https://sources.debian.net/src/base-files/12.4+deb12u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/12.4+deb12u8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.1`
 
@@ -1375,9 +1362,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ghostscript=10.0.0~dfsg-11+deb12u6
-'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u6.dsc' ghostscript_10.0.0~dfsg-11+deb12u6.dsc 3021 SHA256:5d41cc89cfde3a53d968d4ea0bc905a749527eef1f994174e99659a790f2fd3a
-'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg.orig.tar.xz' ghostscript_10.0.0~dfsg.orig.tar.xz 26688456 SHA256:67a288151fd88f0d44e165429c48cc85d69b3e4d3765c95e60839a094bfb8df3
-'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u6.debian.tar.xz' ghostscript_10.0.0~dfsg-11+deb12u6.debian.tar.xz 103152 SHA256:2b62a7ed32612ec854feac1cebb639e7f169231307b4e78d6d16d0f3d6e5c692
+'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u6.dsc' ghostscript_10.0.0~dfsg-11+deb12u6.dsc 3021 SHA256:5d41cc89cfde3a53d968d4ea0bc905a749527eef1f994174e99659a790f2fd3a
+'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg.orig.tar.xz' ghostscript_10.0.0~dfsg.orig.tar.xz 26688456 SHA256:67a288151fd88f0d44e165429c48cc85d69b3e4d3765c95e60839a094bfb8df3
+'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u6.debian.tar.xz' ghostscript_10.0.0~dfsg-11+deb12u6.debian.tar.xz 103152 SHA256:2b62a7ed32612ec854feac1cebb639e7f169231307b4e78d6d16d0f3d6e5c692
 ```
 
 Other potentially useful URLs:
@@ -1464,21 +1451,13 @@ Licenses: (parsed from: `/usr/share/doc/libglib2.0-0/copyright`)
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.74.6-2+deb12u4
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6-2%2bdeb12u4.dsc' glib2.0_2.74.6-2+deb12u4.dsc 3726 SHA256:5c4f0afb838a8f839a3b290a85660896ef869d99db51e3a38b2108b21e90fb34
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6.orig-unicode-data.tar.xz' glib2.0_2.74.6.orig-unicode-data.tar.xz 267596 SHA256:dabcaff9298aa111a94e580561d2f29371f3e61b356c925ec5e0792df2b11ff2
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6.orig.tar.xz' glib2.0_2.74.6.orig.tar.xz 5217312 SHA256:069cf7e51cd261eb163aaf06c8d1754c6835f31252180aff5814e5afc7757fbc
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.74.6-2%2bdeb12u4.debian.tar.xz' glib2.0_2.74.6-2+deb12u4.debian.tar.xz 139600 SHA256:8517df3732610893b9bddaa565815e5da6d5560a0bb89e3209dedc53ffde0d46
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.74.6-2+deb12u4/
 
-- https://sources.debian.net/src/glib2.0/2.74.6-2+deb12u4/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.74.6-2+deb12u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.74.6-2+deb12u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.36-9+deb12u9`
 
@@ -3756,9 +3735,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssh=1:9.2p1-2+deb12u3
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.2p1-2%2bdeb12u3.dsc' openssh_9.2p1-2+deb12u3.dsc 3140 SHA256:f68fe5773f4ae24cdfe9a365b0f6a9686dbb80460e5dceb423561ea24791fbaa
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.2p1.orig.tar.gz' openssh_9.2p1.orig.tar.gz 1852380 SHA256:3f66dbf1655fb45f50e1c56da62ab01218c228807b21338d634ebcdf9d71cf46
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.2p1-2%2bdeb12u3.debian.tar.xz' openssh_9.2p1-2+deb12u3.debian.tar.xz 191892 SHA256:564abbf851e86b66adb7d1b6eaac16059dc0cdec166d24bec14453515de6d616
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_9.2p1-2%2bdeb12u3.dsc' openssh_9.2p1-2+deb12u3.dsc 3140 SHA256:f68fe5773f4ae24cdfe9a365b0f6a9686dbb80460e5dceb423561ea24791fbaa
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_9.2p1.orig.tar.gz' openssh_9.2p1.orig.tar.gz 1852380 SHA256:3f66dbf1655fb45f50e1c56da62ab01218c228807b21338d634ebcdf9d71cf46
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_9.2p1-2%2bdeb12u3.debian.tar.xz' openssh_9.2p1-2+deb12u3.debian.tar.xz 191892 SHA256:564abbf851e86b66adb7d1b6eaac16059dc0cdec166d24bec14453515de6d616
 ```
 
 Other potentially useful URLs:
@@ -4034,9 +4013,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris postgresql-15=15.10-0+deb12u1
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.10-0%2bdeb12u1.dsc' postgresql-15_15.10-0+deb12u1.dsc 3926 SHA256:fb102e64f6be7a19c027b9763d491b151637b21b434cf559608ffb247ce78cc2
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.10.orig.tar.bz2' postgresql-15_15.10.orig.tar.bz2 23138615 SHA256:55abe738d441f0e58658b3ec6f88097a713b5e3b73139f6230d7b5c4c389e573
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-15/postgresql-15_15.10-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.10-0+deb12u1.debian.tar.xz 27280 SHA256:9c9815592b657827f1cbe40ae429df4e9a1380b1b88f5d05a3baf274a94abcdd
+'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.10-0%2bdeb12u1.dsc' postgresql-15_15.10-0+deb12u1.dsc 3926 SHA256:fb102e64f6be7a19c027b9763d491b151637b21b434cf559608ffb247ce78cc2
+'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.10.orig.tar.bz2' postgresql-15_15.10.orig.tar.bz2 23138615 SHA256:55abe738d441f0e58658b3ec6f88097a713b5e3b73139f6230d7b5c4c389e573
+'http://deb.debian.org/debian/pool/main/p/postgresql-15/postgresql-15_15.10-0%2bdeb12u1.debian.tar.xz' postgresql-15_15.10-0+deb12u1.debian.tar.xz 27280 SHA256:9c9815592b657827f1cbe40ae429df4e9a1380b1b88f5d05a3baf274a94abcdd
 ```
 
 Other potentially useful URLs:
@@ -4139,20 +4118,13 @@ Licenses: (parsed from: `/usr/share/doc/python3-urllib3/copyright`)
 - `Expat`
 - `PSF-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python-urllib3=1.26.12-1
-'http://deb.debian.org/debian/pool/main/p/python-urllib3/python-urllib3_1.26.12-1.dsc' python-urllib3_1.26.12-1.dsc 2337 SHA256:3e03e51560a0200cc1be080c0fbd87defe7d173c520e9584644e14d986523da4
-'http://deb.debian.org/debian/pool/main/p/python-urllib3/python-urllib3_1.26.12.orig.tar.gz' python-urllib3_1.26.12.orig.tar.gz 299806 SHA256:3fa96cf423e6987997fc326ae8df396db2a8b7c667747d47ddd8ecba91f4a74e
-'http://deb.debian.org/debian/pool/main/p/python-urllib3/python-urllib3_1.26.12-1.debian.tar.xz' python-urllib3_1.26.12-1.debian.tar.xz 12576 SHA256:7d917b25314dc0d8ded5cf5677badf5cb0a7cff4dd660dd98a07490f7ec02f81
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python-urllib3/1.26.12-1/
 
-- https://sources.debian.net/src/python-urllib3/1.26.12-1/ (for browsing the source)
-- https://sources.debian.net/src/python-urllib3/1.26.12-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python-urllib3/1.26.12-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.11.2-1`
 
@@ -4210,20 +4182,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.11/copyright`, `/usr/share/do
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.11=3.11.2-6+deb12u4
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.2-6%2bdeb12u4.dsc' python3.11_3.11.2-6+deb12u4.dsc 3038 SHA256:e8e7d82e32e667e9aac3c9b17f65fd7544faf0f68b115893c9983070ff92f33b
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.2.orig.tar.gz' python3.11_3.11.2.orig.tar.gz 26437858 SHA256:2411c74bda5bbcfcddaf4531f66d1adc73f247f529aee981b029513aefdbf849
-'http://deb.debian.org/debian/pool/main/p/python3.11/python3.11_3.11.2-6%2bdeb12u4.debian.tar.xz' python3.11_3.11.2-6+deb12u4.debian.tar.xz 234696 SHA256:4091c337a85742825c074f6111733eea0305c82b085fa57646dab5572f70f90f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.11/3.11.2-6+deb12u4/
 
-- https://sources.debian.net/src/python3.11/3.11.2-6+deb12u4/ (for browsing the source)
-- https://sources.debian.net/src/python3.11/3.11.2-6+deb12u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.11/3.11.2-6+deb12u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pyyaml=6.0-3`
 
@@ -4565,20 +4530,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=252.31-1~deb12u1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.31-1%7edeb12u1.dsc' systemd_252.31-1~deb12u1.dsc 6617 SHA256:f1759fad1471788fa382f461c1865185fd89e29dc5c94ca1cc73c61a79ccfafb
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.31.orig.tar.gz' systemd_252.31.orig.tar.gz 12158516 SHA256:a4ad028436e8569befb46fb5d955ad6caf79efc93e420be1eecfed2b8e684387
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.31-1%7edeb12u1.debian.tar.xz' systemd_252.31-1~deb12u1.debian.tar.xz 171340 SHA256:28ce1c1cabf443ad3a5f6515c7086b600cfa872aa37b98ef33d3ccafe554ba41
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/252.31-1~deb12u1/
 
-- https://sources.debian.net/src/systemd/252.31-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/252.31-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/252.31-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.06-4`
 
@@ -4654,9 +4612,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tiff=4.5.0-6+deb12u1
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.5.0-6%2bdeb12u1.dsc' tiff_4.5.0-6+deb12u1.dsc 1942 SHA256:3c184ea95bdd959f2a8d9da7a0cc7e73b5afb3f906ff086b05c9e4f953a4ded1
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.5.0.orig.tar.bz2' tiff_4.5.0.orig.tar.bz2 2050377 SHA256:638f43d7dea33948d5dee7f39572fc0194d9cc3c74195de9dd26a4388a1f880a
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.5.0-6%2bdeb12u1.debian.tar.xz' tiff_4.5.0-6+deb12u1.debian.tar.xz 28012 SHA256:d70ba897e15f135b7ed8cbc823490ca522c91ceff5e6a4c4274fc348219dcde0
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.5.0-6%2bdeb12u1.dsc' tiff_4.5.0-6+deb12u1.dsc 1942 SHA256:3c184ea95bdd959f2a8d9da7a0cc7e73b5afb3f906ff086b05c9e4f953a4ded1
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.5.0.orig.tar.bz2' tiff_4.5.0.orig.tar.bz2 2050377 SHA256:638f43d7dea33948d5dee7f39572fc0194d9cc3c74195de9dd26a4388a1f880a
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.5.0-6%2bdeb12u1.debian.tar.xz' tiff_4.5.0-6+deb12u1.debian.tar.xz 28012 SHA256:d70ba897e15f135b7ed8cbc823490ca522c91ceff5e6a4c4274fc348219dcde0
 ```
 
 Other potentially useful URLs:
@@ -4726,19 +4684,13 @@ Licenses: (parsed from: `/usr/share/doc/ucf/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ucf=3.0043+nmu1
-'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0043%2bnmu1.dsc' ucf_3.0043+nmu1.dsc 1567 SHA256:5ef70fa7a58cd3f162932661453a1e9d21d749b47a1aa84198f7c4cd9eac20ee
-'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0043%2bnmu1.tar.xz' ucf_3.0043+nmu1.tar.xz 70916 SHA256:a07143046236cb082517e346362306cb3fe4d3634cad1add40c905b0e0ecf58c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ucf/3.0043+nmu1/
 
-- https://sources.debian.net/src/ucf/3.0043+nmu1/ (for browsing the source)
-- https://sources.debian.net/src/ucf/3.0043+nmu1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ucf/3.0043+nmu1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `usrmerge=37~deb12u1`
 
@@ -4823,20 +4775,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.38.1-5+deb12u2
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u2.dsc' util-linux_2.38.1-5+deb12u2.dsc 4579 SHA256:114eccef186d9ce6bda28fd23e5be122b934de871b2f51069e69215b0d3ae5e3
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1.orig.tar.xz' util-linux_2.38.1.orig.tar.xz 7495904 SHA256:60492a19b44e6cf9a3ddff68325b333b8b52b6c59ce3ebd6a0ecaa4c5117e84f
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u2.debian.tar.xz' util-linux_2.38.1-5+deb12u2.debian.tar.xz 119524 SHA256:b3755c718da50574f5045d9725d48a2dd3ea3bbd837a66cd294777c27a1713db
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.38.1-5+deb12u2/
 
-- https://sources.debian.net/src/util-linux/2.38.1-5+deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.38.1-5+deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.38.1-5+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21.3-1`
 
