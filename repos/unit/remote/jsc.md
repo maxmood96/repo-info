@@ -1,7 +1,7 @@
 ## `unit:jsc`
 
 ```console
-$ docker pull unit@sha256:19a2b00e7970bf2575060c3ebf588e7f3be63e095d7b09d142780261cb1dc507
+$ docker pull unit@sha256:059474e8d4680408ad240c46b21ffff0091254c38499e74075b3437e324dff9b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -144,13 +144,13 @@ $ docker pull unit@sha256:e372d9950b9cf1fd1faaf15312b20f43df0d0832a3668592346166
 ### `unit:jsc` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:3bb60170a2a61c748e9067f26587b5bfad7d1590a8ccf536323ca28d958427b0
+$ docker pull unit@sha256:20b3dbb4eb6dffc59fa7e674629efd9bb7132eacfde73f89c289329dc53183a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **214.3 MB (214286325 bytes)**  
+-	Total Size: **214.3 MB (214308492 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b4ae17d0443e92f216747c82f1a06506d3a5773637367f342ccf3f540b74a90b`
+-	Image ID: `sha256:fe3491e8ec6257ba748c4dbd1f42d1cc6dad0e88fa4fce1ee19a9507f817c085`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -187,33 +187,33 @@ COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Wed, 23 Oct 2024 15:41:32 GMT
 CMD ["jshell"]
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 LABEL org.opencontainers.image.title=Unit (jsc11)
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Thu, 19 Dec 2024 18:23:57 GMT
-LABEL org.opencontainers.image.version=1.34.0
-# Thu, 19 Dec 2024 18:23:57 GMT
-RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && rm -rf /root/.m2     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
+LABEL org.opencontainers.image.version=1.34.1
+# Fri, 10 Jan 2025 21:01:46 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.1-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure java --jars=/usr/share/unit-jsc-common/     && make -j $NCPU java-shared-install java-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && rm -rf /root/.m2     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Fri, 10 Jan 2025 21:01:46 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 COPY welcome.* /usr/share/unit/welcome/ # buildkit
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 STOPSIGNAL SIGTERM
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 EXPOSE map[80/tcp:{}]
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -238,35 +238,35 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Thu, 24 Oct 2024 01:03:48 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19d8fc93110cd5ba0c8eb12527f6047ec48da069ab3b64f75133a9986fb851fc`  
-		Last Modified: Sat, 11 Jan 2025 02:11:19 GMT  
-		Size: 28.5 MB (28474038 bytes)  
+	-	`sha256:374140f5ba27178d76fd741e744dad92bfac5514bf78bb088d455fd460f239be`  
+		Last Modified: Mon, 13 Jan 2025 19:44:49 GMT  
+		Size: 28.5 MB (28496208 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:891256396cd72cb1d1722affa1016d2f6b2060922b52b60d7e56f9d66b40c247`  
-		Last Modified: Sat, 11 Jan 2025 02:11:18 GMT  
-		Size: 1.3 KB (1267 bytes)  
+	-	`sha256:9d23380aafab71e40a7c0c0497ac1c4775fcb9ba11bf80083d174a5cc3d42716`  
+		Last Modified: Mon, 13 Jan 2025 19:44:48 GMT  
+		Size: 1.3 KB (1264 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:418da8fa78dd92fe43ec422bb8936fe3674411f81a855ede01836f7bebbb99a8`  
-		Last Modified: Sat, 11 Jan 2025 02:11:19 GMT  
+	-	`sha256:4d5b33cb4136cddca61e6b538af8e6b9923e5d48980efc97f3b4ef825c51ec53`  
+		Last Modified: Mon, 13 Jan 2025 19:44:48 GMT  
 		Size: 1.5 KB (1456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:jsc` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:3b4d333b5af46951a04de9cfe531bf437035213694ad0d3973ef4d54fb949056
+$ docker pull unit@sha256:6d7c554e5997e954d1b2aaf65809b561b62a49625a864c7050aec2380dddf054
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **27.1 KB (27087 bytes)**  
+-	Total Size: **27.1 KB (27085 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c3f403f18e9cc2d84448a370bf8e1399d8f77060f56baef98e9cf1d8069564c`
+-	Image ID: `sha256:f67d66a5531507bde51f8864107deee99c512f13250035a23037dd30412073e9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d9590eadcb52ba00a3b92ccd1f05920797aa7c9fc27a5c4d4bcfb63f635d9ac2`  
-		Last Modified: Sat, 11 Jan 2025 02:11:18 GMT  
-		Size: 27.1 KB (27087 bytes)  
+	-	`sha256:54769d36351a10186b0d9f12f016731642c73ad1d008b50e26391ce1265697c9`  
+		Last Modified: Mon, 13 Jan 2025 19:44:48 GMT  
+		Size: 27.1 KB (27085 bytes)  
 		MIME: application/vnd.in-toto+json

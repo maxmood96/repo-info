@@ -1,7 +1,7 @@
 ## `unit:go1`
 
 ```console
-$ docker pull unit@sha256:21c7de43a5c237a38c3cd7dde2ea6361efe418904459f9633413faff447ab2ef
+$ docker pull unit@sha256:32fd0e2f4239975218d3615070d4c158869c22fb97812e38f422379b7c49f666
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull unit@sha256:21c7de43a5c237a38c3cd7dde2ea6361efe418904459f9633413fa
 ### `unit:go1` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:c4a9926952b641bc727a334898fdf0be7c53ea696776af2ef3f9f9d437fd1507
+$ docker pull unit@sha256:cac4bfe21538620b5491075a8e22ae7f30a926643323947385995c12c03028e5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **324.5 MB (324549469 bytes)**  
+-	Total Size: **324.6 MB (324559330 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:99b5538bb5359f4262a83e7ede6b769759c2bb51ef9a1078c1d73ce4a3d34535`
+-	Image ID: `sha256:f5eb310922aaad4948210818a6bf066d5e1fad4ad68a4199a9f1d78a7542a707`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -47,33 +47,33 @@ COPY /target/ / # buildkit
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
 # Tue, 03 Dec 2024 19:01:46 GMT
 WORKDIR /go
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 LABEL org.opencontainers.image.title=Unit (go1.23)
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Thu, 19 Dec 2024 18:23:57 GMT
-LABEL org.opencontainers.image.version=1.34.0
-# Thu, 19 Dec 2024 18:23:57 GMT
-RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
+LABEL org.opencontainers.image.version=1.34.1
+# Fri, 10 Jan 2025 21:01:46 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.1-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Fri, 10 Jan 2025 21:01:46 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 COPY welcome.* /usr/share/unit/welcome/ # buildkit
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 STOPSIGNAL SIGTERM
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 EXPOSE map[80/tcp:{}]
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -106,49 +106,49 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7ab77a614b10f69859196adf10368968fc4cc9aec74bed39f2f90ea1df8be014`  
-		Last Modified: Sat, 11 Jan 2025 01:32:42 GMT  
-		Size: 21.4 MB (21432701 bytes)  
+	-	`sha256:046359603efd0b2da8f2753b4d060906e130349b0d5cb184fb4c28811f434c93`  
+		Last Modified: Mon, 13 Jan 2025 19:32:05 GMT  
+		Size: 21.4 MB (21442569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:101bd5fbbd1fb4af33d3bf151afe7167778f6aa3126d8dbbbe9fdace8e6fd7a0`  
-		Last Modified: Sat, 11 Jan 2025 01:32:41 GMT  
-		Size: 1.3 KB (1265 bytes)  
+	-	`sha256:c9c745c9eac3f877e54173556adf40cd754152e5916c88ef5c534f638ded6349`  
+		Last Modified: Mon, 13 Jan 2025 19:32:01 GMT  
+		Size: 1.3 KB (1261 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:33ae1fc228c073158d1dc948a2c6f28f782c11b7b03e96ab6ae44d6a4bc30d0d`  
-		Last Modified: Sat, 11 Jan 2025 01:32:41 GMT  
-		Size: 1.5 KB (1457 bytes)  
+	-	`sha256:9ca15192db48b28f9747e30290d2d80d411464d8a809b98d6dd1879cf625b22f`  
+		Last Modified: Mon, 13 Jan 2025 19:32:01 GMT  
+		Size: 1.5 KB (1454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:go1` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:1e740d26215ad1f873ce8445ccd4b61a26ee26359053d56025ebe9754e874cfa
+$ docker pull unit@sha256:2a497b335bb1810050fc534f98fbcfb3a28be75727ee199746ed0dff0eeea36c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **28.4 KB (28362 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8c84825d44a45b0d5aacc9e10fc3a9eeffaf330a4bd770672761b2dfe654e1f1`
+-	Image ID: `sha256:203d06067f51598c92e4ce6cc83f2fdacc519bec989f723805cc7b906cc4720a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9cf36c12dca34edc3955bc074b3198b65df71fa993e9cc91610941cae0105ff9`  
-		Last Modified: Sat, 11 Jan 2025 01:32:41 GMT  
+	-	`sha256:be9578870a0c030305d56955ee9a92e998385a72eda924bceac8a9e8738c87b8`  
+		Last Modified: Mon, 13 Jan 2025 19:32:02 GMT  
 		Size: 28.4 KB (28362 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `unit:go1` - linux; arm64 variant v8
 
 ```console
-$ docker pull unit@sha256:ad87cb4be1df273eadd9cef7effd3dd2fc227430f387665cef363dfe8e58e73a
+$ docker pull unit@sha256:7cde0a33465a6135e77cf8c7af1e2120abb31ebbed20e054330b2c4a864a0b41
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **313.9 MB (313896038 bytes)**  
+-	Total Size: **313.9 MB (313901311 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f0faa8373b0b6666a7d70476f9b81bf195da1023fe3bed5747c556abb535f4c1`
+-	Image ID: `sha256:2ffd3d78ae582aab353a12713ad7b7c3d45aa31becf013a293b29431bdc5a03f`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
@@ -175,33 +175,33 @@ COPY /target/ / # buildkit
 RUN mkdir -p "$GOPATH/src" "$GOPATH/bin" && chmod -R 1777 "$GOPATH" # buildkit
 # Tue, 03 Dec 2024 19:01:46 GMT
 WORKDIR /go
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 LABEL org.opencontainers.image.title=Unit (go1.23)
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 LABEL org.opencontainers.image.description=Official build of Unit for Docker.
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 LABEL org.opencontainers.image.url=https://unit.nginx.org
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 LABEL org.opencontainers.image.source=https://github.com/nginx/unit
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 LABEL org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 LABEL org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>
-# Thu, 19 Dec 2024 18:23:57 GMT
-LABEL org.opencontainers.image.version=1.34.0
-# Thu, 19 Dec 2024 18:23:57 GMT
-RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.0-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
+LABEL org.opencontainers.image.version=1.34.1
+# Fri, 10 Jan 2025 21:01:46 GMT
+RUN set -ex     && savedAptMark="$(apt-mark showmanual)"     && apt-get update     && apt-get install --no-install-recommends --no-install-suggests -y          ca-certificates git build-essential libssl-dev libpcre2-dev curl pkg-config libclang-dev cmake     && export RUST_VERSION=1.83.0     && export RUSTUP_HOME=/usr/src/unit/rustup     && export CARGO_HOME=/usr/src/unit/cargo     && export PATH=/usr/src/unit/cargo/bin:$PATH     && dpkgArch="$(dpkg --print-architecture)"     && case "${dpkgArch##*-}" in          amd64) rustArch="x86_64-unknown-linux-gnu"; rustupSha256="6aeece6993e902708983b209d04c0d1dbb14ebb405ddb87def578d41f920f56d" ;;          arm64) rustArch="aarch64-unknown-linux-gnu"; rustupSha256="1cffbf51e63e634c746f741de50649bbbcbd9dbe1de363c9ecef64e278dba2b2" ;;          *) echo >&2 "unsupported architecture: ${dpkgArch}"; exit 1 ;;        esac     && url="https://static.rust-lang.org/rustup/archive/1.27.1/${rustArch}/rustup-init"     && curl -L -O "$url"     && echo "${rustupSha256} *rustup-init" | sha256sum -c -     && chmod +x rustup-init     && ./rustup-init -y --no-modify-path --profile minimal --default-toolchain $RUST_VERSION --default-host ${rustArch}     && rm rustup-init     && rustup --version     && cargo --version     && rustc --version     && mkdir -p /usr/lib/unit/modules /usr/lib/unit/debug-modules     && mkdir -p /usr/src/unit     && cd /usr/src/unit     && git clone --depth 1 -b 1.34.1-1 https://github.com/nginx/unit     && cd unit     && NCPU="$(getconf _NPROCESSORS_ONLN)"     && DEB_HOST_MULTIARCH="$(dpkg-architecture -q DEB_HOST_MULTIARCH)"     && CC_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_CFLAGS_MAINT_APPEND="-Wp,-D_FORTIFY_SOURCE=2 -fPIC" dpkg-buildflags --get CFLAGS)"     && LD_OPT="$(DEB_BUILD_MAINT_OPTIONS="hardening=+all,-pie" DEB_LDFLAGS_MAINT_APPEND="-Wl,--as-needed -pie" dpkg-buildflags --get LDFLAGS)"     && CONFIGURE_ARGS_MODULES="--prefix=/usr                 --statedir=/var/lib/unit                 --control=unix:/var/run/control.unit.sock                 --runstatedir=/var/run                 --pid=/var/run/unit.pid                 --logdir=/var/log                 --log=/var/log/unit.log                 --tmpdir=/var/tmp                 --user=unit                 --group=unit                 --openssl                 --libdir=/usr/lib/$DEB_HOST_MULTIARCH"     && CONFIGURE_ARGS="$CONFIGURE_ARGS_MODULES                 --njs                 --otel"     && make -j $NCPU -C pkg/contrib .njs     && export PKG_CONFIG_PATH=$(pwd)/pkg/contrib/njs/build     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd-debug     && make clean     && ./configure $CONFIGURE_ARGS --cc-opt="$CC_OPT" --ld-opt="$LD_OPT" --modulesdir=/usr/lib/unit/modules     && make -j $NCPU unitd     && install -pm755 build/sbin/unitd /usr/sbin/unitd     && make clean     && /bin/true     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/debug-modules --debug     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && make clean     && ./configure $CONFIGURE_ARGS_MODULES --cc-opt="$CC_OPT" --modulesdir=/usr/lib/unit/modules     && ./configure go --go-path=$GOPATH     && make -j $NCPU go-install-src libunit-install     && cd     && rm -rf /usr/src/unit     && for f in /usr/sbin/unitd /usr/lib/unit/modules/*.unit.so; do         ldd $f | awk '/=>/{print $(NF-1)}' | while read n; do dpkg-query -S $n; done | sed 's/^\([^:]\+\):.*$/\1/' | sort | uniq >> /requirements.apt;        done     && apt-mark showmanual | xargs apt-mark auto > /dev/null     && { [ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; }     && /bin/true     && mkdir -p /var/lib/unit/     && mkdir -p /docker-entrypoint.d/     && groupadd --gid 999 unit     && useradd          --uid 999          --gid unit          --no-create-home          --home /nonexistent          --comment "unit user"          --shell /bin/false          unit     && apt-get update     && apt-get --no-install-recommends --no-install-suggests -y install curl $(cat /requirements.apt)     && apt-get purge -y --auto-remove build-essential     && rm -rf /var/lib/apt/lists/*     && rm -f /requirements.apt     && ln -sf /dev/stderr /var/log/unit.log # buildkit
+# Fri, 10 Jan 2025 21:01:46 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 COPY welcome.* /usr/share/unit/welcome/ # buildkit
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 STOPSIGNAL SIGTERM
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 EXPOSE map[80/tcp:{}]
-# Thu, 19 Dec 2024 18:23:57 GMT
+# Fri, 10 Jan 2025 21:01:46 GMT
 CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
@@ -234,35 +234,35 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93aa43fb2778b911cd4979e78dd292bfae20403fd6d78b8edce15438af048340`  
-		Last Modified: Sat, 11 Jan 2025 02:03:54 GMT  
-		Size: 20.8 MB (20796484 bytes)  
+	-	`sha256:825a404d00e0e955eab485ddb6d961bfab0a7a256e8ba41ffcdde81a0de77c1a`  
+		Last Modified: Mon, 13 Jan 2025 19:37:46 GMT  
+		Size: 20.8 MB (20801756 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd1825e4138f4117142cb456022c110e60306b708c5759cf7656f8ad8fa2b245`  
-		Last Modified: Sat, 11 Jan 2025 02:03:53 GMT  
-		Size: 1.3 KB (1263 bytes)  
+	-	`sha256:95089964c8609761d0b3e631c97a7863c2a5d11a3050104bd7ae73c427ccb281`  
+		Last Modified: Mon, 13 Jan 2025 19:37:45 GMT  
+		Size: 1.3 KB (1261 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:627adcd8552e3c3929a9dee4d18c74f7d5343da80ad86d10c6c121a97e003c50`  
-		Last Modified: Sat, 11 Jan 2025 02:03:54 GMT  
-		Size: 1.5 KB (1454 bytes)  
+	-	`sha256:93a98496240194c91e6831377685bbf656762f05f59844ecc53e67c7d425d40c`  
+		Last Modified: Mon, 13 Jan 2025 19:37:45 GMT  
+		Size: 1.5 KB (1457 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:go1` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:9e8e22c22698db9ef24777858d110fe778ac2b2ccef04011489c976438dca109
+$ docker pull unit@sha256:60ad599dc24ed715f5a2b7f0049c3e4642dcee2f02922297061075c41fb4ac91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **28.5 KB (28466 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11dd2644ffd80d913f479afca794519f13f42243d15023d048c7215b0a3ab27a`
+-	Image ID: `sha256:f8e0943a8034731c3c95b89148bcc496f2df8e4ef2d9a0884d4f2bd072372559`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f1bbc5dfdba8d2586f5ef77900096a124c2f50ac8e2b37467d54caf9b8068964`  
-		Last Modified: Sat, 11 Jan 2025 02:03:53 GMT  
+	-	`sha256:984d0be5a7ead88617924621def695f900f4efb195f2cf98c53c689a1eefc656`  
+		Last Modified: Mon, 13 Jan 2025 19:37:44 GMT  
 		Size: 28.5 KB (28466 bytes)  
 		MIME: application/vnd.in-toto+json
