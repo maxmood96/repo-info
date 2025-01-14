@@ -52,7 +52,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 
 -	Layers:
 	-	`sha256:6414378b647780fee8fd903ddb9541d134a1947ce092d08bdeb23a54cb3684ac`  
-		Last Modified: Wed, 11 Sep 2024 17:24:41 GMT  
+		Last Modified: Fri, 13 Dec 2024 13:08:53 GMT  
 		Size: 29.5 MB (29535688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:690120052cd6d21f254e5b212f4fb92130cf8eefd618b563c0646438b1a4f1f8`  
@@ -80,11 +80,11 @@ $ docker pull ibmjava@sha256:f58c06154f94c6cfa7a84463499dfb9aae2db334daf41126129
 
 -	Layers:
 	-	`sha256:f90da5c0e1b0b0aee9f2cc75137e859fe45c320f44cb47975d0649ade6d6f18d`  
-		Last Modified: Mon, 09 Dec 2024 19:29:07 GMT  
+		Last Modified: Tue, 07 Jan 2025 02:38:43 GMT  
 		Size: 3.0 MB (2962234 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:46f3970ac6b57e31c08a3d518064fd9ae43b155629b2e5982bba1df4fed3d8b9`  
-		Last Modified: Mon, 06 Jan 2025 22:43:30 GMT  
+		Last Modified: Mon, 09 Dec 2024 19:29:06 GMT  
 		Size: 13.2 KB (13178 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -127,15 +127,15 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 
 -	Layers:
 	-	`sha256:bd389594e541fc722f244791a495e1a62a526cb95daeea3d2304d9be4e2f0e2a`  
-		Last Modified: Wed, 11 Sep 2024 17:24:59 GMT  
+		Last Modified: Fri, 13 Dec 2024 16:13:45 GMT  
 		Size: 34.4 MB (34448242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5432b06a5eb0b15c862e467e7550b35e423da42224cc982fc620a3e04b458d07`  
-		Last Modified: Tue, 17 Sep 2024 01:31:54 GMT  
+		Last Modified: Tue, 31 Dec 2024 20:51:13 GMT  
 		Size: 1.5 MB (1523245 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:66afe9d4f948d68f54ec6defff14cff5750f89a8e79d8b5e4e8e2cb5d07ea235`  
-		Last Modified: Wed, 08 Jan 2025 03:38:03 GMT  
+		Last Modified: Mon, 09 Dec 2024 19:32:03 GMT  
 		Size: 173.8 MB (173762580 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -210,7 +210,7 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/bin:/usr/local/sbin:/usr/loca
 		Size: 1.4 MB (1441914 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f4400326614b568e7fa5e271ba2b12f9fc40b2d302626d86d824d5b3330bc3e8`  
-		Last Modified: Tue, 31 Dec 2024 20:52:03 GMT  
+		Last Modified: Tue, 10 Dec 2024 02:26:24 GMT  
 		Size: 162.8 MB (162843801 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -230,7 +230,7 @@ $ docker pull ibmjava@sha256:a291ee3ff11abaa193c97e73071426461530b051df61991fe6e
 
 -	Layers:
 	-	`sha256:410ba7837a2cadeb3a32d0ee9d8c61dcc7f3ac4750aa490182771517176c2175`  
-		Last Modified: Mon, 06 Jan 2025 19:46:47 GMT  
+		Last Modified: Tue, 10 Dec 2024 02:26:21 GMT  
 		Size: 2.6 MB (2631704 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:edfc0d07849bda6c9e8c4a0c3a6ac392024198ceb7c20c5c2cb67f0717b779ed`  
