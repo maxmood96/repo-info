@@ -61,15 +61,15 @@ CMD ["/etc/docker/registry/config.yml"]
 		Size: 3.4 MB (3417974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b6afea20d55c46e60901e594cad0651da46b7437cf42a3c27e52d5bd37320165`  
-		Last Modified: Wed, 08 Jan 2025 18:11:36 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:33:04 GMT  
 		Size: 295.7 KB (295665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c8f4e00e7d3c5ea061e25a18ba6127f79930efbbd3f3deb59c272ca0d6de23c3`  
-		Last Modified: Wed, 08 Jan 2025 18:11:36 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:33:02 GMT  
 		Size: 6.4 MB (6403790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:665375f3730237f2109d398104a2072e38166ecf5d8316b1464f8a005146384e`  
-		Last Modified: Wed, 08 Jan 2025 18:11:36 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:33:05 GMT  
 		Size: 370.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9959184a302f6f95d8be97229fb31def6700b1895b1ee92090129b60e6567820`  
@@ -155,7 +155,7 @@ CMD ["/etc/docker/registry/config.yml"]
 		Size: 373.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:786e8db11e0fb9efe89d614a159662b1d4bb3bb45662b6b7ad6c05f439e8eed7`  
-		Last Modified: Tue, 07 Jan 2025 06:42:17 GMT  
+		Last Modified: Tue, 07 Jan 2025 07:43:41 GMT  
 		Size: 214.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -303,7 +303,7 @@ CMD ["/etc/docker/registry/config.yml"]
 		Size: 3.3 MB (3341861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0726ca172d8b26fcb657230174e78246e0d10a453d5eb068720f3e309c422a04`  
-		Last Modified: Wed, 08 Jan 2025 22:06:27 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:38:59 GMT  
 		Size: 297.8 KB (297823 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:66b7b7187cb358b4974cf0245aecab9fb00f528bbdebf66fb63e8da2a74456e7`  
