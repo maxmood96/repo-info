@@ -1,7 +1,7 @@
 ## `busybox:glibc`
 
 ```console
-$ docker pull busybox@sha256:c598938e58d0efcc5a01efe9059d113f22970914e05e39ab2a597a10f9db9bdc
+$ docker pull busybox@sha256:04c3917ae1ad16d8be9702176a1e1ecd3cfe6b374a274bd52382c001b4ecd088
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -308,13 +308,13 @@ $ docker pull busybox@sha256:1815c40b4c96dc7aff64a698409f30c6f20daef69fb1e2bc177
 ### `busybox:glibc` - linux; riscv64
 
 ```console
-$ docker pull busybox@sha256:4b4bebb010d386e67fc0d7f315b16deeb51c845992d3bd4b77bc5c6ea14beed3
+$ docker pull busybox@sha256:3afd26d171f82b60374169f2463a7b221d8e8811f9973ba6205c4e48fe83d76f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 MB (1921097 bytes)**  
+-	Total Size: **1.9 MB (1921394 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0724171df0bedab05e26e42fdc58f2a38d5d9b208f9e4b8fe5c7d5e6a9d2345`
+-	Image ID: `sha256:92f00437020c79c25eacea32c74956fbb38d5e7dbd4e6d08e13b594f501f9123`
 -	Default Command: `["sh"]`
 
 ```dockerfile
@@ -323,29 +323,29 @@ RUN BusyBox 1.37.0 (glibc), Debian trixie
 ```
 
 -	Layers:
-	-	`sha256:0fc9c4463bfb82756954ed78b7c4985f6ce67d19cbe0f31dbd8148eecf6809e1`  
-		Last Modified: Wed, 11 Dec 2024 00:27:54 GMT  
-		Size: 1.9 MB (1921097 bytes)  
+	-	`sha256:7f69dcdccc5779a10edc42a067d4073205a8c46b141bfc27079ba30068bdc507`  
+		Last Modified: Mon, 13 Jan 2025 21:28:35 GMT  
+		Size: 1.9 MB (1921394 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `busybox:glibc` - unknown; unknown
 
 ```console
-$ docker pull busybox@sha256:1063693b58c1635c36097acccb404798ef92592c4ee4b0f5cb7dc5d6a6405ca7
+$ docker pull busybox@sha256:c2493de39d481eccba8fff16c45a2a0de5bf3c30a8dcadf5397067b475cf7a90
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.0 KB (2017 bytes)**  
+-	Total Size: **2.0 KB (2026 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c875e7f03a1529c9e5f1a75f32bbc0123405310e628cb3c7cca75c4c95c6d248`
+-	Image ID: `sha256:dccb3d90cb3813dbad225cfaf24b3ad57172d8e04c914379a7948af437c365c1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:08af074d4c526b5e049e31d11efa905b1f24c229924cf6d9c5e3f7180a359ddf`  
-		Last Modified: Wed, 11 Dec 2024 00:27:53 GMT  
-		Size: 2.0 KB (2017 bytes)  
+	-	`sha256:a2ec1e6e760687aef9dd4e5bd727d17ab129a747b503439f930f9e5ef2fb7f77`  
+		Last Modified: Mon, 13 Jan 2025 21:28:35 GMT  
+		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `busybox:glibc` - linux; s390x
