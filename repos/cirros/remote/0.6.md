@@ -40,11 +40,11 @@ CMD ["/sbin/init"]
 
 -	Layers:
 	-	`sha256:57744a926da1c44122a6ef5cb4fc3e18f84f8b715cf407b9d1f49145f97fca55`  
-		Last Modified: Thu, 26 Sep 2024 23:57:56 GMT  
+		Last Modified: Sat, 14 Dec 2024 17:13:18 GMT  
 		Size: 7.4 MB (7413980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:898f17ab44c36fc4848662143b4e22abc3dcb3ea2f72c2478b694daa1b29d228`  
-		Last Modified: Thu, 26 Sep 2024 23:57:56 GMT  
+		Last Modified: Fri, 13 Dec 2024 20:38:21 GMT  
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e515d9888048df66351e2a33db97996c388dba76b12d10d8bf669de6227493f3`  
@@ -68,7 +68,7 @@ $ docker pull cirros@sha256:d0884c82a60f26d02b36413ec5b80643383196156b08f31d42db
 
 -	Layers:
 	-	`sha256:9cff5790e12d94517b5aa89f689a070404995d1faf54e7503a547720a585c8fe`  
-		Last Modified: Thu, 26 Sep 2024 23:57:56 GMT  
+		Last Modified: Mon, 06 Jan 2025 19:28:07 GMT  
 		Size: 7.5 KB (7503 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -101,11 +101,11 @@ CMD ["/sbin/init"]
 		Size: 6.9 MB (6916072 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dbc8558494c81739dbd5516e1c317c4cd9ebd08fa8a23a06dd7ae846a9598505`  
-		Last Modified: Fri, 27 Sep 2024 10:21:32 GMT  
+		Last Modified: Wed, 01 Jan 2025 02:07:33 GMT  
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8d39b9020a5a1701d7002d70869f306d79a54f817f21150ea75a8884afddfa0a`  
-		Last Modified: Fri, 27 Sep 2024 10:21:32 GMT  
+		Last Modified: Wed, 01 Jan 2025 02:07:35 GMT  
 		Size: 1.3 KB (1277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -125,7 +125,7 @@ $ docker pull cirros@sha256:2d5d76a715653151f91cbbff3abcd2b3fe4e6c4b04bb5e382526
 
 -	Layers:
 	-	`sha256:558bdd82c3a5506301b5b68875cf22cb9a373650dc2614056366c6ad939b6a7d`  
-		Last Modified: Fri, 27 Sep 2024 10:21:32 GMT  
+		Last Modified: Wed, 08 Jan 2025 03:28:04 GMT  
 		Size: 7.6 KB (7564 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -219,7 +219,7 @@ CMD ["/sbin/init"]
 		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ddbac8f167ab38f54f00e2d037c25508dcb9e907910086ea3413036b005089e`  
-		Last Modified: Fri, 27 Sep 2024 01:15:52 GMT  
+		Last Modified: Wed, 01 Jan 2025 02:07:36 GMT  
 		Size: 1.3 KB (1277 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
