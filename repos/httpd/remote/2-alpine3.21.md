@@ -76,7 +76,7 @@ CMD ["httpd-foreground"]
 		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6fa70a423f42dfc40c3c94c355c780794ed0927e377908838b0e8d5b40dc6f6`  
-		Last Modified: Wed, 08 Jan 2025 18:00:58 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:34:19 GMT  
 		Size: 942.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f3ac304957a842ad7250478e2c6e796cffa2fa76c7d76bfdaf34c81b95565f9`  
@@ -92,11 +92,11 @@ CMD ["httpd-foreground"]
 		Size: 10.6 MB (10605892 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5d8cbcbfb3b70c9243044e9c7fd07624a2bc3d60dc45a54792158d2f1a683e7e`  
-		Last Modified: Wed, 08 Jan 2025 18:00:59 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:34:30 GMT  
 		Size: 5.6 MB (5622386 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43b1fb8b53a0ebee074d616e13d2e61fdb28e7c7bae97959f7b024be88b9b448`  
-		Last Modified: Wed, 08 Jan 2025 18:00:59 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:34:20 GMT  
 		Size: 288.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
