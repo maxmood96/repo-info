@@ -87,7 +87,7 @@ CMD ["mysqld"]
 		Size: 2.6 KB (2606 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ec0557361569a8ecbc29bb910b4bde5cdaad19c06a71ae771a273afa01543d28`  
-		Last Modified: Fri, 13 Dec 2024 15:01:31 GMT  
+		Last Modified: Thu, 21 Nov 2024 23:10:57 GMT  
 		Size: 334.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f6d0f80cb1bedb26d1fbd402a1b7788789ef10b76310425c826d463cdcc034e9`  
@@ -123,11 +123,11 @@ $ docker pull mysql@sha256:884241880bf669b687d360962b743b33b25533116d683b90f2b94
 
 -	Layers:
 	-	`sha256:49432bd5eceba50b23ca237ff0a3d2b8faef4b98f24a8d0910671afb2483c998`  
-		Last Modified: Wed, 18 Dec 2024 13:39:20 GMT  
+		Last Modified: Thu, 21 Nov 2024 23:10:58 GMT  
 		Size: 14.9 MB (14871778 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3b5cd99ce99088b40020b732dff8d28f06c94e2d50fa9a1872ba9e33ecb1ec02`  
-		Last Modified: Thu, 21 Nov 2024 23:10:56 GMT  
+		Last Modified: Wed, 25 Dec 2024 09:26:25 GMT  
 		Size: 34.2 KB (34249 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -187,7 +187,7 @@ CMD ["mysqld"]
 
 -	Layers:
 	-	`sha256:f7fa64c7935f6bb5df09447a656c51d0f8f2a9f6c57838b88508dce34d5ec36a`  
-		Last Modified: Fri, 13 Dec 2024 15:43:03 GMT  
+		Last Modified: Fri, 22 Nov 2024 04:12:55 GMT  
 		Size: 47.7 MB (47667392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bbcaadfa83903ddc9308d3aaf06f5d34a9498c7299facf5e699043ad60cfddb3`  
@@ -195,35 +195,35 @@ CMD ["mysqld"]
 		Size: 882.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e0924329359e826029c0b9e3bae69796feef0fffead03a7536e402448e2fb2ab`  
-		Last Modified: Fri, 22 Nov 2024 05:08:57 GMT  
+		Last Modified: Fri, 13 Dec 2024 15:01:38 GMT  
 		Size: 913.5 KB (913454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c595f1ed755a5990b59de61c16bb5578c742a829179eba8151027a643bea940f`  
-		Last Modified: Fri, 22 Nov 2024 05:08:58 GMT  
+		Last Modified: Fri, 13 Dec 2024 15:09:08 GMT  
 		Size: 6.5 MB (6496686 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:58b2a5c8574b885b26c607545b32113f35591e98ebfb418f0ef484778ee7bdc2`  
-		Last Modified: Fri, 13 Dec 2024 15:18:03 GMT  
+		Last Modified: Fri, 22 Nov 2024 05:08:57 GMT  
 		Size: 2.6 KB (2610 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9dbf6d01ca893fbb4c016c7d6b4c0941a4b0a40b3125194eafb7a9a585b62dc7`  
-		Last Modified: Fri, 22 Nov 2024 05:10:34 GMT  
+		Last Modified: Fri, 13 Dec 2024 16:01:47 GMT  
 		Size: 330.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:51f9b21794c38886352090ba8181f07d8a6c3f0a1037da0ea331c1c027e5ec05`  
-		Last Modified: Fri, 13 Dec 2024 15:07:41 GMT  
+		Last Modified: Fri, 22 Nov 2024 05:10:36 GMT  
 		Size: 46.5 MB (46452190 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2c4b00b72fec9f40e32c595b0d4614bc939895a979f731d49d85db7ad8473db6`  
-		Last Modified: Fri, 13 Dec 2024 15:15:59 GMT  
+		Last Modified: Fri, 22 Nov 2024 05:10:35 GMT  
 		Size: 319.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ffa7a4d749fc90300ad811051e76d69a553d218ef501225fedf92f424e65db05`  
-		Last Modified: Fri, 13 Dec 2024 15:04:02 GMT  
+		Last Modified: Fri, 22 Nov 2024 05:10:37 GMT  
 		Size: 67.2 MB (67188665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ae13e90ab7aa2e5ba35a429ec001df2df298c79d291831dbef6b7571439bee11`  
-		Last Modified: Fri, 22 Nov 2024 05:10:35 GMT  
+		Last Modified: Fri, 13 Dec 2024 16:03:31 GMT  
 		Size: 5.3 KB (5333 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -247,6 +247,6 @@ $ docker pull mysql@sha256:07512a07387798eea4a8b2e3fafbb3161ed1fe8813142fa5b0cf6
 		Size: 14.9 MB (14866928 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:647eabb9bad75c63cc28c4c33df1dd17da3def588dc639e2e8aad61520108835`  
-		Last Modified: Wed, 18 Dec 2024 15:24:38 GMT  
+		Last Modified: Fri, 22 Nov 2024 05:10:34 GMT  
 		Size: 34.6 KB (34554 bytes)  
 		MIME: application/vnd.in-toto+json
