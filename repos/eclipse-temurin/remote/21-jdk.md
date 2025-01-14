@@ -273,7 +273,7 @@ CMD ["jshell"]
 		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6c4938d0f40e0b7890e8ed42e15ff3b51afeaa13ead00cee9a5dc7f1d268aca9`  
-		Last Modified: Tue, 03 Dec 2024 04:51:35 GMT  
+		Last Modified: Sun, 15 Dec 2024 04:47:04 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -293,7 +293,7 @@ $ docker pull eclipse-temurin@sha256:414b217d16095b5c9fa53886b1b5c7ae75ff060b61d
 
 -	Layers:
 	-	`sha256:4f1ee11eb4fa240a189c4b50660fd1713f489dd97818445f6a3ed947817aa156`  
-		Last Modified: Tue, 03 Dec 2024 04:51:35 GMT  
+		Last Modified: Wed, 18 Dec 2024 03:15:35 GMT  
 		Size: 3.4 MB (3405536 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a03a4574e3a21267cb1dd65f7ef6a80a78d313b75bfebc0b25f7e20f075308fe`  
@@ -359,7 +359,7 @@ CMD ["jshell"]
 		Size: 20.1 MB (20137091 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d760be54beadec28ac59d52779857d4d2d8699ce34dfd5bc5aef1f0472360843`  
-		Last Modified: Tue, 03 Dec 2024 07:06:13 GMT  
+		Last Modified: Wed, 18 Dec 2024 09:49:19 GMT  
 		Size: 153.3 MB (153340935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4bdd07479d851d4bf24261e5e2e71e04a5c128aa56754180a2bd43fed0c75baf`  
@@ -367,7 +367,7 @@ CMD ["jshell"]
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:444f345098992d7018842ebfdeff97d56464a90f91be1dad61ceee8b68a45d35`  
-		Last Modified: Tue, 03 Dec 2024 07:05:52 GMT  
+		Last Modified: Tue, 17 Dec 2024 09:48:46 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -387,7 +387,7 @@ $ docker pull eclipse-temurin@sha256:0ac28fa311f8727d2bf24f2500d3f51a824b7d8feb7
 
 -	Layers:
 	-	`sha256:6310b2ec7aa29c9666fa48e335b84575f7e691577ab93cbdb3cb036b39d2719d`  
-		Last Modified: Tue, 03 Dec 2024 07:05:52 GMT  
+		Last Modified: Tue, 17 Dec 2024 09:48:47 GMT  
 		Size: 3.5 MB (3465420 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:259487a42fc1f35a098807aa548dd8c9c272233ef4dcfc23113510536918d5d3`  
@@ -457,11 +457,11 @@ CMD ["jshell"]
 		Size: 146.9 MB (146869619 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1ce5036bc15d6e20c2b2d3543e1e5bd5b03f45d367578ecdbc4cfbbf52409a6b`  
-		Last Modified: Tue, 03 Dec 2024 04:19:34 GMT  
+		Last Modified: Tue, 17 Dec 2024 13:02:18 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a39946c17b0739d6cc84ede06f0b4f9e00dad1bb8361e4791ba6f4cdd658c70b`  
-		Last Modified: Tue, 03 Dec 2024 04:19:34 GMT  
+		Last Modified: Tue, 17 Dec 2024 13:02:18 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -538,11 +538,11 @@ CMD ["jshell"]
 		Size: 1.3 KB (1278 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:34328687b587725aac89140a489a4d66b10c88c20e0ecc1941658f7a825202b9`  
-		Last Modified: Wed, 11 Dec 2024 20:39:16 GMT  
+		Last Modified: Sun, 15 Dec 2024 23:06:07 GMT  
 		Size: 381.8 MB (381813466 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cf838e6d66333c9dccbbba00dbdab9fb570fd7f1a630d19d8a0f16a304ae66ea`  
-		Last Modified: Wed, 11 Dec 2024 20:39:01 GMT  
+		Last Modified: Tue, 17 Dec 2024 03:06:29 GMT  
 		Size: 349.5 KB (349483 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:7f434af707f5c34d5dc31b960f8ae91870a915269b0919e6d7f68e6575d285f5`  
@@ -595,7 +595,7 @@ CMD ["jshell"]
 		Size: 1.3 KB (1302 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:4ea7e5789a614e8de31511075fed4765f9309e0f91be90146ce5979b6d25e7bd`  
-		Last Modified: Wed, 11 Dec 2024 20:40:06 GMT  
+		Last Modified: Fri, 13 Dec 2024 19:05:49 GMT  
 		Size: 1.3 KB (1291 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a61743c74e18f2ce9a0be9a1caba42a980dd611e7e208b00c74444da18cb8c5c`  
@@ -607,6 +607,6 @@ CMD ["jshell"]
 		Size: 4.1 MB (4079251 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:e928403dd56a642ced360984142d8a5220919c1954f7ba5bf30247ae457c5908`  
-		Last Modified: Wed, 11 Dec 2024 20:40:06 GMT  
+		Last Modified: Fri, 13 Dec 2024 19:05:50 GMT  
 		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
