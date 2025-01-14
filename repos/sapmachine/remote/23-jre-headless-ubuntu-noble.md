@@ -115,11 +115,11 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:8bb55f0677778c3027fcc4253dc452bc9c22de989a696391e739fb1cdbbdb4c2`  
-		Last Modified: Fri, 13 Dec 2024 13:09:54 GMT  
+		Last Modified: Tue, 19 Nov 2024 17:38:33 GMT  
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8c171b7047a6ab18824fcda43281ccb5cc83a624fd236d64c10714fa6cf16c87`  
-		Last Modified: Tue, 03 Dec 2024 10:47:42 GMT  
+		Last Modified: Fri, 27 Dec 2024 17:03:46 GMT  
 		Size: 57.9 MB (57947296 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -139,7 +139,7 @@ $ docker pull sapmachine@sha256:474d35aca9d521cebfb04abc92381f42d309b27ee8461efe
 
 -	Layers:
 	-	`sha256:0f873fdcc9569d8ef5f0d46bc158731142d7f59bbabf89c32848eca52065c5bb`  
-		Last Modified: Tue, 03 Dec 2024 10:47:41 GMT  
+		Last Modified: Mon, 06 Jan 2025 20:11:16 GMT  
 		Size: 2.2 MB (2151194 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c0ae0d9552ae2ec20242df8887c6959ee07e20fefc85f442c3fbfc66cbb636bb`  
@@ -182,11 +182,11 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:4e112885c8061d52bcd0f8d99851b65be887b95c74de235a16946b3562526bbb`  
-		Last Modified: Fri, 13 Dec 2024 16:08:22 GMT  
+		Last Modified: Tue, 19 Nov 2024 17:38:45 GMT  
 		Size: 34.4 MB (34388820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0e8a2e01ed773904c7790fadc670afcfac497d84e3dd3bbe0e4331e347610855`  
-		Last Modified: Tue, 03 Dec 2024 08:30:23 GMT  
+		Last Modified: Mon, 06 Jan 2025 18:07:12 GMT  
 		Size: 60.3 MB (60272854 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -210,6 +210,6 @@ $ docker pull sapmachine@sha256:ae8ca0e100cb58f1b22bb2f46492d49aa1a2281f856845cf
 		Size: 2.2 MB (2154580 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:13e9083de0c580b40bd039c3028488dafc8d959186062cb19931bbbbe04fd9db`  
-		Last Modified: Tue, 03 Dec 2024 08:30:20 GMT  
+		Last Modified: Tue, 07 Jan 2025 08:03:28 GMT  
 		Size: 10.7 KB (10699 bytes)  
 		MIME: application/vnd.in-toto+json
