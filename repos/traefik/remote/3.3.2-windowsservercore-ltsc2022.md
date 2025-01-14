@@ -45,11 +45,11 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Size: 1.5 GB (1462192413 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:90641eccc9d7a78ab99d123ca3884acb8ffc002eb44bc5e68f261f0810d5202b`  
-		Last Modified: Tue, 10 Dec 2024 18:41:03 GMT  
+		Last Modified: Fri, 13 Dec 2024 16:30:53 GMT  
 		Size: 791.7 MB (791681213 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:6e5a9f034f1de6d94c155a239a5862748f369109bc25d965fc5a0933000a4426`  
-		Last Modified: Tue, 14 Jan 2025 19:28:04 GMT  
+		Last Modified: Tue, 14 Jan 2025 22:10:41 GMT  
 		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:c4db7b36ef409f4e326b5ed8a5b5fa213e83c27417178addf79e0a65d2cb13dc`  
