@@ -1,7 +1,7 @@
 ## `hylang:1-python3.12-bookworm`
 
 ```console
-$ docker pull hylang@sha256:7608aae722fc82427f3aff1e9c9b9b6b7465709934aa87b7cd12df8158168d7d
+$ docker pull hylang@sha256:3f3f54b8423e19cdb3fc6d406d22f4573294542bbc6744ef3ada61fb76f28cb9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -291,18 +291,18 @@ $ docker pull hylang@sha256:918c6e2b1815aff5c973c3610a20d029631a2b05b4954a6f3091
 ### `hylang:1-python3.12-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull hylang@sha256:2458e1c0270654c4a436be056c907f841bb00bfdd7b694b266e4f936d001662a
+$ docker pull hylang@sha256:b6788749425a008575061fbe8782da186c1069d6b2e8f04670f57765adcc2019
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.3 MB (50342377 bytes)**  
+-	Total Size: **50.5 MB (50519461 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2b827ac09568e8c33a0750941b0e6ec3d07c1f18cabbcdab42cb52b15a4168c`
+-	Image ID: `sha256:e2d62b4afdf72329d1903cc116398fb7a0f99950867de45b664717b1ddae4eb4`
 -	Default Command: `["hy"]`
 
 ```dockerfile
 # Wed, 04 Dec 2024 00:36:05 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1736726400'
 # Wed, 04 Dec 2024 00:36:05 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 # Wed, 04 Dec 2024 00:36:05 GMT
@@ -332,49 +332,49 @@ CMD ["hy"]
 ```
 
 -	Layers:
-	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
-		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
-		Size: 28.1 MB (28058723 bytes)  
+	-	`sha256:7ce705000c390df8b2edde0e8b9c65a6677da4503a8f8fd89b355a3f827a275f`  
+		Last Modified: Tue, 14 Jan 2025 01:35:55 GMT  
+		Size: 28.0 MB (28041031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:681f5b8ff8010135c072ddef91d563db5d69c0d0a38d4b6c79ffe3df80338747`  
-		Last Modified: Wed, 25 Dec 2024 05:09:45 GMT  
-		Size: 3.1 MB (3137729 bytes)  
+	-	`sha256:d02d1a1ced20b0100efa105489794679cd32592b3baa884d7cd0bce963726219`  
+		Last Modified: Tue, 14 Jan 2025 10:20:08 GMT  
+		Size: 3.3 MB (3332025 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b8dc243786000ba01b6d23eeef6d2b43d86a58051f4a36c713cdb03f546ee1b0`  
-		Last Modified: Wed, 25 Dec 2024 05:09:46 GMT  
-		Size: 13.6 MB (13550327 bytes)  
+	-	`sha256:b505734ccb3b2e831a9c008786edfb960bd0840be4460816bc170c7f77260aa7`  
+		Last Modified: Tue, 14 Jan 2025 10:20:08 GMT  
+		Size: 13.6 MB (13550738 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7635349310f552d027ea81cf5afcd0424f78affdef4fea126f52125643b0d67a`  
-		Last Modified: Wed, 25 Dec 2024 05:09:45 GMT  
-		Size: 248.0 B  
+	-	`sha256:c64f5fd9b3eb1cbb7b3781b51900c6287dd60108a8947e65f08ff18d464f2799`  
+		Last Modified: Tue, 14 Jan 2025 10:20:07 GMT  
+		Size: 250.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:76658ab305358d0e3bd5e17c1d881e5643310605045b961fbdcf31fe4301cba1`  
-		Last Modified: Thu, 09 Jan 2025 22:49:04 GMT  
-		Size: 5.6 MB (5595350 bytes)  
+	-	`sha256:59e71715e0af8522effa17ebec3740972e4627eefbbfa271e50ad8c14e7b16be`  
+		Last Modified: Tue, 14 Jan 2025 16:40:19 GMT  
+		Size: 5.6 MB (5595417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:1-python3.12-bookworm` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:2f5e32e7c3c1ab676c47fce9240bbe90bb7c6f00fe64259e87a7d032fb5e0a3e
+$ docker pull hylang@sha256:c3ca26bf89cc45ed4ae1a445d0e3b57e359f76c8be2d4796303f04d6b26deeb7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.5 MB (2469517 bytes)**  
+-	Total Size: **2.5 MB (2469515 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:779f4743566b307c3a537f156569496ca0cfd7e3ede32718a83c86e1a56743dd`
+-	Image ID: `sha256:4ff4c4a4c154c92db4607f552d9b20c54d2dd98846b0a998e2a408f375ee3f48`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e2ba0632d5e8615eecb91716a330774f557a2fc0ac2f76ee32697c4ce1874d2f`  
-		Last Modified: Thu, 09 Jan 2025 22:49:04 GMT  
+	-	`sha256:f923ad5e65a30e6b1dc79ed180618d560a737a4b9fdf05e86c1c68c6f04de374`  
+		Last Modified: Tue, 14 Jan 2025 16:40:19 GMT  
 		Size: 2.5 MB (2460089 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0a5fdca7291620365fbdc9d17072118c8a6447c2274666569d17cea5948c1fb1`  
-		Last Modified: Thu, 09 Jan 2025 22:49:04 GMT  
-		Size: 9.4 KB (9428 bytes)  
+	-	`sha256:50993da0003a86b8db8263ed3f402d287a3a73645e5d121e4f2b6d9401d517f9`  
+		Last Modified: Tue, 14 Jan 2025 16:40:19 GMT  
+		Size: 9.4 KB (9426 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hylang:1-python3.12-bookworm` - linux; 386
