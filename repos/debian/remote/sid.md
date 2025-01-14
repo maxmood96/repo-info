@@ -43,7 +43,7 @@ RUN # debian.sh --arch 'amd64' out/ 'sid' '@1736726400'
 
 -	Layers:
 	-	`sha256:76be34fccf5c64699db16068e9e561c466873ad6fc8da852c8c21801ed35861d`  
-		Last Modified: Tue, 14 Jan 2025 01:33:25 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:34:50 GMT  
 		Size: 48.4 MB (48375138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -172,7 +172,7 @@ RUN # debian.sh --arch 'arm64' out/ 'sid' '@1736726400'
 
 -	Layers:
 	-	`sha256:7cef9546887caee4cb752860ee90de96728f638ede0f77bda226ca44ac3e04db`  
-		Last Modified: Tue, 14 Jan 2025 01:37:16 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:57:23 GMT  
 		Size: 48.8 MB (48760872 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
