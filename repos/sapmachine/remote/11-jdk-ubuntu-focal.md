@@ -52,7 +52,7 @@ CMD ["jshell"]
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a2ac6ff7b93e31370e56055a863727657fcc29506cb0379fd2c3c2c9b9d60efc`  
-		Last Modified: Wed, 16 Oct 2024 19:00:24 GMT  
+		Last Modified: Mon, 06 Jan 2025 23:04:28 GMT  
 		Size: 200.4 MB (200386180 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -143,7 +143,7 @@ $ docker pull sapmachine@sha256:34c4bdbed15588426321043705c80227d1786593facf02ea
 		Size: 2.4 MB (2383524 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:93e6f97ddd557bf5929cbaf46045f9ef71e14bbd2ccd757f5b8891db27b6d01f`  
-		Last Modified: Wed, 16 Oct 2024 19:51:02 GMT  
+		Last Modified: Mon, 06 Jan 2025 20:06:08 GMT  
 		Size: 10.1 KB (10067 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -210,6 +210,6 @@ $ docker pull sapmachine@sha256:589f8609985ac288c6fb879f7d5b71bd7fa1be34032b286f
 		Size: 2.4 MB (2384427 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:aa635141b72f3701fdfb9e6acf0e35ebd018aeba1feb781ecb9e7b638f312cb2`  
-		Last Modified: Wed, 16 Oct 2024 20:28:31 GMT  
+		Last Modified: Wed, 08 Jan 2025 08:57:51 GMT  
 		Size: 10.0 KB (9984 bytes)  
 		MIME: application/vnd.in-toto+json
