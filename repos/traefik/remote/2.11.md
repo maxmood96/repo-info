@@ -63,7 +63,7 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Size: 458.8 KB (458752 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0faab3bd34aa040e5a241ff468abe6dd571a51bbe69b5c49c6f90f81be98e7ea`  
-		Last Modified: Tue, 14 Jan 2025 20:34:09 GMT  
+		Last Modified: Wed, 08 Jan 2025 18:08:40 GMT  
 		Size: 45.3 MB (45339273 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1727f700089bafd50496b9b7811ad43c80c6bd70201ad317605a3090ae86c8de`  
@@ -143,7 +143,7 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Size: 42.6 MB (42627475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:44d8f5bb1d289f4d50bab3307bb1372ae9bcbb1d05743bb6f9ccbd36dceaaa6e`  
-		Last Modified: Wed, 08 Jan 2025 01:09:53 GMT  
+		Last Modified: Tue, 07 Jan 2025 22:27:58 GMT  
 		Size: 370.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -215,7 +215,7 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Size: 42.0 MB (42011806 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:431faa106445f4df102c45de9d4e627e93509f786ec1eb6f9a38fb733f328502`  
-		Last Modified: Wed, 08 Jan 2025 22:08:40 GMT  
+		Last Modified: Tue, 14 Jan 2025 21:28:55 GMT  
 		Size: 369.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -355,7 +355,7 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 
 -	Layers:
 	-	`sha256:21a89fc8a7107842fa0935d999d700ca9a9df964110a7076d946b16f07a54de5`  
-		Last Modified: Wed, 08 Jan 2025 17:48:43 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:35:37 GMT  
 		Size: 3.4 MB (3350256 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a313cc5c7888222234ca369a188190b9f804bd4a21a8417e5fdda39f504192e3`  
@@ -431,7 +431,7 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 
 -	Layers:
 	-	`sha256:b2af93686f9384c40cfe861d7173877bb2ee1675c3ee70181799693c34c8722f`  
-		Last Modified: Wed, 08 Jan 2025 17:25:12 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:34:39 GMT  
 		Size: 3.5 MB (3466867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cf2f271cf40dc0a33763933392b67f20562c52df4456f2687afbed9946a6f7c4`  
