@@ -1,7 +1,7 @@
 ## `elixir:latest`
 
 ```console
-$ docker pull elixir@sha256:302e86f002af2008d85222ff9d8ba07f49631f6b2fe48d759cf8a1ff2075b26d
+$ docker pull elixir@sha256:4f00972871bc8f7569fc1a5dfa345f9af4b8fe7af5a040a955b047f6d76f9b27
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,18 +22,18 @@ $ docker pull elixir@sha256:302e86f002af2008d85222ff9d8ba07f49631f6b2fe48d759cf8
 ### `elixir:latest` - linux; amd64
 
 ```console
-$ docker pull elixir@sha256:6a8711b41ab7d83df48844d6ec67ff0114028eba311efb7769dcf7a44961578f
+$ docker pull elixir@sha256:ff1134aae905cb620cf4ee55185875d20b0b304f837e8819fc50ae47f33cd788
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **612.7 MB (612701526 bytes)**  
+-	Total Size: **612.9 MB (612915598 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd5b7d185f8f86f32adea1efdc81fb7a7fcc06cc5bae6fadfbd05a80b32ef4a7`
+-	Image ID: `sha256:dde37993a660a1b2a9962915730b5fb2f871c8983b18ffc2f5196f94ee0f9134`
 -	Default Command: `["iex"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1736726400'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -63,61 +63,61 @@ CMD ["iex"]
 ```
 
 -	Layers:
-	-	`sha256:0a96bdb8280554b560ffee0f2e5f9843dc7b625f28192021ee103ecbcc2d629b`  
-		Last Modified: Tue, 24 Dec 2024 21:32:13 GMT  
-		Size: 48.5 MB (48497066 bytes)  
+	-	`sha256:fd0410a2d1aece5360035b61b0a60d8d6ce56badb9d30a5c86113b3ec724f72a`  
+		Last Modified: Tue, 14 Jan 2025 01:33:18 GMT  
+		Size: 48.5 MB (48479962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:54c7be425079efba0003054ee884bf72f1ffebca733bedd6f077d2809ee9aa6f`  
-		Last Modified: Tue, 24 Dec 2024 22:15:27 GMT  
-		Size: 23.9 MB (23865817 bytes)  
+	-	`sha256:bf571be90f05e10949e4ae13071c81d3182077d926e3f84169a12e0ce2aec209`  
+		Last Modified: Tue, 14 Jan 2025 02:32:44 GMT  
+		Size: 24.1 MB (24058643 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7aa8176e6d893aff4b57b2c22574ec2afadff4673b8e0954e275244bfd3d7bc1`  
-		Last Modified: Tue, 24 Dec 2024 23:16:06 GMT  
-		Size: 64.4 MB (64391074 bytes)  
+	-	`sha256:684a51896c8291a1769034cf6e10971c82a82c43b6b4588d1c71d215953eaa61`  
+		Last Modified: Tue, 14 Jan 2025 03:18:17 GMT  
+		Size: 64.4 MB (64398680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1523f4b3f5602bf41caf8d8e649536ac0b3e56984c81a9f518fb20c6516ca075`  
-		Last Modified: Wed, 25 Dec 2024 00:14:20 GMT  
-		Size: 211.3 MB (211306201 bytes)  
+	-	`sha256:fbf93b646d6b4d6612a25d50599f4d8e3c7785f83c6ba085219f9d4d334e8aa3`  
+		Last Modified: Tue, 14 Jan 2025 04:16:48 GMT  
+		Size: 211.3 MB (211326155 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c64893ebe6c13c443dbaa919f11354087aebb6ffa61800cd8f9060d7e57465cb`  
-		Last Modified: Tue, 07 Jan 2025 18:40:29 GMT  
-		Size: 256.2 MB (256190063 bytes)  
+	-	`sha256:d4da85acf07592c3926353bf9c5e3118e4767dddf0fd0f33dc8ad9f7b91d403c`  
+		Last Modified: Tue, 14 Jan 2025 05:21:20 GMT  
+		Size: 256.2 MB (256201062 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fef3f99c49fdc6131250875f842a342291643b3726f00878b35a56eac3e7cdd9`  
-		Last Modified: Tue, 07 Jan 2025 18:40:25 GMT  
-		Size: 195.7 KB (195651 bytes)  
+	-	`sha256:a983c874289dad1042187a78977994120e563a49e0929ff567cdd3ca93599374`  
+		Last Modified: Tue, 14 Jan 2025 05:21:16 GMT  
+		Size: 195.6 KB (195646 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3880801967c8372d217540b06fe647ec788a48d2564bbcd3b865d7d73d90d0ba`  
-		Last Modified: Tue, 07 Jan 2025 18:40:25 GMT  
-		Size: 821.4 KB (821350 bytes)  
+	-	`sha256:5fd29e053ac91f4fe5895e6c6de3ca637680a09e19a9d4c7b763ca925a8d7d0c`  
+		Last Modified: Tue, 14 Jan 2025 05:21:16 GMT  
+		Size: 821.3 KB (821341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af3dd9da604d7d81abdf188171bffc0f498c69d42c83818b62eb15866f431184`  
-		Last Modified: Tue, 07 Jan 2025 19:11:29 GMT  
-		Size: 7.4 MB (7434304 bytes)  
+	-	`sha256:06e030ed8290fe9bce8dd21061ac180683f86e179cd18e6a0885fa19361b8ccb`  
+		Last Modified: Tue, 14 Jan 2025 06:14:07 GMT  
+		Size: 7.4 MB (7434109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `elixir:latest` - unknown; unknown
 
 ```console
-$ docker pull elixir@sha256:416ca36dc423a8b859c78811d6d1044750753da2b973e3b28f34bec57e558373
+$ docker pull elixir@sha256:663e4c105511fda10b7380daacea4111801eda89915d2304d3912f119073b5c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **23.4 MB (23363590 bytes)**  
+-	Total Size: **23.4 MB (23363733 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2a07c4069df5004c3cf19b6b87b9544889bb6604554173acb61ada31eb4d7526`
+-	Image ID: `sha256:125f4c35e935ddca7304e475343a1161bf4328ca7ef81f61566b6dbe7a435817`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4909192f52b0b6d59782939d1090eb7307858b12b77d8e130a60b63e57dcdb59`  
-		Last Modified: Tue, 07 Jan 2025 19:11:29 GMT  
-		Size: 23.4 MB (23352298 bytes)  
+	-	`sha256:58672b6ea3e4e87c5e56a09b7aa43729d36d22b29bb1ffd1a2af5352c482aedc`  
+		Last Modified: Tue, 14 Jan 2025 06:14:07 GMT  
+		Size: 23.4 MB (23352442 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b60986fa7464dfd5c2eaeef81a0483165877e4c1377680c85ef5ed22089bed56`  
-		Last Modified: Tue, 07 Jan 2025 19:11:28 GMT  
-		Size: 11.3 KB (11292 bytes)  
+	-	`sha256:e5a3beab38c2cdd4874335164c181b0ee90ab66b1fc89e9e986115b53aba9d3f`  
+		Last Modified: Tue, 14 Jan 2025 06:14:07 GMT  
+		Size: 11.3 KB (11291 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `elixir:latest` - linux; arm variant v7
