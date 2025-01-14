@@ -1,7 +1,7 @@
 ## `rocket.chat:latest`
 
 ```console
-$ docker pull rocket.chat@sha256:8a6a91aac6577700521f51fe908f38d315fe4d076de28d5ac4e6387bc7cf9426
+$ docker pull rocket.chat@sha256:6f1dcb78af351cad3b38bb8bd4af604a44f49ab4e9b95436f65b45532ac79ccf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,19 +12,19 @@ $ docker pull rocket.chat@sha256:8a6a91aac6577700521f51fe908f38d315fe4d076de28d5
 ### `rocket.chat:latest` - linux; amd64
 
 ```console
-$ docker pull rocket.chat@sha256:00f31bcee9bc6f945c19e4dbc5511eba15bbff344b04ff5fc33a138d15a3750c
+$ docker pull rocket.chat@sha256:4c4402cacdaffe4c8dbcabd0a4097945aaf530eb0dd22e2f3fac70435db5c150
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **445.2 MB (445191606 bytes)**  
+-	Total Size: **445.2 MB (445172505 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f0d9bada71891aeacd6a3c4f0721860acb38688f256bc711a2483d414a98d157`
+-	Image ID: `sha256:ac8e4be017eafa050b4137ffa9501c2afeaa78dbfa1dfc604bb1397ea2d1dbe9`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node","main.js"]`
 
 ```dockerfile
 # Wed, 20 Nov 2024 16:05:40 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1734912000'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1736726400'
 # Wed, 20 Nov 2024 16:05:40 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
 # Wed, 20 Nov 2024 16:05:40 GMT
@@ -70,41 +70,41 @@ CMD ["node" "main.js"]
 ```
 
 -	Layers:
-	-	`sha256:fd674058ff8f8cfa7fb8a20c006fc0128541cbbad7f7f7f28df570d08f9e4d92`  
-		Last Modified: Tue, 24 Dec 2024 21:32:20 GMT  
-		Size: 28.2 MB (28231581 bytes)  
+	-	`sha256:af302e5c37e9dc1dbe2eadc8f5059d82a914066b541b0d1a6daa91d0cc55057d`  
+		Last Modified: Tue, 14 Jan 2025 01:33:13 GMT  
+		Size: 28.2 MB (28212417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd1c43950fbfc7c30161da4beceb8cdae3cde1f5db431332e5c33e2002c32084`  
-		Last Modified: Tue, 24 Dec 2024 22:30:06 GMT  
-		Size: 3.3 KB (3310 bytes)  
+	-	`sha256:b4ffe8c091b844bba6a9580c8cbb701e6e643d119cca163ca7fae3cabbc4689a`  
+		Last Modified: Tue, 14 Jan 2025 02:36:17 GMT  
+		Size: 3.3 KB (3311 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6726259f0c6bba0dee5b30a5bfdb64477dafcce298c4c324d39bc6c8674fdb45`  
-		Last Modified: Tue, 24 Dec 2024 22:30:09 GMT  
-		Size: 40.8 MB (40755124 bytes)  
+	-	`sha256:6620872b7cde31772116d3abf20dccc7f7b63e072382fe443ae7005972946a33`  
+		Last Modified: Tue, 14 Jan 2025 02:36:18 GMT  
+		Size: 40.8 MB (40755099 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a107cb3707f114bb0f80418351d83c4277239b64ed9f9ed0f4054a5df9f23d5`  
-		Last Modified: Tue, 24 Dec 2024 22:30:06 GMT  
-		Size: 1.7 MB (1712413 bytes)  
+	-	`sha256:ab511d14ed3865233934f79d79208ab0712e2c6cb158faef10d4ffd63ee38aae`  
+		Last Modified: Tue, 14 Jan 2025 02:36:17 GMT  
+		Size: 1.7 MB (1712466 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28e443844026d13d040ebd4f5a2958c022d0f551d8c4f5d841ab389155811c3b`  
-		Last Modified: Tue, 24 Dec 2024 22:30:06 GMT  
+	-	`sha256:3351a9c5c3d730f4b269936b24914e8ba2ceda25202be81a49c0f65aab17fb16`  
+		Last Modified: Tue, 14 Jan 2025 02:36:17 GMT  
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b82796685c001431333074a71f5ebcb801c40d835197c7d1a1300c28af5eabf6`  
-		Last Modified: Wed, 08 Jan 2025 23:33:30 GMT  
-		Size: 45.1 MB (45131126 bytes)  
+	-	`sha256:ae05c24cf0560f06b6ef52b754ab40192257afad3656b19a6bfeff8fb1073aac`  
+		Last Modified: Tue, 14 Jan 2025 03:24:57 GMT  
+		Size: 45.1 MB (45131124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f584226aed043fb45c138a28f52193f3738a6154c0c2a7cce53926733db2e989`  
-		Last Modified: Wed, 08 Jan 2025 23:33:29 GMT  
-		Size: 1.2 KB (1175 bytes)  
+	-	`sha256:53ce6c0b5f96cbb516d9cbfb2d09edb96af20e103e1f3901daf415cb1e0aba7b`  
+		Last Modified: Tue, 14 Jan 2025 03:24:55 GMT  
+		Size: 1.2 KB (1173 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:447f0afd6e3f2b45184c6719824870be47b3822d83f465415d6e5addf1b65e81`  
-		Last Modified: Wed, 08 Jan 2025 23:33:34 GMT  
-		Size: 329.4 MB (329356366 bytes)  
+	-	`sha256:0820ae37f67a842ec543eaf932ae8613c271aacd6ced8faf322e187ea2869659`  
+		Last Modified: Tue, 14 Jan 2025 03:25:04 GMT  
+		Size: 329.4 MB (329356404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -114,19 +114,19 @@ CMD ["node" "main.js"]
 ### `rocket.chat:latest` - unknown; unknown
 
 ```console
-$ docker pull rocket.chat@sha256:45160dff35d0e90e993df796c795c452183fa8582dceaeb2bb7a42c457d1bd7c
+$ docker pull rocket.chat@sha256:4ea178534955e4adbed64b69385f7427e963c0cd14070adee4ee34f2cc5441f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **23.7 KB (23709 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c799109ac1005c06d2f8a88b8ffa339fd3a1f322083a063934374b0a0780e034`
+-	Image ID: `sha256:8260affe970d960bd7225a29f1dabd9815df808af373211a76a4c321cd2a2c37`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ab5101d99ec34a1f5df33184fcd8ef825a0b90bbd9f8c65a8e143476c62cae0b`  
-		Last Modified: Wed, 08 Jan 2025 23:33:29 GMT  
+	-	`sha256:7429c5fd34aaafe8637316d8ac68039ee662cfa0427fcb722be739d431cb6832`  
+		Last Modified: Tue, 14 Jan 2025 03:24:55 GMT  
 		Size: 23.7 KB (23709 bytes)  
 		MIME: application/vnd.in-toto+json
