@@ -108,7 +108,7 @@ $ docker pull kong@sha256:447c949d73f7e283ee920563053e1c250917c089719a8d3fdafe07
 
 -	Layers:
 	-	`sha256:c72956166f347846c1878c435bc1be2b6a9e2984f04587bdae18df251c90c18c`  
-		Last Modified: Fri, 20 Dec 2024 22:36:00 GMT  
+		Last Modified: Sat, 21 Dec 2024 01:03:59 GMT  
 		Size: 5.3 MB (5287948 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f0e83f83893cba307084852fd5b1a0ac799148df8016835649bc340b7968342b`  
@@ -217,6 +217,6 @@ $ docker pull kong@sha256:66c5f9ff2734959a92d6fd0807c6cff5dd683ecb2530b09e6fcf60
 		Size: 5.3 MB (5295115 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c6134e3a89b75f7b4aa6319f436d1467822db4f57fde93bf5d2f45086e87db96`  
-		Last Modified: Sat, 21 Dec 2024 03:05:39 GMT  
+		Last Modified: Tue, 07 Jan 2025 00:46:13 GMT  
 		Size: 16.4 KB (16400 bytes)  
 		MIME: application/vnd.in-toto+json
