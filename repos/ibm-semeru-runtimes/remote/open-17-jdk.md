@@ -66,11 +66,11 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 12.2 MB (12174524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:773e47cc036f16777b7a32cbaf4883ae3d638eff52c8197f101dd328cdebc411`  
-		Last Modified: Thu, 19 Dec 2024 21:32:07 GMT  
+		Last Modified: Fri, 20 Dec 2024 00:02:49 GMT  
 		Size: 218.0 MB (217965648 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:50e40cda41fd061c4c88a3e90cbe9a8816b3bb7b9be49c73b21cb4d4f32cee60`  
-		Last Modified: Thu, 19 Dec 2024 21:32:02 GMT  
+		Last Modified: Fri, 20 Dec 2024 04:23:40 GMT  
 		Size: 6.1 MB (6112206 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -94,7 +94,7 @@ $ docker pull ibm-semeru-runtimes@sha256:16c28413456ee07bb19ab4fcead999f911a7503
 		Size: 3.7 MB (3665116 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3931a1b53f84a597cc653ce1182ec55983617eb49ba2111ec9ac469c4fb1ea35`  
-		Last Modified: Thu, 19 Dec 2024 21:32:02 GMT  
+		Last Modified: Sat, 21 Dec 2024 16:33:30 GMT  
 		Size: 24.7 KB (24709 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -149,7 +149,7 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 12.1 MB (12128239 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e4d656e558a085114b4833eb00dca5f3f3e8843ad292b0dc1b4a23864dff55a2`  
-		Last Modified: Thu, 19 Dec 2024 22:24:29 GMT  
+		Last Modified: Sun, 22 Dec 2024 10:00:54 GMT  
 		Size: 208.1 MB (208069739 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:16b5f3d94f4dcd7393ad91180a05ee21aba475bc410236a81b473072d4bb528f`  
@@ -228,11 +228,11 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 34.4 MB (34448242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4d6230a31e14b4a918b32fc7a3b685fad8ecafe0901deee916736d3e6f4db6ad`  
-		Last Modified: Tue, 17 Sep 2024 01:15:01 GMT  
+		Last Modified: Tue, 17 Dec 2024 07:19:31 GMT  
 		Size: 12.9 MB (12888132 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f1f18340a753eed8de2f21a29290b74aa3dd1e3e048ff42869612adbfa1aa298`  
-		Last Modified: Thu, 19 Dec 2024 21:49:32 GMT  
+		Last Modified: Mon, 06 Jan 2025 17:42:07 GMT  
 		Size: 219.4 MB (219364644 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:41b1eca1ead8da6af43a332c9c163458787c4448f4b7c68b434ba4834f67dde2`  
@@ -256,7 +256,7 @@ $ docker pull ibm-semeru-runtimes@sha256:852c994f2c29f014264f6acd5f29575cbc0cf67
 
 -	Layers:
 	-	`sha256:60ebf649943924233b79e6eea7f1aa2736480599e4a72ace72819b33469aa128`  
-		Last Modified: Thu, 19 Dec 2024 21:49:27 GMT  
+		Last Modified: Mon, 06 Jan 2025 22:42:14 GMT  
 		Size: 3.7 MB (3660012 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d8e82da7b646e855bc21aa3e1a9d81aec15be513f80493e90babdbb283cb7ccd`  
@@ -315,11 +315,11 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 12.2 MB (12203759 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:981b25aaca749ae93773188f3501b034fd672ce2ece799198b7e84253eabd2f9`  
-		Last Modified: Thu, 19 Dec 2024 21:52:48 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:38:16 GMT  
 		Size: 214.4 MB (214416325 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:461be1905fe1afb6698865a5712a282906652316c09abefd9714c298556b9094`  
-		Last Modified: Thu, 19 Dec 2024 21:52:45 GMT  
+		Last Modified: Mon, 06 Jan 2025 22:42:17 GMT  
 		Size: 6.2 MB (6228292 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -343,6 +343,6 @@ $ docker pull ibm-semeru-runtimes@sha256:5ebe624df021261c59c09fe4549a6580e16a7b5
 		Size: 3.7 MB (3657729 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2bf744efd05faa5e426dfa94ee48e6ffb3fda3c2de2730dd4ee88761cae611b1`  
-		Last Modified: Thu, 19 Dec 2024 21:52:44 GMT  
+		Last Modified: Fri, 20 Dec 2024 10:07:32 GMT  
 		Size: 24.7 KB (24709 bytes)  
 		MIME: application/vnd.in-toto+json
