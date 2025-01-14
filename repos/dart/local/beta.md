@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e468d3410a17b0ea1887764121ee2e1b9e2deea205884ebe40ac7a1c830bbc21`
-- Created: `2024-12-11T15:15:24Z`
-- Virtual Size: ~ 803.18 Mb  
+- Image ID: `sha256:b50aea3028e03c070744fb70b8124e54b2857ae3dc52880ca002623c09b4841d`
+- Created: `2025-01-08T14:24:09Z`
+- Virtual Size: ~ 803.90 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -153,11 +153,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/audit/1:3.0.9-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/audit/1:3.0.9-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `base-files=12.4+deb12u8`
+### `dpkg` source package: `base-files=12.4+deb12u9`
 
 Binary Packages:
 
-- `base-files=12.4+deb12u8`
+- `base-files=12.4+deb12u9`
 
 Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 
@@ -166,16 +166,16 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris base-files=12.4+deb12u8
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u8.dsc' base-files_12.4+deb12u8.dsc 1133 SHA256:b3e66f1e91dc6b267e4dd2b107bef81584c548dc6c5143f822f0b01847249fb5
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u8.tar.xz' base-files_12.4+deb12u8.tar.xz 66152 SHA256:81d76673876c399ea89789e6867830eb6a7b4c91270eebe1d297ef6f9875f847
+$ apt-get source -qq --print-uris base-files=12.4+deb12u9
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u9.dsc' base-files_12.4+deb12u9.dsc 1133 SHA256:452363be1edb5b30528a269b723aa53c5ed2eb38e6691da8f184cc93de577ebb
+'http://deb.debian.org/debian/pool/main/b/base-files/base-files_12.4%2bdeb12u9.tar.xz' base-files_12.4+deb12u9.tar.xz 66148 SHA256:b0cf0d5ee0905df50aff7fa1426680fd6bc7504c4df083bdcfd489fb507086bb
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/base-files/12.4+deb12u8/ (for browsing the source)
-- https://sources.debian.net/src/base-files/12.4+deb12u8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/12.4+deb12u8/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/base-files/12.4+deb12u9/ (for browsing the source)
+- https://sources.debian.net/src/base-files/12.4+deb12u9/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/base-files/12.4+deb12u9/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.1`
 
@@ -2278,11 +2278,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.5.13+dfsg-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.5.13+dfsg-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssh=1:9.2p1-2+deb12u3`
+### `dpkg` source package: `openssh=1:9.2p1-2+deb12u4`
 
 Binary Packages:
 
-- `openssh-client=1:9.2p1-2+deb12u3`
+- `openssh-client=1:9.2p1-2+deb12u4`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -2297,17 +2297,18 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:9.2p1-2+deb12u3
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.2p1-2%2bdeb12u3.dsc' openssh_9.2p1-2+deb12u3.dsc 3140 SHA256:f68fe5773f4ae24cdfe9a365b0f6a9686dbb80460e5dceb423561ea24791fbaa
+$ apt-get source -qq --print-uris openssh=1:9.2p1-2+deb12u4
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.2p1-2%2bdeb12u4.dsc' openssh_9.2p1-2+deb12u4.dsc 3381 SHA256:5d5a01fcbec9bd68db93b92e25a2384650a6ac6757652d5715e541ce6bae4df4
 'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.2p1.orig.tar.gz' openssh_9.2p1.orig.tar.gz 1852380 SHA256:3f66dbf1655fb45f50e1c56da62ab01218c228807b21338d634ebcdf9d71cf46
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.2p1-2%2bdeb12u3.debian.tar.xz' openssh_9.2p1-2+deb12u3.debian.tar.xz 191892 SHA256:564abbf851e86b66adb7d1b6eaac16059dc0cdec166d24bec14453515de6d616
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.2p1.orig.tar.gz.asc' openssh_9.2p1.orig.tar.gz.asc 833 SHA256:7acc8e9502040972aeecb785fa3b6bb00c069cc01fbd7c214f8f7867033a6dbb
+'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.2p1-2%2bdeb12u4.debian.tar.xz' openssh_9.2p1-2+deb12u4.debian.tar.xz 194708 SHA256:99a63bad9ef447c0d890816c5f3a2b97d8dbded2e426f15614ee0526446c9c5f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssh/1:9.2p1-2+deb12u3/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:9.2p1-2+deb12u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:9.2p1-2+deb12u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssh/1:9.2p1-2+deb12u4/ (for browsing the source)
+- https://sources.debian.net/src/openssh/1:9.2p1-2+deb12u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssh/1:9.2p1-2+deb12u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.0.15-1~deb12u1`
 
@@ -2611,12 +2612,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/shadow/1:4.13+dfsg1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/shadow/1:4.13+dfsg1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `systemd=252.31-1~deb12u1`
+### `dpkg` source package: `systemd=252.33-1~deb12u1`
 
 Binary Packages:
 
-- `libsystemd0:amd64=252.31-1~deb12u1`
-- `libudev1:amd64=252.31-1~deb12u1`
+- `libsystemd0:amd64=252.33-1~deb12u1`
+- `libudev1:amd64=252.33-1~deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/libudev1/copyright`)
 
@@ -2632,17 +2633,17 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris systemd=252.31-1~deb12u1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.31-1%7edeb12u1.dsc' systemd_252.31-1~deb12u1.dsc 6617 SHA256:f1759fad1471788fa382f461c1865185fd89e29dc5c94ca1cc73c61a79ccfafb
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.31.orig.tar.gz' systemd_252.31.orig.tar.gz 12158516 SHA256:a4ad028436e8569befb46fb5d955ad6caf79efc93e420be1eecfed2b8e684387
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.31-1%7edeb12u1.debian.tar.xz' systemd_252.31-1~deb12u1.debian.tar.xz 171340 SHA256:28ce1c1cabf443ad3a5f6515c7086b600cfa872aa37b98ef33d3ccafe554ba41
+$ apt-get source -qq --print-uris systemd=252.33-1~deb12u1
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.33-1%7edeb12u1.dsc' systemd_252.33-1~deb12u1.dsc 6617 SHA256:1ee872f4592b2006e8e9ae7efd5fb9370492066b8a57893a9084ad3358a9f0b3
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.33.orig.tar.gz' systemd_252.33.orig.tar.gz 12253420 SHA256:90ec1f67e61eb6160d8cd38d88061b77cd758690f026c2ccd1d0ea68816f3b61
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_252.33-1%7edeb12u1.debian.tar.xz' systemd_252.33-1~deb12u1.debian.tar.xz 171328 SHA256:114e31495fa9a103d164a04e90bcb6dc784639125352c4b09a9760b9ef1db8dd
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/systemd/252.31-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/252.31-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/252.31-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/systemd/252.33-1~deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/systemd/252.33-1~deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/252.33-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.06-4`
 
@@ -2780,18 +2781,18 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/usrmerge/37~deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/usrmerge/37~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `util-linux=2.38.1-5+deb12u2`
+### `dpkg` source package: `util-linux=2.38.1-5+deb12u3`
 
 Binary Packages:
 
-- `bsdutils=1:2.38.1-5+deb12u2`
-- `libblkid1:amd64=2.38.1-5+deb12u2`
-- `libmount1:amd64=2.38.1-5+deb12u2`
-- `libsmartcols1:amd64=2.38.1-5+deb12u2`
-- `libuuid1:amd64=2.38.1-5+deb12u2`
-- `mount=2.38.1-5+deb12u2`
-- `util-linux=2.38.1-5+deb12u2`
-- `util-linux-extra=2.38.1-5+deb12u2`
+- `bsdutils=1:2.38.1-5+deb12u3`
+- `libblkid1:amd64=2.38.1-5+deb12u3`
+- `libmount1:amd64=2.38.1-5+deb12u3`
+- `libsmartcols1:amd64=2.38.1-5+deb12u3`
+- `libuuid1:amd64=2.38.1-5+deb12u3`
+- `mount=2.38.1-5+deb12u3`
+- `util-linux=2.38.1-5+deb12u3`
+- `util-linux-extra=2.38.1-5+deb12u3`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`, `/usr/share/doc/util-linux-extra/copyright`)
 
@@ -2815,17 +2816,17 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 Source:
 
 ```console
-$ apt-get source -qq --print-uris util-linux=2.38.1-5+deb12u2
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u2.dsc' util-linux_2.38.1-5+deb12u2.dsc 4579 SHA256:114eccef186d9ce6bda28fd23e5be122b934de871b2f51069e69215b0d3ae5e3
+$ apt-get source -qq --print-uris util-linux=2.38.1-5+deb12u3
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u3.dsc' util-linux_2.38.1-5+deb12u3.dsc 4579 SHA256:0fe5fcd2b83d0465e32ca5cb9d8319e9b6fbf14c9a69abfd7ea905e45fa90b67
 'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1.orig.tar.xz' util-linux_2.38.1.orig.tar.xz 7495904 SHA256:60492a19b44e6cf9a3ddff68325b333b8b52b6c59ce3ebd6a0ecaa4c5117e84f
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u2.debian.tar.xz' util-linux_2.38.1-5+deb12u2.debian.tar.xz 119524 SHA256:b3755c718da50574f5045d9725d48a2dd3ea3bbd837a66cd294777c27a1713db
+'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.38.1-5%2bdeb12u3.debian.tar.xz' util-linux_2.38.1-5+deb12u3.debian.tar.xz 121964 SHA256:d46b85313f536fc4831a69ba3fa2c8160450b5b26c7c5dfafce4f078fe4f205c
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/util-linux/2.38.1-5+deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.38.1-5+deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.38.1-5+deb12u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/util-linux/2.38.1-5+deb12u3/ (for browsing the source)
+- https://sources.debian.net/src/util-linux/2.38.1-5+deb12u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/util-linux/2.38.1-5+deb12u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xxhash=0.8.1-1`
 
