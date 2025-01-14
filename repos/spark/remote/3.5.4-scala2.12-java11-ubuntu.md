@@ -109,7 +109,7 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 		Size: 20.6 MB (20629771 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f1e24cf8d95b27ec685981af9885b2c1e7a7ff5d3be4de5232277c7a5ca0bf00`  
-		Last Modified: Tue, 24 Dec 2024 21:33:31 GMT  
+		Last Modified: Wed, 25 Dec 2024 14:09:23 GMT  
 		Size: 324.9 MB (324901765 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c10c1e9edbfb3d9ab51a1aa31bef6b9d41c59984425527a6c3c7810bc84ca66a`  
@@ -137,7 +137,7 @@ $ docker pull spark@sha256:e8126b6e64b75ded7f3302dc6e4de1a4cf4b3d019be21af87b862
 
 -	Layers:
 	-	`sha256:34c30a32800bdcc5b130fdac78faa097656be10eb3183104b52f4c34dac27548`  
-		Last Modified: Tue, 24 Dec 2024 21:33:27 GMT  
+		Last Modified: Wed, 25 Dec 2024 10:27:20 GMT  
 		Size: 4.4 MB (4352171 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e096a7036bcf26aade4e1ea831c1372f892f66832a5f4c714a5d469f2675a22f`  
@@ -275,6 +275,6 @@ $ docker pull spark@sha256:69b1b88df9c686597f6021188d8ac6f879e007750ed8fe40cc8c0
 		Size: 4.4 MB (4352475 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:84b8a10e2b31ddecf7f0d3a4f5586c0b61751c9d162903da3ba565318fcc61bb`  
-		Last Modified: Tue, 24 Dec 2024 21:57:28 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:56:42 GMT  
 		Size: 23.3 KB (23270 bytes)  
 		MIME: application/vnd.in-toto+json
