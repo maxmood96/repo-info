@@ -109,7 +109,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5337bf9f2dba0d0acb3abb71f76ad7234c932d49e4aad5c70b0427d83c9a7e09`  
-		Last Modified: Tue, 03 Dec 2024 03:18:37 GMT  
+		Last Modified: Mon, 23 Dec 2024 02:11:21 GMT  
 		Size: 14.6 MB (14574334 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -137,11 +137,11 @@ $ docker pull jetty@sha256:ab9f86392ed9fadc82a161881c4d2024bd06fbee876d7c2baa1f7
 
 -	Layers:
 	-	`sha256:4977d5002254314b4c61817e2b24d31316fdb07f8594f0764385c0e6280293d9`  
-		Last Modified: Tue, 03 Dec 2024 03:18:37 GMT  
+		Last Modified: Mon, 06 Jan 2025 19:50:08 GMT  
 		Size: 3.5 MB (3470924 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3d2f56af9baa9ef3eaca6b8f8d4825ba48ae93ca44a56aba1b406218951db800`  
-		Last Modified: Tue, 03 Dec 2024 03:18:37 GMT  
+		Last Modified: Tue, 07 Jan 2025 06:40:48 GMT  
 		Size: 23.4 KB (23379 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -243,7 +243,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d516ec78466506376f2b8a93173e95bc289d376cc34f0619297d26408e85780d`  
-		Last Modified: Tue, 03 Dec 2024 12:53:08 GMT  
+		Last Modified: Mon, 16 Dec 2024 09:10:21 GMT  
 		Size: 14.6 MB (14574319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -271,7 +271,7 @@ $ docker pull jetty@sha256:bfc7c4a04af3f09f9aba80b9c93f90548190dab69b95bcc8b4c58
 
 -	Layers:
 	-	`sha256:32cce8e5fbe05bed9f3f3db07420785bc4a162fb119c20afec982ea8d4890398`  
-		Last Modified: Tue, 03 Dec 2024 12:53:08 GMT  
+		Last Modified: Tue, 07 Jan 2025 00:45:37 GMT  
 		Size: 3.6 MB (3602701 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8c63ebebef99299c609d60ab04712dd4e667b33bf4a798d95d4c6ee61fe12c87`  
