@@ -296,11 +296,11 @@ $ docker pull gcc@sha256:3db674176f791d92e7f37b1471151c3f2d6fbf9f3f0e47bd72d5ae7
 
 -	Layers:
 	-	`sha256:d3589671b669ae72d806f8eb645386b763e8bad176b23b5437681ef85264ec03`  
-		Last Modified: Wed, 25 Dec 2024 18:17:01 GMT  
+		Last Modified: Mon, 30 Dec 2024 11:11:32 GMT  
 		Size: 15.3 MB (15310669 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c1d7f3ecd1fd5873b5399c6e7e5a9f1599000c21e3c9ab2a72a195712d14e726`  
-		Last Modified: Wed, 25 Dec 2024 18:17:00 GMT  
+		Last Modified: Mon, 30 Dec 2024 11:21:31 GMT  
 		Size: 30.5 KB (30491 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -363,15 +363,15 @@ RUN set -ex; 	dpkg-divert --divert /usr/bin/gcc.orig --rename /usr/bin/gcc; 	dpk
 		Size: 2.7 MB (2733905 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8110c01b8db9f0c709f95238cf05184552ddf88654bdd3d978e3f9e84e45ccb2`  
-		Last Modified: Wed, 25 Dec 2024 13:42:58 GMT  
+		Last Modified: Wed, 25 Dec 2024 16:28:41 GMT  
 		Size: 149.3 MB (149263346 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c4b0c709912b8863c7f6bfeec0086eb40125733bb80e85d34b5169e1216d8cc7`  
-		Last Modified: Wed, 25 Dec 2024 13:42:54 GMT  
+		Last Modified: Wed, 25 Dec 2024 17:16:17 GMT  
 		Size: 9.6 KB (9592 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2b81e1ffdae03ac7d81d8114a6989aa0302621a01836168fdafd3bbfffa3a665`  
-		Last Modified: Wed, 25 Dec 2024 13:42:54 GMT  
+		Last Modified: Wed, 25 Dec 2024 16:28:37 GMT  
 		Size: 1.8 KB (1795 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -391,7 +391,7 @@ $ docker pull gcc@sha256:5080ae7862a1b43bc026a1c5134c805b27d2e768e8a9d6bb78cbc56
 
 -	Layers:
 	-	`sha256:f90c46ac6dee151d0dfd0e38c1811863638d268adf6e61263f7ef9d1554c8ac5`  
-		Last Modified: Wed, 25 Dec 2024 13:42:55 GMT  
+		Last Modified: Mon, 30 Dec 2024 13:23:26 GMT  
 		Size: 15.5 MB (15534806 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5f22306d162a0057da2a0ffd471d6b2fdd882765ae1b55b3531a555dc213db88`  
