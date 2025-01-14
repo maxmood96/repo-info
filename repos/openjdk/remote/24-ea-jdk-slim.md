@@ -1,7 +1,7 @@
 ## `openjdk:24-ea-jdk-slim`
 
 ```console
-$ docker pull openjdk@sha256:2bbd28a1564c9825dc16bcfedf5f3feaea79071f6cca8be9b3ae8e3e50df1216
+$ docker pull openjdk@sha256:89530e185e8d3880d339ee038c21b78accc61ff4f8456e5a5e1fdf3e3a5f3d68
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -83,18 +83,18 @@ $ docker pull openjdk@sha256:c058b322246dd23b743149ea4e32f076ccb0fa9d51d078194b8
 ### `openjdk:24-ea-jdk-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull openjdk@sha256:d934c9da2f0460061e6dcd45f0fb9614da4ab508523ec9de288dc57ebf06fca8
+$ docker pull openjdk@sha256:5c8e7d45ce305e5ae386baeb71ed2420384280139ed17a96289bc0477e90b781
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **242.6 MB (242581602 bytes)**  
+-	Total Size: **242.8 MB (242758207 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6fd7c04f6727cd09b8c6fa219738c59a86b9d4706ed3883a4856632a2d9179a2`
+-	Image ID: `sha256:07d2e44e9629ef314da8605014d410651d3a7afa4daddb3d99517d2bf092d99f`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 23 Dec 2024 00:00:00 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1734912000'
+# Fri, 10 Jan 2025 07:48:13 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1736726400'
 # Fri, 10 Jan 2025 07:48:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 10 Jan 2025 07:48:13 GMT
@@ -112,39 +112,39 @@ CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:f5c6876bb3d7d368455916fa98c705330bd8a8d9c080ccea8fe4c4b35a2ecb1f`  
-		Last Modified: Tue, 24 Dec 2024 21:34:20 GMT  
-		Size: 28.1 MB (28058723 bytes)  
+	-	`sha256:7ce705000c390df8b2edde0e8b9c65a6677da4503a8f8fd89b355a3f827a275f`  
+		Last Modified: Tue, 14 Jan 2025 01:35:55 GMT  
+		Size: 28.0 MB (28041031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ac6ff135ed08a1ea8c79c626a6c19f1b6f682176f521b40dbddaa1bbe09b4fd9`  
-		Last Modified: Sat, 11 Jan 2025 03:17:53 GMT  
-		Size: 3.6 MB (3639390 bytes)  
+	-	`sha256:c3e33f314e8fb2cf61d9a062d3b34d4767a526de678ed71addfa16d440e763fe`  
+		Last Modified: Tue, 14 Jan 2025 07:43:52 GMT  
+		Size: 3.8 MB (3833710 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ea1ea83e745618b009f8c7ade081ed1a47eee690b64731cbd008d31edd4fa968`  
-		Last Modified: Sat, 11 Jan 2025 03:23:35 GMT  
-		Size: 210.9 MB (210883489 bytes)  
+	-	`sha256:ad0f69a2b2e95535a32fad87c1576b8e011afdcef1b2d81b19a4e4f3aa63cdeb`  
+		Last Modified: Tue, 14 Jan 2025 07:45:51 GMT  
+		Size: 210.9 MB (210883466 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `openjdk:24-ea-jdk-slim` - unknown; unknown
 
 ```console
-$ docker pull openjdk@sha256:272449fdfb626324f6914f5a0bc8fea5a851902d5ad8d5937fb7c4c0eccda22e
+$ docker pull openjdk@sha256:1f3977e59d11c8eb1a80678eae81c0d4901d23fdc5a06fd4aa783cd8723eb838
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.6 MB (2553906 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:966c7a687cc7e5341b9a2c55ea264a45b99c4a51d876974f84b8d69a5b6e3ec1`
+-	Image ID: `sha256:f7b4f8c150bbcca18ee4752c13757fef4183cb9e128b5e00748511782cb977eb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8ffeffc6a469aef564e33fc667bdf9249aac1a86d0aa3e64e2c5ac20aa7d2c7c`  
-		Last Modified: Sat, 11 Jan 2025 03:23:29 GMT  
+	-	`sha256:91cb8ee4d7b1ad6c435e59b2000e5b24a8fcf952225c44d0467afc46bf0a8b5f`  
+		Last Modified: Tue, 14 Jan 2025 07:45:45 GMT  
 		Size: 2.5 MB (2534249 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:13764d8db3680a690681fae91fea37de6d1e975d767eaa7a8064f31a1fba801e`  
-		Last Modified: Sat, 11 Jan 2025 03:23:29 GMT  
+	-	`sha256:e813150b330ee3dafe5d64b7f34090d78073e57b23f191f2ac4b5acd6dfef725`  
+		Last Modified: Tue, 14 Jan 2025 07:45:45 GMT  
 		Size: 19.7 KB (19657 bytes)  
 		MIME: application/vnd.in-toto+json
