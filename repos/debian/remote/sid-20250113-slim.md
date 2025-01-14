@@ -215,7 +215,7 @@ RUN # debian.sh --arch 'i386' out/ 'sid' '@1736726400'
 
 -	Layers:
 	-	`sha256:c4ff50e38c9e876f8e8c9efcaeeb36a5fd76883d2cd4124c0fc16f8d82892671`  
-		Last Modified: Tue, 14 Jan 2025 01:33:22 GMT  
+		Last Modified: Tue, 14 Jan 2025 22:21:16 GMT  
 		Size: 30.5 MB (30517071 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -367,7 +367,7 @@ RUN # debian.sh --arch 's390x' out/ 'sid' '@1736726400'
 
 -	Layers:
 	-	`sha256:94484f9230939a3e10f5cd3e498560ce8ccb4e7bf233b817e46363d816d02541`  
-		Last Modified: Tue, 14 Jan 2025 01:35:52 GMT  
+		Last Modified: Tue, 14 Jan 2025 22:21:28 GMT  
 		Size: 29.2 MB (29170809 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
