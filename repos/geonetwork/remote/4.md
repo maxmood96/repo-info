@@ -351,15 +351,15 @@ VOLUME [/catalogue-data]
 		Size: 289.1 MB (289123463 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2f7582b9b6cdb30c93155bc512309bddae107a68f1fd74d25bd1033abd75b83d`  
-		Last Modified: Thu, 24 Oct 2024 22:05:21 GMT  
+		Last Modified: Mon, 06 Jan 2025 22:33:34 GMT  
 		Size: 553.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d30f86836f88de19b374793d4660e1ef8cb263d7ac47b7c60fb8a85ae9ec94d8`  
-		Last Modified: Thu, 24 Oct 2024 22:05:21 GMT  
+		Last Modified: Fri, 20 Dec 2024 08:49:35 GMT  
 		Size: 568.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dffca7db85f48751f68ac18a5a2aba538fda0915d6cbaa11b73f2583213372dd`  
-		Last Modified: Thu, 24 Oct 2024 22:05:21 GMT  
+		Last Modified: Mon, 16 Dec 2024 15:32:36 GMT  
 		Size: 134.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -383,6 +383,6 @@ $ docker pull geonetwork@sha256:7693dc1c58a952025227de5b1491914a627fbdeefda9e75c
 		Size: 4.7 MB (4713179 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f0b06df57b4b80aff0aed4bb0400495cf25f539016b70eb52adcd902450b3662`  
-		Last Modified: Thu, 24 Oct 2024 22:05:21 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:33:13 GMT  
 		Size: 25.8 KB (25832 bytes)  
 		MIME: application/vnd.in-toto+json
