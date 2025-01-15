@@ -58,7 +58,7 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 
 -	Layers:
 	-	`sha256:af302e5c37e9dc1dbe2eadc8f5059d82a914066b541b0d1a6daa91d0cc55057d`  
-		Last Modified: Tue, 14 Jan 2025 20:32:59 GMT  
+		Last Modified: Tue, 14 Jan 2025 01:33:13 GMT  
 		Size: 28.2 MB (28212417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:401f19b00195b76f3e0327677012339b9ffe735976f9a0cc895ec8c96ba1049d`  
@@ -78,15 +78,15 @@ CMD ["/usr/bin/java" "-server" "-Djava.awt.headless=true" "-Xmx2g" "-jar" "/opt/
 		Size: 415.0 KB (414955 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e4dc361a846175db20b63927cb3924b56aeaeca552509f763f67965c1efb0d1c`  
-		Last Modified: Wed, 15 Jan 2025 07:25:02 GMT  
+		Last Modified: Tue, 14 Jan 2025 02:34:06 GMT  
 		Size: 99.3 KB (99278 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:02a333b9a57418ecfb361ed17a6a0877cb00070aa9f945dc2f284dcfee1914a6`  
-		Last Modified: Wed, 15 Jan 2025 07:25:03 GMT  
+		Last Modified: Tue, 14 Jan 2025 02:34:06 GMT  
 		Size: 274.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:01d7487a36f127c29a998687e7904af7341ff1dcd5c443b78ba5a1092e74f0f3`  
-		Last Modified: Tue, 14 Jan 2025 02:34:08 GMT  
+		Last Modified: Wed, 15 Jan 2025 09:16:48 GMT  
 		Size: 41.6 MB (41631728 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:56e0ef7e407a6804703e784014daa95ab53996cab851d7b005d22cdf667ba855`  
