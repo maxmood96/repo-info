@@ -1,9 +1,9 @@
-# `unit:1.34.0-jsc11`
+# `unit:1.34.1-jsc11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4b56e83af0a7214d10f49386ed9101612fe416df49fbb5b81be3c12149d047cf`
-- Created: `2024-12-19T18:23:57Z`
+- Image ID: `sha256:5f31c5e71da0b0d88c9bc974036fa345055cfed9e7906bec5fc5f0de06e1e2ad`
+- Created: `2025-01-10T21:01:46Z`
 - Virtual Size: ~ 466.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -24,7 +24,7 @@
   - `org.opencontainers.image.title=Unit (jsc11)`
   - `org.opencontainers.image.url=https://unit.nginx.org`
   - `org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>`
-  - `org.opencontainers.image.version=1.34.0`
+  - `org.opencontainers.image.version=1.34.1`
 
 ## `dpkg` (`.deb`-based packages)
 
