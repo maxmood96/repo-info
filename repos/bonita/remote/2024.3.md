@@ -129,7 +129,7 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 		Size: 16.0 MB (16022381 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8f8817feb2b110cc1789fe20f09dcc5c51f115ba14d2835e68c75d641a587590`  
-		Last Modified: Wed, 08 Jan 2025 19:17:01 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:33:26 GMT  
 		Size: 46.6 MB (46615830 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f5df38f82b8b06ef5d393e7b14812384815dcaf3ff17dfb71ca2c5b2ee6e6dee`  
@@ -145,7 +145,7 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 		Size: 1.9 MB (1860780 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f9c5994d5129eaf63e216754bf2dbbf2182b5a4897ea8b4138d4d7d1c64fc2d`  
-		Last Modified: Wed, 08 Jan 2025 20:33:11 GMT  
+		Last Modified: Wed, 15 Jan 2025 02:12:51 GMT  
 		Size: 123.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:875274e038f9cc07698bba33d02eb6cd80c4a30516e485a38ceea8a9979d0692`  
@@ -161,7 +161,7 @@ CMD ["/opt/bonita/server/bin/catalina.sh" "run"]
 		Size: 3.7 KB (3709 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f480dc8b10a9c6b713edb69d58292ad9becf5e50e2a95f83d2841e088d060320`  
-		Last Modified: Wed, 08 Jan 2025 20:33:14 GMT  
+		Last Modified: Wed, 15 Jan 2025 00:59:17 GMT  
 		Size: 119.5 MB (119515308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:be0a9b544bb55acb774b760e93a67a8918c1d5f3123d79f7c6bc5b21d37eaba4`  
