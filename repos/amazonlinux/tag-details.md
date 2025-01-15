@@ -43,7 +43,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:dec7ae9c3829dc3a08a2fc4fb66c08e0cb32f91ec7cdfa7060763ceb4b09ad46`  
-		Last Modified: Fri, 13 Dec 2024 18:16:13 GMT  
+		Last Modified: Mon, 22 Jul 2024 22:06:37 GMT  
 		Size: 62.7 MB (62718284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -154,7 +154,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:937ce5298690a9c75a91c1481f1c933f32ea7abe5993cf1e00e3d9da14f18bdf`  
-		Last Modified: Fri, 10 Jan 2025 22:01:38 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:35:27 GMT  
 		Size: 64.6 MB (64590305 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -174,7 +174,7 @@ $ docker pull amazonlinux@sha256:17b657423d2d4678c9ca8d1126a1c2612e2ea3f83a3abc1
 
 -	Layers:
 	-	`sha256:68f43541dc9ed94bdf281c5b9b275e83c8ff4f64fab74a6a1bf360163d396832`  
-		Last Modified: Sat, 11 Jan 2025 01:29:26 GMT  
+		Last Modified: Wed, 15 Jan 2025 00:09:03 GMT  
 		Size: 5.1 MB (5066610 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3c98a520a2db3ec1fc8910428e541f0fde1025b97a20359fc52a328ddb390f93`  
@@ -223,7 +223,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:dec7ae9c3829dc3a08a2fc4fb66c08e0cb32f91ec7cdfa7060763ceb4b09ad46`  
-		Last Modified: Fri, 13 Dec 2024 18:16:13 GMT  
+		Last Modified: Mon, 22 Jul 2024 22:06:37 GMT  
 		Size: 62.7 MB (62718284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -283,7 +283,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:dec7ae9c3829dc3a08a2fc4fb66c08e0cb32f91ec7cdfa7060763ceb4b09ad46`  
-		Last Modified: Fri, 13 Dec 2024 18:16:13 GMT  
+		Last Modified: Mon, 22 Jul 2024 22:06:37 GMT  
 		Size: 62.7 MB (62718284 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -345,7 +345,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:889191eec1e06c30b7664dfba1dba1d3f04b40b1cf6af4214dac90b998f32621`  
-		Last Modified: Tue, 14 Jan 2025 20:33:09 GMT  
+		Last Modified: Fri, 10 Jan 2025 02:01:02 GMT  
 		Size: 53.2 MB (53150475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -418,7 +418,7 @@ $ docker pull amazonlinux@sha256:cc0fd0b5f5ebee9f51e1860c786404d654c65d88bb70adc
 		Size: 4.7 MB (4663964 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cac024b163db9fb09b3cf0785bcbe416483010be8cdcdd69cb863e2d2c7fd659`  
-		Last Modified: Sat, 11 Jan 2025 01:28:56 GMT  
+		Last Modified: Wed, 15 Jan 2025 08:58:53 GMT  
 		Size: 8.9 KB (8916 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -465,7 +465,7 @@ CMD ["/bin/bash"]
 
 -	Layers:
 	-	`sha256:889191eec1e06c30b7664dfba1dba1d3f04b40b1cf6af4214dac90b998f32621`  
-		Last Modified: Tue, 14 Jan 2025 20:33:09 GMT  
+		Last Modified: Fri, 10 Jan 2025 02:01:02 GMT  
 		Size: 53.2 MB (53150475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -538,6 +538,6 @@ $ docker pull amazonlinux@sha256:cc0fd0b5f5ebee9f51e1860c786404d654c65d88bb70adc
 		Size: 4.7 MB (4663964 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cac024b163db9fb09b3cf0785bcbe416483010be8cdcdd69cb863e2d2c7fd659`  
-		Last Modified: Sat, 11 Jan 2025 01:28:56 GMT  
+		Last Modified: Wed, 15 Jan 2025 08:58:53 GMT  
 		Size: 8.9 KB (8916 bytes)  
 		MIME: application/vnd.in-toto+json
