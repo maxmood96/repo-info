@@ -53,7 +53,7 @@ CMD ["api-firewall"]
 
 -	Layers:
 	-	`sha256:1f3e46996e2966e4faa5846e56e76e3748b7315e2ded61476c24403d592134f0`  
-		Last Modified: Tue, 14 Jan 2025 20:33:02 GMT  
+		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
 		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e6dbfa79fb53abbdf09066e460642a2eefe0fd22d4d689f445d0b8d6a359c12`  
@@ -137,7 +137,7 @@ CMD ["api-firewall"]
 		Size: 4.0 MB (3992359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:74d0395aaa7f38fd2896630a4de671efd70d9fbd96d428254351a941ea5bd731`  
-		Last Modified: Wed, 08 Jan 2025 18:05:54 GMT  
+		Last Modified: Wed, 15 Jan 2025 01:23:01 GMT  
 		Size: 906.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9452720089bb123a26c1620029c62c562c856e8f2953e26ecc86c75ce382d906`  
