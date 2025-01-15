@@ -55,7 +55,7 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 
 -	Layers:
 	-	`sha256:af302e5c37e9dc1dbe2eadc8f5059d82a914066b541b0d1a6daa91d0cc55057d`  
-		Last Modified: Tue, 14 Jan 2025 20:32:59 GMT  
+		Last Modified: Tue, 14 Jan 2025 01:33:13 GMT  
 		Size: 28.2 MB (28212417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:59ceb8aafe9c77e86d2521700d454ad8ae4387401367949ca90613c76b91df7f`  
@@ -67,7 +67,7 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e979a3de595b84c17e74b35087195dee7c6e6b888c95b9b3b1590cb5ff10baf5`  
-		Last Modified: Tue, 14 Jan 2025 02:16:01 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:53:34 GMT  
 		Size: 1.0 KB (1028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -143,7 +143,7 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Size: 28.0 MB (28041031 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:89cf553a1d689590ff4987101df413b6286a024eb13d9a13ad65e42a1999caff`  
-		Last Modified: Tue, 14 Jan 2025 02:27:20 GMT  
+		Last Modified: Tue, 14 Jan 2025 21:05:09 GMT  
 		Size: 74.4 MB (74408514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -151,7 +151,7 @@ CMD ["/opt/emqx/bin/emqx" "foreground"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:df10519d0232bec08057b71fd3704f520f7da59f5e891731e021b62b3d10eb2e`  
-		Last Modified: Tue, 14 Jan 2025 02:27:17 GMT  
+		Last Modified: Tue, 14 Jan 2025 21:01:34 GMT  
 		Size: 1.0 KB (1030 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
