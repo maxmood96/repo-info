@@ -43,7 +43,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 
 -	Layers:
 	-	`sha256:f54a5150a7602eaef3169b83e73d5927b20aef2fcaefcba18b532bd63b328fff`  
-		Last Modified: Tue, 14 Jan 2025 20:33:01 GMT  
+		Last Modified: Wed, 08 Jan 2025 17:23:37 GMT  
 		Size: 3.4 MB (3417974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3a5f57e41e59d0c9c80fd27629e7c742fb2f4e4d20fab24b9cac2dab0be7e70e`  
