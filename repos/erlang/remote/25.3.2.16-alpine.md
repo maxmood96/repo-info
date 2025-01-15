@@ -105,7 +105,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:c8a32ed454e751770c0976636b8d0d0fccc4f778a2dd26c428067d613be1a299`  
-		Last Modified: Wed, 08 Jan 2025 17:34:15 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:45:20 GMT  
 		Size: 3.1 MB (3095514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d676363bd85db2deea967057fcb360048240eea2a2b34ddb58fe930eb43ec78e`  
@@ -227,7 +227,7 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:6d632fc6244662e41ee3b3f29090684a520e615dc5c282638a7587366dcd4fb9`  
-		Last Modified: Wed, 08 Jan 2025 17:23:34 GMT  
+		Last Modified: Tue, 14 Jan 2025 21:25:38 GMT  
 		Size: 3.5 MB (3470969 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ea8d535923eb304eaee8fa0810287a2589f226e81567623494f211565bcc7f21`  
