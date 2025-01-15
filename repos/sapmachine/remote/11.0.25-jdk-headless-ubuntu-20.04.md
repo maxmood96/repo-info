@@ -72,7 +72,7 @@ $ docker pull sapmachine@sha256:82495d46fd7ec02b3ee296c12bc4300f03773a7fbe76d074
 
 -	Layers:
 	-	`sha256:1ed36dc04d8f35db6ca9de0cd2dbb34233ab32961aab30451996554fb9ac7bc8`  
-		Last Modified: Wed, 08 Jan 2025 12:56:11 GMT  
+		Last Modified: Wed, 16 Oct 2024 19:00:20 GMT  
 		Size: 2.1 MB (2144609 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:416960bd3f9a7dc12660b12ce5448ac5e278a2f3e26bd81f0014ca6fe1543a3c`  
@@ -115,11 +115,11 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
-		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Last Modified: Fri, 13 Dec 2024 13:25:16 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0d0a8bac4dc6627fb05e5e39e5bc8adc27fc2742d27c9ad422b844265a5b5436`  
-		Last Modified: Mon, 06 Jan 2025 23:04:21 GMT  
+		Last Modified: Wed, 16 Oct 2024 19:52:39 GMT  
 		Size: 197.7 MB (197693252 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -182,11 +182,11 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:cd720328ce8da41e08a7dd5922261b0c1980c2565df21b810488c55260400f68`  
-		Last Modified: Fri, 11 Oct 2024 04:41:42 GMT  
+		Last Modified: Fri, 13 Dec 2024 21:07:44 GMT  
 		Size: 32.1 MB (32076506 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e3e67cd1d2afff61b42a7a4203f1785b9138b791e0b7bccd144f9c5d0c26570d`  
-		Last Modified: Mon, 06 Jan 2025 20:06:02 GMT  
+		Last Modified: Wed, 16 Oct 2024 20:30:52 GMT  
 		Size: 185.3 MB (185317262 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -206,7 +206,7 @@ $ docker pull sapmachine@sha256:8c35a22c55ed3db6118bce5003946000b34e28bfac7dc44c
 
 -	Layers:
 	-	`sha256:5c7a172140d7c37ac45c4778e44729c25d177c3c1eb73662010ecc93c8b3d455`  
-		Last Modified: Wed, 16 Oct 2024 20:30:47 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:00:58 GMT  
 		Size: 2.1 MB (2145737 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e14f969bb31a33862e6a5a11354253523f86d95366d652895d315afb28eef921`  
