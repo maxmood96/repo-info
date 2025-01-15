@@ -61,7 +61,7 @@ $ docker pull busybox@sha256:20bcd166f6fb34d5af04849fb4af093e9bc31fe412ce2d6c69e
 
 -	Layers:
 	-	`sha256:ae3d38bc7949f528a0297ba0b186ac5416f3f814753e86e157b2997c451a7372`  
-		Last Modified: Tue, 14 Jan 2025 23:07:31 GMT  
+		Last Modified: Mon, 13 Jan 2025 21:27:27 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -84,7 +84,7 @@ RUN BusyBox 1.37.0 (musl), Alpine 3.21.2
 
 -	Layers:
 	-	`sha256:b84cf97bf870f044e33c4531e6a88912907ffb2f342c1b2b8c8dee075dc1435d`  
-		Last Modified: Fri, 13 Dec 2024 16:22:03 GMT  
+		Last Modified: Wed, 11 Dec 2024 00:27:16 GMT  
 		Size: 951.3 KB (951281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -107,7 +107,7 @@ RUN BusyBox 1.37.0 (musl), Alpine 3.21.2
 
 -	Layers:
 	-	`sha256:4235c90e874ce1e491d9dbcfdfdd8f19e7cf65e4424eccf8ba03a42dd1f171d3`  
-		Last Modified: Sun, 15 Dec 2024 16:07:46 GMT  
+		Last Modified: Wed, 11 Dec 2024 00:27:29 GMT  
 		Size: 847.8 KB (847847 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -213,7 +213,7 @@ $ docker pull busybox@sha256:e6bea51d3cacaa71ea07e520dfb2591a4da3610cc23dfab03b3
 
 -	Layers:
 	-	`sha256:aab06d11588a905db1189e2ef2818ff8f7282b871e2a318591255683c86047ce`  
-		Last Modified: Mon, 13 Jan 2025 21:27:32 GMT  
+		Last Modified: Wed, 15 Jan 2025 00:30:18 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -322,7 +322,7 @@ RUN BusyBox 1.37.0 (musl), Alpine 3.21.2
 
 -	Layers:
 	-	`sha256:7ff99405658c145780ae0f0b7d4689b8b3450d2602687c95434e4787aeff76bf`  
-		Last Modified: Wed, 11 Dec 2024 00:40:21 GMT  
+		Last Modified: Tue, 17 Dec 2024 23:51:23 GMT  
 		Size: 924.0 KB (923974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -342,6 +342,6 @@ $ docker pull busybox@sha256:6c2da6c98e9b4830719f444a3454b05ff6bbf3a16e498e31f90
 
 -	Layers:
 	-	`sha256:e2652da1db7c274e0421f4634720decebc48ec1251c7404c4402445928d7dfe6`  
-		Last Modified: Mon, 13 Jan 2025 21:28:12 GMT  
+		Last Modified: Tue, 14 Jan 2025 23:13:01 GMT  
 		Size: 2.0 KB (2026 bytes)  
 		MIME: application/vnd.in-toto+json
