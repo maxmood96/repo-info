@@ -48,7 +48,7 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:de44b265507ae44b212defcb50694d666f136b35c1090d9709068bc861bb2d64`  
-		Last Modified: Fri, 13 Dec 2024 13:08:53 GMT  
+		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9ad605eabcde67ff8799a57b7de2f48bba31c03e32892d5aafdd57919629650f`  
@@ -119,7 +119,7 @@ CMD ["jshell"]
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9e65a1cfe512cbdf8eb74bd855246102a64335947f8879b3f05072b48d0cb868`  
-		Last Modified: Tue, 03 Dec 2024 10:54:28 GMT  
+		Last Modified: Wed, 25 Dec 2024 10:14:40 GMT  
 		Size: 52.4 MB (52362731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -139,11 +139,11 @@ $ docker pull sapmachine@sha256:a452f7930a1d3932df3d18f8249ca492c2a0724ea123b8b9
 
 -	Layers:
 	-	`sha256:645b70541d87717bbf50d1487536af98c35fafaef88d25d9cf1d5d08f4479f7c`  
-		Last Modified: Tue, 07 Jan 2025 08:01:02 GMT  
+		Last Modified: Tue, 03 Dec 2024 10:54:27 GMT  
 		Size: 2.1 MB (2148239 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7e5ed6a07d093c8e00e16da618910226e307c1cd44751b202b14c8f69b718d44`  
-		Last Modified: Tue, 03 Dec 2024 10:54:26 GMT  
+		Last Modified: Mon, 06 Jan 2025 18:04:34 GMT  
 		Size: 9.7 KB (9746 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -182,11 +182,11 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:4e112885c8061d52bcd0f8d99851b65be887b95c74de235a16946b3562526bbb`  
-		Last Modified: Tue, 19 Nov 2024 17:38:45 GMT  
+		Last Modified: Fri, 13 Dec 2024 16:08:22 GMT  
 		Size: 34.4 MB (34388820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1b2371f99c00c3221988de9077fda6a937fe19fb620ee5d8e2eae2302a8450e2`  
-		Last Modified: Tue, 03 Dec 2024 08:43:42 GMT  
+		Last Modified: Tue, 07 Jan 2025 21:01:49 GMT  
 		Size: 54.4 MB (54376569 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -206,10 +206,10 @@ $ docker pull sapmachine@sha256:8322ef95cc212de59bf000bf5fe8a3881f940ef08f0b58ad
 
 -	Layers:
 	-	`sha256:56ff17229c01ac21a0b1e381f843296cdfbaf726584ef05bcd950cf457057885`  
-		Last Modified: Tue, 03 Dec 2024 08:43:40 GMT  
+		Last Modified: Mon, 06 Jan 2025 18:04:35 GMT  
 		Size: 2.2 MB (2151643 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d4bc1771e982689e054bf34e017fe5d4f5398f9e7c764888be3742d1349fa116`  
-		Last Modified: Tue, 03 Dec 2024 08:43:40 GMT  
+		Last Modified: Tue, 07 Jan 2025 08:59:13 GMT  
 		Size: 9.7 KB (9673 bytes)  
 		MIME: application/vnd.in-toto+json
