@@ -54,7 +54,7 @@ $ docker pull mageia@sha256:52ceae27851bde9cfcbfdabb5c427b18b7582002a25405c50d45
 
 -	Layers:
 	-	`sha256:d0e1078df372bc6ac3b82c94a5aa0a129062b314c677203542166b715f093245`  
-		Last Modified: Mon, 06 Jan 2025 17:49:17 GMT  
+		Last Modified: Mon, 08 Jul 2024 18:59:08 GMT  
 		Size: 7.0 MB (6986866 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fd5a1a63cd3b6b5409fb6f609024867c7c437fe771eb737789cdfc3cd07a54b1`  
@@ -152,10 +152,10 @@ $ docker pull mageia@sha256:d4c6f767f8f627811d6226ccfd13f4558ea175db58af0a6691fe
 
 -	Layers:
 	-	`sha256:318d39a6a31f7154b3e9fb3ee9e4a8ef944e43cf1f8a7d8c95340e5ae40e4f66`  
-		Last Modified: Tue, 07 Jan 2025 04:43:40 GMT  
+		Last Modified: Mon, 08 Jul 2024 19:17:56 GMT  
 		Size: 7.0 MB (6968158 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:75297979f278bba4996a0a2ab13166710ac56b0b722d2d342c240b9f22b69ceb`  
-		Last Modified: Tue, 07 Jan 2025 02:43:50 GMT  
+		Last Modified: Mon, 08 Jul 2024 19:17:55 GMT  
 		Size: 5.0 KB (5025 bytes)  
 		MIME: application/vnd.in-toto+json
