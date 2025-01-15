@@ -85,7 +85,7 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7d20d76f38ebab7d6e8772ebb441099849fc90618b045e32662ead22b18506b6`  
-		Last Modified: Fri, 13 Dec 2024 16:30:47 GMT  
+		Last Modified: Thu, 24 Oct 2024 00:57:03 GMT  
 		Size: 20.3 MB (20256484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a591e2c0df0bf051ccca3642da020784df08274071ed8937da6f15ae417c7ff0`  
@@ -141,7 +141,7 @@ $ docker pull spark@sha256:e8126b6e64b75ded7f3302dc6e4de1a4cf4b3d019be21af87b862
 		Size: 4.4 MB (4352171 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e096a7036bcf26aade4e1ea831c1372f892f66832a5f4c714a5d469f2675a22f`  
-		Last Modified: Tue, 07 Jan 2025 01:02:49 GMT  
+		Last Modified: Tue, 24 Dec 2024 21:33:27 GMT  
 		Size: 23.1 KB (23148 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -227,11 +227,11 @@ ENTRYPOINT ["/opt/entrypoint.sh"]
 		Size: 45.6 MB (45578850 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e32b0317d30777fb74a12a1353e97c830b5d2c85173c5ce3d417606ee53f66b9`  
-		Last Modified: Thu, 24 Oct 2024 01:05:47 GMT  
+		Last Modified: Fri, 13 Dec 2024 16:46:09 GMT  
 		Size: 160.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6ea45e6dcfef2a2e83c7d7129156bcf81ed16f6d0344688a9374f5edae650faa`  
-		Last Modified: Fri, 13 Dec 2024 16:22:28 GMT  
+		Last Modified: Thu, 24 Oct 2024 01:05:47 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ebdf5531709cfbf7982feefc02653086a392b0a26f90dc96bde2b147e20faf05`  
@@ -271,10 +271,10 @@ $ docker pull spark@sha256:69b1b88df9c686597f6021188d8ac6f879e007750ed8fe40cc8c0
 
 -	Layers:
 	-	`sha256:13f10db6e94df24aa165682cafdc99948d8af63aa2aa09d99bd77e4fec37bb61`  
-		Last Modified: Wed, 25 Dec 2024 10:27:15 GMT  
+		Last Modified: Tue, 24 Dec 2024 21:57:28 GMT  
 		Size: 4.4 MB (4352475 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:84b8a10e2b31ddecf7f0d3a4f5586c0b61751c9d162903da3ba565318fcc61bb`  
-		Last Modified: Tue, 07 Jan 2025 03:56:42 GMT  
+		Last Modified: Tue, 24 Dec 2024 21:57:28 GMT  
 		Size: 23.3 KB (23270 bytes)  
 		MIME: application/vnd.in-toto+json
