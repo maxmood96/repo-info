@@ -82,7 +82,7 @@ CMD ["catalina.sh" "run"]
 		Size: 12.2 MB (12174555 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc68d416e304a966aa9597d559b2464182a7570bf930c842233bfdf8649f6079`  
-		Last Modified: Fri, 20 Dec 2024 00:33:34 GMT  
+		Last Modified: Thu, 19 Dec 2024 21:31:39 GMT  
 		Size: 51.5 MB (51533612 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4ff7cd257ec930478cab623ce72d1403a1bd98f129dfeaa1f3b973399c6e3a97`  
@@ -94,7 +94,7 @@ CMD ["catalina.sh" "run"]
 		Size: 174.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4706e03439c8023983f87dff52b235fec6399df0b44ff4aea6533fc1421348a1`  
@@ -130,7 +130,7 @@ $ docker pull tomee@sha256:94e020c2aa1ca109fc760bff9471c9c9e2f1b2a1aba3ed7a0a667
 		Size: 4.1 MB (4062745 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cb1c1d0a1fb7420ce69402c79267cdd55b50347cd0efbc396eb10d0cc62575c2`  
-		Last Modified: Wed, 08 Jan 2025 02:00:14 GMT  
+		Last Modified: Tue, 07 Jan 2025 01:34:04 GMT  
 		Size: 26.7 KB (26687 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -197,15 +197,15 @@ CMD ["catalina.sh" "run"]
 
 -	Layers:
 	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
-		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
+		Last Modified: Fri, 13 Dec 2024 13:09:05 GMT  
 		Size: 27.4 MB (27358329 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:77e2579fa9ed432452dd8563d1dc040de22c49fcfc4a3cd906b5e75b095c2926`  
-		Last Modified: Sat, 14 Dec 2024 00:32:28 GMT  
+		Last Modified: Mon, 18 Nov 2024 19:12:40 GMT  
 		Size: 12.1 MB (12128239 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c5e210de8a172dd4e23f5a6abf38a0f376054bdc9fde72682f5788b6e8c331d3`  
-		Last Modified: Fri, 20 Dec 2024 10:11:46 GMT  
+		Last Modified: Thu, 19 Dec 2024 22:26:26 GMT  
 		Size: 47.6 MB (47553894 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:122541409caa50bdb7ae01ab6eb56b71f4d552a72111ef5ae20bc743a52aef83`  
@@ -213,15 +213,15 @@ CMD ["catalina.sh" "run"]
 		Size: 4.6 MB (4637310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:076a022a281ba3a53164d118588d0e1b7a81989d7d9cb6c3fc73e2fe67233073`  
-		Last Modified: Thu, 19 Dec 2024 23:31:04 GMT  
+		Last Modified: Fri, 20 Dec 2024 10:14:32 GMT  
 		Size: 173.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d38556ffb3b0da020eb8d9e4b40c7070c543f7d3a8e81750e79a86f371cf4aa0`  
-		Last Modified: Thu, 19 Dec 2024 23:31:05 GMT  
+		Last Modified: Fri, 20 Dec 2024 10:14:02 GMT  
 		Size: 2.3 MB (2341657 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9e1d3daab03c7e87d275b0309ed5f3130862fd99f845ba53fc49e6ab73c38c5f`  
@@ -229,7 +229,7 @@ CMD ["catalina.sh" "run"]
 		Size: 75.6 KB (75634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8148901fd2175d7bf05e7771c55ed353adcc6b715730fe3ab78c27c8238af407`  
-		Last Modified: Tue, 07 Jan 2025 03:00:36 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:04:45 GMT  
 		Size: 81.8 MB (81761681 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -249,7 +249,7 @@ $ docker pull tomee@sha256:b3afba05fab73eca1045586b18b48bfc0ca8b026b09beff1eb0c7
 
 -	Layers:
 	-	`sha256:fb513fd518df6334abf05b27426ac3ebd82533becd9cd3b61db2fee6fa86524a`  
-		Last Modified: Tue, 07 Jan 2025 05:18:10 GMT  
+		Last Modified: Tue, 07 Jan 2025 03:00:33 GMT  
 		Size: 4.1 MB (4054315 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:3c46ce4bf2694c755ea97591307b75f4897a850fdfdbb8cf3f16d478497f1aa4`  
