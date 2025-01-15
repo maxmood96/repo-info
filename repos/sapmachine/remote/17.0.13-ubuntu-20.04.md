@@ -76,7 +76,7 @@ $ docker pull sapmachine@sha256:25120453d0c49fa41234e7001fecac1b1f1d7f325599ab34
 		Size: 2.4 MB (2370655 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8efbe551f07b533bad35f1010e80f7642299fb25ac2dc779a55eb5cb3b84e7c8`  
-		Last Modified: Mon, 06 Jan 2025 18:04:22 GMT  
+		Last Modified: Wed, 16 Oct 2024 19:00:15 GMT  
 		Size: 9.9 KB (9922 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -139,11 +139,11 @@ $ docker pull sapmachine@sha256:8c82c865b7e821f53cba8f1907f884ebce5e702c0f974ee8
 
 -	Layers:
 	-	`sha256:46ddffb969f02e7ccb46c02ce802f1baa79023fa034a30b9e73cdb8d48f018bd`  
-		Last Modified: Mon, 06 Jan 2025 20:07:56 GMT  
+		Last Modified: Wed, 16 Oct 2024 19:37:37 GMT  
 		Size: 2.4 MB (2370339 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:01d451e210ffa2396050dc26a4654b5cf69bc7cf5e3b7beedc89d9ea2cbc6da8`  
-		Last Modified: Wed, 16 Oct 2024 19:37:37 GMT  
+		Last Modified: Mon, 06 Jan 2025 18:04:23 GMT  
 		Size: 10.1 KB (10068 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -182,7 +182,7 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:cd720328ce8da41e08a7dd5922261b0c1980c2565df21b810488c55260400f68`  
-		Last Modified: Fri, 13 Dec 2024 21:07:44 GMT  
+		Last Modified: Fri, 11 Oct 2024 04:41:42 GMT  
 		Size: 32.1 MB (32076506 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f17fe9b9ccedcadd38d46116cf3c06b36670cd084ff3c257dc0420d0212acc10`  
@@ -206,10 +206,10 @@ $ docker pull sapmachine@sha256:f153b4609eb8d049e4692d5382c20fa0ba7d621c8b860fed
 
 -	Layers:
 	-	`sha256:23b05673d98dc7a76d47292460ee6275bf4716d6162ecf5148a2eedf54c870ce`  
-		Last Modified: Wed, 16 Oct 2024 20:05:13 GMT  
+		Last Modified: Mon, 06 Jan 2025 20:07:58 GMT  
 		Size: 2.4 MB (2372495 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:873a4c22e7e5584b3adfe750fe839a73d8bf5848b6454319202025c154841cb4`  
-		Last Modified: Wed, 16 Oct 2024 20:05:12 GMT  
+		Last Modified: Mon, 06 Jan 2025 23:05:46 GMT  
 		Size: 10.0 KB (9984 bytes)  
 		MIME: application/vnd.in-toto+json
