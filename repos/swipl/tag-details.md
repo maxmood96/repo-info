@@ -51,7 +51,7 @@ CMD ["swipl"]
 
 -	Layers:
 	-	`sha256:af302e5c37e9dc1dbe2eadc8f5059d82a914066b541b0d1a6daa91d0cc55057d`  
-		Last Modified: Tue, 14 Jan 2025 01:33:13 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:32:59 GMT  
 		Size: 28.2 MB (28212417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0bda09f38f94ba8e1721d4c612c85b596bab12a62474de5f0c2afc876853a033`  
@@ -59,7 +59,7 @@ CMD ["swipl"]
 		Size: 49.2 MB (49219166 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d23943b14bb0972f43aed96aa037e18b51ed2bcdca724f41df3126cb7aff116`  
-		Last Modified: Tue, 14 Jan 2025 22:06:47 GMT  
+		Last Modified: Tue, 14 Jan 2025 02:30:12 GMT  
 		Size: 18.5 MB (18529816 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -261,11 +261,11 @@ CMD ["swipl"]
 
 -	Layers:
 	-	`sha256:af302e5c37e9dc1dbe2eadc8f5059d82a914066b541b0d1a6daa91d0cc55057d`  
-		Last Modified: Tue, 14 Jan 2025 01:33:13 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:32:59 GMT  
 		Size: 28.2 MB (28212417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14261c79b9569979757060ec11e9c50a02356815ec5a66fa7366e97b593ddb75`  
-		Last Modified: Tue, 14 Jan 2025 02:30:29 GMT  
+		Last Modified: Wed, 15 Jan 2025 01:03:40 GMT  
 		Size: 49.2 MB (49219240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:081ca1840c2dd4f019a7c09a67aa581c1660f0f5526640fe6b64c990768897cb`  
@@ -471,11 +471,11 @@ CMD ["swipl"]
 
 -	Layers:
 	-	`sha256:af302e5c37e9dc1dbe2eadc8f5059d82a914066b541b0d1a6daa91d0cc55057d`  
-		Last Modified: Tue, 14 Jan 2025 01:33:13 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:32:59 GMT  
 		Size: 28.2 MB (28212417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14261c79b9569979757060ec11e9c50a02356815ec5a66fa7366e97b593ddb75`  
-		Last Modified: Tue, 14 Jan 2025 02:30:29 GMT  
+		Last Modified: Wed, 15 Jan 2025 01:03:40 GMT  
 		Size: 49.2 MB (49219240 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:081ca1840c2dd4f019a7c09a67aa581c1660f0f5526640fe6b64c990768897cb`  
@@ -681,7 +681,7 @@ CMD ["swipl"]
 
 -	Layers:
 	-	`sha256:af302e5c37e9dc1dbe2eadc8f5059d82a914066b541b0d1a6daa91d0cc55057d`  
-		Last Modified: Tue, 14 Jan 2025 01:33:13 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:32:59 GMT  
 		Size: 28.2 MB (28212417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0bda09f38f94ba8e1721d4c612c85b596bab12a62474de5f0c2afc876853a033`  
@@ -689,7 +689,7 @@ CMD ["swipl"]
 		Size: 49.2 MB (49219166 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d23943b14bb0972f43aed96aa037e18b51ed2bcdca724f41df3126cb7aff116`  
-		Last Modified: Tue, 14 Jan 2025 22:06:47 GMT  
+		Last Modified: Tue, 14 Jan 2025 02:30:12 GMT  
 		Size: 18.5 MB (18529816 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
