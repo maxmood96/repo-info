@@ -105,7 +105,7 @@ $ docker pull fluentd@sha256:1ef10734f2f1bf9e4e3fca546feb000532c083ec8ec17107db6
 		Size: 972.8 KB (972773 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bf961a846aa828aa17a9eb140c86565feae755052fb2073c6b3d4f86a60cf97f`  
-		Last Modified: Wed, 08 Jan 2025 18:17:58 GMT  
+		Last Modified: Wed, 15 Jan 2025 00:00:18 GMT  
 		Size: 14.9 KB (14857 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -155,7 +155,7 @@ CMD ["fluentd"]
 
 -	Layers:
 	-	`sha256:bfff14c232517ab149a6524fba444f7b5a336feab49d08abd27455f12ceb2efc`  
-		Last Modified: Wed, 15 Jan 2025 00:02:14 GMT  
+		Last Modified: Wed, 08 Jan 2025 17:24:09 GMT  
 		Size: 3.2 MB (3176999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:40c1f6328a98409ef7ebdb673a31904f1733fe61a8606be8982970e7d8d8395b`  
@@ -241,15 +241,15 @@ CMD ["fluentd"]
 
 -	Layers:
 	-	`sha256:88b83b407e415cb5cb78776f0e83bf403b89f77eb02721ce6a3cbf1eba723438`  
-		Last Modified: Tue, 14 Jan 2025 20:33:05 GMT  
+		Last Modified: Wed, 08 Jan 2025 17:24:18 GMT  
 		Size: 3.4 MB (3360532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a667ca550d5c342aef10ed2642c61d3f25e721bcf025d041c2985912f17ca63b`  
-		Last Modified: Thu, 09 Jan 2025 06:07:42 GMT  
+		Last Modified: Tue, 14 Jan 2025 23:28:03 GMT  
 		Size: 10.2 MB (10210246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6868acfd0a2f6827fe612eb47cbc113f32f60001154c030e25bdeb792ed800a2`  
-		Last Modified: Tue, 14 Jan 2025 23:27:39 GMT  
+		Last Modified: Thu, 09 Jan 2025 06:07:41 GMT  
 		Size: 1.3 KB (1304 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9f1b5723c118daaca704e83bbe2e9656bd030da6c8881c6bc63c39c42d87aa83`  
@@ -257,7 +257,7 @@ CMD ["fluentd"]
 		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ff45b09b039e321c1809dbf2117718875281c958eec3fd2a912bd93c105aa8ac`  
-		Last Modified: Thu, 09 Jan 2025 06:07:41 GMT  
+		Last Modified: Tue, 14 Jan 2025 23:27:40 GMT  
 		Size: 458.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -421,7 +421,7 @@ CMD ["fluentd"]
 
 -	Layers:
 	-	`sha256:a1e53c81da67874250566308d64e6cf88d5d19fb3bdb55484bd7a41b4e42a126`  
-		Last Modified: Wed, 08 Jan 2025 17:25:17 GMT  
+		Last Modified: Tue, 14 Jan 2025 23:06:05 GMT  
 		Size: 3.4 MB (3365646 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f0ea284016ffcc6a262a497ef4345323d63916db72b1a956f4b2c920120dac12`  
@@ -511,7 +511,7 @@ CMD ["fluentd"]
 
 -	Layers:
 	-	`sha256:be00939408ff94e4fec4588babdfc5d58c5d13d897e8cc5dda295b4a6253bfa9`  
-		Last Modified: Tue, 14 Jan 2025 20:46:28 GMT  
+		Last Modified: Wed, 08 Jan 2025 17:26:42 GMT  
 		Size: 3.3 MB (3254251 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:36793eda614f3800d8dee66d2397436ab110199dd50deb50f2729d40f2c6da68`  
@@ -527,7 +527,7 @@ CMD ["fluentd"]
 		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ac97491580908b3ca7e161ef90a8a9c70f11e086b0b7bb7176262a63dff68550`  
-		Last Modified: Wed, 15 Jan 2025 01:26:31 GMT  
+		Last Modified: Thu, 09 Jan 2025 07:13:49 GMT  
 		Size: 457.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
