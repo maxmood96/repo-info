@@ -87,7 +87,7 @@ CMD ["crate"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6d04ce584b69bb42ca4276462807c5e3ed21605e7393a8c572474c440bcc792a`  
-		Last Modified: Tue, 14 Jan 2025 21:38:28 GMT  
+		Last Modified: Tue, 14 Jan 2025 19:28:21 GMT  
 		Size: 262.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:976e295e350f57f4e6b0bb10f153233b44e5ca75c3e4469f88f5fbeb2fc7e9d2`  
@@ -179,11 +179,11 @@ CMD ["crate"]
 		Size: 78.0 MB (77988775 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f9eeccda12ed247fc86af9756eed85b9493924d0e5654243889a076103dba020`  
-		Last Modified: Sat, 14 Dec 2024 18:11:31 GMT  
+		Last Modified: Fri, 13 Dec 2024 20:28:14 GMT  
 		Size: 13.5 MB (13537879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ab1e6977d7c6274d2809b4c27d1e41a2b9519f487a53b741263dd04bca7dac8b`  
-		Last Modified: Sat, 14 Dec 2024 18:11:38 GMT  
+		Last Modified: Fri, 13 Dec 2024 20:28:17 GMT  
 		Size: 148.4 MB (148375948 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7298f0d0860c7d87c45abc13dd98458d6f6aaaffc41f61973f23de9e7da30493`  
@@ -203,7 +203,7 @@ CMD ["crate"]
 		Size: 264.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bf88d03d210975a6da59c0047af95728c1f90f1608754b2a2d81fee08f48f104`  
-		Last Modified: Sat, 14 Dec 2024 18:10:28 GMT  
+		Last Modified: Fri, 13 Dec 2024 20:28:14 GMT  
 		Size: 955.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:51ae2da509d2a624303fe3b492d1fc6f1f49114065d73181123b41c3f3a6c9ff`  
@@ -227,7 +227,7 @@ $ docker pull crate@sha256:51c6206ce4d37e8fa7f927139e42061f862ec183a8590194a033e
 
 -	Layers:
 	-	`sha256:9a37744ec313b2f7e8f033eaa064ba70ae9340eac85a59af74ac84ed1bb4598a`  
-		Last Modified: Mon, 16 Dec 2024 19:09:09 GMT  
+		Last Modified: Fri, 13 Dec 2024 20:28:14 GMT  
 		Size: 6.3 MB (6327739 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a505c2a4fac5bac8830a37aedf1b0540c2fa6604c6499f774f7bdfabe7910dfb`  
