@@ -111,11 +111,11 @@ $ docker pull gazebo@sha256:68b68e3662142ed7fe01ff75a39dbd2abf5a0748276249e7e771
 
 -	Layers:
 	-	`sha256:b2fd4c240b53351c78a6d3e62fcf076d57e4b54a3dc860ccd65a24304f3de5fc`  
-		Last Modified: Mon, 06 Jan 2025 18:34:03 GMT  
+		Last Modified: Mon, 09 Dec 2024 19:29:15 GMT  
 		Size: 6.6 MB (6604704 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:12c9fac0b45648de2078dce3fe4fb810aa11491044ff7d74d0824832f6592d5e`  
-		Last Modified: Wed, 08 Jan 2025 00:32:31 GMT  
+		Last Modified: Mon, 09 Dec 2024 19:29:15 GMT  
 		Size: 16.4 KB (16355 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -222,11 +222,11 @@ $ docker pull gazebo@sha256:68b68e3662142ed7fe01ff75a39dbd2abf5a0748276249e7e771
 
 -	Layers:
 	-	`sha256:b2fd4c240b53351c78a6d3e62fcf076d57e4b54a3dc860ccd65a24304f3de5fc`  
-		Last Modified: Mon, 06 Jan 2025 18:34:03 GMT  
+		Last Modified: Mon, 09 Dec 2024 19:29:15 GMT  
 		Size: 6.6 MB (6604704 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:12c9fac0b45648de2078dce3fe4fb810aa11491044ff7d74d0824832f6592d5e`  
-		Last Modified: Wed, 08 Jan 2025 00:32:31 GMT  
+		Last Modified: Mon, 09 Dec 2024 19:29:15 GMT  
 		Size: 16.4 KB (16355 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -319,7 +319,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     libgazebo11
 		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3050ffc3c19773a71bc3b1026cfc174ec32b3a97b6dd42f8ac2d6d3a95d64ca3`  
-		Last Modified: Mon, 09 Dec 2024 20:39:35 GMT  
+		Last Modified: Fri, 13 Dec 2024 17:25:44 GMT  
 		Size: 297.2 MB (297168489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -343,7 +343,7 @@ $ docker pull gazebo@sha256:5e456cfb80f91f5d184b9a016c089e378e268ff233ecfd93373c
 		Size: 37.5 MB (37541712 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a781552e8708b7f1ff4f52aa3cefb93f05dc179ea71dc170313789b30fb98e9f`  
-		Last Modified: Mon, 09 Dec 2024 20:39:31 GMT  
+		Last Modified: Mon, 16 Dec 2024 00:20:49 GMT  
 		Size: 8.7 KB (8662 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -436,7 +436,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     libgazebo11
 		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3050ffc3c19773a71bc3b1026cfc174ec32b3a97b6dd42f8ac2d6d3a95d64ca3`  
-		Last Modified: Mon, 09 Dec 2024 20:39:35 GMT  
+		Last Modified: Fri, 13 Dec 2024 17:25:44 GMT  
 		Size: 297.2 MB (297168489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -460,7 +460,7 @@ $ docker pull gazebo@sha256:5e456cfb80f91f5d184b9a016c089e378e268ff233ecfd93373c
 		Size: 37.5 MB (37541712 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a781552e8708b7f1ff4f52aa3cefb93f05dc179ea71dc170313789b30fb98e9f`  
-		Last Modified: Mon, 09 Dec 2024 20:39:31 GMT  
+		Last Modified: Mon, 16 Dec 2024 00:20:49 GMT  
 		Size: 8.7 KB (8662 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -553,7 +553,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends     libgazebo11
 		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3050ffc3c19773a71bc3b1026cfc174ec32b3a97b6dd42f8ac2d6d3a95d64ca3`  
-		Last Modified: Mon, 09 Dec 2024 20:39:35 GMT  
+		Last Modified: Fri, 13 Dec 2024 17:25:44 GMT  
 		Size: 297.2 MB (297168489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -577,6 +577,6 @@ $ docker pull gazebo@sha256:5e456cfb80f91f5d184b9a016c089e378e268ff233ecfd93373c
 		Size: 37.5 MB (37541712 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a781552e8708b7f1ff4f52aa3cefb93f05dc179ea71dc170313789b30fb98e9f`  
-		Last Modified: Mon, 09 Dec 2024 20:39:31 GMT  
+		Last Modified: Mon, 16 Dec 2024 00:20:49 GMT  
 		Size: 8.7 KB (8662 bytes)  
 		MIME: application/vnd.in-toto+json
