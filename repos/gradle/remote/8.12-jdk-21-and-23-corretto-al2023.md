@@ -72,7 +72,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Size: 53.2 MB (53150475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9bd32888878bb57a2e4e62230dad39eb7cf54252ff4bdafc42e447e1aa231656`  
-		Last Modified: Tue, 14 Jan 2025 20:35:04 GMT  
+		Last Modified: Sat, 11 Jan 2025 02:29:34 GMT  
 		Size: 169.7 MB (169749428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b67ec6a2be3e60ae564c4b483ea21d28faabfcda88f537601f7813c1e0da734f`  
@@ -84,7 +84,7 @@ RUN set -o errexit -o nounset     && echo "Downloading Gradle"     && wget --no-
 		Size: 70.7 MB (70663602 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:989b124082aa592c2bcf9f6d49c802af181103799431e1b5e4307e8bf1732f82`  
-		Last Modified: Tue, 14 Jan 2025 21:48:53 GMT  
+		Last Modified: Sat, 11 Jan 2025 03:09:20 GMT  
 		Size: 1.8 KB (1751 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
