@@ -68,7 +68,7 @@ CMD ["mongo-express"]
 
 -	Layers:
 	-	`sha256:619be1103602d98e1963557998c954c892b3872986c27365e9f651f5bc27cab8`  
-		Last Modified: Sat, 27 Jan 2024 00:31:36 GMT  
+		Last Modified: Fri, 13 Dec 2024 15:03:05 GMT  
 		Size: 3.4 MB (3402542 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f45eb22fa20b605d639b56c941eee09d35f22e3308138f9ca549682f1ca3709`  
@@ -96,7 +96,7 @@ CMD ["mongo-express"]
 		Size: 13.6 MB (13640323 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d591368a3ca459ae6b7ff4033bf6ecca1ca6b106cf4c873f7ffb6cf63b37956e`  
-		Last Modified: Thu, 16 May 2024 21:17:41 GMT  
+		Last Modified: Fri, 13 Dec 2024 18:11:42 GMT  
 		Size: 853.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -116,7 +116,7 @@ $ docker pull mongo-express@sha256:565f13d8fadcbc6339e7121f3a8bc22928659ff487338
 
 -	Layers:
 	-	`sha256:384104d98c8c6327d8f0d8eafa856e2d67dc0afc729fed151aadef3d148e9766`  
-		Last Modified: Thu, 16 May 2024 21:17:40 GMT  
+		Last Modified: Mon, 06 Jan 2025 17:52:27 GMT  
 		Size: 869.5 KB (869526 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:428d1351fe0d5ab05317464cecc0248d9252bfbe39ad0bd36a3d2d2de94ac229`  
@@ -181,7 +181,7 @@ CMD ["mongo-express"]
 
 -	Layers:
 	-	`sha256:c6b39de5b33961661dc939b997cc1d30cda01e38005a6c6625fd9c7e748bab44`  
-		Last Modified: Fri, 13 Dec 2024 15:45:09 GMT  
+		Last Modified: Fri, 26 Jan 2024 23:45:31 GMT  
 		Size: 3.3 MB (3333361 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:79650a799acd01e8d1e1c75528816262c35bd29243bc36a6ef8c5fc119fbd452`  
@@ -197,7 +197,7 @@ CMD ["mongo-express"]
 		Size: 447.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0bda9e6789178b6ca1e8f50340a02cc6ca3ea258c2b4e596333c45b130b891d9`  
-		Last Modified: Thu, 16 May 2024 23:39:26 GMT  
+		Last Modified: Sat, 14 Dec 2024 08:06:06 GMT  
 		Size: 886.9 KB (886915 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b81bf146f4e81f2aff2340a2041e79f94a81540c7d16a7c2becc72e4b780103f`  
@@ -209,7 +209,7 @@ CMD ["mongo-express"]
 		Size: 13.6 MB (13640341 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7a6391dab4f4159f0f7c4c965dc2b8155acb25f3f401394c7ae6479d7db60f8e`  
-		Last Modified: Thu, 16 May 2024 23:39:28 GMT  
+		Last Modified: Sat, 14 Dec 2024 08:06:11 GMT  
 		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -229,10 +229,10 @@ $ docker pull mongo-express@sha256:726b54d4dbfbc3441cfed9dc5201370dd8ee057975230
 
 -	Layers:
 	-	`sha256:a6a026c6678809f55212fb61571eff769609c21fb067cd587fe4d4f4006fe4fa`  
-		Last Modified: Thu, 16 May 2024 23:39:26 GMT  
+		Last Modified: Wed, 08 Jan 2025 06:45:20 GMT  
 		Size: 869.5 KB (869541 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5d0c143a0a869c3080e8ae773c180060a4a88ec6940e736947d1cbec45d0c74b`  
-		Last Modified: Tue, 07 Jan 2025 02:47:23 GMT  
+		Last Modified: Thu, 16 May 2024 23:39:26 GMT  
 		Size: 16.7 KB (16736 bytes)  
 		MIME: application/vnd.in-toto+json
