@@ -147,7 +147,7 @@ CMD ["arangod"]
 		Size: 140.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1118b145252942dca477375962823451a7c5bc835f80dcb14321bfdf21076646`  
-		Last Modified: Tue, 14 Jan 2025 21:04:57 GMT  
+		Last Modified: Wed, 08 Jan 2025 18:07:57 GMT  
 		Size: 2.0 KB (2016 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
