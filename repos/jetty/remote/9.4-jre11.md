@@ -95,7 +95,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 17.0 MB (16966381 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:77f9d1213f794ba88979837ce029ec1cbc6ba3dd989a10cab38706290143a57a`  
-		Last Modified: Tue, 03 Dec 2024 02:30:12 GMT  
+		Last Modified: Fri, 13 Dec 2024 15:20:02 GMT  
 		Size: 47.2 MB (47216927 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:76a701f2b09fde8f354a03e633fbbd79fd7d1b8b3b765442e4de908f9586eafa`  
@@ -135,7 +135,7 @@ $ docker pull jetty@sha256:49d02a222f9ec36a9356c9a7ec2f1f5a40fdeb4dae80ed6db0931
 
 -	Layers:
 	-	`sha256:987519f35fb609e6e728a3c3681bb4716e0ede168952d11dbffe3ada77ea99db`  
-		Last Modified: Tue, 03 Dec 2024 03:17:53 GMT  
+		Last Modified: Tue, 07 Jan 2025 01:50:29 GMT  
 		Size: 3.2 MB (3231838 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1bd6947176f0577638e6d4cef7d7953c8ea0c08207e94f5d429d47ff5335a906`  
@@ -219,7 +219,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 
 -	Layers:
 	-	`sha256:8bb55f0677778c3027fcc4253dc452bc9c22de989a696391e739fb1cdbbdb4c2`  
-		Last Modified: Fri, 13 Dec 2024 13:09:54 GMT  
+		Last Modified: Tue, 19 Nov 2024 17:38:33 GMT  
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:636d6d39497cde5edbefcc48f9d73d53c8b5408b69b8cc70ceb265af74eba9e2`  
@@ -231,11 +231,11 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 45.6 MB (45576653 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8156c0c55638ca4eac05f24f4e8e984bceaa7c250168e20702734e5164abebd1`  
-		Last Modified: Sat, 14 Dec 2024 02:23:12 GMT  
+		Last Modified: Tue, 03 Dec 2024 05:50:09 GMT  
 		Size: 158.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:391177c82069403a977e7337ac47d76e4648d4cdba23f715e212a734faf7f807`  
-		Last Modified: Fri, 13 Dec 2024 18:53:57 GMT  
+		Last Modified: Tue, 03 Dec 2024 05:50:10 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bb89c2d5388c6ff18bf2179ed2d8163ac8637f3180604cf01323c35e28678c20`  
