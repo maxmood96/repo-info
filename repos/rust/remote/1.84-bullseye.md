@@ -46,15 +46,15 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 
 -	Layers:
 	-	`sha256:de97e8062e06250e3c3cef0d40cfe62111bb4b74bcf6221e25a06452dacffcf6`  
-		Last Modified: Tue, 14 Jan 2025 01:33:36 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:33:13 GMT  
 		Size: 53.7 MB (53739164 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6df16681c019573e3211da3a69493c28abc41e22e0cfaaf006fa4e8a20965295`  
-		Last Modified: Tue, 14 Jan 2025 20:33:12 GMT  
+		Last Modified: Tue, 14 Jan 2025 02:33:08 GMT  
 		Size: 15.6 MB (15558362 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:20d363a1dd2d1714709c84ac8d050f51e921efc51885c202b336cc24f61e3186`  
-		Last Modified: Tue, 14 Jan 2025 20:33:08 GMT  
+		Last Modified: Tue, 14 Jan 2025 03:18:11 GMT  
 		Size: 54.8 MB (54753534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e7ff86202e7c3afa44ea1524a6f7520668801c0913bb650d2d105f267afcdc35`  
@@ -62,7 +62,7 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 		Size: 197.1 MB (197073993 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc69f21d4b6500dd2eb40bcff9c3d8c70e4cdcbf23ee32f669a2b231dfca18a7`  
-		Last Modified: Tue, 14 Jan 2025 05:23:32 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:35:57 GMT  
 		Size: 194.9 MB (194934543 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -82,7 +82,7 @@ $ docker pull rust@sha256:6ce3fa42f06b943caa59c9b80a065e42cc262a4633c82c416b335d
 
 -	Layers:
 	-	`sha256:8ae86dc6fc207bf2ebdc0b702ecb77c987cbaeb4c0469429240f5a890f310daa`  
-		Last Modified: Tue, 14 Jan 2025 05:23:29 GMT  
+		Last Modified: Wed, 15 Jan 2025 01:16:32 GMT  
 		Size: 15.1 MB (15073395 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:57bd9b7bcc0f4ca719b900dd7f0cd81e77842afa77b0396d199b838fa62f07c5`  
@@ -196,11 +196,11 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 
 -	Layers:
 	-	`sha256:447d428f9ffe60c6c8cc59e00901cd865a36737372ba05710598d7eaf0a1144d`  
-		Last Modified: Wed, 25 Dec 2024 01:36:39 GMT  
+		Last Modified: Tue, 24 Dec 2024 21:34:37 GMT  
 		Size: 52.2 MB (52245698 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eceb2e49ad0ea75b24fca7d94b98a8202f70828ce20fd23846a542d8dca2667d`  
-		Last Modified: Wed, 25 Dec 2024 01:49:44 GMT  
+		Last Modified: Wed, 25 Dec 2024 05:20:06 GMT  
 		Size: 15.5 MB (15544017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:37f980dd00d0ffb99c81471a2f1d6dbe4936d0d24b2e81f9be4ad52c0cc28b66`  
@@ -212,7 +212,7 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 		Size: 190.0 MB (189979891 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d7a8fbaa7907ee22571084279c601f14a265f51a5d724c32c5998a32a816fee1`  
-		Last Modified: Thu, 09 Jan 2025 22:40:57 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:56:24 GMT  
 		Size: 258.3 MB (258298411 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -279,7 +279,7 @@ RUN set -eux;     dpkgArch="$(dpkg --print-architecture)";     case "${dpkgArch#
 		Size: 16.1 MB (16061977 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b411024e8ae7dadedef448d7486b9035f3faedd43c62d2f773ed5d8f87362be0`  
-		Last Modified: Tue, 14 Jan 2025 03:18:01 GMT  
+		Last Modified: Tue, 14 Jan 2025 21:41:59 GMT  
 		Size: 56.0 MB (56027145 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e84d528e2732f18fed0f874f321917023842dc0f688eba487bec08562c3d8257`  
