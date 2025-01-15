@@ -36,7 +36,7 @@ RUN echo 'deb http://deb.debian.org/debian oldstable-backports main' > /etc/apt/
 
 -	Layers:
 	-	`sha256:2f17e2ee9135b1d360fc5e64ca989812e125720bce28c28c09337332095a71e3`  
-		Last Modified: Tue, 14 Jan 2025 01:33:22 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:50:56 GMT  
 		Size: 53.7 MB (53739158 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bc7eb8af3bed3a2e70512c1bd4a4c070ace2a923d01fb1f7f42fe329ed0ba642`  
@@ -64,7 +64,7 @@ $ docker pull debian@sha256:941de96c5b51b70dfafa5a4d9878240dc147dbceeeb44adecf43
 		Size: 3.9 MB (3917518 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:338d478d0a739c23dbee4dcb480775a30cb9e269f05810969cb2b3b7be0fd3ed`  
-		Last Modified: Tue, 14 Jan 2025 02:15:36 GMT  
+		Last Modified: Wed, 15 Jan 2025 06:07:12 GMT  
 		Size: 5.9 KB (5853 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -89,7 +89,7 @@ RUN echo 'deb http://deb.debian.org/debian oldstable-backports main' > /etc/apt/
 
 -	Layers:
 	-	`sha256:3f18350182a4c7fc977397850f7888add71b67bef94f26475e4f63fac0e058b2`  
-		Last Modified: Tue, 14 Jan 2025 22:22:29 GMT  
+		Last Modified: Tue, 14 Jan 2025 01:36:15 GMT  
 		Size: 49.0 MB (49025062 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9fb879acc7549316eeacbca8a5eec5b35773b1709221971051198af4f396311e`  
@@ -113,11 +113,11 @@ $ docker pull debian@sha256:d28bed755d8ba8e46583845373c5926712c7ac47a63de2664c3b
 
 -	Layers:
 	-	`sha256:05b8e9e6c94f0d980dbdbcd20fcfeb9f1c457a36063d576dd1e9dc2425afe62b`  
-		Last Modified: Tue, 14 Jan 2025 02:17:56 GMT  
+		Last Modified: Wed, 15 Jan 2025 06:07:31 GMT  
 		Size: 3.9 MB (3919080 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:015d59bf14b0f348c3de22983d2bbcd1055e31d8ca5fe77969ad5228669f202b`  
-		Last Modified: Tue, 14 Jan 2025 02:17:56 GMT  
+		Last Modified: Wed, 15 Jan 2025 06:07:35 GMT  
 		Size: 5.9 KB (5905 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -146,7 +146,7 @@ RUN echo 'deb http://deb.debian.org/debian oldstable-backports main' > /etc/apt/
 		Size: 52.2 MB (52246059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:70d28304b65c4653ac8ac046a7b53203f911c0ddb77e4d79a7c4f620d154dd2f`  
-		Last Modified: Tue, 14 Jan 2025 02:22:51 GMT  
+		Last Modified: Wed, 15 Jan 2025 06:07:49 GMT  
 		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
