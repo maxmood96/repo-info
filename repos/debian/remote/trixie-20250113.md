@@ -43,7 +43,7 @@ RUN # debian.sh --arch 'amd64' out/ 'trixie' '@1736726400'
 
 -	Layers:
 	-	`sha256:9146d6057920f25892ed3e631287d1e0e740bd11f7e3dd39c76c478675de8456`  
-		Last Modified: Tue, 14 Jan 2025 01:33:33 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:39:12 GMT  
 		Size: 48.3 MB (48276092 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -63,7 +63,7 @@ $ docker pull debian@sha256:9196e9b76664ca8141ce4c17ec58a715df0e2dadd51543736f68
 
 -	Layers:
 	-	`sha256:25fde9e3e10351ba8a983e21d4bfb718aeb047eb63a01d95123357fd7aae8076`  
-		Last Modified: Wed, 15 Jan 2025 02:37:29 GMT  
+		Last Modified: Tue, 14 Jan 2025 01:33:32 GMT  
 		Size: 3.1 MB (3118838 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -86,7 +86,7 @@ RUN # debian.sh --arch 'armel' out/ 'trixie' '@1736726400'
 
 -	Layers:
 	-	`sha256:76cad3cf5a6ccb480f47b45bb1e37068b6554531620fd6fa1a71d8bd07d07d73`  
-		Last Modified: Tue, 14 Jan 2025 01:35:53 GMT  
+		Last Modified: Wed, 15 Jan 2025 04:18:59 GMT  
 		Size: 46.4 MB (46441720 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -106,7 +106,7 @@ $ docker pull debian@sha256:7591bd4c6739eb3b5e89ca2df5d505a8d3f0c4321d32cf8b3214
 
 -	Layers:
 	-	`sha256:b3777c4cf85700ec6c3682781568a1aa50b6f7afaa44515cd17e815cfadcafc9`  
-		Last Modified: Wed, 15 Jan 2025 02:37:29 GMT  
+		Last Modified: Tue, 14 Jan 2025 01:35:52 GMT  
 		Size: 3.1 MB (3127843 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -129,7 +129,7 @@ RUN # debian.sh --arch 'armhf' out/ 'trixie' '@1736726400'
 
 -	Layers:
 	-	`sha256:105ec2fcec8ae42e2b6cba4c3c8463bdd5ad21cffe232e9cfd7ed127e7ede3fa`  
-		Last Modified: Tue, 14 Jan 2025 01:39:08 GMT  
+		Last Modified: Wed, 15 Jan 2025 04:19:06 GMT  
 		Size: 44.6 MB (44580459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -149,7 +149,7 @@ $ docker pull debian@sha256:c649b00a92567e47e874ab662d69ea67205b37be9a1ba7e97d39
 
 -	Layers:
 	-	`sha256:ee8cb6d95a9d25a2b04e8da7199a7c7cefce78d8215ae8fddf3606bee52e9d7d`  
-		Last Modified: Tue, 14 Jan 2025 01:39:07 GMT  
+		Last Modified: Wed, 15 Jan 2025 02:37:30 GMT  
 		Size: 3.1 MB (3120361 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -172,7 +172,7 @@ RUN # debian.sh --arch 'arm64' out/ 'trixie' '@1736726400'
 
 -	Layers:
 	-	`sha256:53cf00e5414c63ec005c43ad8342c8e55028d137e29e95d889d4247b0586d248`  
-		Last Modified: Tue, 14 Jan 2025 01:38:51 GMT  
+		Last Modified: Tue, 14 Jan 2025 22:04:53 GMT  
 		Size: 48.7 MB (48661509 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -215,7 +215,7 @@ RUN # debian.sh --arch 'i386' out/ 'trixie' '@1736726400'
 
 -	Layers:
 	-	`sha256:0b7bebb3fb62b18c851bbf703cf6a1caa57f7ffda09b0b23b4e4cf1051c666c9`  
-		Last Modified: Tue, 14 Jan 2025 22:27:16 GMT  
+		Last Modified: Tue, 14 Jan 2025 01:33:38 GMT  
 		Size: 49.7 MB (49675708 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -258,7 +258,7 @@ RUN # debian.sh --arch 'mips64el' out/ 'trixie' '@1736726400'
 
 -	Layers:
 	-	`sha256:7fc12d8a734ed45514ae5135503d718e9ff7693017677de649ab963638a639fe`  
-		Last Modified: Wed, 15 Jan 2025 02:37:33 GMT  
+		Last Modified: Tue, 14 Jan 2025 01:37:16 GMT  
 		Size: 48.4 MB (48390219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -281,7 +281,7 @@ RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1736726400'
 
 -	Layers:
 	-	`sha256:826e70a2bdfac0f05c49b7611afcf30a311c862a1beca6fc4059e4b6cd0e1a4a`  
-		Last Modified: Tue, 14 Jan 2025 01:40:51 GMT  
+		Last Modified: Wed, 15 Jan 2025 02:37:31 GMT  
 		Size: 52.0 MB (52043133 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -301,7 +301,7 @@ $ docker pull debian@sha256:57d7fb008e41472d32cda900bd8fb8dec9c02b68ec0cc4d6a840
 
 -	Layers:
 	-	`sha256:edea8391dce596dfd42b9f3f813ee0f4c15900ce93764db8b3d1194b0f387d4c`  
-		Last Modified: Tue, 14 Jan 2025 01:40:49 GMT  
+		Last Modified: Wed, 15 Jan 2025 02:37:30 GMT  
 		Size: 3.1 MB (3128654 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -344,7 +344,7 @@ $ docker pull debian@sha256:98b3e77142f55df08b008f5df483a382724fb91d5e6b486aab13
 
 -	Layers:
 	-	`sha256:845e721ff7aed579c08f82e0ec52808a49da6909176a411b7e3010f5bc4f3f06`  
-		Last Modified: Wed, 15 Jan 2025 02:37:31 GMT  
+		Last Modified: Tue, 14 Jan 2025 14:13:08 GMT  
 		Size: 3.1 MB (3111531 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -387,6 +387,6 @@ $ docker pull debian@sha256:dcc2577151658a192366f3f75ed4adefc4c963b90323bd15bd91
 
 -	Layers:
 	-	`sha256:d4fbff03093920666ec64e40e97e51a5f74aaf9eafee78d87f82061bb7bd6f81`  
-		Last Modified: Tue, 14 Jan 2025 01:38:53 GMT  
+		Last Modified: Wed, 15 Jan 2025 04:19:29 GMT  
 		Size: 3.1 MB (3126646 bytes)  
 		MIME: application/vnd.in-toto+json
