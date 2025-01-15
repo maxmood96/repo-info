@@ -42,11 +42,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:de97e8062e06250e3c3cef0d40cfe62111bb4b74bcf6221e25a06452dacffcf6`  
-		Last Modified: Tue, 14 Jan 2025 01:33:36 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:33:13 GMT  
 		Size: 53.7 MB (53739164 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bbe51744f37d44d4adab0db27c917b0e8ca2bb1968574727d72adb40c7bc68e9`  
-		Last Modified: Tue, 14 Jan 2025 20:53:52 GMT  
+		Last Modified: Tue, 14 Jan 2025 02:40:04 GMT  
 		Size: 65.9 MB (65945425 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -160,11 +160,11 @@ CMD ["erl"]
 
 -	Layers:
 	-	`sha256:1270858b2b9cb5d47abd119b946534b70ff7d09f29c425fc07b280e5c28971c6`  
-		Last Modified: Tue, 14 Jan 2025 01:36:12 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:36:01 GMT  
 		Size: 52.2 MB (52246060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:aafeabe50fd229f86c63bd9f8481c6aa7879a46645242b62a8e2e799450b489e`  
-		Last Modified: Tue, 14 Jan 2025 20:34:30 GMT  
+		Last Modified: Tue, 14 Jan 2025 07:19:32 GMT  
 		Size: 64.3 MB (64336392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
