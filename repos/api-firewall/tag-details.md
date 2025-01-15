@@ -64,7 +64,7 @@ CMD ["api-firewall"]
 		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e6dbfa79fb53abbdf09066e460642a2eefe0fd22d4d689f445d0b8d6a359c12`  
-		Last Modified: Wed, 08 Jan 2025 17:57:31 GMT  
+		Last Modified: Wed, 15 Jan 2025 00:02:06 GMT  
 		Size: 908.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2cb9d3842d666c42e2e44d6a2d60a3c8d753bed31d551eaf0e6e111fc5372fe7`  
@@ -140,11 +140,11 @@ CMD ["api-firewall"]
 
 -	Layers:
 	-	`sha256:52f827f723504aa3325bb5a54247f0dc4b92bb72569525bc951532c4ef679bd4`  
-		Last Modified: Wed, 08 Jan 2025 17:23:52 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:33:00 GMT  
 		Size: 4.0 MB (3992359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:74d0395aaa7f38fd2896630a4de671efd70d9fbd96d428254351a941ea5bd731`  
-		Last Modified: Wed, 08 Jan 2025 18:05:54 GMT  
+		Last Modified: Wed, 15 Jan 2025 01:23:01 GMT  
 		Size: 906.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9452720089bb123a26c1620029c62c562c856e8f2953e26ecc86c75ce382d906`  
@@ -319,7 +319,7 @@ CMD ["api-firewall"]
 		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2e6dbfa79fb53abbdf09066e460642a2eefe0fd22d4d689f445d0b8d6a359c12`  
-		Last Modified: Wed, 08 Jan 2025 17:57:31 GMT  
+		Last Modified: Wed, 15 Jan 2025 00:02:06 GMT  
 		Size: 908.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2cb9d3842d666c42e2e44d6a2d60a3c8d753bed31d551eaf0e6e111fc5372fe7`  
@@ -395,11 +395,11 @@ CMD ["api-firewall"]
 
 -	Layers:
 	-	`sha256:52f827f723504aa3325bb5a54247f0dc4b92bb72569525bc951532c4ef679bd4`  
-		Last Modified: Wed, 08 Jan 2025 17:23:52 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:33:00 GMT  
 		Size: 4.0 MB (3992359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:74d0395aaa7f38fd2896630a4de671efd70d9fbd96d428254351a941ea5bd731`  
-		Last Modified: Wed, 08 Jan 2025 18:05:54 GMT  
+		Last Modified: Wed, 15 Jan 2025 01:23:01 GMT  
 		Size: 906.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9452720089bb123a26c1620029c62c562c856e8f2953e26ecc86c75ce382d906`  
