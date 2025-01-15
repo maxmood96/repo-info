@@ -81,7 +81,7 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 		Size: 3.6 MB (3626260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:00d1fccd1898ea4bb145d009cd29080b91ccaf30179d18da02360e29b1136bd7`  
-		Last Modified: Wed, 08 Jan 2025 18:14:15 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:54:33 GMT  
 		Size: 16.0 MB (16022324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bd116e3328fb199865e459caecc1d80cf5c9d9be850fea2f0b2db32b5c5edd69`  
