@@ -100,7 +100,7 @@ USER 1000:0
 		Size: 7.5 MB (7524210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cc42ce4e35ebf8d8bb3dc8c51ad16e324ae44745a6bf4814e57a4d94546932b2`  
-		Last Modified: Tue, 17 Dec 2024 19:31:00 GMT  
+		Last Modified: Tue, 17 Dec 2024 23:48:52 GMT  
 		Size: 4.3 KB (4317 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -116,11 +116,11 @@ USER 1000:0
 		Size: 9.5 KB (9526 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9640d080f0fe9454a624c1627b2ca1187896a16de704fc530d0370247f283127`  
-		Last Modified: Tue, 17 Dec 2024 23:48:52 GMT  
+		Last Modified: Tue, 17 Dec 2024 19:31:01 GMT  
 		Size: 1.7 KB (1720 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b9d4ddeba318098fca243a476f4427470184b8d20b76d0d4fdc77e746aa1b3d3`  
-		Last Modified: Tue, 17 Dec 2024 19:31:01 GMT  
+		Last Modified: Wed, 18 Dec 2024 00:21:47 GMT  
 		Size: 191.9 KB (191903 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8a48ff322ba459255c0decda50df03a306a4423d93d1c4cb0e2f3d9d078b355f`  
@@ -148,11 +148,11 @@ $ docker pull elasticsearch@sha256:6881f71ea502ee7e72536fd91056c7944886dbc5b6b69
 
 -	Layers:
 	-	`sha256:4b74b3e83e886154b964cdab3cc8fff7179597fdb6a6a6efd51ed7c9bd3009b2`  
-		Last Modified: Wed, 18 Dec 2024 03:08:03 GMT  
+		Last Modified: Tue, 17 Dec 2024 19:31:00 GMT  
 		Size: 3.0 MB (3003952 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:c99fbe14ccc701d9c166ffbce38027312cb4c9a70cd14cfcfe032be3aed38ec9`  
-		Last Modified: Tue, 17 Dec 2024 19:31:00 GMT  
+		Last Modified: Wed, 18 Dec 2024 14:02:09 GMT  
 		Size: 38.2 KB (38206 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -236,7 +236,7 @@ USER 1000:0
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d9fbaf667992011a2199171da441d01c0d4b2ae4970f68801ea0ce30c90b3331`  
-		Last Modified: Tue, 17 Dec 2024 19:31:51 GMT  
+		Last Modified: Wed, 18 Dec 2024 03:08:20 GMT  
 		Size: 486.1 MB (486121610 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9f75abdcf3b9414656db3478105e8112b315a5bccf73f272e648141c3e5e447a`  
@@ -244,7 +244,7 @@ USER 1000:0
 		Size: 9.1 KB (9098 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:68d78204905742c5c5088b826c0b8bb3cba5f1d2885214934e474649621451f3`  
-		Last Modified: Tue, 17 Dec 2024 19:31:39 GMT  
+		Last Modified: Wed, 18 Dec 2024 14:18:36 GMT  
 		Size: 1.7 KB (1721 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e831c0c25436f50a65c901e9fad8e91a56765a3f899f20d93ebfd49641ecfd76`  
@@ -252,7 +252,7 @@ USER 1000:0
 		Size: 185.9 KB (185919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:52fb8de6e31f3d57c5189b250de2c7ae61ce0f45cf3ee5d4fe24189b9dfe0373`  
-		Last Modified: Tue, 17 Dec 2024 23:41:25 GMT  
+		Last Modified: Tue, 17 Dec 2024 19:31:40 GMT  
 		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:320e6140595100f6d063ee25be718e8a3272757822d87048f40bd30d624cbb89`  
@@ -276,7 +276,7 @@ $ docker pull elasticsearch@sha256:ec293e013283a3dc439895cebc7f402f323d290282972
 
 -	Layers:
 	-	`sha256:91a4c524b38342c703d25f42d7f4834dfe47f429a8031c957384cead5c447436`  
-		Last Modified: Tue, 17 Dec 2024 19:31:39 GMT  
+		Last Modified: Mon, 06 Jan 2025 08:57:23 GMT  
 		Size: 3.0 MB (3002924 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:36ea11f6abb08884e1fb9d9fd040a4b7fcdddd717e91a66e723da0f3ae3b3107`  
@@ -365,11 +365,11 @@ USER 1000:0
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6b328744a4c64b5b8e873b854b5f8d7678de1fdeb3542b004db5afaf4997124b`  
-		Last Modified: Tue, 17 Dec 2024 23:07:24 GMT  
+		Last Modified: Tue, 17 Dec 2024 19:31:18 GMT  
 		Size: 7.5 MB (7524335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2894a47525f71d3f7aee0e93c2d4bed6908bf40cef57a6416c013f987f659f63`  
-		Last Modified: Tue, 17 Dec 2024 23:07:23 GMT  
+		Last Modified: Tue, 17 Dec 2024 19:31:17 GMT  
 		Size: 4.3 KB (4314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
@@ -389,7 +389,7 @@ USER 1000:0
 		Size: 1.7 KB (1724 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:51a94653ad0a2d2e1610e5b218583e518be8d5f7f8941f117cb99319f56a40f4`  
-		Last Modified: Wed, 18 Dec 2024 00:00:32 GMT  
+		Last Modified: Tue, 17 Dec 2024 19:31:18 GMT  
 		Size: 191.9 KB (191905 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:279e0e1bedeb3d25e26893e4bfba1b53f8cc50779e0ec182b3f3997b1d7ba2d8`  
@@ -397,7 +397,7 @@ USER 1000:0
 		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1868f92bc48f2bb11551075566a0a838a5a2c8328e77192729fdee352416cd8d`  
-		Last Modified: Tue, 17 Dec 2024 22:28:11 GMT  
+		Last Modified: Tue, 17 Dec 2024 19:31:19 GMT  
 		Size: 115.5 KB (115532 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -421,7 +421,7 @@ $ docker pull elasticsearch@sha256:dc22e8aa656717d49b0a1bd4371e47457997d01a3549e
 		Size: 3.0 MB (3010152 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:375f0e84cacaba83a340a3d11f7ac30c9e3006510acc1e9399d3199dc83ce4b1`  
-		Last Modified: Tue, 17 Dec 2024 19:31:17 GMT  
+		Last Modified: Wed, 18 Dec 2024 00:00:35 GMT  
 		Size: 38.2 KB (38206 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -509,7 +509,7 @@ USER 1000:0
 		Size: 487.1 MB (487062392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fa6a2d371e80bd0ea2c522a5edcc0c8daace182bb46616a6e6117f8ac9581622`  
-		Last Modified: Wed, 18 Dec 2024 00:40:50 GMT  
+		Last Modified: Tue, 17 Dec 2024 19:33:40 GMT  
 		Size: 9.1 KB (9097 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1c3f9c51e4d95f136ba5300ca31fb0b71574de783a8e26bcc5a284dea0031de4`  
@@ -517,7 +517,7 @@ USER 1000:0
 		Size: 1.7 KB (1720 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:500155f5acc6cec7a2502cf131fc4e3598bafbd50900c5c9de4cbba43ab1a626`  
-		Last Modified: Wed, 18 Dec 2024 01:09:20 GMT  
+		Last Modified: Tue, 17 Dec 2024 19:33:40 GMT  
 		Size: 185.9 KB (185917 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:75cc1fc3ae4b7bd7b5efaf51ffae0e09af0e9406b2312d07d37d54fd98039230`  
@@ -525,7 +525,7 @@ USER 1000:0
 		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:362d067ed0a6985ba7845f70f209c4fabb74727a9fe664886af950cad6ecb06a`  
-		Last Modified: Tue, 17 Dec 2024 19:33:41 GMT  
+		Last Modified: Wed, 18 Dec 2024 01:09:26 GMT  
 		Size: 115.5 KB (115538 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -545,7 +545,7 @@ $ docker pull elasticsearch@sha256:960e9d0046247d7a6a9159a181713654df8268e2749e1
 
 -	Layers:
 	-	`sha256:29df7f1d03300cb6de1db812d6d6fdde810830ede2ed7d2e2d01e09a96850360`  
-		Last Modified: Thu, 19 Dec 2024 00:01:01 GMT  
+		Last Modified: Tue, 17 Dec 2024 19:33:40 GMT  
 		Size: 3.0 MB (3009124 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e287ed6f93b4b62b88a4c458131ed644ae8f165155a918137423fe005c1aa7f2`  
