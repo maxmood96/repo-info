@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4929844eed93ef53329899f22d8440a564e9da74f717442d928630cb885a9210`
-- Created: `2023-06-30T11:51:41Z`
-- Virtual Size: ~ 138.72 Mb  
+- Image ID: `sha256:b6c65f7f21b25c75acbb71659118c99f4b21a0f21351014c7efad2fec30ac20a`
+- Created: `2025-01-10T23:43:20Z`
+- Virtual Size: ~ 138.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -21,6 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.2.27.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.27.tar.xz.asc`
   - `PHP_SHA256=3eec91294d8c09b3df80b39ec36d574ed9b05de4c8afcb25fa215d48f9ecbc6b`
+  - `PMA_SSL_DIR=/etc/phpmyadmin/ssl`
   - `MAX_EXECUTION_TIME=600`
   - `MEMORY_LIMIT=512M`
   - `UPLOAD_LIMIT=2048K`
