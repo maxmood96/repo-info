@@ -107,11 +107,11 @@ ENV JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto
 
 -	Layers:
 	-	`sha256:2dc99809e33185161e199db0b479b51cf3fb7470fd27c484aff50bdf9dcb5dab`  
-		Last Modified: Tue, 14 Jan 2025 20:39:04 GMT  
+		Last Modified: Fri, 10 Jan 2025 02:14:49 GMT  
 		Size: 52.3 MB (52268196 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:190f51cb08051cdba7081365a4a5103eef58b526cb6d8c35b61ccb02b6adde5b`  
-		Last Modified: Sat, 11 Jan 2025 03:05:17 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:52:36 GMT  
 		Size: 81.5 MB (81511109 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
