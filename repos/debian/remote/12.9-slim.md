@@ -190,7 +190,7 @@ $ docker pull debian@sha256:9c6b3faa73a88181ae94d5fbdac1172b54281c39f2902af598d6
 
 -	Layers:
 	-	`sha256:378a5d8fd0cb99e3b961a6c92a62b9c8c67ae19dc82a02997fd4d824a89c2ca7`  
-		Last Modified: Tue, 14 Jan 2025 01:35:54 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:36:24 GMT  
 		Size: 2.2 MB (2248674 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -213,7 +213,7 @@ RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1736726400'
 
 -	Layers:
 	-	`sha256:57fff88fb79736a903f46d7ab2546a9d83e4b9cf9032f766ea3c92eb06acbcca`  
-		Last Modified: Tue, 14 Jan 2025 01:33:46 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:35:48 GMT  
 		Size: 29.2 MB (29187595 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -233,7 +233,7 @@ $ docker pull debian@sha256:d96c5134dc2c608b9e91cfaf1dbdcdffdc3e804054545b045714
 
 -	Layers:
 	-	`sha256:39abb3d1e0f9e403f5d76062df411060e08e7baa0a721e50c421a3b44e944bc4`  
-		Last Modified: Tue, 14 Jan 2025 01:33:45 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:36:25 GMT  
 		Size: 2.2 MB (2245657 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -256,7 +256,7 @@ RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1736726400'
 
 -	Layers:
 	-	`sha256:b08d7e697b04bda8cef97763765ebbbc16790e22945b5ab31d97d448a15c8650`  
-		Last Modified: Tue, 14 Jan 2025 20:36:28 GMT  
+		Last Modified: Tue, 14 Jan 2025 01:38:32 GMT  
 		Size: 28.5 MB (28486647 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -299,7 +299,7 @@ $ docker pull debian@sha256:36f256e42c229ab8c21a10164e796d1f60e0bc000c39f7000118
 
 -	Layers:
 	-	`sha256:8a6d5f9f960a583b7f945b4dd5558a7a52f66d293c5d6727e7f04c4c3c669881`  
-		Last Modified: Tue, 14 Jan 2025 20:36:26 GMT  
+		Last Modified: Tue, 14 Jan 2025 01:37:22 GMT  
 		Size: 2.3 MB (2252708 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -322,7 +322,7 @@ RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1736726400'
 
 -	Layers:
 	-	`sha256:310acd011b0fc666229ef81942693adcf97c49991b6d41b858d0bb251bfe23d5`  
-		Last Modified: Tue, 14 Jan 2025 01:34:40 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:36:29 GMT  
 		Size: 26.9 MB (26858738 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
