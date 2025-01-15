@@ -70,7 +70,7 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 52.3 MB (52287794 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:706058aad73b2780c0e6706405562bb940ec0783b94b5443e466ead7e2c56f6e`  
-		Last Modified: Thu, 19 Dec 2024 23:53:50 GMT  
+		Last Modified: Thu, 19 Dec 2024 21:31:39 GMT  
 		Size: 4.4 MB (4449965 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -94,7 +94,7 @@ $ docker pull ibm-semeru-runtimes@sha256:96158fd3604c0ab543e796423172006d1b36912
 		Size: 3.6 MB (3595907 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8d2f41daccf7c3a2a922daf33f4f2fc0956698b4d2e586197a6dd8aa40559a6b`  
-		Last Modified: Tue, 07 Jan 2025 03:37:28 GMT  
+		Last Modified: Thu, 19 Dec 2024 21:31:39 GMT  
 		Size: 24.7 KB (24686 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -173,7 +173,7 @@ $ docker pull ibm-semeru-runtimes@sha256:370ae054d6db18708509ba00d4bc47d82fcff1b
 
 -	Layers:
 	-	`sha256:7b39b0104422cabaa06680e13264b7dc63829d44da3bc2b53b9719c1f870428d`  
-		Last Modified: Mon, 06 Jan 2025 22:40:59 GMT  
+		Last Modified: Thu, 19 Dec 2024 22:22:03 GMT  
 		Size: 3.6 MB (3587423 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d8b0708c5cb6e9b27d131716f5406556df5a89708d016aefae001d82c044ce6e`  
@@ -232,7 +232,7 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 		Size: 12.9 MB (12888132 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0d41fa978cf87aac305b049cd5de5554c77f72fc25bf28d474d5b025207bcb9d`  
-		Last Modified: Fri, 20 Dec 2024 10:10:29 GMT  
+		Last Modified: Mon, 18 Nov 2024 19:17:51 GMT  
 		Size: 53.6 MB (53595890 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c7f276d8c24867d9b1f6bbc4d270b8a81c3c24e5dc700408c990fd1c3ae1246f`  
@@ -256,7 +256,7 @@ $ docker pull ibm-semeru-runtimes@sha256:15ec505b5bf66a7096c9125c90f754d6783255d
 
 -	Layers:
 	-	`sha256:bff6fcf9fdd6cde884bcca4b631dd6c13d93b9c5ceb0af82fa46e43fdfeb21fc`  
-		Last Modified: Tue, 07 Jan 2025 06:36:45 GMT  
+		Last Modified: Thu, 19 Dec 2024 21:46:08 GMT  
 		Size: 3.6 MB (3592673 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:67bf0bb49cf210d60f515e1192fd18eac500371b83834fbcf53bc80fe1fbe4f9`  
@@ -307,19 +307,19 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 
 -	Layers:
 	-	`sha256:41e9fbd89079d8e47609ae158236d59896fd2503db1ebdfef058864054170e01`  
-		Last Modified: Fri, 13 Dec 2024 16:11:04 GMT  
+		Last Modified: Wed, 11 Sep 2024 17:25:11 GMT  
 		Size: 28.0 MB (28001475 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:19d7fcbb74a18dbda1a95a881c01c2cc4d8a0d6fe38b3b4f8b5899f281f9815e`  
-		Last Modified: Mon, 16 Dec 2024 02:57:40 GMT  
+		Last Modified: Tue, 17 Sep 2024 01:57:02 GMT  
 		Size: 12.2 MB (12203759 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2f548077faffbeb9ab09f574ebae67e13d3317200cd3613df609effae4b92c77`  
-		Last Modified: Thu, 19 Dec 2024 21:49:19 GMT  
+		Last Modified: Fri, 20 Dec 2024 04:06:43 GMT  
 		Size: 50.9 MB (50865429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7ddec57d686772b9ae7f80d1d520170f90bcdf89ece83b87fb6201872b5286d1`  
-		Last Modified: Thu, 19 Dec 2024 21:49:18 GMT  
+		Last Modified: Fri, 20 Dec 2024 10:06:43 GMT  
 		Size: 4.6 MB (4555256 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -339,10 +339,10 @@ $ docker pull ibm-semeru-runtimes@sha256:941d38c37cd3a076e00ff1517541a43ac080157
 
 -	Layers:
 	-	`sha256:6b648605f7b22b2faf2f23ac387a4cff08c0210ffb571be537fd4e4413485909`  
-		Last Modified: Thu, 19 Dec 2024 21:49:18 GMT  
+		Last Modified: Tue, 07 Jan 2025 07:35:47 GMT  
 		Size: 3.6 MB (3590390 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e0f3dedd11b07ad99a631f406cb6ecd9078e5f805d81190300049aac0408f491`  
-		Last Modified: Thu, 19 Dec 2024 21:49:17 GMT  
+		Last Modified: Mon, 06 Jan 2025 17:40:58 GMT  
 		Size: 24.7 KB (24686 bytes)  
 		MIME: application/vnd.in-toto+json
