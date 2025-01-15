@@ -72,11 +72,11 @@ CMD ["httpd-foreground"]
 
 -	Layers:
 	-	`sha256:1f3e46996e2966e4faa5846e56e76e3748b7315e2ded61476c24403d592134f0`  
-		Last Modified: Tue, 14 Jan 2025 20:33:02 GMT  
+		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
 		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6fa70a423f42dfc40c3c94c355c780794ed0927e377908838b0e8d5b40dc6f6`  
-		Last Modified: Tue, 14 Jan 2025 20:34:19 GMT  
+		Last Modified: Wed, 08 Jan 2025 18:00:58 GMT  
 		Size: 942.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f3ac304957a842ad7250478e2c6e796cffa2fa76c7d76bfdaf34c81b95565f9`  
@@ -92,11 +92,11 @@ CMD ["httpd-foreground"]
 		Size: 10.6 MB (10605892 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5d8cbcbfb3b70c9243044e9c7fd07624a2bc3d60dc45a54792158d2f1a683e7e`  
-		Last Modified: Wed, 08 Jan 2025 18:00:59 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:34:30 GMT  
 		Size: 5.6 MB (5622386 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:43b1fb8b53a0ebee074d616e13d2e61fdb28e7c7bae97959f7b024be88b9b448`  
-		Last Modified: Wed, 08 Jan 2025 18:00:59 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:34:20 GMT  
 		Size: 288.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -173,11 +173,11 @@ CMD ["httpd-foreground"]
 
 -	Layers:
 	-	`sha256:d3e229a4bb72770bd404e0f6590519a8e566146523e984834c6a3d82836f0069`  
-		Last Modified: Tue, 14 Jan 2025 20:33:01 GMT  
+		Last Modified: Wed, 08 Jan 2025 17:23:44 GMT  
 		Size: 3.4 MB (3363879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb17e295f69e073c6d6f863b36b97155b034f6c8c5cbc11de70489953943125e`  
-		Last Modified: Wed, 08 Jan 2025 18:42:47 GMT  
+		Last Modified: Wed, 15 Jan 2025 00:04:36 GMT  
 		Size: 941.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2ff55b9dd19bf00c63dc57286bf23786c57786fd86f0d498e932aac56db9eed4`  
@@ -375,7 +375,7 @@ CMD ["httpd-foreground"]
 		Size: 4.0 MB (3992359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dd1320bd02b6ef033be0b3256df5b94cf3de48427ee260ecc076ed887755bc39`  
-		Last Modified: Tue, 14 Jan 2025 20:48:27 GMT  
+		Last Modified: Wed, 08 Jan 2025 18:39:40 GMT  
 		Size: 942.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a280a8570beb8c48d4a656c3563d3c9173c0f03512da5f3f69ebae5c8bc610b3`  
@@ -387,15 +387,15 @@ CMD ["httpd-foreground"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d203f729c8d4db21eea4cf7f0a48b8b36d0394d39f8998cd1ee0c71a8bc834c6`  
-		Last Modified: Wed, 08 Jan 2025 18:39:42 GMT  
+		Last Modified: Tue, 14 Jan 2025 21:00:20 GMT  
 		Size: 10.6 MB (10595503 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:91d2f73182b5159ca74ac80ffffd414f67572dea7fda5c26aafd208d6d49de8e`  
-		Last Modified: Wed, 08 Jan 2025 18:39:41 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:48:28 GMT  
 		Size: 5.7 MB (5725428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:71de33117e4b46de1afe5c999170ceac7427e981a08bd21fcc70241b1d102b0b`  
-		Last Modified: Wed, 08 Jan 2025 18:39:41 GMT  
+		Last Modified: Tue, 14 Jan 2025 21:00:16 GMT  
 		Size: 287.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -617,7 +617,7 @@ $ docker pull httpd@sha256:99d91bfb6a9b5ae0925940580d523b43e795eaea65a48a326217f
 
 -	Layers:
 	-	`sha256:6b43091bea11e7cc407d4c5e13f1feed15133e5ec1425dd73c719bbc5daa57d4`  
-		Last Modified: Wed, 08 Jan 2025 18:25:30 GMT  
+		Last Modified: Wed, 15 Jan 2025 01:00:17 GMT  
 		Size: 1.2 MB (1161063 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:de4ee1db52867e9eb92467afb22fcd9040bb98996a1e78f497c0cfdce6d30184`  
@@ -775,7 +775,7 @@ CMD ["httpd-foreground"]
 
 -	Layers:
 	-	`sha256:b2af93686f9384c40cfe861d7173877bb2ee1675c3ee70181799693c34c8722f`  
-		Last Modified: Wed, 08 Jan 2025 17:25:12 GMT  
+		Last Modified: Tue, 14 Jan 2025 20:34:39 GMT  
 		Size: 3.5 MB (3466867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5cc9959eceb5f3f1fd2ffade17d2a8fc528a84e08a6228cf77c5f1df6615559a`  
