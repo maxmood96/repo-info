@@ -51,7 +51,7 @@ CMD ["julia"]
 
 -	Layers:
 	-	`sha256:89320e7119e225692d79aaeb4989a18d7f97daafdb2b3782f84a0a8de31a09de`  
-		Last Modified: Tue, 14 Jan 2025 20:33:08 GMT  
+		Last Modified: Tue, 14 Jan 2025 01:33:29 GMT  
 		Size: 30.3 MB (30252665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:35a0631cb737ad6d40b05283cc1eff54301d6c5b38d067ce0e200ba9637ee4fe`  
@@ -59,7 +59,7 @@ CMD ["julia"]
 		Size: 2.2 MB (2222650 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dda7a8e57ff8e3b71a4f9a1b868eb73e49e4df1156dda2a992dba73534c402e2`  
-		Last Modified: Tue, 14 Jan 2025 02:20:54 GMT  
+		Last Modified: Tue, 14 Jan 2025 21:39:05 GMT  
 		Size: 288.5 MB (288487945 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4bc86e66e66142fa9c8716a37ee50bbee6180deb5f4fe0a254d70c0eafc0830b`  

@@ -51,11 +51,11 @@ CMD ["julia"]
 		Size: 293.9 MB (293901821 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:9fe79962697ceb000e661dee639a10518b060d9421e3764c88852b377d23c35b`  
-		Last Modified: Wed, 11 Dec 2024 20:37:52 GMT  
+		Last Modified: Thu, 02 Jan 2025 15:34:49 GMT  
 		Size: 1.3 KB (1301 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:733d0ff8723a9b29101d674127a09be655987875f76784731805db4b1c0f03f1`  
-		Last Modified: Wed, 11 Dec 2024 20:37:51 GMT  
+		Last Modified: Tue, 07 Jan 2025 08:40:47 GMT  
 		Size: 1.3 KB (1296 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ede60c5f6b2538af0eab6b9a6107470f22f55ca844903b1e97ef6ec964f6bf91`  
