@@ -72,11 +72,11 @@ $ docker pull sapmachine@sha256:164b4f710bfc8b20563aa302db6b80021b27e0f236507e23
 
 -	Layers:
 	-	`sha256:d45b6b242b10928d9e7a377f73d3f5e37531a0ddf10d995421aec1a537d352c7`  
-		Last Modified: Wed, 16 Oct 2024 19:00:19 GMT  
+		Last Modified: Wed, 08 Jan 2025 03:56:22 GMT  
 		Size: 2.5 MB (2490433 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f6a61f7d3bd7f1b766dd82ac7614bd866d72f90ce70edc9e94a2a43f456690a9`  
-		Last Modified: Wed, 16 Oct 2024 19:00:19 GMT  
+		Last Modified: Mon, 06 Jan 2025 23:04:27 GMT  
 		Size: 9.9 KB (9922 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -139,11 +139,11 @@ $ docker pull sapmachine@sha256:754cd1e98709c3ed8351e45e4d59e2122ee81280d532fc3a
 
 -	Layers:
 	-	`sha256:9252cc18cabe818a32c7698fc59b153695b1d426a1bba1b846338ee78ee056a7`  
-		Last Modified: Wed, 16 Oct 2024 19:46:39 GMT  
+		Last Modified: Mon, 06 Jan 2025 20:06:17 GMT  
 		Size: 2.5 MB (2490789 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8e4a001fb0ea2238b9b5ffc0228db5a45e098fccefa516bcc00914ccc97b042c`  
-		Last Modified: Wed, 16 Oct 2024 19:46:39 GMT  
+		Last Modified: Wed, 08 Jan 2025 00:01:13 GMT  
 		Size: 10.1 KB (10067 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -182,7 +182,7 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:bd389594e541fc722f244791a495e1a62a526cb95daeea3d2304d9be4e2f0e2a`  
-		Last Modified: Wed, 11 Sep 2024 17:24:59 GMT  
+		Last Modified: Fri, 13 Dec 2024 16:13:45 GMT  
 		Size: 34.4 MB (34448242 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:029629869ec053e0e8ddb7cfcc02d6ffdfef6cb2fd820695dde658cb223e4f6e`  
@@ -206,7 +206,7 @@ $ docker pull sapmachine@sha256:b86feb17df871a240bb52a3bafeae13d3d342da52ae484d2
 
 -	Layers:
 	-	`sha256:91a3f7357d394d064a5f0ce347a0bcba8057b12fc6e1fc70ef240d83b538e6fd`  
-		Last Modified: Wed, 16 Oct 2024 20:21:00 GMT  
+		Last Modified: Mon, 06 Jan 2025 23:04:29 GMT  
 		Size: 2.5 MB (2491862 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:cf816b13f55bf5c6ec5d2401df71d4e3c6fbf06495219b81c768ca08adc03ac8`  
