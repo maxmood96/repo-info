@@ -40,7 +40,7 @@ RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in         
 
 -	Layers:
 	-	`sha256:66a3d608f3fa52124f8463e9467f170c784abd549e8216aa45c6960b00b4b79b`  
-		Last Modified: Tue, 14 Jan 2025 20:32:58 GMT  
+		Last Modified: Wed, 08 Jan 2025 15:55:45 GMT  
 		Size: 3.6 MB (3626260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:03ff15df1191be1ba73e0551f9604556c59601352359b9ddcd56df3db87838e3`  
@@ -113,7 +113,7 @@ RUN set -eux;     apkArch="$(apk --print-arch)";     case "$apkArch" in         
 		Size: 53.0 MB (52951004 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0f078a134c6d3bfbf3e51f6cf7d7215b3b9a168bfc794609656888a9123c68f5`  
-		Last Modified: Tue, 14 Jan 2025 20:49:04 GMT  
+		Last Modified: Thu, 09 Jan 2025 22:46:24 GMT  
 		Size: 243.9 MB (243948996 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
