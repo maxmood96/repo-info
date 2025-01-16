@@ -1164,27 +1164,57 @@ $ docker pull backdrop@sha256:f0b72ce0ebfd451f80c3365f336fe69bb4dd062c514da937db
 
 ## `backdrop:1.30`
 
-**does not exist** (yet?)
+```console
+$ docker pull backdrop@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `backdrop:1.30-apache`
 
-**does not exist** (yet?)
+```console
+$ docker pull backdrop@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `backdrop:1.30-fpm`
 
-**does not exist** (yet?)
+```console
+$ docker pull backdrop@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `backdrop:1.30.0`
 
-**does not exist** (yet?)
+```console
+$ docker pull backdrop@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `backdrop:1.30.0-apache`
 
-**does not exist** (yet?)
+```console
+$ docker pull backdrop@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `backdrop:1.30.0-fpm`
 
-**does not exist** (yet?)
+```console
+$ docker pull backdrop@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `backdrop:apache`
 
