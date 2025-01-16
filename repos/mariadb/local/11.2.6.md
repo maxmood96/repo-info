@@ -1932,15 +1932,9 @@ Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 
 - `GPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rsync=3.2.7-0ubuntu0.22.04.2
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7-0ubuntu0.22.04.2.dsc' rsync_3.2.7-0ubuntu0.22.04.2.dsc 2399 SHA512:ca975ba5436bb0de86d708ea234c151a8d2de4245cef2c1c5e478cc394a9fad473ec64fd2e4f0f0c55203efa10921ee0247a9d0e66a57651ad6a202b5f062b5e
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7.orig.tar.gz' rsync_3.2.7.orig.tar.gz 1149787 SHA512:c2afba11a352fd88133f9e96e19d6df80eb864450c83eced13a7faa23df947bccf2ef093f2101df6ee30abff4cbbd39ac802e9aa5f726e42c9caff274fad8377
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7.orig.tar.gz.asc' rsync_3.2.7.orig.tar.gz.asc 195 SHA512:bad9f48e033966566c6abf8cd485d35c0d9cf130eafb0c5fff9bcb928882283bbcdd2375e7c2880cf71cf81496ba6b743b61adca3d4678421c32915a2464acc3
-'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7-0ubuntu0.22.04.2.debian.tar.xz' rsync_3.2.7-0ubuntu0.22.04.2.debian.tar.xz 26696 SHA512:a776f1d4b13f0fe4862b777475f68858f0df3f8a92e02a8372ba436151adf3443586563b5423f504e3c3d4d63d7a69ddae09a70cf8619dbd4cd7556186bc0174
-```
 
 ### `dpkg` source package: `sed=4.8-1ubuntu2`
 
