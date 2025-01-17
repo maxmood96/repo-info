@@ -34987,39 +34987,84 @@ $ docker pull ruby@sha256:16ba9284fc7aeca920f47a868d7e339bc409eeeab0ea05b78989c3
 
 ## `ruby:3.3.7`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:3.3.7-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:3.3.7-alpine3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:3.3.7-alpine3.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:3.3.7-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:3.3.7-bullseye`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:3.3.7-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:3.3.7-slim-bookworm`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:3.3.7-slim-bullseye`
 
-**does not exist** (yet?)
+```console
+$ docker pull ruby@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `ruby:3.4`
 
