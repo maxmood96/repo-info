@@ -2749,21 +2749,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.12=3.12.8-3
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.8-3.dsc' python3.12_3.12.8-3.dsc 4252 SHA256:8917d6ef5bcf1ccfc47735745b73a41d3484237d60e2b30360481699eef042d9
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.8.orig.tar.xz' python3.12_3.12.8.orig.tar.xz 20489808 SHA256:c909157bb25ec114e5869124cc2a9c4a4d4c1e957ca4ff553f1edc692101154e
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.8.orig.tar.xz.asc' python3.12_3.12.8.orig.tar.xz.asc 963 SHA256:c0b69273edb3046ccb40c481f0bfd3187aaf33747ee62700b0edd87254cbeef1
-'http://deb.debian.org/debian/pool/main/p/python3.12/python3.12_3.12.8-3.debian.tar.xz' python3.12_3.12.8-3.debian.tar.xz 274096 SHA256:c25e378fbc1cc8ae45237ae799b83b40d22b0f9a0aed49ab1944d73583f64b74
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.12/3.12.8-3/
 
-- https://sources.debian.net/src/python3.12/3.12.8-3/ (for browsing the source)
-- https://sources.debian.net/src/python3.12/3.12.8-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.12/3.12.8-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-6`
 
@@ -3072,20 +3064,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.1-7
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.1-7.dsc' systemd_257.1-7.dsc 8678 SHA256:aaeabffb3174b2a84658d22b2cd2e03cbe0c70955b3ed19a8986803adfd8ea38
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.1.orig.tar.gz' systemd_257.1.orig.tar.gz 16187414 SHA256:375365b9f3718ba5fc2a972445eefcd9e229cc18bffe95818220c2a52efe8ed9
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.1-7.debian.tar.xz' systemd_257.1-7.debian.tar.xz 178360 SHA256:95eb144b40f294c1886f605c50e93e3415a6261d5c02a1804d605f6bde6d6f5d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257.1-7/
 
-- https://sources.debian.net/src/systemd/257.1-7/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.1-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.1-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.13-1`
 
@@ -3161,21 +3146,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2024b-4
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b-4.dsc' tzdata_2024b-4.dsc 2429 SHA256:baa6f241342304f528f52306bc434f725fd9c483a0d258871cf6c8504d6a1ef7
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz' tzdata_2024b.orig.tar.gz 459393 SHA256:70e754db126a8d0db3d16d6b4cb5f7ec1e04d5f261255e4558a67fe92d39e550
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz.asc' tzdata_2024b.orig.tar.gz.asc 833 SHA256:5bc86ae1ee1f600eefefd5377faf5519d4863c960efb625286638d077178d883
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b-4.debian.tar.xz' tzdata_2024b-4.debian.tar.xz 124468 SHA256:ef869fc42e8e9e0e9f230d23e4972bacf553bb2d5c8e1468fe71059a233dc3fb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2024b-4/
 
-- https://sources.debian.net/src/tzdata/2024b-4/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2024b-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2024b-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0046`
 

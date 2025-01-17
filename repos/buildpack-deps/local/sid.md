@@ -134,19 +134,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.9.21
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.21.dsc' apt_2.9.21.dsc 3181 SHA256:423decf34fbf98b16008035f0e14dc49dcb08e3a61e8ff55ae493fc0163a964d
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.21.tar.xz' apt_2.9.21.tar.xz 2393404 SHA256:cac74e48f66e00f8c5f5bc67c439c3d551a07921a26dcd48234ad398bacd6e11
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.9.21/
 
-- https://sources.debian.net/src/apt/2.9.21/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.9.21/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.9.21/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `architecture-properties=0.2.3`
 
@@ -973,19 +967,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-de
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.22.13
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.13.dsc' dpkg_1.22.13.dsc 3144 SHA256:8f9777eba3a52f5ff42e20bce24d6827b705fbb05257c20874084483eb8111b0
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.13.tar.xz' dpkg_1.22.13.tar.xz 5709060 SHA256:6607bd61bc2d7dce2229f20868411e865add9881d707f60a70f83f3952e65935
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dpkg/1.22.13/
 
-- https://sources.debian.net/src/dpkg/1.22.13/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.22.13/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.22.13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.47.2-1`
 
@@ -1906,20 +1894,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-harfbuzz-0.0/copyright`, `/usr/sh
 - `UFL-1.0`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris harfbuzz=10.1.0-2
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_10.1.0-2.dsc' harfbuzz_10.1.0-2.dsc 2864 SHA256:c79e3ea8bde0627472ea4f76017ca75fa4fe3b89c339dc8f27f5b0813a2a5f8c
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_10.1.0.orig.tar.xz' harfbuzz_10.1.0.orig.tar.xz 17922136 SHA256:6ce3520f2d089a33cef0fc48321334b8e0b72141f6a763719aaaecd2779ecb82
-'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_10.1.0-2.debian.tar.xz' harfbuzz_10.1.0-2.debian.tar.xz 20740 SHA256:4dbe422fcfc93e755e2f85be8da97024c6590b82cb9948557cb38086694e06d2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/harfbuzz/10.1.0-2/
 
-- https://sources.debian.net/src/harfbuzz/10.1.0-2/ (for browsing the source)
-- https://sources.debian.net/src/harfbuzz/10.1.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/harfbuzz/10.1.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hicolor-icon-theme=0.18-1`
 
@@ -2242,21 +2223,13 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.21.3-3
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3-3.dsc' krb5_1.21.3-3.dsc 3381 SHA256:561af05f1e9c42ca9eab01eaa7ea6cd903494bb5b462917c8fff7d86bbedc872
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz' krb5_1.21.3.orig.tar.gz 9136145 SHA256:b7a4cd5ead67fb08b980b21abd150ff7217e85ea320c9ed0c6dadd304840ad35
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz.asc' krb5_1.21.3.orig.tar.gz.asc 833 SHA256:85047c935fe949ef2e275885451b168557b923dd13a5aab0ef8fe6acd27b94d7
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3-3.debian.tar.xz' krb5_1.21.3-3.debian.tar.xz 103380 SHA256:c7b7bceb2f1bd782d0118904bded8ddaba1aaa54f1b3b2fc0dc3ecaeac450b5b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.21.3-3/
 
-- https://sources.debian.net/src/krb5/1.21.3-3/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.21.3-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.21.3-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lcms2=2.16-2`
 
@@ -2545,20 +2518,13 @@ Licenses: (parsed from: `/usr/share/doc/libdeflate-dev/copyright`, `/usr/share/d
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdeflate=1.22-1
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.22-1.dsc' libdeflate_1.22-1.dsc 2213 SHA256:c33d1cf493eeb1563cbb9b44ce9089d8a58fea1c62408b9d32850c95df5426e4
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.22.orig.tar.gz' libdeflate_1.22.orig.tar.gz 197720 SHA256:7f343c7bf2ba46e774d8a632bf073235e1fd27723ef0a12a90f8947b7fe851d6
-'http://deb.debian.org/debian/pool/main/libd/libdeflate/libdeflate_1.22-1.debian.tar.xz' libdeflate_1.22-1.debian.tar.xz 5536 SHA256:48b09829eac1c2985fb646aa29129019662966e3dd807454129057ea8eff0079
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libdeflate/1.22-1/
 
-- https://sources.debian.net/src/libdeflate/1.22-1/ (for browsing the source)
-- https://sources.debian.net/src/libdeflate/1.22-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libdeflate/1.22-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libedit=3.1-20240808-1`
 
@@ -5655,19 +5621,13 @@ Licenses: (parsed from: `/usr/share/doc/ucf/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ucf=3.0046
-'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0046.dsc' ucf_3.0046.dsc 1512 SHA256:21e5e780515e0db2bf21c021cc8d511d70eee64b0ee4cd0e4e38e95c109ea4b3
-'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0046.tar.xz' ucf_3.0046.tar.xz 67032 SHA256:cb5114f63a9351c34c8ad51090eac50a53bcd0c1fc92ae21d758ac91ab8c5a39
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ucf/3.0046/
 
-- https://sources.debian.net/src/ucf/3.0046/ (for browsing the source)
-- https://sources.debian.net/src/ucf/3.0046/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ucf/3.0046/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `unbound=1.22.0-1`
 
@@ -5797,20 +5757,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.40.3-1
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.3-1.dsc' util-linux_2.40.3-1.dsc 5132 SHA256:a451bb92b3edaf0c4705586a35fed5c95cc07aa1f0ac546e23f56a087b05e3a4
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.3.orig.tar.xz' util-linux_2.40.3.orig.tar.xz 8865864 SHA256:0d6429d0cc474eafb972b0f4fee6b9c3d3f31c7bbada012bb3a1e255f00612c5
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.3-1.debian.tar.xz' util-linux_2.40.3-1.debian.tar.xz 117316 SHA256:dd3fe892f8e3dbf0f990379954be2b9da34028ab09f65f6c682070c05cbeb4aa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.40.3-1/
 
-- https://sources.debian.net/src/util-linux/2.40.3-1/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.40.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.40.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.24.5-2`
 
