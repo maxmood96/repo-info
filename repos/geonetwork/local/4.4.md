@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:27616488cbc3f5445e20634cb3fd5c9b6dab52754ec3d0fca3bc852cf3d946be`
+- Image ID: `sha256:9156b5cb8e39386e496776d4ecf90a28b76aee2f564fc8d3bab2c560f8d305ab`
 - Created: `2024-10-24T11:20:12Z`
-- Virtual Size: ~ 815.05 Mb  
+- Virtual Size: ~ 815.94 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/geonetwork-entrypoint.sh"]`
@@ -16,11 +16,11 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.25+9`
-  - `JETTY_VERSION=9.4.56.v20240826`
+  - `JETTY_VERSION=9.4.57.v20241219`
   - `JETTY_HOME=/usr/local/jetty`
   - `JETTY_BASE=/var/lib/jetty`
   - `TMPDIR=/tmp/jetty`
-  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.56.v20240826/jetty-home-9.4.56.v20240826.tar.gz`
+  - `JETTY_TGZ_URL=https://repo1.maven.org/maven2/org/eclipse/jetty/jetty-home/9.4.57.v20241219/jetty-home-9.4.57.v20241219.tar.gz`
   - `JETTY_GPG_KEYS=AED5EE6C45D0FE8D5D1B164F27DED4BF6216DB8F 	2A684B57436A81FA8706B53C61C3351A438A3B7D 	5989BAF76217B843D66BE55B2D0E1FB8FE4B68B4 	B59B67FD7904984367F931800818D9D68FB67BAC 	BFBB21C246D7776836287A48A04E0C74ABB35FEA 	8B096546B1A8F02656B15D3B1677D141BCF3584D 	F254B35617DC255D9344BCFA873A8E86B4372146 	E22488CC94F63E3FC928536C4241C08270D999C3`
   - `DATA_DIR=/catalogue-data`
   - `WEBAPP_CONTEXT_PATH=/geonetwork`
@@ -294,12 +294,12 @@ $ apt-get source -qq --print-uris coreutils=8.30-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.30-3ubuntu2.debian.tar.xz' coreutils_8.30-3ubuntu2.debian.tar.xz 39636 SHA256:98204ef9d94e5c567880cd0245fdb7940eaf7592d6c6830c300ad117628b351f
 ```
 
-### `dpkg` source package: `curl=7.68.0-1ubuntu2.24`
+### `dpkg` source package: `curl=7.68.0-1ubuntu2.25`
 
 Binary Packages:
 
-- `curl=7.68.0-1ubuntu2.24`
-- `libcurl4:amd64=7.68.0-1ubuntu2.24`
+- `curl=7.68.0-1ubuntu2.25`
+- `libcurl4:amd64=7.68.0-1ubuntu2.25`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -310,9 +310,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.25
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.25.dsc' curl_7.68.0-1ubuntu2.25.dsc 2737 SHA512:662f204efe6ad8fce4c4115cc6788c96084be2989440dbfd38ebf9cd02114581b237e8ac8caa555489b5d5bb55a84eb7b84f071e3f5bc52e36e94e098b4a9313
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.25.debian.tar.xz' curl_7.68.0-1ubuntu2.25.debian.tar.xz 77412 SHA512:ed0c6526b6b35fd16a4264cf89cf9008585b7fb6785a36506b31bb9834285567aed856712967215e4f5e0e3a2cf917a70f8de9c83a1f5c6582b1042f5ebff16d
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
 
