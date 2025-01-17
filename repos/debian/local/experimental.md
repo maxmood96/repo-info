@@ -57,19 +57,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.9.21
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.21.dsc' apt_2.9.21.dsc 3181 SHA256:423decf34fbf98b16008035f0e14dc49dcb08e3a61e8ff55ae493fc0163a964d
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.21.tar.xz' apt_2.9.21.tar.xz 2393404 SHA256:cac74e48f66e00f8c5f5bc67c439c3d551a07921a26dcd48234ad398bacd6e11
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.9.21/
 
-- https://sources.debian.net/src/apt/2.9.21/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.9.21/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.9.21/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-2`
 
@@ -493,19 +487,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`)
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.22.13
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.13.dsc' dpkg_1.22.13.dsc 3144 SHA256:8f9777eba3a52f5ff42e20bce24d6827b705fbb05257c20874084483eb8111b0
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.13.tar.xz' dpkg_1.22.13.tar.xz 5709060 SHA256:6607bd61bc2d7dce2229f20868411e865add9881d707f60a70f83f3952e65935
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dpkg/1.22.13/
 
-- https://sources.debian.net/src/dpkg/1.22.13/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.22.13/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.22.13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.47.2-1`
 
@@ -1598,20 +1586,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.40.3-1
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.3-1.dsc' util-linux_2.40.3-1.dsc 5132 SHA256:a451bb92b3edaf0c4705586a35fed5c95cc07aa1f0ac546e23f56a087b05e3a4
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.3.orig.tar.xz' util-linux_2.40.3.orig.tar.xz 8865864 SHA256:0d6429d0cc474eafb972b0f4fee6b9c3d3f31c7bbada012bb3a1e255f00612c5
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.3-1.debian.tar.xz' util-linux_2.40.3-1.debian.tar.xz 117316 SHA256:dd3fe892f8e3dbf0f990379954be2b9da34028ab09f65f6c682070c05cbeb4aa
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.40.3-1/
 
-- https://sources.debian.net/src/util-linux/2.40.3-1/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.40.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.40.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xxhash=0.8.3-2`
 
