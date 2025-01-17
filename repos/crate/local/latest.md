@@ -1,10 +1,10 @@
-# `crate:5.9.5`
+# `crate:5.9.6`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7eebdb54d36d0445c7ef592fc9f4159fa0c2df5c7f98edb569948dfb446832b1`
-- Created: `2024-12-10T16:21:56Z`
-- Virtual Size: ~ 550.67 Mb  
+- Image ID: `sha256:87d93cf3c690755ef1c2dbc4d500930dde85368f706f2a3b84ac2fbc22495bf5`
+- Created: `2025-01-09T09:51:54Z`
+- Virtual Size: ~ 552.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -14,13 +14,13 @@
   - `CRATE_HEAP_SIZE=512M`
 - Labels:
   - `maintainer=Crate.io <office@crate.io>`
-  - `org.opencontainers.image.created=2024-12-10T16:21:56.023234`
+  - `org.opencontainers.image.created=2025-01-09T09:51:54.945195`
   - `org.opencontainers.image.description=CrateDB is a distributed SQL database that handles massive amounts of machine data in real-time.`
   - `org.opencontainers.image.source=https://github.com/crate/docker-crate`
   - `org.opencontainers.image.title=crate`
   - `org.opencontainers.image.url=https://crate.io/products/cratedb/`
   - `org.opencontainers.image.vendor=Crate.io`
-  - `org.opencontainers.image.version=5.9.5`
+  - `org.opencontainers.image.version=5.9.6`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -1570,15 +1570,15 @@ $ dnf --quiet download --source --url setup-2.13.7-10.el9.noarch
 http://vault.almalinux.org/9.5/BaseOS/Source/Packages/setup-2.13.7-10.el9.src.rpm
 ```
 
-### `rpm` package: `shadow-utils-4.9-9.el9.x86_64`
+### `rpm` package: `shadow-utils-4.9-10.el9_5.x86_64`
 
 Licenses (from `rpm --query`): BSD and GPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url shadow-utils-4.9-9.el9
-http://vault.almalinux.org/9.5/BaseOS/Source/Packages/shadow-utils-4.9-9.el9.src.rpm
+$ dnf --quiet download --source --url shadow-utils-4.9-10.el9_5
+http://vault.almalinux.org/9.5/BaseOS/Source/Packages/shadow-utils-4.9-10.el9_5.src.rpm
 ```
 
 ### `rpm` package: `sqlite-libs-3.34.1-7.el9_3.x86_64`
