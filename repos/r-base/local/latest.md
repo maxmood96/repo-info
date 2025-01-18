@@ -63,9 +63,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris apt=2.9.21
-'http://http.debian.net/debian/pool/main/a/apt/apt_2.9.21.dsc' apt_2.9.21.dsc 3181 SHA256:423decf34fbf98b16008035f0e14dc49dcb08e3a61e8ff55ae493fc0163a964d
-'http://http.debian.net/debian/pool/main/a/apt/apt_2.9.21.tar.xz' apt_2.9.21.tar.xz 2393404 SHA256:cac74e48f66e00f8c5f5bc67c439c3d551a07921a26dcd48234ad398bacd6e11
+'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.21.dsc' apt_2.9.21.dsc 3181 SHA256:423decf34fbf98b16008035f0e14dc49dcb08e3a61e8ff55ae493fc0163a964d
+'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.21.tar.xz' apt_2.9.21.tar.xz 2393404 SHA256:cac74e48f66e00f8c5f5bc67c439c3d551a07921a26dcd48234ad398bacd6e11
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/apt/2.9.21/ (for browsing the source)
+- https://sources.debian.net/src/apt/2.9.21/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/apt/2.9.21/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-2`
 
@@ -637,13 +643,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-de
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.22.13
-'http://http.debian.net/debian/pool/main/d/dpkg/dpkg_1.22.13.dsc' dpkg_1.22.13.dsc 3144 SHA256:8f9777eba3a52f5ff42e20bce24d6827b705fbb05257c20874084483eb8111b0
-'http://http.debian.net/debian/pool/main/d/dpkg/dpkg_1.22.13.tar.xz' dpkg_1.22.13.tar.xz 5709060 SHA256:6607bd61bc2d7dce2229f20868411e865add9881d707f60a70f83f3952e65935
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/dpkg/1.22.13/
+
 
 ### `dpkg` source package: `e2fsprogs=1.47.2-1`
 
@@ -707,10 +713,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ed=1.20.2-2
-'http://http.debian.net/debian/pool/main/e/ed/ed_1.20.2-2.dsc' ed_1.20.2-2.dsc 1832 SHA256:83505e343d10bf809b391b6296798a16d76eba8bcdf63239f28f5f7030bdbefd
-'http://http.debian.net/debian/pool/main/e/ed/ed_1.20.2.orig.tar.gz' ed_1.20.2.orig.tar.gz 93153 SHA256:d45f9c4db61d6f5cf59f6daea118ed881976ec87742feae3cc35bffa7e99005f
-'http://http.debian.net/debian/pool/main/e/ed/ed_1.20.2-2.debian.tar.xz' ed_1.20.2-2.debian.tar.xz 8652 SHA256:b3695b6d5a9cd8231897e362db22c77d129d72495513f8b65366b276de47f0f3
+'http://deb.debian.org/debian/pool/main/e/ed/ed_1.20.2-2.dsc' ed_1.20.2-2.dsc 1832 SHA256:83505e343d10bf809b391b6296798a16d76eba8bcdf63239f28f5f7030bdbefd
+'http://deb.debian.org/debian/pool/main/e/ed/ed_1.20.2.orig.tar.gz' ed_1.20.2.orig.tar.gz 93153 SHA256:d45f9c4db61d6f5cf59f6daea118ed881976ec87742feae3cc35bffa7e99005f
+'http://deb.debian.org/debian/pool/main/e/ed/ed_1.20.2-2.debian.tar.xz' ed_1.20.2-2.debian.tar.xz 8652 SHA256:b3695b6d5a9cd8231897e362db22c77d129d72495513f8b65366b276de47f0f3
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/ed/1.20.2-2/ (for browsing the source)
+- https://sources.debian.net/src/ed/1.20.2-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ed/1.20.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.6.4-1`
 
@@ -1202,10 +1214,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris harfbuzz=10.1.0-2
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_10.1.0-2.dsc' harfbuzz_10.1.0-2.dsc 2864 SHA256:c79e3ea8bde0627472ea4f76017ca75fa4fe3b89c339dc8f27f5b0813a2a5f8c
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_10.1.0.orig.tar.xz' harfbuzz_10.1.0.orig.tar.xz 17922136 SHA256:6ce3520f2d089a33cef0fc48321334b8e0b72141f6a763719aaaecd2779ecb82
-'http://http.debian.net/debian/pool/main/h/harfbuzz/harfbuzz_10.1.0-2.debian.tar.xz' harfbuzz_10.1.0-2.debian.tar.xz 20740 SHA256:4dbe422fcfc93e755e2f85be8da97024c6590b82cb9948557cb38086694e06d2
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_10.1.0-2.dsc' harfbuzz_10.1.0-2.dsc 2864 SHA256:c79e3ea8bde0627472ea4f76017ca75fa4fe3b89c339dc8f27f5b0813a2a5f8c
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_10.1.0.orig.tar.xz' harfbuzz_10.1.0.orig.tar.xz 17922136 SHA256:6ce3520f2d089a33cef0fc48321334b8e0b72141f6a763719aaaecd2779ecb82
+'http://deb.debian.org/debian/pool/main/h/harfbuzz/harfbuzz_10.1.0-2.debian.tar.xz' harfbuzz_10.1.0-2.debian.tar.xz 20740 SHA256:4dbe422fcfc93e755e2f85be8da97024c6590b82cb9948557cb38086694e06d2
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/harfbuzz/10.1.0-2/ (for browsing the source)
+- https://sources.debian.net/src/harfbuzz/10.1.0-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/harfbuzz/10.1.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.25`
 
@@ -1387,11 +1405,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris krb5=1.21.3-3
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.21.3-3.dsc' krb5_1.21.3-3.dsc 3381 SHA256:561af05f1e9c42ca9eab01eaa7ea6cd903494bb5b462917c8fff7d86bbedc872
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz' krb5_1.21.3.orig.tar.gz 9136145 SHA256:b7a4cd5ead67fb08b980b21abd150ff7217e85ea320c9ed0c6dadd304840ad35
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz.asc' krb5_1.21.3.orig.tar.gz.asc 833 SHA256:85047c935fe949ef2e275885451b168557b923dd13a5aab0ef8fe6acd27b94d7
-'http://http.debian.net/debian/pool/main/k/krb5/krb5_1.21.3-3.debian.tar.xz' krb5_1.21.3-3.debian.tar.xz 103380 SHA256:c7b7bceb2f1bd782d0118904bded8ddaba1aaa54f1b3b2fc0dc3ecaeac450b5b
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3-3.dsc' krb5_1.21.3-3.dsc 3381 SHA256:561af05f1e9c42ca9eab01eaa7ea6cd903494bb5b462917c8fff7d86bbedc872
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz' krb5_1.21.3.orig.tar.gz 9136145 SHA256:b7a4cd5ead67fb08b980b21abd150ff7217e85ea320c9ed0c6dadd304840ad35
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz.asc' krb5_1.21.3.orig.tar.gz.asc 833 SHA256:85047c935fe949ef2e275885451b168557b923dd13a5aab0ef8fe6acd27b94d7
+'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3-3.debian.tar.xz' krb5_1.21.3-3.debian.tar.xz 103380 SHA256:c7b7bceb2f1bd782d0118904bded8ddaba1aaa54f1b3b2fc0dc3ecaeac450b5b
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/krb5/1.21.3-3/ (for browsing the source)
+- https://sources.debian.net/src/krb5/1.21.3-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/krb5/1.21.3-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lapack=3.12.0-4`
 
@@ -1590,14 +1614,13 @@ Licenses: (parsed from: `/usr/share/doc/libdeflate-dev/copyright`, `/usr/share/d
 
 - `Expat`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libdeflate=1.22-1
-'http://http.debian.net/debian/pool/main/libd/libdeflate/libdeflate_1.22-1.dsc' libdeflate_1.22-1.dsc 2213 SHA256:c33d1cf493eeb1563cbb9b44ce9089d8a58fea1c62408b9d32850c95df5426e4
-'http://http.debian.net/debian/pool/main/libd/libdeflate/libdeflate_1.22.orig.tar.gz' libdeflate_1.22.orig.tar.gz 197720 SHA256:7f343c7bf2ba46e774d8a632bf073235e1fd27723ef0a12a90f8947b7fe851d6
-'http://http.debian.net/debian/pool/main/libd/libdeflate/libdeflate_1.22-1.debian.tar.xz' libdeflate_1.22-1.debian.tar.xz 5536 SHA256:48b09829eac1c2985fb646aa29129019662966e3dd807454129057ea8eff0079
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libdeflate/1.22-1/
+
 
 ### `dpkg` source package: `libffi=3.4.6-1`
 
@@ -3277,20 +3300,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.1-7
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.1-7.dsc' systemd_257.1-7.dsc 8678 SHA256:aaeabffb3174b2a84658d22b2cd2e03cbe0c70955b3ed19a8986803adfd8ea38
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.1.orig.tar.gz' systemd_257.1.orig.tar.gz 16187414 SHA256:375365b9f3718ba5fc2a972445eefcd9e229cc18bffe95818220c2a52efe8ed9
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.1-7.debian.tar.xz' systemd_257.1-7.debian.tar.xz 178360 SHA256:95eb144b40f294c1886f605c50e93e3415a6261d5c02a1804d605f6bde6d6f5d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257.1-7/
 
-- https://sources.debian.net/src/systemd/257.1-7/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.1-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.1-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.13-1`
 
@@ -3433,21 +3449,13 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2024b-4
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b-4.dsc' tzdata_2024b-4.dsc 2429 SHA256:baa6f241342304f528f52306bc434f725fd9c483a0d258871cf6c8504d6a1ef7
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz' tzdata_2024b.orig.tar.gz 459393 SHA256:70e754db126a8d0db3d16d6b4cb5f7ec1e04d5f261255e4558a67fe92d39e550
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz.asc' tzdata_2024b.orig.tar.gz.asc 833 SHA256:5bc86ae1ee1f600eefefd5377faf5519d4863c960efb625286638d077178d883
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2024b-4.debian.tar.xz' tzdata_2024b-4.debian.tar.xz 124468 SHA256:ef869fc42e8e9e0e9f230d23e4972bacf553bb2d5c8e1468fe71059a233dc3fb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/tzdata/2024b-4/
 
-- https://sources.debian.net/src/tzdata/2024b-4/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2024b-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2024b-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0046`
 
