@@ -1,16 +1,16 @@
-# `golang:1.23.4-bullseye`
+# `golang:1.23.5-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1dc33dda69539a0e04c4083c85a6406c2421a7a1efe0559a0c5e557e35f5ca84`
-- Created: `2024-12-03T19:01:46Z`
+- Image ID: `sha256:8755b6e083bca36d0b6e89172c30d913fbe081eaa16183187bb1f736f0fbe70f`
+- Created: `2025-01-16T21:14:07Z`
 - Virtual Size: ~ 768.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.23.4`
+  - `GOLANG_VERSION=1.23.5`
   - `GOTOOLCHAIN=local`
   - `GOPATH=/go`
 

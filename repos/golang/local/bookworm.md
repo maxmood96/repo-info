@@ -1,16 +1,16 @@
-# `golang:1.23.4-bookworm`
+# `golang:1.23.5-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:81bfd58a2b2f6f482b58cdaf1c2ed75daa4051e6c1e1d33c5241bc8ac62f0347`
-- Created: `2024-12-03T19:01:46Z`
+- Image ID: `sha256:606a44533fdbd626261af107d9205bd08ebc24c50e229c2cd9d6173dcccfdc30`
+- Created: `2025-01-16T21:14:07Z`
 - Virtual Size: ~ 837.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.23.4`
+  - `GOLANG_VERSION=1.23.5`
   - `GOTOOLCHAIN=local`
   - `GOPATH=/go`
 
@@ -2154,11 +2154,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.123-1`
+### `dpkg` source package: `linux=6.1.124-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.123-1`
+- `linux-libc-dev:amd64=6.1.124-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2173,17 +2173,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.123-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.123-1.dsc' linux_6.1.123-1.dsc 290930 SHA256:49581bdef81bc3ffd7a31f88833cd2a114e6afd6ebb543390c78ef69415e7d73
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.123.orig.tar.xz' linux_6.1.123.orig.tar.xz 137716280 SHA256:20262987ddb0c12072c68fe01fab9c549520cd9fadf85ad46ec18b6a368dad50
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.123-1.debian.tar.xz' linux_6.1.123-1.debian.tar.xz 1715424 SHA256:d2266cf88a7e28fe6765a3fa29ea99b62f43bb68709507afb953b0c5eafe1029
+$ apt-get source -qq --print-uris linux=6.1.124-1
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.124-1.dsc' linux_6.1.124-1.dsc 290931 SHA256:cb8131435a3ca6a26affe7ba421ee63df1c4d9da09c37b0259742bd58ae82068
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.124.orig.tar.xz' linux_6.1.124.orig.tar.xz 137718868 SHA256:0f908daf931ac8eb72423404c2e6c8d0a1fb51a2ceb19059fe903e4f72e3c54c
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.124-1.debian.tar.xz' linux_6.1.124-1.debian.tar.xz 1716348 SHA256:194ffc38770f3080dcbbcc16d92ede9b0f2c12eba675dca7f821bb1ceb3b5968
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.123-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.123-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.123-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.124-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.124-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.124-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
