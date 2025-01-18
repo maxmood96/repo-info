@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:53abc0a37f7ee2356900dd8be0983112aca615687e2fdcff5cd9232b69ca7b09`
+- Image ID: `sha256:7b3068ed6d9d3483b75a985d9810de4e9f01aa7e5b0ed9d6a07d961341ff3b9f`
 - Created: `2024-12-12T08:30:55Z`
-- Virtual Size: ~ 200.13 Mb  
+- Virtual Size: ~ 200.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.2`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.2.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.2.tar.xz.asc`
-  - `PHP_SHA256=92636453210f7f2174d6ee6df17a5811368f556a6c2c2cbcf019321e36456e01`
+  - `PHP_VERSION=8.4.3`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.3.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.3.tar.xz.asc`
+  - `PHP_SHA256=5c42173cbde7d0add8249c2e8a0c19ae271f41d8c47d67d72bdf91a88dcc7e4b`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
   - `COMPOSER_VERSION=2.8.4`
@@ -234,16 +234,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r9 description:
+busybox-1.37.0-r12 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r9 webpage:
+busybox-1.37.0-r12 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r9 installed size:
+busybox-1.37.0-r12 installed size:
 798 KiB
 
-busybox-1.37.0-r9 license:
+busybox-1.37.0-r12 license:
 GPL-2.0-only
 
 ```
@@ -251,16 +251,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r9 description:
+busybox-binsh-1.37.0-r12 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r9 webpage:
+busybox-binsh-1.37.0-r12 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r9 installed size:
+busybox-binsh-1.37.0-r12 installed size:
 1 B
 
-busybox-binsh-1.37.0-r9 license:
+busybox-binsh-1.37.0-r12 license:
 GPL-2.0-only
 
 ```
@@ -421,16 +421,16 @@ GPL-3.0-or-later
 ### `apk` package: `git`
 
 ```console
-git-2.47.1-r0 description:
+git-2.47.2-r0 description:
 Distributed version control system
 
-git-2.47.1-r0 webpage:
+git-2.47.2-r0 webpage:
 https://www.git-scm.com/
 
-git-2.47.1-r0 installed size:
+git-2.47.2-r0 installed size:
 6485 KiB
 
-git-2.47.1-r0 license:
+git-2.47.2-r0 license:
 GPL-2.0-only
 
 ```
@@ -438,16 +438,16 @@ GPL-2.0-only
 ### `apk` package: `git-init-template`
 
 ```console
-git-init-template-2.47.1-r0 description:
+git-init-template-2.47.2-r0 description:
 Git init template directory
 
-git-init-template-2.47.1-r0 webpage:
+git-init-template-2.47.2-r0 webpage:
 https://www.git-scm.com/
 
-git-init-template-2.47.1-r0 installed size:
+git-init-template-2.47.2-r0 installed size:
 20 KiB
 
-git-init-template-2.47.1-r0 license:
+git-init-template-2.47.2-r0 license:
 GPL-2.0-only
 
 ```
@@ -761,16 +761,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.40.2-r4 description:
+libuuid-2.40.4-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.40.2-r4 webpage:
+libuuid-2.40.4-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.40.2-r4 installed size:
+libuuid-2.40.4-r0 installed size:
 29 KiB
 
-libuuid-2.40.2-r4 license:
+libuuid-2.40.4-r0 license:
 BSD-3-Clause
 
 ```
@@ -1237,16 +1237,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r9 description:
+ssl_client-1.37.0-r12 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r9 webpage:
+ssl_client-1.37.0-r12 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r9 installed size:
+ssl_client-1.37.0-r12 installed size:
 14 KiB
 
-ssl_client-1.37.0-r9 license:
+ssl_client-1.37.0-r12 license:
 GPL-2.0-only
 
 ```
