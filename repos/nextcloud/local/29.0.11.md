@@ -1,9 +1,9 @@
-# `nextcloud:29.0.10-apache`
+# `nextcloud:29.0.11-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:761a4f5b55c6571ce3535e3bea9b3e7fd75de8d7c5b1c2924e98a109db4dff39`
-- Created: `2024-12-05T20:29:40Z`
+- Image ID: `sha256:1cd5de837d369ebac8eaaeaa708ce4861ea6f248e4aeba77168b84996f50cf31`
+- Created: `2025-01-16T23:32:10Z`
 - Virtual Size: ~ 1.31 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -25,8 +25,9 @@
   - `PHP_SHA256=3eec91294d8c09b3df80b39ec36d574ed9b05de4c8afcb25fa215d48f9ecbc6b`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
+  - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
   - `APACHE_BODY_LIMIT=1073741824`
-  - `NEXTCLOUD_VERSION=29.0.10`
+  - `NEXTCLOUD_VERSION=29.0.11`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -4417,11 +4418,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/rpcsvc-proto/1.4.3-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/rpcsvc-proto/1.4.3-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `rsync=3.2.7-1`
+### `dpkg` source package: `rsync=3.2.7-1+deb12u2`
 
 Binary Packages:
 
-- `rsync=3.2.7-1`
+- `rsync=3.2.7-1+deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 
@@ -4430,18 +4431,18 @@ Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris rsync=3.2.7-1
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.2.7-1.dsc' rsync_3.2.7-1.dsc 2290 SHA256:1e1bc01b6ee1a41e3b516f8fe9caa7bd244567d3cdf63d9dd77c054718310520
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.2.7.orig.tar.gz' rsync_3.2.7.orig.tar.gz 1149787 SHA256:4e7d9d3f6ed10878c58c5fb724a67dacf4b6aac7340b13e488fb2dc41346f2bb
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.2.7.orig.tar.gz.asc' rsync_3.2.7.orig.tar.gz.asc 195 SHA256:8e054b8e852f371fbcb757de51f1a07de5621ae959ea766d3c3e5439d7b5f4ae
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.2.7-1.debian.tar.xz' rsync_3.2.7-1.debian.tar.xz 26948 SHA256:d8bf7f75d9f1fa65b1608548cacd461b37fc5431a612d5e4b238d9d9c33fae4e
+$ apt-get source -qq --print-uris rsync=3.2.7-1+deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/r/rsync/rsync_3.2.7-1%2bdeb12u2.dsc' rsync_3.2.7-1+deb12u2.dsc 2322 SHA256:3d822f7e0df140b77aa27acecefe8500c8ff5f325b9a8b4737db877bb201aefe
+'http://deb.debian.org/debian-security/pool/updates/main/r/rsync/rsync_3.2.7.orig.tar.gz' rsync_3.2.7.orig.tar.gz 1149787 SHA256:4e7d9d3f6ed10878c58c5fb724a67dacf4b6aac7340b13e488fb2dc41346f2bb
+'http://deb.debian.org/debian-security/pool/updates/main/r/rsync/rsync_3.2.7.orig.tar.gz.asc' rsync_3.2.7.orig.tar.gz.asc 195 SHA256:8e054b8e852f371fbcb757de51f1a07de5621ae959ea766d3c3e5439d7b5f4ae
+'http://deb.debian.org/debian-security/pool/updates/main/r/rsync/rsync_3.2.7-1%2bdeb12u2.debian.tar.xz' rsync_3.2.7-1+deb12u2.debian.tar.xz 35820 SHA256:778ee982c2b340da1714a88adf7b3c92165c962cc765eacb12bca6ec7cafbc24
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/rsync/3.2.7-1/ (for browsing the source)
-- https://sources.debian.net/src/rsync/3.2.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rsync/3.2.7-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/rsync/3.2.7-1+deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/rsync/3.2.7-1+deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/rsync/3.2.7-1+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-2`
 
