@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:118ba116e4cc60717257588cf15e365499e33eae2c96f3591484acd65f52d902`
-- Created: `2025-01-13T22:12:41Z`
+- Image ID: `sha256:f1cc102d4a93a8704667364b5cfb93d9dcc26a6a861645223f2d4893b3ed723a`
+- Created: `2025-01-16T00:04:17Z`
 - Virtual Size: ~ 188.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=27.5.0`
   - `DOCKER_BUILDX_VERSION=0.19.3`
-  - `DOCKER_COMPOSE_VERSION=2.32.3`
+  - `DOCKER_COMPOSE_VERSION=2.32.4`
   - `DOCKER_TLS_CERTDIR=/certs`
 
 ## `apk` (`.apk`-based packages)
@@ -208,16 +208,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `git`
 
 ```console
-git-2.47.1-r0 description:
+git-2.47.2-r0 description:
 Distributed version control system
 
-git-2.47.1-r0 webpage:
+git-2.47.2-r0 webpage:
 https://www.git-scm.com/
 
-git-2.47.1-r0 installed size:
+git-2.47.2-r0 installed size:
 6485 KiB
 
-git-2.47.1-r0 license:
+git-2.47.2-r0 license:
 GPL-2.0-only
 
 ```
@@ -225,16 +225,16 @@ GPL-2.0-only
 ### `apk` package: `git-init-template`
 
 ```console
-git-init-template-2.47.1-r0 description:
+git-init-template-2.47.2-r0 description:
 Git init template directory
 
-git-init-template-2.47.1-r0 webpage:
+git-init-template-2.47.2-r0 webpage:
 https://www.git-scm.com/
 
-git-init-template-2.47.1-r0 installed size:
+git-init-template-2.47.2-r0 installed size:
 20 KiB
 
-git-init-template-2.47.1-r0 license:
+git-init-template-2.47.2-r0 license:
 GPL-2.0-only
 
 ```

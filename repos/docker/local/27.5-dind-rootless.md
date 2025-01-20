@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d7d95700034e28d044add69f30a925b41f26152ee4130b7e8081ca8bda098f95`
+- Image ID: `sha256:43a995afc276d185bce60731d4ddc05950b70c859778a9280024a3322eccc42f`
 - Created: `2025-01-13T22:12:41Z`
 - Virtual Size: ~ 427.86 Mb  
   (total size of all layers on-disk)
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `DOCKER_VERSION=27.5.0`
   - `DOCKER_BUILDX_VERSION=0.19.3`
-  - `DOCKER_COMPOSE_VERSION=2.32.3`
+  - `DOCKER_COMPOSE_VERSION=2.32.4`
   - `DOCKER_TLS_CERTDIR=/certs`
   - `DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e`
 
@@ -361,16 +361,16 @@ GPL-2.0-only AND LGPL-2.1-only
 ### `apk` package: `git`
 
 ```console
-git-2.47.1-r0 description:
+git-2.47.2-r0 description:
 Distributed version control system
 
-git-2.47.1-r0 webpage:
+git-2.47.2-r0 webpage:
 https://www.git-scm.com/
 
-git-2.47.1-r0 installed size:
+git-2.47.2-r0 installed size:
 6485 KiB
 
-git-2.47.1-r0 license:
+git-2.47.2-r0 license:
 GPL-2.0-only
 
 ```
@@ -378,16 +378,16 @@ GPL-2.0-only
 ### `apk` package: `git-init-template`
 
 ```console
-git-init-template-2.47.1-r0 description:
+git-init-template-2.47.2-r0 description:
 Git init template directory
 
-git-init-template-2.47.1-r0 webpage:
+git-init-template-2.47.2-r0 webpage:
 https://www.git-scm.com/
 
-git-init-template-2.47.1-r0 installed size:
+git-init-template-2.47.2-r0 installed size:
 20 KiB
 
-git-init-template-2.47.1-r0 license:
+git-init-template-2.47.2-r0 license:
 GPL-2.0-only
 
 ```
@@ -565,16 +565,16 @@ MIT
 ### `apk` package: `libblkid`
 
 ```console
-libblkid-2.40.2-r4 description:
+libblkid-2.40.4-r0 description:
 Block device identification library from util-linux
 
-libblkid-2.40.2-r4 webpage:
+libblkid-2.40.4-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libblkid-2.40.2-r4 installed size:
+libblkid-2.40.4-r0 installed size:
 190 KiB
 
-libblkid-2.40.2-r4 license:
+libblkid-2.40.4-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -956,16 +956,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.40.2-r4 description:
+libuuid-2.40.4-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.40.2-r4 webpage:
+libuuid-2.40.4-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.40.2-r4 installed size:
+libuuid-2.40.4-r0 installed size:
 29 KiB
 
-libuuid-2.40.2-r4 license:
+libuuid-2.40.4-r0 license:
 BSD-3-Clause
 
 ```
