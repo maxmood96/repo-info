@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:daf21c163f47937881a8677eed1eba18611b75222e8ec9f78d9555e1d8161701`
-- Created: `2025-01-13T23:09:45Z`
-- Virtual Size: ~ 75.65 Mb  
+- Image ID: `sha256:9c05c4a9169638f9b6d07aa6a421796a970a8788c961d10a7e6b17baf31bb9e7`
+- Created: `2025-01-14T19:28:22Z`
+- Virtual Size: ~ 90.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
@@ -122,6 +122,40 @@ GPL-2.0-only
 
 ```
 
+### `apk` package: `bzip2`
+
+```console
+bzip2-1.0.8-r6 description:
+A high-quality data compression program
+
+bzip2-1.0.8-r6 webpage:
+https://sourceware.org/bzip2/
+
+bzip2-1.0.8-r6 installed size:
+332 KiB
+
+bzip2-1.0.8-r6 license:
+bzip2-1.0.6
+
+```
+
+### `apk` package: `ca-certificates`
+
+```console
+ca-certificates-20241121-r1 description:
+Common CA certificates PEM files from Mozilla
+
+ca-certificates-20241121-r1 webpage:
+https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/
+
+ca-certificates-20241121-r1 installed size:
+720 KiB
+
+ca-certificates-20241121-r1 license:
+MPL-2.0 AND MIT
+
+```
+
 ### `apk` package: `ca-certificates-bundle`
 
 ```console
@@ -152,6 +186,23 @@ gmp-6.3.0-r1 installed size:
 432 KiB
 
 gmp-6.3.0-r1 license:
+LGPL-3.0-or-later OR GPL-2.0-or-later
+
+```
+
+### `apk` package: `gmp-dev`
+
+```console
+gmp-dev-6.3.0-r1 description:
+free library for arbitrary precision arithmetic (development files)
+
+gmp-dev-6.3.0-r1 webpage:
+https://gmplib.org/
+
+gmp-dev-6.3.0-r1 installed size:
+4192 KiB
+
+gmp-dev-6.3.0-r1 license:
 LGPL-3.0-or-later OR GPL-2.0-or-later
 
 ```
@@ -190,6 +241,23 @@ MIT
 
 ```
 
+### `apk` package: `libffi-dev`
+
+```console
+libffi-dev-3.4.6-r0 description:
+portable, high level programming interface to various calling conventions. (development files)
+
+libffi-dev-3.4.6-r0 webpage:
+https://sourceware.org/libffi/
+
+libffi-dev-3.4.6-r0 installed size:
+232 KiB
+
+libffi-dev-3.4.6-r0 license:
+MIT
+
+```
+
 ### `apk` package: `libgcc`
 
 ```console
@@ -203,6 +271,74 @@ libgcc-13.2.1_git20240309-r0 installed size:
 152 KiB
 
 libgcc-13.2.1_git20240309-r0 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
+
+```
+
+### `apk` package: `libgmpxx`
+
+```console
+libgmpxx-6.3.0-r1 description:
+C++ support for gmp
+
+libgmpxx-6.3.0-r1 webpage:
+https://gmplib.org/
+
+libgmpxx-6.3.0-r1 installed size:
+44 KiB
+
+libgmpxx-6.3.0-r1 license:
+LGPL-3.0-or-later OR GPL-2.0-or-later
+
+```
+
+### `apk` package: `libintl`
+
+```console
+libintl-0.22.5-r0 description:
+GNU gettext runtime library
+
+libintl-0.22.5-r0 webpage:
+https://www.gnu.org/software/gettext/gettext.html
+
+libintl-0.22.5-r0 installed size:
+80 KiB
+
+libintl-0.22.5-r0 license:
+LGPL-2.1-or-later
+
+```
+
+### `apk` package: `libncursesw`
+
+```console
+libncursesw-6.4_p20240420-r2 description:
+Console display library (libncursesw)
+
+libncursesw-6.4_p20240420-r2 webpage:
+https://invisible-island.net/ncurses/
+
+libncursesw-6.4_p20240420-r2 installed size:
+344 KiB
+
+libncursesw-6.4_p20240420-r2 license:
+X11
+
+```
+
+### `apk` package: `libproc2`
+
+```console
+libproc2-4.0.4-r0 description:
+Library for monitoring system and processes
+
+libproc2-4.0.4-r0 webpage:
+https://gitlab.com/procps-ng/procps
+
+libproc2-4.0.4-r0 installed size:
+148 KiB
+
+libproc2-4.0.4-r0 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -221,6 +357,40 @@ libssl3-3.3.2-r1 installed size:
 
 libssl3-3.3.2-r1 license:
 Apache-2.0
+
+```
+
+### `apk` package: `libstdc++`
+
+```console
+libstdc++-13.2.1_git20240309-r0 description:
+GNU C++ standard runtime library
+
+libstdc++-13.2.1_git20240309-r0 webpage:
+https://gcc.gnu.org
+
+libstdc++-13.2.1_git20240309-r0 installed size:
+2652 KiB
+
+libstdc++-13.2.1_git20240309-r0 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
+
+```
+
+### `apk` package: `linux-headers`
+
+```console
+linux-headers-6.6-r0 description:
+Linux system headers
+
+linux-headers-6.6-r0 webpage:
+https://kernel.org/
+
+linux-headers-6.6-r0 installed size:
+8216 KiB
+
+linux-headers-6.6-r0 license:
+GPL-2.0-only
 
 ```
 
@@ -255,6 +425,57 @@ musl-utils-1.2.5-r0 installed size:
 
 musl-utils-1.2.5-r0 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
+
+```
+
+### `apk` package: `ncurses-terminfo-base`
+
+```console
+ncurses-terminfo-base-6.4_p20240420-r2 description:
+Descriptions of common terminals
+
+ncurses-terminfo-base-6.4_p20240420-r2 webpage:
+https://invisible-island.net/ncurses/
+
+ncurses-terminfo-base-6.4_p20240420-r2 installed size:
+212 KiB
+
+ncurses-terminfo-base-6.4_p20240420-r2 license:
+X11
+
+```
+
+### `apk` package: `pkgconf`
+
+```console
+pkgconf-2.2.0-r0 description:
+development framework configuration tools
+
+pkgconf-2.2.0-r0 webpage:
+https://gitea.treehouse.systems/ariadne/pkgconf
+
+pkgconf-2.2.0-r0 installed size:
+160 KiB
+
+pkgconf-2.2.0-r0 license:
+ISC
+
+```
+
+### `apk` package: `procps-ng`
+
+```console
+procps-ng-4.0.4-r0 description:
+Utilities for monitoring your system and processes on your system
+
+procps-ng-4.0.4-r0 webpage:
+https://gitlab.com/procps-ng/procps
+
+procps-ng-4.0.4-r0 installed size:
+572 KiB
+
+procps-ng-4.0.4-r0 license:
+GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
@@ -309,6 +530,23 @@ MIT
 
 ```
 
+### `apk` package: `yaml-dev`
+
+```console
+yaml-dev-0.2.5-r2 description:
+YAML 1.1 parser and emitter written in C (development files)
+
+yaml-dev-0.2.5-r2 webpage:
+https://pyyaml.org/wiki/LibYAML
+
+yaml-dev-0.2.5-r2 installed size:
+80 KiB
+
+yaml-dev-0.2.5-r2 license:
+MIT
+
+```
+
 ### `apk` package: `zlib`
 
 ```console
@@ -322,6 +560,23 @@ zlib-1.3.1-r1 installed size:
 108 KiB
 
 zlib-1.3.1-r1 license:
+Zlib
+
+```
+
+### `apk` package: `zlib-dev`
+
+```console
+zlib-dev-1.3.1-r1 description:
+A compression/decompression Library (development files)
+
+zlib-dev-1.3.1-r1 webpage:
+https://zlib.net/
+
+zlib-dev-1.3.1-r1 installed size:
+144 KiB
+
+zlib-dev-1.3.1-r1 license:
 Zlib
 
 ```
