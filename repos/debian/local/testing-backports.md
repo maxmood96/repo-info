@@ -57,19 +57,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.9.21
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.21.dsc' apt_2.9.21.dsc 3181 SHA256:423decf34fbf98b16008035f0e14dc49dcb08e3a61e8ff55ae493fc0163a964d
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.21.tar.xz' apt_2.9.21.tar.xz 2393404 SHA256:cac74e48f66e00f8c5f5bc67c439c3d551a07921a26dcd48234ad398bacd6e11
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.9.21/
 
-- https://sources.debian.net/src/apt/2.9.21/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.9.21/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.9.21/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-2`
 
@@ -731,21 +725,13 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.12-1.2
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12-1.2.dsc' gzip_1.12-1.2.dsc 2278 SHA256:4445d382766432e1b15f2bea0d7a4f2b3fbf886e88cfc6db4044b778b46df650
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12.orig.tar.xz' gzip_1.12.orig.tar.xz 825548 SHA256:ce5e03e519f637e1f814011ace35c4f87b33c0bbabeec35baf5fbd3479e91956
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12.orig.tar.xz.asc' gzip_1.12.orig.tar.xz.asc 833 SHA256:3ed9ab54452576e0be0d477c772c9f47baa36415133fef7dd1fcf7b15480ba32
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12-1.2.debian.tar.xz' gzip_1.12-1.2.debian.tar.xz 19384 SHA256:afdc8cd336e5612658bd2ea029c6e215d5a2bc70c6fda24956bf554b33b147f8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gzip/1.12-1.2/
 
-- https://sources.debian.net/src/gzip/1.12-1.2/ (for browsing the source)
-- https://sources.debian.net/src/gzip/1.12-1.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gzip/1.12-1.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.25`
 
@@ -1591,20 +1577,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.40.2-13
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2-13.dsc' util-linux_2.40.2-13.dsc 5003 SHA256:01262647765bf8cdec2592d0fc0fc1db7cdf8d1f1fab0773731826783ac8e4a1
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2.orig.tar.xz' util-linux_2.40.2.orig.tar.xz 8854820 SHA256:d78b37a66f5922d70edf3bdfb01a6b33d34ed3c3cafd6628203b2a2b67c8e8b3
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.2-13.debian.tar.xz' util-linux_2.40.2-13.debian.tar.xz 119396 SHA256:31fda2c74b48a7fab919d63d793264c8cb96b1e549f9cca70fe2adb236b92f35
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.40.2-13/
 
-- https://sources.debian.net/src/util-linux/2.40.2-13/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.40.2-13/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.40.2-13/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xxhash=0.8.2-2`
 
