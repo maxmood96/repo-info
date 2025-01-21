@@ -11,9 +11,11 @@
 -	[`golang:1-nanoserver`](#golang1-nanoserver)
 -	[`golang:1-nanoserver-1809`](#golang1-nanoserver-1809)
 -	[`golang:1-nanoserver-ltsc2022`](#golang1-nanoserver-ltsc2022)
+-	[`golang:1-nanoserver-ltsc2025`](#golang1-nanoserver-ltsc2025)
 -	[`golang:1-windowsservercore`](#golang1-windowsservercore)
 -	[`golang:1-windowsservercore-1809`](#golang1-windowsservercore-1809)
 -	[`golang:1-windowsservercore-ltsc2022`](#golang1-windowsservercore-ltsc2022)
+-	[`golang:1-windowsservercore-ltsc2025`](#golang1-windowsservercore-ltsc2025)
 -	[`golang:1.22`](#golang122)
 -	[`golang:1.22-alpine`](#golang122-alpine)
 -	[`golang:1.22-alpine3.20`](#golang122-alpine320)
@@ -23,9 +25,11 @@
 -	[`golang:1.22-nanoserver`](#golang122-nanoserver)
 -	[`golang:1.22-nanoserver-1809`](#golang122-nanoserver-1809)
 -	[`golang:1.22-nanoserver-ltsc2022`](#golang122-nanoserver-ltsc2022)
+-	[`golang:1.22-nanoserver-ltsc2025`](#golang122-nanoserver-ltsc2025)
 -	[`golang:1.22-windowsservercore`](#golang122-windowsservercore)
 -	[`golang:1.22-windowsservercore-1809`](#golang122-windowsservercore-1809)
 -	[`golang:1.22-windowsservercore-ltsc2022`](#golang122-windowsservercore-ltsc2022)
+-	[`golang:1.22-windowsservercore-ltsc2025`](#golang122-windowsservercore-ltsc2025)
 -	[`golang:1.22.11`](#golang12211)
 -	[`golang:1.22.11-alpine`](#golang12211-alpine)
 -	[`golang:1.22.11-alpine3.20`](#golang12211-alpine320)
@@ -35,9 +39,11 @@
 -	[`golang:1.22.11-nanoserver`](#golang12211-nanoserver)
 -	[`golang:1.22.11-nanoserver-1809`](#golang12211-nanoserver-1809)
 -	[`golang:1.22.11-nanoserver-ltsc2022`](#golang12211-nanoserver-ltsc2022)
+-	[`golang:1.22.11-nanoserver-ltsc2025`](#golang12211-nanoserver-ltsc2025)
 -	[`golang:1.22.11-windowsservercore`](#golang12211-windowsservercore)
 -	[`golang:1.22.11-windowsservercore-1809`](#golang12211-windowsservercore-1809)
 -	[`golang:1.22.11-windowsservercore-ltsc2022`](#golang12211-windowsservercore-ltsc2022)
+-	[`golang:1.22.11-windowsservercore-ltsc2025`](#golang12211-windowsservercore-ltsc2025)
 -	[`golang:1.23`](#golang123)
 -	[`golang:1.23-alpine`](#golang123-alpine)
 -	[`golang:1.23-alpine3.20`](#golang123-alpine320)
@@ -47,9 +53,11 @@
 -	[`golang:1.23-nanoserver`](#golang123-nanoserver)
 -	[`golang:1.23-nanoserver-1809`](#golang123-nanoserver-1809)
 -	[`golang:1.23-nanoserver-ltsc2022`](#golang123-nanoserver-ltsc2022)
+-	[`golang:1.23-nanoserver-ltsc2025`](#golang123-nanoserver-ltsc2025)
 -	[`golang:1.23-windowsservercore`](#golang123-windowsservercore)
 -	[`golang:1.23-windowsservercore-1809`](#golang123-windowsservercore-1809)
 -	[`golang:1.23-windowsservercore-ltsc2022`](#golang123-windowsservercore-ltsc2022)
+-	[`golang:1.23-windowsservercore-ltsc2025`](#golang123-windowsservercore-ltsc2025)
 -	[`golang:1.23.5`](#golang1235)
 -	[`golang:1.23.5-alpine`](#golang1235-alpine)
 -	[`golang:1.23.5-alpine3.20`](#golang1235-alpine320)
@@ -59,9 +67,11 @@
 -	[`golang:1.23.5-nanoserver`](#golang1235-nanoserver)
 -	[`golang:1.23.5-nanoserver-1809`](#golang1235-nanoserver-1809)
 -	[`golang:1.23.5-nanoserver-ltsc2022`](#golang1235-nanoserver-ltsc2022)
+-	[`golang:1.23.5-nanoserver-ltsc2025`](#golang1235-nanoserver-ltsc2025)
 -	[`golang:1.23.5-windowsservercore`](#golang1235-windowsservercore)
 -	[`golang:1.23.5-windowsservercore-1809`](#golang1235-windowsservercore-1809)
 -	[`golang:1.23.5-windowsservercore-ltsc2022`](#golang1235-windowsservercore-ltsc2022)
+-	[`golang:1.23.5-windowsservercore-ltsc2025`](#golang1235-windowsservercore-ltsc2025)
 -	[`golang:1.24-rc`](#golang124-rc)
 -	[`golang:1.24-rc-alpine`](#golang124-rc-alpine)
 -	[`golang:1.24-rc-alpine3.20`](#golang124-rc-alpine320)
@@ -71,9 +81,11 @@
 -	[`golang:1.24-rc-nanoserver`](#golang124-rc-nanoserver)
 -	[`golang:1.24-rc-nanoserver-1809`](#golang124-rc-nanoserver-1809)
 -	[`golang:1.24-rc-nanoserver-ltsc2022`](#golang124-rc-nanoserver-ltsc2022)
+-	[`golang:1.24-rc-nanoserver-ltsc2025`](#golang124-rc-nanoserver-ltsc2025)
 -	[`golang:1.24-rc-windowsservercore`](#golang124-rc-windowsservercore)
 -	[`golang:1.24-rc-windowsservercore-1809`](#golang124-rc-windowsservercore-1809)
 -	[`golang:1.24-rc-windowsservercore-ltsc2022`](#golang124-rc-windowsservercore-ltsc2022)
+-	[`golang:1.24-rc-windowsservercore-ltsc2025`](#golang124-rc-windowsservercore-ltsc2025)
 -	[`golang:1.24rc2`](#golang124rc2)
 -	[`golang:1.24rc2-alpine`](#golang124rc2-alpine)
 -	[`golang:1.24rc2-alpine3.20`](#golang124rc2-alpine320)
@@ -83,9 +95,11 @@
 -	[`golang:1.24rc2-nanoserver`](#golang124rc2-nanoserver)
 -	[`golang:1.24rc2-nanoserver-1809`](#golang124rc2-nanoserver-1809)
 -	[`golang:1.24rc2-nanoserver-ltsc2022`](#golang124rc2-nanoserver-ltsc2022)
+-	[`golang:1.24rc2-nanoserver-ltsc2025`](#golang124rc2-nanoserver-ltsc2025)
 -	[`golang:1.24rc2-windowsservercore`](#golang124rc2-windowsservercore)
 -	[`golang:1.24rc2-windowsservercore-1809`](#golang124rc2-windowsservercore-1809)
 -	[`golang:1.24rc2-windowsservercore-ltsc2022`](#golang124rc2-windowsservercore-ltsc2022)
+-	[`golang:1.24rc2-windowsservercore-ltsc2025`](#golang124rc2-windowsservercore-ltsc2025)
 -	[`golang:alpine`](#golangalpine)
 -	[`golang:alpine3.20`](#golangalpine320)
 -	[`golang:alpine3.21`](#golangalpine321)
@@ -95,9 +109,11 @@
 -	[`golang:nanoserver`](#golangnanoserver)
 -	[`golang:nanoserver-1809`](#golangnanoserver-1809)
 -	[`golang:nanoserver-ltsc2022`](#golangnanoserver-ltsc2022)
+-	[`golang:nanoserver-ltsc2025`](#golangnanoserver-ltsc2025)
 -	[`golang:windowsservercore`](#golangwindowsservercore)
 -	[`golang:windowsservercore-1809`](#golangwindowsservercore-1809)
 -	[`golang:windowsservercore-ltsc2022`](#golangwindowsservercore-ltsc2022)
+-	[`golang:windowsservercore-ltsc2025`](#golangwindowsservercore-ltsc2025)
 
 ## `golang:1`
 
@@ -4342,6 +4358,15 @@ WORKDIR C:\go
 		Size: 1.2 KB (1238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `golang:1-nanoserver-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `golang:1-windowsservercore`
 
 ```console
@@ -4760,6 +4785,15 @@ WORKDIR C:\go
 		Last Modified: Thu, 16 Jan 2025 22:17:33 GMT  
 		Size: 1.4 KB (1410 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `golang:1-windowsservercore-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `golang:1.22`
 
@@ -9004,6 +9038,15 @@ WORKDIR C:\go
 		Size: 1.2 KB (1235 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `golang:1.22-nanoserver-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `golang:1.22-windowsservercore`
 
 ```console
@@ -9422,6 +9465,15 @@ WORKDIR C:\go
 		Last Modified: Thu, 16 Jan 2025 22:17:28 GMT  
 		Size: 1.5 KB (1529 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `golang:1.22-windowsservercore-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `golang:1.22.11`
 
@@ -13666,6 +13718,15 @@ WORKDIR C:\go
 		Size: 1.2 KB (1235 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `golang:1.22.11-nanoserver-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `golang:1.22.11-windowsservercore`
 
 ```console
@@ -14084,6 +14145,15 @@ WORKDIR C:\go
 		Last Modified: Thu, 16 Jan 2025 22:17:28 GMT  
 		Size: 1.5 KB (1529 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `golang:1.22.11-windowsservercore-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `golang:1.23`
 
@@ -18328,6 +18398,15 @@ WORKDIR C:\go
 		Size: 1.2 KB (1238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `golang:1.23-nanoserver-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `golang:1.23-windowsservercore`
 
 ```console
@@ -18746,6 +18825,15 @@ WORKDIR C:\go
 		Last Modified: Thu, 16 Jan 2025 22:17:33 GMT  
 		Size: 1.4 KB (1410 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `golang:1.23-windowsservercore-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `golang:1.23.5`
 
@@ -22990,6 +23078,15 @@ WORKDIR C:\go
 		Size: 1.2 KB (1238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `golang:1.23.5-nanoserver-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `golang:1.23.5-windowsservercore`
 
 ```console
@@ -23408,6 +23505,15 @@ WORKDIR C:\go
 		Last Modified: Thu, 16 Jan 2025 22:17:33 GMT  
 		Size: 1.4 KB (1410 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `golang:1.23.5-windowsservercore-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `golang:1.24-rc`
 
@@ -27652,6 +27758,15 @@ WORKDIR C:\go
 		Size: 1.2 KB (1236 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `golang:1.24-rc-nanoserver-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `golang:1.24-rc-windowsservercore`
 
 ```console
@@ -28070,6 +28185,15 @@ WORKDIR C:\go
 		Last Modified: Thu, 16 Jan 2025 22:19:50 GMT  
 		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `golang:1.24-rc-windowsservercore-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `golang:1.24rc2`
 
@@ -32314,6 +32438,15 @@ WORKDIR C:\go
 		Size: 1.2 KB (1236 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `golang:1.24rc2-nanoserver-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `golang:1.24rc2-windowsservercore`
 
 ```console
@@ -32732,6 +32865,15 @@ WORKDIR C:\go
 		Last Modified: Thu, 16 Jan 2025 22:19:50 GMT  
 		Size: 1.4 KB (1424 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `golang:1.24rc2-windowsservercore-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `golang:alpine`
 
@@ -36976,6 +37118,15 @@ WORKDIR C:\go
 		Size: 1.2 KB (1238 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `golang:nanoserver-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `golang:windowsservercore`
 
 ```console
@@ -37394,3 +37545,12 @@ WORKDIR C:\go
 		Last Modified: Thu, 16 Jan 2025 22:17:33 GMT  
 		Size: 1.4 KB (1410 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `golang:windowsservercore-ltsc2025`
+
+```console
+$ docker pull golang@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
