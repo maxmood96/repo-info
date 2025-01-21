@@ -1108,21 +1108,13 @@ Licenses: (parsed from: `/usr/share/doc/gzip/copyright`)
 - `GPL-3`
 - `GPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gzip=1.12-1.2
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12-1.2.dsc' gzip_1.12-1.2.dsc 2278 SHA256:4445d382766432e1b15f2bea0d7a4f2b3fbf886e88cfc6db4044b778b46df650
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12.orig.tar.xz' gzip_1.12.orig.tar.xz 825548 SHA256:ce5e03e519f637e1f814011ace35c4f87b33c0bbabeec35baf5fbd3479e91956
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12.orig.tar.xz.asc' gzip_1.12.orig.tar.xz.asc 833 SHA256:3ed9ab54452576e0be0d477c772c9f47baa36415133fef7dd1fcf7b15480ba32
-'http://deb.debian.org/debian/pool/main/g/gzip/gzip_1.12-1.2.debian.tar.xz' gzip_1.12-1.2.debian.tar.xz 19384 SHA256:afdc8cd336e5612658bd2ea029c6e215d5a2bc70c6fda24956bf554b33b147f8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gzip/1.12-1.2/
 
-- https://sources.debian.net/src/gzip/1.12-1.2/ (for browsing the source)
-- https://sources.debian.net/src/gzip/1.12-1.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gzip/1.12-1.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.25`
 
@@ -1393,20 +1385,13 @@ Licenses: (parsed from: `/usr/share/doc/libedit2/copyright`)
 
 - `BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libedit=3.1-20240808-1
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20240808-1.dsc' libedit_3.1-20240808-1.dsc 2264 SHA256:a60f3c9aa67364db2d05f9797b5f4fa2ba3d0ecad796ed5500158348e0bf0d3b
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20240808.orig.tar.gz' libedit_3.1-20240808.orig.tar.gz 538611 SHA256:5f0573349d77c4a48967191cdd6634dd7aa5f6398c6a57fe037cc02696d6099f
-'http://deb.debian.org/debian/pool/main/libe/libedit/libedit_3.1-20240808-1.debian.tar.xz' libedit_3.1-20240808-1.debian.tar.xz 16680 SHA256:f9e8c39d7ef648092b0c5fa93d37181d44d4fe500988ede608a928be4116af0c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libedit/3.1-20240808-1/
 
-- https://sources.debian.net/src/libedit/3.1-20240808-1/ (for browsing the source)
-- https://sources.debian.net/src/libedit/3.1-20240808-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libedit/3.1-20240808-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `liberror-perl=0.17029-2`
 
@@ -2980,20 +2965,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.2-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.2-1.dsc' systemd_257.2-1.dsc 8678 SHA256:a66ec43d9e470d55b81ca6d9337f41b163d44d715816ffb435203036901df3aa
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.2.orig.tar.gz' systemd_257.2.orig.tar.gz 16189809 SHA256:7f2bc3253e4f87578132c5e433ef9ff7e8fee01d9eb5a5b7c64376d617f694d0
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.2-1.debian.tar.xz' systemd_257.2-1.debian.tar.xz 177676 SHA256:1f534dd9569f2f0f6b5dc7e18026801e0539e8564e808ce6030425c58b31c9a7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257.2-1/
 
-- https://sources.debian.net/src/systemd/257.2-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.13-1`
 
