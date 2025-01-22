@@ -2949,14 +2949,9 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/do
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.7.dsc' python3.10_3.10.12-1~22.04.7.dsc 3674 SHA512:0db6a66ee8b37d71299d0f2c92e13fee807ccaf864dc831d999fb3127729b515bd8b40406fb6dd35c2cb51c2139a2cd7c4d28480e172234a9a2b362d14313c6c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.7.debian.tar.xz' python3.10_3.10.12-1~22.04.7.debian.tar.xz 245668 SHA512:caa1f59358b0a1d737723be6a67e2a5a72ffc25253bf01da17f5626f791c7be07870d1fcc3cb1b2ff12c2b8f6dc270acc9d84c117576e54c7005ef242b330301
-```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
