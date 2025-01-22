@@ -15,7 +15,7 @@
 ## `orientdb:3.1`
 
 ```console
-$ docker pull orientdb@sha256:fc33f21ce4a36c33005404a6f7bdff699045af683171148bfefb134e4e738e6e
+$ docker pull orientdb@sha256:a230f06b2e98ae12e538e7c96bb33293e8dc419b85d5bb7f3fac419f3108f9a0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,13 +26,13 @@ $ docker pull orientdb@sha256:fc33f21ce4a36c33005404a6f7bdff699045af683171148bfe
 ### `orientdb:3.1` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:99aed6536103ecaa6b10ba3be1d014988c5db67888b263df99056f837cd4b702
+$ docker pull orientdb@sha256:ff98272d661fd0537210f7f2c7b7bb42bdbed5e57b22bb99d5a0a926208fe696
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **203.4 MB (203434742 bytes)**  
+-	Total Size: **154.5 MB (154512752 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5feae1de6122c0bc5a465b2c360f97c26237a87416b64237e71164614b4924f6`
+-	Image ID: `sha256:c357b01584c730d012cadb2145901809b9fcbeb43969f2258e0dd80de6dd5951`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
@@ -60,7 +60,7 @@ RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get ins
 # Thu, 15 Sep 2022 13:05:16 GMT
 ENV JAVA_VERSION=jdk8u432-b06
 # Thu, 15 Sep 2022 13:05:16 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -r "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
 # Thu, 15 Sep 2022 13:05:16 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Thu, 15 Sep 2022 13:05:16 GMT
@@ -104,29 +104,29 @@ CMD ["server.sh"]
 		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7f4ace5897523a1a5f235b03291ebbca78294e7d42b4f1425abd38b17701303`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
-		Size: 17.0 MB (16966378 bytes)  
+	-	`sha256:ae2feb52a5863555f1f77bff6817d53f01ebe2dfe378f700ba1e41b0f9e6067e`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 17.0 MB (16966691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b6e2fd4158ef247a4fe5c04d362fd5595c2dc33f06cf9ba2bb74c89568085e5`  
-		Last Modified: Tue, 03 Dec 2024 02:30:22 GMT  
-		Size: 103.6 MB (103632853 bytes)  
+	-	`sha256:a833422b45d2dcd95e1871dfeab4dffc70d4c858da91b7a4dd9b3db659f6ffcf`  
+		Last Modified: Wed, 22 Jan 2025 18:27:37 GMT  
+		Size: 54.7 MB (54710581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbc6481c0f3d295d0d446995ffc41a6315dfcf19f5a7ddae1815ef95e4b9ef6b`  
-		Last Modified: Tue, 03 Dec 2024 02:30:18 GMT  
-		Size: 129.0 B  
+	-	`sha256:29ebaf0b532ac92b1f282861616f896ca08884386b4c328580cbe71fd861aa99`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
+	-	`sha256:5c2a67ca5b133601579ea3c7b05e6e70dc8c7ca46a33a93af037d8969c26fade`  
+		Last Modified: Wed, 22 Jan 2025 18:27:37 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf3e4d2ea8abd06a390d9ea3bdc1626d2a757fa88a7c1bc134bafa879b9e4442`  
-		Last Modified: Tue, 03 Dec 2024 03:24:17 GMT  
-		Size: 53.1 MB (53081042 bytes)  
+	-	`sha256:6e573c838aeca28f9140bfafaee3088c4c108316fa343ed2bf778992e03fcf53`  
+		Last Modified: Wed, 22 Jan 2025 19:38:57 GMT  
+		Size: 53.1 MB (53081012 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -136,31 +136,31 @@ CMD ["server.sh"]
 ### `orientdb:3.1` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:3c4bbd6946794e8cd4a542150215de45a6738bed8446cfd83424ec54dd816e6a
+$ docker pull orientdb@sha256:8fed8d236d9c08fd3dde42eee6718bae9d07ba984bf1cf6e85499d4be1fc6c91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3421109 bytes)**  
+-	Total Size: **3.4 MB (3416016 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a316c75c1dd6e8d2673a7b4dae81c9dac592deb257fdb32ed197d7a5764687c7`
+-	Image ID: `sha256:2584e41b6babea7c8c2ebb2127b6e31a121d46e9f9b0c7c5305dfdca9378010c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:31dd717992bdbe6f299276a51591490c40b6a31f599b9177017ec7532864e8f7`  
-		Last Modified: Tue, 03 Dec 2024 03:24:16 GMT  
-		Size: 3.4 MB (3406893 bytes)  
+	-	`sha256:469c9753f0e9c2925c480a69622dddf8eda822be2a52d93856c8f0b69524952d`  
+		Last Modified: Wed, 22 Jan 2025 19:38:56 GMT  
+		Size: 3.4 MB (3401806 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4becc4a8dc1c28c8b2e41214930b5a64bc5ec34c8614c140bee724176aafa9ad`  
-		Last Modified: Tue, 03 Dec 2024 03:24:16 GMT  
-		Size: 14.2 KB (14216 bytes)  
+	-	`sha256:ac382a4df222005863a94de7768ca33e8d273c0da4cbb82646dd5fabf20d3b05`  
+		Last Modified: Wed, 22 Jan 2025 19:38:56 GMT  
+		Size: 14.2 KB (14210 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `orientdb:3.1-tp3`
 
 ```console
-$ docker pull orientdb@sha256:d78c759bab28e3d42f5cdc3c33fb0c8139764786cabdf2074f6d843a534cb548
+$ docker pull orientdb@sha256:1841acac98f00d33584283f0e54f403c0401b4ae8875a8ac5a9f941bde1052b6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -171,13 +171,13 @@ $ docker pull orientdb@sha256:d78c759bab28e3d42f5cdc3c33fb0c8139764786cabdf2074f
 ### `orientdb:3.1-tp3` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:560ff395a2c36c8cca09198e1f61654f209c6735f51bcabb29e17cb32cc65611
+$ docker pull orientdb@sha256:5ebc39d3bf1fd0dd60ebe6baa4bf490e6243d1f2180b2195e58c530a5a8e560c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **226.4 MB (226441812 bytes)**  
+-	Total Size: **177.5 MB (177519836 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fcbb28561c56430d34737375e28b25c869e482ea9f5acbb36bd1583f56903536`
+-	Image ID: `sha256:9c54cde7c89cf98e04f07f87e5b9f13c4acead277230d069dc56ec5da44d324d`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
@@ -205,7 +205,7 @@ RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get ins
 # Thu, 15 Sep 2022 13:05:16 GMT
 ENV JAVA_VERSION=jdk8u432-b06
 # Thu, 15 Sep 2022 13:05:16 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -r "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
 # Thu, 15 Sep 2022 13:05:16 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Thu, 15 Sep 2022 13:05:16 GMT
@@ -253,33 +253,33 @@ CMD ["server.sh"]
 		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7f4ace5897523a1a5f235b03291ebbca78294e7d42b4f1425abd38b17701303`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
-		Size: 17.0 MB (16966378 bytes)  
+	-	`sha256:ae2feb52a5863555f1f77bff6817d53f01ebe2dfe378f700ba1e41b0f9e6067e`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 17.0 MB (16966691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b6e2fd4158ef247a4fe5c04d362fd5595c2dc33f06cf9ba2bb74c89568085e5`  
-		Last Modified: Tue, 03 Dec 2024 02:30:22 GMT  
-		Size: 103.6 MB (103632853 bytes)  
+	-	`sha256:a833422b45d2dcd95e1871dfeab4dffc70d4c858da91b7a4dd9b3db659f6ffcf`  
+		Last Modified: Wed, 22 Jan 2025 18:27:37 GMT  
+		Size: 54.7 MB (54710581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbc6481c0f3d295d0d446995ffc41a6315dfcf19f5a7ddae1815ef95e4b9ef6b`  
-		Last Modified: Tue, 03 Dec 2024 02:30:18 GMT  
-		Size: 129.0 B  
+	-	`sha256:29ebaf0b532ac92b1f282861616f896ca08884386b4c328580cbe71fd861aa99`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
+	-	`sha256:5c2a67ca5b133601579ea3c7b05e6e70dc8c7ca46a33a93af037d8969c26fade`  
+		Last Modified: Wed, 22 Jan 2025 18:27:37 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb3a1f06fad0e68d376c4073c3aa1bb7fbcf68f15dd4bb4d0b0cbb7872bdafee`  
-		Last Modified: Tue, 03 Dec 2024 03:24:45 GMT  
-		Size: 76.1 MB (76086741 bytes)  
+	-	`sha256:d11727ec7670c4ee86bec4e3b15f224457cd0d9cabffcb09c6c832bc1262ad12`  
+		Last Modified: Wed, 22 Jan 2025 19:38:57 GMT  
+		Size: 76.1 MB (76086717 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e14b03c49fa1f5509b0981d2a7173924016b99e0b283b88dde7042b4cf7ba2b`  
-		Last Modified: Tue, 03 Dec 2024 03:24:41 GMT  
-		Size: 1.4 KB (1371 bytes)  
+	-	`sha256:99f430c22f4b1b1b7d8623ee46a176c49b1a5bcb120268aac95d8158fe39b6ab`  
+		Last Modified: Wed, 22 Jan 2025 19:38:56 GMT  
+		Size: 1.4 KB (1379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -289,31 +289,31 @@ CMD ["server.sh"]
 ### `orientdb:3.1-tp3` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:b55472b3c8d0ddf4f79afd275ff12ebee60dd4731421740a579b005db838fdcd
+$ docker pull orientdb@sha256:a4d7614a9c5275d9d41ec80112019b9e6320f326518a7ecbcd7233e8d884be6c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.5 MB (3486283 bytes)**  
+-	Total Size: **3.5 MB (3480697 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc230824c326d26c14c553dafda1e1305648b7837c884003f82fbe916e27fe7b`
+-	Image ID: `sha256:6c15fb9f7df4f1a944f45f58b5276c50221ae135bc39de21ce1485cc82717f6a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1050e0351ae0d1bc0ccdbadabc48e0a3ac5394383b0785bad45c2a5a4b6db9d5`  
-		Last Modified: Tue, 03 Dec 2024 03:24:41 GMT  
-		Size: 3.5 MB (3469435 bytes)  
+	-	`sha256:430df39d4b44ed9b3714ce82e900044585c8103a7127612fb711f3435528e5c3`  
+		Last Modified: Wed, 22 Jan 2025 19:38:56 GMT  
+		Size: 3.5 MB (3463854 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9ba6ff646dae460ae3e66a6b86b4ee20baf8627e353a4ad5e7c1d532056b970d`  
-		Last Modified: Tue, 03 Dec 2024 03:24:41 GMT  
-		Size: 16.8 KB (16848 bytes)  
+	-	`sha256:57b222cae3cf0feb65507c2f8e3055e3ab7b73fe54e94304afdb331e16f244b3`  
+		Last Modified: Wed, 22 Jan 2025 19:38:55 GMT  
+		Size: 16.8 KB (16843 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `orientdb:3.1.20`
 
 ```console
-$ docker pull orientdb@sha256:fc33f21ce4a36c33005404a6f7bdff699045af683171148bfefb134e4e738e6e
+$ docker pull orientdb@sha256:a230f06b2e98ae12e538e7c96bb33293e8dc419b85d5bb7f3fac419f3108f9a0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -324,13 +324,13 @@ $ docker pull orientdb@sha256:fc33f21ce4a36c33005404a6f7bdff699045af683171148bfe
 ### `orientdb:3.1.20` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:99aed6536103ecaa6b10ba3be1d014988c5db67888b263df99056f837cd4b702
+$ docker pull orientdb@sha256:ff98272d661fd0537210f7f2c7b7bb42bdbed5e57b22bb99d5a0a926208fe696
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **203.4 MB (203434742 bytes)**  
+-	Total Size: **154.5 MB (154512752 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5feae1de6122c0bc5a465b2c360f97c26237a87416b64237e71164614b4924f6`
+-	Image ID: `sha256:c357b01584c730d012cadb2145901809b9fcbeb43969f2258e0dd80de6dd5951`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
@@ -358,7 +358,7 @@ RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get ins
 # Thu, 15 Sep 2022 13:05:16 GMT
 ENV JAVA_VERSION=jdk8u432-b06
 # Thu, 15 Sep 2022 13:05:16 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -r "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
 # Thu, 15 Sep 2022 13:05:16 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Thu, 15 Sep 2022 13:05:16 GMT
@@ -402,29 +402,29 @@ CMD ["server.sh"]
 		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7f4ace5897523a1a5f235b03291ebbca78294e7d42b4f1425abd38b17701303`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
-		Size: 17.0 MB (16966378 bytes)  
+	-	`sha256:ae2feb52a5863555f1f77bff6817d53f01ebe2dfe378f700ba1e41b0f9e6067e`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 17.0 MB (16966691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b6e2fd4158ef247a4fe5c04d362fd5595c2dc33f06cf9ba2bb74c89568085e5`  
-		Last Modified: Tue, 03 Dec 2024 02:30:22 GMT  
-		Size: 103.6 MB (103632853 bytes)  
+	-	`sha256:a833422b45d2dcd95e1871dfeab4dffc70d4c858da91b7a4dd9b3db659f6ffcf`  
+		Last Modified: Wed, 22 Jan 2025 18:27:37 GMT  
+		Size: 54.7 MB (54710581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbc6481c0f3d295d0d446995ffc41a6315dfcf19f5a7ddae1815ef95e4b9ef6b`  
-		Last Modified: Tue, 03 Dec 2024 02:30:18 GMT  
-		Size: 129.0 B  
+	-	`sha256:29ebaf0b532ac92b1f282861616f896ca08884386b4c328580cbe71fd861aa99`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
+	-	`sha256:5c2a67ca5b133601579ea3c7b05e6e70dc8c7ca46a33a93af037d8969c26fade`  
+		Last Modified: Wed, 22 Jan 2025 18:27:37 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cf3e4d2ea8abd06a390d9ea3bdc1626d2a757fa88a7c1bc134bafa879b9e4442`  
-		Last Modified: Tue, 03 Dec 2024 03:24:17 GMT  
-		Size: 53.1 MB (53081042 bytes)  
+	-	`sha256:6e573c838aeca28f9140bfafaee3088c4c108316fa343ed2bf778992e03fcf53`  
+		Last Modified: Wed, 22 Jan 2025 19:38:57 GMT  
+		Size: 53.1 MB (53081012 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -434,31 +434,31 @@ CMD ["server.sh"]
 ### `orientdb:3.1.20` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:3c4bbd6946794e8cd4a542150215de45a6738bed8446cfd83424ec54dd816e6a
+$ docker pull orientdb@sha256:8fed8d236d9c08fd3dde42eee6718bae9d07ba984bf1cf6e85499d4be1fc6c91
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3421109 bytes)**  
+-	Total Size: **3.4 MB (3416016 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a316c75c1dd6e8d2673a7b4dae81c9dac592deb257fdb32ed197d7a5764687c7`
+-	Image ID: `sha256:2584e41b6babea7c8c2ebb2127b6e31a121d46e9f9b0c7c5305dfdca9378010c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:31dd717992bdbe6f299276a51591490c40b6a31f599b9177017ec7532864e8f7`  
-		Last Modified: Tue, 03 Dec 2024 03:24:16 GMT  
-		Size: 3.4 MB (3406893 bytes)  
+	-	`sha256:469c9753f0e9c2925c480a69622dddf8eda822be2a52d93856c8f0b69524952d`  
+		Last Modified: Wed, 22 Jan 2025 19:38:56 GMT  
+		Size: 3.4 MB (3401806 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4becc4a8dc1c28c8b2e41214930b5a64bc5ec34c8614c140bee724176aafa9ad`  
-		Last Modified: Tue, 03 Dec 2024 03:24:16 GMT  
-		Size: 14.2 KB (14216 bytes)  
+	-	`sha256:ac382a4df222005863a94de7768ca33e8d273c0da4cbb82646dd5fabf20d3b05`  
+		Last Modified: Wed, 22 Jan 2025 19:38:56 GMT  
+		Size: 14.2 KB (14210 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `orientdb:3.1.20-tp3`
 
 ```console
-$ docker pull orientdb@sha256:d78c759bab28e3d42f5cdc3c33fb0c8139764786cabdf2074f6d843a534cb548
+$ docker pull orientdb@sha256:1841acac98f00d33584283f0e54f403c0401b4ae8875a8ac5a9f941bde1052b6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -469,13 +469,13 @@ $ docker pull orientdb@sha256:d78c759bab28e3d42f5cdc3c33fb0c8139764786cabdf2074f
 ### `orientdb:3.1.20-tp3` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:560ff395a2c36c8cca09198e1f61654f209c6735f51bcabb29e17cb32cc65611
+$ docker pull orientdb@sha256:5ebc39d3bf1fd0dd60ebe6baa4bf490e6243d1f2180b2195e58c530a5a8e560c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **226.4 MB (226441812 bytes)**  
+-	Total Size: **177.5 MB (177519836 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fcbb28561c56430d34737375e28b25c869e482ea9f5acbb36bd1583f56903536`
+-	Image ID: `sha256:9c54cde7c89cf98e04f07f87e5b9f13c4acead277230d069dc56ec5da44d324d`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
@@ -503,7 +503,7 @@ RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get ins
 # Thu, 15 Sep 2022 13:05:16 GMT
 ENV JAVA_VERSION=jdk8u432-b06
 # Thu, 15 Sep 2022 13:05:16 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -r "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
 # Thu, 15 Sep 2022 13:05:16 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Thu, 15 Sep 2022 13:05:16 GMT
@@ -551,33 +551,33 @@ CMD ["server.sh"]
 		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7f4ace5897523a1a5f235b03291ebbca78294e7d42b4f1425abd38b17701303`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
-		Size: 17.0 MB (16966378 bytes)  
+	-	`sha256:ae2feb52a5863555f1f77bff6817d53f01ebe2dfe378f700ba1e41b0f9e6067e`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 17.0 MB (16966691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b6e2fd4158ef247a4fe5c04d362fd5595c2dc33f06cf9ba2bb74c89568085e5`  
-		Last Modified: Tue, 03 Dec 2024 02:30:22 GMT  
-		Size: 103.6 MB (103632853 bytes)  
+	-	`sha256:a833422b45d2dcd95e1871dfeab4dffc70d4c858da91b7a4dd9b3db659f6ffcf`  
+		Last Modified: Wed, 22 Jan 2025 18:27:37 GMT  
+		Size: 54.7 MB (54710581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbc6481c0f3d295d0d446995ffc41a6315dfcf19f5a7ddae1815ef95e4b9ef6b`  
-		Last Modified: Tue, 03 Dec 2024 02:30:18 GMT  
-		Size: 129.0 B  
+	-	`sha256:29ebaf0b532ac92b1f282861616f896ca08884386b4c328580cbe71fd861aa99`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
+	-	`sha256:5c2a67ca5b133601579ea3c7b05e6e70dc8c7ca46a33a93af037d8969c26fade`  
+		Last Modified: Wed, 22 Jan 2025 18:27:37 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb3a1f06fad0e68d376c4073c3aa1bb7fbcf68f15dd4bb4d0b0cbb7872bdafee`  
-		Last Modified: Tue, 03 Dec 2024 03:24:45 GMT  
-		Size: 76.1 MB (76086741 bytes)  
+	-	`sha256:d11727ec7670c4ee86bec4e3b15f224457cd0d9cabffcb09c6c832bc1262ad12`  
+		Last Modified: Wed, 22 Jan 2025 19:38:57 GMT  
+		Size: 76.1 MB (76086717 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e14b03c49fa1f5509b0981d2a7173924016b99e0b283b88dde7042b4cf7ba2b`  
-		Last Modified: Tue, 03 Dec 2024 03:24:41 GMT  
-		Size: 1.4 KB (1371 bytes)  
+	-	`sha256:99f430c22f4b1b1b7d8623ee46a176c49b1a5bcb120268aac95d8158fe39b6ab`  
+		Last Modified: Wed, 22 Jan 2025 19:38:56 GMT  
+		Size: 1.4 KB (1379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -587,31 +587,31 @@ CMD ["server.sh"]
 ### `orientdb:3.1.20-tp3` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:b55472b3c8d0ddf4f79afd275ff12ebee60dd4731421740a579b005db838fdcd
+$ docker pull orientdb@sha256:a4d7614a9c5275d9d41ec80112019b9e6320f326518a7ecbcd7233e8d884be6c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.5 MB (3486283 bytes)**  
+-	Total Size: **3.5 MB (3480697 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fc230824c326d26c14c553dafda1e1305648b7837c884003f82fbe916e27fe7b`
+-	Image ID: `sha256:6c15fb9f7df4f1a944f45f58b5276c50221ae135bc39de21ce1485cc82717f6a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1050e0351ae0d1bc0ccdbadabc48e0a3ac5394383b0785bad45c2a5a4b6db9d5`  
-		Last Modified: Tue, 03 Dec 2024 03:24:41 GMT  
-		Size: 3.5 MB (3469435 bytes)  
+	-	`sha256:430df39d4b44ed9b3714ce82e900044585c8103a7127612fb711f3435528e5c3`  
+		Last Modified: Wed, 22 Jan 2025 19:38:56 GMT  
+		Size: 3.5 MB (3463854 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9ba6ff646dae460ae3e66a6b86b4ee20baf8627e353a4ad5e7c1d532056b970d`  
-		Last Modified: Tue, 03 Dec 2024 03:24:41 GMT  
-		Size: 16.8 KB (16848 bytes)  
+	-	`sha256:57b222cae3cf0feb65507c2f8e3055e3ab7b73fe54e94304afdb331e16f244b3`  
+		Last Modified: Wed, 22 Jan 2025 19:38:55 GMT  
+		Size: 16.8 KB (16843 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `orientdb:3.2`
 
 ```console
-$ docker pull orientdb@sha256:38c6968dcc04e2c35d85495026bd751e6a9e9d60bdbeee2607103477564c1295
+$ docker pull orientdb@sha256:7d6e65c08f38393534a25e7c28a894375093e12fba275459259cbe49c486ed12
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -626,46 +626,46 @@ $ docker pull orientdb@sha256:38c6968dcc04e2c35d85495026bd751e6a9e9d60bdbeee2607
 ### `orientdb:3.2` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:058e19fc4168ca9b0f1f2d29bc92f13b3dacb0c9bc13448a3c61f346b70909ce
+$ docker pull orientdb@sha256:56c8166475bd37e2246cd4fb44e102e104915d43d7bc49463f072d140507a82a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.9 MB (223939521 bytes)**  
+-	Total Size: **174.4 MB (174360739 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:315dfbcb6b9627b6058123ee7d48c0ee3ce68c32903bd1695997e08fe61e7a74`
+-	Image ID: `sha256:0f8722b3dc624cf7a9cf846049d357bad3902080148f1750a39110a5847193c4`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 ARG RELEASE
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 LABEL org.opencontainers.image.version=24.04
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:25 GMT
 ADD file:bcebbf0fddcba5b864d5d267b68dd23bcfb01275e6ec7bcab69bf8b56af14804 in / 
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:25 GMT
 CMD ["/bin/bash"]
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV JAVA_VERSION=jdk8u432-b06
-# Wed, 23 Oct 2024 15:41:32 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -r "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+# Tue, 14 Jan 2025 21:39:38 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 14 Jan 2025 21:39:38 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
@@ -704,29 +704,29 @@ CMD ["server.sh"]
 		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7f4ace5897523a1a5f235b03291ebbca78294e7d42b4f1425abd38b17701303`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
-		Size: 17.0 MB (16966378 bytes)  
+	-	`sha256:ae2feb52a5863555f1f77bff6817d53f01ebe2dfe378f700ba1e41b0f9e6067e`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 17.0 MB (16966691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b6e2fd4158ef247a4fe5c04d362fd5595c2dc33f06cf9ba2bb74c89568085e5`  
-		Last Modified: Tue, 03 Dec 2024 02:30:22 GMT  
-		Size: 103.6 MB (103632853 bytes)  
+	-	`sha256:a833422b45d2dcd95e1871dfeab4dffc70d4c858da91b7a4dd9b3db659f6ffcf`  
+		Last Modified: Wed, 22 Jan 2025 18:27:37 GMT  
+		Size: 54.7 MB (54710581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbc6481c0f3d295d0d446995ffc41a6315dfcf19f5a7ddae1815ef95e4b9ef6b`  
-		Last Modified: Tue, 03 Dec 2024 02:30:18 GMT  
-		Size: 129.0 B  
+	-	`sha256:29ebaf0b532ac92b1f282861616f896ca08884386b4c328580cbe71fd861aa99`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
+	-	`sha256:5c2a67ca5b133601579ea3c7b05e6e70dc8c7ca46a33a93af037d8969c26fade`  
+		Last Modified: Wed, 22 Jan 2025 18:27:37 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:032df3ee1ce2e2cb1453331bed6d30335b812ffa20fb58bec27bb7233cd3c234`  
-		Last Modified: Wed, 15 Jan 2025 17:50:30 GMT  
-		Size: 656.9 KB (656867 bytes)  
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:591d26d8aefd6c53dd291f35b71acb2eaeb8a0696ffd9d5d5dcb7df4838aedd6`  
-		Last Modified: Wed, 15 Jan 2025 17:50:32 GMT  
-		Size: 72.9 MB (72928986 bytes)  
+	-	`sha256:6d58c5cbf73289932a8a447859442126429f9e7bba2b45b6cc3d97001366babe`  
+		Last Modified: Wed, 22 Jan 2025 19:38:48 GMT  
+		Size: 72.9 MB (72928999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -736,25 +736,25 @@ CMD ["server.sh"]
 ### `orientdb:3.2` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:467e240d1cf8385ed9a8bb152a3c179eb9b29c3af65d4305e17d1b2f6c475f1a
+$ docker pull orientdb@sha256:39c75727daef9c9426192653ef2e6d62e242b02b32d8db2bf5a15ca3a5e74469
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3426320 bytes)**  
+-	Total Size: **3.4 MB (3425694 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b5d02cda268f2d51e4cb9dbd442c1082df9378cfaf5d2a96e905db4a99d23a24`
+-	Image ID: `sha256:cd145f4b889618824fa2ee69d2fd64532542fa56f4d94271cae9d8bd19e1e4da`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8ecfbe44b0076844383a951acd851bf035eb60f91478a98c33bfdd8c62b66ed3`  
-		Last Modified: Wed, 15 Jan 2025 17:50:30 GMT  
-		Size: 3.4 MB (3411790 bytes)  
+	-	`sha256:d33ad7ad5d6013694e2b181c7119c6c2ee7a768459009eda3630b0050561097a`  
+		Last Modified: Wed, 22 Jan 2025 19:38:47 GMT  
+		Size: 3.4 MB (3411180 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a6a7dcb65f5f65a09cfe5a886c2639b453ff78da5cc1223c397837b8d410edb4`  
-		Last Modified: Wed, 15 Jan 2025 17:50:29 GMT  
-		Size: 14.5 KB (14530 bytes)  
+	-	`sha256:5e551e2f444252a43ec7cce09af09363b21d65e3b95260ececca37961def693d`  
+		Last Modified: Wed, 22 Jan 2025 19:38:46 GMT  
+		Size: 14.5 KB (14514 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:3.2` - linux; arm variant v7
@@ -1028,7 +1028,7 @@ $ docker pull orientdb@sha256:49147a8f529701877fae4803b074c70f8b3613ef15b83bad88
 ## `orientdb:3.2-tp3`
 
 ```console
-$ docker pull orientdb@sha256:f1431462e694aa3c8cbd884c63725bd7450934a31d172da444f800a2334ee64b
+$ docker pull orientdb@sha256:d6c9d47b09e29d97e0bbe50afa4adf19453d95bd9fe6956785e84d82d70e0af7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1043,46 +1043,46 @@ $ docker pull orientdb@sha256:f1431462e694aa3c8cbd884c63725bd7450934a31d172da444
 ### `orientdb:3.2-tp3` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:c127eeea74e2f6d3408451d2bb9f285105f0e062abcc6eefa3de9b37a8cf1e17
+$ docker pull orientdb@sha256:7b016685c1282d44fb1871caa5c40e6296751a79b1839bdd6cefa73811cd17ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.9 MB (255865760 bytes)**  
+-	Total Size: **206.3 MB (206286978 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c4a9404040958dfcc0588f7fe59aa19755a9546a4137e2d03f61d52f9d99450`
+-	Image ID: `sha256:56f79be6309492e09e9630ebff78ae7dea427ccb2d96b2873b51201fc9c0f173`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 ARG RELEASE
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 LABEL org.opencontainers.image.version=24.04
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:25 GMT
 ADD file:bcebbf0fddcba5b864d5d267b68dd23bcfb01275e6ec7bcab69bf8b56af14804 in / 
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:25 GMT
 CMD ["/bin/bash"]
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV JAVA_VERSION=jdk8u432-b06
-# Wed, 23 Oct 2024 15:41:32 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -r "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+# Tue, 14 Jan 2025 21:39:38 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 14 Jan 2025 21:39:38 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
@@ -1125,33 +1125,33 @@ CMD ["server.sh"]
 		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7f4ace5897523a1a5f235b03291ebbca78294e7d42b4f1425abd38b17701303`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
-		Size: 17.0 MB (16966378 bytes)  
+	-	`sha256:ae2feb52a5863555f1f77bff6817d53f01ebe2dfe378f700ba1e41b0f9e6067e`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 17.0 MB (16966691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b6e2fd4158ef247a4fe5c04d362fd5595c2dc33f06cf9ba2bb74c89568085e5`  
-		Last Modified: Tue, 03 Dec 2024 02:30:22 GMT  
-		Size: 103.6 MB (103632853 bytes)  
+	-	`sha256:a833422b45d2dcd95e1871dfeab4dffc70d4c858da91b7a4dd9b3db659f6ffcf`  
+		Last Modified: Wed, 22 Jan 2025 18:27:37 GMT  
+		Size: 54.7 MB (54710581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbc6481c0f3d295d0d446995ffc41a6315dfcf19f5a7ddae1815ef95e4b9ef6b`  
-		Last Modified: Tue, 03 Dec 2024 02:30:18 GMT  
-		Size: 129.0 B  
+	-	`sha256:29ebaf0b532ac92b1f282861616f896ca08884386b4c328580cbe71fd861aa99`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
+	-	`sha256:5c2a67ca5b133601579ea3c7b05e6e70dc8c7ca46a33a93af037d8969c26fade`  
+		Last Modified: Wed, 22 Jan 2025 18:27:37 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b42653e22d67802c07490abb3e94c385365d482870a2e9d603138dbdafa4dd36`  
-		Last Modified: Wed, 15 Jan 2025 17:50:50 GMT  
-		Size: 656.9 KB (656858 bytes)  
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e363a116421778377c698180d70023a1198cf111beaa99aefa4e227af3c8066`  
-		Last Modified: Wed, 15 Jan 2025 17:50:53 GMT  
-		Size: 104.9 MB (104853860 bytes)  
+	-	`sha256:2071742e6069684e3eb28e2719124cd75d15f7cb73c1bf9014f10b2d456bb264`  
+		Last Modified: Wed, 22 Jan 2025 19:38:58 GMT  
+		Size: 104.9 MB (104853868 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb47f1df87e3d87a80a9921a146682f9a971a28c1f51a9be253de59f3e6ae02c`  
-		Last Modified: Wed, 15 Jan 2025 17:50:49 GMT  
-		Size: 1.4 KB (1374 bytes)  
+	-	`sha256:5506367dd00aa797fa1a34aeb5a0d5e20ca3876c7e70d3eb7073a13c99278781`  
+		Last Modified: Wed, 22 Jan 2025 19:38:56 GMT  
+		Size: 1.4 KB (1370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1161,25 +1161,25 @@ CMD ["server.sh"]
 ### `orientdb:3.2-tp3` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:7a1d4759497d10c82f6d1599c43a11da8dc750d791030c9fceb6cdd5951db920
+$ docker pull orientdb@sha256:f6666a485b44a80b9b427f4d895eb48d82c7f98e94aca48e82fcf2ccd38cfa83
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 MB (3559313 bytes)**  
+-	Total Size: **3.6 MB (3558682 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38f4ec8cb03e8348384a7f8a6be1deb6359dede91a89256b3b1dece3d6f19861`
+-	Image ID: `sha256:b97ade74da046bf34f9efbbdd3197eb282f1cae4b5212bcc1959f8ac61bed031`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c0bcae8eb99106fc77a41037b3c76f6a4caf2e7e72c76bfa9fde09935c60a587`  
-		Last Modified: Wed, 15 Jan 2025 17:50:50 GMT  
-		Size: 3.5 MB (3542446 bytes)  
+	-	`sha256:6de0afc9ccafc37cffe5ddee740c174c5911c0b51cfbe5da0017679862d9438a`  
+		Last Modified: Wed, 22 Jan 2025 19:38:56 GMT  
+		Size: 3.5 MB (3541836 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a7b1f36886883721eda9f91ba023615bd50939188514440665b711352a9f8217`  
-		Last Modified: Wed, 15 Jan 2025 17:50:49 GMT  
-		Size: 16.9 KB (16867 bytes)  
+	-	`sha256:34e93cc4784cecd47498c71a25b17de174cbe2b43cabd88ac8aa74db9a097fc4`  
+		Last Modified: Wed, 22 Jan 2025 19:38:56 GMT  
+		Size: 16.8 KB (16846 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:3.2-tp3` - linux; arm variant v7
@@ -1469,7 +1469,7 @@ $ docker pull orientdb@sha256:cbd93715fc554fb4ef218ec7a34ce8db78c26093fc98fd9404
 ## `orientdb:3.2.37`
 
 ```console
-$ docker pull orientdb@sha256:38c6968dcc04e2c35d85495026bd751e6a9e9d60bdbeee2607103477564c1295
+$ docker pull orientdb@sha256:7d6e65c08f38393534a25e7c28a894375093e12fba275459259cbe49c486ed12
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1484,46 +1484,46 @@ $ docker pull orientdb@sha256:38c6968dcc04e2c35d85495026bd751e6a9e9d60bdbeee2607
 ### `orientdb:3.2.37` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:058e19fc4168ca9b0f1f2d29bc92f13b3dacb0c9bc13448a3c61f346b70909ce
+$ docker pull orientdb@sha256:56c8166475bd37e2246cd4fb44e102e104915d43d7bc49463f072d140507a82a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.9 MB (223939521 bytes)**  
+-	Total Size: **174.4 MB (174360739 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:315dfbcb6b9627b6058123ee7d48c0ee3ce68c32903bd1695997e08fe61e7a74`
+-	Image ID: `sha256:0f8722b3dc624cf7a9cf846049d357bad3902080148f1750a39110a5847193c4`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 ARG RELEASE
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 LABEL org.opencontainers.image.version=24.04
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:25 GMT
 ADD file:bcebbf0fddcba5b864d5d267b68dd23bcfb01275e6ec7bcab69bf8b56af14804 in / 
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:25 GMT
 CMD ["/bin/bash"]
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV JAVA_VERSION=jdk8u432-b06
-# Wed, 23 Oct 2024 15:41:32 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -r "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+# Tue, 14 Jan 2025 21:39:38 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 14 Jan 2025 21:39:38 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
@@ -1562,29 +1562,29 @@ CMD ["server.sh"]
 		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7f4ace5897523a1a5f235b03291ebbca78294e7d42b4f1425abd38b17701303`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
-		Size: 17.0 MB (16966378 bytes)  
+	-	`sha256:ae2feb52a5863555f1f77bff6817d53f01ebe2dfe378f700ba1e41b0f9e6067e`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 17.0 MB (16966691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b6e2fd4158ef247a4fe5c04d362fd5595c2dc33f06cf9ba2bb74c89568085e5`  
-		Last Modified: Tue, 03 Dec 2024 02:30:22 GMT  
-		Size: 103.6 MB (103632853 bytes)  
+	-	`sha256:a833422b45d2dcd95e1871dfeab4dffc70d4c858da91b7a4dd9b3db659f6ffcf`  
+		Last Modified: Wed, 22 Jan 2025 18:27:37 GMT  
+		Size: 54.7 MB (54710581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbc6481c0f3d295d0d446995ffc41a6315dfcf19f5a7ddae1815ef95e4b9ef6b`  
-		Last Modified: Tue, 03 Dec 2024 02:30:18 GMT  
-		Size: 129.0 B  
+	-	`sha256:29ebaf0b532ac92b1f282861616f896ca08884386b4c328580cbe71fd861aa99`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
+	-	`sha256:5c2a67ca5b133601579ea3c7b05e6e70dc8c7ca46a33a93af037d8969c26fade`  
+		Last Modified: Wed, 22 Jan 2025 18:27:37 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:032df3ee1ce2e2cb1453331bed6d30335b812ffa20fb58bec27bb7233cd3c234`  
-		Last Modified: Wed, 15 Jan 2025 17:50:30 GMT  
-		Size: 656.9 KB (656867 bytes)  
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:591d26d8aefd6c53dd291f35b71acb2eaeb8a0696ffd9d5d5dcb7df4838aedd6`  
-		Last Modified: Wed, 15 Jan 2025 17:50:32 GMT  
-		Size: 72.9 MB (72928986 bytes)  
+	-	`sha256:6d58c5cbf73289932a8a447859442126429f9e7bba2b45b6cc3d97001366babe`  
+		Last Modified: Wed, 22 Jan 2025 19:38:48 GMT  
+		Size: 72.9 MB (72928999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -1594,25 +1594,25 @@ CMD ["server.sh"]
 ### `orientdb:3.2.37` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:467e240d1cf8385ed9a8bb152a3c179eb9b29c3af65d4305e17d1b2f6c475f1a
+$ docker pull orientdb@sha256:39c75727daef9c9426192653ef2e6d62e242b02b32d8db2bf5a15ca3a5e74469
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3426320 bytes)**  
+-	Total Size: **3.4 MB (3425694 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b5d02cda268f2d51e4cb9dbd442c1082df9378cfaf5d2a96e905db4a99d23a24`
+-	Image ID: `sha256:cd145f4b889618824fa2ee69d2fd64532542fa56f4d94271cae9d8bd19e1e4da`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8ecfbe44b0076844383a951acd851bf035eb60f91478a98c33bfdd8c62b66ed3`  
-		Last Modified: Wed, 15 Jan 2025 17:50:30 GMT  
-		Size: 3.4 MB (3411790 bytes)  
+	-	`sha256:d33ad7ad5d6013694e2b181c7119c6c2ee7a768459009eda3630b0050561097a`  
+		Last Modified: Wed, 22 Jan 2025 19:38:47 GMT  
+		Size: 3.4 MB (3411180 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a6a7dcb65f5f65a09cfe5a886c2639b453ff78da5cc1223c397837b8d410edb4`  
-		Last Modified: Wed, 15 Jan 2025 17:50:29 GMT  
-		Size: 14.5 KB (14530 bytes)  
+	-	`sha256:5e551e2f444252a43ec7cce09af09363b21d65e3b95260ececca37961def693d`  
+		Last Modified: Wed, 22 Jan 2025 19:38:46 GMT  
+		Size: 14.5 KB (14514 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:3.2.37` - linux; arm variant v7
@@ -1886,7 +1886,7 @@ $ docker pull orientdb@sha256:49147a8f529701877fae4803b074c70f8b3613ef15b83bad88
 ## `orientdb:3.2.37-tp3`
 
 ```console
-$ docker pull orientdb@sha256:f1431462e694aa3c8cbd884c63725bd7450934a31d172da444f800a2334ee64b
+$ docker pull orientdb@sha256:d6c9d47b09e29d97e0bbe50afa4adf19453d95bd9fe6956785e84d82d70e0af7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1901,46 +1901,46 @@ $ docker pull orientdb@sha256:f1431462e694aa3c8cbd884c63725bd7450934a31d172da444
 ### `orientdb:3.2.37-tp3` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:c127eeea74e2f6d3408451d2bb9f285105f0e062abcc6eefa3de9b37a8cf1e17
+$ docker pull orientdb@sha256:7b016685c1282d44fb1871caa5c40e6296751a79b1839bdd6cefa73811cd17ec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **255.9 MB (255865760 bytes)**  
+-	Total Size: **206.3 MB (206286978 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c4a9404040958dfcc0588f7fe59aa19755a9546a4137e2d03f61d52f9d99450`
+-	Image ID: `sha256:56f79be6309492e09e9630ebff78ae7dea427ccb2d96b2873b51201fc9c0f173`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 ARG RELEASE
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 LABEL org.opencontainers.image.version=24.04
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:25 GMT
 ADD file:bcebbf0fddcba5b864d5d267b68dd23bcfb01275e6ec7bcab69bf8b56af14804 in / 
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:25 GMT
 CMD ["/bin/bash"]
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV JAVA_VERSION=jdk8u432-b06
-# Wed, 23 Oct 2024 15:41:32 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -r "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+# Tue, 14 Jan 2025 21:39:38 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 14 Jan 2025 21:39:38 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
@@ -1983,33 +1983,33 @@ CMD ["server.sh"]
 		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7f4ace5897523a1a5f235b03291ebbca78294e7d42b4f1425abd38b17701303`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
-		Size: 17.0 MB (16966378 bytes)  
+	-	`sha256:ae2feb52a5863555f1f77bff6817d53f01ebe2dfe378f700ba1e41b0f9e6067e`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 17.0 MB (16966691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b6e2fd4158ef247a4fe5c04d362fd5595c2dc33f06cf9ba2bb74c89568085e5`  
-		Last Modified: Tue, 03 Dec 2024 02:30:22 GMT  
-		Size: 103.6 MB (103632853 bytes)  
+	-	`sha256:a833422b45d2dcd95e1871dfeab4dffc70d4c858da91b7a4dd9b3db659f6ffcf`  
+		Last Modified: Wed, 22 Jan 2025 18:27:37 GMT  
+		Size: 54.7 MB (54710581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbc6481c0f3d295d0d446995ffc41a6315dfcf19f5a7ddae1815ef95e4b9ef6b`  
-		Last Modified: Tue, 03 Dec 2024 02:30:18 GMT  
-		Size: 129.0 B  
+	-	`sha256:29ebaf0b532ac92b1f282861616f896ca08884386b4c328580cbe71fd861aa99`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
+	-	`sha256:5c2a67ca5b133601579ea3c7b05e6e70dc8c7ca46a33a93af037d8969c26fade`  
+		Last Modified: Wed, 22 Jan 2025 18:27:37 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b42653e22d67802c07490abb3e94c385365d482870a2e9d603138dbdafa4dd36`  
-		Last Modified: Wed, 15 Jan 2025 17:50:50 GMT  
-		Size: 656.9 KB (656858 bytes)  
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e363a116421778377c698180d70023a1198cf111beaa99aefa4e227af3c8066`  
-		Last Modified: Wed, 15 Jan 2025 17:50:53 GMT  
-		Size: 104.9 MB (104853860 bytes)  
+	-	`sha256:2071742e6069684e3eb28e2719124cd75d15f7cb73c1bf9014f10b2d456bb264`  
+		Last Modified: Wed, 22 Jan 2025 19:38:58 GMT  
+		Size: 104.9 MB (104853868 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb47f1df87e3d87a80a9921a146682f9a971a28c1f51a9be253de59f3e6ae02c`  
-		Last Modified: Wed, 15 Jan 2025 17:50:49 GMT  
-		Size: 1.4 KB (1374 bytes)  
+	-	`sha256:5506367dd00aa797fa1a34aeb5a0d5e20ca3876c7e70d3eb7073a13c99278781`  
+		Last Modified: Wed, 22 Jan 2025 19:38:56 GMT  
+		Size: 1.4 KB (1370 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -2019,25 +2019,25 @@ CMD ["server.sh"]
 ### `orientdb:3.2.37-tp3` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:7a1d4759497d10c82f6d1599c43a11da8dc750d791030c9fceb6cdd5951db920
+$ docker pull orientdb@sha256:f6666a485b44a80b9b427f4d895eb48d82c7f98e94aca48e82fcf2ccd38cfa83
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.6 MB (3559313 bytes)**  
+-	Total Size: **3.6 MB (3558682 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:38f4ec8cb03e8348384a7f8a6be1deb6359dede91a89256b3b1dece3d6f19861`
+-	Image ID: `sha256:b97ade74da046bf34f9efbbdd3197eb282f1cae4b5212bcc1959f8ac61bed031`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c0bcae8eb99106fc77a41037b3c76f6a4caf2e7e72c76bfa9fde09935c60a587`  
-		Last Modified: Wed, 15 Jan 2025 17:50:50 GMT  
-		Size: 3.5 MB (3542446 bytes)  
+	-	`sha256:6de0afc9ccafc37cffe5ddee740c174c5911c0b51cfbe5da0017679862d9438a`  
+		Last Modified: Wed, 22 Jan 2025 19:38:56 GMT  
+		Size: 3.5 MB (3541836 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a7b1f36886883721eda9f91ba023615bd50939188514440665b711352a9f8217`  
-		Last Modified: Wed, 15 Jan 2025 17:50:49 GMT  
-		Size: 16.9 KB (16867 bytes)  
+	-	`sha256:34e93cc4784cecd47498c71a25b17de174cbe2b43cabd88ac8aa74db9a097fc4`  
+		Last Modified: Wed, 22 Jan 2025 19:38:56 GMT  
+		Size: 16.8 KB (16846 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:3.2.37-tp3` - linux; arm variant v7
@@ -2327,7 +2327,7 @@ $ docker pull orientdb@sha256:cbd93715fc554fb4ef218ec7a34ce8db78c26093fc98fd9404
 ## `orientdb:latest`
 
 ```console
-$ docker pull orientdb@sha256:38c6968dcc04e2c35d85495026bd751e6a9e9d60bdbeee2607103477564c1295
+$ docker pull orientdb@sha256:7d6e65c08f38393534a25e7c28a894375093e12fba275459259cbe49c486ed12
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2342,46 +2342,46 @@ $ docker pull orientdb@sha256:38c6968dcc04e2c35d85495026bd751e6a9e9d60bdbeee2607
 ### `orientdb:latest` - linux; amd64
 
 ```console
-$ docker pull orientdb@sha256:058e19fc4168ca9b0f1f2d29bc92f13b3dacb0c9bc13448a3c61f346b70909ce
+$ docker pull orientdb@sha256:56c8166475bd37e2246cd4fb44e102e104915d43d7bc49463f072d140507a82a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **223.9 MB (223939521 bytes)**  
+-	Total Size: **174.4 MB (174360739 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:315dfbcb6b9627b6058123ee7d48c0ee3ce68c32903bd1695997e08fe61e7a74`
+-	Image ID: `sha256:0f8722b3dc624cf7a9cf846049d357bad3902080148f1750a39110a5847193c4`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["server.sh"]`
 
 ```dockerfile
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 ARG RELEASE
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:23 GMT
 LABEL org.opencontainers.image.version=24.04
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:25 GMT
 ADD file:bcebbf0fddcba5b864d5d267b68dd23bcfb01275e6ec7bcab69bf8b56af14804 in / 
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 19 Nov 2024 17:29:25 GMT
 CMD ["/bin/bash"]
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENV JAVA_VERSION=jdk8u432-b06
-# Wed, 23 Oct 2024 15:41:32 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -r "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+# Tue, 14 Jan 2025 21:39:38 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Tue, 14 Jan 2025 21:39:38 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 # Tue, 14 Jan 2025 21:39:38 GMT
 MAINTAINER OrientDB LTD (info@orientdb.com)
@@ -2420,29 +2420,29 @@ CMD ["server.sh"]
 		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f7f4ace5897523a1a5f235b03291ebbca78294e7d42b4f1425abd38b17701303`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
-		Size: 17.0 MB (16966378 bytes)  
+	-	`sha256:ae2feb52a5863555f1f77bff6817d53f01ebe2dfe378f700ba1e41b0f9e6067e`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 17.0 MB (16966691 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b6e2fd4158ef247a4fe5c04d362fd5595c2dc33f06cf9ba2bb74c89568085e5`  
-		Last Modified: Tue, 03 Dec 2024 02:30:22 GMT  
-		Size: 103.6 MB (103632853 bytes)  
+	-	`sha256:a833422b45d2dcd95e1871dfeab4dffc70d4c858da91b7a4dd9b3db659f6ffcf`  
+		Last Modified: Wed, 22 Jan 2025 18:27:37 GMT  
+		Size: 54.7 MB (54710581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbc6481c0f3d295d0d446995ffc41a6315dfcf19f5a7ddae1815ef95e4b9ef6b`  
-		Last Modified: Tue, 03 Dec 2024 02:30:18 GMT  
-		Size: 129.0 B  
+	-	`sha256:29ebaf0b532ac92b1f282861616f896ca08884386b4c328580cbe71fd861aa99`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6ff1559309569d4ae3c3e5925400c9677ba1e4fba6ec1256bb50e56450568393`  
-		Last Modified: Tue, 03 Dec 2024 02:30:19 GMT  
+	-	`sha256:5c2a67ca5b133601579ea3c7b05e6e70dc8c7ca46a33a93af037d8969c26fade`  
+		Last Modified: Wed, 22 Jan 2025 18:27:37 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:032df3ee1ce2e2cb1453331bed6d30335b812ffa20fb58bec27bb7233cd3c234`  
-		Last Modified: Wed, 15 Jan 2025 17:50:30 GMT  
-		Size: 656.9 KB (656867 bytes)  
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:591d26d8aefd6c53dd291f35b71acb2eaeb8a0696ffd9d5d5dcb7df4838aedd6`  
-		Last Modified: Wed, 15 Jan 2025 17:50:32 GMT  
-		Size: 72.9 MB (72928986 bytes)  
+	-	`sha256:6d58c5cbf73289932a8a447859442126429f9e7bba2b45b6cc3d97001366babe`  
+		Last Modified: Wed, 22 Jan 2025 19:38:48 GMT  
+		Size: 72.9 MB (72928999 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -2452,25 +2452,25 @@ CMD ["server.sh"]
 ### `orientdb:latest` - unknown; unknown
 
 ```console
-$ docker pull orientdb@sha256:467e240d1cf8385ed9a8bb152a3c179eb9b29c3af65d4305e17d1b2f6c475f1a
+$ docker pull orientdb@sha256:39c75727daef9c9426192653ef2e6d62e242b02b32d8db2bf5a15ca3a5e74469
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.4 MB (3426320 bytes)**  
+-	Total Size: **3.4 MB (3425694 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b5d02cda268f2d51e4cb9dbd442c1082df9378cfaf5d2a96e905db4a99d23a24`
+-	Image ID: `sha256:cd145f4b889618824fa2ee69d2fd64532542fa56f4d94271cae9d8bd19e1e4da`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8ecfbe44b0076844383a951acd851bf035eb60f91478a98c33bfdd8c62b66ed3`  
-		Last Modified: Wed, 15 Jan 2025 17:50:30 GMT  
-		Size: 3.4 MB (3411790 bytes)  
+	-	`sha256:d33ad7ad5d6013694e2b181c7119c6c2ee7a768459009eda3630b0050561097a`  
+		Last Modified: Wed, 22 Jan 2025 19:38:47 GMT  
+		Size: 3.4 MB (3411180 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a6a7dcb65f5f65a09cfe5a886c2639b453ff78da5cc1223c397837b8d410edb4`  
-		Last Modified: Wed, 15 Jan 2025 17:50:29 GMT  
-		Size: 14.5 KB (14530 bytes)  
+	-	`sha256:5e551e2f444252a43ec7cce09af09363b21d65e3b95260ececca37961def693d`  
+		Last Modified: Wed, 22 Jan 2025 19:38:46 GMT  
+		Size: 14.5 KB (14514 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `orientdb:latest` - linux; arm variant v7
