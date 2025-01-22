@@ -14,6 +14,8 @@
 -	[`openjdk:24-ea-31-jdk-bullseye`](#openjdk24-ea-31-jdk-bullseye)
 -	[`openjdk:24-ea-31-jdk-nanoserver`](#openjdk24-ea-31-jdk-nanoserver)
 -	[`openjdk:24-ea-31-jdk-nanoserver-1809`](#openjdk24-ea-31-jdk-nanoserver-1809)
+-	[`openjdk:24-ea-31-jdk-nanoserver-ltsc2022`](#openjdk24-ea-31-jdk-nanoserver-ltsc2022)
+-	[`openjdk:24-ea-31-jdk-nanoserver-ltsc2025`](#openjdk24-ea-31-jdk-nanoserver-ltsc2025)
 -	[`openjdk:24-ea-31-jdk-oracle`](#openjdk24-ea-31-jdk-oracle)
 -	[`openjdk:24-ea-31-jdk-oraclelinux8`](#openjdk24-ea-31-jdk-oraclelinux8)
 -	[`openjdk:24-ea-31-jdk-oraclelinux9`](#openjdk24-ea-31-jdk-oraclelinux9)
@@ -23,8 +25,11 @@
 -	[`openjdk:24-ea-31-jdk-windowsservercore`](#openjdk24-ea-31-jdk-windowsservercore)
 -	[`openjdk:24-ea-31-jdk-windowsservercore-1809`](#openjdk24-ea-31-jdk-windowsservercore-1809)
 -	[`openjdk:24-ea-31-jdk-windowsservercore-ltsc2022`](#openjdk24-ea-31-jdk-windowsservercore-ltsc2022)
+-	[`openjdk:24-ea-31-jdk-windowsservercore-ltsc2025`](#openjdk24-ea-31-jdk-windowsservercore-ltsc2025)
 -	[`openjdk:24-ea-31-nanoserver`](#openjdk24-ea-31-nanoserver)
 -	[`openjdk:24-ea-31-nanoserver-1809`](#openjdk24-ea-31-nanoserver-1809)
+-	[`openjdk:24-ea-31-nanoserver-ltsc2022`](#openjdk24-ea-31-nanoserver-ltsc2022)
+-	[`openjdk:24-ea-31-nanoserver-ltsc2025`](#openjdk24-ea-31-nanoserver-ltsc2025)
 -	[`openjdk:24-ea-31-oracle`](#openjdk24-ea-31-oracle)
 -	[`openjdk:24-ea-31-oraclelinux8`](#openjdk24-ea-31-oraclelinux8)
 -	[`openjdk:24-ea-31-oraclelinux9`](#openjdk24-ea-31-oraclelinux9)
@@ -34,6 +39,7 @@
 -	[`openjdk:24-ea-31-windowsservercore`](#openjdk24-ea-31-windowsservercore)
 -	[`openjdk:24-ea-31-windowsservercore-1809`](#openjdk24-ea-31-windowsservercore-1809)
 -	[`openjdk:24-ea-31-windowsservercore-ltsc2022`](#openjdk24-ea-31-windowsservercore-ltsc2022)
+-	[`openjdk:24-ea-31-windowsservercore-ltsc2025`](#openjdk24-ea-31-windowsservercore-ltsc2025)
 -	[`openjdk:24-ea-bookworm`](#openjdk24-ea-bookworm)
 -	[`openjdk:24-ea-bullseye`](#openjdk24-ea-bullseye)
 -	[`openjdk:24-ea-jdk`](#openjdk24-ea-jdk)
@@ -41,6 +47,8 @@
 -	[`openjdk:24-ea-jdk-bullseye`](#openjdk24-ea-jdk-bullseye)
 -	[`openjdk:24-ea-jdk-nanoserver`](#openjdk24-ea-jdk-nanoserver)
 -	[`openjdk:24-ea-jdk-nanoserver-1809`](#openjdk24-ea-jdk-nanoserver-1809)
+-	[`openjdk:24-ea-jdk-nanoserver-ltsc2022`](#openjdk24-ea-jdk-nanoserver-ltsc2022)
+-	[`openjdk:24-ea-jdk-nanoserver-ltsc2025`](#openjdk24-ea-jdk-nanoserver-ltsc2025)
 -	[`openjdk:24-ea-jdk-oracle`](#openjdk24-ea-jdk-oracle)
 -	[`openjdk:24-ea-jdk-oraclelinux8`](#openjdk24-ea-jdk-oraclelinux8)
 -	[`openjdk:24-ea-jdk-oraclelinux9`](#openjdk24-ea-jdk-oraclelinux9)
@@ -50,8 +58,11 @@
 -	[`openjdk:24-ea-jdk-windowsservercore`](#openjdk24-ea-jdk-windowsservercore)
 -	[`openjdk:24-ea-jdk-windowsservercore-1809`](#openjdk24-ea-jdk-windowsservercore-1809)
 -	[`openjdk:24-ea-jdk-windowsservercore-ltsc2022`](#openjdk24-ea-jdk-windowsservercore-ltsc2022)
+-	[`openjdk:24-ea-jdk-windowsservercore-ltsc2025`](#openjdk24-ea-jdk-windowsservercore-ltsc2025)
 -	[`openjdk:24-ea-nanoserver`](#openjdk24-ea-nanoserver)
 -	[`openjdk:24-ea-nanoserver-1809`](#openjdk24-ea-nanoserver-1809)
+-	[`openjdk:24-ea-nanoserver-ltsc2022`](#openjdk24-ea-nanoserver-ltsc2022)
+-	[`openjdk:24-ea-nanoserver-ltsc2025`](#openjdk24-ea-nanoserver-ltsc2025)
 -	[`openjdk:24-ea-oracle`](#openjdk24-ea-oracle)
 -	[`openjdk:24-ea-oraclelinux8`](#openjdk24-ea-oraclelinux8)
 -	[`openjdk:24-ea-oraclelinux9`](#openjdk24-ea-oraclelinux9)
@@ -61,11 +72,14 @@
 -	[`openjdk:24-ea-windowsservercore`](#openjdk24-ea-windowsservercore)
 -	[`openjdk:24-ea-windowsservercore-1809`](#openjdk24-ea-windowsservercore-1809)
 -	[`openjdk:24-ea-windowsservercore-ltsc2022`](#openjdk24-ea-windowsservercore-ltsc2022)
+-	[`openjdk:24-ea-windowsservercore-ltsc2025`](#openjdk24-ea-windowsservercore-ltsc2025)
 -	[`openjdk:24-jdk`](#openjdk24-jdk)
 -	[`openjdk:24-jdk-bookworm`](#openjdk24-jdk-bookworm)
 -	[`openjdk:24-jdk-bullseye`](#openjdk24-jdk-bullseye)
 -	[`openjdk:24-jdk-nanoserver`](#openjdk24-jdk-nanoserver)
 -	[`openjdk:24-jdk-nanoserver-1809`](#openjdk24-jdk-nanoserver-1809)
+-	[`openjdk:24-jdk-nanoserver-ltsc2022`](#openjdk24-jdk-nanoserver-ltsc2022)
+-	[`openjdk:24-jdk-nanoserver-ltsc2025`](#openjdk24-jdk-nanoserver-ltsc2025)
 -	[`openjdk:24-jdk-oracle`](#openjdk24-jdk-oracle)
 -	[`openjdk:24-jdk-oraclelinux8`](#openjdk24-jdk-oraclelinux8)
 -	[`openjdk:24-jdk-oraclelinux9`](#openjdk24-jdk-oraclelinux9)
@@ -75,8 +89,11 @@
 -	[`openjdk:24-jdk-windowsservercore`](#openjdk24-jdk-windowsservercore)
 -	[`openjdk:24-jdk-windowsservercore-1809`](#openjdk24-jdk-windowsservercore-1809)
 -	[`openjdk:24-jdk-windowsservercore-ltsc2022`](#openjdk24-jdk-windowsservercore-ltsc2022)
+-	[`openjdk:24-jdk-windowsservercore-ltsc2025`](#openjdk24-jdk-windowsservercore-ltsc2025)
 -	[`openjdk:24-nanoserver`](#openjdk24-nanoserver)
 -	[`openjdk:24-nanoserver-1809`](#openjdk24-nanoserver-1809)
+-	[`openjdk:24-nanoserver-ltsc2022`](#openjdk24-nanoserver-ltsc2022)
+-	[`openjdk:24-nanoserver-ltsc2025`](#openjdk24-nanoserver-ltsc2025)
 -	[`openjdk:24-oracle`](#openjdk24-oracle)
 -	[`openjdk:24-oraclelinux8`](#openjdk24-oraclelinux8)
 -	[`openjdk:24-oraclelinux9`](#openjdk24-oraclelinux9)
@@ -86,6 +103,7 @@
 -	[`openjdk:24-windowsservercore`](#openjdk24-windowsservercore)
 -	[`openjdk:24-windowsservercore-1809`](#openjdk24-windowsservercore-1809)
 -	[`openjdk:24-windowsservercore-ltsc2022`](#openjdk24-windowsservercore-ltsc2022)
+-	[`openjdk:24-windowsservercore-ltsc2025`](#openjdk24-windowsservercore-ltsc2025)
 -	[`openjdk:25`](#openjdk25)
 -	[`openjdk:25-bookworm`](#openjdk25-bookworm)
 -	[`openjdk:25-bullseye`](#openjdk25-bullseye)
@@ -98,6 +116,8 @@
 -	[`openjdk:25-ea-6-jdk-bullseye`](#openjdk25-ea-6-jdk-bullseye)
 -	[`openjdk:25-ea-6-jdk-nanoserver`](#openjdk25-ea-6-jdk-nanoserver)
 -	[`openjdk:25-ea-6-jdk-nanoserver-1809`](#openjdk25-ea-6-jdk-nanoserver-1809)
+-	[`openjdk:25-ea-6-jdk-nanoserver-ltsc2022`](#openjdk25-ea-6-jdk-nanoserver-ltsc2022)
+-	[`openjdk:25-ea-6-jdk-nanoserver-ltsc2025`](#openjdk25-ea-6-jdk-nanoserver-ltsc2025)
 -	[`openjdk:25-ea-6-jdk-oracle`](#openjdk25-ea-6-jdk-oracle)
 -	[`openjdk:25-ea-6-jdk-oraclelinux8`](#openjdk25-ea-6-jdk-oraclelinux8)
 -	[`openjdk:25-ea-6-jdk-oraclelinux9`](#openjdk25-ea-6-jdk-oraclelinux9)
@@ -107,8 +127,11 @@
 -	[`openjdk:25-ea-6-jdk-windowsservercore`](#openjdk25-ea-6-jdk-windowsservercore)
 -	[`openjdk:25-ea-6-jdk-windowsservercore-1809`](#openjdk25-ea-6-jdk-windowsservercore-1809)
 -	[`openjdk:25-ea-6-jdk-windowsservercore-ltsc2022`](#openjdk25-ea-6-jdk-windowsservercore-ltsc2022)
+-	[`openjdk:25-ea-6-jdk-windowsservercore-ltsc2025`](#openjdk25-ea-6-jdk-windowsservercore-ltsc2025)
 -	[`openjdk:25-ea-6-nanoserver`](#openjdk25-ea-6-nanoserver)
 -	[`openjdk:25-ea-6-nanoserver-1809`](#openjdk25-ea-6-nanoserver-1809)
+-	[`openjdk:25-ea-6-nanoserver-ltsc2022`](#openjdk25-ea-6-nanoserver-ltsc2022)
+-	[`openjdk:25-ea-6-nanoserver-ltsc2025`](#openjdk25-ea-6-nanoserver-ltsc2025)
 -	[`openjdk:25-ea-6-oracle`](#openjdk25-ea-6-oracle)
 -	[`openjdk:25-ea-6-oraclelinux8`](#openjdk25-ea-6-oraclelinux8)
 -	[`openjdk:25-ea-6-oraclelinux9`](#openjdk25-ea-6-oraclelinux9)
@@ -118,6 +141,7 @@
 -	[`openjdk:25-ea-6-windowsservercore`](#openjdk25-ea-6-windowsservercore)
 -	[`openjdk:25-ea-6-windowsservercore-1809`](#openjdk25-ea-6-windowsservercore-1809)
 -	[`openjdk:25-ea-6-windowsservercore-ltsc2022`](#openjdk25-ea-6-windowsservercore-ltsc2022)
+-	[`openjdk:25-ea-6-windowsservercore-ltsc2025`](#openjdk25-ea-6-windowsservercore-ltsc2025)
 -	[`openjdk:25-ea-bookworm`](#openjdk25-ea-bookworm)
 -	[`openjdk:25-ea-bullseye`](#openjdk25-ea-bullseye)
 -	[`openjdk:25-ea-jdk`](#openjdk25-ea-jdk)
@@ -125,6 +149,8 @@
 -	[`openjdk:25-ea-jdk-bullseye`](#openjdk25-ea-jdk-bullseye)
 -	[`openjdk:25-ea-jdk-nanoserver`](#openjdk25-ea-jdk-nanoserver)
 -	[`openjdk:25-ea-jdk-nanoserver-1809`](#openjdk25-ea-jdk-nanoserver-1809)
+-	[`openjdk:25-ea-jdk-nanoserver-ltsc2022`](#openjdk25-ea-jdk-nanoserver-ltsc2022)
+-	[`openjdk:25-ea-jdk-nanoserver-ltsc2025`](#openjdk25-ea-jdk-nanoserver-ltsc2025)
 -	[`openjdk:25-ea-jdk-oracle`](#openjdk25-ea-jdk-oracle)
 -	[`openjdk:25-ea-jdk-oraclelinux8`](#openjdk25-ea-jdk-oraclelinux8)
 -	[`openjdk:25-ea-jdk-oraclelinux9`](#openjdk25-ea-jdk-oraclelinux9)
@@ -134,8 +160,11 @@
 -	[`openjdk:25-ea-jdk-windowsservercore`](#openjdk25-ea-jdk-windowsservercore)
 -	[`openjdk:25-ea-jdk-windowsservercore-1809`](#openjdk25-ea-jdk-windowsservercore-1809)
 -	[`openjdk:25-ea-jdk-windowsservercore-ltsc2022`](#openjdk25-ea-jdk-windowsservercore-ltsc2022)
+-	[`openjdk:25-ea-jdk-windowsservercore-ltsc2025`](#openjdk25-ea-jdk-windowsservercore-ltsc2025)
 -	[`openjdk:25-ea-nanoserver`](#openjdk25-ea-nanoserver)
 -	[`openjdk:25-ea-nanoserver-1809`](#openjdk25-ea-nanoserver-1809)
+-	[`openjdk:25-ea-nanoserver-ltsc2022`](#openjdk25-ea-nanoserver-ltsc2022)
+-	[`openjdk:25-ea-nanoserver-ltsc2025`](#openjdk25-ea-nanoserver-ltsc2025)
 -	[`openjdk:25-ea-oracle`](#openjdk25-ea-oracle)
 -	[`openjdk:25-ea-oraclelinux8`](#openjdk25-ea-oraclelinux8)
 -	[`openjdk:25-ea-oraclelinux9`](#openjdk25-ea-oraclelinux9)
@@ -145,11 +174,14 @@
 -	[`openjdk:25-ea-windowsservercore`](#openjdk25-ea-windowsservercore)
 -	[`openjdk:25-ea-windowsservercore-1809`](#openjdk25-ea-windowsservercore-1809)
 -	[`openjdk:25-ea-windowsservercore-ltsc2022`](#openjdk25-ea-windowsservercore-ltsc2022)
+-	[`openjdk:25-ea-windowsservercore-ltsc2025`](#openjdk25-ea-windowsservercore-ltsc2025)
 -	[`openjdk:25-jdk`](#openjdk25-jdk)
 -	[`openjdk:25-jdk-bookworm`](#openjdk25-jdk-bookworm)
 -	[`openjdk:25-jdk-bullseye`](#openjdk25-jdk-bullseye)
 -	[`openjdk:25-jdk-nanoserver`](#openjdk25-jdk-nanoserver)
 -	[`openjdk:25-jdk-nanoserver-1809`](#openjdk25-jdk-nanoserver-1809)
+-	[`openjdk:25-jdk-nanoserver-ltsc2022`](#openjdk25-jdk-nanoserver-ltsc2022)
+-	[`openjdk:25-jdk-nanoserver-ltsc2025`](#openjdk25-jdk-nanoserver-ltsc2025)
 -	[`openjdk:25-jdk-oracle`](#openjdk25-jdk-oracle)
 -	[`openjdk:25-jdk-oraclelinux8`](#openjdk25-jdk-oraclelinux8)
 -	[`openjdk:25-jdk-oraclelinux9`](#openjdk25-jdk-oraclelinux9)
@@ -159,8 +191,11 @@
 -	[`openjdk:25-jdk-windowsservercore`](#openjdk25-jdk-windowsservercore)
 -	[`openjdk:25-jdk-windowsservercore-1809`](#openjdk25-jdk-windowsservercore-1809)
 -	[`openjdk:25-jdk-windowsservercore-ltsc2022`](#openjdk25-jdk-windowsservercore-ltsc2022)
+-	[`openjdk:25-jdk-windowsservercore-ltsc2025`](#openjdk25-jdk-windowsservercore-ltsc2025)
 -	[`openjdk:25-nanoserver`](#openjdk25-nanoserver)
 -	[`openjdk:25-nanoserver-1809`](#openjdk25-nanoserver-1809)
+-	[`openjdk:25-nanoserver-ltsc2022`](#openjdk25-nanoserver-ltsc2022)
+-	[`openjdk:25-nanoserver-ltsc2025`](#openjdk25-nanoserver-ltsc2025)
 -	[`openjdk:25-oracle`](#openjdk25-oracle)
 -	[`openjdk:25-oraclelinux8`](#openjdk25-oraclelinux8)
 -	[`openjdk:25-oraclelinux9`](#openjdk25-oraclelinux9)
@@ -170,6 +205,7 @@
 -	[`openjdk:25-windowsservercore`](#openjdk25-windowsservercore)
 -	[`openjdk:25-windowsservercore-1809`](#openjdk25-windowsservercore-1809)
 -	[`openjdk:25-windowsservercore-ltsc2022`](#openjdk25-windowsservercore-ltsc2022)
+-	[`openjdk:25-windowsservercore-ltsc2025`](#openjdk25-windowsservercore-ltsc2025)
 
 ## `openjdk:24`
 
@@ -2707,6 +2743,14 @@ CMD ["jshell"]
 		Size: 1.0 KB (1035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:24-ea-31-jdk-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `openjdk:24-ea-31-jdk-nanoserver-ltsc2025`
+
+**does not exist** (yet?)
+
 ## `openjdk:24-ea-31-jdk-oracle`
 
 ```console
@@ -3996,6 +4040,10 @@ CMD ["jshell"]
 		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:24-ea-31-jdk-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
 ## `openjdk:24-ea-31-nanoserver`
 
 ```console
@@ -4173,6 +4221,14 @@ CMD ["jshell"]
 		Last Modified: Wed, 15 Jan 2025 18:05:22 GMT  
 		Size: 1.0 KB (1035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:24-ea-31-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `openjdk:24-ea-31-nanoserver-ltsc2025`
+
+**does not exist** (yet?)
 
 ## `openjdk:24-ea-31-oracle`
 
@@ -5463,6 +5519,10 @@ CMD ["jshell"]
 		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:24-ea-31-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
 ## `openjdk:24-ea-bookworm`
 
 ```console
@@ -6667,6 +6727,14 @@ CMD ["jshell"]
 		Last Modified: Wed, 15 Jan 2025 18:05:22 GMT  
 		Size: 1.0 KB (1035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:24-ea-jdk-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `openjdk:24-ea-jdk-nanoserver-ltsc2025`
+
+**does not exist** (yet?)
 
 ## `openjdk:24-ea-jdk-oracle`
 
@@ -7957,6 +8025,10 @@ CMD ["jshell"]
 		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:24-ea-jdk-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
 ## `openjdk:24-ea-nanoserver`
 
 ```console
@@ -8134,6 +8206,14 @@ CMD ["jshell"]
 		Last Modified: Wed, 15 Jan 2025 18:05:22 GMT  
 		Size: 1.0 KB (1035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:24-ea-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `openjdk:24-ea-nanoserver-ltsc2025`
+
+**does not exist** (yet?)
 
 ## `openjdk:24-ea-oracle`
 
@@ -9424,6 +9504,10 @@ CMD ["jshell"]
 		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:24-ea-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
 ## `openjdk:24-jdk`
 
 ```console
@@ -10278,6 +10362,14 @@ CMD ["jshell"]
 		Last Modified: Wed, 15 Jan 2025 18:05:22 GMT  
 		Size: 1.0 KB (1035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:24-jdk-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `openjdk:24-jdk-nanoserver-ltsc2025`
+
+**does not exist** (yet?)
 
 ## `openjdk:24-jdk-oracle`
 
@@ -11568,6 +11660,10 @@ CMD ["jshell"]
 		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:24-jdk-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
 ## `openjdk:24-nanoserver`
 
 ```console
@@ -11745,6 +11841,14 @@ CMD ["jshell"]
 		Last Modified: Wed, 15 Jan 2025 18:05:22 GMT  
 		Size: 1.0 KB (1035 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:24-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `openjdk:24-nanoserver-ltsc2025`
+
+**does not exist** (yet?)
 
 ## `openjdk:24-oracle`
 
@@ -13034,6 +13138,10 @@ CMD ["jshell"]
 		Last Modified: Tue, 14 Jan 2025 23:38:06 GMT  
 		Size: 1.3 KB (1282 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:24-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
 
 ## `openjdk:25`
 
@@ -15571,6 +15679,14 @@ CMD ["jshell"]
 		Size: 1.1 KB (1091 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:25-ea-6-jdk-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `openjdk:25-ea-6-jdk-nanoserver-ltsc2025`
+
+**does not exist** (yet?)
+
 ## `openjdk:25-ea-6-jdk-oracle`
 
 ```console
@@ -16860,6 +16976,10 @@ CMD ["jshell"]
 		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:25-ea-6-jdk-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
 ## `openjdk:25-ea-6-nanoserver`
 
 ```console
@@ -17037,6 +17157,14 @@ CMD ["jshell"]
 		Last Modified: Wed, 22 Jan 2025 03:14:46 GMT  
 		Size: 1.1 KB (1091 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:25-ea-6-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `openjdk:25-ea-6-nanoserver-ltsc2025`
+
+**does not exist** (yet?)
 
 ## `openjdk:25-ea-6-oracle`
 
@@ -18327,6 +18455,10 @@ CMD ["jshell"]
 		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:25-ea-6-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
 ## `openjdk:25-ea-bookworm`
 
 ```console
@@ -19531,6 +19663,14 @@ CMD ["jshell"]
 		Last Modified: Wed, 22 Jan 2025 03:14:46 GMT  
 		Size: 1.1 KB (1091 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:25-ea-jdk-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `openjdk:25-ea-jdk-nanoserver-ltsc2025`
+
+**does not exist** (yet?)
 
 ## `openjdk:25-ea-jdk-oracle`
 
@@ -20821,6 +20961,10 @@ CMD ["jshell"]
 		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:25-ea-jdk-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
 ## `openjdk:25-ea-nanoserver`
 
 ```console
@@ -20998,6 +21142,14 @@ CMD ["jshell"]
 		Last Modified: Wed, 22 Jan 2025 03:14:46 GMT  
 		Size: 1.1 KB (1091 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:25-ea-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `openjdk:25-ea-nanoserver-ltsc2025`
+
+**does not exist** (yet?)
 
 ## `openjdk:25-ea-oracle`
 
@@ -22288,6 +22440,10 @@ CMD ["jshell"]
 		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:25-ea-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
 ## `openjdk:25-jdk`
 
 ```console
@@ -23142,6 +23298,14 @@ CMD ["jshell"]
 		Last Modified: Wed, 22 Jan 2025 03:14:46 GMT  
 		Size: 1.1 KB (1091 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:25-jdk-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `openjdk:25-jdk-nanoserver-ltsc2025`
+
+**does not exist** (yet?)
 
 ## `openjdk:25-jdk-oracle`
 
@@ -24432,6 +24596,10 @@ CMD ["jshell"]
 		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `openjdk:25-jdk-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
 ## `openjdk:25-nanoserver`
 
 ```console
@@ -24609,6 +24777,14 @@ CMD ["jshell"]
 		Last Modified: Wed, 22 Jan 2025 03:14:46 GMT  
 		Size: 1.1 KB (1091 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:25-nanoserver-ltsc2022`
+
+**does not exist** (yet?)
+
+## `openjdk:25-nanoserver-ltsc2025`
+
+**does not exist** (yet?)
 
 ## `openjdk:25-oracle`
 
@@ -25898,3 +26074,7 @@ CMD ["jshell"]
 		Last Modified: Wed, 22 Jan 2025 02:36:43 GMT  
 		Size: 1.3 KB (1292 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `openjdk:25-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
