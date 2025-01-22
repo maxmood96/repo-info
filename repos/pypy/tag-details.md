@@ -12,6 +12,7 @@
 -	[`pypy:2-7-windowsservercore`](#pypy2-7-windowsservercore)
 -	[`pypy:2-7-windowsservercore-1809`](#pypy2-7-windowsservercore-1809)
 -	[`pypy:2-7-windowsservercore-ltsc2022`](#pypy2-7-windowsservercore-ltsc2022)
+-	[`pypy:2-7-windowsservercore-ltsc2025`](#pypy2-7-windowsservercore-ltsc2025)
 -	[`pypy:2-7.3`](#pypy2-73)
 -	[`pypy:2-7.3-bookworm`](#pypy2-73-bookworm)
 -	[`pypy:2-7.3-bullseye`](#pypy2-73-bullseye)
@@ -21,6 +22,7 @@
 -	[`pypy:2-7.3-windowsservercore`](#pypy2-73-windowsservercore)
 -	[`pypy:2-7.3-windowsservercore-1809`](#pypy2-73-windowsservercore-1809)
 -	[`pypy:2-7.3-windowsservercore-ltsc2022`](#pypy2-73-windowsservercore-ltsc2022)
+-	[`pypy:2-7.3-windowsservercore-ltsc2025`](#pypy2-73-windowsservercore-ltsc2025)
 -	[`pypy:2-7.3.17`](#pypy2-7317)
 -	[`pypy:2-7.3.17-bookworm`](#pypy2-7317-bookworm)
 -	[`pypy:2-7.3.17-bullseye`](#pypy2-7317-bullseye)
@@ -30,6 +32,7 @@
 -	[`pypy:2-7.3.17-windowsservercore`](#pypy2-7317-windowsservercore)
 -	[`pypy:2-7.3.17-windowsservercore-1809`](#pypy2-7317-windowsservercore-1809)
 -	[`pypy:2-7.3.17-windowsservercore-ltsc2022`](#pypy2-7317-windowsservercore-ltsc2022)
+-	[`pypy:2-7.3.17-windowsservercore-ltsc2025`](#pypy2-7317-windowsservercore-ltsc2025)
 -	[`pypy:2-bookworm`](#pypy2-bookworm)
 -	[`pypy:2-bullseye`](#pypy2-bullseye)
 -	[`pypy:2-slim`](#pypy2-slim)
@@ -38,6 +41,7 @@
 -	[`pypy:2-windowsservercore`](#pypy2-windowsservercore)
 -	[`pypy:2-windowsservercore-1809`](#pypy2-windowsservercore-1809)
 -	[`pypy:2-windowsservercore-ltsc2022`](#pypy2-windowsservercore-ltsc2022)
+-	[`pypy:2-windowsservercore-ltsc2025`](#pypy2-windowsservercore-ltsc2025)
 -	[`pypy:2.7`](#pypy27)
 -	[`pypy:2.7-7`](#pypy27-7)
 -	[`pypy:2.7-7-bookworm`](#pypy27-7-bookworm)
@@ -48,6 +52,7 @@
 -	[`pypy:2.7-7-windowsservercore`](#pypy27-7-windowsservercore)
 -	[`pypy:2.7-7-windowsservercore-1809`](#pypy27-7-windowsservercore-1809)
 -	[`pypy:2.7-7-windowsservercore-ltsc2022`](#pypy27-7-windowsservercore-ltsc2022)
+-	[`pypy:2.7-7-windowsservercore-ltsc2025`](#pypy27-7-windowsservercore-ltsc2025)
 -	[`pypy:2.7-7.3`](#pypy27-73)
 -	[`pypy:2.7-7.3-bookworm`](#pypy27-73-bookworm)
 -	[`pypy:2.7-7.3-bullseye`](#pypy27-73-bullseye)
@@ -57,6 +62,7 @@
 -	[`pypy:2.7-7.3-windowsservercore`](#pypy27-73-windowsservercore)
 -	[`pypy:2.7-7.3-windowsservercore-1809`](#pypy27-73-windowsservercore-1809)
 -	[`pypy:2.7-7.3-windowsservercore-ltsc2022`](#pypy27-73-windowsservercore-ltsc2022)
+-	[`pypy:2.7-7.3-windowsservercore-ltsc2025`](#pypy27-73-windowsservercore-ltsc2025)
 -	[`pypy:2.7-7.3.17`](#pypy27-7317)
 -	[`pypy:2.7-7.3.17-bookworm`](#pypy27-7317-bookworm)
 -	[`pypy:2.7-7.3.17-bullseye`](#pypy27-7317-bullseye)
@@ -66,6 +72,7 @@
 -	[`pypy:2.7-7.3.17-windowsservercore`](#pypy27-7317-windowsservercore)
 -	[`pypy:2.7-7.3.17-windowsservercore-1809`](#pypy27-7317-windowsservercore-1809)
 -	[`pypy:2.7-7.3.17-windowsservercore-ltsc2022`](#pypy27-7317-windowsservercore-ltsc2022)
+-	[`pypy:2.7-7.3.17-windowsservercore-ltsc2025`](#pypy27-7317-windowsservercore-ltsc2025)
 -	[`pypy:2.7-bookworm`](#pypy27-bookworm)
 -	[`pypy:2.7-bullseye`](#pypy27-bullseye)
 -	[`pypy:2.7-slim`](#pypy27-slim)
@@ -74,6 +81,7 @@
 -	[`pypy:2.7-windowsservercore`](#pypy27-windowsservercore)
 -	[`pypy:2.7-windowsservercore-1809`](#pypy27-windowsservercore-1809)
 -	[`pypy:2.7-windowsservercore-ltsc2022`](#pypy27-windowsservercore-ltsc2022)
+-	[`pypy:2.7-windowsservercore-ltsc2025`](#pypy27-windowsservercore-ltsc2025)
 -	[`pypy:3`](#pypy3)
 -	[`pypy:3-7`](#pypy3-7)
 -	[`pypy:3-7-bookworm`](#pypy3-7-bookworm)
@@ -84,6 +92,7 @@
 -	[`pypy:3-7-windowsservercore`](#pypy3-7-windowsservercore)
 -	[`pypy:3-7-windowsservercore-1809`](#pypy3-7-windowsservercore-1809)
 -	[`pypy:3-7-windowsservercore-ltsc2022`](#pypy3-7-windowsservercore-ltsc2022)
+-	[`pypy:3-7-windowsservercore-ltsc2025`](#pypy3-7-windowsservercore-ltsc2025)
 -	[`pypy:3-7.3`](#pypy3-73)
 -	[`pypy:3-7.3-bookworm`](#pypy3-73-bookworm)
 -	[`pypy:3-7.3-bullseye`](#pypy3-73-bullseye)
@@ -93,6 +102,7 @@
 -	[`pypy:3-7.3-windowsservercore`](#pypy3-73-windowsservercore)
 -	[`pypy:3-7.3-windowsservercore-1809`](#pypy3-73-windowsservercore-1809)
 -	[`pypy:3-7.3-windowsservercore-ltsc2022`](#pypy3-73-windowsservercore-ltsc2022)
+-	[`pypy:3-7.3-windowsservercore-ltsc2025`](#pypy3-73-windowsservercore-ltsc2025)
 -	[`pypy:3-7.3.17`](#pypy3-7317)
 -	[`pypy:3-7.3.17-bookworm`](#pypy3-7317-bookworm)
 -	[`pypy:3-7.3.17-bullseye`](#pypy3-7317-bullseye)
@@ -102,6 +112,7 @@
 -	[`pypy:3-7.3.17-windowsservercore`](#pypy3-7317-windowsservercore)
 -	[`pypy:3-7.3.17-windowsservercore-1809`](#pypy3-7317-windowsservercore-1809)
 -	[`pypy:3-7.3.17-windowsservercore-ltsc2022`](#pypy3-7317-windowsservercore-ltsc2022)
+-	[`pypy:3-7.3.17-windowsservercore-ltsc2025`](#pypy3-7317-windowsservercore-ltsc2025)
 -	[`pypy:3-bookworm`](#pypy3-bookworm)
 -	[`pypy:3-bullseye`](#pypy3-bullseye)
 -	[`pypy:3-slim`](#pypy3-slim)
@@ -110,6 +121,7 @@
 -	[`pypy:3-windowsservercore`](#pypy3-windowsservercore)
 -	[`pypy:3-windowsservercore-1809`](#pypy3-windowsservercore-1809)
 -	[`pypy:3-windowsservercore-ltsc2022`](#pypy3-windowsservercore-ltsc2022)
+-	[`pypy:3-windowsservercore-ltsc2025`](#pypy3-windowsservercore-ltsc2025)
 -	[`pypy:3.10`](#pypy310)
 -	[`pypy:3.10-7`](#pypy310-7)
 -	[`pypy:3.10-7-bookworm`](#pypy310-7-bookworm)
@@ -120,6 +132,7 @@
 -	[`pypy:3.10-7-windowsservercore`](#pypy310-7-windowsservercore)
 -	[`pypy:3.10-7-windowsservercore-1809`](#pypy310-7-windowsservercore-1809)
 -	[`pypy:3.10-7-windowsservercore-ltsc2022`](#pypy310-7-windowsservercore-ltsc2022)
+-	[`pypy:3.10-7-windowsservercore-ltsc2025`](#pypy310-7-windowsservercore-ltsc2025)
 -	[`pypy:3.10-7.3`](#pypy310-73)
 -	[`pypy:3.10-7.3-bookworm`](#pypy310-73-bookworm)
 -	[`pypy:3.10-7.3-bullseye`](#pypy310-73-bullseye)
@@ -129,6 +142,7 @@
 -	[`pypy:3.10-7.3-windowsservercore`](#pypy310-73-windowsservercore)
 -	[`pypy:3.10-7.3-windowsservercore-1809`](#pypy310-73-windowsservercore-1809)
 -	[`pypy:3.10-7.3-windowsservercore-ltsc2022`](#pypy310-73-windowsservercore-ltsc2022)
+-	[`pypy:3.10-7.3-windowsservercore-ltsc2025`](#pypy310-73-windowsservercore-ltsc2025)
 -	[`pypy:3.10-7.3.17`](#pypy310-7317)
 -	[`pypy:3.10-7.3.17-bookworm`](#pypy310-7317-bookworm)
 -	[`pypy:3.10-7.3.17-bullseye`](#pypy310-7317-bullseye)
@@ -138,6 +152,7 @@
 -	[`pypy:3.10-7.3.17-windowsservercore`](#pypy310-7317-windowsservercore)
 -	[`pypy:3.10-7.3.17-windowsservercore-1809`](#pypy310-7317-windowsservercore-1809)
 -	[`pypy:3.10-7.3.17-windowsservercore-ltsc2022`](#pypy310-7317-windowsservercore-ltsc2022)
+-	[`pypy:3.10-7.3.17-windowsservercore-ltsc2025`](#pypy310-7317-windowsservercore-ltsc2025)
 -	[`pypy:3.10-bookworm`](#pypy310-bookworm)
 -	[`pypy:3.10-bullseye`](#pypy310-bullseye)
 -	[`pypy:3.10-slim`](#pypy310-slim)
@@ -146,6 +161,7 @@
 -	[`pypy:3.10-windowsservercore`](#pypy310-windowsservercore)
 -	[`pypy:3.10-windowsservercore-1809`](#pypy310-windowsservercore-1809)
 -	[`pypy:3.10-windowsservercore-ltsc2022`](#pypy310-windowsservercore-ltsc2022)
+-	[`pypy:3.10-windowsservercore-ltsc2025`](#pypy310-windowsservercore-ltsc2025)
 -	[`pypy:bookworm`](#pypybookworm)
 -	[`pypy:bullseye`](#pypybullseye)
 -	[`pypy:latest`](#pypylatest)
@@ -155,6 +171,7 @@
 -	[`pypy:windowsservercore`](#pypywindowsservercore)
 -	[`pypy:windowsservercore-1809`](#pypywindowsservercore-1809)
 -	[`pypy:windowsservercore-ltsc2022`](#pypywindowsservercore-ltsc2022)
+-	[`pypy:windowsservercore-ltsc2025`](#pypywindowsservercore-ltsc2025)
 
 ## `pypy:2`
 
@@ -2857,6 +2874,15 @@ CMD ["pypy"]
 		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `pypy:2-7-windowsservercore-ltsc2025`
+
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `pypy:2-7.3`
 
 ```console
@@ -5073,6 +5099,15 @@ CMD ["pypy"]
 		Last Modified: Tue, 14 Jan 2025 23:38:36 GMT  
 		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `pypy:2-7.3-windowsservercore-ltsc2025`
+
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2-7.3.17`
 
@@ -7291,6 +7326,15 @@ CMD ["pypy"]
 		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `pypy:2-7.3.17-windowsservercore-ltsc2025`
+
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `pypy:2-bookworm`
 
 ```console
@@ -9023,6 +9067,15 @@ CMD ["pypy"]
 		Last Modified: Tue, 14 Jan 2025 23:38:36 GMT  
 		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `pypy:2-windowsservercore-ltsc2025`
+
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2.7`
 
@@ -11725,6 +11778,15 @@ CMD ["pypy"]
 		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `pypy:2.7-7-windowsservercore-ltsc2025`
+
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `pypy:2.7-7.3`
 
 ```console
@@ -13941,6 +14003,15 @@ CMD ["pypy"]
 		Last Modified: Tue, 14 Jan 2025 23:38:36 GMT  
 		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `pypy:2.7-7.3-windowsservercore-ltsc2025`
+
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:2.7-7.3.17`
 
@@ -16159,6 +16230,15 @@ CMD ["pypy"]
 		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `pypy:2.7-7.3.17-windowsservercore-ltsc2025`
+
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `pypy:2.7-bookworm`
 
 ```console
@@ -17891,6 +17971,15 @@ CMD ["pypy"]
 		Last Modified: Tue, 14 Jan 2025 23:38:36 GMT  
 		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `pypy:2.7-windowsservercore-ltsc2025`
+
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3`
 
@@ -20545,6 +20634,15 @@ CMD ["pypy"]
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `pypy:3-7-windowsservercore-ltsc2025`
+
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `pypy:3-7.3`
 
 ```console
@@ -22725,6 +22823,15 @@ CMD ["pypy"]
 		Last Modified: Tue, 14 Jan 2025 23:38:44 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `pypy:3-7.3-windowsservercore-ltsc2025`
+
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3-7.3.17`
 
@@ -24907,6 +25014,15 @@ CMD ["pypy"]
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `pypy:3-7.3.17-windowsservercore-ltsc2025`
+
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `pypy:3-bookworm`
 
 ```console
@@ -26615,6 +26731,15 @@ CMD ["pypy"]
 		Last Modified: Tue, 14 Jan 2025 23:38:44 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `pypy:3-windowsservercore-ltsc2025`
+
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.10`
 
@@ -29269,6 +29394,15 @@ CMD ["pypy"]
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `pypy:3.10-7-windowsservercore-ltsc2025`
+
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `pypy:3.10-7.3`
 
 ```console
@@ -31449,6 +31583,15 @@ CMD ["pypy"]
 		Last Modified: Tue, 14 Jan 2025 23:38:44 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `pypy:3.10-7.3-windowsservercore-ltsc2025`
+
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:3.10-7.3.17`
 
@@ -33631,6 +33774,15 @@ CMD ["pypy"]
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
+## `pypy:3.10-7.3.17-windowsservercore-ltsc2025`
+
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
 ## `pypy:3.10-bookworm`
 
 ```console
@@ -35339,6 +35491,15 @@ CMD ["pypy"]
 		Last Modified: Tue, 14 Jan 2025 23:38:44 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `pypy:3.10-windowsservercore-ltsc2025`
+
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `pypy:bookworm`
 
@@ -37520,3 +37681,12 @@ CMD ["pypy"]
 		Last Modified: Tue, 14 Jan 2025 23:38:44 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `pypy:windowsservercore-ltsc2025`
+
+```console
+$ docker pull pypy@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
