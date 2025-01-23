@@ -1,7 +1,7 @@
 ## `eclipse-temurin:8-jre-alpine`
 
 ```console
-$ docker pull eclipse-temurin@sha256:6af5651ab87b8cac585e45f7887a2bfdcf42ca6f1cf63fb32f7d51c496963951
+$ docker pull eclipse-temurin@sha256:79e3e0daf6779d661285d1432d09a2398dc00a6c2b547ac9265238a21ecc5322
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,82 +12,82 @@ $ docker pull eclipse-temurin@sha256:6af5651ab87b8cac585e45f7887a2bfdcf42ca6f1cf
 ### `eclipse-temurin:8-jre-alpine` - linux; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:87ee49746af07c9c6b5aabb63c25d294feb83769941fd2deadc0f50f3ffdd3b0
+$ docker pull eclipse-temurin@sha256:a70d83458559c4b26ed3f3e202726a7cb394d9fc6507d0dcd6287607475c3ddf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **61.5 MB (61469715 bytes)**  
+-	Total Size: **61.6 MB (61598015 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:29b2bd7144497955eaa3824736caaa3e6940e97ab86774fb43c9d2e7446eb404`
+-	Image ID: `sha256:57a902ea3016a8e890648e91294f5852b8c9b379a8e5170e9077ead11850f14b`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 
 ```dockerfile
-# Wed, 23 Oct 2024 15:41:32 GMT
-ADD alpine-minirootfs-3.20.5-x86_64.tar.gz / # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
+ADD alpine-minirootfs-3.21.2-x86_64.tar.gz / # buildkit
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Wed, 22 Jan 2025 01:19:15 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Wed, 22 Jan 2025 01:19:15 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Wed, 22 Jan 2025 01:19:15 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Wed, 22 Jan 2025 01:19:15 GMT
 RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg         ca-certificates p11-kit-trust         musl-locales musl-locales-lang         tzdata         coreutils         openssl     ;     rm -rf /var/cache/apk/* # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Wed, 22 Jan 2025 01:19:15 GMT
 ENV JAVA_VERSION=jdk8u432-b06
-# Wed, 23 Oct 2024 15:41:32 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='7f7c265560dd5a42533bf282831d7d2f044a7ff7f4c310b40a0f9f8e19ff12e5';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jre_x64_alpine-linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -r "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Wed, 22 Jan 2025 01:19:15 GMT
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='7f7c265560dd5a42533bf282831d7d2f044a7ff7f4c310b40a0f9f8e19ff12e5';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jre_x64_alpine-linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz; # buildkit
+# Wed, 22 Jan 2025 01:19:15 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java -version"; java -version;     echo "Complete." # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Wed, 22 Jan 2025 01:19:15 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Wed, 23 Oct 2024 15:41:32 GMT
+# Wed, 22 Jan 2025 01:19:15 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
 ```
 
 -	Layers:
-	-	`sha256:66a3d608f3fa52124f8463e9467f170c784abd549e8216aa45c6960b00b4b79b`  
-		Last Modified: Wed, 08 Jan 2025 15:55:45 GMT  
-		Size: 3.6 MB (3626260 bytes)  
+	-	`sha256:1f3e46996e2966e4faa5846e56e76e3748b7315e2ded61476c24403d592134f0`  
+		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
+		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00d1fccd1898ea4bb145d009cd29080b91ccaf30179d18da02360e29b1136bd7`  
-		Last Modified: Wed, 08 Jan 2025 18:14:15 GMT  
-		Size: 16.0 MB (16022324 bytes)  
+	-	`sha256:b2d7e198ae5284f8bcf7bdf0eca204d29448801c1c39a537863a8408f5c577d2`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 16.1 MB (16135230 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd116e3328fb199865e459caecc1d80cf5c9d9be850fea2f0b2db32b5c5edd69`  
-		Last Modified: Wed, 08 Jan 2025 18:14:15 GMT  
-		Size: 41.8 MB (41818722 bytes)  
+	-	`sha256:3c8559a37a29ffa4869ecdba6d70c4c486da4efb614d2a76a0b19da8cea4d8c3`  
+		Last Modified: Wed, 22 Jan 2025 18:27:36 GMT  
+		Size: 41.8 MB (41818658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36cbd3739bbb55be440a15c3472aedee8bb625b8d87639545952759deb0d3ad1`  
-		Last Modified: Wed, 08 Jan 2025 18:14:15 GMT  
-		Size: 128.0 B  
+	-	`sha256:40054bb8e19993e28d14a0c9417f25a1d853d706bf2abfd5ae55f43866dd23e3`  
+		Last Modified: Wed, 22 Jan 2025 18:27:34 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a8f39bcefc58333ef8d2982d6c772d437202f0ed61eee6cdeb584b75f877372`  
-		Last Modified: Wed, 08 Jan 2025 18:14:15 GMT  
-		Size: 2.3 KB (2281 bytes)  
+	-	`sha256:239fd68696d7bf1834712d5c44b5209762b3ed4361672a79151220071425f91d`  
+		Last Modified: Wed, 22 Jan 2025 18:27:34 GMT  
+		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eclipse-temurin:8-jre-alpine` - unknown; unknown
 
 ```console
-$ docker pull eclipse-temurin@sha256:5582b9a0651ab71d712ffd23fbc0f082c9ef167dbee97205cbdd79c82659c39c
+$ docker pull eclipse-temurin@sha256:e425ef95d73bf279f0a7c1ff2c199d9fb71360e369c1f2261d0964901abf8dea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **932.9 KB (932939 bytes)**  
+-	Total Size: **941.2 KB (941172 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7bb3e1d4fead735cca90190f11c897c8fe789ad85a112d66c80287787182ec4b`
+-	Image ID: `sha256:06a079eb412fbafd885ad172a119c26cde26aa9b07db0c6b64dcba60dd5a5a23`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1b42ef58e2583f320506cac121c4ea815aa5b7029bee99827d0222d5cdc61bf5`  
-		Last Modified: Wed, 08 Jan 2025 18:14:15 GMT  
-		Size: 914.7 KB (914688 bytes)  
+	-	`sha256:5f4bb06f0910f520688753a9b8666c033f79b0d424642a84fa8b2148165ebdca`  
+		Last Modified: Wed, 22 Jan 2025 18:27:35 GMT  
+		Size: 922.3 KB (922271 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bc3d6a2c13ccfe63c56e3905429f1cbaf5fb047f0def5002fda74ebab8d37ebd`  
-		Last Modified: Wed, 08 Jan 2025 18:14:15 GMT  
-		Size: 18.3 KB (18251 bytes)  
+	-	`sha256:5ad104948bb78fe3927e798fd7050a11b763cb76a9d706e189178c5c3490b5a9`  
+		Last Modified: Wed, 22 Jan 2025 18:27:34 GMT  
+		Size: 18.9 KB (18901 bytes)  
 		MIME: application/vnd.in-toto+json
