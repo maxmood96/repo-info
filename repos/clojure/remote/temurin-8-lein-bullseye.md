@@ -1,7 +1,7 @@
 ## `clojure:temurin-8-lein-bullseye`
 
 ```console
-$ docker pull clojure@sha256:6320a9902d813f8b4f191a832e14d349817785241e77897d9cd40f09033bdbad
+$ docker pull clojure@sha256:11bbede44ccafd1e38f04149648bb5781413959821f802e269beb20560ab5740
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -99,13 +99,13 @@ $ docker pull clojure@sha256:67015b857e8ab3bbc19f35718cf975274a3fd62f463e02abd8c
 ### `clojure:temurin-8-lein-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:ad4fab7d08b44f10de7bca78ce2f811f535ce33253946bde89d1d7bf8f2dd5a7
+$ docker pull clojure@sha256:573e932be6c80a3255f826e4b2930887101d0690c7d9523c38705f3f9a1214f4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.1 MB (212132661 bytes)**  
+-	Total Size: **163.2 MB (163201381 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d10b53eaf0e85f86bde91b2b550f7b4cf3c0c48546f995eb0cbb874a6c0c5205`
+-	Image ID: `sha256:8cb4759f4a2a40d2e2e872040dcedb094ee351d7616c1cbf3927275254842ac3`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
@@ -140,43 +140,43 @@ CMD ["lein" "repl"]
 		Last Modified: Tue, 14 Jan 2025 01:36:12 GMT  
 		Size: 52.2 MB (52246060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3f468498da49c43dd921b0f405aeeb87eb714221124b311e09a623dcaca2d6c`  
-		Last Modified: Tue, 14 Jan 2025 12:15:14 GMT  
-		Size: 102.7 MB (102747715 bytes)  
+	-	`sha256:3ef99793a2d8bdc381daf53998de5bd5712cc60ecc715ece4034ebadad9db1c4`  
+		Last Modified: Thu, 23 Jan 2025 02:26:57 GMT  
+		Size: 53.8 MB (53816395 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a827f023bc8e243f6ca98cf9ab19d85f6caa1c0867ce3438d3dec4e7811ab22`  
-		Last Modified: Tue, 14 Jan 2025 12:15:13 GMT  
-		Size: 52.6 MB (52624637 bytes)  
+	-	`sha256:3a65d1559e4f0bc238c5674648c4aa6eb138234ad8b10b2f5ce09ca428a5242f`  
+		Last Modified: Thu, 23 Jan 2025 02:26:57 GMT  
+		Size: 52.6 MB (52624684 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9240282dd3b755e760d22f3f81886de4d489df69d58b30ca2e884a3053446f4d`  
-		Last Modified: Tue, 14 Jan 2025 12:15:11 GMT  
-		Size: 4.5 MB (4514217 bytes)  
+	-	`sha256:41efe20d6f235cae005f35634828cdee1228631bfa71647511bec926c3ca74cf`  
+		Last Modified: Thu, 23 Jan 2025 02:26:56 GMT  
+		Size: 4.5 MB (4514210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-8-lein-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:5c9e731e37b5e1e02de51db0c7f7ff8980b000399b30d9dafee266db0a0e6b03
+$ docker pull clojure@sha256:aab4fff6a1ab67b906580609cffb7fbd274303ec0ee22f18d0ac0f6aeab34444
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.8 MB (6764254 bytes)**  
+-	Total Size: **6.8 MB (6763639 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5685045126fea0e93365cb9e985633ccd8e1aaf9b95def2f9483f2186519b700`
+-	Image ID: `sha256:6e0ce8ca48f03736fd0ca5e7e134360bda0ba1af1db95af6a07672b7d8d0a7c6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:47a0107df83a5ff7144995d59f4f5074863d674dc38187862694d0d554759a1a`  
-		Last Modified: Tue, 14 Jan 2025 12:15:11 GMT  
-		Size: 6.7 MB (6747707 bytes)  
+	-	`sha256:19fd647bad610014e6a375470d322188a3fbb48b6e279c55582c308ec8feb710`  
+		Last Modified: Thu, 23 Jan 2025 02:26:56 GMT  
+		Size: 6.7 MB (6747097 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ef962356a9e8e342cbe3f80fbfb5d45038a78afaa6f4bdf0e07ebf80e3437b61`  
-		Last Modified: Tue, 14 Jan 2025 12:15:10 GMT  
-		Size: 16.5 KB (16547 bytes)  
+	-	`sha256:8e9e51153717b330874bed984571382d72fb0bf13c77606b616d3aeacfc960d0`  
+		Last Modified: Thu, 23 Jan 2025 02:26:56 GMT  
+		Size: 16.5 KB (16542 bytes)  
 		MIME: application/vnd.in-toto+json
