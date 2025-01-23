@@ -1,30 +1,31 @@
 ## `hylang:1-pypy3.10`
 
 ```console
-$ docker pull hylang@sha256:f3925bd97c26ddc8b38226d1f2e26115f4c53ba64cf0027cce7ec9d28f530e2b
+$ docker pull hylang@sha256:16aa1a9c6972e3675b42237068e6b6fcae3efb89f4d4dc72c0238aeaffc2482d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 8
+-	Platforms: 9
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 	-	linux; 386
 	-	unknown; unknown
+	-	windows version 10.0.26100.2894; amd64
 	-	windows version 10.0.20348.3091; amd64
 	-	windows version 10.0.17763.6775; amd64
 
 ### `hylang:1-pypy3.10` - linux; amd64
 
 ```console
-$ docker pull hylang@sha256:84f12cc2a492241da210d9fed25133f249aaf9f06152d483fd86d059af896e9d
+$ docker pull hylang@sha256:756b8814b2fb952e7b6d6411ee43f5d32a6923570ebc7434ba7cd3c09694edaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **72.0 MB (71967960 bytes)**  
+-	Total Size: **72.0 MB (71968161 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5d98402a2d322e8716a5aa98d20d45168d138cfe31897de2ed94dcfcc501f7a6`
+-	Image ID: `sha256:9db3f52f543ace2a99f8098586a9f80018e66d8aa76e37d85954a741904e35f4`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -48,13 +49,13 @@ ENV PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum --check --strict -; 		pipVersion="$(pypy3 -c 'import ensurepip; print(ensurepip._PIP_VERSION)')"; 	setuptoolsVersion="$(pypy3 -c 'import ensurepip; print(ensurepip._SETUPTOOLS_VERSION)')"; 		pypy3 get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip == $pipVersion" 		"setuptools == $setuptoolsVersion" 	; 	apt-get purge -y --auto-remove wget; 	pip --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py # buildkit
 # Wed, 28 Aug 2024 10:12:01 GMT
 CMD ["pypy3"]
-# Wed, 08 Jan 2025 17:56:16 GMT
+# Wed, 22 Jan 2025 19:41:06 GMT
 ENV HY_VERSION=1.0.0
-# Wed, 08 Jan 2025 17:56:16 GMT
+# Wed, 22 Jan 2025 19:41:06 GMT
 ENV HYRULE_VERSION=0.8.0
-# Wed, 08 Jan 2025 17:56:16 GMT
+# Wed, 22 Jan 2025 19:41:06 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION" # buildkit
-# Wed, 08 Jan 2025 17:56:16 GMT
+# Wed, 22 Jan 2025 19:41:06 GMT
 CMD ["hy"]
 ```
 
@@ -75,33 +76,33 @@ CMD ["hy"]
 		Last Modified: Tue, 14 Jan 2025 02:41:05 GMT  
 		Size: 3.3 MB (3305496 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f3cc14abcc0bb50ca06b6e837e443ecaff02d60b8f0b3e56716e17a9adba3b3`  
-		Last Modified: Tue, 14 Jan 2025 03:20:20 GMT  
-		Size: 6.4 MB (6357760 bytes)  
+	-	`sha256:e9922d6b03dc49d9f191b5e4bca095bbc4b004c2236e76a5073bb67d240cacc7`  
+		Last Modified: Thu, 23 Jan 2025 01:29:27 GMT  
+		Size: 6.4 MB (6357961 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:1-pypy3.10` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:527fd9e0b3ef5129c004a859706cc2ff18276bc575af1aa32bcabfce0eb3b6d5
+$ docker pull hylang@sha256:cb6629c7df3a9a59c5fd3cd7390479d417e3b2f946a281455e4c9a6397783432
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 MB (2418733 bytes)**  
+-	Total Size: **2.4 MB (2418730 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4fb876b58e80dac8b9a6fdc27af5746a25789f935ae8fcf941e88f8f8712a9ae`
+-	Image ID: `sha256:1155a3a7398a2b4461925d9f8a500c02e14009f96f29c8f36855e659ea4a3c33`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:dfef15ae196539737e77af4a22c4d840bd0933d8f96b18fc5855d92999e79de0`  
-		Last Modified: Tue, 14 Jan 2025 03:20:20 GMT  
+	-	`sha256:64e376c8eb89e6533a1bb2ac38dbdc264ed13081f04c378377f60c81b8b7a529`  
+		Last Modified: Thu, 23 Jan 2025 01:29:27 GMT  
 		Size: 2.4 MB (2406956 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b79157d8ad63324a17f7a9f6279034ca9991d12660179fee720b24ac5aebcf98`  
-		Last Modified: Tue, 14 Jan 2025 03:20:20 GMT  
-		Size: 11.8 KB (11777 bytes)  
+	-	`sha256:c43984bbc7bf26a3cbd88720b3d4488fb8a2a757b7655a79f74268e9167f75c0`  
+		Last Modified: Thu, 23 Jan 2025 01:29:26 GMT  
+		Size: 11.8 KB (11774 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `hylang:1-pypy3.10` - linux; arm64 variant v8
@@ -196,13 +197,13 @@ $ docker pull hylang@sha256:6e623588db0f20637a3669562e75eb36e8ef4aa88fcefef52668
 ### `hylang:1-pypy3.10` - linux; 386
 
 ```console
-$ docker pull hylang@sha256:2694171b66a180961f4e1cf9c79443cec5fc18492b0b845162cceaaf6cbde317
+$ docker pull hylang@sha256:9cbd490bf09bf10b0ed43dcbb525c69a139ae6871eb45e3cbd96e6e5c0c786b1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.3 MB (69298374 bytes)**  
+-	Total Size: **69.3 MB (69298580 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b3f59f512115ddb22e5c9a0fcaf6cc51f40668138cf7e880e54038345c6add1d`
+-	Image ID: `sha256:961e1f85f1ca77db10bd57d19137118dc814ae8b74b1810a56de5f18066c697a`
 -	Default Command: `["hy"]`
 
 ```dockerfile
@@ -226,13 +227,13 @@ ENV PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends wget; 	rm -rf /var/lib/apt/lists/*; 		wget -O get-pip.py "$PYTHON_GET_PIP_URL"; 	echo "$PYTHON_GET_PIP_SHA256 *get-pip.py" | sha256sum --check --strict -; 		pipVersion="$(pypy3 -c 'import ensurepip; print(ensurepip._PIP_VERSION)')"; 	setuptoolsVersion="$(pypy3 -c 'import ensurepip; print(ensurepip._SETUPTOOLS_VERSION)')"; 		pypy3 get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		"pip == $pipVersion" 		"setuptools == $setuptoolsVersion" 	; 	apt-get purge -y --auto-remove wget; 	pip --version; 		find /opt/pypy -depth 		\( 			\( -type d -a \( -name test -o -name tests \) \) 			-o 			\( -type f -a \( -name '*.pyc' -o -name '*.pyo' \) \) 		\) -exec rm -rf '{}' +; 	rm -f get-pip.py # buildkit
 # Wed, 28 Aug 2024 10:12:01 GMT
 CMD ["pypy3"]
-# Wed, 08 Jan 2025 17:56:16 GMT
+# Wed, 22 Jan 2025 19:41:06 GMT
 ENV HY_VERSION=1.0.0
-# Wed, 08 Jan 2025 17:56:16 GMT
+# Wed, 22 Jan 2025 19:41:06 GMT
 ENV HYRULE_VERSION=0.8.0
-# Wed, 08 Jan 2025 17:56:16 GMT
+# Wed, 22 Jan 2025 19:41:06 GMT
 RUN pip install --no-cache-dir "hy == $HY_VERSION" "hyrule == $HYRULE_VERSION" # buildkit
-# Wed, 08 Jan 2025 17:56:16 GMT
+# Wed, 22 Jan 2025 19:41:06 GMT
 CMD ["hy"]
 ```
 
@@ -253,46 +254,155 @@ CMD ["hy"]
 		Last Modified: Tue, 14 Jan 2025 02:35:20 GMT  
 		Size: 3.3 MB (3305156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16959d277eedc077b1da25b511e20348ffd964f5c3cd8e9580472cf04b1b123f`  
-		Last Modified: Tue, 14 Jan 2025 03:25:23 GMT  
-		Size: 6.4 MB (6357950 bytes)  
+	-	`sha256:16bae8f62fe3e3efd2d727d34e274df085a2b3d8cbd944b393fe68411e218a28`  
+		Last Modified: Thu, 23 Jan 2025 01:29:38 GMT  
+		Size: 6.4 MB (6358156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `hylang:1-pypy3.10` - unknown; unknown
 
 ```console
-$ docker pull hylang@sha256:c990b1ea7cf6ad845ed58900228849373f657e05eb66b5a25d6de9ee6d411045
+$ docker pull hylang@sha256:945af0e7139feb76bc6de018768e71a254d5355e69b45025e11cd86c522e1cfc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.4 MB (2415717 bytes)**  
+-	Total Size: **2.4 MB (2415718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ace5597cbecbface978e5b9f106754d34bca51b6865645e424d811708c620a8b`
+-	Image ID: `sha256:d3d632a4a5ffd5ef7efcbb0421ea0f1c4fede6e3b2dc6b0b78cb739c7a64dab1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:34e2aa2b1a71d95dd5c3fd467860c8755dc48afa0392aa76ef833a2ea02c45ca`  
-		Last Modified: Tue, 14 Jan 2025 03:25:23 GMT  
+	-	`sha256:d2fd28f4ef649656df50c9947102bc381b71d0b7ce95cf58c0328087b898fe70`  
+		Last Modified: Thu, 23 Jan 2025 01:29:38 GMT  
 		Size: 2.4 MB (2404033 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:91379332b152c897fc1da046a0abe2ca2dcd3f0a3323bd09a1e1b0682b2f917e`  
-		Last Modified: Tue, 14 Jan 2025 03:25:22 GMT  
-		Size: 11.7 KB (11684 bytes)  
+	-	`sha256:e8beb0a3ac99eb571e7aa88f7197944878e7d9cf44b50270778726fadb8f2bd7`  
+		Last Modified: Thu, 23 Jan 2025 01:29:38 GMT  
+		Size: 11.7 KB (11685 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `hylang:1-pypy3.10` - windows version 10.0.20348.3091; amd64
+### `hylang:1-pypy3.10` - windows version 10.0.26100.2894; amd64
 
 ```console
-$ docker pull hylang@sha256:f751bcdc4bd69426932297ac0a08a1e787d5d6b72a6f6251605c461243302f2c
+$ docker pull hylang@sha256:0f36b8adbbd07cdcc0aefbb6bf9ddee66227dc8503dbcf3619abca657bca4f50
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 GB (2316000819 bytes)**  
+-	Total Size: **2.6 GB (2554045629 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f635c54170f41b5bc7e68e51a7c0eb4acb7f4215b6e53e23c2da693fbbbecaf`
+-	Image ID: `sha256:f1f6d8f48693273cf5979e6869fce3bcd07720c50f5d595545ae58df5349d68c`
+-	Default Command: `["hy"]`
+-	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
+
+```dockerfile
+# Sun, 08 Dec 2024 22:41:37 GMT
+RUN Apply image 10.0.26100.2605
+# Mon, 13 Jan 2025 03:08:16 GMT
+RUN Install update 10.0.26100.2894
+# Wed, 22 Jan 2025 20:35:11 GMT
+SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
+# Wed, 22 Jan 2025 20:35:18 GMT
+RUN $newPath = ('C:\pypy;C:\pypy\Scripts;{0}' -f $env:PATH); 	Write-Host ('Updating PATH: {0}' -f $newPath); 	[Environment]::SetEnvironmentVariable('PATH', $newPath, [EnvironmentVariableTarget]::Machine); 	Write-Host 'Complete.'
+# Wed, 22 Jan 2025 20:35:27 GMT
+RUN $url = 'https://download.microsoft.com/download/6/A/A/6AA4EDFF-645B-48C5-81CC-ED5963AEAD48/vc_redist.x64.exe'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'vc.exe'; 		$sha256 = 'da66717784c192f1004e856bbcf7b3e13b7bf3ea45932c48e4c9b9a50ca80965'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash vc.exe -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Installing ...'; 	Start-Process 		-NoNewWindow 		-Wait 		-FilePath .\vc.exe 		-ArgumentList @( 			'/install', 			'/quiet', 			'/norestart' 		); 		Write-Host 'Removing ...'; 	Remove-Item vc.exe -Force; 		Write-Host 'Complete.'
+# Wed, 22 Jan 2025 20:35:27 GMT
+ENV PYPY_VERSION=7.3.17
+# Wed, 22 Jan 2025 20:35:46 GMT
+RUN $url = 'https://downloads.python.org/pypy/pypy3.10-v7.3.17-win64.zip'; 	Write-Host ('Downloading {0} ...' -f $url); 	Invoke-WebRequest -Uri $url -OutFile 'pypy.zip'; 		$sha256 = 'cab794a03ddda26238c72942ea6f225612e0dc17c76cac6652da83a95024e6e8'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $sha256); 	if ((Get-FileHash pypy.zip -Algorithm sha256).Hash -ne $sha256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		Write-Host 'Expanding ...'; 	Expand-Archive pypy.zip -DestinationPath C:\; 		Write-Host 'Removing ...'; 	Remove-Item pypy.zip -Force; 		Write-Host 'Renaming ...'; 	Rename-Item -Path C:\pypy3.10-v7.3.17-win64 -NewName C:\pypy; 		Write-Host 'Verifying install ("pypy --version") ...'; 	pypy --version; 		Write-Host 'Cleanup install ...'; 	Get-ChildItem 		-Path C:\pypy 		-Include @( 'test', 'tests' ) 		-Directory 		-Recurse 		| Remove-Item -Force -Recurse; 	Get-ChildItem 		-Path C:\pypy 		-Include @( '*.pyc', '*.pyo' ) 		-File 		-Recurse 		| Remove-Item -Force; 		Write-Host 'Complete.'
+# Wed, 22 Jan 2025 20:35:47 GMT
+ENV PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py
+# Wed, 22 Jan 2025 20:35:47 GMT
+ENV PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d399b2d5218
+# Wed, 22 Jan 2025 20:36:10 GMT
+RUN Write-Host ('Downloading get-pip.py ({0}) ...' -f $env:PYTHON_GET_PIP_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:PYTHON_GET_PIP_URL -OutFile 'get-pip.py'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:PYTHON_GET_PIP_SHA256); 	if ((Get-FileHash 'get-pip.py' -Algorithm sha256).Hash -ne $env:PYTHON_GET_PIP_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		$pipVersion = & pypy -c 'import ensurepip; print(ensurepip._PIP_VERSION)'; 	$setuptoolsVersion = & pypy -c 'import ensurepip; print(ensurepip._SETUPTOOLS_VERSION)'; 		Write-Host ('Installing "pip == {0}", "setuptools == {1}" ...' -f $pipVersion, $setuptoolsVersion); 	pypy get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		('pip == {0}' -f $pipVersion) 		('setuptools == {0}' -f $setuptoolsVersion) 	; 	Remove-Item get-pip.py -Force; 		Write-Host 'Verifying pip install ...'; 	pip --version; 		Write-Host 'Cleanup install ...'; 	Get-ChildItem 		-Path C:\pypy 		-Include @( 'test', 'tests' ) 		-Directory 		-Recurse 		| Remove-Item -Force -Recurse; 	Get-ChildItem 		-Path C:\pypy 		-Include @( '*.pyc', '*.pyo' ) 		-File 		-Recurse 		| Remove-Item -Force; 		Write-Host 'Complete.'
+# Wed, 22 Jan 2025 20:36:11 GMT
+CMD ["pypy"]
+# Thu, 23 Jan 2025 01:32:15 GMT
+ENV HY_VERSION=1.0.0
+# Thu, 23 Jan 2025 01:32:15 GMT
+ENV HYRULE_VERSION=0.8.0
+# Thu, 23 Jan 2025 01:33:08 GMT
+RUN pip install --no-cache-dir ('hy == {0}' -f $env:HY_VERSION) ('hyrule == {0}' -f $env:HYRULE_VERSION)
+# Thu, 23 Jan 2025 01:33:09 GMT
+CMD ["hy"]
+```
+
+-	Layers:
+	-	`sha256:1317fe15185685e9cd27f7542cd96f4847343401288a8b6798273a4ac60844eb`  
+		Last Modified: Tue, 10 Dec 2024 22:58:14 GMT  
+		Size: 2.2 GB (2215307110 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:19fa0da9c657652b5d0879f62221964dd2e8f7c37691ba99bce37494e109b27e`  
+		Last Modified: Tue, 14 Jan 2025 18:53:06 GMT  
+		Size: 285.0 MB (284970427 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:aefb909148cbed3ec773ebbfb43ea1c941195386e6716ec6347b539ef1bd5d2d`  
+		Last Modified: Wed, 22 Jan 2025 20:36:15 GMT  
+		Size: 1.3 KB (1317 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c8ca104894db979d1fa5534dfa35b8497bfbe7a3053b4ddd06867ebe41c7844f`  
+		Last Modified: Wed, 22 Jan 2025 20:36:15 GMT  
+		Size: 389.7 KB (389706 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1f5a5962aa7d8c9a6e9f053f14af9b90aefc093152adafad8d51668afec05295`  
+		Last Modified: Wed, 22 Jan 2025 20:36:16 GMT  
+		Size: 15.6 MB (15570477 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d311732e8fe2db4630af8e7925100e227340fe34fdf67bbc520640e5d34e98aa`  
+		Last Modified: Wed, 22 Jan 2025 20:36:15 GMT  
+		Size: 1.3 KB (1292 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:035d3ab209ff6ac4a082983dd27d9b8be34126768c1412c970f839ca66f028a4`  
+		Last Modified: Wed, 22 Jan 2025 20:36:17 GMT  
+		Size: 26.5 MB (26489771 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:f51875854fd8215cbed26c913b868323c1831469d028dd4c5f903f1518c022c3`  
+		Last Modified: Wed, 22 Jan 2025 20:36:14 GMT  
+		Size: 1.3 KB (1318 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:c2c79404119205bfaa681549578879f07daebc8ec2093df13b794efbf2f71ef4`  
+		Last Modified: Wed, 22 Jan 2025 20:36:14 GMT  
+		Size: 1.3 KB (1290 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:1c2ce1fe9a0c4a829186c539d6a59d8cb427ded7cbe794b9ed1a6d3b3e174d84`  
+		Last Modified: Wed, 22 Jan 2025 20:36:14 GMT  
+		Size: 4.0 MB (3968608 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:7a465c63ba8fc9c83668d293450ef82324c412c49fa7e33863303d3e1e2d4d23`  
+		Last Modified: Wed, 22 Jan 2025 20:36:14 GMT  
+		Size: 1.3 KB (1290 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:d346e7c8ad2dafcb9bf10794006b6562a9fe187dba20e46a99782e1d0a36c47b`  
+		Last Modified: Thu, 23 Jan 2025 01:33:13 GMT  
+		Size: 1.3 KB (1314 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:2780aab441584a2c8f3a7a72d923bc5df0c56740e8531e5f07717ece25ca2669`  
+		Last Modified: Thu, 23 Jan 2025 01:33:13 GMT  
+		Size: 1.3 KB (1333 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:e0505c2009d77a8a9c06e35f9d03b41b611a518f8b90f529485b77651c38f280`  
+		Last Modified: Thu, 23 Jan 2025 01:33:14 GMT  
+		Size: 7.3 MB (7339037 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+	-	`sha256:a045a0c65b54531c9a01c8d673e5febd1ebabc67720142fa22d89524f564784c`  
+		Last Modified: Thu, 23 Jan 2025 01:33:13 GMT  
+		Size: 1.3 KB (1339 bytes)  
+		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+### `hylang:1-pypy3.10` - windows version 10.0.20348.3091; amd64
+
+```console
+$ docker pull hylang@sha256:22a08ab0de259f1f4588fa68e140d3fe81b9109c4e2293cc3be9952aa036a702
+```
+
+-	Docker Version: 26.1.3
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 GB (2315939422 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:2008cb4aabde3be3cd9b10e72aea8fd4519879a20a9f2d75250bebf489fcbe76`
 -	Default Command: `["hy"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -319,13 +429,13 @@ ENV PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d
 RUN Write-Host ('Downloading get-pip.py ({0}) ...' -f $env:PYTHON_GET_PIP_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:PYTHON_GET_PIP_URL -OutFile 'get-pip.py'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:PYTHON_GET_PIP_SHA256); 	if ((Get-FileHash 'get-pip.py' -Algorithm sha256).Hash -ne $env:PYTHON_GET_PIP_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		$pipVersion = & pypy -c 'import ensurepip; print(ensurepip._PIP_VERSION)'; 	$setuptoolsVersion = & pypy -c 'import ensurepip; print(ensurepip._SETUPTOOLS_VERSION)'; 		Write-Host ('Installing "pip == {0}", "setuptools == {1}" ...' -f $pipVersion, $setuptoolsVersion); 	pypy get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		('pip == {0}' -f $pipVersion) 		('setuptools == {0}' -f $setuptoolsVersion) 	; 	Remove-Item get-pip.py -Force; 		Write-Host 'Verifying pip install ...'; 	pip --version; 		Write-Host 'Cleanup install ...'; 	Get-ChildItem 		-Path C:\pypy 		-Include @( 'test', 'tests' ) 		-Directory 		-Recurse 		| Remove-Item -Force -Recurse; 	Get-ChildItem 		-Path C:\pypy 		-Include @( '*.pyc', '*.pyo' ) 		-File 		-Recurse 		| Remove-Item -Force; 		Write-Host 'Complete.'
 # Tue, 14 Jan 2025 23:38:41 GMT
 CMD ["pypy"]
-# Wed, 15 Jan 2025 18:10:22 GMT
+# Thu, 23 Jan 2025 01:36:37 GMT
 ENV HY_VERSION=1.0.0
-# Wed, 15 Jan 2025 18:10:23 GMT
+# Thu, 23 Jan 2025 01:36:38 GMT
 ENV HYRULE_VERSION=0.8.0
-# Wed, 15 Jan 2025 18:11:16 GMT
+# Thu, 23 Jan 2025 01:37:32 GMT
 RUN pip install --no-cache-dir ('hy == {0}' -f $env:HY_VERSION) ('hyrule == {0}' -f $env:HYRULE_VERSION)
-# Wed, 15 Jan 2025 18:11:16 GMT
+# Thu, 23 Jan 2025 01:37:32 GMT
 CMD ["hy"]
 ```
 
@@ -374,34 +484,34 @@ CMD ["hy"]
 		Last Modified: Tue, 14 Jan 2025 23:38:44 GMT  
 		Size: 1.3 KB (1284 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f2f49f194e7e8f74c2cd3486473870e31326996442c1cd2762b06dc5923fb54f`  
-		Last Modified: Wed, 15 Jan 2025 18:11:19 GMT  
+	-	`sha256:ee10576c3ac483e0aa718fcd9f054e16c4f771224d29ca5deacd770c7e05b472`  
+		Last Modified: Thu, 23 Jan 2025 01:37:35 GMT  
 		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:93f839ef876552178244fa5487d3adc405bbe375de50f73bf4ee6325b03deb71`  
-		Last Modified: Wed, 15 Jan 2025 18:11:19 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:808163dfb759c130264a43f80b8ded0a0e457163e74e4a15d1a1fecf3433b91c`  
+		Last Modified: Thu, 23 Jan 2025 01:37:35 GMT  
+		Size: 1.4 KB (1398 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:1256fd8a295a8f7c3cbc220667841d63e869044615302d1e0b4416f9dc9e57d9`  
-		Last Modified: Wed, 15 Jan 2025 18:11:20 GMT  
-		Size: 7.4 MB (7368988 bytes)  
+	-	`sha256:afe7cf606483ead0cf14e50de2f454b40bf87c114daffb651d4009bf269d0d8b`  
+		Last Modified: Thu, 23 Jan 2025 01:37:37 GMT  
+		Size: 7.3 MB (7307479 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b6c3a3067e3fc27cdb898e9aa81e4c9d59213684ef3a2e5957ffd49df025f35c`  
-		Last Modified: Wed, 15 Jan 2025 18:11:19 GMT  
-		Size: 1.3 KB (1279 bytes)  
+	-	`sha256:b975172694d0b3c6e18c2b0852bf69e2ef49bc452ed40c498f2e473aa306f3f0`  
+		Last Modified: Thu, 23 Jan 2025 01:37:35 GMT  
+		Size: 1.3 KB (1280 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 
 ### `hylang:1-pypy3.10` - windows version 10.0.17763.6775; amd64
 
 ```console
-$ docker pull hylang@sha256:be9cb9dce778196b86db6f9193ba99ff7d50d26b16e6e1f1b80283f25b26a881
+$ docker pull hylang@sha256:8b9d7a8c70c37f09dde39d1aa208d08c6d270f5f3ac84e466dbfc05a1e01b124
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.2 GB (2175696202 bytes)**  
+-	Total Size: **2.2 GB (2175705062 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:48869b7050afa42c647188508a21b03dab51db0b158ec7e397802e471057be35`
+-	Image ID: `sha256:a3097152042f4b57e41dc9656bef7b0fc6a50e715d6539903c1ae97cc9c14e66`
 -	Default Command: `["hy"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -428,13 +538,13 @@ ENV PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d
 RUN Write-Host ('Downloading get-pip.py ({0}) ...' -f $env:PYTHON_GET_PIP_URL); 	[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; 	Invoke-WebRequest -Uri $env:PYTHON_GET_PIP_URL -OutFile 'get-pip.py'; 	Write-Host ('Verifying sha256 ({0}) ...' -f $env:PYTHON_GET_PIP_SHA256); 	if ((Get-FileHash 'get-pip.py' -Algorithm sha256).Hash -ne $env:PYTHON_GET_PIP_SHA256) { 		Write-Host 'FAILED!'; 		exit 1; 	}; 		$pipVersion = & pypy -c 'import ensurepip; print(ensurepip._PIP_VERSION)'; 	$setuptoolsVersion = & pypy -c 'import ensurepip; print(ensurepip._SETUPTOOLS_VERSION)'; 		Write-Host ('Installing "pip == {0}", "setuptools == {1}" ...' -f $pipVersion, $setuptoolsVersion); 	pypy get-pip.py 		--disable-pip-version-check 		--no-cache-dir 		('pip == {0}' -f $pipVersion) 		('setuptools == {0}' -f $setuptoolsVersion) 	; 	Remove-Item get-pip.py -Force; 		Write-Host 'Verifying pip install ...'; 	pip --version; 		Write-Host 'Cleanup install ...'; 	Get-ChildItem 		-Path C:\pypy 		-Include @( 'test', 'tests' ) 		-Directory 		-Recurse 		| Remove-Item -Force -Recurse; 	Get-ChildItem 		-Path C:\pypy 		-Include @( '*.pyc', '*.pyo' ) 		-File 		-Recurse 		| Remove-Item -Force; 		Write-Host 'Complete.'
 # Tue, 14 Jan 2025 23:39:38 GMT
 CMD ["pypy"]
-# Wed, 15 Jan 2025 18:05:44 GMT
+# Thu, 23 Jan 2025 01:33:37 GMT
 ENV HY_VERSION=1.0.0
-# Wed, 15 Jan 2025 18:05:45 GMT
+# Thu, 23 Jan 2025 01:33:38 GMT
 ENV HYRULE_VERSION=0.8.0
-# Wed, 15 Jan 2025 18:07:13 GMT
+# Thu, 23 Jan 2025 01:34:55 GMT
 RUN pip install --no-cache-dir ('hy == {0}' -f $env:HY_VERSION) ('hyrule == {0}' -f $env:HYRULE_VERSION)
-# Wed, 15 Jan 2025 18:07:13 GMT
+# Thu, 23 Jan 2025 01:34:56 GMT
 CMD ["hy"]
 ```
 
@@ -483,19 +593,19 @@ CMD ["hy"]
 		Last Modified: Tue, 14 Jan 2025 23:39:43 GMT  
 		Size: 1.4 KB (1395 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b5b88f43a05e799fa7925223cf61fd859b9030b95b4867bd4037764fc754237a`  
-		Last Modified: Wed, 15 Jan 2025 18:07:16 GMT  
-		Size: 1.3 KB (1293 bytes)  
+	-	`sha256:747bc5c8a993150b726ba81181ef9b8da778d035a766fcec53dc534992c28c9d`  
+		Last Modified: Thu, 23 Jan 2025 01:35:00 GMT  
+		Size: 1.4 KB (1355 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e24f939e28b160f5521820020301a640f832802ef2b20f790c9cc8922216750b`  
-		Last Modified: Wed, 15 Jan 2025 18:07:16 GMT  
-		Size: 1.3 KB (1296 bytes)  
+	-	`sha256:d702710106700972602f221d3d54fa747344178f94a9d2a448eb49b838abbd15`  
+		Last Modified: Thu, 23 Jan 2025 01:35:00 GMT  
+		Size: 1.4 KB (1365 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:5c425a31617555f344ca4525a1ddd2383eaf525d096f3136dc868be0b60c6898`  
-		Last Modified: Wed, 15 Jan 2025 18:07:17 GMT  
-		Size: 7.3 MB (7278500 bytes)  
+	-	`sha256:e3a00c4c91b7d26023b5fbad1ede1ce67677058366937bfb67a61f06b507407a`  
+		Last Modified: Thu, 23 Jan 2025 01:35:01 GMT  
+		Size: 7.3 MB (7287232 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:851ac1dd24ffa381c55d9c61830e34e6135053f162b0868cc7d8e5c3cbd35dc9`  
-		Last Modified: Wed, 15 Jan 2025 18:07:16 GMT  
-		Size: 1.3 KB (1298 bytes)  
+	-	`sha256:3e4f8f9ac21f3e47d1f584b9038f59885c32a445dd34a43896a32a3d6d4185e3`  
+		Last Modified: Thu, 23 Jan 2025 01:35:00 GMT  
+		Size: 1.3 KB (1295 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
