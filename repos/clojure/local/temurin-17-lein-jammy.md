@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a8c551e9b044071e6943dc8e29f8d30f31bee528ca4c49acc44171a27f8ca3a2`
-- Created: `2024-10-03T17:49:34Z`
+- Image ID: `sha256:21a45a0e1b1bd4dcf4ea2c55e60403bc70c391cb7d78cbe7ca7bfc4bcb50c0b2`
+- Created: `2025-01-06T23:07:46Z`
 - Virtual Size: ~ 504.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -310,13 +310,13 @@ $ apt-get source -qq --print-uris coreutils=8.32-4.1ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.32-4.1ubuntu1.2.debian.tar.xz' coreutils_8.32-4.1ubuntu1.2.debian.tar.xz 44868 SHA512:7718e917f8f2c5c5574e73a079ea8fd3b32bc898f2e12168dc3711dfdd896e4727283011050b80f65e60994fca49da031d70901d453612132764dca7dec99543
 ```
 
-### `dpkg` source package: `curl=7.81.0-1ubuntu1.18`
+### `dpkg` source package: `curl=7.81.0-1ubuntu1.20`
 
 Binary Packages:
 
-- `curl=7.81.0-1ubuntu1.18`
-- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.18`
-- `libcurl4:amd64=7.81.0-1ubuntu1.18`
+- `curl=7.81.0-1ubuntu1.20`
+- `libcurl3-gnutls:amd64=7.81.0-1ubuntu1.20`
+- `libcurl4:amd64=7.81.0-1ubuntu1.20`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -327,9 +327,15 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.81.0-1ubuntu1.20
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.20.dsc' curl_7.81.0-1ubuntu1.20.dsc 3143 SHA512:f80fd64d37020c505e09cb2dfc78061a22051095cd57e16f05708fba65279fd4e97cbd52eb1ed28d5b4acbced4849874418dde0da4b54b0511a9609da44160eb
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz' curl_7.81.0.orig.tar.gz 4188040 SHA512:e3084f0fa083f7f93eac923edbfdddb5fd0a372b94673ba9d4427a2b95508898c15ecdf63b99a1c1f6cf3215e27b06cbaa2b7073df038d43b362e586f92495d3
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0.orig.tar.gz.asc' curl_7.81.0.orig.tar.gz.asc 488 SHA512:92bc5ede831551285d67b03abe8400c609ad31c9d33e324ee5c41b92dd5c2a0245a09a396bd76807b3e44bcfef944b1e16ac266264f7b85d27cc1c072a6e82bd
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.81.0-1ubuntu1.20.debian.tar.xz' curl_7.81.0-1ubuntu1.20.debian.tar.xz 82480 SHA512:692b39e78d5334d7d052ec67ee12766ef1e3c641745dfe0c9af4f9ee62c8960ed9715155a671bf97d173ca462f06e6245d1fdcca9104291558c0bb34678afdb9
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg2-3ubuntu1.2`
 
@@ -518,19 +524,24 @@ $ apt-get source -qq --print-uris e2fsprogs=1.46.5-2ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.46.5-2ubuntu1.2.debian.tar.xz' e2fsprogs_1.46.5-2ubuntu1.2.debian.tar.xz 86604 SHA512:acb7f22a63d9c0e58d626af655cdcb6e6cfcedafdd7edbc6b7b757d1b388ee04c416db98c577a8cdf2259c46ea16a679f9be770374515b21d93bd0af66bd2a1d
 ```
 
-### `dpkg` source package: `expat=2.4.7-1ubuntu0.4`
+### `dpkg` source package: `expat=2.4.7-1ubuntu0.5`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.4.7-1ubuntu0.4`
+- `libexpat1:amd64=2.4.7-1ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris expat=2.4.7-1ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.5.dsc' expat_2.4.7-1ubuntu0.5.dsc 2141 SHA512:3af5d57b8d1fe10ff3de977c5b59b885e3f261a90a4794d7ec6f862fc2ed05fb5a4ae98e309a575c861638c79836fea43b9334468a260df35bb7e345a230324a
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7.orig.tar.gz' expat_2.4.7.orig.tar.gz 8316374 SHA512:91bc9792c4ba1d0ad835f633d8cfa62130692f48308eea8932ec5e13a01542120561b0f255b4adc58b1adae6f83632cbabf428b5b5c0d2ac6de542478a951232
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.4.7-1ubuntu0.5.debian.tar.xz' expat_2.4.7-1ubuntu0.5.debian.tar.xz 24740 SHA512:1f946e4b99b0d6182a9df7c98d27c4cdfb3ccb528fbd70c0019549480a5ff3d649050f2abdba66c51e0f165fd9b2856e248e26a085c386577dba674c49824c74
+```
 
 ### `dpkg` source package: `findutils=4.8.0-1ubuntu3`
 
@@ -680,12 +691,12 @@ $ apt-get source -qq --print-uris gdbm=1.23-1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.23-1.debian.tar.xz' gdbm_1.23-1.debian.tar.xz 18484 SHA512:e7ca0a608da94e5b5bc5949e27b794c87e032202eb09359ad55f6c1a7a6e895f01126781a4e0fbfdb8fef3de7c4a312b9d5a653aaf55ce8c5afbceb945945253
 ```
 
-### `dpkg` source package: `git=1:2.34.1-1ubuntu1.11`
+### `dpkg` source package: `git=1:2.34.1-1ubuntu1.12`
 
 Binary Packages:
 
-- `git=1:2.34.1-1ubuntu1.11`
-- `git-man=1:2.34.1-1ubuntu1.11`
+- `git=1:2.34.1-1ubuntu1.12`
+- `git-man=1:2.34.1-1ubuntu1.12`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -707,9 +718,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.34.1-1ubuntu1.12
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.12.dsc' git_2.34.1-1ubuntu1.12.dsc 2931 SHA512:e53eb08ba54de2d5fd1e5b710f3153f64b2dadebd51370edbf60abc139074ecbab76907305cd42d923d33684d1bccb7e9a5f145ddb35e0347bf5adfdf341a87c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1.orig.tar.xz' git_2.34.1.orig.tar.xz 6623760 SHA512:a1a8e9e6f64b1da25508fbd2f783564dcdbe181fb5ff1ebab3bdac6db6094e18acc334479a1abf22ac17ce4f733cc3e10a664db9ab234cd523735a3f027b42db
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.12.debian.tar.xz' git_2.34.1-1ubuntu1.12.debian.tar.xz 769996 SHA512:21095936b237e018ebd892c11b661a59670f15b21bb5c01a5bb7cfd3f52dd9c6214b51f8e554b27ec5bfad570811a861af42af59cacd21cffe3ee1204f5eacad
+```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.8`
 
