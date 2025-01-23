@@ -1,7 +1,7 @@
 ## `gradle:6-jdk8-focal`
 
 ```console
-$ docker pull gradle@sha256:8b88946616a503d90c5517c8ba4103d593180af15f84a1215e367f243e779ba2
+$ docker pull gradle@sha256:d74a454fdba77b337cd5589764ab109ea9ad4922873fea25faeb0c0d7c4fa880
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,13 +18,13 @@ $ docker pull gradle@sha256:8b88946616a503d90c5517c8ba4103d593180af15f84a1215e36
 ### `gradle:6-jdk8-focal` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:37e8b36365dd428d800d4ce396d33b8aef04b7a52fc8f2ef4c0a40179e7643cd
+$ docker pull gradle@sha256:7e5be44418ad7efdfa9b2c74ae667c59e9e256d4ac3f2c6ede38fba77e27182f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **324.8 MB (324841684 bytes)**  
+-	Total Size: **275.9 MB (275921896 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1cafd43dae4d5491f2a4f4ec153201d5a4a3bf295e892ca3ebb9bf100da851db`
+-	Image ID: `sha256:361c7d5a9b714ac6bfdfe488747a1041f0aa6a8a425d9ec452031d61047ee459`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
@@ -52,7 +52,7 @@ RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get ins
 # Thu, 18 Jan 2024 04:04:59 GMT
 ENV JAVA_VERSION=jdk8u432-b06
 # Thu, 18 Jan 2024 04:04:59 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -r "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='abaaa90deadf51bd28921453baf2992b3dff6171bb7142f5bdd14ef269f7b245';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_x64_linux_hotspot_8u432b06.tar.gz';          ;;        arm64)          ESUM='383caabc20428e9500f2e07965317ed4387a0e336104483e29a9e06eeffbf26b';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_aarch64_linux_hotspot_8u432b06.tar.gz';          ;;        armhf)          ESUM='ff1ce3f6f1cf11987ab63f278b29cf1aae799652606c547f8a590e7acbd16b61';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_arm_linux_hotspot_8u432b06.tar.gz';          apt-get update;          DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends libatomic1;          rm -rf /var/lib/apt/lists/*;          ;;        ppc64el)          ESUM='64fb17e83b79f9ad41dc18351a408bfe90324fd6360903ca5c0a740006c81be3';          BINARY_URL='https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u432-b06/OpenJDK8U-jdk_ppc64le_linux_hotspot_8u432b06.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/src.zip;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig; # buildkit
 # Thu, 18 Jan 2024 04:04:59 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "javac -version"; javac -version;     echo "java -version"; java -version;     echo "Complete." # buildkit
 # Thu, 18 Jan 2024 04:04:59 GMT
@@ -92,65 +92,65 @@ USER root
 		Last Modified: Fri, 11 Oct 2024 04:41:25 GMT  
 		Size: 27.5 MB (27511060 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f4c9980332f7322e535750a2e2683b1ba80418f1b363808c04de3372d7925a18`  
-		Last Modified: Thu, 24 Oct 2024 00:57:02 GMT  
-		Size: 20.3 MB (20256458 bytes)  
+	-	`sha256:571deb865c1063f69c78fd29305bbb51e50b9fda362e9c7beed88b8eb7e743fd`  
+		Last Modified: Wed, 22 Jan 2025 18:27:38 GMT  
+		Size: 20.3 MB (20257579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6bea8b50cebf78e368754be683c90523bf40ebbf5dec5c4e8b78b7847ce25835`  
-		Last Modified: Thu, 24 Oct 2024 00:57:04 GMT  
-		Size: 103.6 MB (103632934 bytes)  
+	-	`sha256:4bd98a02fe45b12e235814d8aded750681291fbc92e09dfe529f0d63d894893b`  
+		Last Modified: Wed, 22 Jan 2025 18:27:38 GMT  
+		Size: 54.7 MB (54710518 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5501e974c1c6bea8706311b47725b152e02c08eed3ad261c03cacadbf0a0721a`  
-		Last Modified: Thu, 24 Oct 2024 00:57:00 GMT  
-		Size: 129.0 B  
+	-	`sha256:9988e5920cd3e09522869c7522784b670fc7dbff2b43387ce6be0adecdf03729`  
+		Last Modified: Wed, 22 Jan 2025 18:27:37 GMT  
+		Size: 128.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4542904de5b1699510187d785cdf2ff22b77c8fea420357f73c566f7caebdd24`  
-		Last Modified: Thu, 24 Oct 2024 00:57:01 GMT  
+	-	`sha256:1aff10804bef040a9c5805a3c8571c6754901c2b834232f91cdccff905f2683a`  
+		Last Modified: Wed, 22 Jan 2025 18:27:38 GMT  
 		Size: 2.3 KB (2308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f81f6d0701d75691836981929bc4fad23d9651edbbd5cad17c6719768f04484`  
-		Last Modified: Thu, 24 Oct 2024 01:57:28 GMT  
-		Size: 4.3 KB (4306 bytes)  
+	-	`sha256:db38be8807af783e1ff819e366731ea5f6d906b0aae901e2735ce267aefc0509`  
+		Last Modified: Wed, 22 Jan 2025 19:36:04 GMT  
+		Size: 4.3 KB (4315 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04fe6f3e049638649e9c073e69ad0357883f0b25ff529ecd6456eaa40a2053d0`  
-		Last Modified: Thu, 24 Oct 2024 01:57:28 GMT  
-		Size: 65.3 MB (65306534 bytes)  
+	-	`sha256:bdf2856b93c5a7d7394acf91ab6a80681aa1b44670ccaeba59dcfebedcba9e87`  
+		Last Modified: Wed, 22 Jan 2025 19:36:07 GMT  
+		Size: 65.3 MB (65308045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03a91801571ffd3c359a86f4900613a21b4ba5e4fdffc2eacd83f029c0186ba4`  
-		Last Modified: Thu, 24 Oct 2024 01:57:29 GMT  
-		Size: 107.7 MB (107696643 bytes)  
+	-	`sha256:0f2e55cc28c152440fbf30cdf0b2bb25510a9ccc020c68c0c207775183ec1d7d`  
+		Last Modified: Wed, 22 Jan 2025 19:36:08 GMT  
+		Size: 107.7 MB (107696630 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:247e6d40141333e6bca9cd47c9542d66c48781fc4ef37e5ed4d509fb11281985`  
-		Last Modified: Thu, 24 Oct 2024 01:57:28 GMT  
-		Size: 431.3 KB (431280 bytes)  
+	-	`sha256:68803d2a40797c66f33ce1b9bbb49965bf9fa2cb063d36097d1412e84cd92b18`  
+		Last Modified: Wed, 22 Jan 2025 19:36:05 GMT  
+		Size: 431.3 KB (431281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:6-jdk8-focal` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:08b7214ef44ca772eb903de8f8ff75b2857d7f28199e0be6d643f168f9163506
+$ docker pull gradle@sha256:29161b72ad887296b06c5ee9ac19782e6627ede11fcb3d4a565f868228b23936
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **7.9 MB (7865411 bytes)**  
+-	Total Size: **7.9 MB (7855374 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9ee9452768f9d835a4b1fd1d2d096abb64da43f7ea5d3c19b981f1cdbe7d865e`
+-	Image ID: `sha256:49cde6a9bffd656ce58e1776e3f3b654675f6b8f547dcdb063a00c25d2125ede`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6767b2d2f242554b056c8b626073eb855a7b8a13bf4354cf3ee5cc0b2fb907a6`  
-		Last Modified: Thu, 24 Oct 2024 01:57:28 GMT  
-		Size: 7.8 MB (7844015 bytes)  
+	-	`sha256:836eb25de2a553724682e31946c4fa8f9b3d32c44ae22385490ab4a83cf03770`  
+		Last Modified: Wed, 22 Jan 2025 19:36:05 GMT  
+		Size: 7.8 MB (7833984 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:868a91ca3a548dbbbbf4f813d1e881d23bd85d39159d783511941a83093ac236`  
-		Last Modified: Thu, 24 Oct 2024 01:57:27 GMT  
-		Size: 21.4 KB (21396 bytes)  
+	-	`sha256:a75b23bb91b1b4cd4a58b42bef8f0a4f148a80462c59611da9608713b47dfaae`  
+		Last Modified: Wed, 22 Jan 2025 19:36:04 GMT  
+		Size: 21.4 KB (21390 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gradle:6-jdk8-focal` - linux; arm variant v7

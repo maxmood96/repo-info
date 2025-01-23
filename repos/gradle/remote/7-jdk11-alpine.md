@@ -1,7 +1,7 @@
 ## `gradle:7-jdk11-alpine`
 
 ```console
-$ docker pull gradle@sha256:8a6032e50b0c9eed8439661eba59afacbd5f5250ff4307a6c9c2af2705b9038d
+$ docker pull gradle@sha256:e1ca7770a526df5724e89e78eb4bb376a51e93efbd5517249f80af0419a918bf
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,19 +12,19 @@ $ docker pull gradle@sha256:8a6032e50b0c9eed8439661eba59afacbd5f5250ff4307a6c9c2
 ### `gradle:7-jdk11-alpine` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:1408eef2e3f60d8b215b617c3c09673b9824a0ae3656b78f332f0409841fbf85
+$ docker pull gradle@sha256:e8297d2e6aca32fa0517051913fda95e73e21121a93c7eddb8fa2f7fa0f8adb5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **315.5 MB (315539518 bytes)**  
+-	Total Size: **317.4 MB (317374184 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a2d7c0b16bd9facf868cca373a029df16bcefe3786c0ded5b8fab7a3761a3ff7`
+-	Image ID: `sha256:e1dd130cd288933a54a64e739c4c9586befb6edeb0ffd61e761176a557bff7bf`
 -	Entrypoint: `["\/__cacert_entrypoint.sh"]`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
 # Mon, 05 Feb 2024 22:05:50 GMT
-ADD alpine-minirootfs-3.20.5-x86_64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.21.2-x86_64.tar.gz / # buildkit
 # Mon, 05 Feb 2024 22:05:50 GMT
 CMD ["/bin/sh"]
 # Mon, 05 Feb 2024 22:05:50 GMT
@@ -38,7 +38,7 @@ RUN set -eux;     apk add --no-cache         fontconfig ttf-dejavu         gnupg
 # Mon, 05 Feb 2024 22:05:50 GMT
 ENV JAVA_VERSION=jdk-11.0.25+9
 # Mon, 05 Feb 2024 22:05:50 GMT
-RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='0a431310ccccc36c85b1274b5d31e368fdc8cf62cb7c2ed98d7b59eb5a13dc82';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.25_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -r "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
+RUN set -eux;     ARCH="$(apk --print-arch)";     case "${ARCH}" in        x86_64)          ESUM='0a431310ccccc36c85b1274b5d31e368fdc8cf62cb7c2ed98d7b59eb5a13dc82';          BINARY_URL='https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jdk_x64_alpine-linux_hotspot_11.0.25_9.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz ${JAVA_HOME}/lib/src.zip; # buildkit
 # Mon, 05 Feb 2024 22:05:50 GMT
 RUN set -eux;     echo "Verifying install ...";     fileEncoding="$(echo 'System.out.println(System.getProperty("file.encoding"))' | jshell -s -)"; [ "$fileEncoding" = 'UTF-8' ]; rm -rf ~/.java;     echo "javac --version"; javac --version;     echo "java --version"; java --version;     echo "Complete." # buildkit
 # Mon, 05 Feb 2024 22:05:50 GMT
@@ -76,67 +76,67 @@ USER root
 ```
 
 -	Layers:
-	-	`sha256:66a3d608f3fa52124f8463e9467f170c784abd549e8216aa45c6960b00b4b79b`  
-		Last Modified: Wed, 08 Jan 2025 15:55:45 GMT  
-		Size: 3.6 MB (3626260 bytes)  
+	-	`sha256:1f3e46996e2966e4faa5846e56e76e3748b7315e2ded61476c24403d592134f0`  
+		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
+		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8bd18d552b5b2b8efc2203240ebde703462dcedb34d409ed3a7e609e47c6cf1`  
-		Last Modified: Wed, 08 Jan 2025 19:16:35 GMT  
-		Size: 16.0 MB (16021948 bytes)  
+	-	`sha256:173d2d9b0a8b46032d314316667cd35f83981b340801b2eee2e4b2f5a9e1551a`  
+		Last Modified: Wed, 22 Jan 2025 18:27:50 GMT  
+		Size: 16.1 MB (16135215 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc1a3e64b06068cdb26f683841c60b92add9ed5a04bcf3ad7e41289e8cdd67d0`  
-		Last Modified: Wed, 08 Jan 2025 19:16:37 GMT  
-		Size: 140.8 MB (140775064 bytes)  
+	-	`sha256:e57e5d440f7c1441b7d1825ea8f76a92995b27246ce624f8a62a09b758d92aee`  
+		Last Modified: Wed, 22 Jan 2025 18:27:54 GMT  
+		Size: 140.8 MB (140775205 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28a71b483f59123ec8c29bff10fa34dbdd5ea7a26337913607edc9076de5ecd8`  
-		Last Modified: Wed, 08 Jan 2025 19:16:35 GMT  
-		Size: 129.0 B  
+	-	`sha256:4f2a28f11eac8e07ee789aec0651a007ebf7347f6b67af05c483b2a842c93310`  
+		Last Modified: Wed, 22 Jan 2025 18:27:48 GMT  
+		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b76fd91cfade73361c3d20a302091e5dbccfcc995c49fa142273ae711585dc7`  
-		Last Modified: Wed, 08 Jan 2025 19:16:35 GMT  
+	-	`sha256:38eec7655b90e61e589217af43d5e02f51e095291b9cedf34c5739d3c5bac5f9`  
+		Last Modified: Wed, 22 Jan 2025 18:27:49 GMT  
 		Size: 2.3 KB (2281 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b3905d3ff0841e8926f7fdb43e6cc36e018f5929ad211a4884a980658c3f9eb`  
-		Last Modified: Wed, 08 Jan 2025 20:33:04 GMT  
-		Size: 1.0 KB (1020 bytes)  
+	-	`sha256:268d928f494fc785f6b10d35224f5ed37edc2ed4b417b4d88790aa68ff02f695`  
+		Last Modified: Wed, 22 Jan 2025 19:33:20 GMT  
+		Size: 1.0 KB (1022 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4753b63c2c430d2951a017badba69f574d717e664f8659341b66c55d7c6b7799`  
-		Last Modified: Wed, 08 Jan 2025 20:33:05 GMT  
-		Size: 32.3 MB (32327370 bytes)  
+	-	`sha256:2c83a8ec52ee9752f7d3e8c8cae6c133f075807a82bd5e86b32d14283d51e316`  
+		Last Modified: Wed, 22 Jan 2025 19:33:21 GMT  
+		Size: 34.0 MB (34033154 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0d097fef7baed87434bc3c2fae9f8df7f6c820bccbd50df68b254f87d12ea90`  
-		Last Modified: Wed, 08 Jan 2025 20:33:06 GMT  
-		Size: 122.7 MB (122730501 bytes)  
+	-	`sha256:7e286e889e66c7b3e113cd7b6805bb3d3d265ae02d126e608d87f213be00b298`  
+		Last Modified: Wed, 22 Jan 2025 19:33:23 GMT  
+		Size: 122.7 MB (122730520 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74f9cb97084b7a6ef7ed673096aa35f4adbc61aaed50c2438cbefd81e7f42364`  
-		Last Modified: Wed, 08 Jan 2025 20:33:04 GMT  
-		Size: 54.9 KB (54913 bytes)  
+	-	`sha256:813b2848753242130e79ffa5b901f12270646b52a4c33caf90adedcfe0c3e3e7`  
+		Last Modified: Wed, 22 Jan 2025 19:33:21 GMT  
+		Size: 54.9 KB (54910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:7-jdk11-alpine` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:c7265b6c0a4408187b681b09d34c017b246efc1be887f26f317e6ec4449616ff
+$ docker pull gradle@sha256:e01c70f51d183c7430b1c75c53d75a8f14cea6c12541d196b391316f0f530b27
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.2 MB (3171269 bytes)**  
+-	Total Size: **3.2 MB (3185207 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:58f5a875f7aaca97a1b85f6884101e58debdce558be267228cf48b954b2cf636`
+-	Image ID: `sha256:491e3471facdc0fbb2ed7b0145d5f9f993d364b3c51740fd0bffbbfd43a40842`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7692275a66e235f7373df268e08b98d450438157e9306bc0d9c0140eb100f08e`  
-		Last Modified: Wed, 08 Jan 2025 20:33:05 GMT  
-		Size: 3.2 MB (3150671 bytes)  
+	-	`sha256:cdf0bca5cd1889b1f657b36aff6272dc37468b697f84634cd7bd83bac0bf99d7`  
+		Last Modified: Wed, 22 Jan 2025 19:33:20 GMT  
+		Size: 3.2 MB (3164608 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9a2b55983d3e1af3fa0d8027bf2cbc58d9ac7be41918c856428799f7841c4035`  
-		Last Modified: Wed, 08 Jan 2025 20:33:04 GMT  
-		Size: 20.6 KB (20598 bytes)  
+	-	`sha256:c84cc0ff064c450d4fd9e2a961ecddc162d670134048126a02f609ec0879e2c1`  
+		Last Modified: Wed, 22 Jan 2025 19:33:20 GMT  
+		Size: 20.6 KB (20599 bytes)  
 		MIME: application/vnd.in-toto+json
