@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f6e73407cdb20fcf8a73fb904a00de100b12db9f4f7a4ed420933272b0b256e1`
-- Created: `2025-01-15T00:26:19Z`
-- Virtual Size: ~ 637.76 Mb  
+- Image ID: `sha256:64fca3d840a176bb07958db2ea8621ffade54267f67337f07d60cbc0b6755fe0`
+- Created: `2025-01-23T00:31:52Z`
+- Virtual Size: ~ 637.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -611,11 +611,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `curl=7.88.1-10+deb12u8`
 - `libcurl3-gnutls:amd64=7.88.1-10+deb12u8`
-- `libcurl4:amd64=7.88.1-10+deb12u8`
 
-Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl3-gnutls/copyright`, `/usr/share/doc/libcurl4/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcurl3-gnutls/copyright`)
 
 - `BSD-3-Clause`
 - `BSD-3-clause`
