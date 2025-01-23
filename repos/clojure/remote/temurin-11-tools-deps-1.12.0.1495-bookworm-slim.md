@@ -1,7 +1,7 @@
 ## `clojure:temurin-11-tools-deps-1.12.0.1495-bookworm-slim`
 
 ```console
-$ docker pull clojure@sha256:e190ec4c6bf2a496cebd9911e6cbc358581b46840e416e5ca1c121df64baaae4
+$ docker pull clojure@sha256:289aaefdf21c828051d5389d314f5325725b9773b7edfabd370308093c8dc08e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull clojure@sha256:e190ec4c6bf2a496cebd9911e6cbc358581b46840e416e5ca1c
 ### `clojure:temurin-11-tools-deps-1.12.0.1495-bookworm-slim` - linux; amd64
 
 ```console
-$ docker pull clojure@sha256:2199da3b6c09f9b9175ae3380534ce7eb70a9993581a9be30eb417b8f59a1d9e
+$ docker pull clojure@sha256:8dee0489b2a3c24308cebfd21928f59ab59b690adc600f181758ef8769af4af0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **243.3 MB (243340845 bytes)**  
+-	Total Size: **243.3 MB (243341117 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ffb6565abba837cd6df9b289bf23a80243da89b6e216fd155fcb86e4b632451b`
+-	Image ID: `sha256:e4b7f5f01487f58a1beacd9f7ac87058763a244229f1e8a4b87d205df2c5993a`
 -	Default Command: `["clj"]`
 
 ```dockerfile
@@ -49,45 +49,45 @@ CMD ["clj"]
 		Last Modified: Tue, 14 Jan 2025 01:33:13 GMT  
 		Size: 28.2 MB (28212417 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5b57b4fddd52a48f0fa0bde1db09f6be8fe397f77bdd0b2fc63343897bd8f0e`  
-		Last Modified: Tue, 14 Jan 2025 02:43:50 GMT  
-		Size: 145.6 MB (145601501 bytes)  
+	-	`sha256:905b1c3da988c994ef048fdfd571442bb0b1e16dfe9656f29ac0cdb3a9aa70e1`  
+		Last Modified: Wed, 22 Jan 2025 19:42:21 GMT  
+		Size: 145.6 MB (145601449 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93f1fd8439302c81d90b358d764e34f9c1504f6a2850b978ba121c3035e8538e`  
-		Last Modified: Tue, 14 Jan 2025 02:43:49 GMT  
-		Size: 69.5 MB (69526283 bytes)  
+	-	`sha256:1be5288df7a2b0eadf53218138b06b31dd8b80c02d005d1dcb7ae2da2b3de676`  
+		Last Modified: Wed, 22 Jan 2025 19:42:25 GMT  
+		Size: 69.5 MB (69526607 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc2a02652b6e46557fa17175cbff94f6fddbdfe7c5a4eeb63c30ad06648dd0f0`  
-		Last Modified: Tue, 14 Jan 2025 02:43:48 GMT  
+	-	`sha256:8c27714c032aedbe087d816ccce94ccc1d0688432e91a4db687cbff08de0b4e8`  
+		Last Modified: Wed, 22 Jan 2025 19:42:19 GMT  
 		Size: 612.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-tools-deps-1.12.0.1495-bookworm-slim` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:4bcb4726c159e377ed736b3b71200e3f808ba63c2b6563dcde26ae665d715959
+$ docker pull clojure@sha256:2af3721e6bbb54856615e0c481555ca651129903d0fb00b056656d5a598a8787
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4947018 bytes)**  
+-	Total Size: **4.9 MB (4947017 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bcaaee634bfacd3f2022664f45935a940f296581ea2deb3d1603f0f3505a4f45`
+-	Image ID: `sha256:f296c832f4489f7d4cf2afa1bf068956a4a0403fc69fb03551997d1503dbf426`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e8e1a54657a168a88e53ed447b0155f3dd062a7a08fbbd45daef92268aeccfb8`  
-		Last Modified: Tue, 14 Jan 2025 02:43:48 GMT  
+	-	`sha256:c190653ac373abcf1ce7dee0d4a1064743e547c357bfa380827a2f09a180c7ae`  
+		Last Modified: Wed, 22 Jan 2025 19:42:19 GMT  
 		Size: 4.9 MB (4932708 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5b869c03580381a3f7b0e847ab78cc1137d6b4a3fbb7fa3b9b2ed77ccc52392b`  
-		Last Modified: Tue, 14 Jan 2025 02:43:48 GMT  
-		Size: 14.3 KB (14310 bytes)  
+	-	`sha256:0478d80567038fea1e57d40568f64f7b660df08d57c0d86a384f4ba568205000`  
+		Last Modified: Wed, 22 Jan 2025 19:42:19 GMT  
+		Size: 14.3 KB (14309 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `clojure:temurin-11-tools-deps-1.12.0.1495-bookworm-slim` - linux; arm64 variant v8
