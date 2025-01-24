@@ -1,7 +1,7 @@
 ## `maven:3-amazoncorretto-8`
 
 ```console
-$ docker pull maven@sha256:1a20866ffdaceec4ad9af43430cf0e3b5c23ad5815992a5c869aa4bb5cd9efc6
+$ docker pull maven@sha256:62cb9416c2dd0269d7c759f46fadccd895e2e6416d8025e8e24ab18fc992d77a
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull maven@sha256:1a20866ffdaceec4ad9af43430cf0e3b5c23ad5815992a5c869aa
 ### `maven:3-amazoncorretto-8` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:65299f459ca1b68f8bc82070bb32f02eef95e4147bed7699c4cee0ac86798e35
+$ docker pull maven@sha256:cf11b6dc591e18a743a9016c53db246f0d3bf21dce450e6bd3be9711736491c8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **330.7 MB (330714515 bytes)**  
+-	Total Size: **330.7 MB (330732078 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:09a560566b18509cd308a163f01800a401f419a454498a4fea174cdfabf7dbf0`
+-	Image ID: `sha256:a9a2aa5f3268796e0bbf484a84e0efc6b49ebc5796cd6acb0de1e5f7a2c144d3`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -30,9 +30,9 @@ COPY /rootfs/ / # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 CMD ["/bin/bash"]
 # Tue, 20 Aug 2024 18:12:59 GMT
-ARG version=1.8.0_432.b06-1
+ARG version=1.8.0_442.b06-1
 # Tue, 20 Aug 2024 18:12:59 GMT
-# ARGS: version=1.8.0_432.b06-1
+# ARGS: version=1.8.0_442.b06-1
 RUN set -eux     && export GNUPGHOME="$(mktemp -d)"     && curl -fL -o corretto.key https://yum.corretto.aws/corretto.key     && gpg --batch --import corretto.key     && gpg --batch --export --armor '6DC3636DAE534049C8B94623A122542AB04F24E3' > corretto.key     && rpm --import corretto.key     && rm -r "$GNUPGHOME" corretto.key     && curl -fL -o /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo     && grep -q '^gpgcheck=1' /etc/yum.repos.d/corretto.repo     && echo "priority=9" >> /etc/yum.repos.d/corretto.repo     && yum install -y java-1.8.0-amazon-corretto-devel-$version     && (find /usr/lib/jvm/java-1.8.0-amazon-corretto -name src.zip -delete || true)     && yum install -y fontconfig     && yum clean all # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV LANG=C.UTF-8
@@ -77,56 +77,56 @@ CMD ["mvn"]
 		Last Modified: Fri, 10 Jan 2025 22:01:24 GMT  
 		Size: 62.6 MB (62635830 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f41f411e0d334645f31261059c924866a66afcdef7098bc359491a78469d619f`  
-		Last Modified: Sat, 11 Jan 2025 02:29:08 GMT  
-		Size: 75.6 MB (75562527 bytes)  
+	-	`sha256:d1ff49cdf0051001697eb997ff2a321133bbf5d184ed54b92c88e3d268844908`  
+		Last Modified: Thu, 23 Jan 2025 18:27:10 GMT  
+		Size: 75.6 MB (75572040 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e368e69d1c7da60eeb156b4f216930b00ec6cd79f8a575b22d3f4063369f1b9`  
-		Last Modified: Wed, 22 Jan 2025 20:35:02 GMT  
-		Size: 153.3 MB (153285221 bytes)  
+	-	`sha256:9e24c3d1df952c789d99c9596c4ecfe6ad3457382d06b3583085b64832450d97`  
+		Last Modified: Thu, 23 Jan 2025 19:27:32 GMT  
+		Size: 153.3 MB (153293123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3bd86027683f10ccf3e067c8be4b170b505b716bfcc6f4d7aae9c7ebb8ab8ea9`  
-		Last Modified: Wed, 22 Jan 2025 20:35:00 GMT  
-		Size: 30.1 MB (30059460 bytes)  
+	-	`sha256:6593d00b485390a9653154e0a5d4f9ce5a5949ca60ca276db679e5a62547f105`  
+		Last Modified: Thu, 23 Jan 2025 19:27:30 GMT  
+		Size: 30.1 MB (30059608 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9505c837fc38b2d357748231893ec3681a1364a40c4cd912ee2b89ea71cb5fc`  
-		Last Modified: Wed, 22 Jan 2025 20:35:00 GMT  
-		Size: 9.2 MB (9170434 bytes)  
+	-	`sha256:02533194fe2c520aff865eb8895297da6df699be675c8b0f86b87c4008a34254`  
+		Last Modified: Thu, 23 Jan 2025 19:27:30 GMT  
+		Size: 9.2 MB (9170433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62551c6ca8d885cf67658c631cef27e403a05dea61e04d87bb03212a96a8c67c`  
-		Last Modified: Wed, 22 Jan 2025 20:34:59 GMT  
-		Size: 851.0 B  
+	-	`sha256:4f6ddb1ce76986f28c594572d49d2cccdc3feab4f8f6e9135fa32bbee4d97716`  
+		Last Modified: Thu, 23 Jan 2025 19:27:29 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0e62f4d4e6a4d6e8c8d023a33937ea279925c208df37282c0918dc904b05bf3`  
-		Last Modified: Wed, 22 Jan 2025 20:35:01 GMT  
-		Size: 160.0 B  
+	-	`sha256:2979139418c600971d30934e070caee8e0b08577f2085d98d8806d314fe66a94`  
+		Last Modified: Thu, 23 Jan 2025 19:27:31 GMT  
+		Size: 159.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-amazoncorretto-8` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:cae37942fe4ee92361c1ab316f6b15d12fedcb6bc1385beaf0d6eaaebdf84e1a
+$ docker pull maven@sha256:38a72cef3a4dc6214d8a11cc9439b7d67a59f372079872a5093885c215eae2a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **6.8 MB (6767540 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f7b7f89a8a937b83b9dfa2781a133f9ce87c7546b6dafc7ac97ef9b88dacbd8`
+-	Image ID: `sha256:022e1e0ba54738b69d12a04c2cf8af70b81c104efdf6bf15af89bccf84a7a8f1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c82cf32ccea75bd1bcc75f3518ab2f8baa60eefe3dd5fd8446204c667ff508ec`  
-		Last Modified: Wed, 22 Jan 2025 20:35:00 GMT  
+	-	`sha256:03d0c0f677c6934491197f0c913c635e25d849475c1d314766371214f792bbe2`  
+		Last Modified: Thu, 23 Jan 2025 19:27:29 GMT  
 		Size: 6.7 MB (6749321 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c6bef468b967ca25dae9dfcc7652b1a95943c3985699809abd7733635f1c71b1`  
-		Last Modified: Wed, 22 Jan 2025 20:34:59 GMT  
+	-	`sha256:e27e733de6f49b958de4fac5017be9a740562aaa3b911748b0846b2bd8f30634`  
+		Last Modified: Thu, 23 Jan 2025 19:27:29 GMT  
 		Size: 18.2 KB (18219 bytes)  
 		MIME: application/vnd.in-toto+json
 
