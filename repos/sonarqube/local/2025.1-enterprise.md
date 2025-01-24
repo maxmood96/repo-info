@@ -1,14 +1,13 @@
-# `sonarqube:10.8.1-datacenter-search`
+# `sonarqube:2025.1.0-enterprise`
 
 ## Docker Metadata
 
-- Image ID: `sha256:59cc841dfa1fcf9d2e4bec7a0044c9e5691d90f3eb00d5e9f2474b2da9310327`
-- Created: `2025-01-07T15:07:53Z`
-- Virtual Size: ~ 1.41 Gb  
+- Image ID: `sha256:8856336061f549428695ae7a7b77d04a056e6d2e44f1f285042939ae0d83a5a6`
+- Created: `2025-01-20T15:15:41Z`
+- Virtual Size: ~ 1.45 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/opt/sonarqube/docker/run.sh"]`
-- Command: `["/opt/sonarqube/docker/sonar.sh"]`
+- Entrypoint: `["/opt/sonarqube/docker/entrypoint.sh"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
@@ -18,19 +17,17 @@
   - `JAVA_VERSION=jdk-17.0.13+11`
   - `DOCKER_RUNNING=true`
   - `SONARQUBE_HOME=/opt/sonarqube`
-  - `SONAR_VERSION=10.8.1.101195`
+  - `SONAR_VERSION=2025.1.0.102418`
   - `SQ_DATA_DIR=/opt/sonarqube/data`
   - `SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions`
   - `SQ_LOGS_DIR=/opt/sonarqube/logs`
   - `SQ_TEMP_DIR=/opt/sonarqube/temp`
-  - `SONAR_CLUSTER_NODE_TYPE=search`
-  - `SONAR_CLUSTER_ENABLED=true`
   - `ES_TMPDIR=/opt/sonarqube/temp`
 - Labels:
-  - `io.k8s.description=SonarQube is a self-managed, automatic code review tool that systematically helps you deliver Clean Code.`
+  - `io.k8s.description=SonarQube Server is a self-managed, automatic code review tool that systematically helps you deliver Clean Code.`
   - `io.openshift.min-cpu=400m`
   - `io.openshift.min-memory=2048M`
-  - `io.openshift.non-scalable=false`
+  - `io.openshift.non-scalable=true`
   - `io.openshift.tags=sonarqube,static-code-analysis,code-quality,clean-code`
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.url=https://github.com/SonarSource/docker-sonarqube`

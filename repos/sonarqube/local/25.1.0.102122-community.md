@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:78b14e602462cc8273b80bb913877fde9db6f7e00f05689a29881c87d7653d31`
-- Created: `2025-01-07T15:07:53Z`
+- Image ID: `sha256:405a86197fd70e59f9985caa7a6f39126128bba081b8497c38b55870f32f033d`
+- Created: `2025-01-20T15:15:41Z`
 - Virtual Size: ~ 1.17 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -24,7 +24,7 @@
   - `SQ_TEMP_DIR=/opt/sonarqube/temp`
   - `ES_TMPDIR=/opt/sonarqube/temp`
 - Labels:
-  - `io.k8s.description=SonarQube is a self-managed, automatic code review tool that systematically helps you deliver Clean Code.`
+  - `io.k8s.description=SonarQube Community Build is a self-managed, automatic code review tool that systematically helps you deliver Clean Code.`
   - `io.openshift.min-cpu=400m`
   - `io.openshift.min-memory=2048M`
   - `io.openshift.non-scalable=true`
