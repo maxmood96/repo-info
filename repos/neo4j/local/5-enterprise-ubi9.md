@@ -1,9 +1,9 @@
-# `neo4j:5.26.0-enterprise-ubi9`
+# `neo4j:5.26.1-enterprise-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:377b1ffdfd4e24f25b3fb8240102fc87f9821dd3b430880d5db0983a1df6d541`
-- Created: `2024-12-09T12:11:17Z`
+- Image ID: `sha256:1bb4967c321091f13fbd664ac973129b49eb45c69df4f76d626208377b7e66a7`
+- Created: `2025-01-20T15:28:28Z`
 - Virtual Size: ~ 962.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,8 +12,8 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `NEO4J_SHA256=6a753836adb5bd3a355a32a8f0b1c4dd5509aeba22c50a027be1e0e9553175e8`
-  - `NEO4J_TARBALL=neo4j-enterprise-5.26.0-unix.tar.gz`
+  - `NEO4J_SHA256=1d28455cb116029973d2d51726e3c8afd02d5aa50f6f0bd423298917e958a452`
+  - `NEO4J_TARBALL=neo4j-enterprise-5.26.1-unix.tar.gz`
   - `NEO4J_EDITION=enterprise`
   - `NEO4J_HOME=/var/lib/neo4j`
   - `LANG=C.UTF-8`
@@ -640,12 +640,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA
 
-Source:
-
-```console
-$ dnf --quiet download --source --url java-17-openjdk-headless-17.0.13.0.11-4.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/j/java-17-openjdk-17.0.13.0.11-4.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `javapackages-filesystem-6.0.0-7.el9_5.noarch`
 
