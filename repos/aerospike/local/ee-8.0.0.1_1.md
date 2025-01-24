@@ -1,10 +1,10 @@
-# `aerospike:ee-7.2.0.6`
+# `aerospike:ee-8.0.0.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b056f2b65497745a011072d57c409d4b7b23189e0332d5600be421eacd0b3879`
-- Created: `2025-01-03T06:32:37Z`
-- Virtual Size: ~ 212.56 Mb  
+- Image ID: `sha256:d84b8d309b875f9ede221d285bb1ceb89299a6749dc6c0366bb72d9dd3adf500`
+- Created: `2025-01-23T07:00:10Z`
+- Virtual Size: ~ 213.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/bin/as-tini-static","-r","SIGUSR1","-t","SIGTERM","--","/entrypoint.sh"]`
@@ -20,4 +20,4 @@
   - `org.opencontainers.image.title=Aerospike Enterprise Server`
   - `org.opencontainers.image.url=https://github.com/aerospike/aerospike-server.docker`
   - `org.opencontainers.image.vendor=Aerospike`
-  - `org.opencontainers.image.version=7.2.0.6`
+  - `org.opencontainers.image.version=8.0.0.1`
