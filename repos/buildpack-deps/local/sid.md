@@ -731,21 +731,13 @@ Licenses: (parsed from: `/usr/share/doc/libdav1d-dev/copyright`, `/usr/share/doc
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dav1d=1.5.0-1
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.0-1.dsc' dav1d_1.5.0-1.dsc 2290 SHA256:bb791b7898b9ba9f5c14da44dc0f7d06cb67b475888a83d357afc52e17a2671c
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.0.orig.tar.xz' dav1d_1.5.0.orig.tar.xz 1017040 SHA256:14bd6f5157808ed9aedcafbe50df689d304fd4810ac20be6eec1ab037436afd6
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.0.orig.tar.xz.asc' dav1d_1.5.0.orig.tar.xz.asc 195 SHA256:9cf6cb0a814a94816de7a5186fbf2fe089e5eb16a1937ad6114adc99cff37f9d
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.0-1.debian.tar.xz' dav1d_1.5.0-1.debian.tar.xz 8456 SHA256:5587e4c5e122831b08e126e54064e9c69892c6007fe05f5d8e4743b36ddfdf1f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dav1d/1.5.0-1/
 
-- https://sources.debian.net/src/dav1d/1.5.0-1/ (for browsing the source)
-- https://sources.debian.net/src/dav1d/1.5.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dav1d/1.5.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db-defaults=5.3.4`
 
@@ -1495,20 +1487,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.47.1-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.47.1-1.dsc' git_2.47.1-1.dsc 2699 SHA256:16ee300a13117273cc35e0c0a3e3a07e07fcbe6fc42f2a064ca517ccbe99988a
-'http://deb.debian.org/debian/pool/main/g/git/git_2.47.1.orig.tar.xz' git_2.47.1.orig.tar.xz 7654244 SHA256:f3d8f9bb23ae392374e91cd9d395970dabc5b9c5ee72f39884613cd84a6ed310
-'http://deb.debian.org/debian/pool/main/g/git/git_2.47.1-1.debian.tar.xz' git_2.47.1-1.debian.tar.xz 792776 SHA256:c63f56f414f8bf711c53ad9b5716296b4ecf508de39f429736f8c3510eca3942
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.47.1-1/
 
-- https://sources.debian.net/src/git/1:2.47.1-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.47.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.47.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.82.4-1`
 
@@ -1905,21 +1890,13 @@ Licenses: (parsed from: `/usr/share/doc/hicolor-icon-theme/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris hicolor-icon-theme=0.18-1
-'http://deb.debian.org/debian/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.18-1.dsc' hicolor-icon-theme_0.18-1.dsc 2325 SHA256:97e0afba92378c0bf4bfeb5d10e9cc3a811811e7b23f712bd6e18b46f0f0d7c3
-'http://deb.debian.org/debian/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.18.orig.tar.xz' hicolor-icon-theme_0.18.orig.tar.xz 29624 SHA256:db0e50a80aa3bf64bb45cbca5cf9f75efd9348cf2ac690b907435238c3cf81d7
-'http://deb.debian.org/debian/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.18.orig.tar.xz.asc' hicolor-icon-theme_0.18.orig.tar.xz.asc 833 SHA256:0fe29ecd5d445805e33b33d7ff35813eabab2100806c06dd002efd35b37fb855
-'http://deb.debian.org/debian/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.18-1.debian.tar.xz' hicolor-icon-theme_0.18-1.debian.tar.xz 9100 SHA256:659512f9e592c31feef303069315f0052987ee619609a741c41a2dc820592608
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/hicolor-icon-theme/0.18-1/
 
-- https://sources.debian.net/src/hicolor-icon-theme/0.18-1/ (for browsing the source)
-- https://sources.debian.net/src/hicolor-icon-theme/0.18-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/hicolor-icon-theme/0.18-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.25`
 
@@ -5831,19 +5808,13 @@ Licenses: (parsed from: `/usr/share/doc/x11-common/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xorg=1:7.7+23.2
-'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7%2b23.2.dsc' xorg_7.7+23.2.dsc 1662 SHA256:84f7783614c04a455ebdd342c37d5df18bda0bcd9f821a661a40811acc411d50
-'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7%2b23.2.tar.gz' xorg_7.7+23.2.tar.gz 292797 SHA256:cd924c9c0ceda151cfaaed0ef5564ca7ec234cdb4fa3f09599f916db05827275
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/xorg/1:7.7+23.2/
 
-- https://sources.debian.net/src/xorg/1:7.7+23.2/ (for browsing the source)
-- https://sources.debian.net/src/xorg/1:7.7+23.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xorg/1:7.7+23.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xorgproto=2024.1-1`
 

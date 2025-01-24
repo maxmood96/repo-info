@@ -912,20 +912,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.47.1-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.47.1-1.dsc' git_2.47.1-1.dsc 2699 SHA256:16ee300a13117273cc35e0c0a3e3a07e07fcbe6fc42f2a064ca517ccbe99988a
-'http://deb.debian.org/debian/pool/main/g/git/git_2.47.1.orig.tar.xz' git_2.47.1.orig.tar.xz 7654244 SHA256:f3d8f9bb23ae392374e91cd9d395970dabc5b9c5ee72f39884613cd84a6ed310
-'http://deb.debian.org/debian/pool/main/g/git/git_2.47.1-1.debian.tar.xz' git_2.47.1-1.debian.tar.xz 792776 SHA256:c63f56f414f8bf711c53ad9b5716296b4ecf508de39f429736f8c3510eca3942
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.47.1-1/
 
-- https://sources.debian.net/src/git/1:2.47.1-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.47.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.47.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.40-5`
 
