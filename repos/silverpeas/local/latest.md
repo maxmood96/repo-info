@@ -5266,14 +5266,9 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`)
 - `ZLIB`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjpeg2=2.4.0-6ubuntu0.2
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjpeg2/openjpeg2_2.4.0-6ubuntu0.2.dsc' openjpeg2_2.4.0-6ubuntu0.2.dsc 2738 SHA512:e3f2c2bddac38c91f67913f33ae7a0ce90581e7b81c597c4f73a4a47efb662c4fbddcc3a93e5494f78431b531a23aef1f45ff9728bddcb0dfc613dde51693566
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjpeg2/openjpeg2_2.4.0.orig.tar.xz' openjpeg2_2.4.0.orig.tar.xz 1396964 SHA512:717ead13e0805d52138bedef1a77d51b676c5a2b882ca7f2206b665b3ba5ea2b435fd81c09780e6c1f14400a49c82fcd1eb2cbea1e1d207b541e98797ecd684f
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjpeg2/openjpeg2_2.4.0-6ubuntu0.2.debian.tar.xz' openjpeg2_2.4.0-6ubuntu0.2.debian.tar.xz 23196 SHA512:6205dbb08b6f7311a943b62bc419e9b1d9e2f2f90e08f0d632c685a71332563657e02fea7e70a53ea2c949cbd99f1d4993c304d265e2cb71e0eca43b402b7316
-```
 
 ### `dpkg` source package: `openldap=2.5.18+dfsg-0ubuntu0.22.04.2`
 
@@ -5400,9 +5395,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris pam=1.4.0-11ubuntu2.4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.4.dsc' pam_1.4.0-11ubuntu2.4.dsc 2728 SHA512:6f0a003b6b3032683e02e6441bd2d9bcd4e9d9e36d2909bccda271dfdfc09bc0932f54f910c3fefebef49d31a2d95315b9d2cd31ea9793ce67fcb00052dec8d1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA512:26eda95c45598a500bc142da4d1abf93d03b3bbb0f2390fa87c72dcbffa208dbfa115c0b411095c31ee9955e36422ccf3e2df3bd486818fafffef8c4310798c4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.4.debian.tar.xz' pam_1.4.0-11ubuntu2.4.debian.tar.xz 169452 SHA512:b5e0a07d9bc19ea43e9f209ad4a4971de32cee61784477b90162d81f387070efa877462002a51e0806f7d49bcdd6c9a25cdbcc84716f3d75ed8194c9bce642b0
+'http://security.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.4.dsc' pam_1.4.0-11ubuntu2.4.dsc 2728 SHA512:6f0a003b6b3032683e02e6441bd2d9bcd4e9d9e36d2909bccda271dfdfc09bc0932f54f910c3fefebef49d31a2d95315b9d2cd31ea9793ce67fcb00052dec8d1
+'http://security.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA512:26eda95c45598a500bc142da4d1abf93d03b3bbb0f2390fa87c72dcbffa208dbfa115c0b411095c31ee9955e36422ccf3e2df3bd486818fafffef8c4310798c4
+'http://security.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.4.debian.tar.xz' pam_1.4.0-11ubuntu2.4.debian.tar.xz 169452 SHA512:b5e0a07d9bc19ea43e9f209ad4a4971de32cee61784477b90162d81f387070efa877462002a51e0806f7d49bcdd6c9a25cdbcc84716f3d75ed8194c9bce642b0
 ```
 
 ### `dpkg` source package: `pango1.0=1.50.6+ds-2ubuntu1`
