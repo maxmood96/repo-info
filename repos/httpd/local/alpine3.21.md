@@ -1,18 +1,18 @@
-# `httpd:2.4.62-alpine`
+# `httpd:2.4.63-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6c3093f0301abd805468fb1a1fbcedc6b374f94a4a005a88f637f386f19b9d12`
-- Created: `2024-12-11T09:53:12Z`
-- Virtual Size: ~ 63.80 Mb  
+- Image ID: `sha256:9f1f788190b8c133b08243a4ab9e4c13dc1515e09af59025a40bdfbd8a21c44a`
+- Created: `2025-01-24T00:31:17Z`
+- Virtual Size: ~ 63.79 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["httpd-foreground"]`
 - Environment:
   - `PATH=/usr/local/apache2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `HTTPD_PREFIX=/usr/local/apache2`
-  - `HTTPD_VERSION=2.4.62`
-  - `HTTPD_SHA256=674188e7bf44ced82da8db522da946849e22080d73d16c93f7f4df89e25729ec`
+  - `HTTPD_VERSION=2.4.63`
+  - `HTTPD_SHA256=88fc236ab99b2864b248de7d49a008ec2afd7551e64dce8b95f58f32f94c46ab`
   - `HTTPD_PATCHES=`
 
 ## `apk` (`.apk`-based packages)
@@ -462,16 +462,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.40.2-r4 description:
+libuuid-2.40.4-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.40.2-r4 webpage:
+libuuid-2.40.4-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.40.2-r4 installed size:
+libuuid-2.40.4-r0 installed size:
 29 KiB
 
-libuuid-2.40.2-r4 license:
+libuuid-2.40.4-r0 license:
 BSD-3-Clause
 
 ```
@@ -581,16 +581,16 @@ BSD-3-Clause
 ### `apk` package: `perl`
 
 ```console
-perl-5.40.0-r3 description:
+perl-5.40.1-r0 description:
 Larry Wall's Practical Extraction and Report Language
 
-perl-5.40.0-r3 webpage:
+perl-5.40.1-r0 webpage:
 https://www.perl.org/
 
-perl-5.40.0-r3 installed size:
+perl-5.40.1-r0 installed size:
 36 MiB
 
-perl-5.40.0-r3 license:
+perl-5.40.1-r0 license:
 Artistic-1.0-Perl OR GPL-1.0-or-later
 
 ```
