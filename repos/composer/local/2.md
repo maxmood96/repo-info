@@ -1,9 +1,9 @@
-# `composer:2.8.4`
+# `composer:2.8.5`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7b3068ed6d9d3483b75a985d9810de4e9f01aa7e5b0ed9d6a07d961341ff3b9f`
-- Created: `2024-12-12T08:30:55Z`
+- Image ID: `sha256:a2dd842c8d61fc5dde27cf5a19f32cfa49574bda107f4eaf4109e35e12602908`
+- Created: `2025-01-21T21:13:43Z`
 - Virtual Size: ~ 200.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=5c42173cbde7d0add8249c2e8a0c19ae271f41d8c47d67d72bdf91a88dcc7e4b`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=2.8.4`
+  - `COMPOSER_VERSION=2.8.5`
 
 ## `apk` (`.apk`-based packages)
 
