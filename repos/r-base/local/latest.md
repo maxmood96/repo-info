@@ -3075,10 +3075,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris rmatrix=1.7-1-1
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.7-1-1.dsc' rmatrix_1.7-1-1.dsc 1860 SHA256:df99e963a6303e43882e1ab2ea44807bfa392ca28af5ca82cd4de673f9f78c10
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.7-1.orig.tar.gz' rmatrix_1.7-1.orig.tar.gz 2480082 SHA256:a2cabbf04e4e2cafbd0a04281f130bb58e4f7653a91951368a404ef8682b38a1
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.7-1-1.debian.tar.xz' rmatrix_1.7-1-1.debian.tar.xz 6068 SHA256:a5632c6829dfe7967b728d10cf3ab2a5d2f56601f962da225a94044ca7c06dbe
+'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-1-1.dsc' rmatrix_1.7-1-1.dsc 1860 SHA256:df99e963a6303e43882e1ab2ea44807bfa392ca28af5ca82cd4de673f9f78c10
+'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-1.orig.tar.gz' rmatrix_1.7-1.orig.tar.gz 2480082 SHA256:a2cabbf04e4e2cafbd0a04281f130bb58e4f7653a91951368a404ef8682b38a1
+'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-1-1.debian.tar.xz' rmatrix_1.7-1-1.debian.tar.xz 6068 SHA256:a5632c6829dfe7967b728d10cf3ab2a5d2f56601f962da225a94044ca7c06dbe
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/rmatrix/1.7-1-1/ (for browsing the source)
+- https://sources.debian.net/src/rmatrix/1.7-1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/rmatrix/1.7-1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpart=4.1.24-1`
 
@@ -3650,9 +3656,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris xorg=1:7.7+23.2
-'http://http.debian.net/debian/pool/main/x/xorg/xorg_7.7%2b23.2.dsc' xorg_7.7+23.2.dsc 1662 SHA256:84f7783614c04a455ebdd342c37d5df18bda0bcd9f821a661a40811acc411d50
-'http://http.debian.net/debian/pool/main/x/xorg/xorg_7.7%2b23.2.tar.gz' xorg_7.7+23.2.tar.gz 292797 SHA256:cd924c9c0ceda151cfaaed0ef5564ca7ec234cdb4fa3f09599f916db05827275
+'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7%2b23.2.dsc' xorg_7.7+23.2.dsc 1662 SHA256:84f7783614c04a455ebdd342c37d5df18bda0bcd9f821a661a40811acc411d50
+'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7%2b23.2.tar.gz' xorg_7.7+23.2.tar.gz 292797 SHA256:cd924c9c0ceda151cfaaed0ef5564ca7ec234cdb4fa3f09599f916db05827275
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/xorg/1:7.7+23.2/ (for browsing the source)
+- https://sources.debian.net/src/xorg/1:7.7+23.2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xorg/1:7.7+23.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xxhash=0.8.2-2`
 
