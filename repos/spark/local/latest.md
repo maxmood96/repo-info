@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2fc3af1a9238e30cf55457e2a026f61c38ffcd466e62a2fe7d2470254a0dc677`
+- Image ID: `sha256:561013ebcc1bde58b1532297803c4c0583cafda1c4afe60367d1267d1349134b`
 - Created: `2024-12-22T05:28:31Z`
-- Virtual Size: ~ 982.87 Mb  
+- Virtual Size: ~ 982.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/entrypoint.sh"]`
@@ -187,12 +187,12 @@ $ apt-get source -qq --print-uris bash=5.0-6ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0-6ubuntu1.2.debian.tar.xz' bash_5.0-6ubuntu1.2.debian.tar.xz 75200 SHA512:50de22a6cd140fcb95eca9172e9927a4eeddd90bfbd23072d5e209db1675f331716dfd54ef3281caa7020e3fa1aef9ca7caafc6a8d3067741b1ae41f7dff7724
 ```
 
-### `dpkg` source package: `bind9=1:9.18.28-0ubuntu0.20.04.1`
+### `dpkg` source package: `bind9=1:9.18.30-0ubuntu0.20.04.1`
 
 Binary Packages:
 
-- `bind9-host=1:9.18.28-0ubuntu0.20.04.1`
-- `bind9-libs:amd64=1:9.18.28-0ubuntu0.20.04.1`
+- `bind9-host=1:9.18.30-0ubuntu0.20.04.1`
+- `bind9-libs:amd64=1:9.18.30-0ubuntu0.20.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/bind9-host/copyright`, `/usr/share/doc/bind9-libs/copyright`)
 
@@ -206,11 +206,11 @@ Licenses: (parsed from: `/usr/share/doc/bind9-host/copyright`, `/usr/share/doc/b
 Source:
 
 ```console
-$ apt-get source -qq --print-uris bind9=1:9.18.28-0ubuntu0.20.04.1
-'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28-0ubuntu0.20.04.1.dsc' bind9_9.18.28-0ubuntu0.20.04.1.dsc 3181 SHA512:eccd6c8a6efed4a4b876a28478b702c6c7bd468bda2f2a114e7cdd8b9f1889182bd40b944edc28bd9986800c813d8b9799f191b6558e554a6f08fc57958a9a53
-'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28.orig.tar.xz' bind9_9.18.28.orig.tar.xz 5533340 SHA512:19ba625f155c60dd821e3afe52adf3897b3e81289320282b3f43d604af1e7d4e67fafb98a9849782684935008bcd148f190e05234d501aa056daa6724e0119bb
-'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28.orig.tar.xz.asc' bind9_9.18.28.orig.tar.xz.asc 833 SHA512:e6efe2a9995cabd70c1d2e8e4cb97a9a146e3289d75cfdc81ff8052329db3dd920b9f8f6ad0f1552a0e4e776b01fb077edd5f3d4ea3461952f71dda64574d640
-'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28-0ubuntu0.20.04.1.debian.tar.xz' bind9_9.18.28-0ubuntu0.20.04.1.debian.tar.xz 85136 SHA512:8a45e3ad74c9b78ca6ac15e4b6f6f3c3379dae123ed2f318884b67a30f335b4aa49a35c00d0c8434fa5a3e3d4231f8ad06d46441047c30cb9935af6c54bc4fae
+$ apt-get source -qq --print-uris bind9=1:9.18.30-0ubuntu0.20.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.30-0ubuntu0.20.04.1.dsc' bind9_9.18.30-0ubuntu0.20.04.1.dsc 3218 SHA512:8f6b676db426c5cb4b914faf846d319cd99ec4395188aa234f724df67bc7b49c590829d9c71b91c2bde4eecc87262071b130c67796f81673084a6f10f9811019
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.30.orig.tar.xz' bind9_9.18.30.orig.tar.xz 5569784 SHA512:7a7d4524cf7449bdd215c4139f2345644dbcd6e009e841702beb58223ebda82ba2e46a291cf51c9c76c37781a1d89fc7c8a526763b7c3b3e43f47ee3d1a6e142
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.30.orig.tar.xz.asc' bind9_9.18.30.orig.tar.xz.asc 833 SHA512:b419e36f6ed5afef72df64283926f45c1c0a7a375258079a92b4ae11726316a74981a5072928f708a2fd8b07108051abec65dbe6a84ab4ecfb015120d1ff375c
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.30-0ubuntu0.20.04.1.debian.tar.xz' bind9_9.18.30-0ubuntu0.20.04.1.debian.tar.xz 85564 SHA512:e077d9f5145420d1b980e0fa04fcfccd2f45844f7649c3f2b6b32b8ae9c2b9087583f5ce198e373817e3624424f3d44c6ac875b97e4deda0a57b013167cfd577
 ```
 
 ### `dpkg` source package: `binutils=2.34-6ubuntu1.9`
@@ -354,12 +354,12 @@ $ apt-get source -qq --print-uris coreutils=8.30-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.30-3ubuntu2.debian.tar.xz' coreutils_8.30-3ubuntu2.debian.tar.xz 39636 SHA256:98204ef9d94e5c567880cd0245fdb7940eaf7592d6c6830c300ad117628b351f
 ```
 
-### `dpkg` source package: `curl=7.68.0-1ubuntu2.24`
+### `dpkg` source package: `curl=7.68.0-1ubuntu2.25`
 
 Binary Packages:
 
-- `curl=7.68.0-1ubuntu2.24`
-- `libcurl4:amd64=7.68.0-1ubuntu2.24`
+- `curl=7.68.0-1ubuntu2.25`
+- `libcurl4:amd64=7.68.0-1ubuntu2.25`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -370,9 +370,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.25
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.25.dsc' curl_7.68.0-1ubuntu2.25.dsc 2737 SHA512:662f204efe6ad8fce4c4115cc6788c96084be2989440dbfd38ebf9cd02114581b237e8ac8caa555489b5d5bb55a84eb7b84f071e3f5bc52e36e94e098b4a9313
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.25.debian.tar.xz' curl_7.68.0-1ubuntu2.25.debian.tar.xz 77412 SHA512:ed0c6526b6b35fd16a4264cf89cf9008585b7fb6785a36506b31bb9834285567aed856712967215e4f5e0e3a2cf917a70f8de9c83a1f5c6582b1042f5ebff16d
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
 
@@ -2505,17 +2510,17 @@ $ apt-get source -qq --print-uris python3-stdlib-extensions=3.8.10-0ubuntu1~20.0
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.8.10-0ubuntu1%7e20.04.debian.tar.xz' python3-stdlib-extensions_3.8.10-0ubuntu1~20.04.debian.tar.xz 24508 SHA512:ca4894ddf04e5f89c46183271e65978c4dadd90faac196e13600797b9b451356cea2a0ee2c1d25e82a11b4e192fc11c2125b533035cf75e8e28ff7fdc792c695
 ```
 
-### `dpkg` source package: `python3.8=3.8.10-0ubuntu1~20.04.13`
+### `dpkg` source package: `python3.8=3.8.10-0ubuntu1~20.04.14`
 
 Binary Packages:
 
-- `libpython3.8:amd64=3.8.10-0ubuntu1~20.04.13`
-- `libpython3.8-dev:amd64=3.8.10-0ubuntu1~20.04.13`
-- `libpython3.8-minimal:amd64=3.8.10-0ubuntu1~20.04.13`
-- `libpython3.8-stdlib:amd64=3.8.10-0ubuntu1~20.04.13`
-- `python3.8=3.8.10-0ubuntu1~20.04.13`
-- `python3.8-dev=3.8.10-0ubuntu1~20.04.13`
-- `python3.8-minimal=3.8.10-0ubuntu1~20.04.13`
+- `libpython3.8:amd64=3.8.10-0ubuntu1~20.04.14`
+- `libpython3.8-dev:amd64=3.8.10-0ubuntu1~20.04.14`
+- `libpython3.8-minimal:amd64=3.8.10-0ubuntu1~20.04.14`
+- `libpython3.8-stdlib:amd64=3.8.10-0ubuntu1~20.04.14`
+- `python3.8=3.8.10-0ubuntu1~20.04.14`
+- `python3.8-dev=3.8.10-0ubuntu1~20.04.14`
+- `python3.8-minimal=3.8.10-0ubuntu1~20.04.14`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.8/copyright`, `/usr/share/doc/libpython3.8-dev/copyright`, `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/share/doc/libpython3.8-stdlib/copyright`, `/usr/share/doc/python3.8/copyright`, `/usr/share/doc/python3.8-dev/copyright`, `/usr/share/doc/python3.8-minimal/copyright`)
 
@@ -2537,9 +2542,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.8/copyright`, `/usr/share/doc
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.8=3.8.10-0ubuntu1~20.04.14
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.14.dsc' python3.8_3.8.10-0ubuntu1~20.04.14.dsc 3508 SHA512:88d9a091375e25d83ec3d6cd2ce52f3c6bb25ca2db52bd3fc5810b7c18da831582abfc2b6fa57e59711909929ff5241adcc40559f4149135eb22310260e55e2e
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10.orig.tar.xz' python3.8_3.8.10.orig.tar.xz 18433456 SHA512:0be69705483ff9692e12048a96180e586f9d84c8d53066629f7fb2389585eb75c0f3506bb8182936e322508f58b71f4d8c6dfebbab9049b31b49da11d3b98e80
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.14.debian.tar.xz' python3.8_3.8.10-0ubuntu1~20.04.14.debian.tar.xz 249652 SHA512:c9ca86b90f5c6221fa229770471698703bb9455b6d82665d9d9d5319b8ff92d2b267ad0d2bd75b37eb9c3921b115f767e49e6ba714e80e70abde4c104e2fb1b6
+```
 
 ### `dpkg` source package: `readline=8.0-4`
 

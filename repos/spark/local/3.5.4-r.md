@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2998c2688f56ab275c485eff517554782450e4e81626f1af5c533666e50f0979`
+- Image ID: `sha256:d18f58b985ade48a934f9c103e20f3d6fd5be67d0734e83119bd97b4e9d1480f`
 - Created: `2024-12-22T05:28:31Z`
 - Virtual Size: ~ 1.32 Gb  
   (total size of all layers on-disk)
@@ -211,12 +211,12 @@ $ apt-get source -qq --print-uris bash=5.0-6ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0-6ubuntu1.2.debian.tar.xz' bash_5.0-6ubuntu1.2.debian.tar.xz 75200 SHA512:50de22a6cd140fcb95eca9172e9927a4eeddd90bfbd23072d5e209db1675f331716dfd54ef3281caa7020e3fa1aef9ca7caafc6a8d3067741b1ae41f7dff7724
 ```
 
-### `dpkg` source package: `bind9=1:9.18.28-0ubuntu0.20.04.1`
+### `dpkg` source package: `bind9=1:9.18.30-0ubuntu0.20.04.1`
 
 Binary Packages:
 
-- `bind9-host=1:9.18.28-0ubuntu0.20.04.1`
-- `bind9-libs:amd64=1:9.18.28-0ubuntu0.20.04.1`
+- `bind9-host=1:9.18.30-0ubuntu0.20.04.1`
+- `bind9-libs:amd64=1:9.18.30-0ubuntu0.20.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/bind9-host/copyright`, `/usr/share/doc/bind9-libs/copyright`)
 
@@ -230,11 +230,11 @@ Licenses: (parsed from: `/usr/share/doc/bind9-host/copyright`, `/usr/share/doc/b
 Source:
 
 ```console
-$ apt-get source -qq --print-uris bind9=1:9.18.28-0ubuntu0.20.04.1
-'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28-0ubuntu0.20.04.1.dsc' bind9_9.18.28-0ubuntu0.20.04.1.dsc 3181 SHA512:eccd6c8a6efed4a4b876a28478b702c6c7bd468bda2f2a114e7cdd8b9f1889182bd40b944edc28bd9986800c813d8b9799f191b6558e554a6f08fc57958a9a53
-'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28.orig.tar.xz' bind9_9.18.28.orig.tar.xz 5533340 SHA512:19ba625f155c60dd821e3afe52adf3897b3e81289320282b3f43d604af1e7d4e67fafb98a9849782684935008bcd148f190e05234d501aa056daa6724e0119bb
-'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28.orig.tar.xz.asc' bind9_9.18.28.orig.tar.xz.asc 833 SHA512:e6efe2a9995cabd70c1d2e8e4cb97a9a146e3289d75cfdc81ff8052329db3dd920b9f8f6ad0f1552a0e4e776b01fb077edd5f3d4ea3461952f71dda64574d640
-'http://security.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.28-0ubuntu0.20.04.1.debian.tar.xz' bind9_9.18.28-0ubuntu0.20.04.1.debian.tar.xz 85136 SHA512:8a45e3ad74c9b78ca6ac15e4b6f6f3c3379dae123ed2f318884b67a30f335b4aa49a35c00d0c8434fa5a3e3d4231f8ad06d46441047c30cb9935af6c54bc4fae
+$ apt-get source -qq --print-uris bind9=1:9.18.30-0ubuntu0.20.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.30-0ubuntu0.20.04.1.dsc' bind9_9.18.30-0ubuntu0.20.04.1.dsc 3218 SHA512:8f6b676db426c5cb4b914faf846d319cd99ec4395188aa234f724df67bc7b49c590829d9c71b91c2bde4eecc87262071b130c67796f81673084a6f10f9811019
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.30.orig.tar.xz' bind9_9.18.30.orig.tar.xz 5569784 SHA512:7a7d4524cf7449bdd215c4139f2345644dbcd6e009e841702beb58223ebda82ba2e46a291cf51c9c76c37781a1d89fc7c8a526763b7c3b3e43f47ee3d1a6e142
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.30.orig.tar.xz.asc' bind9_9.18.30.orig.tar.xz.asc 833 SHA512:b419e36f6ed5afef72df64283926f45c1c0a7a375258079a92b4ae11726316a74981a5072928f708a2fd8b07108051abec65dbe6a84ab4ecfb015120d1ff375c
+'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.30-0ubuntu0.20.04.1.debian.tar.xz' bind9_9.18.30-0ubuntu0.20.04.1.debian.tar.xz 85564 SHA512:e077d9f5145420d1b980e0fa04fcfccd2f45844f7649c3f2b6b32b8ae9c2b9087583f5ce198e373817e3624424f3d44c6ac875b97e4deda0a57b013167cfd577
 ```
 
 ### `dpkg` source package: `binutils=2.34-6ubuntu1.9`
@@ -457,12 +457,12 @@ $ apt-get source -qq --print-uris coreutils=8.30-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.30-3ubuntu2.debian.tar.xz' coreutils_8.30-3ubuntu2.debian.tar.xz 39636 SHA256:98204ef9d94e5c567880cd0245fdb7940eaf7592d6c6830c300ad117628b351f
 ```
 
-### `dpkg` source package: `curl=7.68.0-1ubuntu2.24`
+### `dpkg` source package: `curl=7.68.0-1ubuntu2.25`
 
 Binary Packages:
 
-- `curl=7.68.0-1ubuntu2.24`
-- `libcurl4:amd64=7.68.0-1ubuntu2.24`
+- `curl=7.68.0-1ubuntu2.25`
+- `libcurl4:amd64=7.68.0-1ubuntu2.25`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4/copyright`)
 
@@ -473,9 +473,14 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `other`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris curl=7.68.0-1ubuntu2.25
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.25.dsc' curl_7.68.0-1ubuntu2.25.dsc 2737 SHA512:662f204efe6ad8fce4c4115cc6788c96084be2989440dbfd38ebf9cd02114581b237e8ac8caa555489b5d5bb55a84eb7b84f071e3f5bc52e36e94e098b4a9313
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0.orig.tar.gz' curl_7.68.0.orig.tar.gz 4096350 SHA512:58b42c08b1cf4cb6e68f8e469d5b5f6298eebe286ba2677ad29e1a7eefd15b8609af54544f4c5a7dadebbd3b23bd77700830f2f60fbea7ae3f2f306e640010b0
+'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.68.0-1ubuntu2.25.debian.tar.xz' curl_7.68.0-1ubuntu2.25.debian.tar.xz 77412 SHA512:ed0c6526b6b35fd16a4264cf89cf9008585b7fb6785a36506b31bb9834285567aed856712967215e4f5e0e3a2cf917a70f8de9c83a1f5c6582b1042f5ebff16d
+```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.27+dfsg-2ubuntu0.1`
 
@@ -693,19 +698,24 @@ $ apt-get source -qq --print-uris elfutils=0.176-1.1ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.176-1.1ubuntu0.1.debian.tar.xz' elfutils_0.176-1.1ubuntu0.1.debian.tar.xz 33216 SHA512:4c1bb3baf2b1b32cb7be3f5369d310d76b8e331118fac6c9b367e18994fd6ee3aae684691dd1287019a7e35c35b6e9e5f45f8176762266ccd5e98de0e618531a
 ```
 
-### `dpkg` source package: `expat=2.2.9-1ubuntu0.7`
+### `dpkg` source package: `expat=2.2.9-1ubuntu0.8`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.2.9-1ubuntu0.7`
+- `libexpat1:amd64=2.2.9-1ubuntu0.8`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris expat=2.2.9-1ubuntu0.8
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1ubuntu0.8.dsc' expat_2.2.9-1ubuntu0.8.dsc 2109 SHA512:fa4d85bed1c8967c9c8889a560a031d45c1d5ef6bf8abee5c57944e9748ef8c721394ab4f031d2fa011b57eabed0deb3513b509486cfa14396f918ba2764e788
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9.orig.tar.gz' expat_2.2.9.orig.tar.gz 8273174 SHA512:e274fa7f30630450cb3ca681b266d765dbb7f5d00d1275ff9d9b2e2f6e1095893b8af4e3f4172ae6297c7a8a831a0a6becd484fe4bcdca09c37922f630780ef0
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1ubuntu0.8.debian.tar.xz' expat_2.2.9-1ubuntu0.8.debian.tar.xz 30356 SHA512:e919ddd7eac8c2a9b7b41d835106e80aa5dafca9fc89f9f8349f5f2c33ee8d5897e99dd6cdfa0216ecc62676310a98a20ee2b3874585fe5628fb557fe55f3155
+```
 
 ### `dpkg` source package: `fakeroot=1.24-1`
 
