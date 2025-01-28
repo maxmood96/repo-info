@@ -1,7 +1,7 @@
 ## `python:alpine`
 
 ```console
-$ docker pull python@sha256:b6f01a01e34091438a29b6dda4664199e34731fb2581ebb6fe255a2ebf441099
+$ docker pull python@sha256:f9d772b2b40910ee8de2ac2b15ff740b5f26b37fc811f6ada28fce71a2542b0e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24,35 +24,35 @@ $ docker pull python@sha256:b6f01a01e34091438a29b6dda4664199e34731fb2581ebb6fe25
 ### `python:alpine` - linux; amd64
 
 ```console
-$ docker pull python@sha256:59b935dc28398059a4f8ec346bdbb90917085bfe14c5c673ea5c47fddfeb4110
+$ docker pull python@sha256:c940794ac3161ac4626b189b56cfed5bbaacc5fbcbaab302876b673b8732b976
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.6 MB (16591351 bytes)**  
+-	Total Size: **16.6 MB (16589939 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0a5bfb768070b1903a3e7e2900f9183d0065d820fa3dcfbe3c0dfb6654ebc90a`
+-	Image ID: `sha256:d5cb4e1bd67fdd3a7a98818042be60114918cc26f28c759163bd2b0517712fe3`
 -	Default Command: `["python3"]`
 
 ```dockerfile
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-x86_64.tar.gz / # buildkit
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
 RUN set -eux; 	apk add --no-cache 		ca-certificates 		tzdata 	; # buildkit
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
 ENV GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
 ENV PYTHON_VERSION=3.13.1
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
 ENV PYTHON_SHA256=9cf9427bee9e2242e3877dd0f6b641c1853ca461f39d6503ce260a59c80bf0d9
-# Thu, 05 Dec 2024 13:19:52 GMT
-RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gnupg 		tar 		xz 				bluez-dev 		bzip2-dev 		dpkg-dev dpkg 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		openssl-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		util-linux-dev 		xz-dev 		zlib-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	echo "$PYTHON_SHA256 *python.tar.xz" | sha256sum -c -; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-option-checking=fatal 		--enable-shared 		--with-lto 		--with-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --no-network --virtual .python-rundeps 	; 	apk del --no-network .build-deps; 		export PYTHONDONTWRITEBYTECODE=1; 	python3 --version; 	pip3 --version # buildkit
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
+RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gnupg 		tar 		xz 				bluez-dev 		bzip2-dev 		dpkg-dev dpkg 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		openssl-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		util-linux-dev 		xz-dev 		zlib-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	echo "$PYTHON_SHA256 *python.tar.xz" | sha256sum -c -; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-option-checking=fatal 		--enable-shared 		--with-lto 		--with-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	test "$gnuArch" != 'i686-linux-gnu' && EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --no-network --virtual .python-rundeps 	; 	apk del --no-network .build-deps; 		export PYTHONDONTWRITEBYTECODE=1; 	python3 --version; 	pip3 --version # buildkit
+# Fri, 17 Jan 2025 12:35:53 GMT
 RUN set -eux; 	for src in idle3 pip3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
 CMD ["python3"]
 ```
 
@@ -61,41 +61,41 @@ CMD ["python3"]
 		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
 		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8a862d332164437997f94a48a55e4a936dceeefdfe0fd05c46d2c9870a74c07a`  
-		Last Modified: Wed, 08 Jan 2025 18:23:20 GMT  
-		Size: 458.8 KB (458751 bytes)  
+	-	`sha256:7486ee1cd0b33ed93151ce1d3f73254a0987b484773adb31f37fe42bad78ba63`  
+		Last Modified: Fri, 24 Jan 2025 19:35:39 GMT  
+		Size: 458.8 KB (458769 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b112603475e1131289cfe42ace4443b4e764c7b69a7f792d2529cb349fa6c407`  
-		Last Modified: Wed, 08 Jan 2025 18:23:20 GMT  
-		Size: 12.5 MB (12490637 bytes)  
+	-	`sha256:b7c174cb6c8cb4276eaff5e9ebfb56eb7124be68c8fcb4518cb5eb6b18245cf5`  
+		Last Modified: Fri, 24 Jan 2025 19:35:39 GMT  
+		Size: 12.5 MB (12489203 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b9cdd0abfb159ba8501bec56423ea963db34458b8736d28607431219013b2a17`  
-		Last Modified: Wed, 08 Jan 2025 18:23:20 GMT  
-		Size: 248.0 B  
+	-	`sha256:2109cea89a773ab9365659a6a63a1b7d8be1f7be6031112a429533bd7ba07f68`  
+		Last Modified: Fri, 24 Jan 2025 19:35:38 GMT  
+		Size: 252.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `python:alpine` - unknown; unknown
 
 ```console
-$ docker pull python@sha256:cd104ae95bdcf18019308c1f75a568f42fb413fec5e74017550d6c1ce0e5825e
+$ docker pull python@sha256:a66aa38b5a4098589e66118be28da973a491c16b8948b278c4293352a45ca96d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **643.0 KB (643004 bytes)**  
+-	Total Size: **643.8 KB (643764 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fff5b9c47980b0e2c0ee0472031aba5cc25647ebc7cc336971b5f9046ee239c4`
+-	Image ID: `sha256:8dc391927e0208c9a9e6d1b10738adb1d4e49122e36e87930108df2dcc4903f4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b724e52df117e527308f1e7f63ccce44c0bf2227107bfd5782ad62e6bb6794c1`  
-		Last Modified: Wed, 08 Jan 2025 18:23:20 GMT  
+	-	`sha256:3289206d3359e32185a76e1ef7c6b047277dbab0e125045c7697d3afa49e2501`  
+		Last Modified: Fri, 24 Jan 2025 19:35:38 GMT  
 		Size: 621.3 KB (621289 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:992897d869459e903a162e96f05c943b9576323f8fec53a423bf1cd363bb47b7`  
-		Last Modified: Wed, 08 Jan 2025 18:23:20 GMT  
-		Size: 21.7 KB (21715 bytes)  
+	-	`sha256:ee3e2e7b363aa88f8a1216767e313aeb9d8f02e373e9e0be653a01d6bf8e2da9`  
+		Last Modified: Fri, 24 Jan 2025 19:35:38 GMT  
+		Size: 22.5 KB (22475 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `python:alpine` - linux; arm variant v6
@@ -251,35 +251,35 @@ $ docker pull python@sha256:d400062aaad2ff91241cccf48979709ffc86fbd242c34e91330b
 ### `python:alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull python@sha256:00338399af162ef8df922427c3765c712e2615d6c0de59611df9c9c4b35693b6
+$ docker pull python@sha256:2ca73fb0e20474bb0af6b578e3ba62517b3539e7e1411638138fc3252f41da0e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.9 MB (16949225 bytes)**  
+-	Total Size: **17.0 MB (16959602 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac9eec4db20fe3e3daa4435a1885a1e2e68dd51b3e1f1d0ab7a7618aab0b60af`
+-	Image ID: `sha256:c5e755e72acff3fa9878e2a75817dfeed4deb1dc14e3b64c4407165fea95061a`
 -	Default Command: `["python3"]`
 
 ```dockerfile
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-aarch64.tar.gz / # buildkit
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
 RUN set -eux; 	apk add --no-cache 		ca-certificates 		tzdata 	; # buildkit
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
 ENV GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
 ENV PYTHON_VERSION=3.13.1
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
 ENV PYTHON_SHA256=9cf9427bee9e2242e3877dd0f6b641c1853ca461f39d6503ce260a59c80bf0d9
-# Thu, 05 Dec 2024 13:19:52 GMT
-RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gnupg 		tar 		xz 				bluez-dev 		bzip2-dev 		dpkg-dev dpkg 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		openssl-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		util-linux-dev 		xz-dev 		zlib-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	echo "$PYTHON_SHA256 *python.tar.xz" | sha256sum -c -; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-option-checking=fatal 		--enable-shared 		--with-lto 		--with-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --no-network --virtual .python-rundeps 	; 	apk del --no-network .build-deps; 		export PYTHONDONTWRITEBYTECODE=1; 	python3 --version; 	pip3 --version # buildkit
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
+RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gnupg 		tar 		xz 				bluez-dev 		bzip2-dev 		dpkg-dev dpkg 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		openssl-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		util-linux-dev 		xz-dev 		zlib-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	echo "$PYTHON_SHA256 *python.tar.xz" | sha256sum -c -; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-option-checking=fatal 		--enable-shared 		--with-lto 		--with-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	test "$gnuArch" != 'i686-linux-gnu' && EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --no-network --virtual .python-rundeps 	; 	apk del --no-network .build-deps; 		export PYTHONDONTWRITEBYTECODE=1; 	python3 --version; 	pip3 --version # buildkit
+# Fri, 17 Jan 2025 12:35:53 GMT
 RUN set -eux; 	for src in idle3 pip3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
 CMD ["python3"]
 ```
 
@@ -292,71 +292,71 @@ CMD ["python3"]
 		Last Modified: Thu, 09 Jan 2025 04:15:13 GMT  
 		Size: 460.8 KB (460837 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5563124400db93cc61de171e1ac0800d2dd387ae27f4e45637f3301a0574e4b1`  
-		Last Modified: Thu, 09 Jan 2025 04:28:03 GMT  
-		Size: 12.5 MB (12495780 bytes)  
+	-	`sha256:9e7104bcbebe4088951d616b089d9b407ad30bbeb110f8d8ee4447df58e33d5f`  
+		Last Modified: Fri, 24 Jan 2025 21:39:06 GMT  
+		Size: 12.5 MB (12506157 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c59c3262a39259d7d7ae734d4a34e21326821f8e19ec3968bb2ba655fd1a8015`  
-		Last Modified: Thu, 09 Jan 2025 04:28:02 GMT  
+	-	`sha256:646ab5f7ca64b565bae4a1b4a4180f0cbdf3ca0dd983cdabf2f6e2ca042ddc9d`  
+		Last Modified: Fri, 24 Jan 2025 21:39:06 GMT  
 		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `python:alpine` - unknown; unknown
 
 ```console
-$ docker pull python@sha256:3c6a691b9b98f27ee9495184aa76f649f121aee7beba1bb0b483752b7bb444aa
+$ docker pull python@sha256:a7c0f74acda0c22cde61c3ba6e079a2ede0b0fe5230010d40412c82ffc199628
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **643.3 KB (643292 bytes)**  
+-	Total Size: **644.0 KB (644050 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:11e71f448ce0fc7bae47f0105f976330d704fe1772521827984af50900e4e3e5`
+-	Image ID: `sha256:39665b4ab795b6a5277799ebf89cdb3e00ee511268f012672aeb3ded1b6c2a48`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:de748218dcaf71d2648e12cbb6d88c310465a07d871d283084bc955529188d30`  
-		Last Modified: Thu, 09 Jan 2025 04:28:03 GMT  
+	-	`sha256:20ff0ac79a35f9f31039a9ef858b500984fbf77cb9ab06dcc93d795f34d57869`  
+		Last Modified: Fri, 24 Jan 2025 21:39:06 GMT  
 		Size: 621.4 KB (621393 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:baa8496c79d1a36abb4b21ca4572cff5a7f84e8bc62a48c905436237b31e8257`  
-		Last Modified: Thu, 09 Jan 2025 04:28:02 GMT  
-		Size: 21.9 KB (21899 bytes)  
+	-	`sha256:c86570e6b5fa1ff92b9c8cee5f1b3f80f7505f765f739f3dd616f89c604af24f`  
+		Last Modified: Fri, 24 Jan 2025 21:39:06 GMT  
+		Size: 22.7 KB (22657 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `python:alpine` - linux; 386
 
 ```console
-$ docker pull python@sha256:56888c6db1942b8f52afe0fc729dd750fe98dc90b6a0be50d2cb42ac6ed3f568
+$ docker pull python@sha256:a504c1473265d42dbb8955b6f21ef90a5a1cf012d55f6c3f80bf06c927449c4d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **16.7 MB (16659725 bytes)**  
+-	Total Size: **16.4 MB (16400467 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed5910e630486141b2e5f73def0d8b651f41c47e821c16adadb3892c80fe3fad`
+-	Image ID: `sha256:8d63b4ab02cea2d84b80580e2321a481bfc947385dad9d1cd0b88e516530d53c`
 -	Default Command: `["python3"]`
 
 ```dockerfile
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-x86.tar.gz / # buildkit
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
 ENV PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
 RUN set -eux; 	apk add --no-cache 		ca-certificates 		tzdata 	; # buildkit
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
 ENV GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
 ENV PYTHON_VERSION=3.13.1
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
 ENV PYTHON_SHA256=9cf9427bee9e2242e3877dd0f6b641c1853ca461f39d6503ce260a59c80bf0d9
-# Thu, 05 Dec 2024 13:19:52 GMT
-RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gnupg 		tar 		xz 				bluez-dev 		bzip2-dev 		dpkg-dev dpkg 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		openssl-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		util-linux-dev 		xz-dev 		zlib-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	echo "$PYTHON_SHA256 *python.tar.xz" | sha256sum -c -; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-option-checking=fatal 		--enable-shared 		--with-lto 		--with-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --no-network --virtual .python-rundeps 	; 	apk del --no-network .build-deps; 		export PYTHONDONTWRITEBYTECODE=1; 	python3 --version; 	pip3 --version # buildkit
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
+RUN set -eux; 		apk add --no-cache --virtual .build-deps 		gnupg 		tar 		xz 				bluez-dev 		bzip2-dev 		dpkg-dev dpkg 		findutils 		gcc 		gdbm-dev 		libc-dev 		libffi-dev 		libnsl-dev 		libtirpc-dev 		linux-headers 		make 		ncurses-dev 		openssl-dev 		pax-utils 		readline-dev 		sqlite-dev 		tcl-dev 		tk 		tk-dev 		util-linux-dev 		xz-dev 		zlib-dev 	; 		wget -O python.tar.xz "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz"; 	echo "$PYTHON_SHA256 *python.tar.xz" | sha256sum -c -; 	wget -O python.tar.xz.asc "https://www.python.org/ftp/python/${PYTHON_VERSION%%[a-z]*}/Python-$PYTHON_VERSION.tar.xz.asc"; 	GNUPGHOME="$(mktemp -d)"; export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$GPG_KEY"; 	gpg --batch --verify python.tar.xz.asc python.tar.xz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" python.tar.xz.asc; 	mkdir -p /usr/src/python; 	tar --extract --directory /usr/src/python --strip-components=1 --file python.tar.xz; 	rm python.tar.xz; 		cd /usr/src/python; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-loadable-sqlite-extensions 		--enable-option-checking=fatal 		--enable-shared 		--with-lto 		--with-ensurepip 	; 	nproc="$(nproc)"; 	EXTRA_CFLAGS="-DTHREAD_STACK_SIZE=0x100000"; 	LDFLAGS="${LDFLAGS:--Wl},--strip-all"; 	test "$gnuArch" != 'i686-linux-gnu' && EXTRA_CFLAGS="${EXTRA_CFLAGS:-} -fno-omit-frame-pointer -mno-omit-leaf-frame-pointer"; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:-}" 	; 	rm python; 	make -j "$nproc" 		"EXTRA_CFLAGS=${EXTRA_CFLAGS:-}" 		"LDFLAGS=${LDFLAGS:--Wl},-rpath='\$\$ORIGIN/../lib'" 		python 	; 	make install; 		cd /; 	rm -rf /usr/src/python; 		find /usr/local -depth 		\( 			\( -type d -a \( -name test -o -name tests -o -name idle_test \) \) 			-o \( -type f -a \( -name '*.pyc' -o -name '*.pyo' -o -name 'libpython*.a' \) \) 		\) -exec rm -rf '{}' + 	; 		find /usr/local -type f -executable -not \( -name '*tkinter*' \) -exec scanelf --needed --nobanner --format '%n#p' '{}' ';' 		| tr ',' '\n' 		| sort -u 		| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 		| xargs -rt apk add --no-network --virtual .python-rundeps 	; 	apk del --no-network .build-deps; 		export PYTHONDONTWRITEBYTECODE=1; 	python3 --version; 	pip3 --version # buildkit
+# Fri, 17 Jan 2025 12:35:53 GMT
 RUN set -eux; 	for src in idle3 pip3 pydoc3 python3 python3-config; do 		dst="$(echo "$src" | tr -d 3)"; 		[ -s "/usr/local/bin/$src" ]; 		[ ! -e "/usr/local/bin/$dst" ]; 		ln -svT "$src" "/usr/local/bin/$dst"; 	done # buildkit
-# Thu, 05 Dec 2024 13:19:52 GMT
+# Fri, 17 Jan 2025 12:35:53 GMT
 CMD ["python3"]
 ```
 
@@ -365,41 +365,41 @@ CMD ["python3"]
 		Last Modified: Wed, 08 Jan 2025 17:23:36 GMT  
 		Size: 3.5 MB (3463126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59acc65d8d3b609c5ff8caeec1f3b39e90b6ef14b55b4d174da8bcef3eec5cb8`  
-		Last Modified: Wed, 08 Jan 2025 18:19:33 GMT  
-		Size: 459.2 KB (459187 bytes)  
+	-	`sha256:a1d2e7f61ec036a94d47f09a2b2a29df6168d9300f2d23ef1a976ebeda83bcbf`  
+		Last Modified: Fri, 24 Jan 2025 19:36:00 GMT  
+		Size: 459.2 KB (459183 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2e644070b127f8893e9865b703660b6fe363203ab039ef6127ff32c9e446ed20`  
-		Last Modified: Wed, 08 Jan 2025 18:19:34 GMT  
-		Size: 12.7 MB (12737164 bytes)  
+	-	`sha256:7c1f343b1934a4de6b058fb8cc7d3187472f5d3debbf43434f18f285d726dbac`  
+		Last Modified: Fri, 24 Jan 2025 19:36:00 GMT  
+		Size: 12.5 MB (12477909 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c30b9c6c7df112c0cf687dac15a643ffe50649c5294062ecb9729cbac06c67b`  
-		Last Modified: Wed, 08 Jan 2025 18:19:33 GMT  
-		Size: 248.0 B  
+	-	`sha256:fc2f53107d59fc5f07b5dd9b7a45a294483e9744a821f829d340f022e6f864c2`  
+		Last Modified: Fri, 24 Jan 2025 19:36:00 GMT  
+		Size: 249.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `python:alpine` - unknown; unknown
 
 ```console
-$ docker pull python@sha256:5903be024060c852d6f8603c343708910de6d10805494201c931d5015b31f588
+$ docker pull python@sha256:02b92e89d13e4c614e010cbf07a04777f6fc52f579165b1e449fd8a9a18c7fb8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **642.9 KB (642905 bytes)**  
+-	Total Size: **643.7 KB (643663 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64fdbb8061b2b84ec87cb5c669247c50bf51c4762ea15fa876811a00890dc6a7`
+-	Image ID: `sha256:8d6b0c26675b6740d29d5f2f4cf756e710e3e3b5d83e7538c808cead65534ad0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ffd6e1eac001730c26570bed6d4a21610adcc991af71a98303105442904fa252`  
-		Last Modified: Wed, 08 Jan 2025 18:19:33 GMT  
+	-	`sha256:9ec4e20719a6a2b5030de59a36e6f58c7b174fb0d8af342c9f8021eedb52266f`  
+		Last Modified: Fri, 24 Jan 2025 19:36:00 GMT  
 		Size: 621.2 KB (621244 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c99cdd32dc43d0251f492ce60755680968e7bc26ed05f9c08e6e44e77520561f`  
-		Last Modified: Wed, 08 Jan 2025 18:19:33 GMT  
-		Size: 21.7 KB (21661 bytes)  
+	-	`sha256:89f4178e080b5e9f6cf1f532d603e07c8cbe40ec8d20115eecb36ce73d08faed`  
+		Last Modified: Fri, 24 Jan 2025 19:36:00 GMT  
+		Size: 22.4 KB (22419 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `python:alpine` - linux; ppc64le
