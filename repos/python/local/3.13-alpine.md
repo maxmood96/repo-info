@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0a5bfb768070b1903a3e7e2900f9183d0065d820fa3dcfbe3c0dfb6654ebc90a`
-- Created: `2024-12-05T13:19:52Z`
-- Virtual Size: ~ 44.88 Mb  
+- Image ID: `sha256:d5cb4e1bd67fdd3a7a98818042be60114918cc26f28c759163bd2b0517712fe3`
+- Created: `2025-01-17T12:35:53Z`
+- Virtual Size: ~ 44.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
@@ -291,16 +291,16 @@ Apache-2.0
 ### `apk` package: `libuuid`
 
 ```console
-libuuid-2.40.2-r4 description:
+libuuid-2.40.4-r0 description:
 DCE compatible Universally Unique Identifier library
 
-libuuid-2.40.2-r4 webpage:
+libuuid-2.40.4-r0 webpage:
 https://git.kernel.org/cgit/utils/util-linux/util-linux.git
 
-libuuid-2.40.2-r4 installed size:
+libuuid-2.40.4-r0 installed size:
 29 KiB
 
-libuuid-2.40.2-r4 license:
+libuuid-2.40.4-r0 license:
 BSD-3-Clause
 
 ```
