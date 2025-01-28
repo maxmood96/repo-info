@@ -1,18 +1,18 @@
-# `spiped:1.6.2`
+# `spiped:1.6.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:43af49e196ea5b3803a09fb654b9f3a31809b1d63db50efadc92753d2a5ea1b6`
-- Created: `2023-06-14T10:03:17Z`
-- Virtual Size: ~ 104.13 Mb  
+- Image ID: `sha256:61f9190e48c091c3f1a4bb917ae20281a709f4394fe1e013004350789b909d3d`
+- Created: `2025-01-26T16:57:02Z`
+- Virtual Size: ~ 104.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["spiped"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `SPIPED_VERSION=1.6.2`
-  - `SPIPED_DOWNLOAD_SHA256=05d4687d12d11d7f9888d43f3d80c541b7721c987038d085f71c91bb06204567`
+  - `SPIPED_VERSION=1.6.3`
+  - `SPIPED_DOWNLOAD_SHA256=70c53070dbbb10d1442754aeafb01b08ec829203d41023647dbf1a1435ee4a65`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1469,11 +1469,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.123-1`
+### `dpkg` source package: `linux=6.1.124-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.123-1`
+- `linux-libc-dev:amd64=6.1.124-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1488,17 +1488,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.123-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.123-1.dsc' linux_6.1.123-1.dsc 290930 SHA256:49581bdef81bc3ffd7a31f88833cd2a114e6afd6ebb543390c78ef69415e7d73
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.123.orig.tar.xz' linux_6.1.123.orig.tar.xz 137716280 SHA256:20262987ddb0c12072c68fe01fab9c549520cd9fadf85ad46ec18b6a368dad50
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.123-1.debian.tar.xz' linux_6.1.123-1.debian.tar.xz 1715424 SHA256:d2266cf88a7e28fe6765a3fa29ea99b62f43bb68709507afb953b0c5eafe1029
+$ apt-get source -qq --print-uris linux=6.1.124-1
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.124-1.dsc' linux_6.1.124-1.dsc 290931 SHA256:cb8131435a3ca6a26affe7ba421ee63df1c4d9da09c37b0259742bd58ae82068
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.124.orig.tar.xz' linux_6.1.124.orig.tar.xz 137718868 SHA256:0f908daf931ac8eb72423404c2e6c8d0a1fb51a2ceb19059fe903e4f72e3c54c
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.124-1.debian.tar.xz' linux_6.1.124-1.debian.tar.xz 1716348 SHA256:194ffc38770f3080dcbbcc16d92ede9b0f2c12eba675dca7f821bb1ceb3b5968
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.123-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.123-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.123-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.124-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.124-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.124-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 

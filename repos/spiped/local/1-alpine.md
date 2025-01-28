@@ -1,18 +1,18 @@
-# `spiped:1.6.2-alpine`
+# `spiped:1.6.3-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d1739bfd2f7c6bfc0aec39069cb0902b1e56873b04c7099b83047c17e17df1c4`
-- Created: `2025-01-19T13:01:46Z`
-- Virtual Size: ~ 8.08 Mb  
+- Image ID: `sha256:f1ec86461245d72383c5662f686c25016cc299d589def9478af4205b484492be`
+- Created: `2025-01-26T16:57:02Z`
+- Virtual Size: ~ 8.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["spiped"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `SPIPED_VERSION=1.6.2`
-  - `SPIPED_DOWNLOAD_SHA256=05d4687d12d11d7f9888d43f3d80c541b7721c987038d085f71c91bb06204567`
+  - `SPIPED_VERSION=1.6.3`
+  - `SPIPED_DOWNLOAD_SHA256=70c53070dbbb10d1442754aeafb01b08ec829203d41023647dbf1a1435ee4a65`
 
 ## `apk` (`.apk`-based packages)
 
