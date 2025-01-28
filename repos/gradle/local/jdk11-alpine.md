@@ -1,9 +1,9 @@
-# `gradle:8.12.0-jdk11-alpine`
+# `gradle:8.12.1-jdk11-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7d8004b39d23199b701c99507edd49620e3cb428fa581943c15b3e1d6cbb515b`
-- Created: `2025-01-21T15:45:23Z`
+- Image ID: `sha256:c266daa3f5dd639c143085c77930c987c70ee68b65a25ae636674419fff6761e`
+- Created: `2025-01-27T19:22:41Z`
 - Virtual Size: ~ 545.40 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.25+9`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.12`
+  - `GRADLE_VERSION=8.12.1`
 
 ## `apk` (`.apk`-based packages)
 

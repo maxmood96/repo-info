@@ -1,9 +1,9 @@
-# `gradle:8.12.0-jdk-lts-and-current`
+# `gradle:8.12.1-jdk-lts-and-current`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a4e4c35a5b838bba46e42d4236c2028ef2c1ebd845f2b628e570d1caa8152cfd`
-- Created: `2025-01-21T15:45:23Z`
+- Image ID: `sha256:90a40d67ee50da0ea4f7b5179b60c33b698a511d8e1c7338ff6d759394e57c81`
+- Created: `2025-01-27T19:22:41Z`
 - Virtual Size: ~ 1.06 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -19,7 +19,7 @@
   - `JAVA_LTS_HOME=/opt/java/openjdk21`
   - `JAVA_CURRENT_HOME=/opt/java/openjdk23`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.12`
+  - `GRADLE_VERSION=8.12.1`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`

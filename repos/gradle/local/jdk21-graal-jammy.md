@@ -1,9 +1,9 @@
-# `gradle:8.12.0-jdk21-graal`
+# `gradle:8.12.1-jdk21-graal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7fea6a81c5e5f8889fb89c85d517bbeef635e682c0de68353c44200e8604b646`
-- Created: `2024-12-20T17:54:11Z`
+- Image ID: `sha256:9ae3d512c570e9ff39941cef5fd7b4e1e2f73d4093cd6f54b72fc86d27e7f406`
+- Created: `2025-01-27T19:22:41Z`
 - Virtual Size: ~ 1.14 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -13,7 +13,7 @@
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_VERSION=21.0.2`
-  - `GRADLE_VERSION=8.12`
+  - `GRADLE_VERSION=8.12.1`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -881,12 +881,12 @@ $ apt-get source -qq --print-uris git-lfs=3.0.2-1ubuntu0.3
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_3.0.2-1ubuntu0.3.debian.tar.xz' git-lfs_3.0.2-1ubuntu0.3.debian.tar.xz 4432 SHA512:023ef83d2682cf50b7d9d38c272cbd009eb4c8ce7ef046a04c8f4750bd634cc9ab43307a46faa16c77d84f942670491bd6033ab949990d79fb8344d4afb54c75
 ```
 
-### `dpkg` source package: `git=1:2.34.1-1ubuntu1.11`
+### `dpkg` source package: `git=1:2.34.1-1ubuntu1.12`
 
 Binary Packages:
 
-- `git=1:2.34.1-1ubuntu1.11`
-- `git-man=1:2.34.1-1ubuntu1.11`
+- `git=1:2.34.1-1ubuntu1.12`
+- `git-man=1:2.34.1-1ubuntu1.12`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -908,9 +908,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.34.1-1ubuntu1.12
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.12.dsc' git_2.34.1-1ubuntu1.12.dsc 2931 SHA512:e53eb08ba54de2d5fd1e5b710f3153f64b2dadebd51370edbf60abc139074ecbab76907305cd42d923d33684d1bccb7e9a5f145ddb35e0347bf5adfdf341a87c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1.orig.tar.xz' git_2.34.1.orig.tar.xz 6623760 SHA512:a1a8e9e6f64b1da25508fbd2f783564dcdbe181fb5ff1ebab3bdac6db6094e18acc334479a1abf22ac17ce4f733cc3e10a664db9ab234cd523735a3f027b42db
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.34.1-1ubuntu1.12.debian.tar.xz' git_2.34.1-1ubuntu1.12.debian.tar.xz 769996 SHA512:21095936b237e018ebd892c11b661a59670f15b21bb5c01a5bb7cfd3f52dd9c6214b51f8e554b27ec5bfad570811a861af42af59cacd21cffe3ee1204f5eacad
+```
 
 ### `dpkg` source package: `glibc=2.35-0ubuntu3.8`
 
@@ -1756,11 +1761,11 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-130.140`
+### `dpkg` source package: `linux=5.15.0-131.141`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-130.140`
+- `linux-libc-dev:amd64=5.15.0-131.141`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1769,10 +1774,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.15.0-130.140
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-130.140.dsc' linux_5.15.0-130.140.dsc 7758 SHA512:bc3e963f1a9a9e944146defe883ac08ff9bcd333e62dc897e528f9b3f6197ade8201aef4bdc8ee2556a1b50610f918a4e074dc1bc8c7d9dfdfaa89f8584b7875
+$ apt-get source -qq --print-uris linux=5.15.0-131.141
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-131.141.dsc' linux_5.15.0-131.141.dsc 7799 SHA512:7861ee60eb24898be9fd3e35b5d5bd2e603989f4e336bf151eaa07a35b036b4854debd920662e9190b431c1cbb63f18e7005d69f1f99bdf7ad6b29ab2a458d81
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-130.140.diff.gz' linux_5.15.0-130.140.diff.gz 11155671 SHA512:5d4335b5e1b9309343580d7c22574e119d42e02aadc98d1249cb6d66bbe98efb738733da23bf606b398437feaabe18fbcea69d677c41938c192485ac8cff4150
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-131.141.diff.gz' linux_5.15.0-131.141.diff.gz 11156398 SHA512:6ad3ae16ad81406e423dac6ef3ff7f7125e91a660d0b68ddd94c2817d859856b91d297c2e37499b302c991ce76d4035ceb52fbb69252550137ff3a7a9c786dc5
 ```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`
@@ -2349,14 +2354,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.1.tar.gz' python3-defaults_3.10.6-1~22.04.1.tar.gz 145962 SHA512:c509a2a887e4b758fbfcb6173ff046a6f73bdfdde3bd89f77102a4d99c7219d8e1805b41541c6cf658fe9dd44da188e6af450d87236d863d29f06147fea26ea1
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.7`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.8`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.7`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.7`
-- `python3.10=3.10.12-1~22.04.7`
-- `python3.10-minimal=3.10.12-1~22.04.7`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.8`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.8`
+- `python3.10=3.10.12-1~22.04.8`
+- `python3.10-minimal=3.10.12-1~22.04.8`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -2378,9 +2383,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.8
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.8.dsc' python3.10_3.10.12-1~22.04.8.dsc 3674 SHA512:c9ffde4fead987856250e067262a34299185049cf7636c89578c841e004e518180379c4ad25f0bbee900379987b0ee5ff584af659fb8c7aa7e48d84b591e85ca
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.8.debian.tar.xz' python3.10_3.10.12-1~22.04.8.debian.tar.xz 246912 SHA512:3439b52f3aa6e37f0c489e490e8a49788fd6c4e30b0c9873ec706a8e0af083fbd529108c54024eb0eea77f04846c096779c4626d44de65ffab0ba5776f2a0f5b
+```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 

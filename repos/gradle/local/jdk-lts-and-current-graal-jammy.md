@@ -1,9 +1,9 @@
-# `gradle:8.12.0-jdk-lts-and-current-graal`
+# `gradle:8.12.1-jdk-lts-and-current-graal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6b1d2c87010acc2eddf4daddedcf693cf135a12cddd9ab8469cf63ba8a2a3f77`
-- Created: `2025-01-21T15:45:23Z`
+- Image ID: `sha256:54c51b442b17189ec00abee76e32cd18c58b20a3c74a5c485514cdef663e0259`
+- Created: `2025-01-27T19:22:41Z`
 - Virtual Size: ~ 1.87 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -14,7 +14,7 @@
   - `JAVA_HOME=/opt/java/graalvm`
   - `JAVA_LTS_HOME=/opt/java/graalvm21`
   - `JAVA_CURRENT_HOME=/opt/java/graalvm23`
-  - `GRADLE_VERSION=8.12`
+  - `GRADLE_VERSION=8.12.1`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -1762,11 +1762,11 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-130.140`
+### `dpkg` source package: `linux=5.15.0-131.141`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-130.140`
+- `linux-libc-dev:amd64=5.15.0-131.141`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -1775,10 +1775,10 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=5.15.0-130.140
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-130.140.dsc' linux_5.15.0-130.140.dsc 7758 SHA512:bc3e963f1a9a9e944146defe883ac08ff9bcd333e62dc897e528f9b3f6197ade8201aef4bdc8ee2556a1b50610f918a4e074dc1bc8c7d9dfdfaa89f8584b7875
+$ apt-get source -qq --print-uris linux=5.15.0-131.141
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-131.141.dsc' linux_5.15.0-131.141.dsc 7799 SHA512:7861ee60eb24898be9fd3e35b5d5bd2e603989f4e336bf151eaa07a35b036b4854debd920662e9190b431c1cbb63f18e7005d69f1f99bdf7ad6b29ab2a458d81
 'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-130.140.diff.gz' linux_5.15.0-130.140.diff.gz 11155671 SHA512:5d4335b5e1b9309343580d7c22574e119d42e02aadc98d1249cb6d66bbe98efb738733da23bf606b398437feaabe18fbcea69d677c41938c192485ac8cff4150
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-131.141.diff.gz' linux_5.15.0-131.141.diff.gz 11156398 SHA512:6ad3ae16ad81406e423dac6ef3ff7f7125e91a660d0b68ddd94c2817d859856b91d297c2e37499b302c991ce76d4035ceb52fbb69252550137ff3a7a9c786dc5
 ```
 
 ### `dpkg` source package: `lsb=11.1.0ubuntu4`

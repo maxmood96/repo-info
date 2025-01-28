@@ -1,9 +1,9 @@
-# `gradle:8.12.0-jdk17-focal`
+# `gradle:8.12.1-jdk17-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8bbb987abe3410082b1e0af26038b432ef08ff699c80969548f4694c79b55819`
-- Created: `2025-01-21T15:45:23Z`
+- Image ID: `sha256:a6abe0378021d3606ab61212792226a0589db156f5fa04bf59ff4aa05e64ec32`
+- Created: `2025-01-27T19:22:41Z`
 - Virtual Size: ~ 760.35 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.13+11`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.12`
+  - `GRADLE_VERSION=8.12.1`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=20.04`
