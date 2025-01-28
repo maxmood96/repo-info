@@ -153,19 +153,13 @@ Licenses: (parsed from: `/usr/share/doc/native-architecture/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris architecture-properties=0.2.3
-'http://deb.debian.org/debian/pool/main/a/architecture-properties/architecture-properties_0.2.3.dsc' architecture-properties_0.2.3.dsc 1803 SHA256:aa914bfd5882df0b245cb1f526b03a835d3914afbed0b588208649441917dc48
-'http://deb.debian.org/debian/pool/main/a/architecture-properties/architecture-properties_0.2.3.tar.xz' architecture-properties_0.2.3.tar.xz 5180 SHA256:3fcd4f7735c09991deb67777958a6aa0526c60907824f9c33b4573ffb0dff27d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/architecture-properties/0.2.3/
 
-- https://sources.debian.net/src/architecture-properties/0.2.3/ (for browsing the source)
-- https://sources.debian.net/src/architecture-properties/0.2.3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/architecture-properties/0.2.3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-2`
 
@@ -731,21 +725,13 @@ Licenses: (parsed from: `/usr/share/doc/libdav1d-dev/copyright`, `/usr/share/doc
 - `ISC`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dav1d=1.5.0-1
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.0-1.dsc' dav1d_1.5.0-1.dsc 2290 SHA256:bb791b7898b9ba9f5c14da44dc0f7d06cb67b475888a83d357afc52e17a2671c
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.0.orig.tar.xz' dav1d_1.5.0.orig.tar.xz 1017040 SHA256:14bd6f5157808ed9aedcafbe50df689d304fd4810ac20be6eec1ab037436afd6
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.0.orig.tar.xz.asc' dav1d_1.5.0.orig.tar.xz.asc 195 SHA256:9cf6cb0a814a94816de7a5186fbf2fe089e5eb16a1937ad6114adc99cff37f9d
-'http://deb.debian.org/debian/pool/main/d/dav1d/dav1d_1.5.0-1.debian.tar.xz' dav1d_1.5.0-1.debian.tar.xz 8456 SHA256:5587e4c5e122831b08e126e54064e9c69892c6007fe05f5d8e4743b36ddfdf1f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dav1d/1.5.0-1/
 
-- https://sources.debian.net/src/dav1d/1.5.0-1/ (for browsing the source)
-- https://sources.debian.net/src/dav1d/1.5.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dav1d/1.5.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `db-defaults=5.3.4`
 
@@ -1756,21 +1742,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-freedesktop/copyright`, `/usr/sha
 - `Unicode-DFS-2016`
 - `bzip2-1.0.6`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gobject-introspection=1.82.0-3
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.82.0-3.dsc' gobject-introspection_1.82.0-3.dsc 4202 SHA256:6bcff8ad5cfa2857df98e77dfde4a77d63f0b48c83191cb8f7166678a74c4a20
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.82.0.orig-glib.tar.xz' gobject-introspection_1.82.0.orig-glib.tar.xz 5475296 SHA256:b3764dd6e29b664085921dd4dd6ba2430fc19760ab6857ecfa3ebd4e8c1d114c
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.82.0.orig.tar.xz' gobject-introspection_1.82.0.orig.tar.xz 1052872 SHA256:0f5a4c1908424bf26bc41e9361168c363685080fbdb87a196c891c8401ca2f09
-'http://deb.debian.org/debian/pool/main/g/gobject-introspection/gobject-introspection_1.82.0-3.debian.tar.xz' gobject-introspection_1.82.0-3.debian.tar.xz 58424 SHA256:9728220819398103868d1d4bc7206c1fb7afe6f201f18e4420ddaf06b6a0d722
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gobject-introspection/1.82.0-3/
 
-- https://sources.debian.net/src/gobject-introspection/1.82.0-3/ (for browsing the source)
-- https://sources.debian.net/src/gobject-introspection/1.82.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gobject-introspection/1.82.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `graphite2=1.3.14-2`
 
@@ -1911,21 +1889,13 @@ Licenses: (parsed from: `/usr/share/doc/hicolor-icon-theme/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris hicolor-icon-theme=0.18-1
-'http://deb.debian.org/debian/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.18-1.dsc' hicolor-icon-theme_0.18-1.dsc 2325 SHA256:97e0afba92378c0bf4bfeb5d10e9cc3a811811e7b23f712bd6e18b46f0f0d7c3
-'http://deb.debian.org/debian/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.18.orig.tar.xz' hicolor-icon-theme_0.18.orig.tar.xz 29624 SHA256:db0e50a80aa3bf64bb45cbca5cf9f75efd9348cf2ac690b907435238c3cf81d7
-'http://deb.debian.org/debian/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.18.orig.tar.xz.asc' hicolor-icon-theme_0.18.orig.tar.xz.asc 833 SHA256:0fe29ecd5d445805e33b33d7ff35813eabab2100806c06dd002efd35b37fb855
-'http://deb.debian.org/debian/pool/main/h/hicolor-icon-theme/hicolor-icon-theme_0.18-1.debian.tar.xz' hicolor-icon-theme_0.18-1.debian.tar.xz 9100 SHA256:659512f9e592c31feef303069315f0052987ee619609a741c41a2dc820592608
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/hicolor-icon-theme/0.18-1/
 
-- https://sources.debian.net/src/hicolor-icon-theme/0.18-1/ (for browsing the source)
-- https://sources.debian.net/src/hicolor-icon-theme/0.18-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/hicolor-icon-theme/0.18-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `hostname=3.25`
 
@@ -2221,21 +2191,13 @@ Licenses: (parsed from: `/usr/share/doc/krb5-multidev/copyright`, `/usr/share/do
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.21.3-3
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3-3.dsc' krb5_1.21.3-3.dsc 3381 SHA256:561af05f1e9c42ca9eab01eaa7ea6cd903494bb5b462917c8fff7d86bbedc872
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz' krb5_1.21.3.orig.tar.gz 9136145 SHA256:b7a4cd5ead67fb08b980b21abd150ff7217e85ea320c9ed0c6dadd304840ad35
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz.asc' krb5_1.21.3.orig.tar.gz.asc 833 SHA256:85047c935fe949ef2e275885451b168557b923dd13a5aab0ef8fe6acd27b94d7
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3-3.debian.tar.xz' krb5_1.21.3-3.debian.tar.xz 103380 SHA256:c7b7bceb2f1bd782d0118904bded8ddaba1aaa54f1b3b2fc0dc3ecaeac450b5b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.21.3-3/
 
-- https://sources.debian.net/src/krb5/1.21.3-3/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.21.3-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.21.3-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lcms2=2.16-2`
 
@@ -5078,19 +5040,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.12.8-1
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.12.8-1.dsc' python3-defaults_3.12.8-1.dsc 2387 SHA256:31cccff2a4a0633fa904e8f6685c51fe68e0ea6622414a26b08c7c942da0c21e
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.12.8-1.tar.gz' python3-defaults_3.12.8-1.tar.gz 147596 SHA256:0c2a4a9e1d2a54839d9931afc3b7856f721804af755d1d278233eff80e476b24
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-defaults/3.12.8-1/
 
-- https://sources.debian.net/src/python3-defaults/3.12.8-1/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.12.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.12.8-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.12=3.12.8-3`
 
