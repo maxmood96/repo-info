@@ -1,4 +1,4 @@
-## `amazoncorretto:8-alpine-jdk`
+## `amazoncorretto:8-alpine3.21-jdk`
 
 ```console
 $ docker pull amazoncorretto@sha256:0015bb4571bb2609ae6070c87ee35a3a1c04ca6b70ca845b69b53e06c8ad1cf8
@@ -11,7 +11,7 @@ $ docker pull amazoncorretto@sha256:0015bb4571bb2609ae6070c87ee35a3a1c04ca6b70ca
 	-	linux; arm64 variant v8
 	-	unknown; unknown
 
-### `amazoncorretto:8-alpine-jdk` - linux; amd64
+### `amazoncorretto:8-alpine3.21-jdk` - linux; amd64
 
 ```console
 $ docker pull amazoncorretto@sha256:6f1a2f70616c9b7e198d14b44bd4251bfc238d0355e7e0c7a9e990a371fe0c15
@@ -51,7 +51,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 		Size: 100.2 MB (100224409 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `amazoncorretto:8-alpine-jdk` - unknown; unknown
+### `amazoncorretto:8-alpine3.21-jdk` - unknown; unknown
 
 ```console
 $ docker pull amazoncorretto@sha256:f3063767cd59a80ebe54e4859fd5c0992ba9695d95a53e28716ba6233a9697f4
@@ -75,7 +75,7 @@ $ docker pull amazoncorretto@sha256:f3063767cd59a80ebe54e4859fd5c0992ba9695d95a5
 		Size: 10.7 KB (10696 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `amazoncorretto:8-alpine-jdk` - linux; arm64 variant v8
+### `amazoncorretto:8-alpine3.21-jdk` - linux; arm64 variant v8
 
 ```console
 $ docker pull amazoncorretto@sha256:8f7136244544d430b67e23f9ea27d659759c0fb7e20e30413b6ae8cf1966113c
@@ -115,7 +115,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/lib/j
 		Size: 100.0 MB (100009092 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
-### `amazoncorretto:8-alpine-jdk` - unknown; unknown
+### `amazoncorretto:8-alpine3.21-jdk` - unknown; unknown
 
 ```console
 $ docker pull amazoncorretto@sha256:17e6588642824c75d709351efe9a527928db7582e8059aefd1fbf62ea52d5368
