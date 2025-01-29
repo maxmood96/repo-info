@@ -14,6 +14,12 @@
 -	[`open-liberty:24.0.0.9-kernel-slim-java11-openj9`](#open-liberty24009-kernel-slim-java11-openj9)
 -	[`open-liberty:24.0.0.9-kernel-slim-java17-openj9`](#open-liberty24009-kernel-slim-java17-openj9)
 -	[`open-liberty:24.0.0.9-kernel-slim-java8-openj9`](#open-liberty24009-kernel-slim-java8-openj9)
+-	[`open-liberty:25.0.0.1-full-java11-openj9`](#open-liberty25001-full-java11-openj9)
+-	[`open-liberty:25.0.0.1-full-java17-openj9`](#open-liberty25001-full-java17-openj9)
+-	[`open-liberty:25.0.0.1-full-java8-openj9`](#open-liberty25001-full-java8-openj9)
+-	[`open-liberty:25.0.0.1-kernel-slim-java11-openj9`](#open-liberty25001-kernel-slim-java11-openj9)
+-	[`open-liberty:25.0.0.1-kernel-slim-java17-openj9`](#open-liberty25001-kernel-slim-java17-openj9)
+-	[`open-liberty:25.0.0.1-kernel-slim-java8-openj9`](#open-liberty25001-kernel-slim-java8-openj9)
 -	[`open-liberty:beta`](#open-libertybeta)
 -	[`open-liberty:beta-java11`](#open-libertybeta-java11)
 -	[`open-liberty:beta-java17`](#open-libertybeta-java17)
@@ -8150,6 +8156,60 @@ $ docker pull open-liberty@sha256:efadc75d648b2652bd4c435bdd4af357e9dfa1f6b6bab1
 		Last Modified: Thu, 19 Dec 2024 23:01:20 GMT  
 		Size: 38.3 KB (38345 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `open-liberty:25.0.0.1-full-java11-openj9`
+
+```console
+$ docker pull open-liberty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `open-liberty:25.0.0.1-full-java17-openj9`
+
+```console
+$ docker pull open-liberty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `open-liberty:25.0.0.1-full-java8-openj9`
+
+```console
+$ docker pull open-liberty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `open-liberty:25.0.0.1-kernel-slim-java11-openj9`
+
+```console
+$ docker pull open-liberty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `open-liberty:25.0.0.1-kernel-slim-java17-openj9`
+
+```console
+$ docker pull open-liberty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
+
+## `open-liberty:25.0.0.1-kernel-slim-java8-openj9`
+
+```console
+$ docker pull open-liberty@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `open-liberty:beta`
 
