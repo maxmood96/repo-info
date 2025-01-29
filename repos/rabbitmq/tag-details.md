@@ -23730,7 +23730,7 @@ $ docker pull rabbitmq@sha256:62eec5822eb0e84b43e4752bad8215be683f4762c90c601bbb
 ## `rabbitmq:4.1-rc`
 
 ```console
-$ docker pull rabbitmq@sha256:daad53775f6f58dba73132596c934b9e405646417561f11e16e948183a22a7f1
+$ docker pull rabbitmq@sha256:1bf246f5f22c87f81d27d68994aed7c7f9c447037ee34c5eee24cfaca10d3b04
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23751,13 +23751,13 @@ $ docker pull rabbitmq@sha256:daad53775f6f58dba73132596c934b9e405646417561f11e16
 ### `rabbitmq:4.1-rc` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:4158465e8e709fce99c7f1a8dcba53aa7ed60080e22242107786955caa508c51
+$ docker pull rabbitmq@sha256:305a8b6b85a41c6f3710a7a560ce8df46d72db88a11251fb0a1a9c00ca4726ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **107.3 MB (107320170 bytes)**  
+-	Total Size: **107.3 MB (107340544 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bbab9ecc68d163d07051fac85fb6d3df30b0125ba1bf6b2ade13554d34b4cdb5`
+-	Image ID: `sha256:23acd089f216f7bc9dfb70dbd86954873eaa1f0ea1f8857ca55a40cfcdb95428`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -23774,49 +23774,49 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:bcebbf0fddcba5b864d5d267b68dd23bcfb01275e6ec7bcab69bf8b56af14804 in / 
 # Tue, 19 Nov 2024 17:29:25 GMT
 CMD ["/bin/bash"]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		ldconfig; 	sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		groupadd --gid 999 --system rabbitmq; 	useradd --uid 999 --system --home-dir "$RABBITMQ_DATA_DIR" --gid rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.1.0-beta.3
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	export DEBIAN_FRONTEND=noninteractive; 	apt-get update; 	apt-get install --yes --no-install-recommends 		ca-certificates 		gosu 		tzdata 	; 	gosu nobody true; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get install --yes --no-install-recommends 		gnupg 		wget 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	gosu rabbitmq rabbitmqctl help; 	gosu rabbitmq rabbitmqctl list_ciphers; 	gosu rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN gosu rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -23825,73 +23825,73 @@ CMD ["rabbitmq-server"]
 		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cdd38c438930653be6c575b6ce004faab8869de522155db24d82b86972cdb6f0`  
-		Last Modified: Wed, 11 Dec 2024 22:36:52 GMT  
-		Size: 48.4 MB (48389380 bytes)  
+	-	`sha256:0d502fd5405d0c0890a03a8555c2801c5eb2fde73c311d8c42605708389d24f0`  
+		Last Modified: Wed, 29 Jan 2025 00:33:10 GMT  
+		Size: 48.4 MB (48409615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7009cb92572458741dcd9fc77c425fc354026baa733571481545ab92dc790dec`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 8.2 MB (8169241 bytes)  
+	-	`sha256:c1f0c117e8fc721424b696e4f494f9bad82ee50a1518224bcabb018f18d78c2e`  
+		Last Modified: Wed, 29 Jan 2025 00:33:10 GMT  
+		Size: 8.2 MB (8169320 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6774fe18e9bdeeaa4eb7326eea065697e2d0bc1face92beecde77c946e8e43d5`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 9.5 KB (9452 bytes)  
+	-	`sha256:77ba71b1ef0ce058fa5aa5b1d6befd3f4114fc90a554efb8f4d6ce5eb8a4a526`  
+		Last Modified: Wed, 29 Jan 2025 00:33:09 GMT  
+		Size: 9.5 KB (9484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c34e3b6f34869e315aff7bb32969ab5ecd4fdbb2cfe197aa9b270f5b2fd7afe7`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 21.0 MB (20998379 bytes)  
+	-	`sha256:65d5eeccdd83ce9864a4411334fdc965eba5802bbe94da1423f65dbc9830deb4`  
+		Last Modified: Wed, 29 Jan 2025 00:33:10 GMT  
+		Size: 21.0 MB (20998411 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f358b127b1b6940d41924789dbd47442e213ce156b0d2e05a15eb50fc70333a`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 190.0 B  
+	-	`sha256:5168a9e26789b6ba0bf4598b26eb0f28162ae20662a5ffa16b460b2a3f62d4c9`  
+		Last Modified: Wed, 29 Jan 2025 00:33:10 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6886f3e5ac082083232decf79a447b9afde000401126bc61e9ea38a00398a734`  
-		Last Modified: Wed, 11 Dec 2024 22:36:52 GMT  
-		Size: 109.0 B  
+	-	`sha256:569b83ce3bc05693748549057aa764081d6e05b682cbb8971d20279acdcafde3`  
+		Last Modified: Wed, 29 Jan 2025 00:33:11 GMT  
+		Size: 106.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfb41641b11272c82214189bdd72093549fdb0053426b2b2ea4a7aefbef6ccdb`  
-		Last Modified: Wed, 11 Dec 2024 22:36:52 GMT  
-		Size: 619.0 B  
+	-	`sha256:894f38f1b6521a035c51dfa51c677c4d68b8e0b6cf895bc7edd2429d521f06e6`  
+		Last Modified: Wed, 29 Jan 2025 00:33:11 GMT  
+		Size: 621.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef5c915b6fe22007d76c9ae0fd42482b1d63a2f8a10cf5bd3a8ad40b4357979b`  
-		Last Modified: Wed, 11 Dec 2024 22:36:52 GMT  
+	-	`sha256:20f6c165a5b99f1b0841e3523ad8931241b85fc0c3e24d6b24e87e92a18c1f89`  
+		Last Modified: Wed, 29 Jan 2025 00:33:11 GMT  
 		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:165a094de6154c0b7e53f6086937c085b849a76830f69534c03fc5dc8e0ff880
+$ docker pull rabbitmq@sha256:e44492f2eca18d3dccf22fc60867394c62cb91c2c889dcf9a81a132117a25c95
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.2 MB (18213117 bytes)**  
+-	Total Size: **17.9 MB (17923427 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1320a36ae42ca9923c3300ad8d5d520711f329be7422d1de25b9987cfe378ffb`
+-	Image ID: `sha256:e91e6c2fbc3e6b899fd2f58c22979b218777e3d938cfb3b4c0008daa433be777`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:306fe1484f04c6882a4aafb5b0185e3e09f4eea113415b68da20d5799a5fc865`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 2.4 MB (2365393 bytes)  
+	-	`sha256:c69489d4dd0cecc1cbd2872d39361dce40668e4d8ef03c5add2d316a4f0eb029`  
+		Last Modified: Wed, 29 Jan 2025 00:33:09 GMT  
+		Size: 2.2 MB (2244585 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:44c28706d5ce457a363da8480e89d0ac5a26900404acc8e4dd6b59f7f7f04862`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 5.2 MB (5210361 bytes)  
+	-	`sha256:73541640ee007c6e1ffb951d2d185f48eb8c0b82ff9589e45e506d3e94fa86f1`  
+		Last Modified: Wed, 29 Jan 2025 00:33:09 GMT  
+		Size: 5.2 MB (5203556 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:847bcf26899678dfab3f5885d83950fe07fd37c8808b4d8a3d665f415a367929`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 5.4 MB (5366064 bytes)  
+	-	`sha256:68b2ba7ec4de796f5931c8b8d0f3a0246698958798ef8e4291a8996299c0c1f0`  
+		Last Modified: Wed, 29 Jan 2025 00:33:09 GMT  
+		Size: 5.2 MB (5210774 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f24f19e58d12ef370b46380c370c2f14f088d329e8aece0e57f603651344830c`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 5.2 MB (5212095 bytes)  
+	-	`sha256:9c93953342a72ce97ff5a6816db5403a2cf1196bc55eeae6a9441c5517e9141d`  
+		Last Modified: Wed, 29 Jan 2025 00:33:09 GMT  
+		Size: 5.2 MB (5205298 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:81c9290911a17c441116b8191eb9c71e2bc91379aaca1e404592b8aaa56bd2ae`  
-		Last Modified: Wed, 11 Dec 2024 22:36:52 GMT  
-		Size: 59.2 KB (59204 bytes)  
+	-	`sha256:ea7f514fd521eec1926c24b53ec50efd71036e8e1a81a68d57e798e1e57d9d8f`  
+		Last Modified: Wed, 29 Jan 2025 00:33:10 GMT  
+		Size: 59.2 KB (59214 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-rc` - linux; arm variant v7
@@ -24043,13 +24043,13 @@ $ docker pull rabbitmq@sha256:4969adcc1313bb7c8fe960dda226e282aeaed04b6f292cf529
 ### `rabbitmq:4.1-rc` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:4572908eee7f82e108a886a865eff9cc92171a237a02d66a15783de476d09330
+$ docker pull rabbitmq@sha256:3e673addcdab400e78f80d737d0fcd3607be61f33ea85eaacefde092c906ceaa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **105.2 MB (105219896 bytes)**  
+-	Total Size: **105.2 MB (105239260 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:091da8b84f92fa7dae4d432b411ee647bae960ab3d14b47f722d9a5133dc4263`
+-	Image ID: `sha256:4ab10bcd96a711f482000058094cfa96cf604bf9269f1aba5f754a30a91ee834`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -24066,49 +24066,49 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:765dfd09ec2ac4870c8b3efd6ef4a994f99695c574d546d7a9a0e69bbb970b03 in / 
 # Tue, 19 Nov 2024 16:18:47 GMT
 CMD ["/bin/bash"]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		ldconfig; 	sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		groupadd --gid 999 --system rabbitmq; 	useradd --uid 999 --system --home-dir "$RABBITMQ_DATA_DIR" --gid rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.1.0-beta.3
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	export DEBIAN_FRONTEND=noninteractive; 	apt-get update; 	apt-get install --yes --no-install-recommends 		ca-certificates 		gosu 		tzdata 	; 	gosu nobody true; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get install --yes --no-install-recommends 		gnupg 		wget 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	gosu rabbitmq rabbitmqctl help; 	gosu rabbitmq rabbitmqctl list_ciphers; 	gosu rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN gosu rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -24117,85 +24117,85 @@ CMD ["rabbitmq-server"]
 		Last Modified: Tue, 19 Nov 2024 17:38:33 GMT  
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0dd6f7651969fbbc9ca154b27d8deea7a80480f448b243b63a7b7d56ce089430`  
-		Last Modified: Wed, 11 Dec 2024 22:37:18 GMT  
-		Size: 46.5 MB (46474590 bytes)  
+	-	`sha256:52299e8730d11af6eb71f33b5c16790dae4bb4959ed39906fc96caca2c82e821`  
+		Last Modified: Wed, 29 Jan 2025 00:46:47 GMT  
+		Size: 46.5 MB (46493171 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b8d36208ddc884ffbb9bb161c00179f1eb0d3d2da496387d7419742fec90818c`  
-		Last Modified: Wed, 11 Dec 2024 22:37:17 GMT  
-		Size: 8.9 MB (8934225 bytes)  
+	-	`sha256:ccfe2da4ebaba3053af2ca724275efde70b702f3b62906aba3a2c688da09b33b`  
+		Last Modified: Wed, 29 Jan 2025 00:46:46 GMT  
+		Size: 8.9 MB (8934957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12f1c19f537e7af45a8ace01a800eadc1b23167c81356a6c5799bb680b04ecb7`  
-		Last Modified: Wed, 11 Dec 2024 22:37:17 GMT  
-		Size: 9.4 KB (9428 bytes)  
+	-	`sha256:905d928b7e4fd4f2d74836057463713dfb2fce6b1efd79e739f9fd039604882d`  
+		Last Modified: Wed, 29 Jan 2025 00:46:45 GMT  
+		Size: 9.5 KB (9461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:854f79f3b5bab588586abe9bfd1dd7369d49db5c4d27abc3901b30eb85c9b516`  
-		Last Modified: Wed, 11 Dec 2024 22:37:18 GMT  
-		Size: 20.9 MB (20907234 bytes)  
+	-	`sha256:0b038c2c5003b2cc033f71708f27fe455d56291e0072bd58fe968ef8d4956bb0`  
+		Last Modified: Wed, 29 Jan 2025 00:46:47 GMT  
+		Size: 20.9 MB (20907253 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09a7f011ee78930fbc8d461f544625f583e2f48c5ff8ae4f84810232bff087b2`  
-		Last Modified: Wed, 11 Dec 2024 22:37:18 GMT  
-		Size: 187.0 B  
+	-	`sha256:66cc6cf6b124262ede5aeeb3de90f8b93af74e06912e2b64137593fc263a4c9e`  
+		Last Modified: Wed, 29 Jan 2025 00:46:46 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:960b6213bdcf1e61a202022fd1549be498cac95f7c06d643b49f4c6b617d92e6`  
-		Last Modified: Wed, 11 Dec 2024 22:37:18 GMT  
+	-	`sha256:e16312245e56aa709324d2dfbf8f2e60b84813563d2861c685db8a50a6c8d44f`  
+		Last Modified: Wed, 29 Jan 2025 00:46:47 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34de032b61d45f4b35f85ddd644aca2476acfee4bba4ba1ab969dfe01d2cd963`  
-		Last Modified: Wed, 11 Dec 2024 22:37:18 GMT  
-		Size: 620.0 B  
+	-	`sha256:5c6caa9f70f455a848c49c68cc73c69a0932756d71fe7f513dc35041e8621339`  
+		Last Modified: Wed, 29 Jan 2025 00:46:47 GMT  
+		Size: 617.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ebf76ac8f826f6e71275fd0bc2b5844ef5c8c0b492f7d5eeee382a8a3b47096`  
-		Last Modified: Wed, 11 Dec 2024 22:37:19 GMT  
+	-	`sha256:62c15bd7a9c7190983358018c6faa2a0f65d815e165a5c16d067e5b275b6cc98`  
+		Last Modified: Wed, 29 Jan 2025 00:46:48 GMT  
 		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:355cf71be59014a687e92305a3b3d3ba29a2c7be8fd49e23bc59cb0eabea000a
+$ docker pull rabbitmq@sha256:7c3d940f1e39c1aa9474d2a3b5f6c48cb9b86c4a47efd5081d0aeccf6b0a7528
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.3 MB (18273171 bytes)**  
+-	Total Size: **18.3 MB (18253568 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c90b2c57bf24c8a3eb7bbd535642923c212b6152b044ae3ac6801ee711db29b9`
+-	Image ID: `sha256:9133be754752c7d49c102ee687a015c6238fd8648700885b5e36457c83a5978c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:09bfdcf53383a80df04c3611f3c8f6950b2ea3d500b0cf13ad8b39df2be5aa15`  
-		Last Modified: Wed, 11 Dec 2024 22:37:17 GMT  
-		Size: 2.4 MB (2366429 bytes)  
+	-	`sha256:c3b15f38ad7576194a03903facd0b5897800a6150ffba5616f9c1533186f52cb`  
+		Last Modified: Wed, 29 Jan 2025 00:46:46 GMT  
+		Size: 2.4 MB (2366152 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d8e7bccc720b4a5e88f4ba5b318b9cf785ff038ef435ce6a8368fd6121dc70e4`  
-		Last Modified: Wed, 11 Dec 2024 22:37:17 GMT  
-		Size: 5.2 MB (5229956 bytes)  
+	-	`sha256:52b3782bae02b361d69110e36b631be88585279513f2c792ce4e099abba516ad`  
+		Last Modified: Wed, 29 Jan 2025 00:46:46 GMT  
+		Size: 5.2 MB (5223129 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6aab398694e6700af08932487f09f00087325d39d7bd3ece7c7bf42fed89af99`  
-		Last Modified: Wed, 11 Dec 2024 22:37:17 GMT  
-		Size: 5.4 MB (5385677 bytes)  
+	-	`sha256:dc61c6d38ffa27dbb94ec94761b8e1ea4717617d34800976710e7df41c164e8a`  
+		Last Modified: Wed, 29 Jan 2025 00:46:46 GMT  
+		Size: 5.4 MB (5379989 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5da326c4dc046375a4433afa35cd5f366d40c410539ed7a8eb8eaef760d5cfde`  
-		Last Modified: Wed, 11 Dec 2024 22:37:17 GMT  
-		Size: 5.2 MB (5231690 bytes)  
+	-	`sha256:900d7b27de6d0fd6c658cbdd391c81ce006029af9049964bafe1d4413e384ed3`  
+		Last Modified: Wed, 29 Jan 2025 00:46:46 GMT  
+		Size: 5.2 MB (5224871 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5a90a2768eb9c46794e621923421450c136f5f321260727ae8417180122fbabe`  
-		Last Modified: Wed, 11 Dec 2024 22:37:18 GMT  
-		Size: 59.4 KB (59419 bytes)  
+	-	`sha256:f353cc47492ef4f698512c03bb0c268660219cc53995fc0f753afa53bdd02668`  
+		Last Modified: Wed, 29 Jan 2025 00:46:47 GMT  
+		Size: 59.4 KB (59427 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-rc` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:284913697f36aba4b408bac1d9bc8ec7e2d26c1b74b08ab9d445db4049bdf6b8
+$ docker pull rabbitmq@sha256:acc3cfc69b7f105663027fca3e7a7e02245dbea04e5e70769117b602f47cdc8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **105.7 MB (105678720 bytes)**  
+-	Total Size: **105.7 MB (105683145 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f948802cfa864d4149a4f153be4bc727674d5fcaaa527a0ee4ff5ce7497822ab`
+-	Image ID: `sha256:2f3c94c528eb8e75f2ba183d40dac99a9df334b763d07c628ea2954039c11a11`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -24212,49 +24212,49 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:43ada82586e21a3bec38211b678fc6eb9b5e39f96a2d31fced4653d2b54a553f in / 
 # Tue, 19 Nov 2024 16:18:50 GMT
 CMD ["/bin/bash"]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		ldconfig; 	sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		groupadd --gid 999 --system rabbitmq; 	useradd --uid 999 --system --home-dir "$RABBITMQ_DATA_DIR" --gid rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.1.0-beta.3
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	export DEBIAN_FRONTEND=noninteractive; 	apt-get update; 	apt-get install --yes --no-install-recommends 		ca-certificates 		gosu 		tzdata 	; 	gosu nobody true; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get install --yes --no-install-recommends 		gnupg 		wget 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	gosu rabbitmq rabbitmqctl help; 	gosu rabbitmq rabbitmqctl list_ciphers; 	gosu rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN gosu rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -24263,85 +24263,85 @@ CMD ["rabbitmq-server"]
 		Last Modified: Tue, 19 Nov 2024 17:38:45 GMT  
 		Size: 34.4 MB (34388820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35aaa542f56f99732fa6a5ce5ca4b3980f55c461636cc332d4792017c9f15431`  
-		Last Modified: Wed, 11 Dec 2024 22:38:19 GMT  
-		Size: 41.6 MB (41633236 bytes)  
+	-	`sha256:8cadad09c52fdbf44decc403a4ab6082060224014f1082854e01a1a7f5d3981f`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
+		Size: 41.6 MB (41637000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed2e85aabb1a869502abef25c5e467f417a1d8aeca7a26ed9ade9d7d914d39d0`  
-		Last Modified: Wed, 11 Dec 2024 22:38:18 GMT  
-		Size: 8.7 MB (8689219 bytes)  
+	-	`sha256:aeb9f7be9b5b4cbf6f594b895573e0fdbb3020f04243a231409187e8ff591bfd`  
+		Last Modified: Wed, 29 Jan 2025 00:58:32 GMT  
+		Size: 8.7 MB (8689882 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4feb9952ffad20211d81b56be0c2dfe81e14bbc20c685d956302a993a2036a8e`  
-		Last Modified: Wed, 11 Dec 2024 22:38:17 GMT  
-		Size: 9.4 KB (9444 bytes)  
+	-	`sha256:6706769334970294d65b0d1529bdf615cf3e6a523894522867af35ebcc4742a5`  
+		Last Modified: Wed, 29 Jan 2025 00:58:31 GMT  
+		Size: 9.4 KB (9435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5886264b731dc144aa7804945691ec139dc5e25aca8af6b11baf65f20a3026dd`  
-		Last Modified: Wed, 11 Dec 2024 22:38:18 GMT  
-		Size: 21.0 MB (20956256 bytes)  
+	-	`sha256:df58cba9800aeee146a64cb94fc24d1437451a565418657b23b62860166be525`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
+		Size: 21.0 MB (20956257 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7e62d5fbb45af6e4340667e2a8be2aa97f423886ca31c59a30170393a3fbd04`  
-		Last Modified: Wed, 11 Dec 2024 22:38:18 GMT  
-		Size: 188.0 B  
+	-	`sha256:e89ab46dead5b76fb033afc9188a4c7386d6ef3a4464c37f2529d29677414d88`  
+		Last Modified: Wed, 29 Jan 2025 00:58:32 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c314b4fc4138532a67f4e731170a526f5d1256d03cc4a716b7ea72280ed43b`  
-		Last Modified: Wed, 11 Dec 2024 22:38:19 GMT  
+	-	`sha256:fa1a6aba4f2022a1eafdbd501f5a1db9f0a3cf4afd9b91713b359e7b5eae3911`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52b7370a616c801d9cb4a20a61cd4773b8f40856ce2966615e08242d61a73f32`  
-		Last Modified: Wed, 11 Dec 2024 22:38:19 GMT  
-		Size: 617.0 B  
+	-	`sha256:664bbeb327017fcabe4f5eed4e6affad4ff4b5c1eead94eb4acec1c550d1953a`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
+		Size: 623.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:616345f27581916c481b31abdc55588a046934fc035c282cac29878ff6a3b637`  
-		Last Modified: Wed, 11 Dec 2024 22:38:19 GMT  
-		Size: 831.0 B  
+	-	`sha256:12082411c4bdeff35cdb9d190d9e6e489dee780eb57e83c9a584312758be3955`  
+		Last Modified: Wed, 29 Jan 2025 00:58:34 GMT  
+		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:902026fe1e9337773dce1a4dd7f0ece4a6878fbd3ebc45e86c7690d013abf309
+$ docker pull rabbitmq@sha256:ddcf5d5747439b2dcb75f52e1387ed761bafec86b8b5a41b19860f75186f58bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.1 MB (18129390 bytes)**  
+-	Total Size: **18.1 MB (18110102 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:caaa68b6da62ce53a759a6859a19434ed7ce4c85c9bcf8e469d51f6d29ae29fc`
+-	Image ID: `sha256:9509abcc8c8133ab2aafb2474b740a00f6dadf6a3e6dbc1e062bfac5c6226779`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c16d3fb82efa93618d97d7099117e8a5e9e216942ba8218f351d225f9cc31264`  
-		Last Modified: Wed, 11 Dec 2024 22:38:17 GMT  
-		Size: 2.4 MB (2369735 bytes)  
+	-	`sha256:ce88fccfbb4e43703f14d9e3337d371844fd4902d61a80db6a722b9166b829ca`  
+		Last Modified: Wed, 29 Jan 2025 00:58:32 GMT  
+		Size: 2.4 MB (2369459 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ec04d4beb1d1228b6afee479aa213c6d675945c82a3e6c393fe6187e80057883`  
-		Last Modified: Wed, 11 Dec 2024 22:38:17 GMT  
-		Size: 5.2 MB (5180978 bytes)  
+	-	`sha256:566959bed0e9103aab6acbce0184b697198bf7d593d637d1aa3b5feb3dd05609`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
+		Size: 5.2 MB (5174255 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9a26c845d614aa38c8b6d266bc27d817157f15a5aefb7026beb75e6218e7ace0`  
-		Last Modified: Wed, 11 Dec 2024 22:38:17 GMT  
-		Size: 5.3 MB (5336711 bytes)  
+	-	`sha256:bf0398942e91ae48af824ad77066f60b6e5076ee6f36057ff2f6d54b7a97d59a`  
+		Last Modified: Wed, 29 Jan 2025 00:58:32 GMT  
+		Size: 5.3 MB (5331127 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7584bfe93dd19ff57286b6c174a11daa1e45d324102ecbd5cfa9567ff0d0858`  
-		Last Modified: Wed, 11 Dec 2024 22:38:17 GMT  
-		Size: 5.2 MB (5182712 bytes)  
+	-	`sha256:8366a24dd7fbe1954fab32520d860832e1bf93cbb704aadce86b2976de1aebc8`  
+		Last Modified: Wed, 29 Jan 2025 00:58:32 GMT  
+		Size: 5.2 MB (5175997 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e9609a8e15269029b55daae79098260d9b034934431cc33a99b63d12506ece92`  
-		Last Modified: Wed, 11 Dec 2024 22:38:18 GMT  
-		Size: 59.3 KB (59254 bytes)  
+	-	`sha256:c8773da04a9386c0f6daf3922743be9edccd7686b8fe4b051b63d7e208cad18c`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
+		Size: 59.3 KB (59264 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-rc` - linux; riscv64
 
 ```console
-$ docker pull rabbitmq@sha256:f27b684740df207d67d9d5d2c83787ed5ac741b6f87998004ac66a7ba5a328e4
+$ docker pull rabbitmq@sha256:49582d4b8db5fbd980ce98d9870fad10d3efd55bdfcfac9b511572d552acf483
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **99.0 MB (98967684 bytes)**  
+-	Total Size: **99.0 MB (98979480 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f8d22875e82315c6422abe80e941f6bc32c2f85f6e4dd068af51ccc2ef139a2`
+-	Image ID: `sha256:191fd81398c23b12f7730212b6904027423a9587d5433b57cceb02d6e5f547c3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -24358,49 +24358,49 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:23c2e341d6cf3572f2762ef1304c406cf6d4f5ee8ee8719ef289a3b75a8323aa in / 
 # Tue, 19 Nov 2024 16:34:27 GMT
 CMD ["/bin/bash"]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		ldconfig; 	sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		groupadd --gid 999 --system rabbitmq; 	useradd --uid 999 --system --home-dir "$RABBITMQ_DATA_DIR" --gid rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.1.0-beta.3
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	export DEBIAN_FRONTEND=noninteractive; 	apt-get update; 	apt-get install --yes --no-install-recommends 		ca-certificates 		gosu 		tzdata 	; 	gosu nobody true; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get install --yes --no-install-recommends 		gnupg 		wget 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	gosu rabbitmq rabbitmqctl help; 	gosu rabbitmq rabbitmqctl list_ciphers; 	gosu rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN gosu rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -24409,73 +24409,73 @@ CMD ["rabbitmq-server"]
 		Last Modified: Tue, 19 Nov 2024 17:38:52 GMT  
 		Size: 31.0 MB (30980838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8fed26cd19175c1e49674a896fa0e40e2a6cde8a62490a87d18503bad9af8b27`  
-		Last Modified: Thu, 12 Dec 2024 00:03:32 GMT  
-		Size: 37.3 MB (37281928 bytes)  
+	-	`sha256:4e3eeb39d66e9a8e77660b2714f3ba13fcefa8b5b90abe0593a7585780c35d1d`  
+		Last Modified: Wed, 29 Jan 2025 01:41:33 GMT  
+		Size: 37.3 MB (37292087 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80f4f308364cbd96a45afc7705a79e92182bd81c84a010c5d5c46a55ce56cdf8`  
-		Last Modified: Thu, 12 Dec 2024 00:03:27 GMT  
-		Size: 9.8 MB (9783482 bytes)  
+	-	`sha256:829a259e6eea4ed880c8b37981d90df14491ce05912c2349be4b03a68ec51ee9`  
+		Last Modified: Wed, 29 Jan 2025 01:41:29 GMT  
+		Size: 9.8 MB (9785121 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:439dbee123c9e270fb2ada75c33aea9a0e8a826582867b63f144367c3f10227b`  
-		Last Modified: Thu, 12 Dec 2024 00:03:25 GMT  
-		Size: 9.5 KB (9499 bytes)  
+	-	`sha256:7c2bbbfe4bdfe09d58061d168bb6fa6de75ecabf0871e5b63e100c533201b89d`  
+		Last Modified: Wed, 29 Jan 2025 01:41:26 GMT  
+		Size: 9.5 KB (9491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bf37f514ca66e8761dbf986ac7aee48b8ed4eeacc6f71ae29bdb10c6b8d0015`  
-		Last Modified: Thu, 12 Dec 2024 00:03:29 GMT  
-		Size: 20.9 MB (20910181 bytes)  
+	-	`sha256:6f044e702daa1aae1517e5455efe133851aa5682009d0a84ac3fe69deecd906b`  
+		Last Modified: Wed, 29 Jan 2025 01:41:31 GMT  
+		Size: 20.9 MB (20910189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22176869c29555321f153316332ea3e766be490ef40bc81e461eee25dc3c2ce4`  
-		Last Modified: Thu, 12 Dec 2024 00:03:26 GMT  
-		Size: 189.0 B  
+	-	`sha256:bf27ccadde31670c988e2977453d5d10383fe7a59986ef45ab354c22dbfddd59`  
+		Last Modified: Wed, 29 Jan 2025 01:41:27 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92d8b040ef3f1016347264355317a233414db60d78ddf0cf1f367813ba9824b8`  
-		Last Modified: Thu, 12 Dec 2024 00:03:27 GMT  
-		Size: 109.0 B  
+	-	`sha256:a3e275d3ecd151f1678a7d4d09f21cd61dbb0abce9751d5465229b210811fd87`  
+		Last Modified: Wed, 29 Jan 2025 01:41:28 GMT  
+		Size: 106.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:868b6e35cd0a6a13a9e31123e88b1e457a6670f79485d93ebc95acd7758a7662`  
-		Last Modified: Thu, 12 Dec 2024 00:03:28 GMT  
+	-	`sha256:3de586921822b4b096070e64c932c46d9d0132e046fe864d19ac9534380df71d`  
+		Last Modified: Wed, 29 Jan 2025 01:41:29 GMT  
 		Size: 622.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53d4a93236274fc492b14381f6add1dedf36736ffa2a9e1a69e70b11a3d6015c`  
-		Last Modified: Thu, 12 Dec 2024 00:03:29 GMT  
-		Size: 836.0 B  
+	-	`sha256:6101ff3f21066857216530c64715bbe74d93900faf1360f2415dd498d36c945c`  
+		Last Modified: Wed, 29 Jan 2025 01:41:30 GMT  
+		Size: 838.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:4a917d4975a5e3095ef5dc5c64b00e1741efc7661c64ba592bb05e3b415bf8bb
+$ docker pull rabbitmq@sha256:db89a7e6adff5f718c2e3b8eb163d6e54e77e76528a3449365a15c40e733fc77
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.1 MB (18087921 bytes)**  
+-	Total Size: **18.1 MB (18083736 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5239fd2edc552576b7ab7b5663eea36491d7a4f4f55b8fa78a243b94745399fb`
+-	Image ID: `sha256:3b61f9d7db955d7990fea892db0ecfbf5a971fab58f05e4c378f1cb9410ffb52`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a77af335557147554e57fc51e8a677f27d7ccdc79ce9c0ff69526ea3f7d50f21`  
-		Last Modified: Thu, 12 Dec 2024 00:03:26 GMT  
-		Size: 2.4 MB (2357973 bytes)  
+	-	`sha256:b5b4672b7a266a9fb5d244696b60407af26a1f5b4d0236a37d4484388ce58e74`  
+		Last Modified: Wed, 29 Jan 2025 01:41:27 GMT  
+		Size: 2.4 MB (2357669 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:06f7448104b1a0d2c500b41706da7172ae1349e96b62ae205fd5e6be9781661a`  
-		Last Modified: Thu, 12 Dec 2024 00:03:27 GMT  
-		Size: 5.2 MB (5171934 bytes)  
+	-	`sha256:a5caf6f0d4ffcdf955b412bd0555873fe1c48f1485e578256fe29fc84550e1ee`  
+		Last Modified: Wed, 29 Jan 2025 01:41:28 GMT  
+		Size: 5.2 MB (5170256 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:45b632177ed87d7ae6e7a5447b5063bb7715c89140b21a329273e2f18e94d073`  
-		Last Modified: Thu, 12 Dec 2024 00:03:27 GMT  
-		Size: 5.3 MB (5325092 bytes)  
+	-	`sha256:e1c2f78724fe01681c0e9233fad2f5955ae674be99fb078d6d22626eb1f70afb`  
+		Last Modified: Wed, 29 Jan 2025 01:41:28 GMT  
+		Size: 5.3 MB (5324549 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b6f6f12380d4de63a51d66409777ef7dba920946f4b734c5c97d7201711642f7`  
-		Last Modified: Thu, 12 Dec 2024 00:03:27 GMT  
-		Size: 5.2 MB (5173668 bytes)  
+	-	`sha256:222730043c4977c6fead927a1fc141de9f1301d90857919e5b0b583bd8f5564d`  
+		Last Modified: Wed, 29 Jan 2025 01:41:28 GMT  
+		Size: 5.2 MB (5171998 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:34b12bf8bfdd164cf80644fd7fb2a0575965c8efeaec131f6fab3bbd35c29b92`  
-		Last Modified: Thu, 12 Dec 2024 00:03:27 GMT  
-		Size: 59.3 KB (59254 bytes)  
+	-	`sha256:32325a3f3c0d9b53483deacdb74eaaa4101311c1bb768db6ad5cad289ba60008`  
+		Last Modified: Wed, 29 Jan 2025 01:41:28 GMT  
+		Size: 59.3 KB (59264 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-rc` - linux; s390x
@@ -24627,7 +24627,7 @@ $ docker pull rabbitmq@sha256:35df7d07c615c1f1296412ebe775dc3b46102b6182152e4efd
 ## `rabbitmq:4.1-rc-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:dd7f0e705b1544404b41ba0ca0627e5c429b1c385ff76f9b6255e9079bba4ced
+$ docker pull rabbitmq@sha256:472191f04e51bbd8683dcb326e3ce681fbf177ff981c9eae64cb40940989d27f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24652,64 +24652,64 @@ $ docker pull rabbitmq@sha256:dd7f0e705b1544404b41ba0ca0627e5c429b1c385ff76f9b62
 ### `rabbitmq:4.1-rc-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:7092ca9a09fe8b0d26eac80c90a13a3baa5af875add83b76418271fbfeb08645
+$ docker pull rabbitmq@sha256:30be02f79ec4ac0efb9dd36e6b74adb1e76f404bdef79a9a49f87e36a023b541
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.7 MB (77652278 bytes)**  
+-	Total Size: **77.7 MB (77652344 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8854bb3dfcf1794a141f007c29b3cf69390613cb2653cecb9e7523e746fc2c0f`
+-	Image ID: `sha256:b665d0feec75c545485f801bacdfc7398e82cc678621861eede46dedc3ec3e85`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-x86_64.tar.gz / # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive $ERLANG_INSTALL_PATH_PREFIX $OPENSSL_INSTALL_PATH_PREFIX 			| tr ',' '\n' 			| sort -u 			| grep -v '^$\|lib\(crypto\|ssl\)' 			| awk 'system("test -e /usr/local/lib/" $1) == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .otp-run-deps $runDeps; 		sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		addgroup -g 101 -S rabbitmq; 	adduser -u 100 -S -h "$RABBITMQ_DATA_DIR" -G rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie; 		apk add --no-cache 		'su-exec>=0.2' 		bash 		procps 		tzdata # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.1.0-beta.3
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	mkdir -p /usr/local/src; 		apk add --no-cache --virtual .build-deps 		gnupg 		xz 	; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apk del --no-network .build-deps; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	su-exec rabbitmq rabbitmqctl help; 	su-exec rabbitmq rabbitmqctl list_ciphers; 	su-exec rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN su-exec rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -24718,69 +24718,69 @@ CMD ["rabbitmq-server"]
 		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
 		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7dad2cd62b35ea5b3826890b7949c92cce160541e6a2f37de86f90b15b059451`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 45.0 MB (44989675 bytes)  
+	-	`sha256:389cbcd4d157ff7449170dc964d28403866cc81f78d56b9c104529a917a37c7a`  
+		Last Modified: Wed, 29 Jan 2025 00:34:19 GMT  
+		Size: 45.0 MB (44989696 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4fbc9e4b76010d4da8935513ae6a82d08cb3fc24ef8e1270c3c326c9cf73e14`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 8.3 MB (8309047 bytes)  
+	-	`sha256:cdaad5fc164e256765b06485ec0b28c718532996f8b7c704aee027a7182f7504`  
+		Last Modified: Wed, 29 Jan 2025 00:34:19 GMT  
+		Size: 8.3 MB (8309063 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29a58ffeec9a8f9b81e7c8e4c3aad715f27412d9a17598ede53dedcb91d308bd`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 2.3 MB (2277952 bytes)  
+	-	`sha256:5d8b1b66431943dd9ebbd875f15488376930e1c082b8949b406e9c607ea57d91`  
+		Last Modified: Wed, 29 Jan 2025 00:34:18 GMT  
+		Size: 2.3 MB (2277964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0196beee2b1ee16432f2861f1ad1c5fe6c5403568f0a968dd2824263940a1c30`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 18.4 MB (18432142 bytes)  
+	-	`sha256:fb1ca56315d11026e56cec247e9ad6ca0f98e60f725f111da701061105fbdde8`  
+		Last Modified: Wed, 29 Jan 2025 00:34:19 GMT  
+		Size: 18.4 MB (18432156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0353fe875b77cc6d05037ad0e99a35b60cc285c7438bc39498b1e289610f8951`  
-		Last Modified: Wed, 08 Jan 2025 18:23:51 GMT  
+	-	`sha256:58a318b906222c6fd50f07ee1fc9301ba3146fcc41c86aa7d6e888b314d14c60`  
+		Last Modified: Wed, 29 Jan 2025 00:34:19 GMT  
 		Size: 193.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b4fda668dad22dcdd7087c7ac617bd6d7bcbff9eb57348fb14d953d15e77d50a`  
-		Last Modified: Wed, 08 Jan 2025 18:23:51 GMT  
-		Size: 108.0 B  
+	-	`sha256:129d17aa835beeb75f378b3a597a327389f624dbae75e71032823b0ff17442ac`  
+		Last Modified: Wed, 29 Jan 2025 00:34:20 GMT  
+		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b441c75c33ebcc4405c0f67d676f7188d5cb07ef17eab96c88b571b8cfcc1c4`  
-		Last Modified: Wed, 08 Jan 2025 18:23:51 GMT  
-		Size: 618.0 B  
+	-	`sha256:a36c3149efd889213b278f6f5325356ae3e49e606bdfe55e78825c94b36e440f`  
+		Last Modified: Wed, 29 Jan 2025 00:34:20 GMT  
+		Size: 619.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dce25257de71f79ce304c34aa3d7d104cce1ca2ec08828eddb4adc51331df23d`  
-		Last Modified: Wed, 08 Jan 2025 18:23:52 GMT  
-		Size: 828.0 B  
+	-	`sha256:84c209cc30796a8c2e005f42e04f7d9b55611ffd49bb820208774c035a2d99df`  
+		Last Modified: Wed, 29 Jan 2025 00:34:21 GMT  
+		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:01c7db70a0863736cd00510b94e0e0f71d245db0cb56d98abfde6c20fcbcd91e
+$ docker pull rabbitmq@sha256:4b1a1dd5aad740248a64a088d79cee0cec6d5f8c1e6a698f31d2831c2ba49275
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.7 MB (6726970 bytes)**  
+-	Total Size: **6.5 MB (6456118 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3de0a03a438a1d7ad6edf59f9eb135f10912941023c3e39b8679ab0b4320b5ab`
+-	Image ID: `sha256:5d001b673cb812c78488eb637aebeb1872f88d0b9d3ff5d1aaf16b2de7490642`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ccc37e4c14dd559fd1330059b309fc0c52ea85af4cb2870a2e76b4731a3f6075`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 658.2 KB (658161 bytes)  
+	-	`sha256:45c2bf0ed02392144aa81f20e41b9d3fe2c2d4b042d2edbd7cdfb5aa9b25d46c`  
+		Last Modified: Wed, 29 Jan 2025 00:34:18 GMT  
+		Size: 537.6 KB (537650 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:af748a85c65eb73b6600cd10daf6192b773507a831f7eaf5a65256c1b23aa5e5`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 3.1 MB (3080991 bytes)  
+	-	`sha256:78df016854a4dfbad5b5eacb8b2c73412ff09b5c3cfc2bf0dc80880191a949d7`  
+		Last Modified: Wed, 29 Jan 2025 00:34:18 GMT  
+		Size: 2.9 MB (2931665 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:54c8f5b21e03a4aa1ba728911bd5dc4f1e271b4aea205322fff25ca27e6b41d1`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
+	-	`sha256:95b12b9eeaa55e682d382f946312787d752c90df0f94652b843c97e201f47305`  
+		Last Modified: Wed, 29 Jan 2025 00:34:19 GMT  
 		Size: 2.9 MB (2927487 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:119e4c7ee423ca302d99f6e26109c9b682e357be93e9fa7dac81e40143a78c81`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 60.3 KB (60331 bytes)  
+	-	`sha256:52cf47213674be94e0dff27e9f8511467f20d5df355b6a8a313bcb5a5a283f53`  
+		Last Modified: Wed, 29 Jan 2025 00:34:18 GMT  
+		Size: 59.3 KB (59316 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-rc-alpine` - linux; arm variant v6
@@ -25042,64 +25042,64 @@ $ docker pull rabbitmq@sha256:93f76a23fc8a07eaf7c62357742e722b6a9ab30786585b1a32
 ### `rabbitmq:4.1-rc-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:c46f607617ab08f40e97056e826de981e4cce645e62ad419e8ad43918847bb51
+$ docker pull rabbitmq@sha256:0fe843cb9b06001adb50e9aea34e72183e47c0a2e4bf225f071ebc45654824fd
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.8 MB (76775089 bytes)**  
+-	Total Size: **76.8 MB (76774996 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d0fc0c0e3fa32656e19a0e8017ba90ec345b6a077b1388b4a15a1796a426f168`
+-	Image ID: `sha256:cfeb0532dd67e0f4e288173bd6c2e453f2638270cd7e1406ba68eba47752dd16`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-aarch64.tar.gz / # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive $ERLANG_INSTALL_PATH_PREFIX $OPENSSL_INSTALL_PATH_PREFIX 			| tr ',' '\n' 			| sort -u 			| grep -v '^$\|lib\(crypto\|ssl\)' 			| awk 'system("test -e /usr/local/lib/" $1) == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .otp-run-deps $runDeps; 		sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		addgroup -g 101 -S rabbitmq; 	adduser -u 100 -S -h "$RABBITMQ_DATA_DIR" -G rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie; 		apk add --no-cache 		'su-exec>=0.2' 		bash 		procps 		tzdata # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.1.0-beta.3
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	mkdir -p /usr/local/src; 		apk add --no-cache --virtual .build-deps 		gnupg 		xz 	; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apk del --no-network .build-deps; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	su-exec rabbitmq rabbitmqctl help; 	su-exec rabbitmq rabbitmqctl list_ciphers; 	su-exec rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN su-exec rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -25108,132 +25108,132 @@ CMD ["rabbitmq-server"]
 		Last Modified: Wed, 08 Jan 2025 17:23:52 GMT  
 		Size: 4.0 MB (3992359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d5733c5c090ae5ea2628a055e8b807b804be91c20b4a1bd047cedbeb68627ca6`  
-		Last Modified: Thu, 09 Jan 2025 05:11:54 GMT  
-		Size: 43.0 MB (42994345 bytes)  
+	-	`sha256:bf8f58a9acff87800b0001621a0abebfc3c9256c4c94a48a3a7fbcea584c0906`  
+		Last Modified: Wed, 29 Jan 2025 00:50:53 GMT  
+		Size: 43.0 MB (42994244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3fea365716298d4773137f411c2ea7ed225f2a38828f3179479e8e6538b5ae01`  
-		Last Modified: Thu, 09 Jan 2025 05:11:54 GMT  
-		Size: 9.0 MB (9031966 bytes)  
+	-	`sha256:c8f1ae3712c034843f3ef3ad2102e119cbfc862fe0ee876934366fa40b1acc70`  
+		Last Modified: Wed, 29 Jan 2025 00:50:52 GMT  
+		Size: 9.0 MB (9031962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98a6cce2e0abf3aad35f81bdd87005a80fbec8ded15d57c2d9fa4276a88d8e7c`  
-		Last Modified: Thu, 09 Jan 2025 05:11:53 GMT  
-		Size: 2.3 MB (2322576 bytes)  
+	-	`sha256:432b652fcf3bb55aaa67496f9cccaf3d151c4085e26948a6d515ab1581a0397d`  
+		Last Modified: Wed, 29 Jan 2025 00:50:52 GMT  
+		Size: 2.3 MB (2322584 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f83400d86bf0af8021ae2dae08c1eca8890dfb1ff67ff563574d7fdc75d3c9c`  
-		Last Modified: Thu, 09 Jan 2025 05:11:54 GMT  
-		Size: 18.4 MB (18432090 bytes)  
+	-	`sha256:4b89e9fd9ae3935bc633956dc9483eb4c26e5c2439ae04368f9f0f98697a3739`  
+		Last Modified: Wed, 29 Jan 2025 00:50:53 GMT  
+		Size: 18.4 MB (18432104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ef03248d9eb4e785f005161c68f62f8d8b9323d6e44d50e0d0e469d6c321634`  
-		Last Modified: Thu, 09 Jan 2025 05:11:54 GMT  
-		Size: 193.0 B  
+	-	`sha256:0cca1e2d1a7b211185d8f372cc91fd0df9cae287310e75bb11b96b8ec606a2e6`  
+		Last Modified: Wed, 29 Jan 2025 00:50:53 GMT  
+		Size: 191.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57118d6ab4823029393503bbf1f115efef45cb1ae0e9061c601bfc16d09fee66`  
-		Last Modified: Thu, 09 Jan 2025 05:11:55 GMT  
+	-	`sha256:383e26c253e749e92969b0d053bc00959222f50fb51d22e7c40795ddb65fc659`  
+		Last Modified: Wed, 29 Jan 2025 00:50:53 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7fa8bb5f7948fde560c4573471ca89d2d5c48f33549fc22e47e3c83a7f75fa44`  
-		Last Modified: Thu, 09 Jan 2025 05:11:55 GMT  
-		Size: 619.0 B  
+	-	`sha256:e17bd88f0585b5de8f88a2b1616a1897423e6ab65997e5358f607e9efcecec86`  
+		Last Modified: Wed, 29 Jan 2025 00:50:54 GMT  
+		Size: 617.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e985857cf9ee7f5796313a668352716cee28cdd9eb29b5ce04ae806610934c7`  
-		Last Modified: Thu, 09 Jan 2025 05:11:55 GMT  
-		Size: 832.0 B  
+	-	`sha256:a716d6d2dda62a3b8c7ccd9eb7415270b73749d0b7b6c01b994d17f4c3ea257d`  
+		Last Modified: Wed, 29 Jan 2025 00:50:54 GMT  
+		Size: 826.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:60668fd81144c751260f89f85ca09246fff7bd4d2a61dd540e4df2323eb4682d
+$ docker pull rabbitmq@sha256:10d8290bb060c063cd5c62b3f0065ae63578a93e1ba6572732f4b4ca133cabde
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.8 MB (6836196 bytes)**  
+-	Total Size: **6.8 MB (6835506 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf092786997b00dc30d7781cff93faf16db8310c7efd8176a236599ab3d677b1`
+-	Image ID: `sha256:82666a79cb145953776e4e4ba60f41c486ab2707e4dbb261977d22e8eec81a68`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:894cf02a92041f0044a2a8027257e5a4bb7a9077a2bc24805dc771b6afabdb26`  
-		Last Modified: Thu, 09 Jan 2025 05:11:53 GMT  
-		Size: 658.9 KB (658926 bytes)  
+	-	`sha256:e5e987fa43c23cf570d3310e5ddfc03ff42d8ccb80c4635a8ced284aaa714203`  
+		Last Modified: Wed, 29 Jan 2025 00:50:52 GMT  
+		Size: 658.9 KB (658948 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3800826b523c67abc296d67796d7ffbc39b50f85179c11c2314b1dfb90029fcc`  
-		Last Modified: Thu, 09 Jan 2025 05:11:54 GMT  
-		Size: 3.1 MB (3135772 bytes)  
+	-	`sha256:8e6b365569ef75d7dbf943b0acfb047da6689ec8623036909659067dfe102b08`  
+		Last Modified: Wed, 29 Jan 2025 00:50:52 GMT  
+		Size: 3.1 MB (3136074 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:61c62ba9a25d64b34282dfbafa6553a8055b02974efa7c030dcbbd02ebb2f5bf`  
-		Last Modified: Thu, 09 Jan 2025 05:11:54 GMT  
+	-	`sha256:8c994da8fe1ad95ea19593fe9bb7d10f3fc89b2f7a6a5117a00fec6e7ad55199`  
+		Last Modified: Wed, 29 Jan 2025 00:50:52 GMT  
 		Size: 3.0 MB (2980953 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f8cefcc2067bf85d4ac1dc5120b3d9db255bd6ec0e5fb25b92ee9d1f33c7fc83`  
-		Last Modified: Thu, 09 Jan 2025 05:11:53 GMT  
-		Size: 60.5 KB (60545 bytes)  
+	-	`sha256:ec97c817326af2141b100e4b190bd57e81b62c50e6ecaca9e1b548fa4495ed85`  
+		Last Modified: Wed, 29 Jan 2025 00:50:52 GMT  
+		Size: 59.5 KB (59531 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-rc-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:c2983c416a2aa9c15d522b2af9f42f84adb6247c570b05248dc06b10c98f4d7b
+$ docker pull rabbitmq@sha256:938ae4a45615dc28628ebff849f95369cfb6ad1e8ea9e8ee35c202dbc9a8e08c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **67.1 MB (67127013 bytes)**  
+-	Total Size: **67.1 MB (67132193 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a8800380b5394deb92acdaf97294f2e65fae8a413c257567fb9105a4748bf5c9`
+-	Image ID: `sha256:9523e203043ea900ce8d5d9a8314e0ba2ec0eea2101791a867cfc6ef19b72e3d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-x86.tar.gz / # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive $ERLANG_INSTALL_PATH_PREFIX $OPENSSL_INSTALL_PATH_PREFIX 			| tr ',' '\n' 			| sort -u 			| grep -v '^$\|lib\(crypto\|ssl\)' 			| awk 'system("test -e /usr/local/lib/" $1) == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .otp-run-deps $runDeps; 		sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		addgroup -g 101 -S rabbitmq; 	adduser -u 100 -S -h "$RABBITMQ_DATA_DIR" -G rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie; 		apk add --no-cache 		'su-exec>=0.2' 		bash 		procps 		tzdata # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.1.0-beta.3
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	mkdir -p /usr/local/src; 		apk add --no-cache --virtual .build-deps 		gnupg 		xz 	; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apk del --no-network .build-deps; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	su-exec rabbitmq rabbitmqctl help; 	su-exec rabbitmq rabbitmqctl list_ciphers; 	su-exec rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN su-exec rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -25242,132 +25242,132 @@ CMD ["rabbitmq-server"]
 		Last Modified: Wed, 08 Jan 2025 17:23:36 GMT  
 		Size: 3.5 MB (3463126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4b4ec519bbc58b1fb8bccf7f0da70e5e234775b9265198764005e6fb2c20ebf`  
-		Last Modified: Wed, 08 Jan 2025 18:16:40 GMT  
-		Size: 35.7 MB (35680594 bytes)  
+	-	`sha256:962578e28c3b99f2d75d61c1f530bbcb1d02288c21c4793f8d79d532a35b03ff`  
+		Last Modified: Wed, 29 Jan 2025 00:33:54 GMT  
+		Size: 35.7 MB (35685730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a10c39e6bac97589b7c5f75bb41eb5bf71526fd0e9176c05e01de32b3e2a8265`  
-		Last Modified: Wed, 08 Jan 2025 18:16:39 GMT  
-		Size: 8.3 MB (8320848 bytes)  
+	-	`sha256:d910eecc1ebbf5884dea2dcf27bf574a74be5844415095ba061514b081aae582`  
+		Last Modified: Wed, 29 Jan 2025 00:33:53 GMT  
+		Size: 8.3 MB (8320842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1626eca3d5ffa941543e5ba196dfde6f51be2e4cc64e7c9c177a6d638f7e1c7`  
-		Last Modified: Wed, 08 Jan 2025 18:16:39 GMT  
-		Size: 1.2 MB (1229370 bytes)  
+	-	`sha256:246edc462139ce522f601b0a305b342e5299a37d9a321463b3a48870384bfa4b`  
+		Last Modified: Wed, 29 Jan 2025 00:33:53 GMT  
+		Size: 1.2 MB (1229393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb37e29ba3e76c564b4531952725a01209eeee5f61af88c8fd6b56c2cdc30576`  
-		Last Modified: Wed, 08 Jan 2025 18:16:40 GMT  
-		Size: 18.4 MB (18431328 bytes)  
+	-	`sha256:aa65f22ad474a417aee08eea387883ce26971a2f6ba0848269e939f862d4c45b`  
+		Last Modified: Wed, 29 Jan 2025 00:33:54 GMT  
+		Size: 18.4 MB (18431351 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3b19b123f4f9f0bdffae556c07e0a79509b9d532119bf9e6fc718e4133c1b6c`  
-		Last Modified: Wed, 08 Jan 2025 18:16:40 GMT  
-		Size: 190.0 B  
+	-	`sha256:af6d3e63124ffd3d0845ba2145f2eaa6408ebfddc9eb7c6461106a764105c073`  
+		Last Modified: Wed, 29 Jan 2025 00:33:54 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ccf53baa7b767401d69fb9496d7ca99de730cbdab3dd03182a5999bb0ca37c3f`  
-		Last Modified: Wed, 08 Jan 2025 18:16:40 GMT  
+	-	`sha256:614929415c02bca768f9f4bca47f3ba8fb7502215373888fe8903428ef1fa784`  
+		Last Modified: Wed, 29 Jan 2025 00:33:54 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ad80bc63e1448527e07b878816bf384a78b35136baaa3706fea022783609100`  
-		Last Modified: Wed, 08 Jan 2025 18:16:40 GMT  
-		Size: 618.0 B  
+	-	`sha256:0e64a1740a4b58bc4cdcc8b9579a249a62ed453885b5f0ffea25352cc5072ebf`  
+		Last Modified: Wed, 29 Jan 2025 00:33:55 GMT  
+		Size: 619.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6717dfa26da85a34c72f72175cc4856006a86dcbd4b09f9bbc406cf35eab4396`  
-		Last Modified: Wed, 08 Jan 2025 18:16:41 GMT  
+	-	`sha256:a8b269333be80ce40f6a66ac471338c2024deda4382717cbd829d93ae0f382db`  
+		Last Modified: Wed, 29 Jan 2025 00:33:55 GMT  
 		Size: 830.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:faf01f7e1451a0f84fce845255a25b1b5de3a36ea697555a91e8164ddb2ba060
+$ docker pull rabbitmq@sha256:eefba9731cf640b55dd0f619d56a6995b2a5da4073125b19cdcf690006da642f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.7 MB (6700205 bytes)**  
+-	Total Size: **6.4 MB (6429353 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5cf8b498abe83f009c4679ba74efd5e1e9a3e63c30aa9226f115fd7d464fd4d4`
+-	Image ID: `sha256:fcd47b2bddf5f7dba69d42d75a6328d0ebfb01cf7a5094218852b02e4ec11721`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bfc76c5e2d98b424d8630ce10f76b623f500ddb327cec220d85f4d852053bae9`  
-		Last Modified: Wed, 08 Jan 2025 18:16:39 GMT  
-		Size: 653.5 KB (653520 bytes)  
+	-	`sha256:df80fcaf41318d69c74c15ce512e5a93662de39b540bd3449db95c3f6a29c7f2`  
+		Last Modified: Wed, 29 Jan 2025 00:33:53 GMT  
+		Size: 533.0 KB (533009 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0074b208741bf3d8e29b48ece5583164085715bc71c620873ca255a2bec59eed`  
-		Last Modified: Wed, 08 Jan 2025 18:16:39 GMT  
-		Size: 3.1 MB (3069947 bytes)  
+	-	`sha256:374615da723ae27b29b22c20be575d38e3108d6144fb90d068db7d16a5e8e35d`  
+		Last Modified: Wed, 29 Jan 2025 00:33:53 GMT  
+		Size: 2.9 MB (2920621 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4bf3d91c63a924def22162f5131ccac985d6bef253a62bde6f1a2365bfa73e82`  
-		Last Modified: Wed, 08 Jan 2025 18:16:39 GMT  
+	-	`sha256:04d2534d671442dc9dfa5e1649d56811500c98651ecccd13bd603f2acdcc1340`  
+		Last Modified: Wed, 29 Jan 2025 00:33:53 GMT  
 		Size: 2.9 MB (2916447 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2e015936973b4f648d4046e7eee838fa665d39822f96016c189d7a47b6674884`  
-		Last Modified: Wed, 08 Jan 2025 18:16:39 GMT  
-		Size: 60.3 KB (60291 bytes)  
+	-	`sha256:3d7a72622807f00b9d03602b0cf745d2eb87b8d15823f2aa36ea91b6b78c1a93`  
+		Last Modified: Wed, 29 Jan 2025 00:33:53 GMT  
+		Size: 59.3 KB (59276 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-rc-alpine` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:ab7f854f2fe65639cbcb96b0d64fd944bb80444ddeb3656f2794dd797d2a1902
+$ docker pull rabbitmq@sha256:6398772d1d6b700b9e6afe566302d81f32dfc5ed0886239af654493b95d3591a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.3 MB (68282147 bytes)**  
+-	Total Size: **68.3 MB (68282224 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0aa75f544ceb746e6ec004a6da5829300d670bf8d9c24b19b8f9ba9696c3b302`
+-	Image ID: `sha256:732e3f6dff69cfc0b1f6316b8fa6dea413ec3ae1a84f5b569f1e9182aff8a7c4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-ppc64le.tar.gz / # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive $ERLANG_INSTALL_PATH_PREFIX $OPENSSL_INSTALL_PATH_PREFIX 			| tr ',' '\n' 			| sort -u 			| grep -v '^$\|lib\(crypto\|ssl\)' 			| awk 'system("test -e /usr/local/lib/" $1) == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .otp-run-deps $runDeps; 		sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		addgroup -g 101 -S rabbitmq; 	adduser -u 100 -S -h "$RABBITMQ_DATA_DIR" -G rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie; 		apk add --no-cache 		'su-exec>=0.2' 		bash 		procps 		tzdata # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.1.0-beta.3
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	mkdir -p /usr/local/src; 		apk add --no-cache --virtual .build-deps 		gnupg 		xz 	; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apk del --no-network .build-deps; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	su-exec rabbitmq rabbitmqctl help; 	su-exec rabbitmq rabbitmqctl list_ciphers; 	su-exec rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN su-exec rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -25376,132 +25376,132 @@ CMD ["rabbitmq-server"]
 		Last Modified: Wed, 08 Jan 2025 17:24:16 GMT  
 		Size: 3.6 MB (3573601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d53e5bb36b5dc0ab79ffe8362486b61d2e230bfc5f65e0c863695410ff3fa79e`  
-		Last Modified: Thu, 09 Jan 2025 00:21:40 GMT  
-		Size: 36.1 MB (36085885 bytes)  
+	-	`sha256:a9dace6bf80f3bb449709147fd3ffba8d80f08537473fed155807c96df1a4c78`  
+		Last Modified: Wed, 29 Jan 2025 01:02:51 GMT  
+		Size: 36.1 MB (36086039 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53da1405ffcec279092e19a4e2871dea98e230594da7ab4f75c6fe2a6acd7c17`  
-		Last Modified: Thu, 09 Jan 2025 00:21:39 GMT  
-		Size: 8.8 MB (8844419 bytes)  
+	-	`sha256:aa6e785eab4b4b33ae68e1d99daf8746b7eca3c89945f0ce9abf0e261127067e`  
+		Last Modified: Wed, 29 Jan 2025 01:02:50 GMT  
+		Size: 8.8 MB (8844433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35b34bba648bac3e531bcd2875754e6a724f60adb4e6b90ba2cfcc89f8a246da`  
-		Last Modified: Thu, 09 Jan 2025 00:21:39 GMT  
-		Size: 1.3 MB (1345127 bytes)  
+	-	`sha256:42ccc248f17eb35673e69538dad793cc79b45d3eaac006df24a99a90355bcd5f`  
+		Last Modified: Wed, 29 Jan 2025 01:02:49 GMT  
+		Size: 1.3 MB (1345152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f1c02076e9343b8049bdbf57d3e876d7589f0728c6379747eb595660328868f`  
-		Last Modified: Thu, 09 Jan 2025 00:21:39 GMT  
-		Size: 18.4 MB (18431365 bytes)  
+	-	`sha256:38f966235b411c46b48a3841a0f6759d2e0b09890d5893ff86a08f07360aafaf`  
+		Last Modified: Wed, 29 Jan 2025 01:02:50 GMT  
+		Size: 18.4 MB (18431253 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbb215ae6c3748e3ffca422111b5c3330f1c5db8f8924ef5aa7247885345b26c`  
-		Last Modified: Thu, 09 Jan 2025 00:21:40 GMT  
-		Size: 193.0 B  
+	-	`sha256:0eaf31fc1f24fb8a8f8b88d1060110cfa6d06a7bf2ae5103d8e86f4809e34fe0`  
+		Last Modified: Wed, 29 Jan 2025 01:02:50 GMT  
+		Size: 191.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1683beae32c15dd21e1f4b749f046f60babdbd22d496785faf9b80d89cb9ba0e`  
-		Last Modified: Thu, 09 Jan 2025 00:21:40 GMT  
-		Size: 109.0 B  
+	-	`sha256:eae3fd7efdf2bcc67a32283c90b1e8ef04b7ed670f2fdb5e234bfe7e5e02b54b`  
+		Last Modified: Wed, 29 Jan 2025 01:02:51 GMT  
+		Size: 106.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73cc3600db23d840bd5a36c724bc4ed960a68490a67bd83cf47bedbc982eee93`  
-		Last Modified: Thu, 09 Jan 2025 00:21:40 GMT  
-		Size: 619.0 B  
+	-	`sha256:091beec1826662af13e1b134933b261bed1110d89454b722046a498afc4f315a`  
+		Last Modified: Wed, 29 Jan 2025 01:02:51 GMT  
+		Size: 620.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5360caa71c6a5a854411e766abe9605c7b935d1320187e39e5674a0770c01410`  
-		Last Modified: Thu, 09 Jan 2025 00:21:41 GMT  
+	-	`sha256:797e87c766f7a823045eb171c2b58d6fa06a7884595a022e680fbe55fb975e4d`  
+		Last Modified: Wed, 29 Jan 2025 01:02:51 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:1836dffb598f3af7c455548adfecaef5d7f90ecc3dafa7a95731b02a26950421
+$ docker pull rabbitmq@sha256:5c1e0ebbec627faae35fa02eb4d05b02f9198e0972ea4a0fcb397f7a29058cda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.7 MB (6731915 bytes)**  
+-	Total Size: **6.7 MB (6731224 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2ba133e57c417134870a71e6e6f4605aa579eff0a5cef079a02e650e9241238`
+-	Image ID: `sha256:0958ff860442d42d3463a066a13f3a7736734eac2811a301d3647eeb0f2f0ce6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c6b70bfac0c361eb013a0f99f33ca0cb46ae8457c1f954817e8ba116773a1826`  
-		Last Modified: Thu, 09 Jan 2025 00:21:38 GMT  
-		Size: 652.3 KB (652339 bytes)  
+	-	`sha256:5b082aa87a6490da0d7fc62a00ffdd8fb2ed305f96fef6cb39f3e32b53e068e6`  
+		Last Modified: Wed, 29 Jan 2025 01:02:49 GMT  
+		Size: 652.4 KB (652361 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aa55ca1da5dbaccf5899f653b2728840bbd600b78ce2db179b9daa7dcf3716fc`  
-		Last Modified: Thu, 09 Jan 2025 00:21:39 GMT  
-		Size: 3.1 MB (3087013 bytes)  
+	-	`sha256:040afa46c917580e90f413a9186f6804576229d645305d856685a68fd3b25801`  
+		Last Modified: Wed, 29 Jan 2025 01:02:49 GMT  
+		Size: 3.1 MB (3087315 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:373636498364c657c45a268a0890d71c1c5d8d9786b540010894bf7c361227f6`  
-		Last Modified: Thu, 09 Jan 2025 00:21:39 GMT  
+	-	`sha256:e430ffdd26c637200e8a5718152468fad03519e216b1287f340f7baf40ded052`  
+		Last Modified: Wed, 29 Jan 2025 01:02:49 GMT  
 		Size: 2.9 MB (2932182 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:92e3bffe484ab7afcf545bcc47dd9762ea36146f3921f1d27ebf6f56363d7ae9`  
-		Last Modified: Thu, 09 Jan 2025 00:21:38 GMT  
-		Size: 60.4 KB (60381 bytes)  
+	-	`sha256:5d24cacaff9c6bc1577ced58bbc521745ee20769f18eaf1698f64e3d4ef70d9c`  
+		Last Modified: Wed, 29 Jan 2025 01:02:49 GMT  
+		Size: 59.4 KB (59366 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-rc-alpine` - linux; riscv64
 
 ```console
-$ docker pull rabbitmq@sha256:b2d49e4111d15606860102f9c10dfcfab1d841906ce920417e6b1b9fa63f2472
+$ docker pull rabbitmq@sha256:af0b0c9919895b69e819ac0263bd5594a0d43437ceffe25a67170cf0d6cc2be3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.9 MB (69931674 bytes)**  
+-	Total Size: **69.9 MB (69931491 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98621c8ea03020d02a09a4dcc5cb5a6f1166cd769c6c3cc5fe9792ef6297a172`
+-	Image ID: `sha256:015a61e95e7f83d67b61bac27763e82c2703de144734f8091b119dd6371402c1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-riscv64.tar.gz / # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive $ERLANG_INSTALL_PATH_PREFIX $OPENSSL_INSTALL_PATH_PREFIX 			| tr ',' '\n' 			| sort -u 			| grep -v '^$\|lib\(crypto\|ssl\)' 			| awk 'system("test -e /usr/local/lib/" $1) == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .otp-run-deps $runDeps; 		sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		addgroup -g 101 -S rabbitmq; 	adduser -u 100 -S -h "$RABBITMQ_DATA_DIR" -G rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie; 		apk add --no-cache 		'su-exec>=0.2' 		bash 		procps 		tzdata # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.1.0-beta.3
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	mkdir -p /usr/local/src; 		apk add --no-cache --virtual .build-deps 		gnupg 		xz 	; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apk del --no-network .build-deps; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	su-exec rabbitmq rabbitmqctl help; 	su-exec rabbitmq rabbitmqctl list_ciphers; 	su-exec rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN su-exec rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -25510,69 +25510,69 @@ CMD ["rabbitmq-server"]
 		Last Modified: Wed, 08 Jan 2025 17:48:43 GMT  
 		Size: 3.4 MB (3350256 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c184a89710c8bf6b4bd56e06ad64c34ca66c111bdd470b3d64ae635ba9654367`  
-		Last Modified: Fri, 10 Jan 2025 23:11:02 GMT  
-		Size: 37.0 MB (37028486 bytes)  
+	-	`sha256:966a78004ce7c6bfe1a27f8802f5dc4ecc17eedabaf526a18f553ac187d1cc52`  
+		Last Modified: Wed, 29 Jan 2025 03:05:46 GMT  
+		Size: 37.0 MB (37028244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dedb918ea46e955df9ad502d010c6961d291010c1cf928ac046aedf3e2ff9f89`  
-		Last Modified: Fri, 10 Jan 2025 23:10:58 GMT  
-		Size: 9.9 MB (9854297 bytes)  
+	-	`sha256:5a274d58faff155503064ba782ca307c49f4c956f7c5d23d195679056a268aeb`  
+		Last Modified: Wed, 29 Jan 2025 03:05:42 GMT  
+		Size: 9.9 MB (9854310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe4728a0f84ea00a6aeadb4cd0f01ba9ef56b0abcde3a385cfc858d558b11145`  
-		Last Modified: Fri, 10 Jan 2025 23:10:56 GMT  
-		Size: 1.3 MB (1265051 bytes)  
+	-	`sha256:5cb844a243709fe69a647a30829c6d79942ea0450bf31aa32c780d953b4c80fe`  
+		Last Modified: Wed, 29 Jan 2025 03:05:40 GMT  
+		Size: 1.3 MB (1265034 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c1a780a7e5203761488ea968deac36923fef6bc25acb0888d3fed8af640a4178`  
-		Last Modified: Fri, 10 Jan 2025 23:10:59 GMT  
-		Size: 18.4 MB (18431832 bytes)  
+	-	`sha256:cee69467cbbe3519b43a90445638c61a60b9df9969ae82c424ed79fe115d7932`  
+		Last Modified: Wed, 29 Jan 2025 03:05:44 GMT  
+		Size: 18.4 MB (18431900 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d28675c219997409c6a4b6cf1d0929756f0d295a36c5720824623907f5d892d`  
-		Last Modified: Fri, 10 Jan 2025 23:10:57 GMT  
-		Size: 193.0 B  
+	-	`sha256:34fe131ea1f26a6917d8bb537407377ebb2331763d27077e5d93f52f249a947e`  
+		Last Modified: Wed, 29 Jan 2025 03:05:41 GMT  
+		Size: 191.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4a1e1e12f66cc894e2c2c346b8dcf20532bf579fc714e5d43614399abb5de9ca`  
-		Last Modified: Fri, 10 Jan 2025 23:10:58 GMT  
+	-	`sha256:37facd5df076a6ffce06531a36aa4f366ff7058965b5b2e2c2e6a5511c495d9d`  
+		Last Modified: Wed, 29 Jan 2025 03:05:42 GMT  
 		Size: 106.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3861cec18d932838d4132abe67b6d1b8688e0c8a7d8df9c43522a1edad90a1ba`  
-		Last Modified: Fri, 10 Jan 2025 23:10:59 GMT  
-		Size: 623.0 B  
+	-	`sha256:194be2105565ad1ee2781cfc16e5ed277697197a14bb2d3da6871b14452efefa`  
+		Last Modified: Wed, 29 Jan 2025 03:05:43 GMT  
+		Size: 619.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca457fa6e1b9869a72d7e4c63c32cf824d6dc91ac087b2606594d78c25c6b260`  
-		Last Modified: Fri, 10 Jan 2025 23:10:59 GMT  
-		Size: 830.0 B  
+	-	`sha256:4459ad442a141e5255f54b20beb7fb7bc20f9b22c257e5b988b6e5f6d2f9b176`  
+		Last Modified: Wed, 29 Jan 2025 03:05:43 GMT  
+		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:4fb9b070cc6a4a86a294d3cdf1eca37a3233c633f58263b3977a0ae67397d480
+$ docker pull rabbitmq@sha256:47028bb58e59431445ac515fe034125453bdb1817324a168128acb3c38103431
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.8 MB (6810029 bytes)**  
+-	Total Size: **6.8 MB (6809338 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e07e5f462ad21f474dcd5c1ae1e5e044f111256c0d2cf5fa2fe0736ae33b8285`
+-	Image ID: `sha256:93ff3728194a06895c9c686b4775477d7e0ae492dc52f6ff2dad1595f89eb811`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0867d3f2764a52f3fd034640982fe2f6b66c4169d2449e91efe8a8704beba4db`  
-		Last Modified: Fri, 10 Jan 2025 23:10:55 GMT  
-		Size: 655.1 KB (655131 bytes)  
+	-	`sha256:81ce727869dde67c05ecef47e2d74d80c060ede2174aef9e6e3e0f1aaa8728ae`  
+		Last Modified: Wed, 29 Jan 2025 03:05:40 GMT  
+		Size: 655.2 KB (655153 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a4e23485df5579e7c155c46d27d6425605f355d51433a4617d458b69317ee675`  
-		Last Modified: Fri, 10 Jan 2025 23:10:56 GMT  
-		Size: 3.1 MB (3124668 bytes)  
+	-	`sha256:3ae3f6bab5ee59b3025aaaa5a75780fb5f8ec0516da92d00fdf61d9c63e6e6f4`  
+		Last Modified: Wed, 29 Jan 2025 03:05:41 GMT  
+		Size: 3.1 MB (3124970 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5bb1abd68bfc088d2366e23b6879083d4e5dd69abbc6604a97608af46821e73e`  
-		Last Modified: Fri, 10 Jan 2025 23:10:56 GMT  
+	-	`sha256:cc9440bed773b90cee6ae16640f45e68af6ed8423c4b88013c87b23b321856c7`  
+		Last Modified: Wed, 29 Jan 2025 03:05:41 GMT  
 		Size: 3.0 MB (2969849 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:dbf89495695db16dc1e376c77a75817b070d500a913e36bcb91f29512f060864`  
-		Last Modified: Fri, 10 Jan 2025 23:10:55 GMT  
-		Size: 60.4 KB (60381 bytes)  
+	-	`sha256:b0be017544a91abad382c492d8b762d8c6d54671b87978f18347438efca18b0a`  
+		Last Modified: Wed, 29 Jan 2025 03:05:40 GMT  
+		Size: 59.4 KB (59366 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-rc-alpine` - linux; s390x
@@ -25712,7 +25712,7 @@ $ docker pull rabbitmq@sha256:069cece7bdc7b091eab10bd8ffbeb6bf57e821718252ea12a8
 ## `rabbitmq:4.1-rc-management`
 
 ```console
-$ docker pull rabbitmq@sha256:ce4ddd8074c660107a937f349a78b4aa4a1a56833334b1f60adf1965fb05b6c7
+$ docker pull rabbitmq@sha256:267ce9cf735a15f21b0dbefc2eeb9e1bcf3a80d75ad6817ccb723989d0938ebe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25733,13 +25733,13 @@ $ docker pull rabbitmq@sha256:ce4ddd8074c660107a937f349a78b4aa4a1a56833334b1f60a
 ### `rabbitmq:4.1-rc-management` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:7bcacd9235555c48f9b91aebd9b03312f3c741e39fad338502cb123498dd235f
+$ docker pull rabbitmq@sha256:fc7d97c2f4be9db030f04720c6ed7a441e4fafd337ca64ba88a018d08090dfc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **119.8 MB (119779580 bytes)**  
+-	Total Size: **119.8 MB (119801058 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24e0647670734b1f7e6474e70d14dcc0a9fd73bd08872bad5e5be3dc01c0c7a7`
+-	Image ID: `sha256:c61f903b18c9a5479ee6a38ea259ee755c99051da6fc57f5b2b70e8d29740205`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -25811,77 +25811,77 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cdd38c438930653be6c575b6ce004faab8869de522155db24d82b86972cdb6f0`  
-		Last Modified: Wed, 11 Dec 2024 22:36:52 GMT  
-		Size: 48.4 MB (48389380 bytes)  
+	-	`sha256:0d502fd5405d0c0890a03a8555c2801c5eb2fde73c311d8c42605708389d24f0`  
+		Last Modified: Wed, 29 Jan 2025 00:33:10 GMT  
+		Size: 48.4 MB (48409615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7009cb92572458741dcd9fc77c425fc354026baa733571481545ab92dc790dec`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 8.2 MB (8169241 bytes)  
+	-	`sha256:c1f0c117e8fc721424b696e4f494f9bad82ee50a1518224bcabb018f18d78c2e`  
+		Last Modified: Wed, 29 Jan 2025 00:33:10 GMT  
+		Size: 8.2 MB (8169320 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6774fe18e9bdeeaa4eb7326eea065697e2d0bc1face92beecde77c946e8e43d5`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 9.5 KB (9452 bytes)  
+	-	`sha256:77ba71b1ef0ce058fa5aa5b1d6befd3f4114fc90a554efb8f4d6ce5eb8a4a526`  
+		Last Modified: Wed, 29 Jan 2025 00:33:09 GMT  
+		Size: 9.5 KB (9484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c34e3b6f34869e315aff7bb32969ab5ecd4fdbb2cfe197aa9b270f5b2fd7afe7`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 21.0 MB (20998379 bytes)  
+	-	`sha256:65d5eeccdd83ce9864a4411334fdc965eba5802bbe94da1423f65dbc9830deb4`  
+		Last Modified: Wed, 29 Jan 2025 00:33:10 GMT  
+		Size: 21.0 MB (20998411 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f358b127b1b6940d41924789dbd47442e213ce156b0d2e05a15eb50fc70333a`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 190.0 B  
+	-	`sha256:5168a9e26789b6ba0bf4598b26eb0f28162ae20662a5ffa16b460b2a3f62d4c9`  
+		Last Modified: Wed, 29 Jan 2025 00:33:10 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6886f3e5ac082083232decf79a447b9afde000401126bc61e9ea38a00398a734`  
-		Last Modified: Wed, 11 Dec 2024 22:36:52 GMT  
-		Size: 109.0 B  
+	-	`sha256:569b83ce3bc05693748549057aa764081d6e05b682cbb8971d20279acdcafde3`  
+		Last Modified: Wed, 29 Jan 2025 00:33:11 GMT  
+		Size: 106.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfb41641b11272c82214189bdd72093549fdb0053426b2b2ea4a7aefbef6ccdb`  
-		Last Modified: Wed, 11 Dec 2024 22:36:52 GMT  
-		Size: 619.0 B  
+	-	`sha256:894f38f1b6521a035c51dfa51c677c4d68b8e0b6cf895bc7edd2429d521f06e6`  
+		Last Modified: Wed, 29 Jan 2025 00:33:11 GMT  
+		Size: 621.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef5c915b6fe22007d76c9ae0fd42482b1d63a2f8a10cf5bd3a8ad40b4357979b`  
-		Last Modified: Wed, 11 Dec 2024 22:36:52 GMT  
+	-	`sha256:20f6c165a5b99f1b0841e3523ad8931241b85fc0c3e24d6b24e87e92a18c1f89`  
+		Last Modified: Wed, 29 Jan 2025 00:33:11 GMT  
 		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ec6b80f1b0a5c55706d6410caf79daea182596ac47226d6a00969455772d33a`  
-		Last Modified: Wed, 11 Dec 2024 23:30:27 GMT  
-		Size: 12.5 MB (12459410 bytes)  
+	-	`sha256:b4d4ef2e31bf40542ab5683f8357fa3e58cd5cb632fc22ce986305c87bc051f0`  
+		Last Modified: Wed, 29 Jan 2025 01:27:04 GMT  
+		Size: 12.5 MB (12460514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:11a5aa1b81b516ef7dc837b95f3499849913b0163099e20baefbda5796466255
+$ docker pull rabbitmq@sha256:57e330244d5e6a6ed96b9c515262303cad97dcc1402a811992f748b11ebf7bf3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (2960039 bytes)**  
+-	Total Size: **2.8 MB (2838492 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f0cdb6fe703c0a839a20990cf36048bdb9cedc7b6db8dd3173a6c2c3d7147cc`
+-	Image ID: `sha256:8d1809ea5e78000b45416d31663061ab09155885b03b30396bd17b13b9efb0c2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f38c0b12511b4c149136872a73bf6cf95d8fd5744780e179e501c4edfbc0a7c1`  
-		Last Modified: Wed, 11 Dec 2024 23:30:27 GMT  
-		Size: 2.9 MB (2949222 bytes)  
+	-	`sha256:df88475ef92a1fb218718506c222cab617c35fdbe4bb3fd6783e371c8929cd60`  
+		Last Modified: Wed, 29 Jan 2025 01:27:04 GMT  
+		Size: 2.8 MB (2827676 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6351ecec1f7334f69e4f92e2e2b217b6fa28bc4dad7a91c723320a984c47315`  
-		Last Modified: Wed, 11 Dec 2024 23:30:27 GMT  
-		Size: 10.8 KB (10817 bytes)  
+	-	`sha256:1b33610103c2f72d13baa88e3b6cd5269be2a3979dd4fdae6bebe723515bcc6e`  
+		Last Modified: Wed, 29 Jan 2025 01:27:04 GMT  
+		Size: 10.8 KB (10816 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-rc-management` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:7d491ec49d91ee7e2fc3f50b146586d5fdd92a382603ec623fd2dacce4f38679
+$ docker pull rabbitmq@sha256:4012eb78aefb6b625bd99b0c8b62e27c8ca7f13d825cea2f602ef4f5b3b55dc9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.4 MB (101354709 bytes)**  
+-	Total Size: **101.4 MB (101367364 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86f0d283f9067d22888d3c02d47dbe9e1880be19a5599e79086699ae083fe554`
+-	Image ID: `sha256:836d65919cfbd708534aa050aa9f5815c35dd9e71a05644a97d29fd29bb00959`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -25953,77 +25953,77 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Tue, 19 Nov 2024 17:38:39 GMT  
 		Size: 26.9 MB (26869639 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15f550c054c479269b4e12354d866d899631ade5dd464763cabe051a9e61dac9`  
-		Last Modified: Wed, 11 Dec 2024 22:40:01 GMT  
-		Size: 35.4 MB (35433266 bytes)  
+	-	`sha256:8ddbe0fa0ca64bcd247be40bee928e934c0900148f9c757cb0e8d29f68579d49`  
+		Last Modified: Wed, 29 Jan 2025 00:34:07 GMT  
+		Size: 35.4 MB (35445401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8af28230a7766b164ee28ba67c508ece3c5074f32ed61375d257e1046e4f53cb`  
-		Last Modified: Wed, 11 Dec 2024 22:40:01 GMT  
-		Size: 6.7 MB (6667936 bytes)  
+	-	`sha256:f6a564914538c5bc366150ddf7111a42ebd75e9f9d96245d825e5c6fb93bbe47`  
+		Last Modified: Wed, 29 Jan 2025 00:34:06 GMT  
+		Size: 6.7 MB (6668105 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ffe2fed4f35f89131d91c94d61bebcc25fd882700127811961a320fd748a54a`  
-		Last Modified: Wed, 11 Dec 2024 22:40:00 GMT  
-		Size: 9.5 KB (9536 bytes)  
+	-	`sha256:d131e21e20cd8eca791b4d665fe37142b67723f37fb3ca13794d5061b0fbd772`  
+		Last Modified: Wed, 29 Jan 2025 00:34:06 GMT  
+		Size: 9.5 KB (9529 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4a4d4f868087426dc5b791d4b0acc3e764d31bde773a94e215ce80473676e2e3`  
-		Last Modified: Wed, 11 Dec 2024 22:40:01 GMT  
-		Size: 20.9 MB (20900727 bytes)  
+	-	`sha256:a8dae38797f44ab2f3c7ead9b8c25807df2eedcb433fbb02985db1568016de2a`  
+		Last Modified: Wed, 29 Jan 2025 00:34:07 GMT  
+		Size: 20.9 MB (20900766 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:759c86d2f5c22eb58c0a2be5d335026884352543e5ea98422180d816714076a9`  
-		Last Modified: Wed, 11 Dec 2024 22:40:01 GMT  
+	-	`sha256:02597e6baff9fa90bc85a67eacbc637f989bfa9dff9934ccae7964fec9f3f30b`  
+		Last Modified: Wed, 29 Jan 2025 00:34:07 GMT  
 		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00e2f839a8655c63aca3c9d6b8468c5e42d0af8714b368213df38f272f7a6907`  
-		Last Modified: Wed, 11 Dec 2024 22:40:02 GMT  
-		Size: 109.0 B  
+	-	`sha256:35badc3ffe28a391c4d4bc786624275323a90225df917718324f0fd0aef4973b`  
+		Last Modified: Wed, 29 Jan 2025 00:34:07 GMT  
+		Size: 106.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3334f75e4a0841fe2f36bfc7a8452b8f581a4bbab61b0399008010ac3305c745`  
-		Last Modified: Wed, 11 Dec 2024 22:40:02 GMT  
+	-	`sha256:62f52d6922ab74c0b13562ce873cc9573397ca7cfa3e4c8fe6cb1c0d41eb7dd0`  
+		Last Modified: Wed, 29 Jan 2025 00:34:08 GMT  
 		Size: 620.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5acd1e32492df82d66fbdffec5650da611abe7c6314ada6998667efdb542a9a4`  
-		Last Modified: Wed, 11 Dec 2024 22:40:02 GMT  
-		Size: 832.0 B  
+	-	`sha256:9d19ffcd9770dcb35785ca0ba013b6ff7b3b7a6088f970781bbc0335a47d862e`  
+		Last Modified: Wed, 29 Jan 2025 00:34:08 GMT  
+		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62e86cda1384ad72be0eb0152149b7507de90f5d21ab6afd57b47b5f10416237`  
-		Last Modified: Thu, 12 Dec 2024 01:03:11 GMT  
-		Size: 11.5 MB (11471855 bytes)  
+	-	`sha256:979abdf53067a7ab6ac0958185d72765e24c95d1fce33e5783c0ee65ea465c25`  
+		Last Modified: Wed, 29 Jan 2025 01:27:09 GMT  
+		Size: 11.5 MB (11472178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:9643f8ac48948bf2a4237dda6649f0b54312c99a274cef6865893566c7d94170
+$ docker pull rabbitmq@sha256:45bf294fc55d4b29ed4de291b4e8ff7ca4a0ab8042442206bfa765a3ffd6f5fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (2961043 bytes)**  
+-	Total Size: **3.0 MB (2960028 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47590fe5a8fad0f49772cda9f14c7ab304cb366a618e4a1e8859ae735433545d`
+-	Image ID: `sha256:685267ba3c09f1d2049ce3a4cf98b73e96342f798ebafacfe1e22658d8979248`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8076a73418d9f1d91eb13f33f8937512beda6c075a7ff645149f71f317d80caa`  
-		Last Modified: Thu, 12 Dec 2024 01:03:10 GMT  
-		Size: 3.0 MB (2950167 bytes)  
+	-	`sha256:ac1403e35f058d68132bc75d57d0a72b9880e4e7e070d203ee212d33d93a028b`  
+		Last Modified: Wed, 29 Jan 2025 01:27:08 GMT  
+		Size: 2.9 MB (2949151 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4f97919ff18ae1fd6a9f6d1f2f9245e0c2f75ef26da74187081899427b286d4d`  
-		Last Modified: Thu, 12 Dec 2024 01:03:10 GMT  
-		Size: 10.9 KB (10876 bytes)  
+	-	`sha256:6d3af08fff5a271ca31392ea0d68fcc355e465ccd57ee556a89bbd54d5345b7d`  
+		Last Modified: Wed, 29 Jan 2025 01:27:08 GMT  
+		Size: 10.9 KB (10877 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-rc-management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:2f52e2b88256bd49c53d086efb15ca17ac8050de0ba96015e1cdcec971d8a6b1
+$ docker pull rabbitmq@sha256:ec3edfb85f266f32095f1c8fb36345b3f6d7f000c397e52151bc948448e17012
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.5 MB (117549192 bytes)**  
+-	Total Size: **117.6 MB (117568786 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3771c96d3e0b35261d5e47f09627f862278d28c28047dddd52c54af3afdd7492`
+-	Image ID: `sha256:507ea697118db04df26eebe84e9276949aacfbbe2c54d8dd9993c6c82ca3b400`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -26095,77 +26095,77 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Tue, 19 Nov 2024 17:38:33 GMT  
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0dd6f7651969fbbc9ca154b27d8deea7a80480f448b243b63a7b7d56ce089430`  
-		Last Modified: Wed, 11 Dec 2024 22:37:18 GMT  
-		Size: 46.5 MB (46474590 bytes)  
+	-	`sha256:52299e8730d11af6eb71f33b5c16790dae4bb4959ed39906fc96caca2c82e821`  
+		Last Modified: Wed, 29 Jan 2025 00:46:47 GMT  
+		Size: 46.5 MB (46493171 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b8d36208ddc884ffbb9bb161c00179f1eb0d3d2da496387d7419742fec90818c`  
-		Last Modified: Wed, 11 Dec 2024 22:37:17 GMT  
-		Size: 8.9 MB (8934225 bytes)  
+	-	`sha256:ccfe2da4ebaba3053af2ca724275efde70b702f3b62906aba3a2c688da09b33b`  
+		Last Modified: Wed, 29 Jan 2025 00:46:46 GMT  
+		Size: 8.9 MB (8934957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12f1c19f537e7af45a8ace01a800eadc1b23167c81356a6c5799bb680b04ecb7`  
-		Last Modified: Wed, 11 Dec 2024 22:37:17 GMT  
-		Size: 9.4 KB (9428 bytes)  
+	-	`sha256:905d928b7e4fd4f2d74836057463713dfb2fce6b1efd79e739f9fd039604882d`  
+		Last Modified: Wed, 29 Jan 2025 00:46:45 GMT  
+		Size: 9.5 KB (9461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:854f79f3b5bab588586abe9bfd1dd7369d49db5c4d27abc3901b30eb85c9b516`  
-		Last Modified: Wed, 11 Dec 2024 22:37:18 GMT  
-		Size: 20.9 MB (20907234 bytes)  
+	-	`sha256:0b038c2c5003b2cc033f71708f27fe455d56291e0072bd58fe968ef8d4956bb0`  
+		Last Modified: Wed, 29 Jan 2025 00:46:47 GMT  
+		Size: 20.9 MB (20907253 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09a7f011ee78930fbc8d461f544625f583e2f48c5ff8ae4f84810232bff087b2`  
-		Last Modified: Wed, 11 Dec 2024 22:37:18 GMT  
-		Size: 187.0 B  
+	-	`sha256:66cc6cf6b124262ede5aeeb3de90f8b93af74e06912e2b64137593fc263a4c9e`  
+		Last Modified: Wed, 29 Jan 2025 00:46:46 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:960b6213bdcf1e61a202022fd1549be498cac95f7c06d643b49f4c6b617d92e6`  
-		Last Modified: Wed, 11 Dec 2024 22:37:18 GMT  
+	-	`sha256:e16312245e56aa709324d2dfbf8f2e60b84813563d2861c685db8a50a6c8d44f`  
+		Last Modified: Wed, 29 Jan 2025 00:46:47 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34de032b61d45f4b35f85ddd644aca2476acfee4bba4ba1ab969dfe01d2cd963`  
-		Last Modified: Wed, 11 Dec 2024 22:37:18 GMT  
-		Size: 620.0 B  
+	-	`sha256:5c6caa9f70f455a848c49c68cc73c69a0932756d71fe7f513dc35041e8621339`  
+		Last Modified: Wed, 29 Jan 2025 00:46:47 GMT  
+		Size: 617.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ebf76ac8f826f6e71275fd0bc2b5844ef5c8c0b492f7d5eeee382a8a3b47096`  
-		Last Modified: Wed, 11 Dec 2024 22:37:19 GMT  
+	-	`sha256:62c15bd7a9c7190983358018c6faa2a0f65d815e165a5c16d067e5b275b6cc98`  
+		Last Modified: Wed, 29 Jan 2025 00:46:48 GMT  
 		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eafb84c1d505766a46e9584ab2b2fa37abb7f22a0818a7ea01ef8dd412f92dde`  
-		Last Modified: Thu, 12 Dec 2024 01:13:44 GMT  
-		Size: 12.3 MB (12329296 bytes)  
+	-	`sha256:518f997fc9d1a10f51ea0c1113108c43531e649e3e3c7df525ef244a39f986bb`  
+		Last Modified: Wed, 29 Jan 2025 01:29:00 GMT  
+		Size: 12.3 MB (12329526 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:9ac5122233c67221edc0dbb1c1b799191e4efbc17623932b600423ac9bb2f0f9
+$ docker pull rabbitmq@sha256:907c05aa5b276689c8746a443f6f64e96207f64242d9f677306a315ba5ad6d12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (2961207 bytes)**  
+-	Total Size: **3.0 MB (2960192 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b93f70fff806474f756d075e9c8e88bcde68191f9792b529c15fc305a7a12cb`
+-	Image ID: `sha256:cc40eacac364b9941da09bfa6dc5ed6efa13749e45430f21a76e0be50a4b11f3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:89d4036607ec8a39f88c8869d1331544d0e9795f9e56fec79ff06c5e5463fad6`  
-		Last Modified: Thu, 12 Dec 2024 01:13:43 GMT  
-		Size: 3.0 MB (2950310 bytes)  
+	-	`sha256:cc96de4f9de84f7565377d6cca70da06b1e8b4475f15aed6930b351a6250ec15`  
+		Last Modified: Wed, 29 Jan 2025 01:28:59 GMT  
+		Size: 2.9 MB (2949295 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a9faae78fd2fd777680d3f3453e0eb3bfe840febc87626d55962a4aefd7a33a1`  
-		Last Modified: Thu, 12 Dec 2024 01:13:43 GMT  
+	-	`sha256:0253172d33ab730e526b99c8fdc6af902efd2d816fd2524756edaea849909217`  
+		Last Modified: Wed, 29 Jan 2025 01:28:58 GMT  
 		Size: 10.9 KB (10897 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-rc-management` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:5eb778605b9bb8cd4841085cf10b9549a2834b71af57f4b0a8371f0f386a3b8d
+$ docker pull rabbitmq@sha256:c6b181e03c375d0e265f7ac250b75c53c32e844e3884737568f790681b6800dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **118.7 MB (118656543 bytes)**  
+-	Total Size: **118.6 MB (118642331 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb5fd0597ce1c25e60c8ad4624cdffd626d898297483f52664057b45971208d5`
+-	Image ID: `sha256:1c1a0e8199de4155e67d10db6862970f61c7ccdd7c86f82d704d42d9cddb7599`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -26237,65 +26237,65 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Tue, 19 Nov 2024 17:38:45 GMT  
 		Size: 34.4 MB (34388820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35aaa542f56f99732fa6a5ce5ca4b3980f55c461636cc332d4792017c9f15431`  
-		Last Modified: Wed, 11 Dec 2024 22:38:19 GMT  
-		Size: 41.6 MB (41633236 bytes)  
+	-	`sha256:8cadad09c52fdbf44decc403a4ab6082060224014f1082854e01a1a7f5d3981f`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
+		Size: 41.6 MB (41637000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed2e85aabb1a869502abef25c5e467f417a1d8aeca7a26ed9ade9d7d914d39d0`  
-		Last Modified: Wed, 11 Dec 2024 22:38:18 GMT  
-		Size: 8.7 MB (8689219 bytes)  
+	-	`sha256:aeb9f7be9b5b4cbf6f594b895573e0fdbb3020f04243a231409187e8ff591bfd`  
+		Last Modified: Wed, 29 Jan 2025 00:58:32 GMT  
+		Size: 8.7 MB (8689882 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4feb9952ffad20211d81b56be0c2dfe81e14bbc20c685d956302a993a2036a8e`  
-		Last Modified: Wed, 11 Dec 2024 22:38:17 GMT  
-		Size: 9.4 KB (9444 bytes)  
+	-	`sha256:6706769334970294d65b0d1529bdf615cf3e6a523894522867af35ebcc4742a5`  
+		Last Modified: Wed, 29 Jan 2025 00:58:31 GMT  
+		Size: 9.4 KB (9435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5886264b731dc144aa7804945691ec139dc5e25aca8af6b11baf65f20a3026dd`  
-		Last Modified: Wed, 11 Dec 2024 22:38:18 GMT  
-		Size: 21.0 MB (20956256 bytes)  
+	-	`sha256:df58cba9800aeee146a64cb94fc24d1437451a565418657b23b62860166be525`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
+		Size: 21.0 MB (20956257 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7e62d5fbb45af6e4340667e2a8be2aa97f423886ca31c59a30170393a3fbd04`  
-		Last Modified: Wed, 11 Dec 2024 22:38:18 GMT  
-		Size: 188.0 B  
+	-	`sha256:e89ab46dead5b76fb033afc9188a4c7386d6ef3a4464c37f2529d29677414d88`  
+		Last Modified: Wed, 29 Jan 2025 00:58:32 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c314b4fc4138532a67f4e731170a526f5d1256d03cc4a716b7ea72280ed43b`  
-		Last Modified: Wed, 11 Dec 2024 22:38:19 GMT  
+	-	`sha256:fa1a6aba4f2022a1eafdbd501f5a1db9f0a3cf4afd9b91713b359e7b5eae3911`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52b7370a616c801d9cb4a20a61cd4773b8f40856ce2966615e08242d61a73f32`  
-		Last Modified: Wed, 11 Dec 2024 22:38:19 GMT  
-		Size: 617.0 B  
+	-	`sha256:664bbeb327017fcabe4f5eed4e6affad4ff4b5c1eead94eb4acec1c550d1953a`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
+		Size: 623.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:616345f27581916c481b31abdc55588a046934fc035c282cac29878ff6a3b637`  
-		Last Modified: Wed, 11 Dec 2024 22:38:19 GMT  
-		Size: 831.0 B  
+	-	`sha256:12082411c4bdeff35cdb9d190d9e6e489dee780eb57e83c9a584312758be3955`  
+		Last Modified: Wed, 29 Jan 2025 00:58:34 GMT  
+		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdc3d6ac6c365b8a2c98c61f59caa257d47525823b3637f8eed22a1597484489`  
-		Last Modified: Thu, 12 Dec 2024 00:44:39 GMT  
-		Size: 13.0 MB (12977823 bytes)  
+	-	`sha256:89b06be6d7e824325ce117f436f920309e15644d214fe356708e2d0584934ba6`  
+		Last Modified: Wed, 29 Jan 2025 01:36:07 GMT  
+		Size: 13.0 MB (12959186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:62c4dec34c5bd4f479e3c1c02b1d76815deb8f80fc67dc3898691e20b6035d1e
+$ docker pull rabbitmq@sha256:9460164afeddeb153f652456577707c03e5ae956362ddf7dc49545d0814b1186
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (2964687 bytes)**  
+-	Total Size: **3.0 MB (2963672 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa539950e12e8e6d42938c1a2b007a0b997e517eefc14222a2ffe2d0f62d6634`
+-	Image ID: `sha256:360a1926263218cec3fa3f83909b63de2ff676c4972bf53fbcb20b7b43fa8092`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0d0a034ebcb24f19264e012280938ea2f1f12c7f2984cb83fa0ff86d7daa7ce6`  
-		Last Modified: Thu, 12 Dec 2024 00:44:38 GMT  
-		Size: 3.0 MB (2953838 bytes)  
+	-	`sha256:9d76d9cf035677949f9fdfd7814d47dcde152a72734bd9f3421862c5391fc062`  
+		Last Modified: Wed, 29 Jan 2025 01:36:05 GMT  
+		Size: 3.0 MB (2952824 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e72221fd5f820d0a23af23baddad376ed6e755853f84947f29a29977b152d729`  
-		Last Modified: Thu, 12 Dec 2024 00:44:37 GMT  
-		Size: 10.8 KB (10849 bytes)  
+	-	`sha256:d7cd09f3fbf1d1ec44969287bfed24bb0329cf1db1c7c93d800d99ef9da6e90f`  
+		Last Modified: Wed, 29 Jan 2025 01:36:05 GMT  
+		Size: 10.8 KB (10848 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-rc-management` - linux; riscv64
@@ -26443,13 +26443,13 @@ $ docker pull rabbitmq@sha256:075f9069dcd7fae7f6ef1679dc4edded030b741fb94c389ee5
 ### `rabbitmq:4.1-rc-management` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:4957d0ad9edfede7165cc6e75045de97b789d9fb749410e6edf9cf708ab793fd
+$ docker pull rabbitmq@sha256:68f83089b268465936b7079f2136796b638d7c0f7d528d5ab99f3dca012b7b61
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **112.0 MB (111965181 bytes)**  
+-	Total Size: **112.0 MB (111956584 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfc07fcc6630ff3f27ea9961793bce943d01eac040744a3e3aef7e700d813029`
+-	Image ID: `sha256:bd8239063512c46baa0186f2ebce08c703e6952a023017bdb824988693bd5ead`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -26521,71 +26521,71 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Tue, 19 Nov 2024 17:38:58 GMT  
 		Size: 30.0 MB (30020826 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b379a652603f4d4450ee16626688d7a8fb894512b134e272f6d80e33ebb54381`  
-		Last Modified: Wed, 11 Dec 2024 22:57:50 GMT  
-		Size: 40.7 MB (40711777 bytes)  
+	-	`sha256:965e29136c0040e37abbc80a6accd48640ce74eb7aeda66ce0aa16698c5c0cd8`  
+		Last Modified: Wed, 29 Jan 2025 00:50:24 GMT  
+		Size: 40.7 MB (40729114 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:874d0b46da03c5e6e9380e471b63e248227d1c9b15c98643d4220450e03c55da`  
-		Last Modified: Wed, 11 Dec 2024 22:57:50 GMT  
-		Size: 7.5 MB (7546322 bytes)  
+	-	`sha256:d13f00b9fcaef34a53fe78c034076f777ddcb89aa23fc24922cc58a8c87fa107`  
+		Last Modified: Wed, 29 Jan 2025 00:50:23 GMT  
+		Size: 7.5 MB (7546466 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e062b603cde5d317e55e6334d640f50ac53df923b8f2d9f63d5db742f52cbdf7`  
-		Last Modified: Wed, 11 Dec 2024 22:57:49 GMT  
-		Size: 9.6 KB (9583 bytes)  
+	-	`sha256:e7e68b5fa2a4586323b16f1cae2f3664d3c85773ea6450673bc81d2d406ced6b`  
+		Last Modified: Wed, 29 Jan 2025 00:50:23 GMT  
+		Size: 9.6 KB (9599 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:38692654cabe3ada67f6252e1d5d1679e858f2cb70d9fde2651c81df1c190280`  
-		Last Modified: Thu, 12 Dec 2024 01:06:33 GMT  
-		Size: 21.0 MB (20980743 bytes)  
+	-	`sha256:6a2c76e70452ea41596dc9b8e5a91320490f486b20961f0bb0eb9a56361a0af8`  
+		Last Modified: Wed, 29 Jan 2025 00:50:24 GMT  
+		Size: 21.0 MB (20980659 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:545b35af48bef88fc3d1e64527f1365c155691c0f6015cf385a0c79626f70040`  
-		Last Modified: Thu, 12 Dec 2024 01:06:32 GMT  
-		Size: 189.0 B  
+	-	`sha256:6a4ae3a864a403a05c8d198845401267e5e6120bffcd1be2f0ebad002aaf90ae`  
+		Last Modified: Wed, 29 Jan 2025 00:50:24 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ff45161924c39a0f338728f80b1c569ec4a8f313fc363b37ba1617d030ce13e`  
-		Last Modified: Thu, 12 Dec 2024 01:06:32 GMT  
-		Size: 105.0 B  
+	-	`sha256:2675710afb280c861a100299e7acee95b2dfa3165aa4ffb91025e53e97e8920b`  
+		Last Modified: Wed, 29 Jan 2025 00:50:24 GMT  
+		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef10c66a5a605465bac875b2ff4ac5f27fa5ab9f6c74619c765092f6ed5df148`  
-		Last Modified: Thu, 12 Dec 2024 01:06:32 GMT  
-		Size: 619.0 B  
+	-	`sha256:113ea52b82387f27f73e72551b8bff04bfe93131bd0d4e7d783b89022f7cce5e`  
+		Last Modified: Wed, 29 Jan 2025 00:50:25 GMT  
+		Size: 621.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ec8d81b557629871f672ffaf2e90344e5a6453344c0da73f1c283e8996b0478`  
-		Last Modified: Thu, 12 Dec 2024 01:06:33 GMT  
-		Size: 831.0 B  
+	-	`sha256:0613677795d57f923985d013326bf94830641e1cdd62b2bdb47300a8717dc47e`  
+		Last Modified: Wed, 29 Jan 2025 00:50:25 GMT  
+		Size: 833.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55dc8d87a54838ec2b4666c6ca317794c008cad56b07ef5efc5dcfea12a54e27`  
-		Last Modified: Thu, 12 Dec 2024 01:56:57 GMT  
-		Size: 12.7 MB (12694186 bytes)  
+	-	`sha256:16911f7cb3a5030f86f5551e6c961ebf57d2d4be164cfd5b0a203f497d2a1b25`  
+		Last Modified: Wed, 29 Jan 2025 01:27:23 GMT  
+		Size: 12.7 MB (12668169 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:bb23daef2f887f9c1429485c7ee384c6eb254aa53efe54353990506110535eda
+$ docker pull rabbitmq@sha256:e24ef7ad04ff38a8b85e02ee8491a0faa7b324e834fb65a38fd2b431c0e12052
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (2962105 bytes)**  
+-	Total Size: **3.0 MB (2961084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1525471741dbc6b4b8948277b7f48d35086008200f4c4338e9aed2ee3ee772c4`
+-	Image ID: `sha256:8fa63c1d39f28c0720a96cff9b2b1250848db413e57afbb29862e9fe3148f51a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7d95f87702335cd1925bc8b3b67115aa1e52c71fdfd3897c17fc367ab57d0103`  
-		Last Modified: Thu, 12 Dec 2024 01:56:57 GMT  
-		Size: 3.0 MB (2951288 bytes)  
+	-	`sha256:c609c7e31a4d4381135ebe19cc5b8342370a98701917311918ba4a82143d779a`  
+		Last Modified: Wed, 29 Jan 2025 01:27:22 GMT  
+		Size: 3.0 MB (2950267 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6958526dfe0a5abfde6ff6e90c1e7506d726cb49f1e9978acb31bc05a96e3ea2`  
-		Last Modified: Thu, 12 Dec 2024 01:56:56 GMT  
+	-	`sha256:dd9a6c5b42e9c5c88146a3dcdb14dd575f4973da2fdb573a584f86e2f8027385`  
+		Last Modified: Wed, 29 Jan 2025 01:27:22 GMT  
 		Size: 10.8 KB (10817 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rabbitmq:4.1-rc-management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:b7199cbebeee15956e77386b8d0ab2b1ae63279e873a24a8518c191ee47f2eef
+$ docker pull rabbitmq@sha256:a3e1ee3fae8145e950a0f646a801936f07d98f8442eb62b1a885b98999a0a247
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26610,13 +26610,13 @@ $ docker pull rabbitmq@sha256:b7199cbebeee15956e77386b8d0ab2b1ae63279e873a24a851
 ### `rabbitmq:4.1-rc-management-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:7373924d23d453c1929e46164f6bfaebc92cb8ebea514ddff435b2f48a2f0198
+$ docker pull rabbitmq@sha256:78f716333ef04dc566a99e879b37990a7348a3935a2e2aa289e5c443bf067174
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **91.4 MB (91381841 bytes)**  
+-	Total Size: **91.4 MB (91381878 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:796a2b2f82a797140a78e509613c756a0c8e48241cb67d17dffce6dda11aa643`
+-	Image ID: `sha256:8dca15c0add880fe963c8b6178eede904ba8367cafb23df2f168bb2916509046`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -26680,77 +26680,77 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
 		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7dad2cd62b35ea5b3826890b7949c92cce160541e6a2f37de86f90b15b059451`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 45.0 MB (44989675 bytes)  
+	-	`sha256:389cbcd4d157ff7449170dc964d28403866cc81f78d56b9c104529a917a37c7a`  
+		Last Modified: Wed, 29 Jan 2025 00:34:19 GMT  
+		Size: 45.0 MB (44989696 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4fbc9e4b76010d4da8935513ae6a82d08cb3fc24ef8e1270c3c326c9cf73e14`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 8.3 MB (8309047 bytes)  
+	-	`sha256:cdaad5fc164e256765b06485ec0b28c718532996f8b7c704aee027a7182f7504`  
+		Last Modified: Wed, 29 Jan 2025 00:34:19 GMT  
+		Size: 8.3 MB (8309063 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29a58ffeec9a8f9b81e7c8e4c3aad715f27412d9a17598ede53dedcb91d308bd`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 2.3 MB (2277952 bytes)  
+	-	`sha256:5d8b1b66431943dd9ebbd875f15488376930e1c082b8949b406e9c607ea57d91`  
+		Last Modified: Wed, 29 Jan 2025 00:34:18 GMT  
+		Size: 2.3 MB (2277964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0196beee2b1ee16432f2861f1ad1c5fe6c5403568f0a968dd2824263940a1c30`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 18.4 MB (18432142 bytes)  
+	-	`sha256:fb1ca56315d11026e56cec247e9ad6ca0f98e60f725f111da701061105fbdde8`  
+		Last Modified: Wed, 29 Jan 2025 00:34:19 GMT  
+		Size: 18.4 MB (18432156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0353fe875b77cc6d05037ad0e99a35b60cc285c7438bc39498b1e289610f8951`  
-		Last Modified: Wed, 08 Jan 2025 18:23:51 GMT  
+	-	`sha256:58a318b906222c6fd50f07ee1fc9301ba3146fcc41c86aa7d6e888b314d14c60`  
+		Last Modified: Wed, 29 Jan 2025 00:34:19 GMT  
 		Size: 193.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b4fda668dad22dcdd7087c7ac617bd6d7bcbff9eb57348fb14d953d15e77d50a`  
-		Last Modified: Wed, 08 Jan 2025 18:23:51 GMT  
-		Size: 108.0 B  
+	-	`sha256:129d17aa835beeb75f378b3a597a327389f624dbae75e71032823b0ff17442ac`  
+		Last Modified: Wed, 29 Jan 2025 00:34:20 GMT  
+		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b441c75c33ebcc4405c0f67d676f7188d5cb07ef17eab96c88b571b8cfcc1c4`  
-		Last Modified: Wed, 08 Jan 2025 18:23:51 GMT  
-		Size: 618.0 B  
+	-	`sha256:a36c3149efd889213b278f6f5325356ae3e49e606bdfe55e78825c94b36e440f`  
+		Last Modified: Wed, 29 Jan 2025 00:34:20 GMT  
+		Size: 619.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dce25257de71f79ce304c34aa3d7d104cce1ca2ec08828eddb4adc51331df23d`  
-		Last Modified: Wed, 08 Jan 2025 18:23:52 GMT  
-		Size: 828.0 B  
+	-	`sha256:84c209cc30796a8c2e005f42e04f7d9b55611ffd49bb820208774c035a2d99df`  
+		Last Modified: Wed, 29 Jan 2025 00:34:21 GMT  
+		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a392fe2e50ab978e7fc1be722df36252b6cb214294219ef0b38b861531348ea`  
-		Last Modified: Wed, 08 Jan 2025 19:17:14 GMT  
-		Size: 13.7 MB (13729563 bytes)  
+	-	`sha256:47301d0b1045684398a12020a18be04e85c3cf5c0734b1d80c7c034d54172436`  
+		Last Modified: Wed, 29 Jan 2025 01:26:59 GMT  
+		Size: 13.7 MB (13729534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:b2119df4a27fc0064a16eb0e7052d817ad85ae7d98cd4607f441ed53a700672d
+$ docker pull rabbitmq@sha256:66289e99f1fb6ce61199c13cd554facb1d8a3cf5e1bbe5840fe875c465ae02b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.6 MB (1642047 bytes)**  
+-	Total Size: **1.5 MB (1521537 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:100bc3fd1ef4b0a36bd1ad013b9d75776f57a20892831c8f932c1d5e43ac6d70`
+-	Image ID: `sha256:aa20669ec95799076d8cd0d5ac39454060fef95cc70504e9469bbe64cd3805d7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a5ee1e532a1bb183b8798a3b401015e58a0c0e295a1b51f9f75504f2f25efdb3`  
-		Last Modified: Wed, 08 Jan 2025 19:17:13 GMT  
-		Size: 1.6 MB (1631437 bytes)  
+	-	`sha256:33ba67da704d8abb301fe9d41803c9376da939a99bdebf89749aec9226068ba4`  
+		Last Modified: Wed, 29 Jan 2025 01:26:59 GMT  
+		Size: 1.5 MB (1510926 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:40a43befb7ff0ebd0d83a26abc2a3cc6c96a51eedfaac1ecc093661e7bd6bb21`  
-		Last Modified: Wed, 08 Jan 2025 19:17:12 GMT  
-		Size: 10.6 KB (10610 bytes)  
+	-	`sha256:ab6d860576c39e2e70acb75a59d9e929d3891a21116c48c65ffe37371527e244`  
+		Last Modified: Wed, 29 Jan 2025 01:26:59 GMT  
+		Size: 10.6 KB (10611 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-rc-management-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:6f04801f0ae8e56c1c31037cdb1e8cf7c01d52ce151cea756ec092041f33e71c
+$ docker pull rabbitmq@sha256:867b54e5032d8bb5275d08ad8153b5347108980aff0e2db474bc0f77bc0756a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.1 MB (80076691 bytes)**  
+-	Total Size: **80.1 MB (80078338 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44244a78d51dbfb7300e2fbc86b0468e3f4414284e1ee9964e1e1c93265601a7`
+-	Image ID: `sha256:737c9e0d567b0280a249b47ba8c4381560ee1e7985841dc8a764c8770768a380`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -26814,73 +26814,73 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Wed, 08 Jan 2025 17:23:44 GMT  
 		Size: 3.4 MB (3363879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5dd30f889bc2bb52640ca25c93ff15f1db08b49328f99aa6d07b6e32d55fb4e`  
-		Last Modified: Thu, 09 Jan 2025 08:25:21 GMT  
-		Size: 35.6 MB (35594403 bytes)  
+	-	`sha256:c12da3bc0dc164fc2dc721268ac149ce9cddc3284a62e1d569ea117dceae224a`  
+		Last Modified: Wed, 29 Jan 2025 00:29:55 GMT  
+		Size: 35.6 MB (35595987 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97b4aabd41165a7ea03e2c58b07210306258e8e36804b6bf402a43a7bf5da636`  
-		Last Modified: Thu, 09 Jan 2025 08:25:20 GMT  
-		Size: 7.1 MB (7092004 bytes)  
+	-	`sha256:23fa176b1a735adfd55984d81cbabb837e4cbecfaa887dd27917a7d89a9b9d5b`  
+		Last Modified: Wed, 29 Jan 2025 00:29:55 GMT  
+		Size: 7.1 MB (7092057 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bff124f685cfadc65080fdd87de339452757f4463fa8f3f0ecd6e03aa6c297bc`  
-		Last Modified: Thu, 09 Jan 2025 08:25:19 GMT  
-		Size: 1.2 MB (1225388 bytes)  
+	-	`sha256:bfed2ab5564ded1e752bf96138db235940094f6c1fd2937cf139056f0d4f73ef`  
+		Last Modified: Wed, 29 Jan 2025 00:29:54 GMT  
+		Size: 1.2 MB (1225407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75dc164e4d9832b973098fd8143c05bf463f1d1906f67ec6643227953cb4f885`  
-		Last Modified: Thu, 09 Jan 2025 08:25:20 GMT  
-		Size: 18.4 MB (18431923 bytes)  
+	-	`sha256:6b826e799d81801f0b7a0cb39f5292c4e4d5f4a0c40b3e37c9d3f5e972d326c0`  
+		Last Modified: Wed, 29 Jan 2025 00:29:55 GMT  
+		Size: 18.4 MB (18431922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d14098d11ffc23164286eda8914e7a58a269ac281780184f31fa81b301ba21ad`  
-		Last Modified: Thu, 09 Jan 2025 08:25:20 GMT  
-		Size: 191.0 B  
+	-	`sha256:9af1663ecd3f264eefd3827005236ce242b1597795f2cfa43c08d80127359223`  
+		Last Modified: Wed, 29 Jan 2025 00:29:55 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cce34ffdd3474d4bc623d2f3cd18a67e412a57912ff86c7911b18b735b8110f3`  
-		Last Modified: Thu, 09 Jan 2025 08:25:21 GMT  
-		Size: 109.0 B  
+	-	`sha256:43ddb4c761e2e38ba61d63aa683b66208b58a3313ad8eca9a5c09d97e8dfeb0c`  
+		Last Modified: Wed, 29 Jan 2025 00:29:56 GMT  
+		Size: 106.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c74fa2300c66b3ead53ea0df792a2a76f540bacb99afda43bbb70be6357ea43c`  
-		Last Modified: Thu, 09 Jan 2025 08:25:21 GMT  
-		Size: 621.0 B  
+	-	`sha256:1249dcf47783c06e3ce0673837d7a6acd0b56b0431d73ed7b8fc9fb76f3918ee`  
+		Last Modified: Wed, 29 Jan 2025 00:29:56 GMT  
+		Size: 619.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24c3c829428d2d23d057245eec47261b7340aa1b2d5b3345d05deeca7f58c1c9`  
-		Last Modified: Thu, 09 Jan 2025 08:25:22 GMT  
-		Size: 833.0 B  
+	-	`sha256:24666435cac3b47da7acace697de11420e404e13d9da05652eed0ddfafdcd040`  
+		Last Modified: Wed, 29 Jan 2025 00:29:56 GMT  
+		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b90bec306d1dae9542b02c65fbb56bd61a93bc6539edec5f97eb5a8d90505d19`  
-		Last Modified: Thu, 09 Jan 2025 10:18:18 GMT  
-		Size: 14.4 MB (14367340 bytes)  
+	-	`sha256:6a4dd649f65c468cf0858ab57b544fc892baabdd84a0e2fe4a049d4925476c74`  
+		Last Modified: Wed, 29 Jan 2025 01:26:58 GMT  
+		Size: 14.4 MB (14367337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:7fcfa5f0a2e3c8aea63824688959b344f255e79530f1f4cd26c7b9407c562734
+$ docker pull rabbitmq@sha256:0981945f4a017fd628f8d0dfcfbcc10577a95425ebdd836ec82ade48806b3965
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 KB (10455 bytes)**  
+-	Total Size: **10.5 KB (10456 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0094b8bce91a4867249a119f1e4fafaecc77bb9483d0235c3776a0b9ee20eb83`
+-	Image ID: `sha256:195051e68cf47403c588a5b59b8f2622ebda1aa5f971833ba2c85fec357c3191`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9c4d3667c034afafcd048b62431e46919447d898cab04f9377fe99ad199fb6e3`  
-		Last Modified: Thu, 09 Jan 2025 10:18:17 GMT  
-		Size: 10.5 KB (10455 bytes)  
+	-	`sha256:6bd25d1df905b9d1f5d82b64c8aa6e2de1b2677ca732120eb67000f62fd55bf7`  
+		Last Modified: Wed, 29 Jan 2025 01:26:56 GMT  
+		Size: 10.5 KB (10456 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-rc-management-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:ef31a8dd4619cde3eeb6e41ed446e6b9c921675d9c64ec84d77296c5ed0ce4a0
+$ docker pull rabbitmq@sha256:1fc143d8bca5e48ef526179529bc6f30053c8831b74bc0e841e026bb1f752171
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.9 MB (78928659 bytes)**  
+-	Total Size: **78.9 MB (78929134 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d1596447776f8be2dad8287c700f1123a933e1de44009fec171f20900fc4c2f`
+-	Image ID: `sha256:caa38216445d6ec560458333a7b5717e185378d84bd22f6c587a0cf9d7904b62`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -26944,77 +26944,77 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Wed, 08 Jan 2025 17:34:01 GMT  
 		Size: 3.1 MB (3097112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:655190026c0c4cd1b78581e042bb9d8d1afc0c94b6577e04826a3f89903802b4`  
-		Last Modified: Thu, 09 Jan 2025 08:58:52 GMT  
-		Size: 35.5 MB (35522440 bytes)  
+	-	`sha256:fc117e19b463aa9e5ad3a39d9124a4f2ca0099e98efd9c3385529c44b8334dfd`  
+		Last Modified: Wed, 29 Jan 2025 00:38:50 GMT  
+		Size: 35.5 MB (35522617 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb90420108c572c4e9c50b73301c37e2ede5c838ff435171b418337c85377131`  
-		Last Modified: Thu, 09 Jan 2025 08:58:51 GMT  
-		Size: 6.7 MB (6731743 bytes)  
+	-	`sha256:bb952143b00c8375516413bd9eccb48aeaa5f6efde247c8a2b3b39316449eb16`  
+		Last Modified: Wed, 29 Jan 2025 00:38:49 GMT  
+		Size: 6.7 MB (6731707 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c683309c12636524fe3e72d290f3106b32d61a2749e18716923075ee40e8bab6`  
-		Last Modified: Thu, 09 Jan 2025 08:58:51 GMT  
-		Size: 1.1 MB (1133168 bytes)  
+	-	`sha256:cb0a1a7d8050b79a5a909b117dff600785f0afac98b30ecb34010d6826a86cea`  
+		Last Modified: Wed, 29 Jan 2025 00:38:49 GMT  
+		Size: 1.1 MB (1133181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81a1f909e29d386c9681f6d47524da4a463f3da9157b572fd423a1c1f3674fde`  
-		Last Modified: Thu, 09 Jan 2025 08:58:51 GMT  
-		Size: 18.4 MB (18431033 bytes)  
+	-	`sha256:ae96ed2ba8614961d42df4de653e71617b43caf0765eb4faf2caa78c78efba2a`  
+		Last Modified: Wed, 29 Jan 2025 00:38:50 GMT  
+		Size: 18.4 MB (18431347 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ff471153a3c31cfa4603603c575d95a6e3425e5abf7312389584f8fade409f3`  
-		Last Modified: Thu, 09 Jan 2025 08:58:52 GMT  
+	-	`sha256:8d6632aec97a1bc17740da5a6a32dbf87d54f4229aa269add9b11524b6e2a36d`  
+		Last Modified: Wed, 29 Jan 2025 00:38:50 GMT  
 		Size: 191.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48165163bc0320c22eefbe9b382c7aa75900a1345f3efc2a3a0495731cad03ab`  
-		Last Modified: Thu, 09 Jan 2025 08:58:52 GMT  
+	-	`sha256:f8a515bdae3baa85dd812a6b90e724c8bf6b4c5befff2f0187b4c5d592846a89`  
+		Last Modified: Wed, 29 Jan 2025 00:38:50 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c2b4dc781e582f01595722e3d513b51563035bee01b7edc9b6dade38ac37fa6`  
-		Last Modified: Thu, 09 Jan 2025 08:58:53 GMT  
-		Size: 616.0 B  
+	-	`sha256:43f8a1b775e71250f40f1cf76f948737a60742dcaa794285396a3a278e6dd45f`  
+		Last Modified: Wed, 29 Jan 2025 00:38:51 GMT  
+		Size: 618.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b83a25945e6adbb770a905a8691166a777d26a89d4b52ebf5a92f0e622f25916`  
-		Last Modified: Thu, 09 Jan 2025 08:58:53 GMT  
-		Size: 829.0 B  
+	-	`sha256:17aaddcd0e7da393cdc37e158ef29d8dcca7e5f7e0dd2b70fb926ce33215db01`  
+		Last Modified: Wed, 29 Jan 2025 00:38:51 GMT  
+		Size: 827.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8b84730a20f514ba19eccee50069a675510ef45ff3e71ef7c386e1580e14436`  
-		Last Modified: Thu, 09 Jan 2025 11:24:08 GMT  
-		Size: 14.0 MB (14011418 bytes)  
+	-	`sha256:efaca46107a902ab62f0d5865332a8abd4cc372dcde1afc4f8466b5847121096`  
+		Last Modified: Wed, 29 Jan 2025 01:27:32 GMT  
+		Size: 14.0 MB (14011425 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:f576f0c538f74956885157c89d27942a319a979bf6519e3f96937c63a20fbc29
+$ docker pull rabbitmq@sha256:aebd2c5c2d4af6fbfa7b760f4c4f58eec859d25b9d72e01b44734583679049ea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.6 MB (1643118 bytes)**  
+-	Total Size: **1.6 MB (1643141 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cfb9b88ab8297539959167cb69e8893dab4ae5bce6c0a707a3cbd549ed97e841`
+-	Image ID: `sha256:f44898d1f5995f4fd619a2134b3c426f58cc7a14907520862df0946724cc3a55`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:449143e697aa1dee5b5cc0f8f3112c9a7d24896a4c34463ca933845a0b374b1b`  
-		Last Modified: Thu, 09 Jan 2025 11:24:07 GMT  
-		Size: 1.6 MB (1632448 bytes)  
+	-	`sha256:fa5e53ec60abe7634c6d715c35ccc85e13decfdb2188ddb860e8701ecff6aa68`  
+		Last Modified: Wed, 29 Jan 2025 01:27:31 GMT  
+		Size: 1.6 MB (1632470 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:86579be7c7100f1a9f69616b9f9dcf56aaf2e6d0ccff290d75ea9142fe58576e`  
-		Last Modified: Thu, 09 Jan 2025 11:24:06 GMT  
-		Size: 10.7 KB (10670 bytes)  
+	-	`sha256:ca2bbf7b95dc9396985e463942586e58519e9973c46affb859b78d43dab13e3e`  
+		Last Modified: Wed, 29 Jan 2025 01:27:30 GMT  
+		Size: 10.7 KB (10671 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-rc-management-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:ad1910f4412f7c1a30b5b02964a6f4ad06e2921af1a7842bc79f5f52585856c2
+$ docker pull rabbitmq@sha256:773c57550001cb699e759cccbe1ba5953f854fe98136aa198740821a15989558
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **90.5 MB (90465501 bytes)**  
+-	Total Size: **90.5 MB (90465430 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bea785edc4401465017485dd75ed3a282558258891507e56808f72aff11fb2ba`
+-	Image ID: `sha256:7494fc5885eeced88b941d7c111663623ee6ffbb61a159ecb6b0bb52643ff96f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -27078,77 +27078,77 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Wed, 08 Jan 2025 17:23:52 GMT  
 		Size: 4.0 MB (3992359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d5733c5c090ae5ea2628a055e8b807b804be91c20b4a1bd047cedbeb68627ca6`  
-		Last Modified: Thu, 09 Jan 2025 05:11:54 GMT  
-		Size: 43.0 MB (42994345 bytes)  
+	-	`sha256:bf8f58a9acff87800b0001621a0abebfc3c9256c4c94a48a3a7fbcea584c0906`  
+		Last Modified: Wed, 29 Jan 2025 00:50:53 GMT  
+		Size: 43.0 MB (42994244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3fea365716298d4773137f411c2ea7ed225f2a38828f3179479e8e6538b5ae01`  
-		Last Modified: Thu, 09 Jan 2025 05:11:54 GMT  
-		Size: 9.0 MB (9031966 bytes)  
+	-	`sha256:c8f1ae3712c034843f3ef3ad2102e119cbfc862fe0ee876934366fa40b1acc70`  
+		Last Modified: Wed, 29 Jan 2025 00:50:52 GMT  
+		Size: 9.0 MB (9031962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98a6cce2e0abf3aad35f81bdd87005a80fbec8ded15d57c2d9fa4276a88d8e7c`  
-		Last Modified: Thu, 09 Jan 2025 05:11:53 GMT  
-		Size: 2.3 MB (2322576 bytes)  
+	-	`sha256:432b652fcf3bb55aaa67496f9cccaf3d151c4085e26948a6d515ab1581a0397d`  
+		Last Modified: Wed, 29 Jan 2025 00:50:52 GMT  
+		Size: 2.3 MB (2322584 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f83400d86bf0af8021ae2dae08c1eca8890dfb1ff67ff563574d7fdc75d3c9c`  
-		Last Modified: Thu, 09 Jan 2025 05:11:54 GMT  
-		Size: 18.4 MB (18432090 bytes)  
+	-	`sha256:4b89e9fd9ae3935bc633956dc9483eb4c26e5c2439ae04368f9f0f98697a3739`  
+		Last Modified: Wed, 29 Jan 2025 00:50:53 GMT  
+		Size: 18.4 MB (18432104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ef03248d9eb4e785f005161c68f62f8d8b9323d6e44d50e0d0e469d6c321634`  
-		Last Modified: Thu, 09 Jan 2025 05:11:54 GMT  
-		Size: 193.0 B  
+	-	`sha256:0cca1e2d1a7b211185d8f372cc91fd0df9cae287310e75bb11b96b8ec606a2e6`  
+		Last Modified: Wed, 29 Jan 2025 00:50:53 GMT  
+		Size: 191.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57118d6ab4823029393503bbf1f115efef45cb1ae0e9061c601bfc16d09fee66`  
-		Last Modified: Thu, 09 Jan 2025 05:11:55 GMT  
+	-	`sha256:383e26c253e749e92969b0d053bc00959222f50fb51d22e7c40795ddb65fc659`  
+		Last Modified: Wed, 29 Jan 2025 00:50:53 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7fa8bb5f7948fde560c4573471ca89d2d5c48f33549fc22e47e3c83a7f75fa44`  
-		Last Modified: Thu, 09 Jan 2025 05:11:55 GMT  
-		Size: 619.0 B  
+	-	`sha256:e17bd88f0585b5de8f88a2b1616a1897423e6ab65997e5358f607e9efcecec86`  
+		Last Modified: Wed, 29 Jan 2025 00:50:54 GMT  
+		Size: 617.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e985857cf9ee7f5796313a668352716cee28cdd9eb29b5ce04ae806610934c7`  
-		Last Modified: Thu, 09 Jan 2025 05:11:55 GMT  
-		Size: 832.0 B  
+	-	`sha256:a716d6d2dda62a3b8c7ccd9eb7415270b73749d0b7b6c01b994d17f4c3ea257d`  
+		Last Modified: Wed, 29 Jan 2025 00:50:54 GMT  
+		Size: 826.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:adaafed1eb1ce19252663c2c90cfb638b5ed3f2f383e885408e61964b089b0b1`  
-		Last Modified: Thu, 09 Jan 2025 08:05:36 GMT  
-		Size: 13.7 MB (13690412 bytes)  
+	-	`sha256:6e2c718eea223c66ad9c33c7a8d47fe0ffed1788bd0d020946b1908d127d0087`  
+		Last Modified: Wed, 29 Jan 2025 01:29:19 GMT  
+		Size: 13.7 MB (13690434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:b13ebdf633b7562e2e74824bda1e542703fe15da4a3ee2e95b8a400de55b7c93
+$ docker pull rabbitmq@sha256:845923da58f094ee0850d1efa758ef0312a7085c5307a4393b219d3153b3a75f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.6 MB (1642979 bytes)**  
+-	Total Size: **1.6 MB (1643001 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7dcc9b9f83f6d79e97396caf648a1bf467e90884240d27257860917a6cc81a18`
+-	Image ID: `sha256:0c2806a062aee7d18db1f02304d7ca9de3a8296a2ca00a0e58e0c5c1e1a2b960`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3d733fe05287394d1b32696bf347d20687023570a38ef4b8ab4c03539b16c104`  
-		Last Modified: Thu, 09 Jan 2025 08:05:36 GMT  
-		Size: 1.6 MB (1632288 bytes)  
+	-	`sha256:a96ad885150ea1cc7020d09c5b941fa58e8b0063ce3dfc8794a020286a61127d`  
+		Last Modified: Wed, 29 Jan 2025 01:29:17 GMT  
+		Size: 1.6 MB (1632310 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6d8f296bc2933ba5292688cc1e9ee0c160aa2cc96f52bdb7f1213ccca53fe136`  
-		Last Modified: Thu, 09 Jan 2025 08:05:35 GMT  
+	-	`sha256:964ec45a870e67a22c59f1750f40a41a59c6f9808f198f5a8337b5c380d6ed15`  
+		Last Modified: Wed, 29 Jan 2025 01:29:17 GMT  
 		Size: 10.7 KB (10691 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-rc-management-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:16025e11f160d8aa3eda43dca852341edb142c3492781408fe780f75a76df2d5
+$ docker pull rabbitmq@sha256:75d1f1966d774dffcb8c5cdba5684b61716411cffe9c08e69abf84f728d60ecf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.4 MB (82353169 bytes)**  
+-	Total Size: **82.4 MB (82358387 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4564914fcb8a55c4837b4792135e36bd66730483999cec359c0552e95653ca8b`
+-	Image ID: `sha256:0d487974a49a604ad0a1603b25d5f38ee4cb2769233568e6c1f9026004986b4b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -27212,77 +27212,77 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Wed, 08 Jan 2025 17:23:36 GMT  
 		Size: 3.5 MB (3463126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4b4ec519bbc58b1fb8bccf7f0da70e5e234775b9265198764005e6fb2c20ebf`  
-		Last Modified: Wed, 08 Jan 2025 18:16:40 GMT  
-		Size: 35.7 MB (35680594 bytes)  
+	-	`sha256:962578e28c3b99f2d75d61c1f530bbcb1d02288c21c4793f8d79d532a35b03ff`  
+		Last Modified: Wed, 29 Jan 2025 00:33:54 GMT  
+		Size: 35.7 MB (35685730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a10c39e6bac97589b7c5f75bb41eb5bf71526fd0e9176c05e01de32b3e2a8265`  
-		Last Modified: Wed, 08 Jan 2025 18:16:39 GMT  
-		Size: 8.3 MB (8320848 bytes)  
+	-	`sha256:d910eecc1ebbf5884dea2dcf27bf574a74be5844415095ba061514b081aae582`  
+		Last Modified: Wed, 29 Jan 2025 00:33:53 GMT  
+		Size: 8.3 MB (8320842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1626eca3d5ffa941543e5ba196dfde6f51be2e4cc64e7c9c177a6d638f7e1c7`  
-		Last Modified: Wed, 08 Jan 2025 18:16:39 GMT  
-		Size: 1.2 MB (1229370 bytes)  
+	-	`sha256:246edc462139ce522f601b0a305b342e5299a37d9a321463b3a48870384bfa4b`  
+		Last Modified: Wed, 29 Jan 2025 00:33:53 GMT  
+		Size: 1.2 MB (1229393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb37e29ba3e76c564b4531952725a01209eeee5f61af88c8fd6b56c2cdc30576`  
-		Last Modified: Wed, 08 Jan 2025 18:16:40 GMT  
-		Size: 18.4 MB (18431328 bytes)  
+	-	`sha256:aa65f22ad474a417aee08eea387883ce26971a2f6ba0848269e939f862d4c45b`  
+		Last Modified: Wed, 29 Jan 2025 00:33:54 GMT  
+		Size: 18.4 MB (18431351 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3b19b123f4f9f0bdffae556c07e0a79509b9d532119bf9e6fc718e4133c1b6c`  
-		Last Modified: Wed, 08 Jan 2025 18:16:40 GMT  
-		Size: 190.0 B  
+	-	`sha256:af6d3e63124ffd3d0845ba2145f2eaa6408ebfddc9eb7c6461106a764105c073`  
+		Last Modified: Wed, 29 Jan 2025 00:33:54 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ccf53baa7b767401d69fb9496d7ca99de730cbdab3dd03182a5999bb0ca37c3f`  
-		Last Modified: Wed, 08 Jan 2025 18:16:40 GMT  
+	-	`sha256:614929415c02bca768f9f4bca47f3ba8fb7502215373888fe8903428ef1fa784`  
+		Last Modified: Wed, 29 Jan 2025 00:33:54 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ad80bc63e1448527e07b878816bf384a78b35136baaa3706fea022783609100`  
-		Last Modified: Wed, 08 Jan 2025 18:16:40 GMT  
-		Size: 618.0 B  
+	-	`sha256:0e64a1740a4b58bc4cdcc8b9579a249a62ed453885b5f0ffea25352cc5072ebf`  
+		Last Modified: Wed, 29 Jan 2025 00:33:55 GMT  
+		Size: 619.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6717dfa26da85a34c72f72175cc4856006a86dcbd4b09f9bbc406cf35eab4396`  
-		Last Modified: Wed, 08 Jan 2025 18:16:41 GMT  
+	-	`sha256:a8b269333be80ce40f6a66ac471338c2024deda4382717cbd829d93ae0f382db`  
+		Last Modified: Wed, 29 Jan 2025 00:33:55 GMT  
 		Size: 830.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0da9253fdfdcfff70cd31c514ff7cd294cd44fdc24e3887e1bef7e3b765801a`  
-		Last Modified: Wed, 08 Jan 2025 18:25:05 GMT  
-		Size: 15.2 MB (15226156 bytes)  
+	-	`sha256:179a6683ddba529bb096b5a0ce429095254b73b7ee0be209ea89e048ba2ca180`  
+		Last Modified: Wed, 29 Jan 2025 02:07:49 GMT  
+		Size: 15.2 MB (15226194 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:a3f2166699520207eeee5b6a3c29744c00b7b6a7d17ba181cac9fff792416813
+$ docker pull rabbitmq@sha256:679d83819a15f25c6e4048ef7282f5fb0de7e8d38052d1fc44c82b28f73e74f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.6 MB (1641839 bytes)**  
+-	Total Size: **1.5 MB (1521328 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e5ed3b90deacdb33a25ad66626f0e74760bce89564f1e61df991c0ed47778f98`
+-	Image ID: `sha256:749a02a2cd55a85faa8911696ed2d62129a7942babadeed6febb81ccaa4b2e30`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a00267ce0d55a3c626a45cec09f7d38abb5d4dcef252e05bad86a6f4c345bc6f`  
-		Last Modified: Wed, 08 Jan 2025 18:25:04 GMT  
-		Size: 1.6 MB (1631250 bytes)  
+	-	`sha256:fba3ca7590aa73cc645b16c7b17e268165ad8e6308409b91e625b3424e147c54`  
+		Last Modified: Wed, 29 Jan 2025 02:07:47 GMT  
+		Size: 1.5 MB (1510739 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:adc5d4ac1c3f0655e55e7968d780cce4314bc920d93d10a8aa9ecfb5384dbfdc`  
-		Last Modified: Wed, 08 Jan 2025 18:25:04 GMT  
+	-	`sha256:f986c6e01989b4c4b07a696fa4bdd1240faa00d24ba522d241f098625f6df00b`  
+		Last Modified: Wed, 29 Jan 2025 02:07:47 GMT  
 		Size: 10.6 KB (10589 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-rc-management-alpine` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:57a152c942bdf09752aa8d8be6747f7e2ce7640cc7ba78655505c1c3110bb498
+$ docker pull rabbitmq@sha256:2778ef837ca52b9b9c663058ea7869f73e0247d8c2b1da1b9152203e7936ee5c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.5 MB (83518440 bytes)**  
+-	Total Size: **83.5 MB (83518530 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c906a9efd7cc464defe9dfce7e5f9f60267c2e051750dd0224a80aa8a9a8669`
+-	Image ID: `sha256:30ca1f141cf91a96475e549d397503ddaac1a2c10f5eadf101c682c7cde4b68c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -27346,65 +27346,65 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Wed, 08 Jan 2025 17:24:16 GMT  
 		Size: 3.6 MB (3573601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d53e5bb36b5dc0ab79ffe8362486b61d2e230bfc5f65e0c863695410ff3fa79e`  
-		Last Modified: Thu, 09 Jan 2025 00:21:40 GMT  
-		Size: 36.1 MB (36085885 bytes)  
+	-	`sha256:a9dace6bf80f3bb449709147fd3ffba8d80f08537473fed155807c96df1a4c78`  
+		Last Modified: Wed, 29 Jan 2025 01:02:51 GMT  
+		Size: 36.1 MB (36086039 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53da1405ffcec279092e19a4e2871dea98e230594da7ab4f75c6fe2a6acd7c17`  
-		Last Modified: Thu, 09 Jan 2025 00:21:39 GMT  
-		Size: 8.8 MB (8844419 bytes)  
+	-	`sha256:aa6e785eab4b4b33ae68e1d99daf8746b7eca3c89945f0ce9abf0e261127067e`  
+		Last Modified: Wed, 29 Jan 2025 01:02:50 GMT  
+		Size: 8.8 MB (8844433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35b34bba648bac3e531bcd2875754e6a724f60adb4e6b90ba2cfcc89f8a246da`  
-		Last Modified: Thu, 09 Jan 2025 00:21:39 GMT  
-		Size: 1.3 MB (1345127 bytes)  
+	-	`sha256:42ccc248f17eb35673e69538dad793cc79b45d3eaac006df24a99a90355bcd5f`  
+		Last Modified: Wed, 29 Jan 2025 01:02:49 GMT  
+		Size: 1.3 MB (1345152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f1c02076e9343b8049bdbf57d3e876d7589f0728c6379747eb595660328868f`  
-		Last Modified: Thu, 09 Jan 2025 00:21:39 GMT  
-		Size: 18.4 MB (18431365 bytes)  
+	-	`sha256:38f966235b411c46b48a3841a0f6759d2e0b09890d5893ff86a08f07360aafaf`  
+		Last Modified: Wed, 29 Jan 2025 01:02:50 GMT  
+		Size: 18.4 MB (18431253 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbb215ae6c3748e3ffca422111b5c3330f1c5db8f8924ef5aa7247885345b26c`  
-		Last Modified: Thu, 09 Jan 2025 00:21:40 GMT  
-		Size: 193.0 B  
+	-	`sha256:0eaf31fc1f24fb8a8f8b88d1060110cfa6d06a7bf2ae5103d8e86f4809e34fe0`  
+		Last Modified: Wed, 29 Jan 2025 01:02:50 GMT  
+		Size: 191.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1683beae32c15dd21e1f4b749f046f60babdbd22d496785faf9b80d89cb9ba0e`  
-		Last Modified: Thu, 09 Jan 2025 00:21:40 GMT  
-		Size: 109.0 B  
+	-	`sha256:eae3fd7efdf2bcc67a32283c90b1e8ef04b7ed670f2fdb5e234bfe7e5e02b54b`  
+		Last Modified: Wed, 29 Jan 2025 01:02:51 GMT  
+		Size: 106.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73cc3600db23d840bd5a36c724bc4ed960a68490a67bd83cf47bedbc982eee93`  
-		Last Modified: Thu, 09 Jan 2025 00:21:40 GMT  
-		Size: 619.0 B  
+	-	`sha256:091beec1826662af13e1b134933b261bed1110d89454b722046a498afc4f315a`  
+		Last Modified: Wed, 29 Jan 2025 01:02:51 GMT  
+		Size: 620.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5360caa71c6a5a854411e766abe9605c7b935d1320187e39e5674a0770c01410`  
-		Last Modified: Thu, 09 Jan 2025 00:21:41 GMT  
+	-	`sha256:797e87c766f7a823045eb171c2b58d6fa06a7884595a022e680fbe55fb975e4d`  
+		Last Modified: Wed, 29 Jan 2025 01:02:51 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a27cb6383398c54323728b9b227f504388b2d6a3415a168a690c23a9029e42c8`  
-		Last Modified: Thu, 09 Jan 2025 04:22:58 GMT  
-		Size: 15.2 MB (15236293 bytes)  
+	-	`sha256:25fe90b2e876839828e06096fbb1c0fdc53e1fd032db7245d30ada5e65a5c54f`  
+		Last Modified: Wed, 29 Jan 2025 01:37:36 GMT  
+		Size: 15.2 MB (15236306 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:f0493cc4813cf94f05271e0930cac67c71b462830dbe4ecd4ca85503de7acc35
+$ docker pull rabbitmq@sha256:0a3ab299873f8282ddc2b3e8324c984a52d57b589c33bc23cf05cc8187c8692b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.6 MB (1641314 bytes)**  
+-	Total Size: **1.6 MB (1641335 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d14b6414095eb4f411d813eb460ad54f60afbcdca3cf37e73a896662f5a07554`
+-	Image ID: `sha256:4944b334b6e0c8983a3a5001fccd093326fdba0de41c88c298213d7c7419bbf2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:61ef27ac2fc9393d5243c664cd75387e28fa0785f90ebda930b28d10431e11ef`  
-		Last Modified: Thu, 09 Jan 2025 04:22:53 GMT  
-		Size: 1.6 MB (1630671 bytes)  
+	-	`sha256:06be43046843af26a41b8e4465e70b2b33ece00a5369e10bdacfa79ed8c67004`  
+		Last Modified: Wed, 29 Jan 2025 01:37:34 GMT  
+		Size: 1.6 MB (1630693 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9f857bc75080dd92839615b90cf61109b9fdbce42067b1767a2f17f2cf815110`  
-		Last Modified: Thu, 09 Jan 2025 04:22:53 GMT  
-		Size: 10.6 KB (10643 bytes)  
+	-	`sha256:e8a5a35e8a33d04d72b1a81ca51510881373a7e654a12a9d1943b1981a37c3b0`  
+		Last Modified: Wed, 29 Jan 2025 01:37:34 GMT  
+		Size: 10.6 KB (10642 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1-rc-management-alpine` - linux; riscv64
@@ -27544,13 +27544,13 @@ $ docker pull rabbitmq@sha256:9a384c73da0d60aaaec2c23ee6d8e7d9f5faaeb444ed94a660
 ### `rabbitmq:4.1-rc-management-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:5b6a7d319e7e3bd3985edbe556e27dd4c482ac2ed6bcdee76029370f715f628c
+$ docker pull rabbitmq@sha256:0bc0237f0bc9393fd7c136b437ef50f4b76235dc903bf922696e66cbd95352f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.1 MB (82092694 bytes)**  
+-	Total Size: **82.1 MB (82094339 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:700db8ff826ff67f3be1e4db96470df4e01b149589992609bc4cee7e57d2824e`
+-	Image ID: `sha256:8d3f388c52519d395ab6e4c79b547e23bcb7043fc991b4d0ec56d62d0b10ce3d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -27614,71 +27614,71 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Wed, 08 Jan 2025 17:25:12 GMT  
 		Size: 3.5 MB (3466867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de94b6d181ba8758be26a29572fb578e2c3940d65835cf81862e6b9e6bfcd7b5`  
-		Last Modified: Thu, 09 Jan 2025 06:32:53 GMT  
-		Size: 36.1 MB (36097817 bytes)  
+	-	`sha256:b6e7ec3661f28c633af65628e75c3aeff0fe6522edae893cf76aec6201e6770b`  
+		Last Modified: Wed, 29 Jan 2025 00:56:05 GMT  
+		Size: 36.1 MB (36099367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0759cd09f3fffde174f9bda0aec09e205af6b9b2ea1aeb157ab73f39166972a7`  
-		Last Modified: Thu, 09 Jan 2025 06:32:53 GMT  
-		Size: 7.5 MB (7508489 bytes)  
+	-	`sha256:860e3671b3afc5e90689bb1bde6874463a54558112dfa07f347ea89ea2b2e4d1`  
+		Last Modified: Wed, 29 Jan 2025 00:55:59 GMT  
+		Size: 7.5 MB (7508437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2bf597b2c331cf2a57740d539c9b39b17867f0c86c357e863a6571c5519a6197`  
-		Last Modified: Thu, 09 Jan 2025 06:32:53 GMT  
-		Size: 1.3 MB (1323340 bytes)  
+	-	`sha256:564a1cc54b81f6890533accf323d81cfd5067c96dd971eb4f0dbcf28d24e9e04`  
+		Last Modified: Wed, 29 Jan 2025 00:55:59 GMT  
+		Size: 1.3 MB (1323335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1343cdf3d87b91abe106f043e2d7c5222cca5f8a3746cdca9d17da967f845d90`  
-		Last Modified: Thu, 09 Jan 2025 06:32:53 GMT  
-		Size: 18.4 MB (18431208 bytes)  
+	-	`sha256:8bef31fe0fe95d03ed67b8121f86e1d4f860e5a1063ca3146ade256c72c46f78`  
+		Last Modified: Wed, 29 Jan 2025 00:56:00 GMT  
+		Size: 18.4 MB (18431346 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:227948c3a01be6e114305f7de0eafa39690b85172b87d0a6ed730b344406cd8c`  
-		Last Modified: Thu, 09 Jan 2025 06:32:54 GMT  
-		Size: 191.0 B  
+	-	`sha256:0cb4027b0e74e110ceff8fc400a10bed6c6c11e47fea476ee82dfc02b86e3c16`  
+		Last Modified: Wed, 29 Jan 2025 00:56:00 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d45da72dceee53b4490e1f95ee3be9080d7d1d0674fd7e7f56e0764f9e6822a`  
-		Last Modified: Thu, 09 Jan 2025 06:32:54 GMT  
-		Size: 109.0 B  
+	-	`sha256:5bb2c4d97472008d56cc333ca6bcc3253bae09d423910e44cf655e85abc0083f`  
+		Last Modified: Wed, 29 Jan 2025 00:56:00 GMT  
+		Size: 108.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:472b95d98e53e57a01519b9dd7152cc92141fd58984ae9b73cc8b9435b7cb773`  
-		Last Modified: Thu, 09 Jan 2025 06:32:54 GMT  
-		Size: 616.0 B  
+	-	`sha256:8fb8e316d60542ae4421b6feb79a10cde3c1b31b5c870849e5a524e03a7a27da`  
+		Last Modified: Wed, 29 Jan 2025 00:56:01 GMT  
+		Size: 618.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21211a06692d307e1f1504692f33644d1fc72148680cfa349d3e2652b94dc515`  
-		Last Modified: Thu, 09 Jan 2025 06:32:54 GMT  
-		Size: 829.0 B  
+	-	`sha256:18814f5eb3162c699ffec920a9e8d49a44e8b74b7c65c06a0604641b5a200704`  
+		Last Modified: Wed, 29 Jan 2025 00:56:01 GMT  
+		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:118ccc5676ff7833b5c01634751571f44aa7a8d2fb7654698bc657c81dcbd24f`  
-		Last Modified: Thu, 09 Jan 2025 08:53:57 GMT  
-		Size: 15.3 MB (15263228 bytes)  
+	-	`sha256:fc5bb82441b48b65638c3a9c575d5fe90609d7f35b1e647bf04e9ed0f21506e3`  
+		Last Modified: Wed, 29 Jan 2025 01:28:20 GMT  
+		Size: 15.3 MB (15263237 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1-rc-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:4af4430b5038d89ee6ed735fbd51ad741578d493541a5b5fcd9684e4693d62e6
+$ docker pull rabbitmq@sha256:bb8a8540262b44cec13689085ba7a2c88ba55035a038e42c237df5b4af48039d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.6 MB (1640744 bytes)**  
+-	Total Size: **1.6 MB (1640766 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8184fee4e6a801db919617aa7ac91469f46b752ca55d7ad2b457079e77c2de15`
+-	Image ID: `sha256:c0cfd9dc9373851b394486e21c90a852aa6504f6bb8ab55f6dcede6821fe444f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:54213be487d513646aacd970e4cade7c060f81bf1aa14b9fa8cc1fbc23748edb`  
-		Last Modified: Thu, 09 Jan 2025 08:53:56 GMT  
-		Size: 1.6 MB (1630133 bytes)  
+	-	`sha256:f9302f9b4cecbd7b85cb6a38a8a06d22b61f4e476affce3b696d24c05d9820cf`  
+		Last Modified: Wed, 29 Jan 2025 01:28:19 GMT  
+		Size: 1.6 MB (1630155 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:59c8c2d3ff57de3784d56265690a07443361fd40b447bf65a453ffb3a9410ce0`  
-		Last Modified: Thu, 09 Jan 2025 08:53:56 GMT  
+	-	`sha256:f97fe0ee6fa2e1a291fb5dac462bfd8fd52e3b678877769be4bf0afd3b569e34`  
+		Last Modified: Wed, 29 Jan 2025 01:28:19 GMT  
 		Size: 10.6 KB (10611 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rabbitmq:4.1.0-beta.3`
 
 ```console
-$ docker pull rabbitmq@sha256:d1411b0eca7eb6eac702eb7f218a4610e3c0d5e7378a4c4ec2e9539f0b520223
+$ docker pull rabbitmq@sha256:1bf246f5f22c87f81d27d68994aed7c7f9c447037ee34c5eee24cfaca10d3b04
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27699,13 +27699,13 @@ $ docker pull rabbitmq@sha256:d1411b0eca7eb6eac702eb7f218a4610e3c0d5e7378a4c4ec2
 ### `rabbitmq:4.1.0-beta.3` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:4158465e8e709fce99c7f1a8dcba53aa7ed60080e22242107786955caa508c51
+$ docker pull rabbitmq@sha256:305a8b6b85a41c6f3710a7a560ce8df46d72db88a11251fb0a1a9c00ca4726ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **107.3 MB (107320170 bytes)**  
+-	Total Size: **107.3 MB (107340544 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bbab9ecc68d163d07051fac85fb6d3df30b0125ba1bf6b2ade13554d34b4cdb5`
+-	Image ID: `sha256:23acd089f216f7bc9dfb70dbd86954873eaa1f0ea1f8857ca55a40cfcdb95428`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -27722,49 +27722,49 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:bcebbf0fddcba5b864d5d267b68dd23bcfb01275e6ec7bcab69bf8b56af14804 in / 
 # Tue, 19 Nov 2024 17:29:25 GMT
 CMD ["/bin/bash"]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		ldconfig; 	sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		groupadd --gid 999 --system rabbitmq; 	useradd --uid 999 --system --home-dir "$RABBITMQ_DATA_DIR" --gid rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.1.0-beta.3
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	export DEBIAN_FRONTEND=noninteractive; 	apt-get update; 	apt-get install --yes --no-install-recommends 		ca-certificates 		gosu 		tzdata 	; 	gosu nobody true; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get install --yes --no-install-recommends 		gnupg 		wget 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	gosu rabbitmq rabbitmqctl help; 	gosu rabbitmq rabbitmqctl list_ciphers; 	gosu rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN gosu rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -27773,73 +27773,73 @@ CMD ["rabbitmq-server"]
 		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cdd38c438930653be6c575b6ce004faab8869de522155db24d82b86972cdb6f0`  
-		Last Modified: Wed, 11 Dec 2024 22:36:52 GMT  
-		Size: 48.4 MB (48389380 bytes)  
+	-	`sha256:0d502fd5405d0c0890a03a8555c2801c5eb2fde73c311d8c42605708389d24f0`  
+		Last Modified: Wed, 29 Jan 2025 00:33:10 GMT  
+		Size: 48.4 MB (48409615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7009cb92572458741dcd9fc77c425fc354026baa733571481545ab92dc790dec`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 8.2 MB (8169241 bytes)  
+	-	`sha256:c1f0c117e8fc721424b696e4f494f9bad82ee50a1518224bcabb018f18d78c2e`  
+		Last Modified: Wed, 29 Jan 2025 00:33:10 GMT  
+		Size: 8.2 MB (8169320 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6774fe18e9bdeeaa4eb7326eea065697e2d0bc1face92beecde77c946e8e43d5`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 9.5 KB (9452 bytes)  
+	-	`sha256:77ba71b1ef0ce058fa5aa5b1d6befd3f4114fc90a554efb8f4d6ce5eb8a4a526`  
+		Last Modified: Wed, 29 Jan 2025 00:33:09 GMT  
+		Size: 9.5 KB (9484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c34e3b6f34869e315aff7bb32969ab5ecd4fdbb2cfe197aa9b270f5b2fd7afe7`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 21.0 MB (20998379 bytes)  
+	-	`sha256:65d5eeccdd83ce9864a4411334fdc965eba5802bbe94da1423f65dbc9830deb4`  
+		Last Modified: Wed, 29 Jan 2025 00:33:10 GMT  
+		Size: 21.0 MB (20998411 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f358b127b1b6940d41924789dbd47442e213ce156b0d2e05a15eb50fc70333a`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 190.0 B  
+	-	`sha256:5168a9e26789b6ba0bf4598b26eb0f28162ae20662a5ffa16b460b2a3f62d4c9`  
+		Last Modified: Wed, 29 Jan 2025 00:33:10 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6886f3e5ac082083232decf79a447b9afde000401126bc61e9ea38a00398a734`  
-		Last Modified: Wed, 11 Dec 2024 22:36:52 GMT  
-		Size: 109.0 B  
+	-	`sha256:569b83ce3bc05693748549057aa764081d6e05b682cbb8971d20279acdcafde3`  
+		Last Modified: Wed, 29 Jan 2025 00:33:11 GMT  
+		Size: 106.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfb41641b11272c82214189bdd72093549fdb0053426b2b2ea4a7aefbef6ccdb`  
-		Last Modified: Wed, 11 Dec 2024 22:36:52 GMT  
-		Size: 619.0 B  
+	-	`sha256:894f38f1b6521a035c51dfa51c677c4d68b8e0b6cf895bc7edd2429d521f06e6`  
+		Last Modified: Wed, 29 Jan 2025 00:33:11 GMT  
+		Size: 621.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef5c915b6fe22007d76c9ae0fd42482b1d63a2f8a10cf5bd3a8ad40b4357979b`  
-		Last Modified: Wed, 11 Dec 2024 22:36:52 GMT  
+	-	`sha256:20f6c165a5b99f1b0841e3523ad8931241b85fc0c3e24d6b24e87e92a18c1f89`  
+		Last Modified: Wed, 29 Jan 2025 00:33:11 GMT  
 		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.0-beta.3` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:165a094de6154c0b7e53f6086937c085b849a76830f69534c03fc5dc8e0ff880
+$ docker pull rabbitmq@sha256:e44492f2eca18d3dccf22fc60867394c62cb91c2c889dcf9a81a132117a25c95
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.2 MB (18213117 bytes)**  
+-	Total Size: **17.9 MB (17923427 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1320a36ae42ca9923c3300ad8d5d520711f329be7422d1de25b9987cfe378ffb`
+-	Image ID: `sha256:e91e6c2fbc3e6b899fd2f58c22979b218777e3d938cfb3b4c0008daa433be777`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:306fe1484f04c6882a4aafb5b0185e3e09f4eea113415b68da20d5799a5fc865`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 2.4 MB (2365393 bytes)  
+	-	`sha256:c69489d4dd0cecc1cbd2872d39361dce40668e4d8ef03c5add2d316a4f0eb029`  
+		Last Modified: Wed, 29 Jan 2025 00:33:09 GMT  
+		Size: 2.2 MB (2244585 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:44c28706d5ce457a363da8480e89d0ac5a26900404acc8e4dd6b59f7f7f04862`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 5.2 MB (5210361 bytes)  
+	-	`sha256:73541640ee007c6e1ffb951d2d185f48eb8c0b82ff9589e45e506d3e94fa86f1`  
+		Last Modified: Wed, 29 Jan 2025 00:33:09 GMT  
+		Size: 5.2 MB (5203556 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:847bcf26899678dfab3f5885d83950fe07fd37c8808b4d8a3d665f415a367929`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 5.4 MB (5366064 bytes)  
+	-	`sha256:68b2ba7ec4de796f5931c8b8d0f3a0246698958798ef8e4291a8996299c0c1f0`  
+		Last Modified: Wed, 29 Jan 2025 00:33:09 GMT  
+		Size: 5.2 MB (5210774 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f24f19e58d12ef370b46380c370c2f14f088d329e8aece0e57f603651344830c`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 5.2 MB (5212095 bytes)  
+	-	`sha256:9c93953342a72ce97ff5a6816db5403a2cf1196bc55eeae6a9441c5517e9141d`  
+		Last Modified: Wed, 29 Jan 2025 00:33:09 GMT  
+		Size: 5.2 MB (5205298 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:81c9290911a17c441116b8191eb9c71e2bc91379aaca1e404592b8aaa56bd2ae`  
-		Last Modified: Wed, 11 Dec 2024 22:36:52 GMT  
-		Size: 59.2 KB (59204 bytes)  
+	-	`sha256:ea7f514fd521eec1926c24b53ec50efd71036e8e1a81a68d57e798e1e57d9d8f`  
+		Last Modified: Wed, 29 Jan 2025 00:33:10 GMT  
+		Size: 59.2 KB (59214 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.0-beta.3` - linux; arm variant v7
@@ -28137,13 +28137,13 @@ $ docker pull rabbitmq@sha256:7c3d940f1e39c1aa9474d2a3b5f6c48cb9b86c4a47efd5081d
 ### `rabbitmq:4.1.0-beta.3` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:284913697f36aba4b408bac1d9bc8ec7e2d26c1b74b08ab9d445db4049bdf6b8
+$ docker pull rabbitmq@sha256:acc3cfc69b7f105663027fca3e7a7e02245dbea04e5e70769117b602f47cdc8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **105.7 MB (105678720 bytes)**  
+-	Total Size: **105.7 MB (105683145 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f948802cfa864d4149a4f153be4bc727674d5fcaaa527a0ee4ff5ce7497822ab`
+-	Image ID: `sha256:2f3c94c528eb8e75f2ba183d40dac99a9df334b763d07c628ea2954039c11a11`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -28160,49 +28160,49 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:43ada82586e21a3bec38211b678fc6eb9b5e39f96a2d31fced4653d2b54a553f in / 
 # Tue, 19 Nov 2024 16:18:50 GMT
 CMD ["/bin/bash"]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		ldconfig; 	sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		groupadd --gid 999 --system rabbitmq; 	useradd --uid 999 --system --home-dir "$RABBITMQ_DATA_DIR" --gid rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.1.0-beta.3
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	export DEBIAN_FRONTEND=noninteractive; 	apt-get update; 	apt-get install --yes --no-install-recommends 		ca-certificates 		gosu 		tzdata 	; 	gosu nobody true; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get install --yes --no-install-recommends 		gnupg 		wget 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	gosu rabbitmq rabbitmqctl help; 	gosu rabbitmq rabbitmqctl list_ciphers; 	gosu rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN gosu rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -28211,85 +28211,85 @@ CMD ["rabbitmq-server"]
 		Last Modified: Tue, 19 Nov 2024 17:38:45 GMT  
 		Size: 34.4 MB (34388820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35aaa542f56f99732fa6a5ce5ca4b3980f55c461636cc332d4792017c9f15431`  
-		Last Modified: Wed, 11 Dec 2024 22:38:19 GMT  
-		Size: 41.6 MB (41633236 bytes)  
+	-	`sha256:8cadad09c52fdbf44decc403a4ab6082060224014f1082854e01a1a7f5d3981f`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
+		Size: 41.6 MB (41637000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed2e85aabb1a869502abef25c5e467f417a1d8aeca7a26ed9ade9d7d914d39d0`  
-		Last Modified: Wed, 11 Dec 2024 22:38:18 GMT  
-		Size: 8.7 MB (8689219 bytes)  
+	-	`sha256:aeb9f7be9b5b4cbf6f594b895573e0fdbb3020f04243a231409187e8ff591bfd`  
+		Last Modified: Wed, 29 Jan 2025 00:58:32 GMT  
+		Size: 8.7 MB (8689882 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4feb9952ffad20211d81b56be0c2dfe81e14bbc20c685d956302a993a2036a8e`  
-		Last Modified: Wed, 11 Dec 2024 22:38:17 GMT  
-		Size: 9.4 KB (9444 bytes)  
+	-	`sha256:6706769334970294d65b0d1529bdf615cf3e6a523894522867af35ebcc4742a5`  
+		Last Modified: Wed, 29 Jan 2025 00:58:31 GMT  
+		Size: 9.4 KB (9435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5886264b731dc144aa7804945691ec139dc5e25aca8af6b11baf65f20a3026dd`  
-		Last Modified: Wed, 11 Dec 2024 22:38:18 GMT  
-		Size: 21.0 MB (20956256 bytes)  
+	-	`sha256:df58cba9800aeee146a64cb94fc24d1437451a565418657b23b62860166be525`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
+		Size: 21.0 MB (20956257 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7e62d5fbb45af6e4340667e2a8be2aa97f423886ca31c59a30170393a3fbd04`  
-		Last Modified: Wed, 11 Dec 2024 22:38:18 GMT  
-		Size: 188.0 B  
+	-	`sha256:e89ab46dead5b76fb033afc9188a4c7386d6ef3a4464c37f2529d29677414d88`  
+		Last Modified: Wed, 29 Jan 2025 00:58:32 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c314b4fc4138532a67f4e731170a526f5d1256d03cc4a716b7ea72280ed43b`  
-		Last Modified: Wed, 11 Dec 2024 22:38:19 GMT  
+	-	`sha256:fa1a6aba4f2022a1eafdbd501f5a1db9f0a3cf4afd9b91713b359e7b5eae3911`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52b7370a616c801d9cb4a20a61cd4773b8f40856ce2966615e08242d61a73f32`  
-		Last Modified: Wed, 11 Dec 2024 22:38:19 GMT  
-		Size: 617.0 B  
+	-	`sha256:664bbeb327017fcabe4f5eed4e6affad4ff4b5c1eead94eb4acec1c550d1953a`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
+		Size: 623.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:616345f27581916c481b31abdc55588a046934fc035c282cac29878ff6a3b637`  
-		Last Modified: Wed, 11 Dec 2024 22:38:19 GMT  
-		Size: 831.0 B  
+	-	`sha256:12082411c4bdeff35cdb9d190d9e6e489dee780eb57e83c9a584312758be3955`  
+		Last Modified: Wed, 29 Jan 2025 00:58:34 GMT  
+		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.0-beta.3` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:902026fe1e9337773dce1a4dd7f0ece4a6878fbd3ebc45e86c7690d013abf309
+$ docker pull rabbitmq@sha256:ddcf5d5747439b2dcb75f52e1387ed761bafec86b8b5a41b19860f75186f58bf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.1 MB (18129390 bytes)**  
+-	Total Size: **18.1 MB (18110102 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:caaa68b6da62ce53a759a6859a19434ed7ce4c85c9bcf8e469d51f6d29ae29fc`
+-	Image ID: `sha256:9509abcc8c8133ab2aafb2474b740a00f6dadf6a3e6dbc1e062bfac5c6226779`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c16d3fb82efa93618d97d7099117e8a5e9e216942ba8218f351d225f9cc31264`  
-		Last Modified: Wed, 11 Dec 2024 22:38:17 GMT  
-		Size: 2.4 MB (2369735 bytes)  
+	-	`sha256:ce88fccfbb4e43703f14d9e3337d371844fd4902d61a80db6a722b9166b829ca`  
+		Last Modified: Wed, 29 Jan 2025 00:58:32 GMT  
+		Size: 2.4 MB (2369459 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ec04d4beb1d1228b6afee479aa213c6d675945c82a3e6c393fe6187e80057883`  
-		Last Modified: Wed, 11 Dec 2024 22:38:17 GMT  
-		Size: 5.2 MB (5180978 bytes)  
+	-	`sha256:566959bed0e9103aab6acbce0184b697198bf7d593d637d1aa3b5feb3dd05609`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
+		Size: 5.2 MB (5174255 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9a26c845d614aa38c8b6d266bc27d817157f15a5aefb7026beb75e6218e7ace0`  
-		Last Modified: Wed, 11 Dec 2024 22:38:17 GMT  
-		Size: 5.3 MB (5336711 bytes)  
+	-	`sha256:bf0398942e91ae48af824ad77066f60b6e5076ee6f36057ff2f6d54b7a97d59a`  
+		Last Modified: Wed, 29 Jan 2025 00:58:32 GMT  
+		Size: 5.3 MB (5331127 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c7584bfe93dd19ff57286b6c174a11daa1e45d324102ecbd5cfa9567ff0d0858`  
-		Last Modified: Wed, 11 Dec 2024 22:38:17 GMT  
-		Size: 5.2 MB (5182712 bytes)  
+	-	`sha256:8366a24dd7fbe1954fab32520d860832e1bf93cbb704aadce86b2976de1aebc8`  
+		Last Modified: Wed, 29 Jan 2025 00:58:32 GMT  
+		Size: 5.2 MB (5175997 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e9609a8e15269029b55daae79098260d9b034934431cc33a99b63d12506ece92`  
-		Last Modified: Wed, 11 Dec 2024 22:38:18 GMT  
-		Size: 59.3 KB (59254 bytes)  
+	-	`sha256:c8773da04a9386c0f6daf3922743be9edccd7686b8fe4b051b63d7e208cad18c`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
+		Size: 59.3 KB (59264 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.0-beta.3` - linux; riscv64
 
 ```console
-$ docker pull rabbitmq@sha256:f27b684740df207d67d9d5d2c83787ed5ac741b6f87998004ac66a7ba5a328e4
+$ docker pull rabbitmq@sha256:49582d4b8db5fbd980ce98d9870fad10d3efd55bdfcfac9b511572d552acf483
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **99.0 MB (98967684 bytes)**  
+-	Total Size: **99.0 MB (98979480 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8f8d22875e82315c6422abe80e941f6bc32c2f85f6e4dd068af51ccc2ef139a2`
+-	Image ID: `sha256:191fd81398c23b12f7730212b6904027423a9587d5433b57cceb02d6e5f547c3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -28306,49 +28306,49 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:23c2e341d6cf3572f2762ef1304c406cf6d4f5ee8ee8719ef289a3b75a8323aa in / 
 # Tue, 19 Nov 2024 16:34:27 GMT
 CMD ["/bin/bash"]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		ldconfig; 	sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		groupadd --gid 999 --system rabbitmq; 	useradd --uid 999 --system --home-dir "$RABBITMQ_DATA_DIR" --gid rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.1.0-beta.3
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	export DEBIAN_FRONTEND=noninteractive; 	apt-get update; 	apt-get install --yes --no-install-recommends 		ca-certificates 		gosu 		tzdata 	; 	gosu nobody true; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get install --yes --no-install-recommends 		gnupg 		wget 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	gosu rabbitmq rabbitmqctl help; 	gosu rabbitmq rabbitmqctl list_ciphers; 	gosu rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN gosu rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Wed, 11 Dec 2024 12:31:36 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -28357,73 +28357,73 @@ CMD ["rabbitmq-server"]
 		Last Modified: Tue, 19 Nov 2024 17:38:52 GMT  
 		Size: 31.0 MB (30980838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8fed26cd19175c1e49674a896fa0e40e2a6cde8a62490a87d18503bad9af8b27`  
-		Last Modified: Thu, 12 Dec 2024 00:03:32 GMT  
-		Size: 37.3 MB (37281928 bytes)  
+	-	`sha256:4e3eeb39d66e9a8e77660b2714f3ba13fcefa8b5b90abe0593a7585780c35d1d`  
+		Last Modified: Wed, 29 Jan 2025 01:41:33 GMT  
+		Size: 37.3 MB (37292087 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80f4f308364cbd96a45afc7705a79e92182bd81c84a010c5d5c46a55ce56cdf8`  
-		Last Modified: Thu, 12 Dec 2024 00:03:27 GMT  
-		Size: 9.8 MB (9783482 bytes)  
+	-	`sha256:829a259e6eea4ed880c8b37981d90df14491ce05912c2349be4b03a68ec51ee9`  
+		Last Modified: Wed, 29 Jan 2025 01:41:29 GMT  
+		Size: 9.8 MB (9785121 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:439dbee123c9e270fb2ada75c33aea9a0e8a826582867b63f144367c3f10227b`  
-		Last Modified: Thu, 12 Dec 2024 00:03:25 GMT  
-		Size: 9.5 KB (9499 bytes)  
+	-	`sha256:7c2bbbfe4bdfe09d58061d168bb6fa6de75ecabf0871e5b63e100c533201b89d`  
+		Last Modified: Wed, 29 Jan 2025 01:41:26 GMT  
+		Size: 9.5 KB (9491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bf37f514ca66e8761dbf986ac7aee48b8ed4eeacc6f71ae29bdb10c6b8d0015`  
-		Last Modified: Thu, 12 Dec 2024 00:03:29 GMT  
-		Size: 20.9 MB (20910181 bytes)  
+	-	`sha256:6f044e702daa1aae1517e5455efe133851aa5682009d0a84ac3fe69deecd906b`  
+		Last Modified: Wed, 29 Jan 2025 01:41:31 GMT  
+		Size: 20.9 MB (20910189 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:22176869c29555321f153316332ea3e766be490ef40bc81e461eee25dc3c2ce4`  
-		Last Modified: Thu, 12 Dec 2024 00:03:26 GMT  
-		Size: 189.0 B  
+	-	`sha256:bf27ccadde31670c988e2977453d5d10383fe7a59986ef45ab354c22dbfddd59`  
+		Last Modified: Wed, 29 Jan 2025 01:41:27 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:92d8b040ef3f1016347264355317a233414db60d78ddf0cf1f367813ba9824b8`  
-		Last Modified: Thu, 12 Dec 2024 00:03:27 GMT  
-		Size: 109.0 B  
+	-	`sha256:a3e275d3ecd151f1678a7d4d09f21cd61dbb0abce9751d5465229b210811fd87`  
+		Last Modified: Wed, 29 Jan 2025 01:41:28 GMT  
+		Size: 106.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:868b6e35cd0a6a13a9e31123e88b1e457a6670f79485d93ebc95acd7758a7662`  
-		Last Modified: Thu, 12 Dec 2024 00:03:28 GMT  
+	-	`sha256:3de586921822b4b096070e64c932c46d9d0132e046fe864d19ac9534380df71d`  
+		Last Modified: Wed, 29 Jan 2025 01:41:29 GMT  
 		Size: 622.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53d4a93236274fc492b14381f6add1dedf36736ffa2a9e1a69e70b11a3d6015c`  
-		Last Modified: Thu, 12 Dec 2024 00:03:29 GMT  
-		Size: 836.0 B  
+	-	`sha256:6101ff3f21066857216530c64715bbe74d93900faf1360f2415dd498d36c945c`  
+		Last Modified: Wed, 29 Jan 2025 01:41:30 GMT  
+		Size: 838.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.0-beta.3` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:4a917d4975a5e3095ef5dc5c64b00e1741efc7661c64ba592bb05e3b415bf8bb
+$ docker pull rabbitmq@sha256:db89a7e6adff5f718c2e3b8eb163d6e54e77e76528a3449365a15c40e733fc77
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.1 MB (18087921 bytes)**  
+-	Total Size: **18.1 MB (18083736 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5239fd2edc552576b7ab7b5663eea36491d7a4f4f55b8fa78a243b94745399fb`
+-	Image ID: `sha256:3b61f9d7db955d7990fea892db0ecfbf5a971fab58f05e4c378f1cb9410ffb52`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a77af335557147554e57fc51e8a677f27d7ccdc79ce9c0ff69526ea3f7d50f21`  
-		Last Modified: Thu, 12 Dec 2024 00:03:26 GMT  
-		Size: 2.4 MB (2357973 bytes)  
+	-	`sha256:b5b4672b7a266a9fb5d244696b60407af26a1f5b4d0236a37d4484388ce58e74`  
+		Last Modified: Wed, 29 Jan 2025 01:41:27 GMT  
+		Size: 2.4 MB (2357669 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:06f7448104b1a0d2c500b41706da7172ae1349e96b62ae205fd5e6be9781661a`  
-		Last Modified: Thu, 12 Dec 2024 00:03:27 GMT  
-		Size: 5.2 MB (5171934 bytes)  
+	-	`sha256:a5caf6f0d4ffcdf955b412bd0555873fe1c48f1485e578256fe29fc84550e1ee`  
+		Last Modified: Wed, 29 Jan 2025 01:41:28 GMT  
+		Size: 5.2 MB (5170256 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:45b632177ed87d7ae6e7a5447b5063bb7715c89140b21a329273e2f18e94d073`  
-		Last Modified: Thu, 12 Dec 2024 00:03:27 GMT  
-		Size: 5.3 MB (5325092 bytes)  
+	-	`sha256:e1c2f78724fe01681c0e9233fad2f5955ae674be99fb078d6d22626eb1f70afb`  
+		Last Modified: Wed, 29 Jan 2025 01:41:28 GMT  
+		Size: 5.3 MB (5324549 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b6f6f12380d4de63a51d66409777ef7dba920946f4b734c5c97d7201711642f7`  
-		Last Modified: Thu, 12 Dec 2024 00:03:27 GMT  
-		Size: 5.2 MB (5173668 bytes)  
+	-	`sha256:222730043c4977c6fead927a1fc141de9f1301d90857919e5b0b583bd8f5564d`  
+		Last Modified: Wed, 29 Jan 2025 01:41:28 GMT  
+		Size: 5.2 MB (5171998 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:34b12bf8bfdd164cf80644fd7fb2a0575965c8efeaec131f6fab3bbd35c29b92`  
-		Last Modified: Thu, 12 Dec 2024 00:03:27 GMT  
-		Size: 59.3 KB (59254 bytes)  
+	-	`sha256:32325a3f3c0d9b53483deacdb74eaaa4101311c1bb768db6ad5cad289ba60008`  
+		Last Modified: Wed, 29 Jan 2025 01:41:28 GMT  
+		Size: 59.3 KB (59264 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.0-beta.3` - linux; s390x
@@ -28575,7 +28575,7 @@ $ docker pull rabbitmq@sha256:35df7d07c615c1f1296412ebe775dc3b46102b6182152e4efd
 ## `rabbitmq:4.1.0-beta.3-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:9ec46c9352d799f7a2916d48ce041727ddfd490ff861f39e711c4451efe3e4ed
+$ docker pull rabbitmq@sha256:472191f04e51bbd8683dcb326e3ce681fbf177ff981c9eae64cb40940989d27f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28600,64 +28600,64 @@ $ docker pull rabbitmq@sha256:9ec46c9352d799f7a2916d48ce041727ddfd490ff861f39e71
 ### `rabbitmq:4.1.0-beta.3-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:7092ca9a09fe8b0d26eac80c90a13a3baa5af875add83b76418271fbfeb08645
+$ docker pull rabbitmq@sha256:30be02f79ec4ac0efb9dd36e6b74adb1e76f404bdef79a9a49f87e36a023b541
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.7 MB (77652278 bytes)**  
+-	Total Size: **77.7 MB (77652344 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8854bb3dfcf1794a141f007c29b3cf69390613cb2653cecb9e7523e746fc2c0f`
+-	Image ID: `sha256:b665d0feec75c545485f801bacdfc7398e82cc678621861eede46dedc3ec3e85`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-x86_64.tar.gz / # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive $ERLANG_INSTALL_PATH_PREFIX $OPENSSL_INSTALL_PATH_PREFIX 			| tr ',' '\n' 			| sort -u 			| grep -v '^$\|lib\(crypto\|ssl\)' 			| awk 'system("test -e /usr/local/lib/" $1) == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .otp-run-deps $runDeps; 		sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		addgroup -g 101 -S rabbitmq; 	adduser -u 100 -S -h "$RABBITMQ_DATA_DIR" -G rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie; 		apk add --no-cache 		'su-exec>=0.2' 		bash 		procps 		tzdata # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.1.0-beta.3
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	mkdir -p /usr/local/src; 		apk add --no-cache --virtual .build-deps 		gnupg 		xz 	; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apk del --no-network .build-deps; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	su-exec rabbitmq rabbitmqctl help; 	su-exec rabbitmq rabbitmqctl list_ciphers; 	su-exec rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN su-exec rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -28666,69 +28666,69 @@ CMD ["rabbitmq-server"]
 		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
 		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7dad2cd62b35ea5b3826890b7949c92cce160541e6a2f37de86f90b15b059451`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 45.0 MB (44989675 bytes)  
+	-	`sha256:389cbcd4d157ff7449170dc964d28403866cc81f78d56b9c104529a917a37c7a`  
+		Last Modified: Wed, 29 Jan 2025 00:34:19 GMT  
+		Size: 45.0 MB (44989696 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4fbc9e4b76010d4da8935513ae6a82d08cb3fc24ef8e1270c3c326c9cf73e14`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 8.3 MB (8309047 bytes)  
+	-	`sha256:cdaad5fc164e256765b06485ec0b28c718532996f8b7c704aee027a7182f7504`  
+		Last Modified: Wed, 29 Jan 2025 00:34:19 GMT  
+		Size: 8.3 MB (8309063 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29a58ffeec9a8f9b81e7c8e4c3aad715f27412d9a17598ede53dedcb91d308bd`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 2.3 MB (2277952 bytes)  
+	-	`sha256:5d8b1b66431943dd9ebbd875f15488376930e1c082b8949b406e9c607ea57d91`  
+		Last Modified: Wed, 29 Jan 2025 00:34:18 GMT  
+		Size: 2.3 MB (2277964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0196beee2b1ee16432f2861f1ad1c5fe6c5403568f0a968dd2824263940a1c30`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 18.4 MB (18432142 bytes)  
+	-	`sha256:fb1ca56315d11026e56cec247e9ad6ca0f98e60f725f111da701061105fbdde8`  
+		Last Modified: Wed, 29 Jan 2025 00:34:19 GMT  
+		Size: 18.4 MB (18432156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0353fe875b77cc6d05037ad0e99a35b60cc285c7438bc39498b1e289610f8951`  
-		Last Modified: Wed, 08 Jan 2025 18:23:51 GMT  
+	-	`sha256:58a318b906222c6fd50f07ee1fc9301ba3146fcc41c86aa7d6e888b314d14c60`  
+		Last Modified: Wed, 29 Jan 2025 00:34:19 GMT  
 		Size: 193.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b4fda668dad22dcdd7087c7ac617bd6d7bcbff9eb57348fb14d953d15e77d50a`  
-		Last Modified: Wed, 08 Jan 2025 18:23:51 GMT  
-		Size: 108.0 B  
+	-	`sha256:129d17aa835beeb75f378b3a597a327389f624dbae75e71032823b0ff17442ac`  
+		Last Modified: Wed, 29 Jan 2025 00:34:20 GMT  
+		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b441c75c33ebcc4405c0f67d676f7188d5cb07ef17eab96c88b571b8cfcc1c4`  
-		Last Modified: Wed, 08 Jan 2025 18:23:51 GMT  
-		Size: 618.0 B  
+	-	`sha256:a36c3149efd889213b278f6f5325356ae3e49e606bdfe55e78825c94b36e440f`  
+		Last Modified: Wed, 29 Jan 2025 00:34:20 GMT  
+		Size: 619.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dce25257de71f79ce304c34aa3d7d104cce1ca2ec08828eddb4adc51331df23d`  
-		Last Modified: Wed, 08 Jan 2025 18:23:52 GMT  
-		Size: 828.0 B  
+	-	`sha256:84c209cc30796a8c2e005f42e04f7d9b55611ffd49bb820208774c035a2d99df`  
+		Last Modified: Wed, 29 Jan 2025 00:34:21 GMT  
+		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.0-beta.3-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:01c7db70a0863736cd00510b94e0e0f71d245db0cb56d98abfde6c20fcbcd91e
+$ docker pull rabbitmq@sha256:4b1a1dd5aad740248a64a088d79cee0cec6d5f8c1e6a698f31d2831c2ba49275
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.7 MB (6726970 bytes)**  
+-	Total Size: **6.5 MB (6456118 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3de0a03a438a1d7ad6edf59f9eb135f10912941023c3e39b8679ab0b4320b5ab`
+-	Image ID: `sha256:5d001b673cb812c78488eb637aebeb1872f88d0b9d3ff5d1aaf16b2de7490642`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ccc37e4c14dd559fd1330059b309fc0c52ea85af4cb2870a2e76b4731a3f6075`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 658.2 KB (658161 bytes)  
+	-	`sha256:45c2bf0ed02392144aa81f20e41b9d3fe2c2d4b042d2edbd7cdfb5aa9b25d46c`  
+		Last Modified: Wed, 29 Jan 2025 00:34:18 GMT  
+		Size: 537.6 KB (537650 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:af748a85c65eb73b6600cd10daf6192b773507a831f7eaf5a65256c1b23aa5e5`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 3.1 MB (3080991 bytes)  
+	-	`sha256:78df016854a4dfbad5b5eacb8b2c73412ff09b5c3cfc2bf0dc80880191a949d7`  
+		Last Modified: Wed, 29 Jan 2025 00:34:18 GMT  
+		Size: 2.9 MB (2931665 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:54c8f5b21e03a4aa1ba728911bd5dc4f1e271b4aea205322fff25ca27e6b41d1`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
+	-	`sha256:95b12b9eeaa55e682d382f946312787d752c90df0f94652b843c97e201f47305`  
+		Last Modified: Wed, 29 Jan 2025 00:34:19 GMT  
 		Size: 2.9 MB (2927487 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:119e4c7ee423ca302d99f6e26109c9b682e357be93e9fa7dac81e40143a78c81`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 60.3 KB (60331 bytes)  
+	-	`sha256:52cf47213674be94e0dff27e9f8511467f20d5df355b6a8a313bcb5a5a283f53`  
+		Last Modified: Wed, 29 Jan 2025 00:34:18 GMT  
+		Size: 59.3 KB (59316 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.0-beta.3-alpine` - linux; arm variant v6
@@ -29258,64 +29258,64 @@ $ docker pull rabbitmq@sha256:eefba9731cf640b55dd0f619d56a6995b2a5da4073125b19cd
 ### `rabbitmq:4.1.0-beta.3-alpine` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:ab7f854f2fe65639cbcb96b0d64fd944bb80444ddeb3656f2794dd797d2a1902
+$ docker pull rabbitmq@sha256:6398772d1d6b700b9e6afe566302d81f32dfc5ed0886239af654493b95d3591a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.3 MB (68282147 bytes)**  
+-	Total Size: **68.3 MB (68282224 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0aa75f544ceb746e6ec004a6da5829300d670bf8d9c24b19b8f9ba9696c3b302`
+-	Image ID: `sha256:732e3f6dff69cfc0b1f6316b8fa6dea413ec3ae1a84f5b569f1e9182aff8a7c4`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-ppc64le.tar.gz / # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive $ERLANG_INSTALL_PATH_PREFIX $OPENSSL_INSTALL_PATH_PREFIX 			| tr ',' '\n' 			| sort -u 			| grep -v '^$\|lib\(crypto\|ssl\)' 			| awk 'system("test -e /usr/local/lib/" $1) == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .otp-run-deps $runDeps; 		sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		addgroup -g 101 -S rabbitmq; 	adduser -u 100 -S -h "$RABBITMQ_DATA_DIR" -G rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie; 		apk add --no-cache 		'su-exec>=0.2' 		bash 		procps 		tzdata # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.1.0-beta.3
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	mkdir -p /usr/local/src; 		apk add --no-cache --virtual .build-deps 		gnupg 		xz 	; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apk del --no-network .build-deps; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	su-exec rabbitmq rabbitmqctl help; 	su-exec rabbitmq rabbitmqctl list_ciphers; 	su-exec rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN su-exec rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -29324,132 +29324,132 @@ CMD ["rabbitmq-server"]
 		Last Modified: Wed, 08 Jan 2025 17:24:16 GMT  
 		Size: 3.6 MB (3573601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d53e5bb36b5dc0ab79ffe8362486b61d2e230bfc5f65e0c863695410ff3fa79e`  
-		Last Modified: Thu, 09 Jan 2025 00:21:40 GMT  
-		Size: 36.1 MB (36085885 bytes)  
+	-	`sha256:a9dace6bf80f3bb449709147fd3ffba8d80f08537473fed155807c96df1a4c78`  
+		Last Modified: Wed, 29 Jan 2025 01:02:51 GMT  
+		Size: 36.1 MB (36086039 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53da1405ffcec279092e19a4e2871dea98e230594da7ab4f75c6fe2a6acd7c17`  
-		Last Modified: Thu, 09 Jan 2025 00:21:39 GMT  
-		Size: 8.8 MB (8844419 bytes)  
+	-	`sha256:aa6e785eab4b4b33ae68e1d99daf8746b7eca3c89945f0ce9abf0e261127067e`  
+		Last Modified: Wed, 29 Jan 2025 01:02:50 GMT  
+		Size: 8.8 MB (8844433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35b34bba648bac3e531bcd2875754e6a724f60adb4e6b90ba2cfcc89f8a246da`  
-		Last Modified: Thu, 09 Jan 2025 00:21:39 GMT  
-		Size: 1.3 MB (1345127 bytes)  
+	-	`sha256:42ccc248f17eb35673e69538dad793cc79b45d3eaac006df24a99a90355bcd5f`  
+		Last Modified: Wed, 29 Jan 2025 01:02:49 GMT  
+		Size: 1.3 MB (1345152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f1c02076e9343b8049bdbf57d3e876d7589f0728c6379747eb595660328868f`  
-		Last Modified: Thu, 09 Jan 2025 00:21:39 GMT  
-		Size: 18.4 MB (18431365 bytes)  
+	-	`sha256:38f966235b411c46b48a3841a0f6759d2e0b09890d5893ff86a08f07360aafaf`  
+		Last Modified: Wed, 29 Jan 2025 01:02:50 GMT  
+		Size: 18.4 MB (18431253 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbb215ae6c3748e3ffca422111b5c3330f1c5db8f8924ef5aa7247885345b26c`  
-		Last Modified: Thu, 09 Jan 2025 00:21:40 GMT  
-		Size: 193.0 B  
+	-	`sha256:0eaf31fc1f24fb8a8f8b88d1060110cfa6d06a7bf2ae5103d8e86f4809e34fe0`  
+		Last Modified: Wed, 29 Jan 2025 01:02:50 GMT  
+		Size: 191.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1683beae32c15dd21e1f4b749f046f60babdbd22d496785faf9b80d89cb9ba0e`  
-		Last Modified: Thu, 09 Jan 2025 00:21:40 GMT  
-		Size: 109.0 B  
+	-	`sha256:eae3fd7efdf2bcc67a32283c90b1e8ef04b7ed670f2fdb5e234bfe7e5e02b54b`  
+		Last Modified: Wed, 29 Jan 2025 01:02:51 GMT  
+		Size: 106.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73cc3600db23d840bd5a36c724bc4ed960a68490a67bd83cf47bedbc982eee93`  
-		Last Modified: Thu, 09 Jan 2025 00:21:40 GMT  
-		Size: 619.0 B  
+	-	`sha256:091beec1826662af13e1b134933b261bed1110d89454b722046a498afc4f315a`  
+		Last Modified: Wed, 29 Jan 2025 01:02:51 GMT  
+		Size: 620.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5360caa71c6a5a854411e766abe9605c7b935d1320187e39e5674a0770c01410`  
-		Last Modified: Thu, 09 Jan 2025 00:21:41 GMT  
+	-	`sha256:797e87c766f7a823045eb171c2b58d6fa06a7884595a022e680fbe55fb975e4d`  
+		Last Modified: Wed, 29 Jan 2025 01:02:51 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.0-beta.3-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:1836dffb598f3af7c455548adfecaef5d7f90ecc3dafa7a95731b02a26950421
+$ docker pull rabbitmq@sha256:5c1e0ebbec627faae35fa02eb4d05b02f9198e0972ea4a0fcb397f7a29058cda
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.7 MB (6731915 bytes)**  
+-	Total Size: **6.7 MB (6731224 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c2ba133e57c417134870a71e6e6f4605aa579eff0a5cef079a02e650e9241238`
+-	Image ID: `sha256:0958ff860442d42d3463a066a13f3a7736734eac2811a301d3647eeb0f2f0ce6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c6b70bfac0c361eb013a0f99f33ca0cb46ae8457c1f954817e8ba116773a1826`  
-		Last Modified: Thu, 09 Jan 2025 00:21:38 GMT  
-		Size: 652.3 KB (652339 bytes)  
+	-	`sha256:5b082aa87a6490da0d7fc62a00ffdd8fb2ed305f96fef6cb39f3e32b53e068e6`  
+		Last Modified: Wed, 29 Jan 2025 01:02:49 GMT  
+		Size: 652.4 KB (652361 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:aa55ca1da5dbaccf5899f653b2728840bbd600b78ce2db179b9daa7dcf3716fc`  
-		Last Modified: Thu, 09 Jan 2025 00:21:39 GMT  
-		Size: 3.1 MB (3087013 bytes)  
+	-	`sha256:040afa46c917580e90f413a9186f6804576229d645305d856685a68fd3b25801`  
+		Last Modified: Wed, 29 Jan 2025 01:02:49 GMT  
+		Size: 3.1 MB (3087315 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:373636498364c657c45a268a0890d71c1c5d8d9786b540010894bf7c361227f6`  
-		Last Modified: Thu, 09 Jan 2025 00:21:39 GMT  
+	-	`sha256:e430ffdd26c637200e8a5718152468fad03519e216b1287f340f7baf40ded052`  
+		Last Modified: Wed, 29 Jan 2025 01:02:49 GMT  
 		Size: 2.9 MB (2932182 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:92e3bffe484ab7afcf545bcc47dd9762ea36146f3921f1d27ebf6f56363d7ae9`  
-		Last Modified: Thu, 09 Jan 2025 00:21:38 GMT  
-		Size: 60.4 KB (60381 bytes)  
+	-	`sha256:5d24cacaff9c6bc1577ced58bbc521745ee20769f18eaf1698f64e3d4ef70d9c`  
+		Last Modified: Wed, 29 Jan 2025 01:02:49 GMT  
+		Size: 59.4 KB (59366 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.0-beta.3-alpine` - linux; riscv64
 
 ```console
-$ docker pull rabbitmq@sha256:b2d49e4111d15606860102f9c10dfcfab1d841906ce920417e6b1b9fa63f2472
+$ docker pull rabbitmq@sha256:af0b0c9919895b69e819ac0263bd5594a0d43437ceffe25a67170cf0d6cc2be3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.9 MB (69931674 bytes)**  
+-	Total Size: **69.9 MB (69931491 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:98621c8ea03020d02a09a4dcc5cb5a6f1166cd769c6c3cc5fe9792ef6297a172`
+-	Image ID: `sha256:015a61e95e7f83d67b61bac27763e82c2703de144734f8091b119dd6371402c1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-riscv64.tar.gz / # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive $ERLANG_INSTALL_PATH_PREFIX $OPENSSL_INSTALL_PATH_PREFIX 			| tr ',' '\n' 			| sort -u 			| grep -v '^$\|lib\(crypto\|ssl\)' 			| awk 'system("test -e /usr/local/lib/" $1) == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .otp-run-deps $runDeps; 		sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		addgroup -g 101 -S rabbitmq; 	adduser -u 100 -S -h "$RABBITMQ_DATA_DIR" -G rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie; 		apk add --no-cache 		'su-exec>=0.2' 		bash 		procps 		tzdata # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.1.0-beta.3
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	mkdir -p /usr/local/src; 		apk add --no-cache --virtual .build-deps 		gnupg 		xz 	; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apk del --no-network .build-deps; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	su-exec rabbitmq rabbitmqctl help; 	su-exec rabbitmq rabbitmqctl list_ciphers; 	su-exec rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN su-exec rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -29458,69 +29458,69 @@ CMD ["rabbitmq-server"]
 		Last Modified: Wed, 08 Jan 2025 17:48:43 GMT  
 		Size: 3.4 MB (3350256 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c184a89710c8bf6b4bd56e06ad64c34ca66c111bdd470b3d64ae635ba9654367`  
-		Last Modified: Fri, 10 Jan 2025 23:11:02 GMT  
-		Size: 37.0 MB (37028486 bytes)  
+	-	`sha256:966a78004ce7c6bfe1a27f8802f5dc4ecc17eedabaf526a18f553ac187d1cc52`  
+		Last Modified: Wed, 29 Jan 2025 03:05:46 GMT  
+		Size: 37.0 MB (37028244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dedb918ea46e955df9ad502d010c6961d291010c1cf928ac046aedf3e2ff9f89`  
-		Last Modified: Fri, 10 Jan 2025 23:10:58 GMT  
-		Size: 9.9 MB (9854297 bytes)  
+	-	`sha256:5a274d58faff155503064ba782ca307c49f4c956f7c5d23d195679056a268aeb`  
+		Last Modified: Wed, 29 Jan 2025 03:05:42 GMT  
+		Size: 9.9 MB (9854310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe4728a0f84ea00a6aeadb4cd0f01ba9ef56b0abcde3a385cfc858d558b11145`  
-		Last Modified: Fri, 10 Jan 2025 23:10:56 GMT  
-		Size: 1.3 MB (1265051 bytes)  
+	-	`sha256:5cb844a243709fe69a647a30829c6d79942ea0450bf31aa32c780d953b4c80fe`  
+		Last Modified: Wed, 29 Jan 2025 03:05:40 GMT  
+		Size: 1.3 MB (1265034 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c1a780a7e5203761488ea968deac36923fef6bc25acb0888d3fed8af640a4178`  
-		Last Modified: Fri, 10 Jan 2025 23:10:59 GMT  
-		Size: 18.4 MB (18431832 bytes)  
+	-	`sha256:cee69467cbbe3519b43a90445638c61a60b9df9969ae82c424ed79fe115d7932`  
+		Last Modified: Wed, 29 Jan 2025 03:05:44 GMT  
+		Size: 18.4 MB (18431900 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d28675c219997409c6a4b6cf1d0929756f0d295a36c5720824623907f5d892d`  
-		Last Modified: Fri, 10 Jan 2025 23:10:57 GMT  
-		Size: 193.0 B  
+	-	`sha256:34fe131ea1f26a6917d8bb537407377ebb2331763d27077e5d93f52f249a947e`  
+		Last Modified: Wed, 29 Jan 2025 03:05:41 GMT  
+		Size: 191.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4a1e1e12f66cc894e2c2c346b8dcf20532bf579fc714e5d43614399abb5de9ca`  
-		Last Modified: Fri, 10 Jan 2025 23:10:58 GMT  
+	-	`sha256:37facd5df076a6ffce06531a36aa4f366ff7058965b5b2e2c2e6a5511c495d9d`  
+		Last Modified: Wed, 29 Jan 2025 03:05:42 GMT  
 		Size: 106.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3861cec18d932838d4132abe67b6d1b8688e0c8a7d8df9c43522a1edad90a1ba`  
-		Last Modified: Fri, 10 Jan 2025 23:10:59 GMT  
-		Size: 623.0 B  
+	-	`sha256:194be2105565ad1ee2781cfc16e5ed277697197a14bb2d3da6871b14452efefa`  
+		Last Modified: Wed, 29 Jan 2025 03:05:43 GMT  
+		Size: 619.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca457fa6e1b9869a72d7e4c63c32cf824d6dc91ac087b2606594d78c25c6b260`  
-		Last Modified: Fri, 10 Jan 2025 23:10:59 GMT  
-		Size: 830.0 B  
+	-	`sha256:4459ad442a141e5255f54b20beb7fb7bc20f9b22c257e5b988b6e5f6d2f9b176`  
+		Last Modified: Wed, 29 Jan 2025 03:05:43 GMT  
+		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.0-beta.3-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:4fb9b070cc6a4a86a294d3cdf1eca37a3233c633f58263b3977a0ae67397d480
+$ docker pull rabbitmq@sha256:47028bb58e59431445ac515fe034125453bdb1817324a168128acb3c38103431
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.8 MB (6810029 bytes)**  
+-	Total Size: **6.8 MB (6809338 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e07e5f462ad21f474dcd5c1ae1e5e044f111256c0d2cf5fa2fe0736ae33b8285`
+-	Image ID: `sha256:93ff3728194a06895c9c686b4775477d7e0ae492dc52f6ff2dad1595f89eb811`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0867d3f2764a52f3fd034640982fe2f6b66c4169d2449e91efe8a8704beba4db`  
-		Last Modified: Fri, 10 Jan 2025 23:10:55 GMT  
-		Size: 655.1 KB (655131 bytes)  
+	-	`sha256:81ce727869dde67c05ecef47e2d74d80c060ede2174aef9e6e3e0f1aaa8728ae`  
+		Last Modified: Wed, 29 Jan 2025 03:05:40 GMT  
+		Size: 655.2 KB (655153 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a4e23485df5579e7c155c46d27d6425605f355d51433a4617d458b69317ee675`  
-		Last Modified: Fri, 10 Jan 2025 23:10:56 GMT  
-		Size: 3.1 MB (3124668 bytes)  
+	-	`sha256:3ae3f6bab5ee59b3025aaaa5a75780fb5f8ec0516da92d00fdf61d9c63e6e6f4`  
+		Last Modified: Wed, 29 Jan 2025 03:05:41 GMT  
+		Size: 3.1 MB (3124970 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5bb1abd68bfc088d2366e23b6879083d4e5dd69abbc6604a97608af46821e73e`  
-		Last Modified: Fri, 10 Jan 2025 23:10:56 GMT  
+	-	`sha256:cc9440bed773b90cee6ae16640f45e68af6ed8423c4b88013c87b23b321856c7`  
+		Last Modified: Wed, 29 Jan 2025 03:05:41 GMT  
 		Size: 3.0 MB (2969849 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:dbf89495695db16dc1e376c77a75817b070d500a913e36bcb91f29512f060864`  
-		Last Modified: Fri, 10 Jan 2025 23:10:55 GMT  
-		Size: 60.4 KB (60381 bytes)  
+	-	`sha256:b0be017544a91abad382c492d8b762d8c6d54671b87978f18347438efca18b0a`  
+		Last Modified: Wed, 29 Jan 2025 03:05:40 GMT  
+		Size: 59.4 KB (59366 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.0-beta.3-alpine` - linux; s390x
@@ -29660,7 +29660,7 @@ $ docker pull rabbitmq@sha256:069cece7bdc7b091eab10bd8ffbeb6bf57e821718252ea12a8
 ## `rabbitmq:4.1.0-beta.3-management`
 
 ```console
-$ docker pull rabbitmq@sha256:ce4ddd8074c660107a937f349a78b4aa4a1a56833334b1f60adf1965fb05b6c7
+$ docker pull rabbitmq@sha256:267ce9cf735a15f21b0dbefc2eeb9e1bcf3a80d75ad6817ccb723989d0938ebe
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -29681,13 +29681,13 @@ $ docker pull rabbitmq@sha256:ce4ddd8074c660107a937f349a78b4aa4a1a56833334b1f60a
 ### `rabbitmq:4.1.0-beta.3-management` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:7bcacd9235555c48f9b91aebd9b03312f3c741e39fad338502cb123498dd235f
+$ docker pull rabbitmq@sha256:fc7d97c2f4be9db030f04720c6ed7a441e4fafd337ca64ba88a018d08090dfc7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **119.8 MB (119779580 bytes)**  
+-	Total Size: **119.8 MB (119801058 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24e0647670734b1f7e6474e70d14dcc0a9fd73bd08872bad5e5be3dc01c0c7a7`
+-	Image ID: `sha256:c61f903b18c9a5479ee6a38ea259ee755c99051da6fc57f5b2b70e8d29740205`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -29759,77 +29759,77 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cdd38c438930653be6c575b6ce004faab8869de522155db24d82b86972cdb6f0`  
-		Last Modified: Wed, 11 Dec 2024 22:36:52 GMT  
-		Size: 48.4 MB (48389380 bytes)  
+	-	`sha256:0d502fd5405d0c0890a03a8555c2801c5eb2fde73c311d8c42605708389d24f0`  
+		Last Modified: Wed, 29 Jan 2025 00:33:10 GMT  
+		Size: 48.4 MB (48409615 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7009cb92572458741dcd9fc77c425fc354026baa733571481545ab92dc790dec`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 8.2 MB (8169241 bytes)  
+	-	`sha256:c1f0c117e8fc721424b696e4f494f9bad82ee50a1518224bcabb018f18d78c2e`  
+		Last Modified: Wed, 29 Jan 2025 00:33:10 GMT  
+		Size: 8.2 MB (8169320 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6774fe18e9bdeeaa4eb7326eea065697e2d0bc1face92beecde77c946e8e43d5`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 9.5 KB (9452 bytes)  
+	-	`sha256:77ba71b1ef0ce058fa5aa5b1d6befd3f4114fc90a554efb8f4d6ce5eb8a4a526`  
+		Last Modified: Wed, 29 Jan 2025 00:33:09 GMT  
+		Size: 9.5 KB (9484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c34e3b6f34869e315aff7bb32969ab5ecd4fdbb2cfe197aa9b270f5b2fd7afe7`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 21.0 MB (20998379 bytes)  
+	-	`sha256:65d5eeccdd83ce9864a4411334fdc965eba5802bbe94da1423f65dbc9830deb4`  
+		Last Modified: Wed, 29 Jan 2025 00:33:10 GMT  
+		Size: 21.0 MB (20998411 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3f358b127b1b6940d41924789dbd47442e213ce156b0d2e05a15eb50fc70333a`  
-		Last Modified: Wed, 11 Dec 2024 22:36:51 GMT  
-		Size: 190.0 B  
+	-	`sha256:5168a9e26789b6ba0bf4598b26eb0f28162ae20662a5ffa16b460b2a3f62d4c9`  
+		Last Modified: Wed, 29 Jan 2025 00:33:10 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6886f3e5ac082083232decf79a447b9afde000401126bc61e9ea38a00398a734`  
-		Last Modified: Wed, 11 Dec 2024 22:36:52 GMT  
-		Size: 109.0 B  
+	-	`sha256:569b83ce3bc05693748549057aa764081d6e05b682cbb8971d20279acdcafde3`  
+		Last Modified: Wed, 29 Jan 2025 00:33:11 GMT  
+		Size: 106.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cfb41641b11272c82214189bdd72093549fdb0053426b2b2ea4a7aefbef6ccdb`  
-		Last Modified: Wed, 11 Dec 2024 22:36:52 GMT  
-		Size: 619.0 B  
+	-	`sha256:894f38f1b6521a035c51dfa51c677c4d68b8e0b6cf895bc7edd2429d521f06e6`  
+		Last Modified: Wed, 29 Jan 2025 00:33:11 GMT  
+		Size: 621.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef5c915b6fe22007d76c9ae0fd42482b1d63a2f8a10cf5bd3a8ad40b4357979b`  
-		Last Modified: Wed, 11 Dec 2024 22:36:52 GMT  
+	-	`sha256:20f6c165a5b99f1b0841e3523ad8931241b85fc0c3e24d6b24e87e92a18c1f89`  
+		Last Modified: Wed, 29 Jan 2025 00:33:11 GMT  
 		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ec6b80f1b0a5c55706d6410caf79daea182596ac47226d6a00969455772d33a`  
-		Last Modified: Wed, 11 Dec 2024 23:30:27 GMT  
-		Size: 12.5 MB (12459410 bytes)  
+	-	`sha256:b4d4ef2e31bf40542ab5683f8357fa3e58cd5cb632fc22ce986305c87bc051f0`  
+		Last Modified: Wed, 29 Jan 2025 01:27:04 GMT  
+		Size: 12.5 MB (12460514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.0-beta.3-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:11a5aa1b81b516ef7dc837b95f3499849913b0163099e20baefbda5796466255
+$ docker pull rabbitmq@sha256:57e330244d5e6a6ed96b9c515262303cad97dcc1402a811992f748b11ebf7bf3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (2960039 bytes)**  
+-	Total Size: **2.8 MB (2838492 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6f0cdb6fe703c0a839a20990cf36048bdb9cedc7b6db8dd3173a6c2c3d7147cc`
+-	Image ID: `sha256:8d1809ea5e78000b45416d31663061ab09155885b03b30396bd17b13b9efb0c2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f38c0b12511b4c149136872a73bf6cf95d8fd5744780e179e501c4edfbc0a7c1`  
-		Last Modified: Wed, 11 Dec 2024 23:30:27 GMT  
-		Size: 2.9 MB (2949222 bytes)  
+	-	`sha256:df88475ef92a1fb218718506c222cab617c35fdbe4bb3fd6783e371c8929cd60`  
+		Last Modified: Wed, 29 Jan 2025 01:27:04 GMT  
+		Size: 2.8 MB (2827676 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6351ecec1f7334f69e4f92e2e2b217b6fa28bc4dad7a91c723320a984c47315`  
-		Last Modified: Wed, 11 Dec 2024 23:30:27 GMT  
-		Size: 10.8 KB (10817 bytes)  
+	-	`sha256:1b33610103c2f72d13baa88e3b6cd5269be2a3979dd4fdae6bebe723515bcc6e`  
+		Last Modified: Wed, 29 Jan 2025 01:27:04 GMT  
+		Size: 10.8 KB (10816 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.0-beta.3-management` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:7d491ec49d91ee7e2fc3f50b146586d5fdd92a382603ec623fd2dacce4f38679
+$ docker pull rabbitmq@sha256:4012eb78aefb6b625bd99b0c8b62e27c8ca7f13d825cea2f602ef4f5b3b55dc9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.4 MB (101354709 bytes)**  
+-	Total Size: **101.4 MB (101367364 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:86f0d283f9067d22888d3c02d47dbe9e1880be19a5599e79086699ae083fe554`
+-	Image ID: `sha256:836d65919cfbd708534aa050aa9f5815c35dd9e71a05644a97d29fd29bb00959`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -29901,77 +29901,77 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Tue, 19 Nov 2024 17:38:39 GMT  
 		Size: 26.9 MB (26869639 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15f550c054c479269b4e12354d866d899631ade5dd464763cabe051a9e61dac9`  
-		Last Modified: Wed, 11 Dec 2024 22:40:01 GMT  
-		Size: 35.4 MB (35433266 bytes)  
+	-	`sha256:8ddbe0fa0ca64bcd247be40bee928e934c0900148f9c757cb0e8d29f68579d49`  
+		Last Modified: Wed, 29 Jan 2025 00:34:07 GMT  
+		Size: 35.4 MB (35445401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8af28230a7766b164ee28ba67c508ece3c5074f32ed61375d257e1046e4f53cb`  
-		Last Modified: Wed, 11 Dec 2024 22:40:01 GMT  
-		Size: 6.7 MB (6667936 bytes)  
+	-	`sha256:f6a564914538c5bc366150ddf7111a42ebd75e9f9d96245d825e5c6fb93bbe47`  
+		Last Modified: Wed, 29 Jan 2025 00:34:06 GMT  
+		Size: 6.7 MB (6668105 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ffe2fed4f35f89131d91c94d61bebcc25fd882700127811961a320fd748a54a`  
-		Last Modified: Wed, 11 Dec 2024 22:40:00 GMT  
-		Size: 9.5 KB (9536 bytes)  
+	-	`sha256:d131e21e20cd8eca791b4d665fe37142b67723f37fb3ca13794d5061b0fbd772`  
+		Last Modified: Wed, 29 Jan 2025 00:34:06 GMT  
+		Size: 9.5 KB (9529 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4a4d4f868087426dc5b791d4b0acc3e764d31bde773a94e215ce80473676e2e3`  
-		Last Modified: Wed, 11 Dec 2024 22:40:01 GMT  
-		Size: 20.9 MB (20900727 bytes)  
+	-	`sha256:a8dae38797f44ab2f3c7ead9b8c25807df2eedcb433fbb02985db1568016de2a`  
+		Last Modified: Wed, 29 Jan 2025 00:34:07 GMT  
+		Size: 20.9 MB (20900766 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:759c86d2f5c22eb58c0a2be5d335026884352543e5ea98422180d816714076a9`  
-		Last Modified: Wed, 11 Dec 2024 22:40:01 GMT  
+	-	`sha256:02597e6baff9fa90bc85a67eacbc637f989bfa9dff9934ccae7964fec9f3f30b`  
+		Last Modified: Wed, 29 Jan 2025 00:34:07 GMT  
 		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00e2f839a8655c63aca3c9d6b8468c5e42d0af8714b368213df38f272f7a6907`  
-		Last Modified: Wed, 11 Dec 2024 22:40:02 GMT  
-		Size: 109.0 B  
+	-	`sha256:35badc3ffe28a391c4d4bc786624275323a90225df917718324f0fd0aef4973b`  
+		Last Modified: Wed, 29 Jan 2025 00:34:07 GMT  
+		Size: 106.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3334f75e4a0841fe2f36bfc7a8452b8f581a4bbab61b0399008010ac3305c745`  
-		Last Modified: Wed, 11 Dec 2024 22:40:02 GMT  
+	-	`sha256:62f52d6922ab74c0b13562ce873cc9573397ca7cfa3e4c8fe6cb1c0d41eb7dd0`  
+		Last Modified: Wed, 29 Jan 2025 00:34:08 GMT  
 		Size: 620.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5acd1e32492df82d66fbdffec5650da611abe7c6314ada6998667efdb542a9a4`  
-		Last Modified: Wed, 11 Dec 2024 22:40:02 GMT  
-		Size: 832.0 B  
+	-	`sha256:9d19ffcd9770dcb35785ca0ba013b6ff7b3b7a6088f970781bbc0335a47d862e`  
+		Last Modified: Wed, 29 Jan 2025 00:34:08 GMT  
+		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:62e86cda1384ad72be0eb0152149b7507de90f5d21ab6afd57b47b5f10416237`  
-		Last Modified: Thu, 12 Dec 2024 01:03:11 GMT  
-		Size: 11.5 MB (11471855 bytes)  
+	-	`sha256:979abdf53067a7ab6ac0958185d72765e24c95d1fce33e5783c0ee65ea465c25`  
+		Last Modified: Wed, 29 Jan 2025 01:27:09 GMT  
+		Size: 11.5 MB (11472178 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.0-beta.3-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:9643f8ac48948bf2a4237dda6649f0b54312c99a274cef6865893566c7d94170
+$ docker pull rabbitmq@sha256:45bf294fc55d4b29ed4de291b4e8ff7ca4a0ab8042442206bfa765a3ffd6f5fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (2961043 bytes)**  
+-	Total Size: **3.0 MB (2960028 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47590fe5a8fad0f49772cda9f14c7ab304cb366a618e4a1e8859ae735433545d`
+-	Image ID: `sha256:685267ba3c09f1d2049ce3a4cf98b73e96342f798ebafacfe1e22658d8979248`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8076a73418d9f1d91eb13f33f8937512beda6c075a7ff645149f71f317d80caa`  
-		Last Modified: Thu, 12 Dec 2024 01:03:10 GMT  
-		Size: 3.0 MB (2950167 bytes)  
+	-	`sha256:ac1403e35f058d68132bc75d57d0a72b9880e4e7e070d203ee212d33d93a028b`  
+		Last Modified: Wed, 29 Jan 2025 01:27:08 GMT  
+		Size: 2.9 MB (2949151 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:4f97919ff18ae1fd6a9f6d1f2f9245e0c2f75ef26da74187081899427b286d4d`  
-		Last Modified: Thu, 12 Dec 2024 01:03:10 GMT  
-		Size: 10.9 KB (10876 bytes)  
+	-	`sha256:6d3af08fff5a271ca31392ea0d68fcc355e465ccd57ee556a89bbd54d5345b7d`  
+		Last Modified: Wed, 29 Jan 2025 01:27:08 GMT  
+		Size: 10.9 KB (10877 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.0-beta.3-management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:2f52e2b88256bd49c53d086efb15ca17ac8050de0ba96015e1cdcec971d8a6b1
+$ docker pull rabbitmq@sha256:ec3edfb85f266f32095f1c8fb36345b3f6d7f000c397e52151bc948448e17012
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.5 MB (117549192 bytes)**  
+-	Total Size: **117.6 MB (117568786 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3771c96d3e0b35261d5e47f09627f862278d28c28047dddd52c54af3afdd7492`
+-	Image ID: `sha256:507ea697118db04df26eebe84e9276949aacfbbe2c54d8dd9993c6c82ca3b400`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -30043,77 +30043,77 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Tue, 19 Nov 2024 17:38:33 GMT  
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0dd6f7651969fbbc9ca154b27d8deea7a80480f448b243b63a7b7d56ce089430`  
-		Last Modified: Wed, 11 Dec 2024 22:37:18 GMT  
-		Size: 46.5 MB (46474590 bytes)  
+	-	`sha256:52299e8730d11af6eb71f33b5c16790dae4bb4959ed39906fc96caca2c82e821`  
+		Last Modified: Wed, 29 Jan 2025 00:46:47 GMT  
+		Size: 46.5 MB (46493171 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b8d36208ddc884ffbb9bb161c00179f1eb0d3d2da496387d7419742fec90818c`  
-		Last Modified: Wed, 11 Dec 2024 22:37:17 GMT  
-		Size: 8.9 MB (8934225 bytes)  
+	-	`sha256:ccfe2da4ebaba3053af2ca724275efde70b702f3b62906aba3a2c688da09b33b`  
+		Last Modified: Wed, 29 Jan 2025 00:46:46 GMT  
+		Size: 8.9 MB (8934957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12f1c19f537e7af45a8ace01a800eadc1b23167c81356a6c5799bb680b04ecb7`  
-		Last Modified: Wed, 11 Dec 2024 22:37:17 GMT  
-		Size: 9.4 KB (9428 bytes)  
+	-	`sha256:905d928b7e4fd4f2d74836057463713dfb2fce6b1efd79e739f9fd039604882d`  
+		Last Modified: Wed, 29 Jan 2025 00:46:45 GMT  
+		Size: 9.5 KB (9461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:854f79f3b5bab588586abe9bfd1dd7369d49db5c4d27abc3901b30eb85c9b516`  
-		Last Modified: Wed, 11 Dec 2024 22:37:18 GMT  
-		Size: 20.9 MB (20907234 bytes)  
+	-	`sha256:0b038c2c5003b2cc033f71708f27fe455d56291e0072bd58fe968ef8d4956bb0`  
+		Last Modified: Wed, 29 Jan 2025 00:46:47 GMT  
+		Size: 20.9 MB (20907253 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:09a7f011ee78930fbc8d461f544625f583e2f48c5ff8ae4f84810232bff087b2`  
-		Last Modified: Wed, 11 Dec 2024 22:37:18 GMT  
-		Size: 187.0 B  
+	-	`sha256:66cc6cf6b124262ede5aeeb3de90f8b93af74e06912e2b64137593fc263a4c9e`  
+		Last Modified: Wed, 29 Jan 2025 00:46:46 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:960b6213bdcf1e61a202022fd1549be498cac95f7c06d643b49f4c6b617d92e6`  
-		Last Modified: Wed, 11 Dec 2024 22:37:18 GMT  
+	-	`sha256:e16312245e56aa709324d2dfbf8f2e60b84813563d2861c685db8a50a6c8d44f`  
+		Last Modified: Wed, 29 Jan 2025 00:46:47 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34de032b61d45f4b35f85ddd644aca2476acfee4bba4ba1ab969dfe01d2cd963`  
-		Last Modified: Wed, 11 Dec 2024 22:37:18 GMT  
-		Size: 620.0 B  
+	-	`sha256:5c6caa9f70f455a848c49c68cc73c69a0932756d71fe7f513dc35041e8621339`  
+		Last Modified: Wed, 29 Jan 2025 00:46:47 GMT  
+		Size: 617.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ebf76ac8f826f6e71275fd0bc2b5844ef5c8c0b492f7d5eeee382a8a3b47096`  
-		Last Modified: Wed, 11 Dec 2024 22:37:19 GMT  
+	-	`sha256:62c15bd7a9c7190983358018c6faa2a0f65d815e165a5c16d067e5b275b6cc98`  
+		Last Modified: Wed, 29 Jan 2025 00:46:48 GMT  
 		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eafb84c1d505766a46e9584ab2b2fa37abb7f22a0818a7ea01ef8dd412f92dde`  
-		Last Modified: Thu, 12 Dec 2024 01:13:44 GMT  
-		Size: 12.3 MB (12329296 bytes)  
+	-	`sha256:518f997fc9d1a10f51ea0c1113108c43531e649e3e3c7df525ef244a39f986bb`  
+		Last Modified: Wed, 29 Jan 2025 01:29:00 GMT  
+		Size: 12.3 MB (12329526 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.0-beta.3-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:9ac5122233c67221edc0dbb1c1b799191e4efbc17623932b600423ac9bb2f0f9
+$ docker pull rabbitmq@sha256:907c05aa5b276689c8746a443f6f64e96207f64242d9f677306a315ba5ad6d12
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (2961207 bytes)**  
+-	Total Size: **3.0 MB (2960192 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6b93f70fff806474f756d075e9c8e88bcde68191f9792b529c15fc305a7a12cb`
+-	Image ID: `sha256:cc40eacac364b9941da09bfa6dc5ed6efa13749e45430f21a76e0be50a4b11f3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:89d4036607ec8a39f88c8869d1331544d0e9795f9e56fec79ff06c5e5463fad6`  
-		Last Modified: Thu, 12 Dec 2024 01:13:43 GMT  
-		Size: 3.0 MB (2950310 bytes)  
+	-	`sha256:cc96de4f9de84f7565377d6cca70da06b1e8b4475f15aed6930b351a6250ec15`  
+		Last Modified: Wed, 29 Jan 2025 01:28:59 GMT  
+		Size: 2.9 MB (2949295 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a9faae78fd2fd777680d3f3453e0eb3bfe840febc87626d55962a4aefd7a33a1`  
-		Last Modified: Thu, 12 Dec 2024 01:13:43 GMT  
+	-	`sha256:0253172d33ab730e526b99c8fdc6af902efd2d816fd2524756edaea849909217`  
+		Last Modified: Wed, 29 Jan 2025 01:28:58 GMT  
 		Size: 10.9 KB (10897 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.0-beta.3-management` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:5eb778605b9bb8cd4841085cf10b9549a2834b71af57f4b0a8371f0f386a3b8d
+$ docker pull rabbitmq@sha256:c6b181e03c375d0e265f7ac250b75c53c32e844e3884737568f790681b6800dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **118.7 MB (118656543 bytes)**  
+-	Total Size: **118.6 MB (118642331 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb5fd0597ce1c25e60c8ad4624cdffd626d898297483f52664057b45971208d5`
+-	Image ID: `sha256:1c1a0e8199de4155e67d10db6862970f61c7ccdd7c86f82d704d42d9cddb7599`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -30185,65 +30185,65 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Tue, 19 Nov 2024 17:38:45 GMT  
 		Size: 34.4 MB (34388820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35aaa542f56f99732fa6a5ce5ca4b3980f55c461636cc332d4792017c9f15431`  
-		Last Modified: Wed, 11 Dec 2024 22:38:19 GMT  
-		Size: 41.6 MB (41633236 bytes)  
+	-	`sha256:8cadad09c52fdbf44decc403a4ab6082060224014f1082854e01a1a7f5d3981f`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
+		Size: 41.6 MB (41637000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed2e85aabb1a869502abef25c5e467f417a1d8aeca7a26ed9ade9d7d914d39d0`  
-		Last Modified: Wed, 11 Dec 2024 22:38:18 GMT  
-		Size: 8.7 MB (8689219 bytes)  
+	-	`sha256:aeb9f7be9b5b4cbf6f594b895573e0fdbb3020f04243a231409187e8ff591bfd`  
+		Last Modified: Wed, 29 Jan 2025 00:58:32 GMT  
+		Size: 8.7 MB (8689882 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4feb9952ffad20211d81b56be0c2dfe81e14bbc20c685d956302a993a2036a8e`  
-		Last Modified: Wed, 11 Dec 2024 22:38:17 GMT  
-		Size: 9.4 KB (9444 bytes)  
+	-	`sha256:6706769334970294d65b0d1529bdf615cf3e6a523894522867af35ebcc4742a5`  
+		Last Modified: Wed, 29 Jan 2025 00:58:31 GMT  
+		Size: 9.4 KB (9435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5886264b731dc144aa7804945691ec139dc5e25aca8af6b11baf65f20a3026dd`  
-		Last Modified: Wed, 11 Dec 2024 22:38:18 GMT  
-		Size: 21.0 MB (20956256 bytes)  
+	-	`sha256:df58cba9800aeee146a64cb94fc24d1437451a565418657b23b62860166be525`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
+		Size: 21.0 MB (20956257 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b7e62d5fbb45af6e4340667e2a8be2aa97f423886ca31c59a30170393a3fbd04`  
-		Last Modified: Wed, 11 Dec 2024 22:38:18 GMT  
-		Size: 188.0 B  
+	-	`sha256:e89ab46dead5b76fb033afc9188a4c7386d6ef3a4464c37f2529d29677414d88`  
+		Last Modified: Wed, 29 Jan 2025 00:58:32 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c314b4fc4138532a67f4e731170a526f5d1256d03cc4a716b7ea72280ed43b`  
-		Last Modified: Wed, 11 Dec 2024 22:38:19 GMT  
+	-	`sha256:fa1a6aba4f2022a1eafdbd501f5a1db9f0a3cf4afd9b91713b359e7b5eae3911`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:52b7370a616c801d9cb4a20a61cd4773b8f40856ce2966615e08242d61a73f32`  
-		Last Modified: Wed, 11 Dec 2024 22:38:19 GMT  
-		Size: 617.0 B  
+	-	`sha256:664bbeb327017fcabe4f5eed4e6affad4ff4b5c1eead94eb4acec1c550d1953a`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
+		Size: 623.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:616345f27581916c481b31abdc55588a046934fc035c282cac29878ff6a3b637`  
-		Last Modified: Wed, 11 Dec 2024 22:38:19 GMT  
-		Size: 831.0 B  
+	-	`sha256:12082411c4bdeff35cdb9d190d9e6e489dee780eb57e83c9a584312758be3955`  
+		Last Modified: Wed, 29 Jan 2025 00:58:34 GMT  
+		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bdc3d6ac6c365b8a2c98c61f59caa257d47525823b3637f8eed22a1597484489`  
-		Last Modified: Thu, 12 Dec 2024 00:44:39 GMT  
-		Size: 13.0 MB (12977823 bytes)  
+	-	`sha256:89b06be6d7e824325ce117f436f920309e15644d214fe356708e2d0584934ba6`  
+		Last Modified: Wed, 29 Jan 2025 01:36:07 GMT  
+		Size: 13.0 MB (12959186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.0-beta.3-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:62c4dec34c5bd4f479e3c1c02b1d76815deb8f80fc67dc3898691e20b6035d1e
+$ docker pull rabbitmq@sha256:9460164afeddeb153f652456577707c03e5ae956362ddf7dc49545d0814b1186
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (2964687 bytes)**  
+-	Total Size: **3.0 MB (2963672 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa539950e12e8e6d42938c1a2b007a0b997e517eefc14222a2ffe2d0f62d6634`
+-	Image ID: `sha256:360a1926263218cec3fa3f83909b63de2ff676c4972bf53fbcb20b7b43fa8092`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0d0a034ebcb24f19264e012280938ea2f1f12c7f2984cb83fa0ff86d7daa7ce6`  
-		Last Modified: Thu, 12 Dec 2024 00:44:38 GMT  
-		Size: 3.0 MB (2953838 bytes)  
+	-	`sha256:9d76d9cf035677949f9fdfd7814d47dcde152a72734bd9f3421862c5391fc062`  
+		Last Modified: Wed, 29 Jan 2025 01:36:05 GMT  
+		Size: 3.0 MB (2952824 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e72221fd5f820d0a23af23baddad376ed6e755853f84947f29a29977b152d729`  
-		Last Modified: Thu, 12 Dec 2024 00:44:37 GMT  
-		Size: 10.8 KB (10849 bytes)  
+	-	`sha256:d7cd09f3fbf1d1ec44969287bfed24bb0329cf1db1c7c93d800d99ef9da6e90f`  
+		Last Modified: Wed, 29 Jan 2025 01:36:05 GMT  
+		Size: 10.8 KB (10848 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.0-beta.3-management` - linux; riscv64
@@ -30391,13 +30391,13 @@ $ docker pull rabbitmq@sha256:075f9069dcd7fae7f6ef1679dc4edded030b741fb94c389ee5
 ### `rabbitmq:4.1.0-beta.3-management` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:4957d0ad9edfede7165cc6e75045de97b789d9fb749410e6edf9cf708ab793fd
+$ docker pull rabbitmq@sha256:68f83089b268465936b7079f2136796b638d7c0f7d528d5ab99f3dca012b7b61
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **112.0 MB (111965181 bytes)**  
+-	Total Size: **112.0 MB (111956584 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bfc07fcc6630ff3f27ea9961793bce943d01eac040744a3e3aef7e700d813029`
+-	Image ID: `sha256:bd8239063512c46baa0186f2ebce08c703e6952a023017bdb824988693bd5ead`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -30469,71 +30469,71 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Tue, 19 Nov 2024 17:38:58 GMT  
 		Size: 30.0 MB (30020826 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b379a652603f4d4450ee16626688d7a8fb894512b134e272f6d80e33ebb54381`  
-		Last Modified: Wed, 11 Dec 2024 22:57:50 GMT  
-		Size: 40.7 MB (40711777 bytes)  
+	-	`sha256:965e29136c0040e37abbc80a6accd48640ce74eb7aeda66ce0aa16698c5c0cd8`  
+		Last Modified: Wed, 29 Jan 2025 00:50:24 GMT  
+		Size: 40.7 MB (40729114 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:874d0b46da03c5e6e9380e471b63e248227d1c9b15c98643d4220450e03c55da`  
-		Last Modified: Wed, 11 Dec 2024 22:57:50 GMT  
-		Size: 7.5 MB (7546322 bytes)  
+	-	`sha256:d13f00b9fcaef34a53fe78c034076f777ddcb89aa23fc24922cc58a8c87fa107`  
+		Last Modified: Wed, 29 Jan 2025 00:50:23 GMT  
+		Size: 7.5 MB (7546466 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e062b603cde5d317e55e6334d640f50ac53df923b8f2d9f63d5db742f52cbdf7`  
-		Last Modified: Wed, 11 Dec 2024 22:57:49 GMT  
-		Size: 9.6 KB (9583 bytes)  
+	-	`sha256:e7e68b5fa2a4586323b16f1cae2f3664d3c85773ea6450673bc81d2d406ced6b`  
+		Last Modified: Wed, 29 Jan 2025 00:50:23 GMT  
+		Size: 9.6 KB (9599 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:38692654cabe3ada67f6252e1d5d1679e858f2cb70d9fde2651c81df1c190280`  
-		Last Modified: Thu, 12 Dec 2024 01:06:33 GMT  
-		Size: 21.0 MB (20980743 bytes)  
+	-	`sha256:6a2c76e70452ea41596dc9b8e5a91320490f486b20961f0bb0eb9a56361a0af8`  
+		Last Modified: Wed, 29 Jan 2025 00:50:24 GMT  
+		Size: 21.0 MB (20980659 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:545b35af48bef88fc3d1e64527f1365c155691c0f6015cf385a0c79626f70040`  
-		Last Modified: Thu, 12 Dec 2024 01:06:32 GMT  
-		Size: 189.0 B  
+	-	`sha256:6a4ae3a864a403a05c8d198845401267e5e6120bffcd1be2f0ebad002aaf90ae`  
+		Last Modified: Wed, 29 Jan 2025 00:50:24 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0ff45161924c39a0f338728f80b1c569ec4a8f313fc363b37ba1617d030ce13e`  
-		Last Modified: Thu, 12 Dec 2024 01:06:32 GMT  
-		Size: 105.0 B  
+	-	`sha256:2675710afb280c861a100299e7acee95b2dfa3165aa4ffb91025e53e97e8920b`  
+		Last Modified: Wed, 29 Jan 2025 00:50:24 GMT  
+		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef10c66a5a605465bac875b2ff4ac5f27fa5ab9f6c74619c765092f6ed5df148`  
-		Last Modified: Thu, 12 Dec 2024 01:06:32 GMT  
-		Size: 619.0 B  
+	-	`sha256:113ea52b82387f27f73e72551b8bff04bfe93131bd0d4e7d783b89022f7cce5e`  
+		Last Modified: Wed, 29 Jan 2025 00:50:25 GMT  
+		Size: 621.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ec8d81b557629871f672ffaf2e90344e5a6453344c0da73f1c283e8996b0478`  
-		Last Modified: Thu, 12 Dec 2024 01:06:33 GMT  
-		Size: 831.0 B  
+	-	`sha256:0613677795d57f923985d013326bf94830641e1cdd62b2bdb47300a8717dc47e`  
+		Last Modified: Wed, 29 Jan 2025 00:50:25 GMT  
+		Size: 833.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:55dc8d87a54838ec2b4666c6ca317794c008cad56b07ef5efc5dcfea12a54e27`  
-		Last Modified: Thu, 12 Dec 2024 01:56:57 GMT  
-		Size: 12.7 MB (12694186 bytes)  
+	-	`sha256:16911f7cb3a5030f86f5551e6c961ebf57d2d4be164cfd5b0a203f497d2a1b25`  
+		Last Modified: Wed, 29 Jan 2025 01:27:23 GMT  
+		Size: 12.7 MB (12668169 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.0-beta.3-management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:bb23daef2f887f9c1429485c7ee384c6eb254aa53efe54353990506110535eda
+$ docker pull rabbitmq@sha256:e24ef7ad04ff38a8b85e02ee8491a0faa7b324e834fb65a38fd2b431c0e12052
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (2962105 bytes)**  
+-	Total Size: **3.0 MB (2961084 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1525471741dbc6b4b8948277b7f48d35086008200f4c4338e9aed2ee3ee772c4`
+-	Image ID: `sha256:8fa63c1d39f28c0720a96cff9b2b1250848db413e57afbb29862e9fe3148f51a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7d95f87702335cd1925bc8b3b67115aa1e52c71fdfd3897c17fc367ab57d0103`  
-		Last Modified: Thu, 12 Dec 2024 01:56:57 GMT  
-		Size: 3.0 MB (2951288 bytes)  
+	-	`sha256:c609c7e31a4d4381135ebe19cc5b8342370a98701917311918ba4a82143d779a`  
+		Last Modified: Wed, 29 Jan 2025 01:27:22 GMT  
+		Size: 3.0 MB (2950267 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6958526dfe0a5abfde6ff6e90c1e7506d726cb49f1e9978acb31bc05a96e3ea2`  
-		Last Modified: Thu, 12 Dec 2024 01:56:56 GMT  
+	-	`sha256:dd9a6c5b42e9c5c88146a3dcdb14dd575f4973da2fdb573a584f86e2f8027385`  
+		Last Modified: Wed, 29 Jan 2025 01:27:22 GMT  
 		Size: 10.8 KB (10817 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rabbitmq:4.1.0-beta.3-management-alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:b7199cbebeee15956e77386b8d0ab2b1ae63279e873a24a8518c191ee47f2eef
+$ docker pull rabbitmq@sha256:a3e1ee3fae8145e950a0f646a801936f07d98f8442eb62b1a885b98999a0a247
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30558,13 +30558,13 @@ $ docker pull rabbitmq@sha256:b7199cbebeee15956e77386b8d0ab2b1ae63279e873a24a851
 ### `rabbitmq:4.1.0-beta.3-management-alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:7373924d23d453c1929e46164f6bfaebc92cb8ebea514ddff435b2f48a2f0198
+$ docker pull rabbitmq@sha256:78f716333ef04dc566a99e879b37990a7348a3935a2e2aa289e5c443bf067174
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **91.4 MB (91381841 bytes)**  
+-	Total Size: **91.4 MB (91381878 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:796a2b2f82a797140a78e509613c756a0c8e48241cb67d17dffce6dda11aa643`
+-	Image ID: `sha256:8dca15c0add880fe963c8b6178eede904ba8367cafb23df2f168bb2916509046`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -30628,77 +30628,77 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
 		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7dad2cd62b35ea5b3826890b7949c92cce160541e6a2f37de86f90b15b059451`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 45.0 MB (44989675 bytes)  
+	-	`sha256:389cbcd4d157ff7449170dc964d28403866cc81f78d56b9c104529a917a37c7a`  
+		Last Modified: Wed, 29 Jan 2025 00:34:19 GMT  
+		Size: 45.0 MB (44989696 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4fbc9e4b76010d4da8935513ae6a82d08cb3fc24ef8e1270c3c326c9cf73e14`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 8.3 MB (8309047 bytes)  
+	-	`sha256:cdaad5fc164e256765b06485ec0b28c718532996f8b7c704aee027a7182f7504`  
+		Last Modified: Wed, 29 Jan 2025 00:34:19 GMT  
+		Size: 8.3 MB (8309063 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29a58ffeec9a8f9b81e7c8e4c3aad715f27412d9a17598ede53dedcb91d308bd`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 2.3 MB (2277952 bytes)  
+	-	`sha256:5d8b1b66431943dd9ebbd875f15488376930e1c082b8949b406e9c607ea57d91`  
+		Last Modified: Wed, 29 Jan 2025 00:34:18 GMT  
+		Size: 2.3 MB (2277964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0196beee2b1ee16432f2861f1ad1c5fe6c5403568f0a968dd2824263940a1c30`  
-		Last Modified: Wed, 08 Jan 2025 18:23:50 GMT  
-		Size: 18.4 MB (18432142 bytes)  
+	-	`sha256:fb1ca56315d11026e56cec247e9ad6ca0f98e60f725f111da701061105fbdde8`  
+		Last Modified: Wed, 29 Jan 2025 00:34:19 GMT  
+		Size: 18.4 MB (18432156 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0353fe875b77cc6d05037ad0e99a35b60cc285c7438bc39498b1e289610f8951`  
-		Last Modified: Wed, 08 Jan 2025 18:23:51 GMT  
+	-	`sha256:58a318b906222c6fd50f07ee1fc9301ba3146fcc41c86aa7d6e888b314d14c60`  
+		Last Modified: Wed, 29 Jan 2025 00:34:19 GMT  
 		Size: 193.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b4fda668dad22dcdd7087c7ac617bd6d7bcbff9eb57348fb14d953d15e77d50a`  
-		Last Modified: Wed, 08 Jan 2025 18:23:51 GMT  
-		Size: 108.0 B  
+	-	`sha256:129d17aa835beeb75f378b3a597a327389f624dbae75e71032823b0ff17442ac`  
+		Last Modified: Wed, 29 Jan 2025 00:34:20 GMT  
+		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5b441c75c33ebcc4405c0f67d676f7188d5cb07ef17eab96c88b571b8cfcc1c4`  
-		Last Modified: Wed, 08 Jan 2025 18:23:51 GMT  
-		Size: 618.0 B  
+	-	`sha256:a36c3149efd889213b278f6f5325356ae3e49e606bdfe55e78825c94b36e440f`  
+		Last Modified: Wed, 29 Jan 2025 00:34:20 GMT  
+		Size: 619.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dce25257de71f79ce304c34aa3d7d104cce1ca2ec08828eddb4adc51331df23d`  
-		Last Modified: Wed, 08 Jan 2025 18:23:52 GMT  
-		Size: 828.0 B  
+	-	`sha256:84c209cc30796a8c2e005f42e04f7d9b55611ffd49bb820208774c035a2d99df`  
+		Last Modified: Wed, 29 Jan 2025 00:34:21 GMT  
+		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2a392fe2e50ab978e7fc1be722df36252b6cb214294219ef0b38b861531348ea`  
-		Last Modified: Wed, 08 Jan 2025 19:17:14 GMT  
-		Size: 13.7 MB (13729563 bytes)  
+	-	`sha256:47301d0b1045684398a12020a18be04e85c3cf5c0734b1d80c7c034d54172436`  
+		Last Modified: Wed, 29 Jan 2025 01:26:59 GMT  
+		Size: 13.7 MB (13729534 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.0-beta.3-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:b2119df4a27fc0064a16eb0e7052d817ad85ae7d98cd4607f441ed53a700672d
+$ docker pull rabbitmq@sha256:66289e99f1fb6ce61199c13cd554facb1d8a3cf5e1bbe5840fe875c465ae02b6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.6 MB (1642047 bytes)**  
+-	Total Size: **1.5 MB (1521537 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:100bc3fd1ef4b0a36bd1ad013b9d75776f57a20892831c8f932c1d5e43ac6d70`
+-	Image ID: `sha256:aa20669ec95799076d8cd0d5ac39454060fef95cc70504e9469bbe64cd3805d7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a5ee1e532a1bb183b8798a3b401015e58a0c0e295a1b51f9f75504f2f25efdb3`  
-		Last Modified: Wed, 08 Jan 2025 19:17:13 GMT  
-		Size: 1.6 MB (1631437 bytes)  
+	-	`sha256:33ba67da704d8abb301fe9d41803c9376da939a99bdebf89749aec9226068ba4`  
+		Last Modified: Wed, 29 Jan 2025 01:26:59 GMT  
+		Size: 1.5 MB (1510926 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:40a43befb7ff0ebd0d83a26abc2a3cc6c96a51eedfaac1ecc093661e7bd6bb21`  
-		Last Modified: Wed, 08 Jan 2025 19:17:12 GMT  
-		Size: 10.6 KB (10610 bytes)  
+	-	`sha256:ab6d860576c39e2e70acb75a59d9e929d3891a21116c48c65ffe37371527e244`  
+		Last Modified: Wed, 29 Jan 2025 01:26:59 GMT  
+		Size: 10.6 KB (10611 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.0-beta.3-management-alpine` - linux; arm variant v6
 
 ```console
-$ docker pull rabbitmq@sha256:6f04801f0ae8e56c1c31037cdb1e8cf7c01d52ce151cea756ec092041f33e71c
+$ docker pull rabbitmq@sha256:867b54e5032d8bb5275d08ad8153b5347108980aff0e2db474bc0f77bc0756a0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **80.1 MB (80076691 bytes)**  
+-	Total Size: **80.1 MB (80078338 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:44244a78d51dbfb7300e2fbc86b0468e3f4414284e1ee9964e1e1c93265601a7`
+-	Image ID: `sha256:737c9e0d567b0280a249b47ba8c4381560ee1e7985841dc8a764c8770768a380`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -30762,73 +30762,73 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Wed, 08 Jan 2025 17:23:44 GMT  
 		Size: 3.4 MB (3363879 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5dd30f889bc2bb52640ca25c93ff15f1db08b49328f99aa6d07b6e32d55fb4e`  
-		Last Modified: Thu, 09 Jan 2025 08:25:21 GMT  
-		Size: 35.6 MB (35594403 bytes)  
+	-	`sha256:c12da3bc0dc164fc2dc721268ac149ce9cddc3284a62e1d569ea117dceae224a`  
+		Last Modified: Wed, 29 Jan 2025 00:29:55 GMT  
+		Size: 35.6 MB (35595987 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97b4aabd41165a7ea03e2c58b07210306258e8e36804b6bf402a43a7bf5da636`  
-		Last Modified: Thu, 09 Jan 2025 08:25:20 GMT  
-		Size: 7.1 MB (7092004 bytes)  
+	-	`sha256:23fa176b1a735adfd55984d81cbabb837e4cbecfaa887dd27917a7d89a9b9d5b`  
+		Last Modified: Wed, 29 Jan 2025 00:29:55 GMT  
+		Size: 7.1 MB (7092057 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bff124f685cfadc65080fdd87de339452757f4463fa8f3f0ecd6e03aa6c297bc`  
-		Last Modified: Thu, 09 Jan 2025 08:25:19 GMT  
-		Size: 1.2 MB (1225388 bytes)  
+	-	`sha256:bfed2ab5564ded1e752bf96138db235940094f6c1fd2937cf139056f0d4f73ef`  
+		Last Modified: Wed, 29 Jan 2025 00:29:54 GMT  
+		Size: 1.2 MB (1225407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75dc164e4d9832b973098fd8143c05bf463f1d1906f67ec6643227953cb4f885`  
-		Last Modified: Thu, 09 Jan 2025 08:25:20 GMT  
-		Size: 18.4 MB (18431923 bytes)  
+	-	`sha256:6b826e799d81801f0b7a0cb39f5292c4e4d5f4a0c40b3e37c9d3f5e972d326c0`  
+		Last Modified: Wed, 29 Jan 2025 00:29:55 GMT  
+		Size: 18.4 MB (18431922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d14098d11ffc23164286eda8914e7a58a269ac281780184f31fa81b301ba21ad`  
-		Last Modified: Thu, 09 Jan 2025 08:25:20 GMT  
-		Size: 191.0 B  
+	-	`sha256:9af1663ecd3f264eefd3827005236ce242b1597795f2cfa43c08d80127359223`  
+		Last Modified: Wed, 29 Jan 2025 00:29:55 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cce34ffdd3474d4bc623d2f3cd18a67e412a57912ff86c7911b18b735b8110f3`  
-		Last Modified: Thu, 09 Jan 2025 08:25:21 GMT  
-		Size: 109.0 B  
+	-	`sha256:43ddb4c761e2e38ba61d63aa683b66208b58a3313ad8eca9a5c09d97e8dfeb0c`  
+		Last Modified: Wed, 29 Jan 2025 00:29:56 GMT  
+		Size: 106.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c74fa2300c66b3ead53ea0df792a2a76f540bacb99afda43bbb70be6357ea43c`  
-		Last Modified: Thu, 09 Jan 2025 08:25:21 GMT  
-		Size: 621.0 B  
+	-	`sha256:1249dcf47783c06e3ce0673837d7a6acd0b56b0431d73ed7b8fc9fb76f3918ee`  
+		Last Modified: Wed, 29 Jan 2025 00:29:56 GMT  
+		Size: 619.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24c3c829428d2d23d057245eec47261b7340aa1b2d5b3345d05deeca7f58c1c9`  
-		Last Modified: Thu, 09 Jan 2025 08:25:22 GMT  
-		Size: 833.0 B  
+	-	`sha256:24666435cac3b47da7acace697de11420e404e13d9da05652eed0ddfafdcd040`  
+		Last Modified: Wed, 29 Jan 2025 00:29:56 GMT  
+		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b90bec306d1dae9542b02c65fbb56bd61a93bc6539edec5f97eb5a8d90505d19`  
-		Last Modified: Thu, 09 Jan 2025 10:18:18 GMT  
-		Size: 14.4 MB (14367340 bytes)  
+	-	`sha256:6a4dd649f65c468cf0858ab57b544fc892baabdd84a0e2fe4a049d4925476c74`  
+		Last Modified: Wed, 29 Jan 2025 01:26:58 GMT  
+		Size: 14.4 MB (14367337 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.0-beta.3-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:7fcfa5f0a2e3c8aea63824688959b344f255e79530f1f4cd26c7b9407c562734
+$ docker pull rabbitmq@sha256:0981945f4a017fd628f8d0dfcfbcc10577a95425ebdd836ec82ade48806b3965
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.5 KB (10455 bytes)**  
+-	Total Size: **10.5 KB (10456 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0094b8bce91a4867249a119f1e4fafaecc77bb9483d0235c3776a0b9ee20eb83`
+-	Image ID: `sha256:195051e68cf47403c588a5b59b8f2622ebda1aa5f971833ba2c85fec357c3191`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9c4d3667c034afafcd048b62431e46919447d898cab04f9377fe99ad199fb6e3`  
-		Last Modified: Thu, 09 Jan 2025 10:18:17 GMT  
-		Size: 10.5 KB (10455 bytes)  
+	-	`sha256:6bd25d1df905b9d1f5d82b64c8aa6e2de1b2677ca732120eb67000f62fd55bf7`  
+		Last Modified: Wed, 29 Jan 2025 01:26:56 GMT  
+		Size: 10.5 KB (10456 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.0-beta.3-management-alpine` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:ef31a8dd4619cde3eeb6e41ed446e6b9c921675d9c64ec84d77296c5ed0ce4a0
+$ docker pull rabbitmq@sha256:1fc143d8bca5e48ef526179529bc6f30053c8831b74bc0e841e026bb1f752171
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **78.9 MB (78928659 bytes)**  
+-	Total Size: **78.9 MB (78929134 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7d1596447776f8be2dad8287c700f1123a933e1de44009fec171f20900fc4c2f`
+-	Image ID: `sha256:caa38216445d6ec560458333a7b5717e185378d84bd22f6c587a0cf9d7904b62`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -30892,77 +30892,77 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Wed, 08 Jan 2025 17:34:01 GMT  
 		Size: 3.1 MB (3097112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:655190026c0c4cd1b78581e042bb9d8d1afc0c94b6577e04826a3f89903802b4`  
-		Last Modified: Thu, 09 Jan 2025 08:58:52 GMT  
-		Size: 35.5 MB (35522440 bytes)  
+	-	`sha256:fc117e19b463aa9e5ad3a39d9124a4f2ca0099e98efd9c3385529c44b8334dfd`  
+		Last Modified: Wed, 29 Jan 2025 00:38:50 GMT  
+		Size: 35.5 MB (35522617 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb90420108c572c4e9c50b73301c37e2ede5c838ff435171b418337c85377131`  
-		Last Modified: Thu, 09 Jan 2025 08:58:51 GMT  
-		Size: 6.7 MB (6731743 bytes)  
+	-	`sha256:bb952143b00c8375516413bd9eccb48aeaa5f6efde247c8a2b3b39316449eb16`  
+		Last Modified: Wed, 29 Jan 2025 00:38:49 GMT  
+		Size: 6.7 MB (6731707 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c683309c12636524fe3e72d290f3106b32d61a2749e18716923075ee40e8bab6`  
-		Last Modified: Thu, 09 Jan 2025 08:58:51 GMT  
-		Size: 1.1 MB (1133168 bytes)  
+	-	`sha256:cb0a1a7d8050b79a5a909b117dff600785f0afac98b30ecb34010d6826a86cea`  
+		Last Modified: Wed, 29 Jan 2025 00:38:49 GMT  
+		Size: 1.1 MB (1133181 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81a1f909e29d386c9681f6d47524da4a463f3da9157b572fd423a1c1f3674fde`  
-		Last Modified: Thu, 09 Jan 2025 08:58:51 GMT  
-		Size: 18.4 MB (18431033 bytes)  
+	-	`sha256:ae96ed2ba8614961d42df4de653e71617b43caf0765eb4faf2caa78c78efba2a`  
+		Last Modified: Wed, 29 Jan 2025 00:38:50 GMT  
+		Size: 18.4 MB (18431347 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ff471153a3c31cfa4603603c575d95a6e3425e5abf7312389584f8fade409f3`  
-		Last Modified: Thu, 09 Jan 2025 08:58:52 GMT  
+	-	`sha256:8d6632aec97a1bc17740da5a6a32dbf87d54f4229aa269add9b11524b6e2a36d`  
+		Last Modified: Wed, 29 Jan 2025 00:38:50 GMT  
 		Size: 191.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48165163bc0320c22eefbe9b382c7aa75900a1345f3efc2a3a0495731cad03ab`  
-		Last Modified: Thu, 09 Jan 2025 08:58:52 GMT  
+	-	`sha256:f8a515bdae3baa85dd812a6b90e724c8bf6b4c5befff2f0187b4c5d592846a89`  
+		Last Modified: Wed, 29 Jan 2025 00:38:50 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8c2b4dc781e582f01595722e3d513b51563035bee01b7edc9b6dade38ac37fa6`  
-		Last Modified: Thu, 09 Jan 2025 08:58:53 GMT  
-		Size: 616.0 B  
+	-	`sha256:43f8a1b775e71250f40f1cf76f948737a60742dcaa794285396a3a278e6dd45f`  
+		Last Modified: Wed, 29 Jan 2025 00:38:51 GMT  
+		Size: 618.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b83a25945e6adbb770a905a8691166a777d26a89d4b52ebf5a92f0e622f25916`  
-		Last Modified: Thu, 09 Jan 2025 08:58:53 GMT  
-		Size: 829.0 B  
+	-	`sha256:17aaddcd0e7da393cdc37e158ef29d8dcca7e5f7e0dd2b70fb926ce33215db01`  
+		Last Modified: Wed, 29 Jan 2025 00:38:51 GMT  
+		Size: 827.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8b84730a20f514ba19eccee50069a675510ef45ff3e71ef7c386e1580e14436`  
-		Last Modified: Thu, 09 Jan 2025 11:24:08 GMT  
-		Size: 14.0 MB (14011418 bytes)  
+	-	`sha256:efaca46107a902ab62f0d5865332a8abd4cc372dcde1afc4f8466b5847121096`  
+		Last Modified: Wed, 29 Jan 2025 01:27:32 GMT  
+		Size: 14.0 MB (14011425 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.0-beta.3-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:f576f0c538f74956885157c89d27942a319a979bf6519e3f96937c63a20fbc29
+$ docker pull rabbitmq@sha256:aebd2c5c2d4af6fbfa7b760f4c4f58eec859d25b9d72e01b44734583679049ea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.6 MB (1643118 bytes)**  
+-	Total Size: **1.6 MB (1643141 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cfb9b88ab8297539959167cb69e8893dab4ae5bce6c0a707a3cbd549ed97e841`
+-	Image ID: `sha256:f44898d1f5995f4fd619a2134b3c426f58cc7a14907520862df0946724cc3a55`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:449143e697aa1dee5b5cc0f8f3112c9a7d24896a4c34463ca933845a0b374b1b`  
-		Last Modified: Thu, 09 Jan 2025 11:24:07 GMT  
-		Size: 1.6 MB (1632448 bytes)  
+	-	`sha256:fa5e53ec60abe7634c6d715c35ccc85e13decfdb2188ddb860e8701ecff6aa68`  
+		Last Modified: Wed, 29 Jan 2025 01:27:31 GMT  
+		Size: 1.6 MB (1632470 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:86579be7c7100f1a9f69616b9f9dcf56aaf2e6d0ccff290d75ea9142fe58576e`  
-		Last Modified: Thu, 09 Jan 2025 11:24:06 GMT  
-		Size: 10.7 KB (10670 bytes)  
+	-	`sha256:ca2bbf7b95dc9396985e463942586e58519e9973c46affb859b78d43dab13e3e`  
+		Last Modified: Wed, 29 Jan 2025 01:27:30 GMT  
+		Size: 10.7 KB (10671 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.0-beta.3-management-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:ad1910f4412f7c1a30b5b02964a6f4ad06e2921af1a7842bc79f5f52585856c2
+$ docker pull rabbitmq@sha256:773c57550001cb699e759cccbe1ba5953f854fe98136aa198740821a15989558
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **90.5 MB (90465501 bytes)**  
+-	Total Size: **90.5 MB (90465430 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bea785edc4401465017485dd75ed3a282558258891507e56808f72aff11fb2ba`
+-	Image ID: `sha256:7494fc5885eeced88b941d7c111663623ee6ffbb61a159ecb6b0bb52643ff96f`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -31026,77 +31026,77 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Wed, 08 Jan 2025 17:23:52 GMT  
 		Size: 4.0 MB (3992359 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d5733c5c090ae5ea2628a055e8b807b804be91c20b4a1bd047cedbeb68627ca6`  
-		Last Modified: Thu, 09 Jan 2025 05:11:54 GMT  
-		Size: 43.0 MB (42994345 bytes)  
+	-	`sha256:bf8f58a9acff87800b0001621a0abebfc3c9256c4c94a48a3a7fbcea584c0906`  
+		Last Modified: Wed, 29 Jan 2025 00:50:53 GMT  
+		Size: 43.0 MB (42994244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3fea365716298d4773137f411c2ea7ed225f2a38828f3179479e8e6538b5ae01`  
-		Last Modified: Thu, 09 Jan 2025 05:11:54 GMT  
-		Size: 9.0 MB (9031966 bytes)  
+	-	`sha256:c8f1ae3712c034843f3ef3ad2102e119cbfc862fe0ee876934366fa40b1acc70`  
+		Last Modified: Wed, 29 Jan 2025 00:50:52 GMT  
+		Size: 9.0 MB (9031962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:98a6cce2e0abf3aad35f81bdd87005a80fbec8ded15d57c2d9fa4276a88d8e7c`  
-		Last Modified: Thu, 09 Jan 2025 05:11:53 GMT  
-		Size: 2.3 MB (2322576 bytes)  
+	-	`sha256:432b652fcf3bb55aaa67496f9cccaf3d151c4085e26948a6d515ab1581a0397d`  
+		Last Modified: Wed, 29 Jan 2025 00:50:52 GMT  
+		Size: 2.3 MB (2322584 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f83400d86bf0af8021ae2dae08c1eca8890dfb1ff67ff563574d7fdc75d3c9c`  
-		Last Modified: Thu, 09 Jan 2025 05:11:54 GMT  
-		Size: 18.4 MB (18432090 bytes)  
+	-	`sha256:4b89e9fd9ae3935bc633956dc9483eb4c26e5c2439ae04368f9f0f98697a3739`  
+		Last Modified: Wed, 29 Jan 2025 00:50:53 GMT  
+		Size: 18.4 MB (18432104 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ef03248d9eb4e785f005161c68f62f8d8b9323d6e44d50e0d0e469d6c321634`  
-		Last Modified: Thu, 09 Jan 2025 05:11:54 GMT  
-		Size: 193.0 B  
+	-	`sha256:0cca1e2d1a7b211185d8f372cc91fd0df9cae287310e75bb11b96b8ec606a2e6`  
+		Last Modified: Wed, 29 Jan 2025 00:50:53 GMT  
+		Size: 191.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:57118d6ab4823029393503bbf1f115efef45cb1ae0e9061c601bfc16d09fee66`  
-		Last Modified: Thu, 09 Jan 2025 05:11:55 GMT  
+	-	`sha256:383e26c253e749e92969b0d053bc00959222f50fb51d22e7c40795ddb65fc659`  
+		Last Modified: Wed, 29 Jan 2025 00:50:53 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7fa8bb5f7948fde560c4573471ca89d2d5c48f33549fc22e47e3c83a7f75fa44`  
-		Last Modified: Thu, 09 Jan 2025 05:11:55 GMT  
-		Size: 619.0 B  
+	-	`sha256:e17bd88f0585b5de8f88a2b1616a1897423e6ab65997e5358f607e9efcecec86`  
+		Last Modified: Wed, 29 Jan 2025 00:50:54 GMT  
+		Size: 617.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e985857cf9ee7f5796313a668352716cee28cdd9eb29b5ce04ae806610934c7`  
-		Last Modified: Thu, 09 Jan 2025 05:11:55 GMT  
-		Size: 832.0 B  
+	-	`sha256:a716d6d2dda62a3b8c7ccd9eb7415270b73749d0b7b6c01b994d17f4c3ea257d`  
+		Last Modified: Wed, 29 Jan 2025 00:50:54 GMT  
+		Size: 826.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:adaafed1eb1ce19252663c2c90cfb638b5ed3f2f383e885408e61964b089b0b1`  
-		Last Modified: Thu, 09 Jan 2025 08:05:36 GMT  
-		Size: 13.7 MB (13690412 bytes)  
+	-	`sha256:6e2c718eea223c66ad9c33c7a8d47fe0ffed1788bd0d020946b1908d127d0087`  
+		Last Modified: Wed, 29 Jan 2025 01:29:19 GMT  
+		Size: 13.7 MB (13690434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.0-beta.3-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:b13ebdf633b7562e2e74824bda1e542703fe15da4a3ee2e95b8a400de55b7c93
+$ docker pull rabbitmq@sha256:845923da58f094ee0850d1efa758ef0312a7085c5307a4393b219d3153b3a75f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.6 MB (1642979 bytes)**  
+-	Total Size: **1.6 MB (1643001 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7dcc9b9f83f6d79e97396caf648a1bf467e90884240d27257860917a6cc81a18`
+-	Image ID: `sha256:0c2806a062aee7d18db1f02304d7ca9de3a8296a2ca00a0e58e0c5c1e1a2b960`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3d733fe05287394d1b32696bf347d20687023570a38ef4b8ab4c03539b16c104`  
-		Last Modified: Thu, 09 Jan 2025 08:05:36 GMT  
-		Size: 1.6 MB (1632288 bytes)  
+	-	`sha256:a96ad885150ea1cc7020d09c5b941fa58e8b0063ce3dfc8794a020286a61127d`  
+		Last Modified: Wed, 29 Jan 2025 01:29:17 GMT  
+		Size: 1.6 MB (1632310 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6d8f296bc2933ba5292688cc1e9ee0c160aa2cc96f52bdb7f1213ccca53fe136`  
-		Last Modified: Thu, 09 Jan 2025 08:05:35 GMT  
+	-	`sha256:964ec45a870e67a22c59f1750f40a41a59c6f9808f198f5a8337b5c380d6ed15`  
+		Last Modified: Wed, 29 Jan 2025 01:29:17 GMT  
 		Size: 10.7 KB (10691 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.0-beta.3-management-alpine` - linux; 386
 
 ```console
-$ docker pull rabbitmq@sha256:16025e11f160d8aa3eda43dca852341edb142c3492781408fe780f75a76df2d5
+$ docker pull rabbitmq@sha256:75d1f1966d774dffcb8c5cdba5684b61716411cffe9c08e69abf84f728d60ecf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.4 MB (82353169 bytes)**  
+-	Total Size: **82.4 MB (82358387 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4564914fcb8a55c4837b4792135e36bd66730483999cec359c0552e95653ca8b`
+-	Image ID: `sha256:0d487974a49a604ad0a1603b25d5f38ee4cb2769233568e6c1f9026004986b4b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -31160,77 +31160,77 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Wed, 08 Jan 2025 17:23:36 GMT  
 		Size: 3.5 MB (3463126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4b4ec519bbc58b1fb8bccf7f0da70e5e234775b9265198764005e6fb2c20ebf`  
-		Last Modified: Wed, 08 Jan 2025 18:16:40 GMT  
-		Size: 35.7 MB (35680594 bytes)  
+	-	`sha256:962578e28c3b99f2d75d61c1f530bbcb1d02288c21c4793f8d79d532a35b03ff`  
+		Last Modified: Wed, 29 Jan 2025 00:33:54 GMT  
+		Size: 35.7 MB (35685730 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a10c39e6bac97589b7c5f75bb41eb5bf71526fd0e9176c05e01de32b3e2a8265`  
-		Last Modified: Wed, 08 Jan 2025 18:16:39 GMT  
-		Size: 8.3 MB (8320848 bytes)  
+	-	`sha256:d910eecc1ebbf5884dea2dcf27bf574a74be5844415095ba061514b081aae582`  
+		Last Modified: Wed, 29 Jan 2025 00:33:53 GMT  
+		Size: 8.3 MB (8320842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b1626eca3d5ffa941543e5ba196dfde6f51be2e4cc64e7c9c177a6d638f7e1c7`  
-		Last Modified: Wed, 08 Jan 2025 18:16:39 GMT  
-		Size: 1.2 MB (1229370 bytes)  
+	-	`sha256:246edc462139ce522f601b0a305b342e5299a37d9a321463b3a48870384bfa4b`  
+		Last Modified: Wed, 29 Jan 2025 00:33:53 GMT  
+		Size: 1.2 MB (1229393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb37e29ba3e76c564b4531952725a01209eeee5f61af88c8fd6b56c2cdc30576`  
-		Last Modified: Wed, 08 Jan 2025 18:16:40 GMT  
-		Size: 18.4 MB (18431328 bytes)  
+	-	`sha256:aa65f22ad474a417aee08eea387883ce26971a2f6ba0848269e939f862d4c45b`  
+		Last Modified: Wed, 29 Jan 2025 00:33:54 GMT  
+		Size: 18.4 MB (18431351 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3b19b123f4f9f0bdffae556c07e0a79509b9d532119bf9e6fc718e4133c1b6c`  
-		Last Modified: Wed, 08 Jan 2025 18:16:40 GMT  
-		Size: 190.0 B  
+	-	`sha256:af6d3e63124ffd3d0845ba2145f2eaa6408ebfddc9eb7c6461106a764105c073`  
+		Last Modified: Wed, 29 Jan 2025 00:33:54 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ccf53baa7b767401d69fb9496d7ca99de730cbdab3dd03182a5999bb0ca37c3f`  
-		Last Modified: Wed, 08 Jan 2025 18:16:40 GMT  
+	-	`sha256:614929415c02bca768f9f4bca47f3ba8fb7502215373888fe8903428ef1fa784`  
+		Last Modified: Wed, 29 Jan 2025 00:33:54 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ad80bc63e1448527e07b878816bf384a78b35136baaa3706fea022783609100`  
-		Last Modified: Wed, 08 Jan 2025 18:16:40 GMT  
-		Size: 618.0 B  
+	-	`sha256:0e64a1740a4b58bc4cdcc8b9579a249a62ed453885b5f0ffea25352cc5072ebf`  
+		Last Modified: Wed, 29 Jan 2025 00:33:55 GMT  
+		Size: 619.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6717dfa26da85a34c72f72175cc4856006a86dcbd4b09f9bbc406cf35eab4396`  
-		Last Modified: Wed, 08 Jan 2025 18:16:41 GMT  
+	-	`sha256:a8b269333be80ce40f6a66ac471338c2024deda4382717cbd829d93ae0f382db`  
+		Last Modified: Wed, 29 Jan 2025 00:33:55 GMT  
 		Size: 830.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0da9253fdfdcfff70cd31c514ff7cd294cd44fdc24e3887e1bef7e3b765801a`  
-		Last Modified: Wed, 08 Jan 2025 18:25:05 GMT  
-		Size: 15.2 MB (15226156 bytes)  
+	-	`sha256:179a6683ddba529bb096b5a0ce429095254b73b7ee0be209ea89e048ba2ca180`  
+		Last Modified: Wed, 29 Jan 2025 02:07:49 GMT  
+		Size: 15.2 MB (15226194 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.0-beta.3-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:a3f2166699520207eeee5b6a3c29744c00b7b6a7d17ba181cac9fff792416813
+$ docker pull rabbitmq@sha256:679d83819a15f25c6e4048ef7282f5fb0de7e8d38052d1fc44c82b28f73e74f8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.6 MB (1641839 bytes)**  
+-	Total Size: **1.5 MB (1521328 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e5ed3b90deacdb33a25ad66626f0e74760bce89564f1e61df991c0ed47778f98`
+-	Image ID: `sha256:749a02a2cd55a85faa8911696ed2d62129a7942babadeed6febb81ccaa4b2e30`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a00267ce0d55a3c626a45cec09f7d38abb5d4dcef252e05bad86a6f4c345bc6f`  
-		Last Modified: Wed, 08 Jan 2025 18:25:04 GMT  
-		Size: 1.6 MB (1631250 bytes)  
+	-	`sha256:fba3ca7590aa73cc645b16c7b17e268165ad8e6308409b91e625b3424e147c54`  
+		Last Modified: Wed, 29 Jan 2025 02:07:47 GMT  
+		Size: 1.5 MB (1510739 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:adc5d4ac1c3f0655e55e7968d780cce4314bc920d93d10a8aa9ecfb5384dbfdc`  
-		Last Modified: Wed, 08 Jan 2025 18:25:04 GMT  
+	-	`sha256:f986c6e01989b4c4b07a696fa4bdd1240faa00d24ba522d241f098625f6df00b`  
+		Last Modified: Wed, 29 Jan 2025 02:07:47 GMT  
 		Size: 10.6 KB (10589 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.0-beta.3-management-alpine` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:57a152c942bdf09752aa8d8be6747f7e2ce7640cc7ba78655505c1c3110bb498
+$ docker pull rabbitmq@sha256:2778ef837ca52b9b9c663058ea7869f73e0247d8c2b1da1b9152203e7936ee5c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **83.5 MB (83518440 bytes)**  
+-	Total Size: **83.5 MB (83518530 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7c906a9efd7cc464defe9dfce7e5f9f60267c2e051750dd0224a80aa8a9a8669`
+-	Image ID: `sha256:30ca1f141cf91a96475e549d397503ddaac1a2c10f5eadf101c682c7cde4b68c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -31294,65 +31294,65 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Wed, 08 Jan 2025 17:24:16 GMT  
 		Size: 3.6 MB (3573601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d53e5bb36b5dc0ab79ffe8362486b61d2e230bfc5f65e0c863695410ff3fa79e`  
-		Last Modified: Thu, 09 Jan 2025 00:21:40 GMT  
-		Size: 36.1 MB (36085885 bytes)  
+	-	`sha256:a9dace6bf80f3bb449709147fd3ffba8d80f08537473fed155807c96df1a4c78`  
+		Last Modified: Wed, 29 Jan 2025 01:02:51 GMT  
+		Size: 36.1 MB (36086039 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53da1405ffcec279092e19a4e2871dea98e230594da7ab4f75c6fe2a6acd7c17`  
-		Last Modified: Thu, 09 Jan 2025 00:21:39 GMT  
-		Size: 8.8 MB (8844419 bytes)  
+	-	`sha256:aa6e785eab4b4b33ae68e1d99daf8746b7eca3c89945f0ce9abf0e261127067e`  
+		Last Modified: Wed, 29 Jan 2025 01:02:50 GMT  
+		Size: 8.8 MB (8844433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35b34bba648bac3e531bcd2875754e6a724f60adb4e6b90ba2cfcc89f8a246da`  
-		Last Modified: Thu, 09 Jan 2025 00:21:39 GMT  
-		Size: 1.3 MB (1345127 bytes)  
+	-	`sha256:42ccc248f17eb35673e69538dad793cc79b45d3eaac006df24a99a90355bcd5f`  
+		Last Modified: Wed, 29 Jan 2025 01:02:49 GMT  
+		Size: 1.3 MB (1345152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7f1c02076e9343b8049bdbf57d3e876d7589f0728c6379747eb595660328868f`  
-		Last Modified: Thu, 09 Jan 2025 00:21:39 GMT  
-		Size: 18.4 MB (18431365 bytes)  
+	-	`sha256:38f966235b411c46b48a3841a0f6759d2e0b09890d5893ff86a08f07360aafaf`  
+		Last Modified: Wed, 29 Jan 2025 01:02:50 GMT  
+		Size: 18.4 MB (18431253 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbb215ae6c3748e3ffca422111b5c3330f1c5db8f8924ef5aa7247885345b26c`  
-		Last Modified: Thu, 09 Jan 2025 00:21:40 GMT  
-		Size: 193.0 B  
+	-	`sha256:0eaf31fc1f24fb8a8f8b88d1060110cfa6d06a7bf2ae5103d8e86f4809e34fe0`  
+		Last Modified: Wed, 29 Jan 2025 01:02:50 GMT  
+		Size: 191.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1683beae32c15dd21e1f4b749f046f60babdbd22d496785faf9b80d89cb9ba0e`  
-		Last Modified: Thu, 09 Jan 2025 00:21:40 GMT  
-		Size: 109.0 B  
+	-	`sha256:eae3fd7efdf2bcc67a32283c90b1e8ef04b7ed670f2fdb5e234bfe7e5e02b54b`  
+		Last Modified: Wed, 29 Jan 2025 01:02:51 GMT  
+		Size: 106.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73cc3600db23d840bd5a36c724bc4ed960a68490a67bd83cf47bedbc982eee93`  
-		Last Modified: Thu, 09 Jan 2025 00:21:40 GMT  
-		Size: 619.0 B  
+	-	`sha256:091beec1826662af13e1b134933b261bed1110d89454b722046a498afc4f315a`  
+		Last Modified: Wed, 29 Jan 2025 01:02:51 GMT  
+		Size: 620.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5360caa71c6a5a854411e766abe9605c7b935d1320187e39e5674a0770c01410`  
-		Last Modified: Thu, 09 Jan 2025 00:21:41 GMT  
+	-	`sha256:797e87c766f7a823045eb171c2b58d6fa06a7884595a022e680fbe55fb975e4d`  
+		Last Modified: Wed, 29 Jan 2025 01:02:51 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a27cb6383398c54323728b9b227f504388b2d6a3415a168a690c23a9029e42c8`  
-		Last Modified: Thu, 09 Jan 2025 04:22:58 GMT  
-		Size: 15.2 MB (15236293 bytes)  
+	-	`sha256:25fe90b2e876839828e06096fbb1c0fdc53e1fd032db7245d30ada5e65a5c54f`  
+		Last Modified: Wed, 29 Jan 2025 01:37:36 GMT  
+		Size: 15.2 MB (15236306 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.0-beta.3-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:f0493cc4813cf94f05271e0930cac67c71b462830dbe4ecd4ca85503de7acc35
+$ docker pull rabbitmq@sha256:0a3ab299873f8282ddc2b3e8324c984a52d57b589c33bc23cf05cc8187c8692b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.6 MB (1641314 bytes)**  
+-	Total Size: **1.6 MB (1641335 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d14b6414095eb4f411d813eb460ad54f60afbcdca3cf37e73a896662f5a07554`
+-	Image ID: `sha256:4944b334b6e0c8983a3a5001fccd093326fdba0de41c88c298213d7c7419bbf2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:61ef27ac2fc9393d5243c664cd75387e28fa0785f90ebda930b28d10431e11ef`  
-		Last Modified: Thu, 09 Jan 2025 04:22:53 GMT  
-		Size: 1.6 MB (1630671 bytes)  
+	-	`sha256:06be43046843af26a41b8e4465e70b2b33ece00a5369e10bdacfa79ed8c67004`  
+		Last Modified: Wed, 29 Jan 2025 01:37:34 GMT  
+		Size: 1.6 MB (1630693 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9f857bc75080dd92839615b90cf61109b9fdbce42067b1767a2f17f2cf815110`  
-		Last Modified: Thu, 09 Jan 2025 04:22:53 GMT  
-		Size: 10.6 KB (10643 bytes)  
+	-	`sha256:e8a5a35e8a33d04d72b1a81ca51510881373a7e654a12a9d1943b1981a37c3b0`  
+		Last Modified: Wed, 29 Jan 2025 01:37:34 GMT  
+		Size: 10.6 KB (10642 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:4.1.0-beta.3-management-alpine` - linux; riscv64
@@ -31492,13 +31492,13 @@ $ docker pull rabbitmq@sha256:9a384c73da0d60aaaec2c23ee6d8e7d9f5faaeb444ed94a660
 ### `rabbitmq:4.1.0-beta.3-management-alpine` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:5b6a7d319e7e3bd3985edbe556e27dd4c482ac2ed6bcdee76029370f715f628c
+$ docker pull rabbitmq@sha256:0bc0237f0bc9393fd7c136b437ef50f4b76235dc903bf922696e66cbd95352f1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **82.1 MB (82092694 bytes)**  
+-	Total Size: **82.1 MB (82094339 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:700db8ff826ff67f3be1e4db96470df4e01b149589992609bc4cee7e57d2824e`
+-	Image ID: `sha256:8d3f388c52519d395ab6e4c79b547e23bcb7043fc991b4d0ec56d62d0b10ce3d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -31562,71 +31562,71 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Wed, 08 Jan 2025 17:25:12 GMT  
 		Size: 3.5 MB (3466867 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:de94b6d181ba8758be26a29572fb578e2c3940d65835cf81862e6b9e6bfcd7b5`  
-		Last Modified: Thu, 09 Jan 2025 06:32:53 GMT  
-		Size: 36.1 MB (36097817 bytes)  
+	-	`sha256:b6e7ec3661f28c633af65628e75c3aeff0fe6522edae893cf76aec6201e6770b`  
+		Last Modified: Wed, 29 Jan 2025 00:56:05 GMT  
+		Size: 36.1 MB (36099367 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0759cd09f3fffde174f9bda0aec09e205af6b9b2ea1aeb157ab73f39166972a7`  
-		Last Modified: Thu, 09 Jan 2025 06:32:53 GMT  
-		Size: 7.5 MB (7508489 bytes)  
+	-	`sha256:860e3671b3afc5e90689bb1bde6874463a54558112dfa07f347ea89ea2b2e4d1`  
+		Last Modified: Wed, 29 Jan 2025 00:55:59 GMT  
+		Size: 7.5 MB (7508437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2bf597b2c331cf2a57740d539c9b39b17867f0c86c357e863a6571c5519a6197`  
-		Last Modified: Thu, 09 Jan 2025 06:32:53 GMT  
-		Size: 1.3 MB (1323340 bytes)  
+	-	`sha256:564a1cc54b81f6890533accf323d81cfd5067c96dd971eb4f0dbcf28d24e9e04`  
+		Last Modified: Wed, 29 Jan 2025 00:55:59 GMT  
+		Size: 1.3 MB (1323335 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1343cdf3d87b91abe106f043e2d7c5222cca5f8a3746cdca9d17da967f845d90`  
-		Last Modified: Thu, 09 Jan 2025 06:32:53 GMT  
-		Size: 18.4 MB (18431208 bytes)  
+	-	`sha256:8bef31fe0fe95d03ed67b8121f86e1d4f860e5a1063ca3146ade256c72c46f78`  
+		Last Modified: Wed, 29 Jan 2025 00:56:00 GMT  
+		Size: 18.4 MB (18431346 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:227948c3a01be6e114305f7de0eafa39690b85172b87d0a6ed730b344406cd8c`  
-		Last Modified: Thu, 09 Jan 2025 06:32:54 GMT  
-		Size: 191.0 B  
+	-	`sha256:0cb4027b0e74e110ceff8fc400a10bed6c6c11e47fea476ee82dfc02b86e3c16`  
+		Last Modified: Wed, 29 Jan 2025 00:56:00 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d45da72dceee53b4490e1f95ee3be9080d7d1d0674fd7e7f56e0764f9e6822a`  
-		Last Modified: Thu, 09 Jan 2025 06:32:54 GMT  
-		Size: 109.0 B  
+	-	`sha256:5bb2c4d97472008d56cc333ca6bcc3253bae09d423910e44cf655e85abc0083f`  
+		Last Modified: Wed, 29 Jan 2025 00:56:00 GMT  
+		Size: 108.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:472b95d98e53e57a01519b9dd7152cc92141fd58984ae9b73cc8b9435b7cb773`  
-		Last Modified: Thu, 09 Jan 2025 06:32:54 GMT  
-		Size: 616.0 B  
+	-	`sha256:8fb8e316d60542ae4421b6feb79a10cde3c1b31b5c870849e5a524e03a7a27da`  
+		Last Modified: Wed, 29 Jan 2025 00:56:01 GMT  
+		Size: 618.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21211a06692d307e1f1504692f33644d1fc72148680cfa349d3e2652b94dc515`  
-		Last Modified: Thu, 09 Jan 2025 06:32:54 GMT  
-		Size: 829.0 B  
+	-	`sha256:18814f5eb3162c699ffec920a9e8d49a44e8b74b7c65c06a0604641b5a200704`  
+		Last Modified: Wed, 29 Jan 2025 00:56:01 GMT  
+		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:118ccc5676ff7833b5c01634751571f44aa7a8d2fb7654698bc657c81dcbd24f`  
-		Last Modified: Thu, 09 Jan 2025 08:53:57 GMT  
-		Size: 15.3 MB (15263228 bytes)  
+	-	`sha256:fc5bb82441b48b65638c3a9c575d5fe90609d7f35b1e647bf04e9ed0f21506e3`  
+		Last Modified: Wed, 29 Jan 2025 01:28:20 GMT  
+		Size: 15.3 MB (15263237 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:4.1.0-beta.3-management-alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:4af4430b5038d89ee6ed735fbd51ad741578d493541a5b5fcd9684e4693d62e6
+$ docker pull rabbitmq@sha256:bb8a8540262b44cec13689085ba7a2c88ba55035a038e42c237df5b4af48039d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.6 MB (1640744 bytes)**  
+-	Total Size: **1.6 MB (1640766 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8184fee4e6a801db919617aa7ac91469f46b752ca55d7ad2b457079e77c2de15`
+-	Image ID: `sha256:c0cfd9dc9373851b394486e21c90a852aa6504f6bb8ab55f6dcede6821fe444f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:54213be487d513646aacd970e4cade7c060f81bf1aa14b9fa8cc1fbc23748edb`  
-		Last Modified: Thu, 09 Jan 2025 08:53:56 GMT  
-		Size: 1.6 MB (1630133 bytes)  
+	-	`sha256:f9302f9b4cecbd7b85cb6a38a8a06d22b61f4e476affce3b696d24c05d9820cf`  
+		Last Modified: Wed, 29 Jan 2025 01:28:19 GMT  
+		Size: 1.6 MB (1630155 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:59c8c2d3ff57de3784d56265690a07443361fd40b447bf65a453ffb3a9410ce0`  
-		Last Modified: Thu, 09 Jan 2025 08:53:56 GMT  
+	-	`sha256:f97fe0ee6fa2e1a291fb5dac462bfd8fd52e3b678877769be4bf0afd3b569e34`  
+		Last Modified: Wed, 29 Jan 2025 01:28:19 GMT  
 		Size: 10.6 KB (10611 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rabbitmq:alpine`
 
 ```console
-$ docker pull rabbitmq@sha256:62b2cd5d2e0159597dd50fb792db80faf689a9ecf7fa409ea194e56063be0387
+$ docker pull rabbitmq@sha256:df2c2674e161d45327edb0ab391beb328a46beb3775bfb8ae580e6006752405e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -31651,64 +31651,64 @@ $ docker pull rabbitmq@sha256:62b2cd5d2e0159597dd50fb792db80faf689a9ecf7fa409ea1
 ### `rabbitmq:alpine` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:2aa877c3af99e0e7549e37fef8c00bbbe765d4f64a189511e6cb52c5c4e19051
+$ docker pull rabbitmq@sha256:5c038793fdb7f8f54525fe3414f525751b89fbe8ecaa76c375aaf36d163264be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **77.6 MB (77579303 bytes)**  
+-	Total Size: **77.6 MB (77579563 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c7de8e381883f16573d15edd25121489e9637c04e86a253844e8a9e33c51849f`
+-	Image ID: `sha256:c82dcd50f28326bf4ca2ac90f420e8a5a4989418e3a2315c97f5baae9536a1f1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-x86_64.tar.gz / # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive $ERLANG_INSTALL_PATH_PREFIX $OPENSSL_INSTALL_PATH_PREFIX 			| tr ',' '\n' 			| sort -u 			| grep -v '^$\|lib\(crypto\|ssl\)' 			| awk 'system("test -e /usr/local/lib/" $1) == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .otp-run-deps $runDeps; 		sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		addgroup -g 101 -S rabbitmq; 	adduser -u 100 -S -h "$RABBITMQ_DATA_DIR" -G rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie; 		apk add --no-cache 		'su-exec>=0.2' 		bash 		procps 		tzdata # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.0.5
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	mkdir -p /usr/local/src; 		apk add --no-cache --virtual .build-deps 		gnupg 		xz 	; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apk del --no-network .build-deps; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	su-exec rabbitmq rabbitmqctl help; 	su-exec rabbitmq rabbitmqctl list_ciphers; 	su-exec rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN su-exec rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -31717,69 +31717,69 @@ CMD ["rabbitmq-server"]
 		Last Modified: Wed, 08 Jan 2025 17:23:45 GMT  
 		Size: 3.6 MB (3641715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e060a22d1c843dc9359408adf2aa91ac4420cb27d00adb80516c6557115783fb`  
-		Last Modified: Wed, 08 Jan 2025 18:24:05 GMT  
-		Size: 45.0 MB (44989842 bytes)  
+	-	`sha256:47d285f8e900c8d8d038a25ddeb236cc8078136637a0b1418dfb6c5bef54f169`  
+		Last Modified: Wed, 29 Jan 2025 00:34:08 GMT  
+		Size: 45.0 MB (44990113 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c83bd7141ed8ae9e5f919d3482716cfa227e48ffe24e42d791a21a16ebfc73d`  
-		Last Modified: Wed, 08 Jan 2025 18:24:04 GMT  
-		Size: 8.3 MB (8309069 bytes)  
+	-	`sha256:8f3978ef9f02cbd3f56a1a373a8820c75728402e712de7b433ade90bf77b4582`  
+		Last Modified: Wed, 29 Jan 2025 00:34:07 GMT  
+		Size: 8.3 MB (8309059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6350ddeb70e1339de0601c11645b9e4306fe5c117482be3eb0d5de5ae819c0b7`  
-		Last Modified: Wed, 08 Jan 2025 18:24:03 GMT  
-		Size: 2.3 MB (2277954 bytes)  
+	-	`sha256:24d9da299e22a634780d234bc6c181c9f5f0e61de45f67f7f33faee96714add7`  
+		Last Modified: Wed, 29 Jan 2025 00:34:07 GMT  
+		Size: 2.3 MB (2277959 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9cbd69e2874684ed4f806c217ca890991f5a8284065c1007d62b60b7bb830e31`  
-		Last Modified: Wed, 08 Jan 2025 18:24:04 GMT  
-		Size: 18.4 MB (18358972 bytes)  
+	-	`sha256:de46228f2a3dfeefc423f1dd02b2dec7a2a84f62c262a9b9d9ec89fdcaf95cbc`  
+		Last Modified: Wed, 29 Jan 2025 00:34:08 GMT  
+		Size: 18.4 MB (18358969 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:800fe08f7c61c0b259f8952d617edce249d7b0307ee89c226fdd6aed3679bf87`  
-		Last Modified: Wed, 08 Jan 2025 18:24:04 GMT  
-		Size: 194.0 B  
+	-	`sha256:4ad5d173044ba941771f075a3bce7b6634032247dbc9a250b77c8147a368d071`  
+		Last Modified: Wed, 29 Jan 2025 00:34:08 GMT  
+		Size: 193.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d3883ffae718a06e51554ae30cc83e0cfa1052f682b8cca129ffe61e0e28794a`  
-		Last Modified: Wed, 08 Jan 2025 18:24:05 GMT  
+	-	`sha256:458717efc5d7629b20082f80fb121282c9da847bb0754858f3184f677380a08f`  
+		Last Modified: Wed, 29 Jan 2025 00:34:08 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dfcb40ef1e1c9d26c06fec6c9581a88bffd5ec2805bf6f19504d093d61d637ae`  
-		Last Modified: Wed, 08 Jan 2025 18:24:05 GMT  
-		Size: 619.0 B  
+	-	`sha256:9f55704d7a4b28bc32b56b0032c82e6efa78dafc02cc17cdb40dc667912f1fc3`  
+		Last Modified: Wed, 29 Jan 2025 00:34:09 GMT  
+		Size: 617.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a22572c4658033032ed4b68ada1614c7c6db8f5d96db2ab1017e6afb091d8a7`  
-		Last Modified: Wed, 08 Jan 2025 18:24:05 GMT  
+	-	`sha256:ef449d2a9b9b0a3f1295665e4c556eabaa9c0deb2e8e7b763fb5ad4aee7ba85c`  
+		Last Modified: Wed, 29 Jan 2025 00:34:09 GMT  
 		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:7393cfbaffb66a3c2bad01bbb17691fad2a5173c047303261e17052fcfd69b53
+$ docker pull rabbitmq@sha256:8ae08c4a9a83bb3f58d53a7f0e38b3ee2b7a1055296e2d03001e9dc9ca65af61
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.7 MB (6728289 bytes)**  
+-	Total Size: **6.5 MB (6458424 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a5bee6b1b4cd5eed38c74f320e65fa1db1170f5d84a5c97b0250e949b19438cd`
+-	Image ID: `sha256:6db2279317904b8e4d6abf78222f1344bda18d01e83704e87fc01d48143b8cf7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f6b4a6d51eac6f3f9a24e1c51ae8018ae32179d6e9c1c7b0510acd2d359e2ade`  
-		Last Modified: Wed, 08 Jan 2025 18:24:03 GMT  
-		Size: 657.8 KB (657762 bytes)  
+	-	`sha256:1d8042121bc517e728954764b86631b2b6754635a32a183e67707b509d3b7fb6`  
+		Last Modified: Wed, 29 Jan 2025 00:34:07 GMT  
+		Size: 538.2 KB (538238 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:99fe6df6962225b5caebcef6cfb3dd11e60157dc7398816212be7e774e01c78f`  
-		Last Modified: Wed, 08 Jan 2025 18:24:04 GMT  
-		Size: 3.1 MB (3081579 bytes)  
+	-	`sha256:34923474948477e7ac81464f80162fb3ea3e19547046442f40cd8b589cd66b09`  
+		Last Modified: Wed, 29 Jan 2025 00:34:07 GMT  
+		Size: 2.9 MB (2932253 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3f9bec6c968473821b5f23506abd60bb2d3808a0a9283a3ecc58ff51fff218eb`  
-		Last Modified: Wed, 08 Jan 2025 18:24:04 GMT  
+	-	`sha256:3ca1380938bc2b1ac0d9dadab12084567e388ba2d77abff1a5a641fe4078d6cf`  
+		Last Modified: Wed, 29 Jan 2025 00:34:07 GMT  
 		Size: 2.9 MB (2928075 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:55affa980d3ae04f5bfb639f591252535a0bdc402148c629efab99518f015365`  
-		Last Modified: Wed, 08 Jan 2025 18:24:03 GMT  
-		Size: 60.9 KB (60873 bytes)  
+	-	`sha256:3ef99aecebb3c4ead97580009334d24ded357aa516e4372003208c6199077366`  
+		Last Modified: Wed, 29 Jan 2025 00:34:07 GMT  
+		Size: 59.9 KB (59858 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:alpine` - linux; arm variant v6
@@ -32309,64 +32309,64 @@ $ docker pull rabbitmq@sha256:07693bb4ea424a0d50a2491632a29b5698e788e3c50f58c6a8
 ### `rabbitmq:alpine` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:67261d2dfe9e91d180a4bd0b60050e830e3617902a316477abfb3d66d67ff999
+$ docker pull rabbitmq@sha256:58b00176c1f6b4fa1ea01cf33bb2de343b7eb58ecb96f564f3618d8c685061f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.2 MB (68209866 bytes)**  
+-	Total Size: **68.2 MB (68210049 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8a82cfe173608d19fc9b1679b185ac27e134e0bbe51398fe56c6515475cb33d8`
+-	Image ID: `sha256:f8234ab616563d0d992c7a6cb0fadcccfae767731a633ec06e89341ff6227c8b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-ppc64le.tar.gz / # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive $ERLANG_INSTALL_PATH_PREFIX $OPENSSL_INSTALL_PATH_PREFIX 			| tr ',' '\n' 			| sort -u 			| grep -v '^$\|lib\(crypto\|ssl\)' 			| awk 'system("test -e /usr/local/lib/" $1) == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .otp-run-deps $runDeps; 		sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		addgroup -g 101 -S rabbitmq; 	adduser -u 100 -S -h "$RABBITMQ_DATA_DIR" -G rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie; 		apk add --no-cache 		'su-exec>=0.2' 		bash 		procps 		tzdata # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.0.5
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	mkdir -p /usr/local/src; 		apk add --no-cache --virtual .build-deps 		gnupg 		xz 	; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apk del --no-network .build-deps; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	su-exec rabbitmq rabbitmqctl help; 	su-exec rabbitmq rabbitmqctl list_ciphers; 	su-exec rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN su-exec rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -32375,132 +32375,132 @@ CMD ["rabbitmq-server"]
 		Last Modified: Wed, 08 Jan 2025 17:24:16 GMT  
 		Size: 3.6 MB (3573601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d53e5bb36b5dc0ab79ffe8362486b61d2e230bfc5f65e0c863695410ff3fa79e`  
-		Last Modified: Thu, 09 Jan 2025 00:21:40 GMT  
-		Size: 36.1 MB (36085885 bytes)  
+	-	`sha256:a9dace6bf80f3bb449709147fd3ffba8d80f08537473fed155807c96df1a4c78`  
+		Last Modified: Wed, 29 Jan 2025 01:02:51 GMT  
+		Size: 36.1 MB (36086039 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53da1405ffcec279092e19a4e2871dea98e230594da7ab4f75c6fe2a6acd7c17`  
-		Last Modified: Thu, 09 Jan 2025 00:21:39 GMT  
-		Size: 8.8 MB (8844419 bytes)  
+	-	`sha256:aa6e785eab4b4b33ae68e1d99daf8746b7eca3c89945f0ce9abf0e261127067e`  
+		Last Modified: Wed, 29 Jan 2025 01:02:50 GMT  
+		Size: 8.8 MB (8844433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35b34bba648bac3e531bcd2875754e6a724f60adb4e6b90ba2cfcc89f8a246da`  
-		Last Modified: Thu, 09 Jan 2025 00:21:39 GMT  
-		Size: 1.3 MB (1345127 bytes)  
+	-	`sha256:42ccc248f17eb35673e69538dad793cc79b45d3eaac006df24a99a90355bcd5f`  
+		Last Modified: Wed, 29 Jan 2025 01:02:49 GMT  
+		Size: 1.3 MB (1345152 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48378faf713277fe62639d257c1231c9a0fd6293b96efbf85f0dfb3e0cf349a1`  
-		Last Modified: Thu, 09 Jan 2025 00:26:00 GMT  
-		Size: 18.4 MB (18359086 bytes)  
+	-	`sha256:56e31961602ddae22543d73cdff49b4861cb18b3052dc176970e2aa8e2dda237`  
+		Last Modified: Wed, 29 Jan 2025 01:12:59 GMT  
+		Size: 18.4 MB (18359078 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c82c30e5e4eb56faac4332bf3784ebc47bf268f8320c11a6436a892c6dfd149c`  
-		Last Modified: Thu, 09 Jan 2025 00:26:00 GMT  
-		Size: 193.0 B  
+	-	`sha256:a2b1832b71cae5436ce524d0d88252b9099c31178f7bf2bcbe4701c420869436`  
+		Last Modified: Wed, 29 Jan 2025 01:12:58 GMT  
+		Size: 192.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d670272438de41a17bfbe816437107fa63d14a6b324790b188d44bf8004832b6`  
-		Last Modified: Thu, 09 Jan 2025 00:25:59 GMT  
+	-	`sha256:83d66fd9cdba01fc0fe2dfdfb7b4b34ce0a5dd398c155d99099beb0cda416908`  
+		Last Modified: Wed, 29 Jan 2025 01:12:58 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:85ddac9fb85f38938afe12eaa3eb0568be4f2038c32dc96327ede681ed6b04bd`  
-		Last Modified: Thu, 09 Jan 2025 00:26:00 GMT  
-		Size: 620.0 B  
+	-	`sha256:32f12a9f18d0d36cff30f3f227d14e4e0f0af4de47f262a2283057f0a7d5a3a7`  
+		Last Modified: Wed, 29 Jan 2025 01:12:58 GMT  
+		Size: 615.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0fddebf6c3b7264acce55ba08884d2f3f6777fdf049fe6ff41f85dbdb6b71d9a`  
-		Last Modified: Thu, 09 Jan 2025 00:26:00 GMT  
-		Size: 826.0 B  
+	-	`sha256:c19c650a9e664c471e08be2cdb436cdde80b15d3f55527706d1b039a4b9ae428`  
+		Last Modified: Wed, 29 Jan 2025 01:12:59 GMT  
+		Size: 830.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:eefc28a462ffc07046bfe6256c07fd9fd92cb8266d610fcc21b9ae4cffd7fe52
+$ docker pull rabbitmq@sha256:61e8af404f7a49f2d2d105b03f67dbabdc957be88be9af5dde7dbad91a71c185
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.7 MB (6733282 bytes)**  
+-	Total Size: **6.7 MB (6732591 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:06691df451757eb3a02691d774d5d4fa32e258599cbe11007a446b901a18141a`
+-	Image ID: `sha256:29d23361732071a986cae34906bd3bb038b20ab4925dcbcdae729cd5c43cec15`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:90ab5a2c2eae652293c44bb70e09681aec8fd09f98d075671570468d67ab74cc`  
-		Last Modified: Thu, 09 Jan 2025 00:25:59 GMT  
-		Size: 652.0 KB (651952 bytes)  
+	-	`sha256:af693c2ae29b171625e6d1bd20c96edb4288821e560202b0965bc0042f5bac8d`  
+		Last Modified: Wed, 29 Jan 2025 01:12:58 GMT  
+		Size: 652.0 KB (651974 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5f1ebda393777ae7145f3c2eb079d3248613addabaafe3fdd4172ea85c6d5366`  
-		Last Modified: Thu, 09 Jan 2025 00:26:00 GMT  
-		Size: 3.1 MB (3087613 bytes)  
+	-	`sha256:fdf79c1aa83b75651d0aa375af26a177db3baec64f630caed40d3f8e98514dcc`  
+		Last Modified: Wed, 29 Jan 2025 01:12:58 GMT  
+		Size: 3.1 MB (3087915 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cee2e47aaa69d845df01b8c0f422471948e18123fb547384a230bd2d165192aa`  
-		Last Modified: Thu, 09 Jan 2025 00:26:00 GMT  
+	-	`sha256:cb354c29d1412cb37de50554a6e429ed7320ec8c389582d51d8cb36873301565`  
+		Last Modified: Wed, 29 Jan 2025 01:12:58 GMT  
 		Size: 2.9 MB (2932782 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fe620c1468eb1a05071a63555587ba8ba3b43bd246963eaad60d881a6fd8eb83`  
-		Last Modified: Thu, 09 Jan 2025 00:25:59 GMT  
-		Size: 60.9 KB (60935 bytes)  
+	-	`sha256:49b2c184f64a544ef8a22a1e86901dd672d8ceffc1b96f2423dc472855e4ad5f`  
+		Last Modified: Wed, 29 Jan 2025 01:12:58 GMT  
+		Size: 59.9 KB (59920 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:alpine` - linux; riscv64
 
 ```console
-$ docker pull rabbitmq@sha256:1dcf6aaf8f9ffe3a5653fb2e60af48f19a20ca8de836b65a7cfde7aaf5307e11
+$ docker pull rabbitmq@sha256:d57bbcd95b31bbb92dbd5fe1bd3a9de11509651e94eb163655a670e8b58b82c9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **69.9 MB (69858660 bytes)**  
+-	Total Size: **69.9 MB (69858436 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bd327a34fcdc223067cc7745b081754eb8e52c2289bd8c2f79be7aaaf0bb4d24`
+-	Image ID: `sha256:540d40200c39896eb3a6c1210dc09f792ebdff6e4010355a125882a8e8d33b84`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
 ```dockerfile
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 ADD alpine-minirootfs-3.21.2-riscv64.tar.gz / # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Wed, 08 Jan 2025 12:07:30 GMT
 CMD ["/bin/sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive $ERLANG_INSTALL_PATH_PREFIX $OPENSSL_INSTALL_PATH_PREFIX 			| tr ',' '\n' 			| sort -u 			| grep -v '^$\|lib\(crypto\|ssl\)' 			| awk 'system("test -e /usr/local/lib/" $1) == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-cache --virtual .otp-run-deps $runDeps; 		sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		addgroup -g 101 -S rabbitmq; 	adduser -u 100 -S -h "$RABBITMQ_DATA_DIR" -G rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie; 		apk add --no-cache 		'su-exec>=0.2' 		bash 		procps 		tzdata # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.0.5
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	mkdir -p /usr/local/src; 		apk add --no-cache --virtual .build-deps 		gnupg 		xz 	; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apk del --no-network .build-deps; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	su-exec rabbitmq rabbitmqctl help; 	su-exec rabbitmq rabbitmqctl list_ciphers; 	su-exec rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN su-exec rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Tue, 07 Jan 2025 02:28:15 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -32509,69 +32509,69 @@ CMD ["rabbitmq-server"]
 		Last Modified: Wed, 08 Jan 2025 17:48:43 GMT  
 		Size: 3.4 MB (3350256 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c184a89710c8bf6b4bd56e06ad64c34ca66c111bdd470b3d64ae635ba9654367`  
-		Last Modified: Fri, 10 Jan 2025 23:11:02 GMT  
-		Size: 37.0 MB (37028486 bytes)  
+	-	`sha256:966a78004ce7c6bfe1a27f8802f5dc4ecc17eedabaf526a18f553ac187d1cc52`  
+		Last Modified: Wed, 29 Jan 2025 03:05:46 GMT  
+		Size: 37.0 MB (37028244 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dedb918ea46e955df9ad502d010c6961d291010c1cf928ac046aedf3e2ff9f89`  
-		Last Modified: Fri, 10 Jan 2025 23:10:58 GMT  
-		Size: 9.9 MB (9854297 bytes)  
+	-	`sha256:5a274d58faff155503064ba782ca307c49f4c956f7c5d23d195679056a268aeb`  
+		Last Modified: Wed, 29 Jan 2025 03:05:42 GMT  
+		Size: 9.9 MB (9854310 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fe4728a0f84ea00a6aeadb4cd0f01ba9ef56b0abcde3a385cfc858d558b11145`  
-		Last Modified: Fri, 10 Jan 2025 23:10:56 GMT  
-		Size: 1.3 MB (1265051 bytes)  
+	-	`sha256:5cb844a243709fe69a647a30829c6d79942ea0450bf31aa32c780d953b4c80fe`  
+		Last Modified: Wed, 29 Jan 2025 03:05:40 GMT  
+		Size: 1.3 MB (1265034 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cc0e74cc32308c95ba208fb10165d701b7d5afb376d5aa8fe0678df234762986`  
-		Last Modified: Sat, 11 Jan 2025 00:28:48 GMT  
-		Size: 18.4 MB (18358828 bytes)  
+	-	`sha256:623d293b9461b58e26ddf8af162c2d6f6a9d695b4a7aa53492d0fb62b97a0f34`  
+		Last Modified: Wed, 29 Jan 2025 03:25:52 GMT  
+		Size: 18.4 MB (18358842 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:73482a413608db3038fa2ba40fb90dd6367b5a99b35a1fd0d9df053d9e761c6a`  
-		Last Modified: Sat, 11 Jan 2025 00:28:45 GMT  
-		Size: 191.0 B  
+	-	`sha256:8da0b3627c498dcfa0c8a8ea6e058e17117d2d4c1c810cb2c348645347d1e602`  
+		Last Modified: Wed, 29 Jan 2025 03:25:49 GMT  
+		Size: 192.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed0fe1f8168995e4625bb47a956935263cfdca6fdc97e26553d2a8700f932325`  
-		Last Modified: Sat, 11 Jan 2025 00:28:45 GMT  
-		Size: 106.0 B  
+	-	`sha256:1c24590046d997f8b5e0b1dae04521efd0ec01afa92d6a40590b652f376bbee1`  
+		Last Modified: Wed, 29 Jan 2025 03:25:49 GMT  
+		Size: 105.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5d126e703452af2bb78a672b1753139d4c2878e941653816682a07c98f5c1c0a`  
-		Last Modified: Sat, 11 Jan 2025 00:28:45 GMT  
-		Size: 616.0 B  
+	-	`sha256:bc8ab08f03f48d1d23b647708756ab7fa47023561cb448ab105390beb0ea9737`  
+		Last Modified: Wed, 29 Jan 2025 03:25:49 GMT  
+		Size: 623.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8f9f8cbd44036bc0f83c6cfbc82dcf516cbac9ee1bae6187c4162ebf0f202bc8`  
-		Last Modified: Sat, 11 Jan 2025 00:28:46 GMT  
-		Size: 829.0 B  
+	-	`sha256:af4c5b4f3aa0b138ccd5e3db2ce1751bcac908e26286eb65c6a0d95de24b989d`  
+		Last Modified: Wed, 29 Jan 2025 03:25:50 GMT  
+		Size: 830.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:alpine` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:3fc11c6e928079885cdb335a8af1b77f29723b2f01bdec3c2e0eb888cf7ba7e7
+$ docker pull rabbitmq@sha256:b71440596aeec13dfa3755562d286b013254d2ec91277bf4558f20cf0cef75a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.8 MB (6811396 bytes)**  
+-	Total Size: **6.8 MB (6810704 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d2d26b4258284a755b38002060a230c7b0952baf9fb0c456cb4fa0c8dde2dd20`
+-	Image ID: `sha256:f4d8dbfa40c8851c7b64cbab523f3f5267798d6a8c89415f05305c1859f74181`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fda786ab69ee3c594d6a6c31c964ea0a0417ce1bb44f848f56e9237ec5969e0b`  
-		Last Modified: Sat, 11 Jan 2025 00:28:45 GMT  
-		Size: 654.7 KB (654744 bytes)  
+	-	`sha256:6f154094670055214a1eb83590a424fbe092df27ab0361126014603e446e9826`  
+		Last Modified: Wed, 29 Jan 2025 03:25:49 GMT  
+		Size: 654.8 KB (654766 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:66d81cfbae2f64bcd6ed088c89f68a1c68a90f5b740a9db4098d620b3c2722e6`  
-		Last Modified: Sat, 11 Jan 2025 00:28:45 GMT  
-		Size: 3.1 MB (3125268 bytes)  
+	-	`sha256:4129a89eab80c94652882e3722609efb3a17b8ef75dddeed28e82604704dfc78`  
+		Last Modified: Wed, 29 Jan 2025 03:25:49 GMT  
+		Size: 3.1 MB (3125570 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f266233d6ee64f2c16c01da2f4c89ca10f97760167a06b477b50ff2376d87aa9`  
-		Last Modified: Sat, 11 Jan 2025 00:28:45 GMT  
+	-	`sha256:e7a5a349c0bd21be41872a7a63863508acf10ea5d033c9d2903309f3918dbecf`  
+		Last Modified: Wed, 29 Jan 2025 03:25:49 GMT  
 		Size: 3.0 MB (2970449 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d8a3984ed3796ff782b26549e22332ad1627434e770e43ce87939655d381499f`  
-		Last Modified: Sat, 11 Jan 2025 00:28:45 GMT  
-		Size: 60.9 KB (60935 bytes)  
+	-	`sha256:9287c3bef73162c4dc95c6ff9f0f8b1cda521301b24c4dd8ffb30eaa565ff068`  
+		Last Modified: Wed, 29 Jan 2025 03:25:48 GMT  
+		Size: 59.9 KB (59919 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:alpine` - linux; s390x
@@ -32711,7 +32711,7 @@ $ docker pull rabbitmq@sha256:d11b5e463111f71b5cdcd1cd2fdaf1937c1b1238883f72f4f5
 ## `rabbitmq:latest`
 
 ```console
-$ docker pull rabbitmq@sha256:bb4e60e71e7dab9d9b6a4a680871047d21a501947dae59faffa089e61281cb7b
+$ docker pull rabbitmq@sha256:4fc6a2c182ab768f233f602a965684e1db91f0b01562d4efa5ca35de8db148db
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -32732,13 +32732,13 @@ $ docker pull rabbitmq@sha256:bb4e60e71e7dab9d9b6a4a680871047d21a501947dae59faff
 ### `rabbitmq:latest` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:87995b48ae9a6ee81f32398a3881c295f19303686e7a90832268056d467f2f17
+$ docker pull rabbitmq@sha256:a1fb6ba3eff9a226074940f27beccfd2e4de989d3d4ebb0b1272e9f78aa44dd4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **107.3 MB (107252938 bytes)**  
+-	Total Size: **107.3 MB (107264831 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d4093a263704995d3fed660f1c0350c80375ed1a5b9e51a767f2bce3c91d39c3`
+-	Image ID: `sha256:ea3aa0cf66f6986cd49153e5b33ec5ea67c985595bc988a3c249140dac0011d0`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -32755,49 +32755,49 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:bcebbf0fddcba5b864d5d267b68dd23bcfb01275e6ec7bcab69bf8b56af14804 in / 
 # Tue, 19 Nov 2024 17:29:25 GMT
 CMD ["/bin/bash"]
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		ldconfig; 	sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		groupadd --gid 999 --system rabbitmq; 	useradd --uid 999 --system --home-dir "$RABBITMQ_DATA_DIR" --gid rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.0.5
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	export DEBIAN_FRONTEND=noninteractive; 	apt-get update; 	apt-get install --yes --no-install-recommends 		ca-certificates 		gosu 		tzdata 	; 	gosu nobody true; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get install --yes --no-install-recommends 		gnupg 		wget 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	gosu rabbitmq rabbitmqctl help; 	gosu rabbitmq rabbitmqctl list_ciphers; 	gosu rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN gosu rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -32806,73 +32806,73 @@ CMD ["rabbitmq-server"]
 		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f73d79d4de92263be08d3e094d6830c76f5260248afe0abb7a30d43ae6daeff`  
-		Last Modified: Thu, 19 Dec 2024 21:37:26 GMT  
-		Size: 48.4 MB (48397770 bytes)  
+	-	`sha256:6e9d8cdae0bfdbcb9216751b7083c71c801fef19eacbf6213c49c65109d7d49c`  
+		Last Modified: Wed, 29 Jan 2025 00:33:18 GMT  
+		Size: 48.4 MB (48409559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf0246a10015b388fb964da0eded106db452088dcd292c2394c2648a669e41e2`  
-		Last Modified: Thu, 19 Dec 2024 21:37:26 GMT  
-		Size: 8.2 MB (8169293 bytes)  
+	-	`sha256:28a3f66ab885804bad9467aea7b2c7d20b8ca2df81d0e07d80d2d679f3fdab30`  
+		Last Modified: Wed, 29 Jan 2025 00:33:17 GMT  
+		Size: 8.2 MB (8169285 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04c2200eb82ccc75c0d43122afc7a1528cc2c8211fa7ff089579236d4197dfcf`  
-		Last Modified: Thu, 19 Dec 2024 21:37:26 GMT  
-		Size: 9.4 KB (9446 bytes)  
+	-	`sha256:661a6cbddab14a2f8b6a4673025842fac29a15aa6d5aadc39a038d67e75ec625`  
+		Last Modified: Wed, 29 Jan 2025 00:33:18 GMT  
+		Size: 9.5 KB (9489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f071906ce3b479d069aefa43f58e6626104155e887f415894e768cc2ee8fe949`  
-		Last Modified: Thu, 19 Dec 2024 21:37:26 GMT  
-		Size: 20.9 MB (20922718 bytes)  
+	-	`sha256:81a04a89a0d52a7a2d1dd632ebb160ed45afcbb3eb000436d8e3673a64fafa49`  
+		Last Modified: Wed, 29 Jan 2025 00:33:18 GMT  
+		Size: 20.9 MB (20922780 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c34563e7910a729f0ba1474c453a5ceeece0c169fb28a4cec16aa69bf918ada4`  
-		Last Modified: Thu, 19 Dec 2024 21:37:26 GMT  
+	-	`sha256:ed804c5d0e7bb97ad4ca54ee811eb2f93d7a39e2a0a339cf5e70e2eb00581734`  
+		Last Modified: Wed, 29 Jan 2025 00:33:18 GMT  
 		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5461254c53b94cf5e9a7d78bc711584ecb67da0dcd46f2bb79f2133919eef507`  
-		Last Modified: Thu, 19 Dec 2024 21:37:27 GMT  
-		Size: 106.0 B  
+	-	`sha256:c84c7470e7775471726f454ca6121c6a26f0c95721eeab9ace18ebe53c49c311`  
+		Last Modified: Wed, 29 Jan 2025 00:33:19 GMT  
+		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:042417f0b6e9e78d7d60ca28ee5eb655a6b99c25768c44a824c76d5154a916fc`  
-		Last Modified: Thu, 19 Dec 2024 21:37:27 GMT  
-		Size: 618.0 B  
+	-	`sha256:646d938ff824fed991d0d120548cf6234bf9845ad67005d3d002057aaca1644a`  
+		Last Modified: Wed, 29 Jan 2025 00:33:19 GMT  
+		Size: 620.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:410649ab8bd0fa85dbf788b9e74a4d6065a05b3fda07e9d9addbf3ce51672151`  
-		Last Modified: Thu, 19 Dec 2024 21:37:27 GMT  
-		Size: 831.0 B  
+	-	`sha256:febd59dd43dfc4acefef3e1bcc0aa5a2fef36246ffe7c523abe001035d1e8c14`  
+		Last Modified: Wed, 29 Jan 2025 00:33:19 GMT  
+		Size: 833.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:latest` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:e22900e4ab036e9359175ca867690fae3edd5061ab430ef370e7bb7811ba6784
+$ docker pull rabbitmq@sha256:2146d993eb5c7fc64ea6c7a9164e52125ca0e9a02cff5b97766c3e472384eed4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.2 MB (18194936 bytes)**  
+-	Total Size: **17.9 MB (17926251 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb99fe4b4d574ec70bf26d7e30ea87391bd000bd5e9e331e64e783feac1905e9`
+-	Image ID: `sha256:377c68e5f8c81a4bf9c46e1b9e7039c6af12e072791e5fe293e1a0cda2e09f71`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:664f0e8d5002775a51201fa99af43b2a54e77b138553711d50483875b6fa30e4`  
-		Last Modified: Thu, 19 Dec 2024 21:37:26 GMT  
-		Size: 2.4 MB (2364681 bytes)  
+	-	`sha256:484c999a6c11fcbaa78a5f2113cc3eb62d5d833d197e26c32a4f323bce5ea5e1`  
+		Last Modified: Wed, 29 Jan 2025 00:33:17 GMT  
+		Size: 2.2 MB (2245159 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6d63db754f159e76a0717d00b29d1c6065a4b7f583f6a6f849bfae0ea93cf9c1`  
-		Last Modified: Thu, 19 Dec 2024 21:37:26 GMT  
-		Size: 5.2 MB (5204082 bytes)  
+	-	`sha256:2b67c398d2652d6bf22246b8973c620fe94ccbec900316e682fa7ee8236786cc`  
+		Last Modified: Wed, 29 Jan 2025 00:33:17 GMT  
+		Size: 5.2 MB (5204130 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:64a8e0f3e57ebfef44e2d20abf11b5498db72a0eecc86db5c80b91bd18273b2f`  
-		Last Modified: Thu, 19 Dec 2024 21:37:26 GMT  
-		Size: 5.4 MB (5360622 bytes)  
+	-	`sha256:7a69bcdba756cb349e8430e3558b642b07ec09895b7463de352b649dcb77a28b`  
+		Last Modified: Wed, 29 Jan 2025 00:33:17 GMT  
+		Size: 5.2 MB (5211348 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:3a495671b3791387c8a97b5c8ca1338829c827f738a5f1c40175b73ee3084cf7`  
-		Last Modified: Thu, 19 Dec 2024 21:37:26 GMT  
-		Size: 5.2 MB (5205824 bytes)  
+	-	`sha256:c178c74c938282a08c1ccb0a4c5ee98735e4147798df36d2c36c883bd64b9887`  
+		Last Modified: Wed, 29 Jan 2025 00:33:17 GMT  
+		Size: 5.2 MB (5205872 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:73597e9263846e38855d98c21c1132161ef3057a306257fdc1a6f9a48eb6b7af`  
-		Last Modified: Thu, 19 Dec 2024 21:37:26 GMT  
-		Size: 59.7 KB (59727 bytes)  
+	-	`sha256:341bf0483ccf0e09f77e1784ac8c0cdd2fcf1702a5de037c18fb741a474af18b`  
+		Last Modified: Wed, 29 Jan 2025 00:33:18 GMT  
+		Size: 59.7 KB (59742 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:latest` - linux; arm variant v7
@@ -33170,13 +33170,13 @@ $ docker pull rabbitmq@sha256:2b7905f27dc1c363e2376ab26439ca41567cb6bf76ed311fd5
 ### `rabbitmq:latest` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:de4de2b2a04469564ba519a1601c7eb4381a62fb4fecbe5216b73c2ad20b9ea4
+$ docker pull rabbitmq@sha256:90e630cb4ed763594cb38bee80882744ef59cc017486fd9d08cf10c6c9f63bf6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **105.6 MB (105603936 bytes)**  
+-	Total Size: **105.6 MB (105608322 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2f499bfc473347ddd60b8fc0d9a9f8e8cf5727819036d59ece88ab9decce323a`
+-	Image ID: `sha256:d05db007289ff9675325c81ef2314d4dce75e8f5f3aad1f6f7f1c95833fcee65`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -33193,49 +33193,49 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:43ada82586e21a3bec38211b678fc6eb9b5e39f96a2d31fced4653d2b54a553f in / 
 # Tue, 19 Nov 2024 16:18:50 GMT
 CMD ["/bin/bash"]
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		ldconfig; 	sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		groupadd --gid 999 --system rabbitmq; 	useradd --uid 999 --system --home-dir "$RABBITMQ_DATA_DIR" --gid rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.0.5
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	export DEBIAN_FRONTEND=noninteractive; 	apt-get update; 	apt-get install --yes --no-install-recommends 		ca-certificates 		gosu 		tzdata 	; 	gosu nobody true; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get install --yes --no-install-recommends 		gnupg 		wget 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	gosu rabbitmq rabbitmqctl help; 	gosu rabbitmq rabbitmqctl list_ciphers; 	gosu rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN gosu rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -33244,85 +33244,85 @@ CMD ["rabbitmq-server"]
 		Last Modified: Tue, 19 Nov 2024 17:38:45 GMT  
 		Size: 34.4 MB (34388820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35aaa542f56f99732fa6a5ce5ca4b3980f55c461636cc332d4792017c9f15431`  
-		Last Modified: Wed, 11 Dec 2024 22:38:19 GMT  
-		Size: 41.6 MB (41633236 bytes)  
+	-	`sha256:8cadad09c52fdbf44decc403a4ab6082060224014f1082854e01a1a7f5d3981f`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
+		Size: 41.6 MB (41637000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed2e85aabb1a869502abef25c5e467f417a1d8aeca7a26ed9ade9d7d914d39d0`  
-		Last Modified: Wed, 11 Dec 2024 22:38:18 GMT  
-		Size: 8.7 MB (8689219 bytes)  
+	-	`sha256:aeb9f7be9b5b4cbf6f594b895573e0fdbb3020f04243a231409187e8ff591bfd`  
+		Last Modified: Wed, 29 Jan 2025 00:58:32 GMT  
+		Size: 8.7 MB (8689882 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4feb9952ffad20211d81b56be0c2dfe81e14bbc20c685d956302a993a2036a8e`  
-		Last Modified: Wed, 11 Dec 2024 22:38:17 GMT  
-		Size: 9.4 KB (9444 bytes)  
+	-	`sha256:6706769334970294d65b0d1529bdf615cf3e6a523894522867af35ebcc4742a5`  
+		Last Modified: Wed, 29 Jan 2025 00:58:31 GMT  
+		Size: 9.4 KB (9435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71d8c0db02760df7e7427352e3769f4acec7213799ac17d7979849196c912681`  
-		Last Modified: Thu, 19 Dec 2024 23:00:53 GMT  
-		Size: 20.9 MB (20881471 bytes)  
+	-	`sha256:9ad2b9fa6f9fb2627d54040b417bed0a0b27780179da8a00c0011235af34b08a`  
+		Last Modified: Wed, 29 Jan 2025 01:08:35 GMT  
+		Size: 20.9 MB (20881442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b18e4b681be35f870af16521790af278cc37bbe4c9f9425994d68efd85a8f6cb`  
-		Last Modified: Thu, 19 Dec 2024 23:00:52 GMT  
-		Size: 191.0 B  
+	-	`sha256:dca1e04cf0fcf8a8b9c1b0b0ea90d4a03107fc158b1812239bbd0d1ab78cb87c`  
+		Last Modified: Wed, 29 Jan 2025 01:08:34 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24c0b8102ce18af9182874d5332d4b1fb25aa6297df8a9512aceae383f84eb83`  
-		Last Modified: Thu, 19 Dec 2024 23:00:52 GMT  
-		Size: 106.0 B  
+	-	`sha256:9e7e952c1e8efb8c94b410d2d0ab03c9ef1dd9ed4a653f176142ec36df7efd1f`  
+		Last Modified: Wed, 29 Jan 2025 01:08:34 GMT  
+		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b972d35869fefd573ab645af244d7120e0f8db1bc870beb7e40c8fb96a3e83e7`  
-		Last Modified: Thu, 19 Dec 2024 23:00:52 GMT  
-		Size: 619.0 B  
+	-	`sha256:345be45a87d55ac5e05739bd1828e200cf6312841bebb598e2233d82c441e955`  
+		Last Modified: Wed, 29 Jan 2025 01:08:34 GMT  
+		Size: 618.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:682e8d0d901ad67960cb815110986cdcaf16f6bd2bfc60b4cb568fe4f072a08c`  
-		Last Modified: Thu, 19 Dec 2024 23:00:53 GMT  
-		Size: 830.0 B  
+	-	`sha256:1109820e67077781456ae50628baf7de18e392c97f726cd245b0865fd4ce7209`  
+		Last Modified: Wed, 29 Jan 2025 01:08:35 GMT  
+		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:latest` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:389b2a19c1326df83c8c4551fcb672caf41a3fb5ebead48893d340c660e0a268
+$ docker pull rabbitmq@sha256:74ee8a79baf318525dd6a9d36645314ddcb9c94a95d3fb51a58974d76b09c5bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.1 MB (18111517 bytes)**  
+-	Total Size: **18.1 MB (18111999 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7e036b5772d87122a767c59ced70a2b9da0fac43ff3f1b8a442ac1dbba592323`
+-	Image ID: `sha256:3fd5622df40fbbd5302f4db919ed99975ee3e9704e6595a29ad25f2de1664dfa`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1370ca4b5f4a5433e86fcbc27e0bd84df7c944b648282b58910d0b3a78c579c3`  
-		Last Modified: Thu, 19 Dec 2024 23:00:52 GMT  
-		Size: 2.4 MB (2369036 bytes)  
+	-	`sha256:236449721c15e157dc1342ca399dad8938ad8d9fd0d1df2fe05dcad5b02cd31e`  
+		Last Modified: Wed, 29 Jan 2025 01:08:34 GMT  
+		Size: 2.4 MB (2369058 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:84f9c1a35d9165c34c49832110915d8c5f999a3249e00782cb69d40334c20bfc`  
-		Last Modified: Thu, 19 Dec 2024 23:00:52 GMT  
-		Size: 5.2 MB (5174793 bytes)  
+	-	`sha256:f27de7cad5592e19db1511bb2658f8d13bca4da09897a47f3241807730c3527d`  
+		Last Modified: Wed, 29 Jan 2025 01:08:34 GMT  
+		Size: 5.2 MB (5174841 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e2a7d197d973307488c81e1d908fb38fdb83f7377ea964e015c39e1021d7e32d`  
-		Last Modified: Thu, 19 Dec 2024 23:00:52 GMT  
-		Size: 5.3 MB (5331363 bytes)  
+	-	`sha256:99e14dc35294759dcf5140141f87c6942e61c08c376f7c17dadbd92c57ce266f`  
+		Last Modified: Wed, 29 Jan 2025 01:08:34 GMT  
+		Size: 5.3 MB (5331713 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:59d40f3e2a7cc31db9cc577fecf52889b836a27c549f604e3f24e30e59831299`  
-		Last Modified: Thu, 19 Dec 2024 23:00:52 GMT  
-		Size: 5.2 MB (5176535 bytes)  
+	-	`sha256:b35e89648bc6040d10a185a2cc26998ab01bf20fe7d3a17bdb89dbac1b501845`  
+		Last Modified: Wed, 29 Jan 2025 01:08:34 GMT  
+		Size: 5.2 MB (5176583 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0b0b594d271cb6bfc6b27e4f5e7a2b8e8c8ee8c3a67f541ef3bcb54ed67e3ee2`  
-		Last Modified: Thu, 19 Dec 2024 23:00:53 GMT  
-		Size: 59.8 KB (59790 bytes)  
+	-	`sha256:fab264448a2a0056476a6569898ebfcbb687d6e670ff42e8183d3892c924d485`  
+		Last Modified: Wed, 29 Jan 2025 01:08:35 GMT  
+		Size: 59.8 KB (59804 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:latest` - linux; riscv64
 
 ```console
-$ docker pull rabbitmq@sha256:34b9bdfd8cfec232eea3731a95440dba94e5d990d64a3f81a963d5822584d631
+$ docker pull rabbitmq@sha256:fd751bd3cc731e0d6d564d6fbf702d0a4914fc1974eb02e08781d12f9a2a4729
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **98.9 MB (98891082 bytes)**  
+-	Total Size: **98.9 MB (98902849 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7ff85d501ee59d0d4ba5d115b0a450183e92fd555d15a0626acff262e9be592b`
+-	Image ID: `sha256:5bd0177683b80426b792925e0527883aec7d5dca79e12932bb5d51a73886b6ba`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -33339,49 +33339,49 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:23c2e341d6cf3572f2762ef1304c406cf6d4f5ee8ee8719ef289a3b75a8323aa in / 
 # Tue, 19 Nov 2024 16:34:27 GMT
 CMD ["/bin/bash"]
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV ERLANG_INSTALL_PATH_PREFIX=/opt/erlang
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/erlang /opt/erlang # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY /opt/openssl /opt/openssl # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_DATA_DIR=/var/lib/rabbitmq
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	ln -vsf /etc/ssl/certs /etc/ssl/private "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl"; 		ldconfig; 	sed -i.ORIG -e "/\.include.*fips/ s!.*!.include $OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf!" 		-e '/# fips =/s/.*/fips = fips_sect/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/openssl.cnf"; 	sed -i.ORIG -e '/^activate/s/^/#/' "$OPENSSL_INSTALL_PATH_PREFIX/etc/ssl/fipsmodule.cnf"; 	[ "$(command -v openssl)" = "$OPENSSL_INSTALL_PATH_PREFIX/bin/openssl" ]; 	openssl version; 	openssl version -d; 		erl -noshell -eval 'ok = crypto:start(), ok = io:format("~p~n~n~p~n~n", [crypto:supports(), ssl:versions()]), init:stop().'; 		groupadd --gid 999 --system rabbitmq; 	useradd --uid 999 --system --home-dir "$RABBITMQ_DATA_DIR" --gid rabbitmq rabbitmq; 	mkdir -p "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chown -fR rabbitmq:rabbitmq "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	chmod 1777 "$RABBITMQ_DATA_DIR" /etc/rabbitmq /etc/rabbitmq/conf.d /tmp/rabbitmq-ssl /var/log/rabbitmq; 	ln -sf "$RABBITMQ_DATA_DIR/.erlang.cookie" /root/.erlang.cookie # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_VERSION=4.0.5
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV RABBITMQ_HOME=/opt/rabbitmq
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV PATH=/opt/rabbitmq/sbin:/opt/erlang/bin:/opt/openssl/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN set -eux; 	export DEBIAN_FRONTEND=noninteractive; 	apt-get update; 	apt-get install --yes --no-install-recommends 		ca-certificates 		gosu 		tzdata 	; 	gosu nobody true; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get install --yes --no-install-recommends 		gnupg 		wget 		xz-utils 	; 	rm -rf /var/lib/apt/lists/*; 		RABBITMQ_SOURCE_URL="https://github.com/rabbitmq/rabbitmq-server/releases/download/v$RABBITMQ_VERSION/rabbitmq-server-generic-unix-latest-toolchain-$RABBITMQ_VERSION.tar.xz"; 	RABBITMQ_PATH="/usr/local/src/rabbitmq-$RABBITMQ_VERSION"; 		wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_SOURCE_URL.asc"; 	wget --progress dot:giga --output-document "$RABBITMQ_PATH.tar.xz" "$RABBITMQ_SOURCE_URL"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$RABBITMQ_PGP_KEY_ID"; 	gpg --batch --verify "$RABBITMQ_PATH.tar.xz.asc" "$RABBITMQ_PATH.tar.xz"; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 		mkdir -p "$RABBITMQ_HOME"; 	tar --extract --file "$RABBITMQ_PATH.tar.xz" --directory "$RABBITMQ_HOME" --strip-components 1; 	rm -rf "$RABBITMQ_PATH"*; 	grep -qE '^SYS_PREFIX=\$\{RABBITMQ_HOME\}$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	sed -i 's/^SYS_PREFIX=.*$/SYS_PREFIX=/' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	grep -qE '^SYS_PREFIX=$' "$RABBITMQ_HOME/sbin/rabbitmq-defaults"; 	chown -R rabbitmq:rabbitmq "$RABBITMQ_HOME"; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		[ ! -e "$RABBITMQ_DATA_DIR/.erlang.cookie" ]; 	gosu rabbitmq rabbitmqctl help; 	gosu rabbitmq rabbitmqctl list_ciphers; 	gosu rabbitmq rabbitmq-plugins list; 	rm "$RABBITMQ_DATA_DIR/.erlang.cookie" # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN gosu rabbitmq rabbitmq-plugins enable --offline rabbitmq_prometheus # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 RUN ln -sf /opt/rabbitmq/plugins /plugins # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV HOME=/var/lib/rabbitmq
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 VOLUME [/var/lib/rabbitmq]
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY --chown=rabbitmq:rabbitmq 10-defaults.conf 20-management_agent.disable_metrics_collector.conf /etc/rabbitmq/conf.d/ # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 EXPOSE map[15691/tcp:{} 15692/tcp:{} 25672/tcp:{} 4369/tcp:{} 5671/tcp:{} 5672/tcp:{}]
-# Mon, 16 Dec 2024 06:05:26 GMT
+# Tue, 28 Jan 2025 21:27:16 GMT
 CMD ["rabbitmq-server"]
 ```
 
@@ -33390,73 +33390,73 @@ CMD ["rabbitmq-server"]
 		Last Modified: Tue, 19 Nov 2024 17:38:52 GMT  
 		Size: 31.0 MB (30980838 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8fed26cd19175c1e49674a896fa0e40e2a6cde8a62490a87d18503bad9af8b27`  
-		Last Modified: Thu, 12 Dec 2024 00:03:32 GMT  
-		Size: 37.3 MB (37281928 bytes)  
+	-	`sha256:4e3eeb39d66e9a8e77660b2714f3ba13fcefa8b5b90abe0593a7585780c35d1d`  
+		Last Modified: Wed, 29 Jan 2025 01:41:33 GMT  
+		Size: 37.3 MB (37292087 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80f4f308364cbd96a45afc7705a79e92182bd81c84a010c5d5c46a55ce56cdf8`  
-		Last Modified: Thu, 12 Dec 2024 00:03:27 GMT  
-		Size: 9.8 MB (9783482 bytes)  
+	-	`sha256:829a259e6eea4ed880c8b37981d90df14491ce05912c2349be4b03a68ec51ee9`  
+		Last Modified: Wed, 29 Jan 2025 01:41:29 GMT  
+		Size: 9.8 MB (9785121 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:439dbee123c9e270fb2ada75c33aea9a0e8a826582867b63f144367c3f10227b`  
-		Last Modified: Thu, 12 Dec 2024 00:03:25 GMT  
-		Size: 9.5 KB (9499 bytes)  
+	-	`sha256:7c2bbbfe4bdfe09d58061d168bb6fa6de75ecabf0871e5b63e100c533201b89d`  
+		Last Modified: Wed, 29 Jan 2025 01:41:26 GMT  
+		Size: 9.5 KB (9491 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fa331686d65c78de6fb8ce0cdec237d217de57f571eb842bf70e8b52eb35ba3b`  
-		Last Modified: Thu, 19 Dec 2024 23:02:52 GMT  
-		Size: 20.8 MB (20833581 bytes)  
+	-	`sha256:2aae2271e2b3c67a79a9b7e5d97674dc2e9c3f4afb432e61d3b0d0a184e08f35`  
+		Last Modified: Wed, 29 Jan 2025 03:17:47 GMT  
+		Size: 20.8 MB (20833559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c1c79f500c923d4260e9200a4b4d827085373c8a1156e850c38444ffef98f318`  
-		Last Modified: Thu, 19 Dec 2024 23:02:49 GMT  
+	-	`sha256:c38e910ad16bab7d380567bcb231ec1be5669a9c0db31f60a2256aaf0681dfeb`  
+		Last Modified: Wed, 29 Jan 2025 03:17:44 GMT  
 		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9a09a57d730cd88d3b765f653578dcbbe29128ea57d4e23cc1fde2c835dded1`  
-		Last Modified: Thu, 19 Dec 2024 23:02:49 GMT  
-		Size: 105.0 B  
+	-	`sha256:9c958ca88ac0206918b00ce65d1b183dbfc86e17a78b0abcefc74e7de1618d0d`  
+		Last Modified: Wed, 29 Jan 2025 03:17:44 GMT  
+		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eb9ddf57d756586dffa50a4d9f56d535455893d352e7ccbc5b4d8aecd88e7618`  
-		Last Modified: Thu, 19 Dec 2024 23:02:49 GMT  
-		Size: 624.0 B  
+	-	`sha256:77b23c72be65eaf8e35db1f83fb9333a24e425e1ecd786f9b8d2ad341a8df734`  
+		Last Modified: Wed, 29 Jan 2025 03:17:44 GMT  
+		Size: 620.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10f588e9aca5019a2fe84be9bbc09fa92b26e3d24946eec317b267a85c2e9925`  
-		Last Modified: Thu, 19 Dec 2024 23:02:50 GMT  
-		Size: 836.0 B  
+	-	`sha256:25a1388096e52dcc590017ee3515797114a23c990b4d6bf0e336793365950604`  
+		Last Modified: Wed, 29 Jan 2025 03:17:45 GMT  
+		Size: 835.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:latest` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:936b5cc9469fa7b36b029f84c0b3b0e13c2cbd7a5ea2cf0836e50fb8d5fd799c
+$ docker pull rabbitmq@sha256:de4da6c7f12ed27797d37580ba3b690f3b619af14b7dde5f5ad15d9ffce54d68
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.1 MB (18071858 bytes)**  
+-	Total Size: **18.1 MB (18085633 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7fd7187e3d3caff9119ae5eaae511bdb0783d8e869866b8222338047a317246d`
+-	Image ID: `sha256:139470d88207ae8f1577082e24cfc561e1a89e1ac70376edf5df6970a6b2c1b4`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4cd585f3979628a43709db6ace26ffd4637730a4c6df2989ad97c8156487f773`  
-		Last Modified: Thu, 19 Dec 2024 23:02:49 GMT  
-		Size: 2.4 MB (2357250 bytes)  
+	-	`sha256:a93eab8ef819fd57fc5a1cdf5bd3adcd3dddf44315d2fe1fbc2c04e1c51aa666`  
+		Last Modified: Wed, 29 Jan 2025 03:17:44 GMT  
+		Size: 2.4 MB (2357268 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:98c140b89215e6c6eff5e33f7dc13a8f2fec30380cc4c168f2d05533eaf4dca3`  
-		Last Modified: Thu, 19 Dec 2024 23:02:50 GMT  
-		Size: 5.2 MB (5166360 bytes)  
+	-	`sha256:24ecf73128c045a744476372dda9bacc8544b78aa118098cc5d623e715525011`  
+		Last Modified: Wed, 29 Jan 2025 03:17:45 GMT  
+		Size: 5.2 MB (5170842 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:fa5a9b70343323674ec73cc704e1cab1c3256b3bd5f2b320a6a266f19d78e10b`  
-		Last Modified: Thu, 19 Dec 2024 23:02:50 GMT  
-		Size: 5.3 MB (5320359 bytes)  
+	-	`sha256:bc5b89c46ba4e808853961413bbefdc991943b9b027de9275eecd70415d130b2`  
+		Last Modified: Wed, 29 Jan 2025 03:17:45 GMT  
+		Size: 5.3 MB (5325135 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:50a727a52edabe0bbe1458008a750396a2f98f3236760798db490d5554c277cd`  
-		Last Modified: Thu, 19 Dec 2024 23:02:50 GMT  
-		Size: 5.2 MB (5168102 bytes)  
+	-	`sha256:bd784da89371288c0f4ee5011dda9e32d5cf33bc8d347f2a391c999084af13bf`  
+		Last Modified: Wed, 29 Jan 2025 03:17:45 GMT  
+		Size: 5.2 MB (5172584 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1d1290395a1ff48b77236a90c4060a12bbf76f79528d979ddb38a8f29906baed`  
-		Last Modified: Thu, 19 Dec 2024 23:02:50 GMT  
-		Size: 59.8 KB (59787 bytes)  
+	-	`sha256:90c14bc0cecf19611cb7e1052f8b23ad31de2b28a82216a4cead848431cd7f89`  
+		Last Modified: Wed, 29 Jan 2025 03:17:45 GMT  
+		Size: 59.8 KB (59804 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:latest` - linux; s390x
@@ -33608,7 +33608,7 @@ $ docker pull rabbitmq@sha256:48d5b5e7b5585483a0d18fd87796c70cf45f4f8b7d7ab3b662
 ## `rabbitmq:management`
 
 ```console
-$ docker pull rabbitmq@sha256:4a2b95d53111fe589fb44b5152ff87253c63eb227eee21f39494f64d9d96c0b2
+$ docker pull rabbitmq@sha256:941ae5e43c484d8920e223df29f8ca2287aa7b343e3b44281c2019ecb3674551
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33629,13 +33629,13 @@ $ docker pull rabbitmq@sha256:4a2b95d53111fe589fb44b5152ff87253c63eb227eee21f394
 ### `rabbitmq:management` - linux; amd64
 
 ```console
-$ docker pull rabbitmq@sha256:7e7e781137909b3b23274721526bd643a614a87371dedf74e4b5baea2f8a72fd
+$ docker pull rabbitmq@sha256:4ebfc86ad31daab925ba9998b35eece12d1e1560beb9a7d5e7ec01f8feb1d731
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **119.7 MB (119712330 bytes)**  
+-	Total Size: **119.7 MB (119725341 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f24092b2eabeeaf407d05d16edcec3db60f6b6d2866f713b59d7b6c52fbf7f50`
+-	Image ID: `sha256:3ad47d388f856b7e2addcb5d92f25d3663b6989e1f791cfba482b99cbaf208cb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -33707,77 +33707,77 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Tue, 19 Nov 2024 17:38:27 GMT  
 		Size: 29.8 MB (29751968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1f73d79d4de92263be08d3e094d6830c76f5260248afe0abb7a30d43ae6daeff`  
-		Last Modified: Thu, 19 Dec 2024 21:37:26 GMT  
-		Size: 48.4 MB (48397770 bytes)  
+	-	`sha256:6e9d8cdae0bfdbcb9216751b7083c71c801fef19eacbf6213c49c65109d7d49c`  
+		Last Modified: Wed, 29 Jan 2025 00:33:18 GMT  
+		Size: 48.4 MB (48409559 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf0246a10015b388fb964da0eded106db452088dcd292c2394c2648a669e41e2`  
-		Last Modified: Thu, 19 Dec 2024 21:37:26 GMT  
-		Size: 8.2 MB (8169293 bytes)  
+	-	`sha256:28a3f66ab885804bad9467aea7b2c7d20b8ca2df81d0e07d80d2d679f3fdab30`  
+		Last Modified: Wed, 29 Jan 2025 00:33:17 GMT  
+		Size: 8.2 MB (8169285 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:04c2200eb82ccc75c0d43122afc7a1528cc2c8211fa7ff089579236d4197dfcf`  
-		Last Modified: Thu, 19 Dec 2024 21:37:26 GMT  
-		Size: 9.4 KB (9446 bytes)  
+	-	`sha256:661a6cbddab14a2f8b6a4673025842fac29a15aa6d5aadc39a038d67e75ec625`  
+		Last Modified: Wed, 29 Jan 2025 00:33:18 GMT  
+		Size: 9.5 KB (9489 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f071906ce3b479d069aefa43f58e6626104155e887f415894e768cc2ee8fe949`  
-		Last Modified: Thu, 19 Dec 2024 21:37:26 GMT  
-		Size: 20.9 MB (20922718 bytes)  
+	-	`sha256:81a04a89a0d52a7a2d1dd632ebb160ed45afcbb3eb000436d8e3673a64fafa49`  
+		Last Modified: Wed, 29 Jan 2025 00:33:18 GMT  
+		Size: 20.9 MB (20922780 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c34563e7910a729f0ba1474c453a5ceeece0c169fb28a4cec16aa69bf918ada4`  
-		Last Modified: Thu, 19 Dec 2024 21:37:26 GMT  
+	-	`sha256:ed804c5d0e7bb97ad4ca54ee811eb2f93d7a39e2a0a339cf5e70e2eb00581734`  
+		Last Modified: Wed, 29 Jan 2025 00:33:18 GMT  
 		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5461254c53b94cf5e9a7d78bc711584ecb67da0dcd46f2bb79f2133919eef507`  
-		Last Modified: Thu, 19 Dec 2024 21:37:27 GMT  
-		Size: 106.0 B  
+	-	`sha256:c84c7470e7775471726f454ca6121c6a26f0c95721eeab9ace18ebe53c49c311`  
+		Last Modified: Wed, 29 Jan 2025 00:33:19 GMT  
+		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:042417f0b6e9e78d7d60ca28ee5eb655a6b99c25768c44a824c76d5154a916fc`  
-		Last Modified: Thu, 19 Dec 2024 21:37:27 GMT  
-		Size: 618.0 B  
+	-	`sha256:646d938ff824fed991d0d120548cf6234bf9845ad67005d3d002057aaca1644a`  
+		Last Modified: Wed, 29 Jan 2025 00:33:19 GMT  
+		Size: 620.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:410649ab8bd0fa85dbf788b9e74a4d6065a05b3fda07e9d9addbf3ce51672151`  
-		Last Modified: Thu, 19 Dec 2024 21:37:27 GMT  
-		Size: 831.0 B  
+	-	`sha256:febd59dd43dfc4acefef3e1bcc0aa5a2fef36246ffe7c523abe001035d1e8c14`  
+		Last Modified: Wed, 29 Jan 2025 00:33:19 GMT  
+		Size: 833.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3cbea2ae21d89bf4f01ca8016197c351246a6ff4959b8c1c0f5a32104590f7e5`  
-		Last Modified: Thu, 19 Dec 2024 22:16:24 GMT  
-		Size: 12.5 MB (12459392 bytes)  
+	-	`sha256:80c712e0d0a17d2316b44b18f72829e019d50491800402d59fc5e64f1f26da97`  
+		Last Modified: Wed, 29 Jan 2025 01:27:18 GMT  
+		Size: 12.5 MB (12460510 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:e10ecf3dfbf05ce4e83fd30957b642a428a7b30c76d8dc3da7514a715ca3a6d2
+$ docker pull rabbitmq@sha256:a147fdd60d43c527b0c2b92ab57e2b10d8aed81f57e54a5a0e3a63c7c84d0bce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (2959194 bytes)**  
+-	Total Size: **2.8 MB (2839681 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:77a7f62114fef3aca82b9bbd81acbbab0c54da4fb55a1ead7258b60e29ffa814`
+-	Image ID: `sha256:7a426520e4cf96dc0dfae020f4111a27fafe6547907b7b0b11b0508b7fd1a9f7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f31005aa513763e90641d6c68b66a55d5a1c83333e21e9d42c40b9110297e228`  
-		Last Modified: Thu, 19 Dec 2024 22:16:24 GMT  
-		Size: 2.9 MB (2947794 bytes)  
+	-	`sha256:2dfa7d64f65d4f80cb43b60086f30fa4a355b24162868e992286b139f4954ac6`  
+		Last Modified: Wed, 29 Jan 2025 01:27:16 GMT  
+		Size: 2.8 MB (2828280 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:5ca605c90ad91f6dc8beda7d5b30780511cb2bec414a489bd1df7f05a1f4e5d5`  
-		Last Modified: Thu, 19 Dec 2024 22:16:23 GMT  
-		Size: 11.4 KB (11400 bytes)  
+	-	`sha256:6ef97c02bea0d95ad8d3e9cf02e57e05f34ca9a15ab04c19494e972dec9e71a6`  
+		Last Modified: Wed, 29 Jan 2025 01:27:16 GMT  
+		Size: 11.4 KB (11401 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:management` - linux; arm variant v7
 
 ```console
-$ docker pull rabbitmq@sha256:c1614e6591a11a4249bccecad57c9f7f340b4f70c3814af8f84a3ac1a7b0d18f
+$ docker pull rabbitmq@sha256:846df67700d4c618d3f434490f9f24c02dee701aa9c5c2e0b9b6b95da24ff88a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **101.3 MB (101279426 bytes)**  
+-	Total Size: **101.3 MB (101291909 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb0d58b40828d0384368f37206c873976edd5a1a04e768db49c29c12ffce71fd`
+-	Image ID: `sha256:41dcf175a9af794496069ed7646d2ade2a05cd4be164d7b54034b332c227be03`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -33849,77 +33849,77 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Tue, 19 Nov 2024 17:38:39 GMT  
 		Size: 26.9 MB (26869639 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15f550c054c479269b4e12354d866d899631ade5dd464763cabe051a9e61dac9`  
-		Last Modified: Wed, 11 Dec 2024 22:40:01 GMT  
-		Size: 35.4 MB (35433266 bytes)  
+	-	`sha256:8ddbe0fa0ca64bcd247be40bee928e934c0900148f9c757cb0e8d29f68579d49`  
+		Last Modified: Wed, 29 Jan 2025 00:34:07 GMT  
+		Size: 35.4 MB (35445401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8af28230a7766b164ee28ba67c508ece3c5074f32ed61375d257e1046e4f53cb`  
-		Last Modified: Wed, 11 Dec 2024 22:40:01 GMT  
-		Size: 6.7 MB (6667936 bytes)  
+	-	`sha256:f6a564914538c5bc366150ddf7111a42ebd75e9f9d96245d825e5c6fb93bbe47`  
+		Last Modified: Wed, 29 Jan 2025 00:34:06 GMT  
+		Size: 6.7 MB (6668105 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ffe2fed4f35f89131d91c94d61bebcc25fd882700127811961a320fd748a54a`  
-		Last Modified: Wed, 11 Dec 2024 22:40:00 GMT  
-		Size: 9.5 KB (9536 bytes)  
+	-	`sha256:d131e21e20cd8eca791b4d665fe37142b67723f37fb3ca13794d5061b0fbd772`  
+		Last Modified: Wed, 29 Jan 2025 00:34:06 GMT  
+		Size: 9.5 KB (9529 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4d584fa70dedf9edea3f55402801417152063bb2f40ff1f474762a9b0a486cd`  
-		Last Modified: Thu, 19 Dec 2024 21:40:15 GMT  
-		Size: 20.8 MB (20825482 bytes)  
+	-	`sha256:258de73350d024bc2b39ae8a393c21cd6d7600a68d1d763db77ea49b5d599670`  
+		Last Modified: Wed, 29 Jan 2025 00:40:15 GMT  
+		Size: 20.8 MB (20825439 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:58f55fcd74ed4471ebe791272516fd2e534104ab65ed4dd199564191c7ecb296`  
-		Last Modified: Thu, 19 Dec 2024 21:40:14 GMT  
-		Size: 186.0 B  
+	-	`sha256:dd637b134fa4730f6ce8481e138a3c14ca4f05f246914b2776fd477a007910b7`  
+		Last Modified: Wed, 29 Jan 2025 00:40:14 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:809389158ca74908d5f3802dd9b3577f11204c59cbace63cc2bcca31da75c391`  
-		Last Modified: Thu, 19 Dec 2024 21:40:14 GMT  
+	-	`sha256:dbcc398e4d560a6ecf9ca416d3851979f0bea8ba12b745ec7a3253323beb6efb`  
+		Last Modified: Wed, 29 Jan 2025 00:40:14 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:53390968de9a3e8f1ca39dd7eb2233bb16591ed5629b7f998022a359f2a7e40a`  
-		Last Modified: Thu, 19 Dec 2024 21:40:14 GMT  
-		Size: 618.0 B  
+	-	`sha256:a2e7c0bd91f2aa75079134abeae4a083cb5493352d2f38f86a6e4a8ae5e02ebd`  
+		Last Modified: Wed, 29 Jan 2025 00:40:14 GMT  
+		Size: 617.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8b58e6ca0b3a1721f5b1eb861ede61991b628e66f4222adafba7fb5bb930fb44`  
-		Last Modified: Thu, 19 Dec 2024 21:40:15 GMT  
+	-	`sha256:c9423f0e5ba2568439a898c9678b6def69b948887eed29b3b57b34685afb120e`  
+		Last Modified: Wed, 29 Jan 2025 00:40:15 GMT  
 		Size: 828.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:abb565169a26a5312aaf14a99bdc1f85d30c576e41af71664a9f47674d49f49a`  
-		Last Modified: Thu, 19 Dec 2024 22:15:34 GMT  
-		Size: 11.5 MB (11471826 bytes)  
+	-	`sha256:39d386869a777674fc5afff2db3715aee7a904299732e77f780661575c8c0488`  
+		Last Modified: Wed, 29 Jan 2025 01:28:02 GMT  
+		Size: 11.5 MB (11472054 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:aa3270df7caffe25494a69a3ea4add61260610a0a88358587716ea85e0e810f3
+$ docker pull rabbitmq@sha256:748a674d4a54217c424f37c36f7c67c46d533856e86bb07585833e0776d73e54
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (2960235 bytes)**  
+-	Total Size: **3.0 MB (2960260 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b079a438cca61db3f5b1b880a227de2293c16117cd5ebe428fdf3de167a18037`
+-	Image ID: `sha256:c2f29ef683cccca6f580d1e2eb48ee02e854a186cf74a757dfcf0acafc413452`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:71285ae7bac4f7e6ba01b8dd62e592c3e31d3eb4487dde2e2261f3f01654419b`  
-		Last Modified: Thu, 19 Dec 2024 22:15:31 GMT  
-		Size: 2.9 MB (2948758 bytes)  
+	-	`sha256:1290e25cfa023d5ffb5c89df3df2f52df4fa00dd556f51ec23d8113736a271ed`  
+		Last Modified: Wed, 29 Jan 2025 01:28:01 GMT  
+		Size: 2.9 MB (2948784 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6a380dc82481ae4b44ae0aff1b9d911cf698a4f5be566d6965efaeebe79adcb6`  
-		Last Modified: Thu, 19 Dec 2024 22:15:31 GMT  
-		Size: 11.5 KB (11477 bytes)  
+	-	`sha256:331d53c48c15370a0e53ec063ffd69245914c385d93010a5f1704f8859b1e645`  
+		Last Modified: Wed, 29 Jan 2025 01:28:01 GMT  
+		Size: 11.5 KB (11476 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:management` - linux; arm64 variant v8
 
 ```console
-$ docker pull rabbitmq@sha256:4c28465b2184c234f86f571579190e69119e21d221bf3c120d9f1f05c4efc740
+$ docker pull rabbitmq@sha256:2c5fc38eb1fd827360e5686289b5ec8e4270d1f870ca6610dcfdcd7d6a5d4eea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **117.5 MB (117474308 bytes)**  
+-	Total Size: **117.5 MB (117493978 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8d4dd5b000c4b547060e2675b14134a8980bfd8cba59c6cb49a4ef65e3e0181c`
+-	Image ID: `sha256:61c521ec5a8eeb4adf2cdd7a42f5ed9a642a6dfd0eca615c280943188e04d638`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -33991,77 +33991,77 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Tue, 19 Nov 2024 17:38:33 GMT  
 		Size: 28.9 MB (28892671 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0dd6f7651969fbbc9ca154b27d8deea7a80480f448b243b63a7b7d56ce089430`  
-		Last Modified: Wed, 11 Dec 2024 22:37:18 GMT  
-		Size: 46.5 MB (46474590 bytes)  
+	-	`sha256:52299e8730d11af6eb71f33b5c16790dae4bb4959ed39906fc96caca2c82e821`  
+		Last Modified: Wed, 29 Jan 2025 00:46:47 GMT  
+		Size: 46.5 MB (46493171 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b8d36208ddc884ffbb9bb161c00179f1eb0d3d2da496387d7419742fec90818c`  
-		Last Modified: Wed, 11 Dec 2024 22:37:17 GMT  
-		Size: 8.9 MB (8934225 bytes)  
+	-	`sha256:ccfe2da4ebaba3053af2ca724275efde70b702f3b62906aba3a2c688da09b33b`  
+		Last Modified: Wed, 29 Jan 2025 00:46:46 GMT  
+		Size: 8.9 MB (8934957 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12f1c19f537e7af45a8ace01a800eadc1b23167c81356a6c5799bb680b04ecb7`  
-		Last Modified: Wed, 11 Dec 2024 22:37:17 GMT  
-		Size: 9.4 KB (9428 bytes)  
+	-	`sha256:905d928b7e4fd4f2d74836057463713dfb2fce6b1efd79e739f9fd039604882d`  
+		Last Modified: Wed, 29 Jan 2025 00:46:45 GMT  
+		Size: 9.5 KB (9461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f036a5674a9d3bb244ebf30d083f5aadc59371c04ed6452837dc53c598a374cb`  
-		Last Modified: Thu, 19 Dec 2024 22:42:37 GMT  
-		Size: 20.8 MB (20832423 bytes)  
+	-	`sha256:48aba1b68919f476c74a7d8ad55c183c400dfe5a6fc94cd76d399ee3a8523fa8`  
+		Last Modified: Wed, 29 Jan 2025 00:55:02 GMT  
+		Size: 20.8 MB (20832468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d5cac6bc5aa3a5d559c81a9a66bc577f089be7ccc713722f8f6ef99e756236c`  
-		Last Modified: Thu, 19 Dec 2024 22:42:36 GMT  
+	-	`sha256:aa93f18d41f04fbbdff3047160e6948cfedb7c93d79efb336f7b2a0f84d1d5b2`  
+		Last Modified: Wed, 29 Jan 2025 00:55:01 GMT  
 		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:537f933a675390e689dc87b58bce146edcc805fd3b339ddb252a135168bc1468`  
-		Last Modified: Thu, 19 Dec 2024 22:42:36 GMT  
+	-	`sha256:264553379a3a76a701874b9a3231cb63a56a4e0ea2f8cacf0655edd979f04c79`  
+		Last Modified: Wed, 29 Jan 2025 00:55:01 GMT  
 		Size: 108.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9337576343d012a4c20cf17f4cbbc1aa631100fc9e01e6c53e63d0fc289983d9`  
-		Last Modified: Thu, 19 Dec 2024 22:42:36 GMT  
-		Size: 616.0 B  
+	-	`sha256:835f34527f4da6765945ef2c4e2b06fedf08622089ed3c2fbe767d2e1b0abc72`  
+		Last Modified: Wed, 29 Jan 2025 00:55:01 GMT  
+		Size: 618.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:126e6f61c7d611ef2f09b807d0e615b115c3e7107d9d994e53846994cb3f5934`  
-		Last Modified: Thu, 19 Dec 2024 22:42:37 GMT  
-		Size: 830.0 B  
+	-	`sha256:df14d10b2d576101d93c7f96027ab614362557e3e0c61ac1b220b71fdeb96af2`  
+		Last Modified: Wed, 29 Jan 2025 00:55:02 GMT  
+		Size: 831.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b629a06d4ea4d7d987db7a33bad2e73e8608a7e2fdbd7cc4d5cf7938cd815051`  
-		Last Modified: Thu, 19 Dec 2024 23:27:29 GMT  
-		Size: 12.3 MB (12329228 bytes)  
+	-	`sha256:450341083e011db7a92c9ee8b37efef62c0e810e2c65adc5bc63b4f6bef8cf87`  
+		Last Modified: Wed, 29 Jan 2025 01:29:43 GMT  
+		Size: 12.3 MB (12329504 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:ed336f98d176ab91fef5d2134a4379d4bb60f209c561ce0f62f2152613da30cd
+$ docker pull rabbitmq@sha256:e4c5eb4ca136387744599ee839529cf705ccd29a33ee9e5cbd010c0ebcb6127c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (2960411 bytes)**  
+-	Total Size: **3.0 MB (2960440 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9aba32404b5282603ba6aec2eaa6ce77063d7e5083cb25ce747d89de8512db83`
+-	Image ID: `sha256:9cf620e40faec651eacc70a3f3551b6a7e0a21e2ed8851707cb007722821202a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:80d8b046eea10510cd5cc087926990102f128784415823161b01fb7500ce66cf`  
-		Last Modified: Thu, 19 Dec 2024 23:27:28 GMT  
-		Size: 2.9 MB (2948906 bytes)  
+	-	`sha256:22d42119dc6a581e452d8e2bca444bec32a3a4a33ec9f88739b48d930ed0d443`  
+		Last Modified: Wed, 29 Jan 2025 01:29:42 GMT  
+		Size: 2.9 MB (2948936 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f29a6f9f73f5b75faa434ee0cbd7ccff618d1368d24d9f85ef8a5a685ef6762e`  
-		Last Modified: Thu, 19 Dec 2024 23:27:28 GMT  
-		Size: 11.5 KB (11505 bytes)  
+	-	`sha256:228c1cf219584d9376c4707e53b85586d6b9cc1d6f4a7d74e8ffbafc98acd59b`  
+		Last Modified: Wed, 29 Jan 2025 01:29:41 GMT  
+		Size: 11.5 KB (11504 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `rabbitmq:management` - linux; ppc64le
 
 ```console
-$ docker pull rabbitmq@sha256:cb81ea530bbcf3fcf561567498fb63061678009ddda29a35bf526ed5e63d860d
+$ docker pull rabbitmq@sha256:21271762105a1b8b0b8a868071556c4a2dfe9619ea10eb8392cbe36fb60f215d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **118.6 MB (118581768 bytes)**  
+-	Total Size: **118.6 MB (118567508 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cb941772ce457e12422cc683ae5f5a65fcf1f3059a5fa282c52e8c8934f1d64f`
+-	Image ID: `sha256:ae085bc81251f14a5e6f81df9d1bfeab2040f64752ccb1fc4b124461b2a9974b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -34133,64 +34133,64 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Tue, 19 Nov 2024 17:38:45 GMT  
 		Size: 34.4 MB (34388820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35aaa542f56f99732fa6a5ce5ca4b3980f55c461636cc332d4792017c9f15431`  
-		Last Modified: Wed, 11 Dec 2024 22:38:19 GMT  
-		Size: 41.6 MB (41633236 bytes)  
+	-	`sha256:8cadad09c52fdbf44decc403a4ab6082060224014f1082854e01a1a7f5d3981f`  
+		Last Modified: Wed, 29 Jan 2025 00:58:33 GMT  
+		Size: 41.6 MB (41637000 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed2e85aabb1a869502abef25c5e467f417a1d8aeca7a26ed9ade9d7d914d39d0`  
-		Last Modified: Wed, 11 Dec 2024 22:38:18 GMT  
-		Size: 8.7 MB (8689219 bytes)  
+	-	`sha256:aeb9f7be9b5b4cbf6f594b895573e0fdbb3020f04243a231409187e8ff591bfd`  
+		Last Modified: Wed, 29 Jan 2025 00:58:32 GMT  
+		Size: 8.7 MB (8689882 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4feb9952ffad20211d81b56be0c2dfe81e14bbc20c685d956302a993a2036a8e`  
-		Last Modified: Wed, 11 Dec 2024 22:38:17 GMT  
-		Size: 9.4 KB (9444 bytes)  
+	-	`sha256:6706769334970294d65b0d1529bdf615cf3e6a523894522867af35ebcc4742a5`  
+		Last Modified: Wed, 29 Jan 2025 00:58:31 GMT  
+		Size: 9.4 KB (9435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:71d8c0db02760df7e7427352e3769f4acec7213799ac17d7979849196c912681`  
-		Last Modified: Thu, 19 Dec 2024 23:00:53 GMT  
-		Size: 20.9 MB (20881471 bytes)  
+	-	`sha256:9ad2b9fa6f9fb2627d54040b417bed0a0b27780179da8a00c0011235af34b08a`  
+		Last Modified: Wed, 29 Jan 2025 01:08:35 GMT  
+		Size: 20.9 MB (20881442 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b18e4b681be35f870af16521790af278cc37bbe4c9f9425994d68efd85a8f6cb`  
-		Last Modified: Thu, 19 Dec 2024 23:00:52 GMT  
-		Size: 191.0 B  
+	-	`sha256:dca1e04cf0fcf8a8b9c1b0b0ea90d4a03107fc158b1812239bbd0d1ab78cb87c`  
+		Last Modified: Wed, 29 Jan 2025 01:08:34 GMT  
+		Size: 187.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:24c0b8102ce18af9182874d5332d4b1fb25aa6297df8a9512aceae383f84eb83`  
-		Last Modified: Thu, 19 Dec 2024 23:00:52 GMT  
-		Size: 106.0 B  
+	-	`sha256:9e7e952c1e8efb8c94b410d2d0ab03c9ef1dd9ed4a653f176142ec36df7efd1f`  
+		Last Modified: Wed, 29 Jan 2025 01:08:34 GMT  
+		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b972d35869fefd573ab645af244d7120e0f8db1bc870beb7e40c8fb96a3e83e7`  
-		Last Modified: Thu, 19 Dec 2024 23:00:52 GMT  
-		Size: 619.0 B  
+	-	`sha256:345be45a87d55ac5e05739bd1828e200cf6312841bebb598e2233d82c441e955`  
+		Last Modified: Wed, 29 Jan 2025 01:08:34 GMT  
+		Size: 618.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:682e8d0d901ad67960cb815110986cdcaf16f6bd2bfc60b4cb568fe4f072a08c`  
-		Last Modified: Thu, 19 Dec 2024 23:00:53 GMT  
-		Size: 830.0 B  
+	-	`sha256:1109820e67077781456ae50628baf7de18e392c97f726cd245b0865fd4ce7209`  
+		Last Modified: Wed, 29 Jan 2025 01:08:35 GMT  
+		Size: 829.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b0024c00efb72d61223c746a9bc7b05090135aed55f0270900175dad4b17a7d7`  
-		Last Modified: Thu, 19 Dec 2024 23:53:35 GMT  
-		Size: 13.0 MB (12977832 bytes)  
+	-	`sha256:89f2ed4dbd332727a68cf6e01052dbfb17e1de384854480a88c27d770c944a88`  
+		Last Modified: Wed, 29 Jan 2025 01:38:22 GMT  
+		Size: 13.0 MB (12959186 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:34dd25a3b8be6651acde18f4b1302d730df4402f1f9a7c3e59a272ace94a4ab9
+$ docker pull rabbitmq@sha256:1baf8cc70fa23b647191c28b02392106d3ed41078cd9461da00afee5fb7ea4f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (2963867 bytes)**  
+-	Total Size: **3.0 MB (2963897 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6913e5c08f6ad7a3722cb934d3cf9824fec1ae937eec0cf9e0a0fc5b310b2329`
+-	Image ID: `sha256:9aa968973f52bc0f5a697781514878140178716ef9373c5c3b5b1f3883661312`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a0ca65c1560ea6b87d9643c70ac4bc9c12473ffec97c3d16a8321ed24b0be5df`  
-		Last Modified: Thu, 19 Dec 2024 23:53:34 GMT  
-		Size: 3.0 MB (2952423 bytes)  
+	-	`sha256:b5db832a62e68a85439f1b30c07ad57a2f078a5dfdbbdc9952ff73f376e39375`  
+		Last Modified: Wed, 29 Jan 2025 01:38:21 GMT  
+		Size: 3.0 MB (2952453 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:947d5f25c010510b62fff48277cf8cf48f58ce9da3edc1fa2a4043aba5f03030`  
-		Last Modified: Thu, 19 Dec 2024 23:53:34 GMT  
+	-	`sha256:c45fb9beeabb337442a0e9c1ffc004ef39f66ea41a31caaa092cc0d559404d6d`  
+		Last Modified: Wed, 29 Jan 2025 01:38:20 GMT  
 		Size: 11.4 KB (11444 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -34339,13 +34339,13 @@ $ docker pull rabbitmq@sha256:ee432f811ee11d4449de4e80dddf988a7645bda2fa748ed1bc
 ### `rabbitmq:management` - linux; s390x
 
 ```console
-$ docker pull rabbitmq@sha256:d1af63c6e1ab9f7834b27441c8580ba5cda8e5834bfa73f044eb080d8b7aeb01
+$ docker pull rabbitmq@sha256:7f01f25677f16dee3d78c4844749266a3a4e4847740b735e20c15eb9e876e2a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **111.9 MB (111887971 bytes)**  
+-	Total Size: **111.9 MB (111879309 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9125511bf3eacb0e3cb4675b514b953bd078f4f9328f659d5a4606dda607057e`
+-	Image ID: `sha256:7fc2de5d4041f7bcd64f217bf43a6980af83c3616c40cc145043f3638309bd23`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["rabbitmq-server"]`
 
@@ -34417,64 +34417,64 @@ EXPOSE map[15671/tcp:{} 15672/tcp:{}]
 		Last Modified: Tue, 19 Nov 2024 17:38:58 GMT  
 		Size: 30.0 MB (30020826 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b379a652603f4d4450ee16626688d7a8fb894512b134e272f6d80e33ebb54381`  
-		Last Modified: Wed, 11 Dec 2024 22:57:50 GMT  
-		Size: 40.7 MB (40711777 bytes)  
+	-	`sha256:965e29136c0040e37abbc80a6accd48640ce74eb7aeda66ce0aa16698c5c0cd8`  
+		Last Modified: Wed, 29 Jan 2025 00:50:24 GMT  
+		Size: 40.7 MB (40729114 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:874d0b46da03c5e6e9380e471b63e248227d1c9b15c98643d4220450e03c55da`  
-		Last Modified: Wed, 11 Dec 2024 22:57:50 GMT  
-		Size: 7.5 MB (7546322 bytes)  
+	-	`sha256:d13f00b9fcaef34a53fe78c034076f777ddcb89aa23fc24922cc58a8c87fa107`  
+		Last Modified: Wed, 29 Jan 2025 00:50:23 GMT  
+		Size: 7.5 MB (7546466 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e062b603cde5d317e55e6334d640f50ac53df923b8f2d9f63d5db742f52cbdf7`  
-		Last Modified: Wed, 11 Dec 2024 22:57:49 GMT  
-		Size: 9.6 KB (9583 bytes)  
+	-	`sha256:e7e68b5fa2a4586323b16f1cae2f3664d3c85773ea6450673bc81d2d406ced6b`  
+		Last Modified: Wed, 29 Jan 2025 00:50:23 GMT  
+		Size: 9.6 KB (9599 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:05e1a86984c2203b83ccffd7b01069b56ea62781127a495b9454caedd1d858a6`  
-		Last Modified: Thu, 19 Dec 2024 22:31:07 GMT  
-		Size: 20.9 MB (20903547 bytes)  
+	-	`sha256:457003a14ccc5aa75e3b453b94bddb97ad4183ce291732ed864985dcda0e2c75`  
+		Last Modified: Wed, 29 Jan 2025 01:01:47 GMT  
+		Size: 20.9 MB (20903492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2464f94ce4a7131214699b6bc24e5f5f66d2eee33132493ed32315a7fa58e2b`  
-		Last Modified: Thu, 19 Dec 2024 22:31:06 GMT  
-		Size: 187.0 B  
+	-	`sha256:f362644e0dbafb92e06907290b574a88ba542bf1c5562fd4f65ffa03b151c14b`  
+		Last Modified: Wed, 29 Jan 2025 01:01:47 GMT  
+		Size: 189.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2f92e9c59290732e46ef2933753b78a70a46ef94904f8c9da20d35cd9282c817`  
-		Last Modified: Thu, 19 Dec 2024 22:31:06 GMT  
+	-	`sha256:7d6e270ae5cceda2c7a574e6f0e52d9a7d61dd5cfd131a7195af0c4fa8cd2814`  
+		Last Modified: Wed, 29 Jan 2025 01:01:47 GMT  
 		Size: 109.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbab47e701004a9e55d0142a1bf87eb0a802598bb8e8bd2d7d01156be5b59e14`  
-		Last Modified: Thu, 19 Dec 2024 22:31:06 GMT  
-		Size: 622.0 B  
+	-	`sha256:0bc2b19646336d401b4a3d081627ea905f312682605ea652e1702c12a90bbc72`  
+		Last Modified: Wed, 29 Jan 2025 01:01:47 GMT  
+		Size: 623.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8aec362e19c2251c5a24d9e65d25739af00445f829ded00d7dd41b7bbf4764ed`  
-		Last Modified: Thu, 19 Dec 2024 22:31:07 GMT  
-		Size: 831.0 B  
+	-	`sha256:cc1e513c9481efcef38d62171303f14904cde1561459c51d3205ca024b9d3291`  
+		Last Modified: Wed, 29 Jan 2025 01:01:47 GMT  
+		Size: 832.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d0afd4a1cc8c9f90d9ac87683f7be0af3306696e656c3db31a66219e77e31fdc`  
-		Last Modified: Thu, 19 Dec 2024 23:24:00 GMT  
-		Size: 12.7 MB (12694167 bytes)  
+	-	`sha256:ae347b4b08b82bf5368bad1480f71eb6ac74785f3c6e7d0cad001aa746559b6a`  
+		Last Modified: Wed, 29 Jan 2025 01:29:11 GMT  
+		Size: 12.7 MB (12668059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rabbitmq:management` - unknown; unknown
 
 ```console
-$ docker pull rabbitmq@sha256:e2bc2edeb99390ef2153bbb08f3450fd6bd7fd6b6d71e6f19062ea8303f93464
+$ docker pull rabbitmq@sha256:29023f8523366b63fbc2873984eff056da903b9310bfa1a5c68e649437e86244
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.0 MB (2961257 bytes)**  
+-	Total Size: **3.0 MB (2961285 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a8ad42639961a14e268619e188358f110cb793cfb6c75332e397a684cfdf6549`
+-	Image ID: `sha256:4097896f288903f36ce484299852aecee11631151e7f87e486a312db267abacf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5f2d5ce8a5806b7bae3b9f7845ec43a000f2224914a433e948e5f9d87c4c3755`  
-		Last Modified: Thu, 19 Dec 2024 23:23:59 GMT  
-		Size: 2.9 MB (2949856 bytes)  
+	-	`sha256:62d8cbf33244a52dfedd4cb3fc8d121128f831a68076943040987d50cb0e1d6a`  
+		Last Modified: Wed, 29 Jan 2025 01:29:10 GMT  
+		Size: 2.9 MB (2949884 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a37c05297240d4c7a59fb22c60ae3770e17b759220d9ee0d03bd8e158dd2a84d`  
-		Last Modified: Thu, 19 Dec 2024 23:23:59 GMT  
+	-	`sha256:096ea87f52b29edbf086bdacc5f7dd15d25a38f68b9c61fb4f703dac61c143e6`  
+		Last Modified: Wed, 29 Jan 2025 01:29:10 GMT  
 		Size: 11.4 KB (11401 bytes)  
 		MIME: application/vnd.in-toto+json
 
