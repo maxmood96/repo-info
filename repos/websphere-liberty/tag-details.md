@@ -14,6 +14,12 @@
 -	[`websphere-liberty:24.0.0.9-kernel-java11-openj9`](#websphere-liberty24009-kernel-java11-openj9)
 -	[`websphere-liberty:24.0.0.9-kernel-java17-openj9`](#websphere-liberty24009-kernel-java17-openj9)
 -	[`websphere-liberty:24.0.0.9-kernel-java8-ibmjava`](#websphere-liberty24009-kernel-java8-ibmjava)
+-	[`websphere-liberty:25.0.0.1-full-java11-openj9`](#websphere-liberty25001-full-java11-openj9)
+-	[`websphere-liberty:25.0.0.1-full-java17-openj9`](#websphere-liberty25001-full-java17-openj9)
+-	[`websphere-liberty:25.0.0.1-full-java8-ibmjava`](#websphere-liberty25001-full-java8-ibmjava)
+-	[`websphere-liberty:25.0.0.1-kernel-java11-openj9`](#websphere-liberty25001-kernel-java11-openj9)
+-	[`websphere-liberty:25.0.0.1-kernel-java17-openj9`](#websphere-liberty25001-kernel-java17-openj9)
+-	[`websphere-liberty:25.0.0.1-kernel-java8-ibmjava`](#websphere-liberty25001-kernel-java8-ibmjava)
 -	[`websphere-liberty:full`](#websphere-libertyfull)
 -	[`websphere-liberty:full-java11-openj9`](#websphere-libertyfull-java11-openj9)
 -	[`websphere-liberty:full-java17-openj9`](#websphere-libertyfull-java17-openj9)
@@ -8175,6 +8181,30 @@ $ docker pull websphere-liberty@sha256:e68f62a26e6b9c7f12286c21b8757b8c144054d28
 		Last Modified: Tue, 10 Dec 2024 05:49:17 GMT  
 		Size: 37.5 KB (37487 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `websphere-liberty:25.0.0.1-full-java11-openj9`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:25.0.0.1-full-java17-openj9`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:25.0.0.1-full-java8-ibmjava`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:25.0.0.1-kernel-java11-openj9`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:25.0.0.1-kernel-java17-openj9`
+
+**does not exist** (yet?)
+
+## `websphere-liberty:25.0.0.1-kernel-java8-ibmjava`
+
+**does not exist** (yet?)
 
 ## `websphere-liberty:full`
 
