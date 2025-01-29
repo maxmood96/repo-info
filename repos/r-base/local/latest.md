@@ -1379,21 +1379,13 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.21.3-3
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3-3.dsc' krb5_1.21.3-3.dsc 3381 SHA256:561af05f1e9c42ca9eab01eaa7ea6cd903494bb5b462917c8fff7d86bbedc872
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz' krb5_1.21.3.orig.tar.gz 9136145 SHA256:b7a4cd5ead67fb08b980b21abd150ff7217e85ea320c9ed0c6dadd304840ad35
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz.asc' krb5_1.21.3.orig.tar.gz.asc 833 SHA256:85047c935fe949ef2e275885451b168557b923dd13a5aab0ef8fe6acd27b94d7
-'http://deb.debian.org/debian/pool/main/k/krb5/krb5_1.21.3-3.debian.tar.xz' krb5_1.21.3-3.debian.tar.xz 103380 SHA256:c7b7bceb2f1bd782d0118904bded8ddaba1aaa54f1b3b2fc0dc3ecaeac450b5b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/krb5/1.21.3-3/
 
-- https://sources.debian.net/src/krb5/1.21.3-3/ (for browsing the source)
-- https://sources.debian.net/src/krb5/1.21.3-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/krb5/1.21.3-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lapack=3.12.0-4`
 
@@ -1768,14 +1760,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.45-1
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.45-1.dsc' libpng1.6_1.6.45-1.dsc 2254 SHA256:9a915d890f7f113d770785b2859f345d787da86295f5497bf3c473faf7444f88
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.45.orig.tar.gz' libpng1.6_1.6.45.orig.tar.gz 1568446 SHA256:7ff6898520645716ddc3d8381d97b6e02937b03da92e6fd0d7cf9d7d2b0da780
-'http://http.debian.net/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.45-1.debian.tar.xz' libpng1.6_1.6.45-1.debian.tar.xz 31708 SHA256:1fe2ec4f327dd9e6356d98730ea5707553153c788cf6858e03e166ca1d626af0
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libpng1.6/1.6.45-1/
+
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -1856,11 +1847,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libsemanage=3.7-2
-'http://http.debian.net/debian/pool/main/libs/libsemanage/libsemanage_3.7-2.dsc' libsemanage_3.7-2.dsc 2965 SHA256:77fd2cef54cbd51c3d76a622a0aefe4488ae9403db32c5c92c801bce181690ae
-'http://http.debian.net/debian/pool/main/libs/libsemanage/libsemanage_3.7.orig.tar.gz' libsemanage_3.7.orig.tar.gz 182896 SHA256:e166cae29a417dab008db9ca0874023f353a3017b07693a036ed97487eda35b1
-'http://http.debian.net/debian/pool/main/libs/libsemanage/libsemanage_3.7.orig.tar.gz.asc' libsemanage_3.7.orig.tar.gz.asc 833 SHA256:02981e0224fdf0141fc29b950f7e5aab1653d5fee6dcbf6d6a5ff976e5720cc8
-'http://http.debian.net/debian/pool/main/libs/libsemanage/libsemanage_3.7-2.debian.tar.xz' libsemanage_3.7-2.debian.tar.xz 35172 SHA256:eeb1ca76456ea4caf7850699d5999b7a9f5b49ebaa6a5a6929e84848305a297b
+'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.7-2.dsc' libsemanage_3.7-2.dsc 2965 SHA256:77fd2cef54cbd51c3d76a622a0aefe4488ae9403db32c5c92c801bce181690ae
+'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.7.orig.tar.gz' libsemanage_3.7.orig.tar.gz 182896 SHA256:e166cae29a417dab008db9ca0874023f353a3017b07693a036ed97487eda35b1
+'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.7.orig.tar.gz.asc' libsemanage_3.7.orig.tar.gz.asc 833 SHA256:02981e0224fdf0141fc29b950f7e5aab1653d5fee6dcbf6d6a5ff976e5720cc8
+'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.7-2.debian.tar.xz' libsemanage_3.7-2.debian.tar.xz 35172 SHA256:eeb1ca76456ea4caf7850699d5999b7a9f5b49ebaa6a5a6929e84848305a297b
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libsemanage/3.7-2/ (for browsing the source)
+- https://sources.debian.net/src/libsemanage/3.7-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libsemanage/3.7-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsepol=3.7-1`
 
@@ -2551,10 +2548,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris nlme=3.1.166-1
-'http://http.debian.net/debian/pool/main/n/nlme/nlme_3.1.166-1.dsc' nlme_3.1.166-1.dsc 1840 SHA256:d2bb805e8e2ba75d986cbc6fb957d7ef45102fda36f5c1c34f7f1832fde634ae
-'http://http.debian.net/debian/pool/main/n/nlme/nlme_3.1.166.orig.tar.gz' nlme_3.1.166.orig.tar.gz 847668 SHA256:237a14ee8d78755b11a7efe234b95be40b46fbdd1b4aaf463f6d532be1909762
-'http://http.debian.net/debian/pool/main/n/nlme/nlme_3.1.166-1.debian.tar.xz' nlme_3.1.166-1.debian.tar.xz 7356 SHA256:323169f8f85f6bf81d11726bd56f867cee4adc422a607b53f4093c2bfe3be035
+'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.166-1.dsc' nlme_3.1.166-1.dsc 1840 SHA256:d2bb805e8e2ba75d986cbc6fb957d7ef45102fda36f5c1c34f7f1832fde634ae
+'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.166.orig.tar.gz' nlme_3.1.166.orig.tar.gz 847668 SHA256:237a14ee8d78755b11a7efe234b95be40b46fbdd1b4aaf463f6d532be1909762
+'http://deb.debian.org/debian/pool/main/n/nlme/nlme_3.1.166-1.debian.tar.xz' nlme_3.1.166-1.debian.tar.xz 7356 SHA256:323169f8f85f6bf81d11726bd56f867cee4adc422a607b53f4093c2bfe3be035
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/nlme/3.1.166-1/ (for browsing the source)
+- https://sources.debian.net/src/nlme/3.1.166-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nlme/3.1.166-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openblas=0.3.28+ds-4`
 
@@ -2901,10 +2904,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris procps=2:4.0.4-6
-'http://http.debian.net/debian/pool/main/p/procps/procps_4.0.4-6.dsc' procps_4.0.4-6.dsc 2124 SHA256:dd3c79032588cac32413c5d1d1dd164a79eacc14af57636bacd6c62c4c1b12d1
-'http://http.debian.net/debian/pool/main/p/procps/procps_4.0.4.orig.tar.xz' procps_4.0.4.orig.tar.xz 1401540 SHA256:22870d6feb2478adb617ce4f09a787addaf2d260c5a8aa7b17d889a962c5e42e
-'http://http.debian.net/debian/pool/main/p/procps/procps_4.0.4-6.debian.tar.xz' procps_4.0.4-6.debian.tar.xz 29412 SHA256:8c7106ed54c4c4151e53e230b6abc605b880307c349e94dde186d131c863811d
+'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4-6.dsc' procps_4.0.4-6.dsc 2124 SHA256:dd3c79032588cac32413c5d1d1dd164a79eacc14af57636bacd6c62c4c1b12d1
+'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4.orig.tar.xz' procps_4.0.4.orig.tar.xz 1401540 SHA256:22870d6feb2478adb617ce4f09a787addaf2d260c5a8aa7b17d889a962c5e42e
+'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4-6.debian.tar.xz' procps_4.0.4-6.debian.tar.xz 29412 SHA256:8c7106ed54c4c4151e53e230b6abc605b880307c349e94dde186d131c863811d
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/procps/2:4.0.4-6/ (for browsing the source)
+- https://sources.debian.net/src/procps/2:4.0.4-6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/procps/2:4.0.4-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `r-base=4.4.2-1`
 
@@ -3652,19 +3661,13 @@ Licenses: (parsed from: `/usr/share/doc/x11-common/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xorg=1:7.7+23.2
-'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7%2b23.2.dsc' xorg_7.7+23.2.dsc 1662 SHA256:84f7783614c04a455ebdd342c37d5df18bda0bcd9f821a661a40811acc411d50
-'http://deb.debian.org/debian/pool/main/x/xorg/xorg_7.7%2b23.2.tar.gz' xorg_7.7+23.2.tar.gz 292797 SHA256:cd924c9c0ceda151cfaaed0ef5564ca7ec234cdb4fa3f09599f916db05827275
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/xorg/1:7.7+23.2/
 
-- https://sources.debian.net/src/xorg/1:7.7+23.2/ (for browsing the source)
-- https://sources.debian.net/src/xorg/1:7.7+23.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xorg/1:7.7+23.2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `xxhash=0.8.2-2`
 
