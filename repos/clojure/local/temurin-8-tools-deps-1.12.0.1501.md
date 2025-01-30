@@ -1,21 +1,21 @@
-# `clojure:temurin-21-jammy`
+# `clojure:temurin-8-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:775c4419520e51e70354851c760e9feaf9a2e72e2b23165ae8703fc3d458fcb3`
+- Image ID: `sha256:36dd8504a916329a54aadc8ee1ce1afae65a93e8ed1fffebd67b9fc8880b70c1`
 - Created: `2025-01-06T23:07:46Z`
-- Virtual Size: ~ 560.37 Mb  
+- Virtual Size: ~ 391.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["entrypoint"]`
-- Command: `["-M","--repl"]`
+- Entrypoint: `["/__cacert_entrypoint.sh"]`
+- Command: `["clj"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.5+11`
+  - `JAVA_VERSION=jdk8u432-b06`
   - `CLOJURE_VERSION=1.12.0.1495`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -183,32 +183,6 @@ $ apt-get source -qq --print-uris bash=5.1-6ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.1.dsc' bash_5.1-6ubuntu1.1.dsc 2409 SHA512:8adffecbfd9ffe55500fb70616e4b441bccb95fda13762dc2cccc3605a25f34851b142d2c633f17a5a7e426f0c5010ad76b0a70d375f923e25f6c9f4c893c8e4
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1.orig.tar.xz' bash_5.1.orig.tar.xz 5802740 SHA512:95d3acc542231cb893e1347c7d9dd66687f68cd347a0e9e126fde2d14e68c5b5530d1a5866eafa781e88aa013fcf72b4ad56d2e484c2ac7a69bd90bb149a9b86
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.1.debian.tar.xz' bash_5.1-6ubuntu1.1.debian.tar.xz 99944 SHA512:d7fb6110df70232bd3280c1140a812a1903968792f6608481c184bd28760d03323ada75ed3ca4da4eb6c56a84781d6e2f441e0ee83dd9364a9e37fd0fa2211e9
-```
-
-### `dpkg` source package: `binutils=2.38-4ubuntu2.6`
-
-Binary Packages:
-
-- `binutils=2.38-4ubuntu2.6`
-- `binutils-common:amd64=2.38-4ubuntu2.6`
-- `binutils-x86-64-linux-gnu=2.38-4ubuntu2.6`
-- `libbinutils:amd64=2.38-4ubuntu2.6`
-- `libctf-nobfd0:amd64=2.38-4ubuntu2.6`
-- `libctf0:amd64=2.38-4ubuntu2.6`
-
-Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`)
-
-- `GFDL`
-- `GPL`
-- `LGPL`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris binutils=2.38-4ubuntu2.6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.6.dsc' binutils_2.38-4ubuntu2.6.dsc 8553 SHA512:cae942aebf4eb0391feb581df7c4a4806975c7236049c135746a65f6a78076354797891d948f77d2815acba0437aad801c71597e236f8d42b0c25b68f75b2839
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA512:8bf0b0d193c9c010e0518ee2b2e5a830898af206510992483b427477ed178396cd210235e85fd7bd99a96fc6d5eedbeccbd48317a10f752b7336ada8b2bb826d
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.6.debian.tar.xz' binutils_2.38-4ubuntu2.6.debian.tar.xz 300788 SHA512:6106e9d7056ae9468677545d11118041028286b1963d06d174f3d673f3801fefaf6863f1912220ec7619952ff745322b5d567e323533a11e5f226e2cc28e9662
 ```
 
 ### `dpkg` source package: `brotli=1.0.9-2build6`
@@ -2534,15 +2508,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2024a-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.22.04.1.dsc' tzdata_2024a-0ubuntu0.22.04.1.dsc 2541 SHA512:c0cda33e23d340414e2cd079ec35caa8986601f9f97bcb055ccfaee154fb8667588a18d6e21f1719090799aa034960548df63a046669287e15af281aaba2b151
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA512:1f09f1b2327cc9e1afc7e9045e83ee3377918dafe1bee2f282b6991828d03b3c70a4d3a17f9207dfb1361bb25bc214a8922a756e84fa114e9ba476226db57236
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA512:a06ddc95002f2dcd3c071d020a74bc98aae2cbf56a502718f9bc08e90e0075b17aaaa653ceecd49a1133cdadfc43134365043f827b19c7dad68050dbda6ba77e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.22.04.1.debian.tar.xz' tzdata_2024a-0ubuntu0.22.04.1.debian.tar.xz 178960 SHA512:98899e7a78ddfce0f3af0c1239422b9547b3c33ca08ab5e82266e51cc69e1169e012f3ad78b1fc84ca491847ea2bcda25619f7b06df410d0f02c9e7ef746a2ec
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
 
