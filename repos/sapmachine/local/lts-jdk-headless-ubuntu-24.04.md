@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:11e7de54432d48f8fa084df34c500718749fdf99533c369dc44f3238f13efece`
-- Created: `2024-10-16T12:49:09Z`
-- Virtual Size: ~ 448.30 Mb  
+- Image ID: `sha256:9c964bd412a866dac18788896c5c93c45976232de5a614a81656b13dfd65ff6c`
+- Created: `2025-01-27T13:39:13Z`
+- Virtual Size: ~ 448.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:44e8f688b5f0d4a745305d4ddbae811ac84cc27c8b9c1b0c1c955469f7a24db7`
-- Created: `2024-10-16T12:49:19Z`
-- Virtual Size: ~ 449.06 Mb  
+- Image ID: `sha256:c4deebee934247dbc85496a3882603b4e4af219f3d0c786852f2a00135d125bf`
+- Created: `2025-01-27T13:39:22Z`
+- Virtual Size: ~ 449.23 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -399,19 +399,24 @@ $ apt-get source -qq --print-uris e2fsprogs=1.45.5-2ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/e/e2fsprogs/e2fsprogs_1.45.5-2ubuntu1.2.debian.tar.xz' e2fsprogs_1.45.5-2ubuntu1.2.debian.tar.xz 82932 SHA512:e038c9aa3af0593a6240840145b53742dbb2718dd58975e507b625eef3e341e5989ae0c7f02805a30ad213066af1cbfe8138f6baf500eedf66301dcb0966cb29
 ```
 
-### `dpkg` source package: `expat=2.2.9-1ubuntu0.7`
+### `dpkg` source package: `expat=2.2.9-1ubuntu0.8`
 
 Binary Packages:
 
-- `libexpat1:amd64=2.2.9-1ubuntu0.7`
+- `libexpat1:amd64=2.2.9-1ubuntu0.8`
 
 Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris expat=2.2.9-1ubuntu0.8
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1ubuntu0.8.dsc' expat_2.2.9-1ubuntu0.8.dsc 2109 SHA512:fa4d85bed1c8967c9c8889a560a031d45c1d5ef6bf8abee5c57944e9748ef8c721394ab4f031d2fa011b57eabed0deb3513b509486cfa14396f918ba2764e788
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9.orig.tar.gz' expat_2.2.9.orig.tar.gz 8273174 SHA512:e274fa7f30630450cb3ca681b266d765dbb7f5d00d1275ff9d9b2e2f6e1095893b8af4e3f4172ae6297c7a8a831a0a6becd484fe4bcdca09c37922f630780ef0
+'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.2.9-1ubuntu0.8.debian.tar.xz' expat_2.2.9-1ubuntu0.8.debian.tar.xz 30356 SHA512:e919ddd7eac8c2a9b7b41d835106e80aa5dafca9fc89f9f8349f5f2c33ee8d5897e99dd6cdfa0216ecc62676310a98a20ee2b3874585fe5628fb557fe55f3155
+```
 
 ### `dpkg` source package: `findutils=4.7.0-1ubuntu1`
 
@@ -1346,11 +1351,11 @@ $ apt-get source -qq --print-uris procps=2:3.3.16-1ubuntu2.4
 'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_3.3.16-1ubuntu2.4.debian.tar.xz' procps_3.3.16-1ubuntu2.4.debian.tar.xz 35232 SHA512:cb4310496951e74a13ec439dbff8c655d0fdcd82bb96d58c0954002d24ed474bf028f4ff6606274ab301de2184b441517809019776b497415487020ebaa05d0f
 ```
 
-### `dpkg` source package: `sapmachine-23-jdk-headless=23.0.1`
+### `dpkg` source package: `sapmachine-23-jdk-headless=23.0.2`
 
 Binary Packages:
 
-- `sapmachine-23-jdk-headless=23.0.1`
+- `sapmachine-23-jdk-headless=23.0.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
