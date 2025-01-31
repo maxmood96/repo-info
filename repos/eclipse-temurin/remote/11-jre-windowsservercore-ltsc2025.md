@@ -1,7 +1,7 @@
 ## `eclipse-temurin:11-jre-windowsservercore-ltsc2025`
 
 ```console
-$ docker pull eclipse-temurin@sha256:4138bf0aca4439b3101acbfc1cdb69311ff6c8a5369370970424c4e5eedb8b33
+$ docker pull eclipse-temurin@sha256:186781b0b7c6a3bb4bfc0ee25d8c6ef15b86077a2455781c2e7af0ba0485af0f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.list.v2+json`
@@ -11,14 +11,14 @@ $ docker pull eclipse-temurin@sha256:4138bf0aca4439b3101acbfc1cdb69311ff6c8a5369
 ### `eclipse-temurin:11-jre-windowsservercore-ltsc2025` - windows version 10.0.26100.2894; amd64
 
 ```console
-$ docker pull eclipse-temurin@sha256:13e08ed7323d6f02694d5faa64a10bdf8c10bde5d9633008a6abe4fadd56468f
+$ docker pull eclipse-temurin@sha256:234c6c1c7d5a67a753430b4d6cba10d87fb8bf13f542a3119b805ce38c416d03
 ```
 
 -	Docker Version: 26.1.3
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 GB (2576503808 bytes)**  
+-	Total Size: **2.6 GB (2575679696 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:91ee9dcc646ac24037ac07b1ce878a78347d29b0765774074aab347c24c825ab`
+-	Image ID: `sha256:8533262d566b5dd2959752aa46d0006d23a3ea8e63d3059b5ffd2f71549cc1fd`
 -	Default Command: `["c:\\windows\\system32\\cmd.exe"]`
 -	`SHELL`: `["powershell","-Command","$ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';"]`
 
@@ -27,13 +27,13 @@ $ docker pull eclipse-temurin@sha256:13e08ed7323d6f02694d5faa64a10bdf8c10bde5d96
 RUN Apply image 10.0.26100.2605
 # Mon, 13 Jan 2025 03:08:16 GMT
 RUN Install update 10.0.26100.2894
-# Wed, 22 Jan 2025 18:30:40 GMT
+# Fri, 31 Jan 2025 02:16:45 GMT
 SHELL [powershell -Command $ErrorActionPreference = 'Stop'; $ProgressPreference = 'SilentlyContinue';]
-# Wed, 22 Jan 2025 18:30:41 GMT
-ENV JAVA_VERSION=jdk-11.0.25+9
-# Wed, 22 Jan 2025 18:30:55 GMT
-RUN Write-Host ('Downloading https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jre_x64_windows_hotspot_11.0.25_9.msi ...');     curl.exe -LfsSo openjdk.msi https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.25%2B9/OpenJDK11U-jre_x64_windows_hotspot_11.0.25_9.msi ;     Write-Host ('Verifying sha256 (577f448ffe2737633bdc2a02e5c53ecccaf3317274b7013b6eb25e9de1934a79) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne '577f448ffe2737633bdc2a02e5c53ecccaf3317274b7013b6eb25e9de1934a79') {         Write-Host 'FAILED!';         exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     $proc = Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome', 'INSTALLDIR=C:\openjdk-11' -Wait -Passthru;     $proc.WaitForExit() ;     if ($proc.ExitCode -ne 0) {         Write-Host 'FAILED installing MSI!' ;         exit 1;     };         Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
-# Wed, 22 Jan 2025 18:31:02 GMT
+# Fri, 31 Jan 2025 02:16:46 GMT
+ENV JAVA_VERSION=jdk-11.0.26+4
+# Fri, 31 Jan 2025 02:17:01 GMT
+RUN Write-Host ('Downloading https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jre_x64_windows_hotspot_11.0.26_4.msi ...');     curl.exe -LfsSo openjdk.msi https://github.com/adoptium/temurin11-binaries/releases/download/jdk-11.0.26%2B4/OpenJDK11U-jre_x64_windows_hotspot_11.0.26_4.msi ;     Write-Host ('Verifying sha256 (5e1e515f2625ab6c4bdc95a6a0f0928b3ace6034a60d811da3d701ebfaeaccf1) ...');     if ((Get-FileHash openjdk.msi -Algorithm sha256).Hash -ne '5e1e515f2625ab6c4bdc95a6a0f0928b3ace6034a60d811da3d701ebfaeaccf1') {         Write-Host 'FAILED!';         exit 1;     };         New-Item -ItemType Directory -Path C:\temp | Out-Null;         Write-Host 'Installing using MSI ...';     $proc = Start-Process -FilePath "msiexec.exe" -ArgumentList '/i', 'openjdk.msi', '/L*V', 'C:\temp\OpenJDK.log',     '/quiet', 'ADDLOCAL=FeatureEnvironment,FeatureJarFileRunWith,FeatureJavaHome', 'INSTALLDIR=C:\openjdk-11' -Wait -Passthru;     $proc.WaitForExit() ;     if ($proc.ExitCode -ne 0) {         Write-Host 'FAILED installing MSI!' ;         exit 1;     };         Remove-Item -Path C:\temp -Recurse | Out-Null;     Write-Host 'Removing openjdk.msi ...';     Remove-Item openjdk.msi -Force
+# Fri, 31 Jan 2025 02:17:09 GMT
 RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --version;         Write-Host 'Complete.'
 ```
 
@@ -46,19 +46,19 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'java --version'; java --
 		Last Modified: Tue, 14 Jan 2025 18:53:06 GMT  
 		Size: 285.0 MB (284970427 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:e07ef743366bf318ecaeee3f9413db7fe3dc2cdba775a47dd4b8f20471c531b6`  
-		Last Modified: Wed, 22 Jan 2025 18:31:04 GMT  
-		Size: 1.3 KB (1317 bytes)  
+	-	`sha256:83aab61b9dc99dc2260753e3f19dd8bb3c1098062e6b0c398a8c67cd04d37566`  
+		Last Modified: Fri, 31 Jan 2025 02:17:13 GMT  
+		Size: 1.3 KB (1318 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:f8720d874cbed13a5a387875fa0e6b3d650256e977d0a23597cdc9a68446b70e`  
-		Last Modified: Wed, 22 Jan 2025 18:31:04 GMT  
-		Size: 1.3 KB (1295 bytes)  
+	-	`sha256:550bb9522c20badd8ca2ad2cfe5356617b07def897ad884de65f564706bc5307`  
+		Last Modified: Fri, 31 Jan 2025 02:17:13 GMT  
+		Size: 1.3 KB (1290 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b766ad6436bbc457d114465f5a78574a2936897d769f40559d51926916e9492d`  
-		Last Modified: Wed, 22 Jan 2025 18:31:10 GMT  
-		Size: 75.8 MB (75821640 bytes)  
+	-	`sha256:81a99a7ce0a24e05733abb76507834224553ab7618d7b605f985712c0d3f47ca`  
+		Last Modified: Fri, 31 Jan 2025 02:17:20 GMT  
+		Size: 75.0 MB (75006059 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
-	-	`sha256:b75112ed70bb2c864b3323b824bdcfc2abbe33e5a31cc6605feebc46ada29704`  
-		Last Modified: Wed, 22 Jan 2025 18:31:04 GMT  
-		Size: 402.0 KB (402019 bytes)  
+	-	`sha256:340c18e552fac0c15a157965c7379d7ae9dc077dd49ec5394718edab4206fc61`  
+		Last Modified: Fri, 31 Jan 2025 02:17:14 GMT  
+		Size: 393.5 KB (393492 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
