@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:46bee3294768e914797bb819c6e37b1aecf0a7f9e5e3e9806c9f70c1c1606bfb`
+- Image ID: `sha256:8f7edb90b6172a1f149d41e97aa157631898883a217c0258c2f163904411e6fe`
 - Created: `2024-10-15T08:31:30Z`
 - Virtual Size: ~ 321.85 Mb  
   (total size of all layers on-disk)
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.13+11`
+  - `JAVA_VERSION=jdk-17.0.14+7`
   - `BONITA_VERSION=10.2.0`
   - `BRANDING_VERSION=2024.3-u0`
   - `BONITA_SHA256=75ad51a50cba484d3f74637584bf5144bf0cf28c06ae7a5efe1a804cdc996d86`
