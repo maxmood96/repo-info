@@ -1992,20 +1992,13 @@ Licenses: (parsed from: `/usr/share/doc/libldap-2.5-0/copyright`)
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.5.19+dfsg-1
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.19%2bdfsg-1.dsc' openldap_2.5.19+dfsg-1.dsc 3312 SHA256:c2819be9061fe0752ef8bd1e1df4c1fbcc494fce95d504c6614f6a8e64ce5d10
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.19%2bdfsg.orig.tar.xz' openldap_2.5.19+dfsg.orig.tar.xz 3718696 SHA256:8a81909c9a816f8a0eb374d290a540b82e9331e4a7b3e4cf7de75bc6437a723c
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.19%2bdfsg-1.debian.tar.xz' openldap_2.5.19+dfsg-1.debian.tar.xz 170420 SHA256:610de35516d759e47ac81b6158b09b52b4f952bb564cba1fb9eec6bb50b1d10f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.5.19+dfsg-1/
 
-- https://sources.debian.net/src/openldap/2.5.19+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.5.19+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.5.19+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.3.2-2`
 

@@ -3345,20 +3345,13 @@ Licenses: (parsed from: `/usr/share/doc/libltdl-dev/copyright`, `/usr/share/doc/
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtool=2.5.4-2
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.5.4-2.dsc' libtool_2.5.4-2.dsc 2255 SHA256:e329e6b85decee3b5dcad3501600524259b67facb7385dc684a3a59d0c3fd2d4
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.5.4.orig.tar.xz' libtool_2.5.4.orig.tar.xz 1069572 SHA256:d9189031edeaa6aa74695b2aeb80a8c26df50b29d8b72c991667e01adecea42c
-'http://deb.debian.org/debian/pool/main/libt/libtool/libtool_2.5.4-2.debian.tar.xz' libtool_2.5.4-2.debian.tar.xz 37368 SHA256:73574a3ed3f5d2a2242f148372636dd8bf1cd3b346ee0ef89d54432a7ac8e117
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtool/2.5.4-2/
 
-- https://sources.debian.net/src/libtool/2.5.4-2/ (for browsing the source)
-- https://sources.debian.net/src/libtool/2.5.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtool/2.5.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libunistring=1.3-1`
 
@@ -4601,21 +4594,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.5.3-7
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.3-7.dsc' pam_1.5.3-7.dsc 2253 SHA256:05666dde2c8057ff436975a5da7dad91210ab5a5dfdaea43976ac4a6bc75b1e7
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.3.orig.tar.xz' pam_1.5.3.orig.tar.xz 1020076 SHA256:7ac4b50feee004a9fa88f1dfd2d2fa738a82896763050cd773b3c54b0a818283
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.3.orig.tar.xz.asc' pam_1.5.3.orig.tar.xz.asc 801 SHA256:ce5690766060d60a8f0fba447f480d8d49988821740698cbdf2ecfd84dc8895c
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.5.3-7.debian.tar.xz' pam_1.5.3-7.debian.tar.xz 139288 SHA256:494106a8f40a5436b82f8955e04a83598439b48636f16a30d0b6a32d86d0fc61
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pam/1.5.3-7/
 
-- https://sources.debian.net/src/pam/1.5.3-7/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.5.3-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.5.3-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pango1.0=1.55.0+ds-3`
 

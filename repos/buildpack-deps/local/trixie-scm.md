@@ -918,20 +918,13 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.45.2-1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.45.2-1.dsc' git_2.45.2-1.dsc 2825 SHA256:4b40fdfeb10d0b9f156848667055695febc428f0698e7b2bb1655192838faf6b
-'http://deb.debian.org/debian/pool/main/g/git/git_2.45.2.orig.tar.xz' git_2.45.2.orig.tar.xz 7487680 SHA256:51bfe87eb1c02fed1484051875365eeab229831d30d0cec5d89a14f9e40e9adb
-'http://deb.debian.org/debian/pool/main/g/git/git_2.45.2-1.debian.tar.xz' git_2.45.2-1.debian.tar.xz 777720 SHA256:cb8a380dfc4add25674e83357f0cb68bc1bf8db15ff050ae1766109c53d59f0a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/git/1:2.45.2-1/
 
-- https://sources.debian.net/src/git/1:2.45.2-1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.45.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.45.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.40-5`
 
@@ -2368,20 +2361,13 @@ Licenses: (parsed from: `/usr/share/doc/libldap-2.5-0/copyright`)
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.5.19+dfsg-1
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.19%2bdfsg-1.dsc' openldap_2.5.19+dfsg-1.dsc 3312 SHA256:c2819be9061fe0752ef8bd1e1df4c1fbcc494fce95d504c6614f6a8e64ce5d10
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.19%2bdfsg.orig.tar.xz' openldap_2.5.19+dfsg.orig.tar.xz 3718696 SHA256:8a81909c9a816f8a0eb374d290a540b82e9331e4a7b3e4cf7de75bc6437a723c
-'http://deb.debian.org/debian/pool/main/o/openldap/openldap_2.5.19%2bdfsg-1.debian.tar.xz' openldap_2.5.19+dfsg-1.debian.tar.xz 170420 SHA256:610de35516d759e47ac81b6158b09b52b4f952bb564cba1fb9eec6bb50b1d10f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openldap/2.5.19+dfsg-1/
 
-- https://sources.debian.net/src/openldap/2.5.19+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/openldap/2.5.19+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openldap/2.5.19+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssh=1:9.9p1-3`
 
@@ -2650,20 +2636,13 @@ Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:4.0.4-6
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4-6.dsc' procps_4.0.4-6.dsc 2124 SHA256:dd3c79032588cac32413c5d1d1dd164a79eacc14af57636bacd6c62c4c1b12d1
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4.orig.tar.xz' procps_4.0.4.orig.tar.xz 1401540 SHA256:22870d6feb2478adb617ce4f09a787addaf2d260c5a8aa7b17d889a962c5e42e
-'http://deb.debian.org/debian/pool/main/p/procps/procps_4.0.4-6.debian.tar.xz' procps_4.0.4-6.debian.tar.xz 29412 SHA256:8c7106ed54c4c4151e53e230b6abc605b880307c349e94dde186d131c863811d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/procps/2:4.0.4-6/
 
-- https://sources.debian.net/src/procps/2:4.0.4-6/ (for browsing the source)
-- https://sources.debian.net/src/procps/2:4.0.4-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/2:4.0.4-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3-defaults=3.12.8-1`
 
