@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:eee14c3e547d0a79c1a3c02df537435abd0a22aff887c5d39774739593cc35d5`
+- Image ID: `sha256:9e1db8dd104d2cf8cb9a4963e798e236566413a38cd949073b36f4471425116e`
 - Created: `2024-10-04T12:48:42Z`
 - Virtual Size: ~ 469.12 Mb  
   (total size of all layers on-disk)
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.25+9`
+  - `JAVA_VERSION=jdk-11.0.26+4`
   - `LIGHTSTREAMER_VERSION=7.4.5`
   - `LIGHTSTREAMER_URL_DOWNLOAD=https://lightstreamer.com/distros/ls-server/7.4.5/Lightstreamer-7.4.5.tar.gz`
 - Labels:
