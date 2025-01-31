@@ -11806,131 +11806,291 @@ CMD ["jshell"]
 
 ## `eclipse-temurin:11.0.26_4-jdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jdk-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jdk-alpine-3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jdk-alpine-3.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jdk-focal`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jdk-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jdk-nanoserver`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jdk-nanoserver-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jdk-nanoserver-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jdk-nanoserver-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jdk-noble`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jdk-ubi9-minimal`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jdk-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jdk-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jdk-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jdk-windowsservercore-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jre`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jre-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jre-alpine-3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jre-alpine-3.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jre-focal`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jre-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jre-nanoserver`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jre-nanoserver-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jre-nanoserver-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jre-nanoserver-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jre-noble`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jre-ubi9-minimal`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jre-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jre-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jre-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:11.0.26_4-jre-windowsservercore-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17`
 
@@ -23919,131 +24079,291 @@ CMD ["jshell"]
 
 ## `eclipse-temurin:17.0.14_7-jdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jdk-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jdk-alpine-3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jdk-alpine-3.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jdk-focal`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jdk-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jdk-nanoserver`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jdk-nanoserver-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jdk-nanoserver-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jdk-nanoserver-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jdk-noble`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jdk-ubi9-minimal`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jdk-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jdk-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jdk-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jdk-windowsservercore-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jre`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jre-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jre-alpine-3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jre-alpine-3.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jre-focal`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jre-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jre-nanoserver`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jre-nanoserver-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jre-nanoserver-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jre-nanoserver-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jre-noble`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jre-ubi9-minimal`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jre-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jre-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jre-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:17.0.14_7-jre-windowsservercore-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21`
 
@@ -34508,123 +34828,273 @@ CMD ["jshell"]
 
 ## `eclipse-temurin:21.0.6_7-jdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jdk-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jdk-alpine-3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jdk-alpine-3.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jdk-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jdk-nanoserver`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jdk-nanoserver-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jdk-nanoserver-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jdk-nanoserver-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jdk-noble`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jdk-ubi9-minimal`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jdk-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jdk-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jdk-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jdk-windowsservercore-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jre`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jre-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jre-alpine-3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jre-alpine-3.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jre-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jre-nanoserver`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jre-nanoserver-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jre-nanoserver-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jre-nanoserver-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jre-noble`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jre-ubi9-minimal`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jre-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jre-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jre-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:21.0.6_7-jre-windowsservercore-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23`
 
@@ -43922,115 +44392,255 @@ CMD ["jshell"]
 
 ## `eclipse-temurin:23.0.2_7-jdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jdk-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jdk-alpine-3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jdk-alpine-3.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jdk-nanoserver`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jdk-nanoserver-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jdk-nanoserver-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jdk-nanoserver-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jdk-noble`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jdk-ubi9-minimal`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jdk-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jdk-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jdk-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jdk-windowsservercore-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jre`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jre-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jre-alpine-3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jre-alpine-3.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jre-nanoserver`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jre-nanoserver-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jre-nanoserver-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jre-nanoserver-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jre-noble`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jre-ubi9-minimal`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jre-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jre-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jre-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:23.0.2_7-jre-windowsservercore-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8`
 
@@ -53628,131 +54238,291 @@ RUN Write-Host 'Verifying install ...';     Write-Host 'javac -version'; javac -
 
 ## `eclipse-temurin:8u442-b06-jdk`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jdk-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jdk-alpine-3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jdk-alpine-3.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jdk-focal`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jdk-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jdk-nanoserver`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jdk-nanoserver-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jdk-nanoserver-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jdk-nanoserver-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jdk-noble`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jdk-ubi9-minimal`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jdk-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jdk-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jdk-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jdk-windowsservercore-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jre`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jre-alpine`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jre-alpine-3.20`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jre-alpine-3.21`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jre-focal`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jre-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jre-nanoserver`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jre-nanoserver-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jre-nanoserver-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jre-nanoserver-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jre-noble`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jre-ubi9-minimal`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jre-windowsservercore`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jre-windowsservercore-1809`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jre-windowsservercore-ltsc2022`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:8u442-b06-jre-windowsservercore-ltsc2025`
 
-**does not exist** (yet?)
+```console
+$ docker pull eclipse-temurin@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `eclipse-temurin:latest`
 
