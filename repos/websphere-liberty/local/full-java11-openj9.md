@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e10d3f43a095ae0e1ad67a0ac83a539ff1789dbbc791fb74a9e5bd9c47dbb1fb`
-- Created: `2024-12-03T20:42:13Z`
-- Virtual Size: ~ 816.03 Mb  
+- Image ID: `sha256:c33b662c640b636bf3e1c1b252ccbd832d63e70d9bc3bfe7cfd9d0921bf51e64`
+- Created: `2025-01-28T17:42:04Z`
+- Virtual Size: ~ 814.80 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/ibm/helpers/runtime/docker-server.sh"]`
@@ -23,19 +23,21 @@
   - `RANDFILE=/tmp/.rnd`
   - `OPENJ9_JAVA_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal -Dosgi.checkConfiguration=false`
 - Labels:
-  - `BuildLabel=cl241220241119-0657`
+  - `BuildLabel=cl250120250113-0302`
   - `ProductID=fbf6a96d49214c0abc6a3bc5da6e48cd`
   - `ProductName=WebSphere Application Server Liberty`
-  - `ProductVersion=24.0.0.12`
+  - `ProductVersion=25.0.0.1`
+  - `com.ibm.websphere.liberty.version=25.0.0.1`
+  - `liberty.version=25.0.0.1`
   - `org.opencontainers.image.authors=Leo Christy Jesuraj, Thomas Watson, Wendy Raschke, Michal Broz`
   - `org.opencontainers.image.description=This image contains the WebSphere Liberty runtime with IBM Semeru Runtime Open Edition OpenJDK with OpenJ9 and Ubuntu as the base OS.  For more information on this image please see https://ibm.biz/wl-app-image-template`
   - `org.opencontainers.image.documentation=https://www.ibm.com/support/knowledgecenter/SSAW57_liberty/com.ibm.websphere.wlp.nd.multiplatform.doc/ae/cwlp_about.html`
   - `org.opencontainers.image.ref.name=ubuntu`
-  - `org.opencontainers.image.revision=cl241220241119-0657`
+  - `org.opencontainers.image.revision=cl250120250113-0302`
   - `org.opencontainers.image.title=IBM WebSphere Liberty`
   - `org.opencontainers.image.url=https://github.com/WASdev/ci.docker`
   - `org.opencontainers.image.vendor=IBM`
-  - `org.opencontainers.image.version=24.0.0.12`
+  - `org.opencontainers.image.version=25.0.0.1`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -1825,15 +1827,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2024a-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.22.04.1.dsc' tzdata_2024a-0ubuntu0.22.04.1.dsc 2541 SHA512:c0cda33e23d340414e2cd079ec35caa8986601f9f97bcb055ccfaee154fb8667588a18d6e21f1719090799aa034960548df63a046669287e15af281aaba2b151
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA512:1f09f1b2327cc9e1afc7e9045e83ee3377918dafe1bee2f282b6991828d03b3c70a4d3a17f9207dfb1361bb25bc214a8922a756e84fa114e9ba476226db57236
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA512:a06ddc95002f2dcd3c071d020a74bc98aae2cbf56a502718f9bc08e90e0075b17aaaa653ceecd49a1133cdadfc43134365043f827b19c7dad68050dbda6ba77e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.22.04.1.debian.tar.xz' tzdata_2024a-0ubuntu0.22.04.1.debian.tar.xz 178960 SHA512:98899e7a78ddfce0f3af0c1239422b9547b3c33ca08ab5e82266e51cc69e1169e012f3ad78b1fc84ca491847ea2bcda25619f7b06df410d0f02c9e7ef746a2ec
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
 
