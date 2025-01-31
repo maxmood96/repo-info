@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:c266daa3f5dd639c143085c77930c987c70ee68b65a25ae636674419fff6761e`
+- Image ID: `sha256:d59e3d345d3f25f6cf7cc50c37fa37653ef688013d94e6f9314f9a19ce215d4b`
 - Created: `2025-01-27T19:22:41Z`
 - Virtual Size: ~ 545.40 Mb  
   (total size of all layers on-disk)
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-11.0.25+9`
+  - `JAVA_VERSION=jdk-11.0.26+4`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=8.12.1`
 
@@ -449,16 +449,16 @@ GPL-2.0-only
 ### `apk` package: `git-lfs`
 
 ```console
-git-lfs-3.6.0-r0 description:
+git-lfs-3.6.0-r1 description:
 Git extension for versioning large files
 
-git-lfs-3.6.0-r0 webpage:
+git-lfs-3.6.0-r1 webpage:
 https://git-lfs.github.io/
 
-git-lfs-3.6.0-r0 installed size:
+git-lfs-3.6.0-r1 installed size:
 12 MiB
 
-git-lfs-3.6.0-r0 license:
+git-lfs-3.6.0-r1 license:
 MIT
 
 ```

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:33fc3145d4b98ed5689ba5477f4f1495db6e20b4310d3300e627ae5350b419bf`
+- Image ID: `sha256:4012f40120b8f79aab117c376ae3227fa4de9f97af9052ab108d175641745888`
 - Created: `2025-01-27T19:22:41Z`
-- Virtual Size: ~ 910.21 Mb  
+- Virtual Size: ~ 910.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.5+11`
+  - `JAVA_VERSION=jdk-21.0.6+7`
   - `JAVA_CURRENT_HOME=/opt/java/openjdk23`
   - `JAVA_LTS_HOME=/opt/java/openjdk21`
   - `GRADLE_HOME=/opt/gradle`
@@ -468,16 +468,16 @@ GPL-2.0-only
 ### `apk` package: `git-lfs`
 
 ```console
-git-lfs-3.6.0-r0 description:
+git-lfs-3.6.0-r1 description:
 Git extension for versioning large files
 
-git-lfs-3.6.0-r0 webpage:
+git-lfs-3.6.0-r1 webpage:
 https://git-lfs.github.io/
 
-git-lfs-3.6.0-r0 installed size:
+git-lfs-3.6.0-r1 installed size:
 12 MiB
 
-git-lfs-3.6.0-r0 license:
+git-lfs-3.6.0-r1 license:
 MIT
 
 ```
