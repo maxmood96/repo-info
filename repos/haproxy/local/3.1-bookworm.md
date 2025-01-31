@@ -1,19 +1,19 @@
-# `haproxy:3.1.2`
+# `haproxy:3.1.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:951a8c9fcd32fcbc06df1ba5942e885209f7f30b10f55182d4605ec0b32bc6f1`
-- Created: `2025-01-09T00:13:35Z`
-- Virtual Size: ~ 104.91 Mb  
+- Image ID: `sha256:a396358d284fdd9be8833327f335452ace2001f9bd4683881a98dd75dcbf98ee`
+- Created: `2025-01-29T18:24:27Z`
+- Virtual Size: ~ 104.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
 - Command: `["haproxy","-f","/usr/local/etc/haproxy/haproxy.cfg"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `HAPROXY_VERSION=3.1.2`
-  - `HAPROXY_URL=https://www.haproxy.org/download/3.1/src/haproxy-3.1.2.tar.gz`
-  - `HAPROXY_SHA256=af35dc8bf3193870b72276a63920974bef1405fc41038d545b86b641aa59f400`
+  - `HAPROXY_VERSION=3.1.3`
+  - `HAPROXY_URL=https://www.haproxy.org/download/3.1/src/haproxy-3.1.3.tar.gz`
+  - `HAPROXY_SHA256=6dd21f9a41f0ec7289650e299180b64f9dd225e35113fd1bddc6a3a2e79d5172`
 
 ## `dpkg` (`.deb`-based packages)
 
