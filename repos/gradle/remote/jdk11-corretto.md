@@ -1,7 +1,7 @@
 ## `gradle:jdk11-corretto`
 
 ```console
-$ docker pull gradle@sha256:fbcc4b26310c31dfd0f96f462df5090c53ac49f395d1585da950f6c88870e92f
+$ docker pull gradle@sha256:8f3304ed799894989208ff27582a7def70f77b829fcff7f7a9f30851ca932610
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -122,28 +122,28 @@ $ docker pull gradle@sha256:1fea7bf1c1ab5afd262cc096647f5fff70e219e91bc31fcc5935
 ### `gradle:jdk11-corretto` - linux; arm64 variant v8
 
 ```console
-$ docker pull gradle@sha256:41fb012e0bffd5d1eb96968884846fe971d4e2f8ae097a34e056b1a6ca5999b9
+$ docker pull gradle@sha256:e78c4dad60a7805d6c66542710fc4b0dd8ef87fb322bae665ab4097f7fec81f2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **411.6 MB (411626155 bytes)**  
+-	Total Size: **413.0 MB (413049557 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8e800a09baea3994e75fb6b424446966c6873a2646d5d446e8e36c8a51df7c37`
+-	Image ID: `sha256:4c8102e3713dc1778cddb7adb05eef19b4a92f22d18bd7b1d176e0ebaa2eeca5`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
-# Fri, 17 Jan 2025 00:42:44 GMT
+# Fri, 24 Jan 2025 20:03:54 GMT
 COPY /rootfs/ / # buildkit
-# Fri, 17 Jan 2025 00:42:44 GMT
+# Fri, 24 Jan 2025 20:03:54 GMT
 CMD ["/bin/bash"]
-# Thu, 23 Jan 2025 01:09:23 GMT
+# Fri, 24 Jan 2025 20:03:54 GMT
 ARG version=11.0.26.4-1
-# Thu, 23 Jan 2025 01:09:23 GMT
+# Fri, 24 Jan 2025 20:03:54 GMT
 # ARGS: version=11.0.26.4-1
 RUN set -eux     && rpm --import file:///etc/pki/rpm-gpg/RPM-GPG-KEY-amazon-linux-2023     && echo "localpkg_gpgcheck=1" >> /etc/dnf/dnf.conf     && CORRETO_TEMP=$(mktemp -d)     && pushd ${CORRETO_TEMP}     && RPM_LIST=("java-11-amazon-corretto-headless-$version.amzn2023.$(uname -m).rpm" "java-11-amazon-corretto-$version.amzn2023.$(uname -m).rpm" "java-11-amazon-corretto-devel-$version.amzn2023.$(uname -m).rpm" "java-11-amazon-corretto-jmods-$version.amzn2023.$(uname -m).rpm")     && for rpm in ${RPM_LIST[@]}; do     curl --fail -O https://corretto.aws/downloads/resources/$(echo $version | tr '-' '.')/${rpm}     && rpm -K "${CORRETO_TEMP}/${rpm}" | grep -F "${CORRETO_TEMP}/${rpm}: digests signatures OK" || exit 1;     done     && dnf install -y ${CORRETO_TEMP}/*.rpm     && popd     && rm -rf /usr/lib/jvm/java-11-amazon-corretto.$(uname -m)/lib/src.zip     && rm -rf ${CORRETO_TEMP}     && dnf clean all     && sed -i '/localpkg_gpgcheck=1/d' /etc/dnf/dnf.conf # buildkit
-# Thu, 23 Jan 2025 01:09:23 GMT
+# Fri, 24 Jan 2025 20:03:54 GMT
 ENV LANG=C.UTF-8
-# Thu, 23 Jan 2025 01:09:23 GMT
+# Fri, 24 Jan 2025 20:03:54 GMT
 ENV JAVA_HOME=/usr/lib/jvm/java-11-amazon-corretto
 # Mon, 27 Jan 2025 19:22:41 GMT
 CMD ["gradle"]
@@ -174,55 +174,55 @@ USER root
 ```
 
 -	Layers:
-	-	`sha256:23c58bc83b4b2c70780808282eab12c25cdbe212cc6fa4cd0d9a4d82b1cbf7ce`  
-		Last Modified: Fri, 17 Jan 2025 02:10:39 GMT  
-		Size: 52.3 MB (52270199 bytes)  
+	-	`sha256:523a6b03095ed77c021e90dd9cc9c96374240d01b0165f628a7a82b4d9acd585`  
+		Last Modified: Wed, 29 Jan 2025 02:15:16 GMT  
+		Size: 52.3 MB (52269024 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41040c42d483e286e764c6fc046959b40e374d0a17723f788d6f9a48b7c957a7`  
-		Last Modified: Thu, 23 Jan 2025 23:12:00 GMT  
-		Size: 152.4 MB (152375466 bytes)  
+	-	`sha256:c89be23f724ebc657d704f177a4f08dee6c392aa934502c880f0c6e83bb7f2dc`  
+		Last Modified: Sat, 01 Feb 2025 02:12:04 GMT  
+		Size: 152.4 MB (152372778 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f0010fc71c9de033dc0a0417c2bd2c505b8f5c40ccc352214ab528e3f077495`  
-		Last Modified: Fri, 24 Jan 2025 00:09:41 GMT  
-		Size: 70.4 MB (70357339 bytes)  
+	-	`sha256:800acfb3386ba6603ca6856c608586536364cd25863a4eb3f2a50748b037da4a`  
+		Last Modified: Sat, 01 Feb 2025 03:09:43 GMT  
+		Size: 71.8 MB (71784603 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:158df7895bdc254e5632488e6ba977e3bab367b6595f945f9c56077d936a543c`  
-		Last Modified: Fri, 24 Jan 2025 00:09:39 GMT  
-		Size: 1.6 KB (1645 bytes)  
+	-	`sha256:7e8c306865abfdae89982d4c2a327d453803008092b4dbcafd5a4616a177a6a3`  
+		Last Modified: Sat, 01 Feb 2025 03:09:41 GMT  
+		Size: 1.6 KB (1648 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3632fa093a79128855c08ba5e5ba111c445e06aed03d69b2552474e46893444b`  
-		Last Modified: Tue, 28 Jan 2025 01:57:27 GMT  
-		Size: 136.6 MB (136561940 bytes)  
+	-	`sha256:bf624afcac0afe3b84f95514c59b0805d4636f572d1ce8777be7b51ffd7d68d9`  
+		Last Modified: Sat, 01 Feb 2025 03:09:48 GMT  
+		Size: 136.6 MB (136561939 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:598fd64e55d43e5e7c042e2ab02a0be9a41319734e764fdab7f0d8b1db4a20ea`  
-		Last Modified: Tue, 28 Jan 2025 01:57:22 GMT  
-		Size: 59.5 KB (59534 bytes)  
+	-	`sha256:92de21a4a6820e68eb9262633cc9c4464c45209d864a3ab14ca6211dedcf933b`  
+		Last Modified: Sat, 01 Feb 2025 03:09:41 GMT  
+		Size: 59.5 KB (59533 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:jdk11-corretto` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:0f8b530faddea4164da623cc1cc298eb0c476a952d4c02b939525299e02a4e96
+$ docker pull gradle@sha256:1034b021149af98f6dff26967bf6f21a6f21f3bc741bda0ab03abcd9b19df510
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **10.8 MB (10763923 bytes)**  
+-	Total Size: **10.8 MB (10782988 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9501314af6f90b6b57e5061ac483653c898be759be64a70f59e2ffb0f6ff5f44`
+-	Image ID: `sha256:d3609854bd6475b61b7e013121543caec70a0f3b9bc236bb4e710867ab3a157d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ed8dc1371dd9e5b06dbb5be7a684e783d6eb27ad2c28191f4a09b992e1009506`  
-		Last Modified: Tue, 28 Jan 2025 01:57:22 GMT  
-		Size: 10.7 MB (10743817 bytes)  
+	-	`sha256:57041b9eeb130ae8dd7c77617345d41129b0ac3efe288aca4bd8116893f23536`  
+		Last Modified: Sat, 01 Feb 2025 03:09:41 GMT  
+		Size: 10.8 MB (10762882 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:35953e121e79be6eb26666b9ba81634501eba18ad57f05a5ad49fff153a94ce8`  
-		Last Modified: Tue, 28 Jan 2025 01:57:22 GMT  
+	-	`sha256:58ec31521524124eb8d648edb8da789504652950f27312d3431e71398fafa979`  
+		Last Modified: Sat, 01 Feb 2025 03:09:41 GMT  
 		Size: 20.1 KB (20106 bytes)  
 		MIME: application/vnd.in-toto+json
