@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:86806e09041d19e6f3f5b25292c666ec0a1213619eb62207408c444d02ef7c36`
+- Image ID: `sha256:331a560e9abf6ed2a3412be287446a397636d2e7f12cc82446927587a4333691`
 - Created: `2025-01-14T05:07:03Z`
-- Virtual Size: ~ 527.23 Mb  
+- Virtual Size: ~ 527.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -1217,15 +1217,15 @@ $ dnf --quiet download --source --url sqlite-3.7.17-8.amzn2.1.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/73e91fe2b7105396444d0bde85332047ca1b8c80fc986d49ced289310c9e54af/../../../../../blobstore/5ada8c006d0e919d9a1fcdc513c897787b875dcd0143ca89aae582983119f1d6/sqlite-3.7.17-8.amzn2.1.2.src.rpm
 ```
 
-### `rpm` package: `system-release-2-16.amzn2.x86_64`
+### `rpm` package: `system-release-2-17.amzn2.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url system-release-2-16.amzn2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/73e91fe2b7105396444d0bde85332047ca1b8c80fc986d49ced289310c9e54af/../../../../../blobstore/1d86dd37090418630254dc852c55859e9033e342f87091b94c9448bcacdb7b2a/system-release-2-16.amzn2.src.rpm
+$ dnf --quiet download --source --url system-release-2-17.amzn2
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/73e91fe2b7105396444d0bde85332047ca1b8c80fc986d49ced289310c9e54af/../../../../../blobstore/3599cf903c2cf24f55b835d112c54dd1283447c2aeec26d6effcf2c8e28916fd/system-release-2-17.amzn2.src.rpm
 ```
 
 ### `rpm` package: `tar-1.26-35.amzn2.0.4.x86_64`
