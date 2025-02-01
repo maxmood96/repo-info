@@ -4497,14 +4497,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.4.dsc' libxml2_2.9.13+dfsg-1ubuntu0.4.dsc 3030 SHA512:766e6ac92f700f594da935dec46aef15bd51269241715e279082947d2f0ce5a9209e5928ef513ee4f382539b63a51ba633fc7e896eacfa911f398332e58af718
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.4.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.4.debian.tar.xz 37288 SHA512:fd4b62393aaaef05df66dd1fb2c3ff2ead7eb40127a443bc9ee0ff96ae335f508801a933bf986eab0ed45758b47afa8bf93bfb5a83ae5ac9e5de12f1ddde8749
-```
 
 ### `dpkg` source package: `libxrandr=2:1.5.2-1build1`
 
@@ -6349,15 +6344,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2024a-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.22.04.1.dsc' tzdata_2024a-0ubuntu0.22.04.1.dsc 2541 SHA512:c0cda33e23d340414e2cd079ec35caa8986601f9f97bcb055ccfaee154fb8667588a18d6e21f1719090799aa034960548df63a046669287e15af281aaba2b151
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz' tzdata_2024a.orig.tar.gz 451270 SHA512:1f09f1b2327cc9e1afc7e9045e83ee3377918dafe1bee2f282b6991828d03b3c70a4d3a17f9207dfb1361bb25bc214a8922a756e84fa114e9ba476226db57236
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a.orig.tar.gz.asc' tzdata_2024a.orig.tar.gz.asc 833 SHA512:a06ddc95002f2dcd3c071d020a74bc98aae2cbf56a502718f9bc08e90e0075b17aaaa653ceecd49a1133cdadfc43134365043f827b19c7dad68050dbda6ba77e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024a-0ubuntu0.22.04.1.debian.tar.xz' tzdata_2024a-0ubuntu0.22.04.1.debian.tar.xz 178960 SHA512:98899e7a78ddfce0f3af0c1239422b9547b3c33ca08ab5e82266e51cc69e1169e012f3ad78b1fc84ca491847ea2bcda25619f7b06df410d0f02c9e7ef746a2ec
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
 
