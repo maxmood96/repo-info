@@ -1,10 +1,10 @@
-# `eclipse-temurin:23.0.1_11-jdk-noble`
+# `eclipse-temurin:23.0.2_7-jdk-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d8a5375bfc304173e430bdbeab2c783cfa7cd7c6da0c624d573809dfaea32a4d`
-- Created: `2025-01-22T01:19:15Z`
-- Virtual Size: ~ 451.50 Mb  
+- Image ID: `sha256:bae6d0c7e84c83b1deda99688877570da3955d9049c5b0173ff402ffee380cda`
+- Created: `2025-01-30T14:32:57Z`
+- Virtual Size: ~ 451.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-23.0.1+11`
+  - `JAVA_VERSION=jdk-23.0.2+7`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`

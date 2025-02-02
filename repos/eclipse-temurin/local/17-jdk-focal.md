@@ -1,10 +1,10 @@
-# `eclipse-temurin:17.0.13_11-jdk-focal`
+# `eclipse-temurin:17.0.14_7-jdk-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7b32270a8d884474b935c9f2c423f705af93fbfe5758a15a1ef24fb4a7321617`
-- Created: `2025-01-22T01:19:15Z`
-- Virtual Size: ~ 417.25 Mb  
+- Image ID: `sha256:34f3e14f277a18057ef2018610734bb82db18143c40b6b943a749c6d1729d843`
+- Created: `2025-01-30T14:32:57Z`
+- Virtual Size: ~ 417.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.13+11`
+  - `JAVA_VERSION=jdk-17.0.14+7`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=20.04`
@@ -1887,19 +1887,25 @@ $ apt-get source -qq --print-uris tar=1.30+dfsg-7ubuntu0.20.04.4
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.4.debian.tar.xz' tar_1.30+dfsg-7ubuntu0.20.04.4.debian.tar.xz 24572 SHA512:942a7fb6e2edb7e50b26b1588219d0a99caf17ff1dfa1748449c3fa84ab8cf3e3e94bafb8334cc3b8397562d6a3ecd57bc0df2ddb2b90644a361fa63426d2982
 ```
 
-### `dpkg` source package: `tzdata=2024a-0ubuntu0.20.04.1`
+### `dpkg` source package: `tzdata=2024b-0ubuntu0.20.04`
 
 Binary Packages:
 
-- `tzdata=2024a-0ubuntu0.20.04.1`
+- `tzdata=2024b-0ubuntu0.20.04`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2024b-0ubuntu0.20.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.20.04.dsc' tzdata_2024b-0ubuntu0.20.04.dsc 2548 SHA512:fa9a3e75a789587e3641a1657aa0bbcf69f9d9091eed967da1cc749ea61c47fdc6d93d742843af8d8dfb403cf60acd6b671e8263ab472e331a966562e0ea511a
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz' tzdata_2024b.orig.tar.gz 459393 SHA512:0d86686e215672343debb3471b7e7ccb8a27f063f085c9b532d5e0470377843daa0dfb6aee0db4fb9068dd52810c69aeee914a1a7c7e603fdecda7e855020193
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz.asc' tzdata_2024b.orig.tar.gz.asc 833 SHA512:2a0462e1d469260293b93ea03a084a7514025b6de251ebf71bc65c93d76ac94967ec859ddba34b1ba4c51114faa5acdfbef0848d79654fc6ebaa804d5d3c2964
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.20.04.debian.tar.xz' tzdata_2024b-0ubuntu0.20.04.debian.tar.xz 176568 SHA512:b8edfda7fe8dd7beb95981cdf17d7096c9a4c2810d90e1824c9c186366ed69d995261004f667ae3179defb5d109bf23a97412b8f0cba3719af6304b38f32bd12
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 
