@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:36dd8504a916329a54aadc8ee1ce1afae65a93e8ed1fffebd67b9fc8880b70c1`
-- Created: `2025-01-06T23:07:46Z`
-- Virtual Size: ~ 391.84 Mb  
+- Image ID: `sha256:604216d563076f7926321947bd7f5f99aa61ab185ebfbb49f601de2893aca394`
+- Created: `2025-01-29T19:11:46Z`
+- Virtual Size: ~ 391.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,8 +15,8 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u432-b06`
-  - `CLOJURE_VERSION=1.12.0.1495`
+  - `JAVA_VERSION=jdk8u442-b06`
+  - `CLOJURE_VERSION=1.12.0.1501`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -2498,19 +2498,25 @@ $ apt-get source -qq --print-uris tar=1.34+dfsg-1ubuntu0.1.22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1ubuntu0.1.22.04.2.debian.tar.xz' tar_1.34+dfsg-1ubuntu0.1.22.04.2.debian.tar.xz 20544 SHA512:9840407a1364154c831665c3f1739c80a84806567fe5ad27ee3ac70f4c18e27d7f2f9e0557b6e2a634ab39449a8fc95b96f1813f5c203df8ece5226a6afe8c7c
 ```
 
-### `dpkg` source package: `tzdata=2024a-0ubuntu0.22.04.1`
+### `dpkg` source package: `tzdata=2024b-0ubuntu0.22.04`
 
 Binary Packages:
 
-- `tzdata=2024a-0ubuntu0.22.04.1`
+- `tzdata=2024b-0ubuntu0.22.04`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2024b-0ubuntu0.22.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.22.04.dsc' tzdata_2024b-0ubuntu0.22.04.dsc 2533 SHA512:a4e80b59c24b6794d2109117302bdbaac58c743427a5f0841ecf36ffac871addb1dab8e6353d968b5b8e96329d2e4309c80d834bed96c5338d14e199cda431e0
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz' tzdata_2024b.orig.tar.gz 459393 SHA512:0d86686e215672343debb3471b7e7ccb8a27f063f085c9b532d5e0470377843daa0dfb6aee0db4fb9068dd52810c69aeee914a1a7c7e603fdecda7e855020193
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz.asc' tzdata_2024b.orig.tar.gz.asc 833 SHA512:2a0462e1d469260293b93ea03a084a7514025b6de251ebf71bc65c93d76ac94967ec859ddba34b1ba4c51114faa5acdfbef0848d79654fc6ebaa804d5d3c2964
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.22.04.debian.tar.xz' tzdata_2024b-0ubuntu0.22.04.debian.tar.xz 181460 SHA512:b39dee3e4c756ab9e2f59789fee2ed5757f4c6a5d506a0fff9f79b88d08361b2851075617eb4cbcc1068e3e61515097220e861f6c0e91b52cd7a25247808ebb0
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
 
