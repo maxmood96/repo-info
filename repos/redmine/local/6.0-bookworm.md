@@ -1,10 +1,10 @@
-# `redmine:6.0.2`
+# `redmine:6.0.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a203993e3fcc0d39895d0064423f8359bf55176851dd07dfefbeed1470c93b11`
-- Created: `2025-01-23T00:31:52Z`
-- Virtual Size: ~ 611.23 Mb  
+- Image ID: `sha256:196e77b2d2dfafdf34ff6408cc9c85828025ac7d1484d97eae220ddb51c82876`
+- Created: `2025-01-31T19:49:37Z`
+- Virtual Size: ~ 611.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -21,9 +21,9 @@
   - `GOSU_VERSION=1.17`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=6.0.2`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.0.2.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=d06e8b1b0c0c9210d2ed6207d2a3f729c26a996255e47c3b0bd4782550150e45`
+  - `REDMINE_VERSION=6.0.3`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-6.0.3.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=48a139e9416f97922ab48231912fed8aa4c48d4a96b8f507124b11e4335218d6`
   - `RAILS_LOG_TO_STDOUT=true`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1383,12 +1383,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u6/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/ghostscript/10.0.0~dfsg-11+deb12u6/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `git=1:2.39.5-0+deb12u1`
+### `dpkg` source package: `git=1:2.39.5-0+deb12u2`
 
 Binary Packages:
 
-- `git=1:2.39.5-0+deb12u1`
-- `git-man=1:2.39.5-0+deb12u1`
+- `git=1:2.39.5-0+deb12u2`
+- `git-man=1:2.39.5-0+deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1415,17 +1415,17 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git=1:2.39.5-0+deb12u1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.5-0%2bdeb12u1.dsc' git_2.39.5-0+deb12u1.dsc 2857 SHA256:eccfcf6b7dba258ec5e50c503e33f4f21e76b2a2540af36d69cab37e4ce04494
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.5.orig.tar.xz' git_2.39.5.orig.tar.xz 7171400 SHA256:c58da92c378df4a986ca33266897a7397e86c22ee266a284d8c2432c39066b59
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.5-0%2bdeb12u1.debian.tar.xz' git_2.39.5-0+deb12u1.debian.tar.xz 742400 SHA256:5cd79b5a89b930936aa1cb5ab2ec53525a978c28ffd4017b47310ddc7660938a
+$ apt-get source -qq --print-uris git=1:2.39.5-0+deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.39.5-0%2bdeb12u2.dsc' git_2.39.5-0+deb12u2.dsc 2982 SHA256:52c384a95da514d17749447d581bb3876a398c8632f2bde139bdb6627711f58f
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.39.5.orig.tar.xz' git_2.39.5.orig.tar.xz 7171400 SHA256:c58da92c378df4a986ca33266897a7397e86c22ee266a284d8c2432c39066b59
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.39.5-0%2bdeb12u2.debian.tar.xz' git_2.39.5-0+deb12u2.debian.tar.xz 747556 SHA256:5a6b6e48c7f19df294d2a8c030c219688d1823326d209ad15a06be3743d9cd2b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/git/1:2.39.5-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.39.5-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.39.5-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/git/1:2.39.5-0+deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/git/1:2.39.5-0+deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/git/1:2.39.5-0+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.74.6-2+deb12u5`
 
@@ -3612,11 +3612,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/numactl/2.0.16-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/numactl/2.0.16-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjpeg2=2.5.0-2`
+### `dpkg` source package: `openjpeg2=2.5.0-2+deb12u1`
 
 Binary Packages:
 
-- `libopenjp2-7:amd64=2.5.0-2`
+- `libopenjp2-7:amd64=2.5.0-2+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`)
 
@@ -3633,17 +3633,17 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjpeg2=2.5.0-2
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.5.0-2.dsc' openjpeg2_2.5.0-2.dsc 2673 SHA256:c29fc2afc7bf6fa1a3d02e9c78dd2159db2ef12a5fe62bc786500c91f01ffc04
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.5.0.orig.tar.xz' openjpeg2_2.5.0.orig.tar.xz 1221108 SHA256:007e19d772c8b6b22e35379630b06ff3549e49ba719d96453607a36ad7b4de73
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.5.0-2.debian.tar.xz' openjpeg2_2.5.0-2.debian.tar.xz 17388 SHA256:7bedc8ba24e39dddc65e3e87f70c5dcced44661d360379efd5077fd24333ee9c
+$ apt-get source -qq --print-uris openjpeg2=2.5.0-2+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.5.0-2%2bdeb12u1.dsc' openjpeg2_2.5.0-2+deb12u1.dsc 2705 SHA256:809c3ea598b1fcda47b8e170d46cf6e09b1a2937fbd50ecb5048b9fd26ef072f
+'http://deb.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.5.0.orig.tar.xz' openjpeg2_2.5.0.orig.tar.xz 1221108 SHA256:007e19d772c8b6b22e35379630b06ff3549e49ba719d96453607a36ad7b4de73
+'http://deb.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.5.0-2%2bdeb12u1.debian.tar.xz' openjpeg2_2.5.0-2+deb12u1.debian.tar.xz 19624 SHA256:f6e27869dc381c84ca12b4843e20644104f9a830996680319a5bd330bd2f98b0
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjpeg2/2.5.0-2/ (for browsing the source)
-- https://sources.debian.net/src/openjpeg2/2.5.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjpeg2/2.5.0-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjpeg2/2.5.0-2+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/openjpeg2/2.5.0-2+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjpeg2/2.5.0-2+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.5.13+dfsg-5`
 
