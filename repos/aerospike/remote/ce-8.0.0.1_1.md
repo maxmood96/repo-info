@@ -1,7 +1,7 @@
 ## `aerospike:ce-8.0.0.1_1`
 
 ```console
-$ docker pull aerospike@sha256:0f211e52eba849314f98707d384211885517cfb11fa7226252a593e7d224817c
+$ docker pull aerospike@sha256:0fcae99d4bbb24567baf69a61555b49d3a9d567e6c922b59edeb136e76801cc9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -112,29 +112,29 @@ $ docker pull aerospike@sha256:161c00bc44f37589695e994fcdf37f06999ad4661fc5e8c63
 ### `aerospike:ce-8.0.0.1_1` - linux; arm64 variant v8
 
 ```console
-$ docker pull aerospike@sha256:84fd66dfb3019cfef4b3079d5a3ec1fac33ae65d375ac97d2821473ddd856fe7
+$ docker pull aerospike@sha256:e921bf697852216bf0f2fb414ed3def7bd8ae5013bdcec741c4845ac25459163
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **76.3 MB (76307001 bytes)**  
+-	Total Size: **76.3 MB (76308149 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3599e4ce3a9f8340e53d8bd73c52f08d39e845557e3d836b8df5c74e7ce0a4c3`
+-	Image ID: `sha256:0f6465fe09cb34728229087c1946ee0139d94fcf2440614d4dda24af510bc491`
 -	Entrypoint: `["\/usr\/bin\/as-tini-static","-r","SIGUSR1","-t","SIGTERM","--","\/entrypoint.sh"]`
 -	Default Command: `["asd"]`
 -	`SHELL`: `["\/bin\/bash","-Eeuo","pipefail","-c"]`
 
 ```dockerfile
-# Tue, 19 Nov 2024 16:18:45 GMT
+# Thu, 23 Jan 2025 07:00:10 GMT
 ARG RELEASE
-# Tue, 19 Nov 2024 16:18:45 GMT
+# Thu, 23 Jan 2025 07:00:10 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Nov 2024 16:18:45 GMT
+# Thu, 23 Jan 2025 07:00:10 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Nov 2024 16:18:45 GMT
+# Thu, 23 Jan 2025 07:00:10 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 19 Nov 2024 16:18:47 GMT
-ADD file:765dfd09ec2ac4870c8b3efd6ef4a994f99695c574d546d7a9a0e69bbb970b03 in / 
-# Tue, 19 Nov 2024 16:18:47 GMT
+# Thu, 23 Jan 2025 07:00:10 GMT
+ADD file:68158f1ff76fd4de9f92666ad22571e6cd11df166255c2814a135773fdd6acd7 in / 
+# Thu, 23 Jan 2025 07:00:10 GMT
 CMD ["/bin/bash"]
 # Thu, 23 Jan 2025 07:00:10 GMT
 LABEL org.opencontainers.image.title=Aerospike Community Server org.opencontainers.image.description=Aerospike is a real-time database with predictable performance at petabyte scale with microsecond latency over billions of transactions. org.opencontainers.image.documentation=https://hub.docker.com/_/aerospike org.opencontainers.image.base.name=docker.io/library/ubuntu:24.04 org.opencontainers.image.source=https://github.com/aerospike/aerospike-server.docker org.opencontainers.image.vendor=Aerospike org.opencontainers.image.version=8.0.0.1 org.opencontainers.image.url=https://github.com/aerospike/aerospike-server.docker
@@ -166,43 +166,43 @@ CMD ["asd"]
 ```
 
 -	Layers:
-	-	`sha256:8bb55f0677778c3027fcc4253dc452bc9c22de989a696391e739fb1cdbbdb4c2`  
-		Last Modified: Tue, 19 Nov 2024 17:38:33 GMT  
-		Size: 28.9 MB (28892671 bytes)  
+	-	`sha256:5b17151e9710ed47471b3928b05325fa4832121a395b9647b7e50d3993e17ce0`  
+		Last Modified: Mon, 27 Jan 2025 05:09:56 GMT  
+		Size: 28.9 MB (28893598 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a23cded2ae8acafcc5e35277cffa362e2603ce6b837c68fef731c6b8e71d07a4`  
-		Last Modified: Thu, 23 Jan 2025 18:28:01 GMT  
-		Size: 47.4 MB (47412029 bytes)  
+	-	`sha256:baa190db51c1bae5a90a5c0bf69388122cab0f1cd1ba4c085fe1a800fe3f93ee`  
+		Last Modified: Tue, 04 Feb 2025 08:59:31 GMT  
+		Size: 47.4 MB (47412247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e1a1cf9cd80e493a12c3747fb74ec56b3a9e90677a26886215314978f8e59153`  
-		Last Modified: Thu, 23 Jan 2025 18:27:59 GMT  
-		Size: 1.2 KB (1195 bytes)  
+	-	`sha256:79fdb5eaa0f7e0c44b8e8d4b517b7050ebc8ed90dc6b03d2fc22a020f58b9bd3`  
+		Last Modified: Tue, 04 Feb 2025 08:59:29 GMT  
+		Size: 1.2 KB (1198 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e20dfb424be7702b2305ce416558bf9ffeb9e22904311eb9e5ab0fde51d70ed9`  
-		Last Modified: Thu, 23 Jan 2025 18:27:59 GMT  
+	-	`sha256:716f488692cbf9517398685020e90b5970041652a0ccdd019e4caf78a2bcdc27`  
+		Last Modified: Tue, 04 Feb 2025 08:59:29 GMT  
 		Size: 1.1 KB (1106 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `aerospike:ce-8.0.0.1_1` - unknown; unknown
 
 ```console
-$ docker pull aerospike@sha256:63d2dce138c0d17caa2b87e799dec97c746858b23a76928864790ac7de0c8415
+$ docker pull aerospike@sha256:7770308d5caf4c558ace1395edbe94975bc782f018387b2771601fc764c520ff
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.9 MB (1893810 bytes)**  
+-	Total Size: **1.9 MB (1897764 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9e31c615fcc4e65b3055fc740ed6f5b536c8e36e2ec6d755578cf7eb9757918c`
+-	Image ID: `sha256:a8eeab85a73b8d7c825f4876812110ce7d69dd7a041fa3c450761c97fe365b17`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6fbadc846b16425fd15655ef1715d063c7c43f55b5ece3b29047612b76130edc`  
-		Last Modified: Thu, 23 Jan 2025 18:28:00 GMT  
-		Size: 1.9 MB (1864583 bytes)  
+	-	`sha256:810269bca836c4d2a1bfc37abe146ab9cbdaa9595dfe45a6ed643a42a7bef7af`  
+		Last Modified: Tue, 04 Feb 2025 08:59:30 GMT  
+		Size: 1.9 MB (1868537 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:e6d8a398aa3a114a2c2be1dea96a230e68f894ff9ee99275cbcbea347d0c27b1`  
-		Last Modified: Thu, 23 Jan 2025 18:27:59 GMT  
+	-	`sha256:a411e2d60e57444cbbff635c9b8e6cfe733d2716f5d1063fb175fc5f0f0d6511`  
+		Last Modified: Tue, 04 Feb 2025 08:59:29 GMT  
 		Size: 29.2 KB (29227 bytes)  
 		MIME: application/vnd.in-toto+json
