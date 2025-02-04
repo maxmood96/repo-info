@@ -1,7 +1,7 @@
 ## `varnish:old`
 
 ```console
-$ docker pull varnish@sha256:37f168302b7ffd03fb0f2f1d60a9d3ea2f5228ef9fd84893e36de8baca3290c6
+$ docker pull varnish@sha256:bcb294ac95cb95dbe79d4496685076109ec8e38f9a1cd35ba74dfb8278199dcd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -120,18 +120,18 @@ $ docker pull varnish@sha256:1a5278c3c63de014ce017013bea0011b075c54752ff654276b6
 ### `varnish:old` - linux; arm variant v7
 
 ```console
-$ docker pull varnish@sha256:5ea210e09979ca90b9deec1fbedb8695639ecbbb2979143fc3f424b4ad3e6e21
+$ docker pull varnish@sha256:7f00b98a92de69cd457912557de6eccf4b5f77a84aa7397cd379344ebb195f41
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **104.3 MB (104301434 bytes)**  
+-	Total Size: **104.3 MB (104301206 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e34cb2867fc13015905b8fc0ae4f3e62435aafbca1d250855f0ddf48526fb39a`
+-	Image ID: `sha256:4737fe407eed2498c6bc98e0e815bcbf9e6053167e439cdd8f1c03a9d3de4f16`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-varnish-entrypoint"]`
 
 ```dockerfile
 # Mon, 16 Sep 2024 20:20:48 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1736726400'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1738540800'
 # Mon, 16 Sep 2024 20:20:48 GMT
 ARG PKG_COMMIT=cfa8cb3724e4ca6398f60b09157715bcb99d189d
 # Mon, 16 Sep 2024 20:20:48 GMT
@@ -174,44 +174,44 @@ CMD []
 ```
 
 -	Layers:
-	-	`sha256:f7fde15b664589586a61b714ca6b43dec045d0f187d81d4eb050918e17b0ff1e`  
-		Last Modified: Tue, 14 Jan 2025 01:35:15 GMT  
-		Size: 23.9 MB (23914600 bytes)  
+	-	`sha256:8baf7706a2c9f71c9184120af92649e226b5533608aab6cd9ffbc6dc15435ca3`  
+		Last Modified: Tue, 04 Feb 2025 01:37:24 GMT  
+		Size: 23.9 MB (23914536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0322188f9e166a922611c24675a020e8057d7fcf53d1053f2bb283b525bde340`  
-		Last Modified: Tue, 14 Jan 2025 08:55:13 GMT  
-		Size: 80.4 MB (80384802 bytes)  
+	-	`sha256:0334412056fcdb41bb87cb1c5f88e11f2fd9142febf8c4630223b5ea3d23d611`  
+		Last Modified: Tue, 04 Feb 2025 10:38:43 GMT  
+		Size: 80.4 MB (80384634 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2b7e54d0742912b656895a8c84766fd91aee92e87a36cf75770454fadae3cbc4`  
-		Last Modified: Tue, 14 Jan 2025 08:55:11 GMT  
+	-	`sha256:96c455f50c99d6fd39c99189db47154c6a95c0e513352d0158d476fb31bbe1a5`  
+		Last Modified: Tue, 04 Feb 2025 10:38:40 GMT  
 		Size: 482.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c79c9133be42fc73eb284dce8bb90c975d2c44a550a7778ab14eaf7a2cf5bf6b`  
-		Last Modified: Tue, 14 Jan 2025 08:55:11 GMT  
-		Size: 1.5 KB (1518 bytes)  
+	-	`sha256:cec1263c72ce0184b3c076e3b96c4fe486aeda6066836298966e9c4eaa644d19`  
+		Last Modified: Tue, 04 Feb 2025 10:38:41 GMT  
+		Size: 1.5 KB (1522 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `varnish:old` - unknown; unknown
 
 ```console
-$ docker pull varnish@sha256:ed97e9ab2ba172f200ba9c78efb63d471ab67092172c33a2913f12d0885ae4db
+$ docker pull varnish@sha256:56bdd5a66b1e8f70104346d0211d63e599b66d0402acb722b031f031d7dc699c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **18.9 KB (18869 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:429c83cdc91ff1a0749468e28c605f6cddfab32508e1f07c6eb1282c0e9bc38b`
+-	Image ID: `sha256:2f25c88f3c45c959820d334d243f4f159e515a1e6e13fb0055691f1680eccadf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9f3449d9df625d81759852b8bb625b472977d62d8778b8d6e819cd48ccfd91cb`  
-		Last Modified: Tue, 14 Jan 2025 08:55:11 GMT  
+	-	`sha256:be91b5c55be1d84912b05c54f316e9726f2cd6cd986bc250ea2222966cb41d87`  
+		Last Modified: Tue, 04 Feb 2025 10:38:40 GMT  
 		Size: 18.9 KB (18869 bytes)  
 		MIME: application/vnd.in-toto+json
 
