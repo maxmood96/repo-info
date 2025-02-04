@@ -1,7 +1,7 @@
 ## `buildpack-deps:noble-scm`
 
 ```console
-$ docker pull buildpack-deps@sha256:c90e2d4c1412649ae8b86f252e2599b44e8c71ace5c4a8dde492d195b3ba4ec0
+$ docker pull buildpack-deps@sha256:218650c4acaa287ee2828f76180803a2e0285f1487d7db25e372abb4b57f6a1b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -298,13 +298,13 @@ $ docker pull buildpack-deps@sha256:c0e1990e1e896cfb17ed7ecabf67bc00438fc31b10d3
 ### `buildpack-deps:noble-scm` - linux; riscv64
 
 ```console
-$ docker pull buildpack-deps@sha256:bfb5191debc6043e213d5fba8deaf56abc330de1eae2e2d4fa1eb38d09f1863a
+$ docker pull buildpack-deps@sha256:ac57716a31f673328d41905ee068cbf3d1e07eb18922ce4bc381166457a0bcb6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **99.2 MB (99158620 bytes)**  
+-	Total Size: **101.5 MB (101521077 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bb1c3db312baebc205d4ae5320db8ea455b1d2c806396175a7f8f3d5d53560d3`
+-	Image ID: `sha256:a9355b669720be435491e9014a723aa6ca9b19f0e95d1305384a0097607d3c47`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -317,7 +317,7 @@ LABEL org.opencontainers.image.ref.name=ubuntu
 # Wed, 22 May 2024 20:42:04 GMT
 LABEL org.opencontainers.image.version=24.04
 # Wed, 22 May 2024 20:42:04 GMT
-ADD file:23c2e341d6cf3572f2762ef1304c406cf6d4f5ee8ee8719ef289a3b75a8323aa in / 
+ADD file:69c46ae9666e78c27ca5b5f25cec1a5536ff16f17cb00104e5c77e722bd8d643 in / 
 # Wed, 22 May 2024 20:42:04 GMT
 CMD ["/bin/bash"]
 # Wed, 22 May 2024 20:42:04 GMT
@@ -327,40 +327,40 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git
 ```
 
 -	Layers:
-	-	`sha256:0dcc8c973ba119a0fb5275114fd0456179bba1132bdc69f2afa4e1c4a235c540`  
-		Last Modified: Tue, 19 Nov 2024 17:38:52 GMT  
-		Size: 31.0 MB (30980838 bytes)  
+	-	`sha256:6e1053d729cc1718daa9369927cf6ddfbf892a846041de0e610d1c77ade136c5`  
+		Last Modified: Mon, 27 Jan 2025 05:10:15 GMT  
+		Size: 31.0 MB (30983910 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:789bf3edf440eb67602bc2c6173f31d3292b752b03bbf690c473a5038b858343`  
-		Last Modified: Tue, 03 Dec 2024 06:44:43 GMT  
-		Size: 14.3 MB (14321082 bytes)  
+	-	`sha256:1e1ff2b444c4e8d1278840900c3e27c00e5987f3c54a529299dbf9a2ed443657`  
+		Last Modified: Tue, 04 Feb 2025 04:47:44 GMT  
+		Size: 14.3 MB (14317230 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f505f2c8e1079fb73360d2ba6b4c3130e06fd9586abaa35474f69fd6f08ac0c3`  
-		Last Modified: Tue, 03 Dec 2024 09:51:22 GMT  
-		Size: 53.9 MB (53856700 bytes)  
+	-	`sha256:4ec5a422d511e6bec6d017fced317ebf97a5f77ec1f6eff36a777fc69635d1c3`  
+		Last Modified: Tue, 04 Feb 2025 08:19:44 GMT  
+		Size: 56.2 MB (56219937 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `buildpack-deps:noble-scm` - unknown; unknown
 
 ```console
-$ docker pull buildpack-deps@sha256:2ad46ad8d7e5e2137bad7101c0d437b7fee331f0b8d0e6350b5887027183d1f3
+$ docker pull buildpack-deps@sha256:13ed8342d52d164a346aa9b5cb66623fe05636c2934ea795ba1b9e598f5399cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5073996 bytes)**  
+-	Total Size: **5.1 MB (5071718 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a3d3bd34af4146e39294b5bbb3fa5cef688457671071e5506732c9f6c13431c6`
+-	Image ID: `sha256:e89c54bf63e8b39c08bc48b092a6c6475acb1a690c25fa70405580bc272a43a9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0a4cc0ae30668e7591cd209c89d192583fba68aabb43372e03f01edab1d00e88`  
-		Last Modified: Tue, 03 Dec 2024 09:51:14 GMT  
-		Size: 5.1 MB (5066659 bytes)  
+	-	`sha256:e76485709ee792b4459b34b590a90e627928fa8bd423b6e42b45b5f7ba2a63de`  
+		Last Modified: Tue, 04 Feb 2025 08:19:36 GMT  
+		Size: 5.1 MB (5064381 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b02388bcac06974d94d50c9bf05df475bfa01487bba4a6f5101eb76f87477102`  
-		Last Modified: Tue, 03 Dec 2024 09:51:13 GMT  
+	-	`sha256:8b25f7384c82f182e09fec7b22eaceec3f8a595bcd3522a657ed9ee9e8c29af4`  
+		Last Modified: Tue, 04 Feb 2025 08:19:35 GMT  
 		Size: 7.3 KB (7337 bytes)  
 		MIME: application/vnd.in-toto+json
 
