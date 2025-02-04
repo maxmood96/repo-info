@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b50aea3028e03c070744fb70b8124e54b2857ae3dc52880ca002623c09b4841d`
+- Image ID: `sha256:e10d5ccbf4ad47272e6174836235fcdcf10b4f736580b8670701ad6af4f53732`
 - Created: `2025-01-08T14:24:09Z`
-- Virtual Size: ~ 803.90 Mb  
+- Virtual Size: ~ 803.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
@@ -237,14 +237,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/bash/5.2.15-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/bash/5.2.15-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `bind9=1:9.18.28-1~deb12u2`
+### `dpkg` source package: `bind9=1:9.18.33-1~deb12u2`
 
 Binary Packages:
 
-- `bind9-dnsutils=1:9.18.28-1~deb12u2`
-- `bind9-host=1:9.18.28-1~deb12u2`
-- `bind9-libs:amd64=1:9.18.28-1~deb12u2`
-- `dnsutils=1:9.18.28-1~deb12u2`
+- `bind9-dnsutils=1:9.18.33-1~deb12u2`
+- `bind9-host=1:9.18.33-1~deb12u2`
+- `bind9-libs:amd64=1:9.18.33-1~deb12u2`
+- `dnsutils=1:9.18.33-1~deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/bind9-dnsutils/copyright`, `/usr/share/doc/bind9-host/copyright`, `/usr/share/doc/bind9-libs/copyright`, `/usr/share/doc/dnsutils/copyright`)
 
@@ -258,17 +258,17 @@ Licenses: (parsed from: `/usr/share/doc/bind9-dnsutils/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris bind9=1:9.18.28-1~deb12u2
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.18.28-1%7edeb12u2.dsc' bind9_9.18.28-1~deb12u2.dsc 3081 SHA256:d510a240b1c2d9fa0175b8458a5081bbaac9a3dd30f2d286cbe579e589e599dc
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.18.28.orig.tar.xz' bind9_9.18.28.orig.tar.xz 5533340 SHA256:e7cce9a165f7b619eefc4832f0a8dc16b005d29e3890aed6008c506ea286a5e7
-'http://deb.debian.org/debian/pool/main/b/bind9/bind9_9.18.28-1%7edeb12u2.debian.tar.xz' bind9_9.18.28-1~deb12u2.debian.tar.xz 61628 SHA256:855378d9642e781019f9b3b1ca7a5882f1a3fe17d3bb256a50921617c56d066e
+$ apt-get source -qq --print-uris bind9=1:9.18.33-1~deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.18.33-1%7edeb12u2.dsc' bind9_9.18.33-1~deb12u2.dsc 3081 SHA256:b3a53531026efa303964c3b21f84b5d2d95a769d5080675785f790d0b8f9e778
+'http://deb.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.18.33.orig.tar.xz' bind9_9.18.33.orig.tar.xz 5341616 SHA256:fb373fac5ebbc41c645160afd5a9fb451918f6c0e69ab1d9474154e2b515de40
+'http://deb.debian.org/debian-security/pool/updates/main/b/bind9/bind9_9.18.33-1%7edeb12u2.debian.tar.xz' bind9_9.18.33-1~deb12u2.debian.tar.xz 61500 SHA256:688df3df7ee77cb28c76f4433f22fef82be9e5b91982e2de5159e662f8a84efc
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/bind9/1:9.18.28-1~deb12u2/ (for browsing the source)
-- https://sources.debian.net/src/bind9/1:9.18.28-1~deb12u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bind9/1:9.18.28-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/bind9/1:9.18.33-1~deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/bind9/1:9.18.33-1~deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/bind9/1:9.18.33-1~deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `brotli=1.0.9-2`
 
@@ -901,12 +901,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.23-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.23-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `git=1:2.39.5-0+deb12u1`
+### `dpkg` source package: `git=1:2.39.5-0+deb12u2`
 
 Binary Packages:
 
-- `git=1:2.39.5-0+deb12u1`
-- `git-man=1:2.39.5-0+deb12u1`
+- `git=1:2.39.5-0+deb12u2`
+- `git-man=1:2.39.5-0+deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -933,17 +933,17 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git=1:2.39.5-0+deb12u1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.5-0%2bdeb12u1.dsc' git_2.39.5-0+deb12u1.dsc 2857 SHA256:eccfcf6b7dba258ec5e50c503e33f4f21e76b2a2540af36d69cab37e4ce04494
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.5.orig.tar.xz' git_2.39.5.orig.tar.xz 7171400 SHA256:c58da92c378df4a986ca33266897a7397e86c22ee266a284d8c2432c39066b59
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.5-0%2bdeb12u1.debian.tar.xz' git_2.39.5-0+deb12u1.debian.tar.xz 742400 SHA256:5cd79b5a89b930936aa1cb5ab2ec53525a978c28ffd4017b47310ddc7660938a
+$ apt-get source -qq --print-uris git=1:2.39.5-0+deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.39.5-0%2bdeb12u2.dsc' git_2.39.5-0+deb12u2.dsc 2982 SHA256:52c384a95da514d17749447d581bb3876a398c8632f2bde139bdb6627711f58f
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.39.5.orig.tar.xz' git_2.39.5.orig.tar.xz 7171400 SHA256:c58da92c378df4a986ca33266897a7397e86c22ee266a284d8c2432c39066b59
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.39.5-0%2bdeb12u2.debian.tar.xz' git_2.39.5-0+deb12u2.debian.tar.xz 747556 SHA256:5a6b6e48c7f19df294d2a8c030c219688d1823326d209ad15a06be3743d9cd2b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/git/1:2.39.5-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.39.5-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.39.5-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/git/1:2.39.5-0+deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/git/1:2.39.5-0+deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/git/1:2.39.5-0+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.36-9+deb12u9`
 
