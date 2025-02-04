@@ -1,7 +1,7 @@
 ## `jetty:12-jdk23-eclipse-temurin`
 
 ```console
-$ docker pull jetty@sha256:e39a473c58b6927f20b2e9e27931dd737c8b9a64ff87d0391280beee75eb06b8
+$ docker pull jetty@sha256:de6eebd3681b326b1509f1801cc77efa5befbf13cf7ba969e47f4188d168e1b9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -148,28 +148,28 @@ $ docker pull jetty@sha256:68690ddcfdcb92429015ae03a1a9834538ccf2c50ed5148e4ab14
 ### `jetty:12-jdk23-eclipse-temurin` - linux; arm64 variant v8
 
 ```console
-$ docker pull jetty@sha256:d107661e92122411f9ef40b994ecbfee0ae524a3acf596254808d04964dddd98
+$ docker pull jetty@sha256:c837a17ba724e4f18a969fb31d3edb942c33ca52be43e1a4eb5e9159bc496685
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **249.4 MB (249438145 bytes)**  
+-	Total Size: **249.4 MB (249432585 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed326c4a5386e8dbcf5eeffddf7a0e5148df91f76dd51d95d4acda851ec93778`
+-	Image ID: `sha256:66001623d3c9c6d337087d89d6de945eddb9cbdf513535cf5c100d5b5b7614e1`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Tue, 19 Nov 2024 16:18:45 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ARG RELEASE
-# Tue, 19 Nov 2024 16:18:45 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Tue, 19 Nov 2024 16:18:45 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Tue, 19 Nov 2024 16:18:45 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
 LABEL org.opencontainers.image.version=24.04
-# Tue, 19 Nov 2024 16:18:47 GMT
-ADD file:765dfd09ec2ac4870c8b3efd6ef4a994f99695c574d546d7a9a0e69bbb970b03 in / 
-# Tue, 19 Nov 2024 16:18:47 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
+ADD file:68158f1ff76fd4de9f92666ad22571e6cd11df166255c2814a135773fdd6acd7 in / 
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["/bin/bash"]
 # Tue, 14 Jan 2025 05:07:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -222,59 +222,59 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:8bb55f0677778c3027fcc4253dc452bc9c22de989a696391e739fb1cdbbdb4c2`  
-		Last Modified: Tue, 19 Nov 2024 17:38:33 GMT  
-		Size: 28.9 MB (28892671 bytes)  
+	-	`sha256:5b17151e9710ed47471b3928b05325fa4832121a395b9647b7e50d3993e17ce0`  
+		Last Modified: Mon, 27 Jan 2025 05:09:56 GMT  
+		Size: 28.9 MB (28893598 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:07a72f0d30453352f5b6347bc552f2cea40279f6d56d642896aecbfa222d9d23`  
-		Last Modified: Wed, 22 Jan 2025 23:35:55 GMT  
-		Size: 22.5 MB (22503039 bytes)  
+	-	`sha256:92c2245538400d4103f4db24ab5d1b42b9ea469aa61330be59963921f029696d`  
+		Last Modified: Tue, 04 Feb 2025 09:26:41 GMT  
+		Size: 22.5 MB (22496103 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:60cd5cfc79c3d2566c774440570ef6a378041903fc50d3ced422bdd278e18090`  
-		Last Modified: Fri, 31 Jan 2025 01:51:55 GMT  
-		Size: 163.3 MB (163346169 bytes)  
+	-	`sha256:953931721e17dba0346c2346b62471cfe151b7afcc3c70b868f521bea1f60f02`  
+		Last Modified: Tue, 04 Feb 2025 09:26:44 GMT  
+		Size: 163.3 MB (163346325 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b48ea1c3e6dcdbd7a31ca55b1306dfdf8c63bee32f771ff0469d5386a2f0cd93`  
-		Last Modified: Fri, 31 Jan 2025 01:51:51 GMT  
+	-	`sha256:00aa35d7029404f46e849dbd52e030cf92d6c4f560d92511f5223c10cea8a644`  
+		Last Modified: Tue, 04 Feb 2025 09:26:41 GMT  
 		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d31bef0c6266f48dbb3718acafffd2792b326262c12d4247766ff4888c3bf1fa`  
-		Last Modified: Fri, 31 Jan 2025 03:08:17 GMT  
-		Size: 34.7 MB (34692259 bytes)  
+	-	`sha256:b8ea8d93ff8a911e80ddfff2a0aa5d93d9daa0252fe20aea097e0e76e58edf7d`  
+		Last Modified: Tue, 04 Feb 2025 20:15:56 GMT  
+		Size: 34.7 MB (34692551 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad95a550c37eefa43930c65e5e071c5270cd901ef825518193df797aea0f00b2`  
-		Last Modified: Fri, 31 Jan 2025 03:08:16 GMT  
-		Size: 1.7 KB (1660 bytes)  
+	-	`sha256:1f20b8f0ffc82ed8b3c92b80f00da13f6f563f04210aebc39a8567f642bc5c98`  
+		Last Modified: Tue, 04 Feb 2025 20:15:55 GMT  
+		Size: 1.7 KB (1661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:12-jdk23-eclipse-temurin` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:77400c80ef224454919c8693bd5b1e5100ab7832189bc360a3ce4df14bc22d5f
+$ docker pull jetty@sha256:2c39b3447fd2349f0f8d4413c79dcb2cc85bc3f7033c2be49cdd27a198c160c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **3.7 MB (3664540 bytes)**  
+-	Total Size: **3.7 MB (3667889 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9d91c1b99e56a902491f213775beed2ff4e1ada64d9f249258857b14423e1312`
+-	Image ID: `sha256:b32be137bc5d3d7c5cbba847092f8f5f197b1cb87aa35eadc59a0d6249af388e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a86dee9c4a6b0ca973c2051a1242a81c1edba4235b897af86fe4b872a39209a1`  
-		Last Modified: Fri, 31 Jan 2025 03:08:16 GMT  
-		Size: 3.6 MB (3642890 bytes)  
+	-	`sha256:204bc5f115768b0a99a2e0503eea7758fe8b50dcbbd8076aa9b890c9b708376c`  
+		Last Modified: Tue, 04 Feb 2025 20:15:55 GMT  
+		Size: 3.6 MB (3646240 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d08a2d9cd6c7b96a50441fd5e6b1c9e54310a38ecfbbb338ad2438c01fcbf31b`  
-		Last Modified: Fri, 31 Jan 2025 03:08:16 GMT  
-		Size: 21.6 KB (21650 bytes)  
+	-	`sha256:d578ecaa2ccda000fc149af18ac2e3221651c06fb45cd6681c4f997adba86852`  
+		Last Modified: Tue, 04 Feb 2025 20:15:55 GMT  
+		Size: 21.6 KB (21649 bytes)  
 		MIME: application/vnd.in-toto+json
