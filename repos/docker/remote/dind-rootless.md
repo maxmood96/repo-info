@@ -1,7 +1,7 @@
 ## `docker:dind-rootless`
 
 ```console
-$ docker pull docker@sha256:56a83dc0f900a9fb574133276f8f5e795767b20083baad757f52b49a22de0f7c
+$ docker pull docker@sha256:2873ae6e41faf7277ca472d99ed766daf5e372344f8987f0b0cb344c696a54d3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull docker@sha256:56a83dc0f900a9fb574133276f8f5e795767b20083baad757f52
 ### `docker:dind-rootless` - linux; amd64
 
 ```console
-$ docker pull docker@sha256:db76a27a7df4d9dd42b5fb9de8689f564e353781489a3098e3989312c7ebbe76
+$ docker pull docker@sha256:a157171b84f7418c50b353db97cc440452829d948fc4c844c04a1c8f86170ec5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.6 MB (157613314 bytes)**  
+-	Total Size: **157.6 MB (157612906 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:88bfca97148f5c80307393a76b2f8d301831ea39c286b3626d8dfa6782705b78`
+-	Image ID: `sha256:348b7de5599e36b7d8bad94451c1e32183ba8c7ae6661f035913ae35c6e61a6a`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 
 ```dockerfile
@@ -67,7 +67,7 @@ RUN set -eux; 	addgroup -S dockremap; 	adduser -S -G dockremap dockremap; 	echo 
 # Wed, 22 Jan 2025 18:04:22 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.5.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.5.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.5.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.5.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		--exclude 'docker/docker' 	; 	rm docker.tgz; 		dockerd --version; 	containerd --version; 	ctr --version; 	runc --version # buildkit
 # Wed, 22 Jan 2025 18:04:22 GMT
-ENV DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e
+ENV DIND_COMMIT=c43aa0b6aa7c88343f0951ba9a39c69aa51c54ef
 # Wed, 22 Jan 2025 18:04:22 GMT
 RUN set -eux; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind # buildkit
 # Wed, 22 Jan 2025 18:04:22 GMT
@@ -137,81 +137,81 @@ USER rootless
 		Last Modified: Thu, 23 Jan 2025 01:27:45 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:baa527fc0c6899833d585216d1abe702970e7538c7c32cf7aacdb40888c6cfb8`  
-		Last Modified: Thu, 23 Jan 2025 02:09:02 GMT  
-		Size: 6.7 MB (6733524 bytes)  
+	-	`sha256:2403cbc616961c7e26999a9eb6ceeae2f7b0623e8752cdfe061ced5441aa4493`  
+		Last Modified: Mon, 03 Feb 2025 23:26:42 GMT  
+		Size: 6.7 MB (6732083 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:259974ebed9bd6ee843fbf1df0d2bc5675c02252ddb5a2cbf011a72b4458ce0d`  
-		Last Modified: Thu, 23 Jan 2025 02:09:02 GMT  
-		Size: 89.4 KB (89429 bytes)  
+	-	`sha256:d605375def15ba11134316578ae08ef6ddc38422522e5dd76cd9486fc6150cce`  
+		Last Modified: Mon, 03 Feb 2025 23:26:42 GMT  
+		Size: 90.3 KB (90324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d985a58df362c96129a43d7ada6ecdb2a9fca80103cb889832127656142a0186`  
-		Last Modified: Thu, 23 Jan 2025 02:09:02 GMT  
-		Size: 1.0 KB (1020 bytes)  
+	-	`sha256:e83a4b202ecbed05853154a1e02abba4a48f6d327980c68d291376500d2dfa95`  
+		Last Modified: Mon, 03 Feb 2025 23:26:42 GMT  
+		Size: 1.0 KB (1021 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dbc1f0abe9fe9184201f15eca214e0149a39568a8d48cf59d584db45f77fc91c`  
-		Last Modified: Thu, 23 Jan 2025 02:09:03 GMT  
-		Size: 58.4 MB (58385800 bytes)  
+	-	`sha256:fc88328b6b36bb64af319d37e3f6b41bd3733fba522caa827a2497389c91e731`  
+		Last Modified: Mon, 03 Feb 2025 23:26:43 GMT  
+		Size: 58.4 MB (58385803 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ade5902f257374fbf5ccac4acb40f9280459637eed300ca092c3f70c8c45785c`  
-		Last Modified: Thu, 23 Jan 2025 02:09:03 GMT  
-		Size: 1.5 KB (1513 bytes)  
+	-	`sha256:c0880d0b9c4606ca10566e6702e16e02e63a79fa614984fac46d8c8c6cb155ea`  
+		Last Modified: Mon, 03 Feb 2025 23:26:43 GMT  
+		Size: 1.6 KB (1638 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e2d2c1f1e034141f7726354ab92690e3eeca6e3f341574884d908a9277c0eaf`  
-		Last Modified: Thu, 23 Jan 2025 02:09:03 GMT  
-		Size: 3.3 KB (3259 bytes)  
+	-	`sha256:57f334a36fe94f9d7b11ca56260db877afd319b5b0ad8486cc1fe1a3d01ecf15`  
+		Last Modified: Mon, 03 Feb 2025 23:26:43 GMT  
+		Size: 3.3 KB (3260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f3ea0620966869f140ffaa4462c287848bb717fb3c6a02a766c8ea8439d0371e`  
-		Last Modified: Thu, 23 Jan 2025 03:08:27 GMT  
-		Size: 986.6 KB (986598 bytes)  
+	-	`sha256:476daf74a1eea3e96184e62bf6dc900b90efe8477ae97eac7654d430576dfc0a`  
+		Last Modified: Tue, 04 Feb 2025 00:07:33 GMT  
+		Size: 986.6 KB (986605 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b4984d2f402691263a9c5c18074740cfccdb72951fd9856c2f7a730b010211f9`  
-		Last Modified: Thu, 23 Jan 2025 03:08:27 GMT  
+	-	`sha256:1609f67907fe220323ea0a9f56e7305cff1765028bc6d45532e6cdd1be559920`  
+		Last Modified: Tue, 04 Feb 2025 00:07:33 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0cdd5ac4aa317394ba9361470815b714bb7663f967e5671e9ca2d871ce15b20a`  
-		Last Modified: Thu, 23 Jan 2025 03:08:27 GMT  
-		Size: 1.0 KB (1045 bytes)  
+	-	`sha256:890cf7cf71f606a38965ee59131c584ac55fca42c0375222094a80fd9def88c2`  
+		Last Modified: Tue, 04 Feb 2025 00:07:33 GMT  
+		Size: 1.0 KB (1046 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e64397ca3b45f7979301acb247d38b17226111b80efc926a810263ce56b0fbcf`  
-		Last Modified: Thu, 23 Jan 2025 03:08:28 GMT  
-		Size: 21.3 MB (21319724 bytes)  
+	-	`sha256:48ca8d19c18280d1b1f2e75f362ed82dcf5398963d75f19b01a3f5d6391513c3`  
+		Last Modified: Tue, 04 Feb 2025 00:07:34 GMT  
+		Size: 21.3 MB (21319726 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:287d0653af5bd2c73fadce88e136e426bb74187b4a3d08268ebcf5d96f19fb7f`  
-		Last Modified: Thu, 23 Jan 2025 03:08:28 GMT  
-		Size: 190.0 B  
+	-	`sha256:2848e23c96d418048303561b5f61314e59d8452700c398e0026fe636499c1157`  
+		Last Modified: Tue, 04 Feb 2025 00:07:34 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:dind-rootless` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:238ad9962fcdb3cf4c7abffae9212f80661a532b7d05728f37139394eda46a6b
+$ docker pull docker@sha256:df44b71a32efd74223ba213444c37bc9a37d97b469bb9311f21d4996df6fab64
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **30.6 KB (30618 bytes)**  
+-	Total Size: **30.6 KB (30617 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:22cf74b98d6e977c4a877f3c69047820c1bd5e6c56c67d2fe6414f89ccffcc14`
+-	Image ID: `sha256:2cf8a0b83b181f140debb51c7ace764c952e92e0b78f52e9c7d7edb50b5e36f3`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e79ffe7c6b0ba138d39ecab946354397fc6753436e42afedbf312e9afdc033ef`  
-		Last Modified: Thu, 23 Jan 2025 03:08:25 GMT  
-		Size: 30.6 KB (30618 bytes)  
+	-	`sha256:682f451ed58907d4bb2f0a264e030a87be4c05c7921b9f45051eae93c5d61897`  
+		Last Modified: Tue, 04 Feb 2025 00:07:32 GMT  
+		Size: 30.6 KB (30617 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `docker:dind-rootless` - linux; arm64 variant v8
 
 ```console
-$ docker pull docker@sha256:7f0803c4b4dcb4a47eb4177458dd58efe02edad1503bc048fdef8987a4958c8f
+$ docker pull docker@sha256:39e656c3e2d167c56d849e70043c05c8d3ef82a6868779bcae364ed7a5e8dd21
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **151.2 MB (151201931 bytes)**  
+-	Total Size: **151.2 MB (151200079 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b9e61075a779a67f9498a212850f62c61335af9e57c7e33ccffdf73f2a9b1350`
+-	Image ID: `sha256:e622314e16721f9553e0fd1018ca05d0fcf240cf94b6e2c09303b87efa4d1849`
 -	Entrypoint: `["dockerd-entrypoint.sh"]`
 
 ```dockerfile
@@ -258,7 +258,7 @@ RUN set -eux; 	addgroup -S dockremap; 	adduser -S -G dockremap dockremap; 	echo 
 # Wed, 22 Jan 2025 18:04:22 GMT
 RUN set -eux; 		apkArch="$(apk --print-arch)"; 	case "$apkArch" in 		'x86_64') 			url='https://download.docker.com/linux/static/stable/x86_64/docker-27.5.1.tgz'; 			;; 		'armhf') 			url='https://download.docker.com/linux/static/stable/armel/docker-27.5.1.tgz'; 			;; 		'armv7') 			url='https://download.docker.com/linux/static/stable/armhf/docker-27.5.1.tgz'; 			;; 		'aarch64') 			url='https://download.docker.com/linux/static/stable/aarch64/docker-27.5.1.tgz'; 			;; 		*) echo >&2 "error: unsupported 'docker.tgz' architecture ($apkArch)"; exit 1 ;; 	esac; 		wget -O 'docker.tgz' "$url"; 		tar --extract 		--file docker.tgz 		--strip-components 1 		--directory /usr/local/bin/ 		--no-same-owner 		--exclude 'docker/docker' 	; 	rm docker.tgz; 		dockerd --version; 	containerd --version; 	ctr --version; 	runc --version # buildkit
 # Wed, 22 Jan 2025 18:04:22 GMT
-ENV DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e
+ENV DIND_COMMIT=c43aa0b6aa7c88343f0951ba9a39c69aa51c54ef
 # Wed, 22 Jan 2025 18:04:22 GMT
 RUN set -eux; 	wget -O /usr/local/bin/dind "https://raw.githubusercontent.com/docker/docker/${DIND_COMMIT}/hack/dind"; 	chmod +x /usr/local/bin/dind # buildkit
 # Wed, 22 Jan 2025 18:04:22 GMT
@@ -328,67 +328,67 @@ USER rootless
 		Last Modified: Thu, 23 Jan 2025 03:08:53 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fca84bc4fad8be977a98244fe4e57bc368eff32ff6b50ddd18e1c260f53e7b99`  
-		Last Modified: Thu, 23 Jan 2025 04:47:12 GMT  
-		Size: 7.0 MB (6981845 bytes)  
+	-	`sha256:859b46adde16ac20f939c1d3ea1ce5de07e92a208bd0da3583cd7149abb8eb73`  
+		Last Modified: Mon, 03 Feb 2025 23:26:37 GMT  
+		Size: 7.0 MB (6978266 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:96021143a70a1ffa7d6627e80fafb154c9ca8a693d6e424ee1b3eec5641428ec`  
-		Last Modified: Thu, 23 Jan 2025 04:47:11 GMT  
-		Size: 97.8 KB (97789 bytes)  
+	-	`sha256:2efea53e779466522491b6a077f6f7c013855db9ad65c542950463fa98981fcd`  
+		Last Modified: Mon, 03 Feb 2025 23:26:37 GMT  
+		Size: 99.4 KB (99404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:37644634ce7a2b7939629b880ba972ebe2a257ca854767c2311e1c6b1eb7ac08`  
-		Last Modified: Thu, 23 Jan 2025 04:47:11 GMT  
-		Size: 1.0 KB (1021 bytes)  
+	-	`sha256:96cbfc619dfdd9033f555b9b91644331be549ca48b871ab96dd71db560d65418`  
+		Last Modified: Mon, 03 Feb 2025 23:26:36 GMT  
+		Size: 1.0 KB (1019 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0bac241426639d246bf7a3b5825770483e8e8d81ecc4e4f5f7ad95a628c9d763`  
-		Last Modified: Thu, 23 Jan 2025 04:47:13 GMT  
-		Size: 54.0 MB (53950878 bytes)  
+	-	`sha256:76f2a1e1437518876846dcc30166bad7f3c4a65d3850f30cdc353f1d246e4b79`  
+		Last Modified: Mon, 03 Feb 2025 23:26:38 GMT  
+		Size: 54.0 MB (53950871 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ad260630580f7857ee1493b2aae691449c8cdbf73e157f77632f8416d528972`  
-		Last Modified: Thu, 23 Jan 2025 04:47:12 GMT  
-		Size: 1.5 KB (1513 bytes)  
+	-	`sha256:fec2fbc70a7a882c96f1f8d632b359525de71c2c43a5a39a8a4b54f4bbe95be2`  
+		Last Modified: Mon, 03 Feb 2025 23:26:37 GMT  
+		Size: 1.6 KB (1639 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce9d282f9bdd3ce090da601a745fe706495baf4d0467ecd6cf32b166177d4936`  
-		Last Modified: Thu, 23 Jan 2025 04:47:12 GMT  
-		Size: 3.3 KB (3261 bytes)  
+	-	`sha256:c79c5e1b67dd3fc6f727eb0e7affb635ea481a92f47019b7e5cd6b3631efec53`  
+		Last Modified: Mon, 03 Feb 2025 23:26:38 GMT  
+		Size: 3.3 KB (3260 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a4a6661649bc0a5f53c20e261be6547e031bc7039f070ff124af73acac002060`  
-		Last Modified: Thu, 23 Jan 2025 05:28:50 GMT  
-		Size: 1.0 MB (1014203 bytes)  
+	-	`sha256:df2eea88b147c76eae757d2341913762974ba45bf5ea43a9cb4408640f82d7f3`  
+		Last Modified: Tue, 04 Feb 2025 00:07:31 GMT  
+		Size: 1.0 MB (1014210 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f8fa0666de075ce06bdccbc1d74634709f452807da4c42e6a4f0ab6d904423cb`  
-		Last Modified: Thu, 23 Jan 2025 05:28:50 GMT  
+	-	`sha256:b860d9cffdf86d8712499f6ff002724e862664d2272a6ea001a283369d8f25c2`  
+		Last Modified: Tue, 04 Feb 2025 00:07:31 GMT  
 		Size: 115.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4768a704782188ef0f4f6803808df53a20db2bfb94a3a47e4a28742dcebcf795`  
-		Last Modified: Thu, 23 Jan 2025 05:28:50 GMT  
-		Size: 1.0 KB (1046 bytes)  
+	-	`sha256:73a39bc7861b1e529f2d7777f4adb2232f9fdef92eea1718afa7113d096ae648`  
+		Last Modified: Tue, 04 Feb 2025 00:07:31 GMT  
+		Size: 1.0 KB (1045 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2272f3e5fb0463b24eab6553c03df6ce274dd07835ac573c58ec1ec5256608c9`  
-		Last Modified: Thu, 23 Jan 2025 05:28:51 GMT  
-		Size: 23.2 MB (23178657 bytes)  
+	-	`sha256:5ea4454c09ee658798773f044f8b244f66b1b1f2b5d459637e31657ce48abb74`  
+		Last Modified: Tue, 04 Feb 2025 00:07:32 GMT  
+		Size: 23.2 MB (23178648 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:390bbb7fb8562cb56b3a85e92846af1174012a777c6a5b52d70c8338be1b0b6d`  
-		Last Modified: Thu, 23 Jan 2025 05:28:51 GMT  
-		Size: 189.0 B  
+	-	`sha256:e0fb0917a2d566611941efbd2551ac82e7d50ba4bd6a97933114a22f77e02f06`  
+		Last Modified: Tue, 04 Feb 2025 00:07:31 GMT  
+		Size: 188.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `docker:dind-rootless` - unknown; unknown
 
 ```console
-$ docker pull docker@sha256:69387af9aa3f1929049c18d6df3d7ac40d29fdf0d87b014e573d87bdcae20617
+$ docker pull docker@sha256:2fa441991cb7b7a4f69e716584e6b039fb5c814e857052047a6b552c8e885fe2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **30.8 KB (30787 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:81134c1aa6f821e48f8f408c2a4bd57050bb804093772e67319772d756541b64`
+-	Image ID: `sha256:2776ceafc60d7ff53c0b67c5d05c40a2b98edca5debbbc1a12a49ad87b930f5c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ccceb9339277a48612b485a60de75b351b82ff8023f4f605a8e232578e7d7c26`  
-		Last Modified: Thu, 23 Jan 2025 05:28:48 GMT  
+	-	`sha256:790b7604e1f55fb76cced3256a3be82b9c9b0f6bb39e2e4461b7464746e179e0`  
+		Last Modified: Tue, 04 Feb 2025 00:07:30 GMT  
 		Size: 30.8 KB (30787 bytes)  
 		MIME: application/vnd.in-toto+json
