@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:91471f88c9df001c59ec1e3e9e715e48a7ab8e96bec2554d44bd760cc0ddff2d`
+- Image ID: `sha256:7fc6260661cca62da45094b3d5d01eb10b3ae352ca934691651dd8543956046a`
 - Created: `2024-01-09T01:14:25Z`
 - Virtual Size: ~ 342.11 Mb  
   (total size of all layers on-disk)
@@ -893,12 +893,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.23-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.23-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `git=1:2.39.5-0+deb12u1`
+### `dpkg` source package: `git=1:2.39.5-0+deb12u2`
 
 Binary Packages:
 
-- `git=1:2.39.5-0+deb12u1`
-- `git-man=1:2.39.5-0+deb12u1`
+- `git=1:2.39.5-0+deb12u2`
+- `git-man=1:2.39.5-0+deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -925,17 +925,17 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git=1:2.39.5-0+deb12u1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.5-0%2bdeb12u1.dsc' git_2.39.5-0+deb12u1.dsc 2857 SHA256:eccfcf6b7dba258ec5e50c503e33f4f21e76b2a2540af36d69cab37e4ce04494
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.5.orig.tar.xz' git_2.39.5.orig.tar.xz 7171400 SHA256:c58da92c378df4a986ca33266897a7397e86c22ee266a284d8c2432c39066b59
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.5-0%2bdeb12u1.debian.tar.xz' git_2.39.5-0+deb12u1.debian.tar.xz 742400 SHA256:5cd79b5a89b930936aa1cb5ab2ec53525a978c28ffd4017b47310ddc7660938a
+$ apt-get source -qq --print-uris git=1:2.39.5-0+deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.39.5-0%2bdeb12u2.dsc' git_2.39.5-0+deb12u2.dsc 2982 SHA256:52c384a95da514d17749447d581bb3876a398c8632f2bde139bdb6627711f58f
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.39.5.orig.tar.xz' git_2.39.5.orig.tar.xz 7171400 SHA256:c58da92c378df4a986ca33266897a7397e86c22ee266a284d8c2432c39066b59
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.39.5-0%2bdeb12u2.debian.tar.xz' git_2.39.5-0+deb12u2.debian.tar.xz 747556 SHA256:5a6b6e48c7f19df294d2a8c030c219688d1823326d209ad15a06be3743d9cd2b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/git/1:2.39.5-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.39.5-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.39.5-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/git/1:2.39.5-0+deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/git/1:2.39.5-0+deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/git/1:2.39.5-0+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.36-9+deb12u9`
 

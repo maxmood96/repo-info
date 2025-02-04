@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a42fd4116a699db2d4e7a8dcc690dd3362f29a31d0305d44e60b1da7400121a8`
+- Image ID: `sha256:2d93add3ca2246e80a01713194ef3cc70909c3ccce2b0fc64adb66e63e0d3fce`
 - Created: `2024-05-22T20:42:04Z`
-- Virtual Size: ~ 111.82 Mb  
+- Virtual Size: ~ 111.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -239,12 +239,12 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `curl=8.5.0-2ubuntu10.5`
+### `dpkg` source package: `curl=8.5.0-2ubuntu10.6`
 
 Binary Packages:
 
-- `curl=8.5.0-2ubuntu10.5`
-- `libcurl4t64:amd64=8.5.0-2ubuntu10.5`
+- `curl=8.5.0-2ubuntu10.6`
+- `libcurl4t64:amd64=8.5.0-2ubuntu10.6`
 
 Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -1136,11 +1136,11 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed6t64/copyright`, `/usr/share/d
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `nghttp2=1.59.0-1ubuntu0.1`
+### `dpkg` source package: `nghttp2=1.59.0-1ubuntu0.2`
 
 Binary Packages:
 
-- `libnghttp2-14:amd64=1.59.0-1ubuntu0.1`
+- `libnghttp2-14:amd64=1.59.0-1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/libnghttp2-14/copyright`)
 
@@ -1492,11 +1492,11 @@ Licenses: (parsed from: `/usr/share/doc/login/copyright`, `/usr/share/doc/passwd
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2`
+### `dpkg` source package: `sqlite3=3.45.1-1ubuntu2.1`
 
 Binary Packages:
 
-- `libsqlite3-0:amd64=3.45.1-1ubuntu2`
+- `libsqlite3-0:amd64=3.45.1-1ubuntu2.1`
 
 Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`)
 
@@ -1572,11 +1572,11 @@ Licenses: (parsed from: `/usr/share/doc/tar/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `tzdata=2024a-3ubuntu1.1`
+### `dpkg` source package: `tzdata=2024b-0ubuntu0.24.04`
 
 Binary Packages:
 
-- `tzdata=2024a-3ubuntu1.1`
+- `tzdata=2024b-0ubuntu0.24.04`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -1601,17 +1601,32 @@ Licenses: (parsed from: `/usr/share/doc/ubuntu-keyring/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `util-linux=2.39.3-9ubuntu6.1`
+### `dpkg` source package: `unminimize=0.2.1`
 
 Binary Packages:
 
-- `bsdutils=1:2.39.3-9ubuntu6.1`
-- `libblkid1:amd64=2.39.3-9ubuntu6.1`
-- `libmount1:amd64=2.39.3-9ubuntu6.1`
-- `libsmartcols1:amd64=2.39.3-9ubuntu6.1`
-- `libuuid1:amd64=2.39.3-9ubuntu6.1`
-- `mount=2.39.3-9ubuntu6.1`
-- `util-linux=2.39.3-9ubuntu6.1`
+- `unminimize=0.2.1`
+
+Licenses: (parsed from: `/usr/share/doc/unminimize/copyright`)
+
+- `GPL-2`
+- `GPL-2.0+`
+
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
+
+
+### `dpkg` source package: `util-linux=2.39.3-9ubuntu6.2`
+
+Binary Packages:
+
+- `bsdutils=1:2.39.3-9ubuntu6.2`
+- `libblkid1:amd64=2.39.3-9ubuntu6.2`
+- `libmount1:amd64=2.39.3-9ubuntu6.2`
+- `libsmartcols1:amd64=2.39.3-9ubuntu6.2`
+- `libuuid1:amd64=2.39.3-9ubuntu6.2`
+- `mount=2.39.3-9ubuntu6.2`
+- `util-linux=2.39.3-9ubuntu6.2`
 
 Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/libblkid1/copyright`, `/usr/share/doc/libmount1/copyright`, `/usr/share/doc/libsmartcols1/copyright`, `/usr/share/doc/libuuid1/copyright`, `/usr/share/doc/mount/copyright`, `/usr/share/doc/util-linux/copyright`)
 
