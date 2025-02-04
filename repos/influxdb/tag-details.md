@@ -2522,7 +2522,7 @@ $ docker pull influxdb@sha256:c47b353495ece44d6733dea88bf4788774915438005922fbb2
 ## `influxdb:2`
 
 ```console
-$ docker pull influxdb@sha256:96534795c679c147f7e27dbf9debc1cca143844b9b2427d9b0233fd7ef0615ab
+$ docker pull influxdb@sha256:98fa898e7d2676d27cedc28895aa066fe4cf0d9ea7f1bd23ff815db13d68aba0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2659,124 +2659,124 @@ $ docker pull influxdb@sha256:715995d8f55100e64405e94d916210e2253c566699b37b4af5
 ### `influxdb:2` - linux; arm64 variant v8
 
 ```console
-$ docker pull influxdb@sha256:4f674ba91d974cc8fd9fca55df891e89b9fc4ed70589ae274a876b2d3fee3814
+$ docker pull influxdb@sha256:a0853b30b388d388e7a9186ec7a6d22f4bf7135f3cd66addccaade715ec43098
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **162.4 MB (162387572 bytes)**  
+-	Total Size: **162.4 MB (162387450 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8a0fae1e3e393bd81064a5a47039c9fec27a2f77c8be95795a3dc1466ad81ff`
+-	Image ID: `sha256:983db95fcc90a18469ae2f1c33ad0a6f5123a2771936edd9999cba3ebdd85183`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 19:42:18 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1736726400'
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1738540800'
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN export DEBIAN_FRONTEND=noninteractive &&     apt-get update -y &&     apt-get install -y --no-install-recommends       ca-certificates       curl       gnupg &&     apt-get clean &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN case "$(dpkg --print-architecture)" in       *amd64) arch=amd64 ;;       *arm64) arch=arm64 ;;       *) echo 'Unsupported architecture' && exit 1 ;;     esac &&     curl -fL "https://github.com/TomWright/dasel/releases/download/v2.4.1/dasel_linux_${arch}.gz" | gzip -d > /usr/local/bin/dasel &&     case ${arch} in       amd64) echo '8e9fb0aa24e35774fab792005f05f9df141c22ec0a7436c7329a932582a10200  /usr/local/bin/dasel' ;;       arm64) echo '535f0f4c6362aa4b773664f7cfdb52d86f2723eac52a1aca6dfc6a69e2341c17  /usr/local/bin/dasel' ;;     esac | sha256sum -c - &&     chmod +x /usr/local/bin/dasel &&     dasel --version # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN groupadd -r influxdb --gid=1000 &&     useradd -r -g influxdb --uid=1000 --create-home --home-dir=/home/influxdb --shell=/bin/bash influxdb # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV GOSU_VER=1.16
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN case "$(dpkg --print-architecture)" in       *amd64) arch=amd64 ;;       *arm64) arch=arm64 ;;       *) echo 'Unsupported architecture' && exit 1 ;;     esac &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys       B42F6819007F00F88E364FD4036A9C25BF357DD4 &&     curl -fLo /usr/local/bin/gosu     "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-${arch}"          -fLo /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-${arch}.asc" &&     gpg --batch --verify /usr/local/bin/gosu.asc                          /usr/local/bin/gosu &&     rm -rf /usr/local/bin/gosu.asc &&     chmod +x /usr/local/bin/gosu &&     gosu --version &&     gosu nobody true # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUXDB_VERSION=2.7.11
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN case "$(dpkg --print-architecture)" in       *amd64) arch=amd64 ;;       *arm64) arch=arm64 ;;       *) echo 'Unsupported architecture' && exit 1 ;;     esac &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys       9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E &&     curl -fLO "https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz"          -fLO "https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz.asc" &&     gpg --batch --verify "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz.asc"                          "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz" &&     tar xzf "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz" &&     cp "influxdb2-${INFLUXDB_VERSION}/usr/bin/influxd" /usr/local/bin/influxd &&     rm -rf "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz"            "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz.asc"            "influxdb2_linux_${arch}" &&     influxd version # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUX_CLI_VERSION=2.7.5
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN case "$(dpkg --print-architecture)" in       *amd64) arch=amd64 ;;       *arm64) arch=arm64 ;;       *) echo 'Unsupported architecture' && exit 1 ;;     esac &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys       9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E &&     curl -fLO "https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz"          -fLO "https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz.asc" &&     gpg --batch --verify "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz.asc"                          "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz" &&     tar xzf "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz" &&     cp influx /usr/local/bin/influx &&     rm -rf "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}"            "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz"            "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz.asc" &&     influx version # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN mkdir /docker-entrypoint-initdb.d &&     mkdir -p /var/lib/influxdb2 &&     chown -R influxdb:influxdb /var/lib/influxdb2 &&     mkdir -p /etc/influxdb2 &&     chown -R influxdb:influxdb /etc/influxdb2 # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 VOLUME [/var/lib/influxdb2 /etc/influxdb2]
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 COPY default-config.yml /etc/defaults/influxdb2/config.yml # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 CMD ["influxd"]
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 EXPOSE map[8086/tcp:{}]
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUX_CONFIGS_PATH=/etc/influxdb2/influx-configs
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUXD_INIT_PORT=9999
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUXD_INIT_PING_ATTEMPTS=600
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ```
 
 -	Layers:
-	-	`sha256:7ce705000c390df8b2edde0e8b9c65a6677da4503a8f8fd89b355a3f827a275f`  
-		Last Modified: Tue, 14 Jan 2025 01:35:55 GMT  
-		Size: 28.0 MB (28041031 bytes)  
+	-	`sha256:4d2547c084994a809c138e688fbe4ee14eedbc6e2defc5b1c680edd16e291473`  
+		Last Modified: Tue, 04 Feb 2025 01:37:53 GMT  
+		Size: 28.0 MB (28040881 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0519160658aa38aa8ec1a9223db51f24ef66cec37c87e5d3252a5b1636bf481`  
-		Last Modified: Tue, 14 Jan 2025 07:23:55 GMT  
-		Size: 9.6 MB (9587362 bytes)  
+	-	`sha256:54806bc8a49567e85ad0750f0dce66eaf91362bc29491ec131442083ba9c9e18`  
+		Last Modified: Tue, 04 Feb 2025 09:58:11 GMT  
+		Size: 9.6 MB (9587403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7a8b4761500ec9c11b5fdbefce98c329f2d5853652b2434b1f174b192974be0`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
-		Size: 5.5 MB (5463786 bytes)  
+	-	`sha256:47843b5b085b6c9f2fda4ee7957ebaffa0daef9fd667012589bd8e7d20b34013`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
+		Size: 5.5 MB (5463797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6470a1080b2858907cf5c6754c4f40e5a95cd979fd29fff60cfdbb7ebb55dee1`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
+	-	`sha256:a421e8cb12ad6b88bdf2d8fd1460151af80ccbee3525494220276682a00cafc1`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
 		Size: 3.2 KB (3227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41fcbe061689e52b7c5b7929a1aceb8ec5d535130bed1d5acffbfdc7eff569dd`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
-		Size: 936.1 KB (936104 bytes)  
+	-	`sha256:3b11c10b88b3f9dbdab8defa93a21a9bb882c3f1a72086c81c27948f1333b12c`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
+		Size: 936.1 KB (936112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0e6484dfd2b5865354d6aee22d73005c5ab86111bbdfd94d57c132d963b06c3`  
-		Last Modified: Tue, 14 Jan 2025 07:23:58 GMT  
-		Size: 96.2 MB (96151392 bytes)  
+	-	`sha256:8c2083983eab2c178e474f48e191cb742a40484709a24185000663e799d18788`  
+		Last Modified: Tue, 04 Feb 2025 09:58:13 GMT  
+		Size: 96.2 MB (96151360 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e45f168297634a1e2c074e189b69dc1ab2be83fec68ef455e38b51176c537c66`  
-		Last Modified: Tue, 14 Jan 2025 07:23:56 GMT  
-		Size: 22.2 MB (22197942 bytes)  
+	-	`sha256:a78ed4072fa4b8accdf5539ea5a35cb434b479947edfa5cafc790e8f8226d85b`  
+		Last Modified: Tue, 04 Feb 2025 09:58:12 GMT  
+		Size: 22.2 MB (22197941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0470c74fd97d622094d009fac154789ef2980d85506e607abc3cb8b6c8e8565`  
-		Last Modified: Tue, 14 Jan 2025 07:23:56 GMT  
-		Size: 207.0 B  
+	-	`sha256:e85c249a1c12a04e99e2bbd2a9ed99b68d57ed1d61654381a3ae1609cafacba3`  
+		Last Modified: Tue, 04 Feb 2025 09:58:12 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d253f731479a5ca137c2c54178b12c934a42e48ff4291854e0cd1c204d00ebb6`  
-		Last Modified: Tue, 14 Jan 2025 07:23:56 GMT  
-		Size: 234.0 B  
+	-	`sha256:46716f23566ca6b6a96f1045898eacfc0202b6ff39e37612493b38f282683540`  
+		Last Modified: Tue, 04 Feb 2025 09:58:12 GMT  
+		Size: 232.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef753136aa92703545b2667815093321a19c5789fcd04c5dd4856dea68a6c057`  
-		Last Modified: Tue, 14 Jan 2025 07:23:57 GMT  
+	-	`sha256:0ea4c1806d36551ba8f96b2e8a549f909c44570bd63eadf1efe31ca4e13238d2`  
+		Last Modified: Tue, 04 Feb 2025 09:58:13 GMT  
 		Size: 6.3 KB (6287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `influxdb:2` - unknown; unknown
 
 ```console
-$ docker pull influxdb@sha256:6009930905c9627c0d9d66b0c42932b69c39a1ba551d0b15f0b246302d5f769f
+$ docker pull influxdb@sha256:d1c58156e013ae168f4a2ac6b3d2f262c85761a507d137d1aa2d9d248ef9f8d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.9 MB (2881758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9a094fa8745410e40423d0f9f4341a941cf34e40c450ca4468f7eb6d24fddbd`
+-	Image ID: `sha256:edf9e0521089d9fe8b98aca44730405432e578a27a3e855f0257a94f9bba9c10`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:20efc527a51d42a77be3f33e586725bb27964134cfe6f4e9426ee9b7d4758eec`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
+	-	`sha256:36cffdea5632b8ec076e96810b7e7fa743d65ca3cbabc2b5a2b42bf3f541575b`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
 		Size: 2.8 MB (2847855 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:85a6b56548878df25c8f32a7dad31954a8b257013a5a225a66d2cfc4ceb9804e`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
+	-	`sha256:216c8a9b6caa7116ef00c599625f7f4c31f65988ca9041370f9b86b835be30dd`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
 		Size: 33.9 KB (33903 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3044,7 +3044,7 @@ $ docker pull influxdb@sha256:fe1bf94d7c78e453275d88beed4f073b9eb60f5f02d02da46e
 ## `influxdb:2.7`
 
 ```console
-$ docker pull influxdb@sha256:96534795c679c147f7e27dbf9debc1cca143844b9b2427d9b0233fd7ef0615ab
+$ docker pull influxdb@sha256:98fa898e7d2676d27cedc28895aa066fe4cf0d9ea7f1bd23ff815db13d68aba0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3181,124 +3181,124 @@ $ docker pull influxdb@sha256:715995d8f55100e64405e94d916210e2253c566699b37b4af5
 ### `influxdb:2.7` - linux; arm64 variant v8
 
 ```console
-$ docker pull influxdb@sha256:4f674ba91d974cc8fd9fca55df891e89b9fc4ed70589ae274a876b2d3fee3814
+$ docker pull influxdb@sha256:a0853b30b388d388e7a9186ec7a6d22f4bf7135f3cd66addccaade715ec43098
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **162.4 MB (162387572 bytes)**  
+-	Total Size: **162.4 MB (162387450 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8a0fae1e3e393bd81064a5a47039c9fec27a2f77c8be95795a3dc1466ad81ff`
+-	Image ID: `sha256:983db95fcc90a18469ae2f1c33ad0a6f5123a2771936edd9999cba3ebdd85183`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 19:42:18 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1736726400'
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1738540800'
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN export DEBIAN_FRONTEND=noninteractive &&     apt-get update -y &&     apt-get install -y --no-install-recommends       ca-certificates       curl       gnupg &&     apt-get clean &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN case "$(dpkg --print-architecture)" in       *amd64) arch=amd64 ;;       *arm64) arch=arm64 ;;       *) echo 'Unsupported architecture' && exit 1 ;;     esac &&     curl -fL "https://github.com/TomWright/dasel/releases/download/v2.4.1/dasel_linux_${arch}.gz" | gzip -d > /usr/local/bin/dasel &&     case ${arch} in       amd64) echo '8e9fb0aa24e35774fab792005f05f9df141c22ec0a7436c7329a932582a10200  /usr/local/bin/dasel' ;;       arm64) echo '535f0f4c6362aa4b773664f7cfdb52d86f2723eac52a1aca6dfc6a69e2341c17  /usr/local/bin/dasel' ;;     esac | sha256sum -c - &&     chmod +x /usr/local/bin/dasel &&     dasel --version # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN groupadd -r influxdb --gid=1000 &&     useradd -r -g influxdb --uid=1000 --create-home --home-dir=/home/influxdb --shell=/bin/bash influxdb # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV GOSU_VER=1.16
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN case "$(dpkg --print-architecture)" in       *amd64) arch=amd64 ;;       *arm64) arch=arm64 ;;       *) echo 'Unsupported architecture' && exit 1 ;;     esac &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys       B42F6819007F00F88E364FD4036A9C25BF357DD4 &&     curl -fLo /usr/local/bin/gosu     "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-${arch}"          -fLo /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-${arch}.asc" &&     gpg --batch --verify /usr/local/bin/gosu.asc                          /usr/local/bin/gosu &&     rm -rf /usr/local/bin/gosu.asc &&     chmod +x /usr/local/bin/gosu &&     gosu --version &&     gosu nobody true # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUXDB_VERSION=2.7.11
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN case "$(dpkg --print-architecture)" in       *amd64) arch=amd64 ;;       *arm64) arch=arm64 ;;       *) echo 'Unsupported architecture' && exit 1 ;;     esac &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys       9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E &&     curl -fLO "https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz"          -fLO "https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz.asc" &&     gpg --batch --verify "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz.asc"                          "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz" &&     tar xzf "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz" &&     cp "influxdb2-${INFLUXDB_VERSION}/usr/bin/influxd" /usr/local/bin/influxd &&     rm -rf "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz"            "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz.asc"            "influxdb2_linux_${arch}" &&     influxd version # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUX_CLI_VERSION=2.7.5
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN case "$(dpkg --print-architecture)" in       *amd64) arch=amd64 ;;       *arm64) arch=arm64 ;;       *) echo 'Unsupported architecture' && exit 1 ;;     esac &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys       9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E &&     curl -fLO "https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz"          -fLO "https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz.asc" &&     gpg --batch --verify "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz.asc"                          "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz" &&     tar xzf "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz" &&     cp influx /usr/local/bin/influx &&     rm -rf "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}"            "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz"            "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz.asc" &&     influx version # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN mkdir /docker-entrypoint-initdb.d &&     mkdir -p /var/lib/influxdb2 &&     chown -R influxdb:influxdb /var/lib/influxdb2 &&     mkdir -p /etc/influxdb2 &&     chown -R influxdb:influxdb /etc/influxdb2 # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 VOLUME [/var/lib/influxdb2 /etc/influxdb2]
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 COPY default-config.yml /etc/defaults/influxdb2/config.yml # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 CMD ["influxd"]
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 EXPOSE map[8086/tcp:{}]
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUX_CONFIGS_PATH=/etc/influxdb2/influx-configs
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUXD_INIT_PORT=9999
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUXD_INIT_PING_ATTEMPTS=600
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ```
 
 -	Layers:
-	-	`sha256:7ce705000c390df8b2edde0e8b9c65a6677da4503a8f8fd89b355a3f827a275f`  
-		Last Modified: Tue, 14 Jan 2025 01:35:55 GMT  
-		Size: 28.0 MB (28041031 bytes)  
+	-	`sha256:4d2547c084994a809c138e688fbe4ee14eedbc6e2defc5b1c680edd16e291473`  
+		Last Modified: Tue, 04 Feb 2025 01:37:53 GMT  
+		Size: 28.0 MB (28040881 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0519160658aa38aa8ec1a9223db51f24ef66cec37c87e5d3252a5b1636bf481`  
-		Last Modified: Tue, 14 Jan 2025 07:23:55 GMT  
-		Size: 9.6 MB (9587362 bytes)  
+	-	`sha256:54806bc8a49567e85ad0750f0dce66eaf91362bc29491ec131442083ba9c9e18`  
+		Last Modified: Tue, 04 Feb 2025 09:58:11 GMT  
+		Size: 9.6 MB (9587403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7a8b4761500ec9c11b5fdbefce98c329f2d5853652b2434b1f174b192974be0`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
-		Size: 5.5 MB (5463786 bytes)  
+	-	`sha256:47843b5b085b6c9f2fda4ee7957ebaffa0daef9fd667012589bd8e7d20b34013`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
+		Size: 5.5 MB (5463797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6470a1080b2858907cf5c6754c4f40e5a95cd979fd29fff60cfdbb7ebb55dee1`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
+	-	`sha256:a421e8cb12ad6b88bdf2d8fd1460151af80ccbee3525494220276682a00cafc1`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
 		Size: 3.2 KB (3227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41fcbe061689e52b7c5b7929a1aceb8ec5d535130bed1d5acffbfdc7eff569dd`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
-		Size: 936.1 KB (936104 bytes)  
+	-	`sha256:3b11c10b88b3f9dbdab8defa93a21a9bb882c3f1a72086c81c27948f1333b12c`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
+		Size: 936.1 KB (936112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0e6484dfd2b5865354d6aee22d73005c5ab86111bbdfd94d57c132d963b06c3`  
-		Last Modified: Tue, 14 Jan 2025 07:23:58 GMT  
-		Size: 96.2 MB (96151392 bytes)  
+	-	`sha256:8c2083983eab2c178e474f48e191cb742a40484709a24185000663e799d18788`  
+		Last Modified: Tue, 04 Feb 2025 09:58:13 GMT  
+		Size: 96.2 MB (96151360 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e45f168297634a1e2c074e189b69dc1ab2be83fec68ef455e38b51176c537c66`  
-		Last Modified: Tue, 14 Jan 2025 07:23:56 GMT  
-		Size: 22.2 MB (22197942 bytes)  
+	-	`sha256:a78ed4072fa4b8accdf5539ea5a35cb434b479947edfa5cafc790e8f8226d85b`  
+		Last Modified: Tue, 04 Feb 2025 09:58:12 GMT  
+		Size: 22.2 MB (22197941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0470c74fd97d622094d009fac154789ef2980d85506e607abc3cb8b6c8e8565`  
-		Last Modified: Tue, 14 Jan 2025 07:23:56 GMT  
-		Size: 207.0 B  
+	-	`sha256:e85c249a1c12a04e99e2bbd2a9ed99b68d57ed1d61654381a3ae1609cafacba3`  
+		Last Modified: Tue, 04 Feb 2025 09:58:12 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d253f731479a5ca137c2c54178b12c934a42e48ff4291854e0cd1c204d00ebb6`  
-		Last Modified: Tue, 14 Jan 2025 07:23:56 GMT  
-		Size: 234.0 B  
+	-	`sha256:46716f23566ca6b6a96f1045898eacfc0202b6ff39e37612493b38f282683540`  
+		Last Modified: Tue, 04 Feb 2025 09:58:12 GMT  
+		Size: 232.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef753136aa92703545b2667815093321a19c5789fcd04c5dd4856dea68a6c057`  
-		Last Modified: Tue, 14 Jan 2025 07:23:57 GMT  
+	-	`sha256:0ea4c1806d36551ba8f96b2e8a549f909c44570bd63eadf1efe31ca4e13238d2`  
+		Last Modified: Tue, 04 Feb 2025 09:58:13 GMT  
 		Size: 6.3 KB (6287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `influxdb:2.7` - unknown; unknown
 
 ```console
-$ docker pull influxdb@sha256:6009930905c9627c0d9d66b0c42932b69c39a1ba551d0b15f0b246302d5f769f
+$ docker pull influxdb@sha256:d1c58156e013ae168f4a2ac6b3d2f262c85761a507d137d1aa2d9d248ef9f8d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.9 MB (2881758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9a094fa8745410e40423d0f9f4341a941cf34e40c450ca4468f7eb6d24fddbd`
+-	Image ID: `sha256:edf9e0521089d9fe8b98aca44730405432e578a27a3e855f0257a94f9bba9c10`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:20efc527a51d42a77be3f33e586725bb27964134cfe6f4e9426ee9b7d4758eec`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
+	-	`sha256:36cffdea5632b8ec076e96810b7e7fa743d65ca3cbabc2b5a2b42bf3f541575b`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
 		Size: 2.8 MB (2847855 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:85a6b56548878df25c8f32a7dad31954a8b257013a5a225a66d2cfc4ceb9804e`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
+	-	`sha256:216c8a9b6caa7116ef00c599625f7f4c31f65988ca9041370f9b86b835be30dd`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
 		Size: 33.9 KB (33903 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3566,7 +3566,7 @@ $ docker pull influxdb@sha256:fe1bf94d7c78e453275d88beed4f073b9eb60f5f02d02da46e
 ## `influxdb:2.7.11`
 
 ```console
-$ docker pull influxdb@sha256:96534795c679c147f7e27dbf9debc1cca143844b9b2427d9b0233fd7ef0615ab
+$ docker pull influxdb@sha256:98fa898e7d2676d27cedc28895aa066fe4cf0d9ea7f1bd23ff815db13d68aba0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3703,124 +3703,124 @@ $ docker pull influxdb@sha256:715995d8f55100e64405e94d916210e2253c566699b37b4af5
 ### `influxdb:2.7.11` - linux; arm64 variant v8
 
 ```console
-$ docker pull influxdb@sha256:4f674ba91d974cc8fd9fca55df891e89b9fc4ed70589ae274a876b2d3fee3814
+$ docker pull influxdb@sha256:a0853b30b388d388e7a9186ec7a6d22f4bf7135f3cd66addccaade715ec43098
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **162.4 MB (162387572 bytes)**  
+-	Total Size: **162.4 MB (162387450 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8a0fae1e3e393bd81064a5a47039c9fec27a2f77c8be95795a3dc1466ad81ff`
+-	Image ID: `sha256:983db95fcc90a18469ae2f1c33ad0a6f5123a2771936edd9999cba3ebdd85183`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 19:42:18 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1736726400'
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1738540800'
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN export DEBIAN_FRONTEND=noninteractive &&     apt-get update -y &&     apt-get install -y --no-install-recommends       ca-certificates       curl       gnupg &&     apt-get clean &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN case "$(dpkg --print-architecture)" in       *amd64) arch=amd64 ;;       *arm64) arch=arm64 ;;       *) echo 'Unsupported architecture' && exit 1 ;;     esac &&     curl -fL "https://github.com/TomWright/dasel/releases/download/v2.4.1/dasel_linux_${arch}.gz" | gzip -d > /usr/local/bin/dasel &&     case ${arch} in       amd64) echo '8e9fb0aa24e35774fab792005f05f9df141c22ec0a7436c7329a932582a10200  /usr/local/bin/dasel' ;;       arm64) echo '535f0f4c6362aa4b773664f7cfdb52d86f2723eac52a1aca6dfc6a69e2341c17  /usr/local/bin/dasel' ;;     esac | sha256sum -c - &&     chmod +x /usr/local/bin/dasel &&     dasel --version # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN groupadd -r influxdb --gid=1000 &&     useradd -r -g influxdb --uid=1000 --create-home --home-dir=/home/influxdb --shell=/bin/bash influxdb # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV GOSU_VER=1.16
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN case "$(dpkg --print-architecture)" in       *amd64) arch=amd64 ;;       *arm64) arch=arm64 ;;       *) echo 'Unsupported architecture' && exit 1 ;;     esac &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys       B42F6819007F00F88E364FD4036A9C25BF357DD4 &&     curl -fLo /usr/local/bin/gosu     "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-${arch}"          -fLo /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-${arch}.asc" &&     gpg --batch --verify /usr/local/bin/gosu.asc                          /usr/local/bin/gosu &&     rm -rf /usr/local/bin/gosu.asc &&     chmod +x /usr/local/bin/gosu &&     gosu --version &&     gosu nobody true # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUXDB_VERSION=2.7.11
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN case "$(dpkg --print-architecture)" in       *amd64) arch=amd64 ;;       *arm64) arch=arm64 ;;       *) echo 'Unsupported architecture' && exit 1 ;;     esac &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys       9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E &&     curl -fLO "https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz"          -fLO "https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz.asc" &&     gpg --batch --verify "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz.asc"                          "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz" &&     tar xzf "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz" &&     cp "influxdb2-${INFLUXDB_VERSION}/usr/bin/influxd" /usr/local/bin/influxd &&     rm -rf "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz"            "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz.asc"            "influxdb2_linux_${arch}" &&     influxd version # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUX_CLI_VERSION=2.7.5
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN case "$(dpkg --print-architecture)" in       *amd64) arch=amd64 ;;       *arm64) arch=arm64 ;;       *) echo 'Unsupported architecture' && exit 1 ;;     esac &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys       9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E &&     curl -fLO "https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz"          -fLO "https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz.asc" &&     gpg --batch --verify "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz.asc"                          "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz" &&     tar xzf "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz" &&     cp influx /usr/local/bin/influx &&     rm -rf "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}"            "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz"            "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz.asc" &&     influx version # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN mkdir /docker-entrypoint-initdb.d &&     mkdir -p /var/lib/influxdb2 &&     chown -R influxdb:influxdb /var/lib/influxdb2 &&     mkdir -p /etc/influxdb2 &&     chown -R influxdb:influxdb /etc/influxdb2 # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 VOLUME [/var/lib/influxdb2 /etc/influxdb2]
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 COPY default-config.yml /etc/defaults/influxdb2/config.yml # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 CMD ["influxd"]
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 EXPOSE map[8086/tcp:{}]
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUX_CONFIGS_PATH=/etc/influxdb2/influx-configs
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUXD_INIT_PORT=9999
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUXD_INIT_PING_ATTEMPTS=600
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ```
 
 -	Layers:
-	-	`sha256:7ce705000c390df8b2edde0e8b9c65a6677da4503a8f8fd89b355a3f827a275f`  
-		Last Modified: Tue, 14 Jan 2025 01:35:55 GMT  
-		Size: 28.0 MB (28041031 bytes)  
+	-	`sha256:4d2547c084994a809c138e688fbe4ee14eedbc6e2defc5b1c680edd16e291473`  
+		Last Modified: Tue, 04 Feb 2025 01:37:53 GMT  
+		Size: 28.0 MB (28040881 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0519160658aa38aa8ec1a9223db51f24ef66cec37c87e5d3252a5b1636bf481`  
-		Last Modified: Tue, 14 Jan 2025 07:23:55 GMT  
-		Size: 9.6 MB (9587362 bytes)  
+	-	`sha256:54806bc8a49567e85ad0750f0dce66eaf91362bc29491ec131442083ba9c9e18`  
+		Last Modified: Tue, 04 Feb 2025 09:58:11 GMT  
+		Size: 9.6 MB (9587403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7a8b4761500ec9c11b5fdbefce98c329f2d5853652b2434b1f174b192974be0`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
-		Size: 5.5 MB (5463786 bytes)  
+	-	`sha256:47843b5b085b6c9f2fda4ee7957ebaffa0daef9fd667012589bd8e7d20b34013`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
+		Size: 5.5 MB (5463797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6470a1080b2858907cf5c6754c4f40e5a95cd979fd29fff60cfdbb7ebb55dee1`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
+	-	`sha256:a421e8cb12ad6b88bdf2d8fd1460151af80ccbee3525494220276682a00cafc1`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
 		Size: 3.2 KB (3227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41fcbe061689e52b7c5b7929a1aceb8ec5d535130bed1d5acffbfdc7eff569dd`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
-		Size: 936.1 KB (936104 bytes)  
+	-	`sha256:3b11c10b88b3f9dbdab8defa93a21a9bb882c3f1a72086c81c27948f1333b12c`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
+		Size: 936.1 KB (936112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0e6484dfd2b5865354d6aee22d73005c5ab86111bbdfd94d57c132d963b06c3`  
-		Last Modified: Tue, 14 Jan 2025 07:23:58 GMT  
-		Size: 96.2 MB (96151392 bytes)  
+	-	`sha256:8c2083983eab2c178e474f48e191cb742a40484709a24185000663e799d18788`  
+		Last Modified: Tue, 04 Feb 2025 09:58:13 GMT  
+		Size: 96.2 MB (96151360 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e45f168297634a1e2c074e189b69dc1ab2be83fec68ef455e38b51176c537c66`  
-		Last Modified: Tue, 14 Jan 2025 07:23:56 GMT  
-		Size: 22.2 MB (22197942 bytes)  
+	-	`sha256:a78ed4072fa4b8accdf5539ea5a35cb434b479947edfa5cafc790e8f8226d85b`  
+		Last Modified: Tue, 04 Feb 2025 09:58:12 GMT  
+		Size: 22.2 MB (22197941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0470c74fd97d622094d009fac154789ef2980d85506e607abc3cb8b6c8e8565`  
-		Last Modified: Tue, 14 Jan 2025 07:23:56 GMT  
-		Size: 207.0 B  
+	-	`sha256:e85c249a1c12a04e99e2bbd2a9ed99b68d57ed1d61654381a3ae1609cafacba3`  
+		Last Modified: Tue, 04 Feb 2025 09:58:12 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d253f731479a5ca137c2c54178b12c934a42e48ff4291854e0cd1c204d00ebb6`  
-		Last Modified: Tue, 14 Jan 2025 07:23:56 GMT  
-		Size: 234.0 B  
+	-	`sha256:46716f23566ca6b6a96f1045898eacfc0202b6ff39e37612493b38f282683540`  
+		Last Modified: Tue, 04 Feb 2025 09:58:12 GMT  
+		Size: 232.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef753136aa92703545b2667815093321a19c5789fcd04c5dd4856dea68a6c057`  
-		Last Modified: Tue, 14 Jan 2025 07:23:57 GMT  
+	-	`sha256:0ea4c1806d36551ba8f96b2e8a549f909c44570bd63eadf1efe31ca4e13238d2`  
+		Last Modified: Tue, 04 Feb 2025 09:58:13 GMT  
 		Size: 6.3 KB (6287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `influxdb:2.7.11` - unknown; unknown
 
 ```console
-$ docker pull influxdb@sha256:6009930905c9627c0d9d66b0c42932b69c39a1ba551d0b15f0b246302d5f769f
+$ docker pull influxdb@sha256:d1c58156e013ae168f4a2ac6b3d2f262c85761a507d137d1aa2d9d248ef9f8d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.9 MB (2881758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9a094fa8745410e40423d0f9f4341a941cf34e40c450ca4468f7eb6d24fddbd`
+-	Image ID: `sha256:edf9e0521089d9fe8b98aca44730405432e578a27a3e855f0257a94f9bba9c10`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:20efc527a51d42a77be3f33e586725bb27964134cfe6f4e9426ee9b7d4758eec`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
+	-	`sha256:36cffdea5632b8ec076e96810b7e7fa743d65ca3cbabc2b5a2b42bf3f541575b`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
 		Size: 2.8 MB (2847855 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:85a6b56548878df25c8f32a7dad31954a8b257013a5a225a66d2cfc4ceb9804e`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
+	-	`sha256:216c8a9b6caa7116ef00c599625f7f4c31f65988ca9041370f9b86b835be30dd`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
 		Size: 33.9 KB (33903 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4349,7 +4349,7 @@ $ docker pull influxdb@sha256:fe1bf94d7c78e453275d88beed4f073b9eb60f5f02d02da46e
 ## `influxdb:latest`
 
 ```console
-$ docker pull influxdb@sha256:96534795c679c147f7e27dbf9debc1cca143844b9b2427d9b0233fd7ef0615ab
+$ docker pull influxdb@sha256:98fa898e7d2676d27cedc28895aa066fe4cf0d9ea7f1bd23ff815db13d68aba0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -4486,123 +4486,123 @@ $ docker pull influxdb@sha256:715995d8f55100e64405e94d916210e2253c566699b37b4af5
 ### `influxdb:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull influxdb@sha256:4f674ba91d974cc8fd9fca55df891e89b9fc4ed70589ae274a876b2d3fee3814
+$ docker pull influxdb@sha256:a0853b30b388d388e7a9186ec7a6d22f4bf7135f3cd66addccaade715ec43098
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **162.4 MB (162387572 bytes)**  
+-	Total Size: **162.4 MB (162387450 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d8a0fae1e3e393bd81064a5a47039c9fec27a2f77c8be95795a3dc1466ad81ff`
+-	Image ID: `sha256:983db95fcc90a18469ae2f1c33ad0a6f5123a2771936edd9999cba3ebdd85183`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["influxd"]`
 
 ```dockerfile
-# Mon, 02 Dec 2024 19:42:18 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1736726400'
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1738540800'
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN export DEBIAN_FRONTEND=noninteractive &&     apt-get update -y &&     apt-get install -y --no-install-recommends       ca-certificates       curl       gnupg &&     apt-get clean &&     rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN case "$(dpkg --print-architecture)" in       *amd64) arch=amd64 ;;       *arm64) arch=arm64 ;;       *) echo 'Unsupported architecture' && exit 1 ;;     esac &&     curl -fL "https://github.com/TomWright/dasel/releases/download/v2.4.1/dasel_linux_${arch}.gz" | gzip -d > /usr/local/bin/dasel &&     case ${arch} in       amd64) echo '8e9fb0aa24e35774fab792005f05f9df141c22ec0a7436c7329a932582a10200  /usr/local/bin/dasel' ;;       arm64) echo '535f0f4c6362aa4b773664f7cfdb52d86f2723eac52a1aca6dfc6a69e2341c17  /usr/local/bin/dasel' ;;     esac | sha256sum -c - &&     chmod +x /usr/local/bin/dasel &&     dasel --version # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN groupadd -r influxdb --gid=1000 &&     useradd -r -g influxdb --uid=1000 --create-home --home-dir=/home/influxdb --shell=/bin/bash influxdb # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV GOSU_VER=1.16
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN case "$(dpkg --print-architecture)" in       *amd64) arch=amd64 ;;       *arm64) arch=arm64 ;;       *) echo 'Unsupported architecture' && exit 1 ;;     esac &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys       B42F6819007F00F88E364FD4036A9C25BF357DD4 &&     curl -fLo /usr/local/bin/gosu     "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-${arch}"          -fLo /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VER/gosu-${arch}.asc" &&     gpg --batch --verify /usr/local/bin/gosu.asc                          /usr/local/bin/gosu &&     rm -rf /usr/local/bin/gosu.asc &&     chmod +x /usr/local/bin/gosu &&     gosu --version &&     gosu nobody true # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUXDB_VERSION=2.7.11
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN case "$(dpkg --print-architecture)" in       *amd64) arch=amd64 ;;       *arm64) arch=arm64 ;;       *) echo 'Unsupported architecture' && exit 1 ;;     esac &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys       9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E &&     curl -fLO "https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz"          -fLO "https://dl.influxdata.com/influxdb/releases/influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz.asc" &&     gpg --batch --verify "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz.asc"                          "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz" &&     tar xzf "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz" &&     cp "influxdb2-${INFLUXDB_VERSION}/usr/bin/influxd" /usr/local/bin/influxd &&     rm -rf "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz"            "influxdb2-${INFLUXDB_VERSION}_linux_${arch}.tar.gz.asc"            "influxdb2_linux_${arch}" &&     influxd version # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUX_CLI_VERSION=2.7.5
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN case "$(dpkg --print-architecture)" in       *amd64) arch=amd64 ;;       *arm64) arch=arm64 ;;       *) echo 'Unsupported architecture' && exit 1 ;;     esac &&     export GNUPGHOME="$(mktemp -d)" &&     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys       9D539D90D3328DC7D6C8D3B9D8FF8E1F7DF8B07E &&     curl -fLO "https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz"          -fLO "https://dl.influxdata.com/influxdb/releases/influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz.asc" &&     gpg --batch --verify "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz.asc"                          "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz" &&     tar xzf "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz" &&     cp influx /usr/local/bin/influx &&     rm -rf "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}"            "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz"            "influxdb2-client-${INFLUX_CLI_VERSION}-linux-${arch}.tar.gz.asc" &&     influx version # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 RUN mkdir /docker-entrypoint-initdb.d &&     mkdir -p /var/lib/influxdb2 &&     chown -R influxdb:influxdb /var/lib/influxdb2 &&     mkdir -p /etc/influxdb2 &&     chown -R influxdb:influxdb /etc/influxdb2 # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 VOLUME [/var/lib/influxdb2 /etc/influxdb2]
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 COPY default-config.yml /etc/defaults/influxdb2/config.yml # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 COPY entrypoint.sh /entrypoint.sh # buildkit
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 CMD ["influxd"]
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 EXPOSE map[8086/tcp:{}]
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUX_CONFIGS_PATH=/etc/influxdb2/influx-configs
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUXD_INIT_PORT=9999
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV INFLUXD_INIT_PING_ATTEMPTS=600
-# Mon, 02 Dec 2024 19:42:18 GMT
+# Thu, 16 Jan 2025 12:29:50 GMT
 ENV DOCKER_INFLUXDB_INIT_CLI_CONFIG_NAME=default
 ```
 
 -	Layers:
-	-	`sha256:7ce705000c390df8b2edde0e8b9c65a6677da4503a8f8fd89b355a3f827a275f`  
-		Last Modified: Tue, 14 Jan 2025 01:35:55 GMT  
-		Size: 28.0 MB (28041031 bytes)  
+	-	`sha256:4d2547c084994a809c138e688fbe4ee14eedbc6e2defc5b1c680edd16e291473`  
+		Last Modified: Tue, 04 Feb 2025 01:37:53 GMT  
+		Size: 28.0 MB (28040881 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0519160658aa38aa8ec1a9223db51f24ef66cec37c87e5d3252a5b1636bf481`  
-		Last Modified: Tue, 14 Jan 2025 07:23:55 GMT  
-		Size: 9.6 MB (9587362 bytes)  
+	-	`sha256:54806bc8a49567e85ad0750f0dce66eaf91362bc29491ec131442083ba9c9e18`  
+		Last Modified: Tue, 04 Feb 2025 09:58:11 GMT  
+		Size: 9.6 MB (9587403 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7a8b4761500ec9c11b5fdbefce98c329f2d5853652b2434b1f174b192974be0`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
-		Size: 5.5 MB (5463786 bytes)  
+	-	`sha256:47843b5b085b6c9f2fda4ee7957ebaffa0daef9fd667012589bd8e7d20b34013`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
+		Size: 5.5 MB (5463797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6470a1080b2858907cf5c6754c4f40e5a95cd979fd29fff60cfdbb7ebb55dee1`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
+	-	`sha256:a421e8cb12ad6b88bdf2d8fd1460151af80ccbee3525494220276682a00cafc1`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
 		Size: 3.2 KB (3227 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41fcbe061689e52b7c5b7929a1aceb8ec5d535130bed1d5acffbfdc7eff569dd`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
-		Size: 936.1 KB (936104 bytes)  
+	-	`sha256:3b11c10b88b3f9dbdab8defa93a21a9bb882c3f1a72086c81c27948f1333b12c`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
+		Size: 936.1 KB (936112 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0e6484dfd2b5865354d6aee22d73005c5ab86111bbdfd94d57c132d963b06c3`  
-		Last Modified: Tue, 14 Jan 2025 07:23:58 GMT  
-		Size: 96.2 MB (96151392 bytes)  
+	-	`sha256:8c2083983eab2c178e474f48e191cb742a40484709a24185000663e799d18788`  
+		Last Modified: Tue, 04 Feb 2025 09:58:13 GMT  
+		Size: 96.2 MB (96151360 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e45f168297634a1e2c074e189b69dc1ab2be83fec68ef455e38b51176c537c66`  
-		Last Modified: Tue, 14 Jan 2025 07:23:56 GMT  
-		Size: 22.2 MB (22197942 bytes)  
+	-	`sha256:a78ed4072fa4b8accdf5539ea5a35cb434b479947edfa5cafc790e8f8226d85b`  
+		Last Modified: Tue, 04 Feb 2025 09:58:12 GMT  
+		Size: 22.2 MB (22197941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a0470c74fd97d622094d009fac154789ef2980d85506e607abc3cb8b6c8e8565`  
-		Last Modified: Tue, 14 Jan 2025 07:23:56 GMT  
-		Size: 207.0 B  
+	-	`sha256:e85c249a1c12a04e99e2bbd2a9ed99b68d57ed1d61654381a3ae1609cafacba3`  
+		Last Modified: Tue, 04 Feb 2025 09:58:12 GMT  
+		Size: 210.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d253f731479a5ca137c2c54178b12c934a42e48ff4291854e0cd1c204d00ebb6`  
-		Last Modified: Tue, 14 Jan 2025 07:23:56 GMT  
-		Size: 234.0 B  
+	-	`sha256:46716f23566ca6b6a96f1045898eacfc0202b6ff39e37612493b38f282683540`  
+		Last Modified: Tue, 04 Feb 2025 09:58:12 GMT  
+		Size: 232.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef753136aa92703545b2667815093321a19c5789fcd04c5dd4856dea68a6c057`  
-		Last Modified: Tue, 14 Jan 2025 07:23:57 GMT  
+	-	`sha256:0ea4c1806d36551ba8f96b2e8a549f909c44570bd63eadf1efe31ca4e13238d2`  
+		Last Modified: Tue, 04 Feb 2025 09:58:13 GMT  
 		Size: 6.3 KB (6287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `influxdb:latest` - unknown; unknown
 
 ```console
-$ docker pull influxdb@sha256:6009930905c9627c0d9d66b0c42932b69c39a1ba551d0b15f0b246302d5f769f
+$ docker pull influxdb@sha256:d1c58156e013ae168f4a2ac6b3d2f262c85761a507d137d1aa2d9d248ef9f8d1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **2.9 MB (2881758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a9a094fa8745410e40423d0f9f4341a941cf34e40c450ca4468f7eb6d24fddbd`
+-	Image ID: `sha256:edf9e0521089d9fe8b98aca44730405432e578a27a3e855f0257a94f9bba9c10`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:20efc527a51d42a77be3f33e586725bb27964134cfe6f4e9426ee9b7d4758eec`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
+	-	`sha256:36cffdea5632b8ec076e96810b7e7fa743d65ca3cbabc2b5a2b42bf3f541575b`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
 		Size: 2.8 MB (2847855 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:85a6b56548878df25c8f32a7dad31954a8b257013a5a225a66d2cfc4ceb9804e`  
-		Last Modified: Tue, 14 Jan 2025 07:23:54 GMT  
+	-	`sha256:216c8a9b6caa7116ef00c599625f7f4c31f65988ca9041370f9b86b835be30dd`  
+		Last Modified: Tue, 04 Feb 2025 09:58:10 GMT  
 		Size: 33.9 KB (33903 bytes)  
 		MIME: application/vnd.in-toto+json
