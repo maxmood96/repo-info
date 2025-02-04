@@ -1,7 +1,7 @@
 ## `openjdk:25-ea-slim`
 
 ```console
-$ docker pull openjdk@sha256:0786d0d0d831112e70e6591ce152e26dd2c28abedf90d7d389cc03179a970206
+$ docker pull openjdk@sha256:60090627d21a8c1d297d975452aba693e17d8f98d4e67a4724ded55aeeaa739b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,18 +14,18 @@ $ docker pull openjdk@sha256:0786d0d0d831112e70e6591ce152e26dd2c28abedf90d7d389c
 ### `openjdk:25-ea-slim` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:a12afc3ea4045723af3e3273e49e3f636a569e83cf469d3ca87e75b259dc608c
+$ docker pull openjdk@sha256:c07be4a76758307e8d5a9323e11b01e4008a3b1a89d83a1cce47ecc65498c923
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **244.2 MB (244165964 bytes)**  
+-	Total Size: **244.2 MB (244165683 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:403740c23ae5dcf9846a9b46a3057033fdf4fe2c5596d3aac863a1e7354cbf27`
+-	Image ID: `sha256:413481b2d4de13b23dac435d813f4e664417df0f55789f1629d403f8749b37be`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Mon, 13 Jan 2025 00:00:00 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1736726400'
+# Fri, 31 Jan 2025 01:53:00 GMT
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1738540800'
 # Fri, 31 Jan 2025 01:53:00 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates p11-kit 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Fri, 31 Jan 2025 01:53:00 GMT
@@ -43,41 +43,41 @@ CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:af302e5c37e9dc1dbe2eadc8f5059d82a914066b541b0d1a6daa91d0cc55057d`  
-		Last Modified: Tue, 14 Jan 2025 01:33:13 GMT  
-		Size: 28.2 MB (28212417 bytes)  
+	-	`sha256:c29f5b76f736a8b555fd191c48d6581bb918bcd605a7cbcc76205dd6acff3260`  
+		Last Modified: Tue, 04 Feb 2025 01:36:21 GMT  
+		Size: 28.2 MB (28212303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d17d60dfa29dadeb65e016d18235165876003b7d2b54fe21badf502b30a28370`  
-		Last Modified: Fri, 31 Jan 2025 22:26:05 GMT  
-		Size: 4.0 MB (4018461 bytes)  
+	-	`sha256:d7b1e970d9b2de95b50b2a9ecc79b2ed452ff9145266e6ea0c98d435c71830d1`  
+		Last Modified: Tue, 04 Feb 2025 04:43:36 GMT  
+		Size: 4.0 MB (4018418 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2602fc9ee7ee48fe3fd388ee2f1677b48058eb74db43f35b5f26c43c600cc8ef`  
-		Last Modified: Fri, 31 Jan 2025 22:26:08 GMT  
-		Size: 211.9 MB (211935086 bytes)  
+	-	`sha256:3b2094e13cf988b8ee71c97abcc9207dcd6862a0af95e10fe97120b7f48f8248`  
+		Last Modified: Tue, 04 Feb 2025 04:43:40 GMT  
+		Size: 211.9 MB (211934962 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `openjdk:25-ea-slim` - unknown; unknown
 
 ```console
-$ docker pull openjdk@sha256:ac146832ca510e0e1bf4bfbd57e56a66e32f58825fa57358786cc66473e4d7ee
+$ docker pull openjdk@sha256:5fdd8cbdc8c91f49e961ec2d47710d0b7e3cc2b85d4a2bacfd8d52ee98ce182a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.6 MB (2553303 bytes)**  
+-	Total Size: **2.6 MB (2553302 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9a2eb385c85d87d08905698d42a28613ec775a1444f85caf88e0b087e9d23874`
+-	Image ID: `sha256:5ff4f10b7f2b45563be9686f0872620a56acbeb29898a2dba8347c2c1c4b0876`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3414b3c79ede297b0a8d2d5b4ec2931e9d3ae519364a8cc2baf464d72a0a3422`  
-		Last Modified: Fri, 31 Jan 2025 22:26:04 GMT  
+	-	`sha256:dc025a3786d35a9c57868d4918cd2b751dbd4722cbd6e0155ff0ed05ff8c41b3`  
+		Last Modified: Tue, 04 Feb 2025 04:43:37 GMT  
 		Size: 2.5 MB (2533878 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c6d00a9855a010d7c167f28385f94ed2562d6ecf88e359fa17eea30828165cfa`  
-		Last Modified: Fri, 31 Jan 2025 22:26:04 GMT  
-		Size: 19.4 KB (19425 bytes)  
+	-	`sha256:4db58887d814db4c20dd095cf81507ef432080dc7c845de26e7228cdded04822`  
+		Last Modified: Tue, 04 Feb 2025 04:43:36 GMT  
+		Size: 19.4 KB (19424 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `openjdk:25-ea-slim` - linux; arm64 variant v8
