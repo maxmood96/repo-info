@@ -1,7 +1,7 @@
 ## `almalinux:10-kitten`
 
 ```console
-$ docker pull almalinux@sha256:abd14b58d37ff7c6ed820a2af00715fa40320ba3cd731f09b4288de77dbcb5d0
+$ docker pull almalinux@sha256:4f22aa681962f1092a326bd9609c3ca9cfe102930454980480f65600b655b43f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -67,50 +67,50 @@ $ docker pull almalinux@sha256:448de4d13c12bd752ea75883a880e8ef9aa0218049d5601d3
 ### `almalinux:10-kitten` - linux; arm64 variant v8
 
 ```console
-$ docker pull almalinux@sha256:6bd8d0ac361a7e67de9009739a949983a494b5e7880639c089285ee43a5b0b6c
+$ docker pull almalinux@sha256:d351af0b19194f6fc2f055e42d4a7f76b07586220ed7717c0c61280676cf7e01
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **68.9 MB (68933658 bytes)**  
+-	Total Size: **64.6 MB (64642835 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1b389f40dee1d38bd2756f470907eb09faaa358c79974c1edb53bfafa1e91942`
+-	Image ID: `sha256:8da9b46438ecdd3b07644f4c04f0a6ad621dd86afa1d5eb2ccabdc74cfdbb41f`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 24 Oct 2024 19:24:07 GMT
+# Tue, 04 Feb 2025 10:07:34 GMT
 ADD almalinux-10-kitten-default-arm64.tar.xz / # buildkit
-# Thu, 24 Oct 2024 19:24:07 GMT
+# Tue, 04 Feb 2025 10:07:34 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:cb840ebf48e1e05453c1fdd5c1f08643845e4f815bf0e49c7194bdc37c2e06c8`  
-		Last Modified: Fri, 25 Oct 2024 22:56:31 GMT  
-		Size: 68.9 MB (68933658 bytes)  
+	-	`sha256:fde35c1a76eb22cfbd6a2eae80b77b0f1faf115bf4dc80a9f47e9c063b99c818`  
+		Last Modified: Wed, 05 Feb 2025 00:50:10 GMT  
+		Size: 64.6 MB (64642835 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `almalinux:10-kitten` - unknown; unknown
 
 ```console
-$ docker pull almalinux@sha256:f2618f92adf5ef72f06d19e422f46e1c61ba61adf205690018eccb81b4364891
+$ docker pull almalinux@sha256:00f38a1e46506e2d912c5e1712c7c2164548f254d70942ea45f46447ad91efdf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.6 MB (4630148 bytes)**  
+-	Total Size: **4.6 MB (4557406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5b7288eb5b8568f3dbbff47c9e0efa46b49b2446677526febbdde1923b24200f`
+-	Image ID: `sha256:ca47b24398f23b72afda2eda4622d706c7f0c683bf9d3d285c558f9f81f03982`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:47d3f91c0e369859fa5c515efc7e1405d201439bdc2fcc6a23bf4eb04ee342c4`  
-		Last Modified: Fri, 25 Oct 2024 22:56:29 GMT  
-		Size: 4.6 MB (4624882 bytes)  
+	-	`sha256:4c2ca486c720e3a9ce63fe7dcb23a4f7ad0d84433f41a4536d0908458a0f06eb`  
+		Last Modified: Wed, 05 Feb 2025 00:50:08 GMT  
+		Size: 4.6 MB (4552139 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f8ab52a8984c0a3059a8649a045fd27993c2b6244fc4eaeb3088f6384e720512`  
-		Last Modified: Fri, 25 Oct 2024 22:56:29 GMT  
-		Size: 5.3 KB (5266 bytes)  
+	-	`sha256:024b1a93483e5eed0c327fe5975ad9dbe3b75005c14a80f7a7cf6f1053e54396`  
+		Last Modified: Wed, 05 Feb 2025 00:50:08 GMT  
+		Size: 5.3 KB (5267 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `almalinux:10-kitten` - linux; ppc64le
