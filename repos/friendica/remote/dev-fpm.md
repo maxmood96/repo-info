@@ -1,7 +1,7 @@
 ## `friendica:dev-fpm`
 
 ```console
-$ docker pull friendica@sha256:419b14357011186c3792c192575791f5f408bd2de704fca58995eb570c5d3698
+$ docker pull friendica@sha256:82502f74d8e53a9eb2d1dfbf4f277652064ce5f699d5dc2af42c6f6689fd8956
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,13 +18,13 @@ $ docker pull friendica@sha256:419b14357011186c3792c192575791f5f408bd2de704fca58
 ### `friendica:dev-fpm` - linux; amd64
 
 ```console
-$ docker pull friendica@sha256:f070ce5141a6ca532e2d20554dec8820653fbb572698444ad26018dba3022daa
+$ docker pull friendica@sha256:6c0e1e27f426a291a1b8b9bc501164d854a55f0827a7ee700c151e46da6ff63c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **212.8 MB (212795897 bytes)**  
+-	Total Size: **212.8 MB (212795884 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:015379c7952a71ad6c9033c9c6960e3cdb8bfc98d7ef620e8c2984d4d4516063`
+-	Image ID: `sha256:c4bc91490bc9798ace3362183c5e24be453796120245d7e5e3a287038c5b754f`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -77,37 +77,37 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 19 Dec 2024 16:49:54 GMT
 CMD ["php-fpm"]
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         msmtp         tini     ; # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV GOSU_VERSION=1.17
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	if ! command -v gpg; then 		apt-get install -y --no-install-recommends gnupg2 dirmngr; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         mariadb-client         bash         libpng-dev         libjpeg62-turbo-dev         libtool         libmagick++-dev         libmemcached-dev         zlib1g-dev         libssl-dev         libgraphicsmagick1-dev         libfreetype6-dev         libwebp-dev         librsvg2-2         libzip-dev         libldap2-dev         libgmp-dev         libmagickcore-6.q16-6-extra     ;             debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";         docker-php-ext-configure gd         --with-freetype         --with-jpeg         --with-webp     ;     docker-php-ext-configure ldap         --with-libdir=lib/$debMultiarch/     ;    docker-php-ext-install -j "$(nproc)"         pdo_mysql         gd         exif         zip         opcache         ctype         pcntl         ldap         gmp         intl     ;         pecl install apcu-5.1.24;     pecl install memcached-3.3.0;     pecl install redis-6.1.0;     pecl install imagick-3.7.0;         docker-php-ext-enable         apcu         memcached         redis         imagick     ;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;     ln -s /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 VOLUME [/var/www/html]
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV FRIENDICA_SYSLOG_FLAGS=39
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV FRIENDICA_VERSION=2025.02-dev
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV FRIENDICA_ADDONS=2025.02-dev
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -ex;     fetchDeps="         gnupg     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps; # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 COPY *.sh upgrade.exclude / # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 COPY config/* /usr/src/friendica/config/ # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 CMD ["php-fpm"]
 ```
 
@@ -156,65 +156,65 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 04 Feb 2025 04:37:35 GMT  
 		Size: 9.2 KB (9182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3af3374df49bd94b1395499b09821343d7cc2c28f819ca07d6ab31f29ae5eb4f`  
-		Last Modified: Tue, 04 Feb 2025 05:19:11 GMT  
-		Size: 15.7 MB (15706589 bytes)  
+	-	`sha256:0b52a21ce3411ec37de4c6c664a619639ab1fb39f4295e86dd034a2ead3f1df6`  
+		Last Modified: Wed, 05 Feb 2025 20:29:28 GMT  
+		Size: 15.7 MB (15706629 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2bf2e19d5603d02d2cb0ff704d7422e9b564c56e65d8b341e45c47b545396a91`  
-		Last Modified: Tue, 04 Feb 2025 05:19:10 GMT  
-		Size: 1.1 MB (1096821 bytes)  
+	-	`sha256:1be91c971d19d4bb65517246bbcf540c9d3d042d9e84a035a1763c5370296d3c`  
+		Last Modified: Wed, 05 Feb 2025 20:29:28 GMT  
+		Size: 1.1 MB (1096841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4eb55a4ee1a1c626c1c9c2133ceab3e0a5a440b2c8609181de7b9eeae134c53`  
-		Last Modified: Tue, 04 Feb 2025 05:19:11 GMT  
-		Size: 18.4 MB (18429697 bytes)  
+	-	`sha256:efe5b06fb3354d60d0cde695695079c288bbd001eff7224730c11c6a90350868`  
+		Last Modified: Wed, 05 Feb 2025 20:29:29 GMT  
+		Size: 18.4 MB (18429663 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:90e1d4fbfab3ce31c90506b6aee58a8810ca3b1756944af73ea8a5e3fd84c3b1`  
-		Last Modified: Tue, 04 Feb 2025 05:19:10 GMT  
-		Size: 648.0 B  
+	-	`sha256:1ad55218ca3530f0bf0c4e87954f08e966806e619711dd3bb83acbbf7d67832f`  
+		Last Modified: Wed, 05 Feb 2025 20:29:28 GMT  
+		Size: 652.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:69e0a99bc6c0807667aebfb670915adb33640786d81bf9db2fac51a8601fcb8b`  
-		Last Modified: Tue, 04 Feb 2025 05:19:12 GMT  
-		Size: 17.3 MB (17268996 bytes)  
+	-	`sha256:65a6ee5055cba1bea2626f7d9bafa1d21dd9cffd39dae406f8d9efa90545631c`  
+		Last Modified: Wed, 05 Feb 2025 20:29:29 GMT  
+		Size: 17.3 MB (17268973 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2cdd72edf9c990c2c9561ef1dbda297e7b1483c04ce47c4099d5cf25a716a090`  
-		Last Modified: Tue, 04 Feb 2025 05:19:12 GMT  
-		Size: 3.9 KB (3880 bytes)  
+	-	`sha256:af276c1c51239c807f210fb1aa2cf051d08f66970fd76dff78bcf5c67486e835`  
+		Last Modified: Wed, 05 Feb 2025 20:29:29 GMT  
+		Size: 3.9 KB (3861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e704b7f0c680b2bf5e783d3ba7cc487d16c95cb2912b7d995b9c5271b12a759`  
-		Last Modified: Tue, 04 Feb 2025 05:19:12 GMT  
-		Size: 921.0 B  
+	-	`sha256:ccde4f4d241faa86d6b57fffb6a711125557dc4bdbefb586a0628d1b45648c78`  
+		Last Modified: Wed, 05 Feb 2025 20:29:30 GMT  
+		Size: 920.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `friendica:dev-fpm` - unknown; unknown
 
 ```console
-$ docker pull friendica@sha256:604968489fa2c99f1b4485a989f8b2a2be3894de56ef4a772e744a4886afbc38
+$ docker pull friendica@sha256:be93921284bcfd9384aaf65c09b0909b79f9fe8b06eb6d5eea3cdcbddf0a2954
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **47.9 KB (47938 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1c5c2eecf80c6d6b2902d07b37244526907b0fd6061e9a595624b1cf807c30bb`
+-	Image ID: `sha256:fc5173cef9add60634172eb95e620c49bc79b34bf3e641201d12c840d35a3f03`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:041e5a4299dd7b33a211c49373224154f722f320f37075397c1764b95f9ddb01`  
-		Last Modified: Tue, 04 Feb 2025 05:19:10 GMT  
+	-	`sha256:28cc4e7c333b488ed5000fb00850d178c6ecb46522c1f6cd41699eed3d90b06e`  
+		Last Modified: Wed, 05 Feb 2025 20:29:28 GMT  
 		Size: 47.9 KB (47938 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `friendica:dev-fpm` - linux; arm variant v7
 
 ```console
-$ docker pull friendica@sha256:00e54d90142a899d803e7a55aa973175053840f3d59f5b3921c84f4439d72863
+$ docker pull friendica@sha256:e7e758baae27006d195e6b24d1f7c16f61568d1068c04bbf047254142e00d5f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **179.6 MB (179571715 bytes)**  
+-	Total Size: **179.6 MB (179571695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c85fe1950d6b6c571b2a641aafcb105eda29eab6f0f931c282f3d48fdd88194`
+-	Image ID: `sha256:59376336c1017ade5ba61f434ad1f3fd8a14a63338bf48d26320a3dae457cfb9`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -267,37 +267,37 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 19 Dec 2024 16:49:54 GMT
 CMD ["php-fpm"]
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         msmtp         tini     ; # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV GOSU_VERSION=1.17
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	if ! command -v gpg; then 		apt-get install -y --no-install-recommends gnupg2 dirmngr; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         mariadb-client         bash         libpng-dev         libjpeg62-turbo-dev         libtool         libmagick++-dev         libmemcached-dev         zlib1g-dev         libssl-dev         libgraphicsmagick1-dev         libfreetype6-dev         libwebp-dev         librsvg2-2         libzip-dev         libldap2-dev         libgmp-dev         libmagickcore-6.q16-6-extra     ;             debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";         docker-php-ext-configure gd         --with-freetype         --with-jpeg         --with-webp     ;     docker-php-ext-configure ldap         --with-libdir=lib/$debMultiarch/     ;    docker-php-ext-install -j "$(nproc)"         pdo_mysql         gd         exif         zip         opcache         ctype         pcntl         ldap         gmp         intl     ;         pecl install apcu-5.1.24;     pecl install memcached-3.3.0;     pecl install redis-6.1.0;     pecl install imagick-3.7.0;         docker-php-ext-enable         apcu         memcached         redis         imagick     ;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;     ln -s /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 VOLUME [/var/www/html]
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV FRIENDICA_SYSLOG_FLAGS=39
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV FRIENDICA_VERSION=2025.02-dev
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV FRIENDICA_ADDONS=2025.02-dev
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -ex;     fetchDeps="         gnupg     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps; # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 COPY *.sh upgrade.exclude / # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 COPY config/* /usr/src/friendica/config/ # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 CMD ["php-fpm"]
 ```
 
@@ -366,45 +366,45 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 04 Feb 2025 16:59:29 GMT  
 		Size: 16.9 MB (16897639 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6fca1ca9b0172943b15957b25e9f0f6bfc7d41208a9e5e3d22c86c418adeb047`  
-		Last Modified: Tue, 04 Feb 2025 16:59:28 GMT  
-		Size: 3.9 KB (3880 bytes)  
+	-	`sha256:3d471019d9d906086a499fadfa1b825555acd75b9a32efaf03edecfd3189ba1c`  
+		Last Modified: Wed, 05 Feb 2025 20:26:43 GMT  
+		Size: 3.9 KB (3861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:81048d8c9c4e40a271b9a6ef9eeeb2c8730aec5c7001ce0f89b32276cc58b382`  
-		Last Modified: Tue, 04 Feb 2025 16:59:28 GMT  
-		Size: 918.0 B  
+	-	`sha256:dfa348f5273dc2aff0a70f5f734838ffd4f2bf3b660f85476f6a21f989261337`  
+		Last Modified: Wed, 05 Feb 2025 20:26:42 GMT  
+		Size: 917.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `friendica:dev-fpm` - unknown; unknown
 
 ```console
-$ docker pull friendica@sha256:a955625ab4a8fce57eadb4347942175f27d6f06460806bb38b3ed11c5c3ab069
+$ docker pull friendica@sha256:5b5d95010c297df95170cded9bb641e8cf99c6b0b0066784c35ffb21908ec8a7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **48.0 KB (48050 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:eb1fc7f4d470734b10d2dd1324f3c865b95d1bc5a88c80fd8b6dc3ea9b4a327a`
+-	Image ID: `sha256:59d6c9224b644e3b9a827965a25d6fe34aec0c611e02be5d475edcf04be25ed9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a127383c70b5a4473915f2e739d0d66bda93d3f6556f9d1a22bb0698f72750b4`  
-		Last Modified: Tue, 04 Feb 2025 16:59:27 GMT  
+	-	`sha256:5fc2cebcf250b8a71f2e0ab5bfa48080ba5267d185e4f1712e5aa6816aa09934`  
+		Last Modified: Wed, 05 Feb 2025 20:26:42 GMT  
 		Size: 48.0 KB (48050 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `friendica:dev-fpm` - linux; arm64 variant v8
 
 ```console
-$ docker pull friendica@sha256:990eb2a33d69fcab40062213b7c47773cec576b11575d361b63367a22e2ebe04
+$ docker pull friendica@sha256:9b65dfe16ed968bc3f24c1fdf471798edd32152d7cb1052750562eae39d4b2ef
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **204.3 MB (204347031 bytes)**  
+-	Total Size: **204.3 MB (204346922 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bf6262ad3e080a2ed25d3a8ce5740e907598e80e4cc39d3fa2b1294aba91b293`
+-	Image ID: `sha256:18e3740c7043bcb2e73febe38d984fb0ced06cb9472fa0043d4c103401967a61`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -457,37 +457,37 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 19 Dec 2024 16:49:54 GMT
 CMD ["php-fpm"]
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         msmtp         tini     ; # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV GOSU_VERSION=1.17
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	if ! command -v gpg; then 		apt-get install -y --no-install-recommends gnupg2 dirmngr; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         mariadb-client         bash         libpng-dev         libjpeg62-turbo-dev         libtool         libmagick++-dev         libmemcached-dev         zlib1g-dev         libssl-dev         libgraphicsmagick1-dev         libfreetype6-dev         libwebp-dev         librsvg2-2         libzip-dev         libldap2-dev         libgmp-dev         libmagickcore-6.q16-6-extra     ;             debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";         docker-php-ext-configure gd         --with-freetype         --with-jpeg         --with-webp     ;     docker-php-ext-configure ldap         --with-libdir=lib/$debMultiarch/     ;    docker-php-ext-install -j "$(nproc)"         pdo_mysql         gd         exif         zip         opcache         ctype         pcntl         ldap         gmp         intl     ;         pecl install apcu-5.1.24;     pecl install memcached-3.3.0;     pecl install redis-6.1.0;     pecl install imagick-3.7.0;         docker-php-ext-enable         apcu         memcached         redis         imagick     ;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;     ln -s /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 VOLUME [/var/www/html]
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV FRIENDICA_SYSLOG_FLAGS=39
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV FRIENDICA_VERSION=2025.02-dev
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV FRIENDICA_ADDONS=2025.02-dev
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -ex;     fetchDeps="         gnupg     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps; # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 COPY *.sh upgrade.exclude / # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 COPY config/* /usr/src/friendica/config/ # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 CMD ["php-fpm"]
 ```
 
@@ -536,65 +536,65 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 04 Feb 2025 07:36:38 GMT  
 		Size: 9.2 KB (9182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:18581244df820b3233db4c755f278b1948cd48fe056198937cec5ea0a7742886`  
-		Last Modified: Tue, 04 Feb 2025 19:56:09 GMT  
-		Size: 15.5 MB (15469636 bytes)  
+	-	`sha256:6a487d18f2b47d2ebf64fac3e805425251cfb57a598f9b0a91d96a564298c121`  
+		Last Modified: Wed, 05 Feb 2025 20:43:27 GMT  
+		Size: 15.5 MB (15469529 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9fd850106366c7929edf5aa13fc26dc17edabb7ca65394a316247f6a3efd7d84`  
-		Last Modified: Tue, 04 Feb 2025 19:56:08 GMT  
-		Size: 1.0 MB (1027647 bytes)  
+	-	`sha256:e75d80e9451550f304f8d0828b10e14dda85e1eea61142db2434d12f2b08e0e1`  
+		Last Modified: Wed, 05 Feb 2025 20:43:27 GMT  
+		Size: 1.0 MB (1027609 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6e220e14ae1aa4b6a93abf8e2d2b96bf1af18f97d6c0b8e9baca41e4a4bd7a56`  
-		Last Modified: Tue, 04 Feb 2025 19:56:09 GMT  
-		Size: 16.7 MB (16658558 bytes)  
+	-	`sha256:ba6b3aea18cddb3fc0bbab83eb27b0d1b368f7ee6e497dd43f7697c82b628f4c`  
+		Last Modified: Wed, 05 Feb 2025 20:43:27 GMT  
+		Size: 16.7 MB (16658666 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:835369f4e6463869c34cdbbfa97b33de0bed221e5b658a6d73b1e97df14026cc`  
-		Last Modified: Tue, 04 Feb 2025 19:56:08 GMT  
-		Size: 650.0 B  
+	-	`sha256:b48374b940fb852cb5c0cb926e76c8d81d7690a6cf84d9379f5537fd9a213c09`  
+		Last Modified: Wed, 05 Feb 2025 20:43:26 GMT  
+		Size: 651.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d87830721e148f575ab58aef2b89b1bffb62903e5b5bc61630c3807b462b3571`  
-		Last Modified: Tue, 04 Feb 2025 19:57:59 GMT  
-		Size: 17.1 MB (17059870 bytes)  
+	-	`sha256:dc29e137f8e9d1ad336bcb7656813fbc61765395f51aec30e5d6812e31ff7fc8`  
+		Last Modified: Wed, 05 Feb 2025 20:43:28 GMT  
+		Size: 17.1 MB (17059815 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:493ec27338147dcb556c6c64cfd5ece496e6afdbdef59c6561c2c4bf035113b4`  
-		Last Modified: Tue, 04 Feb 2025 19:57:58 GMT  
-		Size: 3.9 KB (3880 bytes)  
+	-	`sha256:3f84fd50cf69ce89d373ac893aae5fbe400299e70254b8a0ff5c006ebe25c437`  
+		Last Modified: Wed, 05 Feb 2025 20:43:28 GMT  
+		Size: 3.9 KB (3861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f2a753acd395689d3d4fcd1e2d58e188070403e7fe77dedde6406552d0721fd5`  
-		Last Modified: Tue, 04 Feb 2025 19:57:58 GMT  
-		Size: 921.0 B  
+	-	`sha256:0bb4c78a55250095a9ab6892fe676a10aef0e7560c38c6a0c27b685e4721758c`  
+		Last Modified: Wed, 05 Feb 2025 20:43:29 GMT  
+		Size: 922.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `friendica:dev-fpm` - unknown; unknown
 
 ```console
-$ docker pull friendica@sha256:2e8b0d51ea9e38b3babcbeaef14f711bc4e5b84c5a5ce82ce2b676b3cd5dbc64
+$ docker pull friendica@sha256:9ff612fccd2891d1487cbca062f0880d50ae11c9b0c7e95e83add6d4ecb93d9c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.1 KB (48075 bytes)**  
+-	Total Size: **48.1 KB (48078 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d0992360ee193a757efb5366b9884ad251a13c9716a436b3b9072aefbf6da085`
+-	Image ID: `sha256:951685f711437a91705400cab13573e81d88844b9c2d90b352cae43612f78492`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b281b795b37981eea3e8d907de9218b8e61a77ad75cae6d66454fa604d71df75`  
-		Last Modified: Tue, 04 Feb 2025 19:57:58 GMT  
-		Size: 48.1 KB (48075 bytes)  
+	-	`sha256:b82631a683a4eb6053500cab14da88baa4659046d8c1a809570fd3e120c44385`  
+		Last Modified: Wed, 05 Feb 2025 20:43:26 GMT  
+		Size: 48.1 KB (48078 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `friendica:dev-fpm` - linux; 386
 
 ```console
-$ docker pull friendica@sha256:62381441f55d6b8378e00ecd505fa983ae1d1c72d6db86be9c0bc595df0894f1
+$ docker pull friendica@sha256:2b46895857c4832f0f600c28ae1237d74648662d553ec8aef627b5ca8f5fd9dc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **215.8 MB (215759386 bytes)**  
+-	Total Size: **215.8 MB (215759594 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d4b4d990e09e19f9456e22e7c58912107ae1c67e1123988ad37e2659faa2a7c`
+-	Image ID: `sha256:bb34497c9334f4a33d037678eb140d27e3a26c3b67e33256dfcf141462451927`
 -	Entrypoint: `["\/entrypoint-dev.sh"]`
 -	Default Command: `["php-fpm"]`
 
@@ -647,37 +647,37 @@ STOPSIGNAL SIGQUIT
 EXPOSE map[9000/tcp:{}]
 # Thu, 19 Dec 2024 16:49:54 GMT
 CMD ["php-fpm"]
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -ex;         apt-get update;     apt-get install -y --no-install-recommends         rsync         bzip2         msmtp         tini     ; # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV GOSU_VERSION=1.17
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates wget; 	if ! command -v gpg; then 		apt-get install -y --no-install-recommends gnupg2 dirmngr; 	elif gpg --version | grep -q '^gpg (GnuPG) 1\.'; then 		apt-get install -y --no-install-recommends gnupg-curl; 	fi; 	rm -rf /var/lib/apt/lists/*; 		dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 		export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	command -v gpgconf && gpgconf --kill all || :; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -ex;         savedAptMark="$(apt-mark showmanual)";         apt-get update;     apt-get install -y --no-install-recommends         mariadb-client         bash         libpng-dev         libjpeg62-turbo-dev         libtool         libmagick++-dev         libmemcached-dev         zlib1g-dev         libssl-dev         libgraphicsmagick1-dev         libfreetype6-dev         libwebp-dev         librsvg2-2         libzip-dev         libldap2-dev         libgmp-dev         libmagickcore-6.q16-6-extra     ;             debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)";         docker-php-ext-configure gd         --with-freetype         --with-jpeg         --with-webp     ;     docker-php-ext-configure ldap         --with-libdir=lib/$debMultiarch/     ;    docker-php-ext-install -j "$(nproc)"         pdo_mysql         gd         exif         zip         opcache         ctype         pcntl         ldap         gmp         intl     ;         pecl install apcu-5.1.24;     pecl install memcached-3.3.0;     pecl install redis-6.1.0;     pecl install imagick-3.7.0;         docker-php-ext-enable         apcu         memcached         redis         imagick     ;         apt-mark auto '.*' > /dev/null;     apt-mark manual $savedAptMark;     ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so         | awk '/=>/ { print $3 }'         | sort -u         | xargs -r dpkg-query -S         | cut -d: -f1         | sort -u         | xargs -rt apt-mark manual;         apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false;     rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV PHP_MEMORY_LIMIT=512M
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV PHP_UPLOAD_LIMIT=512M
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -ex;     {         echo 'opcache.enable=1' ;         echo 'opcache.interned_strings_buffer=8';         echo 'opcache.max_accelerated_files=10000';         echo 'opcache.memory_consumption=128';         echo 'opcache.save_comments=1';         echo 'opcache.revalidte_freq=1';     } > /usr/local/etc/php/conf.d/opcache-recommended.ini;         {         echo sendmail_path = "/usr/bin/msmtp -t";     } > /usr/local/etc/php/conf.d/sendmail.ini;         echo 'apc.enable_cli=1' >> /usr/local/etc/php/conf.d/docker-php-ext-apcu.ini;         {         echo 'memory_limit=${PHP_MEMORY_LIMIT}';         echo 'upload_max_filesize=${PHP_UPLOAD_LIMIT}';         echo 'post_max_size=${PHP_UPLOAD_LIMIT}';     } > /usr/local/etc/php/conf.d/friendica.ini;     ln -s /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini;         mkdir /var/www/data;     chown -R www-data:root /var/www;     chmod -R g=u /var/www # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 VOLUME [/var/www/html]
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV FRIENDICA_SYSLOG_FLAGS=39
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV FRIENDICA_VERSION=2025.02-dev
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENV FRIENDICA_ADDONS=2025.02-dev
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 RUN set -ex;     fetchDeps="         gnupg     ";     apt-get update;     apt-get install -y --no-install-recommends $fetchDeps; # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 COPY *.sh upgrade.exclude / # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 COPY config/* /usr/src/friendica/config/ # buildkit
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 ENTRYPOINT ["/entrypoint-dev.sh"]
-# Fri, 31 Jan 2025 18:42:40 GMT
+# Tue, 04 Feb 2025 20:34:34 GMT
 CMD ["php-fpm"]
 ```
 
@@ -726,51 +726,51 @@ CMD ["php-fpm"]
 		Last Modified: Tue, 04 Feb 2025 04:38:24 GMT  
 		Size: 9.2 KB (9184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:071e2ee0137815bf00f100af8725d2bcd62af04b1c85214fe9b31f833f0cefa5`  
-		Last Modified: Tue, 04 Feb 2025 05:24:17 GMT  
-		Size: 16.2 MB (16179647 bytes)  
+	-	`sha256:8caad3294b7e58acda2349daf4892d4afdd3655c22a1c8e95668e85eed2f283e`  
+		Last Modified: Wed, 05 Feb 2025 20:30:00 GMT  
+		Size: 16.2 MB (16179735 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b8296fd3144ac443293bd8540b4ef385a4dbf3af380b9aa63f14205d45494b6`  
-		Last Modified: Tue, 04 Feb 2025 05:24:16 GMT  
-		Size: 1.1 MB (1070315 bytes)  
+	-	`sha256:4e9b7fd89666eee81fa537daa44303ed9e279e52ee7f7a0716dc591cbb6790f8`  
+		Last Modified: Wed, 05 Feb 2025 20:30:00 GMT  
+		Size: 1.1 MB (1070336 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd8ac46d50562db1bfe1fa4ec2434c49f219de30a86c6f766f3c2dfe0bee8045`  
-		Last Modified: Tue, 04 Feb 2025 05:24:17 GMT  
-		Size: 17.7 MB (17698082 bytes)  
+	-	`sha256:9b2d5ed14f9e263ded471414522112546cb26d2dd519d9a88f93fe76c3a9737f`  
+		Last Modified: Wed, 05 Feb 2025 20:30:00 GMT  
+		Size: 17.7 MB (17698231 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83ebdf1064373876167acbbd71b1ac9d0be1aaac34e017f1ae46b8baaf45fe2e`  
-		Last Modified: Tue, 04 Feb 2025 05:24:16 GMT  
-		Size: 651.0 B  
+	-	`sha256:2576310726187689c80cb94738213e131415bb2d75747b875129d00cbdc9821a`  
+		Last Modified: Wed, 05 Feb 2025 20:29:59 GMT  
+		Size: 652.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d61d143ffae1a3ce5a540fbbcd5930b5f3fdf49afd8e731ac3cc496c814320b4`  
-		Last Modified: Tue, 04 Feb 2025 05:24:18 GMT  
-		Size: 18.0 MB (18024759 bytes)  
+	-	`sha256:badb530293f80d0edd030a36e5f03332732e06f10abbfeb39dba5bba78ffee74`  
+		Last Modified: Wed, 05 Feb 2025 20:30:02 GMT  
+		Size: 18.0 MB (18024728 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2d8ed9c9794ea05dd80b5bde283ac2c138debe8385156cfffcc0372544d67248`  
-		Last Modified: Tue, 04 Feb 2025 05:24:10 GMT  
-		Size: 3.9 KB (3881 bytes)  
+	-	`sha256:bc9434e4fcf0cf124daaf0ca578e0f0f7abdc53f330fe8fbd092c6dcd79ca106`  
+		Last Modified: Wed, 05 Feb 2025 20:30:01 GMT  
+		Size: 3.9 KB (3861 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fcb9af96891dd72b8ff902154d367ba99af99b8966b0858b2a56651ff6132f58`  
-		Last Modified: Tue, 04 Feb 2025 05:24:18 GMT  
+	-	`sha256:17062aa5878aedd6bafbfda4fc8f46a267ee250980219aca0e4d1a20472a79bf`  
+		Last Modified: Wed, 05 Feb 2025 20:30:01 GMT  
 		Size: 923.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `friendica:dev-fpm` - unknown; unknown
 
 ```console
-$ docker pull friendica@sha256:7946211974800ce5db2b9d56d87dc2f1ea71e3c5043b770cb1471ccfdf50d6ea
+$ docker pull friendica@sha256:7bd7bc772082d1aecbdf587aac0076501db78aa41f28219513ffde417b9942be
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **47.9 KB (47908 bytes)**  
+-	Total Size: **47.9 KB (47907 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3c59d87fbf26346d2e5a3f8f6eb46a8e3d96a946e27e50b2df0cb4873e399741`
+-	Image ID: `sha256:b3e2862e5cb2848d5de15f87655b7243cbc846f8e2d4793c95cd9fd521a34e00`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:3b5102cc812bc997098bb5f263e0b2c6a3e22644b4a716a4232feb347b29dd36`  
-		Last Modified: Tue, 04 Feb 2025 05:24:16 GMT  
-		Size: 47.9 KB (47908 bytes)  
+	-	`sha256:e0c87e8b1ff8b8a1562f3823554b7b7a143bba63e938f3a2190ff2a7890075eb`  
+		Last Modified: Wed, 05 Feb 2025 20:29:59 GMT  
+		Size: 47.9 KB (47907 bytes)  
 		MIME: application/vnd.in-toto+json
