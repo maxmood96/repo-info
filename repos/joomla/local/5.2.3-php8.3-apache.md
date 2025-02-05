@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8738e5878b09d90ba89d82c9007a68b76f07b563571dad37ded941eeb3b15b57`
+- Image ID: `sha256:84006a64be2aa22b912dd2f8fdab0010a65afeddf714ee1945fb36856bfedf0d`
 - Created: `2025-01-08T08:12:24Z`
 - Virtual Size: ~ 758.78 Mb  
   (total size of all layers on-disk)
@@ -3770,11 +3770,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/numactl/2.0.16-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/numactl/2.0.16-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openjpeg2=2.5.0-2`
+### `dpkg` source package: `openjpeg2=2.5.0-2+deb12u1`
 
 Binary Packages:
 
-- `libopenjp2-7:amd64=2.5.0-2`
+- `libopenjp2-7:amd64=2.5.0-2+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`)
 
@@ -3791,17 +3791,17 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openjpeg2=2.5.0-2
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.5.0-2.dsc' openjpeg2_2.5.0-2.dsc 2673 SHA256:c29fc2afc7bf6fa1a3d02e9c78dd2159db2ef12a5fe62bc786500c91f01ffc04
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.5.0.orig.tar.xz' openjpeg2_2.5.0.orig.tar.xz 1221108 SHA256:007e19d772c8b6b22e35379630b06ff3549e49ba719d96453607a36ad7b4de73
-'http://deb.debian.org/debian/pool/main/o/openjpeg2/openjpeg2_2.5.0-2.debian.tar.xz' openjpeg2_2.5.0-2.debian.tar.xz 17388 SHA256:7bedc8ba24e39dddc65e3e87f70c5dcced44661d360379efd5077fd24333ee9c
+$ apt-get source -qq --print-uris openjpeg2=2.5.0-2+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.5.0-2%2bdeb12u1.dsc' openjpeg2_2.5.0-2+deb12u1.dsc 2705 SHA256:809c3ea598b1fcda47b8e170d46cf6e09b1a2937fbd50ecb5048b9fd26ef072f
+'http://deb.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.5.0.orig.tar.xz' openjpeg2_2.5.0.orig.tar.xz 1221108 SHA256:007e19d772c8b6b22e35379630b06ff3549e49ba719d96453607a36ad7b4de73
+'http://deb.debian.org/debian-security/pool/updates/main/o/openjpeg2/openjpeg2_2.5.0-2%2bdeb12u1.debian.tar.xz' openjpeg2_2.5.0-2+deb12u1.debian.tar.xz 19624 SHA256:f6e27869dc381c84ca12b4843e20644104f9a830996680319a5bd330bd2f98b0
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openjpeg2/2.5.0-2/ (for browsing the source)
-- https://sources.debian.net/src/openjpeg2/2.5.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openjpeg2/2.5.0-2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openjpeg2/2.5.0-2+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/openjpeg2/2.5.0-2+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openjpeg2/2.5.0-2+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.5.13+dfsg-5`
 
