@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7e7eb151bbeea954039e609ed8d0e28408538a59332fb56812e8306ed5d60392`
+- Image ID: `sha256:05758a5db5889951ffe81c698e5b4f741f33a52fb07c263c98aeda7ec47d79f1`
 - Created: `2025-01-01T19:19:24Z`
-- Virtual Size: ~ 677.66 Mb  
+- Virtual Size: ~ 677.67 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -3846,11 +3846,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/readline/8.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/readline/8.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `rsync=3.2.3-4+deb11u1`
+### `dpkg` source package: `rsync=3.2.3-4+deb11u3`
 
 Binary Packages:
 
-- `rsync=3.2.3-4+deb11u1`
+- `rsync=3.2.3-4+deb11u3`
 
 Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 
@@ -3859,18 +3859,18 @@ Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris rsync=3.2.3-4+deb11u1
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.2.3-4%2bdeb11u1.dsc' rsync_3.2.3-4+deb11u1.dsc 2263 SHA256:adee45edfd2d8973c849b809447cfa36c8be283799e40f7ea0cd314e1d3106c7
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.2.3.orig.tar.gz' rsync_3.2.3.orig.tar.gz 1069784 SHA256:becc3c504ceea499f4167a260040ccf4d9f2ef9499ad5683c179a697146ce50e
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.2.3.orig.tar.gz.asc' rsync_3.2.3.orig.tar.gz.asc 195 SHA256:2e363382a60e7faa6762f560756cc0f3b8116c313eea7fe5fbfc5fed5b2f4f74
-'http://deb.debian.org/debian/pool/main/r/rsync/rsync_3.2.3-4%2bdeb11u1.debian.tar.xz' rsync_3.2.3-4+deb11u1.debian.tar.xz 33260 SHA256:cc17198f035076a70dd458d5f309ed8d5c3f8458e24ace75f6c6090789f83213
+$ apt-get source -qq --print-uris rsync=3.2.3-4+deb11u3
+'http://deb.debian.org/debian-security/pool/updates/main/r/rsync/rsync_3.2.3-4%2bdeb11u3.dsc' rsync_3.2.3-4+deb11u3.dsc 2422 SHA256:e20aa77541f740053677ceea1b29e30022bc1ff8ecfb716395958c8c09d7b903
+'http://deb.debian.org/debian-security/pool/updates/main/r/rsync/rsync_3.2.3.orig.tar.gz' rsync_3.2.3.orig.tar.gz 1069784 SHA256:becc3c504ceea499f4167a260040ccf4d9f2ef9499ad5683c179a697146ce50e
+'http://deb.debian.org/debian-security/pool/updates/main/r/rsync/rsync_3.2.3.orig.tar.gz.asc' rsync_3.2.3.orig.tar.gz.asc 195 SHA256:2e363382a60e7faa6762f560756cc0f3b8116c313eea7fe5fbfc5fed5b2f4f74
+'http://deb.debian.org/debian-security/pool/updates/main/r/rsync/rsync_3.2.3-4%2bdeb11u3.debian.tar.xz' rsync_3.2.3-4+deb11u3.debian.tar.xz 38148 SHA256:88e3f32295f4aa7818123149908c933ba74b382151b6014c3503dfdf9f73aa10
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/rsync/3.2.3-4+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/rsync/3.2.3-4+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rsync/3.2.3-4+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/rsync/3.2.3-4+deb11u3/ (for browsing the source)
+- https://sources.debian.net/src/rsync/3.2.3-4+deb11u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/rsync/3.2.3-4+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rtmpdump=2.4+20151223.gitfa8646d.1-2`
 
@@ -4090,11 +4090,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.34+dfsg-1+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.34+dfsg-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tiff=4.2.0-1+deb11u5`
+### `dpkg` source package: `tiff=4.2.0-1+deb11u6`
 
 Binary Packages:
 
-- `libtiff5:amd64=4.2.0-1+deb11u5`
+- `libtiff5:amd64=4.2.0-1+deb11u6`
 
 Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 
@@ -4103,18 +4103,18 @@ Licenses: (parsed from: `/usr/share/doc/libtiff5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tiff=4.2.0-1+deb11u5
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.2.0-1%2bdeb11u5.dsc' tiff_4.2.0-1+deb11u5.dsc 2116 SHA256:eeb72e3449968ab5d39fdf7f999b787580837fcf7751f30e16750659919fd3d4
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.2.0.orig.tar.gz' tiff_4.2.0.orig.tar.gz 2809373 SHA256:eb0484e568ead8fa23b513e9b0041df7e327f4ee2d22db5a533929dfc19633cb
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.2.0.orig.tar.gz.asc' tiff_4.2.0.orig.tar.gz.asc 228 SHA256:119bb62934603ff4d3cd81c739d11904b28812a860773b9b2268cc96a339b14f
-'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.2.0-1%2bdeb11u5.debian.tar.xz' tiff_4.2.0-1+deb11u5.debian.tar.xz 41268 SHA256:472770be431abb4f9fdaf2f0e2306b8980a47b1a55a3c10a2224f2c8833fa6a0
+$ apt-get source -qq --print-uris tiff=4.2.0-1+deb11u6
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0-1%2bdeb11u6.dsc' tiff_4.2.0-1+deb11u6.dsc 2461 SHA256:e8871175e69974b6958e958b4e4aed9b2ffb4ce7616fc1d174fc3ca6f3c95d67
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0.orig.tar.gz' tiff_4.2.0.orig.tar.gz 2809373 SHA256:eb0484e568ead8fa23b513e9b0041df7e327f4ee2d22db5a533929dfc19633cb
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0.orig.tar.gz.asc' tiff_4.2.0.orig.tar.gz.asc 228 SHA256:119bb62934603ff4d3cd81c739d11904b28812a860773b9b2268cc96a339b14f
+'http://deb.debian.org/debian-security/pool/updates/main/t/tiff/tiff_4.2.0-1%2bdeb11u6.debian.tar.xz' tiff_4.2.0-1+deb11u6.debian.tar.xz 44916 SHA256:e8797cd2fa51c858eca826edd8c201e8974d9c5a0fbcf1742ee923459a9cccd3
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tiff/4.2.0-1+deb11u5/ (for browsing the source)
-- https://sources.debian.net/src/tiff/4.2.0-1+deb11u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tiff/4.2.0-1+deb11u5/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tiff/4.2.0-1+deb11u6/ (for browsing the source)
+- https://sources.debian.net/src/tiff/4.2.0-1+deb11u6/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff/4.2.0-1+deb11u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tini=0.19.0-1`
 
@@ -4167,11 +4167,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tzdata/2024b-0+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tzdata/2024b-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ucf=3.0043`
+### `dpkg` source package: `ucf=3.0043+deb11u2`
 
 Binary Packages:
 
-- `ucf=3.0043`
+- `ucf=3.0043+deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/ucf/copyright`)
 
@@ -4180,16 +4180,16 @@ Licenses: (parsed from: `/usr/share/doc/ucf/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ucf=3.0043
-'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0043.dsc' ucf_3.0043.dsc 1423 SHA256:5954508238ff1b8e2c61e1f533268911ba06709e821c02de014fd15d2ead81fd
-'http://deb.debian.org/debian/pool/main/u/ucf/ucf_3.0043.tar.xz' ucf_3.0043.tar.xz 70560 SHA256:0294cc11a6cf032ea99ca5064f73a4ede5b28bc2d4ad0a12e8493c7520c7a2a4
+$ apt-get source -qq --print-uris ucf=3.0043+deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/u/ucf/ucf_3.0043%2bdeb11u2.dsc' ucf_3.0043+deb11u2.dsc 1554 SHA256:729df649cb262cf7a023dcf9028e657c15ad6ede2e1a1900cbe51eb1fc627aff
+'http://deb.debian.org/debian-security/pool/updates/main/u/ucf/ucf_3.0043%2bdeb11u2.tar.xz' ucf_3.0043+deb11u2.tar.xz 70864 SHA256:a4e6d85e60bd0ad5c936ce61b8b89e3daa2da1f37fa6045e2cd4381583b1fb3f
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ucf/3.0043/ (for browsing the source)
-- https://sources.debian.net/src/ucf/3.0043/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ucf/3.0043/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ucf/3.0043+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/ucf/3.0043+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ucf/3.0043+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.36.1-8+deb11u2`
 

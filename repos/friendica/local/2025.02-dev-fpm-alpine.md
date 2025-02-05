@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4739f3383aa91d9be92578b560630feb01b6361644e79fa8676d6cd80295fef5`
-- Created: `2025-01-01T19:19:24Z`
+- Image ID: `sha256:2623465e88075df9ada19082127d66d92db295244db64a686fabc917ac82b3b0`
+- Created: `2025-01-31T18:42:40Z`
 - Virtual Size: ~ 139.43 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1750,16 +1750,16 @@ GPL-3.0-or-later
 ### `apk` package: `rsync`
 
 ```console
-rsync-3.3.0-r1 description:
+rsync-3.4.0-r0 description:
 A file transfer program to keep remote files in sync
 
-rsync-3.3.0-r1 webpage:
+rsync-3.4.0-r0 webpage:
 https://rsync.samba.org/
 
-rsync-3.3.0-r1 installed size:
+rsync-3.4.0-r0 installed size:
 375 KiB
 
-rsync-3.3.0-r1 license:
+rsync-3.4.0-r0 license:
 GPL-3.0-or-later
 
 ```
