@@ -1,7 +1,7 @@
 ## `rakudo-star:latest`
 
 ```console
-$ docker pull rakudo-star@sha256:d01a96b73977231e5d2982c912e96912bc68d90575510ddb9115b5ddd534c50e
+$ docker pull rakudo-star@sha256:e2f35bb1232faffb3b43a352517b0f5bc8d97481f6dd7d0d8bd880827c4f13a6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -96,18 +96,18 @@ $ docker pull rakudo-star@sha256:54ffc5a0ec100afce4792e6062bd9a6441e55081380a191
 ### `rakudo-star:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull rakudo-star@sha256:f714227ecac99c76a364553e4f320ff161a508709dcec1e2c4dbaffa50f12873
+$ docker pull rakudo-star@sha256:b5576f83de9ac7199101fbadb51bc30ee64461f70aa802135b3ebc83c5538ea2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.1 MB (177105126 bytes)**  
+-	Total Size: **176.3 MB (176253404 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:10352e09764ae48efccfd154154a16a2af2ad5def16ebe09aaea201e7644ec31`
+-	Image ID: `sha256:43c74c30955383794eac475da2e5134948d656eafa62c74b6afd6fafb94ade1e`
 -	Default Command: `["raku"]`
 
 ```dockerfile
 # Wed, 10 May 2023 23:29:59 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1736726400'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1738540800'
 # Wed, 10 May 2023 23:29:59 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		curl 		gnupg 		netbase 		sq 		wget 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
@@ -130,47 +130,47 @@ CMD ["raku"]
 ```
 
 -	Layers:
-	-	`sha256:e474a4a4cbbfe5b308416796d99b79605bbfad6cb32ab1d94d61dc0585a907ea`  
-		Last Modified: Tue, 14 Jan 2025 01:35:41 GMT  
-		Size: 48.3 MB (48306896 bytes)  
+	-	`sha256:106abeaee908db66722312b3379ae398e2bcc5b2fdad0cc248509efa14a819ff`  
+		Last Modified: Tue, 04 Feb 2025 01:37:39 GMT  
+		Size: 48.3 MB (48306553 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d22b85d68f8a4dce392d372c8a196863eac6d111c36b714179b4ab30e00c00d1`  
-		Last Modified: Tue, 14 Jan 2025 06:59:53 GMT  
-		Size: 23.6 MB (23598225 bytes)  
+	-	`sha256:193c44006e77abbadfdd7be72b4ab6d7a5c08640ef575970f722b798ee7800ac`  
+		Last Modified: Tue, 04 Feb 2025 09:00:06 GMT  
+		Size: 23.6 MB (23598428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:936252136b926e9bca27f4a5442f6a5d10c0ea4a23ca8b30c65de1bde666d082`  
-		Last Modified: Tue, 14 Jan 2025 13:31:06 GMT  
-		Size: 64.4 MB (64356433 bytes)  
+	-	`sha256:c9d3572a68af0b860060b7ea84adfa8406fa20cfd1337c947dfb661aa965eee7`  
+		Last Modified: Tue, 04 Feb 2025 19:01:50 GMT  
+		Size: 64.4 MB (64357505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f5668aa1d66870e70ed95649b861be58d77e1808e472ce4be592ddcceb18df20`  
-		Last Modified: Tue, 14 Jan 2025 18:14:30 GMT  
-		Size: 3.2 KB (3237 bytes)  
+	-	`sha256:5bef71704d9770a225e086540bae0d91a4c634990dc498fec26164490b2da66d`  
+		Last Modified: Wed, 05 Feb 2025 03:22:58 GMT  
+		Size: 3.2 KB (3243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7eff42d4908ee892ddb83f4455ab011af3d6feae864235486f412300160b3d6`  
-		Last Modified: Tue, 14 Jan 2025 18:14:32 GMT  
-		Size: 40.8 MB (40840335 bytes)  
+	-	`sha256:fc84db82893390f59835731f42d37a0d0aa46b91cfe1e4c1baf512a440e3fc4f`  
+		Last Modified: Wed, 05 Feb 2025 03:22:59 GMT  
+		Size: 40.0 MB (39987675 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rakudo-star:latest` - unknown; unknown
 
 ```console
-$ docker pull rakudo-star@sha256:9a3e2ac11db1530bca214d70b5dd477965e126ccb83deb79ac4ab6809e9a3995
+$ docker pull rakudo-star@sha256:d21301157f5199a0d268089e4b014429df52286755e53d0511b68456d5cf3fc9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **7.8 MB (7778509 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c09a493b160a90054b7491f289bc0e070846717d21383d219066ec70d698ba89`
+-	Image ID: `sha256:6aad112d73a39b3f326a80dfce6b6b9980ee1f1dbf9d141a8d0b03073f661108`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1bfd91fd84e33faf6b79127433331e3f7f957820abd7ff652efccd43bed681b9`  
-		Last Modified: Tue, 14 Jan 2025 18:14:31 GMT  
+	-	`sha256:8cf33e3a2b068d3df517ebafb3259a6105603d14e9af3e98197fffbcead33972`  
+		Last Modified: Wed, 05 Feb 2025 03:22:58 GMT  
 		Size: 7.8 MB (7765374 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:926a2d81c90ac35974693a4f6b1ad49b908cb1e5ddbe12292c3d8dd640a47098`  
-		Last Modified: Tue, 14 Jan 2025 18:14:30 GMT  
+	-	`sha256:0696a575dc03abc39bdf4b87dda9fff379c846cc7f3c81d93eca0fc4fb836a74`  
+		Last Modified: Wed, 05 Feb 2025 03:22:58 GMT  
 		Size: 13.1 KB (13135 bytes)  
 		MIME: application/vnd.in-toto+json
