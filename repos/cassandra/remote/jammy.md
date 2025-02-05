@@ -1,7 +1,7 @@
 ## `cassandra:jammy`
 
 ```console
-$ docker pull cassandra@sha256:1905e8acf5e6ca93204b28cb16a64e96cbb22621a9be13c86ddfc6d59bdbd735
+$ docker pull cassandra@sha256:f93bae379ed18d2e46e049fe6e9a0c5c54e5d6d24546f4c61fe05f28a074e16f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -308,144 +308,144 @@ $ docker pull cassandra@sha256:b7365b226c54645df47cd237df730a005639f8fcfe21819bf
 ### `cassandra:jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull cassandra@sha256:ba84f3f845c3c730ed6e249cca7d29ad5fd838e5062aae221a347bb1e44648f9
+$ docker pull cassandra@sha256:8457aee09f6b87ca5089d9ae7cbe35a9ee56f4d5fb91abc2cc61a9ee145fa55c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **172.7 MB (172692223 bytes)**  
+-	Total Size: **172.7 MB (172705058 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:12bb37995b2ded9aa291371f2d4491d57714e5966f58ed4a43ff2fef8779f27e`
+-	Image ID: `sha256:26f2456cd87547ca35f839b78a6087e6b683a34f7b31b9fb604f9c2bf42ce6bf`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["cassandra","-f"]`
 
 ```dockerfile
-# Wed, 11 Sep 2024 16:26:04 GMT
+# Sun, 26 Jan 2025 05:32:14 GMT
 ARG RELEASE
-# Wed, 11 Sep 2024 16:26:04 GMT
+# Sun, 26 Jan 2025 05:32:14 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Wed, 11 Sep 2024 16:26:04 GMT
+# Sun, 26 Jan 2025 05:32:14 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Wed, 11 Sep 2024 16:26:04 GMT
+# Sun, 26 Jan 2025 05:32:14 GMT
 LABEL org.opencontainers.image.version=22.04
-# Wed, 11 Sep 2024 16:26:06 GMT
-ADD file:53ce73ebbd6d87a234a33414686f12909aaaf28b7238593f746a327c7d004ce7 in / 
-# Wed, 11 Sep 2024 16:26:06 GMT
+# Sun, 26 Jan 2025 05:32:17 GMT
+ADD file:905ede4ce5ed6db0abca06b5e342a3784cd1f328e2cdc1f59f6d556f6382650d in / 
+# Sun, 26 Jan 2025 05:32:17 GMT
 CMD ["/bin/bash"]
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_VERSION=jdk-17.0.14+7
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='a4b0015872758aac6a5d17139e952a3951ee536ae6d9a99828823a80a71add56';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.14_7.tar.gz';          ;;        arm64)          ESUM='bab3f352fc7144ac1435924f056872d16f4b32c8bcda58b9a77b636eb1c664f4';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.14_7.tar.gz';          ;;        armhf)          ESUM='7ac439bce4d5ecddb250b31401b1c1a6da2762f51652eafedd53584a0d9e3130';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.14_7.tar.gz';          ;;        ppc64el)          ESUM='2a730e9d34cce4d588739b626a034ed68c065a2db61048ee7886be48ec9fe460';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.14_7.tar.gz';          ;;        s390x)          ESUM='3887f14f95a14e65a985cfcee6696e01aadee06d3347ab70eb7d6b16ce397238';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.14_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Tue, 04 Feb 2025 03:28:06 GMT
 RUN set -eux; 	groupadd -r cassandra --gid=999; 	useradd -r -g cassandra --uid=999 cassandra # buildkit
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Tue, 04 Feb 2025 03:28:06 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		libjemalloc2 		procps 		python3 		iproute2 		numactl 	; 	rm -rf /var/lib/apt/lists/*; 	libjemalloc="$(readlink -e /usr/lib/*/libjemalloc.so.2)"; 	ln -sT "$libjemalloc" /usr/local/lib/libjemalloc.so; 	ldconfig # buildkit
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Tue, 04 Feb 2025 03:28:06 GMT
 ENV GOSU_VERSION=1.17
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Tue, 04 Feb 2025 03:28:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Tue, 04 Feb 2025 03:28:06 GMT
 ENV CASSANDRA_HOME=/opt/cassandra
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Tue, 04 Feb 2025 03:28:06 GMT
 ENV CASSANDRA_CONF=/etc/cassandra
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Tue, 04 Feb 2025 03:28:06 GMT
 ENV PATH=/opt/cassandra/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Tue, 04 Feb 2025 03:28:06 GMT
 ENV GPG_KEYS=CEC86BB4A0BA9D0F90397CAEF8358FA2F2833C93 	C4965EE9E3015D192CCCF2B6F758CE318D77295D 	5AED1BF378E9A19DADE1BCB34BD736A82B5C1B00 	514A2AD631A57A16DD0047EC749D6EEC0353B12C 	A26E528B271F19B9E5D8E19EA278B781FE4B2BDA 	A4C465FEA0C552561A392A61E91335D77E3E87CB 	9E66CEC6106D578D0B1EB9BFF1000962B7F6840C 	C4009872C59B49561310D966D0062876AF30F054 	B7842CDAF36E6A3214FAE35D5E85B9AE0B84C041 	3E9C876907A560ACA00964F363E9BAD215BBF5F0 	F8B7FD00E05C932991A2CD6150EE103D162C5A55 	7464AAD9068241C50BA6A26232F35CB2F546D93E 	CEC5C50B9C629EF0F5AB2706650B72EB14CCD622
-# Sat, 19 Oct 2024 14:24:30 GMT
-ENV CASSANDRA_VERSION=5.0.2
-# Sat, 19 Oct 2024 14:24:30 GMT
-ENV CASSANDRA_SHA512=51478b18b8bce82a6b4915f31470d031306724041a4f2b684fd17635f8a5a9802594c0bbc3d0154cfa52d87a253d7868636985787aa1e3e00136259302689363
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Tue, 04 Feb 2025 03:28:06 GMT
+ENV CASSANDRA_VERSION=5.0.3
+# Tue, 04 Feb 2025 03:28:06 GMT
+ENV CASSANDRA_SHA512=9b2fa89f729a89473934a18d4056d200859bed6e4f9d288b9fca9e8f4056c2d1ccb128948996368395ccd8bb4d5c94b9d8c79c7603de2dcb5b15976ac8c6da8f
+# Tue, 04 Feb 2025 03:28:06 GMT
 RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 		ddist() { 		local f="$1"; shift; 		local distFile="$1"; shift; 		local success=; 		local distUrl=; 		for distUrl in 			https://dlcdn.apache.org/ 			https://archive.apache.org/dist/ 		; do 			if wget --progress=dot:giga -O "$f" "$distUrl$distFile" && [ -s "$f" ]; then 				success=1; 				break; 			fi; 		done; 		[ -n "$success" ]; 	}; 		ddist 'cassandra-bin.tgz' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz"; 	echo "$CASSANDRA_SHA512 *cassandra-bin.tgz" | sha512sum --check --strict -; 		ddist 'cassandra-bin.tgz.asc' "cassandra/$CASSANDRA_VERSION/apache-cassandra-$CASSANDRA_VERSION-bin.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --verify cassandra-bin.tgz.asc cassandra-bin.tgz; 	rm -rf "$GNUPGHOME"; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		mkdir -p "$CASSANDRA_HOME"; 	tar --extract --file cassandra-bin.tgz --directory "$CASSANDRA_HOME" --strip-components 1; 	rm cassandra-bin.tgz*; 		[ ! -e "$CASSANDRA_CONF" ]; 	mv "$CASSANDRA_HOME/conf" "$CASSANDRA_CONF"; 	ln -sT "$CASSANDRA_CONF" "$CASSANDRA_HOME/conf"; 		dpkgArch="$(dpkg --print-architecture)"; 	case "$dpkgArch" in 		ppc64el) 			grep -- '^-Xss256k$' "$CASSANDRA_CONF/jvm-server.options"; 			sed -ri 's/^-Xss256k$/-Xss512k/' "$CASSANDRA_CONF/jvm-server.options"; 			grep -- '^-Xss512k$' "$CASSANDRA_CONF/jvm-server.options"; 			;; 	esac; 		mkdir -p "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chown -R cassandra:cassandra "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod 1777 "$CASSANDRA_CONF" /var/lib/cassandra /var/log/cassandra; 	chmod -R a+rwX "$CASSANDRA_CONF"; 	ln -sT /var/lib/cassandra "$CASSANDRA_HOME/data"; 	ln -sT /var/log/cassandra "$CASSANDRA_HOME/logs"; 		cassandra -v # buildkit
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Tue, 04 Feb 2025 03:28:06 GMT
 VOLUME [/var/lib/cassandra]
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Tue, 04 Feb 2025 03:28:06 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Tue, 04 Feb 2025 03:28:06 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Tue, 04 Feb 2025 03:28:06 GMT
 EXPOSE map[7000/tcp:{} 7001/tcp:{} 7199/tcp:{} 9042/tcp:{} 9160/tcp:{}]
-# Sat, 19 Oct 2024 14:24:30 GMT
+# Tue, 04 Feb 2025 03:28:06 GMT
 CMD ["cassandra" "-f"]
 ```
 
 -	Layers:
-	-	`sha256:a186900671ab62e1dea364788f4e84c156e1825939914cfb5a6770be2b58b4da`  
-		Last Modified: Wed, 11 Sep 2024 17:24:47 GMT  
-		Size: 27.4 MB (27358329 bytes)  
+	-	`sha256:0d1c17d4e593cf07e0f9e907017f6edbe7e32dd2b7f8e3f026c74bbaf3466561`  
+		Last Modified: Sun, 26 Jan 2025 07:02:08 GMT  
+		Size: 27.4 MB (27358182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:243c5e4bb1eb8f1bbd43779267016247aca843f7e671517c7f6bb4e5c737feb6`  
-		Last Modified: Wed, 22 Jan 2025 20:51:45 GMT  
-		Size: 16.1 MB (16062040 bytes)  
+	-	`sha256:03b542dd916502bedf4dd14bd9610d5843b919aed4757a473c4043de50c9ba83`  
+		Last Modified: Tue, 04 Feb 2025 09:16:50 GMT  
+		Size: 16.1 MB (16052648 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0360f49de6ba14f833932043a2b7635b6dbb1ec90797c695d682858e4d2a5a52`  
-		Last Modified: Fri, 31 Jan 2025 01:42:56 GMT  
-		Size: 46.5 MB (46463497 bytes)  
+	-	`sha256:6b6776cda46620adc2b59f56ab611b9aceea84112b098d4b493c32131d86e5ad`  
+		Last Modified: Tue, 04 Feb 2025 09:22:57 GMT  
+		Size: 46.5 MB (46463561 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ab08342d2d2022a4346660236d446ab4cb3711210932b0e608b45c35bf4a58d`  
-		Last Modified: Fri, 31 Jan 2025 01:42:54 GMT  
-		Size: 158.0 B  
+	-	`sha256:32e53bec90429d4b30e4f831703f86a19f5205af4af5aa9b019cf93023e8c8a1`  
+		Last Modified: Tue, 04 Feb 2025 09:22:56 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:551e7d29b3d784556186e5dc47a775982b3b320fffdf0e1bdeeb2c075f0eb3f2`  
-		Last Modified: Fri, 31 Jan 2025 01:42:55 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:4f32cdfb555e64515082ddfaf9f92db7b1f24a06238df2f4337aeadc294afb76`  
+		Last Modified: Tue, 04 Feb 2025 09:22:56 GMT  
+		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b8ee7d8c2fe91a0301b0668d15e5d1e3741566d47ee897112befe1bdfe5b5b93`  
-		Last Modified: Fri, 31 Jan 2025 04:47:10 GMT  
-		Size: 1.7 KB (1736 bytes)  
+	-	`sha256:f5e0e894b4ad129a740700b6a7fcf1e7167f31719a2359a1097a216b36034e54`  
+		Last Modified: Wed, 05 Feb 2025 06:23:01 GMT  
+		Size: 1.7 KB (1733 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:700ab19f00780f8d7b46ef14ea5549e9534847c62f6d8d37c0bfb192331e61cf`  
-		Last Modified: Fri, 31 Jan 2025 04:47:10 GMT  
-		Size: 11.5 MB (11454281 bytes)  
+	-	`sha256:6273ebe730d89db76f0fd3ae96ff35e7cfc1dd5e17a8fa3945c4a8cc640845a0`  
+		Last Modified: Wed, 05 Feb 2025 06:23:01 GMT  
+		Size: 11.5 MB (11452433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3e6318c6139a90e8e2e88ea9e793ca49cd749f2f833cf9596d54b675f0101c19`  
-		Last Modified: Fri, 31 Jan 2025 04:47:10 GMT  
-		Size: 914.5 KB (914457 bytes)  
+	-	`sha256:eca88c6447535adadd6a3e5816b98305aef54528d901ed8fc0c694e1563c6337`  
+		Last Modified: Wed, 05 Feb 2025 06:23:01 GMT  
+		Size: 914.5 KB (914450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:355da1eb39d4d3bf1c8eaf5d8108053cde0ee153fa8fece9733e10a10ebd0017`  
-		Last Modified: Fri, 31 Jan 2025 04:47:13 GMT  
-		Size: 70.4 MB (70434223 bytes)  
+	-	`sha256:dd81396bc6f9177b7db7db2687172411b1efc684df148d6b2b93cfb7c48ff0f1`  
+		Last Modified: Wed, 05 Feb 2025 06:23:03 GMT  
+		Size: 70.5 MB (70458392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3bf269c710d8a0c4b812854cdc2bdbfc0a8b2e77b88f35f812d00dfad0132180`  
-		Last Modified: Fri, 31 Jan 2025 04:47:10 GMT  
-		Size: 1.2 KB (1220 bytes)  
+	-	`sha256:e7de59b7e25cee022b8bf365fb62ceea999b37a6395ba48655272cb2da80cebf`  
+		Last Modified: Wed, 05 Feb 2025 06:23:02 GMT  
+		Size: 1.2 KB (1219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `cassandra:jammy` - unknown; unknown
 
 ```console
-$ docker pull cassandra@sha256:1e180fd127316722ba5b8aa0be2b725d753dec9c585a9ba5aa84083cecff9cb9
+$ docker pull cassandra@sha256:827e8fd06277b43884401738504a1321e023cf2fb37830c9270f476bc78e250e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.5 MB (4485444 bytes)**  
+-	Total Size: **4.5 MB (4483568 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc5c77dc97fe944562aa2452590f84059fdd3c5ff6d51c97ae551487ac1fe8f8`
+-	Image ID: `sha256:ccdf8c405993d07645840d3cd21a3a9ef2350b07666bdd32064862b7533e8da6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c63cbe6426a482952288a49b5912c573b0556796da51cd52c075b870c72963e8`  
-		Last Modified: Fri, 31 Jan 2025 04:47:10 GMT  
-		Size: 4.4 MB (4449386 bytes)  
+	-	`sha256:4815c24bacd4c85f95dc5fa154f5bbf82178eaec5c535bf8b4e8feffc03ec9c3`  
+		Last Modified: Wed, 05 Feb 2025 06:23:01 GMT  
+		Size: 4.4 MB (4447510 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:536abcd958d94b51b5d216de206184519bb41a89b2fc56fca22fe117b303303c`  
-		Last Modified: Fri, 31 Jan 2025 04:47:09 GMT  
+	-	`sha256:58b38040eefbf6ad44071e176ae52b18db045ebba50b16622f46bd593ea33452`  
+		Last Modified: Wed, 05 Feb 2025 06:23:01 GMT  
 		Size: 36.1 KB (36058 bytes)  
 		MIME: application/vnd.in-toto+json
 
