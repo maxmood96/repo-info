@@ -1,10 +1,10 @@
-# `mariadb:11.4.4-ubi9`
+# `mariadb:11.4.5-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d66617516cb22cd79cc8fff3a894f7bd9e91788ff9aa1b9e78d4518e3e92c452`
-- Created: `2024-11-04T20:52:12Z`
-- Virtual Size: ~ 464.46 Mb  
+- Image ID: `sha256:75a6146c079602024767239d4b071a1e1ef193f67fc4ff83233fc93ebee406ee`
+- Created: `2025-02-05T21:06:18Z`
+- Virtual Size: ~ 465.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,10 +13,10 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
   - `GOSU_VERSION=1.17`
-  - `MARIADB_VERSION=11.4.4`
+  - `MARIADB_VERSION=11.4.5`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-01-09T06:29:15Z`
+  - `build-date=2025-02-04T04:34:12Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=MariaDB Database for relational SQL`
@@ -37,54 +37,42 @@
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=11.4.4`
+  - `org.opencontainers.image.version=11.4.5`
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://www.redhat.com`
-  - `vcs-ref=98c9e4c67f5f2dfc85d12e0f1fd70b809f2a3132`
+  - `vcs-ref=177f460763ad3b12e4b8be13035c0af01fc0d47e`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
-  - `version=11.4.4`
+  - `version=11.4.5`
 
 ## `rpm` (`.rpm`-based packages)
 
-### `rpm` package: `MariaDB-backup-11.4.4-1.el9.x86_64`
+### `rpm` package: `MariaDB-backup-11.4.5-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-client-11.4.4-1.el9.x86_64`
+### `rpm` package: `MariaDB-client-11.4.5-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-client-compat-11.4.4-1.el9.noarch`
+### `rpm` package: `MariaDB-common-11.4.5-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-common-11.4.4-1.el9.x86_64`
+### `rpm` package: `MariaDB-server-11.4.5-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `MariaDB-server-11.4.4-1.el9.x86_64`
-
-Licenses (from `rpm --query`): GPLv2
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `MariaDB-server-compat-11.4.4-1.el9.noarch`
-
-Licenses (from `rpm --query`): GPLv2
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `MariaDB-shared-11.4.4-1.el9.x86_64`
+### `rpm` package: `MariaDB-shared-11.4.5-1.el9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2.1
 
@@ -145,15 +133,15 @@ $ dnf --quiet download --source --url boost-program-options-1.75.0-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/b/boost-1.75.0-8.el9.src.rpm
 ```
 
-### `rpm` package: `bzip2-libs-1.0.8-8.el9.x86_64`
+### `rpm` package: `bzip2-libs-1.0.8-10.el9_5.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url bzip2-libs-1.0.8-8.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/bzip2-1.0.8-8.el9.src.rpm
+$ dnf --quiet download --source --url bzip2-libs-1.0.8-10.el9_5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/bzip2-1.0.8-10.el9_5.src.rpm
 ```
 
 ### `rpm` package: `ca-certificates-2024.2.69_v8.0.303-91.4.el9_4.noarch`
@@ -274,7 +262,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-9.el9.noarch
-http://mirror.nodesdirect.com/epel/9/Everything/source/tree/Packages/e/epel-release-9-9.el9.src.rpm
+http://pubmirror3.math.uh.edu/fedora-buffet/epel/9/Everything/source/tree/Packages/e/epel-release-9-9.el9.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
@@ -321,7 +309,7 @@ $ dnf --quiet download --source --url fonts-filesystem-2.0.5-7.el9.1.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/f/fonts-rpm-macros-2.0.5-7.el9.1.src.rpm
 ```
 
-### `rpm` package: `galera-4-26.4.20-1.el9.x86_64`
+### `rpm` package: `galera-4-26.4.21-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPL-2.0
 
@@ -524,7 +512,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-http://mirror.nodesdirect.com/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+http://pubmirror3.math.uh.edu/fedora-buffet/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -2097,7 +2085,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-http://mirror.nodesdirect.com/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+http://pubmirror3.math.uh.edu/fedora-buffet/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2108,7 +2096,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-http://mirror.nodesdirect.com/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+http://pubmirror3.math.uh.edu/fedora-buffet/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
@@ -2166,11 +2154,16 @@ $ dnf --quiet download --source --url rpm-libs-4.16.1.3-34.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rpm-4.16.1.3-34.el9.src.rpm
 ```
 
-### `rpm` package: `rsync-3.2.3-20.el9.x86_64`
+### `rpm` package: `rsync-3.2.3-20.el9_5.1.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url rsync-3.2.3-20.el9_5.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rsync-3.2.3-20.el9_5.1.src.rpm
+```
 
 ### `rpm` package: `sed-4.8-9.el9.x86_64`
 
@@ -2253,11 +2246,17 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): Public Domain
 
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+
+### `rpm` package: `util-linux-core-2.37.4-20.el9.x86_64`
+
+Licenses (from `rpm --query`): GPLv2 and GPLv2+ and LGPLv2+ and BSD with advertising and Public Domain
+
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-2024b-2.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2024b-2.el9.src.rpm
+$ dnf --quiet download --source --url util-linux-core-2.37.4-20.el9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-20.el9.src.rpm
 ```
 
 ### `rpm` package: `xz-5.2.5-8.el9_0.x86_64`

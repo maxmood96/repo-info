@@ -1,10 +1,10 @@
-# `mariadb:10.11.10-jammy`
+# `mariadb:10.11.11-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:73b895f9f0fdb34280b709e601d5293a411b1c92cc2ff71a2f70d88fa0d6ddc0`
-- Created: `2024-11-04T20:52:12Z`
-- Virtual Size: ~ 326.43 Mb  
+- Image ID: `sha256:4254659f2379f8e1f62a81267c3ab59dfdb2460d0659d18da189f46264b9a2c1`
+- Created: `2025-02-05T21:06:18Z`
+- Virtual Size: ~ 326.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -13,7 +13,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GOSU_VERSION=1.17`
   - `LANG=C.UTF-8`
-  - `MARIADB_VERSION=1:10.11.10+maria~ubu2204`
+  - `MARIADB_VERSION=1:10.11.11+maria~ubu2204`
 - Labels:
   - `org.opencontainers.image.authors=MariaDB Community`
   - `org.opencontainers.image.base.name=docker.io/library/ubuntu:jammy`
@@ -25,7 +25,7 @@
   - `org.opencontainers.image.title=MariaDB Database`
   - `org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker`
   - `org.opencontainers.image.vendor=MariaDB Community`
-  - `org.opencontainers.image.version=10.11.10`
+  - `org.opencontainers.image.version=10.11.11`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -461,11 +461,11 @@ $ apt-get source -qq --print-uris findutils=4.8.0-1ubuntu3
 'http://archive.ubuntu.com/ubuntu/pool/main/f/findutils/findutils_4.8.0-1ubuntu3.debian.tar.xz' findutils_4.8.0-1ubuntu3.debian.tar.xz 27716 SHA512:f0ce8b61f4e0beabad3178424c804468dc4c57f37794887954df28c36227ce77f00383903274a1995a104f9def44270070b9e033eb46d52f5aaaedb1f5883587
 ```
 
-### `dpkg` source package: `galera-4=26.4.20-ubu2204`
+### `dpkg` source package: `galera-4=26.4.21-ubu2204`
 
 Binary Packages:
 
-- `galera-4=26.4.20-ubu2204`
+- `galera-4=26.4.21-ubu2204`
 
 Licenses: (parsed from: `/usr/share/doc/galera-4/copyright`)
 
@@ -842,14 +842,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.19.2-2ubuntu0.4
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.4.dsc' krb5_1.19.2-2ubuntu0.4.dsc 3478 SHA512:6537e7171563d984f8197a71d9248e9c8b5077180f29cbff530379fa09e7040df50b869597669e57709449b0104f84dde0c406de2d00e1bb5f435b909468b43c
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2.orig.tar.gz' krb5_1.19.2.orig.tar.gz 8741053 SHA512:b90d6ed0e1e8a87eb5cb2c36d88b823a6a6caabf85e5d419adb8a930f7eea09a5f8491464e7e454cca7ba88be09d19415962fe0036ad2e31fc584f9fc0bbd470
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.4.debian.tar.xz' krb5_1.19.2-2ubuntu0.4.debian.tar.xz 114184 SHA512:8e78309ffb2ab3c388cf70539de538b61ea70dc51252600200394f628554f504c3750d6bcffe9f9ec0321d9ecd58ff71849a346e741daaaad9a8aeb68336634e
-```
 
 ### `dpkg` source package: `libassuan=2.5.5-1build1`
 
@@ -1534,18 +1529,18 @@ $ apt-get source -qq --print-uris lz4=1.9.3-2build2
 'http://archive.ubuntu.com/ubuntu/pool/main/l/lz4/lz4_1.9.3-2build2.debian.tar.xz' lz4_1.9.3-2build2.debian.tar.xz 14088 SHA512:9f61516a672186299a96aee5b7a71d9cb1ad3db2697fa10b802fef14a63587bb3459281f7300726711a116893c10858914f558aece1d224876e287020a23dde6
 ```
 
-### `dpkg` source package: `mariadb=1:10.11.10+maria~ubu2204`
+### `dpkg` source package: `mariadb=1:10.11.11+maria~ubu2204`
 
 Binary Packages:
 
-- `libmariadb3:amd64=1:10.11.10+maria~ubu2204`
-- `mariadb-backup=1:10.11.10+maria~ubu2204`
-- `mariadb-client=1:10.11.10+maria~ubu2204`
-- `mariadb-client-core=1:10.11.10+maria~ubu2204`
-- `mariadb-common=1:10.11.10+maria~ubu2204`
-- `mariadb-server=1:10.11.10+maria~ubu2204`
-- `mariadb-server-core=1:10.11.10+maria~ubu2204`
-- `mysql-common=1:10.11.10+maria~ubu2204`
+- `libmariadb3:amd64=1:10.11.11+maria~ubu2204`
+- `mariadb-backup=1:10.11.11+maria~ubu2204`
+- `mariadb-client=1:10.11.11+maria~ubu2204`
+- `mariadb-client-core=1:10.11.11+maria~ubu2204`
+- `mariadb-common=1:10.11.11+maria~ubu2204`
+- `mariadb-server=1:10.11.11+maria~ubu2204`
+- `mariadb-server-core=1:10.11.11+maria~ubu2204`
+- `mysql-common=1:10.11.11+maria~ubu2204`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1554,9 +1549,9 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mariadb=1:10.11.10+maria~ubu2204
-'http://archive.mariadb.org/mariadb-10.11.10/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.10%2bmaria%7eubu2204.dsc' mariadb_10.11.10+maria~ubu2204.dsc 4302 SHA256:00d02107a5c714bdbaf9a215e1d4efce9901539bf66d6a86f8b2365b27c8ca0f
-'http://archive.mariadb.org/mariadb-10.11.10/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.10%2bmaria%7eubu2204.tar.xz' mariadb_10.11.10+maria~ubu2204.tar.xz 65435396 SHA256:ad09502cadc94fa0211ad197d936d284ff4b6ac48285ec257e445d6f4b0d767d
+$ apt-get source -qq --print-uris mariadb=1:10.11.11+maria~ubu2204
+'http://archive.mariadb.org/mariadb-10.11.11/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.11%2bmaria%7eubu2204.dsc' mariadb_10.11.11+maria~ubu2204.dsc 4302 SHA256:3ce8343c87f46134247658b99be468abccf47b472ab808e5dbc1a87517c5b3a9
+'http://archive.mariadb.org/mariadb-10.11.11/repo/ubuntu/pool/main/m/mariadb/mariadb_10.11.11%2bmaria%7eubu2204.tar.xz' mariadb_10.11.11+maria~ubu2204.tar.xz 66239848 SHA256:32f3d7ff6d4ba31b19419f0de707abf44fa0afedf77d26c188c8f338c4657f80
 ```
 
 ### `dpkg` source package: `mawk=1.3.4.20200120-3`
@@ -1706,14 +1701,14 @@ $ apt-get source -qq --print-uris p11-kit=0.24.0-6build1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/p11-kit/p11-kit_0.24.0-6build1.debian.tar.xz' p11-kit_0.24.0-6build1.debian.tar.xz 23264 SHA512:a858251688a0655411907d5ac2d122efab057c7bc28dcb3970c68412ca699b00234b74373cbd44472e21cd3f43eab239ddd8411f188e4c214c587052bebedd4c
 ```
 
-### `dpkg` source package: `pam=1.4.0-11ubuntu2.4`
+### `dpkg` source package: `pam=1.4.0-11ubuntu2.5`
 
 Binary Packages:
 
-- `libpam-modules:amd64=1.4.0-11ubuntu2.4`
-- `libpam-modules-bin=1.4.0-11ubuntu2.4`
-- `libpam-runtime=1.4.0-11ubuntu2.4`
-- `libpam0g:amd64=1.4.0-11ubuntu2.4`
+- `libpam-modules:amd64=1.4.0-11ubuntu2.5`
+- `libpam-modules-bin=1.4.0-11ubuntu2.5`
+- `libpam-runtime=1.4.0-11ubuntu2.5`
+- `libpam0g:amd64=1.4.0-11ubuntu2.5`
 
 Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/doc/libpam-modules-bin/copyright`, `/usr/share/doc/libpam-runtime/copyright`, `/usr/share/doc/libpam0g/copyright`)
 
@@ -1722,10 +1717,10 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 Source:
 
 ```console
-$ apt-get source -qq --print-uris pam=1.4.0-11ubuntu2.4
-'http://security.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.4.dsc' pam_1.4.0-11ubuntu2.4.dsc 2728 SHA512:6f0a003b6b3032683e02e6441bd2d9bcd4e9d9e36d2909bccda271dfdfc09bc0932f54f910c3fefebef49d31a2d95315b9d2cd31ea9793ce67fcb00052dec8d1
-'http://security.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA512:26eda95c45598a500bc142da4d1abf93d03b3bbb0f2390fa87c72dcbffa208dbfa115c0b411095c31ee9955e36422ccf3e2df3bd486818fafffef8c4310798c4
-'http://security.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.4.debian.tar.xz' pam_1.4.0-11ubuntu2.4.debian.tar.xz 169452 SHA512:b5e0a07d9bc19ea43e9f209ad4a4971de32cee61784477b90162d81f387070efa877462002a51e0806f7d49bcdd6c9a25cdbcc84716f3d75ed8194c9bce642b0
+$ apt-get source -qq --print-uris pam=1.4.0-11ubuntu2.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.5.dsc' pam_1.4.0-11ubuntu2.5.dsc 2757 SHA512:b58735f6cad6c7378b8e1e536e0b3ab718a4ab505e00f51d91dcacda6dadba53306b91d8d4c1d1b972d3e8a8e0207b2223ce0ca11bfe6776c7d66656377e0ad1
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0.orig.tar.xz' pam_1.4.0.orig.tar.xz 988908 SHA512:26eda95c45598a500bc142da4d1abf93d03b3bbb0f2390fa87c72dcbffa208dbfa115c0b411095c31ee9955e36422ccf3e2df3bd486818fafffef8c4310798c4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/pam/pam_1.4.0-11ubuntu2.5.debian.tar.xz' pam_1.4.0-11ubuntu2.5.debian.tar.xz 169436 SHA512:c34afffee9b54c32f220ef870f4476144353c341a5e1d1434bbca351e792c6b516e42b323977e3f7f2f6b2e33d8bd725a48df686b0456d82204801f49397c07d
 ```
 
 ### `dpkg` source package: `pcre2=10.39-3ubuntu0.1`
@@ -1922,19 +1917,25 @@ $ apt-get source -qq --print-uris readline=8.1.2-1
 'http://archive.ubuntu.com/ubuntu/pool/main/r/readline/readline_8.1.2-1.debian.tar.xz' readline_8.1.2-1.debian.tar.xz 29292 SHA512:a64621c93975bc42ba171c9298c932f9515025513911e744183092e0ef9873db474c4ec27a21f310f40e7b970ba6300edb057552f7e90fc469897ffa2eb706f0
 ```
 
-### `dpkg` source package: `rsync=3.2.7-0ubuntu0.22.04.2`
+### `dpkg` source package: `rsync=3.2.7-0ubuntu0.22.04.4`
 
 Binary Packages:
 
-- `rsync=3.2.7-0ubuntu0.22.04.2`
+- `rsync=3.2.7-0ubuntu0.22.04.4`
 
 Licenses: (parsed from: `/usr/share/doc/rsync/copyright`)
 
 - `GPL-3`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris rsync=3.2.7-0ubuntu0.22.04.4
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7-0ubuntu0.22.04.4.dsc' rsync_3.2.7-0ubuntu0.22.04.4.dsc 2440 SHA512:d52e8a5fc52097915f39967ea1ea90a848d49f7e4c8fabef07152fc087992b70d79669abb3b59f1204c346bab599c9c7e9410bafc788f808e12302917d8e287a
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7.orig.tar.gz' rsync_3.2.7.orig.tar.gz 1149787 SHA512:c2afba11a352fd88133f9e96e19d6df80eb864450c83eced13a7faa23df947bccf2ef093f2101df6ee30abff4cbbd39ac802e9aa5f726e42c9caff274fad8377
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7.orig.tar.gz.asc' rsync_3.2.7.orig.tar.gz.asc 195 SHA512:bad9f48e033966566c6abf8cd485d35c0d9cf130eafb0c5fff9bcb928882283bbcdd2375e7c2880cf71cf81496ba6b743b61adca3d4678421c32915a2464acc3
+'http://archive.ubuntu.com/ubuntu/pool/main/r/rsync/rsync_3.2.7-0ubuntu0.22.04.4.debian.tar.xz' rsync_3.2.7-0ubuntu0.22.04.4.debian.tar.xz 34896 SHA512:07f079cab324b2ee6bfe623a3044d1baf0380d84544277cad0ca3275c6ff06e8055f261a2893e6a433e31caf55267fda85ddeb755e5621125c7012c756b21022
+```
 
 ### `dpkg` source package: `sed=4.8-1ubuntu2`
 
@@ -2126,19 +2127,25 @@ $ apt-get source -qq --print-uris tcp-wrappers=7.6.q-31build2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tcp-wrappers/tcp-wrappers_7.6.q-31build2.debian.tar.xz' tcp-wrappers_7.6.q-31build2.debian.tar.xz 36420 SHA512:7b6cadfbbbfc653234fdc24ee2b4818897efda54221eae61ae32e0d5161544408bf4de28a27eddaa2d1cb8338608300c212bf4479fdcaac74b2e0416b2846e18
 ```
 
-### `dpkg` source package: `tzdata=2024a-0ubuntu0.22.04.1`
+### `dpkg` source package: `tzdata=2024b-0ubuntu0.22.04`
 
 Binary Packages:
 
-- `tzdata=2024a-0ubuntu0.22.04.1`
+- `tzdata=2024b-0ubuntu0.22.04`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2024b-0ubuntu0.22.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.22.04.dsc' tzdata_2024b-0ubuntu0.22.04.dsc 2533 SHA512:a4e80b59c24b6794d2109117302bdbaac58c743427a5f0841ecf36ffac871addb1dab8e6353d968b5b8e96329d2e4309c80d834bed96c5338d14e199cda431e0
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz' tzdata_2024b.orig.tar.gz 459393 SHA512:0d86686e215672343debb3471b7e7ccb8a27f063f085c9b532d5e0470377843daa0dfb6aee0db4fb9068dd52810c69aeee914a1a7c7e603fdecda7e855020193
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz.asc' tzdata_2024b.orig.tar.gz.asc 833 SHA512:2a0462e1d469260293b93ea03a084a7514025b6de251ebf71bc65c93d76ac94967ec859ddba34b1ba4c51114faa5acdfbef0848d79654fc6ebaa804d5d3c2964
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.22.04.debian.tar.xz' tzdata_2024b-0ubuntu0.22.04.debian.tar.xz 181460 SHA512:b39dee3e4c756ab9e2f59789fee2ed5757f4c6a5d506a0fff9f79b88d08361b2851075617eb4cbcc1068e3e61515097220e861f6c0e91b52cd7a25247808ebb0
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
 
