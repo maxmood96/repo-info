@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:743bde7920bcd446fa4204944273694b0fff781cd031324d8f475f0da6bd5ab5`
+- Image ID: `sha256:95a0eaecfa6c7b2ea725438eed49bd73816e2429b9b2f4b68e28a1af3db4ea70`
 - Created: `2025-01-31T19:49:37Z`
-- Virtual Size: ~ 420.51 Mb  
+- Virtual Size: ~ 408.97 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.2.6`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.6.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=671134022238c2c4a9d79dc7d1e58c909634197617901d25863642f735a27ecb`
+  - `RUBY_VERSION=3.2.7`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.7.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=fc159b0d4a8ce412948fb69e61493839a0b3e1d5c919180f27036f1c948cfbe2`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -264,23 +264,6 @@ busybox-binsh-1.37.0-r9 installed size:
 
 busybox-binsh-1.37.0-r9 license:
 GPL-2.0-only
-
-```
-
-### `apk` package: `bzip2`
-
-```console
-bzip2-1.0.8-r6 description:
-A high-quality data compression program
-
-bzip2-1.0.8-r6 webpage:
-https://sourceware.org/bzip2/
-
-bzip2-1.0.8-r6 installed size:
-310 KiB
-
-bzip2-1.0.8-r6 license:
-bzip2-1.0.6
 
 ```
 
@@ -552,23 +535,6 @@ gmp-6.3.0-r2 installed size:
 417 KiB
 
 gmp-6.3.0-r2 license:
-LGPL-3.0-or-later OR GPL-2.0-or-later
-
-```
-
-### `apk` package: `gmp-dev`
-
-```console
-gmp-dev-6.3.0-r2 description:
-free library for arbitrary precision arithmetic (development files)
-
-gmp-dev-6.3.0-r2 webpage:
-https://gmplib.org/
-
-gmp-dev-6.3.0-r2 installed size:
-4151 KiB
-
-gmp-dev-6.3.0-r2 license:
 LGPL-3.0-or-later OR GPL-2.0-or-later
 
 ```
@@ -845,23 +811,6 @@ MIT
 
 ```
 
-### `apk` package: `libffi-dev`
-
-```console
-libffi-dev-3.4.6-r0 description:
-portable, high level programming interface to various calling conventions. (development files)
-
-libffi-dev-3.4.6-r0 webpage:
-https://sourceware.org/libffi/
-
-libffi-dev-3.4.6-r0 installed size:
-198 KiB
-
-libffi-dev-3.4.6-r0 license:
-MIT
-
-```
-
 ### `apk` package: `libgcc`
 
 ```console
@@ -876,23 +825,6 @@ libgcc-14.2.0-r4 installed size:
 
 libgcc-14.2.0-r4 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
-
-```
-
-### `apk` package: `libgmpxx`
-
-```console
-libgmpxx-6.3.0-r2 description:
-C++ support for gmp
-
-libgmpxx-6.3.0-r2 webpage:
-https://gmplib.org/
-
-libgmpxx-6.3.0-r2 installed size:
-29 KiB
-
-libgmpxx-6.3.0-r2 license:
-LGPL-3.0-or-later OR GPL-2.0-or-later
 
 ```
 
@@ -1063,23 +995,6 @@ libpq-17.2-r0 installed size:
 
 libpq-17.2-r0 license:
 PostgreSQL
-
-```
-
-### `apk` package: `libproc2`
-
-```console
-libproc2-4.0.4-r2 description:
-Library for monitoring system and processes
-
-libproc2-4.0.4-r2 webpage:
-https://gitlab.com/procps-ng/procps
-
-libproc2-4.0.4-r2 installed size:
-139 KiB
-
-libproc2-4.0.4-r2 license:
-GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
@@ -1372,23 +1287,6 @@ MIT
 
 ```
 
-### `apk` package: `linux-headers`
-
-```console
-linux-headers-6.6-r1 description:
-Linux system headers
-
-linux-headers-6.6-r1 webpage:
-https://kernel.org/
-
-linux-headers-6.6-r1 installed size:
-5582 KiB
-
-linux-headers-6.6-r1 license:
-GPL-2.0-only
-
-```
-
 ### `apk` package: `lz4-libs`
 
 ```console
@@ -1658,40 +1556,6 @@ pcre2-10.43-r0 installed size:
 
 pcre2-10.43-r0 license:
 BSD-3-Clause
-
-```
-
-### `apk` package: `pkgconf`
-
-```console
-pkgconf-2.3.0-r0 description:
-development framework configuration tools
-
-pkgconf-2.3.0-r0 webpage:
-https://gitea.treehouse.systems/ariadne/pkgconf
-
-pkgconf-2.3.0-r0 installed size:
-134 KiB
-
-pkgconf-2.3.0-r0 license:
-ISC
-
-```
-
-### `apk` package: `procps-ng`
-
-```console
-procps-ng-4.0.4-r2 description:
-Utilities for monitoring your system and processes on your system
-
-procps-ng-4.0.4-r2 webpage:
-https://gitlab.com/procps-ng/procps
-
-procps-ng-4.0.4-r2 installed size:
-521 KiB
-
-procps-ng-4.0.4-r2 license:
-GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
 
@@ -2239,23 +2103,6 @@ MIT
 
 ```
 
-### `apk` package: `yaml-dev`
-
-```console
-yaml-dev-0.2.5-r2 description:
-YAML 1.1 parser and emitter written in C (development files)
-
-yaml-dev-0.2.5-r2 webpage:
-https://pyyaml.org/wiki/LibYAML
-
-yaml-dev-0.2.5-r2 installed size:
-53 KiB
-
-yaml-dev-0.2.5-r2 license:
-MIT
-
-```
-
 ### `apk` package: `zlib`
 
 ```console
@@ -2269,23 +2116,6 @@ zlib-1.3.1-r2 installed size:
 101 KiB
 
 zlib-1.3.1-r2 license:
-Zlib
-
-```
-
-### `apk` package: `zlib-dev`
-
-```console
-zlib-dev-1.3.1-r2 description:
-A compression/decompression Library (development files)
-
-zlib-dev-1.3.1-r2 webpage:
-https://zlib.net/
-
-zlib-dev-1.3.1-r2 installed size:
-110 KiB
-
-zlib-dev-1.3.1-r2 license:
 Zlib
 
 ```
