@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:62cd5f2e889054501103d7c65eb6ba23d81ab941f41319e08eb086112f092874`
+- Image ID: `sha256:001f171e5b60f210a7e8a8141fec576e202de71aae0818fb607970ab3204e448`
 - Created: `2025-01-30T14:32:57Z`
-- Virtual Size: ~ 304.11 Mb  
+- Virtual Size: ~ 304.09 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -18,7 +18,7 @@
   - `JAVA_VERSION=jdk8u442-b06`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-01-09T06:29:15Z`
+  - `build-date=2025-02-04T04:34:12Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -30,10 +30,10 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
-  - `release=1736404155`
+  - `release=1738643652`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://www.redhat.com`
-  - `vcs-ref=98c9e4c67f5f2dfc85d12e0f1fd70b809f2a3132`
+  - `vcs-ref=177f460763ad3b12e4b8be13035c0af01fc0d47e`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.5`
@@ -117,15 +117,15 @@ $ dnf --quiet download --source --url binutils-gold-2.35.2-54.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/binutils-2.35.2-54.el9.src.rpm
 ```
 
-### `rpm` package: `bzip2-libs-1.0.8-8.el9.x86_64`
+### `rpm` package: `bzip2-libs-1.0.8-10.el9_5.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url bzip2-libs-1.0.8-8.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/bzip2-1.0.8-8.el9.src.rpm
+$ dnf --quiet download --source --url bzip2-libs-1.0.8-10.el9_5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/bzip2-1.0.8-10.el9_5.src.rpm
 ```
 
 ### `rpm` package: `ca-certificates-2024.2.69_v8.0.303-91.4.el9_4.noarch`
@@ -1640,12 +1640,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): Public Domain
 
-Source:
-
-```console
-$ dnf --quiet download --source --url tzdata-2024b-2.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2024b-2.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `util-linux-2.37.4-20.el9.x86_64`
 
