@@ -1,10 +1,10 @@
-# `mediawiki:1.42.4-fpm-alpine`
+# `mediawiki:1.42.5-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7ef4f364de0b4e7db4cedd04ad93f69183f097489bc7f910e1449b96231d8fda`
-- Created: `2025-01-09T11:23:56Z`
-- Virtual Size: ~ 506.68 Mb  
+- Image ID: `sha256:19cae92daf3789122881ede8063f23d98ab132ee69b351a550833ad90db10fce`
+- Created: `2025-02-04T10:42:04Z`
+- Virtual Size: ~ 507.10 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -22,7 +22,7 @@
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.31.tar.xz.asc`
   - `PHP_SHA256=c4f244d46ba51c72f7d13d4f66ce6a9e9a8d6b669c51be35e01765ba58e7afca`
   - `MEDIAWIKI_MAJOR_VERSION=1.42`
-  - `MEDIAWIKI_VERSION=1.42.4`
+  - `MEDIAWIKI_VERSION=1.42.5`
 
 ## `apk` (`.apk`-based packages)
 
@@ -335,16 +335,16 @@ GPL-3.0-or-later
 ### `apk` package: `git`
 
 ```console
-git-2.47.1-r0 description:
+git-2.47.2-r0 description:
 Distributed version control system
 
-git-2.47.1-r0 webpage:
+git-2.47.2-r0 webpage:
 https://www.git-scm.com/
 
-git-2.47.1-r0 installed size:
+git-2.47.2-r0 installed size:
 6485 KiB
 
-git-2.47.1-r0 license:
+git-2.47.2-r0 license:
 GPL-2.0-only
 
 ```
@@ -352,16 +352,16 @@ GPL-2.0-only
 ### `apk` package: `git-init-template`
 
 ```console
-git-init-template-2.47.1-r0 description:
+git-init-template-2.47.2-r0 description:
 Git init template directory
 
-git-init-template-2.47.1-r0 webpage:
+git-init-template-2.47.2-r0 webpage:
 https://www.git-scm.com/
 
-git-init-template-2.47.1-r0 installed size:
+git-init-template-2.47.2-r0 installed size:
 20 KiB
 
-git-init-template-2.47.1-r0 license:
+git-init-template-2.47.2-r0 license:
 GPL-2.0-only
 
 ```
