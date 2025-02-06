@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:467a3d123beefa4fdb65757d06376befaeb709d7d85a2ab331b5ffb69a491630`
+- Image ID: `sha256:b5d8f9304ca9fc9cd9e8cfc0eebe108b76ec0de354123c8ccb5c037d31fd7c8c`
 - Created: `2024-10-22T18:47:05Z`
-- Virtual Size: ~ 366.81 Mb  
+- Virtual Size: ~ 366.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/usr/bin/java","-server","-Djava.awt.headless=true","-Xmx2g","-jar","/opt/nouveau/lib/nouveau-1.0-SNAPSHOT.jar","server","/opt/nouveau/etc/nouveau.yaml"]`
