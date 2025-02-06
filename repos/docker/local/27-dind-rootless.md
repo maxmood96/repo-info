@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:88bfca97148f5c80307393a76b2f8d301831ea39c286b3626d8dfa6782705b78`
+- Image ID: `sha256:348b7de5599e36b7d8bad94451c1e32183ba8c7ae6661f035913ae35c6e61a6a`
 - Created: `2025-01-22T18:04:22Z`
 - Virtual Size: ~ 434.88 Mb  
   (total size of all layers on-disk)
@@ -14,7 +14,7 @@
   - `DOCKER_BUILDX_VERSION=0.20.1`
   - `DOCKER_COMPOSE_VERSION=2.32.4`
   - `DOCKER_TLS_CERTDIR=/certs`
-  - `DIND_COMMIT=65cfcc28ab37cb75e1560e4b4738719c07c6618e`
+  - `DIND_COMMIT=c43aa0b6aa7c88343f0951ba9a39c69aa51c54ef`
 
 ## `apk` (`.apk`-based packages)
 
@@ -480,16 +480,16 @@ GPL-2.0-or-later
 ### `apk` package: `iptables`
 
 ```console
-iptables-1.8.10-r5 description:
+iptables-1.8.11-r1 description:
 Linux kernel firewall, NAT and packet mangling tools
 
-iptables-1.8.10-r5 webpage:
+iptables-1.8.11-r1 webpage:
 https://www.netfilter.org/projects/iptables/index.html
 
-iptables-1.8.10-r5 installed size:
+iptables-1.8.11-r1 installed size:
 1880 KiB
 
-iptables-1.8.10-r5 license:
+iptables-1.8.11-r1 license:
 GPL-2.0-or-later
 
 ```
@@ -497,16 +497,16 @@ GPL-2.0-or-later
 ### `apk` package: `iptables-legacy`
 
 ```console
-iptables-legacy-1.8.10-r5 description:
+iptables-legacy-1.8.11-r1 description:
 Linux kernel firewall, NAT and packet mangling tools (legacy xtables-legacy binaries)
 
-iptables-legacy-1.8.10-r5 webpage:
+iptables-legacy-1.8.11-r1 webpage:
 https://www.netfilter.org/projects/iptables/index.html
 
-iptables-legacy-1.8.10-r5 installed size:
+iptables-legacy-1.8.11-r1 installed size:
 72 KiB
 
-iptables-legacy-1.8.10-r5 license:
+iptables-legacy-1.8.11-r1 license:
 GPL-2.0-or-later
 
 ```
@@ -769,16 +769,16 @@ LGPL-2.1-or-later
 ### `apk` package: `libip4tc`
 
 ```console
-libip4tc-1.8.10-r5 description:
+libip4tc-1.8.11-r1 description:
 Linux kernel firewall, NAT and packet mangling tools (legacy libip4tc library)
 
-libip4tc-1.8.10-r5 webpage:
+libip4tc-1.8.11-r1 webpage:
 https://www.netfilter.org/projects/iptables/index.html
 
-libip4tc-1.8.10-r5 installed size:
+libip4tc-1.8.11-r1 installed size:
 30 KiB
 
-libip4tc-1.8.10-r5 license:
+libip4tc-1.8.11-r1 license:
 GPL-2.0-or-later
 
 ```
@@ -786,16 +786,16 @@ GPL-2.0-or-later
 ### `apk` package: `libip6tc`
 
 ```console
-libip6tc-1.8.10-r5 description:
+libip6tc-1.8.11-r1 description:
 Linux kernel firewall, NAT and packet mangling tools (legacy libip6tc library)
 
-libip6tc-1.8.10-r5 webpage:
+libip6tc-1.8.11-r1 webpage:
 https://www.netfilter.org/projects/iptables/index.html
 
-libip6tc-1.8.10-r5 installed size:
+libip6tc-1.8.11-r1 installed size:
 30 KiB
 
-libip6tc-1.8.10-r5 license:
+libip6tc-1.8.11-r1 license:
 GPL-2.0-or-later
 
 ```
@@ -990,16 +990,16 @@ MIT
 ### `apk` package: `libxtables`
 
 ```console
-libxtables-1.8.10-r5 description:
+libxtables-1.8.11-r1 description:
 Linux kernel firewall, NAT and packet mangling tools (xtables library)
 
-libxtables-1.8.10-r5 webpage:
+libxtables-1.8.11-r1 webpage:
 https://www.netfilter.org/projects/iptables/index.html
 
-libxtables-1.8.10-r5 installed size:
+libxtables-1.8.11-r1 installed size:
 53 KiB
 
-libxtables-1.8.10-r5 license:
+libxtables-1.8.11-r1 license:
 GPL-2.0-or-later
 
 ```
