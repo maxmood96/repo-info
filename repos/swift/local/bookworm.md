@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5f7ffd484cf8a0d6496597843e04bf81cbc9d31919585a7ac30d0f44edf034dc`
+- Image ID: `sha256:cb398b94db346995aaf039ae10257e39686db8ac9123fa80c01a6138189af1a4`
 - Created: `2024-12-12T07:44:15Z`
 - Virtual Size: ~ 3.31 Gb  
   (total size of all layers on-disk)
@@ -1098,12 +1098,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.23-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.23-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `git=1:2.39.5-0+deb12u1`
+### `dpkg` source package: `git=1:2.39.5-0+deb12u2`
 
 Binary Packages:
 
-- `git=1:2.39.5-0+deb12u1`
-- `git-man=1:2.39.5-0+deb12u1`
+- `git=1:2.39.5-0+deb12u2`
+- `git-man=1:2.39.5-0+deb12u2`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -1130,17 +1130,17 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris git=1:2.39.5-0+deb12u1
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.5-0%2bdeb12u1.dsc' git_2.39.5-0+deb12u1.dsc 2857 SHA256:eccfcf6b7dba258ec5e50c503e33f4f21e76b2a2540af36d69cab37e4ce04494
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.5.orig.tar.xz' git_2.39.5.orig.tar.xz 7171400 SHA256:c58da92c378df4a986ca33266897a7397e86c22ee266a284d8c2432c39066b59
-'http://deb.debian.org/debian/pool/main/g/git/git_2.39.5-0%2bdeb12u1.debian.tar.xz' git_2.39.5-0+deb12u1.debian.tar.xz 742400 SHA256:5cd79b5a89b930936aa1cb5ab2ec53525a978c28ffd4017b47310ddc7660938a
+$ apt-get source -qq --print-uris git=1:2.39.5-0+deb12u2
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.39.5-0%2bdeb12u2.dsc' git_2.39.5-0+deb12u2.dsc 2982 SHA256:52c384a95da514d17749447d581bb3876a398c8632f2bde139bdb6627711f58f
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.39.5.orig.tar.xz' git_2.39.5.orig.tar.xz 7171400 SHA256:c58da92c378df4a986ca33266897a7397e86c22ee266a284d8c2432c39066b59
+'http://deb.debian.org/debian-security/pool/updates/main/g/git/git_2.39.5-0%2bdeb12u2.debian.tar.xz' git_2.39.5-0+deb12u2.debian.tar.xz 747556 SHA256:5a6b6e48c7f19df294d2a8c030c219688d1823326d209ad15a06be3743d9cd2b
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/git/1:2.39.5-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/git/1:2.39.5-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/git/1:2.39.5-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/git/1:2.39.5-0+deb12u2/ (for browsing the source)
+- https://sources.debian.net/src/git/1:2.39.5-0+deb12u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/git/1:2.39.5-0+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.36-9+deb12u9`
 
@@ -2850,11 +2850,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.5.4+dfsg2-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.5.4+dfsg2-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `linux=6.1.123-1`
+### `dpkg` source package: `linux=6.1.124-1`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=6.1.123-1`
+- `linux-libc-dev:amd64=6.1.124-1`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
@@ -2869,17 +2869,17 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris linux=6.1.123-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.123-1.dsc' linux_6.1.123-1.dsc 290930 SHA256:49581bdef81bc3ffd7a31f88833cd2a114e6afd6ebb543390c78ef69415e7d73
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.123.orig.tar.xz' linux_6.1.123.orig.tar.xz 137716280 SHA256:20262987ddb0c12072c68fe01fab9c549520cd9fadf85ad46ec18b6a368dad50
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.123-1.debian.tar.xz' linux_6.1.123-1.debian.tar.xz 1715424 SHA256:d2266cf88a7e28fe6765a3fa29ea99b62f43bb68709507afb953b0c5eafe1029
+$ apt-get source -qq --print-uris linux=6.1.124-1
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.124-1.dsc' linux_6.1.124-1.dsc 290931 SHA256:cb8131435a3ca6a26affe7ba421ee63df1c4d9da09c37b0259742bd58ae82068
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.124.orig.tar.xz' linux_6.1.124.orig.tar.xz 137718868 SHA256:0f908daf931ac8eb72423404c2e6c8d0a1fb51a2ceb19059fe903e4f72e3c54c
+'http://deb.debian.org/debian/pool/main/l/linux/linux_6.1.124-1.debian.tar.xz' linux_6.1.124-1.debian.tar.xz 1716348 SHA256:194ffc38770f3080dcbbcc16d92ede9b0f2c12eba675dca7f821bb1ceb3b5968
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/linux/6.1.123-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.1.123-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.1.123-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/linux/6.1.124-1/ (for browsing the source)
+- https://sources.debian.net/src/linux/6.1.124-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/linux/6.1.124-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.9.4-1`
 
