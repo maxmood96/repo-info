@@ -1,10 +1,10 @@
-# `neo4j:5.26.1-community-ubi9`
+# `neo4j:2025.01.0-community-ubi9`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f5c15602b100597031e9c91137eb74a52adb0df57cd516921ebe40fd9b1f8d9c`
-- Created: `2025-01-20T15:28:28Z`
-- Virtual Size: ~ 658.63 Mb  
+- Image ID: `sha256:e55e305ac2cc55b990b43fceb8d0afd839978703ed581f0849d5be5b9e9a0c8c`
+- Created: `2025-02-05T12:33:33Z`
+- Virtual Size: ~ 673.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","-g","--","/startup/docker-entrypoint.sh"]`
@@ -12,14 +12,14 @@
 - Environment:
   - `PATH=/var/lib/neo4j/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `NEO4J_SHA256=462094a6c53151a312cf56b8a6d350f2ba7df5f7e3d2be033e082df118128fb5`
-  - `NEO4J_TARBALL=neo4j-community-5.26.1-unix.tar.gz`
+  - `NEO4J_SHA256=2fdf62479fcfb79e5e3c5d998fc3788c621842e596fa7fb01918d492722ccfa5`
+  - `NEO4J_TARBALL=neo4j-community-2025.01.0-unix.tar.gz`
   - `NEO4J_EDITION=community`
   - `NEO4J_HOME=/var/lib/neo4j`
   - `LANG=C.UTF-8`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-01-09T06:29:15Z`
+  - `build-date=2025-02-04T04:34:12Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -31,10 +31,10 @@
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
-  - `release=1736404155`
+  - `release=1738643652`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://www.redhat.com`
-  - `vcs-ref=98c9e4c67f5f2dfc85d12e0f1fd70b809f2a3132`
+  - `vcs-ref=177f460763ad3b12e4b8be13035c0af01fc0d47e`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.5`
@@ -140,15 +140,15 @@ $ dnf --quiet download --source --url binutils-gold-2.35.2-54.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/binutils-2.35.2-54.el9.src.rpm
 ```
 
-### `rpm` package: `bzip2-libs-1.0.8-8.el9.x86_64`
+### `rpm` package: `bzip2-libs-1.0.8-10.el9_5.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url bzip2-libs-1.0.8-8.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/bzip2-1.0.8-8.el9.src.rpm
+$ dnf --quiet download --source --url bzip2-libs-1.0.8-10.el9_5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/b/bzip2-1.0.8-10.el9_5.src.rpm
 ```
 
 ### `rpm` package: `ca-certificates-2024.2.69_v8.0.303-91.4.el9_4.noarch`
@@ -636,11 +636,16 @@ $ dnf --quiet download --source --url hostname-3.23-6.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/h/hostname-3.23-6.el9.src.rpm
 ```
 
-### `rpm` package: `java-17-openjdk-headless-17.0.13.0.11-4.el9.x86_64`
+### `rpm` package: `java-21-openjdk-headless-21.0.6.0.7-1.el9.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url java-21-openjdk-headless-21.0.6.0.7-1.el9
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/j/java-21-openjdk-21.0.6.0.7-1.el9.src.rpm
+```
 
 ### `rpm` package: `javapackages-filesystem-6.0.0-7.el9_5.noarch`
 
@@ -686,7 +691,7 @@ $ dnf --quiet download --source --url json-glib-1.6.6-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/j/json-glib-1.6.6-1.el9.src.rpm
 ```
 
-### `rpm` package: `kernel-headers-5.14.0-503.21.1.el9_5.x86_64`
+### `rpm` package: `kernel-headers-5.14.0-503.23.1.el9_5.x86_64`
 
 Licenses (from `rpm --query`): ((GPL-2.0-only WITH Linux-syscall-note) OR BSD-2-Clause) AND ((GPL-2.0-only WITH Linux-syscall-note) OR BSD-3-Clause) AND ((GPL-2.0-only WITH Linux-syscall-note) OR CDDL-1.0) AND ((GPL-2.0-only WITH Linux-syscall-note) OR Linux-OpenIB) AND ((GPL-2.0-only WITH Linux-syscall-note) OR MIT) AND ((GPL-2.0-or-later WITH Linux-syscall-note) OR BSD-3-Clause) AND ((GPL-2.0-or-later WITH Linux-syscall-note) OR MIT) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSD-3-Clause-Clear AND GFDL-1.1-no-invariants-or-later AND GPL-1.0-or-later AND (GPL-1.0-or-later OR BSD-3-Clause) AND (GPL-1.0-or-later WITH Linux-syscall-note) AND GPL-2.0-only AND (GPL-2.0-only OR Apache-2.0) AND (GPL-2.0-only OR BSD-2-Clause) AND (GPL-2.0-only OR BSD-3-Clause) AND (GPL-2.0-only OR CDDL-1.0) AND (GPL-2.0-only OR GFDL-1.1-no-invariants-or-later) AND (GPL-2.0-only OR GFDL-1.2-no-invariants-only) AND (GPL-2.0-only WITH Linux-syscall-note) AND GPL-2.0-or-later AND (GPL-2.0-or-later OR BSD-2-Clause) AND (GPL-2.0-or-later OR BSD-3-Clause) AND (GPL-2.0-or-later OR CC-BY-4.0) AND (GPL-2.0-or-later WITH GCC-exception-2.0) AND (GPL-2.0-or-later WITH Linux-syscall-note) AND ISC AND LGPL-2.0-or-later AND (LGPL-2.0-or-later OR BSD-2-Clause) AND (LGPL-2.0-or-later WITH Linux-syscall-note) AND LGPL-2.1-only AND (LGPL-2.1-only OR BSD-2-Clause) AND (LGPL-2.1-only WITH Linux-syscall-note) AND LGPL-2.1-or-later AND (LGPL-2.1-or-later WITH Linux-syscall-note) AND (Linux-OpenIB OR GPL-2.0-only) AND (Linux-OpenIB OR GPL-2.0-only OR BSD-2-Clause) AND Linux-man-pages-copyleft AND MIT AND (MIT OR GPL-2.0-only) AND (MIT OR GPL-2.0-or-later) AND (MIT OR LGPL-2.1-only) AND (MPL-1.1 OR GPL-2.0-only) AND (X11 OR GPL-2.0-only) AND (X11 OR GPL-2.0-or-later) AND Zlib
 
@@ -2049,23 +2054,13 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): Public Domain
 
-Source:
-
-```console
-$ dnf --quiet download --source --url tzdata-2024b-2.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2024b-2.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `tzdata-java-2024b-2.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
-Source:
-
-```console
-$ dnf --quiet download --source --url tzdata-java-2024b-2.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2024b-2.el9.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `util-linux-2.37.4-20.el9.x86_64`
 
