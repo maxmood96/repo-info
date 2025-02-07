@@ -1,7 +1,7 @@
 ## `mariadb:10-ubi`
 
 ```console
-$ docker pull mariadb@sha256:dc3605190a30b67b5ed341ff4407e4ad02df5b5613946765e7f2c40ab1411ca1
+$ docker pull mariadb@sha256:a45eea2dd816c698318ac877ff85a5448c65bd5644d434f9fd8a3c6832abef94
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,52 +18,52 @@ $ docker pull mariadb@sha256:dc3605190a30b67b5ed341ff4407e4ad02df5b5613946765e7f
 ### `mariadb:10-ubi` - linux; amd64
 
 ```console
-$ docker pull mariadb@sha256:d63b8f2172f4059c26bfcec971f4f6154cb8ce5d2f7104d713cffae237f45318
+$ docker pull mariadb@sha256:554dffceb853c4105fca47febff79d84491607ed38b25ba418cfee6ecb35be1f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **146.3 MB (146253226 bytes)**  
+-	Total Size: **146.3 MB (146254231 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:18b0d9c41dd89ee432cd7c92e523f6f2fd75e5b1b8f52fec6c96bbff8cdb5c77`
+-	Image ID: `sha256:e01488a15fe059831894366a436d89fc83fdfbfed5e3d0071c731906e1574821`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mariadbd"]`
 
 ```dockerfile
-# Tue, 04 Feb 2025 04:38:46 GMT
+# Wed, 05 Feb 2025 21:06:18 GMT
 LABEL maintainer="Red Hat, Inc."
-# Tue, 04 Feb 2025 04:38:46 GMT
+# Wed, 05 Feb 2025 21:06:18 GMT
 LABEL vendor="Red Hat, Inc."
-# Tue, 04 Feb 2025 04:38:46 GMT
+# Wed, 05 Feb 2025 21:06:18 GMT
 LABEL url="https://www.redhat.com"
-# Tue, 04 Feb 2025 04:38:46 GMT
+# Wed, 05 Feb 2025 21:06:18 GMT
 LABEL com.redhat.component="ubi9-minimal-container"       name="ubi9-minimal"       version="9.5"       distribution-scope="public"
-# Tue, 04 Feb 2025 04:38:46 GMT
+# Wed, 05 Feb 2025 21:06:18 GMT
 LABEL com.redhat.license_terms="https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI"
-# Tue, 04 Feb 2025 04:38:46 GMT
+# Wed, 05 Feb 2025 21:06:18 GMT
 LABEL summary="Provides the latest release of the minimal Red Hat Universal Base Image 9."
-# Tue, 04 Feb 2025 04:38:46 GMT
+# Wed, 05 Feb 2025 21:06:18 GMT
 LABEL description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Tue, 04 Feb 2025 04:38:47 GMT
+# Wed, 05 Feb 2025 21:06:18 GMT
 LABEL io.k8s.description="The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly."
-# Tue, 04 Feb 2025 04:38:47 GMT
+# Wed, 05 Feb 2025 21:06:18 GMT
 LABEL io.k8s.display-name="Red Hat Universal Base Image 9 Minimal"
-# Tue, 04 Feb 2025 04:38:47 GMT
+# Wed, 05 Feb 2025 21:06:18 GMT
 LABEL io.openshift.expose-services=""
-# Tue, 04 Feb 2025 04:38:47 GMT
+# Wed, 05 Feb 2025 21:06:18 GMT
 LABEL io.openshift.tags="minimal rhel9"
-# Tue, 04 Feb 2025 04:38:47 GMT
+# Wed, 05 Feb 2025 21:06:18 GMT
 ENV container oci
-# Tue, 04 Feb 2025 04:38:48 GMT
-COPY dir:791945992d1a1a0e69cb46f548168dd778c0a5b28228ca7d157145f53fdb49cd in / 
-# Tue, 04 Feb 2025 04:38:48 GMT
+# Wed, 05 Feb 2025 21:06:18 GMT
+COPY dir:fc29285925cd626d62a818aff5b79af4bb61fc4890fdd703305a9455e4e11f19 in / 
+# Wed, 05 Feb 2025 21:06:18 GMT
 COPY file:b37d593713ee21ad52a4cd1424dc019a24f7966f85df0ac4b86d234302695328 in /etc/yum.repos.d/. 
-# Tue, 04 Feb 2025 04:38:48 GMT
+# Wed, 05 Feb 2025 21:06:18 GMT
 CMD ["/bin/bash"]
-# Tue, 04 Feb 2025 04:38:49 GMT
+# Wed, 05 Feb 2025 21:06:18 GMT
 RUN . /cachi2/cachi2.env &&     rm -rf /var/log/*
-# Tue, 04 Feb 2025 04:38:49 GMT
-LABEL "build-date"="2025-02-04T04:38:14" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="177f460763ad3b12e4b8be13035c0af01fc0d47e" "build-date"="2025-02-04T04:34:12Z" "release"="1738643652"
-# Tue, 04 Feb 2025 04:39:05 GMT
+# Wed, 05 Feb 2025 21:06:18 GMT
+LABEL "build-date"="2025-02-06T04:43:42" "architecture"="x86_64" "vcs-type"="git" "vcs-ref"="adfffabe9acacc27d15fc0ceb8e083254ca7b450" "build-date"="2025-02-06T04:39:35Z" "release"="1738816775"
+# Wed, 05 Feb 2025 21:06:18 GMT
 RUN /bin/sh
 # Wed, 05 Feb 2025 21:06:18 GMT
 RUN groupadd --gid 999 -r mysql && 	useradd -r -g mysql mysql --home-dir /var/lib/mysql --uid 999 # buildkit
@@ -106,68 +106,68 @@ CMD ["mariadbd"]
 ```
 
 -	Layers:
-	-	`sha256:24436b52f270faaf1cd45508746ed85af4420ecadbf33becda289f2e4221eb18`  
-		Last Modified: Tue, 04 Feb 2025 06:12:46 GMT  
-		Size: 39.4 MB (39370931 bytes)  
+	-	`sha256:667deb3fcbde45825554b378b8e593f6c3c4a339133a1a80c4d2e1594ff96723`  
+		Last Modified: Thu, 06 Feb 2025 05:31:07 GMT  
+		Size: 39.4 MB (39370269 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7773c651ce2558c22521f6ea1bb2e11b3a7e0f291de522fb1183c6ab4e62c1a6`  
-		Last Modified: Tue, 04 Feb 2025 06:12:45 GMT  
+	-	`sha256:f8339c472296e0e9bde11d7c0a4c8b8c7060108aa1aa729ab95b5275b1fa7163`  
+		Last Modified: Thu, 06 Feb 2025 05:31:05 GMT  
 		Size: 462.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2bff120ac4009d01d4ffc20abe4822983c39c535b70ab6d86a0c59ad737d67bc`  
-		Last Modified: Thu, 06 Feb 2025 00:27:15 GMT  
+	-	`sha256:6f376d6f6dc5ff739d0f8ab1e6378100d083d029f48f9898e5a1f70ef7fd17b3`  
+		Last Modified: Fri, 07 Feb 2025 00:30:35 GMT  
 		Size: 884.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd2cb2af48faee94ec1e52bea32988a738d5d244a1c984c39b16c6f83306e766`  
-		Last Modified: Thu, 06 Feb 2025 00:27:18 GMT  
-		Size: 983.5 KB (983463 bytes)  
+	-	`sha256:c345275c1d63a23ef94c278624317326f29d9842cc81f4f004a4eab3aa6c4e5a`  
+		Last Modified: Fri, 07 Feb 2025 00:30:36 GMT  
+		Size: 983.5 KB (983465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91f7d61a51be79e80d8cd9c952454346c7f5b0d365cefde1bcc62eb3731e5532`  
-		Last Modified: Thu, 06 Feb 2025 00:27:18 GMT  
+	-	`sha256:89fa89c9cc5e3c26a45df8e77f79c5d08bc407fa9aedf846b4af406a04a69da6`  
+		Last Modified: Fri, 07 Feb 2025 00:30:35 GMT  
 		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f0e6ae8eef9f76131d98cf3d37cb83c870022bdd87de71dff95c6ebfcf367aaf`  
-		Last Modified: Thu, 06 Feb 2025 00:27:18 GMT  
-		Size: 313.0 B  
+	-	`sha256:0d84513a0169b0637e8dec2dc10c664c039054d8dbba3fc9e535d604ed3b8d9e`  
+		Last Modified: Fri, 07 Feb 2025 00:30:35 GMT  
+		Size: 314.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7004d175d11c65f230437c5943a770848f2d74ae3b77ece9909fb602c5b777a8`  
-		Last Modified: Thu, 06 Feb 2025 00:27:21 GMT  
-		Size: 105.9 MB (105884344 bytes)  
+	-	`sha256:9d15a46f9ddc0fadd32392bd2ba695c0a2cfc50d28004b5ea9f45302afd5902a`  
+		Last Modified: Fri, 07 Feb 2025 00:30:40 GMT  
+		Size: 105.9 MB (105886001 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:94c5f1bc995c1d1b1e58e0690c7824c7bdc65c139697336d87f438990fcd6d43`  
-		Last Modified: Thu, 06 Feb 2025 00:27:19 GMT  
-		Size: 114.0 B  
+	-	`sha256:796b65620582456081d3388e04e27e4c92348f323a100ac603976c7dcdb1ff6c`  
+		Last Modified: Fri, 07 Feb 2025 00:30:36 GMT  
+		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5bdab094ecca7d71c1de78b49ed2ab447a353924acedd60db8794d75a97107a1`  
-		Last Modified: Thu, 06 Feb 2025 00:27:19 GMT  
-		Size: 4.0 KB (4014 bytes)  
+	-	`sha256:1014a00274e60fcead00e983ae8edf70f84ba4df057773ac5d7a9c2e80d7e8cc`  
+		Last Modified: Fri, 07 Feb 2025 00:30:36 GMT  
+		Size: 4.0 KB (4017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:27a4778cb830aa16ea1ef7430e7b5ec8c25a45b418cf12b1a6ae547c8a38177d`  
-		Last Modified: Thu, 06 Feb 2025 00:27:19 GMT  
-		Size: 8.4 KB (8363 bytes)  
+	-	`sha256:81d61ac735c72fe56525f698c33c0bb4b7d73f1f4267a72a12520f6583a3153a`  
+		Last Modified: Fri, 07 Feb 2025 00:30:37 GMT  
+		Size: 8.4 KB (8365 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mariadb:10-ubi` - unknown; unknown
 
 ```console
-$ docker pull mariadb@sha256:4460b2b751f83e4ae7675dd9e115fa531610dd6b3b18a1b407e69149518e9558
+$ docker pull mariadb@sha256:35cfffb203cd3599513ff5f460c12c81cdc0093a1aa63f808e976d6e55edf13b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.1 MB (4120034 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6c7ef0ab3b091e8999b053497ffd4df58e49c40b11f03c18fa9aa671d7114c81`
+-	Image ID: `sha256:a2841eed0b8fde3bcf68322ed0c1b7321000fecc9709c9b40ff44993586e2b64`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e1e4b1bcfc8747b9b85801a27087de147f700385d3144e57a5e528fbadbc2561`  
-		Last Modified: Thu, 06 Feb 2025 00:27:18 GMT  
+	-	`sha256:d2395adb46ef12f62aafb10cad0214e0dda4fabe9f5e36f81590ea8ad75f241f`  
+		Last Modified: Fri, 07 Feb 2025 00:30:36 GMT  
 		Size: 4.1 MB (4088453 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d8fe3c8c90087eaf720d36a34c56e4683405d65002ea97bc8e24ca889b517a92`  
-		Last Modified: Thu, 06 Feb 2025 00:27:18 GMT  
+	-	`sha256:2517e3e106480ae0a32ebb92776defacc98e1b0f1c5418f1f787ff0aa1fd08ed`  
+		Last Modified: Fri, 07 Feb 2025 00:30:35 GMT  
 		Size: 31.6 KB (31581 bytes)  
 		MIME: application/vnd.in-toto+json
 
