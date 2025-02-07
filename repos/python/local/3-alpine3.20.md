@@ -1,18 +1,18 @@
-# `python:3.13.1-alpine3.20`
+# `python:3.13.2-alpine3.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a2b98c77b159dd15742c6c901cc7f60622e2aa43c3e824986186d9321b266e2a`
-- Created: `2025-01-17T12:35:53Z`
-- Virtual Size: ~ 44.66 Mb  
+- Image ID: `sha256:96066749bd1c2b70dffc7bd76d14010f66720b7a515b90b4f149671a3ed9e347`
+- Created: `2025-02-04T23:51:20Z`
+- Virtual Size: ~ 44.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
-  - `PYTHON_VERSION=3.13.1`
-  - `PYTHON_SHA256=9cf9427bee9e2242e3877dd0f6b641c1853ca461f39d6503ce260a59c80bf0d9`
+  - `PYTHON_VERSION=3.13.2`
+  - `PYTHON_SHA256=d984bcc57cd67caab26f7def42e523b1c015bbc5dc07836cf4f0b63fa159eb56`
 
 ## `apk` (`.apk`-based packages)
 

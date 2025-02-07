@@ -1,18 +1,18 @@
-# `python:3.13.1-alpine3.21`
+# `python:3.13.2-alpine3.21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d5cb4e1bd67fdd3a7a98818042be60114918cc26f28c759163bd2b0517712fe3`
-- Created: `2025-01-17T12:35:53Z`
-- Virtual Size: ~ 44.89 Mb  
+- Image ID: `sha256:6cf03fe1f23ae12769dc7dfc3c1b2987115f41cbd8f4f49f6354817bd2b2aa2b`
+- Created: `2025-02-04T23:51:20Z`
+- Virtual Size: ~ 44.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["python3"]`
 - Environment:
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
-  - `PYTHON_VERSION=3.13.1`
-  - `PYTHON_SHA256=9cf9427bee9e2242e3877dd0f6b641c1853ca461f39d6503ce260a59c80bf0d9`
+  - `PYTHON_VERSION=3.13.2`
+  - `PYTHON_SHA256=d984bcc57cd67caab26f7def42e523b1c015bbc5dc07836cf4f0b63fa159eb56`
 
 ## `apk` (`.apk`-based packages)
 
@@ -393,16 +393,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.47.1-r0 description:
+sqlite-libs-3.48.0-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.47.1-r0 webpage:
+sqlite-libs-3.48.0-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.47.1-r0 installed size:
-1477 KiB
+sqlite-libs-3.48.0-r0 installed size:
+1549 KiB
 
-sqlite-libs-3.47.1-r0 license:
+sqlite-libs-3.48.0-r0 license:
 blessing
 
 ```
