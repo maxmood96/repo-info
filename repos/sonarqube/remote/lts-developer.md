@@ -1,7 +1,7 @@
 ## `sonarqube:lts-developer`
 
 ```console
-$ docker pull sonarqube@sha256:bc0a638364788484586b6e59bf025cd811843fdbf836f752957068f7b2ebcf3e
+$ docker pull sonarqube@sha256:ab930c74c62577d24f28f56b501c86cd5bbbc5576d941a505a0ac65511f99602
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull sonarqube@sha256:bc0a638364788484586b6e59bf025cd811843fdbf836f7529
 ### `sonarqube:lts-developer` - linux; amd64
 
 ```console
-$ docker pull sonarqube@sha256:840004c968ea2d1ba211356d250613db091ce93f1fd0e6c44b944922754f19c6
+$ docker pull sonarqube@sha256:1380f0d3ccab244539fe6f9408ed0622057cf9568abce3648610439720fa1ab0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **487.6 MB (487610357 bytes)**  
+-	Total Size: **487.6 MB (487610342 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93b13cb9d237d0adf014f0c3beb5c4f21fa12915f8bc03a5d1d132f3b2340160`
+-	Image ID: `sha256:89974ab9b5c4c3ce1ebde44af1ffddc6f46c5b2c47dc25fe66f7fea52493f66a`
 -	Entrypoint: `["\/opt\/sonarqube\/docker\/entrypoint.sh"]`
 
 ```dockerfile
@@ -102,13 +102,13 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 		Last Modified: Tue, 04 Feb 2025 04:40:06 GMT  
 		Size: 2.3 KB (2282 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:189a004eb83961ab80d15e504b47411d38cc0691f74f8707cae4f789d88b8cd4`  
-		Last Modified: Tue, 04 Feb 2025 05:26:45 GMT  
-		Size: 395.0 MB (394983678 bytes)  
+	-	`sha256:5981a81b883229d13c99a276640aab4d6988e3526296535a0a68a49437d6b838`  
+		Last Modified: Fri, 07 Feb 2025 01:29:19 GMT  
+		Size: 395.0 MB (394983658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:138c0c95a70efc3705aaf8339e037c3dd81427a57957a3e87b001aa977a90c9c`  
-		Last Modified: Tue, 04 Feb 2025 05:26:37 GMT  
-		Size: 447.0 B  
+	-	`sha256:1d5ca70e0ada20f6870969b0456671f4a47acadf73f71f2f7d4778e82718600f`  
+		Last Modified: Fri, 07 Feb 2025 01:29:10 GMT  
+		Size: 452.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
@@ -118,24 +118,24 @@ ENTRYPOINT ["/opt/sonarqube/docker/entrypoint.sh"]
 ### `sonarqube:lts-developer` - unknown; unknown
 
 ```console
-$ docker pull sonarqube@sha256:ca5a794f2a54e33cd0ecd7a28b9afb5f02cec0ada49934d98cebe3ad8ce400d3
+$ docker pull sonarqube@sha256:69b400165adc32292306342565b99f1fa591099bd58f493937d89dd72ba60311
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **4.3 MB (4267989 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cfd4abc2977a6f75ea3daaa122d74cdae45a41d73966e4371188a045b8764ee5`
+-	Image ID: `sha256:121fdceea12a6d55335b3fcf80086d311dc5d928908578bb8cd7099b2a438d6a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4cc10e63fad733c81bc771495d15f612ea2f2d33203c8aeabbcf3dd8090f59dd`  
-		Last Modified: Tue, 04 Feb 2025 05:26:37 GMT  
+	-	`sha256:f8ff8e30480a2f0b69b32b180885412c6214169240bb879ff8d7565156072c94`  
+		Last Modified: Fri, 07 Feb 2025 01:29:10 GMT  
 		Size: 4.2 MB (4249635 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:448633f58c84540b5d4574a9c215c7ccd7c543bacd9967948851331a5dadc1bd`  
-		Last Modified: Tue, 04 Feb 2025 05:26:37 GMT  
+	-	`sha256:58a39d14ac277dcd1a4590cc6583641f15d0841b8b13f10201848e6a0b152e7a`  
+		Last Modified: Fri, 07 Feb 2025 01:29:10 GMT  
 		Size: 18.4 KB (18354 bytes)  
 		MIME: application/vnd.in-toto+json
 
