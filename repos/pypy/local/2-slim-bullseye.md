@@ -1,17 +1,17 @@
-# `pypy:2.7-7.3.17-slim`
+# `pypy:2.7-7.3.18-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:82cfacf176e927b5774cab31485c87ab6086af5f245115b277e73ac5cc9ee7b6`
-- Created: `2024-08-28T10:07:11Z`
-- Virtual Size: ~ 204.29 Mb  
+- Image ID: `sha256:05f27e50265d5b559990707239309683885882e71c0c12ab1e8548f94272bda0`
+- Created: `2025-02-06T11:07:28Z`
+- Virtual Size: ~ 204.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy"]`
 - Environment:
   - `PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=7.3.17`
+  - `PYPY_VERSION=7.3.18`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d399b2d5218`
 
