@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:580b18c875147315729c1276c79314ad709c5d037d264766a5b672315d4040bb`
+- Image ID: `sha256:85f15bf54b21943568e18c386e71527a3049a29560564ca577e57622d909c909`
 - Created: `2025-01-10T21:01:46Z`
-- Virtual Size: ~ 185.23 Mb  
+- Virtual Size: ~ 185.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-entrypoint.sh"]`
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
-  - `PYTHON_VERSION=3.12.8`
-  - `PYTHON_SHA256=c909157bb25ec114e5869124cc2a9c4a4d4c1e957ca4ff553f1edc692101154e`
+  - `PYTHON_VERSION=3.12.9`
+  - `PYTHON_SHA256=7220835d9f90b37c006e9842a8dff4580aaca4318674f947302b8d28f3f81112`
 - Labels:
   - `org.opencontainers.image.description=Official build of Unit for Docker.`
   - `org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images`

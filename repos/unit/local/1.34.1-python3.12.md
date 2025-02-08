@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:858f859ae1cc411a6e1a441a65b36ed8dffc79820162196e3e5d4f6f7f2d9f9d`
+- Image ID: `sha256:6ffb2ae1890d224bb8d09345756554ffd5b572c50121854f70ee6899ed055105`
 - Created: `2025-01-10T21:01:46Z`
 - Virtual Size: ~ 1.07 Gb  
   (total size of all layers on-disk)
@@ -13,8 +13,8 @@
   - `PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
   - `GPG_KEY=7169605F62C751356D054A26A821E680E5FA6305`
-  - `PYTHON_VERSION=3.12.8`
-  - `PYTHON_SHA256=c909157bb25ec114e5869124cc2a9c4a4d4c1e957ca4ff553f1edc692101154e`
+  - `PYTHON_VERSION=3.12.9`
+  - `PYTHON_SHA256=7220835d9f90b37c006e9842a8dff4580aaca4318674f947302b8d28f3f81112`
 - Labels:
   - `org.opencontainers.image.description=Official build of Unit for Docker.`
   - `org.opencontainers.image.documentation=https://unit.nginx.org/installation/#docker-images`
