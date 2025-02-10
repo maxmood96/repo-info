@@ -1,10 +1,10 @@
-# `drupal:10.4.1-php8.3-fpm-bookworm`
+# `drupal:10.4.2-php8.3-fpm-bookworm`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c06f45df29acc50fcfe85111a383683231e03feee229e38c31d1f19757bf45ed`
-- Created: `2025-01-07T04:57:29Z`
-- Virtual Size: ~ 596.89 Mb  
+- Image ID: `sha256:02e9457fdf8209f0ab2f9579f855bbe5b5da5478962f3d9428cd643b986ca418`
+- Created: `2025-02-06T04:56:28Z`
+- Virtual Size: ~ 596.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.3.16.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.16.tar.xz.asc`
   - `PHP_SHA256=40d3b4e6cac33d3bcefe096d75a28d4fb4e3a9615eb20a4de55ba139fbfacdd5`
-  - `DRUPAL_VERSION=10.4.1`
+  - `DRUPAL_VERSION=10.4.2`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `dpkg` (`.deb`-based packages)
