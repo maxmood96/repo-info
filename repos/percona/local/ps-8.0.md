@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7afa2190ea47864f4213d2ac33cf700a7b836abeebc4390b34faac826c5a37ad`
+- Image ID: `sha256:ec77a330f973be29ef8afadc106fc3fd0c00b759adc712c2e2f5fd132dc4fea8`
 - Created: `2025-01-08T11:00:36Z`
 - Virtual Size: ~ 1.38 Gb  
   (total size of all layers on-disk)
@@ -25,7 +25,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-02-04T04:34:12Z`
+  - `build-date=2025-02-06T04:39:35Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -38,10 +38,10 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `release=1738643652`
+  - `release=1738816775`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://www.redhat.com`
-  - `vcs-ref=177f460763ad3b12e4b8be13035c0af01fc0d47e`
+  - `vcs-ref=adfffabe9acacc27d15fc0ceb8e083254ca7b450`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.5`
@@ -2388,11 +2388,16 @@ $ dnf --quiet download --source --url tar-1.34-7.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tar-1.34-7.el9.src.rpm
 ```
 
-### `rpm` package: `tzdata-2024b-2.el9.noarch`
+### `rpm` package: `tzdata-2025a-1.el9.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url tzdata-2025a-1.el9.noarch
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2025a-1.el9.src.rpm
+```
 
 ### `rpm` package: `util-linux-2.37.4-20.el9.x86_64`
 
