@@ -1483,20 +1483,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.13-1
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.13-1.dsc' sysvinit_3.13-1.dsc 2347 SHA256:0a0d5e69f8c004ec23ad69272e56f972eafca33b829dcb06a66e46f7226b7f66
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.13.orig.tar.gz' sysvinit_3.13.orig.tar.gz 515598 SHA256:1e5515774de6973ee1df3360c37327ea48f7930f1162a7dc9694aaa098e21b81
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.13-1.debian.tar.xz' sysvinit_3.13-1.debian.tar.xz 121064 SHA256:b354fa88436798e18f13b4a12ded018c21af57022d962d949161988124b8c95d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.13-1/
 
-- https://sources.debian.net/src/sysvinit/3.13-1/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.13-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.13-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-3.1`
 
