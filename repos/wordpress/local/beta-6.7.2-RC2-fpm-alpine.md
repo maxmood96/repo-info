@@ -1,9 +1,9 @@
-# `wordpress:beta-6.7.2-RC1-fpm-alpine`
+# `wordpress:beta-6.7.2-RC2-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ca7301464051f060c662b015d3500685bb2dae00c695366c80dd685030dfe952`
-- Created: `2025-02-04T20:03:14Z`
+- Image ID: `sha256:2f6ee3468f45fcd7e6ea76b6c3e12b85c0207b800a6875eb8868c0791fd93813`
+- Created: `2025-02-07T20:03:11Z`
 - Virtual Size: ~ 266.01 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -1013,16 +1013,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libtasn1`
 
 ```console
-libtasn1-4.19.0-r2 description:
+libtasn1-4.20.0-r0 description:
 The ASN.1 library used in GNUTLS
 
-libtasn1-4.19.0-r2 webpage:
+libtasn1-4.20.0-r0 webpage:
 https://www.gnu.org/software/gnutls/
 
-libtasn1-4.19.0-r2 installed size:
+libtasn1-4.20.0-r0 installed size:
 65 KiB
 
-libtasn1-4.19.0-r2 license:
+libtasn1-4.20.0-r0 license:
 LGPL-2.1-or-later
 
 ```
