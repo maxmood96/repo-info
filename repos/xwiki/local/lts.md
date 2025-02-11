@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:072700238364d4f72a582521b55fc3819184da6e1d8e3e99c0fa8d57dca2b0a6`
+- Image ID: `sha256:c231636b307ed70e3aece205870c4696e7cf9e134a160a25d5c03b55d6116ae5`
 - Created: `2025-01-28T16:59:47Z`
-- Virtual Size: ~ 1.22 Gb  
+- Virtual Size: ~ 1.25 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -20,8 +20,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.98`
-  - `TOMCAT_SHA512=07d87286e8ee84bb291069c596cf36233e56a14e3ecb6d65eea0fa7c7042ce5e75f5db31f210b96b6b25b80b34e626dd26c5a6ed5c052384a8587d62658b5e16`
+  - `TOMCAT_VERSION=9.0.99`
+  - `TOMCAT_SHA512=bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df`
   - `XWIKI_VERSION=16.10.3`
   - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.3`
   - `XWIKI_DOWNLOAD_SHA256=bf1f77ad964b2285c5a7695ae279bbb26f23df01ea83982bcc644af45a658405`
