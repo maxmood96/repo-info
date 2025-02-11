@@ -2720,20 +2720,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.13=3.13.1-3
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.1-3.dsc' python3.13_3.13.1-3.dsc 3984 SHA256:459b3dfb787033762e21cda24c69a756c0ec722f7273a6e0333e6beca76c3eac
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.1.orig.tar.xz' python3.13_3.13.1.orig.tar.xz 22589692 SHA256:9cf9427bee9e2242e3877dd0f6b641c1853ca461f39d6503ce260a59c80bf0d9
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.1-3.debian.tar.xz' python3.13_3.13.1-3.debian.tar.xz 317284 SHA256:576d64017c1145e00f4d84d85dd02fc38a7f2d20f9706ebe1de8c05c1188f466
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.13/3.13.1-3/
 
-- https://sources.debian.net/src/python3.13/3.13.1-3/ (for browsing the source)
-- https://sources.debian.net/src/python3.13/3.13.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.13/3.13.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-6`
 
@@ -3231,20 +3224,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.40.4-2
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.4-2.dsc' util-linux_2.40.4-2.dsc 5016 SHA256:2cdd5793af572946f69f7126b394e78be918fda0a7bb2631f3b1e2195e052164
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.4.orig.tar.xz' util-linux_2.40.4.orig.tar.xz 8848216 SHA256:5c1daf733b04e9859afdc3bd87cc481180ee0f88b5c0946b16fdec931975fb79
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.4-2.debian.tar.xz' util-linux_2.40.4-2.debian.tar.xz 117796 SHA256:91d653566a91a51930abdb5419ae7ebdb52398c67f7c9d65aed179d94252becb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.40.4-2/
 
-- https://sources.debian.net/src/util-linux/2.40.4-2/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.40.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.40.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.24.5-2`
 

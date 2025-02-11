@@ -973,19 +973,13 @@ Licenses: (parsed from: `/usr/share/doc/dpkg/copyright`, `/usr/share/doc/dpkg-de
 - `GPL-2+`
 - `public-domain-s-s-d`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris dpkg=1.22.14
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.14.dsc' dpkg_1.22.14.dsc 3144 SHA256:35c4c3555ea1f5d82e500d2caa3a5b8a5d9fad3a644b4ea060026d8dc9bdd344
-'http://deb.debian.org/debian/pool/main/d/dpkg/dpkg_1.22.14.tar.xz' dpkg_1.22.14.tar.xz 5728012 SHA256:26567f35b4302db057ae239582ab08cacbe2afd1a877042bc25caaa9b4ee7a95
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/dpkg/1.22.14/
 
-- https://sources.debian.net/src/dpkg/1.22.14/ (for browsing the source)
-- https://sources.debian.net/src/dpkg/1.22.14/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/dpkg/1.22.14/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `e2fsprogs=1.47.2-1`
 
@@ -1566,21 +1560,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-glib-2.0/copyright`, `/usr/share/
 - `cmph`
 - `old-glib-tests`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glib2.0=2.82.4-2
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.4-2.dsc' glib2.0_2.82.4-2.dsc 4921 SHA256:69f09e072be5dec457d0e5ed790799944f9142d75c72c47aa569d18b731e6172
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.4.orig-unicode-data.tar.xz' glib2.0_2.82.4.orig-unicode-data.tar.xz 262908 SHA256:9bf66a7e9f2f18cbd7a72f561dc1f997990b53243435008777109c823cd7e1ea
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.4.orig.tar.xz' glib2.0_2.82.4.orig.tar.xz 5556896 SHA256:37dd0877fe964cd15e9a2710b044a1830fb1bd93652a6d0cb6b8b2dff187c709
-'http://deb.debian.org/debian/pool/main/g/glib2.0/glib2.0_2.82.4-2.debian.tar.xz' glib2.0_2.82.4-2.debian.tar.xz 135456 SHA256:72401f872116dcb6b5815d6b3c29baed77d172476c47f84a59d449da90c78765
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glib2.0/2.82.4-2/
 
-- https://sources.debian.net/src/glib2.0/2.82.4-2/ (for browsing the source)
-- https://sources.debian.net/src/glib2.0/2.82.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glib2.0/2.82.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glibc=2.40-6`
 
@@ -3982,20 +3968,13 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 - `Unicode-data`
 - `Xen-interface`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.12.11-1
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.11-1.dsc' linux_6.12.11-1.dsc 206707 SHA256:2c9be314e78cb9fd4f64ee9039570130412dc71ebb433d102190bef65411a12f
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.11.orig.tar.xz' linux_6.12.11.orig.tar.xz 150923584 SHA256:fefcfbd70e679c6aa7fadc919cc5725b6576e111ae71519acfafa3b29be966f5
-'http://deb.debian.org/debian/pool/main/l/linux/linux_6.12.11-1.debian.tar.xz' linux_6.12.11-1.debian.tar.xz 1575012 SHA256:5aa503a9f166d36da7eae98c52648caae0e51294bd868068627e26aab74dea9e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/linux/6.12.11-1/
 
-- https://sources.debian.net/src/linux/6.12.11-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/6.12.11-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/6.12.11-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-3`
 
@@ -5142,20 +5121,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.13=3.13.1-3
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.1-3.dsc' python3.13_3.13.1-3.dsc 3984 SHA256:459b3dfb787033762e21cda24c69a756c0ec722f7273a6e0333e6beca76c3eac
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.1.orig.tar.xz' python3.13_3.13.1.orig.tar.xz 22589692 SHA256:9cf9427bee9e2242e3877dd0f6b641c1853ca461f39d6503ce260a59c80bf0d9
-'http://deb.debian.org/debian/pool/main/p/python3.13/python3.13_3.13.1-3.debian.tar.xz' python3.13_3.13.1-3.debian.tar.xz 317284 SHA256:576d64017c1145e00f4d84d85dd02fc38a7f2d20f9706ebe1de8c05c1188f466
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.13/3.13.1-3/
 
-- https://sources.debian.net/src/python3.13/3.13.1-3/ (for browsing the source)
-- https://sources.debian.net/src/python3.13/3.13.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.13/3.13.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.2-6`
 
@@ -5846,20 +5818,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.40.4-2
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.4-2.dsc' util-linux_2.40.4-2.dsc 5016 SHA256:2cdd5793af572946f69f7126b394e78be918fda0a7bb2631f3b1e2195e052164
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.4.orig.tar.xz' util-linux_2.40.4.orig.tar.xz 8848216 SHA256:5c1daf733b04e9859afdc3bd87cc481180ee0f88b5c0946b16fdec931975fb79
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.4-2.debian.tar.xz' util-linux_2.40.4-2.debian.tar.xz 117796 SHA256:91d653566a91a51930abdb5419ae7ebdb52398c67f7c9d65aed179d94252becb
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.40.4-2/
 
-- https://sources.debian.net/src/util-linux/2.40.4-2/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.40.4-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.40.4-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.24.5-2`
 
