@@ -162,6 +162,34 @@
 -	[`pypy:3.10-windowsservercore-1809`](#pypy310-windowsservercore-1809)
 -	[`pypy:3.10-windowsservercore-ltsc2022`](#pypy310-windowsservercore-ltsc2022)
 -	[`pypy:3.10-windowsservercore-ltsc2025`](#pypy310-windowsservercore-ltsc2025)
+-	[`pypy:3.11`](#pypy311)
+-	[`pypy:3.11-7`](#pypy311-7)
+-	[`pypy:3.11-7-bookworm`](#pypy311-7-bookworm)
+-	[`pypy:3.11-7-slim-bookworm`](#pypy311-7-slim-bookworm)
+-	[`pypy:3.11-7-windowsservercore`](#pypy311-7-windowsservercore)
+-	[`pypy:3.11-7-windowsservercore-1809`](#pypy311-7-windowsservercore-1809)
+-	[`pypy:3.11-7-windowsservercore-ltsc2022`](#pypy311-7-windowsservercore-ltsc2022)
+-	[`pypy:3.11-7-windowsservercore-ltsc2025`](#pypy311-7-windowsservercore-ltsc2025)
+-	[`pypy:3.11-7.3`](#pypy311-73)
+-	[`pypy:3.11-7.3-bookworm`](#pypy311-73-bookworm)
+-	[`pypy:3.11-7.3-slim-bookworm`](#pypy311-73-slim-bookworm)
+-	[`pypy:3.11-7.3-windowsservercore`](#pypy311-73-windowsservercore)
+-	[`pypy:3.11-7.3-windowsservercore-1809`](#pypy311-73-windowsservercore-1809)
+-	[`pypy:3.11-7.3-windowsservercore-ltsc2022`](#pypy311-73-windowsservercore-ltsc2022)
+-	[`pypy:3.11-7.3-windowsservercore-ltsc2025`](#pypy311-73-windowsservercore-ltsc2025)
+-	[`pypy:3.11-7.3.18`](#pypy311-7318)
+-	[`pypy:3.11-7.3.18-bookworm`](#pypy311-7318-bookworm)
+-	[`pypy:3.11-7.3.18-slim-bookworm`](#pypy311-7318-slim-bookworm)
+-	[`pypy:3.11-7.3.18-windowsservercore`](#pypy311-7318-windowsservercore)
+-	[`pypy:3.11-7.3.18-windowsservercore-1809`](#pypy311-7318-windowsservercore-1809)
+-	[`pypy:3.11-7.3.18-windowsservercore-ltsc2022`](#pypy311-7318-windowsservercore-ltsc2022)
+-	[`pypy:3.11-7.3.18-windowsservercore-ltsc2025`](#pypy311-7318-windowsservercore-ltsc2025)
+-	[`pypy:3.11-bookworm`](#pypy311-bookworm)
+-	[`pypy:3.11-slim-bookworm`](#pypy311-slim-bookworm)
+-	[`pypy:3.11-windowsservercore`](#pypy311-windowsservercore)
+-	[`pypy:3.11-windowsservercore-1809`](#pypy311-windowsservercore-1809)
+-	[`pypy:3.11-windowsservercore-ltsc2022`](#pypy311-windowsservercore-ltsc2022)
+-	[`pypy:3.11-windowsservercore-ltsc2025`](#pypy311-windowsservercore-ltsc2025)
 -	[`pypy:bookworm`](#pypybookworm)
 -	[`pypy:bullseye`](#pypybullseye)
 -	[`pypy:latest`](#pypylatest)
@@ -39772,6 +39800,118 @@ CMD ["pypy"]
 		Last Modified: Fri, 07 Feb 2025 00:31:58 GMT  
 		Size: 1.3 KB (1294 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `pypy:3.11`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7-bookworm`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7-slim-bookworm`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7.3`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7.3-bookworm`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7.3-slim-bookworm`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7.3-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7.3-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7.3-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7.3-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7.3.18`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7.3.18-bookworm`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7.3.18-slim-bookworm`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7.3.18-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7.3.18-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7.3.18-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-7.3.18-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-bookworm`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-slim-bookworm`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-windowsservercore`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-windowsservercore-ltsc2022`
+
+**does not exist** (yet?)
+
+## `pypy:3.11-windowsservercore-ltsc2025`
+
+**does not exist** (yet?)
 
 ## `pypy:bookworm`
 
