@@ -1,10 +1,10 @@
-# `tomcat:9.0.98-jdk21-corretto-al2`
+# `tomcat:9.0.99-jdk21-corretto-al2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:700e25135903614739401a4361f78c563aee3392d0f532d89f9355c3abfd84ad`
-- Created: `2025-01-06T23:11:14Z`
-- Virtual Size: ~ 528.02 Mb  
+- Image ID: `sha256:6f2bc43c84370456507c43c8b5effa0fb5e55e2e1631c96d179a7364ff01e16d`
+- Created: `2025-02-10T15:23:35Z`
+- Virtual Size: ~ 528.05 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -16,8 +16,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.98`
-  - `TOMCAT_SHA512=07d87286e8ee84bb291069c596cf36233e56a14e3ecb6d65eea0fa7c7042ce5e75f5db31f210b96b6b25b80b34e626dd26c5a6ed5c052384a8587d62658b5e16`
+  - `TOMCAT_VERSION=9.0.99`
+  - `TOMCAT_SHA512=bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df`
 
 ## `rpm` (`.rpm`-based packages)
 
@@ -1029,15 +1029,15 @@ $ dnf --quiet download --source --url pyliblzma-0.5.3-25.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3552066d71340ac440d1496342abf527fc763028a8dd1fc1a88a542f8b15eff5/../../../../../blobstore/860af43ebf61fc4b2c6c02ec914630e76e68197a77f6b7318b92f5059c7673d1/pyliblzma-0.5.3-25.amzn2.src.rpm
 ```
 
-### `rpm` package: `python-2.7.18-1.amzn2.0.9.x86_64`
+### `rpm` package: `python-2.7.18-1.amzn2.0.10.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-2.7.18-1.amzn2.0.9
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3552066d71340ac440d1496342abf527fc763028a8dd1fc1a88a542f8b15eff5/../../../../../blobstore/1c647d5d15937969016399e9aa364af5f7e23448a46b95cf9976f10f9c53e85b/python-2.7.18-1.amzn2.0.9.src.rpm
+$ dnf --quiet download --source --url python-2.7.18-1.amzn2.0.10
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3552066d71340ac440d1496342abf527fc763028a8dd1fc1a88a542f8b15eff5/../../../../../blobstore/122fd43cd6e1c5b225cd5a6d835326dde4fc02696eef5afe1c74138f82bd3a6e/python-2.7.18-1.amzn2.0.10.src.rpm
 ```
 
 ### `rpm` package: `python-iniparse-0.4-9.amzn2.noarch`
@@ -1051,15 +1051,15 @@ $ dnf --quiet download --source --url python-iniparse-0.4-9.amzn2.noarch
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3552066d71340ac440d1496342abf527fc763028a8dd1fc1a88a542f8b15eff5/../../../../../blobstore/c44ed4bc8040ce8e74624bd74404387f1c5320ee6b6d975a81e358ab7919b11a/python-iniparse-0.4-9.amzn2.src.rpm
 ```
 
-### `rpm` package: `python-libs-2.7.18-1.amzn2.0.9.x86_64`
+### `rpm` package: `python-libs-2.7.18-1.amzn2.0.10.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-libs-2.7.18-1.amzn2.0.9
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3552066d71340ac440d1496342abf527fc763028a8dd1fc1a88a542f8b15eff5/../../../../../blobstore/1c647d5d15937969016399e9aa364af5f7e23448a46b95cf9976f10f9c53e85b/python-2.7.18-1.amzn2.0.9.src.rpm
+$ dnf --quiet download --source --url python-libs-2.7.18-1.amzn2.0.10
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3552066d71340ac440d1496342abf527fc763028a8dd1fc1a88a542f8b15eff5/../../../../../blobstore/122fd43cd6e1c5b225cd5a6d835326dde4fc02696eef5afe1c74138f82bd3a6e/python-2.7.18-1.amzn2.0.10.src.rpm
 ```
 
 ### `rpm` package: `python-pycurl-7.19.0-19.amzn2.0.2.x86_64`

@@ -1,10 +1,10 @@
-# `tomcat:11.0.2-jdk21-temurin-jammy`
+# `tomcat:11.0.3-jdk21-temurin-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:067774ace4beca3cbc7ad71fd3b7adfc7b14aca9bbb845860611d27afe98e371`
-- Created: `2025-01-06T23:11:14Z`
-- Virtual Size: ~ 460.89 Mb  
+- Image ID: `sha256:50dccb8ecf296f0ebe29fb81b1ac93eb6d680355600e6f3ed8cb7ff4bea1f32f`
+- Created: `2025-02-10T15:16:00Z`
+- Virtual Size: ~ 476.21 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -19,8 +19,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=11`
-  - `TOMCAT_VERSION=11.0.2`
-  - `TOMCAT_SHA512=635d0b704d47a97050e3de995d372ef361ddb7589efbc53003afd6ac692d8db4a4125ae5dcc01af9e7371e8e598c98982e2a25617179b6ba0a04406299cca544`
+  - `TOMCAT_VERSION=11.0.3`
+  - `TOMCAT_SHA512=860701b16fcf0ab4674ff8c0a61f79b6427bb8bfc44a88f9251fe39f179f2912341f9621b97e38f31959b27ac3efff9e845b49017d954243bca00e23ea965114`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -692,10 +692,9 @@ $ apt-get source -qq --print-uris gcc-12=12.3.0-1ubuntu1~22.04
 Binary Packages:
 
 - `libc-bin=2.35-0ubuntu3.8`
-- `libc6:amd64=2.35-0ubuntu3.8`
 - `locales=2.35-0ubuntu3.8`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/locales/copyright`)
 
 - `GFDL-1.3`
 - `GPL-2`
@@ -704,6 +703,28 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `glibc=2.35-0ubuntu3.9`
+
+Binary Packages:
+
+- `libc6:amd64=2.35-0ubuntu3.9`
+
+Licenses: (parsed from: `/usr/share/doc/libc6/copyright`)
+
+- `GFDL-1.3`
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.9.dsc' glibc_2.35-0ubuntu3.9.dsc 8929 SHA512:a521168a625c06337a723c8a2f129521547a3d69483afa79eb2961f661d992a811a71b070fbe2ea928d5e3942e71b8a6b4dd7f8e9c60db19e602e95afcb14841
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.9.debian.tar.xz' glibc_2.35-0ubuntu3.9.debian.tar.xz 938020 SHA512:48ab3f482db045600dae5880320789a1f5b1b40e3267b1076fd70eea9cfafd89cb571a16531997c1e34974b734d114e8bc83b1e285bbcfe0a85a504512a5be62
+```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
