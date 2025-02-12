@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fd67f54cabc6297e9ec81aa765b5421c03a053ac8a33e3e6aa485c6c80655e2b`
+- Image ID: `sha256:110c0ef0760d63a6ecd12aa84766841e6df81a412b50310a5a67a2c9efa58bba`
 - Created: `2025-01-14T05:07:03Z`
 - Virtual Size: ~ 522.39 Mb  
   (total size of all layers on-disk)
@@ -1041,15 +1041,15 @@ $ dnf --quiet download --source --url pyliblzma-0.5.3-25.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3552066d71340ac440d1496342abf527fc763028a8dd1fc1a88a542f8b15eff5/../../../../../blobstore/860af43ebf61fc4b2c6c02ec914630e76e68197a77f6b7318b92f5059c7673d1/pyliblzma-0.5.3-25.amzn2.src.rpm
 ```
 
-### `rpm` package: `python-2.7.18-1.amzn2.0.9.x86_64`
+### `rpm` package: `python-2.7.18-1.amzn2.0.10.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-2.7.18-1.amzn2.0.9
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3552066d71340ac440d1496342abf527fc763028a8dd1fc1a88a542f8b15eff5/../../../../../blobstore/1c647d5d15937969016399e9aa364af5f7e23448a46b95cf9976f10f9c53e85b/python-2.7.18-1.amzn2.0.9.src.rpm
+$ dnf --quiet download --source --url python-2.7.18-1.amzn2.0.10
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3552066d71340ac440d1496342abf527fc763028a8dd1fc1a88a542f8b15eff5/../../../../../blobstore/122fd43cd6e1c5b225cd5a6d835326dde4fc02696eef5afe1c74138f82bd3a6e/python-2.7.18-1.amzn2.0.10.src.rpm
 ```
 
 ### `rpm` package: `python-iniparse-0.4-9.amzn2.noarch`
@@ -1063,15 +1063,15 @@ $ dnf --quiet download --source --url python-iniparse-0.4-9.amzn2.noarch
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3552066d71340ac440d1496342abf527fc763028a8dd1fc1a88a542f8b15eff5/../../../../../blobstore/c44ed4bc8040ce8e74624bd74404387f1c5320ee6b6d975a81e358ab7919b11a/python-iniparse-0.4-9.amzn2.src.rpm
 ```
 
-### `rpm` package: `python-libs-2.7.18-1.amzn2.0.9.x86_64`
+### `rpm` package: `python-libs-2.7.18-1.amzn2.0.10.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-libs-2.7.18-1.amzn2.0.9
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3552066d71340ac440d1496342abf527fc763028a8dd1fc1a88a542f8b15eff5/../../../../../blobstore/1c647d5d15937969016399e9aa364af5f7e23448a46b95cf9976f10f9c53e85b/python-2.7.18-1.amzn2.0.9.src.rpm
+$ dnf --quiet download --source --url python-libs-2.7.18-1.amzn2.0.10
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/3552066d71340ac440d1496342abf527fc763028a8dd1fc1a88a542f8b15eff5/../../../../../blobstore/122fd43cd6e1c5b225cd5a6d835326dde4fc02696eef5afe1c74138f82bd3a6e/python-2.7.18-1.amzn2.0.10.src.rpm
 ```
 
 ### `rpm` package: `python-pycurl-7.19.0-19.amzn2.0.2.x86_64`
