@@ -82,11 +82,11 @@ $ docker pull pypy@sha256:e6f3828a88c0e2ad9a404b4af264dbbfae756b00a1c3b576023b2d
 
 -	Layers:
 	-	`sha256:458b723affe04d6f105dd9f04cb60e4954267aa84594f9c52a83cc1820ff9283`  
-		Last Modified: Fri, 07 Feb 2025 00:30:49 GMT  
+		Last Modified: Thu, 13 Feb 2025 01:38:25 GMT  
 		Size: 2.4 MB (2376848 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:288ad25af9e3f4f022c1a6861269a0b6a8340dbc1f94ca5c4419cdecb8529e28`  
-		Last Modified: Fri, 07 Feb 2025 00:30:49 GMT  
+		Last Modified: Thu, 13 Feb 2025 01:38:25 GMT  
 		Size: 22.3 KB (22319 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -159,11 +159,11 @@ $ docker pull pypy@sha256:ed22833a1c00895df3bd8074b7a85c2ec83c2d7af7b7e8ef7a5c9e
 
 -	Layers:
 	-	`sha256:88f1f27c95c957544993b164e54a0660106de6c5d3624c03e22a472aa22bc07e`  
-		Last Modified: Fri, 07 Feb 2025 02:47:18 GMT  
+		Last Modified: Thu, 13 Feb 2025 01:38:27 GMT  
 		Size: 2.4 MB (2377153 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:025a34d8e88d66e1daf3f97ba128a81eb8e29d7ea9496ed46aa25bfbbe1c8072`  
-		Last Modified: Fri, 07 Feb 2025 02:47:17 GMT  
+		Last Modified: Thu, 13 Feb 2025 01:38:27 GMT  
 		Size: 22.5 KB (22501 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -236,10 +236,10 @@ $ docker pull pypy@sha256:a1819386e65b7d8310540f9e0a5031dc833bd10cabdabaa1249804
 
 -	Layers:
 	-	`sha256:9965a29282a689416e969d833174a4e12750994c5d0638d05b93b740a6b2c96d`  
-		Last Modified: Fri, 07 Feb 2025 00:30:14 GMT  
+		Last Modified: Thu, 13 Feb 2025 01:38:29 GMT  
 		Size: 2.4 MB (2373971 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:baa2d01f3f0164e10454b734729f4c8206c8de9719deb97c641fe4595d4e02f3`  
-		Last Modified: Fri, 07 Feb 2025 00:30:13 GMT  
+		Last Modified: Thu, 13 Feb 2025 01:38:29 GMT  
 		Size: 22.3 KB (22263 bytes)  
 		MIME: application/vnd.in-toto+json
