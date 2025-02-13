@@ -54,11 +54,11 @@ CMD ["/usr/bin/bash"]
 
 -	Layers:
 	-	`sha256:61c8fceafc7f0cdee9f810aaad8a75bd636d2b072b8452854e73c7c6f001b2c0`  
-		Last Modified: Mon, 10 Feb 2025 19:29:40 GMT  
+		Last Modified: Mon, 10 Feb 2025 21:05:30 GMT  
 		Size: 328.8 MB (328805658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6f1c112cbef5f8327a79e16e83f249659b9bc4892c80fac781df8687965444f8`  
-		Last Modified: Mon, 10 Feb 2025 19:29:32 GMT  
+		Last Modified: Mon, 10 Feb 2025 21:05:19 GMT  
 		Size: 10.2 KB (10246 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -78,7 +78,7 @@ $ docker pull archlinux@sha256:97630311ffdd0fb5af4fcbf1829ffe91130322f79f395c811
 
 -	Layers:
 	-	`sha256:eead521916ca67a28a7a761d802c8c64c0db9d5e235fc77b77d0127f4010d077`  
-		Last Modified: Mon, 10 Feb 2025 19:29:33 GMT  
+		Last Modified: Tue, 11 Feb 2025 09:01:16 GMT  
 		Size: 12.2 MB (12165053 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:56fc9e7c2cc63c105ee8aa59dd68eb15d7bd136027cfac645a94c000eeb737e7`  
