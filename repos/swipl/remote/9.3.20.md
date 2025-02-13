@@ -42,15 +42,15 @@ CMD ["swipl"]
 
 -	Layers:
 	-	`sha256:c29f5b76f736a8b555fd191c48d6581bb918bcd605a7cbcc76205dd6acff3260`  
-		Last Modified: Tue, 04 Feb 2025 01:36:21 GMT  
+		Last Modified: Tue, 04 Feb 2025 04:27:59 GMT  
 		Size: 28.2 MB (28212303 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:14c07ea0d45e38d3ab87736b6f8b60d70a12d679698c1a8a2049571e3c9a06a1`  
-		Last Modified: Mon, 10 Feb 2025 19:41:31 GMT  
+		Last Modified: Tue, 11 Feb 2025 02:49:55 GMT  
 		Size: 49.2 MB (49219287 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8b7b2bb552ef96a16ba4d4f5144cce785e423046dced888bec6dc9833eff3b6b`  
-		Last Modified: Mon, 10 Feb 2025 19:41:30 GMT  
+		Last Modified: Tue, 11 Feb 2025 10:51:21 GMT  
 		Size: 18.8 MB (18772398 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -107,7 +107,7 @@ CMD ["swipl"]
 
 -	Layers:
 	-	`sha256:8baf7706a2c9f71c9184120af92649e226b5533608aab6cd9ffbc6dc15435ca3`  
-		Last Modified: Tue, 04 Feb 2025 01:37:24 GMT  
+		Last Modified: Tue, 04 Feb 2025 05:01:17 GMT  
 		Size: 23.9 MB (23914536 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8f2967518f562e0d0cb42bd8061385d46cca9e4825bd550d08aacb39f4750db0`  
@@ -172,15 +172,15 @@ CMD ["swipl"]
 
 -	Layers:
 	-	`sha256:4d2547c084994a809c138e688fbe4ee14eedbc6e2defc5b1c680edd16e291473`  
-		Last Modified: Tue, 04 Feb 2025 01:37:53 GMT  
+		Last Modified: Tue, 04 Feb 2025 04:29:51 GMT  
 		Size: 28.0 MB (28040881 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3912583c9025da9b41893b2ba38e097cdf01544a1b2d8396c5297f300cc4c50a`  
-		Last Modified: Mon, 10 Feb 2025 19:40:11 GMT  
+		Last Modified: Wed, 12 Feb 2025 01:04:36 GMT  
 		Size: 47.7 MB (47713574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e54315901e9bdf1d70cdaec937a85ca4870dcc425ac51504937cd50f07744377`  
-		Last Modified: Mon, 10 Feb 2025 19:40:09 GMT  
+		Last Modified: Tue, 11 Feb 2025 23:50:30 GMT  
 		Size: 18.2 MB (18168916 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
