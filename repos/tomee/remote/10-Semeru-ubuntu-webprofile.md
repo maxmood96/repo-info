@@ -74,39 +74,39 @@ CMD ["catalina.sh" "run"]
 
 -	Layers:
 	-	`sha256:9cb31e2e37eab1bff50f727e979fcacb509e225fb853433a6fe21d2fb34e6305`  
-		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
+		Last Modified: Tue, 04 Feb 2025 05:13:20 GMT  
 		Size: 29.5 MB (29535941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f6b63af4da2551d3170ae7898c6db2eba0db95065238c94e70fe9573f34889da`  
-		Last Modified: Tue, 04 Feb 2025 04:42:04 GMT  
+		Last Modified: Tue, 04 Feb 2025 08:45:31 GMT  
 		Size: 12.2 MB (12165966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:833b9b960337956ad3bb5e9f5c98ac055115c115c6ad58136cbf00d3b2093e2f`  
-		Last Modified: Tue, 04 Feb 2025 04:42:05 GMT  
+		Last Modified: Tue, 04 Feb 2025 07:10:24 GMT  
 		Size: 56.2 MB (56220392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc29ee756ef85e7a09778554d1e0aeb37a6bcb997aa68a1fac104db1b437d4f5`  
-		Last Modified: Tue, 04 Feb 2025 04:42:04 GMT  
+		Last Modified: Tue, 04 Feb 2025 12:39:46 GMT  
 		Size: 5.1 MB (5082841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:eb4f23c8e3e3894cf2d421a36edc45136d55c00d037fc55df6d7c57632d78bf5`  
-		Last Modified: Tue, 04 Feb 2025 05:20:15 GMT  
+		Last Modified: Wed, 05 Feb 2025 20:17:49 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:3691ac1f507e30b0a23168aa47b20e099f96d7105a50e49a4487021526dad534`  
-		Last Modified: Tue, 04 Feb 2025 05:20:15 GMT  
+		Last Modified: Wed, 05 Feb 2025 20:17:52 GMT  
 		Size: 2.4 MB (2356776 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dd2485cf7fee7d146fc751ae86a91f26b9dd78515cd4ec228ee012328ff9aa43`  
-		Last Modified: Tue, 04 Feb 2025 05:20:15 GMT  
+		Last Modified: Wed, 05 Feb 2025 20:17:52 GMT  
 		Size: 75.6 KB (75582 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f9b13074f02beeaec02694b991704fd3c5877af988d7db432eea9b817a5f6880`  
-		Last Modified: Tue, 04 Feb 2025 05:20:16 GMT  
+		Last Modified: Thu, 06 Feb 2025 20:45:45 GMT  
 		Size: 59.0 MB (59020247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -197,39 +197,39 @@ CMD ["catalina.sh" "run"]
 
 -	Layers:
 	-	`sha256:0d1c17d4e593cf07e0f9e907017f6edbe7e32dd2b7f8e3f026c74bbaf3466561`  
-		Last Modified: Sun, 26 Jan 2025 07:02:08 GMT  
+		Last Modified: Tue, 04 Feb 2025 06:04:46 GMT  
 		Size: 27.4 MB (27358182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ddc27324a20ba7e580ad161f241011b423fdcd169bcae5cc324e63f8db8fe6b2`  
-		Last Modified: Tue, 04 Feb 2025 09:47:59 GMT  
+		Last Modified: Wed, 05 Feb 2025 00:32:28 GMT  
 		Size: 12.1 MB (12123437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48ab25dd668656957e4723ca0221883251c5098e3c7ef38ba4f771c42ac72699`  
-		Last Modified: Tue, 04 Feb 2025 18:33:20 GMT  
+		Last Modified: Tue, 04 Feb 2025 22:52:44 GMT  
 		Size: 52.1 MB (52065820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0af4e680daf6ffc1fe72693c794e2aa003e07bb5791b73e760bda951f24a18f8`  
-		Last Modified: Tue, 04 Feb 2025 18:33:19 GMT  
+		Last Modified: Tue, 04 Feb 2025 22:52:28 GMT  
 		Size: 4.9 MB (4870582 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a14d70bda2a1235047063ee7693ac093a7e9a75c046d1f25124b32f79d69f06f`  
-		Last Modified: Wed, 05 Feb 2025 04:50:40 GMT  
+		Last Modified: Wed, 05 Feb 2025 20:18:34 GMT  
 		Size: 172.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7525cea9115b1794d591182af605c999e97aa2b0707fec3be7f6405143deeb3a`  
-		Last Modified: Wed, 05 Feb 2025 04:50:40 GMT  
+		Last Modified: Wed, 05 Feb 2025 20:09:37 GMT  
 		Size: 2.3 MB (2341878 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fec51e810ec5e86ee8c3d15ed492bc96cc7ad8e82193870393674c302bfc8941`  
-		Last Modified: Wed, 05 Feb 2025 04:50:40 GMT  
+		Last Modified: Wed, 05 Feb 2025 20:10:25 GMT  
 		Size: 75.7 KB (75678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a41149e61eb0f7de09d42da27b174fcd57ded150ccc6abb6696c27ee51c5258b`  
-		Last Modified: Wed, 05 Feb 2025 04:52:03 GMT  
+		Last Modified: Wed, 05 Feb 2025 20:18:41 GMT  
 		Size: 59.0 MB (59020235 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -249,7 +249,7 @@ $ docker pull tomee@sha256:dc1aa787f48c630ee9d8240d73678c6b29ca5df1a0d1e6273f85b
 
 -	Layers:
 	-	`sha256:aa9d374a20fa675f7ed98c3d196f7080e0d6f126be11266016410bebc551b415`  
-		Last Modified: Wed, 05 Feb 2025 04:52:02 GMT  
+		Last Modified: Wed, 05 Feb 2025 08:43:14 GMT  
 		Size: 3.9 MB (3922953 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a30e2683892279c332f99b1ba6cd5ba20052c9df1bf695f87551c30f45688139`  
