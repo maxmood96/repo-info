@@ -280,11 +280,11 @@ $ docker pull golang@sha256:8a2dbcc93d143ae1a2f718121a7f33d333011a0b4d460f61c4ee
 
 -	Layers:
 	-	`sha256:1fe63bf355ff11350394da5c7b2bc785272b96d7aca28a06db023719eaaa648b`  
-		Last Modified: Wed, 12 Feb 2025 17:43:37 GMT  
+		Last Modified: Thu, 13 Feb 2025 00:35:57 GMT  
 		Size: 10.3 MB (10273356 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e60efb9615aa7c8b7822adbdd208c5af6101ebdb1c359bd6ffca302027213f21`  
-		Last Modified: Wed, 12 Feb 2025 17:43:37 GMT  
+		Last Modified: Thu, 13 Feb 2025 00:35:56 GMT  
 		Size: 26.6 KB (26602 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -375,6 +375,6 @@ $ docker pull golang@sha256:416d08335bc35f72db6d12263c2456561b72ae942b4b10f286db
 		Size: 10.3 MB (10261545 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:375c8d0a7e82556dbccd97c51ccc756b21deaf1b296eabbde792cbb7bdfbcfb7`  
-		Last Modified: Wed, 12 Feb 2025 18:31:29 GMT  
+		Last Modified: Thu, 13 Feb 2025 00:35:57 GMT  
 		Size: 26.4 KB (26432 bytes)  
 		MIME: application/vnd.in-toto+json
