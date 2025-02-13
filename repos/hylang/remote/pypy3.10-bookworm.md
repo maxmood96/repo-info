@@ -94,11 +94,11 @@ $ docker pull hylang@sha256:37458296328bb0efee9d77c5d9f62c05a0c9fc8b46587620d0ab
 
 -	Layers:
 	-	`sha256:f353c275b7d9287bef8e7affa79ba4836039c188839148fc5a77746abf1dbb3c`  
-		Last Modified: Fri, 07 Feb 2025 01:28:38 GMT  
+		Last Modified: Thu, 13 Feb 2025 03:17:37 GMT  
 		Size: 2.4 MB (2406976 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:d7bf4c1b2399c73b5dd5e349b6edbf6b28086bb43ad1180256edd620f5fca3e7`  
-		Last Modified: Fri, 07 Feb 2025 01:28:38 GMT  
+		Last Modified: Thu, 13 Feb 2025 03:17:37 GMT  
 		Size: 11.8 KB (11777 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -183,11 +183,11 @@ $ docker pull hylang@sha256:7a86a5203ed5c7420419b8180c5c014165e7dd5eb39d784a68d4
 
 -	Layers:
 	-	`sha256:7b744426ab2b3f94ca03c9a61f45be5919c32212aed9fa780961d6976497c8d5`  
-		Last Modified: Fri, 07 Feb 2025 03:52:46 GMT  
+		Last Modified: Thu, 13 Feb 2025 03:17:40 GMT  
 		Size: 2.4 MB (2407379 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6a92b629c0816e9e7f98ba10658e125d9db7ac8c2b4522d7db93fa2d5ed5c537`  
-		Last Modified: Fri, 07 Feb 2025 03:52:45 GMT  
+		Last Modified: Thu, 13 Feb 2025 03:17:40 GMT  
 		Size: 12.0 KB (12025 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -272,10 +272,10 @@ $ docker pull hylang@sha256:0329d23db735166a7f5dd538aa04b88485fe150a30e694886d74
 
 -	Layers:
 	-	`sha256:e7ee08e1e0d1a4c65779738dec8256edaf2c336f816347b32db1a5cf274f0ec3`  
-		Last Modified: Fri, 07 Feb 2025 02:08:51 GMT  
+		Last Modified: Thu, 13 Feb 2025 03:17:42 GMT  
 		Size: 2.4 MB (2404053 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:799e90a7d659cfaf328480f4dec78065aae1593e9a0baff9b9e0ea079366f859`  
-		Last Modified: Fri, 07 Feb 2025 02:08:51 GMT  
+		Last Modified: Thu, 13 Feb 2025 03:17:42 GMT  
 		Size: 11.7 KB (11685 bytes)  
 		MIME: application/vnd.in-toto+json
