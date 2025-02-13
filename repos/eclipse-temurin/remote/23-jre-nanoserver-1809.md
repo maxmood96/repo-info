@@ -45,7 +45,7 @@ RUN echo Verifying install ...     && echo java --version && java --version     
 
 -	Layers:
 	-	`sha256:3a71a517ad886518458023f01614036e271bdcdb366b9c2c64b1b5dd7737a6b0`  
-		Last Modified: Tue, 14 Jan 2025 20:45:12 GMT  
+		Last Modified: Wed, 15 Jan 2025 07:23:16 GMT  
 		Size: 155.3 MB (155267564 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:31a26299e411d043b9b5bd8302d78b2ed4765560fc462951b02ca4eedc294fd9`  

@@ -45,7 +45,7 @@ RUN echo Verifying install ...     && echo java --version && java --version     
 
 -	Layers:
 	-	`sha256:fd3058b29fbd287119a2fa4d2d36a46fdee3bbada5fd9ef6f02f2d7d4cc143ab`  
-		Last Modified: Tue, 14 Jan 2025 20:27:35 GMT  
+		Last Modified: Wed, 15 Jan 2025 01:24:28 GMT  
 		Size: 120.7 MB (120661554 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:cb7ef1d7294a5bd3559f84d41284ff4da48c408f8a55e8312a68bf5c74333983`  
@@ -53,11 +53,11 @@ RUN echo Verifying install ...     && echo java --version && java --version     
 		Size: 1.0 KB (1033 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:96ae9548a41cf37fe6aa39437ed2b9addf795200219ef62e09526beb9628d05e`  
-		Last Modified: Fri, 31 Jan 2025 02:11:48 GMT  
+		Last Modified: Tue, 11 Feb 2025 13:13:40 GMT  
 		Size: 1.0 KB (1030 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:d8ae49fc2dc8c98cdb42753161973d3a65c48a40be2041b47168778c1d2195a9`  
-		Last Modified: Fri, 31 Jan 2025 02:11:48 GMT  
+		Last Modified: Tue, 11 Feb 2025 13:13:40 GMT  
 		Size: 1.0 KB (1031 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:f8b7d32525aaad59dc1a124a17c5f10027a2869a8a67d93a8200bb58be022c11`  
@@ -69,11 +69,11 @@ RUN echo Verifying install ...     && echo java --version && java --version     
 		Size: 88.9 KB (88903 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:a44cf60f6a7d2ab83ce260d10057924c939ab1721a03d97fd34e41b21766d839`  
-		Last Modified: Fri, 31 Jan 2025 02:11:46 GMT  
+		Last Modified: Tue, 11 Feb 2025 13:13:40 GMT  
 		Size: 1.0 KB (1028 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:bf904e92c4a19c178fa6813b5fdc7dae728befc017f8e8e43f588e125c7ab382`  
-		Last Modified: Fri, 31 Jan 2025 02:11:51 GMT  
+		Last Modified: Tue, 11 Feb 2025 13:13:42 GMT  
 		Size: 43.7 MB (43728131 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
 	-	`sha256:ed2140bd3c295a26fb7cb70ccf9ee73f0520f15aa7e540cea518a4644f984f81`  
