@@ -58,19 +58,19 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 
 -	Layers:
 	-	`sha256:9cb31e2e37eab1bff50f727e979fcacb509e225fb853433a6fe21d2fb34e6305`  
-		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
+		Last Modified: Tue, 04 Feb 2025 05:13:20 GMT  
 		Size: 29.5 MB (29535941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f6b63af4da2551d3170ae7898c6db2eba0db95065238c94e70fe9573f34889da`  
-		Last Modified: Tue, 04 Feb 2025 04:42:04 GMT  
+		Last Modified: Tue, 04 Feb 2025 08:45:31 GMT  
 		Size: 12.2 MB (12165966 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:833b9b960337956ad3bb5e9f5c98ac055115c115c6ad58136cbf00d3b2093e2f`  
-		Last Modified: Tue, 04 Feb 2025 04:42:05 GMT  
+		Last Modified: Tue, 04 Feb 2025 07:10:24 GMT  
 		Size: 56.2 MB (56220392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:dc29ee756ef85e7a09778554d1e0aeb37a6bcb997aa68a1fac104db1b437d4f5`  
-		Last Modified: Tue, 04 Feb 2025 04:42:04 GMT  
+		Last Modified: Tue, 04 Feb 2025 12:39:46 GMT  
 		Size: 5.1 MB (5082841 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -141,19 +141,19 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 
 -	Layers:
 	-	`sha256:0d1c17d4e593cf07e0f9e907017f6edbe7e32dd2b7f8e3f026c74bbaf3466561`  
-		Last Modified: Sun, 26 Jan 2025 07:02:08 GMT  
+		Last Modified: Tue, 04 Feb 2025 06:04:46 GMT  
 		Size: 27.4 MB (27358182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ddc27324a20ba7e580ad161f241011b423fdcd169bcae5cc324e63f8db8fe6b2`  
-		Last Modified: Tue, 04 Feb 2025 09:47:59 GMT  
+		Last Modified: Wed, 05 Feb 2025 00:32:28 GMT  
 		Size: 12.1 MB (12123437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:48ab25dd668656957e4723ca0221883251c5098e3c7ef38ba4f771c42ac72699`  
-		Last Modified: Tue, 04 Feb 2025 18:33:20 GMT  
+		Last Modified: Tue, 04 Feb 2025 22:52:44 GMT  
 		Size: 52.1 MB (52065820 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0af4e680daf6ffc1fe72693c794e2aa003e07bb5791b73e760bda951f24a18f8`  
-		Last Modified: Tue, 04 Feb 2025 18:33:19 GMT  
+		Last Modified: Tue, 04 Feb 2025 22:52:28 GMT  
 		Size: 4.9 MB (4870582 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -224,11 +224,11 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 
 -	Layers:
 	-	`sha256:2b34fd69ee7e3fb1c28ea96a57188d452075e6a1dc43e3328673c0a828d4cf11`  
-		Last Modified: Sun, 26 Jan 2025 07:02:20 GMT  
+		Last Modified: Tue, 04 Feb 2025 07:01:41 GMT  
 		Size: 34.4 MB (34447935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9757f7d530f6b57a9f7086a87275499eba37462ad62756a55dcd465daa91caa2`  
-		Last Modified: Tue, 04 Feb 2025 08:04:57 GMT  
+		Last Modified: Wed, 05 Feb 2025 08:43:21 GMT  
 		Size: 12.9 MB (12894981 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8527917d68242953fcead848fbe1eecff3fcc3fa28aa480f2f02c5c64569db71`  
@@ -307,11 +307,11 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 
 -	Layers:
 	-	`sha256:7ed94a91c4e77c2e320a028b45fcefc9419c4df2b3d6494bf92ab5d08bba4d77`  
-		Last Modified: Sun, 26 Jan 2025 07:02:32 GMT  
+		Last Modified: Tue, 04 Feb 2025 06:45:54 GMT  
 		Size: 28.0 MB (28000931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ad9a504edea95fbee01cd3ff3d84972a695acb9423b1d0fea8abc1fa3cac5e26`  
-		Last Modified: Tue, 04 Feb 2025 08:13:22 GMT  
+		Last Modified: Wed, 05 Feb 2025 08:43:39 GMT  
 		Size: 12.2 MB (12212279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:638fc851be52a3e4c38271c8591b9c2278e17f1b56cf3ebf6476be17cf4675d3`  

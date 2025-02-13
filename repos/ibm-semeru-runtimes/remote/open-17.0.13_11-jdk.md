@@ -58,19 +58,19 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 
 -	Layers:
 	-	`sha256:9cb31e2e37eab1bff50f727e979fcacb509e225fb853433a6fe21d2fb34e6305`  
-		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
+		Last Modified: Tue, 04 Feb 2025 05:13:20 GMT  
 		Size: 29.5 MB (29535941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:da661bebf3dd616e3100b2a9830ff79fc6329e63c358ed47a1830dd361781d54`  
-		Last Modified: Tue, 04 Feb 2025 04:25:05 GMT  
+		Last Modified: Tue, 04 Feb 2025 09:46:23 GMT  
 		Size: 12.2 MB (12165998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b13689487baaa31ddfc08075b27ed7a2af67fae4237908e66623d5064694e2ba`  
-		Last Modified: Tue, 04 Feb 2025 04:25:10 GMT  
+		Last Modified: Tue, 04 Feb 2025 08:51:27 GMT  
 		Size: 218.0 MB (217965688 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:62db22db9ee3fc7ebec9fdec52920edd4fb8749d3cd7864bbe11179ab77c2bb5`  
-		Last Modified: Tue, 04 Feb 2025 04:25:06 GMT  
+		Last Modified: Tue, 04 Feb 2025 08:51:18 GMT  
 		Size: 6.2 MB (6168585 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -141,19 +141,19 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 
 -	Layers:
 	-	`sha256:0d1c17d4e593cf07e0f9e907017f6edbe7e32dd2b7f8e3f026c74bbaf3466561`  
-		Last Modified: Sun, 26 Jan 2025 07:02:08 GMT  
+		Last Modified: Tue, 04 Feb 2025 06:04:46 GMT  
 		Size: 27.4 MB (27358182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ddc27324a20ba7e580ad161f241011b423fdcd169bcae5cc324e63f8db8fe6b2`  
-		Last Modified: Tue, 04 Feb 2025 09:47:59 GMT  
+		Last Modified: Wed, 05 Feb 2025 00:32:28 GMT  
 		Size: 12.1 MB (12123437 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:bdeafcaf82f706d6046fa5f1f8e834de1696dcc1b80681f93520e93a0f98058c`  
-		Last Modified: Tue, 04 Feb 2025 09:52:29 GMT  
+		Last Modified: Fri, 07 Feb 2025 07:04:36 GMT  
 		Size: 208.1 MB (208069762 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fd6c6af6a8cd4962240ff46f4e857563e77c8beb81e5600a8dd73c4a6976bf0f`  
-		Last Modified: Tue, 04 Feb 2025 09:52:25 GMT  
+		Last Modified: Fri, 07 Feb 2025 07:04:37 GMT  
 		Size: 5.8 MB (5757906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -224,11 +224,11 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 
 -	Layers:
 	-	`sha256:2b34fd69ee7e3fb1c28ea96a57188d452075e6a1dc43e3328673c0a828d4cf11`  
-		Last Modified: Sun, 26 Jan 2025 07:02:20 GMT  
+		Last Modified: Tue, 04 Feb 2025 07:01:41 GMT  
 		Size: 34.4 MB (34447935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9757f7d530f6b57a9f7086a87275499eba37462ad62756a55dcd465daa91caa2`  
-		Last Modified: Tue, 04 Feb 2025 08:04:57 GMT  
+		Last Modified: Wed, 05 Feb 2025 08:43:21 GMT  
 		Size: 12.9 MB (12894981 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4c018bf05939bd310a219184ae919dbfe2638ce5668f5fe818a92c1b1a1163d6`  
@@ -307,15 +307,15 @@ RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PA
 
 -	Layers:
 	-	`sha256:7ed94a91c4e77c2e320a028b45fcefc9419c4df2b3d6494bf92ab5d08bba4d77`  
-		Last Modified: Sun, 26 Jan 2025 07:02:32 GMT  
+		Last Modified: Tue, 04 Feb 2025 06:45:54 GMT  
 		Size: 28.0 MB (28000931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:ad9a504edea95fbee01cd3ff3d84972a695acb9423b1d0fea8abc1fa3cac5e26`  
-		Last Modified: Tue, 04 Feb 2025 08:13:22 GMT  
+		Last Modified: Wed, 05 Feb 2025 08:43:39 GMT  
 		Size: 12.2 MB (12212279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:887e18d90c48e0f33011ccf46e6ea7b1a45b6625b517a77dc380b0410b8440ea`  
-		Last Modified: Tue, 04 Feb 2025 08:20:43 GMT  
+		Last Modified: Wed, 05 Feb 2025 08:45:47 GMT  
 		Size: 214.4 MB (214416353 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6b12cb6a6fdf7b25228c9a559bd4b30a0915a240e8548c92b5505fd42457e86e`  
