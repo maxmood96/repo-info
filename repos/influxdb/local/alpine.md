@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:19b3e3f8000016363e0a784f8edcbf98dc4aa46b9bd27ebdeca576ffecece05d`
-- Created: `2024-12-02T19:42:18Z`
-- Virtual Size: ~ 213.30 Mb  
+- Image ID: `sha256:4eda990ab0608edabf084fa03e21382887f1ad754acb907722c6ba5eeaf1cf8f`
+- Created: `2025-01-16T12:29:50Z`
+- Virtual Size: ~ 213.31 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -210,16 +210,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.11.1-r0 description:
+curl-8.12.1-r0 description:
 URL retrival utility and library
 
-curl-8.11.1-r0 webpage:
+curl-8.12.1-r0 webpage:
 https://curl.se/
 
-curl-8.11.1-r0 installed size:
-256 KiB
+curl-8.12.1-r0 installed size:
+260 KiB
 
-curl-8.11.1-r0 license:
+curl-8.12.1-r0 license:
 curl
 
 ```
@@ -499,16 +499,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.2-r1 description:
+libcrypto3-3.3.3-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.2-r1 webpage:
+libcrypto3-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.2-r1 installed size:
+libcrypto3-3.3.3-r0 installed size:
 4660 KiB
 
-libcrypto3-3.3.2-r1 license:
+libcrypto3-3.3.3-r0 license:
 Apache-2.0
 
 ```
@@ -516,16 +516,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.11.1-r0 description:
+libcurl-8.12.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.11.1-r0 webpage:
+libcurl-8.12.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.11.1-r0 installed size:
-640 KiB
+libcurl-8.12.1-r0 installed size:
+644 KiB
 
-libcurl-8.11.1-r0 license:
+libcurl-8.12.1-r0 license:
 curl
 
 ```
@@ -686,16 +686,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.2-r1 description:
+libssl3-3.3.3-r0 description:
 SSL shared libraries
 
-libssl3-3.3.2-r1 webpage:
+libssl3-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.2-r1 installed size:
-796 KiB
+libssl3-3.3.3-r0 installed size:
+800 KiB
 
-libssl3-3.3.2-r1 license:
+libssl3-3.3.3-r0 license:
 Apache-2.0
 
 ```
@@ -703,16 +703,16 @@ Apache-2.0
 ### `apk` package: `libtasn1`
 
 ```console
-libtasn1-4.19.0-r2 description:
+libtasn1-4.20.0-r0 description:
 The ASN.1 library used in GNUTLS
 
-libtasn1-4.19.0-r2 webpage:
+libtasn1-4.20.0-r0 webpage:
 https://www.gnu.org/software/gnutls/
 
-libtasn1-4.19.0-r2 installed size:
+libtasn1-4.20.0-r0 installed size:
 80 KiB
 
-libtasn1-4.19.0-r2 license:
+libtasn1-4.20.0-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -737,16 +737,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r0 description:
+musl-1.2.5-r1 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r0 webpage:
+musl-1.2.5-r1 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r0 installed size:
+musl-1.2.5-r1 installed size:
 652 KiB
 
-musl-1.2.5-r0 license:
+musl-1.2.5-r1 license:
 MIT
 
 ```
@@ -754,16 +754,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r0 description:
+musl-utils-1.2.5-r1 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r0 webpage:
+musl-utils-1.2.5-r1 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r0 installed size:
+musl-utils-1.2.5-r1 installed size:
 128 KiB
 
-musl-utils-1.2.5-r0 license:
+musl-utils-1.2.5-r1 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -975,16 +975,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2024b-r0 description:
+tzdata-2025a-r0 description:
 Timezone data
 
-tzdata-2024b-r0 webpage:
+tzdata-2025a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2024b-r0 installed size:
+tzdata-2025a-r0 installed size:
 1512 KiB
 
-tzdata-2024b-r0 license:
+tzdata-2025a-r0 license:
 Public-Domain
 
 ```
