@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:12c44b8c5f5f949b29863b450664b1b49c1b14cdb7a4533bfc434ef961ab1fa3`
+- Image ID: `sha256:333e8eb2f84f788d77fd37a1d0a2a9abb1e1fc4ace4a6694c2abb94f6f5e65f5`
 - Created: `2024-07-03T16:05:23Z`
-- Virtual Size: ~ 136.75 Mb  
+- Virtual Size: ~ 136.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -936,16 +936,16 @@ GPL-2.0-or-later AND LGPL-2.0-or-later AND BSD-3-Clause AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.7-r1 description:
+libcrypto3-3.1.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.7-r1 webpage:
+libcrypto3-3.1.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.7-r1 installed size:
-4512 KiB
+libcrypto3-3.1.8-r0 installed size:
+4516 KiB
 
-libcrypto3-3.1.7-r1 license:
+libcrypto3-3.1.8-r0 license:
 Apache-2.0
 
 ```
@@ -1055,16 +1055,16 @@ custom
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.7-r1 description:
+libssl3-3.1.8-r0 description:
 SSL shared libraries
 
-libssl3-3.1.7-r1 webpage:
+libssl3-3.1.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.7-r1 installed size:
+libssl3-3.1.8-r0 installed size:
 548 KiB
 
-libssl3-3.1.7-r1 license:
+libssl3-3.1.8-r0 license:
 Apache-2.0
 
 ```
@@ -1106,16 +1106,16 @@ BSD-2-Clause
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.4_git20230717-r4 description:
+musl-1.2.4_git20230717-r5 description:
 the musl c library (libc) implementation
 
-musl-1.2.4_git20230717-r4 webpage:
+musl-1.2.4_git20230717-r5 webpage:
 https://musl.libc.org/
 
-musl-1.2.4_git20230717-r4 installed size:
+musl-1.2.4_git20230717-r5 installed size:
 652 KiB
 
-musl-1.2.4_git20230717-r4 license:
+musl-1.2.4_git20230717-r5 license:
 MIT
 
 ```
@@ -1123,16 +1123,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.4_git20230717-r4 description:
+musl-utils-1.2.4_git20230717-r5 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.4_git20230717-r4 webpage:
+musl-utils-1.2.4_git20230717-r5 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.4_git20230717-r4 installed size:
+musl-utils-1.2.4_git20230717-r5 installed size:
 128 KiB
 
-musl-utils-1.2.4_git20230717-r4 license:
+musl-utils-1.2.4_git20230717-r5 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -1157,16 +1157,16 @@ X11
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.1.7-r1 description:
+openssl-3.1.8-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.1.7-r1 webpage:
+openssl-3.1.8-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.1.7-r1 installed size:
-732 KiB
+openssl-3.1.8-r0 installed size:
+740 KiB
 
-openssl-3.1.7-r1 license:
+openssl-3.1.8-r0 license:
 Apache-2.0
 
 ```
@@ -1259,16 +1259,16 @@ GPL-2.0-or-later
 ### `apk` package: `runtime-dependencies`
 
 ```console
-runtime-dependencies-20250108.180839 description:
+runtime-dependencies-20250214.191138 description:
 virtual meta package
 
-runtime-dependencies-20250108.180839 webpage:
+runtime-dependencies-20250214.191138 webpage:
 
 
-runtime-dependencies-20250108.180839 installed size:
+runtime-dependencies-20250214.191138 installed size:
 0 B
 
-runtime-dependencies-20250108.180839 license:
+runtime-dependencies-20250214.191138 license:
 
 
 ```
@@ -1361,16 +1361,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2024b-r0 description:
+tzdata-2025a-r0 description:
 Timezone data
 
-tzdata-2024b-r0 webpage:
+tzdata-2025a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2024b-r0 installed size:
+tzdata-2025a-r0 installed size:
 2976 KiB
 
-tzdata-2024b-r0 license:
+tzdata-2025a-r0 license:
 Public-Domain
 
 ```
