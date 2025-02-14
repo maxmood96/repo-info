@@ -615,7 +615,7 @@ $ docker pull mediawiki@sha256:d63aad4a87e18cb35e4a9dc70e3d7891b6230b6d95914fda0
 
 -	Layers:
 	-	`sha256:ac1fea3a041d1d0b5029ac48c1c29a7f4e580de6ed3f6caf25ff47f22940ecde`  
-		Last Modified: Wed, 05 Feb 2025 01:11:01 GMT  
+		Last Modified: Thu, 13 Feb 2025 21:30:03 GMT  
 		Size: 48.3 KB (48313 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -971,7 +971,7 @@ CMD ["apache2-foreground"]
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:1ee1f00e63065af9af4cb5bfa474271f4fccbdb9b94575670df8613e93684e84`  
-		Last Modified: Tue, 04 Feb 2025 19:34:31 GMT  
+		Last Modified: Thu, 13 Feb 2025 21:30:21 GMT  
 		Size: 55.4 MB (55432124 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7c830d4669be0ea690c52f3aef4ce353ee8427d1606594b2776d9e824dd129cb`  
