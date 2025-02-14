@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2fb0d67f36c544cfec262ac738f784f2c74a803c18899483e1835177a6fb0d2f`
+- Image ID: `sha256:1f2e5a16f02d517b8cfebcdd7f219459d78348f33bc40d5b5ba19286f4d7d7f0`
 - Created: `2025-01-24T15:44:16Z`
-- Virtual Size: ~ 165.08 Mb  
+- Virtual Size: ~ 171.33 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.16`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.16.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.16.tar.xz.asc`
-  - `PHP_SHA256=40d3b4e6cac33d3bcefe096d75a28d4fb4e3a9615eb20a4de55ba139fbfacdd5`
+  - `PHP_VERSION=8.3.17`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.17.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.17.tar.xz.asc`
+  - `PHP_SHA256=6158ee678e698395da13d72c7679a406d2b7554323432f14d37b60ed87d8ccfb`
   - `PHP_MEMORY_LIMIT=256M`
   - `MATOMO_VERSION=5.2.2`
 
@@ -250,16 +250,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.11.1-r0 description:
+curl-8.12.1-r0 description:
 URL retrival utility and library
 
-curl-8.11.1-r0 webpage:
+curl-8.12.1-r0 webpage:
 https://curl.se/
 
-curl-8.11.1-r0 installed size:
-242 KiB
+curl-8.12.1-r0 installed size:
+246 KiB
 
-curl-8.11.1-r0 license:
+curl-8.12.1-r0 license:
 curl
 
 ```
@@ -335,16 +335,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.2-r4 description:
+libcrypto3-3.3.3-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.2-r4 webpage:
+libcrypto3-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.2-r4 installed size:
+libcrypto3-3.3.3-r0 installed size:
 4607 KiB
 
-libcrypto3-3.3.2-r4 license:
+libcrypto3-3.3.3-r0 license:
 Apache-2.0
 
 ```
@@ -352,16 +352,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.11.1-r0 description:
+libcurl-8.12.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.11.1-r0 webpage:
+libcurl-8.12.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.11.1-r0 installed size:
-620 KiB
+libcurl-8.12.1-r0 installed size:
+628 KiB
 
-libcurl-8.11.1-r0 license:
+libcurl-8.12.1-r0 license:
 curl
 
 ```
@@ -522,16 +522,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.2-r4 description:
+libssl3-3.3.3-r0 description:
 SSL shared libraries
 
-libssl3-3.3.2-r4 webpage:
+libssl3-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.2-r4 installed size:
+libssl3-3.3.3-r0 installed size:
 779 KiB
 
-libssl3-3.3.2-r4 license:
+libssl3-3.3.3-r0 license:
 Apache-2.0
 
 ```
@@ -590,16 +590,16 @@ BSD-3-Clause
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r8 description:
+musl-1.2.5-r9 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r8 webpage:
+musl-1.2.5-r9 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r8 installed size:
+musl-1.2.5-r9 installed size:
 646 KiB
 
-musl-1.2.5-r8 license:
+musl-1.2.5-r9 license:
 MIT
 
 ```
@@ -675,16 +675,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.2-r4 description:
+openssl-3.3.3-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.2-r4 webpage:
+openssl-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.3.2-r4 installed size:
-765 KiB
+openssl-3.3.3-r0 installed size:
+769 KiB
 
-openssl-3.3.2-r4 license:
+openssl-3.3.3-r0 license:
 Apache-2.0
 
 ```
@@ -726,16 +726,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.47.1-r0 description:
+sqlite-libs-3.48.0-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.47.1-r0 webpage:
+sqlite-libs-3.48.0-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.47.1-r0 installed size:
-1477 KiB
+sqlite-libs-3.48.0-r0 installed size:
+1549 KiB
 
-sqlite-libs-3.47.1-r0 license:
+sqlite-libs-3.48.0-r0 license:
 blessing
 
 ```
