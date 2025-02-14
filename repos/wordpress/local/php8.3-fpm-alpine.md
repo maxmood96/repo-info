@@ -1,10 +1,10 @@
-# `wordpress:6.7.1-php8.3-fpm-alpine`
+# `wordpress:6.7.2-php8.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fae7ef7b4742752895b5aedb91b28d93d66df706f1559bf03a629870774e5736`
-- Created: `2024-11-21T20:06:45Z`
-- Virtual Size: ~ 270.70 Mb  
+- Image ID: `sha256:06d43f199898bc4243b0aa8788667e51d7721d353372f41b27b236af64f86b7f`
+- Created: `2025-02-11T20:06:56Z`
+- Virtual Size: ~ 276.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.16`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.16.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.16.tar.xz.asc`
-  - `PHP_SHA256=40d3b4e6cac33d3bcefe096d75a28d4fb4e3a9615eb20a4de55ba139fbfacdd5`
+  - `PHP_VERSION=8.3.17`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.17.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.17.tar.xz.asc`
+  - `PHP_SHA256=6158ee678e698395da13d72c7679a406d2b7554323432f14d37b60ed87d8ccfb`
 
 ## `apk` (`.apk`-based packages)
 
@@ -316,16 +316,16 @@ Apache-2.0
 ### `apk` package: `curl`
 
 ```console
-curl-8.11.1-r0 description:
+curl-8.12.1-r0 description:
 URL retrival utility and library
 
-curl-8.11.1-r0 webpage:
+curl-8.12.1-r0 webpage:
 https://curl.se/
 
-curl-8.11.1-r0 installed size:
-242 KiB
+curl-8.12.1-r0 installed size:
+246 KiB
 
-curl-8.11.1-r0 license:
+curl-8.12.1-r0 license:
 curl
 
 ```
@@ -690,16 +690,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.2-r4 description:
+libcrypto3-3.3.3-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.2-r4 webpage:
+libcrypto3-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.2-r4 installed size:
+libcrypto3-3.3.3-r0 installed size:
 4607 KiB
 
-libcrypto3-3.3.2-r4 license:
+libcrypto3-3.3.3-r0 license:
 Apache-2.0
 
 ```
@@ -707,16 +707,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.11.1-r0 description:
+libcurl-8.12.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.11.1-r0 webpage:
+libcurl-8.12.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.11.1-r0 installed size:
-620 KiB
+libcurl-8.12.1-r0 installed size:
+628 KiB
 
-libcurl-8.11.1-r0 license:
+libcurl-8.12.1-r0 license:
 curl
 
 ```
@@ -979,16 +979,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.2-r4 description:
+libssl3-3.3.3-r0 description:
 SSL shared libraries
 
-libssl3-3.3.2-r4 webpage:
+libssl3-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.2-r4 installed size:
+libssl3-3.3.3-r0 installed size:
 779 KiB
 
-libssl3-3.3.2-r4 license:
+libssl3-3.3.3-r0 license:
 Apache-2.0
 
 ```
@@ -1013,16 +1013,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libtasn1`
 
 ```console
-libtasn1-4.19.0-r2 description:
+libtasn1-4.20.0-r0 description:
 The ASN.1 library used in GNUTLS
 
-libtasn1-4.19.0-r2 webpage:
+libtasn1-4.20.0-r0 webpage:
 https://www.gnu.org/software/gnutls/
 
-libtasn1-4.19.0-r2 installed size:
+libtasn1-4.20.0-r0 installed size:
 65 KiB
 
-libtasn1-4.19.0-r2 license:
+libtasn1-4.20.0-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1217,16 +1217,16 @@ BSD-3-Clause
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r8 description:
+musl-1.2.5-r9 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r8 webpage:
+musl-1.2.5-r9 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r8 installed size:
+musl-1.2.5-r9 installed size:
 646 KiB
 
-musl-1.2.5-r8 license:
+musl-1.2.5-r9 license:
 MIT
 
 ```
@@ -1336,16 +1336,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.2-r4 description:
+openssl-3.3.3-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.2-r4 webpage:
+openssl-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.3.2-r4 installed size:
-765 KiB
+openssl-3.3.3-r0 installed size:
+769 KiB
 
-openssl-3.3.2-r4 license:
+openssl-3.3.3-r0 license:
 Apache-2.0
 
 ```
@@ -1404,16 +1404,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.47.1-r0 description:
+sqlite-libs-3.48.0-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.47.1-r0 webpage:
+sqlite-libs-3.48.0-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.47.1-r0 installed size:
-1477 KiB
+sqlite-libs-3.48.0-r0 installed size:
+1549 KiB
 
-sqlite-libs-3.47.1-r0 license:
+sqlite-libs-3.48.0-r0 license:
 blessing
 
 ```

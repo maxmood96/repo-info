@@ -1,10 +1,10 @@
-# `wordpress:6.7.1-php8.1-fpm-alpine`
+# `wordpress:6.7.2-php8.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3f1cecb4ebad98036c32949d7df5f666928c389b16d15c1c3bc6de4a1a8d0b94`
-- Created: `2024-11-21T20:06:45Z`
-- Virtual Size: ~ 265.46 Mb  
+- Image ID: `sha256:b74f7bd68eff309ba01977910b108e0f1540640fc27c68e106bf7e53068ab2e2`
+- Created: `2025-02-11T20:06:56Z`
+- Virtual Size: ~ 265.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1013,16 +1013,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libtasn1`
 
 ```console
-libtasn1-4.19.0-r2 description:
+libtasn1-4.20.0-r0 description:
 The ASN.1 library used in GNUTLS
 
-libtasn1-4.19.0-r2 webpage:
+libtasn1-4.20.0-r0 webpage:
 https://www.gnu.org/software/gnutls/
 
-libtasn1-4.19.0-r2 installed size:
+libtasn1-4.20.0-r0 installed size:
 65 KiB
 
-libtasn1-4.19.0-r2 license:
+libtasn1-4.20.0-r0 license:
 LGPL-2.1-or-later
 
 ```
