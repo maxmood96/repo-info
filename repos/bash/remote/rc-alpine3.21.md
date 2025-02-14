@@ -1,7 +1,7 @@
 ## `bash:rc-alpine3.21`
 
 ```console
-$ docker pull bash@sha256:a8a337be484f9348607ee054c5f411a7857e03ab617e300b9d08ab1cc7d64d5d
+$ docker pull bash@sha256:78a6f92d33496fdda4c4e1d8aeb6ca9a0818e2de0d9b404e4b35c8c8f8b59070
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,19 +26,19 @@ $ docker pull bash@sha256:a8a337be484f9348607ee054c5f411a7857e03ab617e300b9d08ab
 ### `bash:rc-alpine3.21` - linux; amd64
 
 ```console
-$ docker pull bash@sha256:2d808f27524d1a7c4baedb6e6a36c20e6f30baaa186750d2577be879e62d7a1d
+$ docker pull bash@sha256:905b4b5db42fce69f4fbc63145a1656ad4747d53eb424aa1a505784ae80637cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.6 MB (6590420 bytes)**  
+-	Total Size: **6.6 MB (6590964 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:40f4e4974a8ab1f70cb065a6382c900ee06d221b4458703bf191b15ebb93068d`
+-	Image ID: `sha256:ae785417af3b15ca61d746f1e07e5b5731ce00fb1c550886b2fd928abaab11ad`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Tue, 17 Dec 2024 17:18:53 GMT
-ADD alpine-minirootfs-3.21.2-x86_64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.21.3-x86_64.tar.gz / # buildkit
 # Tue, 17 Dec 2024 17:18:53 GMT
 CMD ["/bin/sh"]
 # Tue, 17 Dec 2024 17:18:53 GMT
@@ -56,59 +56,59 @@ CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:1f3e46996e2966e4faa5846e56e76e3748b7315e2ded61476c24403d592134f0`  
-		Last Modified: Tue, 14 Jan 2025 20:33:02 GMT  
-		Size: 3.6 MB (3641715 bytes)  
+	-	`sha256:f18232174bc91741fdf3da96d85011092101a032a93a388b79e99e69c2d5c870`  
+		Last Modified: Fri, 14 Feb 2025 14:36:50 GMT  
+		Size: 3.6 MB (3642247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d4fc965f0d0318c7d21d2535d250f9ca66693d6bccbd0563b9f250f8a46d0338`  
-		Last Modified: Tue, 04 Feb 2025 07:11:06 GMT  
-		Size: 2.9 MB (2948368 bytes)  
+	-	`sha256:94b916e39404a6059c6d6e14602c8cd63ce6a1aed18810323ec49fb83040e431`  
+		Last Modified: Fri, 14 Feb 2025 19:11:41 GMT  
+		Size: 2.9 MB (2948379 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:206e0d4f2cd9a4fb759c816d6e18c446befea4d9128863d0541eeb3f4d901e20`  
-		Last Modified: Fri, 07 Feb 2025 11:51:05 GMT  
-		Size: 337.0 B  
+	-	`sha256:3e35bf4d9c5957edbfd545b864bf872bcdae76136b82be6e0901cb39d1a001dc`  
+		Last Modified: Fri, 14 Feb 2025 19:11:40 GMT  
+		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bash:rc-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull bash@sha256:7d24e11a177d8fe563ff717a5f700235d1f5a3ffe9212664163143dac4544138
+$ docker pull bash@sha256:19af037413c836b55a719e119970a570f569f3a847120de2e555338411bfc06a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.9 KB (135861 bytes)**  
+-	Total Size: **135.9 KB (135867 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fccb0a9571d5c982778b87d0b59645651020de4977460582b995d79b644f93fd`
+-	Image ID: `sha256:034cb293bfd3e2254ec197d75d9dd2cef270384b95454f5a017379bbd493fc58`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:b6e7455a57b5ebce530e643b4749fd5197bede58d560f16384211879eca83a86`  
-		Last Modified: Wed, 08 Jan 2025 17:58:36 GMT  
-		Size: 115.5 KB (115496 bytes)  
+	-	`sha256:02df4cf3b38f90dafaa142ab85cb0838028ab413159cbd42d8a2d308bad912b3`  
+		Last Modified: Fri, 14 Feb 2025 22:06:01 GMT  
+		Size: 115.5 KB (115502 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:cf63aa47780b51244b8300eb35281a4ae71dbb709be3b84337bbf808455727e5`  
-		Last Modified: Wed, 08 Jan 2025 17:58:36 GMT  
+	-	`sha256:4d8f993516d2ad13d42e7cdab3bc6cb2b38c17bb24e35fb6d44e67db19c13d8e`  
+		Last Modified: Fri, 14 Feb 2025 22:06:01 GMT  
 		Size: 20.4 KB (20365 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `bash:rc-alpine3.21` - linux; arm variant v6
 
 ```console
-$ docker pull bash@sha256:e0507b14087c81b24ae8fbd3062656c627f7870b459166dde16d5286eaee073a
+$ docker pull bash@sha256:dc3bfc060b005a78a22de7c5f4333daae9a74595bcdc08f6d062c1c1925e07c3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6250035 bytes)**  
+-	Total Size: **6.3 MB (6250893 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:09cbfc9ef34d9973ea7ca058f6e7997cce00f4183332868f03090a8c320edfa5`
+-	Image ID: `sha256:aa276ee8cbc2bc93d38326c53da6138911b453a598ad4b9e8b0ff4325e1e341e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Tue, 17 Dec 2024 17:18:53 GMT
-ADD alpine-minirootfs-3.21.2-armhf.tar.gz / # buildkit
+ADD alpine-minirootfs-3.21.3-armhf.tar.gz / # buildkit
 # Tue, 17 Dec 2024 17:18:53 GMT
 CMD ["/bin/sh"]
 # Tue, 17 Dec 2024 17:18:53 GMT
@@ -126,55 +126,55 @@ CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:d3e229a4bb72770bd404e0f6590519a8e566146523e984834c6a3d82836f0069`  
-		Last Modified: Tue, 14 Jan 2025 20:33:01 GMT  
-		Size: 3.4 MB (3363879 bytes)  
+	-	`sha256:76099982f06682e28a60c3b774ef20931d07b0a2f551203484e633d8c0361ee7`  
+		Last Modified: Fri, 14 Feb 2025 19:24:56 GMT  
+		Size: 3.4 MB (3364731 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bad4077b3a1eccef42ba33ea30f6e23df1ae87516f12aa260c31285e4dc0ae21`  
-		Last Modified: Wed, 08 Jan 2025 18:08:23 GMT  
-		Size: 2.9 MB (2885823 bytes)  
+	-	`sha256:d8dfa16fec4e605450726b913ba24922ce4072227250fe807501d6cdb43211ce`  
+		Last Modified: Fri, 14 Feb 2025 22:06:17 GMT  
+		Size: 2.9 MB (2885831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b614c7bb16cde62953310988809294e07ecfdb136a180208dd90853428a83d70`  
-		Last Modified: Wed, 08 Jan 2025 18:08:23 GMT  
-		Size: 333.0 B  
+	-	`sha256:1dda633d5ae4e6399418228adc7d61736ea5bfccb16bb6ef1b07f21b6fc1abff`  
+		Last Modified: Fri, 14 Feb 2025 22:06:17 GMT  
+		Size: 331.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bash:rc-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull bash@sha256:c5d501db55205e3ff66a512f3dba9338cdd9d723c6af04cc54f812a7f6181678
+$ docker pull bash@sha256:3d781392623955cbc4f05305fe5e54f80d85e209b4adeac5a3642fcce9426e8d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **20.2 KB (20242 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0be266fb1661e2ad9d103756694c6ab536141dc2100954276ed12823bdc5069c`
+-	Image ID: `sha256:5efefe3876668d29d797ca89b081ea5eb53f021a86a5935e6c8243903860d002`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:55d47907fe0b03dd1d338a07f3c9077a3fc82004369d69e5808a3350c8bbe04d`  
-		Last Modified: Wed, 08 Jan 2025 18:08:23 GMT  
+	-	`sha256:248eaa2eb2c9fa15151520c1797a3602735ce96edf03fdb770b37bf7f53aa07c`  
+		Last Modified: Fri, 14 Feb 2025 22:06:02 GMT  
 		Size: 20.2 KB (20242 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `bash:rc-alpine3.21` - linux; arm variant v7
 
 ```console
-$ docker pull bash@sha256:b7ef0a1d15d291c06f45f9ada26f81a4686a2e6aff79d899bf01601e0695b5d6
+$ docker pull bash@sha256:65c22228ebeb0b4f96ad23c21089c8a3e7996a2ccd72cfa6290f902d97a3ba8e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5934493 bytes)**  
+-	Total Size: **5.9 MB (5935491 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:729d2bd6ce2d46ca2f6175f9fdd535f46a5efce32ae8a3c32e4dafc0febec443`
+-	Image ID: `sha256:c856ee52601e677e7d94ac6aa53559f413198481c02c4eccee167f54e2a34842`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Tue, 17 Dec 2024 17:18:53 GMT
-ADD alpine-minirootfs-3.21.2-armv7.tar.gz / # buildkit
+ADD alpine-minirootfs-3.21.3-armv7.tar.gz / # buildkit
 # Tue, 17 Dec 2024 17:18:53 GMT
 CMD ["/bin/sh"]
 # Tue, 17 Dec 2024 17:18:53 GMT
@@ -192,41 +192,41 @@ CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:824bc99f06f2c6bebc1172ff7e39d7a1cdbd077ec44632079a629f69e9db7abf`  
-		Last Modified: Tue, 14 Jan 2025 20:33:57 GMT  
-		Size: 3.1 MB (3097112 bytes)  
+	-	`sha256:85f3b18f9f5a8655db86c6dfb02bb01011ffef63d10a173843c5c65c3e9137b7`  
+		Last Modified: Fri, 14 Feb 2025 14:37:26 GMT  
+		Size: 3.1 MB (3098123 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b8a740541990c5aa63622448cf5b94adc0acb84630476cb6bf25eab18f973e0d`  
-		Last Modified: Wed, 08 Jan 2025 18:24:44 GMT  
-		Size: 2.8 MB (2837044 bytes)  
+	-	`sha256:317397ced7adcb7e90ad672f5fcece6c2173825bf442b057d97f2012ef827356`  
+		Last Modified: Fri, 14 Feb 2025 19:18:19 GMT  
+		Size: 2.8 MB (2837033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b52431e26ff9971289be558206ce19f8b6514cb1a536548623413074b66020cf`  
-		Last Modified: Wed, 08 Jan 2025 18:24:43 GMT  
-		Size: 337.0 B  
+	-	`sha256:48ea8ce80948c916896e720e46961c7df812790b7ebbccbb29738245033ae1c2`  
+		Last Modified: Fri, 14 Feb 2025 19:18:18 GMT  
+		Size: 335.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bash:rc-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull bash@sha256:c4d82557b405be28b87ee09c33422df30cb465d992e3ebfe7651e033d9fc59ff
+$ docker pull bash@sha256:6f860876bbfb0bcf41b66d52efde885a612449083688426ff3e3a345f159321e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **136.0 KB (136003 bytes)**  
+-	Total Size: **136.0 KB (136011 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a1dd35843f382786d36e5a7a3e9d0b888c669d3dc5d7db7d7e723c9ed414665f`
+-	Image ID: `sha256:2872400d09196efb21b06b627d78ce6e51eb3beb3c0cfac500a41f5fc9ea7c7d`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:74bf39d0a7ed8f6dd7b927a1117594c0b5c6f700afa1aaf42d38567a37e37757`  
-		Last Modified: Wed, 08 Jan 2025 18:24:43 GMT  
-		Size: 115.5 KB (115548 bytes)  
+	-	`sha256:360f87fa3b13462f0b06bbf71cf3cd0c3fd769c47a5731841ba052af94ae7779`  
+		Last Modified: Fri, 14 Feb 2025 22:06:03 GMT  
+		Size: 115.6 KB (115554 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8ac0c368bead2b39694cc80da71921832dccf0509a7911b9c14eca25a9fea115`  
-		Last Modified: Wed, 08 Jan 2025 18:24:43 GMT  
-		Size: 20.5 KB (20455 bytes)  
+	-	`sha256:7fdc71466ec7a7b1dabfff3571d756f9a527a1702a46862a45692f876e985beb`  
+		Last Modified: Fri, 14 Feb 2025 22:06:04 GMT  
+		Size: 20.5 KB (20457 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `bash:rc-alpine3.21` - linux; arm64 variant v8
@@ -291,30 +291,30 @@ $ docker pull bash@sha256:f3df00651d48798cd4894c9e257e00ee5edc67d0fe76604784537e
 
 -	Layers:
 	-	`sha256:a4aa280e620a725080c9e69cc85170864f28499ce1d00026ea19e3d542916132`  
-		Last Modified: Wed, 08 Jan 2025 18:09:51 GMT  
+		Last Modified: Fri, 14 Feb 2025 22:06:05 GMT  
 		Size: 115.6 KB (115576 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:2ad275150951b1e8a12518729dfb7bb17f3d05cb21434eff6df6c99ad794fe69`  
-		Last Modified: Wed, 08 Jan 2025 18:09:51 GMT  
+		Last Modified: Fri, 14 Feb 2025 22:06:05 GMT  
 		Size: 20.5 KB (20493 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `bash:rc-alpine3.21` - linux; 386
 
 ```console
-$ docker pull bash@sha256:27585675dc6689b7de8aa6d2352b71cfb5a19c66be1a40fdeb63d89cf1addc05
+$ docker pull bash@sha256:7fec9d9ceb1b0022b7a631e680e2b6e45b9588a8f0451f8355a3d6093dd57a1d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6338185 bytes)**  
+-	Total Size: **6.3 MB (6338722 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:db5fcaaacfe690b04a48633983124958e4c00bc9fe8b79309b3718f8e9f70dfc`
+-	Image ID: `sha256:ac232e6cad7a77c92977151bbc4b7b6fe6fbe5e6b6952601cecfa884d9f3c6a1`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Tue, 17 Dec 2024 17:18:53 GMT
-ADD alpine-minirootfs-3.21.2-x86.tar.gz / # buildkit
+ADD alpine-minirootfs-3.21.3-x86.tar.gz / # buildkit
 # Tue, 17 Dec 2024 17:18:53 GMT
 CMD ["/bin/sh"]
 # Tue, 17 Dec 2024 17:18:53 GMT
@@ -332,129 +332,59 @@ CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:dbaac2331104495e5df0818a1db05c402cfc13af140c75beccf51922d5f37ad5`  
-		Last Modified: Tue, 14 Jan 2025 20:33:01 GMT  
-		Size: 3.5 MB (3463126 bytes)  
+	-	`sha256:69aa61ccf55e5bf8e7a069b89e8afb42b4f3443b3785868795af8046d810d608`  
+		Last Modified: Fri, 14 Feb 2025 14:38:41 GMT  
+		Size: 3.5 MB (3463623 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4196f8e74f69e07994dd411707d0df592f6524415d9fc6b86aa925071f70341e`  
-		Last Modified: Wed, 08 Jan 2025 17:58:38 GMT  
-		Size: 2.9 MB (2874727 bytes)  
+	-	`sha256:42e3ce7c106b43083bae94edce53286490ab7c6e67f20482ba760a9f5e614b9c`  
+		Last Modified: Fri, 14 Feb 2025 19:12:05 GMT  
+		Size: 2.9 MB (2874761 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c27c2b423998c08e3a37fa630f002b401771906e68431a473304cfedde69edbc`  
-		Last Modified: Wed, 08 Jan 2025 17:58:37 GMT  
-		Size: 332.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `bash:rc-alpine3.21` - unknown; unknown
-
-```console
-$ docker pull bash@sha256:df387b1bef3cccba0a2defbfcb9779ee6624ce609ab15bb0a26c47068968f0ad
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.8 KB (135784 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7a59c9e66be09c22fd348168ea7cfa814805f4386699467e031d29cdfa05e46b`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:1c9a687b17cbe6d834679f33fee7bf9a98aa812726409b1d64a4c0a4bbec55c7`  
-		Last Modified: Wed, 08 Jan 2025 17:58:37 GMT  
-		Size: 115.5 KB (115461 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:09f8fb16d95fd48a7e70ed1a38be1407e6654114f475fdf1ed9e6e910da541d4`  
-		Last Modified: Wed, 08 Jan 2025 17:58:37 GMT  
-		Size: 20.3 KB (20323 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `bash:rc-alpine3.21` - linux; ppc64le
-
-```console
-$ docker pull bash@sha256:64a9752ecb93c15eeb12f1f5f04ab45fdb36c79452d73759ab9821196b82b3b9
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.8 MB (6791083 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:bdf4ac5a24ffcb04e575cb8c2eb0d6e9951f683f0332477ab8f3222d6b4028ef`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["bash"]`
-
-```dockerfile
-# Tue, 17 Dec 2024 17:18:53 GMT
-ADD alpine-minirootfs-3.21.2-ppc64le.tar.gz / # buildkit
-# Tue, 17 Dec 2024 17:18:53 GMT
-CMD ["/bin/sh"]
-# Tue, 17 Dec 2024 17:18:53 GMT
-ENV _BASH_VERSION=5.3-beta
-# Tue, 17 Dec 2024 17:18:53 GMT
-ENV _BASH_BASELINE=5.3-beta
-# Tue, 17 Dec 2024 17:18:53 GMT
-RUN set -eux; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		gcc 		libc-dev 		make 		ncurses-dev 		patch 		tar 	; 		wget -O bash.tar.gz "https://ftp.gnu.org/gnu/bash/bash-$_BASH_BASELINE.tar.gz"; 	wget -O bash.tar.gz.sig "https://ftp.gnu.org/gnu/bash/bash-$_BASH_BASELINE.tar.gz.sig"; 		: "${_BASH_BASELINE_PATCH:=0}" "${_BASH_LATEST_PATCH:=0}"; 	if [ "$_BASH_LATEST_PATCH" -gt "$_BASH_BASELINE_PATCH" ]; then 		mkdir -p bash-patches; 		first="$(printf '%03d' "$(( _BASH_BASELINE_PATCH + 1 ))")"; 		last="$(printf '%03d' "$_BASH_LATEST_PATCH")"; 		majorMinor="${_BASH_VERSION%.*}"; 		for patch in $(seq -w "$first" "$last"); do 			url="https://ftp.gnu.org/gnu/bash/bash-$majorMinor-patches/bash${majorMinor//./}-$patch"; 			wget -O "bash-patches/$patch" "$url"; 			wget -O "bash-patches/$patch.sig" "$url.sig"; 		done; 	fi; 		apk add --no-cache --virtual .gpg-deps gnupg; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7C0135FB088AAF6C66C650B9BB5869F064EA74AB; 	gpg --batch --verify bash.tar.gz.sig bash.tar.gz; 	rm bash.tar.gz.sig; 	if [ -d bash-patches ]; then 		for sig in bash-patches/*.sig; do 			p="${sig%.sig}"; 			gpg --batch --verify "$sig" "$p"; 			rm "$sig"; 		done; 	fi; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apk del --no-network .gpg-deps; 		mkdir -p /usr/local/src/bash; 	tar 		--extract 		--file=bash.tar.gz 		--strip-components=1 		--directory=/usr/local/src/bash 	; 	rm bash.tar.gz; 		if [ -d bash-patches ]; then 		apk add --no-cache --virtual .patch-deps patch; 		for p in bash-patches/*; do 			patch 				--directory=/usr/local/src/bash 				--input="$(readlink -f "$p")" 				--strip=0 			; 			rm "$p"; 		done; 		rmdir bash-patches; 		apk del --no-network .patch-deps; 	fi; 		cd /usr/local/src/bash; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-readline 		--with-curses 		--without-bash-malloc 	|| { 		cat >&2 config.log; 		false; 	}; 	make -j "$(nproc)"; 	make install; 	cd /; 	rm -r /usr/local/src/bash; 		rm -rf 		/usr/local/share/doc/bash/*.html 		/usr/local/share/info 		/usr/local/share/locale 		/usr/local/share/man 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .bash-rundeps $runDeps; 	apk del --no-network .build-deps; 		[ "$(which bash)" = '/usr/local/bin/bash' ]; 	bash --version; 	[ "$(bash -c 'echo "${BASH_VERSION%%[^0-9.]*}"')" = "${_BASH_VERSION%%-*}.0" ]; 	bash -c 'help' > /dev/null # buildkit
-# Tue, 17 Dec 2024 17:18:53 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Tue, 17 Dec 2024 17:18:53 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 17 Dec 2024 17:18:53 GMT
-CMD ["bash"]
-```
-
--	Layers:
-	-	`sha256:244ac55e5ecd413dee99efe3ace7cb84420bfc9a727ec2327dae7805045d7470`  
-		Last Modified: Tue, 14 Jan 2025 20:33:45 GMT  
-		Size: 3.6 MB (3573601 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ff3bc455f6a856bbb4de0c86eadeecd03190dfe22ed51cea778168f7f9121b33`  
-		Last Modified: Wed, 08 Jan 2025 18:00:07 GMT  
-		Size: 3.2 MB (3217144 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2602f9bdea94a4c37cbe5130e22d9b624f4b60daebd73d69bd6fc517b82561d1`  
-		Last Modified: Wed, 08 Jan 2025 18:00:06 GMT  
+	-	`sha256:4af5b0f3a626c4acb47dc3126ad2f05926481e99ef910748214bc1c327548b2e`  
+		Last Modified: Fri, 14 Feb 2025 19:12:04 GMT  
 		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bash:rc-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull bash@sha256:c8236bd972c31836092e6ddb9dc421c53fd4a1af73120b070a7dbc3ec7449e7d
+$ docker pull bash@sha256:17a12297eecd3f4d3a90190c5506aadde6052390e517758d610742b6427c5571
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.0 KB (134012 bytes)**  
+-	Total Size: **135.8 KB (135790 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b1f8aec4feab03829da3f6b7ec9833095cc33c99b8f16921f34e75b1d0fe4bd9`
+-	Image ID: `sha256:7754a6ce8971f42f9e77f7d9916cb031edaa0b26a74610f0a88ffe649ea89439`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a8266102938d18b903b2216ecf13623ddb3e856f966e7241e114bb9cb58708a9`  
-		Last Modified: Wed, 08 Jan 2025 18:00:06 GMT  
-		Size: 113.6 KB (113591 bytes)  
+	-	`sha256:95a76cd0d9f053fd7cc7eadd0a5ca1847aa2b975afcd73c1463e95fe4d8f9368`  
+		Last Modified: Fri, 14 Feb 2025 22:06:06 GMT  
+		Size: 115.5 KB (115467 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:03bf415277c1b2d310cc86e5fe392c730a62e6aaed1f5f6b53f91fb7b919affa`  
-		Last Modified: Wed, 08 Jan 2025 18:00:06 GMT  
-		Size: 20.4 KB (20421 bytes)  
+	-	`sha256:7f19cb03b38d7add75637e2c64dec8bece6dad1131653c568de83c6f03738d64`  
+		Last Modified: Fri, 14 Feb 2025 22:06:06 GMT  
+		Size: 20.3 KB (20323 bytes)  
 		MIME: application/vnd.in-toto+json
 
-### `bash:rc-alpine3.21` - linux; riscv64
+### `bash:rc-alpine3.21` - linux; ppc64le
 
 ```console
-$ docker pull bash@sha256:d070e91e458bc8e8b16229ebaee33d92794469cd7d34bb6fd7e8f6177133363a
+$ docker pull bash@sha256:ae389aafe2ebf196860178c03ce0ac4193a3c2ceb82999315b25add727d23b8f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.3 MB (6250147 bytes)**  
+-	Total Size: **6.8 MB (6791814 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a70934c557f702cbb7b6c6831a37672bbecaa19916e1633a4692400adda050b1`
+-	Image ID: `sha256:a4e230c34811fde3858b19b6a69b14ff428b6416adddb2c91a029b2d620dd36a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["bash"]`
 
 ```dockerfile
 # Tue, 17 Dec 2024 17:18:53 GMT
-ADD alpine-minirootfs-3.21.2-riscv64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.21.3-ppc64le.tar.gz / # buildkit
 # Tue, 17 Dec 2024 17:18:53 GMT
 CMD ["/bin/sh"]
 # Tue, 17 Dec 2024 17:18:53 GMT
@@ -472,40 +402,110 @@ CMD ["bash"]
 ```
 
 -	Layers:
-	-	`sha256:21a89fc8a7107842fa0935d999d700ca9a9df964110a7076d946b16f07a54de5`  
-		Last Modified: Tue, 14 Jan 2025 20:35:37 GMT  
-		Size: 3.4 MB (3350256 bytes)  
+	-	`sha256:184b14480d317057da092a0994ad6baf4b2df588108f43969f8fd56f021af2c6`  
+		Last Modified: Fri, 14 Feb 2025 14:38:03 GMT  
+		Size: 3.6 MB (3574345 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:183210487df799b95d58a6f4fde5d8bfc627a9731f3d0d354f05a9b2f4486034`  
-		Last Modified: Wed, 08 Jan 2025 18:19:25 GMT  
-		Size: 2.9 MB (2899549 bytes)  
+	-	`sha256:0ad93b01cb3b826268821dd4b214dba009d2e6dafd44990ec9b44544d45f4936`  
+		Last Modified: Fri, 14 Feb 2025 19:18:00 GMT  
+		Size: 3.2 MB (3217131 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:74befca5b89b878e81e7e829bcd1f3432b0cbd865e3688361fe0eb87c10d65d5`  
-		Last Modified: Wed, 08 Jan 2025 18:19:25 GMT  
-		Size: 342.0 B  
+	-	`sha256:b990995b80d95a4361e0f33acc3f867b623a91916f421410aa3d7c9a7657d297`  
+		Last Modified: Fri, 14 Feb 2025 19:18:00 GMT  
+		Size: 338.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `bash:rc-alpine3.21` - unknown; unknown
 
 ```console
-$ docker pull bash@sha256:4380f4720300dd5aca9ab77cc7bcaa5f5413bf8cccc66c5f27bfbc438e596fa3
+$ docker pull bash@sha256:b61a1709ff06e20dcac4798c62f16d894775b5f440e8e0efc8aafa6280884baa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **134.0 KB (134008 bytes)**  
+-	Total Size: **134.0 KB (134018 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5a277a5e5210a314aa112b88d78a95269059d79655c5bc9df8a37b6cf5992b60`
+-	Image ID: `sha256:ce80feed3e8ef251d345b4611491c7696dcb9a6abb33e82a3f806550ef21f3d6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:96d82dd83f994eb0208e47cb7c95116e42ea6bc9e19509f56a7fcd7d0d60ee3e`  
-		Last Modified: Wed, 08 Jan 2025 18:19:25 GMT  
-		Size: 113.6 KB (113587 bytes)  
+	-	`sha256:855a8a49c945b6253d756536ec41e74a6ade2e409ca3cfa595e8622d7ada5b41`  
+		Last Modified: Fri, 14 Feb 2025 22:06:08 GMT  
+		Size: 113.6 KB (113597 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6e86ca13337e321cc638f255f00d7f15d02d3640c45883ae277323829f98665e`  
-		Last Modified: Wed, 08 Jan 2025 18:19:25 GMT  
+	-	`sha256:891c41d1a2da5d08d4b005f7bc6879033c74aaefa35b5c6d7b1c5f077418dee4`  
+		Last Modified: Fri, 14 Feb 2025 22:06:08 GMT  
+		Size: 20.4 KB (20421 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `bash:rc-alpine3.21` - linux; riscv64
+
+```console
+$ docker pull bash@sha256:76826201d542bbcec5fa31314416f8273b852334089760b703961c41a65fe316
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **6.3 MB (6251359 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:9bac5cc482fc1b7d5fd6dadf55aca260c0a1e1a1997679c57e8238cb0a6c42af`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Tue, 17 Dec 2024 17:18:53 GMT
+ADD alpine-minirootfs-3.21.3-riscv64.tar.gz / # buildkit
+# Tue, 17 Dec 2024 17:18:53 GMT
+CMD ["/bin/sh"]
+# Tue, 17 Dec 2024 17:18:53 GMT
+ENV _BASH_VERSION=5.3-beta
+# Tue, 17 Dec 2024 17:18:53 GMT
+ENV _BASH_BASELINE=5.3-beta
+# Tue, 17 Dec 2024 17:18:53 GMT
+RUN set -eux; 		apk add --no-cache --virtual .build-deps 		bison 		coreutils 		dpkg-dev dpkg 		gcc 		libc-dev 		make 		ncurses-dev 		patch 		tar 	; 		wget -O bash.tar.gz "https://ftp.gnu.org/gnu/bash/bash-$_BASH_BASELINE.tar.gz"; 	wget -O bash.tar.gz.sig "https://ftp.gnu.org/gnu/bash/bash-$_BASH_BASELINE.tar.gz.sig"; 		: "${_BASH_BASELINE_PATCH:=0}" "${_BASH_LATEST_PATCH:=0}"; 	if [ "$_BASH_LATEST_PATCH" -gt "$_BASH_BASELINE_PATCH" ]; then 		mkdir -p bash-patches; 		first="$(printf '%03d' "$(( _BASH_BASELINE_PATCH + 1 ))")"; 		last="$(printf '%03d' "$_BASH_LATEST_PATCH")"; 		majorMinor="${_BASH_VERSION%.*}"; 		for patch in $(seq -w "$first" "$last"); do 			url="https://ftp.gnu.org/gnu/bash/bash-$majorMinor-patches/bash${majorMinor//./}-$patch"; 			wget -O "bash-patches/$patch" "$url"; 			wget -O "bash-patches/$patch.sig" "$url.sig"; 		done; 	fi; 		apk add --no-cache --virtual .gpg-deps gnupg; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 7C0135FB088AAF6C66C650B9BB5869F064EA74AB; 	gpg --batch --verify bash.tar.gz.sig bash.tar.gz; 	rm bash.tar.gz.sig; 	if [ -d bash-patches ]; then 		for sig in bash-patches/*.sig; do 			p="${sig%.sig}"; 			gpg --batch --verify "$sig" "$p"; 			rm "$sig"; 		done; 	fi; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME"; 	apk del --no-network .gpg-deps; 		mkdir -p /usr/local/src/bash; 	tar 		--extract 		--file=bash.tar.gz 		--strip-components=1 		--directory=/usr/local/src/bash 	; 	rm bash.tar.gz; 		if [ -d bash-patches ]; then 		apk add --no-cache --virtual .patch-deps patch; 		for p in bash-patches/*; do 			patch 				--directory=/usr/local/src/bash 				--input="$(readlink -f "$p")" 				--strip=0 			; 			rm "$p"; 		done; 		rmdir bash-patches; 		apk del --no-network .patch-deps; 	fi; 		cd /usr/local/src/bash; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	./configure 		--build="$gnuArch" 		--enable-readline 		--with-curses 		--without-bash-malloc 	|| { 		cat >&2 config.log; 		false; 	}; 	make -j "$(nproc)"; 	make install; 	cd /; 	rm -r /usr/local/src/bash; 		rm -rf 		/usr/local/share/doc/bash/*.html 		/usr/local/share/info 		/usr/local/share/locale 		/usr/local/share/man 	; 		runDeps="$( 		scanelf --needed --nobanner --format '%n#p' --recursive /usr/local 			| tr ',' '\n' 			| sort -u 			| awk 'system("[ -e /usr/local/lib/" $1 " ]") == 0 { next } { print "so:" $1 }' 	)"; 	apk add --no-network --virtual .bash-rundeps $runDeps; 	apk del --no-network .build-deps; 		[ "$(which bash)" = '/usr/local/bin/bash' ]; 	bash --version; 	[ "$(bash -c 'echo "${BASH_VERSION%%[^0-9.]*}"')" = "${_BASH_VERSION%%-*}.0" ]; 	bash -c 'help' > /dev/null # buildkit
+# Tue, 17 Dec 2024 17:18:53 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Tue, 17 Dec 2024 17:18:53 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Tue, 17 Dec 2024 17:18:53 GMT
+CMD ["bash"]
+```
+
+-	Layers:
+	-	`sha256:7df33f7ad8beb367ac09bdd1b2f220db3ee2bbdda14a6310d1340e5628b5ba88`  
+		Last Modified: Fri, 14 Feb 2025 19:25:43 GMT  
+		Size: 3.4 MB (3351439 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9926e43a65f547073ffc0110423dc953aef08297e709b7ce928df9bb19898c95`  
+		Last Modified: Fri, 14 Feb 2025 19:32:14 GMT  
+		Size: 2.9 MB (2899581 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:448eca4cdd8230bc8d4c44d664d391ca168c1290069212c9bdad9c86f1f44a15`  
+		Last Modified: Fri, 14 Feb 2025 19:32:13 GMT  
+		Size: 339.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `bash:rc-alpine3.21` - unknown; unknown
+
+```console
+$ docker pull bash@sha256:2b176053e512daa878ceb9b267a09289b4c2bc3286da03e8b0f0fa459f1a976a
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **134.0 KB (134014 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:38e6a423caf5f743f1ba7e0861d1d822bfc51479d649eb45489a8be454c446cf`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:bc76ada99e30c1385974d3cee3862eaf4157454f54f29958a40a83c02b137dc2`  
+		Last Modified: Fri, 14 Feb 2025 22:06:09 GMT  
+		Size: 113.6 KB (113593 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:aa0c09bb9525d221cb92abbe35ec6e9d879a0ccb0f6c73f3b06eaedeb199536c`  
+		Last Modified: Fri, 14 Feb 2025 22:06:10 GMT  
 		Size: 20.4 KB (20421 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -571,10 +571,10 @@ $ docker pull bash@sha256:cca568c4bb8ef7b869dd800239b92958f8f01a3b4e284c3dbc97e6
 
 -	Layers:
 	-	`sha256:28bff7c0d10c76cbd3521b6ed271642ee1d10982d82e6e42b32e8e80f90a86a7`  
-		Last Modified: Wed, 08 Jan 2025 17:59:20 GMT  
+		Last Modified: Fri, 14 Feb 2025 22:06:11 GMT  
 		Size: 113.5 KB (113545 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:e7c4a62c294bd1ba5588ebbcb4f2aff77795784fc90064210848305bc52d32db`  
-		Last Modified: Wed, 08 Jan 2025 17:59:20 GMT  
+		Last Modified: Fri, 14 Feb 2025 22:06:11 GMT  
 		Size: 20.4 KB (20365 bytes)  
 		MIME: application/vnd.in-toto+json
