@@ -1725,21 +1725,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls-dane0t64/copyright`, `/usr/sha
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.8-2
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.8-2.dsc' gnutls28_3.8.8-2.dsc 3236 SHA256:b9166175cbd952f9d5ec0ee8868d49a3213f6646d64ade9416969dd4587eeb07
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.8.orig.tar.xz' gnutls28_3.8.8.orig.tar.xz 6696460 SHA256:ac4f020e583880b51380ed226e59033244bc536cad2623f2e26f5afa2939d8fb
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.8.orig.tar.xz.asc' gnutls28_3.8.8.orig.tar.xz.asc 854 SHA256:add4e5e0c1a4b5c7c870c0c0c0a328a6c579f6e1cd49577e90e26273e1b67473
-'http://deb.debian.org/debian/pool/main/g/gnutls28/gnutls28_3.8.8-2.debian.tar.xz' gnutls28_3.8.8-2.debian.tar.xz 77860 SHA256:058641644beb97899fc18558251e86ec314d2aaa8a995b96518f0ce3ef32a4e7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.8.8-2/
 
-- https://sources.debian.net/src/gnutls28/3.8.8-2/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.8.8-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.8.8-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gobject-introspection=1.82.0-4`
 
@@ -5237,20 +5229,13 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=0.40.0-2
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_0.40.0-2.dsc' rust-sequoia-sq_0.40.0-2.dsc 4171 SHA256:7caf806ba7176096534a2617a3211b422b57a3476ee4e889930a054943876614
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_0.40.0.orig.tar.gz' rust-sequoia-sq_0.40.0.orig.tar.gz 666335 SHA256:412971915f99bf37510c016713e5905f2c1e26c4a12596c732ac7237aa0a6912
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_0.40.0-2.debian.tar.xz' rust-sequoia-sq_0.40.0-2.debian.tar.xz 5264 SHA256:ef312e2e6cfde1402700d68327daf62ff301d25723db376e0b078cbbd9e18040
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sq/0.40.0-2/
 
-- https://sources.debian.net/src/rust-sequoia-sq/0.40.0-2/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sq/0.40.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sq/0.40.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rust-sequoia-sqv=1.2.1-5`
 
@@ -5263,20 +5248,13 @@ Licenses: (parsed from: `/usr/share/doc/sqv/copyright`)
 - `GPL-2`
 - `GPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sqv=1.2.1-5
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.2.1-5.dsc' rust-sequoia-sqv_1.2.1-5.dsc 2682 SHA256:b83c6cdb2d7d4483f9d9f65869f7ba2ad5a4687fa1714b925be4f67514d48128
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.2.1.orig.tar.gz' rust-sequoia-sqv_1.2.1.orig.tar.gz 56163 SHA256:824eda88393780802dd75e466d6b18c433d8ba947bd8cd6a6385f22500533f5a
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.2.1-5.debian.tar.xz' rust-sequoia-sqv_1.2.1-5.debian.tar.xz 3680 SHA256:e0f08ec497f05f7741c82d9a49467fa4c25f3c62d40abed8b1c17181b5e02138
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sqv/1.2.1-5/
 
-- https://sources.debian.net/src/rust-sequoia-sqv/1.2.1-5/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sqv/1.2.1-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sqv/1.2.1-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.9-2`
 
@@ -5501,20 +5479,13 @@ Licenses: (parsed from: `/usr/share/doc/libsysprof-capture-4-dev/copyright`)
 - `LGPL-3.0+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysprof=47.2-1
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_47.2-1.dsc' sysprof_47.2-1.dsc 3059 SHA256:eae202b47dd6f952daf3fa4a535b8ca306fd06f440f47d48692907bd6f098777
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_47.2.orig.tar.xz' sysprof_47.2.orig.tar.xz 1192172 SHA256:e4b5ede9fd978ec3f0d5a0d44d0429a6d201c362bf6cb4527319031ae462c54f
-'http://deb.debian.org/debian/pool/main/s/sysprof/sysprof_47.2-1.debian.tar.xz' sysprof_47.2-1.debian.tar.xz 16688 SHA256:b68f0621e16314d997374e16a84031c539a482021c3a65bd5f119d103f864729
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysprof/47.2-1/
 
-- https://sources.debian.net/src/sysprof/47.2-1/ (for browsing the source)
-- https://sources.debian.net/src/sysprof/47.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysprof/47.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=257.2-3`
 

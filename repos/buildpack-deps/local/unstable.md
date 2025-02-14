@@ -632,21 +632,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.11.1-1
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.11.1-1.dsc' curl_8.11.1-1.dsc 3252 SHA256:6611dcd0c91d6dc8b4363b8a4472812a3044a04cba2304c64a0d1c6d06d91069
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.11.1.orig.tar.gz' curl_8.11.1.orig.tar.gz 4169067 SHA256:a889ac9dbba3644271bd9d1302b5c22a088893719b72be3487bc3d401e5c4e80
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.11.1.orig.tar.gz.asc' curl_8.11.1.orig.tar.gz.asc 484 SHA256:d6c44df0a8e6958ef8d38fceda44f219db666b8215da6b33dc7dda81fcfc696b
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.11.1-1.debian.tar.xz' curl_8.11.1-1.debian.tar.xz 53972 SHA256:511130b8192911c22e03832a005531dd8990d9f5821640b6bac12a750d54bf33
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.11.1-1/
 
-- https://sources.debian.net/src/curl/8.11.1-1/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.11.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.11.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-8`
 
@@ -2671,20 +2663,13 @@ Licenses: (parsed from: `/usr/share/doc/libexif-dev/copyright`, `/usr/share/doc/
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libexif=0.6.24-2
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.24-2.dsc' libexif_0.6.24-2.dsc 2091 SHA256:e69c239fa14180ec280076d697e023be1373be16f2df6fdef7c4cdb02947a923
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.24.orig.tar.gz' libexif_0.6.24.orig.tar.gz 1140079 SHA256:d3fb7c47829ec4d2def39aa38f4c35a0891763448a05dbf216a329a12bf198f9
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.24-2.debian.tar.xz' libexif_0.6.24-2.debian.tar.xz 11476 SHA256:fc078816f7349e8e674f40142589bf5aed8b4ba5f5d5cbca023847046f110af8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libexif/0.6.24-2/
 
-- https://sources.debian.net/src/libexif/0.6.24-2/ (for browsing the source)
-- https://sources.debian.net/src/libexif/0.6.24-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libexif/0.6.24-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.4.6-1`
 
@@ -3177,20 +3162,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `Unlicense,`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.59.2+dfsg-1
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.59.2%2bdfsg-1.dsc' librsvg_2.59.2+dfsg-1.dsc 3046 SHA256:867e753945d271a9bf1d15fe8950d917121692dabd7d5793e50d72cc8c20db2d
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.59.2%2bdfsg.orig.tar.xz' librsvg_2.59.2+dfsg.orig.tar.xz 6637632 SHA256:d2178be04387679b4b33a1a7e6a35bcb365b25b9804e983f0673904318ee952a
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.59.2%2bdfsg-1.debian.tar.xz' librsvg_2.59.2+dfsg-1.debian.tar.xz 17809444 SHA256:8735d8a8cecc6346e9067c02d70e2b4574e55a7e6d95c49d7d758d9d810d6d6b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/librsvg/2.59.2+dfsg-1/
 
-- https://sources.debian.net/src/librsvg/2.59.2+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/librsvg/2.59.2+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/librsvg/2.59.2+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.5.5-2`
 
@@ -3282,20 +3260,13 @@ Licenses: (parsed from: `/usr/share/doc/libsepol-dev/copyright`, `/usr/share/doc
 - `LGPL-2.1+`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsepol=3.7-1
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_3.7-1.dsc' libsepol_3.7-1.dsc 2085 SHA256:d5c8df3195e58607d769d6030b4254013bf483723084a42656cfb50a38b91fff
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_3.7.orig.tar.gz' libsepol_3.7.orig.tar.gz 511487 SHA256:cd741e25244e7ef6cd934d633614131a266c3eaeab33d8bfa45e8a93b45cc901
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_3.7-1.debian.tar.xz' libsepol_3.7-1.debian.tar.xz 27632 SHA256:fe5c57d69d081d60d423185bf339aa10755eb629d38f4129dd9944be64c6991b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsepol/3.7-1/
 
-- https://sources.debian.net/src/libsepol/3.7-1/ (for browsing the source)
-- https://sources.debian.net/src/libsepol/3.7-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsepol/3.7-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsm=2:1.2.4-1`
 
@@ -4636,21 +4607,13 @@ Licenses: (parsed from: `/usr/share/doc/libssl-dev/copyright`, `/usr/share/doc/l
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.4.0-2
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.4.0-2.dsc' openssl_3.4.0-2.dsc 2808 SHA256:fd459f73fa7c01adb58afbb14ebdd51dc21aefc5567a020e1c791afedba215b6
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.4.0.orig.tar.gz' openssl_3.4.0.orig.tar.gz 18320899 SHA256:e15dda82fe2fe8139dc2ac21a36d4ca01d5313c75f99f46c4e8a27709b7294bf
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.4.0.orig.tar.gz.asc' openssl_3.4.0.orig.tar.gz.asc 833 SHA256:c1769b042904b54becc86b28cd5ff5475ed229a76c5eda5a6f5906e3fe1a3706
-'http://deb.debian.org/debian/pool/main/o/openssl/openssl_3.4.0-2.debian.tar.xz' openssl_3.4.0-2.debian.tar.xz 50444 SHA256:50ddcd7892bd93a82cbbac165c05492563395dad29d68ad259bea87021d031e4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssl/3.4.0-2/
 
-- https://sources.debian.net/src/openssl/3.4.0-2/ (for browsing the source)
-- https://sources.debian.net/src/openssl/3.4.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssl/3.4.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `p11-kit=0.25.5-3`
 
@@ -4714,21 +4677,13 @@ Licenses: (parsed from: `/usr/share/doc/libpam-modules/copyright`, `/usr/share/d
 - `LGPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pam=1.7.0-2
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.7.0-2.dsc' pam_1.7.0-2.dsc 2210 SHA256:a23cc1dfcefd59505f72d6c78cf1001b1f54dd161f906d961c8697e3e40a9b2d
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.7.0.orig.tar.xz' pam_1.7.0.orig.tar.xz 507824 SHA256:57dcd7a6b966ecd5bbd95e1d11173734691e16b68692fa59661cdae9b13b1697
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.7.0.orig.tar.xz.asc' pam_1.7.0.orig.tar.xz.asc 801 SHA256:7a8ea18ec7d9dd1f8cbf9055c32128cbca8241aa63e9fea44d56ce6f0e15e441
-'http://deb.debian.org/debian/pool/main/p/pam/pam_1.7.0-2.debian.tar.xz' pam_1.7.0-2.debian.tar.xz 132012 SHA256:a3ea5de6e35bc62da51ea2ddbf2bc214cb26da84175e9bb8e2e7b63d3849a19d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/pam/1.7.0-2/
 
-- https://sources.debian.net/src/pam/1.7.0-2/ (for browsing the source)
-- https://sources.debian.net/src/pam/1.7.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/pam/1.7.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pango1.0=1.56.1-1`
 
@@ -4994,20 +4949,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-17=17.2-1
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.2-1.dsc' postgresql-17_17.2-1.dsc 4242 SHA256:c09ed708c558cf28be0e09542f6a2fb728032b0c24c54338d65eee482ad72cd8
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.2.orig.tar.bz2' postgresql-17_17.2.orig.tar.bz2 21408880 SHA256:82ef27c0af3751695d7f64e2d963583005fbb6a0c3df63d0e4b42211d7021164
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.2-1.debian.tar.xz' postgresql-17_17.2-1.debian.tar.xz 25904 SHA256:059c2db558f667c039f7422fc97f764709f2c7f1ad50956a50afbf679fb379df
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-17/17.2-1/
 
-- https://sources.debian.net/src/postgresql-17/17.2-1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-17/17.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-17/17.2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.4-7`
 
@@ -5513,20 +5461,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.2-3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.2-3.dsc' systemd_257.2-3.dsc 8495 SHA256:94246e359047ba8dacc36feb8ecd52d2bf97fc749d294fd0e61c5543d06e6a9f
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.2.orig.tar.gz' systemd_257.2.orig.tar.gz 16189809 SHA256:7f2bc3253e4f87578132c5e433ef9ff7e8fee01d9eb5a5b7c64376d617f694d0
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.2-3.debian.tar.xz' systemd_257.2-3.debian.tar.xz 178316 SHA256:6f2c670eccacba9efe3a44330eb7f1ae5a8fe522638237d827731fa0b4804820
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257.2-3/
 
-- https://sources.debian.net/src/systemd/257.2-3/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.2-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.13-1`
 
