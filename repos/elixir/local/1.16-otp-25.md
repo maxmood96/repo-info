@@ -7220,20 +7220,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-13=13.18-0+deb11u1
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.18-0%2bdeb11u1.dsc' postgresql-13_13.18-0+deb11u1.dsc 3703 SHA256:a9baa430b851a6cf7ae090e733e5ff3594700bdc8c838489642b219cdb0b376d
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.18.orig.tar.bz2' postgresql-13_13.18.orig.tar.bz2 21687645 SHA256:ceea92abee2a8c19408d278b68de6a78b6bd3dbb4fa2d653fa7ca745d666aab1
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.18-0%2bdeb11u1.debian.tar.xz' postgresql-13_13.18-0+deb11u1.debian.tar.xz 36088 SHA256:7c339a61498fe1e068fd9514ff0bf4dd97e30c2e5ab0e3d462e3622c83dd34a9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-13/13.18-0+deb11u1/
 
-- https://sources.debian.net/src/postgresql-13/13.18-0+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-13/13.18-0+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-13/13.18-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:3.3.17-5`
 
@@ -8242,21 +8235,13 @@ Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.0-18/copyright`, 
 - `MPL-1.1`
 - `MPL-2.0`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris webkit2gtk=2.46.5-1~deb11u1
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.46.5-1%7edeb11u1.dsc' webkit2gtk_2.46.5-1~deb11u1.dsc 4085 SHA256:a2317b57e2ab7552333db6af3cefe765fd1b5797ab50cbf7f80078987309bc13
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.46.5.orig.tar.xz' webkit2gtk_2.46.5.orig.tar.xz 42898600 SHA256:bad4020bb0cfb3e740df3082c2d9cbf67cf4095596588a56aecdde6702137805
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.46.5.orig.tar.xz.asc' webkit2gtk_2.46.5.orig.tar.xz.asc 833 SHA256:3d3f572ab41f0f4e7c9fd300b8f40863cf1d501711046fb85400245b44366c90
-'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.46.5-1%7edeb11u1.debian.tar.xz' webkit2gtk_2.46.5-1~deb11u1.debian.tar.xz 91940 SHA256:039619e97a8d474ac5ecbbede71cfbccef42b7df438ae01dce886a67777fc67d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/webkit2gtk/2.46.5-1~deb11u1/
 
-- https://sources.debian.net/src/webkit2gtk/2.46.5-1~deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/webkit2gtk/2.46.5-1~deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/webkit2gtk/2.46.5-1~deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21-1+deb11u1`
 
