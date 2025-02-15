@@ -1,7 +1,7 @@
 ## `mariadb:11-noble`
 
 ```console
-$ docker pull mariadb@sha256:3944dd24218a6612521765bcc4c681e633e2399ad90c21b1ce42528014cdd01a
+$ docker pull mariadb@sha256:b81aac5a4c39467f85675eeefcf2e58d1f04219233f3525f04178d28092cb10b
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -270,68 +270,68 @@ $ docker pull mariadb@sha256:a47d911e620e648fd65b274b2f6f4b505bbb68b4f41f26789f7
 ### `mariadb:11-noble` - linux; ppc64le
 
 ```console
-$ docker pull mariadb@sha256:9bb66c89d5877da8abeccf7663f22b3c22ed18b96bd745fc6da3ff0f340c59d5
+$ docker pull mariadb@sha256:384ce8697b7e1b167ff5d161edfe241e4c1e24b163767ea4f1b2784d8d9f1307
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **135.6 MB (135595153 bytes)**  
+-	Total Size: **117.7 MB (117697179 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a7cd863ce346ee025c33bc59e05cab9a6af7dd7b1d03bd67a4015bda28dbb425`
+-	Image ID: `sha256:3b7a3e89aa24f04f4dfb097bd66580d44f6b18c720331a57bae1c5b71eee305b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["mariadbd"]`
 
 ```dockerfile
-# Thu, 21 Nov 2024 21:43:46 GMT
+# Mon, 27 Jan 2025 04:16:03 GMT
 ARG RELEASE
-# Thu, 21 Nov 2024 21:43:46 GMT
+# Mon, 27 Jan 2025 04:16:03 GMT
 ARG LAUNCHPAD_BUILD_ARCH
-# Thu, 21 Nov 2024 21:43:46 GMT
+# Mon, 27 Jan 2025 04:16:03 GMT
 LABEL org.opencontainers.image.ref.name=ubuntu
-# Thu, 21 Nov 2024 21:43:46 GMT
+# Mon, 27 Jan 2025 04:16:03 GMT
 LABEL org.opencontainers.image.version=24.04
-# Thu, 21 Nov 2024 21:43:46 GMT
+# Mon, 27 Jan 2025 04:16:07 GMT
 ADD file:8c71b040cc97f9d076a34d57cd957e6b33cdfb8f115e1ba283b674e6aad793d8 in / 
-# Thu, 21 Nov 2024 21:43:46 GMT
+# Mon, 27 Jan 2025 04:16:07 GMT
 CMD ["/bin/bash"]
-# Thu, 21 Nov 2024 21:43:46 GMT
+# Fri, 14 Feb 2025 06:55:09 GMT
 RUN groupadd -r mysql && useradd -r -g mysql mysql --home-dir /var/lib/mysql && userdel --remove ubuntu # buildkit
-# Thu, 21 Nov 2024 21:43:46 GMT
+# Fri, 14 Feb 2025 06:55:09 GMT
 ENV GOSU_VERSION=1.17
-# Thu, 21 Nov 2024 21:43:46 GMT
+# Fri, 14 Feb 2025 06:55:09 GMT
 ARG GPG_KEYS=177F4010FE56CA3336300305F1656F24C74CD1D8
-# Thu, 21 Nov 2024 21:43:46 GMT
+# Fri, 14 Feb 2025 06:55:09 GMT
 # ARGS: GPG_KEYS=177F4010FE56CA3336300305F1656F24C74CD1D8
 RUN set -eux; 	apt-get update; 	DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends 		ca-certificates 		gpg 		gpgv 		libjemalloc2 		pwgen 		tzdata 		xz-utils 		zstd ; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get install -y --no-install-recommends 		dirmngr 		gpg-agent 		wget; 	rm -rf /var/lib/apt/lists/*; 	dpkgArch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	wget -q -O /usr/local/bin/gosu "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch"; 	wget -q -O /usr/local/bin/gosu.asc "https://github.com/tianon/gosu/releases/download/$GOSU_VERSION/gosu-$dpkgArch.asc"; 	GNUPGHOME="$(mktemp -d)"; 	export GNUPGHOME; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	for key in $GPG_KEYS; do 		gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 	done; 	gpg --batch --export "$GPG_KEYS" > /etc/apt/trusted.gpg.d/mariadb.gpg; 	if command -v gpgconf >/dev/null; then 		gpgconf --kill all; 	fi; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] ||	apt-mark manual $savedAptMark >/dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Thu, 21 Nov 2024 21:43:46 GMT
+# Fri, 14 Feb 2025 06:55:09 GMT
 # ARGS: GPG_KEYS=177F4010FE56CA3336300305F1656F24C74CD1D8
 RUN mkdir /docker-entrypoint-initdb.d # buildkit
-# Thu, 21 Nov 2024 21:43:46 GMT
+# Fri, 14 Feb 2025 06:55:09 GMT
 ENV LANG=C.UTF-8
-# Thu, 21 Nov 2024 21:43:46 GMT
-LABEL org.opencontainers.image.authors=MariaDB Community org.opencontainers.image.title=MariaDB Database org.opencontainers.image.description=MariaDB Database for relational SQL org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/ org.opencontainers.image.base.name=docker.io/library/ubuntu:noble org.opencontainers.image.licenses=GPL-2.0 org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker org.opencontainers.image.vendor=MariaDB Community org.opencontainers.image.version=11.6.2 org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker
-# Thu, 21 Nov 2024 21:43:46 GMT
-ARG MARIADB_VERSION=1:11.6.2+maria~ubu2404
-# Thu, 21 Nov 2024 21:43:46 GMT
-ENV MARIADB_VERSION=1:11.6.2+maria~ubu2404
-# Thu, 21 Nov 2024 21:43:46 GMT
-ARG REPOSITORY=http://archive.mariadb.org/mariadb-11.6.2/repo/ubuntu/ noble main main/debug
-# Thu, 21 Nov 2024 21:43:46 GMT
-# ARGS: GPG_KEYS=177F4010FE56CA3336300305F1656F24C74CD1D8 MARIADB_VERSION=1:11.6.2+maria~ubu2404 REPOSITORY=http://archive.mariadb.org/mariadb-11.6.2/repo/ubuntu/ noble main main/debug
+# Fri, 14 Feb 2025 06:55:09 GMT
+LABEL org.opencontainers.image.authors=MariaDB Community org.opencontainers.image.title=MariaDB Database org.opencontainers.image.description=MariaDB Database for relational SQL org.opencontainers.image.documentation=https://hub.docker.com/_/mariadb/ org.opencontainers.image.base.name=docker.io/library/ubuntu:noble org.opencontainers.image.licenses=GPL-2.0 org.opencontainers.image.source=https://github.com/MariaDB/mariadb-docker org.opencontainers.image.vendor=MariaDB Community org.opencontainers.image.version=11.7.2 org.opencontainers.image.url=https://github.com/MariaDB/mariadb-docker
+# Fri, 14 Feb 2025 06:55:09 GMT
+ARG MARIADB_VERSION=1:11.7.2+maria~ubu2404
+# Fri, 14 Feb 2025 06:55:09 GMT
+ENV MARIADB_VERSION=1:11.7.2+maria~ubu2404
+# Fri, 14 Feb 2025 06:55:09 GMT
+ARG REPOSITORY=http://archive.mariadb.org/mariadb-11.7.2/repo/ubuntu/ noble main main/debug
+# Fri, 14 Feb 2025 06:55:09 GMT
+# ARGS: GPG_KEYS=177F4010FE56CA3336300305F1656F24C74CD1D8 MARIADB_VERSION=1:11.7.2+maria~ubu2404 REPOSITORY=http://archive.mariadb.org/mariadb-11.7.2/repo/ubuntu/ noble main main/debug
 RUN set -e;	echo "deb ${REPOSITORY}" > /etc/apt/sources.list.d/mariadb.list; 	{ 		echo 'Package: *'; 		echo 'Pin: release o=MariaDB'; 		echo 'Pin-Priority: 999'; 	} > /etc/apt/preferences.d/mariadb # buildkit
-# Thu, 21 Nov 2024 21:43:46 GMT
-# ARGS: GPG_KEYS=177F4010FE56CA3336300305F1656F24C74CD1D8 MARIADB_VERSION=1:11.6.2+maria~ubu2404 REPOSITORY=http://archive.mariadb.org/mariadb-11.6.2/repo/ubuntu/ noble main main/debug
+# Fri, 14 Feb 2025 06:55:09 GMT
+# ARGS: GPG_KEYS=177F4010FE56CA3336300305F1656F24C74CD1D8 MARIADB_VERSION=1:11.7.2+maria~ubu2404 REPOSITORY=http://archive.mariadb.org/mariadb-11.7.2/repo/ubuntu/ noble main main/debug
 RUN set -ex; 	{ 		echo "mariadb-server" mysql-server/root_password password 'unused'; 		echo "mariadb-server" mysql-server/root_password_again password 'unused'; 	} | debconf-set-selections; 	apt-get update; 	mkdir -p /var/lib/mysql/mysql ; touch /var/lib/mysql/mysql/user.frm ; 	apt-get install -y --no-install-recommends mariadb-server="$MARIADB_VERSION" mariadb-backup socat 	; 	rm -rf /var/lib/apt/lists/*; 	rm -rf /var/lib/mysql; 	mkdir -p /var/lib/mysql /run/mysqld; 	chown -R mysql:mysql /var/lib/mysql /run/mysqld; 	chmod 1777 /run/mysqld; 	find /etc/mysql/ -name '*.cnf' -print0 		| xargs -0 grep -lZE '^(bind-address|log|user\s)' 		| xargs -rt -0 sed -Ei 's/^(bind-address|log|user\s)/#&/'; 	printf "[mariadb]\nhost-cache-size=0\nskip-name-resolve\n" > /etc/mysql/mariadb.conf.d/05-skipcache.cnf; 	if [ -L /etc/mysql/my.cnf ]; then 		sed -i -e '/includedir/ {N;s/\(.*\)\n\(.*\)/\n\2\n\1/}' /etc/mysql/mariadb.cnf; 	fi # buildkit
-# Thu, 21 Nov 2024 21:43:46 GMT
+# Fri, 14 Feb 2025 06:55:09 GMT
 VOLUME [/var/lib/mysql]
-# Thu, 21 Nov 2024 21:43:46 GMT
+# Fri, 14 Feb 2025 06:55:09 GMT
 COPY healthcheck.sh /usr/local/bin/healthcheck.sh # buildkit
-# Thu, 21 Nov 2024 21:43:46 GMT
+# Fri, 14 Feb 2025 06:55:09 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Thu, 21 Nov 2024 21:43:46 GMT
+# Fri, 14 Feb 2025 06:55:09 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Thu, 21 Nov 2024 21:43:46 GMT
+# Fri, 14 Feb 2025 06:55:09 GMT
 EXPOSE map[3306/tcp:{}]
-# Thu, 21 Nov 2024 21:43:46 GMT
+# Fri, 14 Feb 2025 06:55:09 GMT
 CMD ["mariadbd"]
 ```
 
@@ -340,57 +340,57 @@ CMD ["mariadbd"]
 		Last Modified: Tue, 04 Feb 2025 07:01:00 GMT  
 		Size: 34.4 MB (34389824 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:439d3281d5f611aa457350980753108fe328b1af4f31ec8ac610ebf3e087b819`  
-		Last Modified: Tue, 04 Feb 2025 23:23:23 GMT  
-		Size: 1.3 KB (1347 bytes)  
+	-	`sha256:57bb389496bb9ad44a6b311b2cc7702ece7d85a2d524801ed69c0daa82b88f92`  
+		Last Modified: Thu, 06 Feb 2025 01:40:55 GMT  
+		Size: 1.3 KB (1342 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9073709f8a9cd57bfcde784c6a4fcb9f36094f0bbd9bdf63d80a2b4f6b30a71e`  
-		Last Modified: Tue, 04 Feb 2025 21:30:25 GMT  
-		Size: 5.9 MB (5914185 bytes)  
+	-	`sha256:232eb481c0195bd31092a70e08d5de6c9a3e59ea4f24fbfff2e46b5ede78cceb`  
+		Last Modified: Thu, 06 Feb 2025 01:40:55 GMT  
+		Size: 5.9 MB (5914651 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cd6a366827bcb88f16a1eed75bcd43b3cda70e45d8a5269a835ef7e006762231`  
-		Last Modified: Tue, 04 Feb 2025 10:40:24 GMT  
+	-	`sha256:5374606b46c050b8b7b0b53a6619aedd834eb7383cba72969c5587c483c0c4c8`  
+		Last Modified: Thu, 06 Feb 2025 01:40:58 GMT  
 		Size: 116.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7b19b6a326142ff983008f798240caf127ef5d0f7afee8fa911ee41a8a40c259`  
-		Last Modified: Tue, 04 Feb 2025 12:00:20 GMT  
-		Size: 334.0 B  
+	-	`sha256:bf652d083373aa94b919f221cc3641b11d35597969b7b007cd57a8e3a129e443`  
+		Last Modified: Sat, 15 Feb 2025 07:38:07 GMT  
+		Size: 335.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1e9414c1b09595f9255dbc6137755dcbf809de7440e4d9c3d534e415c41e8838`  
-		Last Modified: Wed, 05 Feb 2025 00:00:59 GMT  
-		Size: 95.3 MB (95276903 bytes)  
+	-	`sha256:47f4a9faa9473cde24b12d1a3906a1d033fbce5e903d477ce0683667ad9494ad`  
+		Last Modified: Sat, 15 Feb 2025 07:38:15 GMT  
+		Size: 77.4 MB (77378468 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ba2d614571e1dc4baea047a4aa1f126bcbf5e035d0157015b32dc9b79200af87`  
-		Last Modified: Tue, 04 Feb 2025 10:41:06 GMT  
+	-	`sha256:5f55519bdfacf2e4ee74adaa8ea5c5c5af100ca60560f3af93c5d0dcf61365d2`  
+		Last Modified: Sat, 15 Feb 2025 07:38:16 GMT  
 		Size: 4.0 KB (4041 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca6c1d97925e360187d995523f35e3417984d48b6272df9f77da39db32de6e2b`  
-		Last Modified: Tue, 04 Feb 2025 11:00:59 GMT  
-		Size: 8.4 KB (8403 bytes)  
+	-	`sha256:f51e396466b10d6f10a9ed2bd6eb071e1cf1319d5af6119c9f8f0a9ac6ba6c8d`  
+		Last Modified: Sat, 15 Feb 2025 07:38:16 GMT  
+		Size: 8.4 KB (8402 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `mariadb:11-noble` - unknown; unknown
 
 ```console
-$ docker pull mariadb@sha256:c6e66170bb9cca42ecf6b30d8614478a4b41fe336c4ebf955080cd90c72d4594
+$ docker pull mariadb@sha256:a0597d6d876d507fbe4730fbd8b0a6746cda32c40597b38308ed4d23db8ae49d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.1 MB (4122839 bytes)**  
+-	Total Size: **4.1 MB (4122841 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e5946ea87812ab32696b6c9120f3c330602e71b6d655593add8449fedf510feb`
+-	Image ID: `sha256:6cfb22b538ddea8dc58141a008de0d04c0d74a7a0fffea4d8ebd56d7ab426966`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:777f587ce77007eab6c4df50fd4339129e0fcc39ecb0672fe8d42eafc18c9231`  
-		Last Modified: Tue, 04 Feb 2025 21:30:28 GMT  
-		Size: 4.1 MB (4091535 bytes)  
+	-	`sha256:9234b4c3aea71d6e60fb1863befa388e7d7cf5c69cbad2d2ec121e95d88df112`  
+		Last Modified: Sat, 15 Feb 2025 07:35:38 GMT  
+		Size: 4.1 MB (4091539 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f2411b179b9788bc90b0916414c270adc49d13bc5bd90ad40de86254866591d4`  
-		Last Modified: Tue, 04 Feb 2025 13:30:26 GMT  
-		Size: 31.3 KB (31304 bytes)  
+	-	`sha256:0ab3d666255cc51e7171903e3308f0970b75c067a455213dd864dd685c4f14a1`  
+		Last Modified: Sat, 15 Feb 2025 07:35:38 GMT  
+		Size: 31.3 KB (31302 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `mariadb:11-noble` - linux; s390x
