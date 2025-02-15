@@ -1,7 +1,7 @@
 ## `archlinux:base-devel-20250209.0.306557`
 
 ```console
-$ docker pull archlinux@sha256:d35892b93859c4170d753fe7efdd98b4f38c9d4539435e9bab71d1ccc9ab0483
+$ docker pull archlinux@sha256:2e64be3bcaeb69bff00ba401cce9b26277ca29ac3f4ef661f3a31d803e96a58f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,13 +12,13 @@ $ docker pull archlinux@sha256:d35892b93859c4170d753fe7efdd98b4f38c9d4539435e9ba
 ### `archlinux:base-devel-20250209.0.306557` - linux; amd64
 
 ```console
-$ docker pull archlinux@sha256:f5e17fd8666fe0d4432ea83289ece234312368a8c5cc2c2f7a23d7c7e1abf147
+$ docker pull archlinux@sha256:e5c8d0ccd853f86c2eaa3148cd4c51062229014d80f1c8efed99993c3ed00eed
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **278.8 MB (278801050 bytes)**  
+-	Total Size: **278.8 MB (278801075 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:54f3df05114946e71bcb5db0623d86d7e7a9a1273d084c1dc1b76ab624d60324`
+-	Image ID: `sha256:261975b3eff42077ac4c418afc8197ae290e843228e6cdda4875ec84c84bb29b`
 -	Default Command: `["\/usr\/bin\/bash"]`
 
 ```dockerfile
@@ -57,31 +57,31 @@ CMD ["/usr/bin/bash"]
 		Last Modified: Mon, 10 Feb 2025 20:50:42 GMT  
 		Size: 278.8 MB (278792008 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b222395fbe2616d512cc313813a661864b31323d3f0ec9883e4943b3f7c2d37c`  
-		Last Modified: Mon, 10 Feb 2025 20:50:07 GMT  
-		Size: 9.0 KB (9042 bytes)  
+	-	`sha256:33041fa63b5c1f16df393202a8baafc5957fd71dc5714f2cf458084031584a25`  
+		Last Modified: Fri, 14 Feb 2025 23:49:31 GMT  
+		Size: 9.1 KB (9067 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `archlinux:base-devel-20250209.0.306557` - unknown; unknown
 
 ```console
-$ docker pull archlinux@sha256:8eaeda8723c8a1156cc2dee3dec8820a770bb14047abb2d16601a5a392e6ff93
+$ docker pull archlinux@sha256:18402c1595b399977631d7a471a62f3a338cfea6ef9dda2670e55f79fc00dece
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **11.9 MB (11908292 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9ae86713e6adf9e81b8380fcadb96457ded4d366f83832e85a24b15ad3443ca2`
+-	Image ID: `sha256:5d9a6b942484670819e0f1c230103efc62d510b64d984eb1d8aeb77c585a8210`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:e313ac902394ecdd87f7ed42a8194660134c93c8095d1742100c091e1607fa13`  
-		Last Modified: Tue, 11 Feb 2025 07:41:55 GMT  
+	-	`sha256:dd1cb379753c056fab3676446e4f6895da435bb22b038213636e3b54e1a04698`  
+		Last Modified: Fri, 14 Feb 2025 23:48:23 GMT  
 		Size: 11.9 MB (11896538 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:11cdd40f761b97830706c748190103ecd552bfb753aeaf7bc5c3e5873a6d4cb9`  
-		Last Modified: Tue, 11 Feb 2025 09:01:16 GMT  
+	-	`sha256:d1543f0e932a83cb097159173b2a84b2e5360ad919c82829cd5e10feb7495db4`  
+		Last Modified: Fri, 14 Feb 2025 23:48:24 GMT  
 		Size: 11.8 KB (11754 bytes)  
 		MIME: application/vnd.in-toto+json

@@ -1,7 +1,7 @@
 ## `archlinux:multilib-devel`
 
 ```console
-$ docker pull archlinux@sha256:99ef0cdee7a0a6fc5b75e0161a0df351cf2346c470ffdf441b31184c3e34aeac
+$ docker pull archlinux@sha256:bdb4a8d2bb14339e2c8d782da829b411f2bf04f328c521730f765291799195d3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,13 +12,13 @@ $ docker pull archlinux@sha256:99ef0cdee7a0a6fc5b75e0161a0df351cf2346c470ffdf441
 ### `archlinux:multilib-devel` - linux; amd64
 
 ```console
-$ docker pull archlinux@sha256:796848981fcaecd6c813511ef4ddedb760551a5e96b6733ca61a8096778b05c5
+$ docker pull archlinux@sha256:8ff14dbb10ae1f83d829a38e17b67418a08924876e686add1da9bb14f749aaf2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **328.8 MB (328815904 bytes)**  
+-	Total Size: **328.8 MB (328815877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56a708a49e93e712a9348ee8c9f4eff429a0d9c653ba4e62e3b7bfc2c0862c11`
+-	Image ID: `sha256:b51df7133cb3743c40ebd4defe13a570da07fbfa0fc243ca6fd2235fcb0868af`
 -	Default Command: `["\/usr\/bin\/bash"]`
 
 ```dockerfile
@@ -57,31 +57,31 @@ CMD ["/usr/bin/bash"]
 		Last Modified: Mon, 10 Feb 2025 21:05:30 GMT  
 		Size: 328.8 MB (328805658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6f1c112cbef5f8327a79e16e83f249659b9bc4892c80fac781df8687965444f8`  
-		Last Modified: Mon, 10 Feb 2025 21:05:19 GMT  
-		Size: 10.2 KB (10246 bytes)  
+	-	`sha256:2a65587c9714ca6ad5a8e17b56eafc9d96e8f8dc887fd8dd8bdaff6458093e02`  
+		Last Modified: Sat, 15 Feb 2025 00:06:34 GMT  
+		Size: 10.2 KB (10219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `archlinux:multilib-devel` - unknown; unknown
 
 ```console
-$ docker pull archlinux@sha256:97630311ffdd0fb5af4fcbf1829ffe91130322f79f395c811a0eaedf57524a9b
+$ docker pull archlinux@sha256:6d844b9620d501968ea96f0e065f8414a6081ce89b35694587139121b1843266
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **12.2 MB (12176864 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cf6e9545b31c45aa124916e93c02f42ed4e9e8ece4af2e8273323e2f480e983a`
+-	Image ID: `sha256:ee7e95d548c3ee53012b53084e22590c7c706efe4e92c82adc088d3cf5e6a53f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eead521916ca67a28a7a761d802c8c64c0db9d5e235fc77b77d0127f4010d077`  
-		Last Modified: Tue, 11 Feb 2025 09:01:16 GMT  
+	-	`sha256:38747e51b379c4bf7f793ca3cf267721bf9dd50f7749e8313eb31e8d2390d655`  
+		Last Modified: Fri, 14 Feb 2025 23:48:23 GMT  
 		Size: 12.2 MB (12165053 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:56fc9e7c2cc63c105ee8aa59dd68eb15d7bd136027cfac645a94c000eeb737e7`  
-		Last Modified: Mon, 10 Feb 2025 19:29:32 GMT  
+	-	`sha256:f20d15760832cc19f95649693a569c324d37db3c647121e7791593ebac964f17`  
+		Last Modified: Fri, 14 Feb 2025 23:48:23 GMT  
 		Size: 11.8 KB (11811 bytes)  
 		MIME: application/vnd.in-toto+json
