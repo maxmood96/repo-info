@@ -1,7 +1,7 @@
 ## `nats:2-scratch`
 
 ```console
-$ docker pull nats@sha256:f27a0d9b38f09cb238a86208f3198792e5d9be652f03a5627749356ec0540a7d
+$ docker pull nats@sha256:7cba778ec2250675a3495dcd36af7d431ffe1037ac3953c3080e41e43cddb35e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22,13 +22,13 @@ $ docker pull nats@sha256:f27a0d9b38f09cb238a86208f3198792e5d9be652f03a562774935
 ### `nats:2-scratch` - linux; amd64
 
 ```console
-$ docker pull nats@sha256:058993cd566f797471b784ff9d99edb6ca80266cddc0793a4c038b5ba8253bed
+$ docker pull nats@sha256:a3cce34063e2171e52961998710abcb68c0af5ce582b4bd261a0e73d991b05ea
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.9 MB (5908742 bytes)**  
+-	Total Size: **5.9 MB (5908740 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:de33d245f03832da2e962897c2672923fa7e30e6b67732edc9425679c26c8668`
+-	Image ID: `sha256:e0adf374ee8949cadaebd08ad86e992523bcb3b988aaeabd23a0f982b42962ad`
 -	Entrypoint: `["\/nats-server"]`
 -	Default Command: `["--config","nats-server.conf"]`
 
@@ -52,28 +52,28 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Fri, 24 Jan 2025 01:11:44 GMT  
 		Size: 5.9 MB (5908232 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4517354fa95edb858e5bfcbbdd9ca7bd2b67347236a01e12f3636bfa40f92e2`  
-		Last Modified: Fri, 24 Jan 2025 01:11:43 GMT  
-		Size: 510.0 B  
+	-	`sha256:809716529f1b9d64de6f836666c6a4c543cf6e9c48fc283a26ee651aecdb4999`  
+		Last Modified: Sat, 15 Feb 2025 00:56:28 GMT  
+		Size: 508.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `nats:2-scratch` - unknown; unknown
 
 ```console
-$ docker pull nats@sha256:c120f77fbe5ae80e5924880d91c1f03bb9949e80583670ff845c07b747936be9
+$ docker pull nats@sha256:0633f77705ca0fb4f0c1f0a9365c42b39cd14dc9cbdfce33ffc4c73770652dd1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **10.5 KB (10473 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e544a9a50d0e74ea1de30eb4869abd06d44e01d4782cd9ef09550c8382743eb5`
+-	Image ID: `sha256:55dbb8da0c17d4a24f1468741734648fa7e4b817d6f57c94c74a950e25f80f1c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ce6ae35819d0fc195e86fde939966eb5e6a81e8aa5725563b65ca9390ee16207`  
-		Last Modified: Fri, 24 Jan 2025 01:11:43 GMT  
+	-	`sha256:983b8962d9613c7d12384470fec9ffc9324734f010ef39b6edb64a855226f206`  
+		Last Modified: Sat, 15 Feb 2025 00:56:17 GMT  
 		Size: 10.5 KB (10473 bytes)  
 		MIME: application/vnd.in-toto+json
 
