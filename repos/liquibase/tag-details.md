@@ -168,7 +168,7 @@ $ docker pull liquibase@sha256:f6f6ff72ffbfe813c030489fa1958c8d0d9338103ec35b700
 		Size: 3.8 MB (3751335 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8f3bc10c9eef8e444be0b79a07db2c54287551e3bd230dd8b57801464956f74a`  
-		Last Modified: Tue, 04 Feb 2025 05:18:24 GMT  
+		Last Modified: Sat, 15 Feb 2025 07:24:54 GMT  
 		Size: 24.2 KB (24207 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -722,7 +722,7 @@ $ docker pull liquibase@sha256:f6f6ff72ffbfe813c030489fa1958c8d0d9338103ec35b700
 		Size: 3.8 MB (3751335 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8f3bc10c9eef8e444be0b79a07db2c54287551e3bd230dd8b57801464956f74a`  
-		Last Modified: Tue, 04 Feb 2025 05:18:24 GMT  
+		Last Modified: Sat, 15 Feb 2025 07:24:54 GMT  
 		Size: 24.2 KB (24207 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1517,7 +1517,7 @@ $ docker pull liquibase@sha256:f6f6ff72ffbfe813c030489fa1958c8d0d9338103ec35b700
 		Size: 3.8 MB (3751335 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:8f3bc10c9eef8e444be0b79a07db2c54287551e3bd230dd8b57801464956f74a`  
-		Last Modified: Tue, 04 Feb 2025 05:18:24 GMT  
+		Last Modified: Sat, 15 Feb 2025 07:24:54 GMT  
 		Size: 24.2 KB (24207 bytes)  
 		MIME: application/vnd.in-toto+json
 
