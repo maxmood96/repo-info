@@ -13,7 +13,7 @@
 ## `eggdrop:1.10`
 
 ```console
-$ docker pull eggdrop@sha256:7407067c6e4c960f8e9241883771723f37127d87a4fafbf9a8328eeb0eca39a6
+$ docker pull eggdrop@sha256:538cb8a3a26d486dbd78ebe4d1ab370e70973a1787fe56023aa1a5d57af318ab
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -232,19 +232,19 @@ $ docker pull eggdrop@sha256:f54b495c9c22b0995def5f43ca925e63fd4b5854c332b06affb
 ### `eggdrop:1.10` - linux; arm64 variant v8
 
 ```console
-$ docker pull eggdrop@sha256:1e3e94175c6136b2956448a704ce185695b7ab4729803be8e617363dcfd848c0
+$ docker pull eggdrop@sha256:4035c5598844741674c04c76c922d8a7af24752fbc6788e8e9e6fbf59dd1b1d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.2 MB (18162740 bytes)**  
+-	Total Size: **18.2 MB (18164152 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9c2704a4b05e703b2b23b81be75bf14fe7a146b79e8021878d3b411e8b68b8e`
+-	Image ID: `sha256:d7eb6d38e506b0c3ce3f15e5c7567ccad8fdff392d00179c87d4b2cc101445ef`
 -	Entrypoint: `["\/home\/eggdrop\/eggdrop\/entrypoint.sh"]`
 -	Default Command: `["eggdrop.conf"]`
 
 ```dockerfile
 # Sun, 05 Jan 2025 16:36:07 GMT
-ADD alpine-minirootfs-3.20.5-aarch64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.6-aarch64.tar.gz / # buildkit
 # Sun, 05 Jan 2025 16:36:07 GMT
 CMD ["/bin/sh"]
 # Sun, 05 Jan 2025 16:36:07 GMT
@@ -280,63 +280,63 @@ CMD ["eggdrop.conf"]
 ```
 
 -	Layers:
-	-	`sha256:0152682790bba2052e0b7dc52872083c01ea53c598fe87e3fe3eab5f9d4228cb`  
-		Last Modified: Tue, 14 Jan 2025 20:33:00 GMT  
-		Size: 4.1 MB (4090769 bytes)  
+	-	`sha256:94e9d8af22013aabf0edcaf42950c88b0a1350c3a9ce076d61b98a535a673dd9`  
+		Last Modified: Fri, 14 Feb 2025 14:35:45 GMT  
+		Size: 4.1 MB (4091165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3dc5771b4cb21ae2a2bab536d6a359970cd3a34e970a8a0be98e54d192f0664`  
-		Last Modified: Wed, 08 Jan 2025 18:27:31 GMT  
-		Size: 967.0 B  
+	-	`sha256:2e4f5e522137cc417a3f98ddcfca8b939a1bde2f1bfa06284389e632bd47f3dc`  
+		Last Modified: Fri, 14 Feb 2025 19:40:54 GMT  
+		Size: 962.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8917a57a55679bb3082cea769355873fc8ae45ab8caf5e990029718b232ebe0c`  
-		Last Modified: Wed, 08 Jan 2025 18:27:31 GMT  
-		Size: 1.2 MB (1210974 bytes)  
+	-	`sha256:b7c5632ada7a032e4a40a385ac269d30d344dd48f333fa9490a2d9fddf33be97`  
+		Last Modified: Fri, 14 Feb 2025 19:40:55 GMT  
+		Size: 1.2 MB (1211974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c00fc1a13bfd6d68eac9dd7761eac4c9317710affb065542d15c60aa69086a0a`  
-		Last Modified: Wed, 15 Jan 2025 15:18:49 GMT  
-		Size: 12.9 MB (12856924 bytes)  
+	-	`sha256:16738349d7ac4181dbc287f636b71089e230b7b39a10bc59dbd3c275941d9b59`  
+		Last Modified: Fri, 14 Feb 2025 19:40:55 GMT  
+		Size: 12.9 MB (12856941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46884e96140c161c4efa5d4cab995e341b9592400c3db5132d42137071b8da65`  
-		Last Modified: Wed, 08 Jan 2025 18:33:29 GMT  
-		Size: 1.9 KB (1949 bytes)  
+	-	`sha256:c3b878c75135710003b9e72ef4b408ab2f3c4ededfff0cf034a9351b9c3fdf74`  
+		Last Modified: Fri, 14 Feb 2025 19:40:55 GMT  
+		Size: 2.0 KB (1952 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16b7d440051ff64a186a5311fc066136cb5ebe2e2a06cd80619f0e966f75f949`  
-		Last Modified: Wed, 15 Jan 2025 15:18:48 GMT  
-		Size: 1.1 KB (1125 bytes)  
+	-	`sha256:d0d1412b27a55491a2489826aa90d806d17e53e4427a7f51f03086ebb8dd9304`  
+		Last Modified: Fri, 14 Feb 2025 19:40:55 GMT  
+		Size: 1.1 KB (1126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eggdrop:1.10` - unknown; unknown
 
 ```console
-$ docker pull eggdrop@sha256:2d3191ee6478001199b48d737e375c8b2c545afd95c27da9f3811e7c62a02069
+$ docker pull eggdrop@sha256:7f123e51f800694ec3f3d2c2c46c6b1223181862a3c9b03ff4ed5fed4e051dec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.7 KB (157725 bytes)**  
+-	Total Size: **157.7 KB (157724 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9fcd7346d6d369651db6daa73a39ff635ebdb30d0ab64e80e7b5c5376a41a6f`
+-	Image ID: `sha256:28c175b098b6ebbacf38438e2d9c1d4f6c6721baea7fb22b24ce757f60b5cc8f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cd130b0889db81d55044ee726aef57927b6ecd401b41b4a8d123884204ae76b5`  
-		Last Modified: Fri, 14 Feb 2025 21:30:23 GMT  
+	-	`sha256:f4df0395fc7c5af9220eb15a11239d51fa69940e9ae3747f5f630e9f46edbbbc`  
+		Last Modified: Sat, 15 Feb 2025 00:30:43 GMT  
 		Size: 138.8 KB (138820 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:33b175d71afcc8d14c978a6331b8d3e56ea315b810c7207d64a01644920795c0`  
-		Last Modified: Fri, 14 Feb 2025 21:30:24 GMT  
-		Size: 18.9 KB (18905 bytes)  
+	-	`sha256:e6f7123b133f1bbd79f1bb1a494afff036ed9f5373aa8f7dc72fa235be2e2f6d`  
+		Last Modified: Sat, 15 Feb 2025 00:30:43 GMT  
+		Size: 18.9 KB (18904 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `eggdrop:1.10.0`
 
 ```console
-$ docker pull eggdrop@sha256:7407067c6e4c960f8e9241883771723f37127d87a4fafbf9a8328eeb0eca39a6
+$ docker pull eggdrop@sha256:538cb8a3a26d486dbd78ebe4d1ab370e70973a1787fe56023aa1a5d57af318ab
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -555,19 +555,19 @@ $ docker pull eggdrop@sha256:f54b495c9c22b0995def5f43ca925e63fd4b5854c332b06affb
 ### `eggdrop:1.10.0` - linux; arm64 variant v8
 
 ```console
-$ docker pull eggdrop@sha256:1e3e94175c6136b2956448a704ce185695b7ab4729803be8e617363dcfd848c0
+$ docker pull eggdrop@sha256:4035c5598844741674c04c76c922d8a7af24752fbc6788e8e9e6fbf59dd1b1d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.2 MB (18162740 bytes)**  
+-	Total Size: **18.2 MB (18164152 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9c2704a4b05e703b2b23b81be75bf14fe7a146b79e8021878d3b411e8b68b8e`
+-	Image ID: `sha256:d7eb6d38e506b0c3ce3f15e5c7567ccad8fdff392d00179c87d4b2cc101445ef`
 -	Entrypoint: `["\/home\/eggdrop\/eggdrop\/entrypoint.sh"]`
 -	Default Command: `["eggdrop.conf"]`
 
 ```dockerfile
 # Sun, 05 Jan 2025 16:36:07 GMT
-ADD alpine-minirootfs-3.20.5-aarch64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.6-aarch64.tar.gz / # buildkit
 # Sun, 05 Jan 2025 16:36:07 GMT
 CMD ["/bin/sh"]
 # Sun, 05 Jan 2025 16:36:07 GMT
@@ -603,63 +603,63 @@ CMD ["eggdrop.conf"]
 ```
 
 -	Layers:
-	-	`sha256:0152682790bba2052e0b7dc52872083c01ea53c598fe87e3fe3eab5f9d4228cb`  
-		Last Modified: Tue, 14 Jan 2025 20:33:00 GMT  
-		Size: 4.1 MB (4090769 bytes)  
+	-	`sha256:94e9d8af22013aabf0edcaf42950c88b0a1350c3a9ce076d61b98a535a673dd9`  
+		Last Modified: Fri, 14 Feb 2025 14:35:45 GMT  
+		Size: 4.1 MB (4091165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3dc5771b4cb21ae2a2bab536d6a359970cd3a34e970a8a0be98e54d192f0664`  
-		Last Modified: Wed, 08 Jan 2025 18:27:31 GMT  
-		Size: 967.0 B  
+	-	`sha256:2e4f5e522137cc417a3f98ddcfca8b939a1bde2f1bfa06284389e632bd47f3dc`  
+		Last Modified: Fri, 14 Feb 2025 19:40:54 GMT  
+		Size: 962.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8917a57a55679bb3082cea769355873fc8ae45ab8caf5e990029718b232ebe0c`  
-		Last Modified: Wed, 08 Jan 2025 18:27:31 GMT  
-		Size: 1.2 MB (1210974 bytes)  
+	-	`sha256:b7c5632ada7a032e4a40a385ac269d30d344dd48f333fa9490a2d9fddf33be97`  
+		Last Modified: Fri, 14 Feb 2025 19:40:55 GMT  
+		Size: 1.2 MB (1211974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c00fc1a13bfd6d68eac9dd7761eac4c9317710affb065542d15c60aa69086a0a`  
-		Last Modified: Wed, 15 Jan 2025 15:18:49 GMT  
-		Size: 12.9 MB (12856924 bytes)  
+	-	`sha256:16738349d7ac4181dbc287f636b71089e230b7b39a10bc59dbd3c275941d9b59`  
+		Last Modified: Fri, 14 Feb 2025 19:40:55 GMT  
+		Size: 12.9 MB (12856941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46884e96140c161c4efa5d4cab995e341b9592400c3db5132d42137071b8da65`  
-		Last Modified: Wed, 08 Jan 2025 18:33:29 GMT  
-		Size: 1.9 KB (1949 bytes)  
+	-	`sha256:c3b878c75135710003b9e72ef4b408ab2f3c4ededfff0cf034a9351b9c3fdf74`  
+		Last Modified: Fri, 14 Feb 2025 19:40:55 GMT  
+		Size: 2.0 KB (1952 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16b7d440051ff64a186a5311fc066136cb5ebe2e2a06cd80619f0e966f75f949`  
-		Last Modified: Wed, 15 Jan 2025 15:18:48 GMT  
-		Size: 1.1 KB (1125 bytes)  
+	-	`sha256:d0d1412b27a55491a2489826aa90d806d17e53e4427a7f51f03086ebb8dd9304`  
+		Last Modified: Fri, 14 Feb 2025 19:40:55 GMT  
+		Size: 1.1 KB (1126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eggdrop:1.10.0` - unknown; unknown
 
 ```console
-$ docker pull eggdrop@sha256:2d3191ee6478001199b48d737e375c8b2c545afd95c27da9f3811e7c62a02069
+$ docker pull eggdrop@sha256:7f123e51f800694ec3f3d2c2c46c6b1223181862a3c9b03ff4ed5fed4e051dec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.7 KB (157725 bytes)**  
+-	Total Size: **157.7 KB (157724 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9fcd7346d6d369651db6daa73a39ff635ebdb30d0ab64e80e7b5c5376a41a6f`
+-	Image ID: `sha256:28c175b098b6ebbacf38438e2d9c1d4f6c6721baea7fb22b24ce757f60b5cc8f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cd130b0889db81d55044ee726aef57927b6ecd401b41b4a8d123884204ae76b5`  
-		Last Modified: Fri, 14 Feb 2025 21:30:23 GMT  
+	-	`sha256:f4df0395fc7c5af9220eb15a11239d51fa69940e9ae3747f5f630e9f46edbbbc`  
+		Last Modified: Sat, 15 Feb 2025 00:30:43 GMT  
 		Size: 138.8 KB (138820 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:33b175d71afcc8d14c978a6331b8d3e56ea315b810c7207d64a01644920795c0`  
-		Last Modified: Fri, 14 Feb 2025 21:30:24 GMT  
-		Size: 18.9 KB (18905 bytes)  
+	-	`sha256:e6f7123b133f1bbd79f1bb1a494afff036ed9f5373aa8f7dc72fa235be2e2f6d`  
+		Last Modified: Sat, 15 Feb 2025 00:30:43 GMT  
+		Size: 18.9 KB (18904 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `eggdrop:1.9`
 
 ```console
-$ docker pull eggdrop@sha256:34cf1b9d64d52a0075276dd6235d40b32843f8201e24f5184401d140185f8f3d
+$ docker pull eggdrop@sha256:972e5d56ee2deff8ddbf3c771725c066d58786819fc5b4244b58ee5e69f71aec
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -894,19 +894,19 @@ $ docker pull eggdrop@sha256:2186239d930b0f7aba7d62f3ccf5d7b1d09ca043c6670ec8d83
 ### `eggdrop:1.9` - linux; arm64 variant v8
 
 ```console
-$ docker pull eggdrop@sha256:5610f135bd127953fe6f706d4439d556429d00fdb160332bb2c1318f29e1d85b
+$ docker pull eggdrop@sha256:71221b12a34f4afd052dec7a0ba6bac00f11d8f8d6d8b416bc6ab387a9eba32e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.4 MB (12412480 bytes)**  
+-	Total Size: **12.4 MB (12413682 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ce64ec01302097cc50a0deeaca22ed8dd142866d945e7e7dbe6f3cbdb9971630`
+-	Image ID: `sha256:06391f677a7f07b412e55209a4b0b3d0d9171d84baaae69193242fac6e5b9e78`
 -	Entrypoint: `["\/home\/eggdrop\/eggdrop\/entrypoint.sh"]`
 -	Default Command: `["eggdrop.conf"]`
 
 ```dockerfile
 # Thu, 08 Aug 2024 15:14:19 GMT
-ADD alpine-minirootfs-3.19.6-aarch64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.19.7-aarch64.tar.gz / # buildkit
 # Thu, 08 Aug 2024 15:14:19 GMT
 CMD ["/bin/sh"]
 # Thu, 08 Aug 2024 15:14:19 GMT
@@ -946,67 +946,67 @@ CMD ["eggdrop.conf"]
 ```
 
 -	Layers:
-	-	`sha256:88b83b407e415cb5cb78776f0e83bf403b89f77eb02721ce6a3cbf1eba723438`  
-		Last Modified: Tue, 14 Jan 2025 20:33:05 GMT  
-		Size: 3.4 MB (3360532 bytes)  
+	-	`sha256:d13a3fff434d56c3504596695435266be8d07061a80359aa09366eea2e094aa0`  
+		Last Modified: Fri, 14 Feb 2025 14:31:17 GMT  
+		Size: 3.4 MB (3361424 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c47bfaca725747041c04ef1167aa50d2f257273f3cc6611b25e3ebce979c3f1d`  
-		Last Modified: Wed, 08 Jan 2025 18:31:15 GMT  
-		Size: 1.2 KB (1243 bytes)  
+	-	`sha256:8a5e405d1b1d32ec2ea3cd7c4eaa746a0ad1a08bb9cb89ea1426833c906bc905`  
+		Last Modified: Fri, 14 Feb 2025 19:38:36 GMT  
+		Size: 1.2 KB (1245 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1b59e2be77d1625e509771c4af6bdadd99bc0cdddd655f66b087b0699064c56`  
-		Last Modified: Wed, 08 Jan 2025 18:31:15 GMT  
-		Size: 11.4 KB (11357 bytes)  
+	-	`sha256:922022d41504f6d960abeb7ac90ea0f3165f03620c4c50ef7e69f5251ab4482c`  
+		Last Modified: Fri, 14 Feb 2025 19:38:36 GMT  
+		Size: 11.3 KB (11349 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97fd549be4e37dd227f8730272a4cbd1503a4af2d47d7144f1efa5d054ee67f6`  
-		Last Modified: Mon, 10 Feb 2025 20:28:21 GMT  
-		Size: 3.0 MB (3020982 bytes)  
+	-	`sha256:63bb052d2efd871a6ab605c73a15f3623aaf5f0d395cef1b8e04656e75c676dd`  
+		Last Modified: Fri, 14 Feb 2025 19:38:36 GMT  
+		Size: 3.0 MB (3021436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f72131c69e4a90397290762eb3291cc6c2f161f1746cebadb084bc184cde44b5`  
-		Last Modified: Mon, 10 Feb 2025 20:28:21 GMT  
-		Size: 6.0 MB (6015801 bytes)  
+	-	`sha256:6ee30b4ce5dc6de9512591fabfaa6761986b5e4a4d4219c00ff83badbaaef567`  
+		Last Modified: Fri, 14 Feb 2025 19:38:36 GMT  
+		Size: 6.0 MB (6015665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a474e53b7ce1a6907eb3e8b3d75b1603467ea01bc958acdbf1947535c7178830`  
-		Last Modified: Mon, 10 Feb 2025 20:28:21 GMT  
-		Size: 1.8 KB (1833 bytes)  
+	-	`sha256:671c7b229d78ea9859fb04eff273d89b99dc0df7ecad02c39985ba7bc84071a9`  
+		Last Modified: Fri, 14 Feb 2025 19:38:37 GMT  
+		Size: 1.8 KB (1832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15803245b4e7d441711dd06f9c265cb3f27ed0d26dddb5254306ecc0bd5bf7dc`  
-		Last Modified: Wed, 08 Jan 2025 18:31:16 GMT  
-		Size: 700.0 B  
+	-	`sha256:bc3f1cce52d7fa191ec3d160b9fc04bc18f59a5387a5208e966728c4960df1a0`  
+		Last Modified: Fri, 14 Feb 2025 19:38:37 GMT  
+		Size: 699.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eggdrop:1.9` - unknown; unknown
 
 ```console
-$ docker pull eggdrop@sha256:a8acb84e8b09b9b4d0008e2467ec6f5f7cc04f76a04c606c01e1bfc012eab269
+$ docker pull eggdrop@sha256:9aa4cfa9ef03794d00ac4a43ad76be0ea5db78c20d8245434122fc66826bc1fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **1.1 MB (1062695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:976f97d274b1fe513b3cef4b93d39c80bcf6740e70e869607b027a829db71f69`
+-	Image ID: `sha256:45cd0dd11840b8e339b7cb63b521dece5b2c27e6f454bbbef40a4c5caa6f62c8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4c082c9c08d3e26d2c5ff19030c9c387b45af131547bc357d6afe7dd833e2964`  
-		Last Modified: Fri, 14 Feb 2025 21:30:33 GMT  
+	-	`sha256:40c72dd854d99c91ef692d59d3d96dc7b6c0334a217cf2597910c95bf21cce76`  
+		Last Modified: Sat, 15 Feb 2025 00:30:50 GMT  
 		Size: 1.0 MB (1043214 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6c04cf3a6c835d8c3f0e3177b391c107a8e16a312d8df8a54f59702ebcc0e64a`  
-		Last Modified: Fri, 14 Feb 2025 21:30:33 GMT  
+	-	`sha256:1f37e6ae2e1433c7e4c1faf9c13712dce853de3b0db13bae21736ed8aedea79c`  
+		Last Modified: Sat, 15 Feb 2025 00:30:50 GMT  
 		Size: 19.5 KB (19481 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `eggdrop:1.9.5`
 
 ```console
-$ docker pull eggdrop@sha256:34cf1b9d64d52a0075276dd6235d40b32843f8201e24f5184401d140185f8f3d
+$ docker pull eggdrop@sha256:972e5d56ee2deff8ddbf3c771725c066d58786819fc5b4244b58ee5e69f71aec
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1241,19 +1241,19 @@ $ docker pull eggdrop@sha256:2186239d930b0f7aba7d62f3ccf5d7b1d09ca043c6670ec8d83
 ### `eggdrop:1.9.5` - linux; arm64 variant v8
 
 ```console
-$ docker pull eggdrop@sha256:5610f135bd127953fe6f706d4439d556429d00fdb160332bb2c1318f29e1d85b
+$ docker pull eggdrop@sha256:71221b12a34f4afd052dec7a0ba6bac00f11d8f8d6d8b416bc6ab387a9eba32e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.4 MB (12412480 bytes)**  
+-	Total Size: **12.4 MB (12413682 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ce64ec01302097cc50a0deeaca22ed8dd142866d945e7e7dbe6f3cbdb9971630`
+-	Image ID: `sha256:06391f677a7f07b412e55209a4b0b3d0d9171d84baaae69193242fac6e5b9e78`
 -	Entrypoint: `["\/home\/eggdrop\/eggdrop\/entrypoint.sh"]`
 -	Default Command: `["eggdrop.conf"]`
 
 ```dockerfile
 # Thu, 08 Aug 2024 15:14:19 GMT
-ADD alpine-minirootfs-3.19.6-aarch64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.19.7-aarch64.tar.gz / # buildkit
 # Thu, 08 Aug 2024 15:14:19 GMT
 CMD ["/bin/sh"]
 # Thu, 08 Aug 2024 15:14:19 GMT
@@ -1293,67 +1293,67 @@ CMD ["eggdrop.conf"]
 ```
 
 -	Layers:
-	-	`sha256:88b83b407e415cb5cb78776f0e83bf403b89f77eb02721ce6a3cbf1eba723438`  
-		Last Modified: Tue, 14 Jan 2025 20:33:05 GMT  
-		Size: 3.4 MB (3360532 bytes)  
+	-	`sha256:d13a3fff434d56c3504596695435266be8d07061a80359aa09366eea2e094aa0`  
+		Last Modified: Fri, 14 Feb 2025 14:31:17 GMT  
+		Size: 3.4 MB (3361424 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c47bfaca725747041c04ef1167aa50d2f257273f3cc6611b25e3ebce979c3f1d`  
-		Last Modified: Wed, 08 Jan 2025 18:31:15 GMT  
-		Size: 1.2 KB (1243 bytes)  
+	-	`sha256:8a5e405d1b1d32ec2ea3cd7c4eaa746a0ad1a08bb9cb89ea1426833c906bc905`  
+		Last Modified: Fri, 14 Feb 2025 19:38:36 GMT  
+		Size: 1.2 KB (1245 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1b59e2be77d1625e509771c4af6bdadd99bc0cdddd655f66b087b0699064c56`  
-		Last Modified: Wed, 08 Jan 2025 18:31:15 GMT  
-		Size: 11.4 KB (11357 bytes)  
+	-	`sha256:922022d41504f6d960abeb7ac90ea0f3165f03620c4c50ef7e69f5251ab4482c`  
+		Last Modified: Fri, 14 Feb 2025 19:38:36 GMT  
+		Size: 11.3 KB (11349 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97fd549be4e37dd227f8730272a4cbd1503a4af2d47d7144f1efa5d054ee67f6`  
-		Last Modified: Mon, 10 Feb 2025 20:28:21 GMT  
-		Size: 3.0 MB (3020982 bytes)  
+	-	`sha256:63bb052d2efd871a6ab605c73a15f3623aaf5f0d395cef1b8e04656e75c676dd`  
+		Last Modified: Fri, 14 Feb 2025 19:38:36 GMT  
+		Size: 3.0 MB (3021436 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f72131c69e4a90397290762eb3291cc6c2f161f1746cebadb084bc184cde44b5`  
-		Last Modified: Mon, 10 Feb 2025 20:28:21 GMT  
-		Size: 6.0 MB (6015801 bytes)  
+	-	`sha256:6ee30b4ce5dc6de9512591fabfaa6761986b5e4a4d4219c00ff83badbaaef567`  
+		Last Modified: Fri, 14 Feb 2025 19:38:36 GMT  
+		Size: 6.0 MB (6015665 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a474e53b7ce1a6907eb3e8b3d75b1603467ea01bc958acdbf1947535c7178830`  
-		Last Modified: Mon, 10 Feb 2025 20:28:21 GMT  
-		Size: 1.8 KB (1833 bytes)  
+	-	`sha256:671c7b229d78ea9859fb04eff273d89b99dc0df7ecad02c39985ba7bc84071a9`  
+		Last Modified: Fri, 14 Feb 2025 19:38:37 GMT  
+		Size: 1.8 KB (1832 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15803245b4e7d441711dd06f9c265cb3f27ed0d26dddb5254306ecc0bd5bf7dc`  
-		Last Modified: Wed, 08 Jan 2025 18:31:16 GMT  
-		Size: 700.0 B  
+	-	`sha256:bc3f1cce52d7fa191ec3d160b9fc04bc18f59a5387a5208e966728c4960df1a0`  
+		Last Modified: Fri, 14 Feb 2025 19:38:37 GMT  
+		Size: 699.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eggdrop:1.9.5` - unknown; unknown
 
 ```console
-$ docker pull eggdrop@sha256:a8acb84e8b09b9b4d0008e2467ec6f5f7cc04f76a04c606c01e1bfc012eab269
+$ docker pull eggdrop@sha256:9aa4cfa9ef03794d00ac4a43ad76be0ea5db78c20d8245434122fc66826bc1fc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **1.1 MB (1062695 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:976f97d274b1fe513b3cef4b93d39c80bcf6740e70e869607b027a829db71f69`
+-	Image ID: `sha256:45cd0dd11840b8e339b7cb63b521dece5b2c27e6f454bbbef40a4c5caa6f62c8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4c082c9c08d3e26d2c5ff19030c9c387b45af131547bc357d6afe7dd833e2964`  
-		Last Modified: Fri, 14 Feb 2025 21:30:33 GMT  
+	-	`sha256:40c72dd854d99c91ef692d59d3d96dc7b6c0334a217cf2597910c95bf21cce76`  
+		Last Modified: Sat, 15 Feb 2025 00:30:50 GMT  
 		Size: 1.0 MB (1043214 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:6c04cf3a6c835d8c3f0e3177b391c107a8e16a312d8df8a54f59702ebcc0e64a`  
-		Last Modified: Fri, 14 Feb 2025 21:30:33 GMT  
+	-	`sha256:1f37e6ae2e1433c7e4c1faf9c13712dce853de3b0db13bae21736ed8aedea79c`  
+		Last Modified: Sat, 15 Feb 2025 00:30:50 GMT  
 		Size: 19.5 KB (19481 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `eggdrop:develop`
 
 ```console
-$ docker pull eggdrop@sha256:6bfd8ca16e9defbca2b9efc787f79f75580661ebaf77454a0c948d09ed0e526e
+$ docker pull eggdrop@sha256:a025c1e2e7a52e3169d23f1cebea3e5670243149527fee7be160778cdb63f886
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1580,20 +1580,20 @@ $ docker pull eggdrop@sha256:71f90bc44a6ee8c3667e23c0a9c59706e3ddd5344c59ea566e9
 ### `eggdrop:develop` - linux; arm64 variant v8
 
 ```console
-$ docker pull eggdrop@sha256:50d1d13c591a6216d72854f73613b558524d8bafc2546b227efbda6676ea0f30
+$ docker pull eggdrop@sha256:edca286b7eeca981b0c6712bf0b88751668801c23ce50e0808a5d8ffe3895b49
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **13.2 MB (13234211 bytes)**  
+-	Total Size: **13.2 MB (13235872 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6fee526bbe500fb6844da3a7e43ee8483a0177f94d0e2d9b70b71bdc43fe4f59`
+-	Image ID: `sha256:2090c62b3a579a8265d6361edc8154f92b6f0763e0dc014efecc85f9904e04b8`
 -	Entrypoint: `["\/home\/eggdrop\/eggdrop\/entrypoint.sh"]`
 -	Default Command: `["eggdrop.conf"]`
 
 ```dockerfile
-# Wed, 08 Jan 2025 12:07:30 GMT
-ADD alpine-minirootfs-3.21.2-aarch64.tar.gz / # buildkit
-# Wed, 08 Jan 2025 12:07:30 GMT
+# Mon, 03 Feb 2025 02:59:38 GMT
+ADD alpine-minirootfs-3.21.3-aarch64.tar.gz / # buildkit
+# Mon, 03 Feb 2025 02:59:38 GMT
 CMD ["/bin/sh"]
 # Mon, 03 Feb 2025 02:59:38 GMT
 LABEL org.opencontainers.image.authors=Geo Van O <geo@eggheads.org> org.opencontainers.image.url=https://www.eggheads.org
@@ -1632,63 +1632,63 @@ CMD ["eggdrop.conf"]
 ```
 
 -	Layers:
-	-	`sha256:52f827f723504aa3325bb5a54247f0dc4b92bb72569525bc951532c4ef679bd4`  
-		Last Modified: Tue, 14 Jan 2025 20:33:00 GMT  
-		Size: 4.0 MB (3992359 bytes)  
+	-	`sha256:6e771e15690e2fabf2332d3a3b744495411d6e0b00b2aea64419b58b0066cf81`  
+		Last Modified: Fri, 14 Feb 2025 14:37:30 GMT  
+		Size: 4.0 MB (3993029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c51e44dcc35225de03a01a04dd3e872ead2ffb431dc6ea6c1ba4642baad081cb`  
-		Last Modified: Mon, 03 Feb 2025 21:31:20 GMT  
-		Size: 965.0 B  
+	-	`sha256:f437ca58399a638057c62b2fec6ea27022c6ba14ca6b1e748e425dd004369d77`  
+		Last Modified: Fri, 14 Feb 2025 19:34:48 GMT  
+		Size: 957.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:374bceaeb5647a8e79c93eb68141d61aef47d1ec39c4b5e070cbc625038eb685`  
-		Last Modified: Sun, 09 Feb 2025 00:50:17 GMT  
-		Size: 1.2 MB (1169751 bytes)  
+	-	`sha256:7f5ff23854b2cb7cc2af9ed9376082ad4ed0c2ffc31b68afedaea46db187d56c`  
+		Last Modified: Fri, 14 Feb 2025 19:34:48 GMT  
+		Size: 1.2 MB (1171028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67d19e42b835cfdd5d7e7d74a70e38e8da5b9cf7d88f72c2abc258b9bf27ffbf`  
-		Last Modified: Sun, 09 Feb 2025 00:50:20 GMT  
-		Size: 8.1 MB (8068017 bytes)  
+	-	`sha256:958816378edfde5f40f73c6751957a2add2a47d5aced7436d57df71e6e356071`  
+		Last Modified: Fri, 14 Feb 2025 19:34:48 GMT  
+		Size: 8.1 MB (8067741 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:891218d2ab450d92507655dc2bb8596d02036d1d381bab3f4a91c9c7ed164e77`  
-		Last Modified: Mon, 03 Feb 2025 21:31:20 GMT  
-		Size: 2.0 KB (1965 bytes)  
+	-	`sha256:37103dd71102c1a0e5547fae2b66c5c50d5b2ca80e2fbfce46a4fdfdd5ac5643`  
+		Last Modified: Fri, 14 Feb 2025 19:34:48 GMT  
+		Size: 2.0 KB (1964 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:481bb921d265f236b4768010107ea10865418f0cc106017acc03c6d2dc445352`  
-		Last Modified: Sun, 09 Feb 2025 00:50:21 GMT  
-		Size: 1.1 KB (1122 bytes)  
+	-	`sha256:0f8f56221f305640dc31f7b757db907f0d30c46c55af6451444bc6ffeb233b3b`  
+		Last Modified: Fri, 14 Feb 2025 19:34:49 GMT  
+		Size: 1.1 KB (1121 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eggdrop:develop` - unknown; unknown
 
 ```console
-$ docker pull eggdrop@sha256:ef72f33e2126e4aa7cd68ce36a068846df8f098681e61771ce8762068d97bc3d
+$ docker pull eggdrop@sha256:eea327f80f4be3a4bd0b35dbedac5a7e2df6b2e5fa651bc34bdb8215b986fa10
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **158.1 KB (158116 bytes)**  
+-	Total Size: **158.1 KB (158122 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5a5b370b58af939337011efb63acac525614c4b3b8864b23af1462e04fea6edc`
+-	Image ID: `sha256:7406f597f7c0749d07ab19b48840cdbb48e24db7f9e5a6f2bd6ae0cc50b2f2bf`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4a4c3057aea11e609e871a2c9333907c8d57d60e1d21cc1ad69ee12ff99c0ebd`  
-		Last Modified: Fri, 14 Feb 2025 21:30:41 GMT  
-		Size: 140.9 KB (140927 bytes)  
+	-	`sha256:e07183601e9166b79501dc9273163739b8c5d6e7b176e262f4613e4fe9167d1a`  
+		Last Modified: Sat, 15 Feb 2025 00:30:57 GMT  
+		Size: 140.9 KB (140933 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:dffef19ea40c320b1ea56d51134fea4040cb324076b72d92c2b1b21c93aa9dba`  
-		Last Modified: Fri, 14 Feb 2025 21:30:41 GMT  
+	-	`sha256:bd7377e263547758e2047849e5452a8ac7c7be7aefd3bdb7fa45657ebf66708b`  
+		Last Modified: Sat, 15 Feb 2025 00:30:57 GMT  
 		Size: 17.2 KB (17189 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `eggdrop:latest`
 
 ```console
-$ docker pull eggdrop@sha256:7407067c6e4c960f8e9241883771723f37127d87a4fafbf9a8328eeb0eca39a6
+$ docker pull eggdrop@sha256:538cb8a3a26d486dbd78ebe4d1ab370e70973a1787fe56023aa1a5d57af318ab
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -1907,19 +1907,19 @@ $ docker pull eggdrop@sha256:f54b495c9c22b0995def5f43ca925e63fd4b5854c332b06affb
 ### `eggdrop:latest` - linux; arm64 variant v8
 
 ```console
-$ docker pull eggdrop@sha256:1e3e94175c6136b2956448a704ce185695b7ab4729803be8e617363dcfd848c0
+$ docker pull eggdrop@sha256:4035c5598844741674c04c76c922d8a7af24752fbc6788e8e9e6fbf59dd1b1d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.2 MB (18162740 bytes)**  
+-	Total Size: **18.2 MB (18164152 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9c2704a4b05e703b2b23b81be75bf14fe7a146b79e8021878d3b411e8b68b8e`
+-	Image ID: `sha256:d7eb6d38e506b0c3ce3f15e5c7567ccad8fdff392d00179c87d4b2cc101445ef`
 -	Entrypoint: `["\/home\/eggdrop\/eggdrop\/entrypoint.sh"]`
 -	Default Command: `["eggdrop.conf"]`
 
 ```dockerfile
 # Sun, 05 Jan 2025 16:36:07 GMT
-ADD alpine-minirootfs-3.20.5-aarch64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.6-aarch64.tar.gz / # buildkit
 # Sun, 05 Jan 2025 16:36:07 GMT
 CMD ["/bin/sh"]
 # Sun, 05 Jan 2025 16:36:07 GMT
@@ -1955,63 +1955,63 @@ CMD ["eggdrop.conf"]
 ```
 
 -	Layers:
-	-	`sha256:0152682790bba2052e0b7dc52872083c01ea53c598fe87e3fe3eab5f9d4228cb`  
-		Last Modified: Tue, 14 Jan 2025 20:33:00 GMT  
-		Size: 4.1 MB (4090769 bytes)  
+	-	`sha256:94e9d8af22013aabf0edcaf42950c88b0a1350c3a9ce076d61b98a535a673dd9`  
+		Last Modified: Fri, 14 Feb 2025 14:35:45 GMT  
+		Size: 4.1 MB (4091165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3dc5771b4cb21ae2a2bab536d6a359970cd3a34e970a8a0be98e54d192f0664`  
-		Last Modified: Wed, 08 Jan 2025 18:27:31 GMT  
-		Size: 967.0 B  
+	-	`sha256:2e4f5e522137cc417a3f98ddcfca8b939a1bde2f1bfa06284389e632bd47f3dc`  
+		Last Modified: Fri, 14 Feb 2025 19:40:54 GMT  
+		Size: 962.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8917a57a55679bb3082cea769355873fc8ae45ab8caf5e990029718b232ebe0c`  
-		Last Modified: Wed, 08 Jan 2025 18:27:31 GMT  
-		Size: 1.2 MB (1210974 bytes)  
+	-	`sha256:b7c5632ada7a032e4a40a385ac269d30d344dd48f333fa9490a2d9fddf33be97`  
+		Last Modified: Fri, 14 Feb 2025 19:40:55 GMT  
+		Size: 1.2 MB (1211974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c00fc1a13bfd6d68eac9dd7761eac4c9317710affb065542d15c60aa69086a0a`  
-		Last Modified: Wed, 15 Jan 2025 15:18:49 GMT  
-		Size: 12.9 MB (12856924 bytes)  
+	-	`sha256:16738349d7ac4181dbc287f636b71089e230b7b39a10bc59dbd3c275941d9b59`  
+		Last Modified: Fri, 14 Feb 2025 19:40:55 GMT  
+		Size: 12.9 MB (12856941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46884e96140c161c4efa5d4cab995e341b9592400c3db5132d42137071b8da65`  
-		Last Modified: Wed, 08 Jan 2025 18:33:29 GMT  
-		Size: 1.9 KB (1949 bytes)  
+	-	`sha256:c3b878c75135710003b9e72ef4b408ab2f3c4ededfff0cf034a9351b9c3fdf74`  
+		Last Modified: Fri, 14 Feb 2025 19:40:55 GMT  
+		Size: 2.0 KB (1952 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16b7d440051ff64a186a5311fc066136cb5ebe2e2a06cd80619f0e966f75f949`  
-		Last Modified: Wed, 15 Jan 2025 15:18:48 GMT  
-		Size: 1.1 KB (1125 bytes)  
+	-	`sha256:d0d1412b27a55491a2489826aa90d806d17e53e4427a7f51f03086ebb8dd9304`  
+		Last Modified: Fri, 14 Feb 2025 19:40:55 GMT  
+		Size: 1.1 KB (1126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eggdrop:latest` - unknown; unknown
 
 ```console
-$ docker pull eggdrop@sha256:2d3191ee6478001199b48d737e375c8b2c545afd95c27da9f3811e7c62a02069
+$ docker pull eggdrop@sha256:7f123e51f800694ec3f3d2c2c46c6b1223181862a3c9b03ff4ed5fed4e051dec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.7 KB (157725 bytes)**  
+-	Total Size: **157.7 KB (157724 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9fcd7346d6d369651db6daa73a39ff635ebdb30d0ab64e80e7b5c5376a41a6f`
+-	Image ID: `sha256:28c175b098b6ebbacf38438e2d9c1d4f6c6721baea7fb22b24ce757f60b5cc8f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cd130b0889db81d55044ee726aef57927b6ecd401b41b4a8d123884204ae76b5`  
-		Last Modified: Fri, 14 Feb 2025 21:30:23 GMT  
+	-	`sha256:f4df0395fc7c5af9220eb15a11239d51fa69940e9ae3747f5f630e9f46edbbbc`  
+		Last Modified: Sat, 15 Feb 2025 00:30:43 GMT  
 		Size: 138.8 KB (138820 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:33b175d71afcc8d14c978a6331b8d3e56ea315b810c7207d64a01644920795c0`  
-		Last Modified: Fri, 14 Feb 2025 21:30:24 GMT  
-		Size: 18.9 KB (18905 bytes)  
+	-	`sha256:e6f7123b133f1bbd79f1bb1a494afff036ed9f5373aa8f7dc72fa235be2e2f6d`  
+		Last Modified: Sat, 15 Feb 2025 00:30:43 GMT  
+		Size: 18.9 KB (18904 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `eggdrop:stable`
 
 ```console
-$ docker pull eggdrop@sha256:7407067c6e4c960f8e9241883771723f37127d87a4fafbf9a8328eeb0eca39a6
+$ docker pull eggdrop@sha256:538cb8a3a26d486dbd78ebe4d1ab370e70973a1787fe56023aa1a5d57af318ab
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2230,19 +2230,19 @@ $ docker pull eggdrop@sha256:f54b495c9c22b0995def5f43ca925e63fd4b5854c332b06affb
 ### `eggdrop:stable` - linux; arm64 variant v8
 
 ```console
-$ docker pull eggdrop@sha256:1e3e94175c6136b2956448a704ce185695b7ab4729803be8e617363dcfd848c0
+$ docker pull eggdrop@sha256:4035c5598844741674c04c76c922d8a7af24752fbc6788e8e9e6fbf59dd1b1d6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **18.2 MB (18162740 bytes)**  
+-	Total Size: **18.2 MB (18164152 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9c2704a4b05e703b2b23b81be75bf14fe7a146b79e8021878d3b411e8b68b8e`
+-	Image ID: `sha256:d7eb6d38e506b0c3ce3f15e5c7567ccad8fdff392d00179c87d4b2cc101445ef`
 -	Entrypoint: `["\/home\/eggdrop\/eggdrop\/entrypoint.sh"]`
 -	Default Command: `["eggdrop.conf"]`
 
 ```dockerfile
 # Sun, 05 Jan 2025 16:36:07 GMT
-ADD alpine-minirootfs-3.20.5-aarch64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.20.6-aarch64.tar.gz / # buildkit
 # Sun, 05 Jan 2025 16:36:07 GMT
 CMD ["/bin/sh"]
 # Sun, 05 Jan 2025 16:36:07 GMT
@@ -2278,55 +2278,55 @@ CMD ["eggdrop.conf"]
 ```
 
 -	Layers:
-	-	`sha256:0152682790bba2052e0b7dc52872083c01ea53c598fe87e3fe3eab5f9d4228cb`  
-		Last Modified: Tue, 14 Jan 2025 20:33:00 GMT  
-		Size: 4.1 MB (4090769 bytes)  
+	-	`sha256:94e9d8af22013aabf0edcaf42950c88b0a1350c3a9ce076d61b98a535a673dd9`  
+		Last Modified: Fri, 14 Feb 2025 14:35:45 GMT  
+		Size: 4.1 MB (4091165 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a3dc5771b4cb21ae2a2bab536d6a359970cd3a34e970a8a0be98e54d192f0664`  
-		Last Modified: Wed, 08 Jan 2025 18:27:31 GMT  
-		Size: 967.0 B  
+	-	`sha256:2e4f5e522137cc417a3f98ddcfca8b939a1bde2f1bfa06284389e632bd47f3dc`  
+		Last Modified: Fri, 14 Feb 2025 19:40:54 GMT  
+		Size: 962.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8917a57a55679bb3082cea769355873fc8ae45ab8caf5e990029718b232ebe0c`  
-		Last Modified: Wed, 08 Jan 2025 18:27:31 GMT  
-		Size: 1.2 MB (1210974 bytes)  
+	-	`sha256:b7c5632ada7a032e4a40a385ac269d30d344dd48f333fa9490a2d9fddf33be97`  
+		Last Modified: Fri, 14 Feb 2025 19:40:55 GMT  
+		Size: 1.2 MB (1211974 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c00fc1a13bfd6d68eac9dd7761eac4c9317710affb065542d15c60aa69086a0a`  
-		Last Modified: Wed, 15 Jan 2025 15:18:49 GMT  
-		Size: 12.9 MB (12856924 bytes)  
+	-	`sha256:16738349d7ac4181dbc287f636b71089e230b7b39a10bc59dbd3c275941d9b59`  
+		Last Modified: Fri, 14 Feb 2025 19:40:55 GMT  
+		Size: 12.9 MB (12856941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46884e96140c161c4efa5d4cab995e341b9592400c3db5132d42137071b8da65`  
-		Last Modified: Wed, 08 Jan 2025 18:33:29 GMT  
-		Size: 1.9 KB (1949 bytes)  
+	-	`sha256:c3b878c75135710003b9e72ef4b408ab2f3c4ededfff0cf034a9351b9c3fdf74`  
+		Last Modified: Fri, 14 Feb 2025 19:40:55 GMT  
+		Size: 2.0 KB (1952 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16b7d440051ff64a186a5311fc066136cb5ebe2e2a06cd80619f0e966f75f949`  
-		Last Modified: Wed, 15 Jan 2025 15:18:48 GMT  
-		Size: 1.1 KB (1125 bytes)  
+	-	`sha256:d0d1412b27a55491a2489826aa90d806d17e53e4427a7f51f03086ebb8dd9304`  
+		Last Modified: Fri, 14 Feb 2025 19:40:55 GMT  
+		Size: 1.1 KB (1126 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `eggdrop:stable` - unknown; unknown
 
 ```console
-$ docker pull eggdrop@sha256:2d3191ee6478001199b48d737e375c8b2c545afd95c27da9f3811e7c62a02069
+$ docker pull eggdrop@sha256:7f123e51f800694ec3f3d2c2c46c6b1223181862a3c9b03ff4ed5fed4e051dec
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **157.7 KB (157725 bytes)**  
+-	Total Size: **157.7 KB (157724 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9fcd7346d6d369651db6daa73a39ff635ebdb30d0ab64e80e7b5c5376a41a6f`
+-	Image ID: `sha256:28c175b098b6ebbacf38438e2d9c1d4f6c6721baea7fb22b24ce757f60b5cc8f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cd130b0889db81d55044ee726aef57927b6ecd401b41b4a8d123884204ae76b5`  
-		Last Modified: Fri, 14 Feb 2025 21:30:23 GMT  
+	-	`sha256:f4df0395fc7c5af9220eb15a11239d51fa69940e9ae3747f5f630e9f46edbbbc`  
+		Last Modified: Sat, 15 Feb 2025 00:30:43 GMT  
 		Size: 138.8 KB (138820 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:33b175d71afcc8d14c978a6331b8d3e56ea315b810c7207d64a01644920795c0`  
-		Last Modified: Fri, 14 Feb 2025 21:30:24 GMT  
-		Size: 18.9 KB (18905 bytes)  
+	-	`sha256:e6f7123b133f1bbd79f1bb1a494afff036ed9f5373aa8f7dc72fa235be2e2f6d`  
+		Last Modified: Sat, 15 Feb 2025 00:30:43 GMT  
+		Size: 18.9 KB (18904 bytes)  
 		MIME: application/vnd.in-toto+json
