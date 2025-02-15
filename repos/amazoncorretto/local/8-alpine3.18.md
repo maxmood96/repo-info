@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b5cf2cdc8fb82256eeeca5fcc5e0abb444b2b56f2e2136b5be35289343bcbff1`
-- Created: `2025-01-23T01:09:23Z`
+- Image ID: `sha256:28b3b501f07352e1e4cd8b473eb5cdce69ac951e8688b0a78ce7ba88924c05eb`
+- Created: `2025-01-24T20:03:54Z`
 - Virtual Size: ~ 206.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -205,16 +205,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.7-r1 description:
+libcrypto3-3.1.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.7-r1 webpage:
+libcrypto3-3.1.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.7-r1 installed size:
-4480 KiB
+libcrypto3-3.1.8-r0 installed size:
+4484 KiB
 
-libcrypto3-3.1.7-r1 license:
+libcrypto3-3.1.8-r0 license:
 Apache-2.0
 
 ```
@@ -222,16 +222,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.7-r1 description:
+libssl3-3.1.8-r0 description:
 SSL shared libraries
 
-libssl3-3.1.7-r1 webpage:
+libssl3-3.1.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.7-r1 installed size:
+libssl3-3.1.8-r0 installed size:
 552 KiB
 
-libssl3-3.1.7-r1 license:
+libssl3-3.1.8-r0 license:
 Apache-2.0
 
 ```
@@ -239,16 +239,16 @@ Apache-2.0
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.4-r2 description:
+musl-1.2.4-r3 description:
 the musl c library (libc) implementation
 
-musl-1.2.4-r2 webpage:
+musl-1.2.4-r3 webpage:
 https://musl.libc.org/
 
-musl-1.2.4-r2 installed size:
+musl-1.2.4-r3 installed size:
 620 KiB
 
-musl-1.2.4-r2 license:
+musl-1.2.4-r3 license:
 MIT
 
 ```
@@ -256,16 +256,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.4-r2 description:
+musl-utils-1.2.4-r3 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.4-r2 webpage:
+musl-utils-1.2.4-r3 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.4-r2 installed size:
+musl-utils-1.2.4-r3 installed size:
 132 KiB
 
-musl-utils-1.2.4-r2 license:
+musl-utils-1.2.4-r3 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```

@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:13cbb6b7c47f610ae3af6769682ddc0a505912b68cf0636ca35abaa44a5b39d1`
-- Created: `2025-01-23T01:09:23Z`
-- Virtual Size: ~ 275.13 Mb  
+- Image ID: `sha256:91f9107076198833009698eff9b3ff3cf2e92429117fb90e5d7ab8b840b34b7f`
+- Created: `2025-01-24T20:03:54Z`
+- Virtual Size: ~ 275.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -188,16 +188,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.7-r1 description:
+libcrypto3-3.1.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.7-r1 webpage:
+libcrypto3-3.1.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.7-r1 installed size:
-4480 KiB
+libcrypto3-3.1.8-r0 installed size:
+4484 KiB
 
-libcrypto3-3.1.7-r1 license:
+libcrypto3-3.1.8-r0 license:
 Apache-2.0
 
 ```
@@ -205,16 +205,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.7-r1 description:
+libssl3-3.1.8-r0 description:
 SSL shared libraries
 
-libssl3-3.1.7-r1 webpage:
+libssl3-3.1.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.7-r1 installed size:
+libssl3-3.1.8-r0 installed size:
 552 KiB
 
-libssl3-3.1.7-r1 license:
+libssl3-3.1.8-r0 license:
 Apache-2.0
 
 ```
@@ -222,16 +222,16 @@ Apache-2.0
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.4-r2 description:
+musl-1.2.4-r3 description:
 the musl c library (libc) implementation
 
-musl-1.2.4-r2 webpage:
+musl-1.2.4-r3 webpage:
 https://musl.libc.org/
 
-musl-1.2.4-r2 installed size:
+musl-1.2.4-r3 installed size:
 620 KiB
 
-musl-1.2.4-r2 license:
+musl-1.2.4-r3 license:
 MIT
 
 ```
@@ -239,16 +239,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.4-r2 description:
+musl-utils-1.2.4-r3 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.4-r2 webpage:
+musl-utils-1.2.4-r3 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.4-r2 installed size:
+musl-utils-1.2.4-r3 installed size:
 132 KiB
 
-musl-utils-1.2.4-r2 license:
+musl-utils-1.2.4-r3 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```

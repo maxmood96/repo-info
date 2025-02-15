@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:fd67944a48e20ecf869e7db7bb84ec6ec4a5ee7bfe727ba2a097c0ea129f609a`
-- Created: `2025-01-23T01:09:23Z`
+- Image ID: `sha256:47f0b2317569656dbd5177b14e54f6b51cd822e65beaee44c65bd71bc9e051ad`
+- Created: `2025-01-24T20:03:54Z`
 - Virtual Size: ~ 206.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -205,16 +205,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.7-r1 description:
+libcrypto3-3.1.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.7-r1 webpage:
+libcrypto3-3.1.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.7-r1 installed size:
-4512 KiB
+libcrypto3-3.1.8-r0 installed size:
+4516 KiB
 
-libcrypto3-3.1.7-r1 license:
+libcrypto3-3.1.8-r0 license:
 Apache-2.0
 
 ```
@@ -222,16 +222,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.7-r1 description:
+libssl3-3.1.8-r0 description:
 SSL shared libraries
 
-libssl3-3.1.7-r1 webpage:
+libssl3-3.1.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.7-r1 installed size:
+libssl3-3.1.8-r0 installed size:
 548 KiB
 
-libssl3-3.1.7-r1 license:
+libssl3-3.1.8-r0 license:
 Apache-2.0
 
 ```
@@ -239,16 +239,16 @@ Apache-2.0
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.4_git20230717-r4 description:
+musl-1.2.4_git20230717-r5 description:
 the musl c library (libc) implementation
 
-musl-1.2.4_git20230717-r4 webpage:
+musl-1.2.4_git20230717-r5 webpage:
 https://musl.libc.org/
 
-musl-1.2.4_git20230717-r4 installed size:
+musl-1.2.4_git20230717-r5 installed size:
 652 KiB
 
-musl-1.2.4_git20230717-r4 license:
+musl-1.2.4_git20230717-r5 license:
 MIT
 
 ```
@@ -256,16 +256,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.4_git20230717-r4 description:
+musl-utils-1.2.4_git20230717-r5 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.4_git20230717-r4 webpage:
+musl-utils-1.2.4_git20230717-r5 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.4_git20230717-r4 installed size:
+musl-utils-1.2.4_git20230717-r5 installed size:
 128 KiB
 
-musl-utils-1.2.4_git20230717-r4 license:
+musl-utils-1.2.4_git20230717-r5 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
