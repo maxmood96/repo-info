@@ -188,7 +188,7 @@ $ docker pull rakudo-star@sha256:d21301157f5199a0d268089e4b014429df52286755e53d0
 ## `rakudo-star:2024.12-alpine`
 
 ```console
-$ docker pull rakudo-star@sha256:1d47c0dee5ff2579c3849dac0af1e63d9eb48da97a01c4efed8215d31ba49f84
+$ docker pull rakudo-star@sha256:33189b08c28f938f828ccd80bf18c2ca072ad39df3ec215e0e46eba40c31c717
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -271,18 +271,18 @@ $ docker pull rakudo-star@sha256:585611c8c5765b7e6a84c3530fdbd447823b8307477459a
 ### `rakudo-star:2024.12-alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rakudo-star@sha256:622a48f5c6f2f624089d829f8f0be7210b374c7581c7f9a458b10aa7adea71db
+$ docker pull rakudo-star@sha256:eb621de4a27241ce8d2a963f8920b73a96a24eb0d079d42ce09bb417d918cc29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **46.5 MB (46532725 bytes)**  
+-	Total Size: **45.8 MB (45823142 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9eb6dc302a7500dbf738e889b531af4ce324c83fd0470ca1750f100088e411b`
+-	Image ID: `sha256:c34d9200680157653dddba47cb58cf52ea537e8cd2cd32a6ca2285e6cf879ad6`
 -	Default Command: `["raku"]`
 
 ```dockerfile
 # Mon, 16 Dec 2024 03:29:03 GMT
-ADD alpine-minirootfs-3.21.2-aarch64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.21.3-aarch64.tar.gz / # buildkit
 # Mon, 16 Dec 2024 03:29:03 GMT
 CMD ["/bin/sh"]
 # Mon, 16 Dec 2024 03:29:03 GMT
@@ -301,47 +301,47 @@ CMD ["raku"]
 ```
 
 -	Layers:
-	-	`sha256:52f827f723504aa3325bb5a54247f0dc4b92bb72569525bc951532c4ef679bd4`  
-		Last Modified: Tue, 14 Jan 2025 20:33:00 GMT  
-		Size: 4.0 MB (3992359 bytes)  
+	-	`sha256:6e771e15690e2fabf2332d3a3b744495411d6e0b00b2aea64419b58b0066cf81`  
+		Last Modified: Fri, 14 Feb 2025 14:37:30 GMT  
+		Size: 4.0 MB (3993029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d59a85858ab78fc027ff09d8a5376e12d1c253c404713d7efe7405d9485c0658`  
-		Last Modified: Thu, 09 Jan 2025 05:36:34 GMT  
-		Size: 957.0 B  
+	-	`sha256:e10efd9326b07c9d4d79c7e7c20dcac84b1d972ce22cf1ced33b07e577fe0541`  
+		Last Modified: Sat, 15 Feb 2025 06:27:24 GMT  
+		Size: 947.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6bc37222c9c2729eb1560eab770571b8489e1b2a41d6798313691fa0d2bdce2`  
-		Last Modified: Thu, 09 Jan 2025 05:36:36 GMT  
-		Size: 42.5 MB (42539409 bytes)  
+	-	`sha256:99fea430330fa04b042f359fbbc134928c01c73be3d903b79064353de58f8351`  
+		Last Modified: Sat, 15 Feb 2025 06:27:26 GMT  
+		Size: 41.8 MB (41829166 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rakudo-star:2024.12-alpine` - unknown; unknown
 
 ```console
-$ docker pull rakudo-star@sha256:32b4351b519969f0c07291760aa7923e07c04e43ba7d76032284154f54c3ef12
+$ docker pull rakudo-star@sha256:72e1c8596f4be9c41ecddfd4642138a1afbc70b509a88bd4c8dffc99b873c267
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.6 KB (132588 bytes)**  
+-	Total Size: **132.6 KB (132594 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02ed771a17bc112b5eac37f476c31631d522c7fa10f84498efa3c8e98e02a3f0`
+-	Image ID: `sha256:d9dce6fc2372be759cbba73cd3b03630e107d707a1d42000e7692497f294db69`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:53a7bbdb39dd309755f0b861de59689e4c3d7ac365f1250395d2919a76fb13bc`  
-		Last Modified: Fri, 14 Feb 2025 23:33:17 GMT  
-		Size: 120.8 KB (120752 bytes)  
+	-	`sha256:c9729986a8a071d10777b5eb9f4023d64a91fe5b08ac06aa8ce871b3188ed218`  
+		Last Modified: Sat, 15 Feb 2025 08:33:17 GMT  
+		Size: 120.8 KB (120758 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1f29f769a60dffdc0a10299cbe78eceef4ea168da59c2a6d6d4d2f8f00091385`  
-		Last Modified: Fri, 14 Feb 2025 23:33:17 GMT  
+	-	`sha256:6d51f204534c6591f11fe31ed44dd8c672bf50627d764ef2351e6acea7e06a59`  
+		Last Modified: Sat, 15 Feb 2025 08:33:17 GMT  
 		Size: 11.8 KB (11836 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `rakudo-star:alpine`
 
 ```console
-$ docker pull rakudo-star@sha256:1d47c0dee5ff2579c3849dac0af1e63d9eb48da97a01c4efed8215d31ba49f84
+$ docker pull rakudo-star@sha256:33189b08c28f938f828ccd80bf18c2ca072ad39df3ec215e0e46eba40c31c717
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -424,18 +424,18 @@ $ docker pull rakudo-star@sha256:585611c8c5765b7e6a84c3530fdbd447823b8307477459a
 ### `rakudo-star:alpine` - linux; arm64 variant v8
 
 ```console
-$ docker pull rakudo-star@sha256:622a48f5c6f2f624089d829f8f0be7210b374c7581c7f9a458b10aa7adea71db
+$ docker pull rakudo-star@sha256:eb621de4a27241ce8d2a963f8920b73a96a24eb0d079d42ce09bb417d918cc29
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **46.5 MB (46532725 bytes)**  
+-	Total Size: **45.8 MB (45823142 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c9eb6dc302a7500dbf738e889b531af4ce324c83fd0470ca1750f100088e411b`
+-	Image ID: `sha256:c34d9200680157653dddba47cb58cf52ea537e8cd2cd32a6ca2285e6cf879ad6`
 -	Default Command: `["raku"]`
 
 ```dockerfile
 # Mon, 16 Dec 2024 03:29:03 GMT
-ADD alpine-minirootfs-3.21.2-aarch64.tar.gz / # buildkit
+ADD alpine-minirootfs-3.21.3-aarch64.tar.gz / # buildkit
 # Mon, 16 Dec 2024 03:29:03 GMT
 CMD ["/bin/sh"]
 # Mon, 16 Dec 2024 03:29:03 GMT
@@ -454,40 +454,40 @@ CMD ["raku"]
 ```
 
 -	Layers:
-	-	`sha256:52f827f723504aa3325bb5a54247f0dc4b92bb72569525bc951532c4ef679bd4`  
-		Last Modified: Tue, 14 Jan 2025 20:33:00 GMT  
-		Size: 4.0 MB (3992359 bytes)  
+	-	`sha256:6e771e15690e2fabf2332d3a3b744495411d6e0b00b2aea64419b58b0066cf81`  
+		Last Modified: Fri, 14 Feb 2025 14:37:30 GMT  
+		Size: 4.0 MB (3993029 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d59a85858ab78fc027ff09d8a5376e12d1c253c404713d7efe7405d9485c0658`  
-		Last Modified: Thu, 09 Jan 2025 05:36:34 GMT  
-		Size: 957.0 B  
+	-	`sha256:e10efd9326b07c9d4d79c7e7c20dcac84b1d972ce22cf1ced33b07e577fe0541`  
+		Last Modified: Sat, 15 Feb 2025 06:27:24 GMT  
+		Size: 947.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c6bc37222c9c2729eb1560eab770571b8489e1b2a41d6798313691fa0d2bdce2`  
-		Last Modified: Thu, 09 Jan 2025 05:36:36 GMT  
-		Size: 42.5 MB (42539409 bytes)  
+	-	`sha256:99fea430330fa04b042f359fbbc134928c01c73be3d903b79064353de58f8351`  
+		Last Modified: Sat, 15 Feb 2025 06:27:26 GMT  
+		Size: 41.8 MB (41829166 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `rakudo-star:alpine` - unknown; unknown
 
 ```console
-$ docker pull rakudo-star@sha256:32b4351b519969f0c07291760aa7923e07c04e43ba7d76032284154f54c3ef12
+$ docker pull rakudo-star@sha256:72e1c8596f4be9c41ecddfd4642138a1afbc70b509a88bd4c8dffc99b873c267
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **132.6 KB (132588 bytes)**  
+-	Total Size: **132.6 KB (132594 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:02ed771a17bc112b5eac37f476c31631d522c7fa10f84498efa3c8e98e02a3f0`
+-	Image ID: `sha256:d9dce6fc2372be759cbba73cd3b03630e107d707a1d42000e7692497f294db69`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:53a7bbdb39dd309755f0b861de59689e4c3d7ac365f1250395d2919a76fb13bc`  
-		Last Modified: Fri, 14 Feb 2025 23:33:17 GMT  
-		Size: 120.8 KB (120752 bytes)  
+	-	`sha256:c9729986a8a071d10777b5eb9f4023d64a91fe5b08ac06aa8ce871b3188ed218`  
+		Last Modified: Sat, 15 Feb 2025 08:33:17 GMT  
+		Size: 120.8 KB (120758 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1f29f769a60dffdc0a10299cbe78eceef4ea168da59c2a6d6d4d2f8f00091385`  
-		Last Modified: Fri, 14 Feb 2025 23:33:17 GMT  
+	-	`sha256:6d51f204534c6591f11fe31ed44dd8c672bf50627d764ef2351e6acea7e06a59`  
+		Last Modified: Sat, 15 Feb 2025 08:33:17 GMT  
 		Size: 11.8 KB (11836 bytes)  
 		MIME: application/vnd.in-toto+json
 
