@@ -1,16 +1,16 @@
-# `golang:1.23.6-alpine3.20`
+# `golang:1.24.0-alpine3.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d9452640ca3fae310f357582059dbe38e87355feb9a1200389b67957a6d71a7f`
-- Created: `2025-02-04T18:26:14Z`
-- Virtual Size: ~ 245.55 Mb  
+- Image ID: `sha256:a308657c6912740f3941076522f34f02f1545275d0c1ce76fe2687b7483671fd`
+- Created: `2025-02-11T19:31:16Z`
+- Virtual Size: ~ 260.55 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
 - Environment:
   - `PATH=/go/bin:/usr/local/go/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `GOLANG_VERSION=1.23.6`
+  - `GOLANG_VERSION=1.24.0`
   - `GOTOOLCHAIN=local`
   - `GOPATH=/go`
 
@@ -155,16 +155,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.2-r1 description:
+libcrypto3-3.3.3-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.2-r1 webpage:
+libcrypto3-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.2-r1 installed size:
+libcrypto3-3.3.3-r0 installed size:
 4660 KiB
 
-libcrypto3-3.3.2-r1 license:
+libcrypto3-3.3.3-r0 license:
 Apache-2.0
 
 ```
@@ -172,16 +172,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.2-r1 description:
+libssl3-3.3.3-r0 description:
 SSL shared libraries
 
-libssl3-3.3.2-r1 webpage:
+libssl3-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.2-r1 installed size:
-796 KiB
+libssl3-3.3.3-r0 installed size:
+800 KiB
 
-libssl3-3.3.2-r1 license:
+libssl3-3.3.3-r0 license:
 Apache-2.0
 
 ```
@@ -189,16 +189,16 @@ Apache-2.0
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r0 description:
+musl-1.2.5-r1 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r0 webpage:
+musl-1.2.5-r1 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r0 installed size:
+musl-1.2.5-r1 installed size:
 652 KiB
 
-musl-1.2.5-r0 license:
+musl-1.2.5-r1 license:
 MIT
 
 ```
@@ -206,16 +206,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r0 description:
+musl-utils-1.2.5-r1 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r0 webpage:
+musl-utils-1.2.5-r1 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r0 installed size:
+musl-utils-1.2.5-r1 installed size:
 128 KiB
 
-musl-utils-1.2.5-r0 license:
+musl-utils-1.2.5-r1 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
