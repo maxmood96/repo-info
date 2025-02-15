@@ -523,11 +523,11 @@ CMD ["fluentd"]
 		Size: 1.3 KB (1308 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e1d3bed418f9ce23888e7cee8e81bce35e4e88a984c4728d1a6b158715eea453`  
-		Last Modified: Sat, 15 Feb 2025 07:10:36 GMT  
+		Last Modified: Sat, 15 Feb 2025 13:08:34 GMT  
 		Size: 404.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:6fdb109503f502bd2dfd9413be3791e42084012bb51f7cdd0ecd59b87ad1ea32`  
-		Last Modified: Sat, 15 Feb 2025 07:10:36 GMT  
+		Last Modified: Sat, 15 Feb 2025 13:08:36 GMT  
 		Size: 457.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
