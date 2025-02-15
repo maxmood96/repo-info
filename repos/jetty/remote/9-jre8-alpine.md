@@ -1,7 +1,7 @@
 ## `jetty:9-jre8-alpine`
 
 ```console
-$ docker pull jetty@sha256:f1a15e7cf14371f09e9951136fe3750f4be91a66deca971adc4dcaeb7624b0aa
+$ docker pull jetty@sha256:f1c49aa0325c15f2fdaebefff00cefbb732719ec225cfc26e583e05b5a14d33f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -12,20 +12,20 @@ $ docker pull jetty@sha256:f1a15e7cf14371f09e9951136fe3750f4be91a66deca971adc4dc
 ### `jetty:9-jre8-alpine` - linux; amd64
 
 ```console
-$ docker pull jetty@sha256:da6fb48f3aac68e94afb1b7dbaceba15c99d52946c8f805df4a578409d37d1e0
+$ docker pull jetty@sha256:c79e524cc2e56bd202004b472e511cf0ed1bc0d81fa214bb2ee977e9a512737e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **72.9 MB (72939633 bytes)**  
+-	Total Size: **73.0 MB (72985334 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8b04595dc14cbf924deb50ed7bee132c26ad52b065e2d3dc13e2a33553808dd5`
+-	Image ID: `sha256:c4c9ca2129ce52f6f5baf576a239c11a1bc146aed105ca1b6546f12a15fd809a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["java","-jar","\/usr\/local\/jetty\/start.jar"]`
 
 ```dockerfile
-# Wed, 08 Jan 2025 12:07:30 GMT
-ADD alpine-minirootfs-3.21.2-x86_64.tar.gz / # buildkit
-# Wed, 08 Jan 2025 12:07:30 GMT
+# Tue, 14 Jan 2025 05:07:03 GMT
+ADD alpine-minirootfs-3.21.3-x86_64.tar.gz / # buildkit
+# Tue, 14 Jan 2025 05:07:03 GMT
 CMD ["/bin/sh"]
 # Tue, 14 Jan 2025 05:07:03 GMT
 ENV JAVA_HOME=/opt/java/openjdk
@@ -76,59 +76,59 @@ CMD ["java" "-jar" "/usr/local/jetty/start.jar"]
 ```
 
 -	Layers:
-	-	`sha256:1f3e46996e2966e4faa5846e56e76e3748b7315e2ded61476c24403d592134f0`  
-		Last Modified: Tue, 14 Jan 2025 20:33:02 GMT  
-		Size: 3.6 MB (3641715 bytes)  
+	-	`sha256:f18232174bc91741fdf3da96d85011092101a032a93a388b79e99e69c2d5c870`  
+		Last Modified: Fri, 14 Feb 2025 14:36:50 GMT  
+		Size: 3.6 MB (3642247 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:294ff539aba2e0569828f0684354d9f30a7a2c324a5ed2ed06f29adad4d2d594`  
-		Last Modified: Tue, 04 Feb 2025 00:00:12 GMT  
-		Size: 16.1 MB (16135245 bytes)  
+	-	`sha256:6cf13c66f60c41a33897cd40178c48771098f169a6e4a55bc4ec6f06d81ec32a`  
+		Last Modified: Fri, 14 Feb 2025 20:36:58 GMT  
+		Size: 16.2 MB (16175658 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8162ea6aa2a012ddb94617af7670d4f3825d5b9c7c19bbeef10986034fcc0159`  
-		Last Modified: Tue, 04 Feb 2025 00:00:14 GMT  
-		Size: 41.8 MB (41823911 bytes)  
+	-	`sha256:2c26918a07338f2ee3756983c6dffb6360174b95bb8aa2af4cd76340f813d829`  
+		Last Modified: Fri, 14 Feb 2025 20:36:53 GMT  
+		Size: 41.8 MB (41824010 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9e8f353e144af132c24e7890d44f4a3fabffb56a5788be91c4f9a11e23183ef`  
-		Last Modified: Mon, 03 Feb 2025 20:53:21 GMT  
-		Size: 128.0 B  
+	-	`sha256:4801c8bf7bdd800257b220db042f32f0a3b31e26ec623d2d59159a2b6ccf0db1`  
+		Last Modified: Fri, 14 Feb 2025 20:36:51 GMT  
+		Size: 127.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9a928bc2847bd3936e603316f6eadd3642ab881bcc38b310a07a11d7c5fbfe3f`  
-		Last Modified: Tue, 04 Feb 2025 07:08:00 GMT  
-		Size: 2.3 KB (2281 bytes)  
+	-	`sha256:4336753188655c831a8112b1e1412ac1df4e8900223090e4677d78ae3927d70d`  
+		Last Modified: Fri, 14 Feb 2025 20:36:51 GMT  
+		Size: 2.3 KB (2280 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb585347e891a1bab2de64a5c252c7d8d3b8066755c596a74b27f3ad30448639`  
-		Last Modified: Fri, 07 Feb 2025 10:21:38 GMT  
-		Size: 11.3 MB (11334661 bytes)  
+	-	`sha256:913d457fbb69bc2d0020e9c2900b11d0ce49280f33aa95272ea3398fcd92f3ef`  
+		Last Modified: Fri, 14 Feb 2025 20:37:11 GMT  
+		Size: 11.3 MB (11339319 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:03f4574869046b2cf7573e9a21c8418bace722e6b7bed317ca95b78f51762b2c`  
-		Last Modified: Mon, 10 Feb 2025 08:46:11 GMT  
-		Size: 1.7 KB (1660 bytes)  
+	-	`sha256:4a8b970d86b0cf9bd5424257f5b0b7c726e2fda6fee4207b7fe3b5a814fa2bdb`  
+		Last Modified: Fri, 14 Feb 2025 22:47:06 GMT  
+		Size: 1.7 KB (1661 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `jetty:9-jre8-alpine` - unknown; unknown
 
 ```console
-$ docker pull jetty@sha256:8fb7ec678820531a67fee40216f2c944b7d5c9f64b681acabe54f39e5894d8d0
+$ docker pull jetty@sha256:563843acea9144a3baed5a26a1bc5c584c28b92f6b5826f34dc7166d85810b1a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.0 MB (1046676 bytes)**  
+-	Total Size: **1.0 MB (1046682 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:47c1f3149e883158d52eacad5f2a9a3b55f30430fce6ee1198a956092607753e`
+-	Image ID: `sha256:19bd943d1707f58c66a17991fa62996e3962d51e28aaa1c3aa353288225de447`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:7278582cb7a3e79c0a6f8dfc0b44f6bb4671ddd8f2d7b3d22d5ca061b64bcfc1`  
-		Last Modified: Fri, 31 Jan 2025 02:14:18 GMT  
-		Size: 1.0 MB (1026648 bytes)  
+	-	`sha256:5079240391655082ecca998c248753b9cd0b94e92bea20b4f703c0ca6c6d9dbe`  
+		Last Modified: Sat, 15 Feb 2025 00:20:23 GMT  
+		Size: 1.0 MB (1026654 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ecb36556e9448ab2b5a7a73bd1c60b01d2007bf9e3a1e5e6a6bee8ccbe989c74`  
-		Last Modified: Fri, 31 Jan 2025 02:14:18 GMT  
+	-	`sha256:2e38c2679098458e40584177e9f8a1ee055d39585299b635ecc2dc10e0a1d6b7`  
+		Last Modified: Sat, 15 Feb 2025 00:20:23 GMT  
 		Size: 20.0 KB (20028 bytes)  
 		MIME: application/vnd.in-toto+json
