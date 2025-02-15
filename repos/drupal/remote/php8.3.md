@@ -1,7 +1,7 @@
 ## `drupal:php8.3`
 
 ```console
-$ docker pull drupal@sha256:896f7833a795b916e261f537b85c89d3ece80b075e72af9e59e85baae5d80b49
+$ docker pull drupal@sha256:1a5c3e60e1deea2520ca6768a344efbdccdb2850401a097564571afc6987e2a3
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -755,7 +755,7 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 		Size: 740.4 KB (740351 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c6bea5c2f62f09ea0d0df2916668b25f7c78b8dcedb64eb147ba8855d020982d`  
-		Last Modified: Fri, 14 Feb 2025 21:12:47 GMT  
+		Last Modified: Sat, 15 Feb 2025 07:22:53 GMT  
 		Size: 114.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d2ffa9e109a1b767e009659f2a33e85cbbc7162c8e44d1169088af7d66a2ac01`  
@@ -958,25 +958,25 @@ ENV PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/drupa
 ### `drupal:php8.3` - unknown; unknown
 
 ```console
-$ docker pull drupal@sha256:f1f8b687c0a2c6a9c9d563988b5e35c242d1ab28c790788ff191a552c2541e24
+$ docker pull drupal@sha256:ba962719a41d1d8998d6d8046e666f714ba04f773d6f2b6923b2d3c9c271cb34
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.9 MB (6879196 bytes)**  
+-	Total Size: **6.9 MB (6879195 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a205efa26acba375fdf04edb4f33e045d69f19fee7ad67e461eefc780a3044ab`
+-	Image ID: `sha256:a7d95d76c43816034c8a8a5197639b2e5e29d672a227955aed7ae2cf9695955c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9bf5c03a19ae2b961de3cc5e946b66301efe824270300faafa983497d3f80944`  
-		Last Modified: Fri, 14 Feb 2025 09:04:15 GMT  
+	-	`sha256:da2dc00fb01c2f52d90efeed07e36cdbd318b19d65b9fe9fc1c3da6f842056df`  
+		Last Modified: Sat, 15 Feb 2025 05:57:48 GMT  
 		Size: 6.8 MB (6836123 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7a135735f72c24ebf654a30d677ebfc56ba624bcdf04e1207a20bcc4826f091a`  
-		Last Modified: Fri, 14 Feb 2025 09:04:16 GMT  
-		Size: 43.1 KB (43073 bytes)  
+	-	`sha256:51e7496d09972ed721806200d87a40d430755c81e95c1fe1fcb013e0b0757bc6`  
+		Last Modified: Sat, 15 Feb 2025 05:57:49 GMT  
+		Size: 43.1 KB (43072 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `drupal:php8.3` - linux; s390x
