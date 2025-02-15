@@ -1,4 +1,4 @@
-# `pypy:3.10-7.3.18-slim-bookworm`
+# `pypy:3.10-7.3.18-slim`
 
 ## Docker Metadata
 

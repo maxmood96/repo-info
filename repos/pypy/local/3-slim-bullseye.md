@@ -1,4 +1,4 @@
-# `pypy:3.10-7.3.18-slim`
+# `pypy:3.10-7.3.18-slim-bullseye`
 
 ## Docker Metadata
 
