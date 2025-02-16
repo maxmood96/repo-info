@@ -363,7 +363,7 @@ LABEL org.opencontainers.image.vendor=Traefik Labs org.opencontainers.image.url=
 		Size: 459.0 KB (458983 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:cb815438f32f7b268084f9ab187a228c05f1c384fda34d09aee691ce02667b41`  
-		Last Modified: Sun, 16 Feb 2025 06:07:13 GMT  
+		Last Modified: Sun, 16 Feb 2025 08:00:47 GMT  
 		Size: 43.9 MB (43943601 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:57c1555f77403d7e7bf0f7d12a39592c263081352e3c283eb3beeba3fa6b7c01`  
