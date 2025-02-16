@@ -133,11 +133,11 @@ $ docker pull clojure@sha256:75a97d836cc05c6f1309b9a77fb887e13746b9ca98aa9897f3f
 
 -	Layers:
 	-	`sha256:ea474526f549add67d595a6be162abde63a906be52363d2a8ff534a0bb813a86`  
-		Last Modified: Tue, 04 Feb 2025 05:21:08 GMT  
+		Last Modified: Sun, 16 Feb 2025 13:07:28 GMT  
 		Size: 5.0 MB (4988216 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:ba6a3b8b447093b886807b06f430ab78cbdb4c9228f27a65c9154d805c684483`  
-		Last Modified: Tue, 04 Feb 2025 05:21:08 GMT  
+		Last Modified: Sun, 16 Feb 2025 13:07:27 GMT  
 		Size: 18.4 KB (18427 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -263,10 +263,10 @@ $ docker pull clojure@sha256:2125c895597865e4bc36491373a975087cdae312a9a4594b744
 
 -	Layers:
 	-	`sha256:ed1ddf5f8b492f4df7852020ec9eddea5b35c0d566732fc5943169c831ab5e82`  
-		Last Modified: Tue, 04 Feb 2025 23:46:40 GMT  
+		Last Modified: Sun, 16 Feb 2025 13:07:28 GMT  
 		Size: 5.1 MB (5125766 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:4ab96a0b1547a1999a24e74f6ff00be359d63fd2f3cb68d7ac6c22fc4557a67b`  
-		Last Modified: Tue, 04 Feb 2025 23:46:40 GMT  
+		Last Modified: Sun, 16 Feb 2025 13:07:27 GMT  
 		Size: 18.5 KB (18522 bytes)  
 		MIME: application/vnd.in-toto+json
