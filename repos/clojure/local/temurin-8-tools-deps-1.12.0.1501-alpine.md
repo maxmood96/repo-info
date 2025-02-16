@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:543720b0d1635d4f75961d436b38aab2106528370fe1ba1aa2b667e95fe7ebd5`
+- Image ID: `sha256:bae2ca6d6ba0908c44186f2d60bd7908631403eb3fbb3516ceb5b3ef4e6c8a33`
 - Created: `2025-01-29T19:11:46Z`
-- Virtual Size: ~ 223.62 Mb  
+- Virtual Size: ~ 223.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -91,16 +91,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.2-r0 description:
+alpine-release-3.21.3-r0 description:
 Alpine release data
 
-alpine-release-3.21.2-r0 webpage:
+alpine-release-3.21.3-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.2-r0 installed size:
+alpine-release-3.21.3-r0 installed size:
 346 B
 
-alpine-release-3.21.2-r0 license:
+alpine-release-3.21.3-r0 license:
 MIT
 
 ```
@@ -108,16 +108,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.6-r2 description:
+apk-tools-2.14.6-r3 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.6-r2 webpage:
+apk-tools-2.14.6-r3 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.6-r2 installed size:
+apk-tools-2.14.6-r3 installed size:
 247 KiB
 
-apk-tools-2.14.6-r2 license:
+apk-tools-2.14.6-r3 license:
 GPL-2.0-only
 
 ```
@@ -159,16 +159,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r9 description:
+busybox-1.37.0-r12 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r9 webpage:
+busybox-1.37.0-r12 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r9 installed size:
+busybox-1.37.0-r12 installed size:
 798 KiB
 
-busybox-1.37.0-r9 license:
+busybox-1.37.0-r12 license:
 GPL-2.0-only
 
 ```
@@ -176,16 +176,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r9 description:
+busybox-binsh-1.37.0-r12 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r9 webpage:
+busybox-binsh-1.37.0-r12 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r9 installed size:
+busybox-binsh-1.37.0-r12 installed size:
 1 B
 
-busybox-binsh-1.37.0-r9 license:
+busybox-binsh-1.37.0-r12 license:
 GPL-2.0-only
 
 ```
@@ -703,16 +703,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.2-r4 description:
+libcrypto3-3.3.3-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.2-r4 webpage:
+libcrypto3-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.2-r4 installed size:
+libcrypto3-3.3.3-r0 installed size:
 4607 KiB
 
-libcrypto3-3.3.2-r4 license:
+libcrypto3-3.3.3-r0 license:
 Apache-2.0
 
 ```
@@ -720,16 +720,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.11.1-r0 description:
+libcurl-8.12.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.11.1-r0 webpage:
+libcurl-8.12.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.11.1-r0 installed size:
-620 KiB
+libcurl-8.12.1-r0 installed size:
+628 KiB
 
-libcurl-8.11.1-r0 license:
+libcurl-8.12.1-r0 license:
 curl
 
 ```
@@ -958,16 +958,16 @@ BSD-3-Clause-Attribution AND BSD-4-Clause
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.2-r4 description:
+libssl3-3.3.3-r0 description:
 SSL shared libraries
 
-libssl3-3.3.2-r4 webpage:
+libssl3-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.2-r4 installed size:
+libssl3-3.3.3-r0 installed size:
 779 KiB
 
-libssl3-3.3.2-r4 license:
+libssl3-3.3.3-r0 license:
 Apache-2.0
 
 ```
@@ -975,16 +975,16 @@ Apache-2.0
 ### `apk` package: `libtasn1`
 
 ```console
-libtasn1-4.19.0-r2 description:
+libtasn1-4.20.0-r0 description:
 The ASN.1 library used in GNUTLS
 
-libtasn1-4.19.0-r2 webpage:
+libtasn1-4.20.0-r0 webpage:
 https://www.gnu.org/software/gnutls/
 
-libtasn1-4.19.0-r2 installed size:
+libtasn1-4.20.0-r0 installed size:
 65 KiB
 
-libtasn1-4.19.0-r2 license:
+libtasn1-4.20.0-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1043,16 +1043,16 @@ MIT
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r8 description:
+musl-1.2.5-r9 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r8 webpage:
+musl-1.2.5-r9 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r8 installed size:
+musl-1.2.5-r9 installed size:
 646 KiB
 
-musl-1.2.5-r8 license:
+musl-1.2.5-r9 license:
 MIT
 
 ```
@@ -1094,16 +1094,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r8 description:
+musl-utils-1.2.5-r9 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r8 webpage:
+musl-utils-1.2.5-r9 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r8 installed size:
+musl-utils-1.2.5-r9 installed size:
 102 KiB
 
-musl-utils-1.2.5-r8 license:
+musl-utils-1.2.5-r9 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -1179,16 +1179,16 @@ LGPL-2.0-or-later
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.2-r4 description:
+openssl-3.3.3-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.2-r4 webpage:
+openssl-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.3.2-r4 installed size:
-765 KiB
+openssl-3.3.3-r0 installed size:
+769 KiB
 
-openssl-3.3.2-r4 license:
+openssl-3.3.3-r0 license:
 Apache-2.0
 
 ```
@@ -1315,16 +1315,16 @@ ISC
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.47.1-r0 description:
+sqlite-libs-3.48.0-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.47.1-r0 webpage:
+sqlite-libs-3.48.0-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.47.1-r0 installed size:
-1477 KiB
+sqlite-libs-3.48.0-r0 installed size:
+1549 KiB
 
-sqlite-libs-3.47.1-r0 license:
+sqlite-libs-3.48.0-r0 license:
 blessing
 
 ```
@@ -1332,16 +1332,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r9 description:
+ssl_client-1.37.0-r12 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r9 webpage:
+ssl_client-1.37.0-r12 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r9 installed size:
+ssl_client-1.37.0-r12 installed size:
 14 KiB
 
-ssl_client-1.37.0-r9 license:
+ssl_client-1.37.0-r12 license:
 GPL-2.0-only
 
 ```
@@ -1349,16 +1349,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2024b-r1 description:
+tzdata-2025a-r0 description:
 Timezone data
 
-tzdata-2024b-r1 webpage:
+tzdata-2025a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2024b-r1 installed size:
-434 KiB
+tzdata-2025a-r0 installed size:
+433 KiB
 
-tzdata-2024b-r1 license:
+tzdata-2025a-r0 license:
 Public-Domain
 
 ```
