@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:2e963bc019dc8875909a9f5cce12725061a222eb852832b7515027078424d38c`
+- Image ID: `sha256:50ee238b0c708f7e1044a86268e3bade118220df66c0859ef262b472cf06356e`
 - Created: `2025-01-22T19:41:06Z`
 - Virtual Size: ~ 56.16 Mb  
   (total size of all layers on-disk)
@@ -191,16 +191,16 @@ bzip2-1.0.6
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.2-r1 description:
+libcrypto3-3.3.3-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.2-r1 webpage:
+libcrypto3-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.2-r1 installed size:
+libcrypto3-3.3.3-r0 installed size:
 4660 KiB
 
-libcrypto3-3.3.2-r1 license:
+libcrypto3-3.3.3-r0 license:
 Apache-2.0
 
 ```
@@ -259,16 +259,16 @@ X11
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.2-r1 description:
+libssl3-3.3.3-r0 description:
 SSL shared libraries
 
-libssl3-3.3.2-r1 webpage:
+libssl3-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.2-r1 installed size:
-796 KiB
+libssl3-3.3.3-r0 installed size:
+800 KiB
 
-libssl3-3.3.2-r1 license:
+libssl3-3.3.3-r0 license:
 Apache-2.0
 
 ```
@@ -293,16 +293,16 @@ BSD-3-Clause
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r0 description:
+musl-1.2.5-r1 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r0 webpage:
+musl-1.2.5-r1 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r0 installed size:
+musl-1.2.5-r1 installed size:
 652 KiB
 
-musl-1.2.5-r0 license:
+musl-1.2.5-r1 license:
 MIT
 
 ```
@@ -310,16 +310,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r0 description:
+musl-utils-1.2.5-r1 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r0 webpage:
+musl-utils-1.2.5-r1 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r0 installed size:
+musl-utils-1.2.5-r1 installed size:
 128 KiB
 
-musl-utils-1.2.5-r0 license:
+musl-utils-1.2.5-r1 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -412,16 +412,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2024b-r0 description:
+tzdata-2025a-r0 description:
 Timezone data
 
-tzdata-2024b-r0 webpage:
+tzdata-2025a-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2024b-r0 installed size:
+tzdata-2025a-r0 installed size:
 1512 KiB
 
-tzdata-2024b-r0 license:
+tzdata-2025a-r0 license:
 Public-Domain
 
 ```
