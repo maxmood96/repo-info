@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:282bd1664cf1fccccf9f225118e31f9352f1f93e4d0ad485c92e74ec6b11ebd1`
+- Image ID: `sha256:26b2eb03618e749084668eaff68cff8f81dda12d06ac641be7a6398b82a6f25b`
 - Created: `2023-10-02T18:42:41Z`
-- Virtual Size: ~ 25.43 Mb  
+- Virtual Size: ~ 25.44 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -170,16 +170,16 @@ BSD-2-Clause AND BSD-3-Clause
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.1.7-r1 description:
+libcrypto3-3.1.8-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.1.7-r1 webpage:
+libcrypto3-3.1.8-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.1.7-r1 installed size:
-4480 KiB
+libcrypto3-3.1.8-r0 installed size:
+4484 KiB
 
-libcrypto3-3.1.7-r1 license:
+libcrypto3-3.1.8-r0 license:
 Apache-2.0
 
 ```
@@ -187,16 +187,16 @@ Apache-2.0
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.1.7-r1 description:
+libssl3-3.1.8-r0 description:
 SSL shared libraries
 
-libssl3-3.1.7-r1 webpage:
+libssl3-3.1.8-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.1.7-r1 installed size:
+libssl3-3.1.8-r0 installed size:
 552 KiB
 
-libssl3-3.1.7-r1 license:
+libssl3-3.1.8-r0 license:
 Apache-2.0
 
 ```
@@ -204,16 +204,16 @@ Apache-2.0
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.4-r2 description:
+musl-1.2.4-r3 description:
 the musl c library (libc) implementation
 
-musl-1.2.4-r2 webpage:
+musl-1.2.4-r3 webpage:
 https://musl.libc.org/
 
-musl-1.2.4-r2 installed size:
+musl-1.2.4-r3 installed size:
 620 KiB
 
-musl-1.2.4-r2 license:
+musl-1.2.4-r3 license:
 MIT
 
 ```
@@ -221,16 +221,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.4-r2 description:
+musl-utils-1.2.4-r3 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.4-r2 webpage:
+musl-utils-1.2.4-r3 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.4-r2 installed size:
+musl-utils-1.2.4-r3 installed size:
 132 KiB
 
-musl-utils-1.2.4-r2 license:
+musl-utils-1.2.4-r3 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
