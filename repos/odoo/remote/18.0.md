@@ -281,7 +281,7 @@ $ docker pull odoo@sha256:59ccc0584a4a870b931ab3ec2af0fe87bb92e165ada2a52e62054d
 
 -	Layers:
 	-	`sha256:f575e9c1a9ac1b41123a687b20ad6d8cd3b5aa009b0ab3595ef98d6d4828fb2d`  
-		Last Modified: Mon, 10 Feb 2025 19:48:45 GMT  
+		Last Modified: Mon, 17 Feb 2025 08:12:36 GMT  
 		Size: 58.5 MB (58482970 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:bcd59be01d2a10a58f34db4d5f1ff9ee63bd876e295ac01bc9ee47d9a89d609b`  
