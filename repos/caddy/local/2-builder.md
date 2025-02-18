@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d8ab54db245033e948266a1885f7a55d71d0e09bd760fd9b6bbccc3299d11d37`
+- Image ID: `sha256:4c2ed03f0ed7ae14b85040ad36bc6008712203d454b13cbadf8abb8e1a7447ef`
 - Created: `2025-01-08T17:30:49Z`
 - Virtual Size: ~ 262.18 Mb  
   (total size of all layers on-disk)
@@ -312,16 +312,16 @@ BSD-3-Clause OR GPL-2.0-only
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.2-r1 description:
+libcrypto3-3.3.3-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.2-r1 webpage:
+libcrypto3-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.2-r1 installed size:
+libcrypto3-3.3.3-r0 installed size:
 4660 KiB
 
-libcrypto3-3.3.2-r1 license:
+libcrypto3-3.3.3-r0 license:
 Apache-2.0
 
 ```
@@ -329,16 +329,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.11.1-r0 description:
+libcurl-8.12.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.11.1-r0 webpage:
+libcurl-8.12.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.11.1-r0 installed size:
-640 KiB
+libcurl-8.12.1-r0 installed size:
+644 KiB
 
-libcurl-8.11.1-r0 license:
+libcurl-8.12.1-r0 license:
 curl
 
 ```
@@ -397,16 +397,16 @@ MIT
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.2-r1 description:
+libssl3-3.3.3-r0 description:
 SSL shared libraries
 
-libssl3-3.3.2-r1 webpage:
+libssl3-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.2-r1 installed size:
-796 KiB
+libssl3-3.3.3-r0 installed size:
+800 KiB
 
-libssl3-3.3.2-r1 license:
+libssl3-3.3.3-r0 license:
 Apache-2.0
 
 ```
@@ -431,16 +431,16 @@ GPL-2.0-or-later OR LGPL-3.0-or-later
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r0 description:
+musl-1.2.5-r1 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r0 webpage:
+musl-1.2.5-r1 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r0 installed size:
+musl-1.2.5-r1 installed size:
 652 KiB
 
-musl-1.2.5-r0 license:
+musl-1.2.5-r1 license:
 MIT
 
 ```
@@ -448,16 +448,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r0 description:
+musl-utils-1.2.5-r1 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r0 webpage:
+musl-utils-1.2.5-r1 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r0 installed size:
+musl-utils-1.2.5-r1 installed size:
 128 KiB
 
-musl-utils-1.2.5-r0 license:
+musl-utils-1.2.5-r1 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
