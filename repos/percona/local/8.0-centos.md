@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ec77a330f973be29ef8afadc106fc3fd0c00b759adc712c2e2f5fd132dc4fea8`
+- Image ID: `sha256:9edd9e299276142eefc649135805ad3cdfa3286411afc9bed5cd4ed2c94b2f94`
 - Created: `2025-01-08T11:00:36Z`
 - Virtual Size: ~ 1.38 Gb  
   (total size of all layers on-disk)
@@ -25,7 +25,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-02-06T04:39:35Z`
+  - `build-date=2025-02-13T04:15:47Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -38,10 +38,10 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `release=1738816775`
+  - `release=1739420147`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://www.redhat.com`
-  - `vcs-ref=adfffabe9acacc27d15fc0ceb8e083254ca7b450`
+  - `vcs-ref=c0546ad1ce412f8077a547cb8d0d68d04f08815c`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.5`
@@ -651,11 +651,16 @@ $ dnf --quiet download --source --url libassuan-2.5.5-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libassuan-2.5.5-3.el9.src.rpm
 ```
 
-### `rpm` package: `libatomic-11.5.0-2.el9.x86_64`
+### `rpm` package: `libatomic-11.5.0-5.el9_5.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libatomic-11.5.0-5.el9_5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gcc-11.5.0-5.el9_5.src.rpm
+```
 
 ### `rpm` package: `libattr-2.5.1-3.el9.x86_64`
 
@@ -800,11 +805,16 @@ $ dnf --quiet download --source --url libffi-3.4.2-8.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libffi-3.4.2-8.el9.src.rpm
 ```
 
-### `rpm` package: `libgcc-11.5.0-2.el9.x86_64`
+### `rpm` package: `libgcc-11.5.0-5.el9_5.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libgcc-11.5.0-5.el9_5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gcc-11.5.0-5.el9_5.src.rpm
+```
 
 ### `rpm` package: `libgcrypt-1.10.0-11.el9.x86_64`
 
@@ -1048,11 +1058,16 @@ $ dnf --quiet download --source --url libsolv-0.7.24-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libsolv-0.7.24-3.el9.src.rpm
 ```
 
-### `rpm` package: `libstdc++-11.5.0-2.el9.x86_64`
+### `rpm` package: `libstdc++-11.5.0-5.el9_5.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+ and GPLv3+ with exceptions and GPLv2+ with exceptions and LGPLv2+ and BSD
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libstdc++-11.5.0-5.el9_5
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/gcc-11.5.0-5.el9_5.src.rpm
+```
 
 ### `rpm` package: `libtasn1-4.16.0-8.el9_1.x86_64`
 
@@ -1142,11 +1157,16 @@ $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.13-6.el9_4.x86_64`
+### `rpm` package: `libxml2-2.9.13-6.el9_5.1.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libxml2-2.9.13-6.el9_5.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-6.el9_5.1.src.rpm
+```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
 
@@ -1313,17 +1333,27 @@ $ dnf --quiet download --source --url openldap-2.6.6-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openldap-2.6.6-3.el9.src.rpm
 ```
 
-### `rpm` package: `openssl-3.2.2-6.el9_5.x86_64`
+### `rpm` package: `openssl-3.2.2-6.el9_5.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
 
-### `rpm` package: `openssl-devel-3.2.2-6.el9_5.x86_64`
+```console
+$ dnf --quiet download --source --url openssl-3.2.2-6.el9_5.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.2.2-6.el9_5.1.src.rpm
+```
+
+### `rpm` package: `openssl-devel-3.2.2-6.el9_5.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url openssl-devel-3.2.2-6.el9_5.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.2.2-6.el9_5.1.src.rpm
+```
 
 ### `rpm` package: `openssl-fips-provider-3.0.7-6.el9_5.x86_64`
 
@@ -1347,11 +1377,16 @@ $ dnf --quiet download --source --url openssl-fips-provider-so-3.0.7-6.el9_5
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-fips-provider-3.0.7-6.el9_5.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-3.2.2-6.el9_5.x86_64`
+### `rpm` package: `openssl-libs-3.2.2-6.el9_5.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 2.0
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url openssl-libs-3.2.2-6.el9_5.1
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/o/openssl-3.2.2-6.el9_5.1.src.rpm
+```
 
 ### `rpm` package: `p11-kit-0.25.3-3.el9_5.x86_64`
 
@@ -1431,7 +1466,7 @@ Licenses (from `rpm --query`): GPLv2
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-release-1.0-29.noarch`
+### `rpm` package: `percona-release-1.0-30.noarch`
 
 Licenses (from `rpm --query`): GPL-3.0+
 
