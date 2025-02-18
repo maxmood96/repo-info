@@ -65,7 +65,7 @@ $ docker pull clearlinux@sha256:44ce812ea5f0a464b838f3c69f7ad5f9fc8b42e885b1bb4c
 
 -	Layers:
 	-	`sha256:d61a2ac69a90a5cec059104eaa2555d001114bc1410aab76099a4c55724f455d`  
-		Last Modified: Mon, 10 Feb 2025 23:27:32 GMT  
+		Last Modified: Mon, 17 Feb 2025 16:14:47 GMT  
 		Size: 6.3 KB (6275 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -129,6 +129,6 @@ $ docker pull clearlinux@sha256:44ce812ea5f0a464b838f3c69f7ad5f9fc8b42e885b1bb4c
 
 -	Layers:
 	-	`sha256:d61a2ac69a90a5cec059104eaa2555d001114bc1410aab76099a4c55724f455d`  
-		Last Modified: Mon, 10 Feb 2025 23:27:32 GMT  
+		Last Modified: Mon, 17 Feb 2025 16:14:47 GMT  
 		Size: 6.3 KB (6275 bytes)  
 		MIME: application/vnd.in-toto+json
