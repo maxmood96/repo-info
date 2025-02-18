@@ -1173,21 +1173,13 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed6t64/copyright`, `/usr/share/d
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nettle=3.10-1
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.10-1.dsc' nettle_3.10-1.dsc 2276 SHA256:25c9563ad861d8c62246687cc1aaace7d897db0e1aa287ef68485b89687aa739
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.10.orig.tar.gz' nettle_3.10.orig.tar.gz 2640485 SHA256:b4c518adb174e484cb4acea54118f02380c7133771e7e9beb98a0787194ee47c
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.10.orig.tar.gz.asc' nettle_3.10.orig.tar.gz.asc 573 SHA256:83f20f4bb5cc18335dacab8b8d01ddbae1b28453d889c5efcc2123987a8e09ca
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.10-1.debian.tar.xz' nettle_3.10-1.debian.tar.xz 24936 SHA256:fd7181ca135b8a560b048ffba5b9f75e2ce7d0d61d3223c278c77ea89500b660
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nettle/3.10-1/
 
-- https://sources.debian.net/src/nettle/3.10-1/ (for browsing the source)
-- https://sources.debian.net/src/nettle/3.10-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nettle/3.10-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.4.0-2`
 
@@ -1306,21 +1298,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.40.0-8
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.0-8.dsc' perl_5.40.0-8.dsc 2933 SHA256:8e28c6d3de17f273c8c56888c6e9ae18f76f680e5bb4f805b4abb5f8d1da5387
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.0.orig-regen-configure.tar.xz' perl_5.40.0.orig-regen-configure.tar.xz 421080 SHA256:9b1f7f1f680cfd0174d1e11b4f8d06cce079798a0549f083f1c9ba15156be211
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.0.orig.tar.xz' perl_5.40.0.orig.tar.xz 13804184 SHA256:d5325300ad267624cb0b7d512cfdfcd74fa7fe00c455c5b51a6bd53e5e199ef9
-'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.0-8.debian.tar.xz' perl_5.40.0-8.debian.tar.xz 168236 SHA256:dc3776e2abbef5be6d533b8f9ce926b5770ae36025386679476fdf237e33f736
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/perl/5.40.0-8/
 
-- https://sources.debian.net/src/perl/5.40.0-8/ (for browsing the source)
-- https://sources.debian.net/src/perl/5.40.0-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/perl/5.40.0-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rust-sequoia-sqv=1.2.1-5`
 
@@ -1388,20 +1372,13 @@ Licenses: (parsed from: `/usr/share/doc/login.defs/copyright`, `/usr/share/doc/p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.16.0-7
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0-7.dsc' shadow_4.16.0-7.dsc 2614 SHA256:c43f54503e32265b335a5a26c49b98371277dba2f8d189f2a76ff64365f94003
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0.orig.tar.xz' shadow_4.16.0.orig.tar.xz 2053720 SHA256:a0255570541a356c3718966987c8be0658691fda804826fda7576c8e69e0cfda
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0-7.debian.tar.xz' shadow_4.16.0-7.debian.tar.xz 170412 SHA256:24af58e3025ca769fcd9ce3e08f21059dcb85c3b14df93687c2b3d4cbace71d2
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.16.0-7/
 
-- https://sources.debian.net/src/shadow/1:4.16.0-7/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.16.0-7/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.16.0-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `systemd=257.2-3`
 
