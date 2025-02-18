@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ab0f02d500ba7204038aef63f9b340483d8c3f30bcb6fbe3bc3ea8f6cf987650`
+- Image ID: `sha256:f5033a7b311250420a7925f2262897ad1c4ee92af2beb74ad9d0d0d743071fec`
 - Created: `2025-02-11T00:01:46Z`
-- Virtual Size: ~ 192.27 Mb  
+- Virtual Size: ~ 185.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.3`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.3.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.3.tar.xz.asc`
-  - `PHP_SHA256=5c42173cbde7d0add8249c2e8a0c19ae271f41d8c47d67d72bdf91a88dcc7e4b`
+  - `PHP_VERSION=8.4.4`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.4.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.4.tar.xz.asc`
+  - `PHP_SHA256=05a6c9a2cc894dd8be719ecab221b311886d5e0c02cb6fac648dd9b3459681ac`
   - `DRUPAL_VERSION=11.1.2`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
@@ -97,16 +97,16 @@ MIT
 ### `apk` package: `alpine-release`
 
 ```console
-alpine-release-3.21.2-r0 description:
+alpine-release-3.21.3-r0 description:
 Alpine release data
 
-alpine-release-3.21.2-r0 webpage:
+alpine-release-3.21.3-r0 webpage:
 https://alpinelinux.org
 
-alpine-release-3.21.2-r0 installed size:
+alpine-release-3.21.3-r0 installed size:
 346 B
 
-alpine-release-3.21.2-r0 license:
+alpine-release-3.21.3-r0 license:
 MIT
 
 ```
@@ -114,16 +114,16 @@ MIT
 ### `apk` package: `apk-tools`
 
 ```console
-apk-tools-2.14.6-r2 description:
+apk-tools-2.14.6-r3 description:
 Alpine Package Keeper - package manager for alpine
 
-apk-tools-2.14.6-r2 webpage:
+apk-tools-2.14.6-r3 webpage:
 https://gitlab.alpinelinux.org/alpine/apk-tools
 
-apk-tools-2.14.6-r2 installed size:
+apk-tools-2.14.6-r3 installed size:
 247 KiB
 
-apk-tools-2.14.6-r2 license:
+apk-tools-2.14.6-r3 license:
 GPL-2.0-only
 
 ```
@@ -165,16 +165,16 @@ MIT
 ### `apk` package: `busybox`
 
 ```console
-busybox-1.37.0-r9 description:
+busybox-1.37.0-r12 description:
 Size optimized toolbox of many common UNIX utilities
 
-busybox-1.37.0-r9 webpage:
+busybox-1.37.0-r12 webpage:
 https://busybox.net/
 
-busybox-1.37.0-r9 installed size:
+busybox-1.37.0-r12 installed size:
 798 KiB
 
-busybox-1.37.0-r9 license:
+busybox-1.37.0-r12 license:
 GPL-2.0-only
 
 ```
@@ -182,16 +182,16 @@ GPL-2.0-only
 ### `apk` package: `busybox-binsh`
 
 ```console
-busybox-binsh-1.37.0-r9 description:
+busybox-binsh-1.37.0-r12 description:
 busybox ash /bin/sh
 
-busybox-binsh-1.37.0-r9 webpage:
+busybox-binsh-1.37.0-r12 webpage:
 https://busybox.net/
 
-busybox-binsh-1.37.0-r9 installed size:
+busybox-binsh-1.37.0-r12 installed size:
 1 B
 
-busybox-binsh-1.37.0-r9 license:
+busybox-binsh-1.37.0-r12 license:
 GPL-2.0-only
 
 ```
@@ -250,16 +250,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.11.1-r0 description:
+curl-8.12.1-r0 description:
 URL retrival utility and library
 
-curl-8.11.1-r0 webpage:
+curl-8.12.1-r0 webpage:
 https://curl.se/
 
-curl-8.11.1-r0 installed size:
-242 KiB
+curl-8.12.1-r0 installed size:
+246 KiB
 
-curl-8.11.1-r0 license:
+curl-8.12.1-r0 license:
 curl
 
 ```
@@ -335,16 +335,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.11.1-r0 description:
+libcurl-8.12.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.11.1-r0 webpage:
+libcurl-8.12.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.11.1-r0 installed size:
-620 KiB
+libcurl-8.12.1-r0 installed size:
+628 KiB
 
-libcurl-8.11.1-r0 license:
+libcurl-8.12.1-r0 license:
 curl
 
 ```
@@ -590,16 +590,16 @@ BSD-3-Clause
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r8 description:
+musl-1.2.5-r9 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r8 webpage:
+musl-1.2.5-r9 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r8 installed size:
+musl-1.2.5-r9 installed size:
 646 KiB
 
-musl-1.2.5-r8 license:
+musl-1.2.5-r9 license:
 MIT
 
 ```
@@ -607,16 +607,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r8 description:
+musl-utils-1.2.5-r9 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r8 webpage:
+musl-utils-1.2.5-r9 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r8 installed size:
+musl-utils-1.2.5-r9 installed size:
 102 KiB
 
-musl-utils-1.2.5-r8 license:
+musl-utils-1.2.5-r9 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -726,16 +726,16 @@ GPL-2.0-only
 ### `apk` package: `sqlite-libs`
 
 ```console
-sqlite-libs-3.47.1-r0 description:
+sqlite-libs-3.48.0-r0 description:
 C library that implements an SQL database engine (libraries)
 
-sqlite-libs-3.47.1-r0 webpage:
+sqlite-libs-3.48.0-r0 webpage:
 https://www.sqlite.org/
 
-sqlite-libs-3.47.1-r0 installed size:
-1477 KiB
+sqlite-libs-3.48.0-r0 installed size:
+1549 KiB
 
-sqlite-libs-3.47.1-r0 license:
+sqlite-libs-3.48.0-r0 license:
 blessing
 
 ```
@@ -743,16 +743,16 @@ blessing
 ### `apk` package: `ssl_client`
 
 ```console
-ssl_client-1.37.0-r9 description:
+ssl_client-1.37.0-r12 description:
 External ssl_client for busybox wget
 
-ssl_client-1.37.0-r9 webpage:
+ssl_client-1.37.0-r12 webpage:
 https://busybox.net/
 
-ssl_client-1.37.0-r9 installed size:
+ssl_client-1.37.0-r12 installed size:
 14 KiB
 
-ssl_client-1.37.0-r9 license:
+ssl_client-1.37.0-r12 license:
 GPL-2.0-only
 
 ```
