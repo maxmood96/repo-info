@@ -2678,20 +2678,13 @@ Licenses: (parsed from: `/usr/share/doc/libexif-dev/copyright`, `/usr/share/doc/
 - `MIT`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libexif=0.6.24-2
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.24-2.dsc' libexif_0.6.24-2.dsc 2091 SHA256:e69c239fa14180ec280076d697e023be1373be16f2df6fdef7c4cdb02947a923
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.24.orig.tar.gz' libexif_0.6.24.orig.tar.gz 1140079 SHA256:d3fb7c47829ec4d2def39aa38f4c35a0891763448a05dbf216a329a12bf198f9
-'http://deb.debian.org/debian/pool/main/libe/libexif/libexif_0.6.24-2.debian.tar.xz' libexif_0.6.24-2.debian.tar.xz 11476 SHA256:fc078816f7349e8e674f40142589bf5aed8b4ba5f5d5cbca023847046f110af8
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libexif/0.6.24-2/
 
-- https://sources.debian.net/src/libexif/0.6.24-2/ (for browsing the source)
-- https://sources.debian.net/src/libexif/0.6.24-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libexif/0.6.24-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.4.6-1`
 
@@ -3009,20 +3002,13 @@ Licenses: (parsed from: `/usr/share/doc/libmaxminddb-dev/copyright`, `/usr/share
 - `LGPL-3`
 - `LGPL-3.0+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libmaxminddb=1.11.0-1
-'http://deb.debian.org/debian/pool/main/libm/libmaxminddb/libmaxminddb_1.11.0-1.dsc' libmaxminddb_1.11.0-1.dsc 2326 SHA256:a6b4ce6d7d0942463418b7fe9ac1e8a7c152e2f3ef29b271d44aed7dd85e7313
-'http://deb.debian.org/debian/pool/main/libm/libmaxminddb/libmaxminddb_1.11.0.orig.tar.gz' libmaxminddb_1.11.0.orig.tar.gz 367052 SHA256:bfecdff182212830929b4e1e3b43f0448b1dc03c489d26112ff2ac21731cfa6d
-'http://deb.debian.org/debian/pool/main/libm/libmaxminddb/libmaxminddb_1.11.0-1.debian.tar.xz' libmaxminddb_1.11.0-1.debian.tar.xz 6888 SHA256:9c34a5d629ea0917c61defbe6adaceaaaf9c21d39919f931d7b7d185aaffb52e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libmaxminddb/1.11.0-1/
 
-- https://sources.debian.net/src/libmaxminddb/1.11.0-1/ (for browsing the source)
-- https://sources.debian.net/src/libmaxminddb/1.11.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libmaxminddb/1.11.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libmd=1.1.0-2`
 
@@ -3184,20 +3170,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-rsvg-2.0/copyright`, `/usr/share/
 - `Unlicense,`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris librsvg=2.59.1+dfsg-1
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.59.1%2bdfsg-1.dsc' librsvg_2.59.1+dfsg-1.dsc 3046 SHA256:9ea3b8bf01d34e449e6f5744b332962265adb750466928cf684168b78f65831c
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.59.1%2bdfsg.orig.tar.xz' librsvg_2.59.1+dfsg.orig.tar.xz 6113468 SHA256:62e81bbaa8184e2394142d57d85c9634899fbd6c8dfc0f5cc78ae10f37519925
-'http://deb.debian.org/debian/pool/main/libr/librsvg/librsvg_2.59.1%2bdfsg-1.debian.tar.xz' librsvg_2.59.1+dfsg-1.debian.tar.xz 17809436 SHA256:5edf54118b589cfb03ad3dc8092f879ced507361c7744e5198c95d419a3336b6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/librsvg/2.59.1+dfsg-1/
 
-- https://sources.debian.net/src/librsvg/2.59.1+dfsg-1/ (for browsing the source)
-- https://sources.debian.net/src/librsvg/2.59.1+dfsg-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/librsvg/2.59.1+dfsg-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libseccomp=2.5.5-2`
 
@@ -3381,21 +3360,13 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`, `/usr/share/doc/l
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.19.0-3
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0-3.dsc' libtasn1-6_4.19.0-3.dsc 2662 SHA256:7fd9618be5b99035c7387d969b73365a57b1f6f01ec4abe0af332829af718190
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0.orig.tar.gz' libtasn1-6_4.19.0.orig.tar.gz 1786576 SHA256:1613f0ac1cf484d6ec0ce3b8c06d56263cc7242f1c23b30d82d23de345a63f7a
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0.orig.tar.gz.asc' libtasn1-6_4.19.0.orig.tar.gz.asc 228 SHA256:8410c0c004f3509c218a98b276b3308b9c46f48068e8b1a6d9ebfd61ea9f357a
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0-3.debian.tar.xz' libtasn1-6_4.19.0-3.debian.tar.xz 22084 SHA256:acb32dc03d8c2aeb10e0fb1c2a0247efdab0a6dc5e8f8a4d3cdcfe5ad26bb0df
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtasn1-6/4.19.0-3/
 
-- https://sources.debian.net/src/libtasn1-6/4.19.0-3/ (for browsing the source)
-- https://sources.debian.net/src/libtasn1-6/4.19.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtasn1-6/4.19.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtext-charwidth-perl=0.04-11`
 
@@ -5505,20 +5476,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.2-3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.2-3.dsc' systemd_257.2-3.dsc 8495 SHA256:94246e359047ba8dacc36feb8ecd52d2bf97fc749d294fd0e61c5543d06e6a9f
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.2.orig.tar.gz' systemd_257.2.orig.tar.gz 16189809 SHA256:7f2bc3253e4f87578132c5e433ef9ff7e8fee01d9eb5a5b7c64376d617f694d0
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.2-3.debian.tar.xz' systemd_257.2-3.debian.tar.xz 178316 SHA256:6f2c670eccacba9efe3a44330eb7f1ae5a8fe522638237d827731fa0b4804820
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257.2-3/
 
-- https://sources.debian.net/src/systemd/257.2-3/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.2-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.13-1`
 
@@ -5536,20 +5500,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.13-1
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.13-1.dsc' sysvinit_3.13-1.dsc 2347 SHA256:0a0d5e69f8c004ec23ad69272e56f972eafca33b829dcb06a66e46f7226b7f66
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.13.orig.tar.gz' sysvinit_3.13.orig.tar.gz 515598 SHA256:1e5515774de6973ee1df3360c37327ea48f7930f1162a7dc9694aaa098e21b81
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.13-1.debian.tar.xz' sysvinit_3.13-1.debian.tar.xz 121064 SHA256:b354fa88436798e18f13b4a12ded018c21af57022d962d949161988124b8c95d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.13-1/
 
-- https://sources.debian.net/src/sysvinit/3.13-1/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.13-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.13-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-3.1`
 
