@@ -296,11 +296,11 @@ $ docker pull gcc@sha256:f0bd312fad67b463123cd2db7b15f75d254017b34529bb43df84dba
 
 -	Layers:
 	-	`sha256:fcc60183f657042e48eb0911e726982cf05bbb246c2467e5b81e302f0c817d89`  
-		Last Modified: Wed, 05 Feb 2025 13:24:47 GMT  
+		Last Modified: Mon, 17 Feb 2025 14:52:40 GMT  
 		Size: 15.3 MB (15310137 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:597fc0c1b04fbe4dd438a24ad449aa01b79789d88be0ca52c4dc0b5733cd1abf`  
-		Last Modified: Wed, 05 Feb 2025 13:24:46 GMT  
+		Last Modified: Mon, 17 Feb 2025 14:52:40 GMT  
 		Size: 29.9 KB (29887 bytes)  
 		MIME: application/vnd.in-toto+json
 
