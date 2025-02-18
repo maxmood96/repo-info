@@ -1,10 +1,10 @@
-# `php:8.4.3-zts-alpine3.20`
+# `php:8.4.4-zts-alpine3.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6575642d212578773f66bc0ad7893c0354f2268495af306652085f02506b55a4`
-- Created: `2025-01-17T01:46:40Z`
-- Virtual Size: ~ 134.78 Mb  
+- Image ID: `sha256:cc2d72ff06209f8e46ebd6c2da7ac26244fc284ca9fadd4ca1e4943b2b3c2a55`
+- Created: `2025-02-13T21:31:38Z`
+- Virtual Size: ~ 134.83 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.3`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.3.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.3.tar.xz.asc`
-  - `PHP_SHA256=5c42173cbde7d0add8249c2e8a0c19ae271f41d8c47d67d72bdf91a88dcc7e4b`
+  - `PHP_VERSION=8.4.4`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.4.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.4.tar.xz.asc`
+  - `PHP_SHA256=05a6c9a2cc894dd8be719ecab221b311886d5e0c02cb6fac648dd9b3459681ac`
 
 ## `apk` (`.apk`-based packages)
 
@@ -214,16 +214,16 @@ MPL-2.0 AND MIT
 ### `apk` package: `curl`
 
 ```console
-curl-8.11.1-r0 description:
+curl-8.12.1-r0 description:
 URL retrival utility and library
 
-curl-8.11.1-r0 webpage:
+curl-8.12.1-r0 webpage:
 https://curl.se/
 
-curl-8.11.1-r0 installed size:
-256 KiB
+curl-8.12.1-r0 installed size:
+260 KiB
 
-curl-8.11.1-r0 license:
+curl-8.12.1-r0 license:
 curl
 
 ```
@@ -265,16 +265,16 @@ LGPL-2.1-or-later AND GPL-2.0-or-later
 ### `apk` package: `libcrypto3`
 
 ```console
-libcrypto3-3.3.2-r1 description:
+libcrypto3-3.3.3-r0 description:
 Crypto library from openssl
 
-libcrypto3-3.3.2-r1 webpage:
+libcrypto3-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-libcrypto3-3.3.2-r1 installed size:
+libcrypto3-3.3.3-r0 installed size:
 4660 KiB
 
-libcrypto3-3.3.2-r1 license:
+libcrypto3-3.3.3-r0 license:
 Apache-2.0
 
 ```
@@ -282,16 +282,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.11.1-r0 description:
+libcurl-8.12.1-r0 description:
 The multiprotocol file transfer library
 
-libcurl-8.11.1-r0 webpage:
+libcurl-8.12.1-r0 webpage:
 https://curl.se/
 
-libcurl-8.11.1-r0 installed size:
-640 KiB
+libcurl-8.12.1-r0 installed size:
+644 KiB
 
-libcurl-8.11.1-r0 license:
+libcurl-8.12.1-r0 license:
 curl
 
 ```
@@ -384,16 +384,16 @@ ISC
 ### `apk` package: `libssl3`
 
 ```console
-libssl3-3.3.2-r1 description:
+libssl3-3.3.3-r0 description:
 SSL shared libraries
 
-libssl3-3.3.2-r1 webpage:
+libssl3-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-libssl3-3.3.2-r1 installed size:
-796 KiB
+libssl3-3.3.3-r0 installed size:
+800 KiB
 
-libssl3-3.3.2-r1 license:
+libssl3-3.3.3-r0 license:
 Apache-2.0
 
 ```
@@ -435,16 +435,16 @@ MIT
 ### `apk` package: `musl`
 
 ```console
-musl-1.2.5-r0 description:
+musl-1.2.5-r1 description:
 the musl c library (libc) implementation
 
-musl-1.2.5-r0 webpage:
+musl-1.2.5-r1 webpage:
 https://musl.libc.org/
 
-musl-1.2.5-r0 installed size:
+musl-1.2.5-r1 installed size:
 652 KiB
 
-musl-1.2.5-r0 license:
+musl-1.2.5-r1 license:
 MIT
 
 ```
@@ -452,16 +452,16 @@ MIT
 ### `apk` package: `musl-utils`
 
 ```console
-musl-utils-1.2.5-r0 description:
+musl-utils-1.2.5-r1 description:
 the musl c library (libc) implementation
 
-musl-utils-1.2.5-r0 webpage:
+musl-utils-1.2.5-r1 webpage:
 https://musl.libc.org/
 
-musl-utils-1.2.5-r0 installed size:
+musl-utils-1.2.5-r1 installed size:
 128 KiB
 
-musl-utils-1.2.5-r0 license:
+musl-utils-1.2.5-r1 license:
 MIT AND BSD-2-Clause AND GPL-2.0-or-later
 
 ```
@@ -520,16 +520,16 @@ BSD-2-Clause
 ### `apk` package: `openssl`
 
 ```console
-openssl-3.3.2-r1 description:
+openssl-3.3.3-r0 description:
 Toolkit for Transport Layer Security (TLS)
 
-openssl-3.3.2-r1 webpage:
+openssl-3.3.3-r0 webpage:
 https://www.openssl.org/
 
-openssl-3.3.2-r1 installed size:
-784 KiB
+openssl-3.3.3-r0 installed size:
+788 KiB
 
-openssl-3.3.2-r1 license:
+openssl-3.3.3-r0 license:
 Apache-2.0
 
 ```
