@@ -1,19 +1,19 @@
-# `ruby:3.4.1-slim-bullseye`
+# `ruby:3.4.2-slim-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:15f62d4cad64bf5652213521acf60114ff684283f31def6d8e7c5140e4a225b5`
-- Created: `2025-01-14T19:28:22Z`
-- Virtual Size: ~ 189.09 Mb  
+- Image ID: `sha256:4acecf98855521c66e28bb3c7722913bfd9cf845d2b7175dd103f9c2ae84d1c7`
+- Created: `2025-02-15T00:00:36Z`
+- Virtual Size: ~ 156.64 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["irb"]`
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.4.1`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.1.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=018d59ffb52be3c0a6d847e22d3fd7a2c52d0ddfee249d3517a0c8c6dbfa70af`
+  - `RUBY_VERSION=3.4.2`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.2.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=ebf1c2eb58f5da17c23e965d658dd7e6202c5c50f5179154c5574452bef4b3e0`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -234,10 +234,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `bzip2=1.0.8-4`
 - `libbz2-1.0:amd64=1.0.8-4`
 
-Licenses: (parsed from: `/usr/share/doc/bzip2/copyright`, `/usr/share/doc/libbz2-1.0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libbz2-1.0/copyright`)
 
 - `BSD-variant`
 - `GPL-2`
@@ -643,11 +642,9 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libc-bin=2.31-13+deb11u11`
-- `libc-dev-bin=2.31-13+deb11u11`
 - `libc6:amd64=2.31-13+deb11u11`
-- `libc6-dev:amd64=2.31-13+deb11u11`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -671,11 +668,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libgmp-dev:amd64=2:6.2.1+dfsg-1+deb11u1`
 - `libgmp10:amd64=2:6.2.1+dfsg-1+deb11u1`
-- `libgmpxx4ldbl:amd64=2:6.2.1+dfsg-1+deb11u1`
 
-Licenses: (parsed from: `/usr/share/doc/libgmp-dev/copyright`, `/usr/share/doc/libgmp10/copyright`, `/usr/share/doc/libgmpxx4ldbl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 
 - `GPL`
 - `GPL-2`
@@ -966,10 +961,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libffi-dev:amd64=3.3-6`
 - `libffi7:amd64=3.3-6`
 
-Licenses: (parsed from: `/usr/share/doc/libffi-dev/copyright`, `/usr/share/doc/libffi7/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libffi7/copyright`)
 
 - `GPL`
 
@@ -1081,10 +1075,9 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libnsl-dev:amd64=1.3.0-2`
 - `libnsl2:amd64=1.3.0-2`
 
-Licenses: (parsed from: `/usr/share/doc/libnsl-dev/copyright`, `/usr/share/doc/libnsl2/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libnsl2/copyright`)
 
 - `BSD-3-clause`
 - `GPL-2`
@@ -1255,10 +1248,9 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libtirpc-common=1.3.1-1+deb11u1`
-- `libtirpc-dev:amd64=1.3.1-1+deb11u1`
 - `libtirpc3:amd64=1.3.1-1+deb11u1`
 
-Licenses: (parsed from: `/usr/share/doc/libtirpc-common/copyright`, `/usr/share/doc/libtirpc-dev/copyright`, `/usr/share/doc/libtirpc3/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libtirpc-common/copyright`, `/usr/share/doc/libtirpc3/copyright`)
 
 - `BSD-2-Clause`
 - `BSD-3-Clause`
@@ -1324,7 +1316,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libcrypt-dev:amd64=1:4.4.18-4`
 - `libcrypt1:amd64=1:4.4.18-4`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
@@ -1351,9 +1342,8 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `libyaml-0-2:amd64=0.2.2-1`
-- `libyaml-dev:amd64=0.2.2-1`
 
-Licenses: (parsed from: `/usr/share/doc/libyaml-0-2/copyright`, `/usr/share/doc/libyaml-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libyaml-0-2/copyright`)
 
 - `Expat`
 - `permissive`
@@ -1400,38 +1390,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/ (for browsing the source)
 - https://sources.debian.net/src/libzstd/1.4.8+dfsg-2.1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libzstd/1.4.8+dfsg-2.1/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `linux=5.10.226-1`
-
-Binary Packages:
-
-- `linux-libc-dev:amd64=5.10.226-1`
-
-Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
-
-- `BSD-2-clause`
-- `CRYPTOGAMS`
-- `GPL-2`
-- `GPL-2+`
-- `LGPL-2.1`
-- `Unicode-data`
-- `X11`
-- `Xen-interface`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris linux=5.10.226-1
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.226-1.dsc' linux_5.10.226-1.dsc 209423 SHA256:f4c5fb21ff6e3370a0bc082653fecf0754f6de207364ec1952e949b76a03bbdb
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.226.orig.tar.xz' linux_5.10.226.orig.tar.xz 122010948 SHA256:98f9a880ad3521cfc4c94842dc0b760ed630ce369131b3af7ceb5f4415251b9b
-'http://deb.debian.org/debian-security/pool/updates/main/l/linux/linux_5.10.226-1.debian.tar.xz' linux_5.10.226-1.debian.tar.xz 1708652 SHA256:9ea6cfc54485ac70e605965ed360b737c937b714a49b9588e567604d4ffe276f
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/linux/5.10.226-1/ (for browsing the source)
-- https://sources.debian.net/src/linux/5.10.226-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/linux/5.10.226-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lsb=11.1.0`
 
@@ -1514,13 +1472,11 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libncurses6:amd64=6.2+20201114-2+deb11u2`
-- `libncursesw6:amd64=6.2+20201114-2+deb11u2`
 - `libtinfo6:amd64=6.2+20201114-2+deb11u2`
 - `ncurses-base=6.2+20201114-2+deb11u2`
 - `ncurses-bin=6.2+20201114-2+deb11u2`
 
-Licenses: (parsed from: `/usr/share/doc/libncurses6/copyright`, `/usr/share/doc/libncursesw6/copyright`, `/usr/share/doc/libtinfo6/copyright`, `/usr/share/doc/ncurses-base/copyright`, `/usr/share/doc/ncurses-bin/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libtinfo6/copyright`, `/usr/share/doc/ncurses-base/copyright`, `/usr/share/doc/ncurses-bin/copyright`)
 
 - `BSD-3-clause`
 - `MIT/X11`
@@ -1583,7 +1539,6 @@ Other potentially useful URLs:
 
 Binary Packages:
 
-- `libssl-dev:amd64=1.1.1w-0+deb11u2`
 - `libssl1.1:amd64=1.1.1w-0+deb11u2`
 - `openssl=1.1.1w-0+deb11u2`
 
@@ -1766,37 +1721,6 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/perl/5.32.1-4+deb11u4/ (for browsing the source)
 - https://sources.debian.net/src/perl/5.32.1-4+deb11u4/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/perl/5.32.1-4+deb11u4/ (for access to the source package after it no longer exists in the archive)
-
-### `dpkg` source package: `procps=2:3.3.17-5`
-
-Binary Packages:
-
-- `libprocps8:amd64=2:3.3.17-5`
-- `procps=2:3.3.17-5`
-
-Licenses: (parsed from: `/usr/share/doc/libprocps8/copyright`, `/usr/share/doc/procps/copyright`)
-
-- `GPL-2`
-- `GPL-2.0+`
-- `LGPL-2`
-- `LGPL-2.0+`
-- `LGPL-2.1`
-- `LGPL-2.1+`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris procps=2:3.3.17-5
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.17-5.dsc' procps_3.3.17-5.dsc 2136 SHA256:3b1d9a3d3bc9ec24360ed20721d4235fcd4b4dbb9a86c1eba6c42899a50ecff8
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.17.orig.tar.xz' procps_3.3.17.orig.tar.xz 1008428 SHA256:4518b3e7aafd34ec07d0063d250fd474999b20b200218c3ae56f5d2113f141b4
-'http://deb.debian.org/debian/pool/main/p/procps/procps_3.3.17-5.debian.tar.xz' procps_3.3.17-5.debian.tar.xz 28608 SHA256:e6b5f9ef22eca9f03f79dc79b4c389249368216df8702a8cc380e10f29eda8c9
-```
-
-Other potentially useful URLs:
-
-- https://sources.debian.net/src/procps/2:3.3.17-5/ (for browsing the source)
-- https://sources.debian.net/src/procps/2:3.3.17-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/procps/2:3.3.17-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.7-1`
 
@@ -2077,9 +2001,8 @@ Other potentially useful URLs:
 Binary Packages:
 
 - `zlib1g:amd64=1:1.2.11.dfsg-2+deb11u2`
-- `zlib1g-dev:amd64=1:1.2.11.dfsg-2+deb11u2`
 
-Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`, `/usr/share/doc/zlib1g-dev/copyright`)
+Licenses: (parsed from: `/usr/share/doc/zlib1g/copyright`)
 
 - `Zlib`
 
