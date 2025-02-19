@@ -218,11 +218,11 @@ $ docker pull swift@sha256:1ca70b2bd22f92748abdbdf57bb29c73e57f10a1bf6c23e3bb787
 
 -	Layers:
 	-	`sha256:19e807f70c54bd5acb9f98f9af547dcb969b5ea61da1a22f0f03f41a3042e13c`  
-		Last Modified: Tue, 04 Feb 2025 04:52:47 GMT  
+		Last Modified: Wed, 19 Feb 2025 11:25:48 GMT  
 		Size: 8.2 MB (8215544 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f4d1fb1e2b8b9d5535ac280683778f2eaf49352dfa4dc8d9e51a0df771449c68`  
-		Last Modified: Tue, 04 Feb 2025 04:52:46 GMT  
+		Last Modified: Wed, 19 Feb 2025 11:25:42 GMT  
 		Size: 16.3 KB (16301 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -311,11 +311,11 @@ $ docker pull swift@sha256:60b4a22f169902d4712d87d1415c4bb30af8a9f63ff939f592a31
 
 -	Layers:
 	-	`sha256:27ad06410c7e316b4a0cde1e53f6188bd47cc0f7bb88be486b5b0d1c6e3aafe6`  
-		Last Modified: Tue, 04 Feb 2025 18:04:33 GMT  
+		Last Modified: Wed, 19 Feb 2025 11:25:48 GMT  
 		Size: 8.2 MB (8211241 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6ec8e1d44fe0a793b45f70142768d3033a25ba20796265ae157463027cdb15b5`  
-		Last Modified: Tue, 04 Feb 2025 18:04:32 GMT  
+		Last Modified: Wed, 19 Feb 2025 11:25:42 GMT  
 		Size: 16.4 KB (16433 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1511,11 +1511,11 @@ $ docker pull swift@sha256:1ca70b2bd22f92748abdbdf57bb29c73e57f10a1bf6c23e3bb787
 
 -	Layers:
 	-	`sha256:19e807f70c54bd5acb9f98f9af547dcb969b5ea61da1a22f0f03f41a3042e13c`  
-		Last Modified: Tue, 04 Feb 2025 04:52:47 GMT  
+		Last Modified: Wed, 19 Feb 2025 11:25:48 GMT  
 		Size: 8.2 MB (8215544 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f4d1fb1e2b8b9d5535ac280683778f2eaf49352dfa4dc8d9e51a0df771449c68`  
-		Last Modified: Tue, 04 Feb 2025 04:52:46 GMT  
+		Last Modified: Wed, 19 Feb 2025 11:25:42 GMT  
 		Size: 16.3 KB (16301 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1604,11 +1604,11 @@ $ docker pull swift@sha256:60b4a22f169902d4712d87d1415c4bb30af8a9f63ff939f592a31
 
 -	Layers:
 	-	`sha256:27ad06410c7e316b4a0cde1e53f6188bd47cc0f7bb88be486b5b0d1c6e3aafe6`  
-		Last Modified: Tue, 04 Feb 2025 18:04:33 GMT  
+		Last Modified: Wed, 19 Feb 2025 11:25:48 GMT  
 		Size: 8.2 MB (8211241 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6ec8e1d44fe0a793b45f70142768d3033a25ba20796265ae157463027cdb15b5`  
-		Last Modified: Tue, 04 Feb 2025 18:04:32 GMT  
+		Last Modified: Wed, 19 Feb 2025 11:25:42 GMT  
 		Size: 16.4 KB (16433 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3079,11 +3079,11 @@ $ docker pull swift@sha256:1ca70b2bd22f92748abdbdf57bb29c73e57f10a1bf6c23e3bb787
 
 -	Layers:
 	-	`sha256:19e807f70c54bd5acb9f98f9af547dcb969b5ea61da1a22f0f03f41a3042e13c`  
-		Last Modified: Tue, 04 Feb 2025 04:52:47 GMT  
+		Last Modified: Wed, 19 Feb 2025 11:25:48 GMT  
 		Size: 8.2 MB (8215544 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f4d1fb1e2b8b9d5535ac280683778f2eaf49352dfa4dc8d9e51a0df771449c68`  
-		Last Modified: Tue, 04 Feb 2025 04:52:46 GMT  
+		Last Modified: Wed, 19 Feb 2025 11:25:42 GMT  
 		Size: 16.3 KB (16301 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3172,11 +3172,11 @@ $ docker pull swift@sha256:60b4a22f169902d4712d87d1415c4bb30af8a9f63ff939f592a31
 
 -	Layers:
 	-	`sha256:27ad06410c7e316b4a0cde1e53f6188bd47cc0f7bb88be486b5b0d1c6e3aafe6`  
-		Last Modified: Tue, 04 Feb 2025 18:04:33 GMT  
+		Last Modified: Wed, 19 Feb 2025 11:25:48 GMT  
 		Size: 8.2 MB (8211241 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6ec8e1d44fe0a793b45f70142768d3033a25ba20796265ae157463027cdb15b5`  
-		Last Modified: Tue, 04 Feb 2025 18:04:32 GMT  
+		Last Modified: Wed, 19 Feb 2025 11:25:42 GMT  
 		Size: 16.4 KB (16433 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4372,11 +4372,11 @@ $ docker pull swift@sha256:1ca70b2bd22f92748abdbdf57bb29c73e57f10a1bf6c23e3bb787
 
 -	Layers:
 	-	`sha256:19e807f70c54bd5acb9f98f9af547dcb969b5ea61da1a22f0f03f41a3042e13c`  
-		Last Modified: Tue, 04 Feb 2025 04:52:47 GMT  
+		Last Modified: Wed, 19 Feb 2025 11:25:48 GMT  
 		Size: 8.2 MB (8215544 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f4d1fb1e2b8b9d5535ac280683778f2eaf49352dfa4dc8d9e51a0df771449c68`  
-		Last Modified: Tue, 04 Feb 2025 04:52:46 GMT  
+		Last Modified: Wed, 19 Feb 2025 11:25:42 GMT  
 		Size: 16.3 KB (16301 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4465,11 +4465,11 @@ $ docker pull swift@sha256:60b4a22f169902d4712d87d1415c4bb30af8a9f63ff939f592a31
 
 -	Layers:
 	-	`sha256:27ad06410c7e316b4a0cde1e53f6188bd47cc0f7bb88be486b5b0d1c6e3aafe6`  
-		Last Modified: Tue, 04 Feb 2025 18:04:33 GMT  
+		Last Modified: Wed, 19 Feb 2025 11:25:48 GMT  
 		Size: 8.2 MB (8211241 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:6ec8e1d44fe0a793b45f70142768d3033a25ba20796265ae157463027cdb15b5`  
-		Last Modified: Tue, 04 Feb 2025 18:04:32 GMT  
+		Last Modified: Wed, 19 Feb 2025 11:25:42 GMT  
 		Size: 16.4 KB (16433 bytes)  
 		MIME: application/vnd.in-toto+json
 
