@@ -1983,21 +1983,13 @@ Licenses: (parsed from: `/usr/share/doc/libtasn1-6/copyright`)
 - `LGPL`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtasn1-6=4.19.0-3
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0-3.dsc' libtasn1-6_4.19.0-3.dsc 2662 SHA256:7fd9618be5b99035c7387d969b73365a57b1f6f01ec4abe0af332829af718190
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0.orig.tar.gz' libtasn1-6_4.19.0.orig.tar.gz 1786576 SHA256:1613f0ac1cf484d6ec0ce3b8c06d56263cc7242f1c23b30d82d23de345a63f7a
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0.orig.tar.gz.asc' libtasn1-6_4.19.0.orig.tar.gz.asc 228 SHA256:8410c0c004f3509c218a98b276b3308b9c46f48068e8b1a6d9ebfd61ea9f357a
-'http://deb.debian.org/debian/pool/main/libt/libtasn1-6/libtasn1-6_4.19.0-3.debian.tar.xz' libtasn1-6_4.19.0-3.debian.tar.xz 22084 SHA256:acb32dc03d8c2aeb10e0fb1c2a0247efdab0a6dc5e8f8a4d3cdcfe5ad26bb0df
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libtasn1-6/4.19.0-3/
 
-- https://sources.debian.net/src/libtasn1-6/4.19.0-3/ (for browsing the source)
-- https://sources.debian.net/src/libtasn1-6/4.19.0-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libtasn1-6/4.19.0-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libtext-charwidth-perl=0.04-11`
 
@@ -2595,11 +2587,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris nettle=3.10-1
-'http://http.debian.net/debian/pool/main/n/nettle/nettle_3.10-1.dsc' nettle_3.10-1.dsc 2276 SHA256:25c9563ad861d8c62246687cc1aaace7d897db0e1aa287ef68485b89687aa739
-'http://http.debian.net/debian/pool/main/n/nettle/nettle_3.10.orig.tar.gz' nettle_3.10.orig.tar.gz 2640485 SHA256:b4c518adb174e484cb4acea54118f02380c7133771e7e9beb98a0787194ee47c
-'http://http.debian.net/debian/pool/main/n/nettle/nettle_3.10.orig.tar.gz.asc' nettle_3.10.orig.tar.gz.asc 573 SHA256:83f20f4bb5cc18335dacab8b8d01ddbae1b28453d889c5efcc2123987a8e09ca
-'http://http.debian.net/debian/pool/main/n/nettle/nettle_3.10-1.debian.tar.xz' nettle_3.10-1.debian.tar.xz 24936 SHA256:fd7181ca135b8a560b048ffba5b9f75e2ce7d0d61d3223c278c77ea89500b660
+'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.10-1.dsc' nettle_3.10-1.dsc 2276 SHA256:25c9563ad861d8c62246687cc1aaace7d897db0e1aa287ef68485b89687aa739
+'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.10.orig.tar.gz' nettle_3.10.orig.tar.gz 2640485 SHA256:b4c518adb174e484cb4acea54118f02380c7133771e7e9beb98a0787194ee47c
+'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.10.orig.tar.gz.asc' nettle_3.10.orig.tar.gz.asc 573 SHA256:83f20f4bb5cc18335dacab8b8d01ddbae1b28453d889c5efcc2123987a8e09ca
+'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.10-1.debian.tar.xz' nettle_3.10-1.debian.tar.xz 24936 SHA256:fd7181ca135b8a560b048ffba5b9f75e2ce7d0d61d3223c278c77ea89500b660
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/nettle/3.10-1/ (for browsing the source)
+- https://sources.debian.net/src/nettle/3.10-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/nettle/3.10-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nghttp2=1.64.0-1`
 
@@ -2922,11 +2920,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris perl=5.40.0-8
-'http://http.debian.net/debian/pool/main/p/perl/perl_5.40.0-8.dsc' perl_5.40.0-8.dsc 2933 SHA256:8e28c6d3de17f273c8c56888c6e9ae18f76f680e5bb4f805b4abb5f8d1da5387
-'http://http.debian.net/debian/pool/main/p/perl/perl_5.40.0.orig-regen-configure.tar.xz' perl_5.40.0.orig-regen-configure.tar.xz 421080 SHA256:9b1f7f1f680cfd0174d1e11b4f8d06cce079798a0549f083f1c9ba15156be211
-'http://http.debian.net/debian/pool/main/p/perl/perl_5.40.0.orig.tar.xz' perl_5.40.0.orig.tar.xz 13804184 SHA256:d5325300ad267624cb0b7d512cfdfcd74fa7fe00c455c5b51a6bd53e5e199ef9
-'http://http.debian.net/debian/pool/main/p/perl/perl_5.40.0-8.debian.tar.xz' perl_5.40.0-8.debian.tar.xz 168236 SHA256:dc3776e2abbef5be6d533b8f9ce926b5770ae36025386679476fdf237e33f736
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.0-8.dsc' perl_5.40.0-8.dsc 2933 SHA256:8e28c6d3de17f273c8c56888c6e9ae18f76f680e5bb4f805b4abb5f8d1da5387
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.0.orig-regen-configure.tar.xz' perl_5.40.0.orig-regen-configure.tar.xz 421080 SHA256:9b1f7f1f680cfd0174d1e11b4f8d06cce079798a0549f083f1c9ba15156be211
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.0.orig.tar.xz' perl_5.40.0.orig.tar.xz 13804184 SHA256:d5325300ad267624cb0b7d512cfdfcd74fa7fe00c455c5b51a6bd53e5e199ef9
+'http://deb.debian.org/debian/pool/main/p/perl/perl_5.40.0-8.debian.tar.xz' perl_5.40.0-8.debian.tar.xz 168236 SHA256:dc3776e2abbef5be6d533b8f9ce926b5770ae36025386679476fdf237e33f736
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/perl/5.40.0-8/ (for browsing the source)
+- https://sources.debian.net/src/perl/5.40.0-8/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/perl/5.40.0-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `pixman=0.44.0-3`
 
@@ -3327,10 +3331,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris shadow=1:4.16.0-7
-'http://http.debian.net/debian/pool/main/s/shadow/shadow_4.16.0-7.dsc' shadow_4.16.0-7.dsc 2614 SHA256:c43f54503e32265b335a5a26c49b98371277dba2f8d189f2a76ff64365f94003
-'http://http.debian.net/debian/pool/main/s/shadow/shadow_4.16.0.orig.tar.xz' shadow_4.16.0.orig.tar.xz 2053720 SHA256:a0255570541a356c3718966987c8be0658691fda804826fda7576c8e69e0cfda
-'http://http.debian.net/debian/pool/main/s/shadow/shadow_4.16.0-7.debian.tar.xz' shadow_4.16.0-7.debian.tar.xz 170412 SHA256:24af58e3025ca769fcd9ce3e08f21059dcb85c3b14df93687c2b3d4cbace71d2
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0-7.dsc' shadow_4.16.0-7.dsc 2614 SHA256:c43f54503e32265b335a5a26c49b98371277dba2f8d189f2a76ff64365f94003
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0.orig.tar.xz' shadow_4.16.0.orig.tar.xz 2053720 SHA256:a0255570541a356c3718966987c8be0658691fda804826fda7576c8e69e0cfda
+'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.16.0-7.debian.tar.xz' shadow_4.16.0-7.debian.tar.xz 170412 SHA256:24af58e3025ca769fcd9ce3e08f21059dcb85c3b14df93687c2b3d4cbace71d2
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/shadow/1:4.16.0-7/ (for browsing the source)
+- https://sources.debian.net/src/shadow/1:4.16.0-7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/shadow/1:4.16.0-7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `survival=3.8-3-1`
 
@@ -3369,20 +3379,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.2-3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.2-3.dsc' systemd_257.2-3.dsc 8495 SHA256:94246e359047ba8dacc36feb8ecd52d2bf97fc749d294fd0e61c5543d06e6a9f
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.2.orig.tar.gz' systemd_257.2.orig.tar.gz 16189809 SHA256:7f2bc3253e4f87578132c5e433ef9ff7e8fee01d9eb5a5b7c64376d617f694d0
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.2-3.debian.tar.xz' systemd_257.2-3.debian.tar.xz 178316 SHA256:6f2c670eccacba9efe3a44330eb7f1ae5a8fe522638237d827731fa0b4804820
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257.2-3/
 
-- https://sources.debian.net/src/systemd/257.2-3/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.2-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.2-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.13-1`
 
@@ -3400,20 +3403,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.13-1
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.13-1.dsc' sysvinit_3.13-1.dsc 2347 SHA256:0a0d5e69f8c004ec23ad69272e56f972eafca33b829dcb06a66e46f7226b7f66
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.13.orig.tar.gz' sysvinit_3.13.orig.tar.gz 515598 SHA256:1e5515774de6973ee1df3360c37327ea48f7930f1162a7dc9694aaa098e21b81
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.13-1.debian.tar.xz' sysvinit_3.13-1.debian.tar.xz 121064 SHA256:b354fa88436798e18f13b4a12ded018c21af57022d962d949161988124b8c95d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.13-1/
 
-- https://sources.debian.net/src/sysvinit/3.13-1/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.13-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.13-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-3.1`
 
@@ -3661,14 +3657,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:9.1.0967-2
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.0967-2.dsc' vim_9.1.0967-2.dsc 3230 SHA256:91114cecfb7f38503c5a196c859f293afc6fb3055648d8ad6c09cc157a56189a
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.0967.orig.tar.xz' vim_9.1.0967.orig.tar.xz 12152456 SHA256:45f4a66f9e5332cf7ff56e3939e6cf37201ed5f8a5f508882b4d744729125bcf
-'http://http.debian.net/debian/pool/main/v/vim/vim_9.1.0967-2.debian.tar.xz' vim_9.1.0967-2.debian.tar.xz 191000 SHA256:332b33319cb885ee963f27fc90b7602f20d0a48402be19dd424a6a1b6bd0bb16
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/vim/2:9.1.0967-2/
+
 
 ### `dpkg` source package: `wget=1.24.5-2`
 
