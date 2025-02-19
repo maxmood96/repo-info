@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:64fdb015b82bf6e295ce0e544831cbc0b778ba0596619cce43fd060b054907d9`
+- Image ID: `sha256:495f3133feb0824b80f9584800c8354c0c84800b7c4b01e7c3e6a18229fd3156`
 - Created: `2024-09-23T17:02:08Z`
-- Virtual Size: ~ 601.82 Mb  
+- Virtual Size: ~ 602.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-23.0.1+11_openj9-0.48.0`
+  - `JAVA_VERSION=jdk-23.0.2+7_openj9-0.49.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
   - `MAVEN_HOME=/usr/share/maven`
@@ -711,9 +711,8 @@ Binary Packages:
 
 - `libc-bin=2.35-0ubuntu3.8`
 - `libc6:amd64=2.35-0ubuntu3.8`
-- `locales=2.35-0ubuntu3.8`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GFDL-1.3`
 - `GPL-2`
@@ -722,6 +721,28 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `glibc=2.35-0ubuntu3.9`
+
+Binary Packages:
+
+- `locales=2.35-0ubuntu3.9`
+
+Licenses: (parsed from: `/usr/share/doc/locales/copyright`)
+
+- `GFDL-1.3`
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.9.dsc' glibc_2.35-0ubuntu3.9.dsc 8929 SHA512:a521168a625c06337a723c8a2f129521547a3d69483afa79eb2961f661d992a811a71b070fbe2ea928d5e3942e71b8a6b4dd7f8e9c60db19e602e95afcb14841
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.9.debian.tar.xz' glibc_2.35-0ubuntu3.9.debian.tar.xz 938020 SHA512:48ab3f482db045600dae5880320789a1f5b1b40e3267b1076fd70eea9cfafd89cb571a16531997c1e34974b734d114e8bc83b1e285bbcfe0a85a504512a5be62
+```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -1687,14 +1708,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:8.9p1-3ubuntu0.10
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.10.dsc' openssh_8.9p1-3ubuntu0.10.dsc 3136 SHA512:7f8c1d1736599748fc98184ceb1b6aaa2d03deb8a8b22f4696eb54085e6eab7a360a328d56e2c87994698075b7b9fc2c0dc1c4d0480378c6ea439bb7cad7a2cd
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz' openssh_8.9p1.orig.tar.gz 1820282 SHA512:04bd38ea6fe4be31acc8c4e83de7d3dda66fb7207be2e4ba25d3b8118d13d098a283769da9e8ce1fc4fba7edf739c14efcc6c9137132919261a7f882314b0f6b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.10.debian.tar.xz' openssh_8.9p1-3ubuntu0.10.debian.tar.xz 200240 SHA512:5c5c954cea23f90759ca909bc22648d0eedf61b8fe1a1707bd12c9ed7b7bf9631b409d6aff676990c076bc02118f2027514ade04a8d9e3d52989355a055ab598
-```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.18`
 
@@ -2030,19 +2046,25 @@ $ apt-get source -qq --print-uris tar=1.34+dfsg-1ubuntu0.1.22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1ubuntu0.1.22.04.2.debian.tar.xz' tar_1.34+dfsg-1ubuntu0.1.22.04.2.debian.tar.xz 20544 SHA512:9840407a1364154c831665c3f1739c80a84806567fe5ad27ee3ac70f4c18e27d7f2f9e0557b6e2a634ab39449a8fc95b96f1813f5c203df8ece5226a6afe8c7c
 ```
 
-### `dpkg` source package: `tzdata=2024b-0ubuntu0.22.04`
+### `dpkg` source package: `tzdata=2024b-0ubuntu0.22.04.1`
 
 Binary Packages:
 
-- `tzdata=2024b-0ubuntu0.22.04`
+- `tzdata=2024b-0ubuntu0.22.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2024b-0ubuntu0.22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.22.04.1.dsc' tzdata_2024b-0ubuntu0.22.04.1.dsc 2541 SHA512:0150d084872fb5606d2222423f8d2ce306455fdc941347a92d507d1ffb6ab058cbea1e464dbff33f68e1afcbcc460115e120ffd22d6a83bd42f2910228c04d68
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz' tzdata_2024b.orig.tar.gz 459393 SHA512:0d86686e215672343debb3471b7e7ccb8a27f063f085c9b532d5e0470377843daa0dfb6aee0db4fb9068dd52810c69aeee914a1a7c7e603fdecda7e855020193
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz.asc' tzdata_2024b.orig.tar.gz.asc 833 SHA512:2a0462e1d469260293b93ea03a084a7514025b6de251ebf71bc65c93d76ac94967ec859ddba34b1ba4c51114faa5acdfbef0848d79654fc6ebaa804d5d3c2964
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.22.04.1.debian.tar.xz' tzdata_2024b-0ubuntu0.22.04.1.debian.tar.xz 181504 SHA512:f0e6b4765e63fa2031fc381acb787cd79c911c0adf04bbb836b9e9e507694ceed00193f7d90b2b8dc981cb71307d98dcbf615870bbac530abf27b032ac3127b6
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
 

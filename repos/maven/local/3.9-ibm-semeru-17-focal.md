@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:cad0b897ab50377a40d0e3f06c6bd514c08de766afaada4d66c9d39957d6229c`
+- Image ID: `sha256:4c09b5736417e69f0a023c5f004fe8159fa749597722f531aed3d49d98ba26c3`
 - Created: `2024-08-20T18:12:59Z`
-- Virtual Size: ~ 592.92 Mb  
+- Virtual Size: ~ 593.60 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.13+11_openj9-0.48.0`
+  - `JAVA_VERSION=jdk-17.0.14+7_openj9-0.49.0`
   - `JAVA_HOME=/opt/java/openjdk`
   - `JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal`
   - `MAVEN_HOME=/usr/share/maven`
@@ -692,9 +692,8 @@ Binary Packages:
 
 - `libc-bin=2.31-0ubuntu9.16`
 - `libc6:amd64=2.31-0ubuntu9.16`
-- `locales=2.31-0ubuntu9.16`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -702,6 +701,26 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `glibc=2.31-0ubuntu9.17`
+
+Binary Packages:
+
+- `locales=2.31-0ubuntu9.17`
+
+Licenses: (parsed from: `/usr/share/doc/locales/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.31-0ubuntu9.17
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.17.dsc' glibc_2.31-0ubuntu9.17.dsc 9597 SHA512:ea4d5a3f0dfdb53d297fd5ada22381a223c8b3600b69ad937d09f4018567dc1e2003c1d7dbcc8cca144c8141ced0f331a919df05f69b2261d8cea110843509a6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.17.debian.tar.xz' glibc_2.31-0ubuntu9.17.debian.tar.xz 891104 SHA512:089a843327e9c60730b5bc34a9b41c9b541da8d7e21b043238de82a0a02ef34cacfd6f654231df7ef7aa758d6018a446dd866e4817385588ff157b96afbafb29
+```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4ubuntu0.1`
 
@@ -919,22 +938,27 @@ $ apt-get source -qq --print-uris keyutils=1.6-6ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6-6ubuntu1.1.debian.tar.xz' keyutils_1.6-6ubuntu1.1.debian.tar.xz 14556 SHA512:300ed4c9626de95616a7c799f14d4f8bf7dc0b765d1751d3c9d60f86b7c60801bfbb97bf26c5d0ab39e5e41d5f3021ca870748f9555433b0e6c4ba261f475c3b
 ```
 
-### `dpkg` source package: `krb5=1.17-6ubuntu4.7`
+### `dpkg` source package: `krb5=1.17-6ubuntu4.8`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.17-6ubuntu4.7`
-- `libk5crypto3:amd64=1.17-6ubuntu4.7`
-- `libkrb5-3:amd64=1.17-6ubuntu4.7`
-- `libkrb5support0:amd64=1.17-6ubuntu4.7`
+- `libgssapi-krb5-2:amd64=1.17-6ubuntu4.8`
+- `libk5crypto3:amd64=1.17-6ubuntu4.8`
+- `libkrb5-3:amd64=1.17-6ubuntu4.8`
+- `libkrb5support0:amd64=1.17-6ubuntu4.8`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris krb5=1.17-6ubuntu4.8
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.8.dsc' krb5_1.17-6ubuntu4.8.dsc 3682 SHA512:a54ddabd637b1055719a5ee1d46c453bea36a27926d497bf197c37dee5346bbec1ec9a02cfb98ff5800c064c6a957a9eab388397836532e8dfe0708bcfba2fba
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA512:7462a578b936bd17f155a362dbb5d388e157a80a096549028be6c55400b11361c7f8a28e424fd5674801873651df4e694d536cae66728b7ae5e840e532358c52
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.8.debian.tar.xz' krb5_1.17-6ubuntu4.8.debian.tar.xz 160716 SHA512:ddc796ca69c9122440637e5ffd17feaa76c1b145bcb0e448349592279445c16172f560fdd47c399b78aa40a78f6568dfd6725aace27f26486bc64c74d6274783
+```
 
 ### `dpkg` source package: `libbsd=0.10.0-1`
 
@@ -1584,14 +1608,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:8.2p1-4ubuntu0.11
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4ubuntu0.11.dsc' openssh_8.2p1-4ubuntu0.11.dsc 3102 SHA512:47df8c2be2fe7229b5cc614b3cce15f6fa5b4b610aed0706f794ff4c4edf90f42d3be45b2e724f0481678f5fce1fe7b182fde63233b23889e98fbd9eb7da7891
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1.orig.tar.gz' openssh_8.2p1.orig.tar.gz 1701197 SHA512:c4db64e52a3a4c410de9de49f9cb104dd493b10250af3599b92457dd986277b3fd99a6f51cec94892fd1be5bd0369c5757262ea7805f0de464b245c3d34c120a
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4ubuntu0.11.debian.tar.xz' openssh_8.2p1-4ubuntu0.11.debian.tar.xz 185080 SHA512:a0adee59b16582e68dd2f2d0d16544077a0ca89b6b2566b5c336026e2c076a0a0a6513dbfe48efb740b08ac6182fd5b52f3837a5899df545448b468e40822d29
-```
 
 ### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.23`
 
@@ -1942,19 +1961,25 @@ $ apt-get source -qq --print-uris tar=1.30+dfsg-7ubuntu0.20.04.4
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.4.debian.tar.xz' tar_1.30+dfsg-7ubuntu0.20.04.4.debian.tar.xz 24572 SHA512:942a7fb6e2edb7e50b26b1588219d0a99caf17ff1dfa1748449c3fa84ab8cf3e3e94bafb8334cc3b8397562d6a3ecd57bc0df2ddb2b90644a361fa63426d2982
 ```
 
-### `dpkg` source package: `tzdata=2024a-0ubuntu0.20.04.1`
+### `dpkg` source package: `tzdata=2024b-0ubuntu0.20.04.1`
 
 Binary Packages:
 
-- `tzdata=2024a-0ubuntu0.20.04.1`
+- `tzdata=2024b-0ubuntu0.20.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2024b-0ubuntu0.20.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.20.04.1.dsc' tzdata_2024b-0ubuntu0.20.04.1.dsc 2556 SHA512:1099ff4fd0f2e7d7b313ec8924c0d29fe84c443c3efbf7b9f949f6f7f2768f47df7fe2aa9e0d0d68cf8ff20972ef9eff047dc619dfe25ac061773fdcf0c9821e
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz' tzdata_2024b.orig.tar.gz 459393 SHA512:0d86686e215672343debb3471b7e7ccb8a27f063f085c9b532d5e0470377843daa0dfb6aee0db4fb9068dd52810c69aeee914a1a7c7e603fdecda7e855020193
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz.asc' tzdata_2024b.orig.tar.gz.asc 833 SHA512:2a0462e1d469260293b93ea03a084a7514025b6de251ebf71bc65c93d76ac94967ec859ddba34b1ba4c51114faa5acdfbef0848d79654fc6ebaa804d5d3c2964
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.20.04.1.debian.tar.xz' tzdata_2024b-0ubuntu0.20.04.1.debian.tar.xz 176648 SHA512:12a743f3d32b48fe1654aa38263ac016ba375b772c2d6be4d76c752d15181f3e0c1594597e7be146127466f95e77b840288e54ba3f75df0dc1f7ed8f3ae73e10
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 
