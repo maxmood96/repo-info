@@ -19,6 +19,7 @@ docker create \
 	-v /usr/lib/rpm \
 	-v /usr/share/apk \
 	-v /usr/share/doc \
+	-v /usr/share/keyrings \
 	-v /var/lib \
 	"$image" \
 	bogus > /dev/null
