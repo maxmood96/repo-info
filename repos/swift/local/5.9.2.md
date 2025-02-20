@@ -2038,9 +2038,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=5.15.0-131.141
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-131.141.dsc' linux_5.15.0-131.141.dsc 7799 SHA512:7861ee60eb24898be9fd3e35b5d5bd2e603989f4e336bf151eaa07a35b036b4854debd920662e9190b431c1cbb63f18e7005d69f1f99bdf7ad6b29ab2a458d81
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-131.141.diff.gz' linux_5.15.0-131.141.diff.gz 11156398 SHA512:6ad3ae16ad81406e423dac6ef3ff7f7125e91a660d0b68ddd94c2817d859856b91d297c2e37499b302c991ce76d4035ceb52fbb69252550137ff3a7a9c786dc5
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-131.141.dsc' linux_5.15.0-131.141.dsc 7799 SHA512:7861ee60eb24898be9fd3e35b5d5bd2e603989f4e336bf151eaa07a35b036b4854debd920662e9190b431c1cbb63f18e7005d69f1f99bdf7ad6b29ab2a458d81
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-131.141.diff.gz' linux_5.15.0-131.141.diff.gz 11156398 SHA512:6ad3ae16ad81406e423dac6ef3ff7f7125e91a660d0b68ddd94c2817d859856b91d297c2e37499b302c991ce76d4035ceb52fbb69252550137ff3a7a9c786dc5
 ```
 
 ### `dpkg` source package: `llvm-toolchain-13=1:13.0.1-2ubuntu2.2`
@@ -2354,14 +2354,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:8.9p1-3ubuntu0.10
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.10.dsc' openssh_8.9p1-3ubuntu0.10.dsc 3136 SHA512:7f8c1d1736599748fc98184ceb1b6aaa2d03deb8a8b22f4696eb54085e6eab7a360a328d56e2c87994698075b7b9fc2c0dc1c4d0480378c6ea439bb7cad7a2cd
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz' openssh_8.9p1.orig.tar.gz 1820282 SHA512:04bd38ea6fe4be31acc8c4e83de7d3dda66fb7207be2e4ba25d3b8118d13d098a283769da9e8ce1fc4fba7edf739c14efcc6c9137132919261a7f882314b0f6b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.10.debian.tar.xz' openssh_8.9p1-3ubuntu0.10.debian.tar.xz 200240 SHA512:5c5c954cea23f90759ca909bc22648d0eedf61b8fe1a1707bd12c9ed7b7bf9631b409d6aff676990c076bc02118f2027514ade04a8d9e3d52989355a055ab598
-```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.18`
 
