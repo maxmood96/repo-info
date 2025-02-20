@@ -1,21 +1,21 @@
-# `clojure:temurin-8-jammy`
+# `clojure:temurin-17-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:925b4e9ad9fd3f0afdc64abeb49595d859419a11b6662f7c89563bd93bd489cd`
+- Image ID: `sha256:c05e7f78d5c8e5e480b251f81c3e6efeaede4074c69805216b59bd8d0cc21b21`
 - Created: `2025-01-29T19:11:46Z`
-- Virtual Size: ~ 391.85 Mb  
+- Virtual Size: ~ 532.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
-- Entrypoint: `["/__cacert_entrypoint.sh"]`
-- Command: `["clj"]`
+- Entrypoint: `["entrypoint"]`
+- Command: `["-M","--repl"]`
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk8u442-b06`
+  - `JAVA_VERSION=jdk-17.0.14+7`
   - `CLOJURE_VERSION=1.12.0.1501`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -183,6 +183,32 @@ $ apt-get source -qq --print-uris bash=5.1-6ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.1.dsc' bash_5.1-6ubuntu1.1.dsc 2409 SHA512:8adffecbfd9ffe55500fb70616e4b441bccb95fda13762dc2cccc3605a25f34851b142d2c633f17a5a7e426f0c5010ad76b0a70d375f923e25f6c9f4c893c8e4
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1.orig.tar.xz' bash_5.1.orig.tar.xz 5802740 SHA512:95d3acc542231cb893e1347c7d9dd66687f68cd347a0e9e126fde2d14e68c5b5530d1a5866eafa781e88aa013fcf72b4ad56d2e484c2ac7a69bd90bb149a9b86
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.1.debian.tar.xz' bash_5.1-6ubuntu1.1.debian.tar.xz 99944 SHA512:d7fb6110df70232bd3280c1140a812a1903968792f6608481c184bd28760d03323ada75ed3ca4da4eb6c56a84781d6e2f441e0ee83dd9364a9e37fd0fa2211e9
+```
+
+### `dpkg` source package: `binutils=2.38-4ubuntu2.6`
+
+Binary Packages:
+
+- `binutils=2.38-4ubuntu2.6`
+- `binutils-common:amd64=2.38-4ubuntu2.6`
+- `binutils-x86-64-linux-gnu=2.38-4ubuntu2.6`
+- `libbinutils:amd64=2.38-4ubuntu2.6`
+- `libctf-nobfd0:amd64=2.38-4ubuntu2.6`
+- `libctf0:amd64=2.38-4ubuntu2.6`
+
+Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`)
+
+- `GFDL`
+- `GPL`
+- `LGPL`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris binutils=2.38-4ubuntu2.6
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.6.dsc' binutils_2.38-4ubuntu2.6.dsc 8553 SHA512:cae942aebf4eb0391feb581df7c4a4806975c7236049c135746a65f6a78076354797891d948f77d2815acba0437aad801c71597e236f8d42b0c25b68f75b2839
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA512:8bf0b0d193c9c010e0518ee2b2e5a830898af206510992483b427477ed178396cd210235e85fd7bd99a96fc6d5eedbeccbd48317a10f752b7336ada8b2bb826d
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.6.debian.tar.xz' binutils_2.38-4ubuntu2.6.debian.tar.xz 300788 SHA512:6106e9d7056ae9468677545d11118041028286b1963d06d174f3d673f3801fefaf6863f1912220ec7619952ff745322b5d567e323533a11e5f226e2cc28e9662
 ```
 
 ### `dpkg` source package: `brotli=1.0.9-2build6`
@@ -1976,14 +2002,9 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:8.9p1-3ubuntu0.10
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.10.dsc' openssh_8.9p1-3ubuntu0.10.dsc 3136 SHA512:7f8c1d1736599748fc98184ceb1b6aaa2d03deb8a8b22f4696eb54085e6eab7a360a328d56e2c87994698075b7b9fc2c0dc1c4d0480378c6ea439bb7cad7a2cd
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz' openssh_8.9p1.orig.tar.gz 1820282 SHA512:04bd38ea6fe4be31acc8c4e83de7d3dda66fb7207be2e4ba25d3b8118d13d098a283769da9e8ce1fc4fba7edf739c14efcc6c9137132919261a7f882314b0f6b
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.10.debian.tar.xz' openssh_8.9p1-3ubuntu0.10.debian.tar.xz 200240 SHA512:5c5c954cea23f90759ca909bc22648d0eedf61b8fe1a1707bd12c9ed7b7bf9631b409d6aff676990c076bc02118f2027514ade04a8d9e3d52989355a055ab598
-```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.18`
 
