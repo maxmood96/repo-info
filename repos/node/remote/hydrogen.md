@@ -1,7 +1,7 @@
 ## `node:hydrogen`
 
 ```console
-$ docker pull node@sha256:399947d4eac0d435181e4d711b7dec938e62c75cb33dd9e74a633af0758965cb
+$ docker pull node@sha256:0629ee779413520498c69f2e6a6dce2be210879dc58789834c66eaf6d9ea9f1d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -118,13 +118,13 @@ $ docker pull node@sha256:9d1fcdae8d50bdfb79d655c47a550ef323eb91828601567d6c5c4c
 ### `node:hydrogen` - linux; arm variant v7
 
 ```console
-$ docker pull node@sha256:0d6c1f75fd0128fe5e4362c0b6bd13b099414f61872a537ac5140d04db9d5ecb
+$ docker pull node@sha256:f05bd6756a7f521075862ceb2626e02194c2bfa848399caea90f72102a39d16f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **344.7 MB (344680373 bytes)**  
+-	Total Size: **344.7 MB (344681900 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:069733bb55bb0ce45b71a258fb7927d8a0eda88aa1689d94c5b29b81590b5960`
+-	Image ID: `sha256:750d95129bf4141e4b562f81b25ba68cb5134f87412eacd56eee6ba9b1b42a8c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
@@ -137,21 +137,21 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Wed, 22 Jan 2025 02:33:10 GMT
-ENV NODE_VERSION=18.20.6
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
+ENV NODE_VERSION=18.20.7
+# Thu, 20 Feb 2025 11:20:37 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && export GNUPGHOME="$(mktemp -d)"   && set -ex   && for key in     C0D6248439F1D5604AAFFB4021D900FFDB233756     DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7     CC68F5A3106FF448322E48ED27F5E38D5B0A215F     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4     C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C     108F52B48DB57BB0CC439B2997B01419BD92F80A     A363A499291CBBC940DD62E41F10027AF002F8B0   ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs   && node --version   && npm --version # buildkit
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
 ENV YARN_VERSION=1.22.22
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
 RUN set -ex   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && yarn --version   && rm -rf /tmp/* # buildkit
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
 CMD ["node"]
 ```
 
@@ -176,53 +176,53 @@ CMD ["node"]
 		Last Modified: Wed, 05 Feb 2025 10:42:19 GMT  
 		Size: 3.3 KB (3324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bc177db530dcbd05af69095304d840b4687ed76e69f1e3cfc46cc92ce360bc7c`  
-		Last Modified: Wed, 05 Feb 2025 10:44:00 GMT  
-		Size: 42.4 MB (42361340 bytes)  
+	-	`sha256:66ce0575a87d080962694b4e31300db891fa3ade87757ce8c6ac3ffd0a32e19d`  
+		Last Modified: Thu, 20 Feb 2025 19:51:36 GMT  
+		Size: 42.4 MB (42362862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7573c512fc7900a23862dcd472c4c659ede09e3b2acfafc7cc3123c4f68a8cf5`  
-		Last Modified: Wed, 05 Feb 2025 10:44:01 GMT  
-		Size: 1.3 MB (1250676 bytes)  
+	-	`sha256:ebacc03eda5bd2c1dc7e2147f7a3d73cf5cfa966666f6a28acb39ddc0e6548a4`  
+		Last Modified: Thu, 20 Feb 2025 19:51:35 GMT  
+		Size: 1.3 MB (1250678 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e6aa9faa4ddfe5ea74ab55f067a33c5acee9a423de76420af61071c5028921dd`  
-		Last Modified: Wed, 05 Feb 2025 10:44:00 GMT  
-		Size: 446.0 B  
+	-	`sha256:20f516027f4927a656bc04d8dae81aa78463b11b6437e80c909b77f594b0a0f7`  
+		Last Modified: Thu, 20 Feb 2025 19:51:35 GMT  
+		Size: 449.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:hydrogen` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:483b8985fc7d68c92473950ca58c4f164e8c0bcfac5fc4d211b6e66eedd4dcf1
+$ docker pull node@sha256:50383a3506360a218f024807a704fcfaedca513f36c776da37860257dc32642f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.6 MB (15588964 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:79f6249103db9630410bb5bed5f2a7f4c588d6f30f43718529580a4edfd63dd9`
+-	Image ID: `sha256:e0d732bfb98c8f320e43b0ac5aaea5ba8b69a7e417e76616a5ccd7b80dd9ac7e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6f248fdfb6e8f6800b3e691c04feda09adf4ad0ac26d11a111480c12b0dba5be`  
-		Last Modified: Wed, 05 Feb 2025 10:57:15 GMT  
+	-	`sha256:b9d9066467a971f140b9ac5afa6ea4ccce032c281384602fa72804aa209baf23`  
+		Last Modified: Thu, 20 Feb 2025 19:38:35 GMT  
 		Size: 15.6 MB (15565389 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:d4d9474eb441cde5c7785f945cbf1f03b88606a0060ae24bd878fd534dd0d9b6`  
-		Last Modified: Wed, 05 Feb 2025 10:44:05 GMT  
+	-	`sha256:163dc147aa393d252924e5a10aaece5a15955de291bfa68fad3fbec41e4a0d09`  
+		Last Modified: Thu, 20 Feb 2025 19:38:36 GMT  
 		Size: 23.6 KB (23575 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `node:hydrogen` - linux; arm64 variant v8
 
 ```console
-$ docker pull node@sha256:f7408d42e1d2e15d67527d3cc3a97e5cf6916461b107c9ef69a16be51db26dba
+$ docker pull node@sha256:a86b99e0eb11c64bd87988458273403ac1a49165cda3d8d7e0cc1660f376a82b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **386.0 MB (386006185 bytes)**  
+-	Total Size: **386.0 MB (386009124 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7f64f2de6125d2cecc7cdb8ab74ccf2c75c48432fb27d3cb31bb5ff6aa9b22f8`
+-	Image ID: `sha256:a61de536d35375d4d680b0e3e8b34a66b5db7a82acab56018fc9de54046c7a62`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
@@ -235,21 +235,21 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Wed, 22 Jan 2025 02:33:10 GMT
-ENV NODE_VERSION=18.20.6
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
+ENV NODE_VERSION=18.20.7
+# Thu, 20 Feb 2025 11:20:37 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && export GNUPGHOME="$(mktemp -d)"   && set -ex   && for key in     C0D6248439F1D5604AAFFB4021D900FFDB233756     DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7     CC68F5A3106FF448322E48ED27F5E38D5B0A215F     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4     C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C     108F52B48DB57BB0CC439B2997B01419BD92F80A     A363A499291CBBC940DD62E41F10027AF002F8B0   ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs   && node --version   && npm --version # buildkit
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
 ENV YARN_VERSION=1.22.22
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
 RUN set -ex   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && yarn --version   && rm -rf /tmp/* # buildkit
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
 CMD ["node"]
 ```
 
@@ -274,40 +274,40 @@ CMD ["node"]
 		Last Modified: Wed, 05 Feb 2025 10:08:16 GMT  
 		Size: 3.3 KB (3324 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:16daed19a1beec25d01691949c814b87b7ebfb79df2c7a2a00a2898342aa90f3`  
-		Last Modified: Wed, 05 Feb 2025 10:38:44 GMT  
-		Size: 45.8 MB (45770846 bytes)  
+	-	`sha256:1cfa309993bf12b6a706f2d4d8caf539419883cbfb1ccae12b8d177f5a648766`  
+		Last Modified: Thu, 20 Feb 2025 18:07:53 GMT  
+		Size: 45.8 MB (45773790 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b63479a954b7c77d3022504ea6bf68bceef49aee1741a0146c2f9e2b883ffad3`  
-		Last Modified: Wed, 05 Feb 2025 10:09:37 GMT  
-		Size: 1.3 MB (1250678 bytes)  
+	-	`sha256:eba00d363f13544ca7d44a5c6eca6c4e6fcd8e1cafbefad3f67c6095894d2849`  
+		Last Modified: Thu, 20 Feb 2025 18:07:54 GMT  
+		Size: 1.3 MB (1250674 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef16dcdb0e8b45ab53d32cd286f54173f2e5805312e0eaf2c4add1f2d4bb7aa7`  
-		Last Modified: Wed, 05 Feb 2025 10:38:42 GMT  
-		Size: 447.0 B  
+	-	`sha256:7c4dbe9175d734001e6e9231b52f01e0ebb252bea40ffc86a5727380a9af7141`  
+		Last Modified: Thu, 20 Feb 2025 18:07:55 GMT  
+		Size: 446.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:hydrogen` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:eccb488fcda00ad6af6cfe8c56ea13f90846d737597f44dffc5ab8cb01479252
+$ docker pull node@sha256:be004673a220b55fa88bcf5ddf95c26fa95b7e4d64bad39ce8f5a788dbc72e0c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.8 MB (15813154 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9ba3620a1d0bb870e3d9916201d2248d8761a6c202c3ee993340e7ad92af4889`
+-	Image ID: `sha256:13bb242cdba3e71649008945ea112a26cbc778c552267bb03b3c85d77f031031`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c0dce73dc8121e1efeee75eccd2c19e7af64aa031f93fdbba9708023bd6ba971`  
-		Last Modified: Wed, 05 Feb 2025 12:04:28 GMT  
+	-	`sha256:edb3bac7d4470879ea0afc3be4e7f6f6f0d14f041bfe19d719ec92667fe848fb`  
+		Last Modified: Thu, 20 Feb 2025 19:38:44 GMT  
 		Size: 15.8 MB (15789530 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:9a7c2e068af90c4caa964479d64bc6092e67394150baea41e460d1810584810b`  
-		Last Modified: Wed, 05 Feb 2025 10:44:15 GMT  
+	-	`sha256:226a488eeb72d386688a852f85389f6c6ddc29d8ecc81b05a3d370b9bc047181`  
+		Last Modified: Thu, 20 Feb 2025 19:38:44 GMT  
 		Size: 23.6 KB (23624 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -412,13 +412,13 @@ $ docker pull node@sha256:47c3c0160b028541c44c893d2f43d657ddcad0ed7309b8109772ad
 ### `node:hydrogen` - linux; s390x
 
 ```console
-$ docker pull node@sha256:02306498ed44e032c092cdcec3001cc03d3c16d859ecb770c6336cb50be34d89
+$ docker pull node@sha256:1669f4397fb0c19631b724bfac76e12dc97939829a7c8f1042a2b3a8a7146fdc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **364.8 MB (364818247 bytes)**  
+-	Total Size: **364.8 MB (364823193 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d4d178204d4f495fbf1af1f8ccc14c1acbc8c0b1180c967001010d7649e3b1b4`
+-	Image ID: `sha256:8d868e03fd8d3063fe574ee3e46fc0e3c6af52db76020952cf864d144ed949e3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["node"]`
 
@@ -431,21 +431,21 @@ RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		git 		mercurial 		openssh-client 		subversion 				procps 	; 	rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 09 Jan 2024 01:14:25 GMT
 RUN set -ex; 	apt-get update; 	apt-get install -y --no-install-recommends 		autoconf 		automake 		bzip2 		default-libmysqlclient-dev 		dpkg-dev 		file 		g++ 		gcc 		imagemagick 		libbz2-dev 		libc6-dev 		libcurl4-openssl-dev 		libdb-dev 		libevent-dev 		libffi-dev 		libgdbm-dev 		libglib2.0-dev 		libgmp-dev 		libjpeg-dev 		libkrb5-dev 		liblzma-dev 		libmagickcore-dev 		libmagickwand-dev 		libmaxminddb-dev 		libncurses5-dev 		libncursesw5-dev 		libpng-dev 		libpq-dev 		libreadline-dev 		libsqlite3-dev 		libssl-dev 		libtool 		libwebp-dev 		libxml2-dev 		libxslt-dev 		libyaml-dev 		make 		patch 		unzip 		xz-utils 		zlib1g-dev 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
 RUN groupadd --gid 1000 node   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit
-# Wed, 22 Jan 2025 02:33:10 GMT
-ENV NODE_VERSION=18.20.6
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
+ENV NODE_VERSION=18.20.7
+# Thu, 20 Feb 2025 11:20:37 GMT
 RUN ARCH= && dpkgArch="$(dpkg --print-architecture)"   && case "${dpkgArch##*-}" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo "unsupported architecture"; exit 1 ;;   esac   && export GNUPGHOME="$(mktemp -d)"   && set -ex   && for key in     C0D6248439F1D5604AAFFB4021D900FFDB233756     DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7     CC68F5A3106FF448322E48ED27F5E38D5B0A215F     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4     C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C     108F52B48DB57BB0CC439B2997B01419BD92F80A     A363A499291CBBC940DD62E41F10027AF002F8B0   ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz"   && curl -fsSLO --compressed "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc"   && gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && grep " node-v$NODE_VERSION-linux-$ARCH.tar.xz\$" SHASUMS256.txt | sha256sum -c -   && tar -xJf "node-v$NODE_VERSION-linux-$ARCH.tar.xz" -C /usr/local --strip-components=1 --no-same-owner   && rm "node-v$NODE_VERSION-linux-$ARCH.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt   && ln -s /usr/local/bin/node /usr/local/bin/nodejs   && node --version   && npm --version # buildkit
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
 ENV YARN_VERSION=1.22.22
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
 RUN set -ex   && export GNUPGHOME="$(mktemp -d)"   && for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys "$key" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key" ;   done   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz"   && curl -fsSLO --compressed "https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc"   && gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && gpgconf --kill all   && rm -rf "$GNUPGHOME"   && mkdir -p /opt   && tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   && ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   && rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   && yarn --version   && rm -rf /tmp/* # buildkit
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
 COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Wed, 22 Jan 2025 02:33:10 GMT
+# Thu, 20 Feb 2025 11:20:37 GMT
 CMD ["node"]
 ```
 
@@ -470,39 +470,39 @@ CMD ["node"]
 		Last Modified: Wed, 05 Feb 2025 04:54:09 GMT  
 		Size: 3.3 KB (3322 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:218e19346404442e68332250b289a8c3cdb820956b9bfb7ce6136854cde30eff`  
-		Last Modified: Wed, 05 Feb 2025 10:27:33 GMT  
-		Size: 45.5 MB (45509957 bytes)  
+	-	`sha256:d1d6599b9cdfedc17f9c79403342cd89ce4b1fd58d34ffaee03218ad10073008`  
+		Last Modified: Thu, 20 Feb 2025 19:59:48 GMT  
+		Size: 45.5 MB (45514902 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c968093724d102c5f74f978350e04c566b7a68750f24f1a52728c95d2a2712ae`  
-		Last Modified: Wed, 05 Feb 2025 10:27:22 GMT  
+	-	`sha256:a86ef7dd3b0ccd0195f2a9b58a0f6e95792ab763aec7fc48e07e20010848385f`  
+		Last Modified: Thu, 20 Feb 2025 19:59:45 GMT  
 		Size: 1.3 MB (1250673 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ed5df622e51361d05a8c95e76dee0534cb2dfc5ce5e44145a86a4c5e8e8193b9`  
-		Last Modified: Wed, 05 Feb 2025 08:06:30 GMT  
-		Size: 445.0 B  
+	-	`sha256:c8f316024020bb023e93e3b82a610d8996be8a89eaf1922662d05ec8643da76b`  
+		Last Modified: Thu, 20 Feb 2025 18:58:53 GMT  
+		Size: 446.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `node:hydrogen` - unknown; unknown
 
 ```console
-$ docker pull node@sha256:d487fa3f27a9bdb5e1eda2c126d12fc24f5815545f31757cab85fd9d7a1b6ada
+$ docker pull node@sha256:06195af3e072dfbbad886bb141b467a832998aad22e3868fcd1f1e1c35417051
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **15.6 MB (15597089 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ac4ab456d7fe79a2e694f356e53304a6e06399d86e1baa6986f90a314424c1e4`
+-	Image ID: `sha256:f65bd692100c3f345ffc994c09b1059ace5b452df587c29ac71fc8aeb0ae305b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0fb60b53aedc681cabe81ceec4b3a6b2ac887a33ac7e3054f90458cdc7ae47f2`  
-		Last Modified: Wed, 05 Feb 2025 08:06:36 GMT  
+	-	`sha256:5c45f26dd9b17309a9d3772a68eead2ad7d9927ae28c6dc74d8f4028e68b2f7d`  
+		Last Modified: Thu, 20 Feb 2025 19:39:00 GMT  
 		Size: 15.6 MB (15573647 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:725989de559c08d97853ebe3a32650b0dc463023401e0db8b6f89ef14f3de0e7`  
-		Last Modified: Wed, 05 Feb 2025 10:11:00 GMT  
+	-	`sha256:d750590544c7cd12855d4a1433fd2d03d252e15e7bc23a7094c905b8854060de`  
+		Last Modified: Thu, 20 Feb 2025 19:39:01 GMT  
 		Size: 23.4 KB (23442 bytes)  
 		MIME: application/vnd.in-toto+json
