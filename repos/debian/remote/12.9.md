@@ -41,7 +41,7 @@ RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1738540800'
 
 -	Layers:
 	-	`sha256:a492eee5e55976c7d3feecce4c564aaf6f14fb07fdc5019d06f4154eddc93fde`  
-		Last Modified: Tue, 04 Feb 2025 04:24:49 GMT  
+		Last Modified: Tue, 04 Feb 2025 01:36:22 GMT  
 		Size: 48.5 MB (48479687 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -61,7 +61,7 @@ $ docker pull debian@sha256:910a9030485b1333a8ae2661baa80ff7f411f892d0f0eb207738
 
 -	Layers:
 	-	`sha256:12230af95bf8217e50654bf74eeb1d67b6d6abf2f20c84206aadb8c5b1e481f8`  
-		Last Modified: Tue, 04 Feb 2025 06:00:17 GMT  
+		Last Modified: Tue, 04 Feb 2025 01:36:21 GMT  
 		Size: 3.6 MB (3618668 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -84,7 +84,7 @@ RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1738540800'
 
 -	Layers:
 	-	`sha256:8816181beac5d7674f87060fb5deb0c2c6221a62562265e16f54a617961cbc53`  
-		Last Modified: Tue, 04 Feb 2025 15:56:22 GMT  
+		Last Modified: Tue, 04 Feb 2025 01:38:08 GMT  
 		Size: 46.0 MB (46006574 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -104,7 +104,7 @@ $ docker pull debian@sha256:d13e92bd71dbc132ad9c84ccfe0a2a9cc44e36805f78619717c2
 
 -	Layers:
 	-	`sha256:3fcd971fd7a559c7a805f0bc052d9377197be7b44c158efe86573c6c6f01d5df`  
-		Last Modified: Tue, 04 Feb 2025 05:01:29 GMT  
+		Last Modified: Tue, 04 Feb 2025 01:38:07 GMT  
 		Size: 3.6 MB (3618856 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -127,7 +127,7 @@ RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1738540800'
 
 -	Layers:
 	-	`sha256:bf65c309bba1c843ac26792f2d942bca2d7bfcc7024ba331cdfbb762d7573e8a`  
-		Last Modified: Tue, 04 Feb 2025 05:02:17 GMT  
+		Last Modified: Tue, 04 Feb 2025 01:37:07 GMT  
 		Size: 44.2 MB (44184052 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -147,7 +147,7 @@ $ docker pull debian@sha256:42652f175f3311d11035b10272c4eace91e2639ecf23570ec491
 
 -	Layers:
 	-	`sha256:0f343e082a65b6e2edbe5323d77cd9f6e42c11427e35fbb13e5010773ce4c4c0`  
-		Last Modified: Tue, 04 Feb 2025 05:02:48 GMT  
+		Last Modified: Tue, 04 Feb 2025 01:37:06 GMT  
 		Size: 3.6 MB (3620834 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -170,7 +170,7 @@ RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1738540800'
 
 -	Layers:
 	-	`sha256:106abeaee908db66722312b3379ae398e2bcc5b2fdad0cc248509efa14a819ff`  
-		Last Modified: Tue, 04 Feb 2025 04:37:12 GMT  
+		Last Modified: Tue, 04 Feb 2025 01:37:39 GMT  
 		Size: 48.3 MB (48306553 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -190,7 +190,7 @@ $ docker pull debian@sha256:ed7fd1f09f4fd2dd779ec289c42fe1326c129fb03b9faae893fc
 
 -	Layers:
 	-	`sha256:c9130bfed2964785f52edcd076469158f71b9333ca0c2d6d0e9d93c725ad5630`  
-		Last Modified: Tue, 04 Feb 2025 07:00:45 GMT  
+		Last Modified: Tue, 04 Feb 2025 01:37:38 GMT  
 		Size: 3.6 MB (3618864 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -213,7 +213,7 @@ RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1738540800'
 
 -	Layers:
 	-	`sha256:d6abb78404200438eb560450e089a4e7707a23d5ec913df260500d902666670a`  
-		Last Modified: Tue, 04 Feb 2025 06:02:17 GMT  
+		Last Modified: Tue, 04 Feb 2025 01:36:35 GMT  
 		Size: 49.5 MB (49457456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -233,7 +233,7 @@ $ docker pull debian@sha256:aa8a800a1a27549b819dec5a303587a5b3769c17023789e7799f
 
 -	Layers:
 	-	`sha256:8221cc5f804e1ee3f1c7777df4c003a6a890bd4f139d5945c75f154476a47e5d`  
-		Last Modified: Tue, 04 Feb 2025 06:02:14 GMT  
+		Last Modified: Tue, 04 Feb 2025 01:36:34 GMT  
 		Size: 3.6 MB (3615837 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -256,7 +256,7 @@ RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1738540800'
 
 -	Layers:
 	-	`sha256:467081b053e1cbae3c04ca1529cea6d968f9b38249f5cdd15b07f60be084dd00`  
-		Last Modified: Tue, 04 Feb 2025 06:00:54 GMT  
+		Last Modified: Tue, 04 Feb 2025 01:38:28 GMT  
 		Size: 48.8 MB (48757800 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -279,7 +279,7 @@ RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1738540800'
 
 -	Layers:
 	-	`sha256:d32dc8295067a6f744a1fca9cfffe021a324e651f2834ad7b587e0380c3f2981`  
-		Last Modified: Tue, 04 Feb 2025 06:02:17 GMT  
+		Last Modified: Tue, 04 Feb 2025 01:37:34 GMT  
 		Size: 52.3 MB (52312857 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -299,7 +299,7 @@ $ docker pull debian@sha256:6a47911275cacaa125b7800fe115745cddde6b04621f2c26f83a
 
 -	Layers:
 	-	`sha256:a0571e994dd3a1d4be817bbfcb2ed59b916451eed271a459020bada35ae4d9fa`  
-		Last Modified: Wed, 05 Feb 2025 00:00:55 GMT  
+		Last Modified: Tue, 04 Feb 2025 01:37:32 GMT  
 		Size: 3.6 MB (3622918 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -322,7 +322,7 @@ RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1738540800'
 
 -	Layers:
 	-	`sha256:92bc3bb38690fde96c4bb788f15f365b04d4cb8ab9368675dc9294bc24a9c7b6`  
-		Last Modified: Tue, 04 Feb 2025 05:09:29 GMT  
+		Last Modified: Tue, 04 Feb 2025 01:37:03 GMT  
 		Size: 47.1 MB (47131492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -342,6 +342,6 @@ $ docker pull debian@sha256:b290b0d2efece3d0bdfa3493b08af9bd697d42359a6cc3280021
 
 -	Layers:
 	-	`sha256:60ce88945e0f85f02d5916b293ec0f20de5d820ee1b44625f9554dd0a34a83bd`  
-		Last Modified: Tue, 04 Feb 2025 04:32:46 GMT  
+		Last Modified: Tue, 04 Feb 2025 01:37:02 GMT  
 		Size: 3.6 MB (3618398 bytes)  
 		MIME: application/vnd.in-toto+json
