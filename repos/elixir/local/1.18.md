@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:5352bc9fa6bfd75ae02618376ff1349bc28a5dbae3ad42f115d4bdcb013cf994`
+- Image ID: `sha256:df637e286a0ad47215606440ac3bbd66c8a6af73289cb9a6e38e0be1fff4182f`
 - Created: `2025-02-09T02:28:09Z`
 - Virtual Size: ~ 1.61 Gb  
   (total size of all layers on-disk)
@@ -10,13 +10,13 @@
 - Command: `["iex"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `OTP_VERSION=27.2.1`
+  - `OTP_VERSION=27.2.3`
   - `REBAR3_VERSION=3.24.0`
   - `REBAR_VERSION=2.6.4`
   - `ELIXIR_VERSION=v1.18.2`
   - `LANG=C.UTF-8`
 - Labels:
-  - `org.opencontainers.image.version=27.2.1`
+  - `org.opencontainers.image.version=27.2.3`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -8750,12 +8750,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/wayland/1.21.0-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/wayland/1.21.0-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `webkit2gtk=2.46.5-1~deb12u1`
+### `dpkg` source package: `webkit2gtk=2.46.6-1~deb12u1`
 
 Binary Packages:
 
-- `libjavascriptcoregtk-4.0-18:amd64=2.46.5-1~deb12u1`
-- `libwebkit2gtk-4.0-37:amd64=2.46.5-1~deb12u1`
+- `libjavascriptcoregtk-4.0-18:amd64=2.46.6-1~deb12u1`
+- `libwebkit2gtk-4.0-37:amd64=2.46.6-1~deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.0-18/copyright`, `/usr/share/doc/libwebkit2gtk-4.0-37/copyright`)
 
@@ -8794,18 +8794,18 @@ Licenses: (parsed from: `/usr/share/doc/libjavascriptcoregtk-4.0-18/copyright`, 
 Source:
 
 ```console
-$ apt-get source -qq --print-uris webkit2gtk=2.46.5-1~deb12u1
-'http://deb.debian.org/debian/pool/main/w/webkit2gtk/webkit2gtk_2.46.5-1%7edeb12u1.dsc' webkit2gtk_2.46.5-1~deb12u1.dsc 5196 SHA256:5709b6e4c20c576e0afc7e6bf7ba9ed648c6b5393e0ec5dfae322e028a3700b3
-'http://deb.debian.org/debian/pool/main/w/webkit2gtk/webkit2gtk_2.46.5.orig.tar.xz' webkit2gtk_2.46.5.orig.tar.xz 42898600 SHA256:bad4020bb0cfb3e740df3082c2d9cbf67cf4095596588a56aecdde6702137805
-'http://deb.debian.org/debian/pool/main/w/webkit2gtk/webkit2gtk_2.46.5.orig.tar.xz.asc' webkit2gtk_2.46.5.orig.tar.xz.asc 833 SHA256:3d3f572ab41f0f4e7c9fd300b8f40863cf1d501711046fb85400245b44366c90
-'http://deb.debian.org/debian/pool/main/w/webkit2gtk/webkit2gtk_2.46.5-1%7edeb12u1.debian.tar.xz' webkit2gtk_2.46.5-1~deb12u1.debian.tar.xz 90460 SHA256:9f4024b44260700d83e5192aecc18fe36d761a38401c18fa058c2409649b76ca
+$ apt-get source -qq --print-uris webkit2gtk=2.46.6-1~deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.46.6-1%7edeb12u1.dsc' webkit2gtk_2.46.6-1~deb12u1.dsc 5196 SHA256:747ee5d56e808284f4bf009cc80fbd645efb291369d136f86aa050fff4c570a4
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.46.6.orig.tar.xz' webkit2gtk_2.46.6.orig.tar.xz 42914744 SHA256:f2b31de693220ba9bab76ce6ddfe5b0bfab2515cb2b0a70f3c54d4050766c32b
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.46.6.orig.tar.xz.asc' webkit2gtk_2.46.6.orig.tar.xz.asc 833 SHA256:8bf166c91520e19282907d836d21634c4f6d0d3419a022e618ea3f0a8f1db5b0
+'http://deb.debian.org/debian-security/pool/updates/main/w/webkit2gtk/webkit2gtk_2.46.6-1%7edeb12u1.debian.tar.xz' webkit2gtk_2.46.6-1~deb12u1.debian.tar.xz 90572 SHA256:0b4f09c8bc042dfaa637b1bf32464d440cd00d823ea180d5846d2d6252b9f817
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/webkit2gtk/2.46.5-1~deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/webkit2gtk/2.46.5-1~deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/webkit2gtk/2.46.5-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/webkit2gtk/2.46.6-1~deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/webkit2gtk/2.46.6-1~deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/webkit2gtk/2.46.6-1~deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.21.3-1`
 
