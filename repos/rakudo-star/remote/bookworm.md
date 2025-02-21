@@ -85,7 +85,7 @@ $ docker pull rakudo-star@sha256:54ffc5a0ec100afce4792e6062bd9a6441e55081380a191
 
 -	Layers:
 	-	`sha256:7879d8cf0f8e635e4f708501e8300dbf8920d59c6c686a650318426b89423f2c`  
-		Last Modified: Tue, 04 Feb 2025 06:32:27 GMT  
+		Last Modified: Fri, 21 Feb 2025 18:17:42 GMT  
 		Size: 7.8 MB (7758969 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:a4b6cb850752414c1cd91d59db69e7563155288508516242efee07d678e3ed65`  
@@ -143,7 +143,7 @@ CMD ["raku"]
 		Size: 64.4 MB (64357505 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5bef71704d9770a225e086540bae0d91a4c634990dc498fec26164490b2da66d`  
-		Last Modified: Wed, 05 Feb 2025 03:22:58 GMT  
+		Last Modified: Fri, 21 Feb 2025 18:42:39 GMT  
 		Size: 3.2 KB (3243 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fc84db82893390f59835731f42d37a0d0aa46b91cfe1e4c1baf512a440e3fc4f`  
