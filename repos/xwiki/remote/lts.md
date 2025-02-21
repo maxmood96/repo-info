@@ -1,7 +1,7 @@
 ## `xwiki:lts`
 
 ```console
-$ docker pull xwiki@sha256:6f3b43f2481abbded7e4872631f5ea76dfbe9ffa1973eca395d849b0fad304e2
+$ docker pull xwiki@sha256:8bad9dc2243ec0fbb82c64693dce47f25d90e5a302a8666546f7e408927f50b4
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull xwiki@sha256:6f3b43f2481abbded7e4872631f5ea76dfbe9ffa1973eca395d84
 ### `xwiki:lts` - linux; amd64
 
 ```console
-$ docker pull xwiki@sha256:6fe48bb31833af8a25012d928c57c94957b215f48a65ed48c9d4925a2ececa6e
+$ docker pull xwiki@sha256:7e6906299f9940a16720a1f39241990b6f574c20040022462f31397eea640a8c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **630.3 MB (630328942 bytes)**  
+-	Total Size: **636.3 MB (636264815 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dace3ae39d3ded7a3dce817b3c891e3fb54a6f5187508076fa0865c3283005f3`
+-	Image ID: `sha256:07be9ffa94df2b1d387000eb4c4b4b833269ef9332cf4316771141c414db73fd`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["xwiki"]`
 
@@ -37,101 +37,101 @@ LABEL org.opencontainers.image.version=24.04
 ADD file:6df775300d76441aa33f31b22c1afce8dfe35c8ffbc14ef27c27009235b12a95 in / 
 # Mon, 27 Jan 2025 04:14:03 GMT
 CMD ["/bin/bash"]
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     apt-get update;     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         curl         wget         gnupg         fontconfig         ca-certificates p11-kit         tzdata         locales     ;     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen;     locale-gen en_US.UTF-8;     rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 28 Jan 2025 16:59:47 GMT
-ENV JAVA_VERSION=jdk-17.0.14+7
-# Tue, 28 Jan 2025 16:59:47 GMT
-RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='a4b0015872758aac6a5d17139e952a3951ee536ae6d9a99828823a80a71add56';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_x64_linux_hotspot_17.0.14_7.tar.gz';          ;;        arm64)          ESUM='bab3f352fc7144ac1435924f056872d16f4b32c8bcda58b9a77b636eb1c664f4';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_aarch64_linux_hotspot_17.0.14_7.tar.gz';          ;;        armhf)          ESUM='7ac439bce4d5ecddb250b31401b1c1a6da2762f51652eafedd53584a0d9e3130';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_arm_linux_hotspot_17.0.14_7.tar.gz';          ;;        ppc64el)          ESUM='2a730e9d34cce4d588739b626a034ed68c065a2db61048ee7886be48ec9fe460';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_ppc64le_linux_hotspot_17.0.14_7.tar.gz';          ;;        riscv64)          ESUM='2f77e44aa9fec9cf35b0b1fd492055e7fec0a3ea4d4338def6b42bd46d485e02';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_riscv64_linux_hotspot_17.0.14_7.tar.gz';          ;;        s390x)          ESUM='3887f14f95a14e65a985cfcee6696e01aadee06d3347ab70eb7d6b16ce397238';          BINARY_URL='https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.14%2B7/OpenJDK17U-jre_s390x_linux_hotspot_17.0.14_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
+ENV JAVA_VERSION=jdk-21.0.6+7
+# Thu, 30 Jan 2025 14:32:57 GMT
+RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        amd64)          ESUM='7fc9d6837da5fa1f12e0f41901fd70a73154914b8c8ecbbcad2d44176a989937';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_x64_linux_hotspot_21.0.6_7.tar.gz';          ;;        arm64)          ESUM='f1b78f2bd6d505d5e0539261737740ad11ade3233376b4ca52e6c72fbefd2bf6';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_aarch64_linux_hotspot_21.0.6_7.tar.gz';          ;;        ppc64el)          ESUM='381e31581af3858d4c471829c3da3263e83dfe8ac5d36b58403babb57f6e202c';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_ppc64le_linux_hotspot_21.0.6_7.tar.gz';          ;;        riscv64)          ESUM='a8d219a4a97f9c53ba88cb8927910005d4f3d08a87ab1bdebff921ef41afa93d';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_riscv64_linux_hotspot_21.0.6_7.tar.gz';          ;;        s390x)          ESUM='7165f6df22dcd8d5bb351560fb0eb0a507d2fc12897b3c8163a36f4eb34e47ce';          BINARY_URL='https://github.com/adoptium/temurin21-binaries/releases/download/jdk-21.0.6%2B7/OpenJDK21U-jre_s390x_linux_hotspot_21.0.6_7.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     wget --progress=dot:giga -O /tmp/openjdk.tar.gz ${BINARY_URL};     wget --progress=dot:giga -O /tmp/openjdk.tar.gz.sig ${BINARY_URL}.sig;     export GNUPGHOME="$(mktemp -d)";     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B;     gpg --batch --verify /tmp/openjdk.tar.gz.sig /tmp/openjdk.tar.gz;     rm -rf "${GNUPGHOME}" /tmp/openjdk.tar.gz.sig;     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p "$JAVA_HOME";     tar --extract         --file /tmp/openjdk.tar.gz         --directory "$JAVA_HOME"         --strip-components 1         --no-same-owner     ;     rm -f /tmp/openjdk.tar.gz;     find "$JAVA_HOME/lib" -name '*.so' -exec dirname '{}' ';' | sort -u > /etc/ld.so.conf.d/docker-openjdk.conf;     ldconfig;     java -Xshare:dump; # buildkit
+# Thu, 30 Jan 2025 14:32:57 GMT
 RUN set -eux;     echo "Verifying install ...";     echo "java --version"; java --version;     echo "Complete." # buildkit
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 COPY --chmod=755 entrypoint.sh /__cacert_entrypoint.sh # buildkit
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 30 Jan 2025 14:32:57 GMT
 ENTRYPOINT ["/__cacert_entrypoint.sh"]
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Tue, 18 Feb 2025 12:06:03 GMT
 ENV CATALINA_HOME=/usr/local/tomcat
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Tue, 18 Feb 2025 12:06:03 GMT
 ENV PATH=/usr/local/tomcat/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Tue, 18 Feb 2025 12:06:03 GMT
 RUN mkdir -p "$CATALINA_HOME" # buildkit
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Tue, 18 Feb 2025 12:06:03 GMT
 WORKDIR /usr/local/tomcat
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Tue, 18 Feb 2025 12:06:03 GMT
 ENV TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Tue, 18 Feb 2025 12:06:03 GMT
 ENV LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Tue, 18 Feb 2025 12:06:03 GMT
 ENV TOMCAT_MAJOR=9
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Tue, 18 Feb 2025 12:06:03 GMT
 ENV TOMCAT_VERSION=9.0.100
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Tue, 18 Feb 2025 12:06:03 GMT
 ENV TOMCAT_SHA512=e0b1379866d09b54f2743afb382c32a33bca9652c379467c1fa0a5b15a1b98830ae23fb1d8f96c43148844ce95b6c1d22a66db3f8efaf41f225b158c3cb71c92
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Tue, 18 Feb 2025 12:06:03 GMT
 COPY /usr/local/tomcat /usr/local/tomcat # buildkit
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Tue, 18 Feb 2025 12:06:03 GMT
 RUN set -eux; 	apt-get update; 	xargs -rt apt-get install -y --no-install-recommends < "$TOMCAT_NATIVE_LIBDIR/.dependencies.txt"; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Tue, 18 Feb 2025 12:06:03 GMT
 RUN set -eux; 	nativeLines="$(catalina.sh configtest 2>&1)"; 	nativeLines="$(echo "$nativeLines" | grep 'Apache Tomcat Native')"; 	nativeLines="$(echo "$nativeLines" | sort -u)"; 	if ! echo "$nativeLines" | grep -E 'INFO: Loaded( APR based)? Apache Tomcat Native library' >&2; then 		echo >&2 "$nativeLines"; 		exit 1; 	fi # buildkit
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Tue, 18 Feb 2025 12:06:03 GMT
 EXPOSE map[8080/tcp:{}]
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Tue, 18 Feb 2025 12:06:03 GMT
 ENTRYPOINT []
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Tue, 18 Feb 2025 12:06:03 GMT
 CMD ["catalina.sh" "run"]
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 LABEL org.opencontainers.image.authors=XWiki Development Team <committers@xwiki.org>
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 LABEL org.opencontainers.image.url=https://hub.docker.com/_/xwiki
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 LABEL org.opencontainers.image.documentation=https://hub.docker.com/_/xwiki
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 LABEL org.opencontainers.image.source=https://github.com/xwiki/xwiki-docker.git
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 LABEL org.opencontainers.image.vendor=xwiki.org
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 LABEL org.opencontainers.image.licenses=LGPL-2.1
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 RUN apt-get update &&   apt-get --no-install-recommends -y install     curl     libreoffice     unzip     procps &&   rm -rf /var/lib/apt/lists/* # buildkit
-# Tue, 28 Jan 2025 16:59:47 GMT
-ENV XWIKI_VERSION=16.10.3
-# Tue, 28 Jan 2025 16:59:47 GMT
-ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.3
-# Tue, 28 Jan 2025 16:59:47 GMT
-ENV XWIKI_DOWNLOAD_SHA256=bf1f77ad964b2285c5a7695ae279bbb26f23df01ea83982bcc644af45a658405
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
+ENV XWIKI_VERSION=16.10.4
+# Thu, 20 Feb 2025 16:34:11 GMT
+ENV XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.4
+# Thu, 20 Feb 2025 16:34:11 GMT
+ENV XWIKI_DOWNLOAD_SHA256=46d3f6451aaff86b583b3faf5634a7345b4a0886c206e0a8a1a3ccbc7dc82eb4
+# Thu, 20 Feb 2025 16:34:11 GMT
 RUN rm -rf /usr/local/tomcat/webapps/* &&   mkdir -p /usr/local/tomcat/temp &&   mkdir -p /usr/local/xwiki/data &&   curl -fSL "${XWIKI_URL_PREFIX}/xwiki-platform-distribution-war-${XWIKI_VERSION}.war" -o xwiki.war &&   echo "$XWIKI_DOWNLOAD_SHA256 xwiki.war" | sha256sum -c - &&   unzip -d /usr/local/tomcat/webapps/ROOT xwiki.war &&   rm -f xwiki.war # buildkit
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 ENV MYSQL_JDBC_VERSION=9.1.0
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 ENV MYSQL_JDBC_SHA256=8776e2ebc46072c9a47ea59d98298c4273bd9f16a7b26b5dfa4744535aa26c62
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 ENV MYSQL_JDBC_PREFIX=https://repo1.maven.org/maven2/com/mysql/mysql-connector-j/9.1.0
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 ENV MYSQL_JDBC_ARTIFACT=mysql-connector-j-9.1.0.jar
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 ENV MYSQL_JDBC_TARGET=/usr/local/tomcat/webapps/ROOT/WEB-INF/lib/mysql-connector-j-9.1.0.jar
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 RUN curl -fSL "${MYSQL_JDBC_PREFIX}/${MYSQL_JDBC_ARTIFACT}" -o $MYSQL_JDBC_TARGET &&   echo "$MYSQL_JDBC_SHA256 $MYSQL_JDBC_TARGET" | sha256sum -c - # buildkit
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 COPY tomcat/setenv.sh /usr/local/tomcat/bin/ # buildkit
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 COPY xwiki/hibernate.cfg.xml /usr/local/tomcat/webapps/ROOT/WEB-INF/hibernate.cfg.xml # buildkit
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 RUN sed -i 's/<id>org.xwiki.platform:xwiki-platform-distribution-war/<id>org.xwiki.platform:xwiki-platform-distribution-docker/'   /usr/local/tomcat/webapps/ROOT/META-INF/extension.xed # buildkit
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 COPY xwiki/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 VOLUME [/usr/local/xwiki]
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 ENTRYPOINT ["docker-entrypoint.sh"]
-# Tue, 28 Jan 2025 16:59:47 GMT
+# Thu, 20 Feb 2025 16:34:11 GMT
 CMD ["xwiki"]
 ```
 
@@ -140,93 +140,93 @@ CMD ["xwiki"]
 		Last Modified: Mon, 03 Feb 2025 23:00:26 GMT  
 		Size: 29.8 MB (29754290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dbe46403441ac2f7f78a779417c34f07529970491dc25499a9f2321772006f90`  
-		Last Modified: Tue, 04 Feb 2025 07:26:46 GMT  
-		Size: 17.0 MB (16962484 bytes)  
+	-	`sha256:5ab21fde7f674e1262f9a291fb3b148dce3986b16a6afe2b1077240af4411e8d`  
+		Last Modified: Tue, 04 Feb 2025 07:16:41 GMT  
+		Size: 17.0 MB (16962453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9f4ee04af8786c03105915946c5bf4d14aa3901749a6e7e6f54d94d23bdab7c`  
-		Last Modified: Tue, 04 Feb 2025 07:17:34 GMT  
-		Size: 47.0 MB (46952663 bytes)  
+	-	`sha256:24e1027cc04acbd0bbe96f77c4b07270e74687784095964c3f8e1145ed4062a0`  
+		Last Modified: Tue, 04 Feb 2025 07:28:42 GMT  
+		Size: 52.9 MB (52876121 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e3da94a33fa1bc27770bb6588ff1cbef17c2cb37284348caf2ac38adc859173a`  
-		Last Modified: Tue, 04 Feb 2025 07:23:05 GMT  
-		Size: 158.0 B  
+	-	`sha256:eb109d1b0266a0c777373e83c16fd3b583414425ea70ad73adbf43bf4b8a569e`  
+		Last Modified: Tue, 04 Feb 2025 07:20:28 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f03e4717322c01c3bff3cfcbbfebaf8330f4f418957eac816b99ca0494b7bbd8`  
-		Last Modified: Tue, 04 Feb 2025 07:15:16 GMT  
-		Size: 2.3 KB (2282 bytes)  
+	-	`sha256:2f09a34126553bccc37644f98b45096297b0127f040e8492684976c77ec2b14a`  
+		Last Modified: Tue, 04 Feb 2025 07:24:01 GMT  
+		Size: 2.3 KB (2283 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:905cb609a532e57eb7d137a61a15305430b94f7c17e544c137e7d3beb6b367d0`  
-		Last Modified: Wed, 19 Feb 2025 01:08:36 GMT  
+	-	`sha256:e1efd4859c501c0525fd38880aa57ac87cac7e6f7ebdcb6dc2c4e028a2ea15f0`  
+		Last Modified: Wed, 19 Feb 2025 01:08:21 GMT  
 		Size: 139.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e72b585023bd07955738df8ad3ba67700d5ec22f2fd530cf30a7a48f95b68b03`  
-		Last Modified: Wed, 19 Feb 2025 01:08:38 GMT  
-		Size: 13.5 MB (13459670 bytes)  
+	-	`sha256:1f7207457bb122dddb7c24e0c57aac7e223d2455b9efe43aa438c612139a2dc7`  
+		Last Modified: Wed, 19 Feb 2025 01:08:34 GMT  
+		Size: 13.5 MB (13461224 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:59eb6669c47a8716893b10087861481e0cd7a59eceae2d19ace71a169c108b4f`  
-		Last Modified: Wed, 19 Feb 2025 01:08:41 GMT  
-		Size: 12.8 MB (12832316 bytes)  
+	-	`sha256:34c5a203896d40d481bf7dcebb761f6425aa8fe3ca01310d9aced52bafca735b`  
+		Last Modified: Wed, 19 Feb 2025 01:08:35 GMT  
+		Size: 12.8 MB (12832445 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Fri, 13 Dec 2024 15:01:47 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f994ad569330e835f183b7ad250b33323f25776e9ae019bbfd11f24aa593474`  
-		Last Modified: Wed, 19 Feb 2025 04:10:25 GMT  
-		Size: 191.2 MB (191195862 bytes)  
+	-	`sha256:620e8ee517d6898c666cf506d12ac5f49916a08d56d8b1911fd9e4630976db6e`  
+		Last Modified: Fri, 21 Feb 2025 04:08:25 GMT  
+		Size: 191.2 MB (191194787 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a5eaa81e1572f29c2f3c1dad275fa9654d4063dadeca19022996ef83d7862313`  
-		Last Modified: Wed, 19 Feb 2025 04:10:29 GMT  
-		Size: 316.7 MB (316721987 bytes)  
+	-	`sha256:eed6f4e14ef2fdad54cfc4d9e5954c008fcfb051c568bc2e0ec9768f63d29ffc`  
+		Last Modified: Fri, 21 Feb 2025 04:13:10 GMT  
+		Size: 316.7 MB (316733833 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:293fe125f708daa296231cc64fd2d28990206dfe359620580f5341824e5425f5`  
-		Last Modified: Wed, 19 Feb 2025 02:10:20 GMT  
-		Size: 2.4 MB (2434180 bytes)  
+	-	`sha256:26d18ab8bcd3edeccf8cb0354e5a86a2309c607085b525bcbe5f4f5ba0cc9576`  
+		Last Modified: Thu, 20 Feb 2025 23:29:40 GMT  
+		Size: 2.4 MB (2434170 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ce0b089a193e381bf7b059ccd649875a5d329e11315184fd391b170bb4b12bdb`  
-		Last Modified: Wed, 19 Feb 2025 02:10:15 GMT  
-		Size: 1.3 KB (1342 bytes)  
+	-	`sha256:2681da715f82d0a51a68f3050effb7ae0ba3cd2e8278d786564464c12683de82`  
+		Last Modified: Thu, 20 Feb 2025 23:29:32 GMT  
+		Size: 1.3 KB (1343 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fcca3793391d6b3d78ec0586d7887d02e332af57af0b004fa6229b5fceb7333d`  
-		Last Modified: Wed, 19 Feb 2025 02:10:15 GMT  
-		Size: 2.4 KB (2372 bytes)  
+	-	`sha256:f8de4fffb86ef9a1abfc8d14b1edc769f199b3ce78e8ff39d42a5d1365879ca9`  
+		Last Modified: Thu, 20 Feb 2025 23:29:33 GMT  
+		Size: 2.4 KB (2373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:744cd011a86b7e89253889e87419f997285d5a943ecb2a39366ed132219f132d`  
-		Last Modified: Wed, 19 Feb 2025 02:10:15 GMT  
-		Size: 6.6 KB (6622 bytes)  
+	-	`sha256:b355d0a1cd758fab8929a24626e3cbdd039c047acf4c3e2b4a99adf2c85f2060`  
+		Last Modified: Thu, 20 Feb 2025 23:29:32 GMT  
+		Size: 6.6 KB (6623 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fc4d4e148ffd104978aaec4a199e9c033d4ee7386eb67809b48d1679c4490352`  
-		Last Modified: Wed, 19 Feb 2025 02:10:14 GMT  
-		Size: 2.5 KB (2511 bytes)  
+	-	`sha256:66ba6d0dcf6134e07c6ff6225488393f8e186f57a1851f91d59eb861d1901d2a`  
+		Last Modified: Thu, 20 Feb 2025 23:29:34 GMT  
+		Size: 2.5 KB (2510 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `xwiki:lts` - unknown; unknown
 
 ```console
-$ docker pull xwiki@sha256:30c0876b528df7ac584d32b2db2b9687ce77772cc27c4a6d7062bd8f7e3c7f2b
+$ docker pull xwiki@sha256:21e258a20d5ed2b5414076d609b98ad2bb16c11ee70a5b4442e513e8a14f16a4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.8 MB (8795757 bytes)**  
+-	Total Size: **8.8 MB (8798250 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:de3e1859560c5dff0f877d21789c72cee175eb1b53c7c19ed390f0ecc895b88e`
+-	Image ID: `sha256:8cd4f9add4b3720ed7c4d560c612c641b2da6101f7e0a23b04bf3f300dd46275`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6290d970e7427fb03b0844535c2c89b98c446225e2cd1c3d75ea06917c608c99`  
-		Last Modified: Wed, 19 Feb 2025 04:07:45 GMT  
-		Size: 8.8 MB (8754210 bytes)  
+	-	`sha256:d6e4bce2e93a554a67d524fb8d9bf3f10df966d7e3a825bb87ffda39d7774435`  
+		Last Modified: Fri, 21 Feb 2025 04:07:23 GMT  
+		Size: 8.8 MB (8756708 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2dbe4f6a1459f6368ac4211abd728e12704080e3427a1d02963edac089ce5530`  
-		Last Modified: Wed, 19 Feb 2025 04:07:45 GMT  
-		Size: 41.5 KB (41547 bytes)  
+	-	`sha256:0d36290f6ffbddcdac4cf0b456a4dea768faa0f6998c9b1afd352ec108e70b13`  
+		Last Modified: Fri, 21 Feb 2025 04:07:24 GMT  
+		Size: 41.5 KB (41542 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `xwiki:lts` - linux; arm64 variant v8
