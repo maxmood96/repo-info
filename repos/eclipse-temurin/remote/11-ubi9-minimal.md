@@ -89,27 +89,27 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:3333307dcd2e4279579646a05a5f99082a61a20906175240445b0e15f73b6d6e`  
-		Last Modified: Thu, 13 Feb 2025 06:13:39 GMT  
+		Last Modified: Thu, 13 Feb 2025 05:39:37 GMT  
 		Size: 39.4 MB (39366553 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5025173ec0b35686a33458b367c2a6e898c824f57a07925c25d26a0cfb5f2e50`  
-		Last Modified: Thu, 13 Feb 2025 06:13:37 GMT  
+		Last Modified: Thu, 13 Feb 2025 05:39:36 GMT  
 		Size: 461.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:54c1f5d2cc281f9603a883ce69665100dfb63cb7e6aba4dc000a199aecff68d2`  
-		Last Modified: Fri, 14 Feb 2025 05:10:05 GMT  
+		Last Modified: Fri, 14 Feb 2025 00:27:57 GMT  
 		Size: 37.0 MB (36979909 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:fceb38e32668c39594a6b873884d13c1c4a388c59717673d43741815cccc0bed`  
-		Last Modified: Fri, 14 Feb 2025 05:10:09 GMT  
+		Last Modified: Fri, 14 Feb 2025 00:27:58 GMT  
 		Size: 142.1 MB (142058286 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:53a91068bc81f67246b99addef3ad85e6d5f84c4addc5cf0c24485393f09cb50`  
-		Last Modified: Fri, 14 Feb 2025 05:10:02 GMT  
+		Last Modified: Fri, 14 Feb 2025 00:27:56 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:31f385c99999cf91b8da1399a6b3abbe3141cfe31b4d9252e15402174045b933`  
-		Last Modified: Fri, 14 Feb 2025 01:27:33 GMT  
+		Last Modified: Fri, 14 Feb 2025 00:27:49 GMT  
 		Size: 2.3 KB (2291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -129,11 +129,11 @@ $ docker pull eclipse-temurin@sha256:ade94d78c957ebbeda17890ce1a913c056ddbe3572c
 
 -	Layers:
 	-	`sha256:b24ae2dffed9dd3e6b2075c834ed9ddf9ca8056446c9b5e0f7a3a265454be2c8`  
-		Last Modified: Fri, 14 Feb 2025 04:12:35 GMT  
+		Last Modified: Fri, 14 Feb 2025 00:27:56 GMT  
 		Size: 3.7 MB (3686346 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1bdfad8fe73d2996c7a60e89fd740eb6c0948fbab55bda3c611e47c8a74319cd`  
-		Last Modified: Fri, 14 Feb 2025 04:12:35 GMT  
+		Last Modified: Fri, 14 Feb 2025 00:27:56 GMT  
 		Size: 21.7 KB (21715 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -211,27 +211,27 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:56631da24b0de345717238daea2e3e61c768d081572916ae06b08b19126a740d`  
-		Last Modified: Thu, 13 Feb 2025 06:13:39 GMT  
+		Last Modified: Thu, 13 Feb 2025 06:13:12 GMT  
 		Size: 37.6 MB (37626059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:5aee836c3728069e82153bf7b209c409d3343adaea6ab6b31546e5ce09250db5`  
-		Last Modified: Thu, 13 Feb 2025 06:13:36 GMT  
+		Last Modified: Thu, 13 Feb 2025 06:13:10 GMT  
 		Size: 460.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8d886f1d0418fbd67439d630adb0cd82ab5ccf9bc0d3c039cbd36d622e8eaa96`  
-		Last Modified: Fri, 14 Feb 2025 04:27:18 GMT  
+		Last Modified: Fri, 14 Feb 2025 01:07:28 GMT  
 		Size: 37.4 MB (37436415 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9f51c0584af7f71a8960745ac3c4d5b32b0ffa768488be866133001d66300c1b`  
-		Last Modified: Fri, 14 Feb 2025 14:15:59 GMT  
+		Last Modified: Fri, 14 Feb 2025 01:08:35 GMT  
 		Size: 138.8 MB (138846332 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:03448d046e394b2c840436955a68f19fd15d0904630cf70c70ad8cd94606962a`  
-		Last Modified: Fri, 14 Feb 2025 10:35:45 GMT  
+		Last Modified: Fri, 14 Feb 2025 01:08:30 GMT  
 		Size: 129.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:8cfd91d040dac24011beb21de4830bb813da08fbf71be66d472ed27a8f562d89`  
-		Last Modified: Fri, 14 Feb 2025 10:35:45 GMT  
+		Last Modified: Fri, 14 Feb 2025 01:08:29 GMT  
 		Size: 2.3 KB (2291 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -251,11 +251,11 @@ $ docker pull eclipse-temurin@sha256:2b80cba7f8f332c7795cbb4e68c780ff3291b3f7303
 
 -	Layers:
 	-	`sha256:484fb3793e7da4722695705a7ecbcab099f7a9d99bac3c7156e090f83f9ca8ee`  
-		Last Modified: Fri, 14 Feb 2025 04:12:38 GMT  
+		Last Modified: Fri, 14 Feb 2025 01:08:30 GMT  
 		Size: 3.7 MB (3686159 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7a702baca60bef57e9990215c2addf253cb27457c2e1ea7cc688e136fbce596e`  
-		Last Modified: Fri, 14 Feb 2025 04:12:38 GMT  
+		Last Modified: Fri, 14 Feb 2025 01:08:29 GMT  
 		Size: 21.8 KB (21831 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -333,27 +333,27 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:9e6b2a031935c86976201f383962f66d759b1c458d46f7f8db9cd32663dd945f`  
-		Last Modified: Thu, 13 Feb 2025 06:13:41 GMT  
+		Last Modified: Thu, 13 Feb 2025 06:13:22 GMT  
 		Size: 43.8 MB (43777674 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:f65b64183df0b784e7e5f8c0c986254fe70af80954963d80c5fa6ab3c2e153af`  
-		Last Modified: Thu, 13 Feb 2025 06:13:37 GMT  
+		Last Modified: Thu, 13 Feb 2025 06:13:20 GMT  
 		Size: 460.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a8145a963593a244638406fe09abc4846c151008fbc794c259f3023bea468137`  
-		Last Modified: Fri, 14 Feb 2025 05:30:45 GMT  
+		Last Modified: Fri, 14 Feb 2025 00:28:47 GMT  
 		Size: 39.5 MB (39470783 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7f6879416435a25a5ec4f4d0e596e164e96d63b6fb63484b2c14fa765f88376b`  
-		Last Modified: Sat, 15 Feb 2025 01:02:57 GMT  
+		Last Modified: Fri, 14 Feb 2025 00:31:23 GMT  
 		Size: 129.3 MB (129289635 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:44dd3ba2ba686d0f64eddd9d8669e75abff0ad1bd9e5dc0b54676361053d5a5c`  
-		Last Modified: Sat, 15 Feb 2025 01:02:47 GMT  
+		Last Modified: Fri, 14 Feb 2025 00:31:19 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7eedc8c1d66a40a55fc63ea8f7ab1ae6380cc8b765c9c84d56652756443019b1`  
-		Last Modified: Sat, 15 Feb 2025 01:02:47 GMT  
+		Last Modified: Fri, 14 Feb 2025 00:31:19 GMT  
 		Size: 2.3 KB (2290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -373,11 +373,11 @@ $ docker pull eclipse-temurin@sha256:62e4efed528fc26905db462016493b330a7ab85175e
 
 -	Layers:
 	-	`sha256:920539c3c2068c93304b57cdaa2790beb0a67d53d38d38f30313ea0702ec988f`  
-		Last Modified: Fri, 14 Feb 2025 04:12:40 GMT  
+		Last Modified: Fri, 14 Feb 2025 00:31:20 GMT  
 		Size: 3.7 MB (3683648 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f6209f0798f818552afeccdb539c87347406a625293ff8384ca54b1e4df87a83`  
-		Last Modified: Fri, 14 Feb 2025 04:12:41 GMT  
+		Last Modified: Fri, 14 Feb 2025 00:31:19 GMT  
 		Size: 21.8 KB (21751 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -455,27 +455,27 @@ CMD ["jshell"]
 
 -	Layers:
 	-	`sha256:2a473e1a3c46f4f695fac29b3f07299216de74886d72d8a6ee099c88e522d425`  
-		Last Modified: Thu, 13 Feb 2025 06:13:39 GMT  
+		Last Modified: Thu, 13 Feb 2025 06:13:17 GMT  
 		Size: 37.6 MB (37555898 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0b2c3df35599710f44a071f13be3fc08bdd10402bdd2d9cf10dfee0af30c3e6`  
-		Last Modified: Thu, 13 Feb 2025 06:13:37 GMT  
+		Last Modified: Thu, 13 Feb 2025 06:13:16 GMT  
 		Size: 462.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:2f3a5216d41ebdda96e1eb57f654e6b5234a06561ce194bafe15dc8e93a800f7`  
-		Last Modified: Fri, 14 Feb 2025 15:08:15 GMT  
+		Last Modified: Fri, 14 Feb 2025 06:54:15 GMT  
 		Size: 37.0 MB (37000416 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:c2906cc1d5464b5724028004b5cba207e7296b860b37d665954fba7c99c2700f`  
-		Last Modified: Sat, 15 Feb 2025 01:03:15 GMT  
+		Last Modified: Fri, 14 Feb 2025 06:54:16 GMT  
 		Size: 122.0 MB (121978406 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:7afa3bc95bf2ee9da09be05a2dea5760b1ef5873542fbd99d5059a3bd8ab2578`  
-		Last Modified: Sat, 15 Feb 2025 01:03:05 GMT  
+		Last Modified: Fri, 14 Feb 2025 06:54:14 GMT  
 		Size: 130.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:e1d00ded01de910e5f340ab77811c96f0aa529eb041e26ca3cfa06b9e7736f11`  
-		Last Modified: Sat, 15 Feb 2025 01:03:05 GMT  
+		Last Modified: Fri, 14 Feb 2025 06:54:14 GMT  
 		Size: 2.3 KB (2290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -495,10 +495,10 @@ $ docker pull eclipse-temurin@sha256:fab5703db9392d6e16ca7e66fa03f1785fb260826ba
 
 -	Layers:
 	-	`sha256:3c96fe5772f33d29ccc7701183150afc7a23c8ad91774bd5b82e3d11d63925d6`  
-		Last Modified: Fri, 14 Feb 2025 07:12:34 GMT  
+		Last Modified: Fri, 14 Feb 2025 06:54:13 GMT  
 		Size: 3.7 MB (3673567 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:555ed88c630a14e211d6743b96f27400a017cc9b3c774148d04fb47e2b5532f2`  
-		Last Modified: Fri, 14 Feb 2025 07:12:34 GMT  
+		Last Modified: Fri, 14 Feb 2025 06:54:13 GMT  
 		Size: 21.7 KB (21715 bytes)  
 		MIME: application/vnd.in-toto+json
