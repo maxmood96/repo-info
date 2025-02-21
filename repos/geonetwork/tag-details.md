@@ -4822,11 +4822,11 @@ $ docker pull geonetwork@sha256:fcdea2617189080e1f2a9fa6c11001e06ac78b700c236385
 
 -	Layers:
 	-	`sha256:100255f77dbf0901761711d0a42bce8f2fdbf26e9fe6a605b7b44833cc24afeb`  
-		Last Modified: Fri, 31 Jan 2025 03:12:40 GMT  
+		Last Modified: Fri, 21 Feb 2025 18:49:37 GMT  
 		Size: 4.7 MB (4691021 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9db15a999cbf82b93b3140fc01779fc48f5c68c027c08871ea62d5e1b0a63239`  
-		Last Modified: Fri, 31 Jan 2025 03:12:40 GMT  
+		Last Modified: Fri, 21 Feb 2025 18:49:38 GMT  
 		Size: 25.7 KB (25700 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5010,11 +5010,11 @@ $ docker pull geonetwork@sha256:fc9d5042d3382526cb9a2c13442da2ec4b7d9e875f6bd582
 
 -	Layers:
 	-	`sha256:79dbcd3a543e09ecdd2f6dd63f975128d81220fb6ff9382b9312331b49388abd`  
-		Last Modified: Fri, 31 Jan 2025 06:25:54 GMT  
+		Last Modified: Fri, 21 Feb 2025 18:50:49 GMT  
 		Size: 4.7 MB (4693179 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1a39e3b6b12071113d382aa0fa2d4699b72073e309e3e4dbc7538a4be3076f48`  
-		Last Modified: Fri, 31 Jan 2025 06:25:53 GMT  
+		Last Modified: Fri, 21 Feb 2025 18:50:49 GMT  
 		Size: 25.8 KB (25834 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5917,11 +5917,11 @@ $ docker pull geonetwork@sha256:fcdea2617189080e1f2a9fa6c11001e06ac78b700c236385
 
 -	Layers:
 	-	`sha256:100255f77dbf0901761711d0a42bce8f2fdbf26e9fe6a605b7b44833cc24afeb`  
-		Last Modified: Fri, 31 Jan 2025 03:12:40 GMT  
+		Last Modified: Fri, 21 Feb 2025 18:49:37 GMT  
 		Size: 4.7 MB (4691021 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9db15a999cbf82b93b3140fc01779fc48f5c68c027c08871ea62d5e1b0a63239`  
-		Last Modified: Fri, 31 Jan 2025 03:12:40 GMT  
+		Last Modified: Fri, 21 Feb 2025 18:49:38 GMT  
 		Size: 25.7 KB (25700 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6105,11 +6105,11 @@ $ docker pull geonetwork@sha256:fc9d5042d3382526cb9a2c13442da2ec4b7d9e875f6bd582
 
 -	Layers:
 	-	`sha256:79dbcd3a543e09ecdd2f6dd63f975128d81220fb6ff9382b9312331b49388abd`  
-		Last Modified: Fri, 31 Jan 2025 06:25:54 GMT  
+		Last Modified: Fri, 21 Feb 2025 18:50:49 GMT  
 		Size: 4.7 MB (4693179 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1a39e3b6b12071113d382aa0fa2d4699b72073e309e3e4dbc7538a4be3076f48`  
-		Last Modified: Fri, 31 Jan 2025 06:25:53 GMT  
+		Last Modified: Fri, 21 Feb 2025 18:50:49 GMT  
 		Size: 25.8 KB (25834 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6306,11 +6306,11 @@ $ docker pull geonetwork@sha256:fcdea2617189080e1f2a9fa6c11001e06ac78b700c236385
 
 -	Layers:
 	-	`sha256:100255f77dbf0901761711d0a42bce8f2fdbf26e9fe6a605b7b44833cc24afeb`  
-		Last Modified: Fri, 31 Jan 2025 03:12:40 GMT  
+		Last Modified: Fri, 21 Feb 2025 18:49:37 GMT  
 		Size: 4.7 MB (4691021 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9db15a999cbf82b93b3140fc01779fc48f5c68c027c08871ea62d5e1b0a63239`  
-		Last Modified: Fri, 31 Jan 2025 03:12:40 GMT  
+		Last Modified: Fri, 21 Feb 2025 18:49:38 GMT  
 		Size: 25.7 KB (25700 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6494,11 +6494,11 @@ $ docker pull geonetwork@sha256:fc9d5042d3382526cb9a2c13442da2ec4b7d9e875f6bd582
 
 -	Layers:
 	-	`sha256:79dbcd3a543e09ecdd2f6dd63f975128d81220fb6ff9382b9312331b49388abd`  
-		Last Modified: Fri, 31 Jan 2025 06:25:54 GMT  
+		Last Modified: Fri, 21 Feb 2025 18:50:49 GMT  
 		Size: 4.7 MB (4693179 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1a39e3b6b12071113d382aa0fa2d4699b72073e309e3e4dbc7538a4be3076f48`  
-		Last Modified: Fri, 31 Jan 2025 06:25:53 GMT  
+		Last Modified: Fri, 21 Feb 2025 18:50:49 GMT  
 		Size: 25.8 KB (25834 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6695,11 +6695,11 @@ $ docker pull geonetwork@sha256:fcdea2617189080e1f2a9fa6c11001e06ac78b700c236385
 
 -	Layers:
 	-	`sha256:100255f77dbf0901761711d0a42bce8f2fdbf26e9fe6a605b7b44833cc24afeb`  
-		Last Modified: Fri, 31 Jan 2025 03:12:40 GMT  
+		Last Modified: Fri, 21 Feb 2025 18:49:37 GMT  
 		Size: 4.7 MB (4691021 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:9db15a999cbf82b93b3140fc01779fc48f5c68c027c08871ea62d5e1b0a63239`  
-		Last Modified: Fri, 31 Jan 2025 03:12:40 GMT  
+		Last Modified: Fri, 21 Feb 2025 18:49:38 GMT  
 		Size: 25.7 KB (25700 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6883,10 +6883,10 @@ $ docker pull geonetwork@sha256:fc9d5042d3382526cb9a2c13442da2ec4b7d9e875f6bd582
 
 -	Layers:
 	-	`sha256:79dbcd3a543e09ecdd2f6dd63f975128d81220fb6ff9382b9312331b49388abd`  
-		Last Modified: Fri, 31 Jan 2025 06:25:54 GMT  
+		Last Modified: Fri, 21 Feb 2025 18:50:49 GMT  
 		Size: 4.7 MB (4693179 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:1a39e3b6b12071113d382aa0fa2d4699b72073e309e3e4dbc7538a4be3076f48`  
-		Last Modified: Fri, 31 Jan 2025 06:25:53 GMT  
+		Last Modified: Fri, 21 Feb 2025 18:50:49 GMT  
 		Size: 25.8 KB (25834 bytes)  
 		MIME: application/vnd.in-toto+json
