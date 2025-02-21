@@ -52,15 +52,15 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 
 -	Layers:
 	-	`sha256:9cb31e2e37eab1bff50f727e979fcacb509e225fb853433a6fe21d2fb34e6305`  
-		Last Modified: Tue, 04 Feb 2025 05:13:20 GMT  
+		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
 		Size: 29.5 MB (29535941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9f8734ac738a48835f6f2603e6f40d356c185a1475225a9b062ebe4f1e133086`  
-		Last Modified: Tue, 18 Feb 2025 21:29:43 GMT  
+		Last Modified: Tue, 18 Feb 2025 21:29:25 GMT  
 		Size: 1.5 MB (1450065 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4e06009dd7006856fb31282aec5decd347ee523a5f2993cb9d1169b3ba6c8efc`  
-		Last Modified: Tue, 18 Feb 2025 21:29:56 GMT  
+		Last Modified: Tue, 18 Feb 2025 21:29:26 GMT  
 		Size: 70.3 MB (70291571 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -80,11 +80,11 @@ $ docker pull ibmjava@sha256:13f671f20c281d232adabf67cb7bec4f19bad89bb994546d240
 
 -	Layers:
 	-	`sha256:e0f019ce2aabe45236cb53a6cde86e1c5586d1faef6b13392d9c1629ce06fb36`  
-		Last Modified: Wed, 19 Feb 2025 00:01:41 GMT  
+		Last Modified: Tue, 18 Feb 2025 21:29:25 GMT  
 		Size: 2.0 MB (2034325 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:7b13defd55ce7447f391cdc03317084dd88726d9349a5ddbde7248ee68e17a01`  
-		Last Modified: Wed, 19 Feb 2025 00:01:42 GMT  
+		Last Modified: Tue, 18 Feb 2025 21:29:25 GMT  
 		Size: 13.2 KB (13181 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -127,15 +127,15 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 
 -	Layers:
 	-	`sha256:2b34fd69ee7e3fb1c28ea96a57188d452075e6a1dc43e3328673c0a828d4cf11`  
-		Last Modified: Tue, 04 Feb 2025 07:01:41 GMT  
+		Last Modified: Sun, 26 Jan 2025 07:02:20 GMT  
 		Size: 34.4 MB (34447935 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:549562dbb9f45949b79117ad60c4bbdb1ae9a0fd0a32b6119b57bf804e7f1c77`  
-		Last Modified: Mon, 10 Feb 2025 07:38:54 GMT  
+		Last Modified: Tue, 04 Feb 2025 08:22:06 GMT  
 		Size: 1.5 MB (1536037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:572ce67234b3a3c83eed112903fac78c06f709c166b5981bd7b4251e388bc382`  
-		Last Modified: Tue, 18 Feb 2025 21:32:46 GMT  
+		Last Modified: Tue, 18 Feb 2025 21:31:13 GMT  
 		Size: 71.1 MB (71121314 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -155,11 +155,11 @@ $ docker pull ibmjava@sha256:13af863715cf5caf1e1cb094a4a0e6de93c08f715990b7df50e
 
 -	Layers:
 	-	`sha256:3421f2e7059f4825d15e950315abb60a08ce8978b331986b1d0208c6a9e286e6`  
-		Last Modified: Wed, 19 Feb 2025 00:01:43 GMT  
+		Last Modified: Tue, 18 Feb 2025 21:31:11 GMT  
 		Size: 2.0 MB (2038712 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:253cb264bf2e917fcff28c0b1380917229c094fdb998bf4bd4e84ffb2534f2a1`  
-		Last Modified: Wed, 19 Feb 2025 00:01:44 GMT  
+		Last Modified: Tue, 18 Feb 2025 21:31:11 GMT  
 		Size: 13.2 KB (13215 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -202,15 +202,15 @@ ENV JAVA_HOME=/opt/ibm/java/jre PATH=/opt/ibm/java/jre/bin:/usr/local/sbin:/usr/
 
 -	Layers:
 	-	`sha256:7ed94a91c4e77c2e320a028b45fcefc9419c4df2b3d6494bf92ab5d08bba4d77`  
-		Last Modified: Tue, 04 Feb 2025 06:45:54 GMT  
+		Last Modified: Sun, 26 Jan 2025 07:02:32 GMT  
 		Size: 28.0 MB (28000931 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:a6f4ed4c83fd203a93b2e2d3afc549f52d4e75a4e9c4ecade96808e6a2fe3ebb`  
-		Last Modified: Tue, 18 Feb 2025 21:30:08 GMT  
+		Last Modified: Tue, 18 Feb 2025 21:29:44 GMT  
 		Size: 1.5 MB (1455567 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:b0e1d0e91c4571ad113750e5dc3cebdf9445aecd450c8112a81a127b1f9a5af0`  
-		Last Modified: Tue, 18 Feb 2025 21:32:20 GMT  
+		Last Modified: Tue, 18 Feb 2025 21:31:02 GMT  
 		Size: 70.9 MB (70903840 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -230,10 +230,10 @@ $ docker pull ibmjava@sha256:fab280796a2cf1ecf673c019e7816492e7ab6344faeb47459fd
 
 -	Layers:
 	-	`sha256:f40fa7abcdf3bca0ca43346165057302b5b4d233dd823af0d3c51898b775e7d3`  
-		Last Modified: Wed, 19 Feb 2025 00:01:46 GMT  
+		Last Modified: Tue, 18 Feb 2025 21:31:01 GMT  
 		Size: 2.0 MB (2037937 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:fb60a6c71716d9a684b26bb3d7125f013941d1d8b2647ba30db29636f6caf8c5`  
-		Last Modified: Wed, 19 Feb 2025 00:01:46 GMT  
+		Last Modified: Tue, 18 Feb 2025 21:31:00 GMT  
 		Size: 13.2 KB (13181 bytes)  
 		MIME: application/vnd.in-toto+json
