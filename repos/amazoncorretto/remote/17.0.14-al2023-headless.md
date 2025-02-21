@@ -43,11 +43,11 @@ ENV JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto
 
 -	Layers:
 	-	`sha256:878bc77d48b9be49ba0c1a9449cd773b9ec0a7bf22d5286569e4011e441370c3`  
-		Last Modified: Fri, 07 Feb 2025 02:42:44 GMT  
+		Last Modified: Thu, 06 Feb 2025 18:59:08 GMT  
 		Size: 53.2 MB (53150583 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:0c0191a6a346e02d9d0f4f978361997c87e160ff59c6c5a4ab9d9debf39aa546`  
-		Last Modified: Mon, 10 Feb 2025 23:00:17 GMT  
+		Last Modified: Mon, 10 Feb 2025 20:08:34 GMT  
 		Size: 82.1 MB (82113301 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -71,7 +71,7 @@ $ docker pull amazoncorretto@sha256:3d1d2ad567b529cf5b94b74dbf367fd0e5b46aee7fba
 		Size: 5.2 MB (5159712 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:b0920855818716abb0055f603bd72c50a910abd23476320590266e37132d4aba`  
-		Last Modified: Tue, 11 Feb 2025 05:01:40 GMT  
+		Last Modified: Mon, 10 Feb 2025 20:08:33 GMT  
 		Size: 8.8 KB (8750 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -107,11 +107,11 @@ ENV JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto
 
 -	Layers:
 	-	`sha256:9f14bc8b911d112fe9005a1fab86d88bf14a10f429f49d6291fd5e2395fd4442`  
-		Last Modified: Fri, 07 Feb 2025 02:45:10 GMT  
+		Last Modified: Thu, 06 Feb 2025 18:59:08 GMT  
 		Size: 52.3 MB (52270951 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:9401aa851ae176cb396b61d9ba3db43844a1ce1ea62cedfd683a8fec299fb0c4`  
-		Last Modified: Tue, 11 Feb 2025 02:09:11 GMT  
+		Last Modified: Mon, 10 Feb 2025 20:21:52 GMT  
 		Size: 81.6 MB (81551596 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
@@ -135,6 +135,6 @@ $ docker pull amazoncorretto@sha256:f6239096e5ff86879b48ee57a7c4104a483ac6e84fb2
 		Size: 5.2 MB (5158500 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:f106ecb24a9f0116cb9fe85c9a3ae0896e76f428b3287eba8fd78f71a8eba6a8`  
-		Last Modified: Tue, 11 Feb 2025 05:01:50 GMT  
+		Last Modified: Mon, 10 Feb 2025 20:21:49 GMT  
 		Size: 8.8 KB (8831 bytes)  
 		MIME: application/vnd.in-toto+json
