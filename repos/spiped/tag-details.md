@@ -204,7 +204,7 @@ $ docker pull spiped@sha256:7ef4a0bc6c9834e261cda43f045e8d5b1794274f1138907d7093
 		Size: 3.5 MB (3486344 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5fac543ba7e329c9a615af9d72772e6955538ba4abc8298e3e684fec72c495e2`  
-		Last Modified: Tue, 04 Feb 2025 08:02:26 GMT  
+		Last Modified: Fri, 21 Feb 2025 19:44:41 GMT  
 		Size: 15.1 KB (15140 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1638,7 +1638,7 @@ $ docker pull spiped@sha256:7ef4a0bc6c9834e261cda43f045e8d5b1794274f1138907d7093
 		Size: 3.5 MB (3486344 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5fac543ba7e329c9a615af9d72772e6955538ba4abc8298e3e684fec72c495e2`  
-		Last Modified: Tue, 04 Feb 2025 08:02:26 GMT  
+		Last Modified: Fri, 21 Feb 2025 19:44:41 GMT  
 		Size: 15.1 KB (15140 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3072,7 +3072,7 @@ $ docker pull spiped@sha256:7ef4a0bc6c9834e261cda43f045e8d5b1794274f1138907d7093
 		Size: 3.5 MB (3486344 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5fac543ba7e329c9a615af9d72772e6955538ba4abc8298e3e684fec72c495e2`  
-		Last Modified: Tue, 04 Feb 2025 08:02:26 GMT  
+		Last Modified: Fri, 21 Feb 2025 19:44:41 GMT  
 		Size: 15.1 KB (15140 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -5231,7 +5231,7 @@ $ docker pull spiped@sha256:7ef4a0bc6c9834e261cda43f045e8d5b1794274f1138907d7093
 		Size: 3.5 MB (3486344 bytes)  
 		MIME: application/vnd.in-toto+json
 	-	`sha256:5fac543ba7e329c9a615af9d72772e6955538ba4abc8298e3e684fec72c495e2`  
-		Last Modified: Tue, 04 Feb 2025 08:02:26 GMT  
+		Last Modified: Fri, 21 Feb 2025 19:44:41 GMT  
 		Size: 15.1 KB (15140 bytes)  
 		MIME: application/vnd.in-toto+json
 
