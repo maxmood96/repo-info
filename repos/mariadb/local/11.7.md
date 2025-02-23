@@ -728,15 +728,9 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30t64/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.8.3-1.1ubuntu3.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3-1.1ubuntu3.2.dsc' gnutls28_3.8.3-1.1ubuntu3.2.dsc 3393 SHA512:eec23e23814c881bf35e868ba3e7c7c62b428b066e1d149608741b0d91abac6cf64310c3cb5483c9c827f448f3468530cb030cef3ca77ad1b7ab0dfc2a93ba80
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3.orig.tar.xz' gnutls28_3.8.3.orig.tar.xz 6463720 SHA512:74eddba01ce4c2ffdca781c85db3bb52c85f1db3c09813ee2b8ceea0608f92ca3912fd9266f55deb36a8ba4d01802895ca5d5d219e7d9caec45e1a8534e45a84
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3.orig.tar.xz.asc' gnutls28_3.8.3.orig.tar.xz.asc 854 SHA512:8a13a834b57172b9504313eeb7d733d2c3d72971dd8adaa837bbd9d73b12fe2a67f7d07fbbaf643a34ff95acaa82458a88ce4118152ede8ece9be5a089b693c8
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnutls28/gnutls28_3.8.3-1.1ubuntu3.2.debian.tar.xz' gnutls28_3.8.3-1.1ubuntu3.2.debian.tar.xz 88288 SHA512:a0ca8380f7f8c7ea5fa75186d2461a26984a330c2ace8e9bfad88148b181c11ba418af7ca02ef5c5bdb102cc15e2700a85b506e88393053461660839ee8cf7ac
-```
 
 ### `dpkg` source package: `grep=3.11-4build1`
 
@@ -1744,14 +1738,9 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.4
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.4.dsc' openssl_3.0.13-0ubuntu3.4.dsc 2512 SHA512:8d4e11bb3b5dda609a01ea3bdcd1935f576379add68902fb58fabbb4030330bd28c1008e28fdf3597d6afbafea0a7837139db314a7acc90cc677e19ea0371181
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.4.debian.tar.xz' openssl_3.0.13-0ubuntu3.4.debian.tar.xz 165948 SHA512:b25d3af35d0184daf5c6d92410f004252a52fe8e7926c02029ef740ae4e87520435314be90d51a59376f810227afccfcf5b064cd51057cb1866467463bf54ad1
-```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 
