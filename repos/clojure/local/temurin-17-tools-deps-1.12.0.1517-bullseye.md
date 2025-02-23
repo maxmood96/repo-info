@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:13540882dbb43b3208774124feea6bda443c796d4bda82415b1a5e18da78a104`
-- Created: `2025-01-29T19:11:46Z`
-- Virtual Size: ~ 556.33 Mb  
+- Image ID: `sha256:9ab03725e80fda93dda3ef225b00e0a2e79b638aa620bf5c84ce065d54345608`
+- Created: `2025-02-19T14:51:07Z`
+- Virtual Size: ~ 556.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["entrypoint"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `CLOJURE_VERSION=1.12.0.1501`
+  - `CLOJURE_VERSION=1.12.0.1517`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -929,21 +929,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.7.1-5+deb11u6
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u6.dsc' gnutls28_3.7.1-5+deb11u6.dsc 3522 SHA256:39849c7a4973f6b4daf89bdcce49956613b8321140934d288dfdb129bcc2be6a
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz' gnutls28_3.7.1.orig.tar.xz 6038388 SHA256:3777d7963eca5e06eb315686163b7b3f5045e2baac5e54e038ace9835e5cac6f
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz.asc' gnutls28_3.7.1.orig.tar.xz.asc 854 SHA256:13a683b12602c169a7ad7827ab0e3f35c8fa1f98675d0073cf7d54a8cd635582
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u6.debian.tar.xz' gnutls28_3.7.1-5+deb11u6.debian.tar.xz 109212 SHA256:90bba2ee9e3d6ce7c711bef1a7dded19a3037279df43b1e53633e02845252d73
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u6/
 
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u6/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gpm=1.20.7-8`
 
@@ -2285,11 +2277,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.4.57+dfsg-3+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.4.57+dfsg-3+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssh=1:8.4p1-5+deb11u3`
+### `dpkg` source package: `openssh=1:8.4p1-5+deb11u4`
 
 Binary Packages:
 
-- `openssh-client=1:8.4p1-5+deb11u3`
+- `openssh-client=1:8.4p1-5+deb11u4`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -2305,18 +2297,18 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:8.4p1-5+deb11u3
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_8.4p1-5%2bdeb11u3.dsc' openssh_8.4p1-5+deb11u3.dsc 3270 SHA256:0f800a412ac707c735afd90b5529511c5c1629b6aef342d824b2f66250565459
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_8.4p1.orig.tar.gz' openssh_8.4p1.orig.tar.gz 1742201 SHA256:5a01d22e407eb1c05ba8a8f7c654d388a13e9f226e4ed33bd38748dafa1d2b24
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_8.4p1.orig.tar.gz.asc' openssh_8.4p1.orig.tar.gz.asc 683 SHA256:ccd9dd484651ce4cc926228f6e1b46afaf0c5ab98a866217fa0ef1074370ea2b
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_8.4p1-5%2bdeb11u3.debian.tar.xz' openssh_8.4p1-5+deb11u3.debian.tar.xz 186600 SHA256:f460cc974def7a03753f6d3e5248265aa01deca7e2ba5e29979677487e89cd41
+$ apt-get source -qq --print-uris openssh=1:8.4p1-5+deb11u4
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1-5%2bdeb11u4.dsc' openssh_8.4p1-5+deb11u4.dsc 3270 SHA256:1c6e25883d9a0928d2322a4226c97a4a19b8e32e0667c7eee68e3b9d449b5f40
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1.orig.tar.gz' openssh_8.4p1.orig.tar.gz 1742201 SHA256:5a01d22e407eb1c05ba8a8f7c654d388a13e9f226e4ed33bd38748dafa1d2b24
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1.orig.tar.gz.asc' openssh_8.4p1.orig.tar.gz.asc 683 SHA256:ccd9dd484651ce4cc926228f6e1b46afaf0c5ab98a866217fa0ef1074370ea2b
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_8.4p1-5%2bdeb11u4.debian.tar.xz' openssh_8.4p1-5+deb11u4.debian.tar.xz 187604 SHA256:fa28faa0150608036fb0114d5c0c6cd5caabff073c5e0f70a3c60ac1915e1056
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u3/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:8.4p1-5+deb11u3/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u4/ (for browsing the source)
+- https://sources.debian.net/src/openssh/1:8.4p1-5+deb11u4/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssh/1:8.4p1-5+deb11u4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=1.1.1w-0+deb11u2`
 

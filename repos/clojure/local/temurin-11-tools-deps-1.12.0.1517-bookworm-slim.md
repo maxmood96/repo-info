@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7e2677581f7428ccafb86ee9704a713c2b5950d989f56d3878d548f24b3e7488`
-- Created: `2025-01-29T19:11:46Z`
+- Image ID: `sha256:1ba8b025ba067dcd29e47ce556f3ea0a17d06a03d02572936130920b2e0dc08a`
+- Created: `2025-02-19T14:51:07Z`
 - Virtual Size: ~ 516.25 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,7 +11,7 @@
 - Environment:
   - `PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/opt/java/openjdk`
-  - `CLOJURE_VERSION=1.12.0.1501`
+  - `CLOJURE_VERSION=1.12.0.1517`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -2385,11 +2385,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/openldap/2.5.13+dfsg-5/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/openldap/2.5.13+dfsg-5/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `openssh=1:9.2p1-2+deb12u4`
+### `dpkg` source package: `openssh=1:9.2p1-2+deb12u5`
 
 Binary Packages:
 
-- `openssh-client=1:9.2p1-2+deb12u4`
+- `openssh-client=1:9.2p1-2+deb12u5`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -2404,18 +2404,18 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris openssh=1:9.2p1-2+deb12u4
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.2p1-2%2bdeb12u4.dsc' openssh_9.2p1-2+deb12u4.dsc 3381 SHA256:5d5a01fcbec9bd68db93b92e25a2384650a6ac6757652d5715e541ce6bae4df4
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.2p1.orig.tar.gz' openssh_9.2p1.orig.tar.gz 1852380 SHA256:3f66dbf1655fb45f50e1c56da62ab01218c228807b21338d634ebcdf9d71cf46
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.2p1.orig.tar.gz.asc' openssh_9.2p1.orig.tar.gz.asc 833 SHA256:7acc8e9502040972aeecb785fa3b6bb00c069cc01fbd7c214f8f7867033a6dbb
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.2p1-2%2bdeb12u4.debian.tar.xz' openssh_9.2p1-2+deb12u4.debian.tar.xz 194708 SHA256:99a63bad9ef447c0d890816c5f3a2b97d8dbded2e426f15614ee0526446c9c5f
+$ apt-get source -qq --print-uris openssh=1:9.2p1-2+deb12u5
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_9.2p1-2%2bdeb12u5.dsc' openssh_9.2p1-2+deb12u5.dsc 3258 SHA256:0c25da4bb4351013d20a2850b3902c22565addfeb56386466d32c2e5f36b543e
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_9.2p1.orig.tar.gz' openssh_9.2p1.orig.tar.gz 1852380 SHA256:3f66dbf1655fb45f50e1c56da62ab01218c228807b21338d634ebcdf9d71cf46
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_9.2p1.orig.tar.gz.asc' openssh_9.2p1.orig.tar.gz.asc 833 SHA256:7acc8e9502040972aeecb785fa3b6bb00c069cc01fbd7c214f8f7867033a6dbb
+'http://deb.debian.org/debian-security/pool/updates/main/o/openssh/openssh_9.2p1-2%2bdeb12u5.debian.tar.xz' openssh_9.2p1-2+deb12u5.debian.tar.xz 196012 SHA256:bbfadaa8e1e39bbeb9276ec8eb9fc5db795aa30a7f42e2153b52f388bf02d883
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/openssh/1:9.2p1-2+deb12u4/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:9.2p1-2+deb12u4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:9.2p1-2+deb12u4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/openssh/1:9.2p1-2+deb12u5/ (for browsing the source)
+- https://sources.debian.net/src/openssh/1:9.2p1-2+deb12u5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openssh/1:9.2p1-2+deb12u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.0.15-1~deb12u1`
 
