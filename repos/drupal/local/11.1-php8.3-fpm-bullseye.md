@@ -1,9 +1,9 @@
-# `drupal:11.1.2-php8.3-fpm-bullseye`
+# `drupal:11.1.3-php8.3-fpm-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5cead82c331f973459b4b89f23d0cfc4e145a7c108d6c5a8cb44400328f54dd4`
-- Created: `2025-02-06T05:02:24Z`
+- Image ID: `sha256:64f35f64f9c674a37a2407232b691a6eccaec6565b58887ac2550084b6775b6d`
+- Created: `2025-02-19T23:10:31Z`
 - Virtual Size: ~ 547.99 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -21,7 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.3.17.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.17.tar.xz.asc`
   - `PHP_SHA256=6158ee678e698395da13d72c7679a406d2b7554323432f14d37b60ed87d8ccfb`
-  - `DRUPAL_VERSION=11.1.2`
+  - `DRUPAL_VERSION=11.1.3`
   - `COMPOSER_ALLOW_SUPERUSER=1`
 
 ## `dpkg` (`.deb`-based packages)
@@ -1119,21 +1119,13 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 - `LGPLv3+_or_GPLv2+`
 - `The main library is licensed under GNU Lesser`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnutls28=3.7.1-5+deb11u6
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u6.dsc' gnutls28_3.7.1-5+deb11u6.dsc 3522 SHA256:39849c7a4973f6b4daf89bdcce49956613b8321140934d288dfdb129bcc2be6a
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz' gnutls28_3.7.1.orig.tar.xz 6038388 SHA256:3777d7963eca5e06eb315686163b7b3f5045e2baac5e54e038ace9835e5cac6f
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1.orig.tar.xz.asc' gnutls28_3.7.1.orig.tar.xz.asc 854 SHA256:13a683b12602c169a7ad7827ab0e3f35c8fa1f98675d0073cf7d54a8cd635582
-'http://deb.debian.org/debian-security/pool/updates/main/g/gnutls28/gnutls28_3.7.1-5%2bdeb11u6.debian.tar.xz' gnutls28_3.7.1-5+deb11u6.debian.tar.xz 109212 SHA256:90bba2ee9e3d6ce7c711bef1a7dded19a3037279df43b1e53633e02845252d73
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u6/
 
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u6/ (for browsing the source)
-- https://sources.debian.net/src/gnutls28/3.7.1-5+deb11u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnutls28/3.7.1-5+deb11u6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `grep=3.6-1+deb11u1`
 
@@ -2000,20 +1992,13 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.10+dfsg-6.7+deb11u5
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.10%2bdfsg-6.7%2bdeb11u5.dsc' libxml2_2.9.10+dfsg-6.7+deb11u5.dsc 2704 SHA256:77bca4aa4cc6543ca08e1a96a81441ae23ca363b57c82fd5d58341e646d82350
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.10%2bdfsg.orig.tar.xz' libxml2_2.9.10+dfsg.orig.tar.xz 2503560 SHA256:65ee7a2f5e100c64ddf7beb92297c9b2a30b994a76cd1fab67470cf22db6b7d0
-'http://deb.debian.org/debian-security/pool/updates/main/libx/libxml2/libxml2_2.9.10%2bdfsg-6.7%2bdeb11u5.debian.tar.xz' libxml2_2.9.10+dfsg-6.7+deb11u5.debian.tar.xz 43140 SHA256:ce3a1e4fa6c173de6638a74a122b28fff367b352a2c4bc26002fead5c0feeca7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libxml2/2.9.10+dfsg-6.7+deb11u5/
 
-- https://sources.debian.net/src/libxml2/2.9.10+dfsg-6.7+deb11u5/ (for browsing the source)
-- https://sources.debian.net/src/libxml2/2.9.10+dfsg-6.7+deb11u5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxml2/2.9.10+dfsg-6.7+deb11u5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libzip=1.7.3-1`
 
@@ -2644,11 +2629,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/pkg-config/0.29.2-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/pkg-config/0.29.2-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `postgresql-13=13.19-0+deb11u1`
+### `dpkg` source package: `postgresql-13=13.20-0+deb11u1`
 
 Binary Packages:
 
-- `libpq5:amd64=13.19-0+deb11u1`
+- `libpq5:amd64=13.20-0+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 
@@ -2671,17 +2656,17 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris postgresql-13=13.19-0+deb11u1
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.19-0%2bdeb11u1.dsc' postgresql-13_13.19-0+deb11u1.dsc 3703 SHA256:59788cf29b344a3830aff5465f2655ed2ac2079b4b2a62d32473342d4e7c7ba1
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.19.orig.tar.bz2' postgresql-13_13.19.orig.tar.bz2 21729020 SHA256:482cce0a9f8d24c2447cfc7b2817e55f86d51afe5f7f1a85214bf93644e774ea
-'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.19-0%2bdeb11u1.debian.tar.xz' postgresql-13_13.19-0+deb11u1.debian.tar.xz 35876 SHA256:bb2b70c1c2ce941c7aba34fc0824eaef33cd9ea241ef2967550150fb814f2733
+$ apt-get source -qq --print-uris postgresql-13=13.20-0+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.20-0%2bdeb11u1.dsc' postgresql-13_13.20-0+deb11u1.dsc 3703 SHA256:b52c3cffcd407eb8ce02c44f98a27a39f698fc21ba16a52984f8fd7fe12b7a81
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.20.orig.tar.bz2' postgresql-13_13.20.orig.tar.bz2 21730844 SHA256:8134b685724d15e60d93bea206fbe0f14c8295e84f1cc91d5a3928163e4fb288
+'http://deb.debian.org/debian-security/pool/updates/main/p/postgresql-13/postgresql-13_13.20-0%2bdeb11u1.debian.tar.xz' postgresql-13_13.20-0+deb11u1.debian.tar.xz 36140 SHA256:13b02d231c1974a46240ba85d5d86aa89585744758e5c1100ce29ddbe36ef48a
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/postgresql-13/13.19-0+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-13/13.19-0+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-13/13.19-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/postgresql-13/13.20-0+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/postgresql-13/13.20-0+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/postgresql-13/13.20-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `re2c=2.0.3-1`
 
