@@ -1,10 +1,10 @@
-# `postgres:13.19-bullseye`
+# `postgres:13.20-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fff97fb0eef27c6090d50b14e7606324644521738e750bcef23557639d82983b`
-- Created: `2025-02-13T18:01:24Z`
-- Virtual Size: ~ 466.40 Mb  
+- Image ID: `sha256:b477786865fa1e7f733d3249c1cd92148daf2000e5b03f3d3979ae10c7f6ae2e`
+- Created: `2025-02-20T19:02:25Z`
+- Virtual Size: ~ 411.69 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,5 +14,5 @@
   - `GOSU_VERSION=1.17`
   - `LANG=en_US.utf8`
   - `PG_MAJOR=13`
-  - `PG_VERSION=13.19-1.pgdg110+1`
+  - `PG_VERSION=13.20-1.pgdg110+1`
   - `PGDATA=/var/lib/postgresql/data`
