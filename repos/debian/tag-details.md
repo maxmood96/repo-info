@@ -2552,11 +2552,21 @@ $ docker pull debian@sha256:b290b0d2efece3d0bdfa3493b08af9bd697d42359a6cc3280021
 
 ## `debian:bookworm-20250224`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `debian:bookworm-20250224-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `debian:bookworm-backports`
 
@@ -3542,11 +3552,21 @@ $ docker pull debian@sha256:ca08bc8c1f11dd4bd881171a8b9e69099e1777fd58090fee6d2b
 
 ## `debian:bullseye-20250224`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `debian:bullseye-20250224-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `debian:bullseye-backports`
 
@@ -4468,7 +4488,12 @@ $ docker pull debian@sha256:e2f0150ee2ec9ba3fa468d99ca254b35eb6f5e2441b27e204e9c
 
 ## `debian:experimental-20250224`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `debian:latest`
 
@@ -5009,11 +5034,21 @@ $ docker pull debian@sha256:333ea6279f77c3a2479956e7a8935201f7edd57fe5b7a464501d
 
 ## `debian:oldstable-20250224`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `debian:oldstable-20250224-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `debian:oldstable-backports`
 
@@ -5935,7 +5970,12 @@ $ docker pull debian@sha256:e8bb1508af7a53c81ab369ea006c33e4bb8e45dad84e18739a4c
 
 ## `debian:rc-buggy-20250224`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `debian:sid`
 
@@ -6332,11 +6372,21 @@ $ docker pull debian@sha256:d89d1b0cb8489e29df9b09f34db2b3c70107cf2fdd34577b3ad8
 
 ## `debian:sid-20250224`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `debian:sid-20250224-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `debian:sid-slim`
 
@@ -7081,11 +7131,21 @@ $ docker pull debian@sha256:4448546cd2d24df4df1607a3817002c3ab8347032e1ea27df22d
 
 ## `debian:stable-20250224`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `debian:stable-20250224-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `debian:stable-backports`
 
@@ -8275,11 +8335,21 @@ $ docker pull debian@sha256:620204cd50681fea0f42a7e9e46c2ce5faa01c849533723b1c19
 
 ## `debian:testing-20250224`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `debian:testing-20250224-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `debian:testing-backports`
 
@@ -9569,11 +9639,21 @@ $ docker pull debian@sha256:2e323ef347db1d9ce8981703ff101a92611891f398c1e12361fe
 
 ## `debian:trixie-20250224`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `debian:trixie-20250224-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `debian:trixie-backports`
 
@@ -10863,11 +10943,21 @@ $ docker pull debian@sha256:f81825313de9b01aa3deaa86c6bb9b7eca46313671136db37517
 
 ## `debian:unstable-20250224`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `debian:unstable-20250224-slim`
 
-**does not exist** (yet?)
+```console
+$ docker pull debian@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `debian:unstable-slim`
 
