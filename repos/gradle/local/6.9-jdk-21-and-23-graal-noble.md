@@ -1883,14 +1883,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.8.0-53.55
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-53.55.dsc' linux_6.8.0-53.55.dsc 9342 SHA512:17caa9355c82fea60e52ac7c2105a80a9ff770f10a3ea337324c8f467de572514e3e59ba549d0b869c02833d280e47bcfc83cf0c810ea7a4707cdf70c47e2202
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-53.55.diff.gz' linux_6.8.0-53.55.diff.gz 4211570 SHA512:e73c57660db72e62227b4401d2a6d067013bc83c7865e116474e0f4b139f7ac0cc7516c6cd0b7976404c969227ab2156845bf0ca525538844bb9463cdbe86179
-```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
 
