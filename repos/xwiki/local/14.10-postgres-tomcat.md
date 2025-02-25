@@ -1694,14 +1694,9 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`, `/usr/share/doc/libc
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap2=1:2.66-5ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-5ubuntu2.1.dsc' libcap2_2.66-5ubuntu2.1.dsc 2319 SHA512:b1bda916931e54bc8d5d369de47c0b40e68cf73fb37692cbf3d26ceace05711f54189f190f867690c37f81fa2b41aef4e6f99cc38510e80c94ff4f49867ad0e7
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66.orig.tar.xz' libcap2_2.66.orig.tar.xz 181592 SHA512:ac005b622f6e065f30ce282a5c87240e7b9da75366ee537aa4835bc501b44bc242c10a4ba4dc070e2415fc7f635d1c3c4e45fbeeaf962cf7973dda82bf6377f0
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-5ubuntu2.1.debian.tar.xz' libcap2_2.66-5ubuntu2.1.debian.tar.xz 22264 SHA512:696c888e3ce23c5325a82513b25913799e862a27e1ae096f8b3b42fee2defa17b17df0c071f7baa7be080591624e10d33cf8b031a3415f35d12b19ea70daed73
-```
 
 ### `dpkg` source package: `libcdr=0.1.7-1build2`
 
