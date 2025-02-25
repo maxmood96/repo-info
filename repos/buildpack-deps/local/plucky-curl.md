@@ -261,13 +261,9 @@ Licenses: (parsed from: `/usr/share/doc/libdebconfclient0/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.274ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.274ubuntu1.dsc' cdebconf_0.274ubuntu1.dsc 2873 SHA512:676af9a97e38b71c2690551c0a90df03945cd1310699585249dcad7ce55beb3ed1cf1ce74caddf262798cfd9e7affc11864c8c272d107bc381ad49d6996ad7a1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.274ubuntu1.tar.xz' cdebconf_0.274ubuntu1.tar.xz 286064 SHA512:2e7c572fbbd5c119c45b04afc8911048b7623f33c08c03bcc41ec766a44d3768d6d0c9d8e8e203e47b0ad74678bceebdd012d784c6a2068fa5d64860df8ac98e
-```
 
 ### `dpkg` source package: `coreutils=9.4-3.1ubuntu1`
 
@@ -311,14 +307,9 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.12.0+git20250209.89ed161+ds-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.12.0%2bgit20250209.89ed161%2bds-1ubuntu1.dsc' curl_8.12.0+git20250209.89ed161+ds-1ubuntu1.dsc 3203 SHA512:730a4b37e4d8c932ecdfc62b6b4867b90ecb905237d93128d75c04c74e75336d0c03c342b0f58eb8563820b27e5da5a62e28a0810cfb7d1c024cb6b965bd2854
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.12.0%2bgit20250209.89ed161%2bds.orig.tar.xz' curl_8.12.0+git20250209.89ed161+ds.orig.tar.xz 2305456 SHA512:79b7e910269a7a35ddf0a53dba97408f2d0818d1008f8ce2f026b52fc2bb6f0d4efd4f417b6cf8eb09d20a11caf194c3541d4b53b33bc8ff983abfdcabc45190
-'http://archive.ubuntu.com/ubuntu/pool/main/c/curl/curl_8.12.0%2bgit20250209.89ed161%2bds-1ubuntu1.debian.tar.xz' curl_8.12.0+git20250209.89ed161+ds-1ubuntu1.debian.tar.xz 54920 SHA512:732cab9af09fdb119b2dc9e6c3ea5d4ffeda541d3f83617676d70d38eeb6833f5a26182757b138e13c10ec2eb32049c3bc22544199d5477d0aca37c5fe8ce63f
-```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-8build1`
 
@@ -615,14 +606,9 @@ Licenses: (parsed from: `/usr/share/doc/libgmp10/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gmp=2:6.3.0+dfsg-2ubuntu7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.3.0%2bdfsg-2ubuntu7.dsc' gmp_6.3.0+dfsg-2ubuntu7.dsc 2337 SHA512:fbb79b31b3a3ee6955474176f16b8843d8608d8f0f76c7938f2f04bfe2c9af7424495b5a1d9e409103a7f357fd09ccba83ffd3cb58771ed0e544e64f95b10ee7
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.3.0%2bdfsg.orig.tar.xz' gmp_6.3.0+dfsg.orig.tar.xz 1870556 SHA512:a422b29024464aeb26c69f64be1bc37407d74e0290f44f67fc040fe38b97f3eb7aa6ba8380722ef36cac39816d1c4f24b771159fb86d5979ef0791dcdef708bc
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.3.0%2bdfsg-2ubuntu7.debian.tar.xz' gmp_6.3.0+dfsg-2ubuntu7.debian.tar.xz 38872 SHA512:8716e62bee58fed0a6221147cf4c29b856305bcebb1b95b273853d4d7ba6f6e77aba170fad385f5f3bde8f5bd8ebd01698e2b55afa0679290c0f318cb23b9c04
-```
 
 ### `dpkg` source package: `gnupg2=2.4.4-2ubuntu22`
 
@@ -912,14 +898,9 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap2=1:2.66-5ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-5ubuntu3.dsc' libcap2_2.66-5ubuntu3.dsc 2311 SHA512:8c8f89f5c172ee3a12ecdf9ff3771f31c86340b9ab0b798a6aa7953a602dbf300fea7e79fb02f4c561fe655f42bc20fcbf29558249bc76faefe8bfb3f9d2c8f2
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66.orig.tar.xz' libcap2_2.66.orig.tar.xz 181592 SHA512:ac005b622f6e065f30ce282a5c87240e7b9da75366ee537aa4835bc501b44bc242c10a4ba4dc070e2415fc7f635d1c3c4e45fbeeaf962cf7973dda82bf6377f0
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.66-5ubuntu3.debian.tar.xz' libcap2_2.66-5ubuntu3.debian.tar.xz 22248 SHA512:97aeaaf42de3c723ba64643bda06fd072bf8d646464017f0e82aaf509ef68c198a3522f13bd288d85946bcb107f50b708e98db94a779a2fed874f1d939733ee1
-```
 
 ### `dpkg` source package: `libffi=3.4.6-1build1`
 
@@ -1566,14 +1547,9 @@ Licenses: (parsed from: `/usr/share/doc/libpcre2-8-0/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pcre2=10.42-4ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.42-4ubuntu3.dsc' pcre2_10.42-4ubuntu3.dsc 2269 SHA512:feb393c82703f4b8250cd931d5c6535af7df06d8f575f0367458c3c9522e37debdea3c3238133506e4a0fb56c6acb4768d21b4ec6be156572ceda5d4042c9385
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.42.orig.tar.gz' pcre2_10.42.orig.tar.gz 2397194 SHA512:a3db6c5c620775838819be616652e73ce00f5ef5c1f49f559ff3efb51a119d02f01254c5901c1f7d0c47c0ddfcf4313e38d6ca32c35381b8f87f36896d10e6f7
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pcre2/pcre2_10.42-4ubuntu3.diff.gz' pcre2_10.42-4ubuntu3.diff.gz 8510 SHA512:12dce72417a2ef0edc027774f3e1ca614fec8261f0398d6f987fd1ffc4b245bcdf092ecd4c6bec1138ba1c9ab39f57bb159bdfd1fbbb83838dc2061808f73ba1
-```
 
 ### `dpkg` source package: `perl=5.40.0-8`
 
@@ -1609,15 +1585,13 @@ Licenses: (parsed from: `/usr/share/doc/perl-base/copyright`)
 - `Unicode`
 - `ZLIB`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris perl=5.40.0-8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.0-8.dsc' perl_5.40.0-8.dsc 2933 SHA512:709b21e64d19990162498b5dacbf407c0083fa28ee88c38177491140c4e8898a1912fb482efaa00250c8d9dd91e2b00929d0a6868cf1a4b81f343a568ccc8b0e
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.0.orig-regen-configure.tar.xz' perl_5.40.0.orig-regen-configure.tar.xz 421080 SHA512:5b6e28ea4c83ca02b1f6db5e458f5fd8126a0399d70b463c3964af786295913b6b6808ab55d9a87d2c7017e31c7e25ef73fada52e2d05d7e67e7dc44248e1bd8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.0.orig.tar.xz' perl_5.40.0.orig.tar.xz 13804184 SHA512:a2fb1a24c6367b4043f4e929b2d74fc3bad1415e53b791ed1f219f1701064ae21b2bd3164ba95fcf24eaf458bd54433024ccae43725c0bb82a1ec6a98dc7052d
-'http://archive.ubuntu.com/ubuntu/pool/main/p/perl/perl_5.40.0-8.debian.tar.xz' perl_5.40.0-8.debian.tar.xz 168236 SHA512:05c68cdd63e5cb8b69ec15ac8ea524803039652b93ef6112867536e8ac2712633a4c19bc4d6c25f4e4fec3158e4050bbffb06c8fe4d80ff676f59f60f462065d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/perl/5.40.0-8/
+
 
 ### `dpkg` source package: `pinentry=1.3.1-2ubuntu2`
 
