@@ -1,7 +1,7 @@
 ## `clojure:temurin-11-lein-2.11.2-bullseye`
 
 ```console
-$ docker pull clojure@sha256:d587dee253879e1eb67449d0b6f0aa10138b22e7b1922e4537870973f12abd43
+$ docker pull clojure@sha256:2fca5319a8b5ea6e01f07dc52b7c9a2a0039f5ca74b605949106472e3ea7a809
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -99,84 +99,84 @@ $ docker pull clojure@sha256:6b7d74030ea3866086fbf88f7f09e0c005c3a9f5c9bb666d963
 ### `clojure:temurin-11-lein-2.11.2-bullseye` - linux; arm64 variant v8
 
 ```console
-$ docker pull clojure@sha256:2669892f355dbcf35b80d67af35336f47fec47f729097a6a8b2800f36d00fbd8
+$ docker pull clojure@sha256:77f22496a1eb8ca8344c99d4d7d2c6126e62b5dced2504f6517a6e61c37ce5b4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **251.8 MB (251770847 bytes)**  
+-	Total Size: **251.8 MB (251773652 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b0f7bf3b5f5c1c03effec4c0c4f40e4988909a9b04f05954d3f05af05cbc4985`
+-	Image ID: `sha256:f26e4a673b75a0bca564a0fbbf57677674326657d7e8d3fa62e9d07a818573eb`
 -	Default Command: `["lein","repl"]`
 
 ```dockerfile
-# Wed, 29 Jan 2025 19:11:46 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1738540800'
-# Wed, 29 Jan 2025 19:11:46 GMT
+# Wed, 19 Feb 2025 14:51:07 GMT
+RUN # debian.sh --arch 'arm64' out/ 'bullseye' '@1740355200'
+# Wed, 19 Feb 2025 14:51:07 GMT
 ENV JAVA_HOME=/opt/java/openjdk
-# Wed, 29 Jan 2025 19:11:46 GMT
+# Wed, 19 Feb 2025 14:51:07 GMT
 COPY /opt/java/openjdk /opt/java/openjdk # buildkit
-# Wed, 29 Jan 2025 19:11:46 GMT
+# Wed, 19 Feb 2025 14:51:07 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Wed, 29 Jan 2025 19:11:46 GMT
+# Wed, 19 Feb 2025 14:51:07 GMT
 ENV LEIN_VERSION=2.11.2
-# Wed, 29 Jan 2025 19:11:46 GMT
+# Wed, 19 Feb 2025 14:51:07 GMT
 ENV LEIN_INSTALL=/usr/local/bin/
-# Wed, 29 Jan 2025 19:11:46 GMT
+# Wed, 19 Feb 2025 14:51:07 GMT
 WORKDIR /tmp
-# Wed, 29 Jan 2025 19:11:46 GMT
+# Wed, 19 Feb 2025 14:51:07 GMT
 RUN set -eux; apt-get update && apt-get install -y make git gnupg wget && rm -rf /var/lib/apt/lists/* && mkdir -p $LEIN_INSTALL && wget -q https://codeberg.org/leiningen/leiningen/raw/tag/$LEIN_VERSION/bin/lein-pkg && echo "Comparing lein-pkg checksum ..." && sha256sum lein-pkg && echo "28a1a62668c5f427b413a8677e376affaa995f023b1fcd06e2d4c98ac1df5f3e *lein-pkg" | sha256sum -c - && mv lein-pkg $LEIN_INSTALL/lein && chmod 0755 $LEIN_INSTALL/lein && export GNUPGHOME="$(mktemp -d)" && export FILENAME_EXT=jar && gpg --batch --keyserver hkps://keyserver.ubuntu.com --recv-keys 9D13D9426A0814B3373CF5E3D8A8243577A7859F && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && wget -q https://codeberg.org/leiningen/leiningen/releases/download/$LEIN_VERSION/leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && echo "Verifying file PGP signature..." && gpg --batch --verify leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT && gpgconf --kill all && rm -rf "$GNUPGHOME" leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT.asc && mkdir -p /usr/share/java && mkdir -p /root/.lein && mv leiningen-$LEIN_VERSION-standalone.$FILENAME_EXT /usr/share/java/leiningen-$LEIN_VERSION-standalone.jar && apt-get purge -y --auto-remove gnupg wget # buildkit
-# Wed, 29 Jan 2025 19:11:46 GMT
+# Wed, 19 Feb 2025 14:51:07 GMT
 ENV PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/bin/
-# Wed, 29 Jan 2025 19:11:46 GMT
+# Wed, 19 Feb 2025 14:51:07 GMT
 ENV LEIN_ROOT=1
-# Wed, 29 Jan 2025 19:11:46 GMT
+# Wed, 19 Feb 2025 14:51:07 GMT
 RUN echo '(defproject dummy "" :dependencies [[org.clojure/clojure "1.12.0"]])' > project.clj   && lein deps && rm project.clj # buildkit
-# Wed, 29 Jan 2025 19:11:46 GMT
+# Wed, 19 Feb 2025 14:51:07 GMT
 CMD ["lein" "repl"]
 ```
 
 -	Layers:
-	-	`sha256:0038ef039a89ede34c57806e684dc9d9be7dcd22d3c08b90deb36bb22a2c7122`  
-		Last Modified: Tue, 04 Feb 2025 01:38:11 GMT  
-		Size: 52.2 MB (52245695 bytes)  
+	-	`sha256:7e1cabb756c27ddad3e1de86c2aaf2bca04f012bff531cd99d37f98896026ca4`  
+		Last Modified: Tue, 25 Feb 2025 01:31:16 GMT  
+		Size: 52.2 MB (52248644 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:48b84d856a8cda7ccd0051435c1ec5c69d9363b1536c4989a13571127e1a59f2`  
-		Last Modified: Tue, 04 Feb 2025 23:35:23 GMT  
-		Size: 142.4 MB (142385421 bytes)  
+	-	`sha256:708cf5abd52f4186c57e9e0e221f8204f11e95bdf9c47c1180d3b6f735ec6a3c`  
+		Last Modified: Tue, 25 Feb 2025 10:58:00 GMT  
+		Size: 142.4 MB (142385458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bacf182537e53b9a4246bc3518f1bd0597f21f31cb3c3e220912e728bbbe9e5d`  
-		Last Modified: Tue, 04 Feb 2025 23:35:15 GMT  
-		Size: 52.6 MB (52625510 bytes)  
+	-	`sha256:fe960ffabf0b2d4c3c006464fe09ea8e3b4404ff6a7a0ffeb333da5f793c4f97`  
+		Last Modified: Tue, 25 Feb 2025 10:57:53 GMT  
+		Size: 52.6 MB (52625369 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:727f83db2547a98af798f15f667b80a927c8123de40f173f01460ba65dfaacaf`  
-		Last Modified: Tue, 04 Feb 2025 23:35:14 GMT  
-		Size: 4.5 MB (4514189 bytes)  
+	-	`sha256:c469695f32c964f6c48f8c257b2edc6abda3a4387a02b98c94a2c87f62fc9644`  
+		Last Modified: Tue, 25 Feb 2025 10:57:52 GMT  
+		Size: 4.5 MB (4514149 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `clojure:temurin-11-lein-2.11.2-bullseye` - unknown; unknown
 
 ```console
-$ docker pull clojure@sha256:80d2415b4fe51211b11316e06b01f9b630c57b1d5f80fb83bdd9182715f7f357
+$ docker pull clojure@sha256:efc084d925dc4438ca798baa270b9bc65d32c6c13566259d426055b80fa9b4ae
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **6.7 MB (6662100 bytes)**  
+-	Total Size: **6.7 MB (6662099 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:43f0ef02d6add89d3c146aff967456e110f50a434ffddede6c466eaeb76b83a8`
+-	Image ID: `sha256:f53ef3fd077320ad1eb657c7e8313c8afbfdbe5f92998a377f522c19a5163864`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a6bc3308a3d8221d79a9829791eaa71fcd87d77bb1e9c14468e4f47ed38c78a7`  
-		Last Modified: Tue, 04 Feb 2025 23:35:13 GMT  
+	-	`sha256:b496df06612bf28fcd970fa25538ed006b7cd1699526514116014a9a5d020098`  
+		Last Modified: Tue, 25 Feb 2025 10:57:52 GMT  
 		Size: 6.6 MB (6645546 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7ef6b3a741532019d264e70aaed0efabfa65ecdfae08d4cf0360b883edc525db`  
-		Last Modified: Tue, 04 Feb 2025 23:35:13 GMT  
-		Size: 16.6 KB (16554 bytes)  
+	-	`sha256:e87e2e48fe99b386928699bd71a12d57a2787b11a3c99d54994e741a41deac25`  
+		Last Modified: Tue, 25 Feb 2025 10:57:51 GMT  
+		Size: 16.6 KB (16553 bytes)  
 		MIME: application/vnd.in-toto+json
