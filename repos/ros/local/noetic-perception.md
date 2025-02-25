@@ -3287,14 +3287,9 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`, `/usr/share/doc/libc
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap2=1:2.32-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.32-1ubuntu0.1.dsc' libcap2_2.32-1ubuntu0.1.dsc 2291 SHA512:446ed75e7670e7d8f7c57d1e7bba07bf69a2f5a45a3e9925257d0089df55cab6051519e2ef866654f698776680f8f9d1456c4c22fa48721a388b61af21dcac09
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.32.orig.tar.xz' libcap2_2.32.orig.tar.xz 99708 SHA512:e2325cf0a1d0509c49336f7e5760e5b339c889cdde8d6c359197aed711423f951ad390a2a3dd4943b03afe152ad8502ea1db9d7ef247148b93e93a3c4895a019
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.32-1ubuntu0.1.debian.tar.xz' libcap2_2.32-1ubuntu0.1.debian.tar.xz 29192 SHA512:d8b60b83d620900f558a44cb326255e06f0451bbf95cc39342f8ada880e43e1588bfc9377f6c46868fa99ded2079472f853af4dceee81a31f1001206f28af41d
-```
 
 ### `dpkg` source package: `libcbor=0.6.0-0ubuntu1`
 
