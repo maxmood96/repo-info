@@ -3446,14 +3446,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.10+dfsg-5ubuntu0.20.04.8
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg-5ubuntu0.20.04.8.dsc' libxml2_2.9.10+dfsg-5ubuntu0.20.04.8.dsc 3121 SHA512:593b3f163620d4b6edcc0b9d19d61c4553ac648cb46139b54b6e5a2c477f8f7e1f74f22585845a6cd9c8e9d2e62b5bb94463945d2820e2c20fbe9fda7c86321b
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg.orig.tar.xz' libxml2_2.9.10+dfsg.orig.tar.xz 2503560 SHA512:605c6c0f8bf2c53208d0a036ff09a4025843f45139b711c90dc83066feda2f285a5578d55d4a58d33eedbe7485a5c1ec5608ba6c6beed1fb55649f87dca0cec3
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg-5ubuntu0.20.04.8.debian.tar.xz' libxml2_2.9.10+dfsg-5ubuntu0.20.04.8.debian.tar.xz 42904 SHA512:55c5620a651288841ad1a56d85ffb46bbb45ae8eb0cc94ae723ab1fdfd19819f3e68e017c53a6a73a25c37c47910dd2e9f5a0e012686ce008a766097d9930f11
-```
 
 ### `dpkg` source package: `libxmu=2:1.1.3-0ubuntu1`
 
@@ -3699,14 +3694,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-205.225
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-205.225.dsc' linux_5.4.0-205.225.dsc 7418 SHA512:2d976c8f988fea3a2be4a795bfd6548ff9668b33dba140b2977cb7e68760344af364bd17fa17e8cac116bb284c03d9ca0d205e08be36555382d0874d4aa0f03c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-205.225.diff.gz' linux_5.4.0-205.225.diff.gz 9839760 SHA512:0215d5a5da8da8cd16c151a10c7e6c60287a59e769c73b817adacc9d03007b3206afd2027da0e25755ae1fbd654570c99af4f8a5e4364c66d4aaae07b530dd1a
-```
 
 ### `dpkg` source package: `llvm-toolchain-12=1:12.0.0-3ubuntu1~20.04.5`
 
