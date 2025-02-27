@@ -237,14 +237,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.42-4ubuntu2.3
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42-4ubuntu2.3.dsc' binutils_2.42-4ubuntu2.3.dsc 10069 SHA512:779675d910459c2e46b631b38173929b0c128567125bf2f8c73483f9d4ce6bf6a1ca8a4e589421f29a0b1ff4301b84f305fcad5cfde0c1c7b1535989950d6102
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42.orig.tar.xz' binutils_2.42.orig.tar.xz 27567160 SHA512:155f3ba14cd220102f4f29a4f1e5cfee3c48aa03b74603460d05afb73c70d6657a9d87eee6eb88bf13203fe6f31177a5c9addc04384e956e7da8069c8ecd20a6
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.42-4ubuntu2.3.debian.tar.xz' binutils_2.42-4ubuntu2.3.debian.tar.xz 151888 SHA512:4333bfd320efe16ede6234293a844bfa38117f108d8aededde60b33b796cbc24e1da835e441318d2c1e5bab2035a3cddda8ed0e828e58116d1b896bb0294c3ba
-```
 
 ### `dpkg` source package: `brotli=1.1.0-2build2`
 
@@ -2076,14 +2071,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.1.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.1.dsc 3038 SHA512:bb945a02e3751ce1906acb2987beeda4e614d511f7178f71f3f6fc548d76d16bd4cda2718dbf7351fe9cd7690fce5199ba8b87688925a76f74384118512ed8a4
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.1.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.1.debian.tar.xz 36324 SHA512:ede7459b5271994f065bae852ebd1aa4b7ca8576905bed4064f537347b43c265c3c1217749c7991e823203fae9c3c4e90953eb6a0155e87778d1f31a75ea34b5
-```
 
 ### `dpkg` source package: `libxmu=2:1.1.3-3build2`
 
@@ -2156,14 +2146,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.8.0-52.53
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-52.53.dsc' linux_6.8.0-52.53.dsc 9263 SHA512:5d1c4688e49013345c581a7bb8fdafe7fb9398922c1922cba80f0a00d17d35953ac633f7a3e536e0c7287fb9456b89c334cc62dbb0b50ba56097b3fddbbf204e
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-52.53.diff.gz' linux_6.8.0-52.53.diff.gz 3826761 SHA512:723d9ab2bfa84b89f4636c819ca054e0546afb6657f70e0735c35bad835d0a14c295f5ae4eb1e659eb4dfc7552391db14c92a7934fb318e5702fbcdb85bea702
-```
 
 ### `dpkg` source package: `lz4=1.9.4-1build1.1`
 

@@ -813,14 +813,9 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap2=1:2.44-1ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.44-1ubuntu0.22.04.1.dsc' libcap2_2.44-1ubuntu0.22.04.1.dsc 2318 SHA512:89673cbc25652c33df4477e5624827c55f6799cf8ee73248c8ec58a647aa66aca02d6342edcb18d9d5e4892b5c2f1e011157c854dbfe2d5f6b916f27346518c1
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.44.orig.tar.xz' libcap2_2.44.orig.tar.xz 125568 SHA512:1bb323ca362923bd6bd0e2e4639cf8726975165a620a243b31e797056439eb7efb2bfbc8e5521636783a86c7415b2037b1638c98747b79183ca7d3d42a04ff20
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.44-1ubuntu0.22.04.1.debian.tar.xz' libcap2_2.44-1ubuntu0.22.04.1.debian.tar.xz 22564 SHA512:a526e48fe585b06d42bd2d1d241e16de4f9151c502ad1d54a1a07e73aee8e4c41009160c9b5fedadf9873b7eb9bf07b9a0c3ec56f854da59360aaf94589c1af8
-```
 
 ### `dpkg` source package: `libffi=3.4.2-4`
 
@@ -1179,14 +1174,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.5.dsc' libxml2_2.9.13+dfsg-1ubuntu0.5.dsc 3030 SHA512:e35051e3351efd60500d5094b058f569fb29520e36ccc082e8deede0fba91e979656a52d406dd504a2469c31fba06a994056d30e483d3277ab598cc0675dd161
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.5.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.5.debian.tar.xz 37876 SHA512:14418b83ffd83b2ae5fe9add271646ad41976e6bcf009495b42d722c1cd679568b19842e6d9c07375aad2c4d83f05ef20cfcd60a9e3e9123aeea50dc642e9cc1
-```
 
 ### `dpkg` source package: `libzstd=1.4.8+dfsg-3build1`
 
