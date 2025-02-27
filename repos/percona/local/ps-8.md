@@ -1,10 +1,10 @@
-# `percona:8.0.40-31-centos`
+# `percona:8.0.41-32-centos`
 
 ## Docker Metadata
 
-- Image ID: `sha256:9edd9e299276142eefc649135805ad3cdfa3286411afc9bed5cd4ed2c94b2f94`
-- Created: `2025-01-08T11:00:36Z`
-- Virtual Size: ~ 1.38 Gb  
+- Image ID: `sha256:19f40d2b52fd60683ab4da23db9826f85947aa87387ef2de30f2f139590e891c`
+- Created: `2025-02-18T16:18:37Z`
+- Virtual Size: ~ 1.34 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,13 +12,13 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `container=oci`
-  - `PS_VERSION=8.0.40-31.1`
-  - `MYSQL_SHELL_VERSION=8.0.40-1`
+  - `PS_VERSION=8.0.41-32.1`
+  - `MYSQL_SHELL_VERSION=8.0.41-1`
   - `OS_VER=el9`
-  - `FULL_PERCONA_VERSION=8.0.40-31.1.el9`
-  - `FULL_MYSQL_SHELL_VERSION=8.0.40-1.el9`
+  - `FULL_PERCONA_VERSION=8.0.41-32.1.el9`
+  - `FULL_MYSQL_SHELL_VERSION=8.0.41-1.el9`
   - `PS_REPO=testing`
-  - `PS_TELEMETRY_VERSION=8.0.40-31-1`
+  - `PS_TELEMETRY_VERSION=8.0.41-32-1`
   - `CALL_HOME_DOWNLOAD_SHA256=5e84d2f1a5d57f44c46e6a1f16794d649d3de09fe8021f0294bc321c89e51068`
   - `KEY_RPM_DOWNLOAD_SHA256=fcf0eab4f05a1c0de6363ac4b707600a27a9d774e9b491059e59e6921b255a84`
   - `CALL_HOME_VERSION=0.1`
@@ -1454,13 +1454,13 @@ $ dnf --quiet download --source --url pcre2-syntax-10.40-6.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pcre2-10.40-6.el9.src.rpm
 ```
 
-### `rpm` package: `percona-icu-data-files-8.0.40-31.1.el9.x86_64`
+### `rpm` package: `percona-icu-data-files-8.0.41-32.1.el9.x86_64`
 
-Licenses (from `rpm --query`): Copyright (c) 2000, 2024, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
+Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-mysql-shell-8.0.40-1.el9.x86_64`
+### `rpm` package: `percona-mysql-shell-8.0.41-1.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv2
 
@@ -1472,33 +1472,33 @@ Licenses (from `rpm --query`): GPL-3.0+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-client-8.0.40-31.1.el9.x86_64`
+### `rpm` package: `percona-server-client-8.0.41-32.1.el9.x86_64`
 
-Licenses (from `rpm --query`): Copyright (c) 2000, 2024, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `percona-server-devel-8.0.40-31.1.el9.x86_64`
-
-Licenses (from `rpm --query`): Copyright (c) 2000, 2024, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
+Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-rocksdb-8.0.40-31.1.el9.x86_64`
+### `rpm` package: `percona-server-devel-8.0.41-32.1.el9.x86_64`
 
-Licenses (from `rpm --query`): Copyright (c) 2000, 2024, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `percona-server-server-8.0.40-31.1.el9.x86_64`
-
-Licenses (from `rpm --query`): Copyright (c) 2000, 2024, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
+Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-server-shared-8.0.40-31.1.el9.x86_64`
+### `rpm` package: `percona-server-rocksdb-8.0.41-32.1.el9.x86_64`
 
-Licenses (from `rpm --query`): Copyright (c) 2000, 2024, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
+Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
+
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+
+### `rpm` package: `percona-server-server-8.0.41-32.1.el9.x86_64`
+
+Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
+
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+
+### `rpm` package: `percona-server-shared-8.0.41-32.1.el9.x86_64`
+
+Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affiliates. All rights reserved. Under GPLv2 license as shown in the Description field..
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
