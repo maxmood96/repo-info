@@ -1,10 +1,10 @@
-# `mongo:7.0.16-jammy`
+# `mongo:7.0.17-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:dba5780f2781c48a7d8229550a8f77d57d67cecdc6b5859ad1cc6d8a0abc4a3b`
-- Created: `2024-12-20T23:06:36Z`
-- Virtual Size: ~ 807.07 Mb  
+- Image ID: `sha256:34c87991ff3f08f879cc8ffb8d6ff2835a1534ab0ef44f05d18d3d12b3b47311`
+- Created: `2025-02-24T23:01:18Z`
+- Virtual Size: ~ 806.54 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=7.0`
-  - `MONGO_VERSION=7.0.16`
+  - `MONGO_VERSION=7.0.17`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -818,14 +818,9 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap2=1:2.44-1ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.44-1ubuntu0.22.04.1.dsc' libcap2_2.44-1ubuntu0.22.04.1.dsc 2318 SHA512:89673cbc25652c33df4477e5624827c55f6799cf8ee73248c8ec58a647aa66aca02d6342edcb18d9d5e4892b5c2f1e011157c854dbfe2d5f6b916f27346518c1
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.44.orig.tar.xz' libcap2_2.44.orig.tar.xz 125568 SHA512:1bb323ca362923bd6bd0e2e4639cf8726975165a620a243b31e797056439eb7efb2bfbc8e5521636783a86c7415b2037b1638c98747b79183ca7d3d42a04ff20
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.44-1ubuntu0.22.04.1.debian.tar.xz' libcap2_2.44-1ubuntu0.22.04.1.debian.tar.xz 22564 SHA512:a526e48fe585b06d42bd2d1d241e16de4f9151c502ad1d54a1a07e73aee8e4c41009160c9b5fedadf9873b7eb9bf07b9a0c3ec56f854da59360aaf94589c1af8
-```
 
 ### `dpkg` source package: `libffi=3.4.2-4`
 
@@ -1289,11 +1284,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-mongosh=2.3.8`
+### `dpkg` source package: `mongodb-mongosh=2.4.0`
 
 Binary Packages:
 
-- `mongodb-mongosh=2.3.8`
+- `mongodb-mongosh=2.4.0`
 
 Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 
@@ -1304,17 +1299,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=7.0.16`
+### `dpkg` source package: `mongodb-org=7.0.17`
 
 Binary Packages:
 
-- `mongodb-org=7.0.16`
-- `mongodb-org-database=7.0.16`
-- `mongodb-org-database-tools-extra=7.0.16`
-- `mongodb-org-mongos=7.0.16`
-- `mongodb-org-server=7.0.16`
-- `mongodb-org-shell=7.0.16`
-- `mongodb-org-tools=7.0.16`
+- `mongodb-org=7.0.17`
+- `mongodb-org-database=7.0.17`
+- `mongodb-org-database-tools-extra=7.0.17`
+- `mongodb-org-mongos=7.0.17`
+- `mongodb-org-server=7.0.17`
+- `mongodb-org-shell=7.0.17`
+- `mongodb-org-tools=7.0.17`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1427,29 +1422,33 @@ $ apt-get source -qq --print-uris numactl=2.0.14-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/n/numactl/numactl_2.0.14-3ubuntu2.debian.tar.xz' numactl_2.0.14-3ubuntu2.debian.tar.xz 7588 SHA512:f3e34577c93c315047be275596d59e0481f177e090cd0c7ca8ef6ac3a79eab1ee988003afd49053a0cc6a86bf3f4b0ea387f53da279f9dcbc0d9ed7ca3815fd1
 ```
 
-### `dpkg` source package: `openldap=2.5.18+dfsg-0ubuntu0.22.04.2`
+### `dpkg` source package: `openldap=2.5.18+dfsg-0ubuntu0.22.04.3`
 
 Binary Packages:
 
-- `libldap-2.5-0:amd64=2.5.18+dfsg-0ubuntu0.22.04.2`
-- `libldap-common=2.5.18+dfsg-0ubuntu0.22.04.2`
+- `libldap-2.5-0:amd64=2.5.18+dfsg-0ubuntu0.22.04.3`
+- `libldap-common=2.5.18+dfsg-0ubuntu0.22.04.3`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openldap=2.5.18+dfsg-0ubuntu0.22.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg-0ubuntu0.22.04.3.dsc' openldap_2.5.18+dfsg-0ubuntu0.22.04.3.dsc 3319 SHA512:ab255ea86b8911a9e80f472b05e5eaa3b48702a476d4b42b5b3ccbb544508f32e235ab302c03bbf1ae145f1bbe15ba1d6d53277a370f22787c1731e077017136
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg.orig.tar.gz' openldap_2.5.18+dfsg.orig.tar.gz 5623023 SHA512:5f0f71c6711bc8e4b463832d2073d41d92886cdbe3c7a20bca54579c4df30d25de5f388165d975ace600073593502d73a5009ad00f135adc9f1270515fb4ff21
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.5.18%2bdfsg-0ubuntu0.22.04.3.debian.tar.xz' openldap_2.5.18+dfsg-0ubuntu0.22.04.3.debian.tar.xz 173804 SHA512:4da24d97748df297741c3f3515742e18571b23850eb89d5937a8d4e90fb57b05934d526fd48efe1242aae045daacbbeb583579920ac22b37d5b4fe7c204bd040
+```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.18`
 
 Binary Packages:
 
 - `libssl3:amd64=3.0.2-0ubuntu1.18`
-- `openssl=3.0.2-0ubuntu1.18`
 
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
@@ -1459,6 +1458,29 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.19`
+
+Binary Packages:
+
+- `openssl=3.0.2-0ubuntu1.19`
+
+Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
+
+- `Apache-2.0`
+- `Artistic`
+- `GPL-1`
+- `GPL-1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.19
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.19.dsc' openssl_3.0.2-0ubuntu1.19.dsc 2730 SHA512:a69174ea9f2dd4e81b2c888bb0d1d724ef857c2154ccacc9186e8dc9804011b3822e183946da7fec2350be7f3e4040392694ac1645c7e4c81197bad5f28fe36c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.19.debian.tar.xz' openssl_3.0.2-0ubuntu1.19.debian.tar.xz 266448 SHA512:c3e3fd6c80368f3d53d932f6e7028f0c7ba5e8d0fa2c0d42f8179c4a769ecad445ed136472ac53d3d97581addb138029abcea4d45d541b179d92aba861d35270
+```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
@@ -1787,19 +1809,25 @@ $ apt-get source -qq --print-uris tar=1.34+dfsg-1ubuntu0.1.22.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.34%2bdfsg-1ubuntu0.1.22.04.2.debian.tar.xz' tar_1.34+dfsg-1ubuntu0.1.22.04.2.debian.tar.xz 20544 SHA512:9840407a1364154c831665c3f1739c80a84806567fe5ad27ee3ac70f4c18e27d7f2f9e0557b6e2a634ab39449a8fc95b96f1813f5c203df8ece5226a6afe8c7c
 ```
 
-### `dpkg` source package: `tzdata=2024b-0ubuntu0.22.04`
+### `dpkg` source package: `tzdata=2024b-0ubuntu0.22.04.1`
 
 Binary Packages:
 
-- `tzdata=2024b-0ubuntu0.22.04`
+- `tzdata=2024b-0ubuntu0.22.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2024b-0ubuntu0.22.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.22.04.1.dsc' tzdata_2024b-0ubuntu0.22.04.1.dsc 2541 SHA512:0150d084872fb5606d2222423f8d2ce306455fdc941347a92d507d1ffb6ab058cbea1e464dbff33f68e1afcbcc460115e120ffd22d6a83bd42f2910228c04d68
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz' tzdata_2024b.orig.tar.gz 459393 SHA512:0d86686e215672343debb3471b7e7ccb8a27f063f085c9b532d5e0470377843daa0dfb6aee0db4fb9068dd52810c69aeee914a1a7c7e603fdecda7e855020193
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz.asc' tzdata_2024b.orig.tar.gz.asc 833 SHA512:2a0462e1d469260293b93ea03a084a7514025b6de251ebf71bc65c93d76ac94967ec859ddba34b1ba4c51114faa5acdfbef0848d79654fc6ebaa804d5d3c2964
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.22.04.1.debian.tar.xz' tzdata_2024b-0ubuntu0.22.04.1.debian.tar.xz 181504 SHA512:f0e6b4765e63fa2031fc381acb787cd79c911c0adf04bbb836b9e9e507694ceed00193f7d90b2b8dc981cb71307d98dcbf615870bbac530abf27b032ac3127b6
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
 

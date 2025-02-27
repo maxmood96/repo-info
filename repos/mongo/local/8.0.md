@@ -1,10 +1,10 @@
-# `mongo:8.0.4-noble`
+# `mongo:8.0.5-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:6fe2220a3a52775d0ddfc59d6ca8140c80e5169c5c374f048b8a76f2f11820e7`
-- Created: `2024-12-06T23:01:34Z`
-- Virtual Size: ~ 880.66 Mb  
+- Image ID: `sha256:6551ff2e441be3fc2daa18db66670724e9e822ca116dd3af668a6a9f44c30126`
+- Created: `2025-02-21T23:01:38Z`
+- Virtual Size: ~ 886.93 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=8.0`
-  - `MONGO_VERSION=8.0.4`
+  - `MONGO_VERSION=8.0.5`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -847,23 +847,29 @@ $ apt-get source -qq --print-uris keyutils=1.6.3-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.3-3build1.debian.tar.xz' keyutils_1.6.3-3build1.debian.tar.xz 13456 SHA512:ef729447f8f4adebdb986d115e227bd908b346e26115eb7a0385a084ad69f6772c914744d8c24928587247cd5fc329ed1305e9b006db276d0445b9614f20603f
 ```
 
-### `dpkg` source package: `krb5=1.20.1-6ubuntu2.2`
+### `dpkg` source package: `krb5=1.20.1-6ubuntu2.4`
 
 Binary Packages:
 
-- `krb5-locales=1.20.1-6ubuntu2.2`
-- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2.2`
-- `libk5crypto3:amd64=1.20.1-6ubuntu2.2`
-- `libkrb5-3:amd64=1.20.1-6ubuntu2.2`
-- `libkrb5support0:amd64=1.20.1-6ubuntu2.2`
+- `krb5-locales=1.20.1-6ubuntu2.4`
+- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2.4`
+- `libk5crypto3:amd64=1.20.1-6ubuntu2.4`
+- `libkrb5-3:amd64=1.20.1-6ubuntu2.4`
+- `libkrb5support0:amd64=1.20.1-6ubuntu2.4`
 
 Licenses: (parsed from: `/usr/share/doc/krb5-locales/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris krb5=1.20.1-6ubuntu2.4
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.4.dsc' krb5_1.20.1-6ubuntu2.4.dsc 4080 SHA512:2d2f9d72474c67e763e2b8f8aade47527c980a0b5fc47015ff9c260b9399cb90626b56f755831c9f9a1eed847cd9bac6cee336a7809ebad7bfcd90b5c7158675
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA512:6f57479f13f107cd84f30de5c758eb6b9fc59171329c13e5da6073b806755f8d163eb7bd84767ea861ad6458ea0c9eeb00ee044d3bcad01ef136e9888564b6a2
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA512:1d3312bd67581e07adfdadf2c5fe394179631d8add8bd075efefe982a0de22369004e60a14422d426382c8c591e4181b9897088afe9d4e86f0b5a97e5954c67a
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.4.debian.tar.xz' krb5_1.20.1-6ubuntu2.4.debian.tar.xz 115960 SHA512:31b7da54977f9e846ddc348a92aef975eb955253d68d058a31825048c4784dc8c8df601ea2ded10c74852a0f58d2daa7945adbe565de0bbcca419044f9cec4ed
+```
 
 ### `dpkg` source package: `libassuan=2.5.6-1build1`
 
@@ -1372,11 +1378,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-mongosh=2.3.8`
+### `dpkg` source package: `mongodb-mongosh=2.4.0`
 
 Binary Packages:
 
-- `mongodb-mongosh=2.3.8`
+- `mongodb-mongosh=2.4.0`
 
 Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 
@@ -1387,17 +1393,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=8.0.4`
+### `dpkg` source package: `mongodb-org=8.0.5`
 
 Binary Packages:
 
-- `mongodb-org=8.0.4`
-- `mongodb-org-database=8.0.4`
-- `mongodb-org-database-tools-extra=8.0.4`
-- `mongodb-org-mongos=8.0.4`
-- `mongodb-org-server=8.0.4`
-- `mongodb-org-shell=8.0.4`
-- `mongodb-org-tools=8.0.4`
+- `mongodb-org=8.0.5`
+- `mongodb-org-database=8.0.5`
+- `mongodb-org-database-tools-extra=8.0.5`
+- `mongodb-org-mongos=8.0.5`
+- `mongodb-org-server=8.0.5`
+- `mongodb-org-shell=8.0.5`
+- `mongodb-org-tools=8.0.5`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1528,12 +1534,12 @@ $ apt-get source -qq --print-uris numactl=2.0.18-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/numactl/numactl_2.0.18-1build1.debian.tar.xz' numactl_2.0.18-1build1.debian.tar.xz 7444 SHA512:16ffe59eda3e1aaed7fd8c5085af433d947d3a03ad5e23cb51ab8209a95529c20af6562f950a192d8963597529d8ca78b3a59013946b24fbe57343506c91c242
 ```
 
-### `dpkg` source package: `openldap=2.6.7+dfsg-1~exp1ubuntu8.1`
+### `dpkg` source package: `openldap=2.6.7+dfsg-1~exp1ubuntu8.2`
 
 Binary Packages:
 
-- `libldap-common=2.6.7+dfsg-1~exp1ubuntu8.1`
-- `libldap2:amd64=2.6.7+dfsg-1~exp1ubuntu8.1`
+- `libldap-common=2.6.7+dfsg-1~exp1ubuntu8.2`
+- `libldap2:amd64=2.6.7+dfsg-1~exp1ubuntu8.2`
 
 Licenses: (parsed from: `/usr/share/doc/libldap-common/copyright`, `/usr/share/doc/libldap2/copyright`)
 
@@ -1562,16 +1568,21 @@ Licenses: (parsed from: `/usr/share/doc/libldap-common/copyright`, `/usr/share/d
 - `UMich`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openldap=2.6.7+dfsg-1~exp1ubuntu8.2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg-1%7eexp1ubuntu8.2.dsc' openldap_2.6.7+dfsg-1~exp1ubuntu8.2.dsc 3488 SHA512:b262ce1ec8742801dadaa6c50393cd2da7359200f6c42c0f2573be883deb13b2e71b85169ba8db1edf5ec11ef5e0122c2f839f4320ead4041423e9a3fa03b679
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg.orig.tar.xz' openldap_2.6.7+dfsg.orig.tar.xz 3774648 SHA512:84e02268b096347049b61947a56b5aa13d4d8548eed1bd472821c99fcd0208293d300b6bb78c4acd0e30a20fdd1851894c2f89f6365a359de856e1b095506014
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg-1%7eexp1ubuntu8.2.debian.tar.xz' openldap_2.6.7+dfsg-1~exp1ubuntu8.2.debian.tar.xz 186792 SHA512:276056a2c445949ab7cba305eb760f8793b5bae6c487c9301da94553b1c8d83ada9279a537800deef7fc434af4352585071514bafdc9172ac766feb739c590cc
+```
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3.4`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.5`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.0.13-0ubuntu3.4`
-- `openssl=3.0.13-0ubuntu3.4`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.5`
+- `openssl=3.0.13-0ubuntu3.5`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
@@ -1580,9 +1591,14 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.5
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.5.dsc' openssl_3.0.13-0ubuntu3.5.dsc 2512 SHA512:2071df5d403c0b39ae500ee2fe1118313df10cc187d533813f634c96d2653cfde840318238b39525bbb47a52db7abf7fc2dd9b655a486a4c79a6123638f35f9e
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.5.debian.tar.xz' openssl_3.0.13-0ubuntu3.5.debian.tar.xz 169252 SHA512:29b18d2b824b85ac7fe31ad93ef0ac7320701806d59497c65cf615e9495025007c6052c0878a8cc3bf08860ace1e04c33f56e88c7026bd362eb32142c963a1a0
+```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 
@@ -1926,20 +1942,26 @@ $ apt-get source -qq --print-uris tar=1.35+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-3build1.debian.tar.xz' tar_1.35+dfsg-3build1.debian.tar.xz 20948 SHA512:82b1a9f70c99c17f5288a4a9fbe8b1bef0adcd9543f97f876ee81afc16e3ac02e46182557406ff434ae90c81950f22346c3229ee3e5f5f9578dcf09a20053e9f
 ```
 
-### `dpkg` source package: `tzdata=2024b-0ubuntu0.24.04`
+### `dpkg` source package: `tzdata=2024b-0ubuntu0.24.04.1`
 
 Binary Packages:
 
-- `tzdata=2024b-0ubuntu0.24.04`
+- `tzdata=2024b-0ubuntu0.24.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2024b-0ubuntu0.24.04.1
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.24.04.1.dsc' tzdata_2024b-0ubuntu0.24.04.1.dsc 2728 SHA512:40897edd0305a0e2fc16d0af498ae7fb91d88894f01389503384ff70fd6a1454f0b2dde9551bf848e38680c016ef0b4741b48503d78263f8adf4929c51235e3c
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz' tzdata_2024b.orig.tar.gz 459393 SHA512:0d86686e215672343debb3471b7e7ccb8a27f063f085c9b532d5e0470377843daa0dfb6aee0db4fb9068dd52810c69aeee914a1a7c7e603fdecda7e855020193
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz.asc' tzdata_2024b.orig.tar.gz.asc 833 SHA512:2a0462e1d469260293b93ea03a084a7514025b6de251ebf71bc65c93d76ac94967ec859ddba34b1ba4c51114faa5acdfbef0848d79654fc6ebaa804d5d3c2964
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.24.04.1.debian.tar.xz' tzdata_2024b-0ubuntu0.24.04.1.debian.tar.xz 187512 SHA512:0df37b0a99d16a8706fd33a829b06429edc566ba2e5acbf6f24f31889c6799add6f557b1077c0efc65aa8abaf8cf6d1586800dfd6c802b81020b634282c6d792
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1`
 
