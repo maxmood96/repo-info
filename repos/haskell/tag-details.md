@@ -6,8 +6,10 @@
 -	[`haskell:9-bullseye`](#haskell9-bullseye)
 -	[`haskell:9-slim`](#haskell9-slim)
 -	[`haskell:9-slim-bullseye`](#haskell9-slim-bullseye)
+-	[`haskell:9.10`](#haskell910)
 -	[`haskell:9.10-bullseye`](#haskell910-bullseye)
 -	[`haskell:9.10-slim-bullseye`](#haskell910-slim-bullseye)
+-	[`haskell:9.10.1`](#haskell9101)
 -	[`haskell:9.10.1-bullseye`](#haskell9101-bullseye)
 -	[`haskell:9.10.1-slim-bullseye`](#haskell9101-slim-bullseye)
 -	[`haskell:9.6`](#haskell96)
@@ -819,6 +821,10 @@ $ docker pull haskell@sha256:799188a093f1eee749f7acbc155d91ed178f01229a575d81e1f
 		Size: 26.5 KB (26479 bytes)  
 		MIME: application/vnd.in-toto+json
 
+## `haskell:9.10`
+
+**does not exist** (yet?)
+
 ## `haskell:9.10-bullseye`
 
 ```console
@@ -1212,6 +1218,10 @@ $ docker pull haskell@sha256:799188a093f1eee749f7acbc155d91ed178f01229a575d81e1f
 		Last Modified: Tue, 25 Feb 2025 02:33:09 GMT  
 		Size: 26.5 KB (26479 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `haskell:9.10.1`
+
+**does not exist** (yet?)
 
 ## `haskell:9.10.1-bullseye`
 
