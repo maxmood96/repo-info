@@ -1576,14 +1576,9 @@ Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`, `/usr/share/doc/libx
 - `ISC`
 - `MIT-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.5
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.5.dsc' libxml2_2.9.13+dfsg-1ubuntu0.5.dsc 3030 SHA512:e35051e3351efd60500d5094b058f569fb29520e36ccc082e8deede0fba91e979656a52d406dd504a2469c31fba06a994056d30e483d3277ab598cc0675dd161
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.5.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.5.debian.tar.xz 37876 SHA512:14418b83ffd83b2ae5fe9add271646ad41976e6bcf009495b42d722c1cd679568b19842e6d9c07375aad2c4d83f05ef20cfcd60a9e3e9123aeea50dc642e9cc1
-```
 
 ### `dpkg` source package: `libxslt=1.1.34-4ubuntu0.22.04.1`
 
