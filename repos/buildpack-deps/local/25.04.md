@@ -1961,14 +1961,9 @@ Licenses: (parsed from: `/usr/share/doc/libde265-0/copyright`)
 - `other-1`
 - `public-domain-1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libde265=1.0.15-1build4
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libde265/libde265_1.0.15-1build4.dsc' libde265_1.0.15-1build4.dsc 2320 SHA512:13df375faac90d80a8b39214728fc5c14c5d4676e7a271c28cc1f778d7d3b7263b6459d7e755c4c114e1c9b141b0cc803d4088c4270a6f859ab1600854b64870
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libde265/libde265_1.0.15.orig.tar.gz' libde265_1.0.15.orig.tar.gz 846016 SHA512:375d8e781108247e0e8b4d7a036d20cc5d0670bdbf6ddb40a6d3dbf912fa776d2f001fb762301cb97e4d43be29eb415b0cdbfc6e07aa18b3f2346f7409c64fce
-'http://archive.ubuntu.com/ubuntu/pool/main/libd/libde265/libde265_1.0.15-1build4.debian.tar.xz' libde265_1.0.15-1build4.debian.tar.xz 136788 SHA512:b63199c4e94fd4e494c3289f395478e7092f835e775dfa24b9f40c25206002e6d9d92361d8bc87c22315488555d02bc7edccbf0542b49a60568c03b8cdb79bee
-```
 
 ### `dpkg` source package: `libdeflate=1.23-1`
 
@@ -2416,14 +2411,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.46-4
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.46-4.dsc' libpng1.6_1.6.46-4.dsc 2254 SHA512:898f9b2a766397af8256c11b8dc4dd80e45b85192a95d308ceca8bc87b1b06f697ddaf582c5f58642f5ea3924ded7557a948e37c4668dc6bb7d9cbea6ddc03b2
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.46.orig.tar.gz' libpng1.6_1.6.46.orig.tar.gz 1572313 SHA512:8db09f59191c568f9fca527cfbd01e91b381c67062a5ca1052806958e46a1f67e0ab8cf6272237e5e0c8cd35045e817beb6794d594519bab69266c99858d115e
-'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpng1.6/libpng1.6_1.6.46-4.debian.tar.xz' libpng1.6_1.6.46-4.debian.tar.xz 33092 SHA512:e0b602c32cd15c824bfa71ed8ce3ca8f0f50444df90b32c6acad213411fab996c401a7e26ea5607235acb5781814b2dd14b445bb7c66dedf7215eb6b421d3745
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libpng1.6/1.6.46-4/
+
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1build1`
 
@@ -3097,14 +3091,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=6.12.0-15.15
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.12.0-15.15.dsc' linux_6.12.0-15.15.dsc 8797 SHA512:5a4495ef6498025612d31bcf7d64d673643f9778ac8bda42b4eae8a9c5b9a95bb6e60f8ad03a420d5db78891ce21265f31b43b1749ce087717a349169e4f1127
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.12.0.orig.tar.gz' linux_6.12.0.orig.tar.gz 239929282 SHA512:804209ee32082871520ea8e3098e79e8ffdf69d946120cbb2df9005a898b8bdec8d8e946296ad032aaf264c2940b5af65c11ed11885a9094d16497431bd4133e
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.12.0-15.15.diff.gz' linux_6.12.0-15.15.diff.gz 2256050 SHA512:bd6d9c8f3f24e3e65bd2f4978aee749980a74cac08256a80a9badbc59f1891c3eb0724e0f124a1b79876d3698b1c1a8960bc964fb2f029c8fbb689886422f691
-```
 
 ### `dpkg` source package: `lto-disabled-list=54`
 
@@ -3340,13 +3329,13 @@ Licenses: (parsed from: `/usr/share/doc/default-libmysqlclient-dev/copyright`, `
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mysql-defaults=1.1.1
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-defaults/mysql-defaults_1.1.1.dsc' mysql-defaults_1.1.1.dsc 2202 SHA512:ad3993ddeed3e8bfb9a0a050205814e546a6f5166a6058085256255ed3cf5fa919f6d55faa421983ae70bd5de2288dd1a1bcc9ae578548408a9a562c84791a1a
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mysql-defaults/mysql-defaults_1.1.1.tar.xz' mysql-defaults_1.1.1.tar.xz 7460 SHA512:45ef13a37506a51065662002b97a45fa2acc185e149312c173839d1c50d0a89dfe4fede4022403f5367139e2513fe5b8c706104be35b4bcdaffd2644d0725637
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/mysql-defaults/1.1.1/
+
 
 ### `dpkg` source package: `ncurses=6.5+20250125-2`
 

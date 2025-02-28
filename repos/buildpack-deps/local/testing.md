@@ -186,21 +186,13 @@ Licenses: (parsed from: `/usr/share/doc/libattr1/copyright`)
 - `LGPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris attr=1:2.5.2-2
-'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.2-2.dsc' attr_2.5.2-2.dsc 2576 SHA256:814f167854daf20640bf4d83aa086135000e31f355d69711ef611235b7b999ac
-'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.2.orig.tar.xz' attr_2.5.2.orig.tar.xz 334180 SHA256:f2e97b0ab7ce293681ab701915766190d607a1dba7fae8a718138150b700a70b
-'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.2.orig.tar.xz.asc' attr_2.5.2.orig.tar.xz.asc 833 SHA256:eeac729088d3c6379e91b7596cb3582e46b047c47f0fa3c5c77f9c9e84dc3a4c
-'http://deb.debian.org/debian/pool/main/a/attr/attr_2.5.2-2.debian.tar.xz' attr_2.5.2-2.debian.tar.xz 26592 SHA256:23c0ad870c6f6a75080d11b66e07cdb9db95805d61e218dc30f070d2f001ab9b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/attr/1:2.5.2-2/
 
-- https://sources.debian.net/src/attr/1:2.5.2-2/ (for browsing the source)
-- https://sources.debian.net/src/attr/1:2.5.2-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/attr/1:2.5.2-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `audit=1:4.0.2-2`
 
@@ -398,20 +390,13 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 - `MIT-like`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.2.37-1
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2.37-1.dsc' bash_5.2.37-1.dsc 2294 SHA256:b278d0b2286838ffaa2b6529306625337404cd1ae6b52e9db7e54282462c0e5e
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2.37.orig.tar.xz' bash_5.2.37.orig.tar.xz 5600932 SHA256:370704c9c859f4060b7df19055e43bb9b5fa09d887699cf6ba87885c5485d36a
-'http://deb.debian.org/debian/pool/main/b/bash/bash_5.2.37-1.debian.tar.xz' bash_5.2.37-1.debian.tar.xz 88276 SHA256:262083ffaddbe164060c03df7316fa1eca817443f56a652bb807cd2f9f365c74
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/bash/5.2.37-1/
 
-- https://sources.debian.net/src/bash/5.2.37-1/ (for browsing the source)
-- https://sources.debian.net/src/bash/5.2.37-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/bash/5.2.37-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `binutils=2.44-2`
 
@@ -2942,20 +2927,13 @@ Licenses: (parsed from: `/usr/share/doc/libjpeg-dev/copyright`, `/usr/share/doc/
 - `NTP`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libjpeg-turbo=1:2.1.5-3
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.1.5-3.dsc' libjpeg-turbo_2.1.5-3.dsc 2499 SHA256:a05e6bd60e85b10d12ed705e84262ceadbac95f63a0ef947d783e3ae8da8e747
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.1.5.orig.tar.gz' libjpeg-turbo_2.1.5.orig.tar.gz 2264471 SHA256:254f3642b04e309fee775123133c6464181addc150499561020312ec61c1bf7c
-'http://deb.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-turbo_2.1.5-3.debian.tar.xz' libjpeg-turbo_2.1.5-3.debian.tar.xz 107996 SHA256:18631a8db64da29c6fe86aef840a417a3a8205373679ae870e8f1cdcb22a32b4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libjpeg-turbo/1:2.1.5-3/
 
-- https://sources.debian.net/src/libjpeg-turbo/1:2.1.5-3/ (for browsing the source)
-- https://sources.debian.net/src/libjpeg-turbo/1:2.1.5-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libjpeg-turbo/1:2.1.5-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libksba=1.6.7-2`
 
@@ -3096,20 +3074,13 @@ Licenses: (parsed from: `/usr/share/doc/libpng-dev/copyright`, `/usr/share/doc/l
 - `libpng`
 - `libpng OR Apache-2.0 OR BSD-3-clause`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libpng1.6=1.6.46-4
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.46-4.dsc' libpng1.6_1.6.46-4.dsc 2254 SHA256:b774c9fbd841e822bf41259132e0da3e3c19d467a1262a4fc71bf37b5d62ca93
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.46.orig.tar.gz' libpng1.6_1.6.46.orig.tar.gz 1572313 SHA256:767b01936f9620d4ab4cdf6ec348f6526f861f825648b610b1d604167dc738d2
-'http://deb.debian.org/debian/pool/main/libp/libpng1.6/libpng1.6_1.6.46-4.debian.tar.xz' libpng1.6_1.6.46-4.debian.tar.xz 33092 SHA256:419cc3d12fcb9d8fc42b611c00062e90d943513e5d80967efed7ca5f53d2543c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libpng1.6/1.6.46-4/
 
-- https://sources.debian.net/src/libpng1.6/1.6.46-4/ (for browsing the source)
-- https://sources.debian.net/src/libpng1.6/1.6.46-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libpng1.6/1.6.46-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libpsl=0.21.2-1.1`
 
@@ -3286,21 +3257,13 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsemanage=3.7-2.1
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.7-2.1.dsc' libsemanage_3.7-2.1.dsc 2368 SHA256:7619c31cca56aacabf8bc9eec86db9e8fcf04dfb9568fb7b9e95816c110a6de2
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.7.orig.tar.gz' libsemanage_3.7.orig.tar.gz 182896 SHA256:e166cae29a417dab008db9ca0874023f353a3017b07693a036ed97487eda35b1
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.7.orig.tar.gz.asc' libsemanage_3.7.orig.tar.gz.asc 833 SHA256:02981e0224fdf0141fc29b950f7e5aab1653d5fee6dcbf6d6a5ff976e5720cc8
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.7-2.1.debian.tar.xz' libsemanage_3.7-2.1.debian.tar.xz 36680 SHA256:1625df7a9bcd8fa84a18d0a03bbf739ec6224fdac23c2e500d7c87620b789d17
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsemanage/3.7-2.1/
 
-- https://sources.debian.net/src/libsemanage/3.7-2.1/ (for browsing the source)
-- https://sources.debian.net/src/libsemanage/3.7-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsemanage/3.7-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsepol=3.8-1`
 
@@ -4193,19 +4156,13 @@ Licenses: (parsed from: `/usr/share/doc/media-types/copyright`)
 
 - `ad-hoc`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris media-types=10.1.0
-'http://deb.debian.org/debian/pool/main/m/media-types/media-types_10.1.0.dsc' media-types_10.1.0.dsc 1624 SHA256:1470ba869117eed57ba24c1e54664116a7ab6b4417e4b911e8c8051ffe19d626
-'http://deb.debian.org/debian/pool/main/m/media-types/media-types_10.1.0.tar.xz' media-types_10.1.0.tar.xz 59052 SHA256:c35ec1ae0d0446aa903322f8f91a908a0d4270444326bfbad24b61fbe5600a0d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/media-types/10.1.0/
 
-- https://sources.debian.net/src/media-types/10.1.0/ (for browsing the source)
-- https://sources.debian.net/src/media-types/10.1.0/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/media-types/10.1.0/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mercurial=6.9.1-2`
 
@@ -4393,21 +4350,13 @@ Licenses: (parsed from: `/usr/share/doc/libhogweed6t64/copyright`, `/usr/share/d
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nettle=3.10-1
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.10-1.dsc' nettle_3.10-1.dsc 2276 SHA256:25c9563ad861d8c62246687cc1aaace7d897db0e1aa287ef68485b89687aa739
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.10.orig.tar.gz' nettle_3.10.orig.tar.gz 2640485 SHA256:b4c518adb174e484cb4acea54118f02380c7133771e7e9beb98a0787194ee47c
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.10.orig.tar.gz.asc' nettle_3.10.orig.tar.gz.asc 573 SHA256:83f20f4bb5cc18335dacab8b8d01ddbae1b28453d889c5efcc2123987a8e09ca
-'http://deb.debian.org/debian/pool/main/n/nettle/nettle_3.10-1.debian.tar.xz' nettle_3.10-1.debian.tar.xz 24936 SHA256:fd7181ca135b8a560b048ffba5b9f75e2ce7d0d61d3223c278c77ea89500b660
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nettle/3.10-1/
 
-- https://sources.debian.net/src/nettle/3.10-1/ (for browsing the source)
-- https://sources.debian.net/src/nettle/3.10-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nettle/3.10-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nghttp2=1.64.0-1`
 
@@ -5053,20 +5002,13 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-17=17.3-3
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.3-3.dsc' postgresql-17_17.3-3.dsc 4236 SHA256:153853eb786142201fd468069d7d737184f9b774afa7ee92cbc16ae393eb4134
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.3.orig.tar.bz2' postgresql-17_17.3.orig.tar.bz2 21520115 SHA256:13c18b35bf67a97bd639925fc581db7fd2aae4d3548eac39fcdb8da74ace2bea
-'http://deb.debian.org/debian/pool/main/p/postgresql-17/postgresql-17_17.3-3.debian.tar.xz' postgresql-17_17.3-3.debian.tar.xz 29024 SHA256:9a517b1f2bd0c5175d9788e3fcf848f4b43e3ba1ea5dbc0e078201ce086c679f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/postgresql-17/17.3-3/
 
-- https://sources.debian.net/src/postgresql-17/17.3-3/ (for browsing the source)
-- https://sources.debian.net/src/postgresql-17/17.3-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/postgresql-17/17.3-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `procps=2:4.0.4-7`
 
@@ -5137,19 +5079,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.13.1-2
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.13.1-2.dsc' python3-defaults_3.13.1-2.dsc 2387 SHA256:80dd9a6e61fa4fd926b9b6e9056dc00d893bcb74337792eb534824fb25579464
-'http://deb.debian.org/debian/pool/main/p/python3-defaults/python3-defaults_3.13.1-2.tar.gz' python3-defaults_3.13.1-2.tar.gz 147305 SHA256:0d99df0c0f69170f78d7c35ed4cade9945e575792199ea4136fab8613073d920
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3-defaults/3.13.1-2/
 
-- https://sources.debian.net/src/python3-defaults/3.13.1-2/ (for browsing the source)
-- https://sources.debian.net/src/python3-defaults/3.13.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3-defaults/3.13.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `python3.13=3.13.2-1`
 

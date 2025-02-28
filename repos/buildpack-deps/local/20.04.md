@@ -312,14 +312,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.34-6ubuntu1.9
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.9.dsc' binutils_2.34-6ubuntu1.9.dsc 8521 SHA512:4dbd7e95ebd0cbe0f2b048673d99c802ffd58a4d9f7a76335a1f74776f19729e41730f7a4949e0dbbeff43c35eefa0ea87c80882ede5508e750c64d6a50970bb
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34.orig.tar.xz' binutils_2.34.orig.tar.xz 21637796 SHA512:2c7976939dcf5e8c5b7374cccd39bfe803b1bec73c6abfa0eb17c24e1942574c6bdb874c66a092a82adc443182eacd8a5a8001c19a76101f0c7ba40c27de0bbd
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.9.debian.tar.xz' binutils_2.34-6ubuntu1.9.debian.tar.xz 170448 SHA512:63244d200b47340abffce7c5d8d389f22a5a9bc83a171cd9a895d0d237c0cac1c96e91f76bc3fb5bdc0318263935ae0f6ebde7870e3099d7733c7e5a9f8e9c8d
-```
 
 ### `dpkg` source package: `breezy=3.0.2-4ubuntu2`
 
@@ -1124,14 +1119,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.25.1-1ubuntu3.13
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.13.dsc' git_2.25.1-1ubuntu3.13.dsc 2966 SHA512:bb0374e8bcc08f7485fcc00254d282fd8232fa67e9c2c365666d2c4b4f944850a1d98d8e821f97e31aeae3f4370184c4cb8bfe4175b64969600dc5596682d13b
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1.orig.tar.xz' git_2.25.1.orig.tar.xz 5875548 SHA512:15241143acfd8542d85d2709ac3c80dbd6e8d5234438f70c4f33cc71a2bdec3e32938df7f6351e2746d570b021d3bd0b70474ea4beec0c51d1fc45f9c287b344
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.13.debian.tar.xz' git_2.25.1-1ubuntu3.13.debian.tar.xz 715152 SHA512:5cc26bdc58e2c04e3a98478668e64aae7a53ce52b59330553f9c965dc6ca11dd99efb6ed79733bdebfd067a34f02b33bbada919926bef31b7445cfbc0734eda8
-```
 
 ### `dpkg` source package: `glib2.0=2.64.6-1~ubuntu20.04.7`
 
