@@ -397,12 +397,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): GPLv3+ and CC0-1.0
 
-Source:
-
-```console
-$ dnf --quiet download --source --url emacs-filesystem-27.2-10.el9_4.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/appstream/source/SRPMS/Packages/e/emacs-27.2-10.el9_4.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `expat-2.5.0-3.el9_5.1.x86_64`
 
