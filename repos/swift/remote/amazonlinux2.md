@@ -1,7 +1,7 @@
 ## `swift:amazonlinux2`
 
 ```console
-$ docker pull swift@sha256:8bed359cfb50511399f7654acf278d8168f7813478627cac297632a414e8920a
+$ docker pull swift@sha256:c677d67834013285ce51b1ef85e51333c621a28b77234abec33c95f8a47fe51e
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull swift@sha256:8bed359cfb50511399f7654acf278d8168f7813478627cac29763
 ### `swift:amazonlinux2` - linux; amd64
 
 ```console
-$ docker pull swift@sha256:5c531e5d1ca378160a54b1a247865d1cac860a3b640cd74411c1baeba7cc3978
+$ docker pull swift@sha256:87dc757d1dde2a5d8f947cd413a9c04d61304c86227e17060d4d2786819b2a60
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.2 GB (1170294941 bytes)**  
+-	Total Size: **1.2 GB (1171344416 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0461179dd5c85c11287ca8a6987d46f1380279b922f71ece58dd726b546e2c5e`
+-	Image ID: `sha256:9663729f2ac71b687a73f509abde9225b1b8cd2c060ae3aafe3b654b3830f4f7`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -55,57 +55,57 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:43fdf45428917f1f386fbfe0eba1ccfdadae7696a4cce30a96cca587ab25ab90`  
-		Last Modified: Wed, 05 Feb 2025 10:24:14 GMT  
-		Size: 62.7 MB (62665244 bytes)  
+	-	`sha256:7f0a890370e7b6290884eb8b70dcfcd6749f097764b13db947cdd9196f5b6ecd`  
+		Last Modified: Wed, 26 Feb 2025 15:57:24 GMT  
+		Size: 62.8 MB (62802042 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:449b10ad3ab0d27816fcfe606996e78b4de0a4ca2a88bb213a3e3c55bc50d623`  
-		Last Modified: Mon, 10 Feb 2025 20:11:16 GMT  
-		Size: 307.9 MB (307916696 bytes)  
+	-	`sha256:3adbadc0cb2b0ac4e34a6e10401231809a47f438ddd2331365f2bd3b1d561add`  
+		Last Modified: Thu, 27 Feb 2025 21:10:44 GMT  
+		Size: 308.8 MB (308829373 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:d44e0c6034f46170c29d6beb29bceafe3886a09dd7ccea839d17a85112238187`  
 		Last Modified: Thu, 12 Dec 2024 22:35:24 GMT  
 		Size: 799.7 MB (799712792 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b72fd30028ad4bf39dc5b49263319f6c69b1881a4f885af5cd1d7042142f98a2`  
-		Last Modified: Mon, 10 Feb 2025 20:11:12 GMT  
+	-	`sha256:e3597e02e09d0207b38ea57878423a83ac321825b922cd2bfb4191e54d6209c5`  
+		Last Modified: Thu, 27 Feb 2025 21:10:39 GMT  
 		Size: 209.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:amazonlinux2` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:3f066896cd976d17d5d3b449deeb6cd3d902a34a224ecd23ba0ce1cf6e78c30f
+$ docker pull swift@sha256:bb07677e4274321380a4593548ab2b3f28ee7d16d29748f679f6173c4e77f2db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **12.7 MB (12676552 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b72d4819761940ab857d4a1ec815ba8f453ebe20cdf4c6bb504208e1ac793c5b`
+-	Image ID: `sha256:a959f115f8f1bf0c2a1734d513810d244f73af698069140316a65471a0b889e5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:9cf270b3546ff6613c145d9b2cd5b538347e7a1af4d737a1da8e3e847baf27d9`  
-		Last Modified: Mon, 10 Feb 2025 20:11:12 GMT  
+	-	`sha256:34a16faf8e013c7a16018ee4a3711751468af2e7e85f5318ed487114ca30b470`  
+		Last Modified: Thu, 27 Feb 2025 21:10:39 GMT  
 		Size: 12.7 MB (12661664 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b082eca9b17213abf7a5e08af98a29df39400fcbc8f7d416ff432a6fb6282ba7`  
-		Last Modified: Mon, 10 Feb 2025 20:11:12 GMT  
+	-	`sha256:67e7bd8379859c497b965eaf0dbabeedd0f2b2b9bb5750cf0771dd668830813b`  
+		Last Modified: Thu, 27 Feb 2025 21:10:39 GMT  
 		Size: 14.9 KB (14888 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `swift:amazonlinux2` - linux; arm64 variant v8
 
 ```console
-$ docker pull swift@sha256:e53047836137cc56327eec01a1acc114dc58e081bb120dac009bcad61c4f58e4
+$ docker pull swift@sha256:2d6ba0a826ca20bc91e58d9f09223b368e92ccdd92ea71d576791acfd8a0dcde
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **1.1 GB (1139131875 bytes)**  
+-	Total Size: **1.1 GB (1140058244 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3db5236ca736373a050856aac713d596908d39978b4689ae16dea6337d84d57c`
+-	Image ID: `sha256:8ab988f1220951673086ed3d653883c538e5c93c0fa76731b4d2f1535c8f9dcb`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
@@ -140,43 +140,43 @@ RUN swift --version # buildkit
 ```
 
 -	Layers:
-	-	`sha256:e42e49097fe754943ed2309e7c2ac45f6631e5c57fa3daa55479809dc243c87a`  
-		Last Modified: Wed, 05 Feb 2025 14:56:54 GMT  
-		Size: 64.6 MB (64578222 bytes)  
+	-	`sha256:5270c35d4d9446d8a0ab2f41ab0020c11889bd8617236093cc9c87563d120b9e`  
+		Last Modified: Wed, 26 Feb 2025 15:57:39 GMT  
+		Size: 64.5 MB (64521208 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06801670a5fb5074258c5e54b68180b858881b3289a497105b9362af001cd16b`  
-		Last Modified: Mon, 10 Feb 2025 20:44:07 GMT  
-		Size: 279.4 MB (279387312 bytes)  
+	-	`sha256:d39b54fd7169c7bdd25754e7588d48fcf5a6bc609b6b61f9e39a6350c32a221d`  
+		Last Modified: Thu, 27 Feb 2025 21:30:12 GMT  
+		Size: 280.4 MB (280370697 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:02becb9a3b3cdefa93e5d4516a9f02b230fd9ffefc0f71731e3e9e88cfebb781`  
 		Last Modified: Fri, 13 Dec 2024 00:25:25 GMT  
 		Size: 795.2 MB (795166139 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f6de45988fcc9429994c5bbeb19b7d33d48cc726838c13a5166a738b7af7f8ca`  
-		Last Modified: Mon, 10 Feb 2025 20:44:00 GMT  
-		Size: 202.0 B  
+	-	`sha256:1d343a868eeea918f7d281536f1ce0068982fb9375ee56d7cd1abb9419aecae3`  
+		Last Modified: Thu, 27 Feb 2025 21:30:05 GMT  
+		Size: 200.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `swift:amazonlinux2` - unknown; unknown
 
 ```console
-$ docker pull swift@sha256:25eb8dda1dbc82bd64ccdb16bad2acf7a6cbdda8016d83938be042bf8c9e52cb
+$ docker pull swift@sha256:056bc6881e395e90085a469a9b94e77eaab71d123f8cf3e8bacc152478d73ebe
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **12.5 MB (12538841 bytes)**  
+-	Total Size: **12.5 MB (12538842 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4e90413685b62335ebe8bafc702df5c95ff00e7c0136f766a7f86d9eaa4a762e`
+-	Image ID: `sha256:e6cbc8ffa7882f32d27372976306455a68f9a969ec51e64313924231d033de08`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:376fffb9a2fd72b6abb1d3d7d89cf955446a45650ee6ccaf94cd93d85be3b130`  
-		Last Modified: Mon, 10 Feb 2025 20:44:01 GMT  
+	-	`sha256:9282eecd9253a61119a989effee1b0c00f84389dc52b64c28c0c061e4f6cf5dc`  
+		Last Modified: Thu, 27 Feb 2025 21:30:06 GMT  
 		Size: 12.5 MB (12523832 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:386b27f8d7a6f185d69bcfc5d4705c2f0da3f30c5949726205ea165d63604c5c`  
-		Last Modified: Mon, 10 Feb 2025 20:44:00 GMT  
-		Size: 15.0 KB (15009 bytes)  
+	-	`sha256:0d5ae75759645293d9a1ae822ac506477b01f05af61b4e0198520af10d36fde6`  
+		Last Modified: Thu, 27 Feb 2025 21:30:05 GMT  
+		Size: 15.0 KB (15010 bytes)  
 		MIME: application/vnd.in-toto+json
