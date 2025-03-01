@@ -1,10 +1,10 @@
-# `r-base:4.4.2`
+# `r-base:4.4.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:242d80afc1301227a452e5055448e7c8f718009c98bb84197a26e473193f84dd`
-- Created: `2024-11-01T03:11:38Z`
-- Virtual Size: ~ 859.82 Mb  
+- Image ID: `sha256:b39ab94a55d82fcba74c6354a3af3b4c4ff178eff4d76cd67169a2a2e97a8f82`
+- Created: `2025-02-28T21:48:43Z`
+- Virtual Size: ~ 859.85 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["R"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LC_ALL=en_US.UTF-8`
   - `LANG=en_US.UTF-8`
-  - `R_BASE_VERSION=4.4.2`
+  - `R_BASE_VERSION=4.4.3`
 - Labels:
   - `org.opencontainers.image.authors=Dirk Eddelbuettel <edd@debian.org>`
   - `org.opencontainers.image.licenses=GPL-2.0-or-later`
@@ -228,7 +228,7 @@ $ apt-get source -qq --print-uris boot=1.3-31-1
 
 Binary Packages:
 
-- `libbrotli1:amd64=1.1.0-2+b6`
+- `libbrotli1:amd64=1.1.0-2+b7`
 
 Licenses: (parsed from: `/usr/share/doc/libbrotli1/copyright`)
 
@@ -408,11 +408,11 @@ $ apt-get source -qq --print-uris coreutils=9.5-1
 'http://http.debian.net/debian/pool/main/c/coreutils/coreutils_9.5-1.debian.tar.xz' coreutils_9.5-1.debian.tar.xz 21768 SHA256:fe704f7ba9b23cbc857e755bd3ec987228166b1342c1651f04bd16649b71d84d
 ```
 
-### `dpkg` source package: `curl=8.12.1-2`
+### `dpkg` source package: `curl=8.12.1-3`
 
 Binary Packages:
 
-- `libcurl4t64:amd64=8.12.1-2`
+- `libcurl4t64:amd64=8.12.1-3`
 
 Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
 
@@ -432,11 +432,11 @@ Licenses: (parsed from: `/usr/share/doc/libcurl4t64/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris curl=8.12.1-2
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.12.1-2.dsc' curl_8.12.1-2.dsc 3252 SHA256:5b5c971eeb3e201afa114e2a869eefed47899abfa01c359a5a46c756cee033e9
+$ apt-get source -qq --print-uris curl=8.12.1-3
+'http://http.debian.net/debian/pool/main/c/curl/curl_8.12.1-3.dsc' curl_8.12.1-3.dsc 3252 SHA256:3c3918ce2f3863f801b95071f71eed9bf95bcfe8fb0fd1b5e48ab3157c24fc4c
 'http://http.debian.net/debian/pool/main/c/curl/curl_8.12.1.orig.tar.gz' curl_8.12.1.orig.tar.gz 4181139 SHA256:7b40ea64947e0b440716a4d7f0b7aa56230a5341c8377d7b609649d4aea8dbcf
 'http://http.debian.net/debian/pool/main/c/curl/curl_8.12.1.orig.tar.gz.asc' curl_8.12.1.orig.tar.gz.asc 488 SHA256:36d883bcf288d843caf587e7c8fd5feb6223b63420ae93517be6a4db928abe13
-'http://http.debian.net/debian/pool/main/c/curl/curl_8.12.1-2.debian.tar.xz' curl_8.12.1-2.debian.tar.xz 52880 SHA256:8248ae609dd27d2e2b3717689b34f5c1c8473b798f59880e1a8230f7a040b22a
+'http://http.debian.net/debian/pool/main/c/curl/curl_8.12.1-3.debian.tar.xz' curl_8.12.1-3.debian.tar.xz 53716 SHA256:550dcaf7cc74556a2f1f45d068aaa694e4d89a6dc651c302745f358073fcaf08
 ```
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-8`
@@ -1871,21 +1871,13 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsemanage=3.7-2.1
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.7-2.1.dsc' libsemanage_3.7-2.1.dsc 2368 SHA256:7619c31cca56aacabf8bc9eec86db9e8fcf04dfb9568fb7b9e95816c110a6de2
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.7.orig.tar.gz' libsemanage_3.7.orig.tar.gz 182896 SHA256:e166cae29a417dab008db9ca0874023f353a3017b07693a036ed97487eda35b1
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.7.orig.tar.gz.asc' libsemanage_3.7.orig.tar.gz.asc 833 SHA256:02981e0224fdf0141fc29b950f7e5aab1653d5fee6dcbf6d6a5ff976e5720cc8
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.7-2.1.debian.tar.xz' libsemanage_3.7-2.1.debian.tar.xz 36680 SHA256:1625df7a9bcd8fa84a18d0a03bbf739ec6224fdac23c2e500d7c87620b789d17
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsemanage/3.7-2.1/
 
-- https://sources.debian.net/src/libsemanage/3.7-2.1/ (for browsing the source)
-- https://sources.debian.net/src/libsemanage/3.7-2.1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsemanage/3.7-2.1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsepol=3.8-1`
 
@@ -3000,14 +2992,14 @@ $ apt-get source -qq --print-uris procps=2:4.0.4-7
 'http://http.debian.net/debian/pool/main/p/procps/procps_4.0.4-7.debian.tar.xz' procps_4.0.4-7.debian.tar.xz 29964 SHA256:460a5fb98ad62b5a0256c180b3246099f5c3cb73c97b235aeafaa30fef561015
 ```
 
-### `dpkg` source package: `r-base=4.4.2-1`
+### `dpkg` source package: `r-base=4.4.3-1`
 
 Binary Packages:
 
-- `r-base=4.4.2-1`
-- `r-base-core=4.4.2-1`
-- `r-base-dev=4.4.2-1`
-- `r-recommended=4.4.2-1`
+- `r-base=4.4.3-1`
+- `r-base-core=4.4.3-1`
+- `r-base-dev=4.4.3-1`
+- `r-recommended=4.4.3-1`
 
 Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-base-core/copyright`, `/usr/share/doc/r-base-dev/copyright`, `/usr/share/doc/r-recommended/copyright`)
 
@@ -3021,10 +3013,10 @@ Licenses: (parsed from: `/usr/share/doc/r-base/copyright`, `/usr/share/doc/r-bas
 Source:
 
 ```console
-$ apt-get source -qq --print-uris r-base=4.4.2-1
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.4.2-1.dsc' r-base_4.4.2-1.dsc 2906 SHA256:4a4ea52c4f43ad386e94ef76d7de4818b6f0be43aa8d3bdbf7c2d1ef51ab5611
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.4.2.orig.tar.gz' r-base_4.4.2.orig.tar.gz 37582785 SHA256:1578cd603e8d866b58743e49d8bf99c569e81079b6a60cf33cdf7bdffeb817ec
-'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.4.2-1.debian.tar.xz' r-base_4.4.2-1.debian.tar.xz 100592 SHA256:c17da84e76400bc6f38a489c867c4a5e112fa8f685f01bb7f60ce42caf604d36
+$ apt-get source -qq --print-uris r-base=4.4.3-1
+'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.4.3-1.dsc' r-base_4.4.3-1.dsc 2906 SHA256:7a51e3557e29a2201fcd733e6cc728012d47a705e17eff24ef7ae856d89cb1e2
+'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.4.3.orig.tar.gz' r-base_4.4.3.orig.tar.gz 40234425 SHA256:0d93d224442dea253c2b086f088db6d0d3cfd9b592cd5496e8cb2143e90fc9e8
+'http://http.debian.net/debian/pool/main/r/r-base/r-base_4.4.3-1.debian.tar.xz' r-base_4.4.3-1.debian.tar.xz 100536 SHA256:2d26288135de83a27b46d6162be4e2b8b680dc314eb4b3de01d664307af7a7ee
 ```
 
 ### `dpkg` source package: `r-cran-class=7.3-23-1`
@@ -3066,11 +3058,11 @@ $ apt-get source -qq --print-uris r-cran-docopt=0.7.1-2
 'http://http.debian.net/debian/pool/main/r/r-cran-docopt/r-cran-docopt_0.7.1-2.debian.tar.xz' r-cran-docopt_0.7.1-2.debian.tar.xz 2472 SHA256:3358c9988254f326b3d2a351f3a75fd3c655d56de13e7f822cceaf39fb1f7fca
 ```
 
-### `dpkg` source package: `r-cran-mass=7.3-64-1`
+### `dpkg` source package: `r-cran-mass=7.3-65-1`
 
 Binary Packages:
 
-- `r-cran-mass=7.3-64-1`
+- `r-cran-mass=7.3-65-1`
 
 Licenses: (parsed from: `/usr/share/doc/r-cran-mass/copyright`)
 
@@ -3080,10 +3072,10 @@ Licenses: (parsed from: `/usr/share/doc/r-cran-mass/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris r-cran-mass=7.3-64-1
-'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-64-1.dsc' r-cran-mass_7.3-64-1.dsc 1851 SHA256:261131c3b9cbc6ef3fc171922366461c2142856b58f14e0924896c80d92cd44c
-'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-64.orig.tar.gz' r-cran-mass_7.3-64.orig.tar.gz 510135 SHA256:bf313725b97fcf69fed86d1f70889ea612bfa9095f36aab47181cc76a8cdbb7f
-'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-64-1.debian.tar.xz' r-cran-mass_7.3-64-1.debian.tar.xz 6644 SHA256:5d7daf383681ed9995228a9f129011cd21267c17170cbcba3d6c112cf75a7f88
+$ apt-get source -qq --print-uris r-cran-mass=7.3-65-1
+'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-65-1.dsc' r-cran-mass_7.3-65-1.dsc 1851 SHA256:530e4881166d5a06103cd8bd8ea1378269390fd788a2092e948684759edef6e0
+'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-65.orig.tar.gz' r-cran-mass_7.3-65.orig.tar.gz 510322 SHA256:b07ef1e3c364ce56269b4a8a7759cc9f87c876554f91293437bb578cfe38172f
+'http://http.debian.net/debian/pool/main/r/r-cran-mass/r-cran-mass_7.3-65-1.debian.tar.xz' r-cran-mass_7.3-65-1.debian.tar.xz 6656 SHA256:7afbb1ad2accbdd53ec74654d9b6bebbcd31a0e474fbaca4289b9928c85c275c
 ```
 
 ### `dpkg` source package: `r-cran-nnet=7.3-20-1`
