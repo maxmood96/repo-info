@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:583f184cad64f5cd40acbbe6c1f754add8a37bdfb21dd132d076fe4e0156523e`
+- Image ID: `sha256:9e0759ac3fc46a93f386d98ba866e6a991ddd8d0b6706b2cfa225d73b5c85ace`
 - Created: `2025-01-24T20:03:54Z`
-- Virtual Size: ~ 407.65 Mb  
+- Virtual Size: ~ 407.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -356,15 +356,15 @@ $ dnf --quiet download --source --url gdbm-1.13-6.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/b50e1d9b7a6b3bea055a7ae852245858e7006060b9f0544944ed49f183a4c243/../../../../../blobstore/e2866f1817e24bcd350768bf85c8bbddde135513ced29ce315df75f311cf77cf/gdbm-1.13-6.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `glib2-2.56.1-9.amzn2.0.8.x86_64`
+### `rpm` package: `glib2-2.56.1-9.amzn2.0.9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glib2-2.56.1-9.amzn2.0.8
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/b50e1d9b7a6b3bea055a7ae852245858e7006060b9f0544944ed49f183a4c243/../../../../../blobstore/ad63e8fcb326654adf7b006023caaa4c68cdcb9028307b1583e96e87e7c5232b/glib2-2.56.1-9.amzn2.0.8.src.rpm
+$ dnf --quiet download --source --url glib2-2.56.1-9.amzn2.0.9
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/b50e1d9b7a6b3bea055a7ae852245858e7006060b9f0544944ed49f183a4c243/../../../../../blobstore/4392f6c6a1e9080eebfa0e226b12763f38401a5001927635b49ede9ec10e761b/glib2-2.56.1-9.amzn2.0.9.src.rpm
 ```
 
 ### `rpm` package: `glibc-2.26-64.amzn2.0.3.i686`
@@ -1363,26 +1363,26 @@ $ dnf --quiet download --source --url tzdata-2024a-1.amzn2.0.1.noarch
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/b50e1d9b7a6b3bea055a7ae852245858e7006060b9f0544944ed49f183a4c243/../../../../../blobstore/9d158b03fd666bbcf8477fcb2ce9ba8545361d7ecc708eba9c90921ddfee8f25/tzdata-2024a-1.amzn2.0.1.src.rpm
 ```
 
-### `rpm` package: `vim-data-9.0.2153-1.amzn2.0.2.noarch`
+### `rpm` package: `vim-data-9.0.2153-1.amzn2.0.3.noarch`
 
 Licenses (from `rpm --query`): Vim AND LGPL-2.1-or-later AND MIT AND GPL-1.0-only AND (GPL-2.0-only OR Vim) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND GPL-2.0-or-later AND GPL-3.0-or-later AND OPUBL-1.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url vim-data-9.0.2153-1.amzn2.0.2.noarch
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/b50e1d9b7a6b3bea055a7ae852245858e7006060b9f0544944ed49f183a4c243/../../../../../blobstore/6f2acc9729e675b4ca0be2441bcc7f30d6e707fca0be4f3ded762d3f68257caa/vim-9.0.2153-1.amzn2.0.2.src.rpm
+$ dnf --quiet download --source --url vim-data-9.0.2153-1.amzn2.0.3.noarch
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/b50e1d9b7a6b3bea055a7ae852245858e7006060b9f0544944ed49f183a4c243/../../../../../blobstore/7d2ea079f27a18b02255b791e8ae2e3a43ccaca09bec7a320b6f2e936d2e4151/vim-9.0.2153-1.amzn2.0.3.src.rpm
 ```
 
-### `rpm` package: `vim-minimal-9.0.2153-1.amzn2.0.2.x86_64`
+### `rpm` package: `vim-minimal-9.0.2153-1.amzn2.0.3.x86_64`
 
 Licenses (from `rpm --query`): Vim AND LGPL-2.1-or-later AND MIT AND GPL-1.0-only AND (GPL-2.0-only OR Vim) AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND GPL-2.0-or-later AND GPL-3.0-or-later AND OPUBL-1.0
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url vim-minimal-9.0.2153-1.amzn2.0.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/b50e1d9b7a6b3bea055a7ae852245858e7006060b9f0544944ed49f183a4c243/../../../../../blobstore/6f2acc9729e675b4ca0be2441bcc7f30d6e707fca0be4f3ded762d3f68257caa/vim-9.0.2153-1.amzn2.0.2.src.rpm
+$ dnf --quiet download --source --url vim-minimal-9.0.2153-1.amzn2.0.3
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/b50e1d9b7a6b3bea055a7ae852245858e7006060b9f0544944ed49f183a4c243/../../../../../blobstore/7d2ea079f27a18b02255b791e8ae2e3a43ccaca09bec7a320b6f2e936d2e4151/vim-9.0.2153-1.amzn2.0.3.src.rpm
 ```
 
 ### `rpm` package: `xz-libs-5.2.2-1.amzn2.0.3.x86_64`
