@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:a5ee1a101d671368ba022a62f3c990a1cd23eb54e88d539483bc0435c86637cc`
-- Created: `2025-02-13T19:43:06Z`
-- Virtual Size: ~ 923.59 Mb  
+- Image ID: `sha256:1d3eefbde546c2820172cf424e984c45e649f723dc8e95d30f2ef422acff83bc`
+- Created: `2025-02-25T22:37:43Z`
+- Virtual Size: ~ 922.82 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -21,6 +21,7 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.2.27.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.27.tar.xz.asc`
   - `PHP_SHA256=3eec91294d8c09b3df80b39ec36d574ed9b05de4c8afcb25fa215d48f9ecbc6b`
+  - `IMAGICK_COMMIT_HASH=d7d3c24af1b4f599897408f1714600b69a56473b`
   - `PHP_MEMORY_LIMIT=512M`
   - `PHP_UPLOAD_LIMIT=512M`
   - `PHP_OPCACHE_MEMORY_CONSUMPTION=128`
@@ -473,16 +474,16 @@ AGPL-3.0-or-later
 ### `apk` package: `glib`
 
 ```console
-glib-2.82.4-r0 description:
+glib-2.82.5-r0 description:
 Common C routines used by Gtk+ and other libs
 
-glib-2.82.4-r0 webpage:
+glib-2.82.5-r0 webpage:
 https://developer.gnome.org/glib/
 
-glib-2.82.4-r0 installed size:
+glib-2.82.5-r0 installed size:
 5190 KiB
 
-glib-2.82.4-r0 license:
+glib-2.82.5-r0 license:
 LGPL-2.1-or-later
 
 ```
@@ -1204,16 +1205,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-17.2-r0 description:
+libpq-17.4-r0 description:
 PostgreSQL client library
 
-libpq-17.2-r0 webpage:
+libpq-17.4-r0 webpage:
 https://www.postgresql.org/
 
-libpq-17.2-r0 installed size:
+libpq-17.4-r0 installed size:
 322 KiB
 
-libpq-17.2-r0 license:
+libpq-17.4-r0 license:
 PostgreSQL
 
 ```
