@@ -1,17 +1,17 @@
-# `pypy:2.7-7.3.18-slim-bullseye`
+# `pypy:2.7-7.3.19-slim-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3196f33677d9b75b79a2ad4758e3ae79bcca7a9728028b392a690c7458211233`
-- Created: `2025-02-06T11:07:28Z`
-- Virtual Size: ~ 204.84 Mb  
+- Image ID: `sha256:9b6650f8e3cbb2aea9263a87b0a8b4ca7902331d432984205cd5ae54620c41d0`
+- Created: `2025-02-26T17:07:12Z`
+- Virtual Size: ~ 205.07 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["pypy"]`
 - Environment:
   - `PATH=/opt/pypy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `PYPY_VERSION=7.3.18`
+  - `PYPY_VERSION=7.3.19`
   - `PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3843bff3a0a61da5b63ea0b7d34794c5c51a2f11/get-pip.py`
   - `PYTHON_GET_PIP_SHA256=95c5ee602b2f3cc50ae053d716c3c89bea62c58568f64d7d25924d399b2d5218`
 
