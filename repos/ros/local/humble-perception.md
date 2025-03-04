@@ -7414,14 +7414,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `nagaysau-ishii`
 - `rijndael`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-14=14.15-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.15-0ubuntu0.22.04.1.dsc' postgresql-14_14.15-0ubuntu0.22.04.1.dsc 3864 SHA512:a6f6eef1cbdccfe00c6d40e2553690473e6c4a86bf29541d6163c18acde6d61cea430504b7f7e90de757d704514adbeeb7acc6fe40b5d7790cef7f0538b1642f
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.15.orig.tar.gz' postgresql-14_14.15.orig.tar.gz 29338369 SHA512:72dacc5f271dc435f9b2d377883b3fd9caeba46911bc8e3eec5e8a8145d27e2129fffd2aec82d5d128ffdf680df550b910e9e3a9430ad8c0d23b9d5cdce37159
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-14/postgresql-14_14.15-0ubuntu0.22.04.1.debian.tar.xz' postgresql-14_14.15-0ubuntu0.22.04.1.debian.tar.xz 29988 SHA512:5c0080159126a48a5b76c8fff721f04f12549ec479818453408e5bf7e3c6bcbb9c64a9c452d72ae2781bc72ec2d180de6ca32f9e7fd447471740ebe1cdc022f8
-```
 
 ### `dpkg` source package: `procps=2:3.3.17-6ubuntu2.1`
 

@@ -7745,14 +7745,9 @@ Licenses: (parsed from: `/usr/share/doc/libpq-dev/copyright`, `/usr/share/doc/li
 - `double-metaphone`
 - `nagaysau-ishii`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris postgresql-16=16.6-0ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.6-0ubuntu0.24.04.1.dsc' postgresql-16_16.6-0ubuntu0.24.04.1.dsc 4329 SHA512:5dc80b6c76716cbb98b7cfed677451b942f1d6e28792c596a599e814e085a64f297d3321e496d2365724175b5ef3fc3f4ddd19d001e83f570fcc57e638cc229c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.6.orig.tar.gz' postgresql-16_16.6.orig.tar.gz 32715613 SHA512:094e623b60417fed82bad67ea41e0deeafbf3aa3c06b3941a4a0d872d8f2951ee6fae2963f8e1bf19d95af4b0edefe9ed37a9c4cdb5322eff4e07765c6ccd0a8
-'http://archive.ubuntu.com/ubuntu/pool/main/p/postgresql-16/postgresql-16_16.6-0ubuntu0.24.04.1.debian.tar.xz' postgresql-16_16.6-0ubuntu0.24.04.1.debian.tar.xz 34164 SHA512:eca18b42336e0a1c330925d1b1eb4d79b501994a9eae70b3b828b2b4636c983085518ed10b1fd5aa31e5dcb41b289f7da10b8f5151003e01fa06feaf76c87ecb
-```
 
 ### `dpkg` source package: `procps=2:4.0.4-4ubuntu3.2`
 
