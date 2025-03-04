@@ -132,15 +132,13 @@ Licenses: (parsed from: `/usr/share/doc/libattr1/copyright`)
 - `LGPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris attr=1:2.5.2-2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2-2.dsc' attr_2.5.2-2.dsc 2576 SHA512:6bde9b74c4504f9d6a044e6d78742b13372e73f7c1a4ff86cd2bde1d01a1910f77fe0d99890c32f884d448966da3a40f32ade428bf3839088466b5cb90b007b3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2.orig.tar.xz' attr_2.5.2.orig.tar.xz 334180 SHA512:f587ea544effb7cfed63b3027bf14baba2c2dbe3a9b6c0c45fc559f7e8cb477b3e9a4a826eae30f929409468c50d11f3e7dc6d2500f41e1af8662a7e96a30ef3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2.orig.tar.xz.asc' attr_2.5.2.orig.tar.xz.asc 833 SHA512:16362013313d055dec307bcf755a9846f5153a78309a499f8cac4ff57a2154de2bc8f3b1400e81dba7a0bf0c67aa02a5d464898ed6e4aa721b64ec95fd313968
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2-2.debian.tar.xz' attr_2.5.2-2.debian.tar.xz 26592 SHA512:f87d530fff2eb609291f7b71cb0fe92a487f976fbe75d434bc228f98baa830a82c76143b35bd1589f9bdeb1fcdfe3e7b481ab7415c7aa57fd5cb62ab3387b0c0
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/attr/1:2.5.2-2/
+
 
 ### `dpkg` source package: `audit=1:4.0.2-2ubuntu1`
 
@@ -377,14 +375,9 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `OpenLDAP`
 - `RSA-MD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg1-8build1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-8build1.dsc' cyrus-sasl2_2.1.28+dfsg1-8build1.dsc 3435 SHA512:e1a9c803e98718087560762421201ee0b5979b06c0011b839af310c40156d97d1d95c8586240595bb96c0629073fe6fea0531e2519903c72a4f1f52639eae78b
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg1.orig.tar.xz 794540 SHA512:e94075d09b38a50138b782323de286deb7b15008064f07df4fa682e94367e829d9bfafef48d5478f730fef8fde536bcc6d54cab0452b76473a3c620b3dc18fa2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-8build1.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg1-8build1.debian.tar.xz 99048 SHA512:173e008c8176440d95f6d9d997124590c6fe74ee49ad08b263b5e149872b537f674524b269c8be448e0ae7932b1b4a4d19dec1d501db7ea9601d7895b6c3295a
-```
 
 ### `dpkg` source package: `dash=0.5.12-9ubuntu1`
 
@@ -686,14 +679,9 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris git=1:2.47.1-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.47.1-1ubuntu1.dsc' git_2.47.1-1ubuntu1.dsc 2793 SHA512:0b0ac5fde9aadda7b883248e835f70bf207e5230dce3e0c2e1a64546c1923349a2f8247de7405455b99c62f81c125c90b1c08cf58cb35765bd998d6a0f9cbafb
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.47.1.orig.tar.xz' git_2.47.1.orig.tar.xz 7654244 SHA512:6abe551c464b307bc3f6f474257e0be3e1a9eba1406af6463216b796c55a35356009c2f7bd9b4fa2d1798da5f885a3843f6ad8750ab69595f748f9ea8ed76fea
-'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.47.1-1ubuntu1.debian.tar.xz' git_2.47.1-1ubuntu1.debian.tar.xz 795536 SHA512:4114f0228df913c8fdc24dc966053f04e855795747bf8cf038f8d212bb04dd7df27af1fd6fcf1c812e4ebae013b82ba9f2bdcf294baf395691c4c6eaef95675f
-```
 
 ### `dpkg` source package: `glibc=2.40-1ubuntu3`
 
@@ -908,15 +896,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.21.3-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.21.3-4ubuntu1.dsc' krb5_1.21.3-4ubuntu1.dsc 3782 SHA512:259b3d950e986c482d902625e5408e5d0febb393fd654d30c03b3c9b7ed00b481b8d47c0e1e388df402e053dd71881a1b0b6aa8bcab2d2dbc11391c57c1ba6fc
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz' krb5_1.21.3.orig.tar.gz 9136145 SHA512:87bc06607f4d95ff604169cea22180703a42d667af05f66f1569b8bd592670c42820b335e5c279e8b4f066d1e7da20f1948a1e4def7c5d295c170cbfc7f49c71
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz.asc' krb5_1.21.3.orig.tar.gz.asc 833 SHA512:8992a5f5247315b9846aa73be4ee1ea223c0231a52d5c6c28718b1f3e3b45d62e2dad4aa5543a83163d1369bb79886b6c1c22766f22d8aa2f6b2575c54d0075c
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.21.3-4ubuntu1.debian.tar.xz' krb5_1.21.3-4ubuntu1.debian.tar.xz 108772 SHA512:06f18203811f9f2c2634d3421be1dc6d1571cca969b904530a6b615e67d09ada51593e97a532670e74b4421eac1ad8afbb967222b7eb36368afcaf7af819f5d5
-```
 
 ### `dpkg` source package: `libassuan=3.0.1-2`
 
@@ -1070,14 +1052,13 @@ Licenses: (parsed from: `/usr/share/doc/liberror-perl/copyright`)
 - `GPL-1+`
 - `MIT/X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris liberror-perl=0.17029-2
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/liberror-perl/liberror-perl_0.17029-2.dsc' liberror-perl_0.17029-2.dsc 2085 SHA512:9b469f24ebdd65c5aacfa41b7099cb1fec5214d98e6e0d793d55a56bc0f0edae8f2ad3c0e09f44558249ff5456f05704c213d7e84661e0e4d774e644d3fd405a
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/liberror-perl/liberror-perl_0.17029.orig.tar.gz' liberror-perl_0.17029.orig.tar.gz 33304 SHA512:266ba1feff897c1d162e69a83e595cb40da9a6e1d8b10cc5531626eff392c6da94be03ba722c74827fc2ea0d9d1c1e62e824d9021e098b700db65dd0b3acbd0a
-'http://archive.ubuntu.com/ubuntu/pool/main/libe/liberror-perl/liberror-perl_0.17029-2.debian.tar.xz' liberror-perl_0.17029-2.debian.tar.xz 4608 SHA512:beb596444319797a60470e98c14e8e736fd5be9c307ba5482fe96bf77c1382603b1f2a58d68406ecbf2bc5469cab4654645f5469cf059336fef24605b235cb61
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/liberror-perl/0.17029-2/
+
 
 ### `dpkg` source package: `libffi=3.4.6-1build1`
 
@@ -1573,15 +1554,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=6.9.1-2
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_6.9.1-2.dsc' mercurial_6.9.1-2.dsc 2806 SHA512:d7db4ccbd9522749856a84051cfae57e5f6b931e0af4ca544841f0fc435ebdd165f1e5c1165a70d3966cd5f4cc77a4068539d625ef2df06079ecc0ad63a425ff
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_6.9.1.orig.tar.gz' mercurial_6.9.1.orig.tar.gz 8664016 SHA512:8e04d84b17145de2659c0a1114dba1dfc291ce3742b7057db1004b63caf7922f5bac865908cbd0065b05722707705e1181963651a9a02f1ee80bb70bee408bad
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_6.9.1.orig.tar.gz.asc' mercurial_6.9.1.orig.tar.gz.asc 659 SHA512:8e3b53b77b0e68021606bc03032fa31e65add1826f789465f840dc4ea60e538217e879f20467d83b2195161f6e98cd4b094b528871f0c2a7c22dd1e0e64ac976
-'http://archive.ubuntu.com/ubuntu/pool/universe/m/mercurial/mercurial_6.9.1-2.debian.tar.xz' mercurial_6.9.1-2.debian.tar.xz 55480 SHA512:4b3d32102382c1ec806dae91f7d0bb131856d9ad8c4704023cae8dab28d767cb96fa4a2a75bdfc6c50bc37bba30e6ecd1e141b20d264df2db416f260dbbc866a
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/mercurial/6.9.1-2/
+
 
 ### `dpkg` source package: `ncurses=6.5-2`
 
@@ -1959,13 +1938,13 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-defaults=3.13.1-1~exp2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.13.1-1%7eexp2.dsc' python3-defaults_3.13.1-1~exp2.dsc 2407 SHA512:ef37ef9b1226e511268736afadddd71b36c0c243818d82e82e9fc38086348462ccf062219bb970ebcd98ce59a3fcadba18780f896372048629cb128e0f4d48d5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.13.1-1%7eexp2.tar.gz' python3-defaults_3.13.1-1~exp2.tar.gz 147207 SHA512:48245f5b1a6abe94d94e7c835b3497158e7a444df7c2237e82ede7ab1ccca8954b74d56b98d0eb9b33592999c66a220f584bff5d917ba12f2f84dcca6dc38705
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3-defaults/3.13.1-1~exp2/
+
 
 ### `dpkg` source package: `python3.13=3.13.2-1`
 

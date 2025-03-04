@@ -93,15 +93,13 @@ Licenses: (parsed from: `/usr/share/doc/libattr1/copyright`)
 - `LGPL-2+`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris attr=1:2.5.2-2
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2-2.dsc' attr_2.5.2-2.dsc 2576 SHA512:6bde9b74c4504f9d6a044e6d78742b13372e73f7c1a4ff86cd2bde1d01a1910f77fe0d99890c32f884d448966da3a40f32ade428bf3839088466b5cb90b007b3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2.orig.tar.xz' attr_2.5.2.orig.tar.xz 334180 SHA512:f587ea544effb7cfed63b3027bf14baba2c2dbe3a9b6c0c45fc559f7e8cb477b3e9a4a826eae30f929409468c50d11f3e7dc6d2500f41e1af8662a7e96a30ef3
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2.orig.tar.xz.asc' attr_2.5.2.orig.tar.xz.asc 833 SHA512:16362013313d055dec307bcf755a9846f5153a78309a499f8cac4ff57a2154de2bc8f3b1400e81dba7a0bf0c67aa02a5d464898ed6e4aa721b64ec95fd313968
-'http://archive.ubuntu.com/ubuntu/pool/main/a/attr/attr_2.5.2-2.debian.tar.xz' attr_2.5.2-2.debian.tar.xz 26592 SHA512:f87d530fff2eb609291f7b71cb0fe92a487f976fbe75d434bc228f98baa830a82c76143b35bd1589f9bdeb1fcdfe3e7b481ab7415c7aa57fd5cb62ab3387b0c0
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/attr/1:2.5.2-2/
+
 
 ### `dpkg` source package: `audit=1:4.0.2-2ubuntu1`
 
@@ -337,14 +335,9 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `OpenLDAP`
 - `RSA-MD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg1-8build1
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-8build1.dsc' cyrus-sasl2_2.1.28+dfsg1-8build1.dsc 3435 SHA512:e1a9c803e98718087560762421201ee0b5979b06c0011b839af310c40156d97d1d95c8586240595bb96c0629073fe6fea0531e2519903c72a4f1f52639eae78b
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg1.orig.tar.xz 794540 SHA512:e94075d09b38a50138b782323de286deb7b15008064f07df4fa682e94367e829d9bfafef48d5478f730fef8fde536bcc6d54cab0452b76473a3c620b3dc18fa2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-8build1.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg1-8build1.debian.tar.xz 99048 SHA512:173e008c8176440d95f6d9d997124590c6fe74ee49ad08b263b5e149872b537f674524b269c8be448e0ae7932b1b4a4d19dec1d501db7ea9601d7895b6c3295a
-```
 
 ### `dpkg` source package: `dash=0.5.12-9ubuntu1`
 
@@ -786,15 +779,9 @@ Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris krb5=1.21.3-4ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.21.3-4ubuntu1.dsc' krb5_1.21.3-4ubuntu1.dsc 3782 SHA512:259b3d950e986c482d902625e5408e5d0febb393fd654d30c03b3c9b7ed00b481b8d47c0e1e388df402e053dd71881a1b0b6aa8bcab2d2dbc11391c57c1ba6fc
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz' krb5_1.21.3.orig.tar.gz 9136145 SHA512:87bc06607f4d95ff604169cea22180703a42d667af05f66f1569b8bd592670c42820b335e5c279e8b4f066d1e7da20f1948a1e4def7c5d295c170cbfc7f49c71
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.21.3.orig.tar.gz.asc' krb5_1.21.3.orig.tar.gz.asc 833 SHA512:8992a5f5247315b9846aa73be4ee1ea223c0231a52d5c6c28718b1f3e3b45d62e2dad4aa5543a83163d1369bb79886b6c1c22766f22d8aa2f6b2575c54d0075c
-'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.21.3-4ubuntu1.debian.tar.xz' krb5_1.21.3-4ubuntu1.debian.tar.xz 108772 SHA512:06f18203811f9f2c2634d3421be1dc6d1571cca969b904530a6b615e67d09ada51593e97a532670e74b4421eac1ad8afbb967222b7eb36368afcaf7af819f5d5
-```
 
 ### `dpkg` source package: `libassuan=3.0.1-2`
 

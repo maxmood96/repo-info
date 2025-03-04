@@ -476,20 +476,13 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `OpenLDAP`
 - `RSA-MD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg1-8
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-8.dsc' cyrus-sasl2_2.1.28+dfsg1-8.dsc 3223 SHA256:7c886aa8944aa704d5b0dd5923471d10ec1408a766e2766da3d51ce41916cfb8
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg1.orig.tar.xz 794540 SHA256:e796a5d85d1a85e1b433d43504e467f9075c7ebc0b45730a3996cf11b1deada4
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-8.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg1-8.debian.tar.xz 98980 SHA256:21fbc554dbc7fef34307bcae76679d608e8fbe3d60727a4c61b9da2108194a27
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg1-8/
 
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg1-8/ (for browsing the source)
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg1-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg1-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.12-12`
 
@@ -1451,20 +1444,13 @@ Licenses: (parsed from: `/usr/share/doc/liberror-perl/copyright`)
 - `GPL-1+`
 - `MIT/X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris liberror-perl=0.17029-2
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17029-2.dsc' liberror-perl_0.17029-2.dsc 2085 SHA256:48c6ca66e03144a8bec4f32b2419f34d70e8a00500b01ea3bb6a5cab0c03e164
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17029.orig.tar.gz' liberror-perl_0.17029.orig.tar.gz 33304 SHA256:1a23f7913032aed6d4b68321373a3899ca66590f4727391a091ec19c95bf7adc
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17029-2.debian.tar.xz' liberror-perl_0.17029-2.debian.tar.xz 4608 SHA256:60deb5d5cbc4b478f8db4cfa0ac6c512e85eea5fcd7fc7285c26a9942d3b8b67
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/liberror-perl/0.17029-2/
 
-- https://sources.debian.net/src/liberror-perl/0.17029-2/ (for browsing the source)
-- https://sources.debian.net/src/liberror-perl/0.17029-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/liberror-perl/0.17029-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.4.7-1`
 
@@ -2930,21 +2916,13 @@ Licenses: (parsed from: `/usr/share/doc/login.defs/copyright`, `/usr/share/doc/p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.17.2-5
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.17.2-5.dsc' shadow_4.17.2-5.dsc 2851 SHA256:8263a9ce7fe7eaa621305c52a1a2bb39da52bfd259d58b40a88f9839323cdabe
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.17.2.orig.tar.xz' shadow_4.17.2.orig.tar.xz 2320492 SHA256:a21cf0d34bffc4314cede01cff258689174fab30ca494ae8f45784d3d56c9849
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.17.2.orig.tar.xz.asc' shadow_4.17.2.orig.tar.xz.asc 488 SHA256:008f23f86b1dd9c8b7116f28cf03d0dfef696e79bf5a8213aa083bc13a48c997
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.17.2-5.debian.tar.xz' shadow_4.17.2-5.debian.tar.xz 168988 SHA256:20a3d23ec624c15892aaeccb1693dfed0470b63834c0ea870881c46d5f048f1d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.17.2-5/
 
-- https://sources.debian.net/src/shadow/1:4.17.2-5/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.17.2-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.17.2-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sqlite3=3.46.1-1`
 
@@ -3062,20 +3040,13 @@ Licenses: (parsed from: `/usr/share/doc/sysvinit-utils/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysvinit=3.14-1
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.14-1.dsc' sysvinit_3.14-1.dsc 2361 SHA256:5dd2c98a1abdb0857c7b870b29a01741a26649c77eb855c3dc8a9d1fbb8ca74b
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.14.orig.tar.gz' sysvinit_3.14.orig.tar.gz 516357 SHA256:4e90a148707cf64113fc97343c053f9c0c9589551936b053999dcc69731f295f
-'http://deb.debian.org/debian/pool/main/s/sysvinit/sysvinit_3.14-1.debian.tar.xz' sysvinit_3.14-1.debian.tar.xz 120812 SHA256:c23c9bfbae02404ea54f21811af12f635518fedb01806aa888f718aa8b9a7540
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/sysvinit/3.14-1/
 
-- https://sources.debian.net/src/sysvinit/3.14-1/ (for browsing the source)
-- https://sources.debian.net/src/sysvinit/3.14-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/sysvinit/3.14-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tar=1.35+dfsg-3.1`
 

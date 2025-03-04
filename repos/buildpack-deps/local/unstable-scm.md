@@ -128,19 +128,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.9.30
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.30.dsc' apt_2.9.30.dsc 3162 SHA256:a422eaa28622926bbbffc93dacac6ce649726d21a513fe9b7c791b7f4352f5ec
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.30.tar.xz' apt_2.9.30.tar.xz 2402004 SHA256:2f98d5428ce89fc5a26143f6a5a5c7c5ec93beea2d18a6370465bdcd326de82b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.9.30/
 
-- https://sources.debian.net/src/apt/2.9.30/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.9.30/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.9.30/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -211,19 +205,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.6
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.6.dsc' base-files_13.6.dsc 1100 SHA256:f5fd18c61694f108b0f6fe0387d89c5eb581fb445db6253fac5f27eb26779d37
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.6.tar.xz' base-files_13.6.tar.xz 68264 SHA256:ebe8647287f951ebf5f6ac94067a4cf14bf61752ca0ecc342245d13b1c520258
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/13.6/
 
-- https://sources.debian.net/src/base-files/13.6/ (for browsing the source)
-- https://sources.debian.net/src/base-files/13.6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/13.6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.6`
 
@@ -485,20 +473,13 @@ Licenses: (parsed from: `/usr/share/doc/libsasl2-2/copyright`, `/usr/share/doc/l
 - `OpenLDAP`
 - `RSA-MD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cyrus-sasl2=2.1.28+dfsg1-8
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-8.dsc' cyrus-sasl2_2.1.28+dfsg1-8.dsc 3223 SHA256:7c886aa8944aa704d5b0dd5923471d10ec1408a766e2766da3d51ce41916cfb8
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1.orig.tar.xz' cyrus-sasl2_2.1.28+dfsg1.orig.tar.xz 794540 SHA256:e796a5d85d1a85e1b433d43504e467f9075c7ebc0b45730a3996cf11b1deada4
-'http://deb.debian.org/debian/pool/main/c/cyrus-sasl2/cyrus-sasl2_2.1.28%2bdfsg1-8.debian.tar.xz' cyrus-sasl2_2.1.28+dfsg1-8.debian.tar.xz 98980 SHA256:21fbc554dbc7fef34307bcae76679d608e8fbe3d60727a4c61b9da2108194a27
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg1-8/
 
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg1-8/ (for browsing the source)
-- https://sources.debian.net/src/cyrus-sasl2/2.1.28+dfsg1-8/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cyrus-sasl2/2.1.28+dfsg1-8/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dash=0.5.12-12`
 
@@ -1452,20 +1433,13 @@ Licenses: (parsed from: `/usr/share/doc/liberror-perl/copyright`)
 - `GPL-1+`
 - `MIT/X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris liberror-perl=0.17029-2
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17029-2.dsc' liberror-perl_0.17029-2.dsc 2085 SHA256:48c6ca66e03144a8bec4f32b2419f34d70e8a00500b01ea3bb6a5cab0c03e164
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17029.orig.tar.gz' liberror-perl_0.17029.orig.tar.gz 33304 SHA256:1a23f7913032aed6d4b68321373a3899ca66590f4727391a091ec19c95bf7adc
-'http://deb.debian.org/debian/pool/main/libe/liberror-perl/liberror-perl_0.17029-2.debian.tar.xz' liberror-perl_0.17029-2.debian.tar.xz 4608 SHA256:60deb5d5cbc4b478f8db4cfa0ac6c512e85eea5fcd7fc7285c26a9942d3b8b67
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/liberror-perl/0.17029-2/
 
-- https://sources.debian.net/src/liberror-perl/0.17029-2/ (for browsing the source)
-- https://sources.debian.net/src/liberror-perl/0.17029-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/liberror-perl/0.17029-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.4.7-1`
 
@@ -2116,21 +2090,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=6.9.1-2
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.9.1-2.dsc' mercurial_6.9.1-2.dsc 2806 SHA256:3ca53b68342a801415735297630f56764f0b07a0fd58d0d3c3e3a782e391c39d
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.9.1.orig.tar.gz' mercurial_6.9.1.orig.tar.gz 8664016 SHA256:e577577ee9a97a9f84d3c34d53ccb8b9354263d6ab96447525094f3e0a567270
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.9.1.orig.tar.gz.asc' mercurial_6.9.1.orig.tar.gz.asc 659 SHA256:52eff730c93230dca6ead36d28bb57438b6590598a3b6cb57d7c30189022ff5d
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.9.1-2.debian.tar.xz' mercurial_6.9.1-2.debian.tar.xz 55480 SHA256:944d505c8045c85e4b90cd550b2c01f9d387d1786074ead1e9c552f0e2269d04
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/6.9.1-2/
 
-- https://sources.debian.net/src/mercurial/6.9.1-2/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/6.9.1-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/6.9.1-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.5+20250216-1`
 
@@ -2272,20 +2238,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp3-9/copyright`)
 - `GPL-3+ with Autoconf generic exception`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp3=1.6.0-2
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.6.0-2.dsc' nghttp3_1.6.0-2.dsc 1355 SHA256:4c12029b593f19c412f0484a05b93d1a7b755b82eb7d0f9d1f49f7092aac1dba
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.6.0.orig.tar.xz' nghttp3_1.6.0.orig.tar.xz 392480 SHA256:eaa901954bc494034d3738ef19130de69387d6a3da029044c60d9dae91792a8d
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.6.0-2.debian.tar.xz' nghttp3_1.6.0-2.debian.tar.xz 4568 SHA256:a4156b7c2c44d650d15025811b882bcd038ca977710a0b909842ee2e34c92180
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp3/1.6.0-2/
 
-- https://sources.debian.net/src/nghttp3/1.6.0-2/ (for browsing the source)
-- https://sources.debian.net/src/nghttp3/1.6.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp3/1.6.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ngtcp2=1.9.1-1`
 
@@ -2307,20 +2266,13 @@ Licenses: (parsed from: `/usr/share/doc/libngtcp2-16/copyright`, `/usr/share/doc
 - `GPL-3+ with Autoconf generic exception`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ngtcp2=1.9.1-1
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.9.1-1.dsc' ngtcp2_1.9.1-1.dsc 1717 SHA256:a9a2677b4045581857a9255f84304541288219205f3e651fa740aa4c2fd442b5
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.9.1.orig.tar.gz' ngtcp2_1.9.1.orig.tar.gz 1110281 SHA256:0d8ebc929d5aa444d848ac7ae971cb3cadaba7ccec7db21f3117fc7167e582c3
-'http://deb.debian.org/debian/pool/main/n/ngtcp2/ngtcp2_1.9.1-1.debian.tar.xz' ngtcp2_1.9.1-1.debian.tar.xz 6144 SHA256:01397236b9361f68d1b1f688e59a8d66f9af9da4553ca43eb4c83f865c3d6487
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ngtcp2/1.9.1-1/
 
-- https://sources.debian.net/src/ngtcp2/1.9.1-1/ (for browsing the source)
-- https://sources.debian.net/src/ngtcp2/1.9.1-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ngtcp2/1.9.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `npth=1.8-2`
 
