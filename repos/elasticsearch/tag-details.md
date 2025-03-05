@@ -270,12 +270,14 @@ $ docker pull elasticsearch@sha256:c313ff7c830e1e09ccf30164de34db52281bf4cc226d5
 ## `elasticsearch:8.16.5`
 
 ```console
-$ docker pull elasticsearch@sha256:dc5f014ee6880f0ad9b58f45eb0aebfa1f7f23193db1c6f9550fa56a4e837a3d
+$ docker pull elasticsearch@sha256:8b80a09e3ca1b96d21a249139f983edcd812a055ea54b1dcc722d2da764869c0
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 2
+-	Platforms: 4
 	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
 	-	unknown; unknown
 
 ### `elasticsearch:8.16.5` - linux; amd64
@@ -406,15 +408,145 @@ $ docker pull elasticsearch@sha256:a977c4ff5b26ac18cde7e19ad8601e6ebc73794e43631
 		Size: 38.2 KB (38215 bytes)  
 		MIME: application/vnd.in-toto+json
 
+### `elasticsearch:8.16.5` - linux; arm64 variant v8
+
+```console
+$ docker pull elasticsearch@sha256:f4b03f61975606e117505e63440fa2b519552e8f717839cf7c817c9ff1ab1390
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **526.3 MB (526322603 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:35148cf1943c3b4dfca533c2a116407f31653ec9002967c22e672e7b7c85a376`
+-	Entrypoint: `["\/bin\/tini","--","\/usr\/local\/bin\/docker-entrypoint.sh"]`
+-	Default Command: `["eswrapper"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
+CMD ["/bin/bash"]
+# Tue, 04 Mar 2025 09:16:27 GMT
+RUN yes no | dpkg-reconfigure dash &&     for iter in 1 2 3 4 5 6 7 8 9 10; do       export DEBIAN_FRONTEND=noninteractive &&       apt-get update &&       apt-get upgrade -y &&       apt-get install -y --no-install-recommends         ca-certificates curl netcat p11-kit unzip zip  &&       apt-get clean &&       rm -rf /var/lib/apt/lists/* &&       exit_code=0 && break ||         exit_code=$? && echo "apt-get error: retry $iter in 10s" && sleep 10;     done;     exit $exit_code # buildkit
+# Tue, 04 Mar 2025 09:16:27 GMT
+RUN groupadd -g 1000 elasticsearch &&     adduser --uid 1000 --gid 1000 --home /usr/share/elasticsearch elasticsearch &&     adduser elasticsearch root &&     chown -R 0:0 /usr/share/elasticsearch # buildkit
+# Tue, 04 Mar 2025 09:16:27 GMT
+ENV ELASTIC_CONTAINER=true
+# Tue, 04 Mar 2025 09:16:27 GMT
+WORKDIR /usr/share/elasticsearch
+# Tue, 04 Mar 2025 09:16:27 GMT
+COPY --chown=0:0 /usr/share/elasticsearch /usr/share/elasticsearch # buildkit
+# Tue, 04 Mar 2025 09:16:27 GMT
+COPY --chown=0:0 /bin/tini /bin/tini # buildkit
+# Tue, 04 Mar 2025 09:16:27 GMT
+ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 04 Mar 2025 09:16:27 GMT
+ENV SHELL=/bin/bash
+# Tue, 04 Mar 2025 09:16:27 GMT
+COPY bin/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
+# Tue, 04 Mar 2025 09:16:27 GMT
+RUN chmod g=u /etc/passwd &&     chmod 0555 /usr/local/bin/docker-entrypoint.sh &&     find / -xdev -perm -4000 -exec chmod ug-s {} + &&     chmod 0775 /usr/share/elasticsearch &&     chown elasticsearch bin config config/jvm.options.d data logs plugins # buildkit
+# Tue, 04 Mar 2025 09:16:27 GMT
+COPY bin/docker-openjdk /etc/ca-certificates/update.d/docker-openjdk # buildkit
+# Tue, 04 Mar 2025 09:16:27 GMT
+RUN /etc/ca-certificates/update.d/docker-openjdk # buildkit
+# Tue, 04 Mar 2025 09:16:27 GMT
+EXPOSE map[9200/tcp:{} 9300/tcp:{}]
+# Tue, 04 Mar 2025 09:16:27 GMT
+LABEL org.label-schema.build-date=2025-02-27T22:08:27.576465563Z org.label-schema.license=Elastic-License-2.0 org.label-schema.name=Elasticsearch org.label-schema.schema-version=1.0 org.label-schema.url=https://www.elastic.co/products/elasticsearch org.label-schema.usage=https://www.elastic.co/guide/en/elasticsearch/reference/index.html org.label-schema.vcs-ref=23fb957e211507e96c6295abfb74d12abff3a2ea org.label-schema.vcs-url=https://github.com/elastic/elasticsearch org.label-schema.vendor=Elastic org.label-schema.version=8.16.5 org.opencontainers.image.created=2025-02-27T22:08:27.576465563Z org.opencontainers.image.documentation=https://www.elastic.co/guide/en/elasticsearch/reference/index.html org.opencontainers.image.licenses=Elastic-License-2.0 org.opencontainers.image.revision=23fb957e211507e96c6295abfb74d12abff3a2ea org.opencontainers.image.source=https://github.com/elastic/elasticsearch org.opencontainers.image.title=Elasticsearch org.opencontainers.image.url=https://www.elastic.co/products/elasticsearch org.opencontainers.image.vendor=Elastic org.opencontainers.image.version=8.16.5
+# Tue, 04 Mar 2025 09:16:27 GMT
+ENTRYPOINT ["/bin/tini" "--" "/usr/local/bin/docker-entrypoint.sh"]
+# Tue, 04 Mar 2025 09:16:27 GMT
+CMD ["eswrapper"]
+# Tue, 04 Mar 2025 09:16:27 GMT
+USER 1000:0
+```
+
+-	Layers:
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e20dbb8c40e5657f9691e9ff716abe4219b3e1a83469ae037b488810ec6ade2c`  
+		Last Modified: Tue, 04 Mar 2025 22:13:15 GMT  
+		Size: 13.8 MB (13751920 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9bc7cea61360ff5a8abda9a11d4493b25c61b9155be98d22d0c24fa1c090735d`  
+		Last Modified: Tue, 04 Mar 2025 22:13:15 GMT  
+		Size: 4.3 KB (4320 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f008d645da4b3ef26fed1498ef9b3ef867bd109954ba77e7f5b38b921f289649`  
+		Last Modified: Tue, 04 Mar 2025 22:13:25 GMT  
+		Size: 486.3 MB (486279838 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:ce4501204ea0506f0e2161be36063d600e2607a5c3e15578a4d226d769f8439b`  
+		Last Modified: Tue, 04 Mar 2025 22:13:15 GMT  
+		Size: 9.1 KB (9096 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aaa75b23735dee88cf309153cef460a652c8b85caa365893c280b9382694c3bb`  
+		Last Modified: Tue, 04 Mar 2025 22:13:16 GMT  
+		Size: 1.7 KB (1717 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:dd8db179af8beb6b916075aed7188e630ab21bc9c8f81e14812494a7c5bb3f42`  
+		Last Modified: Tue, 04 Mar 2025 22:13:16 GMT  
+		Size: 185.9 KB (185914 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:db9eb1562075cab0e530ed99c532547ea2aa85fc7a662dcdbd1a864a240e677d`  
+		Last Modified: Tue, 04 Mar 2025 22:13:17 GMT  
+		Size: 406.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2677cd37d27a1175934049d97e5bbbdbea49a9cf23d8bbfba81522824abecd3f`  
+		Last Modified: Tue, 04 Mar 2025 22:13:17 GMT  
+		Size: 115.5 KB (115532 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `elasticsearch:8.16.5` - unknown; unknown
+
+```console
+$ docker pull elasticsearch@sha256:687543edddaefd44f660cd217de84bd27eb4c2e91262517ed8441f29939a8335
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.0 MB (3039474 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:08508f329f05b31713992ce6ff3b53e75542fc9ef7cdf8e0cc4df921a4cd44eb`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:0eb825f97029b39201f67b1a22dc4c94f67666d6c14001d8994fe82e747296c8`  
+		Last Modified: Tue, 04 Mar 2025 22:13:15 GMT  
+		Size: 3.0 MB (3001056 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:6e02aef094a72118618bf35641015f9bc7011afd6b8ae78e6d07227746b758b8`  
+		Last Modified: Tue, 04 Mar 2025 22:13:15 GMT  
+		Size: 38.4 KB (38418 bytes)  
+		MIME: application/vnd.in-toto+json
+
 ## `elasticsearch:8.17.3`
 
 ```console
-$ docker pull elasticsearch@sha256:4ff0bde47c709a02489fd0fd3f07c834c92826c0d2bcbae6fbdd32dee2872b9b
+$ docker pull elasticsearch@sha256:2cc40b15dff85281ac804e7ff27cbc07b31fdd542e94ea7a2bdb6470e3b6bb68
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 2
+-	Platforms: 4
 	-	linux; amd64
+	-	unknown; unknown
+	-	linux; arm64 variant v8
 	-	unknown; unknown
 
 ### `elasticsearch:8.17.3` - linux; amd64
@@ -543,4 +675,132 @@ $ docker pull elasticsearch@sha256:1d37aa1a7628d6c04281a500e5d8e8f6586edf320de15
 	-	`sha256:ddb58c0de0bd4d6796e734c1c639739b2941ac638f4b491578ce45e155c12480`  
 		Last Modified: Tue, 04 Mar 2025 21:58:57 GMT  
 		Size: 38.2 KB (38215 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `elasticsearch:8.17.3` - linux; arm64 variant v8
+
+```console
+$ docker pull elasticsearch@sha256:25799bfbedb873b3f07f8534ba99e08dabadb447da8288c83c44ca650a95994e
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **527.2 MB (527240283 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:332cd06f5d2a7fcb8bbd0806511297e580ce9da81701a712ed5742ef32812862`
+-	Entrypoint: `["\/bin\/tini","--","\/usr\/local\/bin\/docker-entrypoint.sh"]`
+-	Default Command: `["eswrapper"]`
+
+```dockerfile
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG RELEASE
+# Fri, 11 Oct 2024 03:39:45 GMT
+ARG LAUNCHPAD_BUILD_ARCH
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.ref.name=ubuntu
+# Fri, 11 Oct 2024 03:39:45 GMT
+LABEL org.opencontainers.image.version=20.04
+# Fri, 11 Oct 2024 03:39:47 GMT
+ADD file:8537b4db344382b39d669af27cd94ec0f870ceafe58c67ee54e3f9b38fb8d671 in / 
+# Fri, 11 Oct 2024 03:39:47 GMT
+CMD ["/bin/bash"]
+# Tue, 04 Mar 2025 09:12:50 GMT
+RUN yes no | dpkg-reconfigure dash &&     for iter in 1 2 3 4 5 6 7 8 9 10; do       export DEBIAN_FRONTEND=noninteractive &&       apt-get update &&       apt-get upgrade -y &&       apt-get install -y --no-install-recommends         ca-certificates curl netcat p11-kit unzip zip  &&       apt-get clean &&       rm -rf /var/lib/apt/lists/* &&       exit_code=0 && break ||         exit_code=$? && echo "apt-get error: retry $iter in 10s" && sleep 10;     done;     exit $exit_code # buildkit
+# Tue, 04 Mar 2025 09:12:50 GMT
+RUN groupadd -g 1000 elasticsearch &&     adduser --uid 1000 --gid 1000 --home /usr/share/elasticsearch elasticsearch &&     adduser elasticsearch root &&     chown -R 0:0 /usr/share/elasticsearch # buildkit
+# Tue, 04 Mar 2025 09:12:50 GMT
+ENV ELASTIC_CONTAINER=true
+# Tue, 04 Mar 2025 09:12:50 GMT
+WORKDIR /usr/share/elasticsearch
+# Tue, 04 Mar 2025 09:12:50 GMT
+COPY --chown=0:0 /usr/share/elasticsearch /usr/share/elasticsearch # buildkit
+# Tue, 04 Mar 2025 09:12:50 GMT
+COPY --chown=0:0 /bin/tini /bin/tini # buildkit
+# Tue, 04 Mar 2025 09:12:50 GMT
+ENV PATH=/usr/share/elasticsearch/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# Tue, 04 Mar 2025 09:12:50 GMT
+ENV SHELL=/bin/bash
+# Tue, 04 Mar 2025 09:12:50 GMT
+COPY bin/docker-entrypoint.sh /usr/local/bin/docker-entrypoint.sh # buildkit
+# Tue, 04 Mar 2025 09:12:50 GMT
+RUN chmod g=u /etc/passwd &&     chmod 0555 /usr/local/bin/docker-entrypoint.sh &&     find / -xdev -perm -4000 -exec chmod ug-s {} + &&     chmod 0775 /usr/share/elasticsearch &&     chown elasticsearch bin config config/jvm.options.d data logs plugins # buildkit
+# Tue, 04 Mar 2025 09:12:50 GMT
+COPY bin/docker-openjdk /etc/ca-certificates/update.d/docker-openjdk # buildkit
+# Tue, 04 Mar 2025 09:12:50 GMT
+RUN /etc/ca-certificates/update.d/docker-openjdk # buildkit
+# Tue, 04 Mar 2025 09:12:50 GMT
+EXPOSE map[9200/tcp:{} 9300/tcp:{}]
+# Tue, 04 Mar 2025 09:12:50 GMT
+LABEL org.label-schema.build-date=2025-02-28T10:07:26.089129809Z org.label-schema.license=Elastic-License-2.0 org.label-schema.name=Elasticsearch org.label-schema.schema-version=1.0 org.label-schema.url=https://www.elastic.co/products/elasticsearch org.label-schema.usage=https://www.elastic.co/guide/en/elasticsearch/reference/index.html org.label-schema.vcs-ref=a091390de485bd4b127884f7e565c0cad59b10d2 org.label-schema.vcs-url=https://github.com/elastic/elasticsearch org.label-schema.vendor=Elastic org.label-schema.version=8.17.3 org.opencontainers.image.created=2025-02-28T10:07:26.089129809Z org.opencontainers.image.documentation=https://www.elastic.co/guide/en/elasticsearch/reference/index.html org.opencontainers.image.licenses=Elastic-License-2.0 org.opencontainers.image.revision=a091390de485bd4b127884f7e565c0cad59b10d2 org.opencontainers.image.source=https://github.com/elastic/elasticsearch org.opencontainers.image.title=Elasticsearch org.opencontainers.image.url=https://www.elastic.co/products/elasticsearch org.opencontainers.image.vendor=Elastic org.opencontainers.image.version=8.17.3
+# Tue, 04 Mar 2025 09:12:50 GMT
+ENTRYPOINT ["/bin/tini" "--" "/usr/local/bin/docker-entrypoint.sh"]
+# Tue, 04 Mar 2025 09:12:50 GMT
+CMD ["eswrapper"]
+# Tue, 04 Mar 2025 09:12:50 GMT
+USER 1000:0
+```
+
+-	Layers:
+	-	`sha256:1b9f3c55f9d4aa5c52eb67a4cb7d0f4726ab85a413b50e3e3fe788befce3d297`  
+		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
+		Size: 26.0 MB (25973828 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e20dbb8c40e5657f9691e9ff716abe4219b3e1a83469ae037b488810ec6ade2c`  
+		Last Modified: Tue, 04 Mar 2025 22:13:15 GMT  
+		Size: 13.8 MB (13751920 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9bc7cea61360ff5a8abda9a11d4493b25c61b9155be98d22d0c24fa1c090735d`  
+		Last Modified: Tue, 04 Mar 2025 22:13:15 GMT  
+		Size: 4.3 KB (4320 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:e4eabb4d072473bcc8ad9f8309311cff29e704e111cb6d59e74812946e7f1f69`  
+		Last Modified: Tue, 04 Mar 2025 22:15:54 GMT  
+		Size: 487.2 MB (487197513 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:89fc15b13be8a469f3752cfd83812f8b019830a1e1044fff32b06fdaf5877dbd`  
+		Last Modified: Tue, 04 Mar 2025 22:15:44 GMT  
+		Size: 9.1 KB (9096 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:9847f1c8a7d96531e6b55f0f3a84af00dc102800cf7ef92da1e68cccc50c7592`  
+		Last Modified: Tue, 04 Mar 2025 22:15:44 GMT  
+		Size: 1.7 KB (1718 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:b58531df304ce67536e55d9419d922063a0dec501e48a9480d98c364654cde13`  
+		Last Modified: Tue, 04 Mar 2025 22:15:45 GMT  
+		Size: 185.9 KB (185915 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:917e7c84aa9fa325d2b1fb66dda244f24785b2fdde4f8127fe89edf6ae6509ff`  
+		Last Modified: Tue, 04 Mar 2025 22:15:45 GMT  
+		Size: 405.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:17932c3263b293e6755f53fef3fd6ba84f0854d317d01a26a2839a02c8f74951`  
+		Last Modified: Tue, 04 Mar 2025 22:15:46 GMT  
+		Size: 115.5 KB (115536 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `elasticsearch:8.17.3` - unknown; unknown
+
+```console
+$ docker pull elasticsearch@sha256:1e67d7edfa6d683c83ddaffc2fa458d57d3b01092600a8962c3ec108aa264667
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **3.0 MB (3045674 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:bda90956687b58a38fb0257c18623f59232d40c64f92036ba60f23d3d2dd6afc`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:54a7fb62d4bf293975d4b541d844fe97122fc31bfbf1b0a9565d10c20237df9f`  
+		Last Modified: Tue, 04 Mar 2025 22:15:45 GMT  
+		Size: 3.0 MB (3007256 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:3935b3e42b7787d06fb05aca757511a23ac5d11e957a7b4152ba34233dfc7df1`  
+		Last Modified: Tue, 04 Mar 2025 22:15:44 GMT  
+		Size: 38.4 KB (38418 bytes)  
 		MIME: application/vnd.in-toto+json
