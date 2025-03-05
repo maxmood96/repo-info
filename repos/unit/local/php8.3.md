@@ -1,9 +1,9 @@
-# `unit:1.34.1-php8.3`
+# `unit:1.34.2-php8.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fa8a7fbe558060c19a97d120781ad3a752fa1ca33d7a1accfb55e5eb83ea8995`
-- Created: `2025-01-10T21:01:46Z`
+- Image ID: `sha256:d0adfb81b7be7cf0b8a44ccc208ee63eede8c62855c06c0833506754d2e8452b`
+- Created: `2025-03-03T18:37:38Z`
 - Virtual Size: ~ 592.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -28,7 +28,7 @@
   - `org.opencontainers.image.title=Unit (php8.3)`
   - `org.opencontainers.image.url=https://unit.nginx.org`
   - `org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>`
-  - `org.opencontainers.image.version=1.34.1`
+  - `org.opencontainers.image.version=1.34.2`
 
 ## `dpkg` (`.deb`-based packages)
 

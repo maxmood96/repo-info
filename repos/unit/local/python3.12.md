@@ -1,9 +1,9 @@
-# `unit:1.34.1-python3.12`
+# `unit:1.34.2-python3.12`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8c21cc0fdc35bac7916ec422734c217677c07561643650012836c4a5d7f7c8cd`
-- Created: `2025-01-10T21:01:46Z`
+- Image ID: `sha256:870009de19c664a1ae8e66b2880aba00560c4e2dc0ad9772492fa521d4dba1f0`
+- Created: `2025-03-03T18:37:38Z`
 - Virtual Size: ~ 1.07 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,7 +22,7 @@
   - `org.opencontainers.image.title=Unit (python3.12)`
   - `org.opencontainers.image.url=https://unit.nginx.org`
   - `org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>`
-  - `org.opencontainers.image.version=1.34.1`
+  - `org.opencontainers.image.version=1.34.2`
 
 ## `dpkg` (`.deb`-based packages)
 

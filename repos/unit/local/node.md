@@ -1,9 +1,9 @@
-# `unit:1.34.1-node22`
+# `unit:1.34.2-node22`
 
 ## Docker Metadata
 
-- Image ID: `sha256:d3bc3e75646bc2244e81649f23b369a63eeb33852cf7de3708c699d6f4c1d734`
-- Created: `2025-01-10T21:01:46Z`
+- Image ID: `sha256:27e21f4536f92e71d2d1c6893082361d50f0cd67d45dd98361e554c0c2cd4797`
+- Created: `2025-03-03T18:37:38Z`
 - Virtual Size: ~ 1.19 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -20,7 +20,7 @@
   - `org.opencontainers.image.title=Unit (node22)`
   - `org.opencontainers.image.url=https://unit.nginx.org`
   - `org.opencontainers.image.vendor=NGINX Docker Maintainers <docker-maint@nginx.com>`
-  - `org.opencontainers.image.version=1.34.1`
+  - `org.opencontainers.image.version=1.34.2`
 
 ## `dpkg` (`.deb`-based packages)
 
