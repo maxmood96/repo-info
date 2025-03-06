@@ -1,7 +1,7 @@
 ## `gradle:7-graal`
 
 ```console
-$ docker pull gradle@sha256:403cec3f897376289bc5e2c2d15d97cc71fcd2e003bb8803b5aabba79069fea4
+$ docker pull gradle@sha256:6f7177624c10810ee0c34a9e3c03ca8752d724713455607639343ba42b152f9f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,13 +14,13 @@ $ docker pull gradle@sha256:403cec3f897376289bc5e2c2d15d97cc71fcd2e003bb8803b5aa
 ### `gradle:7-graal` - linux; amd64
 
 ```console
-$ docker pull gradle@sha256:a966ab552abfdac7d8d6caeda20c9c976f3da1f491c87df9561c77ddba1a8e55
+$ docker pull gradle@sha256:30c00981c2254bcd901794608ad40860b556b647b0e4d7b7a97e000192b14ee8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **599.4 MB (599361086 bytes)**  
+-	Total Size: **600.4 MB (600438614 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4839ad990d77021ea9e9603b9698149f2758c40840492b92e1a831fdf473a22c`
+-	Image ID: `sha256:f603dabeaa87ac6bbcbec31bcd4ead385ed5d416fa610beaa6246aff64119407`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -51,9 +51,9 @@ RUN set -o errexit -o nounset     && export DEBIAN_FRONTEND=noninteractive     &
 # Tue, 18 Feb 2025 21:10:40 GMT
 ENV JAVA_HOME=/opt/java/graalvm
 # Tue, 18 Feb 2025 21:10:40 GMT
-ENV JAVA_VERSION=21.0.2
+ENV JAVA_VERSION=17.0.9
 # Tue, 18 Feb 2025 21:10:40 GMT
-RUN set -o errexit -o nounset     && mkdir /opt/java         && echo "Downloading GraalVM"     && GRAALVM_AMD64_DOWNLOAD_SHA256=b048069aaa3a99b84f5b957b162cc181a32a4330cbc35402766363c5be76ae48     && GRAALVM_AARCH64_DOWNLOAD_SHA256=a34be691ce68f0acf4655c7c6c63a9a49ed276a11859d7224fd94fc2f657cd7a     && ARCHITECTURE=$(dpkg --print-architecture)     && if [ "${ARCHITECTURE}" = "amd64" ]; then GRAALVM_ARCHITECTURE=linux-x64; fi     && if [ "${ARCHITECTURE}" = "arm64" ]; then GRAALVM_ARCHITECTURE=linux-aarch64; fi     && GRAALVM_PKG=https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-${JAVA_VERSION}/graalvm-community-jdk-${JAVA_VERSION}_${GRAALVM_ARCHITECTURE}_bin.tar.gz     && wget --no-verbose --output-document=graalvm.tar.gz "${GRAALVM_PKG}"         && echo "Checking GraalVM download hash"     && if [ "${ARCHITECTURE}" = "amd64" ]; then GRAALVM_DOWNLOAD_SHA256="${GRAALVM_AMD64_DOWNLOAD_SHA256}"; fi     && if [ "${ARCHITECTURE}" = "arm64" ]; then GRAALVM_DOWNLOAD_SHA256="${GRAALVM_AARCH64_DOWNLOAD_SHA256}"; fi     && echo "${GRAALVM_DOWNLOAD_SHA256} *graalvm.tar.gz" | sha256sum --check -         && echo "Installing GraalVM"     && tar --extract --gunzip --file graalvm.tar.gz     && rm graalvm.tar.gz     && mv graalvm-* "${JAVA_HOME}"     && for bin in "$JAVA_HOME/bin/"*; do         base="$(basename "$bin")";         [ ! -e "/usr/bin/$base" ];         update-alternatives --install "/usr/bin/${base}" "${base}" "${bin}" 1;     done         && echo "Testing GraalVM installation"     && java --version     && javac --version     && native-image --version # buildkit
+RUN set -o errexit -o nounset     && mkdir /opt/java         && echo "Downloading GraalVM"     && GRAALVM_AMD64_DOWNLOAD_SHA256=e47ba7229cef02393e19d5b8f46f7f1cab4829dd17bfe84d5431fc8ff0e22a96     && GRAALVM_AARCH64_DOWNLOAD_SHA256=c3281b21f5220c2f76cf6fa0d646bc42e2d729af2c022bb06e557a613ba16102     && ARCHITECTURE=$(dpkg --print-architecture)     && if [ "${ARCHITECTURE}" = "amd64" ]; then GRAALVM_ARCHITECTURE=linux-x64; fi     && if [ "${ARCHITECTURE}" = "arm64" ]; then GRAALVM_ARCHITECTURE=linux-aarch64; fi     && GRAALVM_PKG=https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-${JAVA_VERSION}/graalvm-community-jdk-${JAVA_VERSION}_${GRAALVM_ARCHITECTURE}_bin.tar.gz     && wget --no-verbose --output-document=graalvm.tar.gz "${GRAALVM_PKG}"         && echo "Checking GraalVM download hash"     && if [ "${ARCHITECTURE}" = "amd64" ]; then GRAALVM_DOWNLOAD_SHA256="${GRAALVM_AMD64_DOWNLOAD_SHA256}"; fi     && if [ "${ARCHITECTURE}" = "arm64" ]; then GRAALVM_DOWNLOAD_SHA256="${GRAALVM_AARCH64_DOWNLOAD_SHA256}"; fi     && echo "${GRAALVM_DOWNLOAD_SHA256} *graalvm.tar.gz" | sha256sum --check -         && echo "Installing GraalVM"     && tar --extract --gunzip --file graalvm.tar.gz     && rm graalvm.tar.gz     && mv graalvm-* "${JAVA_HOME}"     && for bin in "$JAVA_HOME/bin/"*; do         base="$(basename "$bin")";         [ ! -e "/usr/bin/$base" ];         update-alternatives --install "/usr/bin/${base}" "${base}" "${bin}" 1;     done         && echo "Testing GraalVM installation"     && java --version     && javac --version     && gu --version     && native-image --version # buildkit
 # Tue, 18 Feb 2025 21:10:40 GMT
 ENV GRADLE_VERSION=7.6.4
 # Tue, 18 Feb 2025 21:10:40 GMT
@@ -75,65 +75,65 @@ USER root
 		Last Modified: Mon, 27 Jan 2025 05:09:50 GMT  
 		Size: 29.8 MB (29754290 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ae903afd11189a4b62ffe48f5c6800bb15711122af2416d3c0d3fed9ded0b46`  
-		Last Modified: Wed, 19 Feb 2025 21:30:17 GMT  
-		Size: 1.3 KB (1287 bytes)  
+	-	`sha256:bb8903174c68bd9ca2379537f63c670627ff1a33cce3b2cd62d73fdc8d606781`  
+		Last Modified: Wed, 19 Feb 2025 21:30:39 GMT  
+		Size: 1.3 KB (1288 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9da2395b927357266c0a34dceb54939d6eca48ef5f93adbffafc9eaf5a194026`  
-		Last Modified: Wed, 19 Feb 2025 21:30:56 GMT  
-		Size: 156.8 MB (156833386 bytes)  
+	-	`sha256:65570fcbfc9af5f2eec3bd78c7c1a77ee345538ca8d303394cd85359efa5f8ed`  
+		Last Modified: Wed, 19 Feb 2025 21:30:42 GMT  
+		Size: 156.8 MB (156833465 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c4543ad448ba94f5c5709ca025af67fa81971d689f4f696b11db27f328cd7b5`  
-		Last Modified: Wed, 19 Feb 2025 21:30:58 GMT  
-		Size: 290.0 MB (289986694 bytes)  
+	-	`sha256:887565001498dbb550a60058ad5b6eff7942043efe8643b1cd86fe940999cbc1`  
+		Last Modified: Wed, 19 Feb 2025 21:30:44 GMT  
+		Size: 291.1 MB (291064118 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e39ceabbfaed9ad4541d8b93ec984d534360c96cd14ff01c8c235864120d90cb`  
-		Last Modified: Wed, 19 Feb 2025 21:30:56 GMT  
-		Size: 122.7 MB (122730502 bytes)  
+	-	`sha256:9a023fe32d85986617743e16bb0a29f8b1e696262eddbff84592886d2a5143ae`  
+		Last Modified: Wed, 19 Feb 2025 21:30:41 GMT  
+		Size: 122.7 MB (122730524 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6288e0da753fdedd45cba37db85611ccc697dff626ec36e540e6d7283ea2f8f4`  
-		Last Modified: Wed, 19 Feb 2025 21:30:52 GMT  
-		Size: 54.9 KB (54895 bytes)  
+	-	`sha256:ad5190e85c79a8dcec335626a4028a38d88493cc2bb007fc73827da69cc14657`  
+		Last Modified: Wed, 19 Feb 2025 21:30:40 GMT  
+		Size: 54.9 KB (54897 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:7-graal` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:dce574019a79d740963dd28e23e2a45f68f342c656d0b93fd55bfe15ab75b878
+$ docker pull gradle@sha256:084bd05fefddf9916b82fa957e07ee2446b79c0dc4ba53e84a416c16760eda06
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.6 MB (8649165 bytes)**  
+-	Total Size: **8.7 MB (8664651 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2ec5bc7040866aa49659d4f737e57bef4de8f3eaee204529a4b9582c26d98629`
+-	Image ID: `sha256:518314df146304110496ebcdb7283c03562f3bf1739b1829f7b7e2b5388898af`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a36b04934c0fea182fb170212af170b9af3f891d67b646461991a75f02fefca0`  
-		Last Modified: Wed, 19 Feb 2025 21:30:52 GMT  
-		Size: 8.6 MB (8618863 bytes)  
+	-	`sha256:0a3e5f0aafce8044a707668296f6de59ca5da677ab896541bf72972ccffb4285`  
+		Last Modified: Wed, 19 Feb 2025 21:30:39 GMT  
+		Size: 8.6 MB (8638014 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:caec69308416588ef791bcfdddfeaa2d52853ac45dcecf61ab15edeca9a894eb`  
-		Last Modified: Wed, 19 Feb 2025 21:30:52 GMT  
-		Size: 30.3 KB (30302 bytes)  
+	-	`sha256:4736a0c92711593649646a57949eec816c2844df377ab3061d4511e629895aef`  
+		Last Modified: Wed, 19 Feb 2025 21:30:39 GMT  
+		Size: 26.6 KB (26637 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `gradle:7-graal` - linux; arm64 variant v8
 
 ```console
-$ docker pull gradle@sha256:5a5e0e94be614b6760bbffc11153ef2d5a661bba27b8b8cae1d9a0adc65ddeba
+$ docker pull gradle@sha256:5f192c5657e9f357dde8f2722c92bf424030734ea71278f9e9faa3c17965e7c4
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **585.0 MB (585022298 bytes)**  
+-	Total Size: **586.9 MB (586857758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:767f21e6a2aef3cdc13275e7238217d4730f48826b7425967a1b85c5daf89379`
+-	Image ID: `sha256:17d045ec8994a544c99cbf1114ba87aae7fa40f790f7f4bf8fe4908aa08209b7`
 -	Default Command: `["gradle"]`
 
 ```dockerfile
@@ -164,9 +164,9 @@ RUN set -o errexit -o nounset     && export DEBIAN_FRONTEND=noninteractive     &
 # Tue, 18 Feb 2025 21:10:40 GMT
 ENV JAVA_HOME=/opt/java/graalvm
 # Tue, 18 Feb 2025 21:10:40 GMT
-ENV JAVA_VERSION=21.0.2
+ENV JAVA_VERSION=17.0.9
 # Tue, 18 Feb 2025 21:10:40 GMT
-RUN set -o errexit -o nounset     && mkdir /opt/java         && echo "Downloading GraalVM"     && GRAALVM_AMD64_DOWNLOAD_SHA256=b048069aaa3a99b84f5b957b162cc181a32a4330cbc35402766363c5be76ae48     && GRAALVM_AARCH64_DOWNLOAD_SHA256=a34be691ce68f0acf4655c7c6c63a9a49ed276a11859d7224fd94fc2f657cd7a     && ARCHITECTURE=$(dpkg --print-architecture)     && if [ "${ARCHITECTURE}" = "amd64" ]; then GRAALVM_ARCHITECTURE=linux-x64; fi     && if [ "${ARCHITECTURE}" = "arm64" ]; then GRAALVM_ARCHITECTURE=linux-aarch64; fi     && GRAALVM_PKG=https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-${JAVA_VERSION}/graalvm-community-jdk-${JAVA_VERSION}_${GRAALVM_ARCHITECTURE}_bin.tar.gz     && wget --no-verbose --output-document=graalvm.tar.gz "${GRAALVM_PKG}"         && echo "Checking GraalVM download hash"     && if [ "${ARCHITECTURE}" = "amd64" ]; then GRAALVM_DOWNLOAD_SHA256="${GRAALVM_AMD64_DOWNLOAD_SHA256}"; fi     && if [ "${ARCHITECTURE}" = "arm64" ]; then GRAALVM_DOWNLOAD_SHA256="${GRAALVM_AARCH64_DOWNLOAD_SHA256}"; fi     && echo "${GRAALVM_DOWNLOAD_SHA256} *graalvm.tar.gz" | sha256sum --check -         && echo "Installing GraalVM"     && tar --extract --gunzip --file graalvm.tar.gz     && rm graalvm.tar.gz     && mv graalvm-* "${JAVA_HOME}"     && for bin in "$JAVA_HOME/bin/"*; do         base="$(basename "$bin")";         [ ! -e "/usr/bin/$base" ];         update-alternatives --install "/usr/bin/${base}" "${base}" "${bin}" 1;     done         && echo "Testing GraalVM installation"     && java --version     && javac --version     && native-image --version # buildkit
+RUN set -o errexit -o nounset     && mkdir /opt/java         && echo "Downloading GraalVM"     && GRAALVM_AMD64_DOWNLOAD_SHA256=e47ba7229cef02393e19d5b8f46f7f1cab4829dd17bfe84d5431fc8ff0e22a96     && GRAALVM_AARCH64_DOWNLOAD_SHA256=c3281b21f5220c2f76cf6fa0d646bc42e2d729af2c022bb06e557a613ba16102     && ARCHITECTURE=$(dpkg --print-architecture)     && if [ "${ARCHITECTURE}" = "amd64" ]; then GRAALVM_ARCHITECTURE=linux-x64; fi     && if [ "${ARCHITECTURE}" = "arm64" ]; then GRAALVM_ARCHITECTURE=linux-aarch64; fi     && GRAALVM_PKG=https://github.com/graalvm/graalvm-ce-builds/releases/download/jdk-${JAVA_VERSION}/graalvm-community-jdk-${JAVA_VERSION}_${GRAALVM_ARCHITECTURE}_bin.tar.gz     && wget --no-verbose --output-document=graalvm.tar.gz "${GRAALVM_PKG}"         && echo "Checking GraalVM download hash"     && if [ "${ARCHITECTURE}" = "amd64" ]; then GRAALVM_DOWNLOAD_SHA256="${GRAALVM_AMD64_DOWNLOAD_SHA256}"; fi     && if [ "${ARCHITECTURE}" = "arm64" ]; then GRAALVM_DOWNLOAD_SHA256="${GRAALVM_AARCH64_DOWNLOAD_SHA256}"; fi     && echo "${GRAALVM_DOWNLOAD_SHA256} *graalvm.tar.gz" | sha256sum --check -         && echo "Installing GraalVM"     && tar --extract --gunzip --file graalvm.tar.gz     && rm graalvm.tar.gz     && mv graalvm-* "${JAVA_HOME}"     && for bin in "$JAVA_HOME/bin/"*; do         base="$(basename "$bin")";         [ ! -e "/usr/bin/$base" ];         update-alternatives --install "/usr/bin/${base}" "${base}" "${bin}" 1;     done         && echo "Testing GraalVM installation"     && java --version     && javac --version     && gu --version     && native-image --version # buildkit
 # Tue, 18 Feb 2025 21:10:40 GMT
 ENV GRADLE_VERSION=7.6.4
 # Tue, 18 Feb 2025 21:10:40 GMT
@@ -200,39 +200,39 @@ USER root
 		Last Modified: Fri, 07 Feb 2025 06:32:29 GMT  
 		Size: 151.7 MB (151671014 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb1f1f519a231f9215d2b5332fce7236482d992a2dfd6f0e4c36a153465bdd46`  
-		Last Modified: Fri, 07 Feb 2025 06:34:43 GMT  
-		Size: 281.7 MB (281666309 bytes)  
+	-	`sha256:499020f46d33030ccb69f84d532a2d27acee826d1b527253bebbc506d1110f3c`  
+		Last Modified: Fri, 07 Feb 2025 06:32:32 GMT  
+		Size: 283.5 MB (283501764 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b3f527f56cea4c910b27dc6117fbdc84496ecf45c74ef6e9183d4dde6f89427`  
-		Last Modified: Wed, 19 Feb 2025 21:41:16 GMT  
-		Size: 122.7 MB (122730530 bytes)  
+	-	`sha256:06e081d65573ac42581abbbabcf0f28f7a5c8fe02e90ce283bfcb3a4a4327f23`  
+		Last Modified: Wed, 19 Feb 2025 22:15:08 GMT  
+		Size: 122.7 MB (122730526 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ef61d2cc9b45d6ee43b29cc094497a48efbf97cdf04ce314312a57801b5968f`  
-		Last Modified: Wed, 19 Feb 2025 21:41:12 GMT  
-		Size: 59.5 KB (59528 bytes)  
+	-	`sha256:22e82e47f7fa3a6752787db920cd28c3156d5fae35d95eaca0e41c36da103f7c`  
+		Last Modified: Wed, 19 Feb 2025 22:15:04 GMT  
+		Size: 59.5 KB (59537 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `gradle:7-graal` - unknown; unknown
 
 ```console
-$ docker pull gradle@sha256:ddee98b1c2caee4a434d8bcff45f507039192f41996f553ce7edf43c477c58d6
+$ docker pull gradle@sha256:ee08f90b587358d2788c56d22ea55b18d40356446e1c631e9303419639af4c68
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **8.6 MB (8645491 bytes)**  
+-	Total Size: **8.7 MB (8660678 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ed5992beb256df7ccc79ef9d28442b403286889b01f89a0776b49cb1ed2ae8b8`
+-	Image ID: `sha256:c7c984482eafa205e7277c49f187120a5cce03b1235c66d1163ad7414db924d9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5cb0e626084730460dca805c677915805e2acd51ec3d5d2a44a9f12b0f794145`  
-		Last Modified: Wed, 19 Feb 2025 21:41:13 GMT  
-		Size: 8.6 MB (8614857 bytes)  
+	-	`sha256:03435be2021397cb2e8c6b73da838c369c5edc8595aff5aafad83041bca80263`  
+		Last Modified: Wed, 19 Feb 2025 22:15:05 GMT  
+		Size: 8.6 MB (8633852 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1fedcb31bf1c8ee87714a14f7387b875b32d0f1d8439fbe8892a014d120afcc0`  
-		Last Modified: Wed, 19 Feb 2025 21:41:12 GMT  
-		Size: 30.6 KB (30634 bytes)  
+	-	`sha256:9afd009190032e066e23aa166e554de09a3c48da521ec75fc31633cea23c005c`  
+		Last Modified: Wed, 19 Feb 2025 22:15:04 GMT  
+		Size: 26.8 KB (26826 bytes)  
 		MIME: application/vnd.in-toto+json
