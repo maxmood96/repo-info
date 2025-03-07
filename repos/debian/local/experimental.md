@@ -1125,21 +1125,13 @@ Licenses: (parsed from: `/usr/share/doc/libtinfo6/copyright`, `/usr/share/doc/nc
 - `MIT/X11`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris ncurses=6.5+20250216-1
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.5%2b20250216-1.dsc' ncurses_6.5+20250216-1.dsc 3889 SHA256:b083bf77eab32b080b9c9e54693288bfd6f8628e853e14ca8f3c1b42a3768f91
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.5%2b20250216.orig.tar.gz' ncurses_6.5+20250216.orig.tar.gz 3774714 SHA256:b37baafa436e7133bb12a185cb8f60e1599b1947e9f0181c76f3190acf28b6eb
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.5%2b20250216.orig.tar.gz.asc' ncurses_6.5+20250216.orig.tar.gz.asc 729 SHA256:64f4d17923322176c44079f18f170e2164a59d551d7e4e9c1a6e4eebedc5dd6f
-'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.5%2b20250216-1.debian.tar.xz' ncurses_6.5+20250216-1.debian.tar.xz 49864 SHA256:371782f3db173999e9b2e01d35c361a39d8b9edea04e9dd2af4eaeee28141fe3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/ncurses/6.5+20250216-1/
 
-- https://sources.debian.net/src/ncurses/6.5+20250216-1/ (for browsing the source)
-- https://sources.debian.net/src/ncurses/6.5+20250216-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ncurses/6.5+20250216-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nettle=3.10.1-1`
 
@@ -1425,20 +1417,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.3-1
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.3-1.dsc' systemd_257.3-1.dsc 8447 SHA256:76ef721ace1af712acfa1e1aeca96ab71ce2ab40aa0f135d46ec0ec32cc09bce
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.3.orig.tar.gz' systemd_257.3.orig.tar.gz 16227011 SHA256:99365d1a01bcc59a659ab59c7bae9c34f7eb2998f1656ee0a4aae05312eacdc9
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.3-1.debian.tar.xz' systemd_257.3-1.debian.tar.xz 178716 SHA256:e83d941f4162f6953ed3a9409258218bd98e9daa1f9b3d30267238011c29ddb7
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257.3-1/
 
-- https://sources.debian.net/src/systemd/257.3-1/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-1`
 
