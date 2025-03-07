@@ -1,10 +1,10 @@
-# `gradle:7.6.4-jdk21-graal`
+# `gradle:7.6.4-jdk17-graal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:4839ad990d77021ea9e9603b9698149f2758c40840492b92e1a831fdf473a22c`
+- Image ID: `sha256:f603dabeaa87ac6bbcbec31bcd4ead385ed5d416fa610beaa6246aff64119407`
 - Created: `2025-02-18T21:10:40Z`
-- Virtual Size: ~ 1.21 Gb  
+- Virtual Size: ~ 1.23 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["gradle"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `GRADLE_HOME=/opt/gradle`
   - `JAVA_HOME=/opt/java/graalvm`
-  - `JAVA_VERSION=21.0.2`
+  - `JAVA_VERSION=17.0.9`
   - `GRADLE_VERSION=7.6.4`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`

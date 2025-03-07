@@ -1,10 +1,10 @@
-# `gradle:8.12.1-jdk11-focal`
+# `gradle:8.13-jdk11-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:69543c8ee363e8bffff366d926ce03c4f77182cbc59e7b59c5e7fe843e25dee9`
-- Created: `2025-01-27T19:22:41Z`
-- Virtual Size: ~ 747.59 Mb  
+- Image ID: `sha256:8a8b5558e90c87b86522d2f7fe0277baa0379ce9ff4b21aa806b85ba8cfd2de6`
+- Created: `2025-03-04T19:20:27Z`
+- Virtual Size: ~ 748.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.26+4`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.12.1`
+  - `GRADLE_VERSION=8.13`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=20.04`
@@ -784,12 +784,12 @@ $ apt-get source -qq --print-uris git-lfs=2.9.2-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_2.9.2-1.debian.tar.xz' git-lfs_2.9.2-1.debian.tar.xz 4112 SHA256:342408ebd4c5d2270f7ee16a8183761dd0015ded0d3fef36b6c5c34fcc32cff2
 ```
 
-### `dpkg` source package: `git=1:2.25.1-1ubuntu3.13`
+### `dpkg` source package: `git=1:2.25.1-1ubuntu3.14`
 
 Binary Packages:
 
-- `git=1:2.25.1-1ubuntu3.13`
-- `git-man=1:2.25.1-1ubuntu3.13`
+- `git=1:2.25.1-1ubuntu3.14`
+- `git-man=1:2.25.1-1ubuntu3.14`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -812,9 +812,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.25.1-1ubuntu3.14
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.14.dsc' git_2.25.1-1ubuntu3.14.dsc 2966 SHA512:02725ad0ce0ecc76e3ade84a211989c02ab70ed3c3b6a8cd282645700374a0398a747f41392fa795e79d2f57e90cf6afd2b7ab4851ea3110e62f1d298b408f8e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1.orig.tar.xz' git_2.25.1.orig.tar.xz 5875548 SHA512:15241143acfd8542d85d2709ac3c80dbd6e8d5234438f70c4f33cc71a2bdec3e32938df7f6351e2746d570b021d3bd0b70474ea4beec0c51d1fc45f9c287b344
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.14.debian.tar.xz' git_2.25.1-1ubuntu3.14.debian.tar.xz 719124 SHA512:4ee6d3c92aad795c88aefba4aa245448aaee1b740494c34f3088716ebd70f54324cd1f7ca0d0e06c2980489f14a31f250d0a512f798dc3373c71818dc48e74c5
+```
 
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.16`
 
@@ -1835,11 +1840,11 @@ $ apt-get source -qq --print-uris openldap=2.4.49+dfsg-2ubuntu1.10
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49%2bdfsg-2ubuntu1.10.debian.tar.xz' openldap_2.4.49+dfsg-2ubuntu1.10.debian.tar.xz 190520 SHA512:6782b86834c3643acd64ecf68643af47e030fded12ed90bf84c40072c63bdcd01ada54bdf0eb8ef54123c70d5b96dd447b498ed1a0e0c88efcd56126e2c9e646
 ```
 
-### `dpkg` source package: `openssh=1:8.2p1-4ubuntu0.11`
+### `dpkg` source package: `openssh=1:8.2p1-4ubuntu0.12`
 
 Binary Packages:
 
-- `openssh-client=1:8.2p1-4ubuntu0.11`
+- `openssh-client=1:8.2p1-4ubuntu0.12`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -1852,9 +1857,14 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssh=1:8.2p1-4ubuntu0.12
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4ubuntu0.12.dsc' openssh_8.2p1-4ubuntu0.12.dsc 3102 SHA512:da3d5af771b854a5bfa15d75c606192892c818c02ac94d64ec1e1c9c3a555cad4f5754addef863c55baf338c407bef95541e4b1a3af872b4368bd1a224de78c1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1.orig.tar.gz' openssh_8.2p1.orig.tar.gz 1701197 SHA512:c4db64e52a3a4c410de9de49f9cb104dd493b10250af3599b92457dd986277b3fd99a6f51cec94892fd1be5bd0369c5757262ea7805f0de464b245c3d34c120a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4ubuntu0.12.debian.tar.xz' openssh_8.2p1-4ubuntu0.12.debian.tar.xz 185796 SHA512:fdc7e777cd833bbf15a74240ba5751f74d6a4075a3e39ce1956d27b590ec78d6bda35426a01ccf45ec6729a34e59828d1d30a32720551dd14ab9b10114c6ce65
+```
 
 ### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.23`
 
@@ -2191,14 +2201,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.8.2-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.8.2-0ubuntu2.tar.gz' python3-defaults_3.8.2-0ubuntu2.tar.gz 138226 SHA256:e4969a54306421ebfd195d0c064935db7c53f9f152d8abaae63da33819235e9a
 ```
 
-### `dpkg` source package: `python3.8=3.8.10-0ubuntu1~20.04.14`
+### `dpkg` source package: `python3.8=3.8.10-0ubuntu1~20.04.15`
 
 Binary Packages:
 
-- `libpython3.8-minimal:amd64=3.8.10-0ubuntu1~20.04.14`
-- `libpython3.8-stdlib:amd64=3.8.10-0ubuntu1~20.04.14`
-- `python3.8=3.8.10-0ubuntu1~20.04.14`
-- `python3.8-minimal=3.8.10-0ubuntu1~20.04.14`
+- `libpython3.8-minimal:amd64=3.8.10-0ubuntu1~20.04.15`
+- `libpython3.8-stdlib:amd64=3.8.10-0ubuntu1~20.04.15`
+- `python3.8=3.8.10-0ubuntu1~20.04.15`
+- `python3.8-minimal=3.8.10-0ubuntu1~20.04.15`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/share/doc/libpython3.8-stdlib/copyright`, `/usr/share/doc/python3.8/copyright`, `/usr/share/doc/python3.8-minimal/copyright`)
 
@@ -2220,9 +2230,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.8=3.8.10-0ubuntu1~20.04.15
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.15.dsc' python3.8_3.8.10-0ubuntu1~20.04.15.dsc 3508 SHA512:aee5d65c0dbef12f2ded78e433c3f5d9aa8ea500d62c0dbe17cf80e03c9615098a642f2640d596829e5342173ac7f897e05a09a2f7b41867d36843d49acfa723
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10.orig.tar.xz' python3.8_3.8.10.orig.tar.xz 18433456 SHA512:0be69705483ff9692e12048a96180e586f9d84c8d53066629f7fb2389585eb75c0f3506bb8182936e322508f58b71f4d8c6dfebbab9049b31b49da11d3b98e80
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.15.debian.tar.xz' python3.8_3.8.10-0ubuntu1~20.04.15.debian.tar.xz 250604 SHA512:e20fe3e9532249172f69cd3cc42f53d3d4c470c6c11bc80736ca895907d32cfbd2305ea9c7c61a8d648be705db83f6c1d2f19812f79a7b0c21082fca41b93af3
+```
 
 ### `dpkg` source package: `readline=8.0-4`
 

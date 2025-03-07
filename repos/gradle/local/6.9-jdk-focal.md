@@ -1,10 +1,10 @@
-# `gradle:6.9.4-jdk17-focal`
+# `gradle:6.9.4-jdk11-focal`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b9ab43ab517f55799f8de3d77b27b0837df5eb48722f4c03e0fc5fcecf2e61e2`
+- Image ID: `sha256:69690c18e541ad3e256e802f67d9fe2ce81ee9bea6ff898b13749c79cfd74f47`
 - Created: `2025-02-18T21:10:38Z`
-- Virtual Size: ~ 732.57 Mb  
+- Virtual Size: ~ 719.77 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-17.0.14+7`
+  - `JAVA_VERSION=jdk-11.0.26+4`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=6.9.4`
 - Labels:
@@ -224,27 +224,6 @@ $ apt-get source -qq --print-uris bash=5.0-6ubuntu1.2
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0.orig.tar.xz' bash_5.0.orig.tar.xz 5554808 SHA512:f3a719997a8515bae7e84701afafc9b2cdd23c95d29533adb678000b08eba968450b93d5576c3cffbeccbdcd95b713db830e8efeda689258dcfe6f15f0c5dec4
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.0-6ubuntu1.2.debian.tar.xz' bash_5.0-6ubuntu1.2.debian.tar.xz 75200 SHA512:50de22a6cd140fcb95eca9172e9927a4eeddd90bfbd23072d5e209db1675f331716dfd54ef3281caa7020e3fa1aef9ca7caafc6a8d3067741b1ae41f7dff7724
 ```
-
-### `dpkg` source package: `binutils=2.34-6ubuntu1.9`
-
-Binary Packages:
-
-- `binutils=2.34-6ubuntu1.9`
-- `binutils-common:amd64=2.34-6ubuntu1.9`
-- `binutils-x86-64-linux-gnu=2.34-6ubuntu1.9`
-- `libbinutils:amd64=2.34-6ubuntu1.9`
-- `libctf-nobfd0:amd64=2.34-6ubuntu1.9`
-- `libctf0:amd64=2.34-6ubuntu1.9`
-
-Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`)
-
-- `GFDL`
-- `GPL`
-- `LGPL`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
 
 ### `dpkg` source package: `breezy=3.0.2-4ubuntu2`
 

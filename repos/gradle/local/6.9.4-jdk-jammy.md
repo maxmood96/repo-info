@@ -1,10 +1,10 @@
-# `gradle:6.9.4-jdk21-jammy`
+# `gradle:6.9.4-jdk11`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3dcd97ac58c2009942c5741598cd8c8940d054ffd0847755889bc38c245eac5d`
+- Image ID: `sha256:59df7c8ca3f9ba6d87e058f198699701bbfe8559dc990da7efa51e5fc02ddd50`
 - Created: `2025-02-18T21:10:38Z`
-- Virtual Size: ~ 721.42 Mb  
+- Virtual Size: ~ 679.81 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.6+7`
+  - `JAVA_VERSION=jdk-11.0.26+4`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=6.9.4`
 - Labels:
@@ -224,27 +224,6 @@ $ apt-get source -qq --print-uris bash=5.1-6ubuntu1.1
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1.orig.tar.xz' bash_5.1.orig.tar.xz 5802740 SHA512:95d3acc542231cb893e1347c7d9dd66687f68cd347a0e9e126fde2d14e68c5b5530d1a5866eafa781e88aa013fcf72b4ad56d2e484c2ac7a69bd90bb149a9b86
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.1-6ubuntu1.1.debian.tar.xz' bash_5.1-6ubuntu1.1.debian.tar.xz 99944 SHA512:d7fb6110df70232bd3280c1140a812a1903968792f6608481c184bd28760d03323ada75ed3ca4da4eb6c56a84781d6e2f441e0ee83dd9364a9e37fd0fa2211e9
 ```
-
-### `dpkg` source package: `binutils=2.38-4ubuntu2.6`
-
-Binary Packages:
-
-- `binutils=2.38-4ubuntu2.6`
-- `binutils-common:amd64=2.38-4ubuntu2.6`
-- `binutils-x86-64-linux-gnu=2.38-4ubuntu2.6`
-- `libbinutils:amd64=2.38-4ubuntu2.6`
-- `libctf-nobfd0:amd64=2.38-4ubuntu2.6`
-- `libctf0:amd64=2.38-4ubuntu2.6`
-
-Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`)
-
-- `GFDL`
-- `GPL`
-- `LGPL`
-
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
-
 
 ### `dpkg` source package: `breezy=3.2.1+bzr7585-1build1`
 

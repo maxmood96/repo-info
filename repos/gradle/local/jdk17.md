@@ -1,10 +1,10 @@
-# `gradle:8.12.1-jdk17`
+# `gradle:8.13-jdk17`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ac3d99694b0608dc5ca650184f36a707c41d88a72b844080aae6516d34381c8f`
-- Created: `2025-02-06T02:49:08Z`
-- Virtual Size: ~ 771.58 Mb  
+- Image ID: `sha256:3b3fba173bd74a163ba47f563fc71d94e376ce9d28f1e4396244754b155090f8`
+- Created: `2025-03-04T19:20:27Z`
+- Virtual Size: ~ 772.06 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.14+7`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.12.1`
+  - `GRADLE_VERSION=8.13`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`
@@ -2045,11 +2045,11 @@ Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openssh=1:9.6p1-3ubuntu13.5`
+### `dpkg` source package: `openssh=1:9.6p1-3ubuntu13.8`
 
 Binary Packages:
 
-- `openssh-client=1:9.6p1-3ubuntu13.5`
+- `openssh-client=1:9.6p1-3ubuntu13.8`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -2061,9 +2061,15 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.8
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.8.dsc' openssh_9.6p1-3ubuntu13.8.dsc 3342 SHA512:6d3f3710ff64fe64e152c42cd957c3c82f010d15937721601ddcd9983254b82aecc99368e0803d2760cc65909737c55631c8d0b69cda4ec29295259cd6b364e6
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA512:0ebf81e39914c3a90d7777a001ec7376a94b37e6024baf3e972c58f0982b7ddef942315f5e01d56c00ff95603b4a20ee561ab918ecc55511df007ac138160509
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA512:aec5a5bd6ce480a8e5b5879dc55f8186aec90fe61f085aa92ad7d07f324574aa781be09c83b7443a32848d091fd44fb12c1842d49cee77afc351e550ffcc096d
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.8.debian.tar.xz' openssh_9.6p1-3ubuntu13.8.debian.tar.xz 205336 SHA512:7e703eb4593e3f0e00b0107426ae6c333da6598b84d3978b84a55443f724b49df607a41b7cc1656f6f6a7267aa72b6ab5b3d5776c8343fed711a8f31a2af1981
+```
 
 ### `dpkg` source package: `openssl=3.0.13-0ubuntu3.4`
 
@@ -2384,15 +2390,15 @@ $ apt-get source -qq --print-uris python3-defaults=3.12.3-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.tar.gz' python3-defaults_3.12.3-0ubuntu2.tar.gz 147715 SHA512:3c0b5b4c3fba5209c36cb7b884894c735aa3f419c2f0ca4c412f8bc44a281e2f356438517010ec5753c18c06fcd60e1e526c5cc4e4a8d103dd8bfb8b6468377e
 ```
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.4`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.5`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.4`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.4`
-- `libpython3.12t64:amd64=3.12.3-1ubuntu0.4`
-- `python3.12=3.12.3-1ubuntu0.4`
-- `python3.12-minimal=3.12.3-1ubuntu0.4`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.5`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.5`
+- `libpython3.12t64:amd64=3.12.3-1ubuntu0.5`
+- `python3.12=3.12.3-1ubuntu0.5`
+- `python3.12-minimal=3.12.3-1ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/libpython3.12t64/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -2414,9 +2420,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.5.dsc' python3.12_3.12.3-1ubuntu0.5.dsc 3875 SHA512:38dc5621220a6396c97a383c49c5717a85823967991ef99f143ac73e45c69f93ea73fcf34eafc8a0b5937830a3d1147df9431c59578ae3878dcdc78498b61f18
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.5.debian.tar.xz' python3.12_3.12.3-1ubuntu0.5.debian.tar.xz 234380 SHA512:a73a89a34bfce03854aade75ac6a08b771a6e90c41a0a337590a1e41462a68c8d11e8da9f31639965157d53ff331b96140c147ebeace2d58d0edbd2cad9f60ca
+```
 
 ### `dpkg` source package: `pyyaml=6.0.1-2build2`
 

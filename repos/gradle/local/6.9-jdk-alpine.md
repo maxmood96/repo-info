@@ -1,10 +1,10 @@
-# `gradle:6.9.4-jdk21-alpine`
+# `gradle:6.9.4-jdk11-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7880f91504a53a8216836c87fb3beb63d9cb6a126bf8f2604b2c1d8107460ad`
+- Image ID: `sha256:783f125bcc0816b328931760ea76d7b9c78551f2168775453fa8f27289836b92`
 - Created: `2025-02-18T21:10:38Z`
-- Virtual Size: ~ 569.10 Mb  
+- Virtual Size: ~ 517.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-21.0.6+7`
+  - `JAVA_VERSION=jdk-11.0.26+4`
   - `GRADLE_HOME=/opt/gradle`
   - `GRADLE_VERSION=6.9.4`
 
@@ -154,23 +154,6 @@ apr-util-1.6.3-r1 installed size:
 
 apr-util-1.6.3-r1 license:
 Apache-2.0
-
-```
-
-### `apk` package: `binutils`
-
-```console
-binutils-2.43.1-r1 description:
-Tools necessary to build programs
-
-binutils-2.43.1-r1 webpage:
-https://www.gnu.org/software/binutils/
-
-binutils-2.43.1-r1 installed size:
-9 MiB
-
-binutils-2.43.1-r1 license:
-GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
 
 ```
 
@@ -698,23 +681,6 @@ gpgv-2.4.7-r0 installed size:
 
 gpgv-2.4.7-r0 license:
 GPL-3.0-or-later
-
-```
-
-### `apk` package: `jansson`
-
-```console
-jansson-2.14-r4 description:
-lightweight JSON library
-
-jansson-2.14-r4 webpage:
-http://www.digip.org/jansson/
-
-jansson-2.14-r4 installed size:
-49 KiB
-
-jansson-2.14-r4 license:
-MIT
 
 ```
 

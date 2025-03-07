@@ -1,10 +1,10 @@
-# `gradle:8.12.1-jdk8`
+# `gradle:8.13-jdk8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:c35129c68e462dcbfa0250eb41940b1e7a640113095d5a746753bd62f67ae8f6`
-- Created: `2025-01-27T19:22:41Z`
-- Virtual Size: ~ 580.71 Mb  
+- Image ID: `sha256:d94e830e1785de98061c18f24b5fa3cfb184347d6ea5b76ebe54d64f8e979978`
+- Created: `2025-03-04T19:20:27Z`
+- Virtual Size: ~ 581.20 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk8u442-b06`
   - `GRADLE_HOME=/opt/gradle`
-  - `GRADLE_VERSION=8.12.1`
+  - `GRADLE_VERSION=8.13`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -1935,11 +1935,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openssh=1:8.9p1-3ubuntu0.10`
+### `dpkg` source package: `openssh=1:8.9p1-3ubuntu0.11`
 
 Binary Packages:
 
-- `openssh-client=1:8.9p1-3ubuntu0.10`
+- `openssh-client=1:8.9p1-3ubuntu0.11`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -1951,9 +1951,14 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssh=1:8.9p1-3ubuntu0.11
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.11.dsc' openssh_8.9p1-3ubuntu0.11.dsc 3136 SHA512:ef5b948efe03ca7d20f65d13fcd38ef96d0a3b028d2357f76da3aa3b5826d73d015a0da9e6a7902f48339e59c4e5be5b0e36b0e91b8f94095a138d151779b05e
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz' openssh_8.9p1.orig.tar.gz 1820282 SHA512:04bd38ea6fe4be31acc8c4e83de7d3dda66fb7207be2e4ba25d3b8118d13d098a283769da9e8ce1fc4fba7edf739c14efcc6c9137132919261a7f882314b0f6b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.11.debian.tar.xz' openssh_8.9p1-3ubuntu0.11.debian.tar.xz 201164 SHA512:57e88f1b4863ccd52d466f9c8e06fa92f97d0bb8944ec328889bab5b4364a4f57def47ce329ef3b262bb52c3bd9e6080ed55d651689c899f8f8ec42329e186c6
+```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.18`
 
@@ -2260,14 +2265,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.1.tar.gz' python3-defaults_3.10.6-1~22.04.1.tar.gz 145962 SHA512:c509a2a887e4b758fbfcb6173ff046a6f73bdfdde3bd89f77102a4d99c7219d8e1805b41541c6cf658fe9dd44da188e6af450d87236d863d29f06147fea26ea1
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.8`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.9`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.8`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.8`
-- `python3.10=3.10.12-1~22.04.8`
-- `python3.10-minimal=3.10.12-1~22.04.8`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.9`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.9`
+- `python3.10=3.10.12-1~22.04.9`
+- `python3.10-minimal=3.10.12-1~22.04.9`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -2289,9 +2294,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.9.dsc' python3.10_3.10.12-1~22.04.9.dsc 3674 SHA512:a6b160959829590a6660cd914058f5ea67d4b3a51234d07ae7c11f98ee1505b2a6246962cc67c1bb5f937a8e61a42b6a5f7897ccb96b585819e08c01e837d6be
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.9.debian.tar.xz' python3.10_3.10.12-1~22.04.9.debian.tar.xz 247836 SHA512:c30ae6e675b7459e7c66dba2a3f037e4efc495e6b8a82ad162e734ec6d473259cc4975a31c18e714a441206fd3abf51ae2c4b5bd722d4067e8968b464d6bbdfe
+```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
