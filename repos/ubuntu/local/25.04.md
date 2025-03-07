@@ -95,14 +95,9 @@ Licenses: (parsed from: `/usr/share/doc/libaudit-common/copyright`, `/usr/share/
 - `GPL-2`
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris audit=1:4.0.2-2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.0.2-2ubuntu1.dsc' audit_4.0.2-2ubuntu1.dsc 2757 SHA512:f3867a21305d52b1fc150a0fc57577708adf2815aa6901486a178eb121b2fcea986962c4c2395f60dbc45f2bf8d54f5b2245d06a86fc159462d0cd6f486805e6
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.0.2.orig.tar.gz' audit_4.0.2.orig.tar.gz 1198769 SHA512:13d4d07b316fc1380d75baefbb1345b34286015d52e758c14b2f82781cf4cffc16b6eb29d999563ff40caa6d005630a5dfc44741e49b71291c9beb84ddc452a4
-'http://archive.ubuntu.com/ubuntu/pool/main/a/audit/audit_4.0.2-2ubuntu1.debian.tar.xz' audit_4.0.2-2ubuntu1.debian.tar.xz 19504 SHA512:c01006d487043479c961ce535ee8cfba5eea947ffbc425cefc9cc79a7aff77c826bb98ab7c3b43b3301d0c6b82b004103d1c6c0e0777c1769e7f457cdfb012c6
-```
 
 ### `dpkg` source package: `base-files=13.5ubuntu3`
 
@@ -640,15 +635,13 @@ Licenses: (parsed from: `/usr/share/doc/libassuan9/copyright`)
 - `LGPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libassuan=3.0.1-2
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libassuan/libassuan_3.0.1-2.dsc' libassuan_3.0.1-2.dsc 2689 SHA512:0760f40241bc6ba7518f13298d938dd287144c94493b5da6d226b746444ab5a0daa765cdd98b90a778359fd0936368638d4fea084e6c12bee289192c757bfb6e
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libassuan/libassuan_3.0.1.orig.tar.bz2' libassuan_3.0.1.orig.tar.bz2 592430 SHA512:6914a02c20053bae0fc4c29c5c40655f1cec711983d57fa85e46df34e90b10e33d31256dd50ae7c7faa8d8d750a529bf9072da0cda3bdd77ebfedbc0e26e5e16
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libassuan/libassuan_3.0.1.orig.tar.bz2.asc' libassuan_3.0.1.orig.tar.bz2.asc 228 SHA512:86c5f1f2dbe81cc48794d15bd9b333b5278ace2b4280c55c904fe50f9024c78108a927e5ef8f0f40c44490f00e53fcd81746c1710c38d7c26e513546a7bff676
-'http://archive.ubuntu.com/ubuntu/pool/main/liba/libassuan/libassuan_3.0.1-2.debian.tar.xz' libassuan_3.0.1-2.debian.tar.xz 17964 SHA512:8a8713775ecd95a1111df53e704816ebc07651ef0de0bf4fd1c82aa088f4e6c2b76a1ab8424b7bf4c5bcfc6828259726b3972152136d3ec6c8a8a9a48be4ee54
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libassuan/3.0.1-2/
+
 
 ### `dpkg` source package: `libbsd=0.12.2-2`
 
@@ -697,14 +690,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap-ng0/copyright`)
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap-ng=0.8.5-4
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.8.5-4.dsc' libcap-ng_0.8.5-4.dsc 1710 SHA512:e3978811d6aa8e4af973a38de7792a43a57b93ed700ead840f527aaba1f6e7bcc7df3ca1cc4540def3d0f7d2ce32eedc393a897cbb5e683c3433e9046fb6ac78
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.8.5.orig.tar.gz' libcap-ng_0.8.5.orig.tar.gz 59265 SHA512:3bd868c7f263b77edd2feda831470b407f1086b434618e54336fb78bbf8bf3bad53f4c006a2118fb594b16554f8f7ec2acb76e08be5586d0261684e9ba139231
-'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap-ng/libcap-ng_0.8.5-4.debian.tar.xz' libcap-ng_0.8.5-4.debian.tar.xz 7816 SHA512:23cd6b64711fdf211ec8cccaec887b729c0b2774e7f413efea8a2d9c1a00ebc9804c49bbfb4ea8bdbac869abd6a64aa96f384893d49b817df354c5a84d192c8f
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/libcap-ng/0.8.5-4/
+
 
 ### `dpkg` source package: `libcap2=1:2.66-5ubuntu3`
 
@@ -851,15 +843,9 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.5.5-1ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5-1ubuntu5.dsc' libseccomp_2.5.5-1ubuntu5.dsc 2831 SHA512:75a205da770a135e9e872a8dac416bc980726a8a3a8aa38fe62f90924e601a76f331b644c79506dafe17ae4dbde8aa6454b5baf409d695426e85e09941442994
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5.orig.tar.gz' libseccomp_2.5.5.orig.tar.gz 642445 SHA512:f630e7a7e53a21b7ccb4d3e7b37616b89aeceba916677c8e3032830411d77a14c2d74dcf594cd193b1acc11f52595072e28316dc44300e54083d5d7b314a38da
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5.orig.tar.gz.asc' libseccomp_2.5.5.orig.tar.gz.asc 833 SHA512:a32a7146598f9183179ad15603181d1066e806d01f7c5f215d5405ad8618c06a265d05fff3b4a6cc49c50a577d93d6b920e85f6a581786b3db7389f52a4638e2
-'http://archive.ubuntu.com/ubuntu/pool/main/libs/libseccomp/libseccomp_2.5.5-1ubuntu5.debian.tar.xz' libseccomp_2.5.5-1ubuntu5.debian.tar.xz 24516 SHA512:42cc6f665e82dd8fa6bf5dd3f2ea7e2412b6629c57125d91a38eb237f9fcc279aca1653fde8124bd90de7d429297cd3707916bd85a0961adb95f76fc53cebca9
-```
 
 ### `dpkg` source package: `libselinux=3.7-3ubuntu1`
 
