@@ -59,19 +59,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.9.30
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.30.dsc' apt_2.9.30.dsc 3162 SHA256:a422eaa28622926bbbffc93dacac6ce649726d21a513fe9b7c791b7f4352f5ec
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.30.tar.xz' apt_2.9.30.tar.xz 2402004 SHA256:2f98d5428ce89fc5a26143f6a5a5c7c5ec93beea2d18a6370465bdcd326de82b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.9.30/
 
-- https://sources.debian.net/src/apt/2.9.30/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.9.30/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.9.30/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-2`
 
@@ -551,9 +545,15 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris debconf=1.5.89
-'http://http.debian.net/debian/pool/main/d/debconf/debconf_1.5.89.dsc' debconf_1.5.89.dsc 2035 SHA256:a3c32a3d878fc5bb72ddc1dadeea6faa423cf7de538e8018188a066bde2504d3
-'http://http.debian.net/debian/pool/main/d/debconf/debconf_1.5.89.tar.xz' debconf_1.5.89.tar.xz 574672 SHA256:6af2627425307318d410659104241f9a3c51aef49e57b066950baa4b18ad995f
+'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.89.dsc' debconf_1.5.89.dsc 2035 SHA256:a3c32a3d878fc5bb72ddc1dadeea6faa423cf7de538e8018188a066bde2504d3
+'http://deb.debian.org/debian/pool/main/d/debconf/debconf_1.5.89.tar.xz' debconf_1.5.89.tar.xz 574672 SHA256:6af2627425307318d410659104241f9a3c51aef49e57b066950baa4b18ad995f
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/debconf/1.5.89/ (for browsing the source)
+- https://sources.debian.net/src/debconf/1.5.89/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/debconf/1.5.89/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `debian-archive-keyring=2023.4`
 
@@ -2551,11 +2551,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ncurses=6.5+20250216-1
-'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.5%2b20250216-1.dsc' ncurses_6.5+20250216-1.dsc 3889 SHA256:b083bf77eab32b080b9c9e54693288bfd6f8628e853e14ca8f3c1b42a3768f91
-'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.5%2b20250216.orig.tar.gz' ncurses_6.5+20250216.orig.tar.gz 3774714 SHA256:b37baafa436e7133bb12a185cb8f60e1599b1947e9f0181c76f3190acf28b6eb
-'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.5%2b20250216.orig.tar.gz.asc' ncurses_6.5+20250216.orig.tar.gz.asc 729 SHA256:64f4d17923322176c44079f18f170e2164a59d551d7e4e9c1a6e4eebedc5dd6f
-'http://http.debian.net/debian/pool/main/n/ncurses/ncurses_6.5%2b20250216-1.debian.tar.xz' ncurses_6.5+20250216-1.debian.tar.xz 49864 SHA256:371782f3db173999e9b2e01d35c361a39d8b9edea04e9dd2af4eaeee28141fe3
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.5%2b20250216-1.dsc' ncurses_6.5+20250216-1.dsc 3889 SHA256:b083bf77eab32b080b9c9e54693288bfd6f8628e853e14ca8f3c1b42a3768f91
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.5%2b20250216.orig.tar.gz' ncurses_6.5+20250216.orig.tar.gz 3774714 SHA256:b37baafa436e7133bb12a185cb8f60e1599b1947e9f0181c76f3190acf28b6eb
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.5%2b20250216.orig.tar.gz.asc' ncurses_6.5+20250216.orig.tar.gz.asc 729 SHA256:64f4d17923322176c44079f18f170e2164a59d551d7e4e9c1a6e4eebedc5dd6f
+'http://deb.debian.org/debian/pool/main/n/ncurses/ncurses_6.5%2b20250216-1.debian.tar.xz' ncurses_6.5+20250216-1.debian.tar.xz 49864 SHA256:371782f3db173999e9b2e01d35c361a39d8b9edea04e9dd2af4eaeee28141fe3
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/ncurses/6.5+20250216-1/ (for browsing the source)
+- https://sources.debian.net/src/ncurses/6.5+20250216-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ncurses/6.5+20250216-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nettle=3.10-1`
 
@@ -2629,20 +2635,13 @@ Licenses: (parsed from: `/usr/share/doc/libnghttp3-9/copyright`)
 - `GPL-3+ with Autoconf generic exception`
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris nghttp3=1.6.0-2
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.6.0-2.dsc' nghttp3_1.6.0-2.dsc 1355 SHA256:4c12029b593f19c412f0484a05b93d1a7b755b82eb7d0f9d1f49f7092aac1dba
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.6.0.orig.tar.xz' nghttp3_1.6.0.orig.tar.xz 392480 SHA256:eaa901954bc494034d3738ef19130de69387d6a3da029044c60d9dae91792a8d
-'http://deb.debian.org/debian/pool/main/n/nghttp3/nghttp3_1.6.0-2.debian.tar.xz' nghttp3_1.6.0-2.debian.tar.xz 4568 SHA256:a4156b7c2c44d650d15025811b882bcd038ca977710a0b909842ee2e34c92180
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/nghttp3/1.6.0-2/
 
-- https://sources.debian.net/src/nghttp3/1.6.0-2/ (for browsing the source)
-- https://sources.debian.net/src/nghttp3/1.6.0-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/nghttp3/1.6.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `nlme=3.1.167-1`
 
@@ -3390,10 +3389,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris systemd=257.3-1
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_257.3-1.dsc' systemd_257.3-1.dsc 8447 SHA256:76ef721ace1af712acfa1e1aeca96ab71ce2ab40aa0f135d46ec0ec32cc09bce
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_257.3.orig.tar.gz' systemd_257.3.orig.tar.gz 16227011 SHA256:99365d1a01bcc59a659ab59c7bae9c34f7eb2998f1656ee0a4aae05312eacdc9
-'http://http.debian.net/debian/pool/main/s/systemd/systemd_257.3-1.debian.tar.xz' systemd_257.3-1.debian.tar.xz 178716 SHA256:e83d941f4162f6953ed3a9409258218bd98e9daa1f9b3d30267238011c29ddb7
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.3-1.dsc' systemd_257.3-1.dsc 8447 SHA256:76ef721ace1af712acfa1e1aeca96ab71ce2ab40aa0f135d46ec0ec32cc09bce
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.3.orig.tar.gz' systemd_257.3.orig.tar.gz 16227011 SHA256:99365d1a01bcc59a659ab59c7bae9c34f7eb2998f1656ee0a4aae05312eacdc9
+'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.3-1.debian.tar.xz' systemd_257.3-1.debian.tar.xz 178716 SHA256:e83d941f4162f6953ed3a9409258218bd98e9daa1f9b3d30267238011c29ddb7
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/systemd/257.3-1/ (for browsing the source)
+- https://sources.debian.net/src/systemd/257.3-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/systemd/257.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-1`
 
