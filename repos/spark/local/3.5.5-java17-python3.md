@@ -1,10 +1,10 @@
-# `spark:3.5.4-scala2.12-java17-python3-ubuntu`
+# `spark:3.5.5-scala2.12-java17-python3-ubuntu`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7df68300abeea765b42026743fc85c2b9a3b75bd05b272930001882c89ef717b`
-- Created: `2024-12-22T05:28:31Z`
-- Virtual Size: ~ 1.15 Gb  
+- Image ID: `sha256:04166a6284f0a786dc9e8a60e08b2734f41479234c1e4931b2b23a7c08e36dd9`
+- Created: `2025-02-28T04:45:43Z`
+- Virtual Size: ~ 1.16 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/entrypoint.sh"]`
@@ -15,9 +15,9 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.14+7`
-  - `SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.5.4/spark-3.5.4-bin-hadoop3.tgz`
-  - `SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.5.4/spark-3.5.4-bin-hadoop3.tgz.asc`
-  - `GPG_KEY=19F745C40A0E550420BB2C522541488DA93FE4B4`
+  - `SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.5.5/spark-3.5.5-bin-hadoop3.tgz`
+  - `SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.5.5/spark-3.5.5-bin-hadoop3.tgz.asc`
+  - `GPG_KEY=F28C9C925C188C35E345614DEDA00CE834F0FC5C`
   - `SPARK_HOME=/opt/spark`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -817,13 +817,9 @@ $ apt-get source -qq --print-uris gdbm=1.23-1
 Binary Packages:
 
 - `libc-bin=2.35-0ubuntu3.8`
-- `libc-dev-bin=2.35-0ubuntu3.8`
-- `libc-devtools=2.35-0ubuntu3.8`
-- `libc6:amd64=2.35-0ubuntu3.8`
-- `libc6-dev:amd64=2.35-0ubuntu3.8`
 - `locales=2.35-0ubuntu3.8`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc-devtools/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/locales/copyright`)
 
 - `GFDL-1.3`
 - `GPL-2`
@@ -832,6 +828,31 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `glibc=2.35-0ubuntu3.9`
+
+Binary Packages:
+
+- `libc-dev-bin=2.35-0ubuntu3.9`
+- `libc-devtools=2.35-0ubuntu3.9`
+- `libc6:amd64=2.35-0ubuntu3.9`
+- `libc6-dev:amd64=2.35-0ubuntu3.9`
+
+Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc-devtools/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
+
+- `GFDL-1.3`
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.35-0ubuntu3.9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.9.dsc' glibc_2.35-0ubuntu3.9.dsc 8929 SHA512:a521168a625c06337a723c8a2f129521547a3d69483afa79eb2961f661d992a811a71b070fbe2ea928d5e3942e71b8a6b4dd7f8e9c60db19e602e95afcb14841
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz' glibc_2.35.orig.tar.xz 18165952 SHA512:e7336ce27561be5d7c217832a1136fb327e057bd8d3f92925b35c97e3e9f9e486948b5a1e03e5e4090772ef06437a074d10b82e68f17f1ad8f22077ee39e1b66
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35.orig.tar.xz.asc' glibc_2.35.orig.tar.xz.asc 833 SHA512:2a1c152511dac05f9b4e48f7e7a6b59dbf2d8b71fea54f128173113357be26e86216e13c9865f617049e6858396a221a5abc704f65a786b22453945fd80265e9
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.35-0ubuntu3.9.debian.tar.xz' glibc_2.35-0ubuntu3.9.debian.tar.xz 938020 SHA512:48ab3f482db045600dae5880320789a1f5b1b40e3267b1076fd70eea9cfafd89cb571a16531997c1e34974b734d114e8bc83b1e285bbcfe0a85a504512a5be62
+```
 
 ### `dpkg` source package: `gmp=2:6.2.1+dfsg-3ubuntu1`
 
@@ -1171,23 +1192,41 @@ $ apt-get source -qq --print-uris keyutils=1.6.1-2ubuntu3
 
 Binary Packages:
 
-- `krb5-user=1.19.2-2ubuntu0.4`
-- `libgssapi-krb5-2:amd64=1.19.2-2ubuntu0.4`
-- `libgssrpc4:amd64=1.19.2-2ubuntu0.4`
 - `libk5crypto3:amd64=1.19.2-2ubuntu0.4`
-- `libkadm5clnt-mit12:amd64=1.19.2-2ubuntu0.4`
-- `libkadm5srv-mit12:amd64=1.19.2-2ubuntu0.4`
-- `libkdb5-10:amd64=1.19.2-2ubuntu0.4`
-- `libkrb5-3:amd64=1.19.2-2ubuntu0.4`
-- `libkrb5support0:amd64=1.19.2-2ubuntu0.4`
 
-Licenses: (parsed from: `/usr/share/doc/krb5-user/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libgssrpc4/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkadm5clnt-mit12/copyright`, `/usr/share/doc/libkadm5srv-mit12/copyright`, `/usr/share/doc/libkdb5-10/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libk5crypto3/copyright`)
 
 - `GPL-2`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `krb5=1.19.2-2ubuntu0.6`
+
+Binary Packages:
+
+- `krb5-user=1.19.2-2ubuntu0.6`
+- `libgssapi-krb5-2:amd64=1.19.2-2ubuntu0.6`
+- `libgssrpc4:amd64=1.19.2-2ubuntu0.6`
+- `libkadm5clnt-mit12:amd64=1.19.2-2ubuntu0.6`
+- `libkadm5srv-mit12:amd64=1.19.2-2ubuntu0.6`
+- `libkdb5-10:amd64=1.19.2-2ubuntu0.6`
+- `libkrb5-3:amd64=1.19.2-2ubuntu0.6`
+- `libkrb5support0:amd64=1.19.2-2ubuntu0.6`
+
+Licenses: (parsed from: `/usr/share/doc/krb5-user/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libgssrpc4/copyright`, `/usr/share/doc/libkadm5clnt-mit12/copyright`, `/usr/share/doc/libkadm5srv-mit12/copyright`, `/usr/share/doc/libkdb5-10/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
+
+- `GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris krb5=1.19.2-2ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.6.dsc' krb5_1.19.2-2ubuntu0.6.dsc 3652 SHA512:6238f49faf19c51e7d2b6f3b1897f8d99e85037e501fbf535cbcda1ba04f2415408c2550d968853b4b86aa7a9bdf8c20e905c9dbf780659886bec7adf34918c0
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2.orig.tar.gz' krb5_1.19.2.orig.tar.gz 8741053 SHA512:b90d6ed0e1e8a87eb5cb2c36d88b823a6a6caabf85e5d419adb8a930f7eea09a5f8491464e7e454cca7ba88be09d19415962fe0036ad2e31fc584f9fc0bbd470
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.19.2-2ubuntu0.6.debian.tar.xz' krb5_1.19.2-2ubuntu0.6.debian.tar.xz 120948 SHA512:8c33d002a641dc81447a58770aa6c01a497d7ccd637765287aeed2e967ddfa40707522385c1b4af2b1a81646a2a9c54f3f5a4b6f2ce833a94fab4c8e2ec8c2c7
+```
 
 ### `dpkg` source package: `libalgorithm-diff-perl=1.201-1`
 
@@ -2056,20 +2095,25 @@ $ apt-get source -qq --print-uris libxdmcp=1:1.1.3-0ubuntu5
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxdmcp/libxdmcp_1.1.3-0ubuntu5.diff.gz' libxdmcp_1.1.3-0ubuntu5.diff.gz 18395 SHA512:552a04477a7852b2a68ba268dcd19cee9dd89c2774b6c86ca8f11180f6b179cc7853348653cf3b7d3e89a0079bef91308e8da2dfd34d0f42104f352e47ea07bd
 ```
 
-### `dpkg` source package: `libxml2=2.9.13+dfsg-1ubuntu0.5`
+### `dpkg` source package: `libxml2=2.9.13+dfsg-1ubuntu0.6`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.13+dfsg-1ubuntu0.5`
+- `libxml2:amd64=2.9.13+dfsg-1ubuntu0.6`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.13+dfsg-1ubuntu0.6
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.6.dsc' libxml2_2.9.13+dfsg-1ubuntu0.6.dsc 3071 SHA512:b082d31975cca5181bdc2e2745db3dce8c43bc3b13e29a4e232cfb531fc64c50964e5a9356df49e979be3186916294bd4c34d856bb3c978407d74ea39c13b29c
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg.orig.tar.xz' libxml2_2.9.13+dfsg.orig.tar.xz 2351356 SHA512:6283071de4934c856c7ff5202ac1a2ed5892d7fcde82a364d40c8bc2bf3d3201fbcbb5f6983d8bf6b962026bc216b8182d71efe280f1dcef2931b277314e6e89
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.13%2bdfsg-1ubuntu0.6.debian.tar.xz' libxml2_2.9.13+dfsg-1ubuntu0.6.debian.tar.xz 39176 SHA512:3dfec0d45d9a8b06f3f47c5caa23ffc6ef73e3938ce4da04160cd44d1cb35c7a6c062dacf8f9708691cd68744c22f3a9b3ae14001b4842a860bec165a116d394
+```
 
 ### `dpkg` source package: `libxpm=1:3.5.12-1ubuntu0.22.04.2`
 
@@ -2112,19 +2156,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.8+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.8%2bdfsg-3build1.debian.tar.xz' libzstd_1.4.8+dfsg-3build1.debian.tar.xz 12316 SHA512:8123965a6e73c5ddd8d535e78ed1074e2eabd7f8ed090d215a89feedffae9391cf472d2395242d3cb0351cbf76603448dae93ad70d0989806b42b03c65b22db0
 ```
 
-### `dpkg` source package: `linux=5.15.0-131.141`
+### `dpkg` source package: `linux=5.15.0-134.145`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.15.0-131.141`
+- `linux-libc-dev:amd64=5.15.0-134.145`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.15.0-134.145
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-134.145.dsc' linux_5.15.0-134.145.dsc 7820 SHA512:7d9c1de3b141a7fe674394c05bde8dde9b0c189033e8efd2b60cf9aedf9a10d927a16ed41e191fae617a0ab11ac9cffa81cb0fcde609b9ef35f7bc9bc571845e
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0.orig.tar.gz' linux_5.15.0.orig.tar.gz 194969557 SHA512:ae9a32132d5988441c189157703b0f8fa4e232d8d24f7104f944c06827db740beafae55eb37a51eb99b4ac513927cd372321fa1e84afff4d450b786e44414861
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.15.0-134.145.diff.gz' linux_5.15.0-134.145.diff.gz 11252139 SHA512:5077e70c090442ca1ac3091968a701b6e770e6c0979a30d08b825d669e6a439c97cecaf976b8b0e9e358c1abf4726d651922d71cfb300423108a06669d9fb09c
+```
 
 ### `dpkg` source package: `lmdb=0.9.24-1build2`
 
@@ -2875,17 +2924,17 @@ $ apt-get source -qq --print-uris python3-stdlib-extensions=3.10.8-1~22.04
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-stdlib-extensions/python3-stdlib-extensions_3.10.8-1%7e22.04.debian.tar.xz' python3-stdlib-extensions_3.10.8-1~22.04.debian.tar.xz 25884 SHA512:214b4a62091181291a22ce1a2016e5b3d8f24f62f245494f82bd3a527b46886f1537f1e33fcde5261c81cb50d6d177cdeb899955d7da7c367511594ed99825ce
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.8`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.9`
 
 Binary Packages:
 
-- `libpython3.10:amd64=3.10.12-1~22.04.8`
-- `libpython3.10-dev:amd64=3.10.12-1~22.04.8`
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.8`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.8`
-- `python3.10=3.10.12-1~22.04.8`
-- `python3.10-dev=3.10.12-1~22.04.8`
-- `python3.10-minimal=3.10.12-1~22.04.8`
+- `libpython3.10:amd64=3.10.12-1~22.04.9`
+- `libpython3.10-dev:amd64=3.10.12-1~22.04.9`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.9`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.9`
+- `python3.10=3.10.12-1~22.04.9`
+- `python3.10-dev=3.10.12-1~22.04.9`
+- `python3.10-minimal=3.10.12-1~22.04.9`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/doc/libpython3.10-dev/copyright`, `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-dev/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -2907,9 +2956,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10/copyright`, `/usr/share/do
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.9.dsc' python3.10_3.10.12-1~22.04.9.dsc 3674 SHA512:a6b160959829590a6660cd914058f5ea67d4b3a51234d07ae7c11f98ee1505b2a6246962cc67c1bb5f937a8e61a42b6a5f7897ccb96b585819e08c01e837d6be
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.9.debian.tar.xz' python3.10_3.10.12-1~22.04.9.debian.tar.xz 247836 SHA512:c30ae6e675b7459e7c66dba2a3f037e4efc495e6b8a82ad162e734ec6d473259cc4975a31c18e714a441206fd3abf51ae2c4b5bd722d4067e8968b464d6bbdfe
+```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 

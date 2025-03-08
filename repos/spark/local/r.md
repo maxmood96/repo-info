@@ -1,10 +1,10 @@
-# `spark:3.5.4-scala2.12-java11-r-ubuntu`
+# `spark:3.5.5-scala2.12-java11-r-ubuntu`
 
 ## Docker Metadata
 
-- Image ID: `sha256:e2d28dd4d61661ea383398aa9d7a9fad0212bd576e8e525fa83b997fa08bae2f`
-- Created: `2024-12-22T05:28:31Z`
-- Virtual Size: ~ 1.32 Gb  
+- Image ID: `sha256:81ae3565af0922feb49fb81e3d2fb8454cc53209ee46f429885912746a2834c4`
+- Created: `2025-02-28T04:45:43Z`
+- Virtual Size: ~ 1.33 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/entrypoint.sh"]`
@@ -15,9 +15,9 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-11.0.26+4`
-  - `SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.5.4/spark-3.5.4-bin-hadoop3.tgz`
-  - `SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.5.4/spark-3.5.4-bin-hadoop3.tgz.asc`
-  - `GPG_KEY=19F745C40A0E550420BB2C522541488DA93FE4B4`
+  - `SPARK_TGZ_URL=https://archive.apache.org/dist/spark/spark-3.5.5/spark-3.5.5-bin-hadoop3.tgz`
+  - `SPARK_TGZ_ASC_URL=https://archive.apache.org/dist/spark/spark-3.5.5/spark-3.5.5-bin-hadoop3.tgz.asc`
+  - `GPG_KEY=F28C9C925C188C35E345614DEDA00CE834F0FC5C`
   - `SPARK_HOME=/opt/spark`
   - `R_HOME=/usr/lib/R`
 - Labels:
@@ -237,16 +237,16 @@ $ apt-get source -qq --print-uris bind9=1:9.18.30-0ubuntu0.20.04.2
 'http://archive.ubuntu.com/ubuntu/pool/main/b/bind9/bind9_9.18.30-0ubuntu0.20.04.2.debian.tar.xz' bind9_9.18.30-0ubuntu0.20.04.2.debian.tar.xz 96256 SHA512:71ee5b2c0565200708abf187a8780d8a0d56f91c1249f023ae99ca0025946d7dcb13d7986d6de637fb12f04652dc07b42a9c343c8b65deda6f6d9f5d92ddf5ca
 ```
 
-### `dpkg` source package: `binutils=2.34-6ubuntu1.9`
+### `dpkg` source package: `binutils=2.34-6ubuntu1.10`
 
 Binary Packages:
 
-- `binutils=2.34-6ubuntu1.9`
-- `binutils-common:amd64=2.34-6ubuntu1.9`
-- `binutils-x86-64-linux-gnu=2.34-6ubuntu1.9`
-- `libbinutils:amd64=2.34-6ubuntu1.9`
-- `libctf-nobfd0:amd64=2.34-6ubuntu1.9`
-- `libctf0:amd64=2.34-6ubuntu1.9`
+- `binutils=2.34-6ubuntu1.10`
+- `binutils-common:amd64=2.34-6ubuntu1.10`
+- `binutils-x86-64-linux-gnu=2.34-6ubuntu1.10`
+- `libbinutils:amd64=2.34-6ubuntu1.10`
+- `libctf-nobfd0:amd64=2.34-6ubuntu1.10`
+- `libctf0:amd64=2.34-6ubuntu1.10`
 
 Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/binutils-common/copyright`, `/usr/share/doc/binutils-x86-64-linux-gnu/copyright`, `/usr/share/doc/libbinutils/copyright`, `/usr/share/doc/libctf-nobfd0/copyright`, `/usr/share/doc/libctf0/copyright`)
 
@@ -254,9 +254,14 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris binutils=2.34-6ubuntu1.10
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.10.dsc' binutils_2.34-6ubuntu1.10.dsc 8833 SHA512:2e02e6a55d3ea693e96a949a87da2a14bb119fb597e1c3142b38dc33d3cae3222093823697a6080dcb0eb966183b813af1ec9bc3b3b76be62b52ddc092e7e406
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34.orig.tar.xz' binutils_2.34.orig.tar.xz 21637796 SHA512:2c7976939dcf5e8c5b7374cccd39bfe803b1bec73c6abfa0eb17c24e1942574c6bdb874c66a092a82adc443182eacd8a5a8001c19a76101f0c7ba40c27de0bbd
+'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.34-6ubuntu1.10.debian.tar.xz' binutils_2.34-6ubuntu1.10.debian.tar.xz 171024 SHA512:9ca42d78d284c6b0896a6e6cd3ad656081bb0286b1a880554005417d027d8545c536809cb611c9d02964b2e93ae95b95749f2107015d2817f5fb8a123da56819
+```
 
 ### `dpkg` source package: `boot=1.3-24-2`
 
@@ -1016,12 +1021,9 @@ $ apt-get source -qq --print-uris glib2.0=2.64.6-1~ubuntu20.04.8
 Binary Packages:
 
 - `libc-bin=2.31-0ubuntu9.16`
-- `libc-dev-bin=2.31-0ubuntu9.16`
-- `libc6:amd64=2.31-0ubuntu9.16`
-- `libc6-dev:amd64=2.31-0ubuntu9.16`
 - `locales=2.31-0ubuntu9.16`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`, `/usr/share/doc/locales/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/locales/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -1029,6 +1031,28 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `glibc=2.31-0ubuntu9.17`
+
+Binary Packages:
+
+- `libc-dev-bin=2.31-0ubuntu9.17`
+- `libc6:amd64=2.31-0ubuntu9.17`
+- `libc6-dev:amd64=2.31-0ubuntu9.17`
+
+Licenses: (parsed from: `/usr/share/doc/libc-dev-bin/copyright`, `/usr/share/doc/libc6/copyright`, `/usr/share/doc/libc6-dev/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.31-0ubuntu9.17
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.17.dsc' glibc_2.31-0ubuntu9.17.dsc 9597 SHA512:ea4d5a3f0dfdb53d297fd5ada22381a223c8b3600b69ad937d09f4018567dc1e2003c1d7dbcc8cca144c8141ced0f331a919df05f69b2261d8cea110843509a6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.17.debian.tar.xz' glibc_2.31-0ubuntu9.17.debian.tar.xz 891104 SHA512:089a843327e9c60730b5bc34a9b41c9b541da8d7e21b043238de82a0a02ef34cacfd6f654231df7ef7aa758d6018a446dd866e4817385588ff157b96afbafb29
+```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4ubuntu0.1`
 
@@ -1208,19 +1232,24 @@ $ apt-get source -qq --print-uris gzip=1.10-0ubuntu4.1
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gzip/gzip_1.10-0ubuntu4.1.debian.tar.xz' gzip_1.10-0ubuntu4.1.debian.tar.xz 31144 SHA512:26096584c400dc78d892f1721ad28778aa1a0c0476337bd37589c6d985f8636aad9c7fde55385c25ce1c8420a40c6ca33c06887f18b855ba8a5f45b980fe6c99
 ```
 
-### `dpkg` source package: `harfbuzz=2.6.4-1ubuntu4.2`
+### `dpkg` source package: `harfbuzz=2.6.4-1ubuntu4.3`
 
 Binary Packages:
 
-- `libharfbuzz0b:amd64=2.6.4-1ubuntu4.2`
+- `libharfbuzz0b:amd64=2.6.4-1ubuntu4.3`
 
 Licenses: (parsed from: `/usr/share/doc/libharfbuzz0b/copyright`)
 
 - `MIT`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris harfbuzz=2.6.4-1ubuntu4.3
+'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_2.6.4-1ubuntu4.3.dsc' harfbuzz_2.6.4-1ubuntu4.3.dsc 2849 SHA512:440ad010c9ac348776dc8a09605f4d5ff6aa34716c72aa9af3e44950ac838011d20520881a7683b184f5e3a8a290cee16d82c1088af76180db7c3cd1fc3868cf
+'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_2.6.4.orig.tar.xz' harfbuzz_2.6.4.orig.tar.xz 5967468 SHA512:d8664bb64fda11ff7646693070637e3827f8b3d1de50e11ecf108ce4d19c878b26b2ba4cff278da6e6cc0cb431e1630d9eaa7c32a9bebb9655a7aa8dabf7114f
+'http://archive.ubuntu.com/ubuntu/pool/main/h/harfbuzz/harfbuzz_2.6.4-1ubuntu4.3.debian.tar.xz' harfbuzz_2.6.4-1ubuntu4.3.debian.tar.xz 15248 SHA512:5bc7e0450f50dfab7938534f0fd875715b5fc5f39c25b63d80573bd6ff4db3cc6e7f1e14aa691fe8b41029da5a22101269a3e4a346c786366f7ee42517065003
+```
 
 ### `dpkg` source package: `heimdal=7.7.0+dfsg-1ubuntu1.4`
 
@@ -1458,23 +1487,41 @@ $ apt-get source -qq --print-uris keyutils=1.6-6ubuntu1.1
 
 Binary Packages:
 
-- `krb5-user=1.17-6ubuntu4.7`
-- `libgssapi-krb5-2:amd64=1.17-6ubuntu4.7`
-- `libgssrpc4:amd64=1.17-6ubuntu4.7`
 - `libk5crypto3:amd64=1.17-6ubuntu4.7`
-- `libkadm5clnt-mit11:amd64=1.17-6ubuntu4.7`
-- `libkadm5srv-mit11:amd64=1.17-6ubuntu4.7`
-- `libkdb5-9:amd64=1.17-6ubuntu4.7`
-- `libkrb5-3:amd64=1.17-6ubuntu4.7`
-- `libkrb5support0:amd64=1.17-6ubuntu4.7`
 
-Licenses: (parsed from: `/usr/share/doc/krb5-user/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libgssrpc4/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkadm5clnt-mit11/copyright`, `/usr/share/doc/libkadm5srv-mit11/copyright`, `/usr/share/doc/libkdb5-9/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libk5crypto3/copyright`)
 
 - `GPL-2`
 
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `krb5=1.17-6ubuntu4.9`
+
+Binary Packages:
+
+- `krb5-user=1.17-6ubuntu4.9`
+- `libgssapi-krb5-2:amd64=1.17-6ubuntu4.9`
+- `libgssrpc4:amd64=1.17-6ubuntu4.9`
+- `libkadm5clnt-mit11:amd64=1.17-6ubuntu4.9`
+- `libkadm5srv-mit11:amd64=1.17-6ubuntu4.9`
+- `libkdb5-9:amd64=1.17-6ubuntu4.9`
+- `libkrb5-3:amd64=1.17-6ubuntu4.9`
+- `libkrb5support0:amd64=1.17-6ubuntu4.9`
+
+Licenses: (parsed from: `/usr/share/doc/krb5-user/copyright`, `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libgssrpc4/copyright`, `/usr/share/doc/libkadm5clnt-mit11/copyright`, `/usr/share/doc/libkadm5srv-mit11/copyright`, `/usr/share/doc/libkdb5-9/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
+
+- `GPL-2`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris krb5=1.17-6ubuntu4.9
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.9.dsc' krb5_1.17-6ubuntu4.9.dsc 3637 SHA512:7d116f8323f983bc3d0c5ae481abb9758b08584318d14017c032005f464bd2bc2744f3a5b7f24df77f6a1d52a1194e439ea4218c551c80f786174c6abbfb9ec6
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17.orig.tar.gz' krb5_1.17.orig.tar.gz 8761763 SHA512:7462a578b936bd17f155a362dbb5d388e157a80a096549028be6c55400b11361c7f8a28e424fd5674801873651df4e694d536cae66728b7ae5e840e532358c52
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.17-6ubuntu4.9.debian.tar.xz' krb5_1.17-6ubuntu4.9.debian.tar.xz 162744 SHA512:ee8fac2655b55ee7d5b1a49ba128adb3e58d08a87ee69b35601b0528239b914bdc22ebec7953c3980ccad587db63dc210986f8748ac46920bbb324e66e9ef4e8
+```
 
 ### `dpkg` source package: `lapack=3.9.0-1build1`
 
@@ -3430,20 +3477,25 @@ $ apt-get source -qq --print-uris libxml-xpathengine-perl=0.14-1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml-xpathengine-perl/libxml-xpathengine-perl_0.14-1.debian.tar.xz' libxml-xpathengine-perl_0.14-1.debian.tar.xz 4680 SHA256:2e66d2548a546d97963344a04a4b8ffedc3a5206f04ca7900eba0ee49760401e
 ```
 
-### `dpkg` source package: `libxml2=2.9.10+dfsg-5ubuntu0.20.04.8`
+### `dpkg` source package: `libxml2=2.9.10+dfsg-5ubuntu0.20.04.9`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.10+dfsg-5ubuntu0.20.04.8`
+- `libxml2:amd64=2.9.10+dfsg-5ubuntu0.20.04.9`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.10+dfsg-5ubuntu0.20.04.9
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg-5ubuntu0.20.04.9.dsc' libxml2_2.9.10+dfsg-5ubuntu0.20.04.9.dsc 3162 SHA512:58d9ce782cb87d448f71f14fced4914b8c203e8fda7d23c3655d20ebf616c43242165af6a7367a739c17b87d786e09f0598c74b629539746cf3fa00e7a547c32
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg.orig.tar.xz' libxml2_2.9.10+dfsg.orig.tar.xz 2503560 SHA512:605c6c0f8bf2c53208d0a036ff09a4025843f45139b711c90dc83066feda2f285a5578d55d4a58d33eedbe7485a5c1ec5608ba6c6beed1fb55649f87dca0cec3
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.10%2bdfsg-5ubuntu0.20.04.9.debian.tar.xz' libxml2_2.9.10+dfsg-5ubuntu0.20.04.9.debian.tar.xz 44136 SHA512:6093df0715bc7211928f57a62d6b9874ebaec01d2f4c9fbd815ea37ce720e7ebe6b8279e33defa730e1e5ba72f65a7de2a6a1a8104b4bb3636498d55ee0e18e7
+```
 
 ### `dpkg` source package: `libxmu=2:1.1.3-0ubuntu1`
 
@@ -3679,19 +3731,24 @@ $ apt-get source -qq --print-uris libzstd=1.4.4+dfsg-3ubuntu0.1
 'http://archive.ubuntu.com/ubuntu/pool/main/libz/libzstd/libzstd_1.4.4%2bdfsg-3ubuntu0.1.debian.tar.xz' libzstd_1.4.4+dfsg-3ubuntu0.1.debian.tar.xz 17300 SHA512:0484891be5603d00bd57b799c708b9395fccbaa8c6c44f535377f6fa2c7ac22c01c8a3c1b45e1c1f3c30f19dc74d510626bf82067fcbfb53c39f1bcc2249affe
 ```
 
-### `dpkg` source package: `linux=5.4.0-205.225`
+### `dpkg` source package: `linux=5.4.0-208.228`
 
 Binary Packages:
 
-- `linux-libc-dev:amd64=5.4.0-205.225`
+- `linux-libc-dev:amd64=5.4.0-208.228`
 
 Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris linux=5.4.0-208.228
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-208.228.dsc' linux_5.4.0-208.228.dsc 7442 SHA512:fcdc51e5dbe28c5856b612b2028057f37fdf9dcd894591c712c0daba04b6a6d40ba0b48d7b67010ca08fbfcf8c27caa5a1914e09608bafa3db2b701a763ee300
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
+'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-208.228.diff.gz' linux_5.4.0-208.228.diff.gz 10047377 SHA512:9f496f9543580ac5f4723c10483b4fe3e1d3cb223e1d0c4a1e01552c6cc45ebed70e46fd5c0aebf653bc46920f27fa054a6a7451e099dcf211aa6f5ee1a53042
+```
 
 ### `dpkg` source package: `llvm-toolchain-12=1:12.0.0-3ubuntu1~20.04.5`
 
