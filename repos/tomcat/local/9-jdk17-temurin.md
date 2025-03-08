@@ -1,10 +1,10 @@
-# `tomcat:9.0.100-jdk17-temurin-noble`
+# `tomcat:9.0.102-jdk17-temurin-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:ee5f8d8e8c96e92a99a87d01fad6bd2eea26c9e786f8bf4948ea56d0f11dd7bd`
-- Created: `2025-02-18T12:06:03Z`
-- Virtual Size: ~ 484.53 Mb  
+- Image ID: `sha256:2ad47d46b33afb87d57f35a4d73bfc63e5b430bb678fc4d974407cdf2a68bb2b`
+- Created: `2025-03-06T15:03:40Z`
+- Virtual Size: ~ 492.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -19,8 +19,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=9`
-  - `TOMCAT_VERSION=9.0.100`
-  - `TOMCAT_SHA512=e0b1379866d09b54f2743afb382c32a33bca9652c379467c1fa0a5b15a1b98830ae23fb1d8f96c43148844ce95b6c1d22a66db3f8efaf41f225b158c3cb71c92`
+  - `TOMCAT_VERSION=9.0.102`
+  - `TOMCAT_SHA512=cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`
@@ -1674,12 +1674,12 @@ Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3.4`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.5`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.0.13-0ubuntu3.4`
-- `openssl=3.0.13-0ubuntu3.4`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.5`
+- `openssl=3.0.13-0ubuntu3.5`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
@@ -1688,9 +1688,14 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.5
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.5.dsc' openssl_3.0.13-0ubuntu3.5.dsc 2512 SHA512:2071df5d403c0b39ae500ee2fe1118313df10cc187d533813f634c96d2653cfde840318238b39525bbb47a52db7abf7fc2dd9b655a486a4c79a6123638f35f9e
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.5.debian.tar.xz' openssl_3.0.13-0ubuntu3.5.debian.tar.xz 169252 SHA512:29b18d2b824b85ac7fe31ad93ef0ac7320701806d59497c65cf615e9495025007c6052c0878a8cc3bf08860ace1e04c33f56e88c7026bd362eb32142c963a1a0
+```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 
