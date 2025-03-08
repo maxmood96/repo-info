@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0144af7823f5b8949315c2227b859b82543aafc86fa9992d29d2a1a144ce1104`
-- Created: `2025-02-04T20:34:34Z`
+- Image ID: `sha256:3ae3fdb77e2c85145ffe6f0c5850643cb687a83bf010534041f185982aac5d20`
+- Created: `2025-02-27T14:27:24Z`
 - Virtual Size: ~ 139.52 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -866,16 +866,16 @@ MIT
 ### `apk` package: `libffi`
 
 ```console
-libffi-3.4.6-r0 description:
+libffi-3.4.7-r0 description:
 portable, high level programming interface to various calling conventions.
 
-libffi-3.4.6-r0 webpage:
+libffi-3.4.7-r0 webpage:
 https://sourceware.org/libffi/
 
-libffi-3.4.6-r0 installed size:
+libffi-3.4.7-r0 installed size:
 38 KiB
 
-libffi-3.4.6-r0 license:
+libffi-3.4.7-r0 license:
 MIT
 
 ```
