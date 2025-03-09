@@ -336,14 +336,9 @@ Licenses: (parsed from: `/usr/share/doc/libcryptsetup12/copyright`)
 - `LGPL-2.1+ with OpenSSL exception`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cryptsetup=2:2.4.3-1ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.4.3-1ubuntu1.2.dsc' cryptsetup_2.4.3-1ubuntu1.2.dsc 3185 SHA512:e987bdb56425df45cd62e11e781bc2eb66ddf49c34f3aaecd7a240ebf351eb137806ab9f45b6cb5621483402f46f20626010b05874b34bdeab77f9f017b59682
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.4.3.orig.tar.gz' cryptsetup_2.4.3.orig.tar.gz 11434956 SHA512:346893db2d0857953470c614e5808c514edd58f0c7c3fb127ce389128a69ca3821ec53d63e19131616a3598b9a373652da74fbf93de2a2662e6c9001fb486f65
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cryptsetup/cryptsetup_2.4.3-1ubuntu1.2.debian.tar.xz' cryptsetup_2.4.3-1ubuntu1.2.debian.tar.xz 142616 SHA512:e465388c68b8d3b8058e1a8c7ae66b878be3e75ec1ff020a0501a0cead878ef1cce058b22438f33f5fcd76843e13fc84439a3f5cb0f7adf525cab760cfe48e46
-```
 
 ### `dpkg` source package: `dash=0.5.11+git20210903+057cd650a4ed-3build1`
 
