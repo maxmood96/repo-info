@@ -8,6 +8,12 @@
 -	[`adminer:4.17.1`](#adminer4171)
 -	[`adminer:4.17.1-fastcgi`](#adminer4171-fastcgi)
 -	[`adminer:4.17.1-standalone`](#adminer4171-standalone)
+-	[`adminer:5`](#adminer5)
+-	[`adminer:5-fastcgi`](#adminer5-fastcgi)
+-	[`adminer:5-standalone`](#adminer5-standalone)
+-	[`adminer:5.0.2`](#adminer502)
+-	[`adminer:5.0.2-fastcgi`](#adminer502-fastcgi)
+-	[`adminer:5.0.2-standalone`](#adminer502-standalone)
 -	[`adminer:fastcgi`](#adminerfastcgi)
 -	[`adminer:latest`](#adminerlatest)
 -	[`adminer:standalone`](#adminerstandalone)
@@ -8609,6 +8615,30 @@ $ docker pull adminer@sha256:f843ec3eb3b0a4203fde1cf42d9dbf40be059761e685ccba732
 		Last Modified: Tue, 25 Feb 2025 20:20:42 GMT  
 		Size: 34.6 KB (34621 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `adminer:5`
+
+**does not exist** (yet?)
+
+## `adminer:5-fastcgi`
+
+**does not exist** (yet?)
+
+## `adminer:5-standalone`
+
+**does not exist** (yet?)
+
+## `adminer:5.0.2`
+
+**does not exist** (yet?)
+
+## `adminer:5.0.2-fastcgi`
+
+**does not exist** (yet?)
+
+## `adminer:5.0.2-standalone`
+
+**does not exist** (yet?)
 
 ## `adminer:fastcgi`
 
