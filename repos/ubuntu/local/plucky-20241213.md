@@ -1498,15 +1498,13 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 - `none`
 - `permissive-nowarranty`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xz-utils=5.6.3-1
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.3-1.dsc' xz-utils_5.6.3-1.dsc 2704 SHA512:bdd1dae1dbb6046f3fe013c8c0ac80eadc4ace63c4d800ed70d5f26dc17f384dc7e42c3b2c8bbc6de1b37d3256df3fbb6da998f75e5a182c28a3805d3c6d97ac
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.3.orig.tar.xz' xz-utils_5.6.3.orig.tar.xz 1328224 SHA512:1449f3b55819fb7f46855e550e367e96d658f523531fc2a65c2e1f1b847de86bf2fa50f3909f42cbff94a56b0cf8b0b5cd278097622da980119548f61e245f0a
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.3.orig.tar.xz.asc' xz-utils_5.6.3.orig.tar.xz.asc 833 SHA512:ec5e28d156379c2d451beef1f82e67e8e2133a0e558e62f20d2a93945568de8a8a3315974b75ab2dec23027885e39bcb7e4fa8d77ada41eebb898f0140026fb7
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.3-1.debian.tar.xz' xz-utils_5.6.3-1.debian.tar.xz 24548 SHA512:f518cb9f169a75e3db667b16903f8030da165267cf34181373889dbb155a945948c98e99c618438485f951973016d36614e3a6513e10447a29a3824109ed7933
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/xz-utils/5.6.3-1/
+
 
 ### `dpkg` source package: `zlib=1:1.3.dfsg+really1.3.1-1ubuntu1`
 
