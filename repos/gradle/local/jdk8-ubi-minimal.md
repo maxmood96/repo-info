@@ -1,10 +1,10 @@
-# `gradle:8.13-jdk8-ubi`
+# `gradle:8.13.0-jdk8-ubi`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1a1582b40f4cda2914059dc8fd77421329994acd116bf2de075e3f06c0d3efd9`
+- Image ID: `sha256:cfd7531a956a3290a50c899f7efd70d4fbc7520df2926d805cc2aa4e36f20025`
 - Created: `2025-03-04T19:20:27Z`
-- Virtual Size: ~ 606.68 Mb  
+- Virtual Size: ~ 606.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -21,22 +21,22 @@
   - `GRADLE_VERSION=8.13`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-02-13T04:15:47Z`
+  - `build-date=2025-03-10T09:43:12Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `distribution-scope=public`
-  - `io.buildah.version=1.38.0-dev`
+  - `io.buildah.version=1.39.0-dev`
   - `io.k8s.description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
   - `io.k8s.display-name=Red Hat Universal Base Image 9 Minimal`
   - `io.openshift.expose-services=`
   - `io.openshift.tags=minimal rhel9`
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
-  - `release=1739420147`
+  - `release=1741599792`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://www.redhat.com`
-  - `vcs-ref=c0546ad1ce412f8077a547cb8d0d68d04f08815c`
+  - `vcs-ref=2f8e6c4d7ad22789d5663bf4bd66603301fba889`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.5`
@@ -527,48 +527,48 @@ $ dnf --quiet download --source --url glib2-2.68.4-14.el9_4.1
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glib2-2.68.4-14.el9_4.1.src.rpm
 ```
 
-### `rpm` package: `glibc-2.34-125.el9_5.1.x86_64`
+### `rpm` package: `glibc-2.34-125.el9_5.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.34-125.el9_5.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.1.src.rpm
+$ dnf --quiet download --source --url glibc-2.34-125.el9_5.3
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.3.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.34-125.el9_5.1.x86_64`
+### `rpm` package: `glibc-common-2.34-125.el9_5.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.34-125.el9_5.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.1.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.34-125.el9_5.3
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.3.src.rpm
 ```
 
-### `rpm` package: `glibc-langpack-en-2.34-125.el9_5.1.x86_64`
+### `rpm` package: `glibc-langpack-en-2.34-125.el9_5.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-langpack-en-2.34-125.el9_5.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.1.src.rpm
+$ dnf --quiet download --source --url glibc-langpack-en-2.34-125.el9_5.3
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.3.src.rpm
 ```
 
-### `rpm` package: `glibc-minimal-langpack-2.34-125.el9_5.1.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-125.el9_5.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-125.el9_5.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.1.src.rpm
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-125.el9_5.3
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/g/glibc-2.34-125.el9_5.3.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.2.0-13.el9.x86_64`

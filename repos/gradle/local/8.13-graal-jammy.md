@@ -1,4 +1,4 @@
-# `gradle:8.13-jdk21-graal-jammy`
+# `gradle:8.13.0-jdk21-graal-jammy`
 
 ## Docker Metadata
 

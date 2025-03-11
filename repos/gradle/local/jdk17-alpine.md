@@ -1,4 +1,4 @@
-# `gradle:8.13-jdk17-alpine`
+# `gradle:8.13.0-jdk17-alpine`
 
 ## Docker Metadata
 

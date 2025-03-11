@@ -1,4 +1,4 @@
-# `gradle:8.13-jdk11-corretto`
+# `gradle:8.13.0-jdk11-corretto`
 
 ## Docker Metadata
 

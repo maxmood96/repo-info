@@ -1,4 +1,4 @@
-# `gradle:8.13-jdk-lts-and-current-corretto`
+# `gradle:8.13.0-jdk-lts-and-current-corretto`
 
 ## Docker Metadata
 
