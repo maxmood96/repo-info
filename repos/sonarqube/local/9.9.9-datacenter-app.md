@@ -1,10 +1,10 @@
-# `sonarqube:9.9.8-datacenter-app`
+# `sonarqube:9.9.9-datacenter-app`
 
 ## Docker Metadata
 
-- Image ID: `sha256:75facf852e1fdfbe4b957e8ccff021702778dc803d404059408a6a607769d161`
-- Created: `2025-01-20T15:15:41Z`
-- Virtual Size: ~ 752.44 Mb  
+- Image ID: `sha256:ed2119472ece040a89d91088094ee71a2749c0c609c217dc27ce0570730e3536`
+- Created: `2025-03-10T14:07:53Z`
+- Virtual Size: ~ 752.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/opt/sonarqube/docker/run.sh"]`
@@ -17,7 +17,7 @@
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.14+7`
   - `SONARQUBE_HOME=/opt/sonarqube`
-  - `SONAR_VERSION=9.9.8.100196`
+  - `SONAR_VERSION=9.9.9.104369`
   - `SQ_DATA_DIR=/opt/sonarqube/data`
   - `SQ_EXTENSIONS_DIR=/opt/sonarqube/extensions`
   - `SQ_LOGS_DIR=/opt/sonarqube/logs`
@@ -1050,9 +1050,8 @@ $ apt-get source -qq --print-uris libcap-ng=0.7.9-2.2build3
 Binary Packages:
 
 - `libcap2:amd64=1:2.44-1ubuntu0.22.04.1`
-- `libcap2-bin=1:2.44-1ubuntu0.22.04.1`
 
-Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`, `/usr/share/doc/libcap2-bin/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 
 - `BSD-3-clause`
 - `GPL-2`
@@ -1061,6 +1060,27 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`, `/usr/share/doc/libc
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `libcap2=1:2.44-1ubuntu0.22.04.2`
+
+Binary Packages:
+
+- `libcap2-bin=1:2.44-1ubuntu0.22.04.2`
+
+Licenses: (parsed from: `/usr/share/doc/libcap2-bin/copyright`)
+
+- `BSD-3-clause`
+- `GPL-2`
+- `GPL-2+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris libcap2=1:2.44-1ubuntu0.22.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.44-1ubuntu0.22.04.2.dsc' libcap2_2.44-1ubuntu0.22.04.2.dsc 2318 SHA512:7762231edf17ffd462dcc81d4ce9fed38b1eb87eed0fc15ae34f95f8464a2d1f8b22a7ca4fc32ec015d81b6cd2f8e05b7f95936e414f1f8d9f400db1d8ef71f6
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.44.orig.tar.xz' libcap2_2.44.orig.tar.xz 125568 SHA512:1bb323ca362923bd6bd0e2e4639cf8726975165a620a243b31e797056439eb7efb2bfbc8e5521636783a86c7415b2037b1638c98747b79183ca7d3d42a04ff20
+'http://archive.ubuntu.com/ubuntu/pool/main/libc/libcap2/libcap2_2.44-1ubuntu0.22.04.2.debian.tar.xz' libcap2_2.44-1ubuntu0.22.04.2.debian.tar.xz 23308 SHA512:7a6894c76276e367e7257aa6e2a3cf96d13afe870a42d1298284b4a3ae47ae53922ca4a38466e0b5bb51b832718f8634f72a22e90f996c5b77665454d87044fe
+```
 
 ### `dpkg` source package: `libffi=3.4.2-4`
 
