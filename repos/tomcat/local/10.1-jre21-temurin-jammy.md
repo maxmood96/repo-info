@@ -1,10 +1,10 @@
-# `tomcat:10.1.36-jre21-temurin-jammy`
+# `tomcat:10.1.39-jre21-temurin-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:99a5e0eccaa10b169943f2c1a496bd211f16955a9be41aeaee6beaebc1cf4a01`
-- Created: `2025-02-18T15:03:21Z`
-- Virtual Size: ~ 305.43 Mb  
+- Image ID: `sha256:d1e7fb908915ca80caab4c404ea2ba4340c0582f5435223122a0a258129ad4d5`
+- Created: `2025-03-07T21:03:19Z`
+- Virtual Size: ~ 312.89 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -19,8 +19,8 @@
   - `TOMCAT_NATIVE_LIBDIR=/usr/local/tomcat/native-jni-lib`
   - `LD_LIBRARY_PATH=/usr/local/tomcat/native-jni-lib`
   - `TOMCAT_MAJOR=10`
-  - `TOMCAT_VERSION=10.1.36`
-  - `TOMCAT_SHA512=972a406263fd540b135efae4b375543781b26104acb07114c3e535fe31e5b0a5c87ae6dff055e0e47877a3861070c264bb236686cf08bc08d98b7541e5d743c7`
+  - `TOMCAT_VERSION=10.1.39`
+  - `TOMCAT_SHA512=55998c7e906a37340f4b56ca66d4a1ef7c0f7a061a9b868e7ed90cce8188f469495ee590d9971eb8d9870dc34ed89b63d6b870a281cb7e84de14a7555fc100e1`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=22.04`
@@ -1551,10 +1551,9 @@ This is *usually* due to a new package version being released and the old versio
 
 Binary Packages:
 
-- `libssl3:amd64=3.0.2-0ubuntu1.18`
 - `openssl=3.0.2-0ubuntu1.18`
 
-Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/openssl/copyright`)
+Licenses: (parsed from: `/usr/share/doc/openssl/copyright`)
 
 - `Apache-2.0`
 - `Artistic`
@@ -1564,6 +1563,29 @@ Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`, `/usr/share/doc/open
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `openssl=3.0.2-0ubuntu1.19`
+
+Binary Packages:
+
+- `libssl3:amd64=3.0.2-0ubuntu1.19`
+
+Licenses: (parsed from: `/usr/share/doc/libssl3/copyright`)
+
+- `Apache-2.0`
+- `Artistic`
+- `GPL-1`
+- `GPL-1+`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris openssl=3.0.2-0ubuntu1.19
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.19.dsc' openssl_3.0.2-0ubuntu1.19.dsc 2730 SHA512:a69174ea9f2dd4e81b2c888bb0d1d724ef857c2154ccacc9186e8dc9804011b3822e183946da7fec2350be7f3e4040392694ac1645c7e4c81197bad5f28fe36c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz' openssl_3.0.2.orig.tar.gz 15038141 SHA512:f986850d5be908b4d6b5fd7091bc4652d7378c9bccebfbc5becd7753843c04c1eb61a1749c432139d263dfac33df0b1f6c773664b485cad47542266823a4eb03
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2.orig.tar.gz.asc' openssl_3.0.2.orig.tar.gz.asc 488 SHA512:4303391a58107c76ad9b05510f5bfc95f687f4cb2f9ff5b03fb262ba99b573423ab83f0437471199954496799b343191b889ad9ef8fabdd7ee4ec3ec9b5f1d81
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.2-0ubuntu1.19.debian.tar.xz' openssl_3.0.2-0ubuntu1.19.debian.tar.xz 266448 SHA512:c3e3fd6c80368f3d53d932f6e7028f0c7ba5e8d0fa2c0d42f8179c4a769ecad445ed136472ac53d3d97581addb138029abcea4d45d541b179d92aba861d35270
+```
 
 ### `dpkg` source package: `p11-kit=0.24.0-6build1`
 
