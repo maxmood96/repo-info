@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:73e6ad78dd24c8865696d45531b0d6d8fdd4fbd63c6089b1a1bd4f81446af498`
-- Created: `2025-02-19T09:48:51Z`
-- Virtual Size: ~ 275.67 Mb  
+- Image ID: `sha256:6e523a25c227b7f68219c2c22fc18f6876a540a05cd17362b68f8a2d45fbce23`
+- Created: `2025-03-10T12:08:21Z`
+- Virtual Size: ~ 275.73 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -729,16 +729,16 @@ MIT
 ### `apk` package: `libffi`
 
 ```console
-libffi-3.4.6-r0 description:
+libffi-3.4.7-r0 description:
 portable, high level programming interface to various calling conventions.
 
-libffi-3.4.6-r0 webpage:
+libffi-3.4.7-r0 webpage:
 https://sourceware.org/libffi/
 
-libffi-3.4.6-r0 installed size:
+libffi-3.4.7-r0 installed size:
 38 KiB
 
-libffi-3.4.6-r0 license:
+libffi-3.4.7-r0 license:
 MIT
 
 ```
@@ -933,16 +933,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-17.2-r0 description:
+libpq-17.4-r0 description:
 PostgreSQL client library
 
-libpq-17.2-r0 webpage:
+libpq-17.4-r0 webpage:
 https://www.postgresql.org/
 
-libpq-17.2-r0 installed size:
+libpq-17.4-r0 installed size:
 322 KiB
 
-libpq-17.2-r0 license:
+libpq-17.4-r0 license:
 PostgreSQL
 
 ```

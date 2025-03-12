@@ -1,4 +1,4 @@
-# `joomla:5.2.4`
+# `joomla:5.2.4-php8.2-apache`
 
 ## Docker Metadata
 

@@ -1,10 +1,10 @@
-# `joomla:5.2.4-php8.3-apache`
+# `joomla:5.2.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:816b420435f434ec30714317c6cb519a698a0a17c1dce8ce2697bb40424aa07a`
-- Created: `2025-02-19T09:48:51Z`
-- Virtual Size: ~ 759.39 Mb  
+- Image ID: `sha256:83508a981e9ab23e9bef5501852e86871cdb2a8f904e102c66dbe6897fa2b3ab`
+- Created: `2025-03-10T12:08:21Z`
+- Virtual Size: ~ 759.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`

@@ -1,10 +1,10 @@
-# `joomla:5.3.0-beta1`
+# `joomla:5.2.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:a7082fafcac933ca69d455aff3ee582b2812e2f13fe69f2142fd1fde324e540d`
-- Created: `2025-02-19T09:57:52Z`
-- Virtual Size: ~ 756.07 Mb  
+- Image ID: `sha256:83508a981e9ab23e9bef5501852e86871cdb2a8f904e102c66dbe6897fa2b3ab`
+- Created: `2025-03-10T12:08:21Z`
+- Virtual Size: ~ 759.45 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -18,14 +18,14 @@
   - `PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
-  - `GPG_KEYS=39B641343D8C104B2B146DC3F9C39DC0B9698544 E60913E4DF209907D8E30D96659A97C9CF2A795A 1198C0117593497A5EC5C199286AF1F9897469DC`
-  - `PHP_VERSION=8.2.27`
-  - `PHP_URL=https://www.php.net/distributions/php-8.2.27.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.2.27.tar.xz.asc`
-  - `PHP_SHA256=3eec91294d8c09b3df80b39ec36d574ed9b05de4c8afcb25fa215d48f9ecbc6b`
+  - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
+  - `PHP_VERSION=8.3.17`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.17.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.17.tar.xz.asc`
+  - `PHP_SHA256=6158ee678e698395da13d72c7679a406d2b7554323432f14d37b60ed87d8ccfb`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
-  - `JOOMLA_VERSION=5.3.0-beta1`
-  - `JOOMLA_SHA512=5fb97e559704150e305b3d7a8e333040d1d7af41ad5e5453c001596a71526b3fe95d602f3ef825368a1f283b1130d2be3797e2b5144a221041e28406a48179ef`
+  - `JOOMLA_VERSION=5.2.4`
+  - `JOOMLA_SHA512=2e856b8c544e3b5a4f8d77c7d6ae7f8832712d441cc071fbe5ff808bd0b69cf4c1c3e9716af156f3b5fa314b4c55c867e0c33c261dd42a4847858933edf43cf5`
 - Labels:
   - `maintainer=Llewellyn van der Merwe <llewellyn.van-der-merwe@community.joomla.org> (@Llewellynvdm), Harald Leithner <harald.leithner@community.joomla.org> (@HLeithner)`
 
