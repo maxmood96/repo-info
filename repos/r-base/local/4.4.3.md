@@ -122,19 +122,13 @@ Licenses: (parsed from: `/usr/share/doc/base-files/copyright`)
 - `GPL-2+`
 - `verbatim`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-files=13.6
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.6.dsc' base-files_13.6.dsc 1100 SHA256:f5fd18c61694f108b0f6fe0387d89c5eb581fb445db6253fac5f27eb26779d37
-'http://deb.debian.org/debian/pool/main/b/base-files/base-files_13.6.tar.xz' base-files_13.6.tar.xz 68264 SHA256:ebe8647287f951ebf5f6ac94067a4cf14bf61752ca0ecc342245d13b1c520258
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-files/13.6/
 
-- https://sources.debian.net/src/base-files/13.6/ (for browsing the source)
-- https://sources.debian.net/src/base-files/13.6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-files/13.6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `base-passwd=3.6.6`
 
@@ -794,10 +788,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris fontconfig=2.15.0-2
-'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.15.0-2.dsc' fontconfig_2.15.0-2.dsc 2665 SHA256:65dd1d9e3dc377d1c47800bfdcf92eecac050ed98a745ebcd77ca7d7b1f66497
-'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.15.0.orig.tar.xz' fontconfig_2.15.0.orig.tar.xz 1447820 SHA256:63a0658d0e06e0fa886106452b58ef04f21f58202ea02a94c39de0d3335d7c0e
-'http://http.debian.net/debian/pool/main/f/fontconfig/fontconfig_2.15.0-2.debian.tar.xz' fontconfig_2.15.0-2.debian.tar.xz 58960 SHA256:3e7d7e89e2dbc26e419625c2e37b04766861504e3445e38d0480eef2092b6668
+'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.15.0-2.dsc' fontconfig_2.15.0-2.dsc 2665 SHA256:65dd1d9e3dc377d1c47800bfdcf92eecac050ed98a745ebcd77ca7d7b1f66497
+'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.15.0.orig.tar.xz' fontconfig_2.15.0.orig.tar.xz 1447820 SHA256:63a0658d0e06e0fa886106452b58ef04f21f58202ea02a94c39de0d3335d7c0e
+'http://deb.debian.org/debian/pool/main/f/fontconfig/fontconfig_2.15.0-2.debian.tar.xz' fontconfig_2.15.0-2.debian.tar.xz 58960 SHA256:3e7d7e89e2dbc26e419625c2e37b04766861504e3445e38d0480eef2092b6668
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/fontconfig/2.15.0-2/ (for browsing the source)
+- https://sources.debian.net/src/fontconfig/2.15.0-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/fontconfig/2.15.0-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `foreign=0.8.88-1`
 
@@ -1703,11 +1703,17 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libidn2=2.3.7-2
-'http://http.debian.net/debian/pool/main/libi/libidn2/libidn2_2.3.7-2.dsc' libidn2_2.3.7-2.dsc 1963 SHA256:ba763f71c75847be4c68557a937484ff9e676c0af8be9a6796c914dab1363a5f
-'http://http.debian.net/debian/pool/main/libi/libidn2/libidn2_2.3.7.orig.tar.gz' libidn2_2.3.7.orig.tar.gz 2155214 SHA256:4c21a791b610b9519b9d0e12b8097bf2f359b12f8dd92647611a929e6bfd7d64
-'http://http.debian.net/debian/pool/main/libi/libidn2/libidn2_2.3.7.orig.tar.gz.asc' libidn2_2.3.7.orig.tar.gz.asc 228 SHA256:d4e78fc1c5a5c35980be3a04dd864574f450d55921360b0aa19326c75ada4a98
-'http://http.debian.net/debian/pool/main/libi/libidn2/libidn2_2.3.7-2.debian.tar.xz' libidn2_2.3.7-2.debian.tar.xz 16276 SHA256:1f0ca3a2bb2c745056933cb41d212965b6571c9a436f83d33cba15e932d88d29
+'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.7-2.dsc' libidn2_2.3.7-2.dsc 1963 SHA256:ba763f71c75847be4c68557a937484ff9e676c0af8be9a6796c914dab1363a5f
+'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.7.orig.tar.gz' libidn2_2.3.7.orig.tar.gz 2155214 SHA256:4c21a791b610b9519b9d0e12b8097bf2f359b12f8dd92647611a929e6bfd7d64
+'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.7.orig.tar.gz.asc' libidn2_2.3.7.orig.tar.gz.asc 228 SHA256:d4e78fc1c5a5c35980be3a04dd864574f450d55921360b0aa19326c75ada4a98
+'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.7-2.debian.tar.xz' libidn2_2.3.7-2.debian.tar.xz 16276 SHA256:1f0ca3a2bb2c745056933cb41d212965b6571c9a436f83d33cba15e932d88d29
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libidn2/2.3.7-2/ (for browsing the source)
+- https://sources.debian.net/src/libidn2/2.3.7-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libidn2/2.3.7-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libjpeg-turbo=1:2.1.5-3.1`
 
@@ -2681,10 +2687,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openblas=0.3.29+ds-2
-'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.29%2bds-2.dsc' openblas_0.3.29+ds-2.dsc 4578 SHA256:d72a2ddcf5a73e565d1b870a335695bbc703405e5e799b15eee7800538b22ba7
-'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.29%2bds.orig.tar.xz' openblas_0.3.29+ds.orig.tar.xz 2208664 SHA256:eb691e2cff83799400da22aa6ab93ebaa346ad317fea578b7ae119e226ce1b01
-'http://http.debian.net/debian/pool/main/o/openblas/openblas_0.3.29%2bds-2.debian.tar.xz' openblas_0.3.29+ds-2.debian.tar.xz 25124 SHA256:fc0afe55eb03935cbe929302b708ed08decf2d3966a6fd748d8c918f3f36e188
+'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.29%2bds-2.dsc' openblas_0.3.29+ds-2.dsc 4578 SHA256:d72a2ddcf5a73e565d1b870a335695bbc703405e5e799b15eee7800538b22ba7
+'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.29%2bds.orig.tar.xz' openblas_0.3.29+ds.orig.tar.xz 2208664 SHA256:eb691e2cff83799400da22aa6ab93ebaa346ad317fea578b7ae119e226ce1b01
+'http://deb.debian.org/debian/pool/main/o/openblas/openblas_0.3.29%2bds-2.debian.tar.xz' openblas_0.3.29+ds-2.debian.tar.xz 25124 SHA256:fc0afe55eb03935cbe929302b708ed08decf2d3966a6fd748d8c918f3f36e188
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/openblas/0.3.29+ds-2/ (for browsing the source)
+- https://sources.debian.net/src/openblas/0.3.29+ds-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/openblas/0.3.29+ds-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openldap=2.6.9+dfsg-1`
 
@@ -3183,10 +3195,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris rmatrix=1.7-2-1
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.7-2-1.dsc' rmatrix_1.7-2-1.dsc 1860 SHA256:54daf03dbc09628fcdf1059e497357d640dfe05d5e747f4b0d22f7bc69c34254
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.7-2.orig.tar.gz' rmatrix_1.7-2.orig.tar.gz 2484712 SHA256:7f019d9ae5d69b799c929cacc3b17e06b09fa65e2db9e007be4753751e96c650
-'http://http.debian.net/debian/pool/main/r/rmatrix/rmatrix_1.7-2-1.debian.tar.xz' rmatrix_1.7-2-1.debian.tar.xz 6104 SHA256:d5627ea57bb4ec3cdf1ac4836d4cf7494905c033c0e626fffd62c99d85a9282a
+'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-2-1.dsc' rmatrix_1.7-2-1.dsc 1860 SHA256:54daf03dbc09628fcdf1059e497357d640dfe05d5e747f4b0d22f7bc69c34254
+'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-2.orig.tar.gz' rmatrix_1.7-2.orig.tar.gz 2484712 SHA256:7f019d9ae5d69b799c929cacc3b17e06b09fa65e2db9e007be4753751e96c650
+'http://deb.debian.org/debian/pool/main/r/rmatrix/rmatrix_1.7-2-1.debian.tar.xz' rmatrix_1.7-2-1.debian.tar.xz 6104 SHA256:d5627ea57bb4ec3cdf1ac4836d4cf7494905c033c0e626fffd62c99d85a9282a
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/rmatrix/1.7-2-1/ (for browsing the source)
+- https://sources.debian.net/src/rmatrix/1.7-2-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/rmatrix/1.7-2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rpart=4.1.24-1`
 
@@ -3582,10 +3600,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris unzip=6.0-28
-'http://http.debian.net/debian/pool/main/u/unzip/unzip_6.0-28.dsc' unzip_6.0-28.dsc 1359 SHA256:f5b486028b61a145b591fdd96aaeaf89ef6eef164a299f43bd5e6704bdefc8a2
-'http://http.debian.net/debian/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
-'http://http.debian.net/debian/pool/main/u/unzip/unzip_6.0-28.debian.tar.xz' unzip_6.0-28.debian.tar.xz 25032 SHA256:e51364116c84739c591728ecc841113a914fa11358fd10ff0d6813524d811bb9
+'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-28.dsc' unzip_6.0-28.dsc 1359 SHA256:f5b486028b61a145b591fdd96aaeaf89ef6eef164a299f43bd5e6704bdefc8a2
+'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0.orig.tar.gz' unzip_6.0.orig.tar.gz 1376845 SHA256:036d96991646d0449ed0aa952e4fbe21b476ce994abc276e49d30e686708bd37
+'http://deb.debian.org/debian/pool/main/u/unzip/unzip_6.0-28.debian.tar.xz' unzip_6.0-28.debian.tar.xz 25032 SHA256:e51364116c84739c591728ecc841113a914fa11358fd10ff0d6813524d811bb9
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/unzip/6.0-28/ (for browsing the source)
+- https://sources.debian.net/src/unzip/6.0-28/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/unzip/6.0-28/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `util-linux=2.40.4-3`
 
