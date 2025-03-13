@@ -1,10 +1,10 @@
-# `odoo:18.0-20250218`
+# `odoo:18.0-20250311`
 
 ## Docker Metadata
 
-- Image ID: `sha256:76dc8784c617326a6379c4fcdf36be3828029ef58a05bd2d5d8edf68b80f657b`
-- Created: `2025-02-18T08:26:12Z`
-- Virtual Size: ~ 1.97 Gb  
+- Image ID: `sha256:8e79d2a867f20bc41f5170371a99a68a04c888dae266316051731b79b5d32293`
+- Created: `2025-03-11T10:28:40Z`
+- Virtual Size: ~ 1.99 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -1578,14 +1578,9 @@ Licenses: (parsed from: `/usr/share/doc/python3-jinja2/copyright`)
 
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris jinja2=3.1.2-1ubuntu1.2
-'http://archive.ubuntu.com/ubuntu/pool/main/j/jinja2/jinja2_3.1.2-1ubuntu1.2.dsc' jinja2_3.1.2-1ubuntu1.2.dsc 2341 SHA512:b51c6eed54c095811b9c037a76e516445afee44982077b2b735c9751b50be3dc250ab18ddc77bd16dacdc1edc9d89d6adff8c2b2bbbb9e51bb9f85c5430a5654
-'http://archive.ubuntu.com/ubuntu/pool/main/j/jinja2/jinja2_3.1.2.orig.tar.gz' jinja2_3.1.2.orig.tar.gz 268239 SHA512:5dfe122c1beef5305b34d25f22f96607bd3a6cba098b03091850ea36fefe62b645a7218d7584b35bea252393ac922c9bb3654a9e90f23bcfb273e811fcf2f2c1
-'http://archive.ubuntu.com/ubuntu/pool/main/j/jinja2/jinja2_3.1.2-1ubuntu1.2.debian.tar.xz' jinja2_3.1.2-1ubuntu1.2.debian.tar.xz 15096 SHA512:d38aae2e8dc9eca2a7c60979ed381957f17a8aa15062a0b0c607b4bf340290ea2b244b93ed86306190b835adfe54c02f2d554b9ac10a887abba6d64b6d30c9fa
-```
 
 ### `dpkg` source package: `keyutils=1.6.3-3build1`
 
@@ -1609,22 +1604,28 @@ $ apt-get source -qq --print-uris keyutils=1.6.3-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.3-3build1.debian.tar.xz' keyutils_1.6.3-3build1.debian.tar.xz 13456 SHA512:ef729447f8f4adebdb986d115e227bd908b346e26115eb7a0385a084ad69f6772c914744d8c24928587247cd5fc329ed1305e9b006db276d0445b9614f20603f
 ```
 
-### `dpkg` source package: `krb5=1.20.1-6ubuntu2.4`
+### `dpkg` source package: `krb5=1.20.1-6ubuntu2.5`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2.4`
-- `libk5crypto3:amd64=1.20.1-6ubuntu2.4`
-- `libkrb5-3:amd64=1.20.1-6ubuntu2.4`
-- `libkrb5support0:amd64=1.20.1-6ubuntu2.4`
+- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2.5`
+- `libk5crypto3:amd64=1.20.1-6ubuntu2.5`
+- `libkrb5-3:amd64=1.20.1-6ubuntu2.5`
+- `libkrb5support0:amd64=1.20.1-6ubuntu2.5`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris krb5=1.20.1-6ubuntu2.5
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.5.dsc' krb5_1.20.1-6ubuntu2.5.dsc 4080 SHA512:6a09f550faf0d561d386da3a795fdf18084b3039189f3055be2429d0f26e6d8ea1290ab6d8afcc68f2aaee66f679c9051e38acaf329c3335119fd9325f63f785
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA512:6f57479f13f107cd84f30de5c758eb6b9fc59171329c13e5da6073b806755f8d163eb7bd84767ea861ad6458ea0c9eeb00ee044d3bcad01ef136e9888564b6a2
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA512:1d3312bd67581e07adfdadf2c5fe394179631d8add8bd075efefe982a0de22369004e60a14422d426382c8c591e4181b9897088afe9d4e86f0b5a97e5954c67a
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.5.debian.tar.xz' krb5_1.20.1-6ubuntu2.5.debian.tar.xz 118440 SHA512:7bc293b3f50c13066bef1a2a085001fbea927eb23a1e58f579e4dea25af6decfb6cf138b2329dba695016721adda049f6e2883c848b98c69aef2c921c15a2f82
+```
 
 ### `dpkg` source package: `lcms2=2.14-2build1`
 
@@ -2540,20 +2541,25 @@ $ apt-get source -qq --print-uris libxext=2:1.3.4-1build2
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxext/libxext_1.3.4-1build2.diff.gz' libxext_1.3.4-1build2.diff.gz 12720 SHA512:6ec71960a93504538ef944620b0af7bb2ffdf21270ddaf1715dec4faf79d0d1ec1372a148e9acb64a014b2a761eadf01f0b83955dda7ff2fdf942b5998bd1b34
 ```
 
-### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.1`
+### `dpkg` source package: `libxml2=2.9.14+dfsg-1.3ubuntu3.2`
 
 Binary Packages:
 
-- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.1`
+- `libxml2:amd64=2.9.14+dfsg-1.3ubuntu3.2`
 
 Licenses: (parsed from: `/usr/share/doc/libxml2/copyright`)
 
 - `ISC`
 - `MIT-1`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libxml2=2.9.14+dfsg-1.3ubuntu3.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.2.dsc' libxml2_2.9.14+dfsg-1.3ubuntu3.2.dsc 3079 SHA512:c0dc23d454b022b80e89e8037cd2b1de9760bfe3360310b027984cd3a8c5c3841f4f4b6fe626a7ce3b193ceb5b72712aff407810c9a01837f851040ee90d2869
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg.orig.tar.xz' libxml2_2.9.14+dfsg.orig.tar.xz 2351200 SHA512:1eacc9ac2cd8d38b8466659b3b9d84b94eb765c8f869d6cca0da131060bbc35c2b31c6148d59690547871a20cea339eac8fbe953b4fe37cf0900862f3fd9621b
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.14%2bdfsg-1.3ubuntu3.2.debian.tar.xz' libxml2_2.9.14+dfsg-1.3ubuntu3.2.debian.tar.xz 37588 SHA512:54f987d13780e1fa70c7de5af606921cf57710c9f9f52ae758fd6f44f3e5026dd5dd9902d999b6392e2db3c3c8cbdf9dbe1a971ed12e1219f0cba25ef5f370ed
+```
 
 ### `dpkg` source package: `libxrender=1:0.9.10-1.1build1`
 
@@ -9990,11 +9996,11 @@ $ apt-get source -qq --print-uris npth=1.6-3.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3.1build1.debian.tar.xz' npth_1.6-3.1build1.debian.tar.xz 11036 SHA512:caf36d8727c335bbcf996421e65cf044d6468d95d70e9b671b57196341e49e67f687d6c80cab78d6c0388a90f795e4ed0ff28aaa0d4e7dd6f4701abdfc77a09a
 ```
 
-### `dpkg` source package: `odoo=18.0.20250218`
+### `dpkg` source package: `odoo=18.0.20250311`
 
 Binary Packages:
 
-- `odoo=18.0.20250218`
+- `odoo=18.0.20250311`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -10041,11 +10047,11 @@ $ apt-get source -qq --print-uris openjpeg2=2.5.0-2ubuntu0.3
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openjpeg2/openjpeg2_2.5.0-2ubuntu0.3.debian.tar.xz' openjpeg2_2.5.0-2ubuntu0.3.debian.tar.xz 19980 SHA512:d7ae783b157259251eecf35c43c55fe0ffa97db4ee01ca57f54db0343e36fd93c832619e99258d133793e6387a4daea42c2f859e06be004829152818e6bbc65d
 ```
 
-### `dpkg` source package: `openldap=2.6.7+dfsg-1~exp1ubuntu8.1`
+### `dpkg` source package: `openldap=2.6.7+dfsg-1~exp1ubuntu8.2`
 
 Binary Packages:
 
-- `libldap2:amd64=2.6.7+dfsg-1~exp1ubuntu8.1`
+- `libldap2:amd64=2.6.7+dfsg-1~exp1ubuntu8.2`
 
 Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 
@@ -10074,9 +10080,14 @@ Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 - `UMich`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openldap=2.6.7+dfsg-1~exp1ubuntu8.2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg-1%7eexp1ubuntu8.2.dsc' openldap_2.6.7+dfsg-1~exp1ubuntu8.2.dsc 3488 SHA512:b262ce1ec8742801dadaa6c50393cd2da7359200f6c42c0f2573be883deb13b2e71b85169ba8db1edf5ec11ef5e0122c2f839f4320ead4041423e9a3fa03b679
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg.orig.tar.xz' openldap_2.6.7+dfsg.orig.tar.xz 3774648 SHA512:84e02268b096347049b61947a56b5aa13d4d8548eed1bd472821c99fcd0208293d300b6bb78c4acd0e30a20fdd1851894c2f89f6365a359de856e1b095506014
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg-1%7eexp1ubuntu8.2.debian.tar.xz' openldap_2.6.7+dfsg-1~exp1ubuntu8.2.debian.tar.xz 186792 SHA512:276056a2c445949ab7cba305eb760f8793b5bae6c487c9301da94553b1c8d83ada9279a537800deef7fc434af4352585071514bafdc9172ac766feb739c590cc
+```
 
 ### `dpkg` source package: `openpyxl=3.1.2+dfsg-6`
 
@@ -10097,13 +10108,13 @@ $ apt-get source -qq --print-uris openpyxl=3.1.2+dfsg-6
 'http://archive.ubuntu.com/ubuntu/pool/universe/o/openpyxl/openpyxl_3.1.2%2bdfsg-6.debian.tar.xz' openpyxl_3.1.2+dfsg-6.debian.tar.xz 22500 SHA512:fa61ae9c0a411554f119641e574755aed807bc6035b37628a8c9a47d3665dfb78b52db69d47aac0ae0e6cf664b7b8a6506132d00f1498b9a04c743c44f97ac1c
 ```
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3.4`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.5`
 
 Binary Packages:
 
-- `libssl-dev:amd64=3.0.13-0ubuntu3.4`
-- `libssl3t64:amd64=3.0.13-0ubuntu3.4`
-- `openssl=3.0.13-0ubuntu3.4`
+- `libssl-dev:amd64=3.0.13-0ubuntu3.5`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.5`
+- `openssl=3.0.13-0ubuntu3.5`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
@@ -10112,9 +10123,14 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.5
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.5.dsc' openssl_3.0.13-0ubuntu3.5.dsc 2512 SHA512:2071df5d403c0b39ae500ee2fe1118313df10cc187d533813f634c96d2653cfde840318238b39525bbb47a52db7abf7fc2dd9b655a486a4c79a6123638f35f9e
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.5.debian.tar.xz' openssl_3.0.13-0ubuntu3.5.debian.tar.xz 169252 SHA512:29b18d2b824b85ac7fe31ad93ef0ac7320701806d59497c65cf615e9495025007c6052c0878a8cc3bf08860ace1e04c33f56e88c7026bd362eb32142c963a1a0
+```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 
@@ -10371,12 +10387,12 @@ $ apt-get source -qq --print-uris polib=1.1.1-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/p/polib/polib_1.1.1-1.debian.tar.xz' polib_1.1.1-1.debian.tar.xz 4592 SHA512:d3f45b5e76ee03bf707b537f6e59d90d824498de415ebf04b42817d680c482fa7febae9156c88438b825528deac7af54ab9f559dfad802909e45ee352d227c74
 ```
 
-### `dpkg` source package: `postgresql-17=17.3-3.pgdg24.04+1`
+### `dpkg` source package: `postgresql-17=17.4-1.pgdg24.04+2`
 
 Binary Packages:
 
-- `libpq5:amd64=17.3-3.pgdg24.04+1`
-- `postgresql-client-17=17.3-3.pgdg24.04+1`
+- `libpq5:amd64=17.4-1.pgdg24.04+2`
+- `postgresql-client-17=17.4-1.pgdg24.04+2`
 
 Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postgresql-client-17/copyright`)
 
@@ -10397,12 +10413,12 @@ Licenses: (parsed from: `/usr/share/doc/libpq5/copyright`, `/usr/share/doc/postg
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `postgresql-common=273.pgdg24.04+1`
+### `dpkg` source package: `postgresql-common=274.pgdg24.04+1`
 
 Binary Packages:
 
-- `postgresql-client=17+273.pgdg24.04+1`
-- `postgresql-client-common=273.pgdg24.04+1`
+- `postgresql-client=17+274.pgdg24.04+1`
+- `postgresql-client-common=274.pgdg24.04+1`
 
 Licenses: (parsed from: `/usr/share/doc/postgresql-client/copyright`, `/usr/share/doc/postgresql-client-common/copyright`)
 
@@ -11468,14 +11484,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.12.3-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.tar.gz' python3-defaults_3.12.3-0ubuntu2.tar.gz 147715 SHA512:3c0b5b4c3fba5209c36cb7b884894c735aa3f419c2f0ca4c412f8bc44a281e2f356438517010ec5753c18c06fcd60e1e526c5cc4e4a8d103dd8bfb8b6468377e
 ```
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.4`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.5`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.4`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.4`
-- `python3.12=3.12.3-1ubuntu0.4`
-- `python3.12-minimal=3.12.3-1ubuntu0.4`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.5`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.5`
+- `python3.12=3.12.3-1ubuntu0.5`
+- `python3.12-minimal=3.12.3-1ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -11497,9 +11513,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.5.dsc' python3.12_3.12.3-1ubuntu0.5.dsc 3875 SHA512:38dc5621220a6396c97a383c49c5717a85823967991ef99f143ac73e45c69f93ea73fcf34eafc8a0b5937830a3d1147df9431c59578ae3878dcdc78498b61f18
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.5.debian.tar.xz' python3.12_3.12.3-1ubuntu0.5.debian.tar.xz 234380 SHA512:a73a89a34bfce03854aade75ac6a08b771a6e90c41a0a337590a1e41462a68c8d11e8da9f31639965157d53ff331b96140c147ebeace2d58d0edbd2cad9f60ca
+```
 
 ### `dpkg` source package: `pyusb=1.2.1-2`
 
