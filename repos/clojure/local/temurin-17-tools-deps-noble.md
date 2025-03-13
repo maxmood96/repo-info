@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e7eeb4efa7c8d574a54dedf551f5ebfb971e4669555f40fbdb00a2e42da53fbc`
-- Created: `2025-02-19T14:51:07Z`
+- Image ID: `sha256:e0d36f015e62fedc4eea47479986cd8ec2f79adfbc7843b3668c870f849eafe6`
+- Created: `2025-03-08T19:45:48Z`
 - Virtual Size: ~ 558.88 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -16,7 +16,7 @@
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
   - `JAVA_VERSION=jdk-17.0.14+7`
-  - `CLOJURE_VERSION=1.12.0.1517`
+  - `CLOJURE_VERSION=1.12.0.1530`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
   - `org.opencontainers.image.version=24.04`
@@ -2288,14 +2288,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.12.3-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.12.3-0ubuntu2.tar.gz' python3-defaults_3.12.3-0ubuntu2.tar.gz 147715 SHA512:3c0b5b4c3fba5209c36cb7b884894c735aa3f419c2f0ca4c412f8bc44a281e2f356438517010ec5753c18c06fcd60e1e526c5cc4e4a8d103dd8bfb8b6468377e
 ```
 
-### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.4`
+### `dpkg` source package: `python3.12=3.12.3-1ubuntu0.5`
 
 Binary Packages:
 
-- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.4`
-- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.4`
-- `python3.12=3.12.3-1ubuntu0.4`
-- `python3.12-minimal=3.12.3-1ubuntu0.4`
+- `libpython3.12-minimal:amd64=3.12.3-1ubuntu0.5`
+- `libpython3.12-stdlib:amd64=3.12.3-1ubuntu0.5`
+- `python3.12=3.12.3-1ubuntu0.5`
+- `python3.12-minimal=3.12.3-1ubuntu0.5`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/share/doc/libpython3.12-stdlib/copyright`, `/usr/share/doc/python3.12/copyright`, `/usr/share/doc/python3.12-minimal/copyright`)
 
@@ -2317,9 +2317,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.12-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.12=3.12.3-1ubuntu0.5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.5.dsc' python3.12_3.12.3-1ubuntu0.5.dsc 3875 SHA512:38dc5621220a6396c97a383c49c5717a85823967991ef99f143ac73e45c69f93ea73fcf34eafc8a0b5937830a3d1147df9431c59578ae3878dcdc78498b61f18
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3.orig.tar.xz' python3.12_3.12.3.orig.tar.xz 20625068 SHA512:4a2213b108e7f1f1525baa8348e68b2a2336d925e60d0a59f0225fc470768a2c8031edafc0b8243f94dbae18afda335ee5adf2785328c2218fd64cbb439f13a4
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.12/python3.12_3.12.3-1ubuntu0.5.debian.tar.xz' python3.12_3.12.3-1ubuntu0.5.debian.tar.xz 234380 SHA512:a73a89a34bfce03854aade75ac6a08b771a6e90c41a0a337590a1e41462a68c8d11e8da9f31639965157d53ff331b96140c147ebeace2d58d0edbd2cad9f60ca
+```
 
 ### `dpkg` source package: `readline=8.2-4build1`
 
