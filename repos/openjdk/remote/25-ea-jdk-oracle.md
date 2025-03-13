@@ -1,7 +1,7 @@
 ## `openjdk:25-ea-jdk-oracle`
 
 ```console
-$ docker pull openjdk@sha256:73dd4f726a531c482f48476570ec7593251171cd2b4f7863bf165c68c9f3d0bb
+$ docker pull openjdk@sha256:41b145e5d775b247df8f4bc70862868bcc5b2b6dfb78a987f6eba25e921972f7
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,19 +14,19 @@ $ docker pull openjdk@sha256:73dd4f726a531c482f48476570ec7593251171cd2b4f7863bf1
 ### `openjdk:25-ea-jdk-oracle` - linux; amd64
 
 ```console
-$ docker pull openjdk@sha256:efc2ef79e9592c7a751a4895d495dbf06364fc73050fb38e6a61d48f90acad5e
+$ docker pull openjdk@sha256:3da1551ec6ee3b1b8579018055cf0c7678d0e62a5a74dc63ebd147e70c9b70a1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **309.5 MB (309510912 bytes)**  
+-	Total Size: **309.5 MB (309504711 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0ada240142e7b75ffdbb2d507977c784ba26ed2839694308713a6f9d5fb65de7`
+-	Image ID: `sha256:a1c32156608c49e8438a558933f5d3300f0daa45152f95d50d36aeb1e0f5bee5`
 -	Default Command: `["jshell"]`
 
 ```dockerfile
-# Fri, 14 Feb 2025 17:38:59 GMT
+# Sat, 08 Mar 2025 01:48:16 GMT
 ADD oraclelinux-9-slim-amd64-rootfs.tar.xz / # buildkit
-# Fri, 14 Feb 2025 17:38:59 GMT
+# Sat, 08 Mar 2025 01:48:16 GMT
 CMD ["/bin/bash"]
 # Sat, 08 Mar 2025 01:48:16 GMT
 RUN set -eux; 	microdnf install 		gzip 		tar 				binutils 		freetype fontconfig 	; 	microdnf clean all # buildkit
@@ -45,41 +45,41 @@ CMD ["jshell"]
 ```
 
 -	Layers:
-	-	`sha256:43759093d4f6232b149ce0851c768f0287c95e1e0e34de29dac7c632ed93cc86`  
-		Last Modified: Fri, 14 Feb 2025 23:29:27 GMT  
-		Size: 49.1 MB (49090891 bytes)  
+	-	`sha256:804bb8ae89decacdf918af27c892df04e6f2d3038e3a7d1e34475eef6be9aba3`  
+		Last Modified: Thu, 13 Mar 2025 17:46:19 GMT  
+		Size: 49.1 MB (49091441 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f5dea33a5a5f2a497b042bad0449e90d81e1c8a2f77b9038a8f73227be89e08a`  
-		Last Modified: Mon, 10 Mar 2025 21:06:30 GMT  
-		Size: 48.8 MB (48765882 bytes)  
+	-	`sha256:d39b26f6926816e86d12e6c9ee6a4df860b8d3afda6c18fa1bc1c4dc10e4eef8`  
+		Last Modified: Thu, 13 Mar 2025 17:52:59 GMT  
+		Size: 48.8 MB (48759075 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b786d610a5d647e7f15879bf1dbb3f921cfe8aaacb5379ad889230778467c345`  
-		Last Modified: Mon, 10 Mar 2025 21:06:33 GMT  
-		Size: 211.7 MB (211654139 bytes)  
+	-	`sha256:de7afba0b90f4583b25efa2fb6524a885f9a1eddb8093108b7d6a00e9de53240`  
+		Last Modified: Thu, 13 Mar 2025 17:53:01 GMT  
+		Size: 211.7 MB (211654195 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `openjdk:25-ea-jdk-oracle` - unknown; unknown
 
 ```console
-$ docker pull openjdk@sha256:4c8694c518fc8438f9552c1b5d9ce4a83fec7319018eea2c946e575d558d1282
+$ docker pull openjdk@sha256:22238bb67e2e602534ba124e55ac3df12edde0fad369cac510187494903ce1ac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **4.9 MB (4926759 bytes)**  
+-	Total Size: **4.9 MB (4926758 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d9c5028792a1ccdbd8b4bf1fd50e39f0fc7a9065ca95ea85553bfb0d3e33876a`
+-	Image ID: `sha256:a19d1c88735864e9a69eee31b8b5a4a335b8e08722e7a545e57880bbe7e96672`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d184b0ea2ef50134b49628a325aa3f3b331aaa50086af0a059dcc35ae5e9d472`  
-		Last Modified: Mon, 10 Mar 2025 21:06:30 GMT  
+	-	`sha256:d54587971553d16cd16b85c7e7361f7cddc02a413841a6ea734af6c7da74fb29`  
+		Last Modified: Thu, 13 Mar 2025 17:52:58 GMT  
 		Size: 4.9 MB (4907013 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8308058499448868d53d7f082cacd8c64504db9b3247519f7f05090599a771d6`  
-		Last Modified: Mon, 10 Mar 2025 21:06:30 GMT  
-		Size: 19.7 KB (19746 bytes)  
+	-	`sha256:bab8a84f4e65630f7ad593d7dd0f83e62ee09a73f2101a48e79e630e7c73a4d9`  
+		Last Modified: Thu, 13 Mar 2025 17:52:58 GMT  
+		Size: 19.7 KB (19745 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `openjdk:25-ea-jdk-oracle` - linux; arm64 variant v8
