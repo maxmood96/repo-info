@@ -1,10 +1,10 @@
-# `redmine:5.1.6-alpine3.20`
+# `redmine:5.1.7-alpine3.20`
 
 ## Docker Metadata
 
-- Image ID: `sha256:7bebd97a5c8c9d6fd6f8f4870b77c71ac3381ed6f612be4570e755ddc3b57418`
-- Created: `2025-01-31T19:49:37Z`
-- Virtual Size: ~ 403.81 Mb  
+- Image ID: `sha256:023721fa68c11a204c0b36ccc848c2671d652ceae9ef199360d93c6fe87949b8`
+- Created: `2025-03-11T02:39:11Z`
+- Virtual Size: ~ 403.86 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -21,9 +21,9 @@
   - `GOSU_VERSION=1.17`
   - `RAILS_ENV=production`
   - `HOME=/home/redmine`
-  - `REDMINE_VERSION=5.1.6`
-  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.6.tar.gz`
-  - `REDMINE_DOWNLOAD_SHA256=d73584e74d692aa94644799d986df4e846fb59a43205c16bd857ed56cf0abed9`
+  - `REDMINE_VERSION=5.1.7`
+  - `REDMINE_DOWNLOAD_URL=https://www.redmine.org/releases/redmine-5.1.7.tar.gz`
+  - `REDMINE_DOWNLOAD_SHA256=c75c7de225b3c9e920dbdf2eddda6c7b454221a9988907711a710d83e502731e`
   - `RAILS_LOG_TO_STDOUT=true`
   - `BUNDLE_FORCE_RUBY_PLATFORM=1`
 
@@ -814,16 +814,16 @@ GPL-2.0-or-later AND LGPL-2.1-or-later
 ### `apk` package: `libgomp`
 
 ```console
-libgomp-13.2.1_git20240309-r0 description:
+libgomp-13.2.1_git20240309-r1 description:
 GCC shared-memory parallel programming API library
 
-libgomp-13.2.1_git20240309-r0 webpage:
+libgomp-13.2.1_git20240309-r1 webpage:
 https://gcc.gnu.org
 
-libgomp-13.2.1_git20240309-r0 installed size:
+libgomp-13.2.1_git20240309-r1 installed size:
 324 KiB
 
-libgomp-13.2.1_git20240309-r0 license:
+libgomp-13.2.1_git20240309-r1 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -967,16 +967,16 @@ Libpng
 ### `apk` package: `libpq`
 
 ```console
-libpq-16.6-r0 description:
+libpq-16.8-r0 description:
 PostgreSQL client library
 
-libpq-16.6-r0 webpage:
+libpq-16.8-r0 webpage:
 https://www.postgresql.org/
 
-libpq-16.6-r0 installed size:
+libpq-16.8-r0 installed size:
 328 KiB
 
-libpq-16.6-r0 license:
+libpq-16.8-r0 license:
 PostgreSQL
 
 ```
@@ -1052,16 +1052,16 @@ Apache-2.0
 ### `apk` package: `libstdc++`
 
 ```console
-libstdc++-13.2.1_git20240309-r0 description:
+libstdc++-13.2.1_git20240309-r1 description:
 GNU C++ standard runtime library
 
-libstdc++-13.2.1_git20240309-r0 webpage:
+libstdc++-13.2.1_git20240309-r1 webpage:
 https://gcc.gnu.org
 
-libstdc++-13.2.1_git20240309-r0 installed size:
+libstdc++-13.2.1_git20240309-r1 installed size:
 2652 KiB
 
-libstdc++-13.2.1_git20240309-r0 license:
+libstdc++-13.2.1_git20240309-r1 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later
 
 ```
@@ -1256,16 +1256,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.12.7-r0 description:
+libxml2-2.12.7-r2 description:
 XML parsing library, version 2
 
-libxml2-2.12.7-r0 webpage:
+libxml2-2.12.7-r2 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.12.7-r0 installed size:
+libxml2-2.12.7-r2 installed size:
 1088 KiB
 
-libxml2-2.12.7-r0 license:
+libxml2-2.12.7-r2 license:
 MIT
 
 ```
@@ -1460,16 +1460,16 @@ BSD-2-Clause
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-9.7_p1-r4 description:
+openssh-client-common-9.7_p1-r5 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-9.7_p1-r4 webpage:
+openssh-client-common-9.7_p1-r5 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-9.7_p1-r4 installed size:
+openssh-client-common-9.7_p1-r5 installed size:
 2544 KiB
 
-openssh-client-common-9.7_p1-r4 license:
+openssh-client-common-9.7_p1-r5 license:
 SSH-OpenSSH
 
 ```
@@ -1477,16 +1477,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-9.7_p1-r4 description:
+openssh-client-default-9.7_p1-r5 description:
 OpenBSD's SSH client
 
-openssh-client-default-9.7_p1-r4 webpage:
+openssh-client-default-9.7_p1-r5 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-9.7_p1-r4 installed size:
+openssh-client-default-9.7_p1-r5 installed size:
 800 KiB
 
-openssh-client-default-9.7_p1-r4 license:
+openssh-client-default-9.7_p1-r5 license:
 SSH-OpenSSH
 
 ```
@@ -1494,16 +1494,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-9.7_p1-r4 description:
+openssh-keygen-9.7_p1-r5 description:
 ssh helper program for generating keys
 
-openssh-keygen-9.7_p1-r4 webpage:
+openssh-keygen-9.7_p1-r5 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-9.7_p1-r4 installed size:
+openssh-keygen-9.7_p1-r5 installed size:
 484 KiB
 
-openssh-keygen-9.7_p1-r4 license:
+openssh-keygen-9.7_p1-r5 license:
 SSH-OpenSSH
 
 ```
