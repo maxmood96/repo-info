@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:1d9bdf3731ed174ae2464b05bd159615c9707daa14ab49b5aa22a77fabe7c518`
+- Image ID: `sha256:11b25d06e90c903ee91a9737ec434a8c906f5a294e39a22c0d3a11812924be21`
 - Created: `2025-01-14T08:39:14Z`
-- Virtual Size: ~ 199.64 Mb  
+- Virtual Size: ~ 199.68 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=AFD8691FDAEDF03BDF6E460563F15A9B715376CA 9D7F99A0CB8F05C8A6958D6256A97AF7600A39A6 0616E93D95AF471243E26761770426E17EBBB3DD`
-  - `PHP_VERSION=8.4.4`
-  - `PHP_URL=https://www.php.net/distributions/php-8.4.4.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.4.tar.xz.asc`
-  - `PHP_SHA256=05a6c9a2cc894dd8be719ecab221b311886d5e0c02cb6fac648dd9b3459681ac`
+  - `PHP_VERSION=8.4.5`
+  - `PHP_URL=https://www.php.net/distributions/php-8.4.5.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.4.5.tar.xz.asc`
+  - `PHP_SHA256=0d3270bbce4d9ec617befce52458b763fd461d475f1fe2ed878bb8573faed327`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
   - `COMPOSER_VERSION=2.2.25`
@@ -574,16 +574,16 @@ MIT
 ### `apk` package: `libffi`
 
 ```console
-libffi-3.4.6-r0 description:
+libffi-3.4.7-r0 description:
 portable, high level programming interface to various calling conventions.
 
-libffi-3.4.6-r0 webpage:
+libffi-3.4.7-r0 webpage:
 https://sourceware.org/libffi/
 
-libffi-3.4.6-r0 installed size:
+libffi-3.4.7-r0 installed size:
 38 KiB
 
-libffi-3.4.6-r0 license:
+libffi-3.4.7-r0 license:
 MIT
 
 ```
@@ -778,16 +778,16 @@ BSD-3-Clause
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.4-r3 description:
+libxml2-2.13.4-r5 description:
 XML parsing library, version 2
 
-libxml2-2.13.4-r3 webpage:
+libxml2-2.13.4-r5 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.4-r3 installed size:
+libxml2-2.13.4-r5 installed size:
 1054 KiB
 
-libxml2-2.13.4-r3 license:
+libxml2-2.13.4-r5 license:
 MIT
 
 ```
@@ -982,16 +982,16 @@ BSD-2-Clause
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-9.9_p1-r2 description:
+openssh-client-common-9.9_p2-r0 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-9.9_p1-r2 webpage:
+openssh-client-common-9.9_p2-r0 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-9.9_p1-r2 installed size:
-2446 KiB
+openssh-client-common-9.9_p2-r0 installed size:
+2450 KiB
 
-openssh-client-common-9.9_p1-r2 license:
+openssh-client-common-9.9_p2-r0 license:
 SSH-OpenSSH
 
 ```
@@ -999,16 +999,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-9.9_p1-r2 description:
+openssh-client-default-9.9_p2-r0 description:
 OpenBSD's SSH client
 
-openssh-client-default-9.9_p1-r2 webpage:
+openssh-client-default-9.9_p2-r0 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-9.9_p1-r2 installed size:
+openssh-client-default-9.9_p2-r0 installed size:
 826 KiB
 
-openssh-client-default-9.9_p1-r2 license:
+openssh-client-default-9.9_p2-r0 license:
 SSH-OpenSSH
 
 ```
@@ -1016,16 +1016,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-9.9_p1-r2 description:
+openssh-keygen-9.9_p2-r0 description:
 ssh helper program for generating keys
 
-openssh-keygen-9.9_p1-r2 webpage:
+openssh-keygen-9.9_p2-r0 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-9.9_p1-r2 installed size:
+openssh-keygen-9.9_p2-r0 installed size:
 470 KiB
 
-openssh-keygen-9.9_p1-r2 license:
+openssh-keygen-9.9_p2-r0 license:
 SSH-OpenSSH
 
 ```
