@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:99358fddcc14b2b0f5dfa44c4bc9fad835af39ee8be9da92b7b1b060eea97fb1`
-- Created: `2025-02-20T16:34:11Z`
+- Image ID: `sha256:e1591fca0cf5568ba3dd328e1fb806698f0228d8802b5ee582cd62a6b85f6bbe`
+- Created: `2025-03-11T16:16:28Z`
 - Virtual Size: ~ 1.28 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -22,9 +22,9 @@
   - `TOMCAT_MAJOR=9`
   - `TOMCAT_VERSION=9.0.102`
   - `TOMCAT_SHA512=cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a`
-  - `XWIKI_VERSION=16.10.4`
-  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.4`
-  - `XWIKI_DOWNLOAD_SHA256=46d3f6451aaff86b583b3faf5634a7345b4a0886c206e0a8a1a3ccbc7dc82eb4`
+  - `XWIKI_VERSION=16.10.5`
+  - `XWIKI_URL_PREFIX=https://maven.xwiki.org/releases/org/xwiki/platform/xwiki-platform-distribution-war/16.10.5`
+  - `XWIKI_DOWNLOAD_SHA256=ecc2d3e639273eff8ecb441aa55a8baefb87ec02826d178fb1e3aff1223dee4d`
   - `POSTGRES_JDBC_VERSION=42.7.4`
   - `POSTGRES_JDBC_SHA256=188976721ead8e8627eb6d8389d500dccc0c9bebd885268a3047180274a6031e`
   - `POSTGRES_JDBC_PREFIX=https://repo1.maven.org/maven2/org/postgresql/postgresql/42.7.4`
@@ -2291,39 +2291,39 @@ $ apt-get source -qq --print-uris libpsl=0.21.2-1.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libp/libpsl/libpsl_0.21.2-1.1build1.debian.tar.xz' libpsl_0.21.2-1.1build1.debian.tar.xz 12244 SHA512:316b41dc3611a45c0b7ab0ec7fc617d2c710f8e11d943daefa524fc92155b63e777504a11dbe1b8427e1ad6d15f98095c90cd115df71fb8f90449a461dc9cd3d
 ```
 
-### `dpkg` source package: `libreoffice=4:24.2.7-0ubuntu0.24.04.2`
+### `dpkg` source package: `libreoffice=4:24.2.7-0ubuntu0.24.04.3`
 
 Binary Packages:
 
-- `fonts-opensymbol=4:102.12+LibO24.2.7-0ubuntu0.24.04.2`
-- `libreoffice=4:24.2.7-0ubuntu0.24.04.2`
-- `libreoffice-base=4:24.2.7-0ubuntu0.24.04.2`
-- `libreoffice-base-core=4:24.2.7-0ubuntu0.24.04.2`
-- `libreoffice-base-drivers=4:24.2.7-0ubuntu0.24.04.2`
-- `libreoffice-calc=4:24.2.7-0ubuntu0.24.04.2`
-- `libreoffice-common=4:24.2.7-0ubuntu0.24.04.2`
-- `libreoffice-core=4:24.2.7-0ubuntu0.24.04.2`
-- `libreoffice-draw=4:24.2.7-0ubuntu0.24.04.2`
-- `libreoffice-impress=4:24.2.7-0ubuntu0.24.04.2`
-- `libreoffice-math=4:24.2.7-0ubuntu0.24.04.2`
-- `libreoffice-report-builder-bin=4:24.2.7-0ubuntu0.24.04.2`
-- `libreoffice-style-colibre=4:24.2.7-0ubuntu0.24.04.2`
-- `libreoffice-uiconfig-base=4:24.2.7-0ubuntu0.24.04.2`
-- `libreoffice-uiconfig-calc=4:24.2.7-0ubuntu0.24.04.2`
-- `libreoffice-uiconfig-common=4:24.2.7-0ubuntu0.24.04.2`
-- `libreoffice-uiconfig-draw=4:24.2.7-0ubuntu0.24.04.2`
-- `libreoffice-uiconfig-impress=4:24.2.7-0ubuntu0.24.04.2`
-- `libreoffice-uiconfig-math=4:24.2.7-0ubuntu0.24.04.2`
-- `libreoffice-uiconfig-writer=4:24.2.7-0ubuntu0.24.04.2`
-- `libreoffice-writer=4:24.2.7-0ubuntu0.24.04.2`
-- `libuno-cppu3t64=4:24.2.7-0ubuntu0.24.04.2`
-- `libuno-cppuhelpergcc3-3t64=4:24.2.7-0ubuntu0.24.04.2`
-- `libuno-purpenvhelpergcc3-3t64=4:24.2.7-0ubuntu0.24.04.2`
-- `libuno-sal3t64=4:24.2.7-0ubuntu0.24.04.2`
-- `libuno-salhelpergcc3-3t64=4:24.2.7-0ubuntu0.24.04.2`
-- `python3-uno=4:24.2.7-0ubuntu0.24.04.2`
-- `uno-libs-private=4:24.2.7-0ubuntu0.24.04.2`
-- `ure=4:24.2.7-0ubuntu0.24.04.2`
+- `fonts-opensymbol=4:102.12+LibO24.2.7-0ubuntu0.24.04.3`
+- `libreoffice=4:24.2.7-0ubuntu0.24.04.3`
+- `libreoffice-base=4:24.2.7-0ubuntu0.24.04.3`
+- `libreoffice-base-core=4:24.2.7-0ubuntu0.24.04.3`
+- `libreoffice-base-drivers=4:24.2.7-0ubuntu0.24.04.3`
+- `libreoffice-calc=4:24.2.7-0ubuntu0.24.04.3`
+- `libreoffice-common=4:24.2.7-0ubuntu0.24.04.3`
+- `libreoffice-core=4:24.2.7-0ubuntu0.24.04.3`
+- `libreoffice-draw=4:24.2.7-0ubuntu0.24.04.3`
+- `libreoffice-impress=4:24.2.7-0ubuntu0.24.04.3`
+- `libreoffice-math=4:24.2.7-0ubuntu0.24.04.3`
+- `libreoffice-report-builder-bin=4:24.2.7-0ubuntu0.24.04.3`
+- `libreoffice-style-colibre=4:24.2.7-0ubuntu0.24.04.3`
+- `libreoffice-uiconfig-base=4:24.2.7-0ubuntu0.24.04.3`
+- `libreoffice-uiconfig-calc=4:24.2.7-0ubuntu0.24.04.3`
+- `libreoffice-uiconfig-common=4:24.2.7-0ubuntu0.24.04.3`
+- `libreoffice-uiconfig-draw=4:24.2.7-0ubuntu0.24.04.3`
+- `libreoffice-uiconfig-impress=4:24.2.7-0ubuntu0.24.04.3`
+- `libreoffice-uiconfig-math=4:24.2.7-0ubuntu0.24.04.3`
+- `libreoffice-uiconfig-writer=4:24.2.7-0ubuntu0.24.04.3`
+- `libreoffice-writer=4:24.2.7-0ubuntu0.24.04.3`
+- `libuno-cppu3t64=4:24.2.7-0ubuntu0.24.04.3`
+- `libuno-cppuhelpergcc3-3t64=4:24.2.7-0ubuntu0.24.04.3`
+- `libuno-purpenvhelpergcc3-3t64=4:24.2.7-0ubuntu0.24.04.3`
+- `libuno-sal3t64=4:24.2.7-0ubuntu0.24.04.3`
+- `libuno-salhelpergcc3-3t64=4:24.2.7-0ubuntu0.24.04.3`
+- `python3-uno=4:24.2.7-0ubuntu0.24.04.3`
+- `uno-libs-private=4:24.2.7-0ubuntu0.24.04.3`
+- `ure=4:24.2.7-0ubuntu0.24.04.3`
 
 Licenses: (parsed from: `/usr/share/doc/fonts-opensymbol/copyright`, `/usr/share/doc/libreoffice/copyright`, `/usr/share/doc/libreoffice-base/copyright`, `/usr/share/doc/libreoffice-base-core/copyright`, `/usr/share/doc/libreoffice-base-drivers/copyright`, `/usr/share/doc/libreoffice-calc/copyright`, `/usr/share/doc/libreoffice-common/copyright`, `/usr/share/doc/libreoffice-core/copyright`, `/usr/share/doc/libreoffice-draw/copyright`, `/usr/share/doc/libreoffice-impress/copyright`, `/usr/share/doc/libreoffice-math/copyright`, `/usr/share/doc/libreoffice-report-builder-bin/copyright`, `/usr/share/doc/libreoffice-style-colibre/copyright`, `/usr/share/doc/libreoffice-uiconfig-base/copyright`, `/usr/share/doc/libreoffice-uiconfig-calc/copyright`, `/usr/share/doc/libreoffice-uiconfig-common/copyright`, `/usr/share/doc/libreoffice-uiconfig-draw/copyright`, `/usr/share/doc/libreoffice-uiconfig-impress/copyright`, `/usr/share/doc/libreoffice-uiconfig-math/copyright`, `/usr/share/doc/libreoffice-uiconfig-writer/copyright`, `/usr/share/doc/libreoffice-writer/copyright`, `/usr/share/doc/libuno-cppu3t64/copyright`, `/usr/share/doc/libuno-cppuhelpergcc3-3t64/copyright`, `/usr/share/doc/libuno-purpenvhelpergcc3-3t64/copyright`, `/usr/share/doc/libuno-sal3t64/copyright`, `/usr/share/doc/libuno-salhelpergcc3-3t64/copyright`, `/usr/share/doc/python3-uno/copyright`, `/usr/share/doc/uno-libs-private/copyright`, `/usr/share/doc/ure/copyright`)
 
@@ -2345,9 +2345,19 @@ Licenses: (parsed from: `/usr/share/doc/fonts-opensymbol/copyright`, `/usr/share
 - `MPL-2.0`
 - `other`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris libreoffice=4:24.2.7-0ubuntu0.24.04.3
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7-0ubuntu0.24.04.3.dsc' libreoffice_24.2.7-0ubuntu0.24.04.3.dsc 26996 SHA512:44ca790bccb44649c54b3891ce52c9a1e627a386294bd68a2ea029736a2eaf5f4d181df20ebbe236a69bb7dc560b80b408446ff924f23d7c9e67dfc8e709d8c4
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7.orig-helpcontent2.tar.xz' libreoffice_24.2.7.orig-helpcontent2.tar.xz 165548208 SHA512:f4021e8add490591997076a355a321f436b49e5aba9191ed5e9b6104176b42825678d824bb7c70235d6a3ae3b44db4b39c7a823b066ddc80d6dc630b0ed110fb
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7.orig-tarballs.tar.xz' libreoffice_24.2.7.orig-tarballs.tar.xz 213487760 SHA512:6b26f7f743a7d742958cb718877282cfd555e37421503e8ffbafa23269ef4db5398c15673b1d1067e03a3a790f7fae78d7a528b758e5c3988fac1976f06451a7
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7.orig-translations.tar.xz' libreoffice_24.2.7.orig-translations.tar.xz 222584892 SHA512:f878b8cb3dee544a7b7f4581f6a71f72c747a97fdf668fd7f680a29926dd821cae7453cda020e91016e1416943d88331c79129890a0d52dfbe8a0a5fcda2b23c
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7.orig-yaru.tar.xz' libreoffice_24.2.7.orig-yaru.tar.xz 19874368 SHA512:3c805e96dbe682f17c5b1b5fad1bf3445c7d4aa24b9a5700f508cdf1d2b7a2761f213f738d5c878643205c6f200af96c8c0aa226dcec2485fa6992f9d8f5727e
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7.orig.tar.xz' libreoffice_24.2.7.orig.tar.xz 279885536 SHA512:f5e9cfc9d37d4890f691fbdf424e68623bbb37d8a9910aad1dc1e26cb4d38f6e5ca15f5bceb08d1cac6cbc37a3ddb0e50b873405e9f277e199bf08d0838346da
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7.orig.tar.xz.asc' libreoffice_24.2.7.orig.tar.xz.asc 833 SHA512:55f9948e9403666867c178e72bb5f3c05744f84ad74c9b2bbf3b126ab86da77bdec164bc000826761cde4779fc36b77dcdfd668b001ee1790b271200a8c570ec
+'http://archive.ubuntu.com/ubuntu/pool/main/libr/libreoffice/libreoffice_24.2.7-0ubuntu0.24.04.3.debian.tar.xz' libreoffice_24.2.7-0ubuntu0.24.04.3.debian.tar.xz 2422056 SHA512:fdd0a2284bbd153414d365adf3f2492bd4ac9bd8dcb598ae47f593f2126580b111bb066893f7120421f8020f2638d5f8b5458c90b5be1462f072ddac9af73ce0
+```
 
 ### `dpkg` source package: `librevenge=0.0.5-3build1`
 
