@@ -2157,14 +2157,9 @@ Licenses: (parsed from: `/usr/share/doc/libheif-plugin-aomdec/copyright`, `/usr/
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libheif=1.19.5-1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.19.5-1build1.dsc' libheif_1.19.5-1build1.dsc 3626 SHA512:bdc11c5e711afff0859c764d45220bcf8faf559c13f597a9fcc86373c15d02f70bb9c0a615267c1ec02268595777d8dc4b27fb14062dd00d0c0531202bb77b51
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.19.5.orig.tar.gz' libheif_1.19.5.orig.tar.gz 1716856 SHA512:3cad96dea5e40ab6182ed9dd577c6cdb06993aad2c7a4ba10e11a9407e4a0378729ecb71dc74cdd57b3493aace4390ace9ae1a96d9e983ce07fb07bc51ac4904
-'http://archive.ubuntu.com/ubuntu/pool/main/libh/libheif/libheif_1.19.5-1build1.debian.tar.xz' libheif_1.19.5-1build1.debian.tar.xz 12540 SHA512:fca540b088a95b4fb512e0723372a0991c2891f51a6e9dd970fc0a17a7e31320646dc8f8172e2b67c09ad1c15a0280faeb4146a93b1baabc61640adb7f813fb0
-```
 
 ### `dpkg` source package: `libice=2:1.1.1-1`
 
@@ -2680,14 +2675,9 @@ Licenses: (parsed from: `/usr/share/doc/libltdl-dev/copyright`, `/usr/share/doc/
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libtool=2.5.4-3build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtool/libtool_2.5.4-3build1.dsc' libtool_2.5.4-3build1.dsc 2255 SHA512:12ac51603881d17fb36d5164f513197eac5bea96bf33cccde14b0c324b3bdb8170f79447fc789eb8834fe9fb24e180dab81732a5be1ff86ef0af43cb08a1f092
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtool/libtool_2.5.4.orig.tar.xz' libtool_2.5.4.orig.tar.xz 1069572 SHA512:c8ff1fc71373313185ecfff8d282bf3547b8a2d2e102aa4475d7db4945d4f4bfd45cd0d79a8e00a1c1394246908e586f8ccfd9f1cf86ff837b5c6ad7cc57a750
-'http://archive.ubuntu.com/ubuntu/pool/main/libt/libtool/libtool_2.5.4-3build1.debian.tar.xz' libtool_2.5.4-3build1.debian.tar.xz 37524 SHA512:e98930e2b4960865e441f51aa59006a79ecb099eb2294e20a12506e700b2991f5b19427f7ab4c87bceb77fc97b8e95f5f8854cd21d577cc796d43029d0a1d1df
-```
 
 ### `dpkg` source package: `libunistring=1.3-1`
 
@@ -3109,15 +3099,13 @@ Licenses: (parsed from: `/usr/share/doc/m4/copyright`)
 - `GFDL`
 - `GPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris m4=1.4.19-5
-'http://archive.ubuntu.com/ubuntu/pool/main/m/m4/m4_1.4.19-5.dsc' m4_1.4.19-5.dsc 1659 SHA512:335a17e775ca3d8c1ca49821485a77204f332980869e5f6b443be341902b001726a67bbbfd088c7ac390def458e4c2bbd23be6023992682665976f87af132b6d
-'http://archive.ubuntu.com/ubuntu/pool/main/m/m4/m4_1.4.19.orig.tar.xz' m4_1.4.19.orig.tar.xz 1654908 SHA512:47f595845c89709727bda0b3fc78e3188ef78ec818965b395532e7041cabe9e49677ee4aca3d042930095a7f8df81de3da1026b23b6897be471f6cf13ddd512b
-'http://archive.ubuntu.com/ubuntu/pool/main/m/m4/m4_1.4.19.orig.tar.xz.asc' m4_1.4.19.orig.tar.xz.asc 488 SHA512:d6ac9c6a54c57e9b53fb3e34a60d49df2f46a6e494da0a0c9ae8246b984e68a853b5d8c42677c1a0485c3f36b0bce10a481d3775c0edc1dbdfb27b43545bc31e
-'http://archive.ubuntu.com/ubuntu/pool/main/m/m4/m4_1.4.19-5.debian.tar.xz' m4_1.4.19-5.debian.tar.xz 17648 SHA512:037ec95a246204cd7949cbce234ae7efc3647a6f25236ee1eb7e3b6dc20b3af005b2041a4380820c9d0dfae96f5bd269b226a16d2abf916c86534882ddc71688
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/m4/1.4.19-5/
+
 
 ### `dpkg` source package: `make-dfsg=4.4.1-1`
 
@@ -3441,14 +3429,9 @@ Licenses: (parsed from: `/usr/share/doc/libopenjp2-7/copyright`, `/usr/share/doc
 - `ZLIB`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openjpeg2=2.5.0-2ubuntu3
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjpeg2/openjpeg2_2.5.0-2ubuntu3.dsc' openjpeg2_2.5.0-2ubuntu3.dsc 2780 SHA512:a9a46bb5649d5c979f9740bfb7dc6da06d0e79a2ba046115f406caf8cc266fd8260e9a08c97ea017e45c50c1518b3079a51671a92dcec21ead2462e24f50d15e
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjpeg2/openjpeg2_2.5.0.orig.tar.xz' openjpeg2_2.5.0.orig.tar.xz 1221108 SHA512:a266297d60ff93e14dbee890b01a76870bda69f082dbe8932fc444ccd260c27aaaac8b22e3c00ca71930b2555a1cad6cf6ed0d5d882d9d13f472cc494cab8234
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openjpeg2/openjpeg2_2.5.0-2ubuntu3.debian.tar.xz' openjpeg2_2.5.0-2ubuntu3.debian.tar.xz 19968 SHA512:6abd9b77a046d2f9381b2d34abb7273e9ddd975057cda38c9b83d58c2ca4f1d662c9b4c2aa6c029a8f2311e8dcd87eabfe612db90e5a17428049b71ec3f3ccd3
-```
 
 ### `dpkg` source package: `openldap=2.6.9+dfsg-1~exp2ubuntu1`
 
@@ -4134,15 +4117,13 @@ Licenses: (parsed from: `/usr/share/doc/libsqlite3-0/copyright`, `/usr/share/doc
 - `GPL-2+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sqlite3=3.46.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-1.dsc' sqlite3_3.46.1-1.dsc 2486 SHA512:8d7bfca74317c4aa7ca51650285759275cd9eac5a167265214b81bf73a74c36597e098d6b9e5d60f4dcd201b3ff7cf5d9b1494e4afdb86b388a5ecd5e73fc2af
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig-www.tar.xz' sqlite3_3.46.1.orig-www.tar.xz 5861820 SHA512:a5ec0f57d014b2f33d679cfbae0ca1935eb84871376b29216ffcc286a92a363a823ca0ec729a000d702054ee90b2fcc1887c1fb4bebfabcd14894f8ef91b7ad6
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1.orig.tar.xz' sqlite3_3.46.1.orig.tar.xz 8456776 SHA512:47d3c900d95641c89d5d807881e20e97f3b7889cf44c76d48715066ba5c1860defcd17498440d79bcc49b15c2ea28e81ed4b5b159f9e947941e5c1ee27de06ba
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sqlite3/sqlite3_3.46.1-1.debian.tar.xz' sqlite3_3.46.1-1.debian.tar.xz 30452 SHA512:d641dd2519ee88b0d9b6faaac7bb8d88d00a622327210d81255508e41d79326f29e0659cbe5e5382f00a574c9c92aa85b50fff2462fd6814369382f44cf9a853
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sqlite3/3.46.1-1/
+
 
 ### `dpkg` source package: `subversion=1.14.5-2`
 
