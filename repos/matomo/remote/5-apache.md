@@ -1,7 +1,7 @@
 ## `matomo:5-apache`
 
 ```console
-$ docker pull matomo@sha256:a9b540667487d8d4b7ac5dbea190512dfa88d301593bd0f6bc67eb19a6787d80
+$ docker pull matomo@sha256:b51bf22d5817abc5e920a570de3689221fdb152104b194829b12bfd17196f0ca
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -26,94 +26,94 @@ $ docker pull matomo@sha256:a9b540667487d8d4b7ac5dbea190512dfa88d301593bd0f6bc67
 ### `matomo:5-apache` - linux; amd64
 
 ```console
-$ docker pull matomo@sha256:652440be76c3252d555d5687f29d25fda27c9c4650a503a655308daf4332d9bf
+$ docker pull matomo@sha256:1f683eed98459f5e6dea6e36c06e6df80e883bd3f9f66ccd772996ca56943698
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **202.2 MB (202228944 bytes)**  
+-	Total Size: **202.4 MB (202447074 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f48dc97861b9136429c99e38f4e4ae4a1f96ac2454644ea4671afbe751003f6f`
+-	Image ID: `sha256:b2e43ea5577d20e256f5f966945e0816234dc33574f070e5247a2d621b5f52cf`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Mon, 24 Feb 2025 00:00:00 GMT
 RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1740355200'
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	rm -rf /var/lib/apt/lists/*; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_VERSION=8.3.19
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.19.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.19.tar.xz.asc
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_SHA256=976e4077dd25bec96b5dfe8938052d243bbd838f95368a204896eff12756545f
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 STOPSIGNAL SIGWINCH
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 WORKDIR /var/www/html
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 EXPOSE map[80/tcp:{}]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 CMD ["apache2-foreground"]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.24; 	pecl install redis-6.1.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
-ENV MATOMO_VERSION=5.2.2
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
+ENV MATOMO_VERSION=5.3.0
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 VOLUME [/var/www/html]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -174,138 +174,138 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35d61b02b03f11c231dcb717b231ddd100d80e6fb05efe4e24f9b6450b78b479`  
-		Last Modified: Fri, 14 Mar 2025 01:13:25 GMT  
-		Size: 3.3 MB (3280780 bytes)  
+	-	`sha256:a0eb4a8c0e3d3ddbc6c76fae48a14694724f3c0ee3a89ad3af6ebbfc9f4db0b0`  
+		Last Modified: Fri, 14 Mar 2025 18:34:21 GMT  
+		Size: 3.3 MB (3280715 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eef0cf3da751755b5eeefa7a411c15c500e7358ff696e2b65c51811ab95b7ffb`  
-		Last Modified: Fri, 14 Mar 2025 01:13:25 GMT  
-		Size: 326.0 B  
+	-	`sha256:c709768e820ed6dcc69105f74865baec99893f5dee6cc3f5a2dbc165b0f74b4a`  
+		Last Modified: Fri, 14 Mar 2025 18:34:21 GMT  
+		Size: 327.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29c3fa0351c9191d0eb13a4db6dca4e0ea28725aebe0e064cd2c0b96ed67c240`  
-		Last Modified: Fri, 14 Mar 2025 01:13:25 GMT  
-		Size: 21.9 MB (21906947 bytes)  
+	-	`sha256:d7e1d849152ac110ae3b03b5f201ee86b788191fbd07cc28f4ec549b0da399ed`  
+		Last Modified: Fri, 14 Mar 2025 18:34:22 GMT  
+		Size: 22.1 MB (22125139 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7602fcaca46e25cf6e3ab16b40e1b377a9d37cd40c5bafda17abf1ef32bcacae`  
-		Last Modified: Fri, 14 Mar 2025 01:13:25 GMT  
-		Size: 340.0 B  
+	-	`sha256:7f32b0200ee4f66e20c673c9eb22445f3cea14bc1d0e6b013686ccc545f1a35d`  
+		Last Modified: Fri, 14 Mar 2025 18:34:21 GMT  
+		Size: 342.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c378cef52fe6f8385b86210d99e1fc0bdb7e7d7f6cd3066df7b82b3d5d986fdd`  
-		Last Modified: Fri, 14 Mar 2025 01:13:25 GMT  
+	-	`sha256:36d9a73982f31008522737ac6f2346a313e86667a6190c14fc70816e4176a48a`  
+		Last Modified: Fri, 14 Mar 2025 18:34:22 GMT  
 		Size: 823.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:5-apache` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:0d2c324e2daaab7b364c2a612de4fd4a33edf132c2741e55b99a23613654c69d
+$ docker pull matomo@sha256:8639e46ec94f3f0d8fd0b0b927ca7b75cf0b9d079353d39336b0690e83623d81
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **36.4 KB (36373 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a50aacea529cfbf72fee28206b3fbb94df13c08644fe9d21fe67dcc567cb1664`
+-	Image ID: `sha256:cba570cf963965dd99b9095237e2dd17ba6a098b9e4d7fad54302fc92bff01c5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cda9611bff1935fd5d958c5c7ceb013c1f48de7ecbce17ee772ce4727774c491`  
-		Last Modified: Fri, 14 Mar 2025 01:13:25 GMT  
+	-	`sha256:e684de7756b5a06671fae57351be26258a50970e31d0a8b64c3070462850be46`  
+		Last Modified: Fri, 14 Mar 2025 18:34:21 GMT  
 		Size: 36.4 KB (36373 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `matomo:5-apache` - linux; arm variant v5
 
 ```console
-$ docker pull matomo@sha256:1ec89adc550adf7a931eddfd16641c55862b6c84415303eb95345d93f13bc249
+$ docker pull matomo@sha256:aca58d627df23c28223a4f23157a89f5c77f85ccbf99c926331f625fbf850d31
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **175.1 MB (175127453 bytes)**  
+-	Total Size: **175.3 MB (175345348 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2d2e8428a3dc5c638b4452a7909a8b5f87d83c327af1635b10aad0cca97bac65`
+-	Image ID: `sha256:8560066e915bcb72b71c512933ce208d1b09b700469d752f9d75107f6c765dd7`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Mon, 24 Feb 2025 00:00:00 GMT
 RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	rm -rf /var/lib/apt/lists/*; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_VERSION=8.3.19
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.19.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.19.tar.xz.asc
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_SHA256=976e4077dd25bec96b5dfe8938052d243bbd838f95368a204896eff12756545f
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 STOPSIGNAL SIGWINCH
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 WORKDIR /var/www/html
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 EXPOSE map[80/tcp:{}]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 CMD ["apache2-foreground"]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.24; 	pecl install redis-6.1.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
-ENV MATOMO_VERSION=5.2.2
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
+ENV MATOMO_VERSION=5.3.0
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 VOLUME [/var/www/html]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -374,130 +374,130 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 14 Mar 2025 02:31:19 GMT  
 		Size: 326.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fbb572574c7e3487db071f18f76dd2fbf9055d26af2c081e4f67f8bc2741bf0`  
-		Last Modified: Fri, 14 Mar 2025 02:31:21 GMT  
-		Size: 21.9 MB (21905248 bytes)  
+	-	`sha256:2f6f289fe622f58be4c9ecf10b9334f093a3ba7018693524dc036fd69280bdd4`  
+		Last Modified: Fri, 14 Mar 2025 18:33:01 GMT  
+		Size: 22.1 MB (22123143 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c67f3110f5458fc2e2ade3d17c57322871fc41e989168ab941a3a105688df46b`  
-		Last Modified: Fri, 14 Mar 2025 02:31:19 GMT  
+	-	`sha256:62763b2ea7e874e43aae4109a7d1bdfa3cf85cbf445ecad5bd651ba804d33294`  
+		Last Modified: Fri, 14 Mar 2025 18:33:00 GMT  
 		Size: 342.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:686373240a484fc4edf19f98235832dc7f3e481f7cb37784ddf1a226692ca7c9`  
-		Last Modified: Fri, 14 Mar 2025 02:31:20 GMT  
+	-	`sha256:2e13be9c9a0e982993060a53a7c1f0d6546b7da186259590c620f67ad9e1e003`  
+		Last Modified: Fri, 14 Mar 2025 18:33:00 GMT  
 		Size: 823.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:5-apache` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:d16b6e3b964723d2a7f24fe32a800a3f8423d6ab0a8b0aa97a0784f6d6aa64aa
+$ docker pull matomo@sha256:a8b8bad354c8066d7c0c8f5fb490b5e98d3cfda9182076dc537d04ca46e28af2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **36.5 KB (36501 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:fdaa9fd3a28c67c5f8fe0eea4e571f7523eed530d72b6c9181365459f53789af`
+-	Image ID: `sha256:175861dcfd8506afa7f5cb69fa16d2f45b23ae6387349d37856a0abc1f54c15f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2fe6b6797e72c96407a1eba656ad8957515948f2b261760a6a49abea1cabafd4`  
-		Last Modified: Fri, 14 Mar 2025 02:31:19 GMT  
+	-	`sha256:cc42d340f0b69e9a09b2517b9eb7ea03279db3f5ff1ebdc68156c603aebbb893`  
+		Last Modified: Fri, 14 Mar 2025 18:32:59 GMT  
 		Size: 36.5 KB (36501 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `matomo:5-apache` - linux; arm variant v7
 
 ```console
-$ docker pull matomo@sha256:87068a80458bc1d67a46a0f841f6a0f17bae8b3807c34290bd5009612631cb28
+$ docker pull matomo@sha256:9650d982538c4fa9ac598bc7a046dd696bd76d9280bb3a1403bd33cdcc185058
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **166.2 MB (166215460 bytes)**  
+-	Total Size: **166.4 MB (166433497 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5849b83573f2d26fa270d77b186f1acd61a04ad35acc00b63e04fc7e22fa2b69`
+-	Image ID: `sha256:e4e53333a86332c1ce14be6eb9186ba14bbc9bcd5074788bfbade74469c3b922`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Mon, 24 Feb 2025 00:00:00 GMT
 RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	rm -rf /var/lib/apt/lists/*; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_VERSION=8.3.19
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.19.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.19.tar.xz.asc
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_SHA256=976e4077dd25bec96b5dfe8938052d243bbd838f95368a204896eff12756545f
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 STOPSIGNAL SIGWINCH
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 WORKDIR /var/www/html
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 EXPOSE map[80/tcp:{}]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 CMD ["apache2-foreground"]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.24; 	pecl install redis-6.1.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
-ENV MATOMO_VERSION=5.2.2
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
+ENV MATOMO_VERSION=5.3.0
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 VOLUME [/var/www/html]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -558,44 +558,44 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f90acdc31d0c297782d4f8669fe350890726744e4a97db91c73b2189257b63c0`  
-		Last Modified: Fri, 14 Mar 2025 14:02:45 GMT  
-		Size: 2.6 MB (2625327 bytes)  
+	-	`sha256:c04d6398c4e0d7f0d1bba0ac540c504f57f6f57063882048afa4d8009c6fc9b7`  
+		Last Modified: Fri, 14 Mar 2025 18:38:39 GMT  
+		Size: 2.6 MB (2625429 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ebf4a003feb4627f0633c43a8212b21220762518ff0c9a75fee3c632edbb7f7`  
-		Last Modified: Fri, 14 Mar 2025 14:02:45 GMT  
+	-	`sha256:1b1ae5b83cc4fdc618a5b209681bd25db7977876fa8b63c8fcbebd68da8c5bce`  
+		Last Modified: Fri, 14 Mar 2025 18:38:38 GMT  
 		Size: 327.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8207edc2a61fea12aeeeea2919a2d5c1ffcea80222379c8811d3f7141cbb4ec8`  
-		Last Modified: Fri, 14 Mar 2025 14:02:46 GMT  
-		Size: 21.9 MB (21905248 bytes)  
+	-	`sha256:acbbbcc6fd364813fe23eea5fe06c4ca7f6bea065028877d3e574a947d40e2ea`  
+		Last Modified: Fri, 14 Mar 2025 18:38:40 GMT  
+		Size: 22.1 MB (22123182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:eed4ad39e55a7783a0e0f9907ffd69d7fcd38ed397ef9fe4c10f105e854ca11c`  
-		Last Modified: Fri, 14 Mar 2025 14:02:45 GMT  
-		Size: 343.0 B  
+	-	`sha256:35ce8f3c93a6e6e3efd60319490d73f1fb9325ff081e0806c4b2782db748a054`  
+		Last Modified: Fri, 14 Mar 2025 18:38:38 GMT  
+		Size: 344.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f400c5d40409dea6b723ddc18ebb676aba03b2dda56780ca970e3754e98ab8bc`  
-		Last Modified: Fri, 14 Mar 2025 14:02:46 GMT  
+	-	`sha256:e7a3a203f72161d68d644aefef979f5f18dfcfb5d3bc9272a32f13968dcb60ef`  
+		Last Modified: Fri, 14 Mar 2025 18:38:39 GMT  
 		Size: 824.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:5-apache` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:46e87c60f8771c73f1453c02232fb7b9e738e449ca1ca033df92b5950c27d8ed
+$ docker pull matomo@sha256:610ce8779debf565c42d6e34c4b3ef5cfd259d5098cba240ab56ce3944102ea5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **36.5 KB (36501 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3545d17abe479404e9f73405bb7f6e6b876d436da0085d6959c263eec9119a42`
+-	Image ID: `sha256:19d66597e786295ee7e9da930f69c2bf2a9e402b3c8a35066e0889549bf8a8f0`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2203cb71520ed3bdd228206eb77e6a3c894c65ded15689dc470607c9f7af2733`  
-		Last Modified: Fri, 14 Mar 2025 14:02:44 GMT  
+	-	`sha256:1110e4964989769b6da9f6459668c19dcfbc36e1351c589de0135a02b576e12e`  
+		Last Modified: Fri, 14 Mar 2025 18:38:38 GMT  
 		Size: 36.5 KB (36501 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -794,94 +794,94 @@ $ docker pull matomo@sha256:30e614a8e67bd4f493f74ec04ad572894c77fbdfffe922d38d95
 ### `matomo:5-apache` - linux; 386
 
 ```console
-$ docker pull matomo@sha256:dd3888802a841199a94afdb7acf403de8cadb1de19d802cb3998c89f2f5eb49a
+$ docker pull matomo@sha256:06d70a7e963567d71d3ec41fbee8ff461e9b0e1079f4eec9806c3e302f6eeb86
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **201.1 MB (201062572 bytes)**  
+-	Total Size: **201.3 MB (201280636 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f23621d0592b78b6742126d02dc7c2eec6b6f508449d272929122415e2a029fb`
+-	Image ID: `sha256:9dd72661ddc72c3662bae0d12f3deebce0c738ffcca0b42914a906230d4899cf`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Mon, 24 Feb 2025 00:00:00 GMT
 RUN # debian.sh --arch 'i386' out/ 'bookworm' '@1740355200'
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	rm -rf /var/lib/apt/lists/*; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_VERSION=8.3.19
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.19.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.19.tar.xz.asc
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_SHA256=976e4077dd25bec96b5dfe8938052d243bbd838f95368a204896eff12756545f
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 STOPSIGNAL SIGWINCH
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 WORKDIR /var/www/html
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 EXPOSE map[80/tcp:{}]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 CMD ["apache2-foreground"]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.24; 	pecl install redis-6.1.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
-ENV MATOMO_VERSION=5.2.2
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
+ENV MATOMO_VERSION=5.3.0
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 VOLUME [/var/www/html]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -942,138 +942,138 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:46389f3b0fa22f895b81ae14ef4add853adc903d2d17feb48cb632f028ab988e`  
-		Last Modified: Fri, 14 Mar 2025 01:14:07 GMT  
-		Size: 3.2 MB (3232775 bytes)  
+	-	`sha256:e2faddd13788aa3281b5c48f2859894b312a84f98705452eedfb978b3b045a4c`  
+		Last Modified: Fri, 14 Mar 2025 18:35:11 GMT  
+		Size: 3.2 MB (3232772 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fa6d1ca7270e974c69145968c2df11406bc6d35d442adb4158e546fd5cfb0621`  
-		Last Modified: Fri, 14 Mar 2025 01:14:07 GMT  
+	-	`sha256:7e2dafc83850c76c6afee0bf74aa159c67eb6116bded28b029880880cb5d76a5`  
+		Last Modified: Fri, 14 Mar 2025 18:35:11 GMT  
 		Size: 328.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:08a8fda1e7bd1c53971dce932fb5ef01bc992c381c1903de1409b8f10bb66c07`  
-		Last Modified: Fri, 14 Mar 2025 01:14:08 GMT  
-		Size: 21.9 MB (21906025 bytes)  
+	-	`sha256:f728e9085babafe3de2a50397b29634ee7c45e33d864bbf2efac5a4a55afef9c`  
+		Last Modified: Fri, 14 Mar 2025 18:35:12 GMT  
+		Size: 22.1 MB (22124092 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:936cdbbbfb00d52f68f22c0f927f026d476a8cf021a28af0644b13b2f8849cb0`  
-		Last Modified: Fri, 14 Mar 2025 01:14:07 GMT  
-		Size: 343.0 B  
+	-	`sha256:f566bc29d5be2d1a8a7dead8fdd2dd72d53647aea24d701b962c9e057252181c`  
+		Last Modified: Fri, 14 Mar 2025 18:35:11 GMT  
+		Size: 344.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7bba46e2d1fd2cc2d8ab367b26354c8de761711e042bf541b7f4fb25ff2def39`  
-		Last Modified: Fri, 14 Mar 2025 01:14:08 GMT  
-		Size: 824.0 B  
+	-	`sha256:ecba257bd3747e186f65a93117559b312d9e10cd198e6385c58eca52ed78d3af`  
+		Last Modified: Fri, 14 Mar 2025 18:35:12 GMT  
+		Size: 823.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:5-apache` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:a80d54b46278bc3be2e85a018214b4b0eb0e28a7b8fd9963bf7eab44af4e03b2
+$ docker pull matomo@sha256:7a72c57ab2c322015195b3016ab4167493b642cc733ea4c017ab677069e597cc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **36.3 KB (36316 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:9affca25196ef602d9ea39ce5237d00b03461d0d8ad82c45ba67887202b7e36c`
+-	Image ID: `sha256:5b3ef5846edc3f8e33231eb3ebc920ee2a0782ee33eeafa8c868c20037c9e5bc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:eb13fe8218f862e4f5a97175275d2c76dd8ce975a863d6042ea0fd7e728ebcb6`  
-		Last Modified: Fri, 14 Mar 2025 01:14:07 GMT  
+	-	`sha256:ec14fb2fef84363673668b7e7a8ab7b8052eca69130a7c3fcce64beb1ebaac2d`  
+		Last Modified: Fri, 14 Mar 2025 18:35:11 GMT  
 		Size: 36.3 KB (36316 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `matomo:5-apache` - linux; mips64le
 
 ```console
-$ docker pull matomo@sha256:b9710a880ea731db00bf872e7865dfe1db977e2af419f35016e8c8f92ce3dd84
+$ docker pull matomo@sha256:3dfb5bccc2eaabfd2fdda807928519af1ae6e2d402ba1abca63d8ae11d1bf49b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **177.4 MB (177408594 bytes)**  
+-	Total Size: **177.6 MB (177626402 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc940ed78d9708a89fd214bb2dad35a7c1934c35b5118bfac143bc3339f62d9b`
+-	Image ID: `sha256:c2516453e80fe2d34e6c174c5e9903a05672b5214fc852422f88558afe50e6d0`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Mon, 24 Feb 2025 00:00:00 GMT
 RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1740355200'
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	rm -rf /var/lib/apt/lists/*; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_VERSION=8.3.19
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.19.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.19.tar.xz.asc
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_SHA256=976e4077dd25bec96b5dfe8938052d243bbd838f95368a204896eff12756545f
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 STOPSIGNAL SIGWINCH
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 WORKDIR /var/www/html
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 EXPOSE map[80/tcp:{}]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 CMD ["apache2-foreground"]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.24; 	pecl install redis-6.1.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
-ENV MATOMO_VERSION=5.2.2
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
+ENV MATOMO_VERSION=5.3.0
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 VOLUME [/var/www/html]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1142,130 +1142,130 @@ CMD ["apache2-foreground"]
 		Last Modified: Fri, 14 Mar 2025 18:02:12 GMT  
 		Size: 330.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:818c00b59794a779dbf125dfec3be6ff4af69e74fb72f2bf80eb95ff4c279669`  
-		Last Modified: Fri, 14 Mar 2025 18:02:20 GMT  
-		Size: 21.9 MB (21905168 bytes)  
+	-	`sha256:663829f0138191b725171f3292c618b0fcaae4dfa7b155e4c64ab09e7ee9c2d1`  
+		Last Modified: Fri, 14 Mar 2025 18:34:43 GMT  
+		Size: 22.1 MB (22122980 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:daab07f557c18f2904b63b0cc0986f71ea7890cdbbedad6cefdecea2e430e0d7`  
-		Last Modified: Fri, 14 Mar 2025 18:02:12 GMT  
-		Size: 347.0 B  
+	-	`sha256:c7f61b59df81c4965f44e8e8af4d2726e8a34dbf49659dd42e6089c0b104a9b1`  
+		Last Modified: Fri, 14 Mar 2025 18:34:41 GMT  
+		Size: 344.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e4248f8e34e64c3e159a727f553c0280249686e7ffb02498cb82a9854ff24780`  
-		Last Modified: Fri, 14 Mar 2025 18:02:13 GMT  
-		Size: 824.0 B  
+	-	`sha256:771cbd3ef1c77f40be199ef6ad6aaf9d567747fc2a849df74ec7afa558b42e48`  
+		Last Modified: Fri, 14 Mar 2025 18:34:41 GMT  
+		Size: 823.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:5-apache` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:58e0001300640f0a00e5f8b69230a7c6b3b2b5d80c493d6cc5a5a8efda4558f3
+$ docker pull matomo@sha256:dcc63240a3c47d9feed8a1d50cd0b47dddf95da35c0172a67334f6d8dc4a7a7b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **36.5 KB (36475 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b90709a90235be167a56e3243e3917862bdb0c50621da7c0da4e98cd0c9d4bf4`
+-	Image ID: `sha256:708eb213673d66e1f0203ccd51e53914541b840552592e824f2e1d7ba053774f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:ba322b323fac0b28279d06ef45f3b4425961a2861131d6c63f075bbe342e5f9f`  
-		Last Modified: Fri, 14 Mar 2025 18:02:11 GMT  
+	-	`sha256:5b3c57dbc733df3b008715a445488aea4df4f8f06bd02977d0756253adb64f41`  
+		Last Modified: Fri, 14 Mar 2025 18:34:40 GMT  
 		Size: 36.5 KB (36475 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `matomo:5-apache` - linux; ppc64le
 
 ```console
-$ docker pull matomo@sha256:1fcac142eae705512440487b27c10e96fa6bea2409e92e1dc626e011655eb9b5
+$ docker pull matomo@sha256:c86f7987659b04655d76504921e4bbc78570bb874f6217c4d27ec60669f77bc3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **206.5 MB (206547998 bytes)**  
+-	Total Size: **206.8 MB (206765963 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e68e6b99a9e60a9a420ef04c5ec01bdd02d4eaea35617b53dbb0c8ac2b6e28ed`
+-	Image ID: `sha256:f417fdbc4fad8235aac828bbf6c300263e66425f9874028e3207c49d0281de46`
 -	Entrypoint: `["\/entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Mon, 24 Feb 2025 00:00:00 GMT
 RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHPIZE_DEPS=autoconf 		dpkg-dev 		file 		g++ 		gcc 		libc-dev 		make 		pkg-config 		re2c
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		$PHPIZE_DEPS 		ca-certificates 		curl 		xz-utils 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_INI_DIR=/usr/local/etc/php
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	mkdir -p "$PHP_INI_DIR/conf.d"; 	[ ! -d /var/www/html ]; 	mkdir -p /var/www/html; 	chown www-data:www-data /var/www/html; 	chmod 1777 /var/www/html # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV APACHE_CONFDIR=/etc/apache2
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV APACHE_ENVVARS=/etc/apache2/envvars
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends apache2; 	rm -rf /var/lib/apt/lists/*; 		sed -ri 's/^export ([^=]+)=(.*)$/: ${\1:=\2}\nexport \1/' "$APACHE_ENVVARS"; 		. "$APACHE_ENVVARS"; 	for dir in 		"$APACHE_LOCK_DIR" 		"$APACHE_RUN_DIR" 		"$APACHE_LOG_DIR" 		"$APACHE_RUN_DIR/socks" 	; do 		rm -rvf "$dir"; 		mkdir -p "$dir"; 		chown "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$dir"; 		chmod 1777 "$dir"; 	done; 		rm -rvf /var/www/html/*; 		ln -sfT /dev/stderr "$APACHE_LOG_DIR/error.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/access.log"; 	ln -sfT /dev/stdout "$APACHE_LOG_DIR/other_vhosts_access.log"; 	chown -R --no-dereference "$APACHE_RUN_USER:$APACHE_RUN_GROUP" "$APACHE_LOG_DIR" # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN a2dismod mpm_event && a2enmod mpm_prefork # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN { 		echo '<FilesMatch \.php$>'; 		echo '\tSetHandler application/x-httpd-php'; 		echo '</FilesMatch>'; 		echo; 		echo 'DirectoryIndex disabled'; 		echo 'DirectoryIndex index.php index.html'; 		echo; 		echo '<Directory /var/www/>'; 		echo '\tOptions -Indexes'; 		echo '\tAllowOverride All'; 		echo '</Directory>'; 	} | tee "$APACHE_CONFDIR/conf-available/docker-php.conf" 	&& a2enconf docker-php # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_CFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_LDFLAGS=-Wl,-O1 -pie
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_VERSION=8.3.19
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_URL=https://www.php.net/distributions/php-8.3.19.tar.xz PHP_ASC_URL=https://www.php.net/distributions/php-8.3.19.tar.xz.asc
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_SHA256=976e4077dd25bec96b5dfe8938052d243bbd838f95368a204896eff12756545f
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends gnupg; 	rm -rf /var/lib/apt/lists/*; 		mkdir -p /usr/src; 	cd /usr/src; 		curl -fsSL -o php.tar.xz "$PHP_URL"; 		if [ -n "$PHP_SHA256" ]; then 		echo "$PHP_SHA256 *php.tar.xz" | sha256sum -c -; 	fi; 		if [ -n "$PHP_ASC_URL" ]; then 		curl -fsSL -o php.tar.xz.asc "$PHP_ASC_URL"; 		export GNUPGHOME="$(mktemp -d)"; 		for key in $GPG_KEYS; do 			gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "$key"; 		done; 		gpg --batch --verify php.tar.xz.asc php.tar.xz; 		gpgconf --kill all; 		rm -rf "$GNUPGHOME"; 	fi; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY docker-php-source /usr/local/bin/ # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		apache2-dev 		libargon2-dev 		libcurl4-openssl-dev 		libonig-dev 		libreadline-dev 		libsodium-dev 		libsqlite3-dev 		libssl-dev 		libxml2-dev 		zlib1g-dev 	; 		export 		CFLAGS="$PHP_CFLAGS" 		CPPFLAGS="$PHP_CPPFLAGS" 		LDFLAGS="$PHP_LDFLAGS" 		PHP_BUILD_PROVIDER='https://github.com/docker-library/php' 		PHP_UNAME='Linux - Docker' 	; 	docker-php-source extract; 	cd /usr/src/php; 	gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	if [ ! -d /usr/include/curl ]; then 		ln -sT "/usr/include/$debMultiarch/curl" /usr/local/include/curl; 	fi; 	./configure 		--build="$gnuArch" 		--with-config-file-path="$PHP_INI_DIR" 		--with-config-file-scan-dir="$PHP_INI_DIR/conf.d" 				--enable-option-checking=fatal 				--with-mhash 				--with-pic 				--enable-mbstring 		--enable-mysqlnd 		--with-password-argon2 		--with-sodium=shared 		--with-pdo-sqlite=/usr 		--with-sqlite3=/usr 				--with-curl 		--with-iconv 		--with-openssl 		--with-readline 		--with-zlib 				--disable-phpdbg 				--with-pear 				--with-libdir="lib/$debMultiarch" 				--disable-cgi 				--with-apxs2 	; 	make -j "$(nproc)"; 	find -type f -name '*.a' -delete; 	make install; 	find 		/usr/local 		-type f 		-perm '/0111' 		-exec sh -euxc ' 			strip --strip-all "$@" || : 		' -- '{}' + 	; 	make clean; 		cp -v php.ini-* "$PHP_INI_DIR/"; 		cd /; 	docker-php-source delete; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/*; 		pecl update-channels; 	rm -rf /tmp/pear ~/.pearrc; 		php --version # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY docker-php-ext-* docker-php-entrypoint /usr/local/bin/ # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN docker-php-ext-enable sodium # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENTRYPOINT ["docker-php-entrypoint"]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 STOPSIGNAL SIGWINCH
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY apache2-foreground /usr/local/bin/ # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 WORKDIR /var/www/html
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 EXPOSE map[80/tcp:{}]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 CMD ["apache2-foreground"]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENV PHP_MEMORY_LIMIT=256M
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -ex; 		savedAptMark="$(apt-mark showmanual)"; 		apt-get update; 	apt-get install -y --no-install-recommends 		libfreetype-dev 		libjpeg-dev 		libldap2-dev 		libpng-dev 		libzip-dev 		procps 	; 		debMultiarch="$(dpkg-architecture --query DEB_BUILD_MULTIARCH)"; 	docker-php-ext-configure gd --with-freetype --with-jpeg; 	docker-php-ext-configure ldap --with-libdir="lib/$debMultiarch"; 	docker-php-ext-install -j "$(nproc)" 		gd 		bcmath 		ldap 		mysqli 		opcache 		pdo_mysql 		zip 	; 		pecl install APCu-5.1.24; 	pecl install redis-6.1.0; 		docker-php-ext-enable 		apcu 		redis 	; 	rm -r /tmp/pear; 		apt-mark auto '.*' > /dev/null; 	apt-mark manual $savedAptMark; 	ldd "$(php -r 'echo ini_get("extension_dir");')"/*.so 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); print so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -rt apt-mark manual; 		apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN { 		echo 'opcache.memory_consumption=128'; 		echo 'opcache.interned_strings_buffer=8'; 		echo 'opcache.max_accelerated_files=4000'; 		echo 'opcache.revalidate_freq=2'; 		echo 'opcache.fast_shutdown=1'; 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
-ENV MATOMO_VERSION=5.2.2
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
+ENV MATOMO_VERSION=5.3.0
+# Thu, 13 Mar 2025 14:44:13 GMT
 RUN set -ex; 	fetchDeps=" 		dirmngr 		gnupg 	"; 	apt-get update; 	apt-get install -y --no-install-recommends 		$fetchDeps 	; 		curl -fsSL -o matomo.tar.gz 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz"; 	curl -fsSL -o matomo.tar.gz.asc 		"https://builds.matomo.org/matomo-${MATOMO_VERSION}.tar.gz.asc"; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver keyserver.ubuntu.com --recv-keys F529A27008477483777FC23D63BB30D0E5D2C749; 	gpg --batch --verify matomo.tar.gz.asc matomo.tar.gz; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" matomo.tar.gz.asc; 	tar -xzf matomo.tar.gz -C /usr/src/; 	rm matomo.tar.gz; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false $fetchDeps; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY php.ini /usr/local/etc/php/conf.d/php-matomo.ini # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 COPY docker-entrypoint.sh /entrypoint.sh # buildkit
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 VOLUME [/var/www/html]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 ENTRYPOINT ["/entrypoint.sh"]
-# Fri, 24 Jan 2025 15:44:16 GMT
+# Thu, 13 Mar 2025 14:44:13 GMT
 CMD ["apache2-foreground"]
 ```
 
@@ -1326,44 +1326,44 @@ CMD ["apache2-foreground"]
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efba24c3fc30bdb154f146d809002f7da3e040e6cc5d1daae8910230bd0cb514`  
-		Last Modified: Fri, 14 Mar 2025 08:14:22 GMT  
-		Size: 3.2 MB (3188851 bytes)  
+	-	`sha256:11caf8dcb8fd382a9deaf1425eca633f37e2cd82d00d096e8638e46e1552c02f`  
+		Last Modified: Fri, 14 Mar 2025 18:35:03 GMT  
+		Size: 3.2 MB (3188862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9867299a7f0bc354e03302eca1e234009a212ae2b389bc26c5a5384c02401f52`  
-		Last Modified: Fri, 14 Mar 2025 08:14:22 GMT  
-		Size: 328.0 B  
+	-	`sha256:aa6b97b5fac5a13981ce6cfc7343ed57dc300604679ed314693d9228f6511fc6`  
+		Last Modified: Fri, 14 Mar 2025 18:35:03 GMT  
+		Size: 330.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3ff35cd941a197d123043250a4ab30a0ca073786fe58f6103113cfbce467538f`  
-		Last Modified: Fri, 14 Mar 2025 08:14:23 GMT  
-		Size: 21.9 MB (21906917 bytes)  
+	-	`sha256:f5ad80dc3abc2d21ab66f5e3c0b156b12eb99758f5508a27e31cc2e43f5cc36d`  
+		Last Modified: Fri, 14 Mar 2025 18:35:04 GMT  
+		Size: 22.1 MB (22124868 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2bd99b2ebdac74d78b3be79de17ee2c2eb98f96500c33691db35d344a6bc3821`  
-		Last Modified: Fri, 14 Mar 2025 08:14:22 GMT  
-		Size: 342.0 B  
+	-	`sha256:bc063522b4ebfabf4899152ed6ae382978ad335d6372dd25c95084f4aadd9d55`  
+		Last Modified: Fri, 14 Mar 2025 18:35:03 GMT  
+		Size: 343.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61016bff51320d81db5da9803f8fae8a8a06851d3dc87927e222a4dfbdfdb9b3`  
-		Last Modified: Fri, 14 Mar 2025 08:14:23 GMT  
+	-	`sha256:0dacfe83c4e8b5e23517c136734abdb92cb8faf7eb8a024d502a3b105b57d70d`  
+		Last Modified: Fri, 14 Mar 2025 18:35:04 GMT  
 		Size: 824.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `matomo:5-apache` - unknown; unknown
 
 ```console
-$ docker pull matomo@sha256:85d968697af7b6907e30bfbe15afb3abdb10752533900c233031a2f7fde10f23
+$ docker pull matomo@sha256:15792de77a38b2eb222260963f8ef79467534788ec7a1a1d63a2e4758cea9e61
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **36.4 KB (36445 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cc5b01a4c1892af29558931cdd9d6e4be86fe0fd3a89a63004ca1d840d773101`
+-	Image ID: `sha256:bb70c084e72c935a6f4e327d7ffcbc8f4f0f90411dfd971285d05ed33c8db089`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a4a6ac1e43ec3354671f22de24aa30bfad569d93110ad779e3b9e46a92da3ed4`  
-		Last Modified: Fri, 14 Mar 2025 08:14:21 GMT  
+	-	`sha256:4d2f4272453baece863a3cfc62b1cf9eec64aedfe13833f21d625d0dd577dea2`  
+		Last Modified: Fri, 14 Mar 2025 18:35:02 GMT  
 		Size: 36.4 KB (36445 bytes)  
 		MIME: application/vnd.in-toto+json
 
