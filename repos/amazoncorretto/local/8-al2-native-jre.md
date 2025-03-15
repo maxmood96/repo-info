@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e892e226096741c8ce86a05b47df1ef476c01f408d024590e2b5f1135dd068a0`
+- Image ID: `sha256:dfb29eddec50955cc5a481baa71c19271e67d46df79af311f81f1183a3ebe9fa`
 - Created: `2025-01-24T20:03:54Z`
-- Virtual Size: ~ 443.43 Mb  
+- Virtual Size: ~ 443.37 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -367,15 +367,15 @@ $ dnf --quiet download --source --url elfutils-libs-0.176-2.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/1c91483c986f8c6728684f387c271636212f24068e329c1b81b7502fdeeadddc/elfutils-0.176-2.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `expat-2.1.0-15.amzn2.0.4.x86_64`
+### `rpm` package: `expat-2.1.0-15.amzn2.0.5.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url expat-2.1.0-15.amzn2.0.4
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/11180040b0f1af38c17759bd389a22c8ac4755dbc6e102225ba46767d2e967b2/expat-2.1.0-15.amzn2.0.4.src.rpm
+$ dnf --quiet download --source --url expat-2.1.0-15.amzn2.0.5
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/39cb8c3ec35dfbe505eeb66cc9a7abf92ea4e556cec3dfcbc1440461be75a7ce/expat-2.1.0-15.amzn2.0.5.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.11-36.amzn2.0.1.x86_64`
@@ -1204,37 +1204,37 @@ $ dnf --quiet download --source --url libgcrypt-1.5.3-14.amzn2.0.3
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/86f0a2bd76acd4f1460e1e52a2d34502480808da4e76a2a1bf835dba805b5d21/libgcrypt-1.5.3-14.amzn2.0.3.src.rpm
 ```
 
-### `rpm` package: `libglvnd-1.0.1-0.1.git5baa1e5.amzn2.0.1.x86_64`
+### `rpm` package: `libglvnd-1.0.1-1.amzn2.0.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libglvnd-1.0.1-0.1.git5baa1e5.amzn2.0.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/8de516b03b41124fda9642b96b8bea7cf60604c31ffd82c4a6e93e9cb9b3b765/libglvnd-1.0.1-0.1.git5baa1e5.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url libglvnd-1.0.1-1.amzn2.0.2
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/f44de2c49e1dd1bc4e9334e771bd643debba0b457c426711c7c2cc72b145f3ed/libglvnd-1.0.1-1.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `libglvnd-egl-1.0.1-0.1.git5baa1e5.amzn2.0.1.x86_64`
+### `rpm` package: `libglvnd-egl-1.0.1-1.amzn2.0.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libglvnd-egl-1.0.1-0.1.git5baa1e5.amzn2.0.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/8de516b03b41124fda9642b96b8bea7cf60604c31ffd82c4a6e93e9cb9b3b765/libglvnd-1.0.1-0.1.git5baa1e5.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url libglvnd-egl-1.0.1-1.amzn2.0.2
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/f44de2c49e1dd1bc4e9334e771bd643debba0b457c426711c7c2cc72b145f3ed/libglvnd-1.0.1-1.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `libglvnd-glx-1.0.1-0.1.git5baa1e5.amzn2.0.1.x86_64`
+### `rpm` package: `libglvnd-glx-1.0.1-1.amzn2.0.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libglvnd-glx-1.0.1-0.1.git5baa1e5.amzn2.0.1
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/8de516b03b41124fda9642b96b8bea7cf60604c31ffd82c4a6e93e9cb9b3b765/libglvnd-1.0.1-0.1.git5baa1e5.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url libglvnd-glx-1.0.1-1.amzn2.0.2
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/f44de2c49e1dd1bc4e9334e771bd643debba0b457c426711c7c2cc72b145f3ed/libglvnd-1.0.1-1.amzn2.0.2.src.rpm
 ```
 
 ### `rpm` package: `libgpg-error-1.12-3.amzn2.0.3.x86_64`
@@ -1545,15 +1545,15 @@ $ dnf --quiet download --source --url libxcb-1.12-1.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/f247c6b583421db5b27b36aa2d19d8cc44685181e32fd319cc2f6aae8d998d88/libxcb-1.12-1.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.1-6.amzn2.5.14.x86_64`
+### `rpm` package: `libxml2-2.9.1-6.amzn2.5.15.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.14
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/3807c48344effffb9fa3e529f0744d80bb30e468220bf1ab1e1fcb16a64add7d/libxml2-2.9.1-6.amzn2.5.14.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.15
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/ede28ffb04058ae239130d4457a8d4f6aeeb73fa42a005a237c79e9bf471e465/libxml2-2.9.1-6.amzn2.5.15.src.rpm
 ```
 
 ### `rpm` package: `libxshmfence-1.2-1.amzn2.0.2.x86_64`
@@ -1776,15 +1776,15 @@ $ dnf --quiet download --source --url openldap-2.4.44-25.amzn2.0.7
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/db7da8ae89a175ef6835a375dec2b69b3eaecc676cb58b8dd9c1f8e769fb0fc2/openldap-2.4.44-25.amzn2.0.7.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-1.0.2k-24.amzn2.0.14.x86_64`
+### `rpm` package: `openssl-libs-1.0.2k-24.amzn2.0.15.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-libs-1.0.2k-24.amzn2.0.14
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/604852247bbadf314099e0e6ad47a98a2a3590c4635bec4cb485ea709b08cb3d/openssl-1.0.2k-24.amzn2.0.14.src.rpm
+$ dnf --quiet download --source --url openssl-libs-1.0.2k-24.amzn2.0.15
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/d8a4c9708ea57a6b1f4c57fe11f0d7e7fd746498f724046d3d97ca8bd59d8c50/openssl-1.0.2k-24.amzn2.0.15.src.rpm
 ```
 
 ### `rpm` package: `p11-kit-0.23.22-1.amzn2.0.1.x86_64`
@@ -2161,15 +2161,15 @@ $ dnf --quiet download --source --url systemd-libs-219-78.amzn2.0.24
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/1ab99585ddae4996705d3779918ad45f13b2a43cd594628a1a2cc2cd0f665861/systemd-219-78.amzn2.0.24.src.rpm
 ```
 
-### `rpm` package: `tzdata-2024a-1.amzn2.0.1.noarch`
+### `rpm` package: `tzdata-2025a-1.amzn2.0.1.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-2024a-1.amzn2.0.1.noarch
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/9d158b03fd666bbcf8477fcb2ce9ba8545361d7ecc708eba9c90921ddfee8f25/tzdata-2024a-1.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url tzdata-2025a-1.amzn2.0.1.noarch
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/6cbf8b8b103b4c59ef3f9a5cd601a6b79951db1e3ef63beaaa0536a0fdf3111b/tzdata-2025a-1.amzn2.0.1.src.rpm
 ```
 
 ### `rpm` package: `ustr-1.0.4-16.amzn2.0.3.x86_64`
