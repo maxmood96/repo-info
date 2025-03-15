@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:b8dcb47382dbc93ec29205805853d5d3794ebec29ca5bfb4ab1a511dc73e3f9f`
+- Image ID: `sha256:11d58e92a5620e82eb0066fb5facbe413d35bff18b4193c9ae34f60eafe6948d`
 - Created: `2025-03-06T15:03:40Z`
-- Virtual Size: ~ 388.37 Mb  
+- Virtual Size: ~ 386.78 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["catalina.sh","run"]`
@@ -186,15 +186,15 @@ $ dnf --quiet download --source --url elfutils-libelf-0.176-2.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/1c91483c986f8c6728684f387c271636212f24068e329c1b81b7502fdeeadddc/elfutils-0.176-2.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `expat-2.1.0-15.amzn2.0.4.x86_64`
+### `rpm` package: `expat-2.1.0-15.amzn2.0.5.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url expat-2.1.0-15.amzn2.0.4
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/11180040b0f1af38c17759bd389a22c8ac4755dbc6e102225ba46767d2e967b2/expat-2.1.0-15.amzn2.0.4.src.rpm
+$ dnf --quiet download --source --url expat-2.1.0-15.amzn2.0.5
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/39cb8c3ec35dfbe505eeb66cc9a7abf92ea4e556cec3dfcbc1440461be75a7ce/expat-2.1.0-15.amzn2.0.5.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.11-36.amzn2.0.1.x86_64`
@@ -897,15 +897,15 @@ $ dnf --quiet download --source --url openldap-2.4.44-25.amzn2.0.7
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/db7da8ae89a175ef6835a375dec2b69b3eaecc676cb58b8dd9c1f8e769fb0fc2/openldap-2.4.44-25.amzn2.0.7.src.rpm
 ```
 
-### `rpm` package: `openssl-libs-1.0.2k-24.amzn2.0.14.x86_64`
+### `rpm` package: `openssl-libs-1.0.2k-24.amzn2.0.15.x86_64`
 
 Licenses (from `rpm --query`): OpenSSL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url openssl-libs-1.0.2k-24.amzn2.0.14
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/604852247bbadf314099e0e6ad47a98a2a3590c4635bec4cb485ea709b08cb3d/openssl-1.0.2k-24.amzn2.0.14.src.rpm
+$ dnf --quiet download --source --url openssl-libs-1.0.2k-24.amzn2.0.15
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/d8a4c9708ea57a6b1f4c57fe11f0d7e7fd746498f724046d3d97ca8bd59d8c50/openssl-1.0.2k-24.amzn2.0.15.src.rpm
 ```
 
 ### `rpm` package: `openssl11-libs-1.1.1zb-1.amzn2.0.1.x86_64`
@@ -1205,15 +1205,15 @@ $ dnf --quiet download --source --url system-release-2-17.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/3599cf903c2cf24f55b835d112c54dd1283447c2aeec26d6effcf2c8e28916fd/system-release-2-17.amzn2.src.rpm
 ```
 
-### `rpm` package: `tzdata-2024a-1.amzn2.0.1.noarch`
+### `rpm` package: `tzdata-2025a-1.amzn2.0.1.noarch`
 
 Licenses (from `rpm --query`): Public Domain
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url tzdata-2024a-1.amzn2.0.1.noarch
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/9d158b03fd666bbcf8477fcb2ce9ba8545361d7ecc708eba9c90921ddfee8f25/tzdata-2024a-1.amzn2.0.1.src.rpm
+$ dnf --quiet download --source --url tzdata-2025a-1.amzn2.0.1.noarch
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6418f3a30899664b1dee230ce5ce0279df929bb92ce75e44096f675fc78c5b15/../../../../../blobstore/6cbf8b8b103b4c59ef3f9a5cd601a6b79951db1e3ef63beaaa0536a0fdf3111b/tzdata-2025a-1.amzn2.0.1.src.rpm
 ```
 
 ### `rpm` package: `vim-data-9.0.2153-1.amzn2.0.3.noarch`
