@@ -1,7 +1,7 @@
 ## `oraclelinux:8-slim`
 
 ```console
-$ docker pull oraclelinux@sha256:8219897ea69cc2ddd2f3139dcc495d0ee4181c6eb16f02578e1b9a7c4f551995
+$ docker pull oraclelinux@sha256:c79e0a9523ecb390ea18a2170315b6a5aeaf7b9ca2167ba0f0f3c04ac3c52625
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -63,48 +63,48 @@ $ docker pull oraclelinux@sha256:89e838b27ac908cd7d745bba8e15ec9d591f10bf3aedd34
 ### `oraclelinux:8-slim` - linux; arm64 variant v8
 
 ```console
-$ docker pull oraclelinux@sha256:acfd0006139a278b2017743d80a8ccffc2e7e6343983c67a9ad8eb09f1c09070
+$ docker pull oraclelinux@sha256:7e28c590546b16ace2297dda1ec43a26772084b83d458c443cc23eebb8495078
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.0 MB (49989436 bytes)**  
+-	Total Size: **50.0 MB (49989226 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1693214166dbd00127439aa3a34a611f78b8aa83bfd3b3af7e0d66443612c8d9`
+-	Image ID: `sha256:c8ce79e23b0564cd41c4fba5971cf6421db71b614b466f2119b2d3a0caa3f895`
 -	Default Command: `["\/bin\/bash"]`
 
 ```dockerfile
-# Thu, 13 Mar 2025 18:03:13 GMT
+# Fri, 14 Mar 2025 17:20:57 GMT
 ADD oraclelinux-8-slim-arm64v8-rootfs.tar.xz / # buildkit
-# Thu, 13 Mar 2025 18:03:13 GMT
+# Fri, 14 Mar 2025 17:20:57 GMT
 CMD ["/bin/bash"]
 ```
 
 -	Layers:
-	-	`sha256:0e6d27d0384ed91610f17d7a9ef2bb948c3574306ac40526f54329f54140d2f0`  
-		Last Modified: Thu, 13 Mar 2025 21:07:17 GMT  
-		Size: 50.0 MB (49989436 bytes)  
+	-	`sha256:6f8eb825c1fc22ded5eda8a11c91fd13cd2b63722a0fdbe5ed89339ba10aabad`  
+		Last Modified: Fri, 14 Mar 2025 21:52:22 GMT  
+		Size: 50.0 MB (49989226 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `oraclelinux:8-slim` - unknown; unknown
 
 ```console
-$ docker pull oraclelinux@sha256:f39b7b6fb0bdc3aa54a1c7bcefce011c2d37443896a43b56469220cb0b543d05
+$ docker pull oraclelinux@sha256:ef1516cdb1c76483f56ba1123c495a754a8ae7e676898e48bff2111b8c18ee78
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.1 MB (2080074 bytes)**  
+-	Total Size: **2.1 MB (2080075 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3ad4ec0345d9a19e3f128bf46df829be32aaa9e0f6aba5631acbab51d2d2f7bd`
+-	Image ID: `sha256:80e2a920ab2b66ba5b5cf2439a7de5f58110e4ad111f8f2175784aa139ee0e6e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:433d2df1e6b33fc7c2688c9cf16644f930483dde9bc2895a9fdfdbfe2292b453`  
-		Last Modified: Thu, 13 Mar 2025 21:07:15 GMT  
+	-	`sha256:1e2ebbbbf27c223488c1f74bb34095d00cba0ac16573b168a3f07a2f22f52c89`  
+		Last Modified: Fri, 14 Mar 2025 21:52:21 GMT  
 		Size: 2.1 MB (2075161 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0ce797bbb507253afbac34845d6e88e516bc59fc0fc5c54d3bf21492cd5b90c3`  
-		Last Modified: Thu, 13 Mar 2025 21:07:15 GMT  
-		Size: 4.9 KB (4913 bytes)  
+	-	`sha256:50c5e1d430aa5098ff817519c86ddea74428ace0abbb65fdd87ce85c3da211fb`  
+		Last Modified: Fri, 14 Mar 2025 21:52:20 GMT  
+		Size: 4.9 KB (4914 bytes)  
 		MIME: application/vnd.in-toto+json
