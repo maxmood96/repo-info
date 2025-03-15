@@ -1,10 +1,10 @@
-# `convertigo:8.3.2`
+# `convertigo:8.3.3`
 
 ## Docker Metadata
 
-- Image ID: `sha256:711eab498f18de0d5dc2f0650a325dc370fcbda756f41196f0da7a7a265b8d42`
-- Created: `2024-11-04T09:52:53Z`
-- Virtual Size: ~ 640.20 Mb  
+- Image ID: `sha256:0240f4532ed1e0dbfdf160d2a213698b18cedaae98059ffcc9893e4f1251cd5a`
+- Created: `2025-03-13T10:40:45Z`
+- Virtual Size: ~ 638.03 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["tini","--","/docker-entrypoint.sh"]`
@@ -23,8 +23,8 @@
   - `TOMCAT_VERSION=9.0.102`
   - `TOMCAT_SHA512=cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a`
   - `SWT_GTK3=0`
-  - `CONVERTIGO_VERSION=8.3.2`
-  - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.3.2/convertigo-8.3.2.war`
+  - `CONVERTIGO_VERSION=8.3.3`
+  - `CONVERTIGO_WAR_URL=https://github.com/convertigo/convertigo/releases/download/8.3.3/convertigo-8.3.3.war`
   - `CONVERTIGO_GPG_KEYS=6A7779BB78FE368DF74B708FD4DA8FBEB64BF75F`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -718,27 +718,6 @@ Licenses: (parsed from: `/usr/share/doc/libgnutls30/copyright`)
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
-
-### `dpkg` source package: `gosu=1.14-1ubuntu0.1`
-
-Binary Packages:
-
-- `gosu=1.14-1ubuntu0.1`
-
-Licenses: (parsed from: `/usr/share/doc/gosu/copyright`)
-
-- `Apache-2.0`
-- `GPL-3`
-- `GPL-3+`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris gosu=1.14-1ubuntu0.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.14-1ubuntu0.1.dsc' gosu_1.14-1ubuntu0.1.dsc 2148 SHA512:d249396e83d49a7b219abc9fe1f4ca6e3b25c7d210cccd4da167e39550b833046ba190b6a934546382ce41a63f4c988c8df99bc0c4e7d5fcddb038546e15b688
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.14.orig.tar.gz' gosu_1.14.orig.tar.gz 16791 SHA512:258bc33bf7150f4520e8b5cd0497ccfe3ee83d39c866565ec5e0cfe3ccd28ef1a5694075b301936c94a45cd44621c44e28c3e0fcd0acd465a3a4fe5cff85adf2
-'http://archive.ubuntu.com/ubuntu/pool/universe/g/gosu/gosu_1.14-1ubuntu0.1.debian.tar.xz' gosu_1.14-1ubuntu0.1.debian.tar.xz 3224 SHA512:71d9050bf5487d329666977f64096542e7aa5e3adfc17499815b0b11ebd2afa597b6ee3a1f6c04e66bfb8f0d6968d96eeacea8a6dde9ed6f4d9c14c7fcd2b9d9
-```
 
 ### `dpkg` source package: `grep=3.7-1build1`
 
