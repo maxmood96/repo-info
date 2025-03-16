@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9349cc09cdc9291c7f77f564b0bf393fd19a366969e3f4e406ffbf9d045e7a15`
+- Image ID: `sha256:6d25c74ffba0b835af74576befa9799c494b4722c42e036f248fb96400435113`
 - Created: `2025-02-05T21:06:18Z`
-- Virtual Size: ~ 465.26 Mb  
+- Virtual Size: ~ 465.28 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=11.4.5`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-03-10T09:43:12Z`
+  - `build-date=2025-03-13T07:15:09Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=MariaDB Database for relational SQL`
@@ -41,7 +41,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://www.redhat.com`
-  - `vcs-ref=2f8e6c4d7ad22789d5663bf4bd66603301fba889`
+  - `vcs-ref=7865437f00d10c54ee1c3a6268b5ff65b38afba5`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=11.4.5`
@@ -262,7 +262,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-9.el9.noarch
-https://ftp-chi.osuosl.org/pub/fedora-epel/9/Everything/source/tree/Packages/e/epel-release-9-9.el9.src.rpm
+rsync://ftp-nyc.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/e/epel-release-9-9.el9.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
@@ -512,7 +512,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-https://ftp-chi.osuosl.org/pub/fedora-epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+rsync://ftp-nyc.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -1087,11 +1087,16 @@ $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.13-6.el9_5.1.x86_64`
+### `rpm` package: `libxml2-2.9.13-6.el9_5.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libxml2-2.9.13-6.el9_5.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-6.el9_5.2.src.rpm
+```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
 
@@ -2080,7 +2085,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-https://ftp-chi.osuosl.org/pub/fedora-epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+rsync://ftp-nyc.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2091,7 +2096,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-https://ftp-chi.osuosl.org/pub/fedora-epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+rsync://ftp-nyc.osuosl.org/fedora-epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
