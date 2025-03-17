@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9755c387b39e71d6f2f8f04b57c9461bf14c8023cb8105768a6e79936f62ed02`
+- Image ID: `sha256:78e963ded2487039d333ce0462f0b5469c1ce235cb595a1071653ec224884993`
 - Created: `2025-01-21T17:21:51Z`
-- Virtual Size: ~ 769.17 Mb  
+- Virtual Size: ~ 769.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -225,40 +225,40 @@ https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/gl
 https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/glib2-2.68.4-14.el9_4.1.src.rpm
 ```
 
-### `rpm` package: `glibc-2.34-125.0.1.el9_5.1.x86_64`
+### `rpm` package: `glibc-2.34-125.0.1.el9_5.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-2.34-125.0.1.el9_5.1
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/glibc-2.34-125.0.1.el9_5.1.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/glibc-2.34-125.0.1.el9_5.1.src.rpm
+$ dnf --quiet download --source --url glibc-2.34-125.0.1.el9_5.3
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/glibc-2.34-125.0.1.el9_5.3.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/glibc-2.34-125.0.1.el9_5.3.src.rpm
 ```
 
-### `rpm` package: `glibc-common-2.34-125.0.1.el9_5.1.x86_64`
+### `rpm` package: `glibc-common-2.34-125.0.1.el9_5.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-common-2.34-125.0.1.el9_5.1
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/glibc-2.34-125.0.1.el9_5.1.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/glibc-2.34-125.0.1.el9_5.1.src.rpm
+$ dnf --quiet download --source --url glibc-common-2.34-125.0.1.el9_5.3
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/glibc-2.34-125.0.1.el9_5.3.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/glibc-2.34-125.0.1.el9_5.3.src.rpm
 ```
 
-### `rpm` package: `glibc-minimal-langpack-2.34-125.0.1.el9_5.1.x86_64`
+### `rpm` package: `glibc-minimal-langpack-2.34-125.0.1.el9_5.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and LGPLv2+ with exceptions and GPLv2+ and GPLv2+ with exceptions and BSD and Inner-Net and ISC and Public Domain and GFDL
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-125.0.1.el9_5.1
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/glibc-2.34-125.0.1.el9_5.1.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/glibc-2.34-125.0.1.el9_5.1.src.rpm
+$ dnf --quiet download --source --url glibc-minimal-langpack-2.34-125.0.1.el9_5.3
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/glibc-2.34-125.0.1.el9_5.3.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/glibc-2.34-125.0.1.el9_5.3.src.rpm
 ```
 
 ### `rpm` package: `gmp-6.2.0-13.el9.x86_64`
@@ -873,16 +873,16 @@ https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSourc
 https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.13-6.el9_5.1.x86_64`
+### `rpm` package: `libxml2-2.9.13-6.el9_5.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.13-6.el9_5.1
-https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libxml2-2.9.13-6.el9_5.1.src.rpm
-https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libxml2-2.9.13-6.el9_5.1.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.13-6.el9_5.2
+https://yum.oracle.com/repo/OracleLinux/OL9/appstream/x86_64/getPackageSource/libxml2-2.9.13-6.el9_5.2.src.rpm
+https://yum.oracle.com/repo/OracleLinux/OL9/baseos/latest/x86_64/getPackageSource/libxml2-2.9.13-6.el9_5.2.src.rpm
 ```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
