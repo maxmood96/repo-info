@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ca3c05e3dde68937f37e9b3c49c90fd327859c9c5fb652197f73353292eb6527`
+- Image ID: `sha256:67e98f87d566c5c5448cc4d98ebd6c61b74bb5dbf6845c6bb3ce5dac29d17d70`
 - Created: `2025-02-18T16:18:37Z`
 - Virtual Size: ~ 1.34 Gb  
   (total size of all layers on-disk)
@@ -25,7 +25,7 @@
   - `CALL_HOME_OPTIONAL_PARAMS= -s el9`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-03-10T09:43:12Z`
+  - `build-date=2025-03-13T07:15:09Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=The Universal Base Image Minimal is a stripped down image that uses microdnf as a package manager. This base image is freely redistributable, but Red Hat only supports Red Hat technologies through subscriptions for Red Hat products. This image is maintained by Red Hat and updated regularly.`
@@ -38,10 +38,10 @@
   - `maintainer=Red Hat, Inc.`
   - `name=ubi9-minimal`
   - `org.opencontainers.image.authors=info@percona.com`
-  - `release=1741599792`
+  - `release=1741850109`
   - `summary=Provides the latest release of the minimal Red Hat Universal Base Image 9.`
   - `url=https://www.redhat.com`
-  - `vcs-ref=2f8e6c4d7ad22789d5663bf4bd66603301fba889`
+  - `vcs-ref=7865437f00d10c54ee1c3a6268b5ff65b38afba5`
   - `vcs-type=git`
   - `vendor=Red Hat, Inc.`
   - `version=9.5`
@@ -1157,11 +1157,16 @@ $ dnf --quiet download --source --url libxcrypt-4.4.18-3.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxcrypt-4.4.18-3.el9.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.13-6.el9_5.1.x86_64`
+### `rpm` package: `libxml2-2.9.13-6.el9_5.2.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url libxml2-2.9.13-6.el9_5.2
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libxml2-2.9.13-6.el9_5.2.src.rpm
+```
 
 ### `rpm` package: `libyaml-0.2.5-7.el9.x86_64`
 
@@ -1497,7 +1502,7 @@ Licenses (from `rpm --query`): Copyright (c) 2000, 2025, Oracle and/or its affil
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-### `rpm` package: `percona-telemetry-agent-1.0.3-3.el9.x86_64`
+### `rpm` package: `percona-telemetry-agent-1.0.3-4.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv3
 
