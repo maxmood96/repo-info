@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7c82deb3e4c47ecd2c8f644fdd187602603539918ef060250d0190d66adf123a`
+- Image ID: `sha256:226c4d10433ee3f04bfd3a2ee93199b3b1d752f9d14449001ee34c1746096d9b`
 - Created: `2025-02-04T10:42:04Z`
-- Virtual Size: ~ 507.21 Mb  
+- Virtual Size: ~ 507.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-php-entrypoint"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=528995BFEDFBA7191D46839EF9BA0ADA31CBD89E 39B641343D8C104B2B146DC3F9C39DC0B9698544 F1F692238FBC1666E5A5CCD4199F9DFEF6FFBAFD`
-  - `PHP_VERSION=8.1.31`
-  - `PHP_URL=https://www.php.net/distributions/php-8.1.31.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.31.tar.xz.asc`
-  - `PHP_SHA256=c4f244d46ba51c72f7d13d4f66ce6a9e9a8d6b669c51be35e01765ba58e7afca`
+  - `PHP_VERSION=8.1.32`
+  - `PHP_URL=https://www.php.net/distributions/php-8.1.32.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.1.32.tar.xz.asc`
+  - `PHP_SHA256=c582ac682a280bbc69bc2186c21eb7e3313cc73099be61a6bc1d2cd337cbf383`
   - `MEDIAWIKI_MAJOR_VERSION=1.42`
   - `MEDIAWIKI_VERSION=1.42.5`
 
@@ -556,16 +556,16 @@ MIT
 ### `apk` package: `libffi`
 
 ```console
-libffi-3.4.6-r0 description:
+libffi-3.4.7-r0 description:
 portable, high level programming interface to various calling conventions.
 
-libffi-3.4.6-r0 webpage:
+libffi-3.4.7-r0 webpage:
 https://sourceware.org/libffi/
 
-libffi-3.4.6-r0 installed size:
+libffi-3.4.7-r0 installed size:
 38 KiB
 
-libffi-3.4.6-r0 license:
+libffi-3.4.7-r0 license:
 MIT
 
 ```
@@ -879,16 +879,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.4-r3 description:
+libxml2-2.13.4-r5 description:
 XML parsing library, version 2
 
-libxml2-2.13.4-r3 webpage:
+libxml2-2.13.4-r5 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.4-r3 installed size:
+libxml2-2.13.4-r5 installed size:
 1054 KiB
 
-libxml2-2.13.4-r3 license:
+libxml2-2.13.4-r5 license:
 MIT
 
 ```
