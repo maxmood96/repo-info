@@ -22,7 +22,7 @@
 ## `phpmyadmin:5`
 
 ```console
-$ docker pull phpmyadmin@sha256:76b7cc1382acc52c6338395fbd1e94c0b2a9830a68f3fd6ce12d612db99fd338
+$ docker pull phpmyadmin@sha256:847e2c011d052e1980915605af10f81137d749085394f6c7bb0319b5040195af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -263,19 +263,19 @@ $ docker pull phpmyadmin@sha256:51dd94e85f46f9219a3c066d5eb6e19918d4924b554bfc56
 ### `phpmyadmin:5` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:a7266581bc9dbdabe275e577d0672ce83f86425d4e4e0eec0f6976b9af4dc9b9
+$ docker pull phpmyadmin@sha256:ae4e07a5622c85b861cdfcc8bb9cc3f6e0a60a6e9837e78732a868174c707ebc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.4 MB (168393269 bytes)**  
+-	Total Size: **168.4 MB (168388913 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6dd6757fd5f0aa18f7c6ff52b8481681efa223a936fdfd22b55bddbc3e815400`
+-	Image ID: `sha256:7a1b8e8d67fb6b24df1e5b78ff65b9f451b2a91723335c305a0099c0adda267a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -375,105 +375,105 @@ CMD ["apache2-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3014e21b6e4396df02c7cc3c5f126fa29d531fa5a1ad0b40b80de6794ae2694`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
+	-	`sha256:50392f60ef98ab502e7ed416d506883257fe8ed57158995e7e77f0bb4d3317f7`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:858e0a56f6198eb0af5102ce28eda7b5a34384f5b54701b7346487229bff9e9c`  
-		Last Modified: Tue, 25 Feb 2025 02:51:20 GMT  
-		Size: 82.0 MB (81993202 bytes)  
+	-	`sha256:70faba6dfc75d37d904a2f4e790ed9afc8110c25721f14deb57e142ce509f203`  
+		Last Modified: Tue, 18 Mar 2025 01:17:34 GMT  
+		Size: 82.0 MB (81993797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c24b0f2499da71327f565769347ea1f63e9070dfa8385025f0465d80e603c361`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
-		Size: 225.0 B  
+	-	`sha256:2daffac9eca4d243722e527ddd815f9abe7f53272e743c7fd4b6c1177b0eb255`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e21a0010d00b089e3a34b60fddcac813cd3a1211368d868b76aa3c52acf85f39`  
-		Last Modified: Tue, 25 Feb 2025 02:55:46 GMT  
-		Size: 19.4 MB (19419190 bytes)  
+	-	`sha256:5e40bc50036fecf94b15523ae01df144fd25cc29085c9b900167682966aea345`  
+		Last Modified: Tue, 18 Mar 2025 04:03:50 GMT  
+		Size: 19.4 MB (19419254 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:836efc0ee062aca6556d741fb3e390ca6b509fc639049bef1cfc24e29616d566`  
-		Last Modified: Tue, 25 Feb 2025 02:55:45 GMT  
-		Size: 434.0 B  
+	-	`sha256:fb9ef2e54bf4f16636556f311cb5285d5b86bac864da9ee836197f377a6cb776`  
+		Last Modified: Tue, 18 Mar 2025 04:03:49 GMT  
+		Size: 432.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bb27253beef75bf260f9071d9fb96a1614335f2b1af270afddf706a8142cb7b`  
-		Last Modified: Tue, 25 Feb 2025 02:55:45 GMT  
-		Size: 483.0 B  
+	-	`sha256:77ad3f9cc1ac78b8fb303beaac1f3eedbe45e57ac5c8760279395201640c6ddb`  
+		Last Modified: Tue, 18 Mar 2025 04:03:50 GMT  
+		Size: 485.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:011930897f0e94f8908d35816b869c1916d4b7c5e69b013a14bd68af54513b64`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
-		Size: 12.3 MB (12274462 bytes)  
+	-	`sha256:28ee6f2ea656a53ed2ef0ce36223f3ff3f1ad9649216635e7039a7f7ba11e80a`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
+		Size: 12.3 MB (12274458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9587ba2e3349206ea532f4464028c241e4ad1121298357feaccd286fca85d8fd`  
-		Last Modified: Fri, 14 Mar 2025 01:16:17 GMT  
-		Size: 490.0 B  
+	-	`sha256:439c9d2c84cacda41206e1f1363eed0af6a1dd4a67bb23046d39682d03f256c0`  
+		Last Modified: Tue, 18 Mar 2025 04:53:03 GMT  
+		Size: 487.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a585b6944c1433eff35267ab704ba7545360430398014d7bb676ae940a46c5f3`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
-		Size: 10.4 MB (10406221 bytes)  
+	-	`sha256:eed0cbcb35c8ba1da95d1667e1211071e3c1bdbeccbc425a4bbaa1d440a3fd2c`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
+		Size: 10.4 MB (10406179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:411a0c4868fccc79fa986919a6a2d409dc1b8ba5c006b941e9492a700c79ffcd`  
-		Last Modified: Fri, 14 Mar 2025 01:16:16 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:19914ee66d9997b46e85813af04cb64d1122bedef3ce7ad34b0cf1641704e65e`  
+		Last Modified: Tue, 18 Mar 2025 04:53:03 GMT  
+		Size: 2.5 KB (2454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10c8577ccb7b4d01bfe8006afd0838fc8d07519bd88b0f59867e8b3384427b27`  
-		Last Modified: Fri, 14 Mar 2025 01:16:17 GMT  
+	-	`sha256:bf491b90e0c842e4cf13496bc58a29ccd0ee3a966f66503314da4e72d0302b7c`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8b7bacb438358389faa51d6b6f86912db59267c3bfff4f8d02c547b4970ac24`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
+	-	`sha256:375f9c94559079ddf7990747ea43a04907652eeca291bfca6685d6e984619193`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
 		Size: 891.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97c2987bd3f28ff7d9512b71fde3148c2bb558f3a01fc8214b24ce3f1dfd1aa2`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
-		Size: 5.1 MB (5143507 bytes)  
+	-	`sha256:deb87792c15e99616fd8200022c1c1a857fa712710c9b2e3ba524864a8487dbd`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 5.1 MB (5143344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e31c41319e8dc032e6caa60141c1b885815e0be2d4a828e5e425971fc4ad8f21`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 654.0 B  
+	-	`sha256:912ea3ee3b28842eb5bf8b0aea06f5a2988e4a3b45f8d107a9b19ea91c6b3067`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 655.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd033e90e48feafab441b30e242ad1cd93cb8f489c69eaa4e34eced709310795`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
-		Size: 13.4 MB (13405978 bytes)  
+	-	`sha256:dcdbd4b76d0006fcd08e5e0380eb43cd30470a466ad3d88632d86d6d2a6437c3`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 13.4 MB (13405949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5f352e2e04377f91fa1c1ccd750182370df31645eba06a04949f5353dc6a944`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 2.1 KB (2138 bytes)  
+	-	`sha256:a51bb42a4f3c082f6d79b2c4b959f11145d4632d11a23be39d4dfde98b5ab739`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 2.1 KB (2140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:925a0c70ea15e12f1a853755f05e378d309a08277601f59b5cb695f61b01dc8d`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
+	-	`sha256:dd1e3727484de159870ab9661b8f6dcc052e1f150d93f9d92f3d2ef5097c3c07`  
+		Last Modified: Tue, 18 Mar 2025 05:49:18 GMT  
 		Size: 858.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5360158cfbceb913f62089e4ec10563025c0a7349ba0d531036918f8d537b86`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
+	-	`sha256:ccf71ea361b3587c8fa13e4fe523a46c692fd6464a3fb5998468aa32caace46b`  
+		Last Modified: Tue, 18 Mar 2025 05:49:18 GMT  
 		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:5` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:eb503513bf647d75baf9d318f2b66598fdbcce3f6b9cfecd954f91bf511e01db
+$ docker pull phpmyadmin@sha256:542f3f5a1c0e8bf593780750f489847ecc821c7decc84304980b4d4773d506c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.5 KB (48505 bytes)**  
+-	Total Size: **48.5 KB (48507 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57eb9460a8ed393307d81f7618dda392706da5ddfff56bf6cff2ae6d6d0bb0c4`
+-	Image ID: `sha256:a0ec89b2977e08a827707cd4cb2bf1555c8138b8cd33eee773638eefbbb80aa2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fa00e0561d8f2b1dc12797f587e9d0896d7629ff5f46f0f5b8495a791972932c`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 48.5 KB (48505 bytes)  
+	-	`sha256:f28d2a55674640471e77da229ddb2dca0e4f582ff69875f87c779d90b49f674a`  
+		Last Modified: Tue, 18 Mar 2025 05:49:16 GMT  
+		Size: 48.5 KB (48507 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `phpmyadmin:5` - linux; arm variant v7
@@ -1343,19 +1343,19 @@ $ docker pull phpmyadmin@sha256:c6b6790ddaf7ead8e263367bea3f0f972a2e35141d3580e1
 ### `phpmyadmin:5` - linux; ppc64le
 
 ```console
-$ docker pull phpmyadmin@sha256:6a4e6e8df1d30992318072f705a560781cd7f490fdeea039b5d601b75b961561
+$ docker pull phpmyadmin@sha256:aff247876a35e802341d95014336d6646b12e461562c2d1ab0794573659d0b87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.7 MB (200679544 bytes)**  
+-	Total Size: **200.7 MB (200676406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68d30ed1ccd6cb211ab8597d398c64a0e4ec0c9838e61ef009a35c43a91a12d1`
+-	Image ID: `sha256:bfe5cc958634c6dde17f37d530ee20ab80428fddb6b7c3ce46ab90ffc4fadbb9`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -1455,104 +1455,104 @@ CMD ["apache2-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35bbbae4d2dc0350f7df1634e33daf64fe78cb672182650c700a26750b33b64c`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 225.0 B  
+	-	`sha256:b40c9e444f13d4c7a03580cf188ef06ad94ffc13189161777e9ed5cf824f8ea7`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e7f7bed916e76b3a3b176b4e6a5bcfe6e10e39a6c423be8fc3575115d7b1e06`  
-		Last Modified: Tue, 25 Feb 2025 02:59:28 GMT  
-		Size: 103.3 MB (103323545 bytes)  
+	-	`sha256:aef297c24191733a2fbe29ead5c53224c75c11b7ee0ba80b57b0b3898a33bbbf`  
+		Last Modified: Tue, 18 Mar 2025 03:15:07 GMT  
+		Size: 103.3 MB (103324904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d9943a0d5cef1bf22e1a6d5df4b38af8052474c28fe7d9188d33c9e0190742`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 226.0 B  
+	-	`sha256:69d707aca2b2791bdef48c24201e181e34f312580cea3313c4c8b8cdfa4a82c4`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f5eba5668f315d2ef7f70338fc89daecbca191bf9b5b6622280439ff5ceb4a7`  
-		Last Modified: Tue, 25 Feb 2025 03:04:11 GMT  
-		Size: 21.3 MB (21308442 bytes)  
+	-	`sha256:904971bf946949bd849eb4b667ce16daba036ec4ae5066a61816ed4b1abe5854`  
+		Last Modified: Tue, 18 Mar 2025 03:37:33 GMT  
+		Size: 21.3 MB (21308422 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8bec4fde36a5fc026717bc0e1c4a8f85c6397c11d730b4d345fdb0b5014cc45`  
-		Last Modified: Tue, 25 Feb 2025 03:04:06 GMT  
+	-	`sha256:04920e64d4709add88a0a3602fa557015f184d1476acb20183c24e2c709eecc9`  
+		Last Modified: Tue, 18 Mar 2025 03:37:32 GMT  
 		Size: 435.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca66cb544073b521bd3bcd518135c4cf977a5939323c5191473a1b8a2a09cd05`  
-		Last Modified: Tue, 25 Feb 2025 03:04:06 GMT  
-		Size: 489.0 B  
+	-	`sha256:65238378d6b0ff511c6a27c9bbac5e81b95662e894866715edfdea0404819c82`  
+		Last Modified: Tue, 18 Mar 2025 03:37:32 GMT  
+		Size: 490.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4250556fa8417334da5be4ff65e43885cb11a4aefa7d255ddcedadfb60e1e4b`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 12.3 MB (12275866 bytes)  
+	-	`sha256:2333a1edb32516e5e07616b5bf60b9c51eab28c9f7222124b11efd092bb70fa4`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 12.3 MB (12275862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fc1dc2ea55f95178ec13fe2b851029d78f5e0d2f3a6c8390fe1a234a9f2e9cf`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 491.0 B  
+	-	`sha256:8cd4c85564347a400a7d40062f14524c610df614356818d7923e4f4576913fc8`  
+		Last Modified: Tue, 18 Mar 2025 04:02:29 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7afa4c68853b68dabf1bd8e64549df9d94bcf4c95ef043f559e0eefabff7ff8f`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 11.8 MB (11834942 bytes)  
+	-	`sha256:c16f08b0e4b59bd52114ff166b918c0003930ebf44501f8c07892345a7c9dba8`  
+		Last Modified: Tue, 18 Mar 2025 04:02:31 GMT  
+		Size: 11.8 MB (11834908 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a58ec0c7a28b79ecb2761aea3a7ba1c7e11a569cdefcbc08ed0bf5bc5fb74af`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 2.5 KB (2457 bytes)  
+	-	`sha256:3f3257acf4109928d905c7b5a959f364623910b44f44302a13a64660fbf3199b`  
+		Last Modified: Tue, 18 Mar 2025 04:02:29 GMT  
+		Size: 2.5 KB (2453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4920622eb8cb7077f99589eb65bebd3e0264d1474c6bc0a48e5c79e7629376`  
-		Last Modified: Fri, 14 Mar 2025 01:15:17 GMT  
-		Size: 249.0 B  
+	-	`sha256:cfaa4ed3637b246e489af22d086c861274049e02b0850ba84d4fa9601d4986f3`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8370a02df23f733617d749f69df800919185839d44c681f4c9ec95e9b5531d10`  
-		Last Modified: Fri, 14 Mar 2025 01:15:17 GMT  
-		Size: 891.0 B  
+	-	`sha256:d38c04a142ef9c061e66f15af950f1d095b9e309d8fbb53f8ab0600189d73894`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 890.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d9c47a21dbfdcf245c9daf36cb61186207f7f618a051ba6fcaff10a50a6e967`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 6.5 MB (6468297 bytes)  
+	-	`sha256:c3ea8f820564f878adb3531fb433425f13deaf7972d81574161bc6568e3fd705`  
+		Last Modified: Tue, 18 Mar 2025 05:37:32 GMT  
+		Size: 6.5 MB (6468404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2d2d1cd1c6305f6251498ef70ac82e232089392568a52cbd6bafa4a75c3f272`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
-		Size: 654.0 B  
+	-	`sha256:f490553e05bc8aaa6f2e49e90144ac86a32437543c474af4cf8c1eed99d7af53`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
+		Size: 655.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49f9475bb8cb41837630e54c620dfe5eca2babaf576a4359990b7ef263bd9586`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 13.4 MB (13406042 bytes)  
+	-	`sha256:38419e268acf39dc1c0a2841380aa51b65021c9f928ff8c675ec6443c8357773`  
+		Last Modified: Tue, 18 Mar 2025 05:37:31 GMT  
+		Size: 13.4 MB (13406017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da5b44747e40ef58c629e28def2d797046fad1e2fdf6dea3e99d0232bfb86737`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
-		Size: 2.1 KB (2141 bytes)  
+	-	`sha256:6aba9cdc5edd7ca97da7c577af0779f3ba0993900405f059cccdcafa162b5a30`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
+		Size: 2.1 KB (2138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6445849ec79254bddeecacf7b911e961e2a1f81f4e5042e2a3869bd9a88b7c1f`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 859.0 B  
+	-	`sha256:677ea9ec131983d3b21280894ca73e4ad36d3d169ba910e92bfbbdcae74c0d02`  
+		Last Modified: Tue, 18 Mar 2025 05:37:31 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb1b44c9e7612d5d5dfcb863723342bf1bfbb27f4acf37e582e407121f68ce30`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
+	-	`sha256:7a67fdc2d6f7dca51e62ffb2d4127c02a12c293eef3af1b1428532b58d6ace0d`  
+		Last Modified: Tue, 18 Mar 2025 05:37:32 GMT  
 		Size: 947.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:5` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:7281ee8a20e8ca18fa01881d897273222f3b7b3f76c1b991db35d07c99cd2329
+$ docker pull phpmyadmin@sha256:e9d7f560ee56019dcf70047c936abb3224e80f8b3a717991fd2a3b87c5012a01
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **48.5 KB (48452 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5d873c0252bd552a0ae78f6ffcf0ce5c2a39ae66980c86a17e16c7971b446d6`
+-	Image ID: `sha256:f75ebb293888d4bb7d0f2e06655b46184bde6e7997844e229165a3795754cfb5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c6e49aeea2e48a267b7a2b39398a53c780e1160b75557fc8418c3ebbe9fd46b4`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
+	-	`sha256:8f7964a788b8920a1ee103da8f82cd4257455d663dc9723b005358c74be864a9`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
 		Size: 48.5 KB (48452 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -1775,7 +1775,7 @@ $ docker pull phpmyadmin@sha256:df9cad7ccd6d48a74367912c2b3f117c1b5cee81032e4b5d
 ## `phpmyadmin:5-apache`
 
 ```console
-$ docker pull phpmyadmin@sha256:76b7cc1382acc52c6338395fbd1e94c0b2a9830a68f3fd6ce12d612db99fd338
+$ docker pull phpmyadmin@sha256:847e2c011d052e1980915605af10f81137d749085394f6c7bb0319b5040195af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2016,19 +2016,19 @@ $ docker pull phpmyadmin@sha256:51dd94e85f46f9219a3c066d5eb6e19918d4924b554bfc56
 ### `phpmyadmin:5-apache` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:a7266581bc9dbdabe275e577d0672ce83f86425d4e4e0eec0f6976b9af4dc9b9
+$ docker pull phpmyadmin@sha256:ae4e07a5622c85b861cdfcc8bb9cc3f6e0a60a6e9837e78732a868174c707ebc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.4 MB (168393269 bytes)**  
+-	Total Size: **168.4 MB (168388913 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6dd6757fd5f0aa18f7c6ff52b8481681efa223a936fdfd22b55bddbc3e815400`
+-	Image ID: `sha256:7a1b8e8d67fb6b24df1e5b78ff65b9f451b2a91723335c305a0099c0adda267a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -2128,105 +2128,105 @@ CMD ["apache2-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3014e21b6e4396df02c7cc3c5f126fa29d531fa5a1ad0b40b80de6794ae2694`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
+	-	`sha256:50392f60ef98ab502e7ed416d506883257fe8ed57158995e7e77f0bb4d3317f7`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:858e0a56f6198eb0af5102ce28eda7b5a34384f5b54701b7346487229bff9e9c`  
-		Last Modified: Tue, 25 Feb 2025 02:51:20 GMT  
-		Size: 82.0 MB (81993202 bytes)  
+	-	`sha256:70faba6dfc75d37d904a2f4e790ed9afc8110c25721f14deb57e142ce509f203`  
+		Last Modified: Tue, 18 Mar 2025 01:17:34 GMT  
+		Size: 82.0 MB (81993797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c24b0f2499da71327f565769347ea1f63e9070dfa8385025f0465d80e603c361`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
-		Size: 225.0 B  
+	-	`sha256:2daffac9eca4d243722e527ddd815f9abe7f53272e743c7fd4b6c1177b0eb255`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e21a0010d00b089e3a34b60fddcac813cd3a1211368d868b76aa3c52acf85f39`  
-		Last Modified: Tue, 25 Feb 2025 02:55:46 GMT  
-		Size: 19.4 MB (19419190 bytes)  
+	-	`sha256:5e40bc50036fecf94b15523ae01df144fd25cc29085c9b900167682966aea345`  
+		Last Modified: Tue, 18 Mar 2025 04:03:50 GMT  
+		Size: 19.4 MB (19419254 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:836efc0ee062aca6556d741fb3e390ca6b509fc639049bef1cfc24e29616d566`  
-		Last Modified: Tue, 25 Feb 2025 02:55:45 GMT  
-		Size: 434.0 B  
+	-	`sha256:fb9ef2e54bf4f16636556f311cb5285d5b86bac864da9ee836197f377a6cb776`  
+		Last Modified: Tue, 18 Mar 2025 04:03:49 GMT  
+		Size: 432.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bb27253beef75bf260f9071d9fb96a1614335f2b1af270afddf706a8142cb7b`  
-		Last Modified: Tue, 25 Feb 2025 02:55:45 GMT  
-		Size: 483.0 B  
+	-	`sha256:77ad3f9cc1ac78b8fb303beaac1f3eedbe45e57ac5c8760279395201640c6ddb`  
+		Last Modified: Tue, 18 Mar 2025 04:03:50 GMT  
+		Size: 485.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:011930897f0e94f8908d35816b869c1916d4b7c5e69b013a14bd68af54513b64`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
-		Size: 12.3 MB (12274462 bytes)  
+	-	`sha256:28ee6f2ea656a53ed2ef0ce36223f3ff3f1ad9649216635e7039a7f7ba11e80a`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
+		Size: 12.3 MB (12274458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9587ba2e3349206ea532f4464028c241e4ad1121298357feaccd286fca85d8fd`  
-		Last Modified: Fri, 14 Mar 2025 01:16:17 GMT  
-		Size: 490.0 B  
+	-	`sha256:439c9d2c84cacda41206e1f1363eed0af6a1dd4a67bb23046d39682d03f256c0`  
+		Last Modified: Tue, 18 Mar 2025 04:53:03 GMT  
+		Size: 487.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a585b6944c1433eff35267ab704ba7545360430398014d7bb676ae940a46c5f3`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
-		Size: 10.4 MB (10406221 bytes)  
+	-	`sha256:eed0cbcb35c8ba1da95d1667e1211071e3c1bdbeccbc425a4bbaa1d440a3fd2c`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
+		Size: 10.4 MB (10406179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:411a0c4868fccc79fa986919a6a2d409dc1b8ba5c006b941e9492a700c79ffcd`  
-		Last Modified: Fri, 14 Mar 2025 01:16:16 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:19914ee66d9997b46e85813af04cb64d1122bedef3ce7ad34b0cf1641704e65e`  
+		Last Modified: Tue, 18 Mar 2025 04:53:03 GMT  
+		Size: 2.5 KB (2454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10c8577ccb7b4d01bfe8006afd0838fc8d07519bd88b0f59867e8b3384427b27`  
-		Last Modified: Fri, 14 Mar 2025 01:16:17 GMT  
+	-	`sha256:bf491b90e0c842e4cf13496bc58a29ccd0ee3a966f66503314da4e72d0302b7c`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8b7bacb438358389faa51d6b6f86912db59267c3bfff4f8d02c547b4970ac24`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
+	-	`sha256:375f9c94559079ddf7990747ea43a04907652eeca291bfca6685d6e984619193`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
 		Size: 891.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97c2987bd3f28ff7d9512b71fde3148c2bb558f3a01fc8214b24ce3f1dfd1aa2`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
-		Size: 5.1 MB (5143507 bytes)  
+	-	`sha256:deb87792c15e99616fd8200022c1c1a857fa712710c9b2e3ba524864a8487dbd`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 5.1 MB (5143344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e31c41319e8dc032e6caa60141c1b885815e0be2d4a828e5e425971fc4ad8f21`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 654.0 B  
+	-	`sha256:912ea3ee3b28842eb5bf8b0aea06f5a2988e4a3b45f8d107a9b19ea91c6b3067`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 655.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd033e90e48feafab441b30e242ad1cd93cb8f489c69eaa4e34eced709310795`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
-		Size: 13.4 MB (13405978 bytes)  
+	-	`sha256:dcdbd4b76d0006fcd08e5e0380eb43cd30470a466ad3d88632d86d6d2a6437c3`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 13.4 MB (13405949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5f352e2e04377f91fa1c1ccd750182370df31645eba06a04949f5353dc6a944`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 2.1 KB (2138 bytes)  
+	-	`sha256:a51bb42a4f3c082f6d79b2c4b959f11145d4632d11a23be39d4dfde98b5ab739`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 2.1 KB (2140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:925a0c70ea15e12f1a853755f05e378d309a08277601f59b5cb695f61b01dc8d`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
+	-	`sha256:dd1e3727484de159870ab9661b8f6dcc052e1f150d93f9d92f3d2ef5097c3c07`  
+		Last Modified: Tue, 18 Mar 2025 05:49:18 GMT  
 		Size: 858.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5360158cfbceb913f62089e4ec10563025c0a7349ba0d531036918f8d537b86`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
+	-	`sha256:ccf71ea361b3587c8fa13e4fe523a46c692fd6464a3fb5998468aa32caace46b`  
+		Last Modified: Tue, 18 Mar 2025 05:49:18 GMT  
 		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:5-apache` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:eb503513bf647d75baf9d318f2b66598fdbcce3f6b9cfecd954f91bf511e01db
+$ docker pull phpmyadmin@sha256:542f3f5a1c0e8bf593780750f489847ecc821c7decc84304980b4d4773d506c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.5 KB (48505 bytes)**  
+-	Total Size: **48.5 KB (48507 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57eb9460a8ed393307d81f7618dda392706da5ddfff56bf6cff2ae6d6d0bb0c4`
+-	Image ID: `sha256:a0ec89b2977e08a827707cd4cb2bf1555c8138b8cd33eee773638eefbbb80aa2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fa00e0561d8f2b1dc12797f587e9d0896d7629ff5f46f0f5b8495a791972932c`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 48.5 KB (48505 bytes)  
+	-	`sha256:f28d2a55674640471e77da229ddb2dca0e4f582ff69875f87c779d90b49f674a`  
+		Last Modified: Tue, 18 Mar 2025 05:49:16 GMT  
+		Size: 48.5 KB (48507 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `phpmyadmin:5-apache` - linux; arm variant v7
@@ -3096,19 +3096,19 @@ $ docker pull phpmyadmin@sha256:c6b6790ddaf7ead8e263367bea3f0f972a2e35141d3580e1
 ### `phpmyadmin:5-apache` - linux; ppc64le
 
 ```console
-$ docker pull phpmyadmin@sha256:6a4e6e8df1d30992318072f705a560781cd7f490fdeea039b5d601b75b961561
+$ docker pull phpmyadmin@sha256:aff247876a35e802341d95014336d6646b12e461562c2d1ab0794573659d0b87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.7 MB (200679544 bytes)**  
+-	Total Size: **200.7 MB (200676406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68d30ed1ccd6cb211ab8597d398c64a0e4ec0c9838e61ef009a35c43a91a12d1`
+-	Image ID: `sha256:bfe5cc958634c6dde17f37d530ee20ab80428fddb6b7c3ce46ab90ffc4fadbb9`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -3208,104 +3208,104 @@ CMD ["apache2-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35bbbae4d2dc0350f7df1634e33daf64fe78cb672182650c700a26750b33b64c`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 225.0 B  
+	-	`sha256:b40c9e444f13d4c7a03580cf188ef06ad94ffc13189161777e9ed5cf824f8ea7`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e7f7bed916e76b3a3b176b4e6a5bcfe6e10e39a6c423be8fc3575115d7b1e06`  
-		Last Modified: Tue, 25 Feb 2025 02:59:28 GMT  
-		Size: 103.3 MB (103323545 bytes)  
+	-	`sha256:aef297c24191733a2fbe29ead5c53224c75c11b7ee0ba80b57b0b3898a33bbbf`  
+		Last Modified: Tue, 18 Mar 2025 03:15:07 GMT  
+		Size: 103.3 MB (103324904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d9943a0d5cef1bf22e1a6d5df4b38af8052474c28fe7d9188d33c9e0190742`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 226.0 B  
+	-	`sha256:69d707aca2b2791bdef48c24201e181e34f312580cea3313c4c8b8cdfa4a82c4`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f5eba5668f315d2ef7f70338fc89daecbca191bf9b5b6622280439ff5ceb4a7`  
-		Last Modified: Tue, 25 Feb 2025 03:04:11 GMT  
-		Size: 21.3 MB (21308442 bytes)  
+	-	`sha256:904971bf946949bd849eb4b667ce16daba036ec4ae5066a61816ed4b1abe5854`  
+		Last Modified: Tue, 18 Mar 2025 03:37:33 GMT  
+		Size: 21.3 MB (21308422 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8bec4fde36a5fc026717bc0e1c4a8f85c6397c11d730b4d345fdb0b5014cc45`  
-		Last Modified: Tue, 25 Feb 2025 03:04:06 GMT  
+	-	`sha256:04920e64d4709add88a0a3602fa557015f184d1476acb20183c24e2c709eecc9`  
+		Last Modified: Tue, 18 Mar 2025 03:37:32 GMT  
 		Size: 435.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca66cb544073b521bd3bcd518135c4cf977a5939323c5191473a1b8a2a09cd05`  
-		Last Modified: Tue, 25 Feb 2025 03:04:06 GMT  
-		Size: 489.0 B  
+	-	`sha256:65238378d6b0ff511c6a27c9bbac5e81b95662e894866715edfdea0404819c82`  
+		Last Modified: Tue, 18 Mar 2025 03:37:32 GMT  
+		Size: 490.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4250556fa8417334da5be4ff65e43885cb11a4aefa7d255ddcedadfb60e1e4b`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 12.3 MB (12275866 bytes)  
+	-	`sha256:2333a1edb32516e5e07616b5bf60b9c51eab28c9f7222124b11efd092bb70fa4`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 12.3 MB (12275862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fc1dc2ea55f95178ec13fe2b851029d78f5e0d2f3a6c8390fe1a234a9f2e9cf`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 491.0 B  
+	-	`sha256:8cd4c85564347a400a7d40062f14524c610df614356818d7923e4f4576913fc8`  
+		Last Modified: Tue, 18 Mar 2025 04:02:29 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7afa4c68853b68dabf1bd8e64549df9d94bcf4c95ef043f559e0eefabff7ff8f`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 11.8 MB (11834942 bytes)  
+	-	`sha256:c16f08b0e4b59bd52114ff166b918c0003930ebf44501f8c07892345a7c9dba8`  
+		Last Modified: Tue, 18 Mar 2025 04:02:31 GMT  
+		Size: 11.8 MB (11834908 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a58ec0c7a28b79ecb2761aea3a7ba1c7e11a569cdefcbc08ed0bf5bc5fb74af`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 2.5 KB (2457 bytes)  
+	-	`sha256:3f3257acf4109928d905c7b5a959f364623910b44f44302a13a64660fbf3199b`  
+		Last Modified: Tue, 18 Mar 2025 04:02:29 GMT  
+		Size: 2.5 KB (2453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4920622eb8cb7077f99589eb65bebd3e0264d1474c6bc0a48e5c79e7629376`  
-		Last Modified: Fri, 14 Mar 2025 01:15:17 GMT  
-		Size: 249.0 B  
+	-	`sha256:cfaa4ed3637b246e489af22d086c861274049e02b0850ba84d4fa9601d4986f3`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8370a02df23f733617d749f69df800919185839d44c681f4c9ec95e9b5531d10`  
-		Last Modified: Fri, 14 Mar 2025 01:15:17 GMT  
-		Size: 891.0 B  
+	-	`sha256:d38c04a142ef9c061e66f15af950f1d095b9e309d8fbb53f8ab0600189d73894`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 890.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d9c47a21dbfdcf245c9daf36cb61186207f7f618a051ba6fcaff10a50a6e967`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 6.5 MB (6468297 bytes)  
+	-	`sha256:c3ea8f820564f878adb3531fb433425f13deaf7972d81574161bc6568e3fd705`  
+		Last Modified: Tue, 18 Mar 2025 05:37:32 GMT  
+		Size: 6.5 MB (6468404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2d2d1cd1c6305f6251498ef70ac82e232089392568a52cbd6bafa4a75c3f272`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
-		Size: 654.0 B  
+	-	`sha256:f490553e05bc8aaa6f2e49e90144ac86a32437543c474af4cf8c1eed99d7af53`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
+		Size: 655.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49f9475bb8cb41837630e54c620dfe5eca2babaf576a4359990b7ef263bd9586`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 13.4 MB (13406042 bytes)  
+	-	`sha256:38419e268acf39dc1c0a2841380aa51b65021c9f928ff8c675ec6443c8357773`  
+		Last Modified: Tue, 18 Mar 2025 05:37:31 GMT  
+		Size: 13.4 MB (13406017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da5b44747e40ef58c629e28def2d797046fad1e2fdf6dea3e99d0232bfb86737`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
-		Size: 2.1 KB (2141 bytes)  
+	-	`sha256:6aba9cdc5edd7ca97da7c577af0779f3ba0993900405f059cccdcafa162b5a30`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
+		Size: 2.1 KB (2138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6445849ec79254bddeecacf7b911e961e2a1f81f4e5042e2a3869bd9a88b7c1f`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 859.0 B  
+	-	`sha256:677ea9ec131983d3b21280894ca73e4ad36d3d169ba910e92bfbbdcae74c0d02`  
+		Last Modified: Tue, 18 Mar 2025 05:37:31 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb1b44c9e7612d5d5dfcb863723342bf1bfbb27f4acf37e582e407121f68ce30`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
+	-	`sha256:7a67fdc2d6f7dca51e62ffb2d4127c02a12c293eef3af1b1428532b58d6ace0d`  
+		Last Modified: Tue, 18 Mar 2025 05:37:32 GMT  
 		Size: 947.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:5-apache` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:7281ee8a20e8ca18fa01881d897273222f3b7b3f76c1b991db35d07c99cd2329
+$ docker pull phpmyadmin@sha256:e9d7f560ee56019dcf70047c936abb3224e80f8b3a717991fd2a3b87c5012a01
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **48.5 KB (48452 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5d873c0252bd552a0ae78f6ffcf0ce5c2a39ae66980c86a17e16c7971b446d6`
+-	Image ID: `sha256:f75ebb293888d4bb7d0f2e06655b46184bde6e7997844e229165a3795754cfb5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c6e49aeea2e48a267b7a2b39398a53c780e1160b75557fc8418c3ebbe9fd46b4`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
+	-	`sha256:8f7964a788b8920a1ee103da8f82cd4257455d663dc9723b005358c74be864a9`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
 		Size: 48.5 KB (48452 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3528,7 +3528,7 @@ $ docker pull phpmyadmin@sha256:df9cad7ccd6d48a74367912c2b3f117c1b5cee81032e4b5d
 ## `phpmyadmin:5-fpm`
 
 ```console
-$ docker pull phpmyadmin@sha256:2a6634d75cca40e5758dc2dfc56addd5ec53387179c076c4573aa0ea3992500a
+$ docker pull phpmyadmin@sha256:129319c3faf04a228bd4447cc54dbd86804132d30f846b3b1fa64065e49c742c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3747,19 +3747,19 @@ $ docker pull phpmyadmin@sha256:a28b1615164631e822f300a4101ae7596834efb75440e9d8
 ### `phpmyadmin:5-fpm` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:abfc0a31427069fd126360164bfb98a24011b6b56eb7887e8ba496bcf4623703
+$ docker pull phpmyadmin@sha256:6ab983bc77fa98a98aea542a2d1d1cb0db47e29c4025b456a02b7f3c83eea25c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.8 MB (164770577 bytes)**  
+-	Total Size: **164.8 MB (164765903 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a719de04fc8bad1860212f0d39d86ebf708c7da4aa653138a5fd7422f5cf2685`
+-	Image ID: `sha256:485723480fc33a30f3fdcc53e0e20c44b0636898f8a7548d8c783cc7b8a8197b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -3849,92 +3849,92 @@ CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3014e21b6e4396df02c7cc3c5f126fa29d531fa5a1ad0b40b80de6794ae2694`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
+	-	`sha256:50392f60ef98ab502e7ed416d506883257fe8ed57158995e7e77f0bb4d3317f7`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:858e0a56f6198eb0af5102ce28eda7b5a34384f5b54701b7346487229bff9e9c`  
-		Last Modified: Tue, 25 Feb 2025 02:51:20 GMT  
-		Size: 82.0 MB (81993202 bytes)  
+	-	`sha256:70faba6dfc75d37d904a2f4e790ed9afc8110c25721f14deb57e142ce509f203`  
+		Last Modified: Tue, 18 Mar 2025 01:17:34 GMT  
+		Size: 82.0 MB (81993797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c24b0f2499da71327f565769347ea1f63e9070dfa8385025f0465d80e603c361`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
-		Size: 225.0 B  
+	-	`sha256:2daffac9eca4d243722e527ddd815f9abe7f53272e743c7fd4b6c1177b0eb255`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:174fac8933fd96ad2b4d9895010a9ca8188774a0fc61d763fbf1e3c87172a5b1`  
-		Last Modified: Fri, 14 Mar 2025 00:17:47 GMT  
-		Size: 12.3 MB (12255703 bytes)  
+	-	`sha256:9f324d7149eb387d662a2056310738c5cb170034e50d1f391b983d5cd05d20d2`  
+		Last Modified: Tue, 18 Mar 2025 04:38:46 GMT  
+		Size: 12.3 MB (12255680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4587da7b68faab1496da9e291bb6c94baef8d06f3421d63afe1e030a34b954`  
-		Last Modified: Fri, 14 Mar 2025 00:17:45 GMT  
-		Size: 492.0 B  
+	-	`sha256:15152950ea6bc261fd1211b395697a3205ec9cc51f00522cabfd0b3921a39912`  
+		Last Modified: Tue, 18 Mar 2025 04:38:44 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61e787692425ce9c5b94a54a76d7be0dc8c9248fe49116c88affca601e87a140`  
-		Last Modified: Fri, 14 Mar 2025 01:21:45 GMT  
-		Size: 26.1 MB (26086910 bytes)  
+	-	`sha256:9acd0f09fc518aed97cd5c43838c2ab0de39f4bcbd7cd11932f398b874555451`  
+		Last Modified: Tue, 18 Mar 2025 04:46:07 GMT  
+		Size: 26.1 MB (26086755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbba49c677c0b55142ea8238fce0d47a9b81da4967a8c6dee28b45241cf84c96`  
-		Last Modified: Fri, 14 Mar 2025 01:21:44 GMT  
-		Size: 2.5 KB (2450 bytes)  
+	-	`sha256:a388f5c5cde4e2f6079f4aebe2afba6c87fa3d989635bb54f23c4e7fdc953557`  
+		Last Modified: Tue, 18 Mar 2025 04:46:06 GMT  
+		Size: 2.4 KB (2448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5b55b3f69c0c5b87bc560f356072b6fb7980dc02816addfd2411f76f80551fc`  
-		Last Modified: Fri, 14 Mar 2025 01:21:44 GMT  
-		Size: 247.0 B  
+	-	`sha256:609821ef7db392dd63e30a796602bff0cd7a3435017fef6b25364c9b836ab300`  
+		Last Modified: Tue, 18 Mar 2025 04:46:06 GMT  
+		Size: 245.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5aac5a740a4680921dbf093b1c0a3b64f4effb8de42c318dc89aa36b4b717819`  
-		Last Modified: Fri, 14 Mar 2025 01:21:45 GMT  
-		Size: 9.2 KB (9186 bytes)  
+	-	`sha256:90d0f19953173b9ce9c822ed73bee405e7a0d3ae969722137878ba3616f90c87`  
+		Last Modified: Tue, 18 Mar 2025 04:46:06 GMT  
+		Size: 9.2 KB (9184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fccaca664c25eaab081b8c2a418567a502fb5e92d5ada30a2af8b5f226540ee9`  
-		Last Modified: Fri, 14 Mar 2025 02:39:33 GMT  
-		Size: 5.3 MB (5270823 bytes)  
+	-	`sha256:ff0ae039ed8d301f881afec96826fdfb4c18fe400cbe63ef11d9be74231c1978`  
+		Last Modified: Tue, 18 Mar 2025 05:50:27 GMT  
+		Size: 5.3 MB (5270581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99eb0902825033c54b4b607979586c75a6925f82eaa41728b73d2b4e324145cf`  
-		Last Modified: Fri, 14 Mar 2025 02:39:33 GMT  
-		Size: 658.0 B  
+	-	`sha256:0e4d1b788e10dc14e110159bcfa9306dcd50046324eed15c56e83f9640a6cbbd`  
+		Last Modified: Tue, 18 Mar 2025 05:50:26 GMT  
+		Size: 656.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7747637304094cadfb9aa30c9a71dccfbba0fa0ef0698cc1631abc35a5e82ad4`  
-		Last Modified: Fri, 14 Mar 2025 02:39:34 GMT  
-		Size: 13.4 MB (13405997 bytes)  
+	-	`sha256:515efccd9db67ccb5f18b7e422c9938902f54026dd7d80ee8d661aebf7d94b8b`  
+		Last Modified: Tue, 18 Mar 2025 05:50:27 GMT  
+		Size: 13.4 MB (13405937 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:406f830691f563ac422d9e69a38be79951bb3425ce91b869ea298b5ec83c91bc`  
-		Last Modified: Fri, 14 Mar 2025 02:39:33 GMT  
-		Size: 2.1 KB (2139 bytes)  
+	-	`sha256:8efaf9fac050a55bfab3cdae4ff7243ec032e0cb277623f732e098ec49065183`  
+		Last Modified: Tue, 18 Mar 2025 05:50:27 GMT  
+		Size: 2.1 KB (2138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3571bda7a90b1011533fc08ce4393f2623eab29ab63528fc9032864869e832c9`  
-		Last Modified: Fri, 14 Mar 2025 02:39:34 GMT  
-		Size: 857.0 B  
+	-	`sha256:ab0e6d0032f73665534807540c64a47b8dc30df724243aaea14f17bb97d5a7f0`  
+		Last Modified: Tue, 18 Mar 2025 05:50:27 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8f04b025b806c791e62314b63421592b0404313cea4e4cd339968990c8f33bf`  
-		Last Modified: Fri, 14 Mar 2025 02:39:34 GMT  
-		Size: 800.0 B  
+	-	`sha256:04812be168e2360a0b021bacde0eaf64e35e41ec1428bd5cce208834eb7642c7`  
+		Last Modified: Tue, 18 Mar 2025 05:50:28 GMT  
+		Size: 801.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:5-fpm` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:5d7c8869f2a94fec8e829385682c86524164a2929638f24300cc5b516c210520
+$ docker pull phpmyadmin@sha256:361a0a65d4fdb1648957617d4e32b783696cf61d399ee1bfecf502514c51b17c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **43.5 KB (43481 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b92571c0200f77d774c3b82e5a910828a8d3e661d1333383202c647d792dde82`
+-	Image ID: `sha256:0ff11c719966bed2a5ea29d9320b4d962d4c886e90dcf5a7c3da06bb4c2f6e17`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:08e7a0b6cfe81653f734303ef50940eee32277c1a05bc5630c7bdd67ade9ce16`  
-		Last Modified: Fri, 14 Mar 2025 02:39:32 GMT  
+	-	`sha256:4cf881e852089d789ec2d7952836ea4ce8b68976940ff3957b81abae11f75068`  
+		Last Modified: Tue, 18 Mar 2025 05:50:26 GMT  
 		Size: 43.5 KB (43481 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4717,19 +4717,19 @@ $ docker pull phpmyadmin@sha256:50cc0936c5581d8d6ebd0061711db9481567021d9e64bf95
 ### `phpmyadmin:5-fpm` - linux; ppc64le
 
 ```console
-$ docker pull phpmyadmin@sha256:d64006b557991b8db51aac4e1f5c9fa54d8d90960a09cd1d5b4a023d5bd192b3
+$ docker pull phpmyadmin@sha256:5999e9fb984a110c4866d9bffcc5c40cf99b94f74164133e9b36da2d634174ce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **196.4 MB (196361690 bytes)**  
+-	Total Size: **196.4 MB (196358804 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:639f7228a84a6715a7336cf86a41a8758c737f41f26bedea31e01f3ccca75e2d`
+-	Image ID: `sha256:4a8323352ef01888e4a1096717ec846800c1415c16bee393008d96eaaf762c85`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -4819,92 +4819,92 @@ CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35bbbae4d2dc0350f7df1634e33daf64fe78cb672182650c700a26750b33b64c`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 225.0 B  
+	-	`sha256:b40c9e444f13d4c7a03580cf188ef06ad94ffc13189161777e9ed5cf824f8ea7`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e7f7bed916e76b3a3b176b4e6a5bcfe6e10e39a6c423be8fc3575115d7b1e06`  
-		Last Modified: Tue, 25 Feb 2025 02:59:28 GMT  
-		Size: 103.3 MB (103323545 bytes)  
+	-	`sha256:aef297c24191733a2fbe29ead5c53224c75c11b7ee0ba80b57b0b3898a33bbbf`  
+		Last Modified: Tue, 18 Mar 2025 03:15:07 GMT  
+		Size: 103.3 MB (103324904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d9943a0d5cef1bf22e1a6d5df4b38af8052474c28fe7d9188d33c9e0190742`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 226.0 B  
+	-	`sha256:69d707aca2b2791bdef48c24201e181e34f312580cea3313c4c8b8cdfa4a82c4`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b183a9e9a626652b70cd5c8539551c8cb640af571a1c9042e0132f037d4b647`  
-		Last Modified: Fri, 14 Mar 2025 00:29:55 GMT  
-		Size: 12.3 MB (12256822 bytes)  
+	-	`sha256:cf0a5624b2e36c98bdb392b48af22cb7e3bfb02714da1ccbadfed07c556150cf`  
+		Last Modified: Tue, 18 Mar 2025 03:50:09 GMT  
+		Size: 12.3 MB (12256831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e56b8480c0833bf885706daaa24ae51671535d736d1bd6502f4ec24bee98fdf`  
-		Last Modified: Fri, 14 Mar 2025 00:29:54 GMT  
-		Size: 491.0 B  
+	-	`sha256:005bdd9451d67cd64e36fba24fd6d35ad98376d9293a7a25bdc2eb4909da8751`  
+		Last Modified: Tue, 18 Mar 2025 03:50:08 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c88581c8d587c4893c5d0e4f3ec9f4da6276370c261bf429c722590c5a22c891`  
-		Last Modified: Fri, 14 Mar 2025 00:33:48 GMT  
-		Size: 28.7 MB (28651590 bytes)  
+	-	`sha256:390f3df2ca5d7bd9e205f841d0431f87fc9f24fc41a6384f2a5ea8d8ace40a5a`  
+		Last Modified: Tue, 18 Mar 2025 03:55:57 GMT  
+		Size: 28.7 MB (28651557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d060d61f8218819b5d303c6753fc9b191fdbb4217767776b6b827de24183cbe`  
-		Last Modified: Fri, 14 Mar 2025 00:33:46 GMT  
-		Size: 2.4 KB (2449 bytes)  
+	-	`sha256:0fe52ae83a28602decadc7fc38e73aa154e1b0d833620d03fec0e774682c2762`  
+		Last Modified: Tue, 18 Mar 2025 03:55:56 GMT  
+		Size: 2.4 KB (2446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af774f56e0b9582a37b1689788bc10d7be95ddf0f7e9f52f79edfba6c4224caa`  
-		Last Modified: Fri, 14 Mar 2025 00:33:47 GMT  
-		Size: 247.0 B  
+	-	`sha256:5fcf58a67b81f0aed612123edbc4f23f6d69bd744073ecc25b897eb09b0d4c0d`  
+		Last Modified: Tue, 18 Mar 2025 03:55:56 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab9017bee2d3c3c1b999a96f6729cee863c91f221ddcaec49b3087c6a6e07f43`  
-		Last Modified: Fri, 14 Mar 2025 00:33:47 GMT  
-		Size: 9.2 KB (9185 bytes)  
+	-	`sha256:2ae37236611277960b32520a2bd42d40619d7edba08d96ca2fd0421fe75a860f`  
+		Last Modified: Tue, 18 Mar 2025 03:55:56 GMT  
+		Size: 9.2 KB (9183 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3020cce3b8c4d7bea32ebd35de1147fbb8111b77652c81bb728485a25d1c7a8`  
-		Last Modified: Fri, 14 Mar 2025 02:43:16 GMT  
-		Size: 6.7 MB (6654135 bytes)  
+	-	`sha256:7940a9b3ec1ecb5299aed878bd6232a9ef758abe570fc20376b722cd736fb5bf`  
+		Last Modified: Tue, 18 Mar 2025 05:39:36 GMT  
+		Size: 6.7 MB (6654407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:111dfad3a157a7b5a9c16dc41da057219975d59b6ba4b4dce8534bdcaa0fd12d`  
-		Last Modified: Fri, 14 Mar 2025 02:43:15 GMT  
+	-	`sha256:bfec4ab8b57e36409b064addd7b993b5494d90a09e4a2b217ee0c4b6d229ecde`  
+		Last Modified: Tue, 18 Mar 2025 05:39:35 GMT  
 		Size: 656.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ecb03b2eed6bad352a88781eff7adc5f63cc5f0be2b9ac267416c0d0924487df`  
-		Last Modified: Fri, 14 Mar 2025 02:43:16 GMT  
-		Size: 13.4 MB (13405977 bytes)  
+	-	`sha256:ec2c321ca6ee3592203e4853280ec987f416cb8634aec237b75255f7c0f82a4c`  
+		Last Modified: Tue, 18 Mar 2025 05:39:36 GMT  
+		Size: 13.4 MB (13405998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ae77ea22e03e933a7a4af6b449296a297e68c7e43cee4b32ebf107f3e60eeb9e`  
-		Last Modified: Fri, 14 Mar 2025 02:43:15 GMT  
+	-	`sha256:a516d72dd14d1676f1bd51a88e2be2850798ddf02b6569875d42686c93c2ee9c`  
+		Last Modified: Tue, 18 Mar 2025 05:39:36 GMT  
 		Size: 2.1 KB (2138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbe488a687da133cc493a7ad5517214aeb97dffb625c113babbf135c2b80d5da`  
-		Last Modified: Fri, 14 Mar 2025 02:43:16 GMT  
+	-	`sha256:ff9a8b858ee232b75de1a521ad03ced6d56520cd0af1ed81a13a387f41e02923`  
+		Last Modified: Tue, 18 Mar 2025 05:39:36 GMT  
 		Size: 857.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2fecaed2d18fd242dd3d23ab22ef744e760485c86e04db5e18fc99f337b2f01`  
-		Last Modified: Fri, 14 Mar 2025 02:43:16 GMT  
-		Size: 801.0 B  
+	-	`sha256:c98a95cbdcfd23acb6f7284d168484a86424c2b2939e71f30fe3fb8ac6906962`  
+		Last Modified: Tue, 18 Mar 2025 05:39:37 GMT  
+		Size: 800.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:5-fpm` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:79de88459e8e351a904740c0dd429213be0e251e58e8da244dc6aaacd47e3db8
+$ docker pull phpmyadmin@sha256:9c5474a7301dea2f166040eb1d3f92c7a9dccbb7f2994d80a5649b80f1e86736
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **43.4 KB (43434 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93bdcb065b20a412f195c7599a91262b72cf962997bb29f8cab74bd7d33a3116`
+-	Image ID: `sha256:8bd1894b048e64293b3825d480344ec9054125d6095468db1f54637e689179be`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1d6ea2fb2ca442b84a3892aadb88c2fbe28d5b8850447e6543bd7b22ac2fda41`  
-		Last Modified: Fri, 14 Mar 2025 02:43:15 GMT  
+	-	`sha256:c1595e9f0bc88abfb6a8414099a371e5f3c3388db0faeface6b805760ce45fcc`  
+		Last Modified: Tue, 18 Mar 2025 05:39:35 GMT  
 		Size: 43.4 KB (43434 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6746,7 +6746,7 @@ $ docker pull phpmyadmin@sha256:575e50dcd91260c5a5e466bd7f19aa96a050d86358a1d9bb
 ## `phpmyadmin:5.2`
 
 ```console
-$ docker pull phpmyadmin@sha256:76b7cc1382acc52c6338395fbd1e94c0b2a9830a68f3fd6ce12d612db99fd338
+$ docker pull phpmyadmin@sha256:847e2c011d052e1980915605af10f81137d749085394f6c7bb0319b5040195af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6987,19 +6987,19 @@ $ docker pull phpmyadmin@sha256:51dd94e85f46f9219a3c066d5eb6e19918d4924b554bfc56
 ### `phpmyadmin:5.2` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:a7266581bc9dbdabe275e577d0672ce83f86425d4e4e0eec0f6976b9af4dc9b9
+$ docker pull phpmyadmin@sha256:ae4e07a5622c85b861cdfcc8bb9cc3f6e0a60a6e9837e78732a868174c707ebc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.4 MB (168393269 bytes)**  
+-	Total Size: **168.4 MB (168388913 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6dd6757fd5f0aa18f7c6ff52b8481681efa223a936fdfd22b55bddbc3e815400`
+-	Image ID: `sha256:7a1b8e8d67fb6b24df1e5b78ff65b9f451b2a91723335c305a0099c0adda267a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -7099,105 +7099,105 @@ CMD ["apache2-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3014e21b6e4396df02c7cc3c5f126fa29d531fa5a1ad0b40b80de6794ae2694`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
+	-	`sha256:50392f60ef98ab502e7ed416d506883257fe8ed57158995e7e77f0bb4d3317f7`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:858e0a56f6198eb0af5102ce28eda7b5a34384f5b54701b7346487229bff9e9c`  
-		Last Modified: Tue, 25 Feb 2025 02:51:20 GMT  
-		Size: 82.0 MB (81993202 bytes)  
+	-	`sha256:70faba6dfc75d37d904a2f4e790ed9afc8110c25721f14deb57e142ce509f203`  
+		Last Modified: Tue, 18 Mar 2025 01:17:34 GMT  
+		Size: 82.0 MB (81993797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c24b0f2499da71327f565769347ea1f63e9070dfa8385025f0465d80e603c361`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
-		Size: 225.0 B  
+	-	`sha256:2daffac9eca4d243722e527ddd815f9abe7f53272e743c7fd4b6c1177b0eb255`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e21a0010d00b089e3a34b60fddcac813cd3a1211368d868b76aa3c52acf85f39`  
-		Last Modified: Tue, 25 Feb 2025 02:55:46 GMT  
-		Size: 19.4 MB (19419190 bytes)  
+	-	`sha256:5e40bc50036fecf94b15523ae01df144fd25cc29085c9b900167682966aea345`  
+		Last Modified: Tue, 18 Mar 2025 04:03:50 GMT  
+		Size: 19.4 MB (19419254 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:836efc0ee062aca6556d741fb3e390ca6b509fc639049bef1cfc24e29616d566`  
-		Last Modified: Tue, 25 Feb 2025 02:55:45 GMT  
-		Size: 434.0 B  
+	-	`sha256:fb9ef2e54bf4f16636556f311cb5285d5b86bac864da9ee836197f377a6cb776`  
+		Last Modified: Tue, 18 Mar 2025 04:03:49 GMT  
+		Size: 432.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bb27253beef75bf260f9071d9fb96a1614335f2b1af270afddf706a8142cb7b`  
-		Last Modified: Tue, 25 Feb 2025 02:55:45 GMT  
-		Size: 483.0 B  
+	-	`sha256:77ad3f9cc1ac78b8fb303beaac1f3eedbe45e57ac5c8760279395201640c6ddb`  
+		Last Modified: Tue, 18 Mar 2025 04:03:50 GMT  
+		Size: 485.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:011930897f0e94f8908d35816b869c1916d4b7c5e69b013a14bd68af54513b64`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
-		Size: 12.3 MB (12274462 bytes)  
+	-	`sha256:28ee6f2ea656a53ed2ef0ce36223f3ff3f1ad9649216635e7039a7f7ba11e80a`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
+		Size: 12.3 MB (12274458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9587ba2e3349206ea532f4464028c241e4ad1121298357feaccd286fca85d8fd`  
-		Last Modified: Fri, 14 Mar 2025 01:16:17 GMT  
-		Size: 490.0 B  
+	-	`sha256:439c9d2c84cacda41206e1f1363eed0af6a1dd4a67bb23046d39682d03f256c0`  
+		Last Modified: Tue, 18 Mar 2025 04:53:03 GMT  
+		Size: 487.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a585b6944c1433eff35267ab704ba7545360430398014d7bb676ae940a46c5f3`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
-		Size: 10.4 MB (10406221 bytes)  
+	-	`sha256:eed0cbcb35c8ba1da95d1667e1211071e3c1bdbeccbc425a4bbaa1d440a3fd2c`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
+		Size: 10.4 MB (10406179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:411a0c4868fccc79fa986919a6a2d409dc1b8ba5c006b941e9492a700c79ffcd`  
-		Last Modified: Fri, 14 Mar 2025 01:16:16 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:19914ee66d9997b46e85813af04cb64d1122bedef3ce7ad34b0cf1641704e65e`  
+		Last Modified: Tue, 18 Mar 2025 04:53:03 GMT  
+		Size: 2.5 KB (2454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10c8577ccb7b4d01bfe8006afd0838fc8d07519bd88b0f59867e8b3384427b27`  
-		Last Modified: Fri, 14 Mar 2025 01:16:17 GMT  
+	-	`sha256:bf491b90e0c842e4cf13496bc58a29ccd0ee3a966f66503314da4e72d0302b7c`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8b7bacb438358389faa51d6b6f86912db59267c3bfff4f8d02c547b4970ac24`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
+	-	`sha256:375f9c94559079ddf7990747ea43a04907652eeca291bfca6685d6e984619193`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
 		Size: 891.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97c2987bd3f28ff7d9512b71fde3148c2bb558f3a01fc8214b24ce3f1dfd1aa2`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
-		Size: 5.1 MB (5143507 bytes)  
+	-	`sha256:deb87792c15e99616fd8200022c1c1a857fa712710c9b2e3ba524864a8487dbd`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 5.1 MB (5143344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e31c41319e8dc032e6caa60141c1b885815e0be2d4a828e5e425971fc4ad8f21`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 654.0 B  
+	-	`sha256:912ea3ee3b28842eb5bf8b0aea06f5a2988e4a3b45f8d107a9b19ea91c6b3067`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 655.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd033e90e48feafab441b30e242ad1cd93cb8f489c69eaa4e34eced709310795`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
-		Size: 13.4 MB (13405978 bytes)  
+	-	`sha256:dcdbd4b76d0006fcd08e5e0380eb43cd30470a466ad3d88632d86d6d2a6437c3`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 13.4 MB (13405949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5f352e2e04377f91fa1c1ccd750182370df31645eba06a04949f5353dc6a944`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 2.1 KB (2138 bytes)  
+	-	`sha256:a51bb42a4f3c082f6d79b2c4b959f11145d4632d11a23be39d4dfde98b5ab739`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 2.1 KB (2140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:925a0c70ea15e12f1a853755f05e378d309a08277601f59b5cb695f61b01dc8d`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
+	-	`sha256:dd1e3727484de159870ab9661b8f6dcc052e1f150d93f9d92f3d2ef5097c3c07`  
+		Last Modified: Tue, 18 Mar 2025 05:49:18 GMT  
 		Size: 858.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5360158cfbceb913f62089e4ec10563025c0a7349ba0d531036918f8d537b86`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
+	-	`sha256:ccf71ea361b3587c8fa13e4fe523a46c692fd6464a3fb5998468aa32caace46b`  
+		Last Modified: Tue, 18 Mar 2025 05:49:18 GMT  
 		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:5.2` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:eb503513bf647d75baf9d318f2b66598fdbcce3f6b9cfecd954f91bf511e01db
+$ docker pull phpmyadmin@sha256:542f3f5a1c0e8bf593780750f489847ecc821c7decc84304980b4d4773d506c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.5 KB (48505 bytes)**  
+-	Total Size: **48.5 KB (48507 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57eb9460a8ed393307d81f7618dda392706da5ddfff56bf6cff2ae6d6d0bb0c4`
+-	Image ID: `sha256:a0ec89b2977e08a827707cd4cb2bf1555c8138b8cd33eee773638eefbbb80aa2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fa00e0561d8f2b1dc12797f587e9d0896d7629ff5f46f0f5b8495a791972932c`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 48.5 KB (48505 bytes)  
+	-	`sha256:f28d2a55674640471e77da229ddb2dca0e4f582ff69875f87c779d90b49f674a`  
+		Last Modified: Tue, 18 Mar 2025 05:49:16 GMT  
+		Size: 48.5 KB (48507 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `phpmyadmin:5.2` - linux; arm variant v7
@@ -8067,19 +8067,19 @@ $ docker pull phpmyadmin@sha256:c6b6790ddaf7ead8e263367bea3f0f972a2e35141d3580e1
 ### `phpmyadmin:5.2` - linux; ppc64le
 
 ```console
-$ docker pull phpmyadmin@sha256:6a4e6e8df1d30992318072f705a560781cd7f490fdeea039b5d601b75b961561
+$ docker pull phpmyadmin@sha256:aff247876a35e802341d95014336d6646b12e461562c2d1ab0794573659d0b87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.7 MB (200679544 bytes)**  
+-	Total Size: **200.7 MB (200676406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68d30ed1ccd6cb211ab8597d398c64a0e4ec0c9838e61ef009a35c43a91a12d1`
+-	Image ID: `sha256:bfe5cc958634c6dde17f37d530ee20ab80428fddb6b7c3ce46ab90ffc4fadbb9`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -8179,104 +8179,104 @@ CMD ["apache2-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35bbbae4d2dc0350f7df1634e33daf64fe78cb672182650c700a26750b33b64c`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 225.0 B  
+	-	`sha256:b40c9e444f13d4c7a03580cf188ef06ad94ffc13189161777e9ed5cf824f8ea7`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e7f7bed916e76b3a3b176b4e6a5bcfe6e10e39a6c423be8fc3575115d7b1e06`  
-		Last Modified: Tue, 25 Feb 2025 02:59:28 GMT  
-		Size: 103.3 MB (103323545 bytes)  
+	-	`sha256:aef297c24191733a2fbe29ead5c53224c75c11b7ee0ba80b57b0b3898a33bbbf`  
+		Last Modified: Tue, 18 Mar 2025 03:15:07 GMT  
+		Size: 103.3 MB (103324904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d9943a0d5cef1bf22e1a6d5df4b38af8052474c28fe7d9188d33c9e0190742`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 226.0 B  
+	-	`sha256:69d707aca2b2791bdef48c24201e181e34f312580cea3313c4c8b8cdfa4a82c4`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f5eba5668f315d2ef7f70338fc89daecbca191bf9b5b6622280439ff5ceb4a7`  
-		Last Modified: Tue, 25 Feb 2025 03:04:11 GMT  
-		Size: 21.3 MB (21308442 bytes)  
+	-	`sha256:904971bf946949bd849eb4b667ce16daba036ec4ae5066a61816ed4b1abe5854`  
+		Last Modified: Tue, 18 Mar 2025 03:37:33 GMT  
+		Size: 21.3 MB (21308422 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8bec4fde36a5fc026717bc0e1c4a8f85c6397c11d730b4d345fdb0b5014cc45`  
-		Last Modified: Tue, 25 Feb 2025 03:04:06 GMT  
+	-	`sha256:04920e64d4709add88a0a3602fa557015f184d1476acb20183c24e2c709eecc9`  
+		Last Modified: Tue, 18 Mar 2025 03:37:32 GMT  
 		Size: 435.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca66cb544073b521bd3bcd518135c4cf977a5939323c5191473a1b8a2a09cd05`  
-		Last Modified: Tue, 25 Feb 2025 03:04:06 GMT  
-		Size: 489.0 B  
+	-	`sha256:65238378d6b0ff511c6a27c9bbac5e81b95662e894866715edfdea0404819c82`  
+		Last Modified: Tue, 18 Mar 2025 03:37:32 GMT  
+		Size: 490.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4250556fa8417334da5be4ff65e43885cb11a4aefa7d255ddcedadfb60e1e4b`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 12.3 MB (12275866 bytes)  
+	-	`sha256:2333a1edb32516e5e07616b5bf60b9c51eab28c9f7222124b11efd092bb70fa4`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 12.3 MB (12275862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fc1dc2ea55f95178ec13fe2b851029d78f5e0d2f3a6c8390fe1a234a9f2e9cf`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 491.0 B  
+	-	`sha256:8cd4c85564347a400a7d40062f14524c610df614356818d7923e4f4576913fc8`  
+		Last Modified: Tue, 18 Mar 2025 04:02:29 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7afa4c68853b68dabf1bd8e64549df9d94bcf4c95ef043f559e0eefabff7ff8f`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 11.8 MB (11834942 bytes)  
+	-	`sha256:c16f08b0e4b59bd52114ff166b918c0003930ebf44501f8c07892345a7c9dba8`  
+		Last Modified: Tue, 18 Mar 2025 04:02:31 GMT  
+		Size: 11.8 MB (11834908 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a58ec0c7a28b79ecb2761aea3a7ba1c7e11a569cdefcbc08ed0bf5bc5fb74af`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 2.5 KB (2457 bytes)  
+	-	`sha256:3f3257acf4109928d905c7b5a959f364623910b44f44302a13a64660fbf3199b`  
+		Last Modified: Tue, 18 Mar 2025 04:02:29 GMT  
+		Size: 2.5 KB (2453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4920622eb8cb7077f99589eb65bebd3e0264d1474c6bc0a48e5c79e7629376`  
-		Last Modified: Fri, 14 Mar 2025 01:15:17 GMT  
-		Size: 249.0 B  
+	-	`sha256:cfaa4ed3637b246e489af22d086c861274049e02b0850ba84d4fa9601d4986f3`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8370a02df23f733617d749f69df800919185839d44c681f4c9ec95e9b5531d10`  
-		Last Modified: Fri, 14 Mar 2025 01:15:17 GMT  
-		Size: 891.0 B  
+	-	`sha256:d38c04a142ef9c061e66f15af950f1d095b9e309d8fbb53f8ab0600189d73894`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 890.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d9c47a21dbfdcf245c9daf36cb61186207f7f618a051ba6fcaff10a50a6e967`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 6.5 MB (6468297 bytes)  
+	-	`sha256:c3ea8f820564f878adb3531fb433425f13deaf7972d81574161bc6568e3fd705`  
+		Last Modified: Tue, 18 Mar 2025 05:37:32 GMT  
+		Size: 6.5 MB (6468404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2d2d1cd1c6305f6251498ef70ac82e232089392568a52cbd6bafa4a75c3f272`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
-		Size: 654.0 B  
+	-	`sha256:f490553e05bc8aaa6f2e49e90144ac86a32437543c474af4cf8c1eed99d7af53`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
+		Size: 655.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49f9475bb8cb41837630e54c620dfe5eca2babaf576a4359990b7ef263bd9586`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 13.4 MB (13406042 bytes)  
+	-	`sha256:38419e268acf39dc1c0a2841380aa51b65021c9f928ff8c675ec6443c8357773`  
+		Last Modified: Tue, 18 Mar 2025 05:37:31 GMT  
+		Size: 13.4 MB (13406017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da5b44747e40ef58c629e28def2d797046fad1e2fdf6dea3e99d0232bfb86737`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
-		Size: 2.1 KB (2141 bytes)  
+	-	`sha256:6aba9cdc5edd7ca97da7c577af0779f3ba0993900405f059cccdcafa162b5a30`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
+		Size: 2.1 KB (2138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6445849ec79254bddeecacf7b911e961e2a1f81f4e5042e2a3869bd9a88b7c1f`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 859.0 B  
+	-	`sha256:677ea9ec131983d3b21280894ca73e4ad36d3d169ba910e92bfbbdcae74c0d02`  
+		Last Modified: Tue, 18 Mar 2025 05:37:31 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb1b44c9e7612d5d5dfcb863723342bf1bfbb27f4acf37e582e407121f68ce30`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
+	-	`sha256:7a67fdc2d6f7dca51e62ffb2d4127c02a12c293eef3af1b1428532b58d6ace0d`  
+		Last Modified: Tue, 18 Mar 2025 05:37:32 GMT  
 		Size: 947.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:5.2` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:7281ee8a20e8ca18fa01881d897273222f3b7b3f76c1b991db35d07c99cd2329
+$ docker pull phpmyadmin@sha256:e9d7f560ee56019dcf70047c936abb3224e80f8b3a717991fd2a3b87c5012a01
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **48.5 KB (48452 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5d873c0252bd552a0ae78f6ffcf0ce5c2a39ae66980c86a17e16c7971b446d6`
+-	Image ID: `sha256:f75ebb293888d4bb7d0f2e06655b46184bde6e7997844e229165a3795754cfb5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c6e49aeea2e48a267b7a2b39398a53c780e1160b75557fc8418c3ebbe9fd46b4`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
+	-	`sha256:8f7964a788b8920a1ee103da8f82cd4257455d663dc9723b005358c74be864a9`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
 		Size: 48.5 KB (48452 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -8499,7 +8499,7 @@ $ docker pull phpmyadmin@sha256:df9cad7ccd6d48a74367912c2b3f117c1b5cee81032e4b5d
 ## `phpmyadmin:5.2-apache`
 
 ```console
-$ docker pull phpmyadmin@sha256:76b7cc1382acc52c6338395fbd1e94c0b2a9830a68f3fd6ce12d612db99fd338
+$ docker pull phpmyadmin@sha256:847e2c011d052e1980915605af10f81137d749085394f6c7bb0319b5040195af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -8740,19 +8740,19 @@ $ docker pull phpmyadmin@sha256:51dd94e85f46f9219a3c066d5eb6e19918d4924b554bfc56
 ### `phpmyadmin:5.2-apache` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:a7266581bc9dbdabe275e577d0672ce83f86425d4e4e0eec0f6976b9af4dc9b9
+$ docker pull phpmyadmin@sha256:ae4e07a5622c85b861cdfcc8bb9cc3f6e0a60a6e9837e78732a868174c707ebc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.4 MB (168393269 bytes)**  
+-	Total Size: **168.4 MB (168388913 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6dd6757fd5f0aa18f7c6ff52b8481681efa223a936fdfd22b55bddbc3e815400`
+-	Image ID: `sha256:7a1b8e8d67fb6b24df1e5b78ff65b9f451b2a91723335c305a0099c0adda267a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -8852,105 +8852,105 @@ CMD ["apache2-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3014e21b6e4396df02c7cc3c5f126fa29d531fa5a1ad0b40b80de6794ae2694`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
+	-	`sha256:50392f60ef98ab502e7ed416d506883257fe8ed57158995e7e77f0bb4d3317f7`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:858e0a56f6198eb0af5102ce28eda7b5a34384f5b54701b7346487229bff9e9c`  
-		Last Modified: Tue, 25 Feb 2025 02:51:20 GMT  
-		Size: 82.0 MB (81993202 bytes)  
+	-	`sha256:70faba6dfc75d37d904a2f4e790ed9afc8110c25721f14deb57e142ce509f203`  
+		Last Modified: Tue, 18 Mar 2025 01:17:34 GMT  
+		Size: 82.0 MB (81993797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c24b0f2499da71327f565769347ea1f63e9070dfa8385025f0465d80e603c361`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
-		Size: 225.0 B  
+	-	`sha256:2daffac9eca4d243722e527ddd815f9abe7f53272e743c7fd4b6c1177b0eb255`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e21a0010d00b089e3a34b60fddcac813cd3a1211368d868b76aa3c52acf85f39`  
-		Last Modified: Tue, 25 Feb 2025 02:55:46 GMT  
-		Size: 19.4 MB (19419190 bytes)  
+	-	`sha256:5e40bc50036fecf94b15523ae01df144fd25cc29085c9b900167682966aea345`  
+		Last Modified: Tue, 18 Mar 2025 04:03:50 GMT  
+		Size: 19.4 MB (19419254 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:836efc0ee062aca6556d741fb3e390ca6b509fc639049bef1cfc24e29616d566`  
-		Last Modified: Tue, 25 Feb 2025 02:55:45 GMT  
-		Size: 434.0 B  
+	-	`sha256:fb9ef2e54bf4f16636556f311cb5285d5b86bac864da9ee836197f377a6cb776`  
+		Last Modified: Tue, 18 Mar 2025 04:03:49 GMT  
+		Size: 432.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bb27253beef75bf260f9071d9fb96a1614335f2b1af270afddf706a8142cb7b`  
-		Last Modified: Tue, 25 Feb 2025 02:55:45 GMT  
-		Size: 483.0 B  
+	-	`sha256:77ad3f9cc1ac78b8fb303beaac1f3eedbe45e57ac5c8760279395201640c6ddb`  
+		Last Modified: Tue, 18 Mar 2025 04:03:50 GMT  
+		Size: 485.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:011930897f0e94f8908d35816b869c1916d4b7c5e69b013a14bd68af54513b64`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
-		Size: 12.3 MB (12274462 bytes)  
+	-	`sha256:28ee6f2ea656a53ed2ef0ce36223f3ff3f1ad9649216635e7039a7f7ba11e80a`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
+		Size: 12.3 MB (12274458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9587ba2e3349206ea532f4464028c241e4ad1121298357feaccd286fca85d8fd`  
-		Last Modified: Fri, 14 Mar 2025 01:16:17 GMT  
-		Size: 490.0 B  
+	-	`sha256:439c9d2c84cacda41206e1f1363eed0af6a1dd4a67bb23046d39682d03f256c0`  
+		Last Modified: Tue, 18 Mar 2025 04:53:03 GMT  
+		Size: 487.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a585b6944c1433eff35267ab704ba7545360430398014d7bb676ae940a46c5f3`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
-		Size: 10.4 MB (10406221 bytes)  
+	-	`sha256:eed0cbcb35c8ba1da95d1667e1211071e3c1bdbeccbc425a4bbaa1d440a3fd2c`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
+		Size: 10.4 MB (10406179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:411a0c4868fccc79fa986919a6a2d409dc1b8ba5c006b941e9492a700c79ffcd`  
-		Last Modified: Fri, 14 Mar 2025 01:16:16 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:19914ee66d9997b46e85813af04cb64d1122bedef3ce7ad34b0cf1641704e65e`  
+		Last Modified: Tue, 18 Mar 2025 04:53:03 GMT  
+		Size: 2.5 KB (2454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10c8577ccb7b4d01bfe8006afd0838fc8d07519bd88b0f59867e8b3384427b27`  
-		Last Modified: Fri, 14 Mar 2025 01:16:17 GMT  
+	-	`sha256:bf491b90e0c842e4cf13496bc58a29ccd0ee3a966f66503314da4e72d0302b7c`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8b7bacb438358389faa51d6b6f86912db59267c3bfff4f8d02c547b4970ac24`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
+	-	`sha256:375f9c94559079ddf7990747ea43a04907652eeca291bfca6685d6e984619193`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
 		Size: 891.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97c2987bd3f28ff7d9512b71fde3148c2bb558f3a01fc8214b24ce3f1dfd1aa2`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
-		Size: 5.1 MB (5143507 bytes)  
+	-	`sha256:deb87792c15e99616fd8200022c1c1a857fa712710c9b2e3ba524864a8487dbd`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 5.1 MB (5143344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e31c41319e8dc032e6caa60141c1b885815e0be2d4a828e5e425971fc4ad8f21`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 654.0 B  
+	-	`sha256:912ea3ee3b28842eb5bf8b0aea06f5a2988e4a3b45f8d107a9b19ea91c6b3067`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 655.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd033e90e48feafab441b30e242ad1cd93cb8f489c69eaa4e34eced709310795`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
-		Size: 13.4 MB (13405978 bytes)  
+	-	`sha256:dcdbd4b76d0006fcd08e5e0380eb43cd30470a466ad3d88632d86d6d2a6437c3`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 13.4 MB (13405949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5f352e2e04377f91fa1c1ccd750182370df31645eba06a04949f5353dc6a944`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 2.1 KB (2138 bytes)  
+	-	`sha256:a51bb42a4f3c082f6d79b2c4b959f11145d4632d11a23be39d4dfde98b5ab739`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 2.1 KB (2140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:925a0c70ea15e12f1a853755f05e378d309a08277601f59b5cb695f61b01dc8d`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
+	-	`sha256:dd1e3727484de159870ab9661b8f6dcc052e1f150d93f9d92f3d2ef5097c3c07`  
+		Last Modified: Tue, 18 Mar 2025 05:49:18 GMT  
 		Size: 858.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5360158cfbceb913f62089e4ec10563025c0a7349ba0d531036918f8d537b86`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
+	-	`sha256:ccf71ea361b3587c8fa13e4fe523a46c692fd6464a3fb5998468aa32caace46b`  
+		Last Modified: Tue, 18 Mar 2025 05:49:18 GMT  
 		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:5.2-apache` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:eb503513bf647d75baf9d318f2b66598fdbcce3f6b9cfecd954f91bf511e01db
+$ docker pull phpmyadmin@sha256:542f3f5a1c0e8bf593780750f489847ecc821c7decc84304980b4d4773d506c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.5 KB (48505 bytes)**  
+-	Total Size: **48.5 KB (48507 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57eb9460a8ed393307d81f7618dda392706da5ddfff56bf6cff2ae6d6d0bb0c4`
+-	Image ID: `sha256:a0ec89b2977e08a827707cd4cb2bf1555c8138b8cd33eee773638eefbbb80aa2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fa00e0561d8f2b1dc12797f587e9d0896d7629ff5f46f0f5b8495a791972932c`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 48.5 KB (48505 bytes)  
+	-	`sha256:f28d2a55674640471e77da229ddb2dca0e4f582ff69875f87c779d90b49f674a`  
+		Last Modified: Tue, 18 Mar 2025 05:49:16 GMT  
+		Size: 48.5 KB (48507 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `phpmyadmin:5.2-apache` - linux; arm variant v7
@@ -9820,19 +9820,19 @@ $ docker pull phpmyadmin@sha256:c6b6790ddaf7ead8e263367bea3f0f972a2e35141d3580e1
 ### `phpmyadmin:5.2-apache` - linux; ppc64le
 
 ```console
-$ docker pull phpmyadmin@sha256:6a4e6e8df1d30992318072f705a560781cd7f490fdeea039b5d601b75b961561
+$ docker pull phpmyadmin@sha256:aff247876a35e802341d95014336d6646b12e461562c2d1ab0794573659d0b87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.7 MB (200679544 bytes)**  
+-	Total Size: **200.7 MB (200676406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68d30ed1ccd6cb211ab8597d398c64a0e4ec0c9838e61ef009a35c43a91a12d1`
+-	Image ID: `sha256:bfe5cc958634c6dde17f37d530ee20ab80428fddb6b7c3ce46ab90ffc4fadbb9`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -9932,104 +9932,104 @@ CMD ["apache2-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35bbbae4d2dc0350f7df1634e33daf64fe78cb672182650c700a26750b33b64c`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 225.0 B  
+	-	`sha256:b40c9e444f13d4c7a03580cf188ef06ad94ffc13189161777e9ed5cf824f8ea7`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e7f7bed916e76b3a3b176b4e6a5bcfe6e10e39a6c423be8fc3575115d7b1e06`  
-		Last Modified: Tue, 25 Feb 2025 02:59:28 GMT  
-		Size: 103.3 MB (103323545 bytes)  
+	-	`sha256:aef297c24191733a2fbe29ead5c53224c75c11b7ee0ba80b57b0b3898a33bbbf`  
+		Last Modified: Tue, 18 Mar 2025 03:15:07 GMT  
+		Size: 103.3 MB (103324904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d9943a0d5cef1bf22e1a6d5df4b38af8052474c28fe7d9188d33c9e0190742`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 226.0 B  
+	-	`sha256:69d707aca2b2791bdef48c24201e181e34f312580cea3313c4c8b8cdfa4a82c4`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f5eba5668f315d2ef7f70338fc89daecbca191bf9b5b6622280439ff5ceb4a7`  
-		Last Modified: Tue, 25 Feb 2025 03:04:11 GMT  
-		Size: 21.3 MB (21308442 bytes)  
+	-	`sha256:904971bf946949bd849eb4b667ce16daba036ec4ae5066a61816ed4b1abe5854`  
+		Last Modified: Tue, 18 Mar 2025 03:37:33 GMT  
+		Size: 21.3 MB (21308422 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8bec4fde36a5fc026717bc0e1c4a8f85c6397c11d730b4d345fdb0b5014cc45`  
-		Last Modified: Tue, 25 Feb 2025 03:04:06 GMT  
+	-	`sha256:04920e64d4709add88a0a3602fa557015f184d1476acb20183c24e2c709eecc9`  
+		Last Modified: Tue, 18 Mar 2025 03:37:32 GMT  
 		Size: 435.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca66cb544073b521bd3bcd518135c4cf977a5939323c5191473a1b8a2a09cd05`  
-		Last Modified: Tue, 25 Feb 2025 03:04:06 GMT  
-		Size: 489.0 B  
+	-	`sha256:65238378d6b0ff511c6a27c9bbac5e81b95662e894866715edfdea0404819c82`  
+		Last Modified: Tue, 18 Mar 2025 03:37:32 GMT  
+		Size: 490.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4250556fa8417334da5be4ff65e43885cb11a4aefa7d255ddcedadfb60e1e4b`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 12.3 MB (12275866 bytes)  
+	-	`sha256:2333a1edb32516e5e07616b5bf60b9c51eab28c9f7222124b11efd092bb70fa4`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 12.3 MB (12275862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fc1dc2ea55f95178ec13fe2b851029d78f5e0d2f3a6c8390fe1a234a9f2e9cf`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 491.0 B  
+	-	`sha256:8cd4c85564347a400a7d40062f14524c610df614356818d7923e4f4576913fc8`  
+		Last Modified: Tue, 18 Mar 2025 04:02:29 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7afa4c68853b68dabf1bd8e64549df9d94bcf4c95ef043f559e0eefabff7ff8f`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 11.8 MB (11834942 bytes)  
+	-	`sha256:c16f08b0e4b59bd52114ff166b918c0003930ebf44501f8c07892345a7c9dba8`  
+		Last Modified: Tue, 18 Mar 2025 04:02:31 GMT  
+		Size: 11.8 MB (11834908 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a58ec0c7a28b79ecb2761aea3a7ba1c7e11a569cdefcbc08ed0bf5bc5fb74af`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 2.5 KB (2457 bytes)  
+	-	`sha256:3f3257acf4109928d905c7b5a959f364623910b44f44302a13a64660fbf3199b`  
+		Last Modified: Tue, 18 Mar 2025 04:02:29 GMT  
+		Size: 2.5 KB (2453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4920622eb8cb7077f99589eb65bebd3e0264d1474c6bc0a48e5c79e7629376`  
-		Last Modified: Fri, 14 Mar 2025 01:15:17 GMT  
-		Size: 249.0 B  
+	-	`sha256:cfaa4ed3637b246e489af22d086c861274049e02b0850ba84d4fa9601d4986f3`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8370a02df23f733617d749f69df800919185839d44c681f4c9ec95e9b5531d10`  
-		Last Modified: Fri, 14 Mar 2025 01:15:17 GMT  
-		Size: 891.0 B  
+	-	`sha256:d38c04a142ef9c061e66f15af950f1d095b9e309d8fbb53f8ab0600189d73894`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 890.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d9c47a21dbfdcf245c9daf36cb61186207f7f618a051ba6fcaff10a50a6e967`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 6.5 MB (6468297 bytes)  
+	-	`sha256:c3ea8f820564f878adb3531fb433425f13deaf7972d81574161bc6568e3fd705`  
+		Last Modified: Tue, 18 Mar 2025 05:37:32 GMT  
+		Size: 6.5 MB (6468404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2d2d1cd1c6305f6251498ef70ac82e232089392568a52cbd6bafa4a75c3f272`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
-		Size: 654.0 B  
+	-	`sha256:f490553e05bc8aaa6f2e49e90144ac86a32437543c474af4cf8c1eed99d7af53`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
+		Size: 655.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49f9475bb8cb41837630e54c620dfe5eca2babaf576a4359990b7ef263bd9586`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 13.4 MB (13406042 bytes)  
+	-	`sha256:38419e268acf39dc1c0a2841380aa51b65021c9f928ff8c675ec6443c8357773`  
+		Last Modified: Tue, 18 Mar 2025 05:37:31 GMT  
+		Size: 13.4 MB (13406017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da5b44747e40ef58c629e28def2d797046fad1e2fdf6dea3e99d0232bfb86737`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
-		Size: 2.1 KB (2141 bytes)  
+	-	`sha256:6aba9cdc5edd7ca97da7c577af0779f3ba0993900405f059cccdcafa162b5a30`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
+		Size: 2.1 KB (2138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6445849ec79254bddeecacf7b911e961e2a1f81f4e5042e2a3869bd9a88b7c1f`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 859.0 B  
+	-	`sha256:677ea9ec131983d3b21280894ca73e4ad36d3d169ba910e92bfbbdcae74c0d02`  
+		Last Modified: Tue, 18 Mar 2025 05:37:31 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb1b44c9e7612d5d5dfcb863723342bf1bfbb27f4acf37e582e407121f68ce30`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
+	-	`sha256:7a67fdc2d6f7dca51e62ffb2d4127c02a12c293eef3af1b1428532b58d6ace0d`  
+		Last Modified: Tue, 18 Mar 2025 05:37:32 GMT  
 		Size: 947.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:5.2-apache` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:7281ee8a20e8ca18fa01881d897273222f3b7b3f76c1b991db35d07c99cd2329
+$ docker pull phpmyadmin@sha256:e9d7f560ee56019dcf70047c936abb3224e80f8b3a717991fd2a3b87c5012a01
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **48.5 KB (48452 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5d873c0252bd552a0ae78f6ffcf0ce5c2a39ae66980c86a17e16c7971b446d6`
+-	Image ID: `sha256:f75ebb293888d4bb7d0f2e06655b46184bde6e7997844e229165a3795754cfb5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c6e49aeea2e48a267b7a2b39398a53c780e1160b75557fc8418c3ebbe9fd46b4`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
+	-	`sha256:8f7964a788b8920a1ee103da8f82cd4257455d663dc9723b005358c74be864a9`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
 		Size: 48.5 KB (48452 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10252,7 +10252,7 @@ $ docker pull phpmyadmin@sha256:df9cad7ccd6d48a74367912c2b3f117c1b5cee81032e4b5d
 ## `phpmyadmin:5.2-fpm`
 
 ```console
-$ docker pull phpmyadmin@sha256:2a6634d75cca40e5758dc2dfc56addd5ec53387179c076c4573aa0ea3992500a
+$ docker pull phpmyadmin@sha256:129319c3faf04a228bd4447cc54dbd86804132d30f846b3b1fa64065e49c742c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10471,19 +10471,19 @@ $ docker pull phpmyadmin@sha256:a28b1615164631e822f300a4101ae7596834efb75440e9d8
 ### `phpmyadmin:5.2-fpm` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:abfc0a31427069fd126360164bfb98a24011b6b56eb7887e8ba496bcf4623703
+$ docker pull phpmyadmin@sha256:6ab983bc77fa98a98aea542a2d1d1cb0db47e29c4025b456a02b7f3c83eea25c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.8 MB (164770577 bytes)**  
+-	Total Size: **164.8 MB (164765903 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a719de04fc8bad1860212f0d39d86ebf708c7da4aa653138a5fd7422f5cf2685`
+-	Image ID: `sha256:485723480fc33a30f3fdcc53e0e20c44b0636898f8a7548d8c783cc7b8a8197b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -10573,92 +10573,92 @@ CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3014e21b6e4396df02c7cc3c5f126fa29d531fa5a1ad0b40b80de6794ae2694`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
+	-	`sha256:50392f60ef98ab502e7ed416d506883257fe8ed57158995e7e77f0bb4d3317f7`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:858e0a56f6198eb0af5102ce28eda7b5a34384f5b54701b7346487229bff9e9c`  
-		Last Modified: Tue, 25 Feb 2025 02:51:20 GMT  
-		Size: 82.0 MB (81993202 bytes)  
+	-	`sha256:70faba6dfc75d37d904a2f4e790ed9afc8110c25721f14deb57e142ce509f203`  
+		Last Modified: Tue, 18 Mar 2025 01:17:34 GMT  
+		Size: 82.0 MB (81993797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c24b0f2499da71327f565769347ea1f63e9070dfa8385025f0465d80e603c361`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
-		Size: 225.0 B  
+	-	`sha256:2daffac9eca4d243722e527ddd815f9abe7f53272e743c7fd4b6c1177b0eb255`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:174fac8933fd96ad2b4d9895010a9ca8188774a0fc61d763fbf1e3c87172a5b1`  
-		Last Modified: Fri, 14 Mar 2025 00:17:47 GMT  
-		Size: 12.3 MB (12255703 bytes)  
+	-	`sha256:9f324d7149eb387d662a2056310738c5cb170034e50d1f391b983d5cd05d20d2`  
+		Last Modified: Tue, 18 Mar 2025 04:38:46 GMT  
+		Size: 12.3 MB (12255680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4587da7b68faab1496da9e291bb6c94baef8d06f3421d63afe1e030a34b954`  
-		Last Modified: Fri, 14 Mar 2025 00:17:45 GMT  
-		Size: 492.0 B  
+	-	`sha256:15152950ea6bc261fd1211b395697a3205ec9cc51f00522cabfd0b3921a39912`  
+		Last Modified: Tue, 18 Mar 2025 04:38:44 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61e787692425ce9c5b94a54a76d7be0dc8c9248fe49116c88affca601e87a140`  
-		Last Modified: Fri, 14 Mar 2025 01:21:45 GMT  
-		Size: 26.1 MB (26086910 bytes)  
+	-	`sha256:9acd0f09fc518aed97cd5c43838c2ab0de39f4bcbd7cd11932f398b874555451`  
+		Last Modified: Tue, 18 Mar 2025 04:46:07 GMT  
+		Size: 26.1 MB (26086755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbba49c677c0b55142ea8238fce0d47a9b81da4967a8c6dee28b45241cf84c96`  
-		Last Modified: Fri, 14 Mar 2025 01:21:44 GMT  
-		Size: 2.5 KB (2450 bytes)  
+	-	`sha256:a388f5c5cde4e2f6079f4aebe2afba6c87fa3d989635bb54f23c4e7fdc953557`  
+		Last Modified: Tue, 18 Mar 2025 04:46:06 GMT  
+		Size: 2.4 KB (2448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5b55b3f69c0c5b87bc560f356072b6fb7980dc02816addfd2411f76f80551fc`  
-		Last Modified: Fri, 14 Mar 2025 01:21:44 GMT  
-		Size: 247.0 B  
+	-	`sha256:609821ef7db392dd63e30a796602bff0cd7a3435017fef6b25364c9b836ab300`  
+		Last Modified: Tue, 18 Mar 2025 04:46:06 GMT  
+		Size: 245.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5aac5a740a4680921dbf093b1c0a3b64f4effb8de42c318dc89aa36b4b717819`  
-		Last Modified: Fri, 14 Mar 2025 01:21:45 GMT  
-		Size: 9.2 KB (9186 bytes)  
+	-	`sha256:90d0f19953173b9ce9c822ed73bee405e7a0d3ae969722137878ba3616f90c87`  
+		Last Modified: Tue, 18 Mar 2025 04:46:06 GMT  
+		Size: 9.2 KB (9184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fccaca664c25eaab081b8c2a418567a502fb5e92d5ada30a2af8b5f226540ee9`  
-		Last Modified: Fri, 14 Mar 2025 02:39:33 GMT  
-		Size: 5.3 MB (5270823 bytes)  
+	-	`sha256:ff0ae039ed8d301f881afec96826fdfb4c18fe400cbe63ef11d9be74231c1978`  
+		Last Modified: Tue, 18 Mar 2025 05:50:27 GMT  
+		Size: 5.3 MB (5270581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99eb0902825033c54b4b607979586c75a6925f82eaa41728b73d2b4e324145cf`  
-		Last Modified: Fri, 14 Mar 2025 02:39:33 GMT  
-		Size: 658.0 B  
+	-	`sha256:0e4d1b788e10dc14e110159bcfa9306dcd50046324eed15c56e83f9640a6cbbd`  
+		Last Modified: Tue, 18 Mar 2025 05:50:26 GMT  
+		Size: 656.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7747637304094cadfb9aa30c9a71dccfbba0fa0ef0698cc1631abc35a5e82ad4`  
-		Last Modified: Fri, 14 Mar 2025 02:39:34 GMT  
-		Size: 13.4 MB (13405997 bytes)  
+	-	`sha256:515efccd9db67ccb5f18b7e422c9938902f54026dd7d80ee8d661aebf7d94b8b`  
+		Last Modified: Tue, 18 Mar 2025 05:50:27 GMT  
+		Size: 13.4 MB (13405937 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:406f830691f563ac422d9e69a38be79951bb3425ce91b869ea298b5ec83c91bc`  
-		Last Modified: Fri, 14 Mar 2025 02:39:33 GMT  
-		Size: 2.1 KB (2139 bytes)  
+	-	`sha256:8efaf9fac050a55bfab3cdae4ff7243ec032e0cb277623f732e098ec49065183`  
+		Last Modified: Tue, 18 Mar 2025 05:50:27 GMT  
+		Size: 2.1 KB (2138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3571bda7a90b1011533fc08ce4393f2623eab29ab63528fc9032864869e832c9`  
-		Last Modified: Fri, 14 Mar 2025 02:39:34 GMT  
-		Size: 857.0 B  
+	-	`sha256:ab0e6d0032f73665534807540c64a47b8dc30df724243aaea14f17bb97d5a7f0`  
+		Last Modified: Tue, 18 Mar 2025 05:50:27 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8f04b025b806c791e62314b63421592b0404313cea4e4cd339968990c8f33bf`  
-		Last Modified: Fri, 14 Mar 2025 02:39:34 GMT  
-		Size: 800.0 B  
+	-	`sha256:04812be168e2360a0b021bacde0eaf64e35e41ec1428bd5cce208834eb7642c7`  
+		Last Modified: Tue, 18 Mar 2025 05:50:28 GMT  
+		Size: 801.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:5.2-fpm` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:5d7c8869f2a94fec8e829385682c86524164a2929638f24300cc5b516c210520
+$ docker pull phpmyadmin@sha256:361a0a65d4fdb1648957617d4e32b783696cf61d399ee1bfecf502514c51b17c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **43.5 KB (43481 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b92571c0200f77d774c3b82e5a910828a8d3e661d1333383202c647d792dde82`
+-	Image ID: `sha256:0ff11c719966bed2a5ea29d9320b4d962d4c886e90dcf5a7c3da06bb4c2f6e17`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:08e7a0b6cfe81653f734303ef50940eee32277c1a05bc5630c7bdd67ade9ce16`  
-		Last Modified: Fri, 14 Mar 2025 02:39:32 GMT  
+	-	`sha256:4cf881e852089d789ec2d7952836ea4ce8b68976940ff3957b81abae11f75068`  
+		Last Modified: Tue, 18 Mar 2025 05:50:26 GMT  
 		Size: 43.5 KB (43481 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11441,19 +11441,19 @@ $ docker pull phpmyadmin@sha256:50cc0936c5581d8d6ebd0061711db9481567021d9e64bf95
 ### `phpmyadmin:5.2-fpm` - linux; ppc64le
 
 ```console
-$ docker pull phpmyadmin@sha256:d64006b557991b8db51aac4e1f5c9fa54d8d90960a09cd1d5b4a023d5bd192b3
+$ docker pull phpmyadmin@sha256:5999e9fb984a110c4866d9bffcc5c40cf99b94f74164133e9b36da2d634174ce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **196.4 MB (196361690 bytes)**  
+-	Total Size: **196.4 MB (196358804 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:639f7228a84a6715a7336cf86a41a8758c737f41f26bedea31e01f3ccca75e2d`
+-	Image ID: `sha256:4a8323352ef01888e4a1096717ec846800c1415c16bee393008d96eaaf762c85`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -11543,92 +11543,92 @@ CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35bbbae4d2dc0350f7df1634e33daf64fe78cb672182650c700a26750b33b64c`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 225.0 B  
+	-	`sha256:b40c9e444f13d4c7a03580cf188ef06ad94ffc13189161777e9ed5cf824f8ea7`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e7f7bed916e76b3a3b176b4e6a5bcfe6e10e39a6c423be8fc3575115d7b1e06`  
-		Last Modified: Tue, 25 Feb 2025 02:59:28 GMT  
-		Size: 103.3 MB (103323545 bytes)  
+	-	`sha256:aef297c24191733a2fbe29ead5c53224c75c11b7ee0ba80b57b0b3898a33bbbf`  
+		Last Modified: Tue, 18 Mar 2025 03:15:07 GMT  
+		Size: 103.3 MB (103324904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d9943a0d5cef1bf22e1a6d5df4b38af8052474c28fe7d9188d33c9e0190742`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 226.0 B  
+	-	`sha256:69d707aca2b2791bdef48c24201e181e34f312580cea3313c4c8b8cdfa4a82c4`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b183a9e9a626652b70cd5c8539551c8cb640af571a1c9042e0132f037d4b647`  
-		Last Modified: Fri, 14 Mar 2025 00:29:55 GMT  
-		Size: 12.3 MB (12256822 bytes)  
+	-	`sha256:cf0a5624b2e36c98bdb392b48af22cb7e3bfb02714da1ccbadfed07c556150cf`  
+		Last Modified: Tue, 18 Mar 2025 03:50:09 GMT  
+		Size: 12.3 MB (12256831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e56b8480c0833bf885706daaa24ae51671535d736d1bd6502f4ec24bee98fdf`  
-		Last Modified: Fri, 14 Mar 2025 00:29:54 GMT  
-		Size: 491.0 B  
+	-	`sha256:005bdd9451d67cd64e36fba24fd6d35ad98376d9293a7a25bdc2eb4909da8751`  
+		Last Modified: Tue, 18 Mar 2025 03:50:08 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c88581c8d587c4893c5d0e4f3ec9f4da6276370c261bf429c722590c5a22c891`  
-		Last Modified: Fri, 14 Mar 2025 00:33:48 GMT  
-		Size: 28.7 MB (28651590 bytes)  
+	-	`sha256:390f3df2ca5d7bd9e205f841d0431f87fc9f24fc41a6384f2a5ea8d8ace40a5a`  
+		Last Modified: Tue, 18 Mar 2025 03:55:57 GMT  
+		Size: 28.7 MB (28651557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d060d61f8218819b5d303c6753fc9b191fdbb4217767776b6b827de24183cbe`  
-		Last Modified: Fri, 14 Mar 2025 00:33:46 GMT  
-		Size: 2.4 KB (2449 bytes)  
+	-	`sha256:0fe52ae83a28602decadc7fc38e73aa154e1b0d833620d03fec0e774682c2762`  
+		Last Modified: Tue, 18 Mar 2025 03:55:56 GMT  
+		Size: 2.4 KB (2446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af774f56e0b9582a37b1689788bc10d7be95ddf0f7e9f52f79edfba6c4224caa`  
-		Last Modified: Fri, 14 Mar 2025 00:33:47 GMT  
-		Size: 247.0 B  
+	-	`sha256:5fcf58a67b81f0aed612123edbc4f23f6d69bd744073ecc25b897eb09b0d4c0d`  
+		Last Modified: Tue, 18 Mar 2025 03:55:56 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab9017bee2d3c3c1b999a96f6729cee863c91f221ddcaec49b3087c6a6e07f43`  
-		Last Modified: Fri, 14 Mar 2025 00:33:47 GMT  
-		Size: 9.2 KB (9185 bytes)  
+	-	`sha256:2ae37236611277960b32520a2bd42d40619d7edba08d96ca2fd0421fe75a860f`  
+		Last Modified: Tue, 18 Mar 2025 03:55:56 GMT  
+		Size: 9.2 KB (9183 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3020cce3b8c4d7bea32ebd35de1147fbb8111b77652c81bb728485a25d1c7a8`  
-		Last Modified: Fri, 14 Mar 2025 02:43:16 GMT  
-		Size: 6.7 MB (6654135 bytes)  
+	-	`sha256:7940a9b3ec1ecb5299aed878bd6232a9ef758abe570fc20376b722cd736fb5bf`  
+		Last Modified: Tue, 18 Mar 2025 05:39:36 GMT  
+		Size: 6.7 MB (6654407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:111dfad3a157a7b5a9c16dc41da057219975d59b6ba4b4dce8534bdcaa0fd12d`  
-		Last Modified: Fri, 14 Mar 2025 02:43:15 GMT  
+	-	`sha256:bfec4ab8b57e36409b064addd7b993b5494d90a09e4a2b217ee0c4b6d229ecde`  
+		Last Modified: Tue, 18 Mar 2025 05:39:35 GMT  
 		Size: 656.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ecb03b2eed6bad352a88781eff7adc5f63cc5f0be2b9ac267416c0d0924487df`  
-		Last Modified: Fri, 14 Mar 2025 02:43:16 GMT  
-		Size: 13.4 MB (13405977 bytes)  
+	-	`sha256:ec2c321ca6ee3592203e4853280ec987f416cb8634aec237b75255f7c0f82a4c`  
+		Last Modified: Tue, 18 Mar 2025 05:39:36 GMT  
+		Size: 13.4 MB (13405998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ae77ea22e03e933a7a4af6b449296a297e68c7e43cee4b32ebf107f3e60eeb9e`  
-		Last Modified: Fri, 14 Mar 2025 02:43:15 GMT  
+	-	`sha256:a516d72dd14d1676f1bd51a88e2be2850798ddf02b6569875d42686c93c2ee9c`  
+		Last Modified: Tue, 18 Mar 2025 05:39:36 GMT  
 		Size: 2.1 KB (2138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbe488a687da133cc493a7ad5517214aeb97dffb625c113babbf135c2b80d5da`  
-		Last Modified: Fri, 14 Mar 2025 02:43:16 GMT  
+	-	`sha256:ff9a8b858ee232b75de1a521ad03ced6d56520cd0af1ed81a13a387f41e02923`  
+		Last Modified: Tue, 18 Mar 2025 05:39:36 GMT  
 		Size: 857.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2fecaed2d18fd242dd3d23ab22ef744e760485c86e04db5e18fc99f337b2f01`  
-		Last Modified: Fri, 14 Mar 2025 02:43:16 GMT  
-		Size: 801.0 B  
+	-	`sha256:c98a95cbdcfd23acb6f7284d168484a86424c2b2939e71f30fe3fb8ac6906962`  
+		Last Modified: Tue, 18 Mar 2025 05:39:37 GMT  
+		Size: 800.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:5.2-fpm` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:79de88459e8e351a904740c0dd429213be0e251e58e8da244dc6aaacd47e3db8
+$ docker pull phpmyadmin@sha256:9c5474a7301dea2f166040eb1d3f92c7a9dccbb7f2994d80a5649b80f1e86736
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **43.4 KB (43434 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93bdcb065b20a412f195c7599a91262b72cf962997bb29f8cab74bd7d33a3116`
+-	Image ID: `sha256:8bd1894b048e64293b3825d480344ec9054125d6095468db1f54637e689179be`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1d6ea2fb2ca442b84a3892aadb88c2fbe28d5b8850447e6543bd7b22ac2fda41`  
-		Last Modified: Fri, 14 Mar 2025 02:43:15 GMT  
+	-	`sha256:c1595e9f0bc88abfb6a8414099a371e5f3c3388db0faeface6b805760ce45fcc`  
+		Last Modified: Tue, 18 Mar 2025 05:39:35 GMT  
 		Size: 43.4 KB (43434 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13470,7 +13470,7 @@ $ docker pull phpmyadmin@sha256:575e50dcd91260c5a5e466bd7f19aa96a050d86358a1d9bb
 ## `phpmyadmin:5.2.2`
 
 ```console
-$ docker pull phpmyadmin@sha256:76b7cc1382acc52c6338395fbd1e94c0b2a9830a68f3fd6ce12d612db99fd338
+$ docker pull phpmyadmin@sha256:847e2c011d052e1980915605af10f81137d749085394f6c7bb0319b5040195af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13711,19 +13711,19 @@ $ docker pull phpmyadmin@sha256:51dd94e85f46f9219a3c066d5eb6e19918d4924b554bfc56
 ### `phpmyadmin:5.2.2` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:a7266581bc9dbdabe275e577d0672ce83f86425d4e4e0eec0f6976b9af4dc9b9
+$ docker pull phpmyadmin@sha256:ae4e07a5622c85b861cdfcc8bb9cc3f6e0a60a6e9837e78732a868174c707ebc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.4 MB (168393269 bytes)**  
+-	Total Size: **168.4 MB (168388913 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6dd6757fd5f0aa18f7c6ff52b8481681efa223a936fdfd22b55bddbc3e815400`
+-	Image ID: `sha256:7a1b8e8d67fb6b24df1e5b78ff65b9f451b2a91723335c305a0099c0adda267a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -13823,105 +13823,105 @@ CMD ["apache2-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3014e21b6e4396df02c7cc3c5f126fa29d531fa5a1ad0b40b80de6794ae2694`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
+	-	`sha256:50392f60ef98ab502e7ed416d506883257fe8ed57158995e7e77f0bb4d3317f7`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:858e0a56f6198eb0af5102ce28eda7b5a34384f5b54701b7346487229bff9e9c`  
-		Last Modified: Tue, 25 Feb 2025 02:51:20 GMT  
-		Size: 82.0 MB (81993202 bytes)  
+	-	`sha256:70faba6dfc75d37d904a2f4e790ed9afc8110c25721f14deb57e142ce509f203`  
+		Last Modified: Tue, 18 Mar 2025 01:17:34 GMT  
+		Size: 82.0 MB (81993797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c24b0f2499da71327f565769347ea1f63e9070dfa8385025f0465d80e603c361`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
-		Size: 225.0 B  
+	-	`sha256:2daffac9eca4d243722e527ddd815f9abe7f53272e743c7fd4b6c1177b0eb255`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e21a0010d00b089e3a34b60fddcac813cd3a1211368d868b76aa3c52acf85f39`  
-		Last Modified: Tue, 25 Feb 2025 02:55:46 GMT  
-		Size: 19.4 MB (19419190 bytes)  
+	-	`sha256:5e40bc50036fecf94b15523ae01df144fd25cc29085c9b900167682966aea345`  
+		Last Modified: Tue, 18 Mar 2025 04:03:50 GMT  
+		Size: 19.4 MB (19419254 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:836efc0ee062aca6556d741fb3e390ca6b509fc639049bef1cfc24e29616d566`  
-		Last Modified: Tue, 25 Feb 2025 02:55:45 GMT  
-		Size: 434.0 B  
+	-	`sha256:fb9ef2e54bf4f16636556f311cb5285d5b86bac864da9ee836197f377a6cb776`  
+		Last Modified: Tue, 18 Mar 2025 04:03:49 GMT  
+		Size: 432.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bb27253beef75bf260f9071d9fb96a1614335f2b1af270afddf706a8142cb7b`  
-		Last Modified: Tue, 25 Feb 2025 02:55:45 GMT  
-		Size: 483.0 B  
+	-	`sha256:77ad3f9cc1ac78b8fb303beaac1f3eedbe45e57ac5c8760279395201640c6ddb`  
+		Last Modified: Tue, 18 Mar 2025 04:03:50 GMT  
+		Size: 485.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:011930897f0e94f8908d35816b869c1916d4b7c5e69b013a14bd68af54513b64`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
-		Size: 12.3 MB (12274462 bytes)  
+	-	`sha256:28ee6f2ea656a53ed2ef0ce36223f3ff3f1ad9649216635e7039a7f7ba11e80a`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
+		Size: 12.3 MB (12274458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9587ba2e3349206ea532f4464028c241e4ad1121298357feaccd286fca85d8fd`  
-		Last Modified: Fri, 14 Mar 2025 01:16:17 GMT  
-		Size: 490.0 B  
+	-	`sha256:439c9d2c84cacda41206e1f1363eed0af6a1dd4a67bb23046d39682d03f256c0`  
+		Last Modified: Tue, 18 Mar 2025 04:53:03 GMT  
+		Size: 487.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a585b6944c1433eff35267ab704ba7545360430398014d7bb676ae940a46c5f3`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
-		Size: 10.4 MB (10406221 bytes)  
+	-	`sha256:eed0cbcb35c8ba1da95d1667e1211071e3c1bdbeccbc425a4bbaa1d440a3fd2c`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
+		Size: 10.4 MB (10406179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:411a0c4868fccc79fa986919a6a2d409dc1b8ba5c006b941e9492a700c79ffcd`  
-		Last Modified: Fri, 14 Mar 2025 01:16:16 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:19914ee66d9997b46e85813af04cb64d1122bedef3ce7ad34b0cf1641704e65e`  
+		Last Modified: Tue, 18 Mar 2025 04:53:03 GMT  
+		Size: 2.5 KB (2454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10c8577ccb7b4d01bfe8006afd0838fc8d07519bd88b0f59867e8b3384427b27`  
-		Last Modified: Fri, 14 Mar 2025 01:16:17 GMT  
+	-	`sha256:bf491b90e0c842e4cf13496bc58a29ccd0ee3a966f66503314da4e72d0302b7c`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8b7bacb438358389faa51d6b6f86912db59267c3bfff4f8d02c547b4970ac24`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
+	-	`sha256:375f9c94559079ddf7990747ea43a04907652eeca291bfca6685d6e984619193`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
 		Size: 891.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97c2987bd3f28ff7d9512b71fde3148c2bb558f3a01fc8214b24ce3f1dfd1aa2`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
-		Size: 5.1 MB (5143507 bytes)  
+	-	`sha256:deb87792c15e99616fd8200022c1c1a857fa712710c9b2e3ba524864a8487dbd`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 5.1 MB (5143344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e31c41319e8dc032e6caa60141c1b885815e0be2d4a828e5e425971fc4ad8f21`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 654.0 B  
+	-	`sha256:912ea3ee3b28842eb5bf8b0aea06f5a2988e4a3b45f8d107a9b19ea91c6b3067`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 655.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd033e90e48feafab441b30e242ad1cd93cb8f489c69eaa4e34eced709310795`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
-		Size: 13.4 MB (13405978 bytes)  
+	-	`sha256:dcdbd4b76d0006fcd08e5e0380eb43cd30470a466ad3d88632d86d6d2a6437c3`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 13.4 MB (13405949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5f352e2e04377f91fa1c1ccd750182370df31645eba06a04949f5353dc6a944`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 2.1 KB (2138 bytes)  
+	-	`sha256:a51bb42a4f3c082f6d79b2c4b959f11145d4632d11a23be39d4dfde98b5ab739`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 2.1 KB (2140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:925a0c70ea15e12f1a853755f05e378d309a08277601f59b5cb695f61b01dc8d`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
+	-	`sha256:dd1e3727484de159870ab9661b8f6dcc052e1f150d93f9d92f3d2ef5097c3c07`  
+		Last Modified: Tue, 18 Mar 2025 05:49:18 GMT  
 		Size: 858.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5360158cfbceb913f62089e4ec10563025c0a7349ba0d531036918f8d537b86`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
+	-	`sha256:ccf71ea361b3587c8fa13e4fe523a46c692fd6464a3fb5998468aa32caace46b`  
+		Last Modified: Tue, 18 Mar 2025 05:49:18 GMT  
 		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:5.2.2` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:eb503513bf647d75baf9d318f2b66598fdbcce3f6b9cfecd954f91bf511e01db
+$ docker pull phpmyadmin@sha256:542f3f5a1c0e8bf593780750f489847ecc821c7decc84304980b4d4773d506c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.5 KB (48505 bytes)**  
+-	Total Size: **48.5 KB (48507 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57eb9460a8ed393307d81f7618dda392706da5ddfff56bf6cff2ae6d6d0bb0c4`
+-	Image ID: `sha256:a0ec89b2977e08a827707cd4cb2bf1555c8138b8cd33eee773638eefbbb80aa2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fa00e0561d8f2b1dc12797f587e9d0896d7629ff5f46f0f5b8495a791972932c`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 48.5 KB (48505 bytes)  
+	-	`sha256:f28d2a55674640471e77da229ddb2dca0e4f582ff69875f87c779d90b49f674a`  
+		Last Modified: Tue, 18 Mar 2025 05:49:16 GMT  
+		Size: 48.5 KB (48507 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `phpmyadmin:5.2.2` - linux; arm variant v7
@@ -14791,19 +14791,19 @@ $ docker pull phpmyadmin@sha256:c6b6790ddaf7ead8e263367bea3f0f972a2e35141d3580e1
 ### `phpmyadmin:5.2.2` - linux; ppc64le
 
 ```console
-$ docker pull phpmyadmin@sha256:6a4e6e8df1d30992318072f705a560781cd7f490fdeea039b5d601b75b961561
+$ docker pull phpmyadmin@sha256:aff247876a35e802341d95014336d6646b12e461562c2d1ab0794573659d0b87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.7 MB (200679544 bytes)**  
+-	Total Size: **200.7 MB (200676406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68d30ed1ccd6cb211ab8597d398c64a0e4ec0c9838e61ef009a35c43a91a12d1`
+-	Image ID: `sha256:bfe5cc958634c6dde17f37d530ee20ab80428fddb6b7c3ce46ab90ffc4fadbb9`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -14903,104 +14903,104 @@ CMD ["apache2-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35bbbae4d2dc0350f7df1634e33daf64fe78cb672182650c700a26750b33b64c`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 225.0 B  
+	-	`sha256:b40c9e444f13d4c7a03580cf188ef06ad94ffc13189161777e9ed5cf824f8ea7`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e7f7bed916e76b3a3b176b4e6a5bcfe6e10e39a6c423be8fc3575115d7b1e06`  
-		Last Modified: Tue, 25 Feb 2025 02:59:28 GMT  
-		Size: 103.3 MB (103323545 bytes)  
+	-	`sha256:aef297c24191733a2fbe29ead5c53224c75c11b7ee0ba80b57b0b3898a33bbbf`  
+		Last Modified: Tue, 18 Mar 2025 03:15:07 GMT  
+		Size: 103.3 MB (103324904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d9943a0d5cef1bf22e1a6d5df4b38af8052474c28fe7d9188d33c9e0190742`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 226.0 B  
+	-	`sha256:69d707aca2b2791bdef48c24201e181e34f312580cea3313c4c8b8cdfa4a82c4`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f5eba5668f315d2ef7f70338fc89daecbca191bf9b5b6622280439ff5ceb4a7`  
-		Last Modified: Tue, 25 Feb 2025 03:04:11 GMT  
-		Size: 21.3 MB (21308442 bytes)  
+	-	`sha256:904971bf946949bd849eb4b667ce16daba036ec4ae5066a61816ed4b1abe5854`  
+		Last Modified: Tue, 18 Mar 2025 03:37:33 GMT  
+		Size: 21.3 MB (21308422 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8bec4fde36a5fc026717bc0e1c4a8f85c6397c11d730b4d345fdb0b5014cc45`  
-		Last Modified: Tue, 25 Feb 2025 03:04:06 GMT  
+	-	`sha256:04920e64d4709add88a0a3602fa557015f184d1476acb20183c24e2c709eecc9`  
+		Last Modified: Tue, 18 Mar 2025 03:37:32 GMT  
 		Size: 435.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca66cb544073b521bd3bcd518135c4cf977a5939323c5191473a1b8a2a09cd05`  
-		Last Modified: Tue, 25 Feb 2025 03:04:06 GMT  
-		Size: 489.0 B  
+	-	`sha256:65238378d6b0ff511c6a27c9bbac5e81b95662e894866715edfdea0404819c82`  
+		Last Modified: Tue, 18 Mar 2025 03:37:32 GMT  
+		Size: 490.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4250556fa8417334da5be4ff65e43885cb11a4aefa7d255ddcedadfb60e1e4b`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 12.3 MB (12275866 bytes)  
+	-	`sha256:2333a1edb32516e5e07616b5bf60b9c51eab28c9f7222124b11efd092bb70fa4`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 12.3 MB (12275862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fc1dc2ea55f95178ec13fe2b851029d78f5e0d2f3a6c8390fe1a234a9f2e9cf`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 491.0 B  
+	-	`sha256:8cd4c85564347a400a7d40062f14524c610df614356818d7923e4f4576913fc8`  
+		Last Modified: Tue, 18 Mar 2025 04:02:29 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7afa4c68853b68dabf1bd8e64549df9d94bcf4c95ef043f559e0eefabff7ff8f`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 11.8 MB (11834942 bytes)  
+	-	`sha256:c16f08b0e4b59bd52114ff166b918c0003930ebf44501f8c07892345a7c9dba8`  
+		Last Modified: Tue, 18 Mar 2025 04:02:31 GMT  
+		Size: 11.8 MB (11834908 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a58ec0c7a28b79ecb2761aea3a7ba1c7e11a569cdefcbc08ed0bf5bc5fb74af`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 2.5 KB (2457 bytes)  
+	-	`sha256:3f3257acf4109928d905c7b5a959f364623910b44f44302a13a64660fbf3199b`  
+		Last Modified: Tue, 18 Mar 2025 04:02:29 GMT  
+		Size: 2.5 KB (2453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4920622eb8cb7077f99589eb65bebd3e0264d1474c6bc0a48e5c79e7629376`  
-		Last Modified: Fri, 14 Mar 2025 01:15:17 GMT  
-		Size: 249.0 B  
+	-	`sha256:cfaa4ed3637b246e489af22d086c861274049e02b0850ba84d4fa9601d4986f3`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8370a02df23f733617d749f69df800919185839d44c681f4c9ec95e9b5531d10`  
-		Last Modified: Fri, 14 Mar 2025 01:15:17 GMT  
-		Size: 891.0 B  
+	-	`sha256:d38c04a142ef9c061e66f15af950f1d095b9e309d8fbb53f8ab0600189d73894`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 890.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d9c47a21dbfdcf245c9daf36cb61186207f7f618a051ba6fcaff10a50a6e967`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 6.5 MB (6468297 bytes)  
+	-	`sha256:c3ea8f820564f878adb3531fb433425f13deaf7972d81574161bc6568e3fd705`  
+		Last Modified: Tue, 18 Mar 2025 05:37:32 GMT  
+		Size: 6.5 MB (6468404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2d2d1cd1c6305f6251498ef70ac82e232089392568a52cbd6bafa4a75c3f272`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
-		Size: 654.0 B  
+	-	`sha256:f490553e05bc8aaa6f2e49e90144ac86a32437543c474af4cf8c1eed99d7af53`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
+		Size: 655.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49f9475bb8cb41837630e54c620dfe5eca2babaf576a4359990b7ef263bd9586`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 13.4 MB (13406042 bytes)  
+	-	`sha256:38419e268acf39dc1c0a2841380aa51b65021c9f928ff8c675ec6443c8357773`  
+		Last Modified: Tue, 18 Mar 2025 05:37:31 GMT  
+		Size: 13.4 MB (13406017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da5b44747e40ef58c629e28def2d797046fad1e2fdf6dea3e99d0232bfb86737`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
-		Size: 2.1 KB (2141 bytes)  
+	-	`sha256:6aba9cdc5edd7ca97da7c577af0779f3ba0993900405f059cccdcafa162b5a30`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
+		Size: 2.1 KB (2138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6445849ec79254bddeecacf7b911e961e2a1f81f4e5042e2a3869bd9a88b7c1f`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 859.0 B  
+	-	`sha256:677ea9ec131983d3b21280894ca73e4ad36d3d169ba910e92bfbbdcae74c0d02`  
+		Last Modified: Tue, 18 Mar 2025 05:37:31 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb1b44c9e7612d5d5dfcb863723342bf1bfbb27f4acf37e582e407121f68ce30`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
+	-	`sha256:7a67fdc2d6f7dca51e62ffb2d4127c02a12c293eef3af1b1428532b58d6ace0d`  
+		Last Modified: Tue, 18 Mar 2025 05:37:32 GMT  
 		Size: 947.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:5.2.2` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:7281ee8a20e8ca18fa01881d897273222f3b7b3f76c1b991db35d07c99cd2329
+$ docker pull phpmyadmin@sha256:e9d7f560ee56019dcf70047c936abb3224e80f8b3a717991fd2a3b87c5012a01
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **48.5 KB (48452 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5d873c0252bd552a0ae78f6ffcf0ce5c2a39ae66980c86a17e16c7971b446d6`
+-	Image ID: `sha256:f75ebb293888d4bb7d0f2e06655b46184bde6e7997844e229165a3795754cfb5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c6e49aeea2e48a267b7a2b39398a53c780e1160b75557fc8418c3ebbe9fd46b4`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
+	-	`sha256:8f7964a788b8920a1ee103da8f82cd4257455d663dc9723b005358c74be864a9`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
 		Size: 48.5 KB (48452 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -15223,7 +15223,7 @@ $ docker pull phpmyadmin@sha256:df9cad7ccd6d48a74367912c2b3f117c1b5cee81032e4b5d
 ## `phpmyadmin:5.2.2-apache`
 
 ```console
-$ docker pull phpmyadmin@sha256:76b7cc1382acc52c6338395fbd1e94c0b2a9830a68f3fd6ce12d612db99fd338
+$ docker pull phpmyadmin@sha256:847e2c011d052e1980915605af10f81137d749085394f6c7bb0319b5040195af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15464,19 +15464,19 @@ $ docker pull phpmyadmin@sha256:51dd94e85f46f9219a3c066d5eb6e19918d4924b554bfc56
 ### `phpmyadmin:5.2.2-apache` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:a7266581bc9dbdabe275e577d0672ce83f86425d4e4e0eec0f6976b9af4dc9b9
+$ docker pull phpmyadmin@sha256:ae4e07a5622c85b861cdfcc8bb9cc3f6e0a60a6e9837e78732a868174c707ebc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.4 MB (168393269 bytes)**  
+-	Total Size: **168.4 MB (168388913 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6dd6757fd5f0aa18f7c6ff52b8481681efa223a936fdfd22b55bddbc3e815400`
+-	Image ID: `sha256:7a1b8e8d67fb6b24df1e5b78ff65b9f451b2a91723335c305a0099c0adda267a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -15576,105 +15576,105 @@ CMD ["apache2-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3014e21b6e4396df02c7cc3c5f126fa29d531fa5a1ad0b40b80de6794ae2694`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
+	-	`sha256:50392f60ef98ab502e7ed416d506883257fe8ed57158995e7e77f0bb4d3317f7`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:858e0a56f6198eb0af5102ce28eda7b5a34384f5b54701b7346487229bff9e9c`  
-		Last Modified: Tue, 25 Feb 2025 02:51:20 GMT  
-		Size: 82.0 MB (81993202 bytes)  
+	-	`sha256:70faba6dfc75d37d904a2f4e790ed9afc8110c25721f14deb57e142ce509f203`  
+		Last Modified: Tue, 18 Mar 2025 01:17:34 GMT  
+		Size: 82.0 MB (81993797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c24b0f2499da71327f565769347ea1f63e9070dfa8385025f0465d80e603c361`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
-		Size: 225.0 B  
+	-	`sha256:2daffac9eca4d243722e527ddd815f9abe7f53272e743c7fd4b6c1177b0eb255`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e21a0010d00b089e3a34b60fddcac813cd3a1211368d868b76aa3c52acf85f39`  
-		Last Modified: Tue, 25 Feb 2025 02:55:46 GMT  
-		Size: 19.4 MB (19419190 bytes)  
+	-	`sha256:5e40bc50036fecf94b15523ae01df144fd25cc29085c9b900167682966aea345`  
+		Last Modified: Tue, 18 Mar 2025 04:03:50 GMT  
+		Size: 19.4 MB (19419254 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:836efc0ee062aca6556d741fb3e390ca6b509fc639049bef1cfc24e29616d566`  
-		Last Modified: Tue, 25 Feb 2025 02:55:45 GMT  
-		Size: 434.0 B  
+	-	`sha256:fb9ef2e54bf4f16636556f311cb5285d5b86bac864da9ee836197f377a6cb776`  
+		Last Modified: Tue, 18 Mar 2025 04:03:49 GMT  
+		Size: 432.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bb27253beef75bf260f9071d9fb96a1614335f2b1af270afddf706a8142cb7b`  
-		Last Modified: Tue, 25 Feb 2025 02:55:45 GMT  
-		Size: 483.0 B  
+	-	`sha256:77ad3f9cc1ac78b8fb303beaac1f3eedbe45e57ac5c8760279395201640c6ddb`  
+		Last Modified: Tue, 18 Mar 2025 04:03:50 GMT  
+		Size: 485.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:011930897f0e94f8908d35816b869c1916d4b7c5e69b013a14bd68af54513b64`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
-		Size: 12.3 MB (12274462 bytes)  
+	-	`sha256:28ee6f2ea656a53ed2ef0ce36223f3ff3f1ad9649216635e7039a7f7ba11e80a`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
+		Size: 12.3 MB (12274458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9587ba2e3349206ea532f4464028c241e4ad1121298357feaccd286fca85d8fd`  
-		Last Modified: Fri, 14 Mar 2025 01:16:17 GMT  
-		Size: 490.0 B  
+	-	`sha256:439c9d2c84cacda41206e1f1363eed0af6a1dd4a67bb23046d39682d03f256c0`  
+		Last Modified: Tue, 18 Mar 2025 04:53:03 GMT  
+		Size: 487.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a585b6944c1433eff35267ab704ba7545360430398014d7bb676ae940a46c5f3`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
-		Size: 10.4 MB (10406221 bytes)  
+	-	`sha256:eed0cbcb35c8ba1da95d1667e1211071e3c1bdbeccbc425a4bbaa1d440a3fd2c`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
+		Size: 10.4 MB (10406179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:411a0c4868fccc79fa986919a6a2d409dc1b8ba5c006b941e9492a700c79ffcd`  
-		Last Modified: Fri, 14 Mar 2025 01:16:16 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:19914ee66d9997b46e85813af04cb64d1122bedef3ce7ad34b0cf1641704e65e`  
+		Last Modified: Tue, 18 Mar 2025 04:53:03 GMT  
+		Size: 2.5 KB (2454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10c8577ccb7b4d01bfe8006afd0838fc8d07519bd88b0f59867e8b3384427b27`  
-		Last Modified: Fri, 14 Mar 2025 01:16:17 GMT  
+	-	`sha256:bf491b90e0c842e4cf13496bc58a29ccd0ee3a966f66503314da4e72d0302b7c`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8b7bacb438358389faa51d6b6f86912db59267c3bfff4f8d02c547b4970ac24`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
+	-	`sha256:375f9c94559079ddf7990747ea43a04907652eeca291bfca6685d6e984619193`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
 		Size: 891.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97c2987bd3f28ff7d9512b71fde3148c2bb558f3a01fc8214b24ce3f1dfd1aa2`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
-		Size: 5.1 MB (5143507 bytes)  
+	-	`sha256:deb87792c15e99616fd8200022c1c1a857fa712710c9b2e3ba524864a8487dbd`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 5.1 MB (5143344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e31c41319e8dc032e6caa60141c1b885815e0be2d4a828e5e425971fc4ad8f21`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 654.0 B  
+	-	`sha256:912ea3ee3b28842eb5bf8b0aea06f5a2988e4a3b45f8d107a9b19ea91c6b3067`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 655.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd033e90e48feafab441b30e242ad1cd93cb8f489c69eaa4e34eced709310795`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
-		Size: 13.4 MB (13405978 bytes)  
+	-	`sha256:dcdbd4b76d0006fcd08e5e0380eb43cd30470a466ad3d88632d86d6d2a6437c3`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 13.4 MB (13405949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5f352e2e04377f91fa1c1ccd750182370df31645eba06a04949f5353dc6a944`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 2.1 KB (2138 bytes)  
+	-	`sha256:a51bb42a4f3c082f6d79b2c4b959f11145d4632d11a23be39d4dfde98b5ab739`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 2.1 KB (2140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:925a0c70ea15e12f1a853755f05e378d309a08277601f59b5cb695f61b01dc8d`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
+	-	`sha256:dd1e3727484de159870ab9661b8f6dcc052e1f150d93f9d92f3d2ef5097c3c07`  
+		Last Modified: Tue, 18 Mar 2025 05:49:18 GMT  
 		Size: 858.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5360158cfbceb913f62089e4ec10563025c0a7349ba0d531036918f8d537b86`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
+	-	`sha256:ccf71ea361b3587c8fa13e4fe523a46c692fd6464a3fb5998468aa32caace46b`  
+		Last Modified: Tue, 18 Mar 2025 05:49:18 GMT  
 		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:5.2.2-apache` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:eb503513bf647d75baf9d318f2b66598fdbcce3f6b9cfecd954f91bf511e01db
+$ docker pull phpmyadmin@sha256:542f3f5a1c0e8bf593780750f489847ecc821c7decc84304980b4d4773d506c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.5 KB (48505 bytes)**  
+-	Total Size: **48.5 KB (48507 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57eb9460a8ed393307d81f7618dda392706da5ddfff56bf6cff2ae6d6d0bb0c4`
+-	Image ID: `sha256:a0ec89b2977e08a827707cd4cb2bf1555c8138b8cd33eee773638eefbbb80aa2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fa00e0561d8f2b1dc12797f587e9d0896d7629ff5f46f0f5b8495a791972932c`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 48.5 KB (48505 bytes)  
+	-	`sha256:f28d2a55674640471e77da229ddb2dca0e4f582ff69875f87c779d90b49f674a`  
+		Last Modified: Tue, 18 Mar 2025 05:49:16 GMT  
+		Size: 48.5 KB (48507 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `phpmyadmin:5.2.2-apache` - linux; arm variant v7
@@ -16544,19 +16544,19 @@ $ docker pull phpmyadmin@sha256:c6b6790ddaf7ead8e263367bea3f0f972a2e35141d3580e1
 ### `phpmyadmin:5.2.2-apache` - linux; ppc64le
 
 ```console
-$ docker pull phpmyadmin@sha256:6a4e6e8df1d30992318072f705a560781cd7f490fdeea039b5d601b75b961561
+$ docker pull phpmyadmin@sha256:aff247876a35e802341d95014336d6646b12e461562c2d1ab0794573659d0b87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.7 MB (200679544 bytes)**  
+-	Total Size: **200.7 MB (200676406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68d30ed1ccd6cb211ab8597d398c64a0e4ec0c9838e61ef009a35c43a91a12d1`
+-	Image ID: `sha256:bfe5cc958634c6dde17f37d530ee20ab80428fddb6b7c3ce46ab90ffc4fadbb9`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -16656,104 +16656,104 @@ CMD ["apache2-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35bbbae4d2dc0350f7df1634e33daf64fe78cb672182650c700a26750b33b64c`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 225.0 B  
+	-	`sha256:b40c9e444f13d4c7a03580cf188ef06ad94ffc13189161777e9ed5cf824f8ea7`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e7f7bed916e76b3a3b176b4e6a5bcfe6e10e39a6c423be8fc3575115d7b1e06`  
-		Last Modified: Tue, 25 Feb 2025 02:59:28 GMT  
-		Size: 103.3 MB (103323545 bytes)  
+	-	`sha256:aef297c24191733a2fbe29ead5c53224c75c11b7ee0ba80b57b0b3898a33bbbf`  
+		Last Modified: Tue, 18 Mar 2025 03:15:07 GMT  
+		Size: 103.3 MB (103324904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d9943a0d5cef1bf22e1a6d5df4b38af8052474c28fe7d9188d33c9e0190742`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 226.0 B  
+	-	`sha256:69d707aca2b2791bdef48c24201e181e34f312580cea3313c4c8b8cdfa4a82c4`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f5eba5668f315d2ef7f70338fc89daecbca191bf9b5b6622280439ff5ceb4a7`  
-		Last Modified: Tue, 25 Feb 2025 03:04:11 GMT  
-		Size: 21.3 MB (21308442 bytes)  
+	-	`sha256:904971bf946949bd849eb4b667ce16daba036ec4ae5066a61816ed4b1abe5854`  
+		Last Modified: Tue, 18 Mar 2025 03:37:33 GMT  
+		Size: 21.3 MB (21308422 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8bec4fde36a5fc026717bc0e1c4a8f85c6397c11d730b4d345fdb0b5014cc45`  
-		Last Modified: Tue, 25 Feb 2025 03:04:06 GMT  
+	-	`sha256:04920e64d4709add88a0a3602fa557015f184d1476acb20183c24e2c709eecc9`  
+		Last Modified: Tue, 18 Mar 2025 03:37:32 GMT  
 		Size: 435.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca66cb544073b521bd3bcd518135c4cf977a5939323c5191473a1b8a2a09cd05`  
-		Last Modified: Tue, 25 Feb 2025 03:04:06 GMT  
-		Size: 489.0 B  
+	-	`sha256:65238378d6b0ff511c6a27c9bbac5e81b95662e894866715edfdea0404819c82`  
+		Last Modified: Tue, 18 Mar 2025 03:37:32 GMT  
+		Size: 490.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4250556fa8417334da5be4ff65e43885cb11a4aefa7d255ddcedadfb60e1e4b`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 12.3 MB (12275866 bytes)  
+	-	`sha256:2333a1edb32516e5e07616b5bf60b9c51eab28c9f7222124b11efd092bb70fa4`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 12.3 MB (12275862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fc1dc2ea55f95178ec13fe2b851029d78f5e0d2f3a6c8390fe1a234a9f2e9cf`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 491.0 B  
+	-	`sha256:8cd4c85564347a400a7d40062f14524c610df614356818d7923e4f4576913fc8`  
+		Last Modified: Tue, 18 Mar 2025 04:02:29 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7afa4c68853b68dabf1bd8e64549df9d94bcf4c95ef043f559e0eefabff7ff8f`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 11.8 MB (11834942 bytes)  
+	-	`sha256:c16f08b0e4b59bd52114ff166b918c0003930ebf44501f8c07892345a7c9dba8`  
+		Last Modified: Tue, 18 Mar 2025 04:02:31 GMT  
+		Size: 11.8 MB (11834908 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a58ec0c7a28b79ecb2761aea3a7ba1c7e11a569cdefcbc08ed0bf5bc5fb74af`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 2.5 KB (2457 bytes)  
+	-	`sha256:3f3257acf4109928d905c7b5a959f364623910b44f44302a13a64660fbf3199b`  
+		Last Modified: Tue, 18 Mar 2025 04:02:29 GMT  
+		Size: 2.5 KB (2453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4920622eb8cb7077f99589eb65bebd3e0264d1474c6bc0a48e5c79e7629376`  
-		Last Modified: Fri, 14 Mar 2025 01:15:17 GMT  
-		Size: 249.0 B  
+	-	`sha256:cfaa4ed3637b246e489af22d086c861274049e02b0850ba84d4fa9601d4986f3`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8370a02df23f733617d749f69df800919185839d44c681f4c9ec95e9b5531d10`  
-		Last Modified: Fri, 14 Mar 2025 01:15:17 GMT  
-		Size: 891.0 B  
+	-	`sha256:d38c04a142ef9c061e66f15af950f1d095b9e309d8fbb53f8ab0600189d73894`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 890.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d9c47a21dbfdcf245c9daf36cb61186207f7f618a051ba6fcaff10a50a6e967`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 6.5 MB (6468297 bytes)  
+	-	`sha256:c3ea8f820564f878adb3531fb433425f13deaf7972d81574161bc6568e3fd705`  
+		Last Modified: Tue, 18 Mar 2025 05:37:32 GMT  
+		Size: 6.5 MB (6468404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2d2d1cd1c6305f6251498ef70ac82e232089392568a52cbd6bafa4a75c3f272`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
-		Size: 654.0 B  
+	-	`sha256:f490553e05bc8aaa6f2e49e90144ac86a32437543c474af4cf8c1eed99d7af53`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
+		Size: 655.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49f9475bb8cb41837630e54c620dfe5eca2babaf576a4359990b7ef263bd9586`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 13.4 MB (13406042 bytes)  
+	-	`sha256:38419e268acf39dc1c0a2841380aa51b65021c9f928ff8c675ec6443c8357773`  
+		Last Modified: Tue, 18 Mar 2025 05:37:31 GMT  
+		Size: 13.4 MB (13406017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da5b44747e40ef58c629e28def2d797046fad1e2fdf6dea3e99d0232bfb86737`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
-		Size: 2.1 KB (2141 bytes)  
+	-	`sha256:6aba9cdc5edd7ca97da7c577af0779f3ba0993900405f059cccdcafa162b5a30`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
+		Size: 2.1 KB (2138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6445849ec79254bddeecacf7b911e961e2a1f81f4e5042e2a3869bd9a88b7c1f`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 859.0 B  
+	-	`sha256:677ea9ec131983d3b21280894ca73e4ad36d3d169ba910e92bfbbdcae74c0d02`  
+		Last Modified: Tue, 18 Mar 2025 05:37:31 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb1b44c9e7612d5d5dfcb863723342bf1bfbb27f4acf37e582e407121f68ce30`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
+	-	`sha256:7a67fdc2d6f7dca51e62ffb2d4127c02a12c293eef3af1b1428532b58d6ace0d`  
+		Last Modified: Tue, 18 Mar 2025 05:37:32 GMT  
 		Size: 947.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:5.2.2-apache` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:7281ee8a20e8ca18fa01881d897273222f3b7b3f76c1b991db35d07c99cd2329
+$ docker pull phpmyadmin@sha256:e9d7f560ee56019dcf70047c936abb3224e80f8b3a717991fd2a3b87c5012a01
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **48.5 KB (48452 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5d873c0252bd552a0ae78f6ffcf0ce5c2a39ae66980c86a17e16c7971b446d6`
+-	Image ID: `sha256:f75ebb293888d4bb7d0f2e06655b46184bde6e7997844e229165a3795754cfb5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c6e49aeea2e48a267b7a2b39398a53c780e1160b75557fc8418c3ebbe9fd46b4`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
+	-	`sha256:8f7964a788b8920a1ee103da8f82cd4257455d663dc9723b005358c74be864a9`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
 		Size: 48.5 KB (48452 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16976,7 +16976,7 @@ $ docker pull phpmyadmin@sha256:df9cad7ccd6d48a74367912c2b3f117c1b5cee81032e4b5d
 ## `phpmyadmin:5.2.2-fpm`
 
 ```console
-$ docker pull phpmyadmin@sha256:2a6634d75cca40e5758dc2dfc56addd5ec53387179c076c4573aa0ea3992500a
+$ docker pull phpmyadmin@sha256:129319c3faf04a228bd4447cc54dbd86804132d30f846b3b1fa64065e49c742c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17195,19 +17195,19 @@ $ docker pull phpmyadmin@sha256:a28b1615164631e822f300a4101ae7596834efb75440e9d8
 ### `phpmyadmin:5.2.2-fpm` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:abfc0a31427069fd126360164bfb98a24011b6b56eb7887e8ba496bcf4623703
+$ docker pull phpmyadmin@sha256:6ab983bc77fa98a98aea542a2d1d1cb0db47e29c4025b456a02b7f3c83eea25c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.8 MB (164770577 bytes)**  
+-	Total Size: **164.8 MB (164765903 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a719de04fc8bad1860212f0d39d86ebf708c7da4aa653138a5fd7422f5cf2685`
+-	Image ID: `sha256:485723480fc33a30f3fdcc53e0e20c44b0636898f8a7548d8c783cc7b8a8197b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -17297,92 +17297,92 @@ CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3014e21b6e4396df02c7cc3c5f126fa29d531fa5a1ad0b40b80de6794ae2694`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
+	-	`sha256:50392f60ef98ab502e7ed416d506883257fe8ed57158995e7e77f0bb4d3317f7`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:858e0a56f6198eb0af5102ce28eda7b5a34384f5b54701b7346487229bff9e9c`  
-		Last Modified: Tue, 25 Feb 2025 02:51:20 GMT  
-		Size: 82.0 MB (81993202 bytes)  
+	-	`sha256:70faba6dfc75d37d904a2f4e790ed9afc8110c25721f14deb57e142ce509f203`  
+		Last Modified: Tue, 18 Mar 2025 01:17:34 GMT  
+		Size: 82.0 MB (81993797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c24b0f2499da71327f565769347ea1f63e9070dfa8385025f0465d80e603c361`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
-		Size: 225.0 B  
+	-	`sha256:2daffac9eca4d243722e527ddd815f9abe7f53272e743c7fd4b6c1177b0eb255`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:174fac8933fd96ad2b4d9895010a9ca8188774a0fc61d763fbf1e3c87172a5b1`  
-		Last Modified: Fri, 14 Mar 2025 00:17:47 GMT  
-		Size: 12.3 MB (12255703 bytes)  
+	-	`sha256:9f324d7149eb387d662a2056310738c5cb170034e50d1f391b983d5cd05d20d2`  
+		Last Modified: Tue, 18 Mar 2025 04:38:46 GMT  
+		Size: 12.3 MB (12255680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4587da7b68faab1496da9e291bb6c94baef8d06f3421d63afe1e030a34b954`  
-		Last Modified: Fri, 14 Mar 2025 00:17:45 GMT  
-		Size: 492.0 B  
+	-	`sha256:15152950ea6bc261fd1211b395697a3205ec9cc51f00522cabfd0b3921a39912`  
+		Last Modified: Tue, 18 Mar 2025 04:38:44 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61e787692425ce9c5b94a54a76d7be0dc8c9248fe49116c88affca601e87a140`  
-		Last Modified: Fri, 14 Mar 2025 01:21:45 GMT  
-		Size: 26.1 MB (26086910 bytes)  
+	-	`sha256:9acd0f09fc518aed97cd5c43838c2ab0de39f4bcbd7cd11932f398b874555451`  
+		Last Modified: Tue, 18 Mar 2025 04:46:07 GMT  
+		Size: 26.1 MB (26086755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbba49c677c0b55142ea8238fce0d47a9b81da4967a8c6dee28b45241cf84c96`  
-		Last Modified: Fri, 14 Mar 2025 01:21:44 GMT  
-		Size: 2.5 KB (2450 bytes)  
+	-	`sha256:a388f5c5cde4e2f6079f4aebe2afba6c87fa3d989635bb54f23c4e7fdc953557`  
+		Last Modified: Tue, 18 Mar 2025 04:46:06 GMT  
+		Size: 2.4 KB (2448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5b55b3f69c0c5b87bc560f356072b6fb7980dc02816addfd2411f76f80551fc`  
-		Last Modified: Fri, 14 Mar 2025 01:21:44 GMT  
-		Size: 247.0 B  
+	-	`sha256:609821ef7db392dd63e30a796602bff0cd7a3435017fef6b25364c9b836ab300`  
+		Last Modified: Tue, 18 Mar 2025 04:46:06 GMT  
+		Size: 245.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5aac5a740a4680921dbf093b1c0a3b64f4effb8de42c318dc89aa36b4b717819`  
-		Last Modified: Fri, 14 Mar 2025 01:21:45 GMT  
-		Size: 9.2 KB (9186 bytes)  
+	-	`sha256:90d0f19953173b9ce9c822ed73bee405e7a0d3ae969722137878ba3616f90c87`  
+		Last Modified: Tue, 18 Mar 2025 04:46:06 GMT  
+		Size: 9.2 KB (9184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fccaca664c25eaab081b8c2a418567a502fb5e92d5ada30a2af8b5f226540ee9`  
-		Last Modified: Fri, 14 Mar 2025 02:39:33 GMT  
-		Size: 5.3 MB (5270823 bytes)  
+	-	`sha256:ff0ae039ed8d301f881afec96826fdfb4c18fe400cbe63ef11d9be74231c1978`  
+		Last Modified: Tue, 18 Mar 2025 05:50:27 GMT  
+		Size: 5.3 MB (5270581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99eb0902825033c54b4b607979586c75a6925f82eaa41728b73d2b4e324145cf`  
-		Last Modified: Fri, 14 Mar 2025 02:39:33 GMT  
-		Size: 658.0 B  
+	-	`sha256:0e4d1b788e10dc14e110159bcfa9306dcd50046324eed15c56e83f9640a6cbbd`  
+		Last Modified: Tue, 18 Mar 2025 05:50:26 GMT  
+		Size: 656.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7747637304094cadfb9aa30c9a71dccfbba0fa0ef0698cc1631abc35a5e82ad4`  
-		Last Modified: Fri, 14 Mar 2025 02:39:34 GMT  
-		Size: 13.4 MB (13405997 bytes)  
+	-	`sha256:515efccd9db67ccb5f18b7e422c9938902f54026dd7d80ee8d661aebf7d94b8b`  
+		Last Modified: Tue, 18 Mar 2025 05:50:27 GMT  
+		Size: 13.4 MB (13405937 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:406f830691f563ac422d9e69a38be79951bb3425ce91b869ea298b5ec83c91bc`  
-		Last Modified: Fri, 14 Mar 2025 02:39:33 GMT  
-		Size: 2.1 KB (2139 bytes)  
+	-	`sha256:8efaf9fac050a55bfab3cdae4ff7243ec032e0cb277623f732e098ec49065183`  
+		Last Modified: Tue, 18 Mar 2025 05:50:27 GMT  
+		Size: 2.1 KB (2138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3571bda7a90b1011533fc08ce4393f2623eab29ab63528fc9032864869e832c9`  
-		Last Modified: Fri, 14 Mar 2025 02:39:34 GMT  
-		Size: 857.0 B  
+	-	`sha256:ab0e6d0032f73665534807540c64a47b8dc30df724243aaea14f17bb97d5a7f0`  
+		Last Modified: Tue, 18 Mar 2025 05:50:27 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8f04b025b806c791e62314b63421592b0404313cea4e4cd339968990c8f33bf`  
-		Last Modified: Fri, 14 Mar 2025 02:39:34 GMT  
-		Size: 800.0 B  
+	-	`sha256:04812be168e2360a0b021bacde0eaf64e35e41ec1428bd5cce208834eb7642c7`  
+		Last Modified: Tue, 18 Mar 2025 05:50:28 GMT  
+		Size: 801.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:5.2.2-fpm` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:5d7c8869f2a94fec8e829385682c86524164a2929638f24300cc5b516c210520
+$ docker pull phpmyadmin@sha256:361a0a65d4fdb1648957617d4e32b783696cf61d399ee1bfecf502514c51b17c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **43.5 KB (43481 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b92571c0200f77d774c3b82e5a910828a8d3e661d1333383202c647d792dde82`
+-	Image ID: `sha256:0ff11c719966bed2a5ea29d9320b4d962d4c886e90dcf5a7c3da06bb4c2f6e17`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:08e7a0b6cfe81653f734303ef50940eee32277c1a05bc5630c7bdd67ade9ce16`  
-		Last Modified: Fri, 14 Mar 2025 02:39:32 GMT  
+	-	`sha256:4cf881e852089d789ec2d7952836ea4ce8b68976940ff3957b81abae11f75068`  
+		Last Modified: Tue, 18 Mar 2025 05:50:26 GMT  
 		Size: 43.5 KB (43481 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18165,19 +18165,19 @@ $ docker pull phpmyadmin@sha256:50cc0936c5581d8d6ebd0061711db9481567021d9e64bf95
 ### `phpmyadmin:5.2.2-fpm` - linux; ppc64le
 
 ```console
-$ docker pull phpmyadmin@sha256:d64006b557991b8db51aac4e1f5c9fa54d8d90960a09cd1d5b4a023d5bd192b3
+$ docker pull phpmyadmin@sha256:5999e9fb984a110c4866d9bffcc5c40cf99b94f74164133e9b36da2d634174ce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **196.4 MB (196361690 bytes)**  
+-	Total Size: **196.4 MB (196358804 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:639f7228a84a6715a7336cf86a41a8758c737f41f26bedea31e01f3ccca75e2d`
+-	Image ID: `sha256:4a8323352ef01888e4a1096717ec846800c1415c16bee393008d96eaaf762c85`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -18267,92 +18267,92 @@ CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35bbbae4d2dc0350f7df1634e33daf64fe78cb672182650c700a26750b33b64c`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 225.0 B  
+	-	`sha256:b40c9e444f13d4c7a03580cf188ef06ad94ffc13189161777e9ed5cf824f8ea7`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e7f7bed916e76b3a3b176b4e6a5bcfe6e10e39a6c423be8fc3575115d7b1e06`  
-		Last Modified: Tue, 25 Feb 2025 02:59:28 GMT  
-		Size: 103.3 MB (103323545 bytes)  
+	-	`sha256:aef297c24191733a2fbe29ead5c53224c75c11b7ee0ba80b57b0b3898a33bbbf`  
+		Last Modified: Tue, 18 Mar 2025 03:15:07 GMT  
+		Size: 103.3 MB (103324904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d9943a0d5cef1bf22e1a6d5df4b38af8052474c28fe7d9188d33c9e0190742`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 226.0 B  
+	-	`sha256:69d707aca2b2791bdef48c24201e181e34f312580cea3313c4c8b8cdfa4a82c4`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b183a9e9a626652b70cd5c8539551c8cb640af571a1c9042e0132f037d4b647`  
-		Last Modified: Fri, 14 Mar 2025 00:29:55 GMT  
-		Size: 12.3 MB (12256822 bytes)  
+	-	`sha256:cf0a5624b2e36c98bdb392b48af22cb7e3bfb02714da1ccbadfed07c556150cf`  
+		Last Modified: Tue, 18 Mar 2025 03:50:09 GMT  
+		Size: 12.3 MB (12256831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e56b8480c0833bf885706daaa24ae51671535d736d1bd6502f4ec24bee98fdf`  
-		Last Modified: Fri, 14 Mar 2025 00:29:54 GMT  
-		Size: 491.0 B  
+	-	`sha256:005bdd9451d67cd64e36fba24fd6d35ad98376d9293a7a25bdc2eb4909da8751`  
+		Last Modified: Tue, 18 Mar 2025 03:50:08 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c88581c8d587c4893c5d0e4f3ec9f4da6276370c261bf429c722590c5a22c891`  
-		Last Modified: Fri, 14 Mar 2025 00:33:48 GMT  
-		Size: 28.7 MB (28651590 bytes)  
+	-	`sha256:390f3df2ca5d7bd9e205f841d0431f87fc9f24fc41a6384f2a5ea8d8ace40a5a`  
+		Last Modified: Tue, 18 Mar 2025 03:55:57 GMT  
+		Size: 28.7 MB (28651557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d060d61f8218819b5d303c6753fc9b191fdbb4217767776b6b827de24183cbe`  
-		Last Modified: Fri, 14 Mar 2025 00:33:46 GMT  
-		Size: 2.4 KB (2449 bytes)  
+	-	`sha256:0fe52ae83a28602decadc7fc38e73aa154e1b0d833620d03fec0e774682c2762`  
+		Last Modified: Tue, 18 Mar 2025 03:55:56 GMT  
+		Size: 2.4 KB (2446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af774f56e0b9582a37b1689788bc10d7be95ddf0f7e9f52f79edfba6c4224caa`  
-		Last Modified: Fri, 14 Mar 2025 00:33:47 GMT  
-		Size: 247.0 B  
+	-	`sha256:5fcf58a67b81f0aed612123edbc4f23f6d69bd744073ecc25b897eb09b0d4c0d`  
+		Last Modified: Tue, 18 Mar 2025 03:55:56 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab9017bee2d3c3c1b999a96f6729cee863c91f221ddcaec49b3087c6a6e07f43`  
-		Last Modified: Fri, 14 Mar 2025 00:33:47 GMT  
-		Size: 9.2 KB (9185 bytes)  
+	-	`sha256:2ae37236611277960b32520a2bd42d40619d7edba08d96ca2fd0421fe75a860f`  
+		Last Modified: Tue, 18 Mar 2025 03:55:56 GMT  
+		Size: 9.2 KB (9183 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3020cce3b8c4d7bea32ebd35de1147fbb8111b77652c81bb728485a25d1c7a8`  
-		Last Modified: Fri, 14 Mar 2025 02:43:16 GMT  
-		Size: 6.7 MB (6654135 bytes)  
+	-	`sha256:7940a9b3ec1ecb5299aed878bd6232a9ef758abe570fc20376b722cd736fb5bf`  
+		Last Modified: Tue, 18 Mar 2025 05:39:36 GMT  
+		Size: 6.7 MB (6654407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:111dfad3a157a7b5a9c16dc41da057219975d59b6ba4b4dce8534bdcaa0fd12d`  
-		Last Modified: Fri, 14 Mar 2025 02:43:15 GMT  
+	-	`sha256:bfec4ab8b57e36409b064addd7b993b5494d90a09e4a2b217ee0c4b6d229ecde`  
+		Last Modified: Tue, 18 Mar 2025 05:39:35 GMT  
 		Size: 656.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ecb03b2eed6bad352a88781eff7adc5f63cc5f0be2b9ac267416c0d0924487df`  
-		Last Modified: Fri, 14 Mar 2025 02:43:16 GMT  
-		Size: 13.4 MB (13405977 bytes)  
+	-	`sha256:ec2c321ca6ee3592203e4853280ec987f416cb8634aec237b75255f7c0f82a4c`  
+		Last Modified: Tue, 18 Mar 2025 05:39:36 GMT  
+		Size: 13.4 MB (13405998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ae77ea22e03e933a7a4af6b449296a297e68c7e43cee4b32ebf107f3e60eeb9e`  
-		Last Modified: Fri, 14 Mar 2025 02:43:15 GMT  
+	-	`sha256:a516d72dd14d1676f1bd51a88e2be2850798ddf02b6569875d42686c93c2ee9c`  
+		Last Modified: Tue, 18 Mar 2025 05:39:36 GMT  
 		Size: 2.1 KB (2138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbe488a687da133cc493a7ad5517214aeb97dffb625c113babbf135c2b80d5da`  
-		Last Modified: Fri, 14 Mar 2025 02:43:16 GMT  
+	-	`sha256:ff9a8b858ee232b75de1a521ad03ced6d56520cd0af1ed81a13a387f41e02923`  
+		Last Modified: Tue, 18 Mar 2025 05:39:36 GMT  
 		Size: 857.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2fecaed2d18fd242dd3d23ab22ef744e760485c86e04db5e18fc99f337b2f01`  
-		Last Modified: Fri, 14 Mar 2025 02:43:16 GMT  
-		Size: 801.0 B  
+	-	`sha256:c98a95cbdcfd23acb6f7284d168484a86424c2b2939e71f30fe3fb8ac6906962`  
+		Last Modified: Tue, 18 Mar 2025 05:39:37 GMT  
+		Size: 800.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:5.2.2-fpm` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:79de88459e8e351a904740c0dd429213be0e251e58e8da244dc6aaacd47e3db8
+$ docker pull phpmyadmin@sha256:9c5474a7301dea2f166040eb1d3f92c7a9dccbb7f2994d80a5649b80f1e86736
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **43.4 KB (43434 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93bdcb065b20a412f195c7599a91262b72cf962997bb29f8cab74bd7d33a3116`
+-	Image ID: `sha256:8bd1894b048e64293b3825d480344ec9054125d6095468db1f54637e689179be`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1d6ea2fb2ca442b84a3892aadb88c2fbe28d5b8850447e6543bd7b22ac2fda41`  
-		Last Modified: Fri, 14 Mar 2025 02:43:15 GMT  
+	-	`sha256:c1595e9f0bc88abfb6a8414099a371e5f3c3388db0faeface6b805760ce45fcc`  
+		Last Modified: Tue, 18 Mar 2025 05:39:35 GMT  
 		Size: 43.4 KB (43434 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20194,7 +20194,7 @@ $ docker pull phpmyadmin@sha256:575e50dcd91260c5a5e466bd7f19aa96a050d86358a1d9bb
 ## `phpmyadmin:apache`
 
 ```console
-$ docker pull phpmyadmin@sha256:76b7cc1382acc52c6338395fbd1e94c0b2a9830a68f3fd6ce12d612db99fd338
+$ docker pull phpmyadmin@sha256:847e2c011d052e1980915605af10f81137d749085394f6c7bb0319b5040195af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20435,19 +20435,19 @@ $ docker pull phpmyadmin@sha256:51dd94e85f46f9219a3c066d5eb6e19918d4924b554bfc56
 ### `phpmyadmin:apache` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:a7266581bc9dbdabe275e577d0672ce83f86425d4e4e0eec0f6976b9af4dc9b9
+$ docker pull phpmyadmin@sha256:ae4e07a5622c85b861cdfcc8bb9cc3f6e0a60a6e9837e78732a868174c707ebc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.4 MB (168393269 bytes)**  
+-	Total Size: **168.4 MB (168388913 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6dd6757fd5f0aa18f7c6ff52b8481681efa223a936fdfd22b55bddbc3e815400`
+-	Image ID: `sha256:7a1b8e8d67fb6b24df1e5b78ff65b9f451b2a91723335c305a0099c0adda267a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -20547,105 +20547,105 @@ CMD ["apache2-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3014e21b6e4396df02c7cc3c5f126fa29d531fa5a1ad0b40b80de6794ae2694`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
+	-	`sha256:50392f60ef98ab502e7ed416d506883257fe8ed57158995e7e77f0bb4d3317f7`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:858e0a56f6198eb0af5102ce28eda7b5a34384f5b54701b7346487229bff9e9c`  
-		Last Modified: Tue, 25 Feb 2025 02:51:20 GMT  
-		Size: 82.0 MB (81993202 bytes)  
+	-	`sha256:70faba6dfc75d37d904a2f4e790ed9afc8110c25721f14deb57e142ce509f203`  
+		Last Modified: Tue, 18 Mar 2025 01:17:34 GMT  
+		Size: 82.0 MB (81993797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c24b0f2499da71327f565769347ea1f63e9070dfa8385025f0465d80e603c361`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
-		Size: 225.0 B  
+	-	`sha256:2daffac9eca4d243722e527ddd815f9abe7f53272e743c7fd4b6c1177b0eb255`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e21a0010d00b089e3a34b60fddcac813cd3a1211368d868b76aa3c52acf85f39`  
-		Last Modified: Tue, 25 Feb 2025 02:55:46 GMT  
-		Size: 19.4 MB (19419190 bytes)  
+	-	`sha256:5e40bc50036fecf94b15523ae01df144fd25cc29085c9b900167682966aea345`  
+		Last Modified: Tue, 18 Mar 2025 04:03:50 GMT  
+		Size: 19.4 MB (19419254 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:836efc0ee062aca6556d741fb3e390ca6b509fc639049bef1cfc24e29616d566`  
-		Last Modified: Tue, 25 Feb 2025 02:55:45 GMT  
-		Size: 434.0 B  
+	-	`sha256:fb9ef2e54bf4f16636556f311cb5285d5b86bac864da9ee836197f377a6cb776`  
+		Last Modified: Tue, 18 Mar 2025 04:03:49 GMT  
+		Size: 432.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bb27253beef75bf260f9071d9fb96a1614335f2b1af270afddf706a8142cb7b`  
-		Last Modified: Tue, 25 Feb 2025 02:55:45 GMT  
-		Size: 483.0 B  
+	-	`sha256:77ad3f9cc1ac78b8fb303beaac1f3eedbe45e57ac5c8760279395201640c6ddb`  
+		Last Modified: Tue, 18 Mar 2025 04:03:50 GMT  
+		Size: 485.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:011930897f0e94f8908d35816b869c1916d4b7c5e69b013a14bd68af54513b64`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
-		Size: 12.3 MB (12274462 bytes)  
+	-	`sha256:28ee6f2ea656a53ed2ef0ce36223f3ff3f1ad9649216635e7039a7f7ba11e80a`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
+		Size: 12.3 MB (12274458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9587ba2e3349206ea532f4464028c241e4ad1121298357feaccd286fca85d8fd`  
-		Last Modified: Fri, 14 Mar 2025 01:16:17 GMT  
-		Size: 490.0 B  
+	-	`sha256:439c9d2c84cacda41206e1f1363eed0af6a1dd4a67bb23046d39682d03f256c0`  
+		Last Modified: Tue, 18 Mar 2025 04:53:03 GMT  
+		Size: 487.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a585b6944c1433eff35267ab704ba7545360430398014d7bb676ae940a46c5f3`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
-		Size: 10.4 MB (10406221 bytes)  
+	-	`sha256:eed0cbcb35c8ba1da95d1667e1211071e3c1bdbeccbc425a4bbaa1d440a3fd2c`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
+		Size: 10.4 MB (10406179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:411a0c4868fccc79fa986919a6a2d409dc1b8ba5c006b941e9492a700c79ffcd`  
-		Last Modified: Fri, 14 Mar 2025 01:16:16 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:19914ee66d9997b46e85813af04cb64d1122bedef3ce7ad34b0cf1641704e65e`  
+		Last Modified: Tue, 18 Mar 2025 04:53:03 GMT  
+		Size: 2.5 KB (2454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10c8577ccb7b4d01bfe8006afd0838fc8d07519bd88b0f59867e8b3384427b27`  
-		Last Modified: Fri, 14 Mar 2025 01:16:17 GMT  
+	-	`sha256:bf491b90e0c842e4cf13496bc58a29ccd0ee3a966f66503314da4e72d0302b7c`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8b7bacb438358389faa51d6b6f86912db59267c3bfff4f8d02c547b4970ac24`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
+	-	`sha256:375f9c94559079ddf7990747ea43a04907652eeca291bfca6685d6e984619193`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
 		Size: 891.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97c2987bd3f28ff7d9512b71fde3148c2bb558f3a01fc8214b24ce3f1dfd1aa2`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
-		Size: 5.1 MB (5143507 bytes)  
+	-	`sha256:deb87792c15e99616fd8200022c1c1a857fa712710c9b2e3ba524864a8487dbd`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 5.1 MB (5143344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e31c41319e8dc032e6caa60141c1b885815e0be2d4a828e5e425971fc4ad8f21`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 654.0 B  
+	-	`sha256:912ea3ee3b28842eb5bf8b0aea06f5a2988e4a3b45f8d107a9b19ea91c6b3067`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 655.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd033e90e48feafab441b30e242ad1cd93cb8f489c69eaa4e34eced709310795`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
-		Size: 13.4 MB (13405978 bytes)  
+	-	`sha256:dcdbd4b76d0006fcd08e5e0380eb43cd30470a466ad3d88632d86d6d2a6437c3`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 13.4 MB (13405949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5f352e2e04377f91fa1c1ccd750182370df31645eba06a04949f5353dc6a944`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 2.1 KB (2138 bytes)  
+	-	`sha256:a51bb42a4f3c082f6d79b2c4b959f11145d4632d11a23be39d4dfde98b5ab739`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 2.1 KB (2140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:925a0c70ea15e12f1a853755f05e378d309a08277601f59b5cb695f61b01dc8d`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
+	-	`sha256:dd1e3727484de159870ab9661b8f6dcc052e1f150d93f9d92f3d2ef5097c3c07`  
+		Last Modified: Tue, 18 Mar 2025 05:49:18 GMT  
 		Size: 858.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5360158cfbceb913f62089e4ec10563025c0a7349ba0d531036918f8d537b86`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
+	-	`sha256:ccf71ea361b3587c8fa13e4fe523a46c692fd6464a3fb5998468aa32caace46b`  
+		Last Modified: Tue, 18 Mar 2025 05:49:18 GMT  
 		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:apache` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:eb503513bf647d75baf9d318f2b66598fdbcce3f6b9cfecd954f91bf511e01db
+$ docker pull phpmyadmin@sha256:542f3f5a1c0e8bf593780750f489847ecc821c7decc84304980b4d4773d506c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.5 KB (48505 bytes)**  
+-	Total Size: **48.5 KB (48507 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57eb9460a8ed393307d81f7618dda392706da5ddfff56bf6cff2ae6d6d0bb0c4`
+-	Image ID: `sha256:a0ec89b2977e08a827707cd4cb2bf1555c8138b8cd33eee773638eefbbb80aa2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fa00e0561d8f2b1dc12797f587e9d0896d7629ff5f46f0f5b8495a791972932c`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 48.5 KB (48505 bytes)  
+	-	`sha256:f28d2a55674640471e77da229ddb2dca0e4f582ff69875f87c779d90b49f674a`  
+		Last Modified: Tue, 18 Mar 2025 05:49:16 GMT  
+		Size: 48.5 KB (48507 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `phpmyadmin:apache` - linux; arm variant v7
@@ -21515,19 +21515,19 @@ $ docker pull phpmyadmin@sha256:c6b6790ddaf7ead8e263367bea3f0f972a2e35141d3580e1
 ### `phpmyadmin:apache` - linux; ppc64le
 
 ```console
-$ docker pull phpmyadmin@sha256:6a4e6e8df1d30992318072f705a560781cd7f490fdeea039b5d601b75b961561
+$ docker pull phpmyadmin@sha256:aff247876a35e802341d95014336d6646b12e461562c2d1ab0794573659d0b87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.7 MB (200679544 bytes)**  
+-	Total Size: **200.7 MB (200676406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68d30ed1ccd6cb211ab8597d398c64a0e4ec0c9838e61ef009a35c43a91a12d1`
+-	Image ID: `sha256:bfe5cc958634c6dde17f37d530ee20ab80428fddb6b7c3ce46ab90ffc4fadbb9`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -21627,104 +21627,104 @@ CMD ["apache2-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35bbbae4d2dc0350f7df1634e33daf64fe78cb672182650c700a26750b33b64c`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 225.0 B  
+	-	`sha256:b40c9e444f13d4c7a03580cf188ef06ad94ffc13189161777e9ed5cf824f8ea7`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e7f7bed916e76b3a3b176b4e6a5bcfe6e10e39a6c423be8fc3575115d7b1e06`  
-		Last Modified: Tue, 25 Feb 2025 02:59:28 GMT  
-		Size: 103.3 MB (103323545 bytes)  
+	-	`sha256:aef297c24191733a2fbe29ead5c53224c75c11b7ee0ba80b57b0b3898a33bbbf`  
+		Last Modified: Tue, 18 Mar 2025 03:15:07 GMT  
+		Size: 103.3 MB (103324904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d9943a0d5cef1bf22e1a6d5df4b38af8052474c28fe7d9188d33c9e0190742`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 226.0 B  
+	-	`sha256:69d707aca2b2791bdef48c24201e181e34f312580cea3313c4c8b8cdfa4a82c4`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f5eba5668f315d2ef7f70338fc89daecbca191bf9b5b6622280439ff5ceb4a7`  
-		Last Modified: Tue, 25 Feb 2025 03:04:11 GMT  
-		Size: 21.3 MB (21308442 bytes)  
+	-	`sha256:904971bf946949bd849eb4b667ce16daba036ec4ae5066a61816ed4b1abe5854`  
+		Last Modified: Tue, 18 Mar 2025 03:37:33 GMT  
+		Size: 21.3 MB (21308422 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8bec4fde36a5fc026717bc0e1c4a8f85c6397c11d730b4d345fdb0b5014cc45`  
-		Last Modified: Tue, 25 Feb 2025 03:04:06 GMT  
+	-	`sha256:04920e64d4709add88a0a3602fa557015f184d1476acb20183c24e2c709eecc9`  
+		Last Modified: Tue, 18 Mar 2025 03:37:32 GMT  
 		Size: 435.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca66cb544073b521bd3bcd518135c4cf977a5939323c5191473a1b8a2a09cd05`  
-		Last Modified: Tue, 25 Feb 2025 03:04:06 GMT  
-		Size: 489.0 B  
+	-	`sha256:65238378d6b0ff511c6a27c9bbac5e81b95662e894866715edfdea0404819c82`  
+		Last Modified: Tue, 18 Mar 2025 03:37:32 GMT  
+		Size: 490.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4250556fa8417334da5be4ff65e43885cb11a4aefa7d255ddcedadfb60e1e4b`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 12.3 MB (12275866 bytes)  
+	-	`sha256:2333a1edb32516e5e07616b5bf60b9c51eab28c9f7222124b11efd092bb70fa4`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 12.3 MB (12275862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fc1dc2ea55f95178ec13fe2b851029d78f5e0d2f3a6c8390fe1a234a9f2e9cf`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 491.0 B  
+	-	`sha256:8cd4c85564347a400a7d40062f14524c610df614356818d7923e4f4576913fc8`  
+		Last Modified: Tue, 18 Mar 2025 04:02:29 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7afa4c68853b68dabf1bd8e64549df9d94bcf4c95ef043f559e0eefabff7ff8f`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 11.8 MB (11834942 bytes)  
+	-	`sha256:c16f08b0e4b59bd52114ff166b918c0003930ebf44501f8c07892345a7c9dba8`  
+		Last Modified: Tue, 18 Mar 2025 04:02:31 GMT  
+		Size: 11.8 MB (11834908 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a58ec0c7a28b79ecb2761aea3a7ba1c7e11a569cdefcbc08ed0bf5bc5fb74af`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 2.5 KB (2457 bytes)  
+	-	`sha256:3f3257acf4109928d905c7b5a959f364623910b44f44302a13a64660fbf3199b`  
+		Last Modified: Tue, 18 Mar 2025 04:02:29 GMT  
+		Size: 2.5 KB (2453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4920622eb8cb7077f99589eb65bebd3e0264d1474c6bc0a48e5c79e7629376`  
-		Last Modified: Fri, 14 Mar 2025 01:15:17 GMT  
-		Size: 249.0 B  
+	-	`sha256:cfaa4ed3637b246e489af22d086c861274049e02b0850ba84d4fa9601d4986f3`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8370a02df23f733617d749f69df800919185839d44c681f4c9ec95e9b5531d10`  
-		Last Modified: Fri, 14 Mar 2025 01:15:17 GMT  
-		Size: 891.0 B  
+	-	`sha256:d38c04a142ef9c061e66f15af950f1d095b9e309d8fbb53f8ab0600189d73894`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 890.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d9c47a21dbfdcf245c9daf36cb61186207f7f618a051ba6fcaff10a50a6e967`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 6.5 MB (6468297 bytes)  
+	-	`sha256:c3ea8f820564f878adb3531fb433425f13deaf7972d81574161bc6568e3fd705`  
+		Last Modified: Tue, 18 Mar 2025 05:37:32 GMT  
+		Size: 6.5 MB (6468404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2d2d1cd1c6305f6251498ef70ac82e232089392568a52cbd6bafa4a75c3f272`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
-		Size: 654.0 B  
+	-	`sha256:f490553e05bc8aaa6f2e49e90144ac86a32437543c474af4cf8c1eed99d7af53`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
+		Size: 655.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49f9475bb8cb41837630e54c620dfe5eca2babaf576a4359990b7ef263bd9586`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 13.4 MB (13406042 bytes)  
+	-	`sha256:38419e268acf39dc1c0a2841380aa51b65021c9f928ff8c675ec6443c8357773`  
+		Last Modified: Tue, 18 Mar 2025 05:37:31 GMT  
+		Size: 13.4 MB (13406017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da5b44747e40ef58c629e28def2d797046fad1e2fdf6dea3e99d0232bfb86737`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
-		Size: 2.1 KB (2141 bytes)  
+	-	`sha256:6aba9cdc5edd7ca97da7c577af0779f3ba0993900405f059cccdcafa162b5a30`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
+		Size: 2.1 KB (2138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6445849ec79254bddeecacf7b911e961e2a1f81f4e5042e2a3869bd9a88b7c1f`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 859.0 B  
+	-	`sha256:677ea9ec131983d3b21280894ca73e4ad36d3d169ba910e92bfbbdcae74c0d02`  
+		Last Modified: Tue, 18 Mar 2025 05:37:31 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb1b44c9e7612d5d5dfcb863723342bf1bfbb27f4acf37e582e407121f68ce30`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
+	-	`sha256:7a67fdc2d6f7dca51e62ffb2d4127c02a12c293eef3af1b1428532b58d6ace0d`  
+		Last Modified: Tue, 18 Mar 2025 05:37:32 GMT  
 		Size: 947.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:apache` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:7281ee8a20e8ca18fa01881d897273222f3b7b3f76c1b991db35d07c99cd2329
+$ docker pull phpmyadmin@sha256:e9d7f560ee56019dcf70047c936abb3224e80f8b3a717991fd2a3b87c5012a01
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **48.5 KB (48452 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5d873c0252bd552a0ae78f6ffcf0ce5c2a39ae66980c86a17e16c7971b446d6`
+-	Image ID: `sha256:f75ebb293888d4bb7d0f2e06655b46184bde6e7997844e229165a3795754cfb5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c6e49aeea2e48a267b7a2b39398a53c780e1160b75557fc8418c3ebbe9fd46b4`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
+	-	`sha256:8f7964a788b8920a1ee103da8f82cd4257455d663dc9723b005358c74be864a9`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
 		Size: 48.5 KB (48452 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21947,7 +21947,7 @@ $ docker pull phpmyadmin@sha256:df9cad7ccd6d48a74367912c2b3f117c1b5cee81032e4b5d
 ## `phpmyadmin:fpm`
 
 ```console
-$ docker pull phpmyadmin@sha256:2a6634d75cca40e5758dc2dfc56addd5ec53387179c076c4573aa0ea3992500a
+$ docker pull phpmyadmin@sha256:129319c3faf04a228bd4447cc54dbd86804132d30f846b3b1fa64065e49c742c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -22166,19 +22166,19 @@ $ docker pull phpmyadmin@sha256:a28b1615164631e822f300a4101ae7596834efb75440e9d8
 ### `phpmyadmin:fpm` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:abfc0a31427069fd126360164bfb98a24011b6b56eb7887e8ba496bcf4623703
+$ docker pull phpmyadmin@sha256:6ab983bc77fa98a98aea542a2d1d1cb0db47e29c4025b456a02b7f3c83eea25c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **164.8 MB (164770577 bytes)**  
+-	Total Size: **164.8 MB (164765903 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:a719de04fc8bad1860212f0d39d86ebf708c7da4aa653138a5fd7422f5cf2685`
+-	Image ID: `sha256:485723480fc33a30f3fdcc53e0e20c44b0636898f8a7548d8c783cc7b8a8197b`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -22268,92 +22268,92 @@ CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3014e21b6e4396df02c7cc3c5f126fa29d531fa5a1ad0b40b80de6794ae2694`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
+	-	`sha256:50392f60ef98ab502e7ed416d506883257fe8ed57158995e7e77f0bb4d3317f7`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:858e0a56f6198eb0af5102ce28eda7b5a34384f5b54701b7346487229bff9e9c`  
-		Last Modified: Tue, 25 Feb 2025 02:51:20 GMT  
-		Size: 82.0 MB (81993202 bytes)  
+	-	`sha256:70faba6dfc75d37d904a2f4e790ed9afc8110c25721f14deb57e142ce509f203`  
+		Last Modified: Tue, 18 Mar 2025 01:17:34 GMT  
+		Size: 82.0 MB (81993797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c24b0f2499da71327f565769347ea1f63e9070dfa8385025f0465d80e603c361`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
-		Size: 225.0 B  
+	-	`sha256:2daffac9eca4d243722e527ddd815f9abe7f53272e743c7fd4b6c1177b0eb255`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:174fac8933fd96ad2b4d9895010a9ca8188774a0fc61d763fbf1e3c87172a5b1`  
-		Last Modified: Fri, 14 Mar 2025 00:17:47 GMT  
-		Size: 12.3 MB (12255703 bytes)  
+	-	`sha256:9f324d7149eb387d662a2056310738c5cb170034e50d1f391b983d5cd05d20d2`  
+		Last Modified: Tue, 18 Mar 2025 04:38:46 GMT  
+		Size: 12.3 MB (12255680 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4587da7b68faab1496da9e291bb6c94baef8d06f3421d63afe1e030a34b954`  
-		Last Modified: Fri, 14 Mar 2025 00:17:45 GMT  
-		Size: 492.0 B  
+	-	`sha256:15152950ea6bc261fd1211b395697a3205ec9cc51f00522cabfd0b3921a39912`  
+		Last Modified: Tue, 18 Mar 2025 04:38:44 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:61e787692425ce9c5b94a54a76d7be0dc8c9248fe49116c88affca601e87a140`  
-		Last Modified: Fri, 14 Mar 2025 01:21:45 GMT  
-		Size: 26.1 MB (26086910 bytes)  
+	-	`sha256:9acd0f09fc518aed97cd5c43838c2ab0de39f4bcbd7cd11932f398b874555451`  
+		Last Modified: Tue, 18 Mar 2025 04:46:07 GMT  
+		Size: 26.1 MB (26086755 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbba49c677c0b55142ea8238fce0d47a9b81da4967a8c6dee28b45241cf84c96`  
-		Last Modified: Fri, 14 Mar 2025 01:21:44 GMT  
-		Size: 2.5 KB (2450 bytes)  
+	-	`sha256:a388f5c5cde4e2f6079f4aebe2afba6c87fa3d989635bb54f23c4e7fdc953557`  
+		Last Modified: Tue, 18 Mar 2025 04:46:06 GMT  
+		Size: 2.4 KB (2448 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5b55b3f69c0c5b87bc560f356072b6fb7980dc02816addfd2411f76f80551fc`  
-		Last Modified: Fri, 14 Mar 2025 01:21:44 GMT  
-		Size: 247.0 B  
+	-	`sha256:609821ef7db392dd63e30a796602bff0cd7a3435017fef6b25364c9b836ab300`  
+		Last Modified: Tue, 18 Mar 2025 04:46:06 GMT  
+		Size: 245.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5aac5a740a4680921dbf093b1c0a3b64f4effb8de42c318dc89aa36b4b717819`  
-		Last Modified: Fri, 14 Mar 2025 01:21:45 GMT  
-		Size: 9.2 KB (9186 bytes)  
+	-	`sha256:90d0f19953173b9ce9c822ed73bee405e7a0d3ae969722137878ba3616f90c87`  
+		Last Modified: Tue, 18 Mar 2025 04:46:06 GMT  
+		Size: 9.2 KB (9184 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fccaca664c25eaab081b8c2a418567a502fb5e92d5ada30a2af8b5f226540ee9`  
-		Last Modified: Fri, 14 Mar 2025 02:39:33 GMT  
-		Size: 5.3 MB (5270823 bytes)  
+	-	`sha256:ff0ae039ed8d301f881afec96826fdfb4c18fe400cbe63ef11d9be74231c1978`  
+		Last Modified: Tue, 18 Mar 2025 05:50:27 GMT  
+		Size: 5.3 MB (5270581 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:99eb0902825033c54b4b607979586c75a6925f82eaa41728b73d2b4e324145cf`  
-		Last Modified: Fri, 14 Mar 2025 02:39:33 GMT  
-		Size: 658.0 B  
+	-	`sha256:0e4d1b788e10dc14e110159bcfa9306dcd50046324eed15c56e83f9640a6cbbd`  
+		Last Modified: Tue, 18 Mar 2025 05:50:26 GMT  
+		Size: 656.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7747637304094cadfb9aa30c9a71dccfbba0fa0ef0698cc1631abc35a5e82ad4`  
-		Last Modified: Fri, 14 Mar 2025 02:39:34 GMT  
-		Size: 13.4 MB (13405997 bytes)  
+	-	`sha256:515efccd9db67ccb5f18b7e422c9938902f54026dd7d80ee8d661aebf7d94b8b`  
+		Last Modified: Tue, 18 Mar 2025 05:50:27 GMT  
+		Size: 13.4 MB (13405937 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:406f830691f563ac422d9e69a38be79951bb3425ce91b869ea298b5ec83c91bc`  
-		Last Modified: Fri, 14 Mar 2025 02:39:33 GMT  
-		Size: 2.1 KB (2139 bytes)  
+	-	`sha256:8efaf9fac050a55bfab3cdae4ff7243ec032e0cb277623f732e098ec49065183`  
+		Last Modified: Tue, 18 Mar 2025 05:50:27 GMT  
+		Size: 2.1 KB (2138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3571bda7a90b1011533fc08ce4393f2623eab29ab63528fc9032864869e832c9`  
-		Last Modified: Fri, 14 Mar 2025 02:39:34 GMT  
-		Size: 857.0 B  
+	-	`sha256:ab0e6d0032f73665534807540c64a47b8dc30df724243aaea14f17bb97d5a7f0`  
+		Last Modified: Tue, 18 Mar 2025 05:50:27 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a8f04b025b806c791e62314b63421592b0404313cea4e4cd339968990c8f33bf`  
-		Last Modified: Fri, 14 Mar 2025 02:39:34 GMT  
-		Size: 800.0 B  
+	-	`sha256:04812be168e2360a0b021bacde0eaf64e35e41ec1428bd5cce208834eb7642c7`  
+		Last Modified: Tue, 18 Mar 2025 05:50:28 GMT  
+		Size: 801.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:fpm` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:5d7c8869f2a94fec8e829385682c86524164a2929638f24300cc5b516c210520
+$ docker pull phpmyadmin@sha256:361a0a65d4fdb1648957617d4e32b783696cf61d399ee1bfecf502514c51b17c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **43.5 KB (43481 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:b92571c0200f77d774c3b82e5a910828a8d3e661d1333383202c647d792dde82`
+-	Image ID: `sha256:0ff11c719966bed2a5ea29d9320b4d962d4c886e90dcf5a7c3da06bb4c2f6e17`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:08e7a0b6cfe81653f734303ef50940eee32277c1a05bc5630c7bdd67ade9ce16`  
-		Last Modified: Fri, 14 Mar 2025 02:39:32 GMT  
+	-	`sha256:4cf881e852089d789ec2d7952836ea4ce8b68976940ff3957b81abae11f75068`  
+		Last Modified: Tue, 18 Mar 2025 05:50:26 GMT  
 		Size: 43.5 KB (43481 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -23136,19 +23136,19 @@ $ docker pull phpmyadmin@sha256:50cc0936c5581d8d6ebd0061711db9481567021d9e64bf95
 ### `phpmyadmin:fpm` - linux; ppc64le
 
 ```console
-$ docker pull phpmyadmin@sha256:d64006b557991b8db51aac4e1f5c9fa54d8d90960a09cd1d5b4a023d5bd192b3
+$ docker pull phpmyadmin@sha256:5999e9fb984a110c4866d9bffcc5c40cf99b94f74164133e9b36da2d634174ce
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **196.4 MB (196361690 bytes)**  
+-	Total Size: **196.4 MB (196358804 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:639f7228a84a6715a7336cf86a41a8758c737f41f26bedea31e01f3ccca75e2d`
+-	Image ID: `sha256:4a8323352ef01888e4a1096717ec846800c1415c16bee393008d96eaaf762c85`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["php-fpm"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -23238,92 +23238,92 @@ CMD ["php-fpm"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35bbbae4d2dc0350f7df1634e33daf64fe78cb672182650c700a26750b33b64c`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 225.0 B  
+	-	`sha256:b40c9e444f13d4c7a03580cf188ef06ad94ffc13189161777e9ed5cf824f8ea7`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e7f7bed916e76b3a3b176b4e6a5bcfe6e10e39a6c423be8fc3575115d7b1e06`  
-		Last Modified: Tue, 25 Feb 2025 02:59:28 GMT  
-		Size: 103.3 MB (103323545 bytes)  
+	-	`sha256:aef297c24191733a2fbe29ead5c53224c75c11b7ee0ba80b57b0b3898a33bbbf`  
+		Last Modified: Tue, 18 Mar 2025 03:15:07 GMT  
+		Size: 103.3 MB (103324904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d9943a0d5cef1bf22e1a6d5df4b38af8052474c28fe7d9188d33c9e0190742`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 226.0 B  
+	-	`sha256:69d707aca2b2791bdef48c24201e181e34f312580cea3313c4c8b8cdfa4a82c4`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0b183a9e9a626652b70cd5c8539551c8cb640af571a1c9042e0132f037d4b647`  
-		Last Modified: Fri, 14 Mar 2025 00:29:55 GMT  
-		Size: 12.3 MB (12256822 bytes)  
+	-	`sha256:cf0a5624b2e36c98bdb392b48af22cb7e3bfb02714da1ccbadfed07c556150cf`  
+		Last Modified: Tue, 18 Mar 2025 03:50:09 GMT  
+		Size: 12.3 MB (12256831 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7e56b8480c0833bf885706daaa24ae51671535d736d1bd6502f4ec24bee98fdf`  
-		Last Modified: Fri, 14 Mar 2025 00:29:54 GMT  
-		Size: 491.0 B  
+	-	`sha256:005bdd9451d67cd64e36fba24fd6d35ad98376d9293a7a25bdc2eb4909da8751`  
+		Last Modified: Tue, 18 Mar 2025 03:50:08 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c88581c8d587c4893c5d0e4f3ec9f4da6276370c261bf429c722590c5a22c891`  
-		Last Modified: Fri, 14 Mar 2025 00:33:48 GMT  
-		Size: 28.7 MB (28651590 bytes)  
+	-	`sha256:390f3df2ca5d7bd9e205f841d0431f87fc9f24fc41a6384f2a5ea8d8ace40a5a`  
+		Last Modified: Tue, 18 Mar 2025 03:55:57 GMT  
+		Size: 28.7 MB (28651557 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6d060d61f8218819b5d303c6753fc9b191fdbb4217767776b6b827de24183cbe`  
-		Last Modified: Fri, 14 Mar 2025 00:33:46 GMT  
-		Size: 2.4 KB (2449 bytes)  
+	-	`sha256:0fe52ae83a28602decadc7fc38e73aa154e1b0d833620d03fec0e774682c2762`  
+		Last Modified: Tue, 18 Mar 2025 03:55:56 GMT  
+		Size: 2.4 KB (2446 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:af774f56e0b9582a37b1689788bc10d7be95ddf0f7e9f52f79edfba6c4224caa`  
-		Last Modified: Fri, 14 Mar 2025 00:33:47 GMT  
-		Size: 247.0 B  
+	-	`sha256:5fcf58a67b81f0aed612123edbc4f23f6d69bd744073ecc25b897eb09b0d4c0d`  
+		Last Modified: Tue, 18 Mar 2025 03:55:56 GMT  
+		Size: 248.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ab9017bee2d3c3c1b999a96f6729cee863c91f221ddcaec49b3087c6a6e07f43`  
-		Last Modified: Fri, 14 Mar 2025 00:33:47 GMT  
-		Size: 9.2 KB (9185 bytes)  
+	-	`sha256:2ae37236611277960b32520a2bd42d40619d7edba08d96ca2fd0421fe75a860f`  
+		Last Modified: Tue, 18 Mar 2025 03:55:56 GMT  
+		Size: 9.2 KB (9183 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c3020cce3b8c4d7bea32ebd35de1147fbb8111b77652c81bb728485a25d1c7a8`  
-		Last Modified: Fri, 14 Mar 2025 02:43:16 GMT  
-		Size: 6.7 MB (6654135 bytes)  
+	-	`sha256:7940a9b3ec1ecb5299aed878bd6232a9ef758abe570fc20376b722cd736fb5bf`  
+		Last Modified: Tue, 18 Mar 2025 05:39:36 GMT  
+		Size: 6.7 MB (6654407 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:111dfad3a157a7b5a9c16dc41da057219975d59b6ba4b4dce8534bdcaa0fd12d`  
-		Last Modified: Fri, 14 Mar 2025 02:43:15 GMT  
+	-	`sha256:bfec4ab8b57e36409b064addd7b993b5494d90a09e4a2b217ee0c4b6d229ecde`  
+		Last Modified: Tue, 18 Mar 2025 05:39:35 GMT  
 		Size: 656.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ecb03b2eed6bad352a88781eff7adc5f63cc5f0be2b9ac267416c0d0924487df`  
-		Last Modified: Fri, 14 Mar 2025 02:43:16 GMT  
-		Size: 13.4 MB (13405977 bytes)  
+	-	`sha256:ec2c321ca6ee3592203e4853280ec987f416cb8634aec237b75255f7c0f82a4c`  
+		Last Modified: Tue, 18 Mar 2025 05:39:36 GMT  
+		Size: 13.4 MB (13405998 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ae77ea22e03e933a7a4af6b449296a297e68c7e43cee4b32ebf107f3e60eeb9e`  
-		Last Modified: Fri, 14 Mar 2025 02:43:15 GMT  
+	-	`sha256:a516d72dd14d1676f1bd51a88e2be2850798ddf02b6569875d42686c93c2ee9c`  
+		Last Modified: Tue, 18 Mar 2025 05:39:36 GMT  
 		Size: 2.1 KB (2138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbe488a687da133cc493a7ad5517214aeb97dffb625c113babbf135c2b80d5da`  
-		Last Modified: Fri, 14 Mar 2025 02:43:16 GMT  
+	-	`sha256:ff9a8b858ee232b75de1a521ad03ced6d56520cd0af1ed81a13a387f41e02923`  
+		Last Modified: Tue, 18 Mar 2025 05:39:36 GMT  
 		Size: 857.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e2fecaed2d18fd242dd3d23ab22ef744e760485c86e04db5e18fc99f337b2f01`  
-		Last Modified: Fri, 14 Mar 2025 02:43:16 GMT  
-		Size: 801.0 B  
+	-	`sha256:c98a95cbdcfd23acb6f7284d168484a86424c2b2939e71f30fe3fb8ac6906962`  
+		Last Modified: Tue, 18 Mar 2025 05:39:37 GMT  
+		Size: 800.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:fpm` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:79de88459e8e351a904740c0dd429213be0e251e58e8da244dc6aaacd47e3db8
+$ docker pull phpmyadmin@sha256:9c5474a7301dea2f166040eb1d3f92c7a9dccbb7f2994d80a5649b80f1e86736
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **43.4 KB (43434 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93bdcb065b20a412f195c7599a91262b72cf962997bb29f8cab74bd7d33a3116`
+-	Image ID: `sha256:8bd1894b048e64293b3825d480344ec9054125d6095468db1f54637e689179be`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:1d6ea2fb2ca442b84a3892aadb88c2fbe28d5b8850447e6543bd7b22ac2fda41`  
-		Last Modified: Fri, 14 Mar 2025 02:43:15 GMT  
+	-	`sha256:c1595e9f0bc88abfb6a8414099a371e5f3c3388db0faeface6b805760ce45fcc`  
+		Last Modified: Tue, 18 Mar 2025 05:39:35 GMT  
 		Size: 43.4 KB (43434 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -25165,7 +25165,7 @@ $ docker pull phpmyadmin@sha256:575e50dcd91260c5a5e466bd7f19aa96a050d86358a1d9bb
 ## `phpmyadmin:latest`
 
 ```console
-$ docker pull phpmyadmin@sha256:76b7cc1382acc52c6338395fbd1e94c0b2a9830a68f3fd6ce12d612db99fd338
+$ docker pull phpmyadmin@sha256:847e2c011d052e1980915605af10f81137d749085394f6c7bb0319b5040195af
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -25406,19 +25406,19 @@ $ docker pull phpmyadmin@sha256:51dd94e85f46f9219a3c066d5eb6e19918d4924b554bfc56
 ### `phpmyadmin:latest` - linux; arm variant v5
 
 ```console
-$ docker pull phpmyadmin@sha256:a7266581bc9dbdabe275e577d0672ce83f86425d4e4e0eec0f6976b9af4dc9b9
+$ docker pull phpmyadmin@sha256:ae4e07a5622c85b861cdfcc8bb9cc3f6e0a60a6e9837e78732a868174c707ebc
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **168.4 MB (168393269 bytes)**  
+-	Total Size: **168.4 MB (168388913 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6dd6757fd5f0aa18f7c6ff52b8481681efa223a936fdfd22b55bddbc3e815400`
+-	Image ID: `sha256:7a1b8e8d67fb6b24df1e5b78ff65b9f451b2a91723335c305a0099c0adda267a`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -25518,105 +25518,105 @@ CMD ["apache2-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3014e21b6e4396df02c7cc3c5f126fa29d531fa5a1ad0b40b80de6794ae2694`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
+	-	`sha256:50392f60ef98ab502e7ed416d506883257fe8ed57158995e7e77f0bb4d3317f7`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
 		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:858e0a56f6198eb0af5102ce28eda7b5a34384f5b54701b7346487229bff9e9c`  
-		Last Modified: Tue, 25 Feb 2025 02:51:20 GMT  
-		Size: 82.0 MB (81993202 bytes)  
+	-	`sha256:70faba6dfc75d37d904a2f4e790ed9afc8110c25721f14deb57e142ce509f203`  
+		Last Modified: Tue, 18 Mar 2025 01:17:34 GMT  
+		Size: 82.0 MB (81993797 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c24b0f2499da71327f565769347ea1f63e9070dfa8385025f0465d80e603c361`  
-		Last Modified: Tue, 25 Feb 2025 02:51:17 GMT  
-		Size: 225.0 B  
+	-	`sha256:2daffac9eca4d243722e527ddd815f9abe7f53272e743c7fd4b6c1177b0eb255`  
+		Last Modified: Tue, 18 Mar 2025 01:17:31 GMT  
+		Size: 226.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e21a0010d00b089e3a34b60fddcac813cd3a1211368d868b76aa3c52acf85f39`  
-		Last Modified: Tue, 25 Feb 2025 02:55:46 GMT  
-		Size: 19.4 MB (19419190 bytes)  
+	-	`sha256:5e40bc50036fecf94b15523ae01df144fd25cc29085c9b900167682966aea345`  
+		Last Modified: Tue, 18 Mar 2025 04:03:50 GMT  
+		Size: 19.4 MB (19419254 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:836efc0ee062aca6556d741fb3e390ca6b509fc639049bef1cfc24e29616d566`  
-		Last Modified: Tue, 25 Feb 2025 02:55:45 GMT  
-		Size: 434.0 B  
+	-	`sha256:fb9ef2e54bf4f16636556f311cb5285d5b86bac864da9ee836197f377a6cb776`  
+		Last Modified: Tue, 18 Mar 2025 04:03:49 GMT  
+		Size: 432.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bb27253beef75bf260f9071d9fb96a1614335f2b1af270afddf706a8142cb7b`  
-		Last Modified: Tue, 25 Feb 2025 02:55:45 GMT  
-		Size: 483.0 B  
+	-	`sha256:77ad3f9cc1ac78b8fb303beaac1f3eedbe45e57ac5c8760279395201640c6ddb`  
+		Last Modified: Tue, 18 Mar 2025 04:03:50 GMT  
+		Size: 485.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:011930897f0e94f8908d35816b869c1916d4b7c5e69b013a14bd68af54513b64`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
-		Size: 12.3 MB (12274462 bytes)  
+	-	`sha256:28ee6f2ea656a53ed2ef0ce36223f3ff3f1ad9649216635e7039a7f7ba11e80a`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
+		Size: 12.3 MB (12274458 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9587ba2e3349206ea532f4464028c241e4ad1121298357feaccd286fca85d8fd`  
-		Last Modified: Fri, 14 Mar 2025 01:16:17 GMT  
-		Size: 490.0 B  
+	-	`sha256:439c9d2c84cacda41206e1f1363eed0af6a1dd4a67bb23046d39682d03f256c0`  
+		Last Modified: Tue, 18 Mar 2025 04:53:03 GMT  
+		Size: 487.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a585b6944c1433eff35267ab704ba7545360430398014d7bb676ae940a46c5f3`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
-		Size: 10.4 MB (10406221 bytes)  
+	-	`sha256:eed0cbcb35c8ba1da95d1667e1211071e3c1bdbeccbc425a4bbaa1d440a3fd2c`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
+		Size: 10.4 MB (10406179 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:411a0c4868fccc79fa986919a6a2d409dc1b8ba5c006b941e9492a700c79ffcd`  
-		Last Modified: Fri, 14 Mar 2025 01:16:16 GMT  
-		Size: 2.5 KB (2455 bytes)  
+	-	`sha256:19914ee66d9997b46e85813af04cb64d1122bedef3ce7ad34b0cf1641704e65e`  
+		Last Modified: Tue, 18 Mar 2025 04:53:03 GMT  
+		Size: 2.5 KB (2454 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10c8577ccb7b4d01bfe8006afd0838fc8d07519bd88b0f59867e8b3384427b27`  
-		Last Modified: Fri, 14 Mar 2025 01:16:17 GMT  
+	-	`sha256:bf491b90e0c842e4cf13496bc58a29ccd0ee3a966f66503314da4e72d0302b7c`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
 		Size: 247.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8b7bacb438358389faa51d6b6f86912db59267c3bfff4f8d02c547b4970ac24`  
-		Last Modified: Fri, 14 Mar 2025 01:16:18 GMT  
+	-	`sha256:375f9c94559079ddf7990747ea43a04907652eeca291bfca6685d6e984619193`  
+		Last Modified: Tue, 18 Mar 2025 04:53:04 GMT  
 		Size: 891.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:97c2987bd3f28ff7d9512b71fde3148c2bb558f3a01fc8214b24ce3f1dfd1aa2`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
-		Size: 5.1 MB (5143507 bytes)  
+	-	`sha256:deb87792c15e99616fd8200022c1c1a857fa712710c9b2e3ba524864a8487dbd`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 5.1 MB (5143344 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e31c41319e8dc032e6caa60141c1b885815e0be2d4a828e5e425971fc4ad8f21`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 654.0 B  
+	-	`sha256:912ea3ee3b28842eb5bf8b0aea06f5a2988e4a3b45f8d107a9b19ea91c6b3067`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 655.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fd033e90e48feafab441b30e242ad1cd93cb8f489c69eaa4e34eced709310795`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
-		Size: 13.4 MB (13405978 bytes)  
+	-	`sha256:dcdbd4b76d0006fcd08e5e0380eb43cd30470a466ad3d88632d86d6d2a6437c3`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 13.4 MB (13405949 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b5f352e2e04377f91fa1c1ccd750182370df31645eba06a04949f5353dc6a944`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 2.1 KB (2138 bytes)  
+	-	`sha256:a51bb42a4f3c082f6d79b2c4b959f11145d4632d11a23be39d4dfde98b5ab739`  
+		Last Modified: Tue, 18 Mar 2025 05:49:17 GMT  
+		Size: 2.1 KB (2140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:925a0c70ea15e12f1a853755f05e378d309a08277601f59b5cb695f61b01dc8d`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
+	-	`sha256:dd1e3727484de159870ab9661b8f6dcc052e1f150d93f9d92f3d2ef5097c3c07`  
+		Last Modified: Tue, 18 Mar 2025 05:49:18 GMT  
 		Size: 858.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e5360158cfbceb913f62089e4ec10563025c0a7349ba0d531036918f8d537b86`  
-		Last Modified: Fri, 14 Mar 2025 02:37:54 GMT  
+	-	`sha256:ccf71ea361b3587c8fa13e4fe523a46c692fd6464a3fb5998468aa32caace46b`  
+		Last Modified: Tue, 18 Mar 2025 05:49:18 GMT  
 		Size: 946.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:latest` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:eb503513bf647d75baf9d318f2b66598fdbcce3f6b9cfecd954f91bf511e01db
+$ docker pull phpmyadmin@sha256:542f3f5a1c0e8bf593780750f489847ecc821c7decc84304980b4d4773d506c6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **48.5 KB (48505 bytes)**  
+-	Total Size: **48.5 KB (48507 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:57eb9460a8ed393307d81f7618dda392706da5ddfff56bf6cff2ae6d6d0bb0c4`
+-	Image ID: `sha256:a0ec89b2977e08a827707cd4cb2bf1555c8138b8cd33eee773638eefbbb80aa2`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fa00e0561d8f2b1dc12797f587e9d0896d7629ff5f46f0f5b8495a791972932c`  
-		Last Modified: Fri, 14 Mar 2025 02:37:53 GMT  
-		Size: 48.5 KB (48505 bytes)  
+	-	`sha256:f28d2a55674640471e77da229ddb2dca0e4f582ff69875f87c779d90b49f674a`  
+		Last Modified: Tue, 18 Mar 2025 05:49:16 GMT  
+		Size: 48.5 KB (48507 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `phpmyadmin:latest` - linux; arm variant v7
@@ -26486,19 +26486,19 @@ $ docker pull phpmyadmin@sha256:c6b6790ddaf7ead8e263367bea3f0f972a2e35141d3580e1
 ### `phpmyadmin:latest` - linux; ppc64le
 
 ```console
-$ docker pull phpmyadmin@sha256:6a4e6e8df1d30992318072f705a560781cd7f490fdeea039b5d601b75b961561
+$ docker pull phpmyadmin@sha256:aff247876a35e802341d95014336d6646b12e461562c2d1ab0794573659d0b87
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **200.7 MB (200679544 bytes)**  
+-	Total Size: **200.7 MB (200676406 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:68d30ed1ccd6cb211ab8597d398c64a0e4ec0c9838e61ef009a35c43a91a12d1`
+-	Image ID: `sha256:bfe5cc958634c6dde17f37d530ee20ab80428fddb6b7c3ce46ab90ffc4fadbb9`
 -	Entrypoint: `["\/docker-entrypoint.sh"]`
 -	Default Command: `["apache2-foreground"]`
 
 ```dockerfile
 # Fri, 24 Jan 2025 08:52:08 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Fri, 24 Jan 2025 08:52:08 GMT
 RUN set -eux; 	{ 		echo 'Package: php*'; 		echo 'Pin: release *'; 		echo 'Pin-Priority: -1'; 	} > /etc/apt/preferences.d/no-debian-php # buildkit
 # Fri, 24 Jan 2025 08:52:08 GMT
@@ -26598,104 +26598,104 @@ CMD ["apache2-foreground"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:35bbbae4d2dc0350f7df1634e33daf64fe78cb672182650c700a26750b33b64c`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 225.0 B  
+	-	`sha256:b40c9e444f13d4c7a03580cf188ef06ad94ffc13189161777e9ed5cf824f8ea7`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 223.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9e7f7bed916e76b3a3b176b4e6a5bcfe6e10e39a6c423be8fc3575115d7b1e06`  
-		Last Modified: Tue, 25 Feb 2025 02:59:28 GMT  
-		Size: 103.3 MB (103323545 bytes)  
+	-	`sha256:aef297c24191733a2fbe29ead5c53224c75c11b7ee0ba80b57b0b3898a33bbbf`  
+		Last Modified: Tue, 18 Mar 2025 03:15:07 GMT  
+		Size: 103.3 MB (103324904 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:21d9943a0d5cef1bf22e1a6d5df4b38af8052474c28fe7d9188d33c9e0190742`  
-		Last Modified: Tue, 25 Feb 2025 02:59:24 GMT  
-		Size: 226.0 B  
+	-	`sha256:69d707aca2b2791bdef48c24201e181e34f312580cea3313c4c8b8cdfa4a82c4`  
+		Last Modified: Tue, 18 Mar 2025 03:15:03 GMT  
+		Size: 222.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9f5eba5668f315d2ef7f70338fc89daecbca191bf9b5b6622280439ff5ceb4a7`  
-		Last Modified: Tue, 25 Feb 2025 03:04:11 GMT  
-		Size: 21.3 MB (21308442 bytes)  
+	-	`sha256:904971bf946949bd849eb4b667ce16daba036ec4ae5066a61816ed4b1abe5854`  
+		Last Modified: Tue, 18 Mar 2025 03:37:33 GMT  
+		Size: 21.3 MB (21308422 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e8bec4fde36a5fc026717bc0e1c4a8f85c6397c11d730b4d345fdb0b5014cc45`  
-		Last Modified: Tue, 25 Feb 2025 03:04:06 GMT  
+	-	`sha256:04920e64d4709add88a0a3602fa557015f184d1476acb20183c24e2c709eecc9`  
+		Last Modified: Tue, 18 Mar 2025 03:37:32 GMT  
 		Size: 435.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ca66cb544073b521bd3bcd518135c4cf977a5939323c5191473a1b8a2a09cd05`  
-		Last Modified: Tue, 25 Feb 2025 03:04:06 GMT  
-		Size: 489.0 B  
+	-	`sha256:65238378d6b0ff511c6a27c9bbac5e81b95662e894866715edfdea0404819c82`  
+		Last Modified: Tue, 18 Mar 2025 03:37:32 GMT  
+		Size: 490.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4250556fa8417334da5be4ff65e43885cb11a4aefa7d255ddcedadfb60e1e4b`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 12.3 MB (12275866 bytes)  
+	-	`sha256:2333a1edb32516e5e07616b5bf60b9c51eab28c9f7222124b11efd092bb70fa4`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 12.3 MB (12275862 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4fc1dc2ea55f95178ec13fe2b851029d78f5e0d2f3a6c8390fe1a234a9f2e9cf`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 491.0 B  
+	-	`sha256:8cd4c85564347a400a7d40062f14524c610df614356818d7923e4f4576913fc8`  
+		Last Modified: Tue, 18 Mar 2025 04:02:29 GMT  
+		Size: 488.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7afa4c68853b68dabf1bd8e64549df9d94bcf4c95ef043f559e0eefabff7ff8f`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 11.8 MB (11834942 bytes)  
+	-	`sha256:c16f08b0e4b59bd52114ff166b918c0003930ebf44501f8c07892345a7c9dba8`  
+		Last Modified: Tue, 18 Mar 2025 04:02:31 GMT  
+		Size: 11.8 MB (11834908 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0a58ec0c7a28b79ecb2761aea3a7ba1c7e11a569cdefcbc08ed0bf5bc5fb74af`  
-		Last Modified: Fri, 14 Mar 2025 01:15:16 GMT  
-		Size: 2.5 KB (2457 bytes)  
+	-	`sha256:3f3257acf4109928d905c7b5a959f364623910b44f44302a13a64660fbf3199b`  
+		Last Modified: Tue, 18 Mar 2025 04:02:29 GMT  
+		Size: 2.5 KB (2453 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4920622eb8cb7077f99589eb65bebd3e0264d1474c6bc0a48e5c79e7629376`  
-		Last Modified: Fri, 14 Mar 2025 01:15:17 GMT  
-		Size: 249.0 B  
+	-	`sha256:cfaa4ed3637b246e489af22d086c861274049e02b0850ba84d4fa9601d4986f3`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 246.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8370a02df23f733617d749f69df800919185839d44c681f4c9ec95e9b5531d10`  
-		Last Modified: Fri, 14 Mar 2025 01:15:17 GMT  
-		Size: 891.0 B  
+	-	`sha256:d38c04a142ef9c061e66f15af950f1d095b9e309d8fbb53f8ab0600189d73894`  
+		Last Modified: Tue, 18 Mar 2025 04:02:30 GMT  
+		Size: 890.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0d9c47a21dbfdcf245c9daf36cb61186207f7f618a051ba6fcaff10a50a6e967`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 6.5 MB (6468297 bytes)  
+	-	`sha256:c3ea8f820564f878adb3531fb433425f13deaf7972d81574161bc6568e3fd705`  
+		Last Modified: Tue, 18 Mar 2025 05:37:32 GMT  
+		Size: 6.5 MB (6468404 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2d2d1cd1c6305f6251498ef70ac82e232089392568a52cbd6bafa4a75c3f272`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
-		Size: 654.0 B  
+	-	`sha256:f490553e05bc8aaa6f2e49e90144ac86a32437543c474af4cf8c1eed99d7af53`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
+		Size: 655.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49f9475bb8cb41837630e54c620dfe5eca2babaf576a4359990b7ef263bd9586`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 13.4 MB (13406042 bytes)  
+	-	`sha256:38419e268acf39dc1c0a2841380aa51b65021c9f928ff8c675ec6443c8357773`  
+		Last Modified: Tue, 18 Mar 2025 05:37:31 GMT  
+		Size: 13.4 MB (13406017 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da5b44747e40ef58c629e28def2d797046fad1e2fdf6dea3e99d0232bfb86737`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
-		Size: 2.1 KB (2141 bytes)  
+	-	`sha256:6aba9cdc5edd7ca97da7c577af0779f3ba0993900405f059cccdcafa162b5a30`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
+		Size: 2.1 KB (2138 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6445849ec79254bddeecacf7b911e961e2a1f81f4e5042e2a3869bd9a88b7c1f`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
-		Size: 859.0 B  
+	-	`sha256:677ea9ec131983d3b21280894ca73e4ad36d3d169ba910e92bfbbdcae74c0d02`  
+		Last Modified: Tue, 18 Mar 2025 05:37:31 GMT  
+		Size: 856.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cb1b44c9e7612d5d5dfcb863723342bf1bfbb27f4acf37e582e407121f68ce30`  
-		Last Modified: Fri, 14 Mar 2025 02:41:22 GMT  
+	-	`sha256:7a67fdc2d6f7dca51e62ffb2d4127c02a12c293eef3af1b1428532b58d6ace0d`  
+		Last Modified: Tue, 18 Mar 2025 05:37:32 GMT  
 		Size: 947.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `phpmyadmin:latest` - unknown; unknown
 
 ```console
-$ docker pull phpmyadmin@sha256:7281ee8a20e8ca18fa01881d897273222f3b7b3f76c1b991db35d07c99cd2329
+$ docker pull phpmyadmin@sha256:e9d7f560ee56019dcf70047c936abb3224e80f8b3a717991fd2a3b87c5012a01
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **48.5 KB (48452 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c5d873c0252bd552a0ae78f6ffcf0ce5c2a39ae66980c86a17e16c7971b446d6`
+-	Image ID: `sha256:f75ebb293888d4bb7d0f2e06655b46184bde6e7997844e229165a3795754cfb5`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:c6e49aeea2e48a267b7a2b39398a53c780e1160b75557fc8418c3ebbe9fd46b4`  
-		Last Modified: Fri, 14 Mar 2025 02:41:21 GMT  
+	-	`sha256:8f7964a788b8920a1ee103da8f82cd4257455d663dc9723b005358c74be864a9`  
+		Last Modified: Tue, 18 Mar 2025 05:37:30 GMT  
 		Size: 48.5 KB (48452 bytes)  
 		MIME: application/vnd.in-toto+json
 
