@@ -46,7 +46,7 @@
 ## `redis:6`
 
 ```console
-$ docker pull redis@sha256:00916d19cbef5817c98dae9896d2d035769626312495dfbfab21b3066a031c62
+$ docker pull redis@sha256:289527f1c5b9e230695d4f806d8e64771c22ddb9b1e388e369a4e052299e8d0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -177,19 +177,19 @@ $ docker pull redis@sha256:535f5580571830143e8f734a293b4bc2eb9ece5b7e7767b04853f
 ### `redis:6` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:9a5b95c8546333a8d79ed36bffec2388e472e2c7a99f7457a8853c9a38709fcc
+$ docker pull redis@sha256:09a58bee7dd9d39d0b30e395be884df9286892e87c39cfa6313af873acf55d24
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.2 MB (37228630 bytes)**  
+-	Total Size: **37.2 MB (37224066 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b6607745943ecc7e06b9d7c75300ed03d7cc4ff683c695398cbc249bcdd40d0`
+-	Image ID: `sha256:0f1174c9abce304e6ed8d1f4c4d992b05638ca2df03aa6f57c2a45f71e2346d6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -223,166 +223,166 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4d294b50c8e6abd2fe6a1ac4b0d477ec182d6273582ef92df5a8ead0bc4de8e`  
-		Last Modified: Tue, 25 Feb 2025 05:14:34 GMT  
-		Size: 10.1 MB (10071076 bytes)  
+	-	`sha256:a3241e0a167e98ffbdf84756a1df3a70221ad3d21e5c7436ff51f0325a1009df`  
+		Last Modified: Tue, 18 Mar 2025 03:25:42 GMT  
+		Size: 10.1 MB (10071190 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3b228cc6260f8512a70a21ca316c8d2adf8ed3543c8bf2811a80a9341db650e`  
-		Last Modified: Tue, 25 Feb 2025 05:14:33 GMT  
-		Size: 96.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb9a756209a51c79a8970541e2a2dcbf690cf925229d77fa7cbdd29abb606a44`  
-		Last Modified: Tue, 25 Feb 2025 05:14:33 GMT  
-		Size: 570.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `redis:6` - unknown; unknown
-
-```console
-$ docker pull redis@sha256:59697ec1e8eb683032ff45b06b840f378940b752ad9342a866bfce44fd35dde4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305210 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64f3bda929ed9be294bcb9c9cc8583b52577e1d2ad97608ff813989b0fa8a392`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:ebff5d050ae34a0ad1b22d121e89e5279a1a0522db4dcf1391bab36ae327b223`  
-		Last Modified: Tue, 25 Feb 2025 05:14:33 GMT  
-		Size: 2.3 MB (2269300 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:d900b10debbf14503d968a781561f12037ee5733df3191ca5492aafa5f69128e`  
-		Last Modified: Tue, 25 Feb 2025 05:14:32 GMT  
-		Size: 35.9 KB (35910 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `redis:6` - linux; arm variant v7
-
-```console
-$ docker pull redis@sha256:a5b11ead47f753bee7d6abe4ecbb0b25c2db7242006db2333b897c0031779795
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.1 MB (35116979 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a0ac4de4fdff85da583468a910c146af705c3eccf7f09469dfdf90862c5e009`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["redis-server"]`
-
-```dockerfile
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_VERSION=6.2.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.2.17.tar.gz
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_SHA=f7aab300407aaa005bc1a688e61287111f4ae13ed657ec50ef4ab529893ddc30
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN mkdir /data && chown redis:redis /data # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-VOLUME [/data]
-# Mon, 06 Jan 2025 16:14:31 GMT
-WORKDIR /data
-# Mon, 06 Jan 2025 16:14:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 06 Jan 2025 16:14:31 GMT
-EXPOSE map[6379/tcp:{}]
-# Mon, 06 Jan 2025 16:14:31 GMT
-CMD ["redis-server"]
-```
-
--	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 874.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84afee775ae09326ef89a31556836756b4f69d1621fab84442b212c87501d549`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
-		Size: 9.8 MB (9789141 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6161ceb47347b34a78e523a816a2825e24edb58598af88171e2f4b84a36784f8`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
+	-	`sha256:e9d19b0cf77b7b46714199e716403783284945049483e7e604aa5a1326556400`  
+		Last Modified: Tue, 18 Mar 2025 03:25:42 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c6beac13b608e98bcb1e87f38ea7d9b77b1506890f2dea9fa3bcb429d8b7ff7`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
+	-	`sha256:bfec2fb40d98fd28480ecc290bc1652c862ef6422a5cc29c42e15dbe5bbbeab8`  
+		Last Modified: Tue, 18 Mar 2025 03:25:42 GMT  
 		Size: 572.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:6` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:29651bded399ac5c3c470a1b739c8d2a9a344008e98428793587da8419ee5bdb
+$ docker pull redis@sha256:a1f7889ccec003951051b7f6bd7c13de4570f56f971d30774e06260aaccdc3f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303931 bytes)**  
+-	Total Size: **2.3 MB (2305218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3d34dc397eeb2221a1ad07e1c9a7e941473b5cc84985dc78a716c8d8434cde6`
+-	Image ID: `sha256:ee6ddf4c810f8a446a1cb8dd646770ca534a48dbd212132d80628384d8d5163e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:79257ce1cf9db6386f624d6a17e03dc27475fd463234548c1836c6ea57865b0c`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
-		Size: 2.3 MB (2268025 bytes)  
+	-	`sha256:fe2bde39b6e5fecdd6f9ce36ef8ecda7aab83a95a870ea293e16c9ac198bce0a`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 2.3 MB (2269308 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7b2ac4e1a62790ade70540c2fc09ca5252feec64c2b755b083083a43bb573358`  
-		Last Modified: Tue, 25 Feb 2025 07:01:51 GMT  
+	-	`sha256:8e3400292834d8a83d072e3fb531778cc0f4d469d204b7164234606d949464b3`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 35.9 KB (35910 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:6` - linux; arm variant v7
+
+```console
+$ docker pull redis@sha256:41078faf31f96adc510ff805e25709c396646557b828ad4ac219a7149f0a01a8
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **35.1 MB (35112327 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:303410b418038bf3ae3684c92f24a7abe3316e9d68df6cd1a392768cfbd2a288`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV GOSU_VERSION=1.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_VERSION=6.2.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.2.17.tar.gz
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_SHA=f7aab300407aaa005bc1a688e61287111f4ae13ed657ec50ef4ab529893ddc30
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+VOLUME [/data]
+# Mon, 06 Jan 2025 16:14:31 GMT
+WORKDIR /data
+# Mon, 06 Jan 2025 16:14:31 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Mon, 06 Jan 2025 16:14:31 GMT
+EXPOSE map[6379/tcp:{}]
+# Mon, 06 Jan 2025 16:14:31 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 874.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fbea57beeba6b21eda9d22804f158b50e5ce6620b561d8a93d8e22d2428a0bde`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 9.8 MB (9789164 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7f5ab89167dee7f682e6f290d5ab088c992aeacd0319ac73a750764004299ab2`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 97.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2590150cb05e3c3cd213594bdb1546b8621b86823be34d0650a93a3588abf30b`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 572.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:6` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:b622f4d5e40b0eee47e8921e58bf47b4386d6848a25138f2990b51ff29ad10ea
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2303939 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fbdc7bc0be347a21372c0e27026aaed52c82f6e10346812a74ed1e600bc62ffc`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:31a291668d8269d931b36222f82e68693d3ceeb0b14beb151352a48cf3039f0b`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 2.3 MB (2268033 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2941958cabde76b2b69d8415de06be78af5d112424dff7f75e39d9d14ec4b80f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
 		Size: 35.9 KB (35906 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -703,19 +703,19 @@ $ docker pull redis@sha256:20ff6bf9347153313829be0bb4f63a14301d2510400da4f11c9dd
 ### `redis:6` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:c0250ac06a2ea7a4c8c9aaff342fb46beba265ac5d0dc2b604d40ee8f7a4e44c
+$ docker pull redis@sha256:a51735b8e69eec22b5ff00fdcbc8f6e301700e1639faa4bb0a03ed618992336c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.8 MB (44751246 bytes)**  
+-	Total Size: **44.7 MB (44746719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95fd9d12e1eeace2822764f53148d8fb737689b5c00df95fda411f915f3d30d1`
+-	Image ID: `sha256:43a9a90ba2a0654296bc74566c2e91a9f943e89826c68a9c20c31562cc3ee4d6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -749,60 +749,60 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d25201dfe67b028b41e127525cccfdb1e9d268f9ea6623c7754549d0cecf634c`  
-		Last Modified: Tue, 25 Feb 2025 04:16:11 GMT  
-		Size: 11.3 MB (11336134 bytes)  
+	-	`sha256:bbfa6153a65da74502240ff5101a251726453ab3f5907d9759be681a3c7eabad`  
+		Last Modified: Tue, 18 Mar 2025 00:57:20 GMT  
+		Size: 11.3 MB (11336140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c296c9eb95e1cde8279940d4aa8e04d8537b9da6163b0df4a2d3f452c912788`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
-		Size: 96.0 B  
+	-	`sha256:ffe7b28e45d18b91bb7510aa6c297fb89cc1b93d7a8c85e3cd57b1e2302fbc37`  
+		Last Modified: Tue, 18 Mar 2025 00:57:20 GMT  
+		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b63d28d506487cd7bf81d07e503e8c82d0c9b1b2888a9e3609442cc0d5ba70b9`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
-		Size: 571.0 B  
+	-	`sha256:ac1da68e7bcdd62e8adb2a7b668f16c3361f567350d1c98d09a9ad2a6c5f45cf`  
+		Last Modified: Tue, 18 Mar 2025 00:57:20 GMT  
+		Size: 573.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:6` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:09a13aa2888be32a6e48dbdb2a4d857a3b148f8594be0c28eb56315e73206852
+$ docker pull redis@sha256:77247cd3a175c8a22a020797b3a952a2bc42bc28708797e6b9b1c8810e401122
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305920 bytes)**  
+-	Total Size: **2.3 MB (2305928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53e4cc06cd29285914b94de9299fd2e2c859448536f8b4a2fca4f8dec05fe5a0`
+-	Image ID: `sha256:dcd67aa5bad3f63ae4e30a04216580654f5b392384d6383620023e2d9b167a3a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf3c21ca381edab3ce2448f8594780b70e01ae2366c3838d307665287844d355`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
-		Size: 2.3 MB (2270090 bytes)  
+	-	`sha256:362ffb4f39c87984155afd9f3ab4c19bb988a10696750cb92f540ac02decb71c`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 2.3 MB (2270098 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c724800e5de471d83819868c174e0193f26e385695889d871d4849c3d02eb652`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
+	-	`sha256:d730df665ebc5cd35ba45d57b75889296116b54d90718b511ee0be6c8f459ec9`  
+		Last Modified: Tue, 18 Mar 2025 00:57:18 GMT  
 		Size: 35.8 KB (35830 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -2685,7 +2685,7 @@ $ docker pull redis@sha256:fedd171636ae5ab179e88c4ae0667051fc2b2f5e07d1dbdee749c
 ## `redis:6-bookworm`
 
 ```console
-$ docker pull redis@sha256:00916d19cbef5817c98dae9896d2d035769626312495dfbfab21b3066a031c62
+$ docker pull redis@sha256:289527f1c5b9e230695d4f806d8e64771c22ddb9b1e388e369a4e052299e8d0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -2816,19 +2816,19 @@ $ docker pull redis@sha256:535f5580571830143e8f734a293b4bc2eb9ece5b7e7767b04853f
 ### `redis:6-bookworm` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:9a5b95c8546333a8d79ed36bffec2388e472e2c7a99f7457a8853c9a38709fcc
+$ docker pull redis@sha256:09a58bee7dd9d39d0b30e395be884df9286892e87c39cfa6313af873acf55d24
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.2 MB (37228630 bytes)**  
+-	Total Size: **37.2 MB (37224066 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b6607745943ecc7e06b9d7c75300ed03d7cc4ff683c695398cbc249bcdd40d0`
+-	Image ID: `sha256:0f1174c9abce304e6ed8d1f4c4d992b05638ca2df03aa6f57c2a45f71e2346d6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -2862,166 +2862,166 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4d294b50c8e6abd2fe6a1ac4b0d477ec182d6273582ef92df5a8ead0bc4de8e`  
-		Last Modified: Tue, 25 Feb 2025 05:14:34 GMT  
-		Size: 10.1 MB (10071076 bytes)  
+	-	`sha256:a3241e0a167e98ffbdf84756a1df3a70221ad3d21e5c7436ff51f0325a1009df`  
+		Last Modified: Tue, 18 Mar 2025 03:25:42 GMT  
+		Size: 10.1 MB (10071190 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3b228cc6260f8512a70a21ca316c8d2adf8ed3543c8bf2811a80a9341db650e`  
-		Last Modified: Tue, 25 Feb 2025 05:14:33 GMT  
-		Size: 96.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb9a756209a51c79a8970541e2a2dcbf690cf925229d77fa7cbdd29abb606a44`  
-		Last Modified: Tue, 25 Feb 2025 05:14:33 GMT  
-		Size: 570.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `redis:6-bookworm` - unknown; unknown
-
-```console
-$ docker pull redis@sha256:59697ec1e8eb683032ff45b06b840f378940b752ad9342a866bfce44fd35dde4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305210 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64f3bda929ed9be294bcb9c9cc8583b52577e1d2ad97608ff813989b0fa8a392`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:ebff5d050ae34a0ad1b22d121e89e5279a1a0522db4dcf1391bab36ae327b223`  
-		Last Modified: Tue, 25 Feb 2025 05:14:33 GMT  
-		Size: 2.3 MB (2269300 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:d900b10debbf14503d968a781561f12037ee5733df3191ca5492aafa5f69128e`  
-		Last Modified: Tue, 25 Feb 2025 05:14:32 GMT  
-		Size: 35.9 KB (35910 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `redis:6-bookworm` - linux; arm variant v7
-
-```console
-$ docker pull redis@sha256:a5b11ead47f753bee7d6abe4ecbb0b25c2db7242006db2333b897c0031779795
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.1 MB (35116979 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a0ac4de4fdff85da583468a910c146af705c3eccf7f09469dfdf90862c5e009`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["redis-server"]`
-
-```dockerfile
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_VERSION=6.2.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.2.17.tar.gz
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_SHA=f7aab300407aaa005bc1a688e61287111f4ae13ed657ec50ef4ab529893ddc30
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN mkdir /data && chown redis:redis /data # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-VOLUME [/data]
-# Mon, 06 Jan 2025 16:14:31 GMT
-WORKDIR /data
-# Mon, 06 Jan 2025 16:14:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 06 Jan 2025 16:14:31 GMT
-EXPOSE map[6379/tcp:{}]
-# Mon, 06 Jan 2025 16:14:31 GMT
-CMD ["redis-server"]
-```
-
--	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 874.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84afee775ae09326ef89a31556836756b4f69d1621fab84442b212c87501d549`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
-		Size: 9.8 MB (9789141 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6161ceb47347b34a78e523a816a2825e24edb58598af88171e2f4b84a36784f8`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
+	-	`sha256:e9d19b0cf77b7b46714199e716403783284945049483e7e604aa5a1326556400`  
+		Last Modified: Tue, 18 Mar 2025 03:25:42 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c6beac13b608e98bcb1e87f38ea7d9b77b1506890f2dea9fa3bcb429d8b7ff7`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
+	-	`sha256:bfec2fb40d98fd28480ecc290bc1652c862ef6422a5cc29c42e15dbe5bbbeab8`  
+		Last Modified: Tue, 18 Mar 2025 03:25:42 GMT  
 		Size: 572.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:6-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:29651bded399ac5c3c470a1b739c8d2a9a344008e98428793587da8419ee5bdb
+$ docker pull redis@sha256:a1f7889ccec003951051b7f6bd7c13de4570f56f971d30774e06260aaccdc3f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303931 bytes)**  
+-	Total Size: **2.3 MB (2305218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3d34dc397eeb2221a1ad07e1c9a7e941473b5cc84985dc78a716c8d8434cde6`
+-	Image ID: `sha256:ee6ddf4c810f8a446a1cb8dd646770ca534a48dbd212132d80628384d8d5163e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:79257ce1cf9db6386f624d6a17e03dc27475fd463234548c1836c6ea57865b0c`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
-		Size: 2.3 MB (2268025 bytes)  
+	-	`sha256:fe2bde39b6e5fecdd6f9ce36ef8ecda7aab83a95a870ea293e16c9ac198bce0a`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 2.3 MB (2269308 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7b2ac4e1a62790ade70540c2fc09ca5252feec64c2b755b083083a43bb573358`  
-		Last Modified: Tue, 25 Feb 2025 07:01:51 GMT  
+	-	`sha256:8e3400292834d8a83d072e3fb531778cc0f4d469d204b7164234606d949464b3`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 35.9 KB (35910 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:6-bookworm` - linux; arm variant v7
+
+```console
+$ docker pull redis@sha256:41078faf31f96adc510ff805e25709c396646557b828ad4ac219a7149f0a01a8
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **35.1 MB (35112327 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:303410b418038bf3ae3684c92f24a7abe3316e9d68df6cd1a392768cfbd2a288`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV GOSU_VERSION=1.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_VERSION=6.2.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.2.17.tar.gz
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_SHA=f7aab300407aaa005bc1a688e61287111f4ae13ed657ec50ef4ab529893ddc30
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+VOLUME [/data]
+# Mon, 06 Jan 2025 16:14:31 GMT
+WORKDIR /data
+# Mon, 06 Jan 2025 16:14:31 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Mon, 06 Jan 2025 16:14:31 GMT
+EXPOSE map[6379/tcp:{}]
+# Mon, 06 Jan 2025 16:14:31 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 874.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fbea57beeba6b21eda9d22804f158b50e5ce6620b561d8a93d8e22d2428a0bde`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 9.8 MB (9789164 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7f5ab89167dee7f682e6f290d5ab088c992aeacd0319ac73a750764004299ab2`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 97.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2590150cb05e3c3cd213594bdb1546b8621b86823be34d0650a93a3588abf30b`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 572.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:6-bookworm` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:b622f4d5e40b0eee47e8921e58bf47b4386d6848a25138f2990b51ff29ad10ea
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2303939 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fbdc7bc0be347a21372c0e27026aaed52c82f6e10346812a74ed1e600bc62ffc`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:31a291668d8269d931b36222f82e68693d3ceeb0b14beb151352a48cf3039f0b`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 2.3 MB (2268033 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2941958cabde76b2b69d8415de06be78af5d112424dff7f75e39d9d14ec4b80f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
 		Size: 35.9 KB (35906 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3342,19 +3342,19 @@ $ docker pull redis@sha256:20ff6bf9347153313829be0bb4f63a14301d2510400da4f11c9dd
 ### `redis:6-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:c0250ac06a2ea7a4c8c9aaff342fb46beba265ac5d0dc2b604d40ee8f7a4e44c
+$ docker pull redis@sha256:a51735b8e69eec22b5ff00fdcbc8f6e301700e1639faa4bb0a03ed618992336c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.8 MB (44751246 bytes)**  
+-	Total Size: **44.7 MB (44746719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95fd9d12e1eeace2822764f53148d8fb737689b5c00df95fda411f915f3d30d1`
+-	Image ID: `sha256:43a9a90ba2a0654296bc74566c2e91a9f943e89826c68a9c20c31562cc3ee4d6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -3388,60 +3388,60 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d25201dfe67b028b41e127525cccfdb1e9d268f9ea6623c7754549d0cecf634c`  
-		Last Modified: Tue, 25 Feb 2025 04:16:11 GMT  
-		Size: 11.3 MB (11336134 bytes)  
+	-	`sha256:bbfa6153a65da74502240ff5101a251726453ab3f5907d9759be681a3c7eabad`  
+		Last Modified: Tue, 18 Mar 2025 00:57:20 GMT  
+		Size: 11.3 MB (11336140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c296c9eb95e1cde8279940d4aa8e04d8537b9da6163b0df4a2d3f452c912788`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
-		Size: 96.0 B  
+	-	`sha256:ffe7b28e45d18b91bb7510aa6c297fb89cc1b93d7a8c85e3cd57b1e2302fbc37`  
+		Last Modified: Tue, 18 Mar 2025 00:57:20 GMT  
+		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b63d28d506487cd7bf81d07e503e8c82d0c9b1b2888a9e3609442cc0d5ba70b9`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
-		Size: 571.0 B  
+	-	`sha256:ac1da68e7bcdd62e8adb2a7b668f16c3361f567350d1c98d09a9ad2a6c5f45cf`  
+		Last Modified: Tue, 18 Mar 2025 00:57:20 GMT  
+		Size: 573.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:6-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:09a13aa2888be32a6e48dbdb2a4d857a3b148f8594be0c28eb56315e73206852
+$ docker pull redis@sha256:77247cd3a175c8a22a020797b3a952a2bc42bc28708797e6b9b1c8810e401122
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305920 bytes)**  
+-	Total Size: **2.3 MB (2305928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53e4cc06cd29285914b94de9299fd2e2c859448536f8b4a2fca4f8dec05fe5a0`
+-	Image ID: `sha256:dcd67aa5bad3f63ae4e30a04216580654f5b392384d6383620023e2d9b167a3a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf3c21ca381edab3ce2448f8594780b70e01ae2366c3838d307665287844d355`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
-		Size: 2.3 MB (2270090 bytes)  
+	-	`sha256:362ffb4f39c87984155afd9f3ab4c19bb988a10696750cb92f540ac02decb71c`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 2.3 MB (2270098 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c724800e5de471d83819868c174e0193f26e385695889d871d4849c3d02eb652`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
+	-	`sha256:d730df665ebc5cd35ba45d57b75889296116b54d90718b511ee0be6c8f459ec9`  
+		Last Modified: Tue, 18 Mar 2025 00:57:18 GMT  
 		Size: 35.8 KB (35830 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -3554,7 +3554,7 @@ $ docker pull redis@sha256:dd0cb04837afbdb6246d09ed4d80deca53e50b506d7c1a6a268cb
 ## `redis:6.2`
 
 ```console
-$ docker pull redis@sha256:00916d19cbef5817c98dae9896d2d035769626312495dfbfab21b3066a031c62
+$ docker pull redis@sha256:289527f1c5b9e230695d4f806d8e64771c22ddb9b1e388e369a4e052299e8d0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -3685,19 +3685,19 @@ $ docker pull redis@sha256:535f5580571830143e8f734a293b4bc2eb9ece5b7e7767b04853f
 ### `redis:6.2` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:9a5b95c8546333a8d79ed36bffec2388e472e2c7a99f7457a8853c9a38709fcc
+$ docker pull redis@sha256:09a58bee7dd9d39d0b30e395be884df9286892e87c39cfa6313af873acf55d24
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.2 MB (37228630 bytes)**  
+-	Total Size: **37.2 MB (37224066 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b6607745943ecc7e06b9d7c75300ed03d7cc4ff683c695398cbc249bcdd40d0`
+-	Image ID: `sha256:0f1174c9abce304e6ed8d1f4c4d992b05638ca2df03aa6f57c2a45f71e2346d6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -3731,166 +3731,166 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4d294b50c8e6abd2fe6a1ac4b0d477ec182d6273582ef92df5a8ead0bc4de8e`  
-		Last Modified: Tue, 25 Feb 2025 05:14:34 GMT  
-		Size: 10.1 MB (10071076 bytes)  
+	-	`sha256:a3241e0a167e98ffbdf84756a1df3a70221ad3d21e5c7436ff51f0325a1009df`  
+		Last Modified: Tue, 18 Mar 2025 03:25:42 GMT  
+		Size: 10.1 MB (10071190 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3b228cc6260f8512a70a21ca316c8d2adf8ed3543c8bf2811a80a9341db650e`  
-		Last Modified: Tue, 25 Feb 2025 05:14:33 GMT  
-		Size: 96.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb9a756209a51c79a8970541e2a2dcbf690cf925229d77fa7cbdd29abb606a44`  
-		Last Modified: Tue, 25 Feb 2025 05:14:33 GMT  
-		Size: 570.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `redis:6.2` - unknown; unknown
-
-```console
-$ docker pull redis@sha256:59697ec1e8eb683032ff45b06b840f378940b752ad9342a866bfce44fd35dde4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305210 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64f3bda929ed9be294bcb9c9cc8583b52577e1d2ad97608ff813989b0fa8a392`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:ebff5d050ae34a0ad1b22d121e89e5279a1a0522db4dcf1391bab36ae327b223`  
-		Last Modified: Tue, 25 Feb 2025 05:14:33 GMT  
-		Size: 2.3 MB (2269300 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:d900b10debbf14503d968a781561f12037ee5733df3191ca5492aafa5f69128e`  
-		Last Modified: Tue, 25 Feb 2025 05:14:32 GMT  
-		Size: 35.9 KB (35910 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `redis:6.2` - linux; arm variant v7
-
-```console
-$ docker pull redis@sha256:a5b11ead47f753bee7d6abe4ecbb0b25c2db7242006db2333b897c0031779795
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.1 MB (35116979 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a0ac4de4fdff85da583468a910c146af705c3eccf7f09469dfdf90862c5e009`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["redis-server"]`
-
-```dockerfile
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_VERSION=6.2.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.2.17.tar.gz
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_SHA=f7aab300407aaa005bc1a688e61287111f4ae13ed657ec50ef4ab529893ddc30
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN mkdir /data && chown redis:redis /data # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-VOLUME [/data]
-# Mon, 06 Jan 2025 16:14:31 GMT
-WORKDIR /data
-# Mon, 06 Jan 2025 16:14:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 06 Jan 2025 16:14:31 GMT
-EXPOSE map[6379/tcp:{}]
-# Mon, 06 Jan 2025 16:14:31 GMT
-CMD ["redis-server"]
-```
-
--	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 874.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84afee775ae09326ef89a31556836756b4f69d1621fab84442b212c87501d549`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
-		Size: 9.8 MB (9789141 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6161ceb47347b34a78e523a816a2825e24edb58598af88171e2f4b84a36784f8`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
+	-	`sha256:e9d19b0cf77b7b46714199e716403783284945049483e7e604aa5a1326556400`  
+		Last Modified: Tue, 18 Mar 2025 03:25:42 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c6beac13b608e98bcb1e87f38ea7d9b77b1506890f2dea9fa3bcb429d8b7ff7`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
+	-	`sha256:bfec2fb40d98fd28480ecc290bc1652c862ef6422a5cc29c42e15dbe5bbbeab8`  
+		Last Modified: Tue, 18 Mar 2025 03:25:42 GMT  
 		Size: 572.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:6.2` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:29651bded399ac5c3c470a1b739c8d2a9a344008e98428793587da8419ee5bdb
+$ docker pull redis@sha256:a1f7889ccec003951051b7f6bd7c13de4570f56f971d30774e06260aaccdc3f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303931 bytes)**  
+-	Total Size: **2.3 MB (2305218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3d34dc397eeb2221a1ad07e1c9a7e941473b5cc84985dc78a716c8d8434cde6`
+-	Image ID: `sha256:ee6ddf4c810f8a446a1cb8dd646770ca534a48dbd212132d80628384d8d5163e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:79257ce1cf9db6386f624d6a17e03dc27475fd463234548c1836c6ea57865b0c`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
-		Size: 2.3 MB (2268025 bytes)  
+	-	`sha256:fe2bde39b6e5fecdd6f9ce36ef8ecda7aab83a95a870ea293e16c9ac198bce0a`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 2.3 MB (2269308 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7b2ac4e1a62790ade70540c2fc09ca5252feec64c2b755b083083a43bb573358`  
-		Last Modified: Tue, 25 Feb 2025 07:01:51 GMT  
+	-	`sha256:8e3400292834d8a83d072e3fb531778cc0f4d469d204b7164234606d949464b3`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 35.9 KB (35910 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:6.2` - linux; arm variant v7
+
+```console
+$ docker pull redis@sha256:41078faf31f96adc510ff805e25709c396646557b828ad4ac219a7149f0a01a8
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **35.1 MB (35112327 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:303410b418038bf3ae3684c92f24a7abe3316e9d68df6cd1a392768cfbd2a288`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV GOSU_VERSION=1.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_VERSION=6.2.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.2.17.tar.gz
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_SHA=f7aab300407aaa005bc1a688e61287111f4ae13ed657ec50ef4ab529893ddc30
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+VOLUME [/data]
+# Mon, 06 Jan 2025 16:14:31 GMT
+WORKDIR /data
+# Mon, 06 Jan 2025 16:14:31 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Mon, 06 Jan 2025 16:14:31 GMT
+EXPOSE map[6379/tcp:{}]
+# Mon, 06 Jan 2025 16:14:31 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 874.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fbea57beeba6b21eda9d22804f158b50e5ce6620b561d8a93d8e22d2428a0bde`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 9.8 MB (9789164 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7f5ab89167dee7f682e6f290d5ab088c992aeacd0319ac73a750764004299ab2`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 97.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2590150cb05e3c3cd213594bdb1546b8621b86823be34d0650a93a3588abf30b`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 572.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:6.2` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:b622f4d5e40b0eee47e8921e58bf47b4386d6848a25138f2990b51ff29ad10ea
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2303939 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fbdc7bc0be347a21372c0e27026aaed52c82f6e10346812a74ed1e600bc62ffc`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:31a291668d8269d931b36222f82e68693d3ceeb0b14beb151352a48cf3039f0b`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 2.3 MB (2268033 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2941958cabde76b2b69d8415de06be78af5d112424dff7f75e39d9d14ec4b80f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
 		Size: 35.9 KB (35906 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -4211,19 +4211,19 @@ $ docker pull redis@sha256:20ff6bf9347153313829be0bb4f63a14301d2510400da4f11c9dd
 ### `redis:6.2` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:c0250ac06a2ea7a4c8c9aaff342fb46beba265ac5d0dc2b604d40ee8f7a4e44c
+$ docker pull redis@sha256:a51735b8e69eec22b5ff00fdcbc8f6e301700e1639faa4bb0a03ed618992336c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.8 MB (44751246 bytes)**  
+-	Total Size: **44.7 MB (44746719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95fd9d12e1eeace2822764f53148d8fb737689b5c00df95fda411f915f3d30d1`
+-	Image ID: `sha256:43a9a90ba2a0654296bc74566c2e91a9f943e89826c68a9c20c31562cc3ee4d6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -4257,60 +4257,60 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d25201dfe67b028b41e127525cccfdb1e9d268f9ea6623c7754549d0cecf634c`  
-		Last Modified: Tue, 25 Feb 2025 04:16:11 GMT  
-		Size: 11.3 MB (11336134 bytes)  
+	-	`sha256:bbfa6153a65da74502240ff5101a251726453ab3f5907d9759be681a3c7eabad`  
+		Last Modified: Tue, 18 Mar 2025 00:57:20 GMT  
+		Size: 11.3 MB (11336140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c296c9eb95e1cde8279940d4aa8e04d8537b9da6163b0df4a2d3f452c912788`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
-		Size: 96.0 B  
+	-	`sha256:ffe7b28e45d18b91bb7510aa6c297fb89cc1b93d7a8c85e3cd57b1e2302fbc37`  
+		Last Modified: Tue, 18 Mar 2025 00:57:20 GMT  
+		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b63d28d506487cd7bf81d07e503e8c82d0c9b1b2888a9e3609442cc0d5ba70b9`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
-		Size: 571.0 B  
+	-	`sha256:ac1da68e7bcdd62e8adb2a7b668f16c3361f567350d1c98d09a9ad2a6c5f45cf`  
+		Last Modified: Tue, 18 Mar 2025 00:57:20 GMT  
+		Size: 573.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:6.2` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:09a13aa2888be32a6e48dbdb2a4d857a3b148f8594be0c28eb56315e73206852
+$ docker pull redis@sha256:77247cd3a175c8a22a020797b3a952a2bc42bc28708797e6b9b1c8810e401122
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305920 bytes)**  
+-	Total Size: **2.3 MB (2305928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53e4cc06cd29285914b94de9299fd2e2c859448536f8b4a2fca4f8dec05fe5a0`
+-	Image ID: `sha256:dcd67aa5bad3f63ae4e30a04216580654f5b392384d6383620023e2d9b167a3a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf3c21ca381edab3ce2448f8594780b70e01ae2366c3838d307665287844d355`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
-		Size: 2.3 MB (2270090 bytes)  
+	-	`sha256:362ffb4f39c87984155afd9f3ab4c19bb988a10696750cb92f540ac02decb71c`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 2.3 MB (2270098 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c724800e5de471d83819868c174e0193f26e385695889d871d4849c3d02eb652`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
+	-	`sha256:d730df665ebc5cd35ba45d57b75889296116b54d90718b511ee0be6c8f459ec9`  
+		Last Modified: Tue, 18 Mar 2025 00:57:18 GMT  
 		Size: 35.8 KB (35830 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6193,7 +6193,7 @@ $ docker pull redis@sha256:fedd171636ae5ab179e88c4ae0667051fc2b2f5e07d1dbdee749c
 ## `redis:6.2-bookworm`
 
 ```console
-$ docker pull redis@sha256:00916d19cbef5817c98dae9896d2d035769626312495dfbfab21b3066a031c62
+$ docker pull redis@sha256:289527f1c5b9e230695d4f806d8e64771c22ddb9b1e388e369a4e052299e8d0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -6324,19 +6324,19 @@ $ docker pull redis@sha256:535f5580571830143e8f734a293b4bc2eb9ece5b7e7767b04853f
 ### `redis:6.2-bookworm` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:9a5b95c8546333a8d79ed36bffec2388e472e2c7a99f7457a8853c9a38709fcc
+$ docker pull redis@sha256:09a58bee7dd9d39d0b30e395be884df9286892e87c39cfa6313af873acf55d24
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.2 MB (37228630 bytes)**  
+-	Total Size: **37.2 MB (37224066 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b6607745943ecc7e06b9d7c75300ed03d7cc4ff683c695398cbc249bcdd40d0`
+-	Image ID: `sha256:0f1174c9abce304e6ed8d1f4c4d992b05638ca2df03aa6f57c2a45f71e2346d6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -6370,166 +6370,166 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4d294b50c8e6abd2fe6a1ac4b0d477ec182d6273582ef92df5a8ead0bc4de8e`  
-		Last Modified: Tue, 25 Feb 2025 05:14:34 GMT  
-		Size: 10.1 MB (10071076 bytes)  
+	-	`sha256:a3241e0a167e98ffbdf84756a1df3a70221ad3d21e5c7436ff51f0325a1009df`  
+		Last Modified: Tue, 18 Mar 2025 03:25:42 GMT  
+		Size: 10.1 MB (10071190 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3b228cc6260f8512a70a21ca316c8d2adf8ed3543c8bf2811a80a9341db650e`  
-		Last Modified: Tue, 25 Feb 2025 05:14:33 GMT  
-		Size: 96.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb9a756209a51c79a8970541e2a2dcbf690cf925229d77fa7cbdd29abb606a44`  
-		Last Modified: Tue, 25 Feb 2025 05:14:33 GMT  
-		Size: 570.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `redis:6.2-bookworm` - unknown; unknown
-
-```console
-$ docker pull redis@sha256:59697ec1e8eb683032ff45b06b840f378940b752ad9342a866bfce44fd35dde4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305210 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64f3bda929ed9be294bcb9c9cc8583b52577e1d2ad97608ff813989b0fa8a392`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:ebff5d050ae34a0ad1b22d121e89e5279a1a0522db4dcf1391bab36ae327b223`  
-		Last Modified: Tue, 25 Feb 2025 05:14:33 GMT  
-		Size: 2.3 MB (2269300 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:d900b10debbf14503d968a781561f12037ee5733df3191ca5492aafa5f69128e`  
-		Last Modified: Tue, 25 Feb 2025 05:14:32 GMT  
-		Size: 35.9 KB (35910 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `redis:6.2-bookworm` - linux; arm variant v7
-
-```console
-$ docker pull redis@sha256:a5b11ead47f753bee7d6abe4ecbb0b25c2db7242006db2333b897c0031779795
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.1 MB (35116979 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a0ac4de4fdff85da583468a910c146af705c3eccf7f09469dfdf90862c5e009`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["redis-server"]`
-
-```dockerfile
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_VERSION=6.2.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.2.17.tar.gz
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_SHA=f7aab300407aaa005bc1a688e61287111f4ae13ed657ec50ef4ab529893ddc30
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN mkdir /data && chown redis:redis /data # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-VOLUME [/data]
-# Mon, 06 Jan 2025 16:14:31 GMT
-WORKDIR /data
-# Mon, 06 Jan 2025 16:14:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 06 Jan 2025 16:14:31 GMT
-EXPOSE map[6379/tcp:{}]
-# Mon, 06 Jan 2025 16:14:31 GMT
-CMD ["redis-server"]
-```
-
--	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 874.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84afee775ae09326ef89a31556836756b4f69d1621fab84442b212c87501d549`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
-		Size: 9.8 MB (9789141 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6161ceb47347b34a78e523a816a2825e24edb58598af88171e2f4b84a36784f8`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
+	-	`sha256:e9d19b0cf77b7b46714199e716403783284945049483e7e604aa5a1326556400`  
+		Last Modified: Tue, 18 Mar 2025 03:25:42 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c6beac13b608e98bcb1e87f38ea7d9b77b1506890f2dea9fa3bcb429d8b7ff7`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
+	-	`sha256:bfec2fb40d98fd28480ecc290bc1652c862ef6422a5cc29c42e15dbe5bbbeab8`  
+		Last Modified: Tue, 18 Mar 2025 03:25:42 GMT  
 		Size: 572.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:6.2-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:29651bded399ac5c3c470a1b739c8d2a9a344008e98428793587da8419ee5bdb
+$ docker pull redis@sha256:a1f7889ccec003951051b7f6bd7c13de4570f56f971d30774e06260aaccdc3f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303931 bytes)**  
+-	Total Size: **2.3 MB (2305218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3d34dc397eeb2221a1ad07e1c9a7e941473b5cc84985dc78a716c8d8434cde6`
+-	Image ID: `sha256:ee6ddf4c810f8a446a1cb8dd646770ca534a48dbd212132d80628384d8d5163e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:79257ce1cf9db6386f624d6a17e03dc27475fd463234548c1836c6ea57865b0c`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
-		Size: 2.3 MB (2268025 bytes)  
+	-	`sha256:fe2bde39b6e5fecdd6f9ce36ef8ecda7aab83a95a870ea293e16c9ac198bce0a`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 2.3 MB (2269308 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7b2ac4e1a62790ade70540c2fc09ca5252feec64c2b755b083083a43bb573358`  
-		Last Modified: Tue, 25 Feb 2025 07:01:51 GMT  
+	-	`sha256:8e3400292834d8a83d072e3fb531778cc0f4d469d204b7164234606d949464b3`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 35.9 KB (35910 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:6.2-bookworm` - linux; arm variant v7
+
+```console
+$ docker pull redis@sha256:41078faf31f96adc510ff805e25709c396646557b828ad4ac219a7149f0a01a8
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **35.1 MB (35112327 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:303410b418038bf3ae3684c92f24a7abe3316e9d68df6cd1a392768cfbd2a288`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV GOSU_VERSION=1.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_VERSION=6.2.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.2.17.tar.gz
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_SHA=f7aab300407aaa005bc1a688e61287111f4ae13ed657ec50ef4ab529893ddc30
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+VOLUME [/data]
+# Mon, 06 Jan 2025 16:14:31 GMT
+WORKDIR /data
+# Mon, 06 Jan 2025 16:14:31 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Mon, 06 Jan 2025 16:14:31 GMT
+EXPOSE map[6379/tcp:{}]
+# Mon, 06 Jan 2025 16:14:31 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 874.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fbea57beeba6b21eda9d22804f158b50e5ce6620b561d8a93d8e22d2428a0bde`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 9.8 MB (9789164 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7f5ab89167dee7f682e6f290d5ab088c992aeacd0319ac73a750764004299ab2`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 97.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2590150cb05e3c3cd213594bdb1546b8621b86823be34d0650a93a3588abf30b`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 572.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:6.2-bookworm` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:b622f4d5e40b0eee47e8921e58bf47b4386d6848a25138f2990b51ff29ad10ea
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2303939 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fbdc7bc0be347a21372c0e27026aaed52c82f6e10346812a74ed1e600bc62ffc`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:31a291668d8269d931b36222f82e68693d3ceeb0b14beb151352a48cf3039f0b`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 2.3 MB (2268033 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2941958cabde76b2b69d8415de06be78af5d112424dff7f75e39d9d14ec4b80f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
 		Size: 35.9 KB (35906 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -6850,19 +6850,19 @@ $ docker pull redis@sha256:20ff6bf9347153313829be0bb4f63a14301d2510400da4f11c9dd
 ### `redis:6.2-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:c0250ac06a2ea7a4c8c9aaff342fb46beba265ac5d0dc2b604d40ee8f7a4e44c
+$ docker pull redis@sha256:a51735b8e69eec22b5ff00fdcbc8f6e301700e1639faa4bb0a03ed618992336c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.8 MB (44751246 bytes)**  
+-	Total Size: **44.7 MB (44746719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95fd9d12e1eeace2822764f53148d8fb737689b5c00df95fda411f915f3d30d1`
+-	Image ID: `sha256:43a9a90ba2a0654296bc74566c2e91a9f943e89826c68a9c20c31562cc3ee4d6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -6896,60 +6896,60 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d25201dfe67b028b41e127525cccfdb1e9d268f9ea6623c7754549d0cecf634c`  
-		Last Modified: Tue, 25 Feb 2025 04:16:11 GMT  
-		Size: 11.3 MB (11336134 bytes)  
+	-	`sha256:bbfa6153a65da74502240ff5101a251726453ab3f5907d9759be681a3c7eabad`  
+		Last Modified: Tue, 18 Mar 2025 00:57:20 GMT  
+		Size: 11.3 MB (11336140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c296c9eb95e1cde8279940d4aa8e04d8537b9da6163b0df4a2d3f452c912788`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
-		Size: 96.0 B  
+	-	`sha256:ffe7b28e45d18b91bb7510aa6c297fb89cc1b93d7a8c85e3cd57b1e2302fbc37`  
+		Last Modified: Tue, 18 Mar 2025 00:57:20 GMT  
+		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b63d28d506487cd7bf81d07e503e8c82d0c9b1b2888a9e3609442cc0d5ba70b9`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
-		Size: 571.0 B  
+	-	`sha256:ac1da68e7bcdd62e8adb2a7b668f16c3361f567350d1c98d09a9ad2a6c5f45cf`  
+		Last Modified: Tue, 18 Mar 2025 00:57:20 GMT  
+		Size: 573.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:6.2-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:09a13aa2888be32a6e48dbdb2a4d857a3b148f8594be0c28eb56315e73206852
+$ docker pull redis@sha256:77247cd3a175c8a22a020797b3a952a2bc42bc28708797e6b9b1c8810e401122
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305920 bytes)**  
+-	Total Size: **2.3 MB (2305928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53e4cc06cd29285914b94de9299fd2e2c859448536f8b4a2fca4f8dec05fe5a0`
+-	Image ID: `sha256:dcd67aa5bad3f63ae4e30a04216580654f5b392384d6383620023e2d9b167a3a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf3c21ca381edab3ce2448f8594780b70e01ae2366c3838d307665287844d355`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
-		Size: 2.3 MB (2270090 bytes)  
+	-	`sha256:362ffb4f39c87984155afd9f3ab4c19bb988a10696750cb92f540ac02decb71c`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 2.3 MB (2270098 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c724800e5de471d83819868c174e0193f26e385695889d871d4849c3d02eb652`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
+	-	`sha256:d730df665ebc5cd35ba45d57b75889296116b54d90718b511ee0be6c8f459ec9`  
+		Last Modified: Tue, 18 Mar 2025 00:57:18 GMT  
 		Size: 35.8 KB (35830 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7062,7 +7062,7 @@ $ docker pull redis@sha256:dd0cb04837afbdb6246d09ed4d80deca53e50b506d7c1a6a268cb
 ## `redis:6.2.17`
 
 ```console
-$ docker pull redis@sha256:00916d19cbef5817c98dae9896d2d035769626312495dfbfab21b3066a031c62
+$ docker pull redis@sha256:289527f1c5b9e230695d4f806d8e64771c22ddb9b1e388e369a4e052299e8d0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -7193,19 +7193,19 @@ $ docker pull redis@sha256:535f5580571830143e8f734a293b4bc2eb9ece5b7e7767b04853f
 ### `redis:6.2.17` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:9a5b95c8546333a8d79ed36bffec2388e472e2c7a99f7457a8853c9a38709fcc
+$ docker pull redis@sha256:09a58bee7dd9d39d0b30e395be884df9286892e87c39cfa6313af873acf55d24
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.2 MB (37228630 bytes)**  
+-	Total Size: **37.2 MB (37224066 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b6607745943ecc7e06b9d7c75300ed03d7cc4ff683c695398cbc249bcdd40d0`
+-	Image ID: `sha256:0f1174c9abce304e6ed8d1f4c4d992b05638ca2df03aa6f57c2a45f71e2346d6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -7239,166 +7239,166 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4d294b50c8e6abd2fe6a1ac4b0d477ec182d6273582ef92df5a8ead0bc4de8e`  
-		Last Modified: Tue, 25 Feb 2025 05:14:34 GMT  
-		Size: 10.1 MB (10071076 bytes)  
+	-	`sha256:a3241e0a167e98ffbdf84756a1df3a70221ad3d21e5c7436ff51f0325a1009df`  
+		Last Modified: Tue, 18 Mar 2025 03:25:42 GMT  
+		Size: 10.1 MB (10071190 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3b228cc6260f8512a70a21ca316c8d2adf8ed3543c8bf2811a80a9341db650e`  
-		Last Modified: Tue, 25 Feb 2025 05:14:33 GMT  
-		Size: 96.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb9a756209a51c79a8970541e2a2dcbf690cf925229d77fa7cbdd29abb606a44`  
-		Last Modified: Tue, 25 Feb 2025 05:14:33 GMT  
-		Size: 570.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `redis:6.2.17` - unknown; unknown
-
-```console
-$ docker pull redis@sha256:59697ec1e8eb683032ff45b06b840f378940b752ad9342a866bfce44fd35dde4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305210 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64f3bda929ed9be294bcb9c9cc8583b52577e1d2ad97608ff813989b0fa8a392`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:ebff5d050ae34a0ad1b22d121e89e5279a1a0522db4dcf1391bab36ae327b223`  
-		Last Modified: Tue, 25 Feb 2025 05:14:33 GMT  
-		Size: 2.3 MB (2269300 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:d900b10debbf14503d968a781561f12037ee5733df3191ca5492aafa5f69128e`  
-		Last Modified: Tue, 25 Feb 2025 05:14:32 GMT  
-		Size: 35.9 KB (35910 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `redis:6.2.17` - linux; arm variant v7
-
-```console
-$ docker pull redis@sha256:a5b11ead47f753bee7d6abe4ecbb0b25c2db7242006db2333b897c0031779795
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.1 MB (35116979 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a0ac4de4fdff85da583468a910c146af705c3eccf7f09469dfdf90862c5e009`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["redis-server"]`
-
-```dockerfile
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_VERSION=6.2.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.2.17.tar.gz
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_SHA=f7aab300407aaa005bc1a688e61287111f4ae13ed657ec50ef4ab529893ddc30
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN mkdir /data && chown redis:redis /data # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-VOLUME [/data]
-# Mon, 06 Jan 2025 16:14:31 GMT
-WORKDIR /data
-# Mon, 06 Jan 2025 16:14:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 06 Jan 2025 16:14:31 GMT
-EXPOSE map[6379/tcp:{}]
-# Mon, 06 Jan 2025 16:14:31 GMT
-CMD ["redis-server"]
-```
-
--	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 874.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84afee775ae09326ef89a31556836756b4f69d1621fab84442b212c87501d549`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
-		Size: 9.8 MB (9789141 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6161ceb47347b34a78e523a816a2825e24edb58598af88171e2f4b84a36784f8`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
+	-	`sha256:e9d19b0cf77b7b46714199e716403783284945049483e7e604aa5a1326556400`  
+		Last Modified: Tue, 18 Mar 2025 03:25:42 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c6beac13b608e98bcb1e87f38ea7d9b77b1506890f2dea9fa3bcb429d8b7ff7`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
+	-	`sha256:bfec2fb40d98fd28480ecc290bc1652c862ef6422a5cc29c42e15dbe5bbbeab8`  
+		Last Modified: Tue, 18 Mar 2025 03:25:42 GMT  
 		Size: 572.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:6.2.17` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:29651bded399ac5c3c470a1b739c8d2a9a344008e98428793587da8419ee5bdb
+$ docker pull redis@sha256:a1f7889ccec003951051b7f6bd7c13de4570f56f971d30774e06260aaccdc3f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303931 bytes)**  
+-	Total Size: **2.3 MB (2305218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3d34dc397eeb2221a1ad07e1c9a7e941473b5cc84985dc78a716c8d8434cde6`
+-	Image ID: `sha256:ee6ddf4c810f8a446a1cb8dd646770ca534a48dbd212132d80628384d8d5163e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:79257ce1cf9db6386f624d6a17e03dc27475fd463234548c1836c6ea57865b0c`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
-		Size: 2.3 MB (2268025 bytes)  
+	-	`sha256:fe2bde39b6e5fecdd6f9ce36ef8ecda7aab83a95a870ea293e16c9ac198bce0a`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 2.3 MB (2269308 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7b2ac4e1a62790ade70540c2fc09ca5252feec64c2b755b083083a43bb573358`  
-		Last Modified: Tue, 25 Feb 2025 07:01:51 GMT  
+	-	`sha256:8e3400292834d8a83d072e3fb531778cc0f4d469d204b7164234606d949464b3`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 35.9 KB (35910 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:6.2.17` - linux; arm variant v7
+
+```console
+$ docker pull redis@sha256:41078faf31f96adc510ff805e25709c396646557b828ad4ac219a7149f0a01a8
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **35.1 MB (35112327 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:303410b418038bf3ae3684c92f24a7abe3316e9d68df6cd1a392768cfbd2a288`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV GOSU_VERSION=1.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_VERSION=6.2.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.2.17.tar.gz
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_SHA=f7aab300407aaa005bc1a688e61287111f4ae13ed657ec50ef4ab529893ddc30
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+VOLUME [/data]
+# Mon, 06 Jan 2025 16:14:31 GMT
+WORKDIR /data
+# Mon, 06 Jan 2025 16:14:31 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Mon, 06 Jan 2025 16:14:31 GMT
+EXPOSE map[6379/tcp:{}]
+# Mon, 06 Jan 2025 16:14:31 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 874.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fbea57beeba6b21eda9d22804f158b50e5ce6620b561d8a93d8e22d2428a0bde`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 9.8 MB (9789164 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7f5ab89167dee7f682e6f290d5ab088c992aeacd0319ac73a750764004299ab2`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 97.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2590150cb05e3c3cd213594bdb1546b8621b86823be34d0650a93a3588abf30b`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 572.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:6.2.17` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:b622f4d5e40b0eee47e8921e58bf47b4386d6848a25138f2990b51ff29ad10ea
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2303939 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fbdc7bc0be347a21372c0e27026aaed52c82f6e10346812a74ed1e600bc62ffc`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:31a291668d8269d931b36222f82e68693d3ceeb0b14beb151352a48cf3039f0b`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 2.3 MB (2268033 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2941958cabde76b2b69d8415de06be78af5d112424dff7f75e39d9d14ec4b80f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
 		Size: 35.9 KB (35906 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -7719,19 +7719,19 @@ $ docker pull redis@sha256:20ff6bf9347153313829be0bb4f63a14301d2510400da4f11c9dd
 ### `redis:6.2.17` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:c0250ac06a2ea7a4c8c9aaff342fb46beba265ac5d0dc2b604d40ee8f7a4e44c
+$ docker pull redis@sha256:a51735b8e69eec22b5ff00fdcbc8f6e301700e1639faa4bb0a03ed618992336c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.8 MB (44751246 bytes)**  
+-	Total Size: **44.7 MB (44746719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95fd9d12e1eeace2822764f53148d8fb737689b5c00df95fda411f915f3d30d1`
+-	Image ID: `sha256:43a9a90ba2a0654296bc74566c2e91a9f943e89826c68a9c20c31562cc3ee4d6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -7765,60 +7765,60 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d25201dfe67b028b41e127525cccfdb1e9d268f9ea6623c7754549d0cecf634c`  
-		Last Modified: Tue, 25 Feb 2025 04:16:11 GMT  
-		Size: 11.3 MB (11336134 bytes)  
+	-	`sha256:bbfa6153a65da74502240ff5101a251726453ab3f5907d9759be681a3c7eabad`  
+		Last Modified: Tue, 18 Mar 2025 00:57:20 GMT  
+		Size: 11.3 MB (11336140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c296c9eb95e1cde8279940d4aa8e04d8537b9da6163b0df4a2d3f452c912788`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
-		Size: 96.0 B  
+	-	`sha256:ffe7b28e45d18b91bb7510aa6c297fb89cc1b93d7a8c85e3cd57b1e2302fbc37`  
+		Last Modified: Tue, 18 Mar 2025 00:57:20 GMT  
+		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b63d28d506487cd7bf81d07e503e8c82d0c9b1b2888a9e3609442cc0d5ba70b9`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
-		Size: 571.0 B  
+	-	`sha256:ac1da68e7bcdd62e8adb2a7b668f16c3361f567350d1c98d09a9ad2a6c5f45cf`  
+		Last Modified: Tue, 18 Mar 2025 00:57:20 GMT  
+		Size: 573.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:6.2.17` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:09a13aa2888be32a6e48dbdb2a4d857a3b148f8594be0c28eb56315e73206852
+$ docker pull redis@sha256:77247cd3a175c8a22a020797b3a952a2bc42bc28708797e6b9b1c8810e401122
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305920 bytes)**  
+-	Total Size: **2.3 MB (2305928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53e4cc06cd29285914b94de9299fd2e2c859448536f8b4a2fca4f8dec05fe5a0`
+-	Image ID: `sha256:dcd67aa5bad3f63ae4e30a04216580654f5b392384d6383620023e2d9b167a3a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf3c21ca381edab3ce2448f8594780b70e01ae2366c3838d307665287844d355`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
-		Size: 2.3 MB (2270090 bytes)  
+	-	`sha256:362ffb4f39c87984155afd9f3ab4c19bb988a10696750cb92f540ac02decb71c`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 2.3 MB (2270098 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c724800e5de471d83819868c174e0193f26e385695889d871d4849c3d02eb652`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
+	-	`sha256:d730df665ebc5cd35ba45d57b75889296116b54d90718b511ee0be6c8f459ec9`  
+		Last Modified: Tue, 18 Mar 2025 00:57:18 GMT  
 		Size: 35.8 KB (35830 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -9701,7 +9701,7 @@ $ docker pull redis@sha256:fedd171636ae5ab179e88c4ae0667051fc2b2f5e07d1dbdee749c
 ## `redis:6.2.17-bookworm`
 
 ```console
-$ docker pull redis@sha256:00916d19cbef5817c98dae9896d2d035769626312495dfbfab21b3066a031c62
+$ docker pull redis@sha256:289527f1c5b9e230695d4f806d8e64771c22ddb9b1e388e369a4e052299e8d0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -9832,19 +9832,19 @@ $ docker pull redis@sha256:535f5580571830143e8f734a293b4bc2eb9ece5b7e7767b04853f
 ### `redis:6.2.17-bookworm` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:9a5b95c8546333a8d79ed36bffec2388e472e2c7a99f7457a8853c9a38709fcc
+$ docker pull redis@sha256:09a58bee7dd9d39d0b30e395be884df9286892e87c39cfa6313af873acf55d24
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **37.2 MB (37228630 bytes)**  
+-	Total Size: **37.2 MB (37224066 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3b6607745943ecc7e06b9d7c75300ed03d7cc4ff683c695398cbc249bcdd40d0`
+-	Image ID: `sha256:0f1174c9abce304e6ed8d1f4c4d992b05638ca2df03aa6f57c2a45f71e2346d6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -9878,166 +9878,166 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c4d294b50c8e6abd2fe6a1ac4b0d477ec182d6273582ef92df5a8ead0bc4de8e`  
-		Last Modified: Tue, 25 Feb 2025 05:14:34 GMT  
-		Size: 10.1 MB (10071076 bytes)  
+	-	`sha256:a3241e0a167e98ffbdf84756a1df3a70221ad3d21e5c7436ff51f0325a1009df`  
+		Last Modified: Tue, 18 Mar 2025 03:25:42 GMT  
+		Size: 10.1 MB (10071190 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b3b228cc6260f8512a70a21ca316c8d2adf8ed3543c8bf2811a80a9341db650e`  
-		Last Modified: Tue, 25 Feb 2025 05:14:33 GMT  
-		Size: 96.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bb9a756209a51c79a8970541e2a2dcbf690cf925229d77fa7cbdd29abb606a44`  
-		Last Modified: Tue, 25 Feb 2025 05:14:33 GMT  
-		Size: 570.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `redis:6.2.17-bookworm` - unknown; unknown
-
-```console
-$ docker pull redis@sha256:59697ec1e8eb683032ff45b06b840f378940b752ad9342a866bfce44fd35dde4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305210 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:64f3bda929ed9be294bcb9c9cc8583b52577e1d2ad97608ff813989b0fa8a392`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:ebff5d050ae34a0ad1b22d121e89e5279a1a0522db4dcf1391bab36ae327b223`  
-		Last Modified: Tue, 25 Feb 2025 05:14:33 GMT  
-		Size: 2.3 MB (2269300 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:d900b10debbf14503d968a781561f12037ee5733df3191ca5492aafa5f69128e`  
-		Last Modified: Tue, 25 Feb 2025 05:14:32 GMT  
-		Size: 35.9 KB (35910 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `redis:6.2.17-bookworm` - linux; arm variant v7
-
-```console
-$ docker pull redis@sha256:a5b11ead47f753bee7d6abe4ecbb0b25c2db7242006db2333b897c0031779795
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **35.1 MB (35116979 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4a0ac4de4fdff85da583468a910c146af705c3eccf7f09469dfdf90862c5e009`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["redis-server"]`
-
-```dockerfile
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_VERSION=6.2.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.2.17.tar.gz
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_SHA=f7aab300407aaa005bc1a688e61287111f4ae13ed657ec50ef4ab529893ddc30
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN mkdir /data && chown redis:redis /data # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-VOLUME [/data]
-# Mon, 06 Jan 2025 16:14:31 GMT
-WORKDIR /data
-# Mon, 06 Jan 2025 16:14:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 06 Jan 2025 16:14:31 GMT
-EXPOSE map[6379/tcp:{}]
-# Mon, 06 Jan 2025 16:14:31 GMT
-CMD ["redis-server"]
-```
-
--	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 874.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:84afee775ae09326ef89a31556836756b4f69d1621fab84442b212c87501d549`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
-		Size: 9.8 MB (9789141 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6161ceb47347b34a78e523a816a2825e24edb58598af88171e2f4b84a36784f8`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
+	-	`sha256:e9d19b0cf77b7b46714199e716403783284945049483e7e604aa5a1326556400`  
+		Last Modified: Tue, 18 Mar 2025 03:25:42 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2c6beac13b608e98bcb1e87f38ea7d9b77b1506890f2dea9fa3bcb429d8b7ff7`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
+	-	`sha256:bfec2fb40d98fd28480ecc290bc1652c862ef6422a5cc29c42e15dbe5bbbeab8`  
+		Last Modified: Tue, 18 Mar 2025 03:25:42 GMT  
 		Size: 572.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:6.2.17-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:29651bded399ac5c3c470a1b739c8d2a9a344008e98428793587da8419ee5bdb
+$ docker pull redis@sha256:a1f7889ccec003951051b7f6bd7c13de4570f56f971d30774e06260aaccdc3f5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303931 bytes)**  
+-	Total Size: **2.3 MB (2305218 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f3d34dc397eeb2221a1ad07e1c9a7e941473b5cc84985dc78a716c8d8434cde6`
+-	Image ID: `sha256:ee6ddf4c810f8a446a1cb8dd646770ca534a48dbd212132d80628384d8d5163e`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:79257ce1cf9db6386f624d6a17e03dc27475fd463234548c1836c6ea57865b0c`  
-		Last Modified: Tue, 25 Feb 2025 07:01:52 GMT  
-		Size: 2.3 MB (2268025 bytes)  
+	-	`sha256:fe2bde39b6e5fecdd6f9ce36ef8ecda7aab83a95a870ea293e16c9ac198bce0a`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 2.3 MB (2269308 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7b2ac4e1a62790ade70540c2fc09ca5252feec64c2b755b083083a43bb573358`  
-		Last Modified: Tue, 25 Feb 2025 07:01:51 GMT  
+	-	`sha256:8e3400292834d8a83d072e3fb531778cc0f4d469d204b7164234606d949464b3`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 35.9 KB (35910 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:6.2.17-bookworm` - linux; arm variant v7
+
+```console
+$ docker pull redis@sha256:41078faf31f96adc510ff805e25709c396646557b828ad4ac219a7149f0a01a8
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **35.1 MB (35112327 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:303410b418038bf3ae3684c92f24a7abe3316e9d68df6cd1a392768cfbd2a288`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV GOSU_VERSION=1.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_VERSION=6.2.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-6.2.17.tar.gz
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_SHA=f7aab300407aaa005bc1a688e61287111f4ae13ed657ec50ef4ab529893ddc30
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+VOLUME [/data]
+# Mon, 06 Jan 2025 16:14:31 GMT
+WORKDIR /data
+# Mon, 06 Jan 2025 16:14:31 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Mon, 06 Jan 2025 16:14:31 GMT
+EXPOSE map[6379/tcp:{}]
+# Mon, 06 Jan 2025 16:14:31 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 874.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:fbea57beeba6b21eda9d22804f158b50e5ce6620b561d8a93d8e22d2428a0bde`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 9.8 MB (9789164 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:7f5ab89167dee7f682e6f290d5ab088c992aeacd0319ac73a750764004299ab2`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 97.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2590150cb05e3c3cd213594bdb1546b8621b86823be34d0650a93a3588abf30b`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 572.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:6.2.17-bookworm` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:b622f4d5e40b0eee47e8921e58bf47b4386d6848a25138f2990b51ff29ad10ea
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2303939 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fbdc7bc0be347a21372c0e27026aaed52c82f6e10346812a74ed1e600bc62ffc`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:31a291668d8269d931b36222f82e68693d3ceeb0b14beb151352a48cf3039f0b`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 2.3 MB (2268033 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:2941958cabde76b2b69d8415de06be78af5d112424dff7f75e39d9d14ec4b80f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
 		Size: 35.9 KB (35906 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10358,19 +10358,19 @@ $ docker pull redis@sha256:20ff6bf9347153313829be0bb4f63a14301d2510400da4f11c9dd
 ### `redis:6.2.17-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:c0250ac06a2ea7a4c8c9aaff342fb46beba265ac5d0dc2b604d40ee8f7a4e44c
+$ docker pull redis@sha256:a51735b8e69eec22b5ff00fdcbc8f6e301700e1639faa4bb0a03ed618992336c
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **44.8 MB (44751246 bytes)**  
+-	Total Size: **44.7 MB (44746719 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:95fd9d12e1eeace2822764f53148d8fb737689b5c00df95fda411f915f3d30d1`
+-	Image ID: `sha256:43a9a90ba2a0654296bc74566c2e91a9f943e89826c68a9c20c31562cc3ee4d6`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -10404,60 +10404,60 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d25201dfe67b028b41e127525cccfdb1e9d268f9ea6623c7754549d0cecf634c`  
-		Last Modified: Tue, 25 Feb 2025 04:16:11 GMT  
-		Size: 11.3 MB (11336134 bytes)  
+	-	`sha256:bbfa6153a65da74502240ff5101a251726453ab3f5907d9759be681a3c7eabad`  
+		Last Modified: Tue, 18 Mar 2025 00:57:20 GMT  
+		Size: 11.3 MB (11336140 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6c296c9eb95e1cde8279940d4aa8e04d8537b9da6163b0df4a2d3f452c912788`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
-		Size: 96.0 B  
+	-	`sha256:ffe7b28e45d18b91bb7510aa6c297fb89cc1b93d7a8c85e3cd57b1e2302fbc37`  
+		Last Modified: Tue, 18 Mar 2025 00:57:20 GMT  
+		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b63d28d506487cd7bf81d07e503e8c82d0c9b1b2888a9e3609442cc0d5ba70b9`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
-		Size: 571.0 B  
+	-	`sha256:ac1da68e7bcdd62e8adb2a7b668f16c3361f567350d1c98d09a9ad2a6c5f45cf`  
+		Last Modified: Tue, 18 Mar 2025 00:57:20 GMT  
+		Size: 573.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:6.2.17-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:09a13aa2888be32a6e48dbdb2a4d857a3b148f8594be0c28eb56315e73206852
+$ docker pull redis@sha256:77247cd3a175c8a22a020797b3a952a2bc42bc28708797e6b9b1c8810e401122
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305920 bytes)**  
+-	Total Size: **2.3 MB (2305928 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:53e4cc06cd29285914b94de9299fd2e2c859448536f8b4a2fca4f8dec05fe5a0`
+-	Image ID: `sha256:dcd67aa5bad3f63ae4e30a04216580654f5b392384d6383620023e2d9b167a3a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:cf3c21ca381edab3ce2448f8594780b70e01ae2366c3838d307665287844d355`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
-		Size: 2.3 MB (2270090 bytes)  
+	-	`sha256:362ffb4f39c87984155afd9f3ab4c19bb988a10696750cb92f540ac02decb71c`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 2.3 MB (2270098 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:c724800e5de471d83819868c174e0193f26e385695889d871d4849c3d02eb652`  
-		Last Modified: Tue, 25 Feb 2025 04:16:10 GMT  
+	-	`sha256:d730df665ebc5cd35ba45d57b75889296116b54d90718b511ee0be6c8f459ec9`  
+		Last Modified: Tue, 18 Mar 2025 00:57:18 GMT  
 		Size: 35.8 KB (35830 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -10570,7 +10570,7 @@ $ docker pull redis@sha256:dd0cb04837afbdb6246d09ed4d80deca53e50b506d7c1a6a268cb
 ## `redis:7`
 
 ```console
-$ docker pull redis@sha256:92ae19b3c5506d686d0059b8d93d75f8ed2c59a5b97098e64c577a4683938011
+$ docker pull redis@sha256:5250fed70d8a66f4901a8beace6f85bee9550c0fc6fd42d10e2c1cd24cf93a0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -10701,19 +10701,19 @@ $ docker pull redis@sha256:35cff247eda14e361298009303bc898a5b076357ae65659245c0d
 ### `redis:7` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:0fa1495a0aabad5e5d8ff2563ffab9294200bd8d9d54ba2aeca2fb1ddccda698
+$ docker pull redis@sha256:5e9ec3905ce65d58171a1fb9b81703499923c7007d108371d96c00b827e1e27a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.2 MB (42212936 bytes)**  
+-	Total Size: **42.2 MB (42208345 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2330b40a34dbedb223b1b4e54b67ba2324d3fbefbae4eaa8bc1613a0d1154be8`
+-	Image ID: `sha256:ef005adb1638ca3e51bdd07e2448e223ea07bb285f055ae329c73d0471d3bd6e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -10747,166 +10747,166 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef3a33ef7a4a9d435bca9fa38e6aab6e4cd8b8ab84d419c9a7e02e560a50fca2`  
-		Last Modified: Tue, 25 Feb 2025 05:12:15 GMT  
-		Size: 15.1 MB (15055379 bytes)  
+	-	`sha256:caff19f61d9a707da84ea691fabf929157f75ddcdb1fcaf191da2ab62a48dfb3`  
+		Last Modified: Tue, 18 Mar 2025 03:28:19 GMT  
+		Size: 15.1 MB (15055469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58e6ac31808a5c59eb44277954da9ed62d72a3f0172cec64e092a376c52f16e`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 96.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c5883f66308051d64bdc794bc84ee0efb80dcc1fc5dfa8697e8a994b28edfdc`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 573.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `redis:7` - unknown; unknown
-
-```console
-$ docker pull redis@sha256:52cc1853849c8b31de9283ab87499539b45a2b98cf61dddf657adf447fe675d5
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2306415 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc9f91b01d5cbdb8fd6e2ac09828b9d0cfdd631e9d75369c6641db8c5f5a6615`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:ff3fcb32d91b9e7196013670b3586af01d26fafdefffc48bb6267da1f474d1a8`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 2.3 MB (2269906 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:4fec70f81167c6507bfab9a64496df0a2d9ae34df9f2b3d02a431b3b339e79d9`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 36.5 KB (36509 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `redis:7` - linux; arm variant v7
-
-```console
-$ docker pull redis@sha256:a5584862f18c25c38e32ddadcd1d34163dced89fc7bd159ea014f89992c6b0f1
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.0 MB (40044564 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cdf88ab9dd68a6165b8348147e7ef3680ce8eb2f8cce2e336391e1e63456d60`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["redis-server"]`
-
-```dockerfile
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_VERSION=7.4.2
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.2.tar.gz
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_SHA=4ddebbf09061cbb589011786febdb34f29767dd7f89dbe712d2b68e808af6a1f
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN mkdir /data && chown redis:redis /data # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-VOLUME [/data]
-# Mon, 06 Jan 2025 16:14:31 GMT
-WORKDIR /data
-# Mon, 06 Jan 2025 16:14:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 06 Jan 2025 16:14:31 GMT
-EXPOSE map[6379/tcp:{}]
-# Mon, 06 Jan 2025 16:14:31 GMT
-CMD ["redis-server"]
-```
-
--	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 874.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f569c441e2df3e37dff6badbd93de5fc4cd248c22245f520c9ccd51b872b8da7`  
-		Last Modified: Tue, 25 Feb 2025 06:59:39 GMT  
-		Size: 14.7 MB (14716726 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ea2cb0cacf250c5dc80e4f00f2bb9b3fa08546df3bef7a4a80395727bca7e7d`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
+	-	`sha256:9019693d66f9f3e6075fba903068207d42614d7739792798cfa638ed1125d62f`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0ac5645bfc7ff9f41f8247cda22097e112b8a353345c004960d4342efded0c0`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
+	-	`sha256:095d8e89d31383ab8ced5a24ede81ff078d97fd0144a2f1c2db82d52028bee73`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
 		Size: 572.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:4ca440c9eca61ae04ac91a9abb3320d2b27e276b1bfdcb870661d0812c0ddd16
+$ docker pull redis@sha256:9a578a34d34fab3683390158164785ccd3355176eb372b7c53c192d7fc3ef40d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305141 bytes)**  
+-	Total Size: **2.3 MB (2306424 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7afb4db1d9dad99202814528937460838d2ab8b7e75ace6c98b4b3210e4b267`
+-	Image ID: `sha256:a34d9f172fdd87cccd1d043b07d03544ac92326af3b03df752d0f8ff671ea88b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0376c712a46243f071b948bd9deab345ca99705f73664e3fc23f729bc0ef6143`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
-		Size: 2.3 MB (2268631 bytes)  
+	-	`sha256:7a42fd511cfb2b27ee7de53ac7e9b32aeeb8df41c63fe083f9f6f73656fa7cb0`  
+		Last Modified: Tue, 18 Mar 2025 03:28:19 GMT  
+		Size: 2.3 MB (2269914 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:930332ceacd02182b33f98b179985ce83399946c94bd184748cb37c70c148e4b`  
-		Last Modified: Tue, 25 Feb 2025 06:59:37 GMT  
+	-	`sha256:3a053044afff6c4a2bc293eb539b0e721ac7cba72ce802c596ba930ed5180c12`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
+		Size: 36.5 KB (36510 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:7` - linux; arm variant v7
+
+```console
+$ docker pull redis@sha256:abedb05e040ce2b2bb7844ac0584585292f8ec40c6c56934b145cd70bcf635fe
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **40.0 MB (40039922 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d2e98260995a5c554c04dc7a0865adf3fe065f5687298aa39d61ad93098055fb`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV GOSU_VERSION=1.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_VERSION=7.4.2
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.2.tar.gz
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_SHA=4ddebbf09061cbb589011786febdb34f29767dd7f89dbe712d2b68e808af6a1f
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+VOLUME [/data]
+# Mon, 06 Jan 2025 16:14:31 GMT
+WORKDIR /data
+# Mon, 06 Jan 2025 16:14:31 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Mon, 06 Jan 2025 16:14:31 GMT
+EXPOSE map[6379/tcp:{}]
+# Mon, 06 Jan 2025 16:14:31 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 874.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aabdbbd09f30ca42592cb2f87a4c2e1820193793b5f1c7eef2bbec9df65eb577`  
+		Last Modified: Tue, 18 Mar 2025 05:36:51 GMT  
+		Size: 14.7 MB (14716759 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2182888029a269071f6e24bc98aa0467efef8f9357ce5a1b7c5d2e3eff6472e0`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 97.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:301cd4c1b5ae4cd9e7859ab3fad483c04516e80e959392e74b0fe3e66adb29dd`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 572.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:7` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:5525c6e4f4e1380c5498f88619b48c3df01897415ba7f866e5fdf49b8265eb62
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2305149 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:63f3a4e1fc4d3a345e78c96f980d7df46662baee5073792e2cf586135b7a5cd4`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:82920500f27d621c0ff2d1c23a3f9b9bfa727f1213dd88561f7b7e1e18bcd154`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 2.3 MB (2268639 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:ba39e801b3bc3d76fde46e6046887095087b5e676d6c6cbae183cf151cee033b`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
 		Size: 36.5 KB (36510 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -11227,19 +11227,19 @@ $ docker pull redis@sha256:5aa496680deb3a58d5d9a7a185eaad6025e3df4f16994d1fbfa73
 ### `redis:7` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:7ee593194eae2ddf1b8318321c8a13f53563ec015d3a82cd37a85a76b0928ac5
+$ docker pull redis@sha256:8cc2d92056101d1381a659531b1ba1068f8175dba770383c14bb564e5a5d43db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.9 MB (49908846 bytes)**  
+-	Total Size: **49.9 MB (49904496 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:595efd1dc8729814abfd9e80f3e99081062d6b8696f0bc426d5fcf657dc74e61`
+-	Image ID: `sha256:f13d3f1d46c8d60ece6c915a1097ad79ed1cda1fb29492c9b8f7e5fab9478238`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -11273,79 +11273,79 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80706cc377f8d9a102a74286de034a5fae063a6fa707f7f898125e752f009d23`  
-		Last Modified: Tue, 25 Feb 2025 04:12:37 GMT  
-		Size: 16.5 MB (16493731 bytes)  
+	-	`sha256:de9548c45fa02a8c5ed14856b04d18a9f0f955cae23e9df9789d3f7922e978d9`  
+		Last Modified: Tue, 18 Mar 2025 01:35:38 GMT  
+		Size: 16.5 MB (16493919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0a526c1b8dbd3e19b68a11f1dbe00fd131c699b1ae9d3cdc281e0560ec20a6e`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
+	-	`sha256:9bba7f2963eea990e234b787d45bbe03e37b00d337b558f46948ebec8a857df1`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00089b95a85fb4056df10d7dfaee161e76334827ab04fe266155bc10d63e2326`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 573.0 B  
+	-	`sha256:1a6b308d981b284b50e831c45ef149851b555ea8f59588276f22991fad08ac6f`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
+		Size: 571.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:273bdb71e82e5847950567493b13c60acaf16c2a94cb59c5bb4008440d55af76
+$ docker pull redis@sha256:af50d2411a66c24584e4a41b341887977324b323ba169d1fb457aa856adc5c9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2307118 bytes)**  
+-	Total Size: **2.3 MB (2307125 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:67e31d28eba30fbf00aea7cd054f2eff4762ff446ede779d6ff442a34a966119`
+-	Image ID: `sha256:c76e1b9339b2f969a81c9f4c42f7ebbdba6327ec738eb60b739c3b6cdd9e9cbc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:91b6a836a9c205e93ed1fe579d71deb33299b33242e5a021a94fd513e7371449`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 2.3 MB (2270692 bytes)  
+	-	`sha256:ef6b6bfee37f14992a15c1246d6998b318e2299260bcdafc934e1613e1d0fa5d`  
+		Last Modified: Tue, 18 Mar 2025 01:35:38 GMT  
+		Size: 2.3 MB (2270700 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:db05e61a4dd2db0c71aec9230270a2898c124bb1867e68aa1d5b94f9c750c8e0`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 36.4 KB (36426 bytes)  
+	-	`sha256:734a0c5e6ba6baf1ae2acf78440f94bd2479d1e5f75eabe3b8449ec1035769ab`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
+		Size: 36.4 KB (36425 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:7` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:b9769d5d5c730089b3f02957a514c1699924f86ce1996a707586f17f38afad13
+$ docker pull redis@sha256:4fa8c4464dfdb2af83fa5a03dba0840a04f73b3de484514ff719d0c718c967a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.6 MB (43637803 bytes)**  
+-	Total Size: **43.6 MB (43633976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c195a8f1678beaecb22ee2c4eb176e2f476a57123437674fde2cc2e70478191`
+-	Image ID: `sha256:c1028df9e9133ecf7e82ca2381785489deb4412394d643019b472a98cbeaac52`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -11379,60 +11379,60 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:6d4d169c55c2ee02478b6705c4ba9e6795bffbbb872a22adfd95fb2484f2e85c`  
-		Last Modified: Tue, 25 Feb 2025 01:30:03 GMT  
-		Size: 26.9 MB (26864838 bytes)  
+	-	`sha256:c25b115468ab81aaa9017d4d794bc086cba904c84f73abda1eac28615cd44629`  
+		Last Modified: Mon, 17 Mar 2025 22:27:10 GMT  
+		Size: 26.9 MB (26861059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8623e0eab86b24357c3c02e81a4d608209ed331967fe22e6e754b2d72dac261`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
+	-	`sha256:55fef5a169b7602dfb48d72cd6904c66536a89d9114cd0e72ec5ef46aa34579b`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7ff0980913721f64a17edc5b03d307593f905efd57d1b93af34c44615816ac3`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 876.0 B  
+	-	`sha256:22aab92482471047b4820276b1f029b286dec6a8db976e61a3a4e1edeba96592`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34dd6c787468788f646cd187d5359d4ae83605c73853673109cd751bf93e4f9f`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 1.4 MB (1403066 bytes)  
+	-	`sha256:5b959d82dc4ff71bfdfac0434f1a1ca1ddf4aed07f4a46a3f156b0fb749fccdf`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 1.4 MB (1403033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:176a2d51bb33cc610d7aff271ae07e7652026a3df79958477ed46e59cc7ed136`  
-		Last Modified: Tue, 25 Feb 2025 03:50:33 GMT  
-		Size: 15.4 MB (15367223 bytes)  
+	-	`sha256:943f154a36dc95398a8304fcc18facc66c7462133fee6e72133019e98d2a8c29`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
+		Size: 15.4 MB (15367211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a65d62004eda6db61b12017e75b4f1057bf1cb89e7afd7aa2df18d30e8921395`  
-		Last Modified: Tue, 25 Feb 2025 03:50:32 GMT  
+	-	`sha256:5fac48b60b6bf26be1a236e78e720e3508edbe7b1af5a9ce62a4898582a774fd`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c70505fbef35515ca99caba26376c33c628595338cb5e308c5feb314d826ac7`  
-		Last Modified: Tue, 25 Feb 2025 03:50:32 GMT  
+	-	`sha256:bfad3fa43456f6ca6b4a177711f0de7d0dfd73262720836e3ab912ca90b4fddf`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 569.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:dc743f0548ba8465af0c943585590713a51314ea8bcdd7b1844e5af530acbe11
+$ docker pull redis@sha256:24d8fb94742c5dfef5a38ef70d1c9077de683cafb3caefafe98bd2acc2541979
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2302452 bytes)**  
+-	Total Size: **2.3 MB (2302460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c97a881336f3ab2e3b007b18681a2689f92214073b3b3fa3ba9f0a94f976a167`
+-	Image ID: `sha256:1cf2dc6b6e64f72e11afba495c5cc1b3ab1384634e62e83008dc494e1f0cf6c8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e7819cdd1cd5547760ee9f649ad8428145dae6d5460f818ea8945b827f40099`  
-		Last Modified: Tue, 25 Feb 2025 03:50:31 GMT  
-		Size: 2.3 MB (2266102 bytes)  
+	-	`sha256:4686149a235a6c5bc8d6b9abaf4b50f62b255628b014c1e0ecfab7deddc9ac56`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
+		Size: 2.3 MB (2266110 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:279b1febb3ce3bcc61d796ea1a0ffa11225a91181f427607d05efec61a37f496`  
-		Last Modified: Tue, 25 Feb 2025 03:50:31 GMT  
+	-	`sha256:9729e5874e58e405d54258e5d5ebc80652618746c66818229b7fc18070750b93`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 36.4 KB (36350 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13209,7 +13209,7 @@ $ docker pull redis@sha256:025ea6bc45deab5c1ee75351613abbf7a2706a79dfeea821e46e5
 ## `redis:7-bookworm`
 
 ```console
-$ docker pull redis@sha256:92ae19b3c5506d686d0059b8d93d75f8ed2c59a5b97098e64c577a4683938011
+$ docker pull redis@sha256:5250fed70d8a66f4901a8beace6f85bee9550c0fc6fd42d10e2c1cd24cf93a0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -13340,19 +13340,19 @@ $ docker pull redis@sha256:35cff247eda14e361298009303bc898a5b076357ae65659245c0d
 ### `redis:7-bookworm` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:0fa1495a0aabad5e5d8ff2563ffab9294200bd8d9d54ba2aeca2fb1ddccda698
+$ docker pull redis@sha256:5e9ec3905ce65d58171a1fb9b81703499923c7007d108371d96c00b827e1e27a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.2 MB (42212936 bytes)**  
+-	Total Size: **42.2 MB (42208345 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2330b40a34dbedb223b1b4e54b67ba2324d3fbefbae4eaa8bc1613a0d1154be8`
+-	Image ID: `sha256:ef005adb1638ca3e51bdd07e2448e223ea07bb285f055ae329c73d0471d3bd6e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -13386,166 +13386,166 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef3a33ef7a4a9d435bca9fa38e6aab6e4cd8b8ab84d419c9a7e02e560a50fca2`  
-		Last Modified: Tue, 25 Feb 2025 05:12:15 GMT  
-		Size: 15.1 MB (15055379 bytes)  
+	-	`sha256:caff19f61d9a707da84ea691fabf929157f75ddcdb1fcaf191da2ab62a48dfb3`  
+		Last Modified: Tue, 18 Mar 2025 03:28:19 GMT  
+		Size: 15.1 MB (15055469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58e6ac31808a5c59eb44277954da9ed62d72a3f0172cec64e092a376c52f16e`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 96.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c5883f66308051d64bdc794bc84ee0efb80dcc1fc5dfa8697e8a994b28edfdc`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 573.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `redis:7-bookworm` - unknown; unknown
-
-```console
-$ docker pull redis@sha256:52cc1853849c8b31de9283ab87499539b45a2b98cf61dddf657adf447fe675d5
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2306415 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc9f91b01d5cbdb8fd6e2ac09828b9d0cfdd631e9d75369c6641db8c5f5a6615`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:ff3fcb32d91b9e7196013670b3586af01d26fafdefffc48bb6267da1f474d1a8`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 2.3 MB (2269906 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:4fec70f81167c6507bfab9a64496df0a2d9ae34df9f2b3d02a431b3b339e79d9`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 36.5 KB (36509 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `redis:7-bookworm` - linux; arm variant v7
-
-```console
-$ docker pull redis@sha256:a5584862f18c25c38e32ddadcd1d34163dced89fc7bd159ea014f89992c6b0f1
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.0 MB (40044564 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cdf88ab9dd68a6165b8348147e7ef3680ce8eb2f8cce2e336391e1e63456d60`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["redis-server"]`
-
-```dockerfile
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_VERSION=7.4.2
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.2.tar.gz
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_SHA=4ddebbf09061cbb589011786febdb34f29767dd7f89dbe712d2b68e808af6a1f
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN mkdir /data && chown redis:redis /data # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-VOLUME [/data]
-# Mon, 06 Jan 2025 16:14:31 GMT
-WORKDIR /data
-# Mon, 06 Jan 2025 16:14:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 06 Jan 2025 16:14:31 GMT
-EXPOSE map[6379/tcp:{}]
-# Mon, 06 Jan 2025 16:14:31 GMT
-CMD ["redis-server"]
-```
-
--	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 874.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f569c441e2df3e37dff6badbd93de5fc4cd248c22245f520c9ccd51b872b8da7`  
-		Last Modified: Tue, 25 Feb 2025 06:59:39 GMT  
-		Size: 14.7 MB (14716726 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ea2cb0cacf250c5dc80e4f00f2bb9b3fa08546df3bef7a4a80395727bca7e7d`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
+	-	`sha256:9019693d66f9f3e6075fba903068207d42614d7739792798cfa638ed1125d62f`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0ac5645bfc7ff9f41f8247cda22097e112b8a353345c004960d4342efded0c0`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
+	-	`sha256:095d8e89d31383ab8ced5a24ede81ff078d97fd0144a2f1c2db82d52028bee73`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
 		Size: 572.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:4ca440c9eca61ae04ac91a9abb3320d2b27e276b1bfdcb870661d0812c0ddd16
+$ docker pull redis@sha256:9a578a34d34fab3683390158164785ccd3355176eb372b7c53c192d7fc3ef40d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305141 bytes)**  
+-	Total Size: **2.3 MB (2306424 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7afb4db1d9dad99202814528937460838d2ab8b7e75ace6c98b4b3210e4b267`
+-	Image ID: `sha256:a34d9f172fdd87cccd1d043b07d03544ac92326af3b03df752d0f8ff671ea88b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0376c712a46243f071b948bd9deab345ca99705f73664e3fc23f729bc0ef6143`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
-		Size: 2.3 MB (2268631 bytes)  
+	-	`sha256:7a42fd511cfb2b27ee7de53ac7e9b32aeeb8df41c63fe083f9f6f73656fa7cb0`  
+		Last Modified: Tue, 18 Mar 2025 03:28:19 GMT  
+		Size: 2.3 MB (2269914 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:930332ceacd02182b33f98b179985ce83399946c94bd184748cb37c70c148e4b`  
-		Last Modified: Tue, 25 Feb 2025 06:59:37 GMT  
+	-	`sha256:3a053044afff6c4a2bc293eb539b0e721ac7cba72ce802c596ba930ed5180c12`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
+		Size: 36.5 KB (36510 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:7-bookworm` - linux; arm variant v7
+
+```console
+$ docker pull redis@sha256:abedb05e040ce2b2bb7844ac0584585292f8ec40c6c56934b145cd70bcf635fe
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **40.0 MB (40039922 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d2e98260995a5c554c04dc7a0865adf3fe065f5687298aa39d61ad93098055fb`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV GOSU_VERSION=1.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_VERSION=7.4.2
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.2.tar.gz
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_SHA=4ddebbf09061cbb589011786febdb34f29767dd7f89dbe712d2b68e808af6a1f
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+VOLUME [/data]
+# Mon, 06 Jan 2025 16:14:31 GMT
+WORKDIR /data
+# Mon, 06 Jan 2025 16:14:31 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Mon, 06 Jan 2025 16:14:31 GMT
+EXPOSE map[6379/tcp:{}]
+# Mon, 06 Jan 2025 16:14:31 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 874.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aabdbbd09f30ca42592cb2f87a4c2e1820193793b5f1c7eef2bbec9df65eb577`  
+		Last Modified: Tue, 18 Mar 2025 05:36:51 GMT  
+		Size: 14.7 MB (14716759 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2182888029a269071f6e24bc98aa0467efef8f9357ce5a1b7c5d2e3eff6472e0`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 97.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:301cd4c1b5ae4cd9e7859ab3fad483c04516e80e959392e74b0fe3e66adb29dd`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 572.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:7-bookworm` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:5525c6e4f4e1380c5498f88619b48c3df01897415ba7f866e5fdf49b8265eb62
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2305149 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:63f3a4e1fc4d3a345e78c96f980d7df46662baee5073792e2cf586135b7a5cd4`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:82920500f27d621c0ff2d1c23a3f9b9bfa727f1213dd88561f7b7e1e18bcd154`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 2.3 MB (2268639 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:ba39e801b3bc3d76fde46e6046887095087b5e676d6c6cbae183cf151cee033b`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
 		Size: 36.5 KB (36510 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -13866,19 +13866,19 @@ $ docker pull redis@sha256:5aa496680deb3a58d5d9a7a185eaad6025e3df4f16994d1fbfa73
 ### `redis:7-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:7ee593194eae2ddf1b8318321c8a13f53563ec015d3a82cd37a85a76b0928ac5
+$ docker pull redis@sha256:8cc2d92056101d1381a659531b1ba1068f8175dba770383c14bb564e5a5d43db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.9 MB (49908846 bytes)**  
+-	Total Size: **49.9 MB (49904496 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:595efd1dc8729814abfd9e80f3e99081062d6b8696f0bc426d5fcf657dc74e61`
+-	Image ID: `sha256:f13d3f1d46c8d60ece6c915a1097ad79ed1cda1fb29492c9b8f7e5fab9478238`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -13912,79 +13912,79 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80706cc377f8d9a102a74286de034a5fae063a6fa707f7f898125e752f009d23`  
-		Last Modified: Tue, 25 Feb 2025 04:12:37 GMT  
-		Size: 16.5 MB (16493731 bytes)  
+	-	`sha256:de9548c45fa02a8c5ed14856b04d18a9f0f955cae23e9df9789d3f7922e978d9`  
+		Last Modified: Tue, 18 Mar 2025 01:35:38 GMT  
+		Size: 16.5 MB (16493919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0a526c1b8dbd3e19b68a11f1dbe00fd131c699b1ae9d3cdc281e0560ec20a6e`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
+	-	`sha256:9bba7f2963eea990e234b787d45bbe03e37b00d337b558f46948ebec8a857df1`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00089b95a85fb4056df10d7dfaee161e76334827ab04fe266155bc10d63e2326`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 573.0 B  
+	-	`sha256:1a6b308d981b284b50e831c45ef149851b555ea8f59588276f22991fad08ac6f`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
+		Size: 571.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:273bdb71e82e5847950567493b13c60acaf16c2a94cb59c5bb4008440d55af76
+$ docker pull redis@sha256:af50d2411a66c24584e4a41b341887977324b323ba169d1fb457aa856adc5c9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2307118 bytes)**  
+-	Total Size: **2.3 MB (2307125 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:67e31d28eba30fbf00aea7cd054f2eff4762ff446ede779d6ff442a34a966119`
+-	Image ID: `sha256:c76e1b9339b2f969a81c9f4c42f7ebbdba6327ec738eb60b739c3b6cdd9e9cbc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:91b6a836a9c205e93ed1fe579d71deb33299b33242e5a021a94fd513e7371449`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 2.3 MB (2270692 bytes)  
+	-	`sha256:ef6b6bfee37f14992a15c1246d6998b318e2299260bcdafc934e1613e1d0fa5d`  
+		Last Modified: Tue, 18 Mar 2025 01:35:38 GMT  
+		Size: 2.3 MB (2270700 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:db05e61a4dd2db0c71aec9230270a2898c124bb1867e68aa1d5b94f9c750c8e0`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 36.4 KB (36426 bytes)  
+	-	`sha256:734a0c5e6ba6baf1ae2acf78440f94bd2479d1e5f75eabe3b8449ec1035769ab`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
+		Size: 36.4 KB (36425 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:7-bookworm` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:b9769d5d5c730089b3f02957a514c1699924f86ce1996a707586f17f38afad13
+$ docker pull redis@sha256:4fa8c4464dfdb2af83fa5a03dba0840a04f73b3de484514ff719d0c718c967a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.6 MB (43637803 bytes)**  
+-	Total Size: **43.6 MB (43633976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c195a8f1678beaecb22ee2c4eb176e2f476a57123437674fde2cc2e70478191`
+-	Image ID: `sha256:c1028df9e9133ecf7e82ca2381785489deb4412394d643019b472a98cbeaac52`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -14018,67 +14018,67 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:6d4d169c55c2ee02478b6705c4ba9e6795bffbbb872a22adfd95fb2484f2e85c`  
-		Last Modified: Tue, 25 Feb 2025 01:30:03 GMT  
-		Size: 26.9 MB (26864838 bytes)  
+	-	`sha256:c25b115468ab81aaa9017d4d794bc086cba904c84f73abda1eac28615cd44629`  
+		Last Modified: Mon, 17 Mar 2025 22:27:10 GMT  
+		Size: 26.9 MB (26861059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8623e0eab86b24357c3c02e81a4d608209ed331967fe22e6e754b2d72dac261`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
+	-	`sha256:55fef5a169b7602dfb48d72cd6904c66536a89d9114cd0e72ec5ef46aa34579b`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7ff0980913721f64a17edc5b03d307593f905efd57d1b93af34c44615816ac3`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 876.0 B  
+	-	`sha256:22aab92482471047b4820276b1f029b286dec6a8db976e61a3a4e1edeba96592`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34dd6c787468788f646cd187d5359d4ae83605c73853673109cd751bf93e4f9f`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 1.4 MB (1403066 bytes)  
+	-	`sha256:5b959d82dc4ff71bfdfac0434f1a1ca1ddf4aed07f4a46a3f156b0fb749fccdf`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 1.4 MB (1403033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:176a2d51bb33cc610d7aff271ae07e7652026a3df79958477ed46e59cc7ed136`  
-		Last Modified: Tue, 25 Feb 2025 03:50:33 GMT  
-		Size: 15.4 MB (15367223 bytes)  
+	-	`sha256:943f154a36dc95398a8304fcc18facc66c7462133fee6e72133019e98d2a8c29`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
+		Size: 15.4 MB (15367211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a65d62004eda6db61b12017e75b4f1057bf1cb89e7afd7aa2df18d30e8921395`  
-		Last Modified: Tue, 25 Feb 2025 03:50:32 GMT  
+	-	`sha256:5fac48b60b6bf26be1a236e78e720e3508edbe7b1af5a9ce62a4898582a774fd`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c70505fbef35515ca99caba26376c33c628595338cb5e308c5feb314d826ac7`  
-		Last Modified: Tue, 25 Feb 2025 03:50:32 GMT  
+	-	`sha256:bfad3fa43456f6ca6b4a177711f0de7d0dfd73262720836e3ab912ca90b4fddf`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 569.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:dc743f0548ba8465af0c943585590713a51314ea8bcdd7b1844e5af530acbe11
+$ docker pull redis@sha256:24d8fb94742c5dfef5a38ef70d1c9077de683cafb3caefafe98bd2acc2541979
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2302452 bytes)**  
+-	Total Size: **2.3 MB (2302460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c97a881336f3ab2e3b007b18681a2689f92214073b3b3fa3ba9f0a94f976a167`
+-	Image ID: `sha256:1cf2dc6b6e64f72e11afba495c5cc1b3ab1384634e62e83008dc494e1f0cf6c8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e7819cdd1cd5547760ee9f649ad8428145dae6d5460f818ea8945b827f40099`  
-		Last Modified: Tue, 25 Feb 2025 03:50:31 GMT  
-		Size: 2.3 MB (2266102 bytes)  
+	-	`sha256:4686149a235a6c5bc8d6b9abaf4b50f62b255628b014c1e0ecfab7deddc9ac56`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
+		Size: 2.3 MB (2266110 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:279b1febb3ce3bcc61d796ea1a0ffa11225a91181f427607d05efec61a37f496`  
-		Last Modified: Tue, 25 Feb 2025 03:50:31 GMT  
+	-	`sha256:9729e5874e58e405d54258e5d5ebc80652618746c66818229b7fc18070750b93`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 36.4 KB (36350 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `redis:7.2`
 
 ```console
-$ docker pull redis@sha256:2f9c6af4f0cf8ca6f65d76fe3c6df5b77a4ae514380d24aa32af86ee24210214
+$ docker pull redis@sha256:ebddd3e0d9daf787996897a805d63105cd8edc5f0f4fde8db7a6a76bfe0e050f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14209,19 +14209,19 @@ $ docker pull redis@sha256:ecd1ef7026c50fdaa8ba37f8f496f6d29bb640f89d8b510b7380e
 ### `redis:7.2` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:d4e2f0eb67ad63fa41173eb973f47ed173e8b9e37e9ac5c1fe8faf47da2cf779
+$ docker pull redis@sha256:cee247d275839042b230139dced913bec75d1c5359350e12576b114ba5242fd9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.7 MB (41749911 bytes)**  
+-	Total Size: **41.7 MB (41745327 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:befbef5202f878b9ca31e6b96b3a09229ad85072217fae6f5f4804a3ed494338`
+-	Image ID: `sha256:65533a52a022045fe433cfb4b8c6a1942c53092effa6681d6fd9e080d7bfd7df`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -14255,166 +14255,166 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e96184ce41fd642a1f7837468b090a5f87cb3f4c18f0e064eeb13e94d8cb897`  
-		Last Modified: Tue, 25 Feb 2025 05:13:30 GMT  
-		Size: 14.6 MB (14592356 bytes)  
+	-	`sha256:4833b73828b083bc42edab27decdf379f7e378a4242bc8900f9674a6c37014c6`  
+		Last Modified: Tue, 18 Mar 2025 03:26:57 GMT  
+		Size: 14.6 MB (14592450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9db9f1aacab1a57aa90bbd8a24fbd587844083a614cc0b83d167a071ff66faf`  
-		Last Modified: Tue, 25 Feb 2025 05:13:29 GMT  
-		Size: 96.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbf279f72bef44c47ca36bc091bfb0e2e36faeb59a01a12e5ff054c502c77c04`  
-		Last Modified: Tue, 25 Feb 2025 05:13:29 GMT  
-		Size: 571.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `redis:7.2` - unknown; unknown
-
-```console
-$ docker pull redis@sha256:2235eea5ebc14b726852b37eb9139ba99ce8cecbf359dafee1619b7ea87e95c4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303980 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3aca31f7535bfc5f72d983aed1f5eea86f190e3907d1b06ad63a189c5b56763a`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:5e5787e512eccc9d0d99d293a3213fa8d9dee78552f3fcaf6bdcaa453a27e548`  
-		Last Modified: Tue, 25 Feb 2025 05:13:29 GMT  
-		Size: 2.3 MB (2268688 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:5da10d325ef93116f9d076eca1b507c57e90202d045b086925c0d67098070612`  
-		Last Modified: Tue, 25 Feb 2025 05:13:29 GMT  
-		Size: 35.3 KB (35292 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `redis:7.2` - linux; arm variant v7
-
-```console
-$ docker pull redis@sha256:1f81ed4df7e35d6ec2ac36d2deefe272f936f1ea85348de324e3be223510f05e
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.6 MB (39586697 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d334b335c8eca05e127ff81ce3bae96e0478b0306fcdf7ba1e7e3d63dcd5f695`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["redis-server"]`
-
-```dockerfile
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_VERSION=7.2.7
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.2.7.tar.gz
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_SHA=72c081e3b8cfae7144273d26d76736f08319000af46c01515cad5d29765cead5
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN mkdir /data && chown redis:redis /data # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-VOLUME [/data]
-# Mon, 06 Jan 2025 16:14:31 GMT
-WORKDIR /data
-# Mon, 06 Jan 2025 16:14:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 06 Jan 2025 16:14:31 GMT
-EXPOSE map[6379/tcp:{}]
-# Mon, 06 Jan 2025 16:14:31 GMT
-CMD ["redis-server"]
-```
-
--	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 874.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f73ca3b1fd87d855cc2d7aa0ef71ccf4daebeefa87a3bde519e5d3a82d417301`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
-		Size: 14.3 MB (14258861 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39fe00ba7caf85a7fac610f5b6a894c40c1de4025846f5efd64d9e30a822c754`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
+	-	`sha256:97dfb3c1d33b5a37ac79ea0d2a3331f8c6b3686b2ad9af64deba5bb8fd02b8bd`  
+		Last Modified: Tue, 18 Mar 2025 03:26:57 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10b6713f9d13d55656c64e536980bdb0c74de9700d90bdfa7c808c80e5587f9b`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
-		Size: 570.0 B  
+	-	`sha256:fb69d0db6179b728ddffe5963bac2c82781accb0dc8e6d1e4e45bc3c6de130a8`  
+		Last Modified: Tue, 18 Mar 2025 03:26:57 GMT  
+		Size: 573.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.2` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:0caaefa198c261b850ca33c289179c24ecd3d4bd47c89eedff8e0e0ab1e73421
+$ docker pull redis@sha256:60d469b52ceac7ee200a1f674b32abdfa11500dd3b70135022a657810c059894
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2302704 bytes)**  
+-	Total Size: **2.3 MB (2303988 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f723b3e7d7083a35c6949d028bda074701f9c44124106392468292d8b9daf8cd`
+-	Image ID: `sha256:4f877320c91ca0dd7f554bea981de310d0deef617a4dce3dc15cddc603818f54`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:03d120e45cb2abd65e91b8492b001a49b9c70f681ada940c4969b564687f7e55`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
-		Size: 2.3 MB (2267413 bytes)  
+	-	`sha256:915df282e6a2586da40db755cf929c82640d01a77803c25e9fdbc48d5905cac0`  
+		Last Modified: Tue, 18 Mar 2025 03:26:57 GMT  
+		Size: 2.3 MB (2268696 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f44742b7e335c4f58bf5e026f5fe96e1007b53282e02c2ee1269ac24bc46d612`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
+	-	`sha256:8ad5cda5f18ede35ccdcbdade39d21b934cf3cfdefacbd52df1983ee73e9695b`  
+		Last Modified: Tue, 18 Mar 2025 03:26:56 GMT  
+		Size: 35.3 KB (35292 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:7.2` - linux; arm variant v7
+
+```console
+$ docker pull redis@sha256:e4f46052d416bbf1b551b705f309f9d4e6e4a64771b566e457f377976542a30b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **39.6 MB (39582031 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e090c75861cd99a8c2fb2fe1b62fc809a527b8645abb85c674ff1494750fad73`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV GOSU_VERSION=1.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_VERSION=7.2.7
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.2.7.tar.gz
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_SHA=72c081e3b8cfae7144273d26d76736f08319000af46c01515cad5d29765cead5
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+VOLUME [/data]
+# Mon, 06 Jan 2025 16:14:31 GMT
+WORKDIR /data
+# Mon, 06 Jan 2025 16:14:31 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Mon, 06 Jan 2025 16:14:31 GMT
+EXPOSE map[6379/tcp:{}]
+# Mon, 06 Jan 2025 16:14:31 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 874.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:75708fabf1f094cb89940b4ee22ac01d66fc2a047fea8f7c13b703f9606ea210`  
+		Last Modified: Tue, 18 Mar 2025 05:30:08 GMT  
+		Size: 14.3 MB (14258869 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3872999484c4b80487462fab3ce31139af9340d1544f8c1e8f44aa5aedbb9be5`  
+		Last Modified: Tue, 18 Mar 2025 05:30:07 GMT  
+		Size: 95.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6abbfbb69ecb13f604508334c1b7386ab01c5aec5fd9a313389bdce2907afdd7`  
+		Last Modified: Tue, 18 Mar 2025 05:30:07 GMT  
+		Size: 573.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:7.2` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:20c9b08c2e358d633cd8e0b9fa8148c2a6e83973a2d60e0396e68346a8bdd193
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2302712 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:17a6fd0020dd3316a626f85d88cd62ff9f0e9214496ddec0a1eb185b54341e23`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:b865f7318cb66142c9ea43802deb53a1863639ae91ef1f2867eaa5ec19c8aa7a`  
+		Last Modified: Tue, 18 Mar 2025 05:30:07 GMT  
+		Size: 2.3 MB (2267421 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:79997d168fb68f0e73107bba158f80d393ce9e0226754e88279c729f393742ce`  
+		Last Modified: Tue, 18 Mar 2025 05:30:07 GMT  
 		Size: 35.3 KB (35291 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -14735,19 +14735,19 @@ $ docker pull redis@sha256:1cca452f69525de365274e6c36e3e06b0e7e265d87ae697021536
 ### `redis:7.2` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:362482c228af44691377931612c22aeae7ec62e304f00f7781d708aac1e41eb7
+$ docker pull redis@sha256:4ffe1b570925e74f842f31a913280dea1a802bf39f3f1e9f5cd5ac660e54fed3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.5 MB (49459590 bytes)**  
+-	Total Size: **49.5 MB (49455063 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa34fb0c9dbb28f2d05c6425d168066ce4a0c154ab2aaa687e02f314eb391cef`
+-	Image ID: `sha256:6fc67e668150f9f3ed6e61b9ab34c7e4cbea055e73096f9ae017ae252480ebeb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -14781,79 +14781,79 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c08b812eb54d9d4fb67ba2d75ae20d9c4dc5fdc6e4f6e409b05786c79de0d329`  
-		Last Modified: Tue, 25 Feb 2025 04:14:21 GMT  
-		Size: 16.0 MB (16044476 bytes)  
+	-	`sha256:11d583aea9b607e170e8e7baf0a9d04c2d8d63b7ef44de11fe8b00748f9ba012`  
+		Last Modified: Tue, 18 Mar 2025 01:16:06 GMT  
+		Size: 16.0 MB (16044484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b60dcc1620d32e5df9b55834070a198c86f4ca3f81c6a9234c230316370d744d`  
-		Last Modified: Tue, 25 Feb 2025 04:14:20 GMT  
+	-	`sha256:83304a20fa99bf455f6628f0b22ca9302a2a2feed882cd0887861b0e4a8b682d`  
+		Last Modified: Tue, 18 Mar 2025 01:16:05 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8d77e425f55c32b964110fa6af6abe638bdd11919c0104def5a863ad08575e7a`  
-		Last Modified: Tue, 25 Feb 2025 04:14:20 GMT  
-		Size: 572.0 B  
+	-	`sha256:dc5a11fbabaab7ee81f2d6789e0eed55593a54f352c44b6df0b03a5847b18439`  
+		Last Modified: Tue, 18 Mar 2025 01:16:05 GMT  
+		Size: 573.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.2` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:a3c30de6cd499d1dea0089f0f084d7bee8683528e2fe549da912fd5149bdcbd9
+$ docker pull redis@sha256:4dd14bc986585efb84179b39fecbe966c1557082cabaa09048e9d5d6401e0661
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2304698 bytes)**  
+-	Total Size: **2.3 MB (2304706 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5a7a25efcccb973beb59449b64812b67e8929e9d6c5f784bc2dd3efb8bd2c0d7`
+-	Image ID: `sha256:e94da120e541b89edc9b7ffe200488c67431c0e26f2db6a2968985e8a032f285`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6513c60c3eda1d74ec629b285be709cdc3c5fbc532ffed093e0647c085431666`  
-		Last Modified: Tue, 25 Feb 2025 04:14:20 GMT  
-		Size: 2.3 MB (2269482 bytes)  
+	-	`sha256:0ad3d2c02e96bd863e175eaa1862fe1474f30afaa40e734552d360454e1dd12c`  
+		Last Modified: Tue, 18 Mar 2025 01:16:05 GMT  
+		Size: 2.3 MB (2269490 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f21649ae0990855530e790d287742c61bdd99ca069422342b994c97be5555be0`  
-		Last Modified: Tue, 25 Feb 2025 04:14:20 GMT  
+	-	`sha256:dc6afc7b6a4b09bc3b7a1edc16ab6eab894a9b2de496f616512d8d58359b55e8`  
+		Last Modified: Tue, 18 Mar 2025 01:16:05 GMT  
 		Size: 35.2 KB (35216 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:7.2` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:dacc791556f2b29a824c8747eb68750ac3c87bc617f04aa4011db73bba1b215e
+$ docker pull redis@sha256:ac9fccfcb6baba37e296b03881c4339c0a8d1ea260acc6376c55fa75e55e1c40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.2 MB (43247369 bytes)**  
+-	Total Size: **43.2 MB (43243514 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:974f16cb891be17de8f882dda82d537aa0573af1c7768cf99fe6645f511abf7e`
+-	Image ID: `sha256:84f894e011856ef980559f7fb96f253fcee73856c14fafeb70c0df9a0c95338a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -14887,60 +14887,60 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:6d4d169c55c2ee02478b6705c4ba9e6795bffbbb872a22adfd95fb2484f2e85c`  
-		Last Modified: Tue, 25 Feb 2025 01:30:03 GMT  
-		Size: 26.9 MB (26864838 bytes)  
+	-	`sha256:c25b115468ab81aaa9017d4d794bc086cba904c84f73abda1eac28615cd44629`  
+		Last Modified: Mon, 17 Mar 2025 22:27:10 GMT  
+		Size: 26.9 MB (26861059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8623e0eab86b24357c3c02e81a4d608209ed331967fe22e6e754b2d72dac261`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
+	-	`sha256:55fef5a169b7602dfb48d72cd6904c66536a89d9114cd0e72ec5ef46aa34579b`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7ff0980913721f64a17edc5b03d307593f905efd57d1b93af34c44615816ac3`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 876.0 B  
+	-	`sha256:22aab92482471047b4820276b1f029b286dec6a8db976e61a3a4e1edeba96592`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34dd6c787468788f646cd187d5359d4ae83605c73853673109cd751bf93e4f9f`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 1.4 MB (1403066 bytes)  
+	-	`sha256:5b959d82dc4ff71bfdfac0434f1a1ca1ddf4aed07f4a46a3f156b0fb749fccdf`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 1.4 MB (1403033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70107a6b90ad24449199e62bfcc89622445ca3ea9300c932bae02ac943570cce`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
-		Size: 15.0 MB (14976786 bytes)  
+	-	`sha256:37f18452bf37322f1828cb1e79a71a8d1c6fbfed06deaffb7464ea8ca8834266`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
+		Size: 15.0 MB (14976748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12b1ea390e68770268fa432610f9a7b0496133386f9f15cd73a7d27925ed3d1a`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
-		Size: 96.0 B  
+	-	`sha256:1ac7f325c0bf3e7c10802c8316a47339d114a52ec18ed035cfd792ccc52edcef`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
+		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efe406fa3c49c45fb0f43dd5b68cc0af66e43f25088b52b54b8e6f606e3ca49f`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
-		Size: 573.0 B  
+	-	`sha256:b71326d496184f9e73c24a285ea2fdbc5367376ca5b7b46f44819709f461cd89`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
+		Size: 570.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.2` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:01d29910416a86050dbff15c98773e3e8fa10973a163fc1dc0819a3f7828c1da
+$ docker pull redis@sha256:c726f4371d1c8e3a1d55050cfa2e2bff21f938ef3b7d0603f092cae29065e86e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2300079 bytes)**  
+-	Total Size: **2.3 MB (2300087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b5c824b964dcfaa2b56f0560759715db78fb155533e7c76c501da8a89149d21`
+-	Image ID: `sha256:523a04782a1f55de04d4e07db0c9ec077827806d770fd49acc4a9528a44d4ce7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a047301df8f50c3c4a4c13ad412bc56cc9e82809e40489f9bdc065dca78b7d2b`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
-		Size: 2.3 MB (2264916 bytes)  
+	-	`sha256:c81ec6c32f3ed18077837690f387d44ade3e364151a271def88e2172e406f56c`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
+		Size: 2.3 MB (2264924 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1053aa7e31f772fbd431e6e9a9bc93ee85ed4f82cf4831774feb4d40b7caadcb`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
+	-	`sha256:0e5cf4356337f33f6f97224d5f158c49838375ba1682bb798af9d30e3428a9b2`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
 		Size: 35.2 KB (35163 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16717,7 +16717,7 @@ $ docker pull redis@sha256:41878c2a90691313d7558170152d36e36ded08edcfb0e18fd1045
 ## `redis:7.2-bookworm`
 
 ```console
-$ docker pull redis@sha256:2f9c6af4f0cf8ca6f65d76fe3c6df5b77a4ae514380d24aa32af86ee24210214
+$ docker pull redis@sha256:ebddd3e0d9daf787996897a805d63105cd8edc5f0f4fde8db7a6a76bfe0e050f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16848,19 +16848,19 @@ $ docker pull redis@sha256:ecd1ef7026c50fdaa8ba37f8f496f6d29bb640f89d8b510b7380e
 ### `redis:7.2-bookworm` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:d4e2f0eb67ad63fa41173eb973f47ed173e8b9e37e9ac5c1fe8faf47da2cf779
+$ docker pull redis@sha256:cee247d275839042b230139dced913bec75d1c5359350e12576b114ba5242fd9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.7 MB (41749911 bytes)**  
+-	Total Size: **41.7 MB (41745327 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:befbef5202f878b9ca31e6b96b3a09229ad85072217fae6f5f4804a3ed494338`
+-	Image ID: `sha256:65533a52a022045fe433cfb4b8c6a1942c53092effa6681d6fd9e080d7bfd7df`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -16894,166 +16894,166 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e96184ce41fd642a1f7837468b090a5f87cb3f4c18f0e064eeb13e94d8cb897`  
-		Last Modified: Tue, 25 Feb 2025 05:13:30 GMT  
-		Size: 14.6 MB (14592356 bytes)  
+	-	`sha256:4833b73828b083bc42edab27decdf379f7e378a4242bc8900f9674a6c37014c6`  
+		Last Modified: Tue, 18 Mar 2025 03:26:57 GMT  
+		Size: 14.6 MB (14592450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9db9f1aacab1a57aa90bbd8a24fbd587844083a614cc0b83d167a071ff66faf`  
-		Last Modified: Tue, 25 Feb 2025 05:13:29 GMT  
-		Size: 96.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbf279f72bef44c47ca36bc091bfb0e2e36faeb59a01a12e5ff054c502c77c04`  
-		Last Modified: Tue, 25 Feb 2025 05:13:29 GMT  
-		Size: 571.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `redis:7.2-bookworm` - unknown; unknown
-
-```console
-$ docker pull redis@sha256:2235eea5ebc14b726852b37eb9139ba99ce8cecbf359dafee1619b7ea87e95c4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303980 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3aca31f7535bfc5f72d983aed1f5eea86f190e3907d1b06ad63a189c5b56763a`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:5e5787e512eccc9d0d99d293a3213fa8d9dee78552f3fcaf6bdcaa453a27e548`  
-		Last Modified: Tue, 25 Feb 2025 05:13:29 GMT  
-		Size: 2.3 MB (2268688 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:5da10d325ef93116f9d076eca1b507c57e90202d045b086925c0d67098070612`  
-		Last Modified: Tue, 25 Feb 2025 05:13:29 GMT  
-		Size: 35.3 KB (35292 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `redis:7.2-bookworm` - linux; arm variant v7
-
-```console
-$ docker pull redis@sha256:1f81ed4df7e35d6ec2ac36d2deefe272f936f1ea85348de324e3be223510f05e
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.6 MB (39586697 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d334b335c8eca05e127ff81ce3bae96e0478b0306fcdf7ba1e7e3d63dcd5f695`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["redis-server"]`
-
-```dockerfile
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_VERSION=7.2.7
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.2.7.tar.gz
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_SHA=72c081e3b8cfae7144273d26d76736f08319000af46c01515cad5d29765cead5
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN mkdir /data && chown redis:redis /data # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-VOLUME [/data]
-# Mon, 06 Jan 2025 16:14:31 GMT
-WORKDIR /data
-# Mon, 06 Jan 2025 16:14:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 06 Jan 2025 16:14:31 GMT
-EXPOSE map[6379/tcp:{}]
-# Mon, 06 Jan 2025 16:14:31 GMT
-CMD ["redis-server"]
-```
-
--	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 874.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f73ca3b1fd87d855cc2d7aa0ef71ccf4daebeefa87a3bde519e5d3a82d417301`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
-		Size: 14.3 MB (14258861 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39fe00ba7caf85a7fac610f5b6a894c40c1de4025846f5efd64d9e30a822c754`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
+	-	`sha256:97dfb3c1d33b5a37ac79ea0d2a3331f8c6b3686b2ad9af64deba5bb8fd02b8bd`  
+		Last Modified: Tue, 18 Mar 2025 03:26:57 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10b6713f9d13d55656c64e536980bdb0c74de9700d90bdfa7c808c80e5587f9b`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
-		Size: 570.0 B  
+	-	`sha256:fb69d0db6179b728ddffe5963bac2c82781accb0dc8e6d1e4e45bc3c6de130a8`  
+		Last Modified: Tue, 18 Mar 2025 03:26:57 GMT  
+		Size: 573.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.2-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:0caaefa198c261b850ca33c289179c24ecd3d4bd47c89eedff8e0e0ab1e73421
+$ docker pull redis@sha256:60d469b52ceac7ee200a1f674b32abdfa11500dd3b70135022a657810c059894
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2302704 bytes)**  
+-	Total Size: **2.3 MB (2303988 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f723b3e7d7083a35c6949d028bda074701f9c44124106392468292d8b9daf8cd`
+-	Image ID: `sha256:4f877320c91ca0dd7f554bea981de310d0deef617a4dce3dc15cddc603818f54`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:03d120e45cb2abd65e91b8492b001a49b9c70f681ada940c4969b564687f7e55`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
-		Size: 2.3 MB (2267413 bytes)  
+	-	`sha256:915df282e6a2586da40db755cf929c82640d01a77803c25e9fdbc48d5905cac0`  
+		Last Modified: Tue, 18 Mar 2025 03:26:57 GMT  
+		Size: 2.3 MB (2268696 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f44742b7e335c4f58bf5e026f5fe96e1007b53282e02c2ee1269ac24bc46d612`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
+	-	`sha256:8ad5cda5f18ede35ccdcbdade39d21b934cf3cfdefacbd52df1983ee73e9695b`  
+		Last Modified: Tue, 18 Mar 2025 03:26:56 GMT  
+		Size: 35.3 KB (35292 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:7.2-bookworm` - linux; arm variant v7
+
+```console
+$ docker pull redis@sha256:e4f46052d416bbf1b551b705f309f9d4e6e4a64771b566e457f377976542a30b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **39.6 MB (39582031 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e090c75861cd99a8c2fb2fe1b62fc809a527b8645abb85c674ff1494750fad73`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV GOSU_VERSION=1.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_VERSION=7.2.7
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.2.7.tar.gz
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_SHA=72c081e3b8cfae7144273d26d76736f08319000af46c01515cad5d29765cead5
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+VOLUME [/data]
+# Mon, 06 Jan 2025 16:14:31 GMT
+WORKDIR /data
+# Mon, 06 Jan 2025 16:14:31 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Mon, 06 Jan 2025 16:14:31 GMT
+EXPOSE map[6379/tcp:{}]
+# Mon, 06 Jan 2025 16:14:31 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 874.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:75708fabf1f094cb89940b4ee22ac01d66fc2a047fea8f7c13b703f9606ea210`  
+		Last Modified: Tue, 18 Mar 2025 05:30:08 GMT  
+		Size: 14.3 MB (14258869 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3872999484c4b80487462fab3ce31139af9340d1544f8c1e8f44aa5aedbb9be5`  
+		Last Modified: Tue, 18 Mar 2025 05:30:07 GMT  
+		Size: 95.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6abbfbb69ecb13f604508334c1b7386ab01c5aec5fd9a313389bdce2907afdd7`  
+		Last Modified: Tue, 18 Mar 2025 05:30:07 GMT  
+		Size: 573.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:7.2-bookworm` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:20c9b08c2e358d633cd8e0b9fa8148c2a6e83973a2d60e0396e68346a8bdd193
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2302712 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:17a6fd0020dd3316a626f85d88cd62ff9f0e9214496ddec0a1eb185b54341e23`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:b865f7318cb66142c9ea43802deb53a1863639ae91ef1f2867eaa5ec19c8aa7a`  
+		Last Modified: Tue, 18 Mar 2025 05:30:07 GMT  
+		Size: 2.3 MB (2267421 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:79997d168fb68f0e73107bba158f80d393ce9e0226754e88279c729f393742ce`  
+		Last Modified: Tue, 18 Mar 2025 05:30:07 GMT  
 		Size: 35.3 KB (35291 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17374,19 +17374,19 @@ $ docker pull redis@sha256:1cca452f69525de365274e6c36e3e06b0e7e265d87ae697021536
 ### `redis:7.2-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:362482c228af44691377931612c22aeae7ec62e304f00f7781d708aac1e41eb7
+$ docker pull redis@sha256:4ffe1b570925e74f842f31a913280dea1a802bf39f3f1e9f5cd5ac660e54fed3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.5 MB (49459590 bytes)**  
+-	Total Size: **49.5 MB (49455063 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa34fb0c9dbb28f2d05c6425d168066ce4a0c154ab2aaa687e02f314eb391cef`
+-	Image ID: `sha256:6fc67e668150f9f3ed6e61b9ab34c7e4cbea055e73096f9ae017ae252480ebeb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -17420,79 +17420,79 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c08b812eb54d9d4fb67ba2d75ae20d9c4dc5fdc6e4f6e409b05786c79de0d329`  
-		Last Modified: Tue, 25 Feb 2025 04:14:21 GMT  
-		Size: 16.0 MB (16044476 bytes)  
+	-	`sha256:11d583aea9b607e170e8e7baf0a9d04c2d8d63b7ef44de11fe8b00748f9ba012`  
+		Last Modified: Tue, 18 Mar 2025 01:16:06 GMT  
+		Size: 16.0 MB (16044484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b60dcc1620d32e5df9b55834070a198c86f4ca3f81c6a9234c230316370d744d`  
-		Last Modified: Tue, 25 Feb 2025 04:14:20 GMT  
+	-	`sha256:83304a20fa99bf455f6628f0b22ca9302a2a2feed882cd0887861b0e4a8b682d`  
+		Last Modified: Tue, 18 Mar 2025 01:16:05 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8d77e425f55c32b964110fa6af6abe638bdd11919c0104def5a863ad08575e7a`  
-		Last Modified: Tue, 25 Feb 2025 04:14:20 GMT  
-		Size: 572.0 B  
+	-	`sha256:dc5a11fbabaab7ee81f2d6789e0eed55593a54f352c44b6df0b03a5847b18439`  
+		Last Modified: Tue, 18 Mar 2025 01:16:05 GMT  
+		Size: 573.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.2-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:a3c30de6cd499d1dea0089f0f084d7bee8683528e2fe549da912fd5149bdcbd9
+$ docker pull redis@sha256:4dd14bc986585efb84179b39fecbe966c1557082cabaa09048e9d5d6401e0661
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2304698 bytes)**  
+-	Total Size: **2.3 MB (2304706 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5a7a25efcccb973beb59449b64812b67e8929e9d6c5f784bc2dd3efb8bd2c0d7`
+-	Image ID: `sha256:e94da120e541b89edc9b7ffe200488c67431c0e26f2db6a2968985e8a032f285`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6513c60c3eda1d74ec629b285be709cdc3c5fbc532ffed093e0647c085431666`  
-		Last Modified: Tue, 25 Feb 2025 04:14:20 GMT  
-		Size: 2.3 MB (2269482 bytes)  
+	-	`sha256:0ad3d2c02e96bd863e175eaa1862fe1474f30afaa40e734552d360454e1dd12c`  
+		Last Modified: Tue, 18 Mar 2025 01:16:05 GMT  
+		Size: 2.3 MB (2269490 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f21649ae0990855530e790d287742c61bdd99ca069422342b994c97be5555be0`  
-		Last Modified: Tue, 25 Feb 2025 04:14:20 GMT  
+	-	`sha256:dc6afc7b6a4b09bc3b7a1edc16ab6eab894a9b2de496f616512d8d58359b55e8`  
+		Last Modified: Tue, 18 Mar 2025 01:16:05 GMT  
 		Size: 35.2 KB (35216 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:7.2-bookworm` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:dacc791556f2b29a824c8747eb68750ac3c87bc617f04aa4011db73bba1b215e
+$ docker pull redis@sha256:ac9fccfcb6baba37e296b03881c4339c0a8d1ea260acc6376c55fa75e55e1c40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.2 MB (43247369 bytes)**  
+-	Total Size: **43.2 MB (43243514 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:974f16cb891be17de8f882dda82d537aa0573af1c7768cf99fe6645f511abf7e`
+-	Image ID: `sha256:84f894e011856ef980559f7fb96f253fcee73856c14fafeb70c0df9a0c95338a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -17526,67 +17526,67 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:6d4d169c55c2ee02478b6705c4ba9e6795bffbbb872a22adfd95fb2484f2e85c`  
-		Last Modified: Tue, 25 Feb 2025 01:30:03 GMT  
-		Size: 26.9 MB (26864838 bytes)  
+	-	`sha256:c25b115468ab81aaa9017d4d794bc086cba904c84f73abda1eac28615cd44629`  
+		Last Modified: Mon, 17 Mar 2025 22:27:10 GMT  
+		Size: 26.9 MB (26861059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8623e0eab86b24357c3c02e81a4d608209ed331967fe22e6e754b2d72dac261`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
+	-	`sha256:55fef5a169b7602dfb48d72cd6904c66536a89d9114cd0e72ec5ef46aa34579b`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7ff0980913721f64a17edc5b03d307593f905efd57d1b93af34c44615816ac3`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 876.0 B  
+	-	`sha256:22aab92482471047b4820276b1f029b286dec6a8db976e61a3a4e1edeba96592`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34dd6c787468788f646cd187d5359d4ae83605c73853673109cd751bf93e4f9f`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 1.4 MB (1403066 bytes)  
+	-	`sha256:5b959d82dc4ff71bfdfac0434f1a1ca1ddf4aed07f4a46a3f156b0fb749fccdf`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 1.4 MB (1403033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70107a6b90ad24449199e62bfcc89622445ca3ea9300c932bae02ac943570cce`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
-		Size: 15.0 MB (14976786 bytes)  
+	-	`sha256:37f18452bf37322f1828cb1e79a71a8d1c6fbfed06deaffb7464ea8ca8834266`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
+		Size: 15.0 MB (14976748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12b1ea390e68770268fa432610f9a7b0496133386f9f15cd73a7d27925ed3d1a`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
-		Size: 96.0 B  
+	-	`sha256:1ac7f325c0bf3e7c10802c8316a47339d114a52ec18ed035cfd792ccc52edcef`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
+		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efe406fa3c49c45fb0f43dd5b68cc0af66e43f25088b52b54b8e6f606e3ca49f`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
-		Size: 573.0 B  
+	-	`sha256:b71326d496184f9e73c24a285ea2fdbc5367376ca5b7b46f44819709f461cd89`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
+		Size: 570.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.2-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:01d29910416a86050dbff15c98773e3e8fa10973a163fc1dc0819a3f7828c1da
+$ docker pull redis@sha256:c726f4371d1c8e3a1d55050cfa2e2bff21f938ef3b7d0603f092cae29065e86e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2300079 bytes)**  
+-	Total Size: **2.3 MB (2300087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b5c824b964dcfaa2b56f0560759715db78fb155533e7c76c501da8a89149d21`
+-	Image ID: `sha256:523a04782a1f55de04d4e07db0c9ec077827806d770fd49acc4a9528a44d4ce7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a047301df8f50c3c4a4c13ad412bc56cc9e82809e40489f9bdc065dca78b7d2b`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
-		Size: 2.3 MB (2264916 bytes)  
+	-	`sha256:c81ec6c32f3ed18077837690f387d44ade3e364151a271def88e2172e406f56c`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
+		Size: 2.3 MB (2264924 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1053aa7e31f772fbd431e6e9a9bc93ee85ed4f82cf4831774feb4d40b7caadcb`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
+	-	`sha256:0e5cf4356337f33f6f97224d5f158c49838375ba1682bb798af9d30e3428a9b2`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
 		Size: 35.2 KB (35163 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `redis:7.2.7`
 
 ```console
-$ docker pull redis@sha256:2f9c6af4f0cf8ca6f65d76fe3c6df5b77a4ae514380d24aa32af86ee24210214
+$ docker pull redis@sha256:ebddd3e0d9daf787996897a805d63105cd8edc5f0f4fde8db7a6a76bfe0e050f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17717,19 +17717,19 @@ $ docker pull redis@sha256:ecd1ef7026c50fdaa8ba37f8f496f6d29bb640f89d8b510b7380e
 ### `redis:7.2.7` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:d4e2f0eb67ad63fa41173eb973f47ed173e8b9e37e9ac5c1fe8faf47da2cf779
+$ docker pull redis@sha256:cee247d275839042b230139dced913bec75d1c5359350e12576b114ba5242fd9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.7 MB (41749911 bytes)**  
+-	Total Size: **41.7 MB (41745327 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:befbef5202f878b9ca31e6b96b3a09229ad85072217fae6f5f4804a3ed494338`
+-	Image ID: `sha256:65533a52a022045fe433cfb4b8c6a1942c53092effa6681d6fd9e080d7bfd7df`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -17763,166 +17763,166 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e96184ce41fd642a1f7837468b090a5f87cb3f4c18f0e064eeb13e94d8cb897`  
-		Last Modified: Tue, 25 Feb 2025 05:13:30 GMT  
-		Size: 14.6 MB (14592356 bytes)  
+	-	`sha256:4833b73828b083bc42edab27decdf379f7e378a4242bc8900f9674a6c37014c6`  
+		Last Modified: Tue, 18 Mar 2025 03:26:57 GMT  
+		Size: 14.6 MB (14592450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9db9f1aacab1a57aa90bbd8a24fbd587844083a614cc0b83d167a071ff66faf`  
-		Last Modified: Tue, 25 Feb 2025 05:13:29 GMT  
-		Size: 96.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbf279f72bef44c47ca36bc091bfb0e2e36faeb59a01a12e5ff054c502c77c04`  
-		Last Modified: Tue, 25 Feb 2025 05:13:29 GMT  
-		Size: 571.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `redis:7.2.7` - unknown; unknown
-
-```console
-$ docker pull redis@sha256:2235eea5ebc14b726852b37eb9139ba99ce8cecbf359dafee1619b7ea87e95c4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303980 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3aca31f7535bfc5f72d983aed1f5eea86f190e3907d1b06ad63a189c5b56763a`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:5e5787e512eccc9d0d99d293a3213fa8d9dee78552f3fcaf6bdcaa453a27e548`  
-		Last Modified: Tue, 25 Feb 2025 05:13:29 GMT  
-		Size: 2.3 MB (2268688 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:5da10d325ef93116f9d076eca1b507c57e90202d045b086925c0d67098070612`  
-		Last Modified: Tue, 25 Feb 2025 05:13:29 GMT  
-		Size: 35.3 KB (35292 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `redis:7.2.7` - linux; arm variant v7
-
-```console
-$ docker pull redis@sha256:1f81ed4df7e35d6ec2ac36d2deefe272f936f1ea85348de324e3be223510f05e
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.6 MB (39586697 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d334b335c8eca05e127ff81ce3bae96e0478b0306fcdf7ba1e7e3d63dcd5f695`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["redis-server"]`
-
-```dockerfile
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_VERSION=7.2.7
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.2.7.tar.gz
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_SHA=72c081e3b8cfae7144273d26d76736f08319000af46c01515cad5d29765cead5
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN mkdir /data && chown redis:redis /data # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-VOLUME [/data]
-# Mon, 06 Jan 2025 16:14:31 GMT
-WORKDIR /data
-# Mon, 06 Jan 2025 16:14:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 06 Jan 2025 16:14:31 GMT
-EXPOSE map[6379/tcp:{}]
-# Mon, 06 Jan 2025 16:14:31 GMT
-CMD ["redis-server"]
-```
-
--	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 874.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f73ca3b1fd87d855cc2d7aa0ef71ccf4daebeefa87a3bde519e5d3a82d417301`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
-		Size: 14.3 MB (14258861 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39fe00ba7caf85a7fac610f5b6a894c40c1de4025846f5efd64d9e30a822c754`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
+	-	`sha256:97dfb3c1d33b5a37ac79ea0d2a3331f8c6b3686b2ad9af64deba5bb8fd02b8bd`  
+		Last Modified: Tue, 18 Mar 2025 03:26:57 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10b6713f9d13d55656c64e536980bdb0c74de9700d90bdfa7c808c80e5587f9b`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
-		Size: 570.0 B  
+	-	`sha256:fb69d0db6179b728ddffe5963bac2c82781accb0dc8e6d1e4e45bc3c6de130a8`  
+		Last Modified: Tue, 18 Mar 2025 03:26:57 GMT  
+		Size: 573.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.2.7` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:0caaefa198c261b850ca33c289179c24ecd3d4bd47c89eedff8e0e0ab1e73421
+$ docker pull redis@sha256:60d469b52ceac7ee200a1f674b32abdfa11500dd3b70135022a657810c059894
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2302704 bytes)**  
+-	Total Size: **2.3 MB (2303988 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f723b3e7d7083a35c6949d028bda074701f9c44124106392468292d8b9daf8cd`
+-	Image ID: `sha256:4f877320c91ca0dd7f554bea981de310d0deef617a4dce3dc15cddc603818f54`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:03d120e45cb2abd65e91b8492b001a49b9c70f681ada940c4969b564687f7e55`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
-		Size: 2.3 MB (2267413 bytes)  
+	-	`sha256:915df282e6a2586da40db755cf929c82640d01a77803c25e9fdbc48d5905cac0`  
+		Last Modified: Tue, 18 Mar 2025 03:26:57 GMT  
+		Size: 2.3 MB (2268696 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f44742b7e335c4f58bf5e026f5fe96e1007b53282e02c2ee1269ac24bc46d612`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
+	-	`sha256:8ad5cda5f18ede35ccdcbdade39d21b934cf3cfdefacbd52df1983ee73e9695b`  
+		Last Modified: Tue, 18 Mar 2025 03:26:56 GMT  
+		Size: 35.3 KB (35292 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:7.2.7` - linux; arm variant v7
+
+```console
+$ docker pull redis@sha256:e4f46052d416bbf1b551b705f309f9d4e6e4a64771b566e457f377976542a30b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **39.6 MB (39582031 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e090c75861cd99a8c2fb2fe1b62fc809a527b8645abb85c674ff1494750fad73`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV GOSU_VERSION=1.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_VERSION=7.2.7
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.2.7.tar.gz
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_SHA=72c081e3b8cfae7144273d26d76736f08319000af46c01515cad5d29765cead5
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+VOLUME [/data]
+# Mon, 06 Jan 2025 16:14:31 GMT
+WORKDIR /data
+# Mon, 06 Jan 2025 16:14:31 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Mon, 06 Jan 2025 16:14:31 GMT
+EXPOSE map[6379/tcp:{}]
+# Mon, 06 Jan 2025 16:14:31 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 874.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:75708fabf1f094cb89940b4ee22ac01d66fc2a047fea8f7c13b703f9606ea210`  
+		Last Modified: Tue, 18 Mar 2025 05:30:08 GMT  
+		Size: 14.3 MB (14258869 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3872999484c4b80487462fab3ce31139af9340d1544f8c1e8f44aa5aedbb9be5`  
+		Last Modified: Tue, 18 Mar 2025 05:30:07 GMT  
+		Size: 95.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6abbfbb69ecb13f604508334c1b7386ab01c5aec5fd9a313389bdce2907afdd7`  
+		Last Modified: Tue, 18 Mar 2025 05:30:07 GMT  
+		Size: 573.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:7.2.7` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:20c9b08c2e358d633cd8e0b9fa8148c2a6e83973a2d60e0396e68346a8bdd193
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2302712 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:17a6fd0020dd3316a626f85d88cd62ff9f0e9214496ddec0a1eb185b54341e23`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:b865f7318cb66142c9ea43802deb53a1863639ae91ef1f2867eaa5ec19c8aa7a`  
+		Last Modified: Tue, 18 Mar 2025 05:30:07 GMT  
+		Size: 2.3 MB (2267421 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:79997d168fb68f0e73107bba158f80d393ce9e0226754e88279c729f393742ce`  
+		Last Modified: Tue, 18 Mar 2025 05:30:07 GMT  
 		Size: 35.3 KB (35291 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -18243,19 +18243,19 @@ $ docker pull redis@sha256:1cca452f69525de365274e6c36e3e06b0e7e265d87ae697021536
 ### `redis:7.2.7` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:362482c228af44691377931612c22aeae7ec62e304f00f7781d708aac1e41eb7
+$ docker pull redis@sha256:4ffe1b570925e74f842f31a913280dea1a802bf39f3f1e9f5cd5ac660e54fed3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.5 MB (49459590 bytes)**  
+-	Total Size: **49.5 MB (49455063 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa34fb0c9dbb28f2d05c6425d168066ce4a0c154ab2aaa687e02f314eb391cef`
+-	Image ID: `sha256:6fc67e668150f9f3ed6e61b9ab34c7e4cbea055e73096f9ae017ae252480ebeb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -18289,79 +18289,79 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c08b812eb54d9d4fb67ba2d75ae20d9c4dc5fdc6e4f6e409b05786c79de0d329`  
-		Last Modified: Tue, 25 Feb 2025 04:14:21 GMT  
-		Size: 16.0 MB (16044476 bytes)  
+	-	`sha256:11d583aea9b607e170e8e7baf0a9d04c2d8d63b7ef44de11fe8b00748f9ba012`  
+		Last Modified: Tue, 18 Mar 2025 01:16:06 GMT  
+		Size: 16.0 MB (16044484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b60dcc1620d32e5df9b55834070a198c86f4ca3f81c6a9234c230316370d744d`  
-		Last Modified: Tue, 25 Feb 2025 04:14:20 GMT  
+	-	`sha256:83304a20fa99bf455f6628f0b22ca9302a2a2feed882cd0887861b0e4a8b682d`  
+		Last Modified: Tue, 18 Mar 2025 01:16:05 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8d77e425f55c32b964110fa6af6abe638bdd11919c0104def5a863ad08575e7a`  
-		Last Modified: Tue, 25 Feb 2025 04:14:20 GMT  
-		Size: 572.0 B  
+	-	`sha256:dc5a11fbabaab7ee81f2d6789e0eed55593a54f352c44b6df0b03a5847b18439`  
+		Last Modified: Tue, 18 Mar 2025 01:16:05 GMT  
+		Size: 573.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.2.7` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:a3c30de6cd499d1dea0089f0f084d7bee8683528e2fe549da912fd5149bdcbd9
+$ docker pull redis@sha256:4dd14bc986585efb84179b39fecbe966c1557082cabaa09048e9d5d6401e0661
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2304698 bytes)**  
+-	Total Size: **2.3 MB (2304706 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5a7a25efcccb973beb59449b64812b67e8929e9d6c5f784bc2dd3efb8bd2c0d7`
+-	Image ID: `sha256:e94da120e541b89edc9b7ffe200488c67431c0e26f2db6a2968985e8a032f285`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6513c60c3eda1d74ec629b285be709cdc3c5fbc532ffed093e0647c085431666`  
-		Last Modified: Tue, 25 Feb 2025 04:14:20 GMT  
-		Size: 2.3 MB (2269482 bytes)  
+	-	`sha256:0ad3d2c02e96bd863e175eaa1862fe1474f30afaa40e734552d360454e1dd12c`  
+		Last Modified: Tue, 18 Mar 2025 01:16:05 GMT  
+		Size: 2.3 MB (2269490 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f21649ae0990855530e790d287742c61bdd99ca069422342b994c97be5555be0`  
-		Last Modified: Tue, 25 Feb 2025 04:14:20 GMT  
+	-	`sha256:dc6afc7b6a4b09bc3b7a1edc16ab6eab894a9b2de496f616512d8d58359b55e8`  
+		Last Modified: Tue, 18 Mar 2025 01:16:05 GMT  
 		Size: 35.2 KB (35216 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:7.2.7` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:dacc791556f2b29a824c8747eb68750ac3c87bc617f04aa4011db73bba1b215e
+$ docker pull redis@sha256:ac9fccfcb6baba37e296b03881c4339c0a8d1ea260acc6376c55fa75e55e1c40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.2 MB (43247369 bytes)**  
+-	Total Size: **43.2 MB (43243514 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:974f16cb891be17de8f882dda82d537aa0573af1c7768cf99fe6645f511abf7e`
+-	Image ID: `sha256:84f894e011856ef980559f7fb96f253fcee73856c14fafeb70c0df9a0c95338a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -18395,60 +18395,60 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:6d4d169c55c2ee02478b6705c4ba9e6795bffbbb872a22adfd95fb2484f2e85c`  
-		Last Modified: Tue, 25 Feb 2025 01:30:03 GMT  
-		Size: 26.9 MB (26864838 bytes)  
+	-	`sha256:c25b115468ab81aaa9017d4d794bc086cba904c84f73abda1eac28615cd44629`  
+		Last Modified: Mon, 17 Mar 2025 22:27:10 GMT  
+		Size: 26.9 MB (26861059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8623e0eab86b24357c3c02e81a4d608209ed331967fe22e6e754b2d72dac261`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
+	-	`sha256:55fef5a169b7602dfb48d72cd6904c66536a89d9114cd0e72ec5ef46aa34579b`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7ff0980913721f64a17edc5b03d307593f905efd57d1b93af34c44615816ac3`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 876.0 B  
+	-	`sha256:22aab92482471047b4820276b1f029b286dec6a8db976e61a3a4e1edeba96592`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34dd6c787468788f646cd187d5359d4ae83605c73853673109cd751bf93e4f9f`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 1.4 MB (1403066 bytes)  
+	-	`sha256:5b959d82dc4ff71bfdfac0434f1a1ca1ddf4aed07f4a46a3f156b0fb749fccdf`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 1.4 MB (1403033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70107a6b90ad24449199e62bfcc89622445ca3ea9300c932bae02ac943570cce`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
-		Size: 15.0 MB (14976786 bytes)  
+	-	`sha256:37f18452bf37322f1828cb1e79a71a8d1c6fbfed06deaffb7464ea8ca8834266`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
+		Size: 15.0 MB (14976748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12b1ea390e68770268fa432610f9a7b0496133386f9f15cd73a7d27925ed3d1a`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
-		Size: 96.0 B  
+	-	`sha256:1ac7f325c0bf3e7c10802c8316a47339d114a52ec18ed035cfd792ccc52edcef`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
+		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efe406fa3c49c45fb0f43dd5b68cc0af66e43f25088b52b54b8e6f606e3ca49f`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
-		Size: 573.0 B  
+	-	`sha256:b71326d496184f9e73c24a285ea2fdbc5367376ca5b7b46f44819709f461cd89`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
+		Size: 570.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.2.7` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:01d29910416a86050dbff15c98773e3e8fa10973a163fc1dc0819a3f7828c1da
+$ docker pull redis@sha256:c726f4371d1c8e3a1d55050cfa2e2bff21f938ef3b7d0603f092cae29065e86e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2300079 bytes)**  
+-	Total Size: **2.3 MB (2300087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b5c824b964dcfaa2b56f0560759715db78fb155533e7c76c501da8a89149d21`
+-	Image ID: `sha256:523a04782a1f55de04d4e07db0c9ec077827806d770fd49acc4a9528a44d4ce7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a047301df8f50c3c4a4c13ad412bc56cc9e82809e40489f9bdc065dca78b7d2b`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
-		Size: 2.3 MB (2264916 bytes)  
+	-	`sha256:c81ec6c32f3ed18077837690f387d44ade3e364151a271def88e2172e406f56c`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
+		Size: 2.3 MB (2264924 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1053aa7e31f772fbd431e6e9a9bc93ee85ed4f82cf4831774feb4d40b7caadcb`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
+	-	`sha256:0e5cf4356337f33f6f97224d5f158c49838375ba1682bb798af9d30e3428a9b2`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
 		Size: 35.2 KB (35163 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20225,7 +20225,7 @@ $ docker pull redis@sha256:41878c2a90691313d7558170152d36e36ded08edcfb0e18fd1045
 ## `redis:7.2.7-bookworm`
 
 ```console
-$ docker pull redis@sha256:2f9c6af4f0cf8ca6f65d76fe3c6df5b77a4ae514380d24aa32af86ee24210214
+$ docker pull redis@sha256:ebddd3e0d9daf787996897a805d63105cd8edc5f0f4fde8db7a6a76bfe0e050f
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -20356,19 +20356,19 @@ $ docker pull redis@sha256:ecd1ef7026c50fdaa8ba37f8f496f6d29bb640f89d8b510b7380e
 ### `redis:7.2.7-bookworm` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:d4e2f0eb67ad63fa41173eb973f47ed173e8b9e37e9ac5c1fe8faf47da2cf779
+$ docker pull redis@sha256:cee247d275839042b230139dced913bec75d1c5359350e12576b114ba5242fd9
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **41.7 MB (41749911 bytes)**  
+-	Total Size: **41.7 MB (41745327 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:befbef5202f878b9ca31e6b96b3a09229ad85072217fae6f5f4804a3ed494338`
+-	Image ID: `sha256:65533a52a022045fe433cfb4b8c6a1942c53092effa6681d6fd9e080d7bfd7df`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -20402,166 +20402,166 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5e96184ce41fd642a1f7837468b090a5f87cb3f4c18f0e064eeb13e94d8cb897`  
-		Last Modified: Tue, 25 Feb 2025 05:13:30 GMT  
-		Size: 14.6 MB (14592356 bytes)  
+	-	`sha256:4833b73828b083bc42edab27decdf379f7e378a4242bc8900f9674a6c37014c6`  
+		Last Modified: Tue, 18 Mar 2025 03:26:57 GMT  
+		Size: 14.6 MB (14592450 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:e9db9f1aacab1a57aa90bbd8a24fbd587844083a614cc0b83d167a071ff66faf`  
-		Last Modified: Tue, 25 Feb 2025 05:13:29 GMT  
-		Size: 96.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fbf279f72bef44c47ca36bc091bfb0e2e36faeb59a01a12e5ff054c502c77c04`  
-		Last Modified: Tue, 25 Feb 2025 05:13:29 GMT  
-		Size: 571.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `redis:7.2.7-bookworm` - unknown; unknown
-
-```console
-$ docker pull redis@sha256:2235eea5ebc14b726852b37eb9139ba99ce8cecbf359dafee1619b7ea87e95c4
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2303980 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:3aca31f7535bfc5f72d983aed1f5eea86f190e3907d1b06ad63a189c5b56763a`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:5e5787e512eccc9d0d99d293a3213fa8d9dee78552f3fcaf6bdcaa453a27e548`  
-		Last Modified: Tue, 25 Feb 2025 05:13:29 GMT  
-		Size: 2.3 MB (2268688 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:5da10d325ef93116f9d076eca1b507c57e90202d045b086925c0d67098070612`  
-		Last Modified: Tue, 25 Feb 2025 05:13:29 GMT  
-		Size: 35.3 KB (35292 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `redis:7.2.7-bookworm` - linux; arm variant v7
-
-```console
-$ docker pull redis@sha256:1f81ed4df7e35d6ec2ac36d2deefe272f936f1ea85348de324e3be223510f05e
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.6 MB (39586697 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d334b335c8eca05e127ff81ce3bae96e0478b0306fcdf7ba1e7e3d63dcd5f695`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["redis-server"]`
-
-```dockerfile
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_VERSION=7.2.7
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.2.7.tar.gz
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_SHA=72c081e3b8cfae7144273d26d76736f08319000af46c01515cad5d29765cead5
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN mkdir /data && chown redis:redis /data # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-VOLUME [/data]
-# Mon, 06 Jan 2025 16:14:31 GMT
-WORKDIR /data
-# Mon, 06 Jan 2025 16:14:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 06 Jan 2025 16:14:31 GMT
-EXPOSE map[6379/tcp:{}]
-# Mon, 06 Jan 2025 16:14:31 GMT
-CMD ["redis-server"]
-```
-
--	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 874.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f73ca3b1fd87d855cc2d7aa0ef71ccf4daebeefa87a3bde519e5d3a82d417301`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
-		Size: 14.3 MB (14258861 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:39fe00ba7caf85a7fac610f5b6a894c40c1de4025846f5efd64d9e30a822c754`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
+	-	`sha256:97dfb3c1d33b5a37ac79ea0d2a3331f8c6b3686b2ad9af64deba5bb8fd02b8bd`  
+		Last Modified: Tue, 18 Mar 2025 03:26:57 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:10b6713f9d13d55656c64e536980bdb0c74de9700d90bdfa7c808c80e5587f9b`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
-		Size: 570.0 B  
+	-	`sha256:fb69d0db6179b728ddffe5963bac2c82781accb0dc8e6d1e4e45bc3c6de130a8`  
+		Last Modified: Tue, 18 Mar 2025 03:26:57 GMT  
+		Size: 573.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.2.7-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:0caaefa198c261b850ca33c289179c24ecd3d4bd47c89eedff8e0e0ab1e73421
+$ docker pull redis@sha256:60d469b52ceac7ee200a1f674b32abdfa11500dd3b70135022a657810c059894
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2302704 bytes)**  
+-	Total Size: **2.3 MB (2303988 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:f723b3e7d7083a35c6949d028bda074701f9c44124106392468292d8b9daf8cd`
+-	Image ID: `sha256:4f877320c91ca0dd7f554bea981de310d0deef617a4dce3dc15cddc603818f54`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:03d120e45cb2abd65e91b8492b001a49b9c70f681ada940c4969b564687f7e55`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
-		Size: 2.3 MB (2267413 bytes)  
+	-	`sha256:915df282e6a2586da40db755cf929c82640d01a77803c25e9fdbc48d5905cac0`  
+		Last Modified: Tue, 18 Mar 2025 03:26:57 GMT  
+		Size: 2.3 MB (2268696 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f44742b7e335c4f58bf5e026f5fe96e1007b53282e02c2ee1269ac24bc46d612`  
-		Last Modified: Tue, 25 Feb 2025 07:00:50 GMT  
+	-	`sha256:8ad5cda5f18ede35ccdcbdade39d21b934cf3cfdefacbd52df1983ee73e9695b`  
+		Last Modified: Tue, 18 Mar 2025 03:26:56 GMT  
+		Size: 35.3 KB (35292 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:7.2.7-bookworm` - linux; arm variant v7
+
+```console
+$ docker pull redis@sha256:e4f46052d416bbf1b551b705f309f9d4e6e4a64771b566e457f377976542a30b
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **39.6 MB (39582031 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:e090c75861cd99a8c2fb2fe1b62fc809a527b8645abb85c674ff1494750fad73`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV GOSU_VERSION=1.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_VERSION=7.2.7
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.2.7.tar.gz
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_SHA=72c081e3b8cfae7144273d26d76736f08319000af46c01515cad5d29765cead5
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+VOLUME [/data]
+# Mon, 06 Jan 2025 16:14:31 GMT
+WORKDIR /data
+# Mon, 06 Jan 2025 16:14:31 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Mon, 06 Jan 2025 16:14:31 GMT
+EXPOSE map[6379/tcp:{}]
+# Mon, 06 Jan 2025 16:14:31 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 874.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:75708fabf1f094cb89940b4ee22ac01d66fc2a047fea8f7c13b703f9606ea210`  
+		Last Modified: Tue, 18 Mar 2025 05:30:08 GMT  
+		Size: 14.3 MB (14258869 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:3872999484c4b80487462fab3ce31139af9340d1544f8c1e8f44aa5aedbb9be5`  
+		Last Modified: Tue, 18 Mar 2025 05:30:07 GMT  
+		Size: 95.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:6abbfbb69ecb13f604508334c1b7386ab01c5aec5fd9a313389bdce2907afdd7`  
+		Last Modified: Tue, 18 Mar 2025 05:30:07 GMT  
+		Size: 573.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:7.2.7-bookworm` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:20c9b08c2e358d633cd8e0b9fa8148c2a6e83973a2d60e0396e68346a8bdd193
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2302712 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:17a6fd0020dd3316a626f85d88cd62ff9f0e9214496ddec0a1eb185b54341e23`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:b865f7318cb66142c9ea43802deb53a1863639ae91ef1f2867eaa5ec19c8aa7a`  
+		Last Modified: Tue, 18 Mar 2025 05:30:07 GMT  
+		Size: 2.3 MB (2267421 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:79997d168fb68f0e73107bba158f80d393ce9e0226754e88279c729f393742ce`  
+		Last Modified: Tue, 18 Mar 2025 05:30:07 GMT  
 		Size: 35.3 KB (35291 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -20882,19 +20882,19 @@ $ docker pull redis@sha256:1cca452f69525de365274e6c36e3e06b0e7e265d87ae697021536
 ### `redis:7.2.7-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:362482c228af44691377931612c22aeae7ec62e304f00f7781d708aac1e41eb7
+$ docker pull redis@sha256:4ffe1b570925e74f842f31a913280dea1a802bf39f3f1e9f5cd5ac660e54fed3
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.5 MB (49459590 bytes)**  
+-	Total Size: **49.5 MB (49455063 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:aa34fb0c9dbb28f2d05c6425d168066ce4a0c154ab2aaa687e02f314eb391cef`
+-	Image ID: `sha256:6fc67e668150f9f3ed6e61b9ab34c7e4cbea055e73096f9ae017ae252480ebeb`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -20928,79 +20928,79 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c08b812eb54d9d4fb67ba2d75ae20d9c4dc5fdc6e4f6e409b05786c79de0d329`  
-		Last Modified: Tue, 25 Feb 2025 04:14:21 GMT  
-		Size: 16.0 MB (16044476 bytes)  
+	-	`sha256:11d583aea9b607e170e8e7baf0a9d04c2d8d63b7ef44de11fe8b00748f9ba012`  
+		Last Modified: Tue, 18 Mar 2025 01:16:06 GMT  
+		Size: 16.0 MB (16044484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b60dcc1620d32e5df9b55834070a198c86f4ca3f81c6a9234c230316370d744d`  
-		Last Modified: Tue, 25 Feb 2025 04:14:20 GMT  
+	-	`sha256:83304a20fa99bf455f6628f0b22ca9302a2a2feed882cd0887861b0e4a8b682d`  
+		Last Modified: Tue, 18 Mar 2025 01:16:05 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8d77e425f55c32b964110fa6af6abe638bdd11919c0104def5a863ad08575e7a`  
-		Last Modified: Tue, 25 Feb 2025 04:14:20 GMT  
-		Size: 572.0 B  
+	-	`sha256:dc5a11fbabaab7ee81f2d6789e0eed55593a54f352c44b6df0b03a5847b18439`  
+		Last Modified: Tue, 18 Mar 2025 01:16:05 GMT  
+		Size: 573.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.2.7-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:a3c30de6cd499d1dea0089f0f084d7bee8683528e2fe549da912fd5149bdcbd9
+$ docker pull redis@sha256:4dd14bc986585efb84179b39fecbe966c1557082cabaa09048e9d5d6401e0661
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2304698 bytes)**  
+-	Total Size: **2.3 MB (2304706 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5a7a25efcccb973beb59449b64812b67e8929e9d6c5f784bc2dd3efb8bd2c0d7`
+-	Image ID: `sha256:e94da120e541b89edc9b7ffe200488c67431c0e26f2db6a2968985e8a032f285`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:6513c60c3eda1d74ec629b285be709cdc3c5fbc532ffed093e0647c085431666`  
-		Last Modified: Tue, 25 Feb 2025 04:14:20 GMT  
-		Size: 2.3 MB (2269482 bytes)  
+	-	`sha256:0ad3d2c02e96bd863e175eaa1862fe1474f30afaa40e734552d360454e1dd12c`  
+		Last Modified: Tue, 18 Mar 2025 01:16:05 GMT  
+		Size: 2.3 MB (2269490 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f21649ae0990855530e790d287742c61bdd99ca069422342b994c97be5555be0`  
-		Last Modified: Tue, 25 Feb 2025 04:14:20 GMT  
+	-	`sha256:dc6afc7b6a4b09bc3b7a1edc16ab6eab894a9b2de496f616512d8d58359b55e8`  
+		Last Modified: Tue, 18 Mar 2025 01:16:05 GMT  
 		Size: 35.2 KB (35216 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:7.2.7-bookworm` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:dacc791556f2b29a824c8747eb68750ac3c87bc617f04aa4011db73bba1b215e
+$ docker pull redis@sha256:ac9fccfcb6baba37e296b03881c4339c0a8d1ea260acc6376c55fa75e55e1c40
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.2 MB (43247369 bytes)**  
+-	Total Size: **43.2 MB (43243514 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:974f16cb891be17de8f882dda82d537aa0573af1c7768cf99fe6645f511abf7e`
+-	Image ID: `sha256:84f894e011856ef980559f7fb96f253fcee73856c14fafeb70c0df9a0c95338a`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -21034,67 +21034,67 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:6d4d169c55c2ee02478b6705c4ba9e6795bffbbb872a22adfd95fb2484f2e85c`  
-		Last Modified: Tue, 25 Feb 2025 01:30:03 GMT  
-		Size: 26.9 MB (26864838 bytes)  
+	-	`sha256:c25b115468ab81aaa9017d4d794bc086cba904c84f73abda1eac28615cd44629`  
+		Last Modified: Mon, 17 Mar 2025 22:27:10 GMT  
+		Size: 26.9 MB (26861059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8623e0eab86b24357c3c02e81a4d608209ed331967fe22e6e754b2d72dac261`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
+	-	`sha256:55fef5a169b7602dfb48d72cd6904c66536a89d9114cd0e72ec5ef46aa34579b`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7ff0980913721f64a17edc5b03d307593f905efd57d1b93af34c44615816ac3`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 876.0 B  
+	-	`sha256:22aab92482471047b4820276b1f029b286dec6a8db976e61a3a4e1edeba96592`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34dd6c787468788f646cd187d5359d4ae83605c73853673109cd751bf93e4f9f`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 1.4 MB (1403066 bytes)  
+	-	`sha256:5b959d82dc4ff71bfdfac0434f1a1ca1ddf4aed07f4a46a3f156b0fb749fccdf`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 1.4 MB (1403033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:70107a6b90ad24449199e62bfcc89622445ca3ea9300c932bae02ac943570cce`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
-		Size: 15.0 MB (14976786 bytes)  
+	-	`sha256:37f18452bf37322f1828cb1e79a71a8d1c6fbfed06deaffb7464ea8ca8834266`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
+		Size: 15.0 MB (14976748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:12b1ea390e68770268fa432610f9a7b0496133386f9f15cd73a7d27925ed3d1a`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
-		Size: 96.0 B  
+	-	`sha256:1ac7f325c0bf3e7c10802c8316a47339d114a52ec18ed035cfd792ccc52edcef`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
+		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:efe406fa3c49c45fb0f43dd5b68cc0af66e43f25088b52b54b8e6f606e3ca49f`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
-		Size: 573.0 B  
+	-	`sha256:b71326d496184f9e73c24a285ea2fdbc5367376ca5b7b46f44819709f461cd89`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
+		Size: 570.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.2.7-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:01d29910416a86050dbff15c98773e3e8fa10973a163fc1dc0819a3f7828c1da
+$ docker pull redis@sha256:c726f4371d1c8e3a1d55050cfa2e2bff21f938ef3b7d0603f092cae29065e86e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2300079 bytes)**  
+-	Total Size: **2.3 MB (2300087 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7b5c824b964dcfaa2b56f0560759715db78fb155533e7c76c501da8a89149d21`
+-	Image ID: `sha256:523a04782a1f55de04d4e07db0c9ec077827806d770fd49acc4a9528a44d4ce7`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a047301df8f50c3c4a4c13ad412bc56cc9e82809e40489f9bdc065dca78b7d2b`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
-		Size: 2.3 MB (2264916 bytes)  
+	-	`sha256:c81ec6c32f3ed18077837690f387d44ade3e364151a271def88e2172e406f56c`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
+		Size: 2.3 MB (2264924 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:1053aa7e31f772fbd431e6e9a9bc93ee85ed4f82cf4831774feb4d40b7caadcb`  
-		Last Modified: Tue, 25 Feb 2025 03:52:10 GMT  
+	-	`sha256:0e5cf4356337f33f6f97224d5f158c49838375ba1682bb798af9d30e3428a9b2`  
+		Last Modified: Tue, 18 Mar 2025 03:11:01 GMT  
 		Size: 35.2 KB (35163 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `redis:7.4`
 
 ```console
-$ docker pull redis@sha256:92ae19b3c5506d686d0059b8d93d75f8ed2c59a5b97098e64c577a4683938011
+$ docker pull redis@sha256:5250fed70d8a66f4901a8beace6f85bee9550c0fc6fd42d10e2c1cd24cf93a0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -21225,19 +21225,19 @@ $ docker pull redis@sha256:35cff247eda14e361298009303bc898a5b076357ae65659245c0d
 ### `redis:7.4` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:0fa1495a0aabad5e5d8ff2563ffab9294200bd8d9d54ba2aeca2fb1ddccda698
+$ docker pull redis@sha256:5e9ec3905ce65d58171a1fb9b81703499923c7007d108371d96c00b827e1e27a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.2 MB (42212936 bytes)**  
+-	Total Size: **42.2 MB (42208345 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2330b40a34dbedb223b1b4e54b67ba2324d3fbefbae4eaa8bc1613a0d1154be8`
+-	Image ID: `sha256:ef005adb1638ca3e51bdd07e2448e223ea07bb285f055ae329c73d0471d3bd6e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -21271,166 +21271,166 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef3a33ef7a4a9d435bca9fa38e6aab6e4cd8b8ab84d419c9a7e02e560a50fca2`  
-		Last Modified: Tue, 25 Feb 2025 05:12:15 GMT  
-		Size: 15.1 MB (15055379 bytes)  
+	-	`sha256:caff19f61d9a707da84ea691fabf929157f75ddcdb1fcaf191da2ab62a48dfb3`  
+		Last Modified: Tue, 18 Mar 2025 03:28:19 GMT  
+		Size: 15.1 MB (15055469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58e6ac31808a5c59eb44277954da9ed62d72a3f0172cec64e092a376c52f16e`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 96.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c5883f66308051d64bdc794bc84ee0efb80dcc1fc5dfa8697e8a994b28edfdc`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 573.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `redis:7.4` - unknown; unknown
-
-```console
-$ docker pull redis@sha256:52cc1853849c8b31de9283ab87499539b45a2b98cf61dddf657adf447fe675d5
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2306415 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc9f91b01d5cbdb8fd6e2ac09828b9d0cfdd631e9d75369c6641db8c5f5a6615`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:ff3fcb32d91b9e7196013670b3586af01d26fafdefffc48bb6267da1f474d1a8`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 2.3 MB (2269906 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:4fec70f81167c6507bfab9a64496df0a2d9ae34df9f2b3d02a431b3b339e79d9`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 36.5 KB (36509 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `redis:7.4` - linux; arm variant v7
-
-```console
-$ docker pull redis@sha256:a5584862f18c25c38e32ddadcd1d34163dced89fc7bd159ea014f89992c6b0f1
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.0 MB (40044564 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cdf88ab9dd68a6165b8348147e7ef3680ce8eb2f8cce2e336391e1e63456d60`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["redis-server"]`
-
-```dockerfile
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_VERSION=7.4.2
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.2.tar.gz
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_SHA=4ddebbf09061cbb589011786febdb34f29767dd7f89dbe712d2b68e808af6a1f
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN mkdir /data && chown redis:redis /data # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-VOLUME [/data]
-# Mon, 06 Jan 2025 16:14:31 GMT
-WORKDIR /data
-# Mon, 06 Jan 2025 16:14:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 06 Jan 2025 16:14:31 GMT
-EXPOSE map[6379/tcp:{}]
-# Mon, 06 Jan 2025 16:14:31 GMT
-CMD ["redis-server"]
-```
-
--	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 874.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f569c441e2df3e37dff6badbd93de5fc4cd248c22245f520c9ccd51b872b8da7`  
-		Last Modified: Tue, 25 Feb 2025 06:59:39 GMT  
-		Size: 14.7 MB (14716726 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ea2cb0cacf250c5dc80e4f00f2bb9b3fa08546df3bef7a4a80395727bca7e7d`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
+	-	`sha256:9019693d66f9f3e6075fba903068207d42614d7739792798cfa638ed1125d62f`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0ac5645bfc7ff9f41f8247cda22097e112b8a353345c004960d4342efded0c0`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
+	-	`sha256:095d8e89d31383ab8ced5a24ede81ff078d97fd0144a2f1c2db82d52028bee73`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
 		Size: 572.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.4` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:4ca440c9eca61ae04ac91a9abb3320d2b27e276b1bfdcb870661d0812c0ddd16
+$ docker pull redis@sha256:9a578a34d34fab3683390158164785ccd3355176eb372b7c53c192d7fc3ef40d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305141 bytes)**  
+-	Total Size: **2.3 MB (2306424 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7afb4db1d9dad99202814528937460838d2ab8b7e75ace6c98b4b3210e4b267`
+-	Image ID: `sha256:a34d9f172fdd87cccd1d043b07d03544ac92326af3b03df752d0f8ff671ea88b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0376c712a46243f071b948bd9deab345ca99705f73664e3fc23f729bc0ef6143`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
-		Size: 2.3 MB (2268631 bytes)  
+	-	`sha256:7a42fd511cfb2b27ee7de53ac7e9b32aeeb8df41c63fe083f9f6f73656fa7cb0`  
+		Last Modified: Tue, 18 Mar 2025 03:28:19 GMT  
+		Size: 2.3 MB (2269914 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:930332ceacd02182b33f98b179985ce83399946c94bd184748cb37c70c148e4b`  
-		Last Modified: Tue, 25 Feb 2025 06:59:37 GMT  
+	-	`sha256:3a053044afff6c4a2bc293eb539b0e721ac7cba72ce802c596ba930ed5180c12`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
+		Size: 36.5 KB (36510 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:7.4` - linux; arm variant v7
+
+```console
+$ docker pull redis@sha256:abedb05e040ce2b2bb7844ac0584585292f8ec40c6c56934b145cd70bcf635fe
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **40.0 MB (40039922 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d2e98260995a5c554c04dc7a0865adf3fe065f5687298aa39d61ad93098055fb`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV GOSU_VERSION=1.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_VERSION=7.4.2
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.2.tar.gz
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_SHA=4ddebbf09061cbb589011786febdb34f29767dd7f89dbe712d2b68e808af6a1f
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+VOLUME [/data]
+# Mon, 06 Jan 2025 16:14:31 GMT
+WORKDIR /data
+# Mon, 06 Jan 2025 16:14:31 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Mon, 06 Jan 2025 16:14:31 GMT
+EXPOSE map[6379/tcp:{}]
+# Mon, 06 Jan 2025 16:14:31 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 874.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aabdbbd09f30ca42592cb2f87a4c2e1820193793b5f1c7eef2bbec9df65eb577`  
+		Last Modified: Tue, 18 Mar 2025 05:36:51 GMT  
+		Size: 14.7 MB (14716759 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2182888029a269071f6e24bc98aa0467efef8f9357ce5a1b7c5d2e3eff6472e0`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 97.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:301cd4c1b5ae4cd9e7859ab3fad483c04516e80e959392e74b0fe3e66adb29dd`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 572.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:7.4` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:5525c6e4f4e1380c5498f88619b48c3df01897415ba7f866e5fdf49b8265eb62
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2305149 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:63f3a4e1fc4d3a345e78c96f980d7df46662baee5073792e2cf586135b7a5cd4`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:82920500f27d621c0ff2d1c23a3f9b9bfa727f1213dd88561f7b7e1e18bcd154`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 2.3 MB (2268639 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:ba39e801b3bc3d76fde46e6046887095087b5e676d6c6cbae183cf151cee033b`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
 		Size: 36.5 KB (36510 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -21751,19 +21751,19 @@ $ docker pull redis@sha256:5aa496680deb3a58d5d9a7a185eaad6025e3df4f16994d1fbfa73
 ### `redis:7.4` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:7ee593194eae2ddf1b8318321c8a13f53563ec015d3a82cd37a85a76b0928ac5
+$ docker pull redis@sha256:8cc2d92056101d1381a659531b1ba1068f8175dba770383c14bb564e5a5d43db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.9 MB (49908846 bytes)**  
+-	Total Size: **49.9 MB (49904496 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:595efd1dc8729814abfd9e80f3e99081062d6b8696f0bc426d5fcf657dc74e61`
+-	Image ID: `sha256:f13d3f1d46c8d60ece6c915a1097ad79ed1cda1fb29492c9b8f7e5fab9478238`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -21797,79 +21797,79 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80706cc377f8d9a102a74286de034a5fae063a6fa707f7f898125e752f009d23`  
-		Last Modified: Tue, 25 Feb 2025 04:12:37 GMT  
-		Size: 16.5 MB (16493731 bytes)  
+	-	`sha256:de9548c45fa02a8c5ed14856b04d18a9f0f955cae23e9df9789d3f7922e978d9`  
+		Last Modified: Tue, 18 Mar 2025 01:35:38 GMT  
+		Size: 16.5 MB (16493919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0a526c1b8dbd3e19b68a11f1dbe00fd131c699b1ae9d3cdc281e0560ec20a6e`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
+	-	`sha256:9bba7f2963eea990e234b787d45bbe03e37b00d337b558f46948ebec8a857df1`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00089b95a85fb4056df10d7dfaee161e76334827ab04fe266155bc10d63e2326`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 573.0 B  
+	-	`sha256:1a6b308d981b284b50e831c45ef149851b555ea8f59588276f22991fad08ac6f`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
+		Size: 571.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.4` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:273bdb71e82e5847950567493b13c60acaf16c2a94cb59c5bb4008440d55af76
+$ docker pull redis@sha256:af50d2411a66c24584e4a41b341887977324b323ba169d1fb457aa856adc5c9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2307118 bytes)**  
+-	Total Size: **2.3 MB (2307125 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:67e31d28eba30fbf00aea7cd054f2eff4762ff446ede779d6ff442a34a966119`
+-	Image ID: `sha256:c76e1b9339b2f969a81c9f4c42f7ebbdba6327ec738eb60b739c3b6cdd9e9cbc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:91b6a836a9c205e93ed1fe579d71deb33299b33242e5a021a94fd513e7371449`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 2.3 MB (2270692 bytes)  
+	-	`sha256:ef6b6bfee37f14992a15c1246d6998b318e2299260bcdafc934e1613e1d0fa5d`  
+		Last Modified: Tue, 18 Mar 2025 01:35:38 GMT  
+		Size: 2.3 MB (2270700 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:db05e61a4dd2db0c71aec9230270a2898c124bb1867e68aa1d5b94f9c750c8e0`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 36.4 KB (36426 bytes)  
+	-	`sha256:734a0c5e6ba6baf1ae2acf78440f94bd2479d1e5f75eabe3b8449ec1035769ab`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
+		Size: 36.4 KB (36425 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:7.4` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:b9769d5d5c730089b3f02957a514c1699924f86ce1996a707586f17f38afad13
+$ docker pull redis@sha256:4fa8c4464dfdb2af83fa5a03dba0840a04f73b3de484514ff719d0c718c967a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.6 MB (43637803 bytes)**  
+-	Total Size: **43.6 MB (43633976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c195a8f1678beaecb22ee2c4eb176e2f476a57123437674fde2cc2e70478191`
+-	Image ID: `sha256:c1028df9e9133ecf7e82ca2381785489deb4412394d643019b472a98cbeaac52`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -21903,60 +21903,60 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:6d4d169c55c2ee02478b6705c4ba9e6795bffbbb872a22adfd95fb2484f2e85c`  
-		Last Modified: Tue, 25 Feb 2025 01:30:03 GMT  
-		Size: 26.9 MB (26864838 bytes)  
+	-	`sha256:c25b115468ab81aaa9017d4d794bc086cba904c84f73abda1eac28615cd44629`  
+		Last Modified: Mon, 17 Mar 2025 22:27:10 GMT  
+		Size: 26.9 MB (26861059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8623e0eab86b24357c3c02e81a4d608209ed331967fe22e6e754b2d72dac261`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
+	-	`sha256:55fef5a169b7602dfb48d72cd6904c66536a89d9114cd0e72ec5ef46aa34579b`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7ff0980913721f64a17edc5b03d307593f905efd57d1b93af34c44615816ac3`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 876.0 B  
+	-	`sha256:22aab92482471047b4820276b1f029b286dec6a8db976e61a3a4e1edeba96592`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34dd6c787468788f646cd187d5359d4ae83605c73853673109cd751bf93e4f9f`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 1.4 MB (1403066 bytes)  
+	-	`sha256:5b959d82dc4ff71bfdfac0434f1a1ca1ddf4aed07f4a46a3f156b0fb749fccdf`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 1.4 MB (1403033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:176a2d51bb33cc610d7aff271ae07e7652026a3df79958477ed46e59cc7ed136`  
-		Last Modified: Tue, 25 Feb 2025 03:50:33 GMT  
-		Size: 15.4 MB (15367223 bytes)  
+	-	`sha256:943f154a36dc95398a8304fcc18facc66c7462133fee6e72133019e98d2a8c29`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
+		Size: 15.4 MB (15367211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a65d62004eda6db61b12017e75b4f1057bf1cb89e7afd7aa2df18d30e8921395`  
-		Last Modified: Tue, 25 Feb 2025 03:50:32 GMT  
+	-	`sha256:5fac48b60b6bf26be1a236e78e720e3508edbe7b1af5a9ce62a4898582a774fd`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c70505fbef35515ca99caba26376c33c628595338cb5e308c5feb314d826ac7`  
-		Last Modified: Tue, 25 Feb 2025 03:50:32 GMT  
+	-	`sha256:bfad3fa43456f6ca6b4a177711f0de7d0dfd73262720836e3ab912ca90b4fddf`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 569.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.4` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:dc743f0548ba8465af0c943585590713a51314ea8bcdd7b1844e5af530acbe11
+$ docker pull redis@sha256:24d8fb94742c5dfef5a38ef70d1c9077de683cafb3caefafe98bd2acc2541979
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2302452 bytes)**  
+-	Total Size: **2.3 MB (2302460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c97a881336f3ab2e3b007b18681a2689f92214073b3b3fa3ba9f0a94f976a167`
+-	Image ID: `sha256:1cf2dc6b6e64f72e11afba495c5cc1b3ab1384634e62e83008dc494e1f0cf6c8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e7819cdd1cd5547760ee9f649ad8428145dae6d5460f818ea8945b827f40099`  
-		Last Modified: Tue, 25 Feb 2025 03:50:31 GMT  
-		Size: 2.3 MB (2266102 bytes)  
+	-	`sha256:4686149a235a6c5bc8d6b9abaf4b50f62b255628b014c1e0ecfab7deddc9ac56`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
+		Size: 2.3 MB (2266110 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:279b1febb3ce3bcc61d796ea1a0ffa11225a91181f427607d05efec61a37f496`  
-		Last Modified: Tue, 25 Feb 2025 03:50:31 GMT  
+	-	`sha256:9729e5874e58e405d54258e5d5ebc80652618746c66818229b7fc18070750b93`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 36.4 KB (36350 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -23733,7 +23733,7 @@ $ docker pull redis@sha256:025ea6bc45deab5c1ee75351613abbf7a2706a79dfeea821e46e5
 ## `redis:7.4-bookworm`
 
 ```console
-$ docker pull redis@sha256:92ae19b3c5506d686d0059b8d93d75f8ed2c59a5b97098e64c577a4683938011
+$ docker pull redis@sha256:5250fed70d8a66f4901a8beace6f85bee9550c0fc6fd42d10e2c1cd24cf93a0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -23864,19 +23864,19 @@ $ docker pull redis@sha256:35cff247eda14e361298009303bc898a5b076357ae65659245c0d
 ### `redis:7.4-bookworm` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:0fa1495a0aabad5e5d8ff2563ffab9294200bd8d9d54ba2aeca2fb1ddccda698
+$ docker pull redis@sha256:5e9ec3905ce65d58171a1fb9b81703499923c7007d108371d96c00b827e1e27a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.2 MB (42212936 bytes)**  
+-	Total Size: **42.2 MB (42208345 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2330b40a34dbedb223b1b4e54b67ba2324d3fbefbae4eaa8bc1613a0d1154be8`
+-	Image ID: `sha256:ef005adb1638ca3e51bdd07e2448e223ea07bb285f055ae329c73d0471d3bd6e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -23910,166 +23910,166 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef3a33ef7a4a9d435bca9fa38e6aab6e4cd8b8ab84d419c9a7e02e560a50fca2`  
-		Last Modified: Tue, 25 Feb 2025 05:12:15 GMT  
-		Size: 15.1 MB (15055379 bytes)  
+	-	`sha256:caff19f61d9a707da84ea691fabf929157f75ddcdb1fcaf191da2ab62a48dfb3`  
+		Last Modified: Tue, 18 Mar 2025 03:28:19 GMT  
+		Size: 15.1 MB (15055469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58e6ac31808a5c59eb44277954da9ed62d72a3f0172cec64e092a376c52f16e`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 96.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c5883f66308051d64bdc794bc84ee0efb80dcc1fc5dfa8697e8a994b28edfdc`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 573.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `redis:7.4-bookworm` - unknown; unknown
-
-```console
-$ docker pull redis@sha256:52cc1853849c8b31de9283ab87499539b45a2b98cf61dddf657adf447fe675d5
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2306415 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc9f91b01d5cbdb8fd6e2ac09828b9d0cfdd631e9d75369c6641db8c5f5a6615`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:ff3fcb32d91b9e7196013670b3586af01d26fafdefffc48bb6267da1f474d1a8`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 2.3 MB (2269906 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:4fec70f81167c6507bfab9a64496df0a2d9ae34df9f2b3d02a431b3b339e79d9`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 36.5 KB (36509 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `redis:7.4-bookworm` - linux; arm variant v7
-
-```console
-$ docker pull redis@sha256:a5584862f18c25c38e32ddadcd1d34163dced89fc7bd159ea014f89992c6b0f1
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.0 MB (40044564 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cdf88ab9dd68a6165b8348147e7ef3680ce8eb2f8cce2e336391e1e63456d60`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["redis-server"]`
-
-```dockerfile
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_VERSION=7.4.2
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.2.tar.gz
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_SHA=4ddebbf09061cbb589011786febdb34f29767dd7f89dbe712d2b68e808af6a1f
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN mkdir /data && chown redis:redis /data # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-VOLUME [/data]
-# Mon, 06 Jan 2025 16:14:31 GMT
-WORKDIR /data
-# Mon, 06 Jan 2025 16:14:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 06 Jan 2025 16:14:31 GMT
-EXPOSE map[6379/tcp:{}]
-# Mon, 06 Jan 2025 16:14:31 GMT
-CMD ["redis-server"]
-```
-
--	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 874.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f569c441e2df3e37dff6badbd93de5fc4cd248c22245f520c9ccd51b872b8da7`  
-		Last Modified: Tue, 25 Feb 2025 06:59:39 GMT  
-		Size: 14.7 MB (14716726 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ea2cb0cacf250c5dc80e4f00f2bb9b3fa08546df3bef7a4a80395727bca7e7d`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
+	-	`sha256:9019693d66f9f3e6075fba903068207d42614d7739792798cfa638ed1125d62f`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0ac5645bfc7ff9f41f8247cda22097e112b8a353345c004960d4342efded0c0`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
+	-	`sha256:095d8e89d31383ab8ced5a24ede81ff078d97fd0144a2f1c2db82d52028bee73`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
 		Size: 572.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.4-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:4ca440c9eca61ae04ac91a9abb3320d2b27e276b1bfdcb870661d0812c0ddd16
+$ docker pull redis@sha256:9a578a34d34fab3683390158164785ccd3355176eb372b7c53c192d7fc3ef40d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305141 bytes)**  
+-	Total Size: **2.3 MB (2306424 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7afb4db1d9dad99202814528937460838d2ab8b7e75ace6c98b4b3210e4b267`
+-	Image ID: `sha256:a34d9f172fdd87cccd1d043b07d03544ac92326af3b03df752d0f8ff671ea88b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0376c712a46243f071b948bd9deab345ca99705f73664e3fc23f729bc0ef6143`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
-		Size: 2.3 MB (2268631 bytes)  
+	-	`sha256:7a42fd511cfb2b27ee7de53ac7e9b32aeeb8df41c63fe083f9f6f73656fa7cb0`  
+		Last Modified: Tue, 18 Mar 2025 03:28:19 GMT  
+		Size: 2.3 MB (2269914 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:930332ceacd02182b33f98b179985ce83399946c94bd184748cb37c70c148e4b`  
-		Last Modified: Tue, 25 Feb 2025 06:59:37 GMT  
+	-	`sha256:3a053044afff6c4a2bc293eb539b0e721ac7cba72ce802c596ba930ed5180c12`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
+		Size: 36.5 KB (36510 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:7.4-bookworm` - linux; arm variant v7
+
+```console
+$ docker pull redis@sha256:abedb05e040ce2b2bb7844ac0584585292f8ec40c6c56934b145cd70bcf635fe
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **40.0 MB (40039922 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d2e98260995a5c554c04dc7a0865adf3fe065f5687298aa39d61ad93098055fb`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV GOSU_VERSION=1.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_VERSION=7.4.2
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.2.tar.gz
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_SHA=4ddebbf09061cbb589011786febdb34f29767dd7f89dbe712d2b68e808af6a1f
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+VOLUME [/data]
+# Mon, 06 Jan 2025 16:14:31 GMT
+WORKDIR /data
+# Mon, 06 Jan 2025 16:14:31 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Mon, 06 Jan 2025 16:14:31 GMT
+EXPOSE map[6379/tcp:{}]
+# Mon, 06 Jan 2025 16:14:31 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 874.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aabdbbd09f30ca42592cb2f87a4c2e1820193793b5f1c7eef2bbec9df65eb577`  
+		Last Modified: Tue, 18 Mar 2025 05:36:51 GMT  
+		Size: 14.7 MB (14716759 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2182888029a269071f6e24bc98aa0467efef8f9357ce5a1b7c5d2e3eff6472e0`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 97.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:301cd4c1b5ae4cd9e7859ab3fad483c04516e80e959392e74b0fe3e66adb29dd`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 572.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:7.4-bookworm` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:5525c6e4f4e1380c5498f88619b48c3df01897415ba7f866e5fdf49b8265eb62
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2305149 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:63f3a4e1fc4d3a345e78c96f980d7df46662baee5073792e2cf586135b7a5cd4`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:82920500f27d621c0ff2d1c23a3f9b9bfa727f1213dd88561f7b7e1e18bcd154`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 2.3 MB (2268639 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:ba39e801b3bc3d76fde46e6046887095087b5e676d6c6cbae183cf151cee033b`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
 		Size: 36.5 KB (36510 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -24390,19 +24390,19 @@ $ docker pull redis@sha256:5aa496680deb3a58d5d9a7a185eaad6025e3df4f16994d1fbfa73
 ### `redis:7.4-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:7ee593194eae2ddf1b8318321c8a13f53563ec015d3a82cd37a85a76b0928ac5
+$ docker pull redis@sha256:8cc2d92056101d1381a659531b1ba1068f8175dba770383c14bb564e5a5d43db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.9 MB (49908846 bytes)**  
+-	Total Size: **49.9 MB (49904496 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:595efd1dc8729814abfd9e80f3e99081062d6b8696f0bc426d5fcf657dc74e61`
+-	Image ID: `sha256:f13d3f1d46c8d60ece6c915a1097ad79ed1cda1fb29492c9b8f7e5fab9478238`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -24436,79 +24436,79 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80706cc377f8d9a102a74286de034a5fae063a6fa707f7f898125e752f009d23`  
-		Last Modified: Tue, 25 Feb 2025 04:12:37 GMT  
-		Size: 16.5 MB (16493731 bytes)  
+	-	`sha256:de9548c45fa02a8c5ed14856b04d18a9f0f955cae23e9df9789d3f7922e978d9`  
+		Last Modified: Tue, 18 Mar 2025 01:35:38 GMT  
+		Size: 16.5 MB (16493919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0a526c1b8dbd3e19b68a11f1dbe00fd131c699b1ae9d3cdc281e0560ec20a6e`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
+	-	`sha256:9bba7f2963eea990e234b787d45bbe03e37b00d337b558f46948ebec8a857df1`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00089b95a85fb4056df10d7dfaee161e76334827ab04fe266155bc10d63e2326`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 573.0 B  
+	-	`sha256:1a6b308d981b284b50e831c45ef149851b555ea8f59588276f22991fad08ac6f`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
+		Size: 571.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.4-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:273bdb71e82e5847950567493b13c60acaf16c2a94cb59c5bb4008440d55af76
+$ docker pull redis@sha256:af50d2411a66c24584e4a41b341887977324b323ba169d1fb457aa856adc5c9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2307118 bytes)**  
+-	Total Size: **2.3 MB (2307125 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:67e31d28eba30fbf00aea7cd054f2eff4762ff446ede779d6ff442a34a966119`
+-	Image ID: `sha256:c76e1b9339b2f969a81c9f4c42f7ebbdba6327ec738eb60b739c3b6cdd9e9cbc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:91b6a836a9c205e93ed1fe579d71deb33299b33242e5a021a94fd513e7371449`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 2.3 MB (2270692 bytes)  
+	-	`sha256:ef6b6bfee37f14992a15c1246d6998b318e2299260bcdafc934e1613e1d0fa5d`  
+		Last Modified: Tue, 18 Mar 2025 01:35:38 GMT  
+		Size: 2.3 MB (2270700 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:db05e61a4dd2db0c71aec9230270a2898c124bb1867e68aa1d5b94f9c750c8e0`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 36.4 KB (36426 bytes)  
+	-	`sha256:734a0c5e6ba6baf1ae2acf78440f94bd2479d1e5f75eabe3b8449ec1035769ab`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
+		Size: 36.4 KB (36425 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:7.4-bookworm` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:b9769d5d5c730089b3f02957a514c1699924f86ce1996a707586f17f38afad13
+$ docker pull redis@sha256:4fa8c4464dfdb2af83fa5a03dba0840a04f73b3de484514ff719d0c718c967a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.6 MB (43637803 bytes)**  
+-	Total Size: **43.6 MB (43633976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c195a8f1678beaecb22ee2c4eb176e2f476a57123437674fde2cc2e70478191`
+-	Image ID: `sha256:c1028df9e9133ecf7e82ca2381785489deb4412394d643019b472a98cbeaac52`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -24542,67 +24542,67 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:6d4d169c55c2ee02478b6705c4ba9e6795bffbbb872a22adfd95fb2484f2e85c`  
-		Last Modified: Tue, 25 Feb 2025 01:30:03 GMT  
-		Size: 26.9 MB (26864838 bytes)  
+	-	`sha256:c25b115468ab81aaa9017d4d794bc086cba904c84f73abda1eac28615cd44629`  
+		Last Modified: Mon, 17 Mar 2025 22:27:10 GMT  
+		Size: 26.9 MB (26861059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8623e0eab86b24357c3c02e81a4d608209ed331967fe22e6e754b2d72dac261`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
+	-	`sha256:55fef5a169b7602dfb48d72cd6904c66536a89d9114cd0e72ec5ef46aa34579b`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7ff0980913721f64a17edc5b03d307593f905efd57d1b93af34c44615816ac3`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 876.0 B  
+	-	`sha256:22aab92482471047b4820276b1f029b286dec6a8db976e61a3a4e1edeba96592`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34dd6c787468788f646cd187d5359d4ae83605c73853673109cd751bf93e4f9f`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 1.4 MB (1403066 bytes)  
+	-	`sha256:5b959d82dc4ff71bfdfac0434f1a1ca1ddf4aed07f4a46a3f156b0fb749fccdf`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 1.4 MB (1403033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:176a2d51bb33cc610d7aff271ae07e7652026a3df79958477ed46e59cc7ed136`  
-		Last Modified: Tue, 25 Feb 2025 03:50:33 GMT  
-		Size: 15.4 MB (15367223 bytes)  
+	-	`sha256:943f154a36dc95398a8304fcc18facc66c7462133fee6e72133019e98d2a8c29`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
+		Size: 15.4 MB (15367211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a65d62004eda6db61b12017e75b4f1057bf1cb89e7afd7aa2df18d30e8921395`  
-		Last Modified: Tue, 25 Feb 2025 03:50:32 GMT  
+	-	`sha256:5fac48b60b6bf26be1a236e78e720e3508edbe7b1af5a9ce62a4898582a774fd`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c70505fbef35515ca99caba26376c33c628595338cb5e308c5feb314d826ac7`  
-		Last Modified: Tue, 25 Feb 2025 03:50:32 GMT  
+	-	`sha256:bfad3fa43456f6ca6b4a177711f0de7d0dfd73262720836e3ab912ca90b4fddf`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 569.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.4-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:dc743f0548ba8465af0c943585590713a51314ea8bcdd7b1844e5af530acbe11
+$ docker pull redis@sha256:24d8fb94742c5dfef5a38ef70d1c9077de683cafb3caefafe98bd2acc2541979
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2302452 bytes)**  
+-	Total Size: **2.3 MB (2302460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c97a881336f3ab2e3b007b18681a2689f92214073b3b3fa3ba9f0a94f976a167`
+-	Image ID: `sha256:1cf2dc6b6e64f72e11afba495c5cc1b3ab1384634e62e83008dc494e1f0cf6c8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e7819cdd1cd5547760ee9f649ad8428145dae6d5460f818ea8945b827f40099`  
-		Last Modified: Tue, 25 Feb 2025 03:50:31 GMT  
-		Size: 2.3 MB (2266102 bytes)  
+	-	`sha256:4686149a235a6c5bc8d6b9abaf4b50f62b255628b014c1e0ecfab7deddc9ac56`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
+		Size: 2.3 MB (2266110 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:279b1febb3ce3bcc61d796ea1a0ffa11225a91181f427607d05efec61a37f496`  
-		Last Modified: Tue, 25 Feb 2025 03:50:31 GMT  
+	-	`sha256:9729e5874e58e405d54258e5d5ebc80652618746c66818229b7fc18070750b93`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 36.4 KB (36350 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `redis:7.4.2`
 
 ```console
-$ docker pull redis@sha256:92ae19b3c5506d686d0059b8d93d75f8ed2c59a5b97098e64c577a4683938011
+$ docker pull redis@sha256:5250fed70d8a66f4901a8beace6f85bee9550c0fc6fd42d10e2c1cd24cf93a0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -24733,19 +24733,19 @@ $ docker pull redis@sha256:35cff247eda14e361298009303bc898a5b076357ae65659245c0d
 ### `redis:7.4.2` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:0fa1495a0aabad5e5d8ff2563ffab9294200bd8d9d54ba2aeca2fb1ddccda698
+$ docker pull redis@sha256:5e9ec3905ce65d58171a1fb9b81703499923c7007d108371d96c00b827e1e27a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.2 MB (42212936 bytes)**  
+-	Total Size: **42.2 MB (42208345 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2330b40a34dbedb223b1b4e54b67ba2324d3fbefbae4eaa8bc1613a0d1154be8`
+-	Image ID: `sha256:ef005adb1638ca3e51bdd07e2448e223ea07bb285f055ae329c73d0471d3bd6e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -24779,166 +24779,166 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef3a33ef7a4a9d435bca9fa38e6aab6e4cd8b8ab84d419c9a7e02e560a50fca2`  
-		Last Modified: Tue, 25 Feb 2025 05:12:15 GMT  
-		Size: 15.1 MB (15055379 bytes)  
+	-	`sha256:caff19f61d9a707da84ea691fabf929157f75ddcdb1fcaf191da2ab62a48dfb3`  
+		Last Modified: Tue, 18 Mar 2025 03:28:19 GMT  
+		Size: 15.1 MB (15055469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58e6ac31808a5c59eb44277954da9ed62d72a3f0172cec64e092a376c52f16e`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 96.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c5883f66308051d64bdc794bc84ee0efb80dcc1fc5dfa8697e8a994b28edfdc`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 573.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `redis:7.4.2` - unknown; unknown
-
-```console
-$ docker pull redis@sha256:52cc1853849c8b31de9283ab87499539b45a2b98cf61dddf657adf447fe675d5
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2306415 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc9f91b01d5cbdb8fd6e2ac09828b9d0cfdd631e9d75369c6641db8c5f5a6615`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:ff3fcb32d91b9e7196013670b3586af01d26fafdefffc48bb6267da1f474d1a8`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 2.3 MB (2269906 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:4fec70f81167c6507bfab9a64496df0a2d9ae34df9f2b3d02a431b3b339e79d9`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 36.5 KB (36509 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `redis:7.4.2` - linux; arm variant v7
-
-```console
-$ docker pull redis@sha256:a5584862f18c25c38e32ddadcd1d34163dced89fc7bd159ea014f89992c6b0f1
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.0 MB (40044564 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cdf88ab9dd68a6165b8348147e7ef3680ce8eb2f8cce2e336391e1e63456d60`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["redis-server"]`
-
-```dockerfile
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_VERSION=7.4.2
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.2.tar.gz
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_SHA=4ddebbf09061cbb589011786febdb34f29767dd7f89dbe712d2b68e808af6a1f
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN mkdir /data && chown redis:redis /data # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-VOLUME [/data]
-# Mon, 06 Jan 2025 16:14:31 GMT
-WORKDIR /data
-# Mon, 06 Jan 2025 16:14:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 06 Jan 2025 16:14:31 GMT
-EXPOSE map[6379/tcp:{}]
-# Mon, 06 Jan 2025 16:14:31 GMT
-CMD ["redis-server"]
-```
-
--	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 874.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f569c441e2df3e37dff6badbd93de5fc4cd248c22245f520c9ccd51b872b8da7`  
-		Last Modified: Tue, 25 Feb 2025 06:59:39 GMT  
-		Size: 14.7 MB (14716726 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ea2cb0cacf250c5dc80e4f00f2bb9b3fa08546df3bef7a4a80395727bca7e7d`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
+	-	`sha256:9019693d66f9f3e6075fba903068207d42614d7739792798cfa638ed1125d62f`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0ac5645bfc7ff9f41f8247cda22097e112b8a353345c004960d4342efded0c0`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
+	-	`sha256:095d8e89d31383ab8ced5a24ede81ff078d97fd0144a2f1c2db82d52028bee73`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
 		Size: 572.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.4.2` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:4ca440c9eca61ae04ac91a9abb3320d2b27e276b1bfdcb870661d0812c0ddd16
+$ docker pull redis@sha256:9a578a34d34fab3683390158164785ccd3355176eb372b7c53c192d7fc3ef40d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305141 bytes)**  
+-	Total Size: **2.3 MB (2306424 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7afb4db1d9dad99202814528937460838d2ab8b7e75ace6c98b4b3210e4b267`
+-	Image ID: `sha256:a34d9f172fdd87cccd1d043b07d03544ac92326af3b03df752d0f8ff671ea88b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0376c712a46243f071b948bd9deab345ca99705f73664e3fc23f729bc0ef6143`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
-		Size: 2.3 MB (2268631 bytes)  
+	-	`sha256:7a42fd511cfb2b27ee7de53ac7e9b32aeeb8df41c63fe083f9f6f73656fa7cb0`  
+		Last Modified: Tue, 18 Mar 2025 03:28:19 GMT  
+		Size: 2.3 MB (2269914 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:930332ceacd02182b33f98b179985ce83399946c94bd184748cb37c70c148e4b`  
-		Last Modified: Tue, 25 Feb 2025 06:59:37 GMT  
+	-	`sha256:3a053044afff6c4a2bc293eb539b0e721ac7cba72ce802c596ba930ed5180c12`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
+		Size: 36.5 KB (36510 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:7.4.2` - linux; arm variant v7
+
+```console
+$ docker pull redis@sha256:abedb05e040ce2b2bb7844ac0584585292f8ec40c6c56934b145cd70bcf635fe
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **40.0 MB (40039922 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d2e98260995a5c554c04dc7a0865adf3fe065f5687298aa39d61ad93098055fb`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV GOSU_VERSION=1.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_VERSION=7.4.2
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.2.tar.gz
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_SHA=4ddebbf09061cbb589011786febdb34f29767dd7f89dbe712d2b68e808af6a1f
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+VOLUME [/data]
+# Mon, 06 Jan 2025 16:14:31 GMT
+WORKDIR /data
+# Mon, 06 Jan 2025 16:14:31 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Mon, 06 Jan 2025 16:14:31 GMT
+EXPOSE map[6379/tcp:{}]
+# Mon, 06 Jan 2025 16:14:31 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 874.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aabdbbd09f30ca42592cb2f87a4c2e1820193793b5f1c7eef2bbec9df65eb577`  
+		Last Modified: Tue, 18 Mar 2025 05:36:51 GMT  
+		Size: 14.7 MB (14716759 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2182888029a269071f6e24bc98aa0467efef8f9357ce5a1b7c5d2e3eff6472e0`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 97.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:301cd4c1b5ae4cd9e7859ab3fad483c04516e80e959392e74b0fe3e66adb29dd`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 572.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:7.4.2` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:5525c6e4f4e1380c5498f88619b48c3df01897415ba7f866e5fdf49b8265eb62
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2305149 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:63f3a4e1fc4d3a345e78c96f980d7df46662baee5073792e2cf586135b7a5cd4`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:82920500f27d621c0ff2d1c23a3f9b9bfa727f1213dd88561f7b7e1e18bcd154`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 2.3 MB (2268639 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:ba39e801b3bc3d76fde46e6046887095087b5e676d6c6cbae183cf151cee033b`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
 		Size: 36.5 KB (36510 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -25259,19 +25259,19 @@ $ docker pull redis@sha256:5aa496680deb3a58d5d9a7a185eaad6025e3df4f16994d1fbfa73
 ### `redis:7.4.2` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:7ee593194eae2ddf1b8318321c8a13f53563ec015d3a82cd37a85a76b0928ac5
+$ docker pull redis@sha256:8cc2d92056101d1381a659531b1ba1068f8175dba770383c14bb564e5a5d43db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.9 MB (49908846 bytes)**  
+-	Total Size: **49.9 MB (49904496 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:595efd1dc8729814abfd9e80f3e99081062d6b8696f0bc426d5fcf657dc74e61`
+-	Image ID: `sha256:f13d3f1d46c8d60ece6c915a1097ad79ed1cda1fb29492c9b8f7e5fab9478238`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -25305,79 +25305,79 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80706cc377f8d9a102a74286de034a5fae063a6fa707f7f898125e752f009d23`  
-		Last Modified: Tue, 25 Feb 2025 04:12:37 GMT  
-		Size: 16.5 MB (16493731 bytes)  
+	-	`sha256:de9548c45fa02a8c5ed14856b04d18a9f0f955cae23e9df9789d3f7922e978d9`  
+		Last Modified: Tue, 18 Mar 2025 01:35:38 GMT  
+		Size: 16.5 MB (16493919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0a526c1b8dbd3e19b68a11f1dbe00fd131c699b1ae9d3cdc281e0560ec20a6e`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
+	-	`sha256:9bba7f2963eea990e234b787d45bbe03e37b00d337b558f46948ebec8a857df1`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00089b95a85fb4056df10d7dfaee161e76334827ab04fe266155bc10d63e2326`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 573.0 B  
+	-	`sha256:1a6b308d981b284b50e831c45ef149851b555ea8f59588276f22991fad08ac6f`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
+		Size: 571.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.4.2` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:273bdb71e82e5847950567493b13c60acaf16c2a94cb59c5bb4008440d55af76
+$ docker pull redis@sha256:af50d2411a66c24584e4a41b341887977324b323ba169d1fb457aa856adc5c9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2307118 bytes)**  
+-	Total Size: **2.3 MB (2307125 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:67e31d28eba30fbf00aea7cd054f2eff4762ff446ede779d6ff442a34a966119`
+-	Image ID: `sha256:c76e1b9339b2f969a81c9f4c42f7ebbdba6327ec738eb60b739c3b6cdd9e9cbc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:91b6a836a9c205e93ed1fe579d71deb33299b33242e5a021a94fd513e7371449`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 2.3 MB (2270692 bytes)  
+	-	`sha256:ef6b6bfee37f14992a15c1246d6998b318e2299260bcdafc934e1613e1d0fa5d`  
+		Last Modified: Tue, 18 Mar 2025 01:35:38 GMT  
+		Size: 2.3 MB (2270700 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:db05e61a4dd2db0c71aec9230270a2898c124bb1867e68aa1d5b94f9c750c8e0`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 36.4 KB (36426 bytes)  
+	-	`sha256:734a0c5e6ba6baf1ae2acf78440f94bd2479d1e5f75eabe3b8449ec1035769ab`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
+		Size: 36.4 KB (36425 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:7.4.2` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:b9769d5d5c730089b3f02957a514c1699924f86ce1996a707586f17f38afad13
+$ docker pull redis@sha256:4fa8c4464dfdb2af83fa5a03dba0840a04f73b3de484514ff719d0c718c967a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.6 MB (43637803 bytes)**  
+-	Total Size: **43.6 MB (43633976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c195a8f1678beaecb22ee2c4eb176e2f476a57123437674fde2cc2e70478191`
+-	Image ID: `sha256:c1028df9e9133ecf7e82ca2381785489deb4412394d643019b472a98cbeaac52`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -25411,60 +25411,60 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:6d4d169c55c2ee02478b6705c4ba9e6795bffbbb872a22adfd95fb2484f2e85c`  
-		Last Modified: Tue, 25 Feb 2025 01:30:03 GMT  
-		Size: 26.9 MB (26864838 bytes)  
+	-	`sha256:c25b115468ab81aaa9017d4d794bc086cba904c84f73abda1eac28615cd44629`  
+		Last Modified: Mon, 17 Mar 2025 22:27:10 GMT  
+		Size: 26.9 MB (26861059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8623e0eab86b24357c3c02e81a4d608209ed331967fe22e6e754b2d72dac261`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
+	-	`sha256:55fef5a169b7602dfb48d72cd6904c66536a89d9114cd0e72ec5ef46aa34579b`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7ff0980913721f64a17edc5b03d307593f905efd57d1b93af34c44615816ac3`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 876.0 B  
+	-	`sha256:22aab92482471047b4820276b1f029b286dec6a8db976e61a3a4e1edeba96592`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34dd6c787468788f646cd187d5359d4ae83605c73853673109cd751bf93e4f9f`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 1.4 MB (1403066 bytes)  
+	-	`sha256:5b959d82dc4ff71bfdfac0434f1a1ca1ddf4aed07f4a46a3f156b0fb749fccdf`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 1.4 MB (1403033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:176a2d51bb33cc610d7aff271ae07e7652026a3df79958477ed46e59cc7ed136`  
-		Last Modified: Tue, 25 Feb 2025 03:50:33 GMT  
-		Size: 15.4 MB (15367223 bytes)  
+	-	`sha256:943f154a36dc95398a8304fcc18facc66c7462133fee6e72133019e98d2a8c29`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
+		Size: 15.4 MB (15367211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a65d62004eda6db61b12017e75b4f1057bf1cb89e7afd7aa2df18d30e8921395`  
-		Last Modified: Tue, 25 Feb 2025 03:50:32 GMT  
+	-	`sha256:5fac48b60b6bf26be1a236e78e720e3508edbe7b1af5a9ce62a4898582a774fd`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c70505fbef35515ca99caba26376c33c628595338cb5e308c5feb314d826ac7`  
-		Last Modified: Tue, 25 Feb 2025 03:50:32 GMT  
+	-	`sha256:bfad3fa43456f6ca6b4a177711f0de7d0dfd73262720836e3ab912ca90b4fddf`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 569.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.4.2` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:dc743f0548ba8465af0c943585590713a51314ea8bcdd7b1844e5af530acbe11
+$ docker pull redis@sha256:24d8fb94742c5dfef5a38ef70d1c9077de683cafb3caefafe98bd2acc2541979
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2302452 bytes)**  
+-	Total Size: **2.3 MB (2302460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c97a881336f3ab2e3b007b18681a2689f92214073b3b3fa3ba9f0a94f976a167`
+-	Image ID: `sha256:1cf2dc6b6e64f72e11afba495c5cc1b3ab1384634e62e83008dc494e1f0cf6c8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e7819cdd1cd5547760ee9f649ad8428145dae6d5460f818ea8945b827f40099`  
-		Last Modified: Tue, 25 Feb 2025 03:50:31 GMT  
-		Size: 2.3 MB (2266102 bytes)  
+	-	`sha256:4686149a235a6c5bc8d6b9abaf4b50f62b255628b014c1e0ecfab7deddc9ac56`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
+		Size: 2.3 MB (2266110 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:279b1febb3ce3bcc61d796ea1a0ffa11225a91181f427607d05efec61a37f496`  
-		Last Modified: Tue, 25 Feb 2025 03:50:31 GMT  
+	-	`sha256:9729e5874e58e405d54258e5d5ebc80652618746c66818229b7fc18070750b93`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 36.4 KB (36350 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -27241,7 +27241,7 @@ $ docker pull redis@sha256:025ea6bc45deab5c1ee75351613abbf7a2706a79dfeea821e46e5
 ## `redis:7.4.2-bookworm`
 
 ```console
-$ docker pull redis@sha256:92ae19b3c5506d686d0059b8d93d75f8ed2c59a5b97098e64c577a4683938011
+$ docker pull redis@sha256:5250fed70d8a66f4901a8beace6f85bee9550c0fc6fd42d10e2c1cd24cf93a0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -27372,19 +27372,19 @@ $ docker pull redis@sha256:35cff247eda14e361298009303bc898a5b076357ae65659245c0d
 ### `redis:7.4.2-bookworm` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:0fa1495a0aabad5e5d8ff2563ffab9294200bd8d9d54ba2aeca2fb1ddccda698
+$ docker pull redis@sha256:5e9ec3905ce65d58171a1fb9b81703499923c7007d108371d96c00b827e1e27a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.2 MB (42212936 bytes)**  
+-	Total Size: **42.2 MB (42208345 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2330b40a34dbedb223b1b4e54b67ba2324d3fbefbae4eaa8bc1613a0d1154be8`
+-	Image ID: `sha256:ef005adb1638ca3e51bdd07e2448e223ea07bb285f055ae329c73d0471d3bd6e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -27418,166 +27418,166 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef3a33ef7a4a9d435bca9fa38e6aab6e4cd8b8ab84d419c9a7e02e560a50fca2`  
-		Last Modified: Tue, 25 Feb 2025 05:12:15 GMT  
-		Size: 15.1 MB (15055379 bytes)  
+	-	`sha256:caff19f61d9a707da84ea691fabf929157f75ddcdb1fcaf191da2ab62a48dfb3`  
+		Last Modified: Tue, 18 Mar 2025 03:28:19 GMT  
+		Size: 15.1 MB (15055469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58e6ac31808a5c59eb44277954da9ed62d72a3f0172cec64e092a376c52f16e`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 96.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c5883f66308051d64bdc794bc84ee0efb80dcc1fc5dfa8697e8a994b28edfdc`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 573.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `redis:7.4.2-bookworm` - unknown; unknown
-
-```console
-$ docker pull redis@sha256:52cc1853849c8b31de9283ab87499539b45a2b98cf61dddf657adf447fe675d5
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2306415 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc9f91b01d5cbdb8fd6e2ac09828b9d0cfdd631e9d75369c6641db8c5f5a6615`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:ff3fcb32d91b9e7196013670b3586af01d26fafdefffc48bb6267da1f474d1a8`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 2.3 MB (2269906 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:4fec70f81167c6507bfab9a64496df0a2d9ae34df9f2b3d02a431b3b339e79d9`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 36.5 KB (36509 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `redis:7.4.2-bookworm` - linux; arm variant v7
-
-```console
-$ docker pull redis@sha256:a5584862f18c25c38e32ddadcd1d34163dced89fc7bd159ea014f89992c6b0f1
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.0 MB (40044564 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cdf88ab9dd68a6165b8348147e7ef3680ce8eb2f8cce2e336391e1e63456d60`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["redis-server"]`
-
-```dockerfile
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_VERSION=7.4.2
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.2.tar.gz
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_SHA=4ddebbf09061cbb589011786febdb34f29767dd7f89dbe712d2b68e808af6a1f
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN mkdir /data && chown redis:redis /data # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-VOLUME [/data]
-# Mon, 06 Jan 2025 16:14:31 GMT
-WORKDIR /data
-# Mon, 06 Jan 2025 16:14:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 06 Jan 2025 16:14:31 GMT
-EXPOSE map[6379/tcp:{}]
-# Mon, 06 Jan 2025 16:14:31 GMT
-CMD ["redis-server"]
-```
-
--	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 874.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f569c441e2df3e37dff6badbd93de5fc4cd248c22245f520c9ccd51b872b8da7`  
-		Last Modified: Tue, 25 Feb 2025 06:59:39 GMT  
-		Size: 14.7 MB (14716726 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ea2cb0cacf250c5dc80e4f00f2bb9b3fa08546df3bef7a4a80395727bca7e7d`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
+	-	`sha256:9019693d66f9f3e6075fba903068207d42614d7739792798cfa638ed1125d62f`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0ac5645bfc7ff9f41f8247cda22097e112b8a353345c004960d4342efded0c0`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
+	-	`sha256:095d8e89d31383ab8ced5a24ede81ff078d97fd0144a2f1c2db82d52028bee73`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
 		Size: 572.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.4.2-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:4ca440c9eca61ae04ac91a9abb3320d2b27e276b1bfdcb870661d0812c0ddd16
+$ docker pull redis@sha256:9a578a34d34fab3683390158164785ccd3355176eb372b7c53c192d7fc3ef40d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305141 bytes)**  
+-	Total Size: **2.3 MB (2306424 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7afb4db1d9dad99202814528937460838d2ab8b7e75ace6c98b4b3210e4b267`
+-	Image ID: `sha256:a34d9f172fdd87cccd1d043b07d03544ac92326af3b03df752d0f8ff671ea88b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0376c712a46243f071b948bd9deab345ca99705f73664e3fc23f729bc0ef6143`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
-		Size: 2.3 MB (2268631 bytes)  
+	-	`sha256:7a42fd511cfb2b27ee7de53ac7e9b32aeeb8df41c63fe083f9f6f73656fa7cb0`  
+		Last Modified: Tue, 18 Mar 2025 03:28:19 GMT  
+		Size: 2.3 MB (2269914 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:930332ceacd02182b33f98b179985ce83399946c94bd184748cb37c70c148e4b`  
-		Last Modified: Tue, 25 Feb 2025 06:59:37 GMT  
+	-	`sha256:3a053044afff6c4a2bc293eb539b0e721ac7cba72ce802c596ba930ed5180c12`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
+		Size: 36.5 KB (36510 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:7.4.2-bookworm` - linux; arm variant v7
+
+```console
+$ docker pull redis@sha256:abedb05e040ce2b2bb7844ac0584585292f8ec40c6c56934b145cd70bcf635fe
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **40.0 MB (40039922 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d2e98260995a5c554c04dc7a0865adf3fe065f5687298aa39d61ad93098055fb`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV GOSU_VERSION=1.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_VERSION=7.4.2
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.2.tar.gz
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_SHA=4ddebbf09061cbb589011786febdb34f29767dd7f89dbe712d2b68e808af6a1f
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+VOLUME [/data]
+# Mon, 06 Jan 2025 16:14:31 GMT
+WORKDIR /data
+# Mon, 06 Jan 2025 16:14:31 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Mon, 06 Jan 2025 16:14:31 GMT
+EXPOSE map[6379/tcp:{}]
+# Mon, 06 Jan 2025 16:14:31 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 874.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aabdbbd09f30ca42592cb2f87a4c2e1820193793b5f1c7eef2bbec9df65eb577`  
+		Last Modified: Tue, 18 Mar 2025 05:36:51 GMT  
+		Size: 14.7 MB (14716759 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2182888029a269071f6e24bc98aa0467efef8f9357ce5a1b7c5d2e3eff6472e0`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 97.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:301cd4c1b5ae4cd9e7859ab3fad483c04516e80e959392e74b0fe3e66adb29dd`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 572.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:7.4.2-bookworm` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:5525c6e4f4e1380c5498f88619b48c3df01897415ba7f866e5fdf49b8265eb62
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2305149 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:63f3a4e1fc4d3a345e78c96f980d7df46662baee5073792e2cf586135b7a5cd4`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:82920500f27d621c0ff2d1c23a3f9b9bfa727f1213dd88561f7b7e1e18bcd154`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 2.3 MB (2268639 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:ba39e801b3bc3d76fde46e6046887095087b5e676d6c6cbae183cf151cee033b`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
 		Size: 36.5 KB (36510 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -27898,19 +27898,19 @@ $ docker pull redis@sha256:5aa496680deb3a58d5d9a7a185eaad6025e3df4f16994d1fbfa73
 ### `redis:7.4.2-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:7ee593194eae2ddf1b8318321c8a13f53563ec015d3a82cd37a85a76b0928ac5
+$ docker pull redis@sha256:8cc2d92056101d1381a659531b1ba1068f8175dba770383c14bb564e5a5d43db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.9 MB (49908846 bytes)**  
+-	Total Size: **49.9 MB (49904496 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:595efd1dc8729814abfd9e80f3e99081062d6b8696f0bc426d5fcf657dc74e61`
+-	Image ID: `sha256:f13d3f1d46c8d60ece6c915a1097ad79ed1cda1fb29492c9b8f7e5fab9478238`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -27944,79 +27944,79 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80706cc377f8d9a102a74286de034a5fae063a6fa707f7f898125e752f009d23`  
-		Last Modified: Tue, 25 Feb 2025 04:12:37 GMT  
-		Size: 16.5 MB (16493731 bytes)  
+	-	`sha256:de9548c45fa02a8c5ed14856b04d18a9f0f955cae23e9df9789d3f7922e978d9`  
+		Last Modified: Tue, 18 Mar 2025 01:35:38 GMT  
+		Size: 16.5 MB (16493919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0a526c1b8dbd3e19b68a11f1dbe00fd131c699b1ae9d3cdc281e0560ec20a6e`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
+	-	`sha256:9bba7f2963eea990e234b787d45bbe03e37b00d337b558f46948ebec8a857df1`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00089b95a85fb4056df10d7dfaee161e76334827ab04fe266155bc10d63e2326`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 573.0 B  
+	-	`sha256:1a6b308d981b284b50e831c45ef149851b555ea8f59588276f22991fad08ac6f`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
+		Size: 571.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.4.2-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:273bdb71e82e5847950567493b13c60acaf16c2a94cb59c5bb4008440d55af76
+$ docker pull redis@sha256:af50d2411a66c24584e4a41b341887977324b323ba169d1fb457aa856adc5c9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2307118 bytes)**  
+-	Total Size: **2.3 MB (2307125 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:67e31d28eba30fbf00aea7cd054f2eff4762ff446ede779d6ff442a34a966119`
+-	Image ID: `sha256:c76e1b9339b2f969a81c9f4c42f7ebbdba6327ec738eb60b739c3b6cdd9e9cbc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:91b6a836a9c205e93ed1fe579d71deb33299b33242e5a021a94fd513e7371449`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 2.3 MB (2270692 bytes)  
+	-	`sha256:ef6b6bfee37f14992a15c1246d6998b318e2299260bcdafc934e1613e1d0fa5d`  
+		Last Modified: Tue, 18 Mar 2025 01:35:38 GMT  
+		Size: 2.3 MB (2270700 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:db05e61a4dd2db0c71aec9230270a2898c124bb1867e68aa1d5b94f9c750c8e0`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 36.4 KB (36426 bytes)  
+	-	`sha256:734a0c5e6ba6baf1ae2acf78440f94bd2479d1e5f75eabe3b8449ec1035769ab`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
+		Size: 36.4 KB (36425 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:7.4.2-bookworm` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:b9769d5d5c730089b3f02957a514c1699924f86ce1996a707586f17f38afad13
+$ docker pull redis@sha256:4fa8c4464dfdb2af83fa5a03dba0840a04f73b3de484514ff719d0c718c967a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.6 MB (43637803 bytes)**  
+-	Total Size: **43.6 MB (43633976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c195a8f1678beaecb22ee2c4eb176e2f476a57123437674fde2cc2e70478191`
+-	Image ID: `sha256:c1028df9e9133ecf7e82ca2381785489deb4412394d643019b472a98cbeaac52`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -28050,67 +28050,67 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:6d4d169c55c2ee02478b6705c4ba9e6795bffbbb872a22adfd95fb2484f2e85c`  
-		Last Modified: Tue, 25 Feb 2025 01:30:03 GMT  
-		Size: 26.9 MB (26864838 bytes)  
+	-	`sha256:c25b115468ab81aaa9017d4d794bc086cba904c84f73abda1eac28615cd44629`  
+		Last Modified: Mon, 17 Mar 2025 22:27:10 GMT  
+		Size: 26.9 MB (26861059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8623e0eab86b24357c3c02e81a4d608209ed331967fe22e6e754b2d72dac261`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
+	-	`sha256:55fef5a169b7602dfb48d72cd6904c66536a89d9114cd0e72ec5ef46aa34579b`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7ff0980913721f64a17edc5b03d307593f905efd57d1b93af34c44615816ac3`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 876.0 B  
+	-	`sha256:22aab92482471047b4820276b1f029b286dec6a8db976e61a3a4e1edeba96592`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34dd6c787468788f646cd187d5359d4ae83605c73853673109cd751bf93e4f9f`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 1.4 MB (1403066 bytes)  
+	-	`sha256:5b959d82dc4ff71bfdfac0434f1a1ca1ddf4aed07f4a46a3f156b0fb749fccdf`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 1.4 MB (1403033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:176a2d51bb33cc610d7aff271ae07e7652026a3df79958477ed46e59cc7ed136`  
-		Last Modified: Tue, 25 Feb 2025 03:50:33 GMT  
-		Size: 15.4 MB (15367223 bytes)  
+	-	`sha256:943f154a36dc95398a8304fcc18facc66c7462133fee6e72133019e98d2a8c29`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
+		Size: 15.4 MB (15367211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a65d62004eda6db61b12017e75b4f1057bf1cb89e7afd7aa2df18d30e8921395`  
-		Last Modified: Tue, 25 Feb 2025 03:50:32 GMT  
+	-	`sha256:5fac48b60b6bf26be1a236e78e720e3508edbe7b1af5a9ce62a4898582a774fd`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c70505fbef35515ca99caba26376c33c628595338cb5e308c5feb314d826ac7`  
-		Last Modified: Tue, 25 Feb 2025 03:50:32 GMT  
+	-	`sha256:bfad3fa43456f6ca6b4a177711f0de7d0dfd73262720836e3ab912ca90b4fddf`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 569.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:7.4.2-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:dc743f0548ba8465af0c943585590713a51314ea8bcdd7b1844e5af530acbe11
+$ docker pull redis@sha256:24d8fb94742c5dfef5a38ef70d1c9077de683cafb3caefafe98bd2acc2541979
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2302452 bytes)**  
+-	Total Size: **2.3 MB (2302460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c97a881336f3ab2e3b007b18681a2689f92214073b3b3fa3ba9f0a94f976a167`
+-	Image ID: `sha256:1cf2dc6b6e64f72e11afba495c5cc1b3ab1384634e62e83008dc494e1f0cf6c8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e7819cdd1cd5547760ee9f649ad8428145dae6d5460f818ea8945b827f40099`  
-		Last Modified: Tue, 25 Feb 2025 03:50:31 GMT  
-		Size: 2.3 MB (2266102 bytes)  
+	-	`sha256:4686149a235a6c5bc8d6b9abaf4b50f62b255628b014c1e0ecfab7deddc9ac56`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
+		Size: 2.3 MB (2266110 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:279b1febb3ce3bcc61d796ea1a0ffa11225a91181f427607d05efec61a37f496`  
-		Last Modified: Tue, 25 Feb 2025 03:50:31 GMT  
+	-	`sha256:9729e5874e58e405d54258e5d5ebc80652618746c66818229b7fc18070750b93`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 36.4 KB (36350 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `redis:8.0-M03`
 
 ```console
-$ docker pull redis@sha256:7c0bca738fc3f86654ca6bfa83d43c983decd01fccf7c11ae9ebfd84a7523f75
+$ docker pull redis@sha256:f35d7bf9f1fdbcb7a0296ab01a5e7e72643a0a5d40fc263a189627bd09afe7c9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -28239,19 +28239,19 @@ $ docker pull redis@sha256:ce828fa9be929dd276516ec5981ab6bdc19d461102a3cfb39f0b5
 ### `redis:8.0-M03` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:677d0d700eda5f65cbee76e1c8e7e9be90256f5b9d27be38fb1557d835251ff4
+$ docker pull redis@sha256:4bc0edc39a088e5fa264768618fdf67133a3416d8e046669c6154883b2408e74
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.0 MB (42026965 bytes)**  
+-	Total Size: **42.0 MB (42022407 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80a520e6f4e4670318625c95850991e1561dc8b1426f2234fbc54801a4d12150`
+-	Image ID: `sha256:93345e8a9dc86978bc451beaa63f95bc4e3f172e767c9c09874702f702e3bb9c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Tue, 21 Jan 2025 10:29:06 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Tue, 21 Jan 2025 10:29:06 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Tue, 21 Jan 2025 10:29:06 GMT
@@ -28283,79 +28283,79 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8171f202a84f97563cc2f774a1fb3325b73301c7f24ac3280a3a6f9d90ba5bd9`  
-		Last Modified: Tue, 25 Feb 2025 05:10:58 GMT  
-		Size: 14.9 MB (14869144 bytes)  
+	-	`sha256:b46eefd8c3513efc6dd4939e76b3df685b4d02d80df26de3c01964fc7558d2df`  
+		Last Modified: Tue, 18 Mar 2025 03:35:16 GMT  
+		Size: 14.9 MB (14869268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a09c34eced5b52133131296b70c587ecb2bbd182b73fe3d96577e217af90d69`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
+	-	`sha256:193e9e71751b5eed71125f6f6e26f045a92ed612406436f9f21516085590ab43`  
+		Last Modified: Tue, 18 Mar 2025 03:35:15 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:822bef4469af5e35df0063915c335ea4bdfc9f6f2a6d0751ca4311cddeb91596`  
-		Last Modified: Tue, 25 Feb 2025 05:10:58 GMT  
-		Size: 836.0 B  
+	-	`sha256:2455bb927dcf2024a36346e1d36b5b2deb0dc4cfee1a863232652e37256e0d69`  
+		Last Modified: Tue, 18 Mar 2025 03:35:15 GMT  
+		Size: 835.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:8.0-M03` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:9cd3b65742edd2e300098b8c2827a4116eec5738268acf08bf0313ae3c790a88
+$ docker pull redis@sha256:888eda3f82a4fcaebafabaa0415fdc8b60d3d09b58d30b6ff7570e279232c9f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305337 bytes)**  
+-	Total Size: **2.3 MB (2305345 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4072d2c89f75f35a626cc1b66ce0d41d832d3c54ccad5592dc529c68ec440629`
+-	Image ID: `sha256:1b648f85b35bc5e8e1038129841a2735b648c09cc7a9e03515f25af4474da52f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2a80b5b4c49745a7499852bf4f188d297108e0b16a22232c70e0cac1fa66f93c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 2.3 MB (2268086 bytes)  
+	-	`sha256:d8070717f343947a5076bf475c91af8f558f55d211907bbaffe2f32c1dfe2b6b`  
+		Last Modified: Tue, 18 Mar 2025 03:35:16 GMT  
+		Size: 2.3 MB (2268094 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:917380cd681cb3c670182881d4520bfd3ba992dff616d03d455f267187b64c9e`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
+	-	`sha256:901b22ffd05e9d738db80008a3d99720f63f5edaf0c9684d9f7e90c6d4e12096`  
+		Last Modified: Tue, 18 Mar 2025 03:35:15 GMT  
 		Size: 37.3 KB (37251 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:8.0-M03` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:84f4bbb1d8fa12cca8be44053efd16dc9a2e1e1b61c881464538d08c3ed2cbfc
+$ docker pull redis@sha256:a66363f761d42523bd2afcc4e06cb972e64cd8f7e7a591540375ee8a3b226e69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.9 MB (39852908 bytes)**  
+-	Total Size: **39.8 MB (39848247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e739dbdca8c720abdb190022686599ef0f7dcf1ebaacfa53dc511125ff02f521`
+-	Image ID: `sha256:4f25924311bee23536b65111b1202c4880b708bb6e54c9815406a3e1917a1df3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Tue, 21 Jan 2025 10:29:06 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
 # Tue, 21 Jan 2025 10:29:06 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Tue, 21 Jan 2025 10:29:06 GMT
@@ -28387,79 +28387,79 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
 		Size: 874.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db7aabda94e20b4aeadbb5e99a0827bcc0fb7c58a662f31cc53aec4b3f6a16f5`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 14.5 MB (14524805 bytes)  
+	-	`sha256:00f9302322cf0536e0be98306c60023a904db32f71f646a0213933b97317499c`  
+		Last Modified: Tue, 18 Mar 2025 05:41:00 GMT  
+		Size: 14.5 MB (14524819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b0d6d30011c40415855d81c34f3681b5b1e5ac5b960d088788de715ac3cdfbb`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
+	-	`sha256:a73af0f685270d938810ae1f4002909f3af25d4f7767adb515f7d42620655cc5`  
+		Last Modified: Tue, 18 Mar 2025 05:40:59 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:744f889a0d037cd30564ac2609b2053035691a399ad2d139c6f7f6b5e482d1ea`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
+	-	`sha256:62ed3dd11201bdc46ac7dfb7972c6c984cff3bb41a004a1988d4265b4ec03f69`  
+		Last Modified: Tue, 18 Mar 2025 05:41:00 GMT  
 		Size: 837.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:8.0-M03` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:5d0a0eb86ba77433cb4ab4f50d2ac9f9fea3723a17bf092dd226212a1165cb94
+$ docker pull redis@sha256:96365385a00c62a1557e22b81a7778591b5325065931792e3dabce8618e2c3b5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2304062 bytes)**  
+-	Total Size: **2.3 MB (2304070 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3311533c6fef9b1743932cb837ad1138914291e6463d4945d41b598bf25c755`
+-	Image ID: `sha256:f4b1806909425d27e054a3946f5257051f3bf9f20488dede84e65ea624379b7c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:245201a4252a8075dcbe92ac87606d75f80024205d90ac9946fa4a7f57e234ac`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 2.3 MB (2266811 bytes)  
+	-	`sha256:c1776becc7e401cabf6820b0f8e02f5736f8b812067c2dc6d0966f402b4fd510`  
+		Last Modified: Tue, 18 Mar 2025 05:41:00 GMT  
+		Size: 2.3 MB (2266819 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0e48c66e2106f4e974e7f2a4070057dd84f1aceea344c86145fea11853b8a73a`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
+	-	`sha256:e58f7fe07c2fd3a02d9aa3176204a863ef4816dcd282227370f33747188c6c1f`  
+		Last Modified: Tue, 18 Mar 2025 05:40:59 GMT  
 		Size: 37.3 KB (37251 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:8.0-M03` - linux; arm64 variant v8
 
 ```console
-$ docker pull redis@sha256:8b7ef72c6504e3a7863f1105d7a83558265bff37694f9e3e8f1915eb6b54fe5f
+$ docker pull redis@sha256:13a33008414745a68e6fe5b7bae423e7d43e176b6cc10e1258df75c1f66f4255
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.1 MB (50076233 bytes)**  
+-	Total Size: **50.1 MB (50071817 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25d5bd0f35054ec4e9e5b52c6343bca4f53a6a139054367e2a9e6c52bc17a263`
+-	Image ID: `sha256:f2d445dbf92f33fe30429d9e4bfa0a846388cebf6eaed42d4fdaacb76931874c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Tue, 21 Jan 2025 10:29:06 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1742169600'
 # Tue, 21 Jan 2025 10:29:06 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Tue, 21 Jan 2025 10:29:06 GMT
@@ -28491,60 +28491,60 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d51c377d94dadb60d549c51ba66d3c4eeaa8bace4935d570ee65d8d1141d38fc`  
-		Last Modified: Tue, 25 Feb 2025 01:30:59 GMT  
-		Size: 28.0 MB (28048425 bytes)  
+	-	`sha256:d9b6365477446a79987b20560ae52637be6f54d6d2f801e16aaa0ca25dd0964b`  
+		Last Modified: Mon, 17 Mar 2025 22:17:34 GMT  
+		Size: 28.0 MB (28044037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee8be9135819d18cb8a4514c4d11650c1347feedf4b5b20c0da6200fd5a37aa3`  
-		Last Modified: Tue, 25 Feb 2025 05:16:33 GMT  
-		Size: 1.1 KB (1102 bytes)  
+	-	`sha256:0464cdab0354acb6ca9923e3a059f383182339a7b39b98dcc049c189396fa8f9`  
+		Last Modified: Mon, 17 Mar 2025 23:17:43 GMT  
+		Size: 1.1 KB (1101 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:588ff5b1957ce519dd50104634a0dd95ebdc7c7a4609d039d9d75353ebdd49b5`  
-		Last Modified: Tue, 25 Feb 2025 05:16:33 GMT  
-		Size: 875.0 B  
+	-	`sha256:34a9c6c6f3115b96c8d3857777cc009e29a9e1a31491926273ab3a5f40e1be6f`  
+		Last Modified: Mon, 17 Mar 2025 23:17:43 GMT  
+		Size: 874.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:507ad0ab32f2301659767e1ceddbe9c276914e6ee1a4abf16389f5c1069fc8f2`  
-		Last Modified: Tue, 25 Feb 2025 05:16:34 GMT  
-		Size: 1.4 MB (1369388 bytes)  
+	-	`sha256:8953241cfe2c77bcd0f16a19a6e18435cbf0e5b42b698e9ad3e28beadf99cb9f`  
+		Last Modified: Mon, 17 Mar 2025 23:17:43 GMT  
+		Size: 1.4 MB (1369377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bce2dc7eb46b86e36c6009120414664ef55dbe00f8c870e0468e18c3d649d879`  
-		Last Modified: Tue, 25 Feb 2025 05:16:35 GMT  
-		Size: 20.7 MB (20655471 bytes)  
+	-	`sha256:41dd186caf2cf36e081e543c26999bb1d20947c394c2b102b26369ed755c7206`  
+		Last Modified: Tue, 18 Mar 2025 05:14:55 GMT  
+		Size: 20.7 MB (20655459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef5880c2f0a78b7e9c18231ab2ad1dfd983eea87be794f8fc76fd966de80f760`  
-		Last Modified: Tue, 25 Feb 2025 05:16:34 GMT  
-		Size: 97.0 B  
+	-	`sha256:846d55255d348f645e9df6e5c8dc9811e26144e93661bea594d77f131c76723d`  
+		Last Modified: Tue, 18 Mar 2025 05:14:54 GMT  
+		Size: 96.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:650aa6726bebf3caf09e4e5c8167e3b143de87f03832b5b5ac2702a85da39c88`  
-		Last Modified: Tue, 25 Feb 2025 05:16:35 GMT  
-		Size: 843.0 B  
+	-	`sha256:ab55ffcc15cbcfce6a55e12a49321ba68fd31c6342d902f654a21caeb09a3656`  
+		Last Modified: Tue, 18 Mar 2025 05:14:54 GMT  
+		Size: 841.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:8.0-M03` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:91b9feb4e252ca5737abfb38ff2fca8ddfb74323ba2f026ea83db577233afb87
+$ docker pull redis@sha256:edcc7817dbaf4b9afa29f1f669f2f817a27454a7a666a086250b25a1b0e19836
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2300912 bytes)**  
+-	Total Size: **2.3 MB (2300920 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08aecc87db21eb0ea69d5ea81c80a4508a99a983dcf783dbb5afba99ec6b519e`
+-	Image ID: `sha256:b3da47d67d3196ba40f1505fb6200546f2634d1117bf1ee9c0d9777f8ea96700`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fd6cfd84205c08315c9c32699c98f61565f2b4abd4763ebac6133b713bc8d0af`  
-		Last Modified: Tue, 25 Feb 2025 05:16:34 GMT  
-		Size: 2.3 MB (2263633 bytes)  
+	-	`sha256:c8c8d588d3d8b0780280f30c572ed4c8808f88307963d9750f3ad11076e3313f`  
+		Last Modified: Tue, 18 Mar 2025 05:14:54 GMT  
+		Size: 2.3 MB (2263641 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b620b472f4fd6ed3d3fde67db5337c9a144e2ad9855257dfd7ffb31e82443908`  
-		Last Modified: Tue, 25 Feb 2025 05:16:33 GMT  
+	-	`sha256:b297880951db53d8c5d4aced3dbf7360051fdc80a30ce1e96d9bd3a2d9b1b0f7`  
+		Last Modified: Tue, 18 Mar 2025 05:14:53 GMT  
 		Size: 37.3 KB (37279 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -28655,19 +28655,19 @@ $ docker pull redis@sha256:96f50e9b0a0ecd7d1afa082f6da7d22930365a99d4da7cbcf7c00
 ### `redis:8.0-M03` - linux; mips64le
 
 ```console
-$ docker pull redis@sha256:18491ef60ea55f2af4761c387a4c2e11ee40235d552fd0bdd62ab282df73309c
+$ docker pull redis@sha256:a7bb3473de913c95829e13a521284efc34068fbdf60aa2a6f19e51de9c074864
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.1 MB (45059737 bytes)**  
+-	Total Size: **45.1 MB (45055700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24400e382d831c1e1c107cf9733875b94bf00a2ac1dfa3dc1222faebe52f9936`
+-	Image ID: `sha256:b23f2ce70a7486ccc824cb26f77201a1509627bf3c8aae6d0aa600beb8154d7d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Tue, 21 Jan 2025 10:29:06 GMT
-RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1742169600'
 # Tue, 21 Jan 2025 10:29:06 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Tue, 21 Jan 2025 10:29:06 GMT
@@ -28699,75 +28699,75 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:1851efe37d59b19d5c7092778464657e31dbfae35874c19fb94fb95542e2fba7`  
-		Last Modified: Tue, 25 Feb 2025 01:30:49 GMT  
-		Size: 28.5 MB (28493681 bytes)  
+	-	`sha256:18c44d6735d044d9bace3fdbe647c9b8187637683376f05d85dcb1185876721f`  
+		Last Modified: Mon, 17 Mar 2025 22:19:04 GMT  
+		Size: 28.5 MB (28489456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f66df131c66d2fd64cbeed18ff6caf3ea1676dd64a2c09e89671f3d81707eb3e`  
-		Last Modified: Tue, 25 Feb 2025 14:26:25 GMT  
-		Size: 1.1 KB (1104 bytes)  
+	-	`sha256:2c717f91e4e0de87194677bf460978f2b7b9fc0b421ef4d16c5523faa83ce08c`  
+		Last Modified: Tue, 18 Mar 2025 03:59:54 GMT  
+		Size: 1.1 KB (1105 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbc10c8c95b2b69d8474289e00f15dc548c3187b5c39e7bb4f9a5945029eafd9`  
-		Last Modified: Tue, 25 Feb 2025 14:26:25 GMT  
-		Size: 876.0 B  
+	-	`sha256:90d7b89bb36c21bd18f85e40fa47d5342290f05c5931c3e7b583df49d221a804`  
+		Last Modified: Tue, 18 Mar 2025 03:59:54 GMT  
+		Size: 875.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29cc457be70670b66647696725ffa7548c682f9f912beae12ce3999eae6d330c`  
-		Last Modified: Tue, 25 Feb 2025 14:26:26 GMT  
-		Size: 1.3 MB (1325333 bytes)  
+	-	`sha256:b9465f49bb62e92cc195be749a7e41b423ae42cbb1e37f712bfbcd773ad3f765`  
+		Last Modified: Tue, 18 Mar 2025 03:59:54 GMT  
+		Size: 1.3 MB (1325392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1a27ff58cc4c0f448a11aa506a213cfe3f74a17916bc8f137a67e7de9f36b96`  
-		Last Modified: Tue, 25 Feb 2025 14:26:27 GMT  
-		Size: 15.2 MB (15237777 bytes)  
+	-	`sha256:cf290cbf5d8a7e718ecf564f126d752057d4278b4a014ffe0be53439169f1bea`  
+		Last Modified: Tue, 18 Mar 2025 03:59:56 GMT  
+		Size: 15.2 MB (15237906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80fc92bb2062955e0a80ac6cc610969a2fb4235b6536ccd494accbb9ed1b0852`  
-		Last Modified: Tue, 25 Feb 2025 14:26:26 GMT  
+	-	`sha256:9b89fcdfda0c7378876f6f7382ded79c9811f9839014d05a0cf0a903db3f2789`  
+		Last Modified: Tue, 18 Mar 2025 03:59:55 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0204ad58a2b9c99a2e2f7a88fad620a2a30980b109dbe823f41831a5ef6b6eb`  
-		Last Modified: Tue, 25 Feb 2025 14:26:26 GMT  
+	-	`sha256:b08e4afcde8dbd63cb0cd23a6db618ec8e597a195c6ae144bed4caee2d9bdc68`  
+		Last Modified: Tue, 18 Mar 2025 03:59:55 GMT  
 		Size: 837.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:8.0-M03` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:9e04f95b69e781d4635ae3c553758ab75f017461a071f0265e8f8a1afbcf9170
+$ docker pull redis@sha256:bd2c03e936845d00c76aa07390c3a91464bc514c0d03462b8226c1b4a7b5ff82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **37.0 KB (36984 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93db1b1ddcf491f7d53b8dd018fbb3b5874208c95135fb6c7d269854398be21f`
+-	Image ID: `sha256:7e08238b10881aff3cc09671d9df546fe7896edb98254061f8da6da0dd320ed1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:195185bb3904f8691d9ad821b6a73e98c29e8927d6c1fcba8dedacbfc9feae58`  
-		Last Modified: Tue, 25 Feb 2025 14:26:25 GMT  
+	-	`sha256:01387553ae74bc8ae6a4626f8aaf9792c9159ed5a03cf32eea3be8d8bf5a948a`  
+		Last Modified: Tue, 18 Mar 2025 03:59:54 GMT  
 		Size: 37.0 KB (36984 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:8.0-M03` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:675a1fc1759c6d3cfe7a943bfe72ab93b4632ae9e82e991a0d38532aa738ee0e
+$ docker pull redis@sha256:a3f5458f5642f0bd91d8c6d6526cc32ba44e6affbcef8b46fb4b15cb0578fdca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.7 MB (49720056 bytes)**  
+-	Total Size: **49.7 MB (49715518 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d402700b1e0ba6eaa547429c84704c52906b1011a1131a7774eb1e5f0d7d9eb3`
+-	Image ID: `sha256:1812e2c93b7ab44f9b0af8e498ba123e6701dac1f5102dbdebf0adb3e6b5644c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Tue, 21 Jan 2025 10:29:06 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Tue, 21 Jan 2025 10:29:06 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Tue, 21 Jan 2025 10:29:06 GMT
@@ -28799,79 +28799,79 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:080a659bd2f2022555564db8277251d510bac9c6f841c3c67adea28365bee77b`  
-		Last Modified: Tue, 25 Feb 2025 04:10:46 GMT  
-		Size: 16.3 MB (16304678 bytes)  
+	-	`sha256:15383c196060b8c55d66729d2100948446ddc0f249e146cd18513eb68b09e892`  
+		Last Modified: Tue, 18 Mar 2025 01:55:55 GMT  
+		Size: 16.3 MB (16304676 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a10606d72eb6ef44acc4290f47c789b91b787c5bdecf3bfe2a2c09dcfbeb71ff`  
-		Last Modified: Tue, 25 Feb 2025 04:10:46 GMT  
+	-	`sha256:4e6cdd494c01029ab7e41cccd79176e1c0bcdf11e54a9ecf94dd4374a8b4d6bf`  
+		Last Modified: Tue, 18 Mar 2025 01:55:53 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e4f786454448278ab1b6278f6b1850f6ed0fc44ec9914bfd1998a4f3347ca77`  
-		Last Modified: Tue, 25 Feb 2025 04:10:46 GMT  
+	-	`sha256:e9e7016475ca1d8a2dcaab8595b9f8f9e95dac9680b036e1b70828fe9ddd17b2`  
+		Last Modified: Tue, 18 Mar 2025 01:55:53 GMT  
 		Size: 836.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:8.0-M03` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:e5fccdf1b8ebee21981a1af73660e644117cba4b392b91f3c119373d7acde656
+$ docker pull redis@sha256:7a2e9d347873423d778df265b5e7298133e338dabd40c4e2fb2e79145b5834e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2306063 bytes)**  
+-	Total Size: **2.3 MB (2306071 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ca0aae6366241d328c72cdd27963047415313fa93968266331d601c07f2b0b0`
+-	Image ID: `sha256:c58e8ca3e6245f238f2d8abd39cd98c3d457161d9b6ed7b96fcca179aae346b9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:be9065f269aadda02a674d9e24ffe49df57f7d4db6aea2742067d730dd3379ec`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 2.3 MB (2268884 bytes)  
+	-	`sha256:0bafa9fb74d3b092253950ecc8c98133594a497ea6ec77efbe71484fd6af1b18`  
+		Last Modified: Tue, 18 Mar 2025 01:55:53 GMT  
+		Size: 2.3 MB (2268892 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6ca84d638acc563adcacce75b27d4b83df465677f36f1ac91e2725e9426d024`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
+	-	`sha256:be87f952ff4c2eb0aba5c6876e77fe74ff50a51440dc976243294391c0d1b5ac`  
+		Last Modified: Tue, 18 Mar 2025 01:55:53 GMT  
 		Size: 37.2 KB (37179 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:8.0-M03` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:838f9879abbd5a290d584ea6d24d7588c9f3f8527dd1d1d0f7858d55f3fbd4ab
+$ docker pull redis@sha256:8754fe2b91af3615361fa89e6bfca89c8c38a4350869c581a3d652c265ad4413
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.4 MB (43442189 bytes)**  
+-	Total Size: **43.4 MB (43438424 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e8d42bb96087d7439d92588c48af3c4ed312a59dd95f53be3c0fc56a17e4891`
+-	Image ID: `sha256:a448fea3d1848da11326717ab37ce900f0e7ced0b11bcb9ba17bd56d8de36a0b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Tue, 21 Jan 2025 10:29:06 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1742169600'
 # Tue, 21 Jan 2025 10:29:06 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Tue, 21 Jan 2025 10:29:06 GMT
@@ -28903,60 +28903,60 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:6d4d169c55c2ee02478b6705c4ba9e6795bffbbb872a22adfd95fb2484f2e85c`  
-		Last Modified: Tue, 25 Feb 2025 01:30:03 GMT  
-		Size: 26.9 MB (26864838 bytes)  
+	-	`sha256:c25b115468ab81aaa9017d4d794bc086cba904c84f73abda1eac28615cd44629`  
+		Last Modified: Mon, 17 Mar 2025 22:27:10 GMT  
+		Size: 26.9 MB (26861059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8623e0eab86b24357c3c02e81a4d608209ed331967fe22e6e754b2d72dac261`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
+	-	`sha256:55fef5a169b7602dfb48d72cd6904c66536a89d9114cd0e72ec5ef46aa34579b`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7ff0980913721f64a17edc5b03d307593f905efd57d1b93af34c44615816ac3`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 876.0 B  
+	-	`sha256:22aab92482471047b4820276b1f029b286dec6a8db976e61a3a4e1edeba96592`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34dd6c787468788f646cd187d5359d4ae83605c73853673109cd751bf93e4f9f`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 1.4 MB (1403066 bytes)  
+	-	`sha256:5b959d82dc4ff71bfdfac0434f1a1ca1ddf4aed07f4a46a3f156b0fb749fccdf`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 1.4 MB (1403033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d32d90c1553112eb9bd065645453765976dd0f33ba618c7b61ea89dddab4d006`  
-		Last Modified: Tue, 25 Feb 2025 03:48:59 GMT  
-		Size: 15.2 MB (15171341 bytes)  
+	-	`sha256:e02b4ff40fb6ff10b057c5af047bb7bc41928cfaf6dbb76da7e66fb852fc64dd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 15.2 MB (15171393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:255fc4a2acac39afe7c699c82cd7fb6724faa9bdb92fe4ce5a6afff546fbe2b2`  
-		Last Modified: Tue, 25 Feb 2025 03:48:59 GMT  
+	-	`sha256:140a7c105ba2312bf995175acf9ff14ec3d977e410601b5eadeba34b10c2677b`  
+		Last Modified: Tue, 18 Mar 2025 03:25:40 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2c551ae6959b2984b9d9eae622d31691e22ceadb33705fc471cdcb305714b07`  
-		Last Modified: Tue, 25 Feb 2025 03:48:59 GMT  
-		Size: 837.0 B  
+	-	`sha256:b883ae95ea0363b89345d1b0e1767c881bad0e9ae19199631b810780aa0129ac`  
+		Last Modified: Tue, 18 Mar 2025 03:25:40 GMT  
+		Size: 835.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:8.0-M03` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:e989048dc3448138cbae94b2f849a90e35216db1d6cb7d82ae5e42dcfc3b7e5a
+$ docker pull redis@sha256:f89ea3cdd33aa3e39189c29fa0b6337a4921c9173f8e6b7537a00d39ac0ab787
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2301469 bytes)**  
+-	Total Size: **2.3 MB (2301477 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:18b73b477d3efc496e4ad15521fef08d865fd44a3cd4474befd35ee867d3db33`
+-	Image ID: `sha256:315da2974027df47db39ae2c2d236f7e9c5e316123d94eeb7d0f4c55cd541111`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4d080bcaf97a6c5755ccc595032a6825f0c100a711d8483998364ff61cc909ca`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 2.3 MB (2264330 bytes)  
+	-	`sha256:c5c1a486731f90fc1895d26e8f613e3f48bce88b5ab163ccde8663366e8be0d0`  
+		Last Modified: Tue, 18 Mar 2025 03:25:40 GMT  
+		Size: 2.3 MB (2264338 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ebb4b88d5f6b71ed6f787cc93c00550750e9e44e2d5b595a7cdb0b60bcc01a33`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
+	-	`sha256:97d6ed87a7765d7b73b01c435d94697349d25f147fe550b254a7005e1d6d8466`  
+		Last Modified: Tue, 18 Mar 2025 03:25:40 GMT  
 		Size: 37.1 KB (37139 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -30701,7 +30701,7 @@ $ docker pull redis@sha256:7e504cb993f4d458f3954917a3761a4aeb210a1244ae9e6649498
 ## `redis:8.0-M03-bookworm`
 
 ```console
-$ docker pull redis@sha256:7c0bca738fc3f86654ca6bfa83d43c983decd01fccf7c11ae9ebfd84a7523f75
+$ docker pull redis@sha256:f35d7bf9f1fdbcb7a0296ab01a5e7e72643a0a5d40fc263a189627bd09afe7c9
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -30830,19 +30830,19 @@ $ docker pull redis@sha256:ce828fa9be929dd276516ec5981ab6bdc19d461102a3cfb39f0b5
 ### `redis:8.0-M03-bookworm` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:677d0d700eda5f65cbee76e1c8e7e9be90256f5b9d27be38fb1557d835251ff4
+$ docker pull redis@sha256:4bc0edc39a088e5fa264768618fdf67133a3416d8e046669c6154883b2408e74
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.0 MB (42026965 bytes)**  
+-	Total Size: **42.0 MB (42022407 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:80a520e6f4e4670318625c95850991e1561dc8b1426f2234fbc54801a4d12150`
+-	Image ID: `sha256:93345e8a9dc86978bc451beaa63f95bc4e3f172e767c9c09874702f702e3bb9c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Tue, 21 Jan 2025 10:29:06 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Tue, 21 Jan 2025 10:29:06 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Tue, 21 Jan 2025 10:29:06 GMT
@@ -30874,79 +30874,79 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8171f202a84f97563cc2f774a1fb3325b73301c7f24ac3280a3a6f9d90ba5bd9`  
-		Last Modified: Tue, 25 Feb 2025 05:10:58 GMT  
-		Size: 14.9 MB (14869144 bytes)  
+	-	`sha256:b46eefd8c3513efc6dd4939e76b3df685b4d02d80df26de3c01964fc7558d2df`  
+		Last Modified: Tue, 18 Mar 2025 03:35:16 GMT  
+		Size: 14.9 MB (14869268 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a09c34eced5b52133131296b70c587ecb2bbd182b73fe3d96577e217af90d69`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
+	-	`sha256:193e9e71751b5eed71125f6f6e26f045a92ed612406436f9f21516085590ab43`  
+		Last Modified: Tue, 18 Mar 2025 03:35:15 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:822bef4469af5e35df0063915c335ea4bdfc9f6f2a6d0751ca4311cddeb91596`  
-		Last Modified: Tue, 25 Feb 2025 05:10:58 GMT  
-		Size: 836.0 B  
+	-	`sha256:2455bb927dcf2024a36346e1d36b5b2deb0dc4cfee1a863232652e37256e0d69`  
+		Last Modified: Tue, 18 Mar 2025 03:35:15 GMT  
+		Size: 835.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:8.0-M03-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:9cd3b65742edd2e300098b8c2827a4116eec5738268acf08bf0313ae3c790a88
+$ docker pull redis@sha256:888eda3f82a4fcaebafabaa0415fdc8b60d3d09b58d30b6ff7570e279232c9f7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305337 bytes)**  
+-	Total Size: **2.3 MB (2305345 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:4072d2c89f75f35a626cc1b66ce0d41d832d3c54ccad5592dc529c68ec440629`
+-	Image ID: `sha256:1b648f85b35bc5e8e1038129841a2735b648c09cc7a9e03515f25af4474da52f`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:2a80b5b4c49745a7499852bf4f188d297108e0b16a22232c70e0cac1fa66f93c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 2.3 MB (2268086 bytes)  
+	-	`sha256:d8070717f343947a5076bf475c91af8f558f55d211907bbaffe2f32c1dfe2b6b`  
+		Last Modified: Tue, 18 Mar 2025 03:35:16 GMT  
+		Size: 2.3 MB (2268094 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:917380cd681cb3c670182881d4520bfd3ba992dff616d03d455f267187b64c9e`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
+	-	`sha256:901b22ffd05e9d738db80008a3d99720f63f5edaf0c9684d9f7e90c6d4e12096`  
+		Last Modified: Tue, 18 Mar 2025 03:35:15 GMT  
 		Size: 37.3 KB (37251 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:8.0-M03-bookworm` - linux; arm variant v7
 
 ```console
-$ docker pull redis@sha256:84f4bbb1d8fa12cca8be44053efd16dc9a2e1e1b61c881464538d08c3ed2cbfc
+$ docker pull redis@sha256:a66363f761d42523bd2afcc4e06cb972e64cd8f7e7a591540375ee8a3b226e69
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **39.9 MB (39852908 bytes)**  
+-	Total Size: **39.8 MB (39848247 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e739dbdca8c720abdb190022686599ef0f7dcf1ebaacfa53dc511125ff02f521`
+-	Image ID: `sha256:4f25924311bee23536b65111b1202c4880b708bb6e54c9815406a3e1917a1df3`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Tue, 21 Jan 2025 10:29:06 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
 # Tue, 21 Jan 2025 10:29:06 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Tue, 21 Jan 2025 10:29:06 GMT
@@ -30978,79 +30978,79 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
 		Size: 874.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:db7aabda94e20b4aeadbb5e99a0827bcc0fb7c58a662f31cc53aec4b3f6a16f5`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 14.5 MB (14524805 bytes)  
+	-	`sha256:00f9302322cf0536e0be98306c60023a904db32f71f646a0213933b97317499c`  
+		Last Modified: Tue, 18 Mar 2025 05:41:00 GMT  
+		Size: 14.5 MB (14524819 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1b0d6d30011c40415855d81c34f3681b5b1e5ac5b960d088788de715ac3cdfbb`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
+	-	`sha256:a73af0f685270d938810ae1f4002909f3af25d4f7767adb515f7d42620655cc5`  
+		Last Modified: Tue, 18 Mar 2025 05:40:59 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:744f889a0d037cd30564ac2609b2053035691a399ad2d139c6f7f6b5e482d1ea`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
+	-	`sha256:62ed3dd11201bdc46ac7dfb7972c6c984cff3bb41a004a1988d4265b4ec03f69`  
+		Last Modified: Tue, 18 Mar 2025 05:41:00 GMT  
 		Size: 837.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:8.0-M03-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:5d0a0eb86ba77433cb4ab4f50d2ac9f9fea3723a17bf092dd226212a1165cb94
+$ docker pull redis@sha256:96365385a00c62a1557e22b81a7778591b5325065931792e3dabce8618e2c3b5
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2304062 bytes)**  
+-	Total Size: **2.3 MB (2304070 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c3311533c6fef9b1743932cb837ad1138914291e6463d4945d41b598bf25c755`
+-	Image ID: `sha256:f4b1806909425d27e054a3946f5257051f3bf9f20488dede84e65ea624379b7c`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:245201a4252a8075dcbe92ac87606d75f80024205d90ac9946fa4a7f57e234ac`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 2.3 MB (2266811 bytes)  
+	-	`sha256:c1776becc7e401cabf6820b0f8e02f5736f8b812067c2dc6d0966f402b4fd510`  
+		Last Modified: Tue, 18 Mar 2025 05:41:00 GMT  
+		Size: 2.3 MB (2266819 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0e48c66e2106f4e974e7f2a4070057dd84f1aceea344c86145fea11853b8a73a`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
+	-	`sha256:e58f7fe07c2fd3a02d9aa3176204a863ef4816dcd282227370f33747188c6c1f`  
+		Last Modified: Tue, 18 Mar 2025 05:40:59 GMT  
 		Size: 37.3 KB (37251 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:8.0-M03-bookworm` - linux; arm64 variant v8
 
 ```console
-$ docker pull redis@sha256:8b7ef72c6504e3a7863f1105d7a83558265bff37694f9e3e8f1915eb6b54fe5f
+$ docker pull redis@sha256:13a33008414745a68e6fe5b7bae423e7d43e176b6cc10e1258df75c1f66f4255
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **50.1 MB (50076233 bytes)**  
+-	Total Size: **50.1 MB (50071817 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:25d5bd0f35054ec4e9e5b52c6343bca4f53a6a139054367e2a9e6c52bc17a263`
+-	Image ID: `sha256:f2d445dbf92f33fe30429d9e4bfa0a846388cebf6eaed42d4fdaacb76931874c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Tue, 21 Jan 2025 10:29:06 GMT
-RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'arm64' out/ 'bookworm' '@1742169600'
 # Tue, 21 Jan 2025 10:29:06 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Tue, 21 Jan 2025 10:29:06 GMT
@@ -31082,60 +31082,60 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d51c377d94dadb60d549c51ba66d3c4eeaa8bace4935d570ee65d8d1141d38fc`  
-		Last Modified: Tue, 25 Feb 2025 01:30:59 GMT  
-		Size: 28.0 MB (28048425 bytes)  
+	-	`sha256:d9b6365477446a79987b20560ae52637be6f54d6d2f801e16aaa0ca25dd0964b`  
+		Last Modified: Mon, 17 Mar 2025 22:17:34 GMT  
+		Size: 28.0 MB (28044037 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ee8be9135819d18cb8a4514c4d11650c1347feedf4b5b20c0da6200fd5a37aa3`  
-		Last Modified: Tue, 25 Feb 2025 05:16:33 GMT  
-		Size: 1.1 KB (1102 bytes)  
+	-	`sha256:0464cdab0354acb6ca9923e3a059f383182339a7b39b98dcc049c189396fa8f9`  
+		Last Modified: Mon, 17 Mar 2025 23:17:43 GMT  
+		Size: 1.1 KB (1101 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:588ff5b1957ce519dd50104634a0dd95ebdc7c7a4609d039d9d75353ebdd49b5`  
-		Last Modified: Tue, 25 Feb 2025 05:16:33 GMT  
-		Size: 875.0 B  
+	-	`sha256:34a9c6c6f3115b96c8d3857777cc009e29a9e1a31491926273ab3a5f40e1be6f`  
+		Last Modified: Mon, 17 Mar 2025 23:17:43 GMT  
+		Size: 874.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:507ad0ab32f2301659767e1ceddbe9c276914e6ee1a4abf16389f5c1069fc8f2`  
-		Last Modified: Tue, 25 Feb 2025 05:16:34 GMT  
-		Size: 1.4 MB (1369388 bytes)  
+	-	`sha256:8953241cfe2c77bcd0f16a19a6e18435cbf0e5b42b698e9ad3e28beadf99cb9f`  
+		Last Modified: Mon, 17 Mar 2025 23:17:43 GMT  
+		Size: 1.4 MB (1369377 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bce2dc7eb46b86e36c6009120414664ef55dbe00f8c870e0468e18c3d649d879`  
-		Last Modified: Tue, 25 Feb 2025 05:16:35 GMT  
-		Size: 20.7 MB (20655471 bytes)  
+	-	`sha256:41dd186caf2cf36e081e543c26999bb1d20947c394c2b102b26369ed755c7206`  
+		Last Modified: Tue, 18 Mar 2025 05:14:55 GMT  
+		Size: 20.7 MB (20655459 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef5880c2f0a78b7e9c18231ab2ad1dfd983eea87be794f8fc76fd966de80f760`  
-		Last Modified: Tue, 25 Feb 2025 05:16:34 GMT  
-		Size: 97.0 B  
+	-	`sha256:846d55255d348f645e9df6e5c8dc9811e26144e93661bea594d77f131c76723d`  
+		Last Modified: Tue, 18 Mar 2025 05:14:54 GMT  
+		Size: 96.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:650aa6726bebf3caf09e4e5c8167e3b143de87f03832b5b5ac2702a85da39c88`  
-		Last Modified: Tue, 25 Feb 2025 05:16:35 GMT  
-		Size: 843.0 B  
+	-	`sha256:ab55ffcc15cbcfce6a55e12a49321ba68fd31c6342d902f654a21caeb09a3656`  
+		Last Modified: Tue, 18 Mar 2025 05:14:54 GMT  
+		Size: 841.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:8.0-M03-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:91b9feb4e252ca5737abfb38ff2fca8ddfb74323ba2f026ea83db577233afb87
+$ docker pull redis@sha256:edcc7817dbaf4b9afa29f1f669f2f817a27454a7a666a086250b25a1b0e19836
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2300912 bytes)**  
+-	Total Size: **2.3 MB (2300920 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:08aecc87db21eb0ea69d5ea81c80a4508a99a983dcf783dbb5afba99ec6b519e`
+-	Image ID: `sha256:b3da47d67d3196ba40f1505fb6200546f2634d1117bf1ee9c0d9777f8ea96700`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:fd6cfd84205c08315c9c32699c98f61565f2b4abd4763ebac6133b713bc8d0af`  
-		Last Modified: Tue, 25 Feb 2025 05:16:34 GMT  
-		Size: 2.3 MB (2263633 bytes)  
+	-	`sha256:c8c8d588d3d8b0780280f30c572ed4c8808f88307963d9750f3ad11076e3313f`  
+		Last Modified: Tue, 18 Mar 2025 05:14:54 GMT  
+		Size: 2.3 MB (2263641 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b620b472f4fd6ed3d3fde67db5337c9a144e2ad9855257dfd7ffb31e82443908`  
-		Last Modified: Tue, 25 Feb 2025 05:16:33 GMT  
+	-	`sha256:b297880951db53d8c5d4aced3dbf7360051fdc80a30ce1e96d9bd3a2d9b1b0f7`  
+		Last Modified: Tue, 18 Mar 2025 05:14:53 GMT  
 		Size: 37.3 KB (37279 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -31246,19 +31246,19 @@ $ docker pull redis@sha256:96f50e9b0a0ecd7d1afa082f6da7d22930365a99d4da7cbcf7c00
 ### `redis:8.0-M03-bookworm` - linux; mips64le
 
 ```console
-$ docker pull redis@sha256:18491ef60ea55f2af4761c387a4c2e11ee40235d552fd0bdd62ab282df73309c
+$ docker pull redis@sha256:a7bb3473de913c95829e13a521284efc34068fbdf60aa2a6f19e51de9c074864
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **45.1 MB (45059737 bytes)**  
+-	Total Size: **45.1 MB (45055700 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:24400e382d831c1e1c107cf9733875b94bf00a2ac1dfa3dc1222faebe52f9936`
+-	Image ID: `sha256:b23f2ce70a7486ccc824cb26f77201a1509627bf3c8aae6d0aa600beb8154d7d`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Tue, 21 Jan 2025 10:29:06 GMT
-RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'mips64el' out/ 'bookworm' '@1742169600'
 # Tue, 21 Jan 2025 10:29:06 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Tue, 21 Jan 2025 10:29:06 GMT
@@ -31290,75 +31290,75 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:1851efe37d59b19d5c7092778464657e31dbfae35874c19fb94fb95542e2fba7`  
-		Last Modified: Tue, 25 Feb 2025 01:30:49 GMT  
-		Size: 28.5 MB (28493681 bytes)  
+	-	`sha256:18c44d6735d044d9bace3fdbe647c9b8187637683376f05d85dcb1185876721f`  
+		Last Modified: Mon, 17 Mar 2025 22:19:04 GMT  
+		Size: 28.5 MB (28489456 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f66df131c66d2fd64cbeed18ff6caf3ea1676dd64a2c09e89671f3d81707eb3e`  
-		Last Modified: Tue, 25 Feb 2025 14:26:25 GMT  
-		Size: 1.1 KB (1104 bytes)  
+	-	`sha256:2c717f91e4e0de87194677bf460978f2b7b9fc0b421ef4d16c5523faa83ce08c`  
+		Last Modified: Tue, 18 Mar 2025 03:59:54 GMT  
+		Size: 1.1 KB (1105 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bbc10c8c95b2b69d8474289e00f15dc548c3187b5c39e7bb4f9a5945029eafd9`  
-		Last Modified: Tue, 25 Feb 2025 14:26:25 GMT  
-		Size: 876.0 B  
+	-	`sha256:90d7b89bb36c21bd18f85e40fa47d5342290f05c5931c3e7b583df49d221a804`  
+		Last Modified: Tue, 18 Mar 2025 03:59:54 GMT  
+		Size: 875.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:29cc457be70670b66647696725ffa7548c682f9f912beae12ce3999eae6d330c`  
-		Last Modified: Tue, 25 Feb 2025 14:26:26 GMT  
-		Size: 1.3 MB (1325333 bytes)  
+	-	`sha256:b9465f49bb62e92cc195be749a7e41b423ae42cbb1e37f712bfbcd773ad3f765`  
+		Last Modified: Tue, 18 Mar 2025 03:59:54 GMT  
+		Size: 1.3 MB (1325392 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1a27ff58cc4c0f448a11aa506a213cfe3f74a17916bc8f137a67e7de9f36b96`  
-		Last Modified: Tue, 25 Feb 2025 14:26:27 GMT  
-		Size: 15.2 MB (15237777 bytes)  
+	-	`sha256:cf290cbf5d8a7e718ecf564f126d752057d4278b4a014ffe0be53439169f1bea`  
+		Last Modified: Tue, 18 Mar 2025 03:59:56 GMT  
+		Size: 15.2 MB (15237906 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80fc92bb2062955e0a80ac6cc610969a2fb4235b6536ccd494accbb9ed1b0852`  
-		Last Modified: Tue, 25 Feb 2025 14:26:26 GMT  
+	-	`sha256:9b89fcdfda0c7378876f6f7382ded79c9811f9839014d05a0cf0a903db3f2789`  
+		Last Modified: Tue, 18 Mar 2025 03:59:55 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0204ad58a2b9c99a2e2f7a88fad620a2a30980b109dbe823f41831a5ef6b6eb`  
-		Last Modified: Tue, 25 Feb 2025 14:26:26 GMT  
+	-	`sha256:b08e4afcde8dbd63cb0cd23a6db618ec8e597a195c6ae144bed4caee2d9bdc68`  
+		Last Modified: Tue, 18 Mar 2025 03:59:55 GMT  
 		Size: 837.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:8.0-M03-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:9e04f95b69e781d4635ae3c553758ab75f017461a071f0265e8f8a1afbcf9170
+$ docker pull redis@sha256:bd2c03e936845d00c76aa07390c3a91464bc514c0d03462b8226c1b4a7b5ff82
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **37.0 KB (36984 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:93db1b1ddcf491f7d53b8dd018fbb3b5874208c95135fb6c7d269854398be21f`
+-	Image ID: `sha256:7e08238b10881aff3cc09671d9df546fe7896edb98254061f8da6da0dd320ed1`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:195185bb3904f8691d9ad821b6a73e98c29e8927d6c1fcba8dedacbfc9feae58`  
-		Last Modified: Tue, 25 Feb 2025 14:26:25 GMT  
+	-	`sha256:01387553ae74bc8ae6a4626f8aaf9792c9159ed5a03cf32eea3be8d8bf5a948a`  
+		Last Modified: Tue, 18 Mar 2025 03:59:54 GMT  
 		Size: 37.0 KB (36984 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:8.0-M03-bookworm` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:675a1fc1759c6d3cfe7a943bfe72ab93b4632ae9e82e991a0d38532aa738ee0e
+$ docker pull redis@sha256:a3f5458f5642f0bd91d8c6d6526cc32ba44e6affbcef8b46fb4b15cb0578fdca
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.7 MB (49720056 bytes)**  
+-	Total Size: **49.7 MB (49715518 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:d402700b1e0ba6eaa547429c84704c52906b1011a1131a7774eb1e5f0d7d9eb3`
+-	Image ID: `sha256:1812e2c93b7ab44f9b0af8e498ba123e6701dac1f5102dbdebf0adb3e6b5644c`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Tue, 21 Jan 2025 10:29:06 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Tue, 21 Jan 2025 10:29:06 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Tue, 21 Jan 2025 10:29:06 GMT
@@ -31390,79 +31390,79 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:080a659bd2f2022555564db8277251d510bac9c6f841c3c67adea28365bee77b`  
-		Last Modified: Tue, 25 Feb 2025 04:10:46 GMT  
-		Size: 16.3 MB (16304678 bytes)  
+	-	`sha256:15383c196060b8c55d66729d2100948446ddc0f249e146cd18513eb68b09e892`  
+		Last Modified: Tue, 18 Mar 2025 01:55:55 GMT  
+		Size: 16.3 MB (16304676 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a10606d72eb6ef44acc4290f47c789b91b787c5bdecf3bfe2a2c09dcfbeb71ff`  
-		Last Modified: Tue, 25 Feb 2025 04:10:46 GMT  
+	-	`sha256:4e6cdd494c01029ab7e41cccd79176e1c0bcdf11e54a9ecf94dd4374a8b4d6bf`  
+		Last Modified: Tue, 18 Mar 2025 01:55:53 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4e4f786454448278ab1b6278f6b1850f6ed0fc44ec9914bfd1998a4f3347ca77`  
-		Last Modified: Tue, 25 Feb 2025 04:10:46 GMT  
+	-	`sha256:e9e7016475ca1d8a2dcaab8595b9f8f9e95dac9680b036e1b70828fe9ddd17b2`  
+		Last Modified: Tue, 18 Mar 2025 01:55:53 GMT  
 		Size: 836.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:8.0-M03-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:e5fccdf1b8ebee21981a1af73660e644117cba4b392b91f3c119373d7acde656
+$ docker pull redis@sha256:7a2e9d347873423d778df265b5e7298133e338dabd40c4e2fb2e79145b5834e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2306063 bytes)**  
+-	Total Size: **2.3 MB (2306071 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:8ca0aae6366241d328c72cdd27963047415313fa93968266331d601c07f2b0b0`
+-	Image ID: `sha256:c58e8ca3e6245f238f2d8abd39cd98c3d457161d9b6ed7b96fcca179aae346b9`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:be9065f269aadda02a674d9e24ffe49df57f7d4db6aea2742067d730dd3379ec`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 2.3 MB (2268884 bytes)  
+	-	`sha256:0bafa9fb74d3b092253950ecc8c98133594a497ea6ec77efbe71484fd6af1b18`  
+		Last Modified: Tue, 18 Mar 2025 01:55:53 GMT  
+		Size: 2.3 MB (2268892 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:f6ca84d638acc563adcacce75b27d4b83df465677f36f1ac91e2725e9426d024`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
+	-	`sha256:be87f952ff4c2eb0aba5c6876e77fe74ff50a51440dc976243294391c0d1b5ac`  
+		Last Modified: Tue, 18 Mar 2025 01:55:53 GMT  
 		Size: 37.2 KB (37179 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:8.0-M03-bookworm` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:838f9879abbd5a290d584ea6d24d7588c9f3f8527dd1d1d0f7858d55f3fbd4ab
+$ docker pull redis@sha256:8754fe2b91af3615361fa89e6bfca89c8c38a4350869c581a3d652c265ad4413
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.4 MB (43442189 bytes)**  
+-	Total Size: **43.4 MB (43438424 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e8d42bb96087d7439d92588c48af3c4ed312a59dd95f53be3c0fc56a17e4891`
+-	Image ID: `sha256:a448fea3d1848da11326717ab37ce900f0e7ced0b11bcb9ba17bd56d8de36a0b`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Tue, 21 Jan 2025 10:29:06 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1742169600'
 # Tue, 21 Jan 2025 10:29:06 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Tue, 21 Jan 2025 10:29:06 GMT
@@ -31494,60 +31494,60 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:6d4d169c55c2ee02478b6705c4ba9e6795bffbbb872a22adfd95fb2484f2e85c`  
-		Last Modified: Tue, 25 Feb 2025 01:30:03 GMT  
-		Size: 26.9 MB (26864838 bytes)  
+	-	`sha256:c25b115468ab81aaa9017d4d794bc086cba904c84f73abda1eac28615cd44629`  
+		Last Modified: Mon, 17 Mar 2025 22:27:10 GMT  
+		Size: 26.9 MB (26861059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8623e0eab86b24357c3c02e81a4d608209ed331967fe22e6e754b2d72dac261`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
+	-	`sha256:55fef5a169b7602dfb48d72cd6904c66536a89d9114cd0e72ec5ef46aa34579b`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7ff0980913721f64a17edc5b03d307593f905efd57d1b93af34c44615816ac3`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 876.0 B  
+	-	`sha256:22aab92482471047b4820276b1f029b286dec6a8db976e61a3a4e1edeba96592`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34dd6c787468788f646cd187d5359d4ae83605c73853673109cd751bf93e4f9f`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 1.4 MB (1403066 bytes)  
+	-	`sha256:5b959d82dc4ff71bfdfac0434f1a1ca1ddf4aed07f4a46a3f156b0fb749fccdf`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 1.4 MB (1403033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d32d90c1553112eb9bd065645453765976dd0f33ba618c7b61ea89dddab4d006`  
-		Last Modified: Tue, 25 Feb 2025 03:48:59 GMT  
-		Size: 15.2 MB (15171341 bytes)  
+	-	`sha256:e02b4ff40fb6ff10b057c5af047bb7bc41928cfaf6dbb76da7e66fb852fc64dd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 15.2 MB (15171393 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:255fc4a2acac39afe7c699c82cd7fb6724faa9bdb92fe4ce5a6afff546fbe2b2`  
-		Last Modified: Tue, 25 Feb 2025 03:48:59 GMT  
+	-	`sha256:140a7c105ba2312bf995175acf9ff14ec3d977e410601b5eadeba34b10c2677b`  
+		Last Modified: Tue, 18 Mar 2025 03:25:40 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a2c551ae6959b2984b9d9eae622d31691e22ceadb33705fc471cdcb305714b07`  
-		Last Modified: Tue, 25 Feb 2025 03:48:59 GMT  
-		Size: 837.0 B  
+	-	`sha256:b883ae95ea0363b89345d1b0e1767c881bad0e9ae19199631b810780aa0129ac`  
+		Last Modified: Tue, 18 Mar 2025 03:25:40 GMT  
+		Size: 835.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:8.0-M03-bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:e989048dc3448138cbae94b2f849a90e35216db1d6cb7d82ae5e42dcfc3b7e5a
+$ docker pull redis@sha256:f89ea3cdd33aa3e39189c29fa0b6337a4921c9173f8e6b7537a00d39ac0ab787
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2301469 bytes)**  
+-	Total Size: **2.3 MB (2301477 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:18b73b477d3efc496e4ad15521fef08d865fd44a3cd4474befd35ee867d3db33`
+-	Image ID: `sha256:315da2974027df47db39ae2c2d236f7e9c5e316123d94eeb7d0f4c55cd541111`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4d080bcaf97a6c5755ccc595032a6825f0c100a711d8483998364ff61cc909ca`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 2.3 MB (2264330 bytes)  
+	-	`sha256:c5c1a486731f90fc1895d26e8f613e3f48bce88b5ab163ccde8663366e8be0d0`  
+		Last Modified: Tue, 18 Mar 2025 03:25:40 GMT  
+		Size: 2.3 MB (2264338 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ebb4b88d5f6b71ed6f787cc93c00550750e9e44e2d5b595a7cdb0b60bcc01a33`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
+	-	`sha256:97d6ed87a7765d7b73b01c435d94697349d25f147fe550b254a7005e1d6d8466`  
+		Last Modified: Tue, 18 Mar 2025 03:25:40 GMT  
 		Size: 37.1 KB (37139 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -33324,7 +33324,7 @@ $ docker pull redis@sha256:025ea6bc45deab5c1ee75351613abbf7a2706a79dfeea821e46e5
 ## `redis:bookworm`
 
 ```console
-$ docker pull redis@sha256:92ae19b3c5506d686d0059b8d93d75f8ed2c59a5b97098e64c577a4683938011
+$ docker pull redis@sha256:5250fed70d8a66f4901a8beace6f85bee9550c0fc6fd42d10e2c1cd24cf93a0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -33455,19 +33455,19 @@ $ docker pull redis@sha256:35cff247eda14e361298009303bc898a5b076357ae65659245c0d
 ### `redis:bookworm` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:0fa1495a0aabad5e5d8ff2563ffab9294200bd8d9d54ba2aeca2fb1ddccda698
+$ docker pull redis@sha256:5e9ec3905ce65d58171a1fb9b81703499923c7007d108371d96c00b827e1e27a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.2 MB (42212936 bytes)**  
+-	Total Size: **42.2 MB (42208345 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2330b40a34dbedb223b1b4e54b67ba2324d3fbefbae4eaa8bc1613a0d1154be8`
+-	Image ID: `sha256:ef005adb1638ca3e51bdd07e2448e223ea07bb285f055ae329c73d0471d3bd6e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -33501,166 +33501,166 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef3a33ef7a4a9d435bca9fa38e6aab6e4cd8b8ab84d419c9a7e02e560a50fca2`  
-		Last Modified: Tue, 25 Feb 2025 05:12:15 GMT  
-		Size: 15.1 MB (15055379 bytes)  
+	-	`sha256:caff19f61d9a707da84ea691fabf929157f75ddcdb1fcaf191da2ab62a48dfb3`  
+		Last Modified: Tue, 18 Mar 2025 03:28:19 GMT  
+		Size: 15.1 MB (15055469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58e6ac31808a5c59eb44277954da9ed62d72a3f0172cec64e092a376c52f16e`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 96.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c5883f66308051d64bdc794bc84ee0efb80dcc1fc5dfa8697e8a994b28edfdc`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 573.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `redis:bookworm` - unknown; unknown
-
-```console
-$ docker pull redis@sha256:52cc1853849c8b31de9283ab87499539b45a2b98cf61dddf657adf447fe675d5
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2306415 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc9f91b01d5cbdb8fd6e2ac09828b9d0cfdd631e9d75369c6641db8c5f5a6615`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:ff3fcb32d91b9e7196013670b3586af01d26fafdefffc48bb6267da1f474d1a8`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 2.3 MB (2269906 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:4fec70f81167c6507bfab9a64496df0a2d9ae34df9f2b3d02a431b3b339e79d9`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 36.5 KB (36509 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `redis:bookworm` - linux; arm variant v7
-
-```console
-$ docker pull redis@sha256:a5584862f18c25c38e32ddadcd1d34163dced89fc7bd159ea014f89992c6b0f1
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.0 MB (40044564 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cdf88ab9dd68a6165b8348147e7ef3680ce8eb2f8cce2e336391e1e63456d60`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["redis-server"]`
-
-```dockerfile
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_VERSION=7.4.2
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.2.tar.gz
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_SHA=4ddebbf09061cbb589011786febdb34f29767dd7f89dbe712d2b68e808af6a1f
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN mkdir /data && chown redis:redis /data # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-VOLUME [/data]
-# Mon, 06 Jan 2025 16:14:31 GMT
-WORKDIR /data
-# Mon, 06 Jan 2025 16:14:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 06 Jan 2025 16:14:31 GMT
-EXPOSE map[6379/tcp:{}]
-# Mon, 06 Jan 2025 16:14:31 GMT
-CMD ["redis-server"]
-```
-
--	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 874.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f569c441e2df3e37dff6badbd93de5fc4cd248c22245f520c9ccd51b872b8da7`  
-		Last Modified: Tue, 25 Feb 2025 06:59:39 GMT  
-		Size: 14.7 MB (14716726 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ea2cb0cacf250c5dc80e4f00f2bb9b3fa08546df3bef7a4a80395727bca7e7d`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
+	-	`sha256:9019693d66f9f3e6075fba903068207d42614d7739792798cfa638ed1125d62f`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0ac5645bfc7ff9f41f8247cda22097e112b8a353345c004960d4342efded0c0`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
+	-	`sha256:095d8e89d31383ab8ced5a24ede81ff078d97fd0144a2f1c2db82d52028bee73`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
 		Size: 572.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:4ca440c9eca61ae04ac91a9abb3320d2b27e276b1bfdcb870661d0812c0ddd16
+$ docker pull redis@sha256:9a578a34d34fab3683390158164785ccd3355176eb372b7c53c192d7fc3ef40d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305141 bytes)**  
+-	Total Size: **2.3 MB (2306424 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7afb4db1d9dad99202814528937460838d2ab8b7e75ace6c98b4b3210e4b267`
+-	Image ID: `sha256:a34d9f172fdd87cccd1d043b07d03544ac92326af3b03df752d0f8ff671ea88b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0376c712a46243f071b948bd9deab345ca99705f73664e3fc23f729bc0ef6143`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
-		Size: 2.3 MB (2268631 bytes)  
+	-	`sha256:7a42fd511cfb2b27ee7de53ac7e9b32aeeb8df41c63fe083f9f6f73656fa7cb0`  
+		Last Modified: Tue, 18 Mar 2025 03:28:19 GMT  
+		Size: 2.3 MB (2269914 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:930332ceacd02182b33f98b179985ce83399946c94bd184748cb37c70c148e4b`  
-		Last Modified: Tue, 25 Feb 2025 06:59:37 GMT  
+	-	`sha256:3a053044afff6c4a2bc293eb539b0e721ac7cba72ce802c596ba930ed5180c12`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
+		Size: 36.5 KB (36510 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:bookworm` - linux; arm variant v7
+
+```console
+$ docker pull redis@sha256:abedb05e040ce2b2bb7844ac0584585292f8ec40c6c56934b145cd70bcf635fe
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **40.0 MB (40039922 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d2e98260995a5c554c04dc7a0865adf3fe065f5687298aa39d61ad93098055fb`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV GOSU_VERSION=1.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_VERSION=7.4.2
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.2.tar.gz
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_SHA=4ddebbf09061cbb589011786febdb34f29767dd7f89dbe712d2b68e808af6a1f
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+VOLUME [/data]
+# Mon, 06 Jan 2025 16:14:31 GMT
+WORKDIR /data
+# Mon, 06 Jan 2025 16:14:31 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Mon, 06 Jan 2025 16:14:31 GMT
+EXPOSE map[6379/tcp:{}]
+# Mon, 06 Jan 2025 16:14:31 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 874.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aabdbbd09f30ca42592cb2f87a4c2e1820193793b5f1c7eef2bbec9df65eb577`  
+		Last Modified: Tue, 18 Mar 2025 05:36:51 GMT  
+		Size: 14.7 MB (14716759 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2182888029a269071f6e24bc98aa0467efef8f9357ce5a1b7c5d2e3eff6472e0`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 97.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:301cd4c1b5ae4cd9e7859ab3fad483c04516e80e959392e74b0fe3e66adb29dd`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 572.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:bookworm` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:5525c6e4f4e1380c5498f88619b48c3df01897415ba7f866e5fdf49b8265eb62
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2305149 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:63f3a4e1fc4d3a345e78c96f980d7df46662baee5073792e2cf586135b7a5cd4`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:82920500f27d621c0ff2d1c23a3f9b9bfa727f1213dd88561f7b7e1e18bcd154`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 2.3 MB (2268639 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:ba39e801b3bc3d76fde46e6046887095087b5e676d6c6cbae183cf151cee033b`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
 		Size: 36.5 KB (36510 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -33981,19 +33981,19 @@ $ docker pull redis@sha256:5aa496680deb3a58d5d9a7a185eaad6025e3df4f16994d1fbfa73
 ### `redis:bookworm` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:7ee593194eae2ddf1b8318321c8a13f53563ec015d3a82cd37a85a76b0928ac5
+$ docker pull redis@sha256:8cc2d92056101d1381a659531b1ba1068f8175dba770383c14bb564e5a5d43db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.9 MB (49908846 bytes)**  
+-	Total Size: **49.9 MB (49904496 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:595efd1dc8729814abfd9e80f3e99081062d6b8696f0bc426d5fcf657dc74e61`
+-	Image ID: `sha256:f13d3f1d46c8d60ece6c915a1097ad79ed1cda1fb29492c9b8f7e5fab9478238`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -34027,79 +34027,79 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80706cc377f8d9a102a74286de034a5fae063a6fa707f7f898125e752f009d23`  
-		Last Modified: Tue, 25 Feb 2025 04:12:37 GMT  
-		Size: 16.5 MB (16493731 bytes)  
+	-	`sha256:de9548c45fa02a8c5ed14856b04d18a9f0f955cae23e9df9789d3f7922e978d9`  
+		Last Modified: Tue, 18 Mar 2025 01:35:38 GMT  
+		Size: 16.5 MB (16493919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0a526c1b8dbd3e19b68a11f1dbe00fd131c699b1ae9d3cdc281e0560ec20a6e`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
+	-	`sha256:9bba7f2963eea990e234b787d45bbe03e37b00d337b558f46948ebec8a857df1`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00089b95a85fb4056df10d7dfaee161e76334827ab04fe266155bc10d63e2326`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 573.0 B  
+	-	`sha256:1a6b308d981b284b50e831c45ef149851b555ea8f59588276f22991fad08ac6f`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
+		Size: 571.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:273bdb71e82e5847950567493b13c60acaf16c2a94cb59c5bb4008440d55af76
+$ docker pull redis@sha256:af50d2411a66c24584e4a41b341887977324b323ba169d1fb457aa856adc5c9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2307118 bytes)**  
+-	Total Size: **2.3 MB (2307125 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:67e31d28eba30fbf00aea7cd054f2eff4762ff446ede779d6ff442a34a966119`
+-	Image ID: `sha256:c76e1b9339b2f969a81c9f4c42f7ebbdba6327ec738eb60b739c3b6cdd9e9cbc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:91b6a836a9c205e93ed1fe579d71deb33299b33242e5a021a94fd513e7371449`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 2.3 MB (2270692 bytes)  
+	-	`sha256:ef6b6bfee37f14992a15c1246d6998b318e2299260bcdafc934e1613e1d0fa5d`  
+		Last Modified: Tue, 18 Mar 2025 01:35:38 GMT  
+		Size: 2.3 MB (2270700 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:db05e61a4dd2db0c71aec9230270a2898c124bb1867e68aa1d5b94f9c750c8e0`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 36.4 KB (36426 bytes)  
+	-	`sha256:734a0c5e6ba6baf1ae2acf78440f94bd2479d1e5f75eabe3b8449ec1035769ab`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
+		Size: 36.4 KB (36425 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:bookworm` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:b9769d5d5c730089b3f02957a514c1699924f86ce1996a707586f17f38afad13
+$ docker pull redis@sha256:4fa8c4464dfdb2af83fa5a03dba0840a04f73b3de484514ff719d0c718c967a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.6 MB (43637803 bytes)**  
+-	Total Size: **43.6 MB (43633976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c195a8f1678beaecb22ee2c4eb176e2f476a57123437674fde2cc2e70478191`
+-	Image ID: `sha256:c1028df9e9133ecf7e82ca2381785489deb4412394d643019b472a98cbeaac52`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -34133,67 +34133,67 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:6d4d169c55c2ee02478b6705c4ba9e6795bffbbb872a22adfd95fb2484f2e85c`  
-		Last Modified: Tue, 25 Feb 2025 01:30:03 GMT  
-		Size: 26.9 MB (26864838 bytes)  
+	-	`sha256:c25b115468ab81aaa9017d4d794bc086cba904c84f73abda1eac28615cd44629`  
+		Last Modified: Mon, 17 Mar 2025 22:27:10 GMT  
+		Size: 26.9 MB (26861059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8623e0eab86b24357c3c02e81a4d608209ed331967fe22e6e754b2d72dac261`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
+	-	`sha256:55fef5a169b7602dfb48d72cd6904c66536a89d9114cd0e72ec5ef46aa34579b`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7ff0980913721f64a17edc5b03d307593f905efd57d1b93af34c44615816ac3`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 876.0 B  
+	-	`sha256:22aab92482471047b4820276b1f029b286dec6a8db976e61a3a4e1edeba96592`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34dd6c787468788f646cd187d5359d4ae83605c73853673109cd751bf93e4f9f`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 1.4 MB (1403066 bytes)  
+	-	`sha256:5b959d82dc4ff71bfdfac0434f1a1ca1ddf4aed07f4a46a3f156b0fb749fccdf`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 1.4 MB (1403033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:176a2d51bb33cc610d7aff271ae07e7652026a3df79958477ed46e59cc7ed136`  
-		Last Modified: Tue, 25 Feb 2025 03:50:33 GMT  
-		Size: 15.4 MB (15367223 bytes)  
+	-	`sha256:943f154a36dc95398a8304fcc18facc66c7462133fee6e72133019e98d2a8c29`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
+		Size: 15.4 MB (15367211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a65d62004eda6db61b12017e75b4f1057bf1cb89e7afd7aa2df18d30e8921395`  
-		Last Modified: Tue, 25 Feb 2025 03:50:32 GMT  
+	-	`sha256:5fac48b60b6bf26be1a236e78e720e3508edbe7b1af5a9ce62a4898582a774fd`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c70505fbef35515ca99caba26376c33c628595338cb5e308c5feb314d826ac7`  
-		Last Modified: Tue, 25 Feb 2025 03:50:32 GMT  
+	-	`sha256:bfad3fa43456f6ca6b4a177711f0de7d0dfd73262720836e3ab912ca90b4fddf`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 569.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:bookworm` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:dc743f0548ba8465af0c943585590713a51314ea8bcdd7b1844e5af530acbe11
+$ docker pull redis@sha256:24d8fb94742c5dfef5a38ef70d1c9077de683cafb3caefafe98bd2acc2541979
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2302452 bytes)**  
+-	Total Size: **2.3 MB (2302460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c97a881336f3ab2e3b007b18681a2689f92214073b3b3fa3ba9f0a94f976a167`
+-	Image ID: `sha256:1cf2dc6b6e64f72e11afba495c5cc1b3ab1384634e62e83008dc494e1f0cf6c8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e7819cdd1cd5547760ee9f649ad8428145dae6d5460f818ea8945b827f40099`  
-		Last Modified: Tue, 25 Feb 2025 03:50:31 GMT  
-		Size: 2.3 MB (2266102 bytes)  
+	-	`sha256:4686149a235a6c5bc8d6b9abaf4b50f62b255628b014c1e0ecfab7deddc9ac56`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
+		Size: 2.3 MB (2266110 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:279b1febb3ce3bcc61d796ea1a0ffa11225a91181f427607d05efec61a37f496`  
-		Last Modified: Tue, 25 Feb 2025 03:50:31 GMT  
+	-	`sha256:9729e5874e58e405d54258e5d5ebc80652618746c66818229b7fc18070750b93`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 36.4 KB (36350 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `redis:latest`
 
 ```console
-$ docker pull redis@sha256:92ae19b3c5506d686d0059b8d93d75f8ed2c59a5b97098e64c577a4683938011
+$ docker pull redis@sha256:5250fed70d8a66f4901a8beace6f85bee9550c0fc6fd42d10e2c1cd24cf93a0d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -34324,19 +34324,19 @@ $ docker pull redis@sha256:35cff247eda14e361298009303bc898a5b076357ae65659245c0d
 ### `redis:latest` - linux; arm variant v5
 
 ```console
-$ docker pull redis@sha256:0fa1495a0aabad5e5d8ff2563ffab9294200bd8d9d54ba2aeca2fb1ddccda698
+$ docker pull redis@sha256:5e9ec3905ce65d58171a1fb9b81703499923c7007d108371d96c00b827e1e27a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **42.2 MB (42212936 bytes)**  
+-	Total Size: **42.2 MB (42208345 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2330b40a34dbedb223b1b4e54b67ba2324d3fbefbae4eaa8bc1613a0d1154be8`
+-	Image ID: `sha256:ef005adb1638ca3e51bdd07e2448e223ea07bb285f055ae329c73d0471d3bd6e`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'armel' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -34370,166 +34370,166 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:d8a77b84d73cc90f2bbd622ec970d928c4f14e4be51927c88b7c15b7b6772382`  
-		Last Modified: Tue, 25 Feb 2025 01:30:58 GMT  
-		Size: 25.7 MB (25740630 bytes)  
+	-	`sha256:87c352465466fcf04c9686fee29c2541af5fc39172801545bb24d9faa8cdeabb`  
+		Last Modified: Mon, 17 Mar 2025 22:17:36 GMT  
+		Size: 25.7 MB (25735853 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c8140b16c1ffb77d6066d5f7c51a5ee10b134f58353d3b73e2f7292b5b1df74`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
+	-	`sha256:f0eb3fd0035d106d2a3fe6076ecb41f4af756a32dfdeb8a60b21a6b6ecc17ecd`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
 		Size: 1.1 KB (1100 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:83c5f9651111b2270769182d3005ea892a0631aa232933e3e067995b9e312c5c`  
-		Last Modified: Tue, 25 Feb 2025 05:10:56 GMT  
-		Size: 873.0 B  
+	-	`sha256:4a081080bb9cd2d4c9e29c05ea21b5eef82bf9593b1c9ad26bc247c46bc43484`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 870.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8130e67b67cf89abcd94d900bc3631aedbbd85af0e906455e6102fb7414df621`  
-		Last Modified: Tue, 25 Feb 2025 05:10:57 GMT  
-		Size: 1.4 MB (1414253 bytes)  
+	-	`sha256:68a57f1ae66fac9eb6bf9052dd3fdd659fde285ad3b5b77b6938752bf1226150`  
+		Last Modified: Tue, 18 Mar 2025 03:25:41 GMT  
+		Size: 1.4 MB (1414352 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef3a33ef7a4a9d435bca9fa38e6aab6e4cd8b8ab84d419c9a7e02e560a50fca2`  
-		Last Modified: Tue, 25 Feb 2025 05:12:15 GMT  
-		Size: 15.1 MB (15055379 bytes)  
+	-	`sha256:caff19f61d9a707da84ea691fabf929157f75ddcdb1fcaf191da2ab62a48dfb3`  
+		Last Modified: Tue, 18 Mar 2025 03:28:19 GMT  
+		Size: 15.1 MB (15055469 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a58e6ac31808a5c59eb44277954da9ed62d72a3f0172cec64e092a376c52f16e`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 96.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
-		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
-		Size: 32.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5c5883f66308051d64bdc794bc84ee0efb80dcc1fc5dfa8697e8a994b28edfdc`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 573.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-
-### `redis:latest` - unknown; unknown
-
-```console
-$ docker pull redis@sha256:52cc1853849c8b31de9283ab87499539b45a2b98cf61dddf657adf447fe675d5
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2306415 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dc9f91b01d5cbdb8fd6e2ac09828b9d0cfdd631e9d75369c6641db8c5f5a6615`
-
-```dockerfile
-```
-
--	Layers:
-	-	`sha256:ff3fcb32d91b9e7196013670b3586af01d26fafdefffc48bb6267da1f474d1a8`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 2.3 MB (2269906 bytes)  
-		MIME: application/vnd.in-toto+json
-	-	`sha256:4fec70f81167c6507bfab9a64496df0a2d9ae34df9f2b3d02a431b3b339e79d9`  
-		Last Modified: Tue, 25 Feb 2025 05:12:14 GMT  
-		Size: 36.5 KB (36509 bytes)  
-		MIME: application/vnd.in-toto+json
-
-### `redis:latest` - linux; arm variant v7
-
-```console
-$ docker pull redis@sha256:a5584862f18c25c38e32ddadcd1d34163dced89fc7bd159ea014f89992c6b0f1
-```
-
--	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **40.0 MB (40044564 bytes)**  
-	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7cdf88ab9dd68a6165b8348147e7ef3680ce8eb2f8cce2e336391e1e63456d60`
--	Entrypoint: `["docker-entrypoint.sh"]`
--	Default Command: `["redis-server"]`
-
-```dockerfile
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1740355200'
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV GOSU_VERSION=1.17
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_VERSION=7.4.2
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.2.tar.gz
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENV REDIS_DOWNLOAD_SHA=4ddebbf09061cbb589011786febdb34f29767dd7f89dbe712d2b68e808af6a1f
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-RUN mkdir /data && chown redis:redis /data # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-VOLUME [/data]
-# Mon, 06 Jan 2025 16:14:31 GMT
-WORKDIR /data
-# Mon, 06 Jan 2025 16:14:31 GMT
-COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
-# Mon, 06 Jan 2025 16:14:31 GMT
-ENTRYPOINT ["docker-entrypoint.sh"]
-# Mon, 06 Jan 2025 16:14:31 GMT
-EXPOSE map[6379/tcp:{}]
-# Mon, 06 Jan 2025 16:14:31 GMT
-CMD ["redis-server"]
-```
-
--	Layers:
-	-	`sha256:b47565bb13c54d9e609fa36aeddfc2e70b47de981bac54a6d090c2148f2f4fc4`  
-		Last Modified: Tue, 25 Feb 2025 01:30:40 GMT  
-		Size: 23.9 MB (23919734 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bd43fd6f4c5ab97324d07500ec469d682fe3ed79a282dfd21b1c14b75a727bfd`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 1.1 KB (1104 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:75a625fe7554919a24d229fd103d12256f78c2782507302a75539c9eb08d5836`  
-		Last Modified: Tue, 25 Feb 2025 06:58:23 GMT  
-		Size: 874.0 B  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3a762bd6a8bded11d84e9d8b78c9fb2d51c65d784c29c1f0513be6c51f9d6504`  
-		Last Modified: Tue, 25 Feb 2025 06:58:24 GMT  
-		Size: 1.4 MB (1405425 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f569c441e2df3e37dff6badbd93de5fc4cd248c22245f520c9ccd51b872b8da7`  
-		Last Modified: Tue, 25 Feb 2025 06:59:39 GMT  
-		Size: 14.7 MB (14716726 bytes)  
-		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ea2cb0cacf250c5dc80e4f00f2bb9b3fa08546df3bef7a4a80395727bca7e7d`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
+	-	`sha256:9019693d66f9f3e6075fba903068207d42614d7739792798cfa638ed1125d62f`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0ac5645bfc7ff9f41f8247cda22097e112b8a353345c004960d4342efded0c0`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
+	-	`sha256:095d8e89d31383ab8ced5a24ede81ff078d97fd0144a2f1c2db82d52028bee73`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
 		Size: 572.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:latest` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:4ca440c9eca61ae04ac91a9abb3320d2b27e276b1bfdcb870661d0812c0ddd16
+$ docker pull redis@sha256:9a578a34d34fab3683390158164785ccd3355176eb372b7c53c192d7fc3ef40d
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2305141 bytes)**  
+-	Total Size: **2.3 MB (2306424 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e7afb4db1d9dad99202814528937460838d2ab8b7e75ace6c98b4b3210e4b267`
+-	Image ID: `sha256:a34d9f172fdd87cccd1d043b07d03544ac92326af3b03df752d0f8ff671ea88b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:0376c712a46243f071b948bd9deab345ca99705f73664e3fc23f729bc0ef6143`  
-		Last Modified: Tue, 25 Feb 2025 06:59:38 GMT  
-		Size: 2.3 MB (2268631 bytes)  
+	-	`sha256:7a42fd511cfb2b27ee7de53ac7e9b32aeeb8df41c63fe083f9f6f73656fa7cb0`  
+		Last Modified: Tue, 18 Mar 2025 03:28:19 GMT  
+		Size: 2.3 MB (2269914 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:930332ceacd02182b33f98b179985ce83399946c94bd184748cb37c70c148e4b`  
-		Last Modified: Tue, 25 Feb 2025 06:59:37 GMT  
+	-	`sha256:3a053044afff6c4a2bc293eb539b0e721ac7cba72ce802c596ba930ed5180c12`  
+		Last Modified: Tue, 18 Mar 2025 03:28:18 GMT  
+		Size: 36.5 KB (36510 bytes)  
+		MIME: application/vnd.in-toto+json
+
+### `redis:latest` - linux; arm variant v7
+
+```console
+$ docker pull redis@sha256:abedb05e040ce2b2bb7844ac0584585292f8ec40c6c56934b145cd70bcf635fe
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **40.0 MB (40039922 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:d2e98260995a5c554c04dc7a0865adf3fe065f5687298aa39d61ad93098055fb`
+-	Entrypoint: `["docker-entrypoint.sh"]`
+-	Default Command: `["redis-server"]`
+
+```dockerfile
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN # debian.sh --arch 'armhf' out/ 'bookworm' '@1742169600'
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	apt-get update; 	apt-get install -y --no-install-recommends 		tzdata 	; 	rm -rf /var/lib/apt/lists/* # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV GOSU_VERSION=1.17
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 	savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends ca-certificates gnupg wget; 	rm -rf /var/lib/apt/lists/*; 	arch="$(dpkg --print-architecture | awk -F- '{ print $NF }')"; 	case "$arch" in 		'amd64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-amd64'; sha256='bbc4136d03ab138b1ad66fa4fc051bafc6cc7ffae632b069a53657279a450de3' ;; 		'arm64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-arm64'; sha256='c3805a85d17f4454c23d7059bcb97e1ec1af272b90126e79ed002342de08389b' ;; 		'armel') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armel'; sha256='f9969910fa141140438c998cfa02f603bf213b11afd466dcde8fa940e700945d' ;; 		'i386') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-i386'; sha256='087dbb8fe479537e64f9c86fa49ff3b41dee1cbd28739a19aaef83dc8186b1ca' ;; 		'mips64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-mips64el'; sha256='87140029d792595e660be0015341dfa1c02d1181459ae40df9f093e471d75b70' ;; 		'ppc64el') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-ppc64el'; sha256='1891acdcfa70046818ab6ed3c52b9d42fa10fbb7b340eb429c8c7849691dbd76' ;; 		'riscv64') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-riscv64'; sha256='38a6444b57adce135c42d5a3689f616fc7803ddc7a07ff6f946f2ebc67a26ba6' ;; 		's390x') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-s390x'; sha256='69873bab588192f760547ca1f75b27cfcf106e9f7403fee6fd0600bc914979d0' ;; 		'armhf') url='https://github.com/tianon/gosu/releases/download/1.17/gosu-armhf'; sha256='e5866286277ff2a2159fb9196fea13e0a59d3f1091ea46ddb985160b94b6841b' ;; 		*) echo >&2 "error: unsupported gosu architecture: '$arch'"; exit 1 ;; 	esac; 	wget -O /usr/local/bin/gosu.asc "$url.asc"; 	wget -O /usr/local/bin/gosu "$url"; 	echo "$sha256 */usr/local/bin/gosu" | sha256sum -c -; 	export GNUPGHOME="$(mktemp -d)"; 	gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys B42F6819007F00F88E364FD4036A9C25BF357DD4; 	gpg --batch --verify /usr/local/bin/gosu.asc /usr/local/bin/gosu; 	gpgconf --kill all; 	rm -rf "$GNUPGHOME" /usr/local/bin/gosu.asc; 	apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 	chmod +x /usr/local/bin/gosu; 	gosu --version; 	gosu nobody true # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_VERSION=7.4.2
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_URL=http://download.redis.io/releases/redis-7.4.2.tar.gz
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENV REDIS_DOWNLOAD_SHA=4ddebbf09061cbb589011786febdb34f29767dd7f89dbe712d2b68e808af6a1f
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN set -eux; 		savedAptMark="$(apt-mark showmanual)"; 	apt-get update; 	apt-get install -y --no-install-recommends 		ca-certificates 		wget 				dpkg-dev 		gcc 		libc6-dev 		libssl-dev 		make 	; 	rm -rf /var/lib/apt/lists/*; 		wget -O redis.tar.gz "$REDIS_DOWNLOAD_URL"; 	echo "$REDIS_DOWNLOAD_SHA *redis.tar.gz" | sha256sum -c -; 	mkdir -p /usr/src/redis; 	tar -xzf redis.tar.gz -C /usr/src/redis --strip-components=1; 	rm redis.tar.gz; 		grep -E '^ *createBoolConfig[(]"protected-mode",.*, *1 *,.*[)],$' /usr/src/redis/src/config.c; 	sed -ri 's!^( *createBoolConfig[(]"protected-mode",.*, *)1( *,.*[)],)$!\10\2!' /usr/src/redis/src/config.c; 	grep -E '^ *createBoolConfig[(]"protected-mode",.*, *0 *,.*[)],$' /usr/src/redis/src/config.c; 		gnuArch="$(dpkg-architecture --query DEB_BUILD_GNU_TYPE)"; 	extraJemallocConfigureFlags="--build=$gnuArch"; 	dpkgArch="$(dpkg --print-architecture)"; 	case "${dpkgArch##*-}" in 		amd64 | i386 | x32) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=12" ;; 		*) extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-page=16" ;; 	esac; 	extraJemallocConfigureFlags="$extraJemallocConfigureFlags --with-lg-hugepage=21"; 	grep -F 'cd jemalloc && ./configure ' /usr/src/redis/deps/Makefile; 	sed -ri 's!cd jemalloc && ./configure !&'"$extraJemallocConfigureFlags"' !' /usr/src/redis/deps/Makefile; 	grep -F "cd jemalloc && ./configure $extraJemallocConfigureFlags " /usr/src/redis/deps/Makefile; 		export BUILD_TLS=yes; 	make -C /usr/src/redis -j "$(nproc)" all; 	make -C /usr/src/redis install; 		serverMd5="$(md5sum /usr/local/bin/redis-server | cut -d' ' -f1)"; export serverMd5; 	find /usr/local/bin/redis* -maxdepth 0 		-type f -not -name redis-server 		-exec sh -eux -c ' 			md5="$(md5sum "$1" | cut -d" " -f1)"; 			test "$md5" = "$serverMd5"; 		' -- '{}' ';' 		-exec ln -svfT 'redis-server' '{}' ';' 	; 		rm -r /usr/src/redis; 		apt-mark auto '.*' > /dev/null; 	[ -z "$savedAptMark" ] || apt-mark manual $savedAptMark > /dev/null; 	find /usr/local -type f -executable -exec ldd '{}' ';' 		| awk '/=>/ { so = $(NF-1); if (index(so, "/usr/local/") == 1) { next }; gsub("^/(usr/)?", "", so); printf "*%s\n", so }' 		| sort -u 		| xargs -r dpkg-query --search 		| cut -d: -f1 		| sort -u 		| xargs -r apt-mark manual 	; 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; 		redis-cli --version; 	redis-server --version # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+RUN mkdir /data && chown redis:redis /data # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+VOLUME [/data]
+# Mon, 06 Jan 2025 16:14:31 GMT
+WORKDIR /data
+# Mon, 06 Jan 2025 16:14:31 GMT
+COPY docker-entrypoint.sh /usr/local/bin/ # buildkit
+# Mon, 06 Jan 2025 16:14:31 GMT
+ENTRYPOINT ["docker-entrypoint.sh"]
+# Mon, 06 Jan 2025 16:14:31 GMT
+EXPOSE map[6379/tcp:{}]
+# Mon, 06 Jan 2025 16:14:31 GMT
+CMD ["redis-server"]
+```
+
+-	Layers:
+	-	`sha256:676cf117f557880ff2e894692781cbce1b2a04502aff2e34b58c230b14731b8f`  
+		Last Modified: Mon, 17 Mar 2025 22:18:43 GMT  
+		Size: 23.9 MB (23915088 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:a555acb25ecde58d8ce80f2433ef555786eb142126a6706ad4ef1000f6dbeb79`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 1.1 KB (1099 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:c25964baa408042135a076fb14a4c27e0e665c864ebb063d1ce6d95d52c5e7d6`  
+		Last Modified: Tue, 18 Mar 2025 05:19:32 GMT  
+		Size: 874.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:f75203a547d020e7c6a4fbc4460f924fcc0dd2bbf2471e50285aca3e7097d64f`  
+		Last Modified: Tue, 18 Mar 2025 05:19:33 GMT  
+		Size: 1.4 MB (1405401 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:aabdbbd09f30ca42592cb2f87a4c2e1820193793b5f1c7eef2bbec9df65eb577`  
+		Last Modified: Tue, 18 Mar 2025 05:36:51 GMT  
+		Size: 14.7 MB (14716759 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:2182888029a269071f6e24bc98aa0467efef8f9357ce5a1b7c5d2e3eff6472e0`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 97.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
+		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
+		Size: 32.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+	-	`sha256:301cd4c1b5ae4cd9e7859ab3fad483c04516e80e959392e74b0fe3e66adb29dd`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 572.0 B  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `redis:latest` - unknown; unknown
+
+```console
+$ docker pull redis@sha256:5525c6e4f4e1380c5498f88619b48c3df01897415ba7f866e5fdf49b8265eb62
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **2.3 MB (2305149 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:63f3a4e1fc4d3a345e78c96f980d7df46662baee5073792e2cf586135b7a5cd4`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:82920500f27d621c0ff2d1c23a3f9b9bfa727f1213dd88561f7b7e1e18bcd154`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
+		Size: 2.3 MB (2268639 bytes)  
+		MIME: application/vnd.in-toto+json
+	-	`sha256:ba39e801b3bc3d76fde46e6046887095087b5e676d6c6cbae183cf151cee033b`  
+		Last Modified: Tue, 18 Mar 2025 05:36:50 GMT  
 		Size: 36.5 KB (36510 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -34850,19 +34850,19 @@ $ docker pull redis@sha256:5aa496680deb3a58d5d9a7a185eaad6025e3df4f16994d1fbfa73
 ### `redis:latest` - linux; ppc64le
 
 ```console
-$ docker pull redis@sha256:7ee593194eae2ddf1b8318321c8a13f53563ec015d3a82cd37a85a76b0928ac5
+$ docker pull redis@sha256:8cc2d92056101d1381a659531b1ba1068f8175dba770383c14bb564e5a5d43db
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **49.9 MB (49908846 bytes)**  
+-	Total Size: **49.9 MB (49904496 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:595efd1dc8729814abfd9e80f3e99081062d6b8696f0bc426d5fcf657dc74e61`
+-	Image ID: `sha256:f13d3f1d46c8d60ece6c915a1097ad79ed1cda1fb29492c9b8f7e5fab9478238`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 'ppc64el' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -34896,79 +34896,79 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:4713de4e13d024eec0b1cb2d083909104c2a36ed3ffba92c5cf710577a33ad45`  
-		Last Modified: Tue, 25 Feb 2025 01:30:47 GMT  
-		Size: 32.1 MB (32052314 bytes)  
+	-	`sha256:89104bade2bef9a11eda15952361b42943ba7a21a6bc452862cf92faeccc17cf`  
+		Last Modified: Mon, 17 Mar 2025 22:20:32 GMT  
+		Size: 32.0 MB (32047814 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9ef5b6050dc98545e7c346ae30585b0632e003cf0c961717305e8eaea3611633`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.1 KB (1103 bytes)  
+	-	`sha256:5bffb59ec98f0c12440e8a7dc7ae2247e3a41b6521b83bc6ed288d18982e5c1b`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2919b4f26258d60777486590944c0cf0756f617e79654dfae29b541e0e2c94`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 874.0 B  
+	-	`sha256:fe1c48ff6ff82900c19db096bda24801926cef04a007b1792ecb2c509567e285`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbe29cbae848127864b390a4bb2e5b19fa8b2e831dc0e583a9928a06795f72f`  
-		Last Modified: Tue, 25 Feb 2025 04:10:45 GMT  
-		Size: 1.4 MB (1360122 bytes)  
+	-	`sha256:04e9942e39b258e036aaa622cb209c6ee4eb3f3b29b0b22549289950b55ef3bd`  
+		Last Modified: Tue, 18 Mar 2025 00:57:19 GMT  
+		Size: 1.4 MB (1360088 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:80706cc377f8d9a102a74286de034a5fae063a6fa707f7f898125e752f009d23`  
-		Last Modified: Tue, 25 Feb 2025 04:12:37 GMT  
-		Size: 16.5 MB (16493731 bytes)  
+	-	`sha256:de9548c45fa02a8c5ed14856b04d18a9f0f955cae23e9df9789d3f7922e978d9`  
+		Last Modified: Tue, 18 Mar 2025 01:35:38 GMT  
+		Size: 16.5 MB (16493919 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c0a526c1b8dbd3e19b68a11f1dbe00fd131c699b1ae9d3cdc281e0560ec20a6e`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
+	-	`sha256:9bba7f2963eea990e234b787d45bbe03e37b00d337b558f46948ebec8a857df1`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:00089b95a85fb4056df10d7dfaee161e76334827ab04fe266155bc10d63e2326`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 573.0 B  
+	-	`sha256:1a6b308d981b284b50e831c45ef149851b555ea8f59588276f22991fad08ac6f`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
+		Size: 571.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:latest` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:273bdb71e82e5847950567493b13c60acaf16c2a94cb59c5bb4008440d55af76
+$ docker pull redis@sha256:af50d2411a66c24584e4a41b341887977324b323ba169d1fb457aa856adc5c9e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2307118 bytes)**  
+-	Total Size: **2.3 MB (2307125 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:67e31d28eba30fbf00aea7cd054f2eff4762ff446ede779d6ff442a34a966119`
+-	Image ID: `sha256:c76e1b9339b2f969a81c9f4c42f7ebbdba6327ec738eb60b739c3b6cdd9e9cbc`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:91b6a836a9c205e93ed1fe579d71deb33299b33242e5a021a94fd513e7371449`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 2.3 MB (2270692 bytes)  
+	-	`sha256:ef6b6bfee37f14992a15c1246d6998b318e2299260bcdafc934e1613e1d0fa5d`  
+		Last Modified: Tue, 18 Mar 2025 01:35:38 GMT  
+		Size: 2.3 MB (2270700 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:db05e61a4dd2db0c71aec9230270a2898c124bb1867e68aa1d5b94f9c750c8e0`  
-		Last Modified: Tue, 25 Feb 2025 04:12:36 GMT  
-		Size: 36.4 KB (36426 bytes)  
+	-	`sha256:734a0c5e6ba6baf1ae2acf78440f94bd2479d1e5f75eabe3b8449ec1035769ab`  
+		Last Modified: Tue, 18 Mar 2025 01:35:37 GMT  
+		Size: 36.4 KB (36425 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `redis:latest` - linux; s390x
 
 ```console
-$ docker pull redis@sha256:b9769d5d5c730089b3f02957a514c1699924f86ce1996a707586f17f38afad13
+$ docker pull redis@sha256:4fa8c4464dfdb2af83fa5a03dba0840a04f73b3de484514ff719d0c718c967a8
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **43.6 MB (43637803 bytes)**  
+-	Total Size: **43.6 MB (43633976 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5c195a8f1678beaecb22ee2c4eb176e2f476a57123437674fde2cc2e70478191`
+-	Image ID: `sha256:c1028df9e9133ecf7e82ca2381785489deb4412394d643019b472a98cbeaac52`
 -	Entrypoint: `["docker-entrypoint.sh"]`
 -	Default Command: `["redis-server"]`
 
 ```dockerfile
 # Mon, 06 Jan 2025 16:14:31 GMT
-RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1740355200'
+RUN # debian.sh --arch 's390x' out/ 'bookworm' '@1742169600'
 # Mon, 06 Jan 2025 16:14:31 GMT
 RUN set -eux; 	groupadd -r -g 999 redis; 	useradd -r -g redis -u 999 redis # buildkit
 # Mon, 06 Jan 2025 16:14:31 GMT
@@ -35002,59 +35002,59 @@ CMD ["redis-server"]
 ```
 
 -	Layers:
-	-	`sha256:6d4d169c55c2ee02478b6705c4ba9e6795bffbbb872a22adfd95fb2484f2e85c`  
-		Last Modified: Tue, 25 Feb 2025 01:30:03 GMT  
-		Size: 26.9 MB (26864838 bytes)  
+	-	`sha256:c25b115468ab81aaa9017d4d794bc086cba904c84f73abda1eac28615cd44629`  
+		Last Modified: Mon, 17 Mar 2025 22:27:10 GMT  
+		Size: 26.9 MB (26861059 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c8623e0eab86b24357c3c02e81a4d608209ed331967fe22e6e754b2d72dac261`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
+	-	`sha256:55fef5a169b7602dfb48d72cd6904c66536a89d9114cd0e72ec5ef46aa34579b`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
 		Size: 1.1 KB (1102 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7ff0980913721f64a17edc5b03d307593f905efd57d1b93af34c44615816ac3`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 876.0 B  
+	-	`sha256:22aab92482471047b4820276b1f029b286dec6a8db976e61a3a4e1edeba96592`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 873.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:34dd6c787468788f646cd187d5359d4ae83605c73853673109cd751bf93e4f9f`  
-		Last Modified: Tue, 25 Feb 2025 03:48:58 GMT  
-		Size: 1.4 MB (1403066 bytes)  
+	-	`sha256:5b959d82dc4ff71bfdfac0434f1a1ca1ddf4aed07f4a46a3f156b0fb749fccdf`  
+		Last Modified: Tue, 18 Mar 2025 03:08:23 GMT  
+		Size: 1.4 MB (1403033 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:176a2d51bb33cc610d7aff271ae07e7652026a3df79958477ed46e59cc7ed136`  
-		Last Modified: Tue, 25 Feb 2025 03:50:33 GMT  
-		Size: 15.4 MB (15367223 bytes)  
+	-	`sha256:943f154a36dc95398a8304fcc18facc66c7462133fee6e72133019e98d2a8c29`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
+		Size: 15.4 MB (15367211 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a65d62004eda6db61b12017e75b4f1057bf1cb89e7afd7aa2df18d30e8921395`  
-		Last Modified: Tue, 25 Feb 2025 03:50:32 GMT  
+	-	`sha256:5fac48b60b6bf26be1a236e78e720e3508edbe7b1af5a9ce62a4898582a774fd`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 97.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4c70505fbef35515ca99caba26376c33c628595338cb5e308c5feb314d826ac7`  
-		Last Modified: Tue, 25 Feb 2025 03:50:32 GMT  
+	-	`sha256:bfad3fa43456f6ca6b4a177711f0de7d0dfd73262720836e3ab912ca90b4fddf`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 569.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `redis:latest` - unknown; unknown
 
 ```console
-$ docker pull redis@sha256:dc743f0548ba8465af0c943585590713a51314ea8bcdd7b1844e5af530acbe11
+$ docker pull redis@sha256:24d8fb94742c5dfef5a38ef70d1c9077de683cafb3caefafe98bd2acc2541979
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **2.3 MB (2302452 bytes)**  
+-	Total Size: **2.3 MB (2302460 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:c97a881336f3ab2e3b007b18681a2689f92214073b3b3fa3ba9f0a94f976a167`
+-	Image ID: `sha256:1cf2dc6b6e64f72e11afba495c5cc1b3ab1384634e62e83008dc494e1f0cf6c8`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:8e7819cdd1cd5547760ee9f649ad8428145dae6d5460f818ea8945b827f40099`  
-		Last Modified: Tue, 25 Feb 2025 03:50:31 GMT  
-		Size: 2.3 MB (2266102 bytes)  
+	-	`sha256:4686149a235a6c5bc8d6b9abaf4b50f62b255628b014c1e0ecfab7deddc9ac56`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
+		Size: 2.3 MB (2266110 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:279b1febb3ce3bcc61d796ea1a0ffa11225a91181f427607d05efec61a37f496`  
-		Last Modified: Tue, 25 Feb 2025 03:50:31 GMT  
+	-	`sha256:9729e5874e58e405d54258e5d5ebc80652618746c66818229b7fc18070750b93`  
+		Last Modified: Tue, 18 Mar 2025 03:16:57 GMT  
 		Size: 36.4 KB (36350 bytes)  
 		MIME: application/vnd.in-toto+json
