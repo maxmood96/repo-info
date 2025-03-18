@@ -433,14 +433,13 @@ Licenses: (parsed from: `/usr/share/doc/libcairo-gobject2/copyright`, `/usr/shar
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cairo=1.18.2-2
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.18.2-2.dsc' cairo_1.18.2-2.dsc 2763 SHA512:2ce8341b1caf77b3685e4816acc88b7ff2cf364b7be17db292a4f965e819e4ce7b99438bad1aaf2feb7ae4f898276c2ea77b9f20bf5a113903bb4f9fe5a76550
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.18.2.orig.tar.xz' cairo_1.18.2.orig.tar.xz 32574256 SHA512:9b533ef65da120bdf6ec6e66b76c9a9a489b91951925357c2db9f399ce27fe03d10e500c4c03b72ad43d73bb5beb4d51e36c24443977a52ecfe1d24b07c99bef
-'http://archive.ubuntu.com/ubuntu/pool/main/c/cairo/cairo_1.18.2-2.debian.tar.xz' cairo_1.18.2-2.debian.tar.xz 30396 SHA512:fadcbdd42490ff01217c7125b7635532cc658bc467df540b40b2a4e383ba150d0b2659f9ef9f30742a5cab2928bdcad09e4168e290d768cb9c1d745ad42e21ac
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/cairo/1.18.2-2/
+
 
 ### `dpkg` source package: `cdebconf=0.274ubuntu1`
 
@@ -778,9 +777,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris elfutils=0.192-4
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.192-4.dsc' elfutils_0.192-4.dsc 3314 SHA512:8ccb71f2ccf9365d5cf3cd77cf5c5ca114fd347d56618f44400ae1e4e652453b81d601702be23d12bc6e1430001ef5c265e23ab9a4e9bb274291473f9c8e7831
+'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.192-4ubuntu1.dsc' elfutils_0.192-4ubuntu1.dsc 3397 SHA512:a2d69ccd8b19db362de89265303ea77d2fd7f1e720e25ca624b78b2d9142455554c7a47ac6e8d1bf289c352ac0cee956c8c102de1b4ccc0078a8c659c3ff907c
 'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.192.orig.tar.bz2' elfutils_0.192.orig.tar.bz2 11913897 SHA512:543188f5f2cfe5bc7955a878416c5f252edff9926754e5de0c6c57b132f21d9285c9b29e41281e93baad11d4ae7efbbf93580c114579c182103565fe99bd3909
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.192-4.debian.tar.xz' elfutils_0.192-4.debian.tar.xz 44456 SHA512:a28abf785cf083b68c8e2adc8804bdabe7e5812a56326875b897b664f8a5311faeea51ee033f7dd5260289d32ab4f1e6db1667ca3eb1ba6f124ec4a5dcb05556
+'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.192-4ubuntu1.debian.tar.xz' elfutils_0.192-4ubuntu1.debian.tar.xz 47428 SHA512:427db7b69f22f2150cc131fb4124a18eb8aa377d97e72dca294d6869163317c4b684a7d285f60bc6b701e6d38cc0eece966fed90ac8bc978cbbb865397dc3d22
 ```
 
 ### `dpkg` source package: `expat=2.6.4-1`
@@ -3400,15 +3399,9 @@ Licenses: (parsed from: `/usr/share/doc/libopenexr-3-1-30/copyright`, `/usr/shar
 - `BSD-3-clause`
 - `openexr`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openexr=3.1.5-5.1build3
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openexr/openexr_3.1.5-5.1build3.dsc' openexr_3.1.5-5.1build3.dsc 2629 SHA512:6754aafb095ee18dbd5f3df736e9e619af5189e3fb6d61245d64d18aaec9874e23b75daa51b8e55b61c93732163575f85496e1e61baf97de1470939dfe8eae8e
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openexr/openexr_3.1.5.orig.tar.gz' openexr_3.1.5.orig.tar.gz 20327926 SHA512:01ef16eacd2dde83c67b81522bae87f47ba272a41ce7d4e35d865dbdcaa03093e7ac504b95d2c1b3a19535f2364a4f937b0e0570c74243bb1c6e021fce7b620c
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openexr/openexr_3.1.5.orig.tar.gz.asc' openexr_3.1.5.orig.tar.gz.asc 287 SHA512:9b3978e44b531429aba42b9cc4969a470898d9d74652e3809edb0273ba9b127c471aec6570b5d352be738f59810091c0df2c70d39c16d2c32833d173b270f72c
-'http://archive.ubuntu.com/ubuntu/pool/universe/o/openexr/openexr_3.1.5-5.1build3.debian.tar.xz' openexr_3.1.5-5.1build3.debian.tar.xz 18952 SHA512:717a1362e1150abf4d555725539bd4b873591646f1c48859c200cb9a7b46946e00824d58ce68cb5dbee4ab3231e77f01cb75624a3eca99f633a4a99ba72e4e09
-```
 
 ### `dpkg` source package: `openjpeg2=2.5.0-2ubuntu3`
 
@@ -3603,14 +3596,13 @@ Licenses: (parsed from: `/usr/share/doc/gir1.2-pango-1.0/copyright`, `/usr/share
 - `TCL`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pango1.0=1.56.1-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.56.1-1.dsc' pango1.0_1.56.1-1.dsc 3690 SHA512:48f2e9e65ed9d9d1e2e091cab8893a15dd89ee65237a1662c9430fd33b0db644251e31457e6d1eb962053f5d75d32ea038aa52c0bb781102ff4316d0c7463abe
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.56.1.orig.tar.xz' pango1.0_1.56.1.orig.tar.xz 1882616 SHA512:ce893f2f09922d3b8e862376d71465cd9eba45ac5de6b32681f3d3c226edb24b0949c705bb3f75a0c2eada46c524226c5b830b70719e6a95dfe374ce20f92011
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pango1.0/pango1.0_1.56.1-1.debian.tar.xz' pango1.0_1.56.1-1.debian.tar.xz 43776 SHA512:904d1ee24a6a71cb944ef4df9897da476c9d3ee8823549cd29f47350b9a90ff99f22439eff002083d67b6f52ab19c99dcafc7ceff48a17d50441a8b1e7c9c0c2
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/pango1.0/1.56.1-1/
+
 
 ### `dpkg` source package: `patch=2.7.6-7build3`
 
@@ -3712,15 +3704,9 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 - `LGPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pinentry=1.3.1-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.3.1-2ubuntu2.dsc' pinentry_1.3.1-2ubuntu2.dsc 3384 SHA512:d2a156287cc70cfdc32ce61e277f34be136b8897f7d8b5e35939740f4e6b8f561d2445a7f0e4f293bf1749738a2ee1282d534fe11db9f11cac989c91edad3cb9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.3.1.orig.tar.bz2' pinentry_1.3.1.orig.tar.bz2 611233 SHA512:3b72034dc1792b1475acb6d605ff7c1bd7647a0f02d1b6bdcd475acdef24bc802f49e275055436c3271261c4b7a64168477a698aab812a145962146b2f67a0e2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.3.1.orig.tar.bz2.asc' pinentry_1.3.1.orig.tar.bz2.asc 390 SHA512:499926442059c8f349b66beb16b6cf22cf0919b65a601af1bd0d60c96f60d44e0ad2bd090324585da5cb09e75286e11a4b92c553aec43b87f6cbe8a1e599882c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.3.1-2ubuntu2.debian.tar.xz' pinentry_1.3.1-2ubuntu2.debian.tar.xz 23928 SHA512:186b9c3d672f395a7edf52329b30db2df8354a795888539ecbb4f0085fd57b5e283eda3c61633892ad9f115f1145a2f1e64914f6c236efed1beac3816a6b5954
-```
 
 ### `dpkg` source package: `pixman=0.44.0-3`
 
@@ -3888,15 +3874,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.13=3.13.2-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.2-1.dsc' python3.13_3.13.2-1.dsc 3639 SHA512:be1258919d5935dd7a6fb15bb936e3658ce2cb834da55ad8971fd48fd113ef2a3655fa2f01ba8f557da2a2d5cd66cf9cf808af9ee4eb9c5bc90750ac1ee46f63
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.2.orig.tar.xz' python3.13_3.13.2.orig.tar.xz 22621108 SHA512:bb1c0598914c6d4326554faa568f660f10b20c701d0f36bf1fa58837b6498d728a407416b06ede39604caea1ca93f60545b83b01ae8ee65f55d4cc83242b63fe
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.2.orig.tar.xz.asc' python3.13_3.13.2.orig.tar.xz.asc 963 SHA512:5f019be530f688b0adf5d5cc9f2c2243e2f1dc7338559db14c1eedd12aadc85404d42c7aafd74e41828205d85f13f278876662ac30c8f3382a1ee081ba5f29f2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.2-1.debian.tar.xz' python3.13_3.13.2-1.debian.tar.xz 260180 SHA512:549371e62227f644d117596521baa693c30aeb65b87818213ed28bea292acce1487e1b38d4cab320ad8086690a7cec687ff04726b3b2290ca6ce5ef1365b981d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3.13/3.13.2-1/
+
 
 ### `dpkg` source package: `readline=8.2-6`
 

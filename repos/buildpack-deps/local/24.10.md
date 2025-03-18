@@ -4558,9 +4558,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris unbound=1.20.0-1ubuntu2.1
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.20.0-1ubuntu2.1.dsc' unbound_1.20.0-1ubuntu2.1.dsc 2440 SHA512:b9a9b21ae9e12ab0061ad894300eadc3a0034e78f9131cd491da40db1976a78652b008c184b6f5c07f50f9c4a34ae9be9e1b8be725f56f35053cef1395f09ca6
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.20.0.orig.tar.gz' unbound_1.20.0.orig.tar.gz 6550938 SHA512:2f6bc76c03b71ca1c2cd2331dc72d62f51493d15e17c59af46b400e542fcabff22e6b9d33f750a3e5f918a0116f45afa760651b2d5aa2feadac151cbbd71b0bd
-'http://archive.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.20.0-1ubuntu2.1.debian.tar.xz' unbound_1.20.0-1ubuntu2.1.debian.tar.xz 33296 SHA512:935c5ba5a4efc872b9bc884dbb3ed2edb2e400548d4530ce74edf9afd5dbae470612fea9762748dd514fdab74f49e9e8ed6dbd4f51601fa7f4e63fc98e07d180
+'http://security.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.20.0-1ubuntu2.1.dsc' unbound_1.20.0-1ubuntu2.1.dsc 2440 SHA512:b9a9b21ae9e12ab0061ad894300eadc3a0034e78f9131cd491da40db1976a78652b008c184b6f5c07f50f9c4a34ae9be9e1b8be725f56f35053cef1395f09ca6
+'http://security.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.20.0.orig.tar.gz' unbound_1.20.0.orig.tar.gz 6550938 SHA512:2f6bc76c03b71ca1c2cd2331dc72d62f51493d15e17c59af46b400e542fcabff22e6b9d33f750a3e5f918a0116f45afa760651b2d5aa2feadac151cbbd71b0bd
+'http://security.ubuntu.com/ubuntu/pool/main/u/unbound/unbound_1.20.0-1ubuntu2.1.debian.tar.xz' unbound_1.20.0-1ubuntu2.1.debian.tar.xz 33296 SHA512:935c5ba5a4efc872b9bc884dbb3ed2edb2e400548d4530ce74edf9afd5dbae470612fea9762748dd514fdab74f49e9e8ed6dbd4f51601fa7f4e63fc98e07d180
 ```
 
 ### `dpkg` source package: `unzip=6.0-28ubuntu6`

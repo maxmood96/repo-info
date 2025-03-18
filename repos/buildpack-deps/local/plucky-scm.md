@@ -1872,15 +1872,9 @@ Licenses: (parsed from: `/usr/share/doc/pinentry-curses/copyright`)
 - `LGPL-3+`
 - `X11`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris pinentry=1.3.1-2ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.3.1-2ubuntu2.dsc' pinentry_1.3.1-2ubuntu2.dsc 3384 SHA512:d2a156287cc70cfdc32ce61e277f34be136b8897f7d8b5e35939740f4e6b8f561d2445a7f0e4f293bf1749738a2ee1282d534fe11db9f11cac989c91edad3cb9
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.3.1.orig.tar.bz2' pinentry_1.3.1.orig.tar.bz2 611233 SHA512:3b72034dc1792b1475acb6d605ff7c1bd7647a0f02d1b6bdcd475acdef24bc802f49e275055436c3271261c4b7a64168477a698aab812a145962146b2f67a0e2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.3.1.orig.tar.bz2.asc' pinentry_1.3.1.orig.tar.bz2.asc 390 SHA512:499926442059c8f349b66beb16b6cf22cf0919b65a601af1bd0d60c96f60d44e0ad2bd090324585da5cb09e75286e11a4b92c553aec43b87f6cbe8a1e599882c
-'http://archive.ubuntu.com/ubuntu/pool/main/p/pinentry/pinentry_1.3.1-2ubuntu2.debian.tar.xz' pinentry_1.3.1-2ubuntu2.debian.tar.xz 23928 SHA512:186b9c3d672f395a7edf52329b30db2df8354a795888539ecbb4f0085fd57b5e283eda3c61633892ad9f115f1145a2f1e64914f6c236efed1beac3816a6b5954
-```
 
 ### `dpkg` source package: `procps=2:4.0.4-4ubuntu5`
 
@@ -1956,15 +1950,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.13-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.13=3.13.2-1
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.2-1.dsc' python3.13_3.13.2-1.dsc 3639 SHA512:be1258919d5935dd7a6fb15bb936e3658ce2cb834da55ad8971fd48fd113ef2a3655fa2f01ba8f557da2a2d5cd66cf9cf808af9ee4eb9c5bc90750ac1ee46f63
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.2.orig.tar.xz' python3.13_3.13.2.orig.tar.xz 22621108 SHA512:bb1c0598914c6d4326554faa568f660f10b20c701d0f36bf1fa58837b6498d728a407416b06ede39604caea1ca93f60545b83b01ae8ee65f55d4cc83242b63fe
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.2.orig.tar.xz.asc' python3.13_3.13.2.orig.tar.xz.asc 963 SHA512:5f019be530f688b0adf5d5cc9f2c2243e2f1dc7338559db14c1eedd12aadc85404d42c7aafd74e41828205d85f13f278876662ac30c8f3382a1ee081ba5f29f2
-'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.13/python3.13_3.13.2-1.debian.tar.xz' python3.13_3.13.2-1.debian.tar.xz 260180 SHA512:549371e62227f644d117596521baa693c30aeb65b87818213ed28bea292acce1487e1b38d4cab320ad8086690a7cec687ff04726b3b2290ca6ce5ef1365b981d
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/python3.13/3.13.2-1/
+
 
 ### `dpkg` source package: `readline=8.2-6`
 
