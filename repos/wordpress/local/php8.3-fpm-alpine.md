@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:31452c43a12e17323244e7637175c4ce0b090682b016c0aa116f9155b7cba023`
+- Image ID: `sha256:53832c980bc94ea5d6ec7eb9c0bbf1ee7f248f52849a4a5a8d0e69b7fdaecc49`
 - Created: `2025-02-11T20:06:56Z`
-- Virtual Size: ~ 270.81 Mb  
+- Virtual Size: ~ 270.84 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.17`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.17.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.17.tar.xz.asc`
-  - `PHP_SHA256=6158ee678e698395da13d72c7679a406d2b7554323432f14d37b60ed87d8ccfb`
+  - `PHP_VERSION=8.3.19`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.19.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.19.tar.xz.asc`
+  - `PHP_SHA256=976e4077dd25bec96b5dfe8938052d243bbd838f95368a204896eff12756545f`
 
 ## `apk` (`.apk`-based packages)
 
@@ -758,16 +758,16 @@ MIT
 ### `apk` package: `libffi`
 
 ```console
-libffi-3.4.6-r0 description:
+libffi-3.4.7-r0 description:
 portable, high level programming interface to various calling conventions.
 
-libffi-3.4.6-r0 webpage:
+libffi-3.4.7-r0 webpage:
 https://sourceware.org/libffi/
 
-libffi-3.4.6-r0 installed size:
+libffi-3.4.7-r0 installed size:
 38 KiB
 
-libffi-3.4.6-r0 license:
+libffi-3.4.7-r0 license:
 MIT
 
 ```
@@ -1183,16 +1183,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.4-r3 description:
+libxml2-2.13.4-r5 description:
 XML parsing library, version 2
 
-libxml2-2.13.4-r3 webpage:
+libxml2-2.13.4-r5 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.4-r3 installed size:
+libxml2-2.13.4-r5 installed size:
 1054 KiB
 
-libxml2-2.13.4-r3 license:
+libxml2-2.13.4-r5 license:
 MIT
 
 ```

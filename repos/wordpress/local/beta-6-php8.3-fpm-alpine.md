@@ -1,10 +1,10 @@
-# `wordpress:beta-6.8-beta1-php8.3-fpm-alpine`
+# `wordpress:beta-6.8-beta2-php8.3-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:1092b5275b9560f1a72323528c9a36451ec71fe8f778cf6a528df9520790d17b`
-- Created: `2025-03-04T20:03:13Z`
-- Virtual Size: ~ 271.36 Mb  
+- Image ID: `sha256:2d2f7325d6c28854109ff8bf43fb596bbbe29f393bebbcba5c3bb7469eb80c50`
+- Created: `2025-03-11T19:03:12Z`
+- Virtual Size: ~ 271.42 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.17`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.17.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.17.tar.xz.asc`
-  - `PHP_SHA256=6158ee678e698395da13d72c7679a406d2b7554323432f14d37b60ed87d8ccfb`
+  - `PHP_VERSION=8.3.19`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.19.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.19.tar.xz.asc`
+  - `PHP_SHA256=976e4077dd25bec96b5dfe8938052d243bbd838f95368a204896eff12756545f`
 
 ## `apk` (`.apk`-based packages)
 
@@ -1183,16 +1183,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.4-r3 description:
+libxml2-2.13.4-r5 description:
 XML parsing library, version 2
 
-libxml2-2.13.4-r3 webpage:
+libxml2-2.13.4-r5 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.4-r3 installed size:
+libxml2-2.13.4-r5 installed size:
 1054 KiB
 
-libxml2-2.13.4-r3 license:
+libxml2-2.13.4-r5 license:
 MIT
 
 ```
