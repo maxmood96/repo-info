@@ -8564,14 +8564,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3-colcon-core=0.18.4+upstream-1
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-core/python3-colcon-core_0.18.4%2bupstream-1.debian.tar.xz' python3-colcon-core_0.18.4+upstream-1.debian.tar.xz 1740 SHA512:e9568bf8a00b96cb97c3613524d638ee711d8df77b05902c1b4340689e6b89942ba2402c98fcb8f0859a69fd7a78f6b753aa5478ea09fdee17d92a3b6edeb6f9
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-core/python3-colcon-core_0.18.4%2bupstream-1.dsc' python3-colcon-core_0.18.4+upstream-1.dsc 1022 SHA512:436f861e6034b245949547c636d227f23642cfd1e244955db4769227730a0c948f17a73f217ef6f354bcd66832036db019dbf1300300ceb6128b01c9dec3944a
-'http://packages.ros.org/ros2/ubuntu/pool/main/p/python3-colcon-core/python3-colcon-core_0.18.4%2bupstream.orig.tar.gz' python3-colcon-core_0.18.4+upstream.orig.tar.gz 129584 SHA512:cfe7a0a4cc15313885ee0a72024f0c33325a3ec36ccc805b2b6b5708beefeb9a7255104331e52a1f8c776977b154c756654f92371fc0c832cb34e0ac8dcc5d08
-```
 
 ### `dpkg` source package: `python3-colcon-defaults=0.2.9+upstream-1`
 
@@ -13325,14 +13320,9 @@ Licenses: (parsed from: `/usr/share/doc/libpam-systemd/copyright`, `/usr/share/d
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=255.4-1ubuntu8.5
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.5.dsc' systemd_255.4-1ubuntu8.5.dsc 7320 SHA512:21d31288f94b2ad43dcb78daa7ea5ee30ef8d862316f6f02ad907ace32f52af0e11bfaee6fd035b4a411296f243be80848e0ded6982ab612d94c5663c76ff3c1
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4.orig.tar.gz' systemd_255.4.orig.tar.gz 14952427 SHA512:8a2bde11a55f7f788ba7751789a5e9be6ce9634e88d54e49f6e832c4c49020c6cacaf2a610fe26f92998b0cbf43c6c2150a96b2c0953d23261009f57d71ea979
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_255.4-1ubuntu8.5.debian.tar.xz' systemd_255.4-1ubuntu8.5.debian.tar.xz 234260 SHA512:395bdcb1880192d55fc136d91ea2e605117341f93ce21b2f9b6ada0ebbf1683ca43a4b8d99b3c8111483ac0781e1bc98f64c31b8085666dfc96f117003030cb8
-```
 
 ### `dpkg` source package: `sysvinit=3.08-6ubuntu3`
 
