@@ -1,11 +1,11 @@
 ## `debian:trixie-20250317-slim`
 
 ```console
-$ docker pull debian@sha256:4a339cee0d9f0d1faf34530f9c6c6519d25ba01b91913caf05c8843a529f4b23
+$ docker pull debian@sha256:2a68788db17e6f845263ea011a249de9d78394607da22836f107fa033b70882c
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
--	Platforms: 15
+-	Platforms: 17
 	-	linux; amd64
 	-	unknown; unknown
 	-	linux; arm variant v5
@@ -17,6 +17,8 @@ $ docker pull debian@sha256:4a339cee0d9f0d1faf34530f9c6c6519d25ba01b91913caf05c8
 	-	linux; 386
 	-	unknown; unknown
 	-	linux; mips64le
+	-	linux; ppc64le
+	-	unknown; unknown
 	-	linux; riscv64
 	-	unknown; unknown
 	-	linux; s390x
@@ -259,6 +261,49 @@ RUN # debian.sh --arch 'mips64el' out/ 'trixie' '@1742169600'
 		Last Modified: Mon, 17 Mar 2025 22:19:25 GMT  
 		Size: 28.6 MB (28645794 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `debian:trixie-20250317-slim` - linux; ppc64le
+
+```console
+$ docker pull debian@sha256:12540e94cec8c7cd3a7bc0a260b0b6c7163ddd501a9e361a6c65b8f04bb1f4de
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **32.1 MB (32086968 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:fad0794181b6b81e609cc14c2b5a14502f5e474ed670a8e7421a6913132a0b81`
+-	Default Command: `["bash"]`
+
+```dockerfile
+# Mon, 17 Mar 2025 00:00:00 GMT
+RUN # debian.sh --arch 'ppc64el' out/ 'trixie' '@1742169600'
+```
+
+-	Layers:
+	-	`sha256:3212a67e13156c304eff00fe0aa29bf6b14ed64f12f4b9875e37b0aa41eb9146`  
+		Last Modified: Mon, 17 Mar 2025 22:19:39 GMT  
+		Size: 32.1 MB (32086968 bytes)  
+		MIME: application/vnd.oci.image.layer.v1.tar+gzip
+
+### `debian:trixie-20250317-slim` - unknown; unknown
+
+```console
+$ docker pull debian@sha256:cc2f9d328b58c9a985d3fa0642d268aaba7354c2254e797a58efff8b83c54aff
+```
+
+-	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
+-	Total Size: **1.9 MB (1874398 bytes)**  
+	(compressed transfer size, not on-disk size)
+-	Image ID: `sha256:167f51351239063a8740fd73c288b41539e24735e2457ba0ab5440d67c99a520`
+
+```dockerfile
+```
+
+-	Layers:
+	-	`sha256:889db6bd77c3af4a55b4c1de93720b02d0d2f83c257c3f65215bdf41a30f54d7`  
+		Last Modified: Mon, 17 Mar 2025 22:19:38 GMT  
+		Size: 1.9 MB (1874398 bytes)  
+		MIME: application/vnd.in-toto+json
 
 ### `debian:trixie-20250317-slim` - linux; riscv64
 
