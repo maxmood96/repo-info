@@ -10456,7 +10456,12 @@ $ docker pull flink@sha256:965b5536aa271a70fcf837e5996661a26e90d1586ed76b24be43d
 
 ## `flink:2.0-java21`
 
-**does not exist** (yet?)
+```console
+$ docker pull flink@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `flink:2.0-scala_2.12`
 
@@ -11351,39 +11356,84 @@ $ docker pull flink@sha256:965b5536aa271a70fcf837e5996661a26e90d1586ed76b24be43d
 
 ## `flink:2.0-scala_2.12-java21`
 
-**does not exist** (yet?)
+```console
+$ docker pull flink@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `flink:2.0.0`
 
-**does not exist** (yet?)
+```console
+$ docker pull flink@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `flink:2.0.0-java11`
 
-**does not exist** (yet?)
+```console
+$ docker pull flink@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `flink:2.0.0-java17`
 
-**does not exist** (yet?)
+```console
+$ docker pull flink@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `flink:2.0.0-java21`
 
-**does not exist** (yet?)
+```console
+$ docker pull flink@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `flink:2.0.0-scala_2.12`
 
-**does not exist** (yet?)
+```console
+$ docker pull flink@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `flink:2.0.0-scala_2.12-java11`
 
-**does not exist** (yet?)
+```console
+$ docker pull flink@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `flink:2.0.0-scala_2.12-java17`
 
-**does not exist** (yet?)
+```console
+$ docker pull flink@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `flink:2.0.0-scala_2.12-java21`
 
-**does not exist** (yet?)
+```console
+$ docker pull flink@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `flink:java11`
 
@@ -11981,7 +12031,12 @@ $ docker pull flink@sha256:6636c71e1d5edcf4df276f5b4fc9f883bd4586cca9707535cdeac
 
 ## `flink:java21`
 
-**does not exist** (yet?)
+```console
+$ docker pull flink@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `flink:latest`
 
@@ -13173,4 +13228,9 @@ $ docker pull flink@sha256:6636c71e1d5edcf4df276f5b4fc9f883bd4586cca9707535cdeac
 
 ## `flink:scala_2.12-java21`
 
-**does not exist** (yet?)
+```console
+$ docker pull flink@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
