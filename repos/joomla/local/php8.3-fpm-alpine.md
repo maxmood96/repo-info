@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:6e523a25c227b7f68219c2c22fc18f6876a540a05cd17362b68f8a2d45fbce23`
+- Image ID: `sha256:f7b526a409db189071cdaba996bd8418b3c15d53ae6fdc917f9febfed945da48`
 - Created: `2025-03-10T12:08:21Z`
-- Virtual Size: ~ 275.73 Mb  
+- Virtual Size: ~ 275.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -17,10 +17,10 @@
   - `PHP_CPPFLAGS=-fstack-protector-strong -fpic -fpie -O2 -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64`
   - `PHP_LDFLAGS=-Wl,-O1 -pie`
   - `GPG_KEYS=1198C0117593497A5EC5C199286AF1F9897469DC C28D937575603EB4ABB725861C0779DC5C0A9DE4 AFD8691FDAEDF03BDF6E460563F15A9B715376CA`
-  - `PHP_VERSION=8.3.17`
-  - `PHP_URL=https://www.php.net/distributions/php-8.3.17.tar.xz`
-  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.17.tar.xz.asc`
-  - `PHP_SHA256=6158ee678e698395da13d72c7679a406d2b7554323432f14d37b60ed87d8ccfb`
+  - `PHP_VERSION=8.3.19`
+  - `PHP_URL=https://www.php.net/distributions/php-8.3.19.tar.xz`
+  - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.19.tar.xz.asc`
+  - `PHP_SHA256=976e4077dd25bec96b5dfe8938052d243bbd838f95368a204896eff12756545f`
   - `JOOMLA_INSTALLATION_DISABLE_LOCALHOST_CHECK=1`
   - `JOOMLA_VERSION=5.2.4`
   - `JOOMLA_SHA512=2e856b8c544e3b5a4f8d77c7d6ae7f8832712d441cc071fbe5ff808bd0b69cf4c1c3e9716af156f3b5fa314b4c55c867e0c33c261dd42a4847858933edf43cf5`
@@ -1222,16 +1222,16 @@ MIT
 ### `apk` package: `libxml2`
 
 ```console
-libxml2-2.13.4-r3 description:
+libxml2-2.13.4-r5 description:
 XML parsing library, version 2
 
-libxml2-2.13.4-r3 webpage:
+libxml2-2.13.4-r5 webpage:
 https://gitlab.gnome.org/GNOME/libxml2
 
-libxml2-2.13.4-r3 installed size:
+libxml2-2.13.4-r5 installed size:
 1054 KiB
 
-libxml2-2.13.4-r3 license:
+libxml2-2.13.4-r5 license:
 MIT
 
 ```
