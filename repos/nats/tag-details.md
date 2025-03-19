@@ -29,6 +29,24 @@
 -	[`nats:2.10.26-scratch`](#nats21026-scratch)
 -	[`nats:2.10.26-windowsservercore`](#nats21026-windowsservercore)
 -	[`nats:2.10.26-windowsservercore-1809`](#nats21026-windowsservercore-1809)
+-	[`nats:2.11`](#nats211)
+-	[`nats:2.11-alpine`](#nats211-alpine)
+-	[`nats:2.11-alpine3.21`](#nats211-alpine321)
+-	[`nats:2.11-linux`](#nats211-linux)
+-	[`nats:2.11-nanoserver`](#nats211-nanoserver)
+-	[`nats:2.11-nanoserver-1809`](#nats211-nanoserver-1809)
+-	[`nats:2.11-scratch`](#nats211-scratch)
+-	[`nats:2.11-windowsservercore`](#nats211-windowsservercore)
+-	[`nats:2.11-windowsservercore-1809`](#nats211-windowsservercore-1809)
+-	[`nats:2.11.0`](#nats2110)
+-	[`nats:2.11.0-alpine`](#nats2110-alpine)
+-	[`nats:2.11.0-alpine3.21`](#nats2110-alpine321)
+-	[`nats:2.11.0-linux`](#nats2110-linux)
+-	[`nats:2.11.0-nanoserver`](#nats2110-nanoserver)
+-	[`nats:2.11.0-nanoserver-1809`](#nats2110-nanoserver-1809)
+-	[`nats:2.11.0-scratch`](#nats2110-scratch)
+-	[`nats:2.11.0-windowsservercore`](#nats2110-windowsservercore)
+-	[`nats:2.11.0-windowsservercore-1809`](#nats2110-windowsservercore-1809)
 -	[`nats:alpine`](#natsalpine)
 -	[`nats:alpine3.21`](#natsalpine321)
 -	[`nats:latest`](#natslatest)
@@ -7337,6 +7355,78 @@ CMD ["--config" "nats-server.conf"]
 		Last Modified: Wed, 12 Mar 2025 18:53:29 GMT  
 		Size: 1.3 KB (1299 bytes)  
 		MIME: application/vnd.docker.image.rootfs.diff.tar.gzip
+
+## `nats:2.11`
+
+**does not exist** (yet?)
+
+## `nats:2.11-alpine`
+
+**does not exist** (yet?)
+
+## `nats:2.11-alpine3.21`
+
+**does not exist** (yet?)
+
+## `nats:2.11-linux`
+
+**does not exist** (yet?)
+
+## `nats:2.11-nanoserver`
+
+**does not exist** (yet?)
+
+## `nats:2.11-nanoserver-1809`
+
+**does not exist** (yet?)
+
+## `nats:2.11-scratch`
+
+**does not exist** (yet?)
+
+## `nats:2.11-windowsservercore`
+
+**does not exist** (yet?)
+
+## `nats:2.11-windowsservercore-1809`
+
+**does not exist** (yet?)
+
+## `nats:2.11.0`
+
+**does not exist** (yet?)
+
+## `nats:2.11.0-alpine`
+
+**does not exist** (yet?)
+
+## `nats:2.11.0-alpine3.21`
+
+**does not exist** (yet?)
+
+## `nats:2.11.0-linux`
+
+**does not exist** (yet?)
+
+## `nats:2.11.0-nanoserver`
+
+**does not exist** (yet?)
+
+## `nats:2.11.0-nanoserver-1809`
+
+**does not exist** (yet?)
+
+## `nats:2.11.0-scratch`
+
+**does not exist** (yet?)
+
+## `nats:2.11.0-windowsservercore`
+
+**does not exist** (yet?)
+
+## `nats:2.11.0-windowsservercore-1809`
+
+**does not exist** (yet?)
 
 ## `nats:alpine`
 
