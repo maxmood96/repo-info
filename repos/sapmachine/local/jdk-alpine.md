@@ -2,15 +2,15 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:af5ae42196821741bc2a6f9fd5657f595ead4f786b22bcc7cfd82251b4fb2ffc`
-- Created: `2025-01-27T13:39:22Z`
-- Virtual Size: ~ 386.58 Mb  
+- Image ID: `sha256:a8efcf9d8ad2f68d25ba6f6e2d95709fbc215da1265c815f3a8cd30e8fa587d2`
+- Created: `2025-03-19T14:31:37Z`
+- Virtual Size: ~ 419.76 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/lib/jvm/java-23-sapmachine-jdk`
+  - `JAVA_HOME=/usr/lib/jvm/java-24-sapmachine-jdk`
 
 ## `apk` (`.apk`-based packages)
 
@@ -289,16 +289,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.4-r0 description:
+libexpat-2.7.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.4-r0 webpage:
+libexpat-2.7.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.4-r0 installed size:
+libexpat-2.7.0-r0 installed size:
 129 KiB
 
-libexpat-2.6.4-r0 license:
+libexpat-2.7.0-r0 license:
 MIT
 
 ```
@@ -323,16 +323,16 @@ BSD-3-Clause AND BSD-2-Clause AND ISC AND Beerware AND Public Domain
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.44-r0 description:
+libpng-1.6.47-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.44-r0 webpage:
+libpng-1.6.47-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.44-r0 installed size:
+libpng-1.6.47-r0 installed size:
 181 KiB
 
-libpng-1.6.44-r0 license:
+libpng-1.6.47-r0 license:
 Libpng
 
 ```
@@ -544,33 +544,33 @@ MPL-2.0
 ### `apk` package: `nss`
 
 ```console
-nss-3.107-r0 description:
+nss-3.109-r0 description:
 Mozilla Network Security Services
 
-nss-3.107-r0 webpage:
+nss-3.109-r0 webpage:
 https://developer.mozilla.org/docs/Mozilla/Projects/NSS
 
-nss-3.107-r0 installed size:
-3888 KiB
+nss-3.109-r0 installed size:
+3896 KiB
 
-nss-3.107-r0 license:
+nss-3.109-r0 license:
 MPL-2.0
 
 ```
 
-### `apk` package: `sapmachine-23-jdk`
+### `apk` package: `sapmachine-24-jdk`
 
 ```console
-sapmachine-23-jdk-23.0.2-r0 description:
+sapmachine-24-jdk-24-r0 description:
 The SapMachine Java Development Kit
 
-sapmachine-23-jdk-23.0.2-r0 webpage:
+sapmachine-24-jdk-24-r0 webpage:
 https://sapmachine.io
 
-sapmachine-23-jdk-23.0.2-r0 installed size:
-346 MiB
+sapmachine-24-jdk-24-r0 installed size:
+378 MiB
 
-sapmachine-23-jdk-23.0.2-r0 license:
+sapmachine-24-jdk-24-r0 license:
 GPL-2.0-with-classpath-exception
 
 ```
