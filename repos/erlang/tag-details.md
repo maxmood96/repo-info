@@ -50,6 +50,18 @@
 -	[`erlang:27.3.0.0`](#erlang27300)
 -	[`erlang:27.3.0.0-alpine`](#erlang27300-alpine)
 -	[`erlang:27.3.0.0-slim`](#erlang27300-slim)
+-	[`erlang:28`](#erlang28)
+-	[`erlang:28-alpine`](#erlang28-alpine)
+-	[`erlang:28-slim`](#erlang28-slim)
+-	[`erlang:28.0`](#erlang280)
+-	[`erlang:28.0-alpine`](#erlang280-alpine)
+-	[`erlang:28.0-slim`](#erlang280-slim)
+-	[`erlang:28.0.0`](#erlang2800)
+-	[`erlang:28.0.0-alpine`](#erlang2800-alpine)
+-	[`erlang:28.0.0-slim`](#erlang2800-slim)
+-	[`erlang:28.0.0.0-rc2`](#erlang28000-rc2)
+-	[`erlang:28.0.0.0-rc2-alpine`](#erlang28000-rc2-alpine)
+-	[`erlang:28.0.0.0-rc2-slim`](#erlang28000-rc2-slim)
 -	[`erlang:alpine`](#erlangalpine)
 -	[`erlang:latest`](#erlanglatest)
 -	[`erlang:slim`](#erlangslim)
@@ -20245,6 +20257,54 @@ $ docker pull erlang@sha256:a35241cdd2b33b85ca0139a6d2bfb44118c63eb7fcc1a256486f
 		Last Modified: Tue, 18 Mar 2025 02:13:45 GMT  
 		Size: 14.0 KB (13964 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `erlang:28`
+
+**does not exist** (yet?)
+
+## `erlang:28-alpine`
+
+**does not exist** (yet?)
+
+## `erlang:28-slim`
+
+**does not exist** (yet?)
+
+## `erlang:28.0`
+
+**does not exist** (yet?)
+
+## `erlang:28.0-alpine`
+
+**does not exist** (yet?)
+
+## `erlang:28.0-slim`
+
+**does not exist** (yet?)
+
+## `erlang:28.0.0`
+
+**does not exist** (yet?)
+
+## `erlang:28.0.0-alpine`
+
+**does not exist** (yet?)
+
+## `erlang:28.0.0-slim`
+
+**does not exist** (yet?)
+
+## `erlang:28.0.0.0-rc2`
+
+**does not exist** (yet?)
+
+## `erlang:28.0.0.0-rc2-alpine`
+
+**does not exist** (yet?)
+
+## `erlang:28.0.0.0-rc2-slim`
+
+**does not exist** (yet?)
 
 ## `erlang:alpine`
 
