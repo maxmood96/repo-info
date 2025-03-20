@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:888e78f64909eae34fd2b58d41060ef38107f23b1bd0f9a75bc9a50a51f99dd5`
-- Created: `2024-09-16T20:20:48Z`
-- Virtual Size: ~ 179.63 Mb  
+- Image ID: `sha256:8c7ca24fc498e3f92c1488fd4ff724d5fbdd51ba1572ff7a03c7850c5807b467`
+- Created: `2025-03-20T20:29:21Z`
+- Virtual Size: ~ 179.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/docker-varnish-entrypoint"]`
@@ -12,6 +12,7 @@
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `VMOD_DEPS=autoconf-archive automake curl libtool make pkgconfig py3-sphinx`
   - `VARNISH_SIZE=100M`
+  - `VSM_NOPID=1`
 
 ## `apk` (`.apk`-based packages)
 
@@ -86,16 +87,16 @@ GPL-2.0-only
 ### `apk` package: `binutils`
 
 ```console
-binutils-2.41-r0 description:
+binutils-2.41-r1 description:
 Tools necessary to build programs
 
-binutils-2.41-r0 webpage:
+binutils-2.41-r1 webpage:
 https://www.gnu.org/software/binutils/
 
-binutils-2.41-r0 installed size:
-9552 KiB
+binutils-2.41-r1 installed size:
+9548 KiB
 
-binutils-2.41-r0 license:
+binutils-2.41-r1 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
 
 ```
@@ -579,16 +580,16 @@ GPL-2.0-only
 ### `apk` package: `varnish`
 
 ```console
-varnish-7.5.0-r1 description:
+varnish-7.6.1-r1 description:
 High-performance HTTP accelerator
 
-varnish-7.5.0-r1 webpage:
+varnish-7.6.1-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-7.5.0-r1 installed size:
-2444 KiB
+varnish-7.6.1-r1 installed size:
+2480 KiB
 
-varnish-7.5.0-r1 license:
+varnish-7.6.1-r1 license:
 BSD
 
 ```
@@ -596,16 +597,16 @@ BSD
 ### `apk` package: `varnish-dbg`
 
 ```console
-varnish-dbg-7.5.0-r1 description:
+varnish-dbg-7.6.1-r1 description:
 High-performance HTTP accelerator (debug symbols)
 
-varnish-dbg-7.5.0-r1 webpage:
+varnish-dbg-7.6.1-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-dbg-7.5.0-r1 installed size:
-5480 KiB
+varnish-dbg-7.6.1-r1 installed size:
+5560 KiB
 
-varnish-dbg-7.5.0-r1 license:
+varnish-dbg-7.6.1-r1 license:
 BSD
 
 ```
@@ -613,16 +614,16 @@ BSD
 ### `apk` package: `varnish-dev`
 
 ```console
-varnish-dev-7.5.0-r1 description:
+varnish-dev-7.6.1-r1 description:
 High-performance HTTP accelerator (development files)
 
-varnish-dev-7.5.0-r1 webpage:
+varnish-dev-7.6.1-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-dev-7.5.0-r1 installed size:
-700 KiB
+varnish-dev-7.6.1-r1 installed size:
+708 KiB
 
-varnish-dev-7.5.0-r1 license:
+varnish-dev-7.6.1-r1 license:
 BSD
 
 ```
@@ -630,16 +631,16 @@ BSD
 ### `apk` package: `varnish-doc`
 
 ```console
-varnish-doc-7.5.0-r1 description:
+varnish-doc-7.6.1-r1 description:
 High-performance HTTP accelerator (documentation)
 
-varnish-doc-7.5.0-r1 webpage:
+varnish-doc-7.6.1-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-doc-7.5.0-r1 installed size:
-240 KiB
+varnish-doc-7.6.1-r1 installed size:
+248 KiB
 
-varnish-doc-7.5.0-r1 license:
+varnish-doc-7.6.1-r1 license:
 BSD
 
 ```
@@ -647,16 +648,16 @@ BSD
 ### `apk` package: `varnish-libs`
 
 ```console
-varnish-libs-7.5.0-r1 description:
+varnish-libs-7.6.1-r1 description:
 High-performance HTTP accelerator (libraries)
 
-varnish-libs-7.5.0-r1 webpage:
+varnish-libs-7.6.1-r1 webpage:
 http://www.varnish-cache.org/
 
-varnish-libs-7.5.0-r1 installed size:
-204 KiB
+varnish-libs-7.6.1-r1 installed size:
+208 KiB
 
-varnish-libs-7.5.0-r1 license:
+varnish-libs-7.6.1-r1 license:
 BSD
 
 ```
