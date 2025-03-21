@@ -391,21 +391,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.12.1-3
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.12.1-3.dsc' curl_8.12.1-3.dsc 3252 SHA256:3c3918ce2f3863f801b95071f71eed9bf95bcfe8fb0fd1b5e48ab3157c24fc4c
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.12.1.orig.tar.gz' curl_8.12.1.orig.tar.gz 4181139 SHA256:7b40ea64947e0b440716a4d7f0b7aa56230a5341c8377d7b609649d4aea8dbcf
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.12.1.orig.tar.gz.asc' curl_8.12.1.orig.tar.gz.asc 488 SHA256:36d883bcf288d843caf587e7c8fd5feb6223b63420ae93517be6a4db928abe13
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.12.1-3.debian.tar.xz' curl_8.12.1-3.debian.tar.xz 53716 SHA256:550dcaf7cc74556a2f1f45d068aaa694e4d89a6dc651c302745f358073fcaf08
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.12.1-3/
 
-- https://sources.debian.net/src/curl/8.12.1-3/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.12.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.12.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9`
 
@@ -886,21 +878,13 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.46-1
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.46-1.dsc' gnupg2_2.2.46-1.dsc 3366 SHA256:e3b33bad045e508a8c7df2ae112c9f8cdb1db1445f848afd701079d0c564444d
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.46.orig.tar.bz2' gnupg2_2.2.46.orig.tar.bz2 7073667 SHA256:7249e12405e38f12996602faa4b791f136463637f58e834246037ebf8846796e
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.46.orig.tar.bz2.asc' gnupg2_2.2.46.orig.tar.bz2.asc 325 SHA256:0cd4d189897eed7c8f583e8347d9a58f7281be7e617159d87663b7f97e495ed4
-'http://deb.debian.org/debian/pool/main/g/gnupg2/gnupg2_2.2.46-1.debian.tar.xz' gnupg2_2.2.46-1.debian.tar.xz 143552 SHA256:5ca01b5b562c4840155290e3b49d5a1373f3fd4799ce3e15c158ccf47ba33729
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gnupg2/2.2.46-1/
 
-- https://sources.debian.net/src/gnupg2/2.2.46-1/ (for browsing the source)
-- https://sources.debian.net/src/gnupg2/2.2.46-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gnupg2/2.2.46-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gnutls28=3.8.9-2`
 
@@ -1347,21 +1331,13 @@ Licenses: (parsed from: `/usr/share/doc/libidn2-0/copyright`)
 - `LGPL-3+`
 - `Unicode`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libidn2=2.3.8-1
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.8-1.dsc' libidn2_2.3.8-1.dsc 2961 SHA256:c32644a80d68ffae53b2063eeecc00d11910fa50d80b2311c9199b28311c690c
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.8.orig.tar.gz' libidn2_2.3.8.orig.tar.gz 718637 SHA256:bbad1678d35d28e2c62e6a2577083829461402d9e47b908791c55314a5cb5e04
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.8.orig.tar.gz.asc' libidn2_2.3.8.orig.tar.gz.asc 1223 SHA256:8995cab7db361d9d6989eab26d9b521c74236960a5d78250121c8d369b013bd8
-'http://deb.debian.org/debian/pool/main/libi/libidn2/libidn2_2.3.8-1.debian.tar.xz' libidn2_2.3.8-1.debian.tar.xz 17220 SHA256:dc77c0136bb917301d3ca8b2922f17e74760bfb5fe258a5a5f5d42dcdc8636c5
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libidn2/2.3.8-1/
 
-- https://sources.debian.net/src/libidn2/2.3.8-1/ (for browsing the source)
-- https://sources.debian.net/src/libidn2/2.3.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libidn2/2.3.8-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libksba=1.6.7-2`
 

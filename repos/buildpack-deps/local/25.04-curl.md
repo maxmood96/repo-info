@@ -1416,14 +1416,9 @@ Licenses: (parsed from: `/usr/share/doc/libldap-common/copyright`, `/usr/share/d
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.6.9+dfsg-1~exp2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.9%2bdfsg-1%7eexp2ubuntu1.dsc' openldap_2.6.9+dfsg-1~exp2ubuntu1.dsc 3342 SHA512:ed622ca107393458d44c4edceee660f4c1b2624a7492fa2cb215ea47024fec31e15a6c18223ba9f32d6a49b021a7e8086d26468243677d3344a31f2ed33418aa
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.9%2bdfsg.orig.tar.xz' openldap_2.6.9+dfsg.orig.tar.xz 3753260 SHA512:0789b8ad8b2ede51741e18e3f090a258edc7abeda90cfadae98b9a22126be901f3640d4121411836608918418108dfb71ae0957dbd251d9c3ce6bd1b854dd799
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.9%2bdfsg-1%7eexp2ubuntu1.debian.tar.xz' openldap_2.6.9+dfsg-1~exp2ubuntu1.debian.tar.xz 184000 SHA512:d41adc7b1e7758bdbf7cb2632aea24f84766719d88b811fff02b758a3fbc156e10effa4b0b63093aff6836ee6d5cfa4ae89c0b650de009d83c3f9228f11bbc0b
-```
 
 ### `dpkg` source package: `openssl=3.4.0-1ubuntu2`
 

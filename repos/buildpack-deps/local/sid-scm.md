@@ -53,19 +53,13 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adduser=3.145
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.145.dsc' adduser_3.145.dsc 1678 SHA256:3f059f21fdba3eb6b82b81e434f8f188f7d1c1818226429ecd61c17872ce21e0
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.145.tar.xz' adduser_3.145.tar.xz 322616 SHA256:a8f909e00760da0dc43c9db7841f31d4a6f60b32390ffd6bf9a85abf1adfe8ce
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/adduser/3.145/
 
-- https://sources.debian.net/src/adduser/3.145/ (for browsing the source)
-- https://sources.debian.net/src/adduser/3.145/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/adduser/3.145/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.3-3`
 
@@ -134,19 +128,13 @@ Licenses: (parsed from: `/usr/share/doc/apt/copyright`, `/usr/share/doc/libapt-p
 - `GPL-2+`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris apt=2.9.33
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.33.dsc' apt_2.9.33.dsc 3162 SHA256:a27ef8bfe1e9863a8045b9265dc8179877d8d7082bec915a3563cbcc4a51c0e8
-'http://deb.debian.org/debian/pool/main/a/apt/apt_2.9.33.tar.xz' apt_2.9.33.tar.xz 2415640 SHA256:36435ac3dbcb07f992580754b364f8f5836a56341ce67de075a8b79d3662928f
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/apt/2.9.33/
 
-- https://sources.debian.net/src/apt/2.9.33/ (for browsing the source)
-- https://sources.debian.net/src/apt/2.9.33/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/apt/2.9.33/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `attr=1:2.5.2-3`
 
@@ -672,21 +660,13 @@ Licenses: (parsed from: `/usr/share/doc/diffutils/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris diffutils=1:3.10-2
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10-2.dsc' diffutils_3.10-2.dsc 1737 SHA256:e66b646eec15edcd185e4cc085deb8fe2925912a632a40cc98017f66ffecbab4
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz' diffutils_3.10.orig.tar.xz 1624240 SHA256:90e5e93cc724e4ebe12ede80df1634063c7a855692685919bfe60b556c9bd09e
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz.asc' diffutils_3.10.orig.tar.xz.asc 833 SHA256:a94faf8f1baa04ff220f7b2ccb137c16337284e023ebc4a1d5df475c08d810f7
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10-2.debian.tar.xz' diffutils_3.10-2.debian.tar.xz 14244 SHA256:8791e985aa96c331a8994484936b0da5b86373648f32feb29d47864f0488d613
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/diffutils/1:3.10-2/
 
-- https://sources.debian.net/src/diffutils/1:3.10-2/ (for browsing the source)
-- https://sources.debian.net/src/diffutils/1:3.10-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/diffutils/1:3.10-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dpkg=1.22.18`
 
@@ -1732,21 +1712,13 @@ Licenses: (parsed from: `/usr/share/doc/libseccomp2/copyright`)
 
 - `LGPL-2.1`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libseccomp=2.5.5-2
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.5.5-2.dsc' libseccomp_2.5.5-2.dsc 2708 SHA256:e69657cf7b3cf0219d4c6d72c81db1f7f2d9a8e090fd8a983d17a4a80363dcc2
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.5.5.orig.tar.gz' libseccomp_2.5.5.orig.tar.gz 642445 SHA256:248a2c8a4d9b9858aa6baf52712c34afefcf9c9e94b76dce02c1c9aa25fb3375
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.5.5.orig.tar.gz.asc' libseccomp_2.5.5.orig.tar.gz.asc 833 SHA256:f3bf8a946020d3047581f11fe6ac71971a842115ddb362562b193861ef57d97b
-'http://deb.debian.org/debian/pool/main/libs/libseccomp/libseccomp_2.5.5-2.debian.tar.xz' libseccomp_2.5.5-2.debian.tar.xz 39004 SHA256:82fa4dfbea7c0ce54d18781230b9625c44fc83f495ef4a468beb2a33e98897ef
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libseccomp/2.5.5-2/
 
-- https://sources.debian.net/src/libseccomp/2.5.5-2/ (for browsing the source)
-- https://sources.debian.net/src/libseccomp/2.5.5-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libseccomp/2.5.5-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libselinux=3.8.1-1`
 
@@ -2140,21 +2112,13 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mercurial=6.9.3-2
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.9.3-2.dsc' mercurial_6.9.3-2.dsc 2826 SHA256:5789ceeb57f6b34f9d4044e29250253cb9225715397d5a0acd3d59ebe8fdb5b8
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.9.3.orig.tar.gz' mercurial_6.9.3.orig.tar.gz 8670202 SHA256:dd1e7f9434fee1b059d10df6c2dd0d7218c941fbd137c1f16e09847409bc0105
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.9.3.orig.tar.gz.asc' mercurial_6.9.3.orig.tar.gz.asc 833 SHA256:5b259303dbc8cc68c177fb21b43d0f2049ecc4d47eb4ad0d96b82a75022a97c8
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.9.3-2.debian.tar.xz' mercurial_6.9.3-2.debian.tar.xz 55548 SHA256:6f426bcc83be1fc671fc33ac33ae6a169ec2a0ec0012817705222b4ec91e9366
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/mercurial/6.9.3-2/
 
-- https://sources.debian.net/src/mercurial/6.9.3-2/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/6.9.3-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/6.9.3-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ncurses=6.5+20250216-2`
 
@@ -2439,21 +2403,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.9p2-1
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.9p2-1.dsc' openssh_9.9p2-1.dsc 3465 SHA256:0111130a2fcfb11ef7d522135fbd762e86da8f06063f1fe7e642a64128f999b0
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.9p2.orig.tar.gz' openssh_9.9p2.orig.tar.gz 1944499 SHA256:91aadb603e08cc285eddf965e1199d02585fa94d994d6cae5b41e1721e215673
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.9p2.orig.tar.gz.asc' openssh_9.9p2.orig.tar.gz.asc 833 SHA256:17daea197718ef7907db917983547dbece321ac8beb1f2c215b45a93c485f5c2
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.9p2-1.debian.tar.xz' openssh_9.9p2-1.debian.tar.xz 195692 SHA256:cf84d45cbd4517fa38a1fd9c5ceac2db0280d41d8850fd65841a5421d415570c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:9.9p2-1/
 
-- https://sources.debian.net/src/openssh/1:9.9p2-1/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:9.9p2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:9.9p2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.4.1-1`
 

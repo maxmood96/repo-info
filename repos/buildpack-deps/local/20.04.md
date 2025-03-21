@@ -2682,15 +2682,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxslt=1.1.34-4ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.34-4ubuntu0.20.04.1.dsc' libxslt_1.1.34-4ubuntu0.20.04.1.dsc 2514 SHA512:ebd0f5b195405ebee6a1011ddeba7b22f3e22c376afe57036910c7a3c23a728967620ee757a3af703f00dd04b4b8709a066115b12f6a7cb905746b43ae089339
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.34.orig.tar.gz' libxslt_1.1.34.orig.tar.gz 3552258 SHA512:1516a11ad608b04740674060d2c5d733b88889de5e413b9a4e8bf8d1a90d712149df6d2b1345b615f529d7c7d3fa6dae12e544da828b39c7d415e54c0ee0776b
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.34.orig.tar.gz.asc' libxslt_1.1.34.orig.tar.gz.asc 488 SHA512:9b155d4571daede99cdbf2813a85fb04812737b5e23d3f7c9840225b38f3dbf171623a21645daaee190e7ff9ba38bde932922e96a2a2312c203ffa9917c3baea
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.34-4ubuntu0.20.04.1.debian.tar.xz' libxslt_1.1.34-4ubuntu0.20.04.1.debian.tar.xz 23260 SHA512:addb79137cbdee10ebf15efecddee266e52a8043399cd166882061923038f6ee4ebb55aaa4152432b6d21a4b2ac514eed81cded4593d09754514ab7056b1326d
-```
 
 ### `dpkg` source package: `libxt=1:1.1.5-1`
 

@@ -2944,14 +2944,9 @@ Binary Packages:
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libxslt=1.1.39-0exp1ubuntu2
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39-0exp1ubuntu2.dsc' libxslt_1.1.39-0exp1ubuntu2.dsc 2275 SHA512:8b73748d477f876f32ed31ea8a401cc2b554cb770ed3f20b2f74e6109c13bac4085209cd55d3a8aa0b21f325cd139af7f07a00b0914fb5ef70068f37a5912eda
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39.orig.tar.xz' libxslt_1.1.39.orig.tar.xz 1578216 SHA512:c0c99dc63f8b2acb6cc3ad7ad684ffa2a427ee8d1740495cbf8a7c9b9c8679f96351b4b676c73ccc191014db4cb4ab42b9a0070f6295565f39dbc665c5c16f89
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39-0exp1ubuntu2.debian.tar.xz' libxslt_1.1.39-0exp1ubuntu2.debian.tar.xz 21976 SHA512:a76a516c8a77e353fe17691890f40959ab11ccdfca2429ea8939aa6c08b825ce099496f8fa6ee189429794d2f75b54f990d4490103f353bd6f7eaae3cd23f959
-```
 
 ### `dpkg` source package: `libxt=1:1.2.1-1.2build1`
 
@@ -3461,14 +3456,9 @@ Licenses: (parsed from: `/usr/share/doc/libldap-common/copyright`, `/usr/share/d
 - `UMich`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openldap=2.6.9+dfsg-1~exp2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.9%2bdfsg-1%7eexp2ubuntu1.dsc' openldap_2.6.9+dfsg-1~exp2ubuntu1.dsc 3342 SHA512:ed622ca107393458d44c4edceee660f4c1b2624a7492fa2cb215ea47024fec31e15a6c18223ba9f32d6a49b021a7e8086d26468243677d3344a31f2ed33418aa
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.9%2bdfsg.orig.tar.xz' openldap_2.6.9+dfsg.orig.tar.xz 3753260 SHA512:0789b8ad8b2ede51741e18e3f090a258edc7abeda90cfadae98b9a22126be901f3640d4121411836608918418108dfb71ae0957dbd251d9c3ce6bd1b854dd799
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.9%2bdfsg-1%7eexp2ubuntu1.debian.tar.xz' openldap_2.6.9+dfsg-1~exp2ubuntu1.debian.tar.xz 184000 SHA512:d41adc7b1e7758bdbf7cb2632aea24f84766719d88b811fff02b758a3fbc156e10effa4b0b63093aff6836ee6d5cfa4ae89c0b650de009d83c3f9228f11bbc0b
-```
 
 ### `dpkg` source package: `openssh=1:9.9p1-3ubuntu2`
 
@@ -4160,14 +4150,13 @@ Licenses: (parsed from: `/usr/share/doc/libsysprof-capture-4-dev/copyright`)
 - `LGPL-3.0+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris sysprof=48~beta-2
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysprof/sysprof_48%7ebeta-2.dsc' sysprof_48~beta-2.dsc 3106 SHA512:a934d0d2562a822192421a6dcf47f2ff51ebfedda47cb468729e8d635610f8813d1c14fa230d5891bb3861ae0e1a36a4bd9f2ef43d663f0e00a05dd434602c2e
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysprof/sysprof_48%7ebeta.orig.tar.xz' sysprof_48~beta.orig.tar.xz 1215220 SHA512:220f836590d74225e50b66a9bdd847ab049895aab8afb9caf963ced3ebf8527148e55cf9a68f1ada1b2596181ffd158fd94507870b2c0bf9ce400b6565e277fa
-'http://archive.ubuntu.com/ubuntu/pool/main/s/sysprof/sysprof_48%7ebeta-2.debian.tar.xz' sysprof_48~beta-2.debian.tar.xz 17476 SHA512:00a1f565a346eee278c178c0c8334b940d5289d8a8ee540e8f87495b87f91909ec9d27ecaec1fe16ab71d680cce1756033f49fa6f89af96a3942a3f3fec0a3ee
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/sysprof/48~beta-2/
+
 
 ### `dpkg` source package: `systemd=256.5-2ubuntu4`
 
