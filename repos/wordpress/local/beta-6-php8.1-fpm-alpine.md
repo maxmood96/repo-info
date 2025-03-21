@@ -1,10 +1,10 @@
-# `wordpress:beta-6.8-beta2-php8.1-fpm-alpine`
+# `wordpress:beta-6.8-beta3-php8.1-fpm-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:53f8e1df525c7e0ce3582a0cf723a2bb0cdfa4f905c82151f5e9a34efbe27657`
-- Created: `2025-03-11T19:03:12Z`
-- Virtual Size: ~ 266.14 Mb  
+- Image ID: `sha256:9c7212d7c2eb4f582f0be55fb09471e75eb707fa191ac553622821d4e344a10f`
+- Created: `2025-03-18T19:03:13Z`
+- Virtual Size: ~ 266.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -741,16 +741,16 @@ BSD-2-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.4-r0 description:
+libexpat-2.7.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.4-r0 webpage:
+libexpat-2.7.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.4-r0 installed size:
+libexpat-2.7.0-r0 installed size:
 129 KiB
 
-libexpat-2.6.4-r0 license:
+libexpat-2.7.0-r0 license:
 MIT
 
 ```
@@ -911,16 +911,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.44-r0 description:
+libpng-1.6.47-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.44-r0 webpage:
+libpng-1.6.47-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.44-r0 installed size:
+libpng-1.6.47-r0 installed size:
 181 KiB
 
-libpng-1.6.44-r0 license:
+libpng-1.6.47-r0 license:
 Libpng
 
 ```
