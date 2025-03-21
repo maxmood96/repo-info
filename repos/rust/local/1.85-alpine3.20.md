@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:f1d6cb3608c8401fa6fa5769b00669ed6b1e5fd3d224552bdb0c1df00a1b8a9a`
-- Created: `2025-03-05T18:46:45Z`
-- Virtual Size: ~ 856.00 Mb  
+- Image ID: `sha256:e5a43ceeba7a70b0b691a78b50230c29396c4533e7587114db5b93bc8d39e39d`
+- Created: `2025-03-18T20:40:17Z`
+- Virtual Size: ~ 855.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/sh"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.85.0`
+  - `RUST_VERSION=1.85.1`
 - Labels:
   - `org.opencontainers.image.source=https://github.com/rust-lang/docker-rust`
 
@@ -89,16 +89,16 @@ GPL-2.0-only
 ### `apk` package: `binutils`
 
 ```console
-binutils-2.42-r0 description:
+binutils-2.42-r1 description:
 Tools necessary to build programs
 
-binutils-2.42-r0 webpage:
+binutils-2.42-r1 webpage:
 https://www.gnu.org/software/binutils/
 
-binutils-2.42-r0 installed size:
-9612 KiB
+binutils-2.42-r1 installed size:
+9608 KiB
 
-binutils-2.42-r0 license:
+binutils-2.42-r1 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
 
 ```

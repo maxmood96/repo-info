@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:ca3d982adcf1342dfbf2863302a6613435c9b0bb480d51674cf747ce37434b29`
-- Created: `2025-03-05T18:46:45Z`
+- Image ID: `sha256:defeb9e0903d3757d4a92f5d77de1ecca8a17fd7097428f259f08ce5d6691a3e`
+- Created: `2025-03-18T20:40:17Z`
 - Virtual Size: ~ 1.37 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `RUSTUP_HOME=/usr/local/rustup`
   - `CARGO_HOME=/usr/local/cargo`
-  - `RUST_VERSION=1.85.0`
+  - `RUST_VERSION=1.85.1`
 - Labels:
   - `org.opencontainers.image.source=https://github.com/rust-lang/docker-rust`
 
@@ -4868,20 +4868,13 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.9-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris python3.9=3.9.2-1+deb11u2
-'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2-1%2bdeb11u2.dsc' python3.9_3.9.2-1+deb11u2.dsc 3500 SHA256:23ea92123f616a54ef5cafe0e7899cb3eac6f58af1858ea11fc52e7f7a8dc380
-'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2.orig.tar.xz' python3.9_3.9.2.orig.tar.xz 18889164 SHA256:3c2034c54f811448f516668dce09d24008a0716c3a794dd8639b5388cbde247d
-'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2-1%2bdeb11u2.debian.tar.xz' python3.9_3.9.2-1+deb11u2.debian.tar.xz 266268 SHA256:9fe6bded4dd0200c4e15d386354e8486f31f19d5356458cb05d8899e4226f96a
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/python3.9/3.9.2-1+deb11u2/
 
-- https://sources.debian.net/src/python3.9/3.9.2-1+deb11u2/ (for browsing the source)
-- https://sources.debian.net/src/python3.9/3.9.2-1+deb11u2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/python3.9/3.9.2-1+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.1-1`
 
