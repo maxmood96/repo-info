@@ -1,10 +1,10 @@
-# `backdrop:1.30.1`
+# `backdrop:1.30.2`
 
 ## Docker Metadata
 
-- Image ID: `sha256:5b805de18b6368c8db6021d37afdd5883c3361a0a2a8595b269f686571e086de`
-- Created: `2025-03-07T19:02:00Z`
-- Virtual Size: ~ 553.94 Mb  
+- Image ID: `sha256:bfe1cf5825939b0747a9c3aac3755ff3fd4b8b2869b179fab57d89491ecde8f6`
+- Created: `2025-03-21T15:18:44Z`
+- Virtual Size: ~ 553.95 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -23,8 +23,8 @@
   - `PHP_URL=https://www.php.net/distributions/php-8.3.19.tar.xz`
   - `PHP_ASC_URL=https://www.php.net/distributions/php-8.3.19.tar.xz.asc`
   - `PHP_SHA256=976e4077dd25bec96b5dfe8938052d243bbd838f95368a204896eff12756545f`
-  - `BACKDROP_VERSION=1.30.1`
-  - `BACKDROP_MD5=8117080cf35711087376410f85a65646`
+  - `BACKDROP_VERSION=1.30.2`
+  - `BACKDROP_MD5=9b85d7f71531b7eaf3e476e6666d0c0f`
 
 ## `dpkg` (`.deb`-based packages)
 
