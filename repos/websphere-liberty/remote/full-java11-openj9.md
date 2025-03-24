@@ -1,7 +1,7 @@
 ## `websphere-liberty:full-java11-openj9`
 
 ```console
-$ docker pull websphere-liberty@sha256:69c97e6bfa376d0be09ebc7998524e8f8edc4afc53c380460a73bf9ae7a76fb3
+$ docker pull websphere-liberty@sha256:cbc9f4c159a8a99038193a8c77e436d2c7fe5058f70990cf1a4083d8d7616b3d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -18,13 +18,13 @@ $ docker pull websphere-liberty@sha256:69c97e6bfa376d0be09ebc7998524e8f8edc4afc5
 ### `websphere-liberty:full-java11-openj9` - linux; amd64
 
 ```console
-$ docker pull websphere-liberty@sha256:b766104877b2c122570f6bf1c1bad37aba9c307d4321ccaf83f59de6c5ee0260
+$ docker pull websphere-liberty@sha256:9742884b7a075bca95db09cc45993aaa82dff75502b334c688d4120b3d3a0795
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **493.9 MB (493865556 bytes)**  
+-	Total Size: **493.5 MB (493456930 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:36757425b803ca44083ac4a1bbe722ff0b33f9f332042dd712a0fb7d1fc013ca`
+-	Image ID: `sha256:e185e185935c3f2cb104e809dfb50d524c6e35393b45725c5c0626feeccff533`
 -	Entrypoint: `["\/opt\/ibm\/helpers\/runtime\/docker-server.sh"]`
 -	Default Command: `["\/opt\/ibm\/wlp\/bin\/server","run","defaultServer"]`
 
@@ -41,20 +41,20 @@ LABEL org.opencontainers.image.version=22.04
 ADD file:1b6c8c9518be42fa2afe5e241ca31677fce58d27cdfa88baa91a65a259be3637 in / 
 # Sun, 26 Jan 2025 05:31:11 GMT
 CMD ["/bin/bash"]
-# Thu, 13 Feb 2025 04:44:33 GMT
+# Wed, 26 Feb 2025 14:51:59 GMT
 ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en LC_ALL=en_US.UTF-8
-# Thu, 13 Feb 2025 04:44:33 GMT
+# Wed, 26 Feb 2025 14:51:59 GMT
 RUN apt-get update     && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends tzdata curl ca-certificates fontconfig locales     && echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen     && locale-gen en_US.UTF-8     && rm -rf /var/lib/apt/lists/* # buildkit
-# Thu, 13 Feb 2025 04:44:33 GMT
+# Wed, 26 Feb 2025 14:51:59 GMT
 ENV JAVA_VERSION=jdk-11.0.26+4_openj9-0.49.0
-# Thu, 13 Feb 2025 04:44:33 GMT
+# Wed, 26 Feb 2025 14:51:59 GMT
 RUN set -eux;     ARCH="$(dpkg --print-architecture)";     case "${ARCH}" in        aarch64|arm64)          ESUM='2425d0daa7c0ef6603910c1c51ed7f3d8dbeb4dff8e1542957771ac5045fc21e';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.26%2B4_openj9-0.49.0/ibm-semeru-open-jre_aarch64_linux_11.0.26_4_openj9-0.49.0.tar.gz';          ;;        ppc64el|ppc64le)          ESUM='d013d38e03a3455c6867b10544dc30041bf7afdb595d60ee09af43d46cdb5720';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.26%2B4_openj9-0.49.0/ibm-semeru-open-jre_ppc64le_linux_11.0.26_4_openj9-0.49.0.tar.gz';          ;;        amd64|x86_64)          ESUM='08586859b8a53aa9d5424a38838e8332664622049c3c33b1b0e5ea88b56ce2d9';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.26%2B4_openj9-0.49.0/ibm-semeru-open-jre_x64_linux_11.0.26_4_openj9-0.49.0.tar.gz';          ;;        s390x)          ESUM='84232088178d3886d2c6dff2621f60406390bc12c36752a3305799a87cefc255';          BINARY_URL='https://github.com/ibmruntimes/semeru11-binaries/releases/download/jdk-11.0.26%2B4_openj9-0.49.0/ibm-semeru-open-jre_s390x_linux_11.0.26_4_openj9-0.49.0.tar.gz';          ;;        *)          echo "Unsupported arch: ${ARCH}";          exit 1;          ;;     esac;     curl -LfsSo /tmp/openjdk.tar.gz ${BINARY_URL};     echo "${ESUM} */tmp/openjdk.tar.gz" | sha256sum -c -;     mkdir -p /opt/java/openjdk;     cd /opt/java/openjdk;     tar -xf /tmp/openjdk.tar.gz --strip-components=1;     rm -rf /tmp/openjdk.tar.gz; # buildkit
-# Thu, 13 Feb 2025 04:44:33 GMT
+# Wed, 26 Feb 2025 14:51:59 GMT
 ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-# Thu, 13 Feb 2025 04:44:33 GMT
+# Wed, 26 Feb 2025 14:51:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
-# Thu, 13 Feb 2025 04:44:33 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+# Wed, 26 Feb 2025 14:51:59 GMT
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Wed, 26 Feb 2025 14:51:59 GMT
 USER root
 # Wed, 26 Feb 2025 14:51:59 GMT
@@ -129,85 +129,85 @@ RUN if [ "$OPENJ9_SCC" = "true" ]; then populate_scc.sh; fi     && rm -rf /outpu
 		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
 		Size: 29.5 MB (29535941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d8fe78a48594207c724aeebd93e730a028ac9bb7c5081f11db61658501f5d837`  
-		Last Modified: Fri, 14 Feb 2025 22:32:46 GMT  
-		Size: 12.2 MB (12166740 bytes)  
+	-	`sha256:2b4c9c0b51361b1eda41c01395310e238baf9800b1345686d550a69c94746465`  
+		Last Modified: Mon, 24 Mar 2025 16:59:40 GMT  
+		Size: 12.2 MB (12166941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:56cc72f4e039c157dd0919df1c1332382c66a0960b0f6abd6c1c7779c2d8e921`  
-		Last Modified: Fri, 14 Feb 2025 22:32:47 GMT  
-		Size: 52.4 MB (52386286 bytes)  
+	-	`sha256:a17a8db65dfbbe61341fd826f92bd8ee0208baac02a83c286274303557793d57`  
+		Last Modified: Mon, 24 Mar 2025 16:59:40 GMT  
+		Size: 52.4 MB (52386330 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2adc6beed491b4fc70ed1b490cfce4bb1a0a9de70e9490094d6e8df8ef066f31`  
-		Last Modified: Fri, 14 Feb 2025 22:32:46 GMT  
-		Size: 4.4 MB (4447478 bytes)  
+	-	`sha256:0a00f4e34f78e05f58ddce14e909ffc0d07b907df8f811e608b8d3a0fbdf3f2e`  
+		Last Modified: Mon, 24 Mar 2025 16:59:40 GMT  
+		Size: 4.4 MB (4445687 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:28cb0b69f357d1de763a5a1b8e2b4171e68f9cd5582752b9a8cabd31cc6e3e17`  
-		Last Modified: Wed, 26 Feb 2025 20:27:56 GMT  
-		Size: 31.7 KB (31749 bytes)  
+	-	`sha256:e5f93ff4d3ff5bcc3ec3d8a5366fad5b4e46fac3f40a9002fddbd902c9635547`  
+		Last Modified: Mon, 24 Mar 2025 17:03:05 GMT  
+		Size: 31.7 KB (31748 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:14674deb732cebe57026d56b4355f4e4c80a4b2ea8a274a8173969347fa1f9f6`  
-		Last Modified: Wed, 26 Feb 2025 20:27:57 GMT  
-		Size: 17.9 MB (17908925 bytes)  
+	-	`sha256:47e04c378d45c09d045a004209609428c50dde70228306130fb68ac73d379198`  
+		Last Modified: Mon, 24 Mar 2025 17:03:06 GMT  
+		Size: 17.5 MB (17506701 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5608df47a172fdb90fb4b4cab65f2be0f01ac9fd25bbfd64812a1606ece69bea`  
-		Last Modified: Wed, 26 Feb 2025 20:27:56 GMT  
-		Size: 482.0 B  
+	-	`sha256:79da5f5126622e721b736294a10613e7235c8522847bf0de96619b5abfc1706a`  
+		Last Modified: Mon, 24 Mar 2025 17:03:06 GMT  
+		Size: 484.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fb573f7a46c83db417a25d0de9d27421d03fe338eb91bff05b2bcb33d7b20362`  
-		Last Modified: Wed, 26 Feb 2025 20:27:56 GMT  
-		Size: 1.5 KB (1515 bytes)  
+	-	`sha256:f81a29a1e0b30fb7cfe2da961040a1981da8c7db03556147d09d51ddb5030312`  
+		Last Modified: Mon, 24 Mar 2025 17:03:06 GMT  
+		Size: 1.5 KB (1516 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:67b613fbe64d4d04297df54e316ec448ae6d28494502982e3d86b1ddb106671d`  
-		Last Modified: Wed, 26 Feb 2025 20:27:57 GMT  
-		Size: 11.9 KB (11943 bytes)  
+	-	`sha256:bd273e9960552840f4d8299bb1e2274e2b4452aa47e3cdc52cb628413e7cadd2`  
+		Last Modified: Mon, 24 Mar 2025 17:03:06 GMT  
+		Size: 11.9 KB (11946 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:102b2d628f125ccf11e7c230d89e27a03ec63ee3b4389d74667b6275ceb08dd0`  
-		Last Modified: Wed, 26 Feb 2025 20:27:57 GMT  
-		Size: 241.0 B  
+	-	`sha256:86a1f02d25fb761745dafa761f510492b6754f97f4bb93a9c0aa9b98e95d4a37`  
+		Last Modified: Mon, 24 Mar 2025 17:03:07 GMT  
+		Size: 243.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7fb496697526a7761d8c4dd81b7c4d7622cd553b3ea6d5a1a989715c7aa9e1d2`  
-		Last Modified: Wed, 26 Feb 2025 20:27:57 GMT  
+	-	`sha256:68aad552f5702de9d5e68ba91e0423d6e14e908ceeb97eced180554258643597`  
+		Last Modified: Mon, 24 Mar 2025 17:03:07 GMT  
 		Size: 12.8 KB (12751 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ad10ef70d837b3a46824d36be2018061995dd17591ab480381492a8720dc49cb`  
-		Last Modified: Wed, 26 Feb 2025 20:27:58 GMT  
-		Size: 2.8 MB (2819180 bytes)  
+	-	`sha256:a4b5a037ee1c6b8ad8d7a6acf6dcb0893701bb45f603eed76c4b801cbc912968`  
+		Last Modified: Mon, 24 Mar 2025 17:03:08 GMT  
+		Size: 2.8 MB (2810110 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:382869c1761ba3e70d626a264d92c292f7615e0a8214555e7a4cd450064b6487`  
-		Last Modified: Wed, 26 Feb 2025 22:40:53 GMT  
-		Size: 358.5 MB (358533489 bytes)  
+	-	`sha256:c7fecde6fbc04b45558332126593f3ae690ac54e10c1c674f02ea83b7c65c340`  
+		Last Modified: Mon, 24 Mar 2025 17:18:08 GMT  
+		Size: 358.5 MB (358534107 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c22abd189f12436ac49646eb24429f30520c567574d2f15ad3e79a68259eb76a`  
-		Last Modified: Wed, 26 Feb 2025 22:40:47 GMT  
-		Size: 944.0 B  
+	-	`sha256:292e515c8d7de65c1aab2f5ce89ed62608dab61463f26dd9f16b7dea24899233`  
+		Last Modified: Mon, 24 Mar 2025 17:18:02 GMT  
+		Size: 943.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:86e30aa34e116fd2535630dc0dd524b8da2e35a36654bf519cb4a73d7e506021`  
-		Last Modified: Wed, 26 Feb 2025 22:40:47 GMT  
-		Size: 16.0 MB (16007892 bytes)  
+	-	`sha256:374e0d1f3c1b8035e531b192ec77e87cb92f5ff4aa628353a55b9d527c38e336`  
+		Last Modified: Mon, 24 Mar 2025 17:18:03 GMT  
+		Size: 16.0 MB (16011482 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `websphere-liberty:full-java11-openj9` - unknown; unknown
 
 ```console
-$ docker pull websphere-liberty@sha256:cc16a0b5e7085e081ccc3ca1dda94c3a6cc61b82763bf86dc566f33efa972040
+$ docker pull websphere-liberty@sha256:e6d4a1f5d8ac300af491131a9d7962724efef3b2d7e5cbd0977c86be95e282a2
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.8 MB (5769878 bytes)**  
+-	Total Size: **5.8 MB (5769877 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0562d248000866fa57917500b3f74c6f2af77615748951e1bbe36a525f61f261`
+-	Image ID: `sha256:28a660a3157ec47f70d1836f81529552a1d81c64da83d07aa06d2572a7e384ad`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:5bdf3cf0ba0b1b8c3efe542dd9bc6794fd8f6dc79dd14b0091a43bce0d484042`  
-		Last Modified: Wed, 26 Feb 2025 22:40:47 GMT  
+	-	`sha256:607211d6e1dc6426d92c64f00c8117c4356114e12bf4b296791dca7863eecb76`  
+		Last Modified: Mon, 24 Mar 2025 17:18:03 GMT  
 		Size: 5.8 MB (5750270 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2cd66478e1d37122bf233d4272a1e482f5364414d35d94b3426562fe7b155006`  
-		Last Modified: Wed, 26 Feb 2025 22:40:47 GMT  
-		Size: 19.6 KB (19608 bytes)  
+	-	`sha256:3cdd4343b8b6e9cd43c5d8db6a4a9db583a30e5990659adf95afbae57df8e05c`  
+		Last Modified: Mon, 24 Mar 2025 17:18:02 GMT  
+		Size: 19.6 KB (19607 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `websphere-liberty:full-java11-openj9` - linux; arm64 variant v8
