@@ -1,10 +1,10 @@
-# `odoo:18.0-20250311`
+# `odoo:18.0-20250320`
 
 ## Docker Metadata
 
-- Image ID: `sha256:8e79d2a867f20bc41f5170371a99a68a04c888dae266316051731b79b5d32293`
-- Created: `2025-03-11T10:28:40Z`
-- Virtual Size: ~ 1.99 Gb  
+- Image ID: `sha256:852d128f4309cbfffa8b7355b2f6b827bde6b38257f5378305458723f207d1f1`
+- Created: `2025-03-20T11:33:43Z`
+- Virtual Size: ~ 2.00 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -1568,19 +1568,24 @@ $ apt-get source -qq --print-uris jbigkit=2.1-6.1ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/j/jbigkit/jbigkit_2.1-6.1ubuntu2.debian.tar.xz' jbigkit_2.1-6.1ubuntu2.debian.tar.xz 11172 SHA512:1ecf331f4e530f5f3105c57c2d7b366591f113220745f143b9335f3e383bf04dd963d61aecc4c8eb16ef4ecc74a2f5e2743779d95dcd8626dc6eaea8b2824c18
 ```
 
-### `dpkg` source package: `jinja2=3.1.2-1ubuntu1.2`
+### `dpkg` source package: `jinja2=3.1.2-1ubuntu1.3`
 
 Binary Packages:
 
-- `python3-jinja2=3.1.2-1ubuntu1.2`
+- `python3-jinja2=3.1.2-1ubuntu1.3`
 
 Licenses: (parsed from: `/usr/share/doc/python3-jinja2/copyright`)
 
 - `GPL`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris jinja2=3.1.2-1ubuntu1.3
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jinja2/jinja2_3.1.2-1ubuntu1.3.dsc' jinja2_3.1.2-1ubuntu1.3.dsc 2341 SHA512:726f998ce22f2338afd55635086f68b331ee074585b504fccfcc571576f3c7bb8bd4b7489939f37a32402c7db716d09734c38996e40a7f9d5276568d5a32cb5d
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jinja2/jinja2_3.1.2.orig.tar.gz' jinja2_3.1.2.orig.tar.gz 268239 SHA512:5dfe122c1beef5305b34d25f22f96607bd3a6cba098b03091850ea36fefe62b645a7218d7584b35bea252393ac922c9bb3654a9e90f23bcfb273e811fcf2f2c1
+'http://archive.ubuntu.com/ubuntu/pool/main/j/jinja2/jinja2_3.1.2-1ubuntu1.3.debian.tar.xz' jinja2_3.1.2-1ubuntu1.3.debian.tar.xz 15844 SHA512:23a12c0118cdab29c1940b2dd159e2c2517c47e136f46e91791ca0a082c6f5a86d41581492b8728e9191df70e7abea7aefeac69b1156df9c6ce3fa6ea4c9ab2a
+```
 
 ### `dpkg` source package: `keyutils=1.6.3-3build1`
 
@@ -2580,11 +2585,11 @@ $ apt-get source -qq --print-uris libxrender=1:0.9.10-1.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxrender/libxrender_0.9.10-1.1build1.diff.gz' libxrender_0.9.10-1.1build1.diff.gz 15274 SHA512:dca2b6bf90a6ce1ec30376a001f6f24f2d95e917c3a4890242022bf5eefa20c9c1e775c66c229cbb7ee47482650b9a0a750e7bf1890aec89d3bec6b692f4174a
 ```
 
-### `dpkg` source package: `libxslt=1.1.39-0exp1build1`
+### `dpkg` source package: `libxslt=1.1.39-0exp1ubuntu0.24.04.2`
 
 Binary Packages:
 
-- `libxslt1.1:amd64=1.1.39-0exp1build1`
+- `libxslt1.1:amd64=1.1.39-0exp1ubuntu0.24.04.2`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2593,10 +2598,10 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxslt=1.1.39-0exp1build1
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39-0exp1build1.dsc' libxslt_1.1.39-0exp1build1.dsc 2308 SHA512:8cd46cc14e400add2bf849e978adf89b8a2b93c5358b5a42bb15d7b5a80e0feed9759213b4e07ecc70b4af1b74c21569b7f0012ad81d2873825fa9f6eef1c71d
+$ apt-get source -qq --print-uris libxslt=1.1.39-0exp1ubuntu0.24.04.2
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39-0exp1ubuntu0.24.04.2.dsc' libxslt_1.1.39-0exp1ubuntu0.24.04.2.dsc 2307 SHA512:bf099df8a7c64ea8b60c0d09342aba717b68167fab27327b4b2cac15d16fc8cefca8920d96825e38b5391f8ee65c40f0230049ef58adceb17683275eff51b3c1
 'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39.orig.tar.xz' libxslt_1.1.39.orig.tar.xz 1578216 SHA512:c0c99dc63f8b2acb6cc3ad7ad684ffa2a427ee8d1740495cbf8a7c9b9c8679f96351b4b676c73ccc191014db4cb4ab42b9a0070f6295565f39dbc665c5c16f89
-'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39-0exp1build1.debian.tar.xz' libxslt_1.1.39-0exp1build1.debian.tar.xz 21492 SHA512:81367c03f7deca1628683107393b50cbae1cef4a53b3dbf8c825d01b99e0fa03696e7880f431b7c243ce41e4c3714d3b4c3dc3a02fb58b845af64a1d055b2576
+'http://archive.ubuntu.com/ubuntu/pool/main/libx/libxslt/libxslt_1.1.39-0exp1ubuntu0.24.04.2.debian.tar.xz' libxslt_1.1.39-0exp1ubuntu0.24.04.2.debian.tar.xz 23028 SHA512:7aeb7c8ff58ce30c820e378aa677ea2fe92c5b235e75b420c3b96615115102760ea0c37676f629d39b64bd79367c5749505c1b661260ed1a7ff4be04a11ce8d5
 ```
 
 ### `dpkg` source package: `libyaml=0.2.5-1build1`
@@ -9996,11 +10001,11 @@ $ apt-get source -qq --print-uris npth=1.6-3.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3.1build1.debian.tar.xz' npth_1.6-3.1build1.debian.tar.xz 11036 SHA512:caf36d8727c335bbcf996421e65cf044d6468d95d70e9b671b57196341e49e67f687d6c80cab78d6c0388a90f795e4ed0ff28aaa0d4e7dd6f4701abdfc77a09a
 ```
 
-### `dpkg` source package: `odoo=18.0.20250311`
+### `dpkg` source package: `odoo=18.0.20250320`
 
 Binary Packages:
 
-- `odoo=18.0.20250311`
+- `odoo=18.0.20250320`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
