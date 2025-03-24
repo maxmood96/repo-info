@@ -15840,7 +15840,7 @@ $ docker pull maven@sha256:c229a5181d0bc16d4de6b554d64f9a91c162095f373ab77c5d939
 ## `maven:3-ibm-semeru-11-focal`
 
 ```console
-$ docker pull maven@sha256:e7c64aed3a241b72b8dcf02b8964a715e7bbb416200e234be247e7f00067c3f8
+$ docker pull maven@sha256:305cb8b4b9ae66ed302d8f751e11826beacaaa546add65edf398d0e39360ccbd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -15993,13 +15993,13 @@ $ docker pull maven@sha256:8f0ea724de921c065c3611cecac9410a2272496656bf8d09b7531
 ### `maven:3-ibm-semeru-11-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:a9a221531da08f110162cb1502a7fb8880d692d27aa4871ca920bd07d37663e3
+$ docker pull maven@sha256:ac9c8e71f573d014d0c611f2558f116d180e89472e2e6f3b486388de9b491a4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.1 MB (293113345 bytes)**  
+-	Total Size: **293.2 MB (293152008 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dbdba2374b869533281207a7cc62ca134a4b96ef10c6f0511f3fb4c3bc952c0c`
+-	Image ID: `sha256:dca0d50e55ee84e7b07266889430a43472b9bf510bcd42fdf43c53d13cea56c4`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -16029,7 +16029,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 CMD ["jshell"]
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -16069,60 +16069,60 @@ CMD ["mvn"]
 		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a34608f1b65b18d00a12907c088ede389ecc55d034a8559a11fbbdb60cd4afa9`  
-		Last Modified: Sat, 15 Feb 2025 07:24:58 GMT  
-		Size: 15.9 MB (15937925 bytes)  
+	-	`sha256:106eaed27a13a2bcd67ca45fe8b16e8b489640ce2e78661c8b9cd4d9de726677`  
+		Last Modified: Mon, 24 Mar 2025 16:59:29 GMT  
+		Size: 15.9 MB (15938279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:768e8813126d284a5e9f3e5a42003361704b4324902ef656d0f395fe3b37757f`  
-		Last Modified: Sat, 15 Feb 2025 07:32:04 GMT  
-		Size: 207.0 MB (206969689 bytes)  
+	-	`sha256:b86760a64a930ca9c420836917f2164c1d09768041a28b24a8d1de0678b04112`  
+		Last Modified: Mon, 24 Mar 2025 17:07:01 GMT  
+		Size: 207.0 MB (206969721 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77f0ccd7bc0362b5405e2159a172bfc796bcd193110cc8e81da6cad7c7384633`  
-		Last Modified: Sat, 15 Feb 2025 07:31:57 GMT  
-		Size: 5.2 MB (5169671 bytes)  
+	-	`sha256:7f142ce0ffb95a4aa40a4e7daff0139e957885e634c3470a638452e158a06a57`  
+		Last Modified: Mon, 24 Mar 2025 17:06:56 GMT  
+		Size: 5.2 MB (5197928 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b332c5ec30c5552967ddb158ccc8ff4321558be9fa2f11aa10375310cc516656`  
-		Last Modified: Sat, 15 Feb 2025 11:50:36 GMT  
-		Size: 29.9 MB (29890756 bytes)  
+	-	`sha256:08bab46255dc6f6396c66abf1da4846a3163e4457bbe8b2080915547a25f8fcb`  
+		Last Modified: Mon, 24 Mar 2025 18:34:55 GMT  
+		Size: 29.9 MB (29900779 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdd3ceac3969b981a03257049c9c31e832d834cd7d70b97458bdce15f4dc4ea5`  
-		Last Modified: Sat, 15 Feb 2025 11:50:36 GMT  
-		Size: 9.2 MB (9170436 bytes)  
+	-	`sha256:9cceeca8d4577d1c50deedff9132a3dd87dc48a07c11bd393c1b44ebf9445e32`  
+		Last Modified: Mon, 24 Mar 2025 18:34:54 GMT  
+		Size: 9.2 MB (9170434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ceaf415319da5b8a460a88f1d6c06444956d36eba7115e349f78dc23690d1d3`  
-		Last Modified: Sat, 15 Feb 2025 11:50:35 GMT  
+	-	`sha256:c85286ef38b6963ea3e402a747f30e2fb647e80b632392f00f43589e501d9a2a`  
+		Last Modified: Mon, 24 Mar 2025 18:34:54 GMT  
 		Size: 853.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7318a07a8d5fa36629d4a9b98e2cb5f8b35ef06f62b3073ec6b3effa6ea65ff0`  
-		Last Modified: Sat, 15 Feb 2025 11:50:35 GMT  
-		Size: 155.0 B  
+	-	`sha256:035dbef0dc68985b7f0b3275332c7109b4d074e4a87725546827aeadf73caad8`  
+		Last Modified: Mon, 24 Mar 2025 18:34:54 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-ibm-semeru-11-focal` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:f3b258614a79ac2043c0da5301701dc00cbd23a2c4e1f26035a76f70c7af0eb4
+$ docker pull maven@sha256:fe46366416680bff44f0607c5f6f3c8a1f655808838e76983d790f9d962eb2e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.2 MB (5165775 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94e3ac71749858bcdeeedea4e58dc5e3577d0d3cfdc2faf5af0bd40faaa2a4bd`
+-	Image ID: `sha256:8bde98089e1ce70b2570b6f51f37cef69ec708c8dff2a6013b735e2230bb6c53`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bd2755bb9a77becbea02657bb009eedd56d4c887a14a8588cd4f8e5b2893b3ce`  
-		Last Modified: Sat, 15 Feb 2025 11:50:35 GMT  
+	-	`sha256:62a8902e0f8720d1ce43cc903cf2c2dab906371906484aabe822836c8e7d0442`  
+		Last Modified: Mon, 24 Mar 2025 18:34:54 GMT  
 		Size: 5.1 MB (5146550 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0c711de7c272ac207a1ed93dd2e7d81771406c1f70054f08a885b5656f5f1017`  
-		Last Modified: Sat, 15 Feb 2025 11:50:34 GMT  
+	-	`sha256:3db15c8badc2cddb9782b9ea44dd8137ec572e244412c26896f91f846d6645e6`  
+		Last Modified: Mon, 24 Mar 2025 18:34:54 GMT  
 		Size: 19.2 KB (19225 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16265,13 +16265,13 @@ $ docker pull maven@sha256:bf237b282ab95b6c9f33c782170d1e27eecc11f20d9ac27d35d0c
 ### `maven:3-ibm-semeru-11-focal` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:b21284cb9e54add47f72875e45d3fdd21bc473dc82c5e3b0969e1245c9859a7a
+$ docker pull maven@sha256:be952b8e9a27a6909c465699b84059027e0e1ec1bc8dab8e07c2ffdc00d031bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.9 MB (296901654 bytes)**  
+-	Total Size: **296.9 MB (296886655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97ce4cd4b40a824de546e1cec6667952356858c84fe347a9e6f2800c26ce7ffb`
+-	Image ID: `sha256:c666c8945ab675dc5d7ca29cd80b82648ea5ad84533c8630feddd182f3121658`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -16301,7 +16301,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 CMD ["jshell"]
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -16341,67 +16341,67 @@ CMD ["mvn"]
 		Last Modified: Fri, 11 Oct 2024 04:41:53 GMT  
 		Size: 26.4 MB (26365979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93b26001b7ba5a9ded9e237306ee8b2177a38d0384c13ce0b2ba3aca7a939b86`  
-		Last Modified: Sat, 15 Feb 2025 08:00:00 GMT  
-		Size: 15.8 MB (15766032 bytes)  
+	-	`sha256:0eef949dbc8bb43f7b9422236b6260ebe65872eebd3f77b2c46f7b0b588c18fb`  
+		Last Modified: Mon, 24 Mar 2025 17:00:38 GMT  
+		Size: 15.8 MB (15766702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1303b8ee060911cb5dd46d808831070efd51ffccdf655b0f92b5acb2a5d8b53f`  
-		Last Modified: Sat, 15 Feb 2025 08:09:17 GMT  
-		Size: 210.6 MB (210590180 bytes)  
+	-	`sha256:f56413ad176235b8e153b0916f55f7b211a30daf3d21f34ad2312f6bdad5716b`  
+		Last Modified: Mon, 24 Mar 2025 17:08:47 GMT  
+		Size: 210.6 MB (210590225 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d53e7a5c6b85ab3b815365a22936814c06fd5e99527336c46f1098b086076eab`  
-		Last Modified: Sat, 15 Feb 2025 08:09:13 GMT  
-		Size: 5.5 MB (5535790 bytes)  
+	-	`sha256:a314cb595521b129cccf078a161675b38dedb058dafafe7d6c4f8e1068b20788`  
+		Last Modified: Mon, 24 Mar 2025 17:08:44 GMT  
+		Size: 5.5 MB (5505256 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9c61047454bbe205a0ada188c8c7bfe1c7a6e2193bf6787bfa0084153bbf785`  
-		Last Modified: Sat, 15 Feb 2025 12:25:41 GMT  
-		Size: 29.5 MB (29472202 bytes)  
+	-	`sha256:4b7b6e4345b66bf679d72a5699f8719086346d9140aa4ff1bcb97821fe8cfcd7`  
+		Last Modified: Mon, 24 Mar 2025 18:43:06 GMT  
+		Size: 29.5 MB (29487026 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50aec1be5d8e1809b5376fa257f7e94f754e4150f81f13a680bde24210cc8561`  
-		Last Modified: Sat, 15 Feb 2025 12:25:40 GMT  
-		Size: 9.2 MB (9170431 bytes)  
+	-	`sha256:7b3307ec931243c7b68ad73681ae5f4c8d1e342203cbe7705a842c4a7e4f12af`  
+		Last Modified: Mon, 24 Mar 2025 18:43:06 GMT  
+		Size: 9.2 MB (9170427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0df8d5d6d827f5c7633791d3566ecb3a930ff0f73603af67a6458dea84e78d5c`  
-		Last Modified: Sat, 15 Feb 2025 12:25:39 GMT  
-		Size: 852.0 B  
+	-	`sha256:7308c8aff00212e0f4b5f3bdf848fb32909b24943eeb0277fe0f493cc4993a27`  
+		Last Modified: Mon, 24 Mar 2025 18:43:05 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19aa5ae26f8118a691dd014961f86bc2b0c353947f819f6393980c141cd00e34`  
-		Last Modified: Sat, 15 Feb 2025 12:25:40 GMT  
-		Size: 156.0 B  
+	-	`sha256:0e2ec8761fc548d643eaab21008872a67cf86187fd1ad04c0e63bba3be431bda`  
+		Last Modified: Mon, 24 Mar 2025 18:43:05 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-ibm-semeru-11-focal` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:b712032bf656d76fb105dca57eb63b3f24e46912ad9307fa7a651d73a1ce8c67
+$ docker pull maven@sha256:5aac5620071618fe3094cfcc2955761df3dfe3913f4688139a83d75cd7f5d3f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.2 MB (5163384 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d06b0c29939df537ca42af7e6a2db73c7a0700ef8b65d3272f9b333fc3621bb`
+-	Image ID: `sha256:76d682b7c0ea71d5898985e96b9cc9657fb22885f566c54f7697c45ac265f31b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:580f4a0936b158fb396576d2a6703e6c408ce90c057901c07aaf643b42ee2158`  
-		Last Modified: Sat, 15 Feb 2025 12:25:39 GMT  
+	-	`sha256:1ef85b5269269196e2e866dcc13cf99dfecbbc75b4c93d08eed549922dbcd82a`  
+		Last Modified: Mon, 24 Mar 2025 18:43:06 GMT  
 		Size: 5.1 MB (5144292 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b716ba73341b2a46e2a8271870148ef0212993928d95113708eda95bd1b9f406`  
-		Last Modified: Sat, 15 Feb 2025 12:25:39 GMT  
+	-	`sha256:3a4a033a2cb77079126344917ab5254a768657b37346f73c87a32ed5aa9f1c0c`  
+		Last Modified: Mon, 24 Mar 2025 18:43:05 GMT  
 		Size: 19.1 KB (19092 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3-ibm-semeru-17-focal`
 
 ```console
-$ docker pull maven@sha256:480ce665156c361fe46b262226000f2289b3e0ebae099604411f7eb3fd3d7b70
+$ docker pull maven@sha256:8931581578c7aa19162acf1b2c22359aa8577b40cae2ae07f7f1abb32aec8ca6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16552,13 +16552,13 @@ $ docker pull maven@sha256:1756576ce8df2c7b540223b5b53feca700e68a70dd4f224eb2cf9
 ### `maven:3-ibm-semeru-17-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:6193783aa848c077e75d8ed9844d7d67304fea3764709a25bdfc2397dc4ddc19
+$ docker pull maven@sha256:40fc8a46fd16993d695ad3358fe25a4e2b34de4542bc655273af97349e2818e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **297.1 MB (297138170 bytes)**  
+-	Total Size: **297.1 MB (297117063 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbdb752bea9ac47b05139c08af898d3eeca8b1ae8c1761febcafe7d5556302e4`
+-	Image ID: `sha256:d98a6ad124b4d991f0427ef01c74e8c62dfedc767f5a2850badeb0a1920e79c3`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -16588,7 +16588,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -16626,60 +16626,60 @@ CMD ["mvn"]
 		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a34608f1b65b18d00a12907c088ede389ecc55d034a8559a11fbbdb60cd4afa9`  
-		Last Modified: Sat, 15 Feb 2025 07:24:58 GMT  
-		Size: 15.9 MB (15937925 bytes)  
+	-	`sha256:106eaed27a13a2bcd67ca45fe8b16e8b489640ce2e78661c8b9cd4d9de726677`  
+		Last Modified: Mon, 24 Mar 2025 16:59:29 GMT  
+		Size: 15.9 MB (15938279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b915ef4a327a5abba6389adf15dfa83aa2ab2ccc595ee692b4edc30dff6bb85f`  
-		Last Modified: Sat, 15 Feb 2025 07:38:35 GMT  
-		Size: 210.3 MB (210293500 bytes)  
+	-	`sha256:d0f3c055cf9dbac24955061e96cab8826f264fc4feebefcff82ad6b42a3305ce`  
+		Last Modified: Mon, 24 Mar 2025 17:13:30 GMT  
+		Size: 210.3 MB (210293461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b92d1e78ffdbc5c1efbf736b51c05a40c64c06d79e5654362415ad5014627f6`  
-		Last Modified: Sat, 15 Feb 2025 07:38:31 GMT  
-		Size: 5.9 MB (5870465 bytes)  
+	-	`sha256:e7de8b5e13775493e7f57d62d9b9464f3344701257617c18bb56bcbd054c8838`  
+		Last Modified: Mon, 24 Mar 2025 17:13:26 GMT  
+		Size: 5.8 MB (5839234 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbb895c0d0f233e09da57b6693bff9112775a502af1811dc9183b3517ca44bb`  
-		Last Modified: Sat, 15 Feb 2025 11:51:13 GMT  
-		Size: 29.9 MB (29890983 bytes)  
+	-	`sha256:1e7d18817c08603d30ecd4121a47bd53f1aa89373e63ac22ccb8201f7ed6dd46`  
+		Last Modified: Mon, 24 Mar 2025 18:35:28 GMT  
+		Size: 29.9 MB (29900791 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afc33c15939f32c2e4138e57241a4de673af757b6a99b6296ee09b445a7649ca`  
-		Last Modified: Sat, 15 Feb 2025 11:51:08 GMT  
-		Size: 9.2 MB (9170431 bytes)  
+	-	`sha256:43f2d526a283d9ae54e6ec7b04e75b860ce429bcb4a05f4cd486330de2841ac0`  
+		Last Modified: Mon, 24 Mar 2025 18:35:27 GMT  
+		Size: 9.2 MB (9170433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f70ed2e1084ece9af8ba4bbfabefc372c3a093d5c85f868011aa812b62b67111`  
-		Last Modified: Sat, 15 Feb 2025 11:51:08 GMT  
-		Size: 852.0 B  
+	-	`sha256:06b59b5010b3f9e2b4d5db6fb3fc543e8ffc755bd40e87d5aabdb5db3ae44acc`  
+		Last Modified: Mon, 24 Mar 2025 18:35:27 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ca9acc0176a2dce956d81c3f5b522d3d745eb3d77a6fa4b7710e4eb16804907`  
-		Last Modified: Sat, 15 Feb 2025 11:51:08 GMT  
-		Size: 154.0 B  
+	-	`sha256:6962151582830b648b7a7038f2dcb0a6a01588e851e5fe0f0f702aba0ba9c2e0`  
+		Last Modified: Mon, 24 Mar 2025 18:35:27 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-ibm-semeru-17-focal` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:df4268e7a34607dab40f946a6930d9be496ae4a7b94a9a705165067a237b50db
+$ docker pull maven@sha256:f536aacad0482e35461e72fd2199ff892d14f08749fc3fa2fc72f4ef4f9d4aac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.2 MB (5150036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2cad0eca0a8bc577927d5ef4e631e0f53302d37ddafc21985a9ce5de1c041cb7`
+-	Image ID: `sha256:8abb62794195ccaea72582e41bf659540bcb2bdeca5aeea950c9be7e2919c7eb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:65da14fd75f202b977680c544ac8017bf6e9f6d8edcbd465093dad992c15f30a`  
-		Last Modified: Sat, 15 Feb 2025 11:51:07 GMT  
+	-	`sha256:eb47a75c57cdcd6f5d7a4db6705d2cb849e7544c187f705ff80aaa35fce5bb34`  
+		Last Modified: Mon, 24 Mar 2025 18:35:27 GMT  
 		Size: 5.1 MB (5130811 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2e011105b192bd87fa35a3ea074a1abee1fb3e753b795fa749e2531f8cbb8296`  
-		Last Modified: Sat, 15 Feb 2025 11:51:07 GMT  
+	-	`sha256:4706100596f16c09b4d021b8789774aa0c086d7d5572480a8719e4b0fa96cf86`  
+		Last Modified: Mon, 24 Mar 2025 18:35:27 GMT  
 		Size: 19.2 KB (19225 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -16820,13 +16820,13 @@ $ docker pull maven@sha256:3a2a5010f50875be7ed50af03158b2c88f7629f5a4b258472fe5f
 ### `maven:3-ibm-semeru-17-focal` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:86ba70ae55bfd43585e3444e35c4299d04e2aba2bbcc83522710efb21d766420
+$ docker pull maven@sha256:daae6185d9737b5c206993d12a9d69d8cc1fc518f7a1d6a3be3b12c4565a0bdf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **301.6 MB (301585080 bytes)**  
+-	Total Size: **301.6 MB (301602030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea013f8c86b4d735ba4375cd2e6375fd8f468cc2eea05787f6940ac1d63cd2f7`
+-	Image ID: `sha256:c2d287531e0817a96e865606952c49b45b1f5fec3118619e9e83715970ea0eaf`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -16856,7 +16856,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -16894,67 +16894,67 @@ CMD ["mvn"]
 		Last Modified: Fri, 11 Oct 2024 04:41:53 GMT  
 		Size: 26.4 MB (26365979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93b26001b7ba5a9ded9e237306ee8b2177a38d0384c13ce0b2ba3aca7a939b86`  
-		Last Modified: Sat, 15 Feb 2025 08:00:00 GMT  
-		Size: 15.8 MB (15766032 bytes)  
+	-	`sha256:0eef949dbc8bb43f7b9422236b6260ebe65872eebd3f77b2c46f7b0b588c18fb`  
+		Last Modified: Mon, 24 Mar 2025 17:00:38 GMT  
+		Size: 15.8 MB (15766702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7022db4c582c4a94461186c5bdeba8219a757faf04e3488582c1995b06f87d0f`  
-		Last Modified: Sat, 15 Feb 2025 08:18:24 GMT  
-		Size: 214.6 MB (214572972 bytes)  
+	-	`sha256:c89a65f0bbd6c3b4f551031d830569e78080346eff2edf84a568304411fcfe8a`  
+		Last Modified: Mon, 24 Mar 2025 17:19:04 GMT  
+		Size: 214.6 MB (214572968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d57c79d544f862bfa783a18580b564d805b4fef09b1bc19cbd85cccef5de0e0`  
-		Last Modified: Sat, 15 Feb 2025 08:18:20 GMT  
-		Size: 6.2 MB (6236429 bytes)  
+	-	`sha256:c3d2ff5b95e0ad95bd4ac4b11453107e77aa11035604f6c816ca6bafe41f8ef5`  
+		Last Modified: Mon, 24 Mar 2025 17:19:00 GMT  
+		Size: 6.2 MB (6237986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43af7a9b0e9317c821cc4f45738c11ce1d9dfde9b66ec3b786922b19e0e71ae1`  
-		Last Modified: Sat, 15 Feb 2025 12:27:45 GMT  
-		Size: 29.5 MB (29472196 bytes)  
+	-	`sha256:4c08c961a1602e9fb56ee3d12d192e411035d7928ff16a971cf9b2f3fa4feff0`  
+		Last Modified: Mon, 24 Mar 2025 18:43:48 GMT  
+		Size: 29.5 MB (29486922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b51a75a81b8d34dbe3359dfffbe434686bdffbc3f88407744f9c9f88bb78649`  
-		Last Modified: Sat, 15 Feb 2025 12:27:45 GMT  
-		Size: 9.2 MB (9170432 bytes)  
+	-	`sha256:751c13e0a433ca9c0264ee12ffe7a78cd36bf2ee81dcea9b89b36f74d35c6d00`  
+		Last Modified: Mon, 24 Mar 2025 18:43:48 GMT  
+		Size: 9.2 MB (9170434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ee892575636550c919bd979ccc7c2cc5fab5e9e9593a753e5bc192fbd53e1e8`  
-		Last Modified: Sat, 15 Feb 2025 12:27:44 GMT  
-		Size: 853.0 B  
+	-	`sha256:90c84972a60e931c564d320944b91d2cb10c924ad948a1c033fce949c42ed496`  
+		Last Modified: Mon, 24 Mar 2025 18:43:47 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b23310af8fa81802bb1c145bfe41e18f505340d05ea2fc44c73c9a4d6950bb31`  
-		Last Modified: Sat, 15 Feb 2025 12:27:45 GMT  
+	-	`sha256:76f43da57569ae8b80485d258776749ce3789bd6af8471a410858306320d5a73`  
+		Last Modified: Mon, 24 Mar 2025 18:43:47 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-ibm-semeru-17-focal` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:4797f84bc0146cb73f58d7f507cf5ce88138c7d96c82740ccb58cd44f30d4167
+$ docker pull maven@sha256:1e9e48a4ce3f5f86194b31c2d3877bb8c8cfa14196021933f26a50d5ad15589e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5147028 bytes)**  
+-	Total Size: **5.1 MB (5147027 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:418bfca99287968e932321b260786afb205b55970b0b2eb8305a1029524869ef`
+-	Image ID: `sha256:4f05ba384b7d92349012ae07574316700b20cd848b2a9944af31f434fcd45bd6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:69eadc4f7307b0b944e1b7787f4a0c15e85861e2ab3eb9016d02b31c388dd8a5`  
-		Last Modified: Sat, 15 Feb 2025 12:27:44 GMT  
+	-	`sha256:14176b1e4e3aa9aa2d76ac261bb7c5adea012f51de51e3da777e05f9d70aa565`  
+		Last Modified: Mon, 24 Mar 2025 18:43:47 GMT  
 		Size: 5.1 MB (5127936 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:70b46980ef10527609a20b8aebb87ae2f2d146895aa8073d87ad233c1d462c2d`  
-		Last Modified: Sat, 15 Feb 2025 12:27:44 GMT  
-		Size: 19.1 KB (19092 bytes)  
+	-	`sha256:e91bd0751d78a6690f238b666dd1aa6fc0088626b3be96c496323f29e72321db`  
+		Last Modified: Mon, 24 Mar 2025 18:43:47 GMT  
+		Size: 19.1 KB (19091 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3-ibm-semeru-21-jammy`
 
 ```console
-$ docker pull maven@sha256:ef7c5dad13db1a442019dfcc2ae2fd24047a9a84c5c8a6348998a9c5390347ff
+$ docker pull maven@sha256:714c89e6be64be0c60809a99be0fe67a7f39255b1240b273e67a96bd05f11432
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -16971,13 +16971,13 @@ $ docker pull maven@sha256:ef7c5dad13db1a442019dfcc2ae2fd24047a9a84c5c8a6348998a
 ### `maven:3-ibm-semeru-21-jammy` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:51523161c785bed263b84ca6a00461b3c8abce0d89a6fc2dd4cb74c7540beda4
+$ docker pull maven@sha256:05cf0ecfa0f8e1792b60b6bd489be263852a93adb636ad2acadd60d0b6a4f45a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **309.6 MB (309603358 bytes)**  
+-	Total Size: **309.6 MB (309593309 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7754ceafc392e53c52a1caa682471d6fdd9cbbd998110df03ec6b0ac5552b644`
+-	Image ID: `sha256:e13a0f84463254171ce952026a4e9998302678b312497ff14ad349ad38f6f2b6`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -17007,7 +17007,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -17045,73 +17045,73 @@ CMD ["mvn"]
 		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
 		Size: 29.5 MB (29535941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2dbee6db66b3a109b99cfbbf8b20394f707f6e9a798cb196d8998345b94090`  
-		Last Modified: Fri, 14 Feb 2025 22:33:08 GMT  
-		Size: 12.2 MB (12166780 bytes)  
+	-	`sha256:5f710835a9475496183f181ec0060a69b3dda00a27a55ddc47315fa91f739045`  
+		Last Modified: Mon, 24 Mar 2025 17:04:04 GMT  
+		Size: 12.2 MB (12166978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a059521ac4c046d050e148ad1df63168ae6227c0e14c64d2cd408b69956b432`  
-		Last Modified: Fri, 14 Feb 2025 22:33:11 GMT  
-		Size: 232.1 MB (232052202 bytes)  
+	-	`sha256:e0a806bd0a8185f0abc4089548c5580613bbcb7f9190cd032b2671d792f0399a`  
+		Last Modified: Mon, 24 Mar 2025 17:04:08 GMT  
+		Size: 232.1 MB (232052195 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:170fb7daf9cf20da9ad388bb0cb7780d1b6010fcfa681f0549755107d3b9c236`  
-		Last Modified: Fri, 14 Feb 2025 22:33:08 GMT  
-		Size: 6.3 MB (6340200 bytes)  
+	-	`sha256:dce91a6c69c87827baa832498dad35f4da188e7b57afeceb801c808464bbf448`  
+		Last Modified: Mon, 24 Mar 2025 17:04:03 GMT  
+		Size: 6.3 MB (6332860 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a575872eb641291f1d336849d8fa6acb438b47f55805cf75df0a818de5811db3`  
-		Last Modified: Fri, 14 Feb 2025 23:31:05 GMT  
-		Size: 20.3 MB (20336759 bytes)  
+	-	`sha256:0ad2888c2b3be6a409528b1968fd34f197666b0972631bb05f38efe3752277ac`  
+		Last Modified: Mon, 24 Mar 2025 17:08:04 GMT  
+		Size: 20.3 MB (20333858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9e931655c3c2bbd8d2c547bc78dbfff955ed7a7e01787cf2624ad44d6ea856f`  
-		Last Modified: Fri, 14 Feb 2025 23:31:05 GMT  
+	-	`sha256:59094b42d7f9756d2dc13c72419eb85bf334f3dbad2a9a07bcdc1cb90d78f89c`  
+		Last Modified: Mon, 24 Mar 2025 17:08:03 GMT  
 		Size: 9.2 MB (9170435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef24121de34bd176db97b046a2777de2fb636417b659dd6b0889858fbb598e04`  
-		Last Modified: Fri, 14 Feb 2025 23:31:04 GMT  
+	-	`sha256:073e6d3af0ab3402b8b7a2741ee2c4dddaaa82316b75bb9793710b7b5be707df`  
+		Last Modified: Mon, 24 Mar 2025 17:08:03 GMT  
 		Size: 854.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c44b586c3b47d59c61320dbcd39fdf92e3d77ba90ee215b0c5f4540e3529de77`  
-		Last Modified: Fri, 14 Feb 2025 23:31:04 GMT  
-		Size: 155.0 B  
+	-	`sha256:ebd8e7ed3ae42b2ce22e504f7affc5fe81bd33b0980a5ad84fddf03bd47afed5`  
+		Last Modified: Mon, 24 Mar 2025 17:08:03 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-ibm-semeru-21-jammy` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:2ade12a56075272ebdd7df7266da310fe1b986d9548308f872059ebe57cc1bcb
+$ docker pull maven@sha256:a22cbbd48eda7d8d7e4b205edbe3e17050ac340634bcc423697fd7f9684cfd80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5175562 bytes)**  
+-	Total Size: **5.2 MB (5177465 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:139210c8518f8cef4eb0fac393e5db083f1cf0afa6a7765e41c953233c325247`
+-	Image ID: `sha256:437d47a9b088e7dafb103a69573a4da17d1df3ecad8ce13dcd2d3405ca67a5ac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:291b2b6b8673873f696a57398c9bcafe6de71ba95d620bbb8d667309e5be5a23`  
-		Last Modified: Fri, 14 Feb 2025 23:31:04 GMT  
-		Size: 5.2 MB (5156472 bytes)  
+	-	`sha256:c21adb5efbc5aaf067a6e5c548ad0fb004057dc4a807af87d7f53102c2103ca8`  
+		Last Modified: Mon, 24 Mar 2025 17:08:03 GMT  
+		Size: 5.2 MB (5158375 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7e20ee56e76b081d9c90c336511ae51d311a1966be89cffc86b71bd6229982e1`  
-		Last Modified: Fri, 14 Feb 2025 23:31:04 GMT  
+	-	`sha256:bec64f6f26b3c71961f4cd6cebf30e74930b029616190770ae76db07004e3045`  
+		Last Modified: Mon, 24 Mar 2025 17:08:03 GMT  
 		Size: 19.1 KB (19090 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3-ibm-semeru-21-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:9bf7b9022d3fc26c5b61bd38a02985530ff49811c71498add2ce45dee3ab36c2
+$ docker pull maven@sha256:8c4c07d136a8fd3c459b0fa5f00c614655f1eec69dbb717ba52ec3ec1816db8b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **299.1 MB (299086941 bytes)**  
+-	Total Size: **299.1 MB (299114203 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:07832a71b06a027ad9ad750c385c0b9ec1c62f232289a6866cae65eb0c969821`
+-	Image ID: `sha256:882a692052d490ba57389a895ec5a0876f9c469a55b9e7d11773df1dd2cff242`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -17141,7 +17141,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -17179,60 +17179,60 @@ CMD ["mvn"]
 		Last Modified: Sun, 26 Jan 2025 07:02:08 GMT  
 		Size: 27.4 MB (27358182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddc27324a20ba7e580ad161f241011b423fdcd169bcae5cc324e63f8db8fe6b2`  
-		Last Modified: Tue, 04 Feb 2025 09:47:59 GMT  
-		Size: 12.1 MB (12123437 bytes)  
+	-	`sha256:e483842b440e4fd1b12a18bab983fb09c8751e230e70f7c022dae2765ea706a5`  
+		Last Modified: Mon, 24 Mar 2025 17:01:02 GMT  
+		Size: 12.1 MB (12123514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17d27bcf99459dcd5fbe127a6c795010816c2d4680aea3d0560fdebf0a26c3f4`  
-		Last Modified: Sat, 15 Feb 2025 07:46:29 GMT  
+	-	`sha256:319fd86a1d76c3ef266b0abf69304bd7078ef846e56eb909ab81a24cfffcd9ef`  
+		Last Modified: Mon, 24 Mar 2025 17:21:20 GMT  
 		Size: 224.0 MB (224030028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d60d72b436b33a97ff7c58df0d80274a56643887002aa96d82231a557d3b59fd`  
-		Last Modified: Sat, 15 Feb 2025 07:46:23 GMT  
-		Size: 6.1 MB (6105173 bytes)  
+	-	`sha256:f77e17b7d4be90ba1be02ab2fc39c277da5061e65a66f7af7863f41dd05f96f4`  
+		Last Modified: Mon, 24 Mar 2025 17:21:09 GMT  
+		Size: 6.1 MB (6135849 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65430c8b3c8b5af6030382793e1ac0696cb6cd3352463d1370ae1be757b646d3`  
-		Last Modified: Sat, 15 Feb 2025 12:12:50 GMT  
-		Size: 20.3 MB (20298655 bytes)  
+	-	`sha256:140c8231d78a91938e2a895b47f32832144e2f4cd5556d310a517f9150bf16d1`  
+		Last Modified: Mon, 24 Mar 2025 18:36:14 GMT  
+		Size: 20.3 MB (20295162 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbcae2cc3b13eca8fbca2d56b7519b6208d784f428a0f744287c509ed18b2b8a`  
-		Last Modified: Sat, 15 Feb 2025 12:12:50 GMT  
+	-	`sha256:2baebd098b02f892150a86675ce0bab00fac93a70a08b3c795f5a6a759144a60`  
+		Last Modified: Mon, 24 Mar 2025 18:36:14 GMT  
 		Size: 9.2 MB (9170426 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93b83fbce0baa5c206c415d73bf9a507949b440aa1b427112eac04eaa8674fb9`  
-		Last Modified: Sat, 15 Feb 2025 12:12:50 GMT  
-		Size: 853.0 B  
+	-	`sha256:fb517c23d67b7dc3415f4dd8fca054a2da2b324eaf1d4c01cf834031189966d8`  
+		Last Modified: Mon, 24 Mar 2025 18:36:14 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2278e8548e4da50f53d61e5d5d981b9f036a69a11c7359323bb227ff6343502f`  
-		Last Modified: Sat, 15 Feb 2025 12:12:50 GMT  
-		Size: 155.0 B  
+	-	`sha256:ef15431f72bc2f3aa41a3b1bf24c5c8f06a69b70111305b5d43a49021b9969c1`  
+		Last Modified: Mon, 24 Mar 2025 18:36:14 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-ibm-semeru-21-jammy` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:4c2d27deb9570d2f843c932b873d40564e0ab52385386d21c63bf4e5c4d73562
+$ docker pull maven@sha256:5c2e04f8d3602d08882acbaa46415977f5910348cbef76ec6ed086c2d5eb109e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5172863 bytes)**  
+-	Total Size: **5.2 MB (5176374 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7eaf61a9d0160beaf10eb61ebd2ebd5a469cdeda53089fef5b071a13e6973225`
+-	Image ID: `sha256:f82dad4930df38ccaf9c96c22b79fa456fbaf4ce492e2fd4f028cdf651778f8a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f02bf91e77ddb30d4ee2a864099ff1eba66240165681beddec3645e75eec24c6`  
-		Last Modified: Sat, 15 Feb 2025 12:12:50 GMT  
-		Size: 5.2 MB (5153640 bytes)  
+	-	`sha256:8e532dac99522f0daca50a0b6dd1be7ab0ae3244dd608567ef81658af2dfdc27`  
+		Last Modified: Mon, 24 Mar 2025 18:36:14 GMT  
+		Size: 5.2 MB (5157151 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bc4d0d590c642f477cf127a78e47a4067ba83c9c3c7df3ed9ce4823aea46e3e8`  
-		Last Modified: Sat, 15 Feb 2025 12:12:49 GMT  
+	-	`sha256:696b4606ffea830d898ccdcfd7679a6e9693fae616e70a7d99d24fb056d07dcf`  
+		Last Modified: Mon, 24 Mar 2025 18:36:13 GMT  
 		Size: 19.2 KB (19223 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17373,13 +17373,13 @@ $ docker pull maven@sha256:cd1c312350a5f812b1374de14ea54185fbb9e508e531eae839bf6
 ### `maven:3-ibm-semeru-21-jammy` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:662801a31026b49e17493bfbeb9fa5467b7969659003e14cb5cefaa87efc60b6
+$ docker pull maven@sha256:7b9434c220ef6cd4a2d6f7537ecff02896d864c0d89a9895ccb65bc14b94cc5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.1 MB (304147916 bytes)**  
+-	Total Size: **304.2 MB (304163271 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e060e4a3f838f8226572d8278c63f6e73df9dd236055fa0cd141489693802cdf`
+-	Image ID: `sha256:0a81d8660d8376c4b0dc63279a46037598a1be34d1adc0a20e59f7cc2fedc63b`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -17409,7 +17409,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -17451,63 +17451,63 @@ CMD ["mvn"]
 		Last Modified: Tue, 04 Feb 2025 08:13:22 GMT  
 		Size: 12.2 MB (12212279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93de31108a9d71a055d6fe9cbb66f3565833d50a6d30f4927e30bd632c267294`  
-		Last Modified: Sat, 15 Feb 2025 08:29:14 GMT  
-		Size: 227.8 MB (227809588 bytes)  
+	-	`sha256:621e9c3c340f572679575c56236f1a01568a7ba35c95a95de4ef466337b6ec2f`  
+		Last Modified: Mon, 24 Mar 2025 17:25:22 GMT  
+		Size: 227.8 MB (227809539 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15515c727a6111951d6e438a10cd7d040a46fc299fbb300cab090dea0d5a15ef`  
-		Last Modified: Sat, 15 Feb 2025 08:29:11 GMT  
-		Size: 6.5 MB (6452523 bytes)  
+	-	`sha256:4cd7c8269ce85e38cff1658a6363adc7ba61c03c04528c85813814ae978413f7`  
+		Last Modified: Mon, 24 Mar 2025 17:25:18 GMT  
+		Size: 6.5 MB (6470484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49b1bc8f2bb7b67ac7f8f1742b34e891b0c949aea2e36adb390e09b6560d46c1`  
-		Last Modified: Sat, 15 Feb 2025 12:28:54 GMT  
-		Size: 20.5 MB (20501118 bytes)  
+	-	`sha256:95e5fd48f6b6bbef015aeb650682e462871a64634b7b0e51557712f457747b67`  
+		Last Modified: Mon, 24 Mar 2025 18:44:34 GMT  
+		Size: 20.5 MB (20498566 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91ee2d36c760e22a3139660b56cbc6d1dc4bc0366bffe9b39c7ede74605d1759`  
-		Last Modified: Sat, 15 Feb 2025 12:28:54 GMT  
-		Size: 9.2 MB (9170436 bytes)  
+	-	`sha256:37d65b9846c0b7b9ba01f30128d9a499ff984667734109390308cc26ff39122c`  
+		Last Modified: Mon, 24 Mar 2025 18:44:34 GMT  
+		Size: 9.2 MB (9170428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41a9cf63be6794f9fbea39b2c3f2196e9bd3c000c489fbfe4c09ea9dd9090c7a`  
-		Last Modified: Sat, 15 Feb 2025 12:28:54 GMT  
-		Size: 853.0 B  
+	-	`sha256:ce694ff4a735b8f1e11f00ee02cf48f7fec6dc6311419a721619814b2ee1fc7d`  
+		Last Modified: Mon, 24 Mar 2025 18:44:34 GMT  
+		Size: 855.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da41604f1e4ee706d4223ae6a0750cbaebc5116e13b9b67a97cdc97e06d92554`  
-		Last Modified: Sat, 15 Feb 2025 12:28:54 GMT  
-		Size: 156.0 B  
+	-	`sha256:ffc62161afea6c5dc4e7357d9e1ee4cd44831d6143540bbc1f809c75472b0857`  
+		Last Modified: Mon, 24 Mar 2025 18:44:34 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-ibm-semeru-21-jammy` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:9524ed352e498e235da9b321570bf6f89dd9f5d6a215690c599fe615de886763
+$ docker pull maven@sha256:c20c8eb9bee0a479738cfcfe7ce89ced3f6f084e4595421ec7977dfc811190fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.2 MB (5170614 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ef747c47f2551a61b7c386ffa7added51dc769e973ddfe1acad2357abb96633`
+-	Image ID: `sha256:30205eea1a9fbbb362dddcea612268e7a754b0c975c235fd288a71f170b9f926`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d5261aab4e4dde39cf5887501fb1640a96aac2835c4fabb740b37e464ba8ae3e`  
-		Last Modified: Sat, 15 Feb 2025 12:28:54 GMT  
+	-	`sha256:73d493267ea0ec76d856859e5b1b8182e77dbb9a14f6620a20f0d21e726618d3`  
+		Last Modified: Mon, 24 Mar 2025 18:44:34 GMT  
 		Size: 5.2 MB (5151524 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a2f24588278cff97bbf4c9882cabc1d136a8a0e94d79f5fdff34995a3d9dea38`  
-		Last Modified: Sat, 15 Feb 2025 12:28:53 GMT  
+	-	`sha256:fee0284d5040ad2737358b508e1aed04cfd0ceb089d07bb43aa40311944f8f7f`  
+		Last Modified: Mon, 24 Mar 2025 18:44:33 GMT  
 		Size: 19.1 KB (19090 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3-ibm-semeru-23-jammy`
 
 ```console
-$ docker pull maven@sha256:dc484cd86115e36574c365f860ea95fafc16368d821db5683bbfce8b5b29efab
+$ docker pull maven@sha256:b153ed31da5e96c07690f8050564f2f783425ed457352c42ad2c0fc53ec0675d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -17658,13 +17658,13 @@ $ docker pull maven@sha256:e772cdcecb6e63ec7c0d1f3d4b9d9d9523412814bfc35baa424c9
 ### `maven:3-ibm-semeru-23-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:bad7187e8ed2e6430179a29ef4a93d58381f91842c507d177a6cd484660b6bde
+$ docker pull maven@sha256:772c9c596278021727c9c783665073bd20180cca6ff442c6658575b01f0e1bc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **306.3 MB (306278764 bytes)**  
+-	Total Size: **306.3 MB (306297857 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f3cb738b8ea9cf9af4872c343fe8a8393ba1077fc2071c548620b1bf8ae4484`
+-	Image ID: `sha256:6c9dd6d669faaf1a74ffae5ec5f2edc16544ab8c8a0b9dc687b9de093258fe0a`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -17694,7 +17694,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Mon, 23 Sep 2024 17:02:08 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Mon, 23 Sep 2024 17:02:08 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Mon, 23 Sep 2024 17:02:08 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 23 Sep 2024 17:02:08 GMT
@@ -17732,60 +17732,60 @@ CMD ["mvn"]
 		Last Modified: Sun, 26 Jan 2025 07:02:08 GMT  
 		Size: 27.4 MB (27358182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddc27324a20ba7e580ad161f241011b423fdcd169bcae5cc324e63f8db8fe6b2`  
-		Last Modified: Tue, 04 Feb 2025 09:47:59 GMT  
-		Size: 12.1 MB (12123437 bytes)  
+	-	`sha256:e483842b440e4fd1b12a18bab983fb09c8751e230e70f7c022dae2765ea706a5`  
+		Last Modified: Mon, 24 Mar 2025 17:01:02 GMT  
+		Size: 12.1 MB (12123514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:999e6a978f3e055febc7e7dce8d4f403286b838d5f4bcffe70af6b7957295bdc`  
-		Last Modified: Sat, 15 Feb 2025 07:53:09 GMT  
-		Size: 230.9 MB (230854954 bytes)  
+	-	`sha256:64dcf21fb5ad18ddf20c30910adf53ef4e963246626d03c9becf43832e3350b0`  
+		Last Modified: Mon, 24 Mar 2025 17:27:56 GMT  
+		Size: 230.9 MB (230854975 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:662ee496f4f92821148362e56879a9261d327f2922c0a732fdc8a632a56047fd`  
-		Last Modified: Sat, 15 Feb 2025 07:53:04 GMT  
-		Size: 6.5 MB (6471945 bytes)  
+	-	`sha256:2442d64cc615c54150c2ed31920e36750fd645c5587df7d8443661e41d565e92`  
+		Last Modified: Mon, 24 Mar 2025 17:27:51 GMT  
+		Size: 6.5 MB (6494492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9532c9b501e5928b65e53ca9b777b2eecb09845aa87fb4870eb95a436d9cddd7`  
-		Last Modified: Sat, 15 Feb 2025 11:51:58 GMT  
-		Size: 20.3 MB (20298772 bytes)  
+	-	`sha256:78aa7eab08e342be425ca8d0e1afd6aa0df7f1893e932147723f232ceda8c550`  
+		Last Modified: Mon, 24 Mar 2025 18:36:48 GMT  
+		Size: 20.3 MB (20295219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c82f64ddccca36d9ed56177d15e934807faa1c256ea9cc5a209dff58d1685cc`  
-		Last Modified: Sat, 15 Feb 2025 11:51:58 GMT  
-		Size: 9.2 MB (9170435 bytes)  
+	-	`sha256:1d7ffe067c9564276b215266d5f7fc389db5e0b7938a26a18c56d155bc56a853`  
+		Last Modified: Mon, 24 Mar 2025 18:36:48 GMT  
+		Size: 9.2 MB (9170433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:56a7682255337ab19a1c99eab89f93f1500d1f844f69c35fe86d1ed18c991a99`  
-		Last Modified: Sat, 15 Feb 2025 11:51:57 GMT  
-		Size: 853.0 B  
+	-	`sha256:34e0a1f974b1328814baa3eb85413439932235eecace16ea2dd3507637e962b4`  
+		Last Modified: Mon, 24 Mar 2025 18:36:47 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36fa96c0d9ee46b90f0c10d97b2f23083e1d0c5194be27857f011efe437ba945`  
-		Last Modified: Sat, 15 Feb 2025 11:51:58 GMT  
-		Size: 154.0 B  
+	-	`sha256:9eeb3371496c00951d778ba87e722a6c06a6fa5240acb33097c7c7f154dbdc7a`  
+		Last Modified: Mon, 24 Mar 2025 18:36:48 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-ibm-semeru-23-jammy` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:8f6a1779de5811079cc3f9249b0917fdb62a71cee5a6168a506e643e6e8d4a3d
+$ docker pull maven@sha256:de084d0b3b709aec7866bf4bc6015828bbd9eb5665de3d40d816b6e6199c9962
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5174157 bytes)**  
+-	Total Size: **5.2 MB (5177668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:71185936cef3c1b75765ae73fd352bd77017db7230011dd45876ac999431265c`
+-	Image ID: `sha256:39b6a725be93e39f5b39f160026b21c68aa196d0984c85839a3d0735d6ba57ac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4c3192294e33ddc4371933cc0829b7c991227d1eb90ef8a680785c0c353c7588`  
-		Last Modified: Sat, 15 Feb 2025 11:51:57 GMT  
-		Size: 5.2 MB (5154934 bytes)  
+	-	`sha256:cc44d705bb8efcf60b5492919a98fe7b1692777273aac1d25eb19bd308be1c9e`  
+		Last Modified: Mon, 24 Mar 2025 18:36:47 GMT  
+		Size: 5.2 MB (5158445 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ad17a41747c19c4a79374bbfc2cd7d382f4650f1249ac1fb41f8138229b77389`  
-		Last Modified: Sat, 15 Feb 2025 11:51:57 GMT  
+	-	`sha256:baa9f15ed90d0761bf33ed82bc503daa53bd1d051cf97ae22b218c4693019c41`  
+		Last Modified: Mon, 24 Mar 2025 18:36:47 GMT  
 		Size: 19.2 KB (19223 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -17926,13 +17926,13 @@ $ docker pull maven@sha256:2bb515ed1008ca8d22b18e94858ea8adec9f97e045827549b68ad
 ### `maven:3-ibm-semeru-23-jammy` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:cb5772fdc5dbb93e5acc9177e0e4d58d816a3deeae91ce34d4b55a4bc3942086
+$ docker pull maven@sha256:abe08b078992e8d12db3a9428d74fdb14a182612da0a3253abf5361d9d4100cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **311.4 MB (311391040 bytes)**  
+-	Total Size: **311.5 MB (311463412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56741e4198eb17769f697f93557666c0121ac649e2f66a8d943b2926f81afeda`
+-	Image ID: `sha256:f348b66a95c069e9cb06251742c9dd6fdf90dfe1269c85de2aa287f89db9ade2`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -17962,7 +17962,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Mon, 23 Sep 2024 17:02:08 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Mon, 23 Sep 2024 17:02:08 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Mon, 23 Sep 2024 17:02:08 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 23 Sep 2024 17:02:08 GMT
@@ -18004,56 +18004,56 @@ CMD ["mvn"]
 		Last Modified: Tue, 04 Feb 2025 08:13:22 GMT  
 		Size: 12.2 MB (12212279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7d765fed4df6c8dfd6fa0482032a5abc1e11a713c266cd911e7bebb466e581e`  
-		Last Modified: Sat, 15 Feb 2025 08:38:26 GMT  
-		Size: 234.6 MB (234645637 bytes)  
+	-	`sha256:dbd770f92683665651c4120314e56e2fae1cea1708ca505e0304723945ccbe48`  
+		Last Modified: Mon, 24 Mar 2025 17:33:20 GMT  
+		Size: 234.6 MB (234645579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1d42cf1769739385471ebe5b3db3ef8edde99c59d569df3d5a212dd3682cd56`  
-		Last Modified: Sat, 15 Feb 2025 08:38:22 GMT  
-		Size: 6.9 MB (6859525 bytes)  
+	-	`sha256:1019db1d317f37797053cdf0cd1f9ca75c6f5be579c58329da6a0b69ff21ce7d`  
+		Last Modified: Mon, 24 Mar 2025 17:33:17 GMT  
+		Size: 6.9 MB (6934589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9af0b660d12b2eedfc4ed385ec0e27c259e14071c04b648b4a17d9009cef1ed6`  
-		Last Modified: Sat, 15 Feb 2025 12:29:59 GMT  
-		Size: 20.5 MB (20501191 bytes)  
+	-	`sha256:8b18a4466a147925d00b840d4d0c9fad77a7da0ab3c4f8082171d74795b84ab1`  
+		Last Modified: Mon, 24 Mar 2025 18:45:15 GMT  
+		Size: 20.5 MB (20498565 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06b9c1bb40191820d5f6bc35a74f0b2a103430e07ec8f92d5c27573513eab618`  
-		Last Modified: Sat, 15 Feb 2025 12:29:58 GMT  
-		Size: 9.2 MB (9170436 bytes)  
+	-	`sha256:71fea21709931f69460b78f600090fb3afda3bb6e854c67dcb64841868953ff3`  
+		Last Modified: Mon, 24 Mar 2025 18:45:14 GMT  
+		Size: 9.2 MB (9170427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd1f8650cc84cd456e4cd412947cd7052307daf5b57397dffa01c76ff00511c4`  
-		Last Modified: Sat, 15 Feb 2025 12:29:58 GMT  
-		Size: 854.0 B  
+	-	`sha256:6565d6e5777c6c97b34b93899570943f86a5b29518dc265695c29feae31053bd`  
+		Last Modified: Mon, 24 Mar 2025 18:45:13 GMT  
+		Size: 855.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:091250526858e001694bbba19c33071e2d24bf0ebdd06f4497fd71d6b0d5ba4e`  
-		Last Modified: Sat, 15 Feb 2025 12:29:58 GMT  
+	-	`sha256:b813c4c077b2910d7ab2539e6a183fe64ef0d5d722928182f2adb2fca3b297f1`  
+		Last Modified: Mon, 24 Mar 2025 18:45:14 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3-ibm-semeru-23-jammy` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:f16e8c1816e81dbb55194e8eb050b28e9acf73857b4b1fc4c281f352daf5da93
+$ docker pull maven@sha256:d42b17bdc26eeef599bd535709df27d014098a8273c75d210a515451cce30b1f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.2 MB (5171908 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c8cb14494952a2a1396deeee6b7cebbfe349705c9b65d960475f26dd17a8963`
+-	Image ID: `sha256:174c45a9e048104612bd786b40328af2926f42603ff5869f9742004b384ce264`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a4b07ca81e8abcf3abc0df3c573780a7a1e976bcb0e42dd6e4ce70f3b25b132b`  
-		Last Modified: Sat, 15 Feb 2025 12:29:59 GMT  
+	-	`sha256:dc6364317a7150cb00b3e1d9950e14c3ab3f3421f05249854ff00f00d7db33e1`  
+		Last Modified: Mon, 24 Mar 2025 18:45:13 GMT  
 		Size: 5.2 MB (5152818 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8e548e98922b37c3aafb2da53e51dfaf9936a61b432f81215d7ddbfabb7bd9c1`  
-		Last Modified: Sat, 15 Feb 2025 12:29:58 GMT  
+	-	`sha256:d5892c56574e0b266922f5c27c29f114f95f1b73ac97f82ef69492928580935e`  
+		Last Modified: Mon, 24 Mar 2025 18:45:13 GMT  
 		Size: 19.1 KB (19090 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -36358,7 +36358,7 @@ $ docker pull maven@sha256:c229a5181d0bc16d4de6b554d64f9a91c162095f373ab77c5d939
 ## `maven:3.9-ibm-semeru-11-focal`
 
 ```console
-$ docker pull maven@sha256:e7c64aed3a241b72b8dcf02b8964a715e7bbb416200e234be247e7f00067c3f8
+$ docker pull maven@sha256:305cb8b4b9ae66ed302d8f751e11826beacaaa546add65edf398d0e39360ccbd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -36511,13 +36511,13 @@ $ docker pull maven@sha256:8f0ea724de921c065c3611cecac9410a2272496656bf8d09b7531
 ### `maven:3.9-ibm-semeru-11-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:a9a221531da08f110162cb1502a7fb8880d692d27aa4871ca920bd07d37663e3
+$ docker pull maven@sha256:ac9c8e71f573d014d0c611f2558f116d180e89472e2e6f3b486388de9b491a4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.1 MB (293113345 bytes)**  
+-	Total Size: **293.2 MB (293152008 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dbdba2374b869533281207a7cc62ca134a4b96ef10c6f0511f3fb4c3bc952c0c`
+-	Image ID: `sha256:dca0d50e55ee84e7b07266889430a43472b9bf510bcd42fdf43c53d13cea56c4`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -36547,7 +36547,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 CMD ["jshell"]
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -36587,60 +36587,60 @@ CMD ["mvn"]
 		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a34608f1b65b18d00a12907c088ede389ecc55d034a8559a11fbbdb60cd4afa9`  
-		Last Modified: Sat, 15 Feb 2025 07:24:58 GMT  
-		Size: 15.9 MB (15937925 bytes)  
+	-	`sha256:106eaed27a13a2bcd67ca45fe8b16e8b489640ce2e78661c8b9cd4d9de726677`  
+		Last Modified: Mon, 24 Mar 2025 16:59:29 GMT  
+		Size: 15.9 MB (15938279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:768e8813126d284a5e9f3e5a42003361704b4324902ef656d0f395fe3b37757f`  
-		Last Modified: Sat, 15 Feb 2025 07:32:04 GMT  
-		Size: 207.0 MB (206969689 bytes)  
+	-	`sha256:b86760a64a930ca9c420836917f2164c1d09768041a28b24a8d1de0678b04112`  
+		Last Modified: Mon, 24 Mar 2025 17:07:01 GMT  
+		Size: 207.0 MB (206969721 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77f0ccd7bc0362b5405e2159a172bfc796bcd193110cc8e81da6cad7c7384633`  
-		Last Modified: Sat, 15 Feb 2025 07:31:57 GMT  
-		Size: 5.2 MB (5169671 bytes)  
+	-	`sha256:7f142ce0ffb95a4aa40a4e7daff0139e957885e634c3470a638452e158a06a57`  
+		Last Modified: Mon, 24 Mar 2025 17:06:56 GMT  
+		Size: 5.2 MB (5197928 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b332c5ec30c5552967ddb158ccc8ff4321558be9fa2f11aa10375310cc516656`  
-		Last Modified: Sat, 15 Feb 2025 11:50:36 GMT  
-		Size: 29.9 MB (29890756 bytes)  
+	-	`sha256:08bab46255dc6f6396c66abf1da4846a3163e4457bbe8b2080915547a25f8fcb`  
+		Last Modified: Mon, 24 Mar 2025 18:34:55 GMT  
+		Size: 29.9 MB (29900779 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdd3ceac3969b981a03257049c9c31e832d834cd7d70b97458bdce15f4dc4ea5`  
-		Last Modified: Sat, 15 Feb 2025 11:50:36 GMT  
-		Size: 9.2 MB (9170436 bytes)  
+	-	`sha256:9cceeca8d4577d1c50deedff9132a3dd87dc48a07c11bd393c1b44ebf9445e32`  
+		Last Modified: Mon, 24 Mar 2025 18:34:54 GMT  
+		Size: 9.2 MB (9170434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ceaf415319da5b8a460a88f1d6c06444956d36eba7115e349f78dc23690d1d3`  
-		Last Modified: Sat, 15 Feb 2025 11:50:35 GMT  
+	-	`sha256:c85286ef38b6963ea3e402a747f30e2fb647e80b632392f00f43589e501d9a2a`  
+		Last Modified: Mon, 24 Mar 2025 18:34:54 GMT  
 		Size: 853.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7318a07a8d5fa36629d4a9b98e2cb5f8b35ef06f62b3073ec6b3effa6ea65ff0`  
-		Last Modified: Sat, 15 Feb 2025 11:50:35 GMT  
-		Size: 155.0 B  
+	-	`sha256:035dbef0dc68985b7f0b3275332c7109b4d074e4a87725546827aeadf73caad8`  
+		Last Modified: Mon, 24 Mar 2025 18:34:54 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-ibm-semeru-11-focal` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:f3b258614a79ac2043c0da5301701dc00cbd23a2c4e1f26035a76f70c7af0eb4
+$ docker pull maven@sha256:fe46366416680bff44f0607c5f6f3c8a1f655808838e76983d790f9d962eb2e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.2 MB (5165775 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94e3ac71749858bcdeeedea4e58dc5e3577d0d3cfdc2faf5af0bd40faaa2a4bd`
+-	Image ID: `sha256:8bde98089e1ce70b2570b6f51f37cef69ec708c8dff2a6013b735e2230bb6c53`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bd2755bb9a77becbea02657bb009eedd56d4c887a14a8588cd4f8e5b2893b3ce`  
-		Last Modified: Sat, 15 Feb 2025 11:50:35 GMT  
+	-	`sha256:62a8902e0f8720d1ce43cc903cf2c2dab906371906484aabe822836c8e7d0442`  
+		Last Modified: Mon, 24 Mar 2025 18:34:54 GMT  
 		Size: 5.1 MB (5146550 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0c711de7c272ac207a1ed93dd2e7d81771406c1f70054f08a885b5656f5f1017`  
-		Last Modified: Sat, 15 Feb 2025 11:50:34 GMT  
+	-	`sha256:3db15c8badc2cddb9782b9ea44dd8137ec572e244412c26896f91f846d6645e6`  
+		Last Modified: Mon, 24 Mar 2025 18:34:54 GMT  
 		Size: 19.2 KB (19225 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -36783,13 +36783,13 @@ $ docker pull maven@sha256:bf237b282ab95b6c9f33c782170d1e27eecc11f20d9ac27d35d0c
 ### `maven:3.9-ibm-semeru-11-focal` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:b21284cb9e54add47f72875e45d3fdd21bc473dc82c5e3b0969e1245c9859a7a
+$ docker pull maven@sha256:be952b8e9a27a6909c465699b84059027e0e1ec1bc8dab8e07c2ffdc00d031bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.9 MB (296901654 bytes)**  
+-	Total Size: **296.9 MB (296886655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97ce4cd4b40a824de546e1cec6667952356858c84fe347a9e6f2800c26ce7ffb`
+-	Image ID: `sha256:c666c8945ab675dc5d7ca29cd80b82648ea5ad84533c8630feddd182f3121658`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -36819,7 +36819,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 CMD ["jshell"]
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -36859,67 +36859,67 @@ CMD ["mvn"]
 		Last Modified: Fri, 11 Oct 2024 04:41:53 GMT  
 		Size: 26.4 MB (26365979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93b26001b7ba5a9ded9e237306ee8b2177a38d0384c13ce0b2ba3aca7a939b86`  
-		Last Modified: Sat, 15 Feb 2025 08:00:00 GMT  
-		Size: 15.8 MB (15766032 bytes)  
+	-	`sha256:0eef949dbc8bb43f7b9422236b6260ebe65872eebd3f77b2c46f7b0b588c18fb`  
+		Last Modified: Mon, 24 Mar 2025 17:00:38 GMT  
+		Size: 15.8 MB (15766702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1303b8ee060911cb5dd46d808831070efd51ffccdf655b0f92b5acb2a5d8b53f`  
-		Last Modified: Sat, 15 Feb 2025 08:09:17 GMT  
-		Size: 210.6 MB (210590180 bytes)  
+	-	`sha256:f56413ad176235b8e153b0916f55f7b211a30daf3d21f34ad2312f6bdad5716b`  
+		Last Modified: Mon, 24 Mar 2025 17:08:47 GMT  
+		Size: 210.6 MB (210590225 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d53e7a5c6b85ab3b815365a22936814c06fd5e99527336c46f1098b086076eab`  
-		Last Modified: Sat, 15 Feb 2025 08:09:13 GMT  
-		Size: 5.5 MB (5535790 bytes)  
+	-	`sha256:a314cb595521b129cccf078a161675b38dedb058dafafe7d6c4f8e1068b20788`  
+		Last Modified: Mon, 24 Mar 2025 17:08:44 GMT  
+		Size: 5.5 MB (5505256 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9c61047454bbe205a0ada188c8c7bfe1c7a6e2193bf6787bfa0084153bbf785`  
-		Last Modified: Sat, 15 Feb 2025 12:25:41 GMT  
-		Size: 29.5 MB (29472202 bytes)  
+	-	`sha256:4b7b6e4345b66bf679d72a5699f8719086346d9140aa4ff1bcb97821fe8cfcd7`  
+		Last Modified: Mon, 24 Mar 2025 18:43:06 GMT  
+		Size: 29.5 MB (29487026 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50aec1be5d8e1809b5376fa257f7e94f754e4150f81f13a680bde24210cc8561`  
-		Last Modified: Sat, 15 Feb 2025 12:25:40 GMT  
-		Size: 9.2 MB (9170431 bytes)  
+	-	`sha256:7b3307ec931243c7b68ad73681ae5f4c8d1e342203cbe7705a842c4a7e4f12af`  
+		Last Modified: Mon, 24 Mar 2025 18:43:06 GMT  
+		Size: 9.2 MB (9170427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0df8d5d6d827f5c7633791d3566ecb3a930ff0f73603af67a6458dea84e78d5c`  
-		Last Modified: Sat, 15 Feb 2025 12:25:39 GMT  
-		Size: 852.0 B  
+	-	`sha256:7308c8aff00212e0f4b5f3bdf848fb32909b24943eeb0277fe0f493cc4993a27`  
+		Last Modified: Mon, 24 Mar 2025 18:43:05 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19aa5ae26f8118a691dd014961f86bc2b0c353947f819f6393980c141cd00e34`  
-		Last Modified: Sat, 15 Feb 2025 12:25:40 GMT  
-		Size: 156.0 B  
+	-	`sha256:0e2ec8761fc548d643eaab21008872a67cf86187fd1ad04c0e63bba3be431bda`  
+		Last Modified: Mon, 24 Mar 2025 18:43:05 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-ibm-semeru-11-focal` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:b712032bf656d76fb105dca57eb63b3f24e46912ad9307fa7a651d73a1ce8c67
+$ docker pull maven@sha256:5aac5620071618fe3094cfcc2955761df3dfe3913f4688139a83d75cd7f5d3f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.2 MB (5163384 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d06b0c29939df537ca42af7e6a2db73c7a0700ef8b65d3272f9b333fc3621bb`
+-	Image ID: `sha256:76d682b7c0ea71d5898985e96b9cc9657fb22885f566c54f7697c45ac265f31b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:580f4a0936b158fb396576d2a6703e6c408ce90c057901c07aaf643b42ee2158`  
-		Last Modified: Sat, 15 Feb 2025 12:25:39 GMT  
+	-	`sha256:1ef85b5269269196e2e866dcc13cf99dfecbbc75b4c93d08eed549922dbcd82a`  
+		Last Modified: Mon, 24 Mar 2025 18:43:06 GMT  
 		Size: 5.1 MB (5144292 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b716ba73341b2a46e2a8271870148ef0212993928d95113708eda95bd1b9f406`  
-		Last Modified: Sat, 15 Feb 2025 12:25:39 GMT  
+	-	`sha256:3a4a033a2cb77079126344917ab5254a768657b37346f73c87a32ed5aa9f1c0c`  
+		Last Modified: Mon, 24 Mar 2025 18:43:05 GMT  
 		Size: 19.1 KB (19092 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9-ibm-semeru-17-focal`
 
 ```console
-$ docker pull maven@sha256:480ce665156c361fe46b262226000f2289b3e0ebae099604411f7eb3fd3d7b70
+$ docker pull maven@sha256:8931581578c7aa19162acf1b2c22359aa8577b40cae2ae07f7f1abb32aec8ca6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -37070,13 +37070,13 @@ $ docker pull maven@sha256:1756576ce8df2c7b540223b5b53feca700e68a70dd4f224eb2cf9
 ### `maven:3.9-ibm-semeru-17-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:6193783aa848c077e75d8ed9844d7d67304fea3764709a25bdfc2397dc4ddc19
+$ docker pull maven@sha256:40fc8a46fd16993d695ad3358fe25a4e2b34de4542bc655273af97349e2818e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **297.1 MB (297138170 bytes)**  
+-	Total Size: **297.1 MB (297117063 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbdb752bea9ac47b05139c08af898d3eeca8b1ae8c1761febcafe7d5556302e4`
+-	Image ID: `sha256:d98a6ad124b4d991f0427ef01c74e8c62dfedc767f5a2850badeb0a1920e79c3`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -37106,7 +37106,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -37144,60 +37144,60 @@ CMD ["mvn"]
 		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a34608f1b65b18d00a12907c088ede389ecc55d034a8559a11fbbdb60cd4afa9`  
-		Last Modified: Sat, 15 Feb 2025 07:24:58 GMT  
-		Size: 15.9 MB (15937925 bytes)  
+	-	`sha256:106eaed27a13a2bcd67ca45fe8b16e8b489640ce2e78661c8b9cd4d9de726677`  
+		Last Modified: Mon, 24 Mar 2025 16:59:29 GMT  
+		Size: 15.9 MB (15938279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b915ef4a327a5abba6389adf15dfa83aa2ab2ccc595ee692b4edc30dff6bb85f`  
-		Last Modified: Sat, 15 Feb 2025 07:38:35 GMT  
-		Size: 210.3 MB (210293500 bytes)  
+	-	`sha256:d0f3c055cf9dbac24955061e96cab8826f264fc4feebefcff82ad6b42a3305ce`  
+		Last Modified: Mon, 24 Mar 2025 17:13:30 GMT  
+		Size: 210.3 MB (210293461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b92d1e78ffdbc5c1efbf736b51c05a40c64c06d79e5654362415ad5014627f6`  
-		Last Modified: Sat, 15 Feb 2025 07:38:31 GMT  
-		Size: 5.9 MB (5870465 bytes)  
+	-	`sha256:e7de8b5e13775493e7f57d62d9b9464f3344701257617c18bb56bcbd054c8838`  
+		Last Modified: Mon, 24 Mar 2025 17:13:26 GMT  
+		Size: 5.8 MB (5839234 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbb895c0d0f233e09da57b6693bff9112775a502af1811dc9183b3517ca44bb`  
-		Last Modified: Sat, 15 Feb 2025 11:51:13 GMT  
-		Size: 29.9 MB (29890983 bytes)  
+	-	`sha256:1e7d18817c08603d30ecd4121a47bd53f1aa89373e63ac22ccb8201f7ed6dd46`  
+		Last Modified: Mon, 24 Mar 2025 18:35:28 GMT  
+		Size: 29.9 MB (29900791 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afc33c15939f32c2e4138e57241a4de673af757b6a99b6296ee09b445a7649ca`  
-		Last Modified: Sat, 15 Feb 2025 11:51:08 GMT  
-		Size: 9.2 MB (9170431 bytes)  
+	-	`sha256:43f2d526a283d9ae54e6ec7b04e75b860ce429bcb4a05f4cd486330de2841ac0`  
+		Last Modified: Mon, 24 Mar 2025 18:35:27 GMT  
+		Size: 9.2 MB (9170433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f70ed2e1084ece9af8ba4bbfabefc372c3a093d5c85f868011aa812b62b67111`  
-		Last Modified: Sat, 15 Feb 2025 11:51:08 GMT  
-		Size: 852.0 B  
+	-	`sha256:06b59b5010b3f9e2b4d5db6fb3fc543e8ffc755bd40e87d5aabdb5db3ae44acc`  
+		Last Modified: Mon, 24 Mar 2025 18:35:27 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ca9acc0176a2dce956d81c3f5b522d3d745eb3d77a6fa4b7710e4eb16804907`  
-		Last Modified: Sat, 15 Feb 2025 11:51:08 GMT  
-		Size: 154.0 B  
+	-	`sha256:6962151582830b648b7a7038f2dcb0a6a01588e851e5fe0f0f702aba0ba9c2e0`  
+		Last Modified: Mon, 24 Mar 2025 18:35:27 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-ibm-semeru-17-focal` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:df4268e7a34607dab40f946a6930d9be496ae4a7b94a9a705165067a237b50db
+$ docker pull maven@sha256:f536aacad0482e35461e72fd2199ff892d14f08749fc3fa2fc72f4ef4f9d4aac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.2 MB (5150036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2cad0eca0a8bc577927d5ef4e631e0f53302d37ddafc21985a9ce5de1c041cb7`
+-	Image ID: `sha256:8abb62794195ccaea72582e41bf659540bcb2bdeca5aeea950c9be7e2919c7eb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:65da14fd75f202b977680c544ac8017bf6e9f6d8edcbd465093dad992c15f30a`  
-		Last Modified: Sat, 15 Feb 2025 11:51:07 GMT  
+	-	`sha256:eb47a75c57cdcd6f5d7a4db6705d2cb849e7544c187f705ff80aaa35fce5bb34`  
+		Last Modified: Mon, 24 Mar 2025 18:35:27 GMT  
 		Size: 5.1 MB (5130811 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2e011105b192bd87fa35a3ea074a1abee1fb3e753b795fa749e2531f8cbb8296`  
-		Last Modified: Sat, 15 Feb 2025 11:51:07 GMT  
+	-	`sha256:4706100596f16c09b4d021b8789774aa0c086d7d5572480a8719e4b0fa96cf86`  
+		Last Modified: Mon, 24 Mar 2025 18:35:27 GMT  
 		Size: 19.2 KB (19225 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -37338,13 +37338,13 @@ $ docker pull maven@sha256:3a2a5010f50875be7ed50af03158b2c88f7629f5a4b258472fe5f
 ### `maven:3.9-ibm-semeru-17-focal` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:86ba70ae55bfd43585e3444e35c4299d04e2aba2bbcc83522710efb21d766420
+$ docker pull maven@sha256:daae6185d9737b5c206993d12a9d69d8cc1fc518f7a1d6a3be3b12c4565a0bdf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **301.6 MB (301585080 bytes)**  
+-	Total Size: **301.6 MB (301602030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea013f8c86b4d735ba4375cd2e6375fd8f468cc2eea05787f6940ac1d63cd2f7`
+-	Image ID: `sha256:c2d287531e0817a96e865606952c49b45b1f5fec3118619e9e83715970ea0eaf`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -37374,7 +37374,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -37412,67 +37412,67 @@ CMD ["mvn"]
 		Last Modified: Fri, 11 Oct 2024 04:41:53 GMT  
 		Size: 26.4 MB (26365979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93b26001b7ba5a9ded9e237306ee8b2177a38d0384c13ce0b2ba3aca7a939b86`  
-		Last Modified: Sat, 15 Feb 2025 08:00:00 GMT  
-		Size: 15.8 MB (15766032 bytes)  
+	-	`sha256:0eef949dbc8bb43f7b9422236b6260ebe65872eebd3f77b2c46f7b0b588c18fb`  
+		Last Modified: Mon, 24 Mar 2025 17:00:38 GMT  
+		Size: 15.8 MB (15766702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7022db4c582c4a94461186c5bdeba8219a757faf04e3488582c1995b06f87d0f`  
-		Last Modified: Sat, 15 Feb 2025 08:18:24 GMT  
-		Size: 214.6 MB (214572972 bytes)  
+	-	`sha256:c89a65f0bbd6c3b4f551031d830569e78080346eff2edf84a568304411fcfe8a`  
+		Last Modified: Mon, 24 Mar 2025 17:19:04 GMT  
+		Size: 214.6 MB (214572968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d57c79d544f862bfa783a18580b564d805b4fef09b1bc19cbd85cccef5de0e0`  
-		Last Modified: Sat, 15 Feb 2025 08:18:20 GMT  
-		Size: 6.2 MB (6236429 bytes)  
+	-	`sha256:c3d2ff5b95e0ad95bd4ac4b11453107e77aa11035604f6c816ca6bafe41f8ef5`  
+		Last Modified: Mon, 24 Mar 2025 17:19:00 GMT  
+		Size: 6.2 MB (6237986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43af7a9b0e9317c821cc4f45738c11ce1d9dfde9b66ec3b786922b19e0e71ae1`  
-		Last Modified: Sat, 15 Feb 2025 12:27:45 GMT  
-		Size: 29.5 MB (29472196 bytes)  
+	-	`sha256:4c08c961a1602e9fb56ee3d12d192e411035d7928ff16a971cf9b2f3fa4feff0`  
+		Last Modified: Mon, 24 Mar 2025 18:43:48 GMT  
+		Size: 29.5 MB (29486922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b51a75a81b8d34dbe3359dfffbe434686bdffbc3f88407744f9c9f88bb78649`  
-		Last Modified: Sat, 15 Feb 2025 12:27:45 GMT  
-		Size: 9.2 MB (9170432 bytes)  
+	-	`sha256:751c13e0a433ca9c0264ee12ffe7a78cd36bf2ee81dcea9b89b36f74d35c6d00`  
+		Last Modified: Mon, 24 Mar 2025 18:43:48 GMT  
+		Size: 9.2 MB (9170434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ee892575636550c919bd979ccc7c2cc5fab5e9e9593a753e5bc192fbd53e1e8`  
-		Last Modified: Sat, 15 Feb 2025 12:27:44 GMT  
-		Size: 853.0 B  
+	-	`sha256:90c84972a60e931c564d320944b91d2cb10c924ad948a1c033fce949c42ed496`  
+		Last Modified: Mon, 24 Mar 2025 18:43:47 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b23310af8fa81802bb1c145bfe41e18f505340d05ea2fc44c73c9a4d6950bb31`  
-		Last Modified: Sat, 15 Feb 2025 12:27:45 GMT  
+	-	`sha256:76f43da57569ae8b80485d258776749ce3789bd6af8471a410858306320d5a73`  
+		Last Modified: Mon, 24 Mar 2025 18:43:47 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-ibm-semeru-17-focal` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:4797f84bc0146cb73f58d7f507cf5ce88138c7d96c82740ccb58cd44f30d4167
+$ docker pull maven@sha256:1e9e48a4ce3f5f86194b31c2d3877bb8c8cfa14196021933f26a50d5ad15589e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5147028 bytes)**  
+-	Total Size: **5.1 MB (5147027 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:418bfca99287968e932321b260786afb205b55970b0b2eb8305a1029524869ef`
+-	Image ID: `sha256:4f05ba384b7d92349012ae07574316700b20cd848b2a9944af31f434fcd45bd6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:69eadc4f7307b0b944e1b7787f4a0c15e85861e2ab3eb9016d02b31c388dd8a5`  
-		Last Modified: Sat, 15 Feb 2025 12:27:44 GMT  
+	-	`sha256:14176b1e4e3aa9aa2d76ac261bb7c5adea012f51de51e3da777e05f9d70aa565`  
+		Last Modified: Mon, 24 Mar 2025 18:43:47 GMT  
 		Size: 5.1 MB (5127936 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:70b46980ef10527609a20b8aebb87ae2f2d146895aa8073d87ad233c1d462c2d`  
-		Last Modified: Sat, 15 Feb 2025 12:27:44 GMT  
-		Size: 19.1 KB (19092 bytes)  
+	-	`sha256:e91bd0751d78a6690f238b666dd1aa6fc0088626b3be96c496323f29e72321db`  
+		Last Modified: Mon, 24 Mar 2025 18:43:47 GMT  
+		Size: 19.1 KB (19091 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9-ibm-semeru-21-jammy`
 
 ```console
-$ docker pull maven@sha256:ef7c5dad13db1a442019dfcc2ae2fd24047a9a84c5c8a6348998a9c5390347ff
+$ docker pull maven@sha256:714c89e6be64be0c60809a99be0fe67a7f39255b1240b273e67a96bd05f11432
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -37489,13 +37489,13 @@ $ docker pull maven@sha256:ef7c5dad13db1a442019dfcc2ae2fd24047a9a84c5c8a6348998a
 ### `maven:3.9-ibm-semeru-21-jammy` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:51523161c785bed263b84ca6a00461b3c8abce0d89a6fc2dd4cb74c7540beda4
+$ docker pull maven@sha256:05cf0ecfa0f8e1792b60b6bd489be263852a93adb636ad2acadd60d0b6a4f45a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **309.6 MB (309603358 bytes)**  
+-	Total Size: **309.6 MB (309593309 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7754ceafc392e53c52a1caa682471d6fdd9cbbd998110df03ec6b0ac5552b644`
+-	Image ID: `sha256:e13a0f84463254171ce952026a4e9998302678b312497ff14ad349ad38f6f2b6`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -37525,7 +37525,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -37563,73 +37563,73 @@ CMD ["mvn"]
 		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
 		Size: 29.5 MB (29535941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2dbee6db66b3a109b99cfbbf8b20394f707f6e9a798cb196d8998345b94090`  
-		Last Modified: Fri, 14 Feb 2025 22:33:08 GMT  
-		Size: 12.2 MB (12166780 bytes)  
+	-	`sha256:5f710835a9475496183f181ec0060a69b3dda00a27a55ddc47315fa91f739045`  
+		Last Modified: Mon, 24 Mar 2025 17:04:04 GMT  
+		Size: 12.2 MB (12166978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a059521ac4c046d050e148ad1df63168ae6227c0e14c64d2cd408b69956b432`  
-		Last Modified: Fri, 14 Feb 2025 22:33:11 GMT  
-		Size: 232.1 MB (232052202 bytes)  
+	-	`sha256:e0a806bd0a8185f0abc4089548c5580613bbcb7f9190cd032b2671d792f0399a`  
+		Last Modified: Mon, 24 Mar 2025 17:04:08 GMT  
+		Size: 232.1 MB (232052195 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:170fb7daf9cf20da9ad388bb0cb7780d1b6010fcfa681f0549755107d3b9c236`  
-		Last Modified: Fri, 14 Feb 2025 22:33:08 GMT  
-		Size: 6.3 MB (6340200 bytes)  
+	-	`sha256:dce91a6c69c87827baa832498dad35f4da188e7b57afeceb801c808464bbf448`  
+		Last Modified: Mon, 24 Mar 2025 17:04:03 GMT  
+		Size: 6.3 MB (6332860 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a575872eb641291f1d336849d8fa6acb438b47f55805cf75df0a818de5811db3`  
-		Last Modified: Fri, 14 Feb 2025 23:31:05 GMT  
-		Size: 20.3 MB (20336759 bytes)  
+	-	`sha256:0ad2888c2b3be6a409528b1968fd34f197666b0972631bb05f38efe3752277ac`  
+		Last Modified: Mon, 24 Mar 2025 17:08:04 GMT  
+		Size: 20.3 MB (20333858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9e931655c3c2bbd8d2c547bc78dbfff955ed7a7e01787cf2624ad44d6ea856f`  
-		Last Modified: Fri, 14 Feb 2025 23:31:05 GMT  
+	-	`sha256:59094b42d7f9756d2dc13c72419eb85bf334f3dbad2a9a07bcdc1cb90d78f89c`  
+		Last Modified: Mon, 24 Mar 2025 17:08:03 GMT  
 		Size: 9.2 MB (9170435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef24121de34bd176db97b046a2777de2fb636417b659dd6b0889858fbb598e04`  
-		Last Modified: Fri, 14 Feb 2025 23:31:04 GMT  
+	-	`sha256:073e6d3af0ab3402b8b7a2741ee2c4dddaaa82316b75bb9793710b7b5be707df`  
+		Last Modified: Mon, 24 Mar 2025 17:08:03 GMT  
 		Size: 854.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c44b586c3b47d59c61320dbcd39fdf92e3d77ba90ee215b0c5f4540e3529de77`  
-		Last Modified: Fri, 14 Feb 2025 23:31:04 GMT  
-		Size: 155.0 B  
+	-	`sha256:ebd8e7ed3ae42b2ce22e504f7affc5fe81bd33b0980a5ad84fddf03bd47afed5`  
+		Last Modified: Mon, 24 Mar 2025 17:08:03 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-ibm-semeru-21-jammy` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:2ade12a56075272ebdd7df7266da310fe1b986d9548308f872059ebe57cc1bcb
+$ docker pull maven@sha256:a22cbbd48eda7d8d7e4b205edbe3e17050ac340634bcc423697fd7f9684cfd80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5175562 bytes)**  
+-	Total Size: **5.2 MB (5177465 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:139210c8518f8cef4eb0fac393e5db083f1cf0afa6a7765e41c953233c325247`
+-	Image ID: `sha256:437d47a9b088e7dafb103a69573a4da17d1df3ecad8ce13dcd2d3405ca67a5ac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:291b2b6b8673873f696a57398c9bcafe6de71ba95d620bbb8d667309e5be5a23`  
-		Last Modified: Fri, 14 Feb 2025 23:31:04 GMT  
-		Size: 5.2 MB (5156472 bytes)  
+	-	`sha256:c21adb5efbc5aaf067a6e5c548ad0fb004057dc4a807af87d7f53102c2103ca8`  
+		Last Modified: Mon, 24 Mar 2025 17:08:03 GMT  
+		Size: 5.2 MB (5158375 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7e20ee56e76b081d9c90c336511ae51d311a1966be89cffc86b71bd6229982e1`  
-		Last Modified: Fri, 14 Feb 2025 23:31:04 GMT  
+	-	`sha256:bec64f6f26b3c71961f4cd6cebf30e74930b029616190770ae76db07004e3045`  
+		Last Modified: Mon, 24 Mar 2025 17:08:03 GMT  
 		Size: 19.1 KB (19090 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.9-ibm-semeru-21-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:9bf7b9022d3fc26c5b61bd38a02985530ff49811c71498add2ce45dee3ab36c2
+$ docker pull maven@sha256:8c4c07d136a8fd3c459b0fa5f00c614655f1eec69dbb717ba52ec3ec1816db8b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **299.1 MB (299086941 bytes)**  
+-	Total Size: **299.1 MB (299114203 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:07832a71b06a027ad9ad750c385c0b9ec1c62f232289a6866cae65eb0c969821`
+-	Image ID: `sha256:882a692052d490ba57389a895ec5a0876f9c469a55b9e7d11773df1dd2cff242`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -37659,7 +37659,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -37697,60 +37697,60 @@ CMD ["mvn"]
 		Last Modified: Sun, 26 Jan 2025 07:02:08 GMT  
 		Size: 27.4 MB (27358182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddc27324a20ba7e580ad161f241011b423fdcd169bcae5cc324e63f8db8fe6b2`  
-		Last Modified: Tue, 04 Feb 2025 09:47:59 GMT  
-		Size: 12.1 MB (12123437 bytes)  
+	-	`sha256:e483842b440e4fd1b12a18bab983fb09c8751e230e70f7c022dae2765ea706a5`  
+		Last Modified: Mon, 24 Mar 2025 17:01:02 GMT  
+		Size: 12.1 MB (12123514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17d27bcf99459dcd5fbe127a6c795010816c2d4680aea3d0560fdebf0a26c3f4`  
-		Last Modified: Sat, 15 Feb 2025 07:46:29 GMT  
+	-	`sha256:319fd86a1d76c3ef266b0abf69304bd7078ef846e56eb909ab81a24cfffcd9ef`  
+		Last Modified: Mon, 24 Mar 2025 17:21:20 GMT  
 		Size: 224.0 MB (224030028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d60d72b436b33a97ff7c58df0d80274a56643887002aa96d82231a557d3b59fd`  
-		Last Modified: Sat, 15 Feb 2025 07:46:23 GMT  
-		Size: 6.1 MB (6105173 bytes)  
+	-	`sha256:f77e17b7d4be90ba1be02ab2fc39c277da5061e65a66f7af7863f41dd05f96f4`  
+		Last Modified: Mon, 24 Mar 2025 17:21:09 GMT  
+		Size: 6.1 MB (6135849 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65430c8b3c8b5af6030382793e1ac0696cb6cd3352463d1370ae1be757b646d3`  
-		Last Modified: Sat, 15 Feb 2025 12:12:50 GMT  
-		Size: 20.3 MB (20298655 bytes)  
+	-	`sha256:140c8231d78a91938e2a895b47f32832144e2f4cd5556d310a517f9150bf16d1`  
+		Last Modified: Mon, 24 Mar 2025 18:36:14 GMT  
+		Size: 20.3 MB (20295162 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbcae2cc3b13eca8fbca2d56b7519b6208d784f428a0f744287c509ed18b2b8a`  
-		Last Modified: Sat, 15 Feb 2025 12:12:50 GMT  
+	-	`sha256:2baebd098b02f892150a86675ce0bab00fac93a70a08b3c795f5a6a759144a60`  
+		Last Modified: Mon, 24 Mar 2025 18:36:14 GMT  
 		Size: 9.2 MB (9170426 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93b83fbce0baa5c206c415d73bf9a507949b440aa1b427112eac04eaa8674fb9`  
-		Last Modified: Sat, 15 Feb 2025 12:12:50 GMT  
-		Size: 853.0 B  
+	-	`sha256:fb517c23d67b7dc3415f4dd8fca054a2da2b324eaf1d4c01cf834031189966d8`  
+		Last Modified: Mon, 24 Mar 2025 18:36:14 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2278e8548e4da50f53d61e5d5d981b9f036a69a11c7359323bb227ff6343502f`  
-		Last Modified: Sat, 15 Feb 2025 12:12:50 GMT  
-		Size: 155.0 B  
+	-	`sha256:ef15431f72bc2f3aa41a3b1bf24c5c8f06a69b70111305b5d43a49021b9969c1`  
+		Last Modified: Mon, 24 Mar 2025 18:36:14 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-ibm-semeru-21-jammy` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:4c2d27deb9570d2f843c932b873d40564e0ab52385386d21c63bf4e5c4d73562
+$ docker pull maven@sha256:5c2e04f8d3602d08882acbaa46415977f5910348cbef76ec6ed086c2d5eb109e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5172863 bytes)**  
+-	Total Size: **5.2 MB (5176374 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7eaf61a9d0160beaf10eb61ebd2ebd5a469cdeda53089fef5b071a13e6973225`
+-	Image ID: `sha256:f82dad4930df38ccaf9c96c22b79fa456fbaf4ce492e2fd4f028cdf651778f8a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f02bf91e77ddb30d4ee2a864099ff1eba66240165681beddec3645e75eec24c6`  
-		Last Modified: Sat, 15 Feb 2025 12:12:50 GMT  
-		Size: 5.2 MB (5153640 bytes)  
+	-	`sha256:8e532dac99522f0daca50a0b6dd1be7ab0ae3244dd608567ef81658af2dfdc27`  
+		Last Modified: Mon, 24 Mar 2025 18:36:14 GMT  
+		Size: 5.2 MB (5157151 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bc4d0d590c642f477cf127a78e47a4067ba83c9c3c7df3ed9ce4823aea46e3e8`  
-		Last Modified: Sat, 15 Feb 2025 12:12:49 GMT  
+	-	`sha256:696b4606ffea830d898ccdcfd7679a6e9693fae616e70a7d99d24fb056d07dcf`  
+		Last Modified: Mon, 24 Mar 2025 18:36:13 GMT  
 		Size: 19.2 KB (19223 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -37891,13 +37891,13 @@ $ docker pull maven@sha256:cd1c312350a5f812b1374de14ea54185fbb9e508e531eae839bf6
 ### `maven:3.9-ibm-semeru-21-jammy` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:662801a31026b49e17493bfbeb9fa5467b7969659003e14cb5cefaa87efc60b6
+$ docker pull maven@sha256:7b9434c220ef6cd4a2d6f7537ecff02896d864c0d89a9895ccb65bc14b94cc5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.1 MB (304147916 bytes)**  
+-	Total Size: **304.2 MB (304163271 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e060e4a3f838f8226572d8278c63f6e73df9dd236055fa0cd141489693802cdf`
+-	Image ID: `sha256:0a81d8660d8376c4b0dc63279a46037598a1be34d1adc0a20e59f7cc2fedc63b`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -37927,7 +37927,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -37969,63 +37969,63 @@ CMD ["mvn"]
 		Last Modified: Tue, 04 Feb 2025 08:13:22 GMT  
 		Size: 12.2 MB (12212279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93de31108a9d71a055d6fe9cbb66f3565833d50a6d30f4927e30bd632c267294`  
-		Last Modified: Sat, 15 Feb 2025 08:29:14 GMT  
-		Size: 227.8 MB (227809588 bytes)  
+	-	`sha256:621e9c3c340f572679575c56236f1a01568a7ba35c95a95de4ef466337b6ec2f`  
+		Last Modified: Mon, 24 Mar 2025 17:25:22 GMT  
+		Size: 227.8 MB (227809539 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15515c727a6111951d6e438a10cd7d040a46fc299fbb300cab090dea0d5a15ef`  
-		Last Modified: Sat, 15 Feb 2025 08:29:11 GMT  
-		Size: 6.5 MB (6452523 bytes)  
+	-	`sha256:4cd7c8269ce85e38cff1658a6363adc7ba61c03c04528c85813814ae978413f7`  
+		Last Modified: Mon, 24 Mar 2025 17:25:18 GMT  
+		Size: 6.5 MB (6470484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49b1bc8f2bb7b67ac7f8f1742b34e891b0c949aea2e36adb390e09b6560d46c1`  
-		Last Modified: Sat, 15 Feb 2025 12:28:54 GMT  
-		Size: 20.5 MB (20501118 bytes)  
+	-	`sha256:95e5fd48f6b6bbef015aeb650682e462871a64634b7b0e51557712f457747b67`  
+		Last Modified: Mon, 24 Mar 2025 18:44:34 GMT  
+		Size: 20.5 MB (20498566 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91ee2d36c760e22a3139660b56cbc6d1dc4bc0366bffe9b39c7ede74605d1759`  
-		Last Modified: Sat, 15 Feb 2025 12:28:54 GMT  
-		Size: 9.2 MB (9170436 bytes)  
+	-	`sha256:37d65b9846c0b7b9ba01f30128d9a499ff984667734109390308cc26ff39122c`  
+		Last Modified: Mon, 24 Mar 2025 18:44:34 GMT  
+		Size: 9.2 MB (9170428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41a9cf63be6794f9fbea39b2c3f2196e9bd3c000c489fbfe4c09ea9dd9090c7a`  
-		Last Modified: Sat, 15 Feb 2025 12:28:54 GMT  
-		Size: 853.0 B  
+	-	`sha256:ce694ff4a735b8f1e11f00ee02cf48f7fec6dc6311419a721619814b2ee1fc7d`  
+		Last Modified: Mon, 24 Mar 2025 18:44:34 GMT  
+		Size: 855.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da41604f1e4ee706d4223ae6a0750cbaebc5116e13b9b67a97cdc97e06d92554`  
-		Last Modified: Sat, 15 Feb 2025 12:28:54 GMT  
-		Size: 156.0 B  
+	-	`sha256:ffc62161afea6c5dc4e7357d9e1ee4cd44831d6143540bbc1f809c75472b0857`  
+		Last Modified: Mon, 24 Mar 2025 18:44:34 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-ibm-semeru-21-jammy` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:9524ed352e498e235da9b321570bf6f89dd9f5d6a215690c599fe615de886763
+$ docker pull maven@sha256:c20c8eb9bee0a479738cfcfe7ce89ced3f6f084e4595421ec7977dfc811190fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.2 MB (5170614 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ef747c47f2551a61b7c386ffa7added51dc769e973ddfe1acad2357abb96633`
+-	Image ID: `sha256:30205eea1a9fbbb362dddcea612268e7a754b0c975c235fd288a71f170b9f926`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d5261aab4e4dde39cf5887501fb1640a96aac2835c4fabb740b37e464ba8ae3e`  
-		Last Modified: Sat, 15 Feb 2025 12:28:54 GMT  
+	-	`sha256:73d493267ea0ec76d856859e5b1b8182e77dbb9a14f6620a20f0d21e726618d3`  
+		Last Modified: Mon, 24 Mar 2025 18:44:34 GMT  
 		Size: 5.2 MB (5151524 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a2f24588278cff97bbf4c9882cabc1d136a8a0e94d79f5fdff34995a3d9dea38`  
-		Last Modified: Sat, 15 Feb 2025 12:28:53 GMT  
+	-	`sha256:fee0284d5040ad2737358b508e1aed04cfd0ceb089d07bb43aa40311944f8f7f`  
+		Last Modified: Mon, 24 Mar 2025 18:44:33 GMT  
 		Size: 19.1 KB (19090 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9-ibm-semeru-23-jammy`
 
 ```console
-$ docker pull maven@sha256:dc484cd86115e36574c365f860ea95fafc16368d821db5683bbfce8b5b29efab
+$ docker pull maven@sha256:b153ed31da5e96c07690f8050564f2f783425ed457352c42ad2c0fc53ec0675d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -38176,13 +38176,13 @@ $ docker pull maven@sha256:e772cdcecb6e63ec7c0d1f3d4b9d9d9523412814bfc35baa424c9
 ### `maven:3.9-ibm-semeru-23-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:bad7187e8ed2e6430179a29ef4a93d58381f91842c507d177a6cd484660b6bde
+$ docker pull maven@sha256:772c9c596278021727c9c783665073bd20180cca6ff442c6658575b01f0e1bc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **306.3 MB (306278764 bytes)**  
+-	Total Size: **306.3 MB (306297857 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f3cb738b8ea9cf9af4872c343fe8a8393ba1077fc2071c548620b1bf8ae4484`
+-	Image ID: `sha256:6c9dd6d669faaf1a74ffae5ec5f2edc16544ab8c8a0b9dc687b9de093258fe0a`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -38212,7 +38212,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Mon, 23 Sep 2024 17:02:08 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Mon, 23 Sep 2024 17:02:08 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Mon, 23 Sep 2024 17:02:08 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 23 Sep 2024 17:02:08 GMT
@@ -38250,60 +38250,60 @@ CMD ["mvn"]
 		Last Modified: Sun, 26 Jan 2025 07:02:08 GMT  
 		Size: 27.4 MB (27358182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddc27324a20ba7e580ad161f241011b423fdcd169bcae5cc324e63f8db8fe6b2`  
-		Last Modified: Tue, 04 Feb 2025 09:47:59 GMT  
-		Size: 12.1 MB (12123437 bytes)  
+	-	`sha256:e483842b440e4fd1b12a18bab983fb09c8751e230e70f7c022dae2765ea706a5`  
+		Last Modified: Mon, 24 Mar 2025 17:01:02 GMT  
+		Size: 12.1 MB (12123514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:999e6a978f3e055febc7e7dce8d4f403286b838d5f4bcffe70af6b7957295bdc`  
-		Last Modified: Sat, 15 Feb 2025 07:53:09 GMT  
-		Size: 230.9 MB (230854954 bytes)  
+	-	`sha256:64dcf21fb5ad18ddf20c30910adf53ef4e963246626d03c9becf43832e3350b0`  
+		Last Modified: Mon, 24 Mar 2025 17:27:56 GMT  
+		Size: 230.9 MB (230854975 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:662ee496f4f92821148362e56879a9261d327f2922c0a732fdc8a632a56047fd`  
-		Last Modified: Sat, 15 Feb 2025 07:53:04 GMT  
-		Size: 6.5 MB (6471945 bytes)  
+	-	`sha256:2442d64cc615c54150c2ed31920e36750fd645c5587df7d8443661e41d565e92`  
+		Last Modified: Mon, 24 Mar 2025 17:27:51 GMT  
+		Size: 6.5 MB (6494492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9532c9b501e5928b65e53ca9b777b2eecb09845aa87fb4870eb95a436d9cddd7`  
-		Last Modified: Sat, 15 Feb 2025 11:51:58 GMT  
-		Size: 20.3 MB (20298772 bytes)  
+	-	`sha256:78aa7eab08e342be425ca8d0e1afd6aa0df7f1893e932147723f232ceda8c550`  
+		Last Modified: Mon, 24 Mar 2025 18:36:48 GMT  
+		Size: 20.3 MB (20295219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c82f64ddccca36d9ed56177d15e934807faa1c256ea9cc5a209dff58d1685cc`  
-		Last Modified: Sat, 15 Feb 2025 11:51:58 GMT  
-		Size: 9.2 MB (9170435 bytes)  
+	-	`sha256:1d7ffe067c9564276b215266d5f7fc389db5e0b7938a26a18c56d155bc56a853`  
+		Last Modified: Mon, 24 Mar 2025 18:36:48 GMT  
+		Size: 9.2 MB (9170433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:56a7682255337ab19a1c99eab89f93f1500d1f844f69c35fe86d1ed18c991a99`  
-		Last Modified: Sat, 15 Feb 2025 11:51:57 GMT  
-		Size: 853.0 B  
+	-	`sha256:34e0a1f974b1328814baa3eb85413439932235eecace16ea2dd3507637e962b4`  
+		Last Modified: Mon, 24 Mar 2025 18:36:47 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36fa96c0d9ee46b90f0c10d97b2f23083e1d0c5194be27857f011efe437ba945`  
-		Last Modified: Sat, 15 Feb 2025 11:51:58 GMT  
-		Size: 154.0 B  
+	-	`sha256:9eeb3371496c00951d778ba87e722a6c06a6fa5240acb33097c7c7f154dbdc7a`  
+		Last Modified: Mon, 24 Mar 2025 18:36:48 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-ibm-semeru-23-jammy` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:8f6a1779de5811079cc3f9249b0917fdb62a71cee5a6168a506e643e6e8d4a3d
+$ docker pull maven@sha256:de084d0b3b709aec7866bf4bc6015828bbd9eb5665de3d40d816b6e6199c9962
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5174157 bytes)**  
+-	Total Size: **5.2 MB (5177668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:71185936cef3c1b75765ae73fd352bd77017db7230011dd45876ac999431265c`
+-	Image ID: `sha256:39b6a725be93e39f5b39f160026b21c68aa196d0984c85839a3d0735d6ba57ac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4c3192294e33ddc4371933cc0829b7c991227d1eb90ef8a680785c0c353c7588`  
-		Last Modified: Sat, 15 Feb 2025 11:51:57 GMT  
-		Size: 5.2 MB (5154934 bytes)  
+	-	`sha256:cc44d705bb8efcf60b5492919a98fe7b1692777273aac1d25eb19bd308be1c9e`  
+		Last Modified: Mon, 24 Mar 2025 18:36:47 GMT  
+		Size: 5.2 MB (5158445 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ad17a41747c19c4a79374bbfc2cd7d382f4650f1249ac1fb41f8138229b77389`  
-		Last Modified: Sat, 15 Feb 2025 11:51:57 GMT  
+	-	`sha256:baa9f15ed90d0761bf33ed82bc503daa53bd1d051cf97ae22b218c4693019c41`  
+		Last Modified: Mon, 24 Mar 2025 18:36:47 GMT  
 		Size: 19.2 KB (19223 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -38444,13 +38444,13 @@ $ docker pull maven@sha256:2bb515ed1008ca8d22b18e94858ea8adec9f97e045827549b68ad
 ### `maven:3.9-ibm-semeru-23-jammy` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:cb5772fdc5dbb93e5acc9177e0e4d58d816a3deeae91ce34d4b55a4bc3942086
+$ docker pull maven@sha256:abe08b078992e8d12db3a9428d74fdb14a182612da0a3253abf5361d9d4100cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **311.4 MB (311391040 bytes)**  
+-	Total Size: **311.5 MB (311463412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56741e4198eb17769f697f93557666c0121ac649e2f66a8d943b2926f81afeda`
+-	Image ID: `sha256:f348b66a95c069e9cb06251742c9dd6fdf90dfe1269c85de2aa287f89db9ade2`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -38480,7 +38480,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Mon, 23 Sep 2024 17:02:08 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Mon, 23 Sep 2024 17:02:08 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Mon, 23 Sep 2024 17:02:08 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 23 Sep 2024 17:02:08 GMT
@@ -38522,56 +38522,56 @@ CMD ["mvn"]
 		Last Modified: Tue, 04 Feb 2025 08:13:22 GMT  
 		Size: 12.2 MB (12212279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7d765fed4df6c8dfd6fa0482032a5abc1e11a713c266cd911e7bebb466e581e`  
-		Last Modified: Sat, 15 Feb 2025 08:38:26 GMT  
-		Size: 234.6 MB (234645637 bytes)  
+	-	`sha256:dbd770f92683665651c4120314e56e2fae1cea1708ca505e0304723945ccbe48`  
+		Last Modified: Mon, 24 Mar 2025 17:33:20 GMT  
+		Size: 234.6 MB (234645579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1d42cf1769739385471ebe5b3db3ef8edde99c59d569df3d5a212dd3682cd56`  
-		Last Modified: Sat, 15 Feb 2025 08:38:22 GMT  
-		Size: 6.9 MB (6859525 bytes)  
+	-	`sha256:1019db1d317f37797053cdf0cd1f9ca75c6f5be579c58329da6a0b69ff21ce7d`  
+		Last Modified: Mon, 24 Mar 2025 17:33:17 GMT  
+		Size: 6.9 MB (6934589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9af0b660d12b2eedfc4ed385ec0e27c259e14071c04b648b4a17d9009cef1ed6`  
-		Last Modified: Sat, 15 Feb 2025 12:29:59 GMT  
-		Size: 20.5 MB (20501191 bytes)  
+	-	`sha256:8b18a4466a147925d00b840d4d0c9fad77a7da0ab3c4f8082171d74795b84ab1`  
+		Last Modified: Mon, 24 Mar 2025 18:45:15 GMT  
+		Size: 20.5 MB (20498565 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06b9c1bb40191820d5f6bc35a74f0b2a103430e07ec8f92d5c27573513eab618`  
-		Last Modified: Sat, 15 Feb 2025 12:29:58 GMT  
-		Size: 9.2 MB (9170436 bytes)  
+	-	`sha256:71fea21709931f69460b78f600090fb3afda3bb6e854c67dcb64841868953ff3`  
+		Last Modified: Mon, 24 Mar 2025 18:45:14 GMT  
+		Size: 9.2 MB (9170427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd1f8650cc84cd456e4cd412947cd7052307daf5b57397dffa01c76ff00511c4`  
-		Last Modified: Sat, 15 Feb 2025 12:29:58 GMT  
-		Size: 854.0 B  
+	-	`sha256:6565d6e5777c6c97b34b93899570943f86a5b29518dc265695c29feae31053bd`  
+		Last Modified: Mon, 24 Mar 2025 18:45:13 GMT  
+		Size: 855.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:091250526858e001694bbba19c33071e2d24bf0ebdd06f4497fd71d6b0d5ba4e`  
-		Last Modified: Sat, 15 Feb 2025 12:29:58 GMT  
+	-	`sha256:b813c4c077b2910d7ab2539e6a183fe64ef0d5d722928182f2adb2fca3b297f1`  
+		Last Modified: Mon, 24 Mar 2025 18:45:14 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9-ibm-semeru-23-jammy` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:f16e8c1816e81dbb55194e8eb050b28e9acf73857b4b1fc4c281f352daf5da93
+$ docker pull maven@sha256:d42b17bdc26eeef599bd535709df27d014098a8273c75d210a515451cce30b1f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.2 MB (5171908 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c8cb14494952a2a1396deeee6b7cebbfe349705c9b65d960475f26dd17a8963`
+-	Image ID: `sha256:174c45a9e048104612bd786b40328af2926f42603ff5869f9742004b384ce264`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a4b07ca81e8abcf3abc0df3c573780a7a1e976bcb0e42dd6e4ce70f3b25b132b`  
-		Last Modified: Sat, 15 Feb 2025 12:29:59 GMT  
+	-	`sha256:dc6364317a7150cb00b3e1d9950e14c3ab3f3421f05249854ff00f00d7db33e1`  
+		Last Modified: Mon, 24 Mar 2025 18:45:13 GMT  
 		Size: 5.2 MB (5152818 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8e548e98922b37c3aafb2da53e51dfaf9936a61b432f81215d7ddbfabb7bd9c1`  
-		Last Modified: Sat, 15 Feb 2025 12:29:58 GMT  
+	-	`sha256:d5892c56574e0b266922f5c27c29f114f95f1b73ac97f82ef69492928580935e`  
+		Last Modified: Mon, 24 Mar 2025 18:45:13 GMT  
 		Size: 19.1 KB (19090 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -56876,7 +56876,7 @@ $ docker pull maven@sha256:c229a5181d0bc16d4de6b554d64f9a91c162095f373ab77c5d939
 ## `maven:3.9.9-ibm-semeru-11-focal`
 
 ```console
-$ docker pull maven@sha256:e7c64aed3a241b72b8dcf02b8964a715e7bbb416200e234be247e7f00067c3f8
+$ docker pull maven@sha256:305cb8b4b9ae66ed302d8f751e11826beacaaa546add65edf398d0e39360ccbd
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -57029,13 +57029,13 @@ $ docker pull maven@sha256:8f0ea724de921c065c3611cecac9410a2272496656bf8d09b7531
 ### `maven:3.9.9-ibm-semeru-11-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:a9a221531da08f110162cb1502a7fb8880d692d27aa4871ca920bd07d37663e3
+$ docker pull maven@sha256:ac9c8e71f573d014d0c611f2558f116d180e89472e2e6f3b486388de9b491a4f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **293.1 MB (293113345 bytes)**  
+-	Total Size: **293.2 MB (293152008 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:dbdba2374b869533281207a7cc62ca134a4b96ef10c6f0511f3fb4c3bc952c0c`
+-	Image ID: `sha256:dca0d50e55ee84e7b07266889430a43472b9bf510bcd42fdf43c53d13cea56c4`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -57065,7 +57065,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 CMD ["jshell"]
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -57105,60 +57105,60 @@ CMD ["mvn"]
 		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a34608f1b65b18d00a12907c088ede389ecc55d034a8559a11fbbdb60cd4afa9`  
-		Last Modified: Sat, 15 Feb 2025 07:24:58 GMT  
-		Size: 15.9 MB (15937925 bytes)  
+	-	`sha256:106eaed27a13a2bcd67ca45fe8b16e8b489640ce2e78661c8b9cd4d9de726677`  
+		Last Modified: Mon, 24 Mar 2025 16:59:29 GMT  
+		Size: 15.9 MB (15938279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:768e8813126d284a5e9f3e5a42003361704b4324902ef656d0f395fe3b37757f`  
-		Last Modified: Sat, 15 Feb 2025 07:32:04 GMT  
-		Size: 207.0 MB (206969689 bytes)  
+	-	`sha256:b86760a64a930ca9c420836917f2164c1d09768041a28b24a8d1de0678b04112`  
+		Last Modified: Mon, 24 Mar 2025 17:07:01 GMT  
+		Size: 207.0 MB (206969721 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:77f0ccd7bc0362b5405e2159a172bfc796bcd193110cc8e81da6cad7c7384633`  
-		Last Modified: Sat, 15 Feb 2025 07:31:57 GMT  
-		Size: 5.2 MB (5169671 bytes)  
+	-	`sha256:7f142ce0ffb95a4aa40a4e7daff0139e957885e634c3470a638452e158a06a57`  
+		Last Modified: Mon, 24 Mar 2025 17:06:56 GMT  
+		Size: 5.2 MB (5197928 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b332c5ec30c5552967ddb158ccc8ff4321558be9fa2f11aa10375310cc516656`  
-		Last Modified: Sat, 15 Feb 2025 11:50:36 GMT  
-		Size: 29.9 MB (29890756 bytes)  
+	-	`sha256:08bab46255dc6f6396c66abf1da4846a3163e4457bbe8b2080915547a25f8fcb`  
+		Last Modified: Mon, 24 Mar 2025 18:34:55 GMT  
+		Size: 29.9 MB (29900779 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:fdd3ceac3969b981a03257049c9c31e832d834cd7d70b97458bdce15f4dc4ea5`  
-		Last Modified: Sat, 15 Feb 2025 11:50:36 GMT  
-		Size: 9.2 MB (9170436 bytes)  
+	-	`sha256:9cceeca8d4577d1c50deedff9132a3dd87dc48a07c11bd393c1b44ebf9445e32`  
+		Last Modified: Mon, 24 Mar 2025 18:34:54 GMT  
+		Size: 9.2 MB (9170434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:4ceaf415319da5b8a460a88f1d6c06444956d36eba7115e349f78dc23690d1d3`  
-		Last Modified: Sat, 15 Feb 2025 11:50:35 GMT  
+	-	`sha256:c85286ef38b6963ea3e402a747f30e2fb647e80b632392f00f43589e501d9a2a`  
+		Last Modified: Mon, 24 Mar 2025 18:34:54 GMT  
 		Size: 853.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7318a07a8d5fa36629d4a9b98e2cb5f8b35ef06f62b3073ec6b3effa6ea65ff0`  
-		Last Modified: Sat, 15 Feb 2025 11:50:35 GMT  
-		Size: 155.0 B  
+	-	`sha256:035dbef0dc68985b7f0b3275332c7109b4d074e4a87725546827aeadf73caad8`  
+		Last Modified: Mon, 24 Mar 2025 18:34:54 GMT  
+		Size: 154.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-ibm-semeru-11-focal` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:f3b258614a79ac2043c0da5301701dc00cbd23a2c4e1f26035a76f70c7af0eb4
+$ docker pull maven@sha256:fe46366416680bff44f0607c5f6f3c8a1f655808838e76983d790f9d962eb2e7
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.2 MB (5165775 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:94e3ac71749858bcdeeedea4e58dc5e3577d0d3cfdc2faf5af0bd40faaa2a4bd`
+-	Image ID: `sha256:8bde98089e1ce70b2570b6f51f37cef69ec708c8dff2a6013b735e2230bb6c53`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:bd2755bb9a77becbea02657bb009eedd56d4c887a14a8588cd4f8e5b2893b3ce`  
-		Last Modified: Sat, 15 Feb 2025 11:50:35 GMT  
+	-	`sha256:62a8902e0f8720d1ce43cc903cf2c2dab906371906484aabe822836c8e7d0442`  
+		Last Modified: Mon, 24 Mar 2025 18:34:54 GMT  
 		Size: 5.1 MB (5146550 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:0c711de7c272ac207a1ed93dd2e7d81771406c1f70054f08a885b5656f5f1017`  
-		Last Modified: Sat, 15 Feb 2025 11:50:34 GMT  
+	-	`sha256:3db15c8badc2cddb9782b9ea44dd8137ec572e244412c26896f91f846d6645e6`  
+		Last Modified: Mon, 24 Mar 2025 18:34:54 GMT  
 		Size: 19.2 KB (19225 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -57301,13 +57301,13 @@ $ docker pull maven@sha256:bf237b282ab95b6c9f33c782170d1e27eecc11f20d9ac27d35d0c
 ### `maven:3.9.9-ibm-semeru-11-focal` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:b21284cb9e54add47f72875e45d3fdd21bc473dc82c5e3b0969e1245c9859a7a
+$ docker pull maven@sha256:be952b8e9a27a6909c465699b84059027e0e1ec1bc8dab8e07c2ffdc00d031bb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **296.9 MB (296901654 bytes)**  
+-	Total Size: **296.9 MB (296886655 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:97ce4cd4b40a824de546e1cec6667952356858c84fe347a9e6f2800c26ce7ffb`
+-	Image ID: `sha256:c666c8945ab675dc5d7ca29cd80b82648ea5ad84533c8630feddd182f3121658`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -57337,7 +57337,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 CMD ["jshell"]
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -57377,67 +57377,67 @@ CMD ["mvn"]
 		Last Modified: Fri, 11 Oct 2024 04:41:53 GMT  
 		Size: 26.4 MB (26365979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93b26001b7ba5a9ded9e237306ee8b2177a38d0384c13ce0b2ba3aca7a939b86`  
-		Last Modified: Sat, 15 Feb 2025 08:00:00 GMT  
-		Size: 15.8 MB (15766032 bytes)  
+	-	`sha256:0eef949dbc8bb43f7b9422236b6260ebe65872eebd3f77b2c46f7b0b588c18fb`  
+		Last Modified: Mon, 24 Mar 2025 17:00:38 GMT  
+		Size: 15.8 MB (15766702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1303b8ee060911cb5dd46d808831070efd51ffccdf655b0f92b5acb2a5d8b53f`  
-		Last Modified: Sat, 15 Feb 2025 08:09:17 GMT  
-		Size: 210.6 MB (210590180 bytes)  
+	-	`sha256:f56413ad176235b8e153b0916f55f7b211a30daf3d21f34ad2312f6bdad5716b`  
+		Last Modified: Mon, 24 Mar 2025 17:08:47 GMT  
+		Size: 210.6 MB (210590225 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d53e7a5c6b85ab3b815365a22936814c06fd5e99527336c46f1098b086076eab`  
-		Last Modified: Sat, 15 Feb 2025 08:09:13 GMT  
-		Size: 5.5 MB (5535790 bytes)  
+	-	`sha256:a314cb595521b129cccf078a161675b38dedb058dafafe7d6c4f8e1068b20788`  
+		Last Modified: Mon, 24 Mar 2025 17:08:44 GMT  
+		Size: 5.5 MB (5505256 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f9c61047454bbe205a0ada188c8c7bfe1c7a6e2193bf6787bfa0084153bbf785`  
-		Last Modified: Sat, 15 Feb 2025 12:25:41 GMT  
-		Size: 29.5 MB (29472202 bytes)  
+	-	`sha256:4b7b6e4345b66bf679d72a5699f8719086346d9140aa4ff1bcb97821fe8cfcd7`  
+		Last Modified: Mon, 24 Mar 2025 18:43:06 GMT  
+		Size: 29.5 MB (29487026 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:50aec1be5d8e1809b5376fa257f7e94f754e4150f81f13a680bde24210cc8561`  
-		Last Modified: Sat, 15 Feb 2025 12:25:40 GMT  
-		Size: 9.2 MB (9170431 bytes)  
+	-	`sha256:7b3307ec931243c7b68ad73681ae5f4c8d1e342203cbe7705a842c4a7e4f12af`  
+		Last Modified: Mon, 24 Mar 2025 18:43:06 GMT  
+		Size: 9.2 MB (9170427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0df8d5d6d827f5c7633791d3566ecb3a930ff0f73603af67a6458dea84e78d5c`  
-		Last Modified: Sat, 15 Feb 2025 12:25:39 GMT  
-		Size: 852.0 B  
+	-	`sha256:7308c8aff00212e0f4b5f3bdf848fb32909b24943eeb0277fe0f493cc4993a27`  
+		Last Modified: Mon, 24 Mar 2025 18:43:05 GMT  
+		Size: 853.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:19aa5ae26f8118a691dd014961f86bc2b0c353947f819f6393980c141cd00e34`  
-		Last Modified: Sat, 15 Feb 2025 12:25:40 GMT  
-		Size: 156.0 B  
+	-	`sha256:0e2ec8761fc548d643eaab21008872a67cf86187fd1ad04c0e63bba3be431bda`  
+		Last Modified: Mon, 24 Mar 2025 18:43:05 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-ibm-semeru-11-focal` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:b712032bf656d76fb105dca57eb63b3f24e46912ad9307fa7a651d73a1ce8c67
+$ docker pull maven@sha256:5aac5620071618fe3094cfcc2955761df3dfe3913f4688139a83d75cd7f5d3f6
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.2 MB (5163384 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:1d06b0c29939df537ca42af7e6a2db73c7a0700ef8b65d3272f9b333fc3621bb`
+-	Image ID: `sha256:76d682b7c0ea71d5898985e96b9cc9657fb22885f566c54f7697c45ac265f31b`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:580f4a0936b158fb396576d2a6703e6c408ce90c057901c07aaf643b42ee2158`  
-		Last Modified: Sat, 15 Feb 2025 12:25:39 GMT  
+	-	`sha256:1ef85b5269269196e2e866dcc13cf99dfecbbc75b4c93d08eed549922dbcd82a`  
+		Last Modified: Mon, 24 Mar 2025 18:43:06 GMT  
 		Size: 5.1 MB (5144292 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:b716ba73341b2a46e2a8271870148ef0212993928d95113708eda95bd1b9f406`  
-		Last Modified: Sat, 15 Feb 2025 12:25:39 GMT  
+	-	`sha256:3a4a033a2cb77079126344917ab5254a768657b37346f73c87a32ed5aa9f1c0c`  
+		Last Modified: Mon, 24 Mar 2025 18:43:05 GMT  
 		Size: 19.1 KB (19092 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9.9-ibm-semeru-17-focal`
 
 ```console
-$ docker pull maven@sha256:480ce665156c361fe46b262226000f2289b3e0ebae099604411f7eb3fd3d7b70
+$ docker pull maven@sha256:8931581578c7aa19162acf1b2c22359aa8577b40cae2ae07f7f1abb32aec8ca6
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -57588,13 +57588,13 @@ $ docker pull maven@sha256:1756576ce8df2c7b540223b5b53feca700e68a70dd4f224eb2cf9
 ### `maven:3.9.9-ibm-semeru-17-focal` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:6193783aa848c077e75d8ed9844d7d67304fea3764709a25bdfc2397dc4ddc19
+$ docker pull maven@sha256:40fc8a46fd16993d695ad3358fe25a4e2b34de4542bc655273af97349e2818e0
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **297.1 MB (297138170 bytes)**  
+-	Total Size: **297.1 MB (297117063 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:cbdb752bea9ac47b05139c08af898d3eeca8b1ae8c1761febcafe7d5556302e4`
+-	Image ID: `sha256:d98a6ad124b4d991f0427ef01c74e8c62dfedc767f5a2850badeb0a1920e79c3`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -57624,7 +57624,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -57662,60 +57662,60 @@ CMD ["mvn"]
 		Last Modified: Fri, 11 Oct 2024 04:41:30 GMT  
 		Size: 26.0 MB (25973828 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a34608f1b65b18d00a12907c088ede389ecc55d034a8559a11fbbdb60cd4afa9`  
-		Last Modified: Sat, 15 Feb 2025 07:24:58 GMT  
-		Size: 15.9 MB (15937925 bytes)  
+	-	`sha256:106eaed27a13a2bcd67ca45fe8b16e8b489640ce2e78661c8b9cd4d9de726677`  
+		Last Modified: Mon, 24 Mar 2025 16:59:29 GMT  
+		Size: 15.9 MB (15938279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b915ef4a327a5abba6389adf15dfa83aa2ab2ccc595ee692b4edc30dff6bb85f`  
-		Last Modified: Sat, 15 Feb 2025 07:38:35 GMT  
-		Size: 210.3 MB (210293500 bytes)  
+	-	`sha256:d0f3c055cf9dbac24955061e96cab8826f264fc4feebefcff82ad6b42a3305ce`  
+		Last Modified: Mon, 24 Mar 2025 17:13:30 GMT  
+		Size: 210.3 MB (210293461 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9b92d1e78ffdbc5c1efbf736b51c05a40c64c06d79e5654362415ad5014627f6`  
-		Last Modified: Sat, 15 Feb 2025 07:38:31 GMT  
-		Size: 5.9 MB (5870465 bytes)  
+	-	`sha256:e7de8b5e13775493e7f57d62d9b9464f3344701257617c18bb56bcbd054c8838`  
+		Last Modified: Mon, 24 Mar 2025 17:13:26 GMT  
+		Size: 5.8 MB (5839234 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9dbb895c0d0f233e09da57b6693bff9112775a502af1811dc9183b3517ca44bb`  
-		Last Modified: Sat, 15 Feb 2025 11:51:13 GMT  
-		Size: 29.9 MB (29890983 bytes)  
+	-	`sha256:1e7d18817c08603d30ecd4121a47bd53f1aa89373e63ac22ccb8201f7ed6dd46`  
+		Last Modified: Mon, 24 Mar 2025 18:35:28 GMT  
+		Size: 29.9 MB (29900791 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:afc33c15939f32c2e4138e57241a4de673af757b6a99b6296ee09b445a7649ca`  
-		Last Modified: Sat, 15 Feb 2025 11:51:08 GMT  
-		Size: 9.2 MB (9170431 bytes)  
+	-	`sha256:43f2d526a283d9ae54e6ec7b04e75b860ce429bcb4a05f4cd486330de2841ac0`  
+		Last Modified: Mon, 24 Mar 2025 18:35:27 GMT  
+		Size: 9.2 MB (9170433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:f70ed2e1084ece9af8ba4bbfabefc372c3a093d5c85f868011aa812b62b67111`  
-		Last Modified: Sat, 15 Feb 2025 11:51:08 GMT  
-		Size: 852.0 B  
+	-	`sha256:06b59b5010b3f9e2b4d5db6fb3fc543e8ffc755bd40e87d5aabdb5db3ae44acc`  
+		Last Modified: Mon, 24 Mar 2025 18:35:27 GMT  
+		Size: 850.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1ca9acc0176a2dce956d81c3f5b522d3d745eb3d77a6fa4b7710e4eb16804907`  
-		Last Modified: Sat, 15 Feb 2025 11:51:08 GMT  
-		Size: 154.0 B  
+	-	`sha256:6962151582830b648b7a7038f2dcb0a6a01588e851e5fe0f0f702aba0ba9c2e0`  
+		Last Modified: Mon, 24 Mar 2025 18:35:27 GMT  
+		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-ibm-semeru-17-focal` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:df4268e7a34607dab40f946a6930d9be496ae4a7b94a9a705165067a237b50db
+$ docker pull maven@sha256:f536aacad0482e35461e72fd2199ff892d14f08749fc3fa2fc72f4ef4f9d4aac
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.2 MB (5150036 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2cad0eca0a8bc577927d5ef4e631e0f53302d37ddafc21985a9ce5de1c041cb7`
+-	Image ID: `sha256:8abb62794195ccaea72582e41bf659540bcb2bdeca5aeea950c9be7e2919c7eb`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:65da14fd75f202b977680c544ac8017bf6e9f6d8edcbd465093dad992c15f30a`  
-		Last Modified: Sat, 15 Feb 2025 11:51:07 GMT  
+	-	`sha256:eb47a75c57cdcd6f5d7a4db6705d2cb849e7544c187f705ff80aaa35fce5bb34`  
+		Last Modified: Mon, 24 Mar 2025 18:35:27 GMT  
 		Size: 5.1 MB (5130811 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:2e011105b192bd87fa35a3ea074a1abee1fb3e753b795fa749e2531f8cbb8296`  
-		Last Modified: Sat, 15 Feb 2025 11:51:07 GMT  
+	-	`sha256:4706100596f16c09b4d021b8789774aa0c086d7d5572480a8719e4b0fa96cf86`  
+		Last Modified: Mon, 24 Mar 2025 18:35:27 GMT  
 		Size: 19.2 KB (19225 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -57856,13 +57856,13 @@ $ docker pull maven@sha256:3a2a5010f50875be7ed50af03158b2c88f7629f5a4b258472fe5f
 ### `maven:3.9.9-ibm-semeru-17-focal` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:86ba70ae55bfd43585e3444e35c4299d04e2aba2bbcc83522710efb21d766420
+$ docker pull maven@sha256:daae6185d9737b5c206993d12a9d69d8cc1fc518f7a1d6a3be3b12c4565a0bdf
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **301.6 MB (301585080 bytes)**  
+-	Total Size: **301.6 MB (301602030 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:ea013f8c86b4d735ba4375cd2e6375fd8f468cc2eea05787f6940ac1d63cd2f7`
+-	Image ID: `sha256:c2d287531e0817a96e865606952c49b45b1f5fec3118619e9e83715970ea0eaf`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -57892,7 +57892,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -57930,67 +57930,67 @@ CMD ["mvn"]
 		Last Modified: Fri, 11 Oct 2024 04:41:53 GMT  
 		Size: 26.4 MB (26365979 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93b26001b7ba5a9ded9e237306ee8b2177a38d0384c13ce0b2ba3aca7a939b86`  
-		Last Modified: Sat, 15 Feb 2025 08:00:00 GMT  
-		Size: 15.8 MB (15766032 bytes)  
+	-	`sha256:0eef949dbc8bb43f7b9422236b6260ebe65872eebd3f77b2c46f7b0b588c18fb`  
+		Last Modified: Mon, 24 Mar 2025 17:00:38 GMT  
+		Size: 15.8 MB (15766702 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7022db4c582c4a94461186c5bdeba8219a757faf04e3488582c1995b06f87d0f`  
-		Last Modified: Sat, 15 Feb 2025 08:18:24 GMT  
-		Size: 214.6 MB (214572972 bytes)  
+	-	`sha256:c89a65f0bbd6c3b4f551031d830569e78080346eff2edf84a568304411fcfe8a`  
+		Last Modified: Mon, 24 Mar 2025 17:19:04 GMT  
+		Size: 214.6 MB (214572968 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:1d57c79d544f862bfa783a18580b564d805b4fef09b1bc19cbd85cccef5de0e0`  
-		Last Modified: Sat, 15 Feb 2025 08:18:20 GMT  
-		Size: 6.2 MB (6236429 bytes)  
+	-	`sha256:c3d2ff5b95e0ad95bd4ac4b11453107e77aa11035604f6c816ca6bafe41f8ef5`  
+		Last Modified: Mon, 24 Mar 2025 17:19:00 GMT  
+		Size: 6.2 MB (6237986 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:43af7a9b0e9317c821cc4f45738c11ce1d9dfde9b66ec3b786922b19e0e71ae1`  
-		Last Modified: Sat, 15 Feb 2025 12:27:45 GMT  
-		Size: 29.5 MB (29472196 bytes)  
+	-	`sha256:4c08c961a1602e9fb56ee3d12d192e411035d7928ff16a971cf9b2f3fa4feff0`  
+		Last Modified: Mon, 24 Mar 2025 18:43:48 GMT  
+		Size: 29.5 MB (29486922 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:6b51a75a81b8d34dbe3359dfffbe434686bdffbc3f88407744f9c9f88bb78649`  
-		Last Modified: Sat, 15 Feb 2025 12:27:45 GMT  
-		Size: 9.2 MB (9170432 bytes)  
+	-	`sha256:751c13e0a433ca9c0264ee12ffe7a78cd36bf2ee81dcea9b89b36f74d35c6d00`  
+		Last Modified: Mon, 24 Mar 2025 18:43:48 GMT  
+		Size: 9.2 MB (9170434 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2ee892575636550c919bd979ccc7c2cc5fab5e9e9593a753e5bc192fbd53e1e8`  
-		Last Modified: Sat, 15 Feb 2025 12:27:44 GMT  
-		Size: 853.0 B  
+	-	`sha256:90c84972a60e931c564d320944b91d2cb10c924ad948a1c033fce949c42ed496`  
+		Last Modified: Mon, 24 Mar 2025 18:43:47 GMT  
+		Size: 852.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:b23310af8fa81802bb1c145bfe41e18f505340d05ea2fc44c73c9a4d6950bb31`  
-		Last Modified: Sat, 15 Feb 2025 12:27:45 GMT  
+	-	`sha256:76f43da57569ae8b80485d258776749ce3789bd6af8471a410858306320d5a73`  
+		Last Modified: Mon, 24 Mar 2025 18:43:47 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-ibm-semeru-17-focal` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:4797f84bc0146cb73f58d7f507cf5ce88138c7d96c82740ccb58cd44f30d4167
+$ docker pull maven@sha256:1e9e48a4ce3f5f86194b31c2d3877bb8c8cfa14196021933f26a50d5ad15589e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.1 MB (5147028 bytes)**  
+-	Total Size: **5.1 MB (5147027 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:418bfca99287968e932321b260786afb205b55970b0b2eb8305a1029524869ef`
+-	Image ID: `sha256:4f05ba384b7d92349012ae07574316700b20cd848b2a9944af31f434fcd45bd6`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:69eadc4f7307b0b944e1b7787f4a0c15e85861e2ab3eb9016d02b31c388dd8a5`  
-		Last Modified: Sat, 15 Feb 2025 12:27:44 GMT  
+	-	`sha256:14176b1e4e3aa9aa2d76ac261bb7c5adea012f51de51e3da777e05f9d70aa565`  
+		Last Modified: Mon, 24 Mar 2025 18:43:47 GMT  
 		Size: 5.1 MB (5127936 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:70b46980ef10527609a20b8aebb87ae2f2d146895aa8073d87ad233c1d462c2d`  
-		Last Modified: Sat, 15 Feb 2025 12:27:44 GMT  
-		Size: 19.1 KB (19092 bytes)  
+	-	`sha256:e91bd0751d78a6690f238b666dd1aa6fc0088626b3be96c496323f29e72321db`  
+		Last Modified: Mon, 24 Mar 2025 18:43:47 GMT  
+		Size: 19.1 KB (19091 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9.9-ibm-semeru-21-jammy`
 
 ```console
-$ docker pull maven@sha256:ef7c5dad13db1a442019dfcc2ae2fd24047a9a84c5c8a6348998a9c5390347ff
+$ docker pull maven@sha256:714c89e6be64be0c60809a99be0fe67a7f39255b1240b273e67a96bd05f11432
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -58007,13 +58007,13 @@ $ docker pull maven@sha256:ef7c5dad13db1a442019dfcc2ae2fd24047a9a84c5c8a6348998a
 ### `maven:3.9.9-ibm-semeru-21-jammy` - linux; amd64
 
 ```console
-$ docker pull maven@sha256:51523161c785bed263b84ca6a00461b3c8abce0d89a6fc2dd4cb74c7540beda4
+$ docker pull maven@sha256:05cf0ecfa0f8e1792b60b6bd489be263852a93adb636ad2acadd60d0b6a4f45a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **309.6 MB (309603358 bytes)**  
+-	Total Size: **309.6 MB (309593309 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7754ceafc392e53c52a1caa682471d6fdd9cbbd998110df03ec6b0ac5552b644`
+-	Image ID: `sha256:e13a0f84463254171ce952026a4e9998302678b312497ff14ad349ad38f6f2b6`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -58043,7 +58043,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -58081,73 +58081,73 @@ CMD ["mvn"]
 		Last Modified: Sun, 26 Jan 2025 07:02:02 GMT  
 		Size: 29.5 MB (29535941 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:bf2dbee6db66b3a109b99cfbbf8b20394f707f6e9a798cb196d8998345b94090`  
-		Last Modified: Fri, 14 Feb 2025 22:33:08 GMT  
-		Size: 12.2 MB (12166780 bytes)  
+	-	`sha256:5f710835a9475496183f181ec0060a69b3dda00a27a55ddc47315fa91f739045`  
+		Last Modified: Mon, 24 Mar 2025 17:04:04 GMT  
+		Size: 12.2 MB (12166978 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:5a059521ac4c046d050e148ad1df63168ae6227c0e14c64d2cd408b69956b432`  
-		Last Modified: Fri, 14 Feb 2025 22:33:11 GMT  
-		Size: 232.1 MB (232052202 bytes)  
+	-	`sha256:e0a806bd0a8185f0abc4089548c5580613bbcb7f9190cd032b2671d792f0399a`  
+		Last Modified: Mon, 24 Mar 2025 17:04:08 GMT  
+		Size: 232.1 MB (232052195 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:170fb7daf9cf20da9ad388bb0cb7780d1b6010fcfa681f0549755107d3b9c236`  
-		Last Modified: Fri, 14 Feb 2025 22:33:08 GMT  
-		Size: 6.3 MB (6340200 bytes)  
+	-	`sha256:dce91a6c69c87827baa832498dad35f4da188e7b57afeceb801c808464bbf448`  
+		Last Modified: Mon, 24 Mar 2025 17:04:03 GMT  
+		Size: 6.3 MB (6332860 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a575872eb641291f1d336849d8fa6acb438b47f55805cf75df0a818de5811db3`  
-		Last Modified: Fri, 14 Feb 2025 23:31:05 GMT  
-		Size: 20.3 MB (20336759 bytes)  
+	-	`sha256:0ad2888c2b3be6a409528b1968fd34f197666b0972631bb05f38efe3752277ac`  
+		Last Modified: Mon, 24 Mar 2025 17:08:04 GMT  
+		Size: 20.3 MB (20333858 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a9e931655c3c2bbd8d2c547bc78dbfff955ed7a7e01787cf2624ad44d6ea856f`  
-		Last Modified: Fri, 14 Feb 2025 23:31:05 GMT  
+	-	`sha256:59094b42d7f9756d2dc13c72419eb85bf334f3dbad2a9a07bcdc1cb90d78f89c`  
+		Last Modified: Mon, 24 Mar 2025 17:08:03 GMT  
 		Size: 9.2 MB (9170435 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ef24121de34bd176db97b046a2777de2fb636417b659dd6b0889858fbb598e04`  
-		Last Modified: Fri, 14 Feb 2025 23:31:04 GMT  
+	-	`sha256:073e6d3af0ab3402b8b7a2741ee2c4dddaaa82316b75bb9793710b7b5be707df`  
+		Last Modified: Mon, 24 Mar 2025 17:08:03 GMT  
 		Size: 854.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:c44b586c3b47d59c61320dbcd39fdf92e3d77ba90ee215b0c5f4540e3529de77`  
-		Last Modified: Fri, 14 Feb 2025 23:31:04 GMT  
-		Size: 155.0 B  
+	-	`sha256:ebd8e7ed3ae42b2ce22e504f7affc5fe81bd33b0980a5ad84fddf03bd47afed5`  
+		Last Modified: Mon, 24 Mar 2025 17:08:03 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-ibm-semeru-21-jammy` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:2ade12a56075272ebdd7df7266da310fe1b986d9548308f872059ebe57cc1bcb
+$ docker pull maven@sha256:a22cbbd48eda7d8d7e4b205edbe3e17050ac340634bcc423697fd7f9684cfd80
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5175562 bytes)**  
+-	Total Size: **5.2 MB (5177465 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:139210c8518f8cef4eb0fac393e5db083f1cf0afa6a7765e41c953233c325247`
+-	Image ID: `sha256:437d47a9b088e7dafb103a69573a4da17d1df3ecad8ce13dcd2d3405ca67a5ac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:291b2b6b8673873f696a57398c9bcafe6de71ba95d620bbb8d667309e5be5a23`  
-		Last Modified: Fri, 14 Feb 2025 23:31:04 GMT  
-		Size: 5.2 MB (5156472 bytes)  
+	-	`sha256:c21adb5efbc5aaf067a6e5c548ad0fb004057dc4a807af87d7f53102c2103ca8`  
+		Last Modified: Mon, 24 Mar 2025 17:08:03 GMT  
+		Size: 5.2 MB (5158375 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:7e20ee56e76b081d9c90c336511ae51d311a1966be89cffc86b71bd6229982e1`  
-		Last Modified: Fri, 14 Feb 2025 23:31:04 GMT  
+	-	`sha256:bec64f6f26b3c71961f4cd6cebf30e74930b029616190770ae76db07004e3045`  
+		Last Modified: Mon, 24 Mar 2025 17:08:03 GMT  
 		Size: 19.1 KB (19090 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `maven:3.9.9-ibm-semeru-21-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:9bf7b9022d3fc26c5b61bd38a02985530ff49811c71498add2ce45dee3ab36c2
+$ docker pull maven@sha256:8c4c07d136a8fd3c459b0fa5f00c614655f1eec69dbb717ba52ec3ec1816db8b
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **299.1 MB (299086941 bytes)**  
+-	Total Size: **299.1 MB (299114203 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:07832a71b06a027ad9ad750c385c0b9ec1c62f232289a6866cae65eb0c969821`
+-	Image ID: `sha256:882a692052d490ba57389a895ec5a0876f9c469a55b9e7d11773df1dd2cff242`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -58177,7 +58177,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -58215,60 +58215,60 @@ CMD ["mvn"]
 		Last Modified: Sun, 26 Jan 2025 07:02:08 GMT  
 		Size: 27.4 MB (27358182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddc27324a20ba7e580ad161f241011b423fdcd169bcae5cc324e63f8db8fe6b2`  
-		Last Modified: Tue, 04 Feb 2025 09:47:59 GMT  
-		Size: 12.1 MB (12123437 bytes)  
+	-	`sha256:e483842b440e4fd1b12a18bab983fb09c8751e230e70f7c022dae2765ea706a5`  
+		Last Modified: Mon, 24 Mar 2025 17:01:02 GMT  
+		Size: 12.1 MB (12123514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:17d27bcf99459dcd5fbe127a6c795010816c2d4680aea3d0560fdebf0a26c3f4`  
-		Last Modified: Sat, 15 Feb 2025 07:46:29 GMT  
+	-	`sha256:319fd86a1d76c3ef266b0abf69304bd7078ef846e56eb909ab81a24cfffcd9ef`  
+		Last Modified: Mon, 24 Mar 2025 17:21:20 GMT  
 		Size: 224.0 MB (224030028 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:d60d72b436b33a97ff7c58df0d80274a56643887002aa96d82231a557d3b59fd`  
-		Last Modified: Sat, 15 Feb 2025 07:46:23 GMT  
-		Size: 6.1 MB (6105173 bytes)  
+	-	`sha256:f77e17b7d4be90ba1be02ab2fc39c277da5061e65a66f7af7863f41dd05f96f4`  
+		Last Modified: Mon, 24 Mar 2025 17:21:09 GMT  
+		Size: 6.1 MB (6135849 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:65430c8b3c8b5af6030382793e1ac0696cb6cd3352463d1370ae1be757b646d3`  
-		Last Modified: Sat, 15 Feb 2025 12:12:50 GMT  
-		Size: 20.3 MB (20298655 bytes)  
+	-	`sha256:140c8231d78a91938e2a895b47f32832144e2f4cd5556d310a517f9150bf16d1`  
+		Last Modified: Mon, 24 Mar 2025 18:36:14 GMT  
+		Size: 20.3 MB (20295162 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:cbcae2cc3b13eca8fbca2d56b7519b6208d784f428a0f744287c509ed18b2b8a`  
-		Last Modified: Sat, 15 Feb 2025 12:12:50 GMT  
+	-	`sha256:2baebd098b02f892150a86675ce0bab00fac93a70a08b3c795f5a6a759144a60`  
+		Last Modified: Mon, 24 Mar 2025 18:36:14 GMT  
 		Size: 9.2 MB (9170426 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93b83fbce0baa5c206c415d73bf9a507949b440aa1b427112eac04eaa8674fb9`  
-		Last Modified: Sat, 15 Feb 2025 12:12:50 GMT  
-		Size: 853.0 B  
+	-	`sha256:fb517c23d67b7dc3415f4dd8fca054a2da2b324eaf1d4c01cf834031189966d8`  
+		Last Modified: Mon, 24 Mar 2025 18:36:14 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:2278e8548e4da50f53d61e5d5d981b9f036a69a11c7359323bb227ff6343502f`  
-		Last Modified: Sat, 15 Feb 2025 12:12:50 GMT  
-		Size: 155.0 B  
+	-	`sha256:ef15431f72bc2f3aa41a3b1bf24c5c8f06a69b70111305b5d43a49021b9969c1`  
+		Last Modified: Mon, 24 Mar 2025 18:36:14 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-ibm-semeru-21-jammy` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:4c2d27deb9570d2f843c932b873d40564e0ab52385386d21c63bf4e5c4d73562
+$ docker pull maven@sha256:5c2e04f8d3602d08882acbaa46415977f5910348cbef76ec6ed086c2d5eb109e
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5172863 bytes)**  
+-	Total Size: **5.2 MB (5176374 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:7eaf61a9d0160beaf10eb61ebd2ebd5a469cdeda53089fef5b071a13e6973225`
+-	Image ID: `sha256:f82dad4930df38ccaf9c96c22b79fa456fbaf4ce492e2fd4f028cdf651778f8a`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:f02bf91e77ddb30d4ee2a864099ff1eba66240165681beddec3645e75eec24c6`  
-		Last Modified: Sat, 15 Feb 2025 12:12:50 GMT  
-		Size: 5.2 MB (5153640 bytes)  
+	-	`sha256:8e532dac99522f0daca50a0b6dd1be7ab0ae3244dd608567ef81658af2dfdc27`  
+		Last Modified: Mon, 24 Mar 2025 18:36:14 GMT  
+		Size: 5.2 MB (5157151 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:bc4d0d590c642f477cf127a78e47a4067ba83c9c3c7df3ed9ce4823aea46e3e8`  
-		Last Modified: Sat, 15 Feb 2025 12:12:49 GMT  
+	-	`sha256:696b4606ffea830d898ccdcfd7679a6e9693fae616e70a7d99d24fb056d07dcf`  
+		Last Modified: Mon, 24 Mar 2025 18:36:13 GMT  
 		Size: 19.2 KB (19223 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -58409,13 +58409,13 @@ $ docker pull maven@sha256:cd1c312350a5f812b1374de14ea54185fbb9e508e531eae839bf6
 ### `maven:3.9.9-ibm-semeru-21-jammy` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:662801a31026b49e17493bfbeb9fa5467b7969659003e14cb5cefaa87efc60b6
+$ docker pull maven@sha256:7b9434c220ef6cd4a2d6f7537ecff02896d864c0d89a9895ccb65bc14b94cc5f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **304.1 MB (304147916 bytes)**  
+-	Total Size: **304.2 MB (304163271 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:e060e4a3f838f8226572d8278c63f6e73df9dd236055fa0cd141489693802cdf`
+-	Image ID: `sha256:0a81d8660d8376c4b0dc63279a46037598a1be34d1adc0a20e59f7cc2fedc63b`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -58445,7 +58445,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Tue, 20 Aug 2024 18:12:59 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Tue, 20 Aug 2024 18:12:59 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Tue, 20 Aug 2024 18:12:59 GMT
@@ -58487,63 +58487,63 @@ CMD ["mvn"]
 		Last Modified: Tue, 04 Feb 2025 08:13:22 GMT  
 		Size: 12.2 MB (12212279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:93de31108a9d71a055d6fe9cbb66f3565833d50a6d30f4927e30bd632c267294`  
-		Last Modified: Sat, 15 Feb 2025 08:29:14 GMT  
-		Size: 227.8 MB (227809588 bytes)  
+	-	`sha256:621e9c3c340f572679575c56236f1a01568a7ba35c95a95de4ef466337b6ec2f`  
+		Last Modified: Mon, 24 Mar 2025 17:25:22 GMT  
+		Size: 227.8 MB (227809539 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:15515c727a6111951d6e438a10cd7d040a46fc299fbb300cab090dea0d5a15ef`  
-		Last Modified: Sat, 15 Feb 2025 08:29:11 GMT  
-		Size: 6.5 MB (6452523 bytes)  
+	-	`sha256:4cd7c8269ce85e38cff1658a6363adc7ba61c03c04528c85813814ae978413f7`  
+		Last Modified: Mon, 24 Mar 2025 17:25:18 GMT  
+		Size: 6.5 MB (6470484 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:49b1bc8f2bb7b67ac7f8f1742b34e891b0c949aea2e36adb390e09b6560d46c1`  
-		Last Modified: Sat, 15 Feb 2025 12:28:54 GMT  
-		Size: 20.5 MB (20501118 bytes)  
+	-	`sha256:95e5fd48f6b6bbef015aeb650682e462871a64634b7b0e51557712f457747b67`  
+		Last Modified: Mon, 24 Mar 2025 18:44:34 GMT  
+		Size: 20.5 MB (20498566 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:91ee2d36c760e22a3139660b56cbc6d1dc4bc0366bffe9b39c7ede74605d1759`  
-		Last Modified: Sat, 15 Feb 2025 12:28:54 GMT  
-		Size: 9.2 MB (9170436 bytes)  
+	-	`sha256:37d65b9846c0b7b9ba01f30128d9a499ff984667734109390308cc26ff39122c`  
+		Last Modified: Mon, 24 Mar 2025 18:44:34 GMT  
+		Size: 9.2 MB (9170428 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:41a9cf63be6794f9fbea39b2c3f2196e9bd3c000c489fbfe4c09ea9dd9090c7a`  
-		Last Modified: Sat, 15 Feb 2025 12:28:54 GMT  
-		Size: 853.0 B  
+	-	`sha256:ce694ff4a735b8f1e11f00ee02cf48f7fec6dc6311419a721619814b2ee1fc7d`  
+		Last Modified: Mon, 24 Mar 2025 18:44:34 GMT  
+		Size: 855.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:da41604f1e4ee706d4223ae6a0750cbaebc5116e13b9b67a97cdc97e06d92554`  
-		Last Modified: Sat, 15 Feb 2025 12:28:54 GMT  
-		Size: 156.0 B  
+	-	`sha256:ffc62161afea6c5dc4e7357d9e1ee4cd44831d6143540bbc1f809c75472b0857`  
+		Last Modified: Mon, 24 Mar 2025 18:44:34 GMT  
+		Size: 157.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-ibm-semeru-21-jammy` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:9524ed352e498e235da9b321570bf6f89dd9f5d6a215690c599fe615de886763
+$ docker pull maven@sha256:c20c8eb9bee0a479738cfcfe7ce89ced3f6f084e4595421ec7977dfc811190fa
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.2 MB (5170614 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:6ef747c47f2551a61b7c386ffa7added51dc769e973ddfe1acad2357abb96633`
+-	Image ID: `sha256:30205eea1a9fbbb362dddcea612268e7a754b0c975c235fd288a71f170b9f926`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:d5261aab4e4dde39cf5887501fb1640a96aac2835c4fabb740b37e464ba8ae3e`  
-		Last Modified: Sat, 15 Feb 2025 12:28:54 GMT  
+	-	`sha256:73d493267ea0ec76d856859e5b1b8182e77dbb9a14f6620a20f0d21e726618d3`  
+		Last Modified: Mon, 24 Mar 2025 18:44:34 GMT  
 		Size: 5.2 MB (5151524 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:a2f24588278cff97bbf4c9882cabc1d136a8a0e94d79f5fdff34995a3d9dea38`  
-		Last Modified: Sat, 15 Feb 2025 12:28:53 GMT  
+	-	`sha256:fee0284d5040ad2737358b508e1aed04cfd0ceb089d07bb43aa40311944f8f7f`  
+		Last Modified: Mon, 24 Mar 2025 18:44:33 GMT  
 		Size: 19.1 KB (19090 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ## `maven:3.9.9-ibm-semeru-23-jammy`
 
 ```console
-$ docker pull maven@sha256:dc484cd86115e36574c365f860ea95fafc16368d821db5683bbfce8b5b29efab
+$ docker pull maven@sha256:b153ed31da5e96c07690f8050564f2f783425ed457352c42ad2c0fc53ec0675d
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -58694,13 +58694,13 @@ $ docker pull maven@sha256:e772cdcecb6e63ec7c0d1f3d4b9d9d9523412814bfc35baa424c9
 ### `maven:3.9.9-ibm-semeru-23-jammy` - linux; arm64 variant v8
 
 ```console
-$ docker pull maven@sha256:bad7187e8ed2e6430179a29ef4a93d58381f91842c507d177a6cd484660b6bde
+$ docker pull maven@sha256:772c9c596278021727c9c783665073bd20180cca6ff442c6658575b01f0e1bc1
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **306.3 MB (306278764 bytes)**  
+-	Total Size: **306.3 MB (306297857 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:5f3cb738b8ea9cf9af4872c343fe8a8393ba1077fc2071c548620b1bf8ae4484`
+-	Image ID: `sha256:6c9dd6d669faaf1a74ffae5ec5f2edc16544ab8c8a0b9dc687b9de093258fe0a`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -58730,7 +58730,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Mon, 23 Sep 2024 17:02:08 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Mon, 23 Sep 2024 17:02:08 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Mon, 23 Sep 2024 17:02:08 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 23 Sep 2024 17:02:08 GMT
@@ -58768,60 +58768,60 @@ CMD ["mvn"]
 		Last Modified: Sun, 26 Jan 2025 07:02:08 GMT  
 		Size: 27.4 MB (27358182 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:ddc27324a20ba7e580ad161f241011b423fdcd169bcae5cc324e63f8db8fe6b2`  
-		Last Modified: Tue, 04 Feb 2025 09:47:59 GMT  
-		Size: 12.1 MB (12123437 bytes)  
+	-	`sha256:e483842b440e4fd1b12a18bab983fb09c8751e230e70f7c022dae2765ea706a5`  
+		Last Modified: Mon, 24 Mar 2025 17:01:02 GMT  
+		Size: 12.1 MB (12123514 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:999e6a978f3e055febc7e7dce8d4f403286b838d5f4bcffe70af6b7957295bdc`  
-		Last Modified: Sat, 15 Feb 2025 07:53:09 GMT  
-		Size: 230.9 MB (230854954 bytes)  
+	-	`sha256:64dcf21fb5ad18ddf20c30910adf53ef4e963246626d03c9becf43832e3350b0`  
+		Last Modified: Mon, 24 Mar 2025 17:27:56 GMT  
+		Size: 230.9 MB (230854975 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:662ee496f4f92821148362e56879a9261d327f2922c0a732fdc8a632a56047fd`  
-		Last Modified: Sat, 15 Feb 2025 07:53:04 GMT  
-		Size: 6.5 MB (6471945 bytes)  
+	-	`sha256:2442d64cc615c54150c2ed31920e36750fd645c5587df7d8443661e41d565e92`  
+		Last Modified: Mon, 24 Mar 2025 17:27:51 GMT  
+		Size: 6.5 MB (6494492 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9532c9b501e5928b65e53ca9b777b2eecb09845aa87fb4870eb95a436d9cddd7`  
-		Last Modified: Sat, 15 Feb 2025 11:51:58 GMT  
-		Size: 20.3 MB (20298772 bytes)  
+	-	`sha256:78aa7eab08e342be425ca8d0e1afd6aa0df7f1893e932147723f232ceda8c550`  
+		Last Modified: Mon, 24 Mar 2025 18:36:48 GMT  
+		Size: 20.3 MB (20295219 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:0c82f64ddccca36d9ed56177d15e934807faa1c256ea9cc5a209dff58d1685cc`  
-		Last Modified: Sat, 15 Feb 2025 11:51:58 GMT  
-		Size: 9.2 MB (9170435 bytes)  
+	-	`sha256:1d7ffe067c9564276b215266d5f7fc389db5e0b7938a26a18c56d155bc56a853`  
+		Last Modified: Mon, 24 Mar 2025 18:36:48 GMT  
+		Size: 9.2 MB (9170433 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:56a7682255337ab19a1c99eab89f93f1500d1f844f69c35fe86d1ed18c991a99`  
-		Last Modified: Sat, 15 Feb 2025 11:51:57 GMT  
-		Size: 853.0 B  
+	-	`sha256:34e0a1f974b1328814baa3eb85413439932235eecace16ea2dd3507637e962b4`  
+		Last Modified: Mon, 24 Mar 2025 18:36:47 GMT  
+		Size: 854.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:36fa96c0d9ee46b90f0c10d97b2f23083e1d0c5194be27857f011efe437ba945`  
-		Last Modified: Sat, 15 Feb 2025 11:51:58 GMT  
-		Size: 154.0 B  
+	-	`sha256:9eeb3371496c00951d778ba87e722a6c06a6fa5240acb33097c7c7f154dbdc7a`  
+		Last Modified: Mon, 24 Mar 2025 18:36:48 GMT  
+		Size: 156.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-ibm-semeru-23-jammy` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:8f6a1779de5811079cc3f9249b0917fdb62a71cee5a6168a506e643e6e8d4a3d
+$ docker pull maven@sha256:de084d0b3b709aec7866bf4bc6015828bbd9eb5665de3d40d816b6e6199c9962
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **5.2 MB (5174157 bytes)**  
+-	Total Size: **5.2 MB (5177668 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:71185936cef3c1b75765ae73fd352bd77017db7230011dd45876ac999431265c`
+-	Image ID: `sha256:39b6a725be93e39f5b39f160026b21c68aa196d0984c85839a3d0735d6ba57ac`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:4c3192294e33ddc4371933cc0829b7c991227d1eb90ef8a680785c0c353c7588`  
-		Last Modified: Sat, 15 Feb 2025 11:51:57 GMT  
-		Size: 5.2 MB (5154934 bytes)  
+	-	`sha256:cc44d705bb8efcf60b5492919a98fe7b1692777273aac1d25eb19bd308be1c9e`  
+		Last Modified: Mon, 24 Mar 2025 18:36:47 GMT  
+		Size: 5.2 MB (5158445 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:ad17a41747c19c4a79374bbfc2cd7d382f4650f1249ac1fb41f8138229b77389`  
-		Last Modified: Sat, 15 Feb 2025 11:51:57 GMT  
+	-	`sha256:baa9f15ed90d0761bf33ed82bc503daa53bd1d051cf97ae22b218c4693019c41`  
+		Last Modified: Mon, 24 Mar 2025 18:36:47 GMT  
 		Size: 19.2 KB (19223 bytes)  
 		MIME: application/vnd.in-toto+json
 
@@ -58962,13 +58962,13 @@ $ docker pull maven@sha256:2bb515ed1008ca8d22b18e94858ea8adec9f97e045827549b68ad
 ### `maven:3.9.9-ibm-semeru-23-jammy` - linux; s390x
 
 ```console
-$ docker pull maven@sha256:cb5772fdc5dbb93e5acc9177e0e4d58d816a3deeae91ce34d4b55a4bc3942086
+$ docker pull maven@sha256:abe08b078992e8d12db3a9428d74fdb14a182612da0a3253abf5361d9d4100cb
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **311.4 MB (311391040 bytes)**  
+-	Total Size: **311.5 MB (311463412 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:56741e4198eb17769f697f93557666c0121ac649e2f66a8d943b2926f81afeda`
+-	Image ID: `sha256:f348b66a95c069e9cb06251742c9dd6fdf90dfe1269c85de2aa287f89db9ade2`
 -	Entrypoint: `["\/usr\/local\/bin\/mvn-entrypoint.sh"]`
 -	Default Command: `["mvn"]`
 
@@ -58998,7 +58998,7 @@ ENV JAVA_HOME=/opt/java/openjdk PATH=/opt/java/openjdk/bin:/usr/local/sbin:/usr/
 # Mon, 23 Sep 2024 17:02:08 GMT
 ENV JAVA_TOOL_OPTIONS=-XX:+IgnoreUnrecognizedVMOptions -XX:+PortableSharedCache -XX:+IdleTuningGcOnIdle -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,readonly,nonFatal
 # Mon, 23 Sep 2024 17:02:08 GMT
-RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="bf406b3e288e1732d82d08f54e160095451a6cc969f72adf395c074d6d08893ef1ccd2afcd55f01ca8e54131f587c88055832f36330a1ede0cc2f84440cf54df";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.99/bin/apache-tomcat-9.0.99.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
+RUN set -eux;     unset OPENJ9_JAVA_OPTIONS;     SCC_SIZE="50m";     DOWNLOAD_PATH_TOMCAT=/tmp/tomcat;     INSTALL_PATH_TOMCAT=/opt/tomcat-home;     TOMCAT_CHECKSUM="cbe407f17c813d9f83cab459e603df171f2e5782c3a0cdb4cfa00b0391a89cedf865c6d8972fc7e12210c69a8467ede5939f35bb0f3b41fa173b9ee83199768a";     TOMCAT_DWNLD_URL="https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.102/bin/apache-tomcat-9.0.102.tar.gz";         mkdir -p "${DOWNLOAD_PATH_TOMCAT}" "${INSTALL_PATH_TOMCAT}";     curl -LfsSo "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz "${TOMCAT_DWNLD_URL}";     echo "${TOMCAT_CHECKSUM} *${DOWNLOAD_PATH_TOMCAT}/tomcat.tar.gz" | sha512sum -c -;     tar -xf "${DOWNLOAD_PATH_TOMCAT}"/tomcat.tar.gz -C "${INSTALL_PATH_TOMCAT}" --strip-components=1;     rm -rf "${DOWNLOAD_PATH_TOMCAT}";         java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 15;     FULL=$( (java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     DST_CACHE=$(java -Xshareclasses:name=dry_run_scc,cacheDir=/opt/java/.scc,destroy 2>&1 || true);     SCC_SIZE=$(echo $SCC_SIZE | sed 's/.$//');     SCC_SIZE=$(awk "BEGIN {print int($SCC_SIZE * $FULL / 100.0)}");     [ "${SCC_SIZE}" -eq 0 ] && SCC_SIZE=1;     SCC_SIZE="${SCC_SIZE}m";     java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal,createLayer -Xscmx$SCC_SIZE -version;     unset OPENJ9_JAVA_OPTIONS;         export OPENJ9_JAVA_OPTIONS="-XX:+IProfileDuringStartupPhase -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,bootClassesOnly,nonFatal";     "${INSTALL_PATH_TOMCAT}"/bin/startup.sh;     sleep 5;     "${INSTALL_PATH_TOMCAT}"/bin/shutdown.sh -force;     sleep 5;     FULL=$( (java -Xshareclasses:name=openj9_system_scc,cacheDir=/opt/java/.scc,printallStats 2>&1 || true) | awk '/^Cache is [0-9.]*% .*full/ {print substr($3, 1, length($3)-1)}');     echo "SCC layer is $FULL% full.";     rm -rf "${INSTALL_PATH_TOMCAT}";     if [ -d "/opt/java/.scc" ]; then           chmod -R 0777 /opt/java/.scc;     fi;         echo "SCC generation phase completed"; # buildkit
 # Mon, 23 Sep 2024 17:02:08 GMT
 RUN apt-get update   && apt-get install -y git openssh-client --no-install-recommends   && rm -rf /var/lib/apt/lists/* # buildkit
 # Mon, 23 Sep 2024 17:02:08 GMT
@@ -59040,56 +59040,56 @@ CMD ["mvn"]
 		Last Modified: Tue, 04 Feb 2025 08:13:22 GMT  
 		Size: 12.2 MB (12212279 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a7d765fed4df6c8dfd6fa0482032a5abc1e11a713c266cd911e7bebb466e581e`  
-		Last Modified: Sat, 15 Feb 2025 08:38:26 GMT  
-		Size: 234.6 MB (234645637 bytes)  
+	-	`sha256:dbd770f92683665651c4120314e56e2fae1cea1708ca505e0304723945ccbe48`  
+		Last Modified: Mon, 24 Mar 2025 17:33:20 GMT  
+		Size: 234.6 MB (234645579 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:a1d42cf1769739385471ebe5b3db3ef8edde99c59d569df3d5a212dd3682cd56`  
-		Last Modified: Sat, 15 Feb 2025 08:38:22 GMT  
-		Size: 6.9 MB (6859525 bytes)  
+	-	`sha256:1019db1d317f37797053cdf0cd1f9ca75c6f5be579c58329da6a0b69ff21ce7d`  
+		Last Modified: Mon, 24 Mar 2025 17:33:17 GMT  
+		Size: 6.9 MB (6934589 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:9af0b660d12b2eedfc4ed385ec0e27c259e14071c04b648b4a17d9009cef1ed6`  
-		Last Modified: Sat, 15 Feb 2025 12:29:59 GMT  
-		Size: 20.5 MB (20501191 bytes)  
+	-	`sha256:8b18a4466a147925d00b840d4d0c9fad77a7da0ab3c4f8082171d74795b84ab1`  
+		Last Modified: Mon, 24 Mar 2025 18:45:15 GMT  
+		Size: 20.5 MB (20498565 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:06b9c1bb40191820d5f6bc35a74f0b2a103430e07ec8f92d5c27573513eab618`  
-		Last Modified: Sat, 15 Feb 2025 12:29:58 GMT  
-		Size: 9.2 MB (9170436 bytes)  
+	-	`sha256:71fea21709931f69460b78f600090fb3afda3bb6e854c67dcb64841868953ff3`  
+		Last Modified: Mon, 24 Mar 2025 18:45:14 GMT  
+		Size: 9.2 MB (9170427 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:dd1f8650cc84cd456e4cd412947cd7052307daf5b57397dffa01c76ff00511c4`  
-		Last Modified: Sat, 15 Feb 2025 12:29:58 GMT  
-		Size: 854.0 B  
+	-	`sha256:6565d6e5777c6c97b34b93899570943f86a5b29518dc265695c29feae31053bd`  
+		Last Modified: Mon, 24 Mar 2025 18:45:13 GMT  
+		Size: 855.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 	-	`sha256:4f4fb700ef54461cfa02571ae0db9a0dc1e0cdb5577484a6d75e68dc38e8acc1`  
 		Last Modified: Tue, 07 Mar 2017 15:01:14 GMT  
 		Size: 32.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:091250526858e001694bbba19c33071e2d24bf0ebdd06f4497fd71d6b0d5ba4e`  
-		Last Modified: Sat, 15 Feb 2025 12:29:58 GMT  
+	-	`sha256:b813c4c077b2910d7ab2539e6a183fe64ef0d5d722928182f2adb2fca3b297f1`  
+		Last Modified: Mon, 24 Mar 2025 18:45:14 GMT  
 		Size: 155.0 B  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `maven:3.9.9-ibm-semeru-23-jammy` - unknown; unknown
 
 ```console
-$ docker pull maven@sha256:f16e8c1816e81dbb55194e8eb050b28e9acf73857b4b1fc4c281f352daf5da93
+$ docker pull maven@sha256:d42b17bdc26eeef599bd535709df27d014098a8273c75d210a515451cce30b1f
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
 -	Total Size: **5.2 MB (5171908 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2c8cb14494952a2a1396deeee6b7cebbfe349705c9b65d960475f26dd17a8963`
+-	Image ID: `sha256:174c45a9e048104612bd786b40328af2926f42603ff5869f9742004b384ce264`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:a4b07ca81e8abcf3abc0df3c573780a7a1e976bcb0e42dd6e4ce70f3b25b132b`  
-		Last Modified: Sat, 15 Feb 2025 12:29:59 GMT  
+	-	`sha256:dc6364317a7150cb00b3e1d9950e14c3ab3f3421f05249854ff00f00d7db33e1`  
+		Last Modified: Mon, 24 Mar 2025 18:45:13 GMT  
 		Size: 5.2 MB (5152818 bytes)  
 		MIME: application/vnd.in-toto+json
-	-	`sha256:8e548e98922b37c3aafb2da53e51dfaf9936a61b432f81215d7ddbfabb7bd9c1`  
-		Last Modified: Sat, 15 Feb 2025 12:29:58 GMT  
+	-	`sha256:d5892c56574e0b266922f5c27c29f114f95f1b73ac97f82ef69492928580935e`  
+		Last Modified: Mon, 24 Mar 2025 18:45:13 GMT  
 		Size: 19.1 KB (19090 bytes)  
 		MIME: application/vnd.in-toto+json
 
