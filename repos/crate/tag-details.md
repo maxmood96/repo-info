@@ -10,6 +10,7 @@
 -	[`crate:5.8.7`](#crate587)
 -	[`crate:5.9`](#crate59)
 -	[`crate:5.9.11`](#crate5911)
+-	[`crate:5.9.12`](#crate5912)
 -	[`crate:latest`](#cratelatest)
 
 ## `crate:5.10`
@@ -1907,6 +1908,10 @@ $ docker pull crate@sha256:c51e8f1c8327e5aa8387e217114bbac3c73db67fa5f12e62ad484
 		Last Modified: Fri, 21 Mar 2025 16:23:16 GMT  
 		Size: 23.0 KB (23027 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `crate:5.9.12`
+
+**does not exist** (yet?)
 
 ## `crate:latest`
 
