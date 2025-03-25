@@ -582,14 +582,9 @@ Licenses: (parsed from: `/usr/share/doc/libelf1t64/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.190-1.1build4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190-1.1build4.1.dsc' elfutils_0.190-1.1build4.1.dsc 3365 SHA512:d9a5aa017004c1525b9997d03eb792bd161090867c7b9a44147d36fa980ee6c9af111e1efaa320b8a4a4360e42573338e5a2ddeb2505aacdc6641f69a24e8ab9
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190.orig.tar.bz2' elfutils_0.190.orig.tar.bz2 9162766 SHA512:9c4f5328097e028286c42f29e39dc3d80914b656cdfbbe05b639e91bc787ae8ae64dd4d69a6e317ce30c01648ded10281b86a51e718295f4c589df1225a48102
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190-1.1build4.1.debian.tar.xz' elfutils_0.190-1.1build4.1.debian.tar.xz 43716 SHA512:eabfab4db80f4f99a64bc0c4cfd499c1ec05026afc1a2c5ef38cac0074058ed7053a6334c2c4c1e46561726af0566518c84c6489fdbce5f6f36f80d94f53adae
-```
 
 ### `dpkg` source package: `expat=2.6.1-2ubuntu0.2`
 
