@@ -212,14 +212,9 @@ Licenses: (parsed from: `/usr/share/doc/bash/copyright`)
 - `MIT-like`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris bash=5.2.37-1ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.37-1ubuntu1.dsc' bash_5.2.37-1ubuntu1.dsc 2400 SHA512:98b84fcf0db93159f8dc53e9cf43baab971075ad518eaedf52ddbcb113dd90b8601401b6c7a63aed48810310c2d8a83f7ed67dbb7baaf857cb7ad34f3be79c4d
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.37.orig.tar.xz' bash_5.2.37.orig.tar.xz 5600932 SHA512:c5380301114967378ace9ae4c510564cb7a827c221470aa532f2360a35000e7719ae081151f3d2ac86dff1d1465f64e60d9202fa6657d716ed6e449f77552158
-'http://archive.ubuntu.com/ubuntu/pool/main/b/bash/bash_5.2.37-1ubuntu1.debian.tar.xz' bash_5.2.37-1ubuntu1.debian.tar.xz 95448 SHA512:4a0b91bdcdca3f30b625c4ee5ad71d351b46ae2f5388e66f4a7e23533673016715c10ecfa117f528ea68d8b6b87d417d839dffd3d2fbf577b8a20d074b188a45
-```
 
 ### `dpkg` source package: `brotli=1.1.0-2build3`
 
@@ -1887,14 +1882,9 @@ Licenses: (parsed from: `/usr/share/doc/libproc2-0/copyright`, `/usr/share/doc/p
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris procps=2:4.0.4-4ubuntu5
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_4.0.4-4ubuntu5.dsc' procps_4.0.4-4ubuntu5.dsc 2243 SHA512:aabf9b2b44668b0483484795b459643992c534339531c0e58d714c77ec10bfa3ebc3207ce80510dfc5922720c079f3d153d4393a4f46f1a2cf0ead23c5b15365
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_4.0.4.orig.tar.xz' procps_4.0.4.orig.tar.xz 1401540 SHA512:94375544e2422fefc23d7634063c49ef1be62394c46039444f85e6d2e87e45cfadc33accba5ca43c96897b4295bfb0f88d55a30204598ddb26ef66f0420cefb4
-'http://archive.ubuntu.com/ubuntu/pool/main/p/procps/procps_4.0.4-4ubuntu5.debian.tar.xz' procps_4.0.4-4ubuntu5.debian.tar.xz 38800 SHA512:3326242b1ebfd6060abe1f1411d32219839c8b73a3c23ffa55419aa3319f8e657288fc0cdbd1248b362c042e8668c8eaa2003dec2343b32c30bbff9506b8f759
-```
 
 ### `dpkg` source package: `python3-defaults=3.13.1-1~exp2`
 

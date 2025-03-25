@@ -53,19 +53,13 @@ Licenses: (parsed from: `/usr/share/doc/adduser/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris adduser=3.145
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.145.dsc' adduser_3.145.dsc 1678 SHA256:3f059f21fdba3eb6b82b81e434f8f188f7d1c1818226429ecd61c17872ce21e0
-'http://deb.debian.org/debian/pool/main/a/adduser/adduser_3.145.tar.xz' adduser_3.145.tar.xz 322616 SHA256:a8f909e00760da0dc43c9db7841f31d4a6f60b32390ffd6bf9a85abf1adfe8ce
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/adduser/3.145/
 
-- https://sources.debian.net/src/adduser/3.145/ (for browsing the source)
-- https://sources.debian.net/src/adduser/3.145/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/adduser/3.145/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `apr-util=1.6.3-3`
 
@@ -443,13 +437,21 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris curl=8.12.1-3
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.12.1-3.dsc' curl_8.12.1-3.dsc 3252 SHA256:3c3918ce2f3863f801b95071f71eed9bf95bcfe8fb0fd1b5e48ab3157c24fc4c
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.12.1.orig.tar.gz' curl_8.12.1.orig.tar.gz 4181139 SHA256:7b40ea64947e0b440716a4d7f0b7aa56230a5341c8377d7b609649d4aea8dbcf
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.12.1.orig.tar.gz.asc' curl_8.12.1.orig.tar.gz.asc 488 SHA256:36d883bcf288d843caf587e7c8fd5feb6223b63420ae93517be6a4db928abe13
+'http://deb.debian.org/debian/pool/main/c/curl/curl_8.12.1-3.debian.tar.xz' curl_8.12.1-3.debian.tar.xz 53716 SHA256:550dcaf7cc74556a2f1f45d068aaa694e4d89a6dc651c302745f358073fcaf08
+```
 
-- http://snapshot.debian.org/package/curl/8.12.1-3/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/curl/8.12.1-3/ (for browsing the source)
+- https://sources.debian.net/src/curl/8.12.1-3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/curl/8.12.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9`
 
@@ -652,21 +654,13 @@ Licenses: (parsed from: `/usr/share/doc/diffutils/copyright`)
 - `X11`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris diffutils=1:3.10-2
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10-2.dsc' diffutils_3.10-2.dsc 1737 SHA256:e66b646eec15edcd185e4cc085deb8fe2925912a632a40cc98017f66ffecbab4
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz' diffutils_3.10.orig.tar.xz 1624240 SHA256:90e5e93cc724e4ebe12ede80df1634063c7a855692685919bfe60b556c9bd09e
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10.orig.tar.xz.asc' diffutils_3.10.orig.tar.xz.asc 833 SHA256:a94faf8f1baa04ff220f7b2ccb137c16337284e023ebc4a1d5df475c08d810f7
-'http://deb.debian.org/debian/pool/main/d/diffutils/diffutils_3.10-2.debian.tar.xz' diffutils_3.10-2.debian.tar.xz 14244 SHA256:8791e985aa96c331a8994484936b0da5b86373648f32feb29d47864f0488d613
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/diffutils/1:3.10-2/
 
-- https://sources.debian.net/src/diffutils/1:3.10-2/ (for browsing the source)
-- https://sources.debian.net/src/diffutils/1:3.10-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/diffutils/1:3.10-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `dpkg=1.22.18`
 
@@ -1723,21 +1717,13 @@ Licenses: (parsed from: `/usr/share/doc/libselinux1/copyright`)
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libselinux=3.8-4
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.8-4.dsc' libselinux_3.8-4.dsc 2990 SHA256:33fadeed72977c8de92f327953dade0f9da83ff298d168232c9da00a0756b94a
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.8.orig.tar.gz' libselinux_3.8.orig.tar.gz 204389 SHA256:0c3756bca047c9270281d7c4dcdecd000b72e38a183c930661eba9690839b541
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.8.orig.tar.gz.asc' libselinux_3.8.orig.tar.gz.asc 833 SHA256:7f33102d9602cf9b52ee8fdadc76c279abad39d4ac81aebd23564cc52a8a6c36
-'http://deb.debian.org/debian/pool/main/libs/libselinux/libselinux_3.8-4.debian.tar.xz' libselinux_3.8-4.debian.tar.xz 49244 SHA256:43e2adde8a6483bb4d25467f565053b002a2601449f5b5df254b1ffaf74db3e9
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libselinux/3.8-4/
 
-- https://sources.debian.net/src/libselinux/3.8-4/ (for browsing the source)
-- https://sources.debian.net/src/libselinux/3.8-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libselinux/3.8-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsemanage=3.8-1`
 
@@ -1752,21 +1738,13 @@ Licenses: (parsed from: `/usr/share/doc/libsemanage-common/copyright`, `/usr/sha
 - `LGPL-2.1`
 - `LGPL-2.1+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsemanage=3.8-1
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.8-1.dsc' libsemanage_3.8-1.dsc 2965 SHA256:2f88937062555714320a903d1a06eb1504e40733aff649752024de361725e745
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.8.orig.tar.gz' libsemanage_3.8.orig.tar.gz 184583 SHA256:aac95988a572cc897a1ac1be77d360be1171fc0b2d7c66195a745601baf25bef
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.8.orig.tar.gz.asc' libsemanage_3.8.orig.tar.gz.asc 833 SHA256:3599ce64df1b6551ad76fd4e79ed8e57cc1651e0d80acbf53d12c03d19fdd90d
-'http://deb.debian.org/debian/pool/main/libs/libsemanage/libsemanage_3.8-1.debian.tar.xz' libsemanage_3.8-1.debian.tar.xz 35232 SHA256:afe625ccb95caaaa3d828a020a9e1fcbace420e5107b396da5d32c4a3debf85b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsemanage/3.8-1/
 
-- https://sources.debian.net/src/libsemanage/3.8-1/ (for browsing the source)
-- https://sources.debian.net/src/libsemanage/3.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsemanage/3.8-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libsepol=3.8-1`
 
@@ -1782,21 +1760,13 @@ Licenses: (parsed from: `/usr/share/doc/libsepol2/copyright`)
 - `LGPL-2.1+`
 - `Zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libsepol=3.8-1
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_3.8-1.dsc' libsepol_3.8-1.dsc 2326 SHA256:81fdb99a1b0e49f63c2f0add06dbbecb1d7aa60fc2b1376db2583b4478c54fdd
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_3.8.orig.tar.gz' libsepol_3.8.orig.tar.gz 513780 SHA256:844fbdbf02334b9ce03833ad8a671053f67b4076d72db4f03e0ee2665ec2eb55
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_3.8.orig.tar.gz.asc' libsepol_3.8.orig.tar.gz.asc 833 SHA256:64b85abaf972ac089491c6c3593e4b12855a5be9929f62b81f16ead8a22c01ea
-'http://deb.debian.org/debian/pool/main/libs/libsepol/libsepol_3.8-1.debian.tar.xz' libsepol_3.8-1.debian.tar.xz 32880 SHA256:fb59b99cc866ade5e19a07b1d79652e3331104be4444280d12d6d6e9daba23dd
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libsepol/3.8-1/
 
-- https://sources.debian.net/src/libsepol/3.8-1/ (for browsing the source)
-- https://sources.debian.net/src/libsepol/3.8-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libsepol/3.8-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libssh2=1.11.1-1`
 
@@ -2389,21 +2359,13 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris openssh=1:9.9p2-1
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.9p2-1.dsc' openssh_9.9p2-1.dsc 3465 SHA256:0111130a2fcfb11ef7d522135fbd762e86da8f06063f1fe7e642a64128f999b0
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.9p2.orig.tar.gz' openssh_9.9p2.orig.tar.gz 1944499 SHA256:91aadb603e08cc285eddf965e1199d02585fa94d994d6cae5b41e1721e215673
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.9p2.orig.tar.gz.asc' openssh_9.9p2.orig.tar.gz.asc 833 SHA256:17daea197718ef7907db917983547dbece321ac8beb1f2c215b45a93c485f5c2
-'http://deb.debian.org/debian/pool/main/o/openssh/openssh_9.9p2-1.debian.tar.xz' openssh_9.9p2-1.debian.tar.xz 195692 SHA256:cf84d45cbd4517fa38a1fd9c5ceac2db0280d41d8850fd65841a5421d415570c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/openssh/1:9.9p2-1/
 
-- https://sources.debian.net/src/openssh/1:9.9p2-1/ (for browsing the source)
-- https://sources.debian.net/src/openssh/1:9.9p2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/openssh/1:9.9p2-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `openssl=3.4.1-1`
 
@@ -2926,21 +2888,13 @@ Licenses: (parsed from: `/usr/share/doc/login.defs/copyright`, `/usr/share/doc/p
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris shadow=1:4.17.3-1
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.17.3-1.dsc' shadow_4.17.3-1.dsc 2851 SHA256:f78c7f22d24c04652fd7f441b98e9463053b2c26497244562c485652b3a1f79e
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.17.3.orig.tar.xz' shadow_4.17.3.orig.tar.xz 2327984 SHA256:09e896c7b01c97ba4be2d6be332c55a3e478b4893cd3c3466d8224e622bd4943
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.17.3.orig.tar.xz.asc' shadow_4.17.3.orig.tar.xz.asc 488 SHA256:16b76411e1668585db0870919659de5901387faa12014cb2f804bbe4c6dc3da5
-'http://deb.debian.org/debian/pool/main/s/shadow/shadow_4.17.3-1.debian.tar.xz' shadow_4.17.3-1.debian.tar.xz 171808 SHA256:66c601b181a2ad1480093856d6e64f116469861efedf3587b7c12dcfa04241b3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/shadow/1:4.17.3-1/
 
-- https://sources.debian.net/src/shadow/1:4.17.3-1/ (for browsing the source)
-- https://sources.debian.net/src/shadow/1:4.17.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/shadow/1:4.17.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sqlite3=3.46.1-2`
 
