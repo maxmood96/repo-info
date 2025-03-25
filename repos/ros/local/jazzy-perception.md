@@ -1633,14 +1633,9 @@ Licenses: (parsed from: `/usr/share/doc/libdw1t64/copyright`, `/usr/share/doc/li
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.190-1.1build4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190-1.1build4.1.dsc' elfutils_0.190-1.1build4.1.dsc 3365 SHA512:d9a5aa017004c1525b9997d03eb792bd161090867c7b9a44147d36fa980ee6c9af111e1efaa320b8a4a4360e42573338e5a2ddeb2505aacdc6641f69a24e8ab9
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190.orig.tar.bz2' elfutils_0.190.orig.tar.bz2 9162766 SHA512:9c4f5328097e028286c42f29e39dc3d80914b656cdfbbe05b639e91bc787ae8ae64dd4d69a6e317ce30c01648ded10281b86a51e718295f4c589df1225a48102
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190-1.1build4.1.debian.tar.xz' elfutils_0.190-1.1build4.1.debian.tar.xz 43716 SHA512:eabfab4db80f4f99a64bc0c4cfd499c1ec05026afc1a2c5ef38cac0074058ed7053a6334c2c4c1e46561726af0566518c84c6489fdbce5f6f36f80d94f53adae
-```
 
 ### `dpkg` source package: `empy=3.3.4-2`
 
@@ -6006,9 +6001,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris linux=6.8.0-55.57
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-55.57.dsc' linux_6.8.0-55.57.dsc 9383 SHA512:e9a40c7d36780b2714e7887ecaa035583fa20abfa06f3356511618e68d66c5242a3616d87177c13ab9b4af24fce58eff323b1e89fd878237fbea771ba9816085
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
-'http://archive.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-55.57.diff.gz' linux_6.8.0-55.57.diff.gz 4213273 SHA512:64300b7cf638a4dc1c731a9d3b7f7bd387a2923c929374092ddcf0f94d4fe90912f160676e54a7c5d6cc443cd92102c33ca07a723e81bf07860a498b1eddad6a
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-55.57.dsc' linux_6.8.0-55.57.dsc 9383 SHA512:e9a40c7d36780b2714e7887ecaa035583fa20abfa06f3356511618e68d66c5242a3616d87177c13ab9b4af24fce58eff323b1e89fd878237fbea771ba9816085
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0.orig.tar.gz' linux_6.8.0.orig.tar.gz 230060117 SHA512:296f93b24e1f7d116377ba8ccd0d8a977e82248ef469586e52db496190092572e90bc05704760424d215261fcbf62e7240819dffd0976b0f6407361e1eac380c
+'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_6.8.0-55.57.diff.gz' linux_6.8.0-55.57.diff.gz 4213273 SHA512:64300b7cf638a4dc1c731a9d3b7f7bd387a2923c929374092ddcf0f94d4fe90912f160676e54a7c5d6cc443cd92102c33ca07a723e81bf07860a498b1eddad6a
 ```
 
 ### `dpkg` source package: `llvm-toolchain-15=1:15.0.7-14build3`
