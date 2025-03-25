@@ -14,6 +14,14 @@
 -	[`sonarqube:2025.1.1-datacenter-search`](#sonarqube202511-datacenter-search)
 -	[`sonarqube:2025.1.1-developer`](#sonarqube202511-developer)
 -	[`sonarqube:2025.1.1-enterprise`](#sonarqube202511-enterprise)
+-	[`sonarqube:2025.2-datacenter-app`](#sonarqube20252-datacenter-app)
+-	[`sonarqube:2025.2-datacenter-search`](#sonarqube20252-datacenter-search)
+-	[`sonarqube:2025.2-developer`](#sonarqube20252-developer)
+-	[`sonarqube:2025.2-enterprise`](#sonarqube20252-enterprise)
+-	[`sonarqube:2025.2.0-datacenter-app`](#sonarqube202520-datacenter-app)
+-	[`sonarqube:2025.2.0-datacenter-search`](#sonarqube202520-datacenter-search)
+-	[`sonarqube:2025.2.0-developer`](#sonarqube202520-developer)
+-	[`sonarqube:2025.2.0-enterprise`](#sonarqube202520-enterprise)
 -	[`sonarqube:25.3.0.104237-community`](#sonarqube2530104237-community)
 -	[`sonarqube:9-community`](#sonarqube9-community)
 -	[`sonarqube:9-datacenter-app`](#sonarqube9-datacenter-app)
@@ -3630,6 +3638,38 @@ $ docker pull sonarqube@sha256:4ad3d8a40fbd829bdd9aecea84d3166c8d4d0991e9f111062
 		Last Modified: Wed, 12 Mar 2025 17:32:03 GMT  
 		Size: 19.2 KB (19167 bytes)  
 		MIME: application/vnd.in-toto+json
+
+## `sonarqube:2025.2-datacenter-app`
+
+**does not exist** (yet?)
+
+## `sonarqube:2025.2-datacenter-search`
+
+**does not exist** (yet?)
+
+## `sonarqube:2025.2-developer`
+
+**does not exist** (yet?)
+
+## `sonarqube:2025.2-enterprise`
+
+**does not exist** (yet?)
+
+## `sonarqube:2025.2.0-datacenter-app`
+
+**does not exist** (yet?)
+
+## `sonarqube:2025.2.0-datacenter-search`
+
+**does not exist** (yet?)
+
+## `sonarqube:2025.2.0-developer`
+
+**does not exist** (yet?)
+
+## `sonarqube:2025.2.0-enterprise`
+
+**does not exist** (yet?)
 
 ## `sonarqube:25.3.0.104237-community`
 
