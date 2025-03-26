@@ -1,10 +1,10 @@
-# `golang:tip-20250316-bullseye`
+# `golang:tip-20250322-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:33af62457e5a3bd760cd91ec1970c961a2d36a039534bd9d30cb0a1669f54d6a`
-- Created: `2025-03-17T05:23:21Z`
-- Virtual Size: ~ 838.02 Mb  
+- Image ID: `sha256:c5c24a6d3caff41c13c6c70ee4d2a17263571c577a7524183e1a9f489d4c9f79`
+- Created: `2025-03-24T05:23:21Z`
+- Virtual Size: ~ 838.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["bash"]`
