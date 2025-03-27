@@ -1,10 +1,10 @@
-# `mongo:8.0.5-noble`
+# `mongo:8.0.6-noble`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b81a621037ef33c357805810a4995dd1bf81b8bc81f7640857d10f1dd7434f26`
-- Created: `2025-03-14T17:39:01Z`
-- Virtual Size: ~ 887.43 Mb  
+- Image ID: `sha256:b1d4ab2a034263b0e2306e41be1a596bd8600fb6fadef145a9088791c8d7c4b5`
+- Created: `2025-03-21T22:06:21Z`
+- Virtual Size: ~ 887.48 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=8.0`
-  - `MONGO_VERSION=8.0.5`
+  - `MONGO_VERSION=8.0.6`
   - `HOME=/data/db`
   - `GLIBC_TUNABLES=glibc.pthread.rseq=0`
 - Labels:
@@ -1394,17 +1394,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=8.0.5`
+### `dpkg` source package: `mongodb-org=8.0.6`
 
 Binary Packages:
 
-- `mongodb-org=8.0.5`
-- `mongodb-org-database=8.0.5`
-- `mongodb-org-database-tools-extra=8.0.5`
-- `mongodb-org-mongos=8.0.5`
-- `mongodb-org-server=8.0.5`
-- `mongodb-org-shell=8.0.5`
-- `mongodb-org-tools=8.0.5`
+- `mongodb-org=8.0.6`
+- `mongodb-org-database=8.0.6`
+- `mongodb-org-database-tools-extra=8.0.6`
+- `mongodb-org-mongos=8.0.6`
+- `mongodb-org-server=8.0.6`
+- `mongodb-org-shell=8.0.6`
+- `mongodb-org-tools=8.0.6`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1954,15 +1954,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 - `ICU`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2024b-0ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.24.04.1.dsc' tzdata_2024b-0ubuntu0.24.04.1.dsc 2728 SHA512:40897edd0305a0e2fc16d0af498ae7fb91d88894f01389503384ff70fd6a1454f0b2dde9551bf848e38680c016ef0b4741b48503d78263f8adf4929c51235e3c
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz' tzdata_2024b.orig.tar.gz 459393 SHA512:0d86686e215672343debb3471b7e7ccb8a27f063f085c9b532d5e0470377843daa0dfb6aee0db4fb9068dd52810c69aeee914a1a7c7e603fdecda7e855020193
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz.asc' tzdata_2024b.orig.tar.gz.asc 833 SHA512:2a0462e1d469260293b93ea03a084a7514025b6de251ebf71bc65c93d76ac94967ec859ddba34b1ba4c51114faa5acdfbef0848d79654fc6ebaa804d5d3c2964
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.24.04.1.debian.tar.xz' tzdata_2024b-0ubuntu0.24.04.1.debian.tar.xz 187512 SHA512:0df37b0a99d16a8706fd33a829b06429edc566ba2e5acbf6f24f31889c6799add6f557b1077c0efc65aa8abaf8cf6d1586800dfd6c802b81020b634282c6d792
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1`
 

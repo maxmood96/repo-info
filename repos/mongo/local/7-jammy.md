@@ -1,10 +1,10 @@
-# `mongo:7.0.17-jammy`
+# `mongo:7.0.18-jammy`
 
 ## Docker Metadata
 
-- Image ID: `sha256:34c87991ff3f08f879cc8ffb8d6ff2835a1534ab0ef44f05d18d3d12b3b47311`
-- Created: `2025-02-24T23:01:18Z`
-- Virtual Size: ~ 806.54 Mb  
+- Image ID: `sha256:85148427fea1fb20e1c4c3887901304901d6775a34c32385b1b8a4998b17748f`
+- Created: `2025-03-21T22:01:21Z`
+- Virtual Size: ~ 807.11 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -17,7 +17,7 @@
   - `MONGO_PACKAGE=mongodb-org`
   - `MONGO_REPO=repo.mongodb.org`
   - `MONGO_MAJOR=7.0`
-  - `MONGO_VERSION=7.0.17`
+  - `MONGO_VERSION=7.0.18`
   - `HOME=/data/db`
 - Labels:
   - `org.opencontainers.image.ref.name=ubuntu`
@@ -1284,11 +1284,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-mongosh=2.4.0`
+### `dpkg` source package: `mongodb-mongosh=2.4.2`
 
 Binary Packages:
 
-- `mongodb-mongosh=2.4.0`
+- `mongodb-mongosh=2.4.2`
 
 Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 
@@ -1299,17 +1299,17 @@ Licenses: (parsed from: `/usr/share/doc/mongodb-mongosh/copyright`)
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `mongodb-org=7.0.17`
+### `dpkg` source package: `mongodb-org=7.0.18`
 
 Binary Packages:
 
-- `mongodb-org=7.0.17`
-- `mongodb-org-database=7.0.17`
-- `mongodb-org-database-tools-extra=7.0.17`
-- `mongodb-org-mongos=7.0.17`
-- `mongodb-org-server=7.0.17`
-- `mongodb-org-shell=7.0.17`
-- `mongodb-org-tools=7.0.17`
+- `mongodb-org=7.0.18`
+- `mongodb-org-database=7.0.18`
+- `mongodb-org-database-tools-extra=7.0.18`
+- `mongodb-org-mongos=7.0.18`
+- `mongodb-org-server=7.0.18`
+- `mongodb-org-shell=7.0.18`
+- `mongodb-org-tools=7.0.18`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -1819,15 +1819,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2024b-0ubuntu0.22.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.22.04.1.dsc' tzdata_2024b-0ubuntu0.22.04.1.dsc 2541 SHA512:0150d084872fb5606d2222423f8d2ce306455fdc941347a92d507d1ffb6ab058cbea1e464dbff33f68e1afcbcc460115e120ffd22d6a83bd42f2910228c04d68
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz' tzdata_2024b.orig.tar.gz 459393 SHA512:0d86686e215672343debb3471b7e7ccb8a27f063f085c9b532d5e0470377843daa0dfb6aee0db4fb9068dd52810c69aeee914a1a7c7e603fdecda7e855020193
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz.asc' tzdata_2024b.orig.tar.gz.asc 833 SHA512:2a0462e1d469260293b93ea03a084a7514025b6de251ebf71bc65c93d76ac94967ec859ddba34b1ba4c51114faa5acdfbef0848d79654fc6ebaa804d5d3c2964
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.22.04.1.debian.tar.xz' tzdata_2024b-0ubuntu0.22.04.1.debian.tar.xz 181504 SHA512:f0e6b4765e63fa2031fc381acb787cd79c911c0adf04bbb836b9e9e507694ceed00193f7d90b2b8dc981cb71307d98dcbf615870bbac530abf27b032ac3127b6
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2021.03.26`
 
