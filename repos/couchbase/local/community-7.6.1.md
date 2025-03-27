@@ -1,10 +1,10 @@
-# `couchbase:community-7.0.2`
+# `couchbase:community-7.6.1`
 
 ## Docker Metadata
 
-- Image ID: `sha256:77d0199cea5f0542b1193febe89a7d0c75b8043dcaf5420b6f999ced324627a2`
-- Created: `2024-03-18T15:52:02Z`
-- Virtual Size: ~ 1.02 Gb  
+- Image ID: `sha256:211213a7738cd8f8f2d4c9ef143bf34016eb78a3b4611115a64436d344647bd1`
+- Created: `2024-04-03T01:33:25Z`
+- Virtual Size: ~ 1.03 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/entrypoint.sh"]`
@@ -239,25 +239,6 @@ $ apt-get source -qq --print-uris cdebconf=0.251ubuntu1
 'http://archive.ubuntu.com/ubuntu/pool/main/c/cdebconf/cdebconf_0.251ubuntu1.tar.xz' cdebconf_0.251ubuntu1.tar.xz 276744 SHA256:d07848e52aecb70e82d8bafd082ecee3cccd7a8229b59527e07cc49023aa22d0
 ```
 
-### `dpkg` source package: `chrpath=0.16-2`
-
-Binary Packages:
-
-- `chrpath=0.16-2`
-
-Licenses: (parsed from: `/usr/share/doc/chrpath/copyright`)
-
-- `GPL`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris chrpath=0.16-2
-'http://archive.ubuntu.com/ubuntu/pool/universe/c/chrpath/chrpath_0.16-2.dsc' chrpath_0.16-2.dsc 1677 SHA256:3b61b4f3ac6ecff53510e57c9e62d05ede876361b82bf098aa04b494adc6db54
-'http://archive.ubuntu.com/ubuntu/pool/universe/c/chrpath/chrpath_0.16.orig.tar.gz' chrpath_0.16.orig.tar.gz 134506 SHA256:bb0d4c54bac2990e1bdf8132f2c9477ae752859d523e141e72b3b11a12c26e7b
-'http://archive.ubuntu.com/ubuntu/pool/universe/c/chrpath/chrpath_0.16-2.diff.gz' chrpath_0.16-2.diff.gz 2565 SHA256:c4cf462fe0b88683ba81183bc1e6f73c58d371b2add8af163e1d432d59115669
-```
-
 ### `dpkg` source package: `coreutils=8.30-3ubuntu2`
 
 Binary Packages:
@@ -277,11 +258,11 @@ $ apt-get source -qq --print-uris coreutils=8.30-3ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/c/coreutils/coreutils_8.30-3ubuntu2.debian.tar.xz' coreutils_8.30-3ubuntu2.debian.tar.xz 39636 SHA256:98204ef9d94e5c567880cd0245fdb7940eaf7592d6c6830c300ad117628b351f
 ```
 
-### `dpkg` source package: `couchbase-server-community=7.0.2-6703-1`
+### `dpkg` source package: `couchbase-server-community=7.6.1-3200-1`
 
 Binary Packages:
 
-- `couchbase-server-community=7.0.2-6703-1`
+- `couchbase-server-community=7.6.1-3200-1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -507,9 +488,8 @@ $ apt-get source -qq --print-uris gcc-10=10.5.0-1ubuntu1~20.04
 Binary Packages:
 
 - `libc-bin=2.31-0ubuntu9.16`
-- `libc6:amd64=2.31-0ubuntu9.16`
 
-Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/libc6/copyright`)
+Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`)
 
 - `GPL-2`
 - `LGPL-2.1`
@@ -517,6 +497,26 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 **WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
 This is *usually* due to a new package version being released and the old version being removed.
 
+
+### `dpkg` source package: `glibc=2.31-0ubuntu9.17`
+
+Binary Packages:
+
+- `libc6:amd64=2.31-0ubuntu9.17`
+
+Licenses: (parsed from: `/usr/share/doc/libc6/copyright`)
+
+- `GPL-2`
+- `LGPL-2.1`
+
+Source:
+
+```console
+$ apt-get source -qq --print-uris glibc=2.31-0ubuntu9.17
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.17.dsc' glibc_2.31-0ubuntu9.17.dsc 9597 SHA512:ea4d5a3f0dfdb53d297fd5ada22381a223c8b3600b69ad937d09f4018567dc1e2003c1d7dbcc8cca144c8141ced0f331a919df05f69b2261d8cea110843509a6
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31.orig.tar.xz' glibc_2.31.orig.tar.xz 17317924 SHA512:2ff56628fe935cacbdf1825534f15d45cb87a159cbdb2e6a981590eeb6174ed4b3ff7041519cdecbd4f624ac20b745e2dd9614c420dd3ea186b8f36bc4c2453c
+'http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/glibc_2.31-0ubuntu9.17.debian.tar.xz' glibc_2.31-0ubuntu9.17.debian.tar.xz 891104 SHA512:089a843327e9c60730b5bc34a9b41c9b541da8d7e21b043238de82a0a02ef34cacfd6f654231df7ef7aa758d6018a446dd866e4817385588ff157b96afbafb29
+```
 
 ### `dpkg` source package: `gmp=2:6.2.0+dfsg-4ubuntu0.1`
 
@@ -1240,20 +1240,25 @@ $ apt-get source -qq --print-uris numactl=2.0.12-1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/numactl/numactl_2.0.12-1.debian.tar.xz' numactl_2.0.12-1.debian.tar.xz 6756 SHA256:966724cac8f309b33959ae9922b3e5ab58ea821e2e802d96425e1eaada639a33
 ```
 
-### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.23`
+### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.24`
 
 Binary Packages:
 
-- `libssl1.1:amd64=1.1.1f-1ubuntu2.23`
-- `openssl=1.1.1f-1ubuntu2.23`
+- `libssl1.1:amd64=1.1.1f-1ubuntu2.24`
+- `openssl=1.1.1f-1ubuntu2.24`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=1.1.1f-1ubuntu2.24
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.24.dsc' openssl_1.1.1f-1ubuntu2.24.dsc 2470 SHA512:11ef114406e89c74d0a402e42f639fc4e4441d66df7f13ad7abefc9aa5b7e8fa4cf0337b679c2f23876edc78e222e927bcdbf58ae6ee5f856ad9d6970fcbde04
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f.orig.tar.gz' openssl_1.1.1f.orig.tar.gz 9792828 SHA512:b00bd9b5ad5298fbceeec6bb19c1ab0c106ca5cfb31178497c58bf7e0e0cf30fcc19c20f84e23af31cc126bf2447d3e4f8461db97bafa7bd78f69561932f000c
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.24.debian.tar.xz' openssl_1.1.1f-1ubuntu2.24.debian.tar.xz 266728 SHA512:d397e9d44c8279700109eb5367e12ed547f18ad904f087fc17a82d5776f708636db5a3f51dc5b7fef86a126df02a78849ad2edf57b57cf400c31374a975f040b
+```
 
 ### `dpkg` source package: `p11-kit=0.23.20-1ubuntu0.1`
 
@@ -1473,25 +1478,6 @@ $ apt-get source -qq --print-uris publicsuffix=20200303.0012-1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/publicsuffix/publicsuffix_20200303.0012-1.debian.tar.xz' publicsuffix_20200303.0012-1.debian.tar.xz 15328 SHA256:3dbbd7b1e20bafc3e5ad73732cb026a4b8e6e5dafa25a9047151e9a28b251647
 ```
 
-### `dpkg` source package: `runit=2.1.2-9.2ubuntu1`
-
-Binary Packages:
-
-- `runit=2.1.2-9.2ubuntu1`
-
-Licenses: (parsed from: `/usr/share/doc/runit/copyright`)
-
-- `BSD-3-clause`
-
-Source:
-
-```console
-$ apt-get source -qq --print-uris runit=2.1.2-9.2ubuntu1
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/runit/runit_2.1.2-9.2ubuntu1.dsc' runit_2.1.2-9.2ubuntu1.dsc 1773 SHA256:68ac16165a8a9fc4be2b2eb6ae596568a104e7e974028b913b0a7b6ebaea0045
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/runit/runit_2.1.2.orig.tar.gz' runit_2.1.2.orig.tar.gz 110916 SHA256:6fd0160cb0cf1207de4e66754b6d39750cff14bb0aa66ab49490992c0c47ba18
-'http://archive.ubuntu.com/ubuntu/pool/universe/r/runit/runit_2.1.2-9.2ubuntu1.debian.tar.xz' runit_2.1.2-9.2ubuntu1.debian.tar.xz 20688 SHA256:ca4626ad795d9207833bce5543db888e7dabdde764d8829121c6f236393401e9
-```
-
 ### `dpkg` source package: `sed=4.7-1`
 
 Binary Packages:
@@ -1641,11 +1627,11 @@ $ apt-get source -qq --print-uris tar=1.30+dfsg-7ubuntu0.20.04.4
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.30%2bdfsg-7ubuntu0.20.04.4.debian.tar.xz' tar_1.30+dfsg-7ubuntu0.20.04.4.debian.tar.xz 24572 SHA512:942a7fb6e2edb7e50b26b1588219d0a99caf17ff1dfa1748449c3fa84ab8cf3e3e94bafb8334cc3b8397562d6a3ecd57bc0df2ddb2b90644a361fa63426d2982
 ```
 
-### `dpkg` source package: `tzdata=2024a-0ubuntu0.20.04.1`
+### `dpkg` source package: `tzdata=2024b-0ubuntu0.20.04.1`
 
 Binary Packages:
 
-- `tzdata=2024a-0ubuntu0.20.04.1`
+- `tzdata=2024b-0ubuntu0.20.04.1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
