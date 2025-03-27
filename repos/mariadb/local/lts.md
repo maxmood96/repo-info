@@ -489,14 +489,9 @@ Licenses: (parsed from: `/usr/share/doc/libelf1t64/copyright`)
 - `LGPL-3`
 - `LGPL-3+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris elfutils=0.190-1.1build4.1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190-1.1build4.1.dsc' elfutils_0.190-1.1build4.1.dsc 3365 SHA512:d9a5aa017004c1525b9997d03eb792bd161090867c7b9a44147d36fa980ee6c9af111e1efaa320b8a4a4360e42573338e5a2ddeb2505aacdc6641f69a24e8ab9
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190.orig.tar.bz2' elfutils_0.190.orig.tar.bz2 9162766 SHA512:9c4f5328097e028286c42f29e39dc3d80914b656cdfbbe05b639e91bc787ae8ae64dd4d69a6e317ce30c01648ded10281b86a51e718295f4c589df1225a48102
-'http://archive.ubuntu.com/ubuntu/pool/main/e/elfutils/elfutils_0.190-1.1build4.1.debian.tar.xz' elfutils_0.190-1.1build4.1.debian.tar.xz 43716 SHA512:eabfab4db80f4f99a64bc0c4cfd499c1ec05026afc1a2c5ef38cac0074058ed7053a6334c2c4c1e46561726af0566518c84c6489fdbce5f6f36f80d94f53adae
-```
 
 ### `dpkg` source package: `findutils=4.9.0-5build1`
 
@@ -2217,15 +2212,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 - `ICU`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2024b-0ubuntu0.24.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.24.04.1.dsc' tzdata_2024b-0ubuntu0.24.04.1.dsc 2728 SHA512:40897edd0305a0e2fc16d0af498ae7fb91d88894f01389503384ff70fd6a1454f0b2dde9551bf848e38680c016ef0b4741b48503d78263f8adf4929c51235e3c
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz' tzdata_2024b.orig.tar.gz 459393 SHA512:0d86686e215672343debb3471b7e7ccb8a27f063f085c9b532d5e0470377843daa0dfb6aee0db4fb9068dd52810c69aeee914a1a7c7e603fdecda7e855020193
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz.asc' tzdata_2024b.orig.tar.gz.asc 833 SHA512:2a0462e1d469260293b93ea03a084a7514025b6de251ebf71bc65c93d76ac94967ec859ddba34b1ba4c51114faa5acdfbef0848d79654fc6ebaa804d5d3c2964
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.24.04.1.debian.tar.xz' tzdata_2024b-0ubuntu0.24.04.1.debian.tar.xz 187512 SHA512:0df37b0a99d16a8706fd33a829b06429edc566ba2e5acbf6f24f31889c6799add6f557b1077c0efc65aa8abaf8cf6d1586800dfd6c802b81020b634282c6d792
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1`
 
