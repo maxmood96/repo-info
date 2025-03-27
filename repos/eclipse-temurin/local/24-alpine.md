@@ -1,10 +1,10 @@
-# `eclipse-temurin:23.0.2_7-jdk-alpine-3.21`
+# `eclipse-temurin:24_36-jdk-alpine-3.21`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0516833bc9c2a15dc31f0771ab400c069c957139775d0f4e812dbe6e31a7a20d`
-- Created: `2025-01-30T14:32:57Z`
-- Virtual Size: ~ 368.28 Mb  
+- Image ID: `sha256:c64685866abd304530bc1a74b55f4b2bf98ebf88eb7ed99af525b61cfd87193e`
+- Created: `2025-03-25T17:58:27Z`
+- Virtual Size: ~ 311.17 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -15,7 +15,7 @@
   - `LANG=en_US.UTF-8`
   - `LANGUAGE=en_US:en`
   - `LC_ALL=en_US.UTF-8`
-  - `JAVA_VERSION=jdk-23.0.2+7`
+  - `JAVA_VERSION=jdk-24+36`
 
 ## `apk` (`.apk`-based packages)
 
@@ -124,16 +124,16 @@ GPL-2.0-only
 ### `apk` package: `binutils`
 
 ```console
-binutils-2.43.1-r1 description:
+binutils-2.43.1-r2 description:
 Tools necessary to build programs
 
-binutils-2.43.1-r1 webpage:
+binutils-2.43.1-r2 webpage:
 https://www.gnu.org/software/binutils/
 
-binutils-2.43.1-r1 installed size:
+binutils-2.43.1-r2 installed size:
 9 MiB
 
-binutils-2.43.1-r1 license:
+binutils-2.43.1-r2 license:
 GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause
 
 ```
@@ -685,16 +685,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.4-r0 description:
+libexpat-2.7.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.4-r0 webpage:
+libexpat-2.7.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.4-r0 installed size:
+libexpat-2.7.0-r0 installed size:
 129 KiB
 
-libexpat-2.6.4-r0 license:
+libexpat-2.7.0-r0 license:
 MIT
 
 ```
@@ -702,16 +702,16 @@ MIT
 ### `apk` package: `libffi`
 
 ```console
-libffi-3.4.6-r0 description:
+libffi-3.4.7-r0 description:
 portable, high level programming interface to various calling conventions.
 
-libffi-3.4.6-r0 webpage:
+libffi-3.4.7-r0 webpage:
 https://sourceware.org/libffi/
 
-libffi-3.4.6-r0 installed size:
+libffi-3.4.7-r0 installed size:
 38 KiB
 
-libffi-3.4.6-r0 license:
+libffi-3.4.7-r0 license:
 MIT
 
 ```
@@ -872,16 +872,16 @@ X11
 ### `apk` package: `libpng`
 
 ```console
-libpng-1.6.44-r0 description:
+libpng-1.6.47-r0 description:
 Portable Network Graphics library
 
-libpng-1.6.44-r0 webpage:
+libpng-1.6.47-r0 webpage:
 http://www.libpng.org
 
-libpng-1.6.44-r0 installed size:
+libpng-1.6.47-r0 installed size:
 181 KiB
 
-libpng-1.6.44-r0 license:
+libpng-1.6.47-r0 license:
 Libpng
 
 ```
@@ -1246,16 +1246,16 @@ GPL-2.0-only
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025a-r0 description:
+tzdata-2025b-r0 description:
 Timezone data
 
-tzdata-2025a-r0 webpage:
+tzdata-2025b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025a-r0 installed size:
-433 KiB
+tzdata-2025b-r0 installed size:
+435 KiB
 
-tzdata-2025a-r0 license:
+tzdata-2025b-r0 license:
 Public-Domain
 
 ```

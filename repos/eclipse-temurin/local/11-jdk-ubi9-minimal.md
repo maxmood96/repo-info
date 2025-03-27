@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:9a36fb06e2ec573cf334c6880244c03f8fa6231152cf284cdbacbc96815fa785`
-- Created: `2025-01-30T14:32:57Z`
-- Virtual Size: ~ 462.09 Mb  
+- Image ID: `sha256:479cf8d87c4cc8e7c6726b437e2c856a224f4bab2128a7f5bfb3637591c6c5fc`
+- Created: `2025-03-25T17:58:27Z`
+- Virtual Size: ~ 406.13 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -40,17 +40,6 @@
   - `version=9.5`
 
 ## `rpm` (`.rpm`-based packages)
-
-### `rpm` package: `acl-2.3.1-4.el9.x86_64`
-
-Licenses (from `rpm --query`): GPLv2+
-
-Source:
-
-```console
-$ dnf --quiet download --source --url acl-2.3.1-4.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/a/acl-2.3.1-4.el9.src.rpm
-```
 
 ### `rpm` package: `alternatives-1.24-1.el9_5.1.x86_64`
 
@@ -151,28 +140,6 @@ $ dnf --quiet download --source --url coreutils-single-8.32-36.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/coreutils-8.32-36.el9.src.rpm
 ```
 
-### `rpm` package: `cracklib-2.9.6-27.el9.x86_64`
-
-Licenses (from `rpm --query`): LGPLv2+
-
-Source:
-
-```console
-$ dnf --quiet download --source --url cracklib-2.9.6-27.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/cracklib-2.9.6-27.el9.src.rpm
-```
-
-### `rpm` package: `cracklib-dicts-2.9.6-27.el9.x86_64`
-
-Licenses (from `rpm --query`): LGPLv2+
-
-Source:
-
-```console
-$ dnf --quiet download --source --url cracklib-dicts-2.9.6-27.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/cracklib-2.9.6-27.el9.src.rpm
-```
-
 ### `rpm` package: `crypto-policies-20240828-2.git626aa59.el9_5.noarch`
 
 Licenses (from `rpm --query`): LGPL-2.1-or-later
@@ -206,39 +173,6 @@ $ dnf --quiet download --source --url cyrus-sasl-lib-2.1.27-21.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/cyrus-sasl-2.1.27-21.el9.src.rpm
 ```
 
-### `rpm` package: `dbus-1.12.20-8.el9.x86_64`
-
-Licenses (from `rpm --query`): (GPLv2+ or AFL) and GPLv2+
-
-Source:
-
-```console
-$ dnf --quiet download --source --url dbus-1.12.20-8.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/d/dbus-1.12.20-8.el9.src.rpm
-```
-
-### `rpm` package: `dbus-broker-28-7.el9.x86_64`
-
-Licenses (from `rpm --query`): ASL 2.0
-
-Source:
-
-```console
-$ dnf --quiet download --source --url dbus-broker-28-7.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/d/dbus-broker-28-7.el9.src.rpm
-```
-
-### `rpm` package: `dbus-common-1.12.20-8.el9.noarch`
-
-Licenses (from `rpm --query`): (GPLv2+ or AFL) and GPLv2+
-
-Source:
-
-```console
-$ dnf --quiet download --source --url dbus-common-1.12.20-8.el9.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/d/dbus-1.12.20-8.el9.src.rpm
-```
-
 ### `rpm` package: `dejavu-sans-fonts-2.37-18.el9.noarch`
 
 Licenses (from `rpm --query`): Bitstream Vera and Public Domain
@@ -248,17 +182,6 @@ Source:
 ```console
 $ dnf --quiet download --source --url dejavu-sans-fonts-2.37-18.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/d/dejavu-fonts-2.37-18.el9.src.rpm
-```
-
-### `rpm` package: `diffutils-3.7-12.el9.x86_64`
-
-Licenses (from `rpm --query`): GPLv3+
-
-Source:
-
-```console
-$ dnf --quiet download --source --url diffutils-3.7-12.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/d/diffutils-3.7-12.el9.src.rpm
 ```
 
 ### `rpm` package: `dnf-data-4.14.0-17.el9.noarch`
@@ -314,17 +237,6 @@ Source:
 ```console
 $ dnf --quiet download --source --url elfutils-libs-0.191-4.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/elfutils-0.191-4.el9.src.rpm
-```
-
-### `rpm` package: `expat-2.5.0-3.el9_5.1.x86_64`
-
-Licenses (from `rpm --query`): MIT
-
-Source:
-
-```console
-$ dnf --quiet download --source --url expat-2.5.0-3.el9_5.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-3.el9_5.1.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
@@ -603,17 +515,6 @@ $ dnf --quiet download --source --url keyutils-libs-1.6.3-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/keyutils-1.6.3-1.el9.src.rpm
 ```
 
-### `rpm` package: `kmod-libs-28-10.el9.x86_64`
-
-Licenses (from `rpm --query`): LGPLv2+
-
-Source:
-
-```console
-$ dnf --quiet download --source --url kmod-libs-28-10.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/k/kmod-28-10.el9.src.rpm
-```
-
 ### `rpm` package: `krb5-libs-1.21.1-4.el9_5.x86_64`
 
 Licenses (from `rpm --query`): MIT
@@ -768,17 +669,6 @@ $ dnf --quiet download --source --url libcurl-minimal-7.76.1-31.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/c/curl-7.76.1-31.el9.src.rpm
 ```
 
-### `rpm` package: `libdb-5.3.28-54.el9.x86_64`
-
-Licenses (from `rpm --query`): BSD and LGPLv2 and Sleepycat and MIT
-
-Source:
-
-```console
-$ dnf --quiet download --source --url libdb-5.3.28-54.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libdb-5.3.28-54.el9.src.rpm
-```
-
 ### `rpm` package: `libdnf-0.69.0-12.el9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
@@ -790,17 +680,6 @@ $ dnf --quiet download --source --url libdnf-0.69.0-12.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libdnf-0.69.0-12.el9.src.rpm
 ```
 
-### `rpm` package: `libeconf-0.4.1-4.el9.x86_64`
-
-Licenses (from `rpm --query`): MIT
-
-Source:
-
-```console
-$ dnf --quiet download --source --url libeconf-0.4.1-4.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libeconf-0.4.1-4.el9.src.rpm
-```
-
 ### `rpm` package: `libevent-2.1.12-8.el9_4.x86_64`
 
 Licenses (from `rpm --query`): BSD and ISC
@@ -810,17 +689,6 @@ Source:
 ```console
 $ dnf --quiet download --source --url libevent-2.1.12-8.el9_4
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libevent-2.1.12-8.el9_4.src.rpm
-```
-
-### `rpm` package: `libfdisk-2.37.4-20.el9.x86_64`
-
-Licenses (from `rpm --query`): LGPLv2+
-
-Source:
-
-```console
-$ dnf --quiet download --source --url libfdisk-2.37.4-20.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-20.el9.src.rpm
 ```
 
 ### `rpm` package: `libffi-3.4.2-8.el9.x86_64`
@@ -955,17 +823,6 @@ $ dnf --quiet download --source --url libpsl-0.21.1-5.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libpsl-0.21.1-5.el9.src.rpm
 ```
 
-### `rpm` package: `libpwquality-1.4.4-8.el9.x86_64`
-
-Licenses (from `rpm --query`): BSD or GPLv2+
-
-Source:
-
-```console
-$ dnf --quiet download --source --url libpwquality-1.4.4-8.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libpwquality-1.4.4-8.el9.src.rpm
-```
-
 ### `rpm` package: `librepo-1.14.5-2.el9.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+
@@ -999,17 +856,6 @@ $ dnf --quiet download --source --url librhsm-0.0.3-9.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/librhsm-0.0.3-9.el9.src.rpm
 ```
 
-### `rpm` package: `libseccomp-2.5.2-2.el9.x86_64`
-
-Licenses (from `rpm --query`): LGPLv2
-
-Source:
-
-```console
-$ dnf --quiet download --source --url libseccomp-2.5.2-2.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libseccomp-2.5.2-2.el9.src.rpm
-```
-
 ### `rpm` package: `libselinux-3.6-1.el9.x86_64`
 
 Licenses (from `rpm --query`): Public Domain
@@ -1018,17 +864,6 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url libselinux-3.6-1.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libselinux-3.6-1.el9.src.rpm
-```
-
-### `rpm` package: `libselinux-utils-3.6-1.el9.x86_64`
-
-Licenses (from `rpm --query`): Public Domain
-
-Source:
-
-```console
-$ dnf --quiet download --source --url libselinux-utils-3.6-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libselinux-3.6-1.el9.src.rpm
 ```
 
@@ -1129,17 +964,6 @@ Source:
 ```console
 $ dnf --quiet download --source --url libusbx-1.0.26-1.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libusbx-1.0.26-1.el9.src.rpm
-```
-
-### `rpm` package: `libutempter-1.2.1-6.el9.x86_64`
-
-Licenses (from `rpm --query`): LGPLv2+
-
-Source:
-
-```console
-$ dnf --quiet download --source --url libutempter-1.2.1-6.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/l/libutempter-1.2.1-6.el9.src.rpm
 ```
 
 ### `rpm` package: `libuuid-2.37.4-20.el9.x86_64`
@@ -1373,17 +1197,6 @@ $ dnf --quiet download --source --url p11-kit-trust-0.25.3-3.el9_5
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/p11-kit-0.25.3-3.el9_5.src.rpm
 ```
 
-### `rpm` package: `pam-1.5.1-22.el9_5.x86_64`
-
-Licenses (from `rpm --query`): BSD and GPLv2+
-
-Source:
-
-```console
-$ dnf --quiet download --source --url pam-1.5.1-22.el9_5
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pam-1.5.1-22.el9_5.src.rpm
-```
-
 ### `rpm` package: `pcre-8.44-4.el9.x86_64`
 
 Licenses (from `rpm --query`): BSD
@@ -1415,17 +1228,6 @@ Source:
 ```console
 $ dnf --quiet download --source --url pcre2-syntax-10.40-6.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/pcre2-10.40-6.el9.src.rpm
-```
-
-### `rpm` package: `policycoreutils-3.6-2.1.el9.x86_64`
-
-Licenses (from `rpm --query`): GPL-2.0-or-later
-
-Source:
-
-```console
-$ dnf --quiet download --source --url policycoreutils-3.6-2.1.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/p/policycoreutils-3.6-2.1.el9.src.rpm
 ```
 
 ### `rpm` package: `popt-1.18-8.el9.x86_64`
@@ -1505,17 +1307,6 @@ $ dnf --quiet download --source --url rpm-libs-4.16.1.3-34.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rpm-4.16.1.3-34.el9.src.rpm
 ```
 
-### `rpm` package: `rpm-plugin-selinux-4.16.1.3-34.el9.x86_64`
-
-Licenses (from `rpm --query`): GPLv2+
-
-Source:
-
-```console
-$ dnf --quiet download --source --url rpm-plugin-selinux-4.16.1.3-34.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/r/rpm-4.16.1.3-34.el9.src.rpm
-```
-
 ### `rpm` package: `sed-4.8-9.el9.x86_64`
 
 Licenses (from `rpm --query`): GPLv3+
@@ -1525,28 +1316,6 @@ Source:
 ```console
 $ dnf --quiet download --source --url sed-4.8-9.el9
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sed-4.8-9.el9.src.rpm
-```
-
-### `rpm` package: `selinux-policy-38.1.45-3.el9_5.noarch`
-
-Licenses (from `rpm --query`): GPLv2+
-
-Source:
-
-```console
-$ dnf --quiet download --source --url selinux-policy-38.1.45-3.el9_5.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/selinux-policy-38.1.45-3.el9_5.src.rpm
-```
-
-### `rpm` package: `selinux-policy-targeted-38.1.45-3.el9_5.noarch`
-
-Licenses (from `rpm --query`): GPLv2+
-
-Source:
-
-```console
-$ dnf --quiet download --source --url selinux-policy-targeted-38.1.45-3.el9_5.noarch
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/selinux-policy-38.1.45-3.el9_5.src.rpm
 ```
 
 ### `rpm` package: `setup-2.13.7-10.el9.noarch`
@@ -1582,27 +1351,9 @@ $ dnf --quiet download --source --url sqlite-libs-3.34.1-7.el9_3
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-7.el9_3.src.rpm
 ```
 
-### `rpm` package: `systemd-252-46.el9_5.2.x86_64`
-
-Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
 ### `rpm` package: `systemd-libs-252-46.el9_5.2.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `systemd-pam-252-46.el9_5.2.x86_64`
-
-Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
-
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
-
-### `rpm` package: `systemd-rpm-macros-252-46.el9_5.2.noarch`
-
-Licenses (from `rpm --query`): LGPLv2+ and MIT and GPLv2+
 
 **WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
@@ -1626,28 +1377,6 @@ Source:
 ```console
 $ dnf --quiet download --source --url tzdata-2025a-1.el9.noarch
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/t/tzdata-2025a-1.el9.src.rpm
-```
-
-### `rpm` package: `util-linux-2.37.4-20.el9.x86_64`
-
-Licenses (from `rpm --query`): GPLv2 and GPLv2+ and LGPLv2+ and BSD with advertising and Public Domain
-
-Source:
-
-```console
-$ dnf --quiet download --source --url util-linux-2.37.4-20.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-20.el9.src.rpm
-```
-
-### `rpm` package: `util-linux-core-2.37.4-20.el9.x86_64`
-
-Licenses (from `rpm --query`): GPLv2 and GPLv2+ and LGPLv2+ and BSD with advertising and Public Domain
-
-Source:
-
-```console
-$ dnf --quiet download --source --url util-linux-core-2.37.4-20.el9
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/u/util-linux-2.37.4-20.el9.src.rpm
 ```
 
 ### `rpm` package: `wget-1.21.1-8.el9_4.x86_64`
