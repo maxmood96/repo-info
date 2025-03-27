@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7e92d1ee6d0fc7171986bf0caa3b434d3ada33afd6ebd98fee53f3298bb08f06`
+- Image ID: `sha256:9a7c7c9f982140b56e63b4542a494274463f6f07f9c7905969b3db6231ffad80`
 - Created: `2025-03-11T02:39:11Z`
-- Virtual Size: ~ 602.10 Mb  
+- Virtual Size: ~ 601.72 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.2.7`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.7.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=fc159b0d4a8ce412948fb69e61493839a0b3e1d5c919180f27036f1c948cfbe2`
+  - `RUBY_VERSION=3.2.8`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.8.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=1cccd3100155275293ae5d4ea0a1a1068f5de69e71732220f144acce26327a3c`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
@@ -3433,12 +3433,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/media-types/10.0.0/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/media-types/10.0.0/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mercurial=6.3.2-1`
+### `dpkg` source package: `mercurial=6.3.2-1+deb12u1`
 
 Binary Packages:
 
-- `mercurial=6.3.2-1`
-- `mercurial-common=6.3.2-1`
+- `mercurial=6.3.2-1+deb12u1`
+- `mercurial-common=6.3.2-1+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/mercurial-common/copyright`)
 
@@ -3450,18 +3450,18 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mercurial=6.3.2-1
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.3.2-1.dsc' mercurial_6.3.2-1.dsc 2848 SHA256:4d68485c9ec6f8d40e5289f973150d6a6a2f64095e0c4be3c47cc5122acf5581
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.3.2.orig.tar.gz' mercurial_6.3.2.orig.tar.gz 8092710 SHA256:cfe6eeb5dd893ab32c0b79c1531aac420773e0fc837a35db3d4d92703df45a98
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.3.2.orig.tar.gz.asc' mercurial_6.3.2.orig.tar.gz.asc 659 SHA256:957cfd36a65beff1ccb355bf4260680e8ddd9450e6625f693578b8e98ed33643
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_6.3.2-1.debian.tar.xz' mercurial_6.3.2-1.debian.tar.xz 90164 SHA256:7fbb848ebe1863ceb86e71e71fb9f5405a2fb734bd8ae92f9d9ad21908975e43
+$ apt-get source -qq --print-uris mercurial=6.3.2-1+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_6.3.2-1%2bdeb12u1.dsc' mercurial_6.3.2-1+deb12u1.dsc 2880 SHA256:382b975e1fc3c6943ff48be9f37a8911ec16d4253869e773264f0c3b1e645265
+'http://deb.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_6.3.2.orig.tar.gz' mercurial_6.3.2.orig.tar.gz 8092710 SHA256:cfe6eeb5dd893ab32c0b79c1531aac420773e0fc837a35db3d4d92703df45a98
+'http://deb.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_6.3.2.orig.tar.gz.asc' mercurial_6.3.2.orig.tar.gz.asc 659 SHA256:957cfd36a65beff1ccb355bf4260680e8ddd9450e6625f693578b8e98ed33643
+'http://deb.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_6.3.2-1%2bdeb12u1.debian.tar.xz' mercurial_6.3.2-1+deb12u1.debian.tar.xz 93296 SHA256:2ad627769d42e81133a310653d12849589d6e307fe9e1ba5cc8c5bb41a4c4c57
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/mercurial/6.3.2-1/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/6.3.2-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/6.3.2-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/mercurial/6.3.2-1+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/mercurial/6.3.2-1+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mercurial/6.3.2-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mysql-defaults=1.1.0`
 
