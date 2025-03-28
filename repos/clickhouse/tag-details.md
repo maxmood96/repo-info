@@ -4731,27 +4731,57 @@ $ docker pull clickhouse@sha256:af311b2d9f344317bccf1bce5b6118373aff9f251faaf8e1
 
 ## `clickhouse:25.3`
 
-**does not exist** (yet?)
+```console
+$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `clickhouse:25.3-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `clickhouse:25.3.2`
 
-**does not exist** (yet?)
+```console
+$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `clickhouse:25.3.2-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `clickhouse:25.3.2.39`
 
-**does not exist** (yet?)
+```console
+$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `clickhouse:25.3.2.39-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
 
 ## `clickhouse:jammy`
 
@@ -5538,4 +5568,9 @@ $ docker pull clickhouse@sha256:a5152bf61aba465be8a8c1591d22dc90016092c1beaad31b
 
 ## `clickhouse:lts-jammy`
 
-**does not exist** (yet?)
+```console
+$ docker pull clickhouse@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb
+```
+
+-	Manifest MIME: `application/vnd.oci.image.index.v1+json`
+-	Platforms: 0
