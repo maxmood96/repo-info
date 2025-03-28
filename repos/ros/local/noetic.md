@@ -1919,14 +1919,9 @@ Licenses: (parsed from: `/usr/share/doc/linux-libc-dev/copyright`)
 
 - `GPL-2`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris linux=5.4.0-208.228
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-208.228.dsc' linux_5.4.0-208.228.dsc 7442 SHA512:fcdc51e5dbe28c5856b612b2028057f37fdf9dcd894591c712c0daba04b6a6d40ba0b48d7b67010ca08fbfcf8c27caa5a1914e09608bafa3db2b701a763ee300
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0.orig.tar.gz' linux_5.4.0.orig.tar.gz 170244619 SHA512:62b09a7231fd793973c5f59b16c4f6ffce621188b02a71915874b05e8e3f956fb6146d4a4fb1a4475bebe463949ca5a18da12842c3ce7c52e996e6bc4012a074
-'http://security.ubuntu.com/ubuntu/pool/main/l/linux/linux_5.4.0-208.228.diff.gz' linux_5.4.0-208.228.diff.gz 10047377 SHA512:9f496f9543580ac5f4723c10483b4fe3e1d3cb223e1d0c4a1e01552c6cc45ebed70e46fd5c0aebf653bc46920f27fa054a6a7451e099dcf211aa6f5ee1a53042
-```
 
 ### `dpkg` source package: `lksctp-tools=1.0.18+dfsg-1`
 
@@ -4669,15 +4664,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2024b-0ubuntu0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.20.04.1.dsc' tzdata_2024b-0ubuntu0.20.04.1.dsc 2556 SHA512:1099ff4fd0f2e7d7b313ec8924c0d29fe84c443c3efbf7b9f949f6f7f2768f47df7fe2aa9e0d0d68cf8ff20972ef9eff047dc619dfe25ac061773fdcf0c9821e
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz' tzdata_2024b.orig.tar.gz 459393 SHA512:0d86686e215672343debb3471b7e7ccb8a27f063f085c9b532d5e0470377843daa0dfb6aee0db4fb9068dd52810c69aeee914a1a7c7e603fdecda7e855020193
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b.orig.tar.gz.asc' tzdata_2024b.orig.tar.gz.asc 833 SHA512:2a0462e1d469260293b93ea03a084a7514025b6de251ebf71bc65c93d76ac94967ec859ddba34b1ba4c51114faa5acdfbef0848d79654fc6ebaa804d5d3c2964
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2024b-0ubuntu0.20.04.1.debian.tar.xz' tzdata_2024b-0ubuntu0.20.04.1.debian.tar.xz 176648 SHA512:12a743f3d32b48fe1654aa38263ac016ba375b772c2d6be4d76c752d15181f3e0c1594597e7be146127466f95e77b840288e54ba3f75df0dc1f7ed8f3ae73e10
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 
