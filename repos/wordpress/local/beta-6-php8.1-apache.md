@@ -1,10 +1,10 @@
-# `wordpress:beta-6.8-beta3-php8.1-apache`
+# `wordpress:beta-6.8-RC1-php8.1-apache`
 
 ## Docker Metadata
 
-- Image ID: `sha256:cdd341e88dae931078948d15857ae6f1b5de245ce02f16672c46dd0c1d50456e`
-- Created: `2025-03-18T19:03:13Z`
-- Virtual Size: ~ 700.60 Mb  
+- Image ID: `sha256:e9944aaf76d38481255fead80ba8043e2a642210a5e79211cb8a1bfd0dc7f228`
+- Created: `2025-03-25T19:03:12Z`
+- Virtual Size: ~ 700.62 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1428,14 +1428,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/gdbm/1.23-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/gdbm/1.23-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `ghostscript=10.0.0~dfsg-11+deb12u6`
+### `dpkg` source package: `ghostscript=10.0.0~dfsg-11+deb12u7`
 
 Binary Packages:
 
-- `ghostscript=10.0.0~dfsg-11+deb12u6`
-- `libgs-common=10.0.0~dfsg-11+deb12u6`
-- `libgs10:amd64=10.0.0~dfsg-11+deb12u6`
-- `libgs10-common=10.0.0~dfsg-11+deb12u6`
+- `ghostscript=10.0.0~dfsg-11+deb12u7`
+- `libgs-common=10.0.0~dfsg-11+deb12u7`
+- `libgs10:amd64=10.0.0~dfsg-11+deb12u7`
+- `libgs10-common=10.0.0~dfsg-11+deb12u7`
 
 Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/libgs-common/copyright`, `/usr/share/doc/libgs10/copyright`, `/usr/share/doc/libgs10-common/copyright`)
 
@@ -1472,17 +1472,17 @@ Licenses: (parsed from: `/usr/share/doc/ghostscript/copyright`, `/usr/share/doc/
 Source:
 
 ```console
-$ apt-get source -qq --print-uris ghostscript=10.0.0~dfsg-11+deb12u6
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u6.dsc' ghostscript_10.0.0~dfsg-11+deb12u6.dsc 3021 SHA256:5d41cc89cfde3a53d968d4ea0bc905a749527eef1f994174e99659a790f2fd3a
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg.orig.tar.xz' ghostscript_10.0.0~dfsg.orig.tar.xz 26688456 SHA256:67a288151fd88f0d44e165429c48cc85d69b3e4d3765c95e60839a094bfb8df3
-'http://deb.debian.org/debian/pool/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u6.debian.tar.xz' ghostscript_10.0.0~dfsg-11+deb12u6.debian.tar.xz 103152 SHA256:2b62a7ed32612ec854feac1cebb639e7f169231307b4e78d6d16d0f3d6e5c692
+$ apt-get source -qq --print-uris ghostscript=10.0.0~dfsg-11+deb12u7
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u7.dsc' ghostscript_10.0.0~dfsg-11+deb12u7.dsc 3023 SHA256:0fcf5e9cebac4104c0673673cd2154063de4516179aadd0b6277e4784ba02609
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg.orig.tar.xz' ghostscript_10.0.0~dfsg.orig.tar.xz 26688456 SHA256:67a288151fd88f0d44e165429c48cc85d69b3e4d3765c95e60839a094bfb8df3
+'http://deb.debian.org/debian-security/pool/updates/main/g/ghostscript/ghostscript_10.0.0%7edfsg-11%2bdeb12u7.debian.tar.xz' ghostscript_10.0.0~dfsg-11+deb12u7.debian.tar.xz 108216 SHA256:3feea42d295481ae4fafec097a0f82e181b7117c37fd35bff81305708d559b51
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u6/ (for browsing the source)
-- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/ghostscript/10.0.0~dfsg-11+deb12u6/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u7/ (for browsing the source)
+- https://sources.debian.net/src/ghostscript/10.0.0~dfsg-11+deb12u7/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ghostscript/10.0.0~dfsg-11+deb12u7/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `glib2.0=2.74.6-2+deb12u5`
 
