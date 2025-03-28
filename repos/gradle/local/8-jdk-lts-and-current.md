@@ -2067,10 +2067,10 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.8
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.8.dsc' openssh_9.6p1-3ubuntu13.8.dsc 3342 SHA512:6d3f3710ff64fe64e152c42cd957c3c82f010d15937721601ddcd9983254b82aecc99368e0803d2760cc65909737c55631c8d0b69cda4ec29295259cd6b364e6
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA512:0ebf81e39914c3a90d7777a001ec7376a94b37e6024baf3e972c58f0982b7ddef942315f5e01d56c00ff95603b4a20ee561ab918ecc55511df007ac138160509
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA512:aec5a5bd6ce480a8e5b5879dc55f8186aec90fe61f085aa92ad7d07f324574aa781be09c83b7443a32848d091fd44fb12c1842d49cee77afc351e550ffcc096d
-'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.8.debian.tar.xz' openssh_9.6p1-3ubuntu13.8.debian.tar.xz 205336 SHA512:7e703eb4593e3f0e00b0107426ae6c333da6598b84d3978b84a55443f724b49df607a41b7cc1656f6f6a7267aa72b6ab5b3d5776c8343fed711a8f31a2af1981
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.8.dsc' openssh_9.6p1-3ubuntu13.8.dsc 3342 SHA512:6d3f3710ff64fe64e152c42cd957c3c82f010d15937721601ddcd9983254b82aecc99368e0803d2760cc65909737c55631c8d0b69cda4ec29295259cd6b364e6
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA512:0ebf81e39914c3a90d7777a001ec7376a94b37e6024baf3e972c58f0982b7ddef942315f5e01d56c00ff95603b4a20ee561ab918ecc55511df007ac138160509
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA512:aec5a5bd6ce480a8e5b5879dc55f8186aec90fe61f085aa92ad7d07f324574aa781be09c83b7443a32848d091fd44fb12c1842d49cee77afc351e550ffcc096d
+'http://security.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.8.debian.tar.xz' openssh_9.6p1-3ubuntu13.8.debian.tar.xz 205336 SHA512:7e703eb4593e3f0e00b0107426ae6c333da6598b84d3978b84a55443f724b49df607a41b7cc1656f6f6a7267aa72b6ab5b3d5776c8343fed711a8f31a2af1981
 ```
 
 ### `dpkg` source package: `openssl=3.0.13-0ubuntu3.4`
