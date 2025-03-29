@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:d875851fcc512084de4c5ed401a4cad9fc586d3d31d3f384cb5cf9d0066f4934`
-- Created: `2025-01-24T20:03:54Z`
-- Virtual Size: ~ 416.78 Mb  
+- Image ID: `sha256:37b7d7fc0a2581a1a2bd6969148be97f9fc64971127a663499cedae3e07b86a5`
+- Created: `2025-03-21T22:11:14Z`
+- Virtual Size: ~ 415.14 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -857,15 +857,15 @@ $ dnf --quiet download --source --url libblkid-2.30.2-2.amzn2.0.11
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6c870139e0ee24b68da16a0116d4186c011381286345eef40921d417dceea83b/../../../../../blobstore/c3d8b01e2190e686623eb8551a13a4a33cc08e086036e951fe5ed1b99c7b2b8e/util-linux-2.30.2-2.amzn2.0.11.src.rpm
 ```
 
-### `rpm` package: `libcap-2.54-1.amzn2.0.2.x86_64`
+### `rpm` package: `libcap-2.54-1.amzn2.0.3.x86_64`
 
 Licenses (from `rpm --query`): BSD or GPLv2
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libcap-2.54-1.amzn2.0.2
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6c870139e0ee24b68da16a0116d4186c011381286345eef40921d417dceea83b/../../../../../blobstore/ab5e39e42f4b1dd512a49eb9ca2c71cebf3647d3f63d147f5b20e7229596ba54/libcap-2.54-1.amzn2.0.2.src.rpm
+$ dnf --quiet download --source --url libcap-2.54-1.amzn2.0.3
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6c870139e0ee24b68da16a0116d4186c011381286345eef40921d417dceea83b/../../../../../blobstore/8b3ec1d4ebaf9ffea064e8982bbb7e905a13be0877d464b93ed025de59b926e4/libcap-2.54-1.amzn2.0.3.src.rpm
 ```
 
 ### `rpm` package: `libcom_err-1.42.9-19.amzn2.0.1.x86_64`
@@ -1187,15 +1187,15 @@ $ dnf --quiet download --source --url libxcb-1.12-1.amzn2.0.2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6c870139e0ee24b68da16a0116d4186c011381286345eef40921d417dceea83b/../../../../../blobstore/f247c6b583421db5b27b36aa2d19d8cc44685181e32fd319cc2f6aae8d998d88/libxcb-1.12-1.amzn2.0.2.src.rpm
 ```
 
-### `rpm` package: `libxml2-2.9.1-6.amzn2.5.15.x86_64`
+### `rpm` package: `libxml2-2.9.1-6.amzn2.5.16.x86_64`
 
 Licenses (from `rpm --query`): MIT
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.15
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6c870139e0ee24b68da16a0116d4186c011381286345eef40921d417dceea83b/../../../../../blobstore/ede28ffb04058ae239130d4457a8d4f6aeeb73fa42a005a237c79e9bf471e465/libxml2-2.9.1-6.amzn2.5.15.src.rpm
+$ dnf --quiet download --source --url libxml2-2.9.1-6.amzn2.5.16
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6c870139e0ee24b68da16a0116d4186c011381286345eef40921d417dceea83b/../../../../../blobstore/90a60471017e67c167d4ddec6e5ceb776a1fd9ac0c7a6575fe8fdb7b59d6abbe/libxml2-2.9.1-6.amzn2.5.16.src.rpm
 ```
 
 ### `rpm` package: `libxslt-1.1.28-6.amzn2.x86_64`
@@ -1462,15 +1462,15 @@ $ dnf --quiet download --source --url pyliblzma-0.5.3-25.amzn2
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6c870139e0ee24b68da16a0116d4186c011381286345eef40921d417dceea83b/../../../../../blobstore/860af43ebf61fc4b2c6c02ec914630e76e68197a77f6b7318b92f5059c7673d1/pyliblzma-0.5.3-25.amzn2.src.rpm
 ```
 
-### `rpm` package: `python-2.7.18-1.amzn2.0.10.x86_64`
+### `rpm` package: `python-2.7.18-1.amzn2.0.11.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-2.7.18-1.amzn2.0.10
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6c870139e0ee24b68da16a0116d4186c011381286345eef40921d417dceea83b/../../../../../blobstore/122fd43cd6e1c5b225cd5a6d835326dde4fc02696eef5afe1c74138f82bd3a6e/python-2.7.18-1.amzn2.0.10.src.rpm
+$ dnf --quiet download --source --url python-2.7.18-1.amzn2.0.11
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6c870139e0ee24b68da16a0116d4186c011381286345eef40921d417dceea83b/../../../../../blobstore/ffd22105f02927e768719f543191cda8eb79eb7b56b6616842bd3e37de79ba3a/python-2.7.18-1.amzn2.0.11.src.rpm
 ```
 
 ### `rpm` package: `python-iniparse-0.4-9.amzn2.noarch`
@@ -1495,26 +1495,26 @@ $ dnf --quiet download --source --url python-javapackages-3.4.1-11.amzn2.noarch
 https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6c870139e0ee24b68da16a0116d4186c011381286345eef40921d417dceea83b/../../../../../blobstore/7b279e73b80141266fc87abd9ae6866834807a43d5ab435092e97bf21c4dc1ca/javapackages-tools-3.4.1-11.amzn2.src.rpm
 ```
 
-### `rpm` package: `python-libs-2.7.18-1.amzn2.0.10.x86_64`
+### `rpm` package: `python-libs-2.7.18-1.amzn2.0.11.x86_64`
 
 Licenses (from `rpm --query`): Python
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-libs-2.7.18-1.amzn2.0.10
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6c870139e0ee24b68da16a0116d4186c011381286345eef40921d417dceea83b/../../../../../blobstore/122fd43cd6e1c5b225cd5a6d835326dde4fc02696eef5afe1c74138f82bd3a6e/python-2.7.18-1.amzn2.0.10.src.rpm
+$ dnf --quiet download --source --url python-libs-2.7.18-1.amzn2.0.11
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6c870139e0ee24b68da16a0116d4186c011381286345eef40921d417dceea83b/../../../../../blobstore/ffd22105f02927e768719f543191cda8eb79eb7b56b6616842bd3e37de79ba3a/python-2.7.18-1.amzn2.0.11.src.rpm
 ```
 
-### `rpm` package: `python-lxml-3.2.1-4.amzn2.0.6.x86_64`
+### `rpm` package: `python-lxml-3.2.1-4.amzn2.0.7.x86_64`
 
 Licenses (from `rpm --query`): BSD
 
 Source:
 
 ```console
-$ dnf --quiet download --source --url python-lxml-3.2.1-4.amzn2.0.6
-https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6c870139e0ee24b68da16a0116d4186c011381286345eef40921d417dceea83b/../../../../../blobstore/0a6aff266e39a3a5f60f3ddf6eb2a359082e9b2fc7df833a4abe0d2969fcd936/python-lxml-3.2.1-4.amzn2.0.6.src.rpm
+$ dnf --quiet download --source --url python-lxml-3.2.1-4.amzn2.0.7
+https://cdn.amazonlinux.com/2/core/2.0/SRPMS/6c870139e0ee24b68da16a0116d4186c011381286345eef40921d417dceea83b/../../../../../blobstore/6123d6ea99633913ee0377da4fa5ff28c7a432b23ed61d680b790e1cde4cd9bd/python-lxml-3.2.1-4.amzn2.0.7.src.rpm
 ```
 
 ### `rpm` package: `python-pycurl-7.19.0-19.amzn2.0.2.x86_64`
