@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0252b6b02b04b2dce63f01f2ea46b5dad69509903b024db57e86586d944075b6`
+- Image ID: `sha256:889521769ff5500b91f0e8f08dd3d0482f8757d1e285671f03161b150c8befed`
 - Created: `2024-08-20T18:12:59Z`
 - Virtual Size: ~ 324.76 Mb  
   (total size of all layers on-disk)
@@ -318,16 +318,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.12.1-r0 description:
+curl-8.12.1-r1 description:
 URL retrival utility and library
 
-curl-8.12.1-r0 webpage:
+curl-8.12.1-r1 webpage:
 https://curl.se/
 
-curl-8.12.1-r0 installed size:
+curl-8.12.1-r1 installed size:
 246 KiB
 
-curl-8.12.1-r0 license:
+curl-8.12.1-r1 license:
 curl
 
 ```
@@ -709,16 +709,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.12.1-r0 description:
+libcurl-8.12.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.12.1-r0 webpage:
+libcurl-8.12.1-r1 webpage:
 https://curl.se/
 
-libcurl-8.12.1-r0 installed size:
+libcurl-8.12.1-r1 installed size:
 628 KiB
 
-libcurl-8.12.1-r0 license:
+libcurl-8.12.1-r1 license:
 curl
 
 ```
@@ -1185,16 +1185,16 @@ LGPL-2.0-or-later
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-9.9_p1-r2 description:
+openssh-client-common-9.9_p2-r0 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-9.9_p1-r2 webpage:
+openssh-client-common-9.9_p2-r0 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-9.9_p1-r2 installed size:
-2446 KiB
+openssh-client-common-9.9_p2-r0 installed size:
+2450 KiB
 
-openssh-client-common-9.9_p1-r2 license:
+openssh-client-common-9.9_p2-r0 license:
 SSH-OpenSSH
 
 ```
@@ -1202,16 +1202,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-9.9_p1-r2 description:
+openssh-client-default-9.9_p2-r0 description:
 OpenBSD's SSH client
 
-openssh-client-default-9.9_p1-r2 webpage:
+openssh-client-default-9.9_p2-r0 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-9.9_p1-r2 installed size:
+openssh-client-default-9.9_p2-r0 installed size:
 826 KiB
 
-openssh-client-default-9.9_p1-r2 license:
+openssh-client-default-9.9_p2-r0 license:
 SSH-OpenSSH
 
 ```
@@ -1219,16 +1219,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-9.9_p1-r2 description:
+openssh-keygen-9.9_p2-r0 description:
 ssh helper program for generating keys
 
-openssh-keygen-9.9_p1-r2 webpage:
+openssh-keygen-9.9_p2-r0 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-9.9_p1-r2 installed size:
+openssh-keygen-9.9_p2-r0 installed size:
 470 KiB
 
-openssh-keygen-9.9_p1-r2 license:
+openssh-keygen-9.9_p2-r0 license:
 SSH-OpenSSH
 
 ```

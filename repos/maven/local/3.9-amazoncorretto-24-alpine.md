@@ -1,10 +1,10 @@
-# `maven:3.9.9-amazoncorretto-23-alpine`
+# `maven:3.9.9-amazoncorretto-24-alpine`
 
 ## Docker Metadata
 
-- Image ID: `sha256:2176c312707895e066aa240b4d75ec43cd421dd557c4e2359c006d4d4cdd7f02`
-- Created: `2024-09-24T11:57:06Z`
-- Virtual Size: ~ 341.25 Mb  
+- Image ID: `sha256:fe0bd7bff646ba34ef0e7c01ee6b011a6bd13225566fc4046573c6f332f969b3`
+- Created: `2025-03-27T16:03:48Z`
+- Virtual Size: ~ 375.50 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -91,19 +91,19 @@ MIT
 
 ```
 
-### `apk` package: `amazon-corretto-23`
+### `apk` package: `amazon-corretto-24`
 
 ```console
-amazon-corretto-23-23.0.2.7.1-r0 description:
-Corretto23
+amazon-corretto-24-24.0.0.36.2-r0 description:
+Corretto24
 
-amazon-corretto-23-23.0.2.7.1-r0 webpage:
+amazon-corretto-24-24.0.0.36.2-r0 webpage:
 https://github.com/corretto/corretto-jdk
 
-amazon-corretto-23-23.0.2.7.1-r0 installed size:
-353 MiB
+amazon-corretto-24-24.0.0.36.2-r0 installed size:
+386 MiB
 
-amazon-corretto-23-23.0.2.7.1-r0 license:
+amazon-corretto-24-24.0.0.36.2-r0 license:
 https://github.com/corretto/corretto-jdk/blob/develop/LICENSE
 
 ```
@@ -332,16 +332,16 @@ X11
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-9.9_p1-r2 description:
+openssh-client-common-9.9_p2-r0 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-9.9_p1-r2 webpage:
+openssh-client-common-9.9_p2-r0 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-9.9_p1-r2 installed size:
-2446 KiB
+openssh-client-common-9.9_p2-r0 installed size:
+2450 KiB
 
-openssh-client-common-9.9_p1-r2 license:
+openssh-client-common-9.9_p2-r0 license:
 SSH-OpenSSH
 
 ```
@@ -349,16 +349,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-9.9_p1-r2 description:
+openssh-client-default-9.9_p2-r0 description:
 OpenBSD's SSH client
 
-openssh-client-default-9.9_p1-r2 webpage:
+openssh-client-default-9.9_p2-r0 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-9.9_p1-r2 installed size:
+openssh-client-default-9.9_p2-r0 installed size:
 826 KiB
 
-openssh-client-default-9.9_p1-r2 license:
+openssh-client-default-9.9_p2-r0 license:
 SSH-OpenSSH
 
 ```
@@ -366,16 +366,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-9.9_p1-r2 description:
+openssh-keygen-9.9_p2-r0 description:
 ssh helper program for generating keys
 
-openssh-keygen-9.9_p1-r2 webpage:
+openssh-keygen-9.9_p2-r0 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-9.9_p1-r2 installed size:
+openssh-keygen-9.9_p2-r0 installed size:
 470 KiB
 
-openssh-keygen-9.9_p1-r2 license:
+openssh-keygen-9.9_p2-r0 license:
 SSH-OpenSSH
 
 ```

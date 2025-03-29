@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:0f97fe630c19f802b8c6759cf2d70d4aad1a5ce86f687a7e14230e00844db72b`
+- Image ID: `sha256:df920b121fe55897e087422180aafb713be0ed52594544b4a71cec00d6ee1f07`
 - Created: `2024-09-24T11:57:06Z`
-- Virtual Size: ~ 306.18 Mb  
+- Virtual Size: ~ 306.19 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -332,16 +332,16 @@ X11
 ### `apk` package: `openssh-client-common`
 
 ```console
-openssh-client-common-9.9_p1-r2 description:
+openssh-client-common-9.9_p2-r0 description:
 OpenBSD's SSH client common files
 
-openssh-client-common-9.9_p1-r2 webpage:
+openssh-client-common-9.9_p2-r0 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-common-9.9_p1-r2 installed size:
-2446 KiB
+openssh-client-common-9.9_p2-r0 installed size:
+2450 KiB
 
-openssh-client-common-9.9_p1-r2 license:
+openssh-client-common-9.9_p2-r0 license:
 SSH-OpenSSH
 
 ```
@@ -349,16 +349,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-client-default`
 
 ```console
-openssh-client-default-9.9_p1-r2 description:
+openssh-client-default-9.9_p2-r0 description:
 OpenBSD's SSH client
 
-openssh-client-default-9.9_p1-r2 webpage:
+openssh-client-default-9.9_p2-r0 webpage:
 https://www.openssh.com/portable.html
 
-openssh-client-default-9.9_p1-r2 installed size:
+openssh-client-default-9.9_p2-r0 installed size:
 826 KiB
 
-openssh-client-default-9.9_p1-r2 license:
+openssh-client-default-9.9_p2-r0 license:
 SSH-OpenSSH
 
 ```
@@ -366,16 +366,16 @@ SSH-OpenSSH
 ### `apk` package: `openssh-keygen`
 
 ```console
-openssh-keygen-9.9_p1-r2 description:
+openssh-keygen-9.9_p2-r0 description:
 ssh helper program for generating keys
 
-openssh-keygen-9.9_p1-r2 webpage:
+openssh-keygen-9.9_p2-r0 webpage:
 https://www.openssh.com/portable.html
 
-openssh-keygen-9.9_p1-r2 installed size:
+openssh-keygen-9.9_p2-r0 installed size:
 470 KiB
 
-openssh-keygen-9.9_p1-r2 license:
+openssh-keygen-9.9_p2-r0 license:
 SSH-OpenSSH
 
 ```

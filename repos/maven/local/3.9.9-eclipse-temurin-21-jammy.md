@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:709be669c3e34052641d3dadaaf31aebd29e047386f888950c6c352c6f8ea9aa`
+- Image ID: `sha256:0a49c8dfdbc3d89ec82f85f316f8451dc247d762dd4f5e4c5f08dfcb6f4540a6`
 - Created: `2024-08-20T18:12:59Z`
-- Virtual Size: ~ 517.72 Mb  
+- Virtual Size: ~ 517.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -1748,11 +1748,11 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 This is *usually* due to a new package version being released and the old version being removed.
 
 
-### `dpkg` source package: `openssh=1:8.9p1-3ubuntu0.10`
+### `dpkg` source package: `openssh=1:8.9p1-3ubuntu0.11`
 
 Binary Packages:
 
-- `openssh-client=1:8.9p1-3ubuntu0.10`
+- `openssh-client=1:8.9p1-3ubuntu0.11`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -1764,9 +1764,14 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssh=1:8.9p1-3ubuntu0.11
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.11.dsc' openssh_8.9p1-3ubuntu0.11.dsc 3136 SHA512:ef5b948efe03ca7d20f65d13fcd38ef96d0a3b028d2357f76da3aa3b5826d73d015a0da9e6a7902f48339e59c4e5be5b0e36b0e91b8f94095a138d151779b05e
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1.orig.tar.gz' openssh_8.9p1.orig.tar.gz 1820282 SHA512:04bd38ea6fe4be31acc8c4e83de7d3dda66fb7207be2e4ba25d3b8118d13d098a283769da9e8ce1fc4fba7edf739c14efcc6c9137132919261a7f882314b0f6b
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.9p1-3ubuntu0.11.debian.tar.xz' openssh_8.9p1-3ubuntu0.11.debian.tar.xz 201164 SHA512:57e88f1b4863ccd52d466f9c8e06fa92f97d0bb8944ec328889bab5b4364a4f57def47ce329ef3b262bb52c3bd9e6080ed55d651689c899f8f8ec42329e186c6
+```
 
 ### `dpkg` source package: `openssl=3.0.2-0ubuntu1.18`
 

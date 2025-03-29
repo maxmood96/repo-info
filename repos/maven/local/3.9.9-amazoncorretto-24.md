@@ -1,10 +1,10 @@
-# `maven:3.9.9-amazoncorretto-17-al2023`
+# `maven:3.9.9-amazoncorretto-24`
 
 ## Docker Metadata
 
-- Image ID: `sha256:3481f1c9b4e77f05f1e0a2b04c31f1eb97cf05147f01654b70ba22e464f75f70`
-- Created: `2024-08-20T18:12:59Z`
-- Virtual Size: ~ 591.75 Mb  
+- Image ID: `sha256:78d7518a3f5fe6fb0eed3d71e19d097ad19197861a92113137ad007525f5862f`
+- Created: `2025-03-27T16:03:48Z`
+- Virtual Size: ~ 651.34 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -12,7 +12,7 @@
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `JAVA_HOME=/usr/lib/jvm/java-17-amazon-corretto`
+  - `JAVA_HOME=/usr/lib/jvm/java-24-amazon-corretto`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 - Labels:
@@ -524,49 +524,29 @@ $ dnf --quiet download --source --url harfbuzz-7.0.0-2.amzn2023.0.2
 https://cdn.amazonlinux.com/al2023/core/guids/297788ad7fd5ae4a29cc907c9af8b7979226127d66fbca5f7bd87232622e5d68/SRPMS/../../../../blobstore/3cc7971ddcf04cd18ac90b4a978eb7acf4249d5a04124a457b0913212fa1e684/harfbuzz-7.0.0-2.amzn2023.0.2.src.rpm
 ```
 
-### `rpm` package: `java-17-amazon-corretto-17.0.14+7-1.amzn2023.1.x86_64`
+### `rpm` package: `java-24-amazon-corretto-24.0.0+36-2.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-```console
-$ dnf --quiet download --source --url java-17-amazon-corretto-17.0.14+7-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/297788ad7fd5ae4a29cc907c9af8b7979226127d66fbca5f7bd87232622e5d68/SRPMS/../../../../blobstore/1fb122fbe1117b06e4fd30a41b065c0cfa72e32d31c2a9c8b6f4e2e1404f90a3/java-17-amazon-corretto-17.0.14+7-1.amzn2023.1.src.rpm
-```
-
-### `rpm` package: `java-17-amazon-corretto-devel-17.0.14+7-1.amzn2023.1.x86_64`
+### `rpm` package: `java-24-amazon-corretto-devel-24.0.0+36-2.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-```console
-$ dnf --quiet download --source --url java-17-amazon-corretto-devel-17.0.14+7-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/297788ad7fd5ae4a29cc907c9af8b7979226127d66fbca5f7bd87232622e5d68/SRPMS/../../../../blobstore/1fb122fbe1117b06e4fd30a41b065c0cfa72e32d31c2a9c8b6f4e2e1404f90a3/java-17-amazon-corretto-17.0.14+7-1.amzn2023.1.src.rpm
-```
-
-### `rpm` package: `java-17-amazon-corretto-headless-17.0.14+7-1.amzn2023.1.x86_64`
+### `rpm` package: `java-24-amazon-corretto-headless-24.0.0+36-2.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
-```console
-$ dnf --quiet download --source --url java-17-amazon-corretto-headless-17.0.14+7-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/297788ad7fd5ae4a29cc907c9af8b7979226127d66fbca5f7bd87232622e5d68/SRPMS/../../../../blobstore/1fb122fbe1117b06e4fd30a41b065c0cfa72e32d31c2a9c8b6f4e2e1404f90a3/java-17-amazon-corretto-17.0.14+7-1.amzn2023.1.src.rpm
-```
-
-### `rpm` package: `java-17-amazon-corretto-jmods-17.0.14+7-1.amzn2023.1.x86_64`
+### `rpm` package: `java-24-amazon-corretto-jmods-24.0.0+36-2.amzn2023.1.x86_64`
 
 Licenses (from `rpm --query`): ASL 1.1 and ASL 2.0 and BSD and BSD with advertising and GPL+ and GPLv2 and GPLv2 with exceptions and IJG and LGPLv2+ and MIT and MPLv2.0 and Public Domain and W3C and zlib and ISC and FTL and RSA.
 
-Source:
-
-```console
-$ dnf --quiet download --source --url java-17-amazon-corretto-jmods-17.0.14+7-1.amzn2023.1
-https://cdn.amazonlinux.com/al2023/core/guids/297788ad7fd5ae4a29cc907c9af8b7979226127d66fbca5f7bd87232622e5d68/SRPMS/../../../../blobstore/1fb122fbe1117b06e4fd30a41b065c0cfa72e32d31c2a9c8b6f4e2e1404f90a3/java-17-amazon-corretto-17.0.14+7-1.amzn2023.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `javapackages-filesystem-6.0.0-7.amzn2023.0.6.noarch`
 
@@ -1723,17 +1703,6 @@ $ dnf --quiet download --source --url systemd-libs-252.23-2.amzn2023
 https://cdn.amazonlinux.com/al2023/core/guids/297788ad7fd5ae4a29cc907c9af8b7979226127d66fbca5f7bd87232622e5d68/SRPMS/../../../../blobstore/303259ffbf63c5a059b8ab654154fc24e1b8bb8cc5d6fa2152ee37a580c6478d/systemd-252.23-2.amzn2023.src.rpm
 ```
 
-### `rpm` package: `tar-1.34-1.amzn2023.0.4.x86_64`
-
-Licenses (from `rpm --query`): GPLv3+
-
-Source:
-
-```console
-$ dnf --quiet download --source --url tar-1.34-1.amzn2023.0.4
-https://cdn.amazonlinux.com/al2023/core/guids/297788ad7fd5ae4a29cc907c9af8b7979226127d66fbca5f7bd87232622e5d68/SRPMS/../../../../blobstore/5a1f7da086290133e9d24d6eca3d019c9ef716a74f63576097d26661dc95baf2/tar-1.34-1.amzn2023.0.4.src.rpm
-```
-
 ### `rpm` package: `tzdata-2025a-1.amzn2023.0.1.noarch`
 
 Licenses (from `rpm --query`): Public Domain
@@ -1765,17 +1734,6 @@ Source:
 ```console
 $ dnf --quiet download --source --url util-linux-core-2.37.4-1.amzn2023.0.4
 https://cdn.amazonlinux.com/al2023/core/guids/297788ad7fd5ae4a29cc907c9af8b7979226127d66fbca5f7bd87232622e5d68/SRPMS/../../../../blobstore/5d583f3af0bebf693cbcb5e1f135d0a51449617aa1870faf1704d95a94b70402/util-linux-2.37.4-1.amzn2023.0.4.src.rpm
-```
-
-### `rpm` package: `which-2.21-26.amzn2023.0.2.x86_64`
-
-Licenses (from `rpm --query`): GPLv3
-
-Source:
-
-```console
-$ dnf --quiet download --source --url which-2.21-26.amzn2023.0.2
-https://cdn.amazonlinux.com/al2023/core/guids/297788ad7fd5ae4a29cc907c9af8b7979226127d66fbca5f7bd87232622e5d68/SRPMS/../../../../blobstore/0ec4bfba149c3d82d3924d60802c4878107bb4b79fcfaff7a7ac7d1b1d4bbc1f/which-2.21-26.amzn2023.0.2.src.rpm
 ```
 
 ### `rpm` package: `xml-common-0.6.3-56.amzn2023.0.2.noarch`

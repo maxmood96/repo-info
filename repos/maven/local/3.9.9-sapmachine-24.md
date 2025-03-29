@@ -1,17 +1,17 @@
-# `maven:3.9.9-sapmachine-23`
+# `maven:3.9.9-sapmachine-24`
 
 ## Docker Metadata
 
-- Image ID: `sha256:b0b0730374a766c6310712022eb35b2806ba2002b4c1962136a72e97200fc3ac`
-- Created: `2024-09-23T17:02:08Z`
-- Virtual Size: ~ 556.54 Mb  
+- Image ID: `sha256:3b4e8358507c2375a0b590cf614ccd082cc1df378d3a6efea422d67fcc47f6fd`
+- Created: `2025-03-27T16:03:48Z`
+- Virtual Size: ~ 596.22 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
 - Command: `["mvn"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `JAVA_HOME=/usr/lib/jvm/sapmachine-23`
+  - `JAVA_HOME=/usr/lib/jvm/sapmachine-24`
   - `MAVEN_HOME=/usr/share/maven`
   - `MAVEN_CONFIG=/root/.m2`
 - Labels:
@@ -1005,22 +1005,28 @@ $ apt-get source -qq --print-uris keyutils=1.6.3-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/k/keyutils/keyutils_1.6.3-3build1.debian.tar.xz' keyutils_1.6.3-3build1.debian.tar.xz 13456 SHA512:ef729447f8f4adebdb986d115e227bd908b346e26115eb7a0385a084ad69f6772c914744d8c24928587247cd5fc329ed1305e9b006db276d0445b9614f20603f
 ```
 
-### `dpkg` source package: `krb5=1.20.1-6ubuntu2.2`
+### `dpkg` source package: `krb5=1.20.1-6ubuntu2.5`
 
 Binary Packages:
 
-- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2.2`
-- `libk5crypto3:amd64=1.20.1-6ubuntu2.2`
-- `libkrb5-3:amd64=1.20.1-6ubuntu2.2`
-- `libkrb5support0:amd64=1.20.1-6ubuntu2.2`
+- `libgssapi-krb5-2:amd64=1.20.1-6ubuntu2.5`
+- `libk5crypto3:amd64=1.20.1-6ubuntu2.5`
+- `libkrb5-3:amd64=1.20.1-6ubuntu2.5`
+- `libkrb5support0:amd64=1.20.1-6ubuntu2.5`
 
 Licenses: (parsed from: `/usr/share/doc/libgssapi-krb5-2/copyright`, `/usr/share/doc/libk5crypto3/copyright`, `/usr/share/doc/libkrb5-3/copyright`, `/usr/share/doc/libkrb5support0/copyright`)
 
 - `GPL-2`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris krb5=1.20.1-6ubuntu2.5
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.5.dsc' krb5_1.20.1-6ubuntu2.5.dsc 4080 SHA512:6a09f550faf0d561d386da3a795fdf18084b3039189f3055be2429d0f26e6d8ea1290ab6d8afcc68f2aaee66f679c9051e38acaf329c3335119fd9325f63f785
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz' krb5_1.20.1.orig.tar.gz 8661660 SHA512:6f57479f13f107cd84f30de5c758eb6b9fc59171329c13e5da6073b806755f8d163eb7bd84767ea861ad6458ea0c9eeb00ee044d3bcad01ef136e9888564b6a2
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1.orig.tar.gz.asc' krb5_1.20.1.orig.tar.gz.asc 833 SHA512:1d3312bd67581e07adfdadf2c5fe394179631d8add8bd075efefe982a0de22369004e60a14422d426382c8c591e4181b9897088afe9d4e86f0b5a97e5954c67a
+'http://archive.ubuntu.com/ubuntu/pool/main/k/krb5/krb5_1.20.1-6ubuntu2.5.debian.tar.xz' krb5_1.20.1-6ubuntu2.5.debian.tar.xz 118440 SHA512:7bc293b3f50c13066bef1a2a085001fbea927eb23a1e58f579e4dea25af6decfb6cf138b2329dba695016721adda049f6e2883c848b98c69aef2c921c15a2f82
+```
 
 ### `dpkg` source package: `libassuan=2.5.6-1build1`
 
@@ -1932,11 +1938,11 @@ $ apt-get source -qq --print-uris nss=2:3.98-1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nss/nss_3.98-1build1.debian.tar.xz' nss_3.98-1build1.debian.tar.xz 19460 SHA512:c7296058a3b593e5f254ff67192ef8d7f4f3e42dac30bce676075d195a792a5cb36a97c2b755cdd17f9b6b03e55302ebb344c4e9ae720ab03a67006e0421a9fb
 ```
 
-### `dpkg` source package: `openldap=2.6.7+dfsg-1~exp1ubuntu8.1`
+### `dpkg` source package: `openldap=2.6.7+dfsg-1~exp1ubuntu8.2`
 
 Binary Packages:
 
-- `libldap2:amd64=2.6.7+dfsg-1~exp1ubuntu8.1`
+- `libldap2:amd64=2.6.7+dfsg-1~exp1ubuntu8.2`
 
 Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 
@@ -1965,15 +1971,20 @@ Licenses: (parsed from: `/usr/share/doc/libldap2/copyright`)
 - `UMich`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openldap=2.6.7+dfsg-1~exp1ubuntu8.2
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg-1%7eexp1ubuntu8.2.dsc' openldap_2.6.7+dfsg-1~exp1ubuntu8.2.dsc 3488 SHA512:b262ce1ec8742801dadaa6c50393cd2da7359200f6c42c0f2573be883deb13b2e71b85169ba8db1edf5ec11ef5e0122c2f839f4320ead4041423e9a3fa03b679
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg.orig.tar.xz' openldap_2.6.7+dfsg.orig.tar.xz 3774648 SHA512:84e02268b096347049b61947a56b5aa13d4d8548eed1bd472821c99fcd0208293d300b6bb78c4acd0e30a20fdd1851894c2f89f6365a359de856e1b095506014
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.6.7%2bdfsg-1%7eexp1ubuntu8.2.debian.tar.xz' openldap_2.6.7+dfsg-1~exp1ubuntu8.2.debian.tar.xz 186792 SHA512:276056a2c445949ab7cba305eb760f8793b5bae6c487c9301da94553b1c8d83ada9279a537800deef7fc434af4352585071514bafdc9172ac766feb739c590cc
+```
 
-### `dpkg` source package: `openssh=1:9.6p1-3ubuntu13.5`
+### `dpkg` source package: `openssh=1:9.6p1-3ubuntu13.9`
 
 Binary Packages:
 
-- `openssh-client=1:9.6p1-3ubuntu13.5`
+- `openssh-client=1:9.6p1-3ubuntu13.9`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -1985,16 +1996,22 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssh=1:9.6p1-3ubuntu13.9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.9.dsc' openssh_9.6p1-3ubuntu13.9.dsc 3342 SHA512:3c83e9185a948b4fde582993a59eb7c95cbe532b046d09a68bab5c1b4576ea41ee48cb08858d2d375f297b4c9ef027ce4ae438d095923f630474263f0bd6684e
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz' openssh_9.6p1.orig.tar.gz 1857862 SHA512:0ebf81e39914c3a90d7777a001ec7376a94b37e6024baf3e972c58f0982b7ddef942315f5e01d56c00ff95603b4a20ee561ab918ecc55511df007ac138160509
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1.orig.tar.gz.asc' openssh_9.6p1.orig.tar.gz.asc 833 SHA512:aec5a5bd6ce480a8e5b5879dc55f8186aec90fe61f085aa92ad7d07f324574aa781be09c83b7443a32848d091fd44fb12c1842d49cee77afc351e550ffcc096d
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_9.6p1-3ubuntu13.9.debian.tar.xz' openssh_9.6p1-3ubuntu13.9.debian.tar.xz 206020 SHA512:72e77a5da332f3fcb944cbbd7dbfc718dd9c3800719b3b7923af18f8b1c4868d4c78d8378e875fa7fe485bd68d2c705f2fab726ff31d2c0c64b35b5994f16e2f
+```
 
-### `dpkg` source package: `openssl=3.0.13-0ubuntu3.4`
+### `dpkg` source package: `openssl=3.0.13-0ubuntu3.5`
 
 Binary Packages:
 
-- `libssl3t64:amd64=3.0.13-0ubuntu3.4`
-- `openssl=3.0.13-0ubuntu3.4`
+- `libssl3t64:amd64=3.0.13-0ubuntu3.5`
+- `openssl=3.0.13-0ubuntu3.5`
 
 Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 
@@ -2003,9 +2020,14 @@ Licenses: (parsed from: `/usr/share/doc/libssl3t64/copyright`)
 - `GPL-1`
 - `GPL-1+`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssl=3.0.13-0ubuntu3.5
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.5.dsc' openssl_3.0.13-0ubuntu3.5.dsc 2512 SHA512:2071df5d403c0b39ae500ee2fe1118313df10cc187d533813f634c96d2653cfde840318238b39525bbb47a52db7abf7fc2dd9b655a486a4c79a6123638f35f9e
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13.orig.tar.gz' openssl_3.0.13.orig.tar.gz 15294843 SHA512:22f4096781f0b075f5bf81bd39a0f97e111760dfa73b6f858f6bb54968a7847944d74969ae10f9a51cc21a2f4af20d9a4c463649dc824f5e439e196d6764c4f9
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_3.0.13-0ubuntu3.5.debian.tar.xz' openssl_3.0.13-0ubuntu3.5.debian.tar.xz 169252 SHA512:29b18d2b824b85ac7fe31ad93ef0ac7320701806d59497c65cf615e9495025007c6052c0878a8cc3bf08860ace1e04c33f56e88c7026bd362eb32142c963a1a0
+```
 
 ### `dpkg` source package: `p11-kit=0.25.3-4ubuntu2.1`
 
@@ -2184,11 +2206,11 @@ $ apt-get source -qq --print-uris rtmpdump=2.4+20151223.gitfa8646d.1-2build7
 'http://archive.ubuntu.com/ubuntu/pool/main/r/rtmpdump/rtmpdump_2.4%2b20151223.gitfa8646d.1-2build7.debian.tar.xz' rtmpdump_2.4+20151223.gitfa8646d.1-2build7.debian.tar.xz 8464 SHA512:812edf4f933ad0f723404192bfbfceca86e58303169a30e3b1f47781b709b91a259621293533d31d7abd16bc522824e2db325426a4ce9a6b428b88d492ae4c6c
 ```
 
-### `dpkg` source package: `sapmachine-23-jdk=23.0.2`
+### `dpkg` source package: `sapmachine-24-jdk=24`
 
 Binary Packages:
 
-- `sapmachine-23-jdk=23.0.2`
+- `sapmachine-24-jdk=24`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.

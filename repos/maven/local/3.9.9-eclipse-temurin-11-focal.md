@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:e89170ae39f316480531a1e690300526b5c137589b5def1279f1308595142788`
+- Image ID: `sha256:76b43be3e1fdec370bd75a249af2a3baec922d8e28646913668a8b46e360676c`
 - Created: `2024-08-20T18:12:59Z`
-- Virtual Size: ~ 498.45 Mb  
+- Virtual Size: ~ 498.49 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/usr/local/bin/mvn-entrypoint.sh"]`
@@ -638,12 +638,12 @@ $ apt-get source -qq --print-uris gdbm=1.18.1-5
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gdbm/gdbm_1.18.1-5.debian.tar.xz' gdbm_1.18.1-5.debian.tar.xz 16348 SHA256:3c1a0e05b40a97ee51ce77c736c72c37738ba31b2720111d3bc99175a2c3a3ed
 ```
 
-### `dpkg` source package: `git=1:2.25.1-1ubuntu3.13`
+### `dpkg` source package: `git=1:2.25.1-1ubuntu3.14`
 
 Binary Packages:
 
-- `git=1:2.25.1-1ubuntu3.13`
-- `git-man=1:2.25.1-1ubuntu3.13`
+- `git=1:2.25.1-1ubuntu3.14`
+- `git-man=1:2.25.1-1ubuntu3.14`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -666,9 +666,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.25.1-1ubuntu3.14
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.14.dsc' git_2.25.1-1ubuntu3.14.dsc 2966 SHA512:02725ad0ce0ecc76e3ade84a211989c02ab70ed3c3b6a8cd282645700374a0398a747f41392fa795e79d2f57e90cf6afd2b7ab4851ea3110e62f1d298b408f8e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1.orig.tar.xz' git_2.25.1.orig.tar.xz 5875548 SHA512:15241143acfd8542d85d2709ac3c80dbd6e8d5234438f70c4f33cc71a2bdec3e32938df7f6351e2746d570b021d3bd0b70474ea4beec0c51d1fc45f9c287b344
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.14.debian.tar.xz' git_2.25.1-1ubuntu3.14.debian.tar.xz 719124 SHA512:4ee6d3c92aad795c88aefba4aa245448aaee1b740494c34f3088716ebd70f54324cd1f7ca0d0e06c2980489f14a31f250d0a512f798dc3373c71818dc48e74c5
+```
 
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.16`
 
@@ -1625,11 +1630,11 @@ $ apt-get source -qq --print-uris openldap=2.4.49+dfsg-2ubuntu1.10
 'http://archive.ubuntu.com/ubuntu/pool/main/o/openldap/openldap_2.4.49%2bdfsg-2ubuntu1.10.debian.tar.xz' openldap_2.4.49+dfsg-2ubuntu1.10.debian.tar.xz 190520 SHA512:6782b86834c3643acd64ecf68643af47e030fded12ed90bf84c40072c63bdcd01ada54bdf0eb8ef54123c70d5b96dd447b498ed1a0e0c88efcd56126e2c9e646
 ```
 
-### `dpkg` source package: `openssh=1:8.2p1-4ubuntu0.11`
+### `dpkg` source package: `openssh=1:8.2p1-4ubuntu0.12`
 
 Binary Packages:
 
-- `openssh-client=1:8.2p1-4ubuntu0.11`
+- `openssh-client=1:8.2p1-4ubuntu0.12`
 
 Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 
@@ -1642,9 +1647,14 @@ Licenses: (parsed from: `/usr/share/doc/openssh-client/copyright`)
 - `Powell-BSD-style`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris openssh=1:8.2p1-4ubuntu0.12
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4ubuntu0.12.dsc' openssh_8.2p1-4ubuntu0.12.dsc 3102 SHA512:da3d5af771b854a5bfa15d75c606192892c818c02ac94d64ec1e1c9c3a555cad4f5754addef863c55baf338c407bef95541e4b1a3af872b4368bd1a224de78c1
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1.orig.tar.gz' openssh_8.2p1.orig.tar.gz 1701197 SHA512:c4db64e52a3a4c410de9de49f9cb104dd493b10250af3599b92457dd986277b3fd99a6f51cec94892fd1be5bd0369c5757262ea7805f0de464b245c3d34c120a
+'http://archive.ubuntu.com/ubuntu/pool/main/o/openssh/openssh_8.2p1-4ubuntu0.12.debian.tar.xz' openssh_8.2p1-4ubuntu0.12.debian.tar.xz 185796 SHA512:fdc7e777cd833bbf15a74240ba5751f74d6a4075a3e39ce1956d27b590ec78d6bda35426a01ccf45ec6729a34e59828d1d30a32720551dd14ab9b10114c6ce65
+```
 
 ### `dpkg` source package: `openssl=1.1.1f-1ubuntu2.23`
 
