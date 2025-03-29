@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:230519a19ca3a193592a7cdec09a84c9a9f64164bff1ef4e471cf05a8e04d2fa`
+- Image ID: `sha256:a270509479a004349182ffe8b1cadf25d19ae24aa229cb36dfae622b9529fe92`
 - Created: `2025-03-03T18:37:38Z`
 - Virtual Size: ~ 1.05 Gb  
   (total size of all layers on-disk)
@@ -12,9 +12,9 @@
 - Environment:
   - `PATH=/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `LANG=C.UTF-8`
-  - `RUBY_VERSION=3.2.7`
-  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.7.tar.xz`
-  - `RUBY_DOWNLOAD_SHA256=fc159b0d4a8ce412948fb69e61493839a0b3e1d5c919180f27036f1c948cfbe2`
+  - `RUBY_VERSION=3.2.8`
+  - `RUBY_DOWNLOAD_URL=https://cache.ruby-lang.org/pub/ruby/3.2/ruby-3.2.8.tar.xz`
+  - `RUBY_DOWNLOAD_SHA256=1cccd3100155275293ae5d4ea0a1a1068f5de69e71732220f144acce26327a3c`
   - `GEM_HOME=/usr/local/bundle`
   - `BUNDLE_SILENCE_ROOT_WARNING=1`
   - `BUNDLE_APP_CONFIG=/usr/local/bundle`
