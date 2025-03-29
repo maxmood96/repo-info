@@ -143,19 +143,13 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.6.6
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.6.dsc' base-passwd_3.6.6.dsc 1844 SHA256:c751de08700db6c297f6795982fec0751b4a5a65b645c357e87dfe09eb5e54d0
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.6.tar.xz' base-passwd_3.6.6.tar.xz 60116 SHA256:cfcb17a5cfb5d7ce53f062b2a30c74ac7f9425af81010d3591aeffc60f269263
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-passwd/3.6.6/
 
-- https://sources.debian.net/src/base-passwd/3.6.6/ (for browsing the source)
-- https://sources.debian.net/src/base-passwd/3.6.6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-passwd/3.6.6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bash=5.2.37-1.1`
 
@@ -705,10 +699,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris ed=1.21-1
-'http://http.debian.net/debian/pool/main/e/ed/ed_1.21-1.dsc' ed_1.21-1.dsc 1818 SHA256:551d6028a4d974947e80d8ddc9ce6aab5d2f301e7bd71308a953cbf66f1b776e
-'http://http.debian.net/debian/pool/main/e/ed/ed_1.21.orig.tar.gz' ed_1.21.orig.tar.gz 93889 SHA256:45eacac8f964595cf7fa52ce9a7a699aa15ca1b13db57f06d4cbbf602f7a9a56
-'http://http.debian.net/debian/pool/main/e/ed/ed_1.21-1.debian.tar.xz' ed_1.21-1.debian.tar.xz 8684 SHA256:78cc0d8d1526e842a175386ecabec98af514bc538024d345afacc030576367b1
+'http://deb.debian.org/debian/pool/main/e/ed/ed_1.21-1.dsc' ed_1.21-1.dsc 1818 SHA256:551d6028a4d974947e80d8ddc9ce6aab5d2f301e7bd71308a953cbf66f1b776e
+'http://deb.debian.org/debian/pool/main/e/ed/ed_1.21.orig.tar.gz' ed_1.21.orig.tar.gz 93889 SHA256:45eacac8f964595cf7fa52ce9a7a699aa15ca1b13db57f06d4cbbf602f7a9a56
+'http://deb.debian.org/debian/pool/main/e/ed/ed_1.21-1.debian.tar.xz' ed_1.21-1.debian.tar.xz 8684 SHA256:78cc0d8d1526e842a175386ecabec98af514bc538024d345afacc030576367b1
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/ed/1.21-1/ (for browsing the source)
+- https://sources.debian.net/src/ed/1.21-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/ed/1.21-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `expat=2.7.0-1`
 
@@ -720,14 +720,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.7.0-1
-'http://http.debian.net/debian/pool/main/e/expat/expat_2.7.0-1.dsc' expat_2.7.0-1.dsc 1964 SHA256:6fc5e52b5be458d39f8f6b5364bcfd3318667e8ba0f3a02171fa8865bfa13c41
-'http://http.debian.net/debian/pool/main/e/expat/expat_2.7.0.orig.tar.gz' expat_2.7.0.orig.tar.gz 8430712 SHA256:d5ff350414fec2a0c35855e29a08297cbb3d9ce6b3eff773b08f537dbc352b3d
-'http://http.debian.net/debian/pool/main/e/expat/expat_2.7.0-1.debian.tar.xz' expat_2.7.0-1.debian.tar.xz 13180 SHA256:12d43cbad50a296d64ca960a3a3d1286912a4d6722c02164da599efc13e092a9
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/expat/2.7.0-1/
+
 
 ### `dpkg` source package: `findutils=4.10.0-3`
 
@@ -2098,21 +2097,13 @@ Licenses: (parsed from: `/usr/share/doc/libunistring5/copyright`)
 - `public-domain`
 - `unicode-dfs-2016`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libunistring=1.3-1
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.3-1.dsc' libunistring_1.3-1.dsc 1578 SHA256:2d734e00be507e74a873e1689d69e1bdde31c06d208c31543ea24e5ff1614bab
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.3.orig.tar.xz' libunistring_1.3.orig.tar.xz 2753448 SHA256:f245786c831d25150f3dfb4317cda1acc5e3f79a5da4ad073ddca58886569527
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.3.orig.tar.xz.asc' libunistring_1.3.orig.tar.xz.asc 833 SHA256:62201b5b7ce9c0b033c50cefa5d7769dff4b7cee8205572e0cf917653cae9e33
-'http://deb.debian.org/debian/pool/main/libu/libunistring/libunistring_1.3-1.debian.tar.xz' libunistring_1.3-1.debian.tar.xz 28376 SHA256:f1cfdaa0e9c330099ff15050395944814ad450bc87a6deae0b78a67fcdabe4d4
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libunistring/1.3-1/
 
-- https://sources.debian.net/src/libunistring/1.3-1/ (for browsing the source)
-- https://sources.debian.net/src/libunistring/1.3-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libunistring/1.3-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libwebp=1.5.0-0.1`
 
@@ -2352,10 +2343,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris libzstd=1.5.6+dfsg-2
-'http://http.debian.net/debian/pool/main/libz/libzstd/libzstd_1.5.6%2bdfsg-2.dsc' libzstd_1.5.6+dfsg-2.dsc 2369 SHA256:57f39cddb823019558f0f69f4fb9842a3b8c13cb3f9db8e6d8a7819c1e058b33
-'http://http.debian.net/debian/pool/main/libz/libzstd/libzstd_1.5.6%2bdfsg.orig.tar.xz' libzstd_1.5.6+dfsg.orig.tar.xz 1815380 SHA256:b3a60c7059886641830adf32c979be8d211da5d73fd05c7768f86d12d5bccec3
-'http://http.debian.net/debian/pool/main/libz/libzstd/libzstd_1.5.6%2bdfsg-2.debian.tar.xz' libzstd_1.5.6+dfsg-2.debian.tar.xz 23088 SHA256:5795e5c490e7087db756be093be00c02987ca7276713b7428e962a73b34294f1
+'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.5.6%2bdfsg-2.dsc' libzstd_1.5.6+dfsg-2.dsc 2369 SHA256:57f39cddb823019558f0f69f4fb9842a3b8c13cb3f9db8e6d8a7819c1e058b33
+'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.5.6%2bdfsg.orig.tar.xz' libzstd_1.5.6+dfsg.orig.tar.xz 1815380 SHA256:b3a60c7059886641830adf32c979be8d211da5d73fd05c7768f86d12d5bccec3
+'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.5.6%2bdfsg-2.debian.tar.xz' libzstd_1.5.6+dfsg-2.debian.tar.xz 23088 SHA256:5795e5c490e7087db756be093be00c02987ca7276713b7428e962a73b34294f1
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/libzstd/1.5.6+dfsg-2/ (for browsing the source)
+- https://sources.debian.net/src/libzstd/1.5.6+dfsg-2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libzstd/1.5.6+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `linux=6.12.19-1`
 
@@ -3503,10 +3500,16 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris tiff=4.5.1+git230720-5
-'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.5.1%2bgit230720-5.dsc' tiff_4.5.1+git230720-5.dsc 2322 SHA256:bef3be0797e0117a34abdab78b398294adc28947f891978f7e1264d45e0cbec8
-'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.5.1%2bgit230720.orig.tar.xz' tiff_4.5.1+git230720.orig.tar.xz 1781896 SHA256:0e51bcf3a3ffa5fc76ea6aeb74a797f95c84544fcc8b6a1ec5def967a78e9e12
-'http://http.debian.net/debian/pool/main/t/tiff/tiff_4.5.1%2bgit230720-5.debian.tar.xz' tiff_4.5.1+git230720-5.debian.tar.xz 26764 SHA256:01c212410561b6a4ff00f3449def450a782c21db55ebc1820e82500dc503fe07
+'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.5.1%2bgit230720-5.dsc' tiff_4.5.1+git230720-5.dsc 2322 SHA256:bef3be0797e0117a34abdab78b398294adc28947f891978f7e1264d45e0cbec8
+'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.5.1%2bgit230720.orig.tar.xz' tiff_4.5.1+git230720.orig.tar.xz 1781896 SHA256:0e51bcf3a3ffa5fc76ea6aeb74a797f95c84544fcc8b6a1ec5def967a78e9e12
+'http://deb.debian.org/debian/pool/main/t/tiff/tiff_4.5.1%2bgit230720-5.debian.tar.xz' tiff_4.5.1+git230720-5.debian.tar.xz 26764 SHA256:01c212410561b6a4ff00f3449def450a782c21db55ebc1820e82500dc503fe07
 ```
+
+Other potentially useful URLs:
+
+- https://sources.debian.net/src/tiff/4.5.1+git230720-5/ (for browsing the source)
+- https://sources.debian.net/src/tiff/4.5.1+git230720-5/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tiff/4.5.1+git230720-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `tk8.6=8.6.16-1`
 
@@ -3660,20 +3663,13 @@ Licenses: (parsed from: `/usr/share/doc/vim-common/copyright`, `/usr/share/doc/v
 - `XPM`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris vim=2:9.1.1113-1
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.1113-1.dsc' vim_9.1.1113-1.dsc 3230 SHA256:16ea6c861083e9135805b8506f3a9fba2ca5f8ad7e959b36fdaf6b153c8060d0
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.1113.orig.tar.xz' vim_9.1.1113.orig.tar.xz 12238172 SHA256:05c658958880af5d37506e96c125e43b3a21c7ee2cb905d9370a5b1b9d4640dc
-'http://deb.debian.org/debian/pool/main/v/vim/vim_9.1.1113-1.debian.tar.xz' vim_9.1.1113-1.debian.tar.xz 191084 SHA256:dce5f877ba2887f0ed81b1700042f939f2836269a6d20ad7991ca8f92a0c2bed
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/vim/2:9.1.1113-1/
 
-- https://sources.debian.net/src/vim/2:9.1.1113-1/ (for browsing the source)
-- https://sources.debian.net/src/vim/2:9.1.1113-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/vim/2:9.1.1113-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
