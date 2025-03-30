@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:51dd70fbe6d4c360ccd4a499948f453be9140dade0fc87906e6383aaf96c608c`
+- Image ID: `sha256:d991ff86d31adbd0c958162039e4801c64e00837060ddf186a89b5e181b6c2c6`
 - Created: `2025-02-14T06:55:09Z`
-- Virtual Size: ~ 467.60 Mb  
+- Virtual Size: ~ 467.59 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -16,7 +16,7 @@
   - `MARIADB_VERSION=11.7.2`
 - Labels:
   - `architecture=x86_64`
-  - `build-date=2025-03-13T07:15:09Z`
+  - `build-date=2025-03-25T14:50:12Z`
   - `com.redhat.component=ubi9-minimal-container`
   - `com.redhat.license_terms=https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI`
   - `description=MariaDB Database for relational SQL`
@@ -41,7 +41,7 @@
   - `release=Refer to Annotations org.opencontainers.image.{revision,source}`
   - `summary=MariaDB Database`
   - `url=https://www.redhat.com`
-  - `vcs-ref=7865437f00d10c54ee1c3a6268b5ff65b38afba5`
+  - `vcs-ref=63823c7605fee63261a8e33cad8085bc4bb24676`
   - `vcs-type=git`
   - `vendor=MariaDB Community`
   - `version=11.7.2`
@@ -274,7 +274,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url epel-release-9-9.el9.noarch
-rsync://mirror.us.mirhosting.net/epel/9/Everything/source/tree/Packages/e/epel-release-9-9.el9.src.rpm
+http://mirror.grid.uchicago.edu/pub/linux/epel/9/Everything/source/tree/Packages/e/epel-release-9-9.el9.src.rpm
 ```
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
@@ -524,7 +524,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url jemalloc-5.2.1-2.el9
-rsync://mirror.us.mirhosting.net/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
+http://mirror.grid.uchicago.edu/pub/linux/epel/9/Everything/source/tree/Packages/j/jemalloc-5.2.1-2.el9.src.rpm
 ```
 
 ### `rpm` package: `json-c-0.14-11.el9.x86_64`
@@ -2097,7 +2097,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pv-1.6.20-1.el9
-rsync://mirror.us.mirhosting.net/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
+http://mirror.grid.uchicago.edu/pub/linux/epel/9/Everything/source/tree/Packages/p/pv-1.6.20-1.el9.src.rpm
 ```
 
 ### `rpm` package: `pwgen-2.08-8.el9.x86_64`
@@ -2108,7 +2108,7 @@ Source:
 
 ```console
 $ dnf --quiet download --source --url pwgen-2.08-8.el9
-rsync://mirror.us.mirhosting.net/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
+http://mirror.grid.uchicago.edu/pub/linux/epel/9/Everything/source/tree/Packages/p/pwgen-2.08-8.el9.src.rpm
 ```
 
 ### `rpm` package: `readline-8.1-4.el9.x86_64`
@@ -2232,11 +2232,16 @@ $ dnf --quiet download --source --url sqlite-libs-3.34.1-7.el9_3
 https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/sqlite-3.34.1-7.el9_3.src.rpm
 ```
 
-### `rpm` package: `systemd-libs-252-46.el9_5.2.x86_64`
+### `rpm` package: `systemd-libs-252-46.el9_5.3.x86_64`
 
 Licenses (from `rpm --query`): LGPLv2+ and MIT
 
-**WARNING:** unable to find source (`dnf download` failed or returned no results)!
+Source:
+
+```console
+$ dnf --quiet download --source --url systemd-libs-252-46.el9_5.3
+https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/s/systemd-252-46.el9_5.3.src.rpm
+```
 
 ### `rpm` package: `tar-1.34-7.el9.x86_64`
 
