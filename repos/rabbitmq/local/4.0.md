@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:abf34a9fef62fcba3ec89375be767172b28bd18d787e37b086060f3a07c2f8ac`
-- Created: `2025-03-05T12:05:21Z`
-- Virtual Size: ~ 237.13 Mb  
+- Image ID: `sha256:0904778e41aba19ace8239c6faf52a0d4559ad9b19d45755f9348d8b16ac1789`
+- Created: `2025-03-28T17:31:53Z`
+- Virtual Size: ~ 237.16 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1565,20 +1565,26 @@ $ apt-get source -qq --print-uris tar=1.35+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-3build1.debian.tar.xz' tar_1.35+dfsg-3build1.debian.tar.xz 20948 SHA512:82b1a9f70c99c17f5288a4a9fbe8b1bef0adcd9543f97f876ee81afc16e3ac02e46182557406ff434ae90c81950f22346c3229ee3e5f5f9578dcf09a20053e9f
 ```
 
-### `dpkg` source package: `tzdata=2024b-0ubuntu0.24.04.1`
+### `dpkg` source package: `tzdata=2025a-0ubuntu0.24.04`
 
 Binary Packages:
 
-- `tzdata=2024b-0ubuntu0.24.04.1`
+- `tzdata=2025a-0ubuntu0.24.04`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 - `public-domain`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris tzdata=2025a-0ubuntu0.24.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025a-0ubuntu0.24.04.dsc' tzdata_2025a-0ubuntu0.24.04.dsc 2720 SHA512:af695071c9e9d0b1028bcac40ff6dcc3b4471852d73a7dabb1ff3d32f3ca675975aad28fb53f205aae9864e999fbb213f1cc3fa5c59ed5f33dbaa37550a07749
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025a.orig.tar.gz' tzdata_2025a.orig.tar.gz 462943 SHA512:93b8f939d39bdfe451e262666f9099c529c96c49d14c08e3611560ca660e12e16d08a22b145d615e00570fb194881618d6f9a0a617c119ab447be03279d747c3
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025a.orig.tar.gz.asc' tzdata_2025a.orig.tar.gz.asc 833 SHA512:4ffb41741da959c7997d05ed61c5c5ff9d1920b5bac3bca0788dd8b4737b4fb82be76da304dbbdbda10412c4b1215680dbd5b7f55de5fe69ce2c3e37c40a13a6
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025a-0ubuntu0.24.04.debian.tar.xz' tzdata_2025a-0ubuntu0.24.04.debian.tar.xz 187848 SHA512:88c929e96392024969dde074c91cfcd443dc498a3696bbcf2f8dc6830232a6d807614f54227cdf9d9396510a49dd384e881d825399aaad1ac2cc8eec4e86708d
+```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1`
 

@@ -2,7 +2,7 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:7207fa51ea641cb7a97a1558e79412262454a040c4e5827b6348f3690f52d2e4`
+- Image ID: `sha256:36f6c85352d0219a64e5e7ed2350ef4e83aa2e7d42aa1b908628981ddb344d33`
 - Created: `2024-09-20T21:15:09Z`
 - Virtual Size: ~ 178.48 Mb  
   (total size of all layers on-disk)
@@ -231,16 +231,16 @@ Apache-2.0
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.4-r0 description:
+libexpat-2.7.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.4-r0 webpage:
+libexpat-2.7.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.4-r0 installed size:
+libexpat-2.7.0-r0 installed size:
 129 KiB
 
-libexpat-2.6.4-r0 license:
+libexpat-2.7.0-r0 license:
 MIT
 
 ```
@@ -248,16 +248,16 @@ MIT
 ### `apk` package: `libffi`
 
 ```console
-libffi-3.4.6-r0 description:
+libffi-3.4.7-r0 description:
 portable, high level programming interface to various calling conventions.
 
-libffi-3.4.6-r0 webpage:
+libffi-3.4.7-r0 webpage:
 https://sourceware.org/libffi/
 
-libffi-3.4.6-r0 installed size:
+libffi-3.4.7-r0 installed size:
 38 KiB
 
-libffi-3.4.6-r0 license:
+libffi-3.4.7-r0 license:
 MIT
 
 ```
@@ -622,16 +622,16 @@ MIT
 ### `apk` package: `tzdata`
 
 ```console
-tzdata-2025a-r0 description:
+tzdata-2025b-r0 description:
 Timezone data
 
-tzdata-2025a-r0 webpage:
+tzdata-2025b-r0 webpage:
 https://www.iana.org/time-zones
 
-tzdata-2025a-r0 installed size:
-433 KiB
+tzdata-2025b-r0 installed size:
+435 KiB
 
-tzdata-2025a-r0 license:
+tzdata-2025b-r0 license:
 Public-Domain
 
 ```
