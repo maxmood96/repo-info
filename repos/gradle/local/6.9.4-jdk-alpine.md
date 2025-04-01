@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:783f125bcc0816b328931760ea76d7b9c78551f2168775453fa8f27289836b92`
-- Created: `2025-02-18T21:10:38Z`
+- Image ID: `sha256:111c61b0deb4535e8514bd04adca6c9f20627ebf5662683c1ddbb9d0a5be008b`
+- Created: `2025-03-30T18:19:35Z`
 - Virtual Size: ~ 517.70 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -449,16 +449,16 @@ GPL-2.0-only
 ### `apk` package: `git-lfs`
 
 ```console
-git-lfs-3.6.0-r2 description:
+git-lfs-3.6.0-r3 description:
 Git extension for versioning large files
 
-git-lfs-3.6.0-r2 webpage:
+git-lfs-3.6.0-r3 webpage:
 https://git-lfs.github.io/
 
-git-lfs-3.6.0-r2 installed size:
+git-lfs-3.6.0-r3 installed size:
 12 MiB
 
-git-lfs-3.6.0-r2 license:
+git-lfs-3.6.0-r3 license:
 MIT
 
 ```
@@ -755,16 +755,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.12.1-r0 description:
+libcurl-8.12.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.12.1-r0 webpage:
+libcurl-8.12.1-r1 webpage:
 https://curl.se/
 
-libcurl-8.12.1-r0 installed size:
+libcurl-8.12.1-r1 installed size:
 628 KiB
 
-libcurl-8.12.1-r0 license:
+libcurl-8.12.1-r1 license:
 curl
 
 ```
@@ -1129,16 +1129,16 @@ BSD-2-Clause AND GPL-2.0-or-later
 ### `apk` package: `mercurial`
 
 ```console
-mercurial-6.9-r0 description:
+mercurial-6.9.4-r0 description:
 Scalable distributed SCM tool
 
-mercurial-6.9-r0 webpage:
+mercurial-6.9.4-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-6.9-r0 installed size:
+mercurial-6.9.4-r0 installed size:
 11 MiB
 
-mercurial-6.9-r0 license:
+mercurial-6.9.4-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -1146,16 +1146,16 @@ GPL-2.0-or-later
 ### `apk` package: `mercurial-pyc`
 
 ```console
-mercurial-pyc-6.9-r0 description:
+mercurial-pyc-6.9.4-r0 description:
 Precompiled Python bytecode for mercurial
 
-mercurial-pyc-6.9-r0 webpage:
+mercurial-pyc-6.9.4-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-pyc-6.9-r0 installed size:
-9602 KiB
+mercurial-pyc-6.9.4-r0 installed size:
+9604 KiB
 
-mercurial-pyc-6.9-r0 license:
+mercurial-pyc-6.9.4-r0 license:
 GPL-2.0-or-later
 
 ```

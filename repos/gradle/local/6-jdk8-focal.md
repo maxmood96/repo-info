@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:8f2a24c2572c5f36842bbc30775eaa6ce6f89570b49269f3b34fb0249cf17470`
-- Created: `2025-02-18T21:10:38Z`
-- Virtual Size: ~ 592.86 Mb  
+- Image ID: `sha256:94c248e3fd1a82af4fe1600e25a5fc50540ba11752418a53d4d27119c562d5ae`
+- Created: `2025-03-30T18:19:35Z`
+- Virtual Size: ~ 592.91 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/__cacert_entrypoint.sh"]`
@@ -774,12 +774,12 @@ $ apt-get source -qq --print-uris git-lfs=2.9.2-1
 'http://archive.ubuntu.com/ubuntu/pool/universe/g/git-lfs/git-lfs_2.9.2-1.debian.tar.xz' git-lfs_2.9.2-1.debian.tar.xz 4112 SHA256:342408ebd4c5d2270f7ee16a8183761dd0015ded0d3fef36b6c5c34fcc32cff2
 ```
 
-### `dpkg` source package: `git=1:2.25.1-1ubuntu3.13`
+### `dpkg` source package: `git=1:2.25.1-1ubuntu3.14`
 
 Binary Packages:
 
-- `git=1:2.25.1-1ubuntu3.13`
-- `git-man=1:2.25.1-1ubuntu3.13`
+- `git=1:2.25.1-1ubuntu3.14`
+- `git-man=1:2.25.1-1ubuntu3.14`
 
 Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/copyright`)
 
@@ -802,9 +802,14 @@ Licenses: (parsed from: `/usr/share/doc/git/copyright`, `/usr/share/doc/git-man/
 - `dlmalloc`
 - `mingw-runtime`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris git=1:2.25.1-1ubuntu3.14
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.14.dsc' git_2.25.1-1ubuntu3.14.dsc 2966 SHA512:02725ad0ce0ecc76e3ade84a211989c02ab70ed3c3b6a8cd282645700374a0398a747f41392fa795e79d2f57e90cf6afd2b7ab4851ea3110e62f1d298b408f8e
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1.orig.tar.xz' git_2.25.1.orig.tar.xz 5875548 SHA512:15241143acfd8542d85d2709ac3c80dbd6e8d5234438f70c4f33cc71a2bdec3e32938df7f6351e2746d570b021d3bd0b70474ea4beec0c51d1fc45f9c287b344
+'http://archive.ubuntu.com/ubuntu/pool/main/g/git/git_2.25.1-1ubuntu3.14.debian.tar.xz' git_2.25.1-1ubuntu3.14.debian.tar.xz 719124 SHA512:4ee6d3c92aad795c88aefba4aa245448aaee1b740494c34f3088716ebd70f54324cd1f7ca0d0e06c2980489f14a31f250d0a512f798dc3373c71818dc48e74c5
+```
 
 ### `dpkg` source package: `glibc=2.31-0ubuntu9.16`
 
@@ -2186,14 +2191,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.8.2-0ubuntu2
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.8.2-0ubuntu2.tar.gz' python3-defaults_3.8.2-0ubuntu2.tar.gz 138226 SHA256:e4969a54306421ebfd195d0c064935db7c53f9f152d8abaae63da33819235e9a
 ```
 
-### `dpkg` source package: `python3.8=3.8.10-0ubuntu1~20.04.14`
+### `dpkg` source package: `python3.8=3.8.10-0ubuntu1~20.04.18`
 
 Binary Packages:
 
-- `libpython3.8-minimal:amd64=3.8.10-0ubuntu1~20.04.14`
-- `libpython3.8-stdlib:amd64=3.8.10-0ubuntu1~20.04.14`
-- `python3.8=3.8.10-0ubuntu1~20.04.14`
-- `python3.8-minimal=3.8.10-0ubuntu1~20.04.14`
+- `libpython3.8-minimal:amd64=3.8.10-0ubuntu1~20.04.18`
+- `libpython3.8-stdlib:amd64=3.8.10-0ubuntu1~20.04.18`
+- `python3.8=3.8.10-0ubuntu1~20.04.18`
+- `python3.8-minimal=3.8.10-0ubuntu1~20.04.18`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/share/doc/libpython3.8-stdlib/copyright`, `/usr/share/doc/python3.8/copyright`, `/usr/share/doc/python3.8-minimal/copyright`)
 
@@ -2215,9 +2220,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.8-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.8=3.8.10-0ubuntu1~20.04.18
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.18.dsc' python3.8_3.8.10-0ubuntu1~20.04.18.dsc 3549 SHA512:43914c7896adc3a397515c628e56d1f0aa0ea4210ed763516ae18ee15d1fbd6d926548943656fc5708046bf346d1c8c7c217d37dbf0ae41f7002fc84b33f3be7
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10.orig.tar.xz' python3.8_3.8.10.orig.tar.xz 18433456 SHA512:0be69705483ff9692e12048a96180e586f9d84c8d53066629f7fb2389585eb75c0f3506bb8182936e322508f58b71f4d8c6dfebbab9049b31b49da11d3b98e80
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.8/python3.8_3.8.10-0ubuntu1%7e20.04.18.debian.tar.xz' python3.8_3.8.10-0ubuntu1~20.04.18.debian.tar.xz 259508 SHA512:71d2415d0fe09a2952a51e800f63b089d0b3b6ca14f495ea7b79c2ec7f4bbb94146409c4d5c81bde6c2cbd916bb88a86c2a91e7cb368d3d67a8ec408766d5a63
+```
 
 ### `dpkg` source package: `readline=8.0-4`
 

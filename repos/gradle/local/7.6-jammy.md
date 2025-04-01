@@ -2,8 +2,8 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:410567a341632e2373649981af2ba5fa7d3145747d7a1b000d517f8f642bd024`
-- Created: `2025-02-18T21:10:40Z`
+- Image ID: `sha256:290b94669d10db3e5ab1f56bc951f1cf398c6f19d7aeb741d50408d5bf3c64a0`
+- Created: `2025-03-30T18:23:11Z`
 - Virtual Size: ~ 706.30 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -2277,14 +2277,14 @@ $ apt-get source -qq --print-uris python3-defaults=3.10.6-1~22.04.1
 'http://archive.ubuntu.com/ubuntu/pool/main/p/python3-defaults/python3-defaults_3.10.6-1%7e22.04.1.tar.gz' python3-defaults_3.10.6-1~22.04.1.tar.gz 145962 SHA512:c509a2a887e4b758fbfcb6173ff046a6f73bdfdde3bd89f77102a4d99c7219d8e1805b41541c6cf658fe9dd44da188e6af450d87236d863d29f06147fea26ea1
 ```
 
-### `dpkg` source package: `python3.10=3.10.12-1~22.04.8`
+### `dpkg` source package: `python3.10=3.10.12-1~22.04.9`
 
 Binary Packages:
 
-- `libpython3.10-minimal:amd64=3.10.12-1~22.04.8`
-- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.8`
-- `python3.10=3.10.12-1~22.04.8`
-- `python3.10-minimal=3.10.12-1~22.04.8`
+- `libpython3.10-minimal:amd64=3.10.12-1~22.04.9`
+- `libpython3.10-stdlib:amd64=3.10.12-1~22.04.9`
+- `python3.10=3.10.12-1~22.04.9`
+- `python3.10-minimal=3.10.12-1~22.04.9`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/share/doc/libpython3.10-stdlib/copyright`, `/usr/share/doc/python3.10/copyright`, `/usr/share/doc/python3.10-minimal/copyright`)
 
@@ -2306,9 +2306,14 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.10-minimal/copyright`, `/usr/
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
+```console
+$ apt-get source -qq --print-uris python3.10=3.10.12-1~22.04.9
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.9.dsc' python3.10_3.10.12-1~22.04.9.dsc 3674 SHA512:a6b160959829590a6660cd914058f5ea67d4b3a51234d07ae7c11f98ee1505b2a6246962cc67c1bb5f937a8e61a42b6a5f7897ccb96b585819e08c01e837d6be
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12.orig.tar.xz' python3.10_3.10.12.orig.tar.xz 19654836 SHA512:5ea018e71bfe7872e02eaf8aef56d5583c0880e4ce5fbbdf8ea76da20c2e94ac6a3ba8badb4b7d1bc21853402a3b63541b04181737417b1626e786b696595cf5
+'http://archive.ubuntu.com/ubuntu/pool/main/p/python3.10/python3.10_3.10.12-1%7e22.04.9.debian.tar.xz' python3.10_3.10.12-1~22.04.9.debian.tar.xz 247836 SHA512:c30ae6e675b7459e7c66dba2a3f037e4efc495e6b8a82ad162e734ec6d473259cc4975a31c18e714a441206fd3abf51ae2c4b5bd722d4067e8968b464d6bbdfe
+```
 
 ### `dpkg` source package: `readline=8.1.2-1`
 
@@ -2521,14 +2526,9 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=249.11-0ubuntu3.12
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.12.dsc' systemd_249.11-0ubuntu3.12.dsc 5907 SHA512:1dc21b48d93811597f96c6b5dadba42e7d1f6ea5408f2a4aaab8d5bbf3fdd480d50ce1d51647fc833dafa9a672830c11c0770801a5bcd111cd432f95477a0943
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11.orig.tar.gz' systemd_249.11.orig.tar.gz 10622702 SHA512:fed7f81933648945a4bfac9fb12150ecd84d32181f79be0e14e0b3a789343a87569f868670e0b8dfc2801fab39f7490f95ee8c29ba831d7611f78c14ace5ddd8
-'http://archive.ubuntu.com/ubuntu/pool/main/s/systemd/systemd_249.11-0ubuntu3.12.debian.tar.xz' systemd_249.11-0ubuntu3.12.debian.tar.xz 253852 SHA512:76220a7cffbd1300a6a4ccebceeef05b65b25c51d9037a183afbb4b2b744da87b8fbab0195c168a55e71beef1cff8352d36a109f5d099ca6947a90d85584f572
-```
 
 ### `dpkg` source package: `sysvinit=3.01-1ubuntu1`
 
