@@ -1195,21 +1195,13 @@ Licenses: (parsed from: `/usr/share/doc/libcap2/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libcap2=1:2.75-2
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.75-2.dsc' libcap2_2.75-2.dsc 2466 SHA256:54f12d6c527284d5781aafa54f3dc3b78e778524ac3809cdda529fb627699c57
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.75.orig.tar.xz' libcap2_2.75.orig.tar.xz 197868 SHA256:de4e7e064c9ba451d5234dd46e897d7c71c96a9ebf9a0c445bc04f4742d83632
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.75.orig.tar.xz.asc' libcap2_2.75.orig.tar.xz.asc 833 SHA256:c71b593e7c3160fd7f406641074d93462bbc4906c9243937a0e232f42d5c54d2
-'http://deb.debian.org/debian/pool/main/libc/libcap2/libcap2_2.75-2.debian.tar.xz' libcap2_2.75-2.debian.tar.xz 20040 SHA256:5dd65ade89222d9eddac34f1aa9ead4608727a4f7cb0d2a3a2ecf5e9790706d3
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libcap2/1:2.75-2/
 
-- https://sources.debian.net/src/libcap2/1:2.75-2/ (for browsing the source)
-- https://sources.debian.net/src/libcap2/1:2.75-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libcap2/1:2.75-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libffi=3.4.7-1`
 
@@ -2307,20 +2299,13 @@ Licenses: (parsed from: `/usr/share/doc/sqv/copyright`)
 - `GPL-2`
 - `GPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sqv=1.2.1-6
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.2.1-6.dsc' rust-sequoia-sqv_1.2.1-6.dsc 2682 SHA256:8d5040a560ba35e066159a6a078dacedf1bd3b44b63fe1d3db1f6f3b7c00ed96
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.2.1.orig.tar.gz' rust-sequoia-sqv_1.2.1.orig.tar.gz 56163 SHA256:824eda88393780802dd75e466d6b18c433d8ba947bd8cd6a6385f22500533f5a
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sqv/rust-sequoia-sqv_1.2.1-6.debian.tar.xz' rust-sequoia-sqv_1.2.1-6.debian.tar.xz 3708 SHA256:7f0daa814838476ec39ec80315c4bafc3e017367a618b510c3a484f6583953b6
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sqv/1.2.1-6/
 
-- https://sources.debian.net/src/rust-sequoia-sqv/1.2.1-6/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sqv/1.2.1-6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sqv/1.2.1-6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sed=4.9-2`
 

@@ -230,19 +230,13 @@ Licenses: (parsed from: `/usr/share/doc/base-passwd/copyright`)
 - `GPL-2`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris base-passwd=3.6.6
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.6.dsc' base-passwd_3.6.6.dsc 1844 SHA256:c751de08700db6c297f6795982fec0751b4a5a65b645c357e87dfe09eb5e54d0
-'http://deb.debian.org/debian/pool/main/b/base-passwd/base-passwd_3.6.6.tar.xz' base-passwd_3.6.6.tar.xz 60116 SHA256:cfcb17a5cfb5d7ce53f062b2a30c74ac7f9425af81010d3591aeffc60f269263
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/base-passwd/3.6.6/
 
-- https://sources.debian.net/src/base-passwd/3.6.6/ (for browsing the source)
-- https://sources.debian.net/src/base-passwd/3.6.6/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/base-passwd/3.6.6/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `bash=5.2.37-1.1`
 
@@ -437,21 +431,13 @@ Licenses: (parsed from: `/usr/share/doc/curl/copyright`, `/usr/share/doc/libcurl
 - `X11`
 - `curl`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris curl=8.12.1-3
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.12.1-3.dsc' curl_8.12.1-3.dsc 3252 SHA256:3c3918ce2f3863f801b95071f71eed9bf95bcfe8fb0fd1b5e48ab3157c24fc4c
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.12.1.orig.tar.gz' curl_8.12.1.orig.tar.gz 4181139 SHA256:7b40ea64947e0b440716a4d7f0b7aa56230a5341c8377d7b609649d4aea8dbcf
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.12.1.orig.tar.gz.asc' curl_8.12.1.orig.tar.gz.asc 488 SHA256:36d883bcf288d843caf587e7c8fd5feb6223b63420ae93517be6a4db928abe13
-'http://deb.debian.org/debian/pool/main/c/curl/curl_8.12.1-3.debian.tar.xz' curl_8.12.1-3.debian.tar.xz 53716 SHA256:550dcaf7cc74556a2f1f45d068aaa694e4d89a6dc651c302745f358073fcaf08
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/curl/8.12.1-3/
 
-- https://sources.debian.net/src/curl/8.12.1-3/ (for browsing the source)
-- https://sources.debian.net/src/curl/8.12.1-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/curl/8.12.1-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `cyrus-sasl2=2.1.28+dfsg1-9`
 
@@ -819,20 +805,13 @@ Licenses: (parsed from: `/usr/share/doc/gcc-14-base/copyright`, `/usr/share/doc/
 - `GPL-3`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gcc-14=14.2.0-17
-'http://deb.debian.org/debian/pool/main/g/gcc-14/gcc-14_14.2.0-17.dsc' gcc-14_14.2.0-17.dsc 47347 SHA256:8a58914cd74bf0eab1a908a4bff2d80a07ab8b8c6dc3790098c4f7c62122d743
-'http://deb.debian.org/debian/pool/main/g/gcc-14/gcc-14_14.2.0.orig.tar.gz' gcc-14_14.2.0.orig.tar.gz 94299633 SHA256:e162a5ef3f0077ecae598c6556908d2ab80841532df3398072a96a6df6e6aa29
-'http://deb.debian.org/debian/pool/main/g/gcc-14/gcc-14_14.2.0-17.debian.tar.xz' gcc-14_14.2.0-17.debian.tar.xz 2539600 SHA256:87528ffbf8cc154e06ca74e96e427cb45710edde2e25dfa0f9ac5073fc316b98
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/gcc-14/14.2.0-17/
 
-- https://sources.debian.net/src/gcc-14/14.2.0-17/ (for browsing the source)
-- https://sources.debian.net/src/gcc-14/14.2.0-17/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/gcc-14/14.2.0-17/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gdbm=1.24-2`
 
@@ -951,20 +930,13 @@ Licenses: (parsed from: `/usr/share/doc/libc-bin/copyright`, `/usr/share/doc/lib
 - `Univ-Coimbra`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris glibc=2.41-4
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-4.dsc' glibc_2.41-4.dsc 7540 SHA256:2ff4d1ceb8e6b4a97319d44dabe156a43885fd718eeac94b0e6d41ce7f5437d5
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41.orig.tar.xz' glibc_2.41.orig.tar.xz 20323540 SHA256:f24aa441021121a79266f0d75242706cab8843a47901fefe74527491807f1998
-'http://deb.debian.org/debian/pool/main/g/glibc/glibc_2.41-4.debian.tar.xz' glibc_2.41-4.debian.tar.xz 405880 SHA256:744b541a302fd843d4cf11535b0fa37c59e8c465215c98116fa4de115769973c
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/glibc/2.41-4/
 
-- https://sources.debian.net/src/glibc/2.41-4/ (for browsing the source)
-- https://sources.debian.net/src/glibc/2.41-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/glibc/2.41-4/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gmp=2:6.3.0+dfsg-3`
 
@@ -1550,21 +1522,13 @@ Licenses: (parsed from: `/usr/share/doc/libgpg-error0/copyright`)
 - `LGPL-2.1+`
 - `g10-permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libgpg-error=1.51-3
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.51-3.dsc' libgpg-error_1.51-3.dsc 2955 SHA256:c90b4bdc1b0aeceae9bd5691d2cf8ac26c7bc65d9ab672c74ae319bc286c9542
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.51.orig.tar.bz2' libgpg-error_1.51.orig.tar.bz2 1085510 SHA256:be0f1b2db6b93eed55369cdf79f19f72750c8c7c39fc20b577e724545427e6b2
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.51.orig.tar.bz2.asc' libgpg-error_1.51.orig.tar.bz2.asc 228 SHA256:5e8c9179635b3105f4c07d09168fda9ce039607e926628aec6a06134908be918
-'http://deb.debian.org/debian/pool/main/libg/libgpg-error/libgpg-error_1.51-3.debian.tar.xz' libgpg-error_1.51-3.debian.tar.xz 19888 SHA256:c176b4b34db4c1288c8ec5113e72e83f3480e3766228ca9eba3758a833b00e97
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libgpg-error/1.51-3/
 
-- https://sources.debian.net/src/libgpg-error/1.51-3/ (for browsing the source)
-- https://sources.debian.net/src/libgpg-error/1.51-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libgpg-error/1.51-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libidn2=2.3.8-1`
 
@@ -1949,20 +1913,13 @@ Licenses: (parsed from: `/usr/share/doc/libzstd1/copyright`)
 - `GPL-2`
 - `zlib`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris libzstd=1.5.6+dfsg-2
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.5.6%2bdfsg-2.dsc' libzstd_1.5.6+dfsg-2.dsc 2369 SHA256:57f39cddb823019558f0f69f4fb9842a3b8c13cb3f9db8e6d8a7819c1e058b33
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.5.6%2bdfsg.orig.tar.xz' libzstd_1.5.6+dfsg.orig.tar.xz 1815380 SHA256:b3a60c7059886641830adf32c979be8d211da5d73fd05c7768f86d12d5bccec3
-'http://deb.debian.org/debian/pool/main/libz/libzstd/libzstd_1.5.6%2bdfsg-2.debian.tar.xz' libzstd_1.5.6+dfsg-2.debian.tar.xz 23088 SHA256:5795e5c490e7087db756be093be00c02987ca7276713b7428e962a73b34294f1
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/libzstd/1.5.6+dfsg-2/
 
-- https://sources.debian.net/src/libzstd/1.5.6+dfsg-2/ (for browsing the source)
-- https://sources.debian.net/src/libzstd/1.5.6+dfsg-2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libzstd/1.5.6+dfsg-2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `lz4=1.10.0-4`
 

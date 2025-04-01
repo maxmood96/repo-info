@@ -788,14 +788,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`, `/usr/share/doc/li
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.6.4-1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.4-1.dsc' expat_2.6.4-1.dsc 1964 SHA512:f75677ea8a4a929aa59834ebc527a8c4f17408300f8c5ce171527c1583c24c3c370d6153e275f1b3503964003ba882203d3e761b9d1c4361d3821f4f1467235e
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.4.orig.tar.gz' expat_2.6.4.orig.tar.gz 8419100 SHA512:6a6c5b0f6a1b2c70715701aeab688e476943704c492a0f2f8afd7fea84615a8d9569eb2b699912676058eff6a7bbdd78b48110ed67ab0250a3d41fe8f128f4e1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.4-1.debian.tar.xz' expat_2.6.4-1.debian.tar.xz 13124 SHA512:ce3aa1e7c4f90b31b6bab82ba1405d577936a95d43dcbfc9a1b5203277b2f61130bde5433d17c11da13e263752748dc6d24d6b430b7c8907001869cb7decebf6
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/expat/2.6.4-1/
+
 
 ### `dpkg` source package: `fftw3=3.3.10-2fakesync1build1`
 
@@ -3201,14 +3200,9 @@ Licenses: (parsed from: `/usr/share/doc/libmpfr6/copyright`)
 - `GFDL-1.2`
 - `LGPL-3`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris mpfr4=4.2.1-1build2
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.2.1-1build2.dsc' mpfr4_4.2.1-1build2.dsc 2037 SHA512:31ec6ede37f6dbd315d965ff3a51fa6e228e91c76cb337b77963f3ec15e6b8ee69e3034858977bf21a6b2696579fd56e81f9d16a07caec7052cf0738be5ba6dd
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.2.1.orig.tar.xz' mpfr4_4.2.1.orig.tar.xz 1493608 SHA512:bc68c0d755d5446403644833ecbb07e37360beca45f474297b5d5c40926df1efc3e2067eecffdf253f946288bcca39ca89b0613f545d46a9e767d1d4cf358475
-'http://archive.ubuntu.com/ubuntu/pool/main/m/mpfr4/mpfr4_4.2.1-1build2.debian.tar.xz' mpfr4_4.2.1-1build2.debian.tar.xz 12748 SHA512:2e4e2edb471230785fee71b9cfeea9d1cb16736dfab7d3d62874ea251f763aa9f9500da24cdff0906070d90ddcec084ed9753784797c49727fadc6f8605934f2
-```
 
 ### `dpkg` source package: `mysql-8.4=8.4.4-0ubuntu1`
 

@@ -538,14 +538,13 @@ Licenses: (parsed from: `/usr/share/doc/libexpat1/copyright`)
 
 - `MIT`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris expat=2.6.4-1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.4-1.dsc' expat_2.6.4-1.dsc 1964 SHA512:f75677ea8a4a929aa59834ebc527a8c4f17408300f8c5ce171527c1583c24c3c370d6153e275f1b3503964003ba882203d3e761b9d1c4361d3821f4f1467235e
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.4.orig.tar.gz' expat_2.6.4.orig.tar.gz 8419100 SHA512:6a6c5b0f6a1b2c70715701aeab688e476943704c492a0f2f8afd7fea84615a8d9569eb2b699912676058eff6a7bbdd78b48110ed67ab0250a3d41fe8f128f4e1
-'http://archive.ubuntu.com/ubuntu/pool/main/e/expat/expat_2.6.4-1.debian.tar.xz' expat_2.6.4-1.debian.tar.xz 13124 SHA512:ce3aa1e7c4f90b31b6bab82ba1405d577936a95d43dcbfc9a1b5203277b2f61130bde5433d17c11da13e263752748dc6d24d6b430b7c8907001869cb7decebf6
-```
+The source package *may* still be available for download from:
+
+- http://snapshot.debian.org/package/expat/2.6.4-1/
+
 
 ### `dpkg` source package: `findutils=4.10.0-3`
 
