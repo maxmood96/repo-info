@@ -94,14 +94,9 @@ Licenses: (parsed from: `/usr/share/doc/libaom0/copyright`)
 - `ISC`
 - `public-domain-md5`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris aom=1.0.0.errata1-3+deb11u1build0.20.04.1
-'http://archive.ubuntu.com/ubuntu/pool/universe/a/aom/aom_1.0.0.errata1-3%2bdeb11u1build0.20.04.1.dsc' aom_1.0.0.errata1-3+deb11u1build0.20.04.1.dsc 2182 SHA512:7d4f9600ee64ee3cecff8706f4c1520f9d26f43b87e0f153321618980ee8200e49e1fcfce5f8a80ea08199f06d1b1a0559d3d2a45673fb3ff3ff3b189afc2e07
-'http://archive.ubuntu.com/ubuntu/pool/universe/a/aom/aom_1.0.0.errata1.orig.tar.xz' aom_1.0.0.errata1.orig.tar.xz 1898808 SHA512:d6b97ce39d0ed37ff3a11293548a454682b56d02afc8ae9669dca57083e2dcec8491f5a3dcb714b8cd03e902c4f6e059a175fcade461ac09a13fc746ba812826
-'http://archive.ubuntu.com/ubuntu/pool/universe/a/aom/aom_1.0.0.errata1-3%2bdeb11u1build0.20.04.1.debian.tar.xz' aom_1.0.0.errata1-3+deb11u1build0.20.04.1.debian.tar.xz 24836 SHA512:08e5c4e3c87a8313337f4b6ed8a5eef71747f1037a4b58b212d9f8f8b42a4e1f44cb415f12edfba21f3acce7dd2046523d0ced0176c461b6bd276e3e11d41639
-```
 
 ### `dpkg` source package: `apparmor=2.13.3-7ubuntu5.4`
 
