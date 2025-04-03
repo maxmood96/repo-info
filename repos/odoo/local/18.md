@@ -1,9 +1,9 @@
-# `odoo:18.0-20250320`
+# `odoo:18.0-20250401`
 
 ## Docker Metadata
 
-- Image ID: `sha256:852d128f4309cbfffa8b7355b2f6b827bde6b38257f5378305458723f207d1f1`
-- Created: `2025-03-20T11:33:43Z`
+- Image ID: `sha256:31294ed50b232a360d5052b9b8ac4b0f79b80e0bca8e6cfd0fd96c8b6f2ff047`
+- Created: `2025-04-01T13:33:26Z`
 - Virtual Size: ~ 2.00 Gb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -10001,11 +10001,11 @@ $ apt-get source -qq --print-uris npth=1.6-3.1build1
 'http://archive.ubuntu.com/ubuntu/pool/main/n/npth/npth_1.6-3.1build1.debian.tar.xz' npth_1.6-3.1build1.debian.tar.xz 11036 SHA512:caf36d8727c335bbcf996421e65cf044d6468d95d70e9b671b57196341e49e67f687d6c80cab78d6c0388a90f795e4ed0ff28aaa0d4e7dd6f4701abdfc77a09a
 ```
 
-### `dpkg` source package: `odoo=18.0.20250320`
+### `dpkg` source package: `odoo=18.0.20250401`
 
 Binary Packages:
 
-- `odoo=18.0.20250320`
+- `odoo=18.0.20250401`
 
 Licenses: (parsed from: `/usr/share/doc/odoo/copyright`)
 
@@ -11957,11 +11957,11 @@ $ apt-get source -qq --print-uris tiff=4.5.1+git230720-4ubuntu2.2
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tiff/tiff_4.5.1%2bgit230720-4ubuntu2.2.debian.tar.xz' tiff_4.5.1+git230720-4ubuntu2.2.debian.tar.xz 29924 SHA512:4e07ce3aff052c2df29163480690bd3bb392455bd4d0a26322cd4e6dea0a0e0d9512dad558e1ff93e7a899631c39f0f633b308718c8e5aa98f9e7abe26b9a02f
 ```
 
-### `dpkg` source package: `tzdata=2024b-0ubuntu0.24.04.1`
+### `dpkg` source package: `tzdata=2025a-0ubuntu0.24.04`
 
 Binary Packages:
 
-- `tzdata=2024b-0ubuntu0.24.04.1`
+- `tzdata=2025a-0ubuntu0.24.04`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
