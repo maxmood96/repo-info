@@ -1,10 +1,10 @@
-# `swift:6.0.3-rhel-ubi9-slim`
+# `swift:6.1.0-rhel-ubi9-slim`
 
 ## Docker Metadata
 
-- Image ID: `sha256:f7e01b5ef1a551a457984ce592e30f75025145c7820790b0bce8aedc1edf946b`
-- Created: `2024-12-12T07:44:15Z`
-- Virtual Size: ~ 362.74 Mb  
+- Image ID: `sha256:33c12eaf0bb5922f6ac44d01123852dfd3daaf713e10ccb2b1d1a6116b0f23c1`
+- Created: `2025-04-01T00:12:10Z`
+- Virtual Size: ~ 362.32 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["/bin/bash"]`
@@ -13,8 +13,8 @@
   - `container=oci`
   - `SWIFT_SIGNING_KEY=52BB7E3DE28A71BE22EC05FFEF80A866B47A981F`
   - `SWIFT_PLATFORM=ubi9`
-  - `SWIFT_BRANCH=swift-6.0.3-release`
-  - `SWIFT_VERSION=swift-6.0.3-RELEASE`
+  - `SWIFT_BRANCH=swift-6.1-release`
+  - `SWIFT_VERSION=swift-6.1-RELEASE`
   - `SWIFT_WEBROOT=https://download.swift.org`
 - Labels:
   - `architecture=x86_64`
@@ -330,12 +330,7 @@ https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/S
 
 Licenses (from `rpm --query`): MIT
 
-Source:
-
-```console
-$ dnf --quiet download --source --url expat-2.5.0-3.el9_5.1
-https://cdn-ubi.redhat.com/content/public/ubi/dist/ubi9/9/x86_64/baseos/source/SRPMS/Packages/e/expat-2.5.0-3.el9_5.1.src.rpm
-```
+**WARNING:** unable to find source (`dnf download` failed or returned no results)!
 
 ### `rpm` package: `file-libs-5.39-16.el9.x86_64`
 
