@@ -980,15 +980,9 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.2.19-3ubuntu2.2
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.19-3ubuntu2.2.dsc' gnupg2_2.2.19-3ubuntu2.2.dsc 3939 SHA512:13469e7c2042d5b7df6908e73e3e74d57a014340beb599991f16249822fb7e38f6e33415c2e9c27e6f818a609a1e9ebfdff69b7def49347eb5be0e8f249401e0
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.19.orig.tar.bz2' gnupg2_2.2.19.orig.tar.bz2 6754972 SHA512:d7700136ac9f0a8cf04b33da4023a42427fced648c2f90d76250c92904353b85fe728bdd89a713d847e8d38e5900c98d46075614492fdc3d1421f927a92f49dd
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.19.orig.tar.bz2.asc' gnupg2_2.2.19.orig.tar.bz2.asc 906 SHA512:8b02ce09a50d2aa0c263f7042424ea815386fac56a8d8cea102d1aea2e75802f91bb2ebc7dc2d7a3157126d748ece554e0693d3bf355f908586cbadbe80c68fb
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.2.19-3ubuntu2.2.debian.tar.xz' gnupg2_2.2.19-3ubuntu2.2.debian.tar.xz 66132 SHA512:799684fb92e2c3c1016f0f0df6b4febb1e23b4c448768657358e2203120957d1329a5b4f0b417c659fe3bec414473e59f43ab6c0976b25439121d2b33a1ffe00
-```
 
 ### `dpkg` source package: `gnutls28=3.6.13-2ubuntu1.11`
 
@@ -2590,15 +2584,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
 - `ICU`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2025a-0ubuntu0.20.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025a-0ubuntu0.20.04.dsc' tzdata_2025a-0ubuntu0.20.04.dsc 2548 SHA512:5c3eb84a276318a04e404a46fb3d0f54e1338835b31d667b16dcb8b2ad02e33137408e8f900e43f96a59b3396659a577d5ba2127db6c8ff87e7de6e8029003cb
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025a.orig.tar.gz' tzdata_2025a.orig.tar.gz 462943 SHA512:93b8f939d39bdfe451e262666f9099c529c96c49d14c08e3611560ca660e12e16d08a22b145d615e00570fb194881618d6f9a0a617c119ab447be03279d747c3
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025a.orig.tar.gz.asc' tzdata_2025a.orig.tar.gz.asc 833 SHA512:4ffb41741da959c7997d05ed61c5c5ff9d1920b5bac3bca0788dd8b4737b4fb82be76da304dbbdbda10412c4b1215680dbd5b7f55de5fe69ce2c3e37c40a13a6
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025a-0ubuntu0.20.04.debian.tar.xz' tzdata_2025a-0ubuntu0.20.04.debian.tar.xz 176928 SHA512:909e4fdfe6f3e846ea40a928901af05c6060d2abf3cb46aa79487a14edeae16d4e6dae232558545908a93ef0fd217c434dc96c66ce2e54969cf463eaff764850
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2020.02.11.4`
 
