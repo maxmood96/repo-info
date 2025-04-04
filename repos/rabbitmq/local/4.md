@@ -1,10 +1,10 @@
-# `rabbitmq:4.0.7`
+# `rabbitmq:4.0.8`
 
 ## Docker Metadata
 
-- Image ID: `sha256:0904778e41aba19ace8239c6faf52a0d4559ad9b19d45755f9348d8b16ac1789`
-- Created: `2025-03-28T17:31:53Z`
-- Virtual Size: ~ 237.16 Mb  
+- Image ID: `sha256:ca661b625a5ee50ae4c6969e4536f6a581bdf5a6478ffcc728d0a4e13c70f701`
+- Created: `2025-04-04T11:05:21Z`
+- Virtual Size: ~ 234.27 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -14,7 +14,7 @@
   - `ERLANG_INSTALL_PATH_PREFIX=/opt/erlang`
   - `OPENSSL_INSTALL_PATH_PREFIX=/opt/openssl`
   - `RABBITMQ_DATA_DIR=/var/lib/rabbitmq`
-  - `RABBITMQ_VERSION=4.0.7`
+  - `RABBITMQ_VERSION=4.0.8`
   - `RABBITMQ_PGP_KEY_ID=0x0A9AF2115F4687BD29803A206B73A36E6026DFCA`
   - `RABBITMQ_HOME=/opt/rabbitmq`
   - `HOME=/var/lib/rabbitmq`
@@ -576,11 +576,11 @@ $ apt-get source -qq --print-uris gmp=2:6.3.0+dfsg-2ubuntu6
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gmp/gmp_6.3.0%2bdfsg-2ubuntu6.debian.tar.xz' gmp_6.3.0+dfsg-2ubuntu6.debian.tar.xz 38868 SHA512:38a19e745de19cd6d1c9b3aaf6d989fb27098c64cce2b9bc49a14315555265fc6a7633fe8f98e40f3139929b34f7ce068c0023926208e6b6949a25f29ece1b78
 ```
 
-### `dpkg` source package: `gnupg2=2.4.4-2ubuntu17`
+### `dpkg` source package: `gnupg2=2.4.4-2ubuntu17.2`
 
 Binary Packages:
 
-- `gpgv=2.4.4-2ubuntu17`
+- `gpgv=2.4.4-2ubuntu17.2`
 
 Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 
@@ -602,11 +602,11 @@ Licenses: (parsed from: `/usr/share/doc/gpgv/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris gnupg2=2.4.4-2ubuntu17
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.dsc' gnupg2_2.4.4-2ubuntu17.dsc 3976 SHA512:5c822f4c067b505435011b570093587c9937e25fc4fbe472478f6d44839a5e674ad06a4d14ce764dbb5365c9fdb591603acbb4762a03acf286f00aa1470e2356
+$ apt-get source -qq --print-uris gnupg2=2.4.4-2ubuntu17.2
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.2.dsc' gnupg2_2.4.4-2ubuntu17.2.dsc 3947 SHA512:56786f582b69a662f3cb7bfcd23981f8f7b93d9b49bc5a0244d335975714421be475bfd3f0c5532e9bf37b87b03a388a9afc9b5af7a20eed6103739216b0abb2
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2' gnupg2_2.4.4.orig.tar.bz2 7886036 SHA512:3d1a3b08d1ce2319d238d8be96591e418ede1dc0b4ede33a4cc2fe40e9c56d5bbc27b1984736d8a786e7f292ddbc836846a8bdb4bf89f064e953c37cb54b94ef
 'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2.asc' gnupg2_2.4.4.orig.tar.bz2.asc 386 SHA512:abb44c8bfa59e589bdcd660f1d1a2e268bade8729d95b34263e3d3b5388d1d2276420313989777938f17f97739c554808f97a63257ca0f53d2122a346d70ec85
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.debian.tar.xz' gnupg2_2.4.4-2ubuntu17.debian.tar.xz 86972 SHA512:f790051267b3917d5a6df2847cd068fb5f5f0f71544359e7b77e9caf2607e182d1e31e2f512934d96a24dec609b7a3e6db920de49e3e31185ca88c533b173533
+'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu17.2.debian.tar.xz' gnupg2_2.4.4-2ubuntu17.2.debian.tar.xz 95608 SHA512:aae73a32d6581eabe408b2d50e6ec26fe84d32c45e8581226d020f9d0d37db5707848f5e51728126dac9bc9ee0318b1a7c9f06f57adf8c472cb237686343a505
 ```
 
 ### `dpkg` source package: `gnutls28=3.8.3-1.1ubuntu3.2`
@@ -1565,11 +1565,11 @@ $ apt-get source -qq --print-uris tar=1.35+dfsg-3build1
 'http://archive.ubuntu.com/ubuntu/pool/main/t/tar/tar_1.35%2bdfsg-3build1.debian.tar.xz' tar_1.35+dfsg-3build1.debian.tar.xz 20948 SHA512:82b1a9f70c99c17f5288a4a9fbe8b1bef0adcd9543f97f876ee81afc16e3ac02e46182557406ff434ae90c81950f22346c3229ee3e5f5f9578dcf09a20053e9f
 ```
 
-### `dpkg` source package: `tzdata=2025a-0ubuntu0.24.04`
+### `dpkg` source package: `tzdata=2025b-0ubuntu0.24.04`
 
 Binary Packages:
 
-- `tzdata=2025a-0ubuntu0.24.04`
+- `tzdata=2025b-0ubuntu0.24.04`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -1579,11 +1579,11 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2025a-0ubuntu0.24.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025a-0ubuntu0.24.04.dsc' tzdata_2025a-0ubuntu0.24.04.dsc 2720 SHA512:af695071c9e9d0b1028bcac40ff6dcc3b4471852d73a7dabb1ff3d32f3ca675975aad28fb53f205aae9864e999fbb213f1cc3fa5c59ed5f33dbaa37550a07749
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025a.orig.tar.gz' tzdata_2025a.orig.tar.gz 462943 SHA512:93b8f939d39bdfe451e262666f9099c529c96c49d14c08e3611560ca660e12e16d08a22b145d615e00570fb194881618d6f9a0a617c119ab447be03279d747c3
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025a.orig.tar.gz.asc' tzdata_2025a.orig.tar.gz.asc 833 SHA512:4ffb41741da959c7997d05ed61c5c5ff9d1920b5bac3bca0788dd8b4737b4fb82be76da304dbbdbda10412c4b1215680dbd5b7f55de5fe69ce2c3e37c40a13a6
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025a-0ubuntu0.24.04.debian.tar.xz' tzdata_2025a-0ubuntu0.24.04.debian.tar.xz 187848 SHA512:88c929e96392024969dde074c91cfcd443dc498a3696bbcf2f8dc6830232a6d807614f54227cdf9d9396510a49dd384e881d825399aaad1ac2cc8eec4e86708d
+$ apt-get source -qq --print-uris tzdata=2025b-0ubuntu0.24.04
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.24.04.dsc' tzdata_2025b-0ubuntu0.24.04.dsc 2720 SHA512:92113196aeb7f28dcf18359081449acd6e59370e9941155c1324c990586bb240b0971f0d378500a88393fffc0b1df9987e8907baf43dc6dea92ca02f10472ac7
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA512:7d83741f3cae81fac8131994b43c55b6da7328df18b706e5ee40e9b3212bc506e6f8fc90988b18da424ed59eff69bce593f2783b7b5f18eb483a17aeb94258d6
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA512:ad39fe16b32fad7eee27ff968b4e8af23267ce586629ad70e7625136d2c3cc3a42295a87b3dc770c291aa9112c56301629c1fe379735f70008e62864ce4e735a
+'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025b-0ubuntu0.24.04.debian.tar.xz' tzdata_2025b-0ubuntu0.24.04.debian.tar.xz 188036 SHA512:c57c84e6958e5d146997cd9982adf4288ce88b8e99b406300cca0b21abf20d9daba8df2274e6936ffbb3bfb5ba8e2a05aa2db797ba36d65d1cc46b3d3b7ddffc
 ```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1`
@@ -1684,11 +1684,11 @@ $ apt-get source -qq --print-uris xxhash=0.8.2-2build1
 'http://archive.ubuntu.com/ubuntu/pool/main/x/xxhash/xxhash_0.8.2-2build1.debian.tar.xz' xxhash_0.8.2-2build1.debian.tar.xz 5048 SHA512:c789fd0a22fd40db8983c0f69054141647ebaab94251598723ce1fdf894d0ed2d48c2d5a7f0df7d61e2d874485286e5742a546748d17cc22d5227ad61f6b4ef2
 ```
 
-### `dpkg` source package: `xz-utils=5.6.1+really5.4.5-1build0.1`
+### `dpkg` source package: `xz-utils=5.6.1+really5.4.5-1ubuntu0.2`
 
 Binary Packages:
 
-- `liblzma5:amd64=5.6.1+really5.4.5-1build0.1`
+- `liblzma5:amd64=5.6.1+really5.4.5-1ubuntu0.2`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 
@@ -1711,10 +1711,10 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris xz-utils=5.6.1+really5.4.5-1build0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1build0.1.dsc' xz-utils_5.6.1+really5.4.5-1build0.1.dsc 2555 SHA512:9b0cfaad48bcbfea0789785d706bde13718fa1577446ae2109c68bd1b248b0ab8e2526dd47d3f7bf50c0840cd36e78ef28e74a6bf31c1f05e0ca4cfa2928e9d8
+$ apt-get source -qq --print-uris xz-utils=5.6.1+really5.4.5-1ubuntu0.2
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1ubuntu0.2.dsc' xz-utils_5.6.1+really5.4.5-1ubuntu0.2.dsc 2639 SHA512:b10ba1ba72e3f1ea6c12b5d1f84bf21b2651e5e796d35b821c14370ecb65953a02e32e3d5f21587191e5b62757b34ae0af2ba64b399670b4c4fd46e04b9b7811
 'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5.orig.tar.xz' xz-utils_5.6.1+really5.4.5.orig.tar.xz 1680520 SHA512:5cbc3b5bb35a9f5773ad657788fe77013471e3b621c5a8149deb7389d48535926e5bed103456fcfe5ecb044b236b1055b03938a6cc877cfc749372b899fc79e5
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1build0.1.debian.tar.xz' xz-utils_5.6.1+really5.4.5-1build0.1.debian.tar.xz 27344 SHA512:34e5b162d0d8312b8a5c9d3755fd3c457c3ef974d44a83afe2bf3023b65d97c3eb8f45276682e3cc2cd693ee508ea4988b8201b8e7803a921eb0194338a052fd
+'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1ubuntu0.2.debian.tar.xz' xz-utils_5.6.1+really5.4.5-1ubuntu0.2.debian.tar.xz 30776 SHA512:1891c935b3915749aaa4f29b494c3d3156dd7a04b4637148d6a668ab5fb464a0bd2be441108750e5601244921f38e47c2d25490cf07d0066da566e5d36756582
 ```
 
 ### `dpkg` source package: `zlib=1:1.3.dfsg-3.1ubuntu2.1`

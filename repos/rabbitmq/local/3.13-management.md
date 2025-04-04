@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:350a706493a85fbca1235093a34e283d0feda15555264b7dad50f18fc25bdcc1`
+- Image ID: `sha256:229c967e945a9009dbb54769cd7b81e08e0736b38aaced21b1226f11b1c6ed9e`
 - Created: `2024-09-20T21:15:09Z`
-- Virtual Size: ~ 260.89 Mb  
+- Virtual Size: ~ 257.96 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["docker-entrypoint.sh"]`
@@ -1737,15 +1737,9 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 - `ICU`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris tzdata=2025a-0ubuntu0.24.04
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025a-0ubuntu0.24.04.dsc' tzdata_2025a-0ubuntu0.24.04.dsc 2720 SHA512:af695071c9e9d0b1028bcac40ff6dcc3b4471852d73a7dabb1ff3d32f3ca675975aad28fb53f205aae9864e999fbb213f1cc3fa5c59ed5f33dbaa37550a07749
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025a.orig.tar.gz' tzdata_2025a.orig.tar.gz 462943 SHA512:93b8f939d39bdfe451e262666f9099c529c96c49d14c08e3611560ca660e12e16d08a22b145d615e00570fb194881618d6f9a0a617c119ab447be03279d747c3
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025a.orig.tar.gz.asc' tzdata_2025a.orig.tar.gz.asc 833 SHA512:4ffb41741da959c7997d05ed61c5c5ff9d1920b5bac3bca0788dd8b4737b4fb82be76da304dbbdbda10412c4b1215680dbd5b7f55de5fe69ce2c3e37c40a13a6
-'http://archive.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2025a-0ubuntu0.24.04.debian.tar.xz' tzdata_2025a-0ubuntu0.24.04.debian.tar.xz 187848 SHA512:88c929e96392024969dde074c91cfcd443dc498a3696bbcf2f8dc6830232a6d807614f54227cdf9d9396510a49dd384e881d825399aaad1ac2cc8eec4e86708d
-```
 
 ### `dpkg` source package: `ubuntu-keyring=2023.11.28.1`
 
@@ -1869,14 +1863,9 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 - `permissive-nowarranty`
 - `probably-PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xz-utils=5.6.1+really5.4.5-1build0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1build0.1.dsc' xz-utils_5.6.1+really5.4.5-1build0.1.dsc 2555 SHA512:9b0cfaad48bcbfea0789785d706bde13718fa1577446ae2109c68bd1b248b0ab8e2526dd47d3f7bf50c0840cd36e78ef28e74a6bf31c1f05e0ca4cfa2928e9d8
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5.orig.tar.xz' xz-utils_5.6.1+really5.4.5.orig.tar.xz 1680520 SHA512:5cbc3b5bb35a9f5773ad657788fe77013471e3b621c5a8149deb7389d48535926e5bed103456fcfe5ecb044b236b1055b03938a6cc877cfc749372b899fc79e5
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1build0.1.debian.tar.xz' xz-utils_5.6.1+really5.4.5-1build0.1.debian.tar.xz 27344 SHA512:34e5b162d0d8312b8a5c9d3755fd3c457c3ef974d44a83afe2bf3023b65d97c3eb8f45276682e3cc2cd693ee508ea4988b8201b8e7803a921eb0194338a052fd
-```
 
 ### `dpkg` source package: `zlib=1:1.3.dfsg-3.1ubuntu2.1`
 
