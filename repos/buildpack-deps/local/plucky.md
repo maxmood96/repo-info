@@ -1260,15 +1260,9 @@ Licenses: (parsed from: `/usr/share/doc/dirmngr/copyright`, `/usr/share/doc/gnup
 - `TinySCHEME`
 - `permissive`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris gnupg2=2.4.4-2ubuntu22
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu22.dsc' gnupg2_2.4.4-2ubuntu22.dsc 3625 SHA512:2d8552f6d5282997b2958180de311f40782b8f4c8c0a150049332b03fd5a2a703aafe00c3624584c95cc065e9102519e9a713fff6dd10d3085eb185e60dcf28a
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2' gnupg2_2.4.4.orig.tar.bz2 7886036 SHA512:3d1a3b08d1ce2319d238d8be96591e418ede1dc0b4ede33a4cc2fe40e9c56d5bbc27b1984736d8a786e7f292ddbc836846a8bdb4bf89f064e953c37cb54b94ef
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4.orig.tar.bz2.asc' gnupg2_2.4.4.orig.tar.bz2.asc 386 SHA512:abb44c8bfa59e589bdcd660f1d1a2e268bade8729d95b34263e3d3b5388d1d2276420313989777938f17f97739c554808f97a63257ca0f53d2122a346d70ec85
-'http://archive.ubuntu.com/ubuntu/pool/main/g/gnupg2/gnupg2_2.4.4-2ubuntu22.debian.tar.xz' gnupg2_2.4.4-2ubuntu22.debian.tar.xz 88720 SHA512:a285e79a068e1677e9541abad31a0ea9ec3c7259bdec119af8244feb8694063aa6d5f66a8f0729d4e885908e67bea9bbe30d4cb44f6ac0febbf0a642100689f2
-```
 
 ### `dpkg` source package: `gnutls28=3.8.9-2ubuntu1`
 
@@ -3341,9 +3335,9 @@ Source:
 
 ```console
 $ apt-get source -qq --print-uris nghttp2=1.64.0-1
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0-1.dsc' nghttp2_1.64.0-1.dsc 2531 SHA512:621a42dd262564c1c64b59a1498719af1ccdb7ff35e54147e03664e1adfc9035533f412884876979e8c6ac44285acd726fea1ff9becedced216c73b68158547c
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0-1ubuntu1.dsc' nghttp2_1.64.0-1ubuntu1.dsc 2613 SHA512:e8a493eec177384c93202987af1f4b70b7ce2e7bc474bb7d66c1fc4d9cabb62425b1ac7fd15c4bf47b3be04aa8f6c85d1468eb86e5069106449cf746baff49d6
 'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0.orig.tar.gz' nghttp2_1.64.0.orig.tar.gz 1069782 SHA512:35f8230a0fa2825f0bc400d4852d8e8b484f659c67b00639ccd074a0029088f016e967db2f62b6b64af1f8ef684f5809a833e7f922e38b9405f7cc7756bcfb75
-'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0-1.debian.tar.xz' nghttp2_1.64.0-1.debian.tar.xz 38888 SHA512:a74da2e22238b95cd041c51be80b1afe85e563277ccdb47b3b5e63ce119b6ace669d4287b170a7c838dd84b73b57918d986d8128e8fc5e3626f0d0d1c3c6c0c8
+'http://archive.ubuntu.com/ubuntu/pool/main/n/nghttp2/nghttp2_1.64.0-1ubuntu1.debian.tar.xz' nghttp2_1.64.0-1ubuntu1.debian.tar.xz 39428 SHA512:7c326c914760102a3b86d48cf66089a53b639248da309bf1e4fb23911d13d3a128217e2e9cc29cb26fa7467fc5d34471f82de72f9169cf96aa82c637148a414d
 ```
 
 ### `dpkg` source package: `npth=1.8-1`

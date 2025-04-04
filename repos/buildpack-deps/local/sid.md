@@ -536,19 +536,13 @@ Licenses: (parsed from: `/usr/share/doc/libdebconfclient0/copyright`)
 - `GPL-2`
 - `GPL-2+`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris cdebconf=0.277
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.277.dsc' cdebconf_0.277.dsc 2707 SHA256:12afc241658ae9bcbb11d239d06e708fb6138b417b7ce9c31ac642f57fcc4613
-'http://deb.debian.org/debian/pool/main/c/cdebconf/cdebconf_0.277.tar.xz' cdebconf_0.277.tar.xz 285420 SHA256:93a72ed5c5cab66f1f7439908348aa3bd97c4fa4a47416694e5dc3add2866e7b
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/cdebconf/0.277/
 
-- https://sources.debian.net/src/cdebconf/0.277/ (for browsing the source)
-- https://sources.debian.net/src/cdebconf/0.277/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/cdebconf/0.277/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `coreutils=9.5-1`
 
@@ -566,21 +560,13 @@ Licenses: (parsed from: `/usr/share/doc/coreutils/copyright`)
 - `GPL-3+`
 - `ISC`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris coreutils=9.5-1
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.5-1.dsc' coreutils_9.5-1.dsc 2104 SHA256:83558c321a5e7a39dcf538a5a425f03486fbd2e6d95941a17ed98d04ed5ea7af
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.5.orig.tar.xz' coreutils_9.5.orig.tar.xz 6007136 SHA256:cd328edeac92f6a665de9f323c93b712af1858bc2e0d88f3f7100469470a1b8a
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.5.orig.tar.xz.asc' coreutils_9.5.orig.tar.xz.asc 833 SHA256:b2843cd7c5972c7bc4d01fc34eb82e5a3ec84a199363288e3999304e3dddc805
-'http://deb.debian.org/debian/pool/main/c/coreutils/coreutils_9.5-1.debian.tar.xz' coreutils_9.5-1.debian.tar.xz 21768 SHA256:fe704f7ba9b23cbc857e755bd3ec987228166b1342c1651f04bd16649b71d84d
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/coreutils/9.5-1/
 
-- https://sources.debian.net/src/coreutils/9.5-1/ (for browsing the source)
-- https://sources.debian.net/src/coreutils/9.5-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/coreutils/9.5-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `curl=8.13.0~rc2-1`
 
@@ -5128,20 +5114,13 @@ Licenses: (parsed from: `/usr/share/doc/sq/copyright`)
 - `LGPL-2`
 - `LGPL-2.0-or-later`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris rust-sequoia-sq=1.2.0-1
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.2.0-1.dsc' rust-sequoia-sq_1.2.0-1.dsc 4179 SHA256:10d871baf690a786dde11845972133b7f5cc84d85e3fd18ee0dfc7e96d13e174
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.2.0.orig.tar.gz' rust-sequoia-sq_1.2.0.orig.tar.gz 750156 SHA256:871aecffd54e58b407c8d50674a543d97197660f6c482b3344dfb9f7a5357f5c
-'http://deb.debian.org/debian/pool/main/r/rust-sequoia-sq/rust-sequoia-sq_1.2.0-1.debian.tar.xz' rust-sequoia-sq_1.2.0-1.debian.tar.xz 5476 SHA256:4086e692092c46ea59ae02d155d1734951b31d18d2901df0dcca14b74c1c66be
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/rust-sequoia-sq/1.2.0-1/
 
-- https://sources.debian.net/src/rust-sequoia-sq/1.2.0-1/ (for browsing the source)
-- https://sources.debian.net/src/rust-sequoia-sq/1.2.0-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/rust-sequoia-sq/1.2.0-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `rust-sequoia-sqv=1.2.1-6`
 
@@ -5404,20 +5383,13 @@ Licenses: (parsed from: `/usr/share/doc/libsystemd0/copyright`, `/usr/share/doc/
 - `LGPL-2.1+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris systemd=257.4-3
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.4-3.dsc' systemd_257.4-3.dsc 8581 SHA256:a55e21575288d1106edc794ca713400c9ae0488cc38d29a5426b03f6ce877c8e
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.4.orig.tar.gz' systemd_257.4.orig.tar.gz 16228313 SHA256:3e7955ecdb8ad317b2876a31ad749e4dd71d371f343de40d856d62c1eb2ffa2a
-'http://deb.debian.org/debian/pool/main/s/systemd/systemd_257.4-3.debian.tar.xz' systemd_257.4-3.debian.tar.xz 179608 SHA256:7173954cc5e0004bcf3d43b87e56ffd472662c94399304581f613bec535eb46e
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/systemd/257.4-3/
 
-- https://sources.debian.net/src/systemd/257.4-3/ (for browsing the source)
-- https://sources.debian.net/src/systemd/257.4-3/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/systemd/257.4-3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `sysvinit=3.14-4`
 
@@ -5667,20 +5639,13 @@ Licenses: (parsed from: `/usr/share/doc/bsdutils/copyright`, `/usr/share/doc/lib
 - `LGPL-3+`
 - `public-domain`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris util-linux=2.40.4-5
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.4-5.dsc' util-linux_2.40.4-5.dsc 4994 SHA256:beade6c6fe38be1e45e18ef20a830eb9e090ba75d3235f6feb53f8b310812a04
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.4.orig.tar.xz' util-linux_2.40.4.orig.tar.xz 8848216 SHA256:5c1daf733b04e9859afdc3bd87cc481180ee0f88b5c0946b16fdec931975fb79
-'http://deb.debian.org/debian/pool/main/u/util-linux/util-linux_2.40.4-5.debian.tar.xz' util-linux_2.40.4-5.debian.tar.xz 118424 SHA256:1e76c71ae8adccf8b70473945e1ec6f8e88bc562447bcada5dfad0455fe11794
-```
+The source package *may* still be available for download from:
 
-Other potentially useful URLs:
+- http://snapshot.debian.org/package/util-linux/2.40.4-5/
 
-- https://sources.debian.net/src/util-linux/2.40.4-5/ (for browsing the source)
-- https://sources.debian.net/src/util-linux/2.40.4-5/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/util-linux/2.40.4-5/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `wget=1.25.0-2`
 
