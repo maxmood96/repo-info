@@ -1,10 +1,10 @@
-# `composer:2.8.6`
+# `composer:2.8.7`
 
 ## Docker Metadata
 
-- Image ID: `sha256:97d0e2dfe732521b6351e8165149bf2c13c44936c745948d77e4f88eabd09b71`
-- Created: `2025-03-03T07:30:55Z`
-- Virtual Size: ~ 200.31 Mb  
+- Image ID: `sha256:93b6d91798ba7c270d7fd0bfebb3a6779f9a32b3f806a3d35fb70ddf747db147`
+- Created: `2025-04-04T07:49:05Z`
+- Virtual Size: ~ 201.26 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -23,7 +23,7 @@
   - `PHP_SHA256=0d3270bbce4d9ec617befce52458b763fd461d475f1fe2ed878bb8573faed327`
   - `COMPOSER_ALLOW_SUPERUSER=1`
   - `COMPOSER_HOME=/tmp`
-  - `COMPOSER_VERSION=2.8.6`
+  - `COMPOSER_VERSION=2.8.7`
 
 ## `apk` (`.apk`-based packages)
 
@@ -387,16 +387,16 @@ GPL-3.0-or-later
 ### `apk` package: `curl`
 
 ```console
-curl-8.12.1-r0 description:
+curl-8.12.1-r1 description:
 URL retrival utility and library
 
-curl-8.12.1-r0 webpage:
+curl-8.12.1-r1 webpage:
 https://curl.se/
 
-curl-8.12.1-r0 installed size:
+curl-8.12.1-r1 installed size:
 246 KiB
 
-curl-8.12.1-r0 license:
+curl-8.12.1-r1 license:
 curl
 
 ```
@@ -523,16 +523,16 @@ Apache-2.0
 ### `apk` package: `libcurl`
 
 ```console
-libcurl-8.12.1-r0 description:
+libcurl-8.12.1-r1 description:
 The multiprotocol file transfer library
 
-libcurl-8.12.1-r0 webpage:
+libcurl-8.12.1-r1 webpage:
 https://curl.se/
 
-libcurl-8.12.1-r0 installed size:
+libcurl-8.12.1-r1 installed size:
 628 KiB
 
-libcurl-8.12.1-r0 license:
+libcurl-8.12.1-r1 license:
 curl
 
 ```
@@ -557,16 +557,16 @@ BSD-3-Clause
 ### `apk` package: `libexpat`
 
 ```console
-libexpat-2.6.4-r0 description:
+libexpat-2.7.0-r0 description:
 XML Parser library written in C (libraries)
 
-libexpat-2.6.4-r0 webpage:
+libexpat-2.7.0-r0 webpage:
 https://libexpat.github.io/
 
-libexpat-2.6.4-r0 installed size:
+libexpat-2.7.0-r0 installed size:
 129 KiB
 
-libexpat-2.6.4-r0 license:
+libexpat-2.7.0-r0 license:
 MIT
 
 ```
@@ -846,16 +846,16 @@ GPL-3.0-or-later
 ### `apk` package: `mercurial`
 
 ```console
-mercurial-6.9-r0 description:
+mercurial-6.9.4-r0 description:
 Scalable distributed SCM tool
 
-mercurial-6.9-r0 webpage:
+mercurial-6.9.4-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-6.9-r0 installed size:
+mercurial-6.9.4-r0 installed size:
 11 MiB
 
-mercurial-6.9-r0 license:
+mercurial-6.9.4-r0 license:
 GPL-2.0-or-later
 
 ```
@@ -863,16 +863,16 @@ GPL-2.0-or-later
 ### `apk` package: `mercurial-pyc`
 
 ```console
-mercurial-pyc-6.9-r0 description:
+mercurial-pyc-6.9.4-r0 description:
 Precompiled Python bytecode for mercurial
 
-mercurial-pyc-6.9-r0 webpage:
+mercurial-pyc-6.9.4-r0 webpage:
 https://www.mercurial-scm.org/
 
-mercurial-pyc-6.9-r0 installed size:
-9602 KiB
+mercurial-pyc-6.9.4-r0 installed size:
+9604 KiB
 
-mercurial-pyc-6.9-r0 license:
+mercurial-pyc-6.9.4-r0 license:
 GPL-2.0-or-later
 
 ```
