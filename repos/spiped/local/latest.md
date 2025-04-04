@@ -1,9 +1,9 @@
-# `spiped:1.6.3`
+# `spiped:1.6.4`
 
 ## Docker Metadata
 
-- Image ID: `sha256:fbfb718114afb7be4711e5fb0bd240c9dd0a669ae1b48d93e3426532a35ba4a0`
-- Created: `2025-01-26T16:57:02Z`
+- Image ID: `sha256:721297f6804b89302261e7583e7397425df62da7a463b08d94a028efa158611f`
+- Created: `2025-04-02T21:12:22Z`
 - Virtual Size: ~ 104.18 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
@@ -11,8 +11,8 @@
 - Command: `["spiped"]`
 - Environment:
   - `PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
-  - `SPIPED_VERSION=1.6.3`
-  - `SPIPED_DOWNLOAD_SHA256=70c53070dbbb10d1442754aeafb01b08ec829203d41023647dbf1a1435ee4a65`
+  - `SPIPED_VERSION=1.6.4`
+  - `SPIPED_DOWNLOAD_SHA256=424fb4d3769d912b04de43d21cc32748cdfd3121c4f1d26d549992a54678e06a`
 
 ## `dpkg` (`.deb`-based packages)
 
