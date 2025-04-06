@@ -2769,14 +2769,9 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 - `permissive-nowarranty`
 - `probably-PD`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris xz-utils=5.6.1+really5.4.5-1build0.1
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1build0.1.dsc' xz-utils_5.6.1+really5.4.5-1build0.1.dsc 2555 SHA512:9b0cfaad48bcbfea0789785d706bde13718fa1577446ae2109c68bd1b248b0ab8e2526dd47d3f7bf50c0840cd36e78ef28e74a6bf31c1f05e0ca4cfa2928e9d8
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5.orig.tar.xz' xz-utils_5.6.1+really5.4.5.orig.tar.xz 1680520 SHA512:5cbc3b5bb35a9f5773ad657788fe77013471e3b621c5a8149deb7389d48535926e5bed103456fcfe5ecb044b236b1055b03938a6cc877cfc749372b899fc79e5
-'http://archive.ubuntu.com/ubuntu/pool/main/x/xz-utils/xz-utils_5.6.1%2breally5.4.5-1build0.1.debian.tar.xz' xz-utils_5.6.1+really5.4.5-1build0.1.debian.tar.xz 27344 SHA512:34e5b162d0d8312b8a5c9d3755fd3c457c3ef974d44a83afe2bf3023b65d97c3eb8f45276682e3cc2cd693ee508ea4988b8201b8e7803a921eb0194338a052fd
-```
 
 ### `dpkg` source package: `zlib=1:1.3.dfsg-3.1ubuntu2.1`
 
