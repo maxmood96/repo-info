@@ -551,14 +551,9 @@ Licenses: (parsed from: `/usr/share/doc/binutils/copyright`, `/usr/share/doc/bin
 - `GPL`
 - `LGPL`
 
-Source:
+**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
+This is *usually* due to a new package version being released and the old version being removed.
 
-```console
-$ apt-get source -qq --print-uris binutils=2.38-4ubuntu2.7
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.7.dsc' binutils_2.38-4ubuntu2.7.dsc 8861 SHA512:b4c596203c1af9862a51f4f70b071e71b3985ca680a95cd4fa7e820900c30f57fd777d9acc4dd811adcae67df72eb220d78dda6cec8cfd3272f0033dece33b2c
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38.orig.tar.xz' binutils_2.38.orig.tar.xz 23651408 SHA512:8bf0b0d193c9c010e0518ee2b2e5a830898af206510992483b427477ed178396cd210235e85fd7bd99a96fc6d5eedbeccbd48317a10f752b7336ada8b2bb826d
-'http://archive.ubuntu.com/ubuntu/pool/main/b/binutils/binutils_2.38-4ubuntu2.7.debian.tar.xz' binutils_2.38-4ubuntu2.7.debian.tar.xz 301948 SHA512:57cee3e83471a08c712f89c1ad042a82e2b34ec2b49a06b2064c42df45ae7646332317f356659a2660b0d8c1acfd80eb9ab23c66cd9cad4d7c3e5a5d89685752
-```
 
 ### `dpkg` source package: `boost-defaults=1.74.0.3ubuntu7`
 
