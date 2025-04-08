@@ -1,7 +1,7 @@
 ## `unit:wasm`
 
 ```console
-$ docker pull unit@sha256:e681037691fa50582576a89d14fdc74ec4ac8d3c6db3469f2768906eb9041294
+$ docker pull unit@sha256:471296916a3d61bc013095ef95980e07f5670201eb490d2cf43f28d9332a6571
 ```
 
 -	Manifest MIME: `application/vnd.oci.image.index.v1+json`
@@ -14,19 +14,19 @@ $ docker pull unit@sha256:e681037691fa50582576a89d14fdc74ec4ac8d3c6db3469f276890
 ### `unit:wasm` - linux; amd64
 
 ```console
-$ docker pull unit@sha256:37f235a4e47d3c98e965bd44b3f682e86d47414f86397f2ff714f9341628d474
+$ docker pull unit@sha256:b569f8c9b52fd2c85d08e2a6e81204def23c54ece56691a99f7060f96fce6c9a
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **70.6 MB (70586571 bytes)**  
+-	Total Size: **70.6 MB (70608990 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:0d9fb77a1f1dbf76d5f679ebafc42667448d857705f9ce1057f971040daf8ae0`
+-	Image ID: `sha256:a0fc7d1fa80297e4f6cba284aa2909f9083084607562e184f97b975092627d1a`
 -	Entrypoint: `["\/usr\/local\/bin\/docker-entrypoint.sh"]`
 -	Default Command: `["unitd","--no-daemon","--control","unix:\/var\/run\/control.unit.sock"]`
 
 ```dockerfile
 # Mon, 03 Mar 2025 18:37:38 GMT
-RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1742169600'
+RUN # debian.sh --arch 'amd64' out/ 'bookworm' '@1743984000'
 # Mon, 03 Mar 2025 18:37:38 GMT
 LABEL org.opencontainers.image.title=Unit (wasm)
 # Mon, 03 Mar 2025 18:37:38 GMT
@@ -58,41 +58,41 @@ CMD ["unitd" "--no-daemon" "--control" "unix:/var/run/control.unit.sock"]
 ```
 
 -	Layers:
-	-	`sha256:6e909acdb790c5a1989d9cfc795fda5a246ad6664bb27b5c688e2b734b2c5fad`  
-		Last Modified: Mon, 17 Mar 2025 22:17:24 GMT  
-		Size: 28.2 MB (28204865 bytes)  
+	-	`sha256:8a628cdd7ccc83e90e5a95888fcb0ec24b991141176c515ad101f12d6433eb96`  
+		Last Modified: Tue, 08 Apr 2025 00:22:58 GMT  
+		Size: 28.2 MB (28227259 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:3114b36adb9ace472e3535cfe5d413916311bb1141ddbf1bcb66b85e9af82046`  
-		Last Modified: Mon, 17 Mar 2025 23:29:34 GMT  
-		Size: 42.4 MB (42378991 bytes)  
+	-	`sha256:b9c144149e3cc5dc5a71e132a823978a127a42042244e0ba5e07679ec78a08fe`  
+		Last Modified: Tue, 08 Apr 2025 01:43:59 GMT  
+		Size: 42.4 MB (42379018 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:8bb78ab40172ca1160b60a61a7de04d6271ca3cc782cc229a4afc25c06332116`  
-		Last Modified: Mon, 17 Mar 2025 23:29:33 GMT  
+	-	`sha256:49e8f87a7a0da29aac0e1888a04528ae09f20100536735e6a18878c656105ecb`  
+		Last Modified: Tue, 08 Apr 2025 01:43:57 GMT  
 		Size: 1.3 KB (1261 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
-	-	`sha256:7c7fdfb90a703046f0ae9b8d08cb16ef68080e79d0e7833a929da04fd1df5fad`  
-		Last Modified: Mon, 17 Mar 2025 23:29:33 GMT  
-		Size: 1.5 KB (1454 bytes)  
+	-	`sha256:283aff428f3c0ba6231bef424bf2d3b3fb1c3110be77daab541846314648318a`  
+		Last Modified: Tue, 08 Apr 2025 01:43:57 GMT  
+		Size: 1.5 KB (1452 bytes)  
 		MIME: application/vnd.oci.image.layer.v1.tar+gzip
 
 ### `unit:wasm` - unknown; unknown
 
 ```console
-$ docker pull unit@sha256:f689dbf293ade8a1536605e712d9a16c77b6ef341e982d22098f6aef46480df6
+$ docker pull unit@sha256:9ac748f39c78a81de414feac2a89140a035b96d454ae38a62f4ac413044a2c30
 ```
 
 -	Manifest MIME: `application/vnd.docker.distribution.manifest.v2+json`
--	Total Size: **25.0 KB (25043 bytes)**  
+-	Total Size: **25.0 KB (25042 bytes)**  
 	(compressed transfer size, not on-disk size)
--	Image ID: `sha256:2e726d63b61d82b8ff7685dcd998a5cc7abddd486550369a66d0be38d8fb2654`
+-	Image ID: `sha256:553bf6034ec41b9faabafded9226115a8f2435eb7baacbb94014185eec2b1546`
 
 ```dockerfile
 ```
 
 -	Layers:
-	-	`sha256:489147cccc60bac63dc3882c583088bfbad5416b179279c15fba8ba101e93fcf`  
-		Last Modified: Mon, 17 Mar 2025 23:29:33 GMT  
-		Size: 25.0 KB (25043 bytes)  
+	-	`sha256:9e20c43c3c033cd1cc9c05091e04c07bc25f61f2f4b2a1fff8a899590dcefe9d`  
+		Last Modified: Tue, 08 Apr 2025 01:43:57 GMT  
+		Size: 25.0 KB (25042 bytes)  
 		MIME: application/vnd.in-toto+json
 
 ### `unit:wasm` - linux; arm64 variant v8
