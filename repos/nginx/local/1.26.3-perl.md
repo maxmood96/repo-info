@@ -2,9 +2,9 @@
 
 ## Docker Metadata
 
-- Image ID: `sha256:4fff65148c95aea1f48b07f9e707e83d4798e2d8b3dcef96b8f90b3b1724f199`
+- Image ID: `sha256:39fa2682e5d4e5289c3e435ebec0a92adbcb8034ce3c4562259a33344ec5c840`
 - Created: `2025-02-05T21:27:16Z`
-- Virtual Size: ~ 239.93 Mb  
+- Virtual Size: ~ 239.98 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Entrypoint: `["/docker-entrypoint.sh"]`
@@ -2404,11 +2404,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/libxpm/1:3.5.12-1.1+deb12u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/libxpm/1:3.5.12-1.1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `libxslt=1.1.35-1`
+### `dpkg` source package: `libxslt=1.1.35-1+deb12u1`
 
 Binary Packages:
 
-- `libxslt1.1:amd64=1.1.35-1`
+- `libxslt1.1:amd64=1.1.35-1+deb12u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
@@ -2417,17 +2417,17 @@ If source is available (seen below), check the contents of `debian/copyright` wi
 Source:
 
 ```console
-$ apt-get source -qq --print-uris libxslt=1.1.35-1
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.35-1.dsc' libxslt_1.1.35-1.dsc 2155 SHA256:d0aaa627a3b18a440019ab82b61c7f7953ec78369aaa92b0680b04e1a20b3df1
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.35.orig.tar.xz' libxslt_1.1.35.orig.tar.xz 1827548 SHA256:8247f33e9a872c6ac859aa45018bc4c4d00b97e2feac9eebc10c93ce1f34dd79
-'http://deb.debian.org/debian/pool/main/libx/libxslt/libxslt_1.1.35-1.debian.tar.xz' libxslt_1.1.35-1.debian.tar.xz 21420 SHA256:ed2821ca0d0c9235eed907117c6dfbf5a54e15702aa0937293c5dfa52335a315
+$ apt-get source -qq --print-uris libxslt=1.1.35-1+deb12u1
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.35-1%2bdeb12u1.dsc' libxslt_1.1.35-1+deb12u1.dsc 2343 SHA256:542b36489cdca4a13dc1bb383842f9c7c1d7169d8d30a100367372fe5fae86c6
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.35.orig.tar.xz' libxslt_1.1.35.orig.tar.xz 1827548 SHA256:8247f33e9a872c6ac859aa45018bc4c4d00b97e2feac9eebc10c93ce1f34dd79
+'http://deb.debian.org/debian-security/pool/updates/main/libx/libxslt/libxslt_1.1.35-1%2bdeb12u1.debian.tar.xz' libxslt_1.1.35-1+deb12u1.debian.tar.xz 22944 SHA256:4d8717f10aa236e08219f495881065d15a7115d61536d4865a67274bf442a8db
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/libxslt/1.1.35-1/ (for browsing the source)
-- https://sources.debian.net/src/libxslt/1.1.35-1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/libxslt/1.1.35-1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/libxslt/1.1.35-1+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/libxslt/1.1.35-1+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/libxslt/1.1.35-1+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `libyuv=0.0~git20230123.b2528b0-1`
 
@@ -3245,11 +3245,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tiff/4.5.0-6+deb12u2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tiff/4.5.0-6+deb12u2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2025a-0+deb12u1`
+### `dpkg` source package: `tzdata=2025b-0+deb12u1`
 
 Binary Packages:
 
-- `tzdata=2025a-0+deb12u1`
+- `tzdata=2025b-0+deb12u1`
 
 Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 
@@ -3258,18 +3258,18 @@ Licenses: (parsed from: `/usr/share/doc/tzdata/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris tzdata=2025a-0+deb12u1
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025a-0%2bdeb12u1.dsc' tzdata_2025a-0+deb12u1.dsc 2396 SHA256:7d13ce9fdb245e1b65e388c33b1f13e52edc3954835bcb972c979ae57f7cf2ec
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025a.orig.tar.gz' tzdata_2025a.orig.tar.gz 462943 SHA256:4d5fcbc72c7c450ebfe0b659bd0f1c02fbf52fd7f517a9ea13fe71c21eb5f0d0
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025a.orig.tar.gz.asc' tzdata_2025a.orig.tar.gz.asc 833 SHA256:ed1d0264162b11f16a1c968adc413ed410458477ac094b4a2adc3357a069b2a2
-'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025a-0%2bdeb12u1.debian.tar.xz' tzdata_2025a-0+deb12u1.debian.tar.xz 121860 SHA256:0221ce8688e5286f09ea098ff4b422a5c726af66def1d6082a6c5442f1f5dcfa
+$ apt-get source -qq --print-uris tzdata=2025b-0+deb12u1
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-0%2bdeb12u1.dsc' tzdata_2025b-0+deb12u1.dsc 2396 SHA256:1e226e8d3201e655a2376ffa35745e52db8dd819190868601279b557e97ff732
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA256:11810413345fc7805017e27ea9fa4885fd74cd61b2911711ad038f5d28d71474
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA256:829c06258175c0143754a89e26d7445c243a86cef8e9cf7d020b128f6d82496b
+'http://deb.debian.org/debian/pool/main/t/tzdata/tzdata_2025b-0%2bdeb12u1.debian.tar.xz' tzdata_2025b-0+deb12u1.debian.tar.xz 122000 SHA256:767f447d08d517e5cd828f2cfa675849665f49086acf337d6b83a086617d0bbe
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/tzdata/2025a-0+deb12u1/ (for browsing the source)
-- https://sources.debian.net/src/tzdata/2025a-0+deb12u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/tzdata/2025a-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/tzdata/2025b-0+deb12u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2025b-0+deb12u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2025b-0+deb12u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `usrmerge=37~deb12u1`
 
@@ -3399,11 +3399,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/xxhash/0.8.1-1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/xxhash/0.8.1-1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `xz-utils=5.4.1-0.2`
+### `dpkg` source package: `xz-utils=5.4.1-1`
 
 Binary Packages:
 
-- `liblzma5:amd64=5.4.1-0.2`
+- `liblzma5:amd64=5.4.1-1`
 
 Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 
@@ -3426,18 +3426,18 @@ Licenses: (parsed from: `/usr/share/doc/liblzma5/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris xz-utils=5.4.1-0.2
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1-0.2.dsc' xz-utils_5.4.1-0.2.dsc 2621 SHA256:faaef4551ecc9547f308ca65cdafe6d2fa43b06f11944001490079303c87bf40
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz' xz-utils_5.4.1.orig.tar.xz 1485272 SHA256:5d9827aa1875b21c288f78864bb26d2650b436ea8d2cad364e4921eb6266a5a5
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz.asc' xz-utils_5.4.1.orig.tar.xz.asc 833 SHA256:4b0c7707114996092a5f75a98333de2102db83a27218e4903b8fb7c24a8d0233
-'http://deb.debian.org/debian/pool/main/x/xz-utils/xz-utils_5.4.1-0.2.debian.tar.xz' xz-utils_5.4.1-0.2.debian.tar.xz 87432 SHA256:67eeab55ab3e4b35722d4ec255e0f735b3c61aab0437ab3c8274f5aa77c9c407
+$ apt-get source -qq --print-uris xz-utils=5.4.1-1
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1-1.dsc' xz-utils_5.4.1-1.dsc 2620 SHA256:5c39ef3c918c2a5517306779b21fa4a2995c95c7ddbdbf48af63b4da97f4715b
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz' xz-utils_5.4.1.orig.tar.xz 1485272 SHA256:5d9827aa1875b21c288f78864bb26d2650b436ea8d2cad364e4921eb6266a5a5
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1.orig.tar.xz.asc' xz-utils_5.4.1.orig.tar.xz.asc 833 SHA256:4b0c7707114996092a5f75a98333de2102db83a27218e4903b8fb7c24a8d0233
+'http://deb.debian.org/debian-security/pool/updates/main/x/xz-utils/xz-utils_5.4.1-1.debian.tar.xz' xz-utils_5.4.1-1.debian.tar.xz 91000 SHA256:17fdce0230999e3e19796a5a77c74d297fbaf41c6db0d21b07f76a2be1dd66c8
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/xz-utils/5.4.1-0.2/ (for browsing the source)
-- https://sources.debian.net/src/xz-utils/5.4.1-0.2/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/xz-utils/5.4.1-0.2/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/xz-utils/5.4.1-1/ (for browsing the source)
+- https://sources.debian.net/src/xz-utils/5.4.1-1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/xz-utils/5.4.1-1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `zlib=1:1.2.13.dfsg-1`
 
