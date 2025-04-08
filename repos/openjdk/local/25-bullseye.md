@@ -1,10 +1,10 @@
-# `openjdk:25-ea-16-jdk-bullseye`
+# `openjdk:25-ea-17-jdk-bullseye`
 
 ## Docker Metadata
 
-- Image ID: `sha256:86c02d5c8c590c47d071ac7e9b7cf00c578c946621f2632467eaaae68e95feef`
-- Created: `2025-03-27T18:48:13Z`
-- Virtual Size: ~ 703.81 Mb  
+- Image ID: `sha256:f3e73ee8498c113fc7468419c5380f81aa8074a9fb256131a1c299aec735fa37`
+- Created: `2025-04-05T00:48:13Z`
+- Virtual Size: ~ 704.71 Mb  
   (total size of all layers on-disk)
 - Arch: `linux`/`amd64`
 - Command: `["jshell"]`
@@ -12,7 +12,7 @@
   - `PATH=/usr/local/openjdk-25/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin`
   - `JAVA_HOME=/usr/local/openjdk-25`
   - `LANG=C.UTF-8`
-  - `JAVA_VERSION=25-ea+16`
+  - `JAVA_VERSION=25-ea+17`
 
 ## `dpkg` (`.deb`-based packages)
 
@@ -817,11 +817,11 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/fonts-dejavu/2.37-2/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/fonts-dejavu/2.37-2/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `freetype=2.10.4+dfsg-1+deb11u1`
+### `dpkg` source package: `freetype=2.10.4+dfsg-1+deb11u2`
 
 Binary Packages:
 
-- `libfreetype6:amd64=2.10.4+dfsg-1+deb11u1`
+- `libfreetype6:amd64=2.10.4+dfsg-1+deb11u2`
 
 Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 
@@ -845,21 +845,21 @@ Licenses: (parsed from: `/usr/share/doc/libfreetype6/copyright`)
 Source:
 
 ```console
-$ apt-get source -qq --print-uris freetype=2.10.4+dfsg-1+deb11u1
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.10.4%2bdfsg-1%2bdeb11u1.dsc' freetype_2.10.4+dfsg-1+deb11u1.dsc 3762 SHA256:6c93012be153ec146b77bfa4df0bd8b19affe63f5a8bdbfbf3ce6faf4a89e365
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.10.4%2bdfsg.orig-ft2demos.tar.xz' freetype_2.10.4+dfsg.orig-ft2demos.tar.xz 236712 SHA256:3f873ebe4fb387da3859149459f9be95320ce1fd56b50f8fdb9d2a8492887083
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.10.4%2bdfsg.orig-ft2demos.tar.xz.asc' freetype_2.10.4+dfsg.orig-ft2demos.tar.xz.asc 195 SHA256:38d5b9a5aa11ecf8c6d4c983ef48b3ce2288fdf93d44719df2598b9d415c8061
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.10.4%2bdfsg.orig-ft2docs.tar.xz' freetype_2.10.4+dfsg.orig-ft2docs.tar.xz 2079084 SHA256:cca1c19d1efa911bb685d919b5b0fe1279b0699bf8eb6a3d3bf9f02784758212
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.10.4%2bdfsg.orig-ft2docs.tar.xz.asc' freetype_2.10.4+dfsg.orig-ft2docs.tar.xz.asc 195 SHA256:29fca9ff0e1cdc57ad5707b17f629eeaa216eb334f6082f1b05fb0fe35e14ff3
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.10.4%2bdfsg.orig.tar.xz' freetype_2.10.4+dfsg.orig.tar.xz 2259340 SHA256:db0c0938b3b75cf314775baa75198098e41583b3aaa4804b454f183ce45120a9
-'http://deb.debian.org/debian/pool/main/f/freetype/freetype_2.10.4%2bdfsg-1%2bdeb11u1.debian.tar.xz' freetype_2.10.4+dfsg-1+deb11u1.debian.tar.xz 117572 SHA256:f8845df5a24d816934ef30b46b8561072df3f7973ea65654674d69810aab9c3b
+$ apt-get source -qq --print-uris freetype=2.10.4+dfsg-1+deb11u2
+'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.10.4%2bdfsg-1%2bdeb11u2.dsc' freetype_2.10.4+dfsg-1+deb11u2.dsc 3725 SHA256:c935a32f58a9f3cdcf605cf5a86dbf66aa552773c4a287c4f3812e6c0a53bc8c
+'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.10.4%2bdfsg.orig-ft2demos.tar.xz' freetype_2.10.4+dfsg.orig-ft2demos.tar.xz 236712 SHA256:3f873ebe4fb387da3859149459f9be95320ce1fd56b50f8fdb9d2a8492887083
+'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.10.4%2bdfsg.orig-ft2demos.tar.xz.asc' freetype_2.10.4+dfsg.orig-ft2demos.tar.xz.asc 195 SHA256:38d5b9a5aa11ecf8c6d4c983ef48b3ce2288fdf93d44719df2598b9d415c8061
+'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.10.4%2bdfsg.orig-ft2docs.tar.xz' freetype_2.10.4+dfsg.orig-ft2docs.tar.xz 2079084 SHA256:cca1c19d1efa911bb685d919b5b0fe1279b0699bf8eb6a3d3bf9f02784758212
+'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.10.4%2bdfsg.orig-ft2docs.tar.xz.asc' freetype_2.10.4+dfsg.orig-ft2docs.tar.xz.asc 195 SHA256:29fca9ff0e1cdc57ad5707b17f629eeaa216eb334f6082f1b05fb0fe35e14ff3
+'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.10.4%2bdfsg.orig.tar.xz' freetype_2.10.4+dfsg.orig.tar.xz 2259340 SHA256:db0c0938b3b75cf314775baa75198098e41583b3aaa4804b454f183ce45120a9
+'http://deb.debian.org/debian-security/pool/updates/main/f/freetype/freetype_2.10.4%2bdfsg-1%2bdeb11u2.debian.tar.xz' freetype_2.10.4+dfsg-1+deb11u2.debian.tar.xz 118144 SHA256:a18e5e0d327c7b5f9481b059644faf857d41fa2d3a0b98bf146d4d8de8d6eaa3
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/freetype/2.10.4+dfsg-1+deb11u1/ (for browsing the source)
-- https://sources.debian.net/src/freetype/2.10.4+dfsg-1+deb11u1/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/freetype/2.10.4+dfsg-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/freetype/2.10.4+dfsg-1+deb11u2/ (for browsing the source)
+- https://sources.debian.net/src/freetype/2.10.4+dfsg-1+deb11u2/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/freetype/2.10.4+dfsg-1+deb11u2/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `gcc-10=10.2.1-6`
 
@@ -2164,12 +2164,12 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/media-types/4.0.0/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/media-types/4.0.0/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `mercurial=5.6.1-4`
+### `dpkg` source package: `mercurial=5.6.1-4+deb11u1`
 
 Binary Packages:
 
-- `mercurial=5.6.1-4`
-- `mercurial-common=5.6.1-4`
+- `mercurial=5.6.1-4+deb11u1`
+- `mercurial-common=5.6.1-4+deb11u1`
 
 Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/mercurial-common/copyright`)
 
@@ -2181,18 +2181,17 @@ Licenses: (parsed from: `/usr/share/doc/mercurial/copyright`, `/usr/share/doc/me
 Source:
 
 ```console
-$ apt-get source -qq --print-uris mercurial=5.6.1-4
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_5.6.1-4.dsc' mercurial_5.6.1-4.dsc 2130 SHA256:d8930b0d0b8a4d1adc2951ef521a6194f07a2a0ef923cdfbf73fe109658a0311
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_5.6.1.orig.tar.gz' mercurial_5.6.1.orig.tar.gz 7836342 SHA256:e55c254f4904c45226a106780e57f4279aee03368f6ff6a981d5d2a38243ffad
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_5.6.1.orig.tar.gz.asc' mercurial_5.6.1.orig.tar.gz.asc 833 SHA256:bef5ca673b6fe7ab213e07826c2196dd41710df4739f9a49e57dc3d3d38a6d36
-'http://deb.debian.org/debian/pool/main/m/mercurial/mercurial_5.6.1-4.debian.tar.xz' mercurial_5.6.1-4.debian.tar.xz 64588 SHA256:020e6bd6dcbccdb0ca5455116750120408225979ed186b84c58bb12cdb72d819
+$ apt-get source -qq --print-uris mercurial=5.6.1-4+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_5.6.1-4%2bdeb11u1.dsc' mercurial_5.6.1-4+deb11u1.dsc 2517 SHA256:0ae9602ee9ef4b5200e33e2d0f300aa9c51822982002ac384d00d59402235c0a
+'http://deb.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_5.6.1.orig.tar.gz' mercurial_5.6.1.orig.tar.gz 7836342 SHA256:e55c254f4904c45226a106780e57f4279aee03368f6ff6a981d5d2a38243ffad
+'http://deb.debian.org/debian-security/pool/updates/main/m/mercurial/mercurial_5.6.1-4%2bdeb11u1.debian.tar.xz' mercurial_5.6.1-4+deb11u1.debian.tar.xz 68180 SHA256:1b356794f1be79ef77ffbce88fb28e5553f159cb1f28856166c5b44533987047
 ```
 
 Other potentially useful URLs:
 
-- https://sources.debian.net/src/mercurial/5.6.1-4/ (for browsing the source)
-- https://sources.debian.net/src/mercurial/5.6.1-4/debian/copyright/ (for direct copyright/license information)
-- http://snapshot.debian.org/package/mercurial/5.6.1-4/ (for access to the source package after it no longer exists in the archive)
+- https://sources.debian.net/src/mercurial/5.6.1-4+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/mercurial/5.6.1-4+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/mercurial/5.6.1-4+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `mpdecimal=2.5.1-1`
 
@@ -2708,14 +2707,14 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/python3-defaults/3.9.2-3/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/python3-defaults/3.9.2-3/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `python3.9=3.9.2-1+deb11u2`
+### `dpkg` source package: `python3.9=3.9.2-1+deb11u3`
 
 Binary Packages:
 
-- `libpython3.9-minimal:amd64=3.9.2-1+deb11u2`
-- `libpython3.9-stdlib:amd64=3.9.2-1+deb11u2`
-- `python3.9=3.9.2-1+deb11u2`
-- `python3.9-minimal=3.9.2-1+deb11u2`
+- `libpython3.9-minimal:amd64=3.9.2-1+deb11u3`
+- `libpython3.9-stdlib:amd64=3.9.2-1+deb11u3`
+- `python3.9=3.9.2-1+deb11u3`
+- `python3.9-minimal=3.9.2-1+deb11u3`
 
 Licenses: (parsed from: `/usr/share/doc/libpython3.9-minimal/copyright`, `/usr/share/doc/libpython3.9-stdlib/copyright`, `/usr/share/doc/python3.9/copyright`, `/usr/share/doc/python3.9-minimal/copyright`)
 
@@ -2737,13 +2736,20 @@ Licenses: (parsed from: `/usr/share/doc/libpython3.9-minimal/copyright`, `/usr/s
 - `use in source`
 - `without`
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris python3.9=3.9.2-1+deb11u3
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2-1%2bdeb11u3.dsc' python3.9_3.9.2-1+deb11u3.dsc 3670 SHA256:03d03424e4e53ee42f25e085201e51170760c323505c792fe546e12cd49c20c1
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2.orig.tar.xz' python3.9_3.9.2.orig.tar.xz 18889164 SHA256:3c2034c54f811448f516668dce09d24008a0716c3a794dd8639b5388cbde247d
+'http://deb.debian.org/debian-security/pool/updates/main/p/python3.9/python3.9_3.9.2-1%2bdeb11u3.debian.tar.xz' python3.9_3.9.2-1+deb11u3.debian.tar.xz 269772 SHA256:ff18438c4fd80234c9e66ea363865e908d2a4bd706ede50bb4fe828954cdeee7
+```
 
-- http://snapshot.debian.org/package/python3.9/3.9.2-1+deb11u2/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/python3.9/3.9.2-1+deb11u3/ (for browsing the source)
+- https://sources.debian.net/src/python3.9/3.9.2-1+deb11u3/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/python3.9/3.9.2-1+deb11u3/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `readline=8.1-1`
 
@@ -3049,23 +3055,31 @@ Other potentially useful URLs:
 - https://sources.debian.net/src/tar/1.34+dfsg-1+deb11u1/debian/copyright/ (for direct copyright/license information)
 - http://snapshot.debian.org/package/tar/1.34+dfsg-1+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
-### `dpkg` source package: `tzdata=2024b-0+deb11u1`
+### `dpkg` source package: `tzdata=2025b-0+deb11u1`
 
 Binary Packages:
 
-- `tzdata=2024b-0+deb11u1`
+- `tzdata=2025b-0+deb11u1`
 
 **WARNING:** unable to detect licenses! (package likely not compliant with DEP-5)  
 If source is available (seen below), check the contents of `debian/copyright` within it.
 
 
-**WARNING:** unable to find source (`apt-get source` failed or returned no results)!  
-This is *usually* due to a new package version being released and the old version being removed.
+Source:
 
-The source package *may* still be available for download from:
+```console
+$ apt-get source -qq --print-uris tzdata=2025b-0+deb11u1
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2025b-0%2bdeb11u1.dsc' tzdata_2025b-0+deb11u1.dsc 2269 SHA256:5121967edc9e3805e104ddf325afcad8b8fac643677a5253f3443a341123f7a0
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2025b.orig.tar.gz' tzdata_2025b.orig.tar.gz 464295 SHA256:11810413345fc7805017e27ea9fa4885fd74cd61b2911711ad038f5d28d71474
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2025b.orig.tar.gz.asc' tzdata_2025b.orig.tar.gz.asc 833 SHA256:829c06258175c0143754a89e26d7445c243a86cef8e9cf7d020b128f6d82496b
+'http://deb.debian.org/debian-security/pool/updates/main/t/tzdata/tzdata_2025b-0%2bdeb11u1.debian.tar.xz' tzdata_2025b-0+deb11u1.debian.tar.xz 108596 SHA256:42bfe4e25a15fd0ea6b3eda7e40ad52930ee1d93d923dba42891c6ea85184fab
+```
 
-- http://snapshot.debian.org/package/tzdata/2024b-0+deb11u1/
+Other potentially useful URLs:
 
+- https://sources.debian.net/src/tzdata/2025b-0+deb11u1/ (for browsing the source)
+- https://sources.debian.net/src/tzdata/2025b-0+deb11u1/debian/copyright/ (for direct copyright/license information)
+- http://snapshot.debian.org/package/tzdata/2025b-0+deb11u1/ (for access to the source package after it no longer exists in the archive)
 
 ### `dpkg` source package: `ucf=3.0043+deb11u2`
 
